@@ -4,6 +4,8 @@ import { useState } from "react";
 import Link from "next/link";
 import styles from "./bfsi.module.css";
 import Image from "next/image";
+import Header from "../../components/Header/header";
+import Footer from "../../components/Footer/footer";
 
 function BfsiHeroBackground() {
   return (
@@ -128,7 +130,10 @@ export default function BfsiPage() {
   const benefitCards = ["Structured compliance and regulatory training", "Industry-relevant employee upskilling", "Efficient branch network training", "Improved product and advisory knowledge", "Advanced training performance analytics", "Audit-ready compliance records"];
 
   return (
-    <main id="main-content" className={styles["bfsi-page"]}>
+    <>
+      <Header />
+
+      <main id="main-content" className={styles["bfsi-page"]}>
       <section className={styles["bfsi-hero"]}>
         <BfsiHeroBackground />
 
@@ -402,7 +407,7 @@ export default function BfsiPage() {
 
       <section className={styles["bfsi-finance-banner"]}>
         <div className={styles["bfsi-finance-panel"]}>
-          <Image src="/images/Buillding-bfsi.webp" alt="High-rise buildings representing future-ready finance learning" fill sizes="(max-width: 1024px) 100vw, 1280px" className={styles["bfsi-finance-photo"]} />
+          <Image src="/images/bfsi.webp" alt="High-rise buildings representing future-ready finance learning" fill sizes="(max-width: 1024px) 100vw, 1280px" className={styles["bfsi-finance-photo"]} />
           <div className={styles["bfsi-finance-overlay"]} />
           <div className={styles["bfsi-finance-content"]}>
             <div className={styles["bfsi-finance-blur"]} />
@@ -422,6 +427,9 @@ export default function BfsiPage() {
         <h2 className={styles["bfsi-cta-heading"]}>Enabling Smarter Learning for the BFSI Industry</h2>
         <p className={styles["bfsi-cta-subtext"]}>With AI-powered learning tools, compliance-ready training modules, and advanced analytics, NeuroLXP empowers BFSI organisations to build knowledgeable, compliant, and future-ready workforces.</p>
       </section>
-    </main>
+      </main>
+
+      <Footer />
+    </>
   );
 }

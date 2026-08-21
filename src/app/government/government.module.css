@@ -1,0 +1,4379 @@
+.governmentStateInstitution {
+  	width: 100%;
+  	height: 4646px;
+  	position: relative;
+  	background-color: #dfe6e9;
+  	overflow: hidden;
+  	text-align: left;
+  	font-size: 16px;
+  	color: #31344b;
+  	font-family: "Segoe UI";
+    zoom: 0.89;
+    max-width: 1440px; 
+	  margin: 0 auto;
+}
+.frameParent {
+  	position: absolute;
+  	top: 0px;
+  	left: 0px;
+  	box-shadow: -8px -8px 16px #fff, 8px 8px 16px #c6c6c9;
+  	background-color: #dfe6e9;
+  	width: 1440px;
+  	height: 80px;
+  	overflow: hidden;
+  	font-family: Inter;
+}
+.frameChild {
+  	position: absolute;
+  	top: calc(50% - 22px);
+  	left: 1096px;
+  	width: 132px;
+  	height: 44px;
+  	display: flex;
+  	align-items: center;
+}
+.frameGroup {
+  	position: absolute;
+  	top: 18px;
+  	left: 32px;
+  	width: 1376px;
+  	height: 45px;
+}
+.logo01SynapseSpark1Parent {
+  	position: absolute;
+  	top: 0px;
+  	left: 0px;
+  	display: flex;
+  	align-items: center;
+  	gap: 130px;
+}
+.logo01SynapseSpark1Icon {
+  	height: 45px;
+  	width: 120px;
+  	position: relative;
+  	object-fit: cover;
+}
+.frameContainer {
+  	display: flex;
+  	align-items: center;
+  	gap: 30px;
+}
+.homeParent {
+  	display: flex;
+  	align-items: center;
+  	gap: 8px;
+}
+.home {
+  	position: relative;
+  	line-height: 24px;
+  	font-weight: 600;
+}
+.arrowDown01Icon {
+  	height: 16px;
+  	width: 16px;
+  	position: relative;
+}
+.ourCustomersParent {
+  	display: flex;
+  	align-items: center;
+  	gap: 8px;
+  	color: #2d4cc8;
+}
+.ourCustomers {
+  	position: relative;
+  	line-height: 24px;
+}
+.signInHelpWrapper {
+  	position: absolute;
+  	top: calc(50% - 22.5px);
+  	left: 1244px;
+  	box-shadow: -8px -8px 16px #fff, 8px 8px 16px #c6c6c9;
+  	border-radius: 32px;
+  	background-color: #dfe6e9;
+  	width: 132px;
+  	height: 44px;
+  	overflow: hidden;
+  	display: flex;
+  	align-items: center;
+  	justify-content: center;
+  	padding: 16px 32px;
+  	box-sizing: border-box;
+  	text-align: center;
+  	color: #2d4cc8;
+  	font-family: "Segoe UI";
+}
+.signInHelp {
+  	width: 97px;
+  	position: relative;
+  	letter-spacing: 0.02em;
+  	line-height: 28px;
+  	font-weight: 600;
+  	display: flex;
+  	align-items: flex-end;
+  	justify-content: center;
+  	flex-shrink: 0;
+}
+.frameDiv {
+  	position: absolute;
+  	top: 32px;
+  	left: 80px;
+  	display: flex;
+  	align-items: center;
+  	gap: 8px;
+  	color: #2f3547;
+  	font-family: Inter;
+}
+.ourCustomersWrapper {
+  	display: flex;
+  	align-items: center;
+}
+.industriesWeServe {
+  	position: relative;
+  	letter-spacing: 0.02em;
+  	line-height: 24px;
+	font-family: "Segoe UI";
+}
+.arrowRightDoubleGroup {
+  	display: flex;
+  	align-items: center;
+  	gap: 8px;
+  	color: #243fa8;
+}
+.governmentState {
+  	height: 22px;
+  	width: 265px;
+  	position: relative;
+  	letter-spacing: 0.02em;
+  	line-height: 24px;
+  	display: inline-block;
+  	flex-shrink: 0;
+    font-weight: 800;
+}
+.colleaguesMaleFemaleSmiling {
+  	position: absolute;
+  	top: 266px;
+  	left: 836px;
+  	width: 410px;
+  	height: 415px;
+}
+.vectorParent {
+  position: absolute;
+  top: 88px;
+  left: 80px;
+  width: 1280px;
+  
+  
+  border-radius: 16px;
+  font-size: 48px;
+}
+
+.frameItem {
+  position: absolute;
+  inset: 0;
+  width: 1280px;
+  
+  background: transparent;
+  border-radius: 16px;
+  
+  z-index: 0;
+
+  
+  filter:
+    drop-shadow(-10px -10px 10px rgba(255, 255, 255, 0.95))
+    drop-shadow(10px 12px 12px rgba(174, 181, 184, 0.72));
+}
+
+.frameItem::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  width: 1280px;
+  
+  background: #dfe6e9;
+  
+  box-shadow:
+    -4px -4px 8px #ffffff,
+    4px 4px 8px rgba(196, 196, 196, 0.8);
+}
+
+.frameParent2 {
+  	position: absolute;
+  	
+  	left: 50px;
+  	width: 653px;
+  	
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-start;
+  	gap: 40px;
+  z-index: 2;
+}
+.frameWrapper {
+  	width: 662px;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-start;
+  	flex-shrink: 0;
+}
+.frameParent3 {
+  	align-self: stretch;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-start;
+  	gap: 32px;
+}
+.frameParent4 {
+  	width: 621px;
+  	height: 193px;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-start;
+  	gap: 32px;
+}
+.frameInner {
+  width: 411.26px;
+  height: 50px;
+  position: relative;
+  flex: none;
+  flex-shrink: 0;
+  box-sizing: border-box;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #dfe6e9;
+  box-shadow:
+    inset -4px -4px 8px #ffffff,
+    inset 4px 4px 8px rgba(196, 196, 196, 0.8);
+  border-radius: 28px;
+  transform: rotate(0.05deg);
+
+  font-family: "Segoe UI";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 0.03em;
+  color: #2d4cc8;
+  white-space: nowrap;
+}
+.empoweringGovernmentWorkforcContainer {
+  	width: 715px;
+  	height: 119px;
+  	position: relative;
+  	letter-spacing: 0.03em;
+  	line-height: 60px;
+  	display: inline-block;
+  	flex-shrink: 0;
+  	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    font-size: 36px;
+}
+.empowering {
+  	line-height: 60px;
+}
+.governmentWorkforce {
+  	color: #2d4cc8;
+  	line-height: 60px;
+}
+.neurolxpEnablesGovernments {
+  	width: 473px;
+  	position: relative;
+  	font-size: 22px;
+  	letter-spacing: 0.03em;
+  	line-height: 40px;
+  	color: #2f3547;
+  	display: inline-block;
+}
+.frameWrapper2 {
+  	width: 294px;
+  	display: flex;
+  	align-items: center;
+  	flex-shrink: 0;
+}
+.frameIcon {
+  width: 294.35px;
+  height: 60px;
+  position: relative;
+  flex: none;
+  box-sizing: border-box;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #dfe6e9;
+  box-shadow:
+    inset -4px -4px 8px #ffffff,
+    inset 4px 4px 8px rgba(196, 196, 196, 0.8);
+  border-radius: 8px;
+  transform: rotate(0.05deg);
+
+  font-family: "Segoe UI";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 30px;
+  letter-spacing: 0.02em;
+  color: #31344b;
+  white-space: nowrap;
+}
+.ellipseParent {
+  	position: absolute;
+  	
+  	left: 691px;
+  	width: 539px;
+  	height: 539px;
+  z-index: 2;
+  transform: translatey(30);
+}
+.ellipseDiv {
+  	position: absolute;
+  	top: 0px;
+  	left: 0px;
+  	box-shadow: 8px 8px 16px #c4c4c4, -8px -8px 16px #fff inset, 8px 8px 16px #c4c4c4 inset;
+  	border-radius: 50%;
+  	background-color: #dfe6e9;
+  	width: 539px;
+  	height: 539px;
+}
+.frameChild2 {
+  	position: absolute;
+  	top: 26px;
+  	left: 30px;
+  	border-radius: 500px;
+  	width: 480px;
+  	height: 487px;
+  	object-fit: cover;
+}
+.frameParent5 {
+  	position: absolute;
+  	top: 782px;
+  	left: calc(50% - 420px);
+  	width: 840px;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-start;
+  	gap: 70px;
+  	text-align: center;
+  	font-size: 28px;
+  	color: #000;
+}
+.frameParent6 {
+  	align-self: stretch;
+  	display: flex;
+  	align-items: center;
+  	gap: 60px;
+}
+.frameWrapper3 {
+  	height: 259px;
+  	width: 390px;
+  	position: relative;
+  	box-shadow: -8px -8px 16px #fff, 8px 8px 16px #c4c4c4;
+  	border-radius: 200px 200px 24px 24px;
+  	background-color: #dfe6e9;
+  	border-top: 20px solid #2d4cc8;
+  	box-sizing: border-box;
+  	overflow: hidden;
+  	flex-shrink: 0;
+}
+.trainingAtScaleParent {
+  	position: absolute;
+  	top: calc(50% - 46.5px);
+  	left: calc(50% - 168px);
+  	width: 336px;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: center;
+  	gap: 32px;
+}
+.trainingAtScale {
+  	width: 166px;
+  	height: 73px;
+  	position: relative;
+  	letter-spacing: 0.02em;
+  	line-height: 40px;
+  	font-weight: 600;
+  	display: inline-block;
+  	flex-shrink: 0;
+}
+.trainAcrossDepartments {
+  	align-self: stretch;
+  	height: 40px;
+  	position: relative;
+  	font-size: 22px;
+  	letter-spacing: 0.02em;
+  	line-height: 30px;
+  	color: #2f3547;
+  	display: inline-block;
+  	flex-shrink: 0;
+}
+.frameWrapper4 {
+  	height: 259px;
+  	width: 390px;
+  	position: relative;
+  	box-shadow: -8px -8px 16px #fff inset, 8px 8px 16px #c4c4c4 inset;
+  	border-radius: 200px 200px 24px 24px;
+  	background-color: #dfe6e9;
+  	overflow: hidden;
+  	flex-shrink: 0;
+}
+.centralizedLearning {
+  	width: 239px;
+  	height: 73px;
+  	position: relative;
+  	letter-spacing: 0.02em;
+  	line-height: 40px;
+  	font-weight: 600;
+  	display: inline-block;
+  	flex-shrink: 0;
+}
+.trainingAnalytics {
+  	width: 174px;
+  	height: 73px;
+  	position: relative;
+  	letter-spacing: 0.02em;
+  	line-height: 40px;
+  	font-weight: 600;
+  	display: inline-block;
+  	flex-shrink: 0;
+}
+.textWrapper {
+  	position: absolute;
+  	top: 1190px;
+  	left: 795px;
+  	width: 231px;
+  	height: 75px;
+  	text-align: center;
+  	font-size: 28px;
+  	color: #000;
+}
+.text {
+  	position: absolute;
+  	top: 0px;
+  	left: calc(50% - 115.5px);
+  	letter-spacing: 0.02em;
+  	line-height: 40px;
+  	font-weight: 600;
+  	display: inline-block;
+  	width: 231px;
+  	height: 75px;
+}
+.frameParent8 {
+  	position: absolute;
+  	top: 1466px;
+  	left: calc(50% - 720px);
+  	width: 1440px;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: center;
+  	gap: 96px;
+  	text-align: center;
+  	font-size: 36px;
+}
+.frameParent9 {
+  	width: 1280px;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: center;
+  	gap: 4px;
+}
+.frameWrapper7 {
+  	width: 893px;
+  	height: 239px;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: center;
+}
+.keyChallengesInGovernmentWParent {
+  	width: 100%;
+  	height: 261px;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: center;
+  	gap: 32px;
+  	max-width: 100%;
+  	flex-shrink: 0;
+}
+.keyChallengesIn {
+  	width: 1002px;
+  	position: relative;
+  	letter-spacing: 0.03em;
+  	line-height: 60px;
+  	display: inline-block;
+  	flex-shrink: 0;
+    font-size: 36px;
+}
+.neurolxpCentralizesGovernmen {
+  	align-self: stretch;
+  	height: 80px;
+  	position: relative;
+  	font-size: 24px;
+  	letter-spacing: 0.03em;
+  	line-height: 40px;
+  	color: #2f3547;
+  	display: inline-block;
+  	flex-shrink: 0;
+}
+.frameParent10 {
+  	align-self: stretch;
+  	
+  	
+  	text-align: left;
+  	font-size: 28px;
+  	color: #000;
+}
+.frameParent11 {
+  	position: absolute;
+  	top: 0px;
+  	left: 0px;
+  	display: flex;
+  	align-items: center;
+  	gap: 32px;
+}
+.frameWrapper8 {
+  	height: 330px;
+  	width: 405px;
+  	position: relative;
+  	box-shadow: -8px -8px 16px #fff, 8px 8px 16px #c4c4c4;
+  	border-radius: 100px 0px 50px 50px;
+  	background-color: #dfe6e9;
+  	overflow: hidden;
+  	flex-shrink: 0;
+}
+.frameParent12 {
+  	position: absolute;
+  	top: 20px;
+  	left: calc(50% - 149.5px);
+  	width: 300px;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: center;
+  	gap: 12px;
+}
+.frameChild3 {
+  	width: 70.1px;
+  	height: 70.1px;
+  	position: relative;
+  	border-radius: 100px;
+  	object-fit: contain;
+}
+
+.cardIconOuter {
+  width: 70px;
+  height: 70px;
+  position: relative;
+  flex: none;
+  border-radius: 100px;
+  background: #dfe6e9;
+  box-shadow: inset -4px -4px 8px #ffffff,
+              inset 4px 4px 8px rgba(196, 196, 196, 0.8);
+  transform: rotate(0.05deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cardIconInner {
+  width: 50px;
+  height: 50px;
+  position: relative;
+  border-radius: 50%;
+  background: #dfe6e9;
+  box-shadow: 8px 8px 16px #c6c6c9,
+              -8px -8px 16px #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cardIconGraphic {
+  width: 34px;
+  height: 34px;
+  position: relative;
+  object-fit: contain;
+  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.frameParent13 {
+  	align-self: stretch;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: center;
+  	gap: 20px;
+}
+.trainingAtScaleGroup {
+  	align-self: stretch;
+  	height: 116px;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: center;
+  	gap: 16px;
+}
+.trainingAtScale2 {
+  	width: 219px;
+  	position: relative;
+  	letter-spacing: 0.02em;
+  	line-height: 40px;
+  	font-weight: 600;
+  	display: inline-block;
+}
+.trainGovernmentTeams {
+  	width: 249px;
+  	position: relative;
+  	font-size: 22px;
+  	letter-spacing: 0.02em;
+  	line-height: 30px;
+  	color: #2f3547;
+  	text-align: center;
+  	display: inline-block;
+}
+.howNeurolxpHelpsParent {
+  	width: 226px;
+  	height: 72px;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: center;
+  	gap: 16px;
+  	text-align: center;
+  	font-size: 22px;
+}
+.howNeurolxpHelps {
+  	align-self: stretch;
+  	height: 30px;
+  	position: relative;
+  	letter-spacing: 0.02em;
+  	line-height: 30px;
+  	font-weight: 600;
+  	display: inline-block;
+  	flex-shrink: 0;
+}
+.arrowDownDoubleIcon {
+  	width: 32px;
+  	height: 32px;
+  	position: relative;
+  	flex-shrink: 0;
+}
+.centralizedTraining {
+  	align-self: stretch;
+  	height: 40px;
+  	position: relative;
+  	letter-spacing: 0.02em;
+  	line-height: 40px;
+  	font-weight: 600;
+  	display: inline-block;
+  	flex-shrink: 0;
+}
+.frameWrapper10 {
+  	height: 330px;
+  	width: 405px;
+  	position: relative;
+  	box-shadow: -8px -8px 16px #fff, 8px 8px 16px #c4c4c4;
+  	border-radius: 100px 0px 50px 50px;
+  	background-color: #dfe6e9;
+  	overflow: hidden;
+  	flex-shrink: 0;
+  	text-align: center;
+}
+.ensureRegulatoryCompliance {
+  	width: 249px;
+  	position: relative;
+  	font-size: 22px;
+  	letter-spacing: 0.02em;
+  	line-height: 30px;
+  	color: #2f3547;
+  	display: inline-block;
+}
+.howNeurolxpHelpsContainer {
+  	width: 226px;
+  	height: 72px;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: center;
+  	gap: 16px;
+  	font-size: 22px;
+}
+.frameParent18 {
+  	position: absolute;
+  	top: 380px;
+  	left: calc(50% - 422px);
+  	display: flex;
+  	align-items: center;
+  	gap: 32px;
+}
+.multipleDepartments {
+  	align-self: stretch;
+  	position: relative;
+  	letter-spacing: 0.02em;
+  	line-height: 40px;
+  	font-weight: 600;
+}
+.frameParent23 {
+  	width: 1281px;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-start;
+  	gap: 64px;
+}
+.frameParent24 {
+  	align-self: stretch;
+  	height: 145px;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: center;
+  	gap: 32px;
+}
+.frameChild8 {
+  	width: 176.5px;
+  	height: 50.1px;
+  	position: relative;
+  	border-radius: 28px;
+  	object-fit: contain;
+  	flex-shrink: 0;
+}
+.governmentLearningUseCasesWrapper {
+  	align-self: stretch;
+  	height: 167px;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: center;
+  	flex-shrink: 0;
+}
+.governmentLearningUse {
+  	width: 1126px;
+  	position: relative;
+  	letter-spacing: 0.03em;
+  	line-height: 60px;
+  	display: inline-block;
+  	flex-shrink: 0;
+    font-size: 36px;
+}
+.frameParent25 {
+  	align-self: stretch;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-start;
+  	gap: 50px;
+  	text-align: left;
+  	font-size: 22px;
+  	color: #2d4cc8;
+}
+.frameParent26 {
+  	align-self: stretch;
+  	display: flex;
+  	align-items: center;
+  	gap: 24px;
+}
+.frameWrapper13 {
+  	height: 118px;
+  	width: 410px;
+  	position: relative;
+  	box-shadow: -8px -8px 16px #fff, 8px 8px 16px #c4c4c4;
+  	border-radius: 24px;
+  	background-color: #dfe6e9;
+  	border-right: 10px solid #2d4cc8;
+  	border-left: 10px solid #2d4cc8;
+  	box-sizing: border-box;
+  	overflow: hidden;
+  	flex-shrink: 0;
+}
+.frameParent27 {
+  	position: absolute;
+  	top: 37px;
+  	left: 24px;
+  	display: flex;
+  	align-items: center;
+  	gap: 24px;
+}
+.frameChild9 {
+  	height: 44px;
+  	width: 44px;
+  	position: relative;
+}
+.governanceTraining {
+  	height: 38px;
+  	width: 304px;
+  	position: relative;
+  	letter-spacing: 0.03em;
+  	line-height: 36px;
+  	display: inline-block;
+  	flex-shrink: 0;
+}
+.frameWrapper14 {
+  	height: 118px;
+  	width: 410px;
+  	position: relative;
+  	box-shadow: -8px -8px 6px #fff inset, 8px 8px 6px #c4c4c4 inset;
+  	border-radius: 24px;
+  	background-color: #dfe6e9;
+  	overflow: hidden;
+  	flex-shrink: 0;
+  	color: #bf1869;
+}
+.frameParent28 {
+  	position: absolute;
+  	top: calc(50% - 22px);
+  	left: 24px;
+  	width: 354px;
+  	display: flex;
+  	align-items: center;
+  	gap: 24px;
+}
+.policyCompliance3 {
+  	height: 38px;
+  	width: 241px;
+  	position: relative;
+  	letter-spacing: 0.03em;
+  	line-height: 36px;
+  	display: inline-block;
+  	flex-shrink: 0;
+}
+.frameWrapper15 {
+  	height: 118px;
+  	width: 410px;
+  	position: relative;
+  	box-shadow: -8px -8px 6px #fff inset, 8px 8px 6px #c4c4c4 inset;
+  	border-radius: 24px;
+  	background-color: #dfe6e9;
+  	overflow: hidden;
+  	flex-shrink: 0;
+  	color: #67096e;
+}
+.frameChild11 {
+  	height: 44px;
+  	width: 44px;
+  	position: relative;
+  	flex-shrink: 0;
+}
+.frameParent30 {
+  	align-self: stretch;
+  	display: flex;
+  	align-items: center;
+  	gap: 24px;
+  	color: #046f73;
+}
+.frameWrapper16 {
+  	height: 118px;
+  	width: 410px;
+  	position: relative;
+  	box-shadow: -8px -8px 6px #fff inset, 8px 8px 6px #c4c4c4 inset;
+  	border-radius: 24px;
+  	background-color: #dfe6e9;
+  	overflow: hidden;
+  	flex-shrink: 0;
+}
+.frameWrapper17 {
+  	height: 118px;
+  	width: 410px;
+  	position: relative;
+  	box-shadow: -8px -8px 6px #fff inset, 8px 8px 6px #c4c4c4 inset;
+  	border-radius: 24px;
+  	background-color: #dfe6e9;
+  	overflow: hidden;
+  	flex-shrink: 0;
+  	color: #907507;
+}
+.frameWrapper18 {
+  	height: 118px;
+  	width: 410px;
+  	position: relative;
+  	box-shadow: -8px -8px 6px #fff inset, 8px 8px 6px #c4c4c4 inset;
+  	border-radius: 24px;
+  	background-color: #dfe6e9;
+  	overflow: hidden;
+  	flex-shrink: 0;
+  	color: #2a7308;
+}
+.frameParent34 {
+  	width: 1280px;
+  	display: flex;
+  	align-items: center;
+  	gap: 151px;
+  	text-align: left;
+    justify-content: center;
+}
+.frameParent35 {
+  	width: 638px;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-start;
+  	gap: 32px;
+}
+.frameChild15 {
+  	width: 397.7px;
+  	height: 50.3px;
+  	position: relative;
+  	border-radius: 28px;
+  	object-fit: contain;
+}
+.poweringStatewideLearning {
+  	align-self: stretch;
+  	position: relative;
+  	letter-spacing: 0.03em;
+  	line-height: 60px;
+  	display: inline-block;
+  	flex-shrink: 0;
+    font-size: 36px;
+}
+
+.theseCapabilitiesHelp {
+  	align-self: stretch;
+  	font-size: 24px;
+  	position: relative;
+  	font-size: 24px;
+  	letter-spacing: 0.03em;
+  	line-height: 40px;
+  	color: #2f3547;
+  	display: inline-block;
+  	flex-shrink: 0;
+}
+.frameParent36 {
+  	width: 429px;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-start;
+  	gap: 16px;
+  	text-align: center;
+  	font-size: 24px;
+}
+.frameParent37 {
+  	align-self: stretch;
+  	
+  	
+  	
+  	
+}
+.frameChild16 {
+  	height: 70.1px;
+  	width: 70.1px;
+  	position: relative;
+  	flex-shrink: 0;
+}
+.scaleTrainingStatewide {
+  	height: 37px;
+  	width: 280px;
+  	position: relative;
+  	letter-spacing: 0.03em;
+  	line-height: 36px;
+  	font-weight: 600;
+  	display: inline-block;
+  	flex-shrink: 0;
+}
+.ensurePolicyCompliance {
+  	height: 37px;
+  	width: 293px;
+  	position: relative;
+  	letter-spacing: 0.03em;
+  	line-height: 36px;
+  	font-weight: 600;
+  	display: inline-block;
+  	flex-shrink: 0;
+}
+.developWorkforceSkills {
+  	height: 37px;
+  	width: 285px;
+  	position: relative;
+  	letter-spacing: 0.03em;
+  	line-height: 36px;
+  	font-weight: 600;
+  	display: inline-block;
+  	flex-shrink: 0;
+}
+.improvePublicServices {
+  	height: 37px;
+  	width: 274px;
+  	position: relative;
+  	letter-spacing: 0.03em;
+  	line-height: 36px;
+  	font-weight: 600;
+  	display: inline-block;
+  	flex-shrink: 0;
+}
+.driveDigitalTransformation {
+  	height: 37px;
+  	width: 343px;
+  	position: relative;
+  	letter-spacing: 0.03em;
+  	line-height: 36px;
+  	font-weight: 600;
+  	display: inline-block;
+  	flex-shrink: 0;
+}
+.rectangleParent {
+  	width: 1280px;
+  	height: 526px;
+  	position: relative;
+  	box-shadow: -8px -8px 8px rgba(255, 255, 255, 0.5) inset, 8px 8px 8px #c4c4c4 inset;
+  	border-radius: 50px;
+  	background-color: #dfe6e9;
+  	overflow: hidden;
+  	flex-shrink: 0;
+  	text-align: left;
+}
+.rectangle {
+  	position: absolute;
+  	top: 0px;
+  	left: 0px;
+  	width: 1280px;
+  	height: 500px;
+  	flex-shrink: 0;
+}
+.image20 {
+  	position: absolute;
+  	top: -561px;
+  	left: calc(50% - 640px);
+  	width: 1280px;
+  	height: 800px;
+  	flex-shrink: 0;
+}
+.groupMultiethnicBusinessPeo {
+  	position: absolute;
+  	top: calc(50% - 263px);
+  	left: 0px;
+  	width: 1280px;
+  	height: 526px;
+  	flex-shrink: 0;
+}
+.pexelsAkhilDasari2160057282Icon {
+  	position: absolute;
+  	top: 0px;
+  	left: 547px;
+  	border-radius: 200px 0px 0px 0px;
+  	width: 819px;
+  	height: 525px;
+  	object-fit: cover;
+  	flex-shrink: 0;
+}
+.frameWrapper19 {
+  	position: absolute;
+  	top: calc(50% - 213px);
+  	left: 50px;
+  	width: 452px;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-start;
+  	flex-shrink: 0;
+}
+.frameWrapper20 {
+  	align-self: stretch;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-start;
+}
+.frameParent44 {
+  	width: 448px;
+  	height: 200px;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-start;
+  	gap: 32px;
+  	flex-shrink: 0;
+}
+.frameChild22 {
+	width: 231.2px;
+	height: 50.2px;
+	position: relative;
+	border-radius: 28px;
+	background-color: #dfe6e9;
+	box-shadow: -8px -8px 16px #fff inset, 8px 8px 16px #c4c4c4 inset;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	box-sizing: border-box;
+	flex-shrink: 0;
+	font-size: 24px;
+	font-weight: 500;
+	line-height: 1;
+	letter-spacing: 0.03em;
+	color: #2d4cc8;
+	white-space: nowrap;
+}
+.empoweringPublicLearning {
+  	width: 497px;
+  	font-size: 36px;
+  	position: relative;
+  	letter-spacing: 0.03em;
+  	line-height: 60px;
+  	display: inline-block;
+  	flex-shrink: 0;
+}
+.neurolxpEnablesScalable {
+  	width: 454px;
+  	position: relative;
+  	font-size: 24px;
+  	letter-spacing: 0.03em;
+  	line-height: 36px;
+  	display: inline-block;
+  	flex-shrink: 0;
+}
+.frameParent45 {
+  	width: 1063px;
+  	height: 317px;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: center;
+  	gap: 32px;
+}
+.frameChild23 {
+	width: 193.35px;
+	height: 50px;
+	position: relative;
+	border-radius: 28px;
+	background-color: #dfe6e9;
+	box-shadow: -8px -8px 16px #fff inset, 8px 8px 16px #c4c4c4 inset;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	box-sizing: border-box;
+	font-size: 24px;
+	font-weight: 500;
+	line-height: 1;
+	letter-spacing: 0.03em;
+	color: #2d4cc8;
+	white-space: nowrap;
+}
+.poweringGovernmentWorkforceParent {
+  	width: 999px;
+  	height: 176px;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: center;
+  	gap: 32px;
+}
+.poweringGovernmentWorkforce {
+  	width: 1044px;
+  	letter-spacing: 0.03em;
+  	line-height: 60px;
+  	display: inline-block;
+  	flex-shrink: 0;
+}
+.neurolxpHelpsGovernments {
+  	width: 1187px;
+  	position: relative;
+  	font-size: 24px;
+  	letter-spacing: 0.03em;
+  	line-height: 40px;
+  	color: #2f3547;
+  	display: inline-block;
+  	flex-shrink: 0;
+}
+.frameParent46 {
+  	align-self: stretch;
+  	height: 501px;
+  	position: relative;
+  	text-align: left;
+  	font-size: 26px;
+  	color: #2f3547;
+}
+.frameParent47 {
+  	position: absolute;
+  	bottom: -0.01px;
+  	left: calc(50% - 720px);
+  	box-shadow: -10px -10px 20px #fff inset, 10px 10px 10px #c4c4c4 inset;
+  	background-color: #dfe6e9;
+  	width: 1440px;
+  	height: 459px;
+  	overflow: hidden;
+}
+.frameParent48 {
+  	position: absolute;
+  	top: 49.81px;
+  	left: 53.96px;
+  	width: 1339.5px;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: center;
+  	gap: 24px;
+}
+.frameParent49 {
+  	align-self: stretch;
+  	display: flex;
+  	align-items: flex-start;
+  	gap: 35px;
+}
+.frameParent50 {
+  	width: 676px;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-start;
+  	gap: 24px;
+  	flex-shrink: 0;
+}
+.logo01SynapseSpark1Group {
+  	width: 577px;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-start;
+  	gap: 20px;
+}
+.logo01SynapseSpark1Icon2 {
+  	width: 299px;
+  	height: 112px;
+  	position: relative;
+  	object-fit: cover;
+  	flex-shrink: 0;
+}
+.frameParent51 {
+  	display: flex;
+  	align-items: center;
+  	gap: 14px;
+  	flex-shrink: 0;
+}
+.onePlatformParent {
+  	display: flex;
+  	align-items: center;
+  	gap: 10px;
+}
+.onePlatform {
+  	position: relative;
+  	letter-spacing: -0.03em;
+  	line-height: 34px;
+  	text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.sparklesIcon {
+  	height: 23px;
+  	width: 23px;
+  	position: relative;
+}
+.prgeeqGlobalSolutionsPrivatParent {
+  	width: 459px;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-start;
+  	gap: 4px;
+  	font-size: 16px;
+}
+.prgeeqGlobalSolutions {
+  	align-self: stretch;
+  	position: relative;
+  	letter-spacing: 0.03em;
+  	line-height: 24px;
+}
+.prestigeAtlanta1012Container {
+  	align-self: stretch;
+  	height: 77px;
+  	position: relative;
+  	line-height: 24px;
+  	display: flex;
+  	align-items: flex-end;
+  	flex-shrink: 0;
+}
+.blankLine {
+  	line-height: 24px;
+}
+.frameParent52 {
+  	width: 631px;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-end;
+  	gap: 24px;
+  	flex-shrink: 0;
+  	font-size: 22px;
+  	color: #2d4cc8;
+}
+.frameParent53 {
+  	width: 619px;
+  	display: flex;
+  	align-items: flex-start;
+  	gap: 32px;
+}
+.aboutUsParent {
+  	width: 123px;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-start;
+  	gap: 20px;
+}
+.aboutUs {
+  	width: 93px;
+  	position: relative;
+  	letter-spacing: -0.03em;
+  	line-height: 30px;
+  	display: flex;
+  	align-items: center;
+}
+.ourMissionParent {
+  	align-self: stretch;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-start;
+  	gap: 15px;
+  	font-size: 20px;
+  	color: #2f3547;
+}
+.ourMission {
+  	align-self: stretch;
+  	height: 26px;
+  	position: relative;
+  	letter-spacing: 0.03em;
+  	line-height: 28px;
+  	display: flex;
+  	align-items: center;
+  	flex-shrink: 0;
+}
+.quickLinksParent {
+  	width: 207px;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-start;
+  	gap: 20px;
+}
+.quickLinks {
+  	align-self: stretch;
+  	height: 26px;
+  	position: relative;
+  	letter-spacing: -0.03em;
+  	line-height: 30px;
+  	display: flex;
+  	align-items: center;
+  	flex-shrink: 0;
+}
+.neurolxpParent {
+  	height: 181px;
+  	width: 205px;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-start;
+  	gap: 20px;
+}
+.neurolxp {
+  	align-self: stretch;
+  	height: 26px;
+  	position: relative;
+  	letter-spacing: -0.03em;
+  	line-height: 30px;
+  	display: flex;
+  	white-space: pre-wrap;
+  	align-items: center;
+  	flex-shrink: 0;
+}
+.ourCustomersGroup {
+  	width: 221px;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-start;
+  	gap: 15px;
+  	flex-shrink: 0;
+  	font-size: 20px;
+  	color: #2f3547;
+}
+.smartContentCreation {
+  	width: 229px;
+  	height: 26px;
+  	position: relative;
+  	letter-spacing: 0.03em;
+  	line-height: 28px;
+  	display: flex;
+  	align-items: center;
+  	flex-shrink: 0;
+}
+.frameParent54 {
+  	width: 392.4px;
+  	height: 80.1px;
+  	display: flex;
+  	align-items: center;
+  	gap: 24px;
+}
+.frameChild24 {
+  	height: 80.1px;
+  	width: 80.1px;
+  	position: relative;
+}
+.copyright2026 {
+  	align-self: stretch;
+  	height: 47px;
+  	position: relative;
+  	font-size: 16px;
+  	letter-spacing: -0.03em;
+  	line-height: 56px;
+  	font-weight: 600;
+  	color: #2d4cc8;
+  	text-align: center;
+  	display: inline-block;
+  	flex-shrink: 0;
+}
+.frameParent55 {
+  	position: absolute;
+  	bottom: 0px;
+  	left: calc(50% - 720px);
+  	box-shadow: -10px -10px 20px #fff inset, 8px 8px 16px #c4c4c4 inset;
+  	background-color: #dfe6e9;
+  	width: 1440px;
+  	height: 459px;
+  	overflow: hidden;
+}
+.frameWrapper21 {
+  	position: absolute;
+  	bottom: 0px;
+  	left: calc(50% - 720px);
+  	box-shadow: -8px -8px 16px #fff inset, 10px 10px 10px #c4c4c4 inset;
+  	background-color: #dfe6e9;
+  	width: 1440px;
+  	height: 459px;
+  	overflow: hidden;
+}
+.frameParent67 {
+  	width: 631px;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-end;
+  	position: relative;
+  	isolation: isolate;
+  	gap: 24px;
+  	flex-shrink: 0;
+  	font-size: 22px;
+  	color: #2d4cc8;
+}
+.frameParent68 {
+  	width: 619px;
+  	display: flex;
+  	align-items: flex-start;
+  	gap: 32px;
+  	z-index: 0;
+  	flex-shrink: 0;
+}
+.ourMissionContainer {
+  	align-self: stretch;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-start;
+  	gap: 15px;
+  	font-size: 18px;
+  	color: #2f3547;
+}
+.neurolxpContainer {
+  	display: flex;
+  	align-items: flex-start;
+  	flex-shrink: 0;
+}
+.neurolxp3 {
+  	height: 26px;
+  	width: 103px;
+  	position: relative;
+  	letter-spacing: -0.03em;
+  	line-height: 30px;
+  	display: flex;
+  	align-items: center;
+  	flex-shrink: 0;
+}
+.neurolxpTxt {
+  	width: 100%;
+  	white-space: pre-wrap;
+}
+.neurolxp4 {
+  	line-height: 30px;
+}
+.span {
+  	font-size: 12px;
+  	line-height: 30px;
+}
+.tm {
+  	height: 17px;
+  	width: 23px;
+  	position: relative;
+  	font-size: 12px;
+  	letter-spacing: -0.03em;
+  	line-height: 30px;
+  	display: flex;
+  	align-items: center;
+  	flex-shrink: 0;
+}
+.ourCustomersParent2 {
+  	width: 221px;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-start;
+  	gap: 15px;
+  	flex-shrink: 0;
+  	font-size: 18px;
+  	color: #2f3547;
+}
+.frameParent70 {
+  	width: 392.4px;
+  	height: 80.1px;
+  	margin: 0 !important;
+  	position: absolute;
+  	top: 217.19px;
+  	left: 135.04px;
+  	display: flex;
+  	align-items: center;
+  	gap: 24px;
+  	z-index: 1;
+  	flex-shrink: 0;
+}
+.frameChild32 {
+  	height: 80.1px;
+  	width: 80.1px;
+  	position: relative;
+  	flex-shrink: 0;
+}
+.frameChild37 {
+  	position: absolute;
+  	top: 0px;
+  	left: calc(50% - 30.07px);
+  	border-radius: 32px;
+  	width: 59.1px;
+  	height: 92px;
+  	object-fit: contain;
+}
+
+.topFeatureCard {
+  box-sizing: border-box;
+  cursor: pointer;
+  transition:
+    border-top-color 0.3s ease,
+    box-shadow 0.3s ease,
+    transform 0.3s ease;
+}
+
+.topFeatureCardBlue:hover {
+  border-top: 20px solid #2D4CC8;
+  box-shadow:
+    -8px -8px 16px #ffffff,
+    8px 8px 16px #c4c4c4;
+}
+
+.topFeatureCardPink:hover {
+  border-top: 20px solid #BF1869;
+  box-shadow:
+    -8px -8px 16px #ffffff,
+    8px 8px 16px #c4c4c4;
+}
+
+.topFeatureCardTeal:hover {
+  border-top: 20px solid #0B9BA0;
+  box-shadow:
+    -8px -8px 16px #ffffff,
+    8px 8px 16px #c4c4c4;
+}
+
+.topFeatureCardPurple:hover {
+  border-top: 20px solid #67096E;
+  box-shadow:
+    -8px -8px 16px #ffffff,
+    8px 8px 16px #c4c4c4;
+}
+
+.topFeatureCardBlue:hover,
+.topFeatureCardPink:hover,
+.topFeatureCardTeal:hover,
+.topFeatureCardPurple:hover {
+  transform: translateY(-4px);
+}
+
+.topFeatureCard:focus-within {
+  outline: none;
+}
+
+.useCasesPill{
+  
+  min-width:176.5px;
+  
+  min-height:50.1px;
+  padding:0 16px;
+  box-sizing:border-box;
+  
+  
+  
+  
+  
+  
+  
+  font-family:"Segoe UI";
+  
+  
+  
+  
+  
+  flex-shrink:0;
+  overflow:visible;
+}
+
+.useCaseGrid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 410px);
+  gap: 50px 24px;
+}
+
+.useCaseCard {
+  --use-case-color: #2d4cc8;
+  width: 410px;
+  height: 118px;
+  padding: 0 24px;
+  border: 0;
+  border-radius: 24px;
+  box-sizing: border-box;
+  background: #dfe6e9;
+
+  box-shadow:
+    -8px -8px 6px #ffffff inset,
+    8px 8px 6px #c4c4c4 inset;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  color: var(--use-case-color);
+  cursor: pointer;
+  transition:
+    box-shadow 0.25s ease,
+    border-color 0.25s ease,
+    transform 0.25s ease;
+}
+
+.useCaseBlue   { --use-case-color: #2d4cc8; }
+.useCasePink   { --use-case-color: #bf1869; }
+.useCasePurple { --use-case-color: #67096e; }
+.useCaseTeal   { --use-case-color: #0b9ba0; }
+.useCaseGold   { --use-case-color: #907507; }
+.useCaseGreen  { --use-case-color: #2a7308; }
+
+.useCaseCard:hover {
+  border-left: 10px solid var(--use-case-color);
+  border-right: 10px solid var(--use-case-color);
+  padding-left: 14px;
+  padding-right: 14px;
+  box-shadow:
+    -8px -8px 16px #ffffff,
+    8px 8px 16px #c4c4c4;
+  transform: translateY(-2px);
+}
+
+.useCaseIconCircle {
+  width: 44px;
+  height: 44px;
+  position: relative;
+  flex: 0 0 44px;
+  border-radius: 50%;
+  background: #dfe6e9;
+  box-shadow:
+    8px 8px 16px #c6c6c9,
+    -8px -8px 16px #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.useCaseIconImage {
+  width: 24px;
+  height: 24px;
+  display: block;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.useCaseTitle {
+  color: var(--use-case-color);
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  line-height: 36px;
+}
+
+.useCasesPill{
+    width:176.5px;
+    height:50px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-radius:28px;
+    background:#DFE6E9;
+    box-shadow:
+        inset -4px -4px 8px #FFFFFF,
+        inset 4px 4px 8px rgba(196,196,196,0.8);
+    color:#2D4CC8;
+    font-size:24px;
+    font-weight:600;
+    letter-spacing:0.02em;
+    line-height:normal;
+    white-space:nowrap;
+    border:none;
+    transform:none;
+}
+
+.benefitsPill {
+  width: 397.7px;
+  height: 50.3px;
+  flex-shrink: 0;
+  border-radius: 28px;
+  box-sizing: border-box;
+  background: #dfe6e9;
+  box-shadow:
+    inset -4px -4px 8px #ffffff,
+    inset 4px 4px 8px rgba(196, 196, 196, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #2d4cc8;
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  line-height: 30px;
+  white-space: nowrap;
+}
+
+.frameParent37 {
+  height: 70px;
+  min-height: 70px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.benefitIconOuter {
+  width: 70px;
+  height: 70px;
+  position: relative;
+  flex: 0 0 70px;
+  border-radius: 100px;
+  background: #dfe6e9;
+  box-shadow:
+    inset -4px -4px 8px #ffffff,
+    inset 4px 4px 8px rgba(196, 196, 196, 0.8);
+  transform: rotate(0.05deg);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.benefitIconInner {
+  width: 50px;
+  height: 50px;
+  position: relative;
+  flex: 0 0 50px;
+  border-radius: 50%;
+  background: #dfe6e9;
+  box-shadow:
+    8px 8px 16px #c6c6c9,
+    -8px -8px 16px #ffffff;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.benefitIconImage {
+  width: 34px;
+  height: 34px;
+  position: relative;
+  display: block;
+  object-fit: contain;
+  flex-shrink: 0;
+  transform: rotate(0.05deg);
+}
+
+.frameParent10 {
+  height: auto;
+  position: relative;
+}
+
+.challengeGrid {
+  width: 1280px;
+  display: grid;
+  grid-template-columns: repeat(3, 405px);
+  column-gap: 32px;
+  row-gap: 50px;
+  align-items: start;
+  justify-content: start;
+}
+
+.challengeGrid > .challengeCard:nth-child(4) {
+  grid-column: 1;
+  transform: translateX(218px);
+}
+
+.challengeGrid > .challengeCard:nth-child(5) {
+  grid-column: 2;
+  transform: translateX(218px);
+}
+
+.challengeCard.frameWrapper8,
+.challengeCard.frameWrapper10 {
+  width: 405px;
+  height: 330px;
+  min-height: 330px;
+  position: relative;
+  overflow: hidden;
+  box-sizing: border-box;
+  transition:
+    height 0.6s cubic-bezier(0.4, 0, 0.2, 1),
+    min-height 0.6s cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 0.35s ease;
+}
+
+.challengeCard.challengeCardOpen {
+  height: 500px;
+  min-height: 500px;
+}
+
+.challengeCard .frameParent12 {
+  position: relative;
+  top: auto;
+  left: auto;
+  width: 300px;
+  margin: 20px auto 0;
+}
+
+.challengeCard .frameParent13 {
+  gap: 20px;
+}
+
+.challengeToggle {
+  width: 226px;
+  min-height: 72px;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+  color: #000;
+  font-family: inherit;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.challengeToggle .howNeurolxpHelps {
+  height: auto;
+  line-height: 30px;
+}
+
+.challengeToggle .arrowDownDoubleIcon {
+  transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.challengeToggle .arrowOpen {
+  transform: rotate(180deg);
+}
+
+.challengeAnswer {
+  position: absolute;
+  width: 358px;
+  min-height: 138px;
+  left: calc(50% - 179px);
+  bottom: 25px;
+  padding: 24px 26px;
+  box-sizing: border-box;
+  background: #dfe6e9;
+  box-shadow: inset -4px -4px 8px #ffffff,
+              inset 4px 4px 8px #c4c4c4;
+  border-radius: 16px;
+  color: #2f3547;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0.02em;
+  text-align: left;
+
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-14px);
+  pointer-events: none;
+  transition:
+    opacity 0.45s ease,
+    transform 0.55s cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 0s linear 0.55s;
+}
+
+.challengeCardOpen .challengeAnswer {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+  pointer-events: auto;
+  transition:
+    opacity 0.45s ease 0.12s,
+    transform 0.55s cubic-bezier(0.4, 0, 0.2, 1) 0.06s,
+    visibility 0s linear 0s;
+}
+
+.frameParent11,
+.frameParent18 {
+  position: static;
+}
+
+@media screen and (min-width: 1440px) and (max-width: 2559px) {
+  .governmentStateInstitution {
+    zoom: 1;
+  }
+
+  .frameDiv,
+  .vectorParent {
+    left: calc(50% - 640px);
+  }
+}
+
+@media screen and (min-width: 2560px) and (max-width: 2560px) {
+  .frameDiv,
+  .vectorParent {
+    left: calc(50% - 640px);
+  }
+}
+
+@media screen and (min-width: 1360px) and (max-width: 1439px) {
+  html,
+  body {
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  .governmentStateInstitution {
+    width: 100%;
+    zoom: calc(1439 / 1440) !important;
+    overflow-x: hidden;
+  }
+
+  .frameParent,
+  .frameParent47,
+  .frameParent55,
+  .frameWrapper21 {
+    width: 100%;
+    left: 0;
+  }
+
+  .vectorParent {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1359px) {
+  html,
+  body {
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  .governmentStateInstitution {
+    width: 100%;
+    zoom: calc(1280 / 1440) !important;
+    overflow-x: hidden;
+  }
+
+  .frameParent,
+  .frameParent47,
+  .frameParent55,
+  .frameWrapper21 {
+    width: 100%;
+    left: 0;
+  }
+
+  .vectorParent {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+@media screen and (max-width:1024px){
+  html,
+  body{
+    width:100%;
+    overflow-x:hidden;
+  }
+
+  .governmentStateInstitution{
+    width:100%;
+    zoom:0.71 !important;
+    overflow-x:hidden;
+  }
+
+  .frameParent,
+  .frameParent47,
+  .frameParent55,
+  .frameWrapper21{
+    width:100%;
+    left:0;
+  }
+
+  .vectorParent{
+    left:50%;
+    transform:translateX(-50%);
+  }
+}
+
+@media screen and (max-width:768px){
+  html,
+  body{
+    width:100%;
+    overflow-x:hidden;
+  }
+
+  .governmentStateInstitution{
+    width:100%;
+    zoom:0.53 !important;
+    overflow-x:hidden;
+    margin:0 auto;
+  }
+
+  .frameParent,
+  .frameParent47,
+  .frameParent55,
+  .frameWrapper21{
+    width:100%;
+    left:0 !important;
+  }
+
+  .vectorParent{
+    left:50% !important;
+    transform:translateX(-50%) !important;
+  }
+}
+
+@media screen and (max-width: 425px){
+  .frameParent8{
+    gap: 56px !important;
+  }
+
+  .frameParent9{
+    width: 560px !important;
+    gap: 40px !important;
+  }
+
+  .frameWrapper7{
+    width: 560px !important;
+    height: auto !important;
+  }
+
+  .keyChallengesInGovernmentWParent{
+    width: 560px !important;
+    height: auto !important;
+    gap: 20px !important;
+  }
+
+  .keyChallengesIn{
+    
+    height: auto !important;
+    font-size: 30px !important;
+    line-height: 44px !important;
+    text-align: center !important;
+  }
+
+  .neurolxpCentralizesGovernmen{
+    
+    height: auto !important;
+    font-size: 16px !important;
+    line-height: 30px !important;
+    text-align: center !important;
+  }
+
+  .frameParent10{
+    width: 560px !important;
+    height: auto !important;
+    min-height: 1960px !important;
+    position: relative !important;
+  }
+
+  .challengeGrid{
+    width: 560px !important;
+    display: grid !important;
+    
+    grid-auto-rows: auto !important;
+    justify-content: center !important;
+    align-items: start !important;
+    column-gap: 0 !important;
+    row-gap: 28px !important;
+  }
+
+  .challengeGrid > .challengeCard:nth-child(4),
+  .challengeGrid > .challengeCard:nth-child(5){
+    grid-column: 1 !important;
+    transform: none !important;
+  }
+
+  .challengeCard.frameWrapper8,
+  .challengeCard.frameWrapper10{
+    
+    height: 340px !important;
+    min-height: 340px !important;
+    border-radius: 72px 0 38px 38px !important;
+  }
+
+  
+
+  .challengeCard .frameParent12{
+    
+    margin: 18px auto 0 !important;
+    gap: 20px !important;
+  }
+
+  .challengeCard .frameParent13{
+    width: 100% !important;
+    gap: 24px !important;
+  }
+
+  .challengeCard .trainingAtScaleGroup{
+    width: 100% !important;
+    height: auto !important;
+    gap: 30px !important;
+  }
+
+  .challengeCard .trainingAtScale2,
+  .challengeCard .centralizedTraining,
+  .challengeCard .multipleDepartments{
+    
+    height: auto !important;
+    font-size: 26px !important;
+    line-height: 30px !important;
+    text-align: center !important;
+  }
+
+  .challengeCard .trainGovernmentTeams,
+  .challengeCard .ensureRegulatoryCompliance{
+    
+    height: auto !important;
+    font-size: 20px !important;
+    line-height: 25px !important;
+    text-align: center !important;
+  }
+
+  .cardIconOuter{
+    width: 65px !important;
+    height: 65px !important;
+    flex-basis: 56px !important;
+  }
+
+  .cardIconInner{
+    width: 46px !important;
+    height: 46px !important;
+    flex-basis: 42px !important;
+  }
+
+  .cardIconGraphic{
+    width: 28px !important;
+    height: 28px !important;
+  }
+
+  .challengeToggle,
+  .howNeurolxpHelpsParent,
+  .howNeurolxpHelpsContainer{
+    
+    min-height: 58px !important;
+    height: auto !important;
+    gap: 8px !important;
+    font-size: 20px !important;
+    line-height: 24px !important;
+  }
+
+  .challengeToggle .howNeurolxpHelps,
+  .howNeurolxpHelps{
+    width: 100% !important;
+    height: auto !important;
+    font-size: 20px !important;
+    line-height: 24px !important;
+    text-align: center !important;
+  }
+
+  .arrowDownDoubleIcon{
+    width: 25px !important;
+    height: 25px !important;
+	transform: translatey(30);
+  }
+
+  .challengeAnswer{
+    
+    min-height: 110px !important;
+    
+    bottom: 18px !important;
+    padding: 18px 20px !important;
+    border-radius: 14px !important;
+    font-size: 18px !important;
+    line-height: 24px !important;
+  }
+
+  
+
+  .frameParent24{
+    width: 560px !important;
+    height: auto !important;
+    
+  }
+
+  
+
+  .governmentLearningUseCasesWrapper{
+    width: 560px !important;
+    height: auto !important;
+  }
+
+  
+
+  .frameParent25{
+    width: 560px !important;
+    gap: 24px !important;
+  }
+
+  .useCaseGrid{
+    width: 560px !important;
+    display: grid !important;
+    grid-template-columns: repeat(2, 268px) !important;
+    gap: 20px 16px !important;
+    justify-content: center !important;
+    align-items: stretch !important;
+  }
+
+  .useCaseCard,
+  .frameWrapper13,
+  .frameWrapper14,
+  .frameWrapper15,
+  .frameWrapper16,
+  .frameWrapper17,
+  .frameWrapper18{
+    
+    
+    
+    
+    
+    
+    box-sizing: border-box !important;
+  }
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  .frameParent26,
+  .frameParent30{
+    width: 560px !important;
+    display: grid !important;
+    grid-template-columns: repeat(2, 268px) !important;
+    gap: 20px 16px !important;
+    justify-content: center !important;
+    align-items: stretch !important;
+  }
+}
+
+@media screen and (max-width: 425px){
+  .frameParent9,
+  .frameWrapper7,
+  .keyChallengesInGovernmentWParent,
+  .frameParent10,
+  .challengeGrid{
+    width: 500px !important;
+  }
+
+  .keyChallengesIn{
+    width: 480px !important;
+  }
+
+  .neurolxpCentralizesGovernmen{
+    width: 470px !important;
+  }
+
+  .challengeGrid{
+    grid-template-columns: 460px !important;
+  }
+
+  .challengeCard.frameWrapper8,
+  .challengeCard.frameWrapper10{
+    width: 460px !important;
+  }
+
+  .challengeCard .frameParent12{
+    width: 410px !important;
+  }
+
+  .challengeCard .trainingAtScale2,
+  .challengeCard .centralizedTraining,
+  .challengeCard .multipleDepartments{
+    width: 400px !important;
+  }
+
+  .challengeCard .trainGovernmentTeams,
+  .challengeCard .ensureRegulatoryCompliance{
+    width: 390px !important;
+  }
+
+  .challengeToggle,
+  .howNeurolxpHelpsParent,
+  .howNeurolxpHelpsContainer{
+    width: 370px !important;
+  }
+
+  .challengeAnswer{
+    width: 400px !important;
+    left: calc(50% - 200px) !important;
+  }
+
+  .frameParent23,
+  .frameParent24,
+  .governmentLearningUseCasesWrapper,
+  .frameParent25,
+  .useCaseGrid,
+  .frameParent26,
+  .frameParent30{
+    width: 500px !important;
+  }
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  .frameDiv{
+    top: 20px !important;
+    left: 50% !important;
+    width: 540px !important;
+    gap: 6px !important;
+    justify-content: center !important;
+    font-size: 13px !important;
+    line-height: 18px !important;
+    white-space: nowrap !important;
+    transform: translateX(-65%) scale(.92) !important;
+    transform-origin: top center !important;
+  }
+
+  .industriesWeServe,
+  .governmentState{
+    width: auto !important;
+    height: auto !important;
+    font-size: 13px !important;
+    line-height: 18px !important;
+  }
+
+  .arrowRightDoubleGroup{
+    gap: 5px !important;
+  }
+
+  .vectorParent{
+    top: 70px !important;
+    left: 50% !important;
+    width: 1280px !important;
+    
+    transform: translateX(-50%) scale(.45) !important;
+    transform-origin: top center !important;
+  }
+
+  .frameParent2{
+    top: 42px !important;
+    left: 48px !important;
+    width: 650px !important;
+    height: auto !important;
+    gap: 28px !important;
+  }
+
+  .frameParent3{
+    gap: 22px !important;
+  }
+
+  .frameParent4{
+    height: auto !important;
+    gap: 22px !important;
+  }
+
+  .frameInner{
+    width: 390px !important;
+    height: 46px !important;
+    font-size: 21px !important;
+    line-height: 28px !important;
+  }
+
+  .empoweringGovernmentWorkforcContainer{
+    width: 650px !important;
+    height: auto !important;
+    font-size: 42px !important;
+    line-height: 52px !important;
+  }
+
+  .empowering,
+  .governmentWorkforce{
+    line-height: 52px !important;
+  }
+
+  .neurolxpEnablesGovernments{
+    width: 480px !important;
+    font-size: 24px !important;
+    line-height: 34px !important;
+	transform: translatey(20);
+  }
+
+  .frameWrapper2{
+    width: 270px !important;
+  }
+
+  .frameIcon{
+    width: 270px !important;
+    height: 54px !important;
+    font-size: 18px !important;
+    line-height: 26px !important;
+	transform: translatey(40);
+  }
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  .textWrapper{
+    top:1185px !important;
+    left:50% !important;
+    width:250px !important;
+    transform:translateX(-50%) !important;
+  }
+
+  .text{
+    left:0 !important;
+    width:250px !important;
+    height:auto !important;
+    font-size:30px !important;
+    line-height:38px !important;
+  }
+
+  
+
+  
+
+  
+
+}
+
+
+
+@media screen and (max-width: 425px){
+  .frameParent8{
+    top:800px;
+  }
+}
+
+@media screen and (max-width: 425px){
+  .frameParent23{
+    position:relative !important;
+    top:-140px !important;
+    width:560px !important;
+    gap:34px !important;
+  }
+
+  .frameParent24,
+  .governmentLearningUseCasesWrapper,
+  .frameParent25{
+    width:560px !important;
+  }
+
+  .frameParent24{
+    gap:22px !important;
+  }
+
+  .governmentLearningUse{
+    width:540px !important;
+    height:auto !important;
+    font-size:32px !important;
+    line-height:40px !important;
+    text-align:center !important;
+  }
+
+  .useCasesPill,
+  .frameChild8{
+    width:150px !important;
+    min-width:150px !important;
+    height:42px !important;
+    min-height:42px !important;
+    padding:0 14px !important;
+    font-size:18px !important;
+    line-height:24px !important;
+  }
+
+  .useCaseGrid,
+  .frameParent26,
+  .frameParent30{
+    width:580px !important;
+    grid-template-columns:repeat(2, 268px) !important;
+    gap:25px 20px !important;
+  }
+
+  .useCaseCard,
+  .frameWrapper13,
+  .frameWrapper14,
+  .frameWrapper15,
+  .frameWrapper16,
+  .frameWrapper17,
+  .frameWrapper18{
+    width:268px !important;
+    height:112px !important;
+    min-height:112px !important;
+    padding:12px 14px !important;
+    border-radius:18px !important;
+    gap:12px !important;
+  }
+
+  .useCaseCard:hover{
+    padding-left:10px !important;
+    padding-right:10px !important;
+    border-left-width:6px !important;
+    border-right-width:6px !important;
+  }
+
+  .useCaseIconCircle,
+  .frameChild9,
+  .frameChild11{
+    width:38px !important;
+    height:38px !important;
+    flex:0 0 38px !important;
+  }
+
+  .useCaseIconImage{
+    width:22px !important;
+    height:22px !important;
+  }
+
+  .useCaseTitle,
+  .governanceTraining,
+  .policyCompliance3{
+    width:auto !important;
+    max-width:198px !important;
+    height:auto !important;
+    font-size:17px !important;
+    line-height:22px !important;
+    letter-spacing:0.02em !important;
+    white-space:normal !important;
+    overflow-wrap:break-word !important;
+  }
+
+  .frameParent27,
+  .frameParent28{
+    position:static !important;
+    width:100% !important;
+    height:100% !important;
+    display:flex !important;
+    align-items:center !important;
+    justify-content:flex-start !important;
+    gap:12px !important;
+  }
+
+  .frameParent34{
+    width:560px !important;
+    display:flex !important;
+    flex-direction:column !important;
+    align-items:center !important;
+    
+	transform: translatey(-140);	
+  }
+
+  .frameParent35{
+    width:520px !important;
+    order:1 !important;
+    align-items:flex-start !important;
+  }
+
+  .frameParent36{
+    
+    order:2 !important;
+    align-items:flex-start !important;
+	
+  }
+
+  .rectangleParent{
+    width:560px !important;
+    height:230px !important;
+    min-height:230px !important;
+    border-radius:22px !important;
+    overflow:hidden !important;
+  }
+
+  .rectangle{
+    width:560px !important;
+    height:219px !important;
+  }
+
+  .image20{
+    top:-245px !important;
+    left:calc(50% - 280px) !important;
+    width:560px !important;
+    height:350px !important;
+  }
+
+  .groupMultiethnicBusinessPeo{
+    top:calc(50% - 115px) !important;
+    left:0 !important;
+    width:560px !important;
+    height:230px !important;
+  }
+
+  .pexelsAkhilDasari2160057282Icon{
+    
+    
+    
+    
+    border-radius:88px 0 0 0 !important;
+  }
+
+  
+
+  .frameWrapper20{
+    width:198px !important;
+  }
+
+  .frameParent44{
+    
+    height:auto !important;
+    
+  }
+
+  .frameChild22{
+    width:102px !important;
+    height:22px !important;
+    min-height:22px !important;
+    border-radius:14px !important;
+    font-size:11px !important;
+    line-height:14px !important;
+    padding:0 8px !important;
+  }
+
+  
+
+  
+}
+
+@media screen and (max-width: 425px){
+  .rectangleParent{
+    position: relative !important;
+    top: -90px !important;
+  }
+}
+
+@media screen and (max-width: 425px){
+  
+
+  
+
+  
+
+  .poweringGovernmentWorkforce{
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    overflow-wrap:normal !important;
+  }
+
+  
+}
+
+
+
+@media screen and (max-width: 425px){
+  html,
+  body{
+    width:100% !important;
+    min-height:100% !important;
+    height:auto !important;
+    overflow-x:hidden !important;
+    overflow-y:auto !important;
+    touch-action:pan-y !important;
+  }
+
+  .governmentStateInstitution{
+    width:100% !important;   
+  }
+}
+
+@media screen and (max-width: 425px){
+  
+
+  .rectangleParent,
+  .groupMultiethnicBusinessPeo{
+    width:300px !important;
+    height:250px !important;
+    left:50% !important;
+    transform:translateX(-50%) !important;
+    overflow:visible !important;
+  }
+
+  .pexelsAkhilDasari2160057282Icon{
+    width:185px !important;
+    height:250px !important;
+    left:115px !important;
+    top:0 !important;
+  }
+
+  .frameWrapper19{
+    top:18px !important;
+    left:16px !important;
+    width:130px !important;
+  }
+
+  .frameParent44{
+    width:130px !important;
+    gap:12px !important;
+  }
+
+  .empoweringPublicLearning{
+    width:130px !important;
+    font-size:18px !important;
+    line-height:24px !important;
+    height:auto !important;
+  }
+
+  .neurolxpEnablesScalable{
+    width:130px !important;
+    font-size:12px !important;
+    line-height:18px !important;
+    height:auto !important;
+  }
+}
+
+@media screen and (max-width: 425px){
+  .frameParent23{
+    height:auto !important;
+    overflow:visible !important;
+
+  }
+
+  .rectangleParent{
+    margin-bottom:28px !important;
+  }
+
+  .frameParent45{
+    display:flex !important;
+    visibility:visible !important;
+    opacity:1 !important;
+    position:relative !important;
+    top:-90px !important;
+    left:auto !important;
+    right:auto !important;
+    
+    width:560px !important;
+    height:auto !important;
+    min-height:200px !important;
+    margin:0 auto !important;
+    padding:0 !important;
+    flex-direction:column !important;
+    align-items:center !important;
+    justify-content:flex-start !important;
+    gap:20px !important;
+    overflow:visible !important;
+    z-index:20 !important;
+  }
+
+  .frameChild23{
+    display:flex !important;
+    visibility:visible !important;
+    opacity:1 !important;
+    width:193px !important;
+    height:50px !important;
+    min-height:50px !important;
+    border-radius:28px !important;
+    font-size:24px !important;
+    line-height:32px !important;
+    font-weight:500 !important;
+    align-items:center !important;
+    justify-content:center !important;
+    flex-shrink:0 !important;
+  }
+
+  .poweringGovernmentWorkforceParent{
+    display:flex !important;
+    visibility:visible !important;
+    opacity:1 !important;
+    width:540px !important;
+    height:auto !important;
+    min-height:170px !important;
+    flex-direction:column !important;
+    align-items:center !important;
+    gap:20px !important;
+    overflow:visible !important;
+  }
+
+  .poweringGovernmentWorkforce{
+    display:block !important;
+    visibility:visible !important;
+    opacity:1 !important;
+    width:540px !important;
+    height:auto !important;
+    font-size:26px !important;
+    line-height:60px !important;
+    font-weight:700 !important;
+    text-align:center !important;
+    white-space:normal !important;
+    overflow:visible !important;
+  }
+
+  .neurolxpHelpsGovernments{
+    display:block !important;
+    visibility:visible !important;
+    opacity:1 !important;
+    width:540px !important;
+    height:auto !important;
+    font-size:14px !important;
+    line-height:40px !important;
+    text-align:center !important;
+    white-space:normal !important;
+    overflow:visible !important;
+  }
+
+  
+
+
+  .frameParent45{
+    margin-top:-30px !important;
+    transform:translateY(-400px) !important;
+  }
+}
+
+@media screen and (max-width: 425px){
+  .frameParent36{
+    width:400px !important;
+    gap:12px !important;
+  }
+
+  .frameParent37{
+    height:52px !important;
+    gap:12px !important;
+  }
+
+  .frameChild16{
+    width:60px !important;
+    height:60px !important;
+  }
+
+  .scaleTrainingStatewide,
+  .ensurePolicyCompliance,
+  .developWorkforceSkills,
+  .improvePublicServices,
+  .driveDigitalTransformation{
+    font-size:24px !important;
+    line-height:30px !important;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .frameParent5 {
+    top: 420px !important;
+    left: 50% !important;
+    width: 840px !important;
+    gap: 58px !important;
+    transform: translateX(-50%) scale(0.47) !important;
+    transform-origin: top center !important;
+  }
+
+  .frameParent6 {
+    width: 840px !important;
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 50px !important;
+  }
+
+  .frameWrapper3,
+  .frameWrapper4 {
+    width: 385px !important;
+    height: 275px !important;
+    min-width: 385px !important;
+    min-height: 275px !important;
+    border-radius: 195px 195px 24px 24px !important;
+    overflow: hidden !important;
+  }
+
+  .frameWrapper3 {
+    border-top-width: 20px !important;
+  }
+
+  .trainingAtScaleParent {
+    top: 55% !important;
+    left: 50% !important;
+    width: 340px !important;
+    height: auto !important;
+    transform: translate(-50%, -50%) !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 18px !important;
+  }
+
+  .trainingAtScale,
+  .centralizedLearning,
+  .trainingAnalytics {
+    width: 230px !important;
+    min-height: 76px !important;
+    height: auto !important;
+    margin: 0 auto !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    font-size: 30px !important;
+    line-height: 36px !important;
+    font-weight: 600 !important;
+    letter-spacing: 0.02em !important;
+    text-align: center !important;
+
+    white-space: normal !important;
+    word-break: normal !important;
+    overflow-wrap: normal !important;
+  }
+
+  .trainAcrossDepartments {
+    width: 315px !important;
+    height: auto !important;
+    min-height: 34px !important;
+    margin: 0 auto !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    font-size: 22px !important;
+    line-height: 30px !important;
+    letter-spacing: 0.02em !important;
+    text-align: center !important;
+    white-space: normal !important;
+    overflow-wrap: normal !important;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .useCaseGrid > :nth-child(4),
+  .useCaseGrid > :nth-child(6) {
+    padding-left: 8px !important;
+    padding-right: 8px !important;
+    gap: 6px !important;
+  }
+
+  .useCaseGrid > :nth-child(4) .frameParent27,
+  .useCaseGrid > :nth-child(4) .frameParent28,
+  .useCaseGrid > :nth-child(6) .frameParent27,
+  .useCaseGrid > :nth-child(6) .frameParent28 {
+    gap: 6px !important;
+    flex-wrap: nowrap !important;
+  }
+
+  .useCaseGrid > :nth-child(4) .useCaseIconCircle,
+  .useCaseGrid > :nth-child(6) .useCaseIconCircle,
+  .useCaseGrid > :nth-child(4) .frameChild9,
+  .useCaseGrid > :nth-child(6) .frameChild9,
+  .useCaseGrid > :nth-child(4) .frameChild11,
+  .useCaseGrid > :nth-child(6) .frameChild11 {
+    width: 32px !important;
+    height: 32px !important;
+    flex: 0 0 32px !important;
+  }
+
+  .useCaseGrid > :nth-child(4) .useCaseTitle,
+  .useCaseGrid > :nth-child(4) .governanceTraining,
+  .useCaseGrid > :nth-child(4) .policyCompliance3,
+  .useCaseGrid > :nth-child(6) .useCaseTitle,
+  .useCaseGrid > :nth-child(6) .governanceTraining,
+  .useCaseGrid > :nth-child(6) .policyCompliance3 {
+    width: auto !important;
+    max-width: none !important;
+    min-width: 0 !important;
+    flex: 1 1 auto !important;
+    font-size: 17px !important;
+    line-height: 22px !important;
+    letter-spacing: 0.02em !important;
+    white-space: nowrap !important;
+    word-break: normal !important;
+    overflow-wrap: normal !important;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .challengeCard.challengeCardOpen .challengeAnswer {
+    bottom: 38px !important;
+  }
+
+  .challengeCard.challengeCardOpen {
+    height: 440px !important;
+    min-height: 440px !important;
+  }
+}
+
+
+
+@media screen and (max-width: 425px) {
+  .poweringStatewideLearning {
+    width: 500px !important;
+    height: auto !important;
+    font-size: 36px !important;
+    line-height: 46px !important;
+    letter-spacing: 0.02em !important;
+  }
+
+  .theseCapabilitiesHelp {
+    width: 500px !important;
+    height: auto !important;
+    font-size: 20px !important;
+    line-height: 28px !important;
+    letter-spacing: 0.02em !important;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .frameParent34{
+    gap: 12px !important;  
+  }
+
+  .frameParent35{
+    margin-bottom: -18px !important;
+  }
+
+  .frameParent36{
+    transform: translateY(-30px) !important; 
+  }
+}
+
+
+
+@media screen and (max-width: 425px) {
+  .governmentStateInstitution{
+    height: 4700px !important;
+    min-height: 4700px !important;
+    max-height: 4700px !important;
+    overflow-x: hidden !important;
+    overflow-y: hidden !important;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .governmentStateInstitution {
+    width: 100% !important;
+    zoom: 0.53 !important;
+    margin: 0 auto !important;
+    overflow-x: hidden !important;
+  }
+}
+
+@media screen and (min-width: 321px) and (max-width: 375px) {
+  html,
+  body {
+    width: 100% !important;
+    max-width: 100% !important;
+    overflow-x: hidden !important;
+  }
+
+  .governmentStateInstitution {
+    width: 100% !important;
+    zoom: 0.64 !important;
+    margin: 0 auto !important;
+    overflow-x: hidden !important;
+  }
+}
+
+
+
+@media screen and (min-width: 396.33px) and (max-width: 448px){
+  .frameParent8{
+    gap: 59px !important;
+  }
+
+  .frameParent9{
+    width: 590.28px !important;
+    gap: 42.16px !important;
+  }
+
+  .frameWrapper7{
+    width: 590.28px !important;
+    height: auto !important;
+  }
+
+  .keyChallengesInGovernmentWParent{
+    width: 590.28px !important;
+    height: auto !important;
+    gap: 21.08px !important;
+  }
+
+  .keyChallengesIn{
+    
+    height: auto !important;
+    font-size: 31.62px !important;
+    line-height: 46.38px !important;
+    text-align: center !important;
+  }
+
+  .neurolxpCentralizesGovernmen{
+    
+    height: auto !important;
+    font-size: 16.87px !important;
+    line-height: 31.62px !important;
+    text-align: center !important;
+  }
+
+  .frameParent10{
+    width: 590.28px !important;
+    height: auto !important;
+    min-height: 2066px !important;
+    position: relative !important;
+  }
+
+  .challengeGrid{
+    width: 590.28px !important;
+    display: grid !important;
+    
+    grid-auto-rows: auto !important;
+    justify-content: center !important;
+    align-items: start !important;
+    column-gap: 0 !important;
+    row-gap: 29.51px !important;
+  }
+
+  .challengeGrid > .challengeCard:nth-child(4),
+  .challengeGrid > .challengeCard:nth-child(5){
+    grid-column: 1 !important;
+    transform: none !important;
+  }
+
+  .challengeCard.frameWrapper8,
+  .challengeCard.frameWrapper10{
+    
+    height: 358.38px !important;
+    min-height: 358.38px !important;
+    border-radius: 75.89px 0 40.05px 40.05px !important;
+  }
+
+  
+
+  .challengeCard .frameParent12{
+    
+    margin: 19px auto 0 !important;
+    gap: 21.08px !important;
+  }
+
+  .challengeCard .frameParent13{
+    width: 100% !important;
+    gap: 25.3px !important;
+  }
+
+  .challengeCard .trainingAtScaleGroup{
+    width: 100% !important;
+    height: auto !important;
+    gap: 31.62px !important;
+  }
+
+  .challengeCard .trainingAtScale2,
+  .challengeCard .centralizedTraining,
+  .challengeCard .multipleDepartments{
+    
+    height: auto !important;
+    font-size: 27.41px !important;
+    line-height: 31.62px !important;
+    text-align: center !important;
+  }
+
+  .challengeCard .trainGovernmentTeams,
+  .challengeCard .ensureRegulatoryCompliance{
+    
+    height: auto !important;
+    font-size: 21.08px !important;
+    line-height: 26.35px !important;
+    text-align: center !important;
+  }
+
+  .cardIconOuter{
+    width: 68.51px !important;
+    height: 68.51px !important;
+    flex-basis: 59px !important;
+  }
+
+  .cardIconInner{
+    width: 48.49px !important;
+    height: 48.49px !important;
+    flex-basis: 44.27px !important;
+  }
+
+  .cardIconGraphic{
+    width: 29.51px !important;
+    height: 29.51px !important;
+  }
+
+  .challengeToggle,
+  .howNeurolxpHelpsParent,
+  .howNeurolxpHelpsContainer{
+    
+    min-height: 61.14px !important;
+    height: auto !important;
+    gap: 8.43px !important;
+    font-size: 21.08px !important;
+    line-height: 25.3px !important;
+  }
+
+  .challengeToggle .howNeurolxpHelps,
+  .howNeurolxpHelps{
+    width: 100% !important;
+    height: auto !important;
+    font-size: 21.08px !important;
+    line-height: 25.3px !important;
+    text-align: center !important;
+  }
+
+  .arrowDownDoubleIcon{
+    width: 26.35px !important;
+    height: 26.35px !important;
+	transform: translatey(30);
+  }
+
+  .challengeAnswer{
+    
+    min-height: 115.95px !important;
+    
+    bottom: 19px !important;
+    padding: 19px 21.08px !important;
+    border-radius: 14.76px !important;
+    font-size: 19px !important;
+    line-height: 25.3px !important;
+  }
+
+  
+
+  .frameParent24{
+    width: 590.28px !important;
+    height: auto !important;
+    
+  }
+
+  
+
+  .governmentLearningUseCasesWrapper{
+    width: 590.28px !important;
+    height: auto !important;
+  }
+
+  
+
+  .frameParent25{
+    width: 590.28px !important;
+    gap: 25.3px !important;
+  }
+
+  .useCaseGrid{
+    width: 590.28px !important;
+    display: grid !important;
+    grid-template-columns: repeat(2, 282.49px) !important;
+    gap: 21.08px 16.87px !important;
+    justify-content: center !important;
+    align-items: stretch !important;
+  }
+
+  .useCaseCard,
+  .frameWrapper13,
+  .frameWrapper14,
+  .frameWrapper15,
+  .frameWrapper16,
+  .frameWrapper17,
+  .frameWrapper18{
+    
+    
+    
+    
+    
+    
+    box-sizing: border-box !important;
+  }
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  .frameParent26,
+  .frameParent30{
+    width: 590.28px !important;
+    display: grid !important;
+    grid-template-columns: repeat(2, 282.49px) !important;
+    gap: 21.08px 16.87px !important;
+    justify-content: center !important;
+    align-items: stretch !important;
+  }
+}
+
+@media screen and (min-width: 396.33px) and (max-width: 448px){
+  .frameParent9,
+  .frameWrapper7,
+  .keyChallengesInGovernmentWParent,
+  .frameParent10,
+  .challengeGrid{
+    width: 527px !important;
+  }
+
+  .keyChallengesIn{
+    width: 505.95px !important;
+  }
+
+  .neurolxpCentralizesGovernmen{
+    width: 495.41px !important;
+  }
+
+  .challengeGrid{
+    grid-template-columns: 484.87px !important;
+  }
+
+  .challengeCard.frameWrapper8,
+  .challengeCard.frameWrapper10{
+    width: 484.87px !important;
+  }
+
+  .challengeCard .frameParent12{
+    width: 432.17px !important;
+  }
+
+  .challengeCard .trainingAtScale2,
+  .challengeCard .centralizedTraining,
+  .challengeCard .multipleDepartments{
+    width: 421.63px !important;
+  }
+
+  .challengeCard .trainGovernmentTeams,
+  .challengeCard .ensureRegulatoryCompliance{
+    width: 411.09px !important;
+  }
+
+  .challengeToggle,
+  .howNeurolxpHelpsParent,
+  .howNeurolxpHelpsContainer{
+    width: 390px !important;
+  }
+
+  .challengeAnswer{
+    width: 421.63px !important;
+    left: calc(50% - 210.81px) !important;
+  }
+
+  .frameParent23,
+  .frameParent24,
+  .governmentLearningUseCasesWrapper,
+  .frameParent25,
+  .useCaseGrid,
+  .frameParent26,
+  .frameParent30{
+    width: 527px !important;
+  }
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  .frameDiv{
+    top: 21.08px !important;
+    left: 50% !important;
+    width: 569.2px !important;
+    gap: 6.32px !important;
+    justify-content: center !important;
+    font-size: 13.7px !important;
+    line-height: 19px !important;
+    white-space: nowrap !important;
+    transform: translateX(-65%) scale(.92) !important;
+    transform-origin: top center !important;
+  }
+
+  .industriesWeServe,
+  .governmentState{
+    width: auto !important;
+    height: auto !important;
+    font-size: 13.7px !important;
+    line-height: 19px !important;
+  }
+
+  .arrowRightDoubleGroup{
+    gap: 5.27px !important;
+  }
+
+.vectorParent{
+    top: 68px !important;
+    left: 50% !important;
+    width: 2000px !important;
+    height: 720px !important;
+    transform: translateX(-41%) scale(0.48) !important;
+    transform-origin: top center !important;
+    overflow: visible !important;
+}
+  .frameParent2{
+    top: 44.27px !important;
+    left: 50.6px !important;
+    width: 685.14px !important;
+    height: auto !important;
+    gap: 29.51px !important;
+  }
+
+  .frameParent3{
+    gap: 23.19px !important;
+  }
+
+  .frameParent4{
+    height: auto !important;
+    gap: 23.19px !important;
+  }
+
+  .frameInner{
+    width: 411.09px !important;
+    height: 48.49px !important;
+    font-size: 22.14px !important;
+    line-height: 29.51px !important;
+  }
+
+  .empoweringGovernmentWorkforcContainer{
+    width: 685.14px !important;
+    height: auto !important;
+    font-size: 44.27px !important;
+    line-height: 54.81px !important;
+  }
+
+  .empowering,
+  .governmentWorkforce{
+    line-height: 54.81px !important;
+  }
+
+  .neurolxpEnablesGovernments{
+    width: 505.95px !important;
+    font-size: 25.3px !important;
+    line-height: 35.84px !important;
+	transform: translatey(20);
+  }
+
+  .frameWrapper2{
+    width: 284.6px !important;
+  }
+
+  .frameIcon{
+    width: 284.6px !important;
+    height: 56.92px !important;
+    font-size: 19px !important;
+    line-height: 27.41px !important;
+	transform: translatey(40);
+  }
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  .textWrapper{
+    top:1249.07px !important;
+    left:50% !important;
+    width:263.52px !important;
+    transform:translateX(-50%) !important;
+  }
+
+  .text{
+    left:0 !important;
+    width:263.52px !important;
+    height:auto !important;
+    font-size:31.62px !important;
+    line-height:40.05px !important;
+  }
+
+  
+
+  
+
+  
+}
+
+
+
+@media screen and (min-width: 396.33px) and (max-width: 448px){
+  .frameParent8{
+    top:843.25px;
+  }
+}
+
+@media screen and (min-width: 396.33px) and (max-width: 448px){
+  .frameParent23{
+    position:relative !important;
+    top:-147.57px !important;
+    width:590.28px !important;
+    gap:35.84px !important;
+  }
+
+  .frameParent24,
+  .governmentLearningUseCasesWrapper,
+  .frameParent25{
+    width:590.28px !important;
+  }
+
+  .frameParent24{
+    gap:23.19px !important;
+  }
+
+  .governmentLearningUse{
+    width:569.2px !important;
+    height:auto !important;
+    font-size:33.73px !important;
+    line-height:42.16px !important;
+    text-align:center !important;
+  }
+
+  .useCasesPill,
+  .frameChild8{
+    width:158.11px !important;
+    min-width:158.11px !important;
+    height:44.27px !important;
+    min-height:44.27px !important;
+    padding:0 14.76px !important;
+    font-size:19px !important;
+    line-height:25.3px !important;
+  }
+
+  .useCaseGrid,
+  .frameParent26,
+  .frameParent30{
+    width:700px !important;
+    grid-template-columns:repeat(2, 282.49px) !important;
+    gap:25px 60px !important;
+    transform: translatex(-45);
+  }
+
+  .useCaseCard,
+  .frameWrapper13,
+  .frameWrapper14,
+  .frameWrapper15,
+  .frameWrapper16,
+  .frameWrapper17,
+  .frameWrapper18{
+    width:282.49px !important;
+    height:118.06px !important;
+    min-height:118.06px !important;
+    padding:12.65px 14.76px !important;
+    border-radius:19px !important;
+    gap:12.65px !important;
+  }
+
+  .useCaseCard:hover{
+    padding-left:10.54px !important;
+    padding-right:10.54px !important;
+    border-left-width:6.32px !important;
+    border-right-width:6.32px !important;
+  }
+
+  .useCaseIconCircle,
+  .frameChild9,
+  .frameChild11{
+    width:40.05px !important;
+    height:40.05px !important;
+    flex:0 0 40.05px !important;
+  }
+
+  .useCaseIconImage{
+    width:23.19px !important;
+    height:23.19px !important;
+  }
+
+  .useCaseTitle,
+  .governanceTraining,
+  .policyCompliance3{
+    width:auto !important;
+    max-width:208.71px !important;
+    height:auto !important;
+    font-size:18px !important;
+    line-height:23.19px !important;
+    letter-spacing:0.02em !important;
+    white-space:normal !important;
+    overflow-wrap:break-word !important;
+  }
+
+  .frameParent27,
+  .frameParent28{
+    position:static !important;
+    width:100% !important;
+    height:100% !important;
+    display:flex !important;
+    align-items:center !important;
+    justify-content:flex-start !important;
+    gap:12.65px !important;
+  }
+
+  .frameParent34{
+    width:590.28px !important;
+    display:flex !important;
+    flex-direction:column !important;
+    align-items:center !important;
+    
+	transform: translatey(-140);
+  }
+
+  .frameParent35{
+    width:548.12px !important;
+    order:1 !important;
+    align-items:flex-start !important;
+  }
+
+  .frameParent36{
+    
+    order:2 !important;
+    align-items:flex-start !important;
+	
+  }
+
+  .rectangleParent{
+    width:590.28px !important;
+    height:242.44px !important;
+    min-height:242.44px !important;
+    border-radius:23.19px !important;
+    overflow:hidden !important;
+  }
+
+  .rectangle{
+    width:590.28px !important;
+    height:230.84px !important;
+  }
+
+  .image20{
+    top:-258.25px !important;
+    left:calc(50% - 295.14px) !important;
+    width:590.28px !important;
+    height:368.92px !important;
+  }
+
+  .groupMultiethnicBusinessPeo{
+    top:calc(50% - 121.22px) !important;
+    left:0 !important;
+    width:590.28px !important;
+    height:242.44px !important;
+  }
+
+  .pexelsAkhilDasari2160057282Icon{
+    
+    
+    
+    
+    border-radius:92.76px 0 0 0 !important;
+  }
+
+  
+
+  .frameWrapper20{
+    width:208.71px !important;
+  }
+
+  .frameParent44{
+    
+    height:auto !important;
+    
+  }
+
+  .frameChild22{
+    width:107.51px !important;
+    height:23.19px !important;
+    min-height:23.19px !important;
+    border-radius:14.76px !important;
+    font-size:11.59px !important;
+    line-height:14.76px !important;
+    padding:0 8.43px !important;
+  }
+
+  
+
+  
+}
+
+@media screen and (min-width: 396.33px) and (max-width: 448px){
+  .rectangleParent{
+    position: relative !important;
+    top: -94.87px !important;
+  }
+}
+
+@media screen and (min-width: 396.33px) and (max-width: 448px){
+  
+
+  
+
+  
+
+  .poweringGovernmentWorkforce{
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    overflow-wrap:normal !important;
+  }
+
+  
+}
+
+
+
+@media screen and (min-width: 396.33px) and (max-width: 448px){
+  html,
+  body{
+    width:100% !important;
+    min-height:100% !important;
+    height:auto !important;
+    overflow-x:hidden !important;
+    overflow-y:auto !important;
+    touch-action:pan-y !important;
+  }
+
+  .governmentStateInstitution{
+    width:100% !important;
+  }
+}
+
+@media screen and (min-width: 396.33px) and (max-width: 448px){
+  
+
+  .rectangleParent,
+  .groupMultiethnicBusinessPeo{
+    width:316.22px !important;
+    height:263.52px !important;
+    left:50% !important;
+    transform:translateX(-50%) !important;
+    overflow:visible !important;
+  }
+
+  .pexelsAkhilDasari2160057282Icon{
+    width:195px !important;
+    height:263.52px !important;
+    left:121.22px !important;
+    top:0 !important;
+  }
+
+  .frameWrapper19{
+    top:19px !important;
+    left:16.87px !important;
+    width:137px !important;
+  }
+
+  .frameParent44{
+    width:137px !important;
+    gap:12.65px !important;
+  }
+
+  .empoweringPublicLearning{
+    width:137px !important;
+    font-size:19px !important;
+    line-height:25.3px !important;
+    height:auto !important;
+  }
+
+  .neurolxpEnablesScalable{
+    width:137px !important;
+    font-size:12.65px !important;
+    line-height:19px !important;
+    height:auto !important;
+  }
+}
+
+@media screen and (min-width: 396.33px) and (max-width: 448px){
+  .frameParent23{
+    height:auto !important;
+    overflow:visible !important;
+  }
+
+  .rectangleParent{
+    margin-bottom:29.51px !important;
+  }
+
+  .frameParent45{
+    display:flex !important;
+    visibility:visible !important;
+    opacity:1 !important;
+    position:relative !important;
+    top:-94.87px !important;
+    left:auto !important;
+    right:auto !important;
+    
+    width:590.28px !important;
+    height:auto !important;
+    min-height:210.81px !important;
+    margin:0 auto !important;
+    padding:0 !important;
+    flex-direction:column !important;
+    align-items:center !important;
+    justify-content:flex-start !important;
+    gap:21.08px !important;
+    overflow:visible !important;
+    z-index:20 !important;
+  }
+
+  .frameChild23{
+    display:flex !important;
+    visibility:visible !important;
+    opacity:1 !important;
+    width:203.44px !important;
+    height:52.7px !important;
+    min-height:52.7px !important;
+    border-radius:29.51px !important;
+    font-size:25.3px !important;
+    line-height:33.73px !important;
+    font-weight:500 !important;
+    align-items:center !important;
+    justify-content:center !important;
+    flex-shrink:0 !important;
+  }
+
+  .poweringGovernmentWorkforceParent{
+    display:flex !important;
+    visibility:visible !important;
+    opacity:1 !important;
+    width:569.2px !important;
+    height:auto !important;
+    min-height:179.19px !important;
+    flex-direction:column !important;
+    align-items:center !important;
+    gap:21.08px !important;
+    overflow:visible !important;
+  }
+
+  .poweringGovernmentWorkforce{
+    display:block !important;
+    visibility:visible !important;
+    opacity:1 !important;
+    width:569.2px !important;
+    height:auto !important;
+    font-size:28px !important;
+    line-height:63.24px !important;
+    font-weight:700 !important;
+    text-align:center !important;
+    white-space:normal !important;
+    overflow:visible !important;
+  }
+
+  .neurolxpHelpsGovernments{
+    display:block !important;
+    visibility:visible !important;
+    opacity:1 !important;
+    width:569.2px !important;
+    height:auto !important;
+    font-size:14px !important;
+    line-height:42.16px !important;
+    text-align:center !important;
+    white-space:normal !important;
+    overflow:visible !important;
+  }
+
+  
+
+  .frameParent45{
+    margin-top:-31.62px !important;
+    transform:translateY(-421.63px) !important;
+  }
+}
+
+@media screen and (min-width: 396.33px) and (max-width: 448px){
+  .frameParent36{
+    width:421.63px !important;
+    gap:12.65px !important;
+  }
+
+  .frameParent37{
+    height:54.81px !important;
+    gap:12.65px !important;
+  }
+
+  .frameChild16{
+    width:63.24px !important;
+    height:63.24px !important;
+  }
+
+  .scaleTrainingStatewide,
+  .ensurePolicyCompliance,
+  .developWorkforceSkills,
+  .improvePublicServices,
+  .driveDigitalTransformation{
+    font-size:24px !important;
+    line-height:31.62px !important;
+  }
+}
+
+@media screen and (min-width: 396.33px) and (max-width: 448px) {
+  .frameParent5 {
+    top: 442.71px !important;
+    left: 50% !important;
+    width: 885.42px !important;
+    gap: 61.14px !important;
+    transform: translateX(-50%) scale(0.47) !important;
+    transform-origin: top center !important;
+  }
+
+  .frameParent6 {
+    width: 885.42px !important;
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 52.7px !important;
+  }
+
+  .frameWrapper3,
+  .frameWrapper4 {
+    width: 405.82px !important;
+    height: 289.87px !important;
+    min-width: 405.82px !important;
+    min-height: 289.87px !important;
+    border-radius: 205.54px 205.54px 25.3px 25.3px !important;
+    overflow: hidden !important;
+  }
+
+  .frameWrapper3 {
+    border-top-width: 21.08px !important;
+  }
+
+  .trainingAtScaleParent {
+    top: 55% !important;
+    left: 50% !important;
+    width: 358.38px !important;
+    height: auto !important;
+    transform: translate(-50%, -50%) !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 19px !important;
+  }
+
+  .trainingAtScale,
+  .centralizedLearning,
+  .trainingAnalytics {
+    width: 242.44px !important;
+    min-height: 80.11px !important;
+    height: auto !important;
+    margin: 0 auto !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    font-size: 31.62px !important;
+    line-height: 37.95px !important;
+    font-weight: 600 !important;
+    letter-spacing: 0.02em !important;
+    text-align: center !important;
+    white-space: normal !important;
+    word-break: normal !important;
+    overflow-wrap: normal !important;
+  }
+
+  .trainAcrossDepartments {
+    width: 332px !important;
+    height: auto !important;
+    min-height: 35.84px !important;
+    margin: 0 auto !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    font-size: 23.19px !important;
+    line-height: 31.62px !important;
+    letter-spacing: 0.02em !important;
+    text-align: center !important;
+    white-space: normal !important;
+    overflow-wrap: normal !important;
+  }
+}
+
+@media screen and (min-width: 396.33px) and (max-width: 448px) {
+  .useCaseGrid > :nth-child(4),
+  .useCaseGrid > :nth-child(6) {
+    padding-left: 8.43px !important;
+    padding-right: 8.43px !important;
+    gap: 6.32px !important;
+  }
+
+  .useCaseGrid > :nth-child(4) .frameParent27,
+  .useCaseGrid > :nth-child(4) .frameParent28,
+  .useCaseGrid > :nth-child(6) .frameParent27,
+  .useCaseGrid > :nth-child(6) .frameParent28 {
+    gap: 6.32px !important;
+    flex-wrap: nowrap !important;
+  }
+
+  .useCaseGrid > :nth-child(4) .useCaseIconCircle,
+  .useCaseGrid > :nth-child(6) .useCaseIconCircle,
+  .useCaseGrid > :nth-child(4) .frameChild9,
+  .useCaseGrid > :nth-child(6) .frameChild9,
+  .useCaseGrid > :nth-child(4) .frameChild11,
+  .useCaseGrid > :nth-child(6) .frameChild11 {
+    width: 33.73px !important;
+    height: 33.73px !important;
+    flex: 0 0 33.73px !important;
+  }
+
+  .useCaseGrid > :nth-child(4) .useCaseTitle,
+  .useCaseGrid > :nth-child(4) .governanceTraining,
+  .useCaseGrid > :nth-child(4) .policyCompliance3,
+  .useCaseGrid > :nth-child(6) .useCaseTitle,
+  .useCaseGrid > :nth-child(6) .governanceTraining,
+  .useCaseGrid > :nth-child(6) .policyCompliance3 {
+    width: auto !important;
+    max-width: none !important;
+    min-width: 0 !important;
+    flex: 1 1 auto !important;
+    font-size: 17.92px !important;
+    line-height: 23.19px !important;
+    letter-spacing: 0.02em !important;
+    white-space: nowrap !important;
+    word-break: normal !important;
+    overflow-wrap: normal !important;
+  }
+}
+
+@media screen and (min-width: 396.33px) and (max-width: 448px) {
+  .challengeCard.challengeCardOpen .challengeAnswer {
+    bottom: 40.05px !important;
+  }
+
+  .challengeCard.challengeCardOpen {
+    height: 463.79px !important;
+    min-height: 463.79px !important;
+  }
+}
+
+
+
+@media screen and (min-width: 396.33px) and (max-width: 448px) {
+  .poweringStatewideLearning {
+    width: 527px !important;
+    height: auto !important;
+    font-size: 38px !important;
+    line-height: 48.49px !important;
+    letter-spacing: 0.02em !important;
+  }
+
+  .theseCapabilitiesHelp {
+    width: 527px !important;
+    height: auto !important;
+    font-size: 22px !important;
+    line-height: 29.51px !important;
+    letter-spacing: 0.02em !important;
+  }
+}
+
+@media screen and (min-width: 396.33px) and (max-width: 448px) {
+  .frameParent34{
+    gap: 12.65px !important; 
+  }
+
+  .frameParent35{
+    margin-bottom: -19px !important;
+  }
+
+  .frameParent36{
+    transform: translateY(-31.62px) !important; 
+  }
+}
+
+
+
+@media screen and (min-width: 396.33px) and (max-width: 448px) {
+  .governmentStateInstitution{
+    height: 4954.12px !important;
+    min-height: 4954.12px !important;
+    max-height: 4954.12px !important;
+    overflow-x: hidden !important;
+    overflow-y: hidden !important;
+  }
+}
+
+@media screen and (min-width: 376px) and (max-width: 425px) {
+  html,
+  body {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow-x: hidden !important;
+  }
+
+  body {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: flex-start !important;
+  }
+
+  .governmentStateInstitution {
+    width: 590.277778px !important;
+    min-width: 590.277778px !important;
+    max-width: 590.277778px !important;
+    zoom: 0.72 !important;
+    margin: 0 auto !important;
+    left: auto !important;
+    right: auto !important;
+    overflow-x: hidden !important;
+  }
+}
+
+@media screen and (max-width:320px){
+  .ellipseParent{
+    width:560px !important;
+    height:560px !important;
+    left:695px !important;
+    top:15px !important;
+  }
+  .ellipseDiv{
+    width:560px !important;
+    height:560px !important;
+  }
+  .frameChild2{
+    top:24px !important;
+    left:24px !important;
+    width:512px !important;
+    height:512px !important;
+  }
+}
+
+@media screen and (min-width:321px) and (max-width:375px){
+  .ellipseParent{
+    width:590px !important;
+    height:590px !important;
+    left:675px !important;
+    top:10px !important;
+  }
+  .ellipseDiv{
+    width:590px !important;
+    height:590px !important;
+  }
+  .frameChild2{
+    top:25px !important;
+    left:25px !important;
+    width:540px !important;
+    height:540px !important;
+  }
+}
+
+
+@media screen and (min-width: 400px) and (max-width: 425px) {
+  .vectorParent {
+    top: 70px !important;
+    left: 50% !important;
+    width: 1280px !important;
+    height: 630px !important;
+    max-width: none !important;
+    min-width: 0 !important;
+    transform: translateX(-50%) scale(0.54) !important;
+    transform-origin: top center !important;
+    overflow: visible !important;
+  }
+
+  .frameItem,
+  .frameItem::before {
+    width: 1280px !important;
+    height: 630px !important;
+    max-width: none !important;
+  }
+
+  .ellipseParent {
+    position: absolute !important;
+    top: -70px !important;
+    left: 555px !important;
+    width: 790px !important;
+    height: 790px !important;
+    min-width: 0 !important;
+    max-width: none !important;
+    min-height: 0 !important;
+    max-height: none !important;
+    transform: none !important;
+    overflow: visible !important;
+    z-index: 8 !important;
+  }
+
+  .ellipseDiv {
+    width: 790px !important;
+    height: 790px !important;
+    min-width: 0 !important;
+    max-width: none !important;
+    min-height: 0 !important;
+    max-height: none !important;
+  }
+
+  .frameChild2 {
+    top: 34px !important;
+    left: 34px !important;
+    width: 722px !important;
+    height: 722px !important;
+    min-width: 0 !important;
+    max-width: none !important;
+    min-height: 0 !important;
+    max-height: none !important;
+    border-radius: 50% !important;
+    object-fit: cover !important;
+    transform: none !important;
+  }
+}
+
+@media screen and (min-width:400px) and (max-width:425px){
+  .vectorParent{
+    width:1360px !important;
+    height:670px !important;
+    transform:translateX(-50%) scale(0.58) !important;
+    transform-origin:top center !important;
+    overflow:visible !important;
+  }
+
+  .frameItem,
+  .frameItem::before{
+    width:1360px !important;
+    height:670px !important;
+  }
+
+  .ellipseParent{
+    width:590px !important;
+    height:590px !important;
+    left:720px !important;
+    top:40px !important;
+  }
+
+  .ellipseDiv{
+    width:590px !important;
+    height:590px !important;
+  }
+
+  .frameChild2{
+    width:530px !important;
+    height:535px !important;
+    left:30px !important;
+    top:28px !important;
+  }
+}
+
+.vectorParent{
+  height: 680px !important;
+  overflow: visible !important;
+}
+
+.frameItem{
+  height: 680px !important;
+  overflow: visible !important;
+}
+
+.frameItem::before{
+  height: 680px !important;
+  clip-path: path("M 16 0 H 1264 Q 1280 0 1280 16 V 652 Q 1280 680 1258 674 C 1030 608 842 570 640 570 C 438 570 250 608 22 674 Q 0 680 0 652 V 16 Q 0 0 16 0 Z") !important;
+}
+
+.frameParent2{
+  top: 50px !important;
+  height: 500px !important;
+}
+
+.ellipseParent{
+  top: 29px !important;
+}
+
+@media screen and (max-width: 1024px){
+  .vectorParent{
+    height: 680px !important;
+  }
+
+  .frameItem,
+  .frameItem::before{
+    height: 680px !important;
+  }
+
+  .frameParent2{
+    height: 500px !important;
+  }
+}
+
+@media screen and (max-width: 768px){
+  .vectorParent{
+    height: 680px !important;
+  }
+
+  .frameItem,
+  .frameItem::before{
+    height: 680px !important;
+  }
+}
+
+@media screen and (max-width: 425px){
+  .vectorParent{
+    height: 680px !important;
+  }
+
+  .frameItem,
+  .frameItem::before{
+    height: 680px !important;
+  }
+}
+
+@media screen and (max-width: 375px){
+  .vectorParent{
+    height: 680px !important;
+  }
+
+  .frameItem,
+  .frameItem::before{
+    height: 680px !important;
+  }
+}
+
+@media screen and (max-width: 320px){
+  .vectorParent{
+    height: 680px !important;
+  }
+
+  .frameItem,
+  .frameItem::before{
+    height: 680px !important;
+  }
+}
+
+
+@media screen and (min-width: 769px) {
+  .ellipseParent {
+    top: 9px !important;
+  }
+
+  .topFeatureCardPurple .centralizedLearning {
+    width: 190px !important;
+    max-width: 190px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    white-space: normal !important;
+    text-align: center !important;
+    line-height: 40px !important;
+  }
+}

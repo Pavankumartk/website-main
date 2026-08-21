@@ -10,7 +10,7 @@
 }
 
 .bfsi-breadcrumb-link {
-  font-family: "Inter", sans-serif;
+  font-family: "Segoe UI";
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
@@ -27,7 +27,7 @@
 }
 
 .bfsi-breadcrumb-current {
-  font-family: "Inter", sans-serif;
+  font-family: "Segoe UI";
   font-weight: 700;
   font-size: 16px;
   line-height: 24px;
@@ -75,7 +75,7 @@
 }
 
 .bfsi-hero-badge span {
-  font-family: "Segoe UI", sans-serif;
+  font-family: "Segoe UI";
   font-weight: 600;
   font-size: 48px;
   line-height: 32px;
@@ -83,8 +83,9 @@
   color: #2d4cc8;
 }
 
+
 .bfsi-hero-heading {
-  font-family: "Segoe UI", sans-serif;
+  font-family: "Segoe UI";
   font-weight: 700;
   font-size: 48px;
   line-height: 60px;
@@ -96,7 +97,7 @@
 }
 
 .bfsi-hero-subtext {
-  font-family: "Segoe UI", sans-serif;
+  font-family: "Segoe UI";
   font-weight: 400;
   font-size: 28px;
   line-height: 40px;
@@ -121,7 +122,7 @@
   box-shadow:
     inset -4px -4px 8px #ffffff,
     inset 4px 4px 8px rgba(196, 196, 196, 0.8);
-  font-family: "Segoe UI", sans-serif;
+  font-family: "Segoe UI";
   font-weight: 600;
   font-size: 22px;
   letter-spacing: 0.02em;
@@ -138,7 +139,7 @@
   box-shadow:
     -8px -8px 16px #ffffff,
     8px 8px 16px #c6c6c9;
-  font-family: "Segoe UI", sans-serif;
+  font-family: "Segoe UI";
   font-weight: 600;
   font-size: 22px;
   letter-spacing: 0.02em;
@@ -148,9 +149,9 @@
 
 .bfsi-banner {
   position: relative;
-  padding: 0 80px 100px;
+  padding: 96px 80px 100px;
   background: #dfe6e9;
-  margin-top: 96px;
+  margin-top: 0;
 }
 
 .bfsi-banner-inner {
@@ -193,7 +194,7 @@
 }
 
 .bfsi-banner-badge span {
-  font-family: "Segoe UI", sans-serif;
+  font-family: "Segoe UI";
   font-weight: 600;
   font-size: 24px;
   line-height: 32px;
@@ -203,7 +204,7 @@
 }
 
 .bfsi-banner-heading {
-  font-family: "Segoe UI", sans-serif;
+  font-family: "Segoe UI";
   font-weight: 700;
   font-size: 48px;
   line-height: 60px;
@@ -214,7 +215,7 @@
 }
 
 .bfsi-banner-subtext {
-  font-family: "Segoe UI", sans-serif;
+  font-family: "Segoe UI";
   font-weight: 400;
   font-size: 28px;
   line-height: 40px;
@@ -268,7 +269,7 @@
 }
 
 .bfsi-secure-title {
-  font-family: "Segoe UI", sans-serif;
+  font-family: "Segoe UI";
   font-weight: 700;
   font-size: 28px;
   line-height: 40px;
@@ -278,7 +279,7 @@
 }
 
 .bfsi-secure-desc {
-  font-family: "Segoe UI", sans-serif;
+  font-family: "Segoe UI";
   font-weight: 400;
   font-size: 20px;
   line-height: 28px;
@@ -312,7 +313,7 @@
     transform 0.3s ease,
     box-shadow 0.3s ease,
     border-color 0.3s ease;
-  cursor: pointer;
+  cursor: default;
 }
 
 .bfsi-secure-card:hover {
@@ -381,7 +382,7 @@
     border-color 0.3s ease,
     transform 0.3s ease,
     box-shadow 0.3s ease;
-  cursor: pointer;
+  cursor: default;
 }
 
 .bfsi-card:hover {
@@ -410,7 +411,7 @@
 }
 
 .bfsi-card-title {
-  font-family: "Segoe UI", sans-serif;
+  font-family: "Segoe UI";
   font-weight: 700;
   font-size: 24px;
   line-height: 32px;
@@ -420,7 +421,7 @@
 }
 
 .bfsi-card-desc {
-  font-family: "Segoe UI", sans-serif;
+  font-family: "Segoe UI";
   font-weight: 400;
   font-size: 20px;
   line-height: 28px;
@@ -461,7 +462,7 @@
 }
 
 .bfsi-challenges-badge span {
-  font-family: "Segoe UI", sans-serif;
+  font-family: "Segoe UI";
   font-weight: 600;
   font-size: 24px;
   color: #2d4cc8;
@@ -470,7 +471,7 @@
 }
 
 .bfsi-challenges-heading {
-  font-family: "Segoe UI", sans-serif;
+  font-family: "Segoe UI";
   font-weight: 700;
   font-size: 48px;
   line-height: 60px;
@@ -479,7 +480,7 @@
 }
 
 .bfsi-challenges-subtext {
-  font-family: "Segoe UI", sans-serif;
+  font-family: "Segoe UI";
   font-weight: 400;
   font-size: 28px;
   line-height: 40px;
@@ -533,7 +534,7 @@
 }
 
 .bfsi-challenge-title {
-  font-family: "Segoe UI", sans-serif;
+  font-family: "Segoe UI";
   font-weight: 700;
   font-size: 24px;
   line-height: 32px;
@@ -572,7 +573,7 @@
 }
 
 .bfsi-challenge-desc {
-  font-family: "Segoe UI", sans-serif;
+  font-family: "Segoe UI";
   font-weight: 400;
   font-size: 18px;
   line-height: 26px;
@@ -657,7 +658,7 @@
 }
 
 .bfsi-stat-badge-text {
-  font-family: "Segoe UI", sans-serif;
+  font-family: "Segoe UI";
   font-weight: 600;
   font-size: 22px;
   line-height: 30px;
@@ -666,7 +667,7 @@
 }
 
 .bfsi-stat-badge-tm {
-  font-family: "Segoe UI", sans-serif;
+  font-family: "Segoe UI";
   font-weight: 700;
   font-size: 12px;
   line-height: 18px;
@@ -675,7 +676,7 @@
 }
 
 .bfsi-stat-heading {
-  font-family: "Segoe UI", sans-serif;
+  font-family: "Segoe UI";
   font-weight: 700;
   font-size: 48px;
   line-height: 60px;
@@ -686,7 +687,7 @@
 }
 
 .bfsi-stat-subtext {
-  font-family: "Segoe UI", sans-serif;
+  font-family: "Segoe UI";
   font-weight: 400;
   font-size: 28px;
   line-height: 40px;
@@ -727,7 +728,7 @@
 }
 
 .bfsi-benefits-badge span {
-  font-family: "Segoe UI", sans-serif;
+  font-family: "Segoe UI";
   font-weight: 600;
   font-size: 24px;
   line-height: 32px;
@@ -737,7 +738,7 @@
 }
 
 .bfsi-benefits-heading {
-  font-family: "Segoe UI", sans-serif;
+  font-family: "Segoe UI";
   font-weight: 700;
   font-size: 48px;
   line-height: 60px;
@@ -746,7 +747,7 @@
 }
 
 .bfsi-benefits-subtext {
-  font-family: "Segoe UI", sans-serif;
+  font-family: "Segoe UI";
   font-weight: 400;
   font-size: 28px;
   line-height: 40px;
@@ -765,35 +766,59 @@
 }
 
 .bfsi-benefit-card {
+  position: relative;
   display: flex;
   align-items: center;
   gap: 16px;
+  width: 100%;
+  min-height: 120px;
   padding: 32px;
+  box-sizing: border-box;
   border-radius: 16px;
   background: #dfe6e9;
   box-shadow:
     -4px -4px 8px #ffffff,
     4px 4px 8px #c4c4c4;
-  transition:
-    transform 0.3s ease,
-    box-shadow 0.3s ease;
+  overflow: visible;
+}
+
+.bfsi-benefit-card::before {
+  content: "";
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  bottom: 16px;
+  left: 16px;
+  border-radius: 16px;
+  background: #dfe6e9;
+  box-shadow:
+    inset -4px -4px 8px #ffffff,
+    inset 4px 4px 8px #c4c4c4;
+  pointer-events: none;
+  z-index: 0;
 }
 
 .bfsi-benefit-card:hover {
-  transform: translateY(-4px);
+  transform: none;
   box-shadow:
-    -6px -6px 14px #ffffff,
-    6px 6px 14px #c4c4c4;
+    -4px -4px 8px #ffffff,
+    4px 4px 8px #c4c4c4;
 }
 
 .bfsi-benefit-icon {
+  position: relative;
+  z-index: 1;
   display: flex;
-  flex-shrink: 0;
+  width: 32px;
+  height: 32px;
+  flex: 0 0 32px;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 .bfsi-benefit-text {
-  font-family: "Segoe UI", sans-serif;
+  position: relative;
+  z-index: 1;
+  font-family: "Segoe UI";
   font-weight: 700;
   font-size: 20px;
   line-height: 28px;
@@ -874,7 +899,7 @@
 }
 
 .bfsi-finance-badge span {
-  font-family: "Segoe UI", sans-serif;
+  font-family: "Segoe UI";
   font-weight: 600;
   font-size: 24px;
   line-height: 32px;
@@ -884,7 +909,7 @@
 }
 
 .bfsi-finance-heading {
-  font-family: "Segoe UI", sans-serif;
+  font-family: "Segoe UI";
   font-weight: 700;
   font-size: 48px;
   line-height: 60px;
@@ -893,7 +918,7 @@
 }
 
 .bfsi-finance-subtext {
-  font-family: "Segoe UI", sans-serif;
+  font-family: "Segoe UI";
   font-weight: 400;
   font-size: 28px;
   line-height: 40px;
@@ -926,7 +951,7 @@
 }
 
 .bfsi-cta-badge span {
-  font-family: "Segoe UI", sans-serif;
+  font-family: "Segoe UI";
   font-weight: 600;
   font-size: 24px;
   line-height: 32px;
@@ -936,7 +961,7 @@
 }
 
 .bfsi-cta-heading {
-  font-family: "Segoe UI", sans-serif;
+  font-family: "Segoe UI";
   font-weight: 700;
   font-size: 48px;
   line-height: 60px;
@@ -946,7 +971,7 @@
 }
 
 .bfsi-cta-subtext {
-  font-family: "Segoe UI", sans-serif;
+  font-family: "Segoe UI";
   font-weight: 400;
   font-size: 28px;
   line-height: 40px;
@@ -1477,3 +1502,363 @@
     line-height: 36px;
   }
 }
+/* ===== Finance banner: corrected to supplied PNG ===== */
+@media (min-width: 1025px) {
+  .bfsi-finance-banner {
+    padding: 0 0 120px;
+    background: #dfe6e9;
+  }
+
+  .bfsi-finance-panel {
+    max-width: 1536px;
+    height: 780px;
+    border-radius: 32px;
+    background: #dfe6e9;
+    box-shadow:
+      inset -8px -8px 16px #ffffff,
+      inset 8px 8px 16px #c4c4c4;
+  }
+
+  .bfsi-finance-photo {
+    object-fit: cover;
+    object-position: center center;
+  }
+
+  .bfsi-finance-overlay,
+  .bfsi-finance-blur {
+    display: none;
+  }
+
+  .bfsi-finance-content {
+    left: 72px;
+    top: 72px;
+    transform: none;
+    gap: 46px;
+    max-width: 500px;
+  }
+
+  .bfsi-finance-badge {
+    height: 60px;
+    padding: 0 30px;
+    border-radius: 28px;
+  }
+
+  .bfsi-finance-badge span {
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  .bfsi-finance-heading {
+    margin: 0;
+    max-width: 500px;
+    font-size: 48px;
+    line-height: 1.45;
+    color: #31344b;
+    text-shadow: none;
+  }
+
+  .bfsi-finance-subtext {
+    margin: 0;
+    max-width: 480px;
+    font-size: 28px;
+    line-height: 1.55;
+    color: #31344b;
+  }
+}
+
+
+/* ===== Last BFSI finance section: image + no horizontal overflow ===== */
+.bfsi-finance-banner {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+.bfsi-finance-panel {
+  width: min(100%, 1280px);
+  max-width: calc(100% - 32px);
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.bfsi-finance-photo {
+  object-fit: cover;
+  object-position: center center;
+}
+
+@media (max-width: 1024px) {
+  .bfsi-finance-panel {
+    max-width: calc(100% - 24px);
+  }
+}
+
+@media (max-width: 768px) {
+  .bfsi-finance-banner {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .bfsi-finance-panel {
+    width: 100%;
+    max-width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+
+/* =========================================================
+   FINAL BFSI FINANCE BANNER — MATCH REFERENCE PNG
+   Desktop:
+   - exactly 80px space on left and right
+   - rectangle keeps reference PNG proportion
+   - image fills rectangle cleanly
+   - no left/right overflow
+   ========================================================= */
+
+@media (min-width: 1025px) {
+  .bfsi-finance-banner {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 0 80px 120px !important;
+    margin: 0 !important;
+    box-sizing: border-box !important;
+    overflow: hidden !important;
+    display: flex !important;
+    justify-content: center !important;
+  }
+
+  .bfsi-finance-panel {
+    position: relative !important;
+
+    /* 100% of the space remaining after the 80px + 80px side gaps */
+    width: 100% !important;
+    max-width: none !important;
+
+    /* Reference PNG = 2048 × 1041 */
+    aspect-ratio: 2048 / 1041 !important;
+    height: auto !important;
+
+    margin: 0 !important;
+    box-sizing: border-box !important;
+
+    border-radius: 32px !important;
+    overflow: hidden !important;
+    background: #dfe6e9 !important;
+  }
+
+  .bfsi-finance-photo {
+    position: absolute !important;
+    inset: 0 !important;
+    width: 102% !important;
+    height: 102% !important;
+
+    object-fit: cover !important;
+    object-position: center center !important;
+
+    transform: none !important;
+    max-width: none !important;
+    padding-left: 356px !important;
+  }
+}
+
+/* Tablet — keep the same proportion, reduce only the outer safe gap */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .bfsi-finance-banner {
+    width: 100% !important;
+    padding-left: 40px !important;
+    padding-right: 40px !important;
+    box-sizing: border-box !important;
+    overflow: hidden !important;
+  }
+
+  .bfsi-finance-panel {
+    width: 100% !important;
+    max-width: none !important;
+    aspect-ratio: 2048 / 1041 !important;
+    height: auto !important;
+    margin: 0 !important;
+    overflow: hidden !important;
+  }
+
+  .bfsi-finance-photo {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    object-position: center center !important;
+  }
+}
+
+/* Mobile — preserve the rectangle and prevent any horizontal clipping */
+@media (max-width: 768px) {
+  .bfsi-finance-banner {
+    width: 100% !important;
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+    box-sizing: border-box !important;
+    overflow: hidden !important;
+  }
+
+  .bfsi-finance-panel {
+    width: 100% !important;
+    max-width: 100% !important;
+    aspect-ratio: 2048 / 1041 !important;
+    height: auto !important;
+    min-height: 0 !important;
+    margin: 0 !important;
+    overflow: hidden !important;
+  }
+
+  .bfsi-finance-photo {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    object-position: center center !important;
+  }
+}
+
+
+/* =========================================================
+   BFSI MOBILE FIX ONLY
+   1) All challenge cards same shape/size
+   2) Remove overlapping stat image on mobile
+   ========================================================= */
+@media (max-width: 768px) {
+  /* ---------- Challenge cards: identical mobile shape ---------- */
+  .bfsi-challenges-row,
+  .bfsi-challenges-row-2,
+  .bfsi-challenges-row-3 {
+    width: 100% !important;
+    max-width: 100% !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 24px !important;
+  }
+
+  .bfsi-challenge-card,
+  .bfsi-challenges-row-3 .bfsi-challenge-card:last-child {
+    width: 100% !important;
+    max-width: 320px !important;
+    flex: 0 0 auto !important;
+    margin: 0 auto !important;
+    box-sizing: border-box !important;
+  }
+
+  .bfsi-challenge-top {
+    width: 100% !important;
+    min-height: 208px !important;
+    box-sizing: border-box !important;
+    padding: 28px 20px !important;
+    border-radius: 24px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 20px !important;
+    background: #dfe6e9 !important;
+    box-shadow:
+      -4px -4px 8px #ffffff,
+      4px 4px 8px #c4c4c4 !important;
+  }
+
+  .bfsi-challenge-top.open {
+    border-radius: 24px 24px 0 0 !important;
+  }
+
+  .bfsi-challenge-title {
+    width: 100% !important;
+    margin: 0 !important;
+    text-align: center !important;
+  }
+
+  .bfsi-challenge-chevron {
+    margin-top: 2px !important;
+  }
+
+  .bfsi-challenge-panel {
+    width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+  /* ---------- Future-Ready BFSI Training: remove image overlap ---------- */
+  .bfsi-stat-banner {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+
+  .bfsi-stat-panel {
+    min-height: 320px !important;
+    height: auto !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    background: #dfe6e9 !important;
+    border-radius: 32px !important;
+    overflow: hidden !important;
+  }
+
+  .bfsi-stat-photo {
+    display: none !important;
+  }
+
+  .bfsi-stat-shadow-overlay {
+    display: block !important;
+    border-radius: 32px !important;
+  }
+
+  .bfsi-stat-content {
+    position: relative !important;
+    inset: auto !important;
+    left: auto !important;
+    top: auto !important;
+    transform: none !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 32px 24px !important;
+    box-sizing: border-box !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    justify-content: center !important;
+    gap: 18px !important;
+    background: transparent !important;
+  }
+
+  .bfsi-stat-badge {
+    margin: 0 !important;
+  }
+
+  .bfsi-stat-heading,
+  .bfsi-stat-subtext {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+  }
+}
+
+
+/* =========================================================
+   BFSI MOBILE CHALLENGE CARD OVERLAP FIX ONLY
+   Prevent the hidden accordion panel from pulling cards upward.
+   ========================================================= */
+@media (max-width: 768px) {
+  .bfsi-challenge-panel {
+    margin-top: 0 !important;
+  }
+
+  .bfsi-challenges-row,
+  .bfsi-challenges-row-2,
+  .bfsi-challenges-row-3 {
+    gap: 32px !important;
+  }
+
+  .bfsi-challenge-card {
+    margin-bottom: 0 !important;
+  }
+}
+

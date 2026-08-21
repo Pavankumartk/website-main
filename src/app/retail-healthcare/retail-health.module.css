@@ -1,0 +1,6428 @@
+.retailAndHealthCare {
+  width: 100%;
+  height: 5330px;
+  position: relative;
+  text-align: center;
+  font-size: 28px;
+  color: #31344b;
+  font-family: "Segoe UI";
+}.retailHealthcare {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-color: #dfe6e9;
+  width: 1440px;
+  height: 5330px;
+  overflow: hidden;
+  text-align: left;
+  font-size: 48px;
+}.frameParent {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  box-shadow: -8px -8px 16px #fff, 8px 8px 16px #c6c6c9;
+  background-color: #dfe6e9;
+  width: 1440px;
+  height: 80px;
+  overflow: hidden;
+  font-size: 16px;
+  font-family: "Segoe UI";
+}.frameChild {
+  position: absolute;
+  top: calc(50% - 22px);
+  left: 1096px;
+  width: 132px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+}.frameGroup {
+  position: absolute;
+  top: 18px;
+  left: 32px;
+  width: 1376px;
+  height: 45px;
+}.logo01SynapseSpark1Parent {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  display: flex;
+  align-items: center;
+  gap: 130px;
+}.logo01SynapseSpark1Icon {
+  height: 45px;
+  width: 120px;
+  position: relative;
+  object-fit: cover;
+}.frameContainer {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}.homeParent {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}.home {
+  position: relative;
+  line-height: 24px;
+  font-weight: 600;
+}.arrowDown01Icon {
+  height: 16px;
+  width: 16px;
+  position: relative;
+}.ourCustomersParent {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #2d4cc8;
+}.ourCustomers {
+  position: relative;
+  line-height: 24px;
+}.signInHelpWrapper {
+  position: absolute;
+  top: calc(50% - 22.5px);
+  left: 1244px;
+  box-shadow: -8px -8px 16px #fff, 8px 8px 16px #c6c6c9;
+  border-radius: 32px;
+  background-color: #dfe6e9;
+  width: 132px;
+  height: 44px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px 32px;
+  box-sizing: border-box;
+  text-align: center;
+  color: #2d4cc8;
+  font-family: "Segoe UI";
+}.signInHelp {
+  width: 97px;
+  position: relative;
+  letter-spacing: 0.02em;
+  line-height: 28px;
+  font-weight: 600;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  flex-shrink: 0;
+}.frameDiv {
+  position: absolute;
+  top: 32px;
+  left: 80px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 16px;
+  color: #2f3547;
+  font-family: "Segoe UI";
+}.ourCustomersWrapper {
+  display: flex;
+  align-items: center;
+}.industriesWeServe {
+  position: relative;
+  letter-spacing: 0.02em;
+  line-height: 24px;
+}.arrowRightDoubleGroup {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #243fa8;
+}.retailHealthcare2 {
+  height: 22px;
+  width: 240px;
+  position: relative;
+  letter-spacing: 0.02em;
+  line-height: 24px;
+  display: inline-block;
+  flex-shrink: 0;
+}.frameParent2 {
+  position: absolute;
+  top: 88px;
+  left: calc(50% - 640px);
+  width: 1280px;
+  height: 609px;
+}.frameItem {
+  position: absolute;
+  top: 0px;
+  left: calc(50% - 637px);
+  box-shadow: -8px -8px 16px #fff, 8px 8px 16px #c4c4c4;
+  border-radius: 24px;
+  background-color: #dfe6e9;
+  width: 1273px;
+  height: 609px;
+  overflow: hidden;
+}.smilingYoungFemaleDoctorWeParent {
+  position: absolute;
+  top: 24px;
+  left: calc(50% - 613px);
+  border-radius: 24px;
+  width: 1225px;
+  height: 561px;
+  overflow: hidden;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}.smilingYoungFemaleDoctorWeIcon {
+  position: absolute;
+  top: 24px;
+  left: 631px;
+  width: 594px;
+  height: 566px;
+  object-fit: cover;
+  flex-shrink: 0;
+}.frameParent3 {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  width: 653px;
+  height: 461px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 56px;
+  flex-shrink: 0;
+}.frameWrapper {
+  width: 662px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-shrink: 0;
+}.frameParent4 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+}.frameParent5 {
+  width: 621px;
+  height: 193px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+}.frameInner {
+  width: 386.2px;
+  height: 50.3px;
+  position: relative;
+  border-radius: 28px;
+  object-fit: contain;
+  flex-shrink: 0;
+}.scalableLearningForContainer {
+  align-self: stretch;
+  height: 119px;
+  position: relative;
+  letter-spacing: 0.03em;
+  line-height: 60px;
+  display: inline-block;
+  flex-shrink: 0;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}.scalableLearningFor {
+  line-height: 60px;
+}.serviceDriven {
+  color: #2d4cc8;
+  line-height: 60px;
+}.neurolxpEnablesSmarter {
+  align-self: stretch;
+  position: relative;
+  font-size: 28px;
+  letter-spacing: 0.03em;
+  line-height: 40px;
+  color: #2f3547;
+}.frameParent6 {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  flex-shrink: 0;
+  font-size: 22px;
+  color: #2d4cc8;
+}.frameIcon {
+  height: 60.2px;
+  width: 198px;
+  position: relative;
+  border-radius: 8px;
+  object-fit: contain;
+}.frameWrapper2 {
+  height: 60px;
+  width: 203px;
+  box-shadow: -8px -8px 16px #fff, 8px 8px 16px #c6c6c9;
+  border-radius: 8px;
+  background-color: #dfe6e9;
+  overflow: hidden;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px 32px;
+  box-sizing: border-box;
+}.startLearningWrapper {
+  width: 140px;
+  display: flex;
+  align-items: center;
+}.startLearning {
+  width: 147px;
+  position: relative;
+  line-height: 30px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}.frameChild2 {
+  position: absolute;
+  top: 125px;
+  left: 688px;
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  flex-shrink: 0;
+}.retailHealthcareInner {
+  position: absolute;
+  top: 747px;
+  left: calc(50% - 640px);
+  border-radius: 32px;
+  background-color: #dfe6e9;
+  width: 1280px;
+  height: 120px;
+  overflow: hidden;
+  text-align: center;
+  font-size: 32px;
+  color: #2d4cc8;
+}.frameParent7 {
+  position: absolute;
+  top: 0px;
+  left: calc(50% - 617.04px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+}.frameWrapper3 {
+  height: 120px;
+  width: 284.6px;
+  position: relative;
+  box-shadow: -4px -4px 8px #fff inset, 4px 4px 8px rgba(196, 196, 196, 0.8) inset;
+  border-radius: 24px 0px 24px 0px;
+  background-color: #dfe6e9;
+  overflow: hidden;
+  flex-shrink: 0;
+}.kParent {
+  position: absolute;
+  top: calc(50% - 42.04px);
+  left: calc(50% - 92.34px);
+  width: 185px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  transform: rotate(-0.1deg);
+  transform-origin: 0 0;
+}.k {
+  align-self: stretch;
+  position: relative;
+  letter-spacing: 0.03em;
+  line-height: 44px;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}.retailLocations {
+  width: 187px;
+  height: 34px;
+  position: relative;
+  font-size: 24px;
+  letter-spacing: 0.03em;
+  line-height: 32px;
+  font-weight: 600;
+  color: #000;
+  display: inline-block;
+  flex-shrink: 0;
+}.b {
+  align-self: stretch;
+  position: relative;
+  letter-spacing: 0.03em;
+  line-height: 44px;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  flex-shrink: 0;
+}.healthcareFacilities {
+  width: 240px;
+  height: 34px;
+  position: relative;
+  font-size: 24px;
+  letter-spacing: 0.03em;
+  line-height: 32px;
+  font-weight: 600;
+  color: #000;
+  display: inline-block;
+  flex-shrink: 0;
+}.trainedEmployees {
+  width: 232px;
+  height: 34px;
+  position: relative;
+  font-size: 24px;
+  letter-spacing: 0.03em;
+  line-height: 32px;
+  font-weight: 600;
+  color: #000;
+  display: inline-block;
+  flex-shrink: 0;
+}.group {
+  position: absolute;
+  top: calc(50% - 42.04px);
+  left: calc(50% - 92.34px);
+  width: 185px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  isolation: isolate;
+  gap: 6px;
+  transform: rotate(-0.1deg);
+  transform-origin: 0 0;
+}.b2 {
+  align-self: stretch;
+  position: relative;
+  letter-spacing: 0.03em;
+  line-height: 44px;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  z-index: 0;
+}.averageRating {
+  width: 187px;
+  height: 34px;
+  position: relative;
+  font-size: 24px;
+  letter-spacing: 0.03em;
+  line-height: 32px;
+  font-weight: 600;
+  color: #000;
+  display: inline-block;
+  flex-shrink: 0;
+  z-index: 1;
+}.starIcon {
+  width: 21px;
+  height: 20px;
+  position: absolute;
+  margin: 0 !important;
+  top: 5px;
+  left: 117.01px;
+  transform: rotate(0.1deg);
+  z-index: 2;
+}.frameParent8 {
+  position: absolute;
+  top: 963px;
+  left: calc(50% - 640px);
+  width: 1280px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 64px;
+  text-align: center;
+}.frameParent9 {
+  width: 1063px;
+  height: 258px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+}.frameChild3 {
+  width: 222.2px;
+  height: 50.2px;
+  position: relative;
+  border-radius: 28px;
+  object-fit: contain;
+}.empoweringSmarterRetailLearParent {
+  width: 999px;
+  height: 176px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+}.empoweringSmarterRetail {
+  width: 1044px;
+  height: 63px;
+  position: relative;
+  letter-spacing: 0.03em;
+  font-size: 36px;
+  display: inline-block;
+  flex-shrink: 0;
+}.retailTeamsNeed {
+  width: 877px;
+  position: relative;
+  font-size: 24px;
+  letter-spacing: 0.03em;
+  line-height: 40px;
+  color: #2f3547;
+  display: inline-block;
+  flex-shrink: 0;
+}.frameParent10 {
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 45px;
+  font-size: 28px;
+}.frameWrapper7 {
+  width: 369px;
+  height: 228px;
+  position: relative;
+  flex-shrink: 0;
+  overflow: hidden;
+  border-radius: 50px;
+  background-color: #dfe6e9;
+  box-shadow: -10px -10px 20px rgba(255, 255, 255, 0.95),
+    10px 10px 20px rgba(196, 196, 196, 0.9);
+}.frameParent11,
+.frameParent12,
+.frameParent13 {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 32px 20px;
+  box-sizing: border-box;
+}.retailCardIcon {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100px;
+  background: #dfe6e9;
+  box-shadow: inset -4px -4px 8px #ffffff,
+    inset 4px 4px 8px rgba(196, 196, 196, 0.8);
+  transform: rotate(0.05deg);
+}.retailCardEllipse {
+  position: absolute !important;
+  width: 78px !important;
+  height: 78px !important;
+  top: 11px !important;
+  left: 11px !important;
+  border-radius: 50% !important;
+  object-fit: contain !important;
+  z-index: 1 !important;
+  filter: drop-shadow(8px 8px 16px #C6C6C9)
+      drop-shadow(-8px -8px 16px #FFFFFF) !important;
+}.frameChild4,
+.frameChild5,
+.frameChild6 {
+  position: absolute !important;
+  width: 46px !important;
+  height: 46px !important;
+  top: 27px !important;
+  left: 27px !important;
+  object-fit: contain !important;
+  transform: rotate(0.05deg) !important;
+  z-index: 2 !important;
+  visibility: visible !important;
+}.talentRetention,
+.productKnowledge,
+.distributedStores {
+  position: relative;
+  top: auto;
+  left: auto;
+  width: 100%;
+  height: auto;
+  margin-top: 24.08px;
+  display: block;
+  flex-shrink: 0;
+  text-align: center;
+  white-space: nowrap;
+  letter-spacing: 0.03em;
+  line-height: 40px;
+  color: #31344b;
+  font-weight: 700;
+}.rectangleParent {
+  position: absolute;
+  top: 1609px;
+  left: calc(50% - 640px);
+  box-shadow: -8px -8px 8px rgba(255, 255, 255, 0.5) inset, 8px 8px 8px #c4c4c4 inset;
+  border-radius: 50px;
+  background-color: #dfe6e9;
+  width: 1280px;
+  height: 526px;
+  overflow: hidden;
+}.rectangle {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 1280px;
+  height: 500px;
+  flex-shrink: 0;
+}.image20 {
+  position: absolute;
+  top: -561px;
+  left: calc(50% - 640px);
+  width: 1280px;
+  height: 800px;
+  flex-shrink: 0;
+}.frameParent14 {
+  position: absolute;
+  top: 80px;
+  left: 80px;
+  width: 567px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+  flex-shrink: 0;
+}.frameChild7 {
+  width: 235px;
+  height: 50.2px;
+  position: relative;
+  border-radius: 28px;
+  object-fit: contain;
+}.empoweringSmarterRetail2 {
+  width: 567px;
+  height: 123px;
+  position: relative;
+  letter-spacing: 0.03em;
+  line-height: 40px;
+  display: inline-block;
+  flex-shrink: 0;
+  font-size: 36px;
+}.neurolxpEnablesFaster {
+  align-self: stretch;
+  height: 128px;
+  position: relative;
+  font-size: 24px;
+  letter-spacing: 0.03em;
+  line-height: 40px;
+  color: #2f3547;
+  display: inline-block;
+  flex-shrink: 0;
+}.twoFemaleDesignersWork1Icon {
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  width: 615px;
+  height: 507px;
+  object-fit: contain;
+  flex-shrink: 0;
+}.frameParent15 {
+  position: absolute;
+  top: 2231px;
+  left: calc(50% - 640px);
+  width: 1280px;
+  display: flex;
+  align-items: center;
+  gap: 175px;
+}.frameParent16 {
+  width: 638px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+}.frameChild8 {
+  width: 209.8px;
+  height: 50.2px;
+  position: relative;
+  border-radius: 28px;
+  object-fit: contain;
+}.benefitsForRetail {
+  align-self: stretch;
+  position: relative;
+  letter-spacing: 0.03em;
+  line-height: 50px;
+  display: inline-block;
+  flex-shrink: 0;
+  font-size: 36px;
+}.neurolxpEnablesSmarter2 {
+  align-self: stretch;
+  height: 120px;
+  position: relative;
+  font-size: 24px;
+  letter-spacing: 0.03em;
+  line-height: 40px;
+  color: #2f3547;
+  display: inline-block;
+  flex-shrink: 0;
+}.frameParent17 {
+  width: 429px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 22px;
+  text-align: center;
+  font-size: 24px;
+}.frameParent18 {
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}.frameChild9 {
+  height: 70.1px;
+  width: 70.1px;
+  position: relative;
+}.consistentTraining {
+  height: 37px;
+  width: 233px;
+  position: relative;
+  letter-spacing: 0.03em;
+  line-height: 36px;
+  font-weight: 600;
+  display: inline-block;
+  flex-shrink: 0;
+}.frameParent19 {
+  align-self: stretch;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}.betterCustomerExperience {
+  height: 37px;
+  width: 337px;
+  position: relative;
+  letter-spacing: 0.03em;
+  line-height: 36px;
+  font-weight: 600;
+  display: inline-block;
+  flex-shrink: 0;
+}.quickOnboarding {
+  height: 37px;
+  width: 221px;
+  position: relative;
+  letter-spacing: 0.03em;
+  line-height: 36px;
+  font-weight: 600;
+  display: inline-block;
+  flex-shrink: 0;
+}.continuousDevelopment {
+  height: 37px;
+  width: 306px;
+  position: relative;
+  letter-spacing: 0.03em;
+  line-height: 36px;
+  font-weight: 600;
+  display: inline-block;
+  flex-shrink: 0;
+}.performanceTracking {
+  height: 37px;
+  width: 263px;
+  position: relative;
+  letter-spacing: 0.03em;
+  line-height: 36px;
+  font-weight: 600;
+  display: inline-block;
+  flex-shrink: 0;
+}.frameParent23 {
+  position: absolute;
+  top: 2733px;
+  left: calc(50% - 640px);
+  width: 1280px;
+  display: flex;
+  align-items: center;
+  gap: 92px;
+  text-align: center;
+  font-size: 24px;
+  color: #000;
+}.frameParent24 {
+  width: 690px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+}.frameWrapper10 {
+  width: 320px;
+  height: 320px;
+  position: relative;
+  box-shadow: -8px -8px 16px #fff inset, 8px 8px 16px #c4c4c4 inset;
+  border-radius: 50px 50px 16px 16px;
+  background-color: #dfe6e9;
+  overflow: hidden;
+  flex-shrink: 0;
+}.frameChild14 {
+  position: absolute;
+  top: 118px;
+  left: calc(50% - 140px);
+  width: 280px;
+  height: 162px;
+  object-fit: cover;
+}.complianceAndCertification {
+  position: absolute;
+  top: 14px;
+  left: calc(50% - 96px);
+  letter-spacing: 0.03em;
+  line-height: 32px;
+  display: inline-block;
+  width: 193px;
+  height: 64px;
+}.frameParent26 {
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}.continuousMedicalEducationParent {
+  position: absolute;
+  top: 32px;
+  left: calc(50% - 140px);
+  width: 280px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 22px;
+}.continuousMedicalEducation {
+  width: 224px;
+  height: 64px;
+  position: relative;
+  letter-spacing: 0.03em;
+  line-height: 32px;
+  display: inline-block;
+  flex-shrink: 0;
+  top: -19px;
+}.youngBusinesswomanHerColleaIcon {
+  align-self: stretch;
+  height: 162px;
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+  flex-shrink: 0;
+  object-fit: cover;
+}.largeHealthcareTeamsParent {
+  position: absolute;
+  top: calc(50% - 140px);
+  left: calc(50% - 140px);
+  box-shadow: -8px -8px 8px rgba(255, 255, 255, 0.5), 8px 8px 8px #c4c4c4;
+  border-radius: 50px 50px 16px 16px;
+  background-color: #dfe6e9;
+  width: 280px;
+  height: 280px;
+  overflow: hidden;
+}.largeHealthcareTeams {
+  position: absolute;
+  top: 14px;
+  left: 37px;
+  letter-spacing: 0.03em;
+  line-height: 32px;
+  display: inline-block;
+  width: 206px;
+  height: 64px;
+}.frameChild15 {
+  position: absolute;
+  top: 119px;
+  left: calc(50% - 140px);
+  width: 280px;
+  height: 162px;
+  object-fit: cover;
+}.frameParent27 {
+  width: 447px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+  text-align: left;
+  font-size: 48px;
+  color: #31344b;
+}.frameChild16 {
+  width: 281.6px;
+  height: 50.2px;
+  position: relative;
+  border-radius: 28px;
+  object-fit: contain;
+  flex-shrink: 0;
+}.smarterHealthcareLearning {
+  width: 466px;
+  height: 127px;
+  position: relative;
+  letter-spacing: 0.03em;
+  line-height: 60px;
+  display: inline-block;
+  flex-shrink: 0;
+  font-size: 36px;
+  line-height: 50px;
+}.healthcareOrganizationsNeed {
+  width: 492px;
+  height: 175px;
+  position: relative;
+  font-size: 24px;
+  letter-spacing: 0.03em;
+  line-height: 40px;
+  color: #2f3547;
+  display: inline-block;
+  flex-shrink: 0;
+}.rectangleGroup {
+  position: absolute;
+  top: 3519px;
+  left: calc(50% - 640px);
+  box-shadow: -10px -10px 20px #fff, 10px 10px 20px #c4c4c4;
+  border-radius: 50px;
+  background-color: #dfe6e9;
+  width: 1280px;
+  height: 526px;
+  overflow: hidden;
+}.frameParent28 {
+  position: absolute;
+  top: 80px;
+  left: 80px;
+  width: 585px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+  flex-shrink: 0;
+}.empoweringHealthcareOrganiza {
+  align-self: stretch;
+  height: 123px;
+  position: relative;
+  letter-spacing: 0.03em;
+  line-height: 60px;
+  display: inline-block;
+  flex-shrink: 0;
+  font-size: 36px;
+}.maleDoctorNursesCommunicatiIcon {
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  width: 583px;
+  height: 526px;
+  object-fit: contain;
+  flex-shrink: 0;
+}.frameParent29 {
+  position: absolute;
+  top: 4141px;
+  left: calc(50% - 640px);
+  width: 1280px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 64px;
+  text-align: center;
+}.frameParent30 {
+  align-self: stretch;
+  height: 249px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+}.frameChild18 {
+  width: 282px;
+  height: 50.2px;
+  position: relative;
+  border-radius: 28px;
+  object-fit: contain;
+  flex-shrink: 0;
+}.benefitsForHealthcareOrganiParent {
+  align-self: stretch;
+  height: 216px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  flex-shrink: 0;
+}.benefitsForHealthcare {
+  width: 910px;
+  height: 63px;
+  position: relative;
+  letter-spacing: 0.03em;
+  line-height: 60px;
+  display: inline-block;
+  flex-shrink: 0;
+  font-size: 36px;
+}.healthcareOrganizationsNeed2 {
+  width: 1014px;
+  height: 72px;
+  position: relative;
+  font-size: 24px;
+  letter-spacing: 0.03em;
+  line-height: 40px;
+  color: #2f3547;
+  display: inline-block;
+  flex-shrink: 0;
+}.frameParent31 {
+  width: 1280px;
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  text-align: left;
+  font-size: 24px;
+}.frameParent32 {
+  height: 165px;
+  width: 240px;
+  position: relative;
+  border-radius: 24px 0px 0px 24px;
+  flex-shrink: 0;
+}.frameChild19 {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 240px;
+  height: 166px;
+}.complianceTraining {
+  position: absolute;
+  top: calc(50% - 36px);
+  left: calc(50% - 80px);
+  letter-spacing: 0.03em;
+  line-height: 36px;
+  display: inline-block;
+  width: 142px;
+  height: 72px;
+}.vectorParent {
+  height: 166px;
+  width: 240px;
+  position: relative;
+  flex-shrink: 0;
+}.rectangleIcon {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  box-shadow: -4px -4px 8px #fff, 4px 4px 8px #c4c4c4;
+  width: 240px;
+  height: 166px;
+}.polygonIcon {
+  position: absolute;
+  top: calc(50% - 12px);
+  left: 0px;
+  width: 24.4px;
+  height: 24.4px;
+  object-fit: contain;
+}.professionalDevelopment {
+  position: absolute;
+  top: calc(50% - 36px);
+  left: calc(50% - 80px);
+  letter-spacing: 0.03em;
+  line-height: 36px;
+  display: inline-block;
+  width: 161px;
+  height: 72px;
+}.betterPatientCare {
+  position: absolute;
+  top: calc(50% - 36px);
+  left: calc(50% - 80px);
+  letter-spacing: 0.03em;
+  line-height: 36px;
+  display: inline-block;
+  width: 167px;
+  height: 72px;
+}.certificationTracking {
+  position: absolute;
+  top: calc(50% - 36px);
+  left: calc(50% - 80px);
+  letter-spacing: 0.03em;
+  line-height: 36px;
+  display: inline-block;
+  width: 154px;
+  height: 72px;
+}.scalableProgrammes {
+  position: absolute;
+  top: calc(50% - 36px);
+  left: calc(50% - 80px);
+  letter-spacing: 0.03em;
+  line-height: 36px;
+  display: inline-block;
+  width: 159px;
+  height: 72px;
+}.frameParent33 {
+  position: absolute;
+  top: 4716px;
+  left: calc(50% - 640px);
+  box-shadow: -8px -8px 16px #fff inset, 8px 8px 16px rgba(196, 196, 196, 0.8) inset;
+  border-radius: 32px;
+  background-color: #dfe6e9;
+  width: 1280px;
+  height: 614px;
+  overflow: hidden;
+}.image21Parent {
+  position: absolute;
+  top: 32px;
+  left: 32px;
+  box-shadow: 10px 10px 20px #c4c4c4, -10px -10px 20px rgba(255, 255, 255, 0.6);
+  border-radius: 16px;
+  background-color: #dfe6e9;
+  width: 1216px;
+  height: 550px;
+  overflow: hidden;
+  flex-shrink: 0;
+}.image21 {
+  position: absolute;
+  top: -1px;
+  left: 0px;
+  width: 1216px;
+  height: 737px;
+  flex-shrink: 0;
+}.groupYoungBusinesspeopleUsi {
+  position: absolute;
+  top: calc(50% - 277px);
+  left: calc(50% - 608px);
+  width: 1216px;
+  height: 555px;
+  flex-shrink: 0;
+}.frameChild30 {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 660px;
+  height: 550px;
+  object-fit: cover;
+  flex-shrink: 0;
+}.frameChild31 {
+  position: absolute;
+  top: 219px;
+  left: 833px;
+  border-radius: 500px;
+  width: 106px;
+  height: 106px;
+  flex-shrink: 0;
+}.frameParent34 {
+  position: absolute;
+  top: calc(50% - 223px);
+  left: 50px;
+  width: 533px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 46px;
+  flex-shrink: 0;
+}.frameParent36 {
+  width: 544px;
+  height: 189px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+  flex-shrink: 0;
+}.frameChild32 {
+  width: 170.7px;
+  height: 50.1px;
+  position: relative;
+  border-radius: 28px;
+  object-fit: contain;
+  flex-shrink: 0;
+}.poweringLearningFor {
+  width: 544px;
+  position: relative;
+  letter-spacing: 0.03em;
+  line-height: 60px;
+  display: inline-block;
+  flex-shrink: 0;
+  font-size: 36px;
+}.neurolxpHelpsRetail {
+  width: 512px;
+  height: 120px;
+  position: relative;
+  font-size: 24px;
+  letter-spacing: 0.03em;
+  line-height: 40px;
+  color: #2f3547;
+  display: inline-block;
+  flex-shrink: 0;
+}.frameWrapper14 {
+  width: 175px;
+  height: 60px;
+  box-shadow: -8px -8px 16px #fff, 8px 8px 16px #c6c6c9;
+  border-radius: 16px;
+  background-color: #dfe6e9;
+  overflow: hidden;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px 32px;
+  box-sizing: border-box;
+  font-size: 22px;
+  color: #2d4cc8;
+}.getStartedWrapper {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}.getStarted {
+  width: 116px;
+  position: relative;
+  line-height: 30px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}.image203 {
+  position: absolute;
+  top: 0px;
+  left: calc(50% - 640px);
+  width: 1280px;
+  height: 800px;
+  flex-shrink: 0;
+}.frameParent37 {
+  position: absolute;
+  top: 5474px;
+  left: calc(50% - 720px);
+  width: 1440px;
+  height: 501px;
+  font-size: 26px;
+  color: #2f3547;
+}.frameParent38 {
+  position: absolute;
+  bottom: -0.01px;
+  left: calc(50% - 720px);
+  box-shadow: -10px -10px 20px #fff inset, 8px 8px 16px #c4c4c4 inset;
+  background-color: #dfe6e9;
+  width: 1440px;
+  height: 459px;
+  overflow: hidden;
+}.frameParent39 {
+  position: absolute;
+  top: 49.81px;
+  left: 53.96px;
+  width: 1339.5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}.frameParent40 {
+  align-self: stretch;
+  display: flex;
+  align-items: flex-start;
+  gap: 35px;
+}.frameParent41 {
+  width: 676px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  flex-shrink: 0;
+}.logo01SynapseSpark1Group {
+  width: 577px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}.logo01SynapseSpark1Icon2 {
+  width: 299px;
+  height: 112px;
+  position: relative;
+  object-fit: cover;
+  flex-shrink: 0;
+}.frameParent42 {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-shrink: 0;
+}.onePlatformParent {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}.onePlatform {
+  position: relative;
+  letter-spacing: -0.03em;
+  line-height: 34px;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}.sparklesIcon {
+  height: 23px;
+  width: 23px;
+  position: relative;
+}.prgeeqGlobalSolutionsPrivatParent {
+  width: 459px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+  font-size: 16px;
+}.prgeeqGlobalSolutions {
+  align-self: stretch;
+  position: relative;
+  letter-spacing: 0.03em;
+  line-height: 24px;
+}.prestigeAtlanta1012Container {
+  align-self: stretch;
+  height: 77px;
+  position: relative;
+  line-height: 24px;
+  display: flex;
+  align-items: flex-end;
+  flex-shrink: 0;
+}.blankLine {
+  line-height: 24px;
+}.frameParent43 {
+  width: 631px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 24px;
+  flex-shrink: 0;
+  font-size: 22px;
+  color: #2d4cc8;
+}.frameParent44 {
+  width: 619px;
+  display: flex;
+  align-items: flex-start;
+  gap: 32px;
+}.aboutUsParent {
+  width: 123px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}.aboutUs {
+  width: 93px;
+  position: relative;
+  letter-spacing: -0.03em;
+  line-height: 30px;
+  display: flex;
+  align-items: center;
+}.ourMissionParent {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 15px;
+  font-size: 20px;
+  color: #2f3547;
+}.ourMission {
+  align-self: stretch;
+  height: 26px;
+  position: relative;
+  letter-spacing: 0.03em;
+  line-height: 28px;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}.quickLinksParent {
+  width: 207px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}.quickLinks {
+  align-self: stretch;
+  height: 26px;
+  position: relative;
+  letter-spacing: -0.03em;
+  line-height: 30px;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}.neurolxpParent {
+  height: 181px;
+  width: 205px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}.neurolxp {
+  align-self: stretch;
+  height: 26px;
+  position: relative;
+  letter-spacing: -0.03em;
+  line-height: 30px;
+  display: flex;
+  white-space: pre-wrap;
+  align-items: center;
+  flex-shrink: 0;
+}.ourCustomersGroup {
+  width: 221px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 15px;
+  flex-shrink: 0;
+  font-size: 20px;
+  color: #2f3547;
+}.smartContentCreation {
+  width: 229px;
+  height: 26px;
+  position: relative;
+  letter-spacing: 0.03em;
+  line-height: 28px;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}.frameParent45 {
+  width: 392.4px;
+  height: 80.1px;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}.frameChild33 {
+  height: 80.1px;
+  width: 80.1px;
+  position: relative;
+}.copyright2026 {
+  align-self: stretch;
+  height: 47px;
+  position: relative;
+  font-size: 16px;
+  letter-spacing: -0.03em;
+  line-height: 56px;
+  font-weight: 600;
+  color: #2d4cc8;
+  text-align: center;
+  display: inline-block;
+  flex-shrink: 0;
+}.frameWrapper15 {
+  position: absolute;
+  bottom: 0px;
+  left: calc(50% - 720px);
+  box-shadow: -8px -8px 16px #fff inset, 10px 10px 10px #c4c4c4 inset;
+  background-color: #dfe6e9;
+  width: 1440px;
+  height: 459px;
+  overflow: hidden;
+}.frameParent50 {
+  width: 631px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  position: relative;
+  isolation: isolate;
+  gap: 24px;
+  flex-shrink: 0;
+  font-size: 22px;
+  color: #2d4cc8;
+}.frameParent51 {
+  width: 619px;
+  display: flex;
+  align-items: flex-start;
+  gap: 32px;
+  z-index: 0;
+  flex-shrink: 0;
+}.ourMissionGroup {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 15px;
+  font-size: 18px;
+  color: #2f3547;
+}.neurolxpGroup {
+  display: flex;
+  align-items: flex-start;
+  flex-shrink: 0;
+}.neurolxp2 {
+  height: 26px;
+  width: 103px;
+  position: relative;
+  letter-spacing: -0.03em;
+  line-height: 30px;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}.neurolxpTxt {
+  width: 100%;
+  white-space: pre-wrap;
+}.neurolxp3 {
+  line-height: 30px;
+}.span {
+  font-size: 12px;
+  line-height: 30px;
+}.tm {
+  height: 17px;
+  width: 23px;
+  position: relative;
+  font-size: 12px;
+  letter-spacing: -0.03em;
+  line-height: 30px;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}.ourCustomersContainer {
+  width: 221px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 15px;
+  flex-shrink: 0;
+  font-size: 18px;
+  color: #2f3547;
+}.frameParent53 {
+  width: 392.4px;
+  height: 80.1px;
+  margin: 0 !important;
+  position: absolute;
+  top: 217.19px;
+  left: 135.04px;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  z-index: 1;
+  flex-shrink: 0;
+}.frameChild37 {
+  height: 80.1px;
+  width: 80.1px;
+  position: relative;
+  flex-shrink: 0;
+}.frameChild42 {
+  position: absolute;
+  top: 0px;
+  left: calc(50% - 30.07px);
+  border-radius: 32px;
+  width: 59.1px;
+  height: 92px;
+  object-fit: contain;
+}.productKnowledge2 {
+  position: absolute;
+  top: 1377px;
+  left: 1962px;
+  box-shadow: -8px -8px 16px #c4c4c4, 8px 8px 16px #fff;
+  border-radius: 50px;
+  background-color: #dfe6e9;
+  width: 369px;
+  height: 228px;
+  overflow: hidden;
+}.frameParent54 {
+  position: absolute;
+  top: 24px;
+  left: 48px;
+  width: 273px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}.frameParent55 {
+  align-self: stretch;
+  height: 108px;
+  position: relative;
+}.frameChild43 {
+  position: absolute;
+  top: 0px;
+  left: calc(50% - 50.48px);
+  border-radius: 100px;
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  flex-shrink: 0;
+}.productKnowledge3 {
+  position: absolute;
+  top: 68px;
+  left: calc(50% - 136.5px);
+  letter-spacing: 0.03em;
+  line-height: 34px;
+  display: inline-block;
+  width: 279px;
+  height: 40px;
+  flex-shrink: 0;
+}.keepTeamsProduct {
+  width: 190px;
+  position: relative;
+  font-size: 20px;
+  letter-spacing: 0.03em;
+  line-height: 28px;
+  color: #2f3547;
+  display: inline-block;
+}.distributedStores2 {
+  position: absolute;
+  top: 1377px;
+  left: 2381px;
+  box-shadow: -8px -8px 16px #c4c4c4, 8px 8px 16px #fff;
+  border-radius: 50px;
+  background-color: #dfe6e9;
+  width: 369px;
+  height: 228px;
+  overflow: hidden;
+}.frameParent56 {
+  position: absolute;
+  top: 24px;
+  left: 57px;
+  width: 255px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 16px;
+}.frameChild44 {
+  position: absolute;
+  top: 0px;
+  left: calc(50% - 41.48px);
+  border-radius: 100px;
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+}.distributedStores3 {
+  position: absolute;
+  top: 68px;
+  left: calc(50% - 127.5px);
+  letter-spacing: 0.03em;
+  line-height: 34px;
+  display: inline-block;
+  width: 256px;
+  height: 40px;
+}.deliverConsistentTraining {
+  align-self: stretch;
+  position: relative;
+  font-size: 20px;
+  letter-spacing: 0.03em;
+  line-height: 28px;
+  color: #2f3547;
+}.talentRetention2 {
+  position: absolute;
+  top: 1377px;
+  left: 1512px;
+  box-shadow: -8px -8px 16px #c4c4c4, 8px 8px 16px #fff;
+  border-radius: 50px;
+  background-color: #dfe6e9;
+  width: 369px;
+  height: 228px;
+  overflow: hidden;
+}.frameParent58 {
+  position: absolute;
+  top: 24px;
+  left: calc(50% - 121.5px);
+  width: 244px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}.frameParent59 {
+  width: 232px;
+  height: 108px;
+  position: relative;
+}.frameChild45 {
+  position: absolute;
+  top: 0px;
+  left: calc(50% - 29.98px);
+  border-radius: 100px;
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+}.talentRetention3 {
+  position: absolute;
+  top: 68px;
+  left: calc(50% - 116px);
+  letter-spacing: 0.03em;
+  line-height: 34px;
+  display: inline-block;
+  width: 232px;
+  height: 40px;
+}.frameParent,
+.frameParent37,
+.frameParent38,
+.frameWrapper15 {
+  display: none !important;
+  width: 0 !important;
+  height: 0 !important;
+  min-height: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow: hidden !important;
+}.retailBenefitIcon {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  flex: 0 0 70px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: -4px -4px 8px #fff, 4px 4px 8px rgba(196, 196, 196, 0.85);
+}.retailBenefitIcon img {
+  width: 25px !important;
+  height: 25px !important;
+  object-fit: contain;
+}.retailBenefitBlue {
+  background: #3158d5;
+}.retailBenefitPink {
+  background: #bf1869;
+}.retailBenefitPurple {
+  background: #67096e;
+}.retailBenefitOrange {
+  background: #c05512;
+}.retailBenefitGold {
+  background: #9e8500;
+}.frameParent18,
+.frameParent19 {
+  overflow: visible;
+}.healthArrow {
+  position: absolute;
+  top: calc(50% - 12px);
+  left: 0;
+  width: 0;
+  height: 0;
+  border-top: 12px solid transparent;
+  border-bottom: 12px solid transparent;
+  z-index: 3;
+}.healthArrowBlue {
+  border-left: 25px solid #2d4cc8;
+}.polygonIcon {
+  z-index: 3;
+  object-fit: contain;
+}.frameChild31 {
+  z-index: 5;
+  object-fit: contain;
+  cursor: pointer;
+}.consistentTraining,
+.betterCustomerExperience,
+.quickOnboarding,
+.continuousDevelopment,
+.performanceTracking,
+.complianceTraining,
+.professionalDevelopment,
+.betterPatientCare,
+.certificationTracking,
+.scalableProgrammes {
+  overflow: visible;
+  white-space: normal;
+}.productKnowledge2,
+.distributedStores2,
+.talentRetention2 {
+  display: none;
+}.retailHealthcare2 {
+  height: auto !important;
+  min-height: 24px;
+  overflow: visible !important;
+}.scalableLearningForContainer {
+  height: auto !important;
+  min-height: 180px;
+  overflow: visible !important;
+}.frameParent5 {
+  height: auto !important;
+  min-height: 245px;
+  overflow: visible !important;
+}.neurolxpEnablesSmarter {
+  height: auto !important;
+  overflow: visible !important;
+}.frameParent6,
+.frameWrapper2,
+.startLearningWrapper,
+.startLearning,
+.frameWrapper14,
+.getStartedWrapper,
+.getStarted {
+  overflow: visible !important;
+}.startLearning,
+.getStarted {
+  height: auto !important;
+  min-height: 30px;
+  white-space: nowrap;
+}.empoweringSmarterRetailLearParent,
+.empoweringSmarterRetail,
+.retailTeamsNeed {
+  height: auto !important;
+  overflow: visible !important;
+}.empoweringSmarterRetail {
+  min-height: 63px;
+}.frameParent14,
+.empoweringSmarterRetail2,
+.neurolxpEnablesFaster {
+  overflow: visible !important;
+}.empoweringSmarterRetail2 {
+  height: auto !important;
+  min-height: 123px;
+}.neurolxpEnablesFaster {
+  height: auto !important;
+  min-height: 128px;
+}.frameParent16,
+.benefitsForRetail,
+.neurolxpEnablesSmarter2 {
+  overflow: visible !important;
+}.neurolxpEnablesSmarter2 {
+  height: auto !important;
+  min-height: 120px;
+}.frameParent27,
+.smarterHealthcareLearning,
+.healthcareOrganizationsNeed {
+  overflow: visible !important;
+}.smarterHealthcareLearning {
+  height: auto !important;
+  min-height: 127px;
+}.healthcareOrganizationsNeed {
+  height: auto !important;
+  min-height: 175px;
+}.frameParent28,
+.empoweringHealthcareOrganiza {
+  overflow: visible !important;
+}.empoweringHealthcareOrganiza {
+  height: auto !important;
+  min-height: 123px;
+}.frameParent29,
+.frameParent30,
+.benefitsForHealthcareOrganiParent,
+.benefitsForHealthcare,
+.healthcareOrganizationsNeed2 {
+  overflow: visible !important;
+}.benefitsForHealthcareOrganiParent {
+  height: auto !important;
+  min-height: 216px;
+}.benefitsForHealthcare {
+  height: auto !important;
+  min-height: 63px;
+}.healthcareOrganizationsNeed2 {
+  height: auto !important;
+  min-height: 72px;
+}.frameParent34,
+.frameParent36,
+.poweringLearningFor,
+.neurolxpHelpsRetail,
+.neurolxpParent,
+.neurolxp,
+.neurolxpGroup,
+.neurolxp2,
+.neurolxpTxt {
+  overflow: visible !important;
+}.frameParent36 {
+  height: auto !important;
+  min-height: 189px;
+}.poweringLearningFor {
+  height: auto !important;
+  min-height: 120px;
+}.neurolxpHelpsRetail {
+  height: auto !important;
+  min-height: 120px;
+}.neurolxp,
+.neurolxp2 {
+  height: auto !important;
+  min-height: 30px;
+}.scalableLearningForContainer,
+.neurolxpEnablesSmarter,
+.empoweringSmarterRetail,
+.retailTeamsNeed,
+.empoweringSmarterRetail2,
+.neurolxpEnablesFaster,
+.benefitsForRetail,
+.neurolxpEnablesSmarter2,
+.smarterHealthcareLearning,
+.healthcareOrganizationsNeed,
+.empoweringHealthcareOrganiza,
+.benefitsForHealthcare,
+.healthcareOrganizationsNeed2,
+.poweringLearningFor,
+.neurolxpHelpsRetail,
+.retailHealthcare2,
+.startLearning,
+.getStarted,
+.neurolxp,
+.neurolxp2 {
+  position: relative;
+  z-index: 5;
+  visibility: visible !important;
+  opacity: 1 !important;
+}.frameParent2 {
+  height: 609px !important;
+}.smilingYoungFemaleDoctorWeParent {
+  height: 561px !important;
+  overflow: hidden !important;
+}.frameParent3 {
+  top: 50px !important;
+  left: 50px !important;
+  width: 653px !important;
+  height: 461px !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: flex-start !important;
+  justify-content: flex-start !important;
+  gap: 48px !important;
+  overflow: visible !important;
+}.frameWrapper {
+  width: 621px !important;
+  overflow: visible !important;
+}.frameParent4 {
+  width: 621px !important;
+  gap: 28px !important;
+  overflow: visible !important;
+}.frameParent5 {
+  position: relative !important;
+  width: 621px !important;
+  height: 218px !important;
+  min-height: 218px !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: flex-start !important;
+  justify-content: flex-start !important;
+  gap: 28px !important;
+  overflow: visible !important;
+}.frameParent5 > .frameInner {
+  width: 386.2px !important;
+  height: 50.3px !important;
+  opacity: 0 !important;
+  visibility: hidden !important;
+  pointer-events: none !important;
+}.frameParent5::before {
+  content: "Retail & Healthcare Solutions";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 480px;
+  height: 50.3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  border-radius: 28px;
+  background: #dfe6e9;
+  box-shadow: inset -4px -4px 8px #ffffff,
+    inset 4px 4px 8px rgba(196, 196, 196, 0.8);
+  color: #2d4cc8;
+  font-family: "Segoe UI";
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 32px;
+  letter-spacing: 0.03em;
+  white-space: nowrap;
+  z-index: 5;
+}.scalableLearningForContainer {
+  width: 621px !important;
+  height: auto !important;
+  min-height: 120px !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  display: block !important;
+  font-family: "Segoe UI";
+  font-size: 48px !important;
+  font-weight: 700 !important;
+  line-height: 60px !important;
+  letter-spacing: 0.03em !important;
+  overflow: visible !important;
+  white-space: normal !important;
+}.scalableLearningFor,
+.serviceDriven {
+  line-height: 60px !important;
+}.neurolxpEnablesSmarter {
+  width: 621px !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  font-family: "Segoe UI";
+  font-size: 22px !important;
+  font-weight: 400 !important;
+  line-height: 40px !important;
+  letter-spacing: 0.03em !important;
+  color: #2f3547 !important;
+  overflow: visible !important;
+}.frameParent6 {
+  position: relative !important;
+  width: 433px !important;
+  height: 60px !important;
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  justify-content: flex-start !important;
+  gap: 32px !important;
+  overflow: visible !important;
+}.frameParent6 > .frameIcon {
+  width: 198px !important;
+  height: 60px !important;
+  opacity: 0 !important;
+  visibility: hidden !important;
+  pointer-events: none !important;
+  flex: 0 0 198px !important;
+}.frameParent6::before {
+  content: "Request Demo";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 198px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  border-radius: 8px;
+  background: #dfe6e9;
+  box-shadow: -8px -8px 16px #ffffff,
+    8px 8px 16px #c6c6c9;
+  color: #2d4cc8;
+  font-family: "Segoe UI";
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 30px;
+  white-space: nowrap;
+  z-index: 5;
+}.frameWrapper2 {
+  position: absolute !important;
+  top: 0 !important;
+  left: 230px !important;
+  width: 203px !important;
+  height: 60px !important;
+  overflow: hidden !important;
+}.startLearningWrapper,
+.startLearning {
+  width: auto !important;
+  height: auto !important;
+  min-height: 30px !important;
+  white-space: nowrap !important;
+}.smilingYoungFemaleDoctorWeIcon {
+  top: 24px !important;
+  left: 631px !important;
+  width: 594px !important;
+  height: 566px !important;
+  object-fit: cover !important;
+}.group > .starIcon {
+  display: none !important;
+}.group::after {
+  content: "★";
+  position: absolute;
+  top: 4px;
+  left: 116px;
+  color: #f4b400;
+  font-family: "Segoe UI";
+  font-size: 22px;
+  line-height: 22px;
+  z-index: 4;
+}.frameParent5::before,
+.scalableLearningForContainer,
+.neurolxpEnablesSmarter,
+.frameParent6::before,
+.frameWrapper2 {
+  visibility: visible !important;
+  opacity: 1 !important;
+}.frameParent5::before {
+  content: "Retail & Healthcare Solutions" !important;
+  width: 480px !important;
+  height: 50.3px !important;
+  font-family: "Segoe UI";
+  font-style: normal !important;
+  font-weight: 600 !important;
+  font-size: 24px !important;
+  line-height: 32px !important;
+  letter-spacing: 0.03em !important;
+  white-space: nowrap !important;
+}.retailLearningCard {
+  appearance: none;
+  border: 0;
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+  text-align: center;
+  transition: height 260ms ease,
+    transform 180ms ease,
+    box-shadow 180ms ease;
+}.retailLearningCard:focus-visible {
+  outline: 3px solid rgba(45, 76, 200, 0.35);
+  outline-offset: 6px;
+}.retailLearningCard:hover {
+  transform: translateY(-2px);
+}.retailLearningCard.isOpen {
+  height: 360px !important;
+  min-height: 360px !important;
+  box-shadow: -8px -8px 16px #c4c4c4,
+    8px 8px 16px #ffffff !important;
+}.retailLearningCard .frameParent11,
+.retailLearningCard .frameParent12,
+.retailLearningCard .frameParent13 {
+  width: 100% !important;
+  height: 100% !important;
+  top: 0 !important;
+  left: 0 !important;
+  padding: 32px 28px !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  box-sizing: border-box !important;
+}.retailLearningCard .retailCardIcon {
+  position: relative !important;
+  top: auto !important;
+  left: auto !important;
+  transform: none !important;
+  flex: 0 0 100px !important;
+}.retailLearningCard .talentRetention,
+.retailLearningCard .productKnowledge,
+.retailLearningCard .distributedStores {
+  position: relative !important;
+  top: auto !important;
+  left: auto !important;
+  transform: none !important;
+  width: 100% !important;
+  height: auto !important;
+  min-height: 40px !important;
+  margin-top: 24px !important;
+  font-family: "Segoe UI";
+  font-size: 28px !important;
+  line-height: 40px !important;
+  white-space: nowrap !important;
+}.retailCardChevron {
+  width: 30px;
+  height: 26px;
+  margin-top: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #2d4cc8;
+  font-family: "Segoe UI";
+  font-size: 25px;
+  line-height: 26px;
+  opacity: 0;
+  transform: translateY(-5px) rotate(0deg);
+  transition: opacity 180ms ease, transform 240ms ease;
+}.retailLearningCard:hover .retailCardChevron,
+.retailLearningCard:focus-visible .retailCardChevron,
+.retailLearningCard.isOpen .retailCardChevron {
+  opacity: 1;
+}.retailLearningCard.isOpen .retailCardChevron {
+  transform: translateY(0) rotate(180deg);
+}.retailCardDropdown {
+  width: 290px;
+  max-height: 0;
+  margin-top: 0;
+  overflow: hidden;
+  opacity: 0;
+  transform: translateY(-8px);
+  color: #2f3547;
+  font-family: "Segoe UI";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 34px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  transition: max-height 260ms ease,
+    margin-top 260ms ease,
+    opacity 180ms ease,
+    transform 260ms ease;
+}.retailLearningCard.isOpen .retailCardDropdown {
+  max-height: 100px;
+  margin-top: 18px;
+  opacity: 1;
+  transform: translateY(0);
+}.retailDropdownOpen .frameParent8 {
+  height: 682px !important;
+}.retailDropdownOpen .rectangleParent,
+.retailDropdownOpen .frameParent15,
+.retailDropdownOpen .frameParent23,
+.retailDropdownOpen .rectangleGroup,
+.retailDropdownOpen .frameParent29,
+.retailDropdownOpen .frameParent33,
+.retailDropdownOpen .frameParent37,
+.retailDropdownOpen .frameWrapper15,
+.retailDropdownOpen .productKnowledge2,
+.retailDropdownOpen .distributedStores2,
+.retailDropdownOpen .talentRetention2 {
+  transform: translateY(140px);
+}.retailDropdownOpen,
+.retailDropdownOpen .retailHealthcare {
+  height: 5470px !important;
+}.rectangleParent,
+.frameParent15,
+.frameParent23,
+.rectangleGroup,
+.frameParent29,
+.frameParent33,
+.frameParent37,
+.frameWrapper15 {
+  transition: transform 260ms ease;
+}.frameParent10 {
+  align-items: flex-start !important;
+  overflow: visible !important;
+}.retailLearningCard,
+.retailLearningCard:hover,
+.retailLearningCard:focus,
+.retailLearningCard:active,
+.retailLearningCard.isOpen {
+  transform: none !important;
+  transform-origin: top center !important;
+}.retailLearningCard {
+  position: relative !important;
+  top: 0 !important;
+  height: 228px !important;
+  min-height: 228px !important;
+  overflow: hidden !important;
+  vertical-align: top !important;
+  transition: height 280ms ease,
+    min-height 280ms ease,
+    box-shadow 180ms ease !important;
+}.retailLearningCard.isOpen {
+  top: 0 !important;
+  height: 360px !important;
+  min-height: 360px !important;
+  overflow: hidden !important;
+}.retailLearningCard .frameParent11,
+.retailLearningCard .frameParent12,
+.retailLearningCard .frameParent13 {
+  position: absolute !important;
+  top: 32px !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: auto !important;
+  min-height: 164px !important;
+  padding: 0 28px !important;
+  margin: 0 !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: flex-start !important;
+  box-sizing: border-box !important;
+  overflow: visible !important;
+}.retailLearningCard .retailCardIcon,
+.retailLearningCard.isOpen .retailCardIcon {
+  position: relative !important;
+  top: 0 !important;
+  left: auto !important;
+  width: 100px !important;
+  height: 100px !important;
+  min-width: 100px !important;
+  min-height: 100px !important;
+  margin: 0 !important;
+  transform: none !important;
+  flex: 0 0 100px !important;
+}.retailLearningCard .talentRetention,
+.retailLearningCard .productKnowledge,
+.retailLearningCard .distributedStores,
+.retailLearningCard.isOpen .talentRetention,
+.retailLearningCard.isOpen .productKnowledge,
+.retailLearningCard.isOpen .distributedStores {
+  position: relative !important;
+  top: auto !important;
+  left: auto !important;
+  width: 100% !important;
+  height: 40px !important;
+  min-height: 40px !important;
+  margin: 24px 0 0 !important;
+  padding: 0 !important;
+  transform: none !important;
+  flex: 0 0 40px !important;
+  overflow: visible !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  white-space: nowrap !important;
+}.retailCardChevron {
+  position: relative !important;
+  width: 30px !important;
+  height: 24px !important;
+  min-height: 24px !important;
+  margin: 2px 0 0 !important;
+  flex: 0 0 24px !important;
+  opacity: 0 !important;
+  transform: rotate(0deg) !important;
+}.retailLearningCard.isOpen .retailCardChevron {
+  opacity: 1 !important;
+  transform: rotate(180deg) !important;
+}.retailCardDropdown {
+  position: relative !important;
+  width: 290px !important;
+  max-width: 100% !important;
+  max-height: 0 !important;
+  min-height: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow: hidden !important;
+  opacity: 0 !important;
+  visibility: hidden !important;
+  transform: none !important;
+  flex: 0 0 auto !important;
+  font-family: "Segoe UI";
+  font-size: 24px !important;
+  line-height: 34px !important;
+  text-align: center !important;
+  color: #2f3547 !important;
+  transition: max-height 280ms ease,
+    min-height 280ms ease,
+    margin-top 280ms ease,
+    opacity 180ms ease,
+    visibility 180ms ease !important;
+}.retailLearningCard.isOpen .retailCardDropdown {
+  max-height: 110px !important;
+  min-height: 68px !important;
+  margin-top: 12px !important;
+  overflow: visible !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  transform: none !important;
+}.retailDropdownOpen .frameParent10 {
+  height: 360px !important;
+  min-height: 360px !important;
+  flex-basis: 360px !important;
+}.retailDropdownOpen .rectangleParent,
+.retailDropdownOpen .frameParent15,
+.retailDropdownOpen .frameParent23,
+.retailDropdownOpen .rectangleGroup,
+.retailDropdownOpen .frameParent29,
+.retailDropdownOpen .frameParent33,
+.retailDropdownOpen .frameParent37,
+.retailDropdownOpen .frameWrapper15 {
+  transform: translateY(140px) !important;
+}.retailLearningCard b,
+.retailLearningCard .retailCardDropdown {
+  position: relative !important;
+  z-index: 10 !important;
+  text-overflow: clip !important;
+}.frameParent17 {
+  width: 429px !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: flex-start !important;
+  justify-content: flex-start !important;
+  gap: 22px !important;
+  overflow: visible !important;
+}.frameParent18,
+.frameParent19 {
+  width: 100% !important;
+  height: 70px !important;
+  min-height: 70px !important;
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  justify-content: flex-start !important;
+  gap: 24px !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow: visible !important;
+  box-sizing: border-box !important;
+}.retailBenefitIcon {
+  position: relative !important;
+  width: 70px !important;
+  height: 70px !important;
+  min-width: 70px !important;
+  min-height: 70px !important;
+  flex: 0 0 70px !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border-radius: 50% !important;
+  overflow: visible !important;
+  box-shadow: -4px -4px 8px #ffffff,
+    4px 4px 8px rgba(196, 196, 196, 0.85) !important;
+}.retailBenefitIcon img {
+  position: absolute !important;
+  top: 50% !important;
+  left: 50% !important;
+  width: 36px !important;
+  height: 36px !important;
+  min-width: 36px !important;
+  min-height: 36px !important;
+  max-width: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  object-fit: contain !important;
+  transform: translate(-50%, -50%) scale(1.08) !important;
+  transform-origin: center !important;
+  filter: brightness(0) invert(1) !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  z-index: 3 !important;
+  pointer-events: none !important;
+}.retailBenefitBlue {
+  background-color: #3158d5 !important;
+}.retailBenefitPink {
+  background-color: #c8216b !important;
+}.retailBenefitPurple {
+  background-color: #74157c !important;
+}.retailBenefitOrange {
+  background-color: #cb5a1e !important;
+}.retailBenefitGold {
+  background-color: #aa9020 !important;
+}.consistentTraining,
+.betterCustomerExperience,
+.quickOnboarding,
+.continuousDevelopment,
+.performanceTracking {
+  position: relative !important;
+  top: auto !important;
+  left: auto !important;
+  width: auto !important;
+  max-width: 335px !important;
+  height: auto !important;
+  min-height: 36px !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  display: flex !important;
+  align-items: center !important;
+  flex: 1 1 auto !important;
+  color: #31344b !important;
+  font-family: "Segoe UI";
+  font-style: normal !important;
+  font-weight: 600 !important;
+  font-size: 24px !important;
+  line-height: 36px !important;
+  letter-spacing: 0.03em !important;
+  text-align: left !important;
+  white-space: nowrap !important;
+  overflow: visible !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+}.frameParent16 {
+  position: relative !important;
+  width: 638px !important;
+  min-height: 361.16px !important;
+  overflow: visible !important;
+}.frameParent16 > .frameChild8 {
+  width: 209.77px !important;
+  height: 50px !important;
+  opacity: 0 !important;
+  visibility: hidden !important;
+  pointer-events: none !important;
+}.frameParent16::before {
+  content: "Retail Benefits";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 209.77px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  border-radius: 28px;
+  background: #dfe6e9;
+  box-shadow: inset -4px -4px 8px #ffffff, inset 4px 4px 8px rgba(196,196,196,.8);
+  color: #2d4cc8;
+  font-family: "Segoe UI";
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: .03em;
+  white-space: nowrap;
+  z-index: 5;
+}.benefitsForRetail {
+  width: 638px !important;
+  margin-top: 82px !important;
+  overflow: visible !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+}.neurolxpEnablesSmarter2 {
+  width: 638px !important;
+  height: auto !important;
+  min-height: 120px !important;
+  overflow: visible !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+}.frameParent17 {
+  width: 429px !important;
+  height: 438.05px !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: flex-start !important;
+  gap: 22px !important;
+}.frameParent18,
+.frameParent19 {
+  width: 429px !important;
+  height: 70.05px !important;
+  min-height: 70.05px !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: 16px !important;
+}.retailBenefitIcon {
+  position: relative !important;
+  width: 70.05px !important;
+  height: 70.05px !important;
+  min-width: 70.05px !important;
+  min-height: 70.05px !important;
+  flex: 0 0 70.05px !important;
+  border-radius: 100px !important;
+  background: #dfe6e9 !important;
+  box-shadow: inset -4px -4px 8px #fff, inset 4px 4px 8px rgba(196,196,196,.8) !important;
+  overflow: visible !important;
+}.retailBenefitIcon::before {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  left: 10.03px;
+  top: 10.02px;
+  border-radius: 50%;
+  background: #dfe6e9;
+  box-shadow: 8px 8px 16px #c6c6c9, -8px -8px 16px #fff;
+  z-index: 1;
+}.retailBenefitIcon img {
+  position: absolute !important;
+  top: 50% !important;
+  left: 50% !important;
+  width: 32px !important;
+  height: 32px !important;
+  min-width: 32px !important;
+  min-height: 32px !important;
+  max-width: 32px !important;
+  max-height: 32px !important;
+  object-fit: contain !important;
+  transform: translate(-50%, -50%) rotate(.05deg) !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  z-index: 2 !important;
+}.retailBenefitBlue img {
+  width: 34px !important;
+  height: 34px !important;
+  filter: brightness(0) saturate(100%) invert(31%) sepia(89%) saturate(1747%) hue-rotate(212deg) brightness(88%) contrast(91%) drop-shadow(0 4px 4px rgba(0,0,0,.25)) !important;
+}.retailBenefitPink img {
+  filter: brightness(0) saturate(100%) invert(20%) sepia(91%) saturate(3145%) hue-rotate(320deg) brightness(85%) contrast(93%) drop-shadow(0 4px 4px rgba(0,0,0,.25)) !important;
+}.retailBenefitPurple img {
+  filter: brightness(0) saturate(100%) invert(15%) sepia(73%) saturate(3532%) hue-rotate(288deg) brightness(82%) contrast(105%) drop-shadow(0 4px 4px rgba(0,0,0,.25)) !important;
+}.retailBenefitOrange img {
+  filter: brightness(0) saturate(100%) invert(38%) sepia(92%) saturate(1349%) hue-rotate(354deg) brightness(89%) contrast(93%) drop-shadow(0 4px 4px rgba(0,0,0,.25)) !important;
+}.retailBenefitGold img {
+  filter: brightness(0) saturate(100%) invert(48%) sepia(64%) saturate(787%) hue-rotate(11deg) brightness(91%) contrast(94%) drop-shadow(0 4px 4px rgba(0,0,0,.25)) !important;
+}.retailBenefitBlue,
+.retailBenefitPink,
+.retailBenefitPurple,
+.retailBenefitOrange,
+.retailBenefitGold {
+  background-color: #dfe6e9 !important;
+}.consistentTraining {
+  width: 233px !important;
+}.betterCustomerExperience {
+  width: 337px !important;
+}.quickOnboarding {
+  width: 221px !important;
+}.continuousDevelopment {
+  width: 306px !important;
+}.performanceTracking {
+  width: 263px !important;
+}.consistentTraining,
+.betterCustomerExperience,
+.quickOnboarding,
+.continuousDevelopment,
+.performanceTracking {
+  height: 37px !important;
+  min-height: 37px !important;
+  max-width: none !important;
+  flex: 0 0 auto !important;
+  font-family: "Segoe UI";
+  font-weight: 600 !important;
+  font-size: 24px !important;
+  line-height: 36px !important;
+  letter-spacing: .03em !important;
+  white-space: nowrap !important;
+  overflow: visible !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+}benefitsForRetail + .neurolxpEnablesSmarter2 {
+  margin-top: 0 !important;
+}.frameParent16 {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: flex-start !important;
+  gap: 32px !important;
+}.frameParent16 > .frameChild8,
+.frameParent16 > .benefitsForRetail,
+.frameParent16 > .neurolxpEnablesSmarter2 {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}.benefitsForRetail {
+  overflow: visible !important;
+}.neurolxpEnablesSmarter2 {
+  height: auto !important;
+  min-height: 120px !important;
+  overflow: visible !important;
+}.benefitsForRetail + .neurolxpEnablesSmarter2 {
+  margin-top: 0 !important;
+}.frameParent17 {
+  gap: 22px !important;
+}.frameParent18,
+.frameParent19 {
+  gap: 16px !important;
+}.frameParent14 {
+  position: absolute !important;
+  overflow: visible !important;
+}.frameParent14 > .frameChild7 {
+  opacity: 0 !important;
+  visibility: hidden !important;
+  pointer-events: none !important;
+}.frameParent14::before {
+  content: "Retail Excellence";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 235px;
+  height: 50.2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  border-radius: 28px;
+  background: #dfe6e9;
+  box-shadow: inset -4px -4px 8px #ffffff,
+    inset 4px 4px 8px rgba(196, 196, 196, 0.8);
+  color: #2d4cc8;
+  font-family: "Segoe UI";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 0.03em;
+  text-transform: capitalize;
+  white-space: nowrap;
+  visibility: visible;
+  opacity: 1;
+  z-index: 5;
+}.frameParent14 {
+  gap: 32px !important;
+}.empoweringSmarterRetail2,
+.neurolxpEnablesFaster {
+  visibility: visible !important;
+  opacity: 1 !important;
+  overflow: visible !important;
+}.empoweringSmarterRetail2 {
+  height: auto !important;
+  min-height: 123px !important;
+}.neurolxpEnablesFaster {
+  height: auto !important;
+  min-height: 128px !important;
+}.frameParent27 {
+  position: relative !important;
+  overflow: visible !important;
+  gap: 28px !important;
+}.frameParent27 > .frameChild16 {
+  opacity: 0 !important;
+  visibility: hidden !important;
+  pointer-events: none !important;
+}.frameParent27::before {
+  content: "Healthcare Learning";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 281.6px;
+  height: 50.2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  border-radius: 28px;
+  background: #dfe6e9;
+  box-shadow: inset -4px -4px 8px #ffffff,
+    inset 4px 4px 8px rgba(196, 196, 196, 0.8);
+  color: #2d4cc8;
+  font-family: "Segoe UI";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 0.03em;
+  text-transform: capitalize;
+  white-space: nowrap;
+  visibility: visible;
+  opacity: 1;
+  z-index: 5;
+}.smarterHealthcareLearning {
+  height: auto !important;
+  min-height: 127px !important;
+  margin-top: 82.2px !important;
+  overflow: visible !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+}.healthcareOrganizationsNeed {
+  height: auto !important;
+  min-height: 175px !important;
+  overflow: visible !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+}.frameParent28 {
+  overflow: visible !important;
+}.frameParent28 > .frameChild7 {
+  opacity: 0 !important;
+  visibility: hidden !important;
+  pointer-events: none !important;
+}.frameParent28::before {
+  content: "Retail Excellence";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 235px;
+  height: 50.2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  border-radius: 28px;
+  background: #dfe6e9;
+  box-shadow: inset -4px -4px 8px #ffffff,
+    inset 4px 4px 8px rgba(196, 196, 196, 0.8);
+  color: #2d4cc8;
+  font-family: "Segoe UI";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 0.03em;
+  text-transform: capitalize;
+  white-space: nowrap;
+  visibility: visible;
+  opacity: 1;
+  z-index: 5;
+}.empoweringHealthcareOrganiza {
+  height: auto !important;
+  min-height: 123px !important;
+  overflow: visible !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+}.frameParent30,
+.benefitsForHealthcareOrganiParent {
+  overflow: visible !important;
+}.frameParent30 > .frameChild18 {
+  opacity: 0 !important;
+  visibility: hidden !important;
+  pointer-events: none !important;
+}.frameParent30::before {
+  content: "Healthcare Benefits";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 282px;
+  height: 50.2px;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  border-radius: 28px;
+  background: #dfe6e9;
+  box-shadow: inset -4px -4px 8px #ffffff,
+    inset 4px 4px 8px rgba(196, 196, 196, 0.8);
+  color: #2d4cc8;
+  font-family: "Segoe UI";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 0.03em;
+  text-transform: capitalize;
+  white-space: nowrap;
+  visibility: visible;
+  opacity: 1;
+  z-index: 5;
+}.benefitsForHealthcare,
+.healthcareOrganizationsNeed2 {
+  height: auto !important;
+  overflow: visible !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+}.benefitsForHealthcare {
+  min-height: 63px !important;
+}.healthcareOrganizationsNeed2 {
+  min-height: 72px !important;
+}.frameParent36 {
+  overflow: visible !important;
+}.frameParent36 > .frameChild32 {
+  opacity: 0 !important;
+  visibility: hidden !important;
+  pointer-events: none !important;
+}.frameParent36::before {
+  content: "NeuroLXP";
+  position: absolute;
+  top: 12px;
+  left: 84px;
+  width: 170.7px;
+  height: 50.1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  border-radius: 28px;
+  background: #dfe6e9;
+  box-shadow: inset -4px -4px 8px #ffffff,
+    inset 4px 4px 8px rgba(196, 196, 196, 0.8);
+  color: #2d4cc8;
+  font-family: "Segoe UI";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 0.03em;
+  white-space: nowrap;
+  visibility: visible;
+  opacity: 1;
+  z-index: 5;
+}.poweringLearningFor,
+.neurolxpHelpsRetail {
+  height: auto !important;
+  overflow: visible !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+}.neurolxpHelpsRetail {
+  min-height: 120px !important;
+}.rectangleGroup .frameParent28 {
+  position: absolute !important;
+  overflow: visible !important;
+}.rectangleGroup .frameParent28 > .frameChild7 {
+  opacity: 0 !important;
+  visibility: hidden !important;
+  pointer-events: none !important;
+}.rectangleGroup .frameParent28::before {
+  content: "Retail Excellence" !important;
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 235px !important;
+  height: 50.2px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  box-sizing: border-box !important;
+  border-radius: 28px !important;
+  background: #dfe6e9 !important;
+  box-shadow: inset -4px -4px 8px #ffffff,
+    inset 4px 4px 8px rgba(196, 196, 196, 0.8) !important;
+  color: #2d4cc8 !important;
+  font-family: "Segoe UI";
+  font-style: normal !important;
+  font-weight: 600 !important;
+  font-size: 24px !important;
+  line-height: 32px !important;
+  letter-spacing: 0.03em !important;
+  text-transform: capitalize !important;
+  white-space: nowrap !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  z-index: 999 !important;
+  pointer-events: none !important;
+}.rectangleGroup .empoweringHealthcareOrganiza,
+.rectangleGroup .neurolxpEnablesFaster {
+  visibility: visible !important;
+  opacity: 1 !important;
+  overflow: visible !important;
+}.frameParent8 {
+  overflow: visible !important;
+}.frameParent8 > .frameChild6 {
+  opacity: 0 !important;
+  visibility: hidden !important;
+  pointer-events: none !important;
+}.frameParent8::before {
+  content: "Retail Learning";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 222px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 28px;
+  background: #DFE6E9;
+  box-shadow: inset -4px -4px 8px #fff,inset 4px 4px 8px rgba(196,196,196,.8);
+  color: #2D4CC8;
+  font-family: "Segoe UI";
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: .03em;
+  white-space: nowrap;
+  z-index: 999;
+}.frameParent31 {
+  width: 1280px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 22px !important;
+  overflow: visible !important;
+}.frameParent31 > .frameParent32,
+.frameParent31 > .vectorParent {
+  position: relative !important;
+  width: 240px !important;
+  height: 166px !important;
+  min-width: 240px !important;
+  min-height: 166px !important;
+  flex: 0 0 240px !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  overflow: visible !important;
+  filter: drop-shadow(-4px -4px 7px rgba(255,255,255,.95))
+    drop-shadow(6px 7px 7px rgba(196,196,196,.9)) !important;
+}.frameParent31 .frameChild19,
+.frameParent31 .rectangleIcon {
+  opacity: 0 !important;
+  visibility: hidden !important;
+  pointer-events: none !important;
+}.frameParent31 .polygonIcon,
+.frameParent31 .healthArrow {
+  display: none !important;
+}.frameParent31 > .frameParent32::before,
+.frameParent31 > .vectorParent::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  width: 240px;
+  height: 166px;
+  background: #dfe6e9;
+  clip-path: polygon(
+    0 0,
+    86% 0,
+    100% 50%,
+    86% 100%,
+    0 100%
+  );
+  box-shadow: inset -4px -4px 8px rgba(255,255,255,.95),
+    inset 4px 4px 8px rgba(196,196,196,.75);
+  z-index: 0;
+}.frameParent31 > .frameParent32::after,
+.frameParent31 > .vectorParent::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-top: 12px solid transparent;
+  border-bottom: 12px solid transparent;
+  border-left: 24px solid #2d4cc8;
+  transform: translateY(-50%);
+  z-index: 2;
+}.frameParent31 > :nth-child(1)::after {
+  border-left-color: #2d4cc8 !important;
+}.frameParent31 > :nth-child(2)::after {
+  border-left-color: #bf1869 !important;
+}.frameParent31 > :nth-child(3)::after {
+  border-left-color: #67096e !important;
+}.frameParent31 > :nth-child(4)::after {
+  border-left-color: #b7cf00 !important;
+}.frameParent31 > :nth-child(5)::after {
+  border-left-color: #c05512 !important;
+}.frameParent31 .complianceTraining,
+.frameParent31 .professionalDevelopment,
+.frameParent31 .betterPatientCare,
+.frameParent31 .certificationTracking,
+.frameParent31 .scalableProgrammes {
+  position: absolute !important;
+  top: 50% !important;
+  left: 40px !important;
+  width: 164px !important;
+  height: auto !important;
+  min-height: 72px !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  transform: translateY(-50%) !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: flex-start !important;
+  color: #31344b !important;
+  font-family: "Segoe UI";
+  font-style: normal !important;
+  font-weight: 700 !important;
+  font-size: 24px !important;
+  line-height: 36px !important;
+  letter-spacing: 0.03em !important;
+  text-align: left !important;
+  white-space: normal !important;
+  overflow: visible !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  z-index: 3 !important;
+}.frameParent31 .professionalDevelopment {
+  width: 176px !important;
+}.frameParent31 .betterPatientCare {
+  width: 165px !important;
+}.frameParent31 .certificationTracking {
+  width: 170px !important;
+}.frameParent31 .scalableProgrammes {
+  width: 165px !important;
+}.smilingYoungFemaleDoctorWeParent {
+  background-color: #dfe6e9 !important;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='60' viewBox='0 0 60 60'%3E%3Cg fill='%23cfd7db' fill-opacity='0.46'%3E%3Crect x='27' y='20' width='6' height='20' rx='1'/%3E%3Crect x='20' y='27' width='20' height='6' rx='1'/%3E%3C/g%3E%3C/svg%3E") !important;
+  background-repeat: repeat !important;
+  background-size: 60px 60px !important;
+  background-position: 0 0 !important;
+}.frameInner {
+  width: 250px !important;
+}.frameParent5 {
+  width: 250px !important;
+}.frameParent5::before {
+  content: "Retail & Healthcare Solutions" !important;
+  width: max-content !important;
+  min-width: 0 !important;
+  max-width: none !important;
+  height: 50.3px !important;
+  padding: 0 22px !important;
+  box-sizing: border-box !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  white-space: nowrap !important;
+  font-family: "Segoe UI";
+  font-size: 24px !important;
+  font-weight: 600 !important;
+  line-height: 32px !important;
+  border-radius: 28px !important;
+  background: #dfe6e9 !important;
+  box-shadow: inset -4px -4px 8px #ffffff,
+    inset 4px 4px 8px rgba(196, 196, 196, 0.8) !important;
+}.retailCardIcon {
+  position: relative;
+  width: 96px !important;
+  height: 96px !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}.retailCardEllipse {
+  width: 96px !important;
+  height: 96px !important;
+}.retailCardEllipse::after {
+  content: "";
+  position: absolute;
+  width: 74px;
+  height: 74px;
+  border-radius: 50%;
+  background: #2D4CC8;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}.frameChild4,
+.frameChild5,
+.frameChild6 {
+  position: absolute !important;
+  width: 42px !important;
+  height: 42px !important;
+  left: 50% !important;
+  top: 50% !important;
+  transform: translate(-50%, -50%) !important;
+  z-index: 2;
+}.frameParent35,
+.frame2095587416,
+.iconCircle,
+.iconWrapper {
+  position: relative !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}.ellipse334,
+.frame2095586095,
+.iconCircleBlue {
+  position: absolute !important;
+  top: 50% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%) !important;
+}.frameParent35 svg,
+.frame2095587416 svg,
+.iconWrapper svg,
+.iconWrapper img,
+.frameParent35 img {
+  position: absolute !important;
+  top: 50% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%) !important;
+  width: 40px !important;
+  height: 40px !important;
+  display: block !important;
+  object-fit: contain !important;
+}.retailCardIcon {
+  position: relative !important;
+  width: 100px !important;
+  height: 100px !important;
+  min-width: 100px !important;
+  min-height: 100px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  border-radius: 50% !important;
+  background: #dfe6e9 !important;
+  box-shadow: inset -4px -4px 8px #ffffff,
+    inset 4px 4px 8px rgba(196, 196, 196, 0.8) !important;
+  overflow: visible !important;
+}.retailCardEllipse {
+  position: absolute !important;
+  top: 50% !important;
+  left: 50% !important;
+  width: 100px !important;
+  height: 100px !important;
+  min-width: 100px !important;
+  min-height: 100px !important;
+  max-width: 100px !important;
+  max-height: 100px !important;
+  margin: 0 !important;
+  object-fit: contain !important;
+  transform: translate(-50%, -50%) !important;
+  border-radius: 50% !important;
+  filter: none !important;
+  z-index: 1 !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+}.frameChild4,
+.frameChild5,
+.frameChild6 {
+  position: absolute !important;
+  top: 50% !important;
+  left: 50% !important;
+  width: 46px !important;
+  height: 46px !important;
+  min-width: 46px !important;
+  min-height: 46px !important;
+  max-width: 46px !important;
+  max-height: 46px !important;
+  margin: 0 !important;
+  object-fit: contain !important;
+  transform: translate(-50%, -50%) !important;
+  transform-origin: center !important;
+  z-index: 2 !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  pointer-events: none !important;
+}.retailCardIcon {
+  position: relative !important;
+  width: 100px !important;
+  height: 100px !important;
+  min-width: 100px !important;
+  min-height: 100px !important;
+  flex: 0 0 100px !important;
+  margin: 0 auto !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  border-radius: 50% !important;
+  background: #dfe6e9 !important;
+  box-shadow: inset -4px -4px 8px #ffffff,
+    inset 4px 4px 8px rgba(196, 196, 196, 0.8) !important;
+  overflow: visible !important;
+  transform: none !important;
+}.retailCardIcon::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: #2d4cc8;
+  border: 1px solid #2d4cc8;
+  box-shadow: 8px 8px 16px #c6c6c9,
+    -8px -8px 16px #ffffff;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}.retailCardEllipse {
+  display: none !important;
+}.frameChild4,
+.frameChild5,
+.frameChild6 {
+  position: absolute !important;
+  top: 50% !important;
+  left: 50% !important;
+  width: 40px !important;
+  height: 40px !important;
+  min-width: 40px !important;
+  min-height: 40px !important;
+  max-width: 40px !important;
+  max-height: 40px !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  object-fit: contain !important;
+  transform: translate(-50%, -50%) !important;
+  transform-origin: center !important;
+  z-index: 2 !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  pointer-events: none !important;
+}.frameParent11,
+.frameParent12,
+.frameParent13 {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: flex-start !important;
+  padding-top: 32px !important;
+}.talentRetention,
+.productKnowledge,
+.distributedStores {
+  margin-top: 24.08px !important;
+}.retailFinalVideo {
+  position: absolute !important;
+  top: 0 !important;
+  right: 0 !important;
+  width: 660px !important;
+  height: 550px !important;
+  display: block !important;
+  object-fit: cover !important;
+  object-position: center !important;
+  border: 0 !important;
+  outline: 0 !important;
+  background: #dfe6e9 !important;
+  z-index: 1 !important;
+}.frameChild30,
+.frameChild31 {
+  display: none !important;
+}.image21Parent .frameParent34 {
+  position: absolute !important;
+  z-index: 3 !important;
+}.frameParent33 {
+  border-radius: 32px !important;
+  overflow: hidden !important;
+}.image21Parent {
+  position: absolute !important;
+  top: 32px !important;
+  left: 32px !important;
+  width: 1216px !important;
+  height: 550px !important;
+  border-radius: 16px !important;
+  overflow: hidden !important;
+  isolation: isolate !important;
+  background: #dfe6e9 !important;
+}.retailFinalVideo {
+  position: absolute !important;
+  inset: 0 !important;
+  width: 1216px !important;
+  height: 550px !important;
+  object-fit: cover !important;
+  object-position: center center !important;
+  border-radius: 16px !important;
+  z-index: 1 !important;
+}.image21Parent::before {
+  content: "";
+  position: absolute;
+  width: 1500px;
+  height: 1050px;
+  left: -780px;
+  top: -250px;
+  border-radius: 50%;
+  background: #dfe6e9;
+  z-index: 2;
+  pointer-events: none;
+}.image21,
+.groupYoungBusinesspeopleUsi,
+.image203,
+.frameChild30,
+.frameChild31 {
+  display: none !important;
+}.image21Parent .frameParent34 {
+  position: absolute !important;
+  top: 52px !important;
+  left: 50px !important;
+  width: 560px !important;
+  z-index: 3 !important;
+}.image21Parent .frameParent36 {
+  width: 544px !important;
+}.image21Parent .poweringLearningFor {
+  width: 544px !important;
+}.image21Parent .neurolxpHelpsRetail {
+  width: 512px !important;
+}.frameParent33,
+.image21Parent,
+.retailFinalVideo {
+  box-sizing: border-box !important;
+}.frameParent6::before {
+  content: none !important;
+  display: none !important;
+  width: 0 !important;
+  height: 0 !important;
+  box-shadow: none !important;
+}.frameParent6 > .frameIcon,
+.frameIcon {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+}.frameParent6 {
+  position: relative !important;
+  width: 433px !important;
+  height: 60px !important;
+  display: block !important;
+  overflow: visible !important;
+}.frameParent6 > .requestDemoWrapper {
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 198px !important;
+  height: 60px !important;
+  min-width: 198px !important;
+  min-height: 60px !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  border: 0 !important;
+  outline: 0 !important;
+  border-radius: 8px !important;
+  background: #dfe6e9 !important;
+  box-shadow: inset -6px -6px 12px #ffffff,
+    inset 6px 6px 12px rgba(196, 196, 196, 0.9) !important;
+  appearance: none !important;
+  -webkit-appearance: none !important;
+  cursor: pointer !important;
+  box-sizing: border-box !important;
+  z-index: 20 !important;
+}.frameParent6 > .requestDemoWrapper:hover {
+  box-shadow: inset -7px -7px 14px #ffffff,
+    inset 7px 7px 14px rgba(196, 196, 196, 0.95) !important;
+}.frameParent6 > .requestDemoWrapper:active {
+  box-shadow: inset 7px 7px 14px rgba(196, 196, 196, 0.95),
+    inset -7px -7px 14px #ffffff !important;
+}.requestDemo {
+  position: relative !important;
+  width: auto !important;
+  height: auto !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  color: #2d4cc8 !important;
+  font-family: "Segoe UI";
+  font-style: normal !important;
+  font-weight: 600 !important;
+  font-size: 22px !important;
+  line-height: 30px !important;
+  letter-spacing: 0 !important;
+  white-space: nowrap !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  z-index: 21 !important;
+}.frameParent6 > .frameWrapper2 {
+  position: absolute !important;
+  top: 0 !important;
+  left: 230px !important;
+  width: 203px !important;
+  height: 60px !important;
+  z-index: 10 !important;
+}.frameItem {
+  box-shadow: -8px -8px 16px #ffffff,
+    8px 8px 16px #c4c4c4 !important;
+}.smilingYoungFemaleDoctorWeParent {
+  box-shadow: inset -8px -8px 16px #ffffff,
+    inset 8px 8px 16px #c4c4c4 !important;
+}.frameParent3 {
+  gap: 56px !important;
+}.frameParent4,
+.frameParent5 {
+  gap: 32px !important;
+}.frameParent6 {
+  gap: 32px !important;
+}.frameParent6 > .requestDemoWrapper {
+  box-shadow: inset -4px -4px 8px #ffffff,
+    inset 4px 4px 8px rgba(196, 196, 196, 0.8) !important;
+}.frameParent6 > .frameWrapper2 {
+  box-shadow: -8px -8px 16px #ffffff,
+    8px 8px 16px #c6c6c9 !important;
+}.frameParent7 {
+  gap: 32px !important;
+}.frameWrapper3 {
+  box-shadow: inset -4px -4px 8px #ffffff,
+    inset 4px 4px 8px rgba(196, 196, 196, 0.8) !important;
+}.kParent,
+.group {
+  gap: 6px !important;
+}.frameParent8 {
+  gap: 4px !important;
+}.frameParent9,
+.empoweringSmarterRetailLearParent {
+  gap: 6px !important;
+}.frameParent10 {
+  gap: 45px !important;
+  margin-top: 16px;
+}.frameWrapper7 {
+  box-shadow: -8px -8px 16px #c4c4c4,
+    8px 8px 16px #ffffff !important;
+}.retailCardIcon {
+  box-shadow: inset -4px -4px 8px #ffffff,
+    inset 4px 4px 8px rgba(196, 196, 196, 0.8) !important;
+}.retailCardIcon::before {
+  box-shadow: 8px 8px 16px #c6c6c9,
+    -8px -8px 16px #ffffff !important;
+}.rectangleParent {
+  box-shadow: inset -8px -8px 8px rgba(255, 255, 255, 0.5),
+    inset 8px 8px 8px #c4c4c4 !important;
+}.frameParent15 {
+  gap: 175px !important;
+}.frameParent16 {
+  gap: 32px !important;
+}.retailBenefitIcon {
+  box-shadow: inset -4px -4px 8px #ffffff,
+    inset 4px 4px 8px rgba(196, 196, 196, 0.8) !important;
+}.retailBenefitIcon::before {
+  box-shadow: 8px 8px 16px #c6c6c9,
+    -8px -8px 16px #ffffff !important;
+}.frameParent23 {
+  gap: 92px !important;
+}.frameParent24,
+.frameParent26 {
+  gap: 50px !important;
+}.frameParent27 {
+  gap: 28px !important;
+}.frameWrapper10 {
+  box-shadow: inset -8px -8px 16px #ffffff,
+    inset 8px 8px 16px #c4c4c4 !important;
+}.largeHealthcareTeamsParent {
+  box-shadow: -8px -8px 8px rgba(255, 255, 255, 0.5),
+    8px 8px 8px #c4c4c4 !important;
+}.rectangleGroup {
+  box-shadow: -10px -10px 20px #ffffff,
+    10px 10px 20px #c4c4c4 !important;
+}.frameParent28 {
+  gap: 32px !important;
+}.frameParent29 {
+  gap: 64px !important;
+}.frameParent30,
+.benefitsForHealthcareOrganiParent {
+  gap: 32px !important;
+}.frameParent33 {
+  box-shadow: -8px -8px 16px #ffffff,
+    8px 8px 16px #c4c4c4 !important;
+}.image21Parent .frameParent4 {
+  gap: 32px !important;
+}.frameParent34 {
+  gap: 48px !important;
+}.frameWrapper14 {
+  box-shadow: -8px -8px 16px #ffffff,
+    8px 8px 16px #c6c6c9 !important;
+}.frameWrapper7,
+.frameWrapper3,
+.frameWrapper10,
+.requestDemoWrapper,
+.frameWrapper2,
+.frameWrapper14 {
+  transition: box-shadow 180ms ease,
+    transform 180ms ease !important;
+}.frameParent16 > .frameChild8 {
+  width: 209.8px !important;
+  height: 50.2px !important;
+  min-height: 50.2px !important;
+  flex: 0 0 50.2px !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}.frameParent16 > .benefitsForRetail {
+  width: 638px !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  flex: 0 0 auto !important;
+  overflow: visible !important;
+}.frameParent16 > .neurolxpEnablesSmarter2 {
+  width: 638px !important;
+  height: auto !important;
+  min-height: 120px !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  flex: 0 0 auto !important;
+  overflow: visible !important;
+}.frameParent16 > .neurolxpEnablesSmarter2 br {
+  display: none !important;
+}.frameParent27 {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: flex-start !important;
+  gap: 28px !important;
+}.frameParent27 > .frameChild16 {
+  width: 281.6px !important;
+  height: 50.2px !important;
+  min-height: 50.2px !important;
+  flex: 0 0 50.2px !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}.frameParent27 > .smarterHealthcareLearning {
+  width: 466px !important;
+  height: auto !important;
+  min-height: 120px !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  flex: 0 0 auto !important;
+  overflow: visible !important;
+}.frameParent27 > .healthcareOrganizationsNeed {
+  width: 492px !important;
+  height: auto !important;
+  min-height: 160px !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  flex: 0 0 auto !important;
+  overflow: visible !important;
+}.frameParent27 > .healthcareOrganizationsNeed br {
+  display: none !important;
+}.retailLearningCard {
+  cursor: pointer !important;
+  transition: height 280ms ease,
+    min-height 280ms ease,
+    box-shadow 180ms ease,
+    transform 180ms ease !important;
+}.retailLearningCard:hover:not(.isOpen) {
+  transform: translateY(-3px) !important;
+  box-shadow: -12px -12px 22px rgba(255, 255, 255, 0.95),
+    12px 12px 22px rgba(196, 196, 196, 0.9) !important;
+}.retailLearningCard.isOpen,
+.retailLearningCard.isOpen:hover {
+  transform: none !important;
+}.frameParent2,
+.frameItem,
+.smilingYoungFemaleDoctorWeParent,
+.rectangleParent,
+.rectangleGroup,
+.frameParent33,
+.image21Parent {
+  transition: none !important;
+}.frameParent2:hover,
+.frameItem:hover,
+.smilingYoungFemaleDoctorWeParent:hover,
+.rectangleParent:hover,
+.rectangleGroup:hover,
+.frameParent33:hover,
+.image21Parent:hover {
+  transform: none !important;
+}.frameParent2:hover,
+.frameItem:hover,
+.smilingYoungFemaleDoctorWeParent:hover,
+.rectangleParent:hover,
+.rectangleGroup:hover,
+.frameParent33:hover,
+.image21Parent:hover {
+  filter: none !important;
+}.frameParent2::before,
+.frameParent2::after,
+.smilingYoungFemaleDoctorWeParent::before,
+.smilingYoungFemaleDoctorWeParent::after,
+.rectangleParent::before,
+.rectangleParent::after,
+.rectangleGroup::before,
+.rectangleGroup::after,
+.frameParent33::before,
+.frameParent33::after,
+.image21Parent::before,
+.image21Parent::after {
+  transition: none !important;
+}.frameWrapper3,
+.frameWrapper10,
+.retailBenefitIcon,
+.frameParent31 > .frameParent32,
+.frameParent31 > .vectorParent {
+  transition: box-shadow 180ms ease,
+    transform 180ms ease !important;
+}.frameWrapper3:hover,
+.frameWrapper10:hover,
+.retailBenefitIcon:hover,
+.frameParent31 > .frameParent32:hover,
+.frameParent31 > .vectorParent:hover {
+  transform: translateY(-2px) !important;
+}
+@media screen and (max-width: 768px) {html,
+  body {
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  overflow-x: hidden;
+}.retailAndHealthCare,
+  .retailHealthcare {
+  width: 100% !important;
+  max-width: 100% !important;
+  height: auto !important;
+  min-height: 0 !important;
+  position: relative !important;
+  inset: auto !important;
+  overflow: visible !important;
+}.retailHealthcare {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: stretch !important;
+  gap: 48px !important;
+  padding: 20px 16px 48px !important;
+  box-sizing: border-box !important;
+}.retailHealthcare > .frameDiv,
+  .retailHealthcare > .frameParent2,
+  .retailHealthcare > .retailHealthcareInner,
+  .retailHealthcare > .frameParent8,
+  .retailHealthcare > .rectangleParent,
+  .retailHealthcare > .frameParent15,
+  .retailHealthcare > .frameParent23,
+  .retailHealthcare > .rectangleGroup,
+  .retailHealthcare > .frameParent29,
+  .retailHealthcare > .frameParent33 {
+  position: relative !important;
+  inset: auto !important;
+  top: auto !important;
+  right: auto !important;
+  bottom: auto !important;
+  left: auto !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  height: auto !important;
+  min-height: 0 !important;
+  margin: 0 !important;
+  transform: none !important;
+  flex: 0 0 auto !important;
+  overflow: visible !important;
+  box-sizing: border-box !important;
+}.frameDiv {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  justify-content: center !important;
+  align-items: center !important;
+  gap: 8px !important;
+  text-align: center !important;
+  font-size: 14px !important;
+  line-height: 22px !important;
+}.retailHealthcare2 {
+  width: auto !important;
+  height: auto !important;
+  white-space: normal !important;
+  font-size: 10px;
+}.industriesWeServe {
+  font-size: 10px;
+}.arrowDown01Icon {
+  width: 14px;
+  height: 14px;
+}.frameParent2 {
+  padding: 12px !important;
+  border-radius: 24px !important;
+  background: #dfe6e9 !important;
+  box-shadow: -8px -8px 16px #fff, 8px 8px 16px #c4c4c4 !important;
+}.frameParent2 > .frameItem,
+  .frameChild2,
+  .rectangle,
+  .image20,
+  .image21,
+  .groupYoungBusinesspeopleUsi,
+  .image203 {
+  display: none !important;
+}.smilingYoungFemaleDoctorWeParent {
+  position: relative !important;
+  inset: auto !important;
+  width: 100% !important;
+  height: auto !important;
+  min-height: 0 !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  gap: 24px !important;
+  padding: 20px !important;
+  box-sizing: border-box !important;
+  overflow: hidden !important;
+}.frameParent3,
+  .frameWrapper,
+  .frameParent4,
+  .frameParent5 {
+  position: relative !important;
+  inset: auto !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  height: auto !important;
+  min-height: 0 !important;
+  box-sizing: border-box !important;
+}.frameParent3 {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  gap: 24px !important;
+  order: 1 !important;
+  text-align: center !important;
+}.frameParent4,
+  .frameParent5 {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  gap: 12px !important;
+}.frameInner,
+  .frameChild3,
+  .frameChild7,
+  .frameChild8,
+  .frameChild16,
+  .frameChild18,
+  .frameChild32 {
+  width: auto !important;
+  max-width: 100% !important;
+  height: 44px !important;
+  object-fit: contain !important;
+}.scalableLearningForContainer,
+  .empoweringSmarterRetail,
+  .empoweringSmarterRetail2,
+  .benefitsForRetail,
+  .smarterHealthcareLearning,
+  .empoweringHealthcareOrganiza,
+  .benefitsForHealthcare,
+  .poweringLearningFor {
+  width: 100% !important;
+  max-width: 100% !important;
+  height: auto !important;
+  min-height: 0 !important;
+  margin: 0 !important;
+  font-size: 32px !important;
+  line-height: 40px !important;
+  font-weight: 700 !important;
+  text-align: center !important;
+  white-space: normal !important;
+  overflow-wrap: anywhere !important;
+  word-break: normal !important;
+}.retailTeamsNeed,
+  .neurolxpEnablesSmarter,
+  .neurolxpEnablesFaster,
+  .neurolxpEnablesSmarter2,
+  .healthcareOrganizationsNeed,
+  .healthcareOrganizationsNeed2,
+  .neurolxpHelpsRetail {
+  width: 100% !important;
+  max-width: 100% !important;
+  height: auto !important;
+  min-height: 0 !important;
+  margin: 0 !important;
+  font-size: 16px !important;
+  line-height: 24px !important;
+  font-weight: 400 !important;
+  text-align: center !important;
+  white-space: normal !important;
+  overflow-wrap: anywhere !important;
+}.scalableLearningForContainer br,
+  .retailTeamsNeed br,
+  .empoweringSmarterRetail2 br,
+  .neurolxpEnablesFaster br,
+  .benefitsForRetail br,
+  .neurolxpEnablesSmarter2 br,
+  .smarterHealthcareLearning br,
+  .healthcareOrganizationsNeed br,
+  .empoweringHealthcareOrganiza br,
+  .benefitsForHealthcare br,
+  .healthcareOrganizationsNeed2 br,
+  .poweringLearningFor br,
+  .neurolxpHelpsRetail br {
+  display: none !important;
+}.frameParent6 {
+  width: 100% !important;
+  height: auto !important;
+  display: flex !important;
+  flex-wrap: wrap !important;
+  justify-content: center !important;
+  gap: 16px !important;
+}.frameParent6 > .requestDemoWrapper,
+  .frameParent6 > .frameWrapper2 {
+  position: relative !important;
+  inset: auto !important;
+  width: calc(50% - 8px) !important;
+  min-width: 0 !important;
+  height: 52px !important;
+  flex: 1 1 calc(50% - 8px) !important;
+}.smilingYoungFemaleDoctorWeIcon,
+  .twoFemaleDesignersWork1Icon,
+  .maleDoctorNursesCommunicatiIcon {
+  position: relative !important;
+  inset: auto !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  height: auto !important;
+  max-height: 360px !important;
+  object-fit: contain !important;
+  display: block !important;
+  margin: 0 auto !important;
+}.smilingYoungFemaleDoctorWeIcon {
+  order: 2 !important;
+}.retailHealthcareInner {
+  padding: 16px !important;
+  border-radius: 24px !important;
+}.frameParent7 {
+  position: relative !important;
+  inset: auto !important;
+  width: 100% !important;
+  display: grid !important;
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  gap: 16px !important;
+}.frameWrapper3 {
+  width: 100% !important;
+  height: 110px !important;
+}.kParent,
+  .group {
+  top: 50% !important;
+  left: 50% !important;
+  width: 100% !important;
+  transform: translate(-50%, -50%) !important;
+}.retailLocations,
+  .healthcareFacilities,
+  .trainedEmployees,
+  .averageRating {
+  width: 100% !important;
+  height: auto !important;
+  font-size: 16px !important;
+  line-height: 24px !important;
+}.starIcon {
+  display: none !important;
+}.frameParent8,
+  .frameParent9,
+  .empoweringSmarterRetailLearParent,
+  .frameParent10,
+  .frameParent15,
+  .frameParent16,
+  .frameParent17,
+  .frameParent23,
+  .frameParent24,
+  .frameParent26,
+  .frameParent27,
+  .frameParent29,
+  .frameParent30,
+  .benefitsForHealthcareOrganiParent,
+  .frameParent31 {
+  width: 100% !important;
+  max-width: 100% !important;
+  height: auto !important;
+  min-height: 0 !important;
+  position: relative !important;
+  inset: auto !important;
+  box-sizing: border-box !important;
+}.frameParent8,
+  .frameParent9,
+  .empoweringSmarterRetailLearParent,
+  .frameParent15,
+  .frameParent16,
+  .frameParent23,
+  .frameParent24,
+  .frameParent27,
+  .frameParent29,
+  .frameParent30,
+  .benefitsForHealthcareOrganiParent {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  text-align: center !important;
+}.frameParent8,
+  .frameParent15,
+  .frameParent23,
+  .frameParent29 {
+  gap: 24px !important;
+}.frameParent9,
+  .empoweringSmarterRetailLearParent,
+  .frameParent16,
+  .frameParent27,
+  .frameParent30,
+  .benefitsForHealthcareOrganiParent {
+  gap: 12px !important;
+}.frameParent10,
+  .frameParent24,
+  .frameParent26,
+  .frameParent31 {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: stretch !important;
+  gap: 16px !important;
+}.frameWrapper7,
+  .frameWrapper10,
+  .frameParent32,
+  .vectorParent {
+  position: relative !important;
+  inset: auto !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  flex: 0 0 auto !important;
+  box-sizing: border-box !important;
+}.frameWrapper7 {
+  height: 228px !important;
+  min-height: 228px !important;
+}.retailLearningCard.isOpen {
+  height: 320px !important;
+  min-height: 320px !important;
+}.rectangleParent,
+  .rectangleGroup {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  gap: 24px !important;
+  padding: 20px !important;
+  border-radius: 32px !important;
+  overflow: hidden !important;
+}.frameParent14,
+  .frameParent28 {
+  position: relative !important;
+  inset: auto !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  height: auto !important;
+  min-height: 0 !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  gap: 12px !important;
+  text-align: center !important;
+  order: 1 !important;
+}.twoFemaleDesignersWork1Icon,
+  .maleDoctorNursesCommunicatiIcon {
+  order: 2 !important;
+}.frameParent17 {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: stretch !important;
+  gap: 16px !important;
+}.frameParent18,
+  .frameParent19 {
+  width: 100% !important;
+  height: auto !important;
+  min-height: 70px !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: 12px !important;
+}.consistentTraining,
+  .betterCustomerExperience,
+  .quickOnboarding,
+  .continuousDevelopment,
+  .performanceTracking {
+  width: calc(100% - 82px) !important;
+  height: auto !important;
+  font-size: 18px !important;
+  line-height: 26px !important;
+  text-align: left !important;
+  white-space: normal !important;
+}.frameParent23 {
+  flex-direction: column !important;
+}.frameParent27 {
+  order: 1 !important;
+}.frameParent24 {
+  order: 2 !important;
+}.frameWrapper10 {
+  height: 280px !important;
+}.largeHealthcareTeamsParent {
+  top: 16px !important;
+  right: 16px !important;
+  bottom: 16px !important;
+  left: 16px !important;
+  width: auto !important;
+  height: auto !important;
+}.frameParent32,
+  .vectorParent {
+  height: 150px !important;
+}.frameChild19,
+  .rectangleIcon {
+  width: 100% !important;
+  height: 150px !important;
+}.complianceTraining,
+  .professionalDevelopment,
+  .betterPatientCare,
+  .certificationTracking,
+  .scalableProgrammes {
+  left: 50% !important;
+  width: 70% !important;
+  height: auto !important;
+  transform: translateX(-50%) !important;
+  font-size: 18px !important;
+  line-height: 26px !important;
+  text-align: left !important;
+}.polygonIcon,
+  .healthArrow {
+  left: 0 !important;
+}.frameParent33 {
+  padding: 16px !important;
+  overflow: hidden !important;
+}.image21Parent {
+  position: relative !important;
+  inset: auto !important;
+  width: 100% !important;
+  height: auto !important;
+  min-height: 0 !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: stretch !important;
+  overflow: hidden !important;
+}.image21Parent::before {
+  display: none !important;
+}.image21Parent .frameParent34 {
+  position: relative !important;
+  inset: auto !important;
+  width: 100% !important;
+  height: auto !important;
+  min-height: 0 !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  gap: 24px !important;
+  padding: 20px !important;
+  box-sizing: border-box !important;
+  text-align: center !important;
+  order: 1 !important;
+}.frameParent36 {
+  width: 100% !important;
+  height: auto !important;
+  min-height: 0 !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  gap: 12px !important;
+}.retailFinalVideo {
+  position: relative !important;
+  inset: auto !important;
+  width: 100% !important;
+  height: 240px !important;
+  object-fit: cover !important;
+  order: 2 !important;
+}.frameWrapper14 {
+  width: 160px !important;
+  height: 52px !important;
+}.productKnowledge2,
+  .distributedStores2,
+  .talentRetention2 {
+  display: none !important;
+}
+}
+@media screen and (max-width: 425px) {.retailHealthcare {
+  padding: 16px 12px 40px !important;
+  gap: 40px !important;
+}.frameParent6 > .requestDemoWrapper,
+  .frameParent6 > .frameWrapper2 {
+  width: 100% !important;
+  flex-basis: 100% !important;
+}.frameParent7 {
+  grid-template-columns: 1fr !important;
+}.frameWrapper3 {
+  height: 100px !important;
+}.frameWrapper7 {
+  border-radius: 32px !important;
+}.retailFinalVideo {
+  height: 220px !important;
+}
+}
+@media screen and (max-width: 768px) {.rectangleGroup {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: flex-start !important;
+  gap: 24px !important;
+  padding: 20px !important;
+  height: auto !important;
+  min-height: 0 !important;
+  overflow: hidden !important;
+}.rectangleGroup > .frameParent28 {
+  position: relative !important;
+  inset: auto !important;
+  top: auto !important;
+  left: auto !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  height: auto !important;
+  min-height: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  order: 1 !important;
+  z-index: 2 !important;
+  background: transparent !important;
+  text-align: center !important;
+}.rectangleGroup > .maleDoctorNursesCommunicatiIcon {
+  position: relative !important;
+  inset: auto !important;
+  top: auto !important;
+  right: auto !important;
+  bottom: auto !important;
+  left: auto !important;
+  width: 100% !important;
+  max-width: 320px !important;
+  height: auto !important;
+  max-height: 300px !important;
+  margin: 0 auto !important;
+  order: 2 !important;
+  object-fit: contain !important;
+  z-index: 1 !important;
+}.frameParent28 .frameChild7 {
+  margin: 0 auto !important;
+}.frameParent28 .empoweringHealthcareOrganiza,
+  .frameParent28 .neurolxpEnablesFaster {
+  position: relative !important;
+  inset: auto !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  height: auto !important;
+  min-height: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  text-align: center !important;
+  white-space: normal !important;
+  overflow-wrap: break-word !important;
+}.frameParent29 {
+  padding: 0 4px !important;
+}.frameParent31 {
+  width: 100% !important;
+  max-width: 100% !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  gap: 16px !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}.frameParent31 > .frameParent32,
+  .frameParent31 > .vectorParent {
+  position: relative !important;
+  inset: auto !important;
+  top: auto !important;
+  left: auto !important;
+  width: calc(100% - 24px) !important;
+  max-width: 320px !important;
+  height: 132px !important;
+  min-height: 132px !important;
+  margin: 0 auto !important;
+  flex: 0 0 132px !important;
+}.frameParent31 .frameChild19,
+  .frameParent31 .rectangleIcon {
+  position: absolute !important;
+  inset: 0 !important;
+  width: 100% !important;
+  height: 132px !important;
+  object-fit: fill !important;
+}.frameParent31 .polygonIcon,
+  .frameParent31 .healthArrow {
+  position: absolute !important;
+  top: 50% !important;
+  left: 0 !important;
+  transform: translateY(-50%) !important;
+}.frameParent31 .complianceTraining,
+  .frameParent31 .professionalDevelopment,
+  .frameParent31 .betterPatientCare,
+  .frameParent31 .certificationTracking,
+  .frameParent31 .scalableProgrammes {
+  position: absolute !important;
+  top: 50% !important;
+  left: 50% !important;
+  width: 70% !important;
+  height: auto !important;
+  margin: 0 !important;
+  transform: translate(-42%, -50%) !important;
+  font-size: 18px !important;
+  line-height: 26px !important;
+  text-align: left !important;
+  white-space: normal !important;
+}.frameParent33 {
+  padding: 12px !important;
+  overflow: hidden !important;
+}.image21Parent {
+  width: 100% !important;
+  max-width: 100% !important;
+  height: auto !important;
+  min-height: 0 !important;
+  overflow: hidden !important;
+}.image21Parent .frameParent34 {
+  position: relative !important;
+  inset: auto !important;
+  top: auto !important;
+  left: auto !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  height: auto !important;
+  min-height: 0 !important;
+  margin: 0 !important;
+  padding: 20px 16px !important;
+  box-sizing: border-box !important;
+  align-items: center !important;
+  text-align: center !important;
+  overflow: visible !important;
+}.image21Parent .frameParent4,
+  .image21Parent .frameParent36 {
+  width: 100% !important;
+  max-width: 100% !important;
+  height: auto !important;
+  min-height: 0 !important;
+  align-items: center !important;
+  text-align: center !important;
+  overflow: visible !important;
+}.image21Parent .poweringLearningFor {
+  position: relative !important;
+  inset: auto !important;
+  top: auto !important;
+  left: auto !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  height: auto !important;
+  min-height: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  display: block !important;
+  font-size: 32px !important;
+  line-height: 40px !important;
+  text-align: center !important;
+  white-space: normal !important;
+  overflow: visible !important;
+  overflow-wrap: break-word !important;
+  word-break: normal !important;
+}.image21Parent .neurolxpHelpsRetail {
+  width: 100% !important;
+  max-width: 100% !important;
+  height: auto !important;
+  min-height: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  text-align: center !important;
+  white-space: normal !important;
+  overflow-wrap: break-word !important;
+}.image21Parent .retailFinalVideo {
+  width: 100% !important;
+  height: 220px !important;
+  min-height: 220px !important;
+  margin: 0 !important;
+  object-fit: cover !important;
+  object-position: center !important;
+}.frameParent23,
+  .rectangleGroup,
+  .frameParent29,
+  .frameParent33 {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+}
+@media screen and (max-width: 425px) {.rectangleGroup {
+  padding: 16px !important;
+  gap: 20px !important;
+}.rectangleGroup > .maleDoctorNursesCommunicatiIcon {
+  max-width: 100% !important;
+  max-height: 260px !important;
+}.frameParent31 > .frameParent32,
+  .frameParent31 > .vectorParent {
+  width: calc(100% - 8px) !important;
+  height: 124px !important;
+  min-height: 124px !important;
+  flex-basis: 124px !important;
+}.frameParent31 .frameChild19,
+  .frameParent31 .rectangleIcon {
+  height: 124px !important;
+}.image21Parent .frameParent34 {
+  padding: 20px 12px !important;
+}.image21Parent .poweringLearningFor {
+  font-size: 28px !important;
+  line-height: 36px !important;
+}.image21Parent .retailFinalVideo {
+  height: 220px !important;
+}
+}
+@media screen and (max-width: 768px) {.frameParent29 {
+  align-items: center !important;
+  text-align: center !important;
+  overflow: visible !important;
+}.frameParent30,
+  .benefitsForHealthcareOrganiParent {
+  align-items: center !important;
+  text-align: center !important;
+  overflow: visible !important;
+}.frameParent31 {
+  width: 100% !important;
+  max-width: 100% !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: flex-start !important;
+  gap: 16px !important;
+  margin: 0 auto !important;
+  padding: 0 !important;
+  overflow: visible !important;
+}.frameParent31 > .frameParent32,
+  .frameParent31 > .vectorParent {
+  position: relative !important;
+  inset: auto !important;
+  top: auto !important;
+  right: auto !important;
+  bottom: auto !important;
+  left: auto !important;
+  width: min(100%, 320px) !important;
+  max-width: 320px !important;
+  height: 132px !important;
+  min-height: 132px !important;
+  flex: 0 0 132px !important;
+  margin: 0 auto !important;
+  padding: 0 !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  overflow: visible !important;
+  box-sizing: border-box !important;
+}.frameParent31 .frameChild19,
+  .frameParent31 .rectangleIcon {
+  position: absolute !important;
+  inset: 0 !important;
+  width: 100% !important;
+  height: 132px !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  object-fit: fill !important;
+  z-index: 0 !important;
+}.frameParent31 .polygonIcon,
+  .frameParent31 .healthArrow {
+  position: absolute !important;
+  top: 50% !important;
+  left: 0 !important;
+  width: 25px !important;
+  height: 25px !important;
+  margin: 0 !important;
+  transform: translateY(-50%) !important;
+  z-index: 2 !important;
+}.frameParent31 .complianceTraining,
+  .frameParent31 .professionalDevelopment,
+  .frameParent31 .betterPatientCare,
+  .frameParent31 .certificationTracking,
+  .frameParent31 .scalableProgrammes {
+  position: relative !important;
+  inset: auto !important;
+  top: auto !important;
+  left: auto !important;
+  width: calc(100% - 80px) !important;
+  max-width: 220px !important;
+  height: auto !important;
+  min-height: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  display: block !important;
+  transform: none !important;
+  font-size: 18px !important;
+  line-height: 26px !important;
+  font-weight: 600 !important;
+  text-align: center !important;
+  white-space: normal !important;
+  overflow-wrap: break-word !important;
+  z-index: 3 !important;
+}.benefitsForHealthcare,
+  .healthcareOrganizationsNeed2 {
+  margin: 0 auto !important;
+  text-align: center !important;
+}
+}
+@media screen and (max-width: 425px) {.frameParent31 {
+  gap: 16px !important;
+}.frameParent31 > .frameParent32,
+  .frameParent31 > .vectorParent {
+  width: calc(100% - 8px) !important;
+  max-width: 320px !important;
+  height: 124px !important;
+  min-height: 124px !important;
+  flex-basis: 124px !important;
+}.frameParent31 .frameChild19,
+  .frameParent31 .rectangleIcon {
+  height: 124px !important;
+}.frameParent31 .complianceTraining,
+  .frameParent31 .professionalDevelopment,
+  .frameParent31 .betterPatientCare,
+  .frameParent31 .certificationTracking,
+  .frameParent31 .scalableProgrammes {
+  width: calc(100% - 72px) !important;
+  max-width: 210px !important;
+  font-size: 18px !important;
+  line-height: 26px !important;
+  text-align: center !important;
+}
+}
+@media screen and (max-width: 768px) {.smilingYoungFemaleDoctorWeParent {
+  padding-left: 16px !important;
+  padding-right: 16px !important;
+  box-sizing: border-box !important;
+}.frameParent3,
+  .frameWrapper,
+  .frameParent4,
+  .frameParent5 {
+  width: 100% !important;
+  max-width: 100% !important;
+  height: auto !important;
+  min-height: 0 !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  box-sizing: border-box !important;
+}.frameParent3,
+  .frameParent4,
+  .frameParent5 {
+  align-items: center !important;
+  text-align: center !important;
+}.frameParent5 {
+  position: relative !important;
+  padding-top: 50px !important;
+  overflow: visible !important;
+}.frameParent5 > .frameInner {
+  display: none !important;
+}.frameParent5::before {
+  content: "Retail & Healthcare Solutions" !important;
+  position: absolute !important;
+  top: 0 !important;
+  left: 50% !important;
+  right: auto !important;
+  width: calc(100% - 16px) !important;
+  max-width: 330px !important;
+  min-width: 0 !important;
+  height: 48px !important;
+  margin: 0 !important;
+  padding: 0 14px !important;
+  box-sizing: border-box !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  transform: translateX(-50%) !important;
+  border-radius: 28px !important;
+  background: #dfe6e9 !important;
+  box-shadow: inset -4px -4px 8px #ffffff,
+      inset 4px 4px 8px rgba(196, 196, 196, 0.8) !important;
+  color: #2d4cc8 !important;
+  font-family: "Segoe UI" !important;
+  font-size: 18px !important;
+  font-weight: 600 !important;
+  line-height: 24px !important;
+  letter-spacing: 0.01em !important;
+  text-align: center !important;
+  white-space: nowrap !important;
+  overflow: hidden !important;
+  text-overflow: clip !important;
+  z-index: 10 !important;
+}.scalableLearningForContainer,
+  .empoweringSmarterRetail,
+  .empoweringSmarterRetail2,
+  .benefitsForRetail,
+  .smarterHealthcareLearning,
+  .empoweringHealthcareOrganiza,
+  .benefitsForHealthcare,
+  .poweringLearningFor {
+  position: relative !important;
+  top: auto !important;
+  right: auto !important;
+  bottom: auto !important;
+  left: auto !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  height: auto !important;
+  min-height: 0 !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  padding-left: 8px !important;
+  padding-right: 8px !important;
+  box-sizing: border-box !important;
+  display: block !important;
+  text-align: center !important;
+  white-space: normal !important;
+  overflow: visible !important;
+  overflow-wrap: break-word !important;
+  word-break: normal !important;
+}.retailTeamsNeed,
+  .neurolxpEnablesSmarter,
+  .neurolxpEnablesFaster,
+  .neurolxpEnablesSmarter2,
+  .healthcareOrganizationsNeed,
+  .healthcareOrganizationsNeed2,
+  .neurolxpHelpsRetail {
+  width: 100% !important;
+  max-width: 100% !important;
+  height: auto !important;
+  min-height: 0 !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  padding-left: 8px !important;
+  padding-right: 8px !important;
+  box-sizing: border-box !important;
+  text-align: center !important;
+  white-space: normal !important;
+  overflow-wrap: break-word !important;
+}.frameChild3,
+  .frameChild7,
+  .frameChild8,
+  .frameChild16,
+  .frameChild18,
+  .frameChild32 {
+  position: relative !important;
+  top: auto !important;
+  right: auto !important;
+  bottom: auto !important;
+  left: auto !important;
+  width: auto !important;
+  max-width: calc(100% - 24px) !important;
+  height: 48px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  display: block !important;
+  object-fit: contain !important;
+  object-position: center !important;
+}
+}
+@media screen and (max-width: 425px) {.frameParent5::before {
+  width: calc(100% - 8px) !important;
+  max-width: 320px !important;
+  padding-left: 10px !important;
+  padding-right: 10px !important;
+  font-size: 17px !important;
+  line-height: 22px !important;
+  letter-spacing: 0 !important;
+}.scalableLearningForContainer,
+  .empoweringSmarterRetail,
+  .empoweringSmarterRetail2,
+  .benefitsForRetail,
+  .smarterHealthcareLearning,
+  .empoweringHealthcareOrganiza,
+  .benefitsForHealthcare,
+  .poweringLearningFor {
+  padding-left: 4px !important;
+  padding-right: 4px !important;
+}
+}
+@media screen and (max-width: 768px) {.frameParent15 {
+  position: relative !important;
+  top: auto !important;
+  right: auto !important;
+  bottom: auto !important;
+  left: auto !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  height: auto !important;
+  min-height: 0 !important;
+  margin: 0 !important;
+  padding: 0 16px !important;
+  box-sizing: border-box !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: flex-start !important;
+  gap: 24px !important;
+  text-align: center !important;
+  overflow: visible !important;
+}.frameParent16 {
+  position: relative !important;
+  top: auto !important;
+  right: auto !important;
+  bottom: auto !important;
+  left: auto !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  height: auto !important;
+  min-height: 0 !important;
+  margin: 0 auto !important;
+  padding: 0 !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: flex-start !important;
+  gap: 12px !important;
+  text-align: center !important;
+  overflow: visible !important;
+}.frameParent16 > .frameChild8 {
+  position: relative !important;
+  top: auto !important;
+  right: auto !important;
+  bottom: auto !important;
+  left: auto !important;
+  width: auto !important;
+  max-width: calc(100% - 24px) !important;
+  height: 50px !important;
+  margin: 0 auto !important;
+  display: block !important;
+  object-fit: contain !important;
+  object-position: center !important;
+}.frameParent16 .benefitsForRetail {
+  position: relative !important;
+  top: auto !important;
+  right: auto !important;
+  bottom: auto !important;
+  left: auto !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  height: auto !important;
+  min-height: 0 !important;
+  margin: 0 auto !important;
+  padding: 0 8px !important;
+  box-sizing: border-box !important;
+  display: block !important;
+  font-size: 32px !important;
+  line-height: 40px !important;
+  font-weight: 700 !important;
+  text-align: center !important;
+  white-space: normal !important;
+  overflow: visible !important;
+  overflow-wrap: break-word !important;
+  word-break: normal !important;
+}.frameParent16 .neurolxpEnablesSmarter2 {
+  position: relative !important;
+  top: auto !important;
+  right: auto !important;
+  bottom: auto !important;
+  left: auto !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  height: auto !important;
+  min-height: 0 !important;
+  margin: 0 auto !important;
+  padding: 0 4px !important;
+  box-sizing: border-box !important;
+  display: block !important;
+  font-size: 16px !important;
+  line-height: 24px !important;
+  font-weight: 400 !important;
+  text-align: center !important;
+  white-space: normal !important;
+  overflow: visible !important;
+  overflow-wrap: break-word !important;
+}.frameParent17 {
+  position: relative !important;
+  top: auto !important;
+  right: auto !important;
+  bottom: auto !important;
+  left: auto !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  height: auto !important;
+  min-height: 0 !important;
+  margin: 0 auto !important;
+  padding: 0 !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: stretch !important;
+  justify-content: flex-start !important;
+  gap: 16px !important;
+  overflow: visible !important;
+}.frameParent17 .frameParent18,
+  .frameParent17 .frameParent19 {
+  position: relative !important;
+  top: auto !important;
+  right: auto !important;
+  bottom: auto !important;
+  left: auto !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  height: auto !important;
+  min-height: 70px !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: flex-start !important;
+  gap: 12px !important;
+  box-sizing: border-box !important;
+}.frameParent17 .frameChild9 {
+  width: 70px !important;
+  height: 70px !important;
+  min-width: 70px !important;
+  flex: 0 0 70px !important;
+  margin: 0 !important;
+}.frameParent17 .consistentTraining,
+  .frameParent17 .betterCustomerExperience,
+  .frameParent17 .quickOnboarding,
+  .frameParent17 .continuousDevelopment,
+  .frameParent17 .performanceTracking {
+  position: relative !important;
+  top: auto !important;
+  right: auto !important;
+  bottom: auto !important;
+  left: auto !important;
+  width: calc(100% - 82px) !important;
+  max-width: calc(100% - 82px) !important;
+  height: auto !important;
+  min-height: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  display: block !important;
+  font-size: 18px !important;
+  line-height: 26px !important;
+  font-weight: 600 !important;
+  text-align: left !important;
+  white-space: normal !important;
+  overflow-wrap: break-word !important;
+}
+}
+@media screen and (max-width: 425px) {.frameParent15 {
+  padding-left: 12px !important;
+  padding-right: 12px !important;
+  gap: 24px !important;
+}.frameParent16 {
+  gap: 12px !important;
+}.frameParent16 .benefitsForRetail {
+  font-size: 30px !important;
+  line-height: 38px !important;
+  padding-left: 2px !important;
+  padding-right: 2px !important;
+}.frameParent17 {
+  gap: 16px !important;
+}
+}
+@media screen and (max-width: 768px) {.frameParent14,
+  .frameParent16 {
+  position: relative !important;
+  width: 100% !important;
+  max-width: 100% !important;
+}.frameParent14::before,
+  .frameParent16::before {
+  left: 50% !important;
+  right: auto !important;
+  transform: translateX(-50%) !important;
+  margin: 0 !important;
+  text-align: center !important;
+}
+}
+@media screen and (max-width:480px){.frameParent22,
+  .frameParent23,
+  .frameParent24,
+  .frameParent25,
+  .frameParent26,
+  .frameParent27 {
+  width: 100% !important;
+  max-width: 100% !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  padding-left: 16px !important;
+  padding-right: 16px !important;
+  box-sizing: border-box !important;
+  text-align: center !important;
+}.frameParent23 {
+  margin-top: 24px !important;
+  margin-bottom: 32px !important;
+  gap: 24px !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+}.frameWrapper10,
+  .rectangleParent3,
+  .rectangleParent4 {
+  width: 100% !important;
+  max-width: 320px !important;
+  margin: 0 auto 24px !important;
+}.complianceAndCertification,
+  .continuousMedicalEducation,
+  .largeHealthcareTeams {
+  width: 99% !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  text-align: center !important;
+  line-height: 1.35 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}.frameChild14,
+  .frameChild15,
+  .youngBusinesswomanHerColleaIcon {
+  width: 88% !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  display: block !important;
+}.retailBenefits,
+  .retailExcellence,
+  .healthcareBenefits,
+  .healthcareLearning,
+  .neurolxp {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  text-align: center !important;
+  margin: 0 auto 20px !important;
+  left: 0 !important;
+  right: 0 !important;
+}.benefitsForRetailOrganizations,
+  .benefitsForHealthcareOrganizations,
+  .smarterHealthcareLearning,
+  .empoweringHealthcareOrganizations {
+  text-align: center !important;
+  margin: 0 auto 20px !important;
+}.frameParent23 + :global(footer),
+  :global(footer) {
+  margin-top: 48px !important;
+}
+}
+@media screen and (max-width: 480px) {.frameParent31 {
+  width: 100% !important;
+  max-width: 100% !important;
+  height: auto !important;
+  margin: 0 auto !important;
+  padding: 0 16px 56px !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  gap: 16px !important;
+  box-sizing: border-box !important;
+  overflow: visible !important;
+}.frameParent31 > .frameParent32,
+  .frameParent31 > .vectorParent {
+  position: relative !important;
+  inset: auto !important;
+  width: 100% !important;
+  max-width: 320px !important;
+  height: 120px !important;
+  min-height: 120px !important;
+  flex: 0 0 120px !important;
+  margin: 0 auto !important;
+  padding: 0 !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  overflow: visible !important;
+  box-sizing: border-box !important;
+}.frameParent31 .frameChild19,
+  .frameParent31 .rectangleIcon {
+  position: absolute !important;
+  inset: 0 !important;
+  width: 100% !important;
+  height: 120px !important;
+  margin: 0 !important;
+  object-fit: fill !important;
+}.frameParent31 .polygonIcon,
+  .frameParent31 .healthArrow {
+  position: absolute !important;
+  top: 50% !important;
+  left: 0 !important;
+  width: 24px !important;
+  height: 24px !important;
+  margin: 0 !important;
+  transform: translateY(-50%) !important;
+  z-index: 5 !important;
+}.frameParent31 .complianceTraining,
+  .frameParent31 .professionalDevelopment,
+  .frameParent31 .betterPatientCare,
+  .frameParent31 .certificationTracking,
+  .frameParent31 .scalableProgrammes {
+  position: absolute !important;
+  top: 50% !important;
+  left: 50% !important;
+  right: auto !important;
+  bottom: auto !important;
+  width: calc(100% - 80px) !important;
+  max-width: 210px !important;
+  height: auto !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  transform: translate(-50%, -50%) !important;
+  display: block !important;
+  font-size: 18px !important;
+  line-height: 26px !important;
+  font-weight: 600 !important;
+  text-align: center !important;
+  white-space: normal !important;
+  overflow-wrap: break-word !important;
+  z-index: 6 !important;
+}.frameParent33 {
+  position: relative !important;
+  inset: auto !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  height: auto !important;
+  margin: 0 auto !important;
+  padding: 12px !important;
+  box-sizing: border-box !important;
+}.image21Parent {
+  position: relative !important;
+  inset: auto !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  height: auto !important;
+  margin: 0 auto !important;
+  overflow: hidden !important;
+}.image21Parent .frameParent34,
+  .image21Parent .frameParent36 {
+  position: relative !important;
+  inset: auto !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  height: auto !important;
+  margin: 0 auto !important;
+  padding: 20px 12px !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  text-align: center !important;
+  box-sizing: border-box !important;
+}.image21Parent .frameChild32 {
+  position: relative !important;
+  inset: auto !important;
+  width: 170px !important;
+  max-width: 100% !important;
+  height: 50px !important;
+  margin: 0 auto 12px !important;
+  display: block !important;
+  transform: none !important;
+  object-fit: contain !important;
+  object-position: center !important;
+}.image21Parent .poweringLearningFor,
+  .image21Parent .neurolxpHelpsRetail {
+  position: relative !important;
+  inset: auto !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  height: auto !important;
+  margin: 0 auto !important;
+  padding: 0 4px !important;
+  text-align: center !important;
+  white-space: normal !important;
+  overflow: visible !important;
+  box-sizing: border-box !important;
+}.image21Parent .poweringLearningFor {
+  font-size: 30px !important;
+  line-height: 38px !important;
+}.image21Parent .neurolxpHelpsRetail {
+  font-size: 16px !important;
+  line-height: 24px !important;
+}
+}
+@media (min-width: 1025px) {.frameParent17 {
+  width: 429px !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: stretch !important;
+  gap: 22px !important;
+  text-align: left !important;
+}.frameParent17 .frameParent18,
+  .frameParent17 .frameParent19 {
+  width: 100% !important;
+  height: 70px !important;
+  min-height: 70px !important;
+  display: grid !important;
+  grid-template-columns: 70px 1fr !important;
+  align-items: center !important;
+  column-gap: 16px !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  box-sizing: border-box !important;
+}.frameParent17 .frameChild9 {
+  width: 70px !important;
+  height: 70px !important;
+  min-width: 70px !important;
+  margin: 0 !important;
+}.frameParent17 .consistentTraining,
+  .frameParent17 .betterCustomerExperience,
+  .frameParent17 .quickOnboarding,
+  .frameParent17 .continuousDevelopment,
+  .frameParent17 .performanceTracking {
+  width: 100% !important;
+  max-width: none !important;
+  height: auto !important;
+  min-height: 37px !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  display: flex !important;
+  align-items: center !important;
+  position: relative !important;
+  inset: auto !important;
+  font-size: 24px !important;
+  line-height: 36px !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.03em !important;
+  text-align: left !important;
+  white-space: nowrap !important;
+  overflow: visible !important;
+  box-sizing: border-box !important;
+}
+}
+@media screen and (min-width: 769px) {.image21Parent.retailVideoRevealSection {
+  position: absolute !important;
+  overflow: hidden !important;
+  isolation: isolate !important;
+}.retailHealthcare2 {
+  font-size: 14px;
+}.image21Parent.retailVideoRevealSection .retailFinalVideoSlide {
+  position: absolute !important;
+  inset: 0 !important;
+  width: 1216px !important;
+  height: 550px !important;
+  max-width: none !important;
+  object-fit: cover !important;
+  object-position: center center !important;
+  border-radius: 16px !important;
+  clip-path: inset(0 0 0 0);
+  z-index: 5 !important;
+  transition: clip-path 4s cubic-bezier(0.22, 1, 0.36, 1) !important;
+  will-change: clip-path;
+}.image21Parent.retailVideoRevealSection.isRevealActive
+    .retailFinalVideoSlide {
+  clip-path: inset(0 0 0 49.5%);
+}.image21Parent.retailVideoRevealSection .retailFinalVideoContent {
+  position: absolute !important;
+  top: 52px !important;
+  left: 50px !important;
+  width: 560px !important;
+  z-index: 4 !important;
+  opacity: 0;
+  transform: translateX(-90px);
+  pointer-events: none;
+  transition: transform 4s cubic-bezier(0.22, 1, 0.36, 1),
+      opacity 2.4s ease 0.45s !important;
+  will-change: transform, opacity;
+}.image21Parent.retailVideoRevealSection.isRevealActive
+    .retailFinalVideoContent {
+  opacity: 1;
+  transform: translateX(0);
+  pointer-events: auto;
+}.image21Parent.retailVideoRevealSection::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 3px;
+  z-index: 6;
+  opacity: 0;
+  pointer-events: none;
+  background: rgba(255, 255, 255, 0.78);
+  box-shadow: 0 0 12px rgba(255, 255, 255, 0.72),
+      0 0 24px rgba(255, 255, 255, 0.34);
+  transform: translateX(0);
+}.image21Parent.retailVideoRevealSection.isRevealActive::after {
+  animation: retailRevealEdge 4s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+  @keyframes retailRevealEdge {0% {
+  opacity: 0;
+  transform: translateX(0);
+}8% {
+  opacity: 0.85;
+}88% {
+  opacity: 0.65;
+}100% {
+  opacity: 0;
+  transform: translateX(602px);
+}
+  }
+}
+@media screen and (max-width: 768px) {.image21Parent.retailVideoRevealSection .retailFinalVideoSlide,
+  .image21Parent.retailVideoRevealSection.isRevealActive
+    .retailFinalVideoSlide {
+  clip-path: none !important;
+  transition: none !important;
+}.image21Parent.retailVideoRevealSection .retailFinalVideoContent,
+  .image21Parent.retailVideoRevealSection.isRevealActive
+    .retailFinalVideoContent {
+  opacity: 1 !important;
+  transform: none !important;
+  pointer-events: auto !important;
+  transition: none !important;
+}.image21Parent.retailVideoRevealSection::after {
+  display: none !important;
+}
+}
+@media (prefers-reduced-motion: reduce) {.image21Parent.retailVideoRevealSection .retailFinalVideoSlide {
+  clip-path: inset(0 0 0 49.5%) !important;
+  transition: none !important;
+}.image21Parent.retailVideoRevealSection .retailFinalVideoContent {
+  opacity: 1 !important;
+  transform: none !important;
+  transition: none !important;
+}.image21Parent.retailVideoRevealSection::after {
+  display: none !important;
+}
+}.retailAndHealthCare {
+  width: 100%;
+  height: auto;
+  min-height: 0;
+  position: relative;
+  background-color: #dfe6e9;
+  overflow-x: hidden;
+}.retailHealthcare {
+  position: relative;
+  top: auto;
+  left: auto;
+  width: 100%;
+  max-width: 1440px;
+  height: auto;
+  min-height: 5330px;
+  margin: 0 auto;
+  overflow: visible;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #dfe6e9;
+}.retailHealthcare > .frameDiv,
+.retailHealthcare > .frameParent2,
+.retailHealthcare > .retailHealthcareInner,
+.retailHealthcare > .frameParent8,
+.retailHealthcare > .rectangleParent,
+.retailHealthcare > .frameParent15,
+.retailHealthcare > .frameParent23,
+.retailHealthcare > .rectangleGroup,
+.retailHealthcare > .frameParent29,
+.retailHealthcare > .frameParent33 {
+  position: relative;
+  top: auto;
+  right: auto;
+  bottom: auto;
+  left: auto;
+  flex: 0 0 auto;
+  transform: none;
+}.retailHealthcare > .frameDiv {
+  width: 1280px;
+  height: 24px;
+  margin-top: 32px;
+}.retailHealthcare > .frameParent2 {
+  width: 1280px;
+  height: 609px;
+  margin-top: 32px;
+}.retailHealthcare > .retailHealthcareInner {
+  width: 1280px;
+  height: 120px;
+  margin-top: 50px;
+}.retailHealthcare > .frameParent8 {
+  width: 1280px;
+  height: 550px;
+  margin-top: 96px;
+}.retailHealthcare > .rectangleParent {
+  width: 1280px;
+  height: 526px;
+  margin-top: 96px;
+}.retailHealthcare > .frameParent15 {
+  width: 1280px;
+  height: 438px;
+  margin-top: 96px;
+}.retailHealthcare > .frameParent23 {
+  width: 1280px;
+  height: 690px;
+  margin-top: 64px;
+}.retailHealthcare > .rectangleGroup {
+  width: 1280px;
+  height: 526px;
+  margin-top: 96px;
+}.retailHealthcare > .frameParent29 {
+  width: 1280px;
+  height: 479px;
+  margin-top: 96px;
+}.retailHealthcare > .frameParent33 {
+  width: 1280px;
+  height: 614px;
+  margin-top: 96px;
+}.retailHealthcare > .frameDiv {
+  flex-wrap: wrap;
+  white-space: normal;
+  overflow: visible;
+}
+@media screen and (min-width: 769px) and (max-width: 1200px) {.retailAndHealthCare,
+  .retailHealthcare {
+  width: 100% !important;
+  max-width: 100% !important;
+  height: auto !important;
+  min-height: 0 !important;
+  overflow-x: hidden !important;
+}.retailHealthcare {
+  padding: 0 32px 72px !important;
+  box-sizing: border-box !important;
+  gap: 0 !important;
+}.retailHealthcare > .frameDiv,
+  .retailHealthcare > .frameParent2,
+  .retailHealthcare > .retailHealthcareInner,
+  .retailHealthcare > .frameParent8,
+  .retailHealthcare > .rectangleParent,
+  .retailHealthcare > .frameParent15,
+  .retailHealthcare > .frameParent23,
+  .retailHealthcare > .rectangleGroup,
+  .retailHealthcare > .frameParent29,
+  .retailHealthcare > .frameParent33 {
+  position: relative !important;
+  inset: auto !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  transform: none !important;
+  box-sizing: border-box !important;
+}.retailHealthcare > .frameDiv {
+  height: auto !important;
+  min-height: 24px !important;
+  margin-top: 24px !important;
+  font-size: 15px !important;
+}.retailHealthcare > .frameParent2 {
+  height: 560px !important;
+  margin-top: 28px !important;
+}.frameParent2 > .frameItem {
+  width: 100% !important;
+  height: 100% !important;
+  left: 0 !important;
+}.smilingYoungFemaleDoctorWeParent {
+  left: 24px !important;
+  right: 24px !important;
+  width: auto !important;
+  height: calc(100% - 48px) !important;
+}.smilingYoungFemaleDoctorWeIcon {
+  left: auto !important;
+  right: 0 !important;
+  width: 48% !important;
+  height: 100% !important;
+  object-fit: contain !important;
+  object-position: right bottom !important;
+}.frameParent3 {
+  top: 50% !important;
+  left: 36px !important;
+  width: 51% !important;
+  height: auto !important;
+  transform: translateY(-50%) !important;
+  gap: 32px !important;
+}.frameWrapper,
+  .frameParent4,
+  .frameParent5,
+  .neurolxpEnablesSmarter {
+  width: 100% !important;
+  height: auto !important;
+}.scalableLearningForContainer {
+  width: 100% !important;
+  height: auto !important;
+  font-size: 38px !important;
+  line-height: 48px !important;
+}.scalableLearningFor,
+  .serviceDriven {
+  line-height: 48px !important;
+}.neurolxpEnablesSmarter {
+  font-size: 20px !important;
+  line-height: 30px !important;
+}.retailHealthcare > .retailHealthcareInner {
+  height: auto !important;
+  min-height: 240px !important;
+  margin-top: 48px !important;
+  overflow: visible !important;
+}.retailHealthcareInner .frameParent7 {
+  position: relative !important;
+  inset: auto !important;
+  display: grid !important;
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  gap: 20px !important;
+  width: 100% !important;
+  padding: 0 !important;
+}.retailHealthcareInner .frameWrapper3 {
+  width: 100% !important;
+}.retailHealthcare > .frameParent8 {
+  height: auto !important;
+  margin-top: 72px !important;
+  gap: 48px !important;
+}.frameParent8 .frameParent9,
+  .frameParent8 .empoweringSmarterRetailLearParent {
+  width: 100% !important;
+  height: auto !important;
+}.empoweringSmarterRetail,
+  .retailTeamsNeed {
+  width: 100% !important;
+  height: auto !important;
+}.empoweringSmarterRetail {
+  font-size: 38px !important;
+  line-height: 48px !important;
+}.retailTeamsNeed {
+  font-size: 20px !important;
+  line-height: 30px !important;
+}.frameParent8 .frameParent10 {
+  display: grid !important;
+  grid-template-columns: repeat(2, minmax(0, 369px)) !important;
+  justify-content: center !important;
+  gap: 32px !important;
+  width: 100% !important;
+}.frameParent8 .frameWrapper7 {
+  width: 100% !important;
+}.retailHealthcare > .rectangleParent,
+  .retailHealthcare > .rectangleGroup {
+  height: 500px !important;
+  margin-top: 80px !important;
+}.rectangleParent .frameParent14,
+  .rectangleGroup .frameParent28 {
+  top: 56px !important;
+  left: 48px !important;
+  width: 50% !important;
+}.rectangleParent .twoFemaleDesignersWork1Icon,
+  .rectangleGroup .maleDoctorNursesCommunicatiIcon {
+  width: 48% !important;
+  height: 100% !important;
+  object-fit: contain !important;
+}.empoweringSmarterRetail2,
+  .empoweringHealthcareOrganiza,
+  .neurolxpEnablesFaster {
+  width: 100% !important;
+  height: auto !important;
+}.empoweringSmarterRetail2,
+  .empoweringHealthcareOrganiza {
+  font-size: 36px !important;
+  line-height: 46px !important;
+}.neurolxpEnablesFaster {
+  font-size: 19px !important;
+  line-height: 29px !important;
+}.retailHealthcare > .frameParent15 {
+  height: auto !important;
+  margin-top: 80px !important;
+  gap: 64px !important;
+  align-items: flex-start !important;
+}.frameParent15 .frameParent16 {
+  width: 52% !important;
+}.frameParent15 .frameParent17 {
+  width: 40% !important;
+}.benefitsForRetail,
+  .neurolxpEnablesSmarter2 {
+  height: auto !important;
+}.benefitsForRetail {
+  font-size: 36px !important;
+  line-height: 46px !important;
+}.neurolxpEnablesSmarter2 {
+  font-size: 19px !important;
+  line-height: 29px !important;
+}.retailHealthcare > .frameParent23 {
+  height: auto !important;
+  margin-top: 72px !important;
+  flex-direction: column-reverse !important;
+  gap: 48px !important;
+}.frameParent23 .frameParent24,
+  .frameParent23 .frameParent27 {
+  width: 100% !important;
+}.frameParent23 .frameParent24 {
+  display: grid !important;
+  grid-template-columns: repeat(2, 320px) !important;
+  justify-content: center !important;
+  gap: 32px !important;
+}.frameParent23 .frameParent26 {
+  display: contents !important;
+}.frameParent23 .frameParent27 {
+  align-items: center !important;
+  text-align: center !important;
+}.smarterHealthcareLearning,
+  .healthcareOrganizationsNeed {
+  width: 100% !important;
+  height: auto !important;
+}.smarterHealthcareLearning {
+  font-size: 36px !important;
+  line-height: 46px !important;
+}.healthcareOrganizationsNeed {
+  font-size: 19px !important;
+  line-height: 29px !important;
+}.retailHealthcare > .frameParent29 {
+  height: auto !important;
+  margin-top: 80px !important;
+  gap: 48px !important;
+}.frameParent29 .frameParent30,
+  .frameParent29 .benefitsForHealthcareOrganiParent {
+  height: auto !important;
+}.frameParent29 .frameParent31 {
+  display: grid !important;
+  grid-template-columns: repeat(3, minmax(0, 240px)) !important;
+  justify-content: center !important;
+  gap: 24px !important;
+  width: 100% !important;
+}.benefitsForHealthcare,
+  .healthcareOrganizationsNeed2 {
+  width: 100% !important;
+  height: auto !important;
+}.benefitsForHealthcare {
+  font-size: 36px !important;
+  line-height: 46px !important;
+}.healthcareOrganizationsNeed2 {
+  font-size: 19px !important;
+  line-height: 29px !important;
+}.retailHealthcare > .frameParent33 {
+  height: 560px !important;
+  margin-top: 80px !important;
+}.frameParent33 .image21Parent {
+  top: 24px !important;
+  left: 24px !important;
+  width: calc(100% - 48px) !important;
+  height: calc(100% - 48px) !important;
+}.image21Parent.retailVideoRevealSection .retailFinalVideoSlide {
+  width: 100% !important;
+  height: 100% !important;
+}.image21Parent.retailVideoRevealSection .retailFinalVideoContent {
+  left: 36px !important;
+  width: 48% !important;
+}.poweringLearningFor,
+  .neurolxpHelpsRetail {
+  width: 100% !important;
+  height: auto !important;
+}.poweringLearningFor {
+  font-size: 36px !important;
+  line-height: 46px !important;
+}.neurolxpHelpsRetail {
+  font-size: 19px !important;
+  line-height: 29px !important;
+}
+}
+@media screen and (max-width: 768px) {.retailHealthcare {
+  min-height: 0 !important;
+}.retailHealthcare > .frameDiv,
+  .retailHealthcare > .frameParent2,
+  .retailHealthcare > .retailHealthcareInner,
+  .retailHealthcare > .frameParent8,
+  .retailHealthcare > .rectangleParent,
+  .retailHealthcare > .frameParent15,
+  .retailHealthcare > .frameParent23,
+  .retailHealthcare > .rectangleGroup,
+  .retailHealthcare > .frameParent29,
+  .retailHealthcare > .frameParent33 {
+  position: relative !important;
+  inset: auto !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  height: auto !important;
+  min-height: 0 !important;
+  margin: 0 !important;
+  transform: none !important;
+  flex: 0 0 auto !important;
+}
+}
+@media screen and (min-width: 769px) and (max-width: 1200px) {.retailHealthcare > .rectangleGroup {
+  position: relative !important;
+  inset: auto !important;
+  width: 100% !important;
+  max-width: 1280px !important;
+  height: 500px !important;
+  margin: 80px auto 0 !important;
+  overflow: hidden !important;
+}.rectangleGroup > .frameParent28 {
+  position: absolute !important;
+  top: 56px !important;
+  left: 48px !important;
+  width: 48% !important;
+  height: auto !important;
+  gap: 24px !important;
+}.rectangleGroup > .maleDoctorNursesCommunicatiIcon {
+  position: absolute !important;
+  top: 0 !important;
+  right: 0 !important;
+  bottom: 0 !important;
+  left: auto !important;
+  width: 48% !important;
+  height: 100% !important;
+  object-fit: contain !important;
+  object-position: right bottom !important;
+}.rectangleGroup .empoweringHealthcareOrganiza,
+  .rectangleGroup .neurolxpEnablesFaster {
+  width: 100% !important;
+  height: auto !important;
+}.retailHealthcare > .frameParent29 {
+  position: relative !important;
+  inset: auto !important;
+  width: 100% !important;
+  max-width: 1280px !important;
+  height: auto !important;
+  margin: 80px auto 0 !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  gap: 40px !important;
+  text-align: center !important;
+}.frameParent29 .frameParent30,
+  .frameParent29 .benefitsForHealthcareOrganiParent {
+  width: 100% !important;
+  height: auto !important;
+  align-items: center !important;
+  text-align: center !important;
+}.frameParent29 .frameParent31 {
+  width: 100% !important;
+  display: grid !important;
+  grid-template-columns: repeat(3, minmax(0, 240px)) !important;
+  justify-content: center !important;
+  align-items: stretch !important;
+  gap: 24px !important;
+}.frameParent29 .frameParent32,
+  .frameParent29 .vectorParent {
+  width: 240px !important;
+  height: 166px !important;
+  position: relative !important;
+}.retailHealthcare > .frameParent33 {
+  position: relative !important;
+  inset: auto !important;
+  width: 100% !important;
+  max-width: 1280px !important;
+  height: 560px !important;
+  margin: 80px auto 0 !important;
+  overflow: hidden !important;
+}.frameParent33 > .image21Parent {
+  position: absolute !important;
+  top: 24px !important;
+  left: 24px !important;
+  width: calc(100% - 48px) !important;
+  height: calc(100% - 48px) !important;
+  overflow: hidden !important;
+}.image21Parent.retailVideoRevealSection .retailFinalVideoSlide {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+}.image21Parent.retailVideoRevealSection .retailFinalVideoContent {
+  position: absolute !important;
+  top: 50% !important;
+  left: 36px !important;
+  width: 48% !important;
+  height: auto !important;
+  transform: translateY(-50%) !important;
+}
+}
+@media screen and (max-width: 768px) {.retailHealthcare > .rectangleGroup {
+  position: relative !important;
+  inset: auto !important;
+  width: 100% !important;
+  height: auto !important;
+  min-height: 0 !important;
+  margin: 56px 0 0 !important;
+  padding: 24px 16px !important;
+  box-sizing: border-box !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  gap: 24px !important;
+  overflow: hidden !important;
+}.rectangleGroup > .frameParent28 {
+  position: relative !important;
+  inset: auto !important;
+  width: 100% !important;
+  height: auto !important;
+  order: 1 !important;
+  align-items: center !important;
+  text-align: center !important;
+  gap: 20px !important;
+}.rectangleGroup > .maleDoctorNursesCommunicatiIcon {
+  position: relative !important;
+  inset: auto !important;
+  width: min(100%, 360px) !important;
+  height: auto !important;
+  max-height: none !important;
+  order: 2 !important;
+  margin: 0 auto !important;
+  object-fit: contain !important;
+}.rectangleGroup .frameChild7 {
+  margin-inline: auto !important;
+}.rectangleGroup .empoweringHealthcareOrganiza {
+  width: 100% !important;
+  height: auto !important;
+  font-size: 30px !important;
+  line-height: 38px !important;
+  text-align: center !important;
+}.rectangleGroup .neurolxpEnablesFaster {
+  width: 100% !important;
+  height: auto !important;
+  font-size: 17px !important;
+  line-height: 27px !important;
+  text-align: center !important;
+}.retailHealthcare > .frameParent29 {
+  position: relative !important;
+  inset: auto !important;
+  width: 100% !important;
+  height: auto !important;
+  margin: 56px 0 0 !important;
+  padding: 0 !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  gap: 32px !important;
+  text-align: center !important;
+  overflow: visible !important;
+}.frameParent29 .frameParent30,
+  .frameParent29 .benefitsForHealthcareOrganiParent {
+  width: 100% !important;
+  height: auto !important;
+  align-items: center !important;
+  text-align: center !important;
+}.frameParent29 .benefitsForHealthcare,
+  .frameParent29 .healthcareOrganizationsNeed2 {
+  width: 100% !important;
+  height: auto !important;
+}.frameParent29 .benefitsForHealthcare {
+  font-size: 30px !important;
+  line-height: 38px !important;
+}.frameParent29 .healthcareOrganizationsNeed2 {
+  font-size: 17px !important;
+  line-height: 27px !important;
+}.frameParent29 .frameParent31 {
+  width: 100% !important;
+  display: grid !important;
+  grid-template-columns: 1fr !important;
+  justify-items: center !important;
+  gap: 16px !important;
+}.frameParent29 .frameParent32,
+  .frameParent29 .vectorParent {
+  position: relative !important;
+  inset: auto !important;
+  width: min(100%, 320px) !important;
+  height: 132px !important;
+  min-height: 132px !important;
+  margin: 0 auto !important;
+}.frameParent29 .frameChild19,
+  .frameParent29 .rectangleIcon {
+  position: absolute !important;
+  inset: 0 !important;
+  width: 100% !important;
+  height: 132px !important;
+}.retailHealthcare > .frameParent33 {
+  position: relative !important;
+  inset: auto !important;
+  width: 100% !important;
+  height: auto !important;
+  min-height: 0 !important;
+  margin: 56px 0 0 !important;
+  padding: 12px !important;
+  box-sizing: border-box !important;
+  overflow: hidden !important;
+}.frameParent33 > .image21Parent {
+  position: relative !important;
+  inset: auto !important;
+  width: 100% !important;
+  height: auto !important;
+  min-height: 0 !important;
+  margin: 0 !important;
+  display: flex !important;
+  flex-direction: column !important;
+  overflow: hidden !important;
+}.image21Parent.retailVideoRevealSection .retailFinalVideoSlide {
+  position: relative !important;
+  inset: auto !important;
+  width: 100% !important;
+  height: 240px !important;
+  min-height: 240px !important;
+  object-fit: cover !important;
+  order: 2 !important;
+}.image21Parent.retailVideoRevealSection .retailFinalVideoContent {
+  position: relative !important;
+  inset: auto !important;
+  width: 100% !important;
+  height: auto !important;
+  transform: none !important;
+  order: 1 !important;
+  padding: 24px 16px !important;
+  box-sizing: border-box !important;
+  align-items: center !important;
+  text-align: center !important;
+}.retailFinalVideoContent .frameParent4,
+  .retailFinalVideoContent .frameParent36 {
+  width: 100% !important;
+  height: auto !important;
+  align-items: center !important;
+  text-align: center !important;
+}.retailFinalVideoContent .poweringLearningFor,
+  .retailFinalVideoContent .neurolxpHelpsRetail {
+  width: 100% !important;
+  height: auto !important;
+  text-align: center !important;
+}.retailFinalVideoContent .poweringLearningFor {
+  font-size: 30px !important;
+  line-height: 38px !important;
+}.retailFinalVideoContent .neurolxpHelpsRetail {
+  font-size: 17px !important;
+  line-height: 27px !important;
+}
+}
+@media screen and (max-width: 425px) {.rectangleGroup .empoweringHealthcareOrganiza,
+  .frameParent29 .benefitsForHealthcare,
+  .retailFinalVideoContent .poweringLearningFor {
+  font-size: 27px !important;
+  line-height: 35px !important;
+}.image21Parent.retailVideoRevealSection .retailFinalVideoSlide {
+  height: 220px !important;
+  min-height: 220px !important;
+}.frameParent29 .frameParent32,
+  .frameParent29 .vectorParent {
+  width: 100% !important;
+}
+}
+@media screen and (max-width: 1200px) {.frameParent29 .frameParent31 {
+  width: 100% !important;
+  justify-items: center !important;
+  justify-content: center !important;
+}.frameParent29 .frameParent31 > .frameParent32,
+  .frameParent29 .frameParent31 > .vectorParent {
+  width: 240px !important;
+  min-width: 240px !important;
+  max-width: 240px !important;
+  height: 166px !important;
+  min-height: 166px !important;
+  max-height: 166px !important;
+  margin: 0 auto !important;
+  justify-self: center !important;
+  align-self: center !important;
+  overflow: visible !important;
+}.frameParent29 .frameParent31 > .frameParent32::before,
+  .frameParent29 .frameParent31 > .vectorParent::before {
+  width: 240px !important;
+  height: 166px !important;
+  inset: 0 !important;
+}.frameParent29 .frameParent31 .complianceTraining,
+  .frameParent29 .frameParent31 .professionalDevelopment,
+  .frameParent29 .frameParent31 .betterPatientCare,
+  .frameParent29 .frameParent31 .certificationTracking,
+  .frameParent29 .frameParent31 .scalableProgrammes {
+  top: 50% !important;
+  left: 40px !important;
+  transform: translateY(-50%) !important;
+  margin: 0 !important;
+  text-align: left !important;
+}
+}
+@media screen and (max-width: 768px) {.frameParent29 .frameParent31 {
+  display: grid !important;
+  grid-template-columns: 240px !important;
+  width: 100% !important;
+  justify-content: center !important;
+  justify-items: center !important;
+  align-items: center !important;
+  gap: 16px !important;
+  padding: 0 !important;
+  margin: 0 auto !important;
+}.frameParent29 .frameParent31 > .frameParent32,
+  .frameParent29 .frameParent31 > .vectorParent {
+  position: relative !important;
+  inset: auto !important;
+  width: 240px !important;
+  min-width: 240px !important;
+  max-width: 240px !important;
+  height: 166px !important;
+  min-height: 166px !important;
+  max-height: 166px !important;
+  margin: 0 auto !important;
+  padding: 0 !important;
+}.frameParent29 .frameParent31 .frameChild19,
+  .frameParent29 .frameParent31 .rectangleIcon {
+  width: 240px !important;
+  height: 166px !important;
+}
+}
+@media screen and (max-width: 425px) {.frameParent29 .frameParent31,
+  .frameParent29 .frameParent31 > .frameParent32,
+  .frameParent29 .frameParent31 > .vectorParent {
+  width: 240px !important;
+  max-width: 240px !important;
+}.frameParent29 .frameParent31 {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+}
+@media screen and (max-width: 768px) {html,
+  body {
+  width: 100% !important;
+  max-width: 100% !important;
+  margin: 0 !important;
+  overflow-x: hidden !important;
+}.retailAndHealthCare,
+  .retailHealthcare {
+  position: relative !important;
+  inset: auto !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  height: auto !important;
+  min-height: 0 !important;
+  box-sizing: border-box !important;
+  overflow-x: hidden !important;
+}.retailHealthcare {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  padding: 20px 16px 48px !important;
+  gap: 48px !important;
+  background: #dfe6e9 !important;
+}.retailHealthcare > .frameDiv,
+  .retailHealthcare > .frameParent2,
+  .retailHealthcare > .retailHealthcareInner,
+  .retailHealthcare > .frameParent8,
+  .retailHealthcare > .rectangleParent,
+  .retailHealthcare > .frameParent15,
+  .retailHealthcare > .frameParent23,
+  .retailHealthcare > .rectangleGroup,
+  .retailHealthcare > .frameParent29,
+  .retailHealthcare > .frameParent33 {
+  position: relative !important;
+  inset: auto !important;
+  top: auto !important;
+  right: auto !important;
+  bottom: auto !important;
+  left: auto !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  height: auto !important;
+  min-height: 0 !important;
+  margin: 0 !important;
+  box-sizing: border-box !important;
+  transform: none !important;
+  flex: 0 0 auto !important;
+}.frameDiv {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 8px !important;
+  text-align: center !important;
+}.retailHealthcare2 {
+  width: auto !important;
+  height: auto !important;
+  white-space: normal !important;
+}.frameParent2 {
+  padding: 12px !important;
+  overflow: hidden !important;
+  border-radius: 24px !important;
+}.frameParent2 > .frameItem,
+  .frameChild2 {
+  display: none !important;
+}.smilingYoungFemaleDoctorWeParent {
+  position: relative !important;
+  inset: auto !important;
+  width: 100% !important;
+  height: auto !important;
+  min-height: 0 !important;
+  padding: 24px 16px !important;
+  box-sizing: border-box !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  gap: 24px !important;
+  overflow: hidden !important;
+}.frameParent3,
+  .frameWrapper,
+  .frameParent4,
+  .frameParent5 {
+  position: relative !important;
+  inset: auto !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  height: auto !important;
+  min-height: 0 !important;
+  margin: 0 !important;
+  box-sizing: border-box !important;
+  align-items: center !important;
+  text-align: center !important;
+}.frameParent3 {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 24px !important;
+}.frameParent4,
+  .frameParent5 {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 16px !important;
+}.scalableLearningForContainer,
+  .empoweringSmarterRetail,
+  .empoweringSmarterRetail2,
+  .benefitsForRetail,
+  .smarterHealthcareLearning,
+  .empoweringHealthcareOrganiza,
+  .benefitsForHealthcare,
+  .poweringLearningFor {
+  width: 100% !important;
+  max-width: 100% !important;
+  height: auto !important;
+  min-height: 0 !important;
+  margin: 0 !important;
+  white-space: normal !important;
+  overflow-wrap: break-word !important;
+  word-break: normal !important;
+  text-align: center !important;
+}.scalableLearningForContainer {
+  font-size: 30px !important;
+  line-height: 38px !important;
+}.retailTeamsNeed,
+  .neurolxpEnablesSmarter,
+  .neurolxpEnablesFaster,
+  .neurolxpEnablesSmarter2,
+  .healthcareOrganizationsNeed,
+  .healthcareOrganizationsNeed2,
+  .neurolxpHelpsRetail {
+  width: 100% !important;
+  max-width: 100% !important;
+  height: auto !important;
+  min-height: 0 !important;
+  margin: 0 !important;
+  font-size: 16px !important;
+  line-height: 24px !important;
+  text-align: center !important;
+  white-space: normal !important;
+  overflow-wrap: break-word !important;
+}.scalableLearningForContainer br,
+  .retailTeamsNeed br,
+  .empoweringSmarterRetail2 br,
+  .neurolxpEnablesFaster br,
+  .benefitsForRetail br,
+  .neurolxpEnablesSmarter2 br,
+  .smarterHealthcareLearning br,
+  .healthcareOrganizationsNeed br,
+  .empoweringHealthcareOrganiza br,
+  .benefitsForHealthcare br,
+  .healthcareOrganizationsNeed2 br,
+  .poweringLearningFor br,
+  .neurolxpHelpsRetail br {
+  display: none !important;
+}.smilingYoungFemaleDoctorWeIcon {
+  position: relative !important;
+  inset: auto !important;
+  order: 2 !important;
+  width: min(100%, 320px) !important;
+  max-width: 320px !important;
+  height: auto !important;
+  max-height: 320px !important;
+  margin: 0 auto !important;
+  object-fit: contain !important;
+  object-position: center bottom !important;
+}.frameParent6 {
+  position: relative !important;
+  inset: auto !important;
+  width: 100% !important;
+  max-width: 420px !important;
+  height: auto !important;
+  display: flex !important;
+  flex-wrap: nowrap !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 16px !important;
+  margin: 0 auto !important;
+  overflow: visible !important;
+}.frameParent6 > .requestDemoWrapper,
+  .frameParent6 > .frameWrapper2 {
+  position: relative !important;
+  inset: auto !important;
+  top: auto !important;
+  left: auto !important;
+  width: calc(50% - 8px) !important;
+  max-width: 203px !important;
+  min-width: 0 !important;
+  height: 52px !important;
+  min-height: 52px !important;
+  flex: 1 1 calc(50% - 8px) !important;
+  margin: 0 !important;
+  padding: 0 12px !important;
+  box-sizing: border-box !important;
+  border: 0 !important;
+  border-radius: 8px !important;
+  background: #dfe6e9 !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  cursor: pointer !important;
+  box-shadow: -8px -8px 16px #ffffff,
+      8px 8px 16px #c6c6c9 !important;
+  transition: box-shadow 0.15s ease,
+      color 0.15s ease,
+      transform 0.15s ease !important;
+}.frameParent6 > .requestDemoWrapper:hover,
+  .frameParent6 > .frameWrapper2:hover {
+  transform: none !important;
+  box-shadow: -8px -8px 16px #ffffff,
+      8px 8px 16px #c6c6c9 !important;
+}.frameParent6 > .requestDemoWrapper:active,
+  .frameParent6 > .frameWrapper2:active {
+  box-shadow: inset 6px 6px 12px #bcc3c6,
+      inset -6px -6px 12px #ffffff !important;
+  transform: translateY(1px) !important;
+  color: #000000 !important;
+}.frameParent6 > .requestDemoWrapper:active .requestDemo,
+  .frameParent6 > .frameWrapper2:active .startLearning {
+  color: #000000 !important;
+}.requestDemo,
+  .startLearning {
+  width: auto !important;
+  max-width: 100% !important;
+  height: auto !important;
+  margin: 0 !important;
+  color: #2d4cc8 !important;
+  font-family: "Segoe UI" !important;
+  font-size: 16px !important;
+  line-height: 24px !important;
+  font-weight: 600 !important;
+  text-align: center !important;
+  white-space: nowrap !important;
+  justify-content: center !important;
+}.retailHealthcareInner {
+  padding: 16px !important;
+  border-radius: 24px !important;
+  overflow: visible !important;
+}.frameParent7 {
+  position: relative !important;
+  inset: auto !important;
+  width: 100% !important;
+  display: grid !important;
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  gap: 16px !important;
+}.frameWrapper3 {
+  width: 100% !important;
+  height: 108px !important;
+  min-height: 108px !important;
+}.frameParent8,
+  .frameParent9,
+  .empoweringSmarterRetailLearParent,
+  .frameParent10 {
+  width: 100% !important;
+  max-width: 100% !important;
+  height: auto !important;
+  min-height: 0 !important;
+  position: relative !important;
+  inset: auto !important;
+}.frameParent8,
+  .frameParent9,
+  .empoweringSmarterRetailLearParent {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  text-align: center !important;
+}.frameParent10 {
+  display: grid !important;
+  grid-template-columns: 1fr !important;
+  justify-items: center !important;
+  gap: 24px !important;
+}.frameWrapper7 {
+  position: relative !important;
+  inset: auto !important;
+  width: min(100%, 340px) !important;
+  max-width: 340px !important;
+  height: 228px !important;
+  min-height: 228px !important;
+  margin: 0 auto !important;
+  flex: none !important;
+}.rectangleParent,
+  .rectangleGroup {
+  width: 100% !important;
+  max-width: 100% !important;
+  height: auto !important;
+  min-height: 0 !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  gap: 24px !important;
+  padding: 24px 16px !important;
+  box-sizing: border-box !important;
+  overflow: hidden !important;
+}.frameParent14,
+  .frameParent28 {
+  position: relative !important;
+  inset: auto !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  height: auto !important;
+  min-height: 0 !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  text-align: center !important;
+  gap: 16px !important;
+  order: 1 !important;
+}.twoFemaleDesignersWork1Icon,
+  .maleDoctorNursesCommunicatiIcon {
+  position: relative !important;
+  inset: auto !important;
+  width: min(100%, 340px) !important;
+  max-width: 340px !important;
+  height: auto !important;
+  max-height: 320px !important;
+  margin: 0 auto !important;
+  object-fit: contain !important;
+  order: 2 !important;
+}.frameParent15,
+  .frameParent16,
+  .frameParent17 {
+  position: relative !important;
+  inset: auto !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  height: auto !important;
+  min-height: 0 !important;
+  box-sizing: border-box !important;
+}.frameParent15 {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  gap: 28px !important;
+}.frameParent16 {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  text-align: center !important;
+  gap: 16px !important;
+}.frameParent17 {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: stretch !important;
+  gap: 16px !important;
+}.frameParent18,
+  .frameParent19 {
+  width: 100% !important;
+  height: auto !important;
+  min-height: 70px !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: 12px !important;
+}.consistentTraining,
+  .betterCustomerExperience,
+  .quickOnboarding,
+  .continuousDevelopment,
+  .performanceTracking {
+  width: calc(100% - 82px) !important;
+  height: auto !important;
+  font-size: 17px !important;
+  line-height: 25px !important;
+  white-space: normal !important;
+  text-align: left !important;
+}.frameParent23,
+  .frameParent24,
+  .frameParent26,
+  .frameParent27 {
+  position: relative !important;
+  inset: auto !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  height: auto !important;
+  min-height: 0 !important;
+}.frameParent23 {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  gap: 28px !important;
+}.frameParent24,
+  .frameParent26 {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  gap: 20px !important;
+}.frameWrapper10 {
+  width: min(100%, 320px) !important;
+  max-width: 320px !important;
+  height: 280px !important;
+  min-height: 280px !important;
+  margin: 0 auto !important;
+}.frameParent29,
+  .frameParent30,
+  .benefitsForHealthcareOrganiParent,
+  .frameParent31 {
+  position: relative !important;
+  inset: auto !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  height: auto !important;
+  min-height: 0 !important;
+  box-sizing: border-box !important;
+}.frameParent29,
+  .frameParent30,
+  .benefitsForHealthcareOrganiParent {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  text-align: center !important;
+  gap: 20px !important;
+}.frameParent31 {
+  display: grid !important;
+  grid-template-columns: 240px !important;
+  justify-content: center !important;
+  justify-items: center !important;
+  align-items: center !important;
+  gap: 20px !important;
+  padding: 0 !important;
+  margin: 0 auto !important;
+}.frameParent31 > .frameParent32,
+  .frameParent31 > .vectorParent {
+  position: relative !important;
+  inset: auto !important;
+  width: 240px !important;
+  min-width: 240px !important;
+  max-width: 240px !important;
+  height: 166px !important;
+  min-height: 166px !important;
+  max-height: 166px !important;
+  margin: 0 auto !important;
+  padding: 0 !important;
+  overflow: hidden !important;
+}.frameParent31 .frameChild19,
+  .frameParent31 .rectangleIcon {
+  width: 240px !important;
+  height: 166px !important;
+}.frameParent33 {
+  padding: 12px !important;
+  overflow: hidden !important;
+}.frameParent33 > .image21Parent {
+  position: relative !important;
+  inset: auto !important;
+  width: 100% !important;
+  height: auto !important;
+  min-height: 0 !important;
+  margin: 0 !important;
+  display: flex !important;
+  flex-direction: column !important;
+  overflow: hidden !important;
+}.image21Parent.retailVideoRevealSection .retailFinalVideoContent {
+  position: relative !important;
+  inset: auto !important;
+  width: 100% !important;
+  height: auto !important;
+  transform: none !important;
+  order: 1 !important;
+  padding: 24px 16px !important;
+  box-sizing: border-box !important;
+  align-items: center !important;
+  text-align: center !important;
+}.image21Parent.retailVideoRevealSection .retailFinalVideoSlide,
+  .retailFinalVideo {
+  position: relative !important;
+  inset: auto !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  height: 240px !important;
+  min-height: 240px !important;
+  object-fit: cover !important;
+  order: 2 !important;
+}.frameWrapper14 {
+  width: 160px !important;
+  height: 52px !important;
+  margin: 0 auto !important;
+}.productKnowledge2,
+  .distributedStores2,
+  .talentRetention2 {
+  display: none !important;
+}
+}
+@media screen and (max-width: 425px) {.retailHealthcare {
+  padding: 16px 12px 40px !important;
+  gap: 40px !important;
+}.frameParent6 {
+  max-width: 300px !important;
+  flex-direction: column !important;
+  gap: 14px !important;
+}.frameParent6 > .requestDemoWrapper,
+  .frameParent6 > .frameWrapper2 {
+  width: 100% !important;
+  max-width: 280px !important;
+  flex: 0 0 52px !important;
+}.frameParent7 {
+  grid-template-columns: 1fr !important;
+}.frameWrapper3 {
+  height: 100px !important;
+  min-height: 100px !important;
+}.frameWrapper7 {
+  width: min(100%, 320px) !important;
+}.scalableLearningForContainer {
+  font-size: 27px !important;
+  line-height: 35px !important;
+}.empoweringSmarterRetail,
+  .empoweringSmarterRetail2,
+  .benefitsForRetail,
+  .smarterHealthcareLearning,
+  .empoweringHealthcareOrganiza,
+  .benefitsForHealthcare,
+  .poweringLearningFor {
+  font-size: 27px !important;
+  line-height: 35px !important;
+}.image21Parent.retailVideoRevealSection .retailFinalVideoSlide,
+  .retailFinalVideo {
+  height: 220px !important;
+  min-height: 220px !important;
+}
+}.frameParent6 > .requestDemoWrapper,
+.frameParent6 > .frameWrapper2 {
+  cursor: pointer !important;
+  background: #dfe6e9 !important;
+  box-shadow: -8px -8px 16px #ffffff,
+    8px 8px 16px #c6c6c9 !important;
+  transition: box-shadow 0.15s ease,
+    color 0.15s ease,
+    transform 0.15s ease !important;
+}.frameParent6 > .requestDemoWrapper:hover,
+.frameParent6 > .frameWrapper2:hover {
+  box-shadow: -8px -8px 16px #ffffff,
+    8px 8px 16px #c6c6c9 !important;
+}.frameParent6 > .requestDemoWrapper:active,
+.frameParent6 > .frameWrapper2:active {
+  box-shadow: inset 6px 6px 12px #bcc3c6,
+    inset -6px -6px 12px #ffffff !important;
+  transform: translateY(1px) !important;
+  color: #000000 !important;
+}.frameParent6 > .requestDemoWrapper:active .requestDemo,
+.frameParent6 > .frameWrapper2:active .startLearning {
+  color: #000000 !important;
+}
+@media screen and (max-width: 768px) {.frameParent17 {
+  width: 100% !important;
+  max-width: 340px !important;
+  margin: 0 auto !important;
+  padding: 0 !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: stretch !important;
+  gap: 16px !important;
+}.frameParent17 .frameParent18,
+  .frameParent17 .frameParent19 {
+  width: 100% !important;
+  min-height: 70px !important;
+  height: auto !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  display: grid !important;
+  grid-template-columns: 70px minmax(0, 1fr) !important;
+  column-gap: 14px !important;
+  align-items: center !important;
+  justify-content: stretch !important;
+  box-sizing: border-box !important;
+}.frameParent17 .frameChild9,
+  .frameParent17 .retailBenefitIcon {
+  position: relative !important;
+  inset: auto !important;
+  width: 70px !important;
+  min-width: 70px !important;
+  max-width: 70px !important;
+  height: 70px !important;
+  min-height: 70px !important;
+  max-height: 70px !important;
+  margin: 0 !important;
+  justify-self: start !important;
+  align-self: center !important;
+  flex: none !important;
+}.frameParent17 .consistentTraining,
+  .frameParent17 .betterCustomerExperience,
+  .frameParent17 .quickOnboarding,
+  .frameParent17 .continuousDevelopment,
+  .frameParent17 .performanceTracking {
+  position: relative !important;
+  inset: auto !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  height: auto !important;
+  min-height: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  display: block !important;
+  justify-self: stretch !important;
+  align-self: center !important;
+  text-align: left !important;
+  white-space: normal !important;
+  overflow: visible !important;
+  overflow-wrap: normal !important;
+  word-break: normal !important;
+  font-size: 17px !important;
+  line-height: 24px !important;
+}.retailHealthcare > .frameParent23 {
+  margin: 0 !important;
+  padding: 0 !important;
+  gap: 16px !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+}.frameParent23 .frameParent27 {
+  width: 100% !important;
+  max-width: 340px !important;
+  margin: 0 auto !important;
+  padding: 0 !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  gap: 12px !important;
+  text-align: center !important;
+}.frameParent23 .frameParent27 .frameChild16 {
+  margin: 0 auto !important;
+}.frameParent23 .smarterHealthcareLearning {
+  margin: 0 !important;
+  padding: 0 !important;
+  height: auto !important;
+  min-height: 0 !important;
+}.frameParent23 .healthcareOrganizationsNeed {
+  margin: 0 !important;
+  padding: 0 !important;
+  height: auto !important;
+  min-height: 0 !important;
+}.frameParent23 .frameParent24 {
+  width: 100% !important;
+  max-width: 340px !important;
+  margin: 0 auto !important;
+  padding: 0 !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  gap: 16px !important;
+}.frameParent23 .frameParent26 {
+  width: 100% !important;
+  max-width: 340px !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  gap: 16px !important;
+}.frameParent23 .frameWrapper10,
+  .frameParent23 .rectangleParent3,
+  .frameParent23 .rectangleParent4 {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+}
+@media screen and (max-width: 425px) {.frameParent17 {
+  max-width: 320px !important;
+}.frameParent17 .frameParent18,
+  .frameParent17 .frameParent19 {
+  grid-template-columns: 70px minmax(0, 1fr) !important;
+  column-gap: 12px !important;
+}.frameParent23 .frameParent27,
+  .frameParent23 .frameParent24,
+  .frameParent23 .frameParent26 {
+  max-width: 320px !important;
+}
+}
+@media screen and (max-width: 768px) {.frameParent29 .frameParent31 {
+  display: grid !important;
+  grid-template-columns: 240px !important;
+  justify-content: center !important;
+  justify-items: center !important;
+  align-items: center !important;
+  gap: 18px !important;
+  width: 100% !important;
+  margin: 0 auto !important;
+  padding: 0 !important;
+}.frameParent29 .frameParent31 > .frameParent32,
+  .frameParent29 .frameParent31 > .vectorParent {
+  position: relative !important;
+  inset: auto !important;
+  width: 240px !important;
+  min-width: 240px !important;
+  max-width: 240px !important;
+  height: 166px !important;
+  min-height: 166px !important;
+  max-height: 166px !important;
+  margin: 0 auto !important;
+  padding: 0 !important;
+  overflow: visible !important;
+}.frameParent29 .frameParent31 .complianceTraining,
+  .frameParent29 .frameParent31 .professionalDevelopment,
+  .frameParent29 .frameParent31 .betterPatientCare,
+  .frameParent29 .frameParent31 .certificationTracking,
+  .frameParent29 .frameParent31 .scalableProgrammes {
+  position: absolute !important;
+  top: 50% !important;
+  left: 50% !important;
+  width: 150px !important;
+  max-width: 150px !important;
+  height: auto !important;
+  min-height: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  transform: translate(-50%, -50%) !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  text-align: center !important;
+  white-space: normal !important;
+  overflow: visible !important;
+  overflow-wrap: normal !important;
+  word-break: keep-all !important;
+  font-family: "Segoe UI" !important;
+  font-size: 18px !important;
+  line-height: 26px !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.02em !important;
+  z-index: 3 !important;
+}.frameParent29 .frameParent31 .polygonIcon,
+  .frameParent29 .frameParent31 .healthArrow {
+  left: 0 !important;
+  z-index: 2 !important;
+}.frameParent29 .frameParent31 .complianceTraining {
+  width: 148px !important;
+  max-width: 148px !important;
+}.frameParent29 .frameParent31 .professionalDevelopment {
+  width: 168px !important;
+  max-width: 168px !important;
+}.frameParent29 .frameParent31 .betterPatientCare {
+  width: 160px !important;
+  max-width: 160px !important;
+}.frameParent29 .frameParent31 .certificationTracking {
+  width: 154px !important;
+  max-width: 154px !important;
+}.frameParent29 .frameParent31 .scalableProgrammes {
+  width: 160px !important;
+  max-width: 160px !important;
+}
+}
+@media screen and (max-width: 425px) {.frameParent29 .frameParent31 .complianceTraining,
+  .frameParent29 .frameParent31 .professionalDevelopment,
+  .frameParent29 .frameParent31 .betterPatientCare,
+  .frameParent29 .frameParent31 .certificationTracking,
+  .frameParent29 .frameParent31 .scalableProgrammes {
+  font-size: 17px !important;
+  line-height: 24px !important;
+}
+}
+@media screen and (max-width: 768px) {.frameParent29 .frameParent31 .betterPatientCare {
+  width: 118px !important;
+  max-width: 118px !important;
+  white-space: normal !important;
+  text-align: center !important;
+  line-height: 26px !important;
+}.retailHealthcare > .frameParent33 .image21Parent .frameParent36 {
+  width: 100% !important;
+  max-width: 100% !important;
+  align-items: center !important;
+  text-align: center !important;
+}.retailHealthcare > .frameParent33 .image21Parent .frameChild32 {
+  position: relative !important;
+  top: auto !important;
+  right: auto !important;
+  bottom: auto !important;
+  left: auto !important;
+  align-self: center !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  transform: none !important;
+  display: block !important;
+}
+}
+@media screen and (max-width: 425px) {.frameParent29 .frameParent31 .betterPatientCare {
+  width: 112px !important;
+  max-width: 112px !important;
+  line-height: 24px !important;
+}
+}
+@media screen and (max-width: 768px) {.frameChild3,
+  .frameChild7,
+  .frameChild8,
+  .frameChild16,
+  .frameChild18,
+  .frameChild32 {
+  position: relative !important;
+  left: auto !important;
+  right: auto !important;
+  top: auto !important;
+  bottom: auto !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  transform: none !important;
+  align-self: center !important;
+  display: block !important;
+}.frameParent9,
+  .frameParent14,
+  .frameParent16,
+  .frameParent27,
+  .frameParent30,
+  .frameParent36 {
+  align-items: center !important;
+  text-align: center !important;
+}.image21Parent .frameChild32,
+  .frameParent36 > .frameChild32 {
+  left: auto !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  transform: none !important;
+  align-self: center !important;
+}
+}
+@media screen and (max-width: 768px) {.image21Parent .frameParent36 > .frameChild32,
+  .retailFinalVideoContent .frameParent36 > .frameChild32 {
+  position: relative !important;
+  left: -16px !important;
+  right: auto !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  align-self: center !important;
+}
+}
+@media screen and (max-width: 768px) {.rectangleGroup .frameParent28 {
+  width: 100% !important;
+  max-width: 100% !important;
+  align-items: center !important;
+  text-align: center !important;
+}.rectangleGroup .frameParent28::before {
+  left: 50% !important;
+  right: auto !important;
+  transform: translateX(-50%) !important;
+  margin: 0 !important;
+}.image21Parent .frameParent36,
+  .retailFinalVideoContent .frameParent36 {
+  width: 100% !important;
+  max-width: 100% !important;
+  align-items: center !important;
+  text-align: center !important;
+}.image21Parent .frameParent36::before,
+  .retailFinalVideoContent .frameParent36::before {
+  left: 50% !important;
+  right: auto !important;
+  transform: translateX(-50%) !important;
+  margin: 0 !important;
+}.image21Parent .frameParent36 > .frameChild32,
+  .retailFinalVideoContent .frameParent36 > .frameChild32 {
+  left: auto !important;
+  transform: none !important;
+}
+}

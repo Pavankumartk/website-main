@@ -76,11 +76,11 @@ export const navItems: NavItem[] = [
       },
       {
         label: "Financial Literacy",
-        href: "#",
+        href: "FinancialLitracy",
       },
       {
         label: "3Rs8Cs3Ms Literacy",
-        href: "#",
+        href: "literacy3rs8cs3ms",
       },
     ],
 
@@ -142,19 +142,19 @@ export const navItems: NavItem[] = [
           },
           {
             label: "BFSI",
-            href: "#",
+            href: "/bfsi",
           },
           {
             label: "Retail And Healthcare",
-            href: "/retail-health",
+            href: "/retail-healthcare",
           },
           {
             label: "Government Institutions",
-            href: "#",
+            href: "/government",
           },
           {
             label: "Nonprofit Organizations",
-            href: "#",
+            href: "/nonprofit",
           },
         ],
       },
@@ -217,7 +217,7 @@ export const navItems: NavItem[] = [
         items: [
           {
             label: "Gamified Learning",
-            href: "#",
+            href: "gamification_learning",
           },
           {
             label: "Content Management",
@@ -257,7 +257,7 @@ export const navItems: NavItem[] = [
         items: [
           {
             label: "Accessibility & Inclusivity",
-            href: "/accessibility",
+            href: "/accessibility-inclusivity",
           },
           {
             label: "Mobile Learning",

@@ -1,0 +1,5525 @@
+.scaleMobileTitle,
+.scaleMobileSubtitle {
+    display: none;
+}
+
+.interactiveGamifiedLearnin {
+    width: 100%;
+    height: 5475px;
+    position: relative;
+    background-color: #dfe6e9;
+    overflow: hidden;
+    text-align: left;
+    font-size: 48px;
+    color: #31344b;
+    font-family: 'Segoe UI';
+    zoom: 0.89;
+    max-width: 1440px; 
+	margin: 0 auto;
+}
+
+.frameParent {
+    position: absolute;
+    top: 0px;
+    left: calc(50% - 720px);
+    box-shadow: -8px -8px 16px #fff, 8px 8px 16px #c6c6c9;
+    background-color: #dfe6e9;
+    width: 1440px;
+    height: 80px;
+    overflow: hidden;
+    font-size: 16px;
+    font-family: Inter;
+}
+
+.frameChild {
+    position: absolute;
+    top: calc(50% - 22px);
+    left: 1096px;
+    width: 132px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+}
+
+.frameGroup {
+    position: absolute;
+    top: 18px;
+    left: 32px;
+    width: 1376px;
+    height: 45px;
+}
+
+.logo01SynapseSpark1Parent {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    align-items: center;
+    gap: 130px;
+}
+
+.logo01SynapseSpark1Icon {
+    height: 45px;
+    width: 120px;
+    position: relative;
+    object-fit: cover;
+}
+
+.frameContainer {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.homeParent {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.home {
+    position: relative;
+    line-height: 24px;
+    font-weight: 600;
+}
+
+.arrowDown01Icon {
+    height: 16px;
+    width: 16px;
+    position: relative;
+}
+
+.featuresParent {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #2d4cc8;
+}
+
+.features {
+    position: relative;
+    line-height: 24px;
+}
+
+.signInHelpWrapper {
+    position: absolute;
+    top: calc(50% - 22.5px);
+    left: 1244px;
+    box-shadow: -8px -8px 16px #fff, 8px 8px 16px #c6c6c9;
+    border-radius: 32px;
+    background-color: #dfe6e9;
+    width: 132px;
+    height: 44px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px 32px;
+    box-sizing: border-box;
+    text-align: center;
+    color: #2d4cc8;
+    font-family: 'Segoe UI';
+}
+
+.signInHelp {
+    width: 97px;
+    position: relative;
+    letter-spacing: 0.02em;
+    line-height: 28px;
+    font-weight: 600;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.frameDiv {
+    position: absolute;
+    top: 32px;
+    left: 80px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 16px;
+    color: #2f3547;
+    font-family: 'Segoe UI';
+}
+
+.featuresWrapper {
+    display: flex;
+    align-items: center;
+}
+
+.augmentation {
+    position: relative;
+    letter-spacing: 0.02em;
+    line-height: 24px;
+}
+
+.arrowRightDoubleGroup {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #243fa8;
+}
+
+.frameParent2 {
+    position: absolute;
+    top: 71px;
+    left: calc(50% - 640px);
+    width: 1280px;
+    height: 545px;
+    transform: translateY(14);
+}
+
+.frameItem {
+    position: absolute;
+    top: 0px;
+    left: calc(50% - 637px);
+    box-shadow: -8px -8px 16px #fff, 8px 8px 16px #c4c4c4;
+    border-radius: 24px;
+    background-color: #dfe6e9;
+    width: 1273px;
+    height: 545px;
+    overflow: hidden;
+   
+}
+
+.frameParent3 {
+    position: absolute;
+    top: 24px;
+    left: calc(50% - 613px);
+    box-shadow: -8px -8px 16px #fff inset, 8px 8px 16px #c4c4c4 inset;
+    border-radius: 24px;
+    background-color: #dfe6e9;
+    width: 1225px;
+    height: 497px;
+    overflow: hidden;
+}
+
+.frameParent4 {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    width: 506px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+    flex-shrink: 0;
+}
+
+.frameWrapper {
+    width: 555px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-shrink: 0;
+}
+
+.frameParent5 {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+}
+
+.frameParent6 {
+    width: 621px;
+    height: 193px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+    flex-shrink: 0;
+}
+
+.frameInner {
+    width: 411.5px;
+    height: 50.3px;
+    position: relative;
+    border-radius: 28px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+.transformLearningInto {
+    align-self: stretch;
+    height: 119px;
+    position: relative;
+    letter-spacing: 0.03em;
+    line-height: 60px;
+    display: inline-block;
+    flex-shrink: 0;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: 38px;
+    width: 578px;
+}
+
+.transformPassiveLearning {
+    width: 516px;
+    position: relative;
+    font-size: 24px;
+    letter-spacing: 0.03em;
+    line-height: 40px;
+    color: #2f3547;
+    display: inline-block;
+    flex-shrink: 0;
+}
+
+.frameWrapper2 {
+    width: 555.2px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-shrink: 0;
+    font-size: 22px;
+    color: #2d4cc8;
+}
+
+.frameParent7 {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.frameIcon {
+    height: 60.2px;
+    width: 198px;
+    position: relative;
+    border-radius: 8px;
+    object-fit: contain;
+}
+
+.frameWrapper3 {
+    height: 60px;
+    width: 203px;
+    box-shadow: -8px -8px 16px #fff, 8px 8px 16px #c6c6c9;
+    border-radius: 8px;
+    background-color: #dfe6e9;
+    overflow: hidden;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px 32px;
+    box-sizing: border-box;
+}
+
+.startLearningWrapper {
+    width: 140px;
+    display: flex;
+    align-items: center;
+}
+
+.startLearning {
+    width: 147px;
+    position: relative;
+    line-height: 30px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.mixRacedGroupStudentsWatchIcon {
+    position: absolute;
+    top: 21px;
+    left: 565px;
+    width: 674px;
+    height: 489px;
+    object-fit: cover;
+    flex-shrink: 0;
+    transform: translatex(-13);
+}
+
+.frameParent8 {
+    position: absolute;
+    top: 680px;
+    left: 77px;
+    width: 1285px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    text-align: center;
+    font-size: 28px;
+    color: #2f3547;
+}
+
+.frameWrapper4 {
+    align-self: stretch;
+    height: 175px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.frameParent9 {
+    width: 931px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    flex-shrink: 0;
+}
+
+.frameChild2 {
+    width: 274.5px;
+    height: 50.2px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-radius:28px;
+    background:#DFE6E9;
+    box-shadow: inset -4px -4px 8px #FFFFFF,
+                inset 4px 4px 8px rgba(196,196,196,.8);
+    color:#2D4CC8;
+    font-family:'Segoe UI';
+    font-size:24px;
+    font-weight:500;
+    line-height:24px;
+    letter-spacing:.02em;
+    text-align:center;
+    flex-shrink:0;
+}
+
+.activeParticipationMakesLeaWrapper {
+    align-self: stretch;
+    height: 178px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.activeParticipationMakes {
+    width: 1105px;
+    height: 72px;
+    position: relative;
+    letter-spacing: 0.03em;
+    line-height: 40px;
+    display: inline-block;
+    flex-shrink: 0;
+}
+
+.frameParent10 {
+    display: flex;
+    align-items: center;
+    gap: 180px;
+    font-size: 24px;
+    color: #2d4cc8;
+}
+
+.frameParent11 {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+}
+
+.frameParent12 {
+    align-self: stretch;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.frameChild3 {
+    height: 70.1px;
+    width: 70.1px;
+    position: relative;
+}
+
+.interactiveParent {
+    width: 242px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 14px;
+}
+
+.interactive {
+    width: 128px;
+    height: 37px;
+    position: relative;
+    letter-spacing: 0.03em;
+    line-height: 36px;
+    display: inline-block;
+    flex-shrink: 0;
+}
+
+.activitiesThatMake {
+    width: 441px;
+    height: 28px;
+    position: relative;
+    font-size: 20px;
+    letter-spacing: 0.03em;
+    line-height: 28px;
+    color: #31344b;
+    text-align: left;
+    display: inline-block;
+    flex-shrink: 0;
+}
+
+.frameParent13 {
+    align-self: stretch;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    color: #bf1869;
+}
+
+.adaptive {
+    width: 117px;
+    height: 37px;
+    position: relative;
+    letter-spacing: 0.03em;
+    line-height: 36px;
+    display: inline-block;
+    flex-shrink: 0;
+}
+
+.experiencesThatRespond {
+    width: 437px;
+    height: 28px;
+    position: relative;
+    font-size: 20px;
+    letter-spacing: 0.03em;
+    line-height: 28px;
+    color: #31344b;
+    text-align: left;
+    display: inline-block;
+    flex-shrink: 0;
+}
+
+.frameParent14 {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+    color: #67096e;
+}
+
+.engaging {
+    width: 124px;
+    height: 37px;
+    position: relative;
+    letter-spacing: 0.03em;
+    line-height: 36px;
+    display: inline-block;
+    flex-shrink: 0;
+}
+
+.contentThatEngages {
+    width: 457px;
+    height: 28px;
+    position: relative;
+    font-size: 20px;
+    letter-spacing: 0.03em;
+    line-height: 28px;
+    color: #31344b;
+    text-align: left;
+    display: inline-block;
+    flex-shrink: 0;
+}
+
+.frameParent16 {
+    align-self: stretch;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    color: #c05512;
+}
+
+.practical {
+    width: 115px;
+    height: 37px;
+    position: relative;
+    letter-spacing: 0.03em;
+    line-height: 36px;
+    display: inline-block;
+    flex-shrink: 0;
+}
+
+.realWorldActivitiesThat {
+    width: 450px;
+    height: 28px;
+    position: relative;
+    font-size: 20px;
+    letter-spacing: 0.03em;
+    line-height: 28px;
+    color: #31344b;
+    text-align: left;
+    display: inline-block;
+    flex-shrink: 0;
+}
+
+.frameParent17 {
+    position: absolute;
+    top: 1191px;
+    left: 77px;
+    width: 1289px;
+    height: 925px;
+    text-align: center;
+}
+
+.frameWrapper5 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 1289px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.frameWrapper6 {
+    width: 100%;
+    height: 325px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+}
+
+.frameWrapper7 {
+    width: 931px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.frameParent18 {
+    width: 100%;
+    height: 227px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    max-width: 100%;
+}
+
+.frameParent19 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    flex-shrink: 0;
+}
+
+.frameChild7 {
+    width: 274.5px;
+    height: 50.2px;
+    position: relative;
+    border-radius: 28px;
+    object-fit: contain;
+}
+
+.interactiveActivitiesThatContainer {
+    width: 910px;
+    height: 123px;
+    position: relative;
+    letter-spacing: 0.03em;
+    line-height: 60px;
+    display: inline-block;
+    flex-shrink: 0;
+    font-size: 40px;
+
+}
+
+.interactiveActivitiesThat {
+    line-height: 60px;
+}
+
+.understanding {
+    color: #2d4cc8;
+    line-height: 60px;
+}
+
+.neurolxpOffersA {
+    width: 1063px;
+    height: 72px;
+    position: relative;
+    font-size: 24px;
+    letter-spacing: 0.03em;
+    line-height: 40px;
+    color: #2f3547;
+    display: inline-block;
+    flex-shrink: 0;
+}
+
+.frameParent20 {
+    position: absolute;
+    top: 375px;
+    left: 0px;
+    width: 1289px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    text-align: left;
+    font-size: 30px;
+    color: #fff;
+}
+
+.frameParent21 {
+    align-self: stretch;
+    display: flex;
+    align-items: center;
+    gap: 70px;
+}
+
+.frameParent22 {
+    height: 150px;
+    width: 380px;
+    box-shadow: -10px -10px 20px #fff, 10px 10px 20px #c4c4c4;
+    border-radius: 50px 12px 12px 12px;
+    background-color: #dfe6e9;
+    
+    box-sizing: border-box;
+    overflow: hidden;
+    flex-shrink: 0;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding: 16px 32px;
+    position: relative;
+    isolation: isolate;
+    gap: 10px;
+}
+
+.frameParent23 {
+    height: 60px;
+    width: 60px;
+    position: absolute;
+    margin: 0 !important;
+    top: 0px;
+    left: 0px;
+    z-index: 0;
+    flex-shrink: 0;
+}
+
+.frameChild8 {
+    position: absolute;
+    top: 0px;
+    left: 0.05px;
+    border-radius: 8px;
+    background-color: #2d4cc8;
+    width: 60px;
+    height: 60px;
+    overflow: hidden;
+}
+
+.b {
+    position: absolute;
+    top: calc(50% - 19px);
+    left: calc(50% - 4px);
+    letter-spacing: 0.03em;
+    line-height: 38px;
+}
+
+.curiousClicksParent {
+    width: 256px;
+    margin: 0 !important;
+    position: absolute;
+    top: calc(50% - 52px);
+    left: 85px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    z-index: 1;
+    flex-shrink: 0;
+    font-size: 24px;
+    color: #31344b;
+}
+
+.curiousClicks {
+    align-self: stretch;
+    height: 32px;
+    position: relative;
+    letter-spacing: 0.03em;
+    line-height: 32px;
+    display: inline-block;
+    flex-shrink: 0;
+    white-space: nowrap;
+}
+
+.discoverNewInsightsContainer {
+    align-self: stretch;
+    height: 56px;
+    position: relative;
+    font-size: 20px;
+    letter-spacing: 0.03em;
+    line-height: 28px;
+    display: inline-block;
+    flex-shrink: 0;
+    color: #2f3547;
+}
+
+.discoverNewInsights {
+    line-height: 28px;
+}
+
+.blankLine {
+    color: #000;
+    line-height: 28px;
+}
+
+.frameParent24 {
+    height: 150px;
+    width: 380px;
+    box-shadow: -10px -10px 20px #fff, 10px 10px 20px #c4c4c4;
+    border-radius: 50px 12px 12px 12px;
+    background-color: #dfe6e9;
+    
+    box-sizing: border-box;
+    overflow: hidden;
+    flex-shrink: 0;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding: 32px 32px 16px;
+    position: relative;
+    isolation: isolate;
+    gap: 10px;
+}
+
+.frameChild9 {
+    position: absolute;
+    top: 0px;
+    left: 0.05px;
+    border-radius: 8px;
+    background-color: #bf1869;
+    width: 60px;
+    height: 60px;
+    overflow: hidden;
+}
+
+.b2 {
+    position: absolute;
+    top: calc(50% - 19.41px);
+    left: calc(50% - 4px);
+    letter-spacing: 0.03em;
+    line-height: 38px;
+}
+
+.frameChild10 {
+    position: absolute;
+    top: 0px;
+    left: 0.05px;
+    border-radius: 8px;
+    background-color: #c05512;
+    width: 60px;
+    height: 60px;
+    overflow: hidden;
+}
+
+.frameChild11 {
+    position: absolute;
+    top: 0px;
+    left: 0.05px;
+    border-radius: 8px;
+    background-color: #67096e;
+    width: 60px;
+    height: 60px;
+    overflow: hidden;
+}
+
+.frameChild12 {
+    position: absolute;
+    top: 0px;
+    left: 0.05px;
+    border-radius: 8px;
+    background-color: #2a7308;
+    width: 60px;
+    height: 60px;
+    overflow: hidden;
+}
+
+.linkConceptsStepByContainer {
+    width: 229px;
+    height: 56px;
+    position: relative;
+    font-size: 20px;
+    letter-spacing: 0.03em;
+    line-height: 28px;
+    display: inline-block;
+    flex-shrink: 0;
+    color: #2f3547;
+}
+
+.frameChild13 {
+    position: absolute;
+    top: 0px;
+    left: 0.05px;
+    border-radius: 8px;
+    background-color: #0b9ba0;
+    width: 60px;
+    height: 60px;
+    overflow: hidden;
+}
+
+.frameParent35 {
+    display: flex;
+    align-items: center;
+    gap: 70px;
+}
+
+.frameChild14 {
+    position: absolute;
+    top: 0px;
+    left: 0.05px;
+    border-radius: 8px;
+    background-color: #907507;
+    width: 60px;
+    height: 60px;
+    overflow: hidden;
+}
+
+.frameChild15 {
+    position: absolute;
+    top: 0px;
+    left: 0.05px;
+    border-radius: 8px;
+    background-color: #861109;
+    width: 60px;
+    height: 60px;
+    overflow: hidden;
+}
+
+.interactiveGamifiedLearninChild {
+    position: absolute;
+    top: 3202.41px;
+    left: 80px;
+    width: 662px;
+    height: 50.3px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.frameParent40 {
+    position: absolute;
+    top: 2212px;
+    left: 82px;
+    display: flex;
+    align-items: center;
+    gap: 87px;
+}
+
+.frameParent41 {
+    width: 527px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+}
+
+.frameChild16 {
+    width: 224.8px;
+    height: 50.2px;
+    position: relative;
+    border-radius: 28px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+.beyondLearningInto {
+    width: 533px;
+    position: relative;
+    letter-spacing: 0.03em;
+    line-height: 60px;
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.perfectForUniversities {
+    width: 468px;
+    position: relative;
+    font-size: 28px;
+    letter-spacing: 0.03em;
+    line-height: 40px;
+    color: #2f3547;
+    display: inline-block;
+}
+
+.frameParent43 {
+    height: 696px;
+    width: 664px;
+    position: relative;
+    text-align: center;
+    font-size: 24px;
+    color: #67096e;
+}
+
+.frameWrapper8 {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 539px;
+    height: 150px;
+}
+
+.frameParent44 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 539px;
+    height: 150px;
+}
+
+.image20Parent {
+    position: absolute;
+    top: calc(50% - 59px);
+    left: 63px;
+    box-shadow: -8px -8px 16px #fff inset, 8px 8px 16px rgba(196, 196, 196, 0.8) inset;
+    border-radius: 16px;
+    background-color: #dfe6e9;
+    width: 476px;
+    height: 118px;
+    overflow: hidden;
+}
+
+.image20 {
+    position: absolute;
+    top: 0.37px;
+    left: calc(50% - 630px);
+    width: 1280px;
+    height: 800px;
+    flex-shrink: 0;
+}
+
+.frameChild17 {
+    position: absolute;
+    top: 39px;
+    left: 133px;
+    width: 343px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.simulationsParent {
+    position: absolute;
+    top: calc(50% - 39px);
+    left: 120px;
+    width: 242px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 14px;
+    flex-shrink: 0;
+}
+
+.simulations {
+    width: 143px;
+    height: 37px;
+    position: relative;
+    letter-spacing: 0.03em;
+    line-height: 36px;
+    display: inline-block;
+    flex-shrink: 0;
+}
+
+.practiceRealWorldSkills {
+    width: 336px;
+    height: 28px;
+    position: relative;
+    font-size: 20px;
+    letter-spacing: 0.03em;
+    line-height: 28px;
+    color: #31344b;
+    text-align: left;
+    display: inline-block;
+    flex-shrink: 0;
+}
+
+.frameParent45 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 150px;
+    height: 150px;
+    text-align: left;
+    font-size: 120px;
+}
+
+.image20Wrapper {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    box-shadow: -8px -8px 16px #fff, 8px 8px 16px rgba(196, 196, 196, 0.8);
+    border-radius: 32px;
+    background-color: #dfe6e9;
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+}
+
+.image202 {
+    position: absolute;
+    top: 0.37px;
+    left: calc(50% - 447px);
+    width: 1280px;
+    height: 800px;
+    flex-shrink: 0;
+}
+
+.div {
+    position: absolute;
+    top: calc(50% - 50px);
+    left: calc(50% - 24px);
+    letter-spacing: 0.03em;
+    line-height: 128px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    width: 49px;
+    height: 100px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: 80px;
+}
+
+.frameWrapper9 {
+    position: absolute;
+    top: 182px;
+    left: 0px;
+    width: 539px;
+    height: 150px;
+    color: #bf1869;
+}
+
+.frameWrapper10 {
+    position: absolute;
+    top: calc(50% - 39px);
+    left: 120px;
+    width: 406px;
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.scenarioBasedLearning {
+    width: 297px;
+    height: 37px;
+    position: relative;
+    letter-spacing: 0.03em;
+    line-height: 36px;
+    display: inline-block;
+    flex-shrink: 0;
+    white-space: nowrap;
+}
+
+.div2 {
+    position: absolute;
+    top: calc(50% - 50px);
+    left: calc(50% - 33px);
+    letter-spacing: 0.03em;
+    line-height: 128px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    width: 67px;
+    height: 100px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: 80px;
+}
+
+.frameWrapper11 {
+    position: absolute;
+    top: 364px;
+    right: 0px;
+    width: 539px;
+    height: 150px;
+    color: #2d4cc8;
+}
+
+.frameWrapper12 {
+    position: absolute;
+    top: calc(50% - 39px);
+    left: 120px;
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    white-space: nowrap;
+}
+
+.visualLearning {
+    width: 191px;
+    height: 37px;
+    position: relative;
+    letter-spacing: 0.03em;
+    line-height: 36px;
+    display: inline-block;
+    flex-shrink: 0;
+}
+
+.frameWrapper13 {
+    position: absolute;
+    top: 546px;
+    left: 0px;
+    width: 539px;
+    height: 150px;
+    color: #046f73;
+}
+
+.frameWrapper14 {
+    position: absolute;
+    top: calc(50% - 39px);
+    left: 120px;
+    width: 327px;
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.interactiveAssessmentsParent {
+    width: 286px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 14px;
+    white-space: nowrap;
+}
+
+.interactiveAssessments {
+    align-self: stretch;
+    height: 37px;
+    position: relative;
+    letter-spacing: 0.03em;
+    line-height: 36px;
+    display: inline-block;
+    flex-shrink: 0;
+}
+
+.div4 {
+    position: absolute;
+    top: calc(50% - 50px);
+    left: calc(50% - 34.5px);
+    letter-spacing: 0.03em;
+    line-height: 128px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    width: 70px;
+    height: 100px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: 80px;
+}
+
+.image20Parent4 {
+    position: absolute;
+    top: 3004px;
+    left: calc(50% - 640px);
+    box-shadow: -8px -8px 16px #fff inset, 8px 8px 16px rgba(196, 196, 196, 0.8) inset;
+    border-radius: 32px;
+    background-color: #dfe6e9;
+    width: 1280px;
+    height: 954px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.image209 {
+    position: absolute;
+    top: 338.14px;
+    left: calc(50% - 625px);
+    width: 1280px;
+    height: 800px;
+    flex-shrink: 0;
+}
+
+.frameParent52 {
+    position: absolute;
+    top: 32px;
+    left: calc(50% - 608px);
+    width: 1216px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    flex-shrink: 0;
+}
+
+.frameWrapper15 {
+    width: 1108px;
+    height: 260px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.frameParent53 {
+    width: 931px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+
+.howInteractiveLearningDriveParent {
+    align-self: stretch;
+    height: 178px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+
+.howInteractiveLearning {
+    width: 978px;
+    height: 63px;
+    position: relative;
+    letter-spacing: 0.03em;
+    line-height: 60px;
+    display: inline-block;
+    flex-shrink: 0;
+    font-size: 36px;
+}
+
+.interactiveLearningDrives {
+    width: 978px;
+    height: 72px;
+    position: relative;
+    font-size: 24px;
+    letter-spacing: 0.03em;
+    line-height: 40px;
+    color: #2f3547;
+    display: inline-block;
+    flex-shrink: 0;
+}
+
+.frameWrapper16 {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 24px;
+}
+
+.frameParent54 {
+    width: 1216px;
+    height: 580px;
+    position: relative;
+    box-shadow: 10px 10px 20px #c4c4c4, -10px -10px 20px rgba(255, 255, 255, 0.6);
+    border-radius: 16px;
+    background-color: #dfe6e9;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.image20Parent5 {
+    position: absolute;
+    top: calc(50% - 290px);
+    left: 760px;
+    box-shadow: -8px -8px 16px #fff inset, 8px 8px 16px rgba(196, 196, 196, 0.8) inset;
+    border-radius: 100px 16px 16px 100px;
+    background-color: #dfe6e9;
+    width: 456px;
+    height: 580px;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.image2010 {
+    position: absolute;
+    top: -13.63px;
+    left: calc(50% - 640px);
+    width: 1280px;
+    height: 800px;
+    flex-shrink: 0;
+}
+
+.frameChild22 {
+    position: absolute;
+    top: 25px;
+    left: 113px;
+    width: 343px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.peopleTakingPartBusinessEv {
+    position: absolute;
+    top: -2.48px;
+    left: 0px;
+    width: 1216px;
+    height: 555px;
+    flex-shrink: 0;
+}
+
+.image21 {
+    position: absolute;
+    top: -1px;
+    left: 0px;
+    width: 1216px;
+    height: 737px;
+    flex-shrink: 0;
+}
+
+.groupYoungBusinesspeopleUsi {
+    position: absolute;
+    top: calc(50% - 292px);
+    left: calc(50% - 608px);
+    width: 1216px;
+    height: 555px;
+    flex-shrink: 0;
+}
+
+.rectangleIcon {
+    position: absolute;
+    top: 7px;
+    left: 579px;
+    width: 637px;
+    height: 543px;
+    flex-shrink: 0;
+}
+
+.collageCustomerExperienceCoIcon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 760px;
+    height: 580px;
+    border-radius: 16px 0 0 16px;
+    object-fit: cover;
+    object-position: center center;
+    flex-shrink: 0;
+}
+
+.frameParent55 {
+    position: absolute;
+    top: calc(50% - 256px);
+    right: 50px;
+    width: 319px;
+    height: 512px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 18px;
+    flex-shrink: 0;
+}
+
+.frameParent56 {
+    align-self: stretch;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.activeParticipation {
+    height: 37px;
+    width: 233px;
+    position: relative;
+    letter-spacing: 0.03em;
+    line-height: 36px;
+    font-weight: 600;
+    display: inline-block;
+    flex-shrink: 0;
+}
+
+.frameParent57 {
+    align-self: stretch;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.criticalThinking {
+    height: 37px;
+    width: 194px;
+    position: relative;
+    letter-spacing: 0.03em;
+    line-height: 36px;
+    font-weight: 600;
+    display: inline-block;
+    flex-shrink: 0;
+}
+
+.exploration {
+    height: 37px;
+    width: 140px;
+    position: relative;
+    letter-spacing: 0.03em;
+    line-height: 36px;
+    font-weight: 600;
+    display: inline-block;
+    flex-shrink: 0;
+}
+
+.betterRetention {
+    height: 37px;
+    width: 190px;
+    position: relative;
+    letter-spacing: 0.03em;
+    line-height: 36px;
+    font-weight: 600;
+    display: inline-block;
+    flex-shrink: 0;
+}
+
+.focusedPractice {
+    height: 37px;
+    width: 198px;
+    position: relative;
+    letter-spacing: 0.03em;
+    line-height: 36px;
+    font-weight: 600;
+    display: inline-block;
+    flex-shrink: 0;
+}
+
+.enjoyableLearning {
+    height: 37px;
+    width: 220px;
+    position: relative;
+    letter-spacing: 0.03em;
+    line-height: 36px;
+    font-weight: 600;
+    display: inline-block;
+    flex-shrink: 0;
+}
+
+.frameParent62 {
+    position: absolute;
+    top: 4054px;
+    left: 125px;
+    width: 1190px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    text-align: center;
+}
+
+.frameChild29 {
+    width: 224.2px;
+    height: 50.2px;
+    position: relative;
+    border-radius: 28px;
+    object-fit: contain;
+}
+
+.frameWrapper18 {
+    align-self: stretch;
+    height: 338px;
+    position: relative;
+    box-shadow: -8px -8px 16px #fff inset, 8px 8px 16px #c4c4c4 inset;
+    border-radius: 32px;
+    background-color: #dfe6e9;
+    overflow: hidden;
+    flex-shrink: 0;
+    font-size: 24px;
+}
+
+.frameParent64 {
+    position: absolute;
+    top: 32px;
+    left: calc(50% - 545px);
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.frameParent65 {
+    width: 520px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+}
+
+.createInteractiveCourses {
+    height: 37px;
+    width: 303px;
+    position: relative;
+    letter-spacing: 0.03em;
+    line-height: 36px;
+    font-weight: 600;
+    display: inline-block;
+    flex-shrink: 0;
+}
+
+.buildEngagingActivities {
+    height: 37px;
+    width: 285px;
+    position: relative;
+    letter-spacing: 0.03em;
+    line-height: 36px;
+    font-weight: 600;
+    display: inline-block;
+    flex-shrink: 0;
+}
+
+.deliverSimulationsAnd {
+    height: 37px;
+    width: 391px;
+    position: relative;
+    letter-spacing: 0.03em;
+    line-height: 36px;
+    font-weight: 600;
+    display: inline-block;
+    flex-shrink: 0;
+}
+
+.reinforceLearningWith {
+    height: 37px;
+    width: 425px;
+    position: relative;
+    letter-spacing: 0.03em;
+    line-height: 36px;
+    font-weight: 600;
+    display: inline-block;
+    flex-shrink: 0;
+}
+
+.trackLearnerPerformance {
+    height: 37px;
+    width: 308px;
+    position: relative;
+    letter-spacing: 0.03em;
+    line-height: 36px;
+    font-weight: 600;
+    display: inline-block;
+    flex-shrink: 0;
+}
+
+.supportDigitalAnd {
+    height: 37px;
+    width: 432px;
+    position: relative;
+    letter-spacing: 0.03em;
+    line-height: 36px;
+    font-weight: 600;
+    display: inline-block;
+    flex-shrink: 0;
+}
+
+.frameParent73 {
+    position: absolute;
+    top: 4798px;
+    left: calc(50% - 640px);
+    width: 1280px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.frameParent74 {
+    width: 573px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 48px;
+}
+
+.frameChild36 {
+    width: 289.5px;
+    height: 50.2px;
+    position: relative;
+    border-radius: 28px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+.frameParent77 {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    font-size: 24px;
+    color: #2d4cc8;
+}
+
+.frameWrapper19 {
+    height: 64px;
+    width: 210px;
+    box-shadow: -8px -8px 16px #fff, 8px 8px 16px #c6c6c9;
+    border-radius: 32px;
+    background-color: #dfe6e9;
+    overflow: hidden;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px 32px;
+    box-sizing: border-box;
+}
+
+.bookADemo {
+    width: 152px;
+    position: relative;
+    line-height: 32px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.frameChild37 {
+    height: 64.2px;
+    width: 204.2px;
+    position: relative;
+    border-radius: 32px;
+    object-fit: contain;
+}
+
+.frameChild38 {
+    width: 210px;
+    height: 64px;
+    display: flex;
+    align-items: center;
+}
+
+.frameChild39 {
+    height: 597px;
+    width: 708px;
+    position: relative;
+    object-fit: cover;
+}
+
+.frameParent78 {
+    position: absolute;
+    top: 5571px;
+    left: calc(50% - 720px);
+    width: 1440px;
+    height: 501px;
+    font-size: 26px;
+    color: #2f3547;
+}
+
+.frameParent79 {
+    position: absolute;
+    bottom: -0.01px;
+    left: calc(50% - 720px);
+    box-shadow: -10px -10px 20px #fff inset, 8px 8px 16px #c4c4c4 inset;
+    background-color: #dfe6e9;
+    width: 1440px;
+    height: 459px;
+    overflow: hidden;
+}
+
+.frameParent80 {
+    position: absolute;
+    top: 49.81px;
+    left: 53.96px;
+    width: 1339.5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}
+
+.frameParent81 {
+    align-self: stretch;
+    display: flex;
+    align-items: flex-start;
+    gap: 35px;
+}
+
+.frameParent82 {
+    width: 676px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    flex-shrink: 0;
+}
+
+.logo01SynapseSpark1Group {
+    width: 577px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.logo01SynapseSpark1Icon2 {
+    width: 299px;
+    height: 112px;
+    position: relative;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+.frameParent83 {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    flex-shrink: 0;
+}
+
+.onePlatformParent {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.onePlatform {
+    position: relative;
+    letter-spacing: -0.03em;
+    line-height: 34px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.sparklesIcon {
+    height: 23px;
+    width: 23px;
+    position: relative;
+}
+
+.prgeeqGlobalSolutionsPrivatParent {
+    width: 459px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+    font-size: 16px;
+}
+
+.prgeeqGlobalSolutions {
+    align-self: stretch;
+    position: relative;
+    letter-spacing: 0.03em;
+    line-height: 24px;
+}
+
+.prestigeAtlanta1012Container {
+    align-self: stretch;
+    height: 77px;
+    position: relative;
+    line-height: 24px;
+    display: flex;
+    align-items: flex-end;
+    flex-shrink: 0;
+}
+
+.blankLine9 {
+    line-height: 24px;
+}
+
+.frameParent84 {
+    width: 631px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 24px;
+    flex-shrink: 0;
+    font-size: 22px;
+    color: #2d4cc8;
+}
+
+.frameParent85 {
+    width: 619px;
+    display: flex;
+    align-items: flex-start;
+    gap: 32px;
+}
+
+.aboutUsParent {
+    width: 123px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.aboutUs {
+    width: 93px;
+    position: relative;
+    letter-spacing: -0.03em;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.ourMissionParent {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+    font-size: 20px;
+    color: #2f3547;
+}
+
+.ourMission {
+    align-self: stretch;
+    height: 26px;
+    position: relative;
+    letter-spacing: 0.03em;
+    line-height: 28px;
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.quickLinksParent {
+    width: 207px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.quickLinks {
+    align-self: stretch;
+    height: 26px;
+    position: relative;
+    letter-spacing: -0.03em;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.neurolxpParent {
+    height: 181px;
+    width: 205px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.neurolxp {
+    align-self: stretch;
+    height: 26px;
+    position: relative;
+    letter-spacing: -0.03em;
+    line-height: 30px;
+    display: flex;
+    white-space: pre-wrap;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.ourCustomersGroup {
+    width: 221px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+    flex-shrink: 0;
+    font-size: 20px;
+    color: #2f3547;
+}
+
+.smartContentCreation {
+    width: 229px;
+    height: 26px;
+    position: relative;
+    letter-spacing: 0.03em;
+    line-height: 28px;
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.frameParent86 {
+    width: 392.4px;
+    height: 80.1px;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.frameChild40 {
+    height: 80.1px;
+    width: 80.1px;
+    position: relative;
+}
+
+.copyright2026 {
+    align-self: stretch;
+    height: 47px;
+    position: relative;
+    font-size: 16px;
+    letter-spacing: -0.03em;
+    line-height: 56px;
+    font-weight: 600;
+    color: #2d4cc8;
+    text-align: center;
+    display: inline-block;
+    flex-shrink: 0;
+}
+
+.frameWrapper20 {
+    position: absolute;
+    bottom: 0px;
+    left: calc(50% - 720px);
+    box-shadow: -8px -8px 16px #fff inset, 10px 10px 10px #c4c4c4 inset;
+    background-color: #dfe6e9;
+    width: 1440px;
+    height: 459px;
+    overflow: hidden;
+}
+
+.frameParent91 {
+    width: 631px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: relative;
+    isolation: isolate;
+    gap: 24px;
+    flex-shrink: 0;
+    font-size: 22px;
+    color: #2d4cc8;
+}
+
+.frameParent92 {
+    width: 619px;
+    display: flex;
+    align-items: flex-start;
+    gap: 32px;
+    z-index: 0;
+    flex-shrink: 0;
+}
+
+.ourMissionGroup {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+    font-size: 18px;
+    color: #2f3547;
+}
+
+.neurolxpGroup {
+    display: flex;
+    align-items: flex-start;
+    flex-shrink: 0;
+}
+
+.neurolxp2 {
+    height: 26px;
+    width: 103px;
+    position: relative;
+    letter-spacing: -0.03em;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.neurolxpTxt {
+    width: 100%;
+    white-space: pre-wrap;
+}
+
+.neurolxp3 {
+    line-height: 30px;
+}
+
+.span {
+    font-size: 12px;
+    line-height: 30px;
+}
+
+.tm {
+    height: 17px;
+    width: 23px;
+    position: relative;
+    font-size: 12px;
+    letter-spacing: -0.03em;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.ourCustomersContainer {
+    width: 221px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+    flex-shrink: 0;
+    font-size: 18px;
+    color: #2f3547;
+}
+
+.frameParent94 {
+    width: 392.4px;
+    height: 80.1px;
+    margin: 0 !important;
+    position: absolute;
+    top: 217.19px;
+    left: 135.04px;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    z-index: 1;
+    flex-shrink: 0;
+}
+
+.frameChild44 {
+    height: 80.1px;
+    width: 80.1px;
+    position: relative;
+    flex-shrink: 0;
+}
+
+.frameChild49 {
+    position: absolute;
+    top: 0px;
+    left: calc(50% - 30.07px);
+    border-radius: 32px;
+    width: 59.1px;
+    height: 92px;
+    object-fit: contain;
+}
+
+.frameInner {
+    width: 411.5px;
+    height: 50.3px;
+    position: relative;
+    border-radius: 28px;
+    background: #dfe6e9;
+    box-shadow:
+        inset -4px -4px 8px #ffffff,
+        inset 4px 4px 8px rgba(196, 196, 196, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    flex-shrink: 0;
+    color: #2d4cc8;
+    font-family: 'Segoe UI';
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 32px;
+    letter-spacing: 0.02em;
+    white-space: nowrap;
+}
+
+.frameIcon {
+    width: 198px;
+    height: 60.2px;
+    position: relative;
+    border-radius: 8px;
+    background: #dfe6e9;
+    box-shadow:
+        -4px -4px 8px #ffffff,
+        4px 4px 8px rgba(196, 196, 196, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    flex-shrink: 0;
+    color: #2D4CC8;
+    font-family: 'Segoe UI';
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 32px;
+    letter-spacing: 0.02em;
+    white-space: nowrap;
+}
+
+
+.frameParent9 > .frameChild2 {
+    width: 274.5px;
+    height: 50.2px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-radius:28px;
+    background:#DFE6E9;
+    box-shadow: inset -4px -4px 8px #FFFFFF,
+                inset 4px 4px 8px rgba(196,196,196,.8);
+    color:#2D4CC8;
+    font-family:'Segoe UI';
+    font-size:24px;
+    font-weight:500;
+    line-height:24px;
+    letter-spacing:.02em;
+    text-align:center;
+    flex-shrink:0;
+}
+
+.frameParent10 .frameChild3 {
+    width: 70.05px;
+    height: 70.05px;
+    position: relative;
+    flex: none;
+    flex-grow: 0;
+    border-radius: 100px;
+    background: #dfe6e9;
+    box-shadow:
+        inset -4px -4px 8px #ffffff,
+        inset 4px 4px 8px rgba(196, 196, 196, 0.8);
+    transform: rotate(0.05deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.frameParent10 .featureIconInner {
+    width: 50px;
+    height: 50px;
+    position: relative;
+    border-radius: 50%;
+    background: #dfe6e9;
+    box-shadow:
+        8px 8px 16px #c6c6c9,
+        -8px -8px 16px #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.frameParent10 .featureIconSlot {
+    width: 34px;
+    height: 34px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: rotate(0.05deg);
+}
+
+.frameParent10 .featureIconImage,
+.frameParent10 .featureIconSlot > img,
+.frameParent10 .featureIconSlot > svg {
+    width: 34px;
+    height: 34px;
+    display: block;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+
+
+.exploreEngagePill{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    min-width:275px;
+    height:50px;
+    padding:0 28px;
+    border-radius:28px;
+    background:#DFE6E9;
+    box-shadow: inset -6px -6px 12px #FFFFFF, inset 6px 6px 12px #C4C4C4;
+    color:#2D4CC8;
+    font-family:'Segoe UI';
+    font-size:24px;
+    font-weight:600;
+    line-height:24px;
+    letter-spacing:.02em;
+}
+
+.practicePill {
+    width: 224.8px;
+    height: 50.2px;
+    box-sizing: border-box;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+    border-radius: 28px;
+    background: #DFE6E9;
+    box-shadow:
+        inset -4px -4px 8px #FFFFFF,
+        inset 4px 4px 8px rgba(196, 196, 196, 0.8);
+    color: #2D4CC8;
+    font-family: 'Segoe UI';
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1;
+    letter-spacing: 0.02em;
+    text-align: center;
+}
+
+
+.resultIconCircle {
+    position: relative;
+    width: 70px;
+    height: 70px;
+    flex: 0 0 70px;
+    border-radius: 100px;
+    background: #DFE6E9;
+    box-shadow:
+        inset -4px -4px 8px #FFFFFF,
+        inset 4px 4px 8px rgba(196, 196, 196, 0.8);
+}
+
+.resultIconInner {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    background: #DFE6E9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    outline: none;
+    box-shadow:
+        -3px -3px 6px rgba(255, 255, 255, 0.72),
+        3px 3px 6px rgba(196, 196, 196, 0.52);
+}
+
+.resultIconImage {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+    display: block;
+    border: none;
+    outline: none;
+    flex-shrink: 0;
+}
+
+
+.frameParent10 .frameChild3 {
+    position: relative;
+    width: 70px;
+    height: 70px;
+    flex: 0 0 70px;
+    border-radius: 50%;
+    background: #DFE6E9;
+    box-shadow:
+        inset -4px -4px 8px #FFFFFF,
+        inset 4px 4px 8px rgba(196, 196, 196, 0.8);
+    border: none;
+    outline: none;
+}
+
+.frameParent10 .featureIconInner {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    background: #DFE6E9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+
+    
+    box-shadow:
+        -3px -3px 6px rgba(255, 255, 255, 0.72),
+        3px 3px 6px rgba(196, 196, 196, 0.52);
+}
+
+.frameParent10 .featureIconSlot {
+    width: 34px;
+    height: 34px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: none;
+    border: none;
+    outline: none;
+}
+
+.frameParent10 .featureIconSlot img {
+    width: 34px;
+    height: 34px;
+    object-fit: contain;
+    display: block;
+    border: none;
+    outline: none;
+}
+
+.builtForScalePill {
+    width: 224.2px;
+    height: 50.2px;
+    box-sizing: border-box;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+    border-radius: 28px;
+    background: #DFE6E9;
+
+    
+    box-shadow:
+        inset -4px -4px 8px #FFFFFF,
+        inset 4px 4px 8px rgba(196, 196, 196, 0.8);
+
+    color: #2D4CC8;
+    font-family: "Segoe UI";
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    text-align: center;
+    border: none;
+    outline: none;
+}
+
+
+.scaleIconCircle {
+    position: relative;
+    width: 70px;
+    height: 70px;
+    flex: 0 0 70px;
+    border-radius: 100px;
+    background: #DFE6E9;
+    box-shadow:
+        inset -4px -4px 8px #FFFFFF,
+        inset 4px 4px 8px rgba(196, 196, 196, 0.8);
+    border: none;
+    outline: none;
+}
+
+.scaleIconInner {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    background: #DFE6E9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    outline: none;
+
+    
+    box-shadow:
+        -3px -3px 6px rgba(255, 255, 255, 0.72),
+        3px 3px 6px rgba(196, 196, 196, 0.52);
+}
+
+.scaleIconImage {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+    display: block;
+    border: none;
+    outline: none;
+    flex-shrink: 0;
+}
+
+
+
+.masteryPill,
+.learnMorePill{
+display:flex;
+align-items:center;
+justify-content:center;
+height:50px;
+padding:0 24px;
+border:none;
+border-radius:28px;
+background:#DFE6E9;
+box-shadow:inset -4px -4px 8px #FFFFFF,inset 4px 4px 8px rgba(196,196,196,.8);
+font-family:'Segoe UI';
+font-size:24px;
+font-weight:500;
+line-height:24px;
+letter-spacing:.02em;
+color:#2D4CC8;
+}
+
+.learnMorePill{
+width:204px;
+cursor:pointer;
+}
+
+.masteryPill{
+min-width:290px;
+}
+
+.bookADemo,
+.startLearning{
+cursor:pointer;
+border:none;
+background:transparent;
+font:inherit;
+padding:0;
+}
+
+.startLearning{
+color:#2D4CC8;
+font-family:'Segoe UI';
+font-weight:600;
+opacity:1;
+-webkit-text-fill-color:#2D4CC8;
+}
+
+
+.masteryImageFrame{
+    position:relative;
+    width:708px;
+    height:597px;
+    border-radius:50%;
+    background:#DFE6E9;
+    overflow:hidden;
+    box-shadow:inset -8px -8px 16px #FFFFFF,
+               inset 8px 8px 16px #C4C4C4;
+}
+
+
+.masteryImageFrame::before{
+    content:"";
+    position:absolute;
+    left:48px;
+    top:41px;
+    width:612px;
+    height:515px;
+    border-radius:50%;
+    background:#DFE6E9;
+    box-shadow:-8px -8px 16px #FFFFFF,
+               8px 8px 16px #C4C4C4;
+    z-index:1;
+    pointer-events:none;
+}
+
+.masteryImage{
+    position:absolute;
+    left:28px;
+    top:7px;
+    width:652px;
+    height:549px;
+    border-radius:50%;
+    object-fit:cover;
+    object-position:center center;
+    box-shadow:none;
+    border:none;
+    z-index:2;
+}
+
+
+
+.frameParent73 .frameParent74 {
+    gap: 48px;
+}
+
+.frameParent73 .frameParent41 {
+    width: 573px;
+    gap: 32px;
+}
+
+.frameParent73 .frameParent5 {
+    gap: 32px;
+}
+
+.frameParent73 .masteryPill {
+    width: 297px;
+    min-width: 0;
+    height: 50px;
+    padding: 0 20px;
+    box-sizing: border-box;
+    color: #2D4CC8;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+}
+
+.frameParent73 .beyondLearningInto {
+    width: 573px;
+    margin: 0;
+    color: #31344B;
+    font-family: 'Segoe UI';
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 60px;
+    letter-spacing: 0.03em;
+    text-shadow: none;
+}
+
+.frameParent73 .perfectForUniversities {
+    width: 573px;
+    margin: 0;
+    color: #2F3547;
+    font-family: 'Segoe UI';
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 40px;
+    letter-spacing: 0.03em;
+}
+
+.frameParent73 .frameParent77 {
+    gap: 32px;
+}
+
+.frameParent73 .frameWrapper19 {
+    width: 215px;
+    height: 65px;
+}
+
+.frameParent73 .bookADemo {
+    width: auto;
+    color: #2D4CC8;
+    font-family: 'Segoe UI';
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 32px;
+    white-space: nowrap;
+}
+
+.frameParent73 .learnMorePill {
+    width: 208px;
+    height: 65px;
+    color: #31344B;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 32px;
+    box-shadow: -8px -8px 16px #FFFFFF, 8px 8px 16px #C6C6C9;
+}
+
+
+@media screen and (min-width: 2500px) and (max-width: 2600px) {
+    html,
+    body {
+        width: 100%;
+        min-width: 2560px;
+        margin: 0;
+        overflow-x: hidden;
+        background-color: #dfe6e9;
+    }
+
+    .interactiveGamifiedLearnin {
+        width: 1440px;
+        min-width: 1440px;
+        margin: 0 auto;
+        zoom: 1.7777778;
+        overflow: hidden;
+    }
+}
+
+
+@media screen and (min-width: 1440px) and (max-width: 1440px) {
+    html,
+    body {
+        width: 100%;
+        min-width: 0;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+        background-color: #dfe6e9;
+    }
+
+    .interactiveGamifiedLearnin {
+        width: 1440px;
+        min-width: 1440px;
+        margin: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        zoom: 1;
+        overflow: hidden;
+    }
+}
+
+
+@media screen and (min-width: 1360px) and (max-width: 1439px) {
+    html,
+    body {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+        background-color: #dfe6e9;
+    }
+
+    .interactiveGamifiedLearnin {
+        width: 1440px;
+        min-width: 1440px;
+        max-width: 1440px;
+        margin: 0;
+        left: 0;
+        transform: none;
+        transform-origin: top left;
+        zoom: calc(1439 / 1440);
+        overflow: hidden;
+    }
+}
+
+
+@media screen and (min-width: 1025px) and (max-width: 1359px) {
+    html,
+    body {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+        background-color: #dfe6e9;
+    }
+
+    .interactiveGamifiedLearnin {
+        width: 1440px;
+        min-width: 1440px;
+        max-width: 1440px;
+        margin: 0;
+        left: 0;
+        transform: none;
+        transform-origin: top left;
+        zoom: calc(1280 / 1440);
+        overflow: hidden;
+    }
+}
+
+
+@media screen and (min-width: 1024px) and (max-width: 1024px) {
+    html,
+    body {
+        width: 1024px;
+        min-width: 1024px;
+        max-width: 1024px;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+        background-color: #dfe6e9;
+    }
+
+    .interactiveGamifiedLearnin {
+        width: 1440px;
+        min-width: 1440px;
+        max-width: 1440px;
+        margin: 0;
+        left: 0;
+        transform: none;
+        transform-origin: top left;
+        zoom: 0.7111111111;
+        overflow: hidden;
+    }
+}
+
+
+@media screen and (min-width:768px) and (max-width:768px){
+  html,body{
+    width:768px;
+    min-width:768px;
+    max-width:768px;
+    margin:0;
+    padding:0;
+    overflow-x:hidden;
+    background:#dfe6e9;
+  }
+
+  .interactiveGamifiedLearnin{
+    width:1440px;
+    min-width:1440px;
+    max-width:1440px;
+    transform:none;
+    transform-origin:top left;
+    zoom:0.5333333;
+    overflow:hidden;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 320px) {
+    html,
+    body {
+        width: 320px;
+        min-width: 320px;
+        max-width: 320px;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+        background-color: #dfe6e9;
+    }
+
+    .interactiveGamifiedLearnin {
+        width: 1440px;
+        min-width: 1440px;
+        max-width: 1440px;
+        height: 5675px;
+        margin: 0;
+        left: 0;
+        transform: none;
+        transform-origin: top left;
+        zoom: 0.2222222222;
+        overflow: hidden;
+    }
+
+    .frameParent17 {
+        height: 1125px;
+    }
+
+    .frameParent20 {
+        width: 830px;
+        left: calc(50% - 415px);
+        display: grid;
+        grid-template-columns: repeat(2, 380px);
+        grid-auto-rows: 150px;
+        justify-content: center;
+        align-items: stretch;
+        column-gap: 70px;
+        row-gap: 50px;
+    }
+
+    .frameParent20 > .frameParent21,
+    .frameParent20 > .frameParent35 {
+        display: contents;
+    }
+
+    .frameParent20 .frameParent22,
+    .frameParent20 .frameParent24 {
+        width: 380px;
+        height: 150px;
+        margin: 0;
+    }
+
+    .frameParent40 {
+        top: 2412px;
+    }
+
+    .image20Parent4 {
+        top: 3204px;
+    }
+
+    .interactiveGamifiedLearninChild {
+        top: 3402.41px;
+    }
+
+    .frameParent62 {
+        top: 4254px;
+    }
+
+    .frameParent73 {
+        top: 4998px;
+    }
+
+    .frameParent78 {
+        top: 5771px;
+    }
+}
+
+
+@media screen and (min-width: 321px) and (max-width: 767px) {
+    html,
+    body {
+        width: 100%;
+        min-width: 0;
+        max-width: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+        background-color: #dfe6e9;
+    }
+
+    .interactiveGamifiedLearnin {
+        width: 1440px;
+        min-width: 1440px;
+        max-width: 1440px;
+        height: 5675px;
+        margin: 0;
+        left: 0;
+        transform: none;
+        transform-origin: top left;
+        zoom: calc(100vw / 1440px);
+        overflow: hidden;
+    }
+
+    .frameParent17 {
+        height: 1125px;
+    }
+
+    .frameParent20 {
+        width: 830px;
+        left: calc(50% - 415px);
+        display: grid;
+        grid-template-columns: repeat(2, 380px);
+        grid-auto-rows: 150px;
+        justify-content: center;
+        align-items: stretch;
+        column-gap: 70px;
+        row-gap: 50px;
+    }
+
+    .frameParent20 > .frameParent21,
+    .frameParent20 > .frameParent35 {
+        display: contents;
+    }
+
+    .frameParent20 .frameParent22,
+    .frameParent20 .frameParent24 {
+        width: 380px;
+        height: 150px;
+        margin: 0;
+    }
+
+    .frameParent40 {
+        top: 2412px;
+    }
+
+    .image20Parent4 {
+        top: 3204px;
+    }
+
+    .interactiveGamifiedLearninChild {
+        top: 3402.41px;
+    }
+
+    .frameParent62 {
+        top: 4254px;
+    }
+
+    .frameParent73 {
+        top: 4998px;
+    }
+
+    .frameParent78 {
+        top: 5771px;
+    }
+}
+
+.frameParent14 .frameChild3{
+    position:relative;
+    overflow:hidden;
+}
+
+.frameParent14 .frameChild3::after{
+    content:"";
+    position:absolute;
+    inset:-20%;
+    background:linear-gradient(
+        110deg,
+        transparent 35%,
+        rgba(255,255,255,.75) 50%,
+        transparent 65%);
+    transform:translateX(-180%) skewX(-20deg);
+    animation:shineSweep 4.5s linear infinite;
+    pointer-events:none;
+}
+
+@keyframes shineSweep{
+    to{
+        transform:translateX(180%) skewX(-20deg);
+    }
+}
+
+@media (prefers-reduced-motion:reduce){
+    .frameParent14 .frameChild3::after{
+        animation:none;
+    }
+}
+
+.frameParent12 .frameChild3,
+.frameParent13 .frameChild3,
+.frameParent14 .frameChild3,
+.frameParent16 .frameChild3{
+    position:relative;
+    overflow:hidden;
+}
+
+.frameParent12 .frameChild3::after,
+.frameParent13 .frameChild3::after,
+.frameParent14 .frameChild3::after,
+.frameParent16 .frameChild3::after{
+    content:"";
+    position:absolute;
+    inset:-20%;
+    background:linear-gradient(110deg,
+        transparent 35%,
+        rgba(255,255,255,.8) 50%,
+        transparent 65%);
+    transform:translateX(-180%) skewX(-20deg);
+    animation:shineSweep 4s linear infinite;
+    pointer-events:none;
+}
+
+@keyframes shineSweep{
+    to{transform:translateX(180%) skewX(-20deg);}
+}
+
+@media (prefers-reduced-motion: reduce){
+ .frameParent12 .frameChild3::after,
+ .frameParent13 .frameChild3::after,
+ .frameParent14 .frameChild3::after,
+ .frameParent16 .frameChild3::after{
+   animation:none;
+ }
+}
+
+
+.frameChild8,
+.frameChild9,
+.frameChild10,
+.frameChild11,
+.frameChild12,
+.frameChild13,
+.frameChild14,
+.frameChild15 {
+    transform-origin: center;
+    will-change: transform, filter, box-shadow;
+}
+
+
+.frameChild8 {
+    animation: numberPulse 3.8s ease-in-out infinite;
+}
+
+
+.frameChild9 {
+    animation: numberSideShift 4.2s ease-in-out infinite;
+}
+
+
+.frameChild10 {
+    animation: numberTilt 4.6s ease-in-out infinite;
+}
+
+
+.frameChild11 {
+    animation: numberBounce 4s ease-in-out infinite;
+}
+
+
+.frameChild12 {
+    animation: numberOrbit 5s ease-in-out infinite;
+}
+
+
+.frameChild13 {
+    animation: numberFlip 5.4s ease-in-out infinite;
+}
+
+
+.frameChild14 {
+    animation: numberGlow 4.8s ease-in-out infinite;
+}
+
+
+.frameChild15 {
+    animation: numberSettle 4.4s ease-in-out infinite;
+}
+
+@keyframes numberPulse {
+    0%, 72%, 100% {
+        transform: scale(1);
+    }
+    82% {
+        transform: scale(1.08);
+    }
+    90% {
+        transform: scale(1);
+    }
+}
+
+@keyframes numberSideShift {
+    0%, 70%, 100% {
+        transform: translateX(0);
+    }
+    80% {
+        transform: translateX(5px);
+    }
+    90% {
+        transform: translateX(-2px);
+    }
+}
+
+@keyframes numberTilt {
+    0%, 72%, 100% {
+        transform: rotate(0deg);
+    }
+    82% {
+        transform: rotate(5deg);
+    }
+    90% {
+        transform: rotate(-2deg);
+    }
+}
+
+@keyframes numberBounce {
+    0%, 68%, 100% {
+        transform: translateY(0);
+    }
+    78% {
+        transform: translateY(-7px);
+    }
+    88% {
+        transform: translateY(2px);
+    }
+}
+
+@keyframes numberOrbit {
+    0%, 66%, 100% {
+        transform: translate(0, 0);
+    }
+    76% {
+        transform: translate(3px, -4px);
+    }
+    86% {
+        transform: translate(-2px, -2px);
+    }
+}
+
+@keyframes numberFlip {
+    0%, 68%, 100% {
+        transform: perspective(500px) rotateY(0deg);
+    }
+    82% {
+        transform: perspective(500px) rotateY(18deg);
+    }
+    92% {
+        transform: perspective(500px) rotateY(-5deg);
+    }
+}
+
+@keyframes numberGlow {
+    0%, 70%, 100% {
+        filter: brightness(1);
+        box-shadow: none;
+    }
+    84% {
+        filter: brightness(1.12);
+        box-shadow: 0 0 14px rgba(144, 117, 7, 0.35);
+    }
+}
+
+@keyframes numberSettle {
+    0%, 68%, 100% {
+        transform: scale(1);
+    }
+    78% {
+        transform: scale(0.94);
+    }
+    88% {
+        transform: scale(1.06);
+    }
+}
+
+
+.frameChild8:hover,
+.frameChild9:hover,
+.frameChild10:hover,
+.frameChild11:hover,
+.frameChild12:hover,
+.frameChild13:hover,
+.frameChild14:hover,
+.frameChild15:hover {
+    animation-play-state: paused;
+}
+
+
+@media (prefers-reduced-motion: reduce) {
+    .frameChild8,
+    .frameChild9,
+    .frameChild10,
+    .frameChild11,
+    .frameChild12,
+    .frameChild13,
+    .frameChild14,
+    .frameChild15 {
+        animation: none !important;
+        transform: none !important;
+        filter: none !important;
+    }
+}
+
+
+.frameWrapper8 .image20Parent,
+.frameWrapper9 .image20Parent,
+.frameWrapper11 .image20Parent,
+.frameWrapper13 .image20Parent {
+    box-sizing: border-box;
+    border: 2px dashed transparent;
+    transition:
+        border-color 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+
+.frameWrapper8:hover .image20Parent {
+    border-color: #67096e;
+}
+
+
+.frameWrapper9:hover .image20Parent {
+    border-color: #bf1869;
+}
+
+
+.frameWrapper11:hover .image20Parent {
+    border-color: #2d4cc8;
+}
+
+
+.frameWrapper13:hover .image20Parent {
+    border-color: #046f73;
+}
+
+
+.frameWrapper8:focus-within .image20Parent {
+    border-color: #67096e;
+}
+
+.frameWrapper9:focus-within .image20Parent {
+    border-color: #bf1869;
+}
+
+.frameWrapper11:focus-within .image20Parent {
+    border-color: #2d4cc8;
+}
+
+.frameWrapper13:focus-within .image20Parent {
+    border-color: #046f73;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .frameWrapper8 .image20Parent,
+    .frameWrapper9 .image20Parent,
+    .frameWrapper11 .image20Parent,
+    .frameWrapper13 .image20Parent {
+        transition: none;
+    }
+}
+
+.frameParent62 .scaleIconCircle {
+    border-radius: 50%;
+    transform-origin: center;
+    overflow: visible !important;
+    will-change: transform, filter;
+}
+
+
+.frameParent62 .frameParent57:has(.createInteractiveCourses) .scaleIconCircle {
+    animation: builtScaleGlowBlue 3.2s ease-in-out infinite;
+}
+
+
+.frameParent62 .frameParent57:has(.buildEngagingActivities) .scaleIconCircle {
+    animation: builtScaleGlowPink 3.2s ease-in-out infinite;
+}
+
+
+.frameParent62 .frameParent57:has(.deliverSimulationsAnd) .scaleIconCircle {
+    animation: builtScaleGlowGreen 3.2s ease-in-out infinite;
+}
+
+
+.frameParent62 .frameParent57:has(.reinforceLearningWith) .scaleIconCircle {
+    animation: builtScaleGlowOrange 3.2s ease-in-out infinite;
+}
+
+
+.frameParent62 .frameParent57:has(.trackLearnerPerformance) .scaleIconCircle {
+    animation: builtScaleGlowTeal 3.2s ease-in-out infinite;
+}
+
+.frameParent62 .frameParent57:has(.supportDigitalAnd) .scaleIconCircle {
+    animation: builtScaleGlowPurple 3.2s ease-in-out infinite;
+}
+
+@keyframes builtScaleGlowBlue {
+    0%, 100% {
+        transform: scale(1);
+        filter: drop-shadow(0 0 0 rgba(45, 76, 200, 0));
+    }
+    50% {
+        transform: scale(1.055);
+        filter:
+            drop-shadow(0 0 8px rgba(45, 76, 200, 0.55))
+            drop-shadow(0 0 16px rgba(45, 76, 200, 0.30));
+    }
+}
+
+@keyframes builtScaleGlowPink {
+    0%, 100% {
+        transform: scale(1);
+        filter: drop-shadow(0 0 0 rgba(191, 24, 105, 0));
+    }
+    50% {
+        transform: scale(1.055);
+        filter:
+            drop-shadow(0 0 8px rgba(191, 24, 105, 0.55))
+            drop-shadow(0 0 16px rgba(191, 24, 105, 0.30));
+    }
+}
+
+@keyframes builtScaleGlowGreen {
+    0%, 100% {
+        transform: scale(1);
+        filter: drop-shadow(0 0 0 rgba(42, 115, 8, 0));
+    }
+    50% {
+        transform: scale(1.055);
+        filter:
+            drop-shadow(0 0 8px rgba(42, 115, 8, 0.55))
+            drop-shadow(0 0 16px rgba(42, 115, 8, 0.30));
+    }
+}
+
+@keyframes builtScaleGlowOrange {
+    0%, 100% {
+        transform: scale(1);
+        filter: drop-shadow(0 0 0 rgba(192, 85, 18, 0));
+    }
+    50% {
+        transform: scale(1.055);
+        filter:
+            drop-shadow(0 0 8px rgba(192, 85, 18, 0.55))
+            drop-shadow(0 0 16px rgba(192, 85, 18, 0.30));
+    }
+}
+
+@keyframes builtScaleGlowTeal {
+    0%, 100% {
+        transform: scale(1);
+        filter: drop-shadow(0 0 0 rgba(4, 111, 115, 0));
+    }
+    50% {
+        transform: scale(1.055);
+        filter:
+            drop-shadow(0 0 8px rgba(4, 111, 115, 0.55))
+            drop-shadow(0 0 16px rgba(4, 111, 115, 0.30));
+    }
+}
+
+@keyframes builtScaleGlowPurple {
+    0%, 100% {
+        transform: scale(1);
+        filter: drop-shadow(0 0 0 rgba(103, 9, 110, 0));
+    }
+    50% {
+        transform: scale(1.055);
+        filter:
+            drop-shadow(0 0 8px rgba(103, 9, 110, 0.55))
+            drop-shadow(0 0 16px rgba(103, 9, 110, 0.30));
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .frameParent62 .scaleIconCircle {
+        animation: none !important;
+        transform: none !important;
+        filter: none !important;
+    }
+}
+
+
+@media screen and (max-width: 767px) {
+  html,
+  body {
+    width: 100% !important;
+    min-width: 0 !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow-x: hidden !important;
+    background: #dfe6e9 !important;
+  }
+
+  .interactiveGamifiedLearnin {
+    width: 100% !important;
+    min-width: 0 !important;
+    max-width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+    margin: 0 !important;
+    padding: 0 0 40px !important;
+    zoom: 1 !important;
+    transform: none !important;
+    left: auto !important;
+    overflow: hidden !important;
+    font-size: 30px !important;
+    box-sizing: border-box !important;
+  }
+
+  
+  .frameParent,
+  .frameParent78 {
+    display: none !important;
+  }
+
+  
+  .frameDiv {
+    position: relative !important;
+    top: auto !important;
+    left: auto !important;
+    width: calc(100% - 32px) !important;
+    margin: 16px auto 12px !important;
+    gap: 6px !important;
+    flex-wrap: wrap !important;
+    font-size: 14px !important;
+    line-height: 22px !important;
+  }
+
+  
+  .frameParent2 {
+    position: relative !important;
+    top: auto !important;
+    left: auto !important;
+    width: calc(100% - 24px) !important;
+    height: auto !important;
+    min-height: 0 !important;
+    margin: 0 auto !important;
+    padding: 12px !important;
+    box-sizing: border-box !important;
+  }
+
+  .frameItem {
+    position: absolute !important;
+    inset: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    border-radius: 24px !important;
+  }
+
+  .frameParent3 {
+    position: relative !important;
+    top: auto !important;
+    left: auto !important;
+    width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+    padding: 28px 20px 22px !important;
+    box-sizing: border-box !important;
+    overflow: hidden !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    border-radius: 20px !important;
+  }
+
+  .frameParent4 {
+    position: relative !important;
+    top: auto !important;
+    left: auto !important;
+    width: 100% !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 20px !important;
+    text-align: center !important;
+    z-index: 2 !important;
+  }
+
+  .frameWrapper,
+  .frameParent5,
+  .frameParent6,
+  .frameWrapper2 {
+    width: 100% !important;
+    height: auto !important;
+    align-items: center !important;
+  }
+
+  .frameParent5 {
+    gap: 18px !important;
+  }
+
+  .frameParent6 {
+    gap: 12px !important;
+  }
+
+  .frameInner,
+  .exploreEngagePill,
+  .practicePill,
+  .builtForScalePill,
+  .masteryPill {
+    width: fit-content !important;
+    min-width: 0 !important;
+    max-width: calc(100% - 32px) !important;
+    height: 44px !important;
+    padding: 0 18px !important;
+    box-sizing: border-box !important;
+    font-size: 16px !important;
+    line-height: 24px !important;
+    white-space: nowrap !important;
+  }
+
+  .transformLearningInto {
+    width: 100% !important;
+    max-width: 380px !important;
+    height: auto !important;
+    margin: 0 auto !important;
+    font-size: 25px !important;
+    line-height: 33px !important;
+    letter-spacing: 0.01em !important;
+    text-align: center !important;
+    white-space: normal !important;
+    overflow-wrap: normal !important;
+    word-break: normal !important;
+  }
+
+  .transformLearningInto br {
+    display: none !important;
+  }
+
+  .transformLearningInto span {
+    display: inline !important;
+    white-space: normal !important;
+  }
+
+  .transformPassiveLearning {
+    width: 100% !important;
+    height: auto !important;
+    margin: 0 !important;
+    font-size: 17px !important;
+    line-height: 1.5 !important;
+    text-align: center !important;
+  }
+
+  .frameParent7 {
+    width: 100% !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 12px !important;
+    flex-wrap: nowrap !important;
+  }
+
+  .frameIcon,
+  .frameWrapper3 {
+    width: 142px !important;
+    min-width: 142px !important;
+    max-width: 142px !important;
+    height: 46px !important;
+    min-height: 46px !important;
+    padding: 0 12px !important;
+    box-sizing: border-box !important;
+    border-radius: 10px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    flex: 0 0 46px !important;
+    font-size: 16px !important;
+    line-height: 22px !important;
+    font-weight: 600 !important;
+    white-space: nowrap !important;
+  }
+
+  .startLearning,
+  .startLearningWrapper {
+    width: auto !important;
+    min-width: 0 !important;
+    font-size: 16px !important;
+    line-height: 22px !important;
+    justify-content: center !important;
+    white-space: nowrap !important;
+  }
+
+  .mixRacedGroupStudentsWatchIcon {
+    position: relative !important;
+    top: auto !important;
+    left: auto !important;
+    width: min(100%, 420px) !important;
+    height: auto !important;
+    aspect-ratio: 674 / 489 !important;
+    margin: 22px auto 0 !important;
+    object-fit: contain !important;
+    transform: none !important;
+    z-index: 1 !important;
+  }
+
+  
+  .frameParent8 {
+    position: relative !important;
+    top: auto !important;
+    left: auto !important;
+    width: calc(100% - 32px) !important;
+    margin: 52px auto 0 !important;
+    gap: 28px !important;
+  }
+
+  .frameWrapper4,
+  .frameParent9,
+  .activeParticipationMakesLeaWrapper {
+    width: 100% !important;
+    height: auto !important;
+  }
+
+  .frameParent9 {
+    gap: 18px !important;
+  }
+
+  .frameChild2 {
+    width: fit-content !important;
+    min-width: 0 !important;
+    max-width: calc(100% - 32px) !important;
+    height: 44px !important;
+    padding: 0 18px !important;
+    box-sizing: border-box !important;
+    font-size: 16px !important;
+    line-height: 24px !important;
+    white-space: nowrap !important;
+  }
+
+  .activeParticipationMakes {
+    width: 100% !important;
+    height: auto !important;
+    font-size: 18px !important;
+    line-height: 1.5 !important;
+  }
+
+  .frameParent10 {
+    width: 100% !important;
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 22px !important;
+  }
+
+  .frameParent11,
+  .frameParent14 {
+    width: 100% !important;
+    gap: 18px !important;
+  }
+
+  .frameParent12,
+  .frameParent13,
+  .frameParent16 {
+    width: 100% !important;
+    align-items: center !important;
+    gap: 16px !important;
+  }
+
+  .frameChild3 {
+    width: 58px !important;
+    height: 58px !important;
+    flex: 0 0 58px !important;
+  }
+
+  .interactiveParent {
+    width: calc(100% - 74px) !important;
+    gap: 6px !important;
+  }
+
+  .interactive,
+  .adaptive,
+  .engaging,
+  .practical {
+    width: auto !important;
+    height: auto !important;
+    font-size: 20px !important;
+    line-height: 28px !important;
+  }
+
+  .activitiesThatMake,
+  .experiencesThatRespond,
+  .contentThatEngages,
+  .realWorldActivitiesThat {
+    width: 100% !important;
+    height: auto !important;
+    font-size: 15px !important;
+    line-height: 22px !important;
+  }
+
+  
+  .frameParent17 {
+    position: relative !important;
+    top: auto !important;
+    left: auto !important;
+    width: calc(100% - 32px) !important;
+    height: auto !important;
+    margin: 56px auto 0 !important;
+  }
+
+  .frameWrapper5,
+  .frameWrapper6,
+  .frameWrapper7,
+  .frameParent18,
+  .frameParent19 {
+    position: relative !important;
+    top: auto !important;
+    left: auto !important;
+    width: 100% !important;
+    height: auto !important;
+  }
+
+  .frameParent18,
+  .frameParent19 {
+    gap: 18px !important;
+  }
+
+  .frameChild7 {
+    width: min(78%, 275px) !important;
+    height: 44px !important;
+  }
+
+  .interactiveActivitiesThatContainer {
+    width: 100% !important;
+    height: auto !important;
+    font-size: 30px !important;
+    line-height: 1.25 !important;
+  }
+
+  .interactiveActivitiesThat,
+  .understanding {
+    line-height: inherit !important;
+  }
+
+  .neurolxpOffersA {
+    width: 100% !important;
+    height: auto !important;
+    font-size: 17px !important;
+    line-height: 1.5 !important;
+  }
+
+  .frameParent20 {
+    position: relative !important;
+    top: auto !important;
+    left: auto !important;
+    width: 100% !important;
+    margin-top: 28px !important;
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    grid-auto-rows: auto !important;
+    gap: 18px !important;
+  }
+
+  .frameParent20 > .frameParent21,
+  .frameParent20 > .frameParent35 {
+    display: contents !important;
+  }
+
+  .frameParent20 .frameParent22,
+  .frameParent20 .frameParent24 {
+    width: 100% !important;
+    height: 132px !important;
+    min-height: 132px !important;
+    margin: 0 !important;
+    border-radius: 32px 12px 12px 12px !important;
+  }
+
+  .curiousClicksParent {
+    left: 72px !important;
+    width: calc(100% - 88px) !important;
+    top: 50% !important;
+    transform: translateY(-35%) !important;
+    gap: 8px !important;
+  }
+
+  .curiousClicks {
+    height: auto !important;
+    font-size: 19px !important;
+    line-height: 26px !important;
+    white-space: normal !important;
+  }
+
+  .discoverNewInsightsContainer,
+  .linkConceptsStepByContainer {
+    width: 100% !important;
+    height: auto !important;
+    font-size: 15px !important;
+    line-height: 22px !important;
+  }
+
+  .frameParent23,
+  .frameChild8,
+  .frameChild9,
+  .frameChild10,
+  .frameChild11,
+  .frameChild12,
+  .frameChild13,
+  .frameChild14,
+  .frameChild15 {
+    width: 52px !important;
+    height: 52px !important;
+  }
+
+  
+  .frameParent40 {
+    position: relative !important;
+    top: auto !important;
+    left: auto !important;
+    width: calc(100% - 32px) !important;
+    margin: 10px auto 0 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 34px !important;
+  }
+
+  .frameParent41 {
+    width: 100% !important;
+    align-items: center !important;
+    gap: 18px !important;
+    text-align: center !important;
+  }
+
+  .frameChild16 {
+    width: min(70%, 225px) !important;
+    height: 44px !important;
+  }
+
+  .beyondLearningInto {
+    width: 100% !important;
+    height: auto !important;
+    display: block !important;
+    font-size: 30px !important;
+    line-height: 1.25 !important;
+    text-align: center !important;
+  }
+
+  .perfectForUniversities {
+    width: 100% !important;
+    height: auto !important;
+    font-size: 17px !important;
+    line-height: 1.5 !important;
+    text-align: center !important;
+  }
+
+  .frameParent43 {
+    width: 100% !important;
+    height: auto !important;
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 18px !important;
+  }
+
+  .frameWrapper8,
+  .frameWrapper9,
+  .frameWrapper11,
+  .frameWrapper13 {
+    position: relative !important;
+    top: auto !important;
+    left: auto !important;
+    right: auto !important;
+    width: 100% !important;
+    height: 126px !important;
+  }
+
+  .frameParent44 {
+    position: relative !important;
+    width: 100% !important;
+    height: 126px !important;
+  }
+
+  .image20Parent {
+    left: 50px !important;
+    width: calc(100% - 50px) !important;
+    height: 104px !important;
+  }
+
+  .frameParent45,
+  .image20Wrapper {
+    width: 104px !important;
+    height: 104px !important;
+  }
+
+  .frameParent45 {
+    top: 50% !important;
+    left: 0 !important;
+    transform: translateY(-50%) !important;
+  }
+
+  .div,
+  .div2,
+  .div4 {
+    top: 50% !important;
+    left: 50% !important;
+    width: auto !important;
+    height: auto !important;
+    transform: translate(-50%, -50%) !important;
+    line-height: 1 !important;
+  }
+
+  .frameWrapper10,
+  .frameWrapper12,
+  .frameWrapper14 {
+    top: 50% !important;
+    left: 112px !important;
+    width: calc(100% - 124px) !important;
+    transform: translateY(-50%) !important;
+    box-sizing: border-box !important;
+  }
+
+  .frameWrapper10,
+  .frameWrapper12 {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    justify-content: center !important;
+    gap: 4px !important;
+  }
+
+  .simulationsParent {
+    top: 50% !important;
+    left: 64px !important;
+    width: calc(100% - 76px) !important;
+    transform: translateY(-50%) !important;
+    gap: 4px !important;
+    align-items: flex-start !important;
+  }
+
+  .interactiveAssessmentsParent {
+    left: auto !important;
+    width: 100% !important;
+    gap: 4px !important;
+    align-items: flex-start !important;
+  }
+
+  .simulations,
+  .scenarioBasedLearning,
+  .visualLearning,
+  .interactiveAssessments {
+    width: auto !important;
+    max-width: 100% !important;
+    height: auto !important;
+    margin: 0 !important;
+    font-size: 15px !important;
+    line-height: 20px !important;
+    text-align: left !important;
+    white-space: nowrap !important;
+    word-break: normal !important;
+    overflow-wrap: normal !important;
+  }
+
+  .linkConceptsStepByContainer,
+  .practiceRealWorldSkills {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    margin: 0 !important;
+    font-size: 13px !important;
+    line-height: 18px !important;
+    text-align: left !important;
+    white-space: normal !important;
+    word-break: normal !important;
+    overflow-wrap: normal !important;
+  }
+
+  .simulations br,
+  .scenarioBasedLearning br,
+  .visualLearning br,
+  .interactiveAssessments br,
+  .linkConceptsStepByContainer br,
+  .practiceRealWorldSkills br {
+    display: none !important;
+  }
+
+  .div,
+  .div2,
+  .div4 {
+    font-size: 42px !important;
+    line-height: 1 !important;
+  }
+
+  
+  .image20Parent4 {
+    position: relative !important;
+    top: auto !important;
+    left: auto !important;
+    width: calc(100% - 24px) !important;
+    height: auto !important;
+    margin: 58px auto 0 !important;
+    padding: 24px 14px !important;
+    box-sizing: border-box !important;
+    border-radius: 24px !important;
+    overflow: hidden !important;
+  }
+
+  .image209 {
+    display: none !important;
+  }
+
+  .frameParent52 {
+    position: relative !important;
+    top: auto !important;
+    left: auto !important;
+    width: 100% !important;
+    gap: 28px !important;
+  }
+
+  .frameWrapper15,
+  .frameParent53,
+  .howInteractiveLearningDriveParent {
+    width: 100% !important;
+    height: auto !important;
+  }
+
+  .frameParent53,
+  .howInteractiveLearningDriveParent {
+    gap: 18px !important;
+  }
+
+  .howInteractiveLearning {
+    width: 100% !important;
+    height: auto !important;
+    font-size: 30px !important;
+    line-height: 1.25 !important;
+  }
+
+  .interactiveLearningDrives {
+    width: 100% !important;
+    height: auto !important;
+    font-size: 17px !important;
+    line-height: 1.5 !important;
+  }
+
+  .frameWrapper16,
+  .frameParent54 {
+    width: 100% !important;
+    height: auto !important;
+  }
+
+  .frameParent54 {
+    min-height: 0 !important;
+    padding: 18px !important;
+    box-sizing: border-box !important;
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 24px !important;
+  }
+
+  .groupYoungBusinesspeopleUsi,
+  .peopleTakingPartBusinessEv,
+  .image21,
+  .rectangleIcon {
+    position: relative !important;
+    top: auto !important;
+    left: auto !important;
+    width: 100% !important;
+    height: auto !important;
+    max-width: 100% !important;
+  }
+
+  .groupYoungBusinesspeopleUsi {
+    order: 1 !important;
+  }
+
+  .collageCustomerExperienceCoIcon {
+    position: relative !important;
+    top: auto !important;
+    left: auto !important;
+    width: 100% !important;
+    height: auto !important;
+    border-radius: 20px !important;
+    object-fit: cover !important;
+  }
+
+  .image20Parent5 {
+    position: relative !important;
+    top: auto !important;
+    left: auto !important;
+    width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+    border-radius: 24px !important;
+    order: 2 !important;
+  }
+
+  .image2010 {
+    display: none !important;
+  }
+
+  .frameParent55 {
+    position: relative !important;
+    top: auto !important;
+    right: auto !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    padding: 16px 4px 0 !important;
+    box-sizing: border-box !important;
+    gap: 12px !important;
+    overflow: visible !important;
+    transform: translateX(-18px) !important;
+  }
+
+  .frameParent56,
+  .frameParent57 {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    min-height: 50px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+    gap: 10px !important;
+    box-sizing: border-box !important;
+  }
+
+  
+  
+  .focusedPractice,
+  .enjoyableLearning {
+    transform: translateY(14px) !important;
+  }
+
+  
+  .frameParent55 {
+    margin-bottom: -21px !important;
+  }
+
+  .resultIconCircle {
+    width: 50px !important;
+    height: 50px !important;
+    min-width: 50px !important;
+    flex: 0 0 50px !important;
+  }
+
+  .resultIconInner {
+    width: 38px !important;
+    height: 38px !important;
+  }
+
+  .resultIconImage {
+    width: 24px !important;
+    height: 24px !important;
+  }
+
+  .activeParticipation,
+  .criticalThinking,
+  .exploration,
+  .betterRetention,
+  .focusedPractice,
+  .enjoyableLearning {
+    width: auto !important;
+    max-width: none !important;
+    height: auto !important;
+    min-width: 0 !important;
+    font-size: 15px !important;
+    line-height: 22px !important;
+    white-space: nowrap !important;
+    overflow-wrap: normal !important;
+    word-break: normal !important;
+    flex: 0 1 auto !important;
+  }
+
+  
+  .interactiveGamifiedLearninChild {
+    position: relative !important;
+    top: auto !important;
+    left: auto !important;
+    width: calc(100% - 32px) !important;
+    height: auto !important;
+    margin: 52px auto 0 !important;
+  }
+
+  .frameParent62 {
+    position: relative !important;
+    top: auto !important;
+    left: auto !important;
+    width: calc(100% - 32px) !important;
+    margin: 28px auto 0 !important;
+    gap: 28px !important;
+  }
+
+  .frameChild29 {
+    width: min(70%, 224px) !important;
+    height: 44px !important;
+  }
+
+  .frameWrapper18 {
+    width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+    padding: 24px 18px !important;
+    box-sizing: border-box !important;
+    border-radius: 24px !important;
+  }
+
+  .frameParent64 {
+    position: relative !important;
+    top: auto !important;
+    left: auto !important;
+    width: 100% !important;
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 18px !important;
+  }
+
+  .frameParent65 {
+    width: 100% !important;
+    gap: 18px !important;
+  }
+
+  .createInteractiveCourses,
+  .buildEngagingActivities,
+  .deliverSimulationsAnd,
+  .reinforceLearningWith,
+  .trackLearnerPerformance,
+  .supportDigitalAnd {
+    width: 100% !important;
+    height: auto !important;
+    font-size: 17px !important;
+    line-height: 25px !important;
+    white-space: normal !important;
+  }
+
+  
+  .frameParent73 {
+    position: relative !important;
+    top: auto !important;
+    left: auto !important;
+    width: calc(100% - 32px) !important;
+    margin: 58px auto 0 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 28px !important;
+  }
+
+  .frameParent74 {
+    width: 100% !important;
+    align-items: center !important;
+    gap: 24px !important;
+    text-align: center !important;
+  }
+
+  .frameChild36 {
+    width: min(72%, 290px) !important;
+    height: 44px !important;
+  }
+
+  .frameParent77 {
+    width: 100% !important;
+    justify-content: center !important;
+    gap: 14px !important;
+    flex-wrap: wrap !important;
+  }
+
+  .frameWrapper19,
+  .frameChild37,
+  .frameChild38 {
+    width: 160px !important;
+    height: 52px !important;
+  }
+
+  .frameWrapper19 {
+    padding: 12px 18px !important;
+  }
+
+  .bookADemo {
+    width: auto !important;
+    font-size: 16px !important;
+    line-height: 24px !important;
+  }
+
+  .frameChild39 {
+    width: min(100%, 480px) !important;
+    height: auto !important;
+    object-fit: contain !important;
+  }
+
+  
+  .interactiveGamifiedLearnin img,
+  .interactiveGamifiedLearnin svg,
+  .interactiveGamifiedLearnin video {
+    max-width: 100%;
+  }
+
+  .interactiveGamifiedLearnin p,
+  .interactiveGamifiedLearnin h1,
+  .interactiveGamifiedLearnin h2,
+  .interactiveGamifiedLearnin h3,
+  .interactiveGamifiedLearnin span {
+    overflow-wrap: break-word;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .interactiveActivitiesThatContainer,
+  .beyondLearningInto,
+  .howInteractiveLearning {
+    font-size: 28px !important;
+  }
+
+  .frameParent3 {
+    padding: 24px 16px 20px !important;
+  }
+
+  .frameParent20 .frameParent22,
+  .frameParent20 .frameParent24 {
+    height: 126px !important;
+    min-height: 126px !important;
+  }
+
+  .frameWrapper8,
+  .frameWrapper9,
+  .frameWrapper11,
+  .frameWrapper13,
+  .frameParent44 {
+    height: 120px !important;
+  }
+
+  .frameParent45,
+  .image20Wrapper {
+    width: 88px !important;
+    height: 88px !important;
+  }
+
+  .image20Parent {
+    left: 42px !important;
+    width: calc(100% - 42px) !important;
+  }
+
+  .simulationsParent {
+    left: 58px !important;
+    width: calc(100% - 70px) !important;
+  }
+
+  .frameWrapper10,
+  .frameWrapper12,
+  .frameWrapper14 {
+    left: 72px !important;
+    width: calc(100% - 84px) !important;
+  }
+
+  .frameWrapper10,
+  .frameWrapper12 {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 4px !important;
+  }
+
+  .scenarioBasedLearning,
+  .visualLearning,
+  .interactiveAssessments {
+    white-space: nowrap !important;
+    width: auto !important;
+  }
+}
+
+
+
+
+@media screen and (max-width: 767px) {
+  .frameParent62 .scaleDesktopTitle,
+  .frameParent62 .scaleDesktopSubtitle {
+    display: none !important;
+  }
+
+  .frameParent62 .scaleMobileTitle,
+  .frameParent62 .scaleMobileSubtitle {
+    display: block !important;
+  }
+
+  .frameParent62 .howInteractiveLearning {
+    width: 100% !important;
+    height: auto !important;
+    font-size: 30px !important;
+    line-height: 38px !important;
+    text-align: center !important;
+  }
+
+  .frameParent62 .interactiveLearningDrives {
+    width: 100% !important;
+    height: auto !important;
+    margin-top: 0 !important;
+    font-size: 17px !important;
+    line-height: 26px !important;
+    text-align: center !important;
+  }
+
+  .frameParent62 .howInteractiveLearningDriveParent {
+    gap: 16px !important;
+  }
+}
+
+
+
+@media screen and (max-width: 767px) {
+  .frameParent62 {
+    position: relative !important;
+    top: auto !important;
+    left: auto !important;
+    width: calc(100% - 32px) !important;
+    margin: 28px auto 0 !important;
+    gap: 28px !important;
+  }
+
+  .frameParent62 .frameWrapper15,
+  .frameParent62 .frameParent53,
+  .frameParent62 .howInteractiveLearningDriveParent {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+  }
+
+  .frameParent62 .frameParent53 {
+    align-items: center !important;
+    gap: 18px !important;
+  }
+
+  .frameParent62 .howInteractiveLearningDriveParent {
+    align-items: center !important;
+    gap: 18px !important;
+  }
+
+  
+  .frameParent62 .howInteractiveLearning {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    margin: 0 !important;
+    font-size: 28px !important;
+    line-height: 36px !important;
+    letter-spacing: 0 !important;
+    text-align: center !important;
+    white-space: normal !important;
+  }
+
+  
+  .frameParent62 .interactiveLearningDrives {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    margin: 0 !important;
+    font-size: 15px !important;
+    line-height: 24px !important;
+    letter-spacing: 0 !important;
+    text-align: center !important;
+    white-space: normal !important;
+  }
+}
+
+
+
+@media screen and (max-width: 767px) {
+  
+  .frameParent62 .howInteractiveLearning {
+    width: 360px !important;
+    max-width: calc(100vw - 32px) !important;
+    height: auto !important;
+    min-height: 0 !important;
+    margin: 0 auto !important;
+    padding: 0 !important;
+    display: block !important;
+    font-size: 28px !important;
+    line-height: 36px !important;
+    letter-spacing: 0 !important;
+    text-align: center !important;
+    white-space: normal !important;
+    word-break: normal !important;
+    overflow-wrap: normal !important;
+  }
+
+  
+  .frameParent62 .interactiveLearningDrives {
+    width: 390px !important;
+    max-width: calc(100vw - 32px) !important;
+    height: auto !important;
+    min-height: 0 !important;
+    margin: 0 auto !important;
+    padding: 0 !important;
+    display: block !important;
+    font-size: 15px !important;
+    line-height: 24px !important;
+    letter-spacing: 0 !important;
+    text-align: center !important;
+    white-space: normal !important;
+    word-break: normal !important;
+    overflow-wrap: normal !important;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .frameParent62 .howInteractiveLearning {
+    width: calc(100vw - 16px) !important;
+    max-width: none !important;
+    font-size: 26px !important;
+    line-height: 34px !important;
+  }
+
+  .frameParent62 .interactiveLearningDrives {
+    width: calc(100vw - 24px) !important;
+    max-width: none !important;
+    font-size: 15px !important;
+    line-height: 23px !important;
+  }
+}
+
+
+
+@media screen and (max-width: 767px) {
+  .frameParent62 .frameWrapper18 {
+    width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+    padding: 20px 16px !important;
+    box-sizing: border-box !important;
+    overflow: hidden !important;
+    border-radius: 24px !important;
+  }
+
+  .frameParent62 .frameParent64 {
+    position: relative !important;
+    top: auto !important;
+    left: auto !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: stretch !important;
+    gap: 14px !important;
+    box-sizing: border-box !important;
+  }
+
+  .frameParent62 .frameParent65 {
+    width: 100% !important;
+    max-width: 100% !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: stretch !important;
+    gap: 14px !important;
+    box-sizing: border-box !important;
+  }
+
+  .frameParent62 .frameParent57 {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    min-height: 68px !important;
+    margin: 0 !important;
+    padding: 4px 2px !important;
+    box-sizing: border-box !important;
+
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+
+    gap: 16px !important;
+    overflow: visible !important;
+  }
+
+  .frameParent62 .scaleIconCircle {
+    width: 64px !important;
+    height: 64px !important;
+    min-width: 64px !important;
+    flex: 0 0 64px !important;
+  }
+
+  .frameParent62 .scaleIconInner {
+    width: 46px !important;
+    height: 46px !important;
+  }
+
+  .frameParent62 .scaleIconImage {
+    width: 28px !important;
+    height: 28px !important;
+  }
+
+  .frameParent62 .createInteractiveCourses,
+  .frameParent62 .buildEngagingActivities,
+  .frameParent62 .deliverSimulationsAnd,
+  .frameParent62 .reinforceLearningWith,
+  .frameParent62 .trackLearnerPerformance,
+  .frameParent62 .supportDigitalAnd {
+    width: auto !important;
+    max-width: none !important;
+    min-width: 0 !important;
+    height: auto !important;
+    margin: 0 !important;
+    padding: 0 !important;
+
+    flex: 1 1 auto !important;
+
+    font-size: 16px !important;
+    line-height: 23px !important;
+    letter-spacing: 0.01em !important;
+
+    text-align: left !important;
+    white-space: normal !important;
+    word-break: normal !important;
+    overflow-wrap: normal !important;
+  }
+
+  
+  .frameParent62 .buildEngagingActivities br,
+  .frameParent62 .deliverSimulationsAnd br,
+  .frameParent62 .reinforceLearningWith br {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .frameParent62 .frameWrapper18 {
+    padding: 18px 14px !important;
+  }
+
+  .frameParent62 .frameParent64,
+  .frameParent62 .frameParent65 {
+    gap: 12px !important;
+  }
+
+  .frameParent62 .frameParent57 {
+    min-height: 64px !important;
+    gap: 14px !important;
+  }
+
+  .frameParent62 .scaleIconCircle {
+    width: 60px !important;
+    height: 60px !important;
+    min-width: 60px !important;
+    flex-basis: 60px !important;
+  }
+
+  .frameParent62 .scaleIconInner {
+    width: 44px !important;
+    height: 44px !important;
+  }
+
+  .frameParent62 .scaleIconImage {
+    width: 26px !important;
+    height: 26px !important;
+  }
+
+  .frameParent62 .createInteractiveCourses,
+  .frameParent62 .buildEngagingActivities,
+  .frameParent62 .deliverSimulationsAnd,
+  .frameParent62 .reinforceLearningWith,
+  .frameParent62 .trackLearnerPerformance,
+  .frameParent62 .supportDigitalAnd {
+    font-size: 15px !important;
+    line-height: 22px !important;
+  }
+}
+
+
+
+@media screen and (max-width: 767px) {
+  .collageCustomerExperienceCoIcon {
+    width: 108% !important;
+    max-width: none !important;
+    height: auto !important;
+    left: -4% !important;
+    top: auto !important;
+    bottom: 0 !important;
+    object-fit: cover !important;
+    object-position: center bottom !important;
+    transform: none !important;
+  }
+}
+
+
+
+@media screen and (max-width: 767px) {
+  .masteryImageFrame {
+    width: min(92vw, 420px) !important;
+    height: auto !important;
+    aspect-ratio: 708 / 597 !important;
+    margin: 0 auto !important;
+    border-radius: 50% !important;
+    overflow: hidden !important;
+    background: #DFE6E9 !important;
+    box-shadow:
+      inset -6px -6px 12px #FFFFFF,
+      inset 6px 6px 12px #C4C4C4 !important;
+  }
+
+  .masteryImageFrame::before {
+    left: 6.78% !important;
+    top: 6.87% !important;
+    width: 86.44% !important;
+    height: 86.26% !important;
+    border-radius: 50% !important;
+    background: #DFE6E9 !important;
+    box-shadow:
+      -5px -5px 10px #FFFFFF,
+      5px 5px 10px #C4C4C4 !important;
+  }
+
+  .masteryImage {
+    left: 3.95% !important;
+    top: 1.17% !important;
+    width: 92.09% !important;
+    height: 91.96% !important;
+    border-radius: 50% !important;
+    object-fit: cover !important;
+    object-position: center center !important;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .masteryImageFrame {
+    width: min(90vw, 390px) !important;
+  }
+}
+
+
+
+@media screen and (max-width: 767px) {
+  .frameParent73 {
+    gap: 12px !important;
+  }
+
+  .frameParent73 .frameParent74 {
+    gap: 18px !important;
+  }
+
+  .frameParent73 .frameParent77 {
+    width: 100% !important;
+    gap: 12px !important;
+    justify-content: center !important;
+  }
+
+  .frameParent73 .frameWrapper19,
+  .frameParent73 .learnMorePill,
+  .frameParent73 .frameChild37,
+  .frameParent73 .frameChild38 {
+    width: 160px !important;
+    min-width: 160px !important;
+    max-width: 160px !important;
+    height: 52px !important;
+    box-sizing: border-box !important;
+  }
+
+  .frameParent73 .learnMorePill {
+    margin-bottom: 0 !important;
+  }
+
+  .frameParent73 .masteryImageFrame {
+    margin-top: -2px !important;
+  }
+}
+
+
+
+@media screen and (max-width: 767px) {
+  .frameParent73 .learnMore,
+  .frameParent73 .learnMorePill,
+  .frameParent73 .learnMorePill * {
+    font-family: 'Segoe UI' !important;
+    font-size: 16px !important;
+    font-weight: 600 !important;
+    line-height: 24px !important;
+    letter-spacing: 0 !important;
+  }
+
+  .frameParent73 {
+    gap: 0 !important;
+  }
+
+  .frameParent73 .frameParent74 {
+    gap: 8px !important;
+  }
+
+  .frameParent73 .frameParent77 {
+    gap: 8px !important;
+    margin-bottom: 0 !important;
+  }
+
+  .frameParent73 .learnMorePill {
+    margin-bottom: 0 !important;
+    transform: translateY(10) !important ;
+  }
+
+  .frameParent73 .masteryImageFrame {
+    margin-top: -28px !important;
+  }
+}
+
+
+
+@media screen and (max-width: 767px) {
+  .frameParent43 {
+    width: 100% !important;
+    gap: 16px !important;
+  }
+
+  .frameWrapper8,
+  .frameWrapper9,
+  .frameWrapper11,
+  .frameWrapper13,
+  .frameParent44 {
+    width: 100% !important;
+    height: 118px !important;
+    min-height: 118px !important;
+  }
+
+  .image20Parent {
+    left: 42px !important;
+    width: calc(100% - 42px) !important;
+    height: 102px !important;
+    top: 50% !important;
+    transform: translateY(-50%) !important;
+    border-radius: 18px !important;
+  }
+
+  .frameParent45,
+  .image20Wrapper {
+    width: 92px !important;
+    height: 92px !important;
+  }
+
+  .frameParent45 {
+    top: 50% !important;
+    left: 0 !important;
+    transform: translateY(-50%) !important;
+    z-index: 2 !important;
+  }
+
+  .div,
+  .div2,
+  .div4 {
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    width: auto !important;
+    height: auto !important;
+    font-size: 38px !important;
+    line-height: 1 !important;
+  }
+
+  
+  .simulationsParent,
+  .frameWrapper10,
+  .frameWrapper12,
+  .frameWrapper14 {
+    position: absolute !important;
+    top: 50% !important;
+    left: 112px !important;
+    width: calc(100% - 126px) !important;
+    max-width: calc(100% - 126px) !important;
+    transform: translateY(-50%) !important;
+    box-sizing: border-box !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  .simulationsParent,
+  .frameWrapper10,
+  .frameWrapper12,
+  .frameWrapper14,
+  .interactiveAssessmentsParent,
+  .interactiveParent {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    justify-content: center !important;
+    gap: 5px !important;
+  }
+
+  .interactiveAssessmentsParent,
+  .interactiveParent {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .simulations,
+  .scenarioBasedLearning,
+  .visualLearning,
+  .interactiveAssessments {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    font-size: 16px !important;
+    line-height: 21px !important;
+    font-weight: 700 !important;
+    letter-spacing: 0 !important;
+    text-align: left !important;
+    white-space: normal !important;
+    word-break: normal !important;
+    overflow-wrap: normal !important;
+  }
+
+  .practiceRealWorldSkills {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    font-size: 14px !important;
+    line-height: 19px !important;
+    letter-spacing: 0 !important;
+    text-align: left !important;
+    white-space: normal !important;
+    word-break: normal !important;
+    overflow-wrap: normal !important;
+  }
+
+  .simulations br,
+  .scenarioBasedLearning br,
+  .visualLearning br,
+  .interactiveAssessments br,
+  .practiceRealWorldSkills br {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .frameWrapper8,
+  .frameWrapper9,
+  .frameWrapper11,
+  .frameWrapper13,
+  .frameParent44 {
+    height: 112px !important;
+    min-height: 112px !important;
+  }
+
+  .image20Parent {
+    left: 38px !important;
+    width: calc(100% - 38px) !important;
+    height: 96px !important;
+  }
+
+  .frameParent45,
+  .image20Wrapper {
+    width: 84px !important;
+    height: 84px !important;
+  }
+
+  .simulationsParent,
+  .frameWrapper10,
+  .frameWrapper12,
+  .frameWrapper14 {
+    left: 102px !important;
+    width: calc(100% - 114px) !important;
+    max-width: calc(100% - 114px) !important;
+  }
+
+  .simulations,
+  .scenarioBasedLearning,
+  .visualLearning,
+  .interactiveAssessments {
+    font-size: 15px !important;
+    line-height: 20px !important;
+  }
+
+  .practiceRealWorldSkills {
+    font-size: 13px !important;
+    line-height: 18px !important;
+  }
+
+  .div,
+  .div2,
+  .div4 {
+    font-size: 36px !important;
+  }
+}
+
+
+
+@media screen and (max-width: 767px) {
+  .frameWrapper8,
+  .frameWrapper9,
+  .frameWrapper11,
+  .frameWrapper13,
+  .frameParent44 {
+    width: 100% !important;
+  }
+
+  .image20Parent {
+    left: 32px !important;
+    width: calc(100% - 32px) !important;
+  }
+
+  .frameParent45,
+  .image20Wrapper {
+    width: 82px !important;
+    height: 82px !important;
+  }
+
+  .simulationsParent,
+  .frameWrapper10,
+  .frameWrapper12,
+  .frameWrapper14 {
+    left: 96px !important;
+    right: 12px !important;
+    width: auto !important;
+    max-width: none !important;
+    padding: 0 !important;
+    box-sizing: border-box !important;
+  }
+
+  .interactiveAssessmentsParent,
+  .interactiveParent {
+    width: 100% !important;
+    max-width: none !important;
+  }
+
+  .simulations,
+  .scenarioBasedLearning,
+  .visualLearning,
+  .interactiveAssessments {
+    width: 100% !important;
+    max-width: none !important;
+    font-size: 15px !important;
+    line-height: 20px !important;
+    white-space: normal !important;
+    word-break: normal !important;
+    overflow-wrap: normal !important;
+  }
+
+  .practiceRealWorldSkills {
+    width: 100% !important;
+    max-width: none !important;
+    font-size: 14px !important;
+    line-height: 20px !important;
+    white-space: normal !important;
+    word-break: normal !important;
+    overflow-wrap: normal !important;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .image20Parent {
+    left: 28px !important;
+    width: calc(100% - 28px) !important;
+  }
+
+  .frameParent45,
+  .image20Wrapper {
+    width: 76px !important;
+    height: 76px !important;
+  }
+
+  .simulationsParent,
+  .frameWrapper10,
+  .frameWrapper12,
+  .frameWrapper14 {
+    left: 88px !important;
+    right: 8px !important;
+    width: auto !important;
+    max-width: none !important;
+  }
+
+  .simulations,
+  .scenarioBasedLearning,
+  .visualLearning,
+  .interactiveAssessments {
+    font-size: 14px !important;
+    line-height: 19px !important;
+  }
+
+  .practiceRealWorldSkills {
+    font-size: 13px !important;
+    line-height: 19px !important;
+  }
+}
+
+
+
+@media screen and (max-width: 767px) {
+  .frameParent6 .frameInner {
+    width: fit-content !important;
+    min-width: 0 !important;
+    max-width: calc(100% - 20px) !important;
+    height: 44px !important;
+    margin: 0 auto !important;
+    padding: 0 22px !important;
+    box-sizing: border-box !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    font-size: 16px !important;
+    line-height: 24px !important;
+    white-space: nowrap !important;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .frameParent6 .frameInner {
+    max-width: calc(100% - 12px) !important;
+    padding-left: 18px !important;
+    padding-right: 18px !important;
+  }
+}
+
+
+
+@media screen and (max-width: 767px) {
+  .frameParent6 .frameInner {
+    width: calc(100% - 12px) !important;
+    max-width: 390px !important;
+    min-width: 0 !important;
+    height: 44px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    padding-left: 24px !important;
+    padding-right: 24px !important;
+    box-sizing: border-box !important;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .frameParent6 .frameInner {
+    width: calc(100% - 8px) !important;
+    max-width: 380px !important;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+}
+
+
+
+@media screen and (max-width: 767px) {
+  .frameParent6 .frameInner {
+    width: calc(100% + 16px) !important;
+    max-width: 420px !important;
+    min-width: 0 !important;
+    height: 44px !important;
+    margin-left: -8px !important;
+    margin-right: -8px !important;
+    padding-left: 28px !important;
+    padding-right: 28px !important;
+    box-sizing: border-box !important;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .frameParent6 .frameInner {
+    width: calc(100% + 12px) !important;
+    max-width: 405px !important;
+    margin-left: -6px !important;
+    margin-right: -6px !important;
+    padding-left: 24px !important;
+    padding-right: 24px !important;
+  }
+}
+
+
+
+
+
+.frameIcon,
+.frameWrapper3,
+.frameWrapper19,
+.startLearning,
+.bookADemo,
+.learnMorePill {
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+
+
+.frameIcon,
+.frameWrapper3,
+.frameWrapper19,
+.learnMorePill {
+  transition:
+    box-shadow 0.12s ease,
+    transform 0.12s ease;
+}
+
+
+.frameIcon:active {
+  box-shadow:
+    inset -6px -6px 12px #ffffff,
+    inset 6px 6px 12px rgba(196, 196, 196, 0.9) !important;
+  transform: translateY(1px);
+}
+
+
+.frameWrapper3:active,
+.frameWrapper3:has(.startLearning:active) {
+  box-shadow:
+    inset -6px -6px 12px #ffffff,
+    inset 6px 6px 12px rgba(196, 196, 196, 0.9) !important;
+  transform: translateY(1px);
+}
+
+
+.frameWrapper19:active,
+.frameWrapper19:has(.bookADemo:active) {
+  box-shadow:
+    inset -6px -6px 12px #ffffff,
+    inset 6px 6px 12px rgba(196, 196, 196, 0.9) !important;
+  transform: translateY(1px);
+}
+
+
+.learnMorePill:active {
+  box-shadow:
+    inset -6px -6px 12px #ffffff,
+    inset 6px 6px 12px rgba(196, 196, 196, 0.9) !important;
+  transform: translateY(1px);
+}
+
+
+.startLearning:focus-visible,
+.bookADemo:focus-visible,
+.learnMorePill:focus-visible {
+  outline: 2px solid #2d4cc8;
+  outline-offset: 3px;
+}
+
+
+
+@media screen and (min-width: 768px) {
+  .frameParent43 {
+    height: 656px;
+  }
+
+  .frameWrapper8,
+  .frameWrapper9,
+  .frameWrapper11,
+  .frameWrapper13,
+  .frameParent44 {
+    height: 140px;
+  }
+
+  .frameWrapper9 {
+    top: 172px;
+  }
+
+  .frameWrapper11 {
+    top: 344px;
+  }
+
+  .frameWrapper13 {
+    top: 516px;
+  }
+
+  .frameWrapper8 .image20Parent,
+  .frameWrapper9 .image20Parent,
+  .frameWrapper11 .image20Parent,
+  .frameWrapper13 .image20Parent {
+    height: 108px;
+    top: calc(50% - 54px);
+  }
+
+  .frameWrapper8 .frameParent45,
+  .frameWrapper9 .frameParent45,
+  .frameWrapper11 .frameParent45,
+  .frameWrapper13 .frameParent45,
+  .frameWrapper8 .image20Wrapper,
+  .frameWrapper9 .image20Wrapper,
+  .frameWrapper11 .image20Wrapper,
+  .frameWrapper13 .image20Wrapper {
+    height: 140px;
+  }
+}
+
+
+
+@media screen and (min-width: 768px) {
+  .image20Parent4 {
+    height: 900px !important;
+  }
+
+  
+  .frameWrapper15 {
+    height: 225px !important;
+  }
+
+  .frameParent53 {
+    gap: 20px !important;
+  }
+
+  .howInteractiveLearningDriveParent {
+    height: 155px !important;
+    gap: 20px !important;
+  }
+
+  
+  .frameParent52 {
+    gap: 32px !important;
+  }
+
+  
+  .frameParent54 {
+    height: 580px !important;
+  }
+
+  
+  .frameParent62 {
+    top: 4000px !important;
+  }
+
+  .frameParent73 {
+    top: 4744px !important;
+  }
+
+  .frameParent78 {
+    top: 5517px !important;
+  }
+}
+
+
+
+@media screen and (min-width: 1025px) {
+  
+  .frameParent73 {
+    top: 4718px !important;
+  }
+
+  
+  .frameParent78 {
+    top: 5471px !important;
+  }
+
+  
+  .interactiveGamifiedLearnin {
+    height: 5375px !important;
+  }
+}
+
+
+
+@media screen and (max-width: 767px) {
+  .frameParent54 {
+    padding-top: 8px !important;
+  }
+
+  .groupYoungBusinesspeopleUsi {
+    top: auto !important;
+    margin-top: 0 !important;
+    transform: none !important;
+  }
+
+  .collageCustomerExperienceCoIcon {
+    top: auto !important;
+    margin-top: 0 !important;
+    transform: none !important;
+  }
+}
+
+
+
+@media screen and (max-width: 767px) {
+  .frameParent54 {
+    padding-top: 0px !important;
+  }
+}
+
+
+
+
+@media screen and (min-width: 768px) and (max-width: 1439px) {
+  .interactiveGamifiedLearnin {
+    width: 1440px !important;
+    max-width: none !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    overflow: hidden !important;
+    transform-origin: top center !important;
+  }
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 839px) {
+  .interactiveGamifiedLearnin {
+    zoom: 0.52 !important;
+  }
+}
+
+
+@media screen and (min-width: 840px) and (max-width: 899px) {
+  .interactiveGamifiedLearnin {
+    zoom: 0.57 !important;
+  }
+}
+
+
+@media screen and (min-width: 900px) and (max-width: 959px) {
+  .interactiveGamifiedLearnin {
+    zoom: 0.61 !important;
+  }
+}
+
+
+@media screen and (min-width: 960px) and (max-width: 1023px) {
+  .interactiveGamifiedLearnin {
+    zoom: 0.66 !important;
+  }
+}
+
+
+@media screen and (min-width: 1024px) and (max-width: 1099px) {
+  .interactiveGamifiedLearnin {
+    zoom: 0.70 !important;
+  }
+}
+
+
+@media screen and (min-width: 1100px) and (max-width: 1199px) {
+  .interactiveGamifiedLearnin {
+    zoom: 0.76 !important;
+  }
+}
+
+
+@media screen and (min-width: 1200px) and (max-width: 1279px) {
+  .interactiveGamifiedLearnin {
+    zoom: 0.82 !important;
+  }
+}
+
+
+@media screen and (min-width: 1280px) and (max-width: 1359px) {
+  .interactiveGamifiedLearnin {
+    zoom: 0.87 !important;
+  }
+}
+
+
+@media screen and (min-width: 1360px) and (max-width: 1439px) {
+  .interactiveGamifiedLearnin {
+    zoom: 0.89 !important;
+  }
+}
+
+
+@media screen and (min-width: 1440px) and (max-width: 2560px) {
+  .interactiveGamifiedLearnin {
+    width: 100% !important;
+    max-width: 1440px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    zoom: 0.89 !important;
+  }
+}
+
+
+
+
+
+@media screen and (min-width: 768px) and (max-width: 839px) {
+  .interactiveGamifiedLearnin {
+    width: 192.307692vw !important;
+    max-width: none !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    background-color: #dfe6e9 !important;
+  }
+}
+
+
+@media screen and (min-width: 840px) and (max-width: 899px) {
+  .interactiveGamifiedLearnin {
+    width: 175.438596vw !important;
+    max-width: none !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    background-color: #dfe6e9 !important;
+  }
+}
+
+
+@media screen and (min-width: 900px) and (max-width: 959px) {
+  .interactiveGamifiedLearnin {
+    width: 163.934426vw !important;
+    max-width: none !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    background-color: #dfe6e9 !important;
+  }
+}
+
+
+@media screen and (min-width: 960px) and (max-width: 1023px) {
+  .interactiveGamifiedLearnin {
+    width: 151.515152vw !important;
+    max-width: none !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    background-color: #dfe6e9 !important;
+  }
+}
+
+
+@media screen and (min-width: 1024px) and (max-width: 1099px) {
+  .interactiveGamifiedLearnin {
+    width: 142.857143vw !important;
+    max-width: none !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    background-color: #dfe6e9 !important;
+  }
+}
+
+
+@media screen and (min-width: 1100px) and (max-width: 1199px) {
+  .interactiveGamifiedLearnin {
+    width: 131.578947vw !important;
+    max-width: none !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    background-color: #dfe6e9 !important;
+  }
+}
+
+
+@media screen and (min-width: 1200px) and (max-width: 1279px) {
+  .interactiveGamifiedLearnin {
+    width: 121.95122vw !important;
+    max-width: none !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    background-color: #dfe6e9 !important;
+  }
+}
+
+
+@media screen and (min-width: 1280px) and (max-width: 1359px) {
+  .interactiveGamifiedLearnin {
+    width: 114.942529vw !important;
+    max-width: none !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    background-color: #dfe6e9 !important;
+  }
+}
+
+
+@media screen and (min-width: 1360px) and (max-width: 2560px) {
+  .interactiveGamifiedLearnin {
+    width: 112.359551vw !important;
+    max-width: none !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    background-color: #dfe6e9 !important;
+  }
+}
+
+/* PAGE CENTERING + 80PX DESKTOP SIDE SPACE */
+html,
+body {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background-color: #dfe6e9;
+}
+
+body {
+    box-sizing: border-box;
+}
+
+.interactiveGamifiedLearnin {
+    width: calc(100% - 160px);
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+/* Keep 80px on both sides whenever the browser has enough room */
+@media screen and (min-width: 769px) and (max-width: 1600px) {
+    .interactiveGamifiedLearnin {
+        width: calc(100% - 160px) !important;
+        max-width: calc(100% - 160px) !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        overflow-x: hidden !important;
+    }
+}
+
+/* Small screens cannot physically keep 80px + usable content,
+   so only prevent horizontal page overflow here. */
+@media screen and (max-width: 768px) {
+    html,
+    body {
+        width: 100% !important;
+        max-width: 100% !important;
+        overflow-x: hidden !important;
+    }
+
+    .interactiveGamifiedLearnin {
+        max-width: 100% !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        overflow-x: hidden !important;
+    }
+}
+
