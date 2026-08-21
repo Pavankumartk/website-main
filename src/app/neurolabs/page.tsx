@@ -5,6 +5,7 @@ import { useState } from "react";
 import Header from "../../components/Header/header";
 import Footer from "../../components/Footer/footer";
 import "./codingLabs.css";
+import { BookDemoTrigger } from "../../components/Bookademo/Bookademo";
 
 const practiceItems = [
   { label: "Write & test code", color: "#BF1869" },
@@ -309,16 +310,9 @@ export default function CodingLabsPage() {
             </p>
 
             <div className="coding-cta__actions">
-              <button
-                type="button"
-                className={activeCta === "demo" ? "is-selected" : ""}
-                onClick={() => setActiveCta("demo")}
-                onMouseLeave={() => setActiveCta(null)}
-                onBlur={() => setActiveCta(null)}
-                aria-pressed={activeCta === "demo"}
-              >
+              <BookDemoTrigger>
                 Book a Demo
-              </button>
+              </BookDemoTrigger>
 
               <button
                 type="button"

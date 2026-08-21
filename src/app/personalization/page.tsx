@@ -569,7 +569,7 @@ export default function Personalization() {
         </section>
 
         <div className={styles.rectangleParent7}>
-          <Image className={styles.personalizationCtaBackground} src="/images/Frame 2095586948.png" fill sizes="(max-width: 1440px) 100vw, 1280px" alt="" aria-hidden="true" />
+          <Image className={styles.personalizationCtaBackground} src="/images/personlizationbackground.webp" fill sizes="(max-width: 1440px) 100vw, 1280px" alt="" aria-hidden="true" />
           <div className={styles.rectangle} />
           <div className={styles.image206} />
           <Image className={styles.handHoldingWoodenCubeWithIcon} src="/images/women.webp" width={680} height={536} sizes="(max-width: 768px) 48vw, 680px" alt="Person using personalized learning powered by NeuroLXP" />

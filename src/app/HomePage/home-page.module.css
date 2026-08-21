@@ -1,3 +1,25 @@
+/* =========================================================
+   HOME PAGE — FULL PAGE BACKGROUND FIX ONLY
+   Keeps the existing #dfe6e9 background visible immediately
+   on first render, route navigation and refresh.
+   ========================================================= */
+
+:global(html),
+:global(body) {
+  background: #dfe6e9 !important;
+  min-height: 100%;
+}
+
+:global(body) {
+  margin: 0;
+}
+
+:global(#main-content) {
+  width: 100%;
+  min-height: 100vh;
+  background: #dfe6e9 !important;
+}
+
 .sr-only {
   position: absolute;
   width: 1px;

@@ -1,0 +1,117 @@
+.book-demo-fab {
+  position: fixed;
+  right: 32px;
+  bottom: 32px;
+  z-index: 500;
+  display: inline-flex;
+  align-items: center;
+  gap: 16px;
+  padding: 12px;
+  background: #dfe6e9;
+  border: none;
+  border-radius: 100px;
+  box-shadow:
+    -8px -8px 16px #ffffff,
+    8px 8px 16px #c6c6c9;
+  cursor: pointer;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    opacity 0.3s ease;
+}
+
+.book-demo-fab:hover {
+  transform: translateY(-4px);
+}
+
+.book-demo-fab:focus-visible {
+  outline: 3px solid #2d4cc8;
+  outline-offset: 3px;
+}
+
+body.modal-open .book-demo-fab {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.book-demo-fab-icon-ring {
+  flex-shrink: 0;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: #dfe6e9;
+  box-shadow:
+    inset -4px -4px 8px #ffffff,
+    inset 4px 4px 8px rgba(196, 196, 196, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.book-demo-fab-icon-circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #dfe6e9;
+  box-shadow:
+    6px 6px 12px #c6c6c9,
+    -6px -6px 12px #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #2d4cc8;
+}
+
+.book-demo-fab-icon {
+  width: 32px;
+  height: 32px;
+}
+
+.book-demo-fab-label {
+  font-family: "Segoe UI", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  letter-spacing: 0.02em;
+  color: #31344b;
+  white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+  .book-demo-fab {
+    right: 20px;
+    bottom: 20px;
+    gap: 12px;
+    padding: 8px 20px 8px 8px;
+  }
+  .book-demo-fab-icon-ring {
+    width: 48px;
+    height: 48px;
+  }
+  .book-demo-fab-icon-circle {
+    width: 34px;
+    height: 34px;
+  }
+  .book-demo-fab-icon {
+    width: 18px;
+    height: 18px;
+  }
+  .book-demo-fab-label {
+    font-size: 15px;
+  }
+  .book-demo-modal-close {
+    top: -12px;
+    right: -4px;
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 375px) {
+  .book-demo-fab {
+    padding: 6px;
+    gap: 0;
+  }
+  .book-demo-fab-label {
+    display: none;
+  }
+}

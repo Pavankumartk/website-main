@@ -13,7 +13,7 @@
 }
 
 .plp-breadcrumb-item {
-  font-family: "Inter", sans-serif;
+  font-family: "Segoe UI";
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
@@ -51,7 +51,7 @@
     inset -4px -4px 8px #ffffff,
     inset 4px 4px 8px rgba(196, 196, 196, 0.8);
   border-radius: 28px;
-  font-family: "Segoe UI", sans-serif;
+  font-family: "Segoe UI";
   font-weight: 600;
   font-size: 16px;
   line-height: 24px;
@@ -61,7 +61,7 @@
 }
 
 .plp-hero-heading {
-  font-family: "Segoe UI", sans-serif;
+  font-family: "Segoe UI";
   font-weight: 800;
   font-size: 36px;
   line-height: 40px;
@@ -76,7 +76,7 @@
 }
 
 .plp-hero-subtext {
-  font-family: "Segoe UI", sans-serif;
+  font-family: "Segoe UI";
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
@@ -175,7 +175,7 @@
 }
 
 .plp-stat-value {
-  font-family: "Segoe UI", sans-serif;
+  font-family: "Segoe UI";
   font-weight: 700;
   font-size: 24px;
   line-height: 30px;
@@ -197,7 +197,7 @@
 }
 
 .plp-stat-label {
-  font-family: "Segoe UI", sans-serif;
+  font-family: "Segoe UI";
   font-weight: 600;
   font-size: 14px;
   line-height: 20px;
@@ -218,7 +218,7 @@
 }
 
 .plp-section-heading {
-  font-family: "Segoe UI", sans-serif;
+  font-family: "Segoe UI";
   font-weight: 600;
   font-size: 24px;
   line-height: 32px;
@@ -233,7 +233,7 @@
 }
 
 .plp-section-subtext {
-  font-family: "Segoe UI", sans-serif;
+  font-family: "Segoe UI";
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
@@ -298,7 +298,7 @@
 }
 
 .plp-personalization-title {
-  font-family: "Segoe UI", sans-serif;
+  font-family: "Segoe UI";
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
@@ -320,7 +320,7 @@
 
 .plp-personalization-desc {
   margin: 13px 26px;
-  font-family: "Segoe UI", sans-serif;
+  font-family: "Segoe UI";
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
@@ -384,7 +384,7 @@
 }
 
 .plp-stage-number {
-  font-family: "Segoe UI", sans-serif;
+  font-family: "Segoe UI";
   font-weight: 700;
   font-size: 18px;
   letter-spacing: 0.03em;
@@ -409,7 +409,7 @@
 }
 
 .plp-stage-label {
-  font-family: "Segoe UI", sans-serif;
+  font-family: "Segoe UI";
   font-weight: 700;
   font-size: 14px;
   letter-spacing: 0.05em;
@@ -417,7 +417,7 @@
 }
 
 .plp-stage-title {
-  font-family: "Segoe UI", sans-serif;
+  font-family: "Segoe UI";
   font-weight: 600;
   font-size: 18px;
   line-height: 26px;
@@ -425,7 +425,7 @@
 }
 
 .plp-stage-subtitle {
-  font-family: "Segoe UI", sans-serif;
+  font-family: "Segoe UI";
   font-weight: 600;
   font-size: 16px;
   line-height: 24px;
@@ -445,7 +445,7 @@
   display: flex;
   align-items: center;
   gap: 12px;
-  font-family: "Segoe UI", sans-serif;
+  font-family: "Segoe UI";
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
@@ -494,7 +494,7 @@
 }
 
 .plp-stage-note {
-  font-family: "Segoe UI", sans-serif;
+  font-family: "Segoe UI";
   font-weight: 700;
   font-style: italic;
   font-size: 14px;
@@ -559,7 +559,7 @@
 }
 
 .plp-mastery-ring-percent {
-  font-family: "Segoe UI", sans-serif;
+  font-family: "Segoe UI";
   font-weight: 700;
   font-size: 28px;
   line-height: 34px;
@@ -567,7 +567,7 @@
 }
 
 .plp-mastery-ring-text {
-  font-family: "Segoe UI", sans-serif;
+  font-family: "Segoe UI";
   font-weight: 700;
   font-size: 14px;
   line-height: 20px;
@@ -588,7 +588,7 @@
   display: flex;
   align-items: center;
   gap: 12px;
-  font-family: "Segoe UI", sans-serif;
+  font-family: "Segoe UI";
   font-weight: 600;
   font-size: 16px;
   line-height: 24px;
@@ -655,7 +655,7 @@
 }
 
 .plp-stage-stat-value {
-  font-family: "Segoe UI", sans-serif;
+  font-family: "Segoe UI";
   font-weight: 700;
   font-size: 24px;
   line-height: 32px;
@@ -663,7 +663,7 @@
 }
 
 .plp-stage-stat-label {
-  font-family: "Segoe UI", sans-serif;
+  font-family: "Segoe UI";
   font-weight: 600;
   font-size: 16px;
   line-height: 24px;
@@ -739,7 +739,7 @@
 }
 
 .plp-how-title {
-  font-family: "Segoe UI", sans-serif;
+  font-family: "Segoe UI";
   font-weight: 600;
   font-size: 18px;
   line-height: 26px;
@@ -780,7 +780,7 @@
 }
 
 .plp-how-panel-text {
-  font-family: "Segoe UI", sans-serif;
+  font-family: "Segoe UI";
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
@@ -806,7 +806,7 @@
 }
 
 .plp-challenge-heading {
-  font-family: "Segoe UI", sans-serif;
+  font-family: "Segoe UI";
   font-weight: 600;
   font-size: 32px;
   line-height: 40px;
@@ -816,7 +816,7 @@
 }
 
 .plp-challenge-subtext {
-  font-family: "Segoe UI", sans-serif;
+  font-family: "Segoe UI";
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
@@ -869,7 +869,7 @@
 }
 
 .plp-challenge-item-label {
-  font-family: "Segoe UI", sans-serif;
+  font-family: "Segoe UI";
   font-weight: 600;
   font-size: 18px;
   line-height: 26px;
@@ -915,7 +915,7 @@
   box-shadow:
     -4px -4px 8px #ffffff,
     4px 4px 8px rgba(198, 198, 198, 0.9);
-  font-family: "Segoe UI", sans-serif;
+  font-family: "Segoe UI";
   font-weight: 600;
   font-size: 16px;
   line-height: 24px;
@@ -1034,7 +1034,7 @@
 }
 
 .plp-benefits-item-label {
-  font-family: "Segoe UI", sans-serif;
+  font-family: "Segoe UI";
   font-weight: 600;
   font-size: 16px;
   line-height: 24px;
@@ -1070,7 +1070,7 @@
 }
 
 .plp-cta-heading {
-  font-family: "Segoe UI", sans-serif;
+  font-family: "Segoe UI";
   font-weight: 600;
   font-size: 28px;
   line-height: 36px;
@@ -1081,7 +1081,7 @@
 }
 
 .plp-cta-subtext {
-  font-family: "Segoe UI", sans-serif;
+  font-family: "Segoe UI";
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
@@ -1098,7 +1098,7 @@
   border-radius: 32px;
   border: none;
   padding: 14px 28px;
-  font-family: "Segoe UI", sans-serif;
+  font-family: "Segoe UI";
   font-weight: 600;
   font-size: 16px;
   line-height: 24px;
@@ -1118,7 +1118,7 @@
 
 @media (max-width: 480px) {
   .plp-breadcrumb-item {
-    font-family: "Inter", sans-serif;
+    font-family: "Segoe UI";
     font-weight: 400;
     font-size: 12px;
     line-height: 18px;
@@ -1261,7 +1261,7 @@
 
 
   .plp-breadcrumb-current {
-    font-family: "Inter", sans-serif;
+    font-family: "Segoe UI";
     font-weight: 400;
     font-size: 12px;
     line-height: 18px;
@@ -2160,3 +2160,8 @@
   }
 }
 
+/* Segoe UI only — no fallback fonts */
+.plp-page,
+.plp-page * {
+  font-family: "Segoe UI" !important;
+}

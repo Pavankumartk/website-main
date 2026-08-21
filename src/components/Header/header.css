@@ -11,10 +11,13 @@
 }
 
 .nlxp-header-inner {
+  width: 100%;
   max-width: 1440px;
   height: 80px;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
   padding: 0 32px;
+  box-sizing: border-box;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -1286,7 +1289,7 @@
   .nlxp-header-inner {
     padding-left: clamp(16px, 1.7vw, 24px);
     padding-right: clamp(16px, 1.7vw, 24px);
-    gap: clamp(77px, 1vw, 16px);
+    gap: clamp(12px, 1vw, 16px);
   }
 
   .nlxp-header-left {
@@ -1341,6 +1344,10 @@
   visibility: visible !important;
   opacity: 1 !important;
   width: 100% !important;
+  max-width: 100% !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  box-sizing: border-box !important;
   position: relative !important;
   z-index: 10000 !important;
   font-family: "Segoe UI" !important;
@@ -1358,4 +1365,275 @@ footer {
   position: relative !important;
   z-index: 10000 !important;
   font-family: "Segoe UI" !important;
+}
+
+
+
+/* =========================================================
+   FINAL DESKTOP HEADER TRUE-CENTER LOCK
+   ---------------------------------------------------------
+   Alignment only — NO design changes.
+   Keeps:
+   - logo on the left
+   - navigation exactly centered
+   - Sign in Help on the right
+   - same fonts, sizes, colors, shadows and dropdowns
+   - stable alignment at browser zoom levels
+   ========================================================= */
+
+@media (min-width: 1024px) {
+
+  .nlxp-header {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    overflow-x: clip !important;
+  }
+
+  .nlxp-header-inner {
+    width: min(100%, 1440px) !important;
+    max-width: 1440px !important;
+    min-width: 0 !important;
+
+    margin-left: auto !important;
+    margin-right: auto !important;
+
+    padding-left: clamp(20px, 3vw, 48px) !important;
+    padding-right: clamp(20px, 3vw, 48px) !important;
+
+    box-sizing: border-box !important;
+
+    /* Exact center column regardless of logo/sign-in widths */
+    display: grid !important;
+    grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr) !important;
+    align-items: center !important;
+    column-gap: clamp(12px, 1.5vw, 24px) !important;
+  }
+
+  /* Expose logo + nav as direct grid items without changing markup */
+  .nlxp-header-left {
+    display: contents !important;
+  }
+
+  .nlxp-header-logo-link {
+    grid-column: 1 !important;
+    justify-self: start !important;
+    align-self: center !important;
+  }
+
+  .nlxp-header-nav {
+    grid-column: 2 !important;
+    justify-self: center !important;
+    align-self: center !important;
+
+    display: flex !important;
+    align-items: center !important;
+
+    flex: none !important;
+    width: max-content !important;
+    min-width: 0 !important;
+
+    margin: 0 !important;
+  }
+
+  .nlxp-header-signin {
+    grid-column: 3 !important;
+    justify-self: end !important;
+    align-self: center !important;
+
+    flex: none !important;
+    margin: 0 !important;
+  }
+
+  .nlxp-header-burger {
+    display: none !important;
+  }
+}
+
+/* 1024–1180:
+   Keep the exact same design but tighten spacing enough to fit at
+   100% browser zoom without pushing the centered navigation. */
+@media (min-width: 1024px) and (max-width: 1180px) {
+
+  .nlxp-header-inner {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+    column-gap: 10px !important;
+  }
+
+  .nlxp-header-nav {
+    gap: 9px !important;
+  }
+
+  .nlxp-header-link,
+  .nlxp-header-dropdown-trigger {
+    font-size: 12px !important;
+    line-height: 20px !important;
+    gap: 4px !important;
+  }
+
+  .nlxp-header-chevron {
+    width: 11px !important;
+    height: 11px !important;
+  }
+
+  .nlxp-header-signin {
+    padding: 9px 13px !important;
+    font-size: 12px !important;
+  }
+
+  .nlxp-header-logo {
+    width: 105px !important;
+    height: 42px !important;
+  }
+}
+
+/* 1181–1320 */
+@media (min-width: 1181px) and (max-width: 1320px) {
+
+  .nlxp-header-inner {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+
+  .nlxp-header-nav {
+    gap: 14px !important;
+  }
+
+  .nlxp-header-link,
+  .nlxp-header-dropdown-trigger {
+    font-size: 14px !important;
+    gap: 5px !important;
+  }
+
+  .nlxp-header-signin {
+    padding: 11px 18px !important;
+    font-size: 14px !important;
+  }
+}
+
+/* 1321–1439 */
+@media (min-width: 1321px) and (max-width: 1439px) {
+
+  .nlxp-header-inner {
+    padding-left: 28px !important;
+    padding-right: 28px !important;
+  }
+
+  .nlxp-header-nav {
+    gap: 16px !important;
+  }
+
+  .nlxp-header-link,
+  .nlxp-header-dropdown-trigger {
+    font-size: 15px !important;
+    gap: 5px !important;
+  }
+
+  .nlxp-header-signin {
+    padding: 11px 20px !important;
+    font-size: 15px !important;
+  }
+}
+
+/* 1440+:
+   Target layout shown in the reference screenshot. */
+@media (min-width: 1440px) {
+
+  .nlxp-header-inner {
+    width: min(100%, 1440px) !important;
+    padding-left: 48px !important;
+    padding-right: 48px !important;
+  }
+
+  .nlxp-header-nav {
+    gap: 30px !important;
+  }
+
+  .nlxp-header-link,
+  .nlxp-header-dropdown-trigger {
+    font-size: 16px !important;
+    line-height: 24px !important;
+    gap: 8px !important;
+  }
+
+  .nlxp-header-chevron {
+    width: 16px !important;
+    height: 16px !important;
+  }
+
+  .nlxp-header-logo {
+    width: 120px !important;
+    height: 45px !important;
+  }
+
+  .nlxp-header-signin {
+    padding: 16px 32px !important;
+    font-size: 16px !important;
+  }
+}
+
+/* Keep existing mobile/tablet hamburger behavior completely unchanged. */
+@media (max-width: 1023px) {
+  .nlxp-header-inner {
+    display: flex !important;
+  }
+
+  .nlxp-header-left {
+    display: flex !important;
+  }
+}
+
+
+/* =========================================================
+   FINAL HEADER NAV SPACING
+   Spacing only — alignment/design remains unchanged.
+   More space between menu items, less empty space at sides.
+   ========================================================= */
+
+@media (min-width: 1024px) and (max-width: 1180px) {
+  .nlxp-header-inner {
+    padding-left: 12px !important;
+    padding-right: 12px !important;
+  }
+
+  .nlxp-header-nav {
+    gap: 18px !important;
+  }
+}
+
+@media (min-width: 1181px) and (max-width: 1320px) {
+  .nlxp-header-inner {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+  }
+
+  .nlxp-header-nav {
+    gap: 26px !important;
+  }
+}
+
+@media (min-width: 1321px) and (max-width: 1439px) {
+  .nlxp-header-inner {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+
+  .nlxp-header-nav {
+    gap: 32px !important;
+  }
+}
+
+@media (min-width: 1440px) {
+  .nlxp-header-inner {
+    width: min(100%, 1520px) !important;
+    max-width: 1520px !important;
+    padding-left: 24px !important;
+    padding-right: 24px !important;
+  }
+
+  .nlxp-header-nav {
+    gap: 38px !important;
+  }
 }

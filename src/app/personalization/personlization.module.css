@@ -6052,3 +6052,851 @@ body {
     gap: 16px !important;
   }
 }
+
+
+
+/* =========================================================
+   FINAL PERSONALIZATION CTA RESPONSIVE FIX
+   "Make Learning Personal" section only
+   ---------------------------------------------------------
+   NO DESIGN CHANGE:
+   - same background image
+   - same colors / shadows / radii
+   - same woman image
+   - same text/button styling
+   - only fixes centering, background visibility and clipping
+   ========================================================= */
+
+/* Desktop / laptop */
+.rectangleParent7 {
+  left: 50% !important;
+  right: auto !important;
+
+  width: min(1280px, calc(100% - 32px)) !important;
+  max-width: 1280px !important;
+  min-width: 0 !important;
+  height: 542px !important;
+
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+
+  transform: translateX(-50%) !important;
+
+  border-radius: 100px !important;
+  overflow: hidden !important;
+  isolation: isolate !important;
+
+  background-color: #dfe6e9 !important;
+  background-image: url("/images/Frame 2095586948.png") !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  background-size: cover !important;
+
+  box-sizing: border-box !important;
+}
+
+/* Force the actual Next.js background image to remain visible too */
+.personalizationCtaBackground {
+  position: absolute !important;
+  inset: 0 !important;
+
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+
+  width: 100% !important;
+  height: 100% !important;
+  max-width: none !important;
+
+  object-fit: cover !important;
+  object-position: center !important;
+
+  border-radius: inherit !important;
+  z-index: 0 !important;
+  pointer-events: none !important;
+}
+
+/* Preserve original foreground stacking */
+.rectangleParent7 > .frameParent52 {
+  z-index: 2 !important;
+}
+
+.rectangleParent7 > .handHoldingWoodenCubeWithIcon {
+  z-index: 2 !important;
+}
+
+/* Keep original desktop composition */
+@media (min-width: 1024px) {
+  .rectangleParent7 {
+    width: min(1280px, calc(100% - 48px)) !important;
+  }
+
+  .frameParent52 {
+    position: absolute !important;
+    top: calc(50% - 207px) !important;
+    left: calc(50% - 570px) !important;
+
+    width: 573px !important;
+    height: 377px !important;
+
+    margin: 0 !important;
+    transform: none !important;
+  }
+
+  .handHoldingWoodenCubeWithIcon {
+    position: absolute !important;
+    top: calc(50% - 248px) !important;
+    right: 28px !important;
+    left: auto !important;
+
+    width: 680px !important;
+    height: 536px !important;
+    max-width: 53.2% !important;
+
+    object-fit: contain !important;
+    object-position: right bottom !important;
+
+    transform: translateY(-15px) !important;
+  }
+}
+
+/* Tablet */
+@media (min-width: 600px) and (max-width: 1023px) {
+  .rectangleParent7 {
+    width: calc(100% - 40px) !important;
+    max-width: 1280px !important;
+    height: clamp(430px, 42vw, 542px) !important;
+
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+
+    border-radius: clamp(52px, 7vw, 100px) !important;
+  }
+
+  .personalizationCtaBackground {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+  }
+
+  .frameParent52 {
+    position: absolute !important;
+    top: 50% !important;
+    left: 6% !important;
+
+    width: 44% !important;
+    height: auto !important;
+
+    margin: 0 !important;
+    transform: translateY(-50%) !important;
+  }
+
+  .handHoldingWoodenCubeWithIcon {
+    position: absolute !important;
+    top: auto !important;
+    left: auto !important;
+    right: 1% !important;
+    bottom: 0 !important;
+
+    width: 48% !important;
+    height: auto !important;
+    max-height: 100% !important;
+
+    object-fit: contain !important;
+    object-position: right bottom !important;
+
+    transform: none !important;
+  }
+}
+
+/* Mobile */
+@media (max-width: 599px) {
+  .personalization > .rectangleParent7 {
+    position: relative !important;
+    top: auto !important;
+    left: auto !important;
+    right: auto !important;
+
+    width: calc(100% - 24px) !important;
+    max-width: 520px !important;
+    min-width: 0 !important;
+    height: 505px !important;
+    min-height: 505px !important;
+
+    margin: 40px auto 0 !important;
+
+    transform: none !important;
+
+    border-radius: 36px !important;
+    overflow: hidden !important;
+
+    background-color: #dfe6e9 !important;
+    background-image: url("/images/Frame 2095586948.png") !important;
+    background-position: center !important;
+    background-size: cover !important;
+  }
+
+  .personalization > .rectangleParent7 .personalizationCtaBackground {
+    position: absolute !important;
+    inset: 0 !important;
+
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+
+    width: 100% !important;
+    height: 100% !important;
+
+    object-fit: cover !important;
+    object-position: center !important;
+
+    z-index: 0 !important;
+  }
+
+  .personalization > .rectangleParent7 .frameParent52 {
+    position: relative !important;
+    top: auto !important;
+    left: auto !important;
+    right: auto !important;
+
+    width: calc(100% - 32px) !important;
+    height: auto !important;
+
+    margin: 28px auto 0 !important;
+
+    transform: none !important;
+
+    align-items: center !important;
+    text-align: center !important;
+
+    z-index: 3 !important;
+  }
+
+  .personalization > .rectangleParent7 .handHoldingWoodenCubeWithIcon {
+    position: absolute !important;
+    top: auto !important;
+    left: 50% !important;
+    right: auto !important;
+    bottom: -4px !important;
+
+    width: min(94%, 410px) !important;
+    height: auto !important;
+    max-height: 390px !important;
+
+    object-fit: contain !important;
+    object-position: center bottom !important;
+
+    transform: translateX(-50%) !important;
+
+    z-index: 2 !important;
+  }
+}
+
+/* Very small phones */
+@media (max-width: 380px) {
+  .personalization > .rectangleParent7 {
+    width: calc(100% - 16px) !important;
+    height: 490px !important;
+    min-height: 490px !important;
+    border-radius: 30px !important;
+  }
+
+  .personalization > .rectangleParent7 .handHoldingWoodenCubeWithIcon {
+    width: 98% !important;
+  }
+}
+
+
+
+/* =========================================================
+   CTA ALIGNMENT ONLY — FINAL
+   "Make Learning Personal" section only.
+   No other page section is changed.
+   ========================================================= */
+
+/* Desktop / laptop */
+@media (min-width: 1024px) {
+
+  /* Give this CTA enough room to finish before Footer begins. */
+  .personalization {
+    height: 5400px !important;
+  }
+
+  .rectangleParent7 {
+    position: absolute !important;
+    top: 4709px !important;
+    left: 50% !important;
+    right: auto !important;
+
+    width: min(1280px, calc(100% - 48px)) !important;
+    max-width: 1280px !important;
+    height: 542px !important;
+
+    margin: 0 !important;
+    transform: translateX(-50%) !important;
+
+    overflow: hidden !important;
+    border-radius: 100px !important;
+  }
+
+  .rectangleParent7 .personalizationCtaBackground {
+    position: absolute !important;
+    inset: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    object-position: center !important;
+    z-index: 0 !important;
+  }
+
+  /* Left content: same visual design, only correctly positioned/aligned. */
+  .rectangleParent7 .frameParent52 {
+    position: absolute !important;
+    top: 64px !important;
+    left: 70px !important;
+    right: auto !important;
+
+    width: 524px !important;
+    height: auto !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+    transform: none !important;
+
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 48px !important;
+
+    text-align: left !important;
+    z-index: 3 !important;
+  }
+
+  .rectangleParent7 .makeLearningPersonalParent {
+    width: 524px !important;
+    max-width: 524px !important;
+    height: auto !important;
+
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 36px !important;
+
+    text-align: left !important;
+  }
+
+  .rectangleParent7 .makeLearningPersonal {
+    width: 524px !important;
+    max-width: 524px !important;
+    height: auto !important;
+
+    margin: 0 !important;
+    transform: none !important;
+
+    text-align: left !important;
+  }
+
+  .rectangleParent7 .createAdaptiveLearning {
+    width: 524px !important;
+    max-width: 524px !important;
+    height: auto !important;
+
+    margin: 0 !important;
+    text-align: left !important;
+  }
+
+  .rectangleParent7 .frameWrapper17 {
+    width: auto !important;
+    height: auto !important;
+    margin: 0 !important;
+
+    display: flex !important;
+    justify-content: flex-start !important;
+    align-items: center !important;
+  }
+
+  /* Right image: keep it inside the CTA and aligned to the bottom/right. */
+  .rectangleParent7 .handHoldingWoodenCubeWithIcon {
+    position: absolute !important;
+    top: auto !important;
+    left: auto !important;
+    right: 18px !important;
+    bottom: 0 !important;
+
+    width: 680px !important;
+    max-width: 53.2% !important;
+    height: 536px !important;
+    max-height: 100% !important;
+
+    object-fit: contain !important;
+    object-position: right bottom !important;
+
+    transform: none !important;
+    z-index: 2 !important;
+  }
+}
+
+/* Tablet: section-only alignment protection. */
+@media (min-width: 600px) and (max-width: 1023px) {
+  .rectangleParent7 {
+    left: 50% !important;
+    right: auto !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    transform: translateX(-50%) !important;
+    overflow: hidden !important;
+  }
+
+  .rectangleParent7 .personalizationCtaBackground {
+    position: absolute !important;
+    inset: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    object-position: center !important;
+  }
+}
+
+/* Mobile: keep existing mobile design, only ensure this section stays centered. */
+@media (max-width: 599px) {
+  .personalization > .rectangleParent7 {
+    left: auto !important;
+    right: auto !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    transform: none !important;
+    overflow: hidden !important;
+  }
+
+  .personalization > .rectangleParent7 .personalizationCtaBackground {
+    position: absolute !important;
+    inset: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    object-position: center !important;
+  }
+}
+
+
+
+/* =========================================================
+   CTA POSITION / SAFE-SIDE / SPACING FIX
+   "Make Learning Personal" section only
+   ---------------------------------------------------------
+   - move section upward
+   - prevent left/right clipping
+   - correct internal spacing
+   - keep same design
+   ========================================================= */
+
+/* Desktop / laptop */
+@media (min-width: 1024px) {
+
+  .personalization {
+    height: 5360px !important;
+  }
+
+  .rectangleParent7 {
+    position: absolute !important;
+    top: 4635px !important;
+
+    left: 50% !important;
+    right: auto !important;
+
+    /* safe side margins so curved edges/shadows never get cut */
+    width: calc(100% - 96px) !important;
+    max-width: 1280px !important;
+    min-width: 0 !important;
+    height: 542px !important;
+
+    margin: 0 !important;
+    transform: translateX(-50%) !important;
+
+    border-radius: 100px !important;
+    overflow: hidden !important;
+    box-sizing: border-box !important;
+  }
+
+  .rectangleParent7 .personalizationCtaBackground {
+    position: absolute !important;
+    inset: 0 !important;
+
+    width: 100% !important;
+    height: 100% !important;
+
+    object-fit: cover !important;
+    object-position: center !important;
+
+    border-radius: inherit !important;
+  }
+
+  /* Left content spacing */
+  .rectangleParent7 .frameParent52 {
+    position: absolute !important;
+    top: 58px !important;
+    left: 64px !important;
+
+    width: 510px !important;
+    height: auto !important;
+
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+
+    gap: 34px !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+    transform: none !important;
+
+    text-align: left !important;
+  }
+
+  .rectangleParent7 .makeLearningPersonalParent {
+    width: 510px !important;
+    max-width: 510px !important;
+
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+
+    gap: 26px !important;
+  }
+
+  .rectangleParent7 .makeLearningPersonal {
+    width: 510px !important;
+    max-width: 510px !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    text-align: left !important;
+  }
+
+  .rectangleParent7 .createAdaptiveLearning {
+    width: 500px !important;
+    max-width: 500px !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    text-align: left !important;
+  }
+
+  .rectangleParent7 .frameWrapper17 {
+    width: auto !important;
+    height: auto !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    display: flex !important;
+    justify-content: flex-start !important;
+    align-items: center !important;
+  }
+
+  /* Woman stays fully inside the safe CTA area */
+  .rectangleParent7 .handHoldingWoodenCubeWithIcon {
+    position: absolute !important;
+
+    top: auto !important;
+    left: auto !important;
+    right: 28px !important;
+    bottom: 0 !important;
+
+    width: min(660px, 51.5%) !important;
+    height: auto !important;
+    max-height: 520px !important;
+
+    object-fit: contain !important;
+    object-position: right bottom !important;
+
+    transform: none !important;
+  }
+}
+
+/* Medium desktop / smaller laptop */
+@media (min-width: 1024px) and (max-width: 1279px) {
+
+  .rectangleParent7 {
+    width: calc(100% - 64px) !important;
+  }
+
+  .rectangleParent7 .frameParent52 {
+    left: 46px !important;
+    width: 46% !important;
+    gap: 28px !important;
+  }
+
+  .rectangleParent7 .makeLearningPersonalParent,
+  .rectangleParent7 .makeLearningPersonal,
+  .rectangleParent7 .createAdaptiveLearning {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .rectangleParent7 .handHoldingWoodenCubeWithIcon {
+    right: 18px !important;
+    width: 50% !important;
+  }
+}
+
+/* Tablet */
+@media (min-width: 600px) and (max-width: 1023px) {
+
+  .rectangleParent7 {
+    width: calc(100% - 48px) !important;
+    max-width: 920px !important;
+
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+
+    border-radius: 64px !important;
+    overflow: hidden !important;
+  }
+
+  .rectangleParent7 .frameParent52 {
+    top: 50% !important;
+    left: 5% !important;
+
+    width: 44% !important;
+
+    gap: 24px !important;
+
+    transform: translateY(-50%) !important;
+  }
+
+  .rectangleParent7 .makeLearningPersonalParent {
+    gap: 20px !important;
+  }
+
+  .rectangleParent7 .handHoldingWoodenCubeWithIcon {
+    right: 2% !important;
+    bottom: 0 !important;
+
+    width: 48% !important;
+    max-height: 94% !important;
+
+    object-fit: contain !important;
+    object-position: right bottom !important;
+  }
+}
+
+/* Mobile */
+@media (max-width: 599px) {
+
+  .personalization > .rectangleParent7 {
+    position: relative !important;
+
+    top: auto !important;
+    left: auto !important;
+    right: auto !important;
+
+    width: calc(100% - 28px) !important;
+    max-width: 520px !important;
+    height: 500px !important;
+    min-height: 500px !important;
+
+    margin: 24px auto 0 !important;
+
+    transform: none !important;
+
+    border-radius: 34px !important;
+    overflow: hidden !important;
+  }
+
+  .personalization > .rectangleParent7 .frameParent52 {
+    position: relative !important;
+
+    top: auto !important;
+    left: auto !important;
+
+    width: calc(100% - 32px) !important;
+
+    margin: 24px auto 0 !important;
+
+    gap: 20px !important;
+
+    align-items: center !important;
+    text-align: center !important;
+  }
+
+  .personalization > .rectangleParent7 .makeLearningPersonalParent {
+    width: 100% !important;
+    max-width: 100% !important;
+
+    gap: 16px !important;
+
+    align-items: center !important;
+  }
+
+  .personalization > .rectangleParent7 .makeLearningPersonal,
+  .personalization > .rectangleParent7 .createAdaptiveLearning {
+    width: 100% !important;
+    max-width: 100% !important;
+
+    text-align: center !important;
+  }
+
+  .personalization > .rectangleParent7 .frameWrapper17 {
+    margin-top: 2px !important;
+  }
+
+  .personalization > .rectangleParent7 .handHoldingWoodenCubeWithIcon {
+    position: absolute !important;
+
+    left: 50% !important;
+    right: auto !important;
+    bottom: 0 !important;
+
+    width: min(92%, 390px) !important;
+    max-height: 355px !important;
+
+    object-fit: contain !important;
+    object-position: center bottom !important;
+
+    transform: translateX(-50%) !important;
+  }
+}
+
+/* Very small phones */
+@media (max-width: 380px) {
+  .personalization > .rectangleParent7 {
+    width: calc(100% - 20px) !important;
+    height: 486px !important;
+    min-height: 486px !important;
+    border-radius: 30px !important;
+  }
+
+  .personalization > .rectangleParent7 .frameParent52 {
+    width: calc(100% - 24px) !important;
+    margin-top: 20px !important;
+  }
+
+  .personalization > .rectangleParent7 .handHoldingWoodenCubeWithIcon {
+    width: 96% !important;
+  }
+}
+
+
+
+/* =========================================================
+   CTA EDGE-CUT FIX ONLY
+   "Make Learning Personal" section only
+   ---------------------------------------------------------
+   Fixes:
+   - left curved edge getting cut
+   - right curved edge getting cut
+   - keeps equal safe space on both sides
+   - keeps section centered
+   NO internal design changes
+   ========================================================= */
+
+/* Desktop / laptop */
+@media (min-width: 1024px) {
+  .rectangleParent7 {
+    left: 50% !important;
+    right: auto !important;
+
+    /* fixed safe width inside the page so both curved sides remain visible */
+    width: min(1240px, calc(100vw - 160px)) !important;
+    max-width: 1240px !important;
+    min-width: 0 !important;
+
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+
+    transform: translateX(-50%) !important;
+
+    box-sizing: border-box !important;
+    overflow: hidden !important;
+
+    border-radius: 100px !important;
+  }
+
+  .rectangleParent7 .personalizationCtaBackground {
+    position: absolute !important;
+    inset: 0 !important;
+
+    width: 100% !important;
+    height: 100% !important;
+
+    object-fit: cover !important;
+    object-position: center !important;
+
+    border-radius: inherit !important;
+  }
+
+  /* keep all existing CTA foreground items inside the newly safe frame */
+  .rectangleParent7 .frameParent52 {
+    left: 64px !important;
+  }
+
+  .rectangleParent7 .handHoldingWoodenCubeWithIcon {
+    right: 24px !important;
+    max-width: 51% !important;
+  }
+}
+
+/* Medium laptop */
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .rectangleParent7 {
+    width: calc(100vw - 96px) !important;
+    max-width: 1160px !important;
+  }
+
+  .rectangleParent7 .frameParent52 {
+    left: 44px !important;
+  }
+
+  .rectangleParent7 .handHoldingWoodenCubeWithIcon {
+    right: 16px !important;
+    max-width: 49% !important;
+  }
+}
+
+/* Tablet */
+@media (min-width: 600px) and (max-width: 1023px) {
+  .rectangleParent7 {
+    left: 50% !important;
+    right: auto !important;
+
+    width: calc(100vw - 64px) !important;
+    max-width: 900px !important;
+
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+
+    transform: translateX(-50%) !important;
+
+    box-sizing: border-box !important;
+    overflow: hidden !important;
+  }
+}
+
+/* Mobile */
+@media (max-width: 599px) {
+  .personalization > .rectangleParent7 {
+    left: auto !important;
+    right: auto !important;
+
+    width: calc(100vw - 32px) !important;
+    max-width: 520px !important;
+
+    margin-left: auto !important;
+    margin-right: auto !important;
+
+    transform: none !important;
+
+    box-sizing: border-box !important;
+    overflow: hidden !important;
+  }
+}
+
+/* Very small phones */
+@media (max-width: 380px) {
+  .personalization > .rectangleParent7 {
+    width: calc(100vw - 20px) !important;
+  }
+}

@@ -6,10 +6,12 @@ import { useState } from "react";
 import Image from "next/image";
 import Header from "../../components/Header/header";
 import Footer from "../../components/Footer/footer";
+import { BookDemoModal } from "../../components/Bookademo/Bookademo";
 import styles from "./bootcamp.module.css";
 
 const Bootcamp: NextPage = () => {
   const [openCards, setOpenCards] = useState<number[]>([]);
+  const [isBookDemoOpen, setIsBookDemoOpen] = useState(false);
 
   const toggleCard = (cardNumber: number) => {
     setOpenCards((current) => (current.includes(cardNumber) ? current.filter((number) => number !== cardNumber) : [...current, cardNumber]));
@@ -394,7 +396,12 @@ const Bootcamp: NextPage = () => {
           <div className={styles.frameWrapper11}>
             <div className={styles.frameWrapper12}>
               <div className={styles.bookADemoWrapper}>
-                <div className={styles.bookADemo}>Book a Demo</div>
+                <div
+                  className={styles.bookADemo}
+                  onClick={() => setIsBookDemoOpen(true)}
+                >
+                  Book a Demo
+                </div>
               </div>
             </div>
           </div>
@@ -414,6 +421,11 @@ const Bootcamp: NextPage = () => {
       </div>
 
     </div>
+
+      {isBookDemoOpen && (
+        <BookDemoModal onClose={() => setIsBookDemoOpen(false)} />
+      )}
+
       <Footer />
     </>
   );

@@ -1,3 +1,29 @@
+/* =========================================================
+   DIGITAL LITERACY — FULL PAGE BACKGROUND FIX ONLY
+   Keeps the same existing design/background colour visible
+   immediately on first render and after navigation.
+   ========================================================= */
+
+:global(html),
+:global(body) {
+  background: #dfe6e9 !important;
+  min-height: 100%;
+}
+
+:global(body) {
+  margin: 0;
+}
+
+:global(#main-content) {
+  width: 100%;
+  min-height: 100vh;
+  background: #dfe6e9 !important;
+}
+
+::before, *::after {
+  font-family: "Segoe UI" !important;
+}
+
 .dl-breadcrumb {
   width: 100%;
   max-width: 1280px;
@@ -10,7 +36,7 @@
 }
 
 .dl-breadcrumb-label {
-  font-family: "Segoe UI", sans-serif;
+  font-family: "Segoe UI";
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
@@ -22,7 +48,7 @@
   display: flex;
   align-items: center;
   gap: 8px;
-  font-family: "Segoe UI", sans-serif;
+  font-family: "Segoe UI";
   font-weight: 700;
   font-size: 16px;
   line-height: 24px;
@@ -70,6 +96,7 @@
   flex-direction: column;
   align-items: flex-start;
   gap: 32px;
+  margin-bottom: 160px;
 }
 
 .dl-hero-badge {
@@ -79,7 +106,7 @@
     inset -4px -4px 8px #ffffff,
     inset 4px 4px 8px rgba(196, 196, 196, 0.8);
   border-radius: 28px;
-  font-family: "Segoe UI", sans-serif;
+  font-family: "Segoe UI";
   font-weight: 600;
   font-size: 20px;
   letter-spacing: 0.03em;
@@ -92,9 +119,13 @@
   margin-left: 2px;
 }
 
+.dl-cta-card {
+  padding: 32px;
+}
+
 .dl-hero-heading {
   margin: 0;
-  font-family: "Segoe UI", sans-serif;
+  font-family: "Segoe UI";
   font-weight: 700;
   font-size: 36px;
   line-height: 1.25;
@@ -110,7 +141,7 @@
 
 .dl-hero-subtext {
   margin: 0;
-  font-family: "Segoe UI", sans-serif;
+  font-family: "Segoe UI";
   font-weight: 400;
   font-size: 24px;
   line-height: 1.43;
@@ -131,7 +162,7 @@
   cursor: pointer;
   border-radius: 8px;
   padding: 16px 32px;
-  font-family: "Segoe UI", sans-serif;
+  font-family: "Segoe UI";
   font-weight: 600;
   font-size: 22px;
   letter-spacing: 0.02em;
@@ -174,8 +205,8 @@
   padding: 16px;
   box-sizing: border-box;
   overflow: hidden;
-  bottom: -64px;
-  left: 36px;
+  bottom: -25px;
+  left: 51px;
 }
 
 .dl-hero-stats-bg {
@@ -233,7 +264,7 @@
   display: inline-flex;
   align-items: center;
   gap: 4px;
-  font-family: "Segoe UI", sans-serif;
+  font-family: "Segoe UI";
   font-weight: 700;
   font-size: 32px;
   letter-spacing: 0.02em;
@@ -255,7 +286,7 @@
 }
 
 .dl-hero-stat-label {
-  font-family: "Segoe UI", sans-serif;
+  font-family: "Segoe UI";
   font-weight: 600;
   font-size: 18px;
   letter-spacing: 0.02em;
@@ -314,6 +345,7 @@
   display: block;
   width: 100%;
   height: 100%;
+  justify-self: center;
 }
 
 .dl-skill-banner-sr-text {
@@ -360,7 +392,7 @@
 
 .dl-section-heading {
   margin: 0;
-  font-family: "Segoe UI", sans-serif;
+  font-family: "Segoe UI";
   font-weight: 700;
   font-size: 36px;
   line-height: 1.25;
@@ -468,7 +500,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: "Segoe UI", sans-serif;
+  font-family: "Segoe UI";
   font-weight: 700;
   font-size: 54px;
   color: #2f3547;
@@ -494,7 +526,7 @@
 
 .dl-adv-card-title {
   margin: 96px 0 0;
-  font-family: "Segoe UI", sans-serif;
+  font-family: "Segoe UI";
   font-weight: 700;
   font-size: 20px;
   letter-spacing: 0.03em;
@@ -503,7 +535,7 @@
 
 .dl-adv-card-desc {
   margin: 12px 0 0;
-  font-family: "Segoe UI", sans-serif;
+  font-family: "Segoe UI";
   font-weight: 400;
   font-size: 18px;
   line-height: 1.5;
@@ -538,68 +570,21 @@
   align-items: center;
   justify-content: center;
   padding: 20px 56px;
-}
-
-.dl-pill-label::before,
-.dl-pill-label::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  width: 91%;
-  height: 100%;
-  border: 2px solid var(--pill-color);
+  background: #dfe6e9;
+  border: 4px dashed var(--pill-color);
   border-radius: 50%;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-  pointer-events: none;
-  animation-duration: 4s;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-}
-
-.dl-pill-label::before {
-  left: 0;
-  transform-origin: center;
-  /* animation-name: dl-pill-orbit-cw; */
-}
-
-.dl-pill-label::after {
-  left: 8.4%;
-  transform-origin: center;
-  /* animation-name: dl-pill-orbit-ccw; */
-}
-
-.dl-pill-label:hover::before,
-.dl-pill-label:hover::after {
-  animation-play-state: running;
-}
-
-@keyframes dl-pill-orbit-cw {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@keyframes dl-pill-orbit-ccw {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(-360deg);
-  }
 }
 
 .dl-pill-label-text {
   position: relative;
   z-index: 1;
-  font-family: "Segoe UI", sans-serif;
+  font-family: "Segoe UI";
   font-weight: 700;
   font-size: clamp(28px, 4vw, 64px);
   line-height: 1.25;
   letter-spacing: 0.03em;
-  color: #31344b;
+  color: var(--pill-color);
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
@@ -612,8 +597,8 @@
   align-items: center;
   background: #dfe6e9;
   box-shadow:
-    inset -8px -8px 16px #ffffff,
-    inset 8px 8px 16px rgba(196, 196, 196, 0.8);
+    inset -4px -4px 8px #ffffff,
+    inset 4px 4px 8px rgba(196, 196, 196, 0.8);
   border-radius: 32px;
   height: 95vh;
 }
@@ -640,7 +625,7 @@
   position: relative;
   width: 100%;
   aspect-ratio: 458 / 549;
-  border-radius: 500px 500px 0 0;
+  border-radius: 32px;
   overflow: hidden;
 }
 
@@ -769,7 +754,7 @@
 }
 
 .dl-check-pill-text {
-  font-family: "Segoe UI", sans-serif;
+  font-family: "Segoe UI";
   font-weight: 600;
   font-size: 20px;
   color: #2f3547;
@@ -778,18 +763,18 @@
 .dl-analytics-section {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 62px 16px 32px;
+  padding: 50px 16px 32px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 60px;
+  gap: 50px;
 }
 
 .dl-analytics-header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 32px;
+  gap: 24px;
   max-width: 1100px;
   text-align: center;
 }
@@ -873,13 +858,13 @@
 }
 
 .dl-analytics-card-value {
-  font-family: "Inter", sans-serif;
+  font-family: "Segoe UI";
   font-weight: 700;
   font-size: 32px;
 }
 
 .dl-analytics-card-label {
-  font-family: "Segoe UI", sans-serif;
+  font-family: "Segoe UI";
   font-weight: 700;
   font-size: 20px;
   letter-spacing: 0.03em;
@@ -887,7 +872,7 @@
 }
 
 .dl-analytics-card-desc {
-  font-family: "Inter", sans-serif;
+  font-family: "Segoe UI";
   font-weight: 400;
   font-size: 16px;
   color: #31344b;
@@ -900,7 +885,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 64px;
+  gap: 54px;
 }
 
 .dl-step-grid {
@@ -970,7 +955,7 @@
     inset -4px -4px 8px #ffffff,
     inset 4px 4px 8px rgba(196, 196, 196, 0.8);
   border-radius: 28px 0 0 28px;
-  font-family: "Segoe UI", sans-serif;
+  font-family: "Segoe UI";
   font-weight: 700;
   font-size: 44px;
   margin-bottom: 24px;
@@ -988,7 +973,7 @@
 
 .dl-step-card-title {
   margin: 0 0 12px;
-  font-family: "Segoe UI", sans-serif;
+  font-family: "Segoe UI";
   font-weight: 700;
   font-size: 28px;
   color: #31344b;
@@ -996,7 +981,7 @@
 
 .dl-step-card-desc {
   margin: 0;
-  font-family: "Segoe UI", sans-serif;
+  font-family: "Segoe UI";
   font-size: 20px;
   line-height: 1.5;
   color: #000;
@@ -1031,7 +1016,7 @@
   display: flex;
   align-items: center;
   gap: 16px;
-  font-family: "Inter", sans-serif;
+  font-family: "Segoe UI";
   font-weight: 600;
   font-size: 20px;
   color: #2f3547;
@@ -1124,7 +1109,7 @@
   z-index: 2;
   display: inline-block;
   margin: 0 0 14px;
-  font-family: "Segoe UI", sans-serif;
+  font-family: "Segoe UI";
   font-weight: 700;
   font-size: 28px;
   letter-spacing: 0.03em;
@@ -1150,7 +1135,7 @@
   position: relative;
   z-index: 2;
   margin: 0;
-  font-family: "Inter", sans-serif;
+  font-family: "Segoe UI";
   font-size: 20px;
   color: #31344b;
 }
@@ -1182,7 +1167,7 @@
 .dl-cta-heading {
   margin: 0;
   max-width: 900px;
-  font-family: "Segoe UI", sans-serif;
+  font-family: "Segoe UI";
   font-weight: 700;
   font-size: 36px;
   line-height: 1.15;
@@ -1193,7 +1178,7 @@
 .dl-cta-subtext {
   margin: 0;
   max-width: 960px;
-  font-family: "Segoe UI", sans-serif;
+  font-family: "Segoe UI";
   font-size: 24px;
   line-height: 1.43;
   letter-spacing: 0.03em;
@@ -1215,12 +1200,14 @@
 @media (max-width: 1024px) {
   .dl-hero-card {
     justify-content: center;
-    flex-direction: column-reverse;
+    flex-direction: column;
+    height: 100%;
   }
   .dl-hero-content {
     align-items: center;
     text-align: center;
     flex: auto;
+    margin-bottom: 0;
   }
 
   .dl-hero-buttons {
@@ -1228,9 +1215,20 @@
     margin-bottom: 26px;
   }
   .dl-hero-media {
-    order: -1;
+    order: 1;
     max-width: 360px;
   }
+
+  .dl-adv-card {
+  width: 300px;
+  height: 300px;
+}
+
+.dl-advantage-grid {
+  grid-template-columns: repeat(2, 300px);
+  justify-content: center;
+  margin: 0 auto;
+}
 
   .dl-check-pill-outer {
     width: auto;
@@ -1240,11 +1238,23 @@
     display: none;
   }
 
+  .dl-hero-subtext {
+    text-align: center;
+  }
+
   .dl-step-grid {
     grid-template-columns: repeat(2, 1fr);
     justify-items: center;
     gap: 67px;
     width: auto;
+  }
+
+  .dl-hero-image-frame {
+    z-index: auto;
+  }
+
+  .dl-hero-stats {
+    bottom: -58px;
   }
 
   .dl-step-card {
@@ -1259,8 +1269,20 @@
     font-size: 34px;
   }
 
+  .dl-adv-card-mirrored .dl-adv-card-shadow,
+  .dl-adv-card-mirrored .dl-adv-card-front,
+  .dl-adv-card-front,
+  .dl-adv-card-shadow {
+    width: 300px;
+    height: 300px;
+  }
+
   .dl-step-card-title {
     font-size: 22px;
+  }
+
+  .dl-hero-stats {
+    left: 160px;
   }
 
   .dl-step-card-desc {
@@ -1269,11 +1291,17 @@
 
   .dl-advantage-section {
     grid-template-columns: 1fr;
+    gap: 57px;
   }
 
   .dl-advantage-text {
     gap: 24px;
     align-items: center;
+  }
+
+  .dl-accelerate-section {
+    height: 100%;
+    padding: 0 16px;
   }
 }
 
@@ -1287,10 +1315,15 @@
     text-align: center;
   }
 
+  .dl-skill-banner-svg {
+    width: 90%;
+    height: 90%;
+    display: block;
+  }
+
   .dl-hero-card {
     padding: 32px 24px;
     gap: 32px;
-    flex-direction: column-reverse;
   }
   .dl-hero-badge {
     font-size: 18px;
@@ -1313,10 +1346,16 @@
   .dl-accelerate {
     flex-direction: column;
     align-items: center;
+    gap: 32px;
   }
 
   .dl-accelerate-content {
     align-items: center;
+  }
+
+  .dl-accelerate-media {
+    width: 100%;
+    height: 450px;
   }
 
   .dl-skill-banner {
@@ -1327,9 +1366,27 @@
     display: none;
   }
 
+  .dl-hero-stats {
+    left: 36px;
+  }
+
+  .dl-adv-card-mirrored .dl-adv-card-shadow,
+  .dl-adv-card-mirrored .dl-adv-card-front,
+  .dl-adv-card-front,
+  .dl-adv-card-shadow {
+    width: 260px;
+    height: 260px;
+  }
+
+  .dl-adv-card {
+    width: 260px;
+    height: 260px;
+  }
+
   .dl-advantage-grid {
-    grid-template-columns: 1fr 1fr;
-    margin: 0 16px;
+    grid-template-columns: repeat(2, 260px);
+    justify-content: center;
+    margin: 0 auto;
   }
 
   .dl-advantage-section {
@@ -1356,6 +1413,11 @@
 }
 
 @media (max-width: 480px) {
+  .dl-hero-heading {
+    font-size: 24px;
+    width: 320px;
+  }
+
   .dl-hero-section {
     padding: 24px 12px;
   }
@@ -1363,7 +1425,17 @@
   .dl-hero-card {
     padding: 24px 16px 0;
     border-radius: 24px;
-    flex-direction: column-reverse;
+  }
+
+  .dl-adv-card-front {
+    max-width: 260px;
+    max-height: 260px;
+  }
+
+  .dl-adv-card-badge {
+    width: 90;
+    height: 90;
+    font-size: 34px;
   }
 
   .dl-hero-content {
@@ -1373,6 +1445,11 @@
   .dl-hero-buttons {
     flex-direction: column;
     width: 100%;
+    margin-bottom: 0;
+  }
+
+  .dl-breadcrumb {
+    padding: 20px 16px 0;
   }
 
   .dl-hero-button {
@@ -1401,17 +1478,27 @@
   }
 
   .dl-section-heading {
-    font-size: 36px;
-    width: 317px;
+    font-size: 24px;
+    width: 324px;
+  }
+
+  .dl-adv-card {
+    width: 260px;
+    height: 260px;
   }
 
   .dl-check-list {
     width: 90%;
   }
 
+  .dl-why-content {
+    gap: 26px;
+  }
+
   .dl-hero-subtext {
     width: 312px;
     padding: 0 6px;
+    font-size: 16px;
   }
 
   .dl-bullet-item {
@@ -1424,8 +1511,47 @@
     height: 24px;
   }
 
+  .dl-hero-image-frame {
+    width: 100%;
+  }
+
+  .dl-step-grid {
+    gap: 36px !important;
+  }
+
+  .dl-why-section {
+    padding: 32px 16px;
+  }
+
+  .dl-cta-heading {
+    font-size: 24px;
+  }
+
+  .dl-cta-subtext {
+    font-size: 16px;
+  }
+
+  .dl-analytics-card-value {
+    font-size: 24px;
+  }
+
+  .dl-howitworks-section {
+    gap: 32px;
+  }
+
+  .dl-accelerate-section {
+    height: 100%;
+    margin: 0 16px;
+    padding: 16px;
+  }
+
   .dl-callout-title {
     margin: 0 8px 14px 0;
+    font-size: 20px;
+  }
+
+  .dl-callout-desc {
+    font-size: 16px;
   }
 
   .dl-hero-media {
@@ -1445,11 +1571,11 @@
     align-items: center;
   }
 
-  .dl-pill-label {
+  /* .dl-pill-label {
     width: 280px;
     box-sizing: border-box;
     padding: 20px 16px;
-  }
+  } */
 
   .dl-analytics-grid {
     grid-template-columns: 1fr;
@@ -1458,6 +1584,7 @@
 
   .dl-accelerate {
     flex-direction: column;
+    padding: 16px;
   }
 
   .dl-hero-badge {
@@ -1472,6 +1599,12 @@
   .dl-advantage-grid {
     grid-template-columns: 1fr;
     margin: 0 16px;
+    justify-items: center;
+    gap: 77px;
+  }
+
+  .dl-cta-card {
+    padding: 22px;
   }
 }
 

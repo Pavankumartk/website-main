@@ -3,6 +3,7 @@
 import styles from "./Bookademo.module.css";
 import { useEffect, useId, useLayoutEffect, useRef, useState } from "react";
 import type { ReactNode, RefObject } from "react";
+import { createPortal } from "react-dom";
 import { allCountries } from "country-telephone-data";
 import {
   isValidPhoneNumber,
@@ -3048,13 +3049,30 @@ function BookDemoModal({
     };
   }, [onClose]);
 
-  return (
+  return createPortal(
     <div
       className={
         styles[
           "book-demo-modal-overlay"
         ]
       }
+      style={{
+        position: "fixed",
+        inset: 0,
+        zIndex: 2147483000,
+        width: "100vw",
+        height: "100dvh",
+        maxWidth: "100vw",
+        maxHeight: "100dvh",
+        overflow: "hidden",
+        overscrollBehavior: "contain",
+      }}
+      onWheel={(event) => {
+        event.stopPropagation();
+      }}
+      onTouchMove={(event) => {
+        event.stopPropagation();
+      }}
       onMouseDown={(event) => {
         if (
           event.target ===
@@ -3070,6 +3088,15 @@ function BookDemoModal({
             "book-demo-modal-dialog"
           ]
         }
+        style={{
+          position: "absolute",
+          top: "50%",
+          left: "50%",
+          transform: "translate(-50%, -50%)",
+          maxWidth: "calc(100vw - 24px)",
+          maxHeight: "calc(100dvh - 24px)",
+          overflow: "hidden",
+        }}
         role="dialog"
         aria-modal="true"
         aria-label="Book a demo"
@@ -3101,11 +3128,19 @@ function BookDemoModal({
               "book-demo-modal-scroll"
             ]
           }
+          style={{
+            maxHeight: "calc(100dvh - 48px)",
+            overflowY: "auto",
+            overflowX: "hidden",
+            overscrollBehavior: "contain",
+            WebkitOverflowScrolling: "touch",
+          }}
         >
           <BookADemo />
         </div>
       </div>
-    </div>
+    </div>,
+    document.body
   );
 }
 

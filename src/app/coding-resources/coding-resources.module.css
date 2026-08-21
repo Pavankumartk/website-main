@@ -3578,3 +3578,860 @@
   }
 }
 
+
+/* =========================================================
+   FINAL RESPONSIVE CENTERING FIX
+   Keeps the existing design unchanged.
+   Fixes horizontal overflow / right-side shifting at 100% zoom.
+   ========================================================= */
+
+:global(html),
+:global(body) {
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: clip;
+}
+
+.page,
+.page *,
+.page *::before,
+.page *::after {
+  box-sizing: border-box;
+}
+
+.page {
+  width: 100%;
+  max-width: 100vw;
+  margin: 0 auto;
+  overflow-x: clip;
+  position: relative;
+}
+
+.shell {
+  width: min(1280px, calc(100% - 80px));
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+}
+
+.heroFrame,
+.hero,
+.learning,
+.practice,
+.practiceIntro,
+.supportGrid,
+.practiceOval,
+.pillars,
+.growthFrame,
+.growth {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+}
+
+.heroImage,
+.growthVideo,
+.videoVisual img {
+  max-width: 100%;
+}
+
+/* Large desktop */
+@media (min-width: 1280px) {
+  .shell {
+    width: min(1280px, calc(100% - 80px));
+    margin-inline: auto;
+  }
+
+  .learningCards,
+  .pillars {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* Laptop */
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .shell {
+    width: calc(100% - 48px);
+    max-width: 1180px;
+    margin-inline: auto;
+  }
+
+  .learningCards {
+    max-width: 100%;
+    margin-inline: auto;
+  }
+
+  .pillars {
+    max-width: 100%;
+    margin-inline: auto;
+  }
+
+  .growthFrame {
+    width: 100%;
+    margin-inline: auto;
+  }
+}
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .shell {
+    width: calc(100% - 32px);
+    max-width: 900px;
+    padding-left: 0;
+    padding-right: 0;
+    margin-inline: auto;
+  }
+
+  .heroFrame,
+  .growthFrame,
+  .learning,
+  .practice {
+    width: 100%;
+    margin-inline: auto;
+  }
+
+  .learningCards,
+  .supportGrid,
+  .pillars {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* Large phones / small tablets */
+@media (min-width: 481px) and (max-width: 767px) {
+  .shell {
+    width: calc(100% - 24px);
+    max-width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+    margin-inline: auto;
+  }
+
+  .heroFrame,
+  .growthFrame,
+  .learning,
+  .practice,
+  .practiceIntro {
+    width: 100%;
+    max-width: 100%;
+    margin-inline: auto;
+  }
+
+  .learningCards,
+  .supportGrid,
+  .pillars {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .pillar {
+    max-width: 100%;
+  }
+}
+
+/* Phones */
+@media (max-width: 480px) {
+  .page {
+    width: 100%;
+    max-width: 100vw;
+    margin: 0 auto;
+    overflow-x: clip;
+  }
+
+  .shell {
+    width: 100%;
+    max-width: 100%;
+    padding-left: 14px;
+    padding-right: 14px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .breadcrumb,
+  .heroFrame,
+  .growthFrame,
+  .learning,
+  .practice,
+  .practiceIntro,
+  .supportGrid,
+  .practiceOval,
+  .pillars,
+  .growth {
+    width: 100%;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .heroFrame,
+  .growthFrame {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .hero {
+    width: 100%;
+    max-width: 100%;
+    margin-inline: auto;
+  }
+
+  .heroCopy {
+    left: 50% !important;
+    right: auto !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    transform: translateX(-50%) !important;
+  }
+
+  .heroImage {
+    left: 50% !important;
+    right: auto !important;
+    transform: translateX(-50%) scaleX(-1) !important;
+  }
+
+  .learningCards {
+    width: min(248px, 100%);
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .learningCard {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .supportGrid {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .supportCard {
+    width: 100%;
+    max-width: 100%;
+    margin-inline: auto;
+  }
+
+  .practiceOval {
+    width: min(96%, 100%);
+  }
+
+  .pillars {
+    width: 100%;
+    max-width: 424px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .pillar {
+    width: 100%;
+    max-width: 424px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .growthFrame,
+  .growth {
+    width: 100%;
+    max-width: 100%;
+    margin-inline: auto;
+  }
+
+  .growthCopy,
+  .videoVisual {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .growthVideo {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+/* Very small phones */
+@media (max-width: 360px) {
+  .shell {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .heroFrame,
+  .growthFrame {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+
+  .heroCopy {
+    width: calc(100% - 20px) !important;
+    max-width: 330px !important;
+  }
+
+  .learningCards {
+    transform: none;
+  }
+
+  .pillar {
+    max-width: 100%;
+  }
+}
+
+
+/* =========================================================
+   UNIVERSAL FLUID RESPONSIVE SYSTEM
+   Coding Resources
+   Works with mobile / tablet / desktop AND browser zoom.
+   This block intentionally comes last and wins over the
+   older repeated media-query overrides above.
+   ========================================================= */
+
+:global(html),
+:global(body) {
+  width: 100% !important;
+  max-width: 100% !important;
+  min-width: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow-x: hidden !important;
+}
+
+.page,
+.page *,
+.page *::before,
+.page *::after {
+  box-sizing: border-box !important;
+}
+
+.page {
+  width: 100% !important;
+  max-width: 100% !important;
+  min-width: 0 !important;
+  margin: 0 !important;
+  overflow-x: hidden !important;
+  position: relative !important;
+}
+
+/* Main responsive container.
+   Using width + max-width instead of a fixed pixel canvas
+   keeps the page centered at every browser zoom level. */
+.shell {
+  width: calc(100% - clamp(24px, 5vw, 80px)) !important;
+  max-width: 1280px !important;
+  min-width: 0 !important;
+  margin: 0 auto !important;
+  padding: 0 !important;
+}
+
+/* Never allow a top-level section to become wider than its container. */
+.breadcrumb,
+.heroFrame,
+.hero,
+.learning,
+.practice,
+.practiceIntro,
+.supportGrid,
+.practiceOval,
+.pillars,
+.growthFrame,
+.growth {
+  width: 100% !important;
+  max-width: 100% !important;
+  min-width: 0 !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+/* Prevent media from creating document-level horizontal overflow. */
+.page img,
+.page video,
+.heroImage,
+.learningCardOuter,
+.pillarSvg,
+.growthVideo {
+  max-width: 100%;
+}
+
+/* Fluid text safety. */
+.heroCopy,
+.heroCopy h1,
+.heroCopy p,
+.learning h2,
+.learning > p,
+.practiceIntro h2,
+.practiceIntro p,
+.supportCard,
+.pillar,
+.pillarContent,
+.pillarHead,
+.pillarHead span,
+.pillar h3,
+.checkList,
+.checkItem,
+.checkText,
+.growthCopy,
+.growthCopy h2,
+.growthCopy p,
+.videoVisual {
+  min-width: 0 !important;
+  max-width: 100% !important;
+  overflow-wrap: break-word;
+}
+
+/* =========================================================
+   HERO — fluid at every viewport width / zoom level
+   ========================================================= */
+
+.heroFrame {
+  padding: clamp(12px, 2.5vw, 32px) !important;
+}
+
+.hero {
+  position: relative !important;
+  overflow: hidden !important;
+}
+
+/* Keep the desktop visual composition but scale dimensions fluidly. */
+@media (min-width: 901px) {
+  .hero {
+    height: clamp(440px, 42vw, 550px) !important;
+  }
+
+  .heroCopy {
+    position: absolute !important;
+    left: clamp(24px, 3vw, 36px) !important;
+    right: auto !important;
+    top: clamp(52px, 7vw, 88px) !important;
+    width: min(46%, 560px) !important;
+    max-width: 560px !important;
+    transform: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    text-align: left !important;
+    align-items: flex-start !important;
+  }
+
+  .heroCopy h1 {
+    font-size: clamp(32px, 3.2vw, 45px) !important;
+    line-height: 1.25 !important;
+  }
+
+  .heroCopy p {
+    font-size: clamp(17px, 1.7vw, 24px) !important;
+    line-height: 1.45 !important;
+  }
+
+  .heroImage {
+    position: absolute !important;
+    left: auto !important;
+    right: clamp(-167px, -10vw, -70px) !important;
+    bottom: clamp(-27px, -2vw, -4px) !important;
+    width: min(73vw, 940px) !important;
+    height: auto !important;
+    max-width: none !important;
+    transform: scaleX(-1) !important;
+  }
+}
+
+/* Tablet + mobile hero.
+   No fixed 440px/560px object can push the document sideways. */
+@media (max-width: 900px) {
+  .hero {
+    height: auto !important;
+    min-height: clamp(560px, 120vw, 680px) !important;
+    display: block !important;
+  }
+
+  .heroCopy {
+    position: relative !important;
+    left: auto !important;
+    right: auto !important;
+    top: auto !important;
+    transform: none !important;
+    width: min(100%, 560px) !important;
+    max-width: 100% !important;
+    margin: 0 auto !important;
+    padding:
+      clamp(34px, 8vw, 64px)
+      clamp(18px, 6vw, 44px)
+      clamp(245px, 52vw, 330px) !important;
+    text-align: center !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+
+  .heroCopy .pill {
+    align-self: center !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  .heroCopy h1 {
+    width: 100% !important;
+    max-width: 520px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    font-size: clamp(26px, 6vw, 38px) !important;
+    line-height: 1.22 !important;
+    text-align: center !important;
+  }
+
+  .heroCopy p {
+    width: 100% !important;
+    max-width: 500px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    font-size: clamp(15px, 3.6vw, 20px) !important;
+    line-height: 1.55 !important;
+    text-align: center !important;
+  }
+
+  .heroImage {
+    position: absolute !important;
+    left: 50% !important;
+    right: auto !important;
+    bottom: clamp(-18px, -2vw, 0px) !important;
+    width: min(112%, 620px) !important;
+    height: auto !important;
+    max-width: none !important;
+    transform: translateX(-50%) scaleX(-1) !important;
+  }
+}
+
+/* =========================================================
+   LEARNING CARDS
+   Fluid grid automatically changes column count.
+   ========================================================= */
+
+.learningCards {
+  width: 100% !important;
+  max-width: 1280px !important;
+  height: auto !important;
+  display: grid !important;
+  grid-template-columns:
+    repeat(auto-fit, minmax(min(100%, 248px), 248px)) !important;
+  justify-content: center !important;
+  align-items: center !important;
+  gap: clamp(14px, 2vw, 24px) !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.learningCard {
+  width: 248px !important;
+  max-width: 100% !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+/* =========================================================
+   PRACTICE SUPPORT CARDS
+   ========================================================= */
+
+.supportGrid {
+  display: grid !important;
+  grid-template-columns:
+    repeat(auto-fit, minmax(min(100%, 320px), 1fr)) !important;
+  gap: clamp(18px, 4vw, 48px) !important;
+  padding:
+    clamp(28px, 4vw, 58px)
+    clamp(0px, 5vw, 110px) !important;
+}
+
+.supportCard {
+  width: 100% !important;
+  max-width: 100% !important;
+}
+
+.practiceOval {
+  width: min(92%, 1100px) !important;
+}
+
+/* =========================================================
+   PILLAR CARDS
+   This removes the fixed 400/424px overflow problem.
+   ========================================================= */
+
+.pillars {
+  display: grid !important;
+  grid-template-columns:
+    repeat(auto-fit, minmax(min(100%, 360px), 1fr)) !important;
+  justify-content: center !important;
+  align-items: stretch !important;
+  gap: clamp(18px, 3vw, 36px) !important;
+  width: 100% !important;
+  max-width: 1280px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.pillar {
+  position: relative !important;
+  width: 100% !important;
+  max-width: 424px !important;
+  min-width: 0 !important;
+  height: auto !important;
+  aspect-ratio: 424 / 630 !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  padding: 0 !important;
+  overflow: hidden !important;
+}
+
+/* The SVG is the visual card frame; scale it with the article. */
+.pillarSvg {
+  position: absolute !important;
+  inset: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  max-width: 100% !important;
+  object-fit: fill !important;
+}
+
+/* Overlay content stays proportional inside scaled card. */
+.pillarContent {
+  position: relative !important;
+  z-index: 2 !important;
+  width: 100% !important;
+  height: 100% !important;
+  padding:
+    clamp(18px, 4vw, 30px)
+    clamp(18px, 5vw, 30px)
+    clamp(22px, 5vw, 42px) !important;
+  display: flex !important;
+  flex-direction: column !important;
+}
+
+.pillarHead {
+  width: 100% !important;
+  max-width: 100% !important;
+  min-height: 0 !important;
+  height: 32% !important;
+  margin: 0 !important;
+  padding:
+    clamp(10px, 2vw, 24px)
+    0
+    0 !important;
+  text-align: center !important;
+}
+
+.pillarHead b {
+  font-size: clamp(36px, 6vw, 54px) !important;
+  line-height: 1.1 !important;
+}
+
+.pillarHead span {
+  width: 100% !important;
+  font-size: clamp(17px, 3vw, 27px) !important;
+  line-height: 1.35 !important;
+  text-align: center !important;
+}
+
+.pillar h3 {
+  width: 100% !important;
+  max-width: 100% !important;
+  margin:
+    clamp(18px, 4vw, 40px)
+    0
+    clamp(14px, 3vw, 28px) !important;
+  padding: 0 !important;
+  font-size: clamp(17px, 2.4vw, 24px) !important;
+  line-height: 1.35 !important;
+  text-align: center !important;
+}
+
+.checkList {
+  width: 100% !important;
+  max-width: 100% !important;
+  padding: 0 !important;
+  gap: clamp(9px, 1.8vw, 16px) !important;
+}
+
+.checkItem {
+  width: 100% !important;
+  max-width: 100% !important;
+  min-width: 0 !important;
+  height: auto !important;
+  min-height: clamp(36px, 5vw, 44px) !important;
+}
+
+.checkIconCircle {
+  flex: 0 0 clamp(34px, 5vw, 44px) !important;
+  width: clamp(34px, 5vw, 44px) !important;
+  height: clamp(34px, 5vw, 44px) !important;
+  min-width: 0 !important;
+  min-height: 0 !important;
+}
+
+.checkIcon {
+  width: clamp(19px, 3vw, 24px) !important;
+  height: clamp(19px, 3vw, 24px) !important;
+}
+
+.checkText {
+  flex: 1 1 auto !important;
+  min-width: 0 !important;
+  font-size: clamp(14px, 2.4vw, 22px) !important;
+  line-height: 1.4 !important;
+  text-align: left !important;
+}
+
+/* =========================================================
+   GROWTH / VIDEO
+   ========================================================= */
+
+.growthFrame {
+  padding: clamp(12px, 2.5vw, 32px) !important;
+}
+
+@media (min-width: 901px) {
+  .growth {
+    height: clamp(400px, 38vw, 480px) !important;
+    display: grid !important;
+    grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr) !important;
+  }
+
+  .growthCopy {
+    min-width: 0 !important;
+    padding:
+      clamp(40px, 5vw, 64px)
+      clamp(36px, 5.5vw, 70px) !important;
+  }
+}
+
+@media (max-width: 900px) {
+  .growth {
+    height: auto !important;
+    display: flex !important;
+    flex-direction: column !important;
+  }
+
+  .growthCopy {
+    width: 100% !important;
+    padding:
+      clamp(30px, 7vw, 48px)
+      clamp(20px, 6vw, 38px) !important;
+    text-align: center !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+
+  .growthCopy .pill {
+    align-self: center !important;
+  }
+
+  .growthCopy h2,
+  .growthCopy p {
+    width: 100% !important;
+    max-width: 560px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    text-align: center !important;
+  }
+
+  .videoVisual {
+    width: 100% !important;
+    min-height: clamp(240px, 55vw, 360px) !important;
+    border-radius: 0 0 18px 18px !important;
+  }
+
+  .growthVideo {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+  }
+}
+
+/* =========================================================
+   PHONE-SPECIFIC COMPACTING
+   These rules do NOT use one device width; they apply
+   fluidly to every phone-size CSS viewport.
+   ========================================================= */
+
+@media (max-width: 600px) {
+  .shell {
+    width: calc(100% - 24px) !important;
+  }
+
+  .breadcrumb {
+    height: 64px !important;
+  }
+
+  .heroFrame,
+  .growthFrame {
+    padding: 10px !important;
+  }
+
+  .learning h2,
+  .practiceIntro h2,
+  .growthCopy h2 {
+    font-size: clamp(23px, 7vw, 30px) !important;
+    line-height: 1.3 !important;
+  }
+
+  .learning > p,
+  .practiceIntro p,
+  .growthCopy p {
+    font-size: clamp(15px, 4.2vw, 17px) !important;
+    line-height: 1.55 !important;
+  }
+
+  .practiceIntro {
+    padding:
+      clamp(34px, 10vw, 54px)
+      clamp(16px, 5vw, 28px) !important;
+    border-radius: 8px 56px 8px 56px !important;
+  }
+
+  .supportGrid {
+    grid-template-columns: minmax(0, 1fr) !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  .practiceOval {
+    width: calc(100% - 8px) !important;
+    padding:
+      clamp(20px, 6vw, 30px)
+      clamp(12px, 4vw, 20px) !important;
+    font-size: clamp(18px, 5vw, 24px) !important;
+  }
+
+  .pillars {
+    grid-template-columns: minmax(0, 1fr) !important;
+  }
+
+  .pillar {
+    width: min(100%, 424px) !important;
+  }
+}
+
+/* Very narrow phones */
+@media (max-width: 360px) {
+  .shell {
+    width: calc(100% - 16px) !important;
+  }
+
+  .heroFrame,
+  .growthFrame {
+    padding: 8px !important;
+  }
+
+  .heroCopy {
+    padding-left: 14px !important;
+    padding-right: 14px !important;
+  }
+
+  .pillarContent {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+  }
+}

@@ -2993,3 +2993,1232 @@
 	z-index: 9999;
 	font-family: "Segoe UI";
 }
+
+
+/* =========================================================
+   TRUE MOBILE RESPONSIVE UNIVERSITY
+   MOBILE ONLY — DESKTOP DESIGN IS NOT TOUCHED
+   ---------------------------------------------------------
+   IMPORTANT:
+   - removes miniature 1440px + zoom behavior on phones
+   - keeps colors / shadows / radii / visual identity
+   - converts the page to a readable mobile flow
+   - prevents left/right overflow
+   ========================================================= */
+
+@media screen and (max-width: 767px) {
+
+	:global(html),
+	:global(body) {
+		width: 100% !important;
+		max-width: 100% !important;
+		min-width: 0 !important;
+		margin: 0 !important;
+		padding: 0 !important;
+		overflow-x: hidden !important;
+		background: #dfe6e9 !important;
+	}
+
+	.universityAndCollege,
+	.universityAndCollege *,
+	.universityAndCollege *::before,
+	.universityAndCollege *::after {
+		box-sizing: border-box !important;
+	}
+
+	.universityAndCollege {
+		width: 100% !important;
+		min-width: 0 !important;
+		max-width: 100% !important;
+		height: auto !important;
+		min-height: 0 !important;
+		zoom: 1 !important;
+		margin: 0 !important;
+		padding: 20px 14px 36px !important;
+		overflow: hidden !important;
+		position: relative !important;
+		font-family: "Segoe UI" !important;
+		font-size: 16px !important;
+	}
+
+	/* ---------------- BREADCRUMB ---------------- */
+
+	.frameDiv {
+		position: relative !important;
+		top: auto !important;
+		left: auto !important;
+		width: 100% !important;
+		min-width: 0 !important;
+		display: flex !important;
+		flex-wrap: wrap !important;
+		align-items: center !important;
+		gap: 7px !important;
+		margin: 6px 0 24px !important;
+		padding: 0 4px !important;
+		font-size: 13px !important;
+		line-height: 20px !important;
+	}
+
+	.ourCustomersWrapper,
+	.homeParent,
+	.arrowRightDoubleGroup {
+		min-width: 0 !important;
+	}
+
+	.industriesWeServe {
+		font-size: 13px !important;
+		line-height: 20px !important;
+		white-space: normal !important;
+	}
+
+	.arrowDown01Icon {
+		width: 14px !important;
+		height: 14px !important;
+		flex: 0 0 14px !important;
+	}
+
+	/* The old hero background was a separate absolutely-positioned
+	   desktop layer. The mobile hero receives the same neumorphic
+	   visual directly, so no miniature desktop canvas is needed. */
+	.universityAndCollegeInner {
+		display: none !important;
+	}
+
+	/* ---------------- HERO + DIGITAL LEARNING ---------------- */
+
+	.frameParent2 {
+		position: relative !important;
+		top: auto !important;
+		left: auto !important;
+		width: 100% !important;
+		max-width: 100% !important;
+		height: auto !important;
+		display: flex !important;
+		flex-direction: column !important;
+		gap: 46px !important;
+		margin: 0 !important;
+	}
+
+	.frameParent3 {
+		width: 100% !important;
+		max-width: 100% !important;
+		height: auto !important;
+		display: flex !important;
+		flex-direction: column !important;
+		gap: 26px !important;
+		padding: 30px 18px 20px !important;
+		border-radius: 48px 0 48px 0 !important;
+		background: #dfe6e9 !important;
+		box-shadow: -8px -8px 16px #FFFFFF, 8px 8px 16px #C4C4C4 !important;
+	}
+
+	.frameParent4,
+	.frameWrapper,
+	.frameParent5,
+	.frameParent6 {
+		width: 100% !important;
+		max-width: 100% !important;
+		height: auto !important;
+		display: flex !important;
+		flex-direction: column !important;
+		align-items: center !important;
+		gap: 18px !important;
+	}
+
+	.frameInner,
+	.frameChild2,
+	.frameChild21,
+	.frameChild34,
+	.futureReadyBadge,
+	.keyBenefitsBadge {
+		width: fit-content !important;
+		max-width: 100% !important;
+		height: auto !important;
+		min-height: 36px !important;
+		padding: 7px 18px !important;
+		display: flex !important;
+		align-items: center !important;
+		justify-content: center !important;
+		font-size: 14px !important;
+		line-height: 20px !important;
+		white-space: normal !important;
+		text-align: center !important;
+	}
+
+	.empoweringHigherEducation {
+		width: 100% !important;
+		height: auto !important;
+		font-size: clamp(26px, 7vw, 32px) !important;
+		line-height: 1.25 !important;
+		text-align: center !important;
+		letter-spacing: 0.02em !important;
+	}
+
+	.neurolxpEnablesUniversities {
+		width: 100% !important;
+		height: auto !important;
+		font-size: 16px !important;
+		line-height: 24px !important;
+		text-align: center !important;
+	}
+
+	.frameParent7 {
+		width: 100% !important;
+		display: flex !important;
+		flex-wrap: wrap !important;
+		justify-content: center !important;
+		gap: 14px !important;
+		font-size: 15px !important;
+	}
+
+	.frameIcon,
+	.frameWrapper2 {
+		width: auto !important;
+		min-width: 145px !important;
+		max-width: 100% !important;
+		height: 48px !important;
+		padding: 10px 20px !important;
+		font-size: 15px !important;
+		line-height: 22px !important;
+	}
+
+	.startLearningWrapper,
+	.startLearning {
+		width: auto !important;
+		font-size: inherit !important;
+		line-height: inherit !important;
+	}
+
+	.frameWrapper3 {
+		width: 100% !important;
+		height: clamp(220px, 62vw, 330px) !important;
+		padding: 10px !important;
+		border-radius: 80px !important;
+	}
+
+	.happyStudentsGraduationCereParent,
+	.groupTeenagersDiscussingUniIcon {
+		width: 100% !important;
+		height: 100% !important;
+	}
+
+	/* DIGITAL LEARNING */
+	.frameParent8 {
+		width: 100% !important;
+		max-width: 100% !important;
+		height: auto !important;
+		display: flex !important;
+		flex-direction: column !important;
+		gap: 28px !important;
+	}
+
+	.frameParent9,
+	.modernLearningForUniversitiParent {
+		width: 100% !important;
+		max-width: 100% !important;
+		height: auto !important;
+		display: flex !important;
+		flex-direction: column !important;
+		align-items: center !important;
+		gap: 16px !important;
+	}
+
+	.modernLearningFor,
+	.keyChallengesIn,
+	.howNeurolxpSupports,
+	.futureReadyUniversitiesStar {
+		width: 100% !important;
+		max-width: 100% !important;
+		height: auto !important;
+		font-size: clamp(23px, 6.4vw, 29px) !important;
+		line-height: 1.3 !important;
+		text-align: center !important;
+	}
+
+	.neurolxpUnifiesContent,
+	.neurolxpHelpsInstitutions,
+	.institutionsUsingNeurolxp,
+	.neurolxpHelpsUniversities {
+		width: 100% !important;
+		max-width: 100% !important;
+		height: auto !important;
+		font-size: 15px !important;
+		line-height: 23px !important;
+		text-align: center !important;
+	}
+
+	.frameParent10 {
+		width: 100% !important;
+		max-width: 100% !important;
+		height: auto !important;
+		display: grid !important;
+		grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+		grid-auto-rows: auto !important;
+		gap: 14px !important;
+		margin: 0 auto !important;
+	}
+
+	.frameWrapper4 {
+		width: 100% !important;
+		min-width: 0 !important;
+		max-width: 100% !important;
+		height: 190px !important;
+		margin: 0 !important;
+	}
+
+	.frameParent11 {
+		position: relative !important;
+		top: auto !important;
+		left: auto !important;
+		width: 100% !important;
+		height: 100% !important;
+		padding: 22px 12px !important;
+		justify-content: center !important;
+		gap: 12px !important;
+	}
+
+	.frameParent12 {
+		width: 100% !important;
+		height: auto !important;
+		min-height: 86px !important;
+	}
+
+	.frameChild3 {
+		width: 52px !important;
+		height: 52px !important;
+		left: 50% !important;
+		transform: translateX(-50%) !important;
+	}
+
+	.featureIconInner {
+		width: 36px !important;
+		height: 36px !important;
+	}
+
+	.cardFeatureIcon {
+		width: 22px !important;
+		height: 22px !important;
+	}
+
+	.smartLearning {
+		position: relative !important;
+		top: auto !important;
+		left: auto !important;
+		width: 100% !important;
+		height: auto !important;
+		padding-top: 60px !important;
+		font-size: 16px !important;
+		line-height: 22px !important;
+		text-align: center !important;
+	}
+
+	.flexibleLearningFor {
+		width: 100% !important;
+		font-size: 13px !important;
+		line-height: 19px !important;
+		text-align: center !important;
+	}
+
+	/* ---------------- CHALLENGES ---------------- */
+
+	.frameParent44 {
+		position: relative !important;
+		top: auto !important;
+		left: auto !important;
+		width: 100% !important;
+		max-width: 100% !important;
+		height: auto !important;
+		margin: 52px 0 0 !important;
+	}
+
+	.frameParent45 {
+		position: relative !important;
+		top: auto !important;
+		left: auto !important;
+		width: 100% !important;
+		height: auto !important;
+		gap: 16px !important;
+		margin-bottom: 24px !important;
+	}
+
+	.keyChallengesInHigherEducaWrapper {
+		width: 100% !important;
+		height: auto !important;
+	}
+
+	.frameParent46 {
+		position: relative !important;
+		top: auto !important;
+		left: auto !important;
+		width: 100% !important;
+		height: auto !important;
+		display: grid !important;
+		grid-template-columns: 1fr !important;
+		gap: 18px !important;
+		font-size: 16px !important;
+	}
+
+	.rapidSkillChangesParent,
+	.progressTrackingParent {
+		width: 100% !important;
+		display: grid !important;
+		grid-template-columns: 1fr !important;
+		gap: 18px !important;
+	}
+
+	.rapidSkillChanges,
+	.lowEngagementParent,
+	.lowEngagement {
+		width: 100% !important;
+		max-width: 100% !important;
+		height: 270px !important;
+		min-width: 0 !important;
+	}
+
+	.frameParent47,
+	.frameParent51,
+	.lowEngagementInner,
+	.frameParent54 {
+		width: 100% !important;
+		max-width: 100% !important;
+		height: 100% !important;
+		left: 0 !important;
+		top: 0 !important;
+		padding: 24px 18px !important;
+		gap: 20px !important;
+	}
+
+	.passiveLearning,
+	.largeContentManagement,
+	.diverseLearningNeeds,
+	.studentProgressTracking,
+	.careerReadiness {
+		width: 100% !important;
+		height: auto !important;
+		font-size: 17px !important;
+		line-height: 23px !important;
+		text-align: center !important;
+	}
+
+	.frameParent50,
+	.frameParent53 {
+		width: 100% !important;
+		height: auto !important;
+		min-height: 98px !important;
+	}
+
+	.frameChild24 {
+		width: 100% !important;
+		height: 100% !important;
+	}
+
+	.interactiveLearningWith,
+	.centralizeCourseMaterials,
+	.personalizedLearningPathways,
+	.trackAttendanceCourse,
+	.supportSkillDevelopment {
+		position: relative !important;
+		top: auto !important;
+		left: auto !important;
+		width: 100% !important;
+		height: auto !important;
+		padding: 18px !important;
+		font-size: 14px !important;
+		line-height: 21px !important;
+		text-align: center !important;
+	}
+
+	/* ---------------- SUPPORT SECTION ---------------- */
+
+	.universityAndCollegeChild {
+		position: relative !important;
+		top: auto !important;
+		left: auto !important;
+		width: 100% !important;
+		max-width: 100% !important;
+		height: auto !important;
+		margin: 52px 0 0 !important;
+		padding: 18px !important;
+		overflow: visible !important;
+	}
+
+	.frameParent63,
+	.frameParent67 {
+		width: 100% !important;
+		max-width: 100% !important;
+		height: auto !important;
+		gap: 24px !important;
+	}
+
+	.frameParent64 {
+		width: 100% !important;
+		height: auto !important;
+		min-height: 0 !important;
+		padding: 26px 18px 18px !important;
+		display: flex !important;
+		flex-direction: column !important;
+		gap: 22px !important;
+	}
+
+	.frameParent65,
+	.frameParent66 {
+		position: relative !important;
+		top: auto !important;
+		left: auto !important;
+		width: 100% !important;
+		height: auto !important;
+		gap: 16px !important;
+		align-items: center !important;
+	}
+
+	.youngStudentSittingTableUsParent {
+		position: relative !important;
+		top: auto !important;
+		left: auto !important;
+		width: 100% !important;
+		height: clamp(210px, 56vw, 300px) !important;
+		border-radius: 28px !important;
+	}
+
+	.youngStudentSittingTableUsVideo {
+		width: 100% !important;
+		height: 100% !important;
+		object-fit: cover !important;
+	}
+
+	.frameParent68,
+	.frameParent69 {
+		width: 100% !important;
+		display: grid !important;
+		grid-template-columns: 1fr !important;
+		gap: 14px !important;
+	}
+
+	.frameWrapper17 {
+		width: 100% !important;
+		height: 96px !important;
+	}
+
+	.courseAndContentParent {
+		left: 34px !important;
+		right: 16px !important;
+		width: auto !important;
+		height: auto !important;
+	}
+
+	.courseAndContent {
+		font-size: 16px !important;
+		line-height: 22px !important;
+	}
+
+	/* ---------------- BENEFITS ---------------- */
+
+	.frameParent71 {
+		position: relative !important;
+		top: auto !important;
+		left: auto !important;
+		width: 100% !important;
+		max-width: 100% !important;
+		height: auto !important;
+		margin: 52px 0 0 !important;
+		gap: 24px !important;
+	}
+
+	.frameParent72,
+	.benefitsForEducationalInstiParent,
+	.frameParent73,
+	.frameParent74 {
+		width: 100% !important;
+		max-width: 100% !important;
+		height: auto !important;
+		gap: 16px !important;
+	}
+
+	.frameParent75 {
+		width: 100% !important;
+		display: grid !important;
+		grid-template-columns: 1fr !important;
+		gap: 14px !important;
+	}
+
+	.image20Parent {
+		width: 100% !important;
+		height: 92px !important;
+	}
+
+	.frameParent76 {
+		top: 50% !important;
+		left: 14px !important;
+		right: 14px !important;
+		transform: translateY(-50%) !important;
+		width: auto !important;
+		gap: 14px !important;
+	}
+
+	.frameChild37 {
+		width: 54px !important;
+		height: 54px !important;
+		flex: 0 0 54px !important;
+	}
+
+	.benefitIcon {
+		width: 32px !important;
+		height: 32px !important;
+	}
+
+	.digitalBlended,
+	.interactiveLearningExperienc2,
+	.personalizedLearningPathways2,
+	.efficientContentManagement,
+	.realTimePerformanceAnalytic {
+		width: auto !important;
+		height: auto !important;
+		flex: 1 1 auto !important;
+		font-size: 15px !important;
+		line-height: 21px !important;
+		white-space: normal !important;
+	}
+
+	/* ---------------- FINAL FUTURE READY SECTION ---------------- */
+
+	.image20Parent7 {
+		position: relative !important;
+		top: auto !important;
+		left: auto !important;
+		width: 100% !important;
+		max-width: 100% !important;
+		height: auto !important;
+		min-height: 500px !important;
+		margin: 52px 0 0 !important;
+		padding: 18px !important;
+		display: flex !important;
+		flex-direction: column !important;
+		gap: 22px !important;
+		overflow: hidden !important;
+	}
+
+	.image209 {
+		display: none !important;
+	}
+
+	.image21Parent {
+		position: relative !important;
+		top: auto !important;
+		left: auto !important;
+		width: 100% !important;
+		height: clamp(230px, 65vw, 330px) !important;
+		border-radius: 34px 0 34px 0 !important;
+	}
+
+	.happyCollegeStudentsWithBoIcon {
+		width: 100% !important;
+		height: 100% !important;
+		object-fit: cover !important;
+	}
+
+	.frameWrapper23,
+	.frameWrapper24,
+	.frameWrapper25,
+	.frameParent87,
+	.frameParent88 {
+		position: relative !important;
+		top: auto !important;
+		left: auto !important;
+		width: 100% !important;
+		max-width: 100% !important;
+		height: auto !important;
+		display: flex !important;
+		flex-direction: column !important;
+		align-items: center !important;
+		gap: 16px !important;
+		text-align: center !important;
+	}
+
+	/* No page-level horizontal movement on any phone. */
+	.universityAndCollege > * {
+		max-width: 100% !important;
+	}
+}
+
+/* Narrow phones */
+@media screen and (max-width: 374px) {
+	.universityAndCollege {
+		padding-left: 10px !important;
+		padding-right: 10px !important;
+	}
+
+	.frameParent10 {
+		grid-template-columns: 1fr !important;
+	}
+
+	.frameWrapper4 {
+		height: 175px !important;
+	}
+
+	.frameParent7 {
+		flex-direction: column !important;
+		align-items: center !important;
+	}
+
+	.frameIcon,
+	.frameWrapper2 {
+		width: min(100%, 220px) !important;
+	}
+}
+
+
+/* =========================================================
+   MOBILE FIX — SUPPORT CARDS + FUTURE READY
+   Only these two sections are corrected.
+   No desktop/design changes.
+   ========================================================= */
+
+@media screen and (max-width: 767px) {
+
+	/* =====================================================
+	   1) HOW NEUROLXP SUPPORTS HIGHER EDUCATION
+	   Fix clipped/narrow text and restore 2-column layout
+	   ===================================================== */
+
+	.frameParent67 {
+		width: 100% !important;
+		max-width: 100% !important;
+		gap: 16px !important;
+	}
+
+	.frameParent68,
+	.frameParent69 {
+		width: 100% !important;
+		max-width: 100% !important;
+		display: grid !important;
+		grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+		gap: 12px !important;
+	}
+
+	.frameWrapper17 {
+		width: 100% !important;
+		min-width: 0 !important;
+		max-width: 100% !important;
+		height: 108px !important;
+		border-radius: 8px 0 24px 8px !important;
+		overflow: hidden !important;
+	}
+
+	/* IMPORTANT:
+	   courseAndContentParent lives inside wrapperLine2Parent.
+	   The old parent width was only 12px, causing text to wrap
+	   one word per line on mobile. */
+	.wrapperLine2Parent {
+		position: absolute !important;
+		inset: 0 !important;
+		width: 100% !important;
+		height: 100% !important;
+	}
+
+	.wrapperLine2 {
+		position: absolute !important;
+		left: 0 !important;
+		top: 14px !important;
+		bottom: 14px !important;
+		width: 8px !important;
+		border-radius: 0 8px 8px 0 !important;
+	}
+
+	.courseAndContentParent {
+		position: absolute !important;
+		top: 50% !important;
+		left: 22px !important;
+		right: 10px !important;
+		width: auto !important;
+		height: auto !important;
+		min-width: 0 !important;
+		max-width: none !important;
+		transform: translateY(-50%) !important;
+		display: flex !important;
+		flex-direction: column !important;
+		align-items: flex-start !important;
+		justify-content: center !important;
+		gap: 5px !important;
+		padding: 0 !important;
+		margin: 0 !important;
+	}
+
+	.courseAndContent {
+		width: 100% !important;
+		height: auto !important;
+		margin: 0 !important;
+		padding: 0 !important;
+		font-size: 14px !important;
+		line-height: 18px !important;
+		text-align: left !important;
+		white-space: normal !important;
+		overflow-wrap: normal !important;
+		word-break: normal !important;
+	}
+
+	.frameWrapper17 .flexibleLearningFor {
+		width: 100% !important;
+		height: auto !important;
+		margin: 0 !important;
+		padding: 0 !important;
+		font-size: 11px !important;
+		line-height: 15px !important;
+		text-align: left !important;
+		white-space: normal !important;
+		overflow-wrap: normal !important;
+		word-break: normal !important;
+	}
+
+	/* =====================================================
+	   2) FUTURE-READY UNIVERSITIES
+	   Remove large empty gap and keep balanced proportions
+	   ===================================================== */
+
+	.image20Parent7 {
+		width: 100% !important;
+		max-width: 100% !important;
+		min-height: 0 !important;
+		height: auto !important;
+		margin-top: 28px !important;
+		padding: 14px !important;
+		gap: 16px !important;
+		border-radius: 28px !important;
+	}
+
+	.image21Parent {
+		width: 100% !important;
+		max-width: 100% !important;
+		height: clamp(220px, 62vw, 270px) !important;
+		margin: 0 !important;
+		border-radius: 32px 0 32px 0 !important;
+		overflow: hidden !important;
+	}
+
+	.happyCollegeStudentsWithBoIcon {
+		position: absolute !important;
+		inset: 0 !important;
+		width: 100% !important;
+		height: 100% !important;
+		max-width: 100% !important;
+		object-fit: cover !important;
+		object-position: center !important;
+		border-radius: inherit !important;
+		transform: none !important;
+	}
+
+	.frameWrapper23,
+	.frameWrapper24,
+	.frameWrapper25,
+	.frameParent87,
+	.frameParent88 {
+		width: 100% !important;
+		max-width: 100% !important;
+		min-width: 0 !important;
+		height: auto !important;
+		margin: 0 !important;
+		padding: 0 !important;
+		position: relative !important;
+		top: auto !important;
+		left: auto !important;
+		right: auto !important;
+		display: flex !important;
+		flex-direction: column !important;
+		align-items: center !important;
+		text-align: center !important;
+	}
+
+	.frameParent87 {
+		gap: 14px !important;
+	}
+
+	.frameParent88 {
+		gap: 12px !important;
+	}
+
+	.futureReadyBadge {
+		margin: 0 auto !important;
+	}
+
+	.futureReadyUniversitiesStar {
+		width: 100% !important;
+		max-width: 330px !important;
+		height: auto !important;
+		margin: 0 auto !important;
+		font-size: clamp(24px, 6.7vw, 29px) !important;
+		line-height: 1.28 !important;
+		text-align: center !important;
+	}
+
+	.neurolxpHelpsUniversities {
+		width: 100% !important;
+		max-width: 330px !important;
+		height: auto !important;
+		margin: 0 auto !important;
+		font-size: 15px !important;
+		line-height: 23px !important;
+		text-align: center !important;
+	}
+
+	/* Reduce the empty space between Benefits and Future Ready */
+	.frameParent71 {
+		margin-bottom: 0 !important;
+	}
+
+	.frameParent73,
+	.frameParent74 {
+		margin-bottom: 0 !important;
+	}
+}
+
+@media screen and (max-width: 374px) {
+	.frameParent68,
+	.frameParent69 {
+		grid-template-columns: 1fr !important;
+	}
+
+	.frameWrapper17 {
+		height: 94px !important;
+	}
+
+	.courseAndContentParent {
+		left: 24px !important;
+		right: 12px !important;
+	}
+
+	.courseAndContent {
+		font-size: 15px !important;
+		line-height: 20px !important;
+	}
+
+	.frameWrapper17 .flexibleLearningFor {
+		font-size: 12px !important;
+		line-height: 16px !important;
+	}
+}
+
+
+/* =========================================================
+   FINAL MOBILE HORIZONTAL CENTERING LOCK
+   Fixes page drifting to the right on phones.
+   No design changes — alignment/overflow only.
+   ========================================================= */
+
+@media screen and (max-width: 767px) {
+
+	:global(html),
+	:global(body) {
+		width: 100% !important;
+		max-width: 100% !important;
+		min-width: 0 !important;
+		margin: 0 !important;
+		padding: 0 !important;
+		overflow-x: hidden !important;
+	}
+
+	.universityAndCollege {
+		width: 100% !important;
+		max-width: 100% !important;
+		min-width: 0 !important;
+
+		margin-left: auto !important;
+		margin-right: auto !important;
+
+		padding-left: 14px !important;
+		padding-right: 14px !important;
+
+		left: 0 !important;
+		right: 0 !important;
+
+		transform: none !important;
+		zoom: 1 !important;
+
+		overflow-x: hidden !important;
+	}
+
+	/* Prevent any direct child section from creating a page offset */
+	.universityAndCollege > * {
+		max-width: 100% !important;
+		min-width: 0 !important;
+		box-sizing: border-box !important;
+	}
+
+	/* Major page sections must always sit in the exact center */
+	.frameDiv,
+	.frameParent2,
+	.frameParent44,
+	.universityAndCollegeChild,
+	.frameParent71,
+	.image20Parent7 {
+		position: relative !important;
+
+		left: auto !important;
+		right: auto !important;
+
+		width: 100% !important;
+		max-width: 100% !important;
+		min-width: 0 !important;
+
+		margin-left: auto !important;
+		margin-right: auto !important;
+
+		transform: none !important;
+	}
+
+	/* Nested structural wrappers */
+	.frameParent3,
+	.frameParent4,
+	.frameParent5,
+	.frameParent6,
+	.frameParent8,
+	.frameParent9,
+	.frameParent10,
+	.frameParent45,
+	.frameParent46,
+	.frameParent63,
+	.frameParent64,
+	.frameParent65,
+	.frameParent66,
+	.frameParent67,
+	.frameParent68,
+	.frameParent69,
+	.frameParent72,
+	.frameParent73,
+	.frameParent74,
+	.frameParent75,
+	.frameParent87,
+	.frameParent88 {
+		max-width: 100% !important;
+		min-width: 0 !important;
+		margin-left: auto !important;
+		margin-right: auto !important;
+	}
+
+	/* Cards and panels */
+	.frameWrapper3,
+	.frameWrapper4,
+	.frameWrapper17,
+	.rapidSkillChanges,
+	.lowEngagementParent,
+	.lowEngagement,
+	.image20Parent,
+	.image21Parent,
+	.frameWrapper23,
+	.frameWrapper24,
+	.frameWrapper25 {
+		max-width: 100% !important;
+		min-width: 0 !important;
+		margin-left: auto !important;
+		margin-right: auto !important;
+	}
+
+	/* Ensure absolute children inside cards cannot affect page width */
+	.wrapperLine2Parent,
+	.courseAndContentParent,
+	.frameParent76,
+	.youngStudentSittingTableUsParent {
+		max-width: 100% !important;
+	}
+
+	/* Remove transforms from top-level mobile blocks only.
+	   Internal decorative transforms remain unchanged. */
+	.frameDiv,
+	.frameParent2,
+	.frameParent44,
+	.universityAndCollegeChild,
+	.frameParent71,
+	.image20Parent7 {
+		transform: none !important;
+	}
+
+	/* Media must never exceed its container */
+	.universityAndCollege img,
+	.universityAndCollege video {
+		max-width: 100% !important;
+	}
+
+	/* Mobile section width calculation stays inside viewport */
+	.frameParent10,
+	.frameParent46,
+	.frameParent68,
+	.frameParent69,
+	.frameParent75 {
+		width: 100% !important;
+		max-width: 100% !important;
+	}
+
+	/* Final overflow guard for problematic fixed/absolute remnants */
+	.frameParent44,
+	.universityAndCollegeChild,
+	.frameParent71,
+	.image20Parent7,
+	.frameParent46,
+	.frameParent67,
+	.frameParent73 {
+		overflow-x: hidden !important;
+	}
+}
+
+/* Extra narrow phone safety */
+@media screen and (max-width: 430px) {
+	.universityAndCollege {
+		width: 100% !important;
+		max-width: 100% !important;
+		padding-left: 12px !important;
+		padding-right: 12px !important;
+	}
+
+	.frameDiv,
+	.frameParent2,
+	.frameParent44,
+	.universityAndCollegeChild,
+	.frameParent71,
+	.image20Parent7 {
+		width: 100% !important;
+		max-width: 100% !important;
+		margin-inline: auto !important;
+		left: auto !important;
+		right: auto !important;
+	}
+}
+
+/* Very small devices */
+@media screen and (max-width: 374px) {
+	.universityAndCollege {
+		padding-left: 10px !important;
+		padding-right: 10px !important;
+	}
+}
+
+
+/* =========================================================
+   FINAL DESKTOP / LAPTOP CENTERING LOCK
+   Alignment only — NO visual/design changes.
+   Keeps the original 1440px composition centered and
+   prevents the page from drifting to the right.
+   ========================================================= */
+
+/* All desktop/laptop viewport widths */
+@media screen and (min-width: 768px) {
+
+	:global(html),
+	:global(body) {
+		width: 100% !important;
+		max-width: 100% !important;
+		min-width: 0 !important;
+		margin: 0 !important;
+		padding: 0 !important;
+		overflow-x: hidden !important;
+	}
+
+	.universityAndCollege {
+		position: relative !important;
+
+		/* keep original 1440px design canvas */
+		width: 1440px !important;
+		min-width: 1440px !important;
+		max-width: 1440px !important;
+
+		/* critical desktop centering */
+		left: auto !important;
+		right: auto !important;
+		margin-left: auto !important;
+		margin-right: auto !important;
+
+		transform: none !important;
+		transform-origin: top center !important;
+
+		overflow-x: hidden !important;
+	}
+
+	/* Major 1280px design rails are centered inside the 1440px canvas.
+	   Internal design dimensions are not altered. */
+	.frameDiv,
+	.universityAndCollegeInner,
+	.frameParent2,
+	.frameParent44,
+	.universityAndCollegeChild,
+	.frameParent71,
+	.image20Parent7 {
+		margin-left: auto !important;
+		margin-right: auto !important;
+	}
+
+	/* Prevent positioned sections from inheriting accidental
+	   desktop right offsets from older responsive overrides. */
+	.frameParent44,
+	.universityAndCollegeChild,
+	.frameParent71,
+	.image20Parent7 {
+		right: auto !important;
+	}
+}
+
+/* =========================================================
+   1440 CLASS VIEWPORT
+   Chrome's vertical scrollbar/devtools can make the usable
+   content width a few pixels smaller than the reported 1440.
+   A tiny fit correction keeps the canvas exactly centered.
+   ========================================================= */
+
+@media screen and (min-width: 1400px) and (max-width: 1499px) {
+	.universityAndCollege {
+		zoom: 0.965 !important;
+		margin-left: auto !important;
+		margin-right: auto !important;
+	}
+}
+
+/* Standard 1366/1360 laptops */
+@media screen and (min-width: 1320px) and (max-width: 1399px) {
+	.universityAndCollege {
+		zoom: 0.94 !important;
+		margin-left: auto !important;
+		margin-right: auto !important;
+	}
+}
+
+/* 1280 laptop screens */
+@media screen and (min-width: 1240px) and (max-width: 1319px) {
+	.universityAndCollege {
+		zoom: 0.875 !important;
+		margin-left: auto !important;
+		margin-right: auto !important;
+	}
+}
+
+/* 1200-ish laptop screens */
+@media screen and (min-width: 1160px) and (max-width: 1239px) {
+	.universityAndCollege {
+		zoom: 0.81 !important;
+		margin-left: auto !important;
+		margin-right: auto !important;
+	}
+}
+
+/* 1024–1159 small laptop/tablet-landscape */
+@media screen and (min-width: 1024px) and (max-width: 1159px) {
+	.universityAndCollege {
+		zoom: 0.70 !important;
+		margin-left: auto !important;
+		margin-right: auto !important;
+	}
+}
+
+/* Tablet widths retain the existing scaled desktop composition,
+   but are forced to remain centered. */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+	.universityAndCollege {
+		zoom: 0.5333333333 !important;
+		margin-left: auto !important;
+		margin-right: auto !important;
+	}
+}
+
+/* Large monitors: exact original design size. */
+@media screen and (min-width: 1500px) {
+	.universityAndCollege {
+		zoom: 1 !important;
+		margin-left: auto !important;
+		margin-right: auto !important;
+	}
+}

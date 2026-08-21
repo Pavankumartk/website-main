@@ -6,7 +6,7 @@ import Footer from "../../components/Footer/footer";
 import styles from "./codingchallenge.module.css";
 import InterviewSection from "./InterviewSection";
 import PageScaler from "./PageScaler";
-// import TalkToExpertButton from "@/components/TalkToOurExpert/TalkToExpertButton";
+import TalkToExpertButton from "@/components/TalkToOurExpert/TalkToExpertButton";
 
 export const metadata: Metadata = {
   title: "Coding Challenges | Neuro Labs",
@@ -696,7 +696,7 @@ export default function CodingChallengePage() {
       {/* FOOTER */}
       <Footer />
 
-      {/* <TalkToExpertButton /> */}
+      <TalkToExpertButton />
     </>
   );
 }
