@@ -1,0 +1,906 @@
+/* Fully fluid responsive stylesheet for BlendedLearning.
+   No viewport/device-specific breakpoint rules are used. */
+
+.blendedLearning {
+  --page-bg: #dfe6e9;
+  --text: #31344b;
+  --body-text: #2f3547;
+  --blue: #2d4cc8;
+  --pink: #bf1869;
+  --purple: #67096e;
+  --content-width: 1280px;
+  --section-gap: clamp(40px, 4.45vw, 64px);
+  --page-gutter: clamp(16px, 5.55vw, 80px);
+
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  overflow-x: hidden;
+  overflow-y: visible;
+  padding: 0 0 clamp(40px, 4.45vw, 64px);
+  box-sizing: border-box;
+  background-color: var(--page-bg);
+  color: var(--text);
+  text-align: left;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.blendedLearning *,
+.blendedLearning *::before,
+.blendedLearning *::after {
+  box-sizing: border-box;
+}
+
+/* Breadcrumb */
+.frameDiv {
+  width: min(var(--content-width), calc(100% - (2 * var(--page-gutter))));
+  min-height: 24px;
+  margin: clamp(24px, 2.22vw, 32px) auto 0;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  background-color: var(--page-bg);
+  color: #2f3547;
+  font-size: clamp(13px, 1.11vw, 16px);
+  line-height: 24px;
+}
+
+.resourcesWrapper,
+.homeParent,
+.arrowRightDoubleGroup {
+  display: flex;
+  align-items: center;
+}
+
+.homeParent,
+.arrowRightDoubleGroup {
+  gap: 8px;
+}
+
+.useCases {
+  position: relative;
+  letter-spacing: 0.02em;
+  line-height: 24px;
+}
+
+.arrowRightDoubleGroup {
+  color: #243fa8;
+}
+
+.arrowDown01Icon {
+  width: 16px;
+  height: 16px;
+  flex: 0 0 16px;
+  position: relative;
+}
+
+/* Hero */
+.blendedHero {
+  width: min(var(--content-width), calc(100% - (2 * var(--page-gutter))));
+  margin: clamp(28px, 2.22vw, 32px) auto 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 430px), 1fr));
+  align-items: center;
+  gap: clamp(32px, 4.3vw, 62px);
+}
+
+.blendedHeroContent {
+  width: 100%;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.blendedHeroBadge {
+  width: fit-content;
+  max-width: 100%;
+  min-height: clamp(44px, 3.47vw, 50px);
+  padding: 8px clamp(18px, 1.94vw, 28px);
+  border-radius: 28px;
+  background: var(--page-bg);
+  box-shadow:
+    inset -4px -4px 8px #ffffff,
+    inset 4px 4px 8px rgba(196, 196, 196, 0.8);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--blue);
+  font-size: clamp(16px, 1.67vw, 24px);
+  line-height: 1.35;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  text-align: center;
+}
+
+.blendedHeroTitle {
+  width: 100%;
+  max-width: 510px;
+  margin: clamp(24px, 3.33vw, 48px) 0 0;
+  color: var(--text);
+  font-size: clamp(32px, 3.33vw, 48px);
+  line-height: 1.25;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.blendedHeroTitleLine {
+  display: block;
+  width: 100%;
+  white-space: normal;
+}
+
+.blendedHeroTitleAccent {
+  color: var(--blue);
+}
+
+.blendedHeroDescription {
+  width: 100%;
+  max-width: 510px;
+  margin: clamp(16px, 1.67vw, 24px) 0 0;
+  color: var(--body-text);
+  font-size: clamp(16px, 1.67vw, 24px);
+  line-height: 1.35;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+}
+
+.blendedHeroVisual {
+  width: 100%;
+  min-width: 0;
+  min-height: clamp(300px, 31.46vw, 453px);
+  border-radius: clamp(20px, 2.22vw, 32px);
+  background: var(--page-bg);
+  box-shadow:
+    inset -8px -8px 16px #ffffff,
+    inset 8px 8px 16px #c4c4c4;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: clamp(18px, 2.22vw, 32px) clamp(16px, 2.08vw, 30px) clamp(18px, 1.94vw, 28px);
+}
+
+.blendedHeroImages {
+  width: 100%;
+  max-width: 700px;
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: center;
+  gap: clamp(12px, 2.78vw, 40px);
+}
+
+.blendedHeroImage {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1;
+  border-radius: clamp(18px, 2.22vw, 32px);
+  object-fit: cover;
+  box-shadow:
+    -8px -8px 16px #ffffff,
+    8px 8px 16px #c4c4c4;
+}
+
+.blendedHeroPlus {
+  width: clamp(34px, 2.78vw, 40px);
+  height: clamp(34px, 2.78vw, 40px);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 2;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background: var(--page-bg);
+  box-shadow:
+    -4px -4px 8px #ffffff,
+    4px 4px 8px #c4c4c4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--purple);
+  font-size: clamp(32px, 2.92vw, 42px);
+  line-height: 1;
+  font-weight: 400;
+}
+
+/* Tablet and mobile: show the two hero images one below the other.
+   The + symbol becomes a normal grid item so it stays centered between them. */
+@media (max-width: 900px) {
+  .blendedHeroImages {
+    width: min(100%, 420px);
+    max-width: 420px;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: center;
+    row-gap: clamp(18px, 4vw, 24px);
+  }
+
+  .blendedHeroImage {
+    width: min(100%, 320px);
+    max-width: 320px;
+    aspect-ratio: 1;
+    justify-self: center;
+  }
+
+  .blendedHeroPlus {
+    position: relative;
+    top: auto;
+    left: auto;
+    transform: none;
+    grid-row: 2;
+    justify-self: center;
+    align-self: center;
+    margin: 0 auto;
+    display: grid;
+    place-items: center;
+    line-height: 1;
+    padding: 0 0 3px;
+  }
+
+  .blendedHeroImage:first-child {
+    grid-row: 1;
+  }
+
+  .blendedHeroImage:last-child {
+    grid-row: 3;
+  }
+
+  /* Clean tablet/mobile spacing inside challenge cards. */
+  .howItWorksCards {
+    gap: clamp(24px, 5vw, 32px);
+  }
+
+  .howItWorksCard {
+    min-height: 0;
+    padding: clamp(20px, 4.5vw, 26px);
+  }
+
+  .howItWorksCard h3 {
+    margin-top: clamp(14px, 3vw, 18px);
+  }
+
+  .howItWorksProblem {
+    margin-top: clamp(10px, 2.5vw, 14px);
+    margin-bottom: 0;
+  }
+
+  .howItWorksSolution {
+    min-height: 0;
+    margin-top: clamp(18px, 4vw, 24px);
+    padding: clamp(14px, 3.5vw, 18px) clamp(12px, 3vw, 16px);
+  }
+}
+
+.blendedHeroEquation {
+  width: 100%;
+  margin: clamp(18px, 1.94vw, 28px) 0 0;
+  text-align: center;
+  font-size: clamp(15px, 1.53vw, 22px);
+  line-height: 1.6;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  overflow-wrap: anywhere;
+  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.blendedHeroEquationBlue { color: var(--blue); }
+.blendedHeroEquationPink { color: var(--pink); }
+.blendedHeroEquationEquals { color: var(--body-text); }
+
+.blendedHeroEquationGradient {
+  background: linear-gradient(90deg, #2d4cc8 57.21%, #bf1869);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+/* How it works */
+.howItWorksSection {
+  width: min(1202px, calc(100% - (2 * var(--page-gutter))));
+  margin: var(--section-gap) auto 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--text);
+  text-align: center;
+}
+
+.howItWorksHeader {
+  width: min(1103px, 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.howItWorksBadge,
+.blendedBenefitsBadge,
+.blendedCtaBadge {
+  width: fit-content;
+  max-width: 100%;
+  min-height: clamp(44px, 3.47vw, 50px);
+  padding: 8px clamp(20px, 1.94vw, 28px);
+  border-radius: 28px;
+  background: var(--page-bg);
+
+  box-shadow:
+    inset -4px -4px 8px #ffffff,
+    inset 4px 4px 8px rgba(196, 196, 196, 0.8);
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  color: var(--blue);
+  font-size: clamp(16px, 1.67vw, 24px);
+  line-height: 1.35;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  text-align: center;
+
+  text-transform: none;
+}
+
+.howItWorksTitle,
+.blendedCtaTitle {
+  margin: clamp(20px, 1.67vw, 24px) 0 0;
+  color: var(--text);
+  font-size: clamp(24px, 2.5vw, 36px);
+  line-height: 1.38;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+}
+
+.howItWorksTitleAccent,
+.blendedCtaTitleAccent {
+  color: var(--blue);
+}
+
+.howItWorksDescription {
+  margin: clamp(12px, 1.11vw, 16px) 0 0;
+  color: var(--body-text);
+  font-size: clamp(16px, 1.39vw, 20px);
+  line-height: 1.6;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+}
+
+.howItWorksBody {
+  width: 100%;
+  margin-top: clamp(32px, 4.45vw, 64px);
+  display: grid;
+  grid-template-columns: clamp(68px, 9.1vw, 131px) minmax(0, 1fr);
+  align-items: stretch;
+  gap: clamp(16px, 2.22vw, 32px);
+}
+
+.howItWorksTimeline {
+  width: 100%;
+  min-height: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: clamp(8px, 1.25vw, 18px) 0;
+}
+
+.howItWorksLine {
+  position: absolute;
+  top: clamp(28px, 2.64vw, 38px);
+  bottom: clamp(28px, 2.64vw, 38px);
+  left: 50%;
+  width: clamp(18px, 3.05vw, 44px);
+  transform: translateX(-50%);
+  border-radius: 28px;
+  background: var(--page-bg);
+  box-shadow:
+    inset -6px -6px 12px #ffffff,
+    inset 6px 6px 12px rgba(196, 196, 196, 0.8);
+}
+
+.howItWorksIcon {
+  width: clamp(52px, 5.55vw, 80px);
+  height: clamp(52px, 5.55vw, 80px);
+  position: relative;
+  z-index: 1;
+  border-radius: 50%;
+  background: var(--page-bg);
+  box-shadow:
+    -8px -8px 16px #ffffff,
+    8px 8px 16px #c4c4c4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.howItWorksIcon::before {
+  content: "";
+  position: absolute;
+  inset: clamp(8px, 0.9vw, 13px);
+  border: 2px solid currentColor;
+  border-radius: 50%;
+}
+
+.howItWorksIcon img {
+  width: clamp(25px, 2.64vw, 38px);
+  height: clamp(25px, 2.64vw, 38px);
+  position: relative;
+  z-index: 1;
+  object-fit: contain;
+}
+
+.howItWorksIconPink { color: #a30e58; }
+.howItWorksIconBlue { color: #2d55d2; }
+.howItWorksIconPurple { color: #680879; }
+.howItWorksIconGreen { color: #1f6408; }
+.howItWorksIconWine { color: #590b31; }
+
+.howItWorksCards {
+  width: 100%;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: clamp(20px, 2.5vw, 36px);
+}
+
+.howItWorksCard {
+  width: 100%;
+  min-width: 0;
+  min-height: clamp(250px, 22.36vw, 322px);
+  padding: clamp(20px, 2.22vw, 32px);
+  border-radius: 16px;
+  background: var(--page-bg);
+  box-shadow:
+    inset -4px -4px 8px #ffffff,
+    inset 4px 4px 8px rgba(196, 196, 196, 0.8);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.howItWorksChallenge {
+  margin: 0;
+  color: var(--challenge-color);
+  font-size: clamp(14px, 1.39vw, 20px);
+  line-height: 1.4;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+}
+
+.howItWorksCard h3 {
+  margin: clamp(14px, 1.67vw, 24px) 0 0;
+  color: var(--text);
+  font-size: clamp(18px, 1.81vw, 26px);
+  line-height: 1.38;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+}
+
+.howItWorksProblem {
+  margin: clamp(10px, 1.11vw, 16px) 0 0;
+  color: var(--body-text);
+  font-size: clamp(15px, 1.25vw, 18px);
+  line-height: 1.55;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+}
+
+.howItWorksSolution {
+  width: 100%;
+  min-height: clamp(86px, 6.94vw, 100px);
+  margin-top: auto;
+  padding: clamp(14px, 1.25vw, 18px) clamp(12px, 1.11vw, 16px);
+  border-right: 3px solid var(--challenge-color);
+  border-left: 3px solid var(--challenge-color);
+  border-radius: 16px;
+  background: var(--page-bg);
+  box-shadow:
+    -4px -4px 8px #ffffff,
+    4px 4px 8px #c4c4c4;
+}
+
+.howItWorksSolution strong {
+  display: block;
+  color: #2d55d2;
+  font-size: clamp(14px, 1.25vw, 18px);
+  line-height: 1.45;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+}
+
+.howItWorksSolution p {
+  margin: 8px 0 0;
+  color: var(--body-text);
+  font-size: clamp(14px, 1.18vw, 17px);
+  line-height: 1.53;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+}
+
+.howItWorksCardPink { --challenge-color: #a30e58; }
+.howItWorksCardBlue { --challenge-color: #2d55d2; }
+.howItWorksCardPurple { --challenge-color: #680879; }
+.howItWorksCardGreen { --challenge-color: #1f6408; }
+.howItWorksCardWine { --challenge-color: #590b31; }
+
+/* Benefits */
+.blendedBenefitsSection {
+  width: min(var(--content-width), calc(100% - (2 * var(--page-gutter))));
+  min-height: clamp(560px, 43.75vw, 630px);
+  margin: var(--section-gap) auto 0;
+  position: relative;
+  overflow: hidden;
+  border-radius: clamp(20px, 2.22vw, 32px);
+  background: var(--page-bg);
+  isolation: isolate;
+
+  /* Balanced neumorphic edge — same visual strength as the other sections. */
+  box-shadow:
+    -4px -4px 8px rgba(255, 255, 255, 0.72),
+    4px 4px 8px rgba(196, 196, 196, 0.68);
+}
+
+/* Keep the recessed border visible without creating a wide white halo. */
+.blendedBenefitsSection::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 3;
+  pointer-events: none;
+  border-radius: inherit;
+  box-shadow:
+    inset 4px 4px 8px rgba(196, 196, 196, 0.52),
+    inset -4px -4px 8px rgba(255, 255, 255, 0.58);
+}
+
+.blendedBenefitsBackground {
+  position: absolute !important;
+  inset: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  max-width: none !important;
+  object-fit: cover !important;
+  object-position: center !important;
+  z-index: 0;
+  display: block !important;
+  pointer-events: none;
+}
+
+.blendedBenefitsContent {
+  position: relative;
+  z-index: 1;
+  width: min(1180px, calc(100% - (2 * clamp(20px, 3.47vw, 50px))));
+  min-height: clamp(480px, 36.8vw, 530px);
+  margin: clamp(30px, 3.47vw, 50px) auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 430px), 1fr));
+  align-items: center;
+  gap: clamp(32px, 4.17vw, 60px);
+}
+
+.blendedBenefitsIntro {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.blendedBenefitsTitle {
+  width: 100%;
+  max-width: 583px;
+  margin: clamp(24px, 2.5vw, 36px) 0 0;
+  color: var(--text);
+  font-size: clamp(30px, 2.92vw, 42px);
+  line-height: 1.24;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.22);
+}
+
+.blendedBenefitsDescription {
+  margin: clamp(18px, 1.94vw, 28px) 0 0;
+  color: var(--body-text);
+  font-size: clamp(18px, 1.94vw, 28px);
+  line-height: 1.5;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+}
+
+.blendedBenefitsList {
+  width: 100%;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: clamp(14px, 1.53vw, 22px);
+}
+
+.blendedBenefitItem {
+  width: 100%;
+  min-width: 0;
+  min-height: clamp(58px, 4.86vw, 70px);
+  display: flex;
+  align-items: center;
+  gap: clamp(12px, 1.11vw, 16px);
+}
+
+.blendedBenefitIcon {
+  width: clamp(58px, 4.86vw, 70px);
+  height: clamp(58px, 4.86vw, 70px);
+  flex: 0 0 clamp(58px, 4.86vw, 70px);
+  position: relative;
+  border-radius: 50%;
+  background: var(--page-bg);
+  box-shadow:
+    inset -6px -6px 12px #ffffff,
+    inset 6px 6px 12px rgba(196, 196, 196, 0.82);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.blendedBenefitIcon::before {
+  content: "";
+  position: absolute;
+  inset: clamp(9px, 0.76vw, 11px);
+  border-radius: 50%;
+  background: var(--page-bg);
+  box-shadow:
+    -4px -4px 8px rgba(255, 255, 255, 0.98),
+    4px 4px 8px rgba(196, 196, 196, 0.88);
+}
+
+.blendedBenefitIcon img {
+  width: clamp(30px, 2.64vw, 38px);
+  height: clamp(30px, 2.64vw, 38px);
+  position: relative;
+  z-index: 1;
+  object-fit: contain;
+}
+
+.blendedBenefitItem p {
+  min-width: 0;
+  margin: 0;
+  color: var(--text);
+  font-size: clamp(17px, 1.67vw, 24px);
+  line-height: 1.5;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  overflow-wrap: anywhere;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.22);
+}
+
+.blendedBenefitIconBlue { color: #2d55d2; }
+.blendedBenefitIconPink { color: #a30e58; }
+.blendedBenefitIconPurple { color: #680879; }
+.blendedBenefitIconOrange { color: #c45200; }
+.blendedBenefitIconGold { color: #9c7a00; }
+.blendedBenefitIconWine { color: #590b31; }
+
+/* CTA */
+.blendedCtaSection {
+  width: min(var(--content-width), calc(100% - (2 * var(--page-gutter))));
+  margin: var(--section-gap) auto 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--text);
+  text-align: center;
+}
+
+.blendedCtaHeader {
+  width: min(1103px, 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.blendedCtaTitle {
+  margin-top: clamp(24px, 2.22vw, 32px);
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.22);
+}
+
+.blendedCtaDescription {
+  margin: clamp(12px, 1.39vw, 20px) 0 0;
+  color: var(--body-text);
+  font-size: clamp(16px, 1.67vw, 24px);
+  line-height: 1.35;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+}
+
+.blendedCtaButton {
+  min-width: clamp(203px, 17.7vw, 255px);
+  min-height: clamp(54px, 4.17vw, 60px);
+  margin-top: clamp(24px, 3.05vw, 44px);
+  padding: 12px clamp(24px, 2.22vw, 32px);
+  border: 0;
+  border-radius: 50px;
+  background: var(--page-bg);
+  box-shadow:
+    -4px -4px 8px #ffffff,
+    4px 4px 8px rgba(196, 196, 196, 0.8);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--blue);
+  font-family: 'Segoe UI', sans-serif;
+  font-size: clamp(16px, 1.53vw, 22px);
+  line-height: 1.35;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.blendedCtaImageFrame {
+  width: 100%;
+  margin-top: clamp(32px, 4.45vw, 64px);
+  display: flex;
+  justify-content: center;
+}
+
+.blendedCtaImageShell {
+  width: 100%;
+  aspect-ratio: 1280 / 726;
+  position: relative;
+  padding: clamp(10px, 1.53vw, 22px);
+  overflow: hidden;
+  border-radius: 50%;
+  background: var(--page-bg);
+  box-shadow:
+    inset -10px -10px 20px rgba(255, 255, 255, 0.96),
+    inset 10px 10px 20px rgba(196, 196, 196, 0.9);
+}
+
+.blendedCtaImage {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+/* =========================================================
+   FINAL TABLET / MOBILE SPACING OVERRIDE
+   Placed at the end so these rules override the base styles.
+   ========================================================= */
+@media (max-width: 900px) {
+  .howItWorksCards {
+    gap: clamp(24px, 5vw, 32px);
+  }
+
+  .howItWorksCard {
+    min-height: 0;
+    height: auto;
+    padding: clamp(20px, 4.5vw, 26px);
+  }
+
+  .howItWorksCard h3 {
+    margin-top: clamp(14px, 3vw, 18px);
+  }
+
+  .howItWorksProblem {
+    margin-top: clamp(10px, 2.5vw, 14px);
+    margin-bottom: 0;
+    line-height: 1.55;
+  }
+
+  .howItWorksSolution {
+    min-height: 0;
+    height: auto;
+    margin-top: clamp(20px, 4.5vw, 26px);
+    padding: clamp(14px, 3.5vw, 18px) clamp(12px, 3vw, 16px);
+    flex-shrink: 0;
+  }
+
+  .howItWorksSolution strong {
+    margin: 0;
+  }
+
+  .howItWorksSolution p {
+    margin: 8px 0 0;
+  }
+}
+
+/* =========================================================
+   DESKTOP HOW-IT-WORKS CARD LAYOUT
+   Left: challenge + title + problem
+   Right: HOW NEUROLXP HELPS panel
+   No TSX changes required.
+   ========================================================= */
+@media (min-width: 901px) {
+  .howItWorksCards {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: clamp(24px, 2.2vw, 32px);
+  }
+
+  .howItWorksCard {
+    width: 100%;
+    min-width: 0;
+    min-height: clamp(180px, 14vw, 202px);
+    height: auto;
+    padding: clamp(22px, 1.95vw, 28px);
+
+    display: grid;
+    grid-template-columns:
+      minmax(0, 1.55fr)
+      minmax(310px, 0.85fr);
+    grid-template-rows: auto auto auto;
+    column-gap: clamp(28px, 3.2vw, 46px);
+    row-gap: clamp(8px, 0.9vw, 13px);
+
+    align-items: start;
+    text-align: left;
+  }
+
+  .howItWorksChallenge {
+    grid-column: 1;
+    grid-row: 1;
+    width: 100%;
+    margin: 0;
+    align-self: start;
+  }
+
+  .howItWorksCard h3 {
+    grid-column: 1;
+    grid-row: 2;
+    width: 100%;
+    margin: 0;
+    align-self: start;
+  }
+
+  .howItWorksProblem {
+    grid-column: 1;
+    grid-row: 3;
+    width: 100%;
+    margin: 0;
+    align-self: start;
+  }
+
+  .howItWorksSolution {
+    grid-column: 2;
+    grid-row: 1 / 4;
+
+    width: 100%;
+    min-width: 0;
+    min-height: 0;
+    height: auto;
+
+    margin: 0;
+    padding: clamp(16px, 1.4vw, 20px);
+
+    align-self: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    border-right: 3px solid var(--challenge-color);
+    border-left: 3px solid var(--challenge-color);
+    border-radius: 16px;
+    background: var(--page-bg);
+    box-shadow:
+      -4px -4px 8px #ffffff,
+      4px 4px 8px #c4c4c4;
+  }
+
+  .howItWorksSolution strong {
+    width: 100%;
+    margin: 0;
+  }
+
+  .howItWorksSolution p {
+    width: 100%;
+    margin: 8px 0 0;
+  }
+}

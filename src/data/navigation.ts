@@ -221,11 +221,11 @@ export const navItems: NavItem[] = [
           },
           {
             label: "Content Management",
-            href: "/content-intelligence",
+            href: "/content_managment",
           },
           {
             label: "Learning Community",
-            href: "#",
+            href: "/learning_community",
           },
         ],
       },
@@ -243,7 +243,7 @@ export const navItems: NavItem[] = [
           },
           {
             label: "Career Pathways & Skilling",
-            href: "#",
+            href: "/careerpathways-skilling",
           },
           {
             label: "Compliance & Security",
@@ -302,8 +302,8 @@ export const navItems: NavItem[] = [
           },
           {
             label: "Employee Induction",
-            href: "/employee_induction",
-          },
+            href: "/employee-induction",
+          },  
           {
             label: "Standards Training",
             href: "/standard_training",
@@ -393,6 +393,6 @@ export const footerNeuroLxpLinks: SimpleLink[] = [
   },
   {
     label: "Smart Content Creation",
-    href: "/content-intelligence",
+    href: "/content_managment",
   },
 ];

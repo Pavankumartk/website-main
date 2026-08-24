@@ -1,0 +1,6141 @@
+.complianceSecurity {
+  	width: 100%;
+  	min-height: auto;
+  	position: relative;
+  	background-color: #dfe6e9;
+  	overflow: hidden;
+  	text-align: left;
+  	font-size: 36px;
+  	color: #31344b;
+  	font-family: 'Segoe UI';
+  	padding-bottom: 96px;
+  	box-sizing: border-box;
+}
+.complianceSecurityChild {
+  position: absolute;
+  top: 49px;
+  left: 50%;
+  width: 103.34vw;
+  min-width: 103.34vw;
+  max-width: none;
+  height: 587px;
+  transform: translateX(-50%);
+  object-fit: fill;
+  object-position: top center;
+  display: block;
+  z-index: 0;
+  pointer-events: none;
+}
+.frameParent {
+  	position: absolute;
+  	top: 0px;
+  	left: calc(50% - 720px);
+  	box-shadow: -8px -8px 16px #fff, 8px 8px 16px #c6c6c9;
+  	background-color: #dfe6e9;
+  	width: 1440px;
+  	height: 80px;
+  	overflow: hidden;
+  	font-size: 16px;
+  	font-family: Inter;
+}
+.frameChild {
+  	position: absolute;
+  	top: calc(50% - 22px);
+  	left: 1096px;
+  	width: 132px;
+  	height: 44px;
+  	display: flex;
+  	align-items: center;
+  	flex-shrink: 0;
+}
+.frameGroup {
+  	position: absolute;
+  	top: 18px;
+  	left: 32px;
+  	width: 1376px;
+  	height: 45px;
+  	flex-shrink: 0;
+}
+.logo01SynapseSpark1Parent {
+  	position: absolute;
+  	top: 0px;
+  	left: 0px;
+  	display: flex;
+  	align-items: center;
+  	gap: 130px;
+}
+.logo01SynapseSpark1Icon {
+  	height: 45px;
+  	width: 120px;
+  	position: relative;
+  	object-fit: cover;
+}
+.frameContainer {
+  	display: flex;
+  	align-items: center;
+  	gap: 30px;
+}
+.homeParent {
+  	display: flex;
+  	align-items: center;
+  	gap: 8px;
+}
+.home {
+  	position: relative;
+  	line-height: 24px;
+  	font-weight: 600;
+}
+.arrowDown01Icon {
+  	height: 16px;
+  	width: 16px;
+  	position: relative;
+}
+.featuresParent {
+  	display: flex;
+  	align-items: center;
+  	gap: 8px;
+  	color: #2d4cc8;
+}
+.features {
+  	position: relative;
+  	line-height: 24px;
+}
+.signInHelpWrapper {
+  	position: absolute;
+  	top: calc(50% - 22.5px);
+  	left: 1244px;
+  	box-shadow: -8px -8px 16px #fff, 8px 8px 16px #c6c6c9;
+  	border-radius: 32px;
+  	background-color: #dfe6e9;
+  	width: 132px;
+  	height: 44px;
+  	overflow: hidden;
+  	display: flex;
+  	align-items: center;
+  	justify-content: center;
+  	padding: 16px 32px;
+  	box-sizing: border-box;
+  	text-align: center;
+  	color: #2d4cc8;
+  	font-family: 'Segoe UI';
+}
+.signInHelp {
+  	width: 97px;
+  	position: relative;
+  	letter-spacing: 0.02em;
+  	line-height: 28px;
+  	font-weight: 600;
+  	display: flex;
+  	align-items: flex-end;
+  	justify-content: center;
+  	flex-shrink: 0;
+}
+.frameItem {
+  	position: absolute;
+  	top: 6px;
+  	left: 11px;
+  	width: 1429px;
+  	height: 592.4px;
+  	flex-shrink: 0;
+}
+.frameInner {
+  	position: absolute;
+  	top: 76px;
+  	left: 4px;
+  	width: 1436px;
+  	height: 839px;
+  	overflow: hidden;
+  	flex-shrink: 0;
+}
+.frameDiv {
+  	position: absolute;
+  	top: 112px;
+  	left: 80px;
+  	display: flex;
+  	align-items: center;
+  	gap: 8px;
+  	font-size: 16px;
+  	color: #2f3547;
+  	font-family: Inter;
+}
+.featuresWrapper {
+  	display: flex;
+  	align-items: center;
+}
+.learningEcoSystem {
+  	position: relative;
+  	letter-spacing: 0.02em;
+  	line-height: 24px;
+}
+.arrowRightDoubleGroup {
+  	display: flex;
+  	align-items: center;
+  	gap: 8px;
+  	color: #243fa8;
+}
+.complianceSecurityInner {
+  	position: absolute;
+  	top: 168px;
+  	left: calc(50% - 472px);
+  	width: 945px;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: center;
+  	text-align: center;
+  	font-size: 48px;
+}
+.frameParent2 {
+  	width: 100%;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: center;
+  	gap: 40px;
+  	max-width: 100%;
+}
+.frameWrapper {
+  	align-self: stretch;
+  	height: 280px;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: center;
+}
+.frameWrapper2 {
+  	width: 100%;
+  	height: 205px;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: center;
+  	max-width: 100%;
+}
+.frameParent3 {
+  	width: 100%;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: center;
+  	gap: 24px;
+  	max-width: 100%;
+  	flex-shrink: 0;
+}
+.frameParent4 {
+  	align-self: stretch;
+  	height: 192px;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: center;
+  	gap: 24px;
+}
+.frameIcon {
+  	width: 309.1px;
+  	height: 50.2px;
+  	position: relative;
+  	border-radius: 28px;
+  	object-fit: contain;
+  	flex-shrink: 0;
+}
+.secureLearningSmarterContainer {
+  	width: 1020px;
+  	height: 123px;
+  	position: relative;
+  	letter-spacing: 0.03em;
+  	line-height: 60px;
+  	display: inline-block;
+  	flex-shrink: 0;
+  	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.secureLearningSmarter {
+  	line-height: 60px;
+}
+.greaterConfidence {
+  	color: #2d4cc8;
+  	line-height: 60px;
+}
+.neurolxpCombinesCompliance {
+  	width: 844px;
+  	height: 64px;
+  	position: relative;
+  	font-size: 24px;
+  	letter-spacing: 0.03em;
+  	line-height: 32px;
+  	color: #2f3547;
+  	display: inline-block;
+  	flex-shrink: 0;
+}
+.frameParent5 {
+  	display: flex;
+  	align-items: center;
+  	gap: 32px;
+  	text-align: left;
+  	font-size: 22px;
+  	color: #2d4cc8;
+}
+.frameChild2 {
+  	height: 60.2px;
+  	width: 200px;
+  	position: relative;
+  	border-radius: 8px;
+  	object-fit: contain;
+}
+.frameWrapper3 {
+  	height: 60px;
+  	width: 210px;
+  	box-shadow: -8px -8px 16px #fff, 8px 8px 16px #c6c6c9;
+  	border-radius: 8px;
+  	background-color: #dfe6e9;
+  	overflow: hidden;
+  	flex-shrink: 0;
+  	display: flex;
+  	align-items: center;
+  	justify-content: center;
+  	padding: 16px 32px;
+  	box-sizing: border-box;
+}
+.startLearningWrapper {
+  	width: 140px;
+  	display: flex;
+  	align-items: center;
+}
+.startLearning {
+  	width: 147px;
+  	position: relative;
+  	line-height: 30px;
+  	font-weight: 600;
+  	display: flex;
+  	align-items: center;
+  	flex-shrink: 0;
+}
+.frameParent6 {
+  position: absolute;
+  top: 732px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: min(1280px, calc(100% - 64px));
+  display: grid;
+  grid-template-columns: 470px minmax(0, 743px);
+  align-items: center;
+  gap: 67px;
+  box-sizing: border-box;
+}
+
+.frameParent7 {
+  width: 470px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+}
+
+.frameParent8 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+.frameParent9 {
+  width: 100%;
+  min-height: 174px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+}
+
+.complianceTrainingBadge {
+  min-width: 289px;
+  height: 56px;
+  padding: 0 28px;
+  border-radius: 32px;
+  background: #dfe6e9;
+  box-shadow: inset -8px -8px 16px #ffffff, inset 8px 8px 16px #c4c4c4;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  color: #2d4cc8;
+  font-size: 24px;
+  line-height: 1;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+}
+
+.structuredTrainingFor {
+  width: 100%;
+  margin: 0;
+  color: #31344b;
+  font-size: 36px;
+  line-height: 1.35;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  text-align: left;
+}
+
+.neurolxpDeliversStructured {
+  width: 100%;
+  margin: 0;
+  color: #2f3547;
+  font-size: 24px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  text-align: left;
+}
+
+.frameParent10 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+.frameParent11 {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 24px;
+}
+
+.complianceStatus {
+  height: 60px;
+  border-radius: 32px;
+  background: #dfe6e9;
+  box-shadow: -8px -8px 16px #ffffff, 8px 8px 16px #c4c4c4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 18px;
+  box-sizing: border-box;
+  font-size: 21px;
+  line-height: 1;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.complianceStatusBlue { color: #2d4cc8; }
+.complianceStatusPurple { color: #67096e; }
+.complianceStatusPink { color: #bf1869; }
+.complianceStatusGold { color: #907507; }
+
+.frameWrapper4 {
+  width: 743px;
+  height: 587px;
+  position: relative;
+  border-radius: 32px;
+  background: #dfe6e9;
+  box-shadow: -8px -8px 16px #ffffff, 8px 8px 16px #c4c4c4;
+  overflow: hidden;
+}
+
+.frameWrapper4::before {
+  content: "";
+  position: absolute;
+  inset: 16px;
+  border-radius: 24px;
+  box-shadow: inset -8px -8px 16px rgba(255,255,255,.9),
+              inset 8px 8px 16px rgba(196,196,196,.9);
+  pointer-events: none;
+  z-index: 2;
+}
+
+.frameChild8 {
+  position: absolute;
+  inset: 16px;
+  width: calc(100% - 32px);
+  height: calc(100% - 32px);
+  border-radius: 24px;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+.frameParent13 {
+  position: absolute;
+  top: 1415px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: min(1280px, calc(100% - 64px));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.smartComplianceHeader {
+  width: min(1020px, 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+}
+
+.smartComplianceBadge {
+  min-width: 422px;
+  height: 56px;
+  padding: 0 30px;
+  border-radius: 32px;
+  background: #dfe6e9;
+  box-shadow: inset -8px -8px 16px #ffffff,
+              inset 8px 8px 16px #c4c4c4;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  color: #2d4cc8;
+  font-size: 24px;
+  line-height: 1;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+}
+
+.centralizeMonitorStayContainer {
+  width: 100%;
+  margin: 0;
+  color: #31344b;
+  font-size: 36px;
+  line-height: 1.35;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.centralizeMonitor {
+  color: #31344b;
+}
+
+.stayReady {
+  color: #2d4cc8;
+}
+
+.simplifyComplianceTraining {
+  width: min(940px, 100%);
+  margin: 0;
+  color: #2f3547;
+  font-size: 24px;
+  line-height: 1.45;
+  letter-spacing: 0.02em;
+}
+
+.smartComplianceCards {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 24px;
+  align-items: center;
+}
+
+.smartComplianceCard {
+  grid-column: span 2;
+  height: 206px;
+  position: relative;
+  border-radius: 100px;
+  background: #dfe6e9;
+  box-shadow: -10px -10px 20px #ffffff,
+               10px 10px 20px #c4c4c4;
+  overflow: hidden;
+}
+
+.smartComplianceCard:nth-child(4) {
+  grid-column: 2 / span 2;
+}
+
+.smartComplianceCard:nth-child(5) {
+  grid-column: 4 / span 2;
+}
+
+.smartComplianceCardInner {
+  position: absolute;
+  inset: 16px;
+  border-radius: 100px;
+  background: #dfe6e9;
+  box-shadow: inset -8px -8px 16px #ffffff,
+              inset 8px 8px 16px #c4c4c4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 22px;
+  padding: 20px 28px;
+  box-sizing: border-box;
+}
+
+.smartComplianceIconShadow {
+  width: 74px;
+  height: 74px;
+  border-radius: 50%;
+  background: #dfe6e9;
+  box-shadow: inset -6px -6px 10px rgba(255, 255, 255, 0.95),
+              inset 6px 6px 10px rgba(196, 196, 196, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.smartComplianceIconCircle {
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.smartCompliancePink { background-color: #bf1869; }
+.smartCompliancePurple { background-color: #67096e; }
+.smartComplianceGold { background-color: #907507; }
+.smartComplianceTeal { background-color: #046f73; }
+.smartComplianceOrange { background-color: #c05512; }
+
+.smartComplianceIcon {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.smartComplianceCardTitle {
+  margin: 0;
+  color: #111111;
+  font-size: 22px;
+  line-height: 1.3;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.frameParent24 {
+  	position: absolute;
+  	top: 2300px;
+  	left: calc(50% - 628px);
+  	width: 1280px;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: center;
+  	gap: 50px;
+  	text-align: center;
+}
+.frameWrapper19 {
+  	width: 945px;
+  	height: 138px;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: center;
+}
+.frameWrapper20 {
+  	width: 100%;
+  	height: 157px;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: center;
+  	max-width: 100%;
+  	flex-shrink: 0;
+}
+.frameWrapper21 {
+  	width: 100%;
+  	height: 157px;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: center;
+  	max-width: 100%;
+}
+.frameWrapper22 {
+  	width: 100%;
+  	height: 205px;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: center;
+  	max-width: 100%;
+  	flex-shrink: 0;
+}
+.frameParent25 {
+  	width: 100%;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: center;
+  	gap: 24px;
+  	max-width: 100%;
+}
+.industrySpecificComplianceWrapper {
+  	align-self: stretch;
+  	height: 50px;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: center;
+}
+.industrySpecificCompliance {
+  	width: 1020px;
+  	height: 50px;
+  	position: relative;
+  	letter-spacing: 0.03em;
+  	line-height: 50px;
+  	display: inline-block;
+  	flex-shrink: 0;
+  	text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.frameParent26 {
+  	width: 1272px;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-start;
+  	gap: 30px;
+  	font-size: 24px;
+  	color: #fff;
+}
+.frameParent27 {
+  	align-self: stretch;
+  	display: flex;
+  	align-items: center;
+  	gap: 36px;
+}
+.frameParent28 {
+  	height: 306px;
+  	width: 400px;
+  	position: relative;
+}
+.frameChild15 {
+  	position: absolute;
+  	top: 0px;
+  	left: 0px;
+  	box-shadow: -8px -8px 16px #fff, 8px 8px 16px #c4c4c4;
+  	border-radius: 100px;
+  	background-color: #dfe6e9;
+  	width: 400px;
+  	height: 306px;
+  	overflow: hidden;
+}
+.frameWrapper23 {
+  	position: absolute;
+  	top: 16px;
+  	left: calc(50% - 184px);
+  	box-shadow: -8px -8px 16px #fff, 8px 8px 16px #c4c4c4;
+  	border-radius: 100px;
+  	background-color: #dfe6e9;
+  	border: 1px solid #bf1869;
+  	box-sizing: border-box;
+  	width: 368px;
+  	height: 274px;
+  	overflow: hidden;
+}
+.frameParent29 {
+  	position: absolute;
+  	top: 0px;
+  	left: 0px;
+  	width: 368px;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: center;
+  	gap: 32px;
+}
+.workplaceSafetyWrapper {
+  	align-self: stretch;
+  	height: 120px;
+  	position: relative;
+  	background-color: #bf1869;
+  	overflow: hidden;
+  	flex-shrink: 0;
+}
+.workplaceSafety {
+  	position: absolute;
+  	top: calc(50% - 18px);
+  	left: calc(50% - 102px);
+  	letter-spacing: 0.02em;
+  	line-height: 36px;
+  	display: inline-block;
+  	width: 205px;
+}
+.healthSafetyAnd {
+  	width: 294px;
+  	position: relative;
+  	font-size: 22px;
+  	letter-spacing: 0.02em;
+  	line-height: 30px;
+  	color: #2f3547;
+  	white-space: pre-wrap;
+  	display: inline-block;
+}
+.frameWrapper24 {
+  	position: absolute;
+  	top: 16px;
+  	left: calc(50% - 184px);
+  	box-shadow: -8px -8px 16px #fff, 8px 8px 16px #c4c4c4;
+  	border-radius: 100px;
+  	background-color: #dfe6e9;
+  	width: 368px;
+  	height: 274px;
+  	overflow: hidden;
+}
+.dataPrivacyWrapper {
+  	align-self: stretch;
+  	height: 120px;
+  	position: relative;
+  	background-color: #046f73;
+  	overflow: hidden;
+  	flex-shrink: 0;
+}
+.dataProtectionAnd {
+  	width: 322px;
+  	position: relative;
+  	font-size: 22px;
+  	letter-spacing: 0.02em;
+  	line-height: 30px;
+  	color: #2f3547;
+  	white-space: pre-wrap;
+  	display: inline-block;
+}
+.corporateEthicsWrapper {
+  	align-self: stretch;
+  	height: 120px;
+  	position: relative;
+  	background-color: #2d4cc8;
+  	overflow: hidden;
+  	flex-shrink: 0;
+}
+.corporateEthics {
+  	position: absolute;
+  	top: calc(50% - 18px);
+  	left: calc(50% - 102px);
+  	letter-spacing: 0.02em;
+  	line-height: 36px;
+  	display: inline-block;
+  	width: 205px;
+  	height: 36px;
+}
+.codeOfConduct {
+  	width: 310px;
+  	position: relative;
+  	font-size: 22px;
+  	letter-spacing: 0.02em;
+  	line-height: 30px;
+  	color: #2f3547;
+  	display: inline-block;
+}
+.workplaceConductWrapper {
+  	align-self: stretch;
+  	height: 120px;
+  	position: relative;
+  	background-color: #67096e;
+  	overflow: hidden;
+  	flex-shrink: 0;
+}
+.workplaceConduct {
+  	position: absolute;
+  	top: calc(50% - 18px);
+  	left: calc(50% - 116px);
+  	letter-spacing: 0.02em;
+  	line-height: 36px;
+  	display: inline-block;
+  	width: 233px;
+}
+.antiHarassmentAndWorkplace {
+  	width: 308px;
+  	position: relative;
+  	font-size: 22px;
+  	letter-spacing: 0.02em;
+  	line-height: 30px;
+  	color: #2f3547;
+  	display: inline-block;
+}
+.financialComplianceWrapper {
+  	align-self: stretch;
+  	height: 120px;
+  	position: relative;
+  	background-color: #c05512;
+  	overflow: hidden;
+  	flex-shrink: 0;
+}
+.financialCompliance {
+  	position: absolute;
+  	top: calc(50% - 18px);
+  	left: calc(50% - 128px);
+  	letter-spacing: 0.02em;
+  	line-height: 36px;
+  	display: inline-block;
+  	width: 256px;
+}
+.sustainabilityWrapper {
+  	align-self: stretch;
+  	height: 120px;
+  	position: relative;
+  	background-color: #907507;
+  	overflow: hidden;
+  	flex-shrink: 0;
+}
+.frameParent41 {
+  	position: absolute;
+  	top: 3120px;
+  	left: 50%;
+  	transform: translateX(-50%);
+  	width: min(1274px, calc(100% - 64px));
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-start;
+  	gap: 120px;
+}
+.frameParent42 {
+  align-self: stretch;
+  display: grid;
+  grid-template-columns: 470px 622px;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: 80px;
+}
+.frameWrapper29 {
+  	width: 470px;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-start;
+}
+.frameChild21 {
+  	width: 408.7px;
+  	height: 50.3px;
+  	position: relative;
+  	border-radius: 28px;
+  	object-fit: contain;
+}
+
+.engagingComplianceBadge {
+  min-width: 408px;
+  height: 56px;
+  padding: 0 28px;
+  border-radius: 32px;
+  background: #dfe6e9;
+  box-shadow: inset -8px -8px 16px #ffffff,
+              inset 8px 8px 16px #c4c4c4;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  color: #2d4cc8;
+  font-size: 24px;
+  line-height: 1;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+}
+.makeMandatoryTrainingContainer {
+  	width: 472px;
+  	position: relative;
+  	letter-spacing: 0.03em;
+  	line-height: 50px;
+  	display: flex;
+  	align-items: center;
+}
+.makeMandatoryTrainingContainer2 {
+  	width: 100%;
+}
+.makeComplianceLearning {
+  	width: 419px;
+  	position: relative;
+  	font-size: 24px;
+  	letter-spacing: 0.03em;
+  	line-height: 32px;
+  	color: #2f3547;
+  	display: inline-block;
+  	flex-shrink: 0;
+}
+.frameParent45 {
+  	width: 622px;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-start;
+  	gap: 50px;
+  	font-size: 20px;
+  	color: #2f3547;
+}
+.frameParent46 {
+  	align-self: stretch;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: center;
+  	gap: 50px;
+}
+.frameParent47 {
+  	align-self: stretch;
+  	display: flex;
+  	align-items: center;
+  	gap: 50px;
+}
+.frameWrapper30 {
+  	height: 132px;
+  	width: 286px;
+  	position: relative;
+  	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  	border-radius: 16px;
+  	border: 2px dashed #bf1869;
+  	box-sizing: border-box;
+  	overflow: hidden;
+  	flex-shrink: 0;
+}
+.frameParent48 {
+  	position: absolute;
+  	top: 21px;
+  left: 16px;
+  	display: flex;
+  	align-items: center;
+  	gap: 24px;
+}
+.mandatoryIconBox {
+  width: 88px;
+  height: 88px;
+  flex: 0 0 88px;
+  border-radius: 18px;
+  background: #dfe6e9;
+  box-shadow: -8px -8px 16px #ffffff,
+               8px 8px 16px #c4c4c4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mandatoryIcon {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+.frameChild22 {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+.scenarioBasedLearning {
+  	width: 152px;
+  	position: relative;
+  	letter-spacing: 0.02em;
+  	line-height: 28px;
+  	font-weight: 600;
+  	display: inline-block;
+  	flex-shrink: 0;
+}
+.frameWrapper31 {
+  	height: 132px;
+  	width: 286px;
+  	position: relative;
+  	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  	border-radius: 16px;
+  	border: 2px dashed #2d4cc8;
+  	box-sizing: border-box;
+  	overflow: hidden;
+  	flex-shrink: 0;
+}
+.frameParent49 {
+  	position: absolute;
+  	top: 21px;
+  left: 16px;
+  	display: flex;
+  	align-items: center;
+  	gap: 24px;
+}
+.frameWrapper32 {
+  	width: 286px;
+  	height: 130px;
+  	position: relative;
+  	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  	border-radius: 16px;
+  	border: 2px dashed #67096e;
+  	box-sizing: border-box;
+  	overflow: hidden;
+  	flex-shrink: 0;
+}
+.frameWrapper33 {
+  	height: 132px;
+  	width: 286px;
+  	position: relative;
+  	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  	border-radius: 16px;
+  	border: 2px dashed #046f73;
+  	box-sizing: border-box;
+  	overflow: hidden;
+  	flex-shrink: 0;
+}
+.frameWrapper34 {
+  	height: 132px;
+  	width: 286px;
+  	position: relative;
+  	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  	border-radius: 16px;
+  	border: 2px dashed #907507;
+  	box-sizing: border-box;
+  	overflow: hidden;
+  	flex-shrink: 0;
+}
+.frameParent54 {
+  	align-self: stretch;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: center;
+  	gap: 50px;
+  	text-align: center;
+}
+.frameChild27 {
+  	width: 465.2px;
+  	height: 50.4px;
+  	position: relative;
+  	border-radius: 28px;
+  	object-fit: contain;
+  	flex-shrink: 0;
+}
+.frameParent57 {
+  	align-self: stretch;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: center;
+  	gap: 36px;
+  	text-align: left;
+  	font-size: 24px;
+}
+.frameParent59 {
+  	width: 400px;
+  	display: flex;
+  	align-items: center;
+  	gap: 16px;
+}
+.frameChild28 {
+  	height: 70.1px;
+  	width: 70.1px;
+  	position: relative;
+}
+.courseCompletionRates {
+  	height: 37px;
+  	width: 305px;
+  	position: relative;
+  	letter-spacing: 0.03em;
+  	line-height: 36px;
+  	text-transform: capitalize;
+  	display: inline-block;
+  	flex-shrink: 0;
+}
+.frameParent60 {
+  	width: 400px;
+  	display: flex;
+  	align-items: center;
+  	gap: 16px;
+  	text-align: center;
+}
+.certificationStatus {
+  	height: 37px;
+  	width: 233px;
+  	position: relative;
+  	letter-spacing: 0.03em;
+  	line-height: 36px;
+  	text-transform: capitalize;
+  	display: inline-block;
+  	flex-shrink: 0;
+}
+.assessmentPerformance {
+  	height: 37px;
+  	width: 302px;
+  	position: relative;
+  	letter-spacing: 0.03em;
+  	line-height: 36px;
+  	text-transform: capitalize;
+  	display: inline-block;
+  	flex-shrink: 0;
+}
+.frameParent62 {
+  	display: flex;
+  	align-items: center;
+  	gap: 36px;
+}
+.trainingParticipation {
+  	height: 37px;
+  	width: 285px;
+  	position: relative;
+  	letter-spacing: 0.03em;
+  	line-height: 36px;
+  	text-transform: capitalize;
+  	display: inline-block;
+  	flex-shrink: 0;
+}
+.frameChild32 {
+  	height: 70.1px;
+  	width: 70.1px;
+  	position: relative;
+  	flex-shrink: 0;
+}
+.departmentComplianceMetrics {
+  	height: 37px;
+  	width: 396px;
+  	position: relative;
+  	letter-spacing: 0.03em;
+  	line-height: 36px;
+  	text-transform: capitalize;
+  	display: inline-block;
+  	flex-shrink: 0;
+}
+.complianceSecurityInner2 {
+  	position: absolute;
+  	top: 4275px;
+  	left: calc(50% - 640px);
+  	width: 1280px;
+  	height: 628px;
+}
+.frameWrapper39 {
+  	position: absolute;
+  	top: 0px;
+  	left: 0px;
+  	box-shadow: -8px -8px 16px #fff, 8px 8px 16px #c4c4c4;
+  	border-radius: 50px;
+  	background-color: #dfe6e9;
+  	width: 1280px;
+  	height: 628px;
+  	overflow: hidden;
+}
+.frameParent65 {
+  	position: absolute;
+  	top: 32px;
+  	left: 32px;
+  	box-shadow: -8px -8px 16px #fff inset, 8px 8px 16px #c4c4c4 inset;
+  	border-radius: 8px;
+  	background-color: #dfe6e9;
+  	width: 1216px;
+  	height: 564px;
+  	overflow: hidden;
+}
+.frameParent66 {
+  	position: absolute;
+  	top: calc(50% - 158.52px);
+  	left: 80px;
+  	width: 500px;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-start;
+  	gap: 24px;
+  	flex-shrink: 0;
+}
+.frameParent67 {
+  	align-self: stretch;
+  	height: 174px;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-start;
+  	gap: 24px;
+}
+.frameChild33 {
+  	width: 444.1px;
+  	height: 50.3px;
+  	position: relative;
+  	border-radius: 28px;
+  	object-fit: contain;
+}
+.maintainVerifiableTraining {
+  	align-self: stretch;
+  	height: 100px;
+  	position: relative;
+  	letter-spacing: 0.03em;
+  	line-height: 50px;
+  	display: inline-block;
+  	flex-shrink: 0;
+}
+.issueDigitalCertificates {
+  	width: 468px;
+  	position: relative;
+  	font-size: 28px;
+  	letter-spacing: 0.03em;
+  	line-height: 40px;
+  	color: #2f3547;
+  	display: inline-block;
+}
+.rectangleIcon {
+  	position: absolute;
+  	top: calc(50% - 281.11px);
+  	left: 571px;
+  	width: 706.4px;
+  	height: 563px;
+  	object-fit: cover;
+  	flex-shrink: 0;
+}
+.complianceSecurityItem {
+  	position: absolute;
+  	top: 5100.02px;
+  	left: 257.6px;
+  	width: 1105.2px;
+  	height: 100px;
+  	transform:  rotate(90.6deg);
+  	transform-origin: 0 0;
+}
+.frameParent68 {
+  	position: absolute;
+  	top: 4951.11px;
+  	left: 125.3px;
+  	width: 1189.4px;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: center;
+  	gap: 50px;
+  	text-align: center;
+}
+.frameWrapper40 {
+  	width: 786px;
+  	height: 191px;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: center;
+}
+.frameWrapper41 {
+  	width: 100%;
+  	height: 191px;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: center;
+  	max-width: 100%;
+}
+.frameWrapper42 {
+  	width: 100%;
+  	height: 280px;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: center;
+  	max-width: 100%;
+  	flex-shrink: 0;
+}
+.frameChild34 {
+  	width: 257.1px;
+  	height: 50.2px;
+  	position: relative;
+  	border-radius: 28px;
+  	object-fit: contain;
+  	flex-shrink: 0;
+}
+.frameParent71 {
+  	align-self: stretch;
+  	display: flex;
+  	align-items: center;
+  	gap: 42px;
+  	text-align: left;
+  	font-size: 24px;
+}
+.frameChild35 {
+  	height: 2362px;
+  	width: 108.1px;
+  	position: relative;
+}
+.frameParent72 {
+  	width: 1039.3px;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-start;
+  	gap: 32px;
+}
+.frameWrapper44 {
+  	align-self: stretch;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-start;
+}
+.frameWrapper45 {
+  	width: 1039px;
+  	height: 434px;
+  	box-shadow: -4px -4px 8px #fff inset, 4px 4px 8px rgba(196, 196, 196, 0.8) inset;
+  	border-radius: 16px;
+  	background-color: #dfe6e9;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-start;
+  	padding: 32px 30px 32px 32px;
+  	box-sizing: border-box;
+}
+.frameParent73 {
+  	width: 975px;
+  	height: 370px;
+  	position: relative;
+}
+.frameChild36 {
+  	position: absolute;
+  	top: -11.75px;
+  	left: -1.29px;
+  	width: 720.1px;
+  	height: 85.6px;
+  	object-fit: contain;
+  	flex-shrink: 0;
+}
+.frameWrapper46 {
+  	position: absolute;
+  	top: 105.59px;
+  	right: 0.6px;
+  	box-shadow: -4px -4px 8px #fff, 4px 4px 8px #c4c4c4;
+  	border-radius: 16px;
+  	background-color: #dfe6e9;
+  	border-right: 3px solid #bf1869;
+  	border-left: 3px solid #bf1869;
+  	box-sizing: border-box;
+  	width: 977px;
+  	height: 260px;
+  	overflow: hidden;
+  	flex-shrink: 0;
+}
+.frameParent74 {
+  	position: absolute;
+  	top: calc(50% - 108px);
+  	left: 24px;
+  	width: 429px;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-start;
+  	gap: 16px;
+}
+.frameParent75 {
+  	align-self: stretch;
+  	height: 60px;
+  	display: flex;
+  	align-items: center;
+  	gap: 16px;
+}
+.encryptedDataStorage {
+  	height: 37px;
+  	width: 596px;
+  	position: relative;
+  	letter-spacing: 0.03em;
+  	line-height: 36px;
+  	font-weight: 600;
+  	display: inline-block;
+  	flex-shrink: 0;
+}
+.protectionOfLearner {
+  	height: 37px;
+  	width: 539px;
+  	position: relative;
+  	letter-spacing: 0.03em;
+  	line-height: 36px;
+  	font-weight: 600;
+  	display: inline-block;
+  	flex-shrink: 0;
+}
+.secureManagementOf {
+  	height: 37px;
+  	width: 648px;
+  	position: relative;
+  	letter-spacing: 0.03em;
+  	line-height: 36px;
+  	font-weight: 600;
+  	display: inline-block;
+  	flex-shrink: 0;
+}
+.frameWrapper48 {
+  	width: 1039px;
+  	height: 498px;
+  	box-shadow: -4px -4px 8px #fff inset, 4px 4px 8px rgba(196, 196, 196, 0.8) inset;
+  	border-radius: 16px;
+  	background-color: #dfe6e9;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-start;
+  	padding: 32px 30px 32px 32px;
+  	box-sizing: border-box;
+}
+.frameWrapper49 {
+  	width: 975px;
+  	height: 165px;
+  	position: relative;
+}
+.frameWrapper50 {
+  	position: absolute;
+  	top: -11.75px;
+  	left: 0px;
+  	width: 977px;
+  	display: flex;
+  	align-items: flex-start;
+  	padding: 10px;
+  	box-sizing: border-box;
+  	flex-shrink: 0;
+}
+.frameParent78 {
+  	width: 967px;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-start;
+  	gap: 24px;
+  	flex-shrink: 0;
+}
+.frameParent79 {
+  	width: 722px;
+  	height: 153px;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-start;
+  	gap: 24px;
+}
+.frameChild40 {
+  	align-self: stretch;
+  	height: 85.6px;
+  	max-width: 100%;
+  	overflow: hidden;
+  	flex-shrink: 0;
+  	object-fit: contain;
+}
+.frameChild41 {
+  	width: 644.1px;
+  	height: 43px;
+  	object-fit: contain;
+}
+.frameWrapper51 {
+  	align-self: stretch;
+  	height: 260px;
+  	position: relative;
+  	box-shadow: -4px -4px 8px #fff, 4px 4px 8px #c4c4c4;
+  	border-radius: 16px;
+  	background-color: #dfe6e9;
+  	border-right: 3px solid #2d4cc8;
+  	border-left: 3px solid #2d4cc8;
+  	box-sizing: border-box;
+  	overflow: hidden;
+  	flex-shrink: 0;
+}
+.controlViewingEditing {
+  	height: 37px;
+  	width: 618px;
+  	position: relative;
+  	letter-spacing: 0.03em;
+  	line-height: 36px;
+  	font-weight: 600;
+  	display: inline-block;
+  	flex-shrink: 0;
+}
+.frameChild45 {
+  	position: absolute;
+  	top: -11.75px;
+  	left: -1.29px;
+  	width: 933.1px;
+  	height: 86px;
+  	object-fit: contain;
+  	flex-shrink: 0;
+}
+.frameWrapper54 {
+  	position: absolute;
+  	top: 105.59px;
+  	right: 0.6px;
+  	box-shadow: -4px -4px 8px #fff, 4px 4px 8px #c4c4c4;
+  	border-radius: 16px;
+  	background-color: #dfe6e9;
+  	border-right: 3px solid #67096e;
+  	border-left: 3px solid #67096e;
+  	box-sizing: border-box;
+  	width: 977px;
+  	height: 260px;
+  	overflow: hidden;
+  	flex-shrink: 0;
+}
+.frameWrapper57 {
+  	position: absolute;
+  	top: 105.59px;
+  	right: 0.6px;
+  	box-shadow: -4px -4px 8px #fff, 4px 4px 8px #c4c4c4;
+  	border-radius: 16px;
+  	background-color: #dfe6e9;
+  	border-right: 3px solid #c05512;
+  	border-left: 3px solid #c05512;
+  	box-sizing: border-box;
+  	width: 977px;
+  	height: 260px;
+  	overflow: hidden;
+  	flex-shrink: 0;
+}
+.frameWrapper60 {
+  	position: absolute;
+  	top: 105.59px;
+  	right: 0.6px;
+  	box-shadow: -4px -4px 8px #fff, 4px 4px 8px #c4c4c4;
+  	border-radius: 16px;
+  	background-color: #dfe6e9;
+  	border-right: 3px solid #2a7308;
+  	border-left: 3px solid #2a7308;
+  	box-sizing: border-box;
+  	width: 977px;
+  	height: 260px;
+  	overflow: hidden;
+  	flex-shrink: 0;
+}
+.frameParent99 {
+  	position: absolute;
+  	top: 7650.11px;
+  	left: 81px;
+  	width: 1254px;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-start;
+  	gap: 50px;
+  	text-align: center;
+}
+.frameWrapper61 {
+  	align-self: stretch;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: center;
+}
+.frameWrapper63 {
+  	width: 100%;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: center;
+  	max-width: 100%;
+}
+.frameWrapper64 {
+  	width: 100%;
+  	height: 132px;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: center;
+  	max-width: 100%;
+}
+.neurolxpEnablesSecure {
+  	width: 789px;
+  	height: 64px;
+  	position: relative;
+  	font-size: 24px;
+  	letter-spacing: 0.03em;
+  	line-height: 32px;
+  	color: #2f3547;
+  	display: inline-block;
+  	flex-shrink: 0;
+}
+.frameParent101 {
+  	align-self: stretch;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-start;
+  	gap: 50px;
+  	font-size: 24px;
+}
+.frameParent102 {
+  	align-self: stretch;
+  	display: flex;
+  	align-items: center;
+  	gap: 40px;
+}
+.frameParent103 {
+  	height: 158px;
+  	width: 282px;
+  	position: relative;
+}
+.frameChild57 {
+  	position: absolute;
+  	top: 0px;
+  	left: -1.5px;
+  	box-shadow: 10px 10px 20px #c4c4c4, -10px -10px 20px #fff;
+  	border-radius: 32px;
+  	background-color: #dfe6e9;
+  	width: 286px;
+  	height: 161px;
+  	overflow: hidden;
+  	flex-shrink: 0;
+}
+.frameParent104 {
+  	position: absolute;
+  	top: calc(50% - 57px);
+  	left: calc(50% - 92px);
+  	width: 184px;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: center;
+  	gap: 8px;
+  	flex-shrink: 0;
+}
+.universities {
+  	align-self: stretch;
+  	position: relative;
+  	line-height: 36px;
+}
+.corporateTraining {
+  	width: 226px;
+  	position: relative;
+  	line-height: 36px;
+  	display: inline-block;
+  	flex-shrink: 0;
+}
+.financialServices {
+  	width: 204px;
+  	position: relative;
+  	line-height: 36px;
+  	display: inline-block;
+  	flex-shrink: 0;
+}
+.complianceSecurityInner3 {
+  	position: absolute;
+  	top: 8300.11px;
+  	left: calc(50% - 650px);
+  	width: 1300px;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: center;
+  	text-align: center;
+  	font-size: 48px;
+}
+.frameParent120 {
+  	width: 1002px;
+  	height: 259px;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: center;
+  	gap: 32px;
+}
+.frameChild73 {
+  	width: 188.7px;
+  	height: 50.1px;
+  	position: relative;
+  	border-radius: 28px;
+  	object-fit: contain;
+}
+.secureLearningSmarterComplParent {
+  	align-self: stretch;
+  	height: 146px;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: center;
+  	gap: 32px;
+}
+.secureLearningSmarterContainer2 {
+  	align-self: stretch;
+  	height: 65px;
+  	position: relative;
+  	letter-spacing: 0.03em;
+  	line-height: 65px;
+  	display: inline-block;
+  	flex-shrink: 0;
+}
+.secureLearning {
+  	line-height: 65px;
+}
+.smarterCompliance {
+  	color: #2d4cc8;
+  	line-height: 65px;
+}
+.neurolxpHelpsOrganizations {
+  	align-self: stretch;
+  	height: 80px;
+  	position: relative;
+  	font-size: 28px;
+  	letter-spacing: 0.03em;
+  	line-height: 40px;
+  	color: #2f3547;
+  	display: inline-block;
+  	flex-shrink: 0;
+}
+.frameParent121 {
+  	position: absolute;
+  	top: 8655.11px;
+  	left: calc(50% - 720px);
+  	width: 1440px;
+  	height: 501px;
+  	font-size: 26px;
+  	color: #2f3547;
+}
+.frameParent122 {
+  	position: absolute;
+  	bottom: -0.01px;
+  	left: calc(50% - 720px);
+  	box-shadow: -10px -10px 20px #fff inset, 8px 8px 16px #c4c4c4 inset;
+  	background-color: #dfe6e9;
+  	width: 1440px;
+  	height: 459px;
+  	overflow: hidden;
+}
+.frameParent123 {
+  	position: absolute;
+  	top: 49.81px;
+  	left: 53.96px;
+  	width: 1339.5px;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: center;
+  	gap: 24px;
+}
+.frameParent124 {
+  	align-self: stretch;
+  	display: flex;
+  	align-items: flex-start;
+  	gap: 35px;
+}
+.frameParent125 {
+  	width: 676px;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-start;
+  	gap: 24px;
+  	flex-shrink: 0;
+}
+.logo01SynapseSpark1Group {
+  	width: 577px;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-start;
+  	gap: 20px;
+}
+.logo01SynapseSpark1Icon2 {
+  	width: 299px;
+  	height: 112px;
+  	position: relative;
+  	object-fit: cover;
+  	flex-shrink: 0;
+}
+.frameParent126 {
+  	display: flex;
+  	align-items: center;
+  	gap: 14px;
+  	flex-shrink: 0;
+}
+.onePlatformParent {
+  	display: flex;
+  	align-items: center;
+  	gap: 10px;
+}
+.onePlatform {
+  	position: relative;
+  	letter-spacing: -0.03em;
+  	line-height: 34px;
+  	text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.sparklesIcon {
+  	height: 23px;
+  	width: 23px;
+  	position: relative;
+}
+.prgeeqGlobalSolutionsPrivatParent {
+  	width: 459px;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-start;
+  	gap: 4px;
+  	font-size: 16px;
+}
+.prgeeqGlobalSolutions {
+  	align-self: stretch;
+  	position: relative;
+  	letter-spacing: 0.03em;
+  	line-height: 24px;
+}
+.prestigeAtlanta1012Container {
+  	align-self: stretch;
+  	height: 77px;
+  	position: relative;
+  	line-height: 24px;
+  	display: flex;
+  	align-items: flex-end;
+  	flex-shrink: 0;
+}
+.blankLine {
+  	line-height: 24px;
+}
+.frameParent127 {
+  	width: 631px;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-end;
+  	gap: 24px;
+  	flex-shrink: 0;
+  	font-size: 22px;
+  	color: #2d4cc8;
+}
+.frameParent128 {
+  	width: 619px;
+  	display: flex;
+  	align-items: flex-start;
+  	gap: 32px;
+}
+.aboutUsParent {
+  	width: 123px;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-start;
+  	gap: 20px;
+}
+.aboutUs {
+  	width: 93px;
+  	position: relative;
+  	letter-spacing: -0.03em;
+  	line-height: 30px;
+  	display: flex;
+  	align-items: center;
+}
+.ourMissionParent {
+  	align-self: stretch;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-start;
+  	gap: 15px;
+  	font-size: 20px;
+  	color: #2f3547;
+}
+.ourMission {
+  	align-self: stretch;
+  	height: 26px;
+  	position: relative;
+  	letter-spacing: 0.03em;
+  	line-height: 28px;
+  	display: flex;
+  	align-items: center;
+  	flex-shrink: 0;
+}
+.quickLinksParent {
+  	width: 207px;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-start;
+  	gap: 20px;
+}
+.quickLinks {
+  	align-self: stretch;
+  	height: 26px;
+  	position: relative;
+  	letter-spacing: -0.03em;
+  	line-height: 30px;
+  	display: flex;
+  	align-items: center;
+  	flex-shrink: 0;
+}
+.neurolxpParent {
+  	height: 181px;
+  	width: 205px;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-start;
+  	gap: 20px;
+}
+.neurolxp {
+  	align-self: stretch;
+  	height: 26px;
+  	position: relative;
+  	letter-spacing: -0.03em;
+  	line-height: 30px;
+  	display: flex;
+  	white-space: pre-wrap;
+  	align-items: center;
+  	flex-shrink: 0;
+}
+.ourCustomersGroup {
+  	width: 221px;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-start;
+  	gap: 15px;
+  	flex-shrink: 0;
+  	font-size: 20px;
+  	color: #2f3547;
+}
+.smartContentCreation {
+  	width: 229px;
+  	height: 26px;
+  	position: relative;
+  	letter-spacing: 0.03em;
+  	line-height: 28px;
+  	display: flex;
+  	align-items: center;
+  	flex-shrink: 0;
+}
+.frameParent129 {
+  	width: 392.4px;
+  	height: 80.1px;
+  	display: flex;
+  	align-items: center;
+  	gap: 24px;
+}
+.frameChild74 {
+  	height: 80.1px;
+  	width: 80.1px;
+  	position: relative;
+}
+.copyright2026 {
+  	align-self: stretch;
+  	height: 47px;
+  	position: relative;
+  	font-size: 16px;
+  	letter-spacing: -0.03em;
+  	line-height: 56px;
+  	font-weight: 600;
+  	color: #2d4cc8;
+  	text-align: center;
+  	display: inline-block;
+  	flex-shrink: 0;
+}
+.frameWrapper66 {
+  	position: absolute;
+  	bottom: 0px;
+  	left: calc(50% - 720px);
+  	box-shadow: -8px -8px 16px #fff inset, 10px 10px 10px #c4c4c4 inset;
+  	background-color: #dfe6e9;
+  	width: 1440px;
+  	height: 459px;
+  	overflow: hidden;
+}
+.frameParent134 {
+  	width: 631px;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-end;
+  	position: relative;
+  	isolation: isolate;
+  	gap: 24px;
+  	flex-shrink: 0;
+  	font-size: 22px;
+  	color: #2d4cc8;
+}
+.frameParent135 {
+  	width: 619px;
+  	display: flex;
+  	align-items: flex-start;
+  	gap: 32px;
+  	z-index: 0;
+  	flex-shrink: 0;
+}
+.ourMissionGroup {
+  	align-self: stretch;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-start;
+  	gap: 15px;
+  	font-size: 18px;
+  	color: #2f3547;
+}
+.neurolxpGroup {
+  	display: flex;
+  	align-items: flex-start;
+  	flex-shrink: 0;
+}
+.neurolxp2 {
+  	height: 26px;
+  	width: 103px;
+  	position: relative;
+  	letter-spacing: -0.03em;
+  	line-height: 30px;
+  	display: flex;
+  	align-items: center;
+  	flex-shrink: 0;
+}
+.neurolxpTxt {
+  	width: 100%;
+  	white-space: pre-wrap;
+}
+.neurolxp3 {
+  	line-height: 30px;
+}
+.span {
+  	font-size: 12px;
+  	line-height: 30px;
+}
+.tm {
+  	height: 17px;
+  	width: 23px;
+  	position: relative;
+  	font-size: 12px;
+  	letter-spacing: -0.03em;
+  	line-height: 30px;
+  	display: flex;
+  	align-items: center;
+  	flex-shrink: 0;
+}
+.ourCustomersContainer {
+  	width: 221px;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-start;
+  	gap: 15px;
+  	flex-shrink: 0;
+  	font-size: 18px;
+  	color: #2f3547;
+}
+.frameParent137 {
+  	width: 392.4px;
+  	height: 80.1px;
+  	margin: 0 !important;
+  	position: absolute;
+  	top: 217.19px;
+  	left: 135.04px;
+  	display: flex;
+  	align-items: center;
+  	gap: 24px;
+  	z-index: 1;
+  	flex-shrink: 0;
+}
+.frameChild78 {
+  	height: 80.1px;
+  	width: 80.1px;
+  	position: relative;
+  	flex-shrink: 0;
+}
+.frameChild83 {
+  	position: absolute;
+  	top: 0px;
+  	left: calc(50% - 30.07px);
+  	border-radius: 32px;
+  	width: 59.1px;
+  	height: 92px;
+  	object-fit: contain;
+}
+.complianceSecurityChild2 {
+  	position: absolute;
+  	top: 2112px;
+  	left: calc(50% - 720px);
+  	background: linear-gradient(90deg, #bf1869, #2d4cc8);
+  	width: 1440px;
+  	height: 5px;
+  	overflow: hidden;
+}
+
+
+/* Hero section SVG and visible content */
+
+.frameParent { z-index: 20; }
+.frameDiv { z-index: 3; }
+
+.complianceSecurityInner {
+  top: 156px;
+  z-index: 2;
+}
+
+.heroBadge {
+  min-width: 309px;
+  min-height: 50px;
+  padding: 8px 30px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 32px;
+  background: #dfe6e9;
+  box-shadow: -8px -8px 16px #fff, 8px 8px 16px #c4c4c4;
+  color: #2d4cc8;
+  font-size: 24px;
+  line-height: 34px;
+  font-weight: 600;
+  letter-spacing: .02em;
+}
+
+.frameParent4 {
+  height: auto;
+}
+
+.secureLearningSmarterContainer {
+  display: block;
+  height: auto;
+  margin: 0;
+}
+
+.neurolxpCombinesCompliance {
+  height: auto;
+}
+
+.frameParent5 {
+  position: relative;
+  z-index: 3;
+}
+
+.heroButton {
+  width: 210px;
+  min-height: 60px;
+  padding: 14px 24px;
+  border: 0;
+  border-radius: 8px;
+  background: #dfe6e9;
+  box-shadow: -8px -8px 16px #fff, 8px 8px 16px #c6c6c9;
+  font-family: 'Segoe UI';
+  font-size: 22px;
+  line-height: 30px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.heroButtonSecondary { color: #31344b; }
+.heroButtonPrimary { color: #2d4cc8; }
+.heroButton:focus-visible {
+  outline: 3px solid #2d4cc8;
+  outline-offset: 4px;
+}
+.heroButton:active {
+  box-shadow: inset -4px -4px 8px #fff, inset 4px 4px 8px #c6c6c9;
+}
+
+
+
+
+
+
+/* Final full-bleed safeguard.
+   The SVG viewBox contains 24px of built-in side space, so the image is
+   enlarged slightly to make the visible curved panel touch both edges. */
+.complianceSecurity > .complianceSecurityChild {
+  left: 50% !important;
+  width: 103.34vw !important;
+  min-width: 103.34vw !important;
+  max-width: none !important;
+  transform: translateX(-50%) !important;
+  object-fit: fill !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* =========================================================
+   FINAL VERIFIED SECTION LAYOUT
+   The bottom two cards are siblings of .frameParent46 in TSX,
+   so .frameParent45 is the actual 5-card grid.
+   ========================================================= */
+
+/* Industry section follows Smart Compliance */
+.frameParent24 {
+  top: 2240px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: min(1280px, calc(100% - 64px));
+}
+
+/* Engaging Compliance follows the complete two-row Industry section */
+.frameParent41 {
+  position: absolute;
+  top: 3102px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: min(1274px, calc(100% - 64px));
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 32px;
+}
+
+/* Engaging section: left text + right card group */
+.frameParent42 {
+  width: 100%;
+  min-height: 556px;
+  display: grid;
+  grid-template-columns: 470px 622px;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: 80px;
+  box-sizing: border-box;
+}
+
+.frameWrapper29 {
+  width: 470px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.frameWrapper29 .frameParent8,
+.frameWrapper29 .frameParent9 {
+  width: 100%;
+  height: auto;
+  min-height: 0;
+  align-items: flex-start;
+}
+
+.frameWrapper29 .frameParent9 {
+  gap: 32px;
+}
+
+.engagingComplianceBadge {
+  min-width: 408px;
+  width: fit-content;
+  height: 56px;
+  margin: 0;
+  padding: 0 28px;
+}
+
+.makeMandatoryTrainingContainer {
+  width: 470px;
+  margin: 0;
+  font-size: 40px;
+  line-height: 1.25;
+}
+
+.makeComplianceLearning {
+  width: 430px;
+  margin-top: 30px;
+  font-size: 24px;
+  line-height: 1.45;
+}
+
+/*
+  Correct 5-card arrangement:
+  frameParent45 contains:
+  1) frameParent46 (top row + middle card)
+  2) frameParent47 (bottom row)
+*/
+.frameParent45 {
+  width: 622px;
+  height: 448px;
+  display: grid;
+  grid-template-columns: repeat(2, 286px);
+  grid-template-rows: repeat(3, 132px);
+  column-gap: 32px;
+  row-gap: 50px;
+  align-content: start;
+  align-self: center;
+}
+
+/* Flatten both wrappers into the parent grid */
+.frameParent45 > .frameParent46,
+.frameParent45 > .frameParent47,
+.frameParent46 > .frameParent47 {
+  display: contents;
+}
+
+/* Top row */
+.frameParent46 > .frameParent47 > .frameWrapper30 {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.frameParent46 > .frameParent47 > .frameWrapper31 {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+/* Center row */
+.frameParent46 > .frameWrapper32 {
+  grid-column: 1 / 3;
+  grid-row: 2;
+  justify-self: center;
+}
+
+/* Bottom row — this wrapper is a direct child of frameParent45 */
+.frameParent45 > .frameParent47 > .frameWrapper33 {
+  grid-column: 1;
+  grid-row: 3;
+}
+
+.frameParent45 > .frameParent47 > .frameWrapper34 {
+  grid-column: 2;
+  grid-row: 3;
+}
+
+.frameWrapper30,
+.frameWrapper31,
+.frameWrapper32,
+.frameWrapper33,
+.frameWrapper34 {
+  width: 286px;
+  height: 132px;
+  margin: 0;
+  position: relative;
+  box-sizing: border-box;
+  overflow: hidden;
+  background: #dfe6e9;
+}
+
+.frameParent48,
+.frameParent49 {
+  position: static;
+  width: 100%;
+  height: 100%;
+  padding: 16px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.mandatoryIconBox {
+  width: 88px;
+  height: 88px;
+  flex: 0 0 88px;
+}
+
+.mandatoryIcon {
+  width: 40px;
+  height: 40px;
+}
+
+.scenarioBasedLearning {
+  width: 142px;
+  margin: 0;
+  font-size: 20px;
+  line-height: 1.35;
+  font-weight: 700;
+}
+
+/* Real-Time Visibility now starts after the 556px engaging section + 80px gap */
+.frameParent54 {
+  width: 100%;
+  position: relative;
+  margin: 0;
+  flex: 0 0 auto;
+}
+
+.complianceSecurity {
+  height: 9400px;
+}
+
+
+
+/* =========================================================
+   REAL-TIME VISIBILITY SECTION
+   Two-circle icon design: outer inset-shadow circle + colored circle
+   ========================================================= */
+
+.frameParent54 {
+  width: 100%;
+  position: relative;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 72px;
+  box-sizing: border-box;
+}
+
+.realTimeHeader {
+  width: min(1120px, 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 28px;
+  text-align: center;
+}
+
+.automatedTrackingBadge {
+  min-width: 500px;
+  height: 56px;
+  padding: 0 32px;
+  border-radius: 32px;
+  background: #dfe6e9;
+  box-shadow:
+    inset -8px -8px 16px #ffffff,
+    inset 8px 8px 16px #c4c4c4;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  color: #2d4cc8;
+  font-size: 24px;
+  line-height: 1;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+}
+
+.realTimeVisibilityTitle {
+  width: 100%;
+  margin: 0;
+  color: #31344b;
+  font-size: 42px;
+  line-height: 1.25;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  text-align: center;
+  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.realTimeVisibilityText {
+  width: min(1100px, 100%);
+  margin: 0;
+  color: #2f3547;
+  font-size: 24px;
+  line-height: 1.45;
+  letter-spacing: 0.02em;
+  text-align: center;
+}
+
+.realTimeMetrics {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  column-gap: 30px;
+  row-gap: 54px;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.realTimeMetric {
+  grid-column: span 2;
+  min-height: 96px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 24px;
+  box-sizing: border-box;
+}
+
+.realTimeMetric:nth-child(4) {
+  grid-column: 2 / span 2;
+}
+
+.realTimeMetric:nth-child(5) {
+  grid-column: 4 / span 2;
+}
+
+/* Outer circle with inner shadow */
+.realTimeIconShadow {
+  width: 82px;
+  height: 82px;
+  border-radius: 50%;
+  background: #dfe6e9;
+  box-shadow:
+    inset -6px -6px 10px rgba(255, 255, 255, 0.95),
+    inset 6px 6px 10px rgba(196, 196, 196, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 82px;
+}
+
+/* Inner colored circle */
+.realTimeIconCircle {
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.realTimePink { background: #bf1869; }
+.realTimeBlue { background: #2d4cc8; }
+.realTimePurple { background: #67096e; }
+.realTimeGreen { background: #2d7f16; }
+.realTimeOrange { background: #c05512; }
+
+.realTimeIcon {
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.realTimeMetricTitle {
+  margin: 0;
+  color: #31344b;
+  font-size: 23px;
+  line-height: 1.35;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  text-align: left;
+}
+
+
+
+
+
+/* =========================================================
+   CERTIFICATION AND AUDIT READINESS
+   Picture-perfect Maintain Verifiable Training Records section
+   ========================================================= */
+
+.complianceSecurityInner2 {
+  position: absolute;
+  top: 4275px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: min(1280px, calc(100% - 64px));
+  height: 628px;
+  box-sizing: border-box;
+}
+
+.trainingRecordsOuter {
+  width: 100%;
+  height: 100%;
+  padding: 32px;
+  border-radius: 50px;
+  background: #dfe6e9;
+  box-shadow:
+    -8px -8px 16px #ffffff,
+    8px 8px 16px #c4c4c4;
+  box-sizing: border-box;
+}
+
+.trainingRecordsInner {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-radius: 8px;
+  background: #dfe6e9;
+  box-shadow:
+    inset -8px -8px 16px #ffffff,
+    inset 8px 8px 16px #c4c4c4;
+  overflow: hidden;
+}
+
+.trainingRecordsContent {
+  min-width: 0;
+  padding: 80px 64px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.trainingRecordsBadge {
+  min-width: 430px;
+  height: 56px;
+  padding: 0 28px;
+  border-radius: 32px;
+  background: #dfe6e9;
+  box-shadow:
+    inset -8px -8px 16px #ffffff,
+    inset 8px 8px 16px #c4c4c4;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  color: #2d4cc8;
+  font-size: 24px;
+  line-height: 1;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+}
+
+.maintainVerifiableTraining {
+  width: 100%;
+  height: auto;
+  margin: 42px 0 0;
+  color: #31344b;
+  font-size: 36px;
+  line-height: 1.35;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  text-align: left;
+}
+
+.issueDigitalCertificates {
+  width: 100%;
+  margin: 38px 0 0;
+  color: #2f3547;
+  font-size: 28px;
+  line-height: 1.45;
+  letter-spacing: 0.02em;
+  text-align: left;
+}
+
+.trainingRecordsImageWrap {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.rectangleIcon {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+
+
+/* =========================================================
+   LEARNING SECURITY SECTION
+   Reference-matched timeline and cards
+   ========================================================= */
+
+.frameParent68.learningSecuritySection {
+  position: absolute;
+  top: 4951.11px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: min(1280px, calc(100% - 64px));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 48px;
+  text-align: left;
+  box-sizing: border-box;
+}
+
+.learningSecurityHeader {
+  width: min(900px, 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  text-align: center;
+}
+
+.learningSecurityBadge {
+  min-width: 258px;
+  height: 52px;
+  padding: 0 28px;
+  border-radius: 28px;
+  background: #dfe6e9;
+  box-shadow:
+    inset -6px -6px 12px #ffffff,
+    inset 6px 6px 12px rgba(196, 196, 196, 0.9);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #2d4cc8;
+  font-size: 24px;
+  line-height: 1;
+  font-weight: 600;
+  box-sizing: border-box;
+}
+
+.learningSecurityTitle {
+  margin: 0;
+  color: #31344b;
+  font-size: 36px;
+  line-height: 1.35;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.2));
+}
+
+.learningSecurityIntro {
+  margin: 0;
+  color: #2f3547;
+  font-size: 22px;
+  line-height: 1.45;
+  letter-spacing: 0.02em;
+}
+
+.securityTimeline {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+  padding-left: 120px;
+  box-sizing: border-box;
+}
+
+.securityTimelineRail {
+  position: absolute;
+  top: 48px;
+  bottom: 48px;
+  left: 40px;
+  width: 34px;
+  border-radius: 28px;
+  background: #dfe6e9;
+  box-shadow:
+    inset -7px -7px 14px #ffffff,
+    inset 7px 7px 14px rgba(196, 196, 196, 0.9);
+}
+
+.securityFeature {
+  --security-color: #bf1869;
+  position: relative;
+  width: 100%;
+}
+
+.securityFeature.securityPink { --security-color: #bf1869; }
+.securityFeature.securityBlue { --security-color: #2d4cc8; }
+.securityFeature.securityPurple { --security-color: #67096e; }
+.securityFeature.securityOrange { --security-color: #c05512; }
+.securityFeature.securityGreen { --security-color: #2a7308; }
+
+.securityTimelineIcon {
+  position: absolute;
+  top: 6px;
+  left: -120px;
+  width: 74px;
+  height: 74px;
+  border-radius: 50%;
+  background: #dfe6e9;
+  box-shadow:
+    -8px -8px 16px #ffffff,
+    8px 8px 16px #c4c4c4,
+    inset 0 0 0 2px var(--security-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+
+.securityTimelineIcon img {
+  width: 34px;
+  height: 34px;
+  object-fit: contain;
+}
+
+.securityFeatureCard {
+  width: 100%;
+  padding: 30px 32px 28px;
+  border-radius: 16px;
+  background: #dfe6e9;
+  box-shadow:
+    -8px -8px 16px #ffffff,
+    8px 8px 16px #c4c4c4;
+  box-sizing: border-box;
+}
+
+.securityFeatureTitle {
+  margin: 0;
+  color: var(--security-color);
+  font-size: 26px;
+  line-height: 1.3;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.securityFeatureText {
+  margin: 14px 0 0;
+  color: #2f3547;
+  font-size: 19px;
+  line-height: 1.45;
+  letter-spacing: 0.015em;
+}
+
+.securityRoles {
+  margin: 22px 0 0;
+  color: var(--security-color);
+  font-size: 22px;
+  line-height: 1.35;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.securityFeatureList {
+  margin-top: 26px;
+  padding: 24px 28px;
+  border-left: 2px solid var(--security-color);
+  border-right: 2px solid var(--security-color);
+  border-radius: 14px;
+  background: #dfe6e9;
+  box-shadow:
+    inset -7px -7px 14px #ffffff,
+    inset 7px 7px 14px rgba(196, 196, 196, 0.85);
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  box-sizing: border-box;
+}
+
+.securityFeatureItem {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  color: #31344b;
+  font-size: 21px;
+  line-height: 1.4;
+  font-weight: 600;
+}
+
+.securityCheck {
+  width: 42px;
+  height: 42px;
+  flex: 0 0 42px;
+  border-radius: 50%;
+  background: #dfe6e9;
+  box-shadow:
+    -6px -6px 12px #ffffff,
+    6px 6px 12px #c4c4c4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.securityCheck img {
+  width: 22px;
+  height: 22px;
+  object-fit: contain;
+}
+
+
+
+/* =========================================================
+   LEARNING SECURITY TIMELINE ALIGNMENT FIX
+   Two parallel lines + two-circle icon construction
+   ========================================================= */
+
+.securityTimeline {
+  padding-left: 126px;
+}
+
+/* The rail is only a positioning container. */
+.securityTimelineRail {
+  top: 37px;
+  bottom: 37px;
+  left: 35px;
+  width: 48px;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+  z-index: 0;
+}
+
+/* Two equal neumorphic vertical lines. */
+.securityTimelineRail::before,
+.securityTimelineRail::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 13px;
+  border-radius: 14px;
+  background: #dfe6e9;
+  box-shadow:
+    inset -4px -4px 8px #ffffff,
+    inset 4px 4px 8px rgba(196, 196, 196, 0.9);
+}
+
+.securityTimelineRail::before {
+  left: 4px;
+}
+
+.securityTimelineRail::after {
+  right: 4px;
+}
+
+/*
+  Outer circle:
+  raised neumorphic circle aligned exactly over the middle
+  of the two parallel rails.
+*/
+.securityTimelineIcon {
+  top: 4px;
+  left: -126px;
+  width: 82px;
+  height: 82px;
+  border-radius: 50%;
+  background: #dfe6e9;
+  box-shadow:
+    -7px -7px 14px #ffffff,
+    7px 7px 14px #c4c4c4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 3;
+}
+
+/* Inner circle with inset shadow and colored ring. */
+.securityTimelineIcon::before {
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: #dfe6e9;
+  box-shadow:
+    inset -5px -5px 10px #ffffff,
+    inset 5px 5px 10px rgba(196, 196, 196, 0.9),
+    inset 0 0 0 2px var(--security-color);
+  z-index: 0;
+}
+
+.securityTimelineIcon img {
+  position: relative;
+  z-index: 1;
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+}
+
+/* Keep every circle centered on the same vertical axis as both lines. */
+.securityFeature {
+  position: relative;
+  z-index: 1;
+}
+
+
+
+/* =========================================================
+   FINAL TIMELINE CIRCLE FIX
+   Circle centered between both lines:
+   outer circle = inner shadow
+   inner circle = drop shadow
+   ========================================================= */
+
+.securityTimeline {
+  padding-left: 126px;
+}
+
+/* Two rails with a clear center gap for the circles. */
+.securityTimelineRail {
+  left: 35px;
+  width: 48px;
+}
+
+.securityTimelineRail::before {
+  left: 0;
+}
+
+.securityTimelineRail::after {
+  right: 0;
+}
+
+/*
+  The rail center is:
+  timeline left padding (126px) + rail left (35px) + rail half (24px)
+  relative to the card content.
+  The icon is 82px, so left = -(126 - 35 - 24 + 41) = -108px.
+  This places the icon exactly between both lines.
+*/
+.securityTimelineIcon {
+  left: -108px;
+  width: 82px;
+  height: 82px;
+  border-radius: 50%;
+  background: #dfe6e9;
+
+  /* Outer circle uses INNER shadow only. */
+  box-shadow:
+    inset -7px -7px 14px #ffffff,
+    inset 7px 7px 14px rgba(196, 196, 196, 0.9);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Inner circle uses DROP shadow. */
+.securityTimelineIcon::before {
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  background: #dfe6e9;
+  box-shadow:
+    -6px -6px 12px #ffffff,
+    6px 6px 12px #c4c4c4,
+    inset 0 0 0 2px var(--security-color);
+}
+
+/* Keep the icon perfectly centered inside the inner circle. */
+.securityTimelineIcon img {
+  position: relative;
+  z-index: 1;
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+  display: block;
+}
+
+
+
+/* =========================================================
+   DIVERSE ORGANIZATIONS + NEUROLXP CLOSING
+   96px section-to-section spacing
+   ========================================================= */
+
+/*
+  End-of-page vertical order:
+  Learning Security ends before 7100px
+  Diverse Organizations starts at 7196px
+  NeuroLXP closing starts 96px after the cards
+  Footer starts 96px after the closing section
+*/
+.frameParent99.diverseOrganizationsSection {
+  position: absolute;
+  top: 7196px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: min(1280px, calc(100% - 64px));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.diverseOrganizationsHeader {
+  width: min(945px, 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+.diverseOrganizationsTitle {
+  width: 100%;
+  margin: 0;
+  color: #31344b;
+  font-size: 36px;
+  line-height: 1.35;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.22);
+}
+
+.diverseOrganizationsText {
+  width: min(790px, 100%);
+  margin: 0;
+  color: #2f3547;
+  font-size: 24px;
+  line-height: 1.45;
+  letter-spacing: 0.02em;
+}
+
+.diverseOrganizationsGrid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 28px 24px;
+}
+
+.diverseOrganizationCard {
+  min-width: 0;
+  height: 224px;
+  padding: 30px 20px 28px;
+  border-radius: 38px;
+  background: #dfe6e9;
+  box-shadow:
+    -10px -10px 20px #ffffff,
+    10px 10px 20px #c4c4c4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 26px;
+  box-sizing: border-box;
+}
+
+.diverseOrganizationIconOuter {
+  width: 78px;
+  height: 78px;
+  border-radius: 50%;
+  background: #dfe6e9;
+  box-shadow:
+    inset -6px -6px 10px #ffffff,
+    inset 6px 6px 10px rgba(196, 196, 196, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.diverseOrganizationIconInner {
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  box-shadow:
+    -5px -5px 10px rgba(255, 255, 255, 0.85),
+    5px 5px 10px rgba(120, 120, 120, 0.28);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.diverseOrganizationIconInner--pink { background: #bf1869; }
+.diverseOrganizationIconInner--orange { background: #c05512; }
+.diverseOrganizationIconInner--maroon { background: #72083f; }
+.diverseOrganizationIconInner--brown { background: #5a372f; }
+.diverseOrganizationIconInner--green { background: #2a7d0d; }
+.diverseOrganizationIconInner--teal { background: #047b80; }
+.diverseOrganizationIconInner--navy { background: #26266c; }
+.diverseOrganizationIconInner--purple { background: #73037c; }
+
+.diverseOrganizationIcon {
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
+}
+
+.diverseOrganizationCardTitle {
+  margin: 0;
+  color: #31344b;
+  font-size: 27px;
+  line-height: 1.25;
+  font-weight: 700;
+  text-align: center;
+}
+
+/* 7196 + 138 header + 50 gap + 476 grid = 7860; next begins at 7956. */
+.complianceSecurityInner3.neurolxpClosingSection {
+  position: absolute;
+  top: 7956px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: min(1280px, calc(100% - 64px));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 42px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.neurolxpClosingBadge {
+  min-width: 228px;
+  height: 56px;
+  padding: 0 32px;
+  border-radius: 32px;
+  background: #dfe6e9;
+  box-shadow:
+    inset -8px -8px 16px #ffffff,
+    inset 8px 8px 16px #c4c4c4;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  color: #2d4cc8;
+  font-size: 26px;
+  line-height: 1;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+}
+
+.neurolxpClosingTitle {
+  width: 100%;
+  margin: 0;
+  color: #31344b;
+  font-size: 52px;
+  line-height: 1.2;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.2));
+}
+
+.neurolxpClosingText {
+  width: min(1000px, 100%);
+  margin: 0;
+  color: #2f3547;
+  font-size: 28px;
+  line-height: 1.45;
+  letter-spacing: 0.025em;
+}
+
+/* Closing section is approximately 286px high; footer begins after 96px. */
+.frameParent121 {
+  top: 8338px;
+}
+
+.complianceSecurity {
+  height: 8839px;
+}
+
+
+
+
+
+/* =========================================================
+   FINAL HEADER-FOOTER REMOVAL AND 96PX SECTION FLOW
+   ========================================================= */
+
+/* Header and footer are removed from TSX. */
+.frameParent,
+.frameParent121,
+.complianceSecurityChild2,
+.frameChild83 {
+  display: none !important;
+}
+
+/* Remove the original header/footer reserved space. */
+.complianceSecurity {
+  height: 8373px;
+  min-height: 8373px;
+  overflow: hidden;
+}
+
+/* Hero background begins at the top after header removal. */
+.complianceSecurityChild {
+  top: 0;
+}
+
+/* Breadcrumbs with arrows from the compliance icon folder. */
+.frameDiv {
+  position: absolute;
+  top: 32px;
+  left: 80px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: "Segoe UI";
+  font-size: 16px;
+  color: #2f3547;
+  z-index: 3;
+}
+
+.breadcrumbArrow {
+  width: 16px;
+  height: 16px;
+  object-fit: contain;
+  flex: 0 0 16px;
+}
+
+.breadcrumbCurrent {
+  color: #243fa8;
+  font-weight: 700;
+}
+
+/*
+  Major section positions use a consistent 96px vertical gap:
+  Hero
+  Compliance Training
+  Smart Compliance
+  Industry Compliance
+  Engaging + Real-Time
+  Training Records
+  Learning Security
+  Diverse Organizations
+  NeuroLXP Closing
+*/
+
+.complianceSecurityInner {
+  top: 88px;
+}
+
+/* Hero ends near 556px; next section begins after 96px. */
+.frameParent6 {
+  top: 652px;
+}
+
+/* Compliance Training: 587px high + 96px. */
+.frameParent13 {
+  top: 1335px;
+}
+
+/* Smart Compliance: approximately 725px high + 96px. */
+.frameParent24 {
+  top: 2156px;
+}
+
+/* Industry section: approximately 830px high + 96px. */
+.frameParent41 {
+  top: 3082px;
+  gap: 96px;
+}
+
+/* Engaging + Real-Time group ends near 4286px + 96px. */
+.complianceSecurityInner2 {
+  top: 4382px;
+}
+
+/* Training Records: 628px high + 96px. */
+.frameParent68.learningSecuritySection {
+  top: 5106px;
+}
+
+/* Learning Security ends near 7135px + 96px. */
+.frameParent99.diverseOrganizationsSection {
+  top: 7231px;
+}
+
+/* Diverse Organizations: approximately 664px high + 96px. */
+.complianceSecurityInner3.neurolxpClosingSection {
+  top: 7991px;
+}
+
+/* Remove old decorative separators that occupied section space. */
+.complianceSecurityItem {
+  display: none !important;
+}
+
+
+
+/* =========================================================
+   FINAL LAST TWO SECTION SPACING FIX
+   Learning Security -> Diverse Organizations -> NeuroLXP
+   ========================================================= */
+
+/*
+  The Learning Security timeline finishes lower than the earlier
+  estimated position. Move the next section down so there is a
+  clear 96px gap and no overlap with Privacy and Compliance.
+*/
+.frameParent99.diverseOrganizationsSection {
+  top: 7530px !important;
+}
+
+/*
+  Keep the NeuroLXP closing section 96px after the complete
+  Diverse Organizations header and two card rows.
+*/
+.complianceSecurityInner3.neurolxpClosingSection {
+  top: 8290px !important;
+}
+
+/* Preserve the closing section instead of clipping it. */
+.complianceSecurity {
+  height: 8700px !important;
+  min-height: 8700px !important;
+}
+
+/* =========================================================
+   ONLY TWO CORRECTIONS
+   1. Marching-ant movement for the five existing dashed borders
+   2. Correct 96px spacing for the final two sections
+   No card dimensions, layout, shadows, text or icon styles changed.
+   ========================================================= */
+
+@property --compliance-ant-angle {
+  syntax: "<angle>";
+  inherits: false;
+  initial-value: 0deg;
+}
+
+/*
+  The browser's native dashed border cannot move.
+  Hide only that native border and redraw the same 2px rounded dashed
+  border in the same position. This is one visible border, not two.
+*/
+.frameWrapper30,
+.frameWrapper31,
+.frameWrapper32,
+.frameWrapper33,
+.frameWrapper34 {
+  --compliance-ant-color: #bf1869;
+  border-color: transparent !important;
+  isolation: isolate;
+}
+
+.frameWrapper30 { --compliance-ant-color: #bf1869; }
+.frameWrapper31 { --compliance-ant-color: #2d4cc8; }
+.frameWrapper32 { --compliance-ant-color: #67096e; }
+.frameWrapper33 { --compliance-ant-color: #046f73; }
+.frameWrapper34 { --compliance-ant-color: #907507; }
+
+.frameWrapper30::before,
+.frameWrapper31::before,
+.frameWrapper32::before,
+.frameWrapper33::before,
+.frameWrapper34::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 5;
+  padding: 2px;
+  border-radius: inherit;
+  pointer-events: none;
+
+  background: repeating-conic-gradient(
+    from var(--compliance-ant-angle),
+    var(--compliance-ant-color) 0deg 3deg,
+    transparent 3deg 7deg
+  );
+
+  -webkit-mask:
+    linear-gradient(#000 0 0) content-box,
+    linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+
+  mask:
+    linear-gradient(#000 0 0) content-box,
+    linear-gradient(#000 0 0);
+  mask-composite: exclude;
+
+  animation: complianceMarchingAnts 18s linear infinite;
+}
+
+@keyframes complianceMarchingAnts {
+  to {
+    --compliance-ant-angle: 360deg;
+  }
+}
+
+/*
+  Learning Security is approximately 2398px tall from its effective
+  top of 5106px. Its content finishes near 7504px.
+  Diverse Organizations therefore begins at 7600px: a 96px gap.
+*/
+.frameParent99.diverseOrganizationsSection {
+  top: 7600px !important;
+}
+
+/*
+  Diverse Organizations is approximately 669px tall.
+  It finishes near 8269px, so NeuroLXP begins at 8365px:
+  another 96px gap.
+*/
+.complianceSecurityInner3.neurolxpClosingSection {
+  top: 8365px !important;
+}
+
+/* Prevent the relocated final section from being clipped. */
+.complianceSecurity {
+  height: 8800px !important;
+  min-height: 8800px !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .frameWrapper30::before,
+  .frameWrapper31::before,
+  .frameWrapper32::before,
+  .frameWrapper33::before,
+  .frameWrapper34::before {
+    animation: none;
+  }
+}
+
+/* =========================================================
+   ICON SHINE + CARD HOVER ONLY
+   Existing layout, sizes, spacing, colors, borders and shadows remain unchanged.
+   ========================================================= */
+
+/* Shine is applied only inside existing icon containers. */
+.mandatoryIconBox,
+.smartComplianceIconShadow,
+.realTimeIconShadow,
+.securityTimelineIcon,
+.securityCheck,
+.diverseOrganizationIconOuter,
+.diverseOrganizationIconInner {
+  position: relative;
+  overflow: hidden;
+}
+
+.mandatoryIconBox::after,
+.smartComplianceIconShadow::after,
+.realTimeIconShadow::after,
+.securityTimelineIcon::after,
+.securityCheck::after,
+.diverseOrganizationIconOuter::after,
+.diverseOrganizationIconInner::after {
+  content: "";
+  position: absolute;
+  top: -35%;
+  left: -70%;
+  width: 28%;
+  height: 170%;
+  z-index: 4;
+  pointer-events: none;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.85),
+    transparent
+  );
+  transform: rotate(18deg);
+  animation: complianceIconShine 3s ease-in-out infinite;
+}
+
+@keyframes complianceIconShine {
+  0%,
+  18% {
+    left: -70%;
+    opacity: 0;
+  }
+
+  30% {
+    opacity: 1;
+  }
+
+  62% {
+    left: 135%;
+    opacity: 1;
+  }
+
+  78%,
+  100% {
+    left: 135%;
+    opacity: 0;
+  }
+}
+
+/*
+  Hover is applied only through transform.
+  It does not change width, height, margin, padding, gap, border or position values.
+  Hero and large photo sections are intentionally excluded.
+*/
+.smartComplianceCard,
+.frameParent28,
+.frameWrapper30,
+.frameWrapper31,
+.frameWrapper32,
+.frameWrapper33,
+.frameWrapper34,
+.diverseOrganizationCard,
+.frameParent103,
+.complianceStatus {
+  transition: transform 0.3s ease;
+  will-change: transform;
+}
+
+.smartComplianceCard:hover,
+.frameParent28:hover,
+.frameWrapper30:hover,
+.frameWrapper31:hover,
+.frameWrapper32:hover,
+.frameWrapper33:hover,
+.frameWrapper34:hover,
+.diverseOrganizationCard:hover,
+.frameParent103:hover,
+.complianceStatus:hover {
+  transform: translateY(-5px);
+}
+
+/* Keep icon artwork visible above its original container. */
+.mandatoryIcon,
+.smartComplianceIcon,
+.realTimeIcon,
+.securityTimelineIcon img,
+.securityCheck img,
+.diverseOrganizationIcon {
+  position: relative;
+  z-index: 2;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .mandatoryIconBox::after,
+  .smartComplianceIconShadow::after,
+  .realTimeIconShadow::after,
+  .securityTimelineIcon::after,
+  .securityCheck::after,
+  .diverseOrganizationIconOuter::after,
+  .diverseOrganizationIconInner::after {
+    animation: none;
+  }
+
+  .smartComplianceCard,
+  .frameParent28,
+  .frameWrapper30,
+  .frameWrapper31,
+  .frameWrapper32,
+  .frameWrapper33,
+  .frameWrapper34,
+  .diverseOrganizationCard,
+  .frameParent103,
+  .complianceStatus {
+    transition: none;
+  }
+}
+
+/* FINAL THREE SECTIONS NORMAL FLOW FIX */
+
+/*
+  Only the final three sections are placed in normal document flow.
+  Their internal design, widths, cards, shadows, animations and spacing
+  remain unchanged. The container provides exactly 96px between sections.
+*/
+.finalSectionsFlow {
+  position: relative;
+  margin-top: 5106px;
+  left: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 96px;
+}
+
+/* Cancel only the old absolute positioning of these three sections. */
+.finalSectionsFlow > .frameParent68.learningSecuritySection,
+.finalSectionsFlow > .frameParent99.diverseOrganizationsSection,
+.finalSectionsFlow > .complianceSecurityInner3.neurolxpClosingSection {
+  position: relative !important;
+  top: auto !important;
+  left: auto !important;
+  transform: none !important;
+  flex: 0 0 auto;
+}
+
+/* Preserve the existing designed widths. */
+.finalSectionsFlow > .frameParent68.learningSecuritySection {
+  width: min(1280px, calc(100% - 64px));
+}
+
+.finalSectionsFlow > .frameParent99.diverseOrganizationsSection {
+  width: min(1280px, calc(100% - 64px));
+}
+
+.finalSectionsFlow > .complianceSecurityInner3.neurolxpClosingSection {
+  width: min(1280px, calc(100% - 64px));
+}
+
+/* Existing page height is retained; this only prevents visual clipping. */
+.complianceSecurity {
+  min-height: auto;
+}
+/* ===== FINAL PAGE HEIGHT FIX ===== */
+
+.complianceSecurity {
+    position: relative;
+    height: auto !important;
+    min-height: 0 !important;
+    padding-bottom: 96px;
+    overflow: visible !important;
+}
+
+body,
+html {
+    overflow-x: hidden;
+}
+/* =========================================================
+   Gradient Divider (between Real-Time Visibility and
+   Maintain Verifiable Training Records)
+   ========================================================= */
+
+.sectionGradientDivider {
+  width: 100%;
+  height: 5px;
+  margin: 96px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+}
+
+.sectionGradientDivider svg {
+  display: block;
+  width: 100%;
+  max-width: 1440px;
+  height: 5px;
+  flex-shrink: 0;
+}
+/* =========================================================
+   INDUSTRY CARDS — HOVER-ONLY COLORED RING
+   All 6 cards start identical (no border at rest).
+   On hover, a colored ring fades in around the card,
+   using that card's own accent color.
+   No layout, size, shadow, or text changes.
+   ========================================================= */
+
+/* Remove the static always-on border so every card matches at rest */
+.frameWrapper23 {
+  border: none !important;
+}
+
+/* .frameParent28 is the outer circle shared by every industry card.
+   Give it a positioning context and a ring pseudo-element that's
+   invisible by default. */
+.frameParent28 {
+  position: relative;
+}
+
+.frameParent28::after {
+  content: "";
+  position: absolute;
+  inset: -6px;
+  border-radius: 106px; /* matches the 100px card radius + inset offset */
+  border: 2px solid var(--industry-ring-color, transparent);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  z-index: 5;
+}
+
+.frameParent28:hover::after {
+  opacity: 1;
+}
+
+.frameParent26 > .frameParent27:nth-of-type(1) > .frameParent28:nth-child(1) { --industry-ring-color: #bf1869; }
+.frameParent26 > .frameParent27:nth-of-type(1) > .frameParent28:nth-child(2) { --industry-ring-color: #046f73; }
+.frameParent26 > .frameParent27:nth-of-type(1) > .frameParent28:nth-child(3) { --industry-ring-color: #2d4cc8; }
+
+.frameParent26 > .frameParent27:nth-of-type(2) > .frameParent28:nth-child(1) { --industry-ring-color: #67096e; }
+.frameParent26 > .frameParent27:nth-of-type(2) > .frameParent28:nth-child(2) { --industry-ring-color: #c05512; }
+.frameParent26 > .frameParent27:nth-of-type(2) > .frameParent28:nth-child(3) { --industry-ring-color: #907507; }
+  .frameParent28::after {
+    transition: none;
+  }
+/* =========================================================
+   MOBILE / TABLET RESPONSIVE FIXES
+   Additive only — no desktop (base) rules are modified.
+   Breakpoints: 1200px (small laptop/tablet landscape),
+   900px (tablet portrait), 600px (mobile), 420px (small phone)
+   ========================================================= */
+
+/* ---------- Global safety net ---------- */
+
+
+/* =========================================================
+   INDUSTRY-SPECIFIC COMPLIANCE SECTION
+   (previously had zero responsive rules)
+   ========================================================= */
+
+
+
+
+
+
+/* =========================================================
+   ENGAGING COMPLIANCE — MANDATORY TRAINING CARD GRID
+   (frameParent45 grid uses fixed 286px columns — needs to flex)
+   ========================================================= */
+
+
+
+
+/* =========================================================
+   SMALL-PHONE TEXT & SPACING SCALING
+   Applies gentle scale-down beyond the existing 600px rules
+   ========================================================= */
+
+
+/* =========================================================
+   TABLET-SPECIFIC (768px–1024px) FINE-TUNING
+   Covers gaps between existing 1100px and 900px breakpoints
+   for elements that skip straight from desktop to phone sizing
+   ========================================================= */
+
+
+/* =========================================================
+   PREVENT HORIZONTAL SCROLL FROM ANY LEFTOVER FIXED WIDTHS
+   Safety net only — does not alter desktop sizing
+   ========================================================= */
+
+/* =========================================================
+   MOBILE STACKING FIX
+   Converts all absolutely-positioned major sections into
+   normal document flow below 1024px, so they stack by real
+   content height instead of fixed desktop px offsets.
+   Desktop (>1024px) is completely untouched.
+   ========================================================= */
+
+
+
+/* =========================================================
+   TARGETED MOBILE FIXES
+   1. Breadcrumb overlapping hero title
+   2. Mandatory-training cards overflowing off-screen
+   Desktop (>1024px / >600px) untouched.
+   ========================================================= */
+
+/* ---- Fix 1: Breadcrumb overlap on hero ---- */
+
+
+/* ---- Fix 2: Cards overflowing right edge on mobile ---- */
+
+
+
+/* BFSI-style normal document flow */
+.complianceSecurity {
+  width: 100%;
+  min-height: 100vh;
+  height: auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  overflow-x: hidden;
+  overflow-y: visible;
+  padding-bottom: 96px;
+  box-sizing: border-box;
+}
+
+.complianceSecurityChild {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 103.34vw;
+  min-width: 103.34vw;
+  max-width: none;
+  height: 587px;
+  transform: translateX(-50%);
+  object-fit: fill;
+  object-position: top center;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.frameDiv {
+  position: relative;
+  top: auto;
+  left: auto;
+  width: min(1280px, calc(100% - 160px));
+  margin: 32px auto 0;
+  z-index: 2;
+  flex: 0 0 auto;
+  box-sizing: border-box;
+}
+
+.complianceSecurityInner {
+  position: relative;
+  top: auto;
+  left: auto;
+  width: min(1020px, calc(100% - 160px));
+  min-height: 572px;
+  margin: 32px auto 0;
+  z-index: 1;
+  flex: 0 0 auto;
+  box-sizing: border-box;
+}
+
+.frameParent6,
+.frameParent13,
+.frameParent24,
+.frameParent41,
+.complianceSecurityInner2,
+.frameParent68,
+.frameParent99,
+.complianceSecurityInner3 {
+  position: relative;
+  top: auto;
+  right: auto;
+  bottom: auto;
+  left: auto;
+  transform: none;
+  flex: 0 0 auto;
+  box-sizing: border-box;
+}
+
+.frameParent6 {
+  width: min(1280px, calc(100% - 160px));
+  margin: 96px auto 0;
+}
+
+.frameParent13 {
+  width: min(1280px, calc(100% - 160px));
+  margin: 96px auto 0;
+}
+
+.frameParent24 {
+  width: min(1280px, calc(100% - 160px));
+  margin: 96px auto 0;
+}
+
+.frameParent41 {
+  width: min(1274px, calc(100% - 160px));
+  margin: 96px auto 0;
+}
+
+.complianceSecurityInner2 {
+  width: min(1280px, calc(100% - 160px));
+  height: 628px;
+  margin: 96px auto 0;
+}
+
+.finalSectionsFlow {
+  position: relative;
+  top: auto;
+  left: auto;
+  width: 100%;
+  margin: 96px 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 96px;
+  flex: 0 0 auto;
+  box-sizing: border-box;
+}
+
+.finalSectionsFlow > .frameParent68,
+.finalSectionsFlow > .frameParent99,
+.finalSectionsFlow > .complianceSecurityInner3 {
+  margin: 0 auto;
+}
+
+.frameParent68 {
+  width: min(1189.4px, calc(100% - 160px));
+}
+
+.frameParent99 {
+  width: min(1254px, calc(100% - 160px));
+}
+
+.complianceSecurityInner3 {
+  width: min(1300px, calc(100% - 160px));
+}
+
+
+
+
+
+
+
+
+/* Final BFSI-style responsive layer */
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Stable centered mobile/tablet layout */
+
+
+
+
+
+
+/* =========================================================
+   FINAL RESPONSIVE NORMALIZATION
+   =========================================================
+   Goals:
+   - Preserve the existing component design.
+   - Fit correctly at 100% browser zoom.
+   - Keep desktop, small-desktop/laptop, tablet and phone stable.
+   - Reduce only excessive major-section spacing.
+   - Reduce only white-light intensity in neumorphic shadows.
+   - No TSX changes required.
+   ========================================================= */
+
+/* ---------- GLOBAL WIDTH SAFETY ---------- */
+html,
+body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.complianceSecurity {
+  width: 100%;
+  max-width: 100%;
+  min-height: 100vh;
+  height: auto;
+  margin: 0 auto;
+  overflow-x: hidden;
+  overflow-y: visible;
+  box-sizing: border-box;
+}
+
+/* Images must never create horizontal overflow. */
+.complianceSecurity img {
+  max-width: 100%;
+}
+
+/* =========================================================
+   LARGE DESKTOP — 1440px AND ABOVE
+   Existing design dimensions remain unchanged.
+   ========================================================= */
+
+
+/* =========================================================
+   SMALL DESKTOP / LAPTOP — 1025px TO 1439px
+   This is the important 100%-view fix.
+   Fixed desktop columns become proportional while preserving
+   the same visual composition and component order.
+   ========================================================= */
+
+
+/* =========================================================
+   TABLET — 768px TO 1024px
+   Follow the same principle as the reference page:
+   abandon fixed absolute desktop coordinates and use normal flow.
+   ========================================================= */
+
+
+/* =========================================================
+   PHONE — BELOW 768px
+   Single-column normal flow with safe horizontal gutters.
+   ========================================================= */
+
+
+/* Extra-narrow phone gutter only. */
+
+
+/* =========================================================
+   WHITE-LIGHT SHADOW TUNING ONLY
+   Geometry stays unchanged; only white opacity is reduced.
+   ========================================================= */
+.frameParent,
+.signInHelpWrapper,
+.frameWrapper3 {
+  box-shadow:
+    -8px -8px 16px rgba(255, 255, 255, 0.78),
+    8px 8px 16px #c6c6c9;
+}
+
+.complianceStatus,
+.frameWrapper4,
+.frameChild15,
+.frameWrapper23,
+.frameWrapper24,
+.mandatoryIconBox,
+.frameWrapper39 {
+  box-shadow:
+    -8px -8px 16px rgba(255, 255, 255, 0.78),
+    8px 8px 16px #c4c4c4;
+}
+
+.complianceTrainingBadge,
+.smartComplianceBadge,
+.engagingComplianceBadge,
+.automatedTrackingBadge {
+  box-shadow:
+    inset -8px -8px 16px rgba(255, 255, 255, 0.78),
+    inset 8px 8px 16px #c4c4c4;
+}
+
+.frameWrapper4::before {
+  box-shadow:
+    inset -8px -8px 16px rgba(255, 255, 255, 0.78),
+    inset 8px 8px 16px rgba(196, 196, 196, 0.9);
+}
+
+.smartComplianceCard {
+  box-shadow:
+    -10px -10px 20px rgba(255, 255, 255, 0.78),
+    10px 10px 20px #c4c4c4;
+}
+
+.smartComplianceCardInner {
+  box-shadow:
+    inset -8px -8px 16px rgba(255, 255, 255, 0.78),
+    inset 8px 8px 16px #c4c4c4;
+}
+
+.smartComplianceIconShadow {
+  box-shadow:
+    inset -6px -6px 10px rgba(255, 255, 255, 0.78),
+    inset 6px 6px 10px rgba(196, 196, 196, 0.9);
+}
+
+.frameParent65 {
+  box-shadow:
+    inset -8px -8px 16px rgba(255, 255, 255, 0.78),
+    inset 8px 8px 16px #c4c4c4;
+}
+
+.frameWrapper45,
+.frameWrapper48 {
+  box-shadow:
+    inset -4px -4px 8px rgba(255, 255, 255, 0.78),
+    inset 4px 4px 8px rgba(196, 196, 196, 0.8);
+}
+
+.frameWrapper46,
+.frameWrapper51,
+.frameWrapper54,
+.frameWrapper57,
+.frameWrapper60 {
+  box-shadow:
+    -4px -4px 8px rgba(255, 255, 255, 0.78),
+    4px 4px 8px #c4c4c4;
+}
+
+.frameChild57 {
+  box-shadow:
+    10px 10px 20px #c4c4c4,
+    -10px -10px 20px rgba(255, 255, 255, 0.78);
+}
+
+/* =========================================================
+   FINAL HERO -> COMPLIANCE TRAINING OVERLAP FIX
+   =========================================================
+   This block intentionally comes last.
+   It does not change the component design.
+   It only guarantees that the first content section begins
+   after the hero's real visual/content area at every breakpoint.
+   ========================================================= */
+
+/* Desktop / laptop */
+
+
+/* Large desktop keeps the same safe transition. */
+
+
+/* Tablet:
+   sections are already in normal flow; keep only a clean gap. */
+
+
+/* Phone:
+   content stacks naturally; no fixed hero height is required. */
+
+
+/* Extra-small phones */
+
+
+/* =========================================================
+   FINAL HERO / COMPLIANCE SECTION SEPARATION
+   Keep this block LAST in the stylesheet.
+   ---------------------------------------------------------
+   Fixes only the remaining visual overlap shown at 100% view.
+   No component dimensions, typography, colors, borders,
+   radii, grid design, image design, or content are changed.
+   ========================================================= */
+
+/*
+  Desktop and laptop:
+  The hero background is 587px high. At 100% browser zoom the
+  Compliance Training image was entering that hero area slightly.
+  Preserve normal flow and add only enough separation so the
+  complete section starts below the hero background edge.
+*/
+
+
+/*
+  Standard desktop composition.
+  Do not increase this further; 80px is intentionally below the
+  original 96px spacing while still clearing the hero boundary.
+*/
+
+
+/*
+  Tablet already stacks through normal document flow.
+  Keep a smaller proportional separation.
+*/
+
+
+/*
+  Phone: natural single-column flow with compact separation.
+*/
+
+
+
+
+.scenarioBasedLearning {
+  width: 170px;
+  position: relative;
+  letter-spacing: 0.02em;
+  line-height: 28px;
+  font-weight: 600;
+  display: inline-block;
+  flex-shrink: 0;
+  white-space: normal;
+}
+
+/* =========================================================
+   FINAL UNIFORM 5-CARD BORDER ANIMATION
+   Keep this block LAST in the stylesheet.
+   ---------------------------------------------------------
+   - Same card layout and dimensions
+   - Same individual border colors
+   - Same icon/text design
+   - Uniform constant-speed movement on all five cards
+   - All five animations stay synchronized
+   - No conic-gradient corner compression
+   ========================================================= */
+
+.frameWrapper30,
+.frameWrapper31,
+.frameWrapper32,
+.frameWrapper33,
+.frameWrapper34 {
+  position: relative;
+  border-color: transparent !important;
+  isolation: isolate;
+  overflow: hidden;
+}
+
+/* Preserve each card's existing accent color. */
+.frameWrapper30 { --compliance-ant-color: #bf1869; }
+.frameWrapper31 { --compliance-ant-color: #2d4cc8; }
+.frameWrapper32 { --compliance-ant-color: #67096e; }
+.frameWrapper33 { --compliance-ant-color: #046f73; }
+.frameWrapper34 { --compliance-ant-color: #907507; }
+
+/*
+  Four independent repeating linear gradients are used instead of
+  one rotating conic gradient:
+  1. top edge moves left -> right
+  2. right edge moves top -> bottom
+  3. bottom edge moves right -> left
+  4. left edge moves bottom -> top
+
+  Because every card is 286px x 132px, every dash travels at the
+  same pixel speed and remains visually synchronized.
+*/
+.frameWrapper30::before,
+.frameWrapper31::before,
+.frameWrapper32::before,
+.frameWrapper33::before,
+.frameWrapper34::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 5;
+  pointer-events: none;
+  border-radius: inherit;
+  padding: 0;
+
+  /* Remove the older conic-gradient mask implementation. */
+  -webkit-mask: none !important;
+  -webkit-mask-composite: initial !important;
+  mask: none !important;
+  mask-composite: initial !important;
+
+  background:
+    /* top */
+    repeating-linear-gradient(
+      90deg,
+      var(--compliance-ant-color) 0 10px,
+      transparent 10px 18px
+    ) top left / 100% 2px repeat-x,
+
+    /* right */
+    repeating-linear-gradient(
+      180deg,
+      var(--compliance-ant-color) 0 10px,
+      transparent 10px 18px
+    ) top right / 2px 100% repeat-y,
+
+    /* bottom */
+    repeating-linear-gradient(
+      270deg,
+      var(--compliance-ant-color) 0 10px,
+      transparent 10px 18px
+    ) bottom right / 100% 2px repeat-x,
+
+    /* left */
+    repeating-linear-gradient(
+      0deg,
+      var(--compliance-ant-color) 0 10px,
+      transparent 10px 18px
+    ) bottom left / 2px 100% repeat-y;
+
+  background-repeat:
+    repeat-x,
+    repeat-y,
+    repeat-x,
+    repeat-y;
+
+  background-position:
+    0 0,
+    100% 0,
+    100% 100%,
+    0 100%;
+
+  animation: complianceUniformMarch 2.4s linear infinite !important;
+  will-change: background-position;
+}
+
+/* One identical animation phase for every card. */
+@keyframes complianceUniformMarch {
+  from {
+    background-position:
+      0 0,
+      100% 0,
+      100% 100%,
+      0 100%;
+  }
+
+  to {
+    background-position:
+      36px 0,
+      100% 36px,
+      calc(100% - 36px) 100%,
+      0 calc(100% - 36px);
+  }
+}
+
+/*
+  Keep hover movement equally smooth for all five cards.
+  Only transform changes; card size/spacing/layout stay untouched.
+*/
+.frameWrapper30,
+.frameWrapper31,
+.frameWrapper32,
+.frameWrapper33,
+.frameWrapper34 {
+  transition: transform 220ms cubic-bezier(0.22, 1, 0.36, 1);
+  will-change: transform;
+}
+
+.frameWrapper30:hover,
+.frameWrapper31:hover,
+.frameWrapper32:hover,
+.frameWrapper33:hover,
+.frameWrapper34:hover {
+  transform: translateY(-4px);
+}
+
+/* Avoid motion for users who request reduced motion. */
+@media (prefers-reduced-motion: reduce) {
+  .frameWrapper30::before,
+  .frameWrapper31::before,
+  .frameWrapper32::before,
+  .frameWrapper33::before,
+  .frameWrapper34::before {
+    animation: none !important;
+  }
+
+  .frameWrapper30,
+  .frameWrapper31,
+  .frameWrapper32,
+  .frameWrapper33,
+  .frameWrapper34 {
+    transition: none !important;
+  }
+
+  .frameWrapper30:hover,
+  .frameWrapper31:hover,
+  .frameWrapper32:hover,
+  .frameWrapper33:hover,
+  .frameWrapper34:hover {
+    transform: none !important;
+  }
+}
+
+/* =========================================================
+   SECURE AUTHENTICATION — EXACT PURPLE BULLETS ONLY
+   ---------------------------------------------------------
+   Only these three bullet icons are changed.
+   Purple matches the section theme exactly: #67096e.
+   White tick is restored on top.
+   No layout, spacing, typography, border, card or other color changes.
+   ========================================================= */
+
+.securityFeature.securityPurple .securityCheck {
+  position: relative;
+}
+
+/* Recolor the original green badge body to the exact section purple. */
+.securityFeature.securityPurple .securityCheck img {
+  filter:
+    brightness(0)
+    saturate(100%)
+    invert(14%)
+    sepia(79%)
+    saturate(3431%)
+    hue-rotate(288deg)
+    brightness(69%)
+    contrast(112%) !important;
+}
+
+/* Restore the white tick that is lost when the SVG is recolored. */
+.securityFeature.securityPurple .securityCheck::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 8px;
+  height: 4px;
+  border-left: 2px solid #ffffff;
+  border-bottom: 2px solid #ffffff;
+  transform: translate(-50%, -58%) rotate(-45deg);
+  transform-origin: center;
+  z-index: 3;
+  pointer-events: none;
+}
+
+/* =========================================================
+   FINAL RESPONSIVE CARD-SHAPE PRESERVATION
+   ---------------------------------------------------------
+   PURPOSE:
+   - Keep desktop card shapes unchanged.
+   - Scale the same shapes proportionally on tablet and phone.
+   - Fix mobile reshaping/stretching only.
+   - Preserve all existing colors, typography, shadows and content.
+   ========================================================= */
+
+/* ---------------------------------------------------------
+   TABLET — preserve desktop proportions while using 2 columns
+   --------------------------------------------------------- */
+
+
+/* ---------------------------------------------------------
+   PHONE — single column, same desktop card geometry
+   --------------------------------------------------------- */
+
+
+/* ---------------------------------------------------------
+   EXTRA-SMALL PHONE
+   Same shapes, only slightly tighter typography.
+   --------------------------------------------------------- */
+
+/* =========================================================
+   FINAL CLEAN RESPONSIVE SYSTEM
+   ---------------------------------------------------------
+   IMPORTANT:
+   - This is the ONLY viewport-responsive system in the file.
+   - Desktop content/design/animations are preserved.
+   - No TSX/content changes are required.
+   ========================================================= */
+
+/* Global safety */
+html,
+body {
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+.complianceSecurity * {
+  box-sizing: border-box;
+}
+
+.complianceSecurity img,
+.complianceSecurity svg {
+  max-width: 100%;
+}
+
+/* =========================================================
+   DESKTOP — 1200px AND ABOVE
+   Existing desktop design remains authoritative.
+   ========================================================= */
+@media (min-width: 1200px) {
+  .complianceSecurity {
+    width: 100%;
+    max-width: 100%;
+    zoom: 1;
+  }
+}
+
+/* =========================================================
+   LAPTOP / TABLET LANDSCAPE — 1024px TO 1199px
+   ========================================================= */
+@media (min-width: 1024px) and (max-width: 1199.98px) {
+
+  .complianceSecurity {
+    width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+    overflow-x: hidden !important;
+    overflow-y: visible !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    padding-bottom: 72px !important;
+  }
+
+  /* All main sections use normal flow. */
+  .frameDiv,
+  .complianceSecurityInner,
+  .frameParent6,
+  .frameParent13,
+  .frameParent24,
+  .frameParent41,
+  .complianceSecurityInner2,
+  .frameParent68,
+  .frameParent99,
+  .complianceSecurityInner3 {
+    position: relative !important;
+    inset: auto !important;
+    top: auto !important;
+    right: auto !important;
+    bottom: auto !important;
+    left: auto !important;
+    transform: none !important;
+    height: auto !important;
+    min-height: 0 !important;
+    box-sizing: border-box !important;
+  }
+
+  .frameDiv {
+    width: calc(100% - 64px) !important;
+    max-width: 1120px !important;
+    margin: 28px auto 0 !important;
+  }
+
+  .complianceSecurityInner {
+    width: calc(100% - 64px) !important;
+    max-width: 945px !important;
+    margin: 32px auto 0 !important;
+  }
+
+  .frameParent6,
+  .frameParent13,
+  .frameParent24,
+  .frameParent41,
+  .complianceSecurityInner2 {
+    width: calc(100% - 64px) !important;
+    max-width: 1120px !important;
+    margin: 72px auto 0 !important;
+  }
+
+  .finalSectionsFlow {
+    position: relative !important;
+    inset: auto !important;
+    width: 100% !important;
+    margin: 72px 0 0 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 72px !important;
+  }
+
+  .finalSectionsFlow > .frameParent68,
+  .finalSectionsFlow > .frameParent99,
+  .finalSectionsFlow > .complianceSecurityInner3 {
+    position: relative !important;
+    inset: auto !important;
+    transform: none !important;
+    width: calc(100% - 64px) !important;
+    max-width: 1120px !important;
+    margin: 0 auto !important;
+  }
+
+  /* Hero fixed-height wrappers must grow naturally. */
+  .frameWrapper,
+  .frameWrapper2,
+  .frameParent4 {
+    height: auto !important;
+  }
+
+  .secureLearningSmarterContainer {
+    width: 100% !important;
+    max-width: 1020px !important;
+    height: auto !important;
+    font-size: clamp(40px, 4vw, 48px) !important;
+    line-height: 1.22 !important;
+  }
+
+  .secureLearningSmarter,
+  .greaterConfidence {
+    line-height: 1.22 !important;
+  }
+
+  .neurolxpCombinesCompliance {
+    width: min(844px, 100%) !important;
+    height: auto !important;
+  }
+
+  /* Compliance Training stacks cleanly at this width. */
+  .frameParent6 {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    justify-items: center !important;
+    gap: 42px !important;
+  }
+
+  .frameParent7,
+  .frameParent8,
+  .frameParent9,
+  .frameParent10 {
+    width: 100% !important;
+    max-width: 760px !important;
+    min-width: 0 !important;
+    align-items: center !important;
+    text-align: center !important;
+  }
+
+  .structuredTrainingFor,
+  .neurolxpDeliversStructured {
+    text-align: center !important;
+  }
+
+  .frameWrapper4 {
+    width: min(743px, 100%) !important;
+    height: auto !important;
+    aspect-ratio: 743 / 587 !important;
+  }
+
+  /* Smart Compliance — 2 + 2 + 1, same card design. */
+  .smartComplianceCards {
+    width: 100% !important;
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 400px)) !important;
+    justify-content: center !important;
+    gap: 24px !important;
+  }
+
+  .smartComplianceCard,
+  .smartComplianceCard:nth-child(4),
+  .smartComplianceCard:nth-child(5),
+  .smartComplianceCard:last-child {
+    grid-column: auto !important;
+    width: 100% !important;
+    max-width: 400px !important;
+    height: 206px !important;
+    min-height: 206px !important;
+    aspect-ratio: auto !important;
+    justify-self: center !important;
+  }
+
+  .smartComplianceCard:last-child {
+    grid-column: 1 / -1 !important;
+  }
+
+  /* Industry Compliance — exact desktop card geometry, 2 columns. */
+  .frameWrapper19,
+  .frameWrapper20,
+  .frameWrapper21,
+  .frameWrapper22 {
+    width: 100% !important;
+    height: auto !important;
+  }
+
+  .industrySpecificCompliance {
+    width: 100% !important;
+    height: auto !important;
+  }
+
+  .frameParent26 {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .frameParent27 {
+    width: 100% !important;
+    display: grid !important;
+    grid-template-columns: repeat(2, 400px) !important;
+    justify-content: center !important;
+    align-items: start !important;
+    gap: 28px !important;
+  }
+
+  .frameParent28 {
+    width: 400px !important;
+    height: 306px !important;
+    min-height: 306px !important;
+    margin: 0 !important;
+  }
+
+  /* Engaging + Real-Time */
+  .frameParent41 {
+    align-items: stretch !important;
+    gap: 72px !important;
+  }
+
+  .frameParent42 {
+    width: 100% !important;
+    min-height: 0 !important;
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    justify-items: center !important;
+    gap: 48px !important;
+  }
+
+  .frameWrapper29 {
+    width: min(760px, 100%) !important;
+    align-items: center !important;
+    text-align: center !important;
+  }
+
+  .makeMandatoryTrainingContainer,
+  .makeComplianceLearning {
+    width: 100% !important;
+    max-width: 760px !important;
+    text-align: center !important;
+  }
+
+  .frameParent45 {
+    width: 622px !important;
+    max-width: 100% !important;
+    height: 448px !important;
+    display: grid !important;
+    grid-template-columns: repeat(2, 286px) !important;
+    grid-template-rows: repeat(3, 132px) !important;
+    justify-content: center !important;
+    column-gap: 32px !important;
+    row-gap: 50px !important;
+  }
+
+  /* Real-Time Visibility keeps ORIGINAL icon + text design.
+     Do not turn metrics into pill cards. */
+  .frameParent54 {
+    width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+    position: relative !important;
+    margin: 0 !important;
+    overflow: visible !important;
+  }
+
+  .realTimeMetrics {
+    width: 100% !important;
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 36px 42px !important;
+  }
+
+  .realTimeMetric,
+  .realTimeMetric:nth-child(4),
+  .realTimeMetric:nth-child(5) {
+    grid-column: auto !important;
+    width: 100% !important;
+    min-width: 0 !important;
+    min-height: 96px !important;
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+    gap: 24px !important;
+    padding: 0 !important;
+    border-radius: 0 !important;
+    background: transparent !important;
+    box-shadow: none !important;
+    overflow: visible !important;
+  }
+
+  .realTimeMetric:last-child {
+    grid-column: 1 / -1 !important;
+    width: min(50%, 430px) !important;
+    justify-self: center !important;
+  }
+
+  .realTimeMetricTitle {
+    width: auto !important;
+    max-width: none !important;
+    margin: 0 !important;
+    text-align: left !important;
+    white-space: normal !important;
+  }
+
+  /* Certification / Audit stacks safely at 1024–1199. */
+  .complianceSecurityInner2 {
+    height: auto !important;
+  }
+
+  .trainingRecordsOuter {
+    height: auto !important;
+    padding: 28px !important;
+  }
+
+  .trainingRecordsInner {
+    height: auto !important;
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+  }
+
+  .trainingRecordsContent {
+    width: 100% !important;
+    padding: 52px 48px !important;
+    align-items: center !important;
+    text-align: center !important;
+  }
+
+  .trainingRecordsBadge {
+    min-width: 0 !important;
+    width: min(430px, 100%) !important;
+    white-space: normal !important;
+    text-align: center !important;
+  }
+
+  .maintainVerifiableTraining,
+  .issueDigitalCertificates {
+    width: min(650px, 100%) !important;
+    text-align: center !important;
+  }
+
+  .trainingRecordsImageWrap {
+    width: 100% !important;
+    height: 460px !important;
+    min-height: 460px !important;
+  }
+
+  /* Security timeline remains visible at laptop size. */
+  .securityTimeline {
+    width: 100% !important;
+    padding-left: 110px !important;
+  }
+
+  /* Diverse Organizations — 2 columns. */
+  .diverseOrganizationsGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+}
+
+/* =========================================================
+   TABLET — 768px TO 1023px
+   ========================================================= */
+@media (min-width: 768px) and (max-width: 1023.98px) {
+
+  .complianceSecurity {
+    width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+    overflow-x: hidden !important;
+    overflow-y: visible !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    padding-bottom: 64px !important;
+  }
+
+  .frameDiv,
+  .complianceSecurityInner,
+  .frameParent6,
+  .frameParent13,
+  .frameParent24,
+  .frameParent41,
+  .complianceSecurityInner2,
+  .frameParent68,
+  .frameParent99,
+  .complianceSecurityInner3 {
+    position: relative !important;
+    inset: auto !important;
+    transform: none !important;
+    width: calc(100% - 48px) !important;
+    max-width: 900px !important;
+    height: auto !important;
+    min-height: 0 !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  .frameDiv {
+    margin-top: 24px !important;
+  }
+
+  .complianceSecurityInner {
+    margin-top: 30px !important;
+  }
+
+  .frameParent6,
+  .frameParent13,
+  .frameParent24,
+  .frameParent41,
+  .complianceSecurityInner2 {
+    margin-top: 56px !important;
+  }
+
+  .finalSectionsFlow {
+    position: relative !important;
+    inset: auto !important;
+    width: 100% !important;
+    margin-top: 56px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 56px !important;
+  }
+
+  .finalSectionsFlow > .frameParent68,
+  .finalSectionsFlow > .frameParent99,
+  .finalSectionsFlow > .complianceSecurityInner3 {
+    width: calc(100% - 48px) !important;
+    max-width: 900px !important;
+    margin: 0 auto !important;
+  }
+
+  .frameWrapper,
+  .frameWrapper2,
+  .frameParent4,
+  .frameWrapper19,
+  .frameWrapper20,
+  .frameWrapper21,
+  .frameWrapper22 {
+    height: auto !important;
+  }
+
+  .secureLearningSmarterContainer {
+    width: 100% !important;
+    height: auto !important;
+    font-size: clamp(36px, 5vw, 46px) !important;
+    line-height: 1.2 !important;
+  }
+
+  .secureLearningSmarter,
+  .greaterConfidence {
+    line-height: 1.2 !important;
+  }
+
+  .neurolxpCombinesCompliance {
+    width: 100% !important;
+    height: auto !important;
+    font-size: 21px !important;
+  }
+
+  .frameParent6,
+  .frameParent42,
+  .trainingRecordsInner {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    justify-items: center !important;
+    gap: 40px !important;
+  }
+
+  .frameParent7,
+  .frameParent8,
+  .frameParent9,
+  .frameParent10,
+  .frameWrapper29 {
+    width: 100% !important;
+    max-width: 720px !important;
+    align-items: center !important;
+    text-align: center !important;
+  }
+
+  .structuredTrainingFor,
+  .neurolxpDeliversStructured,
+  .makeMandatoryTrainingContainer,
+  .makeComplianceLearning {
+    text-align: center !important;
+  }
+
+  .frameWrapper4 {
+    width: min(720px, 100%) !important;
+    height: auto !important;
+    aspect-ratio: 743 / 587 !important;
+  }
+
+  /* Smart Compliance 2 + 2 + 1 */
+  .smartComplianceCards {
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 360px)) !important;
+    justify-content: center !important;
+    gap: 22px !important;
+  }
+
+  .smartComplianceCard,
+  .smartComplianceCard:nth-child(4),
+  .smartComplianceCard:nth-child(5),
+  .smartComplianceCard:last-child {
+    grid-column: auto !important;
+    width: 100% !important;
+    max-width: 360px !important;
+    height: auto !important;
+    min-height: 0 !important;
+    aspect-ratio: 400 / 206 !important;
+    justify-self: center !important;
+  }
+
+  .smartComplianceCard:last-child {
+    grid-column: 1 / -1 !important;
+  }
+
+  .smartComplianceCardInner {
+    inset: 4% !important;
+    padding: 16px 22px !important;
+    gap: 16px !important;
+  }
+
+  /* Industry 2 columns, proportional cards */
+  .industrySpecificCompliance {
+    width: 100% !important;
+    height: auto !important;
+  }
+
+  .frameParent26 {
+    width: 100% !important;
+  }
+
+  .frameParent27 {
+    width: 100% !important;
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 22px !important;
+  }
+
+  .frameParent28 {
+    width: 100% !important;
+    max-width: 400px !important;
+    height: auto !important;
+    aspect-ratio: 400 / 306 !important;
+    margin: 0 auto !important;
+  }
+
+  .frameChild15 {
+    width: 100% !important;
+    height: 100% !important;
+  }
+
+  .frameWrapper23,
+  .frameWrapper24 {
+    top: 5.23% !important;
+    left: 4% !important;
+    width: 92% !important;
+    height: 89.54% !important;
+    transform: none !important;
+  }
+
+  .frameParent29 {
+    width: 100% !important;
+    height: 100% !important;
+    gap: 0 !important;
+  }
+
+  .workplaceSafetyWrapper,
+  .dataPrivacyWrapper,
+  .corporateEthicsWrapper,
+  .workplaceConductWrapper,
+  .financialComplianceWrapper,
+  .sustainabilityWrapper {
+    width: 100% !important;
+    height: 43.8% !important;
+    min-height: 0 !important;
+    flex: 0 0 43.8% !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+
+  .workplaceSafety,
+  .corporateEthics,
+  .workplaceConduct,
+  .financialCompliance {
+    position: relative !important;
+    inset: auto !important;
+    transform: none !important;
+    width: 90% !important;
+    height: auto !important;
+    text-align: center !important;
+    font-size: clamp(19px, 2.6vw, 24px) !important;
+    line-height: 1.3 !important;
+  }
+
+  .healthSafetyAnd,
+  .dataProtectionAnd,
+  .codeOfConduct,
+  .antiHarassmentAndWorkplace {
+    width: 86% !important;
+    height: auto !important;
+    margin: auto !important;
+    font-size: clamp(17px, 2.3vw, 22px) !important;
+    line-height: 1.35 !important;
+    white-space: normal !important;
+    text-align: center !important;
+  }
+
+  /* 5 engaging cards — keep existing design, 2 + 2 + 1 */
+  .frameParent45 {
+    width: min(622px, 100%) !important;
+    height: auto !important;
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 286px)) !important;
+    grid-auto-rows: 132px !important;
+    justify-content: center !important;
+    gap: 32px !important;
+  }
+
+  .frameWrapper30,
+  .frameWrapper31,
+  .frameWrapper32,
+  .frameWrapper33,
+  .frameWrapper34 {
+    width: min(286px, 100%) !important;
+    height: 132px !important;
+    justify-self: center !important;
+  }
+
+  /* Real-Time original design — 2 columns */
+  .realTimeMetrics {
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 32px !important;
+  }
+
+  .realTimeMetric,
+  .realTimeMetric:nth-child(4),
+  .realTimeMetric:nth-child(5) {
+    grid-column: auto !important;
+    width: 100% !important;
+    min-height: 96px !important;
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    gap: 20px !important;
+    padding: 0 !important;
+    background: transparent !important;
+    box-shadow: none !important;
+    border-radius: 0 !important;
+  }
+
+  .realTimeMetric:last-child {
+    grid-column: 1 / -1 !important;
+    width: min(50%, 360px) !important;
+    justify-self: center !important;
+  }
+
+  .realTimeMetricTitle {
+    width: auto !important;
+    max-width: none !important;
+    text-align: left !important;
+  }
+
+  /* Certification stack */
+  .trainingRecordsOuter {
+    height: auto !important;
+    padding: 24px !important;
+  }
+
+  .trainingRecordsInner {
+    height: auto !important;
+  }
+
+  .trainingRecordsContent {
+    padding: 48px 36px !important;
+    align-items: center !important;
+    text-align: center !important;
+  }
+
+  .trainingRecordsBadge {
+    min-width: 0 !important;
+    width: min(430px, 100%) !important;
+    white-space: normal !important;
+  }
+
+  .maintainVerifiableTraining,
+  .issueDigitalCertificates {
+    width: min(620px, 100%) !important;
+    text-align: center !important;
+  }
+
+  .trainingRecordsImageWrap {
+    min-height: 420px !important;
+  }
+
+  /* Security timeline */
+  .securityTimeline {
+    padding-left: 96px !important;
+  }
+
+  /* Organizations */
+  .diverseOrganizationsGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+}
+
+/* =========================================================
+   PHONE — BELOW 768px
+   ========================================================= */
+@media (max-width: 767.98px) {
+
+  .complianceSecurity {
+    width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+    overflow-x: hidden !important;
+    overflow-y: visible !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: stretch !important;
+    padding-bottom: 48px !important;
+  }
+
+  .frameDiv,
+  .complianceSecurityInner,
+  .frameParent6,
+  .frameParent13,
+  .frameParent24,
+  .frameParent41,
+  .complianceSecurityInner2,
+  .frameParent68,
+  .frameParent99,
+  .complianceSecurityInner3 {
+    position: relative !important;
+    inset: auto !important;
+    transform: none !important;
+    width: calc(100% - 32px) !important;
+    max-width: none !important;
+    height: auto !important;
+    min-height: 0 !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  .frameDiv {
+    margin-top: 18px !important;
+    overflow-x: auto !important;
+    flex-wrap: nowrap !important;
+    white-space: nowrap !important;
+  }
+
+  .complianceSecurityInner {
+    margin-top: 22px !important;
+  }
+
+  .frameParent6,
+  .frameParent13,
+  .frameParent24,
+  .frameParent41,
+  .complianceSecurityInner2 {
+    margin-top: 44px !important;
+  }
+
+  .finalSectionsFlow {
+    position: relative !important;
+    inset: auto !important;
+    width: 100% !important;
+    margin-top: 44px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 44px !important;
+  }
+
+  .finalSectionsFlow > .frameParent68,
+  .finalSectionsFlow > .frameParent99,
+  .finalSectionsFlow > .complianceSecurityInner3 {
+    width: calc(100% - 32px) !important;
+    margin: 0 auto !important;
+  }
+
+  .frameWrapper,
+  .frameWrapper2,
+  .frameParent4,
+  .frameWrapper19,
+  .frameWrapper20,
+  .frameWrapper21,
+  .frameWrapper22 {
+    width: 100% !important;
+    height: auto !important;
+  }
+
+  .heroBadge,
+  .complianceTrainingBadge,
+  .smartComplianceBadge,
+  .engagingComplianceBadge,
+  .automatedTrackingBadge,
+  .trainingRecordsBadge,
+  .learningSecurityBadge,
+  .neurolxpClosingBadge {
+    min-width: 0 !important;
+    width: fit-content !important;
+    max-width: 100% !important;
+    height: auto !important;
+    min-height: 48px !important;
+    padding: 10px 20px !important;
+    white-space: normal !important;
+    text-align: center !important;
+  }
+
+  .secureLearningSmarterContainer {
+    width: 100% !important;
+    height: auto !important;
+    font-size: clamp(28px, 9vw, 36px) !important;
+    line-height: 1.18 !important;
+  }
+
+  .secureLearningSmarter,
+  .greaterConfidence {
+    line-height: 1.18 !important;
+  }
+
+  .neurolxpCombinesCompliance {
+    width: 100% !important;
+    height: auto !important;
+    font-size: 18px !important;
+    line-height: 1.45 !important;
+  }
+
+  .frameParent5 {
+    width: 100% !important;
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 14px !important;
+  }
+
+  .heroButton,
+  .frameWrapper3 {
+    width: min(320px, 100%) !important;
+    max-width: 320px !important;
+    margin: 0 auto !important;
+  }
+
+  /* Compliance Training */
+  .frameParent6 {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    justify-items: center !important;
+    gap: 28px !important;
+  }
+
+  .frameParent7,
+  .frameParent8,
+  .frameParent9,
+  .frameParent10 {
+    width: 100% !important;
+    max-width: 100% !important;
+    align-items: center !important;
+    text-align: center !important;
+  }
+
+  .structuredTrainingFor,
+  .neurolxpDeliversStructured {
+    text-align: center !important;
+  }
+
+  .structuredTrainingFor {
+    font-size: clamp(27px, 8vw, 34px) !important;
+  }
+
+  .neurolxpDeliversStructured {
+    font-size: 18px !important;
+  }
+
+  .frameParent11 {
+    grid-template-columns: 1fr !important;
+    gap: 14px !important;
+  }
+
+  .frameWrapper4 {
+    width: 100% !important;
+    height: auto !important;
+    aspect-ratio: 743 / 587 !important;
+  }
+
+  /* Smart Compliance:
+     EXACT SAME desktop proportion, simply scaled down. */
+  .smartComplianceCards {
+    width: 100% !important;
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    justify-items: center !important;
+    gap: 20px !important;
+  }
+
+  .smartComplianceCard,
+  .smartComplianceCard:nth-child(4),
+  .smartComplianceCard:nth-child(5),
+  .smartComplianceCard:last-child {
+    grid-column: auto !important;
+    width: min(400px, 100%) !important;
+    max-width: 400px !important;
+    height: auto !important;
+    min-height: 0 !important;
+    aspect-ratio: 400 / 206 !important;
+    justify-self: center !important;
+  }
+
+  .smartComplianceCardInner {
+    inset: 4% !important;
+    padding: 10px 18px !important;
+    gap: clamp(8px, 3vw, 16px) !important;
+  }
+
+  .smartComplianceIconShadow {
+    width: clamp(56px, 19vw, 74px) !important;
+    height: clamp(56px, 19vw, 74px) !important;
+  }
+
+  .smartComplianceIconCircle {
+    width: clamp(42px, 14vw, 54px) !important;
+    height: clamp(42px, 14vw, 54px) !important;
+  }
+
+  .smartComplianceIcon {
+    width: clamp(22px, 7vw, 28px) !important;
+    height: clamp(22px, 7vw, 28px) !important;
+  }
+
+  .smartComplianceCardTitle {
+    width: 88% !important;
+    font-size: clamp(17px, 5.5vw, 22px) !important;
+    line-height: 1.25 !important;
+  }
+
+  /* Industry cards:
+     one column, desktop geometry scales proportionally. */
+  .industrySpecificCompliance {
+    width: 100% !important;
+    height: auto !important;
+    font-size: clamp(26px, 8vw, 34px) !important;
+    line-height: 1.25 !important;
+  }
+
+  .frameParent26,
+  .frameParent27 {
+    width: 100% !important;
+  }
+
+  .frameParent27 {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    justify-items: center !important;
+    gap: 20px !important;
+  }
+
+  .frameParent28 {
+    width: min(400px, 100%) !important;
+    height: auto !important;
+    aspect-ratio: 400 / 306 !important;
+    margin: 0 auto !important;
+  }
+
+  .frameChild15 {
+    width: 100% !important;
+    height: 100% !important;
+  }
+
+  .frameWrapper23,
+  .frameWrapper24 {
+    top: 5.23% !important;
+    left: 4% !important;
+    width: 92% !important;
+    height: 89.54% !important;
+    transform: none !important;
+  }
+
+  .frameParent29 {
+    width: 100% !important;
+    height: 100% !important;
+    gap: 0 !important;
+  }
+
+  .workplaceSafetyWrapper,
+  .dataPrivacyWrapper,
+  .corporateEthicsWrapper,
+  .workplaceConductWrapper,
+  .financialComplianceWrapper,
+  .sustainabilityWrapper {
+    width: 100% !important;
+    height: 43.8% !important;
+    min-height: 0 !important;
+    flex: 0 0 43.8% !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+
+  .workplaceSafety,
+  .corporateEthics,
+  .workplaceConduct,
+  .financialCompliance {
+    position: relative !important;
+    inset: auto !important;
+    transform: none !important;
+    width: 90% !important;
+    height: auto !important;
+    text-align: center !important;
+    font-size: clamp(18px, 6.2vw, 24px) !important;
+    line-height: 1.3 !important;
+  }
+
+  .healthSafetyAnd,
+  .dataProtectionAnd,
+  .codeOfConduct,
+  .antiHarassmentAndWorkplace {
+    width: 86% !important;
+    height: auto !important;
+    margin: auto !important;
+    font-size: clamp(16px, 5vw, 21px) !important;
+    line-height: 1.3 !important;
+    white-space: normal !important;
+    text-align: center !important;
+  }
+
+  /* Engaging cards:
+     one clean column; animation remains on the same card elements. */
+  .frameParent41 {
+    gap: 40px !important;
+  }
+
+  .frameParent42 {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 32px !important;
+  }
+
+  .frameWrapper29 {
+    width: 100% !important;
+    align-items: center !important;
+    text-align: center !important;
+  }
+
+  .makeMandatoryTrainingContainer,
+  .makeComplianceLearning {
+    width: 100% !important;
+    text-align: center !important;
+  }
+
+  .frameParent45 {
+    width: 100% !important;
+    height: auto !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 20px !important;
+  }
+
+  .frameParent45 > .frameParent46,
+  .frameParent45 > .frameParent47,
+  .frameParent46 > .frameParent47 {
+    display: contents !important;
+  }
+
+  .frameWrapper30,
+  .frameWrapper31,
+  .frameWrapper32,
+  .frameWrapper33,
+  .frameWrapper34 {
+    width: min(286px, 100%) !important;
+    height: 132px !important;
+    flex: 0 0 132px !important;
+  }
+
+  .frameParent48,
+  .frameParent49 {
+    position: static !important;
+    width: 100% !important;
+    height: 100% !important;
+    padding: 14px !important;
+    gap: 14px !important;
+  }
+
+  .mandatoryIconBox {
+    width: 70px !important;
+    height: 70px !important;
+    flex: 0 0 70px !important;
+  }
+
+  .mandatoryIcon {
+    width: 32px !important;
+    height: 32px !important;
+  }
+
+  .scenarioBasedLearning {
+    width: auto !important;
+    min-width: 0 !important;
+    max-width: 170px !important;
+    font-size: 18px !important;
+    line-height: 1.3 !important;
+  }
+
+  /* Real-Time Visibility ORIGINAL structure, one column. */
+  .frameParent54,
+  .realTimeHeader,
+  .realTimeMetrics {
+    width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+  }
+
+  .realTimeVisibilityTitle {
+    font-size: clamp(28px, 8vw, 36px) !important;
+  }
+
+  .realTimeVisibilityText {
+    font-size: 18px !important;
+  }
+
+  .realTimeMetrics {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 24px !important;
+  }
+
+  .realTimeMetric,
+  .realTimeMetric:nth-child(4),
+  .realTimeMetric:nth-child(5),
+  .realTimeMetric:last-child {
+    grid-column: auto !important;
+    width: min(360px, 100%) !important;
+    min-height: 82px !important;
+    margin: 0 auto !important;
+    padding: 0 !important;
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+    gap: 18px !important;
+    background: transparent !important;
+    box-shadow: none !important;
+    border-radius: 0 !important;
+    overflow: visible !important;
+  }
+
+  .realTimeIconShadow {
+    width: 72px !important;
+    height: 72px !important;
+    flex: 0 0 72px !important;
+  }
+
+  .realTimeIconCircle {
+    width: 52px !important;
+    height: 52px !important;
+  }
+
+  .realTimeMetricTitle {
+    width: auto !important;
+    max-width: none !important;
+    font-size: 19px !important;
+    text-align: left !important;
+  }
+
+  /* Certification / Audit */
+  .trainingRecordsOuter {
+    width: 100% !important;
+    height: auto !important;
+    padding: 16px !important;
+  }
+
+  .trainingRecordsInner {
+    width: 100% !important;
+    height: auto !important;
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+  }
+
+  .trainingRecordsContent {
+    width: 100% !important;
+    padding: 36px 20px !important;
+    align-items: center !important;
+    text-align: center !important;
+  }
+
+  .trainingRecordsBadge {
+    width: min(430px, 100%) !important;
+  }
+
+  .maintainVerifiableTraining {
+    width: 100% !important;
+    font-size: clamp(28px, 8vw, 36px) !important;
+    text-align: center !important;
+  }
+
+  .issueDigitalCertificates {
+    width: 100% !important;
+    font-size: clamp(19px, 5.5vw, 24px) !important;
+    text-align: center !important;
+  }
+
+  .trainingRecordsImageWrap {
+    width: 100% !important;
+    min-height: 300px !important;
+  }
+
+  /* Learning Security:
+     remove rail only on phone; cards remain unchanged. */
+  .learningSecurityHeader {
+    width: 100% !important;
+  }
+
+  .learningSecurityTitle {
+    font-size: clamp(28px, 8vw, 36px) !important;
+  }
+
+  .learningSecurityIntro {
+    font-size: 18px !important;
+  }
+
+  .securityTimeline {
+    width: 100% !important;
+    padding-left: 0 !important;
+    gap: 28px !important;
+  }
+
+  .securityTimelineRail {
+    display: none !important;
+  }
+
+  .securityFeature {
+    width: 100% !important;
+  }
+
+  .securityTimelineIcon {
+    position: relative !important;
+    inset: auto !important;
+    margin: 0 auto 14px !important;
+  }
+
+  .securityFeatureCard {
+    width: 100% !important;
+    padding: 24px 18px !important;
+  }
+
+  .securityFeatureTitle {
+    font-size: 23px !important;
+  }
+
+  .securityFeatureText {
+    font-size: 17px !important;
+  }
+
+  .securityRoles {
+    font-size: 19px !important;
+  }
+
+  .securityFeatureList {
+    padding: 20px 16px !important;
+    gap: 18px !important;
+  }
+
+  .securityFeatureItem {
+    gap: 14px !important;
+    font-size: 17px !important;
+  }
+
+  /* Organizations */
+  .diverseOrganizationsGrid {
+    grid-template-columns: 1fr !important;
+    gap: 20px !important;
+  }
+
+  .diverseOrganizationCard {
+    width: 100% !important;
+    height: 200px !important;
+  }
+
+  .diverseOrganizationsTitle {
+    font-size: clamp(28px, 8vw, 36px) !important;
+  }
+
+  .diverseOrganizationsText {
+    font-size: 18px !important;
+  }
+
+  /* Closing */
+  .neurolxpClosingTitle {
+    font-size: clamp(32px, 9vw, 48px) !important;
+  }
+
+  .neurolxpClosingText {
+    width: 100% !important;
+    font-size: 20px !important;
+  }
+}
+
+/* =========================================================
+   SMALL PHONE — BELOW 420px
+   Only typography/gutters are tightened.
+   Component shapes remain the same.
+   ========================================================= */
+@media (max-width: 419.98px) {
+
+  .frameDiv,
+  .complianceSecurityInner,
+  .frameParent6,
+  .frameParent13,
+  .frameParent24,
+  .frameParent41,
+  .complianceSecurityInner2,
+  .finalSectionsFlow > .frameParent68,
+  .finalSectionsFlow > .frameParent99,
+  .finalSectionsFlow > .complianceSecurityInner3 {
+    width: calc(100% - 24px) !important;
+  }
+
+  .smartComplianceCardTitle {
+    font-size: 17px !important;
+  }
+
+  .industrySpecificCompliance {
+    font-size: 24px !important;
+  }
+
+  .workplaceSafety,
+  .corporateEthics,
+  .workplaceConduct,
+  .financialCompliance {
+    font-size: 19px !important;
+  }
+
+  .healthSafetyAnd,
+  .dataProtectionAnd,
+  .codeOfConduct,
+  .antiHarassmentAndWorkplace {
+    font-size: 16px !important;
+  }
+}
+
+/* =========================================================
+   FINAL 100% VIEW FIT + SECTION SPACING CORRECTION
+   ---------------------------------------------------------
+   Keep this block LAST.
+
+   Purpose:
+   - 1440px+ keeps the existing desktop design.
+   - 1200px–1439px keeps the SAME desktop composition but
+     allows fixed images/cards to shrink within the viewport.
+   - Existing tablet/phone layouts remain unchanged.
+   - Only excessive vertical section gaps are reduced.
+   ========================================================= */
+
+/* Global image safety — images can never exceed their container. */
+.complianceSecurity img {
+  max-width: 100% !important;
+}
+
+/* =========================================================
+   FLUID DESKTOP / LAPTOP — 1200px TO 1439px
+   ========================================================= */
+@media (min-width: 1200px) and (max-width: 1439.98px) {
+
+  html,
+  body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden !important;
+  }
+
+  .complianceSecurity {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+    height: auto !important;
+    min-height: 0 !important;
+    overflow-x: hidden !important;
+    overflow-y: visible !important;
+    padding-bottom: 64px !important;
+  }
+
+  /* Main section widths always stay inside viewport. */
+  .frameParent6,
+  .frameParent13,
+  .frameParent24,
+  .frameParent41,
+  .complianceSecurityInner2 {
+    width: calc(100% - 64px) !important;
+    max-width: 1280px !important;
+    box-sizing: border-box !important;
+  }
+
+  /* -------------------------------------------------------
+     COMPLIANCE TRAINING
+     Same left/right design, fluid columns.
+     ------------------------------------------------------- */
+  .frameParent6 {
+    grid-template-columns:
+      minmax(360px, 470px)
+      minmax(0, 1fr) !important;
+
+    gap: clamp(36px, 4vw, 67px) !important;
+  }
+
+  .frameParent7 {
+    width: 100% !important;
+    max-width: 470px !important;
+    min-width: 0 !important;
+  }
+
+  .frameWrapper4 {
+    width: 100% !important;
+    max-width: 743px !important;
+    height: auto !important;
+    aspect-ratio: 743 / 587 !important;
+    min-width: 0 !important;
+  }
+
+  .frameChild8 {
+    max-width: calc(100% - 32px) !important;
+  }
+
+  /* -------------------------------------------------------
+     SMART COMPLIANCE
+     Preserve desktop 3 + 2 arrangement but fit viewport.
+     ------------------------------------------------------- */
+  .smartComplianceCards {
+    width: 100% !important;
+    grid-template-columns: repeat(6, minmax(0, 1fr)) !important;
+    gap: clamp(16px, 1.7vw, 24px) !important;
+  }
+
+  .smartComplianceCard {
+    width: 100% !important;
+    min-width: 0 !important;
+    height: auto !important;
+    min-height: 0 !important;
+    aspect-ratio: 400 / 206 !important;
+  }
+
+  /* -------------------------------------------------------
+     INDUSTRY-SPECIFIC COMPLIANCE
+     Keep 3 cards per row and exact desktop proportions.
+     ------------------------------------------------------- */
+  .frameParent26 {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .frameParent27 {
+    width: 100% !important;
+    display: grid !important;
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+    gap: clamp(18px, 2.4vw, 36px) !important;
+    align-items: start !important;
+  }
+
+  .frameParent28 {
+    width: 100% !important;
+    max-width: 400px !important;
+    height: auto !important;
+    aspect-ratio: 400 / 306 !important;
+    margin: 0 auto !important;
+  }
+
+  .frameChild15 {
+    width: 100% !important;
+    height: 100% !important;
+  }
+
+  .frameWrapper23,
+  .frameWrapper24 {
+    top: 5.23% !important;
+    left: 4% !important;
+    width: 92% !important;
+    height: 89.54% !important;
+    transform: none !important;
+  }
+
+  .frameParent29 {
+    width: 100% !important;
+    height: 100% !important;
+  }
+
+  .workplaceSafetyWrapper,
+  .dataPrivacyWrapper,
+  .corporateEthicsWrapper,
+  .workplaceConductWrapper,
+  .financialComplianceWrapper,
+  .sustainabilityWrapper {
+    width: 100% !important;
+    height: 43.8% !important;
+    min-height: 0 !important;
+    flex: 0 0 43.8% !important;
+  }
+
+  .workplaceSafety,
+  .corporateEthics,
+  .workplaceConduct,
+  .financialCompliance {
+    left: 50% !important;
+    width: 90% !important;
+    transform: translateX(-50%) !important;
+    text-align: center !important;
+  }
+
+  .healthSafetyAnd,
+  .dataProtectionAnd,
+  .codeOfConduct,
+  .antiHarassmentAndWorkplace {
+    width: 86% !important;
+    max-width: none !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    white-space: normal !important;
+    text-align: center !important;
+  }
+
+  /* -------------------------------------------------------
+     ENGAGING COMPLIANCE
+     Same 2-column desktop composition, fluid right side.
+     ------------------------------------------------------- */
+  .frameParent42 {
+    grid-template-columns:
+      minmax(360px, 470px)
+      minmax(520px, 622px) !important;
+
+    column-gap: clamp(36px, 5vw, 80px) !important;
+  }
+
+  .frameWrapper29 {
+    width: 100% !important;
+    max-width: 470px !important;
+  }
+
+  .frameParent45 {
+    width: 100% !important;
+    max-width: 622px !important;
+  }
+
+  /* -------------------------------------------------------
+     REAL-TIME VISIBILITY
+     Keep original icon + text design.
+     ------------------------------------------------------- */
+  .frameParent54,
+  .realTimeHeader,
+  .realTimeMetrics {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .realTimeMetrics {
+    grid-template-columns: repeat(6, minmax(0, 1fr)) !important;
+    column-gap: clamp(18px, 2.2vw, 30px) !important;
+  }
+
+  .realTimeMetric {
+    min-width: 0 !important;
+  }
+
+  .realTimeMetricTitle {
+    min-width: 0 !important;
+    white-space: normal !important;
+  }
+
+  /* -------------------------------------------------------
+     CERTIFICATION / AUDIT IMAGE
+     Keep two-column desktop design; prevent image overflow.
+     ------------------------------------------------------- */
+  .trainingRecordsOuter,
+  .trainingRecordsInner {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .trainingRecordsInner {
+    grid-template-columns:
+      minmax(0, 1fr)
+      minmax(0, 1.05fr) !important;
+  }
+
+  .trainingRecordsContent {
+    min-width: 0 !important;
+    padding:
+      clamp(48px, 5vw, 80px)
+      clamp(36px, 4vw, 64px) !important;
+  }
+
+  .trainingRecordsImageWrap {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+    overflow: hidden !important;
+  }
+
+  .rectangleIcon {
+    position: absolute !important;
+    inset: 0 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+  }
+
+  /* -------------------------------------------------------
+     LEARNING SECURITY + FINAL SECTIONS
+     ------------------------------------------------------- */
+  .finalSectionsFlow > .frameParent68,
+  .finalSectionsFlow > .frameParent99,
+  .finalSectionsFlow > .complianceSecurityInner3 {
+    width: calc(100% - 64px) !important;
+    max-width: 1280px !important;
+  }
+
+  .securityFeatureCard,
+  .securityFeatureList,
+  .diverseOrganizationsGrid {
+    max-width: 100% !important;
+  }
+}
+
+/* =========================================================
+   REDUCE EXCESSIVE SECTION TOP/BOTTOM SPACE
+   Layout/design inside each section is unchanged.
+   ========================================================= */
+
+/* Laptop / landscape tablet */
+@media (min-width: 1024px) and (max-width: 1199.98px) {
+  .frameParent6,
+  .frameParent13,
+  .frameParent24,
+  .frameParent41,
+  .complianceSecurityInner2 {
+    margin-top: 52px !important;
+  }
+
+  .finalSectionsFlow {
+    margin-top: 52px !important;
+    gap: 52px !important;
+  }
+
+  .complianceSecurity {
+    padding-bottom: 52px !important;
+  }
+}
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 1023.98px) {
+  .frameParent6,
+  .frameParent13,
+  .frameParent24,
+  .frameParent41,
+  .complianceSecurityInner2 {
+    margin-top: 44px !important;
+  }
+
+  .finalSectionsFlow {
+    margin-top: 44px !important;
+    gap: 44px !important;
+  }
+
+  .complianceSecurity {
+    padding-bottom: 48px !important;
+  }
+}
+
+/* Phone */
+@media (max-width: 767.98px) {
+  .frameParent6,
+  .frameParent13,
+  .frameParent24,
+  .frameParent41,
+  .complianceSecurityInner2 {
+    margin-top: 34px !important;
+  }
+
+  .finalSectionsFlow {
+    margin-top: 34px !important;
+    gap: 34px !important;
+  }
+
+  .complianceSecurity {
+    padding-bottom: 36px !important;
+  }
+
+  /* Mobile images always remain inside the content gutter. */
+  .frameWrapper4,
+  .trainingRecordsImageWrap,
+  .rectangleIcon,
+  .frameChild8 {
+    max-width: 100% !important;
+  }
+}
+
+/* =========================================================
+   SPACING / PADDING ONLY
+   ---------------------------------------------------------
+   Do NOT move absolute-positioned sections.
+   Reduce only the visual empty space before Compliance Training.
+   ========================================================= */
+@media (min-width: 1200px) and (max-width: 1439.98px) {
+  .frameParent6 {
+    margin-top: -42px;
+  }
+}
+

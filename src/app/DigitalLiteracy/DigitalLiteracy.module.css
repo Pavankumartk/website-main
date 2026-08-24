@@ -1,27 +1,13 @@
-/* =========================================================
-   DIGITAL LITERACY — FULL PAGE BACKGROUND FIX ONLY
-   Keeps the same existing design/background colour visible
-   immediately on first render and after navigation.
-   ========================================================= */
-
-:global(html),
-:global(body) {
-  background: #dfe6e9 !important;
-  min-height: 100%;
-}
-
-:global(body) {
-  margin: 0;
-}
-
-:global(#main-content) {
+.dl-page {
   width: 100%;
   min-height: 100vh;
-  background: #dfe6e9 !important;
+  background: #dfe6e9;
+  overflow-x: hidden;
 }
 
-::before, *::after {
-  font-family: "Segoe UI" !important;
+.dl-page,
+.dl-page section {
+  box-sizing: border-box;
 }
 
 .dl-breadcrumb {
@@ -36,7 +22,7 @@
 }
 
 .dl-breadcrumb-label {
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
@@ -48,7 +34,7 @@
   display: flex;
   align-items: center;
   gap: 8px;
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 24px;
@@ -106,7 +92,7 @@
     inset -4px -4px 8px #ffffff,
     inset 4px 4px 8px rgba(196, 196, 196, 0.8);
   border-radius: 28px;
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", sans-serif;
   font-weight: 600;
   font-size: 20px;
   letter-spacing: 0.03em;
@@ -125,7 +111,7 @@
 
 .dl-hero-heading {
   margin: 0;
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", sans-serif;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.25;
@@ -141,7 +127,7 @@
 
 .dl-hero-subtext {
   margin: 0;
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", sans-serif;
   font-weight: 400;
   font-size: 24px;
   line-height: 1.43;
@@ -162,7 +148,7 @@
   cursor: pointer;
   border-radius: 8px;
   padding: 16px 32px;
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", sans-serif;
   font-weight: 600;
   font-size: 22px;
   letter-spacing: 0.02em;
@@ -264,7 +250,7 @@
   display: inline-flex;
   align-items: center;
   gap: 4px;
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", sans-serif;
   font-weight: 700;
   font-size: 32px;
   letter-spacing: 0.02em;
@@ -286,7 +272,7 @@
 }
 
 .dl-hero-stat-label {
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", sans-serif;
   font-weight: 600;
   font-size: 18px;
   letter-spacing: 0.02em;
@@ -392,7 +378,7 @@
 
 .dl-section-heading {
   margin: 0;
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", sans-serif;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.25;
@@ -500,7 +486,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", sans-serif;
   font-weight: 700;
   font-size: 54px;
   color: #2f3547;
@@ -526,7 +512,7 @@
 
 .dl-adv-card-title {
   margin: 96px 0 0;
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", sans-serif;
   font-weight: 700;
   font-size: 20px;
   letter-spacing: 0.03em;
@@ -535,7 +521,7 @@
 
 .dl-adv-card-desc {
   margin: 12px 0 0;
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 1.5;
@@ -579,7 +565,7 @@
 .dl-pill-label-text {
   position: relative;
   z-index: 1;
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", sans-serif;
   font-weight: 700;
   font-size: clamp(28px, 4vw, 64px);
   line-height: 1.25;
@@ -600,7 +586,7 @@
     inset -4px -4px 8px #ffffff,
     inset 4px 4px 8px rgba(196, 196, 196, 0.8);
   border-radius: 32px;
-  height: 95vh;
+  min-height: 95vh;
 }
 
 .dl-accelerate {
@@ -754,7 +740,7 @@
 }
 
 .dl-check-pill-text {
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", sans-serif;
   font-weight: 600;
   font-size: 20px;
   color: #2f3547;
@@ -858,13 +844,13 @@
 }
 
 .dl-analytics-card-value {
-  font-family: "Segoe UI";
+  font-family: "Inter", sans-serif;
   font-weight: 700;
   font-size: 32px;
 }
 
 .dl-analytics-card-label {
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", sans-serif;
   font-weight: 700;
   font-size: 20px;
   letter-spacing: 0.03em;
@@ -872,7 +858,7 @@
 }
 
 .dl-analytics-card-desc {
-  font-family: "Segoe UI";
+  font-family: "Inter", sans-serif;
   font-weight: 400;
   font-size: 16px;
   color: #31344b;
@@ -955,7 +941,7 @@
     inset -4px -4px 8px #ffffff,
     inset 4px 4px 8px rgba(196, 196, 196, 0.8);
   border-radius: 28px 0 0 28px;
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", sans-serif;
   font-weight: 700;
   font-size: 44px;
   margin-bottom: 24px;
@@ -973,7 +959,7 @@
 
 .dl-step-card-title {
   margin: 0 0 12px;
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", sans-serif;
   font-weight: 700;
   font-size: 28px;
   color: #31344b;
@@ -981,7 +967,7 @@
 
 .dl-step-card-desc {
   margin: 0;
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", sans-serif;
   font-size: 20px;
   line-height: 1.5;
   color: #000;
@@ -1016,7 +1002,7 @@
   display: flex;
   align-items: center;
   gap: 16px;
-  font-family: "Segoe UI";
+  font-family: "Inter", sans-serif;
   font-weight: 600;
   font-size: 20px;
   color: #2f3547;
@@ -1109,7 +1095,7 @@
   z-index: 2;
   display: inline-block;
   margin: 0 0 14px;
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", sans-serif;
   font-weight: 700;
   font-size: 28px;
   letter-spacing: 0.03em;
@@ -1135,7 +1121,7 @@
   position: relative;
   z-index: 2;
   margin: 0;
-  font-family: "Segoe UI";
+  font-family: "Inter", sans-serif;
   font-size: 20px;
   color: #31344b;
 }
@@ -1167,7 +1153,7 @@
 .dl-cta-heading {
   margin: 0;
   max-width: 900px;
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", sans-serif;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.15;
@@ -1178,7 +1164,7 @@
 .dl-cta-subtext {
   margin: 0;
   max-width: 960px;
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", sans-serif;
   font-size: 24px;
   line-height: 1.43;
   letter-spacing: 0.03em;
@@ -1194,6 +1180,24 @@
 @media (max-width: 1280px) {
   .dl-hero-card {
     padding: 40px 32px;
+  }
+
+   .dl-accelerate-section {
+    margin: 0 12px;
+  }
+
+  .dl-advantage-section {
+    margin: 0 12px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .dl-hero-image-frame {
+    z-index: auto;
+  }
+
+  .dl-hero-stats {
+    bottom: -70px;
   }
 }
 
@@ -1219,16 +1223,20 @@
     max-width: 360px;
   }
 
-  .dl-adv-card {
-  width: 300px;
-  height: 300px;
-}
+  .dl-analytics-grid {
+    width: 90%;
+  }
 
-.dl-advantage-grid {
-  grid-template-columns: repeat(2, 300px);
-  justify-content: center;
-  margin: 0 auto;
-}
+  .dl-adv-card {
+    width: 300px;
+    height: 300px;
+  }
+
+  .dl-advantage-grid {
+    grid-template-columns: repeat(2, 300px);
+    justify-content: center;
+    margin: 0 auto;
+  }
 
   .dl-check-pill-outer {
     width: auto;
@@ -1302,6 +1310,11 @@
   .dl-accelerate-section {
     height: 100%;
     padding: 0 16px;
+  }
+}
+@media (min-width: 768px) {
+  .dl-hero-stats {
+    justify-self: center;
   }
 }
 
@@ -1383,20 +1396,29 @@
     height: 260px;
   }
 
+  .dl-adv-card-title {
+    font-size: 26px;
+  }
+
+  .dl-adv-card-desc {
+    font-size: 18px;
+  }
+
   .dl-advantage-grid {
-    grid-template-columns: repeat(2, 260px);
+    grid-template-columns: repeat(1, 260px);
     justify-content: center;
     margin: 0 auto;
+    gap: 80px;
   }
 
   .dl-advantage-section {
     grid-template-columns: 1fr;
-    padding: 0px 16px 32px;
+    padding: 0px 16px 48px;
   }
 
   .dl-howitworks-section,
   .dl-analytics-section {
-    padding: 31px 16px;
+    padding: 0 16px 48px;
   }
 
   .dl-bullet-list {
@@ -1408,18 +1430,20 @@
   }
 
   .dl-analytics-grid {
-    padding-left: 50px;
+    grid-template-columns: 1fr;
+    width: 70%;
   }
 }
 
 @media (max-width: 480px) {
   .dl-hero-heading {
     font-size: 24px;
-    width: 320px;
+    width: 100%;
+    max-width: 320px;
   }
 
   .dl-hero-section {
-    padding: 24px 12px;
+    padding: 0 12px 48px;
   }
 
   .dl-hero-card {
@@ -1433,13 +1457,14 @@
   }
 
   .dl-adv-card-badge {
-    width: 90;
-    height: 90;
+    width: 90px;
+    height: 90px;
     font-size: 34px;
   }
 
   .dl-hero-content {
-    width: 306px;
+    width: 100%;
+    max-width: 306px;
   }
 
   .dl-hero-buttons {
@@ -1449,7 +1474,7 @@
   }
 
   .dl-breadcrumb {
-    padding: 20px 16px 0;
+    padding: 20px 16px 48px;
   }
 
   .dl-hero-button {
@@ -1462,7 +1487,7 @@
   }
 
   .dl-skill-banner-section {
-    padding: 16px;
+    padding: 0 16px 48px;
   }
 
   .dl-hero-stats-bg {
@@ -1479,7 +1504,8 @@
 
   .dl-section-heading {
     font-size: 24px;
-    width: 324px;
+    width: 100%;
+    max-width: 324px;
   }
 
   .dl-adv-card {
@@ -1496,7 +1522,8 @@
   }
 
   .dl-hero-subtext {
-    width: 312px;
+    width: 100%;
+    max-width: 312px;
     padding: 0 6px;
     font-size: 16px;
   }
@@ -1520,7 +1547,15 @@
   }
 
   .dl-why-section {
-    padding: 32px 16px;
+    padding: 0 16px 48px;
+  }
+
+  .dl-transform-icons {
+    padding: 0 16px 48px;
+  }
+
+  .dl-cta-section {
+    padding-top: 0;
   }
 
   .dl-cta-heading {
@@ -1542,7 +1577,7 @@
   .dl-accelerate-section {
     height: 100%;
     margin: 0 16px;
-    padding: 16px;
+    padding: 0 16px 48px;
   }
 
   .dl-callout-title {
@@ -1579,7 +1614,7 @@
 
   .dl-analytics-grid {
     grid-template-columns: 1fr;
-    padding-left: 50px;
+    width: 80%;
   }
 
   .dl-accelerate {

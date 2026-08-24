@@ -1,9 +1,9 @@
 "use client";
 
 import Image from "next/image";
+import styles from "./DigitalLiteracy.module.css";
 import Header from "../../components/Header/header";
 import Footer from "../../components/Footer/footer";
-import styles from "./DigitalLiteracy.module.css";
 import TalkToExpertButton from "@/components/TalkToOurExpert/TalkToExpertButton";
 import { BookDemoTrigger } from "../../components/Bookademo/Bookademo";
 
@@ -504,21 +504,21 @@ export default function DigitalLiteracyPage() {
     <>
       <Header />
 
-      <main id="main-content">
-        <DigitalLiteracyBreadcrumb />
-        <DigitalLiteracyHero />
-        <DigitalLiteracySkillBanner />
-        <DigitalLiteracyAdvantage />
-        <DigitalLiteracyTransformIcons />
-        <DigitalLiteracyAccelerate />
-        <DigitalLiteracyAnalytics />
-        <DigitalLiteracyHowItWorks />
-        <DigitalLiteracyWhyNeuroLXP />
-        <DigitalLiteracyCTA />
-         <TalkToExpertButton />
-      </main>
+      <main id="main-content" className={styles["dl-page"]}>
+      <DigitalLiteracyBreadcrumb />
+      <DigitalLiteracyHero />
+      <DigitalLiteracySkillBanner />
+      <DigitalLiteracyAdvantage />
+      <DigitalLiteracyTransformIcons />
+      <DigitalLiteracyAccelerate />
+      <DigitalLiteracyAnalytics />
+      <DigitalLiteracyHowItWorks />
+      <DigitalLiteracyWhyNeuroLXP />
+      <DigitalLiteracyCTA />
+      <TalkToExpertButton />
+    </main>
 
-      <Footer />
+    <Footer />
     </>
   );
 }

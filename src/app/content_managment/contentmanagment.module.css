@@ -1,0 +1,8471 @@
+.contentIntelligenceManagem {
+  width: 100%;
+  height: 6100px;
+  position: relative;
+  background-color: #dfe6e9;
+  overflow: hidden;
+  text-align: center;
+  font-size: 48px;
+  color: #31344b;
+  font-family: "Segoe UI";
+  max-width: 1440px; 
+	margin: 0 auto;
+    zoom: 0.89;
+}
+.frameParent {
+  position: absolute;
+  top: -28px;
+  left: 0px;
+  width: 1444px;
+  height: 647px;
+  flex-shrink: 0;
+}
+.frameChild {
+  top: 0px;
+  left: 0px;
+  width: 1444px;
+  height: 647px;
+}
+.frameGroup {
+  position: absolute;
+  top: 158px;
+  left: calc(50% - 510px);
+  width: 1017px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+}
+.frameContainer {
+  width: 1123px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  flex-shrink: 0;
+}
+.frameItem {
+  width: 283.6px;
+  height: 50.2px;
+  position: relative;
+  border-radius: 28px;
+  object-fit: contain;
+}
+.onePlatformManyFormatSmaParent {
+  align-self: stretch;
+  height: 178px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+}
+.onePlatformMany {
+  align-self: stretch;
+  height: 63px;
+  position: relative;
+  letter-spacing: 0.03em;
+  font-size: 40px;
+  line-height: 60px;
+  display: inline-block;
+  text-shadow:
+    -4px -4px 8px #ffffff,
+    4px 4px 8px rgba(196, 196, 196, 0.8);
+  flex-shrink: 0;
+}
+.bringContentTogether {
+  width: 1052px;
+  position: relative;
+  font-size: 28px;
+  letter-spacing: 0.03em;
+  line-height: 40px;
+  color: #2f3547;
+  display: inline-block;
+}
+.frameWrapper {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+.frameInner {
+  height: 60.2px;
+  width: 100%;
+  position: relative;
+  box-shadow:
+    -4px -4px 8px #fff,
+    4px 4px 8px rgba(196, 196, 196, 0.8);
+  border-radius: 8px;
+  object-fit: contain;
+}
+.frameDiv {
+  position: absolute;
+  top: 0px;
+  left: calc(50% - 720px);
+  box-shadow:
+    -8px -8px 16px #fff,
+    8px 8px 16px #c6c6c9;
+  background-color: #dfe6e9;
+  width: 1440px;
+  height: 80px;
+  overflow: hidden;
+  flex-shrink: 0;
+  text-align: left;
+  font-size: 16px;
+  font-family: Inter;
+}
+.frameChild2 {
+  position: absolute;
+  top: calc(50% - 22px);
+  left: 1096px;
+  width: 132px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+.frameParent2 {
+  position: absolute;
+  top: 18px;
+  left: 32px;
+  width: 1376px;
+  height: 45px;
+  flex-shrink: 0;
+}
+.logo01SynapseSpark1Parent {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  display: flex;
+  align-items: center;
+  gap: 130px;
+}
+.logo01SynapseSpark1Icon {
+  height: 45px;
+  width: 120px;
+  position: relative;
+  object-fit: cover;
+}
+.frameParent3 {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.homeParent {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.home {
+  position: relative;
+  line-height: 24px;
+  font-weight: 600;
+}
+.arrowDown01Icon {
+  height: 16px;
+  width: 16px;
+  position: relative;
+}
+.featuresParent {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #2d4cc8;
+}
+.features {
+  position: relative;
+  line-height: 24px;
+}
+.signInHelpWrapper {
+  position: absolute;
+  top: calc(50% - 22.5px);
+  left: 1244px;
+  box-shadow:
+    -8px -8px 16px #fff,
+    8px 8px 16px #c6c6c9;
+  border-radius: 32px;
+  background-color: #dfe6e9;
+  width: 132px;
+  height: 44px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px 32px;
+  box-sizing: border-box;
+  text-align: center;
+  color: #2d4cc8;
+  font-family: "Segoe UI";
+}
+.signInHelp {
+  width: 97px;
+  position: relative;
+  letter-spacing: 0.02em;
+  line-height: 28px;
+  font-weight: 600;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.rectangleIcon {
+  position: absolute;
+  top: 6px;
+  left: 11px;
+  width: 1429px;
+  height: 592.4px;
+  flex-shrink: 0;
+}
+.frameParent4 {
+  position: absolute;
+  top: 46px;
+  left: 80px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+  text-align: left;
+  font-size: 18px;
+  color: #2f3547;
+  font-family: Inter;
+}
+.featuresWrapper {
+  display: flex;
+  align-items: center;
+}
+.augmentation {
+  position: relative;
+  letter-spacing: 0.02em;
+  line-height: 24px;
+}
+.arrowRightDoubleGroup {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #243fa8;
+}
+.frameParent5 {
+  position: absolute;
+  bottom: 0px;
+  left: calc(50% - 720px);
+  width: 1440px;
+  height: 501px;
+  flex-shrink: 0;
+  text-align: left;
+  font-size: 26px;
+  color: #2f3547;
+}
+.frameParent6 {
+  position: absolute;
+  bottom: -0.01px;
+  left: calc(50% - 720px);
+  box-shadow:
+    -10px -10px 20px #fff inset,
+    8px 8px 16px #c4c4c4 inset;
+  background-color: #dfe6e9;
+  width: 1440px;
+  height: 459px;
+  overflow: hidden;
+}
+.frameParent7 {
+  position: absolute;
+  top: 49.81px;
+  left: 53.96px;
+  width: 1339.5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+.frameParent8 {
+  align-self: stretch;
+  display: flex;
+  align-items: flex-start;
+  gap: 35px;
+}
+.frameParent9 {
+  width: 676px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  flex-shrink: 0;
+}
+.logo01SynapseSpark1Group {
+  width: 577px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+.logo01SynapseSpark1Icon2 {
+  width: 299px;
+  height: 112px;
+  position: relative;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+.frameParent10 {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-shrink: 0;
+}
+.onePlatformParent {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.onePlatform {
+  position: relative;
+  letter-spacing: -0.03em;
+  line-height: 34px;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.sparklesIcon {
+  height: 23px;
+  width: 23px;
+  position: relative;
+}
+.prgeeqGlobalSolutionsPrivatParent {
+  width: 459px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+  font-size: 16px;
+}
+.prgeeqGlobalSolutions {
+  align-self: stretch;
+  position: relative;
+  letter-spacing: 0.03em;
+  line-height: 24px;
+}
+.prestigeAtlanta1012Container {
+  align-self: stretch;
+  height: 77px;
+  position: relative;
+  line-height: 24px;
+  display: flex;
+  align-items: flex-end;
+  flex-shrink: 0;
+}
+.blankLine {
+  line-height: 24px;
+}
+.frameParent11 {
+  width: 631px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 24px;
+  flex-shrink: 0;
+  font-size: 22px;
+  color: #2d4cc8;
+}
+.frameParent12 {
+  width: 619px;
+  display: flex;
+  align-items: flex-start;
+  gap: 32px;
+}
+.aboutUsParent {
+  width: 123px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+.aboutUs {
+  width: 93px;
+  position: relative;
+  letter-spacing: -0.03em;
+  line-height: 30px;
+  display: flex;
+  align-items: center;
+}
+.ourMissionParent {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 15px;
+  font-size: 20px;
+  color: #2f3547;
+}
+.ourMission {
+  align-self: stretch;
+  height: 26px;
+  position: relative;
+  letter-spacing: 0.03em;
+  line-height: 28px;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+.quickLinksParent {
+  width: 207px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+.quickLinks {
+  align-self: stretch;
+  height: 26px;
+  position: relative;
+  letter-spacing: -0.03em;
+  line-height: 30px;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+.neurolxpParent {
+  height: 181px;
+  width: 205px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+.neurolxp {
+  align-self: stretch;
+  height: 26px;
+  position: relative;
+  letter-spacing: -0.03em;
+  line-height: 30px;
+  display: flex;
+  white-space: pre-wrap;
+  align-items: center;
+  flex-shrink: 0;
+}
+.ourCustomersGroup {
+  width: 221px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 15px;
+  flex-shrink: 0;
+  font-size: 20px;
+  color: #2f3547;
+}
+.smartContentCreation {
+  width: 229px;
+  height: 26px;
+  position: relative;
+  letter-spacing: 0.03em;
+  line-height: 28px;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+.frameParent13 {
+  width: 392.4px;
+  height: 80.1px;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.frameIcon {
+  height: 80.1px;
+  width: 80.1px;
+  position: relative;
+}
+.copyright2026 {
+  align-self: stretch;
+  height: 47px;
+  position: relative;
+  font-size: 16px;
+  letter-spacing: -0.03em;
+  line-height: 56px;
+  font-weight: 600;
+  color: #2d4cc8;
+  text-align: center;
+  display: inline-block;
+  flex-shrink: 0;
+}
+.frameWrapper2 {
+  position: absolute;
+  bottom: 0px;
+  left: calc(50% - 720px);
+  box-shadow:
+    -8px -8px 16px #fff inset,
+    10px 10px 10px #c4c4c4 inset;
+  background-color: #dfe6e9;
+  width: 1440px;
+  height: 459px;
+  overflow: hidden;
+}
+.frameParent18 {
+  width: 631px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  position: relative;
+  isolation: isolate;
+  gap: 24px;
+  flex-shrink: 0;
+  font-size: 22px;
+  color: #2d4cc8;
+}
+.frameParent19 {
+  width: 619px;
+  display: flex;
+  align-items: flex-start;
+  gap: 32px;
+  z-index: 0;
+  flex-shrink: 0;
+}
+.ourMissionGroup {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 15px;
+  font-size: 18px;
+  color: #2f3547;
+}
+.neurolxpGroup {
+  display: flex;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+.neurolxp2 {
+  height: 26px;
+  width: 103px;
+  position: relative;
+  letter-spacing: -0.03em;
+  line-height: 30px;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+.neurolxpTxt {
+  width: 100%;
+  white-space: pre-wrap;
+}
+.neurolxp3 {
+  line-height: 30px;
+}
+.span {
+  font-size: 12px;
+  line-height: 30px;
+}
+.tm {
+  height: 17px;
+  width: 23px;
+  position: relative;
+  font-size: 12px;
+  letter-spacing: -0.03em;
+  line-height: 30px;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+.ourCustomersContainer {
+  width: 221px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 15px;
+  flex-shrink: 0;
+  font-size: 18px;
+  color: #2f3547;
+}
+.frameParent21 {
+  width: 392.4px;
+  height: 80.1px;
+  margin: 0 !important;
+  position: absolute;
+  top: 217.19px;
+  left: 135.04px;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  z-index: 1;
+  flex-shrink: 0;
+}
+.frameChild6 {
+  height: 80.1px;
+  width: 80.1px;
+  position: relative;
+  flex-shrink: 0;
+}
+.frameChild11 {
+  position: absolute;
+  top: 0px;
+  left: calc(50% - 30.07px);
+  border-radius: 32px;
+  width: 59.1px;
+  height: 92px;
+  object-fit: contain;
+}
+.frameParent22 {
+  position: absolute;
+  top: 683px;
+  left: calc(50% - 569px);
+  width: 1138px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 64px;
+  opacity: 0.9;
+  flex-shrink: 0;
+  transform: translateY(-95);
+}
+.frameWrapper3 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.frameWrapper4 {
+  width: 1108px;
+  height: 260px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.frameParent23 {
+  width: 931px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+}
+.frameChild12 {
+  width: 289.5px;
+  height: 50.2px;
+  position: relative;
+  border-radius: 28px;
+  object-fit: contain;
+}
+.turnExistingKnowledge {
+  width: 1120px;
+  height: 63px;
+  position: relative;
+  letter-spacing: 0.03em;
+  line-height: 60px;
+  display: inline-block;
+  text-shadow:
+    -4px -4px 8px #ffffff,
+    4px 4px 8px rgba(196, 196, 196, 0.8);
+  flex-shrink: 0;
+}
+.neurolxpTransformsContent {
+  width: 1028px;
+  height: 80px;
+  position: relative;
+  font-size: 28px;
+  letter-spacing: 0.03em;
+  line-height: 40px;
+  color: #2f3547;
+  display: inline-block;
+  flex-shrink: 0;
+}
+.frameParent24 {
+  width: 1138px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  font-size: 20px;
+  color: #000;
+}
+.frameParent25 {
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  gap: 80px;
+}
+.frameParent26 {
+  height: 235px;
+  width: 326px;
+  position: relative;
+}
+.frameWrapper5 {
+  position: absolute;
+  top: 73px;
+  left: -46px;
+  width: 414px;
+  height: 167px;
+  flex-shrink: 0;
+}
+.frameWrapper6 {
+  position: absolute;
+  top: 0px;
+  left: 46px;
+  width: 326px;
+  height: 162px;
+}
+.frameWrapper7 {
+  position: absolute;
+  top: 0px;
+  left: -46px;
+  width: 414px;
+  height: 196px;
+  flex-shrink: 0;
+}
+.image20Parent {
+  position: absolute;
+  top: -0.27px;
+  left: 46px;
+  box-shadow:
+    -8px -8px 16px #fff inset,
+    8px 8px 16px rgba(196, 196, 196, 0.8) inset;
+  border-radius: 24px 24px 100px 100px;
+  background-color: #dfe6e9;
+  width: 326px;
+  height: 160px;
+  overflow: hidden;
+}
+.image20 {
+  position: absolute;
+  top: 1.54px;
+  left: calc(50% - 617px);
+  width: 1280px;
+  height: 800px;
+  flex-shrink: 0;
+}
+.makeComplexContent {
+  position: absolute;
+  top: 62.27px;
+  left: calc(50% - 84px);
+  letter-spacing: 0.03em;
+  line-height: 28px;
+  font-weight: 600;
+  display: inline-block;
+  width: 169px;
+  flex-shrink: 0;
+}
+.frameWrapper8 {
+  position: absolute;
+  top: 1px;
+  left: calc(50% - 152px);
+  width: 305px;
+  height: 100px;
+  flex-shrink: 0;
+  text-align: left;
+  font-size: 28px;
+  color: #2d4cc8;
+}
+.frameWrapper9 {
+  position: absolute;
+  top: 0px;
+  left: -25px;
+  width: 355px;
+  height: 100px;
+  flex-shrink: 0;
+}
+.frameWrapper10 {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 355px;
+  height: 100px;
+}
+.image21Parent {
+  position: absolute;
+  top: -0.27px;
+  left: calc(50% - 152.5px);
+  box-shadow:
+    10px 10px 20px #c4c4c4,
+    -10px -10px 20px #fff;
+  border-radius: 50px 50px 16px 16px;
+  background-color: #dfe6e9;
+  width: 305px;
+  height: 100px;
+  overflow: hidden;
+}
+.image21 {
+  position: absolute;
+  top: -0.73px;
+  left: 0px;
+  width: 1216px;
+  height: 537px;
+  flex-shrink: 0;
+}
+.smartSummaries {
+  position: absolute;
+  top: calc(50% - 22px);
+  left: calc(50% - 122.5px);
+  letter-spacing: 0.03em;
+  line-height: 42px;
+  display: inline-block;
+  width: 245px;
+  height: 42px;
+  flex-shrink: 0;
+  font-size: 28px !important;
+  white-space: nowrap;
+}
+.highlightEssentialConcepts {
+  position: absolute;
+  top: 62.27px;
+  left: calc(50% - 123px);
+  letter-spacing: 0.03em;
+  line-height: 28px;
+  font-weight: 600;
+  display: inline-block;
+  width: 247px;
+  flex-shrink: 0;
+}
+.frameWrapper14 {
+  position: absolute;
+  top: 1px;
+  left: calc(50% - 152px);
+  width: 305px;
+  height: 100px;
+  flex-shrink: 0;
+  text-align: left;
+  font-size: 28px;
+  color: #67096e;
+}
+.keyInsights {
+  position: absolute;
+  top: calc(50% - 22px);
+  left: calc(50% - 87.5px);
+  letter-spacing: 0.03em;
+  line-height: 42px;
+  display: inline-block;
+  width: 175px;
+  height: 42px;
+  flex-shrink: 0;
+  font-size: 28px !important;
+  white-space: nowrap;
+}
+.frameWrapper20 {
+  position: absolute;
+  top: 1px;
+  left: calc(50% - 152px);
+  width: 305px;
+  height: 100px;
+  flex-shrink: 0;
+  text-align: left;
+  font-size: 28px;
+  color: #c05512;
+}
+.smartStructure {
+  position: absolute;
+  top: calc(50% - 22px);
+  left: calc(50% - 112.5px);
+  letter-spacing: 0.03em;
+  line-height: 42px;
+  display: inline-block;
+  width: 225px;
+  height: 42px;
+  flex-shrink: 0;
+  font-size: 28px !important;
+  white-space: nowrap;
+}
+.frameParent29 {
+  display: flex;
+  align-items: center;
+  gap: 80px;
+}
+.createFocusedPractice {
+  position: absolute;
+  top: 62.27px;
+  left: calc(50% - 105px);
+  letter-spacing: 0.03em;
+  line-height: 28px;
+  font-weight: 600;
+  display: inline-block;
+  width: 210px;
+  flex-shrink: 0;
+}
+.frameWrapper26 {
+  position: absolute;
+  top: 1px;
+  left: calc(50% - 152px);
+  width: 305px;
+  height: 100px;
+  flex-shrink: 0;
+  text-align: left;
+  font-size: 28px;
+  color: #bf1869;
+}
+.examReady {
+  position: absolute;
+  top: calc(50% - 22px);
+  left: calc(50% - 84.5px);
+  letter-spacing: 0.03em;
+  line-height: 42px;
+  display: inline-block;
+  width: 169px;
+  height: 42px;
+  flex-shrink: 0;
+  font-size: 28px !important;
+  white-space: nowrap;
+}
+.inspireDeeperThinking {
+  position: absolute;
+  top: 62.27px;
+  left: calc(50% - 119px);
+  letter-spacing: 0.03em;
+  line-height: 28px;
+  font-weight: 600;
+  display: inline-block;
+  width: 239px;
+  flex-shrink: 0;
+}
+.explore {
+  position: absolute;
+  top: calc(50% - 22px);
+  left: calc(50% - 54.5px);
+  letter-spacing: 0.03em;
+  line-height: 42px;
+  display: inline-block;
+  width: 110px;
+  height: 42px;
+  flex-shrink: 0;
+  font-size: 28px !important;
+  white-space: nowrap;
+}
+.rectangleParent {
+  position: absolute;
+  top: 1591px;
+  left: calc(50% - 598px);
+  width: 1196px;
+  height: 736px;
+  flex-shrink: 0;
+  transform: translateY(-170);
+}
+.frameChild13 {
+  position: absolute;
+  top: 0px;
+  left: calc(50% - 598px);
+  border-radius: 100px;
+  width: 1196px;
+  height: 595px;
+  object-fit: cover;
+}
+.frameParent32 {
+  position: absolute;
+  top: 32px;
+  left: 83px;
+  width: 1017px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  isolation: isolate;
+  gap: 50px;
+}
+.frameWrapper35 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 0;
+  flex-shrink: 0;
+}
+.frameChild14 {
+  width: 291.9px;
+  height: 50.2px;
+  position: relative;
+  border-radius: 28px;
+  object-fit: contain;
+}
+.buildEngaging {
+  line-height: 60px;
+}
+.learningExperiences {
+  color: #2d4cc8;
+  line-height: 60px;
+}
+.rectangleGroup {
+  width: 935px;
+  height: 395px;
+  position: absolute;
+  margin: 0 !important;
+  top: 275px;
+  left: 41px;
+  z-index: 1;
+  flex-shrink: 0;
+  font-size: 36px;
+  color: #bf1869;
+}
+
+.createEngageLearnParent {
+  position: absolute;
+  top: calc(50% - 164.73px);
+  left: calc(50% - 417.5px);
+  height: 330px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+.createEngageLearn {
+  width: 404px;
+  height: 63px;
+  position: relative;
+  letter-spacing: 0.03em;
+  line-height: 60px;
+  display: inline-block;
+  text-shadow:
+    -4px -4px 8px #ffffff,
+    4px 4px 8px rgba(196, 196, 196, 0.8);
+  flex-shrink: 0;
+}
+.frameParent34 {
+  display: flex;
+  align-items: center;
+  gap: 135px;
+  font-size: 24px;
+  color: #31344b;
+}
+.frameParent35 {
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+}
+.frameWrapper36 {
+  width: 350px;
+  height: 70px;
+  box-shadow:
+    -4px -4px 8px #fff inset,
+    4px 4px 8px rgba(196, 196, 196, 0.8) inset;
+  border-radius: 30px;
+  background-color: #dfe6e9;
+  overflow: hidden;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 20px 14px;
+  box-sizing: border-box;
+  position: relative;
+  isolation: isolate;
+}
+.checkmarkCircle04Parent {
+  margin: 0 !important;
+  position: absolute;
+  top: calc(50% - 16.47px);
+  left: 33.96px;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  transform: rotate(-0.1deg);
+  transform-origin: 0 0;
+  z-index: 0;
+  flex-shrink: 0;
+}
+.checkmarkCircle04Icon {
+  height: 32px;
+  width: 32px;
+  position: relative;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  transform: rotate(0.1deg);
+}
+.interactiveLearning {
+  position: relative;
+  letter-spacing: 0.03em;
+  line-height: 28px;
+  font-weight: 600;
+}
+.frameWrapper37 {
+  width: 350px;
+  height: 70px;
+  box-shadow:
+    -4px -4px 8px #fff inset,
+    4px 4px 8px rgba(196, 196, 196, 0.8) inset;
+  border-radius: 30px;
+  background-color: #dfe6e9;
+  overflow: hidden;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0px 14px;
+  box-sizing: border-box;
+  position: relative;
+  isolation: isolate;
+}
+.checkmarkCircle04Group {
+  margin: 0 !important;
+  position: absolute;
+  top: calc(50% - 16.47px);
+  left: 33.96px;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  transform: rotate(-0.1deg);
+  transform-origin: 0 0;
+  z-index: 0;
+}
+.checkmarkCircle04Container {
+  margin: 0 !important;
+  position: absolute;
+  top: calc(50% - 16.48px);
+  left: 33.96px;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  transform: rotate(-0.1deg);
+  transform-origin: 0 0;
+  z-index: 0;
+}
+.checkmarkCircle04Parent3 {
+  margin: 0 !important;
+  position: absolute;
+  top: calc(50% - 16.48px);
+  left: 33.96px;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  transform: rotate(-0.1deg);
+  transform-origin: 0 0;
+  z-index: 0;
+  flex-shrink: 0;
+}
+.checkmarkCircle04Parent4 {
+  margin: 0 !important;
+  position: absolute;
+  top: calc(50% - 16.49px);
+  left: 33.96px;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  transform: rotate(-0.1deg);
+  transform-origin: 0 0;
+  z-index: 0;
+  flex-shrink: 0;
+}
+.frameParent37 {
+  position: absolute;
+  top: 2423px;
+  left: calc(50% - 633px);
+  width: 1267px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  flex-shrink: 0;
+
+}
+.frameWrapper42 {
+  align-self: stretch;
+  height: 258px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.frameWrapper43 {
+  width: 931px;
+  height: 196px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.frameParent38 {
+  width: 100%;
+  height: 227px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  max-width: 100%;
+  flex-shrink: 0;
+}
+.frameParent39 {
+  height: 132px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+}
+.frameChild16 {
+  width: 294.5px;
+  height: 50.2px;
+  position: relative;
+  border-radius: 28px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+.contentThatWorks {
+  width: 910px;
+  height: 63px;
+  position: relative;
+  letter-spacing: 0.03em;
+  line-height: 60px;
+  display: inline-block;
+  text-shadow:
+    -4px -4px 8px #ffffff,
+    4px 4px 8px rgba(196, 196, 196, 0.8);
+  flex-shrink: 0;
+  transform: translatey(4);
+}
+.neurolxpSupportsDiverse {
+  width: 657px;
+  height: 40px;
+  position: relative;
+  font-size: 28px;
+  letter-spacing: 0.03em;
+  line-height: 40px;
+  color: #2f3547;
+  display: inline-block;
+  flex-shrink: 0;
+  transform: translateY(-6);
+}
+.frameParent40 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 50px;
+  font-size: 24px;
+  color: #2d4cc8;
+  transform: translateY(-50);
+}
+.frameParent41 {
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+.frameWrapper44 {
+  height: 198px;
+  width: 401px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.frameWrapper45 {
+  width: 401px;
+  height: 292px;
+  position: relative;
+  flex-shrink: 0;
+}
+.frameWrapper46 {
+  position: absolute;
+  top: 1px;
+  left: calc(50% - 200.5px);
+  box-shadow:
+    10px 10px 20px #c4c4c4,
+    -10px -10px 20px #fff;
+  border-radius: 16px 16px 32px 32px;
+  background-color: #dfe6e9;
+  width: 401px;
+  height: 193px;
+  overflow: hidden;
+}
+.frameParent42 {
+  position: absolute;
+  top: calc(50% - 76.52px);
+  left: 75px;
+  width: 252px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+.frameParent43 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+.frameChild17 {
+  width: 60px;
+  height: 60px;
+  position: relative;
+  flex-shrink: 0;
+}
+.documentsPresentations {
+  width: 336px;
+  height: 34px;
+  position: relative;
+  letter-spacing: 0.03em;
+  line-height: 32px;
+  display: inline-block;
+  flex-shrink: 0;
+}
+.arrowDownDoubleIcon {
+  width: 32px;
+  height: 32px;
+  position: relative;
+}
+.frameWrapper47 {
+  height: 198px;
+  width: 401px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: #bf1869;
+}
+.frameWrapper50 {
+  height: 198px;
+  width: 401px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: #c05512;
+}
+.frameParent48 {
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  color: #67096e;
+}
+.frameWrapper56 {
+  height: 198px;
+  width: 401px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: #2a7308;
+}
+.frameWrapper59 {
+  height: 198px;
+  width: 401px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: #907507;
+}
+.frameParent55 {
+  position: absolute;
+  top: 3241px;
+  left: 80px;
+  width: 1280px;
+  display: flex;
+  align-items: center;
+  gap: 124px;
+  flex-shrink: 0;
+  text-align: left;
+}
+.frameParent56 {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+  flex-shrink: 0;
+}
+.frameParent57 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+}
+.frameChild23 {
+  width: 435.8px;
+  height: 50.3px;
+  position: relative;
+  border-radius: 28px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+.organizeLearningContent {
+  width: 533px;
+  position: relative;
+  letter-spacing: 0.03em;
+  line-height: 60px;
+  display: flex;
+  align-items: center;
+  text-shadow:
+    -4px -4px 8px #ffffff,
+    4px 4px 8px rgba(196, 196, 196, 0.8);
+  flex-shrink: 0;
+}
+.manageLearningResources {
+  width: 468px;
+  position: relative;
+  font-size: 28px;
+  letter-spacing: 0.03em;
+  line-height: 40px;
+  color: #2f3547;
+  display: inline-block;
+}
+.frameWrapper62 {
+  height: 658px;
+  width: 689px;
+  position: relative;
+  flex-shrink: 0;
+  text-align: center;
+  font-size: 24px;
+}
+.frameWrapper63 {
+  position: absolute;
+  top: 66px;
+  left: 35px;
+  box-shadow:
+    -8px -8px 16px #fff,
+    8px 8px 16px #c4c4c4;
+  border-radius: 32px;
+  background-color: #dfe6e9;
+  width: 614px;
+  height: 587px;
+  overflow: hidden;
+}
+.frameWrapper64 {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  box-shadow:
+    -8px -8px 16px #fff inset,
+    8px 8px 16px #c4c4c4 inset;
+  border-radius: 24px;
+  background-color: #dfe6e9;
+  width: 582px;
+  height: 555px;
+  overflow: hidden;
+}
+.frameParent58 {
+  position: absolute;
+  top: calc(50% - 245.5px);
+  left: 32px;
+  width: 475px;
+  height: 491px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+}
+.frameParent59 {
+  align-self: stretch;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-shrink: 0;
+}
+.frameChild24 {
+  height: 70.1px;
+  width: 70.1px;
+  position: relative;
+}
+.organizeByCourse {
+  height: 37px;
+  width: 351px;
+  position: relative;
+  letter-spacing: 0.03em;
+  line-height: 36px;
+  font-weight: 600;
+  display: inline-block;
+  flex-shrink: 0;
+}
+.manageFromOne {
+  height: 37px;
+  width: 343px;
+  position: relative;
+  letter-spacing: 0.03em;
+  line-height: 36px;
+  font-weight: 600;
+  display: inline-block;
+  flex-shrink: 0;
+}
+.maintainContentVersions {
+  height: 37px;
+  width: 306px;
+  position: relative;
+  letter-spacing: 0.03em;
+  line-height: 36px;
+  font-weight: 600;
+  display: inline-block;
+  flex-shrink: 0;
+}
+.updateWithoutDisruption {
+  height: 37px;
+  width: 310px;
+  position: relative;
+  letter-spacing: 0.03em;
+  line-height: 36px;
+  font-weight: 600;
+  display: inline-block;
+  flex-shrink: 0;
+}
+.keepContentStructured {
+  height: 37px;
+  width: 286px;
+  position: relative;
+  letter-spacing: 0.03em;
+  line-height: 36px;
+  font-weight: 600;
+  display: inline-block;
+  flex-shrink: 0;
+}
+.ensureConsistencyAcross {
+  height: 37px;
+  width: 374px;
+  position: relative;
+  letter-spacing: 0.03em;
+  line-height: 36px;
+  font-weight: 600;
+  display: inline-block;
+  flex-shrink: 0;
+}
+.image20Parent4 {
+  position: absolute;
+  top: 3995px;
+  left: calc(50% - 596px);
+  box-shadow:
+    -8px -8px 16px #fff inset,
+    8px 8px 16px rgba(196, 196, 196, 0.8) inset;
+  border-radius: 32px;
+  background-color: #dfe6e9;
+  width: 1192px;
+  height: 700px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.image206 {
+  position: absolute;
+  top: 338.14px;
+  left: calc(50% - 613px);
+  width: 1280px;
+  height: 800px;
+  flex-shrink: 0;
+}
+.arrowDownBig {
+  position: absolute;
+  top: 445px;
+  left: 478px;
+  width: 43px;
+  height: 43px;
+  flex-shrink: 0;
+}
+.frameParent65 {
+  position: absolute;
+  top: 24px;
+  left: calc(50% - 550px);
+  width: 1100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 28px;
+  flex-shrink: 0;
+}
+.frameWrapper66 {
+  width: 1108px;
+  height: 210px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-shrink: 0;
+}
+.turnExistingContent {
+  width: 1016px;
+  height: 63px;
+  position: relative;
+  letter-spacing: 0.03em;
+  line-height: 60px;
+  display: inline-block;
+  text-shadow:
+    -4px -4px 8px #ffffff,
+    4px 4px 8px rgba(196, 196, 196, 0.8);
+  flex-shrink: 0;
+}
+.neurolxpHelpsInstitutions {
+  width: 978px;
+  height: 72px;
+  position: relative;
+  font-size: 28px;
+  letter-spacing: 0.03em;
+  line-height: 40px;
+  color: #2f3547;
+  display: inline-block;
+  flex-shrink: 0;
+}
+.frameParent67 {
+  width: 1050px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  text-align: left;
+  font-size: 22px;
+  color: #2f3547;
+  transform: translateY(25);
+}
+.frameParent68 {
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  font-size: 20px;
+}
+.frameParent69 {
+  height: 114px;
+  width: 500px;
+  box-shadow:
+    -4px -4px 8px #fff,
+    4px 4px 8px #c6c6c6;
+  border-radius: 100px;
+  background-color: #dfe6e9;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 11px 12px 0px;
+  box-sizing: border-box;
+  position: relative;
+  isolation: isolate;
+  gap: 10px;
+}
+.frameChild31 {
+  width: 103px;
+  height: 30px;
+  margin: 0 !important;
+  position: absolute;
+  top: calc(50% - 15px);
+  left: calc(50% - 218px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 0;
+}
+.rectangleContainer {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  z-index: 1;
+}
+.rectangleDiv {
+  height: 90px;
+  width: 182px;
+  position: relative;
+  box-shadow:
+    -4px -4px 8px #fff,
+    4px 4px 8px #c6c6c6;
+  border-radius: 100px;
+  background-color: #dfe6e9;
+  border-right: 5px solid #c05512;
+  border-left: 5px solid #c05512;
+  box-sizing: border-box;
+}
+.buildEngagingExperiences {
+  height: 30px;
+  width: 265px;
+  position: relative;
+  letter-spacing: 0.03em;
+  line-height: 30px;
+  display: inline-block;
+  flex-shrink: 0;
+}
+.createWrapper {
+  margin: 0 !important;
+  position: absolute;
+  top: 42px;
+  left: 68px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  font-size: 22px;
+  color: #c05512;
+}
+.create {
+  position: relative;
+  letter-spacing: 0.03em;
+  line-height: 30px;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.frameWrapper67 {
+  height: 114px;
+  width: 500px;
+  box-shadow:
+    -4px -4px 8px #fff,
+    4px 4px 8px #c6c6c6;
+  border-radius: 100px;
+  background-color: #dfe6e9;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 11px 12px 0px;
+  box-sizing: border-box;
+  font-size: 22px;
+  color: #bf1869;
+}
+.frameParent70 {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.rectangleParent2 {
+  height: 90px;
+  width: 180px;
+  position: relative;
+}
+.frameChild32 {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  box-shadow:
+    -4px -4px 8px #fff,
+    4px 4px 8px #c6c6c6;
+  border-radius: 100px;
+  background-color: #dfe6e9;
+  border-right: 5px solid #bf1869;
+  border-left: 5px solid #bf1869;
+  box-sizing: border-box;
+  width: 180px;
+  height: 90px;
+}
+.curateWrapper {
+  position: absolute;
+  top: calc(50% - 15px);
+  left: calc(50% - 38px);
+  width: 76px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.curate {
+  align-self: stretch;
+  position: relative;
+  letter-spacing: 0.03em;
+  line-height: 30px;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.transformExistingResources {
+  height: 30px;
+  width: 270px;
+  position: relative;
+  font-size: 20px;
+  letter-spacing: 0.03em;
+  line-height: 30px;
+  color: #2f3547;
+  display: inline-block;
+  flex-shrink: 0;
+}
+.frameParent71 {
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  color: #907507;
+}
+.frameWrapper68 {
+  height: 114px;
+  width: 500px;
+  box-shadow:
+    -4px -4px 8px #fff,
+    4px 4px 8px #c6c6c6;
+  border-radius: 100px;
+  background-color: #dfe6e9;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 11px 12px 0px;
+  box-sizing: border-box;
+}
+.frameParent72 {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.frameChild33 {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  box-shadow:
+    -4px -4px 8px #fff,
+    4px 4px 8px #c6c6c6;
+  border-radius: 100px;
+  background-color: #dfe6e9;
+  border-right: 5px solid #907507;
+  border-left: 5px solid #907507;
+  box-sizing: border-box;
+  width: 180px;
+  height: 90px;
+}
+.organizeWrapper {
+  position: absolute;
+  top: calc(50% - 15px);
+  left: calc(50% - 40px);
+  width: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.organize {
+  width: 98px;
+  position: relative;
+  letter-spacing: 0.03em;
+  line-height: 30px;
+  display: inline-block;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  flex-shrink: 0;
+  font-weight: 700;
+}
+.structureLearningJourneys {
+  height: 30px;
+  width: 262px;
+  position: relative;
+  font-size: 20px;
+  letter-spacing: 0.03em;
+  line-height: 30px;
+  color: #2f3547;
+  display: inline-block;
+  flex-shrink: 0;
+}
+.frameParent73 {
+  height: 114px;
+  width: 500px;
+  box-shadow:
+    -4px -4px 8px #fff,
+    4px 4px 8px #c6c6c6;
+  border-radius: 100px;
+  background-color: #dfe6e9;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 11px 12px 0px;
+  box-sizing: border-box;
+  position: relative;
+  isolation: isolate;
+  gap: 10px;
+  color: #67096e;
+}
+.frameChild34 {
+  width: 103px;
+  height: 90px;
+  margin: 0 !important;
+  position: absolute;
+  top: calc(50% - 45px);
+  left: calc(50% - 273px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 0;
+  flex-shrink: 0;
+}
+.frameParent74 {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  z-index: 1;
+  flex-shrink: 0;
+}
+.deliverWrapper {
+  height: 90px;
+  width: 180px;
+  box-shadow:
+    -4px -4px 8px #fff,
+    4px 4px 8px #c6c6c6;
+  border-radius: 100px;
+  background-color: #dfe6e9;
+  border-right: 5px solid #67096e;
+  border-left: 5px solid #67096e;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 48px 30px 49px;
+}
+.deliver {
+  width: 83px;
+  position: relative;
+  letter-spacing: 0.03em;
+  line-height: 30px;
+  display: inline-block;
+  flex-shrink: 0;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.enableFlexibleLearning {
+  height: 30px;
+  width: 330px;
+  position: relative;
+  font-size: 20px;
+  letter-spacing: 0.03em;
+  line-height: 30px;
+  color: #2f3547;
+  display: inline-block;
+  flex-shrink: 0;
+}
+.frameParent75 {
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  color: #046f73;
+}
+.frameChild35 {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  box-shadow:
+    -4px -4px 8px #fff,
+    4px 4px 8px #c6c6c6;
+  border-radius: 100px;
+  background-color: #dfe6e9;
+  border-right: 5px solid #046f73;
+  border-left: 5px solid #046f73;
+  box-sizing: border-box;
+  width: 180px;
+  height: 90px;
+}
+.measure {
+  width: 96px;
+  position: relative;
+  letter-spacing: 0.03em;
+  line-height: 30px;
+  display: inline-block;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  flex-shrink: 0;
+}
+.improveWrapper {
+  height: 90px;
+  width: 180px;
+  box-shadow:
+    -4px -4px 8px #fff,
+    4px 4px 8px #c6c6c6;
+  border-radius: 100px;
+  background-color: #dfe6e9;
+  border-right: 5px solid #2d4cc8;
+  border-left: 5px solid #2d4cc8;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 48px 30px 49px;
+}
+.improve {
+  width: 94px;
+  position: relative;
+  letter-spacing: 0.03em;
+  line-height: 30px;
+  display: inline-block;
+  flex-shrink: 0;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.frameParent79 {
+  position: absolute;
+  top: 4791px;
+  left: 80px;
+  width: 1316px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 64px;
+  flex-shrink: 0;
+  text-align: left;
+}
+.frameParent80 {
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  gap: 69px;
+  transform: translatey(-370 );
+}
+.frameParent81 {
+  width: 553px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+}
+.frameChild37 {
+  width: 346.8px;
+  height: 50.3px;
+  position: relative;
+  border-radius: 28px;
+  object-fit: contain;
+}
+.onePlatformFor {
+  width: 553px;
+  position: relative;
+  letter-spacing: 0.03em;
+  line-height: 60px;
+  display: flex;
+  align-items: center;
+}
+.neurolxpSupportsOrganization {
+  align-self: stretch;
+  position: relative;
+  font-size: 28px;
+  letter-spacing: 0.03em;
+  line-height: 40px;
+  color: #2f3547;
+}
+.frameParent83 {
+  height: 683px;
+  width: 694px;
+  position: relative;
+  text-align: center;
+  font-size: 24px;
+  color: #67096e;
+  transform: translateX(-50);
+}
+.frameParent84 {
+  position: absolute;
+  top: 603px;
+  left: 438px;
+  width: 220px;
+  height: 80px;
+}
+.frameChild38 {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  border-radius: 100px;
+  width: 80.1px;
+  height: 80.1px;
+  object-fit: contain;
+}
+.frameChild39 {
+  position: absolute;
+  top: 0px;
+  left: 140.06px;
+  border-radius: 100px;
+  width: 80.1px;
+  height: 80.1px;
+  object-fit: contain;
+}
+.frameParent85 {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 694px;
+  height: 603px;
+}
+.frameParent86 {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 694px;
+  height: 556px;
+}
+.frameParent87 {
+  position: absolute;
+  top: 78px;
+  left: 372px;
+  box-shadow:
+    -4px -4px 8px #fff inset,
+    4px 4px 8px #c4c4c4 inset;
+  border-radius: 50px;
+  background-color: #dfe6e9;
+  width: 322px;
+  height: 400px;
+  overflow: hidden;
+  font-size: 20px;
+}
+.frameChild40 {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  border-radius: 0px 0px 0px 100px;
+  width: 322px;
+  height: 229px;
+  object-fit: cover;
+}
+.corporateParent {
+  position: absolute;
+  top: 253px;
+  left: calc(50% - 134px);
+  width: 268px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+.corporate {
+  align-self: stretch;
+  height: 34px;
+  position: relative;
+  letter-spacing: 0.03em;
+  line-height: 32px;
+  display: inline-block;
+  flex-shrink: 0;
+}
+.supportEmployeeGrowth {
+  align-self: stretch;
+  height: 62px;
+  position: relative;
+  font-size: 16px;
+  letter-spacing: 0.03em;
+  line-height: 28px;
+  color: #31344b;
+  display: inline-block;
+  flex-shrink: 0;
+}
+.frameParent88 {
+  position: absolute;
+  top: 33px;
+  left: 208px;
+  box-shadow:
+    -4px -4px 8px #fff inset,
+    4px 4px 8px #c4c4c4 inset;
+  border-radius: 50px;
+  background-color: #dfe6e9;
+  width: 405px;
+  height: 467px;
+  overflow: hidden;
+}
+.frameChild41 {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  border-radius: 0px 0px 0px 150px;
+  width: 405px;
+  height: 283px;
+  object-fit: cover;
+}
+.schoolsDigitalLearningParent {
+  position: absolute;
+  top: 307px;
+  left: calc(50% - 162.5px);
+  width: 325px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+.createStructuredAnd {
+  align-self: stretch;
+  height: 62px;
+  position: relative;
+  font-size: 20px;
+  letter-spacing: 0.03em;
+  line-height: 28px;
+  color: #31344b;
+  display: inline-block;
+  flex-shrink: 0;
+}
+.frameWrapper70 {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  box-shadow:
+    -8px -8px 16px #fff inset,
+    8px 8px 16px #c4c4c4 inset;
+  border-radius: 50px;
+  background-color: #dfe6e9;
+  width: 469px;
+  height: 556px;
+  overflow: hidden;
+}
+.frameParent89 {
+  position: absolute;
+  top: -9px;
+  left: 0px;
+  width: 469px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  flex-shrink: 0;
+}
+.frameChild42 {
+  align-self: stretch;
+  height: 377px;
+  position: relative;
+  border-radius: 0px 0px 0px 200px;
+  max-width: 100%;
+  overflow: hidden;
+  flex-shrink: 0;
+  object-fit: cover;
+}
+.higherEducationParent {
+  width: 325px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+.frameParent90 {
+  position: absolute;
+  top: 588px;
+  left: 186px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.frameChild43 {
+  height: 15px;
+  width: 34px;
+  position: relative;
+  border-radius: 32px;
+  background-color: #2d4cc8;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.ellipseDiv {
+  height: 15px;
+  width: 15px;
+  position: relative;
+  border-radius: 50%;
+  background-color: rgba(47, 53, 71, 0.1);
+}
+.frameParent91 {
+  width: 1214px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  text-align: center;
+  transform: translateY(-350);
+}
+.frameChild47 {
+  width: 238.6px;
+  height: 50.2px;
+  position: relative;
+  border-radius: 28px;
+  object-fit: contain;
+}
+.rectangleParent5 {
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  position: relative;
+  isolation: isolate;
+  gap: 64px;
+  font-size: 24px;
+}
+.frameChild48 {
+  height: 221px;
+  width: 362px;
+  position: relative;
+  box-shadow:
+    -4px -4px 8px #fff inset,
+    4px 4px 8px #c4c4c4 inset;
+  border-radius: 16px;
+  background-color: #dfe6e9;
+  z-index: 0;
+}
+.frameChild49 {
+  height: 221px;
+  width: 362px;
+  position: relative;
+  box-shadow:
+    -4px -4px 8px #fff,
+    4px 4px 8px #c6c6c6;
+  border-radius: 16px;
+  background-color: #dfe6e9;
+  border: 1px solid #2a7308;
+  box-sizing: border-box;
+  z-index: 1;
+}
+.frameParent93 {
+  height: 181px;
+  width: 282px;
+  position: absolute;
+  margin: 0 !important;
+  top: calc(50% - 90.5px);
+  left: calc(50% - 141px);
+  z-index: 2;
+}
+.frameChild50 {
+  position: absolute;
+  top: 0px;
+  left: calc(50% - 35.05px);
+  border-radius: 100px;
+  width: 69px;
+  height: 69px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+.forEducatorsParent {
+  position: absolute;
+  top: calc(50% - 12.45px);
+  left: calc(50% - 140px);
+  width: 280px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+  flex-shrink: 0;
+}
+.forEducators {
+  width: 227px;
+  height: 34px;
+  position: relative;
+  letter-spacing: 0.03em;
+  line-height: 32px;
+  display: inline-block;
+  flex-shrink: 0;
+}
+.lessContentWork {
+  width: 240px;
+  position: relative;
+  font-size: 20px;
+  letter-spacing: 0.03em;
+  line-height: 28px;
+  display: inline-block;
+}
+.frameChild51 {
+  height: 221px;
+  width: 362px;
+  position: relative;
+  box-shadow:
+    -4px -4px 8px #fff inset,
+    4px 4px 8px #c4c4c4 inset;
+  border-radius: 16px;
+  background-color: #dfe6e9;
+  z-index: 3;
+}
+.frameParent94 {
+  height: 181px;
+  width: 282px;
+  position: absolute;
+  margin: 0 !important;
+  top: calc(50% - 103.5px);
+  left: calc(50% + 285px);
+  z-index: 4;
+}
+.accessFocusedResources {
+  width: 266px;
+  position: relative;
+  font-size: 20px;
+  letter-spacing: 0.03em;
+  line-height: 28px;
+  display: inline-block;
+}
+.frameParent95 {
+  height: 181px;
+  width: 282px;
+  position: absolute;
+  margin: 0 !important;
+  top: calc(50% - 90.5px);
+  left: 40px;
+  z-index: 5;
+}
+.manageContentAt {
+  width: 200px;
+  position: relative;
+  font-size: 20px;
+  letter-spacing: 0.03em;
+  line-height: 28px;
+  display: inline-block;
+}
+.frameParent96 {
+  position: absolute;
+  top: 6205px;
+  left: calc(50% - 497px);
+  width: 994px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  flex-shrink: 0;
+}
+.frameWrapper72 {
+  width: 1000px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-shrink: 0;
+}
+.frameWrapper73 {
+  width: 931px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.onePlatformSmarterLearningParent {
+  width: 100%;
+  height: 178px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  max-width: 100%;
+  transform: translateY(-470);
+}
+.neurolxpBringsContent {
+  width: 1020px;
+  height: 83px;
+  position: relative;
+  font-size: 28px;
+  letter-spacing: 0.03em;
+  line-height: 40px;
+  color: #2f3547;
+  display: inline-block;
+  flex-shrink: 0;
+}
+.requestADemoWrapper {
+  width: 250px;
+  height: 64px;
+  box-shadow:
+    -8px -8px 16px #fff,
+    8px 8px 16px #c6c6c9;
+  border-radius: 32px;
+  background-color: #dfe6e9;
+  overflow: hidden;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px 32px;
+  box-sizing: border-box;
+  font-size: 24px;
+  color: #2d4cc8;
+  transform: translateY(-580);
+}
+.requestADemo {
+  width: 198px;
+  position: relative;
+  line-height: 32px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.frameParent22 .frameParent23::before {
+  content: "Content Intelligence";
+  width: 289.5px;
+  height: 50.2px;
+  border-radius: 28px;
+  background-color: #dfe6e9;
+  box-shadow:
+    inset -4px -4px 8px #fff,
+    inset 4px 4px 8px rgba(196, 196, 196, 0.8);
+  color: #2d4cc8;
+  font-family: "Segoe UI";
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 50.2px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  box-sizing: border-box;
+  flex-shrink: 0;
+}
+
+.frameParent22 .frameParent23 > .frameChild12 {
+  display: none;
+}
+
+.rectangleParent > .frameChild13 {
+  object-fit: cover;
+  object-position: center;
+}
+
+.rectangleParent .checkmarkCircle04Icon {
+  object-fit: contain;
+}
+
+.rectangleParent {
+  overflow: visible;
+}
+
+.rectangleParent > .frameChild13 {
+  z-index: 0;
+  object-fit: cover;
+  object-position: center;
+}
+
+.rectangleParent .contentCreationBadge {
+  width: 291.9px;
+  height: 50.2px;
+  margin: 0;
+  border-radius: 28px;
+  background-color: #dfe6e9;
+  box-shadow:
+    inset -4px -4px 8px #ffffff,
+    inset 4px 4px 8px rgba(196, 196, 196, 0.8);
+  color: #2d4cc8;
+  font-family: "Segoe UI";
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 50.2px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  flex-shrink: 0;
+  position: relative;
+  z-index: 2;
+}
+
+.rectangleParent .frameChild15 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 935px;
+  height: 395px;
+  border-radius: 32px;
+  background: #ffffff;
+  box-shadow:
+    -8px -8px 16px #ffffff,
+    8px 8px 16px #c4c4c4;
+  overflow: visible;
+  z-index: 0;
+
+}
+
+.rectangleParent .createEngageLearnParent {
+  z-index: 1;
+  overflow: visible;
+}
+
+.rectangleParent .createEngageLearn,
+.rectangleParent .frameParent34,
+.rectangleParent .frameParent35,
+.rectangleParent .frameWrapper36,
+.rectangleParent .frameWrapper37,
+.rectangleParent .interactiveLearning {
+  position: relative;
+  z-index: 2;
+  visibility: visible;
+  opacity: 1;
+  white-space: nowrap !important;
+}
+
+.rectangleParent .frameWrapper36,
+.rectangleParent .frameWrapper37 {
+  background-color: #dfe6e9;
+  box-shadow:
+    -4px -4px 8px #ffffff inset,
+    4px 4px 8px rgba(196, 196, 196, 0.8) inset;
+}
+
+.rectangleParent .checkmarkCircle04Parent,
+.rectangleParent .checkmarkCircle04Group,
+.rectangleParent .checkmarkCircle04Container,
+.rectangleParent .checkmarkCircle04Parent3,
+.rectangleParent .checkmarkCircle04Parent4 {
+  z-index: 3;
+}
+
+.rectangleParent .checkmarkCircle04Icon {
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.rectangleParent .rectangleGroup {
+  overflow: visible;
+}
+
+.rectangleParent .frameChild15 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 935px;
+  height: 395px;
+  box-sizing: border-box;
+  border: 0;
+  border-radius: 32px;
+  background-color: #dfe6e9;
+  background-image: none;
+  box-shadow:
+    -10px -10px 20px #ffffff,
+    10px 10px 20px #c4c4c4;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.rectangleParent .createEngageLearnParent {
+  position: absolute;
+  z-index: 1;
+}
+
+.rectangleParent .frameWrapper36,
+.rectangleParent .frameWrapper37 {
+  background-color: #dfe6e9;
+  box-shadow:
+    inset -4px -4px 8px #ffffff,
+    inset 4px 4px 8px rgba(196, 196, 196, 0.8);
+}
+
+.frameParent37 .contentCompatibilityBadge {
+  width: 294.5px;
+  height: 50.2px;
+  margin: 0;
+  border-radius: 28px;
+  background-color: #dfe6e9;
+  box-shadow:
+    inset -4px -4px 8px #ffffff,
+    inset 4px 4px 8px rgba(196, 196, 196, 0.8);
+  color: #2d4cc8;
+  font-family: "Segoe UI";
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 50.2px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+.contentFormatIcon {
+  width: 60px;
+  height: 60px;
+  position: relative;
+  border-radius: 50%;
+  background-color: #dfe6e9;
+
+  box-shadow:
+    inset -4px -4px 8px #ffffff,
+    inset 4px 4px 8px rgba(196, 196, 196, 0.8);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.frameParent37 .contentFormatIcon::before {
+  content: "";
+  position: absolute;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  inset: 11px;
+  z-index: 1;
+}
+
+.frameParent37 .contentFormatGlyph {
+  width: 28px;
+  height: 28px;
+  position: relative;
+  z-index: 2;
+  object-fit: contain;
+}
+
+.frameParent37 .contentFormatIcon::before {
+  content: "";
+  width: 42px;
+  height: 42px;
+  position: absolute;
+  inset: 9px;
+  border-radius: 50%;
+}
+
+.frameParent37 .contentFormatGlyph {
+  width: 28px;
+  height: 28px;
+  position: relative;
+  z-index: 1;
+  object-fit: contain;
+}
+
+.frameParent37 .contentFormatBlue::before {
+  background-color: #2d4cc8;
+}
+
+.frameParent37 .contentFormatPink::before {
+  background-color: #bf1869;
+}
+
+.frameParent37 .contentFormatOrange::before {
+  background-color: #c05512;
+}
+
+.frameParent37 .contentFormatPurple::before {
+  background-color: #67096e;
+}
+
+.frameParent37 .contentFormatGreen::before {
+  background-color: #2a7308;
+}
+
+.frameParent37 .contentFormatGold::before {
+  background-color: #907507;
+}
+
+.frameParent37 .arrowDownDoubleIcon {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.frameParent55 .frameWrapper62 {
+  height: 658px;
+  width: 689px;
+}
+
+.frameParent55 .frameWrapper63 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 689px;
+  height: 658px;
+  border-radius: 32px;
+  background-color: #dfe6e9;
+  box-shadow:
+    -8px -8px 16px #ffffff,
+    8px 8px 16px #c4c4c4;
+  overflow: hidden;
+}
+
+.frameParent55 .frameWrapper64 {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  width: 657px;
+  height: 626px;
+  border-radius: 24px;
+  background-color: #dfe6e9;
+  box-shadow:
+    inset -8px -8px 16px #ffffff,
+    inset 8px 8px 16px #c4c4c4;
+  overflow: hidden;
+}
+
+.frameParent55 .frameParent58 {
+  position: absolute;
+  top: 45px;
+  left: 48px;
+  width: 561px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 18px;
+}
+
+.frameParent55 .frameParent59 {
+  width: 100%;
+  height: 86px;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  flex-shrink: 0;
+}
+
+.frameParent55 .managementCheckIcon {
+  width: 80px;
+  height: 80px;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.frameParent55 .managementCheckOuter {
+  position: absolute;
+  inset: 0;
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  z-index: 0;
+}
+
+.frameParent55 .managementCheckGreen {
+  position: absolute;
+  left: 9.5px;
+  top: 9.5px;
+  width: 61px;
+  height: 61px;
+  object-fit: contain;
+  z-index: 1;
+}
+
+.frameParent55 .managementCheckMark {
+  position: absolute;
+  left: 28px;
+  top: 28px;
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+  z-index: 2;
+}
+
+.frameParent55 .organizeByCourse,
+.frameParent55 .manageFromOne,
+.frameParent55 .maintainContentVersions,
+.frameParent55 .updateWithoutDisruption,
+.frameParent55 .keepContentStructured,
+.frameParent55 .ensureConsistencyAcross {
+  height: auto;
+  width: auto;
+  max-width: 455px;
+  margin: 0;
+  color: #31344b;
+  font-family: "Segoe UI";
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 36px;
+  letter-spacing: 0.03em;
+  display: inline-block;
+  flex-shrink: 1;
+}
+
+@media (max-width: 767px) {
+  .frameParent55 {
+    position: relative;
+    top: auto;
+    left: auto;
+    width: calc(100% - 32px);
+    margin: 64px auto 0;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .frameParent55 .frameParent56,
+  .frameParent55 .frameParent57,
+  .frameParent55 .organizeLearningContent,
+  .frameParent55 .manageLearningResources {
+    width: 100%;
+  }
+
+  .frameParent55 .organizeLearningContent {
+    font-size: 28px;
+    line-height: 38px;
+  }
+
+  .frameParent55 .manageLearningResources {
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  .frameParent55 .frameWrapper62,
+  .frameParent55 .frameWrapper63 {
+    width: 100%;
+    height: auto;
+    min-height: 600px;
+    position: relative;
+    top: auto;
+    left: auto;
+  }
+
+  .frameParent55 .frameWrapper64 {
+    width: calc(100% - 32px);
+    height: auto;
+    min-height: 568px;
+    top: 16px;
+    left: 16px;
+  }
+
+  .frameParent55 .frameParent58 {
+    position: relative;
+    top: auto;
+    left: auto;
+    width: calc(100% - 40px);
+    margin: 36px 20px;
+    gap: 14px;
+  }
+
+  .frameParent55 .frameParent59 {
+    height: auto;
+    min-height: 72px;
+    gap: 16px;
+  }
+
+  .frameParent55 .managementCheckIcon {
+    width: 64px;
+    height: 64px;
+  }
+
+  .frameParent55 .managementCheckOuter {
+    width: 64px;
+    height: 64px;
+  }
+
+  .frameParent55 .managementCheckGreen {
+    left: 8px;
+    top: 8px;
+    width: 48px;
+    height: 48px;
+  }
+
+  .frameParent55 .managementCheckMark {
+    left: 21px;
+    top: 21px;
+    width: 22px;
+    height: 22px;
+  }
+
+  .frameParent55 .organizeByCourse,
+  .frameParent55 .manageFromOne,
+  .frameParent55 .maintainContentVersions,
+  .frameParent55 .updateWithoutDisruption,
+  .frameParent55 .keepContentStructured,
+  .frameParent55 .ensureConsistencyAcross {
+    max-width: calc(100% - 80px);
+    font-size: 18px;
+    line-height: 28px;
+  }
+}
+
+.frameParent55 .frameWrapper62 {
+  position: relative;
+  width: 689px;
+  height: 658px;
+  flex-shrink: 0;
+}
+
+.frameParent55 .frameWrapper63 {
+  position: absolute;
+  width: 614px;
+  height: 587px;
+  left: 35px;
+  top: 66px;
+  background: #dfe6e9;
+  box-shadow:
+    -8px -8px 16px #ffffff,
+    8px 8px 16px #c4c4c4;
+  border-radius: 32px;
+  overflow: visible;
+}
+
+.frameParent55 .frameWrapper64 {
+  position: absolute;
+  width: 582px;
+  height: 555px;
+  left: 16px;
+  top: 16px;
+  background: #dfe6e9;
+  box-shadow:
+    inset -8px -8px 16px #ffffff,
+    inset 8px 8px 16px #c4c4c4;
+  border-radius: 24px;
+  overflow: hidden;
+}
+
+.frameParent55 .frameParent58 {
+  position: absolute;
+  width: 475px;
+  height: 491px;
+  left: 32px;
+  top: calc(50% - 491px / 2);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0;
+  gap: 16px;
+  margin: 0;
+}
+
+.frameParent55 .frameParent59 {
+  width: 475px;
+  height: 70px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0;
+  gap: 16px;
+  flex: none;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+.frameParent55 .managementCheckIcon {
+  position: relative;
+  width: 70.05px;
+  height: 70.05px;
+  display: block;
+  flex: none;
+  flex-grow: 0;
+  border-radius: 100px;
+  background: #dfe6e9;
+  box-shadow:
+    inset -4px -4px 8px #ffffff,
+    inset 4px 4px 8px rgba(196, 196, 196, 0.8);
+  transform: rotate(0.05deg);
+}
+
+.frameParent55 .managementCheckIcon::before {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  left: calc(50% - 25px);
+  top: calc(50% - 25px);
+  border-radius: 50%;
+  background: #dfe6e9;
+  box-shadow:
+    8px 8px 16px #c6c6c9,
+    -8px -8px 16px #ffffff;
+  z-index: 0;
+}
+
+.frameParent55 .managementCheckMark {
+  position: absolute;
+  width: 36px;
+  height: 36px;
+  left: calc(50% - 18px);
+  top: calc(50% - 18px);
+  object-fit: contain;
+  z-index: 1;
+}
+
+.frameParent55 .managementCheckOuter,
+.frameParent55 .managementCheckGreen {
+  display: none;
+}
+
+.frameParent55 .organizeByCourse {
+  width: 351px;
+}
+.frameParent55 .manageFromOne {
+  width: 343px;
+}
+.frameParent55 .maintainContentVersions {
+  width: 306px;
+}
+.frameParent55 .updateWithoutDisruption {
+  width: 310px;
+}
+.frameParent55 .keepContentStructured {
+  width: 286px;
+}
+.frameParent55 .ensureConsistencyAcross {
+  width: 374px;
+}
+
+.frameParent55 .organizeByCourse,
+.frameParent55 .manageFromOne,
+.frameParent55 .maintainContentVersions,
+.frameParent55 .updateWithoutDisruption,
+.frameParent55 .keepContentStructured,
+.frameParent55 .ensureConsistencyAcross {
+  height: 37px;
+  margin: 0;
+  font-family: "Segoe UI";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #31344b;
+  display: block;
+  flex: none;
+  flex-grow: 0;
+  white-space: nowrap;
+}
+
+@media (max-width: 767px) {
+  .frameParent55 .frameWrapper62 {
+    width: 100%;
+    height: auto;
+    min-height: 565px;
+  }
+
+  .frameParent55 .frameWrapper63 {
+    position: relative;
+    width: 100%;
+    height: 550px;
+    left: 0;
+    top: 0;
+  }
+
+  .frameParent55 .frameWrapper64 {
+    width: calc(100% - 32px);
+    height: 518px;
+    left: 16px;
+    top: 16px;
+  }
+
+  .frameParent55 .frameParent58 {
+    width: calc(100% - 48px);
+    height: auto;
+    left: 24px;
+    top: 28px;
+    gap: 14px;
+  }
+
+  .frameParent55 .frameParent59 {
+    width: 100%;
+    height: 68px;
+    gap: 14px;
+  }
+
+  .frameParent55 .managementCheckIcon {
+    width: 60px;
+    height: 60px;
+  }
+
+  .frameParent55 .managementCheckIcon::before {
+    width: 44px;
+    height: 44px;
+    left: calc(50% - 22px);
+    top: calc(50% - 22px);
+  }
+
+  .frameParent55 .managementCheckMark {
+    width: 32px;
+    height: 32px;
+    left: calc(50% - 16px);
+    top: calc(50% - 16px);
+  }
+
+  .frameParent55 .organizeByCourse,
+  .frameParent55 .manageFromOne,
+  .frameParent55 .maintainContentVersions,
+  .frameParent55 .updateWithoutDisruption,
+  .frameParent55 .keepContentStructured,
+  .frameParent55 .ensureConsistencyAcross {
+    width: auto;
+    max-width: calc(100% - 74px);
+    height: auto;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: left;
+    white-space: normal;
+  }
+}
+
+.frameParent55 .centralizedContentBadge,
+.image20Parent4 .contentValueBadge {
+  position: relative;
+  z-index: 5;
+  margin: 0;
+  height: 50.2px;
+  border-radius: 28px;
+  background-color: #dfe6e9;
+  box-shadow:
+    inset -4px -4px 8px #ffffff,
+    inset 4px 4px 8px rgba(196, 196, 196, 0.8);
+  color: #2d4cc8;
+  font-family: "Segoe UI";
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 50.2px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  box-sizing: border-box;
+  visibility: visible;
+  opacity: 1;
+  overflow: visible;
+  flex-shrink: 0;
+}
+
+.frameParent55 .centralizedContentBadge {
+  width: 435.8px;
+}
+
+.image20Parent4 .contentValueBadge {
+  width: 289.5px;
+}
+
+.frameParent55 .frameParent56,
+.frameParent55 .frameParent57,
+.frameParent55 .organizeLearningContent,
+.image20Parent4 .frameParent65,
+.image20Parent4 .frameWrapper3,
+.image20Parent4 .frameWrapper66,
+.image20Parent4 .frameParent23,
+.image20Parent4 .turnExistingContent {
+  overflow: visible;
+  visibility: visible;
+  opacity: 1;
+}
+
+.frameParent55 .organizeLearningContent,
+.image20Parent4 .turnExistingContent {
+  height: auto;
+  min-height: 63px;
+  z-index: 4;
+}
+
+@media (min-width: 769px) and (max-width: 1023px), (min-width: 1025px) and (max-width: 1200px) {
+  .frameParent55 {
+    left: 4%;
+    width: 92%;
+    gap: 48px;
+  }
+
+  .frameParent55 .frameParent56 {
+    width: 42%;
+    min-width: 340px;
+  }
+
+  .frameParent55 .centralizedContentBadge {
+    width: min(435.8px, 100%);
+  }
+
+  .frameParent55 .organizeLearningContent {
+    width: 100%;
+    font-size: 40px;
+    line-height: 50px;
+  }
+
+  .frameParent55 .manageLearningResources {
+    width: 100%;
+    font-size: 22px;
+    line-height: 34px;
+  }
+
+  .frameParent55 .frameWrapper62 {
+    width: 54%;
+    min-width: 540px;
+  }
+
+  .frameParent55 .frameWrapper63 {
+    width: calc(100% - 40px);
+    left: 20px;
+  }
+
+  .frameParent55 .frameWrapper64 {
+    width: calc(100% - 32px);
+  }
+
+  .image20Parent4 {
+    left: 4%;
+    width: 92%;
+  }
+
+  .image20Parent4 .frameParent65 {
+    left: 5%;
+    width: 90%;
+  }
+
+  .image20Parent4 .frameWrapper66,
+  .image20Parent4 .frameParent23 {
+    width: 100%;
+  }
+
+  .image20Parent4 .turnExistingContent,
+  .image20Parent4 .neurolxpHelpsInstitutions {
+    width: 100%;
+  }
+
+  .image20Parent4 .turnExistingContent {
+    font-size: 40px;
+    line-height: 50px;
+  }
+
+  .image20Parent4 .neurolxpHelpsInstitutions {
+    height: auto;
+    font-size: 22px;
+    line-height: 34px;
+  }
+
+  .image20Parent4 .frameParent67 {
+    width: 94%;
+  }
+
+  .image20Parent4 .frameParent68,
+  .image20Parent4 .frameParent71,
+  .image20Parent4 .frameParent75 {
+    width: 100%;
+    gap: 24px;
+  }
+
+  .image20Parent4 .frameParent69,
+  .image20Parent4 .frameWrapper67,
+  .image20Parent4 .frameWrapper68,
+  .image20Parent4 .frameParent73 {
+    width: calc(50% - 12px);
+  }
+}
+
+@media (max-width: 767px) {
+  .frameParent55 {
+    position: relative;
+    top: auto;
+    left: auto;
+    width: calc(100% - 32px);
+    margin: 64px auto 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .frameParent55 .frameParent56,
+  .frameParent55 .frameParent57 {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+
+  .frameParent55 .centralizedContentBadge {
+    width: min(435.8px, 100%);
+    height: auto;
+    min-height: 50px;
+    padding: 10px 18px;
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  
+
+  .frameParent55 .manageLearningResources {
+    width: 100%;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
+  }
+
+  .frameParent55 .frameWrapper62 {
+    width: 100%;
+    min-height: 565px;
+  }
+
+  .frameParent55 .frameWrapper63 {
+    width: 100%;
+    left: 0;
+  }
+
+  .frameParent55 .frameWrapper64 {
+    width: calc(100% - 32px);
+  }
+
+  .image20Parent4 {
+    position: relative;
+    top: auto;
+    left: auto;
+    width: calc(100% - 32px);
+    height: auto;
+    min-height: 1050px;
+    margin: 64px auto 0;
+    overflow: visible;
+  }
+
+  .image20Parent4 .frameParent65 {
+    position: relative;
+    top: auto;
+    left: auto;
+    width: 100%;
+    padding: 32px 16px;
+    box-sizing: border-box;
+    gap: 36px;
+  }
+
+  .image20Parent4 .frameWrapper3,
+  .image20Parent4 .frameWrapper66,
+  .image20Parent4 .frameParent23 {
+    width: 100%;
+    height: auto;
+  }
+
+  .image20Parent4 .contentValueBadge {
+    width: min(289.5px, 100%);
+    height: auto;
+    min-height: 50px;
+    padding: 10px 18px;
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  .image20Parent4 .onePlatformManyFormatSmaParent {
+    height: auto;
+    gap: 20px;
+  }
+
+  .image20Parent4 .turnExistingContent {
+    width: 100%;
+    min-height: 0;
+    font-size: 28px;
+    line-height: 38px;
+  }
+
+  .image20Parent4 .neurolxpHelpsInstitutions {
+    width: 100%;
+    height: auto;
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  .image20Parent4 .frameParent67 {
+    width: 100%;
+    gap: 20px;
+  }
+
+  .image20Parent4 .frameParent68,
+  .image20Parent4 .frameParent71,
+  .image20Parent4 .frameParent75 {
+    width: 100%;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 20px;
+  }
+
+  .image20Parent4 .frameParent69,
+  .image20Parent4 .frameWrapper67,
+  .image20Parent4 .frameWrapper68,
+  .image20Parent4 .frameParent73 {
+    width: 100%;
+    min-height: 114px;
+  }
+
+  .image20Parent4 .buildEngagingExperiences,
+  .image20Parent4 .transformExistingResources,
+  .image20Parent4 .structureLearningJourneys,
+  .image20Parent4 .enableFlexibleLearning {
+    width: auto;
+    max-width: calc(100% - 200px);
+    height: auto;
+    white-space: normal;
+  }
+
+  .image20Parent4 .image206,
+  .image20Parent4 .arrowDownBig {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .frameParent55,
+  .image20Parent4 {
+    width: calc(100% - 24px);
+  }
+
+  
+
+  .frameParent55 .manageLearningResources,
+  .image20Parent4 .neurolxpHelpsInstitutions {
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  .image20Parent4 .frameParent69,
+  .image20Parent4 .frameWrapper67,
+  .image20Parent4 .frameWrapper68,
+  .image20Parent4 .frameParent73 {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+}
+
+.frameParent79,
+.frameParent80,
+.frameParent81,
+.frameParent83,
+.frameParent85,
+.frameParent86,
+.frameParent87,
+.frameParent88,
+.frameWrapper70,
+.frameParent89,
+.frameParent91,
+.rectangleParent5,
+.frameParent93,
+.frameParent94,
+.frameParent95 {
+  overflow: visible;
+}
+
+.learningScaleBadge,
+.whyNeurolxpBadge {
+  margin: 0;
+  height: 50.2px;
+  border-radius: 28px;
+  background: #dfe6e9;
+  box-shadow:
+    -4px -4px 8px #ffffff,
+    4px 4px 8px rgba(196, 196, 196, 0.8);
+  color: #2d4cc8;
+  font-family: "Segoe UI";
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 50.2px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  box-sizing: border-box;
+  visibility: visible;
+  opacity: 1;
+  position: relative;
+  z-index: 5;
+  flex-shrink: 0;
+}
+
+.learningScaleBadge {
+  width: 346.8px;
+}
+
+.whyNeurolxpBadge {
+  width: 238.6px;
+}
+
+.onePlatformFor,
+.neurolxpSupportsOrganization,
+.corporate,
+.supportEmployeeGrowth,
+.createStructuredAnd,
+.turnExistingContent,
+.neurolxpHelpsInstitutions,
+.forEducators,
+.lessContentWork,
+.accessFocusedResources,
+.manageContentAt {
+  visibility: visible;
+  opacity: 1;
+  overflow: visible;
+  position: relative;
+  z-index: 4;
+}
+
+.onePlatformFor,
+.turnExistingContent {
+  height: auto;
+  min-height: 63px;
+}
+
+.frameChild40,
+.frameChild41,
+.frameChild42 {
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+.frameChild38,
+.frameChild39 {
+  object-fit: contain;
+  display: block;
+  position: relative;
+  z-index: 6;
+}
+
+.intelligenceFeatureIcon {
+  width: 81px;
+  height: 81px;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.intelligenceFeatureOuter {
+  position: absolute;
+  inset: 0;
+  width: 81px;
+  height: 81px;
+  object-fit: contain;
+  z-index: 0;
+}
+
+.intelligenceFeatureColor {
+  position: absolute;
+  left: 5.5px;
+  top: 5.5px;
+  width: 70px;
+  height: 70px;
+  object-fit: contain;
+  z-index: 1;
+}
+
+.intelligenceFeatureGlyph {
+  position: absolute;
+  left: 24.5px;
+  top: 24.5px;
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+  z-index: 2;
+}
+
+.frameParent81,
+.frameParent57,
+.frameParent91 .frameParent23,
+.frameParent91 .onePlatformManyFormatSmaParent,
+.forEducatorsParent {
+  height: auto;
+}
+
+.forEducators,
+.lessContentWork,
+.accessFocusedResources,
+.manageContentAt {
+  width: 100%;
+
+  white-space: normal;
+}
+
+@media (min-width: 769px) and (max-width: 1023px), (min-width: 1025px) and (max-width: 1200px) {
+  .frameParent79 {
+    left: 4%;
+    width: 92%;
+  }
+
+  .frameParent80 {
+    width: 100%;
+    gap: 36px;
+  }
+
+  .frameParent81 {
+    width: 38%;
+  }
+
+  .learningScaleBadge {
+    width: min(346.8px, 100%);
+  }
+
+  .onePlatformFor {
+    width: 100%;
+    font-size: 40px;
+    line-height: 50px;
+  }
+
+  .neurolxpSupportsOrganization {
+    width: 100%;
+    font-size: 22px;
+    line-height: 34px;
+  }
+
+  .frameParent83 {
+    width: 58%;
+  }
+
+  .frameParent85,
+  .frameParent86 {
+    width: 100%;
+  }
+
+  .frameParent87,
+  .frameParent88,
+  .frameWrapper70 {
+    transform: scale(0.82);
+    transform-origin: center;
+  }
+
+  .frameParent91 {
+    width: 92%;
+    left: 4%;
+  }
+
+  .frameParent91 .frameWrapper4,
+  .frameParent91 .frameParent23 {
+    width: 100%;
+  }
+
+  .turnExistingContent,
+  .neurolxpHelpsInstitutions {
+    width: 100%;
+  }
+
+  .turnExistingContent {
+    font-size: 40px;
+    line-height: 50px;
+  }
+
+  .neurolxpHelpsInstitutions {
+    font-size: 22px;
+    line-height: 34px;
+  }
+
+  .rectangleParent5 {
+    width: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+  .frameParent79 {
+    position: relative;
+    top: auto;
+    left: auto;
+    width: calc(100% - 32px);
+    height: auto;
+    margin: 64px auto 0;
+  }
+
+  .frameParent80 {
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    gap: 36px;
+  }
+
+  .frameParent81,
+  .frameParent57 {
+    width: 100%;
+    height: auto;
+    align-items: center;
+    text-align: center;
+  }
+
+  .learningScaleBadge {
+    width: min(346.8px, 100%);
+    height: auto;
+    min-height: 50px;
+    padding: 10px 18px;
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  .onePlatformFor {
+    width: 100%;
+    min-height: 0;
+    font-size: 28px;
+    line-height: 38px;
+    text-align: center;
+  }
+
+  .neurolxpSupportsOrganization {
+    width: 100%;
+    height: auto;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
+  }
+
+  .frameParent83,
+  .frameParent85,
+  .frameParent86 {
+    width: 100%;
+    height: auto;
+  }
+
+  .frameParent86 {
+    display: flex;
+    justify-content: center;
+    min-height: 430px;
+  }
+
+  .frameParent87,
+  .frameParent88,
+  .frameWrapper70 {
+    transform: scale(0.72);
+    transform-origin: center top;
+  }
+
+  .frameParent84 {
+    width: 100%;
+    justify-content: center;
+    gap: 32px;
+  }
+
+  .frameChild38,
+  .frameChild39 {
+    width: 64px;
+    height: 64px;
+  }
+
+  .frameParent90 {
+    position: relative;
+    top: auto;
+    left: auto;
+    margin: -48px auto 0;
+  }
+
+  .frameParent91 {
+    position: relative;
+    top: auto;
+    left: auto;
+    width: calc(100% - 32px);
+    height: auto;
+    margin: 64px auto 0;
+  }
+
+  .frameParent91 .frameWrapper4,
+  .frameParent91 .frameParent23,
+  .frameParent91 .onePlatformManyFormatSmaParent {
+    width: 100%;
+    height: auto;
+  }
+
+  .whyNeurolxpBadge {
+    width: min(238.6px, 100%);
+    height: auto;
+    min-height: 50px;
+    padding: 10px 18px;
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  .turnExistingContent {
+    width: 100%;
+    min-height: 0;
+    font-size: 28px;
+    line-height: 38px;
+  }
+
+  .neurolxpHelpsInstitutions {
+    width: 100%;
+    height: auto;
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  .rectangleParent5 {
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .frameParent93,
+  .frameParent94,
+  .frameParent95 {
+    position: relative;
+    top: auto;
+    left: auto;
+    width: 100%;
+    min-height: 220px;
+    box-sizing: border-box;
+  }
+
+  .frameChild48,
+  .frameChild49,
+  .frameChild51 {
+    display: none;
+  }
+
+  .intelligenceFeatureIcon {
+    width: 70px;
+    height: 70px;
+  }
+
+  .intelligenceFeatureOuter {
+    width: 70px;
+    height: 70px;
+  }
+
+  .intelligenceFeatureColor {
+    width: 60px;
+    height: 60px;
+    left: 5px;
+    top: 5px;
+  }
+
+  .intelligenceFeatureGlyph {
+    width: 28px;
+    height: 28px;
+    left: 21px;
+    top: 21px;
+  }
+
+  .forEducators {
+    font-size: 22px;
+    line-height: 30px;
+  }
+
+  .lessContentWork,
+  .accessFocusedResources,
+  .manageContentAt {
+    font-size: 18px;
+    line-height: 28px;
+  }
+}
+
+@media (max-width: 480px) {
+  .frameParent79,
+  .frameParent91 {
+    width: calc(100% - 24px);
+  }
+
+  .onePlatformFor,
+  .turnExistingContent {
+    font-size: 24px;
+    line-height: 34px;
+  }
+
+  .neurolxpSupportsOrganization,
+  .neurolxpHelpsInstitutions,
+  .lessContentWork,
+  .accessFocusedResources,
+  .manageContentAt {
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  .frameParent87,
+  .frameParent88,
+  .frameWrapper70 {
+    transform: scale(0.62);
+  }
+}
+
+.frameParent79 .frameParent83 {
+  overflow: visible;
+}
+
+.frameParent79 .frameParent85,
+.frameParent79 .frameParent86 {
+  overflow: visible;
+}
+
+.frameParent79 .frameParent87,
+.frameParent79 .frameParent88,
+.frameParent79 .frameWrapper70 {
+  overflow: hidden;
+  box-sizing: border-box;
+  isolation: isolate;
+}
+
+.frameParent79 .frameParent87 {
+  z-index: 1;
+}
+
+.frameParent79 .frameParent88 {
+  z-index: 2;
+}
+
+.frameParent79 .frameWrapper70 {
+  z-index: 3;
+}
+
+.frameParent79 .frameChild40 {
+  border-radius: 50px 50px 0 100px;
+  overflow: hidden;
+}
+
+.frameParent79 .frameChild41 {
+  border-radius: 50px 50px 0 150px;
+  overflow: hidden;
+}
+
+.frameParent79 .frameChild42 {
+  border-radius: 50px 50px 0 200px;
+  overflow: hidden;
+}
+
+.frameParent79 .corporateParent,
+.frameParent79 .schoolsDigitalLearningParent,
+.frameParent79 .higherEducationParent {
+  box-sizing: border-box;
+  overflow: hidden;
+  z-index: 4;
+}
+
+.frameParent79 .corporateParent {
+  top: 247px;
+  left: 27px;
+  width: 268px;
+  height: 130px;
+  padding: 0 8px;
+}
+
+.frameParent79 .schoolsDigitalLearningParent {
+  top: 300px;
+  left: 40px;
+  width: 325px;
+  height: 142px;
+  padding: 0 10px;
+}
+
+.frameParent79 .higherEducationParent {
+  width: 325px;
+  min-height: 130px;
+  padding: 0 8px 20px;
+  box-sizing: border-box;
+}
+
+.frameParent79 .corporate,
+.frameParent79 .supportEmployeeGrowth,
+.frameParent79 .createStructuredAnd {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  min-height: 0;
+  margin: 0;
+  display: block;
+  overflow: visible;
+  white-space: normal;
+  overflow-wrap: anywhere;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.frameParent79 .corporate {
+  line-height: 32px;
+}
+
+.frameParent79 .supportEmployeeGrowth,
+.frameParent79 .createStructuredAnd {
+  line-height: 28px;
+}
+
+.frameParent79 .frameParent84 {
+  position: absolute;
+  top: 603px;
+  left: 438px;
+  width: 220px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+  overflow: visible;
+}
+
+.frameParent79 .learningArrowButton {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: #dfe6e9;
+  box-shadow:
+    inset -4px -4px 8px #ffffff,
+    inset 4px 4px 8px rgba(196, 196, 196, 0.8);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 80px;
+  box-sizing: border-box;
+}
+
+.frameParent79 .learningArrowInner {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: #dfe6e9;
+  box-shadow:
+    -4px -4px 8px #ffffff,
+    4px 4px 8px rgba(196, 196, 196, 0.8);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.frameParent79 .learningArrowIcon {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+  display: block;
+}
+
+.frameParent79 .frameChild38,
+.frameParent79 .frameChild39 {
+  display: none;
+}
+
+@media (max-width: 1023px), (min-width: 1025px) and (max-width: 1200px) {
+  .frameParent79 .frameParent87,
+  .frameParent79 .frameParent88,
+  .frameParent79 .frameWrapper70 {
+    transform-origin: center top;
+  }
+
+  .frameParent79 .corporateParent,
+  .frameParent79 .schoolsDigitalLearningParent,
+  .frameParent79 .higherEducationParent {
+    overflow: hidden;
+  }
+}
+
+@media (max-width: 767px) {
+  .frameParent79 .frameParent84 {
+    position: relative;
+    top: auto;
+    left: auto;
+    width: 188px;
+    height: 68px;
+    margin: 0 auto;
+    gap: 52px;
+  }
+
+  .frameParent79 .learningArrowButton {
+    width: 68px;
+    height: 68px;
+    flex-basis: 68px;
+  }
+
+  .frameParent79 .learningArrowInner {
+    width: 52px;
+    height: 52px;
+  }
+
+  .frameParent79 .learningArrowIcon {
+    width: 28px;
+    height: 28px;
+  }
+}
+
+.frameParent91 .intelligenceFeatureIcon {
+  width: 81px;
+  height: 81px;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background: #dfe6e9;
+  box-shadow:
+    inset -4px -4px 8px #ffffff,
+    inset 4px 4px 8px rgba(196, 196, 196, 0.8);
+  box-sizing: border-box;
+}
+
+.frameParent91 .intelligenceFeatureOuter {
+  display: none;
+}
+
+.frameParent91 .intelligenceFeatureColor {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  object-fit: contain;
+  z-index: 1;
+}
+
+.frameParent91 .intelligenceFeatureGlyph {
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  object-fit: contain;
+  z-index: 2;
+}
+
+@media (max-width: 767px) {
+  .frameParent91 .intelligenceFeatureIcon {
+    width: 70px;
+    height: 70px;
+  }
+
+  .frameParent91 .intelligenceFeatureColor {
+    width: 52px;
+    height: 52px;
+  }
+
+  .frameParent91 .intelligenceFeatureGlyph {
+    width: 28px;
+    height: 28px;
+  }
+}
+
+.intelligenceFeatureGlyph,
+.whyNeuroIcon img,
+.intelligenceFeatureIcon img {
+  background: transparent !important;
+  background-color: transparent !important;
+  border: 0 !important;
+  box-shadow: none !important;
+}
+
+.intelligenceFeatureGlyph {
+  display: block;
+  object-fit: contain;
+}
+
+.frameParent94 .intelligenceFeatureIcon {
+  background: transparent;
+  box-shadow: none;
+}
+
+.frameParent94 .learnerCombinedIcon {
+  width: 70px;
+  height: 70px;
+  display: block;
+  object-fit: contain;
+  background: transparent;
+  border: 0;
+  box-shadow: none;
+}
+
+@media (max-width: 767px) {
+  .frameParent94 .learnerCombinedIcon {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+.frameParent93 .intelligenceFeatureIcon,
+.frameParent95 .intelligenceFeatureIcon {
+  width: 70px;
+  height: 70px;
+  position: relative;
+  background: transparent;
+  box-shadow: none;
+}
+
+.frameParent93 .combinedIntelligenceIcon,
+.frameParent95 .combinedIntelligenceIcon {
+  width: 70px;
+  height: 70px;
+  display: block;
+  object-fit: contain;
+  background: transparent;
+  border: 0;
+  box-shadow: none;
+}
+
+.frameParent93 .intelligenceFeatureIcon,
+.frameParent95 .intelligenceFeatureIcon {
+  position: relative;
+}
+
+.frameParent93 .embeddedFeatureGlyph,
+.frameParent95 .embeddedFeatureGlyph {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 32px;
+  height: 32px;
+  transform: translate(-50%, -50%);
+  object-fit: contain;
+  background: transparent;
+  border: 0;
+  box-shadow: none;
+  z-index: 2;
+}
+
+.frameParent79 {
+  left: 50%;
+  width: min(1316px, calc(100% - 64px));
+  transform: translateX(-50%);
+  box-sizing: border-box;
+}
+
+.frameParent79 .frameParent80 {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.frameParent79 .frameParent81 {
+  min-width: 0;
+  box-sizing: border-box;
+}
+
+.frameParent79 .onePlatformFor,
+.frameParent79 .neurolxpSupportsOrganization {
+  max-width: 100%;
+  box-sizing: border-box;
+  overflow-wrap: break-word;
+}
+
+.frameParent79 .frameParent83 {
+  flex: 0 0 694px;
+  min-width: 694px;
+  overflow: visible;
+  box-sizing: border-box;
+}
+
+.frameParent79 .frameParent85,
+.frameParent79 .frameParent86 {
+  left: 0;
+  width: 694px;
+  max-width: 694px;
+}
+
+.frameParent79 .frameWrapper70 {
+  left: 0;
+}
+
+.frameParent79 .frameParent88 {
+  left: 208px;
+}
+
+.frameParent79 .frameParent87 {
+  left: 372px;
+}
+
+.frameParent79 .frameParent90 {
+  left: 186px;
+  font-size: 32px !important;
+}
+
+.frameParent79 .frameParent84 {
+  left: 438px;
+}
+
+@media (min-width: 1101px) and (max-width: 1380px) {
+  .frameParent79 {
+    width: calc(100% - 48px);
+  }
+
+  .frameParent79 .frameParent80 {
+    gap: 32px;
+  }
+
+  .frameParent79 .frameParent81 {
+    width: calc(100% - 726px);
+    min-width: 430px;
+  }
+
+  .frameParent79 .onePlatformFor,
+  .frameParent79 .neurolxpSupportsOrganization {
+    width: 100%;
+  }
+
+  .frameParent79 .onePlatformFor {
+    font-size: 42px;
+    line-height: 54px;
+  }
+
+  .frameParent79 .neurolxpSupportsOrganization {
+    font-size: 24px;
+    line-height: 36px;
+  }
+}
+
+@media (min-width: 1201px) {
+  .frameParent79 {
+    left: 50%;
+    width: 1316px;
+    transform: translateX(-50%);
+    box-sizing: border-box;
+  }
+
+  .frameParent79 .frameParent80 {
+    width: 1316px;
+    display: grid;
+    grid-template-columns: 553px 694px;
+    align-items: center;
+    column-gap: 69px;
+    box-sizing: border-box;
+  }
+
+  .frameParent79 .frameParent81 {
+    width: 553px;
+    min-width: 553px;
+  }
+
+  .frameParent79 .frameParent83 {
+    width: 694px;
+    min-width: 694px;
+    height: 683px;
+    overflow: visible;
+  }
+
+  .frameParent79 .frameParent85,
+  .frameParent79 .frameParent86 {
+    width: 694px;
+    height: 603px;
+    left: 0;
+  }
+
+  .frameParent79 .frameWrapper70 {
+    left: 0;
+  }
+
+  .frameParent79 .frameParent88 {
+    left: 208px;
+  }
+
+  .frameParent79 .frameParent87 {
+    left: 372px;
+  }
+
+  .frameParent79 .frameParent90 {
+    left: 186px;
+  }
+
+  .frameParent79 .frameParent84 {
+    left: 438px;
+  }
+}
+
+.frameParent79 .frameParent86 {
+  overflow: visible;
+}
+
+.frameParent79 .frameParent87,
+.frameParent79 .frameParent88,
+.frameParent79 .frameWrapper70 {
+  transition:
+    left 0.35s ease,
+    top 0.35s ease,
+    width 0.35s ease,
+    height 0.35s ease,
+    opacity 0.35s ease;
+}
+
+.frameParent79 .learningArrowButton {
+  appearance: none;
+  -webkit-appearance: none;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+}
+
+.frameParent79 .learningArrowButton:focus-visible {
+  outline: 3px solid #2d4cc8;
+  outline-offset: 4px;
+}
+
+.frameParent79 .frameParent90 button {
+  appearance: none;
+  -webkit-appearance: none;
+  padding: 0;
+  border: 0;
+  cursor: pointer;
+}
+
+.frameParent79 .frameParent90 .frameChild43 {
+  height: 15px;
+  width: 34px;
+  border-radius: 32px;
+  background-color: #2d4cc8;
+  flex-shrink: 0;
+}
+
+.frameParent79 .frameParent90 .ellipseDiv {
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background-color: rgba(47, 53, 71, 0.1);
+  flex-shrink: 0;
+}
+
+.frameParent79 .frameParent90 button:focus-visible {
+  outline: 2px solid #2d4cc8;
+  outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .frameParent79 .frameParent87,
+  .frameParent79 .frameParent88,
+  .frameParent79 .frameWrapper70 {
+    transition: none;
+  }
+}
+
+.frameParent > .frameChild {
+  width: 100%;
+  height: 100%;
+  left: -29px;
+  object-fit: fill;
+  object-position: center top;
+}
+
+.headerContentExperienceBadge {
+  width: 283.6px;
+  height: 50.2px;
+  margin: 0;
+  position: relative;
+  z-index: 2;
+  border-radius: 28px;
+  background-color: #dfe6e9;
+  box-shadow:
+    -4px -4px 8px #ffffff,
+    4px 4px 8px rgba(196, 196, 196, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  color: #2d4cc8;
+  font-family: "Segoe UI";
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 36px;
+  letter-spacing: 0.03em;
+}
+
+.headerBookDemoButton {
+  width: 295.5px;
+  height: 60.2px;
+  padding: 0 28px;
+  position: relative;
+  z-index: 2;
+  border: 0;
+  border-radius: 8px;
+  background-color: #dfe6e9;
+  box-shadow:
+    -4px -4px 8px #ffffff,
+    4px 4px 8px rgba(196, 196, 196, 0.8);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  box-sizing: border-box;
+  color: #2d4cc8;
+  font-family: "Segoe UI";
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 32px;
+  cursor: pointer;
+}
+
+.headerBookDemoArrow {
+  width: 24px;
+  height: 24px;
+  display: block;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.headerBookDemoButton:focus-visible {
+  outline: 3px solid #2d4cc8;
+  outline-offset: 4px;
+}
+
+.frameParent37 .compatibilitySwitchGrid {
+  align-self: stretch;
+  display: grid;
+  grid-template-columns: repeat(3, 401px);
+  gap: 50px 32px;
+  align-items: start;
+  font-size: 24px;
+}
+
+.frameParent37 .compatibilitySwitchCard {
+  width: 401px;
+  height: 193px;
+  position: relative;
+  overflow: visible;
+  box-sizing: border-box;
+  border-radius: 16px 16px 32px 32px;
+  background: #dfe6e9;
+  box-shadow:
+    10px 10px 20px #c4c4c4,
+    -10px -10px 20px #fff;
+}
+
+.frameParent37 .compatibilitySwitchCardOpen {
+  height: 487px;
+  border-bottom: 4px solid currentColor;
+  border-radius: 16px 16px 40px 40px;
+}
+
+.frameParent37 .compatibilitySwitchHeader {
+  width: 401px;
+  height: 193px;
+  padding: 39px 32px 16px;
+  box-sizing: border-box;
+  border-radius: 16px 16px 32px 32px;
+  background: #dfe6e9;
+  box-shadow: 0 14px 20px rgba(196, 196, 196, 0.8);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  position: relative;
+  z-index: 2;
+}
+
+.frameParent37 .compatibilitySwitchTitle {
+  width: 336px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.frameParent37 .compatibilitySwitchTitle .documentsPresentations {
+  width: 336px;
+  height: 34px;
+  line-height: 32px;
+  color: currentColor;
+}
+
+.frameParent37 .compatibilitySwitchButton {
+  width: 40px;
+  height: 40px;
+  padding: 4px;
+  border: 0;
+  border-radius: 8px;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.frameParent37 .compatibilitySwitchButton:focus-visible {
+  outline: 3px solid #2d4cc8;
+  outline-offset: 2px;
+}
+
+.frameParent37 .compatibilitySwitchCardOpen .compatibilitySwitchButton .arrowDownDoubleIcon {
+  transform: rotate(180deg);
+}
+
+.frameParent37 .compatibilitySwitchDetails {
+  width: 401px;
+  height: 294px;
+  padding: 39px 47px 28px;
+  box-sizing: border-box;
+  border-radius: 0 0 38px 38px;
+  background: #dfe6e9;
+  box-shadow:
+    inset 8px 8px 16px rgba(196, 196, 196, 0.8),
+    inset -8px -8px 16px #fff;
+}
+
+.frameParent37 .compatibilitySwitchList {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.frameParent37 .compatibilitySwitchItem {
+  min-height: 29px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  color: #31344b;
+  font-family: "Segoe UI";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0.03em;
+  text-align: left;
+}
+
+.frameParent37 .compatibilitySwitchCheck {
+  width: 32px;
+  height: 32px;
+  flex: 0 0 32px;
+  border-radius: 50%;
+  background: #dfe6e9;
+  box-shadow:
+    -4px -4px 8px #fff,
+    4px 4px 8px rgba(196, 196, 196, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.frameParent37 .compatibilitySwitchCheck img {
+  width: 24px;
+  height: 24px;
+  display: block;
+}
+
+.frameParent37 .compatibilityBlue {
+  color: #2d4cc8;
+}
+
+.frameParent37 .compatibilityPink {
+  color: #bf1869;
+}
+
+.frameParent37 .compatibilityOrange {
+  color: #8f3d0b;
+}
+
+.frameParent37 .compatibilityPurple {
+  color: #67096e;
+}
+
+.frameParent37 .compatibilityGreen {
+  color: #2a7308;
+}
+
+.frameParent37 .compatibilityGold {
+  color: #675300;
+}
+
+.contentIntelligenceManagem.compatibilityCardIsOpen {
+  height: 6986px;
+}
+
+.contentIntelligenceManagem.compatibilityCardIsOpen > .frameParent55,
+.contentIntelligenceManagem.compatibilityCardIsOpen > .image20Parent4,
+.contentIntelligenceManagem.compatibilityCardIsOpen > .frameParent79,
+.contentIntelligenceManagem.compatibilityCardIsOpen > .frameParent96 {
+  transform: translateY(294px) !important;
+}
+
+.contentIntelligenceManagem.compatibilityCardIsOpen .frameParent79 .frameParent91 {
+  transform: none !important;
+}
+
+@media (min-width: 1201px) {
+  .contentIntelligenceManagem.compatibilityCardIsOpen > .frameParent79 {
+    transform: translate(-50%, 294px) !important;
+  }
+}
+
+@media (max-width: 1023px), (min-width: 1025px) and (max-width: 1100px) {
+  .frameParent37 .compatibilitySwitchGrid {
+    grid-template-columns: repeat(2, 401px);
+    justify-content: center;
+  }
+}
+
+@media (max-width: 760px) {
+  .frameParent37 .compatibilitySwitchGrid {
+    grid-template-columns: minmax(0, 401px);
+    gap: 32px;
+    justify-content: center;
+  }
+
+  .frameParent37 .compatibilitySwitchCard,
+  .frameParent37 .compatibilitySwitchHeader,
+  .frameParent37 .compatibilitySwitchDetails {
+    width: min(401px, calc(100vw - 32px));
+  }
+
+  .frameParent37 .compatibilitySwitchTitle,
+  .frameParent37 .compatibilitySwitchTitle .documentsPresentations {
+    width: 100%;
+  }
+
+  .frameParent37 .compatibilitySwitchItem {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+.frameParent37 .compatibilitySwitchTitle .contentFormatIcon {
+  width: 70px;
+  height: 70px;
+  flex: 0 0 70px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0;
+  border-radius: 50%;
+  padding: 0;
+  overflow: hidden;
+  background: #dfe6e9;
+  box-shadow:
+    inset -4px -4px 8px #ffffff,
+    inset 4px 4px 8px rgba(196, 196, 196, 0.8);
+}
+
+.frameParent37 .compatibilitySwitchTitle .contentFormatGlyph {
+  position: relative;
+  z-index: 1;
+  width: 50px;
+  height: 50px;
+  box-sizing: border-box;
+  padding: 11px;
+  display: block;
+  object-fit: contain;
+  border: 0;
+  border-radius: 50%;
+  box-shadow: none;
+  margin: 0;
+}
+
+.frameParent37 .compatibilityBlue .contentFormatGlyph {
+  background: #2d4cc8;
+}
+
+.frameParent37 .compatibilityPink .contentFormatGlyph {
+  background: #bf1869;
+}
+
+.frameParent37 .compatibilityOrange .contentFormatGlyph {
+  background: #c05512;
+}
+
+.frameParent37 .compatibilityPurple .contentFormatGlyph {
+  background: #67096e;
+}
+
+.frameParent37 .compatibilityGreen .contentFormatGlyph {
+  background: #2a7308;
+}
+
+.frameParent37 .compatibilityGold .contentFormatGlyph {
+  background: #907507;
+}
+
+.frameParent37 .compatibilitySwitchTitle .contentFormatOpenIcon {
+  width: 24px;
+  height: 24px;
+  display: block;
+  object-fit: contain;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+  padding: 0;
+  margin: 0;
+}
+
+.frameParent37 .compatibilitySwitchButton {
+  transform: translateY(-10px);
+}
+
+.frameParent37 .compatibilitySwitchGrid {
+  justify-items: center;
+}
+
+.frameParent37 .compatibilitySwitchCardOpen {
+  height: auto;
+  min-height: 0;
+  border-bottom: 0;
+  overflow: visible;
+}
+
+.frameParent37 .compatibilitySwitchHeader {
+  margin: 0 auto;
+  justify-content: flex-start;
+  text-align: center;
+}
+
+.frameParent37 .compatibilitySwitchTitle {
+  margin: 0 auto;
+  justify-content: center;
+  text-align: center;
+}
+
+.frameParent37 .compatibilitySwitchTitle .documentsPresentations {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.frameParent37 .compatibilitySwitchButton {
+  margin-left: auto;
+  margin-right: auto;
+  flex: 0 0 40px;
+  transform: translateY(-10px);
+}
+
+.frameParent37 .compatibilitySwitchButton .arrowDownDoubleIcon {
+  display: block;
+  margin: 0 auto;
+}
+
+.frameParent37 .compatibilitySwitchDetails {
+  width: 401px;
+  height: auto;
+  min-height: 0;
+  padding: 36px 47px 28px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+  border-radius: 0 0 38px 38px;
+  border-bottom: 4px solid currentColor;
+}
+
+.frameParent37 .compatibilitySwitchList {
+  width: max-content;
+  max-width: 100%;
+  margin: 0 auto;
+  align-items: stretch;
+}
+
+.frameParent37 .compatibilitySwitchItem {
+  width: 100%;
+  justify-content: flex-start;
+  text-align: left;
+}
+
+.frameParent37 .compatibilitySwitchCardOpen .compatibilitySwitchDetails {
+  position: relative;
+  z-index: 1;
+}
+
+.frameParent37 .compatibilitySwitchCardOpen .compatibilitySwitchTitle .contentFormatIcon {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.frameParent37 .compatibilitySwitchCardOpen .compatibilitySwitchButton {
+  margin-left: auto;
+  margin-right: auto;
+  transform: translateY(-10px);
+}
+
+@media (max-width: 760px) {
+  .frameParent37 .compatibilitySwitchDetails {
+    width: min(401px, calc(100vw - 32px));
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+
+.frameParent37 .compatibilitySwitchHeader {
+  padding: 16px 32px 10px;
+  justify-content: center;
+  gap: 4px;
+  text-align: center;
+}
+
+.frameParent37 .compatibilitySwitchTitle {
+  width: 336px;
+  margin: 0 auto;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.frameParent37 .compatibilitySwitchTitle .documentsPresentations {
+  width: 336px;
+  height: 34px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 32px;
+  text-align: center;
+  font-size: 24px;
+}
+
+.frameParent37 .compatibilitySwitchButton,
+.frameParent37 .compatibilitySwitchCardOpen .compatibilitySwitchButton {
+  width: 40px;
+  height: 32px;
+  min-height: 32px;
+  flex: 0 0 32px;
+  padding: 0;
+  margin: 0 auto;
+  transform: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.frameParent37 .compatibilitySwitchButton .arrowDownDoubleIcon {
+  width: 32px;
+  height: 32px;
+  display: block;
+  margin: 0 auto;
+}
+
+.frameParent37 .compatibilitySwitchCardOpen .compatibilitySwitchTitle .contentFormatIcon {
+  width: 70px;
+  height: 70px;
+  flex: 0 0 70px;
+  position: relative;
+  margin: 0 auto;
+  overflow: visible;
+  border-radius: 50%;
+  background: #dfe6e9;
+  box-shadow:
+    inset -4px -4px 8px #ffffff,
+    inset 4px 4px 8px rgba(196, 196, 196, 0.8);
+}
+
+.frameParent37 .compatibilitySwitchCardOpen .compatibilitySwitchTitle .contentFormatIcon::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #dfe6e9;
+  box-shadow:
+    -4px -4px 8px #ffffff,
+    4px 4px 8px rgba(196, 196, 196, 0.8);
+}
+
+.frameParent37 .compatibilitySwitchCardOpen .compatibilitySwitchTitle .contentFormatOpenIcon {
+  position: absolute;
+  top: 23px;
+  left: 23px;
+  z-index: 2;
+  width: 24px;
+  height: 24px;
+  display: block;
+  object-fit: contain;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .image21Parent,
+  .compatibilitySwitchCard,
+  .frameParent69,
+  .frameWrapper67,
+  .frameWrapper68,
+  .frameParent73,
+  .deliverWrapper,
+  .improveWrapper,
+  .frameChild49 {
+    transition:
+      transform 0.3s ease,
+      box-shadow 0.3s ease;
+    will-change: transform;
+  }
+
+  .image21Parent:hover,
+  .compatibilitySwitchCard:hover,
+  .frameParent69:hover,
+  .frameWrapper67:hover,
+  .frameWrapper68:hover,
+  .frameParent73:hover,
+  .deliverWrapper:hover,
+  .improveWrapper:hover,
+  .frameChild49:hover {
+    transform: translateY(-6px);
+    box-shadow:
+      -12px -12px 24px rgba(255, 255, 255, 0.95),
+      12px 12px 24px rgba(164, 171, 175, 0.72);
+  }
+
+  .frameWrapper36,
+  .frameWrapper37,
+  .frameChild48,
+  .frameChild51 {
+    transition:
+      transform 0.3s ease,
+      box-shadow 0.3s ease;
+    will-change: transform;
+  }
+
+  .frameWrapper36:hover,
+  .frameWrapper37:hover,
+  .frameChild48:hover,
+  .frameChild51:hover {
+    transform: translateY(-4px);
+    box-shadow:
+      inset -4px -4px 8px #ffffff,
+      inset 4px 4px 8px rgba(196, 196, 196, 0.8),
+      -8px -8px 16px rgba(255, 255, 255, 0.9),
+      8px 8px 16px rgba(164, 171, 175, 0.55);
+  }
+
+  .compatibilitySwitchCardOpen:hover {
+    transform: translateY(-4px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .image21Parent,
+  .compatibilitySwitchCard,
+  .frameParent69,
+  .frameWrapper67,
+  .frameWrapper68,
+  .frameParent73,
+  .deliverWrapper,
+  .improveWrapper,
+  .frameChild49,
+  .frameWrapper36,
+  .frameWrapper37,
+  .frameChild48,
+  .frameChild51 {
+    transition: none;
+  }
+}
+
+.headerContentExperienceBadge,
+.contentCreationBadge,
+.contentCompatibilityBadge,
+.centralizedContentBadge,
+.contentValueBadge,
+.learningScaleBadge,
+.whyNeurolxpBadge {
+  background-color: #dfe6e9;
+  box-shadow:
+    inset -4px -4px 8px #ffffff,
+    inset 4px 4px 8px rgba(196, 196, 196, 0.8);
+}
+
+@media (max-width: 767px) {
+  html,
+  body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  .contentIntelligenceManagem {
+    width: 100% !important;
+    height: auto !important;
+    min-height: 100vh;
+    overflow: visible !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: stretch !important;
+    gap: 48px !important;
+    padding: 0 0 48px !important;
+    position: relative !important;
+    font-family: "Segoe UI" !important;
+  }
+
+  .contentIntelligenceManagem > .frameParent4 {
+    position: absolute !important;
+    top: 16px !important;
+    left: 16px !important;
+    right: 16px !important;
+    width: auto !important;
+    max-width: calc(100% - 32px) !important;
+    z-index: 50 !important;
+    display: flex !important;
+    flex-wrap: wrap !important;
+    gap: 6px 8px !important;
+    font-size: 14px !important;
+    line-height: 22px !important;
+    font-family: "Segoe UI" !important;
+  }
+
+  .contentIntelligenceManagem > .frameParent,
+  .contentIntelligenceManagem > .frameParent22,
+  .contentIntelligenceManagem > .rectangleParent,
+  .contentIntelligenceManagem > .frameParent37,
+  .contentIntelligenceManagem > .frameParent55,
+  .contentIntelligenceManagem > .image20Parent4,
+  .contentIntelligenceManagem > .frameParent79,
+  .contentIntelligenceManagem > .frameParent96 {
+    position: relative !important;
+    inset: auto !important;
+    top: auto !important;
+    right: auto !important;
+    bottom: auto !important;
+    left: auto !important;
+    width: calc(100% - 32px) !important;
+    height: auto !important;
+    min-height: 0 !important;
+    margin: 0 16px !important;
+    
+    overflow: visible !important;
+    flex: none !important;
+  }
+
+  .contentIntelligenceManagem > .frameParent {
+    width: 100% !important;
+    margin: 0 !important;
+    min-height: 590px !important;
+    padding: 88px 16px 48px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+
+  .frameParent > .frameChild {
+    position: absolute !important;
+    inset: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    max-width: none !important;
+    object-fit: cover !important;
+  }
+
+  .frameParent > .frameGroup {
+    position: relative !important;
+    inset: auto !important;
+    width: 100% !important;
+    height: auto !important;
+    padding: 0 !important;
+    transform:translateY(-50);
+    gap: 24px !important;
+    z-index: 2 !important;
+  }
+
+  .frameGroup .frameContainer,
+  .frameGroup .onePlatformManyFormatSmaParent {
+    width: 100% !important;
+    height: auto !important;
+    gap: 12px !important;
+  }
+
+  .onePlatformMany,
+  .turnExistingKnowledge,
+  .contentThatWorks,
+  .organizeLearningContent,
+  .turnExistingContent,
+  .onePlatformFor,
+  .fromContentTo {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+    font-size: 20px !important;
+    line-height: 40px !important;
+    font-weight: 700 !important;
+    text-align: center !important;
+    overflow-wrap: anywhere !important;
+  }
+
+  .bringContentTogether,
+  .neurolxpTransformsContent,
+  .neurolxpSupportsDiverse,
+  .manageLearningResources,
+  .neurolxpHelpsInstitutions,
+  .neurolxpSupportsOrganization,
+  .neurolxpBringsContent {
+    width: 100% !important;
+    max-width: % !important;
+    height: auto !important;
+    min-height: 0 !important;
+    font-size: 16px !important;
+    line-height: 24px !important;
+    text-align: center !important;
+    overflow-wrap: anywhere !important;
+  }
+
+  .frameWrapper3,
+  .frameWrapper4,
+  .frameParent23,
+  .frameWrapper35,
+  .frameParent32,
+  .frameWrapper42,
+  .frameWrapper43,
+  .frameParent38,
+  .frameParent39,
+  .frameParent56,
+  .frameParent57,
+  .frameParent65,
+  .frameWrapper66,
+  .frameParent80,
+  .frameParent81,
+  .frameWrapper72,
+  .frameWrapper73,
+  .onePlatformSmarterLearningParent {
+    position: relative !important;
+    inset: auto !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+    margin: 0 !important;
+    transform: none !important;
+  }
+
+  .frameParent23,
+  .frameParent38,
+  .frameParent39,
+  .frameParent57,
+  .frameParent81,
+  .onePlatformSmarterLearningParent {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 12px !important;
+  }
+
+  .frameParent22 {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 24px !important;
+    transform: translateY(-180);
+  }
+
+  .frameParent24,
+  .frameParent25,
+  .frameParent29 {
+    position: relative !important;
+    inset: auto !important;
+    width: 100% !important;
+    height: auto !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 32px !important;
+    margin: 0 !important;
+  }
+
+  .frameParent26 {
+    width: min(326px, 100%) !important;
+    height: 235px !important;
+    margin: 0 auto !important;
+    flex: none !important;
+  }
+
+  .rectangleParent {
+    padding: 24px 16px !important;
+    border-radius: 32px !important;
+    background: #dfe6e9 !important;
+    box-shadow:
+      inset -8px -8px 16px #ffffff,
+      inset 8px 8px 16px rgba(196, 196, 196, 0.8) !important;
+  }
+
+  .rectangleParent > .frameChild13 {
+    display: none !important;
+  }
+
+  .rectangleParent .frameParent32 {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 24px !important;
+  }
+
+  .rectangleParent .onePlatformMany {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    text-align: center !important;
+    white-space: normal !important;
+    overflow-wrap: normal !important;
+    word-break: normal !important;
+  }
+
+  .rectangleParent .onePlatformMany .buildEngaging,
+  .rectangleParent .onePlatformMany .learningExperiences {
+    display: block !important;
+    width: 100% !important;
+  }
+
+  .rectangleGroup {
+    position: relative !important;
+    inset: auto !important;
+    width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+    margin: 0 !important;
+  }
+
+  .rectangleGroup > .frameChild15 {
+    position: absolute !important;
+    inset: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+  }
+
+  .createEngageLearnParent {
+    position: relative !important;
+    inset: auto !important;
+    width: 100% !important;
+    height: auto !important;
+    padding: 24px 12px !important;
+    gap: 24px !important;
+  }
+
+  .createEngageLearn {
+    width: 100% !important;
+    height: auto !important;
+    font-size: 24px !important;
+    line-height: 32px !important;
+  }
+
+  .frameParent34,
+  .frameParent35 {
+    width: 100% !important;
+    height: auto !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: stretch !important;
+    gap: 22px !important;
+  }
+
+  .frameWrapper36,
+  .frameWrapper37 {
+    width: 100% !important;
+    height: auto !important;
+    min-height: 64px !important;
+  }
+
+  .checkmarkCircle04Parent,
+  .checkmarkCircle04Group,
+  .checkmarkCircle04Container,
+  .checkmarkCircle04Parent3,
+  .checkmarkCircle04Parent4 {
+    position: relative !important;
+    inset: auto !important;
+    width: 100% !important;
+    transform: none !important;
+    gap: 12px !important;
+  }
+
+  .frameParent37 {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 24px !important;
+  }
+
+  .frameWrapper42,
+  .frameWrapper43,
+  .frameParent38,
+  .frameParent39 {
+    min-height: 0 !important;
+  }
+
+  .compatibilitySwitchGrid {
+    width: 100% !important;
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 16px !important;
+    align-items: start !important;
+  }
+
+  .compatibilitySwitchCard,
+  .compatibilitySwitchHeader,
+  .compatibilitySwitchDetails {
+    width: 100% !important;
+    max-width: 401px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  .documentsPresentations {
+    width: 100% !important;
+    height: auto !important;
+    font-size: 18px !important;
+    line-height: 26px !important;
+  }
+
+  .frameParent55 {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 24px !important;
+    text-align: center !important;
+  }
+
+  .frameParent55 .frameParent56 {
+    width: 100% !important;
+    align-items: center !important;
+  }
+
+  .frameWrapper62,
+  .frameWrapper63,
+  .frameWrapper64,
+  .frameParent58 {
+    position: relative !important;
+    inset: auto !important;
+    width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+  }
+
+  .frameWrapper63 {
+    padding: 12px !important;
+  }
+
+  .frameWrapper64 {
+    padding: 16px !important;
+  }
+
+  .frameParent58 {
+    margin: 0 !important;
+    gap: 16px !important;
+  }
+
+  .frameParent59 {
+    width: 100% !important;
+    height: auto !important;
+    min-height: 64px !important;
+    gap: 12px !important;
+  }
+
+  .organizeByCourse,
+  .manageFromOne,
+  .maintainContentVersions,
+  .updateWithoutDisruption,
+  .keepContentStructured,
+  .ensureConsistencyAcross {
+    width: auto !important;
+    height: auto !important;
+    font-size: 16px !important;
+    line-height: 24px !important;
+    text-align: left !important;
+  }
+
+  .image20Parent4 {
+    padding: 24px 12px !important;
+    border-radius: 32px !important;
+    transform: translateY(-35px) !important;
+  }
+
+  .image20Parent4 .turnExistingContent {
+    width: calc(100vw - 20px) !important;
+    max-width: 440px !important;
+    height: auto !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    white-space: normal !important;
+    overflow-wrap: normal !important;
+    word-break: normal !important;
+    text-align: center !important;
+    text-wrap: balance !important;
+  }
+
+  .image20Parent4 > .image206,
+  .image20Parent4 > .arrowDownBig {
+    display: none !important;
+  }
+
+  .frameParent65 {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 24px !important;
+  }
+
+  .frameParent67,
+  .frameParent68,
+  .frameParent71,
+  .frameParent75 {
+    width: 100% !important;
+    height: auto !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: stretch !important;
+    gap: 16px !important;
+  }
+
+  .frameParent69,
+  .frameWrapper67,
+  .frameWrapper68,
+  .frameParent73 {
+    width: 100% !important;
+    max-width: 500px !important;
+    margin: 0 auto !important;
+  }
+
+  .frameParent79 {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 48px !important;
+  }
+
+  .frameParent79 .frameParent80,
+  .frameParent79 .frameParent83,
+  .frameParent79 .frameParent85,
+  .frameParent79 .frameParent86,
+  .frameParent79 .frameWrapper70,
+  .frameParent79 .frameParent89,
+  .frameParent79 .frameParent90,
+  .frameParent79 .frameParent91 {
+    position: relative !important;
+    inset: auto !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+    margin: 0 !important;
+    transform: none !important;
+  }
+
+  .frameParent79 .frameParent83,
+  .frameParent79 .frameParent85 {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 16px !important;
+  }
+
+  .frameParent79 .frameParent87,
+  .frameParent79 .frameParent88 {
+    display: none !important;
+  }
+
+  .frameParent79 .frameWrapper70 {
+    display: block !important;
+    max-width: 380px !important;
+    margin: 0 auto !important;
+  }
+
+  .frameParent79 .frameParent89 {
+    overflow: hidden !important;
+    border-radius: 32px !important;
+    background: #dfe6e9 !important;
+  }
+
+  .frameParent79 .frameChild42 {
+    position: relative !important;
+    inset: auto !important;
+    width: 100% !important;
+    height: auto !important;
+    display: block !important;
+    object-fit: cover !important;
+  }
+
+  .frameParent79 .higherEducationParent {
+    position: relative !important;
+    inset: auto !important;
+    width: 100% !important;
+    height: auto !important;
+    padding: 20px 16px !important;
+  }
+
+  .frameParent79 .frameParent84 {
+    position: relative !important;
+    inset: auto !important;
+    width: 176px !important;
+    height: auto !important;
+    order: 3 !important;
+    display: flex !important;
+    justify-content: space-between !important;
+    gap: 16px !important;
+    margin: 0 auto !important;
+  }
+
+  .frameParent79 .learningArrowButton {
+    width: 64px !important;
+    height: 64px !important;
+    flex: 0 0 64px !important;
+  }
+
+  .frameParent79 .learningArrowInner {
+    width: 48px !important;
+    height: 48px !important;
+  }
+
+  .frameParent79 .frameParent91 {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 24px !important;
+    padding-top: 48px !important;
+  }
+
+  .rectangleParent5 {
+    position: relative !important;
+    inset: auto !important;
+    width: 100% !important;
+    height: auto !important;
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 16px !important;
+    margin: 0 !important;
+  }
+
+  .rectangleParent5 > .frameChild48,
+  .rectangleParent5 > .frameChild49,
+  .rectangleParent5 > .frameChild51 {
+    display: none !important;
+  }
+
+  .frameParent93,
+  .frameParent94,
+  .frameParent95 {
+    position: relative !important;
+    inset: auto !important;
+    width: 100% !important;
+    max-width: 380px !important;
+    height: auto !important;
+    min-height: 220px !important;
+    margin: 0 auto !important;
+    padding: 24px 16px !important;
+    border-radius: 24px !important;
+    background: #dfe6e9 !important;
+    box-shadow:
+      -8px -8px 16px #ffffff,
+      8px 8px 16px #c4c4c4 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 12px !important;
+  }
+
+  .forEducatorsParent {
+    position: relative !important;
+    inset: auto !important;
+    width: 100% !important;
+    height: auto !important;
+    text-align: center !important;
+  }
+
+  .frameParent96 {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 24px !important;
+    padding: 32px 16px !important;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1023px), (min-width: 1025px) and (max-width: 1100px) {
+  .contentIntelligenceManagem {
+    overflow-x: hidden !important;
+  }
+
+  .compatibilitySwitchGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+
+  .frameParent55 {
+    width: calc(100% - 64px) !important;
+    left: 32px !important;
+    gap: 40px !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .image20Parent4 .frameParent67,
+  .image20Parent4 .frameParent68,
+  .image20Parent4 .frameParent71,
+  .image20Parent4 .frameParent75 {
+    width: 100% !important;
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 16px !important;
+    align-items: stretch !important;
+  }
+
+  .image20Parent4 .frameParent69,
+  .image20Parent4 .frameWrapper67,
+  .image20Parent4 .frameWrapper68,
+  .image20Parent4 .frameParent73 {
+    position: relative !important;
+    inset: auto !important;
+    width: 100% !important;
+    max-width: 500px !important;
+    min-height: 112px !important;
+    height: auto !important;
+    margin: 0 auto !important;
+    padding: 10px 18px !important;
+    display: grid !important;
+    grid-template-columns: minmax(132px, 42%) minmax(0, 1fr) !important;
+    align-items: center !important;
+    column-gap: 14px !important;
+    overflow: hidden !important;
+    border-radius: 56px !important;
+  }
+
+  .image20Parent4 .rectangleContainer,
+  .image20Parent4 .frameParent70,
+  .image20Parent4 .frameParent72,
+  .image20Parent4 .frameParent74 {
+    position: static !important;
+    inset: auto !important;
+    width: 100% !important;
+    min-width: 0 !important;
+    height: auto !important;
+    display: contents !important;
+  }
+
+  .image20Parent4 .rectangleDiv,
+  .image20Parent4 .frameChild32,
+  .image20Parent4 .frameChild33,
+  .image20Parent4 .frameChild34,
+  .image20Parent4 .frameChild35 {
+    grid-column: 1 !important;
+    grid-row: 1 !important;
+    width: 100% !important;
+    height: 92px !important;
+    min-width: 0 !important;
+    position: relative !important;
+    inset: auto !important;
+    margin: 0 !important;
+    border-radius: 48px !important;
+  }
+
+  .image20Parent4 .createWrapper,
+  .image20Parent4 .curateWrapper,
+  .image20Parent4 .organizeWrapper,
+  .image20Parent4 .deliverWrapper,
+  .image20Parent4 .improveWrapper {
+    grid-column: 1 !important;
+    grid-row: 1 !important;
+    position: relative !important;
+    inset: auto !important;
+    width: 100% !important;
+    height: 82px !important;
+    margin: 0 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    z-index: 2 !important;
+  }
+
+  .image20Parent4 .create,
+  .image20Parent4 .curate,
+  .image20Parent4 .organize,
+  .image20Parent4 .deliver,
+  .image20Parent4 .measure,
+  .image20Parent4 .improve {
+    position: static !important;
+    inset: auto !important;
+    width: auto !important;
+    height: auto !important;
+    margin: 0 !important;
+    font-size: 18px !important;
+    line-height: 26px !important;
+    text-align: center !important;
+  }
+
+  .image20Parent4 .buildEngagingExperiences,
+  .image20Parent4 .transformExistingResources,
+  .image20Parent4 .structureLearningJourneys,
+  .image20Parent4 .enableFlexibleLearning {
+    grid-column: 2 !important;
+    grid-row: 1 !important;
+    position: static !important;
+    inset: auto !important;
+    width: 100% !important;
+    height: auto !important;
+    min-width: 0 !important;
+    margin: 0 !important;
+    font-size: 16px !important;
+    line-height: 24px !important;
+    text-align: left !important;
+    overflow-wrap: anywhere !important;
+  }
+
+  .contentIntelligenceManagem > .frameParent79 {
+    min-height: 0 !important;
+    height: auto !important;
+    padding-bottom: 0 !important;
+    gap: 24px !important;
+  }
+
+  .frameParent79 .frameParent80,
+  .frameParent79 .frameParent83,
+  .frameParent79 .frameParent85,
+  .frameParent79 .frameWrapper70,
+  .frameParent79 .frameParent89,
+  .frameParent79 .frameParent90,
+  .frameParent79 .frameParent84 {
+    min-height: 0 !important;
+    height: auto !important;
+  }
+
+  .frameParent79 .frameWrapper70 {
+    margin-bottom: 0 !important;
+  }
+
+  .frameParent79 .frameParent84 {
+    margin: 8px auto 0 !important;
+  }
+
+  .frameParent79 .frameParent91 {
+    position: relative !important;
+    inset: auto !important;
+    width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+    margin: -101px 0 0 !important;
+    padding: 48px 0 0 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 24px !important;
+    transform: none !important;
+  }
+
+  .frameParent91 .frameWrapper72,
+  .frameParent91 .frameWrapper73,
+  .frameParent91 .onePlatformSmarterLearningParent {
+    width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+    margin: 0 !important;
+    position: relative !important;
+    inset: auto !important;
+  }
+
+  .frameParent91 .rectangleParent5 {
+    width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+    margin: 0 !important;
+    position: relative !important;
+    inset: auto !important;
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 16px !important;
+  }
+
+  .frameParent91 .frameParent93,
+  .frameParent91 .frameParent94,
+  .frameParent91 .frameParent95 {
+    width: 100% !important;
+    max-width: 380px !important;
+    min-height: 220px !important;
+    height: auto !important;
+    margin: 0 auto !important;
+    padding: 24px 16px !important;
+    position: relative !important;
+    inset: auto !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 12px !important;
+  }
+
+  .frameParent91 .frameParent93 > *,
+  .frameParent91 .frameParent94 > *,
+  .frameParent91 .frameParent95 > * {
+    position: relative !important;
+    inset: auto !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    max-width: 100% !important;
+  }
+
+  .frameParent91 .forEducatorsParent {
+    width: 100% !important;
+    height: auto !important;
+    text-align: center !important;
+  }
+
+  .contentIntelligenceManagem > .frameParent96 {
+    margin-top: 0 !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .image20Parent4 .frameParent69,
+  .image20Parent4 .frameWrapper67,
+  .image20Parent4 .frameWrapper68,
+  .image20Parent4 .frameParent73 {
+    grid-template-columns: 36% minmax(0, 64%) !important;
+    padding: 9px 10px !important;
+    column-gap: 10px !important;
+  }
+
+  .image20Parent4 .rectangleDiv,
+  .image20Parent4 .frameChild32,
+  .image20Parent4 .frameChild33,
+  .image20Parent4 .frameChild34,
+  .image20Parent4 .frameChild35,
+  .image20Parent4 .createWrapper,
+  .image20Parent4 .curateWrapper,
+  .image20Parent4 .organizeWrapper,
+  .image20Parent4 .deliverWrapper,
+  .image20Parent4 .improveWrapper {
+    height: 90px !important;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1023px), (min-width: 1025px) and (max-width: 1366px) {
+  .frameParent22,
+  .rectangleParent,
+  .frameParent37,
+  .frameParent55,
+  .image20Parent4,
+  .frameParent79,
+  .frameParent96 {
+    max-width: calc(100vw - 64px) !important;
+  }
+
+  .frameParent55 {
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+  }
+
+  .frameParent37,
+  .image20Parent4,
+  .frameParent79,
+  .frameParent96 {
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .image20Parent4 .frameParent69,
+  .image20Parent4 .frameWrapper67,
+  .image20Parent4 .frameWrapper68,
+  .image20Parent4 .frameParent73 {
+    display: grid !important;
+    grid-template-columns: 38% minmax(0, 62%) !important;
+    align-items: center !important;
+    justify-content: stretch !important;
+    width: 100% !important;
+    max-width: 390px !important;
+    min-height: 106px !important;
+    height: auto !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    padding: 10px 12px !important;
+    gap: 12px !important;
+    box-sizing: border-box !important;
+    overflow: hidden !important;
+  }
+
+  .image20Parent4 .frameChild31 {
+    display: none !important;
+  }
+
+  .image20Parent4 .rectangleContainer,
+  .image20Parent4 .frameParent70,
+  .image20Parent4 .frameParent72,
+  .image20Parent4 .frameParent74 {
+    position: relative !important;
+    inset: auto !important;
+    width: 100% !important;
+    min-width: 0 !important;
+    height: auto !important;
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    gap: 14px !important;
+  }
+
+  .image20Parent4 .rectangleParent2 {
+    position: relative !important;
+    inset: auto !important;
+    width: 100% !important;
+    min-width: 0 !important;
+    height: 82px !important;
+    flex: none !important;
+    grid-column: 1 !important;
+  }
+
+  .image20Parent4 .rectangleDiv,
+  .image20Parent4 .frameChild32,
+  .image20Parent4 .frameChild33,
+  .image20Parent4 .frameChild34,
+  .image20Parent4 .frameChild35 {
+    position: relative !important;
+    inset: auto !important;
+    width: 100% !important;
+    min-width: 0 !important;
+    height: 82px !important;
+    flex: none !important;
+    margin: 0 !important;
+    box-sizing: border-box !important;
+  }
+
+  .image20Parent4 .rectangleContainer > .rectangleDiv {
+    flex: 0 0 138px !important;
+  }
+
+  .image20Parent4 .createWrapper,
+  .image20Parent4 .curateWrapper,
+  .image20Parent4 .organizeWrapper,
+  .image20Parent4 .deliverWrapper,
+  .image20Parent4 .improveWrapper {
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 92px !important;
+    margin: 0 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    z-index: 3 !important;
+  }
+
+  .image20Parent4 .rectangleContainer > .createWrapper {
+    left: 0 !important;
+  }
+
+  .image20Parent4 .buildEngagingExperiences,
+  .image20Parent4 .transformExistingResources,
+  .image20Parent4 .structureLearningJourneys,
+  .image20Parent4 .enableFlexibleLearning {
+    position: relative !important;
+    inset: auto !important;
+    grid-column: 2 !important;
+    width: 100% !important;
+    min-width: 0 !important;
+    max-width: 100% !important;
+    height: auto !important;
+    margin: 0 !important;
+    font-size: 15px !important;
+    line-height: 21px !important;
+    text-align: left !important;
+    white-space: normal !important;
+    word-break: keep-all !important;
+    overflow-wrap: normal !important;
+    hyphens: none !important;
+  }
+
+  .image20Parent4 .create,
+  .image20Parent4 .curate,
+  .image20Parent4 .organize,
+  .image20Parent4 .deliver,
+  .image20Parent4 .measure,
+  .image20Parent4 .improve {
+    white-space: nowrap !important;
+    word-break: normal !important;
+  }
+}
+
+@media (max-width: 420px) {
+  .image20Parent4 .frameParent69,
+  .image20Parent4 .frameWrapper67,
+  .image20Parent4 .frameWrapper68,
+  .image20Parent4 .frameParent73,
+  .image20Parent4 .rectangleContainer,
+  .image20Parent4 .frameParent70,
+  .image20Parent4 .frameParent72,
+  .image20Parent4 .frameParent74 {
+    gap: 10px !important;
+  }
+
+  .image20Parent4 .rectangleParent2,
+  .image20Parent4 .rectangleDiv,
+  .image20Parent4 .frameChild32,
+  .image20Parent4 .frameChild33,
+  .image20Parent4 .frameChild34,
+  .image20Parent4 .frameChild35,
+  .image20Parent4 .createWrapper,
+  .image20Parent4 .curateWrapper,
+  .image20Parent4 .organizeWrapper,
+  .image20Parent4 .deliverWrapper,
+  .image20Parent4 .improveWrapper {
+    width: 124px !important;
+    min-width: 124px !important;
+    flex-basis: 124px !important;
+  }
+}
+
+@media (max-width: 420px) {
+  .rectangleGroup .createEngageLearnParent > p,
+  .rectangleGroup .createEngageLearnParent .createEngageDescription,
+  .rectangleGroup .createEngageLearnParent .instructionalDesigners {
+    width: 290px !important;
+    max-width: 290px !important;
+    white-space: normal !important;
+    line-height: 28px !important;
+    display: block !important;
+    margin: 0 auto !important;
+  }
+}
+
+.compatibilitySwitchButton {
+  width: 44px;
+  height: 44px;
+  min-width: 44px;
+  min-height: 44px;
+  padding: 6px;
+}
+
+.frameParent90 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.frameParent90 .frameChild43,
+.frameParent90 .ellipseDiv {
+  position: relative;
+  width: 44px;
+  height: 44px;
+  min-width: 44px;
+  min-height: 44px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  overflow: visible;
+}
+
+.frameParent90 .frameChild43::before,
+.frameParent90 .ellipseDiv::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
+}
+
+.frameParent90 .frameChild43::before {
+  width: 34px;
+  height: 15px;
+  border-radius: 32px;
+  background-color: #2d4cc8;
+}
+
+.frameParent90 .ellipseDiv::before {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: rgba(47, 53, 71, 0.28);
+}
+
+.frameParent90 .frameChild43:focus-visible,
+.frameParent90 .ellipseDiv:focus-visible,
+.compatibilitySwitchButton:focus-visible,
+.headerBookDemoButton:focus-visible,
+.learningArrowButton:focus-visible {
+  outline: 3px solid #243fa8;
+  outline-offset: 3px;
+}
+
+.documentsPresentations,
+.create,
+.curate,
+.organize,
+.deliver,
+.measure,
+.improve {
+  text-rendering: optimizeLegibility;
+}
+
+.create {
+  color: #8f3d0b;
+}
+
+.curate {
+  color: #8a104a;
+}
+
+.organize {
+  color: #675300;
+}
+
+.measure {
+  color: #03565a;
+}
+
+.frameParent79 .frameParent90 .frameChild43,
+.frameParent79 .frameParent90 .ellipseDiv {
+  position: relative;
+  width: 44px;
+  height: 44px;
+  min-width: 44px;
+  min-height: 44px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  box-shadow: none;
+  overflow: visible;
+}
+
+.frameParent79 .frameParent90 .frameChild43::before,
+.frameParent79 .frameParent90 .ellipseDiv::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.frameParent79 .frameParent90 .frameChild43::before {
+  width: 34px;
+  height: 15px;
+  border-radius: 32px;
+  background-color: #2d4cc8;
+}
+
+.frameParent79 .frameParent90 .ellipseDiv::before {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: rgba(47, 53, 71, 0.28);
+}
+
+.contentIntelligenceManagem .semanticBoldHeading {
+  font-weight: 700 !important;
+	font-size: 24px;   
+}
+
+.frameParent79 .frameParent85 {
+  perspective: 1400px;
+}
+
+.frameParent79 .learningCarouselMotion {
+  transform-origin: 50% 50%;
+  will-change: transform, opacity;
+  backface-visibility: hidden;
+}
+
+.frameParent79 .learningCarouselMotion-next {
+  animation: learningCarouselRoundNext 700ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.frameParent79 .learningCarouselMotion-previous {
+  animation: learningCarouselRoundPrevious 700ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+@keyframes learningCarouselRoundNext {
+  0% {
+    opacity: 0.65;
+    transform: translate3d(90px, 12px, -40px) rotateY(-9deg) rotateZ(2deg) scale(0.96);
+  }
+  55% {
+    opacity: 1;
+    transform: translate3d(-10px, -4px, 0) rotateY(1.5deg) rotateZ(-0.4deg) scale(1.01);
+  }
+  100% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0) rotateY(0) rotateZ(0) scale(1);
+  }
+}
+
+@keyframes learningCarouselRoundPrevious {
+  0% {
+    opacity: 0.65;
+    transform: translate3d(-90px, 12px, -40px) rotateY(9deg) rotateZ(-2deg) scale(0.96);
+  }
+  55% {
+    opacity: 1;
+    transform: translate3d(10px, -4px, 0) rotateY(-1.5deg) rotateZ(0.4deg) scale(1.01);
+  }
+  100% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0) rotateY(0) rotateZ(0) scale(1);
+  }
+}
+
+.frameParent79 .learningArrowButton:active .learningArrowInner {
+  animation: learningArrowRoundPress 420ms ease;
+}
+
+@keyframes learningArrowRoundPress {
+  0% {
+    transform: rotate(0deg) scale(1);
+  }
+  50% {
+    transform: rotate(180deg) scale(0.9);
+  }
+  100% {
+    transform: rotate(360deg) scale(1);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .frameParent79 .learningCarouselMotion-next,
+  .frameParent79 .learningCarouselMotion-previous,
+  .frameParent79 .learningArrowButton:active .learningArrowInner {
+    animation: none;
+  }
+}
+
+.rectangleParent5 .frameChild48,
+.rectangleParent5 .frameChild49,
+.rectangleParent5 .frameChild51 {
+  border: 1px solid transparent;
+  box-sizing: border-box;
+  box-shadow:
+    inset -4px -4px 8px #ffffff,
+    inset 4px 4px 8px #c4c4c4;
+  transform: translateY(0);
+  transition:
+    transform 350ms ease,
+    box-shadow 350ms ease,
+    border-color 350ms ease;
+}
+
+.rectangleParent5 .frameParent93,
+.rectangleParent5 .frameParent94,
+.rectangleParent5 .frameParent95 {
+  transform: translateY(0);
+  transition: transform 350ms ease;
+  cursor: pointer;
+}
+
+.rectangleParent5:has(.frameParent95:hover) .frameChild48 {
+  border-color: #2d4cc8;
+  box-shadow:
+    -8px -8px 16px #ffffff,
+    8px 8px 16px #c6c6c6;
+  transform: translateY(-10px);
+}
+
+.rectangleParent5 .frameParent95:hover {
+  transform: translateY(-10px);
+}
+
+.rectangleParent5:has(.frameParent93:hover) .frameChild49 {
+  border-color: #2a7308;
+  box-shadow:
+    -8px -8px 16px #ffffff,
+    8px 8px 16px #c6c6c6;
+  transform: translateY(-10px);
+}
+
+.rectangleParent5 .frameParent93:hover {
+  transform: translateY(-10px);
+}
+
+.rectangleParent5:has(.frameParent94:hover) .frameChild51 {
+  border-color: #c05512;
+  box-shadow:
+    -8px -8px 16px #ffffff,
+    8px 8px 16px #c6c6c6;
+  transform: translateY(-10px);
+}
+
+.rectangleParent5 .frameParent94:hover {
+  transform: translateY(-10px);
+}
+
+.rectangleParent5 .frameParent93:hover .intelligenceFeatureIcon,
+.rectangleParent5 .frameParent94:hover .intelligenceFeatureIcon,
+.rectangleParent5 .frameParent95:hover .intelligenceFeatureIcon {
+  transform: scale(1.05);
+}
+
+.rectangleParent5 .intelligenceFeatureIcon {
+  transition: transform 350ms ease;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .rectangleParent5 .frameChild48,
+  .rectangleParent5 .frameChild49,
+  .rectangleParent5 .frameChild51,
+  .rectangleParent5 .frameParent93,
+  .rectangleParent5 .frameParent94,
+  .rectangleParent5 .frameParent95,
+  .rectangleParent5 .intelligenceFeatureIcon {
+    transition: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .image20Parent4 .frameParent73 > .frameChild34 {
+    display: none !important;
+  }
+
+  .image20Parent4 .frameParent73 > .frameParent74 {
+    position: relative !important;
+    inset: auto !important;
+    width: 100% !important;
+    min-width: 0 !important;
+    height: auto !important;
+    margin: 0 !important;
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+    gap: 14px !important;
+  }
+
+  .image20Parent4 .frameParent73 .deliverWrapper,
+  .image20Parent4 .frameParent73 .improveWrapper {
+    position: relative !important;
+    inset: auto !important;
+    flex: 0 0 138px !important;
+    width: 138px !important;
+    min-width: 138px !important;
+    height: 92px !important;
+    margin: 0 !important;
+  }
+
+  .image20Parent4 .frameParent73 .enableFlexibleLearning {
+    position: relative !important;
+    inset: auto !important;
+    flex: 1 1 auto !important;
+    width: auto !important;
+    min-width: 0 !important;
+    height: auto !important;
+    margin: 0 !important;
+    text-align: left !important;
+  }
+}
+
+@media (max-width: 420px) {
+  .image20Parent4 .frameParent73 > .frameParent74 {
+    gap: 10px !important;
+  }
+
+  .image20Parent4 .frameParent73 .deliverWrapper,
+  .image20Parent4 .frameParent73 .improveWrapper {
+    flex-basis: 124px !important;
+    width: 124px !important;
+    min-width: 124px !important;
+  }
+}
+
+@media (max-width: 425px) {
+  .rectangleParent .bringContentTogether {
+    width: 300px !important;
+    max-width: 300px !important;
+    white-space: normal !important;
+    overflow-wrap: normal !important;
+  }
+}
+
+.onePlatformMany,
+.turnExistingKnowledge,
+.contentThatWorks,
+.organizeLearningContent,
+.turnExistingContent,
+.onePlatformFor {
+  font-size: 38px !important;
+  line-height: 48px !important;
+  height: auto !important;
+  min-height: 0 !important;
+}
+
+.bringContentTogether,
+.neurolxpTransformsContent,
+.neurolxpSupportsDiverse,
+.manageLearningResources,
+.neurolxpHelpsInstitutions,
+.neurolxpSupportsOrganization,
+.neurolxpBringsContent {
+  font-size: 24px !important;
+  line-height: 36px !important;
+  height: auto !important;
+  min-height: 0 !important;
+}
+
+.headerContentExperienceBadge,
+.contentCreationBadge,
+.contentCompatibilityBadge,
+.centralizedContentBadge,
+.contentValueBadge,
+.learningScaleBadge,
+.whyNeurolxpBadge {
+  font-size: 24px !important;
+  line-height: 32px !important;
+}
+
+.onePlatformManyFormatSmaParent,
+.frameWrapper4,
+.frameParent23,
+.frameWrapper43,
+.frameParent38,
+.frameParent39,
+.frameParent57,
+.frameWrapper66,
+.frameParent81,
+.onePlatformSmarterLearningParent {
+  height: auto !important;
+  min-height: 0 !important;
+}
+
+.onePlatformManyFormatSmaParent,
+.frameParent23,
+.frameParent38,
+.frameParent39,
+.frameParent57,
+.frameParent81,
+.onePlatformSmarterLearningParent {
+  gap: 20px !important;
+}
+
+@media screen and (max-width: 767px) {
+  .onePlatformMany,
+  .turnExistingKnowledge,
+  .contentThatWorks,
+  .organizeLearningContent,
+  .turnExistingContent,
+  .onePlatformFor {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+    font-size: 28px !important;
+    line-height: 36px !important;
+    font-weight: 700 !important;
+    text-align: center !important;
+    white-space: normal !important;
+    overflow-wrap: normal !important;
+    word-break: normal !important;
+  }
+
+  .bringContentTogether,
+  .neurolxpTransformsContent,
+  .neurolxpSupportsDiverse,
+  .manageLearningResources,
+  .neurolxpHelpsInstitutions,
+  .neurolxpSupportsOrganization,
+  .neurolxpBringsContent {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+    font-size: 18px !important;
+    line-height: 28px !important;
+    text-align: center !important;
+    white-space: normal !important;
+    overflow-wrap: normal !important;
+    word-break: normal !important;
+  }
+
+  .headerContentExperienceBadge,
+  .contentCreationBadge,
+  .contentCompatibilityBadge,
+  .centralizedContentBadge,
+  .contentValueBadge,
+  .learningScaleBadge,
+  .whyNeurolxpBadge {
+    width: auto !important;
+    max-width: calc(100% - 32px) !important;
+    min-width: 0 !important;
+    height: 42px !important;
+    min-height: 42px !important;
+    padding: 0 20px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    font-size: 16px !important;
+    line-height: 22px !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    white-space: nowrap !important;
+  }
+
+  .frameWrapper4,
+  .frameWrapper43,
+  .frameWrapper66 {
+    height: auto !important;
+    min-height: 0 !important;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .onePlatformMany,
+  .turnExistingKnowledge,
+  .contentThatWorks,
+  .organizeLearningContent,
+  .turnExistingContent,
+  .onePlatformFor {
+    font-size: 26px !important;
+    line-height: 34px !important;
+  }
+
+  .bringContentTogether,
+  .neurolxpTransformsContent,
+  .neurolxpSupportsDiverse,
+  .manageLearningResources,
+  .neurolxpHelpsInstitutions,
+  .neurolxpSupportsOrganization,
+  .neurolxpBringsContent {
+    font-size: 17px !important;
+    line-height: 26px !important;
+  }
+
+  .headerContentExperienceBadge,
+  .contentCreationBadge,
+  .contentCompatibilityBadge,
+  .centralizedContentBadge,
+  .contentValueBadge,
+  .learningScaleBadge,
+  .whyNeurolxpBadge {
+    font-size: 16px !important;
+    height: 40px !important;
+    min-height: 40px !important;
+    padding: 0 16px !important;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1023px), screen and (min-width: 1025px) {
+  .contentCreationBadge,
+  .contentCompatibilityBadge,
+  .centralizedContentBadge,
+  .contentValueBadge,
+  .learningScaleBadge,
+  .whyNeurolxpBadge {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    line-height: 1 !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    box-sizing: border-box !important;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1023px), screen and (min-width: 1025px) {
+  .frameParent > .frameGroup {
+    top: 130px !important;
+  }
+  
+  .frameParent > .frameGroup > .frameWrapper {
+    margin-top: 10px !important;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1023px), screen and (min-width: 1025px) {
+  .frameParent {
+    height: 545px !important;
+    overflow: visible !important;
+  }
+
+  .frameChild,
+  .rectangleIcon {
+    height: 545px !important;
+  }
+
+  .rectangleIcon {
+    top: -35px !important;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1023px), screen and (min-width: 1025px) {
+  .rectangleParent .rectangleGroup {
+    top: 255px;
+    transform: scale(0.95);
+    transform-origin: top center;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1023px), screen and (min-width: 1025px) {
+  .frameParent37 {
+    top: 2170px;
+  }
+
+  .frameParent55 {
+    top: 2890px;
+  }
+
+  .image20Parent4 {
+    top: 3640px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .frameParent > .frameChild,
+  .frameParent > .rectangleIcon {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .frameParent4 {
+    display: grid;
+    grid-template-columns: max-content max-content max-content;
+    grid-template-rows: auto auto;
+    align-items: center;
+    justify-content: start;
+    column-gap: 10px;
+    row-gap: 10px;
+    width: calc(100% - 32px);
+    left: 16px;
+  }
+
+  .frameParent4 > .featuresWrapper {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .frameParent4 > .homeParent {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .frameParent4 > .arrowRightDoubleGroup {
+    display: contents;
+  }
+
+  .frameParent4 > .arrowRightDoubleGroup > .arrowDown01Icon {
+    grid-column: 3;
+    grid-row: 1;
+  }
+
+  .frameParent4 > .arrowRightDoubleGroup > .augmentation {
+    grid-column: 1 / 4;
+    grid-row: 2;
+    justify-self: start;
+    padding-left: 32px;
+  }
+  
+  .headerContentExperienceBadge {
+    position: relative;
+    top: -18px;
+  }
+
+  .onePlatformMany {
+    width: 100%;
+    max-width: 440px;
+    height: auto;
+    font-size: 26px;
+    line-height: 34px;
+    white-space: normal;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  } 
+}
+
+@media screen and (max-width: 480px) {
+  .frameParent4 {
+    width: calc(100% - 24px);
+    left: 12px;
+    column-gap: 8px;
+    row-gap: 8px;
+  }
+
+  .frameParent4 > .arrowRightDoubleGroup > .augmentation {
+    padding-left: 28px;
+  }
+
+  .headerContentExperienceBadge {
+    top: -16px;
+  }
+
+  .onePlatformMany {
+    max-width: 420px;
+    font-size: 25px;
+    line-height: 33px;
+  }
+
+  .headerBookDemoButton {
+    width: 300px;
+    max-width: 60vw;
+  }
+}
+
+@media (max-width: 767px) {
+  .rectangleParent .frameParent32 {
+    gap: 14px !important;
+  }
+
+  .rectangleParent .frameWrapper35 {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  .rectangleParent .onePlatformMany {
+    margin: 0 !important;
+    padding: 0 !important;
+    height: auto !important;
+    line-height: normal !important;
+  }
+
+  .rectangleParent .onePlatformMany .buildEngaging,
+  .rectangleParent .onePlatformMany .learningExperiences {
+    margin: 0 !important;
+    padding: 0 !important;
+    line-height: 1.35 !important;
+  }
+
+  .rectangleParent .onePlatformMany .learningExperiences {
+    margin-top: 4px !important;
+  }
+
+  .rectangleParent .neurolxpTransformsContent {
+    margin-top: 4px !important;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .rectangleParent .frameParent34,
+  .rectangleParent .frameParent35 {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  .rectangleParent .frameWrapper36,
+  .rectangleParent .frameWrapper37 {
+    width: 100%;
+    max-width: 100%;
+    min-height: 64px;
+    height: auto;
+    box-sizing: border-box;
+    padding: 0 18px;
+    overflow: hidden;
+  }
+
+  .rectangleParent .checkmarkCircle04Parent,
+  .rectangleParent .checkmarkCircle04Group,
+  .rectangleParent .checkmarkCircle04Container,
+  .rectangleParent .checkmarkCircle04Parent3,
+  .rectangleParent .checkmarkCircle04Parent4 {
+    position: relative;
+    inset: auto;
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    box-sizing: border-box;
+    transform: none;
+  }
+
+  .rectangleParent .checkmarkCircle04Icon {
+    flex: 0 0 32px;
+  }
+
+  .rectangleParent .interactiveLearning {
+    flex: 1 1 auto;
+    min-width: 0;
+    max-width: 100%;
+    white-space: normal;
+    overflow-wrap: normal;
+    word-break: normal;
+    line-height: 1.3;
+    text-align: left;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .rectangleParent .frameWrapper36,
+  .rectangleParent .frameWrapper37 {
+    padding: 0 14px;
+  }
+
+  .rectangleParent .checkmarkCircle04Parent,
+  .rectangleParent .checkmarkCircle04Group,
+  .rectangleParent .checkmarkCircle04Container,
+  .rectangleParent .checkmarkCircle04Parent3,
+  .rectangleParent .checkmarkCircle04Parent4 {
+    gap: 10px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .rectangleParent .interactiveLearning {
+    font-size: 18px;
+    line-height: 24px;
+    white-space: normal;
+    overflow-wrap: break-word;
+    word-break: normal;
+    max-width: 100%;
+  }
+
+  .rectangleParent .frameWrapper36,
+  .rectangleParent .frameWrapper37 {
+    min-height: 68px;
+    height: auto;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .rectangleParent .checkmarkCircle04Parent,
+  .rectangleParent .checkmarkCircle04Group,
+  .rectangleParent .checkmarkCircle04Container,
+  .rectangleParent .checkmarkCircle04Parent3,
+  .rectangleParent .checkmarkCircle04Parent4 {
+    width: 100%;
+    min-width: 0;
+    gap: 10px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .rectangleParent .interactiveLearning {
+    font-size: 17px;
+    line-height: 22px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .contentIntelligenceManagem > .frameParent37 {
+    margin-top: -30px !important;
+  }
+
+  .frameParent37 .frameWrapper42,
+  .frameParent37 .frameWrapper43,
+  .frameParent37 .frameParent38,
+  .frameParent37 .frameParent39 {
+    width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important; 
+  }
+
+  .frameParent37 .contentThatWorks {
+    width: 100% !important;
+    max-width: 420px !important;
+    height: auto !important;
+    white-space: normal !important;
+    overflow-wrap: normal !important;
+    word-break: normal !important;
+    text-align: center !important;
+  }
+
+  .frameParent37 .neurolxpSupportsDiverse {
+    width: 100% !important;
+    max-width: 400px !important;
+    height: auto !important;
+    margin: 0 auto !important;
+    white-space: normal !important;
+    overflow-wrap: normal !important;
+    word-break: normal !important;
+    text-align: center !important;
+  }
+
+  .frameParent37 .compatibilitySwitchGrid {
+    width: 100% !important;
+    grid-template-columns: minmax(0, 1fr) !important;
+    gap: 24px !important;
+    padding: 0 8px !important;
+    box-sizing: border-box !important;
+  }
+
+  .frameParent37 .compatibilitySwitchCard {
+    width: 100% !important;
+    max-width: 390px !important;
+    height: 154px !important;
+    min-height: 154px !important;
+    margin: 0 auto !important;
+    overflow: visible !important;
+  }
+
+  .frameParent37 .compatibilitySwitchHeader {
+    width: 100% !important;
+    height: 154px !important;
+    padding: 16px 14px 10px !important;
+    box-sizing: border-box !important;
+    gap: 8px !important;
+  }
+
+  .frameParent37 .compatibilitySwitchTitle {
+    width: 100% !important;
+    max-width: 100% !important;
+    gap: 8px !important;
+    min-width: 0 !important;
+  }
+
+  .frameParent37 .compatibilitySwitchTitle .contentFormatIcon {
+    width: 58px !important;
+    height: 58px !important;
+    flex: 0 0 58px !important;
+  }
+
+  .frameParent37 .compatibilitySwitchTitle .documentsPresentations {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    min-width: 0 !important;
+    font-size: 18px !important;
+    line-height: 24px !important;
+    white-space: normal !important;
+    overflow-wrap: normal !important;
+    word-break: normal !important;
+    text-align: center !important;
+  }
+
+  .frameParent37 .compatibilitySwitchButton,
+  .frameParent37 .compatibilitySwitchCardOpen .compatibilitySwitchButton {
+    width: 30px !important;
+    height: 26px !important;
+    min-height: 26px !important;
+    flex: 0 0 26px !important;
+  }
+
+  .frameParent37 .compatibilitySwitchButton .arrowDownDoubleIcon {
+    width: 26px !important;
+    height: 26px !important;
+  }
+  
+  .frameParent37 .compatibilitySwitchCardOpen {
+    height: auto !important;
+    min-height: 154px !important;
+  }
+
+  .frameParent37 .compatibilitySwitchDetails {
+    width: 100% !important;
+    max-width: 390px !important;
+    height: auto !important;
+    padding: 22px 24px 24px !important;
+    box-sizing: border-box !important;
+  }
+
+  .frameParent37 .compatibilitySwitchList {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .frameParent37 .compatibilitySwitchItem {
+    width: 100% !important;
+    min-width: 0 !important;
+    box-sizing: border-box !important;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .contentIntelligenceManagem > .frameParent37 {
+    margin-top: -24px !important;
+  }
+
+  .frameParent37 .compatibilitySwitchGrid {
+    padding: 0 4px !important;
+    gap: 16px !important;
+  }
+
+  .frameParent37 .compatibilitySwitchCard,
+  .frameParent37 .compatibilitySwitchDetails {
+    max-width: calc(100vw - 28px) !important;
+  }
+
+  .frameParent37 .compatibilitySwitchTitle .documentsPresentations {
+    font-size: 17px !important;
+    line-height: 23px !important;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .contentIntelligenceManagem > .frameParent37 {
+    margin-top: -52px !important;
+  }
+
+  .frameParent37 .frameParent38,
+  .frameParent37 .frameParent39 {
+    gap: 8px !important;
+  }
+ 
+  .frameParent37 .neurolxpSupportsDiverse {
+    position: relative !important;
+    z-index: 3 !important;
+    width: calc(100% - 28px) !important;
+    max-width: 410px !important;
+    height: auto !important;
+    min-height: 0 !important;
+    margin: -2px auto 10px !important;
+    padding: 0 !important;
+    white-space: normal !important;
+    overflow: visible !important;
+    text-align: center !important;
+  }
+
+  .frameParent37 .compatibilitySwitchGrid {
+    position: relative !important;
+    z-index: 1 !important;
+    margin-top: 38px !important;
+    row-gap: 24px !important;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .contentIntelligenceManagem > .frameParent37 {
+    margin-top: -46px !important;
+  }
+
+  .frameParent37 .neurolxpSupportsDiverse {
+    width: calc(100% - 24px) !important;
+    margin-bottom: 8px !important;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .contentIntelligenceManagem > .frameParent37 {
+    margin-top: -180px !important;
+  }
+
+  .frameParent37 .neurolxpSupportsDiverse {
+    width: 440px !important;
+    max-width: calc(100vw - 12px) !important;
+    height: auto !important;
+    margin: -4px auto 10px !important;
+    white-space: normal !important;
+    text-align: center !important;
+    text-wrap: balance !important;
+    overflow: visible !important;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .contentIntelligenceManagem > .frameParent37 {
+    margin-top: -175px !important;
+  }
+
+  .frameParent37 .neurolxpSupportsDiverse {
+    width: 440px !important;
+    max-width: calc(100vw - 12px) !important;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .contentIntelligenceManagem > .frameParent55 {
+    transform: translateY(-45px);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .contentIntelligenceManagem > .frameParent79 {
+    position: relative !important;
+    inset: auto !important;
+    left: auto !important;
+    right: auto !important;
+    width: calc(100% - 24px) !important;
+    max-width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+    margin: 0 12px !important;
+    transform: none !important;
+    box-sizing: border-box !important;
+    overflow: visible !important;
+  }
+
+  .frameParent79 .frameParent80,
+  .frameParent79 .frameParent81,
+  .frameParent79 .frameWrapper72,
+  .frameParent79 .frameWrapper73,
+  .frameParent79 .onePlatformSmarterLearningParent {
+    position: relative !important;
+    inset: auto !important;
+    left: auto !important;
+    right: auto !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    transform: none !important;
+    box-sizing: border-box !important;
+  }
+
+  .frameParent79 .frameParent80,
+  .frameParent79 .frameParent81,
+  .frameParent79 .onePlatformSmarterLearningParent {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center !important;
+    gap: 14px !important;
+  }
+
+  .frameParent79 .onePlatformFor,
+  .frameParent79 .neurolxpSupportsOrganization {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    text-align: center !important;
+    white-space: normal !important;
+    overflow-wrap: normal !important;
+    word-break: normal !important;
+  }
+
+  .frameParent79 .frameParent84,
+  .frameParent79 .frameParent85,
+  .frameParent79 .frameParent86,
+  .frameParent79 .frameParent87,
+  .frameParent79 .frameParent88,
+  .frameParent79 .frameWrapper70 {
+    position: relative !important;
+    inset: auto !important;
+    left: auto !important;
+    right: auto !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    transform: none !important;
+    box-sizing: border-box !important;
+  }
+
+  .frameParent79 .frameParent87,
+  .frameParent79 .frameParent88 {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: stretch !important;
+    gap: 16px !important;
+  }
+
+  .frameParent79 img,
+  .frameParent79 svg {
+    max-width: 100% !important;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .contentIntelligenceManagem > .frameParent79 {
+    width: calc(100% - 8px) !important;
+    margin: 0 0 0 4px !important;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .contentIntelligenceManagem > .frameParent79 {
+    position: relative !important;
+    inset: auto !important;
+    left: 0 !important;
+    right: auto !important;
+    width: calc(100% - 16px) !important;
+    max-width: 100% !important;
+    margin: 0 0 0 8px !important;
+    transform: none !important;
+    overflow: visible !important;
+    box-sizing: border-box !important;
+  }
+
+  .frameParent79 .frameParent83 {
+    position: relative !important;
+    inset: auto !important;
+    left: 50% !important;
+    right: auto !important;
+    width: 100% !important;
+    max-width: 380px !important;
+    height: auto !important;
+    min-height: 0 !important;
+    margin: 0 !important;
+    transform: translateX(-50%) !important;
+    overflow: visible !important;
+  }
+
+  .frameParent79 .frameParent85,
+  .frameParent79 .frameParent86 {
+    position: static !important;
+    inset: auto !important;
+    left: auto !important;
+    right: auto !important;
+    width: 100% !important;
+    height: auto !important;
+    margin: 0 auto !important;
+  }
+  
+  .frameParent79 .frameParent87 {
+    position: relative !important;
+    inset: auto !important;
+    top: auto !important;
+    left: 50% !important;
+    width: calc(100vw - 32px) !important;
+    max-width: 350px !important;
+    height: 440px !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    transform: translateX(-50%) !important;
+    border-radius: 40px !important;
+    background: #dfe6e9 !important;
+    box-shadow:
+      -4px -4px 8px #fff inset,
+      4px 4px 8px #c4c4c4 inset !important;
+    overflow: hidden !important;
+    display: block !important;
+  }
+
+  .frameParent79 .frameParent88,
+  .frameParent79 .frameWrapper70 {
+    display: none !important;
+  }
+
+  .frameParent79 .frameParent87 .frameChild40 {
+    position: relative !important;
+    inset: auto !important;
+    width: 100% !important;
+    height: 245px !important;
+    object-fit: cover !important;
+    display: block !important;
+    border-radius: 0 0 0 100px !important;
+  }
+
+  .frameParent79 .frameParent87 .corporateParent {
+    position: relative !important;
+    inset: auto !important;
+    top: auto !important;
+    left: auto !important;
+    width: 100% !important;
+    max-width: 320px !important;
+    height: auto !important;
+    margin: 0 auto !important;
+    padding: 18px 18px 24px !important;
+    box-sizing: border-box !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 10px !important;
+    text-align: center !important;
+    overflow: visible !important;
+  }
+
+  .frameParent79 .frameParent87 .corporate,
+  .frameParent79 .frameParent87 .supportEmployeeGrowth {
+    position: relative !important;
+    inset: auto !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+    margin: 0 !important;
+    text-align: center !important;
+    white-space: normal !important;
+    overflow: visible !important;
+    overflow-wrap: normal !important;
+    word-break: normal !important;
+  }
+
+  
+  .frameParent79 .frameParent84 {
+    position: relative !important;
+    inset: auto !important;
+    top: auto !important;
+    left: 0 !important;
+    width: 176px !important;
+    height: 68px !important;
+    margin: 18px 0 0 0 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    gap: 40px !important;
+    overflow: visible !important;
+  }
+
+  .frameParent79 .learningArrowButton {
+    display: inline-flex !important;
+    width: 68px !important;
+    height: 68px !important;
+    flex: 0 0 68px !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+
+  .frameParent79 .learningArrowInner {
+    width: 52px !important;
+    height: 52px !important;
+  }
+
+  .frameParent79 .learningArrowIcon {
+    width: 28px !important;
+    height: 28px !important;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .contentIntelligenceManagem > .frameParent79 {
+    width: calc(100% - 16px) !important;
+    margin: 0 8px !important;
+  }
+
+  .frameParent79 .frameParent83 {
+    max-width: 350px !important;
+  }
+
+  .frameParent79 .frameParent87 {
+    left: 50% !important;
+    width: calc(100vw - 24px) !important;
+    max-width: 330px !important;
+    height: 420px !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    transform: translateX(-57%) !important;
+  }
+
+  .frameParent79 .frameParent87 .frameChild40 {
+    height: 230px !important;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1439px) {
+  :global(html),
+  :global(body) {
+    width: 100% !important;
+    min-width: 0 !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow-x: hidden !important;
+  }
+
+  .contentIntelligenceManagem {
+    width: 1440px !important;
+    min-width: 1440px !important;
+    max-width: 1440px !important;
+    margin: 0 !important;
+    zoom: calc(100vw / 1440px) !important;
+    transform: none !important;
+    transform-origin: top left !important;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .contentIntelligenceManagem > .frameParent96 {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+
+  .frameParent96 > .frameWrapper72 {
+    order: 1 !important;
+  }
+
+  .frameParent96 > .requestADemoWrapper {
+    order: 2 !important;
+    position: relative !important;
+    inset: auto !important;
+    transform: translateY(-88);
+    margin: 16px auto 0 !important;
+    width: min(250px, calc(100vw - 48px)) !important;
+    height: 64px !important;
+    min-height: 64px !important;
+    flex-shrink: 0 !important;
+  }
+
+  .frameParent96 > .requestADemoWrapper .requestADemo {
+    width: auto !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+  }
+}
+
+.frameParent {
+  left: 0 !important;
+  width: 1440px !important;
+  max-width: 1440px !important;
+  overflow: visible !important;
+}
+
+.frameChild {
+  left: 0 !important;
+  width: 1440px !important;
+  max-width: 1440px !important;
+  height: 647px !important;
+}
+
+@media screen and (max-width: 767px) {
+  .frameParent79 .frameParent90 {
+    position: relative !important;
+    inset: auto !important;
+    left: 50% !important;
+    right: auto !important;
+    top: auto !important;
+    bottom: auto !important;
+    transform: translateX(-90%) !important;
+    width: max-content !important;
+    max-width: calc(100vw - 32px) !important;
+    margin: 16px 0 0 0 !important;
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 22px !important;
+  }
+
+  .frameParent79 .frameParent84 {
+    position: relative !important;
+    inset: auto !important;
+    left: 50% !important;
+    right: auto !important;
+    top: auto !important;
+    bottom: auto !important;
+    transform: translateX(-90);
+    width: 176px !important;
+    height: 68px !important;
+    margin: 18px 0 0 0 !important;
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    gap: 40px !important;
+  }
+
+
+  .frameParent79 .frameParent84 .learningArrowButton {
+    position: relative !important;
+    inset: auto !important;
+    left: auto !important;
+    right: auto !important;
+    top: auto !important;
+    bottom: auto !important;
+    transform: translateX(-160);
+
+    width: 68px !important;
+    height: 68px !important;
+    min-width: 68px !important;
+    flex: 0 0 68px !important;
+    margin: 0 !important;
+  }
+}
+
+@media screen and (min-width: 1440px) and (max-width: 2560px) {
+  :global(html),
+  :global(body) {
+    margin: 0 !important;
+    padding: 0 !important;
+    background: #dfe6e9 !important;
+    overflow-x: hidden !important;
+  }
+}
+
+.headerBookDemoButton {
+  cursor: pointer !important;
+  pointer-events: auto !important;
+  user-select: none !important;
+  -webkit-user-select: none !important;
+  transition: box-shadow 0.12s ease, transform 0.12s ease !important;
+}
+
+.headerBookDemoButton:active {
+  box-shadow:
+    inset 4px 4px 8px rgba(196, 196, 196, 0.8),
+    inset -4px -4px 8px #ffffff !important;
+  transform: translateY(1px) !important;
+}
+
+.requestADemoWrapper {
+  cursor: pointer !important;
+  pointer-events: auto !important;
+  user-select: none !important;
+  -webkit-user-select: none !important;
+  transition: box-shadow 0.12s ease, transform 0.12s ease !important;
+}
+
+.requestADemoWrapper:active {
+  box-shadow:
+    inset 4px 4px 8px rgba(196, 196, 196, 0.8),
+    inset -4px -4px 8px #ffffff !important;
+}
+
+.requestADemoWrapper .requestADemo {
+  pointer-events: none !important;
+  user-select: none !important;
+  -webkit-user-select: none !important;
+}
+
+.frameParent37 .compatibilitySwitchButton .arrowDownDoubleIcon {
+  transform: rotate(180deg) !important;
+}
+
+.frameParent37 .compatibilitySwitchCardOpen .compatibilitySwitchButton .arrowDownDoubleIcon {
+  transform: rotate(0deg) !important;
+}
+
+@media screen and (min-width: 769px) and (max-width: 1023px),
+       screen and (min-width: 1025px) and (max-width: 1439px) {
+
+  
+  .contentIntelligenceManagem > .rectangleParent {
+    position: absolute !important;
+    top: 1591px !important;
+    left: calc(50% - 598px) !important;
+    width: 1196px !important;
+    min-width: 1196px !important;
+    max-width: 1196px !important;
+    height: 736px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    border-radius: 0 !important;
+    background: transparent !important;
+    box-shadow: none !important;
+    overflow: visible !important;
+    transform: translateY(-170px) !important;
+  }
+
+  .rectangleParent > .frameChild13 {
+    display: block !important;
+    position: absolute !important;
+    top: 0 !important;
+    left: calc(50% - 598px) !important;
+    width: 1196px !important;
+    height: 595px !important;
+    max-width: none !important;
+  }
+
+  .rectangleParent > .frameParent32 {
+    position: absolute !important;
+    top: 32px !important;
+    left: 83px !important;
+    width: 1017px !important;
+    max-width: none !important;
+    height: auto !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 50px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    transform: none !important;
+  }
+
+  .rectangleParent .rectangleGroup {
+    position: absolute !important;
+    top: 255px !important;
+    left: 41px !important;
+    width: 935px !important;
+    max-width: none !important;
+    height: 395px !important;
+    min-height: 395px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    transform: scale(0.95) !important;
+    transform-origin: top center !important;
+  }
+
+  .rectangleParent .createEngageLearnParent {
+    position: absolute !important;
+    top: calc(50% - 164.73px) !important;
+    left: calc(50% - 417.5px) !important;
+    width: auto !important;
+    max-width: none !important;
+    height: 330px !important;
+    padding: 0 !important;
+    gap: 24px !important;
+    transform: none !important;
+  }
+
+  .rectangleParent .frameParent34 {
+    width: auto !important;
+    height: auto !important;
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    gap: 135px !important;
+  }
+
+  .rectangleParent .frameParent35 {
+    width: 350px !important;
+    min-width: 350px !important;
+    max-width: 350px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 16px !important;
+  }
+
+  .rectangleParent .frameWrapper36,
+  .rectangleParent .frameWrapper37 {
+    width: 350px !important;
+    max-width: 350px !important;
+    height: 70px !important;
+    min-height: 70px !important;
+  }
+
+  .rectangleParent .checkmarkCircle04Parent,
+  .rectangleParent .checkmarkCircle04Group,
+  .rectangleParent .checkmarkCircle04Container,
+  .rectangleParent .checkmarkCircle04Parent3,
+  .rectangleParent .checkmarkCircle04Parent4 {
+    position: absolute !important;
+    left: 33.96px !important;
+    width: auto !important;
+    transform: rotate(-0.1deg) !important;
+    gap: 24px !important;
+  }
+
+  
+  .contentIntelligenceManagem > .frameParent37 {
+    position: absolute !important;
+    top: 2170px !important;
+    left: calc(50% - 633px) !important;
+    width: 1267px !important;
+    min-width: 1267px !important;
+    max-width: 1267px !important;
+    height: auto !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 50px !important;
+  }
+
+  .frameParent37 .frameWrapper42 {
+    width: 1267px !important;
+    height: 258px !important;
+  }
+
+  .frameParent37 .frameWrapper43 {
+    width: 931px !important;
+    max-width: 931px !important;
+    height: 196px !important;
+  }
+
+  .frameParent37 .frameParent38 {
+    width: 1267px !important;
+    height: 227px !important;
+    gap: 32px !important;
+  }
+
+  .frameParent37 .frameParent39 {
+    width: auto !important;
+    height: 132px !important;
+    gap: 32px !important;
+  }
+
+  .frameParent37 .contentThatWorks {
+    width: 910px !important;
+    max-width: 910px !important;
+    height: 63px !important;
+    font-size: 48px !important;
+    line-height: 60px !important;
+  }
+
+  .frameParent37 .neurolxpSupportsDiverse {
+    width: 657px !important;
+    max-width: 657px !important;
+    height: 40px !important;
+    font-size: 28px !important;
+    line-height: 40px !important;
+  }
+
+  .frameParent37 .frameParent40 {
+    width: 1267px !important;
+    gap: 50px !important;
+  }
+
+  .frameParent37 .compatibilitySwitchGrid {
+    width: 1267px !important;
+    max-width: 1267px !important;
+    display: grid !important;
+    grid-template-columns: repeat(3, 401px) !important;
+    justify-content: initial !important;
+    justify-items: center !important;
+    align-items: start !important;
+    gap: 50px 32px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  .frameParent37 .compatibilitySwitchCard,
+  .frameParent37 .compatibilitySwitchHeader,
+  .frameParent37 .compatibilitySwitchDetails {
+    width: 401px !important;
+    max-width: 401px !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
+  
+  .contentIntelligenceManagem > .frameParent55 {
+    position: absolute !important;
+    top: 2890px !important;
+    left: 80px !important;
+    width: 1280px !important;
+    min-width: 1280px !important;
+    max-width: 1280px !important;
+    height: auto !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    gap: 124px !important;
+    text-align: left !important;
+  }
+
+  .frameParent55 .frameParent56 {
+    width: 500px !important;
+    min-width: 500px !important;
+    max-width: 500px !important;
+    align-items: flex-start !important;
+    gap: 32px !important;
+  }
+
+  .frameParent55 .frameParent57 {
+    width: 500px !important;
+    align-items: flex-start !important;
+    gap: 32px !important;
+  }
+
+  .frameParent55 .centralizedContentBadge {
+    width: 435.8px !important;
+    max-width: 435.8px !important;
+  }
+
+  .frameParent55 .organizeLearningContent {
+    width: 533px !important;
+    max-width: 533px !important;
+    font-size: 48px !important;
+    line-height: 60px !important;
+    text-align: left !important;
+  }
+
+  .frameParent55 .manageLearningResources {
+    width: 468px !important;
+    max-width: 468px !important;
+    font-size: 28px !important;
+    line-height: 40px !important;
+    text-align: left !important;
+  }
+
+  .frameParent55 .frameWrapper62 {
+    position: relative !important;
+    width: 689px !important;
+    min-width: 689px !important;
+    max-width: 689px !important;
+    height: 658px !important;
+  }
+
+  .frameParent55 .frameWrapper63 {
+    position: absolute !important;
+    top: 66px !important;
+    left: 35px !important;
+    width: 614px !important;
+    max-width: 614px !important;
+    height: 587px !important;
+    padding: 0 !important;
+  }
+
+  .frameParent55 .frameWrapper64 {
+    position: absolute !important;
+    top: 16px !important;
+    left: 16px !important;
+    width: 582px !important;
+    max-width: 582px !important;
+    height: 555px !important;
+    padding: 0 !important;
+  }
+
+  .frameParent55 .frameParent58 {
+    position: absolute !important;
+    top: calc(50% - 245.5px) !important;
+    left: 32px !important;
+    width: 475px !important;
+    max-width: 475px !important;
+    height: 491px !important;
+    gap: 16px !important;
+  }
+
+  .frameParent55 .frameParent59 {
+    width: 475px !important;
+    height: 70px !important;
+    min-height: 70px !important;
+    gap: 16px !important;
+  }
+
+  
+  .contentIntelligenceManagem > .image20Parent4 {
+    position: absolute !important;
+    top: 3640px !important;
+    left: calc(50% - 596px) !important;
+    width: 1192px !important;
+    min-width: 1192px !important;
+    max-width: 1192px !important;
+    height: 700px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    transform: none !important;
+    overflow: hidden !important;
+  }
+
+  .image20Parent4 > .image206,
+  .image20Parent4 > .arrowDownBig {
+    display: block !important;
+  }
+
+  .image20Parent4 .frameParent65 {
+    position: absolute !important;
+    top: 24px !important;
+    left: calc(50% - 550px) !important;
+    width: 1100px !important;
+    min-width: 1100px !important;
+    max-width: 1100px !important;
+    padding: 0 !important;
+    gap: 28px !important;
+  }
+
+  .image20Parent4 .frameWrapper66 {
+    width: 1108px !important;
+    height: 210px !important;
+  }
+
+  .image20Parent4 .turnExistingContent {
+    width: 1016px !important;
+    max-width: 1016px !important;
+    height: 63px !important;
+    font-size: 48px !important;
+    line-height: 60px !important;
+  }
+
+  .image20Parent4 .neurolxpHelpsInstitutions {
+    width: 978px !important;
+    max-width: 978px !important;
+    height: 72px !important;
+    font-size: 28px !important;
+    line-height: 40px !important;
+  }
+
+  .image20Parent4 .frameParent67 {
+    width: 1050px !important;
+    min-width: 1050px !important;
+    max-width: 1050px !important;
+    gap: 20px !important;
+  }
+
+  .image20Parent4 .frameParent68,
+  .image20Parent4 .frameParent71,
+  .image20Parent4 .frameParent75 {
+    width: 1050px !important;
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    align-items: center !important;
+    gap: 50px !important;
+  }
+
+  .image20Parent4 .frameParent69,
+  .image20Parent4 .frameWrapper67,
+  .image20Parent4 .frameWrapper68,
+  .image20Parent4 .frameParent73 {
+    width: 500px !important;
+    min-width: 500px !important;
+    max-width: 500px !important;
+    height: 114px !important;
+    flex: 0 0 500px !important;
+  }
+
+  
+  .contentIntelligenceManagem > .frameParent79 {
+    position: absolute !important;
+    top: 4791px !important;
+    left: 80px !important;
+    width: 1316px !important;
+    min-width: 1316px !important;
+    max-width: 1316px !important;
+    height: auto !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 64px !important;
+    text-align: left !important;
+    transform: none !important;
+  }
+
+  .frameParent79 .frameParent80 {
+    width: 1316px !important;
+    max-width: 1316px !important;
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    gap: 69px !important;
+    transform: translateY(-370px) !important;
+  }
+
+  .frameParent79 .frameParent81 {
+    width: 553px !important;
+    min-width: 553px !important;
+    max-width: 553px !important;
+    align-items: flex-start !important;
+    gap: 32px !important;
+  }
+
+  .frameParent79 .onePlatformFor {
+    width: 553px !important;
+    max-width: 553px !important;
+    font-size: 48px !important;
+    line-height: 60px !important;
+    text-align: left !important;
+  }
+
+  .frameParent79 .neurolxpSupportsOrganization {
+    width: 553px !important;
+    max-width: 553px !important;
+    font-size: 28px !important;
+    line-height: 40px !important;
+    text-align: left !important;
+  }
+
+  .frameParent79 .frameParent83 {
+    position: relative !important;
+    width: 694px !important;
+    min-width: 694px !important;
+    max-width: 694px !important;
+    height: 683px !important;
+    transform: translateX(-50px) !important;
+  }
+
+  .frameParent79 .frameParent85 {
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 694px !important;
+    height: 603px !important;
+  }
+
+  .frameParent79 .frameParent86 {
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 694px !important;
+    height: 556px !important;
+  }
+
+  .frameParent79 .frameParent87 {
+    position: absolute !important;
+    top: 78px !important;
+    left: 372px !important;
+    width: 322px !important;
+    max-width: 322px !important;
+    height: 400px !important;
+    margin: 0 !important;
+    transform: none !important;
+  }
+
+  .frameParent79 .frameParent88 {
+    position: absolute !important;
+    top: 33px !important;
+    left: 208px !important;
+    width: 405px !important;
+    max-width: 405px !important;
+    height: 467px !important;
+    transform: none !important;
+  }
+
+  .frameParent79 .frameWrapper70 {
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 469px !important;
+    max-width: 469px !important;
+    height: 556px !important;
+    transform: none !important;
+  }
+
+  .frameParent79 .frameParent84 {
+    position: absolute !important;
+    top: 603px !important;
+    left: 438px !important;
+    width: 220px !important;
+    height: 80px !important;
+    margin: 0 !important;
+    transform: none !important;
+  }
+
+  .frameParent79 .frameParent90 {
+    position: absolute !important;
+    top: 588px !important;
+    left: 186px !important;
+    width: auto !important;
+    margin: 0 !important;
+    transform: none !important;
+  }
+
+  
+  .frameParent79 .frameParent91 {
+    position: relative !important;
+    inset: auto !important;
+    width: 1214px !important;
+    min-width: 1214px !important;
+    max-width: 1214px !important;
+    height: auto !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 50px !important;
+    transform: translateY(-350px) !important;
+  }
+
+  .frameParent79 .rectangleParent5 {
+    width: 1214px !important;
+    max-width: 1214px !important;
+    height: auto !important;
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    gap: 64px !important;
+    margin: 0 !important;
+  }
+
+  .frameParent79 .rectangleParent5 > .frameChild48,
+  .frameParent79 .rectangleParent5 > .frameChild49,
+  .frameParent79 .rectangleParent5 > .frameChild51 {
+    width: 362px !important;
+    min-width: 362px !important;
+    max-width: 362px !important;
+    height: 221px !important;
+    flex: 0 0 362px !important;
+  }
+
+  .frameParent79 .rectangleParent5 > .frameParent95 {
+    position: absolute !important;
+    top: calc(50% - 90.5px) !important;
+    left: 40px !important;
+    width: 282px !important;
+    height: 181px !important;
+    transform: none !important;
+  }
+
+  .frameParent79 .rectangleParent5 > .frameParent93 {
+    position: absolute !important;
+    top: calc(50% - 90.5px) !important;
+    left: calc(50% - 141px) !important;
+    width: 282px !important;
+    height: 181px !important;
+    transform: none !important;
+  }
+
+  .frameParent79 .rectangleParent5 > .frameParent94 {
+    position: absolute !important;
+    top: calc(50% - 103.5px) !important;
+    left: calc(50% + 285px) !important;
+    width: 282px !important;
+    height: 181px !important;
+    transform: none !important;
+  }
+
+  
+  .contentIntelligenceManagem > .frameParent96 {
+    position: absolute !important;
+    top: 6205px !important;
+    left: calc(50% - 497px) !important;
+    width: 994px !important;
+    min-width: 994px !important;
+    max-width: 994px !important;
+    height: auto !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 50px !important;
+  }
+
+  .frameParent96 > .frameWrapper72 {
+    width: 1000px !important;
+    max-width: 1000px !important;
+  }
+
+  .frameParent96 .frameWrapper73 {
+    width: 931px !important;
+    max-width: 931px !important;
+  }
+
+  .frameParent96 .onePlatformSmarterLearningParent {
+    width: 931px !important;
+    max-width: 931px !important;
+    height: 178px !important;
+    gap: 32px !important;
+    transform: translateY(-470px) !important;
+  }
+
+  .frameParent96 .neurolxpBringsContent {
+    width: 1020px !important;
+    max-width: 1020px !important;
+    height: 83px !important;
+    font-size: 28px !important;
+    line-height: 40px !important;
+  }
+
+  .frameParent96 > .requestADemoWrapper {
+    width: 250px !important;
+    min-width: 250px !important;
+    max-width: 250px !important;
+    height: 64px !important;
+    min-height: 64px !important;
+    margin: 0 !important;
+    padding: 16px 32px !important;
+    transform: translateY(-580px) !important;
+  }
+}
+
+
+
+
+@media screen and (min-width: 769px) and (max-width: 1023px),
+       screen and (min-width: 1025px) and (max-width: 1439px) {
+
+  
+  .contentIntelligenceManagem > .frameParent37 {
+    position: absolute !important;
+    top: 2170px !important;
+    left: calc(50% - 633px) !important;
+    width: 1267px !important;
+    min-width: 1267px !important;
+    max-width: 1267px !important;
+    height: auto !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 50px !important;
+    transform: none !important;
+  }
+
+  .frameParent37 .frameWrapper42 {
+    width: 1267px !important;
+    min-width: 1267px !important;
+    max-width: 1267px !important;
+    height: 258px !important;
+  }
+
+  .frameParent37 .frameWrapper43 {
+    width: 931px !important;
+    min-width: 931px !important;
+    max-width: 931px !important;
+    height: 196px !important;
+  }
+
+  .frameParent37 .frameParent38 {
+    width: 1267px !important;
+    max-width: 1267px !important;
+    height: 227px !important;
+    gap: 32px !important;
+  }
+
+  .frameParent37 .frameParent39 {
+    width: auto !important;
+    height: 132px !important;
+    gap: 32px !important;
+  }
+
+  .frameParent37 .contentThatWorks {
+    width: 910px !important;
+    min-width: 910px !important;
+    max-width: 910px !important;
+    height: 63px !important;
+    font-size: 48px !important;
+    line-height: 60px !important;
+    text-align: center !important;
+  }
+
+  .frameParent37 .neurolxpSupportsDiverse {
+    width: 657px !important;
+    min-width: 657px !important;
+    max-width: 657px !important;
+    height: 40px !important;
+    font-size: 28px !important;
+    line-height: 40px !important;
+    text-align: center !important;
+  }
+
+  .frameParent37 .frameParent40 {
+    width: 1267px !important;
+    max-width: 1267px !important;
+    gap: 50px !important;
+  }
+
+  .frameParent37 .compatibilitySwitchGrid {
+    width: 1267px !important;
+    min-width: 1267px !important;
+    max-width: 1267px !important;
+    display: grid !important;
+    grid-template-columns: repeat(3, 401px) !important;
+    justify-content: initial !important;
+    justify-items: center !important;
+    align-items: start !important;
+    gap: 50px 32px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  .frameParent37 .compatibilitySwitchCard,
+  .frameParent37 .compatibilitySwitchHeader,
+  .frameParent37 .compatibilitySwitchDetails {
+    width: 401px !important;
+    min-width: 401px !important;
+    max-width: 401px !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
+  
+  .contentIntelligenceManagem > .frameParent55 {
+    position: absolute !important;
+    top: 2890px !important;
+    left: 80px !important;
+    width: 1280px !important;
+    min-width: 1280px !important;
+    max-width: 1280px !important;
+    height: auto !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    gap: 124px !important;
+    text-align: left !important;
+    transform: none !important;
+  }
+
+  .frameParent55 .frameParent56 {
+    width: 500px !important;
+    min-width: 500px !important;
+    max-width: 500px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 32px !important;
+  }
+
+  .frameParent55 .frameParent57 {
+    width: 500px !important;
+    max-width: 500px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 32px !important;
+  }
+
+  .frameParent55 .centralizedContentBadge {
+    width: 435.8px !important;
+    min-width: 435.8px !important;
+    max-width: 435.8px !important;
+    height: 50.2px !important;
+  }
+
+  .frameParent55 .organizeLearningContent {
+    width: 533px !important;
+    min-width: 533px !important;
+    max-width: 533px !important;
+    font-size: 48px !important;
+    line-height: 60px !important;
+    text-align: left !important;
+  }
+
+  .frameParent55 .manageLearningResources {
+    width: 468px !important;
+    min-width: 468px !important;
+    max-width: 468px !important;
+    font-size: 28px !important;
+    line-height: 40px !important;
+    text-align: left !important;
+  }
+
+  .frameParent55 .frameWrapper62 {
+    position: relative !important;
+    width: 689px !important;
+    min-width: 689px !important;
+    max-width: 689px !important;
+    height: 658px !important;
+  }
+
+  .frameParent55 .frameWrapper63 {
+    position: absolute !important;
+    top: 66px !important;
+    left: 35px !important;
+    width: 614px !important;
+    min-width: 614px !important;
+    max-width: 614px !important;
+    height: 587px !important;
+    padding: 0 !important;
+  }
+
+  .frameParent55 .frameWrapper64 {
+    position: absolute !important;
+    top: 16px !important;
+    left: 16px !important;
+    width: 582px !important;
+    min-width: 582px !important;
+    max-width: 582px !important;
+    height: 555px !important;
+    padding: 0 !important;
+  }
+
+  .frameParent55 .frameParent58 {
+    position: absolute !important;
+    top: calc(50% - 245.5px) !important;
+    left: 32px !important;
+    width: 475px !important;
+    min-width: 475px !important;
+    max-width: 475px !important;
+    height: 491px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 16px !important;
+  }
+
+  .frameParent55 .frameParent59 {
+    width: 475px !important;
+    max-width: 475px !important;
+    height: 70px !important;
+    min-height: 70px !important;
+    gap: 16px !important;
+  }
+
+  
+  .contentIntelligenceManagem > .frameParent96 {
+    position: absolute !important;
+    top: 6205px !important;
+    left: calc(50% - 497px) !important;
+    width: 994px !important;
+    min-width: 994px !important;
+    max-width: 994px !important;
+    height: auto !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 50px !important;
+    transform: none !important;
+  }
+
+  .frameParent96 > .frameWrapper72 {
+    width: 1000px !important;
+    min-width: 1000px !important;
+    max-width: 1000px !important;
+    height: auto !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    padding: 0 !important;
+  }
+
+  .frameParent96 .frameWrapper73 {
+    width: 931px !important;
+    min-width: 931px !important;
+    max-width: 931px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+
+  .frameParent96 .onePlatformSmarterLearningParent {
+    width: 931px !important;
+    min-width: 931px !important;
+    max-width: 931px !important;
+    height: 178px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 32px !important;
+    transform: translateY(-470px) !important;
+  }
+
+  .frameParent96 .neurolxpBringsContent {
+    width: 1020px !important;
+    min-width: 1020px !important;
+    max-width: 1020px !important;
+    height: 83px !important;
+    font-size: 28px !important;
+    line-height: 40px !important;
+    text-align: center !important;
+  }
+
+  .frameParent96 > .requestADemoWrapper {
+    width: 250px !important;
+    min-width: 250px !important;
+    max-width: 250px !important;
+    height: 64px !important;
+    min-height: 64px !important;
+    margin: 0 !important;
+    padding: 16px 32px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    transform: translateY(-500px) !important;
+    flex-shrink: 0 !important;
+  }
+
+  .frameParent96 > .requestADemoWrapper .requestADemo {
+    width: 198px !important;
+    min-width: 198px !important;
+    max-width: 198px !important;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1023px),
+       screen and (min-width: 1025px) and (max-width: 1439px) {
+  .contentIntelligenceManagem > .frameParent22 {
+    left: 50% !important;
+    transform: translate(-50%, -95px) !important;
+  }
+}

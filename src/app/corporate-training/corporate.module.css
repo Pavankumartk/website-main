@@ -1,0 +1,4752 @@
+.corporateTraining {
+  width: min(100%, 1440px);
+  min-width: 0;
+  height: 5827px;
+  position: relative;
+  background-color: #dfe6e9;
+  overflow: hidden;
+  text-align: left;
+  font-size: 16px;
+  color: #31344b;
+  font-family: "Segoe UI";
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+}
+
+/* Browser-zoom-safe centering: keeps the page centered at 90%, 100%, 110%, etc. */
+.corporateTraining,
+.corporateTraining *,
+.corporateTraining *::before,
+.corporateTraining *::after {
+  box-sizing: border-box;
+}
+
+.corporateTraining img,
+.corporateTraining video,
+.corporateTraining svg {
+  max-width: 100%;
+}
+
+/* Fixed 1440px design layers stay centered relative to the page itself. */
+.corporateTraining > .rectangleParent,
+.corporateTraining > .frameParent6 {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* The main 1280px decorative layers also stay centered instead of drifting
+   when browser zoom changes the effective viewport width. */
+.corporateTraining > .rectangle2,
+.corporateTraining > .image202 {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.rectangleParent {
+  position: absolute;
+  top: 0px;
+  left: calc(50% - 720px);
+  box-shadow:
+    -8px -8px 8px rgba(255, 255, 255, 0.5) inset,
+    8px 8px 8px #c4c4c4 inset;
+  border-radius: 0px 0px 200px 200px;
+  background-color: #dfe6e9;
+  width: 1440px;
+  height: 778px;
+  overflow: hidden;
+}
+.rectangle {
+  position: absolute;
+  top: 0px;
+  left: 43px;
+  width: 1280px;
+  height: 500px;
+  flex-shrink: 0;
+}
+.image20 {
+  position: absolute;
+  top: -561px;
+  left: calc(50% - 619px);
+  width: 1280px;
+  height: 800px;
+  flex-shrink: 0;
+}
+.groupMultiethnicBusinessPeo {
+  position: absolute;
+  top: calc(50% - 551px);
+  left: 43px;
+  width: 1280px;
+  height: 526px;
+  flex-shrink: 0;
+}
+.frameParent {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  box-shadow:
+    -8px -8px 16px #fff,
+    8px 8px 16px #c6c6c9;
+  background-color: #dfe6e9;
+  width: 1440px;
+  height: 80px;
+  overflow: hidden;
+}
+.frameChild {
+  position: absolute;
+  top: calc(50% - 22px);
+  left: 1096px;
+  width: 132px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+}
+.frameGroup {
+  position: absolute;
+  top: 18px;
+  left: 32px;
+  width: 1376px;
+  height: 45px;
+}
+.logo01SynapseSpark1Parent {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  display: flex;
+  align-items: center;
+  gap: 130px;
+}
+.logo01SynapseSpark1Icon {
+  height: 45px;
+  width: 120px;
+  position: relative;
+  object-fit: cover;
+}
+.frameContainer {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.homeParent {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.home {
+  position: relative;
+  line-height: 24px;
+  font-weight: 600;
+}
+.arrowDown01Icon {
+  height: 16px;
+  width: 16px;
+  position: relative;
+}
+.ourCustomersParent {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #2d4cc8;
+}
+.ourCustomers {
+  position: relative;
+  line-height: 24px;
+}
+.signInHelpWrapper {
+  position: absolute;
+  top: calc(50% - 22.5px);
+  left: 1244px;
+  box-shadow:
+    -8px -8px 16px #fff,
+    8px 8px 16px #c6c6c9;
+  border-radius: 32px;
+  background-color: #dfe6e9;
+  width: 132px;
+  height: 44px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px 32px;
+  box-sizing: border-box;
+  text-align: center;
+  color: #2d4cc8;
+  font-family: "Segoe UI";
+}
+.signInHelp {
+  width: 97px;
+  position: relative;
+  letter-spacing: 0.02em;
+  line-height: 28px;
+  font-weight: 600;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.frameDiv {
+  position: absolute;
+  top: 112px;
+  left: 80px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #2f3547;
+}
+.ourCustomersWrapper {
+  display: flex;
+  align-items: center;
+}
+.solutionsFor {
+  position: relative;
+  letter-spacing: 0.02em;
+  line-height: 24px;
+}
+.arrowRightDoubleGroup {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #243fa8;
+}
+.businesspeopleDiscussingDigiParent {
+  position: absolute;
+  top: 168px;
+  left: calc(50% - 558px);
+  box-shadow:
+    -8px -8px 16px #fff,
+    8px 8px 16px #c4c4c4;
+  border-radius: 24px;
+  background-color: #dfe6e9;
+  width: 1153px;
+  height: 981px;
+  overflow: hidden;
+  text-align: center;
+  font-size: 48px;
+  font-family: "Segoe UI";
+}
+.businesspeopleDiscussingDigiIcon {
+  position: absolute;
+  top: -61px;
+  left: -31px;
+  border-radius: 0px 0px 250px 250px;
+  width: 1184px;
+  height: 615px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+.frameParent2 {
+  position: absolute;
+  top: 594px;
+  left: calc(50% - 521.5px);
+  width: 1044px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 54px;
+  flex-shrink: 0;
+}
+.frameWrapper {
+  align-self: stretch;
+  height: 209px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.frameParent3 {
+  width: 100%;
+  height: 252px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  max-width: 100%;
+  flex-shrink: 0;
+}
+.frameParent4 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  flex-shrink: 0;
+}
+.frameItem {
+  width: 350px;
+  height: 50.3px;
+  position: relative;
+  border-radius: 28px;
+  flex-shrink: 0;
+  box-shadow:
+    -4px -4px 8px #fff inset,
+    4px 4px 8px #c4c4c4 inset;
+  background-color: #dfe6e9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  padding: 0 24px;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  color: #2d4cc8;
+  text-align: center;
+  white-space: nowrap;
+  overflow: visible;
+}
+.empoweringWorkforce {
+  width: 1138px;
+  height: 63px;
+  position: relative;
+  letter-spacing: 0.03em;
+  line-height: 60px;
+  display: inline-block;
+  flex-shrink: 0;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.buildFutureReadyWorkforces {
+  align-self: stretch;
+  height: 80px;
+  position: relative;
+  font-size: 28px;
+  letter-spacing: 0.03em;
+  line-height: 40px;
+  color: #2f3547;
+  display: inline-block;
+  flex-shrink: 0;
+}
+.frameParent5 {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  text-align: left;
+  font-size: 22px;
+  color: #2d4cc8;
+}
+.frameInner {
+  height: 60.2px;
+  width: 200px;
+  position: relative;
+  border-radius: 8px;
+  object-fit: contain;
+}
+.frameWrapper2 {
+  height: 60px;
+  width: 210px;
+  box-shadow:
+    -8px -8px 16px #fff,
+    8px 8px 16px #c6c6c9;
+  border-radius: 8px;
+  background-color: #dfe6e9;
+  overflow: hidden;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px 32px;
+  box-sizing: border-box;
+}
+.startLearningWrapper {
+  width: 140px;
+  display: flex;
+  align-items: center;
+}
+.startLearning {
+  width: 147px;
+  position: relative;
+  line-height: 30px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+.rectangle2 {
+  position: absolute;
+  top: 3360.18px;
+  left: 80px;
+  width: 1280px;
+  height: 500px;
+}
+.image202 {
+  position: absolute;
+  top: 2799.18px;
+  left: calc(50% - 640px);
+  width: 1280px;
+  height: 800px;
+}
+.frameParent6 {
+  position: absolute;
+  top: 1245px;
+  left: 0px;
+  width: 1440px;
+  height: 4582.5px;
+  text-align: center;
+  font-size: 48px;
+  font-family: "Segoe UI";
+}
+.frameParent7 {
+  position: absolute;
+  top: 0px;
+  left: calc(50% - 672px);
+  display: flex;
+  align-items: center;
+  gap: 64px;
+  font-size: 36px;
+  color: #2d4cc8;
+}
+.ellipseParent {
+  height: 288px;
+  width: 288px;
+  position: relative;
+}
+.ellipseDiv {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  box-shadow:
+    -8px -8px 16px #fff,
+    8px 8px 16px #c4c4c4;
+  border-radius: 50%;
+  background-color: #dfe6e9;
+  width: 288px;
+  height: 288px;
+}
+.ellipseGroup {
+  position: absolute;
+  top: 29px;
+  left: 29px;
+  width: 229px;
+  height: 229px;
+}
+.frameChild2 {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  box-shadow:
+    -8px -8px 16px #fff inset,
+    8px 8px 16px #c4c4c4 inset;
+  border-radius: 50%;
+  background-color: #dfe6e9;
+  width: 229px;
+  height: 229px;
+}
+.frameParent8 {
+  position: absolute;
+  top: calc(50% - 90.5px);
+  left: calc(50% - 74.5px);
+  width: 149px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+}
+.frameParent9 {
+  width: 101px;
+  height: 106px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+}
+.frameIcon {
+  width: 71px;
+  height: 63px;
+  position: relative;
+  flex-shrink: 0;
+}
+.b {
+  width: 93px;
+  position: relative;
+  letter-spacing: 0.03em;
+  line-height: 40px;
+  display: inline-block;
+  flex-shrink: 0;
+}
+.enterpriseClients {
+  width: 171px;
+  position: relative;
+  font-size: 18px;
+  letter-spacing: 0.03em;
+  line-height: 28px;
+  color: #2f3547;
+  display: inline-block;
+  flex-shrink: 0;
+}
+.ellipseIcon {
+  position: absolute;
+  top: 214px;
+  left: calc(50% - 40.5px);
+  width: 82px;
+  height: 15px;
+}
+.ellipseContainer {
+  height: 288px;
+  width: 288px;
+  position: relative;
+  color: #bf1869;
+}
+.learnersTrained {
+  width: 171px;
+  height: 25px;
+  position: relative;
+  font-size: 22px;
+  letter-spacing: 0.03em;
+  line-height: 28px;
+  color: #2f3547;
+  display: inline-block;
+  flex-shrink: 0;
+}
+.ellipseParent3 {
+  height: 288px;
+  width: 288px;
+  position: relative;
+  color: #67096e;
+}
+.ellipseParent5 {
+  height: 288px;
+  width: 288px;
+  position: relative;
+  color: #c05512;
+}
+.productivityBoost {
+  width: 161px;
+  height: 24px;
+  position: relative;
+  font-size: 18px;
+  letter-spacing: 0.03em;
+  line-height: 28px;
+  color: #2f3547;
+  display: inline-block;
+  flex-shrink: 0;
+}
+.frameParent16 {
+  position: absolute;
+  top: 384px;
+  left: 80px;
+  width: 1280px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+}
+.frameParent17 {
+  align-self: stretch;
+  height: 292px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+}
+.frameChild15 {
+  width: 200px;
+  height: 50.2px;
+  position: relative;
+  border-radius: 28px;
+  flex-shrink: 0;
+  box-shadow:
+    -4px -4px 8px #fff inset,
+    4px 4px 8px #c4c4c4 inset;
+  background-color: #dfe6e9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  padding: 0 24px;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  color: #2d4cc8;
+  text-align: center;
+  white-space: nowrap;
+  overflow: visible;
+}
+.keyChallengesInCorporateTrParent {
+  align-self: stretch;
+  height: 216px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  flex-shrink: 0;
+}
+.keyChallengesInContainer {
+  width: 910px;
+  height: 63px;
+  position: relative;
+  letter-spacing: 0.03em;
+  line-height: 60px;
+  display: inline-block;
+  flex-shrink: 0;
+}
+.keyChallengesIn {
+  line-height: 60px;
+}
+.neurolxpHelpsOrganizations {
+  width: 1014px;
+  height: 72px;
+  position: relative;
+  font-size: 28px;
+  letter-spacing: 0.03em;
+  line-height: 40px;
+  color: #2f3547;
+  display: inline-block;
+  flex-shrink: 0;
+}
+.frameParent18 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 36px;
+  font-size: 24px;
+}
+.frameParent19 {
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.frameWrapper3 {
+  height: 418px;
+  width: 410px;
+  position: relative;
+  border-radius: 24px 24px 50px 50px;
+}
+.frameWrapper4 {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  box-shadow:
+    -8px -8px 16px #fff,
+    8px 8px 16px #c4c4c4;
+  border-radius: 24px 24px 50px 50px;
+  background-color: #dfe6e9;
+  width: 410px;
+  height: 418px;
+  overflow: hidden;
+}
+.frameParent20 {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 410px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+}
+.frameParent21 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+.frameWrapper5 {
+  align-self: stretch;
+  height: 172px;
+  position: relative;
+  box-shadow:
+    -8px -8px 16px #fff inset,
+    8px 8px 16px #c4c4c4 inset;
+  border-radius: 24px 24px 24px 100px;
+  background-color: #dfe6e9;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.frameParent22 {
+  position: absolute;
+  top: 24px;
+  left: calc(50% - 113px);
+  width: 227px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.rapidSkillChanges {
+  width: 255px;
+  height: 34px;
+  position: relative;
+  letter-spacing: 0.03em;
+  line-height: 32px;
+  display: inline-block;
+  flex-shrink: 0;
+}
+.continuousWorkforceUpskillin {
+  width: 334px;
+  position: relative;
+  letter-spacing: 0.03em;
+  line-height: 40px;
+  font-weight: 600;
+  display: inline-block;
+}
+.howNeurolxpHelpsParent {
+  width: 241px;
+  height: 72px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  font-size: 22px;
+  color: #2d4cc8;
+}
+.howNeurolxpHelps {
+  align-self: stretch;
+  height: 30px;
+  position: relative;
+  letter-spacing: 0.02em;
+  line-height: 30px;
+  display: inline-block;
+  flex-shrink: 0;
+}
+.arrowDownDoubleIcon {
+  width: 32px;
+  height: 32px;
+  position: relative;
+  flex-shrink: 0;
+}
+.frameParent29 {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.actionableLearningInsights {
+  width: 256px;
+  position: relative;
+  letter-spacing: 0.03em;
+  line-height: 40px;
+  font-weight: 600;
+  display: inline-block;
+}
+.frameParent36 {
+  position: absolute;
+  top: 1694px;
+  left: 80px;
+  width: 1280px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 50px;
+  color: #2f3547;
+}
+.frameParent37 {
+  align-self: stretch;
+  height: 249px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+}
+.frameChild21 {
+  width: 390.1px;
+  height: 50.3px;
+  position: relative;
+  border-radius: 28px;
+  flex-shrink: 0;
+  box-shadow:
+    -4px -4px 8px #fff inset,
+    4px 4px 8px #c4c4c4 inset;
+  background-color: #dfe6e9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  padding: 0 24px;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  color: #2d4cc8;
+  text-align: center;
+  white-space: nowrap;
+  overflow: visible;
+}
+.for {
+  color: #31344b;
+  line-height: 60px;
+}
+.everyNeed {
+  color: #2d4cc8;
+  line-height: 60px;
+}
+.organizationsCanUse {
+  width: 1014px;
+  height: 72px;
+  position: relative;
+  font-size: 28px;
+  letter-spacing: 0.03em;
+  line-height: 40px;
+  display: inline-block;
+  flex-shrink: 0;
+}
+.frameParent38 {
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  gap: 95px;
+  text-align: left;
+  font-size: 28px;
+  color: #31344b;
+}
+.frameParent39 {
+  width: 623px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 44px;
+}
+.frameParent40 {
+  width: 548px;
+  display: flex;
+  align-items: center;
+  gap: 36px;
+}
+.frameChild22 {
+  height: 80px;
+  width: 80px;
+  position: relative;
+  flex-shrink: 0;
+}
+.employeeOnboardingParent {
+  height: 86px;
+  width: 456px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  flex-shrink: 0;
+}
+.employeeOnboarding {
+  align-self: stretch;
+  height: 40px;
+  position: relative;
+  letter-spacing: 0.03em;
+  line-height: 40px;
+  display: inline-block;
+  flex-shrink: 0;
+}
+.accelerateNewHire {
+  align-self: stretch;
+  position: relative;
+  font-size: 20px;
+  letter-spacing: 0.03em;
+  line-height: 32px;
+  color: #2f3547;
+  flex-shrink: 0;
+}
+.complianceTrainingParent {
+  height: 86px;
+  width: 549px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  flex-shrink: 0;
+}
+.frameParent43 {
+  width: 562px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 44px;
+}
+.frameParent44 {
+  width: 497px;
+  display: flex;
+  align-items: center;
+  gap: 36px;
+}
+.leadershipDevelopmentParent {
+  height: 86px;
+  width: 450px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  flex-shrink: 0;
+}
+.frameParent45 {
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  gap: 36px;
+}
+.technicalSkillDevelopmentParent {
+  height: 86px;
+  width: 474px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  flex-shrink: 0;
+}
+.ellipseParent7 {
+  width: 524px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  isolation: isolate;
+  gap: 36px;
+}
+.frameChild27 {
+  height: 80px;
+  width: 80px;
+  position: relative;
+  box-shadow:
+    -8px -8px 16px #fff,
+    8px 8px 8px #c4c4c4;
+  border-radius: 50%;
+  background-color: #dfe6e9;
+  z-index: 0;
+  flex-shrink: 0;
+}
+.customerServiceExcellenceParent {
+  height: 86px;
+  width: 549px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  z-index: 1;
+  flex-shrink: 0;
+}
+.chatting01Icon {
+  height: 53px;
+  width: 53px;
+  position: absolute;
+  margin: 0 !important;
+  top: 16px;
+  left: calc(50% - 249px);
+  z-index: 2;
+  flex-shrink: 0;
+}
+.frameParent46 {
+  position: absolute;
+  top: 2435px;
+  left: calc(50% - 640px);
+  width: 1280px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+}
+.frameParent47 {
+  width: 931px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+}
+.frameChild28 {
+  width: 570px;
+  height: 55px;
+  position: relative;
+  border-radius: 28px;
+
+  box-shadow:
+    -4px -4px 8px #fff inset,
+    4px 4px 8px #c4c4c4 inset;
+  background-color: #dfe6e9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  padding: 0 24px;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  color: #2d4cc8;
+  text-align: center;
+  white-space: nowrap;
+  overflow: visible;
+}
+.whyOrganizationsChooseNeuroParent {
+  align-self: stretch;
+  height: 178px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+}
+.frameParent48 {
+  width: 1280px;
+  display: flex;
+  align-items: center;
+  gap: 70px;
+  color: #2d4cc8;
+}
+.frameParent49 {
+  width: 420px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 25px;
+}
+.rectangleGroup {
+  width: 380px;
+  height: 160px;
+  position: relative;
+}
+.rectangleDiv {
+  position: absolute;
+  top: calc(50% - 75px);
+  left: 0px;
+  box-shadow:
+    -8px -8px 16px #fff,
+    8px 8px 16px #c4c4c4;
+  border-radius: 24px;
+  background-color: #dfe6e9;
+  width: 420px;
+  height: 150px;
+  flex-shrink: 0;
+}
+.frameParent50 {
+  position: absolute;
+  top: calc(50% - 55.52px);
+  left: calc(50% - 126px);
+  width: 252px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  flex-shrink: 0;
+}
+.wrapper {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.b4 {
+  width: 253px;
+  height: 54px;
+  position: relative;
+  letter-spacing: 0.03em;
+  line-height: 56px;
+  display: inline-block;
+  flex-shrink: 0;
+}
+.completionWrapper {
+  width: 242px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 24px;
+  color: #31344b;
+}
+.completion {
+  width: 146px;
+  height: 34px;
+  position: relative;
+  letter-spacing: 0.03em;
+  line-height: 32px;
+  font-weight: 600;
+  display: inline-block;
+  flex-shrink: 0;
+}
+.rectangleContainer {
+  width: 380px;
+  height: 160px;
+  position: relative;
+  color: #2a7308;
+}
+.frameParent51 {
+  position: absolute;
+  top: calc(50% - 54.52px);
+  left: calc(50% - 126px);
+  width: 252px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  flex-shrink: 0;
+}
+.b5 {
+  width: 253px;
+  height: 53px;
+  position: relative;
+  letter-spacing: 0.03em;
+  line-height: 56px;
+  display: inline-block;
+  flex-shrink: 0;
+}
+.averageScore {
+  width: 174px;
+  height: 34px;
+  position: relative;
+  letter-spacing: 0.03em;
+  line-height: 32px;
+  font-weight: 600;
+  display: inline-block;
+  flex-shrink: 0;
+}
+.rectangleParent2 {
+  width: 380px;
+  height: 160px;
+  position: relative;
+  color: #67096e;
+}
+.frameParent52 {
+  position: absolute;
+  top: calc(50% - 52.52px);
+  left: calc(50% - 126px);
+  width: 252px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  flex-shrink: 0;
+}
+.hWrapper {
+  align-self: stretch;
+  height: 48px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.h {
+  width: 253px;
+  height: 48px;
+  position: relative;
+  letter-spacing: 0.03em;
+  line-height: 56px;
+  display: inline-block;
+  flex-shrink: 0;
+}
+.averageTime {
+  width: 168px;
+  height: 34px;
+  position: relative;
+  letter-spacing: 0.03em;
+  line-height: 32px;
+  font-weight: 600;
+  display: inline-block;
+  flex-shrink: 0;
+}
+.frameWrapper19 {
+  height: 530px;
+  width: 776px;
+  position: relative;
+  box-shadow:
+    -8px -8px 16px #fff,
+    8px 8px 16px #c4c4c4;
+  border-radius: 24px;
+  background-color: #dfe6e9;
+  overflow: hidden;
+  flex-shrink: 0;
+  font-size: 32px;
+  color: #31344b;
+}
+.topTrainingProgramsParent {
+  position: absolute;
+  top: 32px;
+  left: calc(50% - 345px);
+  width: 690px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+.topTrainingPrograms {
+  align-self: stretch;
+  height: 34px;
+  position: relative;
+  letter-spacing: 0.03em;
+  line-height: 32px;
+  display: inline-block;
+  flex-shrink: 0;
+}
+.frameParent53 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  text-align: left;
+  font-size: 22px;
+}
+.leadershipDevParent {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  isolation: isolate;
+  gap: 16px;
+}
+.leadershipDev {
+  align-self: stretch;
+  height: 34px;
+  position: relative;
+  letter-spacing: 0.03em;
+  line-height: 32px;
+  font-weight: 600;
+  display: inline-block;
+  flex-shrink: 0;
+  z-index: 0;
+}
+.rectangleParent3 {
+  align-self: stretch;
+  height: 40px;
+  position: relative;
+  box-shadow:
+    -4px -4px 8px #fff inset,
+    4px 4px 8px #c4c4c4 inset;
+  border-radius: 50px;
+  background-color: #dfe6e9;
+  overflow: hidden;
+  flex-shrink: 0;
+  z-index: 1;
+}
+.rectangle3 {
+  position: absolute;
+  top: 0.71px;
+  left: 0.47px;
+  width: 1280px;
+  height: 500px;
+  flex-shrink: 0;
+}
+.image203 {
+  position: absolute;
+  top: -560.29px;
+  left: calc(50% - 342.53px);
+  width: 1280px;
+  height: 800px;
+  flex-shrink: 0;
+}
+.frameChild31 {
+  position: absolute;
+  top: calc(50% - 11.48px);
+  left: -21px;
+  box-shadow:
+    -4px -4px 8px #fff,
+    4px 4px 8px #c6c6c9;
+  border-radius: 100px;
+  background-color: #2d4cc8;
+  width: 628px;
+  height: 24px;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 0px 32px;
+  box-sizing: border-box;
+  flex-shrink: 0;
+}
+.b6 {
+  width: 73px;
+  height: 42px;
+  position: absolute;
+  margin: 0 !important;
+  top: -0.48px;
+  right: -0.5px;
+  font-size: 24px;
+  letter-spacing: 0.03em;
+  line-height: 40px;
+  display: inline-block;
+  color: #2d4cc8;
+  text-align: center;
+  z-index: 2;
+}
+.frameChild32 {
+  position: absolute;
+  top: calc(50% - 11.48px);
+  left: -17px;
+  box-shadow:
+    -4px -4px 8px #fff,
+    4px 4px 8px #c6c6c9;
+  border-radius: 100px;
+  background-color: #c05512;
+  width: 654px;
+  height: 24px;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 0px 32px;
+  box-sizing: border-box;
+  flex-shrink: 0;
+}
+.frameChild33 {
+  position: absolute;
+  top: calc(50% - 11.52px);
+  left: -16px;
+  box-shadow:
+    -4px -4px 8px #fff,
+    4px 4px 8px #c6c6c9;
+  border-radius: 100px;
+  background-color: #67096e;
+  width: 514px;
+  height: 24px;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 0px 32px;
+  box-sizing: border-box;
+  flex-shrink: 0;
+}
+.frameChild34 {
+  position: absolute;
+  top: calc(50% - 11.48px);
+  left: -12px;
+  box-shadow:
+    -4px -4px 8px #fff,
+    4px 4px 8px #c6c6c9;
+  border-radius: 100px;
+  background-color: #2a7308;
+  width: 567px;
+  height: 24px;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 0px 32px;
+  box-sizing: border-box;
+  flex-shrink: 0;
+}
+.frameParent54 {
+  position: absolute;
+  top: 3371.48px;
+  left: calc(50% - 640px);
+  box-shadow:
+    -8px -8px 16px #fff inset,
+    8px 8px 16px rgba(196, 196, 196, 0.8) inset;
+  border-radius: 32px;
+  background-color: #dfe6e9;
+  width: 1280px;
+  height: 614px;
+  overflow: hidden;
+  text-align: left;
+}
+.peopleTakingPartBusinessEvParent {
+  position: absolute;
+  top: 32px;
+  left: 32px;
+  box-shadow:
+    10px 10px 20px #c4c4c4,
+    -10px -10px 20px rgba(255, 255, 255, 0.6);
+  border-radius: 16px;
+  background-color: #dfe6e9;
+  width: 1216px;
+  height: 550px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.peopleTakingPartBusinessEv {
+  position: absolute;
+  top: -2.48px;
+  left: 0px;
+  width: 1216px;
+  height: 555px;
+  flex-shrink: 0;
+}
+.frameChild35 {
+  position: absolute;
+  top: -68.48px;
+  left: 625px;
+  border-radius: 50%;
+  width: 745px;
+  height: 745px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+.image21 {
+  position: absolute;
+  top: -1px;
+  left: 0px;
+  width: 1216px;
+  height: 737px;
+  flex-shrink: 0;
+}
+.groupYoungBusinesspeopleUsi {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: auto;
+  width: 591px;
+  height: 550px;
+  object-fit: cover;
+  object-position: center;
+  flex-shrink: 0;
+  cursor: pointer;
+}
+.frameParent55 {
+  position: absolute;
+  top: calc(50% - 204.48px);
+  left: 28px;
+  width: 575px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 46px;
+  flex-shrink: 0;
+}
+.frameParent56 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+}
+.frameParent57 {
+  width: 544px;
+  height: 189px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+}
+.frameChild36 {
+  width: 270px;
+  height: 58px;
+  position: relative;
+  border-radius: 999px;
+  flex-shrink: 0;
+  box-shadow:
+    inset -8px -8px 16px rgba(255, 255, 255, 0.95),
+    inset 8px 8px 16px rgba(196, 196, 196, 0.9);
+  background-color: #dfe6e9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  padding: 0 26px;
+  font-family: "Segoe UI", sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0;
+  color: #2d4cc8;
+  text-align: center;
+  white-space: nowrap;
+  overflow: visible;
+}
+
+.frameChild36 sup {
+  position: relative;
+  top: -7px;
+  margin-left: 3px;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1;
+  vertical-align: baseline;
+}
+.neurolxpTransformingCorporat {
+  width: 584px;
+  height: 123px;
+  position: relative;
+  letter-spacing: 0.03em;
+  line-height: 60px;
+  display: inline-block;
+  flex-shrink: 0;
+}
+.buildSkilledEngaged {
+  align-self: stretch;
+  height: 83px;
+  position: relative;
+  font-size: 28px;
+  letter-spacing: 0.03em;
+  line-height: 40px;
+  color: #2f3547;
+  display: inline-block;
+  flex-shrink: 0;
+}
+.frameWrapper20 {
+  width: 175px;
+  height: 60px;
+  box-shadow:
+    -8px -8px 16px #fff,
+    8px 8px 16px #c6c6c9;
+  border-radius: 16px;
+  background-color: #dfe6e9;
+  overflow: hidden;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px 32px;
+  box-sizing: border-box;
+  font-size: 22px;
+  color: #2d4cc8;
+}
+.getStartedWrapper {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+.getStarted {
+  width: 116px;
+  position: relative;
+  line-height: 30px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+.frameChild37 {
+  position: absolute;
+  top: 222px;
+  left: 867px;
+  border-radius: 500px;
+  width: 106px;
+  height: 106px;
+  flex-shrink: 0;
+  z-index: 50;
+}
+
+.corporateVideoControl {
+  padding: 0;
+  border: 0;
+  background: transparent;
+  box-shadow: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 50;
+}
+
+.corporateVideoControl img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: contain;
+  pointer-events: none;
+}
+
+.corporateVideoControl:focus-visible {
+  outline: 3px solid #ffffff;
+  outline-offset: 4px;
+  border-radius: 50%;
+}
+
+
+.corporateVideoControl.isPlaying 
+
+
+.corporateVideoControl.isPaused 
+
+
+.image207 {
+  position: absolute;
+  top: 0px;
+  left: calc(50% - 640px);
+  width: 1280px;
+  height: 800px;
+  flex-shrink: 0;
+}
+.frameParent58 {
+  position: absolute;
+  top: 4077.48px; 
+  left: calc(50% - 720px);
+  width: 1440px;
+  height: 501px;
+  text-align: left;
+  font-size: 26px;
+  color: #2f3547;
+}
+.frameParent59 {
+  position: absolute;
+  bottom: -0.01px;
+  left: calc(50% - 720px);
+  box-shadow:
+    -10px -10px 20px #fff inset,
+    8px 8px 16px #c4c4c4 inset;
+  background-color: #dfe6e9;
+  width: 1440px;
+  height: 459px;
+  overflow: hidden;
+}
+.frameParent60 {
+  position: absolute;
+  top: 49.81px;
+  left: 53.96px;
+  width: 1339.5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+.frameParent61 {
+  align-self: stretch;
+  display: flex;
+  align-items: flex-start;
+  gap: 35px;
+}
+.frameParent62 {
+  width: 676px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  flex-shrink: 0;
+}
+.logo01SynapseSpark1Group {
+  width: 577px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+.logo01SynapseSpark1Icon2 {
+  width: 299px;
+  height: 112px;
+  position: relative;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+.frameParent63 {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-shrink: 0;
+}
+.onePlatformParent {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.onePlatform {
+  position: relative;
+  letter-spacing: -0.03em;
+  line-height: 34px;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.sparklesIcon {
+  height: 23px;
+  width: 23px;
+  position: relative;
+}
+.prgeeqGlobalSolutionsPrivatParent {
+  width: 459px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+  font-size: 16px;
+}
+.prgeeqGlobalSolutions {
+  align-self: stretch;
+  position: relative;
+  letter-spacing: 0.03em;
+  line-height: 24px;
+}
+.prestigeAtlanta1012Container {
+  align-self: stretch;
+  height: 77px;
+  position: relative;
+  line-height: 24px;
+  display: flex;
+  align-items: flex-end;
+  flex-shrink: 0;
+}
+.blankLine {
+  line-height: 24px;
+}
+.frameParent64 {
+  width: 631px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 24px;
+  flex-shrink: 0;
+  font-size: 22px;
+  color: #2d4cc8;
+}
+.frameParent65 {
+  width: 619px;
+  display: flex;
+  align-items: flex-start;
+  gap: 32px;
+}
+.aboutUsParent {
+  width: 123px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+.aboutUs {
+  width: 93px;
+  position: relative;
+  letter-spacing: -0.03em;
+  line-height: 30px;
+  display: flex;
+  align-items: center;
+}
+.ourMissionParent {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 15px;
+  font-size: 20px;
+  color: #2f3547;
+}
+.ourMission {
+  align-self: stretch;
+  height: 26px;
+  position: relative;
+  letter-spacing: 0.03em;
+  line-height: 28px;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+.quickLinksParent {
+  width: 207px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+.quickLinks {
+  align-self: stretch;
+  height: 26px;
+  position: relative;
+  letter-spacing: -0.03em;
+  line-height: 30px;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+.neurolxpParent {
+  height: 181px;
+  width: 205px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+.neurolxp2 {
+  align-self: stretch;
+  height: 26px;
+  position: relative;
+  letter-spacing: -0.03em;
+  line-height: 30px;
+  display: flex;
+  white-space: pre-wrap;
+  align-items: center;
+  flex-shrink: 0;
+}
+.ourCustomersGroup {
+  width: 221px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 15px;
+  flex-shrink: 0;
+  font-size: 20px;
+  color: #2f3547;
+}
+.smartContentCreation {
+  width: 229px;
+  height: 26px;
+  position: relative;
+  letter-spacing: 0.03em;
+  line-height: 28px;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+.frameParent66 {
+  width: 392.4px;
+  height: 80.1px;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.frameChild38 {
+  height: 80.1px;
+  width: 80.1px;
+  position: relative;
+}
+.copyright2026 {
+  align-self: stretch;
+  height: 47px;
+  position: relative;
+  font-size: 16px;
+  letter-spacing: -0.03em;
+  line-height: 56px;
+  font-weight: 600;
+  color: #2d4cc8;
+  text-align: center;
+  display: inline-block;
+  flex-shrink: 0;
+}
+.frameWrapper21 {
+  position: absolute;
+  bottom: 0px;
+  left: calc(50% - 720px);
+  box-shadow:
+    -8px -8px 16px #fff inset,
+    10px 10px 10px #c4c4c4 inset;
+  background-color: #dfe6e9;
+  width: 1440px;
+  height: 459px;
+  overflow: hidden;
+}
+.frameParent71 {
+  width: 631px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  position: relative;
+  isolation: isolate;
+  gap: 24px;
+  flex-shrink: 0;
+  font-size: 22px;
+  color: #2d4cc8;
+}
+.frameParent72 {
+  width: 619px;
+  display: flex;
+  align-items: flex-start;
+  gap: 32px;
+  z-index: 0;
+  flex-shrink: 0;
+}
+.ourMissionGroup {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 15px;
+  font-size: 18px;
+  color: #2f3547;
+}
+.neurolxpGroup {
+  display: flex;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+.neurolxp3 {
+  height: 26px;
+  width: 103px;
+  position: relative;
+  letter-spacing: -0.03em;
+  line-height: 30px;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+.neurolxpTxt {
+  width: 100%;
+  white-space: pre-wrap;
+}
+.neurolxp4 {
+  line-height: 30px;
+}
+.span {
+  font-size: 12px;
+  line-height: 30px;
+}
+.tm {
+  height: 17px;
+  width: 23px;
+  position: relative;
+  font-size: 12px;
+  letter-spacing: -0.03em;
+  line-height: 30px;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+.ourCustomersContainer {
+  width: 221px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 15px;
+  flex-shrink: 0;
+  font-size: 18px;
+  color: #2f3547;
+}
+.frameParent74 {
+  width: 392.4px;
+  height: 80.1px;
+  margin: 0 !important;
+  position: absolute;
+  top: 217.19px;
+  left: 135.04px;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  z-index: 1;
+  flex-shrink: 0;
+}
+.frameChild42 {
+  height: 80.1px;
+  width: 80.1px;
+  position: relative;
+  flex-shrink: 0;
+}
+.frameChild47 {
+  position: absolute;
+  top: 0px;
+  left: calc(50% - 30.07px);
+  border-radius: 32px;
+  width: 59.1px;
+  height: 92px;
+  object-fit: contain;
+}
+
+
+.iconBadge {
+  width: 63px;
+  height: 63px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow:
+    -4px -4px 8px #fff,
+    4px 4px 8px #c4c4c4;
+  flex-shrink: 0;
+}
+.iconBadge img {
+  width: 25px;
+  height: 25px;
+  object-fit: contain;
+}
+.iconBadgeBlue {
+  background: #2d4cc8;
+}
+.iconBadgePink {
+  background: #bf1869;
+}
+.iconBadgePurple {
+  background: #67096e;
+}
+.iconBadgeOrange {
+  background: #c05512;
+}
+.iconBadgeTeal {
+  background: #046f73;
+}
+
+.useCaseIcon {
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow:
+    -8px -8px 16px #fff,
+    8px 8px 8px #c4c4c4;
+  background: #dfe6e9;
+  overflow: hidden;
+}
+.useCaseIcon img {
+  width: 53px;
+  height: 53px;
+  object-fit: contain;
+}
+
+
+.corporateTraining {
+  background: #dfe6e9;
+}
+
+
+.requestDemoButton {
+  border: 0;
+  font: inherit;
+  font-size: 22px;
+  line-height: 30px;
+  font-weight: 600;
+  color: #31344b;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 24px;
+  background: #dfe6e9;
+  box-shadow:
+    -8px -8px 16px #ffffff,
+    8px 8px 16px #c6c6c9;
+}
+
+.requestDemoButton:focus-visible,
+.frameWrapper2:focus-within,
+.frameWrapper20:focus-within {
+  outline: 3px solid rgba(45, 76, 200, 0.35);
+  outline-offset: 4px;
+}
+
+
+.iconBadge {
+  --badge-color: #2d4cc8;
+  position: relative !important;
+  width: 63px !important;
+  height: 63px !important;
+  min-width: 63px;
+  min-height: 63px;
+  border-radius: 50% !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  background: #dfe6e9 !important;
+  box-shadow:
+    -5px -5px 10px rgba(255, 255, 255, 0.95),
+    5px 5px 10px rgba(196, 196, 196, 0.9) !important;
+  overflow: visible !important;
+  flex-shrink: 0;
+  isolation: isolate;
+}
+
+.iconBadge::before {
+  content: "";
+  position: absolute;
+  width: 39px;
+  height: 39px;
+  inset: 50% auto auto 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background: var(--badge-color);
+  box-shadow:
+    inset -2px -2px 4px rgba(255, 255, 255, 0.28),
+    inset 2px 2px 4px rgba(0, 0, 0, 0.16);
+  z-index: 0;
+}
+
+.iconBadge img {
+  position: relative;
+  z-index: 1;
+  width: 23px !important;
+  height: 23px !important;
+  display: block;
+  object-fit: contain;
+}
+
+.iconBadgeBlue {
+  --badge-color: #2d4cc8;
+}
+.iconBadgePink {
+  --badge-color: #bf1869;
+}
+.iconBadgePurple {
+  --badge-color: #67096e;
+}
+.iconBadgeOrange {
+  --badge-color: #c05512;
+}
+.iconBadgeTeal {
+  --badge-color: #046f73;
+}
+
+
+.frameParent9 {
+  width: 110px;
+  height: auto;
+  min-height: 111px;
+  gap: 8px;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.frameParent8 {
+  top: 24px;
+  left: 50%;
+  width: 180px;
+  transform: translateX(-50%);
+  gap: 15px;
+}
+
+.frameParent8 .b {
+  width: auto;
+  min-width: 110px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+}
+
+.enterpriseClients,
+.learnersTrained,
+.productivityBoost {
+  width: 190px;
+  height: auto;
+  min-height: 28px;
+  text-align: center;
+  white-space: nowrap;
+  font-size: 22px;
+}
+
+
+.frameParent22 {
+  top: 23px;
+  left: 50%;
+  width: 290px;
+  transform: translateX(-50%);
+  gap: 18px;
+}
+
+.frameParent22 .iconBadge {
+  width: 63px !important;
+  height: 63px !important;
+}
+
+.rapidSkillChanges {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  white-space: nowrap;
+}
+
+
+.frameParent38 {
+  align-items: flex-start;
+}
+
+.frameParent39,
+.frameParent43 {
+  width: calc((100% - 95px) / 2);
+  gap: 44px;
+}
+
+.frameParent40,
+.frameParent44,
+.frameParent45 {
+  width: 100%;
+  min-height: 86px;
+  display: flex;
+  align-items: center;
+  gap: 36px;
+}
+
+.frameChild22.useCaseIcon {
+  position: relative;
+  width: 80px !important;
+  height: 80px !important;
+  min-width: 80px;
+  min-height: 80px;
+  border-radius: 50%;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  overflow: hidden;
+  background: #dfe6e9;
+  box-shadow:
+    -8px -8px 16px rgba(255, 255, 255, 0.95),
+    8px 8px 12px rgba(196, 196, 196, 0.85);
+  flex-shrink: 0;
+}
+
+.frameChild22.useCaseIcon img {
+  position: static !important;
+  width: 48px !important;
+  height: 48px !important;
+  max-width: 48px;
+  max-height: 48px;
+  object-fit: contain;
+  display: block;
+  margin: 0;
+}
+
+.employeeOnboardingParent,
+.complianceTrainingParent,
+.leadershipDevelopmentParent,
+.technicalSkillDevelopmentParent,
+.customerServiceExcellenceParent {
+  width: calc(100% - 116px);
+  height: auto;
+  min-height: 86px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 12px;
+}
+
+.employeeOnboarding {
+  width: 100%;
+  height: auto;
+  min-height: 32px;
+  line-height: 32px;
+  margin: 0;
+  white-space: nowrap;
+}
+
+.accelerateNewHire {
+  width: 100%;
+  line-height: 30px;
+  margin: 0;
+}
+
+
+.ellipseParent7,
+.frameChild27,
+.chatting01Icon {
+  position: static;
+}
+
+
+.frameParent54 {
+  overflow: hidden;
+}
+
+.peopleTakingPartBusinessEvParent {
+  isolation: isolate;
+}
+
+.groupYoungBusinesspeopleUsi {
+  z-index: 1;
+  width: 591px;
+  height: 550px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.frameParent55 {
+  z-index: 2;
+}
+
+.frameChild37 {
+  z-index: 3;
+}
+
+
+.frameParent58,
+.frameParent59,
+.frameParent60,
+.frameWrapper21 {
+  display: none !important;
+}
+
+
+.corporateBreadcrumb {
+  top: 112px !important;
+  left: 80px !important;
+  height: 24px;
+  display: flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+  z-index: 5;
+  font-family: "Segoe UI";
+  font-size: 16px;
+  line-height: 24px;
+  color: #2f3547;
+}
+
+.corporateBreadcrumbArrow {
+  position: relative;
+  width: 16px !important;
+  height: 16px !important;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.corporateBreadcrumbCurrent {
+  color: #243fa8;
+  font-weight: 600;
+}
+
+
+.businesspeopleDiscussingDigiIcon {
+  top: 0 !important;
+  left: 0 !important;
+  width: 1153px !important;
+  height: 554px !important;
+  max-width: none !important;
+  object-fit: cover !important;
+  object-position: center top !important;
+  border-radius: 0 0 250px 250px !important;
+}
+
+
+.frameParent2 {
+  top: 594px !important;
+}
+
+
+.corporateChallengeCards {
+  width: 100%;
+  gap: 36px;
+}
+
+.corporateChallengeRow {
+  width: 100%;
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  gap: 24px;
+}
+
+.corporateChallengeRowBottom {
+  width: auto;
+}
+
+.corporateChallengeCard {
+  width: 410px;
+  height: 418px;
+  border-radius: 24px 24px 50px 50px;
+  flex-shrink: 0;
+}
+
+.corporateChallengeCardSurface {
+  position: relative;
+  inset: auto;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 0 24px 24px;
+  overflow: hidden;
+  border-radius: 24px 24px 50px 50px;
+  background: #dfe6e9;
+  box-shadow:
+    -8px -8px 16px #ffffff,
+    8px 8px 16px #c4c4c4;
+  transition: background-color 0.35s ease;
+}
+
+.corporateChallengeHeader {
+  width: calc(100% + 48px);
+  min-height: 172px;
+  margin: 0 -24px;
+  padding: 24px 24px 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 18px;
+  border-radius: 24px 24px 24px 100px;
+  background: #dfe6e9;
+  box-shadow:
+    inset -8px -8px 16px #ffffff,
+    inset 8px 8px 16px #c4c4c4;
+}
+
+.challengeIcon {
+  --challenge-color: #2d4cc8;
+  width: 63px;
+  height: 63px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #dfe6e9;
+  box-shadow:
+    -5px -5px 10px #ffffff,
+    5px 5px 10px rgba(196, 196, 196, 0.95);
+  position: relative;
+  flex-shrink: 0;
+}
+
+.challengeIcon::before {
+  content: "";
+  position: absolute;
+  width: 43px;
+  height: 43px;
+  border-radius: 50%;
+  background: var(--challenge-color);
+  box-shadow:
+    inset -2px -2px 4px rgba(255, 255, 255, 0.25),
+    inset 2px 2px 4px rgba(0, 0, 0, 0.16);
+}
+
+.challengeIcon img {
+  position: relative;
+  z-index: 1;
+  width: 27px !important;
+  height: 27px !important;
+  object-fit: contain;
+}
+
+.challengeIcon--blue {
+  --challenge-color: #2d4cc8;
+}
+.challengeIcon--pink {
+  --challenge-color: #bf1869;
+}
+.challengeIcon--purple {
+  --challenge-color: #67096e;
+}
+.challengeIcon--orange {
+  --challenge-color: #c05512;
+}
+.challengeIcon--teal {
+  --challenge-color: #046f73;
+}
+
+.corporateChallengeCard .rapidSkillChanges {
+  width: 100%;
+  height: auto;
+  margin: 0;
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 700;
+  text-align: center;
+  white-space: normal;
+}
+
+.corporateChallengeCard .continuousWorkforceUpskillin {
+  width: 330px;
+  min-height: 82px;
+  margin: 28px 0 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  line-height: 40px;
+  font-weight: 600;
+  text-align: center;
+  white-space: normal;
+}
+
+.corporateChallengeToggle {
+  width: 270px;
+  height: 78px;
+  margin-top: auto;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  color: #2d4cc8;
+  font: inherit;
+}
+
+.corporateChallengeToggle .howNeurolxpHelps {
+  width: 100%;
+  height: auto;
+  font-size: 22px;
+  line-height: 30px;
+  font-weight: 700;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.corporateChallengeChevron {
+  position: relative;
+  width: 28px;
+  height: 20px;
+  display: block;
+  transition: transform 0.35s ease;
+}
+
+.corporateChallengeChevron span {
+  position: absolute;
+  left: 50%;
+  width: 15px;
+  height: 2px;
+  border-radius: 2px;
+  background: #31344b;
+  top: 8px;
+}
+
+.corporateChallengeChevron span:first-child {
+  transform: translateX(-92%) rotate(45deg);
+}
+
+.corporateChallengeChevron span:last-child {
+  transform: translateX(-8%) rotate(-45deg);
+}
+
+.corporateChallengeDropdown {
+  width: calc(100% - 32px);
+  max-height: 0;
+  min-height: 0;
+  margin-top: 0;
+  padding: 0 24px;
+  box-sizing: border-box;
+  overflow: hidden;
+  opacity: 0;
+  transform: translateY(18px);
+  border-radius: 24px;
+  background: #dfe6e9;
+  box-shadow:
+    inset -8px -8px 16px #ffffff,
+    inset 8px 8px 16px #c4c4c4;
+  transition:
+    max-height 0.45s ease,
+    min-height 0.45s ease,
+    padding 0.45s ease,
+    margin-top 0.45s ease,
+    opacity 0.3s ease,
+    transform 0.45s ease;
+}
+
+.corporateChallengeDropdown p {
+  margin: 0;
+  font-size: 22px;
+  line-height: 34px;
+  font-weight: 600;
+  text-align: center;
+  color: #31344b;
+}
+
+.corporateChallengeCard.isOpen .corporateChallengeHeader {
+  min-height: 150px;
+  box-shadow: none;
+  background: transparent;
+}
+
+.corporateChallengeCard.isOpen .continuousWorkforceUpskillin {
+  display: none;
+}
+
+.corporateChallengeCard.isOpen .corporateChallengeToggle {
+  order: 2;
+  margin-top: 0;
+  height: 76px;
+}
+
+.corporateChallengeCard.isOpen .corporateChallengeChevron {
+  transform: rotate(180deg);
+}
+
+.corporateChallengeCard.isOpen .corporateChallengeDropdown {
+  order: 3;
+  max-height: 150px;
+  min-height: 132px;
+  margin-top: 4px;
+  padding: 24px;
+  opacity: 1;
+  transform: translateY(0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.corporateChallengeCard--blue.isOpen .corporateChallengeCardSurface {
+  background: #cfd8f5;
+}
+.corporateChallengeCard--pink.isOpen .corporateChallengeCardSurface {
+  background: #f4dce8;
+}
+.corporateChallengeCard--purple.isOpen .corporateChallengeCardSurface {
+  background: #f6d7f8;
+}
+.corporateChallengeCard--orange.isOpen .corporateChallengeCardSurface {
+  background: #ffe2cf;
+}
+.corporateChallengeCard--teal.isOpen .corporateChallengeCardSurface {
+  background: #c3f1f3;
+}
+
+
+.corporateChallengeChevron {
+  position: relative !important;
+  width: 32px !important;
+  height: 24px !important;
+  display: block !important;
+  transform: none !important;
+  transition: transform 0.35s ease !important;
+}
+
+.corporateChallengeChevron .corporateChevronLine {
+  position: absolute !important;
+  width: 12px !important;
+  height: 2px !important;
+  border-radius: 2px !important;
+  background: #31344b !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+
+.corporateChallengeChevron .corporateChevronLine1 {
+  top: 5px !important;
+  left: 5px !important;
+  transform: rotate(45deg) !important;
+}
+
+.corporateChallengeChevron .corporateChevronLine2 {
+  top: 5px !important;
+  right: 5px !important;
+  left: auto !important;
+  transform: rotate(-45deg) !important;
+}
+
+
+.corporateChallengeChevron .corporateChevronLine3 {
+  top: 13px !important;
+  left: 5px !important;
+  transform: rotate(45deg) !important;
+}
+
+.corporateChallengeChevron .corporateChevronLine4 {
+  top: 13px !important;
+  right: 5px !important;
+  left: auto !important;
+  transform: rotate(-45deg) !important;
+}
+
+
+.corporateChallengeCard.isOpen .corporateChallengeChevron {
+  transform: rotate(180deg) !important;
+}
+
+
+.corporateChallengeToggle {
+  gap: 12px !important;
+}
+
+.corporateChallengeToggle .howNeurolxpHelps {
+  display: block;
+  text-align: center;
+}
+
+
+.frameParent36 {
+  top: 1694px !important;
+  left: 80px !important;
+  width: 1280px !important;
+  gap: 50px !important;
+}
+
+.frameParent37 {
+  width: 100% !important;
+  height: auto !important;
+  min-height: 249px;
+  align-items: center !important;
+}
+
+.frameChild21 {
+  width: 390px !important;
+  height: 50px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding: 0 28px !important;
+  box-sizing: border-box !important;
+  white-space: nowrap !important;
+}
+
+.frameParent36 .keyChallengesInCorporateTrParent {
+  height: auto !important;
+  min-height: 167px;
+}
+
+.frameParent36 .keyChallengesInContainer {
+  width: 100% !important;
+  height: auto !important;
+  text-align: center !important;
+  white-space: nowrap;
+}
+
+.frameParent36 .organizationsCanUse {
+  width: 1014px !important;
+  height: auto !important;
+  min-height: 72px;
+  margin: 0 auto;
+  text-align: center !important;
+}
+
+
+.frameParent38 {
+  width: 1280px !important;
+  display: grid !important;
+  grid-template-columns: 1fr 1fr !important;
+  column-gap: 95px !important;
+  align-items: start !important;
+}
+
+.frameParent39,
+.frameParent43 {
+  width: 100% !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: stretch !important;
+  gap: 44px !important;
+}
+
+.frameParent40,
+.frameParent44,
+.frameParent45 {
+  width: 100% !important;
+  min-height: 124px !important;
+  display: grid !important;
+  grid-template-columns: 124px minmax(0, 1fr) !important;
+  align-items: center !important;
+  column-gap: 36px !important;
+}
+
+
+.frameChild22.useCaseIcon {
+  --use-case-accent: #bf1869;
+  width: 124px !important;
+  height: 124px !important;
+  min-width: 124px !important;
+  min-height: 124px !important;
+  position: relative !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  border-radius: 50% !important;
+  background: #dfe6e9 !important;
+  overflow: visible !important;
+  box-shadow:
+    -10px -10px 20px rgba(255, 255, 255, 0.96),
+    10px 10px 18px rgba(196, 196, 196, 0.9) !important;
+  isolation: isolate;
+}
+
+.frameChild22.useCaseIcon::before {
+  content: "";
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: #dfe6e9;
+  box-shadow:
+    inset -5px -5px 10px #ffffff,
+    inset 5px 5px 10px rgba(196, 196, 196, 0.8);
+  z-index: 0;
+}
+
+.frameChild22.useCaseIcon img {
+  position: relative !important;
+  z-index: 1 !important;
+  width: 53px !important;
+  height: 53px !important;
+  max-width: 53px !important;
+  max-height: 53px !important;
+  object-fit: contain !important;
+  display: block !important;
+  margin: 0 !important;
+}
+
+
+.useCaseIconPink {
+  --use-case-accent: #bf1869;
+}
+
+.useCaseIconBlue {
+  --use-case-accent: #2d4cc8;
+}
+
+.useCaseIconTeal {
+  --use-case-accent: #047d80;
+}
+
+.useCaseIconGreen {
+  --use-case-accent: #2a7308;
+}
+
+.useCaseIconPurple {
+  --use-case-accent: #67096e;
+}
+
+.useCaseIconOrange {
+  --use-case-accent: #c05512;
+}
+
+
+.frameChild22.useCaseIcon img {
+  filter: none !important;
+}
+
+.employeeOnboardingParent,
+.complianceTrainingParent,
+.leadershipDevelopmentParent,
+.technicalSkillDevelopmentParent,
+.customerServiceExcellenceParent {
+  width: 100% !important;
+  min-height: 86px !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: flex-start !important;
+  justify-content: center !important;
+  gap: 16px !important;
+}
+
+.frameParent36 .employeeOnboarding {
+  width: 100% !important;
+  height: auto !important;
+  min-height: 40px;
+  margin: 0 !important;
+  font-size: 28px !important;
+  line-height: 40px !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.03em !important;
+  white-space: nowrap !important;
+  text-align: left !important;
+}
+
+.frameParent36 .accelerateNewHire {
+  width: 100% !important;
+  height: auto !important;
+  margin: 0 !important;
+  font-size: 20px !important;
+  line-height: 32px !important;
+  letter-spacing: 0.03em !important;
+  text-align: left !important;
+  white-space: nowrap !important;
+}
+
+
+.ellipseParent7,
+.frameChild27,
+.chatting01Icon {
+  position: static !important;
+  inset: auto !important;
+  margin: 0 !important;
+}
+
+
+@media screen and (max-width: 1100px) {
+  .corporateChallengeRow {
+    flex-wrap: wrap;
+  }
+
+  .frameParent38 {
+    grid-template-columns: 1fr !important;
+    row-gap: 44px !important;
+  }
+
+  .frameParent39,
+  .frameParent43 {
+    width: 100% !important;
+  }
+}
+
+
+.frameChild22.useCaseIcon::before {
+  display: none !important;
+  content: none !important;
+}
+
+.frameChild22.useCaseIcon {
+  width: 124px !important;
+  height: 124px !important;
+  min-width: 124px !important;
+  min-height: 124px !important;
+  border-radius: 50% !important;
+  background: #dfe6e9 !important;
+  box-shadow:
+    -10px -10px 20px rgba(255, 255, 255, 0.96),
+    10px 10px 18px rgba(196, 196, 196, 0.9),
+    inset -3px -3px 7px rgba(255, 255, 255, 0.72),
+    inset 3px 3px 7px rgba(196, 196, 196, 0.42) !important;
+  overflow: hidden !important;
+}
+
+.frameChild22.useCaseIcon img,
+.frameChild22.useCaseIcon svg {
+  position: relative !important;
+  z-index: 1 !important;
+  width: 53px !important;
+  height: 53px !important;
+  display: block !important;
+  object-fit: contain !important;
+  margin: 0 !important;
+}
+
+.employeeOnboardingIcon {
+  color: #bf1869;
+}
+
+
+.frameParent38 {
+  align-items: start !important;
+}
+
+.frameParent39,
+.frameParent43 {
+  gap: 44px !important;
+}
+
+.frameParent40,
+.frameParent44,
+.frameParent45 {
+  height: 124px !important;
+  min-height: 124px !important;
+  grid-template-columns: 124px minmax(0, 1fr) !important;
+}
+
+.employeeOnboardingParent,
+.complianceTrainingParent,
+.leadershipDevelopmentParent,
+.technicalSkillDevelopmentParent,
+.customerServiceExcellenceParent {
+  min-height: 124px !important;
+  justify-content: center !important;
+}
+
+
+.frameParent46 {
+  top: 2549px !important;
+}
+
+
+.frameParent54 {
+  top: 3485.48px !important;
+}
+
+
+.corporateTraining {
+  height: 5941px !important;
+}
+
+.frameParent6 {
+  height: 4696.5px !important;
+}
+
+
+.frameParent36 {
+  top: 1290px !important;
+}
+
+
+.frameParent46 {
+  top: 2145px !important;
+}
+
+
+.frameParent54 {
+  top: 3081.48px !important;
+}
+
+
+.corporateTraining {
+  height: 5537px !important;
+}
+
+.frameParent6 {
+  height: 4292.5px !important;
+}
+
+
+.frameChild22.useCaseIcon {
+  width: 112px !important;
+  height: 112px !important;
+  min-width: 112px !important;
+  min-height: 112px !important;
+  overflow: visible !important;
+  box-shadow:
+    -8px -8px 16px rgba(255, 255, 255, 0.96),
+    8px 8px 16px rgba(196, 196, 196, 0.88) !important;
+}
+
+.frameChild22.useCaseIcon img,
+.frameChild22.useCaseIcon svg {
+  width: 53px !important;
+  height: 53px !important;
+}
+
+
+.employeeOnboardingIcon {
+  color: #bf1869 !important;
+  stroke: currentColor;
+}
+
+
+.frameParent40,
+.frameParent44,
+.frameParent45 {
+  height: 112px !important;
+  min-height: 112px !important;
+  grid-template-columns: 112px minmax(0, 1fr) !important;
+  column-gap: 36px !important;
+}
+
+.employeeOnboardingParent,
+.complianceTrainingParent,
+.leadershipDevelopmentParent,
+.technicalSkillDevelopmentParent,
+.customerServiceExcellenceParent {
+  min-height: 112px !important;
+  justify-content: center !important;
+}
+
+.frameParent39,
+.frameParent43 {
+  gap: 44px !important;
+}
+
+
+.frameParent36 .employeeOnboarding,
+.frameParent36 .accelerateNewHire {
+  max-width: 100% !important;
+  overflow: visible !important;
+}
+
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.corporateTraining {
+  width: 100% !important;
+  max-width: 1440px !important;
+  height: 4892px !important;
+  margin: 0 auto !important;
+  position: relative !important;
+  overflow: hidden !important;
+}
+
+
+.rectangleParent,
+.frameParent6 {
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+}
+
+
+.corporateBreadcrumb,
+.frameDiv {
+  top: 32px !important;
+  left: max(32px, calc(50% - 640px)) !important;
+}
+
+.businesspeopleDiscussingDigiParent {
+  top: 88px !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+}
+
+.frameParent6 {
+  top: 1165px !important;
+  width: 1440px !important;
+  height: 3727px !important;
+}
+
+
+.frameParent7,
+.frameParent16,
+.frameParent36,
+.frameParent46,
+.frameParent54 {
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+}
+
+
+.frameParent7 {
+  width: 1344px !important;
+  justify-content: center !important;
+}
+
+
+.frameParent16,
+.frameParent36,
+.frameParent46,
+.frameParent54 {
+  width: 1280px !important;
+}
+
+
+.frameParent17,
+.frameParent37,
+.frameParent47 {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.frameParent18,
+.frameParent38,
+.frameParent48 {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+
+.frameParent19,
+.frameParent29 {
+  width: 100% !important;
+  justify-content: center !important;
+}
+
+
+.frameParent38 {
+  box-sizing: border-box !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  justify-content: center !important;
+}
+
+
+.frameParent48 {
+  justify-content: center !important;
+}
+
+
+.frameParent58,
+.frameParent59,
+.frameParent60,
+.frameParent61,
+.frameParent62,
+.frameParent63,
+.frameParent64,
+.frameParent65,
+.frameParent66,
+.frameParent71,
+.frameParent72,
+.frameParent74 {
+  display: none !important;
+}
+
+
+.frameParent58 {
+  top: 3787.48px !important;
+}
+
+
+.frameParent6 {
+  height: 4288.48px !important;
+}
+
+.corporateTraining {
+  height: 5453.48px !important;
+  padding-bottom: 0 !important;
+}
+
+
+.frameInner {
+  box-shadow:
+    inset -4px -4px 8px #ffffff,
+    inset 4px 4px 8px #c4c4c4 !important;
+  background: #dfe6e9;
+  border-radius: 8px;
+}
+
+
+.frameChild21 {
+  width: auto !important;
+  min-width: max-content;
+  padding: 0 24px !important;
+}
+
+
+.frameChild36 {
+  width: auto !important;
+  min-width: max-content;
+  padding: 0 24px !important;
+}
+
+
+.ellipseIcon {
+  position: absolute !important;
+  z-index: 5 !important;
+  transform-origin: center center;
+  will-change: transform;
+  animation: statisticBottomWave 6s ease-in-out infinite;
+}
+
+
+.ellipseParent .ellipseIcon {
+  animation-delay: 0s;
+}
+
+.ellipseContainer .ellipseIcon {
+  animation-delay: 1.5s;
+}
+
+.ellipseParent3 .ellipseIcon {
+  animation-delay: 3s;
+}
+
+.ellipseParent5 .ellipseIcon {
+  animation-delay: 4.5s;
+}
+
+@keyframes statisticBottomWave {
+  0% {
+    transform: translateX(-5px) translateY(0) skewX(-6deg) scaleX(0.96);
+  }
+
+  8% {
+    transform: translateX(4px) translateY(-2px) skewX(5deg) scaleX(1.05);
+  }
+
+  16% {
+    transform: translateX(7px) translateY(0) skewX(-3deg) scaleX(1);
+  }
+
+  24% {
+    transform: translateX(-3px) translateY(2px) skewX(6deg) scaleX(1.03);
+  }
+
+  30%,
+  100% {
+    transform: translateX(-5px) translateY(0) skewX(-6deg) scaleX(0.96);
+  }
+}
+
+
+.ellipseParent,
+.ellipseContainer,
+.ellipseParent3,
+.ellipseParent5,
+.frameWrapper3,
+.rectangleGroup,
+.rectangleContainer,
+.rectangleParent2,
+.frameWrapper19 {
+  transition:
+    transform 0.35s ease,
+    filter 0.35s ease !important;
+  transform-origin: center;
+  will-change: transform;
+}
+
+.ellipseParent:hover,
+.ellipseContainer:hover,
+.ellipseParent3:hover,
+.ellipseParent5:hover,
+.frameWrapper3:hover,
+.rectangleGroup:hover,
+.rectangleContainer:hover,
+.rectangleParent2:hover,
+.frameWrapper19:hover {
+  transform: translateY(-8px) scale(1.015);
+  filter: drop-shadow(0 10px 12px rgba(49, 52, 75, 0.14));
+}
+
+.frameWrapper3:focus-within,
+.rectangleGroup:focus-within,
+.rectangleContainer:focus-within,
+.rectangleParent2:focus-within,
+.frameWrapper19:focus-within {
+  transform: translateY(-8px) scale(1.015);
+  filter: drop-shadow(0 10px 12px rgba(49, 52, 75, 0.14));
+}
+
+
+.frameParent58,
+.frameParent59 {
+  transform: none !important;
+  filter: none !important;
+}
+
+
+.frameParent54 {
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  filter: none !important;
+}
+
+
+.iconBadge,
+.frameIcon {
+  transition:
+    transform 0.3s ease,
+    filter 0.3s ease !important;
+  transform-origin: center;
+  will-change: transform;
+}
+
+.iconBadge:hover,
+.frameIcon:hover,
+.ellipseParent:hover .iconBadge,
+.ellipseContainer:hover .iconBadge,
+.ellipseParent3:hover .iconBadge,
+.ellipseParent5:hover .iconBadge,
+.frameWrapper3:hover .iconBadge {
+  transform: translateY(-4px) scale(1.1);
+  filter: drop-shadow(0 6px 8px rgba(49, 52, 75, 0.18));
+}
+
+
+.iconBadge img,
+.frameIcon img {
+  pointer-events: none;
+}
+
+
+.trainingLoadSection .trainingProgressFill {
+  transform: scaleX(0);
+  transform-origin: left center;
+  transition: transform 1.8s cubic-bezier(0.22, 1, 0.36, 1);
+  will-change: transform;
+}
+
+
+.trainingLoadSection.isLoadingActive .trainingProgressFill {
+  transform: scaleX(1);
+}
+
+
+.trainingLoadSection .b4,
+.trainingLoadSection .b5,
+.trainingLoadSection .h,
+.trainingLoadSection .b6 {
+  font-variant-numeric: tabular-nums;
+}
+
+
+.trainingLoadSection .trainingProgress94 {
+  transition-delay: 0s;
+}
+
+.trainingLoadSection .trainingProgress98 {
+  transition-delay: 0.12s;
+}
+
+.trainingLoadSection .trainingProgress78 {
+  transition-delay: 0.24s;
+}
+
+.trainingLoadSection .trainingProgress85 {
+  transition-delay: 0.36s;
+}
+
+
+.businesspeopleDiscussingDigiParent {
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  width: 1153px !important;
+  overflow: hidden !important;
+  filter: none !important;
+}
+
+.businesspeopleDiscussingDigiIcon {
+  left: 0 !important;
+  width: 1153px !important;
+  height: 554px !important;
+  object-fit: cover !important;
+  object-position: center top !important;
+}
+
+.businesspeopleDiscussingDigiParent .frameParent2 {
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  width: 1044px !important;
+}
+
+
+.frameParent36 {
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  width: 1280px !important;
+  align-items: center !important;
+}
+
+
+.frameParent37 {
+  width: 100% !important;
+  align-items: center !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+
+.frameParent38 {
+  width: 1280px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  display: grid !important;
+  grid-template-columns: 1fr 1fr !important;
+  column-gap: 95px !important;
+  justify-content: center !important;
+  align-items: start !important;
+}
+
+.frameParent39,
+.frameParent43 {
+  width: 100% !important;
+  align-items: flex-start !important;
+}
+
+.keyChallengesInContainer, .neurolxpTransformingCorporat, .keyChallengesIn {
+    font-size: 48px;
+  }
+
+
+.frameChild22.useCaseIcon {
+  transition:
+    transform 0.3s ease,
+    filter 0.3s ease !important;
+  transform-origin: center;
+  will-change: transform;
+}
+
+.frameChild22.useCaseIcon:hover,
+.frameParent40:hover .frameChild22.useCaseIcon,
+.frameParent44:hover .frameChild22.useCaseIcon,
+.frameParent45:hover .frameChild22.useCaseIcon {
+  transform: translateY(-5px) scale(1.08);
+  filter: drop-shadow(0 8px 10px rgba(49, 52, 75, 0.16));
+}
+
+
+.frameChild22.useCaseIcon img,
+.frameChild22.useCaseIcon svg {
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ellipseIcon {
+    animation: none !important;
+  }
+
+  .ellipseParent,
+  .ellipseContainer,
+  .ellipseParent3,
+  .ellipseParent5,
+  .frameWrapper3,
+  .rectangleGroup,
+  .rectangleContainer,
+  .rectangleParent2,
+  .frameWrapper19 {
+    transition: none !important;
+  }
+
+  .iconBadge,
+  .frameIcon {
+    transition: none !important;
+  }
+
+  .trainingLoadSection .trainingProgressFill {
+    transform: scaleX(1) !important;
+    transition: none !important;
+  }
+
+  .frameChild22.useCaseIcon {
+    transition: none !important;
+  }
+}
+
+
+@media screen and (max-width: 375px) {
+  .corporateTraining {
+    padding-left: 12px !important;
+    padding-right: 12px !important;
+  }
+
+  .businesspeopleDiscussingDigiIcon {
+    height: 210px !important;
+  }
+
+  .frameParent7 {
+    gap: 12px !important;
+  }
+
+  .frameParent40,
+  .frameParent44,
+  .frameParent45 {
+    grid-template-columns: 64px minmax(0, 1fr) !important;
+  }
+
+  .frameChild22.useCaseIcon {
+    width: 64px !important;
+    height: 64px !important;
+    min-width: 64px !important;
+    min-height: 64px !important;
+  }
+
+  .frameChild22.useCaseIcon img,
+  .frameChild22.useCaseIcon svg {
+    width: 34px !important;
+    height: 34px !important;
+  }
+
+  .frameParent8 {
+    top: 45% !important;
+    width: 92% !important;
+  }
+
+  .frameParent8 .b {
+    font-size: 22px !important;
+    line-height: 30px !important;
+  }
+
+  .enterpriseClients,
+  .learnersTrained,
+  .productivityBoost {
+    font-size: 14px !important;
+    line-height: 20px !important;
+  }
+
+  .keyChallengesInContainer {
+    font-size: 30px !important;
+    line-height: 38px !important;
+  }
+
+  .frameWrapper3,
+  .frameWrapper4,
+  .frameParent20 {
+    min-height: 310px !important;
+    height: 310px !important;
+  }
+
+  .frameParent22 .rapidSkillChanges {
+    font-size: 14px !important;
+    line-height: 24px !important;
+  }
+
+  .continuousWorkforceUpskillin,
+  .actionableLearningInsights {
+    font-size: 15px !important;
+    line-height: 22px !important;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .corporateBreadcrumb {
+    left: 24px !important;
+    max-width: calc(100% - 48px);
+    overflow: hidden;
+    white-space: nowrap;
+  }
+
+  .businesspeopleDiscussingDigiIcon {
+    width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+    object-position: center top !important;
+  }
+
+  html,
+  body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background: #dfe6e9;
+  }
+
+  .corporateTraining {
+    width: 100% !important;
+    min-width: 0 !important;
+    max-width: none !important;
+    height: auto !important;
+    min-height: 0 !important;
+    margin: 0 !important;
+    padding: 24px 16px 92px !important;
+    box-sizing: border-box !important;
+    position: relative !important;
+    overflow: visible !important;
+    transform: none !important;
+    text-align: center !important;
+    font-size: 16px !important;
+    line-height: 24px !important;
+  }
+
+  
+  .rectangleParent,
+  .rectangle,
+  .rectangle2,
+  .rectangle3,
+  .image20,
+  .image202,
+  .image203,
+  .image207,
+  .groupMultiethnicBusinessPeo,
+  .peopleTakingPartBusinessEv,
+  .image21,
+  .frameChild35,
+  .frameChild37 {
+    display: none !important;
+  }
+  
+  .frameParent6 {
+    position: static !important;
+    top: auto !important;
+    left: auto !important;
+    width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+    transform: none !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: stretch !important;
+    gap: 48px !important;
+    text-align: center !important;
+    font-size: 16px !important;
+  }
+
+  
+
+  .empoweringWorkforce,
+  .keyChallengesInContainer,
+  .frameParent36 .keyChallengesInContainer,
+  .whyOrganizationsChooseNeuroParent > :not(.frameChild28),
+  .neurolxpTransformingCorporat {
+    width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+    margin: 0 !important;
+    font-size: 24px !important;
+    line-height: 40px !important;
+    font-weight: 700 !important;
+    letter-spacing: 0 !important;
+    white-space: normal !important;
+    text-align: center !important;
+    
+  }
+
+  .frameParent36 .keyChallengesInContainer,
+  .frameParent46 .keyChallengesInContainer {
+    font-size: 24px !important;
+    line-height: 32px !important;
+  }
+
+  .rapidSkillChanges,
+  .employeeOnboarding,
+  .topTrainingPrograms,
+  .leadershipDev {
+    width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+    margin: 0 !important;
+    font-size: 18px !important;
+    line-height: 26px !important;
+    font-weight: 600 !important;
+    letter-spacing: 0 !important;
+    white-space: normal !important;
+  }
+
+  .buildFutureReadyWorkforces,
+  .neurolxpHelpsOrganizations,
+  .organizationsCanUse,
+  .buildSkilledEngaged,
+  .continuousWorkforceUpskillin,
+  .actionableLearningInsights,
+  .accelerateNewHire {
+    width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+    margin: 0 !important;
+    font-size: 16px !important;
+    line-height: 24px !important;
+    font-weight: 400 !important;
+    letter-spacing: 0 !important;
+    white-space: normal !important;
+  }
+
+  .enterpriseClients,
+  .learnersTrained,
+  .productivityBoost,
+  .completion,
+  .averageScore,
+  .averageTime {
+    width: auto !important;
+    height: auto !important;
+    min-height: 0 !important;
+    font-size: 14px !important;
+    line-height: 22px !important;
+    font-weight: 400 !important;
+  }
+
+  .startLearning,
+  .getStarted,
+  .requestDemoButton,
+  .howNeurolxpHelps {
+    font-size: 16px !important;
+    line-height: 24px !important;
+    font-weight: 600 !important;
+  }
+
+  
+
+  .corporateBreadcrumb,
+  .frameDiv.corporateBreadcrumb {
+    position: static !important;
+    top: auto !important;
+    left: auto !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    margin: 0 0 24px !important;
+    display: flex !important;
+    flex-wrap: wrap !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+    gap: 6px !important;
+    transform: none !important;
+    overflow: visible !important;
+    white-space: normal !important;
+    font-size: 12px !important;
+    line-height: 22px !important;
+    text-align: left !important;
+  }
+
+  .corporateBreadcrumbArrow {
+    width: 14px !important;
+    height: 14px !important;
+  }
+
+  .businesspeopleDiscussingDigiParent {
+    position: static !important;
+    top: auto !important;
+    left: auto !important;
+    width: 100% !important;
+    height: auto !important;
+    margin: 0 0 48px !important;
+    padding: 0 0 24px !important;
+    box-sizing: border-box !important;
+    transform: none !important;
+    overflow: hidden !important;
+    border-radius: 24px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+
+  .businesspeopleDiscussingDigiIcon {
+    position: static !important;
+    top: auto !important;
+    left: auto !important;
+    width: 100% !important;
+    height: 240px !important;
+    min-height: 240px !important;
+    object-fit: cover !important;
+    object-position: center top !important;
+    border-radius: 0 0 110px 110px !important;
+    order: 1;
+  }
+
+  .businesspeopleDiscussingDigiParent .frameParent2 {
+    position: static !important;
+    top: auto !important;
+    left: auto !important;
+    width: 100% !important;
+    height: auto !important;
+    margin: 24px 0 0 !important;
+    padding: 0 16px !important;
+    box-sizing: border-box !important;
+    transform: none !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 24px !important;
+    order: 2;
+  }
+
+  .frameWrapper,
+  .frameParent3,
+  .frameParent4 {
+    width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+
+  .frameParent3,
+  .frameParent4 {
+    gap: 12px !important;
+  }
+
+  .frameItem,
+  .frameChild15,
+  .frameChild21,
+  .frameChild28,
+  .frameChild36 {
+    width: fit-content !important;
+    max-width: 100% !important;
+    height: 44px !important;
+    min-height: 44px !important;
+    padding: 0 18px !important;
+    font-size: 14px !important;
+    line-height: 22px !important;
+    white-space: nowrap !important;
+  }
+
+  .frameParent5 {
+    width: 100% !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: stretch !important;
+    gap: 16px !important;
+  }
+
+  .frameInner.requestDemoButton,
+  .frameWrapper2 {
+    width: 100% !important;
+    height: 48px !important;
+    min-height: 48px !important;
+  }
+
+  .frameWrapper2 {
+    padding: 0 !important;
+  }
+
+  .startLearningWrapper,
+  .getStartedWrapper {
+    width: 100% !important;
+    justify-content: center !important;
+  }
+
+  .startLearning,
+  .getStarted {
+    width: auto !important;
+    justify-content: center !important;
+  }
+
+  .frameParent7 {
+    position: static !important;
+    top: auto !important;
+    left: auto !important;
+    width: 100% !important;
+    transform: none !important;
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 16px !important;
+    margin: 0 !important;
+  }
+
+  .ellipseParent,
+  .ellipseContainer,
+  .ellipseParent3,
+  .ellipseParent5 {
+    width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+    aspect-ratio: 1 / 1 !important;
+  }
+
+  .ellipseDiv {
+    width: 100% !important;
+    height: 100% !important;
+  }
+
+  .ellipseGroup {
+    top: 10% !important;
+    left: 10% !important;
+    width: 80% !important;
+    height: 80% !important;
+  }
+
+  .frameChild2 {
+    width: 100% !important;
+    height: 100% !important;
+  }
+
+  .frameParent8 {
+    top: 50% !important;
+    left: 50% !important;
+    width: 86% !important;
+    transform: translate(-50%, -50%) !important;
+    gap: 8px !important;
+  }
+
+  .frameParent9 {
+    width: 100% !important;
+    height: auto !important;
+    gap: 4px !important;
+  }
+
+  .iconBadge,
+  .frameIcon {
+    width: 46px !important;
+    height: 46px !important;
+    min-width: 46px !important;
+    min-height: 46px !important;
+  }
+
+  .iconBadge::before {
+    width: 30px !important;
+    height: 30px !important;
+  }
+
+  .iconBadge img {
+    width: 18px !important;
+    height: 18px !important;
+  }
+
+  .b {
+    width: auto !important;
+    font-size: 24px !important;
+    line-height: 32px !important;
+  }
+
+  .ellipseIcon {
+    top: auto !important;
+    bottom: 8% !important;
+    left: 50% !important;
+    width: 52px !important;
+    height: auto !important;
+    transform: translateX(-50%) !important;
+  }
+
+  .frameParent16,
+  .frameParent36,
+  .frameParent46,
+  .frameParent54,
+  .frameParent58 {
+    position: static !important;
+    top: auto !important;
+    left: auto !important;
+    width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+    margin: 0 !important;
+    transform: none !important;
+  }
+
+  .frameParent16,
+  .frameParent36,
+  .frameParent46 {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 24px !important;
+  }
+
+  .frameParent17,
+  .frameParent37,
+  .frameParent47 {
+    width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 12px !important;
+  }
+
+  .keyChallengesInCorporateTrParent,
+  .whyOrganizationsChooseNeuroParent {
+    width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 12px !important;
+  }
+
+  .frameParent18 {
+    width: 100% !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: stretch !important;
+    gap: 16px !important;
+  }
+
+  .frameParent19,
+  .frameParent29 {
+    width: 100% !important;
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 16px !important;
+  }
+
+  .frameWrapper3 {
+    width: 100% !important;
+    height: auto !important;
+    min-height: 320px !important;
+  }
+
+  .frameWrapper4 {
+    position: relative !important;
+    top: auto !important;
+    left: auto !important;
+    width: 100% !important;
+    height: auto !important;
+    min-height: 320px !important;
+  }
+
+  .frameParent20 {
+    position: static !important;
+    width: 100% !important;
+    min-height: 320px !important;
+    padding-bottom: 24px !important;
+    box-sizing: border-box !important;
+    gap: 24px !important;
+  }
+
+  .frameParent21 {
+    gap: 16px !important;
+  }
+
+  .frameWrapper5 {
+    height: 136px !important;
+  }
+
+  .frameParent22 {
+    top: 16px !important;
+    left: 50% !important;
+    width: calc(100% - 32px) !important;
+    transform: translateX(-50%) !important;
+    gap: 12px !important;
+  }
+
+  .continuousWorkforceUpskillin,
+  .actionableLearningInsights {
+    padding: 0 16px !important;
+    box-sizing: border-box !important;
+  }
+
+  .howNeurolxpHelpsParent {
+    width: 100% !important;
+    height: auto !important;
+    gap: 8px !important;
+  }
+
+  .corporateChallengeDropdown {
+    width: calc(100% - 32px) !important;
+    margin: 0 auto !important;
+  }
+
+  .frameParent38 {
+    width: 100% !important;
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    row-gap: 16px !important;
+    column-gap: 0 !important;
+    margin: 0 !important;
+  }
+
+  .frameParent39,
+  .frameParent43 {
+    width: 100% !important;
+    gap: 16px !important;
+  }
+
+  .frameParent40,
+  .frameParent44,
+  .frameParent45 {
+    width: 100% !important;
+    height: auto !important;
+    min-height: 92px !important;
+    display: grid !important;
+    grid-template-columns: 72px minmax(0, 1fr) !important;
+    column-gap: 12px !important;
+    align-items: center !important;
+  }
+
+  .frameChild22.useCaseIcon {
+    width: 72px !important;
+    height: 72px !important;
+    min-width: 72px !important;
+    min-height: 72px !important;
+  }
+
+  .frameChild22.useCaseIcon img,
+  .frameChild22.useCaseIcon svg {
+    width: 38px !important;
+    height: 38px !important;
+  }
+
+  .employeeOnboardingParent,
+  .complianceTrainingParent,
+  .leadershipDevelopmentParent,
+  .technicalSkillDevelopmentParent,
+  .customerServiceExcellenceParent {
+    width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+    gap: 8px !important;
+    justify-content: center !important;
+  }
+
+  .frameParent36 .employeeOnboarding {
+    font-size: 18px !important;
+    line-height: 26px !important;
+  }
+
+  .frameParent36 .accelerateNewHire {
+    font-size: 12px !important;
+    line-height: 22px !important;
+  }
+
+  .frameParent48 {
+    width: 100% !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: stretch !important;
+    gap: 24px !important;
+  }
+
+  .frameParent49 {
+    width: 100% !important;
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 16px !important;
+  }
+
+  .rectangleGroup,
+  .rectangleContainer,
+  .rectangleParent2 {
+    width: 100% !important;
+    height: 120px !important;
+  }
+
+  .rectangleDiv {
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 120px !important;
+  }
+
+  .frameParent50,
+  .frameParent51,
+  .frameParent52 {
+    top: 50% !important;
+    left: 50% !important;
+    width: 100% !important;
+    transform: translate(-50%, -50%) !important;
+    gap: 8px !important;
+  }
+
+  .b4,
+  .b5,
+  .h {
+    width: auto !important;
+    height: auto !important;
+    font-size: 32px !important;
+    line-height: 40px !important;
+  }
+
+  .frameWrapper19 {
+    width: 100% !important;
+    height: auto !important;
+    min-height: 430px !important;
+    padding: 24px 16px !important;
+    box-sizing: border-box !important;
+  }
+
+  .topTrainingProgramsParent {
+    position: static !important;
+    top: auto !important;
+    left: auto !important;
+    width: 100% !important;
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 16px !important;
+  }
+
+  .frameParent53 {
+    gap: 16px !important;
+    font-size: 14px !important;
+  }
+
+  .leadershipDevParent {
+    gap: 8px !important;
+  }
+
+  .rectangleParent3 {
+    height: 28px !important;
+  }
+
+  .trainingLoadSection .trainingProgressFill {
+    height: 16px !important;
+    top: 6px !important;
+    border-radius: 100px !important;
+  }
+
+  .trainingLoadSection .b6 {
+    top: 0 !important;
+    right: 0 !important;
+    font-size: 14px !important;
+    line-height: 22px !important;
+  }
+
+
+  .frameParent54 {
+    padding: 16px !important;
+    box-sizing: border-box !important;
+    border-radius: 24px !important;
+  }
+
+  .peopleTakingPartBusinessEvParent {
+    position: static !important;
+    top: auto !important;
+    left: auto !important;
+    width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    overflow: hidden !important;
+  }
+
+  .groupYoungBusinesspeopleUsi {
+    position: static !important;
+    top: auto !important;
+    right: auto !important;
+    width: 100% !important;
+    height: 230px !important;
+    object-fit: cover !important;
+    object-position: center !important;
+    order: 1;
+  }
+
+  .frameParent55 {
+    position: static !important;
+    top: auto !important;
+    left: auto !important;
+    width: 100% !important;
+    height: auto !important;
+    padding: 24px 16px !important;
+    box-sizing: border-box !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 24px !important;
+    order: 2;
+    text-align: center !important;
+  }
+
+  .frameParent56,
+  .frameParent57 {
+    width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+    align-items: center !important;
+    gap: 12px !important;
+  }
+
+  .neurolxpTransformingCorporat {
+    font-size: 20px !important;
+    line-height: 32px !important;
+    transform: translatey(4);
+  }
+
+  .frameWrapper20 {
+    width: 100% !important;
+    height: 48px !important;
+  }
+
+
+  .frameParent58 {
+    margin-top: 48px !important;
+  }
+
+  .frameParent59 {
+    position: static !important;
+    bottom: auto !important;
+    left: auto !important;
+    width: 100% !important;
+    height: auto !important;
+    padding: 32px 16px !important;
+    box-sizing: border-box !important;
+    overflow: visible !important;
+  }
+
+  .frameParent60,
+  .frameParent61,
+  .frameParent62,
+  .frameParent64,
+  .frameParent65,
+  .frameParent66 {
+    position: static !important;
+    width: 100% !important;
+    height: auto !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 24px !important;
+  }
+
+  .logo01SynapseSpark1Group,
+  .prgeeqGlobalSolutionsPrivatParent,
+  .aboutUsParent,
+  .quickLinksParent,
+  .neurolxpParent,
+  .ourCustomersGroup {
+    width: 100% !important;
+    align-items: center !important;
+    text-align: center !important;
+  }
+
+  .logo01SynapseSpark1Icon2 {
+    width: 180px !important;
+    height: auto !important;
+  }
+
+  .frameParent63 {
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+  }
+
+  .frameParent65 {
+    gap: 32px !important;
+  }
+
+  .frameParent66 {
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    gap: 16px !important;
+  }
+
+  .frameChild38 {
+    width: 52px !important;
+    height: 52px !important;
+  }
+
+  .copyright2026 {
+    width: 100% !important;
+    height: auto !important;
+    line-height: 22px !important;
+    font-size: 14px !important;
+  }
+
+  .frameWrapper21 {
+    position: static !important;
+    bottom: auto !important;
+    left: auto !important;
+    width: 100% !important;
+    height: auto !important;
+  }
+
+
+  .ellipseParent:hover,
+  .ellipseContainer:hover,
+  .ellipseParent3:hover,
+  .ellipseParent5:hover,
+  .frameWrapper3:hover,
+  .rectangleGroup:hover,
+  .rectangleContainer:hover,
+  .rectangleParent2:hover,
+  .frameWrapper19:hover,
+  .frameChild22.useCaseIcon:hover,
+  .frameParent40:hover .frameChild22.useCaseIcon,
+  .frameParent44:hover .frameChild22.useCaseIcon,
+  .frameParent45:hover .frameChild22.useCaseIcon {
+    transform: none !important;
+    filter: none !important;
+  }
+
+  .frameParent8 {
+    top: 46% !important;
+    left: 50% !important;
+    width: 88% !important;
+    transform: translate(-50%, -50%) !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 8px !important;
+    text-align: center !important;
+  }
+
+  .frameParent9 {
+    width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 6px !important;
+  }
+
+  .frameParent8 .b {
+    width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+    margin: 0 !important;
+    font-size: 24px !important;
+    line-height: 32px !important;
+    text-align: center !important;
+  }
+
+  .enterpriseClients,
+  .learnersTrained,
+  .productivityBoost {
+    width: 100% !important;
+    height: auto !important;
+    min-height: 22px !important;
+    margin: 0 !important;
+    padding: 0 6px !important;
+    box-sizing: border-box !important;
+    font-size: 10px !important;
+    line-height: 22px !important;
+    text-align: center !important;
+    white-space: normal !important;
+  }
+
+  
+  .ellipseIcon {
+    top: auto !important;
+    bottom: 10% !important;
+    left: 50% !important;
+    width: 48px !important;
+    height: auto !important;
+    margin: 0 !important;
+    transform: translateX(-50%) !important;
+    z-index: 4 !important;
+  }
+
+  .frameParent17 {
+    width: 100% !important;
+    gap: 12px !important;
+    padding: 0 8px !important;
+    box-sizing: border-box !important;
+  }
+
+  .keyChallengesInCorporateTrParent {
+    width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 12px !important;
+  }
+
+  .keyChallengesInContainer {
+    width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+    margin: 0 !important;
+    font-size: 32px !important;
+    line-height: 40px !important;
+    font-weight: 700 !important;
+    text-align: center !important;
+    white-space: normal !important;
+  }
+
+  .keyChallengesInContainer .keyChallengesIn,
+  .keyChallengesInContainer .everyNeed {
+    display: inline !important;
+    font-size: inherit !important;
+    line-height: inherit !important;
+  }
+
+  .neurolxpHelpsOrganizations {
+    width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+    margin: 0 !important;
+    padding: 0 4px !important;
+    box-sizing: border-box !important;
+    font-size: 14px !important;
+    line-height: 24px !important;
+    text-align: center !important;
+    white-space: normal !important;
+  }
+
+  .frameWrapper3,
+  .frameWrapper4,
+  .frameParent20 {
+    width: 100% !important;
+    min-height: 320px !important;
+    height: 320px !important;
+  }
+
+  .frameParent20 {
+    position: relative !important;
+    top: auto !important;
+    left: auto !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+    padding: 0 16px 20px !important;
+    box-sizing: border-box !important;
+    gap: 0 !important;
+  }
+  
+  .frameParent21 {
+    width: 100% !important;
+    height: 136px !important;
+    min-height: 136px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+    gap: 0 !important;
+  }
+
+  .frameWrapper5 {
+    width: calc(100% + 32px) !important;
+    height: 136px !important;
+    min-height: 136px !important;
+    margin-left: -16px !important;
+    margin-right: -16px !important;
+    flex-shrink: 0 !important;
+  }
+
+  .frameParent22 {
+    top: 16px !important;
+    left: 50% !important;
+    width: calc(100% - 32px) !important;
+    height: 104px !important;
+    transform: translateX(-50%) !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+    gap: 12px !important;
+  }
+
+  .frameParent22 .iconBadge {
+    width: 52px !important;
+    height: 52px !important;
+    min-width: 52px !important;
+    min-height: 52px !important;
+    flex-shrink: 0 !important;
+  }
+
+  .frameParent22 .rapidSkillChanges {
+    width: 100% !important;
+    height: 26px !important;
+    min-height: 26px !important;
+    margin: 0 !important;
+    padding: 0 8px !important;
+    box-sizing: border-box !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    font-size: 18px !important;
+    line-height: 26px !important;
+    font-weight: 600 !important;
+    text-align: center !important;
+    white-space: normal !important;
+  }
+  
+  .continuousWorkforceUpskillin,
+  .actionableLearningInsights {
+    width: 100% !important;
+    min-height: 48px !important;
+    height: auto !important;
+    margin: 0 !important;
+    padding: 0 12px !important;
+    box-sizing: border-box !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    font-size: 16px !important;
+    line-height: 24px !important;
+    font-weight: 400 !important;
+    text-align: center !important;
+    white-space: normal !important;
+    transform: translatey(15);
+  }
+  
+  .howNeurolxpHelpsParent,
+  .corporateChallengeToggle {
+    width: 100% !important;
+    height: auto !important;
+    min-height: 72px !important;
+    margin-top: auto !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: flex-end !important;
+    gap: 8px !important;
+    text-align: center !important;
+  }
+
+  .howNeurolxpHelps {
+    width: 100% !important;
+    height: 24px !important;
+    min-height: 24px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    font-size: 16px !important;
+    line-height: 24px !important;
+    font-weight: 600 !important;
+    text-align: center !important;
+  }
+
+  .corporateChallengeChevron,
+  .arrowDownDoubleIcon {
+    width: 32px !important;
+    height: 24px !important;
+    margin: 0 auto !important;
+    flex-shrink: 0 !important;
+  }
+
+  .frameParent19 > .frameWrapper3,
+  .frameParent29 > .frameWrapper3 {
+    align-self: stretch !important;
+  }
+
+
+  .frameParent8 {
+    top: 42% !important; 
+    left: 50% !important;
+    width: 88% !important;
+    transform: translate(-50%, -50%) !important;
+
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 2px !important;
+    text-align: center !important;
+  }
+
+  .frameParent9 {
+    width: 100% !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 2px !important;
+  }
+  
+  .frameParent8 .b,
+  .frameParent8 .b1,
+  .frameParent8 .b2,
+  .frameParent8 .b3 {
+    margin: 0 !important;
+    line-height: 30px !important;
+  }
+
+  .enterpriseClients,
+  .learnersTrained,
+  .satisfactionRate,
+  .productivityBoost {
+    margin: 0 !important;
+    padding: 0 8px !important;
+    text-align: center !important;
+    line-height: 20px !important;
+  }
+
+  .ellipseIcon {
+    left: 50% !important;
+    bottom: 8% !important;
+    transform: translateX(-50%) !important;
+    width: 48px !important;
+    height: auto !important;
+  }
+}
+
+
+.corporateTraining,
+.corporateTraining button,
+.corporateTraining input,
+.corporateTraining textarea,
+.corporateTraining select {
+  font-family: "Segoe UI" !important;
+}
+
+.empoweringWorkforce,
+.keyChallengesInContainer,
+.frameParent36 .keyChallengesInContainer,
+.neurolxpTransformingCorporat,
+.topTrainingPrograms {
+  font-weight: 700 !important;
+}
+
+.corporateChallengeCard .rapidSkillChanges,
+.frameParent36 .employeeOnboarding {
+  font-weight: 700 !important;
+}
+
+.frameItem,
+.frameChild15,
+.frameChild21,
+.frameChild28,
+.frameChild36,
+.corporateBreadcrumbCurrent,
+.startLearning,
+.requestDemoButton,
+.getStarted,
+.corporateChallengeToggle .howNeurolxpHelps,
+.completion,
+.averageScore,
+.averageTime,
+.leadershipDev,
+.b6 {
+  font-weight: 600 !important;
+}
+
+.buildFutureReadyWorkforces,
+.neurolxpHelpsOrganizations,
+.organizationsCanUse,
+.buildSkilledEngaged,
+.corporateChallengeCard .continuousWorkforceUpskillin,
+.frameParent36 .accelerateNewHire,
+.enterpriseClients,
+.learnersTrained,
+.productivityBoost {
+  font-weight: 400 !important;
+}
+
+.b,
+.b4,
+.b5,
+.h {
+  font-weight: 700 !important;
+}
+
+
+.groupYoungBusinesspeopleUsi {
+  border-radius: 0;
+  background: transparent;
+}
+
+/* =========================================================
+   DESKTOP-ONLY PAGE CENTERING FIX
+   Mobile/tablet responsive rules remain untouched.
+   ========================================================= */
+@media screen and (min-width: 1025px) {
+  .corporateTraining {
+    width: 100% !important;
+    max-width: 1440px !important;
+    min-width: 0 !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    transform: none !important;
+    zoom: 1 !important;
+    overflow-x: hidden !important;
+    contain: layout paint;
+  }
+
+  .corporateTraining > .rectangleParent,
+  .corporateTraining > .frameParent6 {
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+  }
+
+  .corporateTraining > .rectangle2,
+  .corporateTraining > .image202 {
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+  }
+
+  .corporateTraining > .frameDiv {
+    max-width: calc(100% - 32px) !important;
+  }
+}
+
+/* Mobile-only fix: keep "Learning Programs for Every Need" subtitle on two centered lines */
+@media (max-width: 767px) {
+  .organizationsCanUse {
+    width: min(92%, 340px);
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    white-space: normal;
+    overflow-wrap: normal;
+    word-break: normal;
+    text-align: center;
+    line-height: 1.45;
+  }
+}
+
+
+/* Request Demo button: raised normally, pressed/inset on click */
+.frameInner.requestDemoButton {
+  box-shadow:
+    -8px -8px 16px #ffffff,
+    8px 8px 16px #c6c6c9 !important;
+  background-color: #dfe6e9;
+  cursor: pointer;
+}
+
+.frameInner.requestDemoButton:hover {
+  box-shadow:
+    -5px -5px 12px #ffffff,
+    5px 5px 12px #c6c6c9 !important;
+}
+
+.frameInner.requestDemoButton:active {
+  box-shadow:
+    inset -4px -4px 8px #ffffff,
+    inset 4px 4px 8px #c6c6c9 !important;
+}
+
+.frameInner.requestDemoButton:focus-visible {
+  outline: 3px solid #2d4cc8;
+  outline-offset: 4px;
+}
+
