@@ -1,0 +1,3304 @@
+.extendedEnterpriseLearning {
+  	width: 100%;
+  	height: 3543px;
+  	position: relative;
+  	background-color: #dfe6e9;
+  	overflow: hidden;
+  	text-align: left;
+  	font-size: 16px;
+  	color: #31344b;
+  	font-family: 'Segoe UI';
+    zoom: 0.97;
+}
+.frameParent {
+  	position: absolute;
+  	top: 0px;
+  	left: calc(50% - 720px);
+  	box-shadow: -8px -8px 16px #fff, 8px 8px 16px #c6c6c9;
+  	background-color: #dfe6e9;
+  	width: 1440px;
+  	height: 80px;
+  	overflow: hidden;
+  	font-family: Inter;
+}
+.frameChild {
+  	position: absolute;
+  	top: calc(50% - 22px);
+  	left: 1096px;
+  	width: 132px;
+  	height: 44px;
+  	display: flex;
+  	align-items: center;
+  	flex-shrink: 0;
+}
+.frameGroup {
+  	position: absolute;
+  	top: 18px;
+  	left: 32px;
+  	width: 1376px;
+  	height: 45px;
+  	flex-shrink: 0;
+}
+.logo01SynapseSpark1Parent {
+  	position: absolute;
+  	top: 0px;
+  	left: 0px;
+  	display: flex;
+  	align-items: center;
+  	gap: 130px;
+}
+.logo01SynapseSpark1Icon {
+  	height: 45px;
+  	width: 120px;
+  	position: relative;
+  	object-fit: cover;
+}
+.frameContainer {
+  	display: flex;
+  	align-items: center;
+  	gap: 30px;
+}
+.homeParent {
+  	display: flex;
+  	align-items: center;
+  	gap: 8px;
+}
+.home {
+  	position: relative;
+  	line-height: 24px;
+  	font-weight: 600;
+}
+.arrowDown01Icon {
+  	height: 16px;
+  	width: 40px;
+  	position: relative;
+}
+.resourcesParent {
+  	display: flex;
+  	align-items: center;
+  	gap: 8px;
+  	color: #2d4cc8;
+}
+.resources {
+  	position: relative;
+  	line-height: 24px;
+}
+.signInHelpWrapper {
+  	position: absolute;
+  	top: calc(50% - 22.5px);
+  	left: 1244px;
+  	box-shadow: -8px -8px 16px #fff, 8px 8px 16px #c6c6c9;
+  	border-radius: 32px;
+  	background-color: #dfe6e9;
+  	width: 132px;
+  	height: 44px;
+  	overflow: hidden;
+  	display: flex;
+  	align-items: center;
+  	justify-content: center;
+  	padding: 16px 32px;
+  	box-sizing: border-box;
+  	text-align: center;
+  	color: #2d4cc8;
+  	font-family: 'Segoe UI';
+}
+.signInHelp {
+  	position: relative;
+  	letter-spacing: 0.02em;
+  	line-height: 28px;
+  	font-weight: 600;
+  	flex-shrink: 0;
+}
+.frameItem {
+  	position: absolute;
+  	top: 6px;
+  	left: 11px;
+  	width: 1429px;
+  	height: 592.4px;
+  	flex-shrink: 0;
+}
+.frameInner {
+  	position: absolute;
+  	top: 76px;
+  	left: 4px;
+  	width: 1436px;
+  	height: 839px;
+  	overflow: hidden;
+  	flex-shrink: 0;
+}
+.frameDiv {
+  	position: absolute;
+  	top: 32px;
+  	left: 80px;
+  	background-color: #dfe6e9;
+  	display: flex;
+  	align-items: center;
+  	gap: 8px;
+  	color: #2f3547;
+  	font-family: 'Segoe UI';
+}
+.resourcesWrapper {
+  	display: flex;
+  	align-items: center;
+}
+.useCases {
+  	position: relative;
+  	letter-spacing: 0.02em;
+  	line-height: 24px;
+}
+.arrowRightDoubleGroup {
+  	display: flex;
+  	align-items: center;
+  	gap: 8px;
+  	color: #243fa8;
+}
+.vectorParent {
+	position: absolute;
+	top: 64px;
+	left: calc(50% - 720px);
+	width: 1440px;
+	height: 475px;
+	text-align: center;
+	font-family: "Segoe UI";
+	overflow: visible;
+}
+
+.groupChild {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 1440px;
+	height: 475px;
+	display: block;
+	z-index: 0;
+	pointer-events: none;
+}
+
+.frameParent2 {
+	position: absolute;
+	top: 82px;
+	left: 189px;
+	width: 1103px;
+	height: 322px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 50px;
+}
+
+.frameParent3 {
+	align-self: stretch;
+	height: 212px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 24px;
+}
+
+.frameIcon {
+	width: 394.81px;
+	height: 50px;
+	background: #dfe6e9;
+	box-shadow: inset -4px -4px 8px #ffffff,
+		inset 4px 4px 8px rgba(196, 196, 196, 0.8);
+	border-radius: 28px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	box-sizing: border-box;
+	font-family: "Segoe UI";
+	font-weight: 600;
+	font-size: 24px;
+	line-height: 32px;
+	letter-spacing: 0.03em;
+	text-transform: capitalize;
+	color: #2d4cc8;
+}
+
+.extendLearningBeyondYourWoParent {
+	width: 999px;
+	height: 114px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 24px;
+}
+
+.extendLearningBeyond {
+	width: 883px;
+	height: 50px;
+	font-family: "Segoe UI";
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 50px;
+	text-align: center;
+	letter-spacing: 0.03em;
+	text-transform: capitalize;
+	color: #31344b;
+}
+
+.trainPartnersVendors {
+	width: 714px;
+	height: 64px;
+	font-family: "Segoe UI";
+	font-weight: 400;
+	font-size: 24px;
+	line-height: 32px;
+	text-align: center;
+	letter-spacing: 0.03em;
+	color: #2f3547;
+}
+
+.frameParent4 {
+	width: 948.19px;
+	height: 60.2px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	gap: 16px;
+}
+
+.frameChild2,
+.frameChild4 {
+	height: 60px;
+	background: #dfe6e9;
+	box-shadow: inset -4px -4px 8px #ffffff,
+		inset 4px 4px 8px rgba(196, 196, 196, 0.8);
+	border-radius: 32px;
+	border-bottom: 5px solid;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	box-sizing: border-box;
+	font-family: "Segoe UI";
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 26px;
+	letter-spacing: 0.03em;
+}
+
+.frameChild2 {
+	width: 250px;
+}
+
+.frameChild4 {
+	width: 200px;
+}
+
+.heroPillBlue {
+	color: #2d4cc8;
+	border-bottom-color: #2d4cc8;
+}
+
+.heroPillPink {
+	color: #bf1869;
+	border-bottom-color: #bf1869;
+}
+
+.heroPillGreen {
+	color: #2a7308;
+	border-bottom-color: #2a7308;
+}
+
+.heroPillPurple {
+	color: #67096e;
+	border-bottom-color: #67096e;
+}
+
+.frameParent5 {
+  	position: absolute;
+  	top: 579px;
+  	left: calc(50% - 601px);
+  	width: 1201.9px;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: center;
+  	gap: 50px;
+  	text-align: center;
+  	font-size: 48px;
+  	color: #2f3547;
+}
+.frameParent6 {
+  	width: 796px;
+  	height: 192px;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: center;
+  	gap: 28px;
+}
+.frameWrapper {
+  	width: 1133px;
+  	height: 72px;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-start;
+  	flex-shrink: 0;
+}
+.onePlatformEveryStakeholdeWrapper {
+  	display: flex;
+  	align-items: center;
+  	justify-content: center;
+  	padding: 10px;
+  	flex-shrink: 0;
+}
+.onePlatformEvery {
+  	height: 72px;
+  	width: 1133px;
+  	position: relative;
+  	line-height: 60px;
+  	text-transform: capitalize;
+  	display: inline-block;
+  	background: linear-gradient(90deg, #bf1869 14.9%, #2d4cc8 56.25%);
+  	-webkit-background-clip: text;
+  	-webkit-text-fill-color: transparent;
+  	flex-shrink: 0;
+  	text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.neurolxpConnectsYour {
+  	width: 774px;
+  	position: relative;
+  	font-size: 28px;
+  	line-height: 46px;
+  	display: flex;
+  	align-items: center;
+  	justify-content: center;
+  	flex-shrink: 0;
+}
+.frameParent7 {
+  	align-self: stretch;
+  	height: 1450.6px;
+  	display: flex;
+  	align-items: center;
+  	gap: 32px;
+}
+.frameChild6 {
+	width: 130.6px;
+	height: 1450.61px;
+	position: relative;
+	flex: none;
+	flex-grow: 0;
+}
+
+.stakeholderTimelineRail {
+	position: absolute;
+	top: 45px;
+	left: 50%;
+	width: 50px;
+	height: 1372px;
+	transform: translateX(-50%);
+	background: #dfe6e9;
+	box-shadow: inset -4px -4px 8px #ffffff,
+		inset 4px 4px 8px #c4c4c4;
+	border-radius: 50px;
+}
+
+.stakeholderTimelineRail::after {
+	content: "";
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 50%;
+	width: 15px;
+	transform: translateX(-50%);
+	background: #dfe6e9;
+	box-shadow: -4px -4px 8px #ffffff,
+		4px 4px 8px #c6c6c9;
+	border-radius: 100px;
+}
+
+.stakeholderTimelineNode {
+	position: absolute;
+	left: 50%;
+	width: 100px;
+	height: 100px;
+	transform: translateX(-50%);
+	background: #dfe6e9;
+	box-shadow: inset -4px -4px 8px #ffffff,
+		inset 4px 4px 8px rgba(196, 196, 196, 0.8);
+	border-radius: 100px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	box-sizing: border-box;
+	z-index: 2;
+}
+
+.stakeholderTimelineNode1 { top: 26px; }
+.stakeholderTimelineNode2 { top: 383px; }
+.stakeholderTimelineNode3 { top: 740px; }
+.stakeholderTimelineNode4 { top: 1098px; }
+
+.stakeholderTimelineInner {
+	width: 70px;
+	height: 70px;
+	background: #dfe6e9;
+	box-shadow: 8px 8px 16px #c6c6c9,
+		-8px -8px 16px #ffffff;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	box-sizing: border-box;
+}
+
+.stakeholderTimelineInnerPink { border: 2px solid #bf1869; }
+.stakeholderTimelineInnerBlue { border: 2px solid #2d4cc8; }
+.stakeholderTimelineInnerPurple { border: 2px solid #67096e; }
+.stakeholderTimelineInnerGreen { border: 2px solid #2a7308; }
+
+.stakeholderTimelineIcon {
+	width: 40px;
+	height: 40px;
+	object-fit: contain;
+	flex-shrink: 0;
+}
+
+.stakeholderTimelineNode1 .stakeholderTimelineIcon,
+.stakeholderTimelineNode4 .stakeholderTimelineIcon {
+	filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.frameParent8 {
+	width: 1039.3px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 36px;
+}
+
+.frameWrapper2 {
+	width: 1039.3px;
+	height: 322px;
+	box-shadow: inset -4px -4px 8px #ffffff,
+		inset 4px 4px 8px rgba(196, 196, 196, 0.8);
+	border-radius: 16px;
+	background-color: #dfe6e9;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: space-between;
+	padding: 32px;
+	box-sizing: border-box;
+	text-align: left;
+}
+
+.stakeholderCardContent {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 14px;
+}
+
+.stakeholderChallenge {
+	font-family: "Segoe UI";
+	font-size: 20px;
+	font-weight: 700;
+	line-height: 28px;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+}
+
+.stakeholderChallengePink {
+	color: #bf1869;
+}
+
+.stakeholderChallengeBlue {
+	color: #2d4cc8;
+}
+
+.stakeholderChallengePurple {
+	color: #67096e;
+}
+
+.stakeholderChallengeGreen {
+	color: #2a7308;
+}
+
+.stakeholderCardTitle {
+	font-family: "Segoe UI";
+	font-size: 28px;
+	font-weight: 700;
+	line-height: 36px;
+	letter-spacing: 0.01em;
+	color: #31344b;
+}
+
+.stakeholderCardDescription {
+	font-family: "Segoe UI";
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 28px;
+	letter-spacing: 0.01em;
+	color: #31344b;
+}
+
+.stakeholderHelpBox {
+	width: 100%;
+	height: 100px;
+	background: #dfe6e9;
+	box-shadow: -4px -4px 8px #ffffff,
+		4px 4px 8px #c4c4c4;
+	border-radius: 16px;
+	border-left: 3px solid;
+	border-right: 3px solid;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+	gap: 8px;
+	padding: 14px 16px;
+	box-sizing: border-box;
+}
+
+.stakeholderHelpPink {
+	border-color: #bf1869;
+}
+
+.stakeholderHelpBlue {
+	border-color: #2d4cc8;
+}
+
+.stakeholderHelpPurple {
+	border-color: #67096e;
+}
+
+.stakeholderHelpGreen {
+	border-color: #2a7308;
+}
+
+.stakeholderHelpTitle {
+	font-family: "Segoe UI";
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 24px;
+	letter-spacing: 0.02em;
+	text-transform: uppercase;
+}
+
+.stakeholderHelpTitlePink {
+	color: #bf1869;
+}
+
+.stakeholderHelpTitleBlue {
+	color: #2d4cc8;
+}
+
+.stakeholderHelpText {
+	font-family: "Segoe UI";
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 26px;
+	letter-spacing: 0.01em;
+	color: #31344b;
+}
+
+.frameParent13 {
+  	position: absolute;
+  	top: 2367.61px;
+  	left: 80px;
+  	width: 1285px;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: center;
+  	gap: 50px;
+  	text-align: center;
+  	font-size: 48px;
+}
+.frameParent14 {
+  	align-self: stretch;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: center;
+  	gap: 32px;
+}
+.frameChild15 {
+	width: 149.7px;
+	height: 50.1px;
+	position: relative;
+	border-radius: 28px;
+	background-color: #dfe6e9;
+	box-shadow: inset -8px -8px 16px #ffffff,inset 8px 8px 16px #c4c4c4;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: 'Segoe UI';
+	font-size: 24px;
+	font-weight: 600;
+	line-height: 1;
+	color: #2d4cc8;
+	box-sizing: border-box;
+}
+
+.benefitsOfExtendedEnterprisParent {
+  	align-self: stretch;
+  	height: 178px;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: center;
+  	gap: 32px;
+}
+.benefitsOfExtendedContainer {
+  	align-self: stretch;
+  	height: 63px;
+  	position: relative;
+  	letter-spacing: 0.03em;
+  	line-height: 60px;
+  	display: inline-block;
+  	flex-shrink: 0;
+}
+.benefitsOfExtended {
+  	line-height: 60px;
+}
+.enterpriseLearning {
+  	color: #2d4cc8;
+  	line-height: 60px;
+}
+.aUnifiedLearning {
+  	width: 1013px;
+  	height: 83px;
+  	position: relative;
+  	font-size: 28px;
+  	letter-spacing: 0.03em;
+  	line-height: 40px;
+  	color: #2f3547;
+  	display: inline-block;
+  	flex-shrink: 0;
+}
+.frameParent15 {
+  	display: flex;
+  	align-items: flex-start;
+  	gap: 180px;
+  	text-align: left;
+  	font-size: 24px;
+  	color: #2d4cc8;
+}
+.frameParent16 {
+  	width: 500px;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-start;
+  	gap: 32px;
+}
+.frameParent17 {
+  	align-self: stretch;
+  	display: flex;
+  	align-items: center;
+  	gap: 24px;
+}
+.frameChild16 {
+	width: 70.05px;
+	height: 70.05px;
+	position: relative;
+	flex: none;
+	flex-grow: 0;
+	background: #dfe6e9;
+	box-shadow: inset -4px -4px 8px #ffffff,
+		inset 4px 4px 8px rgba(196, 196, 196, 0.8);
+	border-radius: 100px;
+	transform: rotate(0.05deg);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	box-sizing: border-box;
+}
+
+.benefitIconInner {
+	position: relative;
+	width: 50px;
+	height: 50px;
+	background: #dfe6e9;
+	box-shadow: 4px 4px 8px #c6c6c9,
+		-4px -4px 8px #ffffff;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	box-sizing: border-box;
+}
+
+.benefitIconImage {
+	position: relative;
+	width: 34px;
+	height: 34px;
+	object-fit: contain;
+	transform: rotate(0.05deg);
+	flex-shrink: 0;
+}
+
+.consistentTrainingParent {
+  	width: 242px;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-start;
+  	gap: 14px;
+}
+.consistentTraining {
+  	align-self: stretch;
+  	height: 37px;
+  	position: relative;
+  	letter-spacing: 0.03em;
+  	line-height: 36px;
+  	display: inline-block;
+  	flex-shrink: 0;
+}
+.standardizeLearningAcross {
+  	width: 467px;
+  	height: 28px;
+  	position: relative;
+  	font-size: 20px;
+  	letter-spacing: 0.03em;
+  	line-height: 28px;
+  	color: #31344b;
+  	display: inline-block;
+  	flex-shrink: 0;
+}
+.frameParent18 {
+  	align-self: stretch;
+  	display: flex;
+  	align-items: center;
+  	gap: 24px;
+  	color: #bf1869;
+}
+.deliverConsistentCustomer {
+  	width: 477px;
+  	height: 28px;
+  	position: relative;
+  	font-size: 20px;
+  	letter-spacing: 0.03em;
+  	line-height: 28px;
+  	color: #31344b;
+  	display: inline-block;
+  	flex-shrink: 0;
+}
+.frameParent19 {
+  	align-self: stretch;
+  	display: flex;
+  	align-items: center;
+  	gap: 24px;
+  	color: #046f73;
+}
+.complianceTracking {
+  	width: 284px;
+  	height: 37px;
+  	position: relative;
+  	letter-spacing: 0.03em;
+  	line-height: 36px;
+  	display: inline-block;
+  	flex-shrink: 0;
+}
+.monitorCertificationsAnd {
+  	width: 512px;
+  	height: 28px;
+  	position: relative;
+  	font-size: 20px;
+  	letter-spacing: 0.03em;
+  	line-height: 28px;
+  	color: #31344b;
+  	display: inline-block;
+  	flex-shrink: 0;
+}
+.frameParent20 {
+  	width: 500px;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-start;
+  	gap: 32px;
+  	color: #67096e;
+}
+.betterProductKnowledgeParent {
+  	width: 339px;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-start;
+  	gap: 14px;
+}
+.improveProductUnderstanding {
+  	width: 457px;
+  	height: 28px;
+  	position: relative;
+  	font-size: 20px;
+  	letter-spacing: 0.03em;
+  	line-height: 28px;
+  	color: #31344b;
+  	display: inline-block;
+  	flex-shrink: 0;
+}
+.frameParent22 {
+  	align-self: stretch;
+  	display: flex;
+  	align-items: center;
+  	gap: 24px;
+  	color: #c05512;
+}
+.globalScale {
+  	width: 158px;
+  	height: 37px;
+  	position: relative;
+  	letter-spacing: 0.03em;
+  	line-height: 36px;
+  	display: inline-block;
+  	flex-shrink: 0;
+}
+.frameParent23 {
+	position: absolute;
+	top: 3075px;
+	left: calc(50% - 640px);
+	width: 1280px;
+	height: 468px;
+	background: #dfe6e9;
+	box-shadow: inset -8px -8px 16px #ffffff,
+		inset 8px 8px 16px #c4c4c4;
+	border-radius: 32px;
+	overflow: hidden;
+	font-family: "Segoe UI";
+}
+
+.frameParent24 {
+	position: absolute;
+	top: 50px;
+	left: 50px;
+	width: 560px;
+	height: 368px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: space-between;
+	z-index: 2;
+}
+
+.empowerYourExtendedEnterpriParent {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 24px;
+}
+
+.empowerYourExtended {
+	width: 540px;
+	font-family: "Segoe UI";
+	font-size: 54px;
+	font-weight: 700;
+	line-height: 1.22;
+	letter-spacing: 0.01em;
+	color: #31344b;
+	text-transform: none;
+}
+
+.neurolxpConnectsTrains {
+	width: 560px;
+	font-family: "Segoe UI";
+	font-size: 28px;
+	font-weight: 400;
+	line-height: 40px;
+	letter-spacing: 0.01em;
+	color: #000000;
+}
+
+.frameWrapper10 {
+	width: 220px;
+	height: 60px;
+	border-radius: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-decoration: none;
+	outline: none;
+}
+
+.frameChild21 {
+	width: 100%;
+	height: 60px;
+	background: #dfe6e9;
+	box-shadow: -4px -4px 8px #ffffff,
+		4px 4px 8px rgba(196, 196, 196, 0.8);
+	border-radius: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	box-sizing: border-box;
+	font-family: "Segoe UI";
+	font-size: 20px;
+	font-weight: 700;
+	line-height: 28px;
+	letter-spacing: 0.02em;
+	color: #2d4cc8;
+	cursor: default;
+	transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.frameWrapper10:hover .frameChild21 {
+	transform: translateY(-1px);
+	box-shadow: -5px -5px 10px #ffffff,
+		5px 5px 10px rgba(196, 196, 196, 0.9);
+}
+
+.frameWrapper10:focus-visible .frameChild21 {
+	outline: 3px solid #2d4cc8;
+	outline-offset: 4px;
+}
+
+.empowerImageWrapper {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 633px;
+	height: 468px;
+	border-radius: 100px 0 0 100px;
+	overflow: hidden;
+	z-index: 1;
+}
+
+.departmentMeeting1Icon {
+	width: 633px;
+	height: 468px;
+	object-fit: cover;
+	object-position: center center;
+	display: block;
+}
+
+.frameParent25 {
+  	position: absolute;
+  	bottom: 0.27px;
+  	left: calc(50% - 720px);
+  	width: 1440px;
+  	height: 501px;
+  	font-size: 26px;
+  	color: #2f3547;
+}
+.frameParent26 {
+  	position: absolute;
+  	bottom: -0.02px;
+  	left: calc(50% - 720px);
+  	box-shadow: -10px -10px 20px #fff inset, 8px 8px 16px #c4c4c4 inset;
+  	background-color: #dfe6e9;
+  	width: 1440px;
+  	height: 459px;
+  	overflow: hidden;
+}
+.frameParent27 {
+  	position: absolute;
+  	top: 49.81px;
+  	left: 53.96px;
+  	width: 1339.5px;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: center;
+  	gap: 24px;
+}
+.frameParent28 {
+  	align-self: stretch;
+  	display: flex;
+  	align-items: flex-start;
+  	gap: 35px;
+}
+.frameParent29 {
+  	width: 676px;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-start;
+  	gap: 24px;
+  	flex-shrink: 0;
+}
+.logo01SynapseSpark1Group {
+  	width: 577px;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-start;
+  	gap: 20px;
+}
+.logo01SynapseSpark1Icon2 {
+  	width: 299px;
+  	height: 112px;
+  	position: relative;
+  	object-fit: cover;
+  	flex-shrink: 0;
+}
+.frameParent30 {
+  	display: flex;
+  	align-items: center;
+  	gap: 14px;
+  	flex-shrink: 0;
+}
+.onePlatformParent {
+  	display: flex;
+  	align-items: center;
+  	gap: 10px;
+}
+.onePlatform {
+  	position: relative;
+  	letter-spacing: -0.03em;
+  	line-height: 34px;
+  	text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.sparklesIcon {
+  	height: 23px;
+  	width: 23px;
+  	position: relative;
+}
+.prgeeqGlobalSolutionsPrivatParent {
+  	width: 459px;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-start;
+  	gap: 4px;
+  	font-size: 16px;
+}
+.prgeeqGlobalSolutions {
+  	align-self: stretch;
+  	position: relative;
+  	letter-spacing: 0.03em;
+  	line-height: 24px;
+}
+.prestigeAtlanta1012Container {
+  	align-self: stretch;
+  	height: 77px;
+  	position: relative;
+  	line-height: 24px;
+  	display: flex;
+  	align-items: flex-end;
+  	flex-shrink: 0;
+}
+.blankLine {
+  	line-height: 24px;
+}
+.frameParent31 {
+  	width: 631px;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-end;
+  	gap: 24px;
+  	flex-shrink: 0;
+  	font-size: 22px;
+  	color: #2d4cc8;
+}
+.frameParent32 {
+  	width: 619px;
+  	display: flex;
+  	align-items: flex-start;
+  	gap: 32px;
+}
+.aboutUsParent {
+  	width: 123px;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-start;
+  	gap: 20px;
+}
+.aboutUs {
+  	width: 93px;
+  	position: relative;
+  	letter-spacing: -0.03em;
+  	line-height: 30px;
+  	display: flex;
+  	align-items: center;
+}
+.ourMissionParent {
+  	align-self: stretch;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-start;
+  	gap: 15px;
+  	font-size: 20px;
+  	color: #2f3547;
+}
+.ourMission {
+  	align-self: stretch;
+  	height: 26px;
+  	position: relative;
+  	letter-spacing: 0.03em;
+  	line-height: 28px;
+  	display: flex;
+  	align-items: center;
+  	flex-shrink: 0;
+}
+.quickLinksParent {
+  	width: 207px;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-start;
+  	gap: 20px;
+}
+.quickLinks {
+  	align-self: stretch;
+  	height: 26px;
+  	position: relative;
+  	letter-spacing: -0.03em;
+  	line-height: 30px;
+  	display: flex;
+  	align-items: center;
+  	flex-shrink: 0;
+}
+.neurolxpParent {
+  	height: 181px;
+  	width: 205px;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-start;
+  	gap: 20px;
+}
+.neurolxp {
+  	align-self: stretch;
+  	height: 26px;
+  	position: relative;
+  	letter-spacing: -0.03em;
+  	line-height: 30px;
+  	display: flex;
+  	white-space: pre-wrap;
+  	align-items: center;
+  	flex-shrink: 0;
+}
+.ourCustomersGroup {
+  	width: 221px;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-start;
+  	gap: 15px;
+  	flex-shrink: 0;
+  	font-size: 20px;
+  	color: #2f3547;
+}
+.smartContentCreation {
+  	width: 229px;
+  	height: 26px;
+  	position: relative;
+  	letter-spacing: 0.03em;
+  	line-height: 28px;
+  	display: flex;
+  	align-items: center;
+  	flex-shrink: 0;
+}
+.frameParent33 {
+  	width: 392.4px;
+  	height: 80.1px;
+  	display: flex;
+  	align-items: center;
+  	gap: 24px;
+}
+.frameChild22 {
+  	height: 80.1px;
+  	width: 80.1px;
+  	position: relative;
+}
+.copyright2026 {
+  	align-self: stretch;
+  	height: 47px;
+  	position: relative;
+  	font-size: 16px;
+  	letter-spacing: -0.03em;
+  	line-height: 56px;
+  	font-weight: 600;
+  	color: #2d4cc8;
+  	text-align: center;
+  	display: inline-block;
+  	flex-shrink: 0;
+}
+.frameWrapper11 {
+  	position: absolute;
+  	bottom: 0px;
+  	left: calc(50% - 720px);
+  	box-shadow: -8px -8px 16px #fff inset, 10px 10px 10px #c4c4c4 inset;
+  	background-color: #dfe6e9;
+  	width: 1440px;
+  	height: 459px;
+  	overflow: hidden;
+}
+.frameParent38 {
+  	width: 631px;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-end;
+  	position: relative;
+  	isolation: isolate;
+  	gap: 24px;
+  	flex-shrink: 0;
+  	font-size: 22px;
+  	color: #2d4cc8;
+}
+.frameParent39 {
+  	width: 619px;
+  	display: flex;
+  	align-items: flex-start;
+  	gap: 32px;
+  	z-index: 0;
+  	flex-shrink: 0;
+}
+.ourMissionGroup {
+  	align-self: stretch;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-start;
+  	gap: 15px;
+  	font-size: 18px;
+  	color: #2f3547;
+}
+.neurolxpGroup {
+  	display: flex;
+  	align-items: flex-start;
+  	flex-shrink: 0;
+}
+.neurolxp2 {
+  	height: 26px;
+  	width: 103px;
+  	position: relative;
+  	letter-spacing: -0.03em;
+  	line-height: 30px;
+  	display: flex;
+  	align-items: center;
+  	flex-shrink: 0;
+}
+.neurolxpTxt {
+  	width: 100%;
+  	white-space: pre-wrap;
+}
+.neurolxp3 {
+  	line-height: 30px;
+}
+.span {
+  	font-size: 12px;
+  	line-height: 30px;
+}
+.tm {
+  	height: 17px;
+  	width: 23px;
+  	position: relative;
+  	font-size: 12px;
+  	letter-spacing: -0.03em;
+  	line-height: 30px;
+  	display: flex;
+  	align-items: center;
+  	flex-shrink: 0;
+}
+.ourCustomersContainer {
+  	width: 221px;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-start;
+  	gap: 15px;
+  	flex-shrink: 0;
+  	font-size: 18px;
+  	color: #2f3547;
+}
+.frameParent41 {
+  	width: 392.4px;
+  	height: 80.1px;
+  	margin: 0 !important;
+  	position: absolute;
+  	top: 217.19px;
+  	left: 135.04px;
+  	display: flex;
+  	align-items: center;
+  	gap: 24px;
+  	z-index: 1;
+  	flex-shrink: 0;
+}
+.frameChild26 {
+  	height: 80.1px;
+  	width: 80.1px;
+  	position: relative;
+  	flex-shrink: 0;
+}
+.frameChild31 {
+  	position: absolute;
+  	top: 0px;
+  	left: calc(50% - 30.07px);
+  	border-radius: 32px;
+  	width: 59.1px;
+  	height: 92px;
+  	object-fit: contain;
+}
+
+.bookDemoBtn{
+    width:220px;
+    height:60px;
+    border-radius:50px;
+    background:#DFE6E9;
+    box-shadow:-4px -4px 8px #FFFFFF,4px 4px 8px rgba(196,196,196,.8);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-decoration:none;
+    color:#2D4CC8;
+    font-family:"Segoe UI";
+    font-size:24px;
+    font-weight:600;
+    line-height:1;
+    cursor:default;
+    transition:.25s ease;
+}
+.bookDemoBtn:hover{
+    transform:translateY(-2px);
+}
+
+.extendedEnterpriseLearning {
+	height: 3630px;
+	padding-bottom: 80px;
+	box-sizing: border-box;
+}
+
+.frameDiv {
+	top: 32px;
+}
+
+.vectorParent {
+	top: 64px;
+}
+
+.frameParent5 {
+	top: 579px;
+}
+
+.frameParent13 {
+	top: 2367.61px;
+}
+
+.frameParent23 {
+	top: 3075px;
+}
+
+.frameChild2,
+.frameChild4 {
+    cursor: default;
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease,
+        filter 0.25s ease;
+    will-change: transform;
+}
+
+.frameChild2:hover,
+.frameChild4:hover {
+    transform: translateY(-8px);
+    box-shadow:
+        -8px -8px 16px #ffffff,
+        8px 8px 16px rgba(196, 196, 196, 0.9);
+    filter: brightness(1.02);
+}
+
+.frameChild2:active,
+.frameChild4:active {
+    transform: translateY(-3px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .frameChild2,
+    .frameChild4 {
+        transition: none;
+    }
+
+    .frameChild2:hover,
+    .frameChild4:hover,
+    .frameChild2:active,
+    .frameChild4:active {
+        transform: none;
+    }
+}
+
+.sparklesIcon{
+    position:relative;
+    overflow:hidden;
+}
+.sparklesIcon::after{
+    content:"";
+    position:absolute;
+    top:-8px;
+    left:-30px;
+    width:14px;
+    height:150%;
+    background:linear-gradient(90deg,
+        rgba(255,255,255,0),
+        rgba(255,255,255,.95),
+        rgba(255,255,255,0));
+    transform:rotate(24deg);
+    filter:blur(2px);
+    animation:sparkleLightPass 2.6s linear infinite;
+    pointer-events:none;
+}
+@keyframes sparkleLightPass{
+    0%{left:-30px;opacity:0;}
+    15%{opacity:1;}
+    60%{left:36px;opacity:1;}
+    100%{left:52px;opacity:0;}
+}
+
+.stakeholderTimelineInner{
+    position:relative;
+    overflow:hidden;
+    isolation:isolate;
+}
+
+.stakeholderTimelineInner::after{
+    content:"";
+    position:absolute;
+    top:-18px;
+    left:-42px;
+    width:14px;
+    height:110px;
+    border-radius:20px;
+
+    background:linear-gradient(
+        90deg,
+        rgba(255,255,255,0),
+        rgba(255,255,255,.95),
+        rgba(255,255,255,0)
+    );
+
+    transform:rotate(28deg);
+    filter:blur(1px);
+
+    animation:timelineIconLightPass 2.5s linear infinite;
+    pointer-events:none;
+    z-index:5;
+}
+
+.stakeholderTimelineNode2 .stakeholderTimelineInner::after{
+    animation-delay:.3s;
+}
+
+.stakeholderTimelineNode3 .stakeholderTimelineInner::after{
+    animation-delay:.6s;
+}
+
+.stakeholderTimelineNode4 .stakeholderTimelineInner::after{
+    animation-delay:.9s;
+}
+
+@keyframes timelineIconLightPass{
+
+    0%{
+        left:-42px;
+        opacity:0;
+    }
+
+    12%{
+        opacity:1;
+    }
+
+    55%{
+        left:86px;
+        opacity:1;
+    }
+
+    100%{
+        left:110px;
+        opacity:0;
+    }
+
+}
+
+.frameChild16,
+.benefitIconInner,
+.benefitIconImage{
+    transition:none;
+}
+
+.frameChild16{
+    animation:benefitOuterGlow 3s ease-in-out infinite;
+}
+
+.benefitIconInner{
+    animation:benefitInnerGlow 3s ease-in-out infinite;
+}
+
+.benefitIconImage{
+    animation:benefitIconPulse 3s ease-in-out infinite;
+}
+
+@keyframes benefitOuterGlow{
+    0%,100%{
+        filter:drop-shadow(0 0 0 rgba(45,76,200,0));
+    }
+    50%{
+        filter:
+            drop-shadow(0 0 6px rgba(45,76,200,.35))
+            drop-shadow(0 0 12px rgba(255,255,255,.65));
+    }
+}
+
+@keyframes benefitInnerGlow{
+    0%,100%{
+        box-shadow:
+            4px 4px 8px #c6c6c9,
+            -4px -4px 8px #ffffff;
+    }
+    50%{
+        box-shadow:
+            4px 4px 8px #c6c6c9,
+            -4px -4px 8px #ffffff,
+            0 0 12px rgba(45,76,200,.35),
+            0 0 18px rgba(255,255,255,.55);
+    }
+}
+
+@keyframes benefitIconPulse{
+    0%,100%{
+        transform:rotate(.05deg) scale(1);
+    }
+    50%{
+        transform:rotate(.05deg) scale(1.05);
+    }
+}
+
+@media (max-width: 1199px) {
+.extendedEnterpriseLearning {
+    width: 100% !important;
+    height: auto !important;
+    min-height: 100vh !important;
+    overflow-x: hidden !important;
+    overflow-y: visible !important;
+    padding: 0 24px 72px !important;
+    box-sizing: border-box !important;
+  }
+
+  .extendedEnterpriseLearning > .frameParent,
+  .extendedEnterpriseLearning > .frameDiv,
+  .extendedEnterpriseLearning > .vectorParent,
+  .extendedEnterpriseLearning > .frameParent5,
+  .extendedEnterpriseLearning > .frameParent13,
+  .extendedEnterpriseLearning > .frameParent23,
+  .extendedEnterpriseLearning > .frameParent25 {
+    width: 100% !important;
+    max-width: 100% !important;
+    left: auto !important;
+    right: auto !important;
+    transform: none !important;
+    box-sizing: border-box !important;
+  }
+
+  .frameDiv {
+    left: auto !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  .vectorParent {
+    left: auto !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    overflow: hidden !important;
+  }
+
+  .groupChild {
+    left: 50% !important;
+    width: 1440px !important;
+    max-width: none !important;
+    transform: translateX(-50%) !important;
+  }
+
+  .frameParent2 {
+    left: 50% !important;
+    width: min(1103px, calc(100% - 80px)) !important;
+    transform: translateX(-50%) !important;
+  }
+
+  .extendLearningBeyondYourWoParent,
+  .extendLearningBeyond,
+  .trainPartnersVendors {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .frameParent4 {
+    width: 100% !important;
+    max-width: 100% !important;
+    flex-wrap: wrap !important;
+    height: auto !important;
+  }
+
+  .frameParent5 {
+    left: 50% !important;
+    width: min(1201.9px, calc(100% - 48px)) !important;
+    transform: translateX(-50%) !important;
+  }
+
+  .frameParent6,
+  .frameWrapper,
+  .onePlatformEveryStakeholdeWrapper,
+  .onePlatformEvery,
+  .neurolxpConnectsYour {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+  }
+
+  .frameParent7 {
+    width: 100% !important;
+    gap: 24px !important;
+  }
+
+  .frameParent8 {
+    width: calc(100% - 150px) !important;
+  }
+
+  .frameWrapper2 {
+    width: 100% !important;
+  }
+
+  .frameParent13 {
+    left: 50% !important;
+    width: min(1285px, calc(100% - 48px)) !important;
+    transform: translateX(-50%) !important;
+  }
+
+  .benefitsOfExtendedEnterprisParent,
+  .benefitsOfExtendedContainer,
+  .aUnifiedLearning {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+  }
+
+  .frameParent15 {
+    width: 100% !important;
+    gap: 64px !important;
+    justify-content: center !important;
+  }
+
+  .frameParent16,
+  .frameParent20 {
+    width: min(500px, calc(50% - 32px)) !important;
+  }
+
+  .standardizeLearningAcross,
+  .deliverConsistentCustomer,
+  .monitorCertificationsAnd,
+  .improveProductUnderstanding {
+    width: 100% !important;
+    height: auto !important;
+  }
+
+  .frameParent23 {
+    left: 50% !important;
+    width: min(1280px, calc(100% - 48px)) !important;
+    transform: translateX(-50%) !important;
+  }
+
+  .frameParent24 {
+    left: 40px !important;
+    width: calc(50% - 60px) !important;
+  }
+
+  .empowerYourExtendedEnterpriParent,
+  .empowerYourExtended,
+  .neurolxpConnectsTrains {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .empowerImageWrapper {
+    width: 50% !important;
+  }
+
+  .departmentMeeting1Icon {
+    width: 100% !important;
+  }
+
+.vectorParent .groupChild {
+    display: none !important;
+  }
+
+  .vectorParent {
+    background: #dfe6e9 !important;
+  }
+}
+
+@media (max-width: 1024px) {
+  .extendedEnterpriseLearning {
+    zoom: 1 !important;
+  }
+
+  .frameParent2 {
+    width: calc(100% - 48px) !important;
+    gap: 36px !important;
+  }
+
+  .frameIcon {
+    max-width: 100% !important;
+  }
+
+  .extendLearningBeyond {
+    font-size: 34px !important;
+    line-height: 44px !important;
+  }
+
+  .trainPartnersVendors {
+    font-size: 22px !important;
+    line-height: 32px !important;
+  }
+
+  .frameParent5 {
+    width: calc(100% - 32px) !important;
+  }
+
+  .onePlatformEvery {
+    font-size: 42px !important;
+    line-height: 52px !important;
+    text-align: center !important;
+  }
+
+  .neurolxpConnectsYour {
+    font-size: 24px !important;
+    line-height: 38px !important;
+  }
+
+  .frameChild6 {
+    width: 110px !important;
+  }
+
+  .frameParent8 {
+    width: calc(100% - 130px) !important;
+  }
+
+  .frameWrapper2 {
+    height: auto !important;
+    min-height: 322px !important;
+  }
+
+  .frameParent13 {
+    width: calc(100% - 32px) !important;
+  }
+
+  .benefitsOfExtendedContainer {
+    font-size: 42px !important;
+    line-height: 52px !important;
+  }
+
+  .aUnifiedLearning {
+    font-size: 24px !important;
+    line-height: 36px !important;
+  }
+
+  .frameParent15 {
+    gap: 40px !important;
+  }
+
+  .frameParent16,
+  .frameParent20 {
+    width: calc(50% - 20px) !important;
+  }
+
+  .frameParent23 {
+    width: calc(100% - 32px) !important;
+  }
+
+  .frameParent24 {
+    left: 32px !important;
+    width: calc(52% - 48px) !important;
+  }
+
+  .empowerYourExtended {
+    font-size: 44px !important;
+  }
+
+  .neurolxpConnectsTrains {
+    font-size: 24px !important;
+    line-height: 36px !important;
+  }
+
+  .empowerImageWrapper {
+    width: 46% !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .extendedEnterpriseLearning {
+    width: 100% !important;
+    height: auto !important;
+    min-height: 100vh !important;
+    padding: 0 16px 56px !important;
+    overflow-x: hidden !important;
+  }
+
+  .frameDiv {
+    position: relative !important;
+    top: auto !important;
+    left: auto !important;
+    width: 100% !important;
+    margin: 20px auto 0 !important;
+    flex-wrap: nowrap !important;
+    white-space: nowrap !important;
+    overflow-x: auto !important;
+    overflow-y: hidden !important;
+    scrollbar-width: none;
+  }
+
+  .frameDiv::-webkit-scrollbar {
+    display: none;
+  }
+
+  .resourcesWrapper,
+  .arrowRightDoubleGroup {
+    flex-shrink: 0 !important;
+    white-space: nowrap !important;
+  }
+
+  .vectorParent {
+    position: relative !important;
+    top: auto !important;
+    left: auto !important;
+    width: 100% !important;
+    height: auto !important;
+    min-height: 610px !important;
+    margin: 20px auto 0 !important;
+    overflow: hidden !important;
+  }
+
+  .groupChild {
+    top: 0 !important;
+    left: 50% !important;
+    width: 980px !important;
+    height: 610px !important;
+    transform: translateX(-50%) !important;
+    object-fit: fill !important;
+  }
+
+  .frameParent2 {
+    position: relative !important;
+    top: auto !important;
+    left: auto !important;
+    width: 100% !important;
+    height: auto !important;
+    min-height: 560px !important;
+    margin: 0 auto !important;
+    padding: 52px 8px 32px !important;
+    transform: none !important;
+    gap: 28px !important;
+    box-sizing: border-box !important;
+  }
+
+  .frameParent3 {
+    width: 100% !important;
+    height: auto !important;
+    gap: 20px !important;
+  }
+
+  .frameIcon {
+    width: min(395px, 100%) !important;
+    height: auto !important;
+    min-height: 50px !important;
+    padding: 8px 16px !important;
+    font-size: 18px !important;
+    line-height: 28px !important;
+    text-align: center !important;
+  }
+
+  .extendLearningBeyondYourWoParent {
+    width: 100% !important;
+    height: auto !important;
+    gap: 18px !important;
+  }
+
+  .extendLearningBeyond {
+    width: 100% !important;
+    height: auto !important;
+    font-size: clamp(28px, 8vw, 36px) !important;
+    line-height: 1.25 !important;
+    text-align: center !important;
+  }
+
+  .trainPartnersVendors {
+    width: 100% !important;
+    height: auto !important;
+    font-size: clamp(18px, 5vw, 22px) !important;
+    line-height: 1.45 !important;
+  }
+
+  .frameParent4 {
+    width: 100% !important;
+    height: auto !important;
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 14px !important;
+  }
+
+  .frameChild2,
+  .frameChild4 {
+    width: min(280px, 100%) !important;
+    margin: 0 auto !important;
+  }
+
+  .frameParent5 {
+    position: relative !important;
+    top: auto !important;
+    left: auto !important;
+    width: 100% !important;
+    height: auto !important;
+    margin: 56px auto 0 !important;
+    transform: none !important;
+    gap: 32px !important;
+  }
+
+  .frameParent6 {
+    width: 100% !important;
+    height: auto !important;
+    gap: 20px !important;
+  }
+
+  .frameWrapper,
+  .onePlatformEveryStakeholdeWrapper,
+  .onePlatformEvery {
+    width: 100% !important;
+    height: auto !important;
+  }
+
+  .onePlatformEvery {
+    font-size: clamp(30px, 8vw, 40px) !important;
+    line-height: 1.2 !important;
+    text-align: center !important;
+  }
+
+  .neurolxpConnectsYour {
+    width: 100% !important;
+    height: auto !important;
+    font-size: clamp(18px, 5vw, 22px) !important;
+    line-height: 1.45 !important;
+    text-align: center !important;
+  }
+
+  .frameParent7 {
+    width: 100% !important;
+    height: auto !important;
+    display: block !important;
+  }
+
+  .frameChild6 {
+    display: none !important;
+  }
+
+  .frameParent8 {
+    width: 100% !important;
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 24px !important;
+  }
+
+  .frameWrapper2 {
+    width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+    padding: 24px 18px !important;
+    gap: 22px !important;
+  }
+
+  .stakeholderCardContent {
+    gap: 12px !important;
+  }
+
+  .stakeholderChallenge {
+    font-size: 16px !important;
+    line-height: 24px !important;
+  }
+
+  .stakeholderCardTitle {
+    font-size: 24px !important;
+    line-height: 32px !important;
+  }
+
+  .stakeholderCardDescription {
+    font-size: 17px !important;
+    line-height: 26px !important;
+  }
+
+  .stakeholderHelpBox {
+    height: auto !important;
+    min-height: 100px !important;
+  }
+
+  .stakeholderHelpTitle,
+  .stakeholderHelpText {
+    font-size: 16px !important;
+  }
+
+  .frameParent13 {
+    position: relative !important;
+    top: auto !important;
+    left: auto !important;
+    width: 100% !important;
+    height: auto !important;
+    margin: 56px auto 0 !important;
+    transform: none !important;
+    gap: 32px !important;
+  }
+
+  .frameParent14,
+  .benefitsOfExtendedEnterprisParent {
+    width: 100% !important;
+    height: auto !important;
+    gap: 22px !important;
+  }
+
+  .frameChild15 {
+    width: 150px !important;
+  }
+
+  .benefitsOfExtendedContainer {
+    width: 100% !important;
+    height: auto !important;
+    font-size: clamp(30px, 8vw, 40px) !important;
+    line-height: 1.2 !important;
+  }
+
+  .benefitsOfExtended,
+  .enterpriseLearning {
+    line-height: inherit !important;
+  }
+
+  .aUnifiedLearning {
+    width: 100% !important;
+    height: auto !important;
+    font-size: clamp(18px, 5vw, 22px) !important;
+    line-height: 1.45 !important;
+  }
+
+  .frameParent15 {
+    width: 100% !important;
+    flex-direction: column !important;
+    gap: 28px !important;
+  }
+
+  .frameParent16,
+  .frameParent20 {
+    width: 100% !important;
+    gap: 24px !important;
+  }
+
+  .frameParent17,
+  .frameParent18,
+  .frameParent19,
+  .frameParent22 {
+    width: 100% !important;
+    align-items: flex-start !important;
+    gap: 16px !important;
+  }
+
+  .consistentTrainingParent,
+  .betterProductKnowledgeParent {
+    width: calc(100% - 86px) !important;
+  }
+
+  .consistentTraining,
+  .complianceTracking,
+  .globalScale {
+    width: 100% !important;
+    height: auto !important;
+    font-size: 22px !important;
+    line-height: 30px !important;
+  }
+
+  .standardizeLearningAcross,
+  .deliverConsistentCustomer,
+  .monitorCertificationsAnd,
+  .improveProductUnderstanding {
+    width: 100% !important;
+    height: auto !important;
+    font-size: 17px !important;
+    line-height: 26px !important;
+  }
+
+  .frameParent23 {
+    position: relative !important;
+    top: auto !important;
+    left: auto !important;
+    width: 100% !important;
+    height: auto !important;
+    min-height: 760px !important;
+    margin: 56px auto 0 !important;
+    transform: none !important;
+    overflow: hidden !important;
+  }
+
+  .frameParent24 {
+    position: relative !important;
+    top: auto !important;
+    left: auto !important;
+    width: 100% !important;
+    height: auto !important;
+    min-height: 360px !important;
+    padding: 32px 20px 24px !important;
+    box-sizing: border-box !important;
+    z-index: 3 !important;
+  }
+
+  .empowerYourExtendedEnterpriParent {
+    width: 100% !important;
+    gap: 18px !important;
+  }
+
+  .empowerYourExtended {
+    width: 100% !important;
+    font-size: clamp(32px, 9vw, 44px) !important;
+    line-height: 1.2 !important;
+  }
+
+  .neurolxpConnectsTrains {
+    width: 100% !important;
+    font-size: clamp(18px, 5vw, 22px) !important;
+    line-height: 1.45 !important;
+  }
+
+  .frameWrapper10 {
+    margin-top: 24px !important;
+  }
+
+  .empowerImageWrapper {
+    position: relative !important;
+    top: auto !important;
+    right: auto !important;
+    width: 100% !important;
+    height: 320px !important;
+    border-radius: 80px 0 0 80px !important;
+    margin-top: 0 !important;
+  }
+
+  .departmentMeeting1Icon {
+    width: 100% !important;
+    height: 100% !important;
+  }
+
+  .frameParent25 {
+    position: relative !important;
+    bottom: auto !important;
+    left: auto !important;
+    width: 100% !important;
+    height: auto !important;
+    margin-top: 56px !important;
+  }
+
+  .frameParent26,
+  .frameWrapper11 {
+    width: 100% !important;
+    left: auto !important;
+  }
+}
+
+@media (max-width: 425px) {
+  .extendedEnterpriseLearning {
+    padding-left: 12px !important;
+    padding-right: 12px !important;
+  }
+
+  .vectorParent {
+    min-height: 650px !important;
+  }
+
+  .groupChild {
+    width: 900px !important;
+    height: 650px !important;
+  }
+
+  .frameParent2 {
+    min-height: 610px !important;
+    padding-left: 4px !important;
+    padding-right: 4px !important;
+  }
+
+  .frameIcon {
+    font-size: 16px !important;
+  }
+
+  .frameChild2,
+  .frameChild4 {
+    width: 100% !important;
+  }
+
+  .frameWrapper2 {
+    padding: 20px 16px !important;
+  }
+
+  .stakeholderCardTitle {
+    font-size: 22px !important;
+    line-height: 30px !important;
+  }
+
+  .frameParent23 {
+    min-height: 720px !important;
+  }
+
+  .empowerImageWrapper {
+    height: 280px !important;
+  }
+
+  .frameChild16 {
+    width: 60px !important;
+    height: 60px !important;
+    flex: 0 0 60px !important;
+  }
+
+  .benefitIconInner {
+    width: 44px !important;
+    height: 44px !important;
+  }
+
+  .benefitIconImage {
+    width: 30px !important;
+    height: 30px !important;
+  }
+}
+
+@media (max-width: 360px) {
+  .extendedEnterpriseLearning {
+    padding-left: 8px !important;
+    padding-right: 8px !important;
+  }
+
+  .extendLearningBeyond {
+    font-size: 28px !important;
+  }
+
+  .onePlatformEvery,
+  .benefitsOfExtendedContainer {
+    font-size: 28px !important;
+  }
+
+  .empowerYourExtended {
+    font-size: 32px !important;
+  }
+
+  .stakeholderCardDescription,
+  .stakeholderHelpText,
+  .standardizeLearningAcross,
+  .deliverConsistentCustomer,
+  .monitorCertificationsAnd,
+  .improveProductUnderstanding {
+    font-size: 16px !important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+.extendedEnterpriseLearning {
+    min-height: 4050px !important;
+  }
+
+  .extendedEnterpriseLearning > .frameParent13 {
+    top: 2368px !important;
+    left: 50% !important;
+    width: calc(100% - 96px) !important;
+    max-width: 1120px !important;
+    height: auto !important;
+    min-height: 650px !important;
+    padding: 0 24px 32px !important;
+    margin: 0 !important;
+    box-sizing: border-box !important;
+    transform: translateX(-50%) !important;
+    overflow: visible !important;
+  }
+
+  .frameParent13 .frameParent14,
+  .frameParent13 .benefitsOfExtendedEnterprisParent {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    box-sizing: border-box !important;
+  }
+
+  .frameParent13 .benefitsOfExtendedContainer,
+  .frameParent13 .aUnifiedLearning {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    box-sizing: border-box !important;
+    overflow-wrap: break-word !important;
+  }
+
+  .frameParent13 .frameParent15 {
+    width: 100% !important;
+    max-width: 100% !important;
+    display: flex !important;
+    align-items: flex-start !important;
+    justify-content: space-between !important;
+    gap: 48px !important;
+    box-sizing: border-box !important;
+  }
+
+  .frameParent13 .frameParent16,
+  .frameParent13 .frameParent20 {
+    width: calc(50% - 24px) !important;
+    max-width: calc(50% - 24px) !important;
+    min-width: 0 !important;
+    flex: 0 1 calc(50% - 24px) !important;
+    box-sizing: border-box !important;
+  }
+
+  .frameParent13 .frameParent17,
+  .frameParent13 .frameParent18,
+  .frameParent13 .frameParent19,
+  .frameParent13 .frameParent22 {
+    width: 100% !important;
+    min-width: 0 !important;
+    box-sizing: border-box !important;
+  }
+
+  .frameParent13 .consistentTrainingParent,
+  .frameParent13 .betterProductKnowledgeParent {
+    width: calc(100% - 94px) !important;
+    max-width: calc(100% - 94px) !important;
+    min-width: 0 !important;
+  }
+
+  .frameParent13 .standardizeLearningAcross,
+  .frameParent13 .deliverConsistentCustomer,
+  .frameParent13 .monitorCertificationsAnd,
+  .frameParent13 .improveProductUnderstanding {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    min-width: 0 !important;
+    overflow-wrap: break-word !important;
+  }
+
+  .extendedEnterpriseLearning > .frameParent23 {
+    top: 3150px !important;
+    left: 50% !important;
+    width: calc(100% - 96px) !important;
+    max-width: 1120px !important;
+    height: 468px !important;
+    margin: 0 !important;
+    box-sizing: border-box !important;
+    transform: translateX(-50%) !important;
+    overflow: hidden !important;
+  }
+
+  .frameParent23 .frameParent24 {
+    top: 50px !important;
+    left: 40px !important;
+    width: calc(52% - 60px) !important;
+    max-width: 560px !important;
+    height: 368px !important;
+    box-sizing: border-box !important;
+  }
+
+  .frameParent23 .empowerYourExtendedEnterpriParent,
+  .frameParent23 .empowerYourExtended,
+  .frameParent23 .neurolxpConnectsTrains {
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+    overflow-wrap: break-word !important;
+  }
+
+  .frameParent23 .empowerImageWrapper {
+    top: 0 !important;
+    right: 0 !important;
+    width: 46% !important;
+    max-width: 520px !important;
+    height: 468px !important;
+    overflow: hidden !important;
+  }
+
+  .frameParent23 .departmentMeeting1Icon {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+  }
+
+.extendedEnterpriseLearning {
+    height: auto !important;
+    min-height: 0 !important;
+    padding-bottom: 48px !important;
+  }
+
+  .extendedEnterpriseLearning > .frameParent23 {
+    margin-bottom: 0 !important;
+  }
+
+  .extendedEnterpriseLearning > .frameParent25 {
+    position: relative !important;
+    top: auto !important;
+    bottom: auto !important;
+    left: auto !important;
+    width: 100% !important;
+    margin: 64px auto 0 !important;
+  }
+
+.extendedEnterpriseLearning > .frameDiv {
+    margin-bottom: 24px !important;
+  }
+
+  .extendedEnterpriseLearning > .vectorParent {
+    margin-bottom: 48px !important;
+  }
+
+  .extendedEnterpriseLearning > .frameParent5,
+  .extendedEnterpriseLearning > .frameParent13,
+  .extendedEnterpriseLearning > .frameParent23,
+  .extendedEnterpriseLearning > .frameParent25 {
+    margin-top: 48px !important;
+  }
+
+  .frameParent6,
+  .frameParent14 {
+    gap: 24px !important;
+  }
+
+  .frameParent3,
+  .extendLearningBeyondYourWoParent,
+  .benefitsOfExtendedEnterprisParent,
+  .empowerYourExtendedEnterpriParent {
+    gap: 12px !important;
+  }
+
+  .frameParent4 {
+    gap: 16px !important;
+  }
+
+  .frameParent8,
+  .frameParent15,
+  .frameParent16,
+  .frameParent20 {
+    gap: 24px !important;
+  }
+
+  .frameParent17,
+  .frameParent18,
+  .frameParent19,
+  .frameParent22 {
+    gap: 16px !important;
+  }
+
+  .consistentTrainingParent,
+  .betterProductKnowledgeParent,
+  .stakeholderCardContent {
+    gap: 8px !important;
+  }
+
+  .frameWrapper10 {
+    margin-top: 24px !important;
+  }
+
+.extendedEnterpriseLearning {
+    height: 3750px !important;
+    min-height: 3750px !important;
+    background-color: #dfe6e9 !important;
+    padding-bottom: 0 !important;
+    overflow-x: hidden !important;
+    overflow-y: hidden !important;
+  }
+
+  .extendedEnterpriseLearning > .vectorParent,
+  .extendedEnterpriseLearning > .frameParent5,
+  .extendedEnterpriseLearning > .frameParent13,
+  .extendedEnterpriseLearning > .frameParent23 {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+  }
+
+  .extendedEnterpriseLearning > .vectorParent {
+    background-color: #dfe6e9 !important;
+  }
+
+  .extendedEnterpriseLearning > .frameParent25 {
+    margin-top: 0 !important;
+  }
+
+.extendedEnterpriseLearning > .frameParent13 {
+    top: 2250px !important;
+    min-height: 610px !important;
+    padding-bottom: 16px !important;
+  }
+
+  .extendedEnterpriseLearning > .frameParent23 {
+    top: 2920px !important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 900px) {
+  .extendedEnterpriseLearning > .frameParent13,
+  .extendedEnterpriseLearning > .frameParent23 {
+    width: calc(100% - 64px) !important;
+  }
+
+  .frameParent13 .frameParent15 {
+    gap: 32px !important;
+  }
+
+  .frameParent13 .frameParent16,
+  .frameParent13 .frameParent20 {
+    width: calc(50% - 16px) !important;
+    max-width: calc(50% - 16px) !important;
+    flex-basis: calc(50% - 16px) !important;
+  }
+
+  .frameParent23 .frameParent24 {
+    left: 28px !important;
+    width: calc(54% - 42px) !important;
+  }
+
+  .frameParent23 .empowerImageWrapper {
+    width: 44% !important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+.extendedEnterpriseLearning {
+    min-height: 4200px !important;
+    overflow-x: hidden !important;
+  }
+
+  .extendedEnterpriseLearning > .frameParent13 {
+    top: 2368px !important;
+    left: 50% !important;
+    width: calc(100% - 64px) !important;
+    max-width: 960px !important;
+    min-height: 720px !important;
+    height: auto !important;
+    padding: 0 20px 40px !important;
+    transform: translateX(-50%) !important;
+    box-sizing: border-box !important;
+    overflow: visible !important;
+  }
+
+  .frameParent13 .benefitsOfExtendedEnterprisParent {
+    width: 100% !important;
+    height: auto !important;
+    gap: 24px !important;
+  }
+
+  .frameParent13 .benefitsOfExtendedContainer {
+    width: 100% !important;
+    height: auto !important;
+    font-size: 36px !important;
+    line-height: 44px !important;
+    text-align: center !important;
+  }
+
+  .frameParent13 .aUnifiedLearning {
+    width: 100% !important;
+    height: auto !important;
+    font-size: 22px !important;
+    line-height: 32px !important;
+    text-align: center !important;
+  }
+
+  .frameParent13 .frameParent15 {
+    width: 100% !important;
+    display: grid !important;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) !important;
+    column-gap: 28px !important;
+    row-gap: 0 !important;
+    align-items: start !important;
+  }
+
+  .frameParent13 .frameParent16,
+  .frameParent13 .frameParent20 {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+    gap: 26px !important;
+  }
+
+  .frameParent13 .frameParent17,
+  .frameParent13 .frameParent18,
+  .frameParent13 .frameParent19,
+  .frameParent13 .frameParent22 {
+    width: 100% !important;
+    min-width: 0 !important;
+    gap: 14px !important;
+    align-items: flex-start !important;
+  }
+
+  .frameParent13 .frameChild16 {
+    width: 62px !important;
+    height: 62px !important;
+    flex: 0 0 62px !important;
+  }
+
+  .frameParent13 .benefitIconInner {
+    width: 46px !important;
+    height: 46px !important;
+  }
+
+  .frameParent13 .benefitIconImage {
+    width: 30px !important;
+    height: 30px !important;
+  }
+
+  .frameParent13 .consistentTrainingParent,
+  .frameParent13 .betterProductKnowledgeParent {
+    width: calc(100% - 76px) !important;
+    max-width: calc(100% - 76px) !important;
+    min-width: 0 !important;
+    gap: 8px !important;
+  }
+
+  .frameParent13 .consistentTraining,
+  .frameParent13 .complianceTracking,
+  .frameParent13 .globalScale {
+    width: 100% !important;
+    height: auto !important;
+    font-size: 22px !important;
+    line-height: 30px !important;
+    overflow-wrap: break-word !important;
+  }
+
+  .frameParent13 .standardizeLearningAcross,
+  .frameParent13 .deliverConsistentCustomer,
+  .frameParent13 .monitorCertificationsAnd,
+  .frameParent13 .improveProductUnderstanding {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    font-size: 17px !important;
+    line-height: 26px !important;
+    overflow-wrap: break-word !important;
+  }
+
+  .extendedEnterpriseLearning > .frameParent23 {
+    top: 3220px !important;
+    left: 50% !important;
+    width: calc(100% - 64px) !important;
+    max-width: 960px !important;
+    height: 460px !important;
+    transform: translateX(-50%) !important;
+    box-sizing: border-box !important;
+    overflow: hidden !important;
+  }
+
+  .frameParent23 .frameParent24 {
+    top: 44px !important;
+    left: 28px !important;
+    width: calc(52% - 42px) !important;
+    max-width: none !important;
+    height: 372px !important;
+    box-sizing: border-box !important;
+  }
+
+  .frameParent23 .empowerYourExtendedEnterpriParent {
+    width: 100% !important;
+    gap: 18px !important;
+  }
+
+  .frameParent23 .empowerYourExtended {
+    width: 100% !important;
+    max-width: 100% !important;
+    font-size: 38px !important;
+    line-height: 1.15 !important;
+    overflow-wrap: break-word !important;
+  }
+
+  .frameParent23 .neurolxpConnectsTrains {
+    width: 100% !important;
+    max-width: 100% !important;
+    font-size: 20px !important;
+    line-height: 30px !important;
+    overflow-wrap: break-word !important;
+  }
+
+  .frameParent23 .frameWrapper10 {
+    width: 200px !important;
+    height: 56px !important;
+  }
+
+  .frameParent23 .frameChild21 {
+    height: 56px !important;
+    font-size: 18px !important;
+  }
+
+  .frameParent23 .empowerImageWrapper {
+    top: 0 !important;
+    right: 0 !important;
+    width: 46% !important;
+    height: 460px !important;
+    border-radius: 90px 0 0 90px !important;
+    overflow: hidden !important;
+  }
+
+  .frameParent23 .departmentMeeting1Icon {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+  }
+
+.extendedEnterpriseLearning {
+    height: auto !important;
+    min-height: 0 !important;
+    padding-bottom: 48px !important;
+  }
+
+  .extendedEnterpriseLearning > .frameParent23 {
+    margin-bottom: 0 !important;
+  }
+
+  .extendedEnterpriseLearning > .frameParent25 {
+    position: relative !important;
+    top: auto !important;
+    bottom: auto !important;
+    left: auto !important;
+    width: 100% !important;
+    margin: 64px auto 0 !important;
+  }
+
+.extendedEnterpriseLearning > .frameDiv {
+    margin-bottom: 24px !important;
+  }
+
+  .extendedEnterpriseLearning > .vectorParent {
+    margin-bottom: 48px !important;
+  }
+
+  .extendedEnterpriseLearning > .frameParent5,
+  .extendedEnterpriseLearning > .frameParent13,
+  .extendedEnterpriseLearning > .frameParent23,
+  .extendedEnterpriseLearning > .frameParent25 {
+    margin-top: 48px !important;
+  }
+
+  .frameParent6,
+  .frameParent14 {
+    gap: 24px !important;
+  }
+
+  .frameParent3,
+  .extendLearningBeyondYourWoParent,
+  .benefitsOfExtendedEnterprisParent,
+  .empowerYourExtendedEnterpriParent {
+    gap: 12px !important;
+  }
+
+  .frameParent4 {
+    gap: 16px !important;
+  }
+
+  .frameParent8,
+  .frameParent15,
+  .frameParent16,
+  .frameParent20 {
+    gap: 24px !important;
+  }
+
+  .frameParent17,
+  .frameParent18,
+  .frameParent19,
+  .frameParent22 {
+    gap: 16px !important;
+  }
+
+  .consistentTrainingParent,
+  .betterProductKnowledgeParent,
+  .stakeholderCardContent {
+    gap: 8px !important;
+  }
+
+  .frameWrapper10 {
+    margin-top: 24px !important;
+  }
+
+.extendedEnterpriseLearning {
+    height: 3750px !important;
+    min-height: 3750px !important;
+    background-color: #dfe6e9 !important;
+    padding-bottom: 0 !important;
+    overflow-x: hidden !important;
+    overflow-y: hidden !important;
+  }
+
+  .extendedEnterpriseLearning > .vectorParent,
+  .extendedEnterpriseLearning > .frameParent5,
+  .extendedEnterpriseLearning > .frameParent13,
+  .extendedEnterpriseLearning > .frameParent23 {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+  }
+
+  .extendedEnterpriseLearning > .vectorParent {
+    background-color: #dfe6e9 !important;
+  }
+
+  .extendedEnterpriseLearning > .frameParent25 {
+    margin-top: 0 !important;
+  }
+
+.extendedEnterpriseLearning {
+    height: 3728px !important;
+    min-height: 3728px !important;
+  }
+
+.extendedEnterpriseLearning > .frameParent13 {
+    top: 2250px !important;
+    min-height: 610px !important;
+    padding-bottom: 16px !important;
+  }
+
+  .extendedEnterpriseLearning > .frameParent23 {
+    top: 2920px !important;
+  }
+
+.extendedEnterpriseLearning > .frameParent13 {
+    top: 2250px !important;
+    min-height: 610px !important;
+    padding-bottom: 16px !important;
+  }
+
+  .extendedEnterpriseLearning > .frameParent23 {
+    top: 2920px !important;
+  }
+
+.extendedEnterpriseLearning > .frameParent13 {
+    top: 2290px !important;
+    min-height: 700px !important;
+    height: 700px !important;
+    padding-bottom: 20px !important;
+    overflow: visible !important;
+  }
+
+  .extendedEnterpriseLearning > .frameParent23 {
+    top: 3038px !important;
+  }
+
+  .extendedEnterpriseLearning {
+    height: 3560px !important;
+    min-height: 3560px !important;
+  }
+}
+
+/* =========================================================
+   FINAL RESPONSIVE BREADCRUMB ONLY
+   Changes only the breadcrumb.
+   All other layout, design, colours, shadows, typography,
+   animations and effects remain unchanged.
+   ========================================================= */
+
+@media (max-width: 1199px) {
+  .extendedEnterpriseLearning > .frameDiv {
+    position: relative !important;
+    top: auto !important;
+    left: auto !important;
+    right: auto !important;
+
+    width: min(100%, 1280px) !important;
+    max-width: 100% !important;
+
+    margin: 20px auto 24px !important;
+    padding: 0 clamp(4px, 1.5vw, 16px) !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+    flex-wrap: wrap !important;
+
+    column-gap: 8px !important;
+    row-gap: 6px !important;
+
+    white-space: normal !important;
+    overflow: visible !important;
+
+    box-sizing: border-box !important;
+  }
+
+  .extendedEnterpriseLearning > .frameDiv .resourcesWrapper,
+  .extendedEnterpriseLearning > .frameDiv .arrowRightDoubleGroup {
+    min-width: 0 !important;
+    max-width: 100% !important;
+
+    display: flex !important;
+    align-items: center !important;
+    flex-wrap: wrap !important;
+
+    gap: 8px !important;
+
+    white-space: normal !important;
+    flex-shrink: 1 !important;
+  }
+
+  .extendedEnterpriseLearning > .frameDiv .useCases {
+    max-width: 100% !important;
+
+    line-height: 24px !important;
+
+    white-space: normal !important;
+    overflow-wrap: break-word !important;
+    word-break: normal !important;
+  }
+}
+
+/* Narrow widths:
+   keep each breadcrumb segment readable instead of forcing
+   horizontal scrolling or clipping. */
+@media (max-width: 767px) {
+  .extendedEnterpriseLearning > .frameDiv {
+    width: 100% !important;
+
+    margin: 16px auto 20px !important;
+    padding: 0 4px !important;
+
+    column-gap: 6px !important;
+    row-gap: 6px !important;
+
+    font-size: 14px !important;
+    line-height: 22px !important;
+  }
+
+  .extendedEnterpriseLearning > .frameDiv .resourcesWrapper,
+  .extendedEnterpriseLearning > .frameDiv .arrowRightDoubleGroup {
+    gap: 6px !important;
+  }
+
+  .extendedEnterpriseLearning > .frameDiv .useCases {
+    line-height: 22px !important;
+  }
+}
+
+/* =========================================================
+   STAKEHOLDER CHALLENGE CARDS — DESKTOP/TABLET LAYOUT FIX
+   Only this section is changed.
+   Keeps challenge content on the left and
+   "HOW NEUROLXP HELPS" box on the right.
+   ========================================================= */
+
+@media (min-width: 768px) {
+  .frameWrapper2 {
+    width: 100% !important;
+    height: 230px !important;
+    min-height: 230px !important;
+
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+
+    gap: 24px !important;
+    padding: 24px 32px !important;
+    box-sizing: border-box !important;
+  }
+
+  .stakeholderCardContent {
+    width: auto !important;
+    min-width: 0 !important;
+    flex: 1 1 auto !important;
+
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    justify-content: center !important;
+
+    gap: 8px !important;
+  }
+
+  .stakeholderCardDescription {
+    width: 100% !important;
+    max-width: 620px !important;
+    height: auto !important;
+  }
+
+  .stakeholderHelpBox {
+    width: 36% !important;
+    min-width: 300px !important;
+    max-width: 390px !important;
+    height: auto !important;
+    min-height: 118px !important;
+
+    flex: 0 0 36% !important;
+
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    justify-content: center !important;
+
+    gap: 6px !important;
+    padding: 14px 18px !important;
+    box-sizing: border-box !important;
+  }
+
+  .stakeholderHelpTitle,
+  .stakeholderHelpText {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+  }
+}
+
+/* Keep the same side-by-side composition on medium screens,
+   while allowing the right panel to shrink proportionally. */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .frameWrapper2 {
+    gap: 20px !important;
+    padding: 22px 24px !important;
+  }
+
+  .stakeholderHelpBox {
+    width: 38% !important;
+    min-width: 260px !important;
+    max-width: 340px !important;
+    min-height: 112px !important;
+    flex-basis: 38% !important;
+  }
+}
+
+
+/* =========================================================
+   FINAL STAKEHOLDER SECTION SPACING + TYPOGRAPHY
+   Only the "One Platform: Every Stakeholder" section.
+   Desktop: H = 36px, P = 24px
+   Mobile:  H = 24px, P = 16px
+   ========================================================= */
+
+@media (min-width: 768px) {
+  .extendedEnterpriseLearning > .frameParent5 {
+    gap: 24px !important;
+  }
+
+  .frameParent5 .frameParent6 {
+    height: auto !important;
+    min-height: 0 !important;
+    gap: 12px !important;
+  }
+
+  .frameParent5 .frameWrapper,
+  .frameParent5 .onePlatformEveryStakeholdeWrapper,
+  .frameParent5 .onePlatformEvery,
+  .frameParent5 .neurolxpConnectsYour {
+    height: auto !important;
+    min-height: 0 !important;
+  }
+
+  .frameParent5 .onePlatformEveryStakeholdeWrapper {
+    padding: 0 !important;
+  }
+
+  .frameParent5 .onePlatformEvery {
+    font-size: 36px !important;
+    line-height: 44px !important;
+  }
+
+  .frameParent5 .neurolxpConnectsYour {
+    font-size: 24px !important;
+    line-height: 34px !important;
+  }
+
+  .frameParent5 .frameParent7 {
+    height: 992px !important;
+    min-height: 992px !important;
+    gap: 24px !important;
+    align-items: flex-start !important;
+  }
+
+  .frameParent5 .frameChild6 {
+    height: 992px !important;
+  }
+
+  .frameParent5 .stakeholderTimelineRail {
+    top: 35px !important;
+    height: 922px !important;
+  }
+
+  .frameParent5 .stakeholderTimelineNode1 { top: 20px !important; }
+  .frameParent5 .stakeholderTimelineNode2 { top: 274px !important; }
+  .frameParent5 .stakeholderTimelineNode3 { top: 528px !important; }
+  .frameParent5 .stakeholderTimelineNode4 { top: 782px !important; }
+
+  .frameParent5 .frameParent8 {
+    gap: 24px !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .frameParent5 .onePlatformEvery {
+    font-size: 24px !important;
+    line-height: 32px !important;
+  }
+
+  .frameParent5 .neurolxpConnectsYour {
+    font-size: 16px !important;
+    line-height: 24px !important;
+  }
+
+  .frameParent5 .frameParent6 {
+    height: auto !important;
+    min-height: 0 !important;
+    gap: 10px !important;
+  }
+
+  .frameParent5 .frameWrapper,
+  .frameParent5 .onePlatformEveryStakeholdeWrapper,
+  .frameParent5 .onePlatformEvery,
+  .frameParent5 .neurolxpConnectsYour {
+    height: auto !important;
+    min-height: 0 !important;
+  }
+
+  .frameParent5 .onePlatformEveryStakeholdeWrapper {
+    padding: 0 !important;
+  }
+}
+
+/* =========================================================
+   FINAL SECTION GAP + RESPONSIVE IMAGE SAFETY
+   Scope:
+   1. Removes only the excess blank space after stakeholder cards.
+   2. Keeps Benefits / CTA cleanly spaced.
+   3. Prevents content images from being cropped as width reduces.
+   No colors, shadows, borders, animations or card designs changed.
+   ========================================================= */
+
+/* ---------------------------------------------------------
+   DESKTOP
+   Stakeholder section:
+   frameParent5 starts at 579px.
+   Its compact content is now ~1100px tall, so Benefits should
+   begin directly after it instead of retaining the old 2290px top.
+   --------------------------------------------------------- */
+@media (min-width: 1200px) {
+  .extendedEnterpriseLearning > .frameParent13 {
+    top: 1740px !important;
+    height: auto !important;
+    min-height: 650px !important;
+    padding-bottom: 20px !important;
+    overflow: visible !important;
+  }
+
+  .extendedEnterpriseLearning > .frameParent23 {
+    top: 2450px !important;
+  }
+
+  .extendedEnterpriseLearning {
+    height: 2980px !important;
+    min-height: 2980px !important;
+    overflow-x: hidden !important;
+    overflow-y: visible !important;
+  }
+}
+
+
+/* ---------------------------------------------------------
+   TABLET / REDUCED DESKTOP WIDTH
+   Keep the same section order but remove the old oversized
+   absolute gaps.
+   --------------------------------------------------------- */
+@media (min-width: 768px) and (max-width: 1199px) {
+  .extendedEnterpriseLearning > .frameParent13 {
+    top: 1740px !important;
+    height: auto !important;
+    min-height: 700px !important;
+    padding-bottom: 24px !important;
+    overflow: visible !important;
+  }
+
+  .extendedEnterpriseLearning > .frameParent23 {
+    top: 2500px !important;
+  }
+
+  .extendedEnterpriseLearning {
+    min-height: 3050px !important;
+    height: 3050px !important;
+    overflow-x: hidden !important;
+    overflow-y: visible !important;
+  }
+
+  /* Do not crop the CTA image as its container narrows. */
+  .frameParent23 .empowerImageWrapper {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    overflow: hidden !important;
+    background: #dfe6e9 !important;
+  }
+
+  .frameParent23 .departmentMeeting1Icon {
+    width: 100% !important;
+    height: 100% !important;
+
+    object-fit: contain !important;
+    object-position: center center !important;
+  }
+
+  /* Logos also scale without clipping. */
+  .logo01SynapseSpark1Icon,
+  .logo01SynapseSpark1Icon2 {
+    max-width: 100% !important;
+    object-fit: contain !important;
+  }
+}
+
+
+/* ---------------------------------------------------------
+   MOBILE
+   Sections already use natural document flow in the existing
+   CSS. Only tighten the section-to-section rhythm and protect
+   images from cropping.
+   --------------------------------------------------------- */
+@media (max-width: 767px) {
+  .extendedEnterpriseLearning > .frameParent5 {
+    margin-top: 40px !important;
+  }
+
+  .extendedEnterpriseLearning > .frameParent13 {
+    margin-top: 40px !important;
+  }
+
+  .extendedEnterpriseLearning > .frameParent23 {
+    margin-top: 40px !important;
+  }
+
+  .extendedEnterpriseLearning > .frameParent25 {
+    margin-top: 40px !important;
+  }
+
+  .frameParent23 .empowerImageWrapper {
+    width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+    aspect-ratio: 633 / 468 !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    overflow: hidden !important;
+    background: #dfe6e9 !important;
+  }
+
+  .frameParent23 .departmentMeeting1Icon {
+    width: 100% !important;
+    height: 100% !important;
+
+    object-fit: contain !important;
+    object-position: center center !important;
+  }
+
+  .logo01SynapseSpark1Icon,
+  .logo01SynapseSpark1Icon2 {
+    max-width: 100% !important;
+    height: auto !important;
+    object-fit: contain !important;
+  }
+}
+
+
+/* ---------------------------------------------------------
+   GLOBAL IMAGE SAFETY FOR THIS PAGE
+   Preserve intrinsic image proportions. Icon classes are not
+   included, so their existing visual design is untouched.
+   --------------------------------------------------------- */
+.extendedEnterpriseLearning .departmentMeeting1Icon,
+.extendedEnterpriseLearning .logo01SynapseSpark1Icon,
+.extendedEnterpriseLearning .logo01SynapseSpark1Icon2 {
+  max-width: 100%;
+}
+
+/* Book a Demo - smooth hover in / hover out */
+.bookADemoButton {
+  cursor: pointer;
+
+  transition:
+    transform 0.28s ease,
+    box-shadow 0.28s ease;
+}
+
+/* Hover IN */
+.bookADemoButton:hover {
+  transform: translateY(-4px) scale(1.03);
+
+  box-shadow:
+    -10px -10px 20px rgba(255, 255, 255, 0.95),
+    10px 10px 20px rgba(198, 198, 201, 0.9);
+}
+
+/* Click */
+.bookADemoButton:active {
+  transform: translateY(0) scale(0.98);
+
+  box-shadow:
+    inset -4px -4px 8px rgba(255, 255, 255, 0.9),
+    inset 4px 4px 8px rgba(198, 198, 201, 0.8);
+}

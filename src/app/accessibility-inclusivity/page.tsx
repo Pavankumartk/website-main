@@ -108,7 +108,7 @@ const AccessibilityInclusivity: NextPage = () => {
 						<div className="frameParent12">
 							<div className="frameChild2">Flexible Learning Formats</div>
 							<div className="multipleContentFormatsForFParent">
-								<b className="multipleContentFormats">Multiple Content Formats for Flexible Learning<br /><br /></b>
+								<b className="multipleContentFormats">Multiple Content Formats for Flexible Learning<br /></b>
 								<div className="deliverEngagingLearning">Deliver engaging learning experiences with diverse content formats that suit every learner.</div>
 							</div>
 						</div>
@@ -215,7 +215,7 @@ const AccessibilityInclusivity: NextPage = () => {
 					<div className="frameParent25">
 						<div className="frameParent26">
 							<div className="accessibleLearningForDiversWrapper">
-								<b className="learningDesignedFor">Inclusive Learning Experiences<br /><br /></b>
+								<b className="learningDesignedFor">Inclusive Learning Experiences<br /></b>
 							</div>
 							<div className="designedToMake">Collaborative tools allow learners to share ideas and contribute meaningfully to learning environments.<br /><br /><br /><br /></div>
 						</div>

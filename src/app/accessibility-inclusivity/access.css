@@ -1806,7 +1806,7 @@
 	}
 
 	.frameParent25 {
-		gap: 50px;
+		gap: 35px;
 	}
 
 	.learningAnalytics {
@@ -1971,6 +1971,10 @@
 		align-items: center;
 		text-align: center;
 		gap: 26px;
+	}
+
+	.frameParent13{
+		gap: 26px !important;
 	}
 
 	.frameParent4,
@@ -2618,4 +2622,56 @@
 	.inclusiveItem span {
 		font-size: 18px;
 	}
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1200px) {
+	.frameParent8 {
+		font-size: 20px;
+	}
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1136px) {
+	.accessibilityInclusivity  {
+		font-size: 44px;
+	}
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1240px) {
+	.designedToMake  {
+		font-size: 26px;
+	}
+}
+
+@media screen and (min-width: 1149px) and (max-width: 1240px) {
+  .institutionCardText {
+    font-size: 19px !important;
+  }
+}
+
+@media (max-width: 1024px) {
+  .frameParent26 {
+    gap: 0px !important;
+  }
+  .designedToMake {
+	height: 90px !important;
+  }
+  .multipleContentFormatsForFParent{
+	gap: 0px !important;
+  }
+  .frameParent6{
+	gap: 0px !important;
+  }
+  .frameParent24{
+	gap: 0px !important;
+  }
+  .frameParent25{
+	gap: 0px !important;
+	height: 500px !important;
+  }
+  .deliverEngagingLearning{
+	margin-top: 20px;
+  }
+  .designedToMake{
+	margin: 20px 0px;
+  }
 }

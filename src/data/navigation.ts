@@ -168,11 +168,11 @@ export const navItems: NavItem[] = [
           },
           {
             label: "E-Learning",
-            href: "/e_learning",
+            href: "/E-Learning",
           },
           {
             label: "Training Management",
-            href: "/training_managment",
+            href: "/training-management",
           },
         ],
       },
@@ -235,7 +235,7 @@ export const navItems: NavItem[] = [
         items: [
           {
             label: "Assessments",
-            href: "/assissments",
+            href: "/assessments",
           },
           {
             label: "Analytics & Reporting",
@@ -306,23 +306,23 @@ export const navItems: NavItem[] = [
           },  
           {
             label: "Standards Training",
-            href: "/standard_training",
+            href: "/standards-training",
           },
           {
             label: "Extended Enterprise",
-            href: "/extendedenterprise_learning",
+            href: "/extended-enterprise",
           },
         ],
       },
 
       {
         label: "Media Presence",
-        href: "/media_presence",
+        href: "/media-presence",
       },
 
       {
-        label: "White Papers",
-        href: "#",
+        label: "White Paper",
+        href: "/white-papers",
       },
 
       {

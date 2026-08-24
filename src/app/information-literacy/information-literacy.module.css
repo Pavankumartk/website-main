@@ -2,7 +2,7 @@
   width: 100%;
   background-color: #dfe6e9;
   color: #31344b;
-  font-family: "Segoe UI",;
+  font-family: "Segoe UI", sans-serif;
   overflow-x: hidden;
   display: flex;
   flex-direction: column;
@@ -748,7 +748,7 @@
   width: calc(100% - 24px);
   max-width: 620px;
   margin: 0 auto;
-  font-family: "Segoe UI",;
+  font-family: "Segoe UI", sans-serif;
 }
 
 .statsPanelShape {
@@ -1000,7 +1000,7 @@
 .thinkingCardTitle {
   width: 130px;
   margin: 0 0 12px;
-  font-family: "Segoe UI",;
+  font-family: "Segoe UI", sans-serif;
   font-weight: 600;
   font-size: 20px;
   line-height: 1.25;
@@ -1012,7 +1012,7 @@
 .evidenceBasedTitle {
   width: 180px;
   margin: 0 0 12px;
-  font-family: "Segoe UI",;
+  font-family: "Segoe UI", sans-serif;
   font-weight: 600;
   font-size: 20px;
   line-height: 1.25;
@@ -1024,7 +1024,7 @@
 .thinkingCardDesc {
   width: 84%;
   margin: 0;
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 1.35;

@@ -7,6 +7,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { navItems, type NestedCategory, type PromoCard, type SimpleLink } from "../../data/navigation";
 import { ChevronDownIcon, ChevronUpIcon, ChevronRightIcon } from "../icons/Icons";
+import Assistant from "../Assistant/AssistantPopup";
 import './header.css';
 
 type PanelColumn = {
@@ -134,6 +135,7 @@ export default function Header() {
   const [activeCustomerCategory, setActiveCustomerCategory] = useState<string | null>(null);
   const [activeFeatureCategory, setActiveFeatureCategory] = useState<string | null>(null);
   const [activeResourceCategory, setActiveResourceCategory] = useState<string | null>(null);
+  const [isAssistantOpen, setIsAssistantOpen] = useState(false);
   const headerRef = useRef<HTMLElement>(null);
   const triggerRefs = useRef<Record<string, HTMLButtonElement | null>>({});
   const pathname = usePathname();
@@ -210,6 +212,7 @@ export default function Header() {
       if (event.key === "Escape") {
         setOpenMenu(null);
         setMobileOpen(false);
+        setIsAssistantOpen(false);
       }
     }
     document.addEventListener("mousedown", handleClickOutside);
@@ -569,9 +572,13 @@ export default function Header() {
           </nav>
         </div>
 
-        <Link href="/signin" className="nlxp-header-signin">
+        <button
+          type="button"
+          className="nlxp-header-signin"
+          onClick={() => setIsAssistantOpen(true)}
+        >
           Sign in Help
-        </Link>
+        </button>
 
         <button
           type="button"
@@ -733,16 +740,81 @@ export default function Header() {
           </Link>
 
           <div className="nlxp-header-mobile-signin-row">
-            <Link
-              href="/signin"
+            <button
+              type="button"
               className="nlxp-header-mobile-signin"
-              onClick={() => setMobileOpen(false)}
+              onClick={() => {
+                setMobileOpen(false);
+                setIsAssistantOpen(true);
+              }}
             >
               Sign in help
-            </Link>
+            </button>
           </div>
         </div>
       )}
+
+      {isAssistantOpen &&
+        createPortal(
+          <div
+            role="presentation"
+            onMouseDown={(event) => {
+              if (event.target === event.currentTarget) {
+                setIsAssistantOpen(false);
+              }
+            }}
+            style={{
+              position: "fixed",
+              inset: 0,
+              zIndex: 999999,
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              padding: "16px",
+              background: "rgba(0, 0, 0, 0.35)",
+              overflowY: "auto",
+            }}
+          >
+            <div
+              role="dialog"
+              aria-modal="true"
+              aria-label="NeuroLXP Assistant"
+              style={{
+                position: "relative",
+                width: "min(100%, 520px)",
+                maxHeight: "calc(100vh - 32px)",
+              }}
+            >
+              <button
+                type="button"
+                onClick={() => setIsAssistantOpen(false)}
+                aria-label="Close assistant"
+                style={{
+                  position: "absolute",
+                  top: "12px",
+                  right: "12px",
+                  zIndex: 10,
+                  width: "36px",
+                  height: "36px",
+                  border: 0,
+                  borderRadius: "50%",
+                  background: "#dfe6e9",
+                  boxShadow: "-4px -4px 8px #fff, 4px 4px 8px #c6c6c9",
+                  color: "#31344b",
+                  fontSize: "22px",
+                  lineHeight: 1,
+                  cursor: "pointer",
+                }}
+              >
+                ×
+              </button>
+
+              <Assistant />
+            </div>
+          </div>,
+          document.body
+        )}
+
     </header>
   );
 }
