@@ -1,0 +1,5265 @@
+.interconnectivity,
+.interconnectivity * {
+  font-family: 'Segoe UI';
+}
+
+.interconnectivity {
+  width: 100%;
+  height: 4550px;
+  position: relative;
+  background-color: #dfe6e9;
+  overflow: hidden;
+  text-align: left;
+  font-size: 36px;
+  color: #31344b;
+  font-family: 'Segoe UI';
+  zoom: 0.99;
+}
+
+.frameParent {
+  position: absolute;
+  top: 0px;
+  left: calc(50% - 720px);
+  box-shadow: -8px -8px 16px #fff, 8px 8px 16px #c6c6c9;
+  background-color: #dfe6e9;
+  width: 1440px;
+  height: 80px;
+  overflow: hidden;
+  font-size: 16px;
+  font-family: 'Segoe UI';
+}
+
+.frameChild {
+  position: absolute;
+  top: calc(50% - 22px);
+  left: 1096px;
+  width: 132px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.frameGroup {
+  position: absolute;
+  top: 18px;
+  left: 32px;
+  width: 1376px;
+  height: 45px;
+  flex-shrink: 0;
+}
+
+.logo01SynapseSpark1Parent {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  display: flex;
+  align-items: center;
+  gap: 130px;
+}
+
+.logo01SynapseSpark1Icon {
+  height: 45px;
+  width: 120px;
+  position: relative;
+  object-fit: cover;
+}
+
+.frameContainer {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.homeParent {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.home {
+  position: relative;
+  line-height: 24px;
+  font-weight: 600;
+}
+
+.arrowDown01Icon {
+  height: 16px;
+  width: 40px;
+  position: relative;
+}
+
+.featuresParent {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #2d4cc8;
+}
+
+.features {
+  position: relative;
+  line-height: 24px;
+}
+
+.signInHelpWrapper {
+  position: absolute;
+  top: calc(50% - 22.5px);
+  left: 1244px;
+  box-shadow: -8px -8px 16px #fff, 8px 8px 16px #c6c6c9;
+  border-radius: 32px;
+  background-color: #dfe6e9;
+  width: 132px;
+  height: 44px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px 32px;
+  box-sizing: border-box;
+  text-align: center;
+  color: #2d4cc8;
+  font-family: 'Segoe UI';
+}
+
+.signInHelp {
+  position: relative;
+  letter-spacing: 0.02em;
+  line-height: 28px;
+  font-weight: 600;
+  flex-shrink: 0;
+}
+
+.frameItem {
+  position: absolute;
+  top: 6px;
+  left: 11px;
+  width: 1429px;
+  height: 592.4px;
+  flex-shrink: 0;
+}
+
+.frameInner {
+  position: absolute;
+  top: 76px;
+  left: 4px;
+  width: 1436px;
+  height: 839px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.frameDiv {
+  position: absolute;
+  top: 32px;
+  left: 80px;
+  background-color: #dfe6e9;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 16px;
+  color: #2f3547;
+  font-family: 'Segoe UI';
+}
+
+.featuresWrapper {
+  display: flex;
+  align-items: center;
+}
+
+.addOnModules {
+  position: relative;
+  letter-spacing: 0.02em;
+  line-height: 24px;
+}
+
+.arrowRightDoubleGroup {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #243fa8;
+}
+
+.frameParent2 {
+  position: absolute;
+  top: 88px;
+  left: calc(50% - 640px);
+  box-shadow: -8px -8px 16px #fff, 8px 8px 16px #c4c4c4;
+  border-radius: 24px;
+  background-color: #dfe6e9;
+  width: 1280px;
+  height: 546px;
+  overflow: hidden;
+}
+
+.frameParent3 {
+  position: absolute;
+  top: calc(50% - 183px);
+  left: 50px;
+  width: 524px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 50px;
+}
+
+.frameParent4 {
+  width: 583px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  flex-shrink: 0;
+}
+
+.frameParent5 {
+  width: 489px;
+  height: 164px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+.frameIcon {
+  width: 387.77px;
+  height: 50px;
+  position: relative;
+  border-radius: 28px;
+  background-color: #dfe6e9;
+  box-shadow: -6px -6px 12px #fff inset, 6px 6px 12px rgba(196, 196, 196, 0.8) inset;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 16px;
+  box-sizing: border-box;
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  line-height: 24px;
+  color: #2d4cc8;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.seamlessInterconnectivityWit {
+  width: 480px;
+  position: relative;
+  letter-spacing: 0.03em;
+  line-height: 50px;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.connectLearnersEducators {
+  width: 510px;
+  position: relative;
+  font-size: 24px;
+  letter-spacing: 0.03em;
+  line-height: 32px;
+  color: #2f3547;
+  display: inline-block;
+}
+
+.frameWrapper {
+  width: 284px;
+  height: 64px;
+  box-shadow: -8px -8px 16px #fff, 8px 8px 16px #c6c6c9;
+  border-radius: 32px;
+  background-color: #dfe6e9;
+  overflow: hidden;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px 32px;
+  box-sizing: border-box;
+  font-size: 22px;
+  color: #2d4cc8;
+}
+
+.bookADemoWrapper {
+  width: 138px;
+  display: flex;
+  align-items: center;
+}
+
+.bookADemo {
+  position: relative;
+  line-height: 30px;
+  flex-shrink: 0;
+}
+
+.ellipseParent {
+  position: absolute;
+  top: calc(50% - 218.5px);
+  left: 705px;
+  width: 437px;
+  height: 437px;
+  color: #2d4cc8;
+}
+
+.ellipseDiv {
+  position: absolute;
+  top: 100px;
+  left: 100px;
+  width: 237px;
+  height: 237px;
+  border-radius: 50%;
+  background-color: #dfe6e9;
+  box-shadow: -8px -8px 16px #fff, 8px 8px 16px #c4c4c4;
+  z-index: 2;
+}
+
+.hierarchySquare06Parent {
+  position: absolute;
+  top: calc(50% - 75px);
+  left: calc(50% - 80.5px);
+  width: 162px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  z-index: 3;
+}
+
+.hierarchySquare06Icon {
+  width: 60px;
+  height: 60px;
+  position: relative;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.neurolxpWrapper {
+  align-self: stretch;
+  display: flex;
+  align-items: flex-start;
+}
+
+.neurolxp {
+  width: 164px;
+  position: relative;
+  letter-spacing: -0.03em;
+  line-height: 40px;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.neurolxpTxt {
+  width: 100%;
+  white-space: pre-wrap;
+}
+
+.neurolxp2 {
+  line-height: 40px;
+}
+
+.span {
+  font-size: 22px;
+  line-height: 40px;
+}
+
+.span2 {
+  font-size: 12px;
+  line-height: 40px;
+}
+
+.smallHierarchyIcon {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 30px;
+  height: 25px;
+  object-fit: contain;
+  offset-path: circle(118.5px at 218.5px 218.5px);
+  offset-distance: 25%;
+  offset-rotate: 0deg;
+  offset-anchor: center;
+  animation: smallHierarchyOrbit 10s linear infinite;
+  z-index: 4;
+}
+
+@keyframes smallHierarchyOrbit {
+  from {
+    offset-distance: 25%;
+  }
+
+  to {
+    offset-distance: 125%;
+  }
+}
+
+.ellipseIcon {
+  position: absolute;
+  top: 51px;
+  left: 51px;
+  width: 336px;
+  height: 336px;
+  box-sizing: border-box;
+  border: 2px dashed #67096e;
+  border-radius: 50%;
+  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+  z-index: 1;
+}
+
+.frameChild2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 437px;
+  height: 437px;
+  box-sizing: border-box;
+  border: 2px dashed #bf1869;
+  border-radius: 50%;
+  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+  z-index: 0;
+}
+
+.frameParent6 {
+  position: absolute;
+  top: 59px;
+  left: 616px;
+  width: 615px;
+  display: flex;
+  align-items: center;
+  gap: 320px;
+  text-align: center;
+  font-size: 16px;
+  color: #bf1869;
+}
+
+.userGroup02Parent {
+  height: 50px;
+  width: 150px;
+  box-shadow: -8px -8px 16px #fff, 8px 8px 16px #c6c6c9;
+  border-radius: 8px;
+  background-color: #dfe6e9;
+  overflow: hidden;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px 32px;
+  box-sizing: border-box;
+  gap: 8px;
+}
+
+.userGroup02Icon {
+  height: 32px;
+  width: 32px;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.learners {
+  position: relative;
+  letter-spacing: 0.02em;
+  line-height: 28px;
+  flex-shrink: 0;
+}
+
+.bankParent {
+  height: 50px;
+  width: 150px;
+  box-shadow: -8px -8px 16px #fff, 8px 8px 16px #c6c6c9;
+  border-radius: 8px;
+  background-color: #dfe6e9;
+  overflow: hidden;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px 32px;
+  box-sizing: border-box;
+  gap: 8px;
+  color: #2d4cc8;
+}
+
+.frameParent7 {
+  position: absolute;
+  top: 441px;
+  left: 616px;
+  width: 615px;
+  display: flex;
+  align-items: center;
+  gap: 320px;
+  text-align: center;
+  font-size: 16px;
+  color: #67096e;
+}
+
+.analyticsUpParent {
+  height: 50px;
+  width: 150px;
+  box-shadow: -8px -8px 16px #fff, 8px 8px 16px #c6c6c9;
+  border-radius: 8px;
+  background-color: #dfe6e9;
+  overflow: hidden;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px 32px;
+  box-sizing: border-box;
+  gap: 8px;
+  color: #907507;
+}
+
+.interconnectivityChild {
+  position: absolute;
+  top: 1100.99px;
+  left: 80px;
+  width: 290px;
+  height: 250px;
+}
+
+.frameParent8 {
+  position: absolute;
+  top: 698px;
+  left: calc(50% - 640px);
+  width: 1280px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 64px;
+  text-align: center;
+}
+
+.frameParent9 {
+  width: 1103px;
+  height: 259px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+}
+
+.frameChild3 {
+  width: 214.3px;
+  height: 50.2px;
+  position: relative;
+  border-radius: 28px;
+  object-fit: contain;
+}
+
+.oneConnectedPlatformForModParent {
+  width: 999px;
+  height: 176px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+}
+
+.oneConnectedPlatform {
+  width: 692px;
+  height: 105px;
+  position: relative;
+  letter-spacing: 0.03em;
+  line-height: 50px;
+  text-transform: capitalize;
+  display: inline-block;
+  flex-shrink: 0;
+}
+
+.connectSystemsContent {
+  width: 1089px;
+  height: 40px;
+  position: relative;
+  font-size: 24px;
+  letter-spacing: 0.03em;
+  line-height: 32px;
+  color: #2f3547;
+  display: inline-block;
+  flex-shrink: 0;
+}
+
+.frameParent10 {
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  font-size: 22px;
+  color: #2d4cc8;
+}
+
+.frameWrapper2 {
+  height: 278px;
+  width: 301px;
+  position: relative;
+}
+
+.rectangleParent {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 300px;
+  height: 278px;
+}
+
+.rectangleDiv {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  box-shadow: -8px -8px 16px #fff, 8px 8px 16px #c4c4c4;
+  border-radius: 24px;
+  background-color: #dfe6e9;
+  width: 300px;
+  height: 278px;
+}
+
+.frameChild4 {
+  position: absolute;
+  top: 24px;
+  left: 24px;
+  box-shadow: -8px -8px 16px #fff, 8px 8px 16px #c4c4c4;
+  border-radius: 24px;
+  background-color: #dfe6e9;
+  width: 252px;
+  height: 230px;
+}
+
+.unifiedLearningEcosystemParent {
+  position: absolute;
+  top: 99px;
+  left: calc(50% - 103px);
+  width: 206px;
+  height: 124px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.unifiedLearningEcosystem {
+  width: 210px;
+  position: relative;
+  letter-spacing: 0.02em;
+  line-height: 32px;
+  display: inline-block;
+  flex-shrink: 0;
+}
+
+.frameChild5 {
+  position: absolute;
+  top: 0px;
+  left: calc(50% - 45px);
+  border-radius: 0px 0px 36px 36px;
+  width: 90px;
+  height: 75px;
+}
+
+.frameChild6 {
+  position: absolute;
+  bottom: 0px;
+  left: calc(50% - 39px);
+  border-radius: 50px 50px 0px 0px;
+  background-color: #2d4cc8;
+  width: 78px;
+  height: 12px;
+  overflow: hidden;
+}
+
+.frameWrapper3 {
+  height: 278px;
+  width: 301px;
+  position: relative;
+  color: #bf1869;
+}
+
+.rectangleGroup {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 300px;
+  height: 300px;
+  flex-shrink: 0;
+}
+
+.frameChild8 {
+  position: absolute;
+  bottom: 22px;
+  left: calc(50% - 39px);
+  border-radius: 50px 50px 0px 0px;
+  background-color: #bf1869;
+  width: 78px;
+  height: 12px;
+  overflow: hidden;
+}
+
+.collaborativeLearningParent {
+  position: absolute;
+  top: 99px;
+  left: calc(50% - 103px);
+  width: 206px;
+  height: 124px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.enableSharingAnd {
+  align-self: stretch;
+  position: relative;
+  font-size: 18px;
+  letter-spacing: 0.02em;
+  line-height: 26px;
+  color: #2f3547;
+  flex-shrink: 0;
+}
+
+.frameWrapper4 {
+  height: 278px;
+  width: 301px;
+  position: relative;
+  color: #67096e;
+}
+
+.frameChild12 {
+  position: absolute;
+  bottom: 0px;
+  left: calc(50% - 39px);
+  border-radius: 50px 50px 0px 0px;
+  background-color: #67096e;
+  width: 78px;
+  height: 12px;
+  overflow: hidden;
+}
+
+.systemIntegrationsParent {
+  position: absolute;
+  top: 99px;
+  left: calc(50% - 103px);
+  width: 206px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.connectLmsHrms {
+  align-self: stretch;
+  position: relative;
+  font-size: 18px;
+  letter-spacing: 0.02em;
+  line-height: 26px;
+  color: #2f3547;
+  white-space: pre-wrap;
+  flex-shrink: 0;
+}
+
+.rectangleParent2 {
+  height: 278px;
+  width: 300px;
+  position: relative;
+  color: #c05512;
+}
+
+.frameChild16 {
+  position: absolute;
+  bottom: 0px;
+  left: calc(50% - 39px);
+  border-radius: 50px 50px 0px 0px;
+  background-color: #2a7308;
+  width: 78px;
+  height: 12px;
+  overflow: hidden;
+}
+
+.frameParent11 {
+  position: absolute;
+  top: 1475px;
+  left: 73px;
+  width: 1287px;
+  display: flex;
+  align-items: center;
+  gap: 240px;
+}
+
+.frameWrapper5 {
+  width: 470px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.frameParent12 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+.frameParent13 {
+  width: 472px;
+  height: 174px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  flex-shrink: 0;
+}
+
+.frameChild19 {
+  width: 212.8px;
+  height: 50.2px;
+  position: relative;
+  border-radius: 28px;
+  object-fit: contain;
+}
+
+.breakSilosBuildContainer {
+  width: 472px;
+  position: relative;
+  letter-spacing: 0.03em;
+  line-height: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.breakSilosBuildContainer2 {
+  width: 100%;
+}
+
+.breakSilos {
+  line-height: 50px;
+}
+
+.buildConnectedLearning {
+  color: #2f3547;
+  line-height: 50px;
+}
+
+.connectSystemsContent3 {
+  align-self: stretch;
+  position: relative;
+  font-size: 24px;
+  letter-spacing: 0.03em;
+  line-height: 32px;
+  color: #2f3547;
+  flex-shrink: 0;
+}
+
+.keyBenefitsParent {
+  width: 534px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 36px;
+}
+
+.keyBenefits {
+  align-self: stretch;
+  position: relative;
+  letter-spacing: 0.03em;
+  line-height: 44px;
+}
+
+.frameParent14 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  font-size: 24px;
+}
+
+.frameParent15 {
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.frameChild20 {
+  height: 70.1px;
+  width: 70.1px;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.onePlatformFor {
+  height: 37px;
+  width: 458px;
+  position: relative;
+  letter-spacing: 0.03em;
+  line-height: 36px;
+  /* text-transform: capitalize; */
+  display: inline-block;
+  flex-shrink: 0;
+}
+
+.frameChild21 {
+  height: 70.1px;
+  width: 70.1px;
+  position: relative;
+}
+
+.seamlessSystemIntegration {
+  height: 37px;
+  width: 343px;
+  position: relative;
+  letter-spacing: 0.03em;
+  line-height: 36px;
+  text-transform: capitalize;
+  display: inline-block;
+  flex-shrink: 0;
+}
+
+.betterCollaborationAnd {
+  height: 37px;
+  width: 462px;
+  position: relative;
+  letter-spacing: 0.03em;
+  line-height: 36px;
+  /* text-transform: capitalize; */
+  display: inline-block;
+  flex-shrink: 0;
+}
+
+.clearerLearningPerformance {
+  height: 37px;
+  width: 471px;
+  position: relative;
+  letter-spacing: 0.03em;
+  line-height: 36px;
+  text-transform: capitalize;
+  display: inline-block;
+  flex-shrink: 0;
+}
+
+.frameParent19 {
+  position: absolute;
+  top: 2003px;
+  left: 73px;
+  width: 1279px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  text-align: center;
+}
+
+.frameParent20 {
+  width: 1103px;
+  height: 244px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+}
+
+.frameChild24 {
+  width: 164px;
+  height: 50.1px;
+  position: relative;
+  border-radius: 28px;
+  object-fit: contain;
+}
+
+.builtForDiverseLearningEnvParent {
+  width: 999px;
+  height: 138px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+}
+
+.builtForDiverse {
+  width: 851px;
+  height: 50px;
+  position: relative;
+  letter-spacing: 0.03em;
+  line-height: 50px;
+  /* text-transform: capitalize; */
+  display: inline-block;
+  flex-shrink: 0;
+}
+
+.aConnectedPlatform {
+  width: 851px;
+  height: 80px;
+  position: relative;
+  font-size: 24px;
+  letter-spacing: 0.03em;
+  line-height: 32px;
+  color: #2f3547;
+  display: inline-block;
+  flex-shrink: 0;
+}
+
+.frameParent21 {
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  font-size: 18px;
+  color: #2f3547;
+}
+
+.frameWrapper6 {
+  height: 300px;
+  width: 301px;
+  position: relative;
+}
+
+.rectangleParent3 {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 300px;
+  height: 300px;
+}
+
+.frameChild25 {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  box-shadow: -8px -8px 16px #fff, 8px 8px 16px #c4c4c4;
+  border-radius: 24px;
+  background-color: #dfe6e9;
+  width: 300px;
+  height: 300px;
+}
+
+.frameChild26 {
+  position: absolute;
+  top: 0px;
+  left: calc(50% - 150px);
+  border-radius: 24px;
+  width: 300px;
+  height: 204px;
+  object-fit: cover;
+}
+
+.universitiesAndHigher {
+  position: absolute;
+  top: 228px;
+  left: calc(50% - 108px);
+  letter-spacing: 0.02em;
+  line-height: 26px;
+  display: inline-block;
+  width: 216px;
+}
+
+.frameChild28 {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  border-radius: 24px;
+  width: 300px;
+  height: 204px;
+  object-fit: cover;
+}
+
+.frameParent22 {
+  position: absolute;
+  top: 2735px;
+  left: calc(50% - 632px);
+  width: 1280px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 64px;
+  text-align: center;
+}
+
+.frameParent23 {
+  width: 1103px;
+  height: 212px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+}
+
+.frameChild33 {
+  width: 239.8px;
+  height: 50.2px;
+  position: relative;
+  border-radius: 28px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.connectYourEcosystemInFourParent {
+  width: 999px;
+  height: 138px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  flex-shrink: 0;
+}
+
+.connectSystemsPeople {
+  width: 931px;
+  position: relative;
+  font-size: 24px;
+  letter-spacing: 0.03em;
+  line-height: 32px;
+  color: #2f3547;
+  display: inline-block;
+}
+
+.frameParent24 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 50px;
+  text-align: left;
+  font-size: 24px;
+  color: #67096e;
+}
+
+.frameParent25 {
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  gap: 198px;
+}
+
+.frameWrapper10 {
+  height: 150px;
+  width: 539px;
+  position: relative;
+}
+
+.frameParent26 {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 539px;
+  height: 150px;
+}
+
+.image20Parent {
+  position: absolute;
+  top: calc(50% - 59px);
+  left: 63px;
+  box-shadow: -8px -8px 16px #fff inset, 8px 8px 16px rgba(196, 196, 196, 0.8) inset;
+  border-radius: 16px;
+  background-color: #dfe6e9;
+  width: 476px;
+  height: 118px;
+  overflow: hidden;
+}
+
+.image20 {
+  position: absolute;
+  top: 0.37px;
+  left: calc(50% - 630px);
+  width: 1280px;
+  height: 800px;
+  flex-shrink: 0;
+}
+
+.frameChild34 {
+  position: absolute;
+  top: 39px;
+  left: 133px;
+  width: 343px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.integrateExistingSystemsAndWrapper {
+  position: absolute;
+  top: calc(50% - 35px);
+  left: calc(50% - 118px);
+  width: 321px;
+  height: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+
+.integrateExistingSystems {
+  width: 330px;
+  height: 37px;
+  position: relative;
+  letter-spacing: 0.03em;
+  line-height: 36px;
+  display: inline-block;
+  flex-shrink: 0;
+}
+
+.frameParent27 {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 150px;
+  height: 150px;
+  text-align: center;
+  font-size: 80px;
+}
+
+.image20Wrapper {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  box-shadow: -8px -8px 16px #fff, 8px 8px 16px rgba(196, 196, 196, 0.8);
+  border-radius: 32px;
+  background-color: #dfe6e9;
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+}
+
+.image202 {
+  position: absolute;
+  top: 0.37px;
+  left: calc(50% - 447px);
+  width: 1280px;
+  height: 800px;
+  flex-shrink: 0;
+}
+
+.div {
+  position: absolute;
+  top: calc(50% - 50px);
+  left: calc(50% - 24px);
+  letter-spacing: 0.03em;
+  line-height: 128px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 49px;
+  height: 100px;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.frameWrapper11 {
+  height: 150px;
+  width: 539px;
+  position: relative;
+  color: #bf1869;
+}
+
+.connectLearnersAndEducatorsWrapper {
+  position: absolute;
+  top: calc(50% - 34.5px);
+  left: 120px;
+  width: 330px;
+  height: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+
+.connectLearnersAnd {
+  align-self: stretch;
+  position: relative;
+  letter-spacing: 0.03em;
+  line-height: 36px;
+  white-space: pre-wrap;
+  flex-shrink: 0;
+}
+
+.div2 {
+  position: absolute;
+  top: calc(50% - 50px);
+  left: calc(50% - 33px);
+  letter-spacing: 0.03em;
+  line-height: 128px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 67px;
+  height: 100px;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.frameParent30 {
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  gap: 202px;
+  text-align: center;
+  color: #2d4cc8;
+}
+
+.enableCollaborativeLearning {
+  width: 330px;
+  position: relative;
+  letter-spacing: 0.03em;
+  line-height: 36px;
+  display: inline-block;
+  flex-shrink: 0;
+}
+
+.frameParent32 {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 150px;
+  height: 150px;
+  font-size: 80px;
+}
+
+.frameWrapper13 {
+  height: 150px;
+  width: 539px;
+  position: relative;
+  text-align: left;
+  color: #134e4a;
+}
+
+.frameParent34 {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 150px;
+  height: 150px;
+  text-align: center;
+  font-size: 80px;
+  color: #046f73;
+}
+
+.div4 {
+  position: absolute;
+  top: calc(50% - 50px);
+  left: calc(50% - 34.5px);
+  letter-spacing: 0.03em;
+  line-height: 128px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70px;
+  height: 100px;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.connectedLearningEcosystemParent {
+  position: absolute;
+  top: 3407px;
+  left: 70px;
+  width: 1300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 64px;
+  text-align: center;
+  font-size: 48px;
+}
+
+.connectedLearningEcosystem {
+  align-self: stretch;
+  height: 50px;
+  position: relative;
+  letter-spacing: 0.03em;
+  line-height: 70px;
+  text-transform: capitalize;
+  display: flex;
+  background: linear-gradient(90deg, #bf1869, #2d4cc8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.frameParent35 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  text-align: left;
+  font-size: 24px;
+}
+
+.frameParent36 {
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.frameWrapper14 {
+  height: 131px;
+  width: 400px;
+  position: relative;
+  box-shadow: -8px -8px 16px #fff inset, 8px 8px 16px #c4c4c4 inset;
+  border-radius: 24px;
+  background-color: #dfe6e9;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.frameParent37 {
+  position: absolute;
+  top: calc(50% - 35.5px);
+  left: 32px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.academicLearning {
+  width: 224px;
+  position: relative;
+  line-height: 36px;
+  display: inline-block;
+  flex-shrink: 0;
+}
+
+.trainingEcosystems {
+  width: 227px;
+  position: relative;
+  line-height: 36px;
+  display: inline-block;
+  flex-shrink: 0;
+}
+
+.lmsIntegration {
+  width: 184px;
+  position: relative;
+  line-height: 36px;
+  display: inline-block;
+  flex-shrink: 0;
+}
+
+.frameParent40 {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.collaborativeLearning2 {
+  width: 257px;
+  position: relative;
+  line-height: 36px;
+  display: inline-block;
+  flex-shrink: 0;
+}
+
+.ellipseGroup {
+  position: absolute;
+  top: 3929px;
+  left: 84px;
+  width: 1286px;
+  height: 539px;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: -8px -8px 16px #fff, 8px 8px 16px #c4c4c4;
+  text-align: center;
+}
+
+.frameChild43 {
+  position: absolute;
+  top: -16px;
+  left: -20px;
+  width: calc(100% + 60px);
+  height: calc(100% + 32px);
+  max-width: none;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+  z-index: 0;
+}
+
+.ellipseContainer {
+  position: absolute;
+  top: calc(50% - 237.5px);
+  left: calc(50% - 525px);
+  width: 1051px;
+  height: 475px;
+  z-index: 1;
+}
+
+.frameChild44 {
+  position: absolute;
+  top: calc(50% - 237.5px);
+  left: calc(50% - 525.5px);
+  box-shadow: -8px -8px 16px #fff inset, 8px 8px 16px #c4c4c4 inset;
+  border-radius: 50%;
+  background-color: #dfe6e9;
+  width: 1051px;
+  height: 475px;
+}
+
+.frameParent43 {
+  position: absolute;
+  top: calc(50% - 120.5px);
+  left: calc(50% - 385.5px);
+  width: 771px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 36px;
+}
+
+.readyToConnectYourLearningParent {
+  align-self: stretch;
+  height: 144px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+.readyToConnectContainer {
+  width: 815px;
+  height: 50px;
+  position: relative;
+  letter-spacing: 0.03em;
+  line-height: 50px;
+  /* text-transform: capitalize; */
+  display: inline-block;
+  flex-shrink: 0;
+}
+
+.learningEcosystem {
+  color: #2d4cc8;
+  line-height: 50px;
+}
+
+.connectYourEcosystem2 {
+  width: 673px;
+  flex: 1;
+  position: relative;
+  font-size: 24px;
+  letter-spacing: 0.03em;
+  line-height: 40px;
+  color: #2f3547;
+  display: inline-block;
+  flex-shrink: 0;
+}
+
+.frameChild45 {
+  width: 255.3px;
+  height: 60.2px;
+  position: relative;
+  box-shadow: -4px -4px 8px #fff, 4px 4px 8px rgba(196, 196, 196, 0.8);
+  border-radius: 50px;
+  object-fit: contain;
+}
+
+.frameParent44 {
+  position: absolute;
+  bottom: 0px;
+  left: calc(50% - 720px);
+  width: 1440px;
+  height: 501px;
+  font-size: 26px;
+  color: #2f3547;
+}
+
+.frameParent45 {
+  position: absolute;
+  bottom: -0.01px;
+  left: calc(50% - 720px);
+  box-shadow: -10px -10px 20px #fff inset, 8px 8px 16px #c4c4c4 inset;
+  background-color: #dfe6e9;
+  width: 1440px;
+  height: 459px;
+  overflow: hidden;
+}
+
+.frameParent46 {
+  position: absolute;
+  top: 49.81px;
+  left: 53.96px;
+  width: 1339.5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+.frameParent47 {
+  align-self: stretch;
+  display: flex;
+  align-items: flex-start;
+  gap: 35px;
+}
+
+.frameParent48 {
+  width: 676px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  flex-shrink: 0;
+}
+
+.logo01SynapseSpark1Group {
+  width: 577px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.logo01SynapseSpark1Icon2 {
+  width: 299px;
+  height: 112px;
+  position: relative;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.frameParent49 {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-shrink: 0;
+}
+
+.onePlatformParent {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.onePlatform {
+  position: relative;
+  letter-spacing: -0.03em;
+  line-height: 34px;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.sparklesIcon {
+  height: 23px;
+  width: 23px;
+  position: relative;
+}
+
+.prgeeqGlobalSolutionsPrivatParent {
+  width: 459px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+  font-size: 16px;
+}
+
+.prgeeqGlobalSolutions {
+  align-self: stretch;
+  position: relative;
+  letter-spacing: 0.03em;
+  line-height: 24px;
+}
+
+.prestigeAtlanta1012Container {
+  align-self: stretch;
+  height: 77px;
+  position: relative;
+  line-height: 24px;
+  display: flex;
+  align-items: flex-end;
+  flex-shrink: 0;
+}
+
+.blankLine {
+  line-height: 24px;
+}
+
+.frameParent50 {
+  width: 631px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 24px;
+  flex-shrink: 0;
+  font-size: 22px;
+  color: #2d4cc8;
+}
+
+.frameParent51 {
+  width: 619px;
+  display: flex;
+  align-items: flex-start;
+  gap: 32px;
+}
+
+.aboutUsParent {
+  width: 123px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.aboutUs {
+  width: 93px;
+  position: relative;
+  letter-spacing: -0.03em;
+  line-height: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.ourMissionParent {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 15px;
+  font-size: 20px;
+  color: #2f3547;
+}
+
+.ourMission {
+  align-self: stretch;
+  height: 26px;
+  position: relative;
+  letter-spacing: 0.03em;
+  line-height: 28px;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.quickLinksParent {
+  width: 207px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.quickLinks {
+  align-self: stretch;
+  height: 26px;
+  position: relative;
+  letter-spacing: -0.03em;
+  line-height: 30px;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.neurolxpParent {
+  height: 181px;
+  width: 205px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.neurolxp3 {
+  align-self: stretch;
+  height: 26px;
+  position: relative;
+  letter-spacing: -0.03em;
+  line-height: 30px;
+  display: flex;
+  white-space: pre-wrap;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.ourCustomersGroup {
+  width: 221px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 15px;
+  flex-shrink: 0;
+  font-size: 20px;
+  color: #2f3547;
+}
+
+.smartContentCreation {
+  width: 229px;
+  height: 26px;
+  position: relative;
+  letter-spacing: 0.03em;
+  line-height: 28px;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.frameParent52 {
+  width: 392.4px;
+  height: 80.1px;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.frameChild46 {
+  height: 80.1px;
+  width: 80.1px;
+  position: relative;
+}
+
+.copyright2026 {
+  align-self: stretch;
+  height: 47px;
+  position: relative;
+  font-size: 16px;
+  letter-spacing: -0.03em;
+  line-height: 56px;
+  font-weight: 600;
+  color: #2d4cc8;
+  text-align: center;
+  display: inline-block;
+  flex-shrink: 0;
+}
+
+.frameWrapper19 {
+  position: absolute;
+  bottom: 0.01px;
+  left: calc(50% - 720px);
+  box-shadow: -8px -8px 16px #fff inset, 10px 10px 10px #c4c4c4 inset;
+  background-color: #dfe6e9;
+  width: 1440px;
+  height: 459px;
+  overflow: hidden;
+}
+
+.frameParent57 {
+  width: 631px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  position: relative;
+  isolation: isolate;
+  gap: 24px;
+  flex-shrink: 0;
+  font-size: 22px;
+  color: #2d4cc8;
+}
+
+.frameParent58 {
+  width: 619px;
+  display: flex;
+  align-items: flex-start;
+  gap: 32px;
+  z-index: 0;
+  flex-shrink: 0;
+}
+
+.ourMissionGroup {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 15px;
+  font-size: 18px;
+  color: #2f3547;
+}
+
+.neurolxpGroup {
+  display: flex;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+
+.neurolxp4 {
+  height: 26px;
+  width: 103px;
+  position: relative;
+  letter-spacing: -0.03em;
+  line-height: 30px;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.neurolxp5 {
+  line-height: 30px;
+}
+
+.span3 {
+  font-size: 12px;
+  line-height: 30px;
+}
+
+.tm {
+  height: 17px;
+  width: 23px;
+  position: relative;
+  font-size: 12px;
+  letter-spacing: -0.03em;
+  line-height: 30px;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.ourCustomersContainer {
+  width: 221px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 15px;
+  flex-shrink: 0;
+  font-size: 18px;
+  color: #2f3547;
+}
+
+.frameParent60 {
+  width: 392.4px;
+  height: 80.1px;
+  margin: 0 !important;
+  position: absolute;
+  top: 217.19px;
+  left: 135.04px;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  z-index: 1;
+  flex-shrink: 0;
+}
+
+.frameChild50 {
+  height: 80.1px;
+  width: 80.1px;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.frameChild55 {
+  position: absolute;
+  top: 0px;
+  left: calc(50% - 30.07px);
+  border-radius: 32px;
+  width: 59.1px;
+  height: 92px;
+  object-fit: contain;
+}
+
+.coreFeaturesBadge {
+  width: 208px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  border-radius: 32px;
+  background: #DFE6E9;
+  box-sizing: border-box;
+  box-shadow:
+    inset -6px -6px 12px rgba(255, 255, 255, .95),
+    inset 6px 6px 12px rgba(196, 196, 196, .8);
+}
+
+.coreFeaturesBadge span {
+  font-family: 'Segoe UI';
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: .02em;
+  color: #2D4CC8;
+  white-space: nowrap;
+}
+
+.featureIconTop {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 90px;
+  height: 75px;
+  transform: translateX(-50%);
+  border-radius: 0 0 36px 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  z-index: 3;
+  overflow: hidden;
+}
+
+.featureIconTopBlue {
+  background: #2D4CC8;
+}
+
+.featureIconTopPink {
+  background: #C91570;
+}
+
+.featureIconTopPurple {
+  background: #67096E;
+}
+
+.featureIconTopGreen {
+  background: #287C0B;
+}
+
+.featureCardIcon {
+  width: 40px;
+  height: 40px;
+  display: block;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.whyNeuroLxpBadge {
+  width: 250px;
+  height: 58px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  border-radius: 32px;
+  background: #DFE6E9;
+  box-shadow:
+    inset -6px -6px 12px rgba(255, 255, 255, 0.95),
+    inset 6px 6px 12px rgba(196, 196, 196, 0.8);
+  flex-shrink: 0;
+
+}
+
+.whyNeuroLxpText {
+  position: relative;
+  color: #2D4CC8;
+  font-family: 'Segoe UI';
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+}
+
+.whyNeuroLxpTm {
+  position: absolute;
+  top: -8px;
+  right: -18px;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 10px;
+  letter-spacing: 0;
+  transform: translatex(6);
+}
+
+.benefitIconFrame {
+  width: 70px;
+  height: 70px;
+  position: relative;
+  flex: 0 0 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  border-radius: 100px;
+  background: #DFE6E9;
+  box-shadow:
+    inset -4px -4px 8px #FFFFFF,
+    inset 4px 4px 8px rgba(196, 196, 196, 0.8);
+  transform: rotate(0.05deg);
+}
+
+.benefitIconCircle {
+  width: 50px;
+  height: 50px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: #67096E;
+  box-shadow:
+    4px 4px 8px #C6C6C9,
+    -4px -4px 8px #FFFFFF;
+}
+
+.benefitIconImage {
+  width: 34px;
+  height: 34px;
+  display: block;
+  object-fit: contain;
+  flex-shrink: 0;
+  transform: rotate(0.05deg);
+}
+
+.benefitPink {
+  background: #C91570;
+}
+
+.benefitPurple {
+  background: #67096E;
+}
+
+.benefitBlue {
+  background: #2D4CC8;
+}
+
+.benefitTeal {
+  background: #0B7C84;
+}
+
+.useCasesBadge {
+  width: 164px;
+  height: 50px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  box-sizing: border-box;
+  border-radius: 28px;
+  background: #DFE6E9;
+  box-shadow:
+    inset -6px -6px 12px rgba(255, 255, 255, 0.95),
+    inset 6px 6px 12px rgba(196, 196, 196, 0.8);
+}
+
+.useCasesBadge span {
+  color: #2D4CC8;
+  font-family: 'Segoe UI';
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+}
+
+.howItWorksBadge {
+  width: 240px;
+  height: 58px !important;
+  min-height: 58px;
+  max-height: 58px;
+  flex: 0 0 58px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 18px;
+  border-radius: 30px;
+  background: #DFE6E9;
+  box-sizing: border-box;
+  box-shadow:
+    inset -6px -6px 12px rgba(255, 255, 255, .95),
+    inset 6px 6px 12px rgba(196, 196, 196, .8);
+}
+
+.howItWorksBadgeText {
+  color: #2D4CC8;
+  font-family: 'Segoe UI';
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 28px;
+  letter-spacing: .02em;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ecosystemIconFrame {
+  width: 70px;
+  height: 70px;
+  position: relative;
+  flex: 0 0 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  border-radius: 100px;
+  background: #DFE6E9;
+  box-shadow:
+    inset -4px -4px 8px #FFFFFF,
+    inset 4px 4px 8px rgba(196, 196, 196, 0.8);
+  transform: rotate(0.05deg);
+}
+
+.ecosystemIconCircle {
+  width: 50px;
+  height: 50px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  box-shadow:
+    4px 4px 8px #C6C6C9,
+    -4px -4px 8px #FFFFFF;
+}
+
+.ecosystemIconPink {
+  background: #BF1869;
+}
+
+.ecosystemIconBlue {
+  background: #2D4CC8;
+}
+
+.ecosystemIconTeal {
+  background: #087F84;
+}
+
+.ecosystemIconOrange {
+  background: #C9550A;
+}
+
+.ecosystemIconMaroon {
+  background: #67003D;
+}
+
+.ecosystemIconImage {
+  width: 34px;
+  height: 34px;
+  display: block;
+  object-fit: contain;
+  flex-shrink: 0;
+  transform: rotate(0.05deg);
+}
+
+.learningBlue {
+  color: #2D4CC8;
+}
+
+.bookDemoBtn {
+  width: 255px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  border-radius: 32px;
+  background: #DFE6E9;
+  box-shadow: -8px -8px 16px #FFFFFF, 8px 8px 16px #C6C6C9;
+  color: #2D4CC8;
+  font-size: 22px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all .25s ease;
+}
+
+.bookDemoBtn:hover {
+  transform: translateY(-2px);
+}
+
+.frameWrapper2,
+.frameWrapper3,
+.frameWrapper4,
+.rectangleParent2,
+.frameWrapper6,
+.frameWrapper14 {
+  transition: transform .35s ease, box-shadow .35s ease;
+  cursor: pointer;
+  will-change: transform;
+}
+
+.frameWrapper2:hover,
+.frameWrapper3:hover,
+.frameWrapper4:hover,
+.rectangleParent2:hover,
+.frameWrapper6:hover,
+.frameWrapper14:hover {
+  transform: translateY(-12px);
+  box-shadow:
+    -12px -12px 24px #ffffff,
+    12px 12px 24px #bfc4c8;
+}
+
+.frameWrapper10 .image20Parent,
+.frameWrapper11 .image20Parent,
+.frameWrapper12 .image20Parent,
+.frameWrapper13 .image20Parent {
+  box-sizing: border-box;
+  border: 2px dashed transparent;
+  transition: border-color 0.28s ease;
+}
+
+.frameWrapper10:hover .image20Parent,
+.frameWrapper11:hover .image20Parent,
+.frameWrapper12:hover .image20Parent,
+.frameWrapper13:hover .image20Parent {
+  border-color: currentColor;
+}
+
+.frameWrapper14 {
+  transition: box-shadow .3s ease;
+}
+
+.frameWrapper14:hover {
+  transform: none !important;
+  box-shadow:
+    -10px -10px 20px #ffffff,
+    10px 10px 20px #c4c4c4;
+}
+
+.frameParent15>.frameChild20,
+.frameParent15>.frameChild21 {
+  transform: translate(4px, 4px) !important;
+  transform-origin: center;
+}
+
+.interconnectivity {
+  height: auto !important;
+  min-height: 100vh !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  overflow-x: hidden !important;
+  overflow-y: visible !important;
+  box-sizing: border-box !important;
+}
+
+.interconnectivity>.frameParent,
+.interconnectivity>.frameDiv,
+.interconnectivity>.frameParent2,
+.interconnectivity>.frameParent8,
+.interconnectivity>.frameParent11,
+.interconnectivity>.frameParent19,
+.interconnectivity>.frameParent22,
+.interconnectivity>.connectedLearningEcosystemParent,
+.interconnectivity>.ellipseGroup,
+.interconnectivity>.frameParent44 {
+  position: relative !important;
+  top: auto !important;
+  right: auto !important;
+  bottom: auto !important;
+  left: auto !important;
+  transform: none !important;
+  box-sizing: border-box !important;
+  flex: 0 0 auto !important;
+}
+
+.interconnectivity>.frameParent {
+  width: 100% !important;
+  max-width: 1440px !important;
+  height: 80px !important;
+  margin: 0 auto !important;
+}
+
+.interconnectivity>.frameDiv {
+  width: min(1280px, calc(100% - 160px)) !important;
+  margin: 32px auto 0 !important;
+  align-self: center !important;
+}
+
+.interconnectivity>.frameParent2 {
+  width: min(1280px, calc(100% - 160px)) !important;
+  max-width: 1280px !important;
+  height: 546px !important;
+  margin: 32px auto 0 !important;
+  align-self: center !important;
+}
+
+.interconnectivity>.frameParent8 {
+  width: min(1280px, calc(100% - 160px)) !important;
+  max-width: 1280px !important;
+  min-height: 620px !important;
+  margin: 64px auto 0 !important;
+  align-self: center !important;
+}
+
+.interconnectivity>.frameParent11 {
+  width: min(1287px, calc(100% - 160px)) !important;
+  max-width: 1287px !important;
+  min-height: 430px !important;
+  margin: 64px auto 0 !important;
+  align-self: center !important;
+}
+
+.interconnectivity>.frameParent19 {
+  width: min(1279px, calc(100% - 160px)) !important;
+  max-width: 1279px !important;
+  min-height: 620px !important;
+  margin: 64px auto 0 !important;
+  align-self: center !important;
+}
+
+.interconnectivity>.frameParent22 {
+  width: min(1280px, calc(100% - 160px)) !important;
+  max-width: 1280px !important;
+  min-height: 610px !important;
+  margin: 64px auto 0 !important;
+  align-self: center !important;
+}
+
+.interconnectivity>.connectedLearningEcosystemParent {
+  width: min(1300px, calc(100% - 140px)) !important;
+  max-width: 1300px !important;
+  min-height: 420px !important;
+  margin: 64px auto 0 !important;
+  align-self: center !important;
+}
+
+.interconnectivity>.ellipseGroup {
+  width: min(1286px, calc(100% - 168px)) !important;
+  max-width: 1286px !important;
+  height: 539px !important;
+  margin: 64px auto 90px !important;
+  align-self: center !important;
+}
+
+.interconnectivity>.frameParent44 {
+  width: 100% !important;
+  max-width: 1440px !important;
+  height: 501px !important;
+  margin: 64px auto 0 !important;
+  align-self: center !important;
+}
+
+@media (max-width: 1199px) {
+  .interconnectivity {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 0 24px 64px !important;
+    zoom: 1 !important;
+  }
+
+  /* .interconnectivity > .frameParent,
+  .interconnectivity > .frameDiv,
+  .interconnectivity > .frameParent2,
+  .interconnectivity > .frameParent8,
+  .interconnectivity > .frameParent11,
+  .interconnectivity > .frameParent19,
+  .interconnectivity > .frameParent22,
+  .interconnectivity > .connectedLearningEcosystemParent,
+  .interconnectivity > .ellipseGroup,
+  .interconnectivity > .frameParent44 {
+    width: 100% !important;
+    max-width: 100% !important;
+  } */
+
+  .frameParent2 {
+    height: auto !important;
+    min-height: 560px !important;
+  }
+
+  .frameParent3,
+  .frameParent4,
+  .frameParent5,
+  .frameParent9,
+  .oneConnectedPlatformForModParent,
+  .frameParent20,
+  .builtForDiverseLearningEnvParent,
+  .frameParent23,
+  .connectYourEcosystemInFourParent {
+    max-width: 100% !important;
+  }
+
+  .frameParent8,
+  .frameParent11,
+  .frameParent19,
+  .frameParent22,
+  .connectedLearningEcosystemParent {
+    height: auto !important;
+  }
+
+  .frameParent10,
+  .frameParent21,
+  .frameParent25,
+  .frameParent30,
+  .frameParent36,
+  .frameParent40 {
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+  }
+
+  .oneConnectedPlatform,
+  .connectSystemsContent,
+  .builtForDiverse,
+  .aConnectedPlatform,
+  .connectSystemsPeople,
+  .connectedLearningEcosystem,
+  .readyToConnectContainer,
+  .connectYourEcosystem2 {
+    max-width: 100% !important;
+    height: auto !important;
+  }
+
+  .frameParent11 {
+    gap: 80px !important;
+    justify-content: center !important;
+  }
+
+  .frameParent15,
+  .frameParent25,
+  .frameParent30 {
+    gap: 48px !important;
+  }
+
+  .frameParent22 {
+    gap: 48px !important;
+  }
+
+  .ellipseGroup {
+    height: auto !important;
+    min-height: 500px !important;
+  }
+
+  .ellipseContainer {
+    width: min(1051px, calc(100% - 80px)) !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+  }
+
+  .frameChild44 {
+    width: 100% !important;
+    left: 0 !important;
+  }
+
+  .frameParent43 {
+    width: calc(100% - 120px) !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+  }
+}
+
+@media (max-width: 1024px) {
+  .interconnectivity {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+
+  .interconnectivity>.frameParent8,
+  .interconnectivity>.frameParent11,
+  .interconnectivity>.frameParent19,
+  .interconnectivity>.frameParent22,
+  .interconnectivity>.connectedLearningEcosystemParent,
+  .interconnectivity>.ellipseGroup,
+  .interconnectivity>.frameParent44 {
+    margin-top: 56px !important;
+  }
+
+  .frameParent2 {
+    min-height: 620px !important;
+  }
+
+  .frameParent3 {
+    top: 50% !important;
+    left: 32px !important;
+    width: 46% !important;
+    transform: translateY(-50%) !important;
+  }
+
+  .frameParent4,
+  .frameParent5,
+  .seamlessInterconnectivityWit,
+  .connectLearnersEducators {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .ellipseParent {
+    left: auto !important;
+    right: 28px !important;
+    width: 380px !important;
+    height: 380px !important;
+    transform: scale(.86) !important;
+    transform-origin: center right !important;
+  }
+
+  .frameParent6,
+  .frameParent7 {
+    left: auto !important;
+    right: 20px !important;
+    width: 520px !important;
+    gap: 220px !important;
+  }
+
+  .frameParent9,
+  .frameParent20,
+  .frameParent23 {
+    width: 100% !important;
+    height: auto !important;
+  }
+
+  .oneConnectedPlatformForModParent,
+  .builtForDiverseLearningEnvParent,
+  .connectYourEcosystemInFourParent {
+    width: 100% !important;
+    height: auto !important;
+  }
+
+  .oneConnectedPlatform,
+  .builtForDiverse {
+    width: 100% !important;
+    font-size: 34px !important;
+    line-height: 44px !important;
+  }
+
+  .connectSystemsContent,
+  .aConnectedPlatform,
+  .connectSystemsPeople {
+    width: 100% !important;
+    font-size: 21px !important;
+    line-height: 30px !important;
+  }
+
+  .frameParent10,
+  .frameParent21 {
+    gap: 20px !important;
+  }
+
+  .frameWrapper2,
+  .frameWrapper3,
+  .frameWrapper4,
+  .rectangleParent2,
+  .frameWrapper6 {
+    flex: 0 1 46% !important;
+  }
+
+  .frameParent11 {
+    gap: 48px !important;
+  }
+
+  .frameWrapper5,
+  .keyBenefitsParent {
+    width: calc(50% - 24px) !important;
+  }
+
+  .frameParent22 {
+    min-height: 820px !important;
+  }
+
+  .frameParent25,
+  .frameParent30 {
+    gap: 32px !important;
+  }
+
+  .frameWrapper10,
+  .frameWrapper11,
+  .frameWrapper13 {
+    width: calc(50% - 16px) !important;
+  }
+
+  .connectedLearningEcosystemParent {
+    min-height: 560px !important;
+  }
+
+  .frameParent36,
+  .frameParent40 {
+    gap: 24px !important;
+  }
+
+  .frameWrapper14 {
+    width: calc(50% - 12px) !important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+
+  .interconnectivity>.frameParent11,
+  .interconnectivity>.frameParent19,
+  .interconnectivity>.frameParent22,
+  .interconnectivity>.connectedLearningEcosystemParent {
+    width: calc(100% - 48px) !important;
+    max-width: 1120px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    overflow: visible !important;
+    box-sizing: border-box !important;
+  }
+
+  .frameParent11 {
+    min-height: 520px !important;
+    align-items: flex-start !important;
+    justify-content: center !important;
+    gap: 48px !important;
+  }
+
+  .frameWrapper5,
+  .keyBenefitsParent {
+    width: calc(60% - 24px) !important;
+    max-width: calc(60% - 24px) !important;
+    min-width: 0 !important;
+    box-sizing: border-box !important;
+  }
+
+  .frameParent12,
+  .frameParent13,
+  .frameParent14,
+  .frameParent15 {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+    box-sizing: border-box !important;
+  }
+
+  .frameParent14 {
+    font-size: 22px !important;
+  }
+
+  .breakSilosBuildContainer,
+  .connectSystemsContent3,
+  .keyBenefits,
+  .onePlatformFor,
+  .seamlessSystemIntegration,
+  .betterCollaborationAnd,
+  .clearerLearningPerformance {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+    height: auto !important;
+    white-space: normal !important;
+    overflow-wrap: break-word !important;
+    box-sizing: border-box !important;
+  }
+
+  .frameParent15 {
+    align-items: flex-start !important;
+    gap: 14px !important;
+  }
+
+  .frameChild20,
+  .frameChild21 {
+    flex: 0 0 62px !important;
+    width: 62px !important;
+    height: 62px !important;
+  }
+
+  .frameParent19 {
+    min-height: 650px !important;
+  }
+
+  .frameParent20,
+  .builtForDiverseLearningEnvParent,
+  .frameParent21 {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+    height: auto !important;
+    box-sizing: border-box !important;
+  }
+
+  .builtForDiverse,
+  .aConnectedPlatform {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    overflow-wrap: break-word !important;
+  }
+
+  .frameWrapper6 {
+    width: 100% !important;
+    max-width: 100% !important;
+    justify-self: stretch !important;
+  }
+
+  .frameParent22 {
+    min-height: 760px !important;
+  }
+
+  .frameParent24 {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+  }
+
+  .frameParent25,
+  .frameParent30 {
+    width: 100% !important;
+    max-width: 100% !important;
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 24px !important;
+    align-items: stretch !important;
+  }
+
+  .frameWrapper10,
+  .frameWrapper11,
+  .frameWrapper13 {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+    height: 150px !important;
+  }
+
+  .frameParent26 {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: 150px !important;
+  }
+
+  .image20Parent {
+    width: calc(100% - 72px) !important;
+    left: 72px !important;
+  }
+
+  .integrateExistingSystemsAndWrapper,
+  .connectLearnersAndEducatorsWrapper {
+    /* width: calc(100% - 32px) !important; */
+    max-width: calc(100% - 32px) !important;
+    /* left: 16px !important; */
+  }
+
+  .integrateExistingSystems,
+  .connectLearnersAnd,
+  .enableCollaborativeLearning {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+    white-space: normal !important;
+    overflow-wrap: break-word !important;
+  }
+
+  .connectedLearningEcosystemParent {
+    min-height: 640px !important;
+  }
+
+  .frameParent35,
+  .frameParent36,
+  .frameParent40 {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+    box-sizing: border-box !important;
+  }
+
+  .frameParent36,
+  .frameParent40 {
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 24px !important;
+    align-items: stretch !important;
+  }
+
+  .frameWrapper14 {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+    height: 132px !important;
+  }
+
+  .frameParent37 {
+    left: 24px !important;
+    right: 24px !important;
+    width: auto !important;
+    max-width: none !important;
+    gap: 14px !important;
+  }
+
+  .academicLearning,
+  .trainingEcosystems,
+  .lmsIntegration,
+  .collaborativeLearning2 {
+    width: auto !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+    height: auto !important;
+    flex: 1 1 auto !important;
+    white-space: normal !important;
+    overflow-wrap: break-word !important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .frameParent11 {
+    min-height: 620px !important;
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+
+  .frameWrapper5,
+  .keyBenefitsParent {
+    width: 100% !important;
+    /* max-width: 100% !important; */
+  }
+
+  .frameParent22 {
+    min-height: 860px !important;
+  }
+
+  .connectedLearningEcosystemParent {
+    min-height: 700px !important;
+  }
+
+  .frameParent36,
+  .frameParent40 {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+
+  .interconnectivity {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding-left: 24px !important;
+    padding-right: 24px !important;
+    overflow-x: hidden !important;
+    box-sizing: border-box !important;
+  }
+
+  .interconnectivity>.frameDiv,
+  .interconnectivity>.frameParent2,
+  .interconnectivity>.frameParent8,
+  .interconnectivity>.frameParent11,
+  .interconnectivity>.frameParent19,
+  .interconnectivity>.frameParent22,
+  .interconnectivity>.connectedLearningEcosystemParent,
+  .interconnectivity>.ellipseGroup {
+    /* width: 100% !important;
+    max-width: 100% !important;
+    margin-left: auto !important;
+    margin-right: auto !important; */
+    box-sizing: border-box !important;
+  }
+
+  .frameParent2 {
+    min-height: 700px !important;
+    height: 700px !important;
+    padding: 28px 28px !important;
+    overflow: hidden !important;
+  }
+
+  .frameParent3 {
+    position: relative !important;
+    top: auto !important;
+    left: auto !important;
+    width: 46% !important;
+    max-width: 46% !important;
+    height: auto !important;
+    transform: none !important;
+    gap: 28px !important;
+    z-index: 3 !important;
+  }
+
+  .frameParent4,
+  .frameParent5 {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    gap: 18px !important;
+  }
+
+  .frameIcon {
+    width: min(388px, 100%) !important;
+    max-width: 100% !important;
+    font-size: 20px !important;
+    white-space: normal !important;
+    text-align: center !important;
+  }
+
+  .seamlessInterconnectivityWit {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    font-size: 34px !important;
+    line-height: 1.28 !important;
+    overflow-wrap: break-word !important;
+  }
+
+  .connectLearnersEducators {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    font-size: 20px !important;
+    line-height: 30px !important;
+    overflow-wrap: break-word !important;
+  }
+
+  .frameWrapper {
+    margin-top: 6px !important;
+  }
+
+  .ellipseParent {
+    top: 50% !important;
+    left: auto !important;
+    right: 18px !important;
+    width: 437px !important;
+    height: 437px !important;
+    transform: translateY(-50%) scale(.74) !important;
+    transform-origin: center right !important;
+  }
+
+  .frameParent6,
+  .frameParent7 {
+    width: 520px !important;
+    left: auto !important;
+    right: 8px !important;
+    gap: 220px !important;
+  }
+
+  .frameParent8 {
+    min-height: 640px !important;
+    gap: 40px !important;
+  }
+
+  .frameParent9,
+  .frameParent20,
+  .frameParent23 {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+  }
+
+  .oneConnectedPlatformForModParent,
+  .builtForDiverseLearningEnvParent,
+  .connectYourEcosystemInFourParent {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    align-items: center !important;
+    text-align: center !important;
+  }
+
+  .oneConnectedPlatform,
+  .builtForDiverse,
+  .connectSystemsPeople {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    text-align: center !important;
+  }
+
+  .frameParent10,
+  .frameParent21 {
+    width: 100% !important;
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 24px !important;
+    align-items: stretch !important;
+    justify-items: center !important;
+  }
+
+  .frameWrapper2,
+  .frameWrapper3,
+  .frameWrapper4,
+  .rectangleParent2,
+  .frameWrapper6 {
+    width: 100% !important;
+    max-width: 100% !important;
+    justify-self: stretch !important;
+  }
+
+  .frameParent11 {
+    min-height: 640px !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+    gap: 40px !important;
+  }
+
+  .frameWrapper5,
+  .keyBenefitsParent {
+    width: 100% !important;
+    /* max-width: 100% !important; */
+    align-items: center !important;
+    text-align: center !important;
+  }
+
+  .frameParent12,
+  .frameParent13,
+  .frameParent14 {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    align-items: center !important;
+  }
+
+  .breakSilosBuildContainer,
+  .connectSystemsContent3,
+  .keyBenefits {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    text-align: center !important;
+  }
+
+  .frameParent14 {
+    gap: 20px !important;
+  }
+
+  .frameParent15 {
+    width: 100% !important;
+    max-width: 100% !important;
+    display: grid !important;
+    grid-template-columns: 70px minmax(0, 1fr) !important;
+    align-items: center !important;
+    column-gap: 16px !important;
+  }
+
+  .frameChild20,
+  .frameChild21 {
+    width: 70px !important;
+    height: 70px !important;
+    min-width: 70px !important;
+  }
+
+  .onePlatformFor,
+  .seamlessSystemIntegration,
+  .betterCollaborationAnd,
+  .clearerLearningPerformance {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    font-size: 21px !important;
+    line-height: 30px !important;
+    text-align: left !important;
+    white-space: normal !important;
+    overflow-wrap: break-word !important;
+  }
+
+  .frameParent19 {
+    min-height: 690px !important;
+    gap: 40px !important;
+  }
+
+  .frameWrapper6 {
+    height: 300px !important;
+  }
+
+  .frameParent22 {
+    min-height: 900px !important;
+    gap: 40px !important;
+  }
+
+  .frameParent24 {
+    width: 100% !important;
+    max-width: 100% !important;
+    gap: 32px !important;
+  }
+
+  .frameParent25,
+  .frameParent30 {
+    width: 100% !important;
+    max-width: 100% !important;
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 24px !important;
+    align-items: stretch !important;
+  }
+
+  .frameWrapper10,
+  .frameWrapper11,
+  .frameWrapper13 {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: 150px !important;
+  }
+
+  .frameParent26 {
+    width: 100% !important;
+    height: 150px !important;
+    position: relative !important;
+  }
+
+  .image20Parent {
+    top: 16px !important;
+    left: 68px !important;
+    width: calc(100% - 68px) !important;
+    height: 118px !important;
+  }
+
+  .integrateExistingSystemsAndWrapper,
+  .connectLearnersAndEducatorsWrapper {
+    left: 18px !important;
+    width: calc(100% - 36px) !important;
+    max-width: calc(100% - 36px) !important;
+  }
+
+  .integrateExistingSystems,
+  .connectLearnersAnd,
+  .enableCollaborativeLearning {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    font-size: 20px !important;
+    line-height: 28px !important;
+    white-space: normal !important;
+    overflow-wrap: break-word !important;
+  }
+
+  .connectedLearningEcosystemParent {
+    min-height: 720px !important;
+    gap: 40px !important;
+  }
+
+  .frameParent35 {
+    width: 100% !important;
+    max-width: 100% !important;
+    gap: 32px !important;
+  }
+
+  .frameParent36,
+  .frameParent40 {
+    width: 100% !important;
+    max-width: 100% !important;
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 24px !important;
+    align-items: stretch !important;
+  }
+
+  .frameWrapper14 {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: 132px !important;
+  }
+
+  .frameParent37 {
+    top: 50% !important;
+    left: 24px !important;
+    right: 24px !important;
+    width: auto !important;
+    transform: translateY(-50%) !important;
+    gap: 14px !important;
+  }
+
+  .academicLearning,
+  .trainingEcosystems,
+  .lmsIntegration,
+  .collaborativeLearning2 {
+    width: auto !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+    height: auto !important;
+    flex: 1 1 auto !important;
+    font-size: 20px !important;
+    line-height: 28px !important;
+    white-space: normal !important;
+    overflow-wrap: break-word !important;
+  }
+
+  .ellipseGroup {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: 520px !important;
+    min-height: 520px !important;
+    border-radius: 50% !important;
+    overflow: hidden !important;
+  }
+
+  .frameChild43 {
+    width: calc(100% + 20px) !important;
+    height: calc(100% + 20px) !important;
+    left: -10px !important;
+    top: -10px !important;
+  }
+
+  .ellipseContainer {
+    top: 50% !important;
+    left: 50% !important;
+    width: calc(100% - 80px) !important;
+    max-width: 760px !important;
+    height: 430px !important;
+    transform: translate(-50%, -50%) !important;
+  }
+
+  .frameChild44 {
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+  }
+
+  .frameParent43 {
+    top: 50% !important;
+    left: 50% !important;
+    width: calc(100% - 120px) !important;
+    max-width: 660px !important;
+    transform: translate(-50%, -50%) !important;
+    gap: 24px !important;
+  }
+
+  .readyToConnectYourLearningParent {
+    width: 100% !important;
+    height: auto !important;
+  }
+
+  .readyToConnectContainer,
+  .connectYourEcosystem2 {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    text-align: center !important;
+  }
+
+  .frameChild45 {
+    margin-top: 4px !important;
+  }
+
+  .interconnectivity>.frameParent2 {
+    position: relative !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    height: 650px !important;
+    min-height: 650px !important;
+    padding: 32px 28px !important;
+    overflow: hidden !important;
+    box-sizing: border-box !important;
+  }
+
+  .frameParent2 .frameParent3 {
+    position: absolute !important;
+    top: 72px !important;
+    left: 28px !important;
+    width: 43% !important;
+    max-width: 43% !important;
+    height: auto !important;
+    transform: none !important;
+    gap: 26px !important;
+    align-items: flex-start !important;
+    z-index: 5 !important;
+  }
+
+  .frameParent2 .frameParent4,
+  .frameParent2 .frameParent5 {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    gap: 18px !important;
+    align-items: flex-start !important;
+  }
+
+  .frameParent2 .frameIcon {
+    width: 100% !important;
+    max-width: 305px !important;
+    height: auto !important;
+    min-height: 50px !important;
+    padding: 8px 14px !important;
+    font-size: 18px !important;
+    line-height: 24px !important;
+    white-space: normal !important;
+    text-align: center !important;
+  }
+
+  .frameParent2 .seamlessInterconnectivityWit {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    font-size: 32px !important;
+    line-height: 1.28 !important;
+    overflow-wrap: break-word !important;
+  }
+
+  .frameParent2 .connectLearnersEducators {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    font-size: 19px !important;
+    line-height: 29px !important;
+    overflow-wrap: break-word !important;
+  }
+
+  .frameParent2 .frameWrapper {
+    width: 220px !important;
+    height: 58px !important;
+    margin-top: 2px !important;
+    padding: 12px 24px !important;
+  }
+
+  .frameParent2 .ellipseParent {
+    position: absolute !important;
+    top: 50% !important;
+    right: 55px !important;
+    left: auto !important;
+    width: 437px !important;
+    height: 437px !important;
+    margin: 0 !important;
+    transform: translateY(-50%) scale(.70) !important;
+    transform-origin: center right !important;
+    z-index: 2 !important;
+  }
+
+  .frameParent2 .frameParent6,
+  .frameParent2 .frameParent7 {
+    position: absolute !important;
+    left: auto !important;
+    right: 18px !important;
+    width: 360px !important;
+    max-width: 360px !important;
+    height: 50px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    gap: 0 !important;
+    z-index: 6 !important;
+  }
+
+  .frameParent2 .frameParent6 {
+    top: 56px !important;
+  }
+
+  .frameParent2 .frameParent7 {
+    top: auto !important;
+    bottom: 56px !important;
+  }
+
+  .frameParent2 .userGroup02Parent,
+  .frameParent2 .bankParent,
+  .frameParent2 .analyticsUpParent {
+    width: 132px !important;
+    min-width: 132px !important;
+    height: 50px !important;
+    padding: 10px 14px !important;
+    gap: 8px !important;
+    box-sizing: border-box !important;
+  }
+
+  .frameParent2 .userGroup02Icon {
+    width: 28px !important;
+    height: 28px !important;
+    flex: 0 0 28px !important;
+  }
+
+  .frameParent2 .learners {
+    font-size: 15px !important;
+    line-height: 22px !important;
+    white-space: nowrap !important;
+  }
+
+  .interconnectivity>.frameParent22 {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-height: 640px !important;
+    height: auto !important;
+    padding: 0 24px 32px !important;
+    box-sizing: border-box !important;
+    overflow: hidden !important;
+  }
+
+  .frameParent22 .frameParent23,
+  .frameParent22 .connectYourEcosystemInFourParent,
+  .frameParent22 .frameParent24 {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    box-sizing: border-box !important;
+  }
+
+  .frameParent22 .frameParent24 {
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 28px 24px !important;
+    align-items: stretch !important;
+  }
+
+  .frameParent22 .frameParent25,
+  .frameParent22 .frameParent30 {
+    display: contents !important;
+  }
+
+  .frameParent22 .frameWrapper10,
+  .frameParent22 .frameWrapper11,
+  .frameParent22 .frameWrapper13 {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: 150px !important;
+    min-height: 150px !important;
+    position: relative !important;
+    overflow: hidden !important;
+    box-sizing: border-box !important;
+  }
+
+  .frameParent22 .frameParent26 {
+    position: relative !important;
+    width: 100% !important;
+    height: 150px !important;
+    display: grid !important;
+    grid-template-columns: 110px minmax(0, 1fr) !important;
+    align-items: stretch !important;
+    box-sizing: border-box !important;
+  }
+
+  .frameParent22 .frameParent27,
+  .frameParent22 .frameParent32,
+  .frameParent22 .frameParent34 {
+    position: relative !important;
+    top: auto !important;
+    left: auto !important;
+    width: 110px !important;
+    height: 150px !important;
+    grid-column: 1 !important;
+    grid-row: 1 !important;
+    z-index: 2 !important;
+  }
+
+  .frameParent22 .image20Wrapper {
+    position: absolute !important;
+    inset: 0 !important;
+    width: 110px !important;
+    height: 150px !important;
+    border-radius: 24px !important;
+  }
+
+  .frameParent22 .image20Parent {
+    position: relative !important;
+    top: auto !important;
+    left: auto !important;
+    width: 100% !important;
+    height: 150px !important;
+    grid-column: 2 !important;
+    grid-row: 1 !important;
+    padding: 0 18px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+    box-sizing: border-box !important;
+    overflow: hidden !important;
+  }
+
+  .frameParent22 .integrateExistingSystemsAndWrapper,
+  .frameParent22 .connectLearnersAndEducatorsWrapper {
+    position: static !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    min-width: 0 !important;
+    display: flex !important;
+    align-items: center !important;
+  }
+
+  .frameParent22 .integrateExistingSystems,
+  .frameParent22 .connectLearnersAnd,
+  .frameParent22 .enableCollaborativeLearning {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    margin: 0 !important;
+    font-size: 18px !important;
+    line-height: 26px !important;
+    white-space: normal !important;
+    overflow-wrap: break-word !important;
+    word-break: normal !important;
+    text-align: left !important;
+  }
+
+  .frameParent22 .div,
+  .frameParent22 .div2,
+  .frameParent22 .div4 {
+    position: relative !important;
+    top: auto !important;
+    left: auto !important;
+    width: 100% !important;
+    height: 100% !important;
+    font-size: 58px !important;
+    line-height: 1 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1199px) {
+  .interconnectivity>.frameParent8 {
+    width: calc(100% - 64px) !important;
+    max-width: 1120px !important;
+    min-height: 620px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    gap: 40px !important;
+    box-sizing: border-box !important;
+    overflow: visible !important;
+  }
+
+  .frameParent8 .frameParent9 {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    gap: 24px !important;
+  }
+
+  .frameParent8 .oneConnectedPlatformForModParent {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    gap: 20px !important;
+  }
+
+  .frameParent8 .oneConnectedPlatform,
+  .frameParent8 .connectSystemsContent {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    text-align: center !important;
+  }
+
+  .frameParent8 .frameParent10 {
+    width: 100% !important;
+    max-width: 100% !important;
+    display: grid !important;
+    grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+    gap: 20px !important;
+    align-items: stretch !important;
+    justify-items: stretch !important;
+    box-sizing: border-box !important;
+  }
+
+  .frameParent8 .frameWrapper2,
+  .frameParent8 .frameWrapper3,
+  .frameParent8 .frameWrapper4,
+  .frameParent8 .rectangleParent2 {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: 278px !important;
+    min-width: 0 !important;
+    justify-self: stretch !important;
+    box-sizing: border-box !important;
+  }
+
+  .frameParent8 .rectangleParent,
+  .frameParent8 .rectangleGroup,
+  .frameParent8 .rectangleParent2 {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: 278px !important;
+    left: 0 !important;
+  }
+
+  .frameParent8 .rectangleDiv,
+  .frameParent8 .frameChild4 {
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+  .frameParent8 .frameChild4 {
+    left: 16px !important;
+    width: calc(100% - 32px) !important;
+  }
+
+  .frameParent8 .unifiedLearningEcosystemParent,
+  .frameParent8 .collaborativeLearningParent,
+  .frameParent8 .systemIntegrationsParent {
+    left: 50% !important;
+    width: calc(100% - 32px) !important;
+    max-width: calc(100% - 32px) !important;
+    transform: translateX(-50%) !important;
+  }
+
+  .frameParent8 .unifiedLearningEcosystem,
+  .frameParent8 .enableSharingAnd,
+  .frameParent8 .connectLmsHrms {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    white-space: normal !important;
+    overflow-wrap: break-word !important;
+  }
+
+  .interconnectivity>.frameParent11 {
+    margin-top: 56px !important;
+  }
+
+  .interconnectivity {
+    width: 100% !important;
+    max-width: 100% !important;
+    align-items: center !important;
+    overflow-x: hidden !important;
+  }
+
+  .interconnectivity>.frameDiv,
+  .interconnectivity>.frameParent,
+  .interconnectivity>.frameParent5,
+  .interconnectivity>.frameParent8,
+  .interconnectivity>.frameParent11,
+  .interconnectivity>.frameParent13,
+  .interconnectivity>.frameParent23 {
+    margin-left: auto !important;
+    margin-right: auto !important;
+    box-sizing: border-box !important;
+  }
+
+  .interconnectivity>.frameParent5,
+  .interconnectivity>.frameParent8,
+  .interconnectivity>.frameParent11,
+  .interconnectivity>.frameParent13,
+  .interconnectivity>.frameParent23 {
+    width: calc(100% - 64px) !important;
+    max-width: 1120px !important;
+  }
+
+  .interconnectivity>.frameParent5,
+  .interconnectivity>.frameParent8,
+  .interconnectivity>.frameParent11,
+  .interconnectivity>.frameParent13,
+  .interconnectivity>.frameParent23 {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  .interconnectivity>.frameParent5,
+  .interconnectivity>.frameParent8,
+  .interconnectivity>.frameParent11,
+  .interconnectivity>.frameParent13 {
+    margin-bottom: 48px !important;
+  }
+
+  .interconnectivity>.frameParent8 {
+    min-height: 0 !important;
+    height: auto !important;
+    padding-bottom: 0 !important;
+    gap: 28px !important;
+  }
+
+  .interconnectivity>.frameParent11 {
+    margin-top: 50px !important;
+    padding-top: 0 !important;
+  }
+
+  .interconnectivity>.frameParent13 {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+  }
+
+  .interconnectivity>.frameParent23 {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    padding-top: 0 !important;
+  }
+
+  .frameParent8 .frameParent9,
+  .frameParent8 .frameParent10,
+  .frameParent11>*,
+  .frameParent13>*,
+  .frameParent23>* {
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  .interconnectivity>.frameParent22 {
+    min-height: 0 !important;
+    height: auto !important;
+    padding-bottom: 0 !important;
+    margin-bottom: 48px !important;
+    gap: 32px !important;
+    overflow: visible !important;
+  }
+
+  .interconnectivity>.connectedLearningEcosystemParent {
+    min-height: 0 !important;
+    height: auto !important;
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+  }
+
+  .frameWrapper10 .image20Parent,
+  .frameWrapper11 .image20Parent,
+  .frameWrapper12 .image20Parent,
+  .frameWrapper13 .image20Parent,
+  .frameWrapper10:hover .image20Parent,
+  .frameWrapper11:hover .image20Parent,
+  .frameWrapper12:hover .image20Parent,
+  .frameWrapper13:hover .image20Parent {
+    border: 0 !important;
+    border-color: transparent !important;
+    outline: none !important;
+  }
+
+  .interconnectivity>.frameParent19 {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    padding-left: 24px !important;
+    padding-right: 24px !important;
+    box-sizing: border-box !important;
+    overflow: hidden !important;
+  }
+
+  .interconnectivity>.frameParent19>div {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    box-sizing: border-box !important;
+  }
+
+  .interconnectivity .frameParent19 .frameParent21 {
+    width: 100% !important;
+    max-width: 760px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    column-gap: 48px !important;
+    row-gap: 24px !important;
+    align-items: stretch !important;
+    justify-items: center !important;
+    padding: 0 !important;
+    box-sizing: border-box !important;
+  }
+
+  .interconnectivity .frameParent19 .frameParent21>* {
+    width: 100% !important;
+    max-width: 301px !important;
+    margin: 0 auto !important;
+    left: auto !important;
+    right: auto !important;
+    top: auto !important;
+    transform: none !important;
+    translate: none !important;
+    box-sizing: border-box !important;
+  }
+
+  .interconnectivity .frameParent19 .frameParent21>*:hover {
+    transform: none !important;
+    translate: none !important;
+    margin: 0 auto !important;
+  }
+
+  .interconnectivity .frameParent19 .frameWrapper6,
+  .interconnectivity .frameParent19 .rectangleParent3,
+  .interconnectivity .frameParent19 .frameChild25,
+  .interconnectivity .frameParent19 .frameChild26,
+  .interconnectivity .frameParent19 .frameChild28 {
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+  .interconnectivity .frameParent19 img {
+    max-width: 100% !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .interconnectivity {
+    padding: 0 16px 56px !important;
+    align-items: center !important;
+  }
+
+  .interconnectivity>.frameDiv {
+    margin-top: 20px !important;
+    overflow-x: auto !important;
+    overflow-y: hidden !important;
+    white-space: nowrap !important;
+    scrollbar-width: none !important;
+  }
+
+  .interconnectivity>.frameDiv::-webkit-scrollbar {
+    display: none !important;
+  }
+
+  .featuresWrapper,
+  .arrowRightDoubleGroup {
+    flex-shrink: 0 !important;
+    white-space: nowrap !important;
+  }
+
+  .interconnectivity>.frameParent2,
+  .interconnectivity>.frameParent8,
+  .interconnectivity>.frameParent11,
+  .interconnectivity>.frameParent19,
+  .interconnectivity>.frameParent22,
+  .interconnectivity>.connectedLearningEcosystemParent,
+  .interconnectivity>.ellipseGroup,
+  .interconnectivity>.frameParent44 {
+    margin-top: 48px !important;
+  }
+
+  .frameParent2 {
+    min-height: 780px !important;
+    padding: 28px 16px !important;
+    overflow: hidden !important;
+  }
+
+  .frameParent3 {
+    position: relative !important;
+    top: auto !important;
+    left: auto !important;
+    width: 100% !important;
+    transform: none !important;
+    align-items: center !important;
+    text-align: center !important;
+    gap: 24px !important;
+  }
+
+  .frameParent4,
+  .frameParent5 {
+    width: 100% !important;
+    height: auto !important;
+    align-items: center !important;
+  }
+
+  .frameIcon {
+    width: min(388px, 100%) !important;
+    height: auto !important;
+    min-height: 50px !important;
+    white-space: normal !important;
+    text-align: center !important;
+    font-size: 18px !important;
+    line-height: 26px !important;
+  }
+
+  .seamlessInterconnectivityWit {
+    width: 100% !important;
+    font-size: clamp(28px, 8vw, 36px) !important;
+    line-height: 1.25 !important;
+    justify-content: center !important;
+    text-align: center !important;
+  }
+
+  .connectLearnersEducators {
+    width: 100% !important;
+    font-size: clamp(18px, 5vw, 22px) !important;
+    line-height: 1.45 !important;
+    text-align: center !important;
+  }
+
+  .frameWrapper {
+    width: min(284px, 100%) !important;
+  }
+
+  .ellipseParent {
+    position: relative !important;
+    top: auto !important;
+    right: auto !important;
+    left: 50% !important;
+    width: 437px !important;
+    height: 437px !important;
+    margin-top: 24px !important;
+    transform: translateX(-50%) scale(.68) !important;
+    transform-origin: top center !important;
+  }
+
+  .frameParent6,
+  .frameParent7 {
+    display: none !important;
+  }
+
+  .frameParent8 {
+    min-height: 0 !important;
+    gap: 32px !important;
+  }
+
+  .frameParent9 {
+    width: 100% !important;
+    height: auto !important;
+    gap: 24px !important;
+  }
+
+  .oneConnectedPlatformForModParent,
+  .builtForDiverseLearningEnvParent,
+  .connectYourEcosystemInFourParent {
+    width: 100% !important;
+    height: auto !important;
+    gap: 20px !important;
+  }
+
+  .oneConnectedPlatform,
+  .builtForDiverse,
+  .connectedLearningEcosystem {
+    width: 100% !important;
+    height: auto !important;
+    font-size: clamp(28px, 8vw, 36px) !important;
+    line-height: 1.25 !important;
+    text-align: center !important;
+  }
+
+  .connectSystemsContent,
+  .aConnectedPlatform,
+  .connectSystemsPeople {
+    width: 100% !important;
+    height: auto !important;
+    font-size: 18px !important;
+    line-height: 28px !important;
+    text-align: center !important;
+  }
+
+  .frameParent10,
+  .frameParent21 {
+    width: 100% !important;
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    justify-items: center !important;
+    gap: 24px !important;
+  }
+
+  .frameWrapper2,
+  .frameWrapper3,
+  .frameWrapper4,
+  .rectangleParent2,
+  .frameWrapper6 {
+    width: min(301px, 100%) !important;
+    max-width: 100% !important;
+    flex: none !important;
+  }
+
+  .frameParent11 {
+    min-height: 0 !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 40px !important;
+  }
+
+  .frameWrapper5,
+  .keyBenefitsParent {
+    width: 100% !important;
+    max-width: 100% !important;
+    align-items: center !important;
+    text-align: center !important;
+  }
+
+  .frameParent12,
+  .frameParent13,
+  .frameParent14 {
+    width: 100% !important;
+    height: auto !important;
+    align-items: center !important;
+  }
+
+  .breakSilosBuildContainer,
+  .connectSystemsContent3,
+  .keyBenefits {
+    width: 100% !important;
+    height: auto !important;
+    text-align: center !important;
+  }
+
+  .frameParent15 {
+    width: 100% !important;
+    justify-content: flex-start !important;
+    gap: 14px !important;
+  }
+
+  .onePlatformFor,
+  .seamlessSystemIntegration,
+  .betterCollaborationAnd,
+  .clearerLearningPerformance {
+    width: calc(100% - 86px) !important;
+    height: auto !important;
+    font-size: 17px !important;
+    line-height: 26px !important;
+    white-space: normal !important;
+  }
+
+  .frameParent19 {
+    min-height: 0 !important;
+    gap: 32px !important;
+  }
+
+  .frameParent20 {
+    width: 100% !important;
+    height: auto !important;
+    gap: 20px !important;
+  }
+
+  .frameParent22 {
+    min-height: 0 !important;
+    gap: 32px !important;
+  }
+
+  .frameParent23 {
+    width: 100% !important;
+    height: auto !important;
+  }
+
+  .frameParent24 {
+    width: 100% !important;
+    gap: 24px !important;
+  }
+
+  .frameParent25,
+  .frameParent30 {
+    width: 100% !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 24px !important;
+  }
+
+  .frameWrapper10,
+  .frameWrapper11,
+  .frameWrapper13 {
+    width: min(539px, 100%) !important;
+    max-width: 100% !important;
+  }
+
+  .connectedLearningEcosystemParent {
+    min-height: 0 !important;
+    gap: 32px !important;
+  }
+
+  .frameParent35 {
+    width: 100% !important;
+    gap: 24px !important;
+  }
+
+  .frameParent36,
+  .frameParent40 {
+    width: 100% !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 20px !important;
+  }
+
+  .frameWrapper14 {
+    width: min(400px, 100%) !important;
+  }
+
+  .ellipseGroup {
+    min-height: 520px !important;
+    height: 520px !important;
+    border-radius: 40px !important;
+  }
+
+  .frameChild43 {
+    border-radius: 40px !important;
+  }
+
+  .ellipseContainer {
+    top: 50% !important;
+    width: calc(100% - 24px) !important;
+    height: calc(100% - 24px) !important;
+    transform: translate(-50%, -50%) !important;
+  }
+
+  .frameChild44 {
+    top: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    border-radius: 40px !important;
+  }
+
+  .frameParent43 {
+    top: 50% !important;
+    width: calc(100% - 48px) !important;
+    transform: translate(-50%, -50%) !important;
+    gap: 24px !important;
+  }
+
+  .readyToConnectYourLearningParent {
+    width: 100% !important;
+    height: auto !important;
+  }
+
+  .readyToConnectContainer,
+  .connectYourEcosystem2 {
+    width: 100% !important;
+    height: auto !important;
+    font-size: 18px !important;
+    line-height: 28px !important;
+  }
+
+  .readyToConnectContainer {
+    font-size: clamp(28px, 8vw, 36px) !important;
+    line-height: 1.25 !important;
+  }
+
+  .frameParent44 {
+    height: auto !important;
+    min-height: 0 !important;
+  }
+
+  .frameParent22 {
+    width: 100% !important;
+    max-width: 100% !important;
+    overflow: hidden !important;
+    box-sizing: border-box !important;
+  }
+
+  .frameParent24 {
+    width: 100% !important;
+    max-width: 100% !important;
+    align-items: center !important;
+    box-sizing: border-box !important;
+  }
+
+  .frameParent25,
+  .frameParent30 {
+    width: 100% !important;
+    max-width: 100% !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 24px !important;
+    box-sizing: border-box !important;
+  }
+
+  .frameWrapper10,
+  .frameWrapper11,
+  .frameWrapper13 {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    min-height: 126px !important;
+    margin: 0 auto !important;
+    position: relative !important;
+    box-sizing: border-box !important;
+    overflow: hidden !important;
+  }
+
+  .frameParent26,
+  .frameParent27,
+  .frameParent32,
+  .frameParent34 {
+    position: relative !important;
+    top: auto !important;
+    left: auto !important;
+    width: 100% !important;
+    height: auto !important;
+    min-height: 126px !important;
+    display: flex !important;
+    align-items: center !important;
+    box-sizing: border-box !important;
+  }
+
+  .image20Parent {
+    position: relative !important;
+    top: auto !important;
+    left: auto !important;
+    width: 100% !important;
+    height: 126px !important;
+    padding: 0 16px 0 112px !important;
+    display: flex !important;
+    align-items: center !important;
+    box-sizing: border-box !important;
+    overflow: hidden !important;
+  }
+
+  .frameParent27,
+  .frameParent32,
+  .frameParent34 {
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 112px !important;
+    height: 126px !important;
+    min-height: 126px !important;
+    z-index: 2 !important;
+  }
+
+  .image20Wrapper {
+    width: 112px !important;
+    height: 126px !important;
+    border-radius: 24px !important;
+  }
+
+  .integrateExistingSystemsAndWrapper,
+  .connectLearnersAndEducatorsWrapper {
+    position: relative !important;
+    top: auto !important;
+    left: auto !important;
+    width: 100% !important;
+    height: auto !important;
+    min-width: 0 !important;
+    display: flex !important;
+    align-items: flex-start !important;
+    box-sizing: border-box !important;
+  }
+
+  .integrateExistingSystems,
+  .connectLearnersAnd,
+  .enableCollaborativeLearning {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    white-space: normal !important;
+    overflow-wrap: break-word !important;
+    font-size: 18px !important;
+    line-height: 26px !important;
+    box-sizing: border-box !important;
+  }
+
+  .div,
+  .div2,
+  .div4 {
+    width: 100% !important;
+    height: 100% !important;
+    top: 0 !important;
+    left: 0 !important;
+    font-size: 54px !important;
+    line-height: 1 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+
+  .frameParent11 {
+    width: 100% !important;
+    max-width: 100% !important;
+    overflow: hidden !important;
+    box-sizing: border-box !important;
+  }
+
+  .keyBenefitsParent {
+    width: 100% !important;
+    max-width: 100% !important;
+    align-items: center !important;
+    text-align: center !important;
+    box-sizing: border-box !important;
+  }
+
+  .frameParent14 {
+    width: 100% !important;
+    max-width: 100% !important;
+    align-items: stretch !important;
+    gap: 20px !important;
+    box-sizing: border-box !important;
+  }
+
+  .frameParent15 {
+    width: 100% !important;
+    max-width: 100% !important;
+    display: grid !important;
+    grid-template-columns: 58px minmax(0, 1fr) !important;
+    align-items: center !important;
+    column-gap: 14px !important;
+    box-sizing: border-box !important;
+  }
+
+  .frameChild20,
+  .frameChild21 {
+    width: 58px !important;
+    height: 58px !important;
+    min-width: 58px !important;
+    flex: 0 0 58px !important;
+  }
+
+  .onePlatformFor,
+  .seamlessSystemIntegration,
+  .betterCollaborationAnd,
+  .clearerLearningPerformance {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    min-width: 0 !important;
+    font-size: 16px !important;
+    line-height: 24px !important;
+    white-space: normal !important;
+    overflow-wrap: break-word !important;
+    text-align: left !important;
+    box-sizing: border-box !important;
+  }
+
+  .frameParent19 {
+    width: 100% !important;
+    max-width: 100% !important;
+    overflow: hidden !important;
+    box-sizing: border-box !important;
+  }
+
+  .frameParent20,
+  .builtForDiverseLearningEnvParent {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    box-sizing: border-box !important;
+  }
+
+  .builtForDiverse,
+  .aConnectedPlatform {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    overflow-wrap: break-word !important;
+    text-align: center !important;
+  }
+
+  .frameParent22 {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  .frameParent24 {
+    width: 100% !important;
+    max-width: 100% !important;
+    align-items: center !important;
+    text-align: center !important;
+  }
+
+  .frameParent25,
+  .frameParent30 {
+    width: 100% !important;
+    max-width: 100% !important;
+    gap: 24px !important;
+  }
+
+  .frameWrapper10,
+  .frameWrapper11,
+  .frameWrapper13 {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-height: 124px !important;
+    height: auto !important;
+    margin: 0 auto !important;
+    overflow: hidden !important;
+    border-radius: 16px !important;
+  }
+
+  .frameParent26 {
+    position: relative !important;
+    width: 100% !important;
+    height: 124px !important;
+    min-height: 124px !important;
+    display: grid !important;
+    grid-template-columns: 104px minmax(0, 1fr) !important;
+    align-items: stretch !important;
+  }
+
+  .image20Parent {
+    position: relative !important;
+    top: auto !important;
+    left: auto !important;
+    width: 100% !important;
+    height: 124px !important;
+    padding: 0 18px !important;
+    grid-column: 2 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+    overflow: hidden !important;
+  }
+
+  .frameParent27,
+  .frameParent32,
+  .frameParent34 {
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 104px !important;
+    height: 124px !important;
+    min-height: 124px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    z-index: 2 !important;
+  }
+
+  .image20Wrapper {
+    position: absolute !important;
+    inset: 0 !important;
+    width: 104px !important;
+    height: 124px !important;
+    border-radius: 16px !important;
+  }
+
+  .integrateExistingSystemsAndWrapper,
+  .connectLearnersAndEducatorsWrapper {
+    position: static !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    min-width: 0 !important;
+    display: flex !important;
+    align-items: center !important;
+  }
+
+  .integrateExistingSystems,
+  .connectLearnersAnd,
+  .enableCollaborativeLearning {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    margin: 0 !important;
+    font-size: 17px !important;
+    line-height: 24px !important;
+    text-align: left !important;
+    white-space: normal !important;
+    overflow-wrap: anywhere !important;
+    word-break: normal !important;
+  }
+
+  .div,
+  .div2,
+  .div4 {
+    position: relative !important;
+    top: auto !important;
+    left: auto !important;
+    width: auto !important;
+    height: auto !important;
+    font-size: 52px !important;
+    line-height: 1 !important;
+  }
+
+  .frameParent11 {
+    width: 100% !important;
+    max-width: 100% !important;
+    align-items: center !important;
+  }
+
+  .keyBenefitsParent {
+    width: 100% !important;
+    max-width: 100% !important;
+    align-items: center !important;
+    text-align: center !important;
+  }
+
+  .frameParent14 {
+    width: 100% !important;
+    max-width: 100% !important;
+    align-items: stretch !important;
+    gap: 18px !important;
+  }
+
+  .frameParent15 {
+    width: 100% !important;
+    max-width: 100% !important;
+    display: grid !important;
+    grid-template-columns: 58px minmax(0, 1fr) !important;
+    align-items: center !important;
+    justify-content: stretch !important;
+    column-gap: 14px !important;
+    padding: 0 8px !important;
+    box-sizing: border-box !important;
+  }
+
+  .frameChild20,
+  .frameChild21 {
+    width: 58px !important;
+    height: 58px !important;
+    min-width: 58px !important;
+    margin: 0 !important;
+    justify-self: center !important;
+  }
+
+  .onePlatformFor,
+  .seamlessSystemIntegration,
+  .betterCollaborationAnd,
+  .clearerLearningPerformance {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+    height: auto !important;
+    margin: 0 !important;
+    font-size: 15px !important;
+    line-height: 22px !important;
+    text-align: left !important;
+    white-space: normal !important;
+    overflow-wrap: anywhere !important;
+    word-break: normal !important;
+  }
+
+  .frameParent19 {
+    width: 100% !important;
+    max-width: 100% !important;
+    align-items: center !important;
+    text-align: center !important;
+  }
+
+  .frameParent20,
+  .builtForDiverseLearningEnvParent {
+    width: 100% !important;
+    max-width: 100% !important;
+    align-items: center !important;
+    text-align: center !important;
+  }
+
+  .builtForDiverse,
+  .aConnectedPlatform {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    text-align: center !important;
+    white-space: normal !important;
+    overflow-wrap: anywhere !important;
+  }
+
+  .keyBenefitsParent .frameParent14 {
+    width: 100% !important;
+    max-width: 100% !important;
+    align-items: stretch !important;
+  }
+
+  .keyBenefitsParent .frameParent15 {
+    width: 100% !important;
+    max-width: 100% !important;
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+    gap: 18px !important;
+    padding: 0 8px !important;
+    box-sizing: border-box !important;
+    overflow: visible !important;
+  }
+
+  .keyBenefitsParent .frameParent15>.frameChild20,
+  .keyBenefitsParent .frameParent15>.frameChild21 {
+    width: 58px !important;
+    height: 58px !important;
+    min-width: 58px !important;
+    flex: 0 0 58px !important;
+    margin: 0 !important;
+    transform: none !important;
+    position: relative !important;
+    z-index: 1 !important;
+  }
+
+  .keyBenefitsParent .onePlatformFor,
+  .keyBenefitsParent .seamlessSystemIntegration,
+  .keyBenefitsParent .betterCollaborationAnd,
+  .keyBenefitsParent .clearerLearningPerformance {
+    position: relative !important;
+    z-index: 2 !important;
+    width: auto !important;
+    max-width: none !important;
+    min-width: 0 !important;
+    height: auto !important;
+    flex: 1 1 auto !important;
+    margin: 0 !important;
+    padding-left: 4px !important;
+    font-size: 16px !important;
+    line-height: 22px !important;
+    text-align: left !important;
+    white-space: normal !important;
+    overflow-wrap: break-word !important;
+    word-break: normal !important;
+  }
+
+  .connectedLearningEcosystemParent {
+    width: 100% !important;
+    max-width: 100% !important;
+    overflow: hidden !important;
+    box-sizing: border-box !important;
+  }
+
+  .connectedLearningEcosystemParent .frameParent35,
+  .connectedLearningEcosystemParent .frameParent36,
+  .connectedLearningEcosystemParent .frameParent40 {
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+  .connectedLearningEcosystemParent .frameParent36,
+  .connectedLearningEcosystemParent .frameParent40 {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 20px !important;
+  }
+
+  .connectedLearningEcosystemParent .frameWrapper14 {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: 132px !important;
+    min-height: 132px !important;
+    margin: 0 auto !important;
+    box-sizing: border-box !important;
+    overflow: hidden !important;
+  }
+
+  .connectedLearningEcosystemParent .frameParent37 {
+    position: absolute !important;
+    top: 50% !important;
+    left: 16px !important;
+    right: 16px !important;
+    width: auto !important;
+    max-width: none !important;
+    transform: translateY(-50%) !important;
+    display: flex !important;
+    align-items: center !important;
+    gap: 14px !important;
+    box-sizing: border-box !important;
+  }
+
+  .connectedLearningEcosystemParent .frameParent37> :first-child {
+    flex: 0 0 auto !important;
+    max-width: 58px !important;
+  }
+
+  .connectedLearningEcosystemParent .academicLearning,
+  .connectedLearningEcosystemParent .trainingEcosystems,
+  .connectedLearningEcosystemParent .lmsIntegration,
+  .connectedLearningEcosystemParent .collaborativeLearning2 {
+    width: auto !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+    height: auto !important;
+    flex: 1 1 0 !important;
+    margin: 0 !important;
+    font-size: 18px !important;
+    line-height: 26px !important;
+    text-align: left !important;
+    white-space: normal !important;
+    overflow-wrap: break-word !important;
+    word-break: normal !important;
+    box-sizing: border-box !important;
+  }
+}
+
+@media (max-width: 425px) {
+  .interconnectivity {
+    padding-left: 12px !important;
+    padding-right: 12px !important;
+  }
+
+  .frameParent2 {
+    min-height: 840px !important;
+  }
+
+  .ellipseParent {
+    transform: translateX(-50%) scale(.62) !important;
+  }
+
+  .frameIcon {
+    font-size: 16px !important;
+  }
+
+  .frameChild3,
+  .frameChild24,
+  .frameChild33 {
+    max-width: calc(100% - 24px) !important;
+  }
+
+  .frameParent15 {
+    align-items: flex-start !important;
+  }
+
+  .frameChild20,
+  .frameChild21 {
+    width: 58px !important;
+    height: 58px !important;
+    flex: 0 0 58px !important;
+  }
+
+  .onePlatformFor,
+  .seamlessSystemIntegration,
+  .betterCollaborationAnd,
+  .clearerLearningPerformance {
+    width: calc(100% - 72px) !important;
+  }
+
+  .ellipseGroup {
+    height: 500px !important;
+    min-height: 500px !important;
+  }
+
+  .image20Parent {
+    padding-left: 104px !important;
+  }
+
+  .frameParent27,
+  .frameParent32,
+  .frameParent34,
+  .image20Wrapper {
+    width: 104px !important;
+  }
+
+  .integrateExistingSystems,
+  .connectLearnersAnd,
+  .enableCollaborativeLearning {
+    font-size: 17px !important;
+    line-height: 24px !important;
+  }
+
+  .frameParent15 {
+    grid-template-columns: 54px minmax(0, 1fr) !important;
+    column-gap: 12px !important;
+  }
+
+  .frameChild20,
+  .frameChild21 {
+    width: 54px !important;
+    height: 54px !important;
+    min-width: 54px !important;
+  }
+
+  .onePlatformFor,
+  .seamlessSystemIntegration,
+  .betterCollaborationAnd,
+  .clearerLearningPerformance {
+    font-size: 15px !important;
+    line-height: 22px !important;
+  }
+
+  .frameParent26 {
+    grid-template-columns: 92px minmax(0, 1fr) !important;
+  }
+
+  .frameParent27,
+  .frameParent32,
+  .frameParent34,
+  .image20Wrapper {
+    width: 92px !important;
+  }
+
+  .image20Parent {
+    padding-left: 14px !important;
+    padding-right: 14px !important;
+  }
+
+  .integrateExistingSystems,
+  .connectLearnersAnd,
+  .enableCollaborativeLearning {
+    font-size: 16px !important;
+    line-height: 23px !important;
+  }
+
+  .frameParent15 {
+    grid-template-columns: 54px minmax(0, 1fr) !important;
+    column-gap: 12px !important;
+    padding-left: 4px !important;
+    padding-right: 4px !important;
+  }
+
+  .frameChild20,
+  .frameChild21 {
+    width: 54px !important;
+    height: 54px !important;
+    min-width: 54px !important;
+  }
+
+  .onePlatformFor,
+  .seamlessSystemIntegration,
+  .betterCollaborationAnd,
+  .clearerLearningPerformance {
+    font-size: 14px !important;
+    line-height: 21px !important;
+  }
+
+  .keyBenefitsParent .frameParent15 {
+    gap: 14px !important;
+    padding-left: 4px !important;
+    padding-right: 4px !important;
+  }
+
+  .keyBenefitsParent .frameParent15>.frameChild20,
+  .keyBenefitsParent .frameParent15>.frameChild21 {
+    width: 54px !important;
+    height: 54px !important;
+    min-width: 54px !important;
+    flex-basis: 54px !important;
+  }
+
+  .keyBenefitsParent .onePlatformFor,
+  .keyBenefitsParent .seamlessSystemIntegration,
+  .keyBenefitsParent .betterCollaborationAnd,
+  .keyBenefitsParent .clearerLearningPerformance {
+    padding-left: 2px !important;
+    font-size: 14px !important;
+    line-height: 21px !important;
+  }
+
+  .connectedLearningEcosystemParent .frameWrapper14 {
+    height: 124px !important;
+    min-height: 124px !important;
+  }
+
+  .connectedLearningEcosystemParent .frameParent37 {
+    left: 14px !important;
+    right: 14px !important;
+    gap: 12px !important;
+  }
+
+  .connectedLearningEcosystemParent .frameParent37> :first-child {
+    max-width: 54px !important;
+  }
+
+  .connectedLearningEcosystemParent .academicLearning,
+  .connectedLearningEcosystemParent .trainingEcosystems,
+  .connectedLearningEcosystemParent .lmsIntegration,
+  .connectedLearningEcosystemParent .collaborativeLearning2 {
+    font-size: 16px !important;
+    line-height: 23px !important;
+  }
+}
+
+@media (max-width: 360px) {
+  .interconnectivity {
+    padding-left: 8px !important;
+    padding-right: 8px !important;
+  }
+
+  .frameParent2 {
+    min-height: 800px !important;
+  }
+
+  .ellipseParent {
+    transform: translateX(-50%) scale(.56) !important;
+  }
+
+  .oneConnectedPlatform,
+  .builtForDiverse,
+  .connectedLearningEcosystem,
+  .readyToConnectContainer,
+  .seamlessInterconnectivityWit {
+    font-size: 28px !important;
+  }
+
+  .connectSystemsContent,
+  .aConnectedPlatform,
+  .connectSystemsPeople,
+  .connectLearnersEducators,
+  .connectSystemsContent3,
+  .connectYourEcosystem2 {
+    font-size: 16px !important;
+    line-height: 24px !important;
+  }
+
+  .connectedLearningEcosystemParent .frameParent37 {
+    left: 12px !important;
+    right: 12px !important;
+    gap: 10px !important;
+  }
+
+  .connectedLearningEcosystemParent .academicLearning,
+  .connectedLearningEcosystemParent .trainingEcosystems,
+  .connectedLearningEcosystemParent .lmsIntegration,
+  .connectedLearningEcosystemParent .collaborativeLearning2 {
+    font-size: 15px !important;
+    line-height: 22px !important;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1420px) {
+  .ellipseParent {
+    left: 650px !important;
+  }
+
+  .frameParent6 {
+    left: 550px !important;
+  }
+
+  .frameParent7 {
+    left: 550px !important;
+  }
+}
+
+@media (min-width: 1195px) and (max-width: 1320px) {
+  .frameParent2 .ellipseParent {
+    transform-origin: 100% !important;
+    z-index: 2 !important;
+    width: 437px !important;
+    height: 437px !important;
+    margin: 0 !important;
+    position: absolute !important;
+    top: 50% !important;
+    left: auto !important;
+    right: 120px !important;
+    transform: translateY(-50%) scale(.7) !important;
+  }
+
+  .frameParent2 .frameParent6,
+  .frameParent2 .frameParent7 {
+    z-index: 6 !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    gap: 0 !important;
+    width: 360px !important;
+    max-width: 360px !important;
+    height: 50px !important;
+    display: flex !important;
+    position: absolute !important;
+    left: auto !important;
+    right: 90px !important;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1195px) {
+  .frameParent2 .ellipseParent {
+    transform-origin: 100% !important;
+    z-index: 2 !important;
+    width: 437px !important;
+    height: 437px !important;
+    margin: 0 !important;
+    position: absolute !important;
+    top: 50% !important;
+    left: auto !important;
+    right: 48px !important;
+    transform: translateY(-50%) scale(.7) !important;
+  }
+
+  .frameParent2 .frameParent6,
+  .frameParent2 .frameParent7 {
+    z-index: 6 !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    gap: 0 !important;
+    width: 360px !important;
+    max-width: 360px !important;
+    height: 60px !important;
+    display: flex !important;
+    position: absolute !important;
+    left: auto !important;
+    right: 25px !important;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1140px) {
+  .frameParent2 .frameParent3 {
+    width: 35% !important;
+    max-width: 35% !important;
+  }
+
+  .frameParent2 .seamlessInterconnectivityWit {
+    overflow-wrap: break-word !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    font-size: 32px !important;
+    line-height: 1.28 !important;
+  }
+
+  .frameParent2 .connectLearnersEducators {
+    overflow-wrap: break-word !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    font-size: 19px !important;
+    line-height: 29px !important;
+    margin-top: 15px;
+  }
+
+  .frameParent2 .frameIcon {
+    white-space: normal !important;
+    text-align: center !important;
+    width: 100% !important;
+    max-width: 305px !important;
+    height: auto !important;
+    min-height: 50px !important;
+    padding: 8px 14px !important;
+    font-size: 18px !important;
+    line-height: 24px !important;
+  }
+}
+
+@media (max-width: 525px) {
+  .frameIcon {
+    font-size: 15px !important;
+  }
+
+  .seamlessInterconnectivityWit {
+    font-size: 22px !important;
+  }
+
+  .interconnectivity>.frameParent2 {
+    width: calc(100% - 32px) !important;
+    max-width: none !important;
+  }
+
+  .ellipseParent {
+    top: 8% !important;
+  }
+}
+
+@media (min-width: 1199px) and (max-width: 1400px) {
+  .rectangleDiv {
+    width: 260px !important;
+  }
+
+  .frameChild4 {
+    width: 200px !important;
+  }
+
+  .featureIconTop {
+    left: 45% !important;
+  }
+
+  .frameChild6,
+  .frameChild12,
+  .frameChild8,
+  .frameChild16 {
+    left: calc(45% - 39px);
+  }
+
+  .collaborativeLearningParent{
+    left: calc(45% - 103px);
+  }
+
+  .unifiedLearningEcosystemParent .unifiedLearningEcosystem,
+  .collaborativeLearningParent .unifiedLearningEcosystem,
+  .systemIntegrationsParent .unifiedLearningEcosystem {
+    font-size: 22px !important;
+  }
+
+  .unifiedLearningEcosystemParent .enableSharingAnd,
+  .systemIntegrationsParent .connectLmsHrms,
+  .systemIntegrationsParent .enableSharingAnd {
+    font-size: 16px !important;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1300px) {
+  .frameParent11 {
+    gap: 60px !important;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1350px) {
+  .interconnectivity .frameParent19 .frameParent21 {
+    box-sizing: border-box !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    place-items: stretch center !important;
+    gap: 24px 48px !important;
+    width: 100% !important;
+    max-width: 760px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    padding: 0 !important;
+    display: grid !important;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1350px) {
+
+  .frameParent36,
+  .frameParent40 {
+    gap: 20px !important;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1186px) {
+  .readyToConnectYourLearningParent .readyToConnectContainer {
+    font-size: 24px !important;
+  }
+}
+
+@media (min-width: 1198px) and (max-width: 1395px) {
+  .frameParent25, .frameParent30 {
+    gap: 120px !important;
+  }
+
+  .frameParent36,
+  .frameParent40 {
+    gap: 30px !important;
+  }
+}
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+  /* Parent section */
+  .interconnectivity > .frameParent8 {
+    width: calc(100% - 48px) !important;
+    max-width: 1280px !important;
+    min-height: 640px !important;
+    margin: 56px auto 0 !important;
+    box-sizing: border-box !important;
+  }
+
+  /* Grid containing the cards */
+  .frameParent10,
+  .frameParent21 {
+    width: 100% !important;
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 301px)) !important;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 24px !important;
+  }
+
+  /* Cards */
+  .frameWrapper2,
+  .frameWrapper3,
+  .frameWrapper4,
+  .rectangleParent2,
+  .frameWrapper6 {
+    width: 100% !important;
+    max-width: 301px !important;
+    min-width: 0 !important;
+    height: 278px !important;
+    justify-self: center !important;
+    box-sizing: border-box !important;
+  }
+
+  .ellipseContainer {
+    width: calc(100% - 48px) !important;
+    max-width: 820px !important;
+    height: 500px !important;
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    box-sizing: border-box !important;
+  }
+
+  .frameChild44 {
+    width: 100% !important;
+    height: 100% !important;
+    top: 0 !important;
+    left: 0 !important;
+    box-sizing: border-box !important;
+  }
+
+  .frameParent43 {
+    width: calc(100% - 80px) !important;
+    max-width: 660px !important;
+    gap: 24px !important;
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    box-sizing: border-box !important;
+  }
+
+  .readyToConnectYourLearningParent {
+    width: 100% !important;
+    height: auto !important;
+    gap: 18px !important;
+  }
+
+  .readyToConnectContainer,
+  .connectYourEcosystem2 {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    text-align: center !important;
+  }
+
+  .readyToConnectContainer {
+    line-height: 1.3 !important;
+  }
+
+  .connectYourEcosystem2 {
+    font-size: 24px !important;
+    line-height: 1.65 !important;
+  }
+
+  .bookDemoBtn {
+    width: 255px !important;
+    height: 60px !important;
+  }
+}
+
+@media (min-width: 1199px) and (max-width: 1400px) {
+
+  .frameWrapper2,
+  .frameWrapper3,
+  .frameWrapper4,
+  .rectangleParent2 {
+    width: 260px !important;
+    height: 278px !important;
+  }
+
+  .rectangleParent {
+    width: 260px !important;
+    height: 278px !important;
+  }
+
+  .rectangleDiv {
+    width: 260px !important;
+    height: 278px !important;
+  }
+
+  .frameChild4 {
+    width: 212px !important;
+    height: 230px !important;
+    top: 24px !important;
+    left: 24px !important;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1395px) {
+
+  .connectedLearningEcosystemParent {
+    width: calc(100% - 80px) !important;
+    max-width: 1300px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    box-sizing: border-box !important;
+  }
+
+  .frameParent36 {
+    width: 100% !important;
+    display: grid !important;
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+    gap: 20px !important;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+
+  .frameParent40 {
+    width: 100% !important;
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 400px)) !important;
+    gap: 20px !important;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+
+  .frameWrapper14 {
+    width: 100% !important;
+    max-width: 400px !important;
+    min-width: 0 !important;
+    box-sizing: border-box !important;
+  }
+}

@@ -284,13 +284,6 @@ a {
 }
 
 
-.coding-challenge-card:hover {
-  transform: translateY(-4px);
-  box-shadow:
-    -10px -10px 20px #ffffff,
-    10px 10px 20px #c4c4c4;
-}
-
 .coding-challenge-card,
 .coding-challenge-card * {
   cursor: default !important;
@@ -416,13 +409,6 @@ a {
   transition:
     transform 0.25s ease,
     box-shadow 0.25s ease;
-}
-
-.coding-skill-item:hover {
-  transform: translateY(-4px);
-  box-shadow:
-    -6px -6px 12px #ffffff,
-    6px 6px 12px #c4c4c4;
 }
 
 

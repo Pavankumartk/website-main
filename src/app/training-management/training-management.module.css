@@ -7650,3 +7650,73 @@ body,
     color: #2f3547 !important;
   }
 }
+
+/* FIX: keep hero description above the bottom gradient line */
+.transformLearningWith {
+  transform: translateY(-18px);
+}
+
+/* ===== FINAL CTA BUTTON INTERACTION ===== */
+/* Both buttons start raised/outset with blue text.
+   While pressed they become inset and the text turns dark. */
+
+.frameWrapper17,
+.startFreeTrialButton {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  box-sizing: border-box !important;
+  padding: 0 32px !important;
+  background: #dfe6e9 !important;
+  border: none !important;
+  border-radius: 32px !important;
+  box-shadow:
+    -8px -8px 16px #ffffff,
+    8px 8px 16px #c6c6c9 !important;
+  cursor: pointer !important;
+  text-decoration: none !important;
+  transition:
+    box-shadow 0.15s ease,
+    color 0.15s ease !important;
+}
+
+.bookADemoWrapper {
+  width: 100% !important;
+  height: 100% !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.bookADemo,
+.startFreeTrialText {
+  position: static !important;
+  width: auto !important;
+  height: auto !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  font-family: "Segoe UI" !important;
+  font-weight: 600 !important;
+  line-height: 1 !important;
+  color: #2d4cc8 !important;
+  text-align: center !important;
+  white-space: nowrap !important;
+}
+
+.frameWrapper17:active,
+.startFreeTrialButton:active {
+  box-shadow:
+    inset -4px -4px 8px #ffffff,
+    inset 4px 4px 8px rgba(196, 196, 196, 0.8) !important;
+}
+
+.frameWrapper17:active .bookADemo,
+.startFreeTrialButton:active .startFreeTrialText {
+  color: #31344b !important;
+}
+

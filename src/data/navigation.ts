@@ -265,7 +265,7 @@ export const navItems: NavItem[] = [
           },
           {
             label: "Interconnectivity",
-            href: "/inter_connectivity",
+            href: "/interconnectivity",
           },
         ],
       },
@@ -332,7 +332,7 @@ export const navItems: NavItem[] = [
 
       {
         label: "Help and Support",
-        href: "/help_support",
+        href: "/help-support",
       },
     ],
 

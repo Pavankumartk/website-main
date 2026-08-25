@@ -1,0 +1,470 @@
+import type { NextPage } from "next";
+import Image from "next/image";
+import styles from "./blog.module.css";
+import Header from "../../components/Header/header";
+import Footer from "../../components/Footer/footer";
+
+const Blogs: NextPage = () => {
+  return (
+    <>
+      <Header />
+
+      <div className={styles.blogs}>
+        <div className={styles.frameDiv}>
+          <div className={styles.resourcesWrapper}>
+            <div className={styles.resources2}>Resources</div>
+          </div>
+
+          <div className={styles.arrowRightDoubleParent}>
+            <Image
+              className={styles.arrowDown01Icon}
+              src="/icons/arrowright.svg"
+              width={16}
+              height={16}
+              sizes="100vw"
+              alt=""
+            />
+            <b className={styles.resources2}>Blogs</b>
+          </div>
+        </div>
+
+        <div className={styles.rectangleParent}>
+          <Image
+            className={styles.heroFrameSvg}
+            src="/images/blog-hero-frame.webp"
+            width={1312}
+            height={684}
+            sizes="100vw"
+            alt=""
+          />
+
+          <div className={styles.heroImageFrame}>
+            <div className={styles.heroImageClip}>
+              <Image
+                className={styles.frameChild2}
+                src="/images/imgblog.webp"
+                width={667}
+                height={616}
+                sizes="100vw"
+                alt=""
+              />
+            </div>
+          </div>
+
+          <div className={styles.frameParent2}>
+            <div className={styles.frameWrapper}>
+              <div className={styles.frameParent3}>
+                <div className={styles.frameParent4}>
+                  <div className={styles.blogsBadge}>
+                    <span>Blogs</span>
+                  </div>
+
+                  <b className={styles.smarterLearningInsights}>
+                    Smarter Learning Insights
+                  </b>
+                </div>
+
+                <div className={styles.exploreExpertInsights}>
+                  Explore expert insights on digital learning, LMS, AI, and
+                  workforce trends.
+                </div>
+              </div>
+            </div>
+
+            <div className={styles.frameWrapper2}>
+              <div className={styles.frameWrapper3}>
+                <div className={styles.frameWrapper4}>
+                  <div className={styles.bookADemoWrapper}>
+                    <div className={styles.bookADemo}>Book a Demo</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className={styles.frameParent5}>
+          <div className={styles.frameParent6}>
+            <div className={styles.knowledgeHubBadge}>Knowledge Hub</div>
+
+            <b className={styles.expertInsightsFor}>
+              Expert Insights for Modern Learning Teams
+              <br />
+            </b>
+
+            <div className={styles.expertInsightsOn}>
+              Expert insights on technology transforming modern learning
+            </div>
+          </div>
+
+          <div className={styles.frameParent7}>
+            <div className={styles.rectangleGroup}>
+              <div className={styles.rectangleDiv} />
+
+              <div className={styles.rectangleContainer}>
+                <div className={styles.frameChild4} />
+
+                <div className={styles.aiPoweredLmsParent}>
+                  <b className={styles.aiPoweredLms}>AI-Powered LMS</b>
+                  <div className={styles.aiTransformingModern}>
+                    AI transforming modern learning.
+                  </div>
+                </div>
+
+                <Image
+                  className={styles.youngManUsingHisLaptopInfIcon}
+                  src="/images/gamifiedblog.webp"
+                  width={244}
+                  height={201}
+                  sizes="100vw"
+                  alt=""
+                />
+              </div>
+            </div>
+
+            <div className={styles.rectangleParent2}>
+              <div className={styles.rectangleDiv} />
+
+              <div className={styles.rectangleParent3}>
+                <div className={styles.frameChild6} />
+
+                <div className={styles.interactiveLearningParent}>
+                  <b className={styles.aiPoweredLms}>Interactive Learning</b>
+
+                  <div className={styles.aiTransformingModern}>
+                    Gamified and engaging experiences.
+                  </div>
+                </div>
+
+                <Image
+                  className={styles.youngManUsingHisLaptopInfIcon}
+                  src="/images/youngmanblog.webp"
+                  width={244}
+                  height={201}
+                  sizes="100vw"
+                  alt=""
+                />
+              </div>
+            </div>
+
+            <div className={styles.rectangleParent4}>
+              <div className={styles.rectangleDiv} />
+
+              <div className={styles.rectangleParent3}>
+                <div className={styles.frameChild8} />
+
+                <Image
+                  className={styles.concentratedExecutiveManagerIcon}
+                  src="/images/img2blog.webp"
+                  width={310}
+                  height={243}
+                  sizes="100vw"
+                  alt=""
+                />
+
+                <div className={styles.corporateTrainingParent}>
+                  <b className={styles.aiPoweredLms}>Corporate Training</b>
+
+                  <div className={styles.upskillingTodaysWorkforce}>
+                    Upskilling today's workforce.
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className={styles.rectangleGroup}>
+              <div className={styles.rectangleDiv} />
+
+              <div className={styles.rectangleParent3}>
+                <div className={styles.frameChild6} />
+
+                <div className={styles.interactiveLearningParent}>
+                  <b className={styles.aiPoweredLms}>Learning Innovation</b>
+
+                  <div className={styles.modernAndFlexible}>
+                    Modern and flexible learning.
+                  </div>
+                </div>
+
+                <Image
+                  className={styles.womanHoldingIdeaIconUsing}
+                  src="/images/img4blog.webp"
+                  width={290}
+                  height={222}
+                  sizes="100vw"
+                  alt=""
+                />
+              </div>
+            </div>
+
+            <div className={styles.rectangleParent8}>
+              <div className={styles.rectangleDiv} />
+
+              <div className={styles.rectangleParent3}>
+                <div className={styles.frameChild8} />
+
+                <div className={styles.digitalEducationParent}>
+                  <b className={styles.aiPoweredLms}>Digital Education</b>
+
+                  <div className={styles.aiTransformingModern}>
+                    Best practices for online learning.
+                  </div>
+                </div>
+
+                <Image
+                  className={styles.computingMan1Icon}
+                  src="/images/img5blog.webp"
+                  width={355}
+                  height={237}
+                  sizes="100vw"
+                  alt=""
+                />
+              </div>
+            </div>
+
+            <div className={styles.rectangleParent10}>
+              <div className={styles.rectangleDiv} />
+
+              <div className={styles.rectangleContainer}>
+                <Image
+                  className={styles.frameChild14}
+                  src="/images/img6blog.webp"
+                  width={352}
+                  height={229}
+                  sizes="100vw"
+                  alt=""
+                />
+
+                <div className={styles.aiPoweredLmsParent}>
+                  <b className={styles.aiPoweredLms}>Learning Analytics</b>
+
+                  <div className={styles.dataDrivenLearningInsights}>
+                    Data-driven learning insights.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className={styles.frameParent10}>
+          <div className={styles.frameWrapper5}>
+            <div className={styles.frameParent11}>
+              <div className={styles.frameWrapper6}>
+                <div className={styles.turnInsightsIntoActionParent}>
+                  <b className={styles.turnInsightsInto}>
+                    Turn Insights into Action
+                  </b>
+
+                  <div className={styles.discoverPracticalStrategies}>
+                    Discover practical strategies to enhance learning,
+                    engagement, and training outcomes.
+                  </div>
+                </div>
+              </div>
+
+              <div className={styles.frameChild15} />
+            </div>
+          </div>
+
+          <div className={styles.rectangleParent12}>
+            <div className={styles.frameChild16} aria-hidden="true" />
+
+            <div className={styles.discoverPracticalIdeasToWrapper}>
+              <b className={styles.discoverPracticalIdeas}>
+                Discover practical ideas to
+              </b>
+            </div>
+
+            <div className={styles.frameParent12}>
+              <div className={styles.frameParent13}>
+                <div className={styles.frameParent14}>
+                  <div className={styles.frameWrapper7}>
+                    <div className={styles.target02Parent}>
+                      <Image
+                        className={styles.target02Icon}
+                        src="/icons/target-02pink.svg"
+                        width={32}
+                        height={32}
+                        sizes="100vw"
+                        alt=""
+                      />
+
+                      <div className={styles.improveEngagement}>
+                        Improve Engagement
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className={styles.frameWrapper8}>
+                    <div className={styles.monitorParent}>
+                      <Image
+                        className={styles.target02Icon}
+                        src="/icons/monitorgreen.svg"
+                        width={32}
+                        height={32}
+                        sizes="100vw"
+                        alt=""
+                      />
+
+                      <div className={styles.improveEngagement}>
+                        Implement LMS
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div className={styles.frameParent14}>
+                  <div className={styles.frameWrapper7}>
+                    <div className={styles.refresh03Parent}>
+                      <Image
+                        className={styles.target02Icon}
+                        src="/icons/refresh-03blue.svg"
+                        width={32}
+                        height={32}
+                        sizes="100vw"
+                        alt=""
+                      />
+
+                      <div className={styles.improveEngagement}>
+                        Modernize Learning
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className={styles.frameWrapper7}>
+                    <div className={styles.trendingDownParent}>
+                      <Image
+                        className={styles.target02Icon}
+                        src="/icons/target-02pink.svg"
+                        width={32}
+                        height={32}
+                        sizes="100vw"
+                        alt=""
+                      />
+
+                      <div className={styles.improveEngagement}>
+                        Upskill Teams
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className={styles.frameWrapper8}>
+                <div className={styles.chartUpParent}>
+                  <Image
+                    className={styles.target02Icon}
+                    src="/icons/chart-upblue.svg"
+                    width={32}
+                    height={32}
+                    sizes="100vw"
+                    alt=""
+                  />
+
+                  <div className={styles.improveEngagement}>
+                    Leverage Analytics
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className={styles.frameParent16}>
+          <div className={styles.frameWrapper12}>
+            <div className={styles.frameWrapper13}>
+              <div className={styles.frameWrapper14}>
+                <div className={styles.frameParent17}>
+                  <div className={styles.stayAheadOfLearningTrendsWrapper}>
+                    <b className={styles.stayAheadOf}>
+                      Stay Ahead of Learning Trends
+                    </b>
+                  </div>
+
+                  <div className={styles.exploreTheLatest}>
+                    Explore the latest trends and insights in digital learning
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className={styles.frameParent18}>
+            <div className={styles.frameParent19}>
+              <div className={styles.trendIconOuter}>
+                <div className={styles.trendIconInner}>
+                  <Image
+                    className={styles.trendIcon}
+                    src="/icons/bulbpurple.svg"
+                    width={34}
+                    height={34}
+                    sizes="34px"
+                    alt="Actionable ideas"
+                  />
+                </div>
+              </div>
+
+              <div className={styles.actionableIdeasParent}>
+                <b className={styles.actionableIdeas}>Actionable Ideas</b>
+
+                <div className={styles.strategiesForLearning}>
+                  Strategies for Learning Leaders.
+                </div>
+              </div>
+            </div>
+
+            <div className={styles.frameParent20}>
+              <div className={styles.trendIconOuter}>
+                <div className={styles.trendIconInner}>
+                  <Image
+                    className={styles.trendIcon}
+                    src="/icons/globe-02.svg"
+                    width={34}
+                    height={34}
+                    sizes="34px"
+                    alt="Emerging trends"
+                  />
+                </div>
+              </div>
+
+              <div className={styles.emergingTrendsParent}>
+                <b className={styles.emergingTrends}>Emerging Trends</b>
+
+                <div className={styles.stayUpdatedOn}>
+                  Stay Updated on LMS &amp; AI.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className={styles.blogsInner}>
+          <div className={styles.frameParent21}>
+            <div className={styles.frameChild19}>
+              <div className={styles.neuroBadge}>
+                <span className={styles.neuroBadgeText}>NeuroLXP</span>
+                <span className={styles.neuroBadgeTM}>TM</span>
+              </div>
+            </div>
+
+            <div className={styles.exploreTheNeurolxpBlogParent}>
+              <b className={styles.exploreTheNeurolxp}>
+                Explore the NeuroLXP Blog
+              </b>
+
+              <div className={styles.discoverInsightsThat}>
+                Discover insights that help build smarter, engaging and
+                future-ready learning experiences.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <Footer />
+    </>
+  );
+};
+
+export default Blogs;

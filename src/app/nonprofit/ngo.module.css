@@ -1894,837 +1894,778 @@
 	}
 }
 
-@media screen and (min-width: 2000px) {
-	.ngo {
-		width: 1440px;
-		max-width: 1440px;
-		margin-left: auto;
-		margin-right: auto;
-		position: relative;
-		overflow: hidden;
-	}
+/* ==========================================================================\n   FLUID RESPONSIVE LAYOUT\n   - Desktop source design above remains unchanged.\n   - No device-specific width ranges.\n   - One fluid layout is used for every viewport below the desktop canvas.\n   - No CSS zoom is used in responsive views.\n   ========================================================================== */
 
-	.frameParent,
-	.ngoInner,
-	.frame,
-	.frameParent5,
-	.image20Group,
-	.frameParent18,
-	.ngoChild,
-	.frameParent38,
-	.frameParent40 {
-		flex-shrink: 0;
-	}
-
-	.frame,
-	.image20Group,
-	.ngoChild {
-		transform-origin: center top;
-	}
-
-	.frameParent7,
-	.frameParent21,
-	.frameParent30,
-	.frameParent43 {
-		flex-direction: row;
-	}
-
-	.frameParent7,
-	.frameParent21,
-	.frameParent30 {
-		flex-wrap: nowrap;
-	}
-
-	.image61Icon,
-	.wrapperPexelsMbaClassroom2,
-	.pexelsMbaClassroom215566522Icon,
-	.groupTeenagersDiscussingUniIcon {
-		max-width: none;
-	}
-
-	.frameParent20,
-	.frameParent21 {
-		width: 1270px;
-	}
-
-	.frameParent40,
-	.frameParent41 {
-		width: 1440px;
-		left: 0;
-	}
-}
-
-.supportCardsExpanded .image20Group,
-.supportCardsExpanded .frameParent18,
-.supportCardsExpanded .ngoChild,
-.supportCardsExpanded .frameParent38 {
-    transform: translateY(144px) !important;
-    left: 78px !important;
-}
-
-.supportCardsExpanded .frameParent18 {
-    left: calc(50% - 640px) !important;
-}
-
-.supportCardsExpanded .ngoChild {
-    left: calc(50% - 640px) !important;
-}
-
-.supportCardsExpanded .frameParent38 {
-    left: 80px !important;
-}
-
-.image20Group,
-.frameParent18,
-.ngoChild,
-.frameParent38 {
-    transition:
-        top 1.1s cubic-bezier(0.22,1,0.36,1),
-        transform 1.1s cubic-bezier(0.22,1,0.36,1);
-}
-
-@media screen and (min-width: 1366px) and (max-width: 1440px) {
-	.ngo {
-		width: 1440px;
-		max-width: 1440px;
-		margin: 0 auto;
-		zoom: 1;
-		position: relative;
-		overflow: hidden;
-	}
-
-	.frameParent {
-		left: 0;
-		width: 1440px;
-	}
-
-	.ngoInner {
-		left: 94px;
-		transform: none;
-	}
-
-	.frame {
-		left: 111px;
-		transform: none;
-	}
-
-	.frameParent5 {
-		left: 80px;
-		width: 1280px;
-		transform: none;
-	}
-
-	.image20Group {
-		left: 80px;
-		width: 1280px;
-		transform: none;
-	}
-
-	.frameParent18 {
-		left: 80px;
-		width: 1280px;
-		transform: none;
-	}
-
-	.ngoChild {
-		left: 80px;
-		width: 1280px;
-		transform: none;
-	}
-
-	.frameParent38 {
-		left: 80px;
-		width: 1280px;
-		transform: none;
-	}
-
-	.frameParent7,
-	.frameParent21,
-	.frameParent30,
-	.frameParent43 {
-		flex-direction: row;
-		flex-wrap: nowrap;
-	}
-
-	.frameParent40,
-	.frameParent41 {
-		left: 0;
-		width: 1440px;
-	}
-
-	.supportCardsExpanded .image20Group {
-		left: 80px !important;
-		transform: translateY(144px) !important;
-	}
-
-	.supportCardsExpanded .frameParent18 {
-		left: 80px !important;
-		transform: translateY(144px) !important;
-	}
-
-	.supportCardsExpanded .ngoChild {
-		left: 80px !important;
-		transform: translateY(144px) !important;
-	}
-
-	.supportCardsExpanded .frameParent38 {
-		left: 80px !important;
-		transform: translateY(144px) !important;
-	}
-}
-
-@media screen and (min-width: 1101px) and (max-width: 1365px) {
-	.ngo {
-		width: 1440px;
-		max-width: 1440px;
-		min-width: 1440px;
-		margin: 0 auto;
-		zoom: calc(1280 / 1440);
-		transform: none;
-		transform-origin: top left;
-		position: relative;
-		overflow: hidden;
-	}
-
-	.frameParent,
-	.frameParent40,
-	.frameParent41 {
-		width: 1440px;
-		left: 0;
-	}
-
-	.ngoInner {
-		left: 94px;
-		transform: none;
-	}
-
-	.frame {
-		left: 111px;
-		transform: none;
-	}
-
-	.frameParent5,
-	.image20Group,
-	.frameParent18,
-	.ngoChild,
-	.frameParent38 {
-		left: 80px;
-		width: 1280px;
-		transform: none;
-	}
-
-	.frameParent7,
-	.frameParent21,
-	.frameParent30,
-	.frameParent43 {
-		flex-direction: row;
-		flex-wrap: nowrap;
-	}
-
-	.supportCardsExpanded .image20Group {
-		left: 80px !important;
-		transform: translateY(144px) !important;
-	}
-
-	.supportCardsExpanded .frameParent18 {
-		left: 80px !important;
-		transform: translateY(144px) !important;
-	}
-
-	.supportCardsExpanded .ngoChild {
-		left: 80px !important;
-		transform: translateY(144px) !important;
-	}
-
-	.supportCardsExpanded .frameParent38 {
-		left: 80px !important;
-		transform: translateY(144px) !important;
-	}
-}
-
-@media screen and (min-width: 1000px) and (max-width: 1100px) {
-	
-	.ngo {
-		width: 1440px;
-		max-width: 1440px;
-		min-width: 1440px;
-		height: 5030px;
-		margin: 0;
-		zoom: 0.711111;
-		transform: none;
-		transform-origin: top left;
-		position: relative;
-		overflow: hidden;
-	}
-
-	html,
-	body {
-		width: 100%;
-		min-width: 100%;
-		margin: 0;
-		overflow-x: hidden;
-		background: #dfe6e9;
-	}
-
-	.frameParent,
-	.frameParent40,
-	.frameParent41 {
-		width: 1440px;
-		left: 0;
-	}
-
-	.ngoInner {
-		left: 94px;
-		transform: none;
-	}
-
-	.frame {
-		left: 111px;
-		transform: none;
-	}
-
-	.frameParent5,
-	.image20Group,
-	.frameParent18,
-	.ngoChild,
-	.frameParent38 {
-		left: 80px;
-		width: 1280px;
-		transform: none;
-	}
-
-	.frameParent7,
-	.frameParent21,
-	.frameParent30,
-	.frameParent43 {
-		flex-direction: row;
-		flex-wrap: nowrap;
-	}
-
-	.frameParent20 {
-		width: 1270px;
-	}
-
-	.frameParent21 {
-		width: 100%;
-		justify-content: flex-start;
-	}
-
-	.image61Icon,
-	.wrapperPexelsMbaClassroom2,
-	.pexelsMbaClassroom215566522Icon,
-	.groupTeenagersDiscussingUniIcon {
-		max-width: none;
-		flex-shrink: 0;
-	}
-
-	.supportCardsExpanded .image20Group,
-	.supportCardsExpanded .frameParent18,
-	.supportCardsExpanded .ngoChild,
-	.supportCardsExpanded .frameParent38 {
-		left: 80px !important;
-		transform: translateY(144px) !important;
-	}
-
-	.supportCardsExpanded {
-		height: 5174px;
-	}
-}
-
-@media screen and (min-width:768px) and (max-width:999px){
-    html,body{
-        overflow-x:hidden;
-        margin:0;
-        width:100%;
-    }
-
-    .ngo{
-        width:1440px;
-        min-width:1440px;
-        max-width:1440px;
-        zoom:0.5333;
-        transform:none;
-        transform-origin:top left;
-        height:5030px;
-        overflow:hidden;
-        margin:0;
-    }
-
-    .frameParent,
-    .frameParent40,
-    .frameParent41{
-        width:1440px;
-        left:0;
-    }
-
-    .ngoInner{left:94px;}
-    .frame{left:calc(50% - 609px);}
-    .frameParent5,
-    .image20Group,
-    .frameParent18,
-    .ngoChild,
-    .frameParent38{
-        left:80px;
-        width:1280px;
-        transform:none;
-    }
-
-    .frameParent7,
-    .frameParent21,
-    .frameParent30,
-    .frameParent43{
-        flex-wrap:nowrap;
-        flex-direction:row;
-    }
-
-    .supportCardsExpanded{
-        height:5174px;
-    }
-
-    .supportCardsExpanded .image20Group,
-    .supportCardsExpanded .frameParent18,
-    .supportCardsExpanded .ngoChild,
-    .supportCardsExpanded .frameParent38{
-        left:80px!important;
-        transform:translateY(144px)!important;
-    }
-}
-
-@media screen and (max-width: 480px) {
-
-	html,
-	body {
-		width: 100%;
-		margin: 0;
-		overflow-x: hidden;
-	}
-
-	.ngo {
-		width: 1440px;
-		min-width: 1440px;
-		max-width: 1440px;
-		height: 5718px;
-		zoom: 0.2222;
-		transform: none;
-		transform-origin: top left;
-		overflow: hidden;
-	}
-
-	.frame {
-		height: 942px;
-	}
-
-	.frameInner2 {
-		top: 50px;
-		left: calc(50% - 263.5px);
-	}
-
-	.frameInner3 {
-		top: 496px;
-		left: calc(50% - 263.5px);
-	}
-
-	.frameParent5 {
-		top: 1235px;
-	}
-
-	.image20Group {
-		top: 2150px;
-	}
-
-	.frameParent18 {
-		top: 2860px;
-	}
-
-	.ngoChild {
-		top: 3780px;
-	}
-
-	.frameParent38 {
-		top: 4438px;
-	}
-
-	.frameParent7 {
-		width: 1280px;
-		display: grid;
-		grid-template-columns: repeat(2, 330px);
-		grid-auto-rows: auto;
-		justify-content: center;
-		align-items: start;
-		column-gap: 96px;
-		row-gap: 40px;
-	}
-
-	.frameParent7 .frameWrapper5.supportCard {
-		width: 330px;
-		height: 264px;
-		transform: none;
-		transform-origin: top center;
-	}
-
-	.frameParent7 .frameWrapper5.supportCard:hover {
-		transform: translateY(-4px);
-	}
-
-	.frameParent7 .frameWrapper5.supportCardOpen {
-		height: 422px;
-		transform: none;
-	}
-
-	.frameParent7 .supportCardContent {
-		width: 300px;
-		height: 384px;
-		transform: scale(1.1);
-		transform-origin: top left;
-	}
-
-	.frameParent7 .supportCardTitle {
-		font-size: 26px;
-		line-height: 36px;
-	}
-
-	.frameParent7 .supportCardDetails p {
-		font-size: 25px;
-		line-height: 34px;
-	}
-
-	.frameParent5 {
-		height: auto;
-	}
-
-	.frameParent20 {
-		width: 850px;
-		margin-left: auto;
-		margin-right: auto;
-		display: grid;
-		grid-template-columns: repeat(2, 390px);
-		column-gap: 120px;
-		row-gap: 44px;
-	}
-
-	.frameParent21 {
-		display: contents;
-	}
-
-	.ngoChild {
-		height: 538px;
-	}
-
-	.frameWrapper29 {
-		top: calc(50% - 269px);
-		left: calc(50% - 640px);
-		width: 1280px;
-		height: 538px;
-	}
-
-	.frameParent30 {
-		top: 50px;
-		left: calc(50% - 590px);
-		width: 1180px;
-		display: flex;
-		flex-direction: row;
-		align-items: center;
-		gap: 89px;
-	}
-
-	.frameParent31 {
-		width: 638px;
-		align-items: flex-start;
-		text-align: left;
-	}
-
-	.frameParent32 {
-		width: 453px;
-		margin-left: 0;
-		margin-right: 0;
-	}
-
-	.missionDrivenLearning,
-	.scaleYourImpact {
-		font-size: 36px;
-		line-height: 44px;
-	}
-
-	.empowerStaffVolunteers,
-	.deliverStructuredTraining {
-		font-size: 26px;
-		line-height: 40px;
-	}
-
-	.supportCardTitle {
-		font-size: 24px;
-		line-height: 34px;
-	}
-
-	.volunteerOnboarding,
-	.leadershipTraining {
-		font-size: 24px;
-		line-height: 40px;
-	}
-
-	.benefitsForNgosContainer {
-		width: auto;
-		height: 127px;
-		font-size: 48px;
-		line-height: 60px;
-	}
-
-	.neurolxpHelpsNonprofits2 {
-		width: auto;
-		height: 120px;
-		font-size: 28px;
-		line-height: 40px;
-	}
-
-	.empoweredTeams,
-	.missionDrivenGrowth,
-	.higherLearnerEngagement,
-	.smarterLearningManagement,
-	.measurableSocialImpact {
-		font-size: 24px;
-		line-height: 36px;
-	}
-
-	.supportCardsExpanded {
-		height: 6696px;
-	}
-
-	.supportCardsExpanded .image20Group,
-	.supportCardsExpanded .frameParent18,
-	.supportCardsExpanded .ngoChild,
-	.supportCardsExpanded .frameParent38 {
-		transform: translateY(158px) !important;
-	}
-
-	.supportCardsExpanded:has(
-		.frameParent7 > .frameWrapper5.supportCardOpen:nth-child(-n + 2)
-	):has(
-		.frameParent7 > .frameWrapper5.supportCardOpen:nth-child(n + 3)
-	) {
-		height: 6854px;
-	}
-
-	.supportCardsExpanded:has(
-		.frameParent7 > .frameWrapper5.supportCardOpen:nth-child(-n + 2)
-	):has(
-		.frameParent7 > .frameWrapper5.supportCardOpen:nth-child(n + 3)
-	) .image20Group,
-	.supportCardsExpanded:has(
-		.frameParent7 > .frameWrapper5.supportCardOpen:nth-child(-n + 2)
-	):has(
-		.frameParent7 > .frameWrapper5.supportCardOpen:nth-child(n + 3)
-	) .frameParent18,
-	.supportCardsExpanded:has(
-		.frameParent7 > .frameWrapper5.supportCardOpen:nth-child(-n + 2)
-	):has(
-		.frameParent7 > .frameWrapper5.supportCardOpen:nth-child(n + 3)
-	) .ngoChild,
-	.supportCardsExpanded:has(
-		.frameParent7 > .frameWrapper5.supportCardOpen:nth-child(-n + 2)
-	):has(
-		.frameParent7 > .frameWrapper5.supportCardOpen:nth-child(n + 3)
-	) .frameParent38 {
-		transform: translateY(316px) !important;
-	}
-}
-
-@media screen and (max-width: 480px) {
-	.frame {
-		top: 679px;
-		left: calc(50% - 609px);
-		width: 1218px;
-		height: 496px;
-		transform: none;
-		transform-origin: top left;
-	}
-
-	.frameInner2 {
-		top: 50px;
-		left: 50px;
-		width: 527px;
-		height: 396px;
-	}
-
-	.frameInner3 {
-		top: 50px;
-		left: 641px;
-		width: 527px;
-		height: 396px;
-	}
-
-	.frameWrapper2,
-	.frameWrapper3,
-	.frameWrapper4 {
-		top: calc(50% - 198px);
-		left: calc(50% - 263.5px);
-		width: 527px;
-		height: 396px;
-	}
-
-	.missionDrivenLearningParent {
-		top: calc(50% - 138px);
-		left: 64px;
-		width: 399px;
-		gap: 32px;
-		align-items: flex-end;
-	}
-
-	.missionDrivenLearning {
-		width: 419px;
-		font-size: 36px;
-		line-height: 44px;
-		text-align: left;
-		justify-content: flex-start;
-	}
-
-	.scaleYourImpact {
-		width: auto;
-		font-size: 36px;
-		line-height: 44px;
-		text-align: center;
-	}
-
-	.empowerStaffVolunteers,
-	.deliverStructuredTraining {
-		width: auto;
-		font-size: 26px;
-		line-height: 40px;
-		text-align: center;
-	}
-}
-
-html,
-body {
-	width: 100%;
-	min-width: 100%;
-	margin: 0;
-	padding: 0;
-	overflow-x: hidden;
-	background-color: #dfe6e9;
-}
-
-@media screen and (min-width: 2000px) {
-	html,
-	body {
-		background-color: #dfe6e9;
-	}
-
-	.ngo {
-		margin-left: auto;
-		margin-right: auto;
-	}
-}
-
-@media screen and (min-width: 361px) and (max-width: 399px) {
-	.ngo {
-		width: 1440px;
-		min-width: 1440px;
-		max-width: 1440px;
-		zoom: 0.2604167;
-		margin: 0;
-		transform: none;
-		transform-origin: top left;
-	}
-}
-
-@media screen and (min-width: 400px) and (max-width: 480px) {
-	.ngo {
-		width: 1440px;
-		min-width: 1440px;
-		max-width: 1440px;
-		zoom: 0.2951389;
-		margin: 0;
-		transform: none;
-		transform-origin: top left;
-	}
-}
-
-
-.neurolxpTrademark{
-  font-size:0.42em;
-  line-height:1;
-  vertical-align:super;
-  font-size: 24px;
-  position:relative;
-  top:-0.25em;
-  margin-left:2px;
-  font-weight:600;
-}
-
-/* PAGE CENTERING / HORIZONTAL OVERFLOW FIX ONLY */
 html,
 body {
   width: 100%;
   max-width: 100%;
   margin: 0;
   padding: 0;
-  overflow-x: clip;
+  overflow-x: hidden;
+  background: #dfe6e9;
 }
 
-body {
-  position: relative;
-}
-
-.ngo {
-  width: 1440px !important;
-  max-width: 1440px !important;
-  margin-left: auto !important;
-  margin-right: auto !important;
-  left: auto !important;
-  right: auto !important;
-  transform-origin: top center !important;
-  overflow-x: hidden !important;
-}
-
-/* Keep the fixed-width design centered on desktop/laptop browser zooms */
-@media screen and (min-width: 1440px) {
-  .ngo {
-    zoom: 1 !important;
-  }
-}
-
-@media screen and (min-width: 1366px) and (max-width: 1439px) {
-  .ngo {
-    zoom: 0.94 !important;
-  }
-}
-
-@media screen and (min-width: 1280px) and (max-width: 1365px) {
-  .ngo {
-    zoom: 0.88 !important;
-  }
-}
-
-@media screen and (min-width: 1200px) and (max-width: 1279px) {
-  .ngo {
-    zoom: 0.82 !important;
-  }
-}
-
-@media screen and (min-width: 1025px) and (max-width: 1199px) {
-  .ngo {
-    zoom: 0.70 !important;
-  }
-}
-
-/* Do not let any 1440px footer/header shell create page-level horizontal scroll */
-.frameParent,
-.frameParent40,
-.frameParent41,
-.frameParent49,
-.frameWrapper31 {
-  max-width: 100% !important;
-}
-
-/* Existing tablet/mobile layouts remain in control below 1024px */
-@media screen and (max-width: 1024px) {
+/* Keep the original desktop composition untouched. */
+@media screen and (max-width: 1199px) {
   html,
   body {
     overflow-x: hidden !important;
   }
 
   .ngo {
-    margin-left: auto !important;
-    margin-right: auto !important;
+    width: 100% !important;
+    min-width: 0 !important;
+    max-width: none !important;
+    height: auto !important;
+    min-height: 0 !important;
+    margin: 0 auto !important;
+    padding: clamp(20px, 4vw, 48px) clamp(16px, 4vw, 40px) !important;
+    box-sizing: border-box !important;
+    position: relative !important;
+    display: flex !important;
+    flex-direction: column !important;
+    gap: clamp(22px, 4.5vw, 48px) !important;
+    overflow: hidden !important;
+    zoom: 1 !important;
+    transform: none !important;
+    transform-origin: initial !important;
+    font-size: clamp(16px, 2.2vw, 22px) !important;
+  }
+
+  /* If the legacy page header/footer are still present, keep them fluid. */
+  .frameParent,
+  .frameParent40,
+  .frameParent41,
+  .frameParent49,
+  .frameWrapper31 {
+    width: 100% !important;
+    max-width: 100% !important;
+    left: 0 !important;
+    right: auto !important;
+    transform: none !important;
+  }
+
+  .frameParent {
+    position: relative !important;
+    top: auto !important;
+    height: auto !important;
+    min-height: 72px !important;
+  }
+
+  /* Consistent responsive vertical rhythm across the full page. */
+  .ngo > .ngoInner,
+  .ngo > .frame,
+  .ngo > .frameParent5,
+  .ngo > .image20Group,
+  .ngo > .frameParent18,
+  .ngo > .ngoChild,
+  .ngo > .frameParent38 {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+  }
+
+  /* ----------------------------- HERO ----------------------------- */
+  .ngoInner {
+    position: relative !important;
+    top: auto !important;
+    left: auto !important;
+    width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+    margin: 0 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: stretch !important;
+    gap: clamp(12px, 3vw, 20px) !important;
+  }
+
+  /* Breadcrumb is a sibling of the hero, so force it before the hero on tablet/mobile. */
+  .ngo > .frameParent4 {
+    order: -2 !important;
+    position: relative !important;
+    top: auto !important;
+    left: auto !important;
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 clamp(2px, 1vw, 8px) !important;
+    box-sizing: border-box !important;
+    z-index: 5 !important;
+  }
+
+  .ngo > .ngoInner {
+    order: -1 !important;
+    margin-top: 0 !important;
+  }
+
+  .ngo > .frameParent4 + .ngoInner {
+    margin-top: 0 !important;
+  }
+
+  .image20Parent {
+    position: relative !important;
+    top: auto !important;
+    left: auto !important;
+    width: 100% !important;
+    height: auto !important;
+    min-height: clamp(620px, 112vw, 820px) !important;
+    padding: clamp(24px, 5vw, 52px) !important;
+    box-sizing: border-box !important;
+    border-radius: clamp(22px, 5vw, 32px) !important;
+    overflow: hidden !important;
+    isolation: isolate !important;
+  }
+
+  .image20,
+  .image21 {
+    position: absolute !important;
+    inset: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+  }
+
+  .frameDiv {
+    position: relative !important;
+    top: auto !important;
+    left: auto !important;
+    width: min(100%, 620px) !important;
+    height: auto !important;
+    gap: clamp(24px, 5vw, 42px) !important;
+    z-index: 3 !important;
+  }
+
+  .frameParent2,
+  .frameParent3 {
+    height: auto !important;
+    gap: clamp(18px, 4vw, 28px) !important;
+  }
+
+  .frameInner {
+    width: fit-content !important;
+    max-width: 100% !important;
+    height: auto !important;
+    min-height: 44px !important;
+    padding: 9px clamp(16px, 4vw, 28px) !important;
+    font-size: clamp(14px, 3vw, 20px) !important;
+    line-height: 1.35 !important;
+    white-space: normal !important;
+    text-align: center !important;
+  }
+
+  .empoweringNgosThroughContainer {
+    width: 100% !important;
+    height: auto !important;
+    font-size: clamp(30px, 7vw, 48px) !important;
+    line-height: 1.18 !important;
+  }
+
+  .empowering,
+  .ngos {
+    line-height: inherit !important;
+  }
+
+  .empoweringNonprofitsThrough {
+    width: min(100%, 620px) !important;
+    height: auto !important;
+    font-size: clamp(17px, 3.5vw, 24px) !important;
+    line-height: 1.55 !important;
+  }
+
+  .frameWrapper {
+    width: fit-content !important;
+    max-width: 100% !important;
+    height: auto !important;
+    min-height: 52px !important;
+    padding: 12px clamp(20px, 5vw, 30px) !important;
+    font-size: clamp(16px, 3vw, 20px) !important;
+  }
+
+  .image61Icon {
+    position: absolute !important;
+    top: auto !important;
+    left: 0 !important;
+    right: auto !important;
+    bottom: 0 !important;
+    width: 100% !important;
+    height: min(46%, 500px) !important;
+    max-width: none !important;
+    object-fit: cover !important;
+    object-position: center !important;
+    border-radius: 0 0 clamp(18px, 4vw, 28px) clamp(18px, 4vw, 28px) !important;
+    z-index: 1 !important;
+  }
+
+  /*
+   * Keep the playing video inside the complete lower rectangular media frame.
+   * It starts from the left edge and fills the available width.
+   */
+  .image20Parent video {
+    position: absolute !important;
+    top: auto !important;
+    left: 0 !important;
+    right: auto !important;
+    bottom: 0 !important;
+    width: 100% !important;
+    height: min(46%, 500px) !important;
+    max-width: none !important;
+    max-height: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    display: block !important;
+    object-fit: cover !important;
+    object-position: center !important;
+    border: 0 !important;
+    border-radius: 0 0 clamp(18px, 4vw, 28px) clamp(18px, 4vw, 28px) !important;
+    background: #000 !important;
+    z-index: 2 !important;
+  }
+
+  .frameItem {
+    position: absolute !important;
+    top: auto !important;
+    left: 50% !important;
+    right: auto !important;
+    bottom: min(20%, 190px) !important;
+    width: clamp(58px, 12vw, 76px) !important;
+    height: clamp(58px, 12vw, 76px) !important;
+    transform: translateX(-50%) !important;
+    z-index: 4 !important;
+  }
+
+  .videoPlayButton {
+    width: 100% !important;
+    height: 100% !important;
+    max-width: none !important;
+    max-height: none !important;
+  }
+
+  .videoPlayIcon {
+    width: 100% !important;
+    height: 100% !important;
+  }
+
+  .frameParent4 {
+    position: relative !important;
+    top: auto !important;
+    left: auto !important;
+    width: 100% !important;
+    min-height: 24px !important;
+    margin: 0 !important;
+    padding: 0 clamp(2px, 1vw, 8px) !important;
+    box-sizing: border-box !important;
+    display: flex !important;
+    align-items: center !important;
+    flex-wrap: wrap !important;
+    gap: 6px 8px !important;
+    font-size: clamp(12px, 2.5vw, 16px) !important;
+    z-index: 5 !important;
+  }
+
+  /* ---------------------- MISSION / SCALE CARDS ---------------------- */
+  .frame {
+    position: relative !important;
+    top: auto !important;
+    left: auto !important;
+    width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+    padding: clamp(20px, 4vw, 40px) !important;
+    box-sizing: border-box !important;
+    display: grid !important;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 290px), 1fr)) !important;
+    gap: clamp(24px, 5vw, 48px) !important;
+    border-radius: clamp(44px, 10vw, 100px) 16px clamp(44px, 10vw, 100px) 16px !important;
+  }
+
+  .frameInner2,
+  .frameInner3 {
+    position: relative !important;
+    inset: auto !important;
+    width: 100% !important;
+    height: auto !important;
+    min-height: clamp(300px, 65vw, 396px) !important;
+  }
+
+  .frameWrapper2,
+  .frameWrapper3,
+  .frameWrapper4 {
+    position: absolute !important;
+    inset: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+  }
+
+  .missionDrivenLearningParent {
+    position: absolute !important;
+    top: 50% !important;
+    left: 50% !important;
+    width: calc(100% - clamp(40px, 10vw, 96px)) !important;
+    transform: translate(-50%, -50%) !important;
+    align-items: center !important;
+    gap: clamp(18px, 4vw, 28px) !important;
+    text-align: center !important;
+  }
+
+  .missionDrivenLearning,
+  .scaleYourImpact {
+    width: 100% !important;
+    font-size: clamp(25px, 5.5vw, 36px) !important;
+    line-height: 1.25 !important;
+    text-align: center !important;
+    justify-content: center !important;
+  }
+
+  .empowerStaffVolunteers,
+  .deliverStructuredTraining {
+    width: 100% !important;
+    font-size: clamp(17px, 3.7vw, 25px) !important;
+    line-height: 1.5 !important;
+  }
+
+  /* ---------------------- HOW NEUROLXP SUPPORTS ---------------------- */
+  .frameParent5 {
+    position: relative !important;
+    top: auto !important;
+    left: auto !important;
+    width: 100% !important;
+    height: auto !important;
+    margin: 0 !important;
+    gap: clamp(32px, 6vw, 54px) !important;
+  }
+
+  .frameParent6,
+  .howNeurolxpSupportsNgosParent {
+    width: 100% !important;
+    height: auto !important;
+    gap: clamp(18px, 4vw, 26px) !important;
+  }
+
+  .frameIcon,
+  .frameChild6,
+  .frameChild7,
+  .frameChild15,
+  .frameChild21 {
+    width: fit-content !important;
+    max-width: 100% !important;
+    height: auto !important;
+    min-height: 44px !important;
+    padding: 8px clamp(16px, 4vw, 26px) !important;
+    font-size: clamp(14px, 3vw, 20px) !important;
+    line-height: 1.35 !important;
+    white-space: normal !important;
+    text-align: center !important;
+  }
+
+  .howNeurolxpSupports,
+  .enablingLearningFor,
+  .benefitsForNgosContainer,
+  .collaborativeLearning {
+    width: 100% !important;
+    height: auto !important;
+    font-size: clamp(28px, 6vw, 40px) !important;
+    line-height: 1.25 !important;
+    text-align: center !important;
+  }
+
+  .neurolxpHelpsNonprofits,
+  .withFlexibleLearning,
+  .neurolxpHelpsNonprofits2,
+  .createOnceTrainContainer {
+    width: min(100%, 900px) !important;
+    height: auto !important;
+    font-size: clamp(16px, 3.4vw, 22px) !important;
+    line-height: 1.55 !important;
+    text-align: center !important;
+  }
+
+  .frameParent7 {
+    width: 100% !important;
+    display: grid !important;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr)) !important;
+    gap: clamp(22px, 5vw, 36px) !important;
+    align-items: start !important;
+  }
+
+  .frameWrapper5.supportCard {
+    width: 100% !important;
+    min-width: 0 !important;
+    height: auto !important;
+    min-height: 240px !important;
+    border-radius: clamp(56px, 16vw, 100px) clamp(56px, 16vw, 100px) 20px 20px !important;
+  }
+
+  .frameWrapper5.supportCardOpen {
+    min-height: 390px !important;
+  }
+
+  .supportCardContent {
+    width: 100% !important;
+    height: auto !important;
+    min-height: 240px !important;
+    padding: 18px 18px 24px !important;
+  }
+
+  .supportCardTitle {
+    width: 100% !important;
+    height: auto !important;
+    font-size: clamp(20px, 4.2vw, 24px) !important;
+    line-height: 1.35 !important;
+  }
+
+  .supportCardDetails {
+    width: 100% !important;
+    left: 0 !important;
+  }
+
+  .supportCardDetails p {
+    left: clamp(18px, 5vw, 31px) !important;
+    right: clamp(18px, 5vw, 31px) !important;
+    font-size: clamp(16px, 3.6vw, 22px) !important;
+    line-height: 1.45 !important;
+  }
+
+  /* --------------------- COLLABORATIVE LEARNING --------------------- */
+  .image20Group {
+    position: relative !important;
+    top: auto !important;
+    left: auto !important;
+    width: 100% !important;
+    height: auto !important;
+    min-height: clamp(570px, 145vw, 690px) !important;
+    margin: 0 !important;
+    transform: none !important;
+    border-radius: clamp(22px, 5vw, 32px) !important;
+  }
+
+  .image202,
+  .image212 {
+    width: 100% !important;
+    height: 100% !important;
+    left: 0 !important;
+    top: 0 !important;
+  }
+
+  .image21Parent {
+    top: clamp(14px, 4vw, 32px) !important;
+    left: clamp(14px, 4vw, 32px) !important;
+    width: calc(100% - clamp(28px, 8vw, 64px)) !important;
+    height: calc(100% - clamp(28px, 8vw, 64px)) !important;
+  }
+
+  /* Remove the translucent white mask over the third-section image on responsive views. */
+  .image20Group .ellipseDiv {
+    display: none !important;
+  }
+
+  .image20Group .image202,
+  .image20Group .image212,
+  .image20Group .image21Parent,
+  .image20Group .wrapperPexelsMbaClassroom2,
+  .image20Group .pexelsMbaClassroom215566522Icon {
+    opacity: 1 !important;
+    filter: none !important;
+  }
+
+  /* Keep the photo in the lower part of the card so it never sits behind the text. */
+  .wrapperPexelsMbaClassroom2 {
+    top: auto !important;
+    right: 0 !important;
+    bottom: 0 !important;
+    width: 100% !important;
+    height: 44% !important;
+    border-radius: 0 0 16px 16px !important;
+    overflow: hidden !important;
+  }
+
+  .pexelsMbaClassroom215566522Icon {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    object-position: center !important;
+  }
+
+  /* Keep badge, heading and paragraph together above the image. */
+  .frameWrapper9 {
+    top: clamp(24px, 6vw, 42px) !important;
+    left: 50% !important;
+    width: calc(100% - clamp(36px, 10vw, 72px)) !important;
+    transform: translateX(-50%) !important;
+    z-index: 4 !important;
+  }
+
+  .frameWrapper10,
+  .frameWrapper11,
+  .frameParent16,
+  .frameParent17 {
+    width: 100% !important;
+    align-items: center !important;
+    text-align: center !important;
+  }
+
+  .frameParent16,
+  .frameParent17 {
+    gap: clamp(14px, 3.8vw, 22px) !important;
+  }
+
+  .frameChild6 {
+    margin: 0 auto !important;
+  }
+
+  .collaborativeLearning,
+  .createOnceTrainContainer {
+    width: 100% !important;
+    height: auto !important;
+    margin: 0 !important;
+    text-align: center !important;
+    z-index: 4 !important;
+  }
+
+  .collaborativeLearning {
+    font-size: clamp(27px, 7vw, 36px) !important;
+    line-height: 1.2 !important;
+  }
+
+  .createOnceTrainContainer {
+    font-size: clamp(16px, 4vw, 21px) !important;
+    line-height: 1.55 !important;
+  }
+
+  /* -------------------------- USE CASES -------------------------- */
+  .frameParent18 {
+    position: relative !important;
+    top: auto !important;
+    left: auto !important;
+    width: 100% !important;
+    height: auto !important;
+    margin: 0 !important;
+    transform: none !important;
+    gap: clamp(28px, 6vw, 52px) !important;
+  }
+
+  .frameParent20 {
+    width: 100% !important;
+    gap: clamp(20px, 4vw, 34px) !important;
+  }
+
+  .frameParent21 {
+    width: 100% !important;
+    display: grid !important;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr)) !important;
+    gap: clamp(20px, 4vw, 32px) !important;
+  }
+
+  .frameParent22,
+  .frameWrapper12,
+  .frameWrapper13,
+  .volunteerOnboardingWrapper {
+    width: 100% !important;
+    min-width: 0 !important;
+  }
+
+  .frameParent22 {
+    height: 110px !important;
+  }
+
+  .frameWrapper12,
+  .frameWrapper13,
+  .volunteerOnboardingWrapper {
+    left: 0 !important;
+    height: 110px !important;
+  }
+
+  .volunteerOnboarding,
+  .leadershipTraining {
+    left: clamp(54px, 12vw, 76px) !important;
+    right: 16px !important;
+    width: auto !important;
+    font-size: clamp(16px, 3.6vw, 22px) !important;
+    line-height: 1.35 !important;
+    white-space: normal !important;
+  }
+
+  .useCaseCheckWrap {
+    width: clamp(54px, 11vw, 66px) !important;
+    height: clamp(54px, 11vw, 66px) !important;
+  }
+
+  /* --------------------------- BENEFITS --------------------------- */
+  .ngoChild {
+    position: relative !important;
+    top: auto !important;
+    left: auto !important;
+    width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+    margin: 0 !important;
+    transform: none !important;
+    padding: clamp(24px, 5vw, 48px) !important;
+    box-sizing: border-box !important;
+  }
+
+  .frameWrapper29 {
+    position: relative !important;
+    inset: auto !important;
+    width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+    padding: clamp(8px, 2vw, 14px) !important;
+    box-sizing: border-box !important;
+  }
+
+  .frameParent30 {
+    position: relative !important;
+    top: auto !important;
+    left: auto !important;
+    width: 100% !important;
+    display: grid !important;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)) !important;
+    gap: 0 !important;
+    align-items: start !important;
+  }
+
+  .frameParent31,
+  .frameParent32 {
+    width: 100% !important;
+    align-items: center !important;
+    text-align: center !important;
+  }
+
+  .frameParent31 {
+    gap: clamp(10px, 2.2vw, 16px) !important;
+    margin-bottom: 0 !important;
+  }
+
+  .frameParent32 {
+    gap: clamp(8px, 2vw, 14px) !important;
+    margin-top: clamp(-12px, -2vw, -6px) !important;
+  }
+
+  .neurolxpHelpsNonprofits2 {
+    margin: 0 !important;
+  }
+
+  .frameParent33 {
+    width: 100% !important;
+    height: auto !important;
+    min-height: 58px !important;
+    justify-content: flex-start !important;
+    gap: clamp(8px, 2vw, 12px) !important;
+  }
+
+  .frameParent33 .frameChild16,
+  .frameParent33 .frameChild19 {
+    width: clamp(54px, 14vw, 62px) !important;
+    height: clamp(54px, 14vw, 62px) !important;
+    min-width: clamp(54px, 14vw, 62px) !important;
+    min-height: clamp(54px, 14vw, 62px) !important;
+  }
+
+  .frameParent33 .benefitCheckInner {
+    width: clamp(38px, 10vw, 44px) !important;
+    height: clamp(38px, 10vw, 44px) !important;
+  }
+
+  .frameParent33 .benefitCheckIcon {
+    width: clamp(31px, 8vw, 36px) !important;
+    height: clamp(31px, 8vw, 36px) !important;
+  }
+
+  .empoweredTeams,
+  .missionDrivenGrowth,
+  .higherLearnerEngagement,
+  .smarterLearningManagement,
+  .measurableSocialImpact {
+    width: calc(100% - 72px) !important;
+    height: auto !important;
+    max-width: none !important;
+    white-space: nowrap !important;
+    font-size: clamp(13px, 3.15vw, 18px) !important;
+    line-height: 1.3 !important;
+    text-align: left !important;
+  }
+
+  /* ------------------------ SOCIAL IMPACT ------------------------ */
+  .frameParent38 {
+    position: relative !important;
+    top: auto !important;
+    left: auto !important;
+    width: 100% !important;
+    height: auto !important;
+    margin: clamp(-12px, -2vw, -6px) 0 0 !important;
+    transform: none !important;
+    align-items: center !important;
+    gap: clamp(16px, 3.5vw, 30px) !important;
+  }
+
+  .frameParent39,
+  .enablingLearningForSocialIParent {
+    width: 100% !important;
+    height: auto !important;
+    gap: clamp(18px, 4vw, 28px) !important;
+  }
+
+  .frameWrapper30 {
+    width: 100% !important;
+    height: auto !important;
+    aspect-ratio: 2.05 / 1 !important;
+    min-height: 240px !important;
+    margin-top: clamp(-46px, -7vw, -28px) !important;
+    margin-bottom: 0 !important;
+    border-radius: clamp(70px, 25vw, 500px) !important;
+    overflow: hidden !important;
+    position: relative !important;
+    z-index: 2 !important;
+  }
+
+  .happyStudentsGraduationCereParent {
+    inset: clamp(12px, 3vw, 24px) !important;
+    width: auto !important;
+    height: auto !important;
+    border-radius: inherit !important;
+    overflow: hidden !important;
+  }
+
+  .happyStudentsGraduationCere,
+  .groupTeenagersDiscussingUniIcon {
+    position: absolute !important;
+    inset: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+  }
+
+  .frameChild22 {
+    width: clamp(58px, 13vw, 90px) !important;
+    height: clamp(58px, 13vw, 90px) !important;
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    z-index: 4 !important;
+  }
+
+  /* Expansion animation should move only the following sections, never horizontally. */
+  .supportCardsExpanded .image20Group,
+  .supportCardsExpanded .frameParent18,
+  .supportCardsExpanded .ngoChild,
+  .supportCardsExpanded .frameParent38 {
+    left: auto !important;
+    transform: translateY(clamp(80px, 15vw, 144px)) !important;
+  }
+
+  .supportCardsExpanded {
+    height: auto !important;
+  }
+
+  /* Prevent fixed desktop dimensions from causing horizontal clipping. */
+  .ngo img,
+  .ngo svg,
+  .ngo video {
+    max-width: 100%;
+  }
+
+  .frameParent43,
+  .frameParent47,
+  .frameParent62 {
+    flex-wrap: wrap !important;
   }
 }
