@@ -10,7 +10,7 @@ import Footer from "../../components/Footer/footer";
 const PRELOADED_HERO_IMAGES = [
   "/images/slide1.webp",
   "/images/slide2.webp",
-  "/images/slide3.webp",
+  "/images/confident-businessman1.webp",
   "/images/slide4.webp",
   "/images/slide5.webp",
   "/images/slide6.webp",
@@ -105,7 +105,7 @@ const GenZgalaxy: NextPage = () => {
               <Image className={`${styles.frameChild} ${styles.heroImageStep}`} style={{ animationDelay: "-4s" }} src="/images/slide5.webp" width={300} height={520} sizes="100vw" alt="" aria-hidden="true" />
             </div>
             <div className={`${styles.frameWrapper2} ${styles.frameSlotLast} ${styles.frameRotateLast}`}>
-              <Image className={`${styles.frameChild} ${styles.heroImageStep}`} style={{ animationDelay: "-2s" }} src="/images/slide3.webp" width={300} height={520} sizes="100vw" priority alt="" aria-hidden="true" />
+              <Image className={`${styles.frameChild} ${styles.heroImageStep}`} style={{ animationDelay: "-2s" }} src="/images/confident-businessman1.webp" width={300} height={520} sizes="100vw" priority alt="" aria-hidden="true" />
               <Image className={`${styles.frameChild} ${styles.heroImageStep} ${styles.slide6Smaller}`} style={{ animationDelay: "-5s" }} src="/images/slide6.webp" width={300} height={520} sizes="100vw" alt="" aria-hidden="true" />
             </div>
           </div>
@@ -129,7 +129,7 @@ const GenZgalaxy: NextPage = () => {
                 <span className={styles.gen}>galaxy</span>
               </h1>
               <h2 className={styles.aLearningSpace} style={{ margin: 0, fontWeight: 700 }}>
-                A Learning Space that Actually Feels Modern
+                A Learning Space That Actually Feels Modern
               </h2>
             </div>
             <div className={styles.genzgalaxyIsBuilt}>GenZGalaxy is built for the digital generation. Fast, interactive learning that turns every journey into an experience worth exploring</div>
@@ -139,7 +139,7 @@ const GenZgalaxy: NextPage = () => {
       <div className={styles.frameParent6}>
         <div className={styles.frameParent7}>
           <div className={styles.frameParent8}>
-            <div className={styles.whyGenzBadge}>Why genZgalaxy</div>
+            <div className={styles.whyGenzBadge}>Why GenZgalaxy</div>
             <h2 className={styles.builtForTheContainer} style={{ margin: 0, fontWeight: 700 }}>
               <span className={styles.builtForThe}>{`Built for the `}</span>
               <span className={styles.futureOfLearning}>Future of Learning</span>
@@ -551,7 +551,7 @@ const GenZgalaxy: NextPage = () => {
         <div className={styles.frameParent46}>
           <div className={styles.frameParent47}>
             <div className={styles.frameParent48}>
-              <div className={styles.genzgalaxyCtaBadge}>genZgalaxy</div>
+              <div className={styles.genzgalaxyCtaBadge}>GenZgalaxy</div>
               <h2 className={styles.aSimplerWayContainer} style={{ margin: 0, fontWeight: 700 }}>
                 <span className={styles.builtForThe}>{`A Simpler Way to Approach `}</span>
                 <span className={styles.futureOfLearning}>Learning</span>

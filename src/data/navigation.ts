@@ -72,11 +72,11 @@ export const navItems: NavItem[] = [
       },
       {
         label: "Media Literacy",
-        href: "/medialiteracy",
+        href: "/MediaLiteracy",
       },
       {
         label: "Financial Literacy",
-        href: "FinancialLitracy",
+        href: "/FinancialLiteracy",
       },
       {
         label: "3Rs8Cs3Ms Literacy",
@@ -239,7 +239,7 @@ export const navItems: NavItem[] = [
           },
           {
             label: "Analytics & Reporting",
-            href: "/analytics-reporting",
+            href: "/analytics_reporting",
           },
           {
             label: "Career Pathways & Skilling",

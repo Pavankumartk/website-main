@@ -1,13 +1,7 @@
-.dl-page {
-  width: 100%;
-  min-height: 100vh;
+/* Digital Literacy page background */
+:global(#main-content) {
   background: #dfe6e9;
-  overflow-x: hidden;
-}
-
-.dl-page,
-.dl-page section {
-  box-sizing: border-box;
+  min-height: 100vh;
 }
 
 .dl-breadcrumb {
@@ -62,8 +56,8 @@
   max-width: 1280px;
   background: #dfe6e9;
   box-shadow:
-    inset -8px -8px 16px #ffffff,
-    inset 8px 8px 16px rgba(196, 196, 196, 0.8);
+    inset -4px -4px 4px #ffffff,
+    inset 4px 4px 4px rgba(196, 196, 196, 0.8);
   border-radius: 32px;
   padding: 36px 0 0 36px;
   box-sizing: border-box;
@@ -89,8 +83,8 @@
   padding: 9px 24px;
   background: #dfe6e9;
   box-shadow:
-    inset -4px -4px 8px #ffffff,
-    inset 4px 4px 8px rgba(196, 196, 196, 0.8);
+    inset -4px -4px 4px #ffffff,
+    inset 4px 4px 4px rgba(196, 196, 196, 0.8);
   border-radius: 28px;
   font-family: "Segoe UI", sans-serif;
   font-weight: 600;
@@ -165,16 +159,16 @@
 .dl-hero-button-primary {
   background: #dfe6e9;
   box-shadow:
-    -8px -8px 16px #ffffff,
-    8px 8px 16px #c6c6c9;
+    -4px -4px 8px #fff,
+    4px 4px 8px #c4c4c4cc;
   color: #2d4cc8;
 }
 
 .dl-hero-button-primary:hover,
 .dl-hero-button-secondary:hover {
   box-shadow:
-    inset -4px -4px 10px #ffffff,
-    inset 4px 4px 10px #c6c6c9;
+    inset -4px -4px 4px #ffffff,
+    inset 4px 4px 4px #c6c6c9;
 }
 
 .dl-hero-stats {
@@ -185,8 +179,8 @@
   align-items: stretch;
   background: #dfe6e9;
   box-shadow:
-    10px 10px 20px #c4c4c4,
-    -10px -10px 20px #ffffff;
+    4px 4px 8px #c4c4c4,
+    -4px -4px 8px #ffffff;
   border-radius: 16px;
   padding: 16px;
   box-sizing: border-box;
@@ -393,141 +387,125 @@
 
 .dl-advantage-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 50px;
+  grid-template-columns: repeat(2, 300px);
+  justify-content: center;
+  gap: 60px;
 }
 
+/* NeuroLXP Advantage cards - matched to the approved reference PNG */
 .dl-adv-card {
   position: relative;
-  aspect-ratio: 1;
-  min-width: 200px;
-  transition: transform 0.3s ease;
+  width: 300px;
+  height: 340px;
+  max-width: none;
+  min-width: 0;
+  aspect-ratio: auto;
 }
 
-.dl-adv-card:hover {
-  transform: translateY(-6px);
-}
-
-.dl-adv-card-shadow {
+/* Coloured plate behind the light card */
+.dl-adv-card-shadow,
+.dl-adv-card-mirrored .dl-adv-card-shadow {
   position: absolute;
-  inset: 15px -14.5px -15px 14.5px;
+  width: 280px;
+  height: 320px;
+  left: 20px;
+  top: 20px;
+  right: auto;
+  bottom: auto;
+  inset: auto;
   border-radius: 16px;
   box-shadow:
-    10px 10px 20px #c4c4c4,
-    -10px -10px 20px #ffffff;
+    4px 4px 8px #c4c4c4,
+    -4px -4px 8px #ffffff;
 }
 
-.dl-adv-card-mirrored .dl-adv-card-shadow {
-  inset: 15px 14.5px -15px -14.5px;
-}
-
-.dl-adv-card-front {
+/* Light foreground card - same geometry on all four cards */
+.dl-adv-card-front,
+.dl-adv-card-mirrored .dl-adv-card-front {
   position: absolute;
-  inset: -15px 14.5px 15px -14.5px;
+  width: 280px;
+  height: 320px;
+  left: 0;
+  top: 0;
+  right: auto;
+  bottom: auto;
+  inset: auto;
   background: #dfe6e9;
   border-radius: 16px;
   box-shadow:
-    10px 10px 20px rgba(30, 30, 30, 0.5),
-    -10px -10px 20px #ffffff;
+    -4px -4px 8px rgba(182, 179, 179, 0.2),
+    4px 4px 8px rgba(123, 123, 123, 0.6);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 24px;
+  padding: 92px 24px 34px;
   box-sizing: border-box;
-  overflow: hidden;
-  transition:
-    transform 0.3s ease,
-    box-shadow 0.3s ease;
+  overflow: visible;
+  transform: none;
 }
 
-.dl-adv-card-mirrored .dl-adv-card-front {
-  inset: -15px -14.5px 15px 14.5px;
-  box-shadow:
-    -10px -10px 20px rgba(182, 179, 179, 0.2),
-    10px 10px 10px rgba(123, 123, 123, 0.6);
-}
-
-.dl-adv-card:hover .dl-adv-card-front {
-  transform: translate(-6px, -6px);
-  box-shadow:
-    14px 14px 26px rgba(30, 30, 30, 0.55),
-    -10px -10px 20px #ffffff;
-}
-
+/* Keep the reference-PNG shape stable on hover */
+.dl-adv-card:hover,
+.dl-adv-card:hover .dl-adv-card-front,
 .dl-adv-card-mirrored:hover .dl-adv-card-front {
-  transform: translate(6px, -6px);
-  box-shadow:
-    -14px -14px 26px rgba(182, 179, 179, 0.25),
-    10px 10px 14px rgba(123, 123, 123, 0.65);
+  transform: none;
 }
 
 .dl-adv-card-front::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-  pointer-events: none;
+  content: none;
 }
 
-.dl-adv-card:hover .dl-adv-card-front::before {
-  opacity: 1;
-}
-
+/* Number circle overlapping the top-left corner */
 .dl-adv-card-badge {
   position: absolute;
-  top: 0px;
-  left: -1px;
-  width: 109px;
-  height: 109px;
-  border-radius: 16px 70px 70px 70px;
+  top: 0;
+  left: 0;
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   font-family: "Segoe UI", sans-serif;
   font-weight: 700;
-  font-size: 54px;
+  font-size: 42px;
+  line-height: 1;
   color: #2f3547;
   letter-spacing: 0.02em;
-  z-index: 1;
+  z-index: 2;
 }
 
 .dl-adv-card:hover .dl-adv-card-badge {
-  animation: dl-adv-badge-flip 0.5s ease;
-}
-
-@keyframes dl-adv-badge-flip {
-  0% {
-    transform: rotate(0deg) scaleX(1);
-  }
-  50% {
-    transform: rotate(-8deg) scaleX(0.7);
-  }
-  100% {
-    transform: rotate(0deg) scaleX(1);
-  }
+  animation: none;
 }
 
 .dl-adv-card-title {
-  margin: 96px 0 0;
+  width: 100%;
+  margin: 0;
   font-family: "Segoe UI", sans-serif;
   font-weight: 700;
   font-size: 20px;
+  line-height: 28px;
   letter-spacing: 0.03em;
   color: #31344b;
+  text-align: center;
 }
 
 .dl-adv-card-desc {
-  margin: 12px 0 0;
+  width: 100%;
+  margin: 16px 0 0;
   font-family: "Segoe UI", sans-serif;
   font-weight: 400;
   font-size: 18px;
-  line-height: 1.5;
+  line-height: 28px;
+  letter-spacing: 0.03em;
   color: #2f3547;
+  text-align: center;
 }
 
+/* Keep each card's existing accent colour and data unchanged */
 .dl-advantage-grid > .dl-adv-card:nth-child(3) .dl-adv-card-desc {
   color: #000000;
 }
@@ -583,8 +561,8 @@
   align-items: center;
   background: #dfe6e9;
   box-shadow:
-    inset -4px -4px 8px #ffffff,
-    inset 4px 4px 8px rgba(196, 196, 196, 0.8);
+    inset -4px -4px 4px #ffffff,
+    inset 4px 4px 4px rgba(196, 196, 196, 0.8);
   border-radius: 32px;
   min-height: 95vh;
 }
@@ -593,8 +571,8 @@
   padding: 32px;
   display: flex;
   box-shadow:
-    -10px -10px 20px #fff,
-    10px 10px 20px #c4c4c4cc;
+    -4px -4px 8px #fff,
+    4px 4px 8px #c4c4c4cc;
   gap: 74px;
   border-radius: 16px;
   width: 100%;
@@ -659,8 +637,8 @@
 .dl-check-pill-outer {
   background: #dfe6e9;
   box-shadow:
-    inset -4px -4px 8px #ffffff,
-    inset 4px 4px 8px rgba(196, 196, 196, 0.8);
+    inset -4px -4px 4px #ffffff,
+    inset 4px 4px 4px rgba(196, 196, 196, 0.8);
   border-radius: 100px;
   padding: 11px;
   transition:
@@ -671,8 +649,8 @@
 .dl-check-pill-outer:hover {
   transform: translateY(-4px);
   box-shadow:
-    -8px -8px 16px #ffffff,
-    8px 8px 20px var(--pill-glow);
+    -4px -4px 8px #ffffff,
+    4px 4px 8px var(--pill-glow);
 }
 
 .dl-check-pill {
@@ -683,8 +661,8 @@
   padding: 16px 32px;
   border-radius: 100px;
   box-shadow:
-    -8px -8px 16px #ffffff,
-    8px 8px 16px #c6c6c9;
+    -4px -4px 8px #ffffff,
+    4px 4px 8px #c6c6c9;
   background: var(--pill-bg);
   transition: background 0.3s ease;
 }
@@ -817,8 +795,8 @@
   border-radius: 50%;
   background: #dfe6e9;
   box-shadow:
-    8px 8px 16px #c6c6c9,
-    -8px -8px 16px #ffffff;
+    4px 4px 8px #c6c6c9,
+    -4px -4px 8px #ffffff;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -887,8 +865,8 @@
   border-right: 10px solid var(--step-color);
   border-radius: 16px 80px 80px 16px;
   box-shadow:
-    10px 10px 20px #c4c4c4,
-    -10px -10px 20px #ffffff;
+    4px 4px 8px #c4c4c4,
+    -4px -4px 8px #ffffff;
   padding: 46px 24px 32px;
   min-height: 300px;
   box-sizing: border-box;
@@ -921,8 +899,8 @@
 .dl-step-card:hover {
   transform: translateY(-6px);
   box-shadow:
-    10px 10px 24px var(--step-glow),
-    -10px -10px 20px #ffffff;
+    4px 4px 8px var(--step-glow),
+    -4px -4px 8px #ffffff;
 }
 
 .dl-step-card:hover::before,
@@ -938,8 +916,8 @@
   height: 70px;
   background: #dfe6e9;
   box-shadow:
-    inset -4px -4px 8px #ffffff,
-    inset 4px 4px 8px rgba(196, 196, 196, 0.8);
+    inset -4px -4px 4px #ffffff,
+    inset 4px 4px 4px rgba(196, 196, 196, 0.8);
   border-radius: 28px 0 0 28px;
   font-family: "Segoe UI", sans-serif;
   font-weight: 700;
@@ -953,8 +931,8 @@
 .dl-step-card:hover .dl-step-card-badge {
   transform: translateY(-4px) rotate(-4deg) scale(1.08);
   box-shadow:
-    -6px -6px 14px #ffffff,
-    6px 6px 14px var(--step-glow);
+    -4px -4px 8px #ffffff,
+    4px 4px 8px var(--step-glow);
 }
 
 .dl-step-card-title {
@@ -1138,8 +1116,8 @@
   max-width: 1280px;
   background: #dfe6e9;
   box-shadow:
-    inset -8px -8px 8px rgba(255, 255, 255, 0.5),
-    inset 8px 8px 8px #c4c4c4;
+    inset -4px -4px 4px rgba(255, 255, 255, 0.5),
+    inset 4px 4px 4px #c4c4c4;
   border-radius: 32px;
   padding: 50px 32px;
   box-sizing: border-box;
@@ -1229,7 +1207,7 @@
 
   .dl-adv-card {
     width: 300px;
-    height: 300px;
+    height: 340px;
   }
 
   .dl-advantage-grid {
@@ -1277,12 +1255,12 @@
     font-size: 34px;
   }
 
+  .dl-adv-card-shadow,
   .dl-adv-card-mirrored .dl-adv-card-shadow,
-  .dl-adv-card-mirrored .dl-adv-card-front,
   .dl-adv-card-front,
-  .dl-adv-card-shadow {
-    width: 300px;
-    height: 300px;
+  .dl-adv-card-mirrored .dl-adv-card-front {
+    width: 280px;
+    height: 320px;
   }
 
   .dl-step-card-title {
@@ -1309,7 +1287,7 @@
 
   .dl-accelerate-section {
     height: 100%;
-    padding: 0 16px;
+    padding:16px;
   }
 }
 @media (min-width: 768px) {
@@ -1380,24 +1358,24 @@
   }
 
   .dl-hero-stats {
-    left: 36px;
+    left: 1px;
   }
 
+  .dl-adv-card-shadow,
   .dl-adv-card-mirrored .dl-adv-card-shadow,
-  .dl-adv-card-mirrored .dl-adv-card-front,
   .dl-adv-card-front,
-  .dl-adv-card-shadow {
-    width: 260px;
-    height: 260px;
+  .dl-adv-card-mirrored .dl-adv-card-front {
+    width: 280px;
+    height: 320px;
   }
 
   .dl-adv-card {
-    width: 260px;
-    height: 260px;
+    width: 280px;
+    height: 320px;
   }
 
   .dl-adv-card-title {
-    font-size: 26px;
+    font-size: 20px;
   }
 
   .dl-adv-card-desc {
@@ -1405,7 +1383,7 @@
   }
 
   .dl-advantage-grid {
-    grid-template-columns: repeat(1, 260px);
+    grid-template-columns: repeat(1, 280px);
     justify-content: center;
     margin: 0 auto;
     gap: 80px;
@@ -1418,7 +1396,7 @@
 
   .dl-howitworks-section,
   .dl-analytics-section {
-    padding: 0 16px 48px;
+    padding: 20px 16px 48px;
   }
 
   .dl-bullet-list {
@@ -1452,8 +1430,8 @@
   }
 
   .dl-adv-card-front {
-    max-width: 260px;
-    max-height: 260px;
+    max-width: 280px;
+    max-height: 320px;
   }
 
   .dl-adv-card-badge {
@@ -1509,8 +1487,8 @@
   }
 
   .dl-adv-card {
-    width: 260px;
-    height: 260px;
+    width: 280px;
+    height: 320px;
   }
 
   .dl-check-list {

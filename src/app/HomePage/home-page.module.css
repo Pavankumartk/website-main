@@ -125,6 +125,13 @@ a:focus-visible {
   border-radius: 8px;
 }
 
+/* FIRST HERO IMAGE ONLY — keep same dimensions, slightly increase image */
+.hero-slide:first-child .hero-slide-image {
+  object-fit: cover;
+  object-position: 50% 14%;
+  transform: scale(1.015);
+}
+
 .hero-slide:nth-child(2) .hero-slide-image {
   object-position: 50% 56%;
 }
@@ -2162,7 +2169,7 @@ a:focus-visible {
 
 .smv-badge-tm {
   font-size: 12px;
-  font-weight: 500;
+  font-weight: 600;
   margin-left: 2px;
 }
 
@@ -3463,5 +3470,12 @@ a:focus-visible {
 
   .nlxp-footer-brand {
     flex: 1;
-  }
+  } 
+}
+
+
+/* TM / TRADEMARK — CSS Module safe, typography only */
+.tm,
+.trademark {
+  font-weight: 600;
 }

@@ -4,8 +4,6 @@ import Image from "next/image";
 import styles from "./DigitalLiteracy.module.css";
 import Header from "../../components/Header/header";
 import Footer from "../../components/Footer/footer";
-import TalkToExpertButton from "@/components/TalkToOurExpert/TalkToExpertButton";
-import { BookDemoTrigger } from "../../components/Bookademo/Bookademo";
 
 function TopographicPattern({ className }: { className?: string }) {
   return (
@@ -50,7 +48,7 @@ function DigitalLiteracyBreadcrumb() {
       <span className={styles["dl-breadcrumb-label"]}>NeuroLXP 2.1</span>
       <span className={styles["dl-breadcrumb-current"]}>
         <Image className={styles["dl-breadcrumb-arrow"]} src="/icons/arrow-right-double.svg" width={16} height={16} sizes="16px" alt="" aria-hidden="true" unoptimized />
-        Digital literacy
+        Digital Literacy
       </span>
     </nav>
   );
@@ -61,7 +59,7 @@ function DigitalLiteracyHero() {
     <section className={styles["dl-hero-section"]}>
       <div className={styles["dl-hero-card"]}>
         <div className={styles["dl-hero-content"]}>
-          <span className={styles["dl-hero-badge"]}>Digital literacy</span>
+          <span className={styles["dl-hero-badge"]}>Digital Literacy</span>
           <h1 className={styles["dl-hero-heading"]}>
             Empower Every Employee with <span className={styles["dl-hero-heading-accent"]}>Digital Skills</span>
           </h1>
@@ -70,9 +68,9 @@ function DigitalLiteracyHero() {
           </p>
 
           <div className={styles["dl-hero-buttons"]}>
-            <BookDemoTrigger className={`${styles["dl-hero-button"]} ${styles["dl-hero-button-secondary"]}`}>
+            <button type="button" className={`${styles["dl-hero-button"]} ${styles["dl-hero-button-secondary"]}`}>
               Request Demo
-            </BookDemoTrigger>
+            </button>
             <button type="button" className={`${styles["dl-hero-button"]} ${styles["dl-hero-button-primary"]}`}>
               Start Learning
             </button>
@@ -213,9 +211,9 @@ function DigitalLiteracyAdvantage() {
         <p className={styles["dl-hero-subtext"]}>From foundational skills to advanced expertise skills in one platform.</p>
       </div>
       <div className={styles["dl-advantage-grid"]}>
-        <AdvantageCard number="01" color="#BF1869" title="Digital Skill Training" description="From fundamentals to future-ready skills" />
+        <AdvantageCard number="01" color="#BF1869" title="Digital Skill Training" description="Building skills from basics to future readiness" />
         <AdvantageCard number="02" color="#0B9BA0" title="Personalized Learning" description="Learning journeys tailored to every skill level" mirrored />
-        <AdvantageCard number="03" color="#67096E" title="Progress Tracking" description="Real-time competency performance insights" />
+        <AdvantageCard number="03" color="#67096E" title="Progress Tracking" description="Track competency performance with insights" />
         <AdvantageCard number="04" color="#BCCF10" title="Mobile-First Access" description="Learn anytime, anywhere on any device" mirrored />
       </div>
     </section>
@@ -273,7 +271,7 @@ function DigitalLiteracyAccelerate() {
       <div className={styles["dl-accelerate"]}>
         <div className={styles["dl-accelerate-media"]}>
           <div className={styles["dl-accelerate-image-frame"]}>
-            <video className={styles["dl-accelerate-image"]} src="/videos/digitalLitracyVideo.mp4" autoPlay muted loop playsInline />
+            <video className={styles["dl-accelerate-image"]} src="/videos/neurlolxp.mp4" autoPlay muted loop playsInline />
           </div>
         </div>
         <div className={styles["dl-accelerate-content"]}>
@@ -281,8 +279,8 @@ function DigitalLiteracyAccelerate() {
           <h2 className={`${styles["dl-section-heading"]} ${styles["dl-accelerate-heading"]}`}>Accelerate Digital Transformation</h2>
           <p className={styles["dl-hero-subtext"]}>Smart skill mapping identifies gaps before they slow you down and fills them fast.</p>
           <div className={styles["dl-check-list"]}>
-            <CheckPill text="Role-based Skill Gap Analysis Framework" color="#67096E" />
-            <CheckPill text="Automated learning assignments" color="#0B9BA0" />
+            <CheckPill text="Role-Based Skill Gap Analysis Framework" color="#67096E" />
+            <CheckPill text="Automated Learning Assignments" color="#0B9BA0" />
             <CheckPill text="Compliance, Certification Tracking" color="#09248F" />
           </div>
         </div>
@@ -405,7 +403,7 @@ function DigitalLiteracyHowItWorks() {
   return (
     <section className={styles["dl-howitworks-section"]}>
       <div className={styles["dl-analytics-header"]}>
-        <span className={styles["dl-hero-badge"]}>How it Works</span>
+        <span className={styles["dl-hero-badge"]}>How It Works</span>
         <h2 className={`${styles["dl-section-heading"]} ${styles["dl-center"]}`}>From Assessment to Mastery in Four Steps</h2>
         <p className={`${styles["dl-hero-subtext"]} ${styles["dl-center"]}`}>Turn learning data into actionable insights with live dashboards, competency tracking, and compliance reporting.</p>
       </div>
@@ -487,9 +485,9 @@ function DigitalLiteracyCTA() {
           Empower every learner with digital skills that drive business success
         </p>
         <div className={styles["dl-hero-buttons"]}>
-          <BookDemoTrigger className={`${styles["dl-hero-button"]} ${styles["dl-hero-button-primary"]}`}>
+          <button type="button" className={`${styles["dl-hero-button"]} ${styles["dl-hero-button-primary"]}`}>
             Book a Demo
-          </BookDemoTrigger>
+          </button>
           <button type="button" className={`${styles["dl-hero-button"]} ${styles["dl-hero-button-secondary"]}`}>
             Get Started
           </button>
@@ -503,22 +501,19 @@ export default function DigitalLiteracyPage() {
   return (
     <>
       <Header />
-
-      <main id="main-content" className={styles["dl-page"]}>
-      <DigitalLiteracyBreadcrumb />
-      <DigitalLiteracyHero />
-      <DigitalLiteracySkillBanner />
-      <DigitalLiteracyAdvantage />
-      <DigitalLiteracyTransformIcons />
-      <DigitalLiteracyAccelerate />
-      <DigitalLiteracyAnalytics />
-      <DigitalLiteracyHowItWorks />
-      <DigitalLiteracyWhyNeuroLXP />
-      <DigitalLiteracyCTA />
-      <TalkToExpertButton />
-    </main>
-
-    <Footer />
+      <main id="main-content">
+        <DigitalLiteracyBreadcrumb />
+        <DigitalLiteracyHero />
+        <DigitalLiteracySkillBanner />
+        <DigitalLiteracyAdvantage />
+        <DigitalLiteracyTransformIcons />
+        <DigitalLiteracyAccelerate />
+        <DigitalLiteracyAnalytics />
+        <DigitalLiteracyHowItWorks />
+        <DigitalLiteracyWhyNeuroLXP />
+        <DigitalLiteracyCTA />
+      </main>
+      <Footer />
     </>
   );
 }

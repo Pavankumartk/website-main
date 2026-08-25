@@ -17,7 +17,7 @@ const Lottie = dynamic(() => import("lottie-react"), { ssr: false });
 type HeroSlide = { id: number; type: "image"; image: string; heading: string } | { id: number; type: "video"; src: string; heading: string };
 
 const heroSlides: HeroSlide[] = [
-  { id: 1, type: "image", image: "/images/brainstorm-meeting.webp", heading: "Empowering Lifelong learning" },
+  { id: 1, type: "image", image: "/images/brainstorm-meeting.webp", heading: "Empowering Lifelong Learning" },
   { id: 2, type: "image", image: "/images/student-online-young-cute-girl-glasses-orange-sweater-studying-computer-with-headphones.webp", heading: "Built for Education That Goes Beyond Classroom" },
   { id: 3, type: "video", src: "/videos/asking-doubts-to-teacher.mp4", heading: "Every Question Leads to Growth" },
   { id: 4, type: "image", image: "/images/Organisation.jpeg", heading: "Learn Beyond Limits" },
@@ -524,7 +524,7 @@ type PurposePillarData = {
 const purposePillars: PurposePillarData[] = [
   { id: 1, lines: ["Every Institution has a", "Mission"], color: "#BF1869" },
   { id: 2, lines: ["Every Learner has a", "Dream"], color: "#67096E" },
-  { id: 3, lines: ["Every organization needs", "future-ready talent"], color: "#861109" },
+  { id: 3, lines: ["Every Organization Needs", "Future-Ready Talent"], color: "#861109" },
 ];
 
 function PurposePill({ lines, color }: { lines: [string, string]; color: string }) {
@@ -532,7 +532,7 @@ function PurposePill({ lines, color }: { lines: [string, string]; color: string 
     <div className={styles["purpose-pill"]} style={{ borderColor: color }}>
       <span className={styles["purpose-pill-line"]}>{lines[0]}</span>
       <span className={styles["purpose-pill-highlight"]} style={{ color }}>
-        {lines[1]}
+        {lines[1]}  
       </span>
     </div>
   );
@@ -630,7 +630,7 @@ function WhyChooseAnalyticsIcon({ className }: { className?: string }) {
 }
 
 const whyChooseCards: WhyChooseCardData[] = [
-  { id: 1, title: "Get Discovered", description: "Launch your White Label LMS", dashColor: "#E1E4C3", iconBg: "#E1E4C3", Icon: WhyChooseDiscoverIcon },
+  { id: 1, title: "Get Discovered", description: "Launch Your White Label LMS", dashColor: "#E1E4C3", iconBg: "#E1E4C3", Icon: WhyChooseDiscoverIcon },
   { id: 2, title: "Deliver Excellence", description: "Innovative Learning for Growth", dashColor: "#BCC6EB", iconBg: "#BCC6EB", Icon: WhyChooseExcellenceIcon },
   { id: 3, title: "Engage Learners", description: "Smart Learning Notifications", dashColor: "#BEDEDC", iconBg: "#BEDEDC", Icon: WhyChooseEngageIcon },
   { id: 4, title: "Smart Analytics", description: "Smarter Analytics. Greater Success", dashColor: "#C6B7C7", iconBg: "#C6B7C7", Icon: WhyChooseAnalyticsIcon },
@@ -667,8 +667,12 @@ function WhyChooseNeuroLXP() {
               <span className={styles["why-choose-heading-accent"]}>Digital Learning</span>
             </h2>
             <p className={styles["why-choose-subtext"]}>
-              NeuroLXP<sup className={styles["smv-badge-tm"]}>TM</sup> empowers learners with personalized learning, future-ready skills, and meaningful outcomes.
-            </p>
+  NeuroLXP<sup className={styles["why-choose-tm"]}>TM</sup> empowers learners
+  <br />
+  with personalized learning, future-ready
+  <br />
+  skills, and meaningful outcomes.
+</p>
           </div>
           <div className={styles["why-choose-grid"]}>
             {whyChooseCards.map((card) => (
@@ -684,7 +688,7 @@ function WhyChooseNeuroLXP() {
 const learningModuleCards = [
   {
     id: 1,
-    image: "/images/perfect-day-happy-young-business-woman-sitting-office.webp",
+    image: "/images/learning-new-statistics.webp",
     title: "Blended Learning",
     description: "Seamlessly combine online and in-person learning for a flexible, engaging, and effective learning experience.",
   },
@@ -696,7 +700,7 @@ const learningModuleCards = [
   },
   {
     id: 3,
-    image: "/images/young-businessman-wearing-glasses-working-using-laptop-standing-white-background-with-confident-expression-smart-face-thinking-serious.webp",
+    image: "/images/young-smiling-woman-using-digital-tablet-isolated-white-1.webp",
     title: "Smart Learning Paths",
     description: "Navigate personalized learning experiences designed to accelerate growth, build future-ready skills, and achieve lasting success.",
   },
@@ -708,13 +712,13 @@ const learningModuleCards = [
   },
   {
     id: 5,
-    image: "/images/coworkers-smiling-introduction-partnership-copy-space.webp",
+    image: "/images/smiling-business-leader-greeting-partner.webp",
     title: "Smart Onboarding",
     description: "Accelerate employee onboarding with guided learning experiences that drive faster adaptation, engagement, and productivity.",
   },
   {
     id: 6,
-    image: "/images/people-learning-language-work-full-shot.webp",
+    image: "/images/exchanging-business-card-posing.webp",
     title: "Standards Training",
     description: "Stay compliant with confidence. Empower every team with standards-based learning.",
   },
@@ -948,7 +952,7 @@ const testimonials: TestimonialData[] = [
     name: "Ramesh",
     role: "Lecturer",
     quote: "NeuroLXP™ makes course delivery effortless. Interactive learning and real-time insights keep my learners engaged.",
-    image: "/images/confident-businessman.webp",
+    image: "/images/successful-businessman.webp",
     accentColor: "#907507",
   },
   {
@@ -1284,13 +1288,13 @@ function FAQSection() {
 
 function GetInTouch({ onContactClick, contactButtonRef }: { onContactClick: () => void; contactButtonRef: RefObject<HTMLButtonElement | null> }) {
   return (
-    <section className={styles["get-in-touch-section"]} aria-labelledby="get-in-touch-heading">
+    <section className={styles["get-in-touch-section"]} aria-labelledby="Get-in-touch-heading">
       <div className={styles["get-in-touch-blob"]} aria-hidden="true" />
       <div className={styles["get-in-touch-content"]}>
         <div className={styles["get-in-touch-text"]}>
-          <span className={styles["get-in-touch-badge"]}>Get in touch</span>
+          <span className={styles["get-in-touch-badge"]}>Get in Touch</span>
           <div className={styles["get-in-touch-copy"]}>
-            <h2 className={styles["get-in-touch-heading"]} id="get-in-touch-heading">
+            <h2 className={styles["get-in-touch-heading"]} id="Get-in-touch-heading">
               Learn Smarter with <br />
               <span className={styles["get-in-touch-heading-accent"]}>NeuroLXP</span>
             </h2>
