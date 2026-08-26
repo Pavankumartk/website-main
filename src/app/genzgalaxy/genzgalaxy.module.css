@@ -7255,3 +7255,73 @@ body {
     transform: none !important;
   }
 }
+
+/* =========================================================
+   GEN Z GALAXY — SCROLL + HEADER FIX ONLY
+   - Keep only ONE vertical page scrollbar
+   - Header scrolls normally with this page (not sticky/fixed)
+   - No layout, sizing, spacing, color, section or footer changes
+   ========================================================= */
+
+/* The browser/html element is the only vertical scroll container. */
+:global(html:has(.genzgalaxy)) {
+  height: auto !important;
+  min-height: 100% !important;
+  overflow-x: hidden !important;
+  overflow-y: auto !important;
+}
+
+/* Do not allow BODY to become a second independent scroll container. */
+:global(body:has(.genzgalaxy)) {
+  height: auto !important;
+  min-height: 100% !important;
+  max-height: none !important;
+  overflow-x: hidden !important;
+  overflow-y: visible !important;
+}
+
+/* Main page itself must never create its own vertical scrollbar. */
+.genzgalaxy {
+  height: auto;
+  max-height: none !important;
+  overflow-x: hidden !important;
+  overflow-y: visible !important;
+}
+
+/*
+  Header is before <main> in this page.
+  Force only the header rendered on the GenZ Galaxy route back into
+  normal document flow. This does NOT alter the header's visual design.
+*/
+:global(body:has(.genzgalaxy) header) {
+  position: relative !important;
+  top: auto !important;
+  right: auto !important;
+  bottom: auto !important;
+  left: auto !important;
+  inset: auto !important;
+  transform: none;
+}
+
+/* Covers common Header component wrapper class names without touching
+   elements inside the GenZ Galaxy page itself. */
+:global(body:has(.genzgalaxy) > .header),
+:global(body:has(.genzgalaxy) > .site-header),
+:global(body:has(.genzgalaxy) > .nlxp-header) {
+  position: relative !important;
+  top: auto !important;
+  right: auto !important;
+  bottom: auto !important;
+  left: auto !important;
+  inset: auto !important;
+}
+
+/* Ensure no wrapper around the page becomes another vertical scroller. */
+:global(body:has(.genzgalaxy) #__next),
+:global(body:has(.genzgalaxy) > div:first-child) {
+  height: auto !important;
+  min-height: 100% !important;
+  max-height: none !important;
+  overflow-y: visible !important;
+}
+
