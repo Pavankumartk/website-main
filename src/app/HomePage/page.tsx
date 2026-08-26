@@ -19,10 +19,10 @@ type HeroSlide = { id: number; type: "image"; image: string; heading: string } |
 const heroSlides: HeroSlide[] = [
   { id: 1, type: "image", image: "/images/brainstorm-meeting.webp", heading: "Empowering Lifelong Learning" },
   { id: 2, type: "image", image: "/images/student-online-young-cute-girl-glasses-orange-sweater-studying-computer-with-headphones.webp", heading: "Built for Education That Goes Beyond Classroom" },
-  { id: 3, type: "video", src: "/videos/asking-doubts-to-teacher.mp4", heading: "Every Question Leads to Growth" },
+  { id: 3, type: "video", src: "/videos/uhd_30fps.mp4", heading: "Every Question Leads to Growth" },
   { id: 4, type: "image", image: "/images/Organisation.jpeg", heading: "Learn Beyond Limits" },
   { id: 5, type: "image", image: "/images/Gratuation.jpeg", heading: "Designed for Minds That Refuse to Average" },
-  { id: 6, type: "video", src: "/videos/discussing-in-class.mp4", heading: "Where Great Ideas Take Shape Together" },
+  { id: 6, type: "video", src: "/videos/home.mp4", heading: "Where Great Ideas Take Shape Together" },
   { id: 7, type: "image", image: "/images/group-different-people-volunteering-foodbank.webp", heading: "Reimagine How the World Learns" },
   { id: 8, type: "image", image: "/images/portrait-school-girls-with-books-park.webp", heading: "Transform the Way the World Learns" },
 ];
