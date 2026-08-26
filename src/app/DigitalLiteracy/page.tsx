@@ -1,9 +1,12 @@
 "use client";
 
 import Image from "next/image";
+import { useRef, useState } from "react";
 import styles from "./DigitalLiteracy.module.css";
 import Header from "../../components/Header/header";
 import Footer from "../../components/Footer/footer";
+import BookDemoModal from "@/components/Bookademo/BookDemoModal";
+import TalkToExpertButton from "@/components/TalkToOurExpert/TalkToExpertButton";
 
 function TopographicPattern({ className }: { className?: string }) {
   return (
@@ -54,7 +57,7 @@ function DigitalLiteracyBreadcrumb() {
   );
 }
 
-function DigitalLiteracyHero() {
+function DigitalLiteracyHero({ onBookDemoClick, bookDemoButtonRef }: { onBookDemoClick: () => void; bookDemoButtonRef: React.RefObject<HTMLButtonElement | null> }) {
   return (
     <section className={styles["dl-hero-section"]}>
       <div className={styles["dl-hero-card"]}>
@@ -68,10 +71,10 @@ function DigitalLiteracyHero() {
           </p>
 
           <div className={styles["dl-hero-buttons"]}>
-            <button type="button" className={`${styles["dl-hero-button"]} ${styles["dl-hero-button-secondary"]}`}>
+            <button type="button" className={`${styles["dl-hero-button"]} ${styles["dl-hero-button-secondary"]}`} onClick={onBookDemoClick} ref={bookDemoButtonRef}>
               Request Demo
             </button>
-            <button type="button" className={`${styles["dl-hero-button"]} ${styles["dl-hero-button-primary"]}`}>
+            <button type="button" className={`${styles["dl-hero-button"]} ${styles["dl-hero-button-primary"]}`} onClick={() => { window.location.href = "/HomePage"; }}>
               Start Learning
             </button>
           </div>
@@ -142,8 +145,15 @@ function DigitalLiteracySkillBanner() {
               <feColorMatrix type="matrix" values="0 0 0 0 0.768627 0 0 0 0 0.768627 0 0 0 0 0.768627 0 0 0 1 0" />
               <feBlend mode="normal" in2="effect1_innerShadow_903_9541" result="effect2_innerShadow_903_9541" />
             </filter>
-            <pattern id="pattern0_903_9541" patternContentUnits="objectBoundingBox" width="0.475" height="1.68889">
-              <use xlinkHref="/images/dl-skill-banner-pattern.webp" transform="scale(0.00078125 0.00277778)" />
+            <pattern id="pattern0_903_9541" patternUnits="userSpaceOnUse" width="1280" height="360">
+              <image
+                href="/images/polygon 18.webp"
+                x="0"
+                y="0"
+                width="1280"
+                height="360"
+                preserveAspectRatio="none"
+              />
             </pattern>
             <filter id="filter1_d_903_9541" x="130.842" y="120.586" width="1021.5" height="146.213" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
               <feFlood floodOpacity="0" result="BackgroundImageFix" />
@@ -474,7 +484,7 @@ function DigitalLiteracyWhyNeuroLXP() {
   );
 }
 
-function DigitalLiteracyCTA() {
+function DigitalLiteracyCTA({ onBookDemoClick, bookDemoButtonRef }: { onBookDemoClick: () => void; bookDemoButtonRef: React.RefObject<HTMLButtonElement | null> }) {
   return (
     <section className={styles["dl-cta-section"]}>
       <div className={styles["dl-cta-card"]}>
@@ -485,10 +495,10 @@ function DigitalLiteracyCTA() {
           Empower every learner with digital skills that drive business success
         </p>
         <div className={styles["dl-hero-buttons"]}>
-          <button type="button" className={`${styles["dl-hero-button"]} ${styles["dl-hero-button-primary"]}`}>
+          <button type="button" className={`${styles["dl-hero-button"]} ${styles["dl-hero-button-primary"]}`} onClick={onBookDemoClick} ref={bookDemoButtonRef}>
             Book a Demo
           </button>
-          <button type="button" className={`${styles["dl-hero-button"]} ${styles["dl-hero-button-secondary"]}`}>
+          <button type="button" className={`${styles["dl-hero-button"]} ${styles["dl-hero-button-secondary"]}`} onClick={() => { window.location.href = "/HomePage"; }}>
             Get Started
           </button>
         </div>
@@ -498,12 +508,24 @@ function DigitalLiteracyCTA() {
 }
 
 export default function DigitalLiteracyPage() {
+  const [isBookDemoOpen, setIsBookDemoOpen] = useState(false);
+  const bookDemoButtonRef = useRef<HTMLButtonElement>(null);
+
+  const openBookDemo = () => {
+    window.scrollTo({ top: 0, behavior: "instant" });
+    setIsBookDemoOpen(true);
+  };
+  const closeBookDemo = () => {
+    setIsBookDemoOpen(false);
+    bookDemoButtonRef.current?.focus();
+  };
+
   return (
     <>
       <Header />
       <main id="main-content">
         <DigitalLiteracyBreadcrumb />
-        <DigitalLiteracyHero />
+        <DigitalLiteracyHero onBookDemoClick={openBookDemo} bookDemoButtonRef={bookDemoButtonRef} />
         <DigitalLiteracySkillBanner />
         <DigitalLiteracyAdvantage />
         <DigitalLiteracyTransformIcons />
@@ -511,8 +533,11 @@ export default function DigitalLiteracyPage() {
         <DigitalLiteracyAnalytics />
         <DigitalLiteracyHowItWorks />
         <DigitalLiteracyWhyNeuroLXP />
-        <DigitalLiteracyCTA />
+        <DigitalLiteracyCTA onBookDemoClick={openBookDemo} bookDemoButtonRef={bookDemoButtonRef} />
+        
       </main>
+      {isBookDemoOpen && <BookDemoModal onClose={closeBookDemo} />}
+        <TalkToExpertButton />
       <Footer />
     </>
   );

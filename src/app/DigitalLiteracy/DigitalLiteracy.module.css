@@ -1,3 +1,7 @@
+:global(#main-content) {
+  font-family: "Segoe UI";
+}
+
 /* Digital Literacy page background */
 :global(#main-content) {
   background: #dfe6e9;
@@ -16,7 +20,7 @@
 }
 
 .dl-breadcrumb-label {
-  font-family: "Segoe UI", sans-serif;
+  font-family: "Segoe UI";
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
@@ -28,7 +32,7 @@
   display: flex;
   align-items: center;
   gap: 8px;
-  font-family: "Segoe UI", sans-serif;
+  font-family: "Segoe UI";
   font-weight: 700;
   font-size: 16px;
   line-height: 24px;
@@ -86,7 +90,7 @@
     inset -4px -4px 4px #ffffff,
     inset 4px 4px 4px rgba(196, 196, 196, 0.8);
   border-radius: 28px;
-  font-family: "Segoe UI", sans-serif;
+  font-family: "Segoe UI";
   font-weight: 600;
   font-size: 20px;
   letter-spacing: 0.03em;
@@ -105,7 +109,7 @@
 
 .dl-hero-heading {
   margin: 0;
-  font-family: "Segoe UI", sans-serif;
+  font-family: "Segoe UI";
   font-weight: 700;
   font-size: 36px;
   line-height: 1.25;
@@ -121,7 +125,7 @@
 
 .dl-hero-subtext {
   margin: 0;
-  font-family: "Segoe UI", sans-serif;
+  font-family: "Segoe UI";
   font-weight: 400;
   font-size: 24px;
   line-height: 1.43;
@@ -142,7 +146,7 @@
   cursor: pointer;
   border-radius: 8px;
   padding: 16px 32px;
-  font-family: "Segoe UI", sans-serif;
+  font-family: "Segoe UI";
   font-weight: 600;
   font-size: 22px;
   letter-spacing: 0.02em;
@@ -151,16 +155,16 @@
 .dl-hero-button-secondary {
   background: #dfe6e9;
   box-shadow:
-    -4px -4px 8px #ffffff,
-    4px 4px 8px rgba(196, 196, 196, 0.8);
+    -4px -4px 4px #ffffff,
+    4px 4px 4px rgba(196, 196, 196, 0.8);
   color: #31344b;
 }
 
 .dl-hero-button-primary {
   background: #dfe6e9;
   box-shadow:
-    -4px -4px 8px #fff,
-    4px 4px 8px #c4c4c4cc;
+    -4px -4px 4px #fff,
+    4px 4px 4px #c4c4c4cc;
   color: #2d4cc8;
 }
 
@@ -179,8 +183,8 @@
   align-items: stretch;
   background: #dfe6e9;
   box-shadow:
-    4px 4px 8px #c4c4c4,
-    -4px -4px 8px #ffffff;
+    4px 4px 4px #c4c4c4,
+    -4px -4px 4px #ffffff;
   border-radius: 16px;
   padding: 16px;
   box-sizing: border-box;
@@ -244,7 +248,7 @@
   display: inline-flex;
   align-items: center;
   gap: 4px;
-  font-family: "Segoe UI", sans-serif;
+  font-family: "Segoe UI";
   font-weight: 700;
   font-size: 32px;
   letter-spacing: 0.02em;
@@ -266,7 +270,7 @@
 }
 
 .dl-hero-stat-label {
-  font-family: "Segoe UI", sans-serif;
+  font-family: "Segoe UI";
   font-weight: 600;
   font-size: 18px;
   letter-spacing: 0.02em;
@@ -372,7 +376,7 @@
 
 .dl-section-heading {
   margin: 0;
-  font-family: "Segoe UI", sans-serif;
+  font-family: "Segoe UI";
   font-weight: 700;
   font-size: 36px;
   line-height: 1.25;
@@ -395,8 +399,8 @@
 /* NeuroLXP Advantage cards - matched to the approved reference PNG */
 .dl-adv-card {
   position: relative;
-  width: 300px;
-  height: 340px;
+  width: 275px;
+  height: 275px;
   max-width: none;
   min-width: 0;
   aspect-ratio: auto;
@@ -406,41 +410,41 @@
 .dl-adv-card-shadow,
 .dl-adv-card-mirrored .dl-adv-card-shadow {
   position: absolute;
-  width: 280px;
-  height: 320px;
-  left: 20px;
-  top: 20px;
+  width: 250px;
+  height: 250px;
+  left: 25px;
+  top: 0;
   right: auto;
   bottom: auto;
   inset: auto;
   border-radius: 16px;
   box-shadow:
-    4px 4px 8px #c4c4c4,
-    -4px -4px 8px #ffffff;
+    4px 4px 4px #c4c4c4,
+    -4px -4px 4px #ffffff;
 }
 
 /* Light foreground card - same geometry on all four cards */
 .dl-adv-card-front,
 .dl-adv-card-mirrored .dl-adv-card-front {
   position: absolute;
-  width: 280px;
-  height: 320px;
+  width: 250px;
+  height: 250px;
   left: 0;
-  top: 0;
+  top: 23px;
   right: auto;
   bottom: auto;
   inset: auto;
   background: #dfe6e9;
   border-radius: 16px;
   box-shadow:
-    -4px -4px 8px rgba(182, 179, 179, 0.2),
-    4px 4px 8px rgba(123, 123, 123, 0.6);
+    -4px -4px 4px rgba(182, 179, 179, 0.2),
+    4px 4px 4px rgba(123, 123, 123, 0.6);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 92px 24px 34px;
+  padding: 105px 16px 24px;
   box-sizing: border-box;
   overflow: visible;
   transform: none;
@@ -462,15 +466,15 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 96px;
-  height: 96px;
+  width: 80px;
+  height: 80px;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: "Segoe UI", sans-serif;
+  font-family: "Segoe UI";
   font-weight: 700;
-  font-size: 42px;
+  font-size: 36px;
   line-height: 1;
   color: #2f3547;
   letter-spacing: 0.02em;
@@ -484,7 +488,7 @@
 .dl-adv-card-title {
   width: 100%;
   margin: 0;
-  font-family: "Segoe UI", sans-serif;
+  font-family: "Segoe UI";
   font-weight: 700;
   font-size: 20px;
   line-height: 28px;
@@ -496,7 +500,7 @@
 .dl-adv-card-desc {
   width: 100%;
   margin: 16px 0 0;
-  font-family: "Segoe UI", sans-serif;
+  font-family: "Segoe UI";
   font-weight: 400;
   font-size: 18px;
   line-height: 28px;
@@ -543,7 +547,7 @@
 .dl-pill-label-text {
   position: relative;
   z-index: 1;
-  font-family: "Segoe UI", sans-serif;
+  font-family: "Segoe UI";
   font-weight: 700;
   font-size: clamp(28px, 4vw, 64px);
   line-height: 1.25;
@@ -571,8 +575,8 @@
   padding: 32px;
   display: flex;
   box-shadow:
-    -4px -4px 8px #fff,
-    4px 4px 8px #c4c4c4cc;
+    -4px -4px 4px #fff,
+    4px 4px 4px #c4c4c4cc;
   gap: 74px;
   border-radius: 16px;
   width: 100%;
@@ -649,8 +653,8 @@
 .dl-check-pill-outer:hover {
   transform: translateY(-4px);
   box-shadow:
-    -4px -4px 8px #ffffff,
-    4px 4px 8px var(--pill-glow);
+    -4px -4px 4px #ffffff,
+    4px 4px 4px var(--pill-glow);
 }
 
 .dl-check-pill {
@@ -661,8 +665,8 @@
   padding: 16px 32px;
   border-radius: 100px;
   box-shadow:
-    -4px -4px 8px #ffffff,
-    4px 4px 8px #c6c6c9;
+    -4px -4px 4px #ffffff,
+    4px 4px 4px #c6c6c9;
   background: var(--pill-bg);
   transition: background 0.3s ease;
 }
@@ -718,7 +722,7 @@
 }
 
 .dl-check-pill-text {
-  font-family: "Segoe UI", sans-serif;
+  font-family: "Segoe UI";
   font-weight: 600;
   font-size: 20px;
   color: #2f3547;
@@ -795,8 +799,8 @@
   border-radius: 50%;
   background: #dfe6e9;
   box-shadow:
-    4px 4px 8px #c6c6c9,
-    -4px -4px 8px #ffffff;
+    4px 4px 4px #c6c6c9,
+    -4px -4px 4px #ffffff;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -822,13 +826,13 @@
 }
 
 .dl-analytics-card-value {
-  font-family: "Inter", sans-serif;
+  font-family: "Segoe UI";
   font-weight: 700;
   font-size: 32px;
 }
 
 .dl-analytics-card-label {
-  font-family: "Segoe UI", sans-serif;
+  font-family: "Segoe UI";
   font-weight: 700;
   font-size: 20px;
   letter-spacing: 0.03em;
@@ -836,7 +840,7 @@
 }
 
 .dl-analytics-card-desc {
-  font-family: "Inter", sans-serif;
+  font-family: "Segoe UI";
   font-weight: 400;
   font-size: 16px;
   color: #31344b;
@@ -865,8 +869,8 @@
   border-right: 10px solid var(--step-color);
   border-radius: 16px 80px 80px 16px;
   box-shadow:
-    4px 4px 8px #c4c4c4,
-    -4px -4px 8px #ffffff;
+    4px 4px 4px #c4c4c4,
+    -4px -4px 4px #ffffff;
   padding: 46px 24px 32px;
   min-height: 300px;
   box-sizing: border-box;
@@ -899,8 +903,8 @@
 .dl-step-card:hover {
   transform: translateY(-6px);
   box-shadow:
-    4px 4px 8px var(--step-glow),
-    -4px -4px 8px #ffffff;
+    4px 4px 4px var(--step-glow),
+    -4px -4px 4px #ffffff;
 }
 
 .dl-step-card:hover::before,
@@ -919,7 +923,7 @@
     inset -4px -4px 4px #ffffff,
     inset 4px 4px 4px rgba(196, 196, 196, 0.8);
   border-radius: 28px 0 0 28px;
-  font-family: "Segoe UI", sans-serif;
+  font-family: "Segoe UI";
   font-weight: 700;
   font-size: 44px;
   margin-bottom: 24px;
@@ -931,13 +935,13 @@
 .dl-step-card:hover .dl-step-card-badge {
   transform: translateY(-4px) rotate(-4deg) scale(1.08);
   box-shadow:
-    -4px -4px 8px #ffffff,
-    4px 4px 8px var(--step-glow);
+    -4px -4px 4px #ffffff,
+    4px 4px 4px var(--step-glow);
 }
 
 .dl-step-card-title {
   margin: 0 0 12px;
-  font-family: "Segoe UI", sans-serif;
+  font-family: "Segoe UI";
   font-weight: 700;
   font-size: 28px;
   color: #31344b;
@@ -945,7 +949,7 @@
 
 .dl-step-card-desc {
   margin: 0;
-  font-family: "Segoe UI", sans-serif;
+  font-family: "Segoe UI";
   font-size: 20px;
   line-height: 1.5;
   color: #000;
@@ -980,7 +984,7 @@
   display: flex;
   align-items: center;
   gap: 16px;
-  font-family: "Inter", sans-serif;
+  font-family: "Segoe UI";
   font-weight: 600;
   font-size: 20px;
   color: #2f3547;
@@ -1073,7 +1077,7 @@
   z-index: 2;
   display: inline-block;
   margin: 0 0 14px;
-  font-family: "Segoe UI", sans-serif;
+  font-family: "Segoe UI";
   font-weight: 700;
   font-size: 28px;
   letter-spacing: 0.03em;
@@ -1099,7 +1103,7 @@
   position: relative;
   z-index: 2;
   margin: 0;
-  font-family: "Inter", sans-serif;
+  font-family: "Segoe UI";
   font-size: 20px;
   color: #31344b;
 }
@@ -1131,7 +1135,7 @@
 .dl-cta-heading {
   margin: 0;
   max-width: 900px;
-  font-family: "Segoe UI", sans-serif;
+  font-family: "Segoe UI";
   font-weight: 700;
   font-size: 36px;
   line-height: 1.15;
@@ -1142,7 +1146,7 @@
 .dl-cta-subtext {
   margin: 0;
   max-width: 960px;
-  font-family: "Segoe UI", sans-serif;
+  font-family: "Segoe UI";
   font-size: 24px;
   line-height: 1.43;
   letter-spacing: 0.03em;
@@ -1629,3 +1633,96 @@
     font-size: 22px;
   }
 }
+
+
+/* Final reference-card geometry override */
+.dl-adv-card { width: 275px; height: 275px; }
+.dl-adv-card-shadow,
+.dl-adv-card-mirrored .dl-adv-card-shadow { width: 250px; height: 250px; left: 25px; top: 0; }
+.dl-adv-card-front,
+.dl-adv-card-mirrored .dl-adv-card-front { width: 250px; height: 250px; left: 0; top: 23px; padding: 105px 16px 24px; }
+.dl-adv-card-badge { width: 80px; height: 80px; font-size: 36px; }
+@media (max-width: 1024px) {
+  .dl-adv-card { width: 275px; height: 275px; }
+  .dl-advantage-grid { grid-template-columns: repeat(2, 275px); }
+  .dl-adv-card-shadow, .dl-adv-card-mirrored .dl-adv-card-shadow,
+  .dl-adv-card-front, .dl-adv-card-mirrored .dl-adv-card-front { width: 250px; height: 250px; }
+}
+@media (max-width: 768px) {
+  .dl-adv-card { width: 275px; height: 275px; }
+  .dl-advantage-grid { grid-template-columns: 275px; }
+}
+@media (max-width: 480px) {
+  .dl-adv-card { width: 275px; height: 275px; }
+  .dl-adv-card-front { max-width: 250px; max-height: 250px; }
+  .dl-adv-card-badge { width: 80px; height: 80px; font-size: 36px; }
+}
+
+/* =========================================================
+   MOBILE VIEW FIX ONLY
+   1) Transform / Upskill / Adapt = exactly same size
+   2) Skill banner = larger and clearer on mobile
+   No desktop/tablet or other design changes
+   ========================================================= */
+@media (max-width: 480px) {
+
+  /* All three dashed oval labels use one identical size */
+  .dl-transform-icons > .dl-pill-label,
+  .dl-transform-row .dl-pill-label {
+    width: 260px !important;
+    height: 82px !important;
+    min-width: 260px !important;
+    max-width: 260px !important;
+    min-height: 82px !important;
+    max-height: 82px !important;
+    padding: 0 !important;
+    box-sizing: border-box !important;
+    flex: 0 0 260px !important;
+  }
+
+  .dl-transform-icons {
+    width: 100%;
+    align-items: center;
+  }
+
+  .dl-transform-row {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+  }
+
+  .dl-pill-label-text {
+    width: 100%;
+    text-align: center;
+    font-size: 28px;
+    line-height: 1.2;
+  }
+
+  /* Enlarge the polygon message section on mobile */
+  .dl-skill-banner-section {
+    padding: 16px 0 48px !important;
+    overflow: hidden;
+  }
+
+  .dl-skill-banner {
+    width: 100%;
+    height: 160px !important;
+    max-width: none;
+    aspect-ratio: auto !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    clip-path: none !important;
+  }
+
+  .dl-skill-banner-svg {
+    width: 125% !important;
+    height: auto !important;
+    max-width: none !important;
+    flex: 0 0 125%;
+    display: block;
+  }
+}
+

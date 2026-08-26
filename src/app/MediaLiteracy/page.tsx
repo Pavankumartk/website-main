@@ -3,6 +3,7 @@ import Image from "next/image";
 import styles from "./medialiteracy.module.css";
 import Header from "../../components/Header/header";
 import Footer from "../../components/Footer/footer";
+import TalkToExpertButton from "@/components/TalkToOurExpert/TalkToExpertButton";
 
 const MediaLiteracy: NextPage = () => {
   return (
@@ -446,6 +447,7 @@ const MediaLiteracy: NextPage = () => {
             <Image src="/icons/arrow-up-01.svg" width={28} height={28} sizes="28px" alt="Back to top" />
           </div> */}
       </main>
+       <TalkToExpertButton />
       <Footer />
     </>
   );

@@ -84,8 +84,8 @@
   overflow: hidden;
   background-color: #dfe6e9;
   box-shadow:
-    inset -6px -6px 14px rgba(255, 255, 255, 0.85),
-    inset 6px 6px 14px rgba(190, 190, 190, 0.5);
+    inset -4px -4px 4px rgba(255, 255, 255, 0.85),
+    inset 4px 4px 4px rgba(190, 190, 190, 0.5);
   text-align: left;
   color: #2f3547;
 }
@@ -145,8 +145,8 @@
   letter-spacing: 0.02em;
   white-space: nowrap;
   box-shadow:
-    inset 5px 5px 10px rgba(190, 198, 202, 0.45),
-    inset -5px -5px 10px rgba(255, 255, 255, 0.75);
+    inset 4px 4px 4px rgba(190, 198, 202, 0.45),
+    inset -4px -4px 4px rgba(255, 255, 255, 0.75);
 }
 
 .researchSmarterLearn {
@@ -185,8 +185,8 @@
   box-sizing: border-box;
   flex-shrink: 0;
   box-shadow:
-    -10px -10px 20px rgba(255, 255, 255, 0.95),
-    10px 10px 20px rgba(190, 190, 190, 0.75);
+    -4px -4px 4px rgba(255, 255, 255, 0.95),
+    4px 4px 4px rgba(190, 190, 190, 0.75);
 }
 
 .frameParent2 {
@@ -214,6 +214,7 @@
   font-size: clamp(13px, 4vw, 16px);
   line-height: 1.3;
   text-align: center;
+  white-space: nowrap;
 }
 
 .frameParent3 {
@@ -231,8 +232,8 @@
   background-color: #dedbcd99;
   border: 1px solid rgba(255, 255, 255, 0.65);
   box-shadow:
-    inset -2px -2px 5px rgba(255, 255, 255, 0.26),
-    inset 2px 2px 5px rgba(132, 78, 78, 0.1);
+    inset -4px -4px 4px rgba(255, 255, 255, 0.26),
+    inset 4px 4px 4px rgba(132, 78, 78, 0.1);
 }
 
 .discoverTrustedAcademic {
@@ -281,8 +282,8 @@
   color: #31344b;
   overflow: hidden;
   box-shadow:
-    -6px -6px 12px rgba(255, 255, 255, 0.9),
-    6px 6px 12px rgba(190, 190, 190, 0.55);
+    -4px -4px 4px rgba(255, 255, 255, 0.9),
+    4px 4px 4px rgba(190, 190, 190, 0.55);
 }
 
 .accessCredibleResearchAcrosWrapper {
@@ -592,8 +593,8 @@
   border-radius: 999px;
   background: #dfe6e9;
   box-shadow:
-    inset -4px -4px 8px #ffffff,
-    inset 4px 4px 8px #c4c4c4;
+    inset -4px -4px 4px #ffffff,
+    inset 4px 4px 4px #c4c4c4;
   color: #2d4cc8;
   font-size: 15px;
   font-weight: 600;
@@ -639,8 +640,8 @@
   border-radius: 8px;
   background-color: #dfe6e9;
   box-shadow:
-    -4px -4px 8px rgba(255, 255, 255, 0.95),
-    4px 4px 8px rgba(198, 198, 201, 0.7);
+    -4px -4px 4px rgba(255, 255, 255, 0.95),
+    4px 4px 4px rgba(198, 198, 201, 0.7);
   overflow: hidden;
   display: flex;
   align-items: center;
@@ -654,8 +655,8 @@
 .frameWrapper5:hover,
 .requestDemoWrapper:hover {
   box-shadow:
-    inset -4px -4px 8px rgba(255, 255, 255, 0.95),
-    inset 4px 4px 8px rgba(198, 198, 201, 0.7);
+    inset -4px -4px 4px rgba(255, 255, 255, 0.95),
+    inset 4px 4px 4px rgba(198, 198, 201, 0.7);
 }
 
 .requestDemo,
@@ -726,14 +727,14 @@
     flex: none;
     padding: 16px 32px;
     box-shadow:
-      -8px -8px 16px #fff,
-      8px 8px 16px #c6c6c9;
+      -4px -4px 4px #fff,
+      4px 4px 4px #c6c6c9;
   }
 
   .requestDemoWrapper {
     box-shadow:
-      -4px -4px 8px rgba(255, 255, 255, 0.95),
-      4px 4px 8px rgba(198, 198, 201, 0.7);
+      -4px -4px 4px rgba(255, 255, 255, 0.95),
+      4px 4px 4px rgba(198, 198, 201, 0.7);
   }
 
   .requestDemo,
@@ -767,8 +768,8 @@
   background: #dfe6e9;
   box-sizing: border-box;
   box-shadow:
-    inset -6px -6px 14px rgba(255, 255, 255, 0.9),
-    inset 6px 6px 14px rgba(190, 190, 190, 0.55),
+    inset -4px -4px 4px rgba(255, 255, 255, 0.9),
+    inset 4px 4px 4px rgba(190, 190, 190, 0.55),
     inset 0 0 0 rgba(0, 0, 0, 0);
 }
 
@@ -871,7 +872,7 @@
   .statsDivider {
     width: 9px;
     height: 180px;
-    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: inset 0 4px 4px rgba(0, 0, 0, 0.25);
   }
 }
 
@@ -906,8 +907,8 @@
   padding: 9px 18px;
   white-space: nowrap;
   box-shadow:
-    inset -4px -4px 8px rgba(255, 255, 255, 0.9),
-    inset 4px 4px 8px rgba(198, 198, 201, 0.75);
+    inset -4px -4px 4px rgba(255, 255, 255, 0.9),
+    inset 4px 4px 4px rgba(198, 198, 201, 0.75);
 }
 
 .buildConfidenceThroughCritiParent {
@@ -1192,8 +1193,8 @@
   align-items: center;
   padding: 0 16px;
   box-shadow:
-    -6px -6px 12px rgba(255, 255, 255, 0.9),
-    6px 6px 12px rgba(190, 190, 190, 0.55);
+    -4px -4px 4px rgba(255, 255, 255, 0.9),
+    4px 4px 4px rgba(190, 190, 190, 0.55);
 }
 
 .frameParent25,
@@ -1335,8 +1336,8 @@
   margin-bottom: 14px;
   white-space: nowrap;
   box-shadow:
-    inset -4px -4px 8px #ffffff,
-    inset 4px 4px 8px #c4c4c4;
+    inset -4px -4px 4px #ffffff,
+    inset 4px 4px 4px #c4c4c4;
 }
 
 .integrityTitle {
@@ -1436,8 +1437,8 @@
     padding: 9px 32px 16px;
     isolation: isolate;
     box-shadow:
-      -10px -10px 20px #fff,
-      10px 10px 20px #c4c4c4;
+      -4px -4px 4px #fff,
+      4px 4px 4px #c4c4c4;
   }
 
   .frameParent24 {
@@ -1458,8 +1459,8 @@
     top: 546px;
     left: 0;
     box-shadow:
-      -10px -10px 20px #fff,
-      10px 10px 20px #c6c6c9;
+      -4px -4px 4px #fff,
+      4px 4px 4px #c6c6c9;
   }
 
   .frameParent25,
@@ -1581,8 +1582,8 @@
   white-space: nowrap;
   box-sizing: border-box;
   box-shadow:
-    inset 3px 3px 7px rgba(190, 198, 202, 0.52),
-    inset -3px -3px 7px rgba(255, 255, 255, 0.78);
+    inset 4px 4px 4px rgba(190, 198, 202, 0.52),
+    inset -4px -4px 4px rgba(255, 255, 255, 0.78);
 }
 
 .masterInformationUnlockContainer {
@@ -1647,8 +1648,8 @@
   place-items: center;
   background: #dfe6e9;
   box-shadow:
-    inset -4px -4px 8px #ffffff,
-    inset 4px 4px 8px rgba(196, 196, 196, 0.8);
+    inset -4px -4px 4px #ffffff,
+    inset 4px 4px 4px rgba(196, 196, 196, 0.8);
 }
 
 .journeyCircle::before {
@@ -1661,8 +1662,8 @@
   background: #dfe6e9;
   border: 1.5px solid var(--stage-color);
   box-shadow:
-    8px 8px 16px #c6c6c9,
-    -8px -8px 16px #ffffff;
+    4px 4px 4px #c6c6c9,
+    -4px -4px 4px #ffffff;
 }
 
 .journeyCircle span {
@@ -1683,8 +1684,8 @@
   border-radius: 14px;
   background: #dfe6e9;
   box-shadow:
-    inset 4px 4px 8px rgba(190, 198, 202, 0.5),
-    inset -4px -4px 8px rgba(255, 255, 255, 0.86);
+    inset 4px 4px 4px rgba(190, 198, 202, 0.5),
+    inset -4px -4px 4px rgba(255, 255, 255, 0.86);
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -1702,8 +1703,8 @@
   background: var(--stage-color);
   opacity: 0.48;
   box-shadow:
-    inset -2px -2px 4px rgba(255, 255, 255, 0.28),
-    inset 2px 2px 4px rgba(0, 0, 0, 0.08);
+    inset -4px -4px 4px rgba(255, 255, 255, 0.28),
+    inset 4px 4px 4px rgba(0, 0, 0, 0.08);
 }
 
 .journeyStage:nth-child(2) .journeyCorner,
@@ -1862,8 +1863,8 @@
     border-radius: 100px;
     background: #dfe6e9;
     box-shadow:
-      -4px -4px 8px #ffffff,
-      4px 4px 8px #c6c6c9;
+      -4px -4px 4px #ffffff,
+      4px 4px 4px #c6c6c9;
   }
 
   .journeyCircle {
@@ -1960,8 +1961,8 @@
   letter-spacing: 0.02em;
   white-space: nowrap;
   box-shadow:
-    inset -4px -4px 8px rgba(255, 255, 255, 0.85),
-    inset 4px 4px 8px rgba(196, 196, 196, 0.65);
+    inset -4px -4px 4px rgba(255, 255, 255, 0.85),
+    inset 4px 4px 4px rgba(196, 196, 196, 0.65);
   box-sizing: border-box;
 }
 
@@ -2015,8 +2016,8 @@
   border-radius: 50%;
   background: #dfe6e9;
   box-shadow:
-    8px 8px 16px #c4c4c4,
-    -8px -8px 16px #ffffff;
+    4px 4px 4px #c4c4c4,
+    -4px -4px 4px #ffffff;
   z-index: 1;
 }
 
@@ -2044,8 +2045,8 @@
   border-radius: 50%;
   background: #dfe6e9;
   box-shadow:
-    4px 4px 8px rgba(196, 196, 196, 0.9),
-    -4px -4px 8px rgba(255, 255, 255, 0.95);
+    4px 4px 4px rgba(196, 196, 196, 0.9),
+    -4px -4px 4px rgba(255, 255, 255, 0.95);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -2195,8 +2196,8 @@
     width: 170px;
     height: 170px;
     box-shadow:
-      inset 4px 4px 8px #c4c4c4,
-      inset -4px -4px 8px #ffffff;
+      inset 4px 4px 4px #c4c4c4,
+      inset -4px -4px 4px #ffffff;
   }
 
   .skillCircleProgress {
@@ -2251,3 +2252,74 @@
     object-fit: contain;
   }
 }
+
+/* =========================================================
+   INFORMATION LITERACY — BREADCRUMB OVERLAP FIX ONLY
+   Keeps breadcrumb in its own normal-flow row above hero content.
+   No hero/card/footer design changes.
+   ========================================================= */
+.frameParent8 {
+  position: relative !important;
+  top: auto !important;
+  right: auto !important;
+  bottom: auto !important;
+  left: auto !important;
+  transform: none !important;
+  box-sizing: border-box;
+  flex-shrink: 0 !important;
+  min-height: 40px;
+  z-index: 10 !important;
+}
+
+.neurolxp21Wrapper,
+.arrowRightDoubleParent {
+  position: relative;
+  min-width: 0;
+  flex-shrink: 0;
+}
+
+.neurolxp212,
+.arrowRightDoubleParent {
+  white-space: nowrap;
+}
+
+@media (min-width: 1025px) {
+  .frameParent8 {
+    width: min(1280px, calc(100% - 80px)) !important;
+    margin: 0 auto 28px !important;
+    padding: 0 8px !important;
+    align-self: center;
+  }
+
+  /* Hero starts only after the breadcrumb row has finished. */
+  .frameParent9 {
+    margin-top: 0 !important;
+  }
+}
+
+@media (max-width: 1024px) {
+  .frameParent8 {
+    width: calc(100% - 32px) !important;
+    margin: 20px auto 20px !important;
+    padding: 0 !important;
+    flex-wrap: nowrap;
+  }
+}
+
+@media (max-width: 480px) {
+  .frameParent8 {
+    width: 100% !important;
+    padding: 0 16px !important;
+    margin: 16px auto 20px !important;
+    gap: 6px;
+    font-size: 13px;
+    overflow: visible;
+  }
+
+  .breadcrumbDoubleArrow {
+    width: 16px;
+    height: 16px;
+    flex: 0 0 16px;
+  }
+}
+

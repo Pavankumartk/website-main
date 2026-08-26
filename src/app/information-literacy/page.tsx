@@ -1,11 +1,13 @@
+"use client";
+
 import type { NextPage } from "next";
-import type { ReactNode } from "react";
+import { useRef, useState, type ReactNode } from "react";
 import Image from "next/image";
-import BookDemoTrigger from "@/components/Bookademo/BookDemoTrigger";
+import BookDemoModal from "@/components/Bookademo/BookDemoModal";
 import styles from "./information-literacy.module.css";
 import Header from "../../components/Header/header";
 import Footer from "../../components/Footer/footer";
-
+import TalkToExpertButton from "@/components/TalkToOurExpert/TalkToExpertButton";
 type ThinkingCardData = {
   id: string;
   title: ReactNode;
@@ -123,6 +125,23 @@ const SkillCircle = ({ value, label, color }: { value: string; label: string; co
 };
 
 const InformationLiteracy: NextPage = () => {
+  const [isBookDemoOpen, setIsBookDemoOpen] = useState(false);
+  const bookDemoButtonRef = useRef<HTMLButtonElement>(null);
+
+  const openBookDemo = () => {
+    window.scrollTo({ top: 0, behavior: "instant" });
+    setIsBookDemoOpen(true);
+  };
+
+  const closeBookDemo = () => {
+    setIsBookDemoOpen(false);
+    bookDemoButtonRef.current?.focus();
+  };
+
+  const goToHomePage = () => {
+    window.location.href = "/HomePage";
+  };
+
   return (
     <>
       <Header />
@@ -241,14 +260,23 @@ const InformationLiteracy: NextPage = () => {
           </div>
         </div>
         <div className={styles.frameParent12}>
-          <BookDemoTrigger className={styles.requestDemoWrapper}>
+          <button
+            type="button"
+            className={styles.requestDemoWrapper}
+            onClick={openBookDemo}
+            ref={bookDemoButtonRef}
+          >
             <div className={styles.requestDemo}>Request Demo</div>
-          </BookDemoTrigger>
-          <div className={styles.frameWrapper5}>
+          </button>
+          <button
+            type="button"
+            className={styles.frameWrapper5}
+            onClick={goToHomePage}
+          >
             <div className={styles.startLearningWrapper}>
               <div className={styles.startLearning}>Start Learning</div>
             </div>
-          </div>
+          </button>
         </div>
       </div>
       <div className={styles.frameParent13}>
@@ -516,6 +544,8 @@ const InformationLiteracy: NextPage = () => {
       </div>
       {/* <TalkToExpertButton /> */}
       </div>
+      {isBookDemoOpen && <BookDemoModal onClose={closeBookDemo} />}
+       <TalkToExpertButton />
       <Footer />
     </>
   );
