@@ -146,7 +146,7 @@ export default function FinancialLiteracyPage() {
         </div>
         <div className={styles.heroOuterCircle}>
           <div className={styles.heroInnerCircle}>
-            <Image className={styles.ellipseIcon} src="/images/Ellipse 357.webp" width={560} height={560} sizes="560px" alt="Confident professional" priority />
+            <Image className={styles.ellipseIcon} src="/images/rich.webp" width={560} height={560} sizes="560px" alt="Confident professional" priority />
           </div>
         </div>
       </div>

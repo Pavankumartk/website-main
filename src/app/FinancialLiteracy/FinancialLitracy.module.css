@@ -964,7 +964,7 @@
   left: 126px;
   letter-spacing: 0.03em;
   line-height: 60px;
-  text-transform: capitalize;
+  text-transform: none;
   display: inline-block;
   width: 1046px;
   height: 120px;
@@ -3085,6 +3085,292 @@
   .image20Parent3 {
     padding-top: 24px !important;
     padding-bottom: 24px !important;
+  }
+}
+
+/* =========================================================
+   MOBILE ONLY — FINANCIAL FOUNDATION CARDS FIX
+   Reduced coloured area + no text overlap.
+   Desktop/tablet unchanged.
+   ========================================================= */
+@media (max-width: 767.98px) {
+  .frameParent7 {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 0 14px !important;
+    box-sizing: border-box !important;
+    overflow: visible !important;
+  }
+
+  .frameParent8,
+  .frameParent11 {
+    display: contents !important;
+  }
+
+  .frameParent9 {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: 148px !important;
+    min-height: 148px !important;
+    margin: 0 !important;
+    transform: none !important;
+    overflow: hidden !important;
+    border-radius: 16px !important;
+    box-sizing: border-box !important;
+  }
+
+  .frameParent9:hover {
+    transform: none !important;
+  }
+
+  .wrapper,
+  .container,
+  .frame,
+  .wrapper2 {
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 148px !important;
+    border-radius: 16px !important;
+  }
+
+  /* Smaller coloured number area */
+  .skillCardPanel,
+  .rectangleIcon,
+  .skillCardPanelAlt,
+  .rectangleIconAlt {
+    top: 0 !important;
+    left: 22% !important;
+    width: 78% !important;
+    height: 140px !important;
+    max-width: none !important;
+    border-radius: 0 8px 8px 0 !important;
+  }
+
+  .rectangleIcon,
+  .rectangleIconAlt {
+    clip-path: polygon(16% 0%, 100% 0%, 100% 100%, 0 100%, 9% 58%) !important;
+  }
+
+  .b,
+  .b4 {
+    top: 50% !important;
+    left: 14px !important;
+    transform: translateY(-50%) !important;
+    font-size: 44px !important;
+    line-height: 1 !important;
+  }
+
+  /* More room for text */
+  .smartBudgetingParent,
+  .creditManagementParent,
+  .savingEssentialsParent {
+    top: 50% !important;
+    left: 33% !important;
+    width: 61% !important;
+    transform: translateY(-50%) !important;
+    gap: 8px !important;
+    box-sizing: border-box !important;
+    overflow: visible !important;
+  }
+
+  .smartBudgeting {
+    width: 100% !important;
+    font-size: 16px !important;
+    line-height: 20px !important;
+    text-align: left !important;
+    white-space: normal !important;
+    overflow-wrap: normal !important;
+    word-break: normal !important;
+  }
+
+  .planIncomeAnd,
+  .borrowResponsibly,
+  .growSavingsAnd,
+  .achieveFinancialGoals {
+    width: 100% !important;
+    max-width: 100% !important;
+    font-size: 14px !important;
+    line-height: 19px !important;
+    text-align: left !important;
+    white-space: normal !important;
+    overflow-wrap: normal !important;
+    word-break: normal !important;
+  }
+}
+
+@media (max-width: 390px) {
+  .frameParent9 {
+    height: 142px !important;
+    min-height: 142px !important;
+  }
+
+  .wrapper,
+  .container,
+  .frame,
+  .wrapper2 {
+    height: 142px !important;
+  }
+
+  .skillCardPanel,
+  .rectangleIcon,
+  .skillCardPanelAlt,
+  .rectangleIconAlt {
+    left: 21% !important;
+    width: 79% !important;
+    height: 134px !important;
+  }
+
+  .b,
+  .b4 {
+    left: 12px !important;
+    font-size: 42px !important;
+  }
+
+  .smartBudgetingParent,
+  .creditManagementParent,
+  .savingEssentialsParent {
+    left: 32% !important;
+    width: 63% !important;
+  }
+
+  .smartBudgeting {
+    font-size: 15px !important;
+    line-height: 19px !important;
+  }
+
+  .planIncomeAnd,
+  .borrowResponsibly,
+  .growSavingsAnd,
+  .achieveFinancialGoals {
+    font-size: 13px !important;
+    line-height: 18px !important;
+  }
+}
+
+/* =========================================================
+   MOBILE ONLY — CENTER SMART DECISIONS TICK LIST
+   Alignment only. No other design changes.
+   ========================================================= */
+@media (max-width: 767.98px) {
+  .frameParent18 {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    align-items: center !important;
+  }
+
+  .frameParent19,
+  .frameParent21 {
+    width: 100% !important;
+    max-width: 330px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    justify-content: flex-start !important;
+  }
+
+  .understandCreditLoans,
+  .assessRisksBefore {
+    flex: 1 1 auto !important;
+    min-width: 0 !important;
+    white-space: normal !important;
+    text-align: left !important;
+  }
+}
+
+/* =========================================================
+   MOBILE ONLY — ALIGN EACH LINE WITH CIRCLE CENTER
+   Alignment only. No other design changes.
+   ========================================================= */
+@media (max-width: 767.98px) {
+  .frameParent19,
+  .frameParent21 {
+    display: grid !important;
+    grid-template-columns: 41px minmax(0, 1fr) !important;
+    column-gap: 16px !important;
+    align-items: center !important;
+    width: 330px !important;
+    max-width: calc(100% - 24px) !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  .tickWrap {
+    width: 41px !important;
+    height: 41px !important;
+    margin: 0 !important;
+    align-self: center !important;
+  }
+
+  .understandCreditLoans,
+  .assessRisksBefore {
+    width: 100% !important;
+    min-width: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    align-self: center !important;
+    line-height: 24px !important;
+    white-space: normal !important;
+    text-align: left !important;
+  }
+}
+
+/* =========================================================
+   DESKTOP — FINANCIAL SKILL CARDS: REMOVE EMPTY RIGHT SPACE
+   Only card width/layout is adjusted.
+   ========================================================= */
+@media (min-width: 1025px) {
+  .frameParent7 {
+    gap: 40px !important;
+  }
+
+  .frameParent8,
+  .frameParent11 {
+    width: 560px !important;
+  }
+
+  .frameParent9 {
+    width: 560px !important;
+  }
+
+  .wrapper,
+  .container,
+  .frame,
+  .wrapper2 {
+    width: 560px !important;
+    left: calc(50% - 280px) !important;
+  }
+
+  .skillCardPanel,
+  .rectangleIcon,
+  .skillCardPanelAlt,
+  .rectangleIconAlt {
+    width: 492px !important;
+  }
+}
+
+/* DESKTOP — reduce the remaining empty space on the right of skill cards */
+@media (min-width: 1025px) {
+  .frameParent8,
+  .frameParent11,
+  .frameParent9 {
+    width: 520px !important;
+  }
+
+  .wrapper,
+  .container,
+  .frame,
+  .wrapper2 {
+    width: 520px !important;
+    left: calc(50% - 260px) !important;
+  }
+
+  .skillCardPanel,
+  .rectangleIcon,
+  .skillCardPanelAlt,
+  .rectangleIconAlt {
+    width: 452px !important;
   }
 }
 

@@ -369,7 +369,7 @@ const MediaLiteracy: NextPage = () => {
           <div className={styles.image202} />
           <div className={styles.image21Group}>
             <div className={styles.image212} />
-            <Image className={styles.image24Icon} src="/images/working.webp" width={1216} height={824} sizes="(max-width: 768px) 100vw, 1216px" alt="People working together" />
+            <Image className={styles.image24Icon} src="/images/image 24.webp" width={1216} height={824} sizes="(max-width: 768px) 100vw, 1216px" alt="People working together" />
             <div className={styles.frameParent38}>
               <div className={styles.frameParent15}>
                 <div className={styles.frameChild21}>Responsible Content Creation</div>

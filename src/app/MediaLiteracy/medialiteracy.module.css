@@ -1822,3 +1822,150 @@
     width: 95%;
   }
 }
+
+/* =========================================================
+   RESPONSIBLE CONTENT CREATION — DESKTOP PNG MATCH
+   Only this section is adjusted.
+   ========================================================= */
+@media (min-width: 1025px) {
+  .rectangleParent {
+    width: min(1280px, calc(100% - 48px)) !important;
+    height: 565px !important;
+    margin: 96px auto 0 !important;
+    padding: 0 !important;
+    position: relative !important;
+    border-radius: 100px 8px 100px 8px !important;
+    background-color: #dfe6e9 !important;
+    box-shadow:
+      inset -8px -8px 16px rgba(255, 255, 255, 0.95),
+      inset 8px 8px 16px rgba(196, 196, 196, 0.8) !important;
+    overflow: hidden !important;
+  }
+
+  .image21Group {
+    position: absolute !important;
+    top: 32px !important;
+    left: 32px !important;
+    right: 32px !important;
+    bottom: 32px !important;
+    width: auto !important;
+    height: auto !important;
+    padding: 0 !important;
+    border-radius: 80px 4px 80px 4px !important;
+    overflow: hidden !important;
+    background-color: #dfe6e9 !important;
+    box-shadow:
+      -10px -10px 20px rgba(255, 255, 255, 0.62),
+      10px 10px 20px rgba(196, 196, 196, 0.72) !important;
+  }
+
+  .image21Group::after {
+    content: "" !important;
+    position: absolute !important;
+    inset: 0 !important;
+    z-index: 2 !important;
+    pointer-events: none !important;
+    background:
+      linear-gradient(
+        90deg,
+        rgba(223, 230, 233, 0.98) 0%,
+        rgba(223, 230, 233, 0.94) 28%,
+        rgba(223, 230, 233, 0.60) 43%,
+        rgba(223, 230, 233, 0.08) 58%,
+        rgba(223, 230, 233, 0) 68%
+      ) !important;
+  }
+
+  .image24Icon {
+    position: absolute !important;
+    inset: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    object-position: center 43% !important;
+    border-radius: 0 !important;
+    z-index: 1 !important;
+  }
+
+  .frameParent38 {
+    position: absolute !important;
+    top: 70px !important;
+    left: 52px !important;
+    width: 500px !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 34px !important;
+    background: transparent !important;
+    z-index: 3 !important;
+  }
+
+  .frameChild21 {
+    width: auto !important;
+    min-width: 405px !important;
+    height: 50px !important;
+    min-height: 50px !important;
+    padding: 0 30px !important;
+    border-radius: 30px !important;
+    font-size: 22px !important;
+    font-weight: 600 !important;
+    letter-spacing: 0.03em !important;
+    white-space: nowrap !important;
+    box-shadow:
+      inset -6px -6px 10px rgba(255, 255, 255, 0.95),
+      inset 6px 6px 10px rgba(196, 196, 196, 0.8) !important;
+  }
+
+  .createResponsiblyInspireContainer {
+    width: 500px !important;
+    margin: 8px 0 0 !important;
+    font-size: 48px !important;
+    line-height: 1.18 !important;
+    letter-spacing: 0.02em !important;
+    font-weight: 700 !important;
+  }
+
+  .thinkCriticallyNavigate,
+  .confidently {
+    line-height: inherit !important;
+  }
+
+  .createEthicalCredible {
+    width: 445px !important;
+    margin: 8px 0 0 !important;
+    font-size: 28px !important;
+    line-height: 1.35 !important;
+    letter-spacing: 0.03em !important;
+  }
+}
+
+/* RESPONSIBLE CONTENT CREATION — image position correction only */
+@media (min-width: 1025px) {
+  .image24Icon {
+    width: 94% !important;
+    left: 6% !important;
+    right: auto !important;
+    top: 0 !important;
+    bottom: 0 !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    object-position: center 28% !important;
+  }
+}
+
+/* RESPONSIBLE CONTENT CREATION — leave clear space above the head */
+@media (min-width: 1025px) {
+  .image24Icon {
+    width: 94% !important;
+    left: 6% !important;
+    right: auto !important;
+    top: 0 !important;
+    bottom: auto !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    object-position: center 12% !important;
+  }
+}
+
