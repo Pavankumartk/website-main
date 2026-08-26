@@ -2,7 +2,6 @@
 
 import type { NextPage } from "next";
 import Image from "next/image";
-import Link from "next/link";
 import { useEffect, useState } from "react";
 import styles from "./genzgalaxy.module.css";
 import Header from "../../components/Header/header";
@@ -62,6 +61,98 @@ const GenZgalaxy: NextPage = () => {
     };
   }, []);
 
+  /*
+   * Gen Z Galaxy page-only scroll fix:
+   * - removes nested vertical scroll containers created by outer layout wrappers
+   * - keeps the Header in normal document flow instead of appearing sticky
+   * - restores every touched inline style when leaving this route
+   */
+  useEffect(() => {
+    const main = document.getElementById("main-content");
+    if (!main) return;
+
+    type SavedStyle = {
+      el: HTMLElement;
+      property: string;
+      value: string;
+      priority: string;
+    };
+
+    const saved: SavedStyle[] = [];
+
+    const setImportant = (el: HTMLElement, property: string, value: string) => {
+      saved.push({
+        el,
+        property,
+        value: el.style.getPropertyValue(property),
+        priority: el.style.getPropertyPriority(property),
+      });
+      el.style.setProperty(property, value, "important");
+    };
+
+    /*
+     * Make the browser/window the ONLY vertical scroll container.
+     * Start from <main> and neutralize any parent wrapper that may have
+     * height/max-height + overflow:auto/scroll coming from the app layout.
+     */
+    let current: HTMLElement | null = main;
+    while (current && current !== document.body) {
+      setImportant(current, "overflow-y", "visible");
+      setImportant(current, "max-height", "none");
+
+      if (current !== main) {
+        const computed = window.getComputedStyle(current);
+        if (
+          computed.overflowY === "auto" ||
+          computed.overflowY === "scroll" ||
+          computed.height === `${window.innerHeight}px`
+        ) {
+          setImportant(current, "height", "auto");
+          setImportant(current, "min-height", "0");
+        }
+      }
+
+      current = current.parentElement;
+    }
+
+    /* BODY must not become a second independent scroll area. */
+    setImportant(document.body, "overflow-y", "visible");
+    setImportant(document.body, "height", "auto");
+    setImportant(document.body, "max-height", "none");
+
+    /* HTML/browser owns the one visible page scrollbar. */
+    const html = document.documentElement;
+    setImportant(html, "overflow-y", "auto");
+    setImportant(html, "height", "auto");
+    setImportant(html, "max-height", "none");
+
+    /*
+     * Header must scroll away with the page.
+     * !important is intentional here so a sticky/fixed rule in header.css
+     * cannot override this page-specific behavior.
+     */
+    const header = document.querySelector<HTMLElement>(".nlxp-header");
+    if (header) {
+      setImportant(header, "position", "relative");
+      setImportant(header, "top", "auto");
+      setImportant(header, "right", "auto");
+      setImportant(header, "bottom", "auto");
+      setImportant(header, "left", "auto");
+      setImportant(header, "inset", "auto");
+    }
+
+    return () => {
+      for (let i = saved.length - 1; i >= 0; i -= 1) {
+        const { el, property, value, priority } = saved[i];
+        if (value) {
+          el.style.setProperty(property, value, priority);
+        } else {
+          el.style.removeProperty(property);
+        }
+      }
+    };
+  }, []);
+
   return (
      <>
       <title>Gen Z Galaxy | NeuroLXP</title>
@@ -113,14 +204,14 @@ const GenZgalaxy: NextPage = () => {
         </div>
         <div className={styles.frameParent3}>
           <div className={styles.frameParent4}>
-            <Link href="/HomePage" className={styles.frameIcon}>
+            <div className={styles.frameIcon}>
               <div className={styles.learnMoreFlat}>Learn More</div>
-            </Link>
-            <Link href="/HomePage" className={styles.frameWrapper4}>
+            </div>
+            <div className={styles.frameWrapper4}>
               <div className={styles.explorePlatformParent}>
                 <div className={styles.explorePlatform}>Explore Platform</div>
               </div>
-            </Link>
+            </div>
           </div>
           <div className={styles.frameParent5}>
             <div className={styles.genzgalaxyGroup}>
@@ -560,11 +651,11 @@ const GenZgalaxy: NextPage = () => {
             </div>
             <div className={styles.smarterFlexibleLearning}>Smarter, flexible learning that adapts to your pace and goals</div>
           </div>
-          <Link href="/HomePage" className={styles.frameWrapper12}>
+          <div className={styles.frameWrapper12}>
             <div className={styles.explorePlatformWrapper}>
               <div className={styles.explorePlatform2}>Explore Platform</div>
             </div>
-          </Link>
+          </div>
         </div>
         <Image className={styles.youngPeopleRowWithThumbsUIcon} src="/images/young.webp" width={772} height={500} sizes="100vw" alt="" aria-hidden="true" />
       </div>
