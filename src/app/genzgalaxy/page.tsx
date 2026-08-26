@@ -546,7 +546,7 @@ const GenZgalaxy: NextPage = () => {
         </div>
       </div>
 
-      <div className={styles.rectangleGroup} style={{ minHeight: "500px", height: "500px", flexShrink: 0 }}>
+      <div className={styles.rectangleGroup}>
         <Image className={styles.rectangleIcon2} src="/images/background2.webp" width={1280} height={500} sizes="100vw" alt="" aria-hidden="true" />
         <div className={styles.image202} />
         <div className={styles.frameParent46}>
