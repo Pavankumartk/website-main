@@ -48,8 +48,8 @@
   top: 0px;
   left: calc(50% - 720px);
   box-shadow:
-    -8px -8px 8px rgba(255, 255, 255, 0.5) inset,
-    8px 8px 8px #c4c4c4 inset;
+    -4px -4px 4px rgba(255, 255, 255, 0.5) inset,
+    4px 4px 4px #c4c4c4 inset;
   border-radius: 0px 0px 200px 200px;
   background-color: #dfe6e9;
   width: 1440px;
@@ -85,8 +85,8 @@
   top: 0px;
   left: 0px;
   box-shadow:
-    -8px -8px 16px #fff,
-    8px 8px 16px #c6c6c9;
+    -4px -4px 4px #fff,
+    4px 4px 4px #c6c6c9;
   background-color: #dfe6e9;
   width: 1440px;
   height: 80px;
@@ -157,8 +157,8 @@
   top: calc(50% - 22.5px);
   left: 1244px;
   box-shadow:
-    -8px -8px 16px #fff,
-    8px 8px 16px #c6c6c9;
+    -4px -4px 4px #fff,
+    4px 4px 4px #c6c6c9;
   border-radius: 32px;
   background-color: #dfe6e9;
   width: 132px;
@@ -213,8 +213,8 @@
   top: 168px;
   left: calc(50% - 558px);
   box-shadow:
-    -8px -8px 16px #fff,
-    8px 8px 16px #c4c4c4;
+    -4px -4px 4px #fff,
+    4px 4px 4px #c4c4c4;
   border-radius: 24px;
   background-color: #dfe6e9;
   width: 1153px;
@@ -277,8 +277,8 @@
   border-radius: 28px;
   flex-shrink: 0;
   box-shadow:
-    -4px -4px 8px #fff inset,
-    4px 4px 8px #c4c4c4 inset;
+    -4px -4px 4px #fff inset,
+    4px 4px 4px #c4c4c4 inset;
   background-color: #dfe6e9;
   display: flex;
   align-items: center;
@@ -334,8 +334,8 @@
   height: 60px;
   width: 210px;
   box-shadow:
-    -8px -8px 16px #fff,
-    8px 8px 16px #c6c6c9;
+    -4px -4px 4px #fff,
+    4px 4px 4px #c6c6c9;
   border-radius: 8px;
   background-color: #dfe6e9;
   overflow: hidden;
@@ -404,8 +404,8 @@
   top: 0px;
   left: 0px;
   box-shadow:
-    -8px -8px 16px #fff,
-    8px 8px 16px #c4c4c4;
+    -4px -4px 4px #fff,
+    4px 4px 4px #c4c4c4;
   border-radius: 50%;
   background-color: #dfe6e9;
   width: 288px;
@@ -423,8 +423,8 @@
   top: 0px;
   left: 0px;
   box-shadow:
-    -8px -8px 16px #fff inset,
-    8px 8px 16px #c4c4c4 inset;
+    -4px -4px 4px #fff inset,
+    4px 4px 4px #c4c4c4 inset;
   border-radius: 50%;
   background-color: #dfe6e9;
   width: 229px;
@@ -545,8 +545,8 @@
   border-radius: 28px;
   flex-shrink: 0;
   box-shadow:
-    -4px -4px 8px #fff inset,
-    4px 4px 8px #c4c4c4 inset;
+    -4px -4px 4px #fff inset,
+    4px 4px 4px #c4c4c4 inset;
   background-color: #dfe6e9;
   display: flex;
   align-items: center;
@@ -619,8 +619,8 @@
   top: 0px;
   left: 0px;
   box-shadow:
-    -8px -8px 16px #fff,
-    8px 8px 16px #c4c4c4;
+    -4px -4px 4px #fff,
+    4px 4px 4px #c4c4c4;
   border-radius: 24px 24px 50px 50px;
   background-color: #dfe6e9;
   width: 410px;
@@ -649,8 +649,8 @@
   height: 172px;
   position: relative;
   box-shadow:
-    -8px -8px 16px #fff inset,
-    8px 8px 16px #c4c4c4 inset;
+    -4px -4px 4px #fff inset,
+    4px 4px 4px #c4c4c4 inset;
   border-radius: 24px 24px 24px 100px;
   background-color: #dfe6e9;
   overflow: hidden;
@@ -747,8 +747,8 @@
   border-radius: 28px;
   flex-shrink: 0;
   box-shadow:
-    -4px -4px 8px #fff inset,
-    4px 4px 8px #c4c4c4 inset;
+    -4px -4px 4px #fff inset,
+    4px 4px 4px #c4c4c4 inset;
   background-color: #dfe6e9;
   display: flex;
   align-items: center;
@@ -896,8 +896,8 @@
   width: 80px;
   position: relative;
   box-shadow:
-    -8px -8px 16px #fff,
-    8px 8px 8px #c4c4c4;
+    -4px -4px 4px #fff,
+    4px 4px 4px #c4c4c4;
   border-radius: 50%;
   background-color: #dfe6e9;
   z-index: 0;
@@ -947,8 +947,8 @@
   border-radius: 28px;
 
   box-shadow:
-    -4px -4px 8px #fff inset,
-    4px 4px 8px #c4c4c4 inset;
+    -4px -4px 4px #fff inset,
+    4px 4px 4px #c4c4c4 inset;
   background-color: #dfe6e9;
   display: flex;
   align-items: center;
@@ -996,8 +996,8 @@
   top: calc(50% - 75px);
   left: 0px;
   box-shadow:
-    -8px -8px 16px #fff,
-    8px 8px 16px #c4c4c4;
+    -4px -4px 4px #fff,
+    4px 4px 4px #c4c4c4;
   border-radius: 24px;
   background-color: #dfe6e9;
   width: 420px;
@@ -1132,8 +1132,8 @@
   width: 776px;
   position: relative;
   box-shadow:
-    -8px -8px 16px #fff,
-    8px 8px 16px #c4c4c4;
+    -4px -4px 4px #fff,
+    4px 4px 4px #c4c4c4;
   border-radius: 24px;
   background-color: #dfe6e9;
   overflow: hidden;
@@ -1194,8 +1194,8 @@
   height: 40px;
   position: relative;
   box-shadow:
-    -4px -4px 8px #fff inset,
-    4px 4px 8px #c4c4c4 inset;
+    -4px -4px 4px #fff inset,
+    4px 4px 4px #c4c4c4 inset;
   border-radius: 50px;
   background-color: #dfe6e9;
   overflow: hidden;
@@ -1223,8 +1223,8 @@
   top: calc(50% - 11.48px);
   left: -21px;
   box-shadow:
-    -4px -4px 8px #fff,
-    4px 4px 8px #c6c6c9;
+    -4px -4px 4px #fff,
+    4px 4px 4px #c6c6c9;
   border-radius: 100px;
   background-color: #2d4cc8;
   width: 628px;
@@ -1257,8 +1257,8 @@
   top: calc(50% - 11.48px);
   left: -17px;
   box-shadow:
-    -4px -4px 8px #fff,
-    4px 4px 8px #c6c6c9;
+    -4px -4px 4px #fff,
+    4px 4px 4px #c6c6c9;
   border-radius: 100px;
   background-color: #c05512;
   width: 654px;
@@ -1276,8 +1276,8 @@
   top: calc(50% - 11.52px);
   left: -16px;
   box-shadow:
-    -4px -4px 8px #fff,
-    4px 4px 8px #c6c6c9;
+    -4px -4px 4px #fff,
+    4px 4px 4px #c6c6c9;
   border-radius: 100px;
   background-color: #67096e;
   width: 514px;
@@ -1295,8 +1295,8 @@
   top: calc(50% - 11.48px);
   left: -12px;
   box-shadow:
-    -4px -4px 8px #fff,
-    4px 4px 8px #c6c6c9;
+    -4px -4px 4px #fff,
+    4px 4px 4px #c6c6c9;
   border-radius: 100px;
   background-color: #2a7308;
   width: 567px;
@@ -1314,8 +1314,8 @@
   top: 3371.48px;
   left: calc(50% - 640px);
   box-shadow:
-    -8px -8px 16px #fff inset,
-    8px 8px 16px rgba(196, 196, 196, 0.8) inset;
+    -4px -4px 4px #fff inset,
+    4px 4px 4px rgba(196, 196, 196, 0.8) inset;
   border-radius: 32px;
   background-color: #dfe6e9;
   width: 1280px;
@@ -1328,8 +1328,8 @@
   top: 32px;
   left: 32px;
   box-shadow:
-    10px 10px 20px #c4c4c4,
-    -10px -10px 20px rgba(255, 255, 255, 0.6);
+    4px 4px 4px #c4c4c4,
+    -4px -4px 4px rgba(255, 255, 255, 0.6);
   border-radius: 16px;
   background-color: #dfe6e9;
   width: 1216px;
@@ -1408,8 +1408,8 @@
   border-radius: 999px;
   flex-shrink: 0;
   box-shadow:
-    inset -8px -8px 16px rgba(255, 255, 255, 0.95),
-    inset 8px 8px 16px rgba(196, 196, 196, 0.9);
+    inset -4px -4px 4px rgba(255, 255, 255, 0.95),
+    inset 4px 4px 4px rgba(196, 196, 196, 0.9);
   background-color: #dfe6e9;
   display: flex;
   align-items: center;
@@ -1460,8 +1460,8 @@
   width: 175px;
   height: 60px;
   box-shadow:
-    -8px -8px 16px #fff,
-    8px 8px 16px #c6c6c9;
+    -4px -4px 4px #fff,
+    4px 4px 4px #c6c6c9;
   border-radius: 16px;
   background-color: #dfe6e9;
   overflow: hidden;
@@ -1555,8 +1555,8 @@
   bottom: -0.01px;
   left: calc(50% - 720px);
   box-shadow:
-    -10px -10px 20px #fff inset,
-    8px 8px 16px #c4c4c4 inset;
+    -4px -4px 4px #fff inset,
+    4px 4px 4px #c4c4c4 inset;
   background-color: #dfe6e9;
   width: 1440px;
   height: 459px;
@@ -1784,8 +1784,8 @@
   bottom: 0px;
   left: calc(50% - 720px);
   box-shadow:
-    -8px -8px 16px #fff inset,
-    10px 10px 10px #c4c4c4 inset;
+    -4px -4px 4px #fff inset,
+    4px 4px 4px #c4c4c4 inset;
   background-color: #dfe6e9;
   width: 1440px;
   height: 459px;
@@ -1905,8 +1905,8 @@
   align-items: center;
   justify-content: center;
   box-shadow:
-    -4px -4px 8px #fff,
-    4px 4px 8px #c4c4c4;
+    -4px -4px 4px #fff,
+    4px 4px 4px #c4c4c4;
   flex-shrink: 0;
 }
 .iconBadge img {
@@ -1936,8 +1936,8 @@
   align-items: center;
   justify-content: center;
   box-shadow:
-    -8px -8px 16px #fff,
-    8px 8px 8px #c4c4c4;
+    -4px -4px 4px #fff,
+    4px 4px 4px #c4c4c4;
   background: #dfe6e9;
   overflow: hidden;
 }
@@ -1967,8 +1967,8 @@
   padding: 0 24px;
   background: #dfe6e9;
   box-shadow:
-    -8px -8px 16px #ffffff,
-    8px 8px 16px #c6c6c9;
+    -4px -4px 4px #ffffff,
+    4px 4px 4px #c6c6c9;
 }
 
 .requestDemoButton:focus-visible,
@@ -1992,8 +1992,8 @@
   justify-content: center !important;
   background: #dfe6e9 !important;
   box-shadow:
-    -5px -5px 10px rgba(255, 255, 255, 0.95),
-    5px 5px 10px rgba(196, 196, 196, 0.9) !important;
+    -4px -4px 4px rgba(255, 255, 255, 0.95),
+    4px 4px 4px rgba(196, 196, 196, 0.9) !important;
   overflow: visible !important;
   flex-shrink: 0;
   isolation: isolate;
@@ -2009,8 +2009,8 @@
   border-radius: 50%;
   background: var(--badge-color);
   box-shadow:
-    inset -2px -2px 4px rgba(255, 255, 255, 0.28),
-    inset 2px 2px 4px rgba(0, 0, 0, 0.16);
+    inset -4px -4px 4px rgba(255, 255, 255, 0.28),
+    inset 4px 4px 4px rgba(0, 0, 0, 0.16);
   z-index: 0;
 }
 
@@ -2131,8 +2131,8 @@
   overflow: hidden;
   background: #dfe6e9;
   box-shadow:
-    -8px -8px 16px rgba(255, 255, 255, 0.95),
-    8px 8px 12px rgba(196, 196, 196, 0.85);
+    -4px -4px 4px rgba(255, 255, 255, 0.95),
+    4px 4px 4px rgba(196, 196, 196, 0.85);
   flex-shrink: 0;
 }
 
@@ -2301,8 +2301,8 @@
   border-radius: 24px 24px 50px 50px;
   background: #dfe6e9;
   box-shadow:
-    -8px -8px 16px #ffffff,
-    8px 8px 16px #c4c4c4;
+    -4px -4px 4px #ffffff,
+    4px 4px 4px #c4c4c4;
   transition: background-color 0.35s ease;
 }
 
@@ -2320,8 +2320,8 @@
   border-radius: 24px 24px 24px 100px;
   background: #dfe6e9;
   box-shadow:
-    inset -8px -8px 16px #ffffff,
-    inset 8px 8px 16px #c4c4c4;
+    inset -4px -4px 4px #ffffff,
+    inset 4px 4px 4px #c4c4c4;
 }
 
 .challengeIcon {
@@ -2334,8 +2334,8 @@
   justify-content: center;
   background: #dfe6e9;
   box-shadow:
-    -5px -5px 10px #ffffff,
-    5px 5px 10px rgba(196, 196, 196, 0.95);
+    -4px -4px 4px #ffffff,
+    4px 4px 4px rgba(196, 196, 196, 0.95);
   position: relative;
   flex-shrink: 0;
 }
@@ -2348,8 +2348,8 @@
   border-radius: 50%;
   background: var(--challenge-color);
   box-shadow:
-    inset -2px -2px 4px rgba(255, 255, 255, 0.25),
-    inset 2px 2px 4px rgba(0, 0, 0, 0.16);
+    inset -4px -4px 4px rgba(255, 255, 255, 0.25),
+    inset 4px 4px 4px rgba(0, 0, 0, 0.16);
 }
 
 .challengeIcon img {
@@ -2467,8 +2467,8 @@
   border-radius: 24px;
   background: #dfe6e9;
   box-shadow:
-    inset -8px -8px 16px #ffffff,
-    inset 8px 8px 16px #c4c4c4;
+    inset -4px -4px 4px #ffffff,
+    inset 4px 4px 4px #c4c4c4;
   transition:
     max-height 0.45s ease,
     min-height 0.45s ease,
@@ -2689,8 +2689,8 @@
   background: #dfe6e9 !important;
   overflow: visible !important;
   box-shadow:
-    -10px -10px 20px rgba(255, 255, 255, 0.96),
-    10px 10px 18px rgba(196, 196, 196, 0.9) !important;
+    -4px -4px 4px rgba(255, 255, 255, 0.96),
+    4px 4px 4px rgba(196, 196, 196, 0.9) !important;
   isolation: isolate;
 }
 
@@ -2702,8 +2702,8 @@
   border-radius: 50%;
   background: #dfe6e9;
   box-shadow:
-    inset -5px -5px 10px #ffffff,
-    inset 5px 5px 10px rgba(196, 196, 196, 0.8);
+    inset -4px -4px 4px #ffffff,
+    inset 4px 4px 4px rgba(196, 196, 196, 0.8);
   z-index: 0;
 }
 
@@ -2827,10 +2827,10 @@
   border-radius: 50% !important;
   background: #dfe6e9 !important;
   box-shadow:
-    -10px -10px 20px rgba(255, 255, 255, 0.96),
-    10px 10px 18px rgba(196, 196, 196, 0.9),
-    inset -3px -3px 7px rgba(255, 255, 255, 0.72),
-    inset 3px 3px 7px rgba(196, 196, 196, 0.42) !important;
+    -4px -4px 4px rgba(255, 255, 255, 0.96),
+    4px 4px 4px rgba(196, 196, 196, 0.9),
+    inset -4px -4px 4px rgba(255, 255, 255, 0.72),
+    inset 4px 4px 4px rgba(196, 196, 196, 0.42) !important;
   overflow: hidden !important;
 }
 
@@ -2927,8 +2927,8 @@
   min-height: 112px !important;
   overflow: visible !important;
   box-shadow:
-    -8px -8px 16px rgba(255, 255, 255, 0.96),
-    8px 8px 16px rgba(196, 196, 196, 0.88) !important;
+    -4px -4px 4px rgba(255, 255, 255, 0.96),
+    4px 4px 4px rgba(196, 196, 196, 0.88) !important;
 }
 
 .frameChild22.useCaseIcon img,
@@ -3109,8 +3109,8 @@ body {
 
 .frameInner {
   box-shadow:
-    inset -4px -4px 8px #ffffff,
-    inset 4px 4px 8px #c4c4c4 !important;
+    inset -4px -4px 4px #ffffff,
+    inset 4px 4px 4px #c4c4c4 !important;
   background: #dfe6e9;
   border-radius: 8px;
 }
@@ -4727,22 +4727,22 @@ body {
 /* Request Demo button: raised normally, pressed/inset on click */
 .frameInner.requestDemoButton {
   box-shadow:
-    -8px -8px 16px #ffffff,
-    8px 8px 16px #c6c6c9 !important;
+    -4px -4px 4px #ffffff,
+    4px 4px 4px #c6c6c9 !important;
   background-color: #dfe6e9;
   cursor: pointer;
 }
 
 .frameInner.requestDemoButton:hover {
   box-shadow:
-    -5px -5px 12px #ffffff,
-    5px 5px 12px #c6c6c9 !important;
+    -4px -4px 4px #ffffff,
+    4px 4px 4px #c6c6c9 !important;
 }
 
 .frameInner.requestDemoButton:active {
   box-shadow:
-    inset -4px -4px 8px #ffffff,
-    inset 4px 4px 8px #c6c6c9 !important;
+    inset -4px -4px 4px #ffffff,
+    inset 4px 4px 4px #c6c6c9 !important;
 }
 
 .frameInner.requestDemoButton:focus-visible {
@@ -4750,3 +4750,204 @@ body {
   outline-offset: 4px;
 }
 
+
+/* =========================================================
+   FINAL MOBILE CHALLENGE CARD FIX
+   - Closed cards keep their original mobile design
+   - Only the OPEN card grows
+   - Answer stays INSIDE the card below the arrow
+   ========================================================= */
+@media screen and (max-width: 768px) {
+
+  /* CLOSED CARD — restore normal card shape/height */
+  .corporateChallengeCard {
+    width: 100% !important;
+    height: auto !important;
+    min-height: 320px !important;
+    overflow: visible !important;
+  }
+
+  .corporateChallengeCard .corporateChallengeCardSurface {
+    position: relative !important;
+    width: 100% !important;
+    height: auto !important;
+    min-height: 320px !important;
+    padding: 0 16px 18px !important;
+    overflow: hidden !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    box-sizing: border-box !important;
+    border-radius: 24px 24px 50px 50px !important;
+  }
+
+  /* Keep the curved header exactly as a header, not a full-card block */
+  .corporateChallengeCard .corporateChallengeHeader {
+    width: calc(100% + 32px) !important;
+    min-height: 136px !important;
+    height: 136px !important;
+    margin: 0 -16px !important;
+    padding: 16px 16px 14px !important;
+    flex-shrink: 0 !important;
+    box-sizing: border-box !important;
+  }
+
+  /* Closed description stays visible */
+  .corporateChallengeCard:not(.isOpen) .continuousWorkforceUpskillin {
+    display: flex !important;
+    width: 100% !important;
+    min-height: 54px !important;
+    height: auto !important;
+    margin: 16px 0 4px !important;
+    padding: 0 12px !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center !important;
+  }
+
+  /* Closed arrow area remains at bottom of the SAME card */
+  .corporateChallengeCard .corporateChallengeToggle {
+    width: 100% !important;
+    height: auto !important;
+    min-height: 64px !important;
+    margin-top: auto !important;
+    padding: 0 !important;
+    flex-shrink: 0 !important;
+  }
+
+  /* Closed answer must take ZERO space */
+  .corporateChallengeCard:not(.isOpen) .corporateChallengeDropdown {
+    display: block !important;
+    width: calc(100% - 20px) !important;
+    height: 0 !important;
+    min-height: 0 !important;
+    max-height: 0 !important;
+    margin: 0 auto !important;
+    padding: 0 16px !important;
+    overflow: hidden !important;
+    opacity: 0 !important;
+    visibility: hidden !important;
+    transform: none !important;
+  }
+
+  /* ---------------- OPEN CARD ONLY ---------------- */
+
+  .corporateChallengeCard.isOpen {
+    min-height: 0 !important;
+    height: auto !important;
+  }
+
+  .corporateChallengeCard.isOpen .corporateChallengeCardSurface {
+    height: auto !important;
+    min-height: 0 !important;
+    padding-bottom: 18px !important;
+    overflow: hidden !important;
+  }
+
+  /* Keep header intact when open — don't turn it transparent */
+  .corporateChallengeCard.isOpen .corporateChallengeHeader {
+    width: calc(100% + 32px) !important;
+    min-height: 136px !important;
+    height: 136px !important;
+    margin: 0 -16px !important;
+    padding: 16px 16px 14px !important;
+  }
+
+  /* Hide only the short description when opened */
+  .corporateChallengeCard.isOpen .continuousWorkforceUpskillin {
+    display: none !important;
+  }
+
+  /* Arrow stays ABOVE the answer */
+  .corporateChallengeCard.isOpen .corporateChallengeToggle {
+    order: 2 !important;
+    margin: 12px auto 0 !important;
+    min-height: 64px !important;
+  }
+
+  /* Answer appears directly BELOW the arrow and INSIDE card */
+  .corporateChallengeCard.isOpen .corporateChallengeDropdown {
+    order: 3 !important;
+    position: relative !important;
+    inset: auto !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    width: calc(100% - 20px) !important;
+    max-width: 340px !important;
+
+    height: auto !important;
+    min-height: 72px !important;
+    max-height: 180px !important;
+
+    margin: 10px auto 0 !important;
+    padding: 12px 16px !important;
+
+    overflow: visible !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    transform: none !important;
+
+    border-radius: 18px !important;
+    background: #dfe6e9 !important;
+
+    box-shadow:
+      inset -4px -4px 4px #ffffff,
+      inset 4px 4px 4px #c4c4c4 !important;
+
+    box-sizing: border-box !important;
+    flex-shrink: 0 !important;
+  }
+
+  .corporateChallengeCard.isOpen .corporateChallengeDropdown p {
+    width: 100% !important;
+    margin: 0 !important;
+    font-size: 16px !important;
+    line-height: 23px !important;
+    font-weight: 600 !important;
+    text-align: center !important;
+  }
+
+  /* Keep spacing between cards even when one grows */
+  .frameParent19,
+  .frameParent29,
+  .corporateChallengeRow {
+    gap: 18px !important;
+    overflow: visible !important;
+  }
+}
+
+/* =========================================================
+   MOBILE ONLY — LEARNING PROGRAMS DESCRIPTION FIX
+   ========================================================= */
+@media screen and (max-width: 768px) {
+  .organizationsCanUse {
+    position: relative !important;
+
+    left: auto !important;
+    right: auto !important;
+    top: auto !important;
+
+    width: calc(100% - 40px) !important;
+    max-width: 320px !important;
+    height: auto !important;
+
+    margin: 12px auto 28px !important;
+    padding: 0 !important;
+
+    display: block !important;
+
+    font-size: inherit !important;
+    line-height: 1.5 !important;
+    text-align: center !important;
+
+    white-space: normal !important;
+    overflow: visible !important;
+    overflow-wrap: anywhere !important;
+    word-break: normal !important;
+
+    box-sizing: border-box !important;
+  }
+}

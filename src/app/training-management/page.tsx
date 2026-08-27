@@ -1,9 +1,14 @@
+"use client";
+
 import type { NextPage } from "next";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 import Header from "../../components/Header/header";
 import Footer from "../../components/Footer/footer";
+import { BookDemoTrigger } from "../../components/Bookademo/Bookademo";
 import styles from "./training-management.module.css";
 const TrainingManagement: NextPage = () => {
+  const router = useRouter();
   return (
     <>
       <title>Training Management | NeuroLXP</title>
@@ -196,7 +201,7 @@ const TrainingManagement: NextPage = () => {
             </div>
             <div className={styles.frameParent24}>
               <div className={styles.howItWorksWrapper}>
-                <h2 className={styles.coreFeatures}>How it works</h2>
+                <h2 className={styles.coreFeatures}>How it Works</h2>
               </div>
               <div className={styles.frameParent25}>
                 <div className={styles.frameParent26}>
@@ -320,13 +325,24 @@ const TrainingManagement: NextPage = () => {
             </div>
 
             <div className={styles.frameParent33}>
-              <div className={styles.frameWrapper17}>
+              <BookDemoTrigger className={styles.frameWrapper17}>
                 <div className={styles.bookADemoWrapper}>
                   <div className={styles.bookADemo}>Book a Demo</div>
                 </div>
-              </div>
+              </BookDemoTrigger>
 
-              <div className={styles.startFreeTrialButton}>
+              <div
+                className={styles.startFreeTrialButton}
+                onClick={() => router.push("/HomePage")}
+                role="button"
+                tabIndex={0}
+                onKeyDown={(event) => {
+                  if (event.key === "Enter" || event.key === " ") {
+                    event.preventDefault();
+                    router.push("/HomePage");
+                  }
+                }}
+              >
                 <div className={styles.startFreeTrialText}>Start Free Trial</div>
               </div>
             </div>
@@ -338,7 +354,7 @@ const TrainingManagement: NextPage = () => {
         </div>
       </div>
       </main>
-      <Footer />
+<Footer />
     </>
   );
 };

@@ -2,10 +2,12 @@
 
 import type { NextPage } from 'next';
 import Image from "next/image";
+import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 import styles from "./corporate.module.css";
 import Header from "../../components/Header/header";
 import Footer from "../../components/Footer/footer";
+import { BookDemoTrigger } from "../../components/Bookademo/Bookademo";
 
 
 const challengeCards = [
@@ -200,14 +202,16 @@ const CorporateTraining: NextPage = () => {
                         </div>
                     </div>
                     <div className={styles.frameParent5}>
-                        <button type="button" className={`${styles.frameInner} ${styles.requestDemoButton}`}>
-                            Request Demo
-                        </button>
-                        <div className={styles.frameWrapper2}>
-                            <div className={styles.startLearningWrapper}>
-                                <div className={styles.startLearning}>Start Learning</div>
+                        <BookDemoTrigger className={`${styles.frameInner} ${styles.requestDemoButton}`}>
+                            Book a Demo
+                        </BookDemoTrigger>
+                        <Link href="/HomePage" className={styles.startLearningLink}>
+                            <div className={styles.frameWrapper2}>
+                                <div className={styles.startLearningWrapper}>
+                                    <div className={styles.startLearning}>Start Learning</div>
+                                </div>
                             </div>
-                        </div>
+                        </Link>
                     </div>
                 </div>
             </div>
@@ -573,7 +577,7 @@ const CorporateTraining: NextPage = () => {
                             <video
                                 ref={corporateVideoRef}
                                 className={styles.groupYoungBusinesspeopleUsi}
-                                src="/videos/video-4.mp4"
+                                src="/videos/8141392-uhd_3840_2160_25fps.mp4"
                                 autoPlay
                                 muted
                                 loop

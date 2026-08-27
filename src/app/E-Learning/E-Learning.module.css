@@ -3,6 +3,11 @@
   height: 5471px;
   position: relative;
   background-color: #dfe6e9;
+  box-shadow:
+    4px 4px 4px rgba(196, 196, 196, 0.8),
+    -4px -4px 4px rgba(255, 255, 255, 0.9),
+    inset 4px 4px 4px rgba(196, 196, 196, 0.8),
+    inset -4px -4px 4px rgba(255, 255, 255, 0.9);
   overflow: hidden;
   text-align: left;
   font-size: 48px;
@@ -183,7 +188,7 @@
   overflow: hidden;
   flex-shrink: 0;
   font-size: 16px;
-  font-family: Inter;
+  font-family: "Segoe UI";
 }
 
 .frameInner {
@@ -300,7 +305,7 @@
   flex-shrink: 0;
   font-size: 16px;
   color: #2f3547;
-  font-family: Inter;
+  font-family: "Segoe UI";
 }
 
 .ourCustomersWrapper {
@@ -4904,5 +4909,330 @@
     margin-top: 0 !important;
     margin-bottom: 0 !important;
   }
+}
+
+
+
+/* =========================================================
+   FINAL CTA — TM + E-LEARNING FIX
+   Keeps the existing design; only fixes the two marked issues.
+   ========================================================= */
+
+.neuroLxpBadge sup {
+  font-size: 8px !important;
+  line-height: 1 !important;
+  vertical-align: super !important;
+  margin-left: 2px !important;
+  position: relative !important;
+  top: -2px !important;
+  font-weight: 500 !important;
+  transform: none !important;
+}
+
+.eLearningNoBreak {
+  white-space: nowrap !important;
+  display: inline-block !important;
+}
+.neuroLxpBadge sup {
+  position: relative !important;
+  top: -7px !important;
+  margin-left: 2px !important;
+  font-size: 9px !important;
+  line-height: 1 !important;
+  font-weight: 600 !important;
+  vertical-align: baseline !important;
+  transform: none !important;
+}
+
+/* =========================================================
+   HERO STATS — FIGMA COLOR CORRECTION ONLY
+   Design/layout/shadows/spacing remain unchanged.
+   ========================================================= */
+
+.learningStatBlue {
+  background: #EBEEFC !important;
+}
+
+.learningStatPink {
+  background: #F2E1D9 !important;
+}
+
+.learningStatGreen {
+  background: #ECF1EA !important;
+}
+
+/* Keep the shared strip background consistent with the three exact fills. */
+.learningStats {
+  background: linear-gradient(
+    90deg,
+    #EBEEFC 0%,
+    #EBEEFC 33.333%,
+    #F2E1D9 33.333%,
+    #F2E1D9 66.666%,
+    #ECF1EA 66.666%,
+    #ECF1EA 100%
+  ) !important;
+}
+
+/* =========================================================
+   BOOK A DEMO + GET STARTED BUTTONS
+   Outset normally, inset while clicking.
+   No layout/design dimensions changed.
+   ========================================================= */
+
+.bookDemoButton,
+.frameWrapper18 {
+  background-color: #dfe6e9;
+  box-shadow:
+    -8px -8px 16px #ffffff,
+    8px 8px 16px #c6c6c9;
+  cursor: pointer;
+  transition:
+    box-shadow 0.12s ease,
+    transform 0.12s ease;
+}
+
+/* Pressed neumorphic inset state */
+.bookDemoButton:active,
+.frameWrapper18:active {
+  box-shadow:
+    inset -4px -4px 8px #ffffff,
+    inset 4px 4px 8px rgba(196, 196, 196, 0.85);
+  transform: translateY(1px);
+}
+
+/* Keep links visually identical to the existing buttons */
+.frameWrapper18 {
+  text-decoration: none;
+  color: #2d4cc8;
+}
+
+.frameWrapper18:focus-visible {
+  outline: 3px solid rgba(45, 76, 200, 0.35);
+  outline-offset: 3px;
+}
+
+/* =========================================================
+   CTA FINAL FIX
+   - No black browser ring/outline around Book a Demo/Get Started
+   - Get Started remains a clean link button
+   - Keep raised -> inset click shadow
+   ========================================================= */
+.bookDemoButton,
+.frameWrapper18 {
+  border: 0 !important;
+  outline: none !important;
+  -webkit-tap-highlight-color: transparent !important;
+  text-decoration: none !important;
+  appearance: none !important;
+  -webkit-appearance: none !important;
+}
+
+.bookDemoButton:focus,
+.bookDemoButton:focus-visible,
+.frameWrapper18:focus,
+.frameWrapper18:focus-visible {
+  outline: none !important;
+}
+
+.bookDemoButton:active,
+.frameWrapper18:active {
+  outline: none !important;
+  box-shadow:
+    inset -4px -4px 8px #ffffff,
+    inset 4px 4px 8px rgba(196, 196, 196, 0.85) !important;
+}
+
+/* =========================================================
+   FINAL GET STARTED CLICKABILITY FIX
+   Decorative layers cannot block CTA clicks.
+   No visual design/layout changes.
+   ========================================================= */
+
+.frameParent35 .image20,
+.frameParent35 .peopleTakingPartBusinessEv,
+.frameParent35 .image21,
+.frameParent35 .groupYoungBusinesspeopleUsi {
+  pointer-events: none !important;
+}
+
+/* Ensure text/CTA layer sits above decorative/video layers */
+.frameParent35 .frameParent36 {
+  position: relative;
+  z-index: 20 !important;
+  pointer-events: auto !important;
+}
+
+.frameParent35 .frameWrapper18 {
+  position: relative !important;
+  z-index: 30 !important;
+  pointer-events: auto !important;
+
+  border: 0 !important;
+  outline: none !important;
+  appearance: none !important;
+  -webkit-appearance: none !important;
+
+  cursor: pointer !important;
+  text-decoration: none !important;
+  color: #2d4cc8 !important;
+
+  box-shadow:
+    -8px -8px 16px #ffffff,
+    8px 8px 16px #c6c6c9 !important;
+}
+
+.frameParent35 .frameWrapper18:active {
+  box-shadow:
+    inset -4px -4px 8px #ffffff,
+    inset 4px 4px 8px rgba(196, 196, 196, 0.85) !important;
+}
+
+.frameParent35 .getStartedWrapper,
+.frameParent35 .getStarted {
+  pointer-events: none !important;
+}
+
+/* Video remains clickable only in its own video area */
+.frameParent35 .futureReadyVideoWrapper {
+  z-index: 5 !important;
+}
+
+/* =========================================================
+   FINAL CTA CLICKABILITY FIX
+   Start Learning + Get Started -> /HomePage
+   No design/layout change.
+   ========================================================= */
+
+/* Ensure both CTA controls are real clickable layers */
+.frameWrapper2,
+.frameParent35 .frameWrapper18 {
+  position: relative !important;
+  z-index: 50 !important;
+  pointer-events: auto !important;
+  cursor: pointer !important;
+
+  border: 0 !important;
+  outline: none !important;
+  appearance: none !important;
+  -webkit-appearance: none !important;
+  text-decoration: none !important;
+  color: #2d4cc8 !important;
+  font: inherit;
+}
+
+/* Prevent inner text wrappers from stealing the click */
+.frameWrapper2 .startLearningWrapper,
+.frameWrapper2 .startLearning,
+.frameParent35 .frameWrapper18 .getStartedWrapper,
+.frameParent35 .frameWrapper18 .getStarted {
+  pointer-events: none !important;
+}
+
+/* Keep hero content above decorative background */
+.frameParent,
+.frameDiv {
+  position: relative;
+  z-index: 20 !important;
+  pointer-events: auto !important;
+}
+
+/* Decorative hero background should never block button clicks */
+.eLearningChild {
+  pointer-events: none !important;
+}
+
+/* Keep requested outset -> inset press behavior */
+.frameWrapper2,
+.frameParent35 .frameWrapper18 {
+  box-shadow:
+    -8px -8px 16px #ffffff,
+    8px 8px 16px #c6c6c9 !important;
+}
+
+.frameWrapper2:active,
+.frameParent35 .frameWrapper18:active {
+  box-shadow:
+    inset -4px -4px 8px #ffffff,
+    inset 4px 4px 8px rgba(196, 196, 196, 0.85) !important;
+  transform: translateY(1px);
+}
+
+/* Remove browser/tap ring without adding any round black border */
+.frameWrapper2:focus,
+.frameWrapper2:focus-visible,
+.frameParent35 .frameWrapper18:focus,
+.frameParent35 .frameWrapper18:focus-visible {
+  outline: none !important;
+  box-shadow:
+    -8px -8px 16px #ffffff,
+    8px 8px 16px #c6c6c9 !important;
+}
+
+.frameWrapper2 {
+  -webkit-tap-highlight-color: transparent !important;
+}
+
+.frameParent35 .frameWrapper18 {
+  -webkit-tap-highlight-color: transparent !important;
+}
+
+/* =========================================================
+   HERO GET STARTED — ALIGNMENT FIX ONLY
+   ========================================================= */
+.frameWrapper18 {
+  width: 175px !important;
+  height: 60px !important;
+  padding: 0 !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  box-sizing: border-box !important;
+}
+
+.getStartedWrapper {
+  width: 100% !important;
+  height: 100% !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.getStarted {
+  width: auto !important;
+  height: auto !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  position: static !important;
+  transform: none !important;
+  white-space: nowrap !important;
+  line-height: 1 !important;
+  display: block !important;
+  text-align: center !important;
+}
+
+/* GET STARTED — RESTORE ORIGINAL FONT SIZE ONLY */
+.getStarted {
+  font-size: 18px !important;
+  line-height: 26px !important;
+}
+
+/* MOBILE ONLY — move last CTA section upward */
+@media (max-width: 768px) {
+  .frameParent35 {
+    position: relative !important;
+    transform: translateY(-35px) !important;
+    margin-bottom: 0 !important;
+  }
+}
+
+/* SEGoe UI ONLY — typography family normalization */
+.eLearning,
+.eLearning *,
+.eLearning *::before,
+.eLearning *::after {
+  font-family: "Segoe UI" !important;
 }
 
