@@ -4435,3 +4435,526 @@
     padding-right: 16px !important;
   }
 }
+
+
+/* =========================================================
+   HERO BADGE — COLOUR MATCH FIX
+   Coding Resources / Programming Growth
+   ========================================================= */
+.heroCopy .pill,
+.growthCopy .pill {
+  color: #2D4CC8 !important;
+  background: #DFE6E9 !important;
+  border: 0 !important;
+  box-shadow:
+    inset -4px -4px 8px #FFFFFF,
+    inset 4px 4px 8px rgba(196, 196, 196, 0.8) !important;
+}
+
+/* Keep the badge colour identical on hover/focus */
+.heroCopy .pill:hover,
+.heroCopy .pill:focus,
+.growthCopy .pill:hover,
+.growthCopy .pill:focus {
+  color: #2D4CC8 !important;
+  background: #DFE6E9 !important;
+  transform: none !important;
+  filter: none !important;
+}
+
+
+/* =========================================================
+   FINAL DESKTOP ALIGNMENT — MATCH PROVIDED REFERENCE
+   Keeps the existing design; corrects horizontal alignment,
+   section widths, card spacing, and section-to-section rhythm.
+   ========================================================= */
+@media screen and (min-width: 1051px) {
+
+  /* One common content width for the complete page */
+  .shell {
+    width: 1280px !important;
+    max-width: calc(100% - 80px) !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    box-sizing: border-box !important;
+  }
+
+  /* Breadcrumb aligned to the same left edge as hero */
+  .breadcrumb {
+    width: 100% !important;
+    height: 72px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    display: flex !important;
+    align-items: center !important;
+  }
+
+  /* HERO */
+  .heroFrame {
+    width: 100% !important;
+    margin: 0 auto !important;
+    padding: 28px !important;
+    box-sizing: border-box !important;
+  }
+
+  .hero {
+    width: 100% !important;
+    margin: 0 auto !important;
+  }
+
+  .heroCopy {
+    left: 48px !important;
+    top: 72px !important;
+  }
+
+  /* LEARNING MATERIALS SECTION */
+  .learning {
+    width: 100% !important;
+    padding: 72px 0 58px !important;
+    margin: 0 auto !important;
+    text-align: center !important;
+    box-sizing: border-box !important;
+  }
+
+  .learning h2 {
+    max-width: 860px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  .learning > p {
+    max-width: 900px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  .learningCards {
+    width: 100% !important;
+    max-width: 1280px !important;
+    height: auto !important;
+    margin: 42px auto 0 !important;
+    display: grid !important;
+    grid-template-columns: repeat(5, 232px) !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    gap: 0 !important;
+  }
+
+  .learningCard {
+    width: 232px !important;
+    height: 124px !important;
+  }
+
+  .learningCardOuter {
+    width: 232px !important;
+    height: 120px !important;
+  }
+
+  .learningCardInner {
+    width: 205px !important;
+    height: 94px !important;
+    left: 13px !important;
+    top: 13px !important;
+  }
+
+  /* PRACTICE SECTION */
+  .practice {
+    width: 100% !important;
+    margin: 0 auto !important;
+  }
+
+  .practiceIntro {
+    width: 100% !important;
+    margin: 0 auto !important;
+    padding: 62px 40px !important;
+    box-sizing: border-box !important;
+  }
+
+  .practiceIntro h2 {
+    margin-left: auto !important;
+    margin-right: auto !important;
+    text-align: center !important;
+  }
+
+  .practiceIntro p {
+    max-width: 980px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    text-align: center !important;
+  }
+
+  /* Four support cards = balanced 2 × 2 grid */
+  .supportGrid {
+    width: 100% !important;
+    padding: 52px 0 46px !important;
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 360px)) !important;
+    justify-content: center !important;
+    column-gap: 120px !important;
+    row-gap: 42px !important;
+    box-sizing: border-box !important;
+  }
+
+  .supportCard {
+    width: 360px !important;
+    min-height: 94px !important;
+    margin: 0 !important;
+    box-sizing: border-box !important;
+  }
+
+  /* Oval centered with equal left/right clearance */
+  .practiceOval {
+    width: 92% !important;
+    max-width: 1160px !important;
+    margin: 28px auto 76px !important;
+    box-sizing: border-box !important;
+  }
+
+  /* THREE PILLAR CARDS */
+  .pillars {
+    width: 100% !important;
+    max-width: 1280px !important;
+    margin: 0 auto !important;
+    display: grid !important;
+    grid-template-columns: repeat(3, 380px) !important;
+    justify-content: space-between !important;
+    align-items: stretch !important;
+    gap: 0 !important;
+    box-sizing: border-box !important;
+  }
+
+  .pillar {
+    width: 380px !important;
+    height: 610px !important;
+    margin: 0 !important;
+  }
+
+  /* PROGRAMMING GROWTH SECTION */
+  .growthFrame {
+    width: 100% !important;
+    margin: 92px auto 88px !important;
+    padding: 28px !important;
+    box-sizing: border-box !important;
+  }
+
+  .growth {
+    width: 100% !important;
+    height: 480px !important;
+    margin: 0 auto !important;
+    grid-template-columns: 1fr 0.92fr !important;
+  }
+
+  .growthCopy {
+    padding: 58px 62px !important;
+    box-sizing: border-box !important;
+  }
+
+  /* Footer stays full width and content remains visually balanced */
+  .footer {
+    width: 100% !important;
+    box-sizing: border-box !important;
+  }
+}
+
+
+/* =========================================================
+   PRACTICE-ORIENTED CODING SUPPORT — REFERENCE ALIGNMENT
+   ========================================================= */
+@media screen and (min-width: 1051px) {
+
+  /* Main curved section */
+  .practiceIntro {
+    width: 100% !important;
+    max-width: 1280px !important;
+    min-height: 300px !important;
+    margin: 0 auto !important;
+    padding: 72px 70px 58px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    box-sizing: border-box !important;
+    text-align: center !important;
+  }
+
+  .practiceIntro h2 {
+    width: 100% !important;
+    max-width: 900px !important;
+    margin: 0 auto 22px !important;
+    text-align: center !important;
+  }
+
+  .practiceIntro p {
+    width: 100% !important;
+    max-width: 980px !important;
+    margin: 0 auto !important;
+    text-align: center !important;
+  }
+
+  /* Four small support cards: symmetric 2 x 2 arrangement */
+  .supportGrid {
+    width: 100% !important;
+    max-width: 1280px !important;
+    margin: 0 auto !important;
+    padding: 54px 70px 40px !important;
+
+    display: grid !important;
+    grid-template-columns: repeat(2, 360px) !important;
+    grid-template-rows: repeat(2, auto) !important;
+
+    justify-content: space-between !important;
+    align-items: start !important;
+
+    column-gap: 0 !important;
+    row-gap: 38px !important;
+    box-sizing: border-box !important;
+  }
+
+  .supportCard {
+    width: 360px !important;
+    min-height: 92px !important;
+    margin: 0 !important;
+    padding: 24px 28px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+    box-sizing: border-box !important;
+  }
+
+  /* Match screenshot: top row slightly inward, lower row wider apart */
+  .supportGrid .supportCard:nth-child(1) {
+    justify-self: end !important;
+    margin-right: 95px !important;
+  }
+
+  .supportGrid .supportCard:nth-child(2) {
+    justify-self: start !important;
+    margin-left: 95px !important;
+  }
+
+  .supportGrid .supportCard:nth-child(3) {
+    justify-self: start !important;
+  }
+
+  .supportGrid .supportCard:nth-child(4) {
+    justify-self: end !important;
+  }
+
+  /* Strengthen skills oval aligned and centered under cards */
+  .practiceOval {
+    width: 1160px !important;
+    max-width: calc(100% - 80px) !important;
+    min-height: 112px !important;
+    margin: 34px auto 82px !important;
+    padding: 28px 46px !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    box-sizing: border-box !important;
+    text-align: center !important;
+  }
+
+  .practiceOval::before {
+    left: -2px !important;
+    right: -2px !important;
+    top: -14px !important;
+    bottom: -14px !important;
+  }
+}
+
+
+/* =========================================================
+   FINAL SUPPORT-CARD LAYER ONLY
+   Reference layout:
+   - top two cards inward
+   - bottom two cards at far left/right
+   - NO other page layer changed
+   ========================================================= */
+@media screen and (min-width: 1051px) {
+
+  .supportGrid {
+    position: relative !important;
+    display: block !important;
+
+    width: 100% !important;
+    max-width: 1280px !important;
+    height: 270px !important;
+
+    margin: 0 auto !important;
+    padding: 0 !important;
+
+    box-sizing: border-box !important;
+  }
+
+  .supportCard {
+    position: absolute !important;
+
+    width: 360px !important;
+    height: 108px !important;
+    min-height: 108px !important;
+    max-width: none !important;
+
+    margin: 0 !important;
+    padding: 24px 28px !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+
+    box-sizing: border-box !important;
+
+    background: #DFE6E9 !important;
+    border-radius: 28px 28px 0 28px !important;
+
+    box-shadow:
+      -4px -4px 4px #FFFFFF,
+       4px  4px 4px #C4C4C4 !important;
+
+    font-size: 16px !important;
+    font-weight: 600 !important;
+    line-height: 1.45 !important;
+    text-align: left !important;
+
+    transform: none !important;
+  }
+
+  /* TOP LEFT — inward */
+  .supportGrid .supportCard:nth-child(1) {
+    top: 0 !important;
+    left: 275px !important;
+    right: auto !important;
+
+    border-top: 5px solid #2D4CC8 !important;
+  }
+
+  /* TOP RIGHT — inward */
+  .supportGrid .supportCard:nth-child(2) {
+    top: 0 !important;
+    right: 275px !important;
+    left: auto !important;
+
+    border-top: 5px solid #2D4CC8 !important;
+  }
+
+  /* BOTTOM LEFT — outer edge */
+  .supportGrid .supportCard:nth-child(3) {
+    top: 145px !important;
+    left: 0 !important;
+    right: auto !important;
+
+    border-top: 5px solid #CF1464 !important;
+  }
+
+  /* BOTTOM RIGHT — outer edge */
+  .supportGrid .supportCard:nth-child(4) {
+    top: 145px !important;
+    right: 0 !important;
+    left: auto !important;
+
+    border-top: 5px solid #CF1464 !important;
+  }
+
+  /* Keep this layer completely static */
+  .supportCard:hover {
+    transform: none !important;
+    box-shadow:
+      -4px -4px 4px #FFFFFF,
+       4px  4px 4px #C4C4C4 !important;
+    border-top-width: 5px !important;
+  }
+}
+
+
+/* =========================================================
+   SUPPORT CARDS — REMOVE OVERLAP / FIX VERTICAL SPACING ONLY
+   ========================================================= */
+@media screen and (min-width: 1051px) {
+
+  /* Give the complete 4-card layer enough height so it does
+     not collide with the oval section below */
+  .supportGrid {
+    position: relative !important;
+    display: block !important;
+
+    width: 100% !important;
+    max-width: 1280px !important;
+    height: 330px !important;
+
+    margin: 0 auto 34px !important;
+    padding: 0 !important;
+    box-sizing: border-box !important;
+  }
+
+  /* Keep all four cards at the same size */
+  .supportCard {
+    width: 360px !important;
+    height: 108px !important;
+    min-height: 108px !important;
+    margin: 0 !important;
+  }
+
+  /* Top row */
+  .supportGrid .supportCard:nth-child(1) {
+    top: 0 !important;
+    left: 220px !important;
+    right: auto !important;
+  }
+
+  .supportGrid .supportCard:nth-child(2) {
+    top: 0 !important;
+    right: 220px !important;
+    left: auto !important;
+  }
+
+  /* Bottom row — moved lower so it cannot overlap top row */
+  .supportGrid .supportCard:nth-child(3) {
+    top: 165px !important;
+    left: 60px !important;
+    right: auto !important;
+  }
+
+  .supportGrid .supportCard:nth-child(4) {
+    top: 165px !important;
+    right: 60px !important;
+    left: auto !important;
+  }
+
+  /* Keep clear space between card layer and oval */
+  .practiceOval {
+    margin-top: 24px !important;
+  }
+}
+
+
+/* =========================================================
+   PRACTICE SUPPORT — REMOVE TOP OVERLAP ONLY
+   Keeps every card/design layer unchanged.
+   ========================================================= */
+@media screen and (min-width: 1051px) {
+
+  /* Create clear space below the Practice-Oriented panel */
+  .supportGrid {
+    margin-top: 48px !important;
+    margin-bottom: 34px !important;
+    height: 330px !important;
+  }
+
+  /* Keep the top two cards fully below the panel */
+  .supportGrid .supportCard:nth-child(1),
+  .supportGrid .supportCard:nth-child(2) {
+    top: 0 !important;
+  }
+
+  /* Keep second row spacing unchanged */
+  .supportGrid .supportCard:nth-child(3),
+  .supportGrid .supportCard:nth-child(4) {
+    top: 165px !important;
+  }
+
+  /* Do not allow shadows to visually merge into the panel above */
+  .practiceIntro {
+    margin-bottom: 0 !important;
+  }
+}

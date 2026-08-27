@@ -1,7 +1,8 @@
 "use client";
 
 import Image from "next/image";
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
+import { useRouter } from "next/navigation";
 import Header from "../../components/Header/header";
 import Footer from "../../components/Footer/footer";
 import "./codingLabs.css";
@@ -83,7 +84,17 @@ function CheckIcon({ color }: { color: string }) {
 }
 
 export default function CodingLabsPage() {
+  const router = useRouter();
   const [videoOrder, setVideoOrder] = useState([0, 1, 2]);
+  const videoSliderRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const videos = videoSliderRef.current?.querySelectorAll("video");
+    videos?.forEach((video) => {
+      video.playbackRate = 1.15;
+      video.defaultPlaybackRate = 1.15;
+    });
+  }, [videoOrder]);
 
   // Nothing is selected initially:
   // both CTA buttons start raised with blue text.
@@ -228,7 +239,7 @@ export default function CodingLabsPage() {
           </div>
 
           <div className="coding-video-area">
-            <div className="coding-video-deck">
+            <div className="coding-video-deck" ref={videoSliderRef}>
               <div className="coding-video-card coding-video-card--back">
                 <video
                   key={`back-${videoOrder[2]}`}
@@ -317,7 +328,10 @@ export default function CodingLabsPage() {
               <button
                 type="button"
                 className={activeCta === "started" ? "is-selected" : ""}
-                onClick={() => setActiveCta("started")}
+                onClick={() => {
+                  setActiveCta("started");
+                  router.push("/HomePage");
+                }}
                 onMouseLeave={() => setActiveCta(null)}
                 onBlur={() => setActiveCta(null)}
                 aria-pressed={activeCta === "started"}

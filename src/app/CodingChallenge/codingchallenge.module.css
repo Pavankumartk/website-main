@@ -448,24 +448,7 @@
 	font-size: 24px;
 }
 
-@media (hover: hover) and (pointer: fine) {
-  .frameWrapper5 {
-    transition: transform 0.25s ease;
-  }
 
-  .frameWrapper5:hover {
-    transform: translateY(-4px);
-  }
-
-  /* Grow from icon until the whole card (including far right) is covered */
-  .frameWrapper5:hover .ellipseParent::before,
-  .frameWrapper5:hover .ellipseGroup::before,
-  .frameWrapper5:hover .ellipseContainer::before,
-  .frameWrapper5:hover .ellipseParent2::before {
-    clip-path: circle(160% at 18% 18%);
-    opacity: 1;
-  }
-}
 .ellipseDiv {
   	position: absolute;
   	top: -8px;
@@ -875,20 +858,7 @@
   color: #000;
 }
 
-@media (hover: hover) and (pointer: fine) {
-  .pillCard {
-    transition: transform 0.25s ease;
-  }
 
-  .pillCard:hover {
-    transform: translateY(-3px);
-  }
-
-  .pillCard:hover::before,
-  .pillCard:hover::after {
-    transform: scaleX(1);
-  }
-}
 
 @media (hover: none), (pointer: coarse) {
   .pillCard:active::before,
@@ -1382,17 +1352,7 @@ box-shadow: 8px 8px 16px #c4c4c4, -8px -8px 16px #fff;
   text-overflow: ellipsis;
 }
 
-@media (hover: hover) and (pointer: fine) {
-  .audienceCard:nth-child(1):hover,
-  .audienceCard:nth-child(2):hover {
-    transform: translateX(12px);
-  }
 
-  .audienceCard:nth-child(3):hover,
-  .audienceCard:nth-child(4):hover {
-    transform: translateX(-12px);
-  }
-}
 
 @media (hover: none), (pointer: coarse) {
   .audienceCard:nth-child(1):active,
@@ -2127,42 +2087,7 @@ box-shadow: 8px 8px 16px #c4c4c4, -8px -8px 16px #fff;
 }
 
 /* Hover — desktop / devices that support hover */
-@media (hover: hover) and (pointer: fine) {
-  .heroStripSeg:hover {
-    z-index: 6;
-    filter: brightness(1.08);
-    transform: translateY(-2px);
-    animation-play-state: paused;
-  }
 
-  .heroStripSeg:hover .heroStripIcon {
-    animation: none;
-    transform: translateY(-5px) scale(1.12);
-    filter: drop-shadow(0px 6px 6px #00000050);
-  }
-
-  .heroStripSeg:hover .heroStripLabel {
-    color: #2d4cc8;
-    transform: translateY(-1px);
-  }
-
-  .heroStripPractice:hover .heroStripLabel {
-    color: #2d4cc8;
-  }
-
-  .heroStripThink:hover .heroStripLabel {
-    color: #c05512;
-  }
-
-  .heroStripShowcase:hover .heroStripLabel {
-    color: #2a7308;
-  }
-
-  .heroStripSeg:active {
-    transform: translateY(0);
-    filter: brightness(0.98);
-  }
-}
 
 @media (prefers-reduced-motion: reduce) {
   .heroStripSeg,
@@ -2317,44 +2242,7 @@ box-shadow: 8px 8px 16px #c4c4c4, -8px -8px 16px #fff;
   }
 }
 
-@media (hover: hover) and (pointer: fine) {
-  .skillCard:hover {
-    box-shadow:
-      -4px -4px 8px 0px #c4c4c4cc inset, 4px 4px 8px 0px #ffffff inset, 0 10px 18px rgba(0, 0, 0, 0.08);
-  }
 
-  .skillCard-topLeft:hover {
-    transform: translate(-4px, -6px);
-  }
-
-  .skillCard-topRight:hover {
-    transform: translate(4px, -6px);
-  }
-
-  .skillCard-bottomLeft:hover {
-    transform: translate(-4px, -6px);
-  }
-
-  .skillCard-bottomRight:hover {
-    transform: translate(4px, -6px);
-  }
-
-  .skillCard-topLeft:hover .skillCardDot {
-    animation: skillDotTL 1.85s cubic-bezier(0.4, 0, 0.2, 1) forwards;
-  }
-
-  .skillCard-topRight:hover .skillCardDot {
-    animation: skillDotTR 1.85s cubic-bezier(0.4, 0, 0.2, 1) forwards;
-  }
-
-  .skillCard-bottomLeft:hover .skillCardDot {
-    animation: skillDotBL 1.85s cubic-bezier(0.4, 0, 0.2, 1) forwards;
-  }
-
-  .skillCard-bottomRight:hover .skillCardDot {
-    animation: skillDotBR 1.85s cubic-bezier(0.4, 0, 0.2, 1) forwards;
-  }
-}
 
 @media (hover: none), (pointer: coarse) {
   .skillCard:active {
@@ -3729,3 +3617,140 @@ box-shadow: 8px 8px 16px #c4c4c4, -8px -8px 16px #fff;
   cursor: default !important;
 }
 
+
+/* =========================================================
+   PRACTICE / THINK / SHOWCASE STRIP — EXACT FIGMA COLOURS
+   ========================================================= */
+
+.frameWrapper4 {
+  background: #DFE6E9 !important;
+  box-shadow:
+    4px 4px 8px #C4C4C4,
+    -4px -4px 8px #FFFFFF !important;
+}
+
+/* Keep the full strip inset exactly as supplied */
+.heroTechStrip,
+.heroTechStripTrack {
+  background: #DFE6E9 !important;
+}
+
+.heroTechStrip::after {
+  box-shadow:
+    inset -4px -4px 8px #FFFFFF,
+    inset 4px 4px 8px rgba(196, 196, 196, 0.8) !important;
+}
+
+/*
+  Hide the old coloured shape artwork and build the three
+  colour panels in CSS so the exact supplied colours are used.
+*/
+.heroStripShape {
+  opacity: 0 !important;
+}
+
+/* Practice Coding */
+.heroStripPractice {
+  background: #EBEEFC !important;
+}
+
+/* Think Logically — centre hex / chevron panel */
+.heroStripThink {
+  background: #FADFDF !important;
+  clip-path: polygon(
+    14% 0,
+    86% 0,
+    100% 50%,
+    86% 100%,
+    14% 100%,
+    0 50%
+  ) !important;
+}
+
+/* Showcase Skills */
+.heroStripShowcase {
+  background: #ECF1EA !important;
+}
+
+/* Exact text colours */
+.heroStripPractice .heroStripLabel,
+.heroStripThink .heroStripLabel {
+  color: #2F3547 !important;
+}
+
+.heroStripShowcase .heroStripLabel {
+  color: #000000 !important;
+}
+
+/* Exact icon colour treatment where SVG/icon inherits currentColor */
+.heroStripPractice {
+  color: #2D4CC8 !important;
+}
+
+.heroStripThink {
+  color: #C05512 !important;
+}
+
+.heroStripShowcase {
+  color: #2A7308 !important;
+}
+
+/* Keep icon shadow from the supplied design */
+.heroStripIcon {
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) !important;
+}
+
+/* No hover effects anywhere on these three segments */
+.heroStripSeg,
+.heroStripIcon,
+.heroStripLabel {
+  transition: none !important;
+}
+
+.heroStripSeg:hover,
+.heroStripSeg:hover .heroStripIcon,
+.heroStripSeg:hover .heroStripLabel {
+  transform: none !important;
+  filter: none !important;
+}
+
+/* Restore the required icon drop shadow even during accidental hover */
+.heroStripSeg:hover .heroStripIcon {
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) !important;
+}
+
+/* =========================================================
+   FULL PAGE — REMOVE REMAINING HOVER MOTION/EFFECTS
+   ========================================================= */
+
+/* No hover movement on known interactive visual cards */
+.frameWrapper5:hover,
+.pillCard:hover,
+.skillCard:hover,
+.skillCard-topLeft:hover,
+.skillCard-topRight:hover,
+.skillCard-bottomLeft:hover,
+.skillCard-bottomRight:hover,
+.audienceCard:hover {
+  transform: none !important;
+}
+
+/* Disable hover-only animated overlays */
+.frameWrapper5:hover .ellipseParent::before,
+.frameWrapper5:hover .ellipseGroup::before,
+.frameWrapper5:hover .ellipseContainer::before,
+.frameWrapper5:hover .ellipseParent2::before,
+.pillCard:hover::before,
+.pillCard:hover::after {
+  transform: none !important;
+  opacity: 0 !important;
+}
+
+/* Prevent hover-triggered dot movement */
+.skillCard:hover .skillCardDot,
+.skillCard-topLeft:hover .skillCardDot,
+.skillCard-topRight:hover .skillCardDot,
+.skillCard-bottomLeft:hover .skillCardDot,
+.skillCard-bottomRight:hover .skillCardDot {
+  animation: none !important;
+}

@@ -188,7 +188,7 @@ export default function CodingChallengePage() {
             className={
               styles.businessStyleYoungBeautifulIcon
             }
-            src="/images/hero-people.webp"
+            src="/images/close-up-two-dads-looking-baby-ultrasounds.webp"
             width={663}
             height={541}
             sizes="663px"
