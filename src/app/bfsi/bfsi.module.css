@@ -1862,3 +1862,15 @@
   }
 }
 
+/* ===== Hero CTA pressed/click state =====
+   Keep the normal button shadows unchanged.
+   While either button is being clicked/tapped, switch to inset shadows.
+*/
+.bfsi-btn-secondary:active,
+.bfsi-btn-primary:active {
+  box-shadow:
+    inset -4px -4px 4px #ffffff,
+    inset 4px 4px 4px #c4c4c4 !important;
+  transform: translateY(1px);
+}
+

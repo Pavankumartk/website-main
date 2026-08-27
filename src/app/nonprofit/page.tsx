@@ -6,6 +6,7 @@ import { useRef, useState } from "react";
 import styles from "./ngo.module.css";
 import Header from "../../components/Header/header";
 import Footer from "../../components/Footer/footer";
+import { BookDemoTrigger } from "../../components/Bookademo/Bookademo";
 const NGO: NextPage = () => {
     const topVideoRef = useRef<HTMLVideoElement>(null);
     const [isTopVideoPlaying, setIsTopVideoPlaying] = useState(false);
@@ -42,7 +43,8 @@ const NGO: NextPage = () => {
         <>
             <Header />
         <main className={styles.ngoPage} aria-label="Nonprofit organizations page">
-            <title>Nonprofit Organizations (NGOs) | NeuroLXP</title>
+            <title>Nonprofit Organizations
+                 (NGOs) | NeuroLXP</title>
             <div className={`${styles.ngo} ${openSupportCards.length > 0 ? styles.supportCardsExpanded : ""}`}>
                 <div className={styles.ngoInner}>
                     <div className={styles.image20Parent}>
@@ -93,11 +95,11 @@ const NGO: NextPage = () => {
                                 </div>
                                 <div className={styles.empoweringNonprofitsThrough}>Empowering nonprofits through scalable digital learning.</div>
                             </div>
-                            <div className={styles.frameWrapper}>
+                            <BookDemoTrigger className={styles.frameWrapper}>
                                 <div className={styles.bookADemoWrapper}>
                                     <div className={styles.bookADemo}>Book a Demo</div>
                                 </div>
-                            </div>
+                            </BookDemoTrigger>
                         </div>
                     </div>
                 </div>
@@ -113,7 +115,7 @@ const NGO: NextPage = () => {
                     </div>
                     <div className={styles.arrowRightDoubleGroup}>
                         <Image className={styles.arrowDown01Icon} src="/icons/arrowright.svg" width={16} height={16} sizes="100vw" alt="" aria-hidden="true" />
-                        <b className={styles.industriesWeServe}>Nonprofit Organization</b>
+                        <b className={styles.industriesWeServe}>Nonprofit Organizations</b>
                     </div>
                 </div>
                 <div className={styles.frame}>
@@ -216,7 +218,7 @@ const NGO: NextPage = () => {
                                         </div>
                                         <div className={styles.createOnceTrainContainer}>
                                             <span className={styles.createOnceTrain}>{`Create once, train everywhere Empower teams, share knowledge, and measure impact `}</span>
-                                            <b className={styles.createOnceTrain}>all on one platform</b>
+                                            <span className={styles.createOnceTrain} style={{ fontWeight: 400 }}>all on one platform</span>
                                             <span className={styles.createOnceTrain}>.</span>
                                         </div>
                                     </div>

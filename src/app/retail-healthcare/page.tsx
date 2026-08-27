@@ -2,12 +2,15 @@
 
 import type { NextPage } from "next";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
 import styles from "./retail-health.module.css";
 import Header from "../../components/Header/header";
 import Footer from "../../components/Footer/footer";
+import { BookDemoTrigger } from "../../components/Bookademo/Bookademo";
 
 const RetailAndHealthCare: NextPage = () => {
+  const router = useRouter();
   const [openRetailCard, setOpenRetailCard] = useState<string | null>(null);
   const [isFinalVideoActive, setIsFinalVideoActive] = useState(false);
   const finalVideoSectionRef = useRef<HTMLDivElement | null>(null);
@@ -61,7 +64,7 @@ const RetailAndHealthCare: NextPage = () => {
           <div className={styles.arrowRightDoubleGroup}>
             <Image src="/icons/arrow-right-double.svg" className={styles.arrowDown01Icon} width={16} height={16} sizes="100vw" alt="" />
             <h1 className={styles.retailHealthcare2} style={{ margin: 0 }}>
-              Retail & Healthcare Solutions
+              Retail & Healthcare
             </h1>
           </div>
         </div>
@@ -90,10 +93,21 @@ const RetailAndHealthCare: NextPage = () => {
                 </div>
               </div>
               <div className={styles.frameParent6}>
-                <button type="button" className={styles.requestDemoWrapper}>
-                  <span className={styles.requestDemo}>Request Demo</span>
-                </button>
-                <div className={styles.frameWrapper2}>
+                <BookDemoTrigger className={styles.requestDemoWrapper}>
+                  <span className={styles.requestDemo}>Book a Demo</span>
+                </BookDemoTrigger>
+
+                <div
+                  className={styles.frameWrapper2}
+                  role="button"
+                  tabIndex={0}
+                  onClick={() => router.push("/HomePage")}
+                  onKeyDown={(event) => {
+                    if (event.key === "Enter" || event.key === " ") {
+                      router.push("/HomePage");
+                    }
+                  }}
+                >
                   <div className={styles.startLearningWrapper}>
                     <p className={styles.startLearning} style={{ margin: 0 }}>
                       Start Learning
@@ -443,7 +457,17 @@ const RetailAndHealthCare: NextPage = () => {
                   NeuroLXP helps retail and healthcare organizations build skilled, compliant future-ready workforces.
                 </p>
               </div>
-              <div className={styles.frameWrapper14}>
+              <div
+                className={styles.frameWrapper14}
+                role="button"
+                tabIndex={0}
+                onClick={() => router.push("/HomePage")}
+                onKeyDown={(event) => {
+                  if (event.key === "Enter" || event.key === " ") {
+                    router.push("/HomePage");
+                  }
+                }}
+              >
                 <div className={styles.getStartedWrapper}>
                   <p className={styles.getStarted} style={{ margin: 0 }}>{`Get Started `}</p>
                 </div>

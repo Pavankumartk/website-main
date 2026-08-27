@@ -16,7 +16,7 @@
   	position: absolute;
   	top: 0px;
   	left: 0px;
-  	box-shadow: -8px -8px 16px #fff, 8px 8px 16px #c6c6c9;
+  	box-shadow: -4px -4px 4px #fff, 4px 4px 4px #c6c6c9;
   	background-color: #dfe6e9;
   	width: 1440px;
   	height: 80px;
@@ -87,7 +87,7 @@
   	position: absolute;
   	top: calc(50% - 22.5px);
   	left: 1244px;
-  	box-shadow: -8px -8px 16px #fff, 8px 8px 16px #c6c6c9;
+  	box-shadow: -4px -4px 4px #fff, 4px 4px 4px #c6c6c9;
   	border-radius: 32px;
   	background-color: #dfe6e9;
   	width: 132px;
@@ -192,8 +192,8 @@
   background: #dfe6e9;
   
   box-shadow:
-    -4px -4px 8px #ffffff,
-    4px 4px 8px rgba(196, 196, 196, 0.8);
+    -4px -4px 4px #ffffff,
+    4px 4px 4px rgba(196, 196, 196, 0.8);
 }
 
 .frameParent2 {
@@ -244,8 +244,8 @@
 
   background: #dfe6e9;
   box-shadow:
-    inset -4px -4px 8px #ffffff,
-    inset 4px 4px 8px rgba(196, 196, 196, 0.8);
+    inset -4px -4px 4px #ffffff,
+    inset 4px 4px 4px rgba(196, 196, 196, 0.8);
   border-radius: 28px;
   transform: rotate(0.05deg);
 
@@ -304,8 +304,8 @@
 
   background: #dfe6e9;
   box-shadow:
-    inset -4px -4px 8px #ffffff,
-    inset 4px 4px 8px rgba(196, 196, 196, 0.8);
+    inset -4px -4px 4px #ffffff,
+    inset 4px 4px 4px rgba(196, 196, 196, 0.8);
   border-radius: 8px;
   transform: rotate(0.05deg);
 
@@ -331,7 +331,7 @@
   	position: absolute;
   	top: 0px;
   	left: 0px;
-  	box-shadow: 8px 8px 16px #c4c4c4, -8px -8px 16px #fff inset, 8px 8px 16px #c4c4c4 inset;
+  	box-shadow: 4px 4px 4px #c4c4c4, -4px -4px 4px #fff inset, 4px 4px 4px #c4c4c4 inset;
   	border-radius: 50%;
   	background-color: #dfe6e9;
   	width: 539px;
@@ -369,7 +369,7 @@
   	height: 259px;
   	width: 390px;
   	position: relative;
-  	box-shadow: -8px -8px 16px #fff, 8px 8px 16px #c4c4c4;
+  	box-shadow: -4px -4px 4px #fff, 4px 4px 4px #c4c4c4;
   	border-radius: 200px 200px 24px 24px;
   	background-color: #dfe6e9;
   	border-top: 20px solid #2d4cc8;
@@ -412,7 +412,7 @@
   	height: 259px;
   	width: 390px;
   	position: relative;
-  	box-shadow: -8px -8px 16px #fff inset, 8px 8px 16px #c4c4c4 inset;
+  	box-shadow: -4px -4px 4px #fff inset, 4px 4px 4px #c4c4c4 inset;
   	border-radius: 200px 200px 24px 24px;
   	background-color: #dfe6e9;
   	overflow: hidden;
@@ -535,7 +535,7 @@
   	height: 330px;
   	width: 405px;
   	position: relative;
-  	box-shadow: -8px -8px 16px #fff, 8px 8px 16px #c4c4c4;
+  	box-shadow: -4px -4px 4px #fff, 4px 4px 4px #c4c4c4;
   	border-radius: 100px 0px 50px 50px;
   	background-color: #dfe6e9;
   	overflow: hidden;
@@ -566,8 +566,8 @@
   flex: none;
   border-radius: 100px;
   background: #dfe6e9;
-  box-shadow: inset -4px -4px 8px #ffffff,
-              inset 4px 4px 8px rgba(196, 196, 196, 0.8);
+  box-shadow: inset -4px -4px 4px #ffffff,
+              inset 4px 4px 4px rgba(196, 196, 196, 0.8);
   transform: rotate(0.05deg);
   display: flex;
   align-items: center;
@@ -580,8 +580,8 @@
   position: relative;
   border-radius: 50%;
   background: #dfe6e9;
-  box-shadow: 8px 8px 16px #c6c6c9,
-              -8px -8px 16px #ffffff;
+  box-shadow: 4px 4px 4px #c6c6c9,
+              -4px -4px 4px #ffffff;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -668,7 +668,7 @@
   	height: 330px;
   	width: 405px;
   	position: relative;
-  	box-shadow: -8px -8px 16px #fff, 8px 8px 16px #c4c4c4;
+  	box-shadow: -4px -4px 4px #fff, 4px 4px 4px #c4c4c4;
   	border-radius: 100px 0px 50px 50px;
   	background-color: #dfe6e9;
   	overflow: hidden;
@@ -768,7 +768,7 @@
   	height: 118px;
   	width: 410px;
   	position: relative;
-  	box-shadow: -8px -8px 16px #fff, 8px 8px 16px #c4c4c4;
+  	box-shadow: -4px -4px 4px #fff, 4px 4px 4px #c4c4c4;
   	border-radius: 24px;
   	background-color: #dfe6e9;
   	border-right: 10px solid #2d4cc8;
@@ -803,7 +803,7 @@
   	height: 118px;
   	width: 410px;
   	position: relative;
-  	box-shadow: -8px -8px 6px #fff inset, 8px 8px 6px #c4c4c4 inset;
+  	box-shadow: -4px -4px 4px #fff inset, 4px 4px 4px #c4c4c4 inset;
   	border-radius: 24px;
   	background-color: #dfe6e9;
   	overflow: hidden;
@@ -832,7 +832,7 @@
   	height: 118px;
   	width: 410px;
   	position: relative;
-  	box-shadow: -8px -8px 6px #fff inset, 8px 8px 6px #c4c4c4 inset;
+  	box-shadow: -4px -4px 4px #fff inset, 4px 4px 4px #c4c4c4 inset;
   	border-radius: 24px;
   	background-color: #dfe6e9;
   	overflow: hidden;
@@ -856,7 +856,7 @@
   	height: 118px;
   	width: 410px;
   	position: relative;
-  	box-shadow: -8px -8px 6px #fff inset, 8px 8px 6px #c4c4c4 inset;
+  	box-shadow: -4px -4px 4px #fff inset, 4px 4px 4px #c4c4c4 inset;
   	border-radius: 24px;
   	background-color: #dfe6e9;
   	overflow: hidden;
@@ -866,7 +866,7 @@
   	height: 118px;
   	width: 410px;
   	position: relative;
-  	box-shadow: -8px -8px 6px #fff inset, 8px 8px 6px #c4c4c4 inset;
+  	box-shadow: -4px -4px 4px #fff inset, 4px 4px 4px #c4c4c4 inset;
   	border-radius: 24px;
   	background-color: #dfe6e9;
   	overflow: hidden;
@@ -877,7 +877,7 @@
   	height: 118px;
   	width: 410px;
   	position: relative;
-  	box-shadow: -8px -8px 6px #fff inset, 8px 8px 6px #c4c4c4 inset;
+  	box-shadow: -4px -4px 4px #fff inset, 4px 4px 4px #c4c4c4 inset;
   	border-radius: 24px;
   	background-color: #dfe6e9;
   	overflow: hidden;
@@ -1003,7 +1003,7 @@
   	width: 1280px;
   	height: 526px;
   	position: relative;
-  	box-shadow: -8px -8px 8px rgba(255, 255, 255, 0.5) inset, 8px 8px 8px #c4c4c4 inset;
+  	box-shadow: -4px -4px 4px rgba(255, 255, 255, 0.5) inset, 4px 4px 4px #c4c4c4 inset;
   	border-radius: 50px;
   	background-color: #dfe6e9;
   	overflow: hidden;
@@ -1075,7 +1075,7 @@
 	position: relative;
 	border-radius: 28px;
 	background-color: #dfe6e9;
-	box-shadow: -8px -8px 16px #fff inset, 8px 8px 16px #c4c4c4 inset;
+	box-shadow: -4px -4px 4px #fff inset, 4px 4px 4px #c4c4c4 inset;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -1120,7 +1120,7 @@
 	position: relative;
 	border-radius: 28px;
 	background-color: #dfe6e9;
-	box-shadow: -8px -8px 16px #fff inset, 8px 8px 16px #c4c4c4 inset;
+	box-shadow: -4px -4px 4px #fff inset, 4px 4px 4px #c4c4c4 inset;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -1169,7 +1169,7 @@
   	position: absolute;
   	bottom: -0.01px;
   	left: calc(50% - 720px);
-  	box-shadow: -10px -10px 20px #fff inset, 10px 10px 10px #c4c4c4 inset;
+  	box-shadow: -4px -4px 4px #fff inset, 4px 4px 4px #c4c4c4 inset;
   	background-color: #dfe6e9;
   	width: 1440px;
   	height: 459px;
@@ -1396,7 +1396,7 @@
   	position: absolute;
   	bottom: 0px;
   	left: calc(50% - 720px);
-  	box-shadow: -10px -10px 20px #fff inset, 8px 8px 16px #c4c4c4 inset;
+  	box-shadow: -4px -4px 4px #fff inset, 4px 4px 4px #c4c4c4 inset;
   	background-color: #dfe6e9;
   	width: 1440px;
   	height: 459px;
@@ -1406,7 +1406,7 @@
   	position: absolute;
   	bottom: 0px;
   	left: calc(50% - 720px);
-  	box-shadow: -8px -8px 16px #fff inset, 10px 10px 10px #c4c4c4 inset;
+  	box-shadow: -4px -4px 4px #fff inset, 4px 4px 4px #c4c4c4 inset;
   	background-color: #dfe6e9;
   	width: 1440px;
   	height: 459px;
@@ -1529,29 +1529,29 @@
 .topFeatureCardBlue:hover {
   border-top: 20px solid #2D4CC8;
   box-shadow:
-    -8px -8px 16px #ffffff,
-    8px 8px 16px #c4c4c4;
+    -4px -4px 4px #ffffff,
+    4px 4px 4px #c4c4c4;
 }
 
 .topFeatureCardPink:hover {
   border-top: 20px solid #BF1869;
   box-shadow:
-    -8px -8px 16px #ffffff,
-    8px 8px 16px #c4c4c4;
+    -4px -4px 4px #ffffff,
+    4px 4px 4px #c4c4c4;
 }
 
 .topFeatureCardTeal:hover {
   border-top: 20px solid #0B9BA0;
   box-shadow:
-    -8px -8px 16px #ffffff,
-    8px 8px 16px #c4c4c4;
+    -4px -4px 4px #ffffff,
+    4px 4px 4px #c4c4c4;
 }
 
 .topFeatureCardPurple:hover {
   border-top: 20px solid #67096E;
   box-shadow:
-    -8px -8px 16px #ffffff,
-    8px 8px 16px #c4c4c4;
+    -4px -4px 4px #ffffff,
+    4px 4px 4px #c4c4c4;
 }
 
 .topFeatureCardBlue:hover,
@@ -1607,8 +1607,8 @@
   background: #dfe6e9;
 
   box-shadow:
-    -8px -8px 6px #ffffff inset,
-    8px 8px 6px #c4c4c4 inset;
+    -4px -4px 4px #ffffff inset,
+    4px 4px 4px #c4c4c4 inset;
   display: flex;
   align-items: center;
   gap: 24px;
@@ -1633,8 +1633,8 @@
   padding-left: 14px;
   padding-right: 14px;
   box-shadow:
-    -8px -8px 16px #ffffff,
-    8px 8px 16px #c4c4c4;
+    -4px -4px 4px #ffffff,
+    4px 4px 4px #c4c4c4;
   transform: translateY(-2px);
 }
 
@@ -1646,8 +1646,8 @@
   border-radius: 50%;
   background: #dfe6e9;
   box-shadow:
-    8px 8px 16px #c6c6c9,
-    -8px -8px 16px #ffffff;
+    4px 4px 4px #c6c6c9,
+    -4px -4px 4px #ffffff;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1678,8 +1678,8 @@
     border-radius:28px;
     background:#DFE6E9;
     box-shadow:
-        inset -4px -4px 8px #FFFFFF,
-        inset 4px 4px 8px rgba(196,196,196,0.8);
+        inset -4px -4px 4px #FFFFFF,
+        inset 4px 4px 4px rgba(196,196,196,0.8);
     color:#2D4CC8;
     font-size:24px;
     font-weight:600;
@@ -1698,8 +1698,8 @@
   box-sizing: border-box;
   background: #dfe6e9;
   box-shadow:
-    inset -4px -4px 8px #ffffff,
-    inset 4px 4px 8px rgba(196, 196, 196, 0.8);
+    inset -4px -4px 4px #ffffff,
+    inset 4px 4px 4px rgba(196, 196, 196, 0.8);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1727,8 +1727,8 @@
   border-radius: 100px;
   background: #dfe6e9;
   box-shadow:
-    inset -4px -4px 8px #ffffff,
-    inset 4px 4px 8px rgba(196, 196, 196, 0.8);
+    inset -4px -4px 4px #ffffff,
+    inset 4px 4px 4px rgba(196, 196, 196, 0.8);
   transform: rotate(0.05deg);
 
   display: flex;
@@ -1744,8 +1744,8 @@
   border-radius: 50%;
   background: #dfe6e9;
   box-shadow:
-    8px 8px 16px #c6c6c9,
-    -8px -8px 16px #ffffff;
+    4px 4px 4px #c6c6c9,
+    -4px -4px 4px #ffffff;
 
   display: flex;
   align-items: center;
@@ -1858,8 +1858,8 @@
   padding: 24px 26px;
   box-sizing: border-box;
   background: #dfe6e9;
-  box-shadow: inset -4px -4px 8px #ffffff,
-              inset 4px 4px 8px #c4c4c4;
+  box-shadow: inset -4px -4px 4px #ffffff,
+              inset 4px 4px 4px #c4c4c4;
   border-radius: 16px;
   color: #2f3547;
   font-size: 20px;
@@ -3540,6 +3540,574 @@
     text-align: center !important;
     white-space: normal !important;
     line-height: 1.3 !important;
+  }
+}
+
+
+/* =========================================================
+   EXPLORE PUBLIC LEARNING CTA
+   Default: raised / outset
+   Click: inset / pressed
+   ========================================================= */
+
+.frameWrapper2 {
+  width: 294px;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  cursor: pointer;
+  border-radius: 8px;
+  outline: none;
+}
+
+.frameWrapper2 .frameIcon {
+  width: 294.35px;
+  height: 60px;
+  position: relative;
+  flex: none;
+  box-sizing: border-box;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #dfe6e9;
+
+  /* Raised / outset by default */
+  box-shadow:
+    -4px -4px 4px #ffffff,
+    4px 4px 4px rgba(196, 196, 196, 0.8);
+
+  border-radius: 8px;
+  transform: rotate(0.05deg);
+
+  font-family: "Segoe UI";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 30px;
+  letter-spacing: 0.02em;
+  color: #31344b;
+  white-space: nowrap;
+
+  transition: box-shadow 0.12s ease, transform 0.12s ease;
+  user-select: none;
+}
+
+/* Pressed / inset state */
+.frameWrapper2:active .frameIcon,
+.frameWrapper2.exploreLearningPressed .frameIcon {
+  box-shadow:
+    inset -4px -4px 4px #ffffff,
+    inset 4px 4px 4px rgba(196, 196, 196, 0.8) !important;
+  transform: translateY(1px) rotate(0.05deg);
+}
+
+.frameWrapper2:focus-visible {
+  outline: 2px solid #2d4cc8;
+  outline-offset: 4px;
+}
+
+/* =========================================================
+   FINAL MOBILE FIX — KEY CHALLENGES HEADER/CARDS OVERLAP
+   Keeps desktop unchanged. Gives the heading/subtitle their
+   own space before the first challenge card.
+   ========================================================= */
+@media screen and (max-width: 600px) {
+  .frameParent8 {
+    margin-top: 0 !important;
+    gap: 28px !important;
+  }
+
+  .frameParent9 {
+    height: auto !important;
+    min-height: 0 !important;
+    gap: 28px !important;
+  }
+
+  .frameWrapper7 {
+    width: 100% !important;
+    height: auto !important;
+    min-height: 150px !important;
+    margin: 0 !important;
+    padding: 0 14px 18px !important;
+    box-sizing: border-box !important;
+    overflow: visible !important;
+  }
+
+  .keyChallengesInGovernmentWParent {
+    width: 100% !important;
+    height: auto !important;
+    min-height: 132px !important;
+    gap: 18px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    box-sizing: border-box !important;
+  }
+
+  .keyChallengesIn {
+    width: 100% !important;
+    height: auto !important;
+    margin: 0 !important;
+    line-height: 1.28 !important;
+    text-align: center !important;
+  }
+
+  .neurolxpCentralizesGovernmen {
+    width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+    margin: 0 !important;
+    padding: 0 4px !important;
+    line-height: 1.45 !important;
+    text-align: center !important;
+    box-sizing: border-box !important;
+  }
+
+  .frameParent10 {
+    position: relative !important;
+    top: auto !important;
+    left: auto !important;
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+  }
+
+  .frameParent11 {
+    position: relative !important;
+    top: auto !important;
+    left: auto !important;
+    margin-top: 0 !important;
+  }
+
+  .challengeCard.frameWrapper8,
+  .challengeCard.frameWrapper10 {
+    margin-top: 0 !important;
+  }
+}
+
+/* =========================================================
+   MOBILE — EXPANDED CHALLENGE CARDS: REMOVE EXTRA EMPTY SPACE
+   Applies only to the cards inside Key Challenges.
+   ========================================================= */
+@media screen and (max-width: 600px) {
+  /* Expanded card must grow from its actual content, not a fixed/min height */
+  .challengeCard.isExpanded,
+  .challengeCard:has(.challengeAnswer) {
+    height: auto !important;
+    min-height: 0 !important;
+    padding-bottom: 18px !important;
+  }
+
+  /* Remove fixed height from the opened answer area */
+  .challengeCard .challengeAnswer,
+  .challengeCard.isExpanded .challengeAnswer {
+    height: auto !important;
+    min-height: 0 !important;
+    max-height: none !important;
+    margin: 14px 18px 0 !important;
+    padding: 16px 18px !important;
+    box-sizing: border-box !important;
+  }
+
+  /* Paragraph itself should not reserve any extra vertical area */
+  .challengeCard .challengeAnswer p,
+  .challengeCard.isExpanded .challengeAnswer p {
+    height: auto !important;
+    min-height: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  /* Keep the next challenge card close to the previous expanded card */
+  .frameParent10,
+  .frameParent11 {
+    height: auto !important;
+    min-height: 0 !important;
+  }
+
+  .frameParent10 > *,
+  .frameParent11 > * {
+    flex-shrink: 0 !important;
+  }
+}
+
+/* =========================================================
+   MOBILE — CHALLENGE CARD ARROW + CENTERED EXPANDED STATE
+   Fixes:
+   1. open/close arrow stays visible and does not overlap
+   2. expanded card stays centered
+   3. answer stays centered inside the same card
+   ========================================================= */
+@media screen and (max-width: 600px) {
+
+  /* Every challenge card remains centered when closed/open */
+  .challengeCard,
+  .challengeCard.isExpanded,
+  .challengeCard.frameWrapper8,
+  .challengeCard.frameWrapper10 {
+    position: relative !important;
+    left: auto !important;
+    right: auto !important;
+    transform: none !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    box-sizing: border-box !important;
+  }
+
+  /* Main content inside each challenge card */
+  .challengeCard > div {
+    margin-left: auto !important;
+    margin-right: auto !important;
+    box-sizing: border-box !important;
+  }
+
+  /* Keep "How NeuroLXP Helps" and its arrow in normal flow */
+  .challengeCard .howNeurolxpHelps,
+  .challengeCard [class*="howNeurolxpHelps"] {
+    position: relative !important;
+    left: auto !important;
+    right: auto !important;
+    top: auto !important;
+    bottom: auto !important;
+    margin: 18px auto 0 !important;
+    text-align: center !important;
+  }
+
+  /* Arrow wrapper: reserve its own space so it cannot sit behind answer */
+  .challengeCard .arrowDown01Icon,
+  .challengeCard [class*="arrowDown"] {
+    position: relative !important;
+    left: auto !important;
+    right: auto !important;
+    top: auto !important;
+    bottom: auto !important;
+    display: block !important;
+    margin: 10px auto 14px !important;
+    z-index: 8 !important;
+    flex-shrink: 0 !important;
+  }
+
+  /* Expanded answer remains centered and below the close arrow */
+  .challengeCard .challengeAnswer,
+  .challengeCard.isExpanded .challengeAnswer {
+    position: relative !important;
+    left: auto !important;
+    right: auto !important;
+    top: auto !important;
+    bottom: auto !important;
+
+    width: calc(100% - 36px) !important;
+    height: auto !important;
+    min-height: 0 !important;
+
+    margin: 12px auto 0 !important;
+    padding: 14px 16px !important;
+
+    box-sizing: border-box !important;
+    transform: none !important;
+    z-index: 2 !important;
+  }
+
+  .challengeCard .challengeAnswer p,
+  .challengeCard.isExpanded .challengeAnswer p {
+    width: 100% !important;
+    height: auto !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  /* Prevent the card's expanded state from shifting horizontally */
+  .frameParent10,
+  .frameParent11,
+  .frameParent10 > *,
+  .frameParent11 > * {
+    left: auto !important;
+    right: auto !important;
+    transform: none !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+}
+
+
+/* =========================================================
+   FINAL MOBILE CHALLENGE CARD OPEN STATE
+   Answer opens BELOW the arrow and stays centered.
+   ========================================================= */
+@media screen and (max-width: 600px) {
+
+  /* Card becomes a normal vertical layout on mobile */
+  .challengeCard,
+  .challengeCard.frameWrapper8,
+  .challengeCard.frameWrapper10,
+  .challengeCard.challengeCardOpen {
+    position: relative !important;
+    width: calc(100% - 24px) !important;
+    height: auto !important;
+    min-height: 0 !important;
+    margin: 0 auto !important;
+    padding: 24px 14px 20px !important;
+    box-sizing: border-box !important;
+    overflow: visible !important;
+    transform: none !important;
+  }
+
+  /* Main card content stays centered and in normal flow */
+  .challengeCard .frameParent12 {
+    position: relative !important;
+    top: auto !important;
+    left: auto !important;
+    right: auto !important;
+    width: 100% !important;
+    height: auto !important;
+    margin: 0 auto !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 14px !important;
+    transform: none !important;
+  }
+
+  .challengeCard .frameParent13 {
+    width: 100% !important;
+    height: auto !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 16px !important;
+    margin: 0 auto !important;
+  }
+
+  .challengeCard .trainingAtScaleGroup {
+    width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+    margin: 0 auto !important;
+    gap: 10px !important;
+    text-align: center !important;
+  }
+
+  /* Button + arrow remain above the answer */
+  .challengeCard .challengeToggle {
+    position: relative !important;
+    width: 100% !important;
+    height: auto !important;
+    min-height: 58px !important;
+    margin: 0 auto !important;
+    padding: 4px 0 0 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 8px !important;
+    background: transparent !important;
+    border: 0 !important;
+    z-index: 3 !important;
+  }
+
+  .challengeCard .howNeurolxpHelps {
+    position: static !important;
+    width: auto !important;
+    height: auto !important;
+    margin: 0 !important;
+    text-align: center !important;
+  }
+
+  .challengeCard .arrowDownDoubleIcon {
+    position: static !important;
+    display: block !important;
+    width: 32px !important;
+    height: 32px !important;
+    margin: 0 auto !important;
+    transform-origin: center !important;
+    z-index: 4 !important;
+  }
+
+  /* Open state arrow points upward */
+  .challengeCard .arrowOpen {
+    transform: rotate(180deg) !important;
+  }
+
+  /* Answer ALWAYS appears below the button/arrow */
+  .challengeCard .challengeAnswer {
+    position: relative !important;
+    top: auto !important;
+    left: auto !important;
+    right: auto !important;
+    bottom: auto !important;
+
+    display: block !important;
+    width: calc(100% - 16px) !important;
+    height: auto !important;
+    min-height: 0 !important;
+
+    margin: 14px auto 0 !important;
+    padding: 14px 16px !important;
+
+    box-sizing: border-box !important;
+    text-align: left !important;
+    transform: none !important;
+    z-index: 1 !important;
+  }
+
+  /* Keep every card centered in the grid */
+  .challengeGrid {
+    width: 100% !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 24px !important;
+  }
+}
+
+
+/* =========================================================
+   ABSOLUTE FINAL MOBILE FIX
+   Force answer box BELOW the arrow — never top/right.
+   ========================================================= */
+@media screen and (max-width: 600px) {
+
+  /* The entire card becomes one vertical column */
+  .challengeGrid .challengeCard,
+  .challengeGrid .challengeCard.frameWrapper8,
+  .challengeGrid .challengeCard.frameWrapper10,
+  .challengeGrid .challengeCard.challengeCardOpen {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+
+    width: calc(100% - 24px) !important;
+    max-width: 405px !important;
+    height: auto !important;
+    min-height: 0 !important;
+
+    margin: 0 auto !important;
+    padding: 24px 14px 20px !important;
+
+    position: relative !important;
+    overflow: hidden !important;
+    transform: none !important;
+    box-sizing: border-box !important;
+  }
+
+  /* Card content is FIRST */
+  .challengeGrid .challengeCard > .frameParent12 {
+    order: 1 !important;
+
+    position: static !important;
+    inset: auto !important;
+    top: auto !important;
+    right: auto !important;
+    bottom: auto !important;
+    left: auto !important;
+
+    width: 100% !important;
+    max-width: 300px !important;
+    height: auto !important;
+
+    margin: 0 auto !important;
+    padding: 0 !important;
+
+    transform: none !important;
+  }
+
+  /* Keep text + How NeuroLXP Helps + arrow vertically centered */
+  .challengeGrid .challengeCard .frameParent13 {
+    width: 100% !important;
+    height: auto !important;
+
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+
+    margin: 0 auto !important;
+  }
+
+  .challengeGrid .challengeCard .challengeToggle {
+    position: static !important;
+
+    width: 100% !important;
+    height: auto !important;
+    min-height: 58px !important;
+
+    margin: 12px auto 0 !important;
+    padding: 0 !important;
+
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 8px !important;
+
+    background: transparent !important;
+    border: 0 !important;
+  }
+
+  .challengeGrid .challengeCard .howNeurolxpHelps {
+    position: static !important;
+    margin: 0 auto !important;
+    text-align: center !important;
+  }
+
+  .challengeGrid .challengeCard .arrowDownDoubleIcon {
+    position: static !important;
+    width: 32px !important;
+    height: 32px !important;
+    display: block !important;
+    margin: 0 auto !important;
+    flex: 0 0 32px !important;
+  }
+
+  .challengeGrid .challengeCard .arrowOpen {
+    transform: rotate(180deg) !important;
+  }
+
+  /* Answer is SECOND — therefore it MUST render below arrow/content */
+  .challengeGrid .challengeCard > .challengeAnswer,
+  .challengeGrid .challengeCard.challengeCardOpen > .challengeAnswer {
+    order: 2 !important;
+
+    position: static !important;
+    inset: auto !important;
+    top: auto !important;
+    right: auto !important;
+    bottom: auto !important;
+    left: auto !important;
+
+    float: none !important;
+    clear: both !important;
+
+    display: block !important;
+
+    width: calc(100% - 16px) !important;
+    max-width: 358px !important;
+    height: auto !important;
+    min-height: 0 !important;
+    max-height: none !important;
+
+    margin: 14px auto 0 !important;
+    padding: 14px 16px !important;
+
+    transform: none !important;
+    translate: none !important;
+
+    box-sizing: border-box !important;
+    text-align: left !important;
+    align-self: center !important;
+
+    opacity: 1 !important;
+    visibility: visible !important;
+    pointer-events: auto !important;
+  }
+
+  /* Prevent any old open-state positioning rule from moving the answer */
+  .challengeGrid .challengeCardOpen > .challengeAnswer {
+    left: auto !important;
+    right: auto !important;
+    top: auto !important;
+    bottom: auto !important;
+    transform: none !important;
   }
 }
 

@@ -15,7 +15,7 @@
 	position: absolute;
 	top: 0px;
 	left: 0px;
-	box-shadow: -8px -8px 16px #FFFFFF, 8px 8px 16px #C6C6C9;
+	box-shadow: -4px -4px 4px #FFFFFF, 4px 4px 4px #C4C4C4;
 	background-color: #dfe6e9;
 	width: 1440px;
 	height: 80px;
@@ -98,7 +98,7 @@
 	position: absolute;
 	top: calc(50% - 22.5px);
 	left: 1244px;
-	box-shadow: -8px -8px 16px #FFFFFF, 8px 8px 16px #C6C6C9;
+	box-shadow: -4px -4px 4px #FFFFFF, 4px 4px 4px #C4C4C4;
 	border-radius: 32px;
 	background-color: #dfe6e9;
 	width: 132px;
@@ -168,7 +168,7 @@
 	position: absolute;
 	top: 0px;
 	left: calc(50% - 640px);
-	box-shadow: -8px -8px 16px #FFFFFF, 8px 8px 16px #C4C4C4;
+	box-shadow: -4px -4px 4px #FFFFFF, 4px 4px 4px #C4C4C4;
 	border-radius: 100px 0px 100px 0px;
 	background-color: #dfe6e9;
 	width: 1280px;
@@ -237,7 +237,7 @@
 	position: relative;
 	border-radius: 28px;
 	background: #dfe6e9;
-	box-shadow: inset -4px -4px 8px #FFFFFF, inset 4px 4px 8px rgba(196, 196, 196, 0.8);
+	box-shadow: inset -4px -4px 4px #FFFFFF, inset 4px 4px 4px #C4C4C4;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -291,9 +291,7 @@
 	border: 0;
 	border-radius: 8px;
 	background: #dfe6e9;
-	box-shadow:
-		inset -8px -8px 16px #ffffff,
-		inset 8px 8px 16px #c6c6c9;
+	box-shadow: inset -4px -4px 4px #FFFFFF, inset 4px 4px 4px #C4C4C4;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -309,15 +307,11 @@
 }
 
 .frameIcon:hover {
-	box-shadow:
-		-5px -5px 12px #ffffff,
-		5px 5px 12px #c6c6c9;
+	box-shadow: -4px -4px 4px #FFFFFF, 4px 4px 4px #C4C4C4;
 }
 
 .frameIcon:active {
-	box-shadow:
-		inset -4px -4px 8px #ffffff,
-		inset 4px 4px 8px #c6c6c9;
+	box-shadow: inset -4px -4px 4px #FFFFFF, inset 4px 4px 4px #C4C4C4;
 }
 
 .frameIcon:focus-visible {
@@ -329,7 +323,7 @@
 	height: 60px;
 	width: 203px;
 	border: 0;
-	box-shadow: -8px -8px 16px #FFFFFF, 8px 8px 16px #C6C6C9;
+	box-shadow: -4px -4px 4px #FFFFFF, 4px 4px 4px #C4C4C4;
 	border-radius: 8px;
 	background-color: #dfe6e9;
 	overflow: hidden;
@@ -346,13 +340,11 @@
 }
 
 .frameWrapper2:hover {
-	box-shadow: -5px -5px 12px #fff, 5px 5px 12px #c6c6c9;
+	box-shadow: -4px -4px 4px #FFFFFF, 4px 4px 4px #C4C4C4;
 }
 
 .frameWrapper2:active {
-	box-shadow:
-		inset -4px -4px 8px #fff,
-		inset 4px 4px 8px #c6c6c9;
+	box-shadow: inset -4px -4px 4px #FFFFFF, inset 4px 4px 4px #C4C4C4;
 }
 
 .frameWrapper2:focus-visible {
@@ -380,7 +372,7 @@
 	align-self: stretch;
 	height: 595px;
 	position: relative;
-	box-shadow: -8px -8px 16px #FFFFFF, 8px 8px 16px #C4C4C4;
+	box-shadow: -4px -4px 4px #FFFFFF, 4px 4px 4px #C4C4C4;
 	border-radius: 500px;
 	background-color: #DFE6E9;
 	overflow: hidden;
@@ -442,7 +434,7 @@
 	position: relative;
 	border-radius: 28px;
 	background: #DFE6E9;
-	box-shadow: inset -4px -4px 8px #FFFFFF, inset 4px 4px 8px rgba(196, 196, 196, 0.8);
+	box-shadow: inset -4px -4px 4px #FFFFFF, inset 4px 4px 4px #C4C4C4;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -500,7 +492,7 @@
 	height: 230px;
 	width: 300px;
 	position: relative;
-	box-shadow: -8px -8px 16px #FFFFFF, 8px 8px 16px #C4C4C4;
+	box-shadow: -4px -4px 4px #FFFFFF, 4px 4px 4px #C4C4C4;
 	border-radius: 16px 50px 50px 16px;
 	background-color: #dfe6e9;
 	overflow: hidden;
@@ -531,7 +523,7 @@
 	left: calc(50% - 30px);
 	top: 0;
 	background: #dfe6e9;
-	box-shadow: inset -4px -4px 8px #FFFFFF, inset 4px 4px 8px rgba(196, 196, 196, 0.8);
+	box-shadow: inset -4px -4px 4px #FFFFFF, inset 4px 4px 4px #C4C4C4;
 	border-radius: 100px;
 	display: flex;
 	align-items: center;
@@ -547,7 +539,7 @@
 	background: #dfe6e9;
 	border: 1px dashed #2a7308;
 	border-radius: 50%;
-	box-shadow: 8px 8px 16px #C6C6C9, -8px -8px 16px #FFFFFF;
+	box-shadow: -4px -4px 4px #FFFFFF, 4px 4px 4px #C4C4C4;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -614,7 +606,7 @@
 	position: absolute;
 	bottom: -0.01px;
 	left: calc(50% - 720px);
-	box-shadow: -10px -10px 20px #fff inset, 10px 10px 10px #c4c4c4 inset;
+	box-shadow: inset -4px -4px 4px #FFFFFF, inset 4px 4px 4px #C4C4C4;
 	background-color: #dfe6e9;
 	width: 1440px;
 	height: 459px;
@@ -870,7 +862,7 @@
 	position: absolute;
 	bottom: 0px;
 	left: calc(50% - 720px);
-	box-shadow: -10px -10px 20px #fff inset, 8px 8px 16px #c4c4c4 inset;
+	box-shadow: inset -4px -4px 4px #FFFFFF, inset 4px 4px 4px #C4C4C4;
 	background-color: #dfe6e9;
 	width: 1440px;
 	height: 459px;
@@ -881,7 +873,7 @@
 	position: absolute;
 	bottom: 0px;
 	left: calc(50% - 720px);
-	box-shadow: -8px -8px 16px #fff inset, 10px 10px 10px #c4c4c4 inset;
+	box-shadow: inset -4px -4px 4px #FFFFFF, inset 4px 4px 4px #C4C4C4;
 	background-color: #dfe6e9;
 	width: 1440px;
 	height: 459px;
@@ -1032,7 +1024,7 @@
 	position: relative;
 	border-radius: 28px;
 	background: #DFE6E9;
-	box-shadow: inset -4px -4px 8px #FFFFFF, inset 4px 4px 8px rgba(196, 196, 196, 0.8);
+	box-shadow: inset -4px -4px 4px #FFFFFF, inset 4px 4px 4px #C4C4C4;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -1088,7 +1080,7 @@
 	height: 380px;
 	width: 410px;
 	position: relative;
-	box-shadow: -8px -8px 16px #FFFFFF, 8px 8px 16px #C4C4C4;
+	box-shadow: -4px -4px 4px #FFFFFF, 4px 4px 4px #C4C4C4;
 	border-radius: 24px;
 	background-color: #dfe6e9;
 	overflow: hidden;
@@ -1169,7 +1161,7 @@
 	position: absolute;
 	top: 0px;
 	left: 0px;
-	box-shadow: -8px -8px 16px #fff inset, 8px 8px 16px #c4c4c4 inset;
+	box-shadow: inset -4px -4px 4px #FFFFFF, inset 4px 4px 4px #C4C4C4;
 	border-radius: 24px;
 	background-color: #dfe6e9;
 	width: 350px;
@@ -1289,7 +1281,7 @@
 	position: absolute;
 	top: 0px;
 	left: 0px;
-	box-shadow: -8px -8px 16px #FFFFFF, 8px 8px 16px #C4C4C4;
+	box-shadow: -4px -4px 4px #FFFFFF, 4px 4px 4px #C4C4C4;
 	border-radius: 24px;
 	background-color: #dfe6e9;
 	width: 410px;
@@ -1413,7 +1405,7 @@
 	position: absolute;
 	top: 3076px;
 	left: calc(50% - 640px);
-	box-shadow: -8px -8px 16px #FFFFFF, 8px 8px 16px #C4C4C4;
+	box-shadow: -4px -4px 4px #FFFFFF, 4px 4px 4px #C4C4C4;
 	border-radius: 32px;
 	background-color: #dfe6e9;
 	height: 1044px;
@@ -1434,7 +1426,7 @@
 	width: 1280px;
 	height: 490px;
 	position: relative;
-	box-shadow: -8px -8px 16px #fff inset, 8px 8px 16px #c4c4c4 inset;
+	box-shadow: inset -4px -4px 4px #FFFFFF, inset 4px 4px 4px #C4C4C4;
 	border-radius: 32px;
 	background-color: #dfe6e9;
 	overflow: hidden;
@@ -1467,7 +1459,7 @@
 	position: relative;
 	border-radius: 28px;
 	background: #DFE6E9;
-	box-shadow: inset -4px -4px 8px #FFFFFF, inset 4px 4px 8px rgba(196, 196, 196, 0.8);
+	box-shadow: inset -4px -4px 4px #FFFFFF, inset 4px 4px 4px #C4C4C4;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -1543,23 +1535,18 @@
 	background-color: #dfe6e9;
 	overflow: hidden;
 	flex-shrink: 0;
-	box-shadow: -8px -8px 16px #FFFFFF, 8px 8px 16px #C4C4C4;
+	box-shadow: -4px -4px 4px #FFFFFF, 4px 4px 4px #C4C4C4;
 	transition: box-shadow .35s ease, background-color .35s ease;
 }
 
 .frameWrapper17:hover {
 	transform: none;
-	box-shadow:
-		inset -8px -8px 16px rgba(255,255,255,.95),
-		inset 8px 8px 16px rgba(196,196,196,.95);
+	box-shadow: inset -4px -4px 4px #FFFFFF, inset 4px 4px 4px #C4C4C4;
 }
 
 .frameWrapper17:focus-visible {
 	outline: none;
-	box-shadow:
-		inset -8px -8px 16px rgba(255,255,255,.95),
-		inset 8px 8px 16px rgba(196,196,196,.95),
-		0 0 0 2px #2D4CC8;
+	box-shadow: inset -4px -4px 4px #FFFFFF, inset 4px 4px 4px #C4C4C4, 0 0 0 2px #2D4CC8;
 }
 
 .wrapperLine2Parent {
@@ -1704,7 +1691,7 @@
 	height: 118px;
 	width: 610px;
 	position: relative;
-	box-shadow: -8px -8px 16px #fff inset, 8px 8px 16px rgba(196, 196, 196, 0.8) inset;
+	box-shadow: inset -4px -4px 4px #FFFFFF, inset 4px 4px 4px #C4C4C4;
 	border-radius: 16px;
 	background-color: #dfe6e9;
 	overflow: hidden;
@@ -1734,7 +1721,7 @@
 	height: 82px;
 	width: 84px;
 	position: relative;
-	box-shadow: 10px 10px 20px #C4C4C4, -10px -10px 20px #FFFFFF;
+	box-shadow: -4px -4px 4px #FFFFFF, 4px 4px 4px #C4C4C4;
 	border-radius: 16px;
 	background-color: #dfe6e9;
 	display: flex;
@@ -1803,7 +1790,7 @@
 	position: absolute;
 	top: 5202px;
 	left: calc(50% - 645px);
-	box-shadow: -8px -8px 16px #fff inset, 8px 8px 16px rgba(196, 196, 196, 0.8) inset;
+	box-shadow: inset -4px -4px 4px #FFFFFF, inset 4px 4px 4px #C4C4C4;
 	border-radius: 32px;
 	background-color: #dfe6e9;
 	width: 1280px;
@@ -1824,7 +1811,7 @@
 	position: absolute;
 	top: 32px;
 	left: 32px;
-	box-shadow: 10px 10px 20px #c4c4c4, -10px -10px 20px rgba(255, 255, 255, 0.6);
+	box-shadow: -4px -4px 4px #FFFFFF, 4px 4px 4px #C4C4C4;
 	border-radius: 50px 0px 50px 0px;
 	background-color: #dfe6e9;
 	width: 1216px;
@@ -1976,7 +1963,7 @@
 	left: calc(50% - 31.26px + 0.21px);
 	top: 0;
 	background: #DFE6E9;
-	box-shadow: inset -4px -4px 8px #FFFFFF, inset 4px 4px 8px rgba(196, 196, 196, 0.8);
+	box-shadow: inset -4px -4px 4px #FFFFFF, inset 4px 4px 4px #C4C4C4;
 	border-radius: 100px;
 	transform: rotate(0.05deg);
 }
@@ -1989,7 +1976,7 @@
 	left: calc(50% - 22.5px - 0.24px);
 	top: calc(50% - 22.5px + 0.24px);
 	border-radius: 50%;
-	box-shadow: none;
+	box-shadow: -4px -4px 4px #FFFFFF, 4px 4px 4px #C4C4C4;
 	z-index: 1;
 }
 
@@ -2066,7 +2053,7 @@
 	justify-content: center;
 	border-radius: 28px;
 	background: #DFE6E9;
-	box-shadow: inset -4px -4px 8px #FFFFFF, inset 4px 4px 8px rgba(196, 196, 196, .8);
+	box-shadow: inset -4px -4px 4px #FFFFFF, inset 4px 4px 4px #C4C4C4;
 	font-family: "Segoe UI";
 	font-size: 24px;
 	font-weight: 600;
@@ -2111,7 +2098,7 @@
 	border: 0;
 	border-radius: 28px;
 	background-color: #DFE6E9;
-	box-shadow: inset -4px -4px 8px #FFFFFF, inset 4px 4px 8px rgba(196, 196, 196, 0.8);
+	box-shadow: inset -4px -4px 4px #FFFFFF, inset 4px 4px 4px #C4C4C4;
 	color: #2D4CC8;
 	font-family: "Segoe UI";
 	font-size: 24px;
@@ -2572,9 +2559,7 @@
 
 .frameParent10 .frameWrapper4:hover {
     transform: translateY(-4px) rotate(-0.35deg) scale(1.01);
-    box-shadow:
-        -10px -10px 20px #ffffff,
-        10px 10px 20px #c4c4c4;
+    box-shadow: -4px -4px 4px #FFFFFF, 4px 4px 4px #C4C4C4;
 }
 
 .frameParent10 .frameWrapper4:nth-child(even):hover {
@@ -2790,9 +2775,7 @@
 
 .frameParent46 .rapidSkillChanges:hover .frameChild24,
 .frameParent46 .lowEngagementParent:hover .frameChild24 {
-    box-shadow:
-        -10px -10px 20px #ffffff inset,
-        10px 10px 20px #c4c4c4 inset;
+    box-shadow: inset -4px -4px 4px #FFFFFF, inset 4px 4px 4px #C4C4C4;
 }
 
 .frameParent46 .rapidSkillChanges:hover .passiveLearning,
@@ -2814,18 +2797,11 @@
 @keyframes challengeGlowFlow {
     0%,
     100% {
-        box-shadow:
-            inset -4px -4px 8px #ffffff,
-            inset 4px 4px 8px rgba(196, 196, 196, 0.8),
-            0 0 0 0 var(--challenge-glow);
+        box-shadow: inset -4px -4px 4px #FFFFFF, inset 4px 4px 4px #C4C4C4;
     }
 
     50% {
-        box-shadow:
-            inset -4px -4px 8px #ffffff,
-            inset 4px 4px 8px rgba(196, 196, 196, 0.8),
-            0 0 0 9px rgba(255, 255, 255, 0),
-            0 0 18px 2px var(--challenge-glow);
+        box-shadow: inset -4px -4px 4px #FFFFFF, inset 4px 4px 4px #C4C4C4, 0 0 0 9px rgba(255, 255, 255, 0);
     }
 }
 
@@ -2907,7 +2883,7 @@
 .frameParent74 .image20Parent:hover,
 .frameParent75 .image20Parent:hover{
   transform: translateY(-10px);
-  box-shadow: -12px -12px 24px #ffffff, 12px 12px 24px #c4c4c4;
+  box-shadow: -4px -4px 4px #FFFFFF, 4px 4px 4px #C4C4C4;
   z-index: 5;
 }
 
@@ -3109,7 +3085,7 @@
 		padding: 30px 18px 20px !important;
 		border-radius: 48px 0 48px 0 !important;
 		background: #dfe6e9 !important;
-		box-shadow: -8px -8px 16px #FFFFFF, 8px 8px 16px #C4C4C4 !important;
+		box-shadow: -4px -4px 4px #FFFFFF, 4px 4px 4px #C4C4C4;
 	}
 
 	.frameParent4,

@@ -2,12 +2,14 @@
 
 import type { NextPage } from "next";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 import { useState } from "react";
 import styles from "./government.module.css";
 import Header from "../../components/Header/header";
 import Footer from "../../components/Footer/footer";
 
 const GovernmentStateInstitutions: NextPage = () => {
+  const router = useRouter();
   const [openCards, setOpenCards] = useState<boolean[]>([false, false, false, false, false]);
 
   const toggleCard = (index: number) => {
@@ -56,7 +58,7 @@ const GovernmentStateInstitutions: NextPage = () => {
           </div>
           <div className={styles.arrowRightDoubleGroup}>
             <Image className={styles.arrowDown01Icon} src="/icons/arrowright.svg" width={16} height={16} sizes="100vw" alt="" aria-hidden="true" />
-            <p className={styles.governmentState} data-semantic-origin="b">{`Government & State Institutions`}</p>
+            <p className={styles.governmentState} data-semantic-origin="b">{`Government & Institutions`}</p>
           </div>
         </div>
         <div className={styles.colleaguesMaleFemaleSmiling} />
@@ -80,7 +82,22 @@ const GovernmentStateInstitutions: NextPage = () => {
                 </p>
               </div>
             </div>
-            <div className={styles.frameWrapper2}>
+            <div
+              className={styles.frameWrapper2}
+              role="button"
+              tabIndex={0}
+              onClick={(event) => {
+                event.currentTarget.classList.add(styles.exploreLearningPressed);
+                window.setTimeout(() => router.push("/HomePage"), 120);
+              }}
+              onKeyDown={(event) => {
+                if (event.key === "Enter" || event.key === " ") {
+                  event.preventDefault();
+                  event.currentTarget.classList.add(styles.exploreLearningPressed);
+                  window.setTimeout(() => router.push("/HomePage"), 120);
+                }
+              }}
+            >
               <p className={styles.frameIcon} data-semantic-origin="div">
                 Explore Public Learning
               </p>
@@ -101,7 +118,7 @@ const GovernmentStateInstitutions: NextPage = () => {
                   <br />
                 </h2>
                 <p className={styles.trainAcrossDepartments} data-semantic-origin="div">
-                  Train across departments.
+                  Train across departments
                 </p>
               </div>
             </div>
@@ -112,7 +129,7 @@ const GovernmentStateInstitutions: NextPage = () => {
                   <br />
                 </h2>
                 <p className={styles.trainAcrossDepartments} data-semantic-origin="div">
-                  One learning platform.
+                  One learning platform
                 </p>
               </div>
             </div>
@@ -125,7 +142,7 @@ const GovernmentStateInstitutions: NextPage = () => {
                   <br />
                 </h2>
                 <p className={styles.trainAcrossDepartments} data-semantic-origin="div">
-                  Track progress.
+                  Track progress
                   <br />
                   <br />
                 </p>
@@ -138,7 +155,7 @@ const GovernmentStateInstitutions: NextPage = () => {
                   <br />
                 </h2>
                 <p className={styles.trainAcrossDepartments} data-semantic-origin="div">
-                  Ensure compliance.
+                  Ensure compliance
                   <br />
                   <br />
                 </p>
@@ -406,7 +423,7 @@ const GovernmentStateInstitutions: NextPage = () => {
                   </div>
                 </div>
                 <p className={styles.scaleTrainingStatewide} data-semantic-origin="div">
-                  Scale training statewide
+                  Scale Training Statewide
                 </p>
               </div>
               <div className={styles.frameParent37}>
@@ -416,7 +433,7 @@ const GovernmentStateInstitutions: NextPage = () => {
                   </div>
                 </div>
                 <p className={styles.ensurePolicyCompliance} data-semantic-origin="div">
-                  Ensure policy compliance
+                  Ensure Policy Compliance
                 </p>
               </div>
               <div className={styles.frameParent37}>
@@ -426,7 +443,7 @@ const GovernmentStateInstitutions: NextPage = () => {
                   </div>
                 </div>
                 <p className={styles.developWorkforceSkills} data-semantic-origin="div">
-                  Develop workforce skills
+                  Develop Workforce Skills
                 </p>
               </div>
               <div className={styles.frameParent37}>
@@ -436,7 +453,7 @@ const GovernmentStateInstitutions: NextPage = () => {
                   </div>
                 </div>
                 <p className={styles.improvePublicServices} data-semantic-origin="div">
-                  Improve public services
+                  Improve Public Services
                 </p>
               </div>
               <div className={styles.frameParent37}>
@@ -446,7 +463,7 @@ const GovernmentStateInstitutions: NextPage = () => {
                   </div>
                 </div>
                 <p className={styles.scaleTrainingStatewide} data-semantic-origin="div">
-                  Track learning progress
+                  Track Learning Progress
                   <br />
                   <br />
                 </p>
@@ -458,7 +475,7 @@ const GovernmentStateInstitutions: NextPage = () => {
                   </div>
                 </div>
                 <p className={styles.driveDigitalTransformation} data-semantic-origin="div">
-                  Drive digital transformation
+                  Drive Digital Transformation
                 </p>
               </div>
             </div>

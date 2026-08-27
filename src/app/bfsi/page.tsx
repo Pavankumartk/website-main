@@ -2,10 +2,12 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import styles from "./bfsi.module.css";
 import Image from "next/image";
 import Header from "../../components/Header/header";
 import Footer from "../../components/Footer/footer";
+import { BookDemoTrigger } from "../../components/Bookademo/Bookademo";
 
 function BfsiHeroBackground() {
   return (
@@ -41,6 +43,7 @@ function BfsiHeroBackground() {
 }
 
 export default function BfsiPage() {
+  const router = useRouter();
   const [openCards, setOpenCards] = useState<Set<number>>(new Set());
 
   const toggleCard = (index: number) => {
@@ -102,7 +105,7 @@ export default function BfsiPage() {
     },
     {
       title: "Product Knowledge",
-      desc: "Banking, Finance & Insurance Training.",
+      desc: "Banking, finance & insurance training.",
       color: "#C05512",
       icon: (
         <svg width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true">
@@ -113,7 +116,7 @@ export default function BfsiPage() {
     },
     {
       title: "Training Effectiveness",
-      desc: "Learning Analytics & Progress Tracking.",
+      desc: "Learning analytics & progress tracking.",
       color: "#2A7308",
       icon: (
         <svg width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true">
@@ -168,8 +171,14 @@ export default function BfsiPage() {
           <h1 className={styles["bfsi-hero-heading"]}>Secure! Scalable Learning for the BFSI Industry</h1>
           <p className={styles["bfsi-hero-subtext"]}>NeuroLXP enables secure, scalable, and compliant learning for banking, financial services, and insurance.</p>
           <div className={styles["bfsi-hero-buttons"]}>
-            <button className={styles["bfsi-btn-secondary"]}>Request Demo</button>
-            <button className={styles["bfsi-btn-primary"]}>
+            <BookDemoTrigger className={styles["bfsi-btn-secondary"]}>
+              Book a Demo
+            </BookDemoTrigger>
+            <button
+              type="button"
+              className={styles["bfsi-btn-primary"]}
+              onClick={() => router.push("/HomePage")}
+            >
               <span>Start Learning</span>
             </button>
           </div>

@@ -2,13 +2,16 @@
 
 import type { NextPage } from 'next';
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 import { useRef, useState } from "react";
 import Header from "../../components/Header/header";
 import Footer from "../../components/Footer/footer";
 import styles from "./University.module.css";
+import { BookDemoTrigger } from "../../components/Bookademo/Bookademo";
 
 
 const UniversityAndCollege: NextPage = () => {
+	const router = useRouter();
 	const supportVideoRef = useRef<HTMLVideoElement>(null);
 	const [isSupportVideoPlaying, setIsSupportVideoPlaying] = useState(true);
 
@@ -30,7 +33,7 @@ const UniversityAndCollege: NextPage = () => {
 
 	return (
 		<>
-			<title>Universities and Colleges | NeuroLXP</title>
+			<title>university and Colleges | NeuroLXP</title>
 			<div style={{ width: "100%", position: "relative", zIndex: 10000, overflow: "visible" }}>
 				<Header />
 			</div>
@@ -49,7 +52,7 @@ const UniversityAndCollege: NextPage = () => {
 					</div>
 					<div className={styles.arrowRightDoubleGroup}>
 						<Image className={styles.arrowDown01Icon} src="/icons/arrow-right-double.svg" width={16} height={16} sizes="16px" alt="" />
-						<strong className={styles.industriesWeServe}>{`Universities & College`}</strong>
+						<strong className={styles.industriesWeServe}>{`University & College`}</strong>
 					</div>
 				</nav>
 				<div className={styles.universityAndCollegeInner}>
@@ -61,15 +64,22 @@ const UniversityAndCollege: NextPage = () => {
 							<div className={styles.frameWrapper}>
 								<div className={styles.frameParent5}>
 									<div className={styles.frameParent6}>
-										<div className={styles.frameInner}>Universities and Colleges</div>
+										<div className={styles.frameInner}>University and Colleges</div>
 										<h1 className={styles.empoweringHigherEducation} style={{ margin: 0, fontSize: "inherit", fontWeight: 700 }}>Empowering Higher Education with Intelligent Learning<br /></h1>
 									</div>
 									<div className={styles.neurolxpEnablesUniversities}>NeuroLXP enables universities to deliver flexible, engaging learning that enhances academic excellence and career readiness.</div>
 								</div>
 							</div>
 							<div className={styles.frameParent7}>
-								<button type="button" className={styles.frameIcon}>Book a Demo</button>
-								<button type="button" className={styles.frameWrapper2}>
+								<BookDemoTrigger className={styles.frameIcon}>
+									Book a Demo
+								</BookDemoTrigger>
+
+								<button
+									type="button"
+									className={styles.frameWrapper2}
+									onClick={() => router.push("/HomePage")}
+								>
 									<span className={styles.startLearningWrapper}>
 										<span className={styles.startLearning}>Start Learning</span>
 									</span>
@@ -218,7 +228,7 @@ const UniversityAndCollege: NextPage = () => {
 									</div>
 									<div className={styles.frameParent50}>
 										<div className={styles.frameChild24} />
-										<div className={styles.interactiveLearningWith}>Interactive learning with quizzes, discussions, and multimedia improves classroom engagement</div>
+										<div className={styles.interactiveLearningWith}>Interactive learning with quizzes, discussions, and multimedia improves classroom engagement.</div>
 									</div>
 								</div>
 							</div>
@@ -253,7 +263,7 @@ const UniversityAndCollege: NextPage = () => {
 									</div>
 									<div className={styles.frameParent53}>
 										<div className={styles.frameChild24} />
-										<div className={styles.centralizeCourseMaterials}>Centralize course materials, assignments, and assessments for easy access and management</div>
+										<div className={styles.centralizeCourseMaterials}>Centralize course materials, assignments, and assessments for easy access and management.</div>
 									</div>
 								</div>
 							</div>
@@ -286,7 +296,7 @@ const UniversityAndCollege: NextPage = () => {
 											</div>
 											<div className={styles.frameParent50}>
 												<div className={styles.frameChild24} />
-												<div className={styles.personalizedLearningPathways}>Personalized learning pathways help students learn at their own pace</div>
+												<div className={styles.personalizedLearningPathways}>Personalized learning pathways help students learn at their own pace.</div>
 											</div>
 										</div>
 									</div>
@@ -323,7 +333,7 @@ const UniversityAndCollege: NextPage = () => {
 									</div>
 									<div className={styles.frameParent50}>
 										<div className={styles.frameChild24} />
-										<div className={styles.trackAttendanceCourse}>Track attendance, course progress, assessments, and academic performance with real-time insights</div>
+										<div className={styles.trackAttendanceCourse}>Track attendance, course progress, assessments, and academic performance with real-time insights.</div>
 									</div>
 								</div>
 							</div>
@@ -356,7 +366,7 @@ const UniversityAndCollege: NextPage = () => {
 									</div>
 									<div className={styles.frameParent50}>
 										<div className={styles.frameChild24} />
-										<div className={styles.supportSkillDevelopment}>Support skill development, certifications, and career-focused learning to prepare students for employment</div>
+										<div className={styles.supportSkillDevelopment}>Support skill development, certifications, and career-focused learning to prepare students for employment.</div>
 									</div>
 								</div>
 							</div>
@@ -484,7 +494,7 @@ const UniversityAndCollege: NextPage = () => {
 						<div className={styles.keyBenefitsBadge}>Key Benifits</div>
 						<div className={styles.benefitsForEducationalInstiParent}>
 							<h2 className={styles.keyChallengesIn} style={{ margin: 0, fontSize: "inherit", fontWeight: 700 }}>Benefits for Educational Institutions<br /><br /></h2>
-							<div className={styles.institutionsUsingNeurolxp}>Institutions using NeuroLXP can:<br /><br /></div>
+							<div className={styles.institutionsUsingNeurolxp}>Institutions using NeuroLXP can<br /><br /></div>
 						</div>
 					</div>
 					<div className={styles.frameParent73}>
@@ -640,7 +650,7 @@ const UniversityAndCollege: NextPage = () => {
 					<div className={styles.image209} />
 					<div className={styles.image21Parent}>
 						<div className={styles.image21} />
-						<Image className={styles.happyCollegeStudentsWithBoIcon} src="/images/university-students.webp" width={603} height={546} sizes="(max-width: 767px) 100vw, 603px" alt="Future Ready Universities"
+						<Image className={styles.happyCollegeStudentsWithBoIcon} src="/images/happy-college-students-with-books-hands-walking-together-campus.webp" width={603} height={546} sizes="(max-width: 767px) 100vw, 603px" alt="Future Ready Universities"
 														loading="lazy"
 														fetchPriority="low"
 													/>
