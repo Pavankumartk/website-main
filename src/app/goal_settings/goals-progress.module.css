@@ -13682,3 +13682,777 @@ body {
     transform: none !important;
   }
 }
+
+
+/* =========================================================
+   FINAL MOBILE FIX — ONE CONNECTED LEARNING JOURNEY
+   Matches supplied PNG; prevents text/card overlap.
+   No desktop design changes.
+   ========================================================= */
+@media screen and (max-width: 767px) {
+  .goalSettingsAndProgressTra > .frameParent75 {
+    position: relative !important;
+    inset: auto !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+    margin: 34px 0 0 !important;
+    padding: 28px 16px 36px !important;
+    box-sizing: border-box !important;
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 44px !important;
+    overflow: visible !important;
+  }
+
+  .goalSettingsAndProgressTra .frameParent75 .frameParent76 {
+    position: relative !important;
+    inset: auto !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 30px !important;
+    overflow: visible !important;
+  }
+
+  .goalSettingsAndProgressTra .frameParent75 .wrapper,
+  .goalSettingsAndProgressTra .frameParent75 .frameWrapper23,
+  .goalSettingsAndProgressTra .frameParent75 .frameParent54 {
+    position: relative !important;
+    inset: auto !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    transform: none !important;
+    overflow: visible !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+
+  .goalSettingsAndProgressTra .frameParent75 .frameParent54 {
+    gap: 22px !important;
+  }
+
+  .goalSettingsAndProgressTra .frameParent75 .frameChild39 {
+    width: fit-content !important;
+    max-width: calc(100% - 16px) !important;
+    min-width: 0 !important;
+    height: auto !important;
+    min-height: 50px !important;
+    margin: 0 auto !important;
+    padding: 9px 24px !important;
+    box-sizing: border-box !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    border-radius: 28px !important;
+    font-size: 18px !important;
+    line-height: 24px !important;
+    text-align: center !important;
+    white-space: nowrap !important;
+  }
+
+  .goalSettingsAndProgressTra .frameParent75 .setClearGoals {
+    position: relative !important;
+    inset: auto !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+    margin: 0 !important;
+    padding: 0 4px !important;
+    box-sizing: border-box !important;
+    font-size: 30px !important;
+    font-weight: 700 !important;
+    line-height: 38px !important;
+    letter-spacing: 0.01em !important;
+    text-align: center !important;
+    white-space: normal !important;
+    overflow: visible !important;
+    word-break: normal !important;
+    overflow-wrap: normal !important;
+    transform: none !important;
+  }
+
+  .goalSettingsAndProgressTra .frameParent75 .frameParent78 {
+    position: relative !important;
+    inset: auto !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+    margin: 0 !important;
+    padding: 0 4px !important;
+    box-sizing: border-box !important;
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 18px !important;
+    overflow: visible !important;
+  }
+
+  .goalSettingsAndProgressTra .frameParent75 .frameParent79,
+  .goalSettingsAndProgressTra .frameParent75 .frameParent80,
+  .goalSettingsAndProgressTra .frameParent75 .frameParent81 {
+    position: relative !important;
+    inset: auto !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    gap: 14px !important;
+    align-items: center !important;
+  }
+
+  .goalSettingsAndProgressTra .frameParent75 .checkmarkSquare04Parent {
+    position: relative !important;
+    inset: auto !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+    min-height: 48px !important;
+    height: auto !important;
+    margin: 0 !important;
+    padding: 4px 0 !important;
+    box-sizing: border-box !important;
+    display: grid !important;
+    grid-template-columns: 28px minmax(0, 1fr) !important;
+    column-gap: 9px !important;
+    align-items: center !important;
+    overflow: visible !important;
+  }
+
+  .goalSettingsAndProgressTra .frameParent75 .checkmarkSquare04Icon {
+    position: relative !important;
+    width: 28px !important;
+    height: 28px !important;
+    min-width: 28px !important;
+    margin: 0 !important;
+    object-fit: contain !important;
+  }
+
+  .goalSettingsAndProgressTra .frameParent75 .setGoals,
+  .goalSettingsAndProgressTra .frameParent75 .learn,
+  .goalSettingsAndProgressTra .frameParent75 .trackProgress,
+  .goalSettingsAndProgressTra .frameParent75 .analyzePerformance,
+  .goalSettingsAndProgressTra .frameParent75 .createPlans,
+  .goalSettingsAndProgressTra .frameParent75 .adaptImprove {
+    position: relative !important;
+    inset: auto !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+    height: auto !important;
+    min-height: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    font-size: 17px !important;
+    font-weight: 600 !important;
+    line-height: 23px !important;
+    letter-spacing: 0 !important;
+    text-align: left !important;
+    white-space: normal !important;
+    overflow: visible !important;
+    overflow-wrap: normal !important;
+    word-break: normal !important;
+    cursor: pointer !important;
+  }
+
+  .goalSettingsAndProgressTra .frameParent75 .frameParent82 {
+    position: relative !important;
+    inset: auto !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 28px !important;
+    overflow: visible !important;
+  }
+
+  .goalSettingsAndProgressTra .frameParent75 .frameParent83 {
+    position: relative !important;
+    inset: auto !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 22px !important;
+    overflow: visible !important;
+  }
+
+  .goalSettingsAndProgressTra .frameParent75 .frameChild40 {
+    width: fit-content !important;
+    max-width: 100% !important;
+    height: auto !important;
+    min-height: 50px !important;
+    margin: 0 !important;
+    padding: 9px 22px !important;
+    box-sizing: border-box !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    font-size: 18px !important;
+    line-height: 24px !important;
+    white-space: nowrap !important;
+  }
+
+  .goalSettingsAndProgressTra .frameParent75 .frameParent83 .turningLearningGoalsContainer {
+    position: relative !important;
+    inset: auto !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    font-size: 30px !important;
+    line-height: 38px !important;
+    text-align: left !important;
+    white-space: normal !important;
+    overflow: visible !important;
+  }
+
+  .goalSettingsAndProgressTra .frameParent75 .frameParent84,
+  .goalSettingsAndProgressTra .frameParent75 .frameParent85 {
+    position: relative !important;
+    inset: auto !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 18px !important;
+    overflow: visible !important;
+  }
+
+  .goalSettingsAndProgressTra .frameParent75 .rectangleGroup {
+    position: relative !important;
+    inset: auto !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    height: 112px !important;
+    min-height: 112px !important;
+    margin: 0 !important;
+    padding: 14px !important;
+    box-sizing: border-box !important;
+    overflow: visible !important;
+  }
+
+  .goalSettingsAndProgressTra .frameParent75 .aiBookParent,
+  .goalSettingsAndProgressTra .frameParent75 .analyticsUpParent {
+    position: absolute !important;
+    top: 50% !important;
+    left: 28px !important;
+    right: 18px !important;
+    width: auto !important;
+    max-width: none !important;
+    height: auto !important;
+    margin: 0 !important;
+    transform: translateY(-50%) !important;
+    display: grid !important;
+    grid-template-columns: 28px minmax(0, 1fr) !important;
+    gap: 14px !important;
+    align-items: center !important;
+  }
+
+  .goalSettingsAndProgressTra .frameParent75 .aiMl,
+  .goalSettingsAndProgressTra .frameParent75 .learningAnalytics,
+  .goalSettingsAndProgressTra .frameParent75 .realTimeInsights {
+    position: relative !important;
+    inset: auto !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    font-size: 18px !important;
+    line-height: 26px !important;
+    white-space: normal !important;
+    overflow: visible !important;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .goalSettingsAndProgressTra > .frameParent75 {
+    padding-inline: 12px !important;
+    gap: 38px !important;
+  }
+
+  .goalSettingsAndProgressTra .frameParent75 .frameParent79,
+  .goalSettingsAndProgressTra .frameParent75 .frameParent80,
+  .goalSettingsAndProgressTra .frameParent75 .frameParent81 {
+    grid-template-columns: 1fr !important;
+    gap: 12px !important;
+  }
+
+  .goalSettingsAndProgressTra .frameParent75 .setClearGoals,
+  .goalSettingsAndProgressTra .frameParent75 .frameParent83 .turningLearningGoalsContainer {
+    font-size: 28px !important;
+    line-height: 35px !important;
+  }
+
+  .goalSettingsAndProgressTra .frameParent75 .rectangleGroup {
+    height: 104px !important;
+    min-height: 104px !important;
+  }
+}
+
+/* CTA interaction without changing the visual design */
+.goalSettingsAndProgressTra .frameWrapper20 {
+  border: 0;
+  font-family: "Segoe UI";
+  cursor: pointer;
+}
+
+.goalSettingsAndProgressTra .frameWrapper20:active {
+  box-shadow:
+    inset -4px -4px 8px #ffffff,
+    inset 4px 4px 8px rgba(196, 196, 196, 0.8) !important;
+}
+
+/* =========================================================
+   FINAL TRUST & INTELLIGENCE CARD CONTAINMENT FIX
+   Keeps all 4 data points inside their cards.
+   Mobile/tablet only — desktop design remains unchanged.
+   ========================================================= */
+@media screen and (max-width: 767px) {
+  .goalSettingsAndProgressTra .frameParent75 .frameParent84 {
+    position: relative !important;
+    inset: auto !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+    height: auto !important;
+    margin: 0 !important;
+    padding: 0 !important;
+
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 18px !important;
+
+    overflow: hidden !important;
+    box-sizing: border-box !important;
+  }
+
+  .goalSettingsAndProgressTra .frameParent75 .frameParent84 .frameParent85 {
+    position: relative !important;
+    inset: auto !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+    height: auto !important;
+    margin: 0 !important;
+    padding: 0 !important;
+
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 18px !important;
+
+    overflow: hidden !important;
+    box-sizing: border-box !important;
+  }
+
+  .goalSettingsAndProgressTra .frameParent75 .frameParent84 .rectangleGroup {
+    position: relative !important;
+    inset: auto !important;
+
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+
+    height: 104px !important;
+    min-height: 104px !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    overflow: hidden !important;
+    box-sizing: border-box !important;
+    flex: 0 0 auto !important;
+  }
+
+  /* Reset every old absolute/fixed content rule inside these cards */
+  .goalSettingsAndProgressTra .frameParent75 .frameParent84 .aiBookParent,
+  .goalSettingsAndProgressTra .frameParent75 .frameParent84 .analyticsUpParent {
+    position: absolute !important;
+    inset: 0 !important;
+
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+    height: 100% !important;
+
+    margin: 0 !important;
+    padding: 0 22px !important;
+
+    transform: none !important;
+
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+    gap: 14px !important;
+
+    box-sizing: border-box !important;
+    overflow: hidden !important;
+  }
+
+  .goalSettingsAndProgressTra .frameParent75 .frameParent84 .aiBookIcon {
+    position: static !important;
+    inset: auto !important;
+
+    width: 28px !important;
+    height: 28px !important;
+    min-width: 28px !important;
+    max-width: 28px !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    flex: 0 0 28px !important;
+    transform: none !important;
+    object-fit: contain !important;
+  }
+
+  .goalSettingsAndProgressTra .frameParent75 .frameParent84 .aiMl,
+  .goalSettingsAndProgressTra .frameParent75 .frameParent84 .learningAnalytics,
+  .goalSettingsAndProgressTra .frameParent75 .frameParent84 .realTimeInsights {
+    position: static !important;
+    inset: auto !important;
+
+    width: auto !important;
+    max-width: calc(100% - 42px) !important;
+    min-width: 0 !important;
+
+    height: auto !important;
+    min-height: 0 !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    flex: 1 1 auto !important;
+    transform: none !important;
+
+    font-size: 16px !important;
+    font-weight: 700 !important;
+    line-height: 22px !important;
+    letter-spacing: 0 !important;
+
+    text-align: left !important;
+    white-space: nowrap !important;
+    overflow: hidden !important;
+    text-overflow: clip !important;
+  }
+
+  /* Neutralize earlier :has() sizing rules */
+  .goalSettingsAndProgressTra .frameParent75 .frameParent84 .rectangleGroup > :has(.aiMl),
+  .goalSettingsAndProgressTra .frameParent75 .frameParent84 .rectangleGroup > :has(.learningAnalytics),
+  .goalSettingsAndProgressTra .frameParent75 .frameParent84 .rectangleGroup > :has(.realTimeInsights) {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .goalSettingsAndProgressTra .frameParent75 .frameParent84 .aiBookParent,
+  .goalSettingsAndProgressTra .frameParent75 .frameParent84 .analyticsUpParent {
+    padding-inline: 16px !important;
+    gap: 11px !important;
+  }
+
+  .goalSettingsAndProgressTra .frameParent75 .frameParent84 .aiBookIcon {
+    width: 25px !important;
+    height: 25px !important;
+    min-width: 25px !important;
+    max-width: 25px !important;
+    flex-basis: 25px !important;
+  }
+
+  .goalSettingsAndProgressTra .frameParent75 .frameParent84 .aiMl,
+  .goalSettingsAndProgressTra .frameParent75 .frameParent84 .learningAnalytics,
+  .goalSettingsAndProgressTra .frameParent75 .frameParent84 .realTimeInsights {
+    max-width: calc(100% - 36px) !important;
+    font-size: 15px !important;
+    line-height: 21px !important;
+  }
+}
+
+/* =========================================================
+   FINAL FIX — TRUST & INTELLIGENCE SECTION
+   Desktop: heading left + 2x2 cards exactly like reference PNG
+   Mobile: heading + single-column cards
+   Prevents every data point from escaping its card
+   ========================================================= */
+
+/* whole row must be allowed to shrink */
+.goalSettingsAndProgressTra .frameParent75 .frameParent82 {
+  width: 100% !important;
+  max-width: 100% !important;
+  min-width: 0 !important;
+  box-sizing: border-box !important;
+}
+
+/* right card area */
+.goalSettingsAndProgressTra .frameParent75 .frameParent84 {
+  min-width: 0 !important;
+  box-sizing: border-box !important;
+}
+
+/* each row of two cards */
+.goalSettingsAndProgressTra .frameParent75 .frameParent85 {
+  min-width: 0 !important;
+  box-sizing: border-box !important;
+}
+
+/* each outer card */
+.goalSettingsAndProgressTra .frameParent75 .frameParent84 .rectangleGroup {
+  min-width: 0 !important;
+  box-sizing: border-box !important;
+  overflow: hidden !important;
+}
+
+/* keep both neumorphic layers inside the card */
+.goalSettingsAndProgressTra .frameParent75 .frameParent84 .rectangleDiv {
+  top: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  box-sizing: border-box !important;
+}
+
+.goalSettingsAndProgressTra .frameParent75 .frameParent84 .frameChild41 {
+  top: 16px !important;
+  left: 16px !important;
+  width: calc(100% - 32px) !important;
+  height: calc(100% - 32px) !important;
+  box-sizing: border-box !important;
+}
+
+/* content is always contained inside inner card */
+.goalSettingsAndProgressTra .frameParent75 .frameParent84 .aiBookParent,
+.goalSettingsAndProgressTra .frameParent75 .frameParent84 .analyticsUpParent {
+  position: absolute !important;
+  top: 50% !important;
+  left: 32px !important;
+  right: 24px !important;
+
+  width: auto !important;
+  max-width: none !important;
+  min-width: 0 !important;
+  height: auto !important;
+
+  margin: 0 !important;
+  padding: 0 !important;
+
+  transform: translateY(-50%) !important;
+
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  justify-content: flex-start !important;
+  gap: 16px !important;
+
+  box-sizing: border-box !important;
+  overflow: hidden !important;
+}
+
+/* icon never pushes text outside */
+.goalSettingsAndProgressTra .frameParent75 .frameParent84 .aiBookIcon {
+  position: static !important;
+  width: 32px !important;
+  height: 32px !important;
+  min-width: 32px !important;
+  max-width: 32px !important;
+  flex: 0 0 32px !important;
+  margin: 0 !important;
+  transform: none !important;
+  object-fit: contain !important;
+}
+
+/* all 4 labels */
+.goalSettingsAndProgressTra .frameParent75 .frameParent84 .aiMl,
+.goalSettingsAndProgressTra .frameParent75 .frameParent84 .learningAnalytics,
+.goalSettingsAndProgressTra .frameParent75 .frameParent84 .realTimeInsights {
+  position: static !important;
+  inset: auto !important;
+
+  width: auto !important;
+  max-width: 100% !important;
+  min-width: 0 !important;
+  height: auto !important;
+
+  margin: 0 !important;
+  padding: 0 !important;
+
+  flex: 1 1 auto !important;
+
+  font-family: "Segoe UI" !important;
+  font-weight: 700 !important;
+  line-height: 1.25 !important;
+
+  white-space: normal !important;
+  overflow: visible !important;
+  overflow-wrap: normal !important;
+  word-break: normal !important;
+
+  transform: none !important;
+}
+
+/* ---------------- DESKTOP / TABLET ---------------- */
+@media screen and (min-width: 768px) {
+  .goalSettingsAndProgressTra .frameParent75 .frameParent82 {
+    display: grid !important;
+    grid-template-columns: minmax(0, 501px) minmax(0, 649px) !important;
+    column-gap: clamp(40px, 7vw, 100px) !important;
+    align-items: center !important;
+  }
+
+  .goalSettingsAndProgressTra .frameParent75 .frameParent83 {
+    width: 100% !important;
+    max-width: 501px !important;
+    min-width: 0 !important;
+  }
+
+  .goalSettingsAndProgressTra .frameParent75 .frameParent84 {
+    width: 100% !important;
+    max-width: 649px !important;
+    min-width: 0 !important;
+
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    row-gap: 36px !important;
+  }
+
+  .goalSettingsAndProgressTra .frameParent75 .frameParent85 {
+    width: 100% !important;
+
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    column-gap: 36px !important;
+  }
+
+  .goalSettingsAndProgressTra .frameParent75 .frameParent84 .rectangleGroup {
+    width: 100% !important;
+    height: 120px !important;
+  }
+
+  .goalSettingsAndProgressTra .frameParent75 .frameParent84 .aiMl,
+  .goalSettingsAndProgressTra .frameParent75 .frameParent84 .learningAnalytics,
+  .goalSettingsAndProgressTra .frameParent75 .frameParent84 .realTimeInsights {
+    font-size: clamp(16px, 1.4vw, 20px) !important;
+  }
+}
+
+/* ---------------- MOBILE ---------------- */
+@media screen and (max-width: 767px) {
+  .goalSettingsAndProgressTra .frameParent75 .frameParent82 {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: stretch !important;
+    gap: 28px !important;
+  }
+
+  .goalSettingsAndProgressTra .frameParent75 .frameParent83,
+  .goalSettingsAndProgressTra .frameParent75 .frameParent84 {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+  }
+
+  .goalSettingsAndProgressTra .frameParent75 .frameParent84 {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 16px !important;
+  }
+
+  .goalSettingsAndProgressTra .frameParent75 .frameParent85 {
+    width: 100% !important;
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 16px !important;
+  }
+
+  .goalSettingsAndProgressTra .frameParent75 .frameParent84 .rectangleGroup {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: 104px !important;
+    min-height: 104px !important;
+  }
+
+  .goalSettingsAndProgressTra .frameParent75 .frameParent84 .aiBookParent,
+  .goalSettingsAndProgressTra .frameParent75 .frameParent84 .analyticsUpParent {
+    left: 22px !important;
+    right: 18px !important;
+    gap: 12px !important;
+  }
+
+  .goalSettingsAndProgressTra .frameParent75 .frameParent84 .aiBookIcon {
+    width: 28px !important;
+    height: 28px !important;
+    min-width: 28px !important;
+    max-width: 28px !important;
+    flex-basis: 28px !important;
+  }
+
+  .goalSettingsAndProgressTra .frameParent75 .frameParent84 .aiMl,
+  .goalSettingsAndProgressTra .frameParent75 .frameParent84 .learningAnalytics,
+  .goalSettingsAndProgressTra .frameParent75 .frameParent84 .realTimeInsights {
+    font-size: 16px !important;
+    line-height: 22px !important;
+  }
+}
+
+/* Feature Suite — subheading weight only */
+.goalSettingsAndProgressTra .frameParent29 .setAcademicAnd,
+.goalSettingsAndProgressTra .frameParent29 .scheduleLearningAnd,
+.goalSettingsAndProgressTra .frameParent29 .reviewRefineAnd {
+	font-weight: 700 !important;
+}
+
+/* MOBILE ONLY — Plan & Schedule description containment */
+@media screen and (max-width: 767px) {
+  .goalSettingsAndProgressTra .frameParent25 .polygonParent2 .scheduleLearningAnd {
+    width: 150px !important;
+    max-width: 150px !important;
+    height: auto !important;
+    min-height: 0 !important;
+    margin: 0 auto !important;
+    padding: 0 !important;
+    display: block !important;
+    font-size: 13px !important;
+    line-height: 19px !important;
+    text-align: center !important;
+    white-space: normal !important;
+    overflow: visible !important;
+    overflow-wrap: normal !important;
+    word-break: normal !important;
+  }
+}
+

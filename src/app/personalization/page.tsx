@@ -3,6 +3,7 @@
 import Image from "next/image";
 import Header from "../../components/Header/header";
 import Footer from "../../components/Footer/footer";
+import { BookDemoTrigger } from "../../components/Bookademo/Bookademo";
 import { useEffect } from "react";
 import styles from "./personlization.module.css";
 
@@ -146,9 +147,9 @@ export default function Personalization() {
               Learning That Adapts to You
             </h1>
             <p className={styles.personalizationHeroDescription}>NeuroLXP personalizes learning based on each learner&apos;s needs, progress, skills, pace, and goals, creating a smarter, more engaging learning experience.</p>
-            <button className={styles.personalizationHeroButton} type="button">
+            <BookDemoTrigger className={styles.personalizationHeroButton}>
               Book a Demo
-            </button>
+            </BookDemoTrigger>
           </div>
 
           <ul className={styles.personalizationHeroStats} aria-label="Personalization outcomes">
@@ -569,7 +570,7 @@ export default function Personalization() {
         </section>
 
         <div className={styles.rectangleParent7}>
-          <Image className={styles.personalizationCtaBackground} src="/images/personlizationbackground.webp" fill sizes="(max-width: 1440px) 100vw, 1280px" alt="" aria-hidden="true" />
+          <Image className={styles.personalizationCtaBackground} src="/images/Frame 2095586948.webp" fill sizes="(max-width: 1440px) 100vw, 1280px" alt="" aria-hidden="true" />
           <div className={styles.rectangle} />
           <div className={styles.image206} />
           <Image className={styles.handHoldingWoodenCubeWithIcon} src="/images/women.webp" width={680} height={536} sizes="(max-width: 768px) 48vw, 680px" alt="Person using personalized learning powered by NeuroLXP" />
@@ -583,11 +584,11 @@ export default function Personalization() {
               </p>
             </div>
             <div className={styles.frameWrapper17}>
-              <div className={styles.frameWrapper18}>
+              <BookDemoTrigger className={styles.frameWrapper18}>
                 <div className={styles.bookADemoWrapper}>
                   <span className={styles.bookADemo}>Book a Demo</span>
                 </div>
-              </div>
+              </BookDemoTrigger>
             </div>
           </div>
         </div>

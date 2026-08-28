@@ -22,13 +22,13 @@
     position: absolute;
     top: 0px;
     left: calc(50% - 720px);
-    box-shadow: -8px -8px 16px #fff, 8px 8px 16px #c6c6c9;
+    box-shadow: -4px -4px 4px #fff, 4px 4px 4px #c6c6c9;
     background-color: #dfe6e9;
     width: 1440px;
     height: 80px;
     overflow: hidden;
     font-size: 16px;
-    font-family: Inter;
+    font-family: 'Segoe UI';
 }
 
 .frameChild {
@@ -105,7 +105,7 @@
     position: absolute;
     top: calc(50% - 22.5px);
     left: 1244px;
-    box-shadow: -8px -8px 16px #fff, 8px 8px 16px #c6c6c9;
+    box-shadow: -4px -4px 4px #fff, 4px 4px 4px #c6c6c9;
     border-radius: 32px;
     background-color: #dfe6e9;
     width: 132px;
@@ -176,7 +176,7 @@
     position: absolute;
     top: 0px;
     left: calc(50% - 637px);
-    box-shadow: -8px -8px 16px #fff, 8px 8px 16px #c4c4c4;
+    box-shadow: -4px -4px 4px #fff, 4px 4px 4px #c4c4c4;
     border-radius: 24px;
     background-color: #dfe6e9;
     width: 1273px;
@@ -189,7 +189,7 @@
     position: absolute;
     top: 24px;
     left: calc(50% - 613px);
-    box-shadow: -8px -8px 16px #fff inset, 8px 8px 16px #c4c4c4 inset;
+    box-shadow: -4px -4px 4px #fff inset, 4px 4px 4px #c4c4c4 inset;
     border-radius: 24px;
     background-color: #dfe6e9;
     width: 1225px;
@@ -295,7 +295,7 @@
 .frameWrapper3 {
     height: 60px;
     width: 203px;
-    box-shadow: -8px -8px 16px #fff, 8px 8px 16px #c6c6c9;
+    box-shadow: -4px -4px 4px #fff, 4px 4px 4px #c6c6c9;
     border-radius: 8px;
     background-color: #dfe6e9;
     overflow: hidden;
@@ -373,10 +373,10 @@
     justify-content:center;
     border-radius:28px;
     background:#DFE6E9;
-    box-shadow: inset -4px -4px 8px #FFFFFF,
-                inset 4px 4px 8px rgba(196,196,196,.8);
+    box-shadow: inset -4px -4px 4px #FFFFFF,
+                inset 4px 4px 4px rgba(196,196,196,.8);
     color:#2D4CC8;
-    font-family:'Segoe UI';
+    font-family: 'Segoe UI';
     font-size:24px;
     font-weight:500;
     line-height:24px;
@@ -675,7 +675,7 @@
 .frameParent22 {
     height: 150px;
     width: 380px;
-    box-shadow: -10px -10px 20px #fff, 10px 10px 20px #c4c4c4;
+    box-shadow: -4px -4px 4px #fff, 4px 4px 4px #c4c4c4;
     border-radius: 50px 12px 12px 12px;
     background-color: #dfe6e9;
     
@@ -772,7 +772,7 @@
 .frameParent24 {
     height: 150px;
     width: 380px;
-    box-shadow: -10px -10px 20px #fff, 10px 10px 20px #c4c4c4;
+    box-shadow: -4px -4px 4px #fff, 4px 4px 4px #c4c4c4;
     border-radius: 50px 12px 12px 12px;
     background-color: #dfe6e9;
     
@@ -931,11 +931,12 @@
 .beyondLearningInto {
     width: 533px;
     position: relative;
-    letter-spacing: 0.03em;
-    line-height: 60px;
+    letter-spacing: 0;
+    line-height: 1.15;
     display: flex;
     align-items: center;
     flex-shrink: 0;
+    word-spacing: 0;
 }
 
 .perfectForUniversities {
@@ -977,7 +978,7 @@
     position: absolute;
     top: calc(50% - 59px);
     left: 63px;
-    box-shadow: -8px -8px 16px #fff inset, 8px 8px 16px rgba(196, 196, 196, 0.8) inset;
+    box-shadow: -4px -4px 4px #fff inset, 4px 4px 4px rgba(196, 196, 196, 0.8) inset;
     border-radius: 16px;
     background-color: #dfe6e9;
     width: 476px;
@@ -1054,7 +1055,7 @@
     position: absolute;
     top: 0px;
     left: 0px;
-    box-shadow: -8px -8px 16px #fff, 8px 8px 16px rgba(196, 196, 196, 0.8);
+    box-shadow: -4px -4px 4px #fff, 4px 4px 4px rgba(196, 196, 196, 0.8);
     border-radius: 32px;
     background-color: #dfe6e9;
     width: 150px;
@@ -1217,7 +1218,7 @@
     position: absolute;
     top: 3004px;
     left: calc(50% - 640px);
-    box-shadow: -8px -8px 16px #fff inset, 8px 8px 16px rgba(196, 196, 196, 0.8) inset;
+    box-shadow: -4px -4px 4px #fff inset, 4px 4px 4px rgba(196, 196, 196, 0.8) inset;
     border-radius: 32px;
     background-color: #dfe6e9;
     width: 1280px;
@@ -1307,7 +1308,7 @@
     width: 1216px;
     height: 580px;
     position: relative;
-    box-shadow: 10px 10px 20px #c4c4c4, -10px -10px 20px rgba(255, 255, 255, 0.6);
+    box-shadow: 4px 4px 4px #c4c4c4, -4px -4px 4px rgba(255, 255, 255, 0.6);
     border-radius: 16px;
     background-color: #dfe6e9;
     overflow: hidden;
@@ -1318,7 +1319,7 @@
     position: absolute;
     top: calc(50% - 290px);
     left: 760px;
-    box-shadow: -8px -8px 16px #fff inset, 8px 8px 16px rgba(196, 196, 196, 0.8) inset;
+    box-shadow: -4px -4px 4px #fff inset, 4px 4px 4px rgba(196, 196, 196, 0.8) inset;
     border-radius: 100px 16px 16px 100px;
     background-color: #dfe6e9;
     width: 456px;
@@ -1513,7 +1514,7 @@
     align-self: stretch;
     height: 338px;
     position: relative;
-    box-shadow: -8px -8px 16px #fff inset, 8px 8px 16px #c4c4c4 inset;
+    box-shadow: -4px -4px 4px #fff inset, 4px 4px 4px #c4c4c4 inset;
     border-radius: 32px;
     background-color: #dfe6e9;
     overflow: hidden;
@@ -1610,7 +1611,7 @@
     left: calc(50% - 640px);
     width: 1280px;
     display: flex;
-    align-items: flex-end;
+    align-items: center;
 }
 
 .frameParent74 {
@@ -1641,7 +1642,7 @@
 .frameWrapper19 {
     height: 64px;
     width: 210px;
-    box-shadow: -8px -8px 16px #fff, 8px 8px 16px #c6c6c9;
+    box-shadow: -4px -4px 4px #fff, 4px 4px 4px #c6c6c9;
     border-radius: 32px;
     background-color: #dfe6e9;
     overflow: hidden;
@@ -1699,7 +1700,7 @@
     position: absolute;
     bottom: -0.01px;
     left: calc(50% - 720px);
-    box-shadow: -10px -10px 20px #fff inset, 8px 8px 16px #c4c4c4 inset;
+    box-shadow: -4px -4px 4px #fff inset, 4px 4px 4px #c4c4c4 inset;
     background-color: #dfe6e9;
     width: 1440px;
     height: 459px;
@@ -1955,7 +1956,7 @@
     position: absolute;
     bottom: 0px;
     left: calc(50% - 720px);
-    box-shadow: -8px -8px 16px #fff inset, 10px 10px 10px #c4c4c4 inset;
+    box-shadow: -4px -4px 4px #fff inset, 4px 4px 4px #c4c4c4 inset;
     background-color: #dfe6e9;
     width: 1440px;
     height: 459px;
@@ -2086,8 +2087,8 @@
     border-radius: 28px;
     background: #dfe6e9;
     box-shadow:
-        inset -4px -4px 8px #ffffff,
-        inset 4px 4px 8px rgba(196, 196, 196, 0.8);
+        inset -4px -4px 4px #ffffff,
+        inset 4px 4px 4px rgba(196, 196, 196, 0.8);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -2109,8 +2110,8 @@
     border-radius: 8px;
     background: #dfe6e9;
     box-shadow:
-        -4px -4px 8px #ffffff,
-        4px 4px 8px rgba(196, 196, 196, 0.8);
+        -4px -4px 4px #ffffff,
+        4px 4px 4px rgba(196, 196, 196, 0.8);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -2134,10 +2135,10 @@
     justify-content:center;
     border-radius:28px;
     background:#DFE6E9;
-    box-shadow: inset -4px -4px 8px #FFFFFF,
-                inset 4px 4px 8px rgba(196,196,196,.8);
+    box-shadow: inset -4px -4px 4px #FFFFFF,
+                inset 4px 4px 4px rgba(196,196,196,.8);
     color:#2D4CC8;
-    font-family:'Segoe UI';
+    font-family: 'Segoe UI';
     font-size:24px;
     font-weight:500;
     line-height:24px;
@@ -2155,8 +2156,8 @@
     border-radius: 100px;
     background: #dfe6e9;
     box-shadow:
-        inset -4px -4px 8px #ffffff,
-        inset 4px 4px 8px rgba(196, 196, 196, 0.8);
+        inset -4px -4px 4px #ffffff,
+        inset 4px 4px 4px rgba(196, 196, 196, 0.8);
     transform: rotate(0.05deg);
     display: flex;
     align-items: center;
@@ -2171,8 +2172,8 @@
     border-radius: 50%;
     background: #dfe6e9;
     box-shadow:
-        8px 8px 16px #c6c6c9,
-        -8px -8px 16px #ffffff;
+        4px 4px 4px #c6c6c9,
+        -4px -4px 4px #ffffff;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -2210,9 +2211,9 @@
     padding:0 28px;
     border-radius:28px;
     background:#DFE6E9;
-    box-shadow: inset -6px -6px 12px #FFFFFF, inset 6px 6px 12px #C4C4C4;
+    box-shadow: inset -4px -4px 4px #FFFFFF, inset 4px 4px 4px #C4C4C4;
     color:#2D4CC8;
-    font-family:'Segoe UI';
+    font-family: 'Segoe UI';
     font-size:24px;
     font-weight:600;
     line-height:24px;
@@ -2231,8 +2232,8 @@
     border-radius: 28px;
     background: #DFE6E9;
     box-shadow:
-        inset -4px -4px 8px #FFFFFF,
-        inset 4px 4px 8px rgba(196, 196, 196, 0.8);
+        inset -4px -4px 4px #FFFFFF,
+        inset 4px 4px 4px rgba(196, 196, 196, 0.8);
     color: #2D4CC8;
     font-family: 'Segoe UI';
     font-size: 24px;
@@ -2251,8 +2252,8 @@
     border-radius: 100px;
     background: #DFE6E9;
     box-shadow:
-        inset -4px -4px 8px #FFFFFF,
-        inset 4px 4px 8px rgba(196, 196, 196, 0.8);
+        inset -4px -4px 4px #FFFFFF,
+        inset 4px 4px 4px rgba(196, 196, 196, 0.8);
 }
 
 .resultIconInner {
@@ -2270,8 +2271,8 @@
     border: none;
     outline: none;
     box-shadow:
-        -3px -3px 6px rgba(255, 255, 255, 0.72),
-        3px 3px 6px rgba(196, 196, 196, 0.52);
+        -4px -4px 4px rgba(255, 255, 255, 0.72),
+        4px 4px 4px rgba(196, 196, 196, 0.52);
 }
 
 .resultIconImage {
@@ -2293,8 +2294,8 @@
     border-radius: 50%;
     background: #DFE6E9;
     box-shadow:
-        inset -4px -4px 8px #FFFFFF,
-        inset 4px 4px 8px rgba(196, 196, 196, 0.8);
+        inset -4px -4px 4px #FFFFFF,
+        inset 4px 4px 4px rgba(196, 196, 196, 0.8);
     border: none;
     outline: none;
 }
@@ -2317,8 +2318,8 @@
 
     
     box-shadow:
-        -3px -3px 6px rgba(255, 255, 255, 0.72),
-        3px 3px 6px rgba(196, 196, 196, 0.52);
+        -4px -4px 4px rgba(255, 255, 255, 0.72),
+        4px 4px 4px rgba(196, 196, 196, 0.52);
 }
 
 .frameParent10 .featureIconSlot {
@@ -2356,11 +2357,11 @@
 
     
     box-shadow:
-        inset -4px -4px 8px #FFFFFF,
-        inset 4px 4px 8px rgba(196, 196, 196, 0.8);
+        inset -4px -4px 4px #FFFFFF,
+        inset 4px 4px 4px rgba(196, 196, 196, 0.8);
 
     color: #2D4CC8;
-    font-family: "Segoe UI";
+    font-family: 'Segoe UI';
     font-size: 24px;
     font-weight: 500;
     line-height: 24px;
@@ -2379,8 +2380,8 @@
     border-radius: 100px;
     background: #DFE6E9;
     box-shadow:
-        inset -4px -4px 8px #FFFFFF,
-        inset 4px 4px 8px rgba(196, 196, 196, 0.8);
+        inset -4px -4px 4px #FFFFFF,
+        inset 4px 4px 4px rgba(196, 196, 196, 0.8);
     border: none;
     outline: none;
 }
@@ -2402,8 +2403,8 @@
 
     
     box-shadow:
-        -3px -3px 6px rgba(255, 255, 255, 0.72),
-        3px 3px 6px rgba(196, 196, 196, 0.52);
+        -4px -4px 4px rgba(255, 255, 255, 0.72),
+        4px 4px 4px rgba(196, 196, 196, 0.52);
 }
 
 .scaleIconImage {
@@ -2428,8 +2429,8 @@ padding:0 24px;
 border:none;
 border-radius:28px;
 background:#DFE6E9;
-box-shadow:inset -4px -4px 8px #FFFFFF,inset 4px 4px 8px rgba(196,196,196,.8);
-font-family:'Segoe UI';
+box-shadow:inset -4px -4px 4px #FFFFFF,inset 4px 4px 4px rgba(196,196,196,.8);
+font-family: 'Segoe UI';
 font-size:24px;
 font-weight:500;
 line-height:24px;
@@ -2457,7 +2458,7 @@ padding:0;
 
 .startLearning{
 color:#2D4CC8;
-font-family:'Segoe UI';
+font-family: 'Segoe UI';
 font-weight:600;
 opacity:1;
 -webkit-text-fill-color:#2D4CC8;
@@ -2471,8 +2472,8 @@ opacity:1;
     border-radius:50%;
     background:#DFE6E9;
     overflow:hidden;
-    box-shadow:inset -8px -8px 16px #FFFFFF,
-               inset 8px 8px 16px #C4C4C4;
+    box-shadow:inset -4px -4px 4px #FFFFFF,
+               inset 4px 4px 4px #C4C4C4;
 }
 
 
@@ -2485,8 +2486,8 @@ opacity:1;
     height:515px;
     border-radius:50%;
     background:#DFE6E9;
-    box-shadow:-8px -8px 16px #FFFFFF,
-               8px 8px 16px #C4C4C4;
+    box-shadow:-4px -4px 4px #FFFFFF,
+               4px 4px 4px #C4C4C4;
     z-index:1;
     pointer-events:none;
 }
@@ -2494,7 +2495,7 @@ opacity:1;
 .masteryImage{
     position:absolute;
     left:28px;
-    top:7px;
+    top:25px;
     width:652px;
     height:549px;
     border-radius:50%;
@@ -2582,7 +2583,7 @@ opacity:1;
     font-size: 24px;
     font-weight: 600;
     line-height: 32px;
-    box-shadow: -8px -8px 16px #FFFFFF, 8px 8px 16px #C6C6C9;
+    box-shadow: -4px -4px 4px #FFFFFF, 4px 4px 4px #C6C6C9;
 }
 
 
@@ -4606,8 +4607,8 @@ opacity:1;
     overflow: hidden !important;
     background: #DFE6E9 !important;
     box-shadow:
-      inset -6px -6px 12px #FFFFFF,
-      inset 6px 6px 12px #C4C4C4 !important;
+      inset -4px -4px 4px #FFFFFF,
+      inset 4px 4px 4px #C4C4C4 !important;
   }
 
   .masteryImageFrame::before {
@@ -4618,8 +4619,8 @@ opacity:1;
     border-radius: 50% !important;
     background: #DFE6E9 !important;
     box-shadow:
-      -5px -5px 10px #FFFFFF,
-      5px 5px 10px #C4C4C4 !important;
+      -4px -4px 4px #FFFFFF,
+      4px 4px 4px #C4C4C4 !important;
   }
 
   .masteryImage {
@@ -4682,7 +4683,7 @@ opacity:1;
   .frameParent73 .learnMore,
   .frameParent73 .learnMorePill,
   .frameParent73 .learnMorePill * {
-    font-family: 'Segoe UI' !important;
+    font-family: 'Segoe UI';
     font-size: 16px !important;
     font-weight: 600 !important;
     line-height: 24px !important;
@@ -5102,8 +5103,8 @@ opacity:1;
 
 .frameIcon:active {
   box-shadow:
-    inset -6px -6px 12px #ffffff,
-    inset 6px 6px 12px rgba(196, 196, 196, 0.9) !important;
+    inset -4px -4px 4px #ffffff,
+    inset 4px 4px 4px rgba(196, 196, 196, 0.9) !important;
   transform: translateY(1px);
 }
 
@@ -5111,8 +5112,8 @@ opacity:1;
 .frameWrapper3:active,
 .frameWrapper3:has(.startLearning:active) {
   box-shadow:
-    inset -6px -6px 12px #ffffff,
-    inset 6px 6px 12px rgba(196, 196, 196, 0.9) !important;
+    inset -4px -4px 4px #ffffff,
+    inset 4px 4px 4px rgba(196, 196, 196, 0.9) !important;
   transform: translateY(1px);
 }
 
@@ -5120,16 +5121,16 @@ opacity:1;
 .frameWrapper19:active,
 .frameWrapper19:has(.bookADemo:active) {
   box-shadow:
-    inset -6px -6px 12px #ffffff,
-    inset 6px 6px 12px rgba(196, 196, 196, 0.9) !important;
+    inset -4px -4px 4px #ffffff,
+    inset 4px 4px 4px rgba(196, 196, 196, 0.9) !important;
   transform: translateY(1px);
 }
 
 
 .learnMorePill:active {
   box-shadow:
-    inset -6px -6px 12px #ffffff,
-    inset 6px 6px 12px rgba(196, 196, 196, 0.9) !important;
+    inset -4px -4px 4px #ffffff,
+    inset 4px 4px 4px rgba(196, 196, 196, 0.9) !important;
   transform: translateY(1px);
 }
 
@@ -5521,5 +5522,63 @@ body {
         margin-right: auto !important;
         overflow-x: hidden !important;
     }
+}
+
+/* =========================================================
+   BOOK A DEMO — REMOVE BLACK/NATIVE BUTTON RING ONLY
+   ========================================================= */
+.frameIcon,
+.bookADemo {
+    border: 0 !important;
+    outline: 0 !important;
+    -webkit-appearance: none !important;
+    appearance: none !important;
+}
+
+.frameIcon:focus,
+.frameIcon:focus-visible,
+.bookADemo:focus,
+.bookADemo:focus-visible {
+    border: 0 !important;
+    outline: 0 !important;
+}
+
+.frameIcon::-moz-focus-inner,
+.bookADemo::-moz-focus-inner {
+    border: 0 !important;
+}
+
+
+/* =========================================================
+   GAMIFIED PAGE — SEGOE UI ONLY
+   Includes breadcrumbs and all page descendants.
+   ========================================================= */
+.interactiveGamifiedLearnin,
+.interactiveGamifiedLearnin * {
+    font-family: 'Segoe UI' !important;
+}
+
+/* =========================================================
+   BOOK A DEMO — REMOVE BLACK/NATIVE BUTTON RING ONLY
+   ========================================================= */
+.frameIcon,
+.bookADemo {
+    border: 0 !important;
+    outline: 0 !important;
+    -webkit-appearance: none !important;
+    appearance: none !important;
+}
+
+.frameIcon:focus,
+.frameIcon:focus-visible,
+.bookADemo:focus,
+.bookADemo:focus-visible {
+    border: 0 !important;
+    outline: 0 !important;
+}
+
+.frameIcon::-moz-focus-inner,
+.bookADemo::-moz-focus-inner {
+    border: 0 !important;
 }
 

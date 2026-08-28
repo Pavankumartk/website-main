@@ -17,8 +17,8 @@
   top: 0px;
   left: calc(50% - 720px);
   box-shadow:
-    -8px -8px 16px #fff,
-    8px 8px 16px #c6c6c9;
+    -4px -4px 4px #fff,
+    4px 4px 4px #c6c6c9;
   background-color: #dfe6e9;
   width: 1440px;
   height: 80px;
@@ -93,8 +93,8 @@
   top: calc(50% - 22.5px);
   left: 1244px;
   box-shadow:
-    -8px -8px 16px #fff,
-    8px 8px 16px #c6c6c9;
+    -4px -4px 4px #fff,
+    4px 4px 4px #c6c6c9;
   border-radius: 32px;
   background-color: #dfe6e9;
   width: 132px;
@@ -159,8 +159,8 @@
   top: 168px;
   left: 80px;
   box-shadow:
-    -8px -8px 8px rgba(255, 255, 255, 0.5),
-    8px 8px 8px #c4c4c4;
+    -4px -4px 4px rgba(255, 255, 255, 0.5),
+    4px 4px 4px #c4c4c4;
   border-radius: 50px;
   background-color: #dfe6e9;
   width: 1280px;
@@ -271,7 +271,7 @@
   line-height: 60px;
   display: inline-block;
   flex-shrink: 0;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
 	font-size: 36px;
 }
 .neurolxpCombinesSupport {
@@ -293,8 +293,8 @@
   height: 60px;
   width: 203px;
   box-shadow:
-    -8px -8px 16px #fff,
-    8px 8px 16px #c6c6c9;
+    -4px -4px 4px #fff,
+    4px 4px 4px #c6c6c9;
   border-radius: 8px;
   background-color: #dfe6e9;
   overflow: hidden;
@@ -311,8 +311,8 @@
 
 .frameWrapper3:active {
   box-shadow:
-    inset -4px -4px 8px #fff,
-    inset 4px 4px 8px #c6c6c9;
+    inset -4px -4px 4px #fff,
+    inset 4px 4px 4px #c6c6c9;
   transform: translateY(1px);
 }
 .frameWrapper4 {
@@ -376,8 +376,8 @@
   border-radius: 28px;
   background: #dfe6e9;
   box-shadow:
-    inset -4px -4px 8px #ffffff,
-    inset 4px 4px 8px #c4c4c4;
+    inset -4px -4px 4px #ffffff,
+    inset 4px 4px 4px #c4c4c4;
   color: #2d4cc8;
   font-family: "Segoe UI";
   font-size: 24px;
@@ -440,8 +440,8 @@
   top: 28px;
   left: calc(50% - 262px);
   box-shadow:
-    -8px -8px 16px #fff inset,
-    8px 8px 16px #c4c4c4 inset;
+    -4px -4px 4px #fff inset,
+    4px 4px 4px #c4c4c4 inset;
   border-radius: 50%;
   background-color: #dfe6e9;
   width: 524px;
@@ -459,8 +459,8 @@
   top: calc(50% - 60.5px);
   left: calc(50% - 227px);
   box-shadow:
-    -8px -8px 16px #fff,
-    8px 8px 16px #c4c4c4;
+    -4px -4px 4px #fff,
+    4px 4px 4px #c4c4c4;
   border-radius: 50%;
   background-color: #dfe6e9;
   width: 454px;
@@ -586,8 +586,8 @@
   border-radius: 28px;
   background: #dfe6e9;
   box-shadow:
-    inset -4px -4px 8px #ffffff,
-    inset 4px 4px 8px #c4c4c4;
+    inset -4px -4px 4px #ffffff,
+    inset 4px 4px 4px #c4c4c4;
   color: #2d4cc8;
   font-family: "Segoe UI";
   font-size: 24px;
@@ -637,8 +637,8 @@
   border: 1px solid transparent;
   border-bottom-width: 5px;
   box-shadow:
-    -8px -8px 16px #fff inset,
-    8px 8px 16px #c4c4c4 inset;
+    -4px -4px 4px #fff inset,
+    4px 4px 4px #c4c4c4 inset;
   border-radius: 24px 24px 50px 50px;
   background-color: #dfe6e9;
   overflow: hidden;
@@ -662,8 +662,8 @@
 
 .communityCard:focus-visible {
   box-shadow:
-    -8px -8px 16px #fff inset,
-    8px 8px 16px #c4c4c4 inset,
+    -4px -4px 4px #fff inset,
+    4px 4px 4px #c4c4c4 inset,
     0 0 0 3px rgba(45, 76, 200, 0.28);
 }
 
@@ -849,8 +849,8 @@
   height: 941px;
   position: relative;
   box-shadow:
-    10px 10px 20px #c4c4c4,
-    -10px -10px 20px rgba(255, 255, 255, 0.6);
+    4px 4px 4px #c4c4c4,
+    -4px -4px 4px rgba(255, 255, 255, 0.6);
   border-radius: 16px;
   background-color: #dfe6e9;
   overflow: hidden;
@@ -904,8 +904,8 @@
   height: 510px;
   position: relative;
   box-shadow:
-    -8px -8px 16px #fff,
-    8px 8px 16px #c4c4c4;
+    -4px -4px 4px #fff,
+    4px 4px 4px #c4c4c4;
   border-radius: 0px 0px 100px 100px;
   background-color: #dfe6e9;
   overflow: hidden;
@@ -916,8 +916,8 @@
   top: 0px;
   left: 0px;
   box-shadow:
-    -8px -8px 16px #fff inset,
-    8px 8px 16px #c4c4c4 inset;
+    -4px -4px 4px #fff inset,
+    4px 4px 4px #c4c4c4 inset;
   border-radius: 0px 0px 100px 100px;
   background-color: #dfe6e9;
   width: 964px;
@@ -1161,8 +1161,8 @@
   top: 0px;
   left: calc(50% - 608.5px);
   box-shadow:
-    -8px -8px 8px rgba(255, 255, 255, 0.5),
-    8px 8px 8px #c4c4c4;
+    -4px -4px 4px rgba(255, 255, 255, 0.5),
+    4px 4px 4px #c4c4c4;
   border-radius: 500px;
   background-color: #dfe6e9;
   width: 1200px;
@@ -1237,8 +1237,8 @@
   bottom: -0.01px;
   left: calc(50% - 720px);
   box-shadow:
-    -10px -10px 20px #fff inset,
-    8px 8px 16px #c4c4c4 inset;
+    -4px -4px 4px #fff inset,
+    4px 4px 4px #c4c4c4 inset;
   background-color: #dfe6e9;
   width: 1440px;
   height: 459px;
@@ -1297,7 +1297,7 @@
   position: relative;
   letter-spacing: -0.03em;
   line-height: 34px;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .sparklesIcon {
   height: 23px;
@@ -1466,8 +1466,8 @@
   bottom: 0px;
   left: calc(50% - 720px);
   box-shadow:
-    -8px -8px 16px #fff inset,
-    10px 10px 10px #c4c4c4 inset;
+    -4px -4px 4px #fff inset,
+    4px 4px 4px #c4c4c4 inset;
   background-color: #dfe6e9;
   width: 1440px;
   height: 459px;
@@ -1613,8 +1613,8 @@
   border-radius: 28px;
   background: #dfe6e9;
   box-shadow:
-    inset -4px -4px 8px #ffffff,
-    inset 4px 4px 8px rgba(196, 196, 196, 0.8);
+    inset -4px -4px 4px #ffffff,
+    inset 4px 4px 4px rgba(196, 196, 196, 0.8);
   color: #2d4cc8;
   font-family: "Segoe UI";
   font-size: 24px;
@@ -1653,8 +1653,8 @@
   border-radius: 100px;
   background: #dfe6e9;
   box-shadow:
-    inset -4px -4px 8px #ffffff,
-    inset 4px 4px 8px rgba(196, 196, 196, 0.8);
+    inset -4px -4px 4px #ffffff,
+    inset 4px 4px 4px rgba(196, 196, 196, 0.8);
   transform: rotate(0.05deg);
   display: flex;
   align-items: center;
@@ -1673,8 +1673,8 @@
   background: #dfe6e9;
   border-radius: 50%;
   box-shadow:
-    4px 4px 8px #c6c6c9,
-    -4px -4px 8px #ffffff;
+    4px 4px 4px #c6c6c9,
+    -4px -4px 4px #ffffff;
   z-index: 1;
 }
 
@@ -1865,8 +1865,8 @@
   top: 0px;
   left: 0px;
   box-shadow:
-    -4px -4px 8px #fff,
-    4px 4px 8px #c6c6c6;
+    -4px -4px 4px #fff,
+    4px 4px 4px #c6c6c6;
   border-radius: 20px;
   background-color: #dfe6e9;
   width: 400px;
@@ -1976,8 +1976,8 @@
   top: 0px;
   left: 1px;
   box-shadow:
-    -4px -4px 8px #fff,
-    4px 4px 8px #c6c6c6;
+    -4px -4px 4px #fff,
+    4px 4px 4px #c6c6c6;
   border-radius: 20px;
   background-color: #dfe6e9;
   width: 400px;
@@ -2104,8 +2104,8 @@
   width: 250px;
   height: 64px;
   box-shadow:
-    -8px -8px 16px #fff,
-    8px 8px 16px #c6c6c9;
+    -4px -4px 4px #fff,
+    4px 4px 4px #c6c6c9;
   border-radius: 32px;
   background-color: #dfe6e9;
   overflow: hidden;
@@ -2125,8 +2125,8 @@
 
 .requestADemoWrapper:active {
   box-shadow:
-    inset -4px -4px 8px #fff,
-    inset 4px 4px 8px #c6c6c9;
+    inset -4px -4px 4px #fff,
+    inset 4px 4px 4px #c6c6c9;
   transform: translateY(1px);
 }
 .requestADemo {
@@ -2148,8 +2148,8 @@
   border-radius: 28px;
   background: #dfe6e9;
   box-shadow:
-    inset -4px -4px 8px #ffffff,
-    inset 4px 4px 8px rgba(196, 196, 196, 0.8);
+    inset -4px -4px 4px #ffffff,
+    inset 4px 4px 4px rgba(196, 196, 196, 0.8);
   color: #2d4cc8;
   font-family: "Segoe UI";
   font-size: 24px;
@@ -2181,8 +2181,8 @@
   border-radius: 500px;
   background: #dfe6e9;
   box-shadow:
-    -8px -8px 8px rgba(255, 255, 255, 0.5),
-    8px 8px 8px #c4c4c4;
+    -4px -4px 4px rgba(255, 255, 255, 0.5),
+    4px 4px 4px #c4c4c4;
   z-index: 1;
 }
 
@@ -2216,8 +2216,8 @@
   border-radius: 28px;
   background: #dfe6e9;
   box-shadow:
-    inset -4px -4px 8px #ffffff,
-    inset 4px 4px 8px rgba(196, 196, 196, 0.8);
+    inset -4px -4px 4px #ffffff,
+    inset 4px 4px 4px rgba(196, 196, 196, 0.8);
   color: #2d4cc8;
   font-family: "Segoe UI";
   font-size: 24px;
@@ -2324,8 +2324,8 @@
   border-radius: 20px;
   background: #dfe6e9;
   box-shadow:
-    -4px -4px 8px rgba(255, 255, 255, 0.92),
-    4px 4px 8px rgba(196, 196, 196, 0.72);
+    -4px -4px 4px rgba(255, 255, 255, 0.92),
+    4px 4px 4px rgba(196, 196, 196, 0.72);
   flex: 0 0 400px;
 }
 
@@ -2347,8 +2347,8 @@
   clip-path: polygon(0 0, 100% 0, 100% 74%, 50% 100%, 0 74%);
 
   box-shadow:
-    inset -8px -8px 16px rgba(255, 255, 255, 0.88),
-    inset 8px 8px 16px rgba(196, 196, 196, 0.66);
+    inset -4px -4px 4px rgba(255, 255, 255, 0.88),
+    inset 4px 4px 4px rgba(196, 196, 196, 0.66);
   filter: drop-shadow(0 5px 4px rgba(255, 255, 255, 0.96)) drop-shadow(0 9px 7px rgba(196, 196, 196, 0.4));
 
   z-index: 2;
@@ -2362,8 +2362,8 @@
   border-radius: inherit;
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(223, 230, 233, 0.02) 58%, rgba(255, 255, 255, 0.28) 100%);
   box-shadow:
-    inset -8px -8px 16px rgba(255, 255, 255, 0.78),
-    inset 8px 8px 16px rgba(196, 196, 196, 0.52);
+    inset -4px -4px 4px rgba(255, 255, 255, 0.78),
+    inset 4px 4px 4px rgba(196, 196, 196, 0.52);
   pointer-events: none;
   z-index: 0;
 }
@@ -3061,8 +3061,8 @@
     background: #dfe6e9 !important;
     overflow: visible !important;
     box-shadow:
-      -8px -8px 16px rgba(255, 255, 255, 0.72),
-      8px 8px 16px rgba(196, 196, 196, 0.82) !important;
+      -4px -4px 4px rgba(255, 255, 255, 0.72),
+      4px 4px 4px rgba(196, 196, 196, 0.82) !important;
   }
 
   .peopleTakingPartBusinessEv,
@@ -3441,4 +3441,96 @@
   }
 }
 
+/* BOOK DEMO TRIGGER — REMOVE NATIVE BUTTON RING/INNER DESIGN ONLY */
+button.bookADemoWrapper,
+button.bookADemoWrapper:hover,
+button.bookADemoWrapper:focus,
+button.bookADemoWrapper:focus-visible,
+button.bookADemoWrapper:active {
+  appearance: none !important;
+  -webkit-appearance: none !important;
+  border: 0 !important;
+  outline: 0 !important;
+  background: transparent !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  font: inherit !important;
+  color: inherit !important;
+  box-shadow: none !important;
+  -webkit-tap-highlight-color: transparent !important;
+}
+
+button.bookADemoWrapper::-moz-focus-inner {
+  border: 0 !important;
+  padding: 0 !important;
+}
+
+/* REQUEST A DEMO TRIGGER — REMOVE NATIVE BUTTON RING/INNER DESIGN ONLY */
+button.requestADemoWrapper,
+button.requestADemoWrapper:hover,
+button.requestADemoWrapper:focus,
+button.requestADemoWrapper:focus-visible {
+  appearance: none !important;
+  -webkit-appearance: none !important;
+  border: 0 !important;
+  outline: 0 !important;
+  font: inherit !important;
+  color: inherit !important;
+  -webkit-tap-highlight-color: transparent !important;
+}
+
+button.requestADemoWrapper::-moz-focus-inner {
+  border: 0 !important;
+  padding: 0 !important;
+}
+
+/* FINAL REQUEST A DEMO FIX — KEEP ORIGINAL SIZE/TEXT, REMOVE ONLY NATIVE BUTTON CHROME */
+button.requestADemoWrapper {
+  appearance: none !important;
+  -webkit-appearance: none !important;
+  border: 0 !important;
+  outline: 0 !important;
+
+  /* restore the original CTA typography/layout */
+  font-family: 'Segoe UI' !important;
+  font-size: 24px !important;
+  line-height: 32px !important;
+  font-weight: 600 !important;
+  color: #2d4cc8 !important;
+  white-space: nowrap !important;
+}
+
+button.requestADemoWrapper:focus,
+button.requestADemoWrapper:focus-visible {
+  border: 0 !important;
+  outline: 0 !important;
+}
+
+button.requestADemoWrapper .requestADemo {
+  width: 215px !important;
+  font-family: 'Segoe UI' !important;
+  font-size: 24px !important;
+  line-height: 32px !important;
+  font-weight: 600 !important;
+  white-space: nowrap !important;
+}
+
+button.requestADemoWrapper::-moz-focus-inner {
+  border: 0 !important;
+  padding: 0 !important;
+}
+
+@media (max-width: 768px) {
+  button.requestADemoWrapper {
+    font-size: 17px !important;
+    line-height: 26px !important;
+  }
+
+  button.requestADemoWrapper .requestADemo {
+    width: auto !important;
+    font-size: 17px !important;
+    line-height: 26px !important;
+    white-space: nowrap !important;
+  }
+}
 

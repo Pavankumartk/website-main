@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 import styles from "./contentmanagment.module.css";
 import Header from "../../components/Header/header";
 import Footer from "../../components/Footer/footer";
+import { BookDemoTrigger } from "../../components/Bookademo/Bookademo";
 
 const compatibilityCards = [
   {
@@ -128,26 +129,64 @@ export default function ContentIntelligenceManagement() {
       <Header />
       <main className={`${styles.contentIntelligenceManagem}${openCompatibilityCard ? ` ${styles.compatibilityCardIsOpen}` : ""}`}>
         <div className={styles.frameParent}>
-          <Image
+          <svg
             className={styles.frameChild}
-            src="/icons/content-experience-header.svg"
-            width={1728}
-            height={671}
-            sizes="100vw"
-            alt=""
+            width="1488"
+            height="671"
+            viewBox="0 0 1488 671"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
             aria-hidden="true"
             style={{
               position: "absolute",
               top: "-90px",
-              left: "-50px",
-              width: "calc(100% + 40px)",
+              left: "-22px",
+              width: "1488px",
               maxWidth: "none",
-              height: "100%",
-              transform: "scaleX(1.05)",
-              transformOrigin: "right center",
-              objectFit: "fill",
+              height: "671px",
             }}
-          />
+          >
+            <g filter="url(#contentHeroOuterShadow)">
+              <path d="M24 28H1464V524.978L741 647L24 547.604V28Z" fill="#DFE6E9" />
+            </g>
+            <g filter="url(#contentHeroInnerShadow)">
+              <path d="M26 0H1466V496.978L743 619L26 519.604V0Z" fill="#DFE6E9" />
+            </g>
+            <defs>
+              <filter id="contentHeroOuterShadow" x="0" y="4" width="1488" height="667" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+                <feFlood floodOpacity="0" result="BackgroundImageFix" />
+                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                <feOffset dx="8" dy="8" />
+                <feGaussianBlur stdDeviation="8" />
+                <feComposite in2="hardAlpha" operator="out" />
+                <feColorMatrix type="matrix" values="0 0 0 0 0.768627 0 0 0 0 0.768627 0 0 0 0 0.768627 0 0 0 1 0" />
+                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow" />
+                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                <feOffset dx="-8" dy="-8" />
+                <feGaussianBlur stdDeviation="8" />
+                <feComposite in2="hardAlpha" operator="out" />
+                <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0" />
+                <feBlend mode="normal" in2="effect1_dropShadow" result="effect2_dropShadow" />
+                <feBlend mode="normal" in="SourceGraphic" in2="effect2_dropShadow" result="shape" />
+              </filter>
+              <filter id="contentHeroInnerShadow" x="18" y="-8" width="1456" height="635" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+                <feFlood floodOpacity="0" result="BackgroundImageFix" />
+                <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                <feOffset dx="8" dy="8" />
+                <feGaussianBlur stdDeviation="8" />
+                <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1" />
+                <feColorMatrix type="matrix" values="0 0 0 0 0.768627 0 0 0 0 0.768627 0 0 0 0 0.768627 0 0 0 1 0" />
+                <feBlend mode="normal" in2="shape" result="effect1_innerShadow" />
+                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                <feOffset dx="-8" dy="-8" />
+                <feGaussianBlur stdDeviation="8" />
+                <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1" />
+                <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0" />
+                <feBlend mode="normal" in2="effect1_innerShadow" result="effect2_innerShadow" />
+              </filter>
+            </defs>
+          </svg>
           <div className={styles.frameGroup}>
             <div className={styles.frameContainer}>
               <p className={styles.headerContentExperienceBadge}>Content Experience</p>
@@ -157,9 +196,9 @@ export default function ContentIntelligenceManagement() {
               </div>
             </div>
             <div className={styles.frameWrapper}>
-              <button className={styles.headerBookDemoButton} type="button">
+              <BookDemoTrigger className={styles.headerBookDemoButton}>
                 <span>Book a Demo</span>
-              </button>
+              </BookDemoTrigger>
             </div>
           </div>
         </div>
@@ -178,7 +217,7 @@ export default function ContentIntelligenceManagement() {
 
           <div className={styles.arrowRightDoubleGroup}>
             <Image className={styles.arrowDown01Icon} src="/icons/arrow-right-double.svg" width={16} height={16} sizes="16px" alt="" aria-hidden="true" />
-            <span className={styles.augmentation}>Content Intelligence &amp; Management</span>
+            <span className={styles.augmentation}>Content  Management</span>
           </div>
         </div>
 
@@ -707,9 +746,17 @@ export default function ContentIntelligenceManagement() {
               </div>
             </div>
           </div>
-          <div className={styles.requestADemoWrapper}>
+          <BookDemoTrigger
+            className={styles.requestADemoWrapper}
+            style={{
+              border: "none",
+              outline: "none",
+              appearance: "none",
+              WebkitAppearance: "none",
+            }}
+          >
             <div className={styles.requestADemo}>Request a Demo</div>
-          </div>
+          </BookDemoTrigger>
         </div>
       </main>
       <Footer />

@@ -6,6 +6,7 @@ import Image from "next/image";
 import styles from "./learning.module.css";
 import Header from "../../components/Header/header";
 import Footer from "../../components/Footer/footer";
+import { BookDemoTrigger } from "../../components/Bookademo/Bookademo";
 
 export default function LearningCommunitySupport() {
 	const videoRef = useRef<HTMLVideoElement>(null);
@@ -41,7 +42,7 @@ export default function LearningCommunitySupport() {
 				</div>
 				<div className={styles.arrowRightDoubleGroup}>
 					<Image className={styles.arrowDown01Icon} src="/icons/arrowright.svg" width={16} height={16} sizes="100vw" alt="" />
-					<h3 className={styles.augmentation} style={{ display: "inline", margin: 0, padding: 0, fontWeight: "bold" }}>{`Learning Community & Support`}</h3>
+					<h3 className={styles.augmentation} style={{ display: "inline", margin: 0, padding: 0, fontWeight: "bold" }}>{`Learning Community`}</h3>
 				</div>
 			</div>
 			<div className={styles.rectangleParent}>
@@ -131,20 +132,9 @@ export default function LearningCommunitySupport() {
 					<div className={styles.frameWrapper2}>
 						<div className={styles.frameWrapper3}>
 							<div className={styles.frameWrapper4}>
-								<div
-									className={styles.bookADemoWrapper}
-									role="button"
-									tabIndex={0}
-									onClick={() => router.push("/contact")}
-									onKeyDown={(e) => {
-										if (e.key === "Enter" || e.key === " ") {
-											e.preventDefault();
-											router.push("/contact");
-										}
-									}}
-								>
+								<BookDemoTrigger className={styles.bookADemoWrapper}>
 									<div className={styles.bookADemo}>Book a Demo</div>
-								</div>
+								</BookDemoTrigger>
 							</div>
 						</div>
 					</div>
@@ -582,20 +572,9 @@ export default function LearningCommunitySupport() {
 							</div>
 						</div>
 					</div>
-					<div
-						className={styles.requestADemoWrapper}
-						role="button"
-						tabIndex={0}
-						onClick={() => router.push("/contact")}
-						onKeyDown={(e) => {
-							if (e.key === "Enter" || e.key === " ") {
-								e.preventDefault();
-								router.push("/contact");
-							}
-						}}
-					>
+					<BookDemoTrigger className={styles.requestADemoWrapper}>
 						<h3 className={styles.requestADemo} style={{ display: "inline", margin: 0, padding: 0, fontWeight: "bold" }}>Request a Demo</h3>
-					</div>
+					</BookDemoTrigger>
 				</div>
 			</div>
 			</div>

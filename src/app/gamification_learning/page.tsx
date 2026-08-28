@@ -1,8 +1,10 @@
 import type { Metadata, NextPage } from "next";
 import Image from "next/image";
+import Link from "next/link";
 import styles from "./gamified.module.css";
 import Header from "../../components/Header/header";
 import Footer from "../../components/Footer/footer";
+import { BookDemoTrigger } from "../../components/Bookademo/Bookademo";
 export const metadata: Metadata = {
   title: "Interactive & Gamified Learning | NeuroLXP",
   description: "Transform passive learning into engaging, interactive, and gamified learning experiences with NeuroLXP.",
@@ -45,18 +47,18 @@ const InteractiveGamifiedLearning: NextPage = () => {
             </div>
             <div className={styles.frameWrapper2}>
               <div className={styles.frameParent7}>
-                <div className={styles.frameIcon}>Book a Demo</div>
+                <BookDemoTrigger className={styles.frameIcon}>Book a Demo</BookDemoTrigger>
                 <div className={styles.frameWrapper3}>
                   <div className={styles.startLearningWrapper}>
-                    <button className={styles.startLearning} type="button">
+                    <Link className={styles.startLearning} href="/HomePage">
                       Start Learning
-                    </button>
+                    </Link>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <Image className={styles.mixRacedGroupStudentsWatchIcon} src="/images/gamified.webp" width={674} height={489} sizes="(max-width: 768px) 100vw, 674px" alt="" priority />
+          <Image className={styles.mixRacedGroupStudentsWatchIcon} src="/images/first1.webp" width={674} height={489} sizes="(max-width: 768px) 100vw, 674px" alt="" priority />
         </div>
       </div>
       <div className={styles.frameParent8}>
@@ -618,19 +620,19 @@ const InteractiveGamifiedLearning: NextPage = () => {
           <div className={styles.frameParent77}>
             <div className={styles.frameWrapper19}>
               <div className={styles.startLearningWrapper}>
-                <button className={styles.bookADemo} type="button">
+                <BookDemoTrigger className={styles.bookADemo}>
                   Book a Demo
-                </button>
+                </BookDemoTrigger>
               </div>
             </div>
-            <button className={styles.learnMorePill} type="button">
+            <Link className={styles.learnMorePill} href="/HomePage">
               Learn more
-            </button>
+            </Link>
           </div>
           <div className={styles.frameChild38} />
         </div>
         <div className={styles.masteryImageFrame}>
-          <Image className={styles.masteryImage} src="/images/Ellipse 390.webp" width={624} height={525} sizes="(max-width: 768px) 100vw, 624px" alt="Learner attending an online session" />
+          <Image className={styles.masteryImage} src="/images/Ellipse 389.webp" width={624} height={525} sizes="(max-width: 768px) 100vw, 624px" alt="Learner attending an online session" />
         </div>
       </div>
       </main>

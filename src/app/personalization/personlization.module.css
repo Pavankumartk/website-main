@@ -18,7 +18,7 @@
   	position: absolute;
   	top: -16px;
   	left: calc(50% - 720px);
-  	box-shadow: -8px -8px 16px #fff, 8px 8px 16px #c4c4c4;
+  	box-shadow: -4px -4px 4px #fff, 4px 4px 4px #c4c4c4;
   	border-radius: 8px;
   	width: 1440px;
   	height: 668px;
@@ -86,7 +86,7 @@
   	height: 60.2px;
   	width: 100%;
   	position: relative;
-  	box-shadow: -4px -4px 8px #fff, 4px 4px 8px rgba(196, 196, 196, 0.8);
+  	box-shadow: -4px -4px 4px #fff, 4px 4px 4px rgba(196, 196, 196, 0.8);
   	border-radius: 8px;
   	object-fit: contain;
 }
@@ -94,7 +94,7 @@
   	position: absolute;
   	top: 0px;
   	left: 0px;
-  	box-shadow: -8px -8px 16px #fff, 8px 8px 16px #c6c6c9;
+  	box-shadow: -4px -4px 4px #fff, 4px 4px 4px #c6c6c9;
   	background-color: #dfe6e9;
   	width: 1440px;
   	height: 80px;
@@ -166,7 +166,7 @@
   	position: absolute;
   	top: calc(50% - 22.5px);
   	left: 1244px;
-  	box-shadow: -8px -8px 16px #fff, 8px 8px 16px #c6c6c9;
+  	box-shadow: -4px -4px 4px #fff, 4px 4px 4px #c6c6c9;
   	border-radius: 32px;
   	background-color: #dfe6e9;
   	width: 132px;
@@ -231,7 +231,7 @@
   	position: absolute;
   	top: 0px;
   	left: calc(50% - 719.5px);
-  	box-shadow: -8px -8px 16px #fff, 8px 8px 16px #c4c4c4;
+  	box-shadow: -4px -4px 4px #fff, 4px 4px 4px #c4c4c4;
   	border-radius: 8px;
   	width: 1439px;
   	height: 250px;
@@ -387,7 +387,7 @@
   	position: absolute;
   	top: 916px;
   	left: calc(50% - 640px);
-  	box-shadow: -8px -8px 16px #fff inset, 8px 8px 16px rgba(196, 196, 196, 0.8) inset;
+  	box-shadow: -4px -4px 4px #fff inset, 4px 4px 4px rgba(196, 196, 196, 0.8) inset;
   	border-radius: 32px;
   	background-color: #dfe6e9;
   	width: 1280px;
@@ -398,7 +398,7 @@
   	position: absolute;
   	top: 32px;
   	left: 32px;
-  	box-shadow: 10px 10px 20px #c4c4c4, -10px -10px 20px rgba(255, 255, 255, 0.6);
+  	box-shadow: 4px 4px 4px #c4c4c4, -4px -4px 4px rgba(255, 255, 255, 0.6);
   	border-radius: 16px;
   	background-color: #dfe6e9;
   	width: 1216px;
@@ -516,7 +516,7 @@
 .frameWrapper4 {
   	width: 350px;
   	height: 70px;
-  	box-shadow: -4px -4px 8px #fff inset, 4px 4px 8px rgba(196, 196, 196, 0.8) inset;
+  	box-shadow: -4px -4px 4px #fff inset, 4px 4px 4px rgba(196, 196, 196, 0.8) inset;
   	border-radius: 30px;
   	background-color: #dfe6e9;
   	overflow: hidden;
@@ -670,7 +670,7 @@
   	position: absolute;
   	top: calc(50% - 108.5px);
   	left: calc(50% - 180px);
-  	box-shadow: -4px -4px 8px #fff, 4px 4px 8px #c4c4c4;
+  	box-shadow: -4px -4px 4px #fff, 4px 4px 4px #c4c4c4;
   	border-radius: 16px;
   	background-color: #dfe6e9;
   	width: 360px;
@@ -719,7 +719,7 @@
   	position: absolute;
   	top: 0px;
   	left: 0px;
-  	box-shadow: -4px -4px 8px #fff, 4px 4px 8px #c4c4c4;
+  	box-shadow: -4px -4px 4px #fff, 4px 4px 4px #c4c4c4;
   	border-radius: 16px;
   	background-color: #dfe6e9;
   	border-right: 4px solid #bf1869;
@@ -748,7 +748,7 @@
   	position: absolute;
   	top: 0px;
   	left: 0px;
-  	box-shadow: -4px -4px 8px #fff, 4px 4px 8px #c4c4c4;
+  	box-shadow: -4px -4px 4px #fff, 4px 4px 4px #c4c4c4;
   	border-radius: 16px;
   	background-color: #dfe6e9;
   	border-right: 4px solid #67096e;
@@ -768,7 +768,7 @@
   	position: absolute;
   	top: 0px;
   	left: 0px;
-  	box-shadow: -4px -4px 8px #fff, 4px 4px 8px #c4c4c4;
+  	box-shadow: -4px -4px 4px #fff, 4px 4px 4px #c4c4c4;
   	border-radius: 16px;
   	background-color: #dfe6e9;
   	border-right: 4px solid #c05512;
@@ -803,7 +803,7 @@
   	position: absolute;
   	top: 0px;
   	left: 0px;
-  	box-shadow: -4px -4px 8px #fff, 4px 4px 8px #c4c4c4;
+  	box-shadow: -4px -4px 4px #fff, 4px 4px 4px #c4c4c4;
   	border-radius: 16px;
   	background-color: #dfe6e9;
   	border-right: 4px solid #2d4cc8;
@@ -868,7 +868,7 @@
   	height: 400px;
   	width: 292px;
   	position: relative;
-  	box-shadow: 10px 10px 20px #c4c4c4, -10px -10px 20px #fff;
+  	box-shadow: 4px 4px 4px #c4c4c4, -4px -4px 4px #fff;
   	border-radius: 80px 16px 80px 16px;
   	background-color: #dfe6e9;
   	border-right: 10px solid #bf1869;
@@ -916,7 +916,7 @@
   	height: 400px;
   	width: 292px;
   	position: relative;
-  	box-shadow: 10px 10px 20px #c4c4c4, -10px -10px 20px #fff;
+  	box-shadow: 4px 4px 4px #c4c4c4, -4px -4px 4px #fff;
   	border-radius: 80px 16px 80px 16px;
   	background-color: #dfe6e9;
   	border-right: 10px solid #67096e;
@@ -948,7 +948,7 @@
   	height: 400px;
   	width: 292px;
   	position: relative;
-  	box-shadow: 10px 10px 20px #c4c4c4, -10px -10px 20px #fff;
+  	box-shadow: 4px 4px 4px #c4c4c4, -4px -4px 4px #fff;
   	border-radius: 80px 16px 80px 16px;
   	background-color: #dfe6e9;
   	border-right: 10px solid #0b9ba0;
@@ -981,7 +981,7 @@
   	height: 400px;
   	width: 292px;
   	position: relative;
-  	box-shadow: 10px 10px 20px #c4c4c4, -10px -10px 20px #fff;
+  	box-shadow: 4px 4px 4px #c4c4c4, -4px -4px 4px #fff;
   	border-radius: 80px 16px 80px 16px;
   	background-color: #dfe6e9;
   	border-right: 10px solid #907507;
@@ -1090,7 +1090,7 @@
   	position: absolute;
   	top: 0px;
   	left: 0px;
-  	box-shadow: -10px -10px 20px #fff inset, 10px 10px 20px #c4c4c4 inset;
+  	box-shadow: -4px -4px 4px #fff inset, 4px 4px 4px #c4c4c4 inset;
   	border-radius: 50px;
   	background-color: #dfe6e9;
   	width: 300px;
@@ -1111,7 +1111,7 @@
   	position: absolute;
   	top: -0.14px;
   	left: 0px;
-  	box-shadow: -10px -10px 20px #fff inset, 10px 10px 20px #c4c4c4 inset;
+  	box-shadow: -4px -4px 4px #fff inset, 4px 4px 4px #c4c4c4 inset;
   	border-radius: 50px;
   	background-color: #dfe6e9;
   	width: 300px;
@@ -1132,7 +1132,7 @@
   	position: absolute;
   	top: 0.36px;
   	left: 0px;
-  	box-shadow: -10px -10px 20px #fff inset, 10px 10px 20px #c4c4c4 inset;
+  	box-shadow: -4px -4px 4px #fff inset, 4px 4px 4px #c4c4c4 inset;
   	border-radius: 50px;
   	background-color: #dfe6e9;
   	width: 300px;
@@ -1207,7 +1207,7 @@
   	height: 191px;
   	width: 620px;
   	position: relative;
-  	box-shadow: -8px -8px 16px #fff inset, 8px 8px 16px rgba(196, 196, 196, 0.8) inset;
+  	box-shadow: -4px -4px 4px #fff inset, 4px 4px 4px rgba(196, 196, 196, 0.8) inset;
   	border-radius: 24px 24px 40px 40px;
   	background-color: #dfe6e9;
   	overflow: hidden;
@@ -1241,7 +1241,7 @@
   	height: 80px;
   	width: 435px;
   	position: relative;
-  	box-shadow: 10px 10px 20px #c4c4c4, -10px -10px 20px #fff;
+  	box-shadow: 4px 4px 4px #c4c4c4, -4px -4px 4px #fff;
   	border-radius: 16px 16px 40px 40px;
   	background-color: #dfe6e9;
   	overflow: hidden;
@@ -1654,7 +1654,7 @@
  .frameWrapper18 {
     height: 64px;
     width: 210px;
-    box-shadow: -8px -8px 16px #fff, 8px 8px 16px #c6c6c9;
+    box-shadow: -4px -4px 4px #fff, 4px 4px 4px #c6c6c9;
     border-radius: 32px;
     background-color: #dfe6e9;
     overflow: hidden;
@@ -1668,8 +1668,8 @@
 }
 
 .frameWrapper18:active {
-    box-shadow: inset -8px -8px 16px #fff,
-                inset 8px 8px 16px #c6c6c9;
+    box-shadow: inset -4px -4px 4px #fff,
+                inset 4px 4px 4px #c6c6c9;
 }
 .bookADemoWrapper {
   	width: 140px;
@@ -1698,7 +1698,7 @@
   	position: absolute;
   	bottom: -0.01px;
   	left: calc(50% - 720px);
-  	box-shadow: -10px -10px 20px #fff inset, 8px 8px 16px #c4c4c4 inset;
+  	box-shadow: -4px -4px 4px #fff inset, 4px 4px 4px #c4c4c4 inset;
   	background-color: #dfe6e9;
   	width: 1440px;
   	height: 459px;
@@ -1925,7 +1925,7 @@
   	position: absolute;
   	bottom: 0px;
   	left: calc(50% - 720px);
-  	box-shadow: -8px -8px 16px #fff inset, 10px 10px 10px #c4c4c4 inset;
+  	box-shadow: -4px -4px 4px #fff inset, 4px 4px 4px #c4c4c4 inset;
   	background-color: #dfe6e9;
   	width: 1440px;
   	height: 459px;
@@ -2119,12 +2119,12 @@
 .frameParent5{position:absolute;top:916px;left:50%;width:min(1280px,calc(100% - 64px));height:614px;transform:translateX(-50%);padding:32px;box-sizing:border-box;overflow:visible;border-radius:32px;background:#dfe6e9;box-shadow:inset -8px -8px 16px #fff,inset 8px 8px 16px rgba(196,196,196,.8)}
 .personalizedLearningCard{width:100%;height:100%;box-sizing:border-box;display:grid;grid-template-columns:minmax(0,1fr) 350px;align-items:center;column-gap:150px;padding:50px 72px 50px 64px;border-radius:16px;background:#dfe6e9;box-shadow:10px 10px 20px #c4c4c4,-10px -10px 20px rgba(255,255,255,.72)}
 .personalizedLearningCopy{min-width:0;display:flex;flex-direction:column;align-items:flex-start}
-.personalizedLearningBadge{width:fit-content;max-width:100%;margin:0 0 48px;padding:12px 32px;box-sizing:border-box;border-radius:28px;color:#2d4cc8;background:#dfe6e9;box-shadow:inset -4px -4px 8px #fff,inset 4px 4px 8px rgba(196,196,196,.8);font-size:24px;font-weight:600;line-height:28px;letter-spacing:.02em;white-space:nowrap}
+.personalizedLearningBadge{width:fit-content;max-width:100%;margin:0 0 48px;padding:12px 32px;box-sizing:border-box;border-radius:28px;color:#2d4cc8;background:#dfe6e9;box-shadow:inset -4px -4px 4px #fff,inset 4px 4px 4px rgba(196,196,196,.8);font-size:24px;font-weight:600;line-height:28px;letter-spacing:.02em;white-space:nowrap}
 .learningBuiltAroundContainer{width:auto;height:auto;margin:0;display:flex;flex-direction:column;align-items:flex-start;gap:4px;color:#31344b;font-size:48px;font-weight:700;line-height:1.22;letter-spacing:.03em}
 .learningBuiltAround,.everyLearner{line-height:inherit}.everyLearner{color:#2d4cc8}
 .personalizedLearningAdapts{width:min(100%,560px);height:auto;margin:38px 0 0;color:#2f3547;font-size:28px;font-weight:400;line-height:1.42;letter-spacing:.03em}
 .personalizedLearningChecklist{width:350px;display:flex;flex-direction:column;gap:32px}
-.personalizedLearningPill{width:350px;height:70px;padding:0 34px;box-sizing:border-box;display:flex;align-items:center;gap:24px;border-radius:35px;color:#31344b;background:#dfe6e9;box-shadow:inset -4px -4px 8px #fff,inset 4px 4px 8px rgba(196,196,196,.8);font-size:24px;font-weight:600;line-height:28px;letter-spacing:.03em;white-space:nowrap}
+.personalizedLearningPill{width:350px;height:70px;padding:0 34px;box-sizing:border-box;display:flex;align-items:center;gap:24px;border-radius:35px;color:#31344b;background:#dfe6e9;box-shadow:inset -4px -4px 4px #fff,inset 4px 4px 4px rgba(196,196,196,.8);font-size:24px;font-weight:600;line-height:28px;letter-spacing:.03em;white-space:nowrap}
 .personalizedLearningPill .checkmarkCircle04Icon{position:static;width:32px;height:32px;flex:0 0 32px;transform:none;filter:drop-shadow(0 4px 4px rgba(0,0,0,.2))}
 @media (max-width: 767px){.frameParent5{width:calc(100% - 48px);height:auto;min-height:560px;padding:24px}.personalizedLearningCard{grid-template-columns:minmax(0,1fr) 310px;column-gap:56px;padding:48px}.personalizedLearningBadge{margin-bottom:36px;font-size:20px}.learningBuiltAroundContainer{font-size:40px}.personalizedLearningAdapts{margin-top:30px;font-size:23px}.personalizedLearningChecklist,.personalizedLearningPill{width:310px}.personalizedLearningPill{font-size:21px}}
 @media(max-width:767px){.frameParent5{width:calc(100% - 32px);min-height:0;padding:16px;border-radius:24px}.personalizedLearningCard{grid-template-columns:1fr;row-gap:36px;padding:32px 24px;border-radius:14px}.personalizedLearningCopy{align-items:center;text-align:center}.personalizedLearningBadge{margin-bottom:28px;padding:10px 20px;font-size:15px;line-height:22px;white-space:normal}.learningBuiltAroundContainer{align-items:center;font-size:30px;line-height:1.25}.personalizedLearningAdapts{margin-top:24px;font-size:18px;line-height:1.5}.personalizedLearningChecklist{width:100%;gap:16px}.personalizedLearningPill{width:100%;height:58px;padding:0 20px;gap:16px;font-size:17px;line-height:24px}.personalizedLearningPill .checkmarkCircle04Icon{width:26px;height:26px;flex-basis:26px}}
@@ -2160,7 +2160,7 @@
   box-sizing: border-box;
   border-radius: 28px;
   background: #dfe6e9;
-  box-shadow: inset -4px -4px 8px #fff, inset 4px 4px 8px rgba(196, 196, 196, 0.8);
+  box-shadow: inset -4px -4px 4px #fff, inset 4px 4px 4px rgba(196, 196, 196, 0.8);
   color: #2d4cc8;
   font-size: 24px;
   font-weight: 600;
@@ -2211,7 +2211,7 @@
   box-sizing: border-box;
   border-radius: 16px;
   background: #dfe6e9;
-  box-shadow: -4px -4px 8px #fff, 4px 4px 8px #c4c4c4;
+  box-shadow: -4px -4px 4px #fff, 4px 4px 4px #c4c4c4;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -2237,7 +2237,7 @@
   box-sizing: border-box;
   border-radius: 16px;
   background: #dfe6e9;
-  box-shadow: -4px -4px 8px #fff, 4px 4px 8px #c4c4c4;
+  box-shadow: -4px -4px 4px #fff, 4px 4px 4px #c4c4c4;
   color: #111;
   font-family: 'Segoe UI';
   font-size: 20px;
@@ -2345,7 +2345,7 @@
   justify-content: center;
   border-radius: 28px;
   background: #dfe6e9;
-  box-shadow: inset -4px -4px 8px #fff, inset 4px 4px 8px rgba(196,196,196,.8);
+  box-shadow: inset -4px -4px 4px #fff, inset 4px 4px 4px rgba(196,196,196,.8);
   color: #2d4cc8;
   font: 600 24px/1 'Segoe UI';
   letter-spacing: .02em;
@@ -2398,7 +2398,7 @@
   border: 0;
   border-right: 10px solid var(--stage-color);
   border-radius: 80px 16px 80px 16px;
-  box-shadow: 10px 10px 20px #c4c4c4, -10px -10px 20px #fff;
+  box-shadow: 4px 4px 4px #c4c4c4, -4px -4px 4px #fff;
   box-sizing: border-box;
 }
 .frameParent22 { --stage-color: #bf1869; }
@@ -2418,7 +2418,7 @@
   justify-content: center;
   border-radius: 28px 0 0 28px;
   background: #dfe6e9;
-  box-shadow: inset 7px 7px 14px #c4c4c4, inset -7px -7px 14px #fff;
+  box-shadow: inset 4px 4px 4px #c4c4c4, inset -4px -4px 4px #fff;
   color: var(--stage-color);
   font: 700 48px/1 'Segoe UI';
   letter-spacing: .02em;
@@ -2490,7 +2490,7 @@
   padding: 0 28px;
   border-radius: 28px;
   background: #dfe6e9;
-  box-shadow: inset -6px -6px 12px #fff, inset 6px 6px 12px rgba(196,196,196,.75);
+  box-shadow: inset -4px -4px 4px #fff, inset 4px 4px 4px rgba(196,196,196,.75);
   color: #2d4cc8;
   font: 600 20px/1.2 "Segoe UI";
   font-size: 24px;
@@ -2556,7 +2556,7 @@
   height: 90px;
   border-radius: 50px;
   background: #dfe6e9;
-  box-shadow: inset -10px -10px 20px #fff, inset 10px 10px 20px rgba(196,196,196,.85);
+  box-shadow: inset -4px -4px 4px #fff, inset 4px 4px 4px rgba(196,196,196,.85);
 }
 .fasterLearning,
 .higherEngagement,
@@ -2628,7 +2628,7 @@
   height: 190px;
   border-radius: 24px 24px 40px 40px;
   background: #dfe6e9;
-  box-shadow: inset -8px -8px 16px #fff, inset 8px 8px 16px rgba(196,196,196,.8);
+  box-shadow: inset -4px -4px 4px #fff, inset 4px 4px 4px rgba(196,196,196,.8);
 }
 .image202,
 .image212,
@@ -2655,7 +2655,7 @@
   height: 80px;
   border-radius: 16px 16px 40px 40px;
   background: #dfe6e9;
-  box-shadow: 10px 10px 20px rgba(196,196,196,.8), -10px -10px 20px #fff;
+  box-shadow: 4px 4px 4px rgba(196,196,196,.8), -4px -4px 4px #fff;
 }
 .realTimeOptimization,
 .intelligentInsights,
@@ -2921,7 +2921,7 @@
   justify-content: center;
   border-radius: 30px;
   background: #dfe6e9;
-  box-shadow: inset -4px -4px 8px #fff, inset 4px 4px 8px rgba(196,196,196,.8);
+  box-shadow: inset -4px -4px 4px #fff, inset 4px 4px 4px rgba(196,196,196,.8);
   color: #2d4cc8;
   font: 600 24px/1.2 'Segoe UI';
   letter-spacing: .02em;
@@ -3072,10 +3072,10 @@
   overflow: visible !important;
   background: #dfe6e9 !important;
   box-shadow:
-    inset -4px -4px 8px #ffffff,
-    inset 4px 4px 8px rgba(196, 196, 196, 0.8),
-    -8px -8px 16px #ffffff,
-    8px 8px 16px #c6c6c9 !important;
+    inset -4px -4px 4px #ffffff,
+    inset 4px 4px 4px rgba(196, 196, 196, 0.8),
+    -4px -4px 4px #ffffff,
+    4px 4px 4px #c6c6c9 !important;
 }
 
 .modernLearningIcon::before,
@@ -3704,8 +3704,8 @@
   border-radius: 30px;
   color: #2d4cc8;
   background: #dfe6e9;
-  box-shadow: inset -4px -4px 8px #ffffff,
-              inset 4px 4px 8px rgba(196, 196, 196, 0.8);
+  box-shadow: inset -4px -4px 4px #ffffff,
+              inset 4px 4px 4px rgba(196, 196, 196, 0.8);
   font-size: 24px;
   line-height: 26px;
   font-weight: 600;
@@ -3743,15 +3743,15 @@
   border-radius: 8px;
   color: #2D4CC8;
   background: #dfe6e9;
-  box-shadow: -4px -4px 8px #ffffff,
-              4px 4px 8px rgba(196, 196, 196, 0.8);
+  box-shadow: -4px -4px 4px #ffffff,
+              4px 4px 4px rgba(196, 196, 196, 0.8);
   font: 600 24px/1.2 'Segoe UI';
   cursor: pointer;
 }
 
 .personalizationHeroButton:active {
-  box-shadow: inset -4px -4px 8px #ffffff,
-              inset 4px 4px 8px rgba(196, 196, 196, 0.8);
+  box-shadow: inset -4px -4px 4px #ffffff,
+              inset 4px 4px 4px rgba(196, 196, 196, 0.8);
 }
 
 .personalizationHeroStats {
@@ -5356,8 +5356,8 @@ body {
     border-radius: 0 !important;
     background: #dfe6e9 !important;
     box-shadow:
-      -8px -8px 16px #ffffff,
-      8px 8px 16px #c4c4c4 !important;
+      -4px -4px 4px #ffffff,
+      4px 4px 4px #c4c4c4 !important;
     display: grid !important;
     grid-template-columns: 1fr !important;
     grid-template-rows: repeat(3, 1fr) !important;
@@ -5935,8 +5935,8 @@ body {
     border-radius: 30px !important;
     background: #dfe6e9 !important;
     box-shadow:
-      -7px -7px 14px #ffffff,
-      7px 7px 14px rgba(196, 196, 196, 0.82) !important;
+      -4px -4px 4px #ffffff,
+      4px 4px 4px rgba(196, 196, 196, 0.82) !important;
     text-align: center !important;
     overflow: hidden !important;
   }
@@ -6900,3 +6900,377 @@ body {
     width: calc(100vw - 20px) !important;
   }
 }
+
+
+/* =========================================================
+   FINAL CTA LAYOUT FIX — "MAKE LEARNING PERSONAL"
+   Only this last section + its safe space before Footer.
+   Keeps the existing design, content and BookDemoTrigger.
+   ========================================================= */
+
+/* Desktop / laptop */
+@media (min-width: 1024px) {
+  .personalization {
+    /* CTA bottom = 4635 + 542; keep clear space before Footer */
+    height: 5375px !important;
+    min-height: 5375px !important;
+  }
+
+  .personalization > .rectangleParent7 {
+    position: absolute !important;
+    top: 4635px !important;
+    left: 50% !important;
+    right: auto !important;
+
+    /* IMPORTANT: size from the page container, not 100vw */
+    width: calc(100% - 160px) !important;
+    max-width: 1280px !important;
+    min-width: 0 !important;
+    height: 542px !important;
+    min-height: 542px !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+    transform: translateX(-50%) !important;
+
+    border-radius: 100px !important;
+    overflow: hidden !important;
+    box-sizing: border-box !important;
+  }
+
+  .personalization > .rectangleParent7 .personalizationCtaBackground {
+    position: absolute !important;
+    inset: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    object-position: center !important;
+    border-radius: inherit !important;
+    z-index: 0 !important;
+  }
+
+  .personalization > .rectangleParent7 .frameParent52 {
+    position: absolute !important;
+    top: 58px !important;
+    left: 64px !important;
+    right: auto !important;
+
+    width: 510px !important;
+    max-width: calc(50% - 72px) !important;
+    height: auto !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+    transform: none !important;
+
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 34px !important;
+
+    text-align: left !important;
+    z-index: 3 !important;
+  }
+
+  .personalization > .rectangleParent7 .makeLearningPersonalParent {
+    width: 100% !important;
+    max-width: 100% !important;
+    gap: 26px !important;
+    align-items: flex-start !important;
+  }
+
+  .personalization > .rectangleParent7 .makeLearningPersonal,
+  .personalization > .rectangleParent7 .createAdaptiveLearning {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    text-align: left !important;
+  }
+
+  .personalization > .rectangleParent7 .frameWrapper17 {
+    width: auto !important;
+    height: auto !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    display: flex !important;
+    justify-content: flex-start !important;
+    align-items: center !important;
+  }
+
+  .personalization > .rectangleParent7 .handHoldingWoodenCubeWithIcon {
+    position: absolute !important;
+    top: auto !important;
+    left: auto !important;
+    right: 24px !important;
+    bottom: 0 !important;
+
+    width: min(650px, 50.8%) !important;
+    height: auto !important;
+    max-width: 50.8% !important;
+    max-height: 520px !important;
+
+    object-fit: contain !important;
+    object-position: right bottom !important;
+    transform: none !important;
+    z-index: 2 !important;
+  }
+}
+
+/* Medium laptop */
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .personalization > .rectangleParent7 {
+    width: calc(100% - 96px) !important;
+  }
+
+  .personalization > .rectangleParent7 .frameParent52 {
+    left: 44px !important;
+    width: 46% !important;
+    max-width: 46% !important;
+  }
+
+  .personalization > .rectangleParent7 .handHoldingWoodenCubeWithIcon {
+    right: 16px !important;
+    width: 49% !important;
+    max-width: 49% !important;
+  }
+}
+
+/* Tablet */
+@media (min-width: 600px) and (max-width: 1023px) {
+  .personalization > .rectangleParent7 {
+    position: relative !important;
+    top: auto !important;
+    left: 50% !important;
+    right: auto !important;
+
+    width: calc(100% - 64px) !important;
+    max-width: 900px !important;
+    min-height: 430px !important;
+
+    margin: 56px 0 48px !important;
+    transform: translateX(-50%) !important;
+    overflow: hidden !important;
+    box-sizing: border-box !important;
+  }
+}
+
+/* Mobile */
+@media (max-width: 599px) {
+  .personalization {
+    padding-bottom: 52px !important;
+  }
+
+  .personalization > .rectangleParent7 {
+    position: relative !important;
+    top: auto !important;
+    left: auto !important;
+    right: auto !important;
+
+    width: calc(100% - 28px) !important;
+    max-width: 520px !important;
+    height: 500px !important;
+    min-height: 500px !important;
+
+    margin: 32px auto 52px !important;
+    transform: none !important;
+
+    border-radius: 34px !important;
+    overflow: hidden !important;
+    box-sizing: border-box !important;
+  }
+
+  .personalization > .rectangleParent7 .frameParent52 {
+    position: relative !important;
+    top: auto !important;
+    left: auto !important;
+    right: auto !important;
+
+    width: calc(100% - 32px) !important;
+    max-width: 100% !important;
+    height: auto !important;
+
+    margin: 24px auto 0 !important;
+    padding: 0 !important;
+    transform: none !important;
+
+    align-items: center !important;
+    text-align: center !important;
+    gap: 20px !important;
+    z-index: 3 !important;
+  }
+
+  .personalization > .rectangleParent7 .makeLearningPersonalParent,
+  .personalization > .rectangleParent7 .makeLearningPersonal,
+  .personalization > .rectangleParent7 .createAdaptiveLearning {
+    width: 100% !important;
+    max-width: 100% !important;
+    text-align: center !important;
+    align-items: center !important;
+  }
+
+  .personalization > .rectangleParent7 .handHoldingWoodenCubeWithIcon {
+    position: absolute !important;
+    top: auto !important;
+    left: 50% !important;
+    right: auto !important;
+    bottom: -4px !important;
+
+    width: min(92%, 390px) !important;
+    height: auto !important;
+    max-width: 92% !important;
+    max-height: 350px !important;
+
+    object-fit: contain !important;
+    object-position: center bottom !important;
+    transform: translateX(-50%) !important;
+    z-index: 2 !important;
+  }
+}
+
+@media (max-width: 380px) {
+  .personalization > .rectangleParent7 {
+    width: calc(100% - 20px) !important;
+    height: 486px !important;
+    min-height: 486px !important;
+  }
+}
+
+
+/* =========================================================
+   FINAL DESKTOP CTA SIDE ALIGNMENT FIX
+   "Make Learning Personal" section only.
+   Keeps equal left/right space like the supplied reference.
+   No internal design changes.
+   ========================================================= */
+@media (min-width: 1024px) {
+  .personalization > .rectangleParent7 {
+    left: 80px !important;
+    right: 80px !important;
+
+    width: auto !important;
+    max-width: none !important;
+    min-width: 0 !important;
+
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+
+    transform: none !important;
+
+    box-sizing: border-box !important;
+    overflow: hidden !important;
+    border-radius: 100px !important;
+  }
+
+  .personalization > .rectangleParent7 .personalizationCtaBackground {
+    position: absolute !important;
+    inset: 0 !important;
+
+    width: 100% !important;
+    height: 100% !important;
+
+    object-fit: cover !important;
+    object-position: center !important;
+
+    border-radius: inherit !important;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .personalization > .rectangleParent7 {
+    left: 48px !important;
+    right: 48px !important;
+  }
+}
+
+
+/* =========================================================
+   ABSOLUTE FINAL FIX — LAST CTA SHAPE ONLY
+   This block must stay at the very end of personlization.module.css
+   ========================================================= */
+@media (min-width: 1024px) {
+  /* Allow the CTA's rounded shape to remain fully visible */
+  .personalization {
+    overflow-x: visible !important;
+  }
+
+  /* Force the CTA to sit safely inside the 1440px page */
+  .personalization > .rectangleParent7 {
+    position: absolute !important;
+    top: 4635px !important;
+
+    left: 80px !important;
+    right: 80px !important;
+
+    width: calc(100% - 160px) !important;
+    max-width: none !important;
+    min-width: 0 !important;
+
+    height: 542px !important;
+    min-height: 542px !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    transform: none !important;
+
+    border-radius: 100px !important;
+    overflow: hidden !important;
+    box-sizing: border-box !important;
+  }
+
+  .personalization > .rectangleParent7 .personalizationCtaBackground {
+    position: absolute !important;
+    inset: 0 !important;
+
+    width: 100% !important;
+    height: 100% !important;
+
+    object-fit: cover !important;
+    object-position: center !important;
+
+    border-radius: 100px !important;
+    clip-path: inset(0 round 100px) !important;
+  }
+
+  /* Keep the left content and woman inside the corrected shape */
+  .personalization > .rectangleParent7 .frameParent52 {
+    left: 72px !important;
+    right: auto !important;
+    max-width: 44% !important;
+  }
+
+  .personalization > .rectangleParent7 .handHoldingWoodenCubeWithIcon {
+    right: 24px !important;
+    left: auto !important;
+    max-width: 50% !important;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .personalization > .rectangleParent7 {
+    left: 48px !important;
+    right: 48px !important;
+    width: calc(100% - 96px) !important;
+  }
+}
+
+
+/* BOOK A DEMO — remove browser/native black ring only */
+.frameWrapper18 {
+    border: 0 !important;
+    outline: 0 !important;
+    -webkit-appearance: none !important;
+    appearance: none !important;
+}
+
+.frameWrapper18:focus,
+.frameWrapper18:focus-visible,
+.frameWrapper18:hover {
+    border: 0 !important;
+    outline: 0 !important;
+}
+
+.frameWrapper18::-moz-focus-inner {
+    border: 0 !important;
+}
+

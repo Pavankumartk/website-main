@@ -309,7 +309,7 @@ const benefitTabs: BenefitTab[] = [
     imageStyle: "cutout",
     photo: "/images/group-friends-ready-study 1.webp",
     photoAlt: "Two students holding books",
-    checklist: ["Clear learning journey", "Greater confidence", "Practical skill development", "Faster career readiness"],
+    checklist: ["Clear Learning Journey", "Greater Confidence", "Practical Skill Development", "Faster Career Readiness"],
   },
   {
     id: "institutions",
@@ -325,7 +325,7 @@ const benefitTabs: BenefitTab[] = [
     imageStyle: "cover",
     photo: "/images/cheerful-speaker-talking-looking-distance 1.webp",
     photoAlt: "Corporate trainer presenting to a seated group in an office",
-    checklist: ["Standardized learning journeys", "Skill-based development", "Performance tracking", "Scalable training"],
+    checklist: ["Standardized Learning Journeys", "Skill-based development", "Performance tracking", "Scalable training"],
   },
 ];
 
@@ -548,7 +548,7 @@ export default function PersonalizedLearningPathsPage() {
       <section className={styles["plp-cta"]}>
         <div className={styles["plp-cta-inner"]}>
           <div className={styles["plp-cta-text"]}>
-            <h2 className={styles["plp-cta-heading"]}>The Future of Learning Is Personalized</h2>
+            <h2 className={styles["plp-cta-heading"]}>The Future of Learning is Personalized</h2>
             <p className={styles["plp-cta-subtext"]}>Transform fragmented learning into a structured journey that builds knowledge, skills, and career-ready capabilities.</p>
           </div>
 

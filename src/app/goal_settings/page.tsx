@@ -2,12 +2,15 @@
 
 import type { NextPage } from "next";
 import { useEffect } from "react";
+import { useRouter } from "next/navigation";
 import Image from "next/image";
 import styles from "./goals-progress.module.css";
 import Header from "../../components/Header/header";
 import Footer from "../../components/Footer/footer";
+import { BookDemoTrigger } from "../../components/Bookademo/Bookademo";
 
 const GoalSettingsAndProgressTracking: NextPage = () => {
+  const router = useRouter();
   useEffect(() => {
     const root = document.querySelector<HTMLElement>(".goalSettingsAndProgressTra");
     if (!root) return;
@@ -891,11 +894,11 @@ const GoalSettingsAndProgressTracking: NextPage = () => {
               </p>
             </div>
             <div className={styles.frameWrapper19}>
-              <div className={styles.frameWrapper20}>
-                <div className={styles.bookADemoWrapper}>
-                  <p className={styles.bookADemo}>Book a Demo</p>
-                </div>
-              </div>
+              <BookDemoTrigger className={styles.frameWrapper20}>
+                <span className={styles.bookADemoWrapper}>
+                  <span className={styles.bookADemo}>Book a Demo</span>
+                </span>
+              </BookDemoTrigger>
             </div>
           </div>
           <Image className={styles.handHoldingWoodenCubeWithIcon} src="/images/hand-holding-wooden-cube-with-target 1.webp" width={601} height={500} sizes="100vw" alt="Business professional selecting an idea" />
@@ -914,31 +917,91 @@ const GoalSettingsAndProgressTracking: NextPage = () => {
               <div className={styles.frameParent79}>
                 <div className={styles.checkmarkSquare04Parent}>
                   <Image className={styles.checkmarkSquare04Icon} src="/icons/checkmark-square-04.svg" width={32} height={32} sizes="32px" alt="" aria-hidden="true" />
-                  <h3 className={styles.setGoals}>Set Goals</h3>
+                  <h3
+                    className={styles.setGoals}
+                    role="button"
+                    tabIndex={0}
+                    onClick={() => router.push("/HomePage")}
+                    onKeyDown={(event) => {
+                      if (event.key === "Enter" || event.key === " ") {
+                        router.push("/HomePage");
+                      }
+                    }}
+                  >Set Goals</h3>
                 </div>
                 <div className={styles.checkmarkSquare04Parent}>
                   <Image className={styles.checkmarkSquare04Icon} src="/icons/checkmark-square-04.svg" width={32} height={32} sizes="32px" alt="" aria-hidden="true" />
-                  <h3 className={styles.learn}>Learn</h3>
+                  <h3
+                    className={styles.learn}
+                    role="button"
+                    tabIndex={0}
+                    onClick={() => router.push("/HomePage")}
+                    onKeyDown={(event) => {
+                      if (event.key === "Enter" || event.key === " ") {
+                        router.push("/HomePage");
+                      }
+                    }}
+                  >Learn</h3>
                 </div>
               </div>
               <div className={styles.frameParent80}>
                 <div className={styles.checkmarkSquare04Parent}>
                   <Image className={styles.checkmarkSquare04Icon} src="/icons/checkmark-square-04.svg" width={32} height={32} sizes="32px" alt="" aria-hidden="true" />
-                  <h3 className={styles.trackProgress}>Track Progress</h3>
+                  <h3
+                    className={styles.trackProgress}
+                    role="button"
+                    tabIndex={0}
+                    onClick={() => router.push("/HomePage")}
+                    onKeyDown={(event) => {
+                      if (event.key === "Enter" || event.key === " ") {
+                        router.push("/HomePage");
+                      }
+                    }}
+                  >Track Progress</h3>
                 </div>
                 <div className={styles.checkmarkSquare04Parent}>
                   <Image className={styles.checkmarkSquare04Icon} src="/icons/checkmark-square-04.svg" width={32} height={32} sizes="32px" alt="" aria-hidden="true" />
-                  <h3 className={styles.analyzePerformance}>Analyze Performance</h3>
+                  <h3
+                    className={styles.analyzePerformance}
+                    role="button"
+                    tabIndex={0}
+                    onClick={() => router.push("/HomePage")}
+                    onKeyDown={(event) => {
+                      if (event.key === "Enter" || event.key === " ") {
+                        router.push("/HomePage");
+                      }
+                    }}
+                  >Analyze Performance</h3>
                 </div>
               </div>
               <div className={styles.frameParent81}>
                 <div className={styles.checkmarkSquare04Parent}>
                   <Image className={styles.checkmarkSquare04Icon} src="/icons/checkmark-square-04.svg" width={32} height={32} sizes="32px" alt="" aria-hidden="true" />
-                  <h3 className={styles.createPlans}>Create Plans</h3>
+                  <h3
+                    className={styles.createPlans}
+                    role="button"
+                    tabIndex={0}
+                    onClick={() => router.push("/HomePage")}
+                    onKeyDown={(event) => {
+                      if (event.key === "Enter" || event.key === " ") {
+                        router.push("/HomePage");
+                      }
+                    }}
+                  >Create Plans</h3>
                 </div>
                 <div className={styles.checkmarkSquare04Parent}>
                   <Image className={styles.checkmarkSquare04Icon} src="/icons/checkmark-square-04.svg" width={32} height={32} sizes="32px" alt="" aria-hidden="true" />
-                  <h3 className={styles.adaptImprove}>{`Adapt & Improve`}</h3>
+                  <h3
+                    className={styles.adaptImprove}
+                    role="button"
+                    tabIndex={0}
+                    onClick={() => router.push("/HomePage")}
+                    onKeyDown={(event) => {
+                      if (event.key === "Enter" || event.key === " ") {
+                        router.push("/HomePage");
+                      }
+                    }}
+                  >{`Adapt & Improve`}</h3>
                 </div>
               </div>
             </div>
