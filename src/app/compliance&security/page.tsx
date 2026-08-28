@@ -1,16 +1,83 @@
+"use client";
+
 import type { NextPage } from 'next';
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 import styles from "./compliance&security.module.css";
 import Header from "../../components/Header/header";
 import Footer from "../../components/Footer/footer";
+import { BookDemoTrigger } from "../../components/Bookademo/Bookademo";
 
 
 const ComplianceSecurity: NextPage = () => {
+	const router = useRouter();
   	return (
         <>
           <Header />
     		<div className={styles.complianceSecurity}>
-      			<Image className={styles.complianceSecurityChild} src="/images/compliance-security-hero.svg" width={1488} height={611} sizes="100vw" alt="" priority />
+      			<svg
+				className={styles.complianceSecurityChild}
+				width="1488"
+				height="611"
+				viewBox="0 0 1488 611"
+				fill="none"
+				xmlns="http://www.w3.org/2000/svg"
+				xmlnsXlink="http://www.w3.org/1999/xlink"
+				aria-hidden="true"
+				focusable="false"
+			>
+				<g filter="url(#filter0_dd_4_11)">
+					<path d="M24 28H1464V476.728C1464 476.728 1027.32 583.352 741 586.904C458.343 590.409 24 497.158 24 497.158V28Z" fill="#DFE6E9"/>
+				</g>
+				<g filter="url(#filter1_ii_4_11)">
+					<path d="M24 0H1464V439.898C1464 439.898 1027.32 544.424 741 547.905C458.343 551.342 24 459.926 24 459.926V0Z" fill="#DFE6E9"/>
+					<path d="M24 0H1464V439.898C1464 439.898 1027.32 544.424 741 547.905C458.343 551.342 24 459.926 24 459.926V0Z" fill="url(#pattern0_4_11)" fillOpacity="0.05"/>
+				</g>
+				<defs>
+					<filter id="filter0_dd_4_11" x="0" y="4" width="1488" height="607" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+						<feFlood floodOpacity="0" result="BackgroundImageFix"/>
+						<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+						<feOffset dx="8" dy="8"/>
+						<feGaussianBlur stdDeviation="8"/>
+						<feComposite in2="hardAlpha" operator="out"/>
+						<feColorMatrix type="matrix" values="0 0 0 0 0.768627 0 0 0 0 0.768627 0 0 0 0 0.768627 0 0 0 1 0"/>
+						<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_4_11"/>
+						<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+						<feOffset dx="-8" dy="-8"/>
+						<feGaussianBlur stdDeviation="8"/>
+						<feComposite in2="hardAlpha" operator="out"/>
+						<feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0"/>
+						<feBlend mode="normal" in2="effect1_dropShadow_4_11" result="effect2_dropShadow_4_11"/>
+						<feBlend mode="normal" in="SourceGraphic" in2="effect2_dropShadow_4_11" result="shape"/>
+					</filter>
+					<filter id="filter1_ii_4_11" x="16" y="-8" width="1456" height="564" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+						<feFlood floodOpacity="0" result="BackgroundImageFix"/>
+						<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+						<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+						<feOffset dx="8" dy="8"/>
+						<feGaussianBlur stdDeviation="8"/>
+						<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+						<feColorMatrix type="matrix" values="0 0 0 0 0.768627 0 0 0 0 0.768627 0 0 0 0 0.768627 0 0 0 1 0"/>
+						<feBlend mode="normal" in2="shape" result="effect1_innerShadow_4_11"/>
+						<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+						<feOffset dx="-8" dy="-8"/>
+						<feGaussianBlur stdDeviation="8"/>
+						<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+						<feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0"/>
+						<feBlend mode="normal" in2="effect1_innerShadow_4_11" result="effect2_innerShadow_4_11"/>
+					</filter>
+					<pattern id="pattern0_4_11" patternContentUnits="objectBoundingBox" width="0.0666667" height="0.233577">
+						<use xlinkHref="#image0_4_11" transform="scale(0.000694444 0.00182482)"/>
+					</pattern>
+					<image
+						id="image0_4_11"
+						width="96"
+						height="128"
+						preserveAspectRatio="none"
+						xlinkHref="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAACACAYAAAD03Gy6AAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAOdEVYdFNvZnR3YXJlAEZpZ21hnrGWYwAABUBJREFUeAHtnVFS2zAQhuX4TknoUw4EmdILEC7QYZjcp/SphUPFjdKaGiJbK+2udmXv99CZTsLok34CQbtSGhfh9vbbQ9N0h7HHz489Pj8/HVwG+/39oevcw9jjXdcdjsenR4dAu3/rIry9/fq5Xn85i7pd+BnNbrvdNq+vv19cAiUW36PdPxqAh3oSpRa/R7M/KAAP1SRKL36PVn9wAB7sJKQWv0ejf1IAntxJSC9+jzb/5AA8qZPQsvg9mvwbhwDyFs8PoWnxh2jwRwXgiU1iCsnF75H2z/oRNCT+cg6jYfE90v7oADypk9Cy+D2S/iQBeKCT0Lb4PVL+K0fIatU18efgf+9wIeFP9gqIvVX7T97eCzdS/iQBwOV7dIUg6Y8OIF2+R0cI0v6oACB/IZ5/ar5QbwVTocE/OwDon+dc+/FYtPhnBZC6N6ItBE3+yQHkbkxpCUGbf1IA2F1B6RA0+oMDoNqSlQpBqz8oAOr98NIhaPaPBsBVjCgVgnb/yQCw8v7rN5vtbkyCO4Qa/FvHKP/366cltPbtlPJvpwfHysMktPXtlPRv44Nj5eMSzunp2ynt38IGx8pPSzjkJKDja/Rvy8mPSzjkJCDja/Vvy8qHJRxyEjX7t+XlryVCj0Insdnc7Gr2b9frmx9uBKw8dj8dMonzPyOP1eHfnr+DDo5JnmI/natvR4t/MAAqeagEdQg1+V8FQC0PkcBOAjK+Vv8PAXDJxySwk6jZ/z0AbvkpCewkava/BFBKfkwCO4ma/c9vQ7eupHxIIvwM2CTOBi81+zduAi75IUs/h8xWD4CitR4ARWU9IBVt9YBUVNUDctFSD8hFRT0Ai3Q9AItoPYAKqXoAFSL1AGpK1wOoSfFvtMkPWcI5ZFQ9gBvuegA3EP/RQ3rS8j3H4/fHrmsOLpFa/IMBaJHvSQ2hJv+rALTJ90BDqM3/KgA7x8tHyD/wCmge9vuvB6cMaPdCbf4jvwN0TSK1daQm/4l3QTomkdu3U4t/y7EVTAV33w43EP+Waz8eS6m+HS6g/pe9IDvHS0uK//tuqJ3jpSHV/0M9wM7x4sjxv6qI2TnePHL9gzVhO8ebBsZ/tCvCzvHCwPpP3hkX23s5nVznkJxOTTftkL+3U4O/9QUhsb6gANYXlIH1BTnrC8JifUHWF0SD9QUNsL6gfKwvyPqC8FhfkAKsL0gB1hekAOsLEsT6ggSxviBBrC/I+oKysb6gC9YXlIz1BQWxviAI1hdkfUF5WF/QAOsLSsP6ggLU4t/6P1a4L9Qewz6f4P5wKchwXqjtGOXn8PkE/y7ts/v9pfwH11ba/f4S/p8ubrX7/Uv7B64utvv9S/qPXN5t9/uX8m/u7u67sS+MXblYom8ntx7Qj6/dH1UPWML9/o7ZH10PmPv9/rHxHdKfpB4w5/v9IeNj/MnqAXO93x86fq4/aT1gjvf7c/uT1wPmdr8/tz9LPWBO9/tDxldZD5jL/f7c/o2LsPT7/aeg8I9+orbW/XQo2v1Bnym/5HO8ISj9QQF4lnqO9zPU/uAAPEs8xzuEwz8pAM/SzvH2cPknB+BZ0jle/z9O/+jb0CmWcI6X2x8VgCc2iSkkF79H2j/rR9AQrv30Ukj7owPwUO+nl0bSnyQAD9V+uhRS/itHyBzP8V4/h9af7BVA1bcjhZQ/SQDUfTulkfRHB5Dft6MjBGl/VADcfTvcaPDPDqBU3w4XWvyzijdt0ONJv/kAKT6dqjQ5p8UwBLP8Q7h8AcHoKVvJxet/qAAtPXtpKLZPxqA1r4dKNr9/wABL0yScvVmywAAAABJRU5ErkJggg=="
+					/>
+				</defs>
+			</svg>
       			<nav className={styles.frameDiv} aria-label="Breadcrumb">
   <span className={styles.learningEcoSystem}>Features</span>
 
@@ -54,15 +121,23 @@ const ComplianceSecurity: NextPage = () => {
             						</div>
           					</div>
           					<div className={styles.frameParent5}>
-            						<button className={`${styles.heroButton} ${styles.heroButtonSecondary}`} type="button">Book a Demo</button>
-            						<button className={`${styles.heroButton} ${styles.heroButtonPrimary}`} type="button">Start Learning</button>
+            						<BookDemoTrigger className={`${styles.heroButton} ${styles.heroButtonSecondary}`}>
+								Book a Demo
+							</BookDemoTrigger>
+							<button
+								className={`${styles.heroButton} ${styles.heroButtonPrimary}`}
+								type="button"
+								onClick={() => router.push("/HomePage")}
+							>
+								Start Learning
+							</button>
           					</div>
         				</div>
       			</div>
       			<section className={styles.frameParent6} aria-labelledby="compliance-training-heading">
   <div className={styles.frameParent7}>
     <div className={styles.frameParent8}>
-      <div className={styles.frameParent9}>
+      <div className={styles.frameParent9} style={{ height: "auto", minHeight: 0, marginBottom: "0" }}>
         <div className={styles.complianceTrainingBadge}>Compliance Training</div>
         <h2 id="compliance-training-heading" className={styles.structuredTrainingFor}>
           Structured Training for<br />Compliance Readiness
@@ -88,7 +163,7 @@ const ComplianceSecurity: NextPage = () => {
   <div className={styles.frameWrapper4}>
     <Image
       className={styles.frameChild8}
-      src="/images/compliance-training.webp"
+      src="/images/cybersecurity.webp"
       width={711}
       height={555}
       sizes="(max-width: 900px) 92vw, 711px"
@@ -289,7 +364,7 @@ const ComplianceSecurity: NextPage = () => {
                       											<div className={styles.frameParent41}>
                         												<div className={styles.frameParent42}>
                           													<div className={styles.frameWrapper29}>
-                            														<div className={styles.frameParent8}>
+                            														<div className={styles.frameParent8} style={{ gap: "0px", height: "auto", minHeight: 0 }}>
                               															<div className={styles.frameParent9}>
                                 																<div className={styles.engagingComplianceBadge}>Engaging Compliance Learning</div>
                                 																<b className={styles.makeMandatoryTrainingContainer}>
@@ -308,20 +383,20 @@ const ComplianceSecurity: NextPage = () => {
                                 																<div className={styles.frameWrapper30}>
                                   																	<div className={styles.frameParent48}>
                                     																		<div className={styles.mandatoryIconBox}><Image className={styles.mandatoryIcon} src="/icons/drama.svg" width={40} height={40} alt="Scenario-Based Learning" /></div>
-                                    																		<div className={styles.scenarioBasedLearning}>Scenario-Based Learning</div>
+                                    																		<div className={styles.scenarioBasedLearning} style={{ width: "138px", maxWidth: "138px", minWidth: 0, whiteSpace: "normal", lineHeight: "28px", overflowWrap: "normal", wordBreak: "normal", flexShrink: 1 }}>Scenario-Based Learning</div>
                                   																	</div>
                                 																</div>
                                 																<div className={styles.frameWrapper31}>
                                   																	<div className={styles.frameParent49}>
                                     																		<div className={styles.mandatoryIconBox}><Image className={styles.mandatoryIcon} src="/icons/clipboard-list-1blue.svg" width={40} height={40} alt="Interactive quizzes" /></div>
-                                    																		<div className={styles.scenarioBasedLearning}>Interactive Quizzes</div>
+                                    																		<div className={styles.scenarioBasedLearning} style={{ width: "138px", maxWidth: "138px", minWidth: 0, whiteSpace: "normal", lineHeight: "28px", overflowWrap: "normal", wordBreak: "normal", flexShrink: 1 }}>Interactive Quizzes</div>
                                   																	</div>
                                 																</div>
                               															</div>
                               															<div className={styles.frameWrapper32}>
                                 																<div className={styles.frameParent49}>
                                   																	<div className={styles.mandatoryIconBox}><Image className={styles.mandatoryIcon} src="/icons/book-open-text.svg" width={40} height={40} alt="Real-world case studies" /></div>
-                                  																	<div className={styles.scenarioBasedLearning}>Real-World Case Studies</div>
+                                  																	<div className={styles.scenarioBasedLearning} style={{ width: "138px", maxWidth: "138px", minWidth: 0, whiteSpace: "normal", lineHeight: "28px", overflowWrap: "normal", wordBreak: "normal", flexShrink: 1 }}>Real-World Case Studies</div>
                                 																</div>
                               															</div>
                             														</div>
@@ -329,13 +404,13 @@ const ComplianceSecurity: NextPage = () => {
                               															<div className={styles.frameWrapper33}>
                                 																<div className={styles.frameParent49}>
                                   																	<div className={styles.mandatoryIconBox}><Image className={styles.mandatoryIcon} src="/icons/gamepad-01.svg" width={40} height={40} alt="Interactive Gamification" /></div>
-                                  																	<div className={styles.scenarioBasedLearning}>Interactive Gamification</div>
+                                  																	<div className={styles.scenarioBasedLearning} style={{ width: "138px", maxWidth: "138px", minWidth: 0, whiteSpace: "normal", lineHeight: "28px", overflowWrap: "normal", wordBreak: "normal", flexShrink: 1 }}>Interactive Gamification</div>
                                 																</div>
                               															</div>
                               															<div className={styles.frameWrapper34}>
                                 																<div className={styles.frameParent49}>
                                   																	<div className={styles.mandatoryIconBox}><Image className={styles.mandatoryIcon} src="/icons/idea-01yellow.svg" width={40} height={40} alt="Knowledge Checks" /></div>
-                                  																	<div className={styles.scenarioBasedLearning}>Knowledge Checks</div>
+                                  																	<div className={styles.scenarioBasedLearning} style={{ width: "138px", maxWidth: "138px", minWidth: 0, whiteSpace: "normal", lineHeight: "28px", overflowWrap: "normal", wordBreak: "normal", flexShrink: 1 }}>Knowledge Checks</div>
                                 																</div>
                               															</div>
                             														</div>

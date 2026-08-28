@@ -7,6 +7,7 @@ import { useRouter } from "next/navigation";
 import styles from "./careerpathways-skilling.module.css";
 import Header from "../../components/Header/header";
 import Footer from "../../components/Footer/footer";
+import { BookDemoTrigger } from "../../components/Bookademo/Bookademo";
 
 
 const CareerPathwaysSkilling: NextPage = () => {
@@ -90,17 +91,13 @@ const CareerPathwaysSkilling: NextPage = () => {
               							</div>
             						</div>
             						<div className={styles.frameParent6}>
-								<button
-									type="button"
-									className={`${styles.frameChild3} ${styles.heroActionButton} ${styles.bookDemoButton}`}
-									onClick={() => router.push("/contact")}
-								>
+								<BookDemoTrigger className={`${styles.frameChild3} ${styles.heroActionButton} ${styles.bookDemoButton}`}>
 									Book a Demo
-								</button>
+								</BookDemoTrigger>
 								<button
 									type="button"
 									className={`${styles.frameWrapper5} ${styles.heroActionButton} ${styles.startLearningButton}`}
-									onClick={() => router.push("/learning")}
+									onClick={() => router.push("/HomePage")}
 								>
 									Start Learning
 								</button>
@@ -278,7 +275,7 @@ const CareerPathwaysSkilling: NextPage = () => {
                 								height={30}
                 								alt=""
               							/>
-              							<span>Follow guided learning journeys</span>
+              							<span>Follow Guided Learning Journeys</span>
             						</div>
             						<div className={`${styles.pathwayItem} ${styles.pathwayItemTeal}`}>
               							<Image
@@ -288,7 +285,7 @@ const CareerPathwaysSkilling: NextPage = () => {
                 								height={30}
                 								alt=""
               							/>
-              							<span>Identify required skills and competencies</span>
+              							<span>Identify Required Skills and Competencies</span>
             						</div>
             						<div className={`${styles.pathwayItem} ${styles.pathwayItemOrange}`}>
               							<Image
@@ -298,7 +295,7 @@ const CareerPathwaysSkilling: NextPage = () => {
                 								height={30}
                 								alt=""
               							/>
-              							<span>Track courses &amp; milestones</span>
+              							<span>Track Courses &amp; Milestones</span>
             						</div>
             						<div className={`${styles.pathwayItem} ${styles.pathwayItemGreen}`}>
               							<Image
@@ -308,7 +305,7 @@ const CareerPathwaysSkilling: NextPage = () => {
                 								height={30}
                 								alt=""
               							/>
-              							<span>Monitor career readiness</span>
+              							<span>Monitor Career Readiness</span>
             						</div>
             						<div className={`${styles.pathwayItem} ${styles.pathwayItemBlue}`}>
               							<Image
@@ -318,7 +315,7 @@ const CareerPathwaysSkilling: NextPage = () => {
                 								height={30}
                 								alt=""
               							/>
-              							<span>Build personalized development plans</span>
+              							<span>Build Personalized Development Plans</span>
             						</div>
           					</div>
         				</div>
@@ -788,13 +785,9 @@ const CareerPathwaysSkilling: NextPage = () => {
             						</div>
           					</div>
           					<div className={styles.frameWrapper21}>
-            						<button
-              								type="button"
-              								className={styles.frameChild80}
-              								onClick={() => router.push("/contact")}
-            							>
-              								Book a Demo
-            							</button>
+            						<BookDemoTrigger className={styles.frameChild80}>
+									Book a Demo
+								</BookDemoTrigger>
           					</div>
         				</div>
       			</div>

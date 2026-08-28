@@ -7,6 +7,7 @@ import type { CSSProperties } from "react";
 import styles from "./assissments.module.css";
 import Header from "../../components/Header/header";
 import Footer from "../../components/Footer/footer";
+import { BookDemoTrigger } from "../../components/Bookademo/Bookademo";
 
 const Assessments: NextPage = () => {
   const audienceCards = [
@@ -100,7 +101,18 @@ const Assessments: NextPage = () => {
         </nav>
         <div className={styles.frameParent2}>
           <div className={styles.ellipseParent}>
-            <Image className={styles.frameInner} src="/images/assessments-hero-oval.png" width={2048} height={957} sizes="(max-width: 768px) 100vw, 1280px" alt="" aria-hidden="true" priority />
+            <svg className={styles.frameInner} width="1328" height="621" viewBox="0 0 1328 621" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <g filter="url(#assessmentsHeroOuterShadow)"><ellipse cx="664" cy="310.5" rx="640" ry="286.5" fill="#DFE6E9" /></g>
+              <g filter="url(#assessmentsHeroInnerShadow)"><ellipse cx="664" cy="310.5" rx="608" ry="254.5" fill="#DFE6E9" /></g>
+              <defs>
+                <filter id="assessmentsHeroOuterShadow" x="0" y="0" width="1328" height="621" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+                  <feFlood floodOpacity="0" result="BackgroundImageFix"/><feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/><feOffset dx="8" dy="8"/><feGaussianBlur stdDeviation="8"/><feComposite in2="hardAlpha" operator="out"/><feColorMatrix type="matrix" values="0 0 0 0 0.768627 0 0 0 0 0.768627 0 0 0 0 0.768627 0 0 0 1 0"/><feBlend mode="normal" in2="BackgroundImageFix" result="outer1"/><feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/><feOffset dx="-8" dy="-8"/><feGaussianBlur stdDeviation="8"/><feComposite in2="hardAlpha" operator="out"/><feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0"/><feBlend mode="normal" in2="outer1" result="outer2"/><feBlend mode="normal" in="SourceGraphic" in2="outer2" result="shape"/>
+                </filter>
+                <filter id="assessmentsHeroInnerShadow" x="32" y="32" width="1264" height="557" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+                  <feFlood floodOpacity="0" result="BackgroundImageFix"/><feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/><feOffset dx="8" dy="8"/><feGaussianBlur stdDeviation="8"/><feComposite in2="hardAlpha" operator="out"/><feColorMatrix type="matrix" values="0 0 0 0 0.768627 0 0 0 0 0.768627 0 0 0 0 0.768627 0 0 0 1 0"/><feBlend mode="normal" in2="BackgroundImageFix" result="inner1"/><feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/><feOffset dx="-8" dy="-8"/><feGaussianBlur stdDeviation="8"/><feComposite in2="hardAlpha" operator="out"/><feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0"/><feBlend mode="normal" in2="inner1" result="inner2"/><feBlend mode="normal" in="SourceGraphic" in2="inner2" result="shape"/>
+                </filter>
+              </defs>
+            </svg>
             <div className={styles.ellipseGroup}>
               <div className={styles.ellipseDiv} />
               <div className={styles.frameParent3}>
@@ -121,9 +133,9 @@ const Assessments: NextPage = () => {
                   </div>
                 </div>
                 <div className={styles.frameWrapper2}>
-                  <button type="button" className={styles.heroBookDemoButton}>
+                  <BookDemoTrigger className={styles.heroBookDemoButton}>
                     Book a Demo
-                  </button>
+                  </BookDemoTrigger>
                 </div>
               </div>
             </div>
@@ -416,8 +428,8 @@ const Assessments: NextPage = () => {
               <div className={styles.frameParent37}>
                 <div className={styles.aiSectionBadge}>AI Intelligence</div>
                 <b className={styles.aiPoweredAssessmentIntellig}>
-                  AI-Powered Assessment Intelligence
-                  <br />
+                  <span className={styles.aiHeadingLine}>AI-Powered Assessment</span>
+                  <span className={styles.aiHeadingLine}>Intelligence</span>
                 </b>
               </div>
               <div className={styles.neurolxpGoesBeyond}>NeuroLXP goes beyond basic LMS testing with AI-driven assessments for smarter, adaptive learning.</div>
@@ -514,9 +526,9 @@ const Assessments: NextPage = () => {
               </div>
             </div>
           </div>
-          <div className={styles.requestADemoWrapper}>
+          <BookDemoTrigger className={styles.requestADemoWrapper}>
             <b className={styles.requestADemo}>Request a Demo</b>
-          </div>
+          </BookDemoTrigger>
         </div>
       </main>
       <Footer />

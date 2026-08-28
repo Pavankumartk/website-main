@@ -6,6 +6,7 @@ import { useEffect } from "react";
 import styles from "./analytics-reporting.module.css";
 import Header from "../../components/Header/header";
 import Footer from "../../components/Footer/footer";
+import { BookDemoTrigger } from "../../components/Bookademo/Bookademo";
 
 const AnalyticsReporting: NextPage = () => {
   useEffect(() => {
@@ -217,9 +218,9 @@ const AnalyticsReporting: NextPage = () => {
                 </div>
               </div>
             </div>
-            <a className={styles.frameChild15} href="#book-a-demo">
+            <BookDemoTrigger className={styles.frameChild15}>
               Book a Demo
-            </a>
+            </BookDemoTrigger>
           </div>
           <div className={styles.frameParent15}>
             <div className={styles.frameParent16}>
@@ -553,7 +554,90 @@ const AnalyticsReporting: NextPage = () => {
           </div>
         </div>
         <div className={styles.ellipseParent}>
-          <Image className={styles.ellipseIcon} src="/images/analytics-cta-frame.webp" width={1824} height={798} sizes="(max-width: 768px) calc(100vw - 24px), 1286px" alt="" priority />
+          <svg
+            className={styles.ellipseIcon}
+            width="1334"
+            height="586"
+            viewBox="0 0 1334 586"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlnsXlink="http://www.w3.org/1999/xlink"
+            aria-hidden="true"
+          >
+            <g filter="url(#filter0_dd_4978_2)">
+              <ellipse cx="667" cy="293" rx="643" ry="269" fill="#DFE6E9" />
+              <ellipse
+                cx="667"
+                cy="293"
+                rx="643"
+                ry="269"
+                fill="url(#pattern0_4978_2)"
+                fillOpacity="0.05"
+              />
+            </g>
+            <defs>
+              <filter
+                id="filter0_dd_4978_2"
+                x="0"
+                y="0"
+                width="1334"
+                height="586"
+                filterUnits="userSpaceOnUse"
+                colorInterpolationFilters="sRGB"
+              >
+                <feFlood floodOpacity="0" result="BackgroundImageFix" />
+                <feColorMatrix
+                  in="SourceAlpha"
+                  type="matrix"
+                  values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                  result="hardAlpha"
+                />
+                <feOffset dx="8" dy="8" />
+                <feGaussianBlur stdDeviation="8" />
+                <feComposite in2="hardAlpha" operator="out" />
+                <feColorMatrix
+                  type="matrix"
+                  values="0 0 0 0 0.768627 0 0 0 0 0.768627 0 0 0 0 0.768627 0 0 0 1 0"
+                />
+                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_4978_2" />
+                <feColorMatrix
+                  in="SourceAlpha"
+                  type="matrix"
+                  values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                  result="hardAlpha"
+                />
+                <feOffset dx="-8" dy="-8" />
+                <feGaussianBlur stdDeviation="8" />
+                <feComposite in2="hardAlpha" operator="out" />
+                <feColorMatrix
+                  type="matrix"
+                  values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0"
+                />
+                <feBlend mode="normal" in2="effect1_dropShadow_4978_2" result="effect2_dropShadow_4978_2" />
+                <feBlend mode="normal" in="SourceGraphic" in2="effect2_dropShadow_4978_2" result="shape" />
+              </filter>
+
+              <pattern
+                id="pattern0_4978_2"
+                patternContentUnits="objectBoundingBox"
+                width="0.0186625"
+                height="0.0892193"
+              >
+                <use
+                  xlinkHref="#image0_4978_2"
+                  transform="scale(0.000777605 0.00185874)"
+                />
+              </pattern>
+
+              <image
+                id="image0_4978_2"
+                width="24"
+                height="48"
+                preserveAspectRatio="none"
+                xlinkHref="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAwCAYAAAALiLqjAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAOdEVYdFNvZnR3YXJlAEZpZ21hnrGWYwAAARBJREFUeAHtlrENwjAQRf9FHiAjMAJswAgwAiNQUoAVKBAVI7ACI7ABjMAItEQmR4wESpASLj5RRPJvouis/2zFd/mELy1XG66+b9ZLgkIJ/qwIiAC9DBSydjso4A7EGJbNk4JwTODmWZZd32uCT+DNmd0ZjPHL3IsxKdicrbUDNaDc+f5jXFf6KMxBDfC7bSoRYagGlAPq1lJO1QAmXJqLOKoBOcys4RS3PHFzNWCXLa53MiN/Nd/GzDjl5Ea7yjVV9YGHlI9p25o4iyKgBwBV5vH6laPiN4iAHgBq/wNJzumqpGouyTnBAGnOCQZIc04wQJpzggHSnBMMkOacYIA053RVrQ8kOaer4iyKgB4AnrPke6dH3TzTAAAAAElFTkSuQmCC"
+              />
+            </defs>
+          </svg>
           <div className={styles.frameParent56}>
             <div className={styles.frameChild50}>Get Started</div>
             <div className={styles.frameParent13}>
@@ -576,9 +660,9 @@ const AnalyticsReporting: NextPage = () => {
                 </div>
               </div>
               <div className={styles.frameWrapper20}>
-                <a className={styles.frameChild51} href="#book-a-demo">
+                <BookDemoTrigger className={styles.frameChild51}>
                   Book a Demo
-                </a>
+                </BookDemoTrigger>
               </div>
             </div>
           </div>

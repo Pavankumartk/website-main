@@ -15,9 +15,8 @@
   position: absolute;
   top: 0px;
   left: calc(50% - 720px);
-  box-shadow:
-    -8px -8px 16px #fff,
-    8px 8px 16px #c6c6c9;
+  box-shadow:-4px -4px 4px #fff,
+    4px 4px 4px #c6c6c9;
   background-color: #dfe6e9;
   width: 1440px;
   height: 80px;
@@ -92,9 +91,8 @@
   position: absolute;
   top: calc(50% - 22.5px);
   left: 1244px;
-  box-shadow:
-    -8px -8px 16px #fff,
-    8px 8px 16px #c6c6c9;
+  box-shadow:-4px -4px 4px #fff,
+    4px 4px 4px #c6c6c9;
   border-radius: 32px;
   background-color: #dfe6e9;
   width: 132px;
@@ -235,9 +233,8 @@
   position: absolute;
   top: 0px;
   left: 0px;
-  box-shadow:
-    -8px -8px 16px #fff,
-    8px 8px 16px #c4c4c4;
+  box-shadow:-4px -4px 4px #fff,
+    4px 4px 4px #c4c4c4;
   border-radius: 50px;
   background-color: #dfe6e9;
   border-top: 5px solid #67096e;
@@ -250,9 +247,8 @@
   position: absolute;
   top: calc(50% - 130px);
   left: calc(50% - 130px);
-  box-shadow:
-    -8px -8px 16px #fff inset,
-    0px 8px 16px #c4c4c4 inset;
+  box-shadow:-4px -4px 4px #fff inset,
+    4px 4px 4px #c4c4c4 inset;
   border-radius: 50%;
   background-color: #dfe6e9;
   width: 260px;
@@ -291,9 +287,8 @@
   position: absolute;
   top: 0px;
   left: 0px;
-  box-shadow:
-    -8px -8px 16px #fff,
-    8px 8px 16px #c4c4c4;
+  box-shadow:-4px -4px 4px #fff,
+    4px 4px 4px #c4c4c4;
   border-radius: 50px;
   background-color: #dfe6e9;
   border-top: 5px solid #c05512;
@@ -335,9 +330,8 @@
   position: absolute;
   top: 0px;
   left: 0px;
-  box-shadow:
-    -8px -8px 16px #fff,
-    8px 8px 16px #c4c4c4;
+  box-shadow:-4px -4px 4px #fff,
+    4px 4px 4px #c4c4c4;
   border-radius: 50px;
   background-color: #dfe6e9;
   border-top: 5px solid #046f73;
@@ -374,9 +368,8 @@
   position: absolute;
   top: 0px;
   left: 0px;
-  box-shadow:
-    -8px -8px 16px #fff,
-    8px 8px 16px #c4c4c4;
+  box-shadow:-4px -4px 4px #fff,
+    4px 4px 4px #c4c4c4;
   border-radius: 50px;
   background-color: #dfe6e9;
   border-top: 5px solid #2d4cc8;
@@ -400,9 +393,8 @@
   position: absolute;
   top: 0px;
   left: 0px;
-  box-shadow:
-    -8px -8px 16px #fff,
-    8px 8px 16px #c4c4c4;
+  box-shadow:-4px -4px 4px #fff,
+    4px 4px 4px #c4c4c4;
   border-radius: 50px;
   background-color: #dfe6e9;
   border-top: 5px solid #bf1869;
@@ -513,9 +505,8 @@
   width: 255.3px;
   height: 60.2px;
   position: relative;
-  box-shadow:
-    -4px -4px 8px #fff,
-    4px 4px 8px rgba(196, 196, 196, 0.8);
+  box-shadow:-4px -4px 4px #fff,
+    4px 4px 4px rgba(196, 196, 196, 0.8);
   border-radius: 50px;
   object-fit: contain;
 }
@@ -542,9 +533,8 @@
   position: absolute;
   top: calc(50% - 90px);
   left: 0px;
-  box-shadow:
-    -8px -8px 16px #fff,
-    8px 8px 16px #c4c4c4;
+  box-shadow:-4px -4px 4px #fff,
+    4px 4px 4px #c4c4c4;
   border-radius: 24px;
   background-color: #dfe6e9;
   width: 420px;
@@ -627,9 +617,8 @@
   height: 424px;
   width: 776px;
   position: relative;
-  box-shadow:
-    -8px -8px 16px #fff,
-    8px 8px 16px #c4c4c4;
+  box-shadow:-4px -4px 4px #fff,
+    4px 4px 4px #c4c4c4;
   border-radius: 24px;
   background-color: #dfe6e9;
   overflow: hidden;
@@ -689,9 +678,8 @@
   align-self: stretch;
   height: 40px;
   position: relative;
-  box-shadow:
-    -4px -4px 8px #fff inset,
-    4px 4px 8px #c4c4c4 inset;
+  box-shadow:-4px -4px 4px #fff inset,
+    4px 4px 4px #c4c4c4 inset;
   border-radius: 50px;
   background-color: #dfe6e9;
   overflow: hidden;
@@ -718,9 +706,8 @@
   position: absolute;
   top: calc(50% - 11.32px);
   left: -21px;
-  box-shadow:
-    -4px -4px 8px #fff,
-    4px 4px 8px #c6c6c9;
+  box-shadow:-4px -4px 4px #fff,
+    4px 4px 4px #c6c6c9;
   border-radius: 100px;
   background-color: #2d4cc8;
   width: 596px;
@@ -752,9 +739,8 @@
   position: absolute;
   top: calc(50% - 11.32px);
   left: -17px;
-  box-shadow:
-    -4px -4px 8px #fff,
-    4px 4px 8px #c6c6c9;
+  box-shadow:-4px -4px 4px #fff,
+    4px 4px 4px #c6c6c9;
   border-radius: 100px;
   background-color: #c05512;
   width: 501px;
@@ -771,9 +757,8 @@
   position: absolute;
   top: calc(50% - 11.32px);
   left: -16px;
-  box-shadow:
-    -4px -4px 8px #fff,
-    4px 4px 8px #c6c6c9;
+  box-shadow:-4px -4px 4px #fff,
+    4px 4px 4px #c6c6c9;
   border-radius: 100px;
   background-color: #67096e;
   width: 664px;
@@ -876,7 +861,7 @@
   font-weight: 600;
   display: inline-block;
   flex-shrink: 0;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  text-shadow:4px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .frameParent25 {
   align-self: stretch;
@@ -899,7 +884,7 @@
   font-weight: 600;
   display: inline-block;
   flex-shrink: 0;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  text-shadow:4px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .timeSpentLearning {
   height: 37px;
@@ -910,7 +895,7 @@
   font-weight: 600;
   display: inline-block;
   flex-shrink: 0;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  text-shadow:4px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .assessmentPerformance {
   height: 37px;
@@ -921,7 +906,7 @@
   font-weight: 600;
   display: inline-block;
   flex-shrink: 0;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  text-shadow:4px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .discussionParticipation {
   height: 37px;
@@ -932,7 +917,7 @@
   font-weight: 600;
   display: inline-block;
   flex-shrink: 0;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  text-shadow:4px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .gamificationProgress {
   height: 37px;
@@ -943,7 +928,7 @@
   font-weight: 600;
   display: inline-block;
   flex-shrink: 0;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  text-shadow:4px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .frameParent30 {
   position: absolute;
@@ -1045,9 +1030,8 @@
   position: absolute;
   top: calc(50% - 50px);
   left: 0px;
-  box-shadow:
-    -8px -8px 16px #fff inset,
-    8px 8px 16px rgba(196, 196, 196, 0.8) inset;
+  box-shadow:-4px -4px 4px #fff inset,
+    4px 4px 4px rgba(196, 196, 196, 0.8) inset;
   border-radius: 100px;
   background-color: #dfe6e9;
   width: 600px;
@@ -1078,9 +1062,8 @@
   position: absolute;
   top: calc(50% - 59px);
   left: 0px;
-  box-shadow:
-    10px 10px 20px #c4c4c4,
-    -10px -10px 20px #fff;
+  box-shadow:4px 4px 4px #c4c4c4,
+    -4px -4px 4px #fff;
   border-radius: 100px;
   width: 120px;
   height: 118px;
@@ -1097,9 +1080,8 @@
   position: absolute;
   top: 0px;
   left: 0px;
-  box-shadow:
-    -8px -8px 16px #fff,
-    8px 8px 16px #c4c4c4;
+  box-shadow:-4px -4px 4px #fff,
+    4px 4px 4px #c4c4c4;
   border-radius: 50px;
   background-color: #dfe6e9;
   width: 1280px;
@@ -1110,9 +1092,8 @@
   position: absolute;
   top: 32px;
   left: 32px;
-  box-shadow:
-    -8px -8px 16px #fff inset,
-    8px 8px 16px #c4c4c4 inset;
+  box-shadow:-4px -4px 4px #fff inset,
+    4px 4px 4px #c4c4c4 inset;
   border-radius: 8px;
   background-color: #dfe6e9;
   width: 1216px;
@@ -1234,9 +1215,8 @@
   position: absolute;
   top: calc(50% - 60px);
   left: calc(50% - 196.5px);
-  box-shadow:
-    -4px -4px 8px #fff,
-    4px 4px 8px #c4c4c4;
+  box-shadow:-4px -4px 4px #fff,
+    4px 4px 4px #c4c4c4;
   border-radius: 16px;
   background-color: #dfe6e9;
   width: 393px;
@@ -1246,9 +1226,8 @@
   position: absolute;
   top: calc(50% - 44px);
   left: calc(50% - 180.5px);
-  box-shadow:
-    -4px -4px 8px #fff inset,
-    4px 4px 8px #c4c4c4 inset;
+  box-shadow:-4px -4px 4px #fff inset,
+    4px 4px 4px #c4c4c4 inset;
   border-radius: 16px;
   background-color: #dfe6e9;
   width: 361px;
@@ -1266,7 +1245,7 @@
   height: 32px;
   width: 32px;
   position: relative;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.25));
 }
 .improveCourseAnd {
   height: 56px;
@@ -1282,9 +1261,8 @@
   position: absolute;
   top: calc(50% - 44px);
   left: calc(50% - 180.5px);
-  box-shadow:
-    -4px -4px 8px #fff,
-    4px 4px 8px #c4c4c4;
+  box-shadow:-4px -4px 4px #fff,
+    4px 4px 4px #c4c4c4;
   border-radius: 16px;
   background-color: #dfe6e9;
   width: 361px;
@@ -1358,9 +1336,8 @@
   position: absolute;
   top: 0px;
   left: -1.5px;
-  box-shadow:
-    10px 10px 20px #c4c4c4,
-    -10px -10px 20px #fff;
+  box-shadow:4px 4px 4px #c4c4c4,
+    -4px -4px 4px #fff;
   border-radius: 32px;
   background-color: #dfe6e9;
   width: 286px;
@@ -1395,9 +1372,8 @@
   position: absolute;
   top: 0px;
   left: 0px;
-  box-shadow:
-    10px 10px 20px #c4c4c4,
-    -10px -10px 20px #fff;
+  box-shadow:4px 4px 4px #c4c4c4,
+    -4px -4px 4px #fff;
   border-radius: 32px;
   background-color: #dfe6e9;
   width: 286px;
@@ -1462,7 +1438,7 @@
   height: 538px;
   object-fit: fill;
   border-radius: 0;
-  box-shadow: none;
+  box-shadow:none;
   background: transparent;
   z-index: 1;
   transform: translateY(-130);
@@ -1513,7 +1489,7 @@
   line-height: 60px;
   display: inline-block;
   flex-shrink: 0;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  text-shadow:4px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .goBeyondBasic {
   width: 858px;
@@ -1551,7 +1527,7 @@
 .smarterAnalyticsBetterContainer {
   position: relative;
   line-height: 48px;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.25));
 }
 .span {
   line-height: 48px;
@@ -1572,9 +1548,8 @@
   height: 60.2px;
   width: 100%;
   position: relative;
-  box-shadow:
-    -4px -4px 8px #fff,
-    4px 4px 8px rgba(196, 196, 196, 0.8);
+  box-shadow:-4px -4px 4px #fff,
+    4px 4px 4px rgba(196, 196, 196, 0.8);
   border-radius: 50px;
   object-fit: contain;
 }
@@ -1592,9 +1567,8 @@
   position: absolute;
   bottom: -0.01px;
   left: calc(50% - 720px);
-  box-shadow:
-    -10px -10px 20px #fff inset,
-    8px 8px 16px #c4c4c4 inset;
+  box-shadow:-4px -4px 4px #fff inset,
+    4px 4px 4px #c4c4c4 inset;
   background-color: #dfe6e9;
   width: 1440px;
   height: 459px;
@@ -1653,7 +1627,7 @@
   position: relative;
   letter-spacing: -0.03em;
   line-height: 34px;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  text-shadow:4px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .sparklesIcon {
   height: 23px;
@@ -1821,9 +1795,8 @@
   position: absolute;
   bottom: 0px;
   left: calc(50% - 720px);
-  box-shadow:
-    -8px -8px 16px #fff inset,
-    10px 10px 10px #c4c4c4 inset;
+  box-shadow:-4px -4px 4px #fff inset,
+    4px 4px 4px #c4c4c4 inset;
   background-color: #dfe6e9;
   width: 1440px;
   height: 459px;
@@ -1938,9 +1911,8 @@
   background: #dfe6e9;
   border-radius: 28px;
 
-  box-shadow:
-    inset -8px -8px 16px rgba(255, 255, 255, 0.95),
-    inset 8px 8px 16px rgba(196, 196, 196, 0.9);
+  box-shadow:inset -4px -4px 4px rgba(255, 255, 255, 0.95),
+    inset 4px 4px 4px rgba(196, 196, 196, 0.9);
 
   display: flex;
   align-items: center;
@@ -1960,9 +1932,8 @@
 
 .frameParent12 .frameChild15 {
   background-color: #dfe6e9;
-  box-shadow:
-    -4px -4px 8px #ffffff,
-    4px 4px 8px rgba(196, 196, 196, 0.8);
+  box-shadow:-4px -4px 4px #ffffff,
+    4px 4px 4px rgba(196, 196, 196, 0.8);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1991,9 +1962,8 @@
   border-radius: 28px;
   background-color: #dfe6e9;
 
-  box-shadow:
-    inset -8px -8px 16px #ffffff,
-    inset 8px 8px 16px #c4c4c4;
+  box-shadow:inset -4px -4px 4px #ffffff,
+    inset 4px 4px 4px #c4c4c4;
 
   display: flex;
   align-items: center;
@@ -2026,9 +1996,8 @@
   position: relative;
   border-radius: 50%;
   background-color: #dfe6e9;
-  box-shadow:
-    inset -5px -5px 10px #ffffff,
-    inset 5px 5px 10px #c4c4c4;
+  box-shadow:inset -4px -4px 4px #ffffff,
+    inset 4px 4px 4px #c4c4c4;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -2043,9 +2012,8 @@
   inset: 9px;
   border-radius: 50%;
   background-color: #dfe6e9;
-  box-shadow:
-    -4px -4px 8px #ffffff,
-    4px 4px 8px rgba(196, 196, 196, 0.85);
+  box-shadow:-4px -4px 4px #ffffff,
+    4px 4px 4px rgba(196, 196, 196, 0.85);
 }
 
 .frameParent2 .analyticsCardIcon {
@@ -2056,7 +2024,7 @@
   display: block;
   object-fit: contain;
   border-radius: 0;
-  box-shadow: none;
+  box-shadow:none;
   background: transparent;
 }
 
@@ -2067,7 +2035,7 @@
   position: relative;
   z-index: 2;
   color: #31344b;
-  text-shadow: none;
+  text-shadow:none;
 }
 
 .analyticsReportingInner {
@@ -2076,9 +2044,8 @@
   background-size: 100% 100%;
   background-repeat: no-repeat;
   background-position: center;
-  box-shadow:
-    inset -8px -8px 16px #ffffff,
-    inset 8px 8px 16px #c4c4c4;
+  box-shadow:inset -4px -4px 4px #ffffff,
+    inset 4px 4px 4px #c4c4c4;
 }
 
 .analyticsReportingInner .frameParent20 {
@@ -2106,9 +2073,8 @@
   border-radius: 28px;
   background-color: #dfe6e9;
 
-  box-shadow:
-    inset -8px -8px 16px #ffffff,
-    inset 8px 8px 16px #c4c4c4;
+  box-shadow:inset -4px -4px 4px #ffffff,
+    inset 4px 4px 4px #c4c4c4;
 
   display: flex;
   align-items: center;
@@ -2132,7 +2098,7 @@
   line-height: 60px;
   font-weight: 700;
   color: #31344b;
-  text-shadow: none;
+  text-shadow:none;
 }
 
 .analyticsReportingInner .getRealTimeInsights {
@@ -2140,7 +2106,7 @@
   line-height: 40px;
   font-weight: 400;
   color: #2f3547;
-  text-shadow: none;
+  text-shadow:none;
 }
 
 .analyticsReportingInner .frameParent23 {
@@ -2162,9 +2128,8 @@
   position: relative;
   border-radius: 50%;
   background-color: #dfe6e9;
-  box-shadow:
-    inset -5px -5px 10px #ffffff,
-    inset 5px 5px 10px #c4c4c4;
+  box-shadow:inset -4px -4px 4px #ffffff,
+    inset 4px 4px 4px #c4c4c4;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -2179,9 +2144,8 @@
   inset: 9px;
   border-radius: 50%;
   background-color: #dfe6e9;
-  box-shadow:
-    -4px -4px 8px #ffffff,
-    4px 4px 8px rgba(196, 196, 196, 0.85);
+  box-shadow:-4px -4px 4px #ffffff,
+    4px 4px 4px rgba(196, 196, 196, 0.85);
 }
 
 .analyticsReportingInner .dashboardListIcon {
@@ -2193,7 +2157,7 @@
   object-fit: contain;
   background: transparent;
   border-radius: 0;
-  box-shadow: none;
+  box-shadow:none;
 }
 
 .analyticsReportingInner .learnerActivity,
@@ -2209,7 +2173,7 @@
   line-height: 36px;
   font-weight: 600;
   color: #31344b;
-  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.18);
+  text-shadow:0 4px 4px rgba(0, 0, 0, 0.18);
   display: block;
   flex: 1;
 }
@@ -2238,9 +2202,8 @@
   border-radius: 28px;
   background-color: #dfe6e9;
 
-  box-shadow:
-    inset -8px -8px 16px #ffffff,
-    inset 8px 8px 16px #c4c4c4;
+  box-shadow:inset -4px -4px 4px #ffffff,
+    inset 4px 4px 4px #c4c4c4;
 
   display: flex;
   align-items: center;
@@ -2311,7 +2274,7 @@
   position: relative;
   display: block;
   background: transparent;
-  box-shadow: none;
+  box-shadow:none;
   overflow: visible;
 }
 
@@ -2323,9 +2286,8 @@
   height: 120px;
   border-radius: 60px;
   background-color: #dfe6e9;
-  box-shadow:
-    inset -8px -8px 16px #ffffff,
-    inset 8px 8px 16px #c4c4c4;
+  box-shadow:inset -4px -4px 4px #ffffff,
+    inset 4px 4px 4px #c4c4c4;
   overflow: hidden;
 }
 
@@ -2336,7 +2298,7 @@
   width: 100%;
   height: 100%;
   background: transparent;
-  box-shadow: none;
+  box-shadow:none;
   border-radius: inherit;
   padding: 0;
   margin: 0;
@@ -2380,9 +2342,8 @@
   height: 120px;
   border-radius: 50%;
   background-color: #dfe6e9;
-  box-shadow:
-    -8px -8px 16px #ffffff,
-    8px 8px 16px rgba(196, 196, 196, 0.9);
+  box-shadow:-4px -4px 4px #ffffff,
+    4px 4px 4px rgba(196, 196, 196, 0.9);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -2400,7 +2361,7 @@
   object-fit: contain;
   background: transparent;
   border-radius: 0;
-  box-shadow: none;
+  box-shadow:none;
 }
 
 .analyticsReportingChild {
@@ -2419,9 +2380,8 @@
   height: 628px;
   border-radius: 50px;
   background-color: #dfe6e9;
-  box-shadow:
-    -8px -8px 16px #ffffff,
-    8px 8px 16px #c4c4c4;
+  box-shadow:-4px -4px 4px #ffffff,
+    4px 4px 4px #c4c4c4;
   overflow: hidden;
 }
 
@@ -2433,9 +2393,8 @@
   height: 564px;
   border-radius: 8px;
   background-color: #dfe6e9;
-  box-shadow:
-    inset -8px -8px 16px #ffffff,
-    inset 8px 8px 16px #c4c4c4;
+  box-shadow:inset -4px -4px 4px #ffffff,
+    inset 4px 4px 4px #c4c4c4;
   overflow: hidden;
 }
 
@@ -2467,9 +2426,8 @@
   border-radius: 28px;
   background-color: #dfe6e9;
 
-  box-shadow:
-    inset -8px -8px 16px #ffffff,
-    inset 8px 8px 16px #c4c4c4;
+  box-shadow:inset -4px -4px 4px #ffffff,
+    inset 4px 4px 4px #c4c4c4;
 
   display: flex;
   align-items: center;
@@ -2564,9 +2522,8 @@
   height: 120px;
   border-radius: 16px;
   background-color: #dfe6e9;
-  box-shadow:
-    -8px -8px 16px #ffffff,
-    8px 8px 16px #c4c4c4;
+  box-shadow:-4px -4px 4px #ffffff,
+    4px 4px 4px #c4c4c4;
   transition: box-shadow 220ms ease;
 }
 
@@ -2585,30 +2542,26 @@
 }
 
 .frameParent46 .frameChild37 {
-  box-shadow:
-    inset -5px -5px 10px #ffffff,
-    inset 5px 5px 10px #c4c4c4;
+  box-shadow:inset -4px -4px 4px #ffffff,
+    inset 4px 4px 4px #c4c4c4;
 }
 
 .frameParent46 .frameChild39 {
-  box-shadow:
-    -5px -5px 10px #ffffff,
-    5px 5px 10px #c4c4c4;
+  box-shadow:-4px -4px 4px #ffffff,
+    4px 4px 4px #c4c4c4;
 }
 
 .frameParent46 .frameParent47:has(.rectangleParent9:hover) .frameChild37 {
-  box-shadow:
-    -5px -5px 10px #ffffff,
-    5px 5px 10px #c4c4c4;
+  box-shadow:-4px -4px 4px #ffffff,
+    4px 4px 4px #c4c4c4;
 }
 
 .frameParent46 .rectangleParent9:hover .frameChild37,
 .frameParent46 .rectangleParent9:hover .frameChild39,
 .frameParent46 .rectangleParent9:focus-visible .frameChild37,
 .frameParent46 .rectangleParent9:focus-visible .frameChild39 {
-  box-shadow:
-    inset -5px -5px 10px #ffffff,
-    inset 5px 5px 10px #c4c4c4;
+  box-shadow:inset -4px -4px 4px #ffffff,
+    inset 4px 4px 4px #c4c4c4;
   transform: translateY(1px);
 }
 
@@ -2664,7 +2617,7 @@
   height: 538px;
   object-fit: fill;
   border-radius: 0;
-  box-shadow: none;
+  box-shadow:none;
   background: transparent;
   z-index: 1;
 }
@@ -2694,9 +2647,8 @@
   border-radius: 28px;
   background-color: #dfe6e9;
 
-  box-shadow:
-    inset -8px -8px 16px #ffffff,
-    inset 8px 8px 16px #c4c4c4;
+  box-shadow:inset -4px -4px 4px #ffffff,
+    inset 4px 4px 4px #c4c4c4;
 
   display: flex;
   align-items: center;
@@ -2753,9 +2705,8 @@
   height: 60px;
   border-radius: 50px;
   background-color: #dfe6e9;
-  box-shadow:
-    -4px -4px 8px #ffffff,
-    4px 4px 8px rgba(196, 196, 196, 0.8);
+  box-shadow:-4px -4px 4px #ffffff,
+    4px 4px 4px rgba(196, 196, 196, 0.8);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -2774,9 +2725,8 @@
 
 .ellipseParent .frameChild51:hover,
 .ellipseParent .frameChild51:focus-visible {
-  box-shadow:
-    inset -4px -4px 8px #ffffff,
-    inset 4px 4px 8px rgba(196, 196, 196, 0.8);
+  box-shadow:inset -4px -4px 4px #ffffff,
+    inset 4px 4px 4px rgba(196, 196, 196, 0.8);
 }
 
 .ellipseParent .frameChild51:focus-visible {
@@ -2839,7 +2789,7 @@
   line-height: 36px;
   font-weight: 600;
   color: #31344b;
-  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.18);
+  text-shadow:0 4px 4px rgba(0, 0, 0, 0.18);
 }
 
 .analyticsReporting {
@@ -2969,7 +2919,7 @@
 .discussionParticipation,
 .gamificationProgress {
   color: #31344b;
-  text-shadow: none;
+  text-shadow:none;
 }
 
 .frameChild21 {
@@ -3033,8 +2983,6 @@ h2.makeEveryLearning {
   order: 9;
 }
 
-
-
 .analyticsReporting > .frameDiv {
   align-self: stretch;
   width: 100% !important;
@@ -3052,8 +3000,6 @@ h2.makeEveryLearning {
   width: 100%;
   max-width: 1210px;
 }
-
-
 
 .analyticsReporting > .frameParent30 {
   width: 100%;
@@ -3086,8 +3032,6 @@ h2.makeEveryLearning {
 .analyticsReporting > .frameParent59 {
   display: none !important;
 }
-
-
 
 .analyticsReporting h1,
 .analyticsReporting h2,
@@ -3157,8 +3101,6 @@ h2.makeEveryLearning {
     flex-wrap: wrap;
   }
 
-  
-
   .ellipseIcon,
   .image20,
   .image204 {
@@ -3176,7 +3118,7 @@ h2.makeEveryLearning {
     width: 100% !important;
     height: auto !important;
   }
-  
+
   .neurolxpsLearningAnalytics {
     width: 100% !important;
     height: auto !important;
@@ -3496,7 +3438,6 @@ h2.makeEveryLearning {
     font-size: 32px;
   }
 
-  
   .analyticsReportingInner .oneDashboardFull {
     font-size: 34px !important;
     line-height: 42px !important;
@@ -3548,10 +3489,6 @@ h2.makeEveryLearning {
     overflow-x: hidden !important;
     overflow-y: visible !important;
   }
-
-  
-
-  
 
   .frameParent12,
   .frameParent13,
@@ -3898,8 +3835,6 @@ h2.makeEveryLearning {
     word-break: normal !important;
   }
 
-  
-
   .neurolxpTurnsLearning,
   .neurolxpsLearningAnalytics,
   .getRealTimeInsights,
@@ -4194,7 +4129,6 @@ h2.makeEveryLearning {
     margin-bottom: 40px !important;
   }
 
-  
   .neurolxpsLearningAnalytics,
   .neurolxpTurnsLearning {
     font-size: 18px;
@@ -4340,8 +4274,6 @@ h2.makeEveryLearning {
     line-height: 22px !important;
     flex-wrap: wrap !important;
   }
-
-  
 
   .frameParent12 {
     margin-top: 32px !important;
@@ -4972,7 +4904,7 @@ h2.makeEveryLearning {
     box-sizing: border-box !important;
     overflow: visible !important;
     background: transparent !important;
-    box-shadow: none !important;
+    box-shadow:none !important;
   }
 
   .frameParent30 .frameWrapper3,
@@ -4991,16 +4923,15 @@ h2.makeEveryLearning {
 
   .frameParent30 .frameWrapper3 {
     background-color: #dfe6e9 !important;
-    box-shadow:
-      inset -8px -8px 16px #ffffff,
-      inset 8px 8px 16px #c4c4c4 !important;
+    box-shadow:inset -4px -4px 4px #ffffff,
+      inset 4px 4px 4px #c4c4c4 !important;
     overflow: hidden !important;
   }
 
   .frameParent30 .frameWrapper4,
   .frameParent30 .image20Parent {
     background: transparent !important;
-    box-shadow: none !important;
+    box-shadow:none !important;
     overflow: visible !important;
   }
 
@@ -5019,9 +4950,8 @@ h2.makeEveryLearning {
     transform: none !important;
     border-radius: 50% !important;
     background-color: #dfe6e9 !important;
-    box-shadow:
-      -8px -8px 16px #ffffff,
-      8px 8px 16px rgba(196, 196, 196, 0.9) !important;
+    box-shadow:-4px -4px 4px #ffffff,
+      4px 4px 4px rgba(196, 196, 196, 0.9) !important;
     display: flex !important;
     align-items: center !important;
     justify-content: center !important;
@@ -5234,8 +5164,6 @@ h2.makeEveryLearning {
     gap: 48px !important;
   }
 
-  
-
   .frameParent12,
   .frameParent2,
   .frameParent30,
@@ -5297,8 +5225,6 @@ h2.makeEveryLearning {
     min-height: 0 !important;
     gap: 12px !important;
   }
-
-  
 
   .neurolxpsLearningAnalytics {
     height: auto !important;
@@ -5459,7 +5385,6 @@ h2.makeEveryLearning {
     margin-bottom: 32px !important;
   }
 
-  
   .neurolxpsLearningAnalytics,
   .neurolxpTurnsLearning {
     font-size: 16px;
@@ -5772,8 +5697,6 @@ h2.makeEveryLearning {
     width: calc(100% - 24px) !important;
   }
 
-  
-
   .rectangleParent4,
   .rectangleParent5 {
     height: 170px !important;
@@ -5948,8 +5871,6 @@ h2.makeEveryLearning {
     width: min(100%, 250px) !important;
   }
 
-  
-
   .frameChild22,
   .frameChild23 {
     width: 50px !important;
@@ -6067,7 +5988,6 @@ h2.makeEveryLearning {
     padding-left: 8px !important;
   }
 
-  
 }
 
 @media (max-width: 320px) {
@@ -6232,8 +6152,6 @@ h2.makeEveryLearning {
   }
 }
 
-
-
 @keyframes analyticsProgressLoad {
   from {
     transform: scaleX(0);
@@ -6297,7 +6215,6 @@ h2.makeEveryLearning {
     margin-top: 4px !important;
   }
 
-  
   .frameParent15 {
     width: 1168px !important;
     display: grid !important;
@@ -6307,7 +6224,6 @@ h2.makeEveryLearning {
     gap: 36px !important;
   }
 
-  
   .frameParent16 {
     width: 360px !important;
     height: 364px !important;
@@ -6374,7 +6290,6 @@ h2.makeEveryLearning {
     text-align: center !important;
   }
 
-  
   .frameWrapper2 {
     position: relative !important;
     width: 772px !important;
@@ -6424,7 +6339,6 @@ h2.makeEveryLearning {
     font-size: 17px !important;
   }
 
-  
   .rectangleParent6 {
     position: relative !important;
     width: 100% !important;
@@ -6434,7 +6348,6 @@ h2.makeEveryLearning {
     overflow: hidden !important;
   }
 
-  
   .frameChild18,
   .frameChild19,
   .frameChild20 {
@@ -6483,7 +6396,6 @@ h2.makeEveryLearning {
     transform: none !important;
   }
 }
-
 
 .analyticsReportingInner {
   position: relative !important;
@@ -6582,7 +6494,7 @@ h2.makeEveryLearning {
   color: #31344b !important;
   text-align: left !important;
   white-space: normal !important;
-  text-shadow: none !important;
+  text-shadow:none !important;
   transform: translateY(15);
 }
 
@@ -6599,7 +6511,7 @@ h2.makeEveryLearning {
   color: #2f3547 !important;
   text-align: left !important;
   white-space: normal !important;
-  text-shadow: none !important;
+  text-shadow:none !important;
 }
 
 .analyticsReportingInner .frameParent23 {
@@ -6683,7 +6595,7 @@ h2.makeEveryLearning {
   text-align: left !important;
   white-space: nowrap !important;
   overflow-wrap: normal !important;
-  text-shadow: 0 .31cqw .31cqw rgba(0,0,0,.18) !important;
+  text-shadow:0 .31cqw .31cqw rgba(0,0,0,.18) !important;
   transform: none !important;
 }
 
@@ -6699,7 +6611,7 @@ h2.makeEveryLearning {
     background-size: 100% 100% !important;
     background-repeat: no-repeat !important;
     background-position: center center !important;
-    box-shadow: none !important;
+    box-shadow:none !important;
   }
 
   .analyticsReporting > .analyticsReportingInner::before,
@@ -6722,7 +6634,6 @@ h2.makeEveryLearning {
     filter: none !important;
   }
 }
-
 
 @media screen and (min-width: 1200px) {
   .frameParent30 .frameParent32,
@@ -6917,15 +6828,12 @@ h2.makeEveryLearning {
   }
 }
 
-
 @media screen and (min-width: 768px) {
   .frameParent30 .frameParent32 {
     position: relative !important;
     top: -30px !important;
   }
 }
-
-
 
 @media screen and (min-width: 768px) {
   .analyticsReporting > .analyticsReportingChild {
@@ -7084,7 +6992,6 @@ h2.makeEveryLearning {
   }
 }
 
-
 @media screen and (min-width: 768px) and (max-width: 900px) {
   .analyticsReporting > .analyticsReportingChild {
     width: calc(100% - 24px) !important;
@@ -7103,10 +7010,8 @@ h2.makeEveryLearning {
   }
 }
 
-
-
 @media screen and (min-width: 768px) {
-  
+
   .analyticsReporting > .analyticsReportingChild {
     position: relative !important;
     top: auto !important;
@@ -7129,7 +7034,6 @@ h2.makeEveryLearning {
     box-sizing: border-box !important;
   }
 
-  
   .analyticsReportingChild .frameWrapper15 {
     position: absolute !important;
     inset: 0 !important;
@@ -7141,9 +7045,8 @@ h2.makeEveryLearning {
     padding: 0 !important;
 
     background: #dfe6e9 !important;
-    box-shadow:
-      -8px -8px 16px #ffffff,
-      8px 8px 16px #c4c4c4 !important;
+    box-shadow:-4px -4px 4px #ffffff,
+      4px 4px 4px #c4c4c4 !important;
 
     border-radius: 50px !important;
     overflow: hidden !important;
@@ -7151,7 +7054,6 @@ h2.makeEveryLearning {
     box-sizing: border-box !important;
   }
 
-  
   .analyticsReportingChild .frameParent43 {
     position: absolute !important;
 
@@ -7165,9 +7067,8 @@ h2.makeEveryLearning {
     padding: 0 !important;
 
     background: #dfe6e9 !important;
-    box-shadow:
-      inset -8px -8px 16px #ffffff,
-      inset 8px 8px 16px #c4c4c4 !important;
+    box-shadow:inset -4px -4px 4px #ffffff,
+      inset 4px 4px 4px #c4c4c4 !important;
 
     border-radius: 8px !important;
     overflow: hidden !important;
@@ -7175,7 +7076,6 @@ h2.makeEveryLearning {
     box-sizing: border-box !important;
   }
 
-  
   .analyticsReportingChild .frameParent44 {
     position: absolute !important;
     top: 50% !important;
@@ -7209,7 +7109,6 @@ h2.makeEveryLearning {
     gap: 32px !important;
   }
 
-  
   .analyticsReportingChild .frameChild35 {
     width: 279.6px !important;
     height: 50.2px !important;
@@ -7227,7 +7126,6 @@ h2.makeEveryLearning {
     object-fit: contain !important;
   }
 
-  
   .analyticsReportingChild .identifyLearningGaps {
     width: 100% !important;
     height: auto !important;
@@ -7244,7 +7142,6 @@ h2.makeEveryLearning {
     padding: 0 !important;
   }
 
-  
   .analyticsReportingChild .maleCoworkersDoingPaperworkIcon {
     position: absolute !important;
 
@@ -7293,16 +7190,11 @@ h2.makeEveryLearning {
   }
 }
 
-
-
 @media screen and (min-width: 768px) {
   .analyticsReporting > .analyticsReportingChild {
     margin-top: -80px !important;
   }
 }
-
-
-
 
 .frameParent46 {
   width: min(1180px, calc(100% - 32px)) !important;
@@ -7327,11 +7219,9 @@ h2.makeEveryLearning {
   justify-items: stretch !important;
 }
 
-
 .frameParent46 .frameParent48 {
   display: contents !important;
 }
-
 
 .frameParent46 .rectangleParent9 {
   position: relative !important;
@@ -7347,7 +7237,6 @@ h2.makeEveryLearning {
   box-sizing: border-box !important;
 }
 
-
 .frameParent46 .frameChild36 {
   position: absolute !important;
   inset: 0 !important;
@@ -7358,7 +7247,6 @@ h2.makeEveryLearning {
   border-radius: 16px !important;
   box-sizing: border-box !important;
 }
-
 
 .frameParent46 .frameChild37,
 .frameParent46 .frameChild39 {
@@ -7374,13 +7262,10 @@ h2.makeEveryLearning {
   box-sizing: border-box !important;
 }
 
-
 .frameParent46 .frameChild37 {
-  box-shadow:
-    -5px -5px 10px #ffffff,
-    5px 5px 10px #c4c4c4 !important;
+  box-shadow:-4px -4px 4px #ffffff,
+    4px 4px 4px #c4c4c4 !important;
 }
-
 
 .frameParent46 .checkmarkSquare04Parent {
   position: absolute !important;
@@ -7418,7 +7303,6 @@ h2.makeEveryLearning {
   word-break: normal !important;
 }
 
-
 @media screen and (min-width: 768px) and (max-width: 1099px) {
   .frameParent46 {
     width: calc(100% - 32px) !important;
@@ -7430,7 +7314,6 @@ h2.makeEveryLearning {
     margin-top: -14px !important;
   }
 }
-
 
 @media screen and (max-width: 767px) {
   .frameParent46 {
@@ -7456,46 +7339,35 @@ h2.makeEveryLearning {
   }
 }
 
-
-
-
 .frameParent46 .frameParent47 {
   margin-top: -60px !important;
 }
 
-
 .frameParent46 .frameChild37,
 .frameParent46 .frameChild39 {
-  box-shadow:
-    -5px -5px 10px #ffffff,
-    5px 5px 10px #c4c4c4 !important;
+  box-shadow:-4px -4px 4px #ffffff,
+    4px 4px 4px #c4c4c4 !important;
   transform: none !important;
 }
-
 
 .frameParent46 .rectangleParent9:hover .frameChild37,
 .frameParent46 .rectangleParent9:hover .frameChild39,
 .frameParent46 .rectangleParent9:focus-visible .frameChild37,
 .frameParent46 .rectangleParent9:focus-visible .frameChild39 {
-  box-shadow:
-    inset -5px -5px 10px #ffffff,
-    inset 5px 5px 10px #c4c4c4 !important;
+  box-shadow:inset -4px -4px 4px #ffffff,
+    inset 4px 4px 4px #c4c4c4 !important;
   transform: translateY(1px) !important;
 }
-
 
 .frameParent46 .rectangleParent9 {
   cursor: default !important;
 }
-
 
 .frameParent46 .rectangleParent9 *,
 .frameParent46 .checkmarkSquare04Parent,
 .frameParent46 .checkmarkSquare04Icon {
   cursor: default !important;
 }
-
-
 
 @media screen and (min-width: 1024px) {
   .analyticsReporting > .frameParent50 {
@@ -7593,9 +7465,8 @@ h2.makeEveryLearning {
 
     border-radius: 32px !important;
     background-color: #dfe6e9 !important;
-    box-shadow:
-      10px 10px 20px #c4c4c4,
-      -10px -10px 20px #ffffff !important;
+    box-shadow:4px 4px 4px #c4c4c4,
+      -4px -4px 4px #ffffff !important;
 
     overflow: hidden !important;
     box-sizing: border-box !important;
@@ -7667,7 +7538,6 @@ h2.makeEveryLearning {
     transform: none !important;
   }
 }
-
 
 @media screen and (min-width: 600px) and (max-width: 1023px) {
   .analyticsReporting > .frameParent50 {
@@ -7763,7 +7633,6 @@ h2.makeEveryLearning {
     text-align: center !important;
   }
 }
-
 
 @media screen and (max-width: 599px) {
   .analyticsReporting > .frameParent50 {
@@ -7865,8 +7734,6 @@ h2.makeEveryLearning {
   }
 }
 
-
-
 @media screen and (min-width: 1024px) {
   .analyticsReporting > .frameParent50 {
     margin: 0 auto 48px !important;
@@ -7883,8 +7750,6 @@ h2.makeEveryLearning {
     top: -70px !important;
   }
 }
-
-
 
 @media screen and (min-width: 769px) {
   .analyticsReporting > .ellipseParent {
@@ -7919,7 +7784,7 @@ h2.makeEveryLearning {
     object-position: center !important;
 
     border-radius: 0 !important;
-    box-shadow: none !important;
+    box-shadow:none !important;
     background: transparent !important;
 
     z-index: 1 !important;
@@ -7964,9 +7829,8 @@ h2.makeEveryLearning {
     border-radius: 28px !important;
     background: #dfe6e9 !important;
 
-    box-shadow:
-      inset -8px -8px 16px #ffffff,
-      inset 8px 8px 16px #c4c4c4 !important;
+    box-shadow:inset -4px -4px 4px #ffffff,
+      inset 4px 4px 4px #c4c4c4 !important;
 
     display: flex !important;
     align-items: center !important;
@@ -8054,7 +7918,7 @@ h2.makeEveryLearning {
     color: #31344b !important;
     text-align: center !important;
 
-    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25) !important;
+    text-shadow:0 4px 4px rgba(0, 0, 0, 0.25) !important;
     overflow: visible !important;
   }
 
@@ -8145,9 +8009,8 @@ h2.makeEveryLearning {
     border-radius: 50px !important;
     background: #dfe6e9 !important;
 
-    box-shadow:
-      -4px -4px 8px #ffffff,
-      4px 4px 8px rgba(196, 196, 196, 0.8) !important;
+    box-shadow:-4px -4px 4px #ffffff,
+      4px 4px 4px rgba(196, 196, 196, 0.8) !important;
 
     display: flex !important;
     align-items: center !important;
@@ -8167,7 +8030,6 @@ h2.makeEveryLearning {
     box-sizing: border-box !important;
   }
 }
-
 
 @media screen and (max-width: 768px) {
   .analyticsReporting > .ellipseParent {
@@ -8308,8 +8170,6 @@ h2.makeEveryLearning {
   }
 }
 
-
-
 @media screen and (min-width: 769px) {
   .analyticsReporting > .ellipseParent {
     position: relative !important;
@@ -8344,7 +8204,6 @@ h2.makeEveryLearning {
     z-index: 1 !important;
   }
 
-  
   .ellipseParent .frameParent56 {
     position: absolute !important;
 
@@ -8370,7 +8229,6 @@ h2.makeEveryLearning {
     overflow: visible !important;
   }
 
-  
   .ellipseParent .frameChild50 {
     width: 164px !important;
     height: 50.1px !important;
@@ -8385,9 +8243,8 @@ h2.makeEveryLearning {
     border-radius: 28px !important;
     background-color: #dfe6e9 !important;
 
-    box-shadow:
-      inset -8px -8px 16px #ffffff,
-      inset 8px 8px 16px #c4c4c4 !important;
+    box-shadow:inset -4px -4px 4px #ffffff,
+      inset 4px 4px 4px #c4c4c4 !important;
 
     display: flex !important;
     align-items: center !important;
@@ -8461,7 +8318,6 @@ h2.makeEveryLearning {
     gap: 17px !important;
   }
 
-  
   .ellipseParent .makeEveryLearning {
     width: 100% !important;
     height: 68px !important;
@@ -8481,13 +8337,12 @@ h2.makeEveryLearning {
     color: #31344b !important;
     text-align: center !important;
 
-    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25) !important;
+    text-shadow:0 4px 4px rgba(0, 0, 0, 0.25) !important;
 
     display: inline-block !important;
     flex-shrink: 0 !important;
   }
 
-  
   .ellipseParent .goBeyondBasic {
     width: 858px !important;
     max-width: 100% !important;
@@ -8558,7 +8413,6 @@ h2.makeEveryLearning {
     justify-content: center !important;
   }
 
-  
   .ellipseParent .smarterAnalyticsBetterContainer {
     position: relative !important;
 
@@ -8584,7 +8438,6 @@ h2.makeEveryLearning {
     line-height: 48px !important;
   }
 
-  
   .ellipseParent .frameWrapper20 {
     width: 255px !important;
     height: 60.2px !important;
@@ -8613,9 +8466,8 @@ h2.makeEveryLearning {
     border-radius: 50px !important;
     background: #dfe6e9 !important;
 
-    box-shadow:
-      -4px -4px 8px #ffffff,
-      4px 4px 8px rgba(196, 196, 196, 0.8) !important;
+    box-shadow:-4px -4px 4px #ffffff,
+      4px 4px 4px rgba(196, 196, 196, 0.8) !important;
 
     display: flex !important;
     align-items: center !important;
@@ -8632,9 +8484,6 @@ h2.makeEveryLearning {
   }
 }
 
-
-
-
 @media screen and (min-width: 1025px) {
   .ellipseParent .frameParent56 {
     position: absolute !important;
@@ -8648,7 +8497,6 @@ h2.makeEveryLearning {
     margin: 0 !important;
     padding: 0 !important;
 
-    
     transform: translate(-50%, -130px) !important;
 
     display: flex !important;
@@ -8746,7 +8594,6 @@ h2.makeEveryLearning {
     gap: 12px !important;
   }
 
-  
   .ellipseParent .makeEveryLearning {
     width: 100% !important;
     height: auto !important;
@@ -8816,8 +8663,6 @@ h2.makeEveryLearning {
     white-space: nowrap !important;
   }
 }
-
-
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
   .ellipseParent .frameParent56 {
@@ -8910,8 +8755,6 @@ h2.makeEveryLearning {
   }
 }
 
-
-
 @media screen and (max-width: 768px) {
   .ellipseParent .frameParent56 {
     position: relative !important;
@@ -9002,8 +8845,6 @@ h2.makeEveryLearning {
   }
 }
 
-
-
 @media screen and (min-width: 1025px) {
   .ellipseParent .frameParent56 {
     gap: 18px !important;
@@ -9086,7 +8927,6 @@ h2.makeEveryLearning {
   }
 }
 
-
 @media screen and (min-width: 769px) and (max-width: 1024px) {
   .ellipseParent .makeEveryLearning {
     font-size: 30px !important;
@@ -9114,7 +8954,6 @@ h2.makeEveryLearning {
   }
 }
 
-
 @media screen and (max-width: 768px) {
   /* .ellipseParent .makeEveryLearning {
     font-size: 24px !important;
@@ -9139,29 +8978,24 @@ h2.makeEveryLearning {
   }
 }
 
-
-
 @media screen and (min-width: 1025px) {
-  
+
   .ellipseParent .frameParent56 {
     width: min(946px, calc(100% - 120px)) !important;
     max-width: calc(100% - 120px) !important;
     box-sizing: border-box !important;
   }
 
-  
   .ellipseParent .makeEveryLearning {
     font-size: 36px !important;
     line-height: 46px !important;
   }
 
-  
   .ellipseParent .goBeyondBasic {
     font-size: 24px !important;
     line-height: 34px !important;
   }
 
-  
   .ellipseParent .smarterAnalyticsBetterLearWrapper {
     margin-top: 18px !important;
     position: relative !important;
@@ -9174,7 +9008,6 @@ h2.makeEveryLearning {
     z-index: 3 !important;
   }
 
-  
   .ellipseParent .frameParent13 {
     gap: 0 !important;
   }
@@ -9184,8 +9017,6 @@ h2.makeEveryLearning {
     flex-shrink: 0 !important;
   }
 }
-
-
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
   .ellipseParent .frameParent56 {
@@ -9206,8 +9037,6 @@ h2.makeEveryLearning {
     gap: 0 !important;
   }
 }
-
-
 
 @media screen and (max-width: 768px) {
   .ellipseParent {
@@ -9258,7 +9087,6 @@ h2.makeEveryLearning {
   }
 }
 
-
 @media screen and (min-width: 1025px) {
   .ellipseParent .frameWrapper20 {
     margin-top: 42px !important;
@@ -9280,10 +9108,8 @@ h2.makeEveryLearning {
   }
 }
 
-
 @media screen and (max-width: 767px) {
 
-  
   .frameDiv {
     position: relative !important;
     top: auto !important;
@@ -9349,7 +9175,6 @@ h2.makeEveryLearning {
     flex: 0 0 12px !important;
   }
 
-  
   .frameParent12 {
     position: relative !important;
     top: auto !important;
@@ -9380,7 +9205,6 @@ h2.makeEveryLearning {
     transform: none !important;
   }
 
-  
   .frameParent12 .frameChild14 {
     width: min(88%, 400px) !important;
     max-width: 400px !important;
@@ -9412,7 +9236,6 @@ h2.makeEveryLearning {
     box-sizing: border-box !important;
   }
 
-  
   .frameParent12 .turnLearningDataContainer {
     width: min(100%, 445px) !important;
     max-width: 445px !important;
@@ -9444,7 +9267,6 @@ h2.makeEveryLearning {
     display: inline !important;
   }
 
-  
   .frameParent12 .neurolxpsLearningAnalytics {
     width: min(100%, 450px) !important;
     max-width: 450px !important;
@@ -9464,7 +9286,6 @@ h2.makeEveryLearning {
     transform: none !important;
   }
 
-  
   .frameParent12 .frameChild15 {
     width: 220px !important;
     max-width: 72% !important;
@@ -9479,7 +9300,6 @@ h2.makeEveryLearning {
     transform: none !important;
   }
 }
-
 
 @media screen and (max-width: 390px) {
   .frameDiv {
@@ -9513,10 +9333,8 @@ h2.makeEveryLearning {
   }
 }
 
-
 @media screen and (max-width: 767px) {
 
-  
   .frameParent12 .frameChild14 {
     display: block !important;
     margin-left: auto !important;
@@ -9524,7 +9342,6 @@ h2.makeEveryLearning {
     object-position: center center !important;
   }
 
-  
   .frameParent12 .turnLearningDataIntoActionParent {
     gap: 0 !important;
   }
@@ -9533,13 +9350,11 @@ h2.makeEveryLearning {
     margin-bottom: 10px !important;
   }
 
-  
   .frameParent12 .neurolxpsLearningAnalytics {
     margin-top: -2px !important;
     margin-bottom: 18px !important;
   }
 
-  
   .frameParent12 .frameChild15 {
     display: block !important;
     margin: 0 auto !important;
@@ -9548,10 +9363,8 @@ h2.makeEveryLearning {
   }
 }
 
-
 @media screen and (max-width: 767px) {
 
-  
   .frameParent12 .frameParent13,
   .frameParent12 .frameWrapper,
   .frameParent12 .frameParent14,
@@ -9563,7 +9376,6 @@ h2.makeEveryLearning {
     text-align: center !important;
   }
 
-  
   .frameParent12 .frameChild14 {
     position: relative !important;
     left: auto !important;
@@ -9573,13 +9385,11 @@ h2.makeEveryLearning {
     margin: 0 auto 14px !important;
   }
 
-  
   .frameParent12 .frameChild14,
   .frameParent12 .frameChild14 * {
     text-align: center !important;
   }
 
-  
   .frameParent12 .turnLearningDataContainer {
     position: relative !important;
     left: auto !important;
@@ -9590,7 +9400,6 @@ h2.makeEveryLearning {
     text-align: center !important;
   }
 
-  
   .frameParent12 .neurolxpsLearningAnalytics {
     position: relative !important;
     left: auto !important;
@@ -9604,7 +9413,6 @@ h2.makeEveryLearning {
     text-align: center !important;
   }
 
-  
   .frameParent12 .frameChild15 {
     position: relative !important;
     left: auto !important;
@@ -9618,7 +9426,6 @@ h2.makeEveryLearning {
     object-position: 50% 50% !important;
   }
 
-  
   .frameParent12 button,
   .frameParent12 a {
     text-align: center !important;
@@ -9631,10 +9438,8 @@ h2.makeEveryLearning {
   }
 }
 
-
 @media screen and (max-width: 767px) {
 
-  
   .frameParent12 .turnLearningDataIntoActionParent {
     display: flex !important;
     flex-direction: column !important;
@@ -9643,7 +9448,6 @@ h2.makeEveryLearning {
     text-align: center !important;
   }
 
-  
   .frameParent12 .frameChild14 {
     position: relative !important;
     inset: auto !important;
@@ -9660,13 +9464,11 @@ h2.makeEveryLearning {
     object-position: center center !important;
   }
 
-  
   .frameParent12 .frameChild14 + *,
   .frameParent12 .frameChild14 span {
     text-align: center !important;
   }
 
-  
   .frameParent12 .turnLearningDataContainer {
     position: relative !important;
     inset: auto !important;
@@ -9675,7 +9477,6 @@ h2.makeEveryLearning {
     text-align: center !important;
   }
 
-  
   .frameParent12 .neurolxpsLearningAnalytics {
     position: relative !important;
     inset: auto !important;
@@ -9691,7 +9492,6 @@ h2.makeEveryLearning {
     text-align: center !important;
   }
 
-  
   .frameParent12 .frameChild15 {
     position: relative !important;
     inset: auto !important;
@@ -9708,7 +9508,6 @@ h2.makeEveryLearning {
     object-position: center center !important;
   }
 
-  
   .frameParent12 button,
   .frameParent12 a[class*="demo"],
   .frameParent12 [class*="book"][class*="demo"] {
@@ -9726,10 +9525,8 @@ h2.makeEveryLearning {
   }
 }
 
-
 @media screen and (max-width: 767px) {
 
-  
   .frameDiv {
     position: relative !important;
     inset: auto !important;
@@ -9787,7 +9584,6 @@ h2.makeEveryLearning {
     flex: 0 0 10px !important;
   }
 
-  
   .frameParent12 .frameChild14 {
     position: relative !important;
     inset: auto !important;
@@ -9807,7 +9603,6 @@ h2.makeEveryLearning {
     object-position: 50% 50% !important;
   }
 
-  
   .frameParent12 .turnLearningDataContainer {
     width: 100% !important;
     max-width: 465px !important;
@@ -9836,7 +9631,6 @@ h2.makeEveryLearning {
     line-height: 31px !important;
   }
 
-  
   .frameParent12 .neurolxpsLearningAnalytics {
     position: relative !important;
     inset: auto !important;
@@ -9853,7 +9647,6 @@ h2.makeEveryLearning {
     text-align: center !important;
   }
 
-  
   .frameParent12 .frameChild15 {
     position: relative !important;
     inset: auto !important;
@@ -9882,7 +9675,6 @@ h2.makeEveryLearning {
     text-align: center !important;
   }
 
-  
   .frameParent12 .frameParent13,
   .frameParent12 .frameWrapper,
   .frameParent12 .frameParent14,
@@ -9892,7 +9684,6 @@ h2.makeEveryLearning {
     gap: 0 !important;
   }
 }
-
 
 @media screen and (max-width: 390px) {
   .frameDiv {
@@ -9917,10 +9708,8 @@ h2.makeEveryLearning {
   }
 }
 
-
 @media screen and (max-width: 767px) {
 
-  
   .frameParent12 .frameParent13,
   .frameParent12 .frameWrapper,
   .frameParent12 .frameParent14,
@@ -9943,7 +9732,6 @@ h2.makeEveryLearning {
     gap: 14px !important;
   }
 
-  
   .frameParent12 .frameChild14 {
     position: relative !important;
     inset: auto !important;
@@ -9966,12 +9754,10 @@ h2.makeEveryLearning {
     transform: none !important;
   }
 
-  
   .frameParent12 .turnLearningDataContainer br {
     display: none !important;
   }
 
-  
   .frameParent12 .turnLearningDataContainer {
     position: relative !important;
     inset: auto !important;
@@ -10000,12 +9786,10 @@ h2.makeEveryLearning {
     line-height: 31px !important;
   }
 
-  
   .frameParent12 .neurolxpsLearningAnalytics br {
     display: none !important;
   }
 
-  
   .frameParent12 .neurolxpsLearningAnalytics {
     position: relative !important;
     inset: auto !important;
@@ -10024,7 +9808,6 @@ h2.makeEveryLearning {
     box-sizing: border-box !important;
   }
 
-  
   .frameParent12 .frameChild15 {
     position: relative !important;
     inset: auto !important;
@@ -10049,7 +9832,6 @@ h2.makeEveryLearning {
     transform: none !important;
   }
 
-  
   .frameParent12 .frameParent13 {
     gap: 0 !important;
   }
@@ -10058,7 +9840,6 @@ h2.makeEveryLearning {
     gap: 0 !important;
   }
 }
-
 
 @media screen and (max-width: 390px) {
   .frameParent12 .turnLearningDataContainer {
@@ -10079,10 +9860,8 @@ h2.makeEveryLearning {
   }
 }
 
-
 @media screen and (max-width: 767px) {
 
-  
   .frameParent12 .frameParent15 {
     position: relative !important;
     left: auto !important;
@@ -10102,7 +9881,6 @@ h2.makeEveryLearning {
     box-sizing: border-box !important;
   }
 
-  
   .frameParent12 .frameParent16 {
     width: 100% !important;
     max-width: 360px !important;
@@ -10127,7 +9905,6 @@ h2.makeEveryLearning {
     box-sizing: border-box !important;
   }
 
-  
   .frameParent12 .frameWrapper2 {
     width: 100% !important;
     max-width: 420px !important;
@@ -10150,13 +9927,11 @@ h2.makeEveryLearning {
   }
 }
 
-
 @media screen and (max-width: 390px) {
   .frameParent12 .frameParent15 {
     width: calc(100% - 24px) !important;
   }
 }
-
 
 @media screen and (max-width: 767px) {
   .analyticsReporting > .frameParent2 {
@@ -10164,7 +9939,6 @@ h2.makeEveryLearning {
     margin-top: 80px !important;
   }
 }
-
 
 @media screen and (max-width: 767px) {
 
@@ -10213,7 +9987,6 @@ h2.makeEveryLearning {
     transform: none !important;
   }
 
-  
   .analyticsReportingInner .frameParent21 {
     position: relative !important;
     top: auto !important;
@@ -10301,7 +10074,6 @@ h2.makeEveryLearning {
     transform: none !important;
   }
 
-  
   .analyticsReportingInner .frameParent23 {
     position: relative !important;
     top: auto !important;
@@ -10434,15 +10206,12 @@ h2.makeEveryLearning {
   }
 }
 
-
 @media screen and (max-width: 767px) {
 
-  
   .analyticsReporting > .analyticsReportingInner {
     margin-top: -24px !important;
   }
 
-  
   .analyticsReportingInner .frameChild21 {
     width: 180px !important;
     max-width: 58vw !important;
@@ -10474,15 +10243,12 @@ h2.makeEveryLearning {
   }
 }
 
-
 @media screen and (max-width: 767px) {
 
-  
   .analyticsReporting > .analyticsReportingInner {
     margin-top: -36px !important;
   }
 
-  
   .analyticsReportingInner .frameChild21 {
     width: fit-content !important;
     min-width: 0 !important;
@@ -10525,7 +10291,6 @@ h2.makeEveryLearning {
   }
 }
 
-
 @media screen and (max-width: 767px) {
   .analyticsReportingInner .frameChild21 {
     font-size: 14px !important;
@@ -10539,7 +10304,6 @@ h2.makeEveryLearning {
     font-size: 13px !important;
   }
 }
-
 
 @media screen and (max-width: 767px) {
 
@@ -10566,7 +10330,6 @@ h2.makeEveryLearning {
     text-align: center !important;
   }
 
-  
   .analyticsReportingChild .frameWrapper15 {
     position: absolute !important;
     inset: 0 !important;
@@ -10578,9 +10341,8 @@ h2.makeEveryLearning {
     padding: 0 !important;
 
     background: #dfe6e9 !important;
-    box-shadow:
-      -8px -8px 16px #ffffff,
-      8px 8px 16px #c4c4c4 !important;
+    box-shadow:-4px -4px 4px #ffffff,
+      4px 4px 4px #c4c4c4 !important;
 
     border-radius: 32px !important;
     overflow: hidden !important;
@@ -10588,7 +10350,6 @@ h2.makeEveryLearning {
     box-sizing: border-box !important;
   }
 
-  
   .analyticsReportingChild .frameParent43 {
     position: absolute !important;
 
@@ -10602,9 +10363,8 @@ h2.makeEveryLearning {
     padding: 0 !important;
 
     background: #dfe6e9 !important;
-    box-shadow:
-      inset -8px -8px 16px #ffffff,
-      inset 8px 8px 16px #c4c4c4 !important;
+    box-shadow:inset -4px -4px 4px #ffffff,
+      inset 4px 4px 4px #c4c4c4 !important;
 
     border-radius: 12px !important;
     overflow: hidden !important;
@@ -10612,7 +10372,6 @@ h2.makeEveryLearning {
     box-sizing: border-box !important;
   }
 
-  
   .analyticsReportingChild .frameParent44 {
     position: absolute !important;
 
@@ -10651,7 +10410,6 @@ h2.makeEveryLearning {
     gap: 22px !important;
   }
 
-  
   .analyticsReportingChild .frameChild35 {
     width: min(290px, 82%) !important;
     height: 58px !important;
@@ -10669,7 +10427,6 @@ h2.makeEveryLearning {
     transform: none !important;
   }
 
-  
   .analyticsReportingChild .identifyLearningGaps {
     width: 100% !important;
     max-width: 340px !important;
@@ -10689,7 +10446,6 @@ h2.makeEveryLearning {
     transform: none !important;
   }
 
-  
   .analyticsReportingChild .aiAnalyticsSpot {
     width: 100% !important;
     max-width: 340px !important;
@@ -10709,7 +10465,6 @@ h2.makeEveryLearning {
     transform: none !important;
   }
 
-  
   .analyticsReportingChild .maleCoworkersDoingPaperworkIcon {
     position: absolute !important;
 
@@ -10730,7 +10485,6 @@ h2.makeEveryLearning {
     z-index: 2 !important;
   }
 }
-
 
 @media screen and (max-width: 390px) {
 
@@ -10782,10 +10536,8 @@ h2.makeEveryLearning {
   }
 }
 
-
 @media screen and (max-width: 767px) {
 
-  
   .analyticsReporting > .analyticsReportingChild {
     height: 560px !important;
     min-height: 560px !important;
@@ -10800,7 +10552,6 @@ h2.makeEveryLearning {
     height: calc(100% - 32px) !important;
   }
 
-  
   .analyticsReportingChild .frameParent44 {
     top: 38px !important;
     gap: 18px !important;
@@ -10810,7 +10561,6 @@ h2.makeEveryLearning {
     gap: 18px !important;
   }
 
-  
   .analyticsReportingChild .maleCoworkersDoingPaperworkIcon {
     bottom: 0 !important;
     width: min(88%, 390px) !important;
@@ -10841,7 +10591,6 @@ h2.makeEveryLearning {
     max-height: 220px !important;
   }
 }
-
 
 @media screen and (max-width: 767px) {
   .analyticsReporting > .analyticsReportingChild {
@@ -10879,7 +10628,6 @@ h2.makeEveryLearning {
   }
 }
 
-
 @media screen and (max-width: 767px) {
   .analyticsReporting > .analyticsReportingChild {
     height: 500px !important;
@@ -10916,7 +10664,6 @@ h2.makeEveryLearning {
   }
 }
 
-
 @media screen and (max-width: 767px) {
   .frameParent46 > .frameWrapper16 {
     position: relative !important;
@@ -10925,7 +10672,6 @@ h2.makeEveryLearning {
     transform: none !important;
   }
 }
-
 
 @media screen and (max-width: 767px) {
   .frameParent50 {
@@ -10942,10 +10688,8 @@ h2.makeEveryLearning {
   }
 }
 
-
 @media screen and (max-width: 767px) {
 
-  
   .frameParent50 {
     position: relative !important;
     top: auto !important;
@@ -10967,7 +10711,6 @@ h2.makeEveryLearning {
     transform: none !important;
   }
 
-  
   .frameParent50 .turnDataIntoContainer {
     position: relative !important;
 
@@ -10984,7 +10727,6 @@ h2.makeEveryLearning {
     transform: none !important;
   }
 
-  
   .frameParent50 .builtForEvery {
     position: relative !important;
 
@@ -11014,15 +10756,12 @@ h2.makeEveryLearning {
   }
 }
 
-
 @media screen and (max-width: 767px) {
 
-  
   .frameParent50 .turnDataIntoContainer {
     margin-bottom: 14px !important;
   }
 
-  
   .frameParent50 .builtForEvery {
     width: 100% !important;
     max-width: 390px !important;
@@ -11053,10 +10792,8 @@ h2.makeEveryLearning {
   }
 }
 
-
 @media screen and (max-width: 767px) {
 
-  
   .analyticsReporting > .ellipseParent {
     position: relative !important;
     top: auto !important;
@@ -11079,7 +10816,6 @@ h2.makeEveryLearning {
     transform: none !important;
   }
 
-  
   .ellipseParent .ellipseIcon {
     position: absolute !important;
     inset: 0 !important;
@@ -11100,7 +10836,6 @@ h2.makeEveryLearning {
     z-index: 1 !important;
   }
 
-  
   .ellipseParent .frameParent56 {
     position: absolute !important;
 
@@ -11128,7 +10863,6 @@ h2.makeEveryLearning {
     z-index: 3 !important;
   }
 
-  
   .ellipseParent .frameChild50 {
     width: 190px !important;
     max-width: 62vw !important;
@@ -11188,7 +10922,6 @@ h2.makeEveryLearning {
     gap: 14px !important;
   }
 
-  
   /* .ellipseParent .makeEveryLearning {
     width: 100% !important;
     max-width: 350px !important;
@@ -11208,7 +10941,6 @@ h2.makeEveryLearning {
     transform: none !important;
   } */
 
-  
   .ellipseParent .goBeyondBasic {
     width: 100% !important;
     max-width: 350px !important;
@@ -11228,7 +10960,6 @@ h2.makeEveryLearning {
     transform: none !important;
   }
 
-  
   .ellipseParent .frameWrapper18 {
     display: flex !important;
     align-items: center !important;
@@ -11270,7 +11001,6 @@ h2.makeEveryLearning {
     line-height: inherit !important;
   }
 
-  
   .ellipseParent .frameWrapper20 {
     width: 220px !important;
     max-width: 70vw !important;
@@ -11301,7 +11031,6 @@ h2.makeEveryLearning {
     transform: none !important;
   }
 }
-
 
 @media screen and (max-width: 390px) {
 
@@ -11355,7 +11084,6 @@ h2.makeEveryLearning {
   }
 }
 
-
 @media screen and (max-width: 767px) {
 
   .analyticsReporting > .ellipseParent {
@@ -11377,7 +11105,6 @@ h2.makeEveryLearning {
     transform: none !important;
   }
 
-  
   .ellipseParent .ellipseIcon {
     position: absolute !important;
     top: 0 !important;
@@ -11399,7 +11126,6 @@ h2.makeEveryLearning {
     z-index: 1 !important;
   }
 
-  
   .ellipseParent .frameParent56 {
     position: absolute !important;
 
@@ -11425,7 +11151,6 @@ h2.makeEveryLearning {
     box-sizing: border-box !important;
   }
 
-  
   .ellipseParent .frameChild50 {
     width: 180px !important;
     max-width: 56vw !important;
@@ -11478,7 +11203,6 @@ h2.makeEveryLearning {
     gap: 10px !important;
   }
 
-  
   /* .ellipseParent .makeEveryLearning {
     width: 100% !important;
     max-width: 330px !important;
@@ -11498,7 +11222,6 @@ h2.makeEveryLearning {
     transform: none !important;
   } */
 
-  
   .ellipseParent .goBeyondBasic {
     width: 100% !important;
     max-width: 340px !important;
@@ -11518,7 +11241,6 @@ h2.makeEveryLearning {
     transform: none !important;
   }
 
-  
   .ellipseParent .frameWrapper18 {
     margin-top: 0 !important;
 
@@ -11557,7 +11279,6 @@ h2.makeEveryLearning {
     line-height: inherit !important;
   }
 
-  
   .ellipseParent .frameWrapper20 {
     width: 210px !important;
     max-width: 66vw !important;
@@ -11647,10 +11368,8 @@ h2.makeEveryLearning {
   }
 }
 
-
 @media screen and (max-width: 767px) {
 
-  
   .analyticsReporting > .ellipseParent {
     position: relative !important;
     inset: auto !important;
@@ -11670,7 +11389,6 @@ h2.makeEveryLearning {
     transform: none !important;
   }
 
-  
   .ellipseParent .ellipseIcon {
     position: absolute !important;
     top: 0 !important;
@@ -11692,7 +11410,6 @@ h2.makeEveryLearning {
     z-index: 1 !important;
   }
 
-  
   .ellipseParent .frameParent56 {
     position: absolute !important;
 
@@ -11718,7 +11435,6 @@ h2.makeEveryLearning {
     box-sizing: border-box !important;
   }
 
-  
   .ellipseParent .frameChild50 {
     width: 185px !important;
     max-width: 58vw !important;
@@ -11777,7 +11493,6 @@ h2.makeEveryLearning {
     gap: 12px !important;
   }
 
-  
   /* .ellipseParent .makeEveryLearning {
     width: 100% !important;
     max-width: 325px !important;
@@ -11797,7 +11512,6 @@ h2.makeEveryLearning {
     transform: none !important;
   } */
 
-  
   .ellipseParent .goBeyondBasic {
     width: 100% !important;
     max-width: 330px !important;
@@ -11817,7 +11531,6 @@ h2.makeEveryLearning {
     transform: none !important;
   }
 
-  
   .ellipseParent .frameWrapper18,
   .ellipseParent .smarterAnalyticsBetterLearWrapper {
     display: flex !important;
@@ -11853,7 +11566,6 @@ h2.makeEveryLearning {
     line-height: inherit !important;
   }
 
-  
   .ellipseParent .frameWrapper20 {
     position: relative !important;
     inset: auto !important;
@@ -11949,10 +11661,8 @@ h2.makeEveryLearning {
   }
 }
 
-
 @media screen and (max-width: 767px) {
 
-  
   .analyticsReporting > .ellipseParent {
     position: relative !important;
     inset: auto !important;
@@ -11968,7 +11678,7 @@ h2.makeEveryLearning {
     padding: 32px 20px 36px !important;
 
     background: transparent !important;
-    box-shadow: none !important;
+    box-shadow:none !important;
     border: 0 !important;
     border-radius: 0 !important;
 
@@ -11977,12 +11687,10 @@ h2.makeEveryLearning {
     transform: none !important;
   }
 
-  
   .ellipseParent .ellipseIcon {
     display: none !important;
   }
 
-  
   .ellipseParent .frameParent56 {
     position: relative !important;
     inset: auto !important;
@@ -12006,7 +11714,6 @@ h2.makeEveryLearning {
     box-sizing: border-box !important;
   }
 
-  
   .ellipseParent .frameChild50 {
     width: 180px !important;
     max-width: 62vw !important;
@@ -12063,7 +11770,6 @@ h2.makeEveryLearning {
     gap: 14px !important;
   }
 
-  
   .ellipseParent .makeEveryLearning {
     width: 100% !important;
     max-width: 360px !important;
@@ -12083,7 +11789,6 @@ h2.makeEveryLearning {
     transform: none !important;
   }
 
-  
   .ellipseParent .goBeyondBasic {
     width: 100% !important;
     max-width: 370px !important;
@@ -12103,7 +11808,6 @@ h2.makeEveryLearning {
     transform: none !important;
   }
 
-  
   .ellipseParent .frameWrapper18,
   .ellipseParent .smarterAnalyticsBetterLearWrapper {
     display: flex !important;
@@ -12135,7 +11839,6 @@ h2.makeEveryLearning {
     line-height: inherit !important;
   }
 
-  
   .ellipseParent .frameWrapper20 {
     position: relative !important;
     inset: auto !important;
@@ -12223,10 +11926,8 @@ h2.makeEveryLearning {
   }
 }
 
-
 @media screen and (max-width: 767px) {
 
-  
   .analyticsReporting > .ellipseParent {
     margin-top: 4px !important;
   }
@@ -12235,7 +11936,6 @@ h2.makeEveryLearning {
     margin-top: -10px !important;
   }
 
-  
   .ellipseParent .smarterAnalyticsBetterContainer {
     width: 100% !important;
     max-width: 360px !important;
@@ -12252,7 +11952,6 @@ h2.makeEveryLearning {
     display: block !important;
   }
 
-  
   .ellipseParent .frameWrapper20 {
     margin-top: 18px !important;
   }
@@ -12279,7 +11978,6 @@ h2.makeEveryLearning {
   }
 }
 
-
 @media screen and (max-width: 767px) {
   .analyticsReporting > .ellipseParent {
     margin-top: -18px !important;
@@ -12291,7 +11989,6 @@ h2.makeEveryLearning {
     margin-top: -12px !important;
   }
 
-  
   .ellipseParent .frameWrapper20 {
     margin-top: 14px !important;
   }
@@ -12322,9 +12019,8 @@ h2.makeEveryLearning {
 .frameParent12 .frameChild15:hover,
 .frameParent12 .frameChild15:active,
 .frameParent12 .frameChild15:focus-visible {
-  box-shadow:
-    inset -4px -4px 8px #ffffff,
-    inset 4px 4px 8px rgba(196, 196, 196, 0.8) !important;
+  box-shadow:inset -4px -4px 4px #ffffff,
+    inset 4px 4px 4px rgba(196, 196, 196, 0.8) !important;
 }
 
 /* ---------- BOTTOM / SECOND BOOK A DEMO ---------- */
@@ -12343,9 +12039,8 @@ h2.makeEveryLearning {
 .ellipseParent .frameChild51:focus-visible,
 .ellipseParent .frameWrapper20:active .frameChild51,
 .ellipseParent .frameWrapper20:focus-visible .frameChild51 {
-  box-shadow:
-    inset -4px -4px 8px #ffffff,
-    inset 4px 4px 8px rgba(196, 196, 196, 0.8) !important;
+  box-shadow:inset -4px -4px 4px #ffffff,
+    inset 4px 4px 4px rgba(196, 196, 196, 0.8) !important;
 }
 
 @media screen and (min-width: 769px) {
@@ -12360,7 +12055,6 @@ h2.makeEveryLearning {
     padding-bottom: 0 !important;
   }
 }
-
 
 @media screen and (min-width: 769px) {
   .analyticsReporting > .ellipseParent {
@@ -12664,7 +12358,6 @@ h2.makeEveryLearning {
     margin-top: 0 !important;
   }
 
-
   /* =======================================================
      SECTION 2 — GET STARTED CTA
      Add separation from the four cards above.
@@ -12693,6 +12386,477 @@ h2.makeEveryLearning {
 
     margin: 0 !important;
     transform: translateX(-50%) !important;
+  }
+}
+
+/* =========================================================
+   BOOK A DEMO — WORKING CLICK + NO BLACK/NATIVE FOCUS RING
+   Keeps existing size, background, radius and shadows.
+   ========================================================= */
+
+/* Make sure both actual BookDemoTrigger buttons receive the click. */
+.frameParent12 .frameChild15,
+.ellipseParent .frameChild51 {
+  pointer-events: auto !important;
+  cursor: pointer !important;
+  position: relative !important;
+  z-index: 100 !important;
+  appearance: none !important;
+  -webkit-appearance: none !important;
+  border: 0 !important;
+  outline: 0 !important;
+  -webkit-tap-highlight-color: transparent !important;
+}
+
+/* Keep the surrounding CTA layers from sitting above the clickable button. */
+.frameParent12 .frameParent13,
+.frameParent12 .frameWrapper,
+.ellipseParent .frameWrapper20,
+.ellipseParent .frameParent56,
+.ellipseParent .frameParent13 {
+  pointer-events: auto !important;
+}
+
+/* Remove browser/native black focus ring only. */
+.frameParent12 .frameChild15:focus,
+.frameParent12 .frameChild15:focus-visible,
+.frameParent12 .frameChild15:active,
+.ellipseParent .frameChild51:focus,
+.ellipseParent .frameChild51:focus-visible,
+.ellipseParent .frameChild51:active {
+  border: 0 !important;
+  outline: 0 !important;
+  outline-offset: 0 !important;
+}
+
+/* Preserve the existing neumorphic pressed state. */
+.frameParent12 .frameChild15:hover,
+.frameParent12 .frameChild15:active,
+.frameParent12 .frameChild15:focus-visible,
+.ellipseParent .frameChild51:hover,
+.ellipseParent .frameChild51:active,
+.ellipseParent .frameChild51:focus-visible {
+  box-shadow:inset -4px -4px 4px #ffffff,
+    inset 4px 4px 4px rgba(196, 196, 196, 0.8) !important;
+}
+
+.frameParent12 .frameChild15::-moz-focus-inner,
+.ellipseParent .frameChild51::-moz-focus-inner {
+  border: 0 !important;
+  padding: 0 !important;
+}
+
+/* =========================================================
+   DESKTOP SPACING ONLY — matched to supplied Figma CSS
+   No colors, fonts, sizes, shadows, borders or navigation changed.
+   ========================================================= */
+@media screen and (min-width: 1024px) {
+  /* Main vertical section groups — Figma: gap 50px */
+  .frameParent10,
+  .frameParent14,
+  .frameParent19,
+  .frameParent28,
+  .frameParent35,
+  .frameParent44,
+  .frameParent52 {
+    gap: 50px !important;
+  }
+
+  /* Heading / supporting-copy groups — Figma: gap 32px */
+  .frameParent11,
+  .frameParent15,
+  .frameParent20,
+  .frameParent29,
+  .frameParent36,
+  .frameParent45,
+  .frameParent53 {
+    gap: 32px !important;
+  }
+
+  /* Why Analytics Matters card rows — Figma: gap 80px */
+  .frameParent12,
+  .frameParent17 {
+    gap: 80px !important;
+  }
+
+  /* Icon + card label stacks — Figma: gap 16px */
+  .frameParent13,
+  .frameParent16,
+  .frameParent18 {
+    gap: 16px !important;
+  }
+
+  /* Analytics/reporting content groups — Figma: gap 36px */
+  .frameParent21,
+  .frameParent22,
+  .frameParent23 {
+    gap: 36px !important;
+  }
+
+  /* Inner statistic/card groups — Figma: 24px / 12px */
+  .frameParent24 {
+    gap: 24px !important;
+  }
+
+  .frameParent25,
+  .frameParent26 {
+    gap: 12px !important;
+  }
+}
+
+/* =========================================================
+   DESKTOP PAGE FLOW / ALIGNMENT — CLEAN FIX
+   Starts from the original CSS. Positioning only.
+   No broad descendant resizing; no design changes.
+   ========================================================= */
+@media screen and (min-width: 1025px) {
+  /* Restore every major section to its intended desktop slot. */
+  .frameParent12 {
+    top: 168px !important;
+    left: 80px !important;
+    width: 1280px !important;
+    transform: none !important;
+  }
+
+  .frameParent2 {
+    top: 1120.52px !important;
+    left: calc(50% - 605px) !important;
+    width: 1210px !important;
+    transform: none !important;
+  }
+
+  .analyticsReportingInner {
+    top: 2285.52px !important;
+    left: calc(50% - 640px) !important;
+    width: 1280px !important;
+  }
+
+  .frameParent30 {
+    top: 3011.52px !important;
+    left: 78px !important;
+    width: 1285px !important;
+    transform: none !important;
+  }
+
+  .analyticsReportingChild {
+    top: 3849.52px !important;
+    left: 80px !important;
+    width: 1280px !important;
+  }
+
+  .frameParent46 {
+    top: 4574px !important;
+    left: 95px !important;
+    width: 1251px !important;
+    transform: none !important;
+  }
+
+  .frameParent50 {
+    top: 5184px !important;
+    left: calc(50% - 627px) !important;
+    width: 1254px !important;
+    transform: none !important;
+  }
+
+  .ellipseParent {
+    top: 5666px !important;
+    left: 80px !important;
+    width: 1286px !important;
+  }
+
+  /* Remove only the offsets that were pulling content into neighbouring sections. */
+  .frameParent3,
+  .frameParent4,
+  .turnLearningDataContainer,
+  .neurolxpsLearningAnalytics,
+  .frameParent15,
+  .frameParent32,
+  .turnDataIntoContainer,
+  .builtForEvery {
+    transform: none !important;
+  }
+
+  /* Keep the analytics heading/CTA and lower row centered without touching nested wrappers. */
+  .frameParent12 > .frameParent13 {
+    width: 100% !important;
+    margin: 0 auto !important;
+  }
+
+  .frameParent12 > .frameParent15 {
+    width: 1232px !important;
+    margin: 0 auto !important;
+    justify-content: center !important;
+  }
+
+  .frameParent12 > .frameParent13 > .frameWrapper {
+    width: 100% !important;
+    align-items: center !important;
+  }
+
+  .frameParent12 .frameChild15 {
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  /* Keep each major section above the next one visually. */
+  .frameParent12,
+  .frameParent2,
+  .analyticsReportingInner,
+  .frameParent30,
+  .analyticsReportingChild,
+  .frameParent46,
+  .frameParent50,
+  .ellipseParent {
+    box-sizing: border-box !important;
+  }
+}
+
+/* =========================================================
+   LEARNING ANALYTICS & REPORTING — FINAL SECTION ALIGNMENT
+   Only this section is adjusted to match the supplied reference.
+   ========================================================= */
+@media screen and (min-width: 1025px) {
+  .frameParent12 {
+    height: 856.52px !important;
+    gap: 50px !important;
+  }
+
+  /* Top content block: badge + title/description + CTA */
+  .frameParent12 > .frameParent13 {
+    width: 1280px !important;
+    height: 370.52px !important;
+    flex: 0 0 370.52px !important;
+    gap: 50px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  .frameParent12 > .frameParent13 > .frameWrapper {
+    width: 1280px !important;
+    height: 260.32px !important;
+    flex: 0 0 260.32px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  .frameParent12 .frameParent14 {
+    width: 931px !important;
+    height: 260.32px !important;
+    flex: 0 0 260.32px !important;
+    margin: 0 auto !important;
+    gap: 32px !important;
+  }
+
+  .frameParent12 .frameChild14 {
+    width: 407.66px !important;
+    height: 50px !important;
+    flex: 0 0 50px !important;
+  }
+
+  .frameParent12 .turnLearningDataIntoActionParent {
+    width: 1082px !important;
+    height: 178px !important;
+    flex: 0 0 178px !important;
+    margin: 0 auto !important;
+    gap: 32px !important;
+  }
+
+  .frameParent12 .turnLearningDataContainer {
+    width: 1082px !important;
+    height: 63px !important;
+    min-height: 63px !important;
+    margin: 0 !important;
+    transform: none !important;
+  }
+
+  .frameParent12 .neurolxpsLearningAnalytics {
+    width: 1082px !important;
+    height: 72px !important;
+    min-height: 72px !important;
+    margin: 0 !important;
+    transform: none !important;
+  }
+
+  .frameParent12 .frameChild15 {
+    width: 255.26px !important;
+    height: 60px !important;
+    flex: 0 0 60px !important;
+    margin: 0 auto !important;
+    transform: none !important;
+  }
+
+  /* Bottom row: cards and program panel start on the same line */
+  .frameParent12 > .frameParent15 {
+    width: 1232px !important;
+    height: 436px !important;
+    flex: 0 0 436px !important;
+    margin: 0 auto !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 36px !important;
+    transform: none !important;
+  }
+
+  .frameParent12 .frameParent16 {
+    width: 420px !important;
+    height: 436px !important;
+    flex: 0 0 420px !important;
+    gap: 36px !important;
+    margin: 0 !important;
+  }
+
+  .frameParent12 .rectangleParent4,
+  .frameParent12 .rectangleParent5 {
+    width: 420px !important;
+    height: 200px !important;
+    flex: 0 0 200px !important;
+    margin: 0 !important;
+  }
+
+  .frameParent12 .frameWrapper2 {
+    width: 776px !important;
+    height: 424px !important;
+    flex: 0 0 776px !important;
+    margin: 0 !important;
+    align-self: center !important;
+  }
+
+  /* Remove the extra visual gap visible in the screenshot. */
+  .frameParent12 > .frameParent15 {
+    margin-top: 0 !important;
+  }
+}
+
+/* =========================================================
+   LEFT STAT CARDS — ALIGNMENT ONLY
+   Keeps the right Learning Programs panel unchanged.
+   ========================================================= */
+@media screen and (min-width: 1025px) {
+  .frameParent12 .frameParent16 {
+    width: 420px !important;
+    height: 436px !important;
+    flex: 0 0 420px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: stretch !important;
+    justify-content: flex-start !important;
+    gap: 36px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  .frameParent12 .rectangleParent4,
+  .frameParent12 .rectangleParent5 {
+    position: relative !important;
+    width: 420px !important;
+    height: 200px !important;
+    min-height: 200px !important;
+    flex: 0 0 200px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  .frameParent12 .rectangleParent4 .frameChild16,
+  .frameParent12 .rectangleParent5 .frameChild16 {
+    position: absolute !important;
+    top: 10px !important;
+    left: 0 !important;
+    width: 420px !important;
+    height: 180px !important;
+    margin: 0 !important;
+    transform: none !important;
+  }
+
+  .frameParent12 .rectangleParent4 .frameParent17,
+  .frameParent12 .rectangleParent5 .frameParent18 {
+    position: absolute !important;
+    top: 50% !important;
+    left: 50% !important;
+    width: 252px !important;
+    margin: 0 !important;
+    transform: translate(-50%, -50%) !important;
+  }
+
+  .frameParent12 .rectangleParent4 .frameParent17 {
+    height: 112px !important;
+  }
+
+  .frameParent12 .rectangleParent5 .frameParent18 {
+    height: 112px !important;
+  }
+
+  .frameParent12 .k,
+  .frameParent12 .b,
+  .frameParent12 .learnersTracked,
+  .frameParent12 .reportsAccuracy {
+    margin-left: auto !important;
+    margin-right: auto !important;
+    text-align: center !important;
+  }
+}
+
+/* =========================================================
+   12K+ CARD — ALIGNMENT ONLY
+   Aligns the first stat card to match the 98% card.
+   ========================================================= */
+@media screen and (min-width: 1025px) {
+  .frameParent12 .rectangleParent4 {
+    width: 420px !important;
+    height: 200px !important;
+    flex: 0 0 200px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    position: relative !important;
+  }
+
+  .frameParent12 .rectangleParent4 .frameChild16 {
+    position: absolute !important;
+    top: 10px !important;
+    left: 0 !important;
+    width: 420px !important;
+    height: 180px !important;
+    margin: 0 !important;
+    transform: none !important;
+  }
+
+  .frameParent12 .rectangleParent4 .frameParent17 {
+    position: absolute !important;
+    top: 50% !important;
+    left: 50% !important;
+    width: 252px !important;
+    height: 112px !important;
+    margin: 0 !important;
+    transform: translate(-50%, -50%) !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 24px !important;
+  }
+
+  .frameParent12 .rectangleParent4 .k {
+    width: 253px !important;
+    height: 54px !important;
+    margin: 0 !important;
+    text-align: center !important;
+    line-height: 56px !important;
+  }
+
+  .frameParent12 .rectangleParent4 .learnersTrackedWrapper {
+    width: 242px !important;
+    margin: 0 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+
+  .frameParent12 .rectangleParent4 .learnersTracked {
+    width: 196px !important;
+    height: 34px !important;
+    margin: 0 !important;
+    text-align: center !important;
+    line-height: 32px !important;
   }
 }
 

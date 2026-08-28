@@ -9,13 +9,12 @@
   	font-size: 48px;
   	color: #31344b;
   	font-family: 'Segoe UI';
-    zoom: 0.89;
 }
 .frameParent {
   	position: absolute;
   	top: 0px;
   	left: calc(50% - 720px);
-  	box-shadow: -8px -8px 16px #fff, 8px 8px 16px #c6c6c9;
+  	box-shadow: -4px -4px 4px #fff, 4px 4px 4px #c6c6c9;
   	background-color: #dfe6e9;
   	width: 1440px;
   	height: 80px;
@@ -90,7 +89,7 @@
   	position: absolute;
   	top: calc(50% - 22.5px);
   	left: 1244px;
-  	box-shadow: -8px -8px 16px #fff, 8px 8px 16px #c6c6c9;
+  	box-shadow: -4px -4px 4px #fff, 4px 4px 4px #c6c6c9;
   	border-radius: 32px;
   	background-color: #dfe6e9;
   	width: 132px;
@@ -164,7 +163,7 @@
   	position: absolute;
   	top: 168px;
   	left: calc(50% - 640px);
-  	box-shadow: -8px -8px 16px #fff inset, 8px 8px 16px #c4c4c4 inset;
+  	box-shadow: -4px -4px 4px #fff inset, 4px 4px 4px #c4c4c4 inset;
   	border-radius: 24px;
   	background-color: #dfe6e9;
   	width: 1280px;
@@ -175,7 +174,7 @@
   	position: absolute;
   	top: 0px;
   	left: calc(50% - 467px);
-  	box-shadow: -8px -8px 16px #fff, 8px 8px 16px #c4c4c4;
+  	box-shadow: -4px -4px 4px #fff, 4px 4px 4px #c4c4c4;
   	border-radius: 0px 0px 100px 100px;
   	background-color: #dfe6e9;
   	width: 934px;
@@ -245,7 +244,7 @@
 	position: relative;
 	border-radius: 28px;
 	background: #dfe6e9;
-	box-shadow: inset -4px -4px 8px #ffffff, inset 4px 4px 8px #c4c4c4;
+	box-shadow: inset -4px -4px 4px #ffffff, inset 4px 4px 4px #c4c4c4;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -265,7 +264,7 @@
   	line-height: 60px;
   	display: inline-block;
   	flex-shrink: 0;
-  	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  	filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.25));
 		font-size: 48px;
 }
 .buildSkillsFollow {
@@ -414,7 +413,7 @@
   	position: absolute;
   	top: 0px;
   	left: 0px;
-  	box-shadow: -8px -8px 16px #fff, 8px 8px 16px #c4c4c4;
+  	box-shadow: -4px -4px 4px #fff, 4px 4px 4px #c4c4c4;
   	border-radius: 24px;
   	background-color: #dfe6e9;
   	border: 1px solid #ff9c9c;
@@ -473,7 +472,7 @@
   	position: absolute;
   	top: 0px;
   	left: 0px;
-  	box-shadow: -8px -8px 16px #fff, 8px 8px 16px #c4c4c4;
+  	box-shadow: -4px -4px 4px #fff, 4px 4px 4px #c4c4c4;
   	border-radius: 24px;
   	background-color: #dfe6e9;
   	width: 290px;
@@ -565,7 +564,7 @@
   	position: absolute;
   	top: 0px;
   	left: 0px;
-  	box-shadow: -8px -8px 16px #fff, 8px 8px 16px #c4c4c4;
+  	box-shadow: -4px -4px 4px #fff, 4px 4px 4px #c4c4c4;
   	border-radius: 0px 0px 24px 24px;
   	background-color: #dfe6e9;
   	width: 290px;
@@ -685,7 +684,7 @@
   	position: absolute;
   	top: 0px;
   	left: 0px;
-  	box-shadow: -8px -8px 16px #fff, 8px 8px 16px #c4c4c4;
+  	box-shadow: -4px -4px 4px #fff, 4px 4px 4px #c4c4c4;
   	border-radius: 24px;
   	background-color: rgba(182, 179, 179, 0.2);
   	width: 400px;
@@ -695,7 +694,7 @@
   	position: absolute;
   	top: 24px;
   	left: 24px;
-  	box-shadow: -8px -8px 16px #fff inset, 8px 8px 16px #c4c4c4 inset;
+  	box-shadow: -4px -4px 4px #fff inset, 4px 4px 4px #c4c4c4 inset;
   	border-radius: 24px;
   	background-color: #dfe6e9;
   	width: 352px;
@@ -965,7 +964,7 @@
   	position: absolute;
   	top: 0px;
   	left: 0px;
-  	box-shadow: -8px -8px 16px #fff, 8px 8px 16px #c4c4c4;
+  	box-shadow: -4px -4px 4px #fff, 4px 4px 4px #c4c4c4;
   	border-radius: 32px;
   	background-color: #dfe6e9;
   	width: 613px;
@@ -1032,7 +1031,7 @@
   	height: 388px;
   	width: 761px;
   	position: relative;
-  	box-shadow: -4px -4px 8px #fff, 4px 4px 8px #c4c4c4;
+  	box-shadow: -4px -4px 4px #fff, 4px 4px 4px #c4c4c4;
   	border-radius: 24px;
   	background-color: #dfe6e9;
   	overflow: hidden;
@@ -1042,7 +1041,7 @@
   	position: absolute;
   	top: 24px;
   	left: 24px;
-  	box-shadow: -4px -4px 8px #fff inset, 4px 4px 8px #c4c4c4 inset;
+  	box-shadow: -4px -4px 4px #fff inset, 4px 4px 4px #c4c4c4 inset;
   	border-radius: 24px;
   	background-color: #dfe6e9;
   	width: 713px;
@@ -1068,7 +1067,7 @@
   	position: absolute;
   	top: 0px;
   	left: calc(50% - 89px);
-  	box-shadow: 4px 4px 8px #c4c4c4 inset, -4px -4px 8px #fff inset;
+  	box-shadow: 4px 4px 4px #c4c4c4 inset, -4px -4px 4px #fff inset;
   	border-radius: 50px;
   	background-color: #dfe6e9;
   	width: 177px;
@@ -1149,7 +1148,7 @@
   	position: absolute;
   	top: 0px;
   	left: 0px;
-  	box-shadow: -4px -4px 8px #fff, 4px 4px 8px #c4c4c4;
+  	box-shadow: -4px -4px 4px #fff, 4px 4px 4px #c4c4c4;
   	border-radius: 50%;
   	background-color: #dfe6e9;
   	width: 208px;
@@ -1159,7 +1158,7 @@
   	position: absolute;
   	top: 16px;
   	left: calc(50% - 89px);
-  	filter: drop-shadow(-4px -4px 8px #fff inset) drop-shadow(4px 4px 8px #c4c4c4 inset);
+  	filter: drop-shadow(-4px -4px 4px #fff inset) drop-shadow(4px 4px 4px #c4c4c4 inset);
   	border-radius: 50%;
   	border: 26px solid rgba(191, 24, 105, 0.05);
   	box-sizing: border-box;
@@ -1234,7 +1233,7 @@
   	position: absolute;
   	top: 16px;
   	left: calc(50% - 89px);
-  	filter: drop-shadow(-4px -4px 8px #fff inset) drop-shadow(4px 4px 8px #c4c4c4 inset);
+  	filter: drop-shadow(-4px -4px 4px #fff inset) drop-shadow(4px 4px 4px #c4c4c4 inset);
   	border-radius: 50%;
   	border: 26px solid rgba(103, 9, 110, 0.05);
   	box-sizing: border-box;
@@ -1283,7 +1282,7 @@
   	position: absolute;
   	top: 16px;
   	left: calc(50% - 89px);
-  	filter: drop-shadow(-4px -4px 8px #fff inset) drop-shadow(4px 4px 8px #c4c4c4 inset);
+  	filter: drop-shadow(-4px -4px 4px #fff inset) drop-shadow(4px 4px 4px #c4c4c4 inset);
   	border-radius: 50%;
   	border: 26px solid rgba(42, 115, 8, 0.05);
   	box-sizing: border-box;
@@ -1399,7 +1398,7 @@
   	font-weight: 600;
   	display: inline-block;
   	flex-shrink: 0;
-  	text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  	text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .frameParent36 {
   	align-self: stretch;
@@ -1417,7 +1416,7 @@
   	font-weight: 600;
   	display: inline-block;
   	flex-shrink: 0;
-  	text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  	text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .careerAlignedLearning {
   	height: 37px;
@@ -1428,7 +1427,7 @@
   	font-weight: 600;
   	display: inline-block;
   	flex-shrink: 0;
-  	text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  	text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .frameChild54 {
   	height: 70.1px;
@@ -1445,7 +1444,7 @@
   	font-weight: 600;
   	display: inline-block;
   	flex-shrink: 0;
-  	text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  	text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .frameParent39 {
   	position: absolute;
@@ -1484,7 +1483,7 @@
   	position: absolute;
   	top: 0px;
   	left: 0px;
-  	box-shadow: -8px -8px 16px #fff, 8px 8px 16px #c4c4c4;
+  	box-shadow: -4px -4px 4px #fff, 4px 4px 4px #c4c4c4;
   	border-radius: 100px 24px 100px 100px;
   	width: 400px;
   	height: 306px;
@@ -1493,7 +1492,7 @@
   	position: absolute;
   	top: 24px;
   	left: 24px;
-  	box-shadow: -8px -8px 16px #fff inset, 8px 8px 16px #c4c4c4 inset;
+  	box-shadow: -4px -4px 4px #fff inset, 4px 4px 4px #c4c4c4 inset;
   	border-radius: 80px;
   	background-color: #dfe6e9;
   	width: 352px;
@@ -1508,7 +1507,7 @@
   	background: linear-gradient(180deg, #31344b, #bf1869);
 
   	-webkit-text-fill-color: transparent;
-  	text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  	text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .interactiveActivitiesParent {
   	position: absolute;
@@ -1538,7 +1537,7 @@
   	background: linear-gradient(180deg, #31344b, #2d4cc8);
 
   	-webkit-text-fill-color: transparent;
-  	text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  	text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .scenarioLearningParent {
   	position: absolute;
@@ -1574,7 +1573,7 @@
   	background: linear-gradient(180deg, #31344b, #046f73);
 
   	-webkit-text-fill-color: transparent;
-  	text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  	text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .frameParent43 {
   	align-self: stretch;
@@ -1593,7 +1592,7 @@
   	background: linear-gradient(180deg, #31344b, #907507);
 
   	-webkit-text-fill-color: transparent;
-  	text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  	text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .b13 {
   	position: absolute;
@@ -1604,7 +1603,7 @@
   	background: linear-gradient(180deg, #31344b, #c05512);
 
   	-webkit-text-fill-color: transparent;
-  	text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  	text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .frameParent44 {
   	position: absolute;
@@ -1780,7 +1779,7 @@
   	height: 312px;
   	width: 365px;
   	position: relative;
-  	box-shadow: -8px -8px 16px #fff, 8px 8px 16px #c4c4c4;
+  	box-shadow: -4px -4px 4px #fff, 4px 4px 4px #c4c4c4;
   	border-radius: 32px;
   	background-color: #dfe6e9;
   	overflow: hidden;
@@ -1835,7 +1834,7 @@
   	height: 405px;
   	width: 473px;
   	position: relative;
-  	box-shadow: -8px -8px 16px #fff, 8px 8px 16px #c4c4c4;
+  	box-shadow: -4px -4px 4px #fff, 4px 4px 4px #c4c4c4;
   	border-radius: 32px;
   	background-color: #dfe6e9;
   	overflow: hidden;
@@ -1884,7 +1883,7 @@
   	height: 312px;
   	width: 365px;
   	position: relative;
-  	box-shadow: -8px -8px 16px #fff, 8px 8px 16px #c4c4c4;
+  	box-shadow: -4px -4px 4px #fff, 4px 4px 4px #c4c4c4;
   	border-radius: 32px;
   	background-color: #dfe6e9;
   	overflow: hidden;
@@ -1928,7 +1927,7 @@
   	height: 312px;
   	width: 365px;
   	position: relative;
-  	box-shadow: -8px -8px 16px #fff, 8px 8px 16px #c4c4c4;
+  	box-shadow: -4px -4px 4px #fff, 4px 4px 4px #c4c4c4;
   	border-radius: 32px;
   	background-color: #dfe6e9;
   	overflow: hidden;
@@ -1997,7 +1996,7 @@
   	line-height: 60px;
   	display: inline-block;
   	flex-shrink: 0;
-  	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  	filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.25));
 }
 .neurolxpConnectsLearning2 {
   	width: 858px;
@@ -2038,7 +2037,7 @@
 
   	-webkit-text-fill-color: transparent;
   	white-space: pre-wrap;
-  	text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  	text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .frameWrapper21 {
   	width: 255px;
@@ -2050,7 +2049,7 @@
   	height: 60.2px;
   	width: 100%;
   	position: relative;
-  	box-shadow: -4px -4px 8px #fff, 4px 4px 8px rgba(196, 196, 196, 0.8);
+  	box-shadow: -4px -4px 4px #fff, 4px 4px 4px rgba(196, 196, 196, 0.8);
   	border-radius: 50px;
   	object-fit: contain;
 }
@@ -2068,7 +2067,7 @@
   	position: absolute;
   	bottom: -0.01px;
   	left: calc(50% - 720px);
-  	box-shadow: -10px -10px 20px #fff inset, 8px 8px 16px #c4c4c4 inset;
+  	box-shadow: -4px -4px 4px #fff inset, 4px 4px 4px #c4c4c4 inset;
   	background-color: #dfe6e9;
   	width: 1440px;
   	height: 459px;
@@ -2127,7 +2126,7 @@
   	position: relative;
   	letter-spacing: -0.03em;
   	line-height: 34px;
-  	text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  	text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .sparklesIcon {
   	height: 23px;
@@ -2295,7 +2294,7 @@
   	position: absolute;
   	bottom: 0px;
   	left: calc(50% - 720px);
-  	box-shadow: -8px -8px 16px #fff inset, 10px 10px 10px #c4c4c4 inset;
+  	box-shadow: -4px -4px 4px #fff inset, 4px 4px 4px #c4c4c4 inset;
   	background-color: #dfe6e9;
   	width: 1440px;
   	height: 459px;
@@ -2412,7 +2411,7 @@
 .heroActionButton {
 	border: 0;
 	background-color: #dfe6e9;
-	box-shadow: -8px -8px 16px #fff, 8px 8px 16px #c6c6c9;
+	box-shadow: -4px -4px 4px #fff, 4px 4px 4px #c6c6c9;
 	display: inline-flex;
 	align-items: center;
 	justify-content: center;
@@ -2442,7 +2441,7 @@
   height:50.3px;
   border-radius:28px;
   background:#DFE6E9;
-  box-shadow:inset -4px -4px 8px #FFFFFF, inset 4px 4px 8px #C4C4C4;
+  box-shadow: inset -4px -4px 4px #FFFFFF, inset 4px 4px 4px #C4C4C4;
   display:flex;
   align-items:center;
   justify-content:center;
@@ -2463,8 +2462,8 @@
   justify-content: center;
   border-radius: 28px;
   background: #DFE6E9;
-  box-shadow: inset -4px -4px 8px #FFFFFF,
-              inset 4px 4px 8px #C4C4C4;
+  box-shadow: inset -4px -4px 4px #FFFFFF,
+              inset 4px 4px 4px #C4C4C4;
   font-family: "Segoe UI";
   font-size: 24px;
   font-weight: 600;
@@ -2482,9 +2481,8 @@
   height: 60px;
   box-sizing: border-box;
   background: #DFE6E9;
-  box-shadow:
-    inset -4px -4px 8px #FFFFFF,
-    inset 4px 4px 8px rgba(196, 196, 196, 0.8);
+  box-shadow: inset -4px -4px 4px #FFFFFF,
+    inset 4px 4px 4px rgba(196, 196, 196, 0.8);
   border-radius: 8px;
   display: flex;
   flex-direction: row;
@@ -2539,8 +2537,8 @@
   justify-content:center;
   border-radius:28px;
   background:#DFE6E9;
-  box-shadow:inset -4px -4px 8px #FFFFFF,
-             inset 4px 4px 8px rgba(196,196,196,.8);
+  box-shadow: inset -4px -4px 4px #FFFFFF,
+             inset 4px 4px 4px rgba(196,196,196,.8);
   font-family:"Segoe UI";
   font-size:24px;
   font-weight:600;
@@ -2559,8 +2557,8 @@
   justify-content:center;
   border-radius:28px;
   background:#DFE6E9;
-  box-shadow:inset -4px -4px 8px #FFFFFF,
-             inset 4px 4px 8px rgba(196,196,196,.8);
+  box-shadow: inset -4px -4px 4px #FFFFFF,
+             inset 4px 4px 4px rgba(196,196,196,.8);
   font-family:"Segoe UI";
   font-size:24px;
   font-weight:600;
@@ -2590,9 +2588,8 @@
   justify-content: center;
   border-radius: 40px;
   background: #DFE6E9;
-  box-shadow:
-    inset -4px -4px 8px #FFFFFF,
-    inset 4px 4px 8px rgba(196, 196, 196, 0.8);
+  box-shadow: inset -4px -4px 4px #FFFFFF,
+    inset 4px 4px 4px rgba(196, 196, 196, 0.8);
   font-family: "Segoe UI";
   font-size: 30px;
   font-weight: 700;
@@ -2683,9 +2680,8 @@
   justify-content: center;
   border-radius: 28px;
   background: #DFE6E9;
-  box-shadow:
-    inset -4px -4px 8px #FFFFFF,
-    inset 4px 4px 8px rgba(196, 196, 196, 0.8);
+  box-shadow: inset -4px -4px 4px #FFFFFF,
+    inset 4px 4px 4px rgba(196, 196, 196, 0.8);
   font-family: "Segoe UI";
   font-size: 24px;
   font-weight: 600;
@@ -2788,9 +2784,8 @@
   border: 0;
   border-radius: 50px;
   background: #DFE6E9;
-  box-shadow:
-    -4px -4px 8px #FFFFFF,
-    4px 4px 8px rgba(196, 196, 196, 0.8);
+  box-shadow: -4px -4px 4px #FFFFFF,
+    4px 4px 4px rgba(196, 196, 196, 0.8);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -2822,9 +2817,8 @@
   background:
     url("/assets/careerimages/bg.png") center center / cover no-repeat,
     #DFE6E9;
-  box-shadow:
-    inset -8px -8px 16px #FFFFFF,
-    inset 8px 8px 16px #C4C4C4;
+  box-shadow: inset -4px -4px 4px #FFFFFF,
+    inset 4px 4px 4px #C4C4C4;
 }
 
 .aiRecommendationsContent {
@@ -2868,9 +2862,8 @@
   flex-shrink: 0;
   border-radius: 28px;
   background: #DFE6E9;
-  box-shadow:
-    inset -4px -4px 8px #FFFFFF,
-    inset 4px 4px 8px rgba(196, 196, 196, 0.8);
+  box-shadow: inset -4px -4px 4px #FFFFFF,
+    inset 4px 4px 4px rgba(196, 196, 196, 0.8);
   font-family: "Segoe UI";
   font-size: 24px;
   font-weight: 600;
@@ -2931,9 +2924,8 @@
   justify-content: center;
   border-radius: 100px;
   background: #DFE6E9;
-  box-shadow:
-    inset -4px -4px 8px #FFFFFF,
-    inset 4px 4px 8px rgba(196, 196, 196, 0.8);
+  box-shadow: inset -4px -4px 4px #FFFFFF,
+    inset 4px 4px 4px rgba(196, 196, 196, 0.8);
 }
 
 .aiRecommendationIconInner {
@@ -2944,9 +2936,8 @@
   justify-content: center;
   border-radius: 50%;
   background: #DFE6E9;
-  box-shadow:
-    8px 8px 16px #C6C6C9,
-    -8px -8px 16px #FFFFFF;
+  box-shadow: 4px 4px 4px #C6C6C9,
+    -4px -4px 4px #FFFFFF;
 }
 
 .aiRecommendationIcon {
@@ -2974,14 +2965,14 @@
     overflow:hidden;
     border-radius:0 0 100px 100px;
     background:#DFE6E9;
-    box-shadow:-8px -8px 16px #FFFFFF,8px 8px 16px #C4C4C4;
+    box-shadow: -4px -4px 4px #FFFFFF,4px 4px 4px #C4C4C4;
 }
 .frameWrapper::before{
     content:"";
     position:absolute;
     inset:0;
     border-radius:inherit;
-    box-shadow:inset -8px -8px 16px #FFFFFF,inset 8px 8px 16px #C4C4C4;
+    box-shadow: inset -4px -4px 4px #FFFFFF,inset 4px 4px 4px #C4C4C4;
     pointer-events:none;
     z-index:3;
 }
@@ -3003,9 +2994,8 @@
     background:#DFE6E9 !important;
     border:none !important;
     border-radius:8px;
-    box-shadow:
-        inset -4px -4px 8px #FFFFFF,
-        inset 4px 4px 8px #C4C4C4 !important;
+    box-shadow: inset -4px -4px 4px #FFFFFF,
+        inset 4px 4px 4px #C4C4C4 !important;
     transform:none !important;
     filter:none !important;
 }
@@ -3013,9 +3003,8 @@
 .frameChild3.heroActionButton.bookDemoButton:hover,
 .frameChild3.heroActionButton.bookDemoButton:focus,
 .frameChild3.heroActionButton.bookDemoButton:active{
-    box-shadow:
-        inset -4px -4px 8px #FFFFFF,
-        inset 4px 4px 8px #C4C4C4 !important;
+    box-shadow: inset -4px -4px 4px #FFFFFF,
+        inset 4px 4px 4px #C4C4C4 !important;
     transform:none !important;
     filter:none !important;
 }
@@ -3047,9 +3036,8 @@
 	justify-content: center;
 	box-sizing: border-box;
 	background-color: #dfe6e9;
-	box-shadow:
-		inset -4px -4px 8px #ffffff,
-		inset 4px 4px 8px #c4c4c4;
+	box-shadow: inset -4px -4px 4px #ffffff,
+		inset 4px 4px 4px #c4c4c4;
 	color: #2d4cc8;
 	font-family: 'Segoe UI';
 	font-size: 24px;
@@ -3075,9 +3063,8 @@
 	justify-content: center;
 	box-sizing: border-box;
 	background-color: #dfe6e9;
-	box-shadow:
-		inset -4px -4px 8px #ffffff,
-		inset 4px 4px 8px #c4c4c4;
+	box-shadow: inset -4px -4px 4px #ffffff,
+		inset 4px 4px 4px #c4c4c4;
 	color: #2d4cc8;
 	font-family: 'Segoe UI';
 	font-size: 24px;
@@ -3096,9 +3083,8 @@
 	flex: 0 0 70px;
 	border-radius: 100px;
 	background: #dfe6e9;
-	box-shadow:
-		inset -4px -4px 8px #ffffff,
-		inset 4px 4px 8px rgba(196, 196, 196, 0.8);
+	box-shadow: inset -4px -4px 4px #ffffff,
+		inset 4px 4px 4px rgba(196, 196, 196, 0.8);
 	transform: rotate(0.05deg);
 	display: flex;
 	align-items: center;
@@ -3112,9 +3098,8 @@
 	height: 50px;
 	border-radius: 50%;
 	background: #dfe6e9;
-	box-shadow:
-		8px 8px 16px #c6c6c9,
-		-8px -8px 16px #ffffff;
+	box-shadow: 4px 4px 4px #c6c6c9,
+		-4px -4px 4px #ffffff;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -3137,7 +3122,7 @@ justify-content:center;
 margin:0 auto;
 border-radius:28px;
 background:#DFE6E9;
-box-shadow:inset -4px -4px 8px #FFFFFF,inset 4px 4px 8px rgba(196,196,196,.8);
+box-shadow: inset -4px -4px 4px #FFFFFF,inset 4px 4px 4px rgba(196,196,196,.8);
 font-family:"Segoe UI";
 font-size:24px;
 font-weight:600;
@@ -3165,7 +3150,7 @@ flex-shrink:0;
 	left: 47.05px;
 	top: 17px;
 	background: #dfe6e9;
-	box-shadow: inset -4px -4px 8px #ffffff, inset 4px 4px 8px rgba(196, 196, 196, 0.8);
+	box-shadow: inset -4px -4px 4px #ffffff, inset 4px 4px 4px rgba(196, 196, 196, 0.8);
 	border-radius: 100px;
 	transform: rotate(0.05deg);
 }
@@ -3179,7 +3164,7 @@ flex-shrink:0;
 	border: 0;
 	border-radius: 100px;
 	background: #dfe6e9;
-	box-shadow: inset -4px -4px 8px #ffffff, inset 4px 4px 8px rgba(196, 196, 196, 0.8);
+	box-shadow: inset -4px -4px 4px #ffffff, inset 4px 4px 4px rgba(196, 196, 196, 0.8);
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -3204,7 +3189,7 @@ flex-shrink:0;
 	height: 80px;
 	border-radius: 50%;
 	background: #dfe6e9;
-	box-shadow: 8px 8px 16px #c6c6c9, -8px -8px 16px #ffffff;
+	box-shadow: 4px 4px 4px #c6c6c9, -4px -4px 4px #ffffff;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -3248,9 +3233,8 @@ flex-shrink:0;
 	height: 208px;
 	border-radius: 50%;
 	background: #dfe6e9;
-	box-shadow:
-		-4px -4px 8px #ffffff,
-		4px 4px 8px #c4c4c4;
+	box-shadow: -4px -4px 4px #ffffff,
+		4px 4px 4px #c4c4c4;
 	z-index: 0;
 }
 
@@ -3267,9 +3251,8 @@ flex-shrink:0;
 	border: 0;
 	border-radius: 50%;
 	background: transparent;
-	box-shadow:
-		inset -4px -4px 8px #ffffff,
-		inset 4px 4px 8px #c4c4c4;
+	box-shadow: inset -4px -4px 4px #ffffff,
+		inset 4px 4px 4px #c4c4c4;
 	z-index: 1;
 }
 
@@ -3281,9 +3264,8 @@ flex-shrink:0;
 	height: 136px;
 	border-radius: 50%;
 	background: #dfe6e9;
-	box-shadow:
-		-2px -2px 4px #ffffff,
-		2px 2px 4px #c4c4c4;
+	box-shadow: -4px -4px 4px #ffffff,
+		4px 4px 4px #c4c4c4;
 	z-index: 3;
 }
 
@@ -3870,9 +3852,8 @@ flex-shrink:0;
 .frameParent9 > *:nth-child(1):hover .frameChild8,
 .frameParent9 > *:nth-child(1):hover .frameChild14 {
 	border-color: #ff9c9c !important;
-	box-shadow:
-		-8px -8px 16px #ffffff,
-		8px 8px 16px #c4c4c4,
+	box-shadow: -4px -4px 4px #ffffff,
+		4px 4px 4px #c4c4c4,
 		0 0 0 2px rgba(255, 156, 156, 0.22);
 }
 
@@ -3881,9 +3862,8 @@ flex-shrink:0;
 .frameParent9 > *:nth-child(2):hover .frameChild8,
 .frameParent9 > *:nth-child(2):hover .frameChild14 {
 	border-color: #e5a2c3 !important;
-	box-shadow:
-		-8px -8px 16px #ffffff,
-		8px 8px 16px #c4c4c4,
+	box-shadow: -4px -4px 4px #ffffff,
+		4px 4px 4px #c4c4c4,
 		0 0 0 2px rgba(229, 162, 195, 0.22);
 }
 
@@ -3892,9 +3872,8 @@ flex-shrink:0;
 .frameParent9 > *:nth-child(3):hover .frameChild8,
 .frameParent9 > *:nth-child(3):hover .frameChild14 {
 	border-color: #c6c6c9 !important;
-	box-shadow:
-		-8px -8px 16px #ffffff,
-		8px 8px 16px #c4c4c4,
+	box-shadow: -4px -4px 4px #ffffff,
+		4px 4px 4px #c4c4c4,
 		0 0 0 2px rgba(198, 198, 201, 0.30);
 }
 
@@ -3903,9 +3882,8 @@ flex-shrink:0;
 .frameParent9 > *:nth-child(4):hover .frameChild8,
 .frameParent9 > *:nth-child(4):hover .frameChild14 {
 	border-color: #6cc3c6 !important;
-	box-shadow:
-		-8px -8px 16px #ffffff,
-		8px 8px 16px #c4c4c4,
+	box-shadow: -4px -4px 4px #ffffff,
+		4px 4px 4px #c4c4c4,
 		0 0 0 2px rgba(108, 195, 198, 0.24);
 }
 
@@ -4545,7 +4523,7 @@ flex-shrink:0;
 	height: 345px;
 	border-radius: 32px;
 	background: #ffffff;
-	box-shadow: -8px -8px 16px #ffffff, 8px 8px 16px #c4c4c4;
+	box-shadow: -4px -4px 4px #ffffff, 4px 4px 4px #c4c4c4;
 	overflow: hidden;
 	opacity: 1;
 	animation: targetAudienceCardIn 0.65s cubic-bezier(0.22, 1, 0.36, 1) both;
@@ -10490,6 +10468,350 @@ body {
     max-height: 22px !important;
 
     flex-basis: 22px !important;
+  }
+}
+
+/* =========================================================
+   PAGE CENTERING — CROSS-BROWSER
+   Keeps existing section design/positions; prevents horizontal drift.
+   ========================================================= */
+:global(html),
+:global(body) {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.careerPathwaysSkilling {
+  width: 100% !important;
+  max-width: 1440px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  left: auto !important;
+  right: auto !important;
+  box-sizing: border-box !important;
+  overflow-x: hidden !important;
+  zoom: 1 !important;
+}
+
+/* Keep the main desktop canvas centered on wide browsers. */
+@media screen and (min-width: 1440px) {
+  .careerPathwaysSkilling {
+    width: 1440px !important;
+  }
+}
+
+/* Prevent fixed desktop sections from creating browser-level horizontal scroll. */
+.careerPathwaysSkilling > * {
+  box-sizing: border-box;
+}
+
+/* =========================================================
+   MOBILE SKILL DEVELOPMENT CARDS — REMOVE EXTRA EMPTY SPACE
+   Only compacts the 01–05 boxes; design/content unchanged.
+   ========================================================= */
+@media screen and (max-width: 767.98px) {
+  .frameParent14 .rectangleParent3,
+  .frameParent14 .rectangleParent4,
+  .frameParent14 .rectangleParent5,
+  .frameParent14 .rectangleParent7 {
+    height: 238px !important;
+    min-height: 238px !important;
+  }
+
+  .frameParent14 .frameChild17 {
+    height: 238px !important;
+  }
+
+  .frameParent14 .frameChild18 {
+    top: 24px !important;
+    height: 190px !important;
+  }
+
+  .frameParent14 .coreKnowledgeParent {
+    top: 104px !important;
+    left: 8% !important;
+    width: 84% !important;
+    height: auto !important;
+    gap: 7px !important;
+  }
+
+  .frameParent14 .frameParent17,
+  .frameParent14 .frameParent18 {
+    gap: 22px !important;
+  }
+}
+
+/* =========================================================
+   MOBILE PERSONALIZED PATHWAY ITEMS — EXACT TWO-LINE TEXT
+   Prevents the fifth item from being clipped/hidden.
+   ========================================================= */
+@media screen and (max-width: 767.98px) {
+  .rectangleParent8,
+  .frameChild29 {
+    height: 470px !important;
+  }
+
+  .frameParent22 {
+    top: 24px !important;
+    height: auto !important;
+    bottom: 24px !important;
+    gap: 12px !important;
+  }
+
+  .pathwayItem {
+    min-height: 72px !important;
+    height: 72px !important;
+    flex: 0 0 72px !important;
+    box-sizing: border-box !important;
+    overflow: visible !important;
+    display: flex !important;
+    align-items: center !important;
+  }
+
+  .pathwayItem span {
+    width: calc(100% - 52px) !important;
+    min-width: 0 !important;
+    height: auto !important;
+    min-height: 48px !important;
+    max-height: none !important;
+    line-height: 24px !important;
+    white-space: normal !important;
+    overflow: visible !important;
+    text-overflow: clip !important;
+    display: flex !important;
+    align-items: center !important;
+    text-align: left !important;
+  }
+}
+
+/* =========================================================
+   MOBILE AI RECOMMENDATIONS — UNIFORM TEXT SIZE
+   Fixes Career-Boosting Certifications being too small.
+   ========================================================= */
+@media screen and (max-width: 767.98px) {
+  .aiRecommendationsList .aiRecommendationItem h3 {
+    font-size: 18px !important;
+    line-height: 24px !important;
+    font-weight: 600 !important;
+    letter-spacing: 0.02em !important;
+    width: auto !important;
+    max-width: calc(100% - 72px) !important;
+    min-width: 0 !important;
+    height: auto !important;
+    white-space: normal !important;
+    overflow: visible !important;
+    text-overflow: clip !important;
+    margin: 0 !important;
+    text-align: left !important;
+  }
+}
+
+/* =========================================================
+   MOBILE PRACTICAL LEARNING CARDS — REMOVE EXTRA EMPTY SPACE
+   Compacts 01–05 cards only; keeps text/design centered.
+   ========================================================= */
+@media screen and (max-width: 767.98px) {
+  .frameParent39 .rectangleParent3,
+  .frameParent39 .rectangleParent10,
+  .frameParent39 .rectangleParent11,
+  .frameParent39 .rectangleParent7 {
+    height: 230px !important;
+    min-height: 230px !important;
+  }
+
+  .frameParent39 .frameChild56 {
+    height: 230px !important;
+  }
+
+  .frameParent39 .frameChild57 {
+    top: 18px !important;
+    height: 194px !important;
+  }
+
+  .frameParent39 .b9,
+  .frameParent39 .b10,
+  .frameParent39 .b11,
+  .frameParent39 .b12,
+  .frameParent39 .b13 {
+    top: 28px !important;
+  }
+
+  .frameParent39 .interactiveActivitiesParent,
+  .frameParent39 .scenarioLearningParent {
+    top: 92px !important;
+    height: auto !important;
+    justify-content: flex-start !important;
+  }
+
+  .frameParent39 .frameParent26,
+  .frameParent39 .frameParent43 {
+    gap: 24px !important;
+  }
+}
+
+/* =========================================================
+   MOBILE PRACTICAL LEARNING — SUBHEADINGS IN TWO LINES
+   Applies only to the 01–05 Practical Learning cards.
+   ========================================================= */
+@media screen and (max-width: 767.98px) {
+  .frameParent39 .buildFoundationsThrough,
+  .frameParent39 .applyKnowledgeThrough {
+    width: 240px !important;
+    max-width: 240px !important;
+    min-height: 48px !important;
+    height: auto !important;
+    margin: 0 auto !important;
+    font-size: 16px !important;
+    line-height: 24px !important;
+    letter-spacing: 0.02em !important;
+    text-align: center !important;
+    white-space: normal !important;
+    overflow: visible !important;
+    text-overflow: clip !important;
+    display: block !important;
+  }
+
+  .frameParent39 .interactiveActivitiesParent,
+  .frameParent39 .scenarioLearningParent {
+    width: 300px !important;
+    align-items: center !important;
+    text-align: center !important;
+  }
+}
+
+/* =========================================================
+   MOBILE ANALYTICS — REMOVE EXTRA GAP + PREVENT NEXT SECTION OVERLAP
+   Only affects Analytics & Reporting and the spacing before Target Audiences.
+   ========================================================= */
+@media screen and (max-width: 767.98px) {
+  .frameParent44 {
+    gap: 14px !important;
+    margin-bottom: 0 !important;
+  }
+
+  .frameParent45 {
+    gap: 10px !important;
+    margin-bottom: 0 !important;
+  }
+
+  /* The TSX contains multiple <br> tags here; hide them on mobile
+     so they do not create the large empty block seen in the screenshot. */
+  .learningAnalyticsHelp br {
+    display: none !important;
+  }
+
+  .learningAnalyticsHelp {
+    margin: 0 !important;
+    padding: 0 !important;
+    height: auto !important;
+    min-height: 0 !important;
+  }
+
+  .frameParent46 {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+    gap: 8px !important;
+  }
+
+  .frameParent47,
+  .frameParent48 {
+    margin: 0 !important;
+  }
+
+  /* Keep Target Audiences clearly below Analytics instead of overlapping it. */
+  .frameParent53 {
+    margin-top: 46px !important;
+    position: relative !important;
+    top: auto !important;
+    left: auto !important;
+    transform: none !important;
+    clear: both !important;
+    z-index: 1 !important;
+  }
+
+  .frameParent44 {
+    position: relative !important;
+    z-index: 2 !important;
+  }
+}
+
+/* =========================================================
+   MOBILE FINAL CTA — PREVENT FOOTER OVERLAP
+   Keeps the existing design; only fixes vertical spacing.
+   ========================================================= */
+@media screen and (max-width: 767.98px) {
+  .careerPathwaysSkilling .frameParent64 {
+    position: relative !important;
+    top: auto !important;
+    left: auto !important;
+    width: calc(100% - 24px) !important;
+    height: auto !important;
+    min-height: 0 !important;
+    margin: 48px auto 0 !important;
+    padding: 0 0 56px !important;
+    box-sizing: border-box !important;
+    overflow: visible !important;
+  }
+
+  .careerPathwaysSkilling .frameParent64 .frameParent65 {
+    width: 100% !important;
+    height: auto !important;
+    gap: 28px !important;
+    margin: 0 !important;
+  }
+
+  .careerPathwaysSkilling .frameParent64 .frameParent66 {
+    width: 100% !important;
+    height: auto !important;
+    gap: 20px !important;
+    margin: 0 !important;
+  }
+
+  .careerPathwaysSkilling .frameParent64 .frameWrapper18,
+  .careerPathwaysSkilling .frameParent64 .turnLearningIntoCareerGrowParent {
+    width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+  }
+
+  .careerPathwaysSkilling .frameParent64 .neurolxpConnectsLearning2 {
+    height: auto !important;
+    min-height: 0 !important;
+    margin: 0 auto !important;
+  }
+
+  .careerPathwaysSkilling .frameParent64 .frameWrapper19 {
+    margin: 0 auto !important;
+  }
+
+  .careerPathwaysSkilling .frameParent64 .frameWrapper21 {
+    position: relative !important;
+    top: auto !important;
+    left: auto !important;
+    transform: none !important;
+    margin: 4px auto 0 !important;
+    flex-shrink: 0 !important;
+    z-index: 1 !important;
+  }
+
+  .careerPathwaysSkilling .frameParent64 .frameChild80 {
+    position: relative !important;
+    top: auto !important;
+    left: auto !important;
+    transform: none !important;
+    margin: 0 !important;
+  }
+}
+
+/* MOBILE BREADCRUMB — SLIGHTLY LARGER */
+@media screen and (max-width: 767.98px) {
+  .frameDiv {
+    font-size: 15px !important;
+  }
+
+  .frameDiv .learningEcoSystem {
+    line-height: 22px !important;
   }
 }
 
