@@ -1,8 +1,11 @@
+"use client";
+
 import type { NextPage } from "next";
 import Image from "next/image";
 import "./inter.css";
 import Header from "../../components/Header/header";
 import Footer from "../../components/Footer/footer";
+import { BookDemoTrigger } from "../../components/Bookademo/Bookademo";
 
 const Interconnectivity: NextPage = () => {
   return (
@@ -33,11 +36,13 @@ const Interconnectivity: NextPage = () => {
             </div>
             <div className="connectLearnersEducators">Connect learners, educators, and ecosystems for unified, connected, and scalable learning.</div>
           </div>
-          <div className="frameWrapper">
-            <div className="bookADemoWrapper">
-              <b className="bookADemo">Book a Demo</b>
+          <BookDemoTrigger>
+            <div className="frameWrapper">
+              <div className="bookADemoWrapper">
+                <b className="bookADemo">Book a Demo</b>
+              </div>
             </div>
-          </div>
+          </BookDemoTrigger>
         </div>
         <div className="ellipseParent">
           <div className="ellipseDiv" />
@@ -406,9 +411,11 @@ const Interconnectivity: NextPage = () => {
               </b>
               <div className="connectYourEcosystem2">Connect your ecosystem with NeuroLXP for collaborative data-driven learning.</div>
             </div>
-            <a href="/contact" className="bookDemoBtn">
-              Book a Demo
-            </a>
+            <BookDemoTrigger>
+              <a className="bookDemoBtn">
+                Book a Demo
+              </a>
+            </BookDemoTrigger>
           </div>
         </div>
       </div>

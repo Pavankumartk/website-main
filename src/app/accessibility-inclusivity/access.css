@@ -15,7 +15,7 @@
 	position: absolute;
 	top: 0px;
 	left: calc(50% - 720px);
-	box-shadow: -8px -8px 16px #fff, 8px 8px 16px #c6c6c9;
+	box-shadow:-4px -4px 4px #fff, 4px 4px 4px #c6c6c9;
 	background-color: #dfe6e9;
 	width: 1440px;
 	height: 80px;
@@ -100,7 +100,7 @@
 	position: absolute;
 	top: calc(50% - 22.5px);
 	left: 1244px;
-	box-shadow: -8px -8px 16px #fff, 8px 8px 16px #c6c6c9;
+	box-shadow:-4px -4px 4px #fff, 4px 4px 4px #c6c6c9;
 	border-radius: 32px;
 	background-color: #dfe6e9;
 	width: 132px;
@@ -171,7 +171,7 @@
 	position: absolute;
 	top: 88px;
 	left: calc(50% - 640px);
-	box-shadow: -8px -8px 16px #fff inset, 8px 8px 16px rgba(196, 196, 196, 0.8) inset;
+	box-shadow:-4px -4px 4px #fff inset, 4px 4px 4px rgba(196, 196, 196, 0.8) inset;
 	border-radius: 32px 32px 200px 32px;
 	background-color: #dfe6e9;
 	width: 1280px;
@@ -206,9 +206,8 @@
 	align-self: stretch;
 	height: 620px;
 	position: relative;
-	box-shadow:
-		10px 10px 20px rgba(196, 196, 196, 0.9),
-		-10px -10px 20px rgba(255, 255, 255, 0.72);
+	box-shadow:4px 4px 4px rgba(196, 196, 196, 0.9),
+		-4px -4px 4px rgba(255, 255, 255, 0.72);
 	border-radius: 16px 16px 176px 16px;
 	overflow: hidden;
 	flex-shrink: 0;
@@ -311,7 +310,7 @@
 	position: relative;
 	border-radius: 28px;
 	background-color: #dfe6e9;
-	box-shadow: inset -4px -4px 8px #fff, inset 4px 4px 8px rgba(196, 196, 196, 0.8);
+	box-shadow:inset -4px -4px 4px #fff, inset 4px 4px 4px rgba(196, 196, 196, 0.8);
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -346,7 +345,7 @@
 .frameWrapper {
 	width: 284px;
 	height: 64px;
-	box-shadow: -8px -8px 16px #fff, 8px 8px 16px #c6c6c9;
+	box-shadow:-4px -4px 4px #fff, 4px 4px 4px #c6c6c9;
 	border-radius: 32px;
 	background-color: #dfe6e9;
 	overflow: hidden;
@@ -428,7 +427,7 @@
 	height: 150px;
 	width: 290px;
 	position: relative;
-	box-shadow: -4px -4px 8px #fff, 4px 4px 8px rgba(196, 196, 196, 0.8);
+	box-shadow:-4px -4px 4px #fff, 4px 4px 4px rgba(196, 196, 196, 0.8);
 	border-radius: 16px;
 	background-color: #dfe6e9;
 	overflow: hidden;
@@ -538,7 +537,7 @@
 	position: relative;
 	border-radius: 28px;
 	background-color: #dfe6e9;
-	box-shadow: inset -4px -4px 8px #fff, inset 4px 4px 8px rgba(196, 196, 196, 0.8);
+	box-shadow:inset -4px -4px 4px #fff, inset 4px 4px 4px rgba(196, 196, 196, 0.8);
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -605,7 +604,7 @@
 	height: 234px;
 	width: 444px;
 	position: relative;
-	box-shadow: -8px -8px 16px #fff, 8px 8px 16px #c4c4c4;
+	box-shadow:-4px -4px 4px #fff, 4px 4px 4px #c4c4c4;
 	border-radius: 32px;
 	background-color: #dfe6e9;
 	overflow: hidden;
@@ -616,7 +615,7 @@
 	position: absolute;
 	top: 16px;
 	left: calc(50% - 206px);
-	box-shadow: -8px -8px 16px #fff inset, 8px 8px 16px #c4c4c4 inset;
+	box-shadow:-4px -4px 4px #fff inset, 4px 4px 4px #c4c4c4 inset;
 	border-radius: 100px;
 	background-color: #dfe6e9;
 	width: 412px;
@@ -659,9 +658,8 @@
 	position: relative;
 	border-radius: 100px;
 	background: #dfe6e9;
-	box-shadow:
-		inset -4px -4px 8px #ffffff,
-		inset 4px 4px 8px rgba(196, 196, 196, 0.8);
+	box-shadow:inset -4px -4px 4px #ffffff,
+		inset 4px 4px 4px rgba(196, 196, 196, 0.8);
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -680,7 +678,7 @@
 	flex-shrink: 0;
 	overflow: hidden;
 	/* Flat colored circle — no raised outer shadow */
-	box-shadow: none;
+	box-shadow:none;
 }
 
 .formatIconGreen {
@@ -722,7 +720,7 @@
 	height: 234px;
 	width: 444px;
 	position: relative;
-	box-shadow: -8px -8px 16px #fff, 8px 8px 16px #c4c4c4;
+	box-shadow:-4px -4px 4px #fff, 4px 4px 4px #c4c4c4;
 	border-radius: 32px;
 	background-color: #dfe6e9;
 	overflow: hidden;
@@ -751,7 +749,7 @@
 	height: 234px;
 	width: 444px;
 	position: relative;
-	box-shadow: -8px -8px 16px #fff, 8px 8px 16px #c4c4c4;
+	box-shadow:-4px -4px 4px #fff, 4px 4px 4px #c4c4c4;
 	border-radius: 32px;
 	background-color: #dfe6e9;
 	overflow: hidden;
@@ -763,7 +761,7 @@
 	position: absolute;
 	top: 2240px;
 	left: calc(50% - 640px);
-	box-shadow: -4px -4px 8px #fff inset, 4px 4px 8px rgba(196, 196, 196, 0.8) inset;
+	box-shadow:-4px -4px 4px #fff inset, 4px 4px 4px rgba(196, 196, 196, 0.8) inset;
 	border-radius: 16px;
 	background-color: #dfe6e9;
 	width: 1280px;
@@ -812,7 +810,7 @@
 	position: relative;
 	border-radius: 8px;
 	background-color: #dfe6e9;
-	box-shadow: inset -4px -4px 8px #fff, inset 4px 4px 8px rgba(196, 196, 196, 0.8);
+	box-shadow:inset -4px -4px 4px #fff, inset 4px 4px 4px rgba(196, 196, 196, 0.8);
 	display: flex;
 	align-items: center;
 	gap: 24px;
@@ -860,7 +858,7 @@
 	flex-shrink: 0;
 	border-radius: 24px;
 	background: #DFE6E9;
-	box-shadow: -8px -8px 16px #fff, 8px 8px 16px #c4c4c4;
+	box-shadow:-4px -4px 4px #fff, 4px 4px 4px #c4c4c4;
 }
 
 .teamSupportingInvalidWoman {
@@ -932,7 +930,7 @@
 	line-height: 60px;
 	display: inline-block;
 	flex-shrink: 0;
-	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+	filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 .supportingInstitutionsIn {
@@ -969,9 +967,8 @@
 	height: 200px;
 	border-radius: 16px;
 	background: #dfe6e9;
-	box-shadow:
-		inset -4px -4px 8px #ffffff,
-		inset 4px 4px 8px rgba(196, 196, 196, 0.8);
+	box-shadow:inset -4px -4px 4px #ffffff,
+		inset 4px 4px 4px rgba(196, 196, 196, 0.8);
 	transform: rotate(0.05deg);
 	overflow: hidden;
 	box-sizing: border-box;
@@ -1013,9 +1010,8 @@
 	position: relative;
 	border-radius: 100px;
 	background: #dfe6e9;
-	box-shadow:
-		inset -4px -4px 8px #ffffff,
-		inset 4px 4px 8px rgba(196, 196, 196, 0.8);
+	box-shadow:inset -4px -4px 4px #ffffff,
+		inset 4px 4px 4px rgba(196, 196, 196, 0.8);
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -1033,7 +1029,7 @@
 	justify-content: center;
 	flex-shrink: 0;
 	overflow: hidden;
-	box-shadow: none;
+	box-shadow:none;
 }
 
 .institutionIconPink {
@@ -1111,7 +1107,7 @@
 	height: 50px;
 	border-radius: 32px;
 	background: #dfe6e9;
-	box-shadow: inset -8px -8px 16px rgba(255, 255, 255, .9), inset 8px 8px 16px rgba(196, 196, 196, .8);
+	box-shadow:inset -4px -4px 4px rgba(255, 255, 255, .9), inset 4px 4px 4px rgba(196, 196, 196, .8);
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -1184,7 +1180,7 @@
 	position: absolute;
 	bottom: -0.01px;
 	left: calc(50% - 720px);
-	box-shadow: -10px -10px 20px #fff inset, 8px 8px 16px #c4c4c4 inset;
+	box-shadow:-4px -4px 4px #fff inset, 4px 4px 4px #c4c4c4 inset;
 	background-color: #dfe6e9;
 	width: 1440px;
 	height: 459px;
@@ -1251,7 +1247,7 @@
 	position: relative;
 	letter-spacing: -0.03em;
 	line-height: 34px;
-	text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	text-shadow:4px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .sparklesIcon {
@@ -1440,7 +1436,7 @@
 	position: absolute;
 	bottom: 0px;
 	left: calc(50% - 720px);
-	box-shadow: -8px -8px 16px #fff inset, 10px 10px 10px #c4c4c4 inset;
+	box-shadow:-4px -4px 4px #fff inset, 4px 4px 4px #c4c4c4 inset;
 	background-color: #dfe6e9;
 	width: 1440px;
 	height: 459px;
@@ -2453,7 +2449,7 @@
 
 	.frameParent3 .neurolxpEnsuresEvery {
 		margin: 0;
-		max-width: 520px;
+		max-width: 560px;
 		font-size: clamp(21px, 2.1vw, 28px);
 		line-height: 1.42;
 	}
@@ -2675,3 +2671,40 @@
 	margin: 20px 0px;
   }
 }
+
+/* Book a Demo: remove native button black border/focus ring only. */
+button.bookADemoWrapper,
+.bookADemoWrapper {
+  appearance: none !important;
+  -webkit-appearance: none !important;
+  border: 0 !important;
+  outline: 0 !important;
+  -webkit-tap-highlight-color: transparent !important;
+  font: inherit;
+  color: inherit;
+}
+
+button.bookADemoWrapper:focus,
+button.bookADemoWrapper:focus-visible,
+button.bookADemoWrapper:active,
+.bookADemoWrapper:focus,
+.bookADemoWrapper:focus-visible,
+.bookADemoWrapper:active {
+  border: 0 !important;
+  outline: 0 !important;
+  outline-offset: 0 !important;
+}
+
+/* Book a Demo — remove native black focus/border ring only */
+button.frameWrapper,
+button.frameWrapper:focus,
+button.frameWrapper:focus-visible,
+button.frameWrapper:active {
+    appearance: none !important;
+    -webkit-appearance: none !important;
+    border: 0 !important;
+    outline: 0 !important;
+    outline-offset: 0 !important;
+    -webkit-tap-highlight-color: transparent !important;
+}
+

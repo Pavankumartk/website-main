@@ -3,6 +3,7 @@ import Image from "next/image";
 import './access.css';
 import Header from "../../components/Header/header";
 import Footer from "../../components/Footer/footer";
+import { BookDemoTrigger } from "../../components/Bookademo/Bookademo";
 
 
 const AccessibilityInclusivity: NextPage = () => {
@@ -35,7 +36,7 @@ const AccessibilityInclusivity: NextPage = () => {
 						<div className="image21" />
 						<div className="groupYoungBusinesspeopleUsi" />
 						<Image className="frameInner" src="/images/bg-access.png" width={1216} height={621} sizes="100vw" alt="" />
-						<Image className="youngAdultWatchingTvShowWIcon" src="/images/work.png" width={572} height={652} sizes="100vw" alt="" />
+						<Image className="youngAdultWatchingTvShowWIcon" src="/images/accessbility.webp" width={572} height={652} sizes="100vw" alt="" />
 					</div>
 					<div className="frameParent3">
 						<div className="frameParent4">
@@ -46,11 +47,11 @@ const AccessibilityInclusivity: NextPage = () => {
 							<div className="neurolxpEnsuresEvery">NeuroLXP ensures every learner can engage learn, and succeed through inclusive design and accessible learning experiences.
 							</div>
 						</div>
-						<div className="frameWrapper">
+						<BookDemoTrigger className="frameWrapper">
 							<div className="bookADemoWrapper">
 								<div className="bookADemo">Book a Demo</div>
 							</div>
-						</div>
+						</BookDemoTrigger>
 					</div>
 				</div>
 			</div>
@@ -258,7 +259,7 @@ const AccessibilityInclusivity: NextPage = () => {
 					<div className="learningAnalytics">
 						<Image
 								className="teamSupportingInvalidWoman"
-								src="/images/Learning.png"
+								src="/images/Learning Analytics.webp"
 								width={530}
 								height={488}
 								sizes="100vw"

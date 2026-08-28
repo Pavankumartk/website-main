@@ -3,6 +3,7 @@ import Image from "next/image";
 import './mobile-learning.css';
 import Header from "../../components/Header/header";
 import Footer from "../../components/Footer/footer";
+import { BookDemoTrigger } from "../../components/Bookademo/Bookademo";
 
 
 const MobileLearning: NextPage = () => {
@@ -61,15 +62,15 @@ const MobileLearning: NextPage = () => {
 							<div className="mobileHeroFeature mobileHeroFeatureGreen">Flexible Learning</div>
 						</div>
 
-						<a className="mobileHeroButton" href="#book-a-demo">
+						<BookDemoTrigger className="mobileHeroButton">
 							Book a Demo
-						</a>
+						</BookDemoTrigger>
 					</div>
 
 					<div className="mobileHeroVisual">
 						<Image
 							className="mobileHeroImage"
-							src="/images/imagemobile.png"
+							src="/images/Studentaccess.webp"
 							alt="Learner using a smartphone"
 							width={620}
 							height={720}
@@ -474,14 +475,89 @@ const MobileLearning: NextPage = () => {
 					</div>
 				</section>
 				<section className="limitsSection" aria-labelledby="learning-without-limits-title">
-					<Image
+					<svg
 						className="limitsPolygon"
-						src="/images/ellipse 402.png"
-						alt=""
-						fill
-						sizes="(max-width: 900px) 100vw, 1286px"
+						width="1334"
+						height="586"
+						viewBox="0 0 1334 586"
+						fill="none"
+						xmlns="http://www.w3.org/2000/svg"
+						xmlnsXlink="http://www.w3.org/1999/xlink"
 						aria-hidden="true"
-					/>
+						preserveAspectRatio="none"
+					>
+						<g filter="url(#filter0_dd_5110_1203)">
+							<ellipse cx="667" cy="293" rx="643" ry="269" fill="#DFE6E9" />
+							<ellipse
+								cx="667"
+								cy="293"
+								rx="643"
+								ry="269"
+								fill="url(#pattern0_5110_1203)"
+								fillOpacity="0.05"
+							/>
+						</g>
+						<defs>
+							<filter
+								id="filter0_dd_5110_1203"
+								x="0"
+								y="0"
+								width="1334"
+								height="586"
+								filterUnits="userSpaceOnUse"
+								colorInterpolationFilters="sRGB"
+							>
+								<feFlood floodOpacity="0" result="BackgroundImageFix" />
+								<feColorMatrix
+									in="SourceAlpha"
+									type="matrix"
+									values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+									result="hardAlpha"
+								/>
+								<feOffset dx="8" dy="8" />
+								<feGaussianBlur stdDeviation="8" />
+								<feComposite in2="hardAlpha" operator="out" />
+								<feColorMatrix
+									type="matrix"
+									values="0 0 0 0 0.768627 0 0 0 0 0.768627 0 0 0 0 0.768627 0 0 0 1 0"
+								/>
+								<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_5110_1203" />
+								<feColorMatrix
+									in="SourceAlpha"
+									type="matrix"
+									values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+									result="hardAlpha2"
+								/>
+								<feOffset dx="-8" dy="-8" />
+								<feGaussianBlur stdDeviation="8" />
+								<feComposite in2="hardAlpha2" operator="out" />
+								<feColorMatrix
+									type="matrix"
+									values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0"
+								/>
+								<feBlend mode="normal" in2="effect1_dropShadow_5110_1203" result="effect2_dropShadow_5110_1203" />
+								<feBlend mode="normal" in="SourceGraphic" in2="effect2_dropShadow_5110_1203" result="shape" />
+							</filter>
+							<pattern
+								id="pattern0_5110_1203"
+								patternContentUnits="objectBoundingBox"
+								width="0.0186625"
+								height="0.0892193"
+							>
+								<use
+									xlinkHref="#image0_5110_1203"
+									transform="scale(0.000777605 0.00185874)"
+								/>
+							</pattern>
+							<image
+								id="image0_5110_1203"
+								width="24"
+								height="48"
+								preserveAspectRatio="none"
+								xlinkHref="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAwCAYAAAALiLqjAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAOdEVYdFNvZnR3YXJlAEZpZ21hnrGWYwAAARBJREFUeAHtlrENwjAQRf9FHiAjMAJswAgwAiNQUoAVKBAVI7ACI7ABjMAItEQmR4wESpASLj5RRPJvouis/2zFd/mELy1XG66+b9ZLgkIJ/qwIiAC9DBSydjso4A7EGJbNk4JwTODmWZZd32uCT+DNmd0ZjPHL3IsxKdicrbUDNaDc+f5jXFf6KMxBDfC7bSoRYagGlAPq1lJO1QAmXJqLOKoBOcys4RS3PHFzNWCXLa53MiN/Nd/GzDjl5Ea7yjVV9YGHlI9p25o4iyKgBwBV5vH6laPiN4iAHgBq/wNJzumqpGouyTnBAGnOCQZIc04wQJpzggHSnBMMkOacYIA053RVrQ8kOaer4iyKgB4AnrPke6dH3TzTAAAAAElFTkSuQmCC"
+							/>
+						</defs>
+					</svg>
 
 					<div className="limitsContent">
 						<div className="limitsBadge">NeuroLXP<sup>™</sup></div>
@@ -495,9 +571,9 @@ const MobileLearning: NextPage = () => {
 							at your own pace.
 						</p>
 
-						<a className="limitsButton" href="#book-a-demo">
+						<BookDemoTrigger className="limitsButton">
 							Book a Demo
-						</a>
+						</BookDemoTrigger>
 					</div>
 				</section>
 			</main>
