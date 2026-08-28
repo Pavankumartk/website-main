@@ -746,15 +746,7 @@ export default function ContentIntelligenceManagement() {
               </div>
             </div>
           </div>
-          <BookDemoTrigger
-            className={styles.requestADemoWrapper}
-            style={{
-              border: "none",
-              outline: "none",
-              appearance: "none",
-              WebkitAppearance: "none",
-            }}
-          >
+          <BookDemoTrigger className={styles.requestADemoWrapper}>
             <div className={styles.requestADemo}>Request a Demo</div>
           </BookDemoTrigger>
         </div>
