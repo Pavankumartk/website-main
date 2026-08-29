@@ -1,8 +1,11 @@
+"use client";
+
 import type { NextPage } from "next";
 import Image from "next/image";
 import styles from "./help.module.css";
 import Header from "../../components/Header/header";
 import Footer from "../../components/Footer/footer";
+import { BookDemoTrigger } from "../../components/Bookademo/Bookademo";
 
 const HelpAndSupport: NextPage = () => {
   return (
@@ -31,7 +34,10 @@ const HelpAndSupport: NextPage = () => {
               </div>
               <div className={styles.reliableSupportFor}>Reliable support for administrators educators, and learners.</div>
             </div>
-            <a className={styles.frameChild2} href="/book-a-demo">Book a Demo</a>
+
+            <BookDemoTrigger>
+              <div className={`${styles.frameChild2} ${styles.bookDemoVisual}`}>Book a Demo</div>
+            </BookDemoTrigger>
           </div>
 
           <div className={styles.frameParent6}>

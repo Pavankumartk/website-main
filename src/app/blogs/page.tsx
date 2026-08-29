@@ -3,6 +3,7 @@ import Image from "next/image";
 import styles from "./blog.module.css";
 import Header from "../../components/Header/header";
 import Footer from "../../components/Footer/footer";
+import { BookDemoTrigger } from "../../components/Bookademo/Bookademo";
 
 const Blogs: NextPage = () => {
   return (
@@ -71,15 +72,17 @@ const Blogs: NextPage = () => {
               </div>
             </div>
 
-            <div className={styles.frameWrapper2}>
-              <div className={styles.frameWrapper3}>
-                <div className={styles.frameWrapper4}>
-                  <div className={styles.bookADemoWrapper}>
-                    <div className={styles.bookADemo}>Book a Demo</div>
+            <BookDemoTrigger>
+              <div className={styles.frameWrapper2}>
+                <div className={styles.frameWrapper3}>
+                  <div className={styles.frameWrapper4}>
+                    <div className={styles.bookADemoWrapper}>
+                      <div className={styles.bookADemo}>Book a Demo</div>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
+            </BookDemoTrigger>
           </div>
         </div>
 

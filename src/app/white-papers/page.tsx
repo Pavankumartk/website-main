@@ -4,6 +4,7 @@ import Image from "next/image";
 import styles from "./white-paper.module.css";
 import Header from "../../components/Header/header";
 import Footer from "../../components/Footer/footer";
+import { BookDemoTrigger } from "../../components/Bookademo/Bookademo";
 
 export default function WhitePaper() {
   const topics = [
@@ -127,9 +128,9 @@ export default function WhitePaper() {
                   </p>
                 </div>
 
-                <button className={styles["hero-btn"]}>
+                <BookDemoTrigger className={styles["hero-btn"]}>
                   <span className={styles["hero-btn-text"]}>Book a Demo</span>
-                </button>
+                </BookDemoTrigger>
               </div>
             </div>
 

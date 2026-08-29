@@ -17,9 +17,8 @@
   position: absolute;
   top: 0px;
   left: calc(50% - 720px);
-  box-shadow:
-    -8px -8px 16px #fff,
-    8px 8px 16px #c6c6c9;
+  box-shadow: -4px -4px 4px #fff,
+    4px 4px 4px #c6c6c9;
   background-color: #dfe6e9;
   width: 1440px;
   height: 80px;
@@ -93,9 +92,8 @@
   position: absolute;
   top: calc(50% - 22.5px);
   left: 1244px;
-  box-shadow:
-    -8px -8px 16px #fff,
-    8px 8px 16px #c6c6c9;
+  box-shadow: -4px -4px 4px #fff,
+    4px 4px 4px #c6c6c9;
   border-radius: 32px;
   background-color: #dfe6e9;
   width: 132px;
@@ -170,9 +168,8 @@
   width: 1280px;
   height: 652px;
   margin: 32px auto 0;
-  box-shadow:
-    -8px -8px 8px rgba(255, 255, 255, 0.5),
-    8px 8px 8px #c4c4c4;
+  box-shadow: -4px -4px 4px rgba(255, 255, 255, 0.5),
+    4px 4px 4px #c4c4c4;
   border-radius: 50px;
   background-color: #dfe6e9;
   overflow: hidden;
@@ -290,9 +287,8 @@
 .frameWrapper3 {
   height: 60px;
   width: 203px;
-  box-shadow:
-    -8px -8px 16px #fff,
-    8px 8px 16px #c6c6c9;
+  box-shadow: -4px -4px 4px #fff,
+    4px 4px 4px #c6c6c9;
   border-radius: 8px;
   background-color: #dfe6e9;
   overflow: hidden;
@@ -408,7 +404,7 @@
 .rectangleParent10 {
   width: 100%;
   max-width: 400px;
-  aspect-ratio: 400 / 450;
+  aspect-ratio: 400 / 390;
   height: auto;
   position: relative;
 }
@@ -418,7 +414,8 @@
   inset: 0;
   width: 100%;
   height: 100%;
-  box-shadow: -8px -8px 16px #fff, 8px 8px 16px #c4c4c4;
+  box-shadow: -4px -4px 4px #fff,
+    4px 4px 4px #c4c4c4;
   border-radius: 16px;
   background-color: #dfe6e9;
 }
@@ -444,7 +441,8 @@
   aspect-ratio: 352 / 229;
   height: auto;
   position: relative;
-  box-shadow: -8px -8px 16px #fff inset, 8px 8px 16px #c4c4c4 inset;
+  box-shadow: -4px -4px 4px #fff inset,
+    4px 4px 4px #c4c4c4 inset;
   border-radius: 16px;
   background-color: #dfe6e9;
 }
@@ -638,9 +636,8 @@
   position: absolute;
   top: 0px;
   left: 0px;
-  box-shadow:
-    -8px -8px 16px #fff,
-    8px 8px 16px #c4c4c4;
+  box-shadow: -4px -4px 4px #fff,
+    4px 4px 4px #c4c4c4;
   border-radius: 32px;
   width: 935px;
   height: 395px;
@@ -691,9 +688,8 @@
 .frameWrapper7 {
   width: 400px;
   height: 70px;
-  box-shadow:
-    -4px -4px 8px #fff inset,
-    4px 4px 8px rgba(196, 196, 196, 0.8) inset;
+  box-shadow: -4px -4px 4px #fff inset,
+    4px 4px 4px rgba(196, 196, 196, 0.8) inset;
   border-radius: 30px;
   background-color: #dfe6e9;
   overflow: hidden;
@@ -735,9 +731,8 @@
 .frameWrapper8 {
   width: 400px;
   height: 70px;
-  box-shadow:
-    -4px -4px 8px #fff inset,
-    4px 4px 8px rgba(196, 196, 196, 0.8) inset;
+  box-shadow: -4px -4px 4px #fff inset,
+    4px 4px 4px rgba(196, 196, 196, 0.8) inset;
   border-radius: 30px;
   background-color: #dfe6e9;
   overflow: hidden;
@@ -882,9 +877,8 @@
   position: relative;
   flex: 0 0 70px;
   background: #dfe6e9;
-  box-shadow:
-    inset -4px -4px 8px #ffffff,
-    inset 4px 4px 8px rgba(196, 196, 196, 0.8);
+  box-shadow: inset -4px -4px 4px #ffffff,
+    inset 4px 4px 4px rgba(196, 196, 196, 0.8);
   border-radius: 100px;
   transform: rotate(0.05deg);
   display: flex;
@@ -897,9 +891,8 @@
   height: 50px;
   position: relative;
   background: #dfe6e9;
-  box-shadow:
-    4px 4px 8px #c6c6c9,
-    -4px -4px 8px #ffffff;
+  box-shadow: 4px 4px 4px #c6c6c9,
+    -4px -4px 4px #ffffff;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -1036,9 +1029,8 @@
   position: absolute;
   bottom: -0.02px;
   left: calc(50% - 720px);
-  box-shadow:
-    -10px -10px 20px #fff inset,
-    8px 8px 16px #c4c4c4 inset;
+  box-shadow: -4px -4px 4px #fff inset,
+    4px 4px 4px #c4c4c4 inset;
   background-color: #dfe6e9;
   width: 1440px;
   height: 459px;
@@ -1265,9 +1257,8 @@
   position: absolute;
   bottom: 0.02px;
   left: calc(50% - 720px);
-  box-shadow:
-    -8px -8px 16px #fff inset,
-    10px 10px 10px #c4c4c4 inset;
+  box-shadow: -4px -4px 4px #fff inset,
+    4px 4px 4px #c4c4c4 inset;
   background-color: #dfe6e9;
   width: 1440px;
   height: 459px;
@@ -1386,9 +1377,8 @@
   justify-content: center;
   background: #dfe6e9;
   border-radius: 50px;
-  box-shadow:
-    inset -4px -4px 8px rgba(255, 255, 255, 0.95),
-    inset 4px 4px 8px rgba(196, 196, 196, 0.8);
+  box-shadow: inset -4px -4px 4px rgba(255, 255, 255, 0.95),
+    inset 4px 4px 4px rgba(196, 196, 196, 0.8);
   margin: 0 auto;
 }
 .neuroBadge {
@@ -1430,9 +1420,8 @@
   margin: 0 auto 8px;
   background: #dfe6e9;
   border-radius: 50px;
-  box-shadow:
-    inset -4px -4px 8px #ffffff,
-    inset 4px 4px 8px rgba(196, 196, 196, 0.8);
+  box-shadow: inset -4px -4px 4px #ffffff,
+    inset 4px 4px 4px rgba(196, 196, 196, 0.8);
 
   font-family: "Segoe UI";
   font-size: 24px;
@@ -1452,9 +1441,8 @@
   justify-content: center;
   background: #dfe6e9;
   border-radius: 28px;
-  box-shadow:
-    inset -4px -4px 8px #fff,
-    inset 4px 4px 8px rgba(196, 196, 196, 0.8);
+  box-shadow: inset -4px -4px 4px #fff,
+    inset 4px 4px 4px rgba(196, 196, 196, 0.8);
 
   font-family: "Segoe UI";
   font-size: 24px;
@@ -1612,9 +1600,8 @@
 .frameWrapper7:hover,
 .frameWrapper8:hover {
   transform: translateY(-6px);
-  box-shadow:
-    -6px -6px 12px #ffffff,
-    6px 6px 12px rgba(196, 196, 196, 0.85);
+  box-shadow: -4px -4px 4px #ffffff,
+    4px 4px 4px rgba(196, 196, 196, 0.85);
 }
 
 .frameWrapper7:hover::after,
@@ -2024,9 +2011,8 @@
     flex-direction: column;
     border-radius: 28px;
     background: #dfe6e9;
-    box-shadow:
-      -8px -8px 8px rgba(255, 255, 255, 0.5),
-      8px 8px 8px #c4c4c4;
+    box-shadow: -4px -4px 4px rgba(255, 255, 255, 0.5),
+    4px 4px 4px #c4c4c4;
     overflow: hidden;
   }
 
@@ -2530,4 +2516,293 @@
     white-space: nowrap;
   }
 
+}
+
+
+/* BookDemoTrigger outer shell reset — preserves the original Book a Demo design */
+.frameParent2 > button:has(> .frameWrapper2) {
+  appearance: none !important;
+  -webkit-appearance: none !important;
+  background: transparent !important;
+  border: 0 !important;
+  outline: 0 !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  color: inherit !important;
+  font: inherit !important;
+  cursor: pointer !important;
+  -webkit-tap-highlight-color: transparent !important;
+}
+
+.frameParent2 > button:has(> .frameWrapper2):hover,
+.frameParent2 > button:has(> .frameWrapper2):focus,
+.frameParent2 > button:has(> .frameWrapper2):focus-visible,
+.frameParent2 > button:has(> .frameWrapper2):active {
+  background: transparent !important;
+  border: 0 !important;
+  outline: 0 !important;
+  box-shadow: none !important;
+}
+
+
+/* =========================================================
+   BLOG CARDS — IMAGE FIT CORRECTION
+   Keeps card size/design unchanged; only aligns the 6 images
+   inside the existing inset image area like the reference PNG.
+   ========================================================= */
+
+.frameParent7 > .rectangleGroup:nth-child(1) .youngManUsingHisLaptopInfIcon,
+.rectangleParent2 .youngManUsingHisLaptopInfIcon,
+.rectangleParent4 .concentratedExecutiveManagerIcon,
+.frameParent7 > .rectangleGroup:nth-child(4) .womanHoldingIdeaIconUsing,
+.rectangleParent8 .computingMan1Icon,
+.rectangleParent10 .frameChild14 {
+  position: absolute !important;
+  top: 6% !important;
+  left: 6% !important;
+  width: 88% !important;
+  height: 56% !important;
+  margin: 0 !important;
+  transform: none !important;
+  border-radius: 16px !important;
+  object-position: center !important;
+  z-index: 2 !important;
+}
+
+/* People/product images should remain fully visible inside the image well */
+.frameParent7 > .rectangleGroup:nth-child(1) .youngManUsingHisLaptopInfIcon,
+.rectangleParent2 .youngManUsingHisLaptopInfIcon,
+.rectangleParent4 .concentratedExecutiveManagerIcon,
+.frameParent7 > .rectangleGroup:nth-child(4) .womanHoldingIdeaIconUsing,
+.rectangleParent8 .computingMan1Icon {
+  object-fit: contain !important;
+}
+
+/* Analytics image fills its existing image panel cleanly */
+.rectangleParent10 .frameChild14 {
+  object-fit: contain !important;
+  align-self: auto !important;
+  aspect-ratio: auto !important;
+  box-shadow: none !important;
+  background: transparent !important;
+}
+
+/* Keep the inset image panel behind every image */
+.frameChild4,
+.frameChild6,
+.frameChild8,
+.rectangleParent10 .rectangleContainer::before {
+  border-radius: 16px;
+}
+
+
+/* =========================================================
+   FINAL SECTION — SPACING + TM SIZE CORRECTION
+   Only reduces excess vertical spacing and makes TM smaller.
+   ========================================================= */
+
+.frameParent16 {
+  margin-top: 40px;
+}
+
+.blogsInner {
+  margin: 40px auto 56px;
+}
+
+.frameParent21 {
+  height: auto;
+  gap: 18px;
+}
+
+.exploreTheNeurolxpBlogParent {
+  gap: 12px;
+}
+
+.neuroBadgeTM {
+  font-size: 10px;
+  margin-left: 3px;
+  top: -6px;
+}
+
+
+/* Stay Ahead section — center alignment only */
+.frameParent16 {
+  justify-content: center;
+  gap: 80px;
+}
+
+.frameWrapper12,
+.frameWrapper13,
+.frameWrapper14,
+.frameParent17 {
+  align-items: center;
+  text-align: center;
+}
+
+.stayAheadOfLearningTrendsWrapper {
+  align-items: center;
+  text-align: center;
+}
+
+.frameParent18 {
+  align-items: flex-start;
+}
+
+
+/* =========================================================
+   BLOG CARDS — RESTORE MISSING TEXT + REMOVE HOVER
+   ========================================================= */
+
+/* Keep all card text visible above the images */
+.aiPoweredLmsParent,
+.interactiveLearningParent,
+.corporateTrainingParent,
+.digitalEducationParent {
+  position: absolute !important;
+  left: 6% !important;
+  bottom: 6% !important;
+  width: 88% !important;
+  max-width: none !important;
+  z-index: 4 !important;
+  margin: 0 !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+/* Restore the Learning Analytics text block */
+.rectangleParent10 .aiPoweredLmsParent {
+  position: absolute !important;
+  left: 6% !important;
+  bottom: 6% !important;
+  width: 88% !important;
+  max-width: none !important;
+  z-index: 4 !important;
+  display: flex !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+/* Remove hover movement/effects from the six blog cards */
+.rectangleGroup,
+.rectangleParent2,
+.rectangleParent4,
+.rectangleParent8,
+.rectangleParent10,
+.rectangleContainer,
+.rectangleParent3,
+.youngManUsingHisLaptopInfIcon,
+.concentratedExecutiveManagerIcon,
+.womanHoldingIdeaIconUsing,
+.computingMan1Icon,
+.frameChild14 {
+  transition: none !important;
+}
+
+.rectangleGroup:hover,
+.rectangleParent2:hover,
+.rectangleParent4:hover,
+.rectangleParent8:hover,
+.rectangleParent10:hover,
+.rectangleContainer:hover,
+.rectangleParent3:hover {
+  transform: none !important;
+  filter: none !important;
+}
+
+/* Prevent any hover overlay/pseudo effect on cards */
+.rectangleGroup:hover::before,
+.rectangleGroup:hover::after,
+.rectangleParent2:hover::before,
+.rectangleParent2:hover::after,
+.rectangleParent4:hover::before,
+.rectangleParent4:hover::after,
+.rectangleParent8:hover::before,
+.rectangleParent8:hover::after,
+.rectangleParent10:hover::before,
+.rectangleParent10:hover::after {
+  opacity: 0 !important;
+  animation: none !important;
+}
+
+
+/* Mobile only — remove the marked empty gap above Discover practical ideas */
+@media (max-width: 600px) {
+  .frameParent16 {
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+  }
+
+  .frameParent19 {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+  }
+
+  .frameParent20 {
+    margin-top: 12px !important;
+  }
+}
+
+
+/* Mobile — remove the actual gap between Turn Insights and the ideas card */
+@media screen and (max-width: 600px) {
+  .frameParent10 {
+    gap: 0 !important;
+  }
+
+  .frameParent11 {
+    gap: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  .frameWrapper5,
+  .frameWrapper6 {
+    margin: 0 !important;
+    padding: 0 !important;
+    height: auto !important;
+    min-height: 0 !important;
+  }
+
+  .turnInsightsIntoActionParent {
+    margin: 0 0 12px !important;
+    padding: 0 !important;
+    height: auto !important;
+    min-height: 0 !important;
+  }
+
+  .rectangleParent12 {
+    margin-top: 0 !important;
+  }
+}
+
+
+/* Mobile — decrease the Turn Insights spacing a little more */
+@media screen and (max-width: 600px) {
+  .turnInsightsIntoActionParent {
+    margin-bottom: 4px !important;
+  }
+
+  .rectangleParent12 {
+    margin-top: -8px !important;
+  }
+}
+
+
+/* Mobile — reduce the marked gap under Stay Ahead intro */
+@media screen and (max-width: 600px) {
+  .frameParent16 {
+    gap: 18px !important;
+  }
+
+  .frameParent17 {
+    gap: 8px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  .frameParent18 {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+  }
 }

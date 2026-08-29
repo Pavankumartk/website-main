@@ -672,7 +672,7 @@
 	top: -8px;
 	margin-left: 2px;
 	font-size: 10px;
-	font-weight: 700;
+	font-weight: 900;
 	line-height: 1;
 	letter-spacing: 0;
 	color: #2d4cc8;
@@ -1588,6 +1588,7 @@
 
 	.helpAndSupport .neurolxpBadgeTm {
 		font-size: 8px;
+		font-weight: 900;
 		line-height: 1;
 		top: -7px;
 		margin-left: 2px;
@@ -2918,4 +2919,62 @@
 .helpAndSupportInner .frameParent11 {
   position: relative !important;
   z-index: 3 !important;
+}
+
+/* ==========================================================================
+   BOOK A DEMO — REMOVE OUTER BookDemoTrigger BUTTON WRAPPER
+   Keeps the original .frameChild2 design and navigation unchanged.
+   ========================================================================== */
+.helpAndSupport .frameParent3 > button:has(> .bookDemoVisual),
+.helpAndSupport .frameParent3 > button:has(> .frameChild2) {
+	appearance: none !important;
+	-webkit-appearance: none !important;
+	background: transparent !important;
+	border: 0 !important;
+	outline: 0 !important;
+	box-shadow: none !important;
+	padding: 0 !important;
+	margin: 0 !important;
+	color: inherit !important;
+	font: inherit !important;
+	cursor: pointer !important;
+	-webkit-tap-highlight-color: transparent !important;
+}
+
+.helpAndSupport .frameParent3 > button:has(> .bookDemoVisual):hover,
+.helpAndSupport .frameParent3 > button:has(> .bookDemoVisual):focus,
+.helpAndSupport .frameParent3 > button:has(> .bookDemoVisual):focus-visible,
+.helpAndSupport .frameParent3 > button:has(> .bookDemoVisual):active,
+.helpAndSupport .frameParent3 > button:has(> .frameChild2):hover,
+.helpAndSupport .frameParent3 > button:has(> .frameChild2):focus,
+.helpAndSupport .frameParent3 > button:has(> .frameChild2):focus-visible,
+.helpAndSupport .frameParent3 > button:has(> .frameChild2):active {
+	background: transparent !important;
+	border: 0 !important;
+	outline: 0 !important;
+	box-shadow: none !important;
+}
+
+
+/* ========================================================================== 
+   MOBILE — REMOVE THE TWO EXTRA VERTICAL SPACES SHOWN IN SCREENSHOTS
+   1) Hero image -> Comprehensive Support
+   2) Knowledge & Resources -> final NeuroLXP section
+   ========================================================================== */
+@media (max-width: 620px) {
+  .helpAndSupport > .frameParent2 {
+    margin-bottom: 28px !important;
+  }
+
+  .helpAndSupport > .comprehensiveSupportParent {
+    margin-top: 0 !important;
+  }
+
+  .helpAndSupport > .helpAndSupportInner {
+    margin-bottom: 28px !important;
+  }
+
+  .helpAndSupport > .helpAndSupportChild {
+    margin-top: 0 !important;
+  }
 }

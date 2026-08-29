@@ -3,6 +3,7 @@ import Image from "next/image";
 import styles from "./media.module.css";
 import Header from "../../components/Header/header";
 import Footer from "../../components/Footer/footer";
+import { BookDemoTrigger } from "../../components/Bookademo/Bookademo";
 
 const MediaPresence: NextPage = () => {
   return (
@@ -22,9 +23,7 @@ const MediaPresence: NextPage = () => {
               </div>
             </div>
             <div className={styles.frameWrapper}>
-              <button className={styles.mediaDemoButton} type="button">
-                Book a Demo
-              </button>
+              <BookDemoTrigger className={styles.mediaDemoButton}>Book a Demo</BookDemoTrigger>
             </div>
           </div>
         </div>
@@ -197,9 +196,7 @@ const MediaPresence: NextPage = () => {
                 <div className={styles.neurolxpEmpowersOrganization}>NeuroLXP empowers organizations with smarter, scalable learning ecosystems.</div>
               </div>
             </div>
-            <button className={styles.mediaDemoButton} type="button">
-              Book a Demo
-            </button>
+            <BookDemoTrigger className={styles.mediaDemoButton}>Book a Demo</BookDemoTrigger>
           </div>
         </div>
       </main>

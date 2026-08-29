@@ -69,7 +69,7 @@ body {
     display: flex;
     align-items: flex-end;
 
-    font-family: "Inter", sans-serif;
+    font-family: "Segoe UI";
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
@@ -98,7 +98,7 @@ body {
     display: flex;
     align-items: flex-end;
 
-    font-family: "Inter", sans-serif;
+    font-family: "Segoe UI";
     font-size: 16px;
     font-weight: 700;
     line-height: 24px;
@@ -138,9 +138,7 @@ body {
     border-radius: 8px;
     background: #DFE6E9;
 
-    box-shadow:
-        8px 8px 16px #C4C4C4,
-        -8px -8px 16px #FFFFFF;
+    box-shadow: 4px 4px 4px #C4C4C4, -4px -4px 4px #FFFFFF;
 }
 
 .hero-content-wrapper {
@@ -186,15 +184,13 @@ body {
     background: #DFE6E9;
     border-radius: 28px;
 
-    box-shadow:
-        inset 4px 4px 8px rgba(196, 196, 196, 0.8),
-        inset -4px -4px 8px #FFFFFF;
+    box-shadow: inset 4px 4px 4px rgba(196, 196, 196, 0.8), inset -4px -4px 4px #FFFFFF;
 
     box-sizing: border-box;
 }
 
 .hero-badge span {
-    font-family: "Segoe UI", sans-serif;
+    font-family: "Segoe UI";
     font-size: 22px;
     font-weight: 600;
     line-height: 32px;
@@ -209,7 +205,7 @@ body {
 
     margin: 0;
 
-    font-family: "Segoe UI", sans-serif;
+    font-family: "Segoe UI";
     font-weight: 700;
     font-size: 48px;
     line-height: 60px;
@@ -228,7 +224,7 @@ body {
 
     margin: 0;
 
-    font-family: "Segoe UI", sans-serif;
+    font-family: "Segoe UI";
     font-size: 28px;
     font-weight: 400;
     line-height: 40px;
@@ -251,8 +247,8 @@ body {
     cursor: pointer;
 
     box-shadow:
-        4px 4px 8px rgba(196, 196, 196, 0.8),
-        -4px -4px 8px #FFFFFF;
+        -4px -4px 8px #FFFFFF,
+        4px 4px 8px rgba(196, 196, 196, 0.80);
 
     transition: all 0.3s ease;
 }
@@ -264,7 +260,7 @@ body {
     align-items: center;
     justify-content: center;
 
-    font-family: "Segoe UI", sans-serif;
+    font-family: "Segoe UI";
     font-size: 22px;
     font-weight: 700;
     line-height: 30px;
@@ -274,7 +270,7 @@ body {
 }
 
 .hero-btn span {
-    font-family: "Segoe UI", sans-serif;
+    font-family: "Segoe UI";
     font-size: 22px;
     font-weight: 600;
     line-height: 32px;
@@ -285,14 +281,14 @@ body {
 
 .hero-btn:hover {
     box-shadow:
-        inset 4px 4px 8px rgba(196, 196, 196, 0.8),
-        inset -4px -4px 8px #FFFFFF;
+        inset -4px -4px 8px #FFFFFF,
+        inset 4px 4px 8px rgba(196, 196, 196, 0.80);
 }
 
 .hero-btn:active {
     box-shadow:
-        inset 4px 4px 8px rgba(196, 196, 196, 0.8),
-        inset -4px -4px 8px #FFFFFF;
+        inset -4px -4px 8px #FFFFFF,
+        inset 4px 4px 8px rgba(196, 196, 196, 0.80);
 }
 
 .hero-image-wrapper {
@@ -310,9 +306,7 @@ body {
 
     top: 0;
 
-    box-shadow:
-        inset 8px 8px 16px #C4C4C4,
-        inset -8px -8px 16px #FFFFFF;
+    box-shadow: inset 4px 4px 4px #C4C4C4, inset -4px -4px 4px #FFFFFF;
 
     flex-shrink: 0;
     z-index: 1;
@@ -325,9 +319,7 @@ body {
     overflow: hidden;
     position: relative;
 
-    box-shadow:
-        8px 8px 16px #C4C4C4,
-        -8px -8px 16px #FFFFFF;
+    box-shadow: 4px 4px 4px #C4C4C4, -4px -4px 4px #FFFFFF;
 }
 
 .hero-image {
@@ -366,15 +358,13 @@ body {
     background: #DFE6E9;
     border-radius: 28px;
 
-    box-shadow:
-        inset 4px 4px 8px rgba(196, 196, 196, 0.8),
-        inset -4px -4px 8px #FFFFFF;
+    box-shadow: inset 4px 4px 4px rgba(196, 196, 196, 0.8), inset -4px -4px 4px #FFFFFF;
 
     flex-shrink: 0;
 }
 
 .insights-badge span {
-    font-family: "Segoe UI", sans-serif;
+    font-family: "Segoe UI";
     font-size: 22px;
     font-weight: 600;
     line-height: 32px;
@@ -396,9 +386,7 @@ body {
     background: #DFE6E9;
     border-radius: 28px;
 
-    box-shadow:
-        inset 4px 4px 8px rgba(196, 196, 196, 0.8),
-        inset -4px -4px 8px #FFFFFF;
+    box-shadow: inset 4px 4px 4px rgba(196, 196, 196, 0.8), inset -4px -4px 4px #FFFFFF;
 
     flex-shrink: 0;
 }
@@ -411,7 +399,7 @@ body {
     align-items: center;
     justify-content: center;
 
-    font-family: "Segoe UI", sans-serif;
+    font-family: "Segoe UI";
     font-size: 24px;
     font-weight: 600;
     line-height: 32px;
@@ -429,7 +417,7 @@ body {
 
     margin: 0;
 
-    font-family: "Segoe UI", sans-serif;
+    font-family: "Segoe UI";
     font-size: 48px;
     font-weight: 700;
     line-height: 60px;
@@ -449,7 +437,7 @@ body {
 
     margin: 0;
 
-    font-family: "Segoe UI", sans-serif;
+    font-family: "Segoe UI";
     font-size: 28px;
     font-weight: 400;
     line-height: 40px;
@@ -504,7 +492,7 @@ body {
 
     margin: 0;
 
-    font-family: "Segoe UI", sans-serif;
+    font-family: "Segoe UI";
     font-weight: 700;
     font-size: 36px;
     line-height: 50px;
@@ -521,7 +509,7 @@ body {
 
     margin: 0;
 
-    font-family: "Segoe UI", sans-serif;
+    font-family: "Segoe UI";
     font-weight: 400;
     font-size: 24px;
     line-height: 32px;
@@ -561,9 +549,7 @@ body {
     border-top: 6px solid rgba(255, 255, 255, 0.9);
     border-bottom: 3px solid rgba(196, 196, 196, 0.5);
 
-    box-shadow:
-        -10px -10px 20px 0 #FFFFFF,
-        10px 10px 20px 0 #C4C4C4;
+    box-shadow: -4px -4px 4px 0 #FFFFFF, 4px 4px 4px 0 #C4C4C4;
 
     box-sizing: border-box;
 
@@ -587,9 +573,7 @@ body {
 
     border-radius: 16px;
 
-    box-shadow:
-        inset 8px 8px 16px #C4C4C4,
-        inset -8px -8px 16px #FFFFFF;
+    box-shadow: inset 4px 4px 4px #C4C4C4, inset -4px -4px 4px #FFFFFF;
 }
 
 .topic-title {
@@ -597,7 +581,7 @@ body {
 
     width: 184px;
 
-    font-family: "Segoe UI", sans-serif;
+    font-family: "Segoe UI";
     font-size: 24px;
     font-weight: 700;
     line-height: 36px;
@@ -701,9 +685,7 @@ body {
     border-radius: 32px;
     background: #DFE6E9;
 
-    box-shadow:
-        8px 8px 16px #C4C4C4,
-        -8px -8px 16px #FFFFFF;
+    box-shadow: 4px 4px 4px #C4C4C4, -4px -4px 4px #FFFFFF;
 
     display: flex;
     align-items: center;
@@ -716,9 +698,7 @@ body {
     border-radius: 24px;
     background: #DFE6E9;
 
-    box-shadow:
-        inset 8px 8px 16px #C4C4C4,
-        inset -8px -8px 16px #FFFFFF;
+    box-shadow: inset 4px 4px 4px #C4C4C4, inset -4px -4px 4px #FFFFFF;
 
     display: flex;
     align-items: center;
@@ -750,7 +730,7 @@ body {
 
 .frame-four-title {
     margin: 0;
-    font-family: "Segoe UI", sans-serif;
+    font-family: "Segoe UI";
     font-weight: 700;
     font-size: 36px;
     line-height: 50px;
@@ -761,7 +741,7 @@ body {
 .frame-four-description {
     width: 486px;
     margin: 0;
-    font-family: "Segoe UI", sans-serif;
+    font-family: "Segoe UI";
     font-weight: 400;
     font-size: 28px;
     line-height: 40px;
@@ -801,9 +781,7 @@ body {
 
     background: #DFE6E9;
     border-radius: 50%;
-    box-shadow:
-        inset -4px -4px 8px #FFFFFF,
-        inset 4px 4px 8px #C4C4C4;
+    box-shadow: inset -4px -4px 4px #FFFFFF, inset 4px 4px 4px #C4C4C4;
 
 
     flex-shrink: 0;
@@ -825,9 +803,7 @@ body {
     border-radius: 50%;
     background: #DFE6E9;
 
-    box-shadow:
-        -8px -8px 16px #FFFFFF,
-        8px 8px 16px #C6C6C9;
+    box-shadow: -4px -4px 4px #FFFFFF, 4px 4px 4px #C6C6C9;
 }
 
 .frame-four-item-text {
@@ -2770,3 +2746,31 @@ body {
     .frame-five-section { padding-top: 30px; padding-bottom: 40px; }
 }
 
+
+
+/* BookDemoTrigger outer shell only — keeps original hero button design unchanged */
+.hero-content-wrapper > button:has(> .hero-btn) {
+    appearance: none;
+    -webkit-appearance: none;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    box-shadow: none;
+    font: inherit;
+    color: inherit;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.hero-content-wrapper > button:has(> .hero-btn):hover,
+.hero-content-wrapper > button:has(> .hero-btn):focus,
+.hero-content-wrapper > button:has(> .hero-btn):focus-visible,
+.hero-content-wrapper > button:has(> .hero-btn):active {
+    padding: 0;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    box-shadow: none;
+}
