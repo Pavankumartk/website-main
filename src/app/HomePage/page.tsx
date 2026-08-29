@@ -190,7 +190,7 @@ function LearningOdyssey({ onBookDemoClick, bookDemoButtonRef }: { onBookDemoCli
         </h2>
         <p className={styles["odyssey-subtext"]}>NeuroLXP is more than a learning platform it's an intelligent platform that helps learners grow, adapt, and succeed.</p>
         <button type="button" className={styles["odyssey-demo-button"]} onClick={onBookDemoClick} ref={bookDemoButtonRef}>
-          Book a demo
+          Book a Demo
         </button>
       </div>
 
@@ -287,7 +287,7 @@ const storyMissionVisionCards: StoryMissionVisionCardData[] = [
   {
     id: 1,
     title: "Our Story",
-    description: "NeuroLXP™ transforms learning through an intelligent Learning Experience Platform empowering universities, enterprises, government, and training organizations with future-ready skills.",
+    description: "NeuroLXP™ transforms learning with an intelligent platform for future-ready digital skills.",
     image: "/images/interested-coworkers-with-new-project.webp",
     accentColor: "#2D4CC8",
     Icon: BookOpenIcon,
@@ -295,7 +295,7 @@ const storyMissionVisionCards: StoryMissionVisionCardData[] = [
   {
     id: 2,
     title: "Our Mission",
-    description: "To transform learning and skilling through one intelligent ecosystem that empowers academic entities, corporates, and learners to achieve measurable, future-ready success.",
+    description: "Intelligent learning and skilling for measurable, future-ready success across learners and organizations.",
     image: "/images/interested-coworkers-project.webp",
     accentColor: "#2A7308",
     Icon: GoalIcon,
@@ -303,7 +303,7 @@ const storyMissionVisionCards: StoryMissionVisionCardData[] = [
   {
     id: 3,
     title: "Our Vision",
-    description: "To provide the world's most comprehensive digital learning and skilling ecosystem, shaping the future of lifelong learning through innovation, excellence, and inclusive growth.",
+    description: "A digital learning ecosystem shaping lifelong learning through innovation and inclusive growth.",
     image: "/images/coworkers-interested.webp",
     accentColor: "#67096E",
     Icon: EyeIcon,
@@ -669,7 +669,7 @@ function WhyChooseNeuroLXP() {
             <p className={styles["why-choose-subtext"]}>
   NeuroLXP<sup className={styles["why-choose-tm"]}>TM</sup> empowers learners
   <br />
-  with personalized learning, future-ready
+  with personalized learning, future
   <br />
   skills, and meaningful outcomes.
 </p>
@@ -690,37 +690,44 @@ const learningModuleCards = [
     id: 1,
     image: "/images/learning-new-statistics.webp",
     title: "Blended Learning",
-    description: "Seamlessly combine online and in-person learning for a flexible, engaging, and effective learning experience.",
+    description:
+      "Blend online and in-person learning for flexible, engaging experiences.",
   },
   {
     id: 2,
     image: "/images/challange.jpeg",
     title: "Career Growth",
-    description: "Develop in-demand skills, monitor your achievements, and build a successful career through continuous learning.",
+    description:
+      "Build in-demand skills and grow your career with confidence.",
   },
   {
     id: 3,
-    image: "/images/young-smiling-woman-using-digital-tablet-isolated-white-1.webp",
+    image:
+      "/images/young-smiling-woman-using-digital-tablet-isolated-white-1.webp",
     title: "Smart Learning Paths",
-    description: "Navigate personalized learning experiences designed to accelerate growth, build future-ready skills, and achieve lasting success.",
+    description:
+      "Personalized learning to build future-ready skills and accelerate growth.",
   },
   {
     id: 4,
     image: "/images/smiley-friends-having-videocall.webp",
     title: "Immersive Learning",
-    description: "Experience interactive content and collaborative learning that inspire engagement, build skills, and drive meaningful outcomes.",
+    description:
+      "Interactive learning that builds skills and delivers results.",
   },
   {
     id: 5,
     image: "/images/smiling-business-leader-greeting-partner.webp",
     title: "Smart Onboarding",
-    description: "Accelerate employee onboarding with guided learning experiences that drive faster adaptation, engagement, and productivity.",
+    description:
+      "Accelerate onboarding with guided, engaging learning.",
   },
   {
     id: 6,
     image: "/images/exchanging-business-card-posing.webp",
     title: "Standards Training",
-    description: "Stay compliant with confidence. Empower every team with standards-based learning.",
+    description:
+      "Stay fully compliant with trusted, standards-based learning.",
   },
 ];
 
@@ -1254,7 +1261,7 @@ function FAQItem({ item, isOpen, onToggle }: { item: FAQItemData; isOpen: boolea
 }
 
 function FAQSection() {
-  const [activeIndex, setActiveIndex] = useState(0);
+  const [activeIndex, setActiveIndex] = useState(-1);
 
   const handleToggle = (index: number) => {
     setActiveIndex((current) => (current === index ? -1 : index));
@@ -1308,7 +1315,7 @@ function GetInTouch({ onContactClick, contactButtonRef }: { onContactClick: () =
         <div className={styles["get-in-touch-media"]}>
           <div className={styles["get-in-touch-frame"]} />
           <div className={styles["get-in-touch-photo-wrapper"]}>
-            <Image src="/images/smiling-blonde-business-woman-eyeglasses-with-pen-hand-having-idea-looking-away-white-wall.webp" alt="Smiling businesswoman with glasses" fill sizes="(max-width: 480px) 280px, (max-width: 1024px) 380px, 677px" className={styles["get-in-touch-photo"]} />
+            <Image src="/images/homepage.webp" alt="Smiling businesswoman with glasses" fill sizes="(max-width: 480px) 280px, (max-width: 1024px) 380px, 677px" className={styles["get-in-touch-photo"]} />
           </div>
         </div>
       </div>
