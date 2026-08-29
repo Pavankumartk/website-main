@@ -104,8 +104,9 @@
   border-radius: 28px;
   background: var(--page-bg);
   box-shadow:
-    inset -4px -4px 8px #ffffff,
-    inset 4px 4px 8px rgba(196, 196, 196, 0.8);
+    
+    inset -4px -4px 4px #ffffff,
+    inset 4px 4px 4px rgba(196, 196, 196, 0.8);
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -157,8 +158,9 @@
   border-radius: clamp(20px, 2.22vw, 32px);
   background: var(--page-bg);
   box-shadow:
-    inset -8px -8px 16px #ffffff,
-    inset 8px 8px 16px #c4c4c4;
+    
+    inset -4px -4px 4px #ffffff,
+    inset 4px 4px 4px #c4c4c4;
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -184,8 +186,9 @@
   border-radius: clamp(18px, 2.22vw, 32px);
   object-fit: cover;
   box-shadow:
-    -8px -8px 16px #ffffff,
-    8px 8px 16px #c4c4c4;
+    
+    -4px -4px 4px #ffffff,
+    4px 4px 4px #c4c4c4;
 }
 
 .blendedHeroPlus {
@@ -199,8 +202,9 @@
   border-radius: 50%;
   background: var(--page-bg);
   box-shadow:
-    -4px -4px 8px #ffffff,
-    4px 4px 8px #c4c4c4;
+    
+    -4px -4px 4px #ffffff,
+    4px 4px 4px #c4c4c4;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -332,8 +336,9 @@
   background: var(--page-bg);
 
   box-shadow:
-    inset -4px -4px 8px #ffffff,
-    inset 4px 4px 8px rgba(196, 196, 196, 0.8);
+    
+    inset -4px -4px 4px #ffffff,
+    inset 4px 4px 4px rgba(196, 196, 196, 0.8);
 
   display: inline-flex;
   align-items: center;
@@ -403,8 +408,9 @@
   border-radius: 28px;
   background: var(--page-bg);
   box-shadow:
-    inset -6px -6px 12px #ffffff,
-    inset 6px 6px 12px rgba(196, 196, 196, 0.8);
+    
+    inset -4px -4px 4px #ffffff,
+    inset 4px 4px 4px rgba(196, 196, 196, 0.8);
 }
 
 .howItWorksIcon {
@@ -415,8 +421,9 @@
   border-radius: 50%;
   background: var(--page-bg);
   box-shadow:
-    -8px -8px 16px #ffffff,
-    8px 8px 16px #c4c4c4;
+    
+    -4px -4px 4px #ffffff,
+    4px 4px 4px #c4c4c4;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -460,8 +467,9 @@
   border-radius: 16px;
   background: var(--page-bg);
   box-shadow:
-    inset -4px -4px 8px #ffffff,
-    inset 4px 4px 8px rgba(196, 196, 196, 0.8);
+    
+    inset -4px -4px 4px #ffffff,
+    inset 4px 4px 4px rgba(196, 196, 196, 0.8);
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -505,8 +513,9 @@
   border-radius: 16px;
   background: var(--page-bg);
   box-shadow:
-    -4px -4px 8px #ffffff,
-    4px 4px 8px #c4c4c4;
+    
+    -4px -4px 4px #ffffff,
+    4px 4px 4px #c4c4c4;
 }
 
 .howItWorksSolution strong {
@@ -546,8 +555,9 @@
 
   /* Balanced neumorphic edge — same visual strength as the other sections. */
   box-shadow:
-    -4px -4px 8px rgba(255, 255, 255, 0.72),
-    4px 4px 8px rgba(196, 196, 196, 0.68);
+    
+    -4px -4px 4px rgba(255, 255, 255, 0.72),
+    4px 4px 4px rgba(196, 196, 196, 0.68);
 }
 
 /* Keep the recessed border visible without creating a wide white halo. */
@@ -559,8 +569,9 @@
   pointer-events: none;
   border-radius: inherit;
   box-shadow:
-    inset 4px 4px 8px rgba(196, 196, 196, 0.52),
-    inset -4px -4px 8px rgba(255, 255, 255, 0.58);
+    
+    inset 4px 4px 4px rgba(196, 196, 196, 0.52),
+    inset -4px -4px 4px rgba(255, 255, 255, 0.58);
 }
 
 .blendedBenefitsBackground {
@@ -641,8 +652,9 @@
   border-radius: 50%;
   background: var(--page-bg);
   box-shadow:
-    inset -6px -6px 12px #ffffff,
-    inset 6px 6px 12px rgba(196, 196, 196, 0.82);
+    
+    inset -4px -4px 4px #ffffff,
+    inset 4px 4px 4px rgba(196, 196, 196, 0.82);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -655,8 +667,9 @@
   border-radius: 50%;
   background: var(--page-bg);
   box-shadow:
-    -4px -4px 8px rgba(255, 255, 255, 0.98),
-    4px 4px 8px rgba(196, 196, 196, 0.88);
+    
+    -4px -4px 4px rgba(255, 255, 255, 0.98),
+    4px 4px 4px rgba(196, 196, 196, 0.88);
 }
 
 .blendedBenefitIcon img {
@@ -727,8 +740,9 @@
   border-radius: 50px;
   background: var(--page-bg);
   box-shadow:
-    -4px -4px 8px #ffffff,
-    4px 4px 8px rgba(196, 196, 196, 0.8);
+    
+    -4px -4px 4px #ffffff,
+    4px 4px 4px rgba(196, 196, 196, 0.8);
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -756,8 +770,9 @@
   border-radius: 50%;
   background: var(--page-bg);
   box-shadow:
-    inset -10px -10px 20px rgba(255, 255, 255, 0.96),
-    inset 10px 10px 20px rgba(196, 196, 196, 0.9);
+    
+    inset -4px -4px 4px rgba(255, 255, 255, 0.96),
+    inset 4px 4px 4px rgba(196, 196, 196, 0.9);
 }
 
 .blendedCtaImage {
@@ -890,8 +905,9 @@
     border-radius: 16px;
     background: var(--page-bg);
     box-shadow:
-      -4px -4px 8px #ffffff,
-      4px 4px 8px #c4c4c4;
+      
+    -4px -4px 4px #ffffff,
+    4px 4px 4px #c4c4c4;
   }
 
   .howItWorksSolution strong {
@@ -904,3 +920,193 @@
     margin: 8px 0 0;
   }
 }
+
+/* =========================================================
+   HERO LEFT CONTENT ALIGNMENT — match reference PNG
+   Desktop only. No other section/design is changed.
+   ========================================================= */
+@media (min-width: 901px) {
+  .blendedHeroContent {
+    width: 560px;
+    max-width: 100%;
+    min-width: 0;
+    align-self: center;
+    justify-self: start;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+  }
+
+  .blendedHeroBadge {
+    align-self: flex-start;
+    margin: 0;
+  }
+
+  .blendedHeroTitle {
+    width: 560px;
+    max-width: 100%;
+    margin: 48px 0 0;
+    text-align: left;
+  }
+
+  .blendedHeroDescription {
+    width: 560px;
+    max-width: 100%;
+    margin: 24px 0 0;
+    text-align: left;
+  }
+}
+
+/* BookDemoTrigger wrapper reset — keeps only the original Book a Demo pill visible */
+.blendedCtaHeader > button:has(> .blendedCtaButton) {
+  appearance: none !important;
+  -webkit-appearance: none !important;
+  background: transparent !important;
+  border: 0 !important;
+  outline: 0 !important;
+  box-shadow: 
+    4px 4px 4px important;
+  padding: 0 !important;
+  margin: 0 !important;
+  color: inherit !important;
+  font: inherit !important;
+  cursor: pointer !important;
+  -webkit-tap-highlight-color: transparent !important;
+}
+
+.blendedCtaHeader > button:has(> .blendedCtaButton):hover,
+.blendedCtaHeader > button:has(> .blendedCtaButton):focus,
+.blendedCtaHeader > button:has(> .blendedCtaButton):focus-visible,
+.blendedCtaHeader > button:has(> .blendedCtaButton):active {
+  background: transparent !important;
+  border: 0 !important;
+  outline: 0 !important;
+  box-shadow: 
+    4px 4px 4px important;
+}
+
+.blendedCtaHeader > button:has(> .blendedCtaButton)::-moz-focus-inner {
+  border: 0 !important;
+  padding: 0 !important;
+}
+
+/* =========================================================
+   BENEFITS LEFT CONTENT — keep reference text in two lines
+   Only adjusts the left Benefits text alignment/wrapping.
+   ========================================================= */
+@media (min-width: 901px) {
+  .blendedBenefitsIntro {
+    width: 100%;
+    max-width: 680px;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .blendedBenefitsTitle {
+    width: 680px;
+    max-width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    white-space: nowrap;
+    text-align: left;
+  }
+
+  .blendedBenefitsDescription {
+    width: 680px;
+    max-width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    white-space: nowrap;
+    text-align: left;
+  }
+}
+
+/* =========================================================
+   BENEFITS DESKTOP — prevent left/right overlap
+   Keeps the reference two-line heading and description.
+   ========================================================= */
+@media (min-width: 901px) {
+  .blendedBenefitsContent {
+    grid-template-columns: minmax(0, 580px) minmax(0, 1fr) !important;
+    column-gap: 40px !important;
+    align-items: center !important;
+  }
+
+  .blendedBenefitsIntro {
+    width: 580px !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+    align-items: flex-start !important;
+    text-align: left !important;
+  }
+
+  .blendedBenefitsTitle {
+    width: 580px !important;
+    max-width: 100% !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    font-size: 36px !important;
+    line-height: 1.25 !important;
+    white-space: nowrap !important;
+    text-align: left !important;
+  }
+
+  .blendedBenefitsDescription {
+    width: 580px !important;
+    max-width: 100% !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    white-space: nowrap !important;
+    text-align: left !important;
+  }
+
+  .blendedBenefitsList {
+    width: 100% !important;
+    min-width: 0 !important;
+  }
+}
+
+
+/* Segoe UI only — including breadcrumb and all page descendants */
+.blendedLearning,
+.blendedLearning *,
+.blendedLearning *::before,
+.blendedLearning *::after,
+.frameDiv,
+.frameDiv * {
+  font-family: 'Segoe UI', sans-serif !important;
+}
+
+/* =========================================================
+   BENEFITS RIGHT SIDE — keep every benefit item on one line
+   Desktop only; no other design changes.
+   ========================================================= */
+@media (min-width: 901px) {
+  .blendedBenefitsContent {
+    grid-template-columns: minmax(0, 580px) minmax(560px, 1fr) !important;
+    column-gap: 32px !important;
+  }
+
+  .blendedBenefitsList {
+    width: 100% !important;
+    min-width: 560px !important;
+  }
+
+  .blendedBenefitItem {
+    width: 100% !important;
+    flex-wrap: nowrap !important;
+  }
+
+  .blendedBenefitItem p {
+    width: auto !important;
+    max-width: none !important;
+    white-space: nowrap !important;
+    overflow-wrap: normal !important;
+    word-break: normal !important;
+  }
+}
+

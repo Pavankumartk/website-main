@@ -3,6 +3,7 @@ import Image from "next/image";
 import styles from "./emp.module.css";
 import Header from "../../components/Header/header";
 import Footer from "../../components/Footer/footer";
+import { BookDemoTrigger } from "../../components/Bookademo/Bookademo";
 const EmployeeInduction: NextPage = () => {
   return (
     <>
@@ -215,9 +216,9 @@ const EmployeeInduction: NextPage = () => {
           </div>
         </div>
         <div className={styles.frameWrapper6}>
-          <a className={styles.frameChild19} href="#book-demo">
+          <BookDemoTrigger className={styles.frameChild19}>
             Book a Demo
-          </a>
+          </BookDemoTrigger>
         </div>
       </div>
       </main>

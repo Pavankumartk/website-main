@@ -17,8 +17,8 @@
   top: 0px;
   left: calc(50% - 720px);
   box-shadow:
-    -8px -8px 16px #fff,
-    8px 8px 16px #c6c6c9;
+    -4px -4px 4px #fff,
+    4px 4px 4px #c6c6c9;
   background-color: #dfe6e9;
   width: 1440px;
   height: 80px;
@@ -93,8 +93,8 @@
   top: calc(50% - 22.5px);
   left: 1244px;
   box-shadow:
-    -8px -8px 16px #fff,
-    8px 8px 16px #c6c6c9;
+    -4px -4px 4px #fff,
+    4px 4px 4px #c6c6c9;
   border-radius: 32px;
   background-color: #dfe6e9;
   width: 132px;
@@ -176,8 +176,8 @@
   height: 614px;
   position: relative;
   box-shadow:
-    -8px -8px 16px #fff inset,
-    8px 8px 16px rgba(196, 196, 196, 0.8) inset;
+    -4px -4px 4px #fff inset,
+    4px 4px 4px rgba(196, 196, 196, 0.8) inset;
   border-radius: 32px;
   background-color: #dfe6e9;
   overflow: hidden;
@@ -188,8 +188,8 @@
   top: 32px;
   left: 32px;
   box-shadow:
-    10px 10px 20px #c4c4c4,
-    -10px -10px 20px rgba(255, 255, 255, 0.6);
+    4px 4px 4px #c4c4c4,
+    -4px -4px 4px rgba(255, 255, 255, 0.6);
   border-radius: 16px 100px 100px 16px;
   background-color: #dfe6e9;
   width: 608px;
@@ -249,8 +249,8 @@
   border-radius: 28px;
   background-color: #dfe6e9;
   box-shadow:
-    inset -4px -4px 8px rgba(255, 255, 255, 0.95),
-    inset 4px 4px 8px rgba(198, 198, 201, 0.85);
+    inset -4px -4px 4px rgba(255, 255, 255, 0.95),
+    inset 4px 4px 4px rgba(198, 198, 201, 0.85);
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -294,8 +294,8 @@
   border-radius: 50px;
   background: #dfe6e9;
   box-shadow:
-    -4px -4px 8px #ffffff,
-    4px 4px 8px rgba(196, 196, 196, 0.8);
+    -4px -4px 4px #ffffff,
+    4px 4px 4px rgba(196, 196, 196, 0.8);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -727,8 +727,8 @@
   border-radius: 20px;
   background: #dfe6e9;
   box-shadow:
-    -4px -4px 8px #ffffff,
-    4px 4px 8px #c6c6c6;
+    -4px -4px 4px #ffffff,
+    4px 4px 4px #c6c6c6;
 }
 .frameParent28 {
   position: absolute;
@@ -815,8 +815,8 @@
   background: #dfe6e9;
   clip-path: polygon(0 0, 100% 0, 100% 56%, 50% 100%, 0 56%);
   box-shadow:
-    inset -8px -8px 16px #ffffff,
-    inset 8px 8px 16px #c4c4c4;
+    inset -4px -4px 4px #ffffff,
+    inset 4px 4px 4px #c4c4c4;
   filter: drop-shadow(0 7px 7px rgba(196, 196, 196, 0.75)) drop-shadow(0 -3px 4px rgba(255, 255, 255, 0.6));
   z-index: 2;
 }
@@ -966,8 +966,8 @@
   height: 60px;
   position: relative;
   box-shadow:
-    -4px -4px 8px #fff,
-    4px 4px 8px rgba(196, 196, 196, 0.8);
+    -4px -4px 4px #fff,
+    4px 4px 4px rgba(196, 196, 196, 0.8);
   border-radius: 50px;
   background-color: #dfe6e9;
   display: flex;
@@ -990,8 +990,8 @@
   border-radius: 50%;
   background-color: #dfe6e9;
   box-shadow:
-    -8px -8px 16px #fff,
-    8px 8px 16px #c4c4c4;
+    -4px -4px 4px #fff,
+    4px 4px 4px #c4c4c4;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1028,8 +1028,8 @@
   border-radius: 50%;
   background: #dfe6e9;
   box-shadow:
-    inset -4px -4px 8px #ffffff,
-    inset 4px 4px 8px rgba(196, 196, 196, 0.8);
+    inset -4px -4px 4px #ffffff,
+    inset 4px 4px 4px rgba(196, 196, 196, 0.8);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1040,8 +1040,8 @@
   height: 50px;
   border-radius: 50%;
   box-shadow:
-    -4px -4px 8px #ffffff,
-    4px 4px 8px #c6c6c9;
+    -4px -4px 4px #ffffff,
+    4px 4px 4px #c6c6c9;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1069,8 +1069,8 @@
   border-radius: 28px;
   background: #dfe6e9;
   box-shadow:
-    inset -4px -4px 8px #ffffff,
-    inset 4px 4px 8px rgba(198, 198, 201, 0.8);
+    inset -4px -4px 4px #ffffff,
+    inset 4px 4px 4px rgba(198, 198, 201, 0.8);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1088,8 +1088,8 @@
   border-radius: 50%;
   background: #dfe6e9;
   box-shadow:
-    -8px -8px 16px #ffffff,
-    8px 8px 8px #c4c4c4;
+    -4px -4px 4px #ffffff,
+    4px 4px 4px #c4c4c4;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1107,8 +1107,8 @@
   border-radius: 50%;
   background: #dfe6e9;
   box-shadow:
-    8px 8px 16px #c6c6c9,
-    -8px -8px 16px #ffffff;
+    4px 4px 4px #c6c6c9,
+    -4px -4px 4px #ffffff;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1206,8 +1206,8 @@
   border-radius: 50px;
   background: #dfe6e9;
   box-shadow:
-    -4px -4px 8px #fff,
-    4px 4px 8px rgba(196, 196, 196, 0.8);
+    -4px -4px 4px #fff,
+    4px 4px 4px rgba(196, 196, 196, 0.8);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1290,8 +1290,8 @@
   border-radius: 50%;
   background: #f7fafb;
   box-shadow:
-    -8px -8px 16px rgba(255, 255, 255, 0.95),
-    8px 8px 16px rgba(196, 196, 196, 0.9);
+    -4px -4px 4px rgba(255, 255, 255, 0.95),
+    4px 4px 4px rgba(196, 196, 196, 0.9);
   z-index: 0;
 }
 
@@ -1305,8 +1305,8 @@
     radial-gradient(circle at 8px 8px, rgba(196, 196, 196, 0.2) 2px, transparent 2.5px) 0 0 / 18px 18px,
     #e7edef;
   box-shadow:
-    inset -6px -6px 12px rgba(255, 255, 255, 0.95),
-    inset 6px 6px 12px rgba(196, 196, 196, 0.65);
+    inset -4px -4px 4px rgba(255, 255, 255, 0.95),
+    inset 4px 4px 4px rgba(196, 196, 196, 0.65);
   z-index: 1;
 }
 
@@ -3335,5 +3335,736 @@
 .standardsTraining .neurolxpHelpsInstitutions {
   overflow-wrap: normal !important;
   word-break: normal !important;
+}
+
+
+
+/* Book a Demo navigation — native button chrome reset only; original design preserved */
+button.frameChild2,
+button.frameChild29 {
+  appearance: none;
+  -webkit-appearance: none;
+  border: 0;
+  outline: 0;
+  padding: 0;
+  margin: 0;
+  font: inherit;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+
+button.frameChild2:focus,
+button.frameChild2:focus-visible,
+button.frameChild29:focus,
+button.frameChild29:focus-visible {
+  outline: 0;
+}
+
+/* =========================================================
+   01 / 02 / 03 BENEFIT CARDS — USER-SUPPLIED SVG
+   Place standards-benefit-card.svg at:
+   public/assets/stdimages/standards-benefit-card.svg
+   ========================================================= */
+.standardsTraining .frameParent27 {
+  position: relative !important;
+  isolation: isolate !important;
+  overflow: visible !important;
+}
+
+.standardsTraining .frameParent27::before {
+  content: "" !important;
+  position: absolute !important;
+  top: -12px !important;
+  left: 50% !important;
+  width: calc(100% + 24px) !important;
+  max-width: 424px !important;
+  height: calc(100% + 24px) !important;
+  background-image: url("/assets/stdimages/standards-benefit-card.svg") !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  background-size: 100% 100% !important;
+  transform: translateX(-50%) !important;
+  z-index: 0 !important;
+  pointer-events: none !important;
+}
+
+.standardsTraining .frameParent27 .rectangleDiv,
+.standardsTraining .frameParent27 .rectangleIcon {
+  display: none !important;
+}
+
+.standardsTraining .frameParent27 > * {
+  position: relative;
+  z-index: 2;
+}
+
+/* =========================================================
+   01 / 02 / 03 CARDS — ALIGN TO PROVIDED PNG
+   Desktop only. Other sections unchanged.
+   ========================================================= */
+@media (min-width: 901px) {
+  .standardsTraining .frameParent26 {
+    width: 100% !important;
+    max-width: 1280px !important;
+    margin: 0 auto !important;
+    display: grid !important;
+    grid-template-columns: repeat(3, minmax(0, 400px)) !important;
+    justify-content: space-between !important;
+    align-items: start !important;
+    gap: 24px !important;
+  }
+
+  .standardsTraining .frameParent27 {
+    position: relative !important;
+    width: 400px !important;
+    max-width: 400px !important;
+    min-width: 400px !important;
+    height: 470px !important;
+    min-height: 470px !important;
+    margin: 0 !important;
+    overflow: visible !important;
+    isolation: isolate !important;
+  }
+
+  /* Exact supplied 424 × 494 SVG around each 400 × 470 card */
+  .standardsTraining .frameParent27::before {
+    content: "" !important;
+    position: absolute !important;
+    top: -12px !important;
+    left: -12px !important;
+    width: 424px !important;
+    max-width: none !important;
+    height: 494px !important;
+    background-image: url("/icons/standardbackground.svg") !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    background-size: 424px 494px !important;
+    transform: none !important;
+    z-index: 0 !important;
+    pointer-events: none !important;
+  }
+
+  /* Hide old CSS card layers because the SVG now provides them */
+  .standardsTraining .frameParent27 .rectangleDiv,
+  .standardsTraining .frameParent27 .rectangleIcon,
+  .standardsTraining .frameParent27 > .standardBackground {
+    display: none !important;
+  }
+
+  .standardsTraining .frameParent27 .frameWrapper2,
+  .standardsTraining .frameParent27 .rectangleParent {
+    position: absolute !important;
+    inset: 0 !important;
+    width: 400px !important;
+    height: 470px !important;
+  }
+
+  /* Top 01 / 02 / 03 heading area */
+  .standardsTraining .frameParent27 .frameWrapper3,
+  .standardsTraining .frameParent27 .frameWrapper6 {
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 400px !important;
+    height: 192px !important;
+  }
+
+  .standardsTraining .frameParent27 .frameWrapper4,
+  .standardsTraining .frameParent27 .frameWrapper7,
+  .standardsTraining .frameParent27 .vectorParent,
+  .standardsTraining .frameParent27 .vectorGroup {
+    width: 400px !important;
+    height: 192px !important;
+  }
+
+  .standardsTraining .frameParent27 .frameParent33 {
+    position: absolute !important;
+    top: 24px !important;
+    left: 42px !important;
+    width: 316px !important;
+    height: 111px !important;
+    gap: 8px !important;
+    align-items: center !important;
+    text-align: center !important;
+  }
+
+  .standardsTraining .frameParent27 .b {
+    font-size: 54px !important;
+    line-height: 62px !important;
+  }
+
+  .standardsTraining .frameParent27 .forLearners {
+    width: 100% !important;
+    font-size: 28px !important;
+    line-height: 40px !important;
+    text-align: center !important;
+    white-space: nowrap !important;
+  }
+
+  /* Checklist position and row spacing exactly like the PNG */
+  .standardsTraining .frameParent27 .frameParent28 {
+    position: absolute !important;
+    top: 212px !important;
+    left: 32px !important;
+    right: auto !important;
+    width: 336px !important;
+    height: 224px !important;
+    min-height: 224px !important;
+    padding: 0 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 16px !important;
+  }
+
+  .standardsTraining .frameParent27 .frameParent29 {
+    width: 336px !important;
+    height: 44px !important;
+    min-height: 44px !important;
+    display: flex !important;
+    align-items: center !important;
+    gap: 14px !important;
+  }
+
+  .standardsTraining .frameParent27 .checkIconCircle {
+    width: 44px !important;
+    height: 44px !important;
+    min-width: 44px !important;
+    flex: 0 0 44px !important;
+  }
+
+  .standardsTraining .frameParent27 .structuredLearning,
+  .standardsTraining .frameParent27 .transparentAssessments {
+    width: auto !important;
+    max-width: none !important;
+    height: auto !important;
+    margin: 0 !important;
+    font-size: 22px !important;
+    line-height: 36px !important;
+    white-space: nowrap !important;
+  }
+}
+
+/* =========================================================
+   WHY STANDARDS TRAINING — REQUESTED CORRECTION ONLY
+   Center the section + reduce icon/circle size.
+   ========================================================= */
+.standardsTraining .frameParent8 {
+  align-items: center !important;
+  text-align: center !important;
+}
+
+.standardsTraining .frameParent9 {
+  margin-left: auto !important;
+  margin-right: auto !important;
+  justify-content: center !important;
+}
+
+/* Reduce only the four feature icon circles */
+.standardsTraining .frameParent9 .frameIcon,
+.standardsTraining .frameParent9 .frameChild8,
+.standardsTraining .frameParent9 .frameChild9,
+.standardsTraining .frameParent9 .frameChild10 {
+  width: 52px !important;
+  height: 52px !important;
+  min-width: 52px !important;
+  flex: 0 0 52px !important;
+  object-fit: contain !important;
+}
+
+/* =========================================================
+   WHY STANDARDS TRAINING — TRUE CENTER ALIGNMENT
+   Only this section is affected.
+   ========================================================= */
+.standardsTraining > .frameParent2 > .frameParent8 {
+  width: 100% !important;
+  max-width: 1280px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  align-items: center !important;
+  justify-content: center !important;
+  text-align: center !important;
+}
+
+.standardsTraining .whyStandardsTrainingParent {
+  width: 100% !important;
+  max-width: 999px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  align-items: center !important;
+  text-align: center !important;
+}
+
+.standardsTraining .whyStandardsTraining,
+.standardsTraining .createAConsistent {
+  width: 100% !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  text-align: center !important;
+}
+
+/* Center the complete 2 × 2 feature group itself */
+.standardsTraining .frameParent9 {
+  width: fit-content !important;
+  max-width: 100% !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  display: grid !important;
+  grid-template-columns: repeat(2, minmax(0, 520px)) !important;
+  justify-content: center !important;
+  align-items: center !important;
+  column-gap: 72px !important;
+  row-gap: 30px !important;
+}
+
+/* Center each feature row inside its grid column */
+.standardsTraining .frameParent9 > * {
+  width: 100% !important;
+  justify-self: center !important;
+}
+
+/* =========================================================
+   MOBILE HERO — REQUESTED CHANGES ONLY
+   1) Remove unnecessary bottom space in the left hero card
+   2) Make Book a Demo text bold
+   ========================================================= */
+@media (max-width: 600px) {
+  .standardsTraining .image21Parent {
+    min-height: 0 !important;
+    height: auto !important;
+  }
+
+  .standardsTraining .frameParent4 {
+    margin-top: 28px !important;
+    margin-bottom: 28px !important;
+  }
+
+  .standardsTraining .frameChild2 {
+    font-weight: 700 !important;
+  }
+}
+
+/* =========================================================
+   MOBILE — WHY STANDARDS TRAINING SECTION CORRECTION ONLY
+   Fix broken text wrapping and center the four feature rows.
+   ========================================================= */
+@media (max-width: 600px) {
+  .standardsTraining > .frameParent2 > .frameParent8 {
+    width: 100% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    align-items: center !important;
+    text-align: center !important;
+    gap: 28px !important;
+  }
+
+  .standardsTraining .whyStandardsTrainingParent {
+    width: 100% !important;
+    max-width: 360px !important;
+    margin: 0 auto !important;
+    align-items: center !important;
+    text-align: center !important;
+    gap: 16px !important;
+  }
+
+  .standardsTraining .whyStandardsTraining,
+  .standardsTraining .createAConsistent {
+    width: 100% !important;
+    max-width: 360px !important;
+    margin: 0 auto !important;
+    text-align: center !important;
+  }
+
+  /* Stack the four items so labels no longer break word-by-word */
+  .standardsTraining .frameParent9 {
+    width: 100% !important;
+    max-width: 340px !important;
+    margin: 0 auto !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 18px !important;
+  }
+
+  .standardsTraining .frameParent10 {
+    width: 100% !important;
+    max-width: 340px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: stretch !important;
+    gap: 18px !important;
+  }
+
+  .standardsTraining .frameParent11 {
+    width: 100% !important;
+    max-width: 340px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+    gap: 14px !important;
+    text-align: left !important;
+  }
+
+  .standardsTraining .frameParent11 .iconCircle {
+    width: 58px !important;
+    height: 58px !important;
+    min-width: 58px !important;
+    flex: 0 0 58px !important;
+  }
+
+  .standardsTraining .frameParent11 .iconCircleInner {
+    width: 42px !important;
+    height: 42px !important;
+  }
+
+  .standardsTraining .frameParent11 .iconCircleInner img {
+    width: 28px !important;
+    height: 28px !important;
+  }
+
+  .standardsTraining .alignWithIndustry,
+  .standardsTraining .improveLearningOutcomes,
+  .standardsTraining .supportAccreditationAnd,
+  .standardsTraining .scaleFutureReadyLearning {
+    width: auto !important;
+    max-width: calc(100% - 72px) !important;
+    height: auto !important;
+    margin: 0 !important;
+    white-space: normal !important;
+    overflow-wrap: normal !important;
+    word-break: normal !important;
+    text-align: left !important;
+  }
+}
+
+/* =========================================================
+   MOBILE — 01 / 02 / 03 CARD SECTION CORRECTION ONLY
+   Center cards, keep the SVG fully visible, and add clean spacing.
+   ========================================================= */
+@media (max-width: 600px) {
+  .standardsTraining > .frameParent24 {
+    width: calc(100% - 32px) !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    align-items: center !important;
+  }
+
+  .standardsTraining .frameParent26 {
+    width: 100% !important;
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    justify-items: center !important;
+    align-items: start !important;
+    gap: 32px !important;
+  }
+
+  .standardsTraining .frameParent27 {
+    width: min(340px, calc(100vw - 48px)) !important;
+    max-width: 340px !important;
+    min-width: 0 !important;
+    height: 400px !important;
+    min-height: 400px !important;
+    margin: 0 auto !important;
+    overflow: visible !important;
+  }
+
+  .standardsTraining .frameParent27::before {
+    top: -10px !important;
+    left: 50% !important;
+    width: calc(100% + 20px) !important;
+    max-width: 360px !important;
+    height: calc(100% + 20px) !important;
+    background-image: url("/icons/standardbackground.svg") !important;
+    background-size: 100% 100% !important;
+    transform: translateX(-50%) !important;
+  }
+
+  .standardsTraining .frameParent27 .frameWrapper2,
+  .standardsTraining .frameParent27 .rectangleParent {
+    width: 100% !important;
+    height: 100% !important;
+  }
+
+  .standardsTraining .frameParent27 .frameWrapper3,
+  .standardsTraining .frameParent27 .frameWrapper6,
+  .standardsTraining .frameParent27 .frameWrapper4,
+  .standardsTraining .frameParent27 .frameWrapper7,
+  .standardsTraining .frameParent27 .vectorParent,
+  .standardsTraining .frameParent27 .vectorGroup {
+    width: 100% !important;
+    height: 160px !important;
+  }
+
+  .standardsTraining .frameParent27 .frameParent33 {
+    top: 18px !important;
+    left: 50% !important;
+    width: calc(100% - 48px) !important;
+    height: auto !important;
+    transform: translateX(-50%) !important;
+    align-items: center !important;
+    text-align: center !important;
+  }
+
+  .standardsTraining .frameParent27 .b {
+    font-size: 42px !important;
+    line-height: 50px !important;
+  }
+
+  .standardsTraining .frameParent27 .forLearners {
+    width: 100% !important;
+    font-size: 22px !important;
+    line-height: 30px !important;
+    text-align: center !important;
+    white-space: nowrap !important;
+  }
+
+  .standardsTraining .frameParent27 .frameParent28 {
+    top: 170px !important;
+    left: 24px !important;
+    right: 24px !important;
+    width: auto !important;
+    height: auto !important;
+    padding: 0 !important;
+    gap: 12px !important;
+  }
+
+  .standardsTraining .frameParent27 .frameParent29 {
+    width: 100% !important;
+    min-height: 44px !important;
+    height: 44px !important;
+    gap: 12px !important;
+  }
+
+  .standardsTraining .frameParent27 .structuredLearning,
+  .standardsTraining .frameParent27 .transparentAssessments {
+    width: auto !important;
+    max-width: calc(100% - 56px) !important;
+    font-size: 16px !important;
+    line-height: 24px !important;
+    white-space: nowrap !important;
+  }
+}
+
+/* =========================================================
+   MOBILE — REMOVE DUPLICATE CARD BACKGROUND LAYER
+   Use the SVG already added in TSX only.
+   ========================================================= */
+@media (max-width: 600px) {
+  .standardsTraining .frameParent27::before {
+    display: none !important;
+  }
+
+  .standardsTraining .frameParent27 > .standardBackground {
+    display: block !important;
+    position: absolute !important;
+    top: -10px !important;
+    left: 50% !important;
+    width: calc(100% + 20px) !important;
+    max-width: 360px !important;
+    height: calc(100% + 20px) !important;
+    transform: translateX(-50%) !important;
+    object-fit: fill !important;
+    z-index: 0 !important;
+    pointer-events: none !important;
+  }
+
+  .standardsTraining .frameParent27 > *:not(.standardBackground) {
+    position: relative;
+    z-index: 2;
+  }
+}
+
+/* =========================================================
+   MOBILE — CARD TITLE / NUMBER VISIBILITY FIX ONLY
+   Keep the single SVG background, but restore the 01/02/03
+   and For Learners/Institutions/Faculty content above it.
+   ========================================================= */
+@media (max-width: 600px) {
+  /* Do not let the generic child rule change absolute positioning */
+  .standardsTraining .frameParent27 > *:not(.standardBackground) {
+    z-index: 2 !important;
+  }
+
+  .standardsTraining .frameParent27 .frameWrapper3,
+  .standardsTraining .frameParent27 .frameWrapper6 {
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 160px !important;
+    z-index: 3 !important;
+  }
+
+  .standardsTraining .frameParent27 .frameWrapper4,
+  .standardsTraining .frameParent27 .frameWrapper7,
+  .standardsTraining .frameParent27 .vectorParent,
+  .standardsTraining .frameParent27 .vectorGroup {
+    position: relative !important;
+    width: 100% !important;
+    height: 160px !important;
+    z-index: 3 !important;
+  }
+
+  .standardsTraining .frameParent27 .frameParent33 {
+    position: absolute !important;
+    top: 18px !important;
+    left: 50% !important;
+    width: calc(100% - 48px) !important;
+    height: auto !important;
+    transform: translateX(-50%) !important;
+    z-index: 4 !important;
+  }
+
+  .standardsTraining .frameParent27 .wrapper,
+  .standardsTraining .frameParent27 .b,
+  .standardsTraining .frameParent27 .forLearners {
+    position: relative !important;
+    z-index: 5 !important;
+  }
+
+  .standardsTraining .frameParent27 .frameParent28 {
+    position: absolute !important;
+    top: 170px !important;
+    left: 24px !important;
+    right: 24px !important;
+    width: auto !important;
+    z-index: 3 !important;
+  }
+}
+
+/* =========================================================
+   MOBILE HERO — CENTER CONTENT ONLY
+   Keeps desktop/tablet unchanged.
+   ========================================================= */
+@media (max-width: 600px) {
+  .standardsTraining .image21Parent {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center !important;
+  }
+
+  .standardsTraining .frameParent4 {
+    width: 100% !important;
+    max-width: 340px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    align-items: center !important;
+    text-align: center !important;
+  }
+
+  .standardsTraining .frameWrapper1,
+  .standardsTraining .standardsTrainingWrapper,
+  .standardsTraining .buildIndustryReadyLearningWrapper,
+  .standardsTraining .improveLearningQualityOutcoWrapper {
+    width: 100% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    text-align: center !important;
+  }
+
+  .standardsTraining .standardsTraining1,
+  .standardsTraining .buildIndustryReady,
+  .standardsTraining .improveLearningQuality {
+    width: 100% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    text-align: center !important;
+  }
+
+  .standardsTraining .frameChild2 {
+    align-self: center !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+}
+
+/* =========================================================
+   MOBILE BENEFITS — OVERLAP FIX
+   Removes the bad negative spacing and keeps this section
+   directly below the divider without overlapping Why Standards.
+   ========================================================= */
+@media (max-width: 600px) {
+  .standardsTraining > .standardsTrainingChild {
+    margin-top: 24px !important;
+    margin-bottom: 24px !important;
+  }
+
+  .standardsTraining > .frameParent16 {
+    position: relative !important;
+    top: auto !important;
+    left: auto !important;
+    transform: none !important;
+
+    width: calc(100% - 32px) !important;
+    max-width: 360px !important;
+
+    margin: 0 auto !important;
+    padding: 0 !important;
+
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+
+    gap: 24px !important;
+    height: auto !important;
+    min-height: 0 !important;
+  }
+
+  .standardsTraining > .frameParent16 > .resourcesWrapper {
+    flex: none !important;
+    width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+    margin: 0 !important;
+  }
+
+  .standardsTraining .frameParent17,
+  .standardsTraining .frameParent18 {
+    width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+    margin: 0 !important;
+  }
+
+  .standardsTraining .frameParent19 {
+    position: relative !important;
+    top: auto !important;
+    left: auto !important;
+    transform: none !important;
+
+    flex: none !important;
+    width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+}
+
+/* =========================================================
+   MOBILE HERO — CENTER ALIGNMENT ONLY
+   No spacing, sizing, shadow, or desktop/tablet changes.
+   ========================================================= */
+@media (max-width: 600px) {
+  .standardsTraining .frameParent4,
+  .standardsTraining .frameParent5,
+  .standardsTraining .frameParent6 {
+    align-items: center !important;
+    text-align: center !important;
+  }
+
+  .standardsTraining .frameIcon,
+  .standardsTraining .buildIndustryReadyLearningContainer,
+  .standardsTraining .improveLearningQuality,
+  .standardsTraining .frameChild2 {
+    align-self: center !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    text-align: center !important;
+  }
 }
 

@@ -3,6 +3,7 @@ import Image from "next/image";
 import styles from "./extend.module.css";
 import Header from "../../components/Header/header";
 import Footer from "../../components/Footer/footer";
+import { BookDemoTrigger } from "../../components/Bookademo/Bookademo";
 
 const ExtendedEnterpriseLearning: NextPage = () => {
   return (
@@ -245,9 +246,11 @@ const ExtendedEnterpriseLearning: NextPage = () => {
             </div>
           </div>
 
-          <a className={styles.frameWrapper10} href="/book-a-demo">
-            <span className={styles.frameChild21}>Book a Demo</span>
-          </a>
+          <BookDemoTrigger>
+            <div className={styles.frameWrapper10}>
+              <span className={styles.frameChild21}>Book a Demo</span>
+            </div>
+          </BookDemoTrigger>
         </div>
 
         <div className={styles.empowerImageWrapper}>

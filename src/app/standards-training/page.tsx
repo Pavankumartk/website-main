@@ -3,6 +3,7 @@ import Image from "next/image";
 import styles from "./standard.module.css";
 import Header from "../../components/Header/header";
 import Footer from "../../components/Footer/footer";
+import { BookDemoTrigger } from "../../components/Bookademo/Bookademo";
 
 
 const StandardsTraining: NextPage = () => {
@@ -43,9 +44,9 @@ const StandardsTraining: NextPage = () => {
 								</div>
 								<div className={styles.improveLearningQuality}>Improve learning quality, outcomes, and industry alignment.</div>
 							</div>
-							<div className={styles.frameChild2}>
-								<span>Book a Demo</span>
-							</div>
+							<BookDemoTrigger className={styles.frameChild2}>
+								Book a Demo
+							</BookDemoTrigger>
 						</div>
 					</div>
 					<div className={styles.image20} />
@@ -151,6 +152,14 @@ const StandardsTraining: NextPage = () => {
 				</div>
 				<div className={styles.frameParent26}>
 					<div className={styles.frameParent27}>
+						<Image
+							className={styles.standardBackground}
+							src="/icons/standardbackground.svg"
+							width={424}
+							height={494}
+							alt=""
+							aria-hidden="true"
+						/>
 						<div className={styles.frameWrapper2}>
 							<div className={styles.rectangleParent}>
 								<div className={styles.rectangleDiv} />
@@ -189,6 +198,14 @@ const StandardsTraining: NextPage = () => {
 						</div>
 					</div>
 					<div className={styles.frameParent27}>
+						<Image
+							className={styles.standardBackground}
+							src="/icons/standardbackground.svg"
+							width={424}
+							height={494}
+							alt=""
+							aria-hidden="true"
+						/>
 						<div className={styles.frameWrapper2}>
 							<div className={styles.rectangleParent}>
 								<div className={styles.rectangleDiv} />
@@ -227,6 +244,14 @@ const StandardsTraining: NextPage = () => {
 						</div>
 					</div>
 					<div className={styles.frameParent27}>
+						<Image
+							className={styles.standardBackground}
+							src="/icons/standardbackground.svg"
+							width={424}
+							height={494}
+							alt=""
+							aria-hidden="true"
+						/>
 						<div className={styles.frameWrapper2}>
 							<div className={styles.rectangleParent}>
 								<div className={styles.rectangleDiv} />
@@ -280,7 +305,9 @@ const StandardsTraining: NextPage = () => {
 						</div>
 					</div>
 					<div className={styles.frameWrapper12}>
-						<span className={styles.frameChild29}>Book a Demo</span>
+						<BookDemoTrigger className={styles.frameChild29}>
+							Book a Demo
+						</BookDemoTrigger>
 					</div>
 				</div>
 				<div className={styles.ellipseImageFrame}>

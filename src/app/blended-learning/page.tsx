@@ -3,6 +3,7 @@ import Image from "next/image";
 import styles from "./blended-learning.module.css";
 import Header from "../../components/Header/header";
 import Footer from "../../components/Footer/footer";
+import { BookDemoTrigger } from "../../components/Bookademo/Bookademo";
 
 
 const BlendedLearning: NextPage = () => {
@@ -332,9 +333,11 @@ const BlendedLearning: NextPage = () => {
 							Enhance teaching, support learners, and drive better outcomes.
 						</p>
 
-						<button className={styles.blendedCtaButton} type="button">
-							Book a Demo
-						</button>
+						<BookDemoTrigger>
+							<div className={styles.blendedCtaButton}>
+								Book a Demo
+							</div>
+						</BookDemoTrigger>
 					</div>
 
 					<div className={styles.blendedCtaImageFrame}>
