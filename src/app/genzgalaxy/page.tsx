@@ -2,6 +2,7 @@
 
 import type { NextPage } from "next";
 import Image from "next/image";
+import Link from "next/link";
 import { useEffect, useState } from "react";
 import styles from "./genzgalaxy.module.css";
 import Header from "../../components/Header/header";
@@ -204,14 +205,14 @@ const GenZgalaxy: NextPage = () => {
         </div>
         <div className={styles.frameParent3}>
           <div className={styles.frameParent4}>
-            <div className={styles.frameIcon}>
+            <Link href="/HomePage" className={styles.frameIcon}>
               <div className={styles.learnMoreFlat}>Learn More</div>
-            </div>
-            <div className={styles.frameWrapper4}>
+            </Link>
+            <Link href="/HomePage" className={styles.frameWrapper4}>
               <div className={styles.explorePlatformParent}>
                 <div className={styles.explorePlatform}>Explore Platform</div>
               </div>
-            </div>
+            </Link>
           </div>
           <div className={styles.frameParent5}>
             <div className={styles.genzgalaxyGroup}>
@@ -651,11 +652,11 @@ const GenZgalaxy: NextPage = () => {
             </div>
             <div className={styles.smarterFlexibleLearning}>Smarter, flexible learning that adapts to your pace and goals</div>
           </div>
-          <div className={styles.frameWrapper12}>
+          <Link href="/HomePage" className={styles.frameWrapper12}>
             <div className={styles.explorePlatformWrapper}>
               <div className={styles.explorePlatform2}>Explore Platform</div>
             </div>
-          </div>
+          </Link>
         </div>
         <Image className={styles.youngPeopleRowWithThumbsUIcon} src="/images/young.webp" width={772} height={500} sizes="100vw" alt="" aria-hidden="true" />
       </div>

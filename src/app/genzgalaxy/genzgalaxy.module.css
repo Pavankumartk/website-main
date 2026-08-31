@@ -1,6 +1,6 @@
 .genzgalaxy {
   width: 1440px;
-  min-height: 5250px;
+  min-height: 4815px;
   margin: 0 auto;
   position: relative;
   background-color: #dfe6e9;
@@ -279,11 +279,11 @@
   top: 1224px;
   left: calc(50% - 640px);
   width: 1280px;
-  height: 920px;
+  height: 760px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 48px;
+  gap: 24px;
   flex-shrink: 0;
   text-align: center;
 }
@@ -293,7 +293,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 32px;
+  gap: 16px;
   flex-shrink: 0;
 }
 
@@ -302,7 +302,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 32px;
+  gap: 16px;
 }
 
 .frameChild2 {
@@ -368,21 +368,25 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 30px;
+  gap: 18px;
   flex-shrink: 0;
   font-size: 24px;
-}
+
+  justify-content: center;
+  margin: 0 auto;}
 
 .frameParent10 {
   align-self: stretch;
   display: flex;
   align-items: center;
-  gap: 30px;
-}
+  gap: 24px;
+
+  justify-content: center;
+  margin: 0 auto;}
 
 .polygonParent {
-  height: 310px;
-  width: 300px;
+  height: 240px;
+  width: 260px;
   position: relative;
   flex-shrink: 0;
   transition: transform 0.3s ease;
@@ -398,8 +402,8 @@
   position: absolute;
   top: 0px;
   left: 0px;
-  width: 300px;
-  height: 310px;
+  width: 260px;
+  height: 240px;
   flex-shrink: 0;
   overflow: visible;
 }
@@ -407,73 +411,90 @@
 .gamifiedElements {
   position: absolute;
   top: calc(50% - 32px);
-  left: calc(50% - 67px);
-  letter-spacing: 0.03em;
-  line-height: 32px;
-  font-weight: 600;
-  display: inline-block;
-  width: 134px;
-}
-
-.interactiveContent {
-  position: absolute;
-  top: calc(50% - 32.19px);
-  left: calc(50% - 67px);
-  letter-spacing: 0.03em;
-  line-height: 32px;
-  font-weight: 600;
-  display: inline-block;
-  width: 134px;
-  height: 64px;
-}
-
-.shortFocusedLessons {
-  position: absolute;
-  top: calc(50% - 32px);
-  left: calc(50% - 90px);
+  left: 50%;
   letter-spacing: 0.03em;
   line-height: 32px;
   font-weight: 600;
   display: inline-block;
   width: 180px;
-}
+
+  height: 64px;
+  text-align: center;
+  transform: translateX(-50%);}
+
+.interactiveContent {
+  position: absolute;
+  top: calc(50% - 32px);
+  left: 50%;
+  letter-spacing: 0.03em;
+  line-height: 32px;
+  font-weight: 600;
+  display: inline-block;
+  width: 180px;
+  height: 64px;
+
+  text-align: center;
+  transform: translateX(-50%);}
+
+.shortFocusedLessons {
+  position: absolute;
+  top: calc(50% - 32px);
+  left: 50%;
+  letter-spacing: 0.03em;
+  line-height: 32px;
+  font-weight: 600;
+  display: inline-block;
+  width: 190px;
+
+  height: 64px;
+  text-align: center;
+  transform: translateX(-50%);}
 
 .groupBasedLearning {
   position: absolute;
   top: calc(50% - 32px);
-  left: calc(50% - 77px);
+  left: 50%;
   letter-spacing: 0.03em;
   line-height: 32px;
   font-weight: 600;
   display: inline-block;
-  width: 154px;
-}
+  width: 180px;
+
+  height: 64px;
+  text-align: center;
+  transform: translateX(-50%);}
 
 .mobileFriendlyDesign {
   position: absolute;
-  top: calc(50% - 32.19px);
-  left: calc(50% - 97px);
+  top: calc(50% - 32px);
+  left: 50%;
   letter-spacing: 0.03em;
   line-height: 32px;
   font-weight: 600;
   display: inline-block;
-  width: 194px;
-}
+  width: 210px;
+
+  height: 64px;
+  text-align: center;
+  transform: translateX(-50%);}
 
 .challengesRewards {
   position: absolute;
   top: calc(50% - 32px);
-  left: calc(50% - 81px);
+  left: 50%;
   letter-spacing: 0.03em;
   line-height: 32px;
   font-weight: 600;
   display: inline-block;
-  width: 163px;
-}
+  width: 190px;
+
+  height: 64px;
+  text-align: center;
+  transform: translateX(-50%);}
 
 .image20Parent {
   position: absolute;
-  top: 2208px;
+  top: 2016px;
   left: calc(50% - 640px);
   box-shadow:
     -8px -8px 16px #fff inset,
@@ -481,7 +502,7 @@
   border-radius: 32px;
   background: linear-gradient(135deg, #dfe6e9 0%, #cdd4d6 100%);
   width: 1280px;
-  height: 1003px;
+  height: 790px;
   overflow: hidden;
   flex-shrink: 0;
   text-align: center;
@@ -498,7 +519,7 @@
 
 .rectangleParent {
   position: absolute;
-  top: 32px;
+  top: 24px;
   left: 32px;
   box-shadow:
     10px 10px 20px #c4c4c4,
@@ -506,16 +527,16 @@
   border-radius: 16px;
   background-color: #dfe6e9;
   width: 1216px;
-  height: 932px;
+  height: 742px;
   overflow: hidden;
 }
 
 .rectangleIcon {
   position: absolute;
-	top: -14px;
+	top: -8px;
 	left: 9px;
 	width: 1207px;
-	height: 946px;
+	height: 754px;
 	
 	flex-shrink: 0;
 	opacity: 0.08;
@@ -525,10 +546,10 @@
 
 .wrapperPolygon14 {
   position: absolute;
-  top: 40px;
+  top: 24px;
   right: 20px;
   width: 820px;
-  height: 800px;
+  height: 660px;
   overflow: visible;
   display: flex;
   align-items: center;
@@ -539,21 +560,21 @@
 
 .wrapperPolygon14Child {
   width: 97%;
-  height: 97%;
+  height: 82%;
   object-fit: contain;
   position: absolute;
   left: 0px;
   top: 0px;
-  transform: translateY(230px) translateX(200px);
+  transform: translateY(170px) translateX(200px);
 }
 
 .successfulYoungBusinessmanSIcon {
   position: absolute;
-  top: 45px;
+  top: 28px;
   right: 35px;
 
   width: 510px;
-  height: calc(100% - 50px);
+  height: 690px;
 
   flex-shrink: 0;
 
@@ -575,14 +596,14 @@
 
 .frameParent12 {
   position: absolute;
-  top: 50px;
+  top: 32px;
   left: 50px;
   width: 685px;
-  height: 832px;
+  height: 660px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 46px;
+  gap: 24px;
   flex-shrink: 0;
 	z-index: 1;
 }
@@ -592,7 +613,7 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 24px;
+  gap: 16px;
   flex-shrink: 0;
 }
 
@@ -601,7 +622,7 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 32px;
+  gap: 20px;
 }
 
 .whatMakesUsDifferentBadge {
@@ -653,7 +674,7 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 32px;
+  gap: 18px;
   flex-shrink: 0;
   font-size: 24px;
   color: #fff;
@@ -661,7 +682,7 @@
 
 .frameParent16 {
   align-self: stretch;
-  height: 124px;
+  height: 100px;
   position: relative;
 }
 
@@ -675,13 +696,13 @@
   border-radius: 100px;
   background-color: #dfe6e9;
   width: 293px;
-  height: 124px;
+  height: 100px;
   overflow: hidden;
 }
 
 .skillPathWrapper {
   position: absolute;
-  top: 20px;
+  top: 14px;
   left: 30px;
   box-shadow:
     -8px -8px 16px rgba(255, 255, 255, 0.6),
@@ -691,7 +712,7 @@
   
   box-sizing: border-box;
   width: 345px;
-  height: 84px;
+  height: 72px;
   overflow: hidden;
   display: flex;
   align-items: center;
@@ -701,7 +722,8 @@
   transition: transform 0.3s ease;
   cursor: default;
 
-  background: transparent;}
+  background: transparent;
+  transform: none;}
 
 .skillPathWrapper:hover {
   border-color: #2D4CC8;
@@ -736,13 +758,13 @@
   border-radius: 100px;
   background-color: #dfe6e9;
   width: 293px;
-  height: 124px;
+  height: 100px;
   overflow: hidden;
 }
 
 .usefulResourcesWrapper {
   position: absolute;
-  top: 20px;
+  top: 14px;
   left: 30px;
   box-shadow:
     -8px -8px 16px rgba(255, 255, 255, 0.6),
@@ -752,7 +774,7 @@
   
   box-sizing: border-box;
   width: 345px;
-  height: 84px;
+  height: 72px;
   overflow: hidden;
   display: flex;
   align-items: center;
@@ -762,7 +784,8 @@
   transition: transform 0.3s ease;
   cursor: default;
 
-  background: transparent;}
+  background: transparent;
+  transform: none;}
 
 .usefulResourcesWrapper:hover {
   border-color: #67096E;
@@ -788,7 +811,7 @@
 
 .practiceTasksWrapper {
   position: absolute;
-  top: 20px;
+  top: 14px;
   left: 30px;
   box-shadow:
     -8px -8px 16px rgba(255, 255, 255, 0.6),
@@ -798,7 +821,7 @@
   
   box-sizing: border-box;
   width: 345px;
-  height: 84px;
+  height: 72px;
   overflow: hidden;
   display: flex;
   align-items: center;
@@ -808,7 +831,8 @@
   transition: transform 0.3s ease;
   cursor: default;
 
-  background: transparent;}
+  background: transparent;
+  transform: none;}
 
 .practiceTasksWrapper:hover {
   border-color: #590B31;
@@ -834,7 +858,7 @@
 
 .careerFocusedModulesWrapper {
   position: absolute;
-  top: 20px;
+  top: 14px;
   left: 30px;
   box-shadow:
     -8px -8px 16px rgba(255, 255, 255, 0.6),
@@ -844,7 +868,7 @@
   
   box-sizing: border-box;
   width: 345px;
-  height: 84px;
+  height: 72px;
   overflow: hidden;
   display: flex;
   align-items: center;
@@ -854,7 +878,8 @@
   transition: transform 0.3s ease;
   cursor: default;
 
-  background: transparent;}
+  background: transparent;
+  transform: none;}
 
 .careerFocusedModulesWrapper:hover {
   border-color: #141B34;
@@ -880,7 +905,7 @@
 
 .genzgalaxyInner2 {
   position: absolute;
-  top: 3276px;
+  top: 2838px;
   left: calc(50% - 616px);
   width: 1232px;
   height: 566px;
@@ -1012,10 +1037,10 @@
 
 .frameChild27 {
   position: absolute;
-  top: -19.44px;
-  left: 44px;
-  width: 117px;
-  height: 117px;
+  top: -6.94px;
+  left: 56.5px;
+  width: 92px;
+  height: 92px;
   flex-shrink: 0;
   border-radius: 50%;
   background-color: #ef97c2;
@@ -1084,10 +1109,10 @@
 
 .frameChild29 {
   position: absolute;
-  top: -30.44px;
-  left: 44px;
-  width: 117px;
-  height: 117px;
+  top: -17.94px;
+  left: 56.5px;
+  width: 92px;
+  height: 92px;
   flex-shrink: 0;
   border-radius: 50%;
   background-color: #f2afaa;
@@ -1104,10 +1129,10 @@
 
 .frameChild29b {
   position: absolute;
-  top: -30.44px;
-  left: 44px;
-  width: 117px;
-  height: 117px;
+  top: -17.94px;
+  left: 56.5px;
+  width: 92px;
+  height: 92px;
   flex-shrink: 0;
   border-radius: 50%;
   background-color: #e790ed;
@@ -1228,10 +1253,10 @@
 
 .frameChild33 {
   position: absolute;
-  top: -32.72px;
-  left: 44.17px;
-  width: 117px;
-  height: 117px;
+  top: -20.22px;
+  left: 56.67px;
+  width: 92px;
+  height: 92px;
   flex-shrink: 0;
   border-radius: 50%;
   background-color: #4ddade;
@@ -1286,8 +1311,8 @@
 }
 
 .ellipseIcon {
-  width: 117px;
-  height: 117px;
+  width: 92px;
+  height: 92px;
   position: relative;
   border-radius: 50%;
   background-color: #9ca7d2;
@@ -1310,6 +1335,7 @@
   transition:
     color 0.3s ease,
     transform 0.3s ease;
+  transform: translateY(14px);
 }
 
 .frameParent24:hover {
@@ -1424,7 +1450,7 @@
 
 .frameParent29 {
   position: absolute;
-  top: 3938px;
+  top: 3563px;
   left: -127px;
   display: flex;
   align-items: center;
@@ -1542,7 +1568,7 @@
 
 .learningTogetherBadge {
   display: inline-flex;
-  align-self: flex-end;
+  align-self: flex-start !important;
   align-items: center;
   justify-content: center;
   border-radius: 28px;
@@ -1558,8 +1584,9 @@
     inset -4px -4px 8px rgba(255, 255, 255, 0.9),
     inset 4px 4px 8px rgba(198, 198, 201, 0.75);
   overflow: hidden;
-  transform: translateX(-45px);
-}
+  transform: translateX(0) !important;
+
+  margin-left: 0 !important;}
 
 .greatLearningHappensContainer {
   align-self: stretch;
@@ -1784,7 +1811,7 @@
 
 .rectangleGroup {
   position: absolute;
-  top: 4435px;
+  top: 4283px;
   left: calc(50% - 640px);
   box-shadow:
     -8px -8px 8px rgba(255, 255, 255, 0.5) inset,
@@ -1952,13 +1979,13 @@
 .frameChild29 svg,
 .frameChild29b svg,
 .frameChild33 svg {
-  width: 77px;
-  height: 77px;
+  width: 52px;
+  height: 52px;
 }
 
 .ellipseIcon svg {
-  width: 62px;
-  height: 62px;
+  width: 46px;
+  height: 46px;
 }
 
 .whyGenzBadge {
@@ -5719,8 +5746,8 @@ body {
 .practiceTasksWrapper,
 .careerFocusedModulesWrapper {
   width: 345px;
-  height: 84px;
-  top: 20px;
+  height: 72px;
+  top: 14px;
   left: 30px;
   box-sizing: border-box;
   border: 2px solid transparent;
@@ -5868,14 +5895,15 @@ body {
   }
 
   .learningTogetherBadge {
-    align-self: flex-end;
-    transform: none;
+    align-self: flex-start !important;
+    transform: translateX(0) !important;
     margin-right: 0;
     padding: 8px 18px;
     font-size: 15px;
     line-height: 18px;
     border-radius: 24px;
-  }
+  
+  margin-left: 0 !important;}
 
   .greatLearningHappensContainer {
     width: 100%;
@@ -5961,7 +5989,8 @@ body {
   .frameWrapper7 { width:100%; height:240px; }
   .frameParent31 { width:100%; top:0; left:0; gap:21px; }
   .frameParent32 { width:100%; height:auto; gap:17px; }
-  .learningTogetherBadge { align-self:flex-end; transform:translateX(-40px); margin-right:0; padding:9px 20px; font-size:17px; line-height:20px; border-radius:25px; }
+  .learningTogetherBadge { align-self: flex-start !important; transform: translateX(0) !important; margin-right:0; padding:9px 20px; font-size:17px; line-height:20px; border-radius:25px; 
+  margin-left: 0 !important;}
   .greatLearningHappensContainer { width:100%; font-size:35px; line-height:43px; letter-spacing:.02em; }
   .happensTogether { line-height:43px; }
   .growTogetherWith { width:100%; max-width:550px; font-size:20px; line-height:30px; letter-spacing:.02em; }
@@ -6562,14 +6591,14 @@ body {
   }
 
   .learningTogetherBadge {
-    align-self: center !important;
+    align-self: flex-start !important;
     width: auto !important;
     height: auto !important;
     min-height: 42px !important;
     margin: 0 0 4px !important;
     padding: 9px 22px !important;
     box-sizing: border-box;
-    transform: none !important;
+    transform: translateX(0) !important;
     border-radius: 28px !important;
     background-color: #dfe6e9 !important;
     color: #2d4cc8 !important;
@@ -6581,7 +6610,8 @@ body {
     box-shadow:
       inset -4px -4px 8px rgba(255, 255, 255, 0.9),
       inset 4px 4px 8px rgba(198, 198, 201, 0.75) !important;
-  }
+  
+  margin-left: 0 !important;}
 
   .greatLearningHappensContainer {
     width: 100% !important;
@@ -7061,7 +7091,7 @@ body {
 
 @media screen and (min-width: 768px) {
   .rectangleGroup {
-    top: 4670px;
+    top: 4283px;
   }
 }
 
@@ -7253,5 +7283,452 @@ body {
     object-fit: cover !important;
     object-position: center top !important;
     transform: none !important;
+  }
+}
+
+/* =========================================================
+   RESPONSIVE SAFETY FIXES — TABLET + MOBILE ONLY
+   Desktop (1025px and above) is intentionally untouched.
+   Existing colors, shadows, fonts and desktop design remain unchanged.
+   ========================================================= */
+
+/* ---------- TABLET: 768px–1024px ---------- */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  html,
+  body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  .genzgalaxy {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+    margin: 0 auto !important;
+    box-sizing: border-box !important;
+    overflow-x: hidden !important;
+  }
+
+  .genzgalaxy img,
+  .genzgalaxy svg {
+    max-width: 100%;
+  }
+
+  .frameContainer,
+  .frameParent6,
+  .image20Parent,
+  .genzgalaxyInner2,
+  .frameParent29,
+  .rectangleGroup {
+    max-width: calc(100vw - 32px) !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    box-sizing: border-box !important;
+  }
+
+  .frameParent10 {
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+  }
+
+  .polygonParent {
+    flex: 0 0 auto !important;
+  }
+
+  .rectangleParent {
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+  .successfulYoungBusinessmanSIcon,
+  .wrapperPolygon14,
+  .wrapperPolygon16Parent {
+    max-width: 100% !important;
+  }
+
+  .frameParent23 {
+    justify-content: center !important;
+    flex-wrap: wrap !important;
+  }
+
+  .frameParent30,
+  .frameWrapper6,
+  .frameParent31,
+  .frameParent32 {
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+  .frameParent33 {
+    max-width: 100% !important;
+  }
+
+  .rectangleGroup {
+    overflow: hidden !important;
+  }
+}
+
+/* ---------- MOBILE: up to 767px ---------- */
+@media screen and (max-width: 767px) {
+  html,
+  body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden !important;
+  }
+
+  .genzgalaxy {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+    height: auto !important;
+    min-height: 0 !important;
+    box-sizing: border-box !important;
+    overflow-x: hidden !important;
+  }
+
+  .genzgalaxy *,
+  .genzgalaxy *::before,
+  .genzgalaxy *::after {
+    box-sizing: border-box;
+  }
+
+  .genzgalaxy img,
+  .genzgalaxy svg {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .frameContainer,
+  .frameParent6,
+  .image20Parent,
+  .genzgalaxyInner2,
+  .frameParent29,
+  .rectangleGroup {
+    width: calc(100% - 16px) !important;
+    max-width: 720px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  .frameParent7,
+  .frameParent8,
+  .frameParent9,
+  .frameParent10,
+  .frameParent12,
+  .frameParent13,
+  .frameParent14,
+  .frameParent15,
+  .frameParent20,
+  .frameParent21,
+  .frameParent23,
+  .frameParent30,
+  .frameParent31,
+  .frameParent32,
+  .frameWrapper6,
+  .frameWrapper7 {
+    max-width: 100% !important;
+  }
+
+  .frameParent10 {
+    width: 100% !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    justify-items: center !important;
+  }
+
+  .polygonParent {
+    max-width: 190px !important;
+  }
+
+  .rectangleParent {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .frameParent15 {
+    width: 100% !important;
+  }
+
+  .skillPathWrapper,
+  .usefulResourcesWrapper,
+  .practiceTasksWrapper,
+  .careerFocusedModulesWrapper {
+    max-width: 100% !important;
+  }
+
+  .successfulYoungBusinessmanSIcon {
+    max-width: min(88vw, 440px) !important;
+  }
+
+  .frameParent23 {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .frameParent29 .wrapperPolygon16Parent {
+    max-width: min(calc(100vw - 32px), 360px) !important;
+  }
+
+  .frameParent33 {
+    width: min(100%, 445px) !important;
+    max-width: 100% !important;
+  }
+
+  .rectangleGroup {
+    width: calc(100% - 16px) !important;
+    max-width: 720px !important;
+    overflow: hidden !important;
+  }
+}
+
+/* ---------- SMALL MOBILE: up to 420px ---------- */
+@media screen and (max-width: 420px) {
+  .frameParent10 {
+    gap: 10px 6px !important;
+  }
+
+  .polygonParent {
+    width: min(42vw, 170px) !important;
+  }
+
+  .whatMakesUsDifferentBadge,
+  .outcomeDrivenBadge,
+  .learningTogetherBadge {
+    max-width: calc(100vw - 28px) !important;
+  }
+
+  .successfulYoungBusinessmanSIcon {
+    max-width: 92vw !important;
+  }
+}
+
+/* =========================================================
+   HERO RESPONSIVE FIX — MOBILE ONLY
+   Desktop (768px+) is untouched.
+   No zoom is used.
+   ========================================================= */
+@media screen and (max-width: 767px) {
+  html,
+  body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden !important;
+  }
+
+  .genzgalaxy {
+    width: 100% !important;
+    max-width: 100% !important;
+    overflow-x: hidden !important;
+  }
+
+  /* Keep the original hero artwork as ONE 1280px design stage. */
+  .frameContainer {
+    --hero-scale: 0.58;
+    position: relative !important;
+    width: 1280px !important;
+    max-width: none !important;
+    height: 1156px !important;
+
+    left: 50% !important;
+    right: auto !important;
+    margin-left: -640px !important;
+    margin-right: 0 !important;
+
+    zoom: 1 !important;
+    transform: scale(var(--hero-scale)) !important;
+    transform-origin: top center !important;
+
+    /* Remove the unused layout height created by transform scaling. */
+    margin-bottom: -485px !important;
+
+    overflow: hidden !important;
+    isolation: isolate !important;
+    contain: layout paint !important;
+  }
+
+  .genzHeroFrame {
+    position: absolute !important;
+    top: -28px !important;
+    left: 50% !important;
+    right: auto !important;
+    width: 1280px !important;
+    max-width: none !important;
+    height: 1072px !important;
+    transform: translateX(-50%) !important;
+    overflow: hidden !important;
+    pointer-events: none !important;
+  }
+
+  /* Do not let generic mobile img/svg rules resize hero artwork separately. */
+  .frameContainer img,
+  .frameContainer svg {
+    max-width: none !important;
+  }
+}
+
+/* 600px and below */
+@media screen and (max-width: 600px) {
+  .frameContainer {
+    --hero-scale: 0.46;
+    margin-bottom: -624px !important;
+  }
+}
+
+/* 480px and below */
+@media screen and (max-width: 480px) {
+  .frameContainer {
+    --hero-scale: 0.365;
+    margin-bottom: -734px !important;
+  }
+}
+
+/* 420px and below */
+@media screen and (max-width: 420px) {
+  .frameContainer {
+    --hero-scale: 0.315;
+    margin-bottom: -792px !important;
+  }
+}
+
+/* 390px and below */
+@media screen and (max-width: 390px) {
+  .frameContainer {
+    --hero-scale: 0.29;
+    margin-bottom: -821px !important;
+  }
+}
+
+/* 360px and below */
+@media screen and (max-width: 360px) {
+  .frameContainer {
+    --hero-scale: 0.265;
+    margin-bottom: -850px !important;
+  }
+}
+
+/* 320px and below */
+@media screen and (max-width: 320px) {
+  .frameContainer {
+    --hero-scale: 0.235;
+    margin-bottom: -884px !important;
+  }
+}
+
+/* =========================================================
+   OUTCOME-DRIVEN LEARNING — MOBILE RESPONSIVE FIX ONLY
+   Desktop/tablet design is untouched.
+   Fixes the card overlap and left/right clipping seen on mobile.
+   No zoom is used.
+   ========================================================= */
+@media screen and (max-width: 767px) {
+  .genzgalaxyInner2 {
+    width: calc(100% - 20px) !important;
+    max-width: 520px !important;
+    padding: 12px 8px 24px !important;
+    overflow: visible !important;
+  }
+
+  .frameParent20 {
+    width: 100% !important;
+    max-width: 100% !important;
+    gap: 20px !important;
+    transform: none !important;
+  }
+
+  .frameParent21 {
+    width: 100% !important;
+    max-width: 100% !important;
+    gap: 12px !important;
+  }
+
+  .frameChild24 {
+    width: min(72vw, 280px) !important;
+    max-width: 100% !important;
+    height: auto !important;
+  }
+
+  .turnLearningInto {
+    width: 100% !important;
+    max-width: 360px !important;
+    margin: 0 auto !important;
+    padding: 0 4px !important;
+    white-space: normal !important;
+    text-align: center !important;
+  }
+
+  .lessTheoryMore {
+    width: 100% !important;
+    max-width: 360px !important;
+    margin: 0 auto !important;
+    padding: 0 6px !important;
+    text-align: center !important;
+  }
+
+  /* Two cards per row so the large oval designs never collide. */
+  .frameParent23 {
+    width: 100% !important;
+    max-width: 390px !important;
+    margin: 0 auto !important;
+    padding: 4px 0 0 !important;
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    column-gap: 4px !important;
+    row-gap: 8px !important;
+    justify-items: center !important;
+    align-items: start !important;
+    overflow: visible !important;
+  }
+
+  .frameParent24,
+  .frameParent25,
+  .frameParent26,
+  .frameParent27,
+  .frameParent28 {
+    grid-column: auto !important;
+    width: 203px !important;
+    height: 234px !important;
+    margin: 0 !important;
+    transform: scale(0.72) !important;
+    transform-origin: top center !important;
+  }
+
+  /* Center the fifth card on the last row. */
+  .frameParent28 {
+    grid-column: 1 / -1 !important;
+  }
+}
+
+/* Slightly smaller cards on narrow phones. */
+@media screen and (max-width: 420px) {
+  .frameParent23 {
+    max-width: 365px !important;
+    column-gap: 0 !important;
+  }
+
+  .frameParent24,
+  .frameParent25,
+  .frameParent26,
+  .frameParent27,
+  .frameParent28 {
+    transform: scale(0.66) !important;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .frameParent23 {
+    grid-template-columns: 1fr !important;
+    max-width: 250px !important;
+    row-gap: 0 !important;
+  }
+
+  .frameParent24,
+  .frameParent25,
+  .frameParent26,
+  .frameParent27,
+  .frameParent28 {
+    grid-column: 1 !important;
+    transform: scale(0.70) !important;
   }
 }

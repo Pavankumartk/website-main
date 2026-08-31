@@ -573,7 +573,7 @@ function MeetNeuroLXP() {
           <h2 className={styles["meet-neurolxp-heading"]} id="meet-neurolxp-heading">
             Next-Generation Neomorphism learning Platform
           </h2>
-          <p className={styles["meet-neurolxp-subtext"]}>Neomorphic platform for smarter learning.</p>
+          <p className={styles["meet-neurolxp-subtext"]}>Neomorphic platform for smarter learning</p>
         </div>
       </div>
     </section>
