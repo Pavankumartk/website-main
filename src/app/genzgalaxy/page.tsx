@@ -3,7 +3,7 @@
 import type { NextPage } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import styles from "./genzgalaxy.module.css";
 import Header from "../../components/Header/header";
 import Footer from "../../components/Footer/footer";
@@ -34,6 +34,40 @@ function withTimeout<T>(promise: Promise<T>, ms: number): Promise<T | void> {
 
 const GenZgalaxy: NextPage = () => {
   const [isLayoutReady, setIsLayoutReady] = useState(false);
+  const viewportRef = useRef<HTMLDivElement>(null);
+  const pageRef = useRef<HTMLElement>(null);
+
+  // Measure the unscaled viewport, so a 1440px design also fits narrower laptops.
+  // Large monitors keep the original size with equal margins on both sides.
+  useEffect(() => {
+    const viewport = viewportRef.current;
+    const page = pageRef.current;
+    if (!viewport || !page) return;
+
+    let frame = 0;
+    let previousWidth = -1;
+    const updateScale = () => {
+      const width = viewport.clientWidth;
+      if (width <= 0 || width === previousWidth) return;
+      previousWidth = width;
+      page.style.setProperty("--genz-page-scale", String(Math.min(1, width / 1440)));
+    };
+    const scheduleScale = () => {
+      cancelAnimationFrame(frame);
+      frame = requestAnimationFrame(updateScale);
+    };
+
+    updateScale();
+    const observer = typeof ResizeObserver === "undefined" ? null : new ResizeObserver(scheduleScale);
+    observer?.observe(viewport);
+    window.addEventListener("resize", scheduleScale);
+    return () => {
+      observer?.disconnect();
+      window.removeEventListener("resize", scheduleScale);
+      cancelAnimationFrame(frame);
+      page.style.removeProperty("--genz-page-scale");
+    };
+  }, []);
 
   useEffect(() => {
     let cancelled = false;
@@ -69,7 +103,7 @@ const GenZgalaxy: NextPage = () => {
    * - restores every touched inline style when leaving this route
    */
   useEffect(() => {
-    const main = document.getElementById("main-content");
+    const main = pageRef.current;
     if (!main) return;
 
     type SavedStyle = {
@@ -98,15 +132,17 @@ const GenZgalaxy: NextPage = () => {
      */
     let current: HTMLElement | null = main;
     while (current && current !== document.body) {
+      const computed = window.getComputedStyle(current);
+      const overflowY = computed.overflowY;
+      const height = computed.height;
       setImportant(current, "overflow-y", "visible");
       setImportant(current, "max-height", "none");
 
       if (current !== main) {
-        const computed = window.getComputedStyle(current);
         if (
-          computed.overflowY === "auto" ||
-          computed.overflowY === "scroll" ||
-          computed.height === `${window.innerHeight}px`
+          overflowY === "auto" ||
+          overflowY === "scroll" ||
+          height === `${window.innerHeight}px`
         ) {
           setImportant(current, "height", "auto");
           setImportant(current, "min-height", "0");
@@ -156,12 +192,13 @@ const GenZgalaxy: NextPage = () => {
 
   return (
      <>
-      <title>Gen Z Galaxy | NeuroLXP</title>
+      <title>GenZGalaxy | NeuroLXP</title>
       {PRELOADED_HERO_IMAGES.map((src) => (
         <link key={src} rel="preload" as="image" href={src} />
       ))}
       <Header />
-      <main className={`${styles.genzgalaxy}${isLayoutReady ? ` ${styles.layoutReady}` : ""}`} id="main-content" tabIndex={0} role="main" aria-label="Gen Z Galaxy page content">
+      <div ref={viewportRef} className={styles.pageViewport}>
+      <main ref={pageRef} className={`${styles.genzgalaxy}${isLayoutReady ? ` ${styles.layoutReady}` : ""}`} id="main-content" tabIndex={0} role="main" aria-label="GenZGalaxy page content">
       <svg className={styles.genzHeroFrame} width="1280" height="1072" viewBox="0 0 1280 1072" fill="none" aria-hidden="true" focusable="false">
         <g filter="url(#genzHeroInnerShadow)">
           <path d="M0 16C0 7.16346 7.16344 0 16 0H1264C1272.84 0 1280 7.16344 1280 16V647.243C1280 652.662 1277.26 657.713 1272.71 660.663L643.278 1069.29C637.941 1072.76 631.058 1072.73 625.748 1069.23L7.18205 660.676C2.69784 657.714 0 652.699 0 647.325V16Z" fill="#DFE6E9" />
@@ -171,13 +208,13 @@ const GenZgalaxy: NextPage = () => {
             <feFlood floodOpacity="0" result="BackgroundImageFix" />
             <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
             <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
-            <feOffset dx="-8" dy="-8" />
-            <feGaussianBlur stdDeviation="8" />
+            <feOffset dx="-4" dy="-4" />
+            <feGaussianBlur stdDeviation="4" />
             <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1" />
             <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.6 0" />
             <feBlend mode="normal" in2="shape" result="effect1InnerShadow" />
             <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha2" />
-            <feOffset dx="8" dy="8" />
+            <feOffset dx="4" dy="4" />
             <feGaussianBlur stdDeviation="4" />
             <feComposite in2="hardAlpha2" operator="arithmetic" k2="-1" k3="1" />
             <feColorMatrix type="matrix" values="0 0 0 0 0.669231 0 0 0 0 0.669231 0 0 0 0 0.669231 0 0 0 0.6 0" />
@@ -219,53 +256,73 @@ const GenZgalaxy: NextPage = () => {
               <h1 className={styles.genzgalaxy3} style={{ margin: 0, fontWeight: 700 }}>
                 <span className={styles.gen}>Gen</span>
                 <span className={styles.z}>Z</span>
-                <span className={styles.gen}>galaxy</span>
+                <span className={styles.gen}>Galaxy</span>
               </h1>
               <h2 className={styles.aLearningSpace} style={{ margin: 0, fontWeight: 700 }}>
                 A Learning Space That Actually Feels Modern
               </h2>
             </div>
-            <div className={styles.genzgalaxyIsBuilt}>GenZGalaxy is built for the digital generation. Fast, interactive learning that turns every journey into an experience worth exploring</div>
+            <div className={styles.genzgalaxyIsBuilt}>GenZGalaxy is built for the digital generation. It offers fast, interactive learning that turns every journey into an experience worth exploring.</div>
           </div>
         </div>
       </div>
       <div className={styles.frameParent6}>
         <div className={styles.frameParent7}>
           <div className={styles.frameParent8}>
-            <div className={styles.whyGenzBadge}>Why GenZgalaxy</div>
+            <div className={styles.whyGenzBadge}>Why GenZGalaxy</div>
             <h2 className={styles.builtForTheContainer} style={{ margin: 0, fontWeight: 700 }}>
               <span className={styles.builtForThe}>{`Built for the `}</span>
               <span className={styles.futureOfLearning}>Future of Learning</span>
             </h2>
           </div>
-          <div className={styles.modernLearnersExpect}>Modern learners expect fast, intuitive, and interactive experiences that keep them engaged</div>
+          <div className={styles.modernLearnersExpect}>Modern learners expect fast, intuitive, and interactive experiences that keep them engaged.</div>
         </div>
         <div className={styles.frameParent9}>
           <div className={styles.frameParent10}>
             <div className={styles.polygonParent}>
-              <svg className={styles.polygonIcon} viewBox="0 0 300 310" aria-hidden="true" focusable="false">
+              <svg className={styles.polygonIcon} viewBox="0 0 600 466" preserveAspectRatio="xMidYMid meet" aria-hidden="true" focusable="false">
                 <defs>
                   <filter id="pentagonShadow1" x="-30%" y="-30%" width="160%" height="160%">
-                    <feDropShadow dx="6" dy="6" stdDeviation="6" floodColor="#c4c4c4" floodOpacity="0.6" />
-                    <feDropShadow dx="-6" dy="-6" stdDeviation="6" floodColor="#ffffff" floodOpacity="0.9" />
+                    <feGaussianBlur in="SourceAlpha" stdDeviation="4" result="cardBlur" />
+                    <feOffset in="cardBlur" dx="4" dy="4" result="darkOffset" />
+                    <feFlood floodColor="#c4c4c4" floodOpacity="0.6" result="darkColour" />
+                    <feComposite in="darkColour" in2="darkOffset" operator="in" result="darkShadow" />
+                    <feOffset in="cardBlur" dx="-4" dy="-4" result="lightOffset" />
+                    <feFlood floodColor="#ffffff" floodOpacity="0.9" result="lightColour" />
+                    <feComposite in="lightColour" in2="lightOffset" operator="in" result="lightShadow" />
+                    <feMerge>
+                      <feMergeNode in="darkShadow" />
+                      <feMergeNode in="lightShadow" />
+                      <feMergeNode in="SourceGraphic" />
+                    </feMerge>
                   </filter>
                 </defs>
-                <polygon points="150,0 300,117.8 246,310 54,310 0,117.8" fill="#dfe6e9" filter={`url(#pentagonShadow1)`} />
-                <polygon points="150,25.67 277.5,125.8 231.6,289.17 68.4,289.17 22.5,125.8" fill="#b39ddb" />
+                <path d="M291.9 2.4 Q300 -2.4 308.1 2.4 L591.3 169.4 Q604 177 598.5 191 L493.2 451.7 Q487.4 466 472 466 H128 Q112.6 466 106.8 451.7 L1.5 191 Q-4 177 8.7 169.4 Z" fill="#dfe6e9" filter={`url(#pentagonShadow1)`} />
+                <polygon points="300,62 542,197 450,416 150,416 58,197" fill="#b39ddb" />
               </svg>
 
               <div className={styles.gamifiedElements}>Gamified Elements</div>
             </div>
             <div className={styles.polygonParent}>
-              <svg className={styles.polygonIcon} viewBox="0 0 300 310" aria-hidden="true" focusable="false">
+              <svg className={styles.polygonIcon} viewBox="0 0 600 466" preserveAspectRatio="xMidYMid meet" aria-hidden="true" focusable="false">
                 <defs>
                   <filter id="pentagonShadow2" x="-30%" y="-30%" width="160%" height="160%">
-                    <feDropShadow dx="6" dy="6" stdDeviation="6" floodColor="#c4c4c4" floodOpacity="0.6" />
-                    <feDropShadow dx="-6" dy="-6" stdDeviation="6" floodColor="#ffffff" floodOpacity="0.9" />
+                    <feGaussianBlur in="SourceAlpha" stdDeviation="4" result="cardBlur" />
+                    <feOffset in="cardBlur" dx="4" dy="4" result="darkOffset" />
+                    <feFlood floodColor="#c4c4c4" floodOpacity="0.6" result="darkColour" />
+                    <feComposite in="darkColour" in2="darkOffset" operator="in" result="darkShadow" />
+                    <feOffset in="cardBlur" dx="-4" dy="-4" result="lightOffset" />
+                    <feFlood floodColor="#ffffff" floodOpacity="0.9" result="lightColour" />
+                    <feComposite in="lightColour" in2="lightOffset" operator="in" result="lightShadow" />
+                    <feMerge>
+                      <feMergeNode in="darkShadow" />
+                      <feMergeNode in="lightShadow" />
+                      <feMergeNode in="SourceGraphic" />
+                    </feMerge>
                   </filter>
                 </defs>
-                <polygon points="150,0 300,117.8 246,310 54,310 0,117.8" fill="#dfe6e9" filter={`url(#pentagonShadow2)`} />
-                <polygon points="150,25.67 277.5,125.8 231.6,289.17 68.4,289.17 22.5,125.8" fill="#f4a6c6" />
+                <path d="M291.9 2.4 Q300 -2.4 308.1 2.4 L591.3 169.4 Q604 177 598.5 191 L493.2 451.7 Q487.4 466 472 466 H128 Q112.6 466 106.8 451.7 L1.5 191 Q-4 177 8.7 169.4 Z" fill="#dfe6e9" filter={`url(#pentagonShadow2)`} />
+                <polygon points="300,62 542,197 450,416 150,416 58,197" fill="#f4a6c6" />
               </svg>
 
               <div className={styles.interactiveContent}>
@@ -274,29 +331,49 @@ const GenZgalaxy: NextPage = () => {
               </div>
             </div>
             <div className={styles.polygonParent}>
-              <svg className={styles.polygonIcon} viewBox="0 0 300 310" aria-hidden="true" focusable="false">
+              <svg className={styles.polygonIcon} viewBox="0 0 600 466" preserveAspectRatio="xMidYMid meet" aria-hidden="true" focusable="false">
                 <defs>
                   <filter id="pentagonShadow3" x="-30%" y="-30%" width="160%" height="160%">
-                    <feDropShadow dx="6" dy="6" stdDeviation="6" floodColor="#c4c4c4" floodOpacity="0.6" />
-                    <feDropShadow dx="-6" dy="-6" stdDeviation="6" floodColor="#ffffff" floodOpacity="0.9" />
+                    <feGaussianBlur in="SourceAlpha" stdDeviation="4" result="cardBlur" />
+                    <feOffset in="cardBlur" dx="4" dy="4" result="darkOffset" />
+                    <feFlood floodColor="#c4c4c4" floodOpacity="0.6" result="darkColour" />
+                    <feComposite in="darkColour" in2="darkOffset" operator="in" result="darkShadow" />
+                    <feOffset in="cardBlur" dx="-4" dy="-4" result="lightOffset" />
+                    <feFlood floodColor="#ffffff" floodOpacity="0.9" result="lightColour" />
+                    <feComposite in="lightColour" in2="lightOffset" operator="in" result="lightShadow" />
+                    <feMerge>
+                      <feMergeNode in="darkShadow" />
+                      <feMergeNode in="lightShadow" />
+                      <feMergeNode in="SourceGraphic" />
+                    </feMerge>
                   </filter>
                 </defs>
-                <polygon points="150,0 300,117.8 246,310 54,310 0,117.8" fill="#dfe6e9" filter={`url(#pentagonShadow3)`} />
-                <polygon points="150,25.67 277.5,125.8 231.6,289.17 68.4,289.17 22.5,125.8" fill="#f78888" />
+                <path d="M291.9 2.4 Q300 -2.4 308.1 2.4 L591.3 169.4 Q604 177 598.5 191 L493.2 451.7 Q487.4 466 472 466 H128 Q112.6 466 106.8 451.7 L1.5 191 Q-4 177 8.7 169.4 Z" fill="#dfe6e9" filter={`url(#pentagonShadow3)`} />
+                <polygon points="300,62 542,197 450,416 150,416 58,197" fill="#f78888" />
               </svg>
 
               <div className={styles.shortFocusedLessons}>Short, Focused Lessons</div>
             </div>
             <div className={styles.polygonParent}>
-              <svg className={styles.polygonIcon} viewBox="0 0 300 310" aria-hidden="true" focusable="false">
+              <svg className={styles.polygonIcon} viewBox="0 0 600 466" preserveAspectRatio="xMidYMid meet" aria-hidden="true" focusable="false">
                 <defs>
                   <filter id="pentagonShadow4" x="-30%" y="-30%" width="160%" height="160%">
-                    <feDropShadow dx="6" dy="6" stdDeviation="6" floodColor="#c4c4c4" floodOpacity="0.6" />
-                    <feDropShadow dx="-6" dy="-6" stdDeviation="6" floodColor="#ffffff" floodOpacity="0.9" />
+                    <feGaussianBlur in="SourceAlpha" stdDeviation="4" result="cardBlur" />
+                    <feOffset in="cardBlur" dx="4" dy="4" result="darkOffset" />
+                    <feFlood floodColor="#c4c4c4" floodOpacity="0.6" result="darkColour" />
+                    <feComposite in="darkColour" in2="darkOffset" operator="in" result="darkShadow" />
+                    <feOffset in="cardBlur" dx="-4" dy="-4" result="lightOffset" />
+                    <feFlood floodColor="#ffffff" floodOpacity="0.9" result="lightColour" />
+                    <feComposite in="lightColour" in2="lightOffset" operator="in" result="lightShadow" />
+                    <feMerge>
+                      <feMergeNode in="darkShadow" />
+                      <feMergeNode in="lightShadow" />
+                      <feMergeNode in="SourceGraphic" />
+                    </feMerge>
                   </filter>
                 </defs>
-                <polygon points="150,0 300,117.8 246,310 54,310 0,117.8" fill="#dfe6e9" filter={`url(#pentagonShadow4)`} />
-                <polygon points="150,25.67 277.5,125.8 231.6,289.17 68.4,289.17 22.5,125.8" fill="#7fae5c" />
+                <path d="M291.9 2.4 Q300 -2.4 308.1 2.4 L591.3 169.4 Q604 177 598.5 191 L493.2 451.7 Q487.4 466 472 466 H128 Q112.6 466 106.8 451.7 L1.5 191 Q-4 177 8.7 169.4 Z" fill="#dfe6e9" filter={`url(#pentagonShadow4)`} />
+                <polygon points="300,62 542,197 450,416 150,416 58,197" fill="#7fae5c" />
               </svg>
 
               <div className={styles.groupBasedLearning}>Group-Based Learning</div>
@@ -304,60 +381,100 @@ const GenZgalaxy: NextPage = () => {
           </div>
           <div className={styles.frameParent10}>
             <div className={styles.polygonParent}>
-              <svg className={styles.polygonIcon} viewBox="0 0 300 310" aria-hidden="true" focusable="false">
+              <svg className={styles.polygonIcon} viewBox="0 0 600 466" preserveAspectRatio="xMidYMid meet" aria-hidden="true" focusable="false">
                 <defs>
                   <filter id="pentagonShadow5" x="-30%" y="-30%" width="160%" height="160%">
-                    <feDropShadow dx="6" dy="6" stdDeviation="6" floodColor="#c4c4c4" floodOpacity="0.6" />
-                    <feDropShadow dx="-6" dy="-6" stdDeviation="6" floodColor="#ffffff" floodOpacity="0.9" />
+                    <feGaussianBlur in="SourceAlpha" stdDeviation="4" result="cardBlur" />
+                    <feOffset in="cardBlur" dx="4" dy="4" result="darkOffset" />
+                    <feFlood floodColor="#c4c4c4" floodOpacity="0.6" result="darkColour" />
+                    <feComposite in="darkColour" in2="darkOffset" operator="in" result="darkShadow" />
+                    <feOffset in="cardBlur" dx="-4" dy="-4" result="lightOffset" />
+                    <feFlood floodColor="#ffffff" floodOpacity="0.9" result="lightColour" />
+                    <feComposite in="lightColour" in2="lightOffset" operator="in" result="lightShadow" />
+                    <feMerge>
+                      <feMergeNode in="darkShadow" />
+                      <feMergeNode in="lightShadow" />
+                      <feMergeNode in="SourceGraphic" />
+                    </feMerge>
                   </filter>
                 </defs>
-                <polygon points="150,0 300,117.8 246,310 54,310 0,117.8" fill="#dfe6e9" filter={`url(#pentagonShadow5)`} />
-                <polygon points="150,25.67 277.5,125.8 231.6,289.17 68.4,289.17 22.5,125.8" fill="#c9a227" />
+                <path d="M291.9 2.4 Q300 -2.4 308.1 2.4 L591.3 169.4 Q604 177 598.5 191 L493.2 451.7 Q487.4 466 472 466 H128 Q112.6 466 106.8 451.7 L1.5 191 Q-4 177 8.7 169.4 Z" fill="#dfe6e9" filter={`url(#pentagonShadow5)`} />
+                <polygon points="300,62 542,197 450,416 150,416 58,197" fill="#c9a227" />
               </svg>
 
               <div className={styles.mobileFriendlyDesign}>Mobile-Friendly Design</div>
             </div>
             <div className={styles.polygonParent}>
-              <svg className={styles.polygonIcon} viewBox="0 0 300 310" aria-hidden="true" focusable="false">
+              <svg className={styles.polygonIcon} viewBox="0 0 600 466" preserveAspectRatio="xMidYMid meet" aria-hidden="true" focusable="false">
                 <defs>
                   <filter id="pentagonShadow6" x="-30%" y="-30%" width="160%" height="160%">
-                    <feDropShadow dx="6" dy="6" stdDeviation="6" floodColor="#c4c4c4" floodOpacity="0.6" />
-                    <feDropShadow dx="-6" dy="-6" stdDeviation="6" floodColor="#ffffff" floodOpacity="0.9" />
+                    <feGaussianBlur in="SourceAlpha" stdDeviation="4" result="cardBlur" />
+                    <feOffset in="cardBlur" dx="4" dy="4" result="darkOffset" />
+                    <feFlood floodColor="#c4c4c4" floodOpacity="0.6" result="darkColour" />
+                    <feComposite in="darkColour" in2="darkOffset" operator="in" result="darkShadow" />
+                    <feOffset in="cardBlur" dx="-4" dy="-4" result="lightOffset" />
+                    <feFlood floodColor="#ffffff" floodOpacity="0.9" result="lightColour" />
+                    <feComposite in="lightColour" in2="lightOffset" operator="in" result="lightShadow" />
+                    <feMerge>
+                      <feMergeNode in="darkShadow" />
+                      <feMergeNode in="lightShadow" />
+                      <feMergeNode in="SourceGraphic" />
+                    </feMerge>
                   </filter>
                 </defs>
-                <polygon points="150,0 300,117.8 246,310 54,310 0,117.8" fill="#dfe6e9" filter={`url(#pentagonShadow6)`} />
-                <polygon points="150,25.67 277.5,125.8 231.6,289.17 68.4,289.17 22.5,125.8" fill="#9694d4" />
+                <path d="M291.9 2.4 Q300 -2.4 308.1 2.4 L591.3 169.4 Q604 177 598.5 191 L493.2 451.7 Q487.4 466 472 466 H128 Q112.6 466 106.8 451.7 L1.5 191 Q-4 177 8.7 169.4 Z" fill="#dfe6e9" filter={`url(#pentagonShadow6)`} />
+                <polygon points="300,62 542,197 450,416 150,416 58,197" fill="#9694d4" />
               </svg>
 
               <div className={styles.challengesRewards}>{`Challenges & Rewards`}</div>
             </div>
             <div className={styles.polygonParent}>
-              <svg className={styles.polygonIcon} viewBox="0 0 300 310" aria-hidden="true" focusable="false">
+              <svg className={styles.polygonIcon} viewBox="0 0 600 466" preserveAspectRatio="xMidYMid meet" aria-hidden="true" focusable="false">
                 <defs>
                   <filter id="pentagonShadow7" x="-30%" y="-30%" width="160%" height="160%">
-                    <feDropShadow dx="6" dy="6" stdDeviation="6" floodColor="#c4c4c4" floodOpacity="0.6" />
-                    <feDropShadow dx="-6" dy="-6" stdDeviation="6" floodColor="#ffffff" floodOpacity="0.9" />
+                    <feGaussianBlur in="SourceAlpha" stdDeviation="4" result="cardBlur" />
+                    <feOffset in="cardBlur" dx="4" dy="4" result="darkOffset" />
+                    <feFlood floodColor="#c4c4c4" floodOpacity="0.6" result="darkColour" />
+                    <feComposite in="darkColour" in2="darkOffset" operator="in" result="darkShadow" />
+                    <feOffset in="cardBlur" dx="-4" dy="-4" result="lightOffset" />
+                    <feFlood floodColor="#ffffff" floodOpacity="0.9" result="lightColour" />
+                    <feComposite in="lightColour" in2="lightOffset" operator="in" result="lightShadow" />
+                    <feMerge>
+                      <feMergeNode in="darkShadow" />
+                      <feMergeNode in="lightShadow" />
+                      <feMergeNode in="SourceGraphic" />
+                    </feMerge>
                   </filter>
                 </defs>
-                <polygon points="150,0 300,117.8 246,310 54,310 0,117.8" fill="#dfe6e9" filter={`url(#pentagonShadow7)`} />
-                <polygon points="150,25.67 277.5,125.8 231.6,289.17 68.4,289.17 22.5,125.8" fill="#4fb8b6" />
+                <path d="M291.9 2.4 Q300 -2.4 308.1 2.4 L591.3 169.4 Q604 177 598.5 191 L493.2 451.7 Q487.4 466 472 466 H128 Q112.6 466 106.8 451.7 L1.5 191 Q-4 177 8.7 169.4 Z" fill="#dfe6e9" filter={`url(#pentagonShadow7)`} />
+                <polygon points="300,62 542,197 450,416 150,416 58,197" fill="#4fb8b6" />
               </svg>
 
               <div className={styles.gamifiedElements}>Responsive Quizzes</div>
             </div>
             <div className={styles.polygonParent}>
-              <svg className={styles.polygonIcon} viewBox="0 0 300 310" aria-hidden="true" focusable="false">
+              <svg className={styles.polygonIcon} viewBox="0 0 600 466" preserveAspectRatio="xMidYMid meet" aria-hidden="true" focusable="false">
                 <defs>
                   <filter id="pentagonShadow8" x="-30%" y="-30%" width="160%" height="160%">
-                    <feDropShadow dx="6" dy="6" stdDeviation="6" floodColor="#c4c4c4" floodOpacity="0.6" />
-                    <feDropShadow dx="-6" dy="-6" stdDeviation="6" floodColor="#ffffff" floodOpacity="0.9" />
+                    <feGaussianBlur in="SourceAlpha" stdDeviation="4" result="cardBlur" />
+                    <feOffset in="cardBlur" dx="4" dy="4" result="darkOffset" />
+                    <feFlood floodColor="#c4c4c4" floodOpacity="0.6" result="darkColour" />
+                    <feComposite in="darkColour" in2="darkOffset" operator="in" result="darkShadow" />
+                    <feOffset in="cardBlur" dx="-4" dy="-4" result="lightOffset" />
+                    <feFlood floodColor="#ffffff" floodOpacity="0.9" result="lightColour" />
+                    <feComposite in="lightColour" in2="lightOffset" operator="in" result="lightShadow" />
+                    <feMerge>
+                      <feMergeNode in="darkShadow" />
+                      <feMergeNode in="lightShadow" />
+                      <feMergeNode in="SourceGraphic" />
+                    </feMerge>
                   </filter>
                 </defs>
-                <polygon points="150,0 300,117.8 246,310 54,310 0,117.8" fill="#dfe6e9" filter={`url(#pentagonShadow8)`} />
-                <polygon points="150,25.67 277.5,125.8 231.6,289.17 68.4,289.17 22.5,125.8" fill="#a99bc9" />
+                <path d="M291.9 2.4 Q300 -2.4 308.1 2.4 L591.3 169.4 Q604 177 598.5 191 L493.2 451.7 Q487.4 466 472 466 H128 Q112.6 466 106.8 451.7 L1.5 191 Q-4 177 8.7 169.4 Z" fill="#dfe6e9" filter={`url(#pentagonShadow8)`} />
+                <polygon points="300,62 542,197 450,416 150,416 58,197" fill="#a99bc9" />
               </svg>
 
-              <div className={styles.gamifiedElements}>Peer Discussion</div>
+              <div className={styles.gamifiedElements}>{"Peer\nDiscussion"}</div>
             </div>
           </div>
         </div>
@@ -379,7 +496,7 @@ const GenZgalaxy: NextPage = () => {
                   Learn Your Way, Every Day
                 </h2>
               </div>
-              <div className={styles.learnAtYour}>Learn at your pace with smart suggestions</div>
+              <div className={styles.learnAtYour}>Learn at your pace with smart suggestions.</div>
             </div>
             <div className={styles.frameParent15}>
               <div className={styles.frameParent16}>
@@ -403,7 +520,7 @@ const GenZgalaxy: NextPage = () => {
               <div className={styles.frameParent16}>
                 <div className={styles.frameChild21} />
                 <div className={styles.careerFocusedModulesWrapper}>
-                  <div className={styles.careerFocusedModules}>Career Focused Modules</div>
+                  <div className={styles.careerFocusedModules}>Career-Focused Modules</div>
                 </div>
               </div>
             </div>
@@ -419,7 +536,7 @@ const GenZgalaxy: NextPage = () => {
                 Turn Learning into Real-World Results
               </h2>
             </div>
-            <div className={styles.lessTheoryMore}>Less theory, more real-world value making learning truly useful not just complete</div>
+            <div className={styles.lessTheoryMore}>Less theory and more real-world value make learning truly useful, not just complete.</div>
           </div>
           <div className={styles.frameParent23}>
             <div className={styles.frameParent24}>
@@ -530,14 +647,14 @@ const GenZgalaxy: NextPage = () => {
                 <filter id="learningTogetherOuterShadow" x="0" y="0" width="698" height="698" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
                   <feFlood floodOpacity="0" result="BackgroundImageFix" />
                   <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
-                  <feOffset dx="8" dy="8" />
-                  <feGaussianBlur stdDeviation="8" />
+                  <feOffset dx="4" dy="4" />
+                  <feGaussianBlur stdDeviation="4" />
                   <feComposite in2="hardAlpha" operator="out" />
                   <feColorMatrix type="matrix" values="0 0 0 0 0.768627 0 0 0 0 0.768627 0 0 0 0 0.768627 0 0 0 1 0" />
                   <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow" />
                   <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha2" />
-                  <feOffset dx="-8" dy="-8" />
-                  <feGaussianBlur stdDeviation="8" />
+                  <feOffset dx="-4" dy="-4" />
+                  <feGaussianBlur stdDeviation="4" />
                   <feComposite in2="hardAlpha2" operator="out" />
                   <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0" />
                   <feBlend mode="normal" in2="effect1_dropShadow" result="effect2_dropShadow" />
@@ -546,14 +663,14 @@ const GenZgalaxy: NextPage = () => {
                 <filter id="learningTogetherInnerShadow" x="30" y="29.75" width="638" height="638" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
                   <feFlood floodOpacity="0" result="BackgroundImageFix2" />
                   <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha3" />
-                  <feOffset dx="8" dy="8" />
-                  <feGaussianBlur stdDeviation="8" />
+                  <feOffset dx="4" dy="4" />
+                  <feGaussianBlur stdDeviation="4" />
                   <feComposite in2="hardAlpha3" operator="out" />
                   <feColorMatrix type="matrix" values="0 0 0 0 0.768627 0 0 0 0 0.768627 0 0 0 0 0.768627 0 0 0 1 0" />
                   <feBlend mode="normal" in2="BackgroundImageFix2" result="effect3_dropShadow" />
                   <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha4" />
-                  <feOffset dx="-8" dy="-8" />
-                  <feGaussianBlur stdDeviation="8" />
+                  <feOffset dx="-4" dy="-4" />
+                  <feGaussianBlur stdDeviation="4" />
                   <feComposite in2="hardAlpha4" operator="out" />
                   <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0" />
                   <feBlend mode="normal" in2="effect3_dropShadow" result="effect4_dropShadow" />
@@ -585,7 +702,7 @@ const GenZgalaxy: NextPage = () => {
                     <span className={styles.happensTogether}>Together</span>
                   </h2>
                 </div>
-                <div className={styles.growTogetherWith}>Grow together with collaborative learning experiences</div>
+                <div className={styles.growTogetherWith}>Grow together with collaborative learning experiences.</div>
               </div>
             </div>
             <div className={styles.frameParent33}>
@@ -644,13 +761,13 @@ const GenZgalaxy: NextPage = () => {
         <div className={styles.frameParent46}>
           <div className={styles.frameParent47}>
             <div className={styles.frameParent48}>
-              <div className={styles.genzgalaxyCtaBadge}>GenZgalaxy</div>
+              <div className={styles.genzgalaxyCtaBadge}>GenZGalaxy</div>
               <h2 className={styles.aSimplerWayContainer} style={{ margin: 0, fontWeight: 700 }}>
                 <span className={styles.builtForThe}>{`A Simpler Way to Approach `}</span>
                 <span className={styles.futureOfLearning}>Learning</span>
               </h2>
             </div>
-            <div className={styles.smarterFlexibleLearning}>Smarter, flexible learning that adapts to your pace and goals</div>
+            <div className={styles.smarterFlexibleLearning}>Enjoy smarter, flexible learning that adapts to your pace and goals.</div>
           </div>
           <Link href="/HomePage" className={styles.frameWrapper12}>
             <div className={styles.explorePlatformWrapper}>
@@ -661,6 +778,7 @@ const GenZgalaxy: NextPage = () => {
         <Image className={styles.youngPeopleRowWithThumbsUIcon} src="/images/young.webp" width={772} height={500} sizes="100vw" alt="" aria-hidden="true" />
       </div>
     </main>
+      </div>
       <Footer />
     </>
   );
