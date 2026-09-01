@@ -7532,8 +7532,709 @@ a:focus-visible {
   }
 }
 
+/* =========================================================
+   FINAL DESKTOP FIX — Our Story / Mission / Vision
+   Keeps the whole section inside one viewport and preserves:
+   Pill → Heading: 24px
+   Heading → Subheading: 16px
+   Subheading → Cards: 24px
+   ========================================================= */
+@media screen and (min-width: 1025px) {
+  .smv-section {
+    width: 100% !important;
+    max-width: 1280px !important;
+    margin: 0 auto !important;
+    padding: 12px 16px 14px !important;
+    gap: 0 !important;
+    box-sizing: border-box !important;
+  }
 
+  .smv-heading-block {
+    width: 100% !important;
+    max-width: 1171px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 0 !important;
+    text-align: center !important;
+  }
 
+  /* Exact vertical spacing requested */
+  .smv-badge {
+    margin: 0 0 24px !important;
+    padding: 7px 24px !important;
+    font-size: 20px !important;
+    line-height: 1.2 !important;
+  }
 
+  .smv-heading {
+    margin: 0 0 16px !important;
+    font-size: 34px !important;
+    line-height: 1.1 !important;
+  }
 
+  .smv-subtext {
+    margin: 0 0 24px !important;
+    max-width: 1049px !important;
+    font-size: 21px !important;
+    line-height: 1.3 !important;
+  }
 
+  .smv-cards {
+    width: 100% !important;
+    display: flex !important;
+    align-items: stretch !important;
+    justify-content: center !important;
+    gap: 20px !important;
+    flex-wrap: nowrap !important;
+  }
+
+  .smv-card {
+    min-height: 0 !important;
+    max-width: 400px !important;
+    padding: 58px 22px 16px !important;
+    gap: 8px !important;
+    border-radius: 46px 0 46px 46px !important;
+  }
+
+  /* Slightly smaller icon area to save vertical space */
+  .smv-card-icon-ring {
+    width: 74px !important;
+    height: 74px !important;
+    top: -22px !important;
+  }
+
+  .smv-card-icon-circle {
+    width: 54px !important;
+    height: 54px !important;
+  }
+
+  .smv-card-icon {
+    width: 30px !important;
+    height: 30px !important;
+  }
+
+  .smv-card-underline {
+    width: 175px !important;
+    height: 8px !important;
+  }
+
+  .smv-card-underline-dot {
+    width: 14px !important;
+    height: 14px !important;
+    top: -3px !important;
+  }
+
+  .smv-card-title {
+    font-size: 26px !important;
+    line-height: 1.15 !important;
+  }
+
+  .smv-card-description {
+    font-size: 17px !important;
+    line-height: 1.3 !important;
+    max-width: 340px !important;
+  }
+
+  /* Main height saving: reduce image area while keeping all 3 equal */
+  .smv-card-image-frame {
+    width: 100% !important;
+    max-width: 340px !important;
+    height: 180px !important;
+    aspect-ratio: auto !important;
+    border-width: 10px !important;
+    border-radius: 20px !important;
+    margin-top: 4px !important;
+    flex-shrink: 0 !important;
+  }
+
+  .smv-card-image {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+  }
+}
+
+/* =========================================================
+   FINAL DESKTOP SPACING UPDATE
+   1) Push stats / next block down from Story-Mission-Vision cards.
+   2) Keep a consistent 24px breathing space for sections below.
+   Desktop only — tablet/mobile remain unchanged.
+   ========================================================= */
+@media screen and (min-width: 1025px) {
+
+  /* Cards → statistics block */
+  .smv-stats {
+    margin-top: 24px !important;
+  }
+
+  /* Give the SMV section a little space after its final stats block */
+  .smv-section {
+    padding-bottom: 24px !important;
+  }
+
+  /* Consistent spacing for the major sections that follow */
+  .platform-overview-section,
+  .platform-purpose-section,
+  .meet-neurolxp-section,
+  .why-choose-section,
+  .learning-modules-section,
+  .testimonials-section,
+  .faq-section {
+    margin-top: 24px !important;
+  }
+}
+
+/* Platform Overview — same spacing system */
+@media screen and (min-width: 1025px) {
+  .platform-overview-content {
+    gap: 0 !important;
+  }
+
+  /* Pill → Heading = 24px */
+  .platform-overview-tag {
+    margin: 0 0 24px !important;
+  }
+
+  /* Heading → Cards = 16px */
+  .platform-overview-heading {
+    margin: 0 0 16px !important;
+  }
+
+  .platform-hex-grid {
+    margin-top: 0 !important;
+  }
+}
+/* =========================================================
+   Meet NeuroLXP — exact desktop spacing
+   Pill → Heading: 24px
+   Heading → Subheading: 16px
+   ========================================================= */
+@media screen and (min-width: 1025px) {
+
+  .meet-neurolxp-text {
+    gap: 0 !important;
+  }
+
+  /* Pill → Heading = 24px */
+  .meet-neurolxp-badge {
+    margin: 0 0 24px !important;
+  }
+
+  /* Heading → Subheading = 16px */
+  .meet-neurolxp-heading {
+    margin: 0 0 16px !important;
+  }
+
+  .meet-neurolxp-subtext {
+    margin: 0 !important;
+  }
+}
+/* =========================================================
+   LEARNING MODULES — DESKTOP COMPACT SPACING
+   Pill → Heading     = 16px
+   Heading → Subtext  = 24px
+   Subtext → Cards    = 16px
+   Compact cards so section fits in one screen
+   ========================================================= */
+@media screen and (min-width: 1025px) {
+
+  .learning-modules-section {
+    padding: 12px 16px 10px !important;
+    gap: 0 !important;
+  }
+
+  .learning-modules-heading-block {
+    gap: 0 !important;
+  }
+
+  /* Pill → Heading = 16px */
+  .learning-modules-badge {
+    margin: 0 0 16px !important;
+    padding: 7px 24px !important;
+  }
+
+  /* Heading → Subheading = 24px */
+  .learning-modules-heading {
+    margin: 0 0 24px !important;
+  }
+
+  /* Subheading → Cards = 16px */
+  .learning-modules-subtext {
+    margin: 0 0 16px !important;
+  }
+
+  /* Reduce the overall carousel area */
+  .learning-modules-viewport {
+    height: 400px !important;
+  }
+
+  /* Normal side cards */
+  .learning-module-card {
+    height: 310px !important;
+    padding: 20px !important;
+    gap: 10px !important;
+  }
+
+  /* Center / featured card */
+  .learning-module-card-featured {
+    height: 390px !important;
+    padding: 18px 22px !important;
+    gap: 10px !important;
+  }
+
+  /* Reduce image slightly */
+  .learning-module-image-frame {
+    height: 140px !important;
+  }
+
+  .learning-module-card-featured .learning-module-image-frame {
+    height: 215px !important;
+  }
+
+  /* Remove extra empty space under description */
+  .learning-module-description-wrapper {
+    height: auto !important;
+    min-height: 0 !important;
+  }
+
+  .learning-module-card-featured
+    .learning-module-description-wrapper {
+    height: auto !important;
+    min-height: 0 !important;
+  }
+
+  .learning-module-text {
+    gap: 4px !important;
+  }
+
+  .learning-module-description {
+    line-height: 1.35 !important;
+  }
+
+  /* Bring navigation upward */
+  .learning-modules-nav {
+    margin-top: 6px !important;
+  }
+}
+/* =========================================================
+   LEARNING MODULES — REMOVE EXTRA CARD SPACE
+   Cards → Arrows = 16px
+   Desktop only
+   ========================================================= */
+@media screen and (min-width: 1025px) {
+
+  /* Reduce the carousel area height */
+  .learning-modules-viewport {
+    height: 365px !important;
+    align-items: flex-start !important;
+  }
+
+  /* Side cards */
+  .learning-module-card {
+    height: 285px !important;
+    min-height: 0 !important;
+    padding: 18px 20px 14px !important;
+    gap: 8px !important;
+  }
+
+  /* Center featured card */
+  .learning-module-card-featured {
+    height: 345px !important;
+    min-height: 0 !important;
+    padding: 18px 22px 14px !important;
+    gap: 8px !important;
+  }
+
+  /* Reduce image height a little */
+  .learning-module-image-frame {
+    height: 135px !important;
+  }
+
+  .learning-module-card-featured .learning-module-image-frame {
+    height: 205px !important;
+  }
+
+  /* Remove reserved empty description space */
+  .learning-module-description-wrapper,
+  .learning-module-card-featured .learning-module-description-wrapper {
+    height: auto !important;
+    min-height: 0 !important;
+    overflow: visible !important;
+  }
+
+  .learning-module-text {
+    gap: 4px !important;
+  }
+
+  .learning-module-title {
+    margin: 0 !important;
+  }
+
+  .learning-module-description {
+    margin: 0 !important;
+    line-height: 1.35 !important;
+  }
+
+  /* Exactly 16px after cards */
+  .learning-modules-nav {
+    margin-top: 16px !important;
+  }
+
+  /* Prevent section from adding unnecessary bottom space */
+  .learning-modules-section {
+    padding-bottom: 12px !important;
+  }
+}
+/* Restore shadow ONLY for the middle / featured card */
+@media screen and (min-width: 1025px) {
+  .learning-module-card-featured {
+    box-shadow:
+      4px 4px 4px #c4c4c4,
+      -4px -4px 4px #ffffff !important;
+  }
+}
+/* Desktop — move ONLY the sticky FAQ block upward */
+@media screen and (min-width: 1025px) {
+  .faq-left {
+    top: 60px !important;
+  }
+}
+/* Get In Touch — push ONLY the tilted frame downward */
+@media screen and (min-width: 1025px) {
+  .get-in-touch-frame {
+    transform: translateY(35px) rotate(-16deg) !important;
+  }
+}
+/* =========================================================
+   WHY CHOOSE NEUROLXP
+   FIX LEFT BACKGROUND DESIGN SIZE + TEXT ALIGNMENT
+   Desktop only
+   ========================================================= */
+@media screen and (min-width: 1025px) {
+
+  /* Make ONLY the left background design smaller */
+  .why-choose-blob {
+    left: -70px !important;
+
+    width: 38% !important;
+    height: 280px !important;
+
+    top: 55% !important;
+
+    transform: translateY(-50%) !important;
+
+    border-radius: 0 220px 220px 0 !important;
+  }
+
+  /* Correct left text area */
+  .why-choose-text {
+    flex: 0 1 430px !important;
+    max-width: 430px !important;
+
+    padding-top: 90px !important;
+
+    gap: 24px !important;
+
+    align-items: flex-start !important;
+  }
+
+  /* Align heading properly inside the smaller shape */
+  .why-choose-heading {
+    width: 100% !important;
+
+    margin: 0 !important;
+
+    text-align: left !important;
+
+    font-size: 34px !important;
+    line-height: 1.2 !important;
+  }
+
+  .why-choose-subtext {
+    width: 360px !important;
+
+    margin: 0 !important;
+
+    text-align: left !important;
+
+    font-size: 20px !important;
+    line-height: 1.4 !important;
+  }
+}
+/* Move ONLY the left text down + toward left */
+@media screen and (min-width: 1025px) {
+  .why-choose-text {
+    transform: translate(-60px, 40px) !important;
+  }
+}
+/* Mobile only — hero headings in 2 lines */
+@media screen and (max-width: 768px) {
+  .hero-heading {
+    width: 100% !important;
+    max-width: 280px !important;
+    margin: 0 auto !important;
+
+    font-size: 18px !important;
+    line-height: 22px !important;
+
+    white-space: normal !important;
+    text-align: center !important;
+  }
+
+  /* Give the 2-line heading enough room */
+  .hero-caption-stage {
+    height: 78px !important;
+    min-height: 78px !important;
+  }
+
+  /* Keep dots below the 2-line heading */
+  .hero-dots {
+    bottom: 5px !important;
+    top: auto !important;
+  }
+}
+/* Mobile only — reduce ONLY heading → dots space */
+@media screen and (max-width: 768px) {
+
+  .hero-caption-stage {
+    height: 68px !important;
+    min-height: 68px !important;
+  }
+
+  .hero-dots {
+    bottom: 7px !important;
+  }
+}
+/* MOBILE ONLY — heading slightly down + tighter dots spacing */
+@media screen and (max-width: 768px) {
+
+  .hero-caption-stage {
+    height: 64px !important;
+    min-height: 64px !important;
+  }
+
+  /* Move only the slide heading slightly downward */
+  .hero-caption {
+    top: 8px !important;
+  }
+
+  /* Bring dots closer to heading */
+  .hero-dots {
+    top: auto !important;
+    bottom: 2px !important;
+    margin: 0 !important;
+  }
+}
+/* Mobile only — spacing between View More and About NeuroLXP */
+@media screen and (max-width: 768px) {
+  .smv-section {
+    margin-top: 24px !important;
+  }
+}
+/* Platform Overview — MOBILE ONLY
+   Reduce only video/image height */
+@media screen and (max-width: 768px) {
+
+  .platform-overview-media {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .platform-overview-media-frame {
+    width: 100% !important;
+    height: 280px !important;
+    min-height: 0 !important;
+  }
+
+  .platform-overview-video,
+  .platform-overview-image {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+  }
+}
+/* MOBILE ONLY — Reduce Why Choose section spacing */
+@media screen and (max-width: 768px) {
+
+  .why-choose-section {
+    padding-top: 20px !important;
+    padding-bottom: 20px !important;
+  }
+
+  .why-choose-content {
+    gap: 12px !important;
+  }
+
+  .why-choose-tag {
+    margin-bottom: 10px !important;
+  }
+
+  .why-choose-text {
+    gap: 12px !important;
+    margin-bottom: 12px !important;
+  }
+
+  .why-choose-title {
+    margin: 0 !important;
+  }
+
+  .why-choose-description {
+    margin: 0 !important;
+  }
+
+  .why-choose-cards {
+    margin-top: 10px !important;
+    gap: 22px !important;
+  }
+}
+/* =========================================================
+   LEARNING MODULES — MOBILE ONLY
+   Reduce card height
+   ========================================================= */
+@media screen and (max-width: 768px) {
+
+  .learning-module-card,
+  .learning-module-card-featured {
+    height: 300px !important;
+    min-height: 300px !important;
+    padding-bottom: 12px !important;
+  }
+
+  /* Remove unnecessary empty area below description */
+  .learning-module-description-wrapper {
+    min-height: 0 !important;
+    height: auto !important;
+  }
+
+  /* Keep text compact */
+  .learning-module-text {
+    gap: 5px !important;
+  }
+}
+/* MOBILE ONLY — 32px space between Get In Touch and Footer */
+/* @media screen and (max-width: 768px) {
+  .get-in-touch-section {
+    margin-bottom: 32px !important;
+  }
+} */
+/* =========================================================
+   GET IN TOUCH — MOBILE COLLAPSE / OVERLAP FIX ONLY
+   Desktop untouched
+   ========================================================= */
+@media screen and (max-width: 768px) {
+
+  .get-in-touch-text {
+    transform: none !important;
+    width: 100% !important;
+    max-width: 320px !important;
+    flex: none !important;
+
+    align-items: center !important;
+    text-align: center !important;
+
+    gap: 16px !important;
+    margin: 0 auto !important;
+  }
+
+  /* Prevent duplicate text */
+  .get-in-touch-subtext::before {
+    content: none !important;
+    display: none !important;
+  }
+
+  .get-in-touch-subtext {
+    width: 100% !important;
+    max-width: 300px !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    text-align: center !important;
+    white-space: normal !important;
+
+    font-size: 16px !important;
+    line-height: 1.4 !important;
+  }
+
+  .get-in-touch-heading {
+    margin: 0 !important;
+    text-align: center !important;
+  }
+
+  .get-in-touch-button {
+    margin-top: 0 !important;
+  }
+
+  /* Keep section correctly in normal mobile flow */
+  .get-in-touch-content {
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+    gap: 24px !important;
+  }
+
+  /* Requested space before footer */
+  .get-in-touch-section {
+    padding-bottom: 32px !important;
+  }
+}
+/* MOBILE ONLY — fix actual gap before Testimonials */
+@media screen and (max-width: 768px) {
+
+  .learning-modules-viewport {
+    height: 320px !important;
+    min-height: 0 !important;
+  }
+
+  .learning-modules-nav {
+    margin-top: 8px !important;
+    margin-bottom: 0 !important;
+  }
+
+  .learning-modules-section {
+    padding-bottom: 8px !important;
+    margin-bottom: 0 !important;
+  }
+
+  .testimonials-section {
+    padding-top: 8px !important;
+    margin-top: 0 !important;
+  }
+}
+/* MOBILE ONLY — reduce gap above testimonial cards */
+@media screen and (max-width: 768px) {
+
+  .testimonials-section {
+    gap: 0 !important;
+  }
+
+  .testimonials-header {
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+  }
+
+  .testimonials-viewport {
+    margin-top: -20px !important;
+  }
+}
+/* =========================================================
+   LEARNING MODULES — FIX SHADOW ON WHICHEVER CARD IS CENTER
+   ========================================================= */
+@media screen and (min-width: 769px) {
+
+  .learning-module-card-featured {
+    position: relative !important;
+    z-index: 10 !important;
+
+    box-shadow:
+      4px 4px 8px rgba(196, 196, 196, 0.95),
+      -4px -4px 8px rgba(255, 255, 255, 0.95) !important;
+  }
+
+  /* Give the shadow a little breathing room */
+  .learning-modules-track {
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+  }
+}

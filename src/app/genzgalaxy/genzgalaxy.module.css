@@ -9,7 +9,7 @@
   text-align: left;
   font-size: 48px;
   color: #31344b;
-  font-family: "Segoe UI",;
+  font-family: "Segoe UI", Arial, sans-serif;
   zoom: 0.89;
 }
 
@@ -7732,3 +7732,393 @@ body {
     transform: scale(0.70) !important;
   }
 }
+/* =========================================================
+   GENZGALAXY — ALL POLYGON CARD TEXT IN 2 LINES
+   Desktop only
+   ========================================================= */
+@media screen and (min-width: 1025px) {
+
+  .gamifiedElements,
+  .interactiveContent,
+  .shortFocusedLessons,
+  .groupBasedLearning,
+  .mobileFriendlyDesign,
+  .challengesRewards {
+    width: 190px !important;
+    max-width: 190px !important;
+
+    height: 52px !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+
+    text-align: center !important;
+    white-space: normal !important;
+
+    font-size: 20px !important;
+    line-height: 24px !important;
+  }
+}
+/* =========================================================
+   FINAL — ONLY "Peer Discussion" → 2 lines
+   Desktop only
+   ========================================================= */
+@media screen and (min-width: 1025px) {
+
+  /* Last card in the LAST row only */
+  .frameParent9 .frameParent10:last-of-type .polygonParent:last-child
+  :is(div, p, span) {
+    width: 95px !important;
+    max-width: 95px !important;
+
+    height: auto !important;
+    min-height: 0 !important;
+
+    white-space: normal !important;
+    word-break: normal !important;
+    overflow-wrap: normal !important;
+
+    text-align: center !important;
+    line-height: 22px !important;
+  }
+}
+/* =========================================================
+   GenZGalaxy — DESKTOP ONLY
+   Reduce ONLY spacing between the 2 card rows
+   ========================================================= */
+@media screen and (min-width: 1025px) {
+  .frameParent10 {
+    row-gap: 4px !important;
+  }
+}
+
+/* =========================================================
+   FINAL MOBILE ONLY — RESTORE FEATURE BUTTON NEUMORPHIC DESIGN
+   Skill Path / Useful Resources / Practice Tasks /
+   Career Focused Modules
+   Desktop and tablet are untouched.
+   ========================================================= */
+@media screen and (max-width: 767px) {
+
+  /* Each feature row keeps the original two-layer look:
+     recessed base behind + raised pill in front. */
+  .frameParent15 .frameParent16 {
+    position: relative !important;
+    width: 100% !important;
+    height: 74px !important;
+    min-height: 74px !important;
+    overflow: visible !important;
+    display: block !important;
+  }
+
+  /* Recreate the original inset/recessed back plate on EVERY row.
+     The old mobile CSS hides .frameChild20/.frameChild21, which is
+     why the desktop design disappears on phones. */
+  .frameParent15 .frameParent16::before {
+    content: "" !important;
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 82% !important;
+    height: 74px !important;
+    border-radius: 100px !important;
+    background-color: #dfe6e9 !important;
+    box-shadow:
+      -8px -8px 16px #fff inset,
+       8px  8px 16px #c4c4c4 inset !important;
+    z-index: 0 !important;
+    pointer-events: none !important;
+  }
+
+  /* Keep the original raised front pill/shadow design. */
+  .frameParent15 .skillPathWrapper,
+  .frameParent15 .usefulResourcesWrapper,
+  .frameParent15 .practiceTasksWrapper,
+  .frameParent15 .careerFocusedModulesWrapper {
+    position: absolute !important;
+    top: 9px !important;
+    left: 22px !important;
+
+    width: calc(100% - 22px) !important;
+    max-width: none !important;
+    height: 56px !important;
+    min-height: 56px !important;
+
+    margin: 0 !important;
+    padding: 0 20px !important;
+
+    border: 2px solid transparent !important;
+    border-radius: 100px !important;
+    background-color: #dfe6e9 !important;
+
+    box-shadow:
+      -8px -8px 16px rgba(255, 255, 255, 0.6),
+       8px  8px 16px #c6c6c9 !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+
+    overflow: hidden !important;
+    isolation: isolate !important;
+    box-sizing: border-box !important;
+
+    transform: none !important;
+    z-index: 1 !important;
+  }
+
+  /* Preserve original label alignment and colors. */
+  .frameParent15 .skillPath,
+  .frameParent15 .usefulResources,
+  .frameParent15 .practiceTasks,
+  .frameParent15 .careerFocusedModules {
+    position: relative !important;
+    top: auto !important;
+    left: auto !important;
+
+    width: auto !important;
+    height: auto !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    display: block !important;
+    line-height: 1.25 !important;
+    text-align: left !important;
+    white-space: normal !important;
+
+    z-index: 2 !important;
+  }
+
+  /* Keep the original per-item interaction colors. */
+  .frameParent15 .skillPathWrapper:hover,
+  .frameParent15 .skillPathWrapper:focus-visible {
+    border-color: #2d4cc8 !important;
+  }
+
+  .frameParent15 .usefulResourcesWrapper:hover,
+  .frameParent15 .usefulResourcesWrapper:focus-visible {
+    border-color: #67096e !important;
+  }
+
+  .frameParent15 .practiceTasksWrapper:hover,
+  .frameParent15 .practiceTasksWrapper:focus-visible {
+    border-color: #590b31 !important;
+  }
+
+  .frameParent15 .careerFocusedModulesWrapper:hover,
+  .frameParent15 .careerFocusedModulesWrapper:focus-visible {
+    border-color: #141b34 !important;
+  }
+}
+
+/* Narrow phones — keep the same design, only tighten the geometry. */
+@media screen and (max-width: 420px) {
+  .frameParent15 .frameParent16 {
+    height: 70px !important;
+    min-height: 70px !important;
+  }
+
+  .frameParent15 .frameParent16::before {
+    height: 70px !important;
+    width: 82% !important;
+  }
+
+  .frameParent15 .skillPathWrapper,
+  .frameParent15 .usefulResourcesWrapper,
+  .frameParent15 .practiceTasksWrapper,
+  .frameParent15 .careerFocusedModulesWrapper {
+    top: 8px !important;
+    left: 18px !important;
+    width: calc(100% - 18px) !important;
+    height: 54px !important;
+    min-height: 54px !important;
+    padding: 0 18px !important;
+  }
+}
+
+/* =========================================================
+   MOBILE ONLY — REDUCE GAP BEFORE "LEARNING TOGETHER"
+   Only vertical spacing is changed. No design changes.
+   ========================================================= */
+@media screen and (max-width: 767px) {
+  .genzgalaxyInner2 {
+    padding-bottom: 0 !important;
+  }
+
+  .frameParent29 {
+    margin-top: -55px !important;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .frameParent29 {
+    margin-top: -65px !important;
+  }
+}
+
+/* =========================================================
+   DESKTOP ONLY — REDUCE SPACE ABOVE PENTAGON CARDS
+   Spacing-only correction. No design properties are changed.
+   ========================================================= */
+@media screen and (min-width: 1025px) {
+  .frameParent9 {
+    margin-top: -20px !important;
+  }
+}
+
+/* =========================================================
+   DESKTOP ONLY — FINAL PENTAGON EMPTY-SPACE CORRECTION
+   Only the vertical card/image height is tightened.
+   Width, colors, shadows, text sizes, wrapping and layout stay unchanged.
+   ========================================================= */
+@media screen and (min-width: 1025px) {
+
+  .frameParent9 .polygonParent {
+    height: 215px !important;
+    min-height: 215px !important;
+    max-height: 215px !important;
+  }
+
+  .frameParent9 .polygonIcon {
+    height: 215px !important;
+  }
+
+  /* Re-center the existing text inside the slightly shorter card.
+     No typography or wrapping is changed. */
+  .frameParent9 .polygonParent > :not(img):not(svg) {
+    top: 50% !important;
+  }
+
+  .gamifiedElements,
+  .interactiveContent,
+  .shortFocusedLessons,
+  .groupBasedLearning,
+  .mobileFriendlyDesign,
+  .challengesRewards {
+    top: 50% !important;
+    transform: translate(-50%, -50%) !important;
+  }
+
+  /* Preserve the existing 2-line Peer Discussion correction. */
+  .frameParent9 .frameParent10:last-of-type
+  .polygonParent:last-child > :not(img):not(svg) {
+    top: 50% !important;
+  }
+}
+
+/* =========================================================
+   DESKTOP ONLY — ALIGN MAN IMAGE TO BOTTOM OF ITS FRAME
+   Position only. No size/design/section changes.
+   ========================================================= */
+@media screen and (min-width: 1025px) {
+  .image20Parent .successfulYoungBusinessmanSIcon {
+    top: auto !important;
+    bottom: 0 !important;
+  }
+}
+
+/* =========================================================
+   FINAL RENDER-STABILITY LOCK
+   Purpose: keep the approved page geometry unchanged after
+   Next.js/browser render. This does NOT redesign any section.
+   ========================================================= */
+
+/* Make width/height calculations deterministic. */
+.genzgalaxy,
+.genzgalaxy *,
+.genzgalaxy *::before,
+.genzgalaxy *::after {
+  box-sizing: border-box;
+}
+
+/* Prevent browser text autosizing from changing line breaks/positions. */
+.genzgalaxy {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+/* DESKTOP — preserve the approved 1440px design canvas exactly.
+   No automatic zoom/scaling is allowed to change the geometry. */
+@media screen and (min-width: 1025px) {
+  .genzgalaxy {
+    width: 1440px !important;
+    min-width: 1440px !important;
+    max-width: 1440px !important;
+
+    margin-left: auto !important;
+    margin-right: auto !important;
+
+    zoom: 1 !important;
+    transform: none !important;
+    transform-origin: top center !important;
+
+    overflow-x: hidden !important;
+  }
+}
+
+/* TABLET — lock the already-approved tablet canvas rules after render.
+   This does not affect desktop or mobile. */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .genzgalaxy {
+    transform-origin: top left !important;
+    -webkit-text-size-adjust: 100% !important;
+    text-size-adjust: 100% !important;
+  }
+}
+
+/* MOBILE — keep the existing responsive mobile design at its rendered size.
+   Prevent any inherited desktop/tablet zoom from changing it after render. */
+@media screen and (max-width: 767px) {
+  .genzgalaxy {
+    zoom: 1 !important;
+    transform: none !important;
+    -webkit-text-size-adjust: 100% !important;
+    text-size-adjust: 100% !important;
+  }
+}
+
+/* =========================================================
+   FINAL DESKTOP PAGE-FLOW LOCK
+   Fixes:
+   1) extra blank scrolling after the last GenZGalaxy section
+   2) last section / footer overlap after render
+
+   The approved design itself is NOT changed.
+   The last desktop section is at 4283px and is 500px high,
+   so the exact content bottom is 4783px.
+   ========================================================= */
+@media screen and (min-width: 1025px) {
+
+  .genzgalaxy {
+    /* Last section ends at 4783px.
+       Reserve an additional fixed 40px breathing space
+       so the footer can never touch/overlap it after render. */
+    height: 4823px !important;
+    min-height: 4823px !important;
+
+    position: relative !important;
+    overflow-x: hidden !important;
+    overflow-y: hidden !important;
+  }
+
+  /* Keep the final CTA section at its approved position/size. */
+  .rectangleGroup {
+    top: 4283px !important;
+    height: 500px !important;
+  }
+
+  /* Footer starts after the main page's reserved gap.
+     No footer design is changed. */
+  .genzgalaxy + footer,
+  .genzgalaxy ~ footer {
+    margin-top: 0 !important;
+    position: relative !important;
+  }
+}
+
