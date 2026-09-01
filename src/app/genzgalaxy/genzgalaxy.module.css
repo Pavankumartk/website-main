@@ -3788,6 +3788,11 @@
     overflow-y: visible;
   }
 
+  /* Raise the background so its lower design stays hidden by the middle portrait. */
+  .genzgalaxy .genzHeroFrame {
+    top: -124px;
+  }
+
   /* Only the six outer section positions change. Their artwork stays intact. */
   .genzgalaxy > :is(.frameContainer, .frameParent6, .image20Parent,
   .genzgalaxyInner2, .frameParent29, .rectangleGroup) {
@@ -3812,8 +3817,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* Lower the buttons while retaining the current photo positions. */
-    gap: 104px;
+    /* Balanced spacing: moves the buttons and following portraits upward. */
+    gap: 56px;
     height: auto;
   }
   .genzgalaxy .frameContainer .frameParent5 {

@@ -1092,7 +1092,8 @@ a:focus-visible {
   transform: translateY(-50%);
   border-radius: 0 260px 260px 0;
   left: calc(50% - 908px);
-  width: 710px;
+  /* Shorter desktop shape removes the unused space after the text. */
+  width: 650px;
 }
 
 .why-choose-content {
@@ -1137,12 +1138,13 @@ a:focus-visible {
   flex-direction: column;
   justify-content: center;
   padding: 0;
-  flex: 0 1 430px;
-  max-width: 430px;
+  flex: 0 1 400px;
+  max-width: 400px;
   padding-top: 90px;
-  gap: 24px;
+  gap: 20px;
   align-items: flex-start;
-  transform: translate(-28px, 40px);
+  /* Pull the complete text design closer to the left page border. */
+  transform: translate(-78px, 40px);
   min-width: 0;
 }
 
@@ -2592,9 +2594,9 @@ a:focus-visible {
 /* =====================================================================
    Responsive layout
    1280px and above: the centred desktop design defined above.
-   1024–1279px: compact laptops and landscape tablets.
-   768–1023px: tablets; large two-column sections stack.
-   600–767px: wide phones and small tablets.
+   1024â€“1279px: compact laptops and landscape tablets.
+   768â€“1023px: tablets; large two-column sections stack.
+   600â€“767px: wide phones and small tablets.
    Below 600px: narrow phones; content determines card height.
    Rules accumulate from wide to narrow, including fractional widths.
    No device model, screen height, page zoom or fixed carousel offset.
