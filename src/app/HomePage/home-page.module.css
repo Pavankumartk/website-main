@@ -210,6 +210,11 @@ a:focus-visible {
   overflow-wrap: break-word;
 }
 
+/* Keep “Learn Beyond Limits” on one line in the desktop view. */
+.hero-mobile-break {
+  display: none;
+}
+
 .hero-dots {
   display: flex;
   align-items: center;
@@ -2868,11 +2873,42 @@ a:focus-visible {
     max-width: 32rem;
     margin-inline: auto;
     padding-inline: 8px;
-    font-size: 20px;
+    font-size: clamp(17px, 5.6vw, 20px);
     line-height: 1.25;
+    max-height: 2.5em;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    overflow: hidden;
   }
-  .hero-caption-stage { min-height: 88px; padding-top: 8px; gap: 16px; }
-  .hero-dots { gap: clamp(2px, 1vw, 7px); min-height: 24px; }
+  /* Compact mobile rhythm: 16px around the caption and pagination. */
+  .hero-caption-stage {
+    min-height: 0;
+    padding: 16px 0;
+    gap: 16px;
+  }
+  .hero-caption {
+    top: 0;
+    height: 50px;
+    overflow: hidden;
+  }
+  .hero-dots {
+    top: 0;
+    margin: 0;
+    gap: clamp(2px, 1vw, 7px);
+    min-height: 24px;
+  }
+  /* Break only “Learn Beyond Limits” into two lines on mobile. */
+  .hero-mobile-break {
+    display: block;
+  }
+  /* Slide 4 fallback: force “Learn Beyond” / “Limits” even when the
+     component's mobile-only <br> has not yet reached the running build. */
+  .hero-caption:nth-child(4) .hero-heading {
+    width: 150px;
+    max-width: 100%;
+  }
   .hero-dot { width: 24px; height: 24px; min-width: 24px; }
   .hero-dot::after { width: 8px; height: 8px; }
   .hero-dot-active { width: 32px; }
