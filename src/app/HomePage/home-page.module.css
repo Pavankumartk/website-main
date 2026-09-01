@@ -2909,6 +2909,12 @@ a:focus-visible {
     width: 150px;
     max-width: 100%;
   }
+  /* Slides 1 and 3 also use the same two-line mobile caption treatment. */
+  .hero-caption:nth-child(1) .hero-heading,
+  .hero-caption:nth-child(3) .hero-heading {
+    width: 190px;
+    max-width: 100%;
+  }
   .hero-dot { width: 24px; height: 24px; min-width: 24px; }
   .hero-dot::after { width: 8px; height: 8px; }
   .hero-dot-active { width: 32px; }
