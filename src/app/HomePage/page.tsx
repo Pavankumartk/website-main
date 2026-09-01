@@ -630,10 +630,10 @@ function WhyChooseAnalyticsIcon({ className }: { className?: string }) {
 }
 
 const whyChooseCards: WhyChooseCardData[] = [
-  { id: 1, title: "Get Discovered", description: "Launch Your White Label LMS", dashColor: "#E1E4C3", iconBg: "#E1E4C3", Icon: WhyChooseDiscoverIcon },
-  { id: 2, title: "Deliver Excellence", description: "Innovative Learning for Growth", dashColor: "#BCC6EB", iconBg: "#BCC6EB", Icon: WhyChooseExcellenceIcon },
-  { id: 3, title: "Engage Learners", description: "Smart Learning Notifications", dashColor: "#BEDEDC", iconBg: "#BEDEDC", Icon: WhyChooseEngageIcon },
-  { id: 4, title: "Smart Analytics", description: "Smarter Analytics. Greater Success", dashColor: "#C6B7C7", iconBg: "#C6B7C7", Icon: WhyChooseAnalyticsIcon },
+  { id: 1, title: "Get Discovered", description: "Launch Your White Label\nLMS", dashColor: "#E1E4C3", iconBg: "#E1E4C3", Icon: WhyChooseDiscoverIcon },
+  { id: 2, title: "Deliver Excellence", description: "Innovative Learning for\nGrowth", dashColor: "#BCC6EB", iconBg: "#BCC6EB", Icon: WhyChooseExcellenceIcon },
+  { id: 3, title: "Engage Learners", description: "Smart Learning\nNotifications", dashColor: "#BEDEDC", iconBg: "#BEDEDC", Icon: WhyChooseEngageIcon },
+  { id: 4, title: "Smart Analytics", description: "Smarter Analytics. Greater\nSuccess", dashColor: "#C6B7C7", iconBg: "#C6B7C7", Icon: WhyChooseAnalyticsIcon },
 ];
 
 function WhyChooseCard({ title, description, dashColor, iconBg, Icon }: WhyChooseCardData) {
