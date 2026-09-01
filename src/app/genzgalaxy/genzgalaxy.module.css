@@ -8024,101 +8024,148 @@ body {
 }
 
 /* =========================================================
-   FINAL RENDER-STABILITY LOCK
-   Purpose: keep the approved page geometry unchanged after
-   Next.js/browser render. This does NOT redesign any section.
+   FINAL DESKTOP RENDER-STABILITY FIX — WHY GENZGALAXY CARDS
+   Prevents the polygon section text/layout changing after render.
    ========================================================= */
-
-/* Make width/height calculations deterministic. */
-.genzgalaxy,
-.genzgalaxy *,
-.genzgalaxy *::before,
-.genzgalaxy *::after {
-  box-sizing: border-box;
-}
-
-/* Prevent browser text autosizing from changing line breaks/positions. */
-.genzgalaxy {
-  -webkit-text-size-adjust: 100%;
-  text-size-adjust: 100%;
-}
-
-/* DESKTOP — preserve the approved 1440px design canvas exactly.
-   No automatic zoom/scaling is allowed to change the geometry. */
 @media screen and (min-width: 1025px) {
-  .genzgalaxy {
-    width: 1440px !important;
-    min-width: 1440px !important;
-    max-width: 1440px !important;
 
+  .genzgalaxy,
+  .frameParent6,
+  .frameParent7,
+  .frameParent8,
+  .frameParent9,
+  .frameParent10,
+  .polygonParent,
+  .gamifiedElements,
+  .interactiveContent,
+  .shortFocusedLessons,
+  .groupBasedLearning,
+  .mobileFriendlyDesign,
+  .challengesRewards {
+    font-family: "Segoe UI", Arial, sans-serif !important;
+  }
+
+  .frameParent9 {
+    width: 100% !important;
+    max-width: 1280px !important;
     margin-left: auto !important;
     margin-right: auto !important;
-
-    zoom: 1 !important;
-    transform: none !important;
-    transform-origin: top center !important;
-
-    overflow-x: hidden !important;
   }
-}
 
-/* TABLET — lock the already-approved tablet canvas rules after render.
-   This does not affect desktop or mobile. */
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-  .genzgalaxy {
-    transform-origin: top left !important;
-    -webkit-text-size-adjust: 100% !important;
-    text-size-adjust: 100% !important;
+  .frameParent10 {
+    width: 100% !important;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 24px !important;
+    flex-wrap: nowrap !important;
   }
-}
 
-/* MOBILE — keep the existing responsive mobile design at its rendered size.
-   Prevent any inherited desktop/tablet zoom from changing it after render. */
-@media screen and (max-width: 767px) {
-  .genzgalaxy {
-    zoom: 1 !important;
+  .polygonParent {
+    width: 260px !important;
+    height: 215px !important;
+    min-width: 260px !important;
+    min-height: 215px !important;
+    max-width: 260px !important;
+    max-height: 215px !important;
+    flex: 0 0 260px !important;
+    position: relative !important;
     transform: none !important;
-    -webkit-text-size-adjust: 100% !important;
-    text-size-adjust: 100% !important;
+    zoom: 1 !important;
+  }
+
+  .polygonIcon {
+    width: 260px !important;
+    height: 215px !important;
+  }
+
+  .gamifiedElements,
+  .interactiveContent,
+  .shortFocusedLessons,
+  .groupBasedLearning,
+  .mobileFriendlyDesign,
+  .challengesRewards {
+    position: absolute !important;
+    top: 50% !important;
+    left: 50% !important;
+
+    width: 170px !important;
+    max-width: 170px !important;
+    height: auto !important;
+    min-height: 48px !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    transform: translate(-50%, -50%) !important;
+
+    font-size: 20px !important;
+    line-height: 24px !important;
+    font-weight: 600 !important;
+
+    text-align: center !important;
+    white-space: normal !important;
+    word-break: normal !important;
+    overflow-wrap: normal !important;
+
+    box-sizing: border-box !important;
+  }
+
+  /* Make Group-Based Learning stay in exactly 2 lines. */
+  .groupBasedLearning {
+    width: 160px !important;
+    max-width: 160px !important;
+  }
+
+  /* Keep the final Peer Discussion card in exactly 2 lines. */
+  .frameParent9 .frameParent10:last-of-type .polygonParent:last-child
+  :is(div, p, span) {
+    width: 110px !important;
+    max-width: 110px !important;
+    height: auto !important;
+    min-height: 48px !important;
+
+    font-family: "Segoe UI", Arial, sans-serif !important;
+    font-size: 20px !important;
+    line-height: 24px !important;
+    font-weight: 600 !important;
+
+    white-space: normal !important;
+    word-break: normal !important;
+    overflow-wrap: normal !important;
+    text-align: center !important;
   }
 }
 
 /* =========================================================
-   FINAL DESKTOP PAGE-FLOW LOCK
-   Fixes:
-   1) extra blank scrolling after the last GenZGalaxy section
-   2) last section / footer overlap after render
-
-   The approved design itself is NOT changed.
-   The last desktop section is at 4283px and is 500px high,
-   so the exact content bottom is 4783px.
+   DESKTOP ONLY — REDUCE GAP BEFORE "WHAT MAKES US DIFFERENT"
+   Moves this section up 20px.
+   Every following section is moved up by the same 20px,
+   so the spacing between the later sections stays unchanged.
    ========================================================= */
 @media screen and (min-width: 1025px) {
+  .image20Parent {
+    top: 1996px !important;
+  }
+
+  .genzgalaxyInner2 {
+    top: 2818px !important;
+  }
+
+  .frameParent29 {
+    top: 3543px !important;
+  }
+
+  .rectangleGroup {
+    top: 4263px !important;
+  }
 
   .genzgalaxy {
-    /* Last section ends at 4783px.
-       Reserve an additional fixed 40px breathing space
-       so the footer can never touch/overlap it after render. */
-    height: 4823px !important;
-    min-height: 4823px !important;
-
-    position: relative !important;
-    overflow-x: hidden !important;
-    overflow-y: hidden !important;
-  }
-
-  /* Keep the final CTA section at its approved position/size. */
-  .rectangleGroup {
-    top: 4283px !important;
-    height: 500px !important;
-  }
-
-  /* Footer starts after the main page's reserved gap.
-     No footer design is changed. */
-  .genzgalaxy + footer,
-  .genzgalaxy ~ footer {
-    margin-top: 0 !important;
-    position: relative !important;
+    min-height: 4795px !important;
+    height: 4795px !important;
   }
 }
 

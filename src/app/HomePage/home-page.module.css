@@ -8237,4 +8237,902 @@ a:focus-visible {
     padding-top: 10px !important;
     padding-bottom: 10px !important;
   }
+}@media screen and (max-width: 767px) {
+
+  /* Keep "Learn Beyond Limits" in exactly 2 lines */
+  .hero-heading {
+    width: 100% !important;
+    max-width: 280px !important;
+    margin: 0 auto !important;
+    padding: 0 8px !important;
+
+    font-size: 20px !important;
+    line-height: 22px !important;
+
+    white-space: normal !important;
+    text-align: center !important;
+  }
+
+  /* Enough room for the 2-line heading */
+  .hero-caption-stage {
+    height: 82px !important;
+    min-height: 82px !important;
+    max-height: 82px !important;
+  }
+
+  .hero-caption {
+    top: 4px !important;
+  }
+
+  /* Dots directly below the 2-line heading */
+  .hero-dots {
+    top: 52px !important;
+    margin: 0 !important;
+  }
+
+  /* EXACTLY 16px after dots before next section */
+  .hero-frame {
+    margin-bottom: 16px !important;
+  }
+}
+@media screen and (max-width: 767px) {
+
+  .hero-caption-stage {
+    position: relative !important;
+    height: 88px !important;
+    min-height: 88px !important;
+    max-height: 88px !important;
+  }
+
+  .hero-caption {
+    top: 8px !important;
+  }
+
+  .hero-heading {
+    margin: 0 !important;
+    padding: 0 12px !important;
+
+    font-size: 20px !important;
+    line-height: 22px !important;
+
+    text-align: center !important;
+  }
+
+  /* Move dotted line upward */
+  .hero-dots {
+    position: absolute !important;
+
+    top: 58px !important;
+    bottom: auto !important;
+
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    height: 14px !important;
+    gap: 7px !important;
+  }
+}
+@media screen and (max-width: 767px) {
+
+  .smv-section {
+    width: 100% !important;
+    max-width: 100% !important;
+
+    margin: 0 auto !important;
+
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+
+    box-sizing: border-box !important;
+
+    /* Do not clip the cards vertically */
+    overflow-x: hidden !important;
+    overflow-y: visible !important;
+  }
+
+  .smv-cards {
+    width: 100% !important;
+    max-width: 100% !important;
+
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+
+    gap: 38px !important;
+
+    margin: 0 auto !important;
+
+    overflow: visible !important;
+  }
+
+  .smv-card {
+    position: relative !important;
+
+    width: 100% !important;
+    max-width: 100% !important;
+
+    /* IMPORTANT — let card grow with text + image */
+    height: auto !important;
+    min-height: 0 !important;
+    max-height: none !important;
+
+    flex: none !important;
+
+    padding: 84px 16px 20px !important;
+
+    margin: 0 auto !important;
+
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+
+    gap: 10px !important;
+
+    box-sizing: border-box !important;
+
+    /* Do not hide title/description/image */
+    overflow: visible !important;
+  }
+
+  .smv-card-icon-ring {
+    position: absolute !important;
+
+    top: -26px !important;
+    left: 50% !important;
+
+    transform: translateX(-50%) !important;
+  }
+
+  .smv-card-underline {
+    flex-shrink: 0 !important;
+    margin: 0 auto !important;
+  }
+
+  .smv-card-title {
+    position: relative !important;
+
+    width: 100% !important;
+    max-width: 100% !important;
+
+    height: auto !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    font-size: 26px !important;
+    line-height: 32px !important;
+
+    text-align: center !important;
+    white-space: normal !important;
+
+    overflow: visible !important;
+  }
+
+  .smv-card-description {
+    position: relative !important;
+
+    width: 100% !important;
+    max-width: 255px !important;
+
+    height: auto !important;
+    max-height: none !important;
+
+    margin: 0 auto !important;
+    padding: 0 !important;
+
+    font-size: 16px !important;
+    line-height: 24px !important;
+
+    text-align: center !important;
+
+    white-space: normal !important;
+    overflow: visible !important;
+
+    overflow-wrap: break-word !important;
+    word-break: normal !important;
+  }
+
+  .smv-card-image-frame {
+    position: relative !important;
+
+    width: 100% !important;
+    max-width: 255px !important;
+
+    height: 160px !important;
+    min-height: 160px !important;
+
+    margin: 6px auto 0 !important;
+
+    flex-shrink: 0 !important;
+
+    overflow: hidden !important;
+
+    box-sizing: border-box !important;
+  }
+
+  .smv-card-image {
+    width: 100% !important;
+    height: 100% !important;
+
+    object-fit: cover !important;
+  }
+}
+
+/* =========================================================
+   FINAL MOBILE FIX — PLATFORM OVERVIEW CENTER ONLY
+   Keeps all other sections/design unchanged.
+   ========================================================= */
+@media screen and (max-width: 767px) {
+
+  .platform-overview-section {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 auto !important;
+    padding: 24px 16px !important;
+    box-sizing: border-box !important;
+    overflow-x: hidden !important;
+    display: flex !important;
+    justify-content: center !important;
+  }
+
+  .platform-overview-inner {
+    width: 100% !important;
+    max-width: 288px !important;
+    margin: 0 auto !important;
+    padding: 0 !important;
+    box-sizing: border-box !important;
+
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+    gap: 24px !important;
+
+    position: relative !important;
+    left: auto !important;
+    right: auto !important;
+    transform: none !important;
+  }
+
+  /* Override the old mobile display: contents */
+  .platform-overview-content {
+    display: flex !important;
+    flex: none !important;
+
+    width: 100% !important;
+    min-width: 0 !important;
+    max-width: 288px !important;
+
+    margin: 0 auto !important;
+    padding: 0 !important;
+    box-sizing: border-box !important;
+
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+    gap: 20px !important;
+
+    position: relative !important;
+    left: auto !important;
+    right: auto !important;
+    transform: none !important;
+  }
+
+  .platform-overview-tag {
+    align-self: center !important;
+    margin: 0 auto !important;
+    max-width: 100% !important;
+
+    position: relative !important;
+    left: auto !important;
+    right: auto !important;
+    transform: none !important;
+  }
+
+  .platform-overview-heading {
+    width: 100% !important;
+    max-width: 280px !important;
+
+    margin: 0 auto !important;
+    padding: 0 !important;
+
+    text-align: center !important;
+    white-space: normal !important;
+    overflow-wrap: break-word !important;
+
+    font-size: 24px !important;
+    line-height: 40px !important;
+
+    position: relative !important;
+    left: auto !important;
+    right: auto !important;
+    transform: none !important;
+  }
+
+  .platform-overview-media {
+    order: initial !important;
+    width: 280px !important;
+    max-width: 100% !important;
+
+    margin: 0 auto !important;
+    padding: 0 !important;
+
+    flex: none !important;
+    align-self: center !important;
+
+    position: relative !important;
+    left: auto !important;
+    right: auto !important;
+    transform: none !important;
+
+    box-sizing: border-box !important;
+  }
+
+  .platform-overview-media-frame {
+    width: 280px !important;
+    max-width: 100% !important;
+    height: 280px !important;
+
+    margin: 0 auto !important;
+
+    position: relative !important;
+    left: auto !important;
+    right: auto !important;
+    transform: none !important;
+
+    box-sizing: border-box !important;
+  }
+
+  .platform-overview-image,
+  .platform-overview-video {
+    width: 100% !important;
+    height: 100% !important;
+    max-width: 100% !important;
+    object-fit: cover !important;
+  }
+
+  .platform-hex-grid {
+    width: 100% !important;
+    max-width: 288px !important;
+
+    margin: 0 auto !important;
+    padding: 0 !important;
+
+    display: grid !important;
+    grid-template-columns: 257px !important;
+    justify-content: center !important;
+    justify-items: center !important;
+    align-items: center !important;
+
+    column-gap: 0 !important;
+    row-gap: 24px !important;
+
+    align-self: center !important;
+
+    position: relative !important;
+    left: auto !important;
+    right: auto !important;
+    transform: none !important;
+
+    box-sizing: border-box !important;
+  }
+
+  .platform-hex-card {
+    width: 257px !important;
+    max-width: 257px !important;
+    height: 170px !important;
+
+    margin: 0 auto !important;
+
+    justify-self: center !important;
+    align-self: center !important;
+
+    position: relative !important;
+    left: auto !important;
+    right: auto !important;
+
+    /* cancel existing mobile zoom: 1.3 */
+    zoom: 1 !important;
+    transform: none !important;
+  }
+
+  .platform-hex-back,
+  .platform-hex-back-outline {
+    left: 0 !important;
+    right: auto !important;
+  }
+
+  .platform-hex-front,
+  .platform-hex-front-shape,
+  .platform-hex-front-text,
+  .platform-hex-front-outline {
+    left: 50% !important;
+    right: auto !important;
+    transform: translateX(-50%) !important;
+  }
+
+  .platform-hex-text {
+    max-width: 205px !important;
+    margin: 0 auto !important;
+    text-align: center !important;
+  }
+
+  .platform-hex-description {
+    white-space: normal !important;
+    overflow-wrap: break-word !important;
+    text-align: center !important;
+  }
+}
+
+/* =========================================================
+   FINAL MOBILE FIX — WHY CHOOSE NEUROLXP CENTER ONLY
+   Keeps desktop/tablet design and all other sections unchanged.
+   ========================================================= */
+@media screen and (max-width: 767px) {
+
+  .why-choose-section {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 auto !important;
+    padding: 24px 16px !important;
+    box-sizing: border-box !important;
+    overflow-x: hidden !important;
+    display: flex !important;
+    justify-content: center !important;
+  }
+
+  .why-choose-content {
+    width: 100% !important;
+    max-width: 288px !important;
+    margin: 0 auto !important;
+    padding: 0 !important;
+    box-sizing: border-box !important;
+
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 24px !important;
+
+    position: relative !important;
+    left: auto !important;
+    right: auto !important;
+    transform: none !important;
+  }
+
+  .why-choose-badge {
+    align-self: center !important;
+    margin: 0 auto !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+    text-align: center !important;
+
+    position: relative !important;
+    left: auto !important;
+    right: auto !important;
+    transform: none !important;
+  }
+
+  .why-choose-body {
+    width: 100% !important;
+    max-width: 288px !important;
+    margin: 0 auto !important;
+
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+
+    gap: 36px !important;
+    flex-wrap: nowrap !important;
+
+    box-sizing: border-box !important;
+  }
+
+  .why-choose-text {
+    width: 100% !important;
+    max-width: 280px !important;
+    flex: none !important;
+
+    margin: 0 auto !important;
+    padding: 0 !important;
+
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+
+    gap: 16px !important;
+    text-align: center !important;
+
+    position: relative !important;
+    left: auto !important;
+    right: auto !important;
+    transform: none !important;
+  }
+
+  .why-choose-heading {
+    width: 100% !important;
+    max-width: 280px !important;
+    margin: 0 auto !important;
+    text-align: center !important;
+    white-space: normal !important;
+  }
+
+  .why-choose-subtext {
+    width: 100% !important;
+    max-width: 270px !important;
+
+    margin: 0 auto !important;
+
+    font-size: 16px !important;
+    line-height: 24px !important;
+
+    text-align: center !important;
+    white-space: normal !important;
+    overflow-wrap: break-word !important;
+    box-sizing: border-box !important;
+  }
+
+  .why-choose-grid {
+    width: 100% !important;
+    max-width: 288px !important;
+    flex: none !important;
+
+    margin: 0 auto !important;
+    padding: 0 !important;
+
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+
+    justify-content: center !important;
+    justify-items: center !important;
+    align-items: center !important;
+
+    gap: 40px !important;
+
+    position: relative !important;
+    left: auto !important;
+    right: auto !important;
+    transform: none !important;
+
+    box-sizing: border-box !important;
+  }
+
+  .why-choose-card {
+    width: 100% !important;
+    max-width: 280px !important;
+
+    margin: 0 auto !important;
+
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+
+    position: relative !important;
+    left: auto !important;
+    right: auto !important;
+    transform: none !important;
+
+    box-sizing: border-box !important;
+  }
+
+  /* Existing mobile width 130% was causing both sides to clip */
+  .why-choose-oval {
+    width: 100% !important;
+    max-width: 280px !important;
+
+    min-height: 130px !important;
+
+    margin: 0 auto !important;
+    padding: 44px 20px 26px !important;
+
+    box-sizing: border-box !important;
+  }
+
+  .why-choose-icon-ring {
+    width: 64px !important;
+    height: 64px !important;
+
+    margin: 0 auto -30px !important;
+
+    flex-shrink: 0 !important;
+  }
+
+  .why-choose-icon-circle {
+    width: 48px !important;
+    height: 48px !important;
+  }
+
+  .why-choose-icon {
+    width: 28px !important;
+    height: 28px !important;
+  }
+
+  .why-choose-card-title {
+    width: 100% !important;
+    max-width: 240px !important;
+
+    margin: 0 auto !important;
+
+    font-size: 20px !important;
+    line-height: 26px !important;
+
+    text-align: center !important;
+    white-space: normal !important;
+  }
+
+  .why-choose-card-description {
+    width: 100% !important;
+    max-width: 240px !important;
+
+    margin: 0 auto !important;
+
+    font-size: 14px !important;
+    line-height: 20px !important;
+
+    text-align: center !important;
+    white-space: normal !important;
+    overflow-wrap: break-word !important;
+  }
+
+  .why-choose-blob {
+    display: none !important;
+  }
+}
+
+/* =========================================================
+   FINAL MOBILE FIX — FAQ SECTION CENTER ONLY
+   Keeps every other section/design unchanged.
+   ========================================================= */
+@media screen and (max-width: 767px) {
+
+  .faq-section {
+    width: 100% !important;
+    max-width: 100% !important;
+
+    margin: 0 auto !important;
+    padding: 16px !important;
+
+    display: flex !important;
+    justify-content: center !important;
+
+    box-sizing: border-box !important;
+    overflow-x: hidden !important;
+  }
+
+  .faq-card {
+    width: 100% !important;
+    max-width: 288px !important;
+
+    margin: 0 auto !important;
+    padding: 16px !important;
+
+    box-sizing: border-box !important;
+    overflow: hidden !important;
+  }
+
+  .faq-content {
+    width: 100% !important;
+    max-width: 256px !important;
+
+    margin: 0 auto !important;
+    padding: 0 !important;
+
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+
+    gap: 16px !important;
+
+    box-sizing: border-box !important;
+  }
+
+  .faq-left {
+    position: static !important;
+
+    width: 100% !important;
+    max-width: 256px !important;
+
+    flex: none !important;
+
+    margin: 0 auto !important;
+
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+
+    gap: 12px !important;
+
+    box-sizing: border-box !important;
+  }
+
+  .faq-heading {
+    width: 100% !important;
+    max-width: 256px !important;
+
+    margin: 0 auto !important;
+
+    text-align: center !important;
+    white-space: normal !important;
+  }
+
+  .faq-illustration {
+    width: 100% !important;
+    max-width: 256px !important;
+
+    margin: 0 auto !important;
+
+    box-sizing: border-box !important;
+  }
+
+  .faq-right {
+    width: 100% !important;
+    max-width: 256px !important;
+
+    flex: none !important;
+    min-width: 0 !important;
+
+    margin: 0 auto !important;
+
+    display: flex !important;
+    flex-direction: column !important;
+
+    gap: 18px !important;
+
+    box-sizing: border-box !important;
+  }
+
+  .faq-item {
+    width: 100% !important;
+    max-width: 256px !important;
+
+    margin: 0 auto !important;
+
+    box-sizing: border-box !important;
+  }
+
+  .faq-item-header {
+    width: 100% !important;
+    max-width: 256px !important;
+
+    margin: 0 auto !important;
+
+    padding: 14px 12px !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+
+    /* cancel old mobile wrapping */
+    flex-wrap: nowrap !important;
+    gap: 8px !important;
+
+    box-sizing: border-box !important;
+  }
+
+  .faq-item-header-left {
+    flex: 1 1 auto !important;
+    min-width: 0 !important;
+
+    display: flex !important;
+    align-items: center !important;
+
+    gap: 8px !important;
+
+    box-sizing: border-box !important;
+  }
+
+  .faq-item-triangle {
+    display: none !important;
+  }
+
+  .faq-item-number {
+    flex-shrink: 0 !important;
+    font-size: 24px !important;
+    line-height: 1 !important;
+  }
+
+  .faq-item-divider {
+    flex-shrink: 0 !important;
+
+    width: 4px !important;
+    height: 28px !important;
+  }
+
+  .faq-item-title {
+    width: auto !important;
+    max-width: 150px !important;
+    min-width: 0 !important;
+
+    flex: 1 1 auto !important;
+
+    margin: 0 !important;
+
+    font-size: 16px !important;
+    line-height: 21px !important;
+
+    white-space: normal !important;
+    overflow-wrap: break-word !important;
+    word-break: normal !important;
+
+    text-align: left !important;
+  }
+
+  .faq-item-toggle {
+    width: 46px !important;
+    height: 46px !important;
+
+    flex: 0 0 46px !important;
+
+    margin: 0 !important;
+  }
+
+  .faq-item-toggle-icon {
+    width: 20px !important;
+    height: 20px !important;
+  }
+
+  .faq-item-answer-wrapper,
+  .faq-item-answer-inner,
+  .faq-item-answer {
+    width: 100% !important;
+    max-width: 256px !important;
+
+    box-sizing: border-box !important;
+  }
+
+  .faq-item-answer {
+    padding: 18px 16px !important;
+
+    font-size: 16px !important;
+    line-height: 24px !important;
+
+    white-space: normal !important;
+    overflow-wrap: break-word !important;
+  }
+}
+
+/* =========================================================
+   MOBILE HERO — MOVE DOTS 4PX DOWN ONLY
+   ========================================================= */
+@media screen and (max-width: 767px) {
+  .hero-dots {
+    top: 62px !important;
+  }
+}
+
+/* =========================================================
+   FINAL MOBILE ONLY — LAST GET IN TOUCH FRAME INTO FOOTER
+   Pull the final mobile frame slightly down/inside the footer.
+   Desktop/tablet and all other sections remain unchanged.
+   ========================================================= */
+@media screen and (max-width: 767px) {
+  .get-in-touch-section {
+    position: relative !important;
+    z-index: 2 !important;
+    padding-bottom: 0 !important;
+    margin-bottom: -16px !important;
+  }
+
+  .get-in-touch-content {
+    position: relative !important;
+    z-index: 2 !important;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .why-choose-blob {
+    left: -220px !important;
+
+    /* compensate for moving left,
+       so the curved right side stays where it is */
+    width: calc(42% + 105px) !important;
+
+    border-radius: 0 260px 260px 0 !important;
+  }
+
+  .why-choose-section {
+    overflow: hidden !important;
+  }
 }
