@@ -420,7 +420,8 @@ function StoryMissionVision() {
           About NeuroLXP<sup className={styles["smv-badge-tm"]}>TM</sup>
         </span>
         <h2 className={styles["smv-heading"]} id="smv-heading">
-          Our Story! Our Mission! Our Vision
+          <span className={styles["smv-heading-lead"]}>Our Story! Our Mission!</span>{" "}
+          <span className={styles["smv-heading-vision"]}>Our Vision</span>
         </h2>
         <p className={styles["smv-subtext"]}>
           At NeuroLXP<sup className={styles["smv-badge-tm"]}>TM</sup>, we&apos;re driven by purpose and a bold vision to transform learning, empowering learners and organizations to achieve more.
@@ -612,7 +613,7 @@ function MeetNeuroLXP() {
     <section className={styles["meet-neurolxp-section"]} aria-labelledby="meet-neurolxp-heading">
       <div className={styles["meet-neurolxp-frame"]}>
         <div className={styles["meet-neurolxp-overlay"]}>
-          <Image src="/images/friends-learning-with-laptop.webp" alt="Students collaborating on a laptop" fill sizes="(min-width: 1312px) 1216px, 100vw" className={styles["meet-neurolxp-image"]} />
+          <Image src="/images/image 21.png" alt="Students collaborating on a laptop" fill sizes="(min-width: 1312px) 1216px, 100vw" className={styles["meet-neurolxp-image"]} />
         </div>
         <div className={styles["meet-neurolxp-text"]}>
           <span className={styles["meet-neurolxp-badge"]}>
@@ -743,7 +744,7 @@ const learningModuleCards = [
   },
   {
     id: 2,
-    image: "/images/challange.jpeg",
+    image: "/images/elevated-view-businessman-businesswoman-stacking-each-other-s-hand-project 1.png",
     title: "Career Growth",
     description:
       "Build in-demand skills and grow your career with confidence.",
@@ -758,7 +759,7 @@ const learningModuleCards = [
   },
   {
     id: 4,
-    image: "/images/smiley-friends-having-videocall.webp",
+    image: "/images/group-businesswomen-working-office 1.png",
     title: "Immersive Learning",
     description:
       "Interactive learning that builds skills and delivers results.",

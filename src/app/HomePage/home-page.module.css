@@ -140,7 +140,8 @@ a:focus-visible {
 }
 
 .hero-slide:nth-child(4) .hero-slide-image {
-  object-position: 50% 12%;
+  /* Preserve the top of the photo so the rear learner's head stays visible. */
+  object-position: 50% 0%;
 }
 
 .hero-slide:nth-child(5) .hero-slide-image {
@@ -967,6 +968,7 @@ a:focus-visible {
 
 .meet-neurolxp-section {
   width: 100%;
+  background-color: #dfe6e9;
   padding: 32px 16px;
   display: flex;
   justify-content: center;
@@ -1002,7 +1004,7 @@ a:focus-visible {
 .meet-neurolxp-image {
   border-radius: 16px;
   object-fit: cover;
-  object-position: 50% -23%;
+  object-position: 50% 0%;
   max-width: 100%;
 }
 
@@ -1014,6 +1016,7 @@ a:focus-visible {
   position: absolute;
   inset: 32px;
   border-radius: 16px;
+  overflow: hidden;
   background: #dfe6e9;
   box-shadow: 4px 4px 4px #c4c4c4, -4px -4px 4px #ffffff;
   z-index: 1;
@@ -2736,6 +2739,82 @@ a:focus-visible {
   .get-in-touch-frame { transform: rotate(-34deg); }
 }
 
+/* Keep the overview and introduction within a normal desktop viewport. */
+@media (min-width: 1024px) {
+  .platform-overview-section,
+  .meet-neurolxp-section {
+    padding-block: 24px;
+  }
+  .platform-overview-inner {
+    display: grid;
+    grid-template-columns: minmax(0, 500px) minmax(0, 650px);
+    column-gap: clamp(48px, 5vw, 72px);
+    align-items: center;
+    justify-content: center;
+  }
+  .platform-overview-media {
+    width: 100%;
+    max-width: min(500px, calc(100svh - 96px));
+    justify-self: center;
+  }
+  .platform-overview-content {
+    --overview-card-width: clamp(200px, 30svh, 257px);
+    --overview-column-gap: clamp(24px, 2.2vw, 32px);
+    /* Match the left edge of the centred, two-column card grid. */
+    --overview-content-inset: max(0px, calc(50% - var(--overview-card-width) - var(--overview-column-gap) / 2));
+    --overview-icon-size: clamp(36px, 6svh, 46px);
+    width: 100%;
+    max-width: 650px;
+  }
+  .platform-overview-tag {
+    margin-bottom: 16px;
+    margin-inline-start: var(--overview-content-inset);
+  }
+  .platform-overview-heading {
+    width: calc(100% - var(--overview-content-inset));
+    max-width: 100%;
+    margin-bottom: 16px;
+    margin-inline-start: var(--overview-content-inset);
+    line-height: 1.22;
+  }
+  .platform-hex-grid {
+    grid-template-columns: repeat(2, minmax(0, var(--overview-card-width)));
+    column-gap: var(--overview-column-gap);
+    row-gap: clamp(8px, 1.2svh, 12px);
+    justify-content: center;
+    justify-items: center;
+    align-items: start;
+  }
+  .platform-hex-card { max-width: var(--overview-card-width); }
+  .platform-hex-icon-ring {
+    width: var(--overview-icon-size);
+    height: var(--overview-icon-size);
+  }
+  .platform-hex-icon-circle {
+    width: calc(var(--overview-icon-size) - 8px);
+    height: calc(var(--overview-icon-size) - 8px);
+  }
+  .platform-hex-icon {
+    width: calc(var(--overview-icon-size) - 18px);
+    height: calc(var(--overview-icon-size) - 18px);
+  }
+  .platform-hex-text { gap: 4px; }
+  .platform-hex-description { line-height: 1.35; }
+
+  .meet-neurolxp-frame {
+    aspect-ratio: 1280 / 680;
+    min-height: 460px;
+    max-height: calc(100svh - 64px);
+  }
+  .meet-neurolxp-text {
+    top: clamp(88px, 12svh, 104px);
+    left: clamp(56px, 6vw, 82px);
+    width: min(574px, 52%);
+    max-width: calc(100% - 112px);
+    margin: 0;
+  }
+}
+
 @media (width < 1024px) {
   .hero-frame { padding: 18px; }
   .hero-image-stage { aspect-ratio: 16 / 7; }
@@ -2979,6 +3058,14 @@ a:focus-visible {
     text-align: center;
     overflow-wrap: break-word;
   }
+  .smv-section .smv-heading {
+    font-size: clamp(20px, 6vw, 24px);
+  }
+  .smv-heading-lead,
+  .smv-heading-vision {
+    display: block;
+    white-space: nowrap;
+  }
   .odyssey-subtext, .smv-subtext, .meet-neurolxp-subtext,
   .why-choose-subtext, .learning-modules-subtext, .testimonials-subtext {
     width: 100%;
@@ -3117,11 +3204,11 @@ a:focus-visible {
     align-items: flex-start;
   }
   .testimonial-photo-frame {
-    left: 50%;
+    left: 20px;
     top: 56px;
     width: 90px;
     height: 90px;
-    transform: translateX(-50%);
+    transform: none;
     border-radius: 50%;
   }
   .testimonial-photo-inner { border-radius: inherit; }
