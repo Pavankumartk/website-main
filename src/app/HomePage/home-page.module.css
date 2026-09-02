@@ -1981,6 +1981,10 @@ a:focus-visible {
   overflow-wrap: break-word;
 }
 
+.faq-mobile-break {
+  display: none;
+}
+
 .faq-item-toggle {
   flex-shrink: 0;
   width: 60px;
@@ -3135,14 +3139,27 @@ a:focus-visible {
   .faq-left { gap: 16px; }
   .faq-illustration { max-width: 300px; }
   .faq-right { gap: 18px; }
-  .faq-item-header { gap: 8px; padding: 14px 12px; flex-wrap: nowrap; }
+  .faq-item-header { gap: 8px; padding: 14px 12px; min-height: 88px; flex-wrap: nowrap; }
   .faq-item-header-left { min-width: 0; gap: 8px; }
   .faq-item-triangle { display: none; }
+  .faq-item-number { font-size: clamp(20px, 5.6vw, 24px); }
   .faq-item-divider { width: 4px; height: 28px; }
-  .faq-item-title { flex: 1; width: auto; min-width: 0; line-height: 1.35; }
+  .faq-item-title {
+    flex: 1;
+    width: auto;
+    min-width: 0;
+    font-size: clamp(16px, 4.5vw, 18px);
+    line-height: 1.4;
+    padding-inline-start: 6px;
+  }
+  .faq-item-title .faq-mobile-break { display: inline; }
   .faq-item-toggle { flex: 0 0 44px; width: 44px; height: 44px; }
   .faq-item-toggle-icon { width: 20px; height: 20px; }
-  .faq-item-answer { padding: 20px 16px; line-height: 1.5; }
+  .faq-item-answer {
+    padding: 20px 16px;
+    font-size: clamp(14px, 4vw, 16px);
+    line-height: 1.5;
+  }
 
   .get-in-touch-section {
     --contact-footer-overlap: 48px;
@@ -3229,7 +3246,7 @@ a:focus-visible {
     grid-template-rows: auto;
     gap: 6px;
     align-items: center;
-    min-height: 128px;
+    min-height: 88px;
     padding: 14px 8px;
   }
   .faq-item-header-left { display: contents; }
@@ -3243,7 +3260,7 @@ a:focus-visible {
     grid-column: 2;
     grid-row: 1;
     width: 3px;
-    height: 32px;
+    height: 24px;
   }
   .faq-item-title {
     grid-column: 3;

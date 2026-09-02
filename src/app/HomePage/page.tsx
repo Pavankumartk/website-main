@@ -1214,6 +1214,7 @@ type FAQItemData = {
   id: number;
   number: string;
   title: string;
+  mobileTitleLines: readonly [string, string];
   answer: string;
   colorStart: string;
   colorEnd: string;
@@ -1224,6 +1225,7 @@ const faqItems: FAQItemData[] = [
     id: 1,
     number: "01",
     title: "What is NeuroLXP?",
+    mobileTitleLines: ["What is", "NeuroLXP?"],
     answer: "NeuroLXP™ is a next-generation Learning Experience Platform (LXP) that transforms how organizations design, deliver, and manage learning through personalized, engaging, and scalable learning experiences.",
     colorStart: "#2D4CC8",
     colorEnd: "#162562",
@@ -1232,6 +1234,7 @@ const faqItems: FAQItemData[] = [
     id: 2,
     number: "02",
     title: "Who is NeuroLXP™ designed for?",
+    mobileTitleLines: ["Who is NeuroLXP™", "designed for?"],
     answer: "NeuroLXP™ is purpose-built for academic institutions, corporates, skilling academies, NGOs, trusts, and government skill development programs.",
     colorStart: "#BF1869",
     colorEnd: "#590B31",
@@ -1240,6 +1243,7 @@ const faqItems: FAQItemData[] = [
     id: 3,
     number: "03",
     title: "How Is NeuroLXP™ Different?",
+    mobileTitleLines: ["How Is NeuroLXP™", "Different?"],
     answer: "Unlike a conventional LMS that focuses on course administration, NeuroLXP™ delivers learner-centric experiences through personalization, skill-based learning, collaboration, and continuous development.",
     colorStart: "#861109",
     colorEnd: "#200402",
@@ -1248,6 +1252,7 @@ const faqItems: FAQItemData[] = [
     id: 4,
     number: "04",
     title: "Why is NeuroLXP™ groundbreaking?",
+    mobileTitleLines: ["Why is NeuroLXP™", "groundbreaking?"],
     answer: "NeuroLXP™ reimagines digital learning by combining intelligent personalization, modern learning experiences, scalable architecture, and data-driven insights into a unified platform built for the future of education and workforce development.",
     colorStart: "#162562",
     colorEnd: "#2D4CC8",
@@ -1256,6 +1261,7 @@ const faqItems: FAQItemData[] = [
     id: 5,
     number: "05",
     title: "Who Can Use NeuroLXP™?",
+    mobileTitleLines: ["Who Can Use", "NeuroLXP™?"],
     answer: "Yes. NeuroLXP™ is designed to scale effortlessly - from schools and universities to enterprises, skilling academies, NGOs, and nationwide government learning initiatives.",
     colorStart: "#67096E",
     colorEnd: "#C712D4",
@@ -1292,7 +1298,11 @@ function FAQItem({ item, isOpen, onToggle }: { item: FAQItemData; isOpen: boolea
               {item.number}
             </span>
             <span className={styles["faq-item-divider"]} style={{ backgroundImage: `linear-gradient(180deg, ${item.colorStart} 0%, ${item.colorEnd} 100%)` }} aria-hidden="true" />
-            <span className={styles["faq-item-title"]}>{item.title}</span>
+            <span className={styles["faq-item-title"]}>
+              {item.mobileTitleLines[0]}{" "}
+              <br className={styles["faq-mobile-break"]} />
+              {item.mobileTitleLines[1]}
+            </span>
           </div>
           <span className={styles["faq-item-toggle"]} style={{ color: item.colorStart }} aria-hidden="true">
             {isOpen ? <MinusIcon className={styles["faq-item-toggle-icon"]} /> : <PlusIcon className={styles["faq-item-toggle-icon"]} />}
