@@ -2,7 +2,7 @@
   width: 100%;
   background-color: #dfe6e9;
   color: #31344b;
-  font-family: "Segoe UI", sans-serif;
+  font-family: "Segoe UI";
   overflow-x: hidden;
   display: flex;
   flex-direction: column;
@@ -51,7 +51,7 @@
     overflow-x: hidden;
     text-align: center;
     gap: 0;
-    padding: 32px 0;
+    padding: 32px 0 0;
   }
 }
 
@@ -64,15 +64,16 @@
 
   .informationLiteracyChild {
     z-index: 0;
-    width: min(1440px, 100%);
-    max-width: 1223px;
+    width: 100%;
+    max-width: none;
     height: 637px;
     display: block;
     position: absolute;
-    top: -30px;
-    left: 50%;
+    top: 0;
+    left: 0;
     overflow: visible;
-    transform: translateX(-50%);
+    transform: none;
+    object-fit: fill;
   }
 }
 
@@ -680,10 +681,11 @@
 @media (min-width: 1025px) {
   .frameParent9 {
     position: relative;
-    width: min(1078px, calc(100% - 64px));
+    width: min(1280px, calc(100% - 64px));
     max-width: none;
     margin: 32px auto 0;
-    gap: 54px;
+    gap: 48px;
+    z-index: 1;
   }
 
   .frameParent10 {
@@ -702,8 +704,8 @@
   }
 
   .findEvaluate {
-    max-width: 1092px;
-    font-size: 36px;
+    max-width: 1280px;
+    font-size: clamp(32px, 3.056vw, 44px);
     line-height: 1.25;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   }
@@ -711,6 +713,7 @@
   .neurolxpEquipsLearners {
     font-size: 24px;
     line-height: 1.5;
+    max-width: 1000px;
   }
 
   .frameParent12 {
@@ -749,7 +752,7 @@
   width: calc(100% - 24px);
   max-width: 620px;
   margin: 0 auto;
-  font-family: "Segoe UI", sans-serif;
+  font-family: "Segoe UI";
 }
 
 .statsPanelShape {
@@ -822,9 +825,9 @@
 @media (min-width: 1025px) {
   .frameParent13 {
     position: relative;
-    width: min(1424px, calc(100% - 32px));
+    width: min(1280px, calc(100% - 64px));
     max-width: none;
-    height: 279px;
+    height: 270px;
     margin: 56px auto 0;
     z-index: 3;
   }
@@ -843,9 +846,9 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: min(880px, calc(100% - 180px));
-    grid-template-columns: 1fr 4px 1fr 4px 1fr;
-    gap: 40px;
+    width: min(1000px, calc(100% - 96px));
+    grid-template-columns: 1fr 9px 1fr 9px 1fr;
+    gap: clamp(16px, 2.5vw, 36px);
     padding: 0;
     border-radius: 0;
     background: transparent;
@@ -860,19 +863,19 @@
   }
 
   .crore {
-    font-size: 46px;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: clamp(34px, 3.195vw, 46px);
+    /* text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
   }
 
   .skillDomains {
-    font-size: 32px;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: clamp(22px, 2.223vw, 32px);
+    /* text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
   }
 
   .statsDivider {
     width: 9px;
     height: 180px;
-    box-shadow: inset 0 4px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: inset 4px 4px 4px rgba(0, 0, 0, 0.25);
   }
 }
 
@@ -972,36 +975,36 @@
   height: 100%;
   overflow: hidden;
   box-shadow:
-    inset 10px 10px 20px #c4c4c4,
-    -6px -6px 14px #fff;
+    inset 4px 4px 8px #c4c4c4,
+    -4px -4px 14px #fff;
 }
 
 .thinkingCardInner {
   box-sizing: border-box;
   z-index: 2;
   background: #dfe6e9;
-  border-radius: 0 0 500px 500px;
+  border-radius: 500px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
   width: 82%;
-  height: 91%;
-  padding-top: 47px;
+  height: 84%;
+  padding-top: clamp(28px, 8vw, 40px);
   position: absolute;
-  top: 42%;
+  top: 43%;
   left: 50%;
   transform: translate(-50%, -50%);
   overflow: hidden;
   box-shadow:
-    -8px -8px 16px #fff,
-    8px 8px 16px #c4c4c4cc;
+    -4px -4px 8px #fff,
+    4px 4px 8px #c4c4c4cc;
 }
 
 .thinkingCardTitle {
   width: 130px;
   margin: 0 0 12px;
-  font-family: "Segoe UI", sans-serif;
+  font-family: "Segoe UI";
   font-weight: 600;
   font-size: 20px;
   line-height: 1.25;
@@ -1013,7 +1016,7 @@
 .evidenceBasedTitle {
   width: 180px;
   margin: 0 0 12px;
-  font-family: "Segoe UI", sans-serif;
+  font-family: "Segoe UI";
   font-weight: 600;
   font-size: 20px;
   line-height: 1.25;
@@ -1025,7 +1028,7 @@
 .thinkingCardDesc {
   width: 84%;
   margin: 0;
-  font-family: "Segoe UI", sans-serif;
+  font-family: "Segoe UI";
   font-weight: 400;
   font-size: 18px;
   line-height: 1.35;
@@ -1039,10 +1042,11 @@
   width: 26px;
   height: 26px;
   left: 50%;
-  bottom: 0;
+  bottom: 13%;
   transform: translateX(-50%) rotate(-90deg);
   background: var(--triangle-color);
   clip-path: polygon(0 0, 100% 50%, 0 100%);
+  z-index: 3;
 }
 
 @media (min-width: 641px) {
@@ -1068,15 +1072,15 @@
 @media (min-width: 1025px) {
   .frameParent19 {
     position: relative;
-    width: 1280px;
-    /* max-width: none; */
-    margin: 64px auto 0;
+    width: calc(100% - 64px);
+    max-width: 1280px;
+    margin: 72px auto 0;
     gap: 64px;
   }
 
   .frameParent20 {
-    width: 1061px;
-    max-width: none;
+    width: 100%;
+    max-width: 1061px;
     gap: 24px;
   }
 
@@ -1103,8 +1107,8 @@
   }
 
   .empowerLearnersTo {
-    width: 926px;
-    max-width: none;
+    width: 100%;
+    max-width: 926px;
     font-size: 24px;
     line-height: 1.5;
   }
@@ -1123,33 +1127,56 @@
 
   .thinkingCardInner {
     width: 230px;
-    height: 310px;
-    padding-top: 40px;
+    height: 84%;
+    padding-top: 56px;
   }
 
   .thinkingCardTitle {
     width: 160px;
-    margin: 0 0 24px;
-    font-size: 24px;
-    line-height: 32px;
+    margin: 0 0 20px;
+    font-size: 22px;
+    line-height: 28px;
+    max-width: 92%;
   }
 
   .evidenceBasedTitle {
     width: 210px;
-    margin: 0 0 24px;
-    font-size: 24px;
-    line-height: 32px;
+    margin: 0 0 20px;
+    font-size: 22px;
+    line-height: 28px;
+    max-width: 92%;
   }
 
   .thinkingCardDesc {
     width: 201.07px;
     font-size: 20px;
     line-height: 28px;
+    max-width: 90%;
   }
 
   .thinkingCardTriangle {
     width: 37px;
     height: 37px;
+  }
+}
+
+/* Four cards share a row when they can retain readable content. */
+@media (min-width: 1200px) {
+  .frameParent21 {
+    grid-template-columns: repeat(4, minmax(0, 280px));
+    gap: clamp(24px, 3.68vw, 53px);
+  }
+
+  .thinkingCard {
+    width: 100%;
+    max-width: 280px;
+    height: auto;
+    aspect-ratio: 280 / 339.57;
+  }
+
+  .thinkingCardInner {
+    width: 82%;
+    padding-top: clamp(48px, 3.889vw, 56px);
   }
 }
 
@@ -1394,21 +1421,24 @@
   }
 }
 
-@media (min-width: 1025px) {
+/* Keep the stepped cards beside the polygon only when both fit. */
+@media (min-width: 1200px) {
   .frameParent22 {
     position: relative;
-    max-width: 1440px;
+    width: calc(100% - 64px);
+    max-width: 1286px;
     margin: 96px auto 0;
     flex-direction: row;
     align-items: center;
-    gap: 112px;
-    justify-content: space-between;
+    gap: 32px;
+    justify-content: center;
   }
 
   .frameParent23 {
     display: block;
     height: 696px;
     width: 511.5px;
+    flex: 0 0 511.5px;
     position: relative;
   }
 
@@ -1495,22 +1525,17 @@
   .intellectualPropertyParent,
   .ethicalKnowledgeParent {
     position: absolute;
-    top: calc(50% - 52px);
-    left: 85px;
-    width: 270px;
+    top: 50%;
+    left: 80px;
+    width: calc(100% - 96px);
+    transform: translateY(-50%);
     flex: none;
-    gap: 16px;
-  }
-
-  .citationExcellenceParent {
-    width: 256px;
-  }
-  .academicIntegrityParent {
-    width: 252px;
+    gap: 8px;
   }
 
   .citationExcellence {
-    height: 32px;
+    height: auto;
+    min-height: 32px;
     font-size: 24px;
     line-height: 32px;
   }
@@ -1525,14 +1550,17 @@
 
   .vectorParent {
     width: 662px;
-    max-width: none;
-    height: 541px;
-    aspect-ratio: auto;
+    max-width: 662px;
+    min-width: 0;
+    flex: 1 1 662px;
+    height: auto;
+    aspect-ratio: 662 / 541;
   }
 
   .integrityContent {
-    top: 70px;
-    width: 520px;
+    top: 13%;
+    width: calc(100% - 80px);
+    max-width: 520px;
   }
 
   .ethicsIntegrityBadge {
@@ -1818,10 +1846,11 @@
 @media (min-width: 1025px) {
   .frameParent34 {
     position: relative;
-    width: 1280px;
+    width: calc(100% - 64px);
     /* max-width: none; */
     margin: 64px auto 0;
     gap: 50px;
+    max-width: 1280px;
   }
 
   .frameChild21 {
@@ -1839,17 +1868,33 @@
   }
 
   .journeyTimeline {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 54px;
-    width: auto;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: var(--journey-gap);
+    width: 100%;
+    --journey-gap: clamp(24px, 3.75vw, 54px);
+    align-items: stretch;
   }
 
   .journeyStage {
     justify-items: center;
+    grid-template-rows: 100px minmax(0, 1fr);
+    align-items: stretch;
+    gap: 24px;
+    min-width: 0;
   }
 
   .journeyTrack {
-    display: none;
+    display: block;
+    position: absolute;
+    top: 26px;
+    left: calc(12.5% - var(--journey-gap) * 0.375);
+    right: calc(12.5% - var(--journey-gap) * 0.375);
+    height: 48px;
+    border-radius: 100px;
+    background: #dfe6e9;
+    box-shadow: inset 4px 4px 4px #c4c4c4, inset -4px -4px 4px #ffffff;
+    pointer-events: none;
+    z-index: 0;
   }
 
   .journeyTrack::after {
@@ -1876,6 +1921,7 @@
   .journeyCircle::before {
     width: 70px;
     height: 70px;
+    border-style: dashed;
   }
 
   .journeyCircle span {
@@ -1883,9 +1929,13 @@
   }
 
   .journeyCard {
-    width: 280px;
+    width: 100%;
     min-height: 150px;
     padding: 20px 16px 18px;
+    max-width: 280px;
+    align-self: stretch;
+    border-radius: 12px;
+    justify-content: flex-start;
   }
 
   .journeyCorner {
@@ -1906,14 +1956,14 @@
   }
 
   .journeyCardTitle {
-    margin: 0 0 22px;
+    margin: 0 0 14px;
     font-size: 24px;
   }
 
   .journeyCardDescription {
     max-width: 240px;
-    font-size: 22px;
-    line-height: 30px;
+    font-size: 18px;
+    line-height: 26px;
   }
 
   .frameParent34 .frameParent20 {
@@ -2160,22 +2210,28 @@
 
   .frameParent41 {
     position: relative;
-    /* width: 1329px; */
-    max-width: 1440px;
-    height: 643px;
-    margin: 64px auto 0;
+    width: calc(100% - 64px);
+    max-width: 1336px;
+    height: auto;
+    margin: 40px 24px 0 max(32px, calc((100% - 1280px) / 2));
     flex-direction: row;
-    align-items: flex-start;
-    justify-content: space-between;
-    gap: 48px;
+    align-items: start;
+    justify-content: center;
+    gap: clamp(32px, 5.556vw, 80px);
+    display: grid;
+    grid-template-columns: minmax(0, 580px) minmax(0, 677px);
   }
 
   .skillCircleRow {
     display: grid;
-    grid-template-columns: repeat(2, 190px);
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     justify-content: center;
-    column-gap: 44px;
-    row-gap: 40px;
+    column-gap: clamp(24px, 6.945vw, 100px);
+    row-gap: 48px;
+    width: 100%;
+    min-width: 0;
+    --skill-circle-size: clamp(150px, calc(25vw - 140px), 220px);
+    padding-top: 40px;
   }
 
   .skillCircle:nth-child(3) {
@@ -2184,72 +2240,82 @@
   }
 
   .skillCircle {
-    width: 190px;
+    width: 100%;
+    max-width: 240px;
+    min-width: 0;
   }
 
   .skillCircleGraphic {
-    width: 170px;
-    height: 170px;
+    width: var(--skill-circle-size);
+    height: auto;
+    max-width: 100%;
+    aspect-ratio: 1;
   }
 
   .skillCircleGraphic::before {
-    width: 170px;
-    height: 170px;
+    width: 100%;
+    height: 100%;
     box-shadow:
       inset 4px 4px 4px #c4c4c4,
       inset -4px -4px 4px #ffffff;
   }
 
   .skillCircleProgress {
-    width: 140px;
-    height: 140px;
+    width: 86%;
+    height: 86%;
     transform: translate(-50%, -50%);
     -webkit-mask: radial-gradient(farthest-side, transparent calc(100% - 12px), #000 calc(100% - 11px));
     mask: radial-gradient(farthest-side, transparent calc(100% - 12px), #000 calc(100% - 11px));
   }
 
   .skillCircleInner {
-    width: 96px;
-    height: 44px;
+    width: 100%;
+    height: auto;
     background: transparent;
     box-shadow: none;
   }
 
   .skillCircleValue {
-    font-size: 36px;
-    line-height: 42px;
+    font-size: clamp(32px, 3.195vw, 46px);
+    line-height: 1.2;
   }
 
   .skillCircleLabel {
     margin-top: 20px;
-    font-size: 24px;
-    line-height: 32px;
+    max-width: 100%;
+    font-size: clamp(16px, 1.667vw, 24px);
+    line-height: 1.35;
+    white-space: normal;
+    overflow-wrap: break-word;
   }
 
   .frameParent47 {
-    max-width: none;
-    width: 677px;
-    height: 542px;
-    aspect-ratio: auto;
+    max-width: 677px;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 677 / 721;
     flex-shrink: 0;
+    overflow: visible;
   }
 
   .frameChild35 {
-    border-radius: 200px 0px 0px 50px;
-    left: 166px;
-    width: 511px;
+    border-radius: clamp(120px, 13.889vw, 200px) 0 0 50px;
+    left: 24.52%;
+    width: 75.48%;
     right: auto;
-    bottom: auto;
-    top: 0;
-    height: 542px;
+    bottom: 0;
+    top: auto;
+    height: 75.17%;
   }
 
   .creativeExcitedBrunetteBusiIcon {
     top: auto;
-    right: -1px;
-    width: 678px;
-    height: 721px;
+    right: 0;
+    width: 100%;
+    height: 100%;
     object-fit: contain;
+    object-position: bottom center;
+    bottom: 0;
   }
 }
 
@@ -2289,6 +2355,7 @@
     margin: 0 auto 28px !important;
     padding: 0 8px !important;
     align-self: center;
+    min-height: 24px;
   }
 
   /* Hero starts only after the breadcrumb row has finished. */
@@ -2321,5 +2388,11 @@
     height: 16px;
     flex: 0 0 16px;
   }
+}
+
+/* Full desktop reference spacing; smaller screens retain the compact layout. */
+
+@media (min-width: 1360px) {
+  .frameParent22 { gap: 112px; }
 }
 

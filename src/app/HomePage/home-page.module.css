@@ -3291,6 +3291,19 @@ a:focus-visible {
   }
   .testimonial-rating-star { width: 14px; height: 14px; }
   .testimonial-card-wrapper .testimonial-photo { object-position: 50% 20%; }
+  /* Janoah: mask the portrait as a complete circle and crop out its pale left strip. */
+  .testimonial-card-wrapper[data-testimonial-id="5"] .testimonial-photo-frame,
+  .testimonial-card-wrapper[data-testimonial-id="5"] .testimonial-photo-inner {
+    border-radius: 50%;
+    overflow: hidden;
+    clip-path: circle(50% at 50% 50%);
+  }
+  .testimonial-card-wrapper[data-testimonial-id="5"] .testimonial-photo {
+    object-fit: cover;
+    object-position: 50% 20%;
+    transform: scale(1.35);
+    transform-origin: 50% 0%;
+  }
   .testimonial-card-wrapper[data-testimonial-id="4"] .testimonial-photo {
     object-position: center;
     transform: none;

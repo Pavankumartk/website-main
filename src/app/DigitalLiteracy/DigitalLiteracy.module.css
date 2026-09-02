@@ -1,5 +1,5 @@
 .digital-literacy {
-  font-family: "Segoe UI", Arial, sans-serif;
+  font-family: "Segoe UI";
 }
 
 /* Digital Literacy page background */
@@ -20,7 +20,7 @@
 }
 
 .dl-breadcrumb-label {
-  font-family: "Segoe UI", Arial, sans-serif;
+  font-family: "Segoe UI";
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
@@ -32,7 +32,7 @@
   display: flex;
   align-items: center;
   gap: 8px;
-  font-family: "Segoe UI", Arial, sans-serif;
+  font-family: "Segoe UI";
   font-weight: 700;
   font-size: 16px;
   line-height: 24px;
@@ -90,7 +90,7 @@
     inset -4px -4px 4px #ffffff,
     inset 4px 4px 4px rgba(196, 196, 196, 0.8);
   border-radius: 28px;
-  font-family: "Segoe UI", Arial, sans-serif;
+  font-family: "Segoe UI";
   font-weight: 600;
   font-size: 20px;
   letter-spacing: 0.03em;
@@ -109,7 +109,7 @@
 
 .dl-hero-heading {
   margin: 0;
-  font-family: "Segoe UI", Arial, sans-serif;
+  font-family: "Segoe UI";
   font-weight: 700;
   font-size: 36px;
   line-height: 1.25;
@@ -125,7 +125,7 @@
 
 .dl-hero-subtext {
   margin: 0;
-  font-family: "Segoe UI", Arial, sans-serif;
+  font-family: "Segoe UI";
   font-weight: 400;
   font-size: 24px;
   line-height: 1.43;
@@ -146,7 +146,7 @@
   cursor: pointer;
   border-radius: 8px;
   padding: 16px 32px;
-  font-family: "Segoe UI", Arial, sans-serif;
+  font-family: "Segoe UI";
   font-weight: 600;
   font-size: 22px;
   letter-spacing: 0.02em;
@@ -241,7 +241,7 @@
   display: inline-flex;
   align-items: center;
   gap: 4px;
-  font-family: "Segoe UI", Arial, sans-serif;
+  font-family: "Segoe UI";
   font-weight: 700;
   font-size: 32px;
   letter-spacing: 0.02em;
@@ -263,7 +263,7 @@
 }
 
 .dl-hero-stat-label {
-  font-family: "Segoe UI", Arial, sans-serif;
+  font-family: "Segoe UI";
   font-weight: 600;
   font-size: 18px;
   letter-spacing: 0.02em;
@@ -369,7 +369,7 @@
 
 .dl-section-heading {
   margin: 0;
-  font-family: "Segoe UI", Arial, sans-serif;
+  font-family: "Segoe UI";
   font-weight: 700;
   font-size: 36px;
   line-height: 1.25;
@@ -460,7 +460,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: "Segoe UI", Arial, sans-serif;
+  font-family: "Segoe UI";
   font-weight: 700;
   font-size: 36px;
   line-height: 1;
@@ -472,7 +472,7 @@
 .dl-adv-card-title {
   width: 100%;
   margin: 0;
-  font-family: "Segoe UI", Arial, sans-serif;
+  font-family: "Segoe UI";
   font-weight: 700;
   font-size: 20px;
   line-height: 28px;
@@ -484,7 +484,7 @@
 .dl-adv-card-desc {
   width: 100%;
   margin: 16px 0 0;
-  font-family: "Segoe UI", Arial, sans-serif;
+  font-family: "Segoe UI";
   font-weight: 400;
   font-size: 18px;
   line-height: 28px;
@@ -531,7 +531,7 @@
 .dl-pill-label-text {
   position: relative;
   z-index: 1;
-  font-family: "Segoe UI", Arial, sans-serif;
+  font-family: "Segoe UI";
   font-weight: 700;
   font-size: clamp(28px, 4vw, 64px);
   line-height: 1.25;
@@ -681,7 +681,7 @@
 }
 
 .dl-check-pill-text {
-  font-family: "Segoe UI", Arial, sans-serif;
+  font-family: "Segoe UI";
   font-weight: 600;
   font-size: 20px;
   color: #2f3547;
@@ -780,13 +780,13 @@
 }
 
 .dl-analytics-card-value {
-  font-family: "Segoe UI", Arial, sans-serif;
+  font-family: "Segoe UI";
   font-weight: 700;
   font-size: 32px;
 }
 
 .dl-analytics-card-label {
-  font-family: "Segoe UI", Arial, sans-serif;
+  font-family: "Segoe UI";
   font-weight: 700;
   font-size: 20px;
   letter-spacing: 0.03em;
@@ -794,7 +794,7 @@
 }
 
 .dl-analytics-card-desc {
-  font-family: "Segoe UI", Arial, sans-serif;
+  font-family: "Segoe UI";
   font-weight: 400;
   font-size: 16px;
   color: #31344b;
@@ -865,7 +865,7 @@
     inset -4px -4px 4px #ffffff,
     inset 4px 4px 4px rgba(196, 196, 196, 0.8);
   border-radius: 28px 0 0 28px;
-  font-family: "Segoe UI", Arial, sans-serif;
+  font-family: "Segoe UI";
   font-weight: 700;
   font-size: 44px;
   margin-bottom: 24px;
@@ -876,7 +876,7 @@
 
 .dl-step-card-title {
   margin: 0 0 12px;
-  font-family: "Segoe UI", Arial, sans-serif;
+  font-family: "Segoe UI";
   font-weight: 700;
   font-size: 28px;
   color: #31344b;
@@ -884,7 +884,7 @@
 
 .dl-step-card-desc {
   margin: 0;
-  font-family: "Segoe UI", Arial, sans-serif;
+  font-family: "Segoe UI";
   font-size: 20px;
   line-height: 1.5;
   color: #000;
@@ -919,7 +919,7 @@
   display: flex;
   align-items: center;
   gap: 16px;
-  font-family: "Segoe UI", Arial, sans-serif;
+  font-family: "Segoe UI";
   font-weight: 600;
   font-size: 20px;
   color: #2f3547;
@@ -999,7 +999,7 @@
   z-index: 2;
   display: inline-block;
   margin: 0 0 14px;
-  font-family: "Segoe UI", Arial, sans-serif;
+  font-family: "Segoe UI";
   font-weight: 700;
   font-size: 28px;
   letter-spacing: 0.03em;
@@ -1021,7 +1021,7 @@
   position: relative;
   z-index: 2;
   margin: 0;
-  font-family: "Segoe UI", Arial, sans-serif;
+  font-family: "Segoe UI";
   font-size: 20px;
   color: #31344b;
 }
@@ -1053,7 +1053,7 @@
 .dl-cta-heading {
   margin: 0;
   max-width: 900px;
-  font-family: "Segoe UI", Arial, sans-serif;
+  font-family: "Segoe UI";
   font-weight: 700;
   font-size: 36px;
   line-height: 1.15;
@@ -1064,7 +1064,7 @@
 .dl-cta-subtext {
   margin: 0;
   max-width: 960px;
-  font-family: "Segoe UI", Arial, sans-serif;
+  font-family: "Segoe UI";
   font-size: 24px;
   line-height: 1.43;
   letter-spacing: 0.03em;
@@ -1145,7 +1145,7 @@
 .digital-literacy {
   width: 100%;
   min-width: 0;
-  font-family: "Segoe UI", Arial, sans-serif;
+  font-family: "Segoe UI";
 }
 .digital-literacy *,
 .digital-literacy *::before,
