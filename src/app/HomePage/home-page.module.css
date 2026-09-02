@@ -1,6 +1,6 @@
 /* Complete replacement stylesheet. Replace the previous file in full.
    Design: original colours, shadows, shapes and component states.
-   Font: Segoe UI; FAQ includes sans-serif fallbacks for other devices.
+   Font: Segoe UI throughout all sections and screen sizes.
    Layout: shared fluid sizing, followed by four width breakpoints.
    Keep the app's carousel and accordion JavaScript unchanged.
    Learning Odyssey is grouped in the matching page.tsx heading. */
@@ -157,6 +157,27 @@ a:focus-visible {
   border: 0;
   max-width: 100%;
 }
+
+.hero-video-play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+  width: 48px;
+  height: 48px;
+  border: 0;
+  border-radius: 50%;
+  background: #dfe6e9;
+  color: #2d4cc8;
+  box-shadow: 2px 2px 4px #c4c4c4, -2px -2px 4px #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  touch-action: manipulation;
+}
+.hero-video-play-icon { width: 24px; height: 24px; }
 
 .hero-caption-stage {
   flex-direction: column;
@@ -1885,7 +1906,7 @@ a:focus-visible {
 
 .faq-heading-accent {
   color: #2d4cc8;
-  font-family: inherit;
+  font-family: "Segoe UI";
   font-style: normal;
 }
 
@@ -3191,30 +3212,84 @@ a:focus-visible {
   .testimonials-section { gap: 16px; }
   .testimonials-viewport { min-height: 0; }
   .testimonials-track { gap: 24px; }
+  /* Mobile reference: portrait and identity above a full-width quote. */
   .testimonial-card-wrapper {
-    width: min(340px, calc(100vw - 48px));
+    --testimonial-padding: clamp(16px, 4vw, 24px);
+    --testimonial-avatar-size: clamp(48px, 14vw, 76px);
+    --testimonial-column-gap: clamp(12px, 3vw, 16px);
+    --testimonial-row-gap: clamp(8px, 2vw, 12px);
+    width: min(480px, calc(100vw - 48px));
     height: auto;
-    min-height: 360px;
+    min-height: 0;
   }
   .testimonial-card {
     width: 100%;
-    min-height: 360px;
+    min-height: 0;
     height: auto;
-    padding: 166px 20px 24px;
+    margin: 0;
+    padding: var(--testimonial-padding);
     align-items: flex-start;
   }
   .testimonial-photo-frame {
-    left: 20px;
-    top: 56px;
-    width: 90px;
-    height: 90px;
+    left: var(--testimonial-padding);
+    top: var(--testimonial-padding);
+    width: var(--testimonial-avatar-size);
+    height: var(--testimonial-avatar-size);
+    padding: 0;
     transform: none;
     border-radius: 50%;
+    background: #d9d9d9;
+    box-shadow: none;
   }
   .testimonial-photo-inner { border-radius: inherit; }
-  .testimonial-rating-badge { top: 16px; right: 16px; }
-  .testimonial-name { font-size: 18px; }
-  .testimonial-role, .testimonial-quote { font-size: 15px; line-height: 1.5; }
+  .testimonial-content {
+    display: grid;
+    grid-template-columns: var(--testimonial-avatar-size) minmax(0, 1fr);
+    gap: var(--testimonial-row-gap) var(--testimonial-column-gap);
+    align-items: start;
+  }
+  .testimonial-person {
+    grid-column: 2;
+    min-width: 0;
+    min-height: calc(var(--testimonial-avatar-size) - var(--testimonial-row-gap) - 8px);
+    gap: 4px;
+  }
+  .testimonial-name {
+    padding-right: 48px;
+    font-family: "Segoe UI";
+    font-size: clamp(16px, 4.4vw, 20px);
+    line-height: 1.4;
+  }
+  .testimonial-role {
+    font-family: "Segoe UI";
+    font-size: clamp(14px, 3.7vw, 16px);
+    line-height: 1.5;
+  }
+  .testimonial-underline {
+    grid-column: 2;
+    width: min(182px, 100%);
+    height: 8px;
+  }
+  .testimonial-quote {
+    grid-column: 1 / -1;
+    width: 100%;
+    margin-top: var(--testimonial-row-gap);
+    font-family: "Segoe UI";
+    font-size: clamp(15px, 3.7vw, 16px);
+    line-height: 1.55;
+  }
+  .testimonial-rating-badge {
+    top: var(--testimonial-padding);
+    right: var(--testimonial-padding);
+    gap: 3px;
+    padding: 4px 8px;
+  }
+  .testimonial-rating-number {
+    font-family: "Segoe UI";
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  .testimonial-rating-star { width: 14px; height: 14px; }
   .testimonial-card-wrapper .testimonial-photo { object-position: 50% 20%; }
   .testimonial-card-wrapper[data-testimonial-id="4"] .testimonial-photo {
     object-position: center;
@@ -3290,6 +3365,7 @@ a:focus-visible {
     width: calc(100% - 48px);
     max-width: 320px;
     aspect-ratio: 2 / 3;
+    transform: translateX(12px);
   }
   /* Stop the portrait at the footer edge; only the frame continues below. */
   .get-in-touch-photo-wrapper {

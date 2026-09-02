@@ -1,9 +1,9 @@
-:global(#main-content) {
-  font-family: "Segoe UI";
+.digital-literacy {
+  font-family: "Segoe UI", Arial, sans-serif;
 }
 
 /* Digital Literacy page background */
-:global(#main-content) {
+.digital-literacy {
   background: #dfe6e9;
   min-height: 100vh;
 }
@@ -20,7 +20,7 @@
 }
 
 .dl-breadcrumb-label {
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", Arial, sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
@@ -32,7 +32,7 @@
   display: flex;
   align-items: center;
   gap: 8px;
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", Arial, sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 24px;
@@ -70,7 +70,7 @@
   gap: 48px;
   flex-wrap: wrap;
   overflow: hidden;
-  height: 82vh;
+  height: auto;
 }
 
 .dl-hero-content {
@@ -90,7 +90,7 @@
     inset -4px -4px 4px #ffffff,
     inset 4px 4px 4px rgba(196, 196, 196, 0.8);
   border-radius: 28px;
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", Arial, sans-serif;
   font-weight: 600;
   font-size: 20px;
   letter-spacing: 0.03em;
@@ -109,7 +109,7 @@
 
 .dl-hero-heading {
   margin: 0;
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", Arial, sans-serif;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.25;
@@ -125,7 +125,7 @@
 
 .dl-hero-subtext {
   margin: 0;
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", Arial, sans-serif;
   font-weight: 400;
   font-size: 24px;
   line-height: 1.43;
@@ -146,7 +146,7 @@
   cursor: pointer;
   border-radius: 8px;
   padding: 16px 32px;
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", Arial, sans-serif;
   font-weight: 600;
   font-size: 22px;
   letter-spacing: 0.02em;
@@ -166,13 +166,6 @@
     -4px -4px 4px #fff,
     4px 4px 4px #c4c4c4cc;
   color: #2d4cc8;
-}
-
-.dl-hero-button-primary:hover,
-.dl-hero-button-secondary:hover {
-  box-shadow:
-    inset -4px -4px 4px #ffffff,
-    inset 4px 4px 4px #c6c6c9;
 }
 
 .dl-hero-stats {
@@ -248,7 +241,7 @@
   display: inline-flex;
   align-items: center;
   gap: 4px;
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", Arial, sans-serif;
   font-weight: 700;
   font-size: 32px;
   letter-spacing: 0.02em;
@@ -270,7 +263,7 @@
 }
 
 .dl-hero-stat-label {
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", Arial, sans-serif;
   font-weight: 600;
   font-size: 18px;
   letter-spacing: 0.02em;
@@ -376,7 +369,7 @@
 
 .dl-section-heading {
   margin: 0;
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", Arial, sans-serif;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.25;
@@ -451,11 +444,6 @@
 }
 
 /* Keep the reference-PNG shape stable on hover */
-.dl-adv-card:hover,
-.dl-adv-card:hover .dl-adv-card-front,
-.dl-adv-card-mirrored:hover .dl-adv-card-front {
-  transform: none;
-}
 
 .dl-adv-card-front::before {
   content: none;
@@ -472,7 +460,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", Arial, sans-serif;
   font-weight: 700;
   font-size: 36px;
   line-height: 1;
@@ -481,14 +469,10 @@
   z-index: 2;
 }
 
-.dl-adv-card:hover .dl-adv-card-badge {
-  animation: none;
-}
-
 .dl-adv-card-title {
   width: 100%;
   margin: 0;
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", Arial, sans-serif;
   font-weight: 700;
   font-size: 20px;
   line-height: 28px;
@@ -500,7 +484,7 @@
 .dl-adv-card-desc {
   width: 100%;
   margin: 16px 0 0;
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", Arial, sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 28px;
@@ -547,7 +531,7 @@
 .dl-pill-label-text {
   position: relative;
   z-index: 1;
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", Arial, sans-serif;
   font-weight: 700;
   font-size: clamp(28px, 4vw, 64px);
   line-height: 1.25;
@@ -568,7 +552,7 @@
     inset -4px -4px 4px #ffffff,
     inset 4px 4px 4px rgba(196, 196, 196, 0.8);
   border-radius: 32px;
-  min-height: 95vh;
+  min-height: 0;
 }
 
 .dl-accelerate {
@@ -650,13 +634,6 @@
     box-shadow 0.3s ease;
 }
 
-.dl-check-pill-outer:hover {
-  transform: translateY(-4px);
-  box-shadow:
-    -4px -4px 4px #ffffff,
-    4px 4px 4px var(--pill-glow);
-}
-
 .dl-check-pill {
   position: relative;
   display: flex;
@@ -671,10 +648,6 @@
   transition: background 0.3s ease;
 }
 
-.dl-check-pill-outer:hover .dl-check-pill {
-  background: var(--pill-bg-hover);
-}
-
 .dl-check-pill-icon {
   flex-shrink: 0;
   width: 33px;
@@ -685,10 +658,6 @@
   justify-content: center;
   background: var(--pill-color);
   transition: transform 0.3s ease;
-}
-
-.dl-check-pill-outer:hover .dl-check-pill-icon {
-  transform: scale(1.15);
 }
 
 .dl-check-pill-icon svg {
@@ -711,18 +680,8 @@
   transform: rotate(-90deg);
 }
 
-.dl-check-pill-outer:hover .dl-check-icon-check {
-  opacity: 0;
-  transform: rotate(90deg);
-}
-
-.dl-check-pill-outer:hover .dl-check-icon-arrow {
-  opacity: 1;
-  transform: rotate(0deg);
-}
-
 .dl-check-pill-text {
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", Arial, sans-serif;
   font-weight: 600;
   font-size: 20px;
   color: #2f3547;
@@ -809,11 +768,6 @@
     transform 0.3s ease;
 }
 
-.dl-analytics-card:hover .dl-analytics-card-icon {
-  left: -55px;
-  transform: translateY(-50%) scale(1.1);
-}
-
 .dl-analytics-card-icon svg {
   width: 60px;
   height: 60px;
@@ -826,13 +780,13 @@
 }
 
 .dl-analytics-card-value {
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", Arial, sans-serif;
   font-weight: 700;
   font-size: 32px;
 }
 
 .dl-analytics-card-label {
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", Arial, sans-serif;
   font-weight: 700;
   font-size: 20px;
   letter-spacing: 0.03em;
@@ -840,7 +794,7 @@
 }
 
 .dl-analytics-card-desc {
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", Arial, sans-serif;
   font-weight: 400;
   font-size: 16px;
   color: #31344b;
@@ -900,18 +854,6 @@
   pointer-events: none;
 }
 
-.dl-step-card:hover {
-  transform: translateY(-6px);
-  box-shadow:
-    4px 4px 4px var(--step-glow),
-    -4px -4px 4px #ffffff;
-}
-
-.dl-step-card:hover::before,
-.dl-step-card:hover::after {
-  opacity: 1;
-}
-
 .dl-step-card-badge {
   display: inline-flex;
   align-items: center;
@@ -923,7 +865,7 @@
     inset -4px -4px 4px #ffffff,
     inset 4px 4px 4px rgba(196, 196, 196, 0.8);
   border-radius: 28px 0 0 28px;
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", Arial, sans-serif;
   font-weight: 700;
   font-size: 44px;
   margin-bottom: 24px;
@@ -932,16 +874,9 @@
     box-shadow 0.3s ease;
 }
 
-.dl-step-card:hover .dl-step-card-badge {
-  transform: translateY(-4px) rotate(-4deg) scale(1.08);
-  box-shadow:
-    -4px -4px 4px #ffffff,
-    4px 4px 4px var(--step-glow);
-}
-
 .dl-step-card-title {
   margin: 0 0 12px;
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", Arial, sans-serif;
   font-weight: 700;
   font-size: 28px;
   color: #31344b;
@@ -949,7 +884,7 @@
 
 .dl-step-card-desc {
   margin: 0;
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", Arial, sans-serif;
   font-size: 20px;
   line-height: 1.5;
   color: #000;
@@ -984,7 +919,7 @@
   display: flex;
   align-items: center;
   gap: 16px;
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", Arial, sans-serif;
   font-weight: 600;
   font-size: 20px;
   color: #2f3547;
@@ -995,10 +930,6 @@
   height: 36px;
   flex-shrink: 0;
   transition: transform 0.3s ease;
-}
-
-.dl-bullet-item:hover .dl-bullet-arrow {
-  transform: translateX(8px);
 }
 
 .dl-bullet-text {
@@ -1021,10 +952,6 @@
   stroke-dasharray: 1;
   stroke-dashoffset: 1;
   transition: stroke-dashoffset 0.4s ease;
-}
-
-.dl-bullet-item:hover .dl-bullet-underline line {
-  stroke-dashoffset: 0;
 }
 
 .dl-why-callouts {
@@ -1067,17 +994,12 @@
   z-index: 1;
 }
 
-.dl-callout-card:hover::before,
-.dl-callout-card:hover::after {
-  opacity: 1;
-}
-
 .dl-callout-title {
   position: relative;
   z-index: 2;
   display: inline-block;
   margin: 0 0 14px;
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", Arial, sans-serif;
   font-weight: 700;
   font-size: 28px;
   letter-spacing: 0.03em;
@@ -1095,15 +1017,11 @@
   transition: width 0.3s ease;
 }
 
-.dl-callout-card:hover .dl-callout-title::after {
-  width: 100%;
-}
-
 .dl-callout-desc {
   position: relative;
   z-index: 2;
   margin: 0;
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", Arial, sans-serif;
   font-size: 20px;
   color: #31344b;
 }
@@ -1135,7 +1053,7 @@
 .dl-cta-heading {
   margin: 0;
   max-width: 900px;
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", Arial, sans-serif;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.15;
@@ -1146,583 +1064,333 @@
 .dl-cta-subtext {
   margin: 0;
   max-width: 960px;
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", Arial, sans-serif;
   font-size: 24px;
   line-height: 1.43;
   letter-spacing: 0.03em;
   color: #000;
 }
 
-@media (min-width: 2560px) {
-  .dl-hero-card {
-    max-width: 1800px;
-  }
-}
-
-@media (max-width: 1280px) {
-  .dl-hero-card {
-    padding: 40px 32px;
-  }
-
-   .dl-accelerate-section {
-    margin: 0 12px;
-  }
-
-  .dl-advantage-section {
-    margin: 0 12px;
-  }
-}
-
-@media (min-width: 1024px) {
-  .dl-hero-image-frame {
-    z-index: auto;
-  }
-
-  .dl-hero-stats {
-    bottom: -70px;
-  }
-}
-
-@media (max-width: 1024px) {
-  .dl-hero-card {
-    justify-content: center;
-    flex-direction: column;
-    height: 100%;
-  }
-  .dl-hero-content {
-    align-items: center;
-    text-align: center;
-    flex: auto;
-    margin-bottom: 0;
-  }
-
-  .dl-hero-buttons {
-    justify-content: center;
-    margin-bottom: 26px;
-  }
-  .dl-hero-media {
-    order: 1;
-    max-width: 360px;
-  }
-
-  .dl-analytics-grid {
-    width: 90%;
-  }
-
-  .dl-adv-card {
-    width: 300px;
-    height: 340px;
-  }
-
-  .dl-advantage-grid {
-    grid-template-columns: repeat(2, 300px);
-    justify-content: center;
-    margin: 0 auto;
-  }
-
-  .dl-check-pill-outer {
-    width: auto;
-  }
-
-  .dl-advantage-wedge {
-    display: none;
-  }
-
-  .dl-hero-subtext {
-    text-align: center;
-  }
-
-  .dl-step-grid {
-    grid-template-columns: repeat(2, 1fr);
-    justify-items: center;
-    gap: 67px;
-    width: auto;
-  }
-
-  .dl-hero-image-frame {
-    z-index: auto;
-  }
-
-  .dl-hero-stats {
-    bottom: -58px;
-  }
-
-  .dl-step-card {
-    min-height: 230px;
-    width: 250px;
-    padding: 28px 20px 24px;
-  }
-
-  .dl-step-card-badge {
-    width: 80px;
-    height: 56px;
-    font-size: 34px;
-  }
-
-  .dl-adv-card-shadow,
-  .dl-adv-card-mirrored .dl-adv-card-shadow,
-  .dl-adv-card-front,
-  .dl-adv-card-mirrored .dl-adv-card-front {
-    width: 280px;
-    height: 320px;
-  }
-
-  .dl-step-card-title {
-    font-size: 22px;
-  }
-
-  .dl-hero-stats {
-    left: 160px;
-  }
-
-  .dl-step-card-desc {
-    font-size: 17px;
-  }
-
-  .dl-advantage-section {
-    grid-template-columns: 1fr;
-    gap: 57px;
-  }
-
-  .dl-advantage-text {
-    gap: 24px;
-    align-items: center;
-  }
-
-  .dl-accelerate-section {
-    height: 100%;
-    padding:16px;
-  }
-}
-@media (min-width: 768px) {
-  .dl-hero-stats {
-    justify-self: center;
-  }
-}
-
-@media (max-width: 768px) {
-  .dl-why-content {
-    align-items: center;
-  }
-
-  .dl-section-heading,
-  .dl-hero-subtext {
-    text-align: center;
-  }
-
-  .dl-skill-banner-svg {
-    width: 90%;
-    height: 90%;
-    display: block;
-  }
-
-  .dl-hero-card {
-    padding: 32px 24px;
-    gap: 32px;
-  }
-  .dl-hero-badge {
-    font-size: 18px;
-    padding: 7px 18px;
-  }
-  .dl-hero-button {
-    font-size: 18px;
-    padding: 14px 24px;
-  }
-  .dl-hero-stat-value {
-    font-size: 26px;
-  }
-  .dl-hero-stat-label {
-    font-size: 15px;
-  }
-  .dl-hero-media {
-    max-width: 300px;
-  }
-
-  .dl-accelerate {
-    flex-direction: column;
-    align-items: center;
-    gap: 32px;
-  }
-
-  .dl-accelerate-content {
-    align-items: center;
-  }
-
-  .dl-accelerate-media {
-    width: 100%;
-    height: 450px;
-  }
-
-  .dl-skill-banner {
-    clip-path: polygon(4% 0%, 96% 0%, 100% 50%, 96% 100%, 4% 100%, 0% 50%);
-  }
-
-  .dl-advantage-wedge {
-    display: none;
-  }
-
-  .dl-hero-stats {
-    left: 1px;
-  }
-
-  .dl-adv-card-shadow,
-  .dl-adv-card-mirrored .dl-adv-card-shadow,
-  .dl-adv-card-front,
-  .dl-adv-card-mirrored .dl-adv-card-front {
-    width: 280px;
-    height: 320px;
-  }
-
-  .dl-adv-card {
-    width: 280px;
-    height: 320px;
-  }
-
-  .dl-adv-card-title {
-    font-size: 20px;
-  }
-
-  .dl-adv-card-desc {
-    font-size: 18px;
-  }
-
-  .dl-advantage-grid {
-    grid-template-columns: repeat(1, 280px);
-    justify-content: center;
-    margin: 0 auto;
-    gap: 80px;
-  }
-
-  .dl-advantage-section {
-    grid-template-columns: 1fr;
-    padding: 0px 16px 48px;
-  }
-
-  .dl-howitworks-section,
-  .dl-analytics-section {
-    padding: 20px 16px 48px;
-  }
-
-  .dl-bullet-list {
-    margin-left: 68px;
-  }
-
-  .dl-why-callouts {
-    margin: 0 auto;
-  }
-
-  .dl-analytics-grid {
-    grid-template-columns: 1fr;
-    width: 70%;
-  }
-}
-
-@media (max-width: 480px) {
-  .dl-hero-heading {
-    font-size: 24px;
-    width: 100%;
-    max-width: 320px;
-  }
-
-  .dl-hero-section {
-    padding: 0 12px 48px;
-  }
-
-  .dl-hero-card {
-    padding: 24px 16px 0;
-    border-radius: 24px;
-  }
-
-  .dl-adv-card-front {
-    max-width: 280px;
-    max-height: 320px;
-  }
-
-  .dl-adv-card-badge {
-    width: 90px;
-    height: 90px;
-    font-size: 34px;
-  }
-
-  .dl-hero-content {
-    width: 100%;
-    max-width: 306px;
-  }
-
-  .dl-hero-buttons {
-    flex-direction: column;
-    width: 100%;
-    margin-bottom: 0;
-  }
-
-  .dl-breadcrumb {
-    padding: 20px 16px 48px;
-  }
-
-  .dl-hero-button {
-    width: 64%;
-    text-align: center;
-  }
-  .dl-hero-stats {
-    flex-direction: column;
-    position: static;
-  }
-
-  .dl-skill-banner-section {
-    padding: 0 16px 48px;
-  }
-
-  .dl-hero-stats-bg {
-    display: none;
-  }
-  .dl-hero-stat-pink {
-    background: rgba(191, 24, 105, 0.3);
-    border-radius: 8px;
-  }
-  .dl-hero-stat-green {
-    background: rgba(42, 115, 8, 0.3);
-    border-radius: 8px;
-  }
-
-  .dl-section-heading {
-    font-size: 24px;
-    width: 100%;
-    max-width: 324px;
-  }
-
-  .dl-adv-card {
-    width: 280px;
-    height: 320px;
-  }
-
-  .dl-check-list {
-    width: 90%;
-  }
-
-  .dl-why-content {
-    gap: 26px;
-  }
-
-  .dl-hero-subtext {
-    width: 100%;
-    max-width: 312px;
-    padding: 0 6px;
-    font-size: 16px;
-  }
-
-  .dl-bullet-item {
-    font-size: 20px;
-    font-weight: 800;
-  }
-
-  .dl-bullet-item svg {
-    width: 30px;
-    height: 24px;
-  }
-
-  .dl-hero-image-frame {
+/* Mouse hover effects are opt-in; touch scrolling keeps cards stationary. */
+@media (min-width: 1024px) and (hover: hover) and (pointer: fine) {
+  .dl-hero-button-primary:hover,
+  .dl-hero-button-secondary:hover {
+    box-shadow:
+      inset -4px -4px 4px #ffffff,
+      inset 4px 4px 4px #c6c6c9;
+  }
+  .dl-adv-card:hover,
+  .dl-adv-card:hover .dl-adv-card-front,
+  .dl-adv-card-mirrored:hover .dl-adv-card-front {
+    transform: none;
+  }
+  .dl-adv-card:hover .dl-adv-card-badge {
+    animation: none;
+  }
+  .dl-check-pill-outer:hover {
+    transform: translateY(-4px);
+    box-shadow:
+      -4px -4px 4px #ffffff,
+      4px 4px 4px var(--pill-glow);
+  }
+  .dl-check-pill-outer:hover .dl-check-pill {
+    background: var(--pill-bg-hover);
+  }
+  .dl-check-pill-outer:hover .dl-check-pill-icon {
+    transform: scale(1.15);
+  }
+  .dl-check-pill-outer:hover .dl-check-icon-check {
+    opacity: 0;
+    transform: rotate(90deg);
+  }
+  .dl-check-pill-outer:hover .dl-check-icon-arrow {
+    opacity: 1;
+    transform: rotate(0deg);
+  }
+  .dl-analytics-card:hover .dl-analytics-card-icon {
+    transform: translateY(-50%) scale(1.05);
+  }
+  .dl-step-card:hover {
+    transform: translateY(-6px);
+    box-shadow:
+      4px 4px 4px var(--step-glow),
+      -4px -4px 4px #ffffff;
+  }
+  .dl-step-card:hover::before,
+  .dl-step-card:hover::after {
+    opacity: 1;
+  }
+  .dl-step-card:hover .dl-step-card-badge {
+    transform: translateY(-4px) rotate(-4deg) scale(1.08);
+    box-shadow:
+      -4px -4px 4px #ffffff,
+      4px 4px 4px var(--step-glow);
+  }
+  .dl-bullet-item:hover .dl-bullet-arrow {
+    transform: translateX(8px);
+  }
+  .dl-bullet-item:hover .dl-bullet-underline line {
+    stroke-dashoffset: 0;
+  }
+  .dl-callout-card:hover::before,
+  .dl-callout-card:hover::after {
+    opacity: 1;
+  }
+  .dl-callout-card:hover .dl-callout-title::after {
     width: 100%;
   }
-
-  .dl-step-grid {
-    gap: 36px !important;
-  }
-
-  .dl-why-section {
-    padding: 0 16px 48px;
-  }
-
-  .dl-transform-icons {
-    padding: 0 16px 48px;
-  }
-
-  .dl-cta-section {
-    padding-top: 0;
-  }
-
-  .dl-cta-heading {
-    font-size: 24px;
-  }
-
-  .dl-cta-subtext {
-    font-size: 16px;
-  }
-
-  .dl-analytics-card-value {
-    font-size: 24px;
-  }
-
-  .dl-howitworks-section {
-    gap: 32px;
-  }
-
-  .dl-accelerate-section {
-    height: 100%;
-    margin: 0 16px;
-    padding: 0 16px 48px;
-  }
-
-  .dl-callout-title {
-    margin: 0 8px 14px 0;
-    font-size: 20px;
-  }
-
-  .dl-callout-desc {
-    font-size: 16px;
-  }
-
-  .dl-hero-media {
-    max-width: 340px;
-  }
-
-  .dl-accelerate-image-frame {
-    border-radius: 12px;
-  }
-
-  .dl-step-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .dl-transform-row {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  /* .dl-pill-label {
-    width: 280px;
-    box-sizing: border-box;
-    padding: 20px 16px;
-  } */
-
-  .dl-analytics-grid {
-    grid-template-columns: 1fr;
-    width: 80%;
-  }
-
-  .dl-accelerate {
-    flex-direction: column;
-    padding: 16px;
-  }
-
-  .dl-hero-badge {
-    white-space: nowrap;
-  }
-
-  .dl-advantage-text {
-    align-items: center;
-    padding-top: 24px;
-  }
-
-  .dl-advantage-grid {
-    grid-template-columns: 1fr;
-    margin: 0 16px;
-    justify-items: center;
-    gap: 77px;
-  }
-
-  .dl-cta-card {
-    padding: 22px;
-  }
 }
 
-@media (max-width: 375px) {
-  .dl-hero-heading {
-    font-size: 26px;
-  }
-  .dl-hero-stat-value {
-    font-size: 22px;
-  }
+/* Shared sizing: the page owns its gutters, and children may shrink safely. */
+.digital-literacy {
+  width: 100%;
+  min-width: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
 }
-
-
-/* Final reference-card geometry override */
-.dl-adv-card { width: 275px; height: 275px; }
+.digital-literacy *,
+.digital-literacy *::before,
+.digital-literacy *::after { box-sizing: border-box; }
+.digital-literacy :where(h1, h2, h3, h4, p, button) { overflow-wrap: anywhere; }
+.digital-literacy :where(img, video) { display: block; max-width: 100%; }
+.dl-breadcrumb { flex-wrap: wrap; }
+.dl-breadcrumb-current { min-width: 0; }
+.dl-breadcrumb-arrow { flex-shrink: 0; }
+.dl-hero-content, .dl-hero-media, .dl-advantage-text, .dl-advantage-grid,
+.dl-accelerate-content, .dl-accelerate-media, .dl-why-content,
+.dl-why-callouts, .dl-analytics-card-text, .dl-check-pill-text,
+.dl-analytics-grid > *, .dl-step-grid > * { min-width: 0; }
+.dl-hero-badge { max-width: 100%; line-height: 1.4; }
+.dl-hero-button { min-height: 48px; max-width: 100%; line-height: 1.35; }
+.dl-hero-card {
+  display: grid;
+  grid-template-columns: minmax(0, 1.35fr) minmax(0, 1fr);
+  gap: clamp(24px, 3.4vw, 48px);
+  align-items: center;
+}
+.dl-hero-content { margin-bottom: 64px; padding-block: 24px; }
+.dl-hero-media { width: 100%; align-self: end; justify-self: end; }
+.dl-hero-image-frame { position: absolute; inset: 0 5%; width: auto; height: auto; }
+.dl-hero-stats {
+  position: relative;
+  inset: auto;
+  width: min(698px, calc(100% - 72px));
+  margin: -64px 0 0 36px;
+}
+.dl-hero-stat { flex: 1 1 0; min-width: 0; padding-inline: 12px; }
+.dl-skill-banner-section { padding: 40px 16px 48px; }
+.dl-skill-banner-svg { max-width: 100%; }
+.dl-advantage-section {
+  width: 100%;
+  margin: 0 auto;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 610px);
+  gap: clamp(32px, 4vw, 60px);
+}
+.dl-advantage-wedge { left: 0; max-width: 100%; }
+.dl-advantage-grid {
+  width: 100%;
+  grid-template-columns: repeat(2, minmax(0, 275px));
+  gap: 40px clamp(24px, 4vw, 60px);
+  align-items: stretch;
+  grid-auto-rows: 1fr;
+  justify-items: center;
+}
+/* Keep the 25px coloured offset; let text determine each row's height. */
+.dl-adv-card {
+  display: flex;
+  width: 100%;
+  max-width: 275px;
+  height: auto;
+  padding: 23px 25px 0 0;
+}
 .dl-adv-card-shadow,
-.dl-adv-card-mirrored .dl-adv-card-shadow { width: 250px; height: 250px; left: 25px; top: 0; }
+.dl-adv-card-mirrored .dl-adv-card-shadow {
+  inset: 0 0 23px 25px;
+  width: auto;
+  height: auto;
+}
 .dl-adv-card-front,
-.dl-adv-card-mirrored .dl-adv-card-front { width: 250px; height: 250px; left: 0; top: 23px; padding: 105px 16px 24px; }
-.dl-adv-card-badge { width: 80px; height: 80px; font-size: 36px; }
-@media (max-width: 1024px) {
-  .dl-adv-card { width: 275px; height: 275px; }
-  .dl-advantage-grid { grid-template-columns: repeat(2, 275px); }
-  .dl-adv-card-shadow, .dl-adv-card-mirrored .dl-adv-card-shadow,
-  .dl-adv-card-front, .dl-adv-card-mirrored .dl-adv-card-front { width: 250px; height: 250px; }
+.dl-adv-card-mirrored .dl-adv-card-front {
+  position: relative;
+  inset: auto;
+  width: 100%;
+  height: auto;
+  min-height: 250px;
+  padding: 96px 16px 24px;
+  justify-content: flex-start;
 }
-@media (max-width: 768px) {
-  .dl-adv-card { width: 275px; height: 275px; }
-  .dl-advantage-grid { grid-template-columns: 275px; }
+.dl-adv-card-title { min-height: 56px; display: flex; align-items: center; justify-content: center; }
+.dl-adv-card-desc { margin-top: 12px; line-height: 1.5; }
+.dl-transform-icons { width: 100%; }
+.dl-pill-label { max-width: 100%; }
+.dl-accelerate-section { width: calc(100% - 32px); }
+.dl-accelerate {
+  display: grid;
+  grid-template-columns: minmax(0, 458fr) minmax(0, 602fr);
+  align-items: center;
+  height: auto;
+  gap: clamp(24px, 5vw, 64px);
 }
-@media (max-width: 480px) {
-  .dl-adv-card { width: 275px; height: 275px; }
-  .dl-adv-card-front { max-width: 250px; max-height: 250px; }
-  .dl-adv-card-badge { width: 80px; height: 80px; font-size: 36px; }
+.dl-accelerate-image { position: absolute; inset: 0; }
+.dl-check-pill-text { line-height: 1.45; }
+.dl-analytics-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  padding-inline: 38px;
+  max-width: 974px;
+  align-items: stretch;
+}
+.dl-analytics-card { min-height: 144px; display: flex; align-items: center; }
+.dl-analytics-card-label, .dl-analytics-card-desc { line-height: 1.45; }
+.dl-analytics-card-value { line-height: 1.2; }
+.dl-step-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+.dl-why-section {
+  width: 100%;
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
+}
+.dl-why-callouts { width: 100%; }
+.dl-bullet-item { line-height: 1.45; }
+.dl-bullet-item > svg { flex-shrink: 0; }
+.dl-callout-card {
+  filter: none;
+  background: #dfe6e9;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.18);
+}
+.dl-callout-title { display: block; line-height: 1.3; }
+.dl-callout-desc { line-height: 1.5; }
+
+/* Compact laptops and tablets: change columns before their content crowds. */
+@media (max-width: 1119px) {
+  .dl-advantage-section { grid-template-columns: minmax(0, 1fr); gap: 36px; }
+  .dl-advantage-text { align-items: center; text-align: center; max-width: 720px; margin-inline: auto; }
+  .dl-advantage-wedge { display: none; }
+  .dl-advantage-grid { max-width: 610px; margin-inline: auto; }
+  .dl-step-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); max-width: 800px; }
+  .dl-step-card { min-height: 260px; }
+  .dl-accelerate-section { padding: 24px; }
+  .dl-accelerate { padding: 24px; gap: 28px; }
+  .dl-check-pill { padding: 14px 20px; }
+  .dl-why-section { gap: 32px; }
+  .dl-callout-card { padding: 28px; }
+}
+@media (max-width: 1023px) {
+  .dl-hero-card { grid-template-columns: minmax(0, 1fr); padding: 32px 24px 0; gap: 28px; }
+  .dl-hero-content { align-items: center; text-align: center; width: 100%; margin: 0 auto; padding: 0; gap: 24px; }
+  .dl-hero-buttons { justify-content: center; gap: 20px; }
+  .dl-hero-media { max-width: 400px; justify-self: center; }
+  .dl-hero-stats { width: 100%; max-width: 698px; margin: 24px auto 0; }
+  .dl-hero-heading, .dl-section-heading, .dl-cta-heading { font-size: 30px; }
+  .dl-hero-subtext, .dl-cta-subtext { font-size: 20px; }
+  .dl-accelerate { grid-template-columns: minmax(0, 1fr); gap: 32px; }
+  .dl-accelerate-media { width: 100%; max-width: 480px; margin-inline: auto; }
+  .dl-accelerate-content { align-items: center; text-align: center; width: 100%; margin-inline: auto; }
+  .dl-check-list { text-align: left; }
+  .dl-analytics-grid { gap: 36px 60px; padding-inline: 30px; }
+  .dl-analytics-card { padding: 20px 24px 20px 74px; }
+  .dl-analytics-card-icon { left: -30px; width: 88px; height: 88px; }
+  .dl-analytics-card-icon svg { width: 48px; height: 48px; }
+  .dl-analytics-card-value { font-size: 28px; }
+  .dl-analytics-card-label { font-size: 18px; }
+  .dl-why-section { grid-template-columns: minmax(0, 1fr); }
+  .dl-why-content { width: 100%; max-width: 720px; align-items: center; text-align: center; margin-inline: auto; }
+  .dl-bullet-list { max-width: 440px; margin-inline: auto; text-align: left; }
+  .dl-why-callouts { max-width: 610px; margin-inline: auto; gap: 28px; }
 }
 
-/* =========================================================
-   MOBILE VIEW FIX ONLY
-   1) Transform / Upskill / Adapt = exactly same size
-   2) Skill banner = larger and clearer on mobile
-   No desktop/tablet or other design changes
-   ========================================================= */
-@media (max-width: 480px) {
-
-  /* All three dashed oval labels use one identical size */
-  .dl-transform-icons > .dl-pill-label,
-  .dl-transform-row .dl-pill-label {
-    width: 260px !important;
-    height: 82px !important;
-    min-width: 260px !important;
-    max-width: 260px !important;
-    min-height: 82px !important;
-    max-height: 82px !important;
-    padding: 0 !important;
-    box-sizing: border-box !important;
-    flex: 0 0 260px !important;
+/* Phones: natural text wrapping and a full, uncropped banner background. */
+@media (max-width: 767px) {
+  .dl-breadcrumb { padding-top: 20px; }
+  .dl-breadcrumb-label, .dl-breadcrumb-current { font-size: 14px; line-height: 1.45; }
+  .dl-hero-section, .dl-advantage-section, .dl-analytics-section,
+  .dl-howitworks-section, .dl-why-section { padding: 28px 16px; }
+  .dl-hero-heading, .dl-section-heading, .dl-cta-heading { font-size: clamp(24px, 4.5vw, 28px); line-height: 1.3; }
+  .dl-hero-subtext, .dl-cta-subtext { font-size: 16px; line-height: 1.5; }
+  .dl-hero-badge { font-size: clamp(16px, 3vw, 18px); padding: 8px 18px; }
+  .dl-hero-card { border-radius: 24px; padding: 24px 20px 0; gap: 24px; }
+  .dl-hero-content { gap: 20px; }
+  .dl-hero-button { font-size: 18px; padding: 14px 24px; }
+  .dl-hero-media { max-width: 360px; }
+  .dl-hero-stat-value { font-size: 26px; }
+  .dl-hero-stat-label { font-size: 15px; line-height: 1.4; }
+  .dl-hero-stat { padding: 14px 8px; }
+  .dl-skill-banner-section { padding: 12px 16px 28px; }
+  .dl-skill-banner { display: grid; place-items: center; min-height: 180px; aspect-ratio: auto; padding: 40px 8%; }
+  .dl-skill-banner-svg { position: absolute; inset: 0; width: 100%; height: 100%; }
+  .dl-skill-banner-art-text { display: none; }
+  .dl-skill-banner-sr-text {
+    position: relative; z-index: 1;
+    width: 100%; height: auto; margin: 0; padding: 0;
+    overflow: visible; clip: auto; white-space: normal;
+    font-size: clamp(18px, 3.8vw, 24px); line-height: 1.4;
+    font-weight: 700; color: #31344b; text-align: center;
+    text-shadow: 0 2px 3px rgba(0, 0, 0, 0.15);
   }
-
-  .dl-transform-icons {
-    width: 100%;
-    align-items: center;
-  }
-
-  .dl-transform-row {
-    width: 100%;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 24px;
-  }
-
-  .dl-pill-label-text {
-    width: 100%;
-    text-align: center;
-    font-size: 28px;
-    line-height: 1.2;
-  }
-
-  /* Enlarge the polygon message section on mobile */
-  .dl-skill-banner-section {
-    padding: 16px 0 48px !important;
-    overflow: hidden;
-  }
-
-  .dl-skill-banner {
-    width: 100%;
-    height: 160px !important;
-    max-width: none;
-    aspect-ratio: auto !important;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    clip-path: none !important;
-  }
-
-  .dl-skill-banner-svg {
-    width: 125% !important;
-    height: auto !important;
-    max-width: none !important;
-    flex: 0 0 125%;
-    display: block;
+  .dl-skill-banner-sr-text > span { display: block; }
+  .dl-skill-banner-accent { color: #2d4cc8; font-style: normal; }
+  .dl-advantage-text { gap: 20px; }
+  .dl-adv-card-desc { font-size: 16px; line-height: 1.5; }
+  .dl-transform-icons { gap: 24px; padding: 28px 16px; }
+  .dl-transform-row { justify-content: center; gap: 24px; }
+  .dl-pill-label { width: min(260px, 100%); min-height: 82px; padding: 16px 24px; flex: none; }
+  .dl-pill-label-text { font-size: 28px; line-height: 1.25; }
+  .dl-accelerate-section { padding: 16px; border-radius: 24px; }
+  .dl-accelerate { padding: 16px; gap: 24px; }
+  .dl-accelerate-content { gap: 20px; }
+  .dl-accelerate-media { max-width: 400px; }
+  .dl-accelerate-image-frame { border-radius: 16px; }
+  .dl-check-list { gap: 16px; }
+  .dl-check-pill-outer { padding: 8px; }
+  .dl-check-pill { padding: 12px 16px; gap: 10px; }
+  .dl-check-pill-icon { width: 28px; height: 28px; }
+  .dl-check-pill-text { font-size: 16px; }
+  .dl-analytics-header, .dl-analytics-section, .dl-howitworks-section { gap: 24px; }
+  .dl-analytics-grid { grid-template-columns: minmax(0, 1fr); max-width: 520px; gap: 28px; padding-inline: 24px 0; }
+  .dl-analytics-card { padding: 22px 24px 22px 72px; min-height: 132px; }
+  .dl-analytics-card-icon { left: -24px; width: 80px; height: 80px; }
+  .dl-analytics-card-icon svg { width: 42px; height: 42px; }
+  .dl-analytics-card-value { font-size: 24px; }
+  .dl-analytics-card-label { font-size: 18px; }
+  .dl-analytics-card-desc { font-size: 15px; }
+  .dl-step-grid { gap: 24px; }
+  .dl-step-card { padding: 24px 20px; min-height: 0; border-right-width: 8px; border-radius: 16px 64px 64px 16px; }
+  .dl-step-card-badge { width: 80px; height: 56px; font-size: 34px; margin-bottom: 20px; }
+  .dl-step-card-title { font-size: 22px; }
+  .dl-step-card-desc { font-size: 16px; }
+  .dl-why-content { gap: 24px; }
+  .dl-bullet-list { gap: 20px; max-width: 360px; }
+  .dl-bullet-item { font-size: 18px; gap: 12px; }
+  .dl-bullet-item > svg { width: 30px; height: 26px; }
+  .dl-callout-card { border-width: 3px; padding: 28px 24px; border-radius: 0 48px; }
+  .dl-callout-card::before, .dl-callout-card::after { inset: -3px; }
+  .dl-callout-title { font-size: 20px; margin-bottom: 12px; }
+  .dl-callout-desc { font-size: 16px; }
+  .dl-cta-section { padding: 28px 16px 48px; }
+  .dl-cta-card { padding: 28px 20px; gap: 24px; border-radius: 24px; }
+}
+@media (max-width: 639px) {
+  .dl-advantage-grid { grid-template-columns: minmax(0, 275px); gap: 32px; }
+  .dl-transform-row { flex-direction: column; align-items: center; }
+}
+@media (max-width: 599px) {
+  .dl-step-grid { grid-template-columns: minmax(0, 1fr); max-width: 360px; }
+}
+@media (max-width: 479px) {
+  .dl-hero-buttons { width: 100%; flex-direction: column; gap: 16px; }
+  .dl-hero-button { width: 100%; max-width: 280px; }
+  .dl-hero-stats { flex-direction: column; padding: 12px; }
+  .dl-hero-stats-bg { display: none; }
+  .dl-hero-stat { flex: none; width: 100%; padding: 16px 12px; }
+  .dl-hero-stat-pink { background: rgba(191, 24, 105, 0.3); border-radius: 8px; }
+  .dl-hero-stat-green { background: rgba(42, 115, 8, 0.3); border-radius: 8px; }
+  .dl-accelerate { padding: 12px; }
+  .dl-check-pill { padding: 12px; }
+  .dl-check-pill-text { font-size: 15px; }
+}
+@media (max-width: 1023px), (hover: none), (pointer: coarse), (prefers-reduced-motion: reduce) {
+  .dl-analytics-card-border rect { animation: none; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .digital-literacy *, .digital-literacy *::before, .digital-literacy *::after {
+    animation: none !important;
+    transition: none !important;
   }
 }
-

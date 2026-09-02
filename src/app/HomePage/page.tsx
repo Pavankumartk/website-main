@@ -50,7 +50,11 @@ function ChevronsRightIcon({ className }: { className?: string }) {
 
 function HeroCarousel() {
   const [activeSlide, setActiveSlide] = useState(0);
-  const [isPaused, setIsPaused] = useState(false);
+  const [isHovered, setIsHovered] = useState(false);
+  const [isKeyboardFocused, setIsKeyboardFocused] = useState(false);
+  const [videoNeedsPlay, setVideoNeedsPlay] = useState(false);
+  const videoRefs = useRef<(HTMLVideoElement | null)[]>([]);
+  const isPaused = isHovered || isKeyboardFocused;
   const [prefersReducedMotion, setPrefersReducedMotion] = useState(false);
   const intervalRef = useRef<ReturnType<typeof setInterval> | null>(null);
 
@@ -72,6 +76,37 @@ function HeroCarousel() {
     };
   }, [isPaused, activeSlide, prefersReducedMotion]);
 
+  useEffect(() => {
+    let cancelled = false;
+    setVideoNeedsPlay(false);
+
+    videoRefs.current.forEach((video, index) => {
+      if (!video) return;
+      if (index !== activeSlide || prefersReducedMotion) {
+        video.pause();
+        return;
+      }
+      // Mobile browsers may pause hidden videos. Resume only the visible one.
+      video.muted = true;
+      video.playsInline = true;
+      video.play().catch((error: DOMException) => {
+        if (!cancelled && error.name === "NotAllowedError") setVideoNeedsPlay(true);
+      });
+    });
+    if (prefersReducedMotion && heroSlides[activeSlide].type === "video") {
+      setVideoNeedsPlay(true);
+    }
+    return () => { cancelled = true; };
+  }, [activeSlide, prefersReducedMotion]);
+
+  const playActiveVideo = () => {
+    const video = videoRefs.current[activeSlide];
+    if (!video) return;
+    video.muted = true;
+    video.playsInline = true;
+    video.play().then(() => setVideoNeedsPlay(false)).catch(() => setVideoNeedsPlay(true));
+  };
+
   const goToSlide = (index: number) => {
     setActiveSlide(index);
   };
@@ -85,20 +120,51 @@ function HeroCarousel() {
   };
 
   return (
-    <section data-home-hero className={styles["hero-section"]} aria-roledescription="carousel" aria-label="NeuroLXP™ highlights" onMouseEnter={() => setIsPaused(true)} onMouseLeave={() => setIsPaused(false)} onFocus={() => setIsPaused(true)} onBlur={() => setIsPaused(false)}>
+    <section
+      data-home-hero
+      className={styles["hero-section"]}
+      aria-roledescription="carousel"
+      aria-label="NeuroLXP™ highlights"
+      onPointerEnter={(event) => {
+        if (event.pointerType === "mouse" && window.matchMedia("(hover: hover) and (pointer: fine)").matches) setIsHovered(true);
+      }}
+      onPointerLeave={(event) => { if (event.pointerType === "mouse") setIsHovered(false); }}
+      onPointerDownCapture={(event) => {
+        setIsKeyboardFocused(false);
+        if (event.pointerType !== "mouse") setIsHovered(false);
+      }}
+      onFocusCapture={(event) => setIsKeyboardFocused(event.target.matches(":focus-visible"))}
+      onBlurCapture={(event) => {
+        if (!event.currentTarget.contains(event.relatedTarget as Node | null)) setIsKeyboardFocused(false);
+      }}
+    >
       <div className={styles["hero-frame"]}>
         <div className={styles["hero-image-stage"]}>
           {heroSlides.map((slide, index) => (
             <div key={slide.id} className={`${styles["hero-slide"]}${index === activeSlide ? ` ${styles["hero-slide-active"]}` : ""}`} role="group" aria-roledescription="slide" aria-label={`${index + 1} of ${heroSlides.length}`} aria-hidden={index !== activeSlide}>
               {slide.type === "video" ? (
-                <video className={`${styles["hero-slide-image"]} ${styles["hero-slide-video"]}`} autoPlay muted loop playsInline aria-hidden="true">
+                <video
+                  ref={(video) => { videoRefs.current[index] = video; }}
+                  className={`${styles["hero-slide-image"]} ${styles["hero-slide-video"]}`}
+                  autoPlay={index === activeSlide && !prefersReducedMotion}
+                  preload={index === activeSlide ? "auto" : "metadata"}
+                  muted
+                  loop
+                  playsInline
+                  aria-hidden="true"
+                >
                   <source src={slide.src} type="video/mp4" />
                 </video>
               ) : (
-                <Image src={slide.image} alt="" fill priority={index === 0} sizes="(min-width: 1312px) 1208px, 100vw" className={styles["hero-slide-image"]} />
+                <Image src={slide.image} alt="" fill priority={index === 0} loading={index === 0 || index === activeSlide || index === (activeSlide + 1) % heroSlides.length ? "eager" : "lazy"} sizes="(min-width: 1312px) 1208px, 100vw" className={styles["hero-slide-image"]} />
               )}
             </div>
           ))}
+          {heroSlides[activeSlide].type === "video" && videoNeedsPlay && (
+            <button type="button" className={styles["hero-video-play-button"]} onClick={playActiveVideo} aria-label="Play slide video">
+              <PlayIcon className={styles["hero-video-play-icon"]} />
+            </button>
+          )}
           <button type="button" className={`${styles["hero-nav-button"]} ${styles["hero-nav-button-prev"]}`} onClick={goToPrevious} aria-label="Previous slide">
             <ChevronsLeftIcon className={styles["hero-nav-icon"]} />
           </button>
