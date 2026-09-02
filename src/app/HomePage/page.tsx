@@ -14,12 +14,15 @@ import styles from "./home-page.module.css";
 
 const Lottie = dynamic(() => import("lottie-react"), { ssr: false });
 
-type HeroSlide = { id: number; type: "image"; image: string; heading: string } | { id: number; type: "video"; src: string; heading: string };
+type HeroSlide = (
+  | { id: number; type: "image"; image: string; heading: string }
+  | { id: number; type: "video"; src: string; heading: string }
+) & { mobileLines?: readonly [string, string] };
 
 const heroSlides: HeroSlide[] = [
-  { id: 1, type: "image", image: "/images/brainstorm-meeting.webp", heading: "Empowering Lifelong Learning" },
+  { id: 1, type: "image", image: "/images/brainstorm-meeting.webp", heading: "Empowering Lifelong Learning", mobileLines: ["Empowering", "Lifelong Learning"] },
   { id: 2, type: "image", image: "/images/student-online-young-cute-girl-glasses-orange-sweater-studying-computer-with-headphones.webp", heading: "Built for Education That Goes Beyond Classroom" },
-  { id: 3, type: "video", src: "/videos/uhd_30fps.mp4", heading: "Every Question Leads to Growth" },
+  { id: 3, type: "video", src: "/videos/uhd_30fps.mp4", heading: "Every Question Leads to Growth", mobileLines: ["Every Question", "Leads to Growth"] },
   { id: 4, type: "image", image: "/images/Organisation.jpeg", heading: "Beyond the Classroom, Beyond Limits" },
   { id: 5, type: "image", image: "/images/Gratuation.jpeg", heading: "Designed for Minds That Refuse to Average" },
   { id: 6, type: "video", src: "/videos/home.mp4", heading: "Where Great Ideas Take Shape Together" },
@@ -82,7 +85,7 @@ function HeroCarousel() {
   };
 
   return (
-    <section className={styles["hero-section"]} aria-roledescription="carousel" aria-label="NeuroLXP™ highlights" onMouseEnter={() => setIsPaused(true)} onMouseLeave={() => setIsPaused(false)} onFocus={() => setIsPaused(true)} onBlur={() => setIsPaused(false)}>
+    <section data-home-hero className={styles["hero-section"]} aria-roledescription="carousel" aria-label="NeuroLXP™ highlights" onMouseEnter={() => setIsPaused(true)} onMouseLeave={() => setIsPaused(false)} onFocus={() => setIsPaused(true)} onBlur={() => setIsPaused(false)}>
       <div className={styles["hero-frame"]}>
         <div className={styles["hero-image-stage"]}>
           {heroSlides.map((slide, index) => (
@@ -104,10 +107,18 @@ function HeroCarousel() {
           </button>
         </div>
 
-        <div className={styles["hero-caption-stage"]}>
+        <div data-hero-caption-stage className={styles["hero-caption-stage"]}>
           {heroSlides.map((slide, index) => (
-            <div key={slide.id} className={`${styles["hero-caption"]}${index === activeSlide ? ` ${styles["hero-caption-active"]}` : ""}`} aria-hidden={index !== activeSlide}>
-              <h1 className={styles["hero-heading"]}>{slide.heading}</h1>
+            <div data-hero-caption key={slide.id} className={`${styles["hero-caption"]}${index === activeSlide ? ` ${styles["hero-caption-active"]}` : ""}`} aria-hidden={index !== activeSlide}>
+              <h1 className={styles["hero-heading"]}>
+                {slide.mobileLines ? (
+                  <>
+                    {slide.mobileLines[0]}{" "}
+                    <br className={styles["hero-mobile-break"]} />
+                    {slide.mobileLines[1]}
+                  </>
+                ) : slide.heading}
+              </h1>
             </div>
           ))}
           <div className={styles["hero-dots"]}>
@@ -116,6 +127,47 @@ function HeroCarousel() {
             ))}
           </div>
         </div>
+
+        {/* Keep full mobile captions visible even with older carousel CSS. */}
+        <style jsx global>{`
+          @media (max-width: 767px) {
+            [data-home-hero] [data-hero-caption-stage] {
+              width: 100% !important;
+              max-width: 100% !important;
+              height: auto !important;
+              max-height: none !important;
+              overflow: visible !important;
+              grid-template-rows: auto auto !important;
+            }
+
+            [data-home-hero] [data-hero-caption] {
+              width: 100% !important;
+              height: auto !important;
+              max-height: none !important;
+              align-self: stretch !important;
+              overflow: visible !important;
+            }
+
+            [data-home-hero] [data-hero-caption] h1 {
+              display: block !important;
+              width: 100% !important;
+              max-width: 100% !important;
+              height: auto !important;
+              max-height: none !important;
+              margin: 0 !important;
+              padding: 0 8px !important;
+              box-sizing: border-box !important;
+              white-space: normal !important;
+              overflow: visible !important;
+              text-overflow: clip !important;
+              -webkit-line-clamp: unset !important;
+              line-clamp: none !important;
+              word-break: normal !important;
+              overflow-wrap: anywhere !important;
+              line-height: 1.3 !important;
+            }
+          }
+        `}</style>
 
         <span className={styles["sr-only"]} aria-live="polite" aria-atomic="true">
           {`Slide ${activeSlide + 1} of ${heroSlides.length}: ${heroSlides[activeSlide].heading}`}

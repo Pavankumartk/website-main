@@ -211,7 +211,7 @@ a:focus-visible {
   overflow-wrap: break-word;
 }
 
-/* Keep “Learn Beyond Limits” on one line in the desktop view. */
+/* Explicit caption breaks are used only on mobile. */
 .hero-mobile-break {
   display: none;
 }
@@ -2921,9 +2921,9 @@ a:focus-visible {
     gap: clamp(2px, 1vw, 7px);
     min-height: 24px;
   }
-  /* Break only “Learn Beyond Limits” into two lines on mobile. */
-  .hero-mobile-break {
-    display: block;
+  /* Slides 1 and 3 use an explicit two-line caption on mobile. */
+  .hero-heading .hero-mobile-break {
+    display: inline;
   }
   .hero-dot { width: 24px; height: 24px; min-width: 24px; }
   .hero-dot::after { width: 8px; height: 8px; }
