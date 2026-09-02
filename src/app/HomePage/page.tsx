@@ -20,7 +20,7 @@ const heroSlides: HeroSlide[] = [
   { id: 1, type: "image", image: "/images/brainstorm-meeting.webp", heading: "Empowering Lifelong Learning" },
   { id: 2, type: "image", image: "/images/student-online-young-cute-girl-glasses-orange-sweater-studying-computer-with-headphones.webp", heading: "Built for Education That Goes Beyond Classroom" },
   { id: 3, type: "video", src: "/videos/uhd_30fps.mp4", heading: "Every Question Leads to Growth" },
-  { id: 4, type: "image", image: "/images/Organisation.jpeg", heading: "Learn Beyond Limits" },
+  { id: 4, type: "image", image: "/images/Organisation.jpeg", heading: "Beyond the Classroom, Beyond Limits" },
   { id: 5, type: "image", image: "/images/Gratuation.jpeg", heading: "Designed for Minds That Refuse to Average" },
   { id: 6, type: "video", src: "/videos/home.mp4", heading: "Where Great Ideas Take Shape Together" },
   { id: 7, type: "image", image: "/images/group-different-people-volunteering-foodbank.webp", heading: "Reimagine How the World Learns" },
@@ -186,7 +186,7 @@ function LearningOdyssey({ onBookDemoClick, bookDemoButtonRef }: { onBookDemoCli
     <section className={styles["odyssey-section"]} aria-labelledby="odyssey-heading">
       <div className={styles["odyssey-heading-block"]}>
         <h2 className={styles["odyssey-heading"]} id="odyssey-heading">
-          Embark on a Learning<span className={styles["odyssey-heading-accent"]}> Odyssey</span> with NeuroLXP
+          Embark on a <span className={styles["odyssey-heading-accent"]}>Learning Odyssey</span> with NeuroLXP
         </h2>
         <p className={styles["odyssey-subtext"]}>NeuroLXP is more than a learning platform it's an intelligent platform that helps learners grow, adapt, and succeed.</p>
         <button type="button" className={styles["odyssey-demo-button"]} onClick={onBookDemoClick} ref={bookDemoButtonRef}>
@@ -1240,10 +1240,10 @@ function FAQItem({ item, isOpen, onToggle }: { item: FAQItemData; isOpen: boolea
         <button type="button" id={buttonId} className={styles["faq-item-header"]} onClick={onToggle} aria-expanded={isOpen} aria-controls={panelId}>
           <div className={styles["faq-item-header-left"]}>
             <span className={styles["faq-item-triangle"]} style={{ borderLeftColor: item.colorStart }} aria-hidden="true" />
-            <span className={styles["faq-item-number"]} style={{ backgroundImage: `linear-gradient(180deg, ${item.colorStart} 0%` }} aria-hidden="true">
+            <span className={styles["faq-item-number"]} style={{ backgroundImage: `linear-gradient(180deg, ${item.colorStart} 0%, ${item.colorEnd} 100%)` }} aria-hidden="true">
               {item.number}
             </span>
-            <span className={styles["faq-item-divider"]} style={{ backgroundImage: `linear-gradient(180deg, ${item.colorStart} 0%` }} aria-hidden="true" />
+            <span className={styles["faq-item-divider"]} style={{ backgroundImage: `linear-gradient(180deg, ${item.colorStart} 0%, ${item.colorEnd} 100%)` }} aria-hidden="true" />
             <span className={styles["faq-item-title"]}>{item.title}</span>
           </div>
           <span className={styles["faq-item-toggle"]} style={{ color: item.colorStart }} aria-hidden="true">
@@ -1411,7 +1411,9 @@ export default function HomePage() {
       <BookDemoButton />
     </main>
 
-      <Footer />
+      <div className={styles["home-footer"]}>
+        <Footer />
+      </div>
     </>
   );
 }

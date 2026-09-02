@@ -1,8 +1,9 @@
 /* Complete replacement stylesheet. Replace the previous file in full.
    Design: original colours, shadows, shapes and component states.
-   Font: Segoe UI only; no fallback families are declared.
+   Font: Segoe UI; FAQ includes sans-serif fallbacks for other devices.
    Layout: shared fluid sizing, followed by four width breakpoints.
-   Keep the app's carousel and accordion JavaScript unchanged. */
+   Keep the app's carousel and accordion JavaScript unchanged.
+   Learning Odyssey is grouped in the matching page.tsx heading. */
 
 :global(html) {
   background-color: #dfe6e9 !important;
@@ -1869,6 +1870,7 @@ a:focus-visible {
   margin: 0;
   width: 100%;
   font-family: "Segoe UI";
+  font-style: normal;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.25;
@@ -1880,7 +1882,8 @@ a:focus-visible {
 
 .faq-heading-accent {
   color: #2d4cc8;
-  font-style: italic;
+  font-family: inherit;
+  font-style: normal;
 }
 
 .faq-illustration {
@@ -1945,8 +1948,9 @@ a:focus-visible {
 
 .faq-item-number {
   font-family: "Segoe UI";
+  font-style: normal;
   font-weight: 700;
-  font-size: 40px;
+  font-size: 28px;
   line-height: 1;
   letter-spacing: 0.03em;
   background-clip: text;
@@ -1966,8 +1970,9 @@ a:focus-visible {
 
 .faq-item-title {
   font-family: "Segoe UI";
+  font-style: normal;
   font-weight: 500;
-  font-size: 22px;
+  font-size: 24px;
   line-height: 1.33;
   letter-spacing: 0.03em;
   color: #000000;
@@ -2016,8 +2021,9 @@ a:focus-visible {
   margin: 0;
   padding: 24px;
   font-family: "Segoe UI";
+  font-style: normal;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 24px;
   line-height: 1.36;
   letter-spacing: 0.03em;
   color: #2f3547;
@@ -2171,18 +2177,18 @@ a:focus-visible {
 
 .get-in-touch-frame {
   position: absolute;
-  width: 94%;
-  height: 88%;
-  aspect-ratio: auto;
-  left: -3%;
-  top: 8%;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 0.86 / 1;
+  left: -10%;
+  top: 15%;
   background: #dfe6e9;
   border: 8px solid #bf1869;
   box-shadow: inset -4px -4px 4px #ffffff, inset 4px 4px 4px rgba(196, 196, 196, 0.8);
   border-radius: 16px;
   box-sizing: border-box;
   z-index: 0;
-  transform: translateY(35px) rotate(-16deg);
+  transform: rotate(-34deg);
 }
 
 .get-in-touch-photo-wrapper {
@@ -2296,11 +2302,11 @@ a:focus-visible {
   flex-direction: column;
   align-items: center;
   transition: transform 0.3s ease;
-  padding-top: 78px;
+  padding-top: 68px;
   padding-bottom: 20px;
   min-height: 0;
   max-width: 400px;
-  padding: 58px 22px 16px;
+  padding: 68px 22px 16px;
   gap: 8px;
   border-radius: 46px 0 46px 46px;
   min-width: 0;
@@ -2709,8 +2715,6 @@ a:focus-visible {
 
   .faq-content { grid-template-columns: minmax(0, 0.35fr) minmax(0, 0.65fr); }
   .faq-item-header { gap: 12px; padding-right: 14px; }
-  .faq-item-title { font-size: 19px; }
-  .faq-item-number { font-size: 32px; }
   .faq-item-toggle { width: 48px; height: 48px; }
 
   .get-in-touch-section { padding-inline: 24px; }
@@ -2725,7 +2729,7 @@ a:focus-visible {
     max-width: 440px;
     margin-inline: auto;
   }
-  .get-in-touch-frame { transform: rotate(-16deg); }
+  .get-in-touch-frame { transform: rotate(-34deg); }
 }
 
 @media (width < 1024px) {
@@ -2853,6 +2857,14 @@ a:focus-visible {
   .faq-illustration { width: min(100%, 360px); }
   .faq-right { width: 100%; }
 
+  .get-in-touch-frame {
+    width: 94%;
+    height: 88%;
+    aspect-ratio: auto;
+    left: -3%;
+    top: 8%;
+    transform: rotate(-12deg);
+  }
   .get-in-touch-heading { font-size: 30px; }
   .get-in-touch-badge { font-size: 20px; }
   .get-in-touch-copy { gap: 24px; }
@@ -2863,7 +2875,11 @@ a:focus-visible {
 
 @media (width < 768px) {
   .hero-section { padding: 16px; }
-  .hero-frame { padding: 12px; border-radius: 18px; }
+  .hero-frame {
+    --hero-caption-size: clamp(17px, 5.6vw, 20px);
+    padding: 12px 12px 8px;
+    border-radius: 18px;
+  }
   .hero-image-stage {
     height: auto;
     aspect-ratio: 16 / 10;
@@ -2873,25 +2889,31 @@ a:focus-visible {
     max-width: 32rem;
     margin-inline: auto;
     padding-inline: 8px;
-    font-size: clamp(17px, 5.6vw, 20px);
+    font-size: var(--hero-caption-size);
     line-height: 1.25;
-    max-height: 2.5em;
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 2;
-    line-clamp: 2;
-    overflow: hidden;
+    max-height: none;
+    display: block;
+    -webkit-line-clamp: none;
+    line-clamp: none;
+    overflow: visible;
+    text-overflow: clip;
+    white-space: normal;
   }
-  /* Compact mobile rhythm: 16px around the caption and pagination. */
+  /* Reserve the tallest full caption so dots stay below it as slides change. */
   .hero-caption-stage {
     min-height: 0;
-    padding: 16px 0;
-    gap: 16px;
+    padding: 12px 0 0;
+    gap: 8px;
   }
   .hero-caption {
     top: 0;
-    height: 50px;
-    overflow: hidden;
+    height: auto;
+    min-height: calc(var(--hero-caption-size) * 2.5);
+    align-self: stretch;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: visible;
   }
   .hero-dots {
     top: 0;
@@ -2903,23 +2925,38 @@ a:focus-visible {
   .hero-mobile-break {
     display: block;
   }
-  /* Slide 4 fallback: force “Learn Beyond” / “Limits” even when the
-     component's mobile-only <br> has not yet reached the running build. */
-  .hero-caption:nth-child(4) .hero-heading {
-    width: 150px;
-    max-width: 100%;
-  }
-  /* Slides 1 and 3 also use the same two-line mobile caption treatment. */
-  .hero-caption:nth-child(1) .hero-heading,
-  .hero-caption:nth-child(3) .hero-heading {
-    width: 190px;
-    max-width: 100%;
-  }
   .hero-dot { width: 24px; height: 24px; min-width: 24px; }
   .hero-dot::after { width: 8px; height: 8px; }
   .hero-dot-active { width: 32px; }
   .hero-dot-active::after { width: 20px; }
-  .hero-nav-button-prev, .hero-nav-button-next { display: none; }
+  /* Small visible arrows retain a comfortable, invisible tap area. */
+  .hero-nav-button {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    padding: 0;
+    background: transparent;
+    box-shadow: none;
+    z-index: 3;
+    touch-action: manipulation;
+  }
+  .hero-nav-button::before {
+    content: "";
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: #dfe6e9;
+    box-shadow: 2px 2px 4px rgba(198, 198, 201, 0.35), -2px -2px 4px rgba(255, 255, 255, 0.4);
+    pointer-events: none;
+  }
+  .hero-nav-button-prev { left: 8px; }
+  .hero-nav-button-next { right: 8px; }
+  .hero-nav-icon {
+    position: relative;
+    width: 16px;
+    height: 16px;
+  }
 
   .odyssey-section, .smv-section, .platform-overview-section,
   .platform-purpose-section, .meet-neurolxp-section, .why-choose-section,
@@ -2959,6 +2996,14 @@ a:focus-visible {
     white-space: normal;
   }
   .odyssey-heading-block { gap: 16px; }
+  .odyssey-heading { font-size: clamp(22px, 6vw, 24px); }
+  .odyssey-heading-accent {
+    display: inline-block;
+    color: #2d4cc8;
+    white-space: nowrap;
+    overflow-wrap: normal;
+    word-break: normal;
+  }
   .odyssey-demo-button { margin-bottom: 8px; padding: 14px 24px; font-size: 18px; }
   .odyssey-grid, .odyssey-extra-inner { gap: 24px; }
   .odyssey-card-inner { gap: 16px; }
@@ -3014,7 +3059,7 @@ a:focus-visible {
     flex: none;
     width: 100%;
     max-width: 400px;
-    padding: 58px 20px 20px;
+    padding: 68px 20px 20px;
     gap: 10px;
   }
   .smv-card-title { font-size: 26px; line-height: 1.25; }
@@ -3093,14 +3138,24 @@ a:focus-visible {
   .faq-item-header { gap: 8px; padding: 14px 12px; flex-wrap: nowrap; }
   .faq-item-header-left { min-width: 0; gap: 8px; }
   .faq-item-triangle { display: none; }
-  .faq-item-number { font-size: 24px; }
   .faq-item-divider { width: 4px; height: 28px; }
-  .faq-item-title { flex: 1; width: auto; min-width: 0; font-size: 16px; line-height: 1.35; }
+  .faq-item-title { flex: 1; width: auto; min-width: 0; line-height: 1.35; }
   .faq-item-toggle { flex: 0 0 44px; width: 44px; height: 44px; }
   .faq-item-toggle-icon { width: 20px; height: 20px; }
-  .faq-item-answer { padding: 20px 16px; font-size: 16px; line-height: 1.5; }
+  .faq-item-answer { padding: 20px 16px; line-height: 1.5; }
 
-  .get-in-touch-section { margin-bottom: -16px; padding: 24px 16px 0; }
+  .get-in-touch-section {
+    --contact-footer-overlap: 48px;
+    margin-bottom: calc(-1 * var(--contact-footer-overlap));
+    padding: 24px 16px 0;
+    z-index: 0;
+  }
+  .get-in-touch-frame { transform: translateY(28px) rotate(-12deg); }
+  .home-footer {
+    position: relative;
+    z-index: 1;
+    background: #dfe6e9;
+  }
   .get-in-touch-content {
     display: flex;
     flex-direction: column;
@@ -3130,6 +3185,16 @@ a:focus-visible {
     flex: none;
     width: calc(100% - 48px);
     max-width: 320px;
+    aspect-ratio: 2 / 3;
+  }
+  /* Stop the portrait at the footer edge; only the frame continues below. */
+  .get-in-touch-photo-wrapper {
+    bottom: var(--contact-footer-overlap);
+    transform: none;
+  }
+  .get-in-touch-photo {
+    object-fit: contain;
+    object-position: center bottom;
   }
 }
 
@@ -3152,6 +3217,54 @@ a:focus-visible {
   .learning-module-title { font-size: 18px; }
   .learning-module-description { font-size: 14px; }
   .get-in-touch-media { max-width: 280px; }
+
+  /* Keep number, divider, question and toggle aligned in one row. */
+  .faq-section { padding-inline: 8px; }
+  .faq-card { padding: 16px 6px; }
+  .faq-left { padding-inline: 10px; }
+  .faq-right { gap: 16px; }
+  .faq-item-header {
+    display: grid;
+    grid-template-columns: max-content 3px minmax(0, 1fr) 32px;
+    grid-template-rows: auto;
+    gap: 6px;
+    align-items: center;
+    min-height: 128px;
+    padding: 14px 8px;
+  }
+  .faq-item-header-left { display: contents; }
+  .faq-item-number {
+    grid-column: 1;
+    grid-row: 1;
+    letter-spacing: 0;
+    font-variant-numeric: tabular-nums;
+  }
+  .faq-item-divider {
+    grid-column: 2;
+    grid-row: 1;
+    width: 3px;
+    height: 32px;
+  }
+  .faq-item-title {
+    grid-column: 3;
+    grid-row: 1;
+    width: 100%;
+    text-align: left;
+    line-height: 1.3;
+    letter-spacing: 0;
+    word-break: normal;
+    overflow-wrap: break-word;
+    hyphens: none;
+  }
+  /* The whole header button remains the tap target. */
+  .faq-item-toggle {
+    grid-column: 4;
+    grid-row: 1;
+    justify-self: end;
+    width: 32px;
+    height: 32px;
+  }
+  .faq-item-toggle-icon { width: 18px; height: 18px; }
   :global(.book-demo-button), :global(.bookDemoButton),
   :global(.floating-book-demo), :global(.floatingBookDemo) {
     right: 16px !important;

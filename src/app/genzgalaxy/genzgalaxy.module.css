@@ -75,21 +75,21 @@
   border-radius: 10000px;
   background-color: #dfe6e9;
   width: 380px;
-  height: 600px;
+  height: 480px;
   overflow: hidden;
  
 }
 
 .frameChild {
   position: absolute;
-  top: calc(50% - 260px);
+  top: 40px;
   left: calc(50% - 170px);
   box-shadow:
     4px 4px 8px #c4c4c4,
     -4px -4px 8px #fff;
   border-radius: 500px;
   width: 300px;
-  height: 520px;
+  height: 400px;
   object-fit: cover;
   object-position: top center;
   transform: translateX(20px);
@@ -100,11 +100,11 @@
   top: 117px;
   left: calc(50% - 620px);
   width: 1240px;
-  height: 600px;
+  height: 480px;
 }
 
 .frameWrapper2 {
-  height: 600px;
+  height: 480px;
   width: 380px;
   box-shadow:
     -4px -4px 8px #fff inset,
@@ -2917,6 +2917,36 @@
     height: 4795px !important;
   }
 
+/* Two intentional lines, including after Segoe UI finishes loading. */
+.genzgalaxy .frameParent9 .frameParent10 .polygonParent > .featureLabel {
+  position: absolute !important;
+  top: 50% !important;
+  left: 50% !important;
+  width: 72% !important;
+  max-width: 170px !important;
+  height: auto !important;
+  min-height: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  display: block !important;
+  transform: translate(-50%, -50%) !important;
+  font-size: 20px !important;
+  font-weight: 600 !important;
+  line-height: 24px !important;
+  letter-spacing: 0 !important;
+  color: #31344b;
+  text-align: center !important;
+  white-space: nowrap !important;
+  word-break: normal !important;
+  overflow-wrap: normal !important;
+}
+
+/* Lift the introduction and separate it from the first collaboration row. */
+.genzgalaxy .frameParent29 .frameWrapper7 { height: auto !important; }
+.genzgalaxy .frameParent29 .frameParent31 { gap: 12px !important; }
+.genzgalaxy .frameParent29 .frameParent30 { gap: 40px !important; }
+.genzgalaxy .frameParent29 .frameParent33 { margin-top: 0 !important; }
+
 /* ================================================================
    RESPONSIVENESS ONLY
    Desktop/laptop: the original 1440px composition scales as one unit.
@@ -3085,15 +3115,15 @@
     inset: auto !important;
     width: 100% !important;
     height: auto !important;
-    aspect-ratio: 380 / 600 !important;
+    aspect-ratio: 380 / 480 !important;
     margin: 0 !important;
     transform: none !important;
   }
   .genzgalaxy .frameChild {
-    top: 6.666667% !important;
+    top: 8.333333% !important;
     left: 10.526316% !important;
     width: 78.947368% !important;
-    height: 86.666667% !important;
+    height: 83.333333% !important;
     transform: none !important;
   }
   .genzgalaxy .slide6Smaller { transform: none !important; }
@@ -3372,6 +3402,12 @@
   /* The label's newline is a space on larger screens and a break on phones. */
   .genzgalaxy .frameParent9 .frameParent10:last-of-type .polygonParent:last-child > .gamifiedElements {
     white-space: pre-line !important;
+  }
+
+  .genzgalaxy .frameParent9 .frameParent10 .polygonParent > .featureLabel {
+    top: 58% !important;
+    font-size: clamp(12px, 3.1vw, 16px) !important;
+    line-height: 1.3 !important;
   }
 
   /* Learn Your Way: heading, copy, pills and photo each reserve their own space. */
@@ -3678,9 +3714,9 @@
     gap: 24px !important;
     align-items: start !important;
   }
-  .genzgalaxy .frameSlotMiddle { grid-column: 1; grid-row: 1; margin-top: 64px !important; }
+  .genzgalaxy .frameSlotMiddle { grid-column: 1; grid-row: 1; margin-top: 52px !important; }
   .genzgalaxy .frameWrapper { grid-column: 2; grid-row: 1; }
-  .genzgalaxy .frameSlotLast { grid-column: 3; grid-row: 1; margin-top: 64px !important; }
+  .genzgalaxy .frameSlotLast { grid-column: 3; grid-row: 1; margin-top: 52px !important; }
   .genzgalaxy .frameParent9 .frameParent10 {
     display: grid !important;
     grid-template-columns: repeat(4, minmax(0, 220px)) !important;
@@ -3701,6 +3737,10 @@
     width: 72% !important;
     max-width: 72% !important;
     min-height: 0 !important;
+    font-size: clamp(15px, 1.6vw, 18px) !important;
+    line-height: 1.35 !important;
+  }
+  .genzgalaxy .frameParent9 .frameParent10 .polygonParent > .featureLabel {
     font-size: clamp(15px, 1.6vw, 18px) !important;
     line-height: 1.35 !important;
   }
@@ -3790,7 +3830,7 @@
 
   /* Raise the background so its lower design stays hidden by the middle portrait. */
   .genzgalaxy .genzHeroFrame {
-    top: -124px;
+    top: -244px;
   }
 
   /* Only the six outer section positions change. Their artwork stays intact. */
@@ -3837,15 +3877,15 @@
     inset: auto;
     order: 1;
     flex: none;
-    height: 717px;
+    height: 574px;
   }
   /* The visible photo row begins at the centre card, 56px below the buttons.
-     Side portraits retain the reference stagger of 117px. */
+     Side portraits retain a proportional 94px stagger. */
   .genzgalaxy .frameContainer .frameDiv > .frameWrapper {
     top: 0;
   }
   .genzgalaxy .frameContainer .frameDiv > .frameParent2 {
-    top: 117px;
+    top: 94px;
   }
 
   /* Marked hero spacing: 16px after the title, 24px after the subheading.

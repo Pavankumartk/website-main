@@ -301,7 +301,7 @@ const GenZgalaxy: NextPage = () => {
                 <polygon points="300,62 542,197 450,416 150,416 58,197" fill="#b39ddb" />
               </svg>
 
-              <div className={styles.gamifiedElements}>Gamified Elements</div>
+              <h3 className={styles.featureLabel}>Gamified<br />Elements</h3>
             </div>
             <div className={styles.polygonParent}>
               <svg className={styles.polygonIcon} viewBox="0 0 600 466" preserveAspectRatio="xMidYMid meet" aria-hidden="true" focusable="false">
@@ -325,10 +325,7 @@ const GenZgalaxy: NextPage = () => {
                 <polygon points="300,62 542,197 450,416 150,416 58,197" fill="#f4a6c6" />
               </svg>
 
-              <div className={styles.interactiveContent}>
-                Interactive Content
-                <br />
-              </div>
+              <h3 className={styles.featureLabel}>Interactive<br />Content</h3>
             </div>
             <div className={styles.polygonParent}>
               <svg className={styles.polygonIcon} viewBox="0 0 600 466" preserveAspectRatio="xMidYMid meet" aria-hidden="true" focusable="false">
@@ -352,7 +349,7 @@ const GenZgalaxy: NextPage = () => {
                 <polygon points="300,62 542,197 450,416 150,416 58,197" fill="#f78888" />
               </svg>
 
-              <div className={styles.shortFocusedLessons}>Short, Focused Lessons</div>
+              <h3 className={styles.featureLabel}>Short, Focused<br />Lessons</h3>
             </div>
             <div className={styles.polygonParent}>
               <svg className={styles.polygonIcon} viewBox="0 0 600 466" preserveAspectRatio="xMidYMid meet" aria-hidden="true" focusable="false">
@@ -376,7 +373,7 @@ const GenZgalaxy: NextPage = () => {
                 <polygon points="300,62 542,197 450,416 150,416 58,197" fill="#7fae5c" />
               </svg>
 
-              <div className={styles.groupBasedLearning}>Group-Based Learning</div>
+              <h3 className={styles.featureLabel}>Group-Based<br />Learning</h3>
             </div>
           </div>
           <div className={styles.frameParent10}>
@@ -402,7 +399,7 @@ const GenZgalaxy: NextPage = () => {
                 <polygon points="300,62 542,197 450,416 150,416 58,197" fill="#c9a227" />
               </svg>
 
-              <div className={styles.mobileFriendlyDesign}>Mobile-Friendly Design</div>
+              <h3 className={styles.featureLabel}>Mobile-Friendly<br />Design</h3>
             </div>
             <div className={styles.polygonParent}>
               <svg className={styles.polygonIcon} viewBox="0 0 600 466" preserveAspectRatio="xMidYMid meet" aria-hidden="true" focusable="false">
@@ -426,7 +423,7 @@ const GenZgalaxy: NextPage = () => {
                 <polygon points="300,62 542,197 450,416 150,416 58,197" fill="#9694d4" />
               </svg>
 
-              <div className={styles.challengesRewards}>{`Challenges & Rewards`}</div>
+              <h3 className={styles.featureLabel}>Challenges &<br />Rewards</h3>
             </div>
             <div className={styles.polygonParent}>
               <svg className={styles.polygonIcon} viewBox="0 0 600 466" preserveAspectRatio="xMidYMid meet" aria-hidden="true" focusable="false">
@@ -450,7 +447,7 @@ const GenZgalaxy: NextPage = () => {
                 <polygon points="300,62 542,197 450,416 150,416 58,197" fill="#4fb8b6" />
               </svg>
 
-              <div className={styles.gamifiedElements}>Responsive Quizzes</div>
+              <h3 className={styles.featureLabel}>Responsive<br />Quizzes</h3>
             </div>
             <div className={styles.polygonParent}>
               <svg className={styles.polygonIcon} viewBox="0 0 600 466" preserveAspectRatio="xMidYMid meet" aria-hidden="true" focusable="false">
@@ -474,7 +471,7 @@ const GenZgalaxy: NextPage = () => {
                 <polygon points="300,62 542,197 450,416 150,416 58,197" fill="#a99bc9" />
               </svg>
 
-              <div className={styles.gamifiedElements}>{"Peer\nDiscussion"}</div>
+              <h3 className={styles.featureLabel}>Peer<br />Discussion</h3>
             </div>
           </div>
         </div>
