@@ -2921,7 +2921,7 @@ a:focus-visible {
     gap: clamp(2px, 1vw, 7px);
     min-height: 24px;
   }
-  /* Slides 1 and 3 use an explicit two-line caption on mobile. */
+  /* Every hero slide uses an explicit two-line caption on mobile. */
   .hero-heading .hero-mobile-break {
     display: inline;
   }

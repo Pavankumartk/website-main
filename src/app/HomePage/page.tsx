@@ -17,17 +17,17 @@ const Lottie = dynamic(() => import("lottie-react"), { ssr: false });
 type HeroSlide = (
   | { id: number; type: "image"; image: string; heading: string }
   | { id: number; type: "video"; src: string; heading: string }
-) & { mobileLines?: readonly [string, string] };
+) & { mobileLines: readonly [string, string] };
 
 const heroSlides: HeroSlide[] = [
   { id: 1, type: "image", image: "/images/brainstorm-meeting.webp", heading: "Empowering Lifelong Learning", mobileLines: ["Empowering", "Lifelong Learning"] },
-  { id: 2, type: "image", image: "/images/student-online-young-cute-girl-glasses-orange-sweater-studying-computer-with-headphones.webp", heading: "Built for Education That Goes Beyond Classroom" },
+  { id: 2, type: "image", image: "/images/student-online-young-cute-girl-glasses-orange-sweater-studying-computer-with-headphones.webp", heading: "Built for Education That Goes Beyond Classroom", mobileLines: ["Built for Education That", "Goes Beyond Classroom"] },
   { id: 3, type: "video", src: "/videos/uhd_30fps.mp4", heading: "Every Question Leads to Growth", mobileLines: ["Every Question", "Leads to Growth"] },
-  { id: 4, type: "image", image: "/images/Organisation.jpeg", heading: "Beyond the Classroom, Beyond Limits" },
-  { id: 5, type: "image", image: "/images/Gratuation.jpeg", heading: "Designed for Minds That Refuse to Average" },
-  { id: 6, type: "video", src: "/videos/home.mp4", heading: "Where Great Ideas Take Shape Together" },
-  { id: 7, type: "image", image: "/images/group-different-people-volunteering-foodbank.webp", heading: "Reimagine How the World Learns" },
-  { id: 8, type: "image", image: "/images/portrait-school-girls-with-books-park.webp", heading: "Transform the Way the World Learns" },
+  { id: 4, type: "image", image: "/images/Organisation.jpeg", heading: "Beyond the Classroom, Beyond Limits", mobileLines: ["Beyond the Classroom,", "Beyond Limits"] },
+  { id: 5, type: "image", image: "/images/Gratuation.jpeg", heading: "Designed for Minds That Refuse to Average", mobileLines: ["Designed for Minds", "That Refuse to Average"] },
+  { id: 6, type: "video", src: "/videos/home.mp4", heading: "Where Great Ideas Take Shape Together", mobileLines: ["Where Great Ideas", "Take Shape Together"] },
+  { id: 7, type: "image", image: "/images/group-different-people-volunteering-foodbank.webp", heading: "Reimagine How the World Learns", mobileLines: ["Reimagine How", "the World Learns"] },
+  { id: 8, type: "image", image: "/images/portrait-school-girls-with-books-park.webp", heading: "Transform the Way the World Learns", mobileLines: ["Transform the Way", "the World Learns"] },
 ];
 
 function ChevronsLeftIcon({ className }: { className?: string }) {
@@ -111,13 +111,9 @@ function HeroCarousel() {
           {heroSlides.map((slide, index) => (
             <div data-hero-caption key={slide.id} className={`${styles["hero-caption"]}${index === activeSlide ? ` ${styles["hero-caption-active"]}` : ""}`} aria-hidden={index !== activeSlide}>
               <h1 className={styles["hero-heading"]}>
-                {slide.mobileLines ? (
-                  <>
-                    {slide.mobileLines[0]}{" "}
-                    <br className={styles["hero-mobile-break"]} />
-                    {slide.mobileLines[1]}
-                  </>
-                ) : slide.heading}
+                {slide.mobileLines[0]}{" "}
+                <br className={styles["hero-mobile-break"]} />
+                {slide.mobileLines[1]}
               </h1>
             </div>
           ))}
