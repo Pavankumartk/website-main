@@ -2633,9 +2633,9 @@ a:focus-visible {
 /* =====================================================================
    Responsive layout
    1280px and above: the centred desktop design defined above.
-   1024â€“1279px: compact laptops and landscape tablets.
-   768â€“1023px: tablets; large two-column sections stack.
-   600â€“767px: wide phones and small tablets.
+   1024Ã¢â‚¬â€œ1279px: compact laptops and landscape tablets.
+   768Ã¢â‚¬â€œ1023px: tablets; large two-column sections stack.
+   600Ã¢â‚¬â€œ767px: wide phones and small tablets.
    Below 600px: narrow phones; content determines card height.
    Rules accumulate from wide to narrow, including fractional widths.
    No device model, screen height, page zoom or fixed carousel offset.
@@ -2779,7 +2779,8 @@ a:focus-visible {
     justify-self: center;
   }
   .platform-overview-content {
-    --overview-card-width: clamp(200px, 30svh, 257px);
+    /* Keep the overview cards wide enough for every description to stay inside. */
+    --overview-card-width: clamp(257px, 20vw, 285px);
     --overview-column-gap: clamp(24px, 2.2vw, 32px);
     /* Match the left edge of the centred, two-column card grid. */
     --overview-content-inset: max(0px, calc(50% - var(--overview-card-width) - var(--overview-column-gap) / 2));
@@ -2819,8 +2820,15 @@ a:focus-visible {
     width: calc(var(--overview-icon-size) - 18px);
     height: calc(var(--overview-icon-size) - 18px);
   }
-  .platform-hex-text { gap: 4px; }
-  .platform-hex-description { line-height: 1.35; }
+  .platform-hex-text {
+    max-width: calc(100% - 32px);
+    gap: 4px;
+  }
+  .platform-hex-description {
+    width: 100%;
+    line-height: 1.35;
+    overflow-wrap: anywhere;
+  }
 
   .meet-neurolxp-frame {
     aspect-ratio: 1280 / 680;
