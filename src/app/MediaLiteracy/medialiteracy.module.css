@@ -29,7 +29,7 @@
   flex-direction: column;
   align-items: stretch;
   gap: 8px;
-  padding-bottom: 48px;
+  padding-bottom: 24px;
 }
 
 .mediaLiteracy > .frameParent10 {
@@ -67,7 +67,7 @@
     overflow-x: hidden;
     text-align: left;
     gap: 0;
-    padding: 32px 0 64px;
+    padding: 32px 0 32px;
   }
 }
 
@@ -257,29 +257,29 @@
   position: relative;
   width: 100%;
   max-width: 340px;
-  aspect-ratio: 1 / 1;
-}
-
-.heroFramePolygon {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.heroPhotoPolygon {
-  position: absolute;
-  top: 4%;
-  left: 4%;
-  width: 92%;
-  height: 92%;
-  background-size: cover;
+  /* Exact supplied artwork, including the photo, hexagon and inset shadows.
+     Save polygon-27.png in public/images/; no TSX changes are needed. */
+  aspect-ratio: 524 / 606;
+  background-color: transparent;
+  background-image: url("/images/polygon-27.png");
   background-position: center;
   background-repeat: no-repeat;
-  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
-  filter:
-    drop-shadow(-4px -4px 4px rgba(255, 255, 255, 0.85))
-    drop-shadow(4px 4px 4px rgba(180, 190, 195, 0.7));
+  background-size: contain;
+  clip-path: none;
+  overflow: visible;
+  isolation: isolate;
+}
+
+.heroFramePolygon,
+.heroPhotoPolygon {
+  /* Do not layer the previous frame/photo over the complete supplied PNG. */
+  display: none;
+}
+
+.heroImages::after {
+  /* The PNG already contains the finished edge shading. */
+  content: none;
+  display: none;
 }
 
 @media (min-width: 641px) {
@@ -372,10 +372,15 @@
   }
 
   .heroImages {
-    width: 587px;
-    max-width: none;
-    aspect-ratio: 605 / 606;
+    /* Use only the space remaining beside the unchanged 653px copy column. */
+    width: min(587px, calc(100% - 693px));
+    max-width: 100%;
+    min-width: 0;
+    aspect-ratio: 524 / 606;
     height: auto;
+    /* Lift the complete artwork without changing its size or surrounding layout. */
+    margin-top: 0;
+    top: -24px;
     flex-shrink: 0;
   }
 }
@@ -588,6 +593,13 @@
     align-items: flex-start;
     text-align: left;
     gap: 32px;
+  }
+
+  .frameParent20 .frameParent21 {
+    /* Move only the copy into the spare left margin; keep the cards fixed.
+       Reduce the shift near the 1209px two-column fit threshold. */
+    position: relative;
+    left: clamp(-40px, calc((1209px - 100vw) / 2), 0px);
   }
 
   .frameParent15 {
@@ -1449,7 +1461,7 @@
   margin: 12px auto;
   display: flex;
   flex-direction: column;
-  gap: 32px;
+  gap: 24px;
 }
 
 .rectangleGroup {
@@ -1460,7 +1472,7 @@
   box-shadow:
     inset -4px -4px 4px #fff,
     inset 4px 4px 4px #c4c4c4;
-  padding: 30px 22px;
+  padding: 24px 22px;
   box-sizing: border-box;
 }
 
@@ -1471,11 +1483,17 @@
 
 .frameParent41 {
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
 
 .frameWrapper19 {
   width: 100%;
-  margin-top: 26px;
+  margin-top: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
 
 .frameParent42 {
@@ -1483,7 +1501,7 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 22px;
+  gap: 16px;
 }
 
 .navigateMediaWithConfidenceWrapper {
@@ -1520,23 +1538,27 @@
   white-space: nowrap;
   z-index: 2;
   box-sizing: border-box;
-  margin-top: 24px;
+  margin-top: 0;
+  order: -1;
+  align-self: flex-start;
 }
 
 .frameParent43 {
   width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 28px;
+  gap: 24px;
   font-size: 24px;
 }
 
 .frameParent44,
 .frameParent45 {
+  --feature-ring-size: 88px;
+  --feature-ring-color: #bf1869;
   position: relative;
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
-  min-height: 230px;
+  min-height: 180px;
   border-radius: 70px 70px 8px 70px;
   background-color: #dfe6e9;
   border: 1.5px solid #fff;
@@ -1544,26 +1566,29 @@
   box-shadow:
     -4px -4px 4px #fff,
     4px 4px 4px #c4c4c4;
-  padding: 22px;
-  overflow: hidden;
+  padding: 20px 20px 20px calc(var(--feature-ring-size) + 20px);
+  display: flex;
+  align-items: center;
+  /* The complete dotted ring extends slightly beyond the rounded card. */
+  overflow: visible;
 }
 
 .frameParent45 {
+  --feature-ring-color: #67096e;
   border-radius: 70px 8px 70px 70px;
 }
 
 .misinformationDefenseParent,
 .certifiedDigitalCitizenParent {
-  position: absolute;
-  top: 50%;
-  left: 132px;
-  width: calc(100% - 150px);
-  transform: translateY(-50%);
+  position: relative;
+  width: 100%;
+  min-width: 0;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 12px;
+  gap: 10px;
   margin: 0;
+  overflow-wrap: break-word;
 }
 
 .misinformationDefense {
@@ -1624,14 +1649,42 @@
   z-index: 1;
 }
 
+/* Draw the decorative rings in CSS, independent of image loading. */
+.frameParent40 .frameChild23,
+.frameParent40 .frameChild25 {
+  width: var(--feature-ring-size);
+  height: var(--feature-ring-size);
+  border: 2px dotted var(--feature-ring-color);
+  border-radius: 50%;
+  background-color: #dfe6e9;
+  box-shadow:
+    -4px -4px 4px #fff,
+    4px 4px 4px #c4c4c4;
+  box-sizing: border-box;
+  z-index: 1;
+}
+
+.frameParent40 .featureEllipse {
+  display: none;
+}
+
+.frameParent40 .detectResistAndContainer,
+.frameParent40 .detectResistAnd {
+  margin: 0;
+  white-space: normal;
+}
+
 @media (min-width: 641px) {
   .frameParent43 {
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
   }
 
   .frameParent44,
   .frameParent45 {
-    min-height: 250px;
+    --feature-ring-size: 96px;
+    min-height: 190px;
   }
 }
 
@@ -1639,34 +1692,38 @@
   .frameParent40 {
     max-width: none;
     width: min(1388px, calc(100% - 48px));
-    margin: 96px auto 0;
+    margin: 48px auto 0;
     position: relative;
-    height: 510px;
-    flex-direction: row;
+    height: auto;
+    display: grid;
+    grid-template-columns: minmax(0, 56.27fr) minmax(0, 43.73fr);
+    gap: 0;
+    align-items: stretch;
   }
 
   .rectangleGroup {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 63.98%;
-    height: 476px;
+    position: relative;
+    grid-column: 1;
+    grid-row: 1;
+    /* Preserve the original overlap behind the two right-hand cards. */
+    width: calc(100% * 63.98 / 56.27);
+    height: auto;
+    margin: 20px 0;
     border-radius: 32px 200px 200px 32px;
-    padding: 0;
+    padding: 32px 0;
+    display: flex;
+    align-items: center;
   }
 
   .frameParent41 {
-    height: 359.2px;
+    height: auto;
     width: 70.84%;
-    position: absolute;
-    top: calc(50% - 204px);
-    left: 13.01%;
+    position: relative;
+    margin-left: 13.01%;
   }
 
   .frameWrapper19 {
-    position: absolute;
-    top: 92px;
-    left: 0;
+    position: relative;
     width: 100%;
   }
 
@@ -1684,9 +1741,7 @@
   }
 
   .frameChild22 {
-    position: absolute;
-    top: -67px;
-    left: 0;
+    position: relative;
     min-width: min(229.6px, 100%);
     height: 50.2px;
     font-size: 22px;
@@ -1694,50 +1749,40 @@
   }
 
   .frameParent43 {
-    position: absolute;
-    top: 37px;
-    left: 56.27%;
-    width: 43.73%;
-    height: 540px;
+    position: relative;
+    grid-column: 2;
+    grid-row: 1;
+    width: 100%;
+    height: auto;
+    display: flex;
     flex-direction: column;
-    gap: 0;
+    gap: 24px;
     font-size: 30px;
     color: #bf1869;
+    z-index: 1;
   }
 
   .frameParent44,
   .frameParent45 {
-    position: absolute;
+    --feature-ring-size: clamp(120px, 11.2vw, 161px);
+    position: relative;
     width: 100%;
-    height: 250px;
+    height: auto;
+    min-height: 190px;
     border-radius: 100px 100px 0 100px;
-    padding: 9px 32px 16px;
+    padding: 24px 24px 24px calc(var(--feature-ring-size) + 24px);
     display: flex;
-    align-items: flex-end;
-    justify-content: center;
-  }
-
-  .frameParent44 {
-    top: -70px;
-    left: 0;
+    align-items: center;
   }
 
   .frameParent45 {
-    top: 215px;
-    left: 0;
     border-radius: 100px 0 100px 100px;
-    padding: 32px 9px 16px 32px;
     color: #67096e;
   }
 
-  .misinformationDefenseParent {
-    width: 363px;
-    left: 190px;
-  }
-
+  .misinformationDefenseParent,
   .certifiedDigitalCitizenParent {
-    width: 363px;
-    left: 176px;
+    width: 100%;
   }
 
   .misinformationDefense {
@@ -1746,7 +1791,7 @@
   }
 
   .detectResistAndContainer {
-    width: 363px;
+    width: 100%;
     font-size: 20px;
     line-height: 1.3;
   }
@@ -1800,7 +1845,7 @@
 
 @media (min-width: 1025px) {
   .mediaLiteracyChild {
-    margin-top: 32px;
+    margin-top: 16px;
   }
 }
 

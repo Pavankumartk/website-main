@@ -686,7 +686,8 @@ function MeetNeuroLXP() {
             Meet NeuroLXP<sup className={styles["smv-badge-tm"]}>TM</sup>
           </span>
           <h2 className={styles["meet-neurolxp-heading"]} id="meet-neurolxp-heading">
-            Next-Generation Neomorphism learning Platform
+            Next-Generation Neomorphism<br />
+learning Platform
           </h2>
           <p className={styles["meet-neurolxp-subtext"]}>Neomorphic platform for smarter learning</p>
         </div>
@@ -782,9 +783,9 @@ function WhyChooseNeuroLXP() {
               <span className={styles["why-choose-heading-accent"]}>Digital Learning</span>
             </h2>
             <p className={styles["why-choose-subtext"]}>
-  NeuroLXP<sup className={styles["why-choose-tm"]}>TM</sup> empowers learners
+  NeuroLXP<sup className={styles["why-choose-tm"]}>TM</sup> empowers learners with
   <br />
-  with personalized learning, future
+ personalized learning, future
   <br />
   skills, and meaningful outcomes.
 </p>
@@ -1300,8 +1301,8 @@ const faqItems: FAQItemData[] = [
   {
     id: 2,
     number: "02",
-    title: "Who is NeuroLXP™ designed for?",
-    mobileTitleLines: ["Who is NeuroLXP™", "designed for?"],
+    title: "Who is NeuroLXP™ Designed for?",
+    mobileTitleLines: ["Who is NeuroLXP™", "Designed for?"],
     answer: "NeuroLXP™ is purpose-built for academic institutions, corporates, skilling academies, NGOs, trusts, and government skill development programs.",
     colorStart: "#BF1869",
     colorEnd: "#590B31",
@@ -1318,8 +1319,8 @@ const faqItems: FAQItemData[] = [
   {
     id: 4,
     number: "04",
-    title: "Why is NeuroLXP™ groundbreaking?",
-    mobileTitleLines: ["Why is NeuroLXP™", "groundbreaking?"],
+    title: "Why is NeuroLXP™ Groundbreaking?",
+    mobileTitleLines: ["Why is NeuroLXP™", "Groundbreaking?"],
     answer: "NeuroLXP™ reimagines digital learning by combining intelligent personalization, modern learning experiences, scalable architecture, and data-driven insights into a unified platform built for the future of education and workforce development.",
     colorStart: "#162562",
     colorEnd: "#2D4CC8",

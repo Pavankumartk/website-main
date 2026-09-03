@@ -1,6 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
 /* Complete replacement stylesheet. Replace the previous file in full.
    Design: original colours, shadows, shapes and component states.
-   Font: Segoe UI throughout all sections and screen sizes.
+   Font: Segoe UI first, with Inter as the secondary font and sans-serif last.
    Layout: shared fluid sizing, followed by four width breakpoints.
    Keep the app's carousel and accordion JavaScript unchanged.
    Learning Odyssey is grouped in the matching page.tsx heading. */
@@ -218,7 +220,7 @@ a:focus-visible {
 
 .hero-heading {
   padding: 0 24px;
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", "Inter", sans-serif;
   font-weight: 700;
   letter-spacing: 0.02em;
   color: #31344b;
@@ -348,7 +350,7 @@ a:focus-visible {
 
 .odyssey-heading {
   margin: 0;
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", "Inter", sans-serif;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.15;
@@ -361,7 +363,7 @@ a:focus-visible {
 }
 
 .odyssey-subtext {
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", "Inter", sans-serif;
   font-weight: 400;
   font-size: 24px;
   line-height: 1.3;
@@ -377,7 +379,7 @@ a:focus-visible {
   border-radius: 8px;
   border: none;
   cursor: pointer;
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", "Inter", sans-serif;
   font-weight: 600;
   font-size: 24px;
   letter-spacing: 0.02em;
@@ -487,7 +489,7 @@ a:focus-visible {
 
 .odyssey-card-title {
   margin: 0;
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", "Inter", sans-serif;
   font-weight: 700;
   font-size: 20px;
   letter-spacing: 0.03em;
@@ -497,7 +499,7 @@ a:focus-visible {
 
 .odyssey-card-description {
   margin: 0;
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", "Inter", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
@@ -555,7 +557,7 @@ a:focus-visible {
 }
 
 .odyssey-toggle-label {
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", "Inter", sans-serif;
   font-weight: 700;
   font-size: 18px;
   letter-spacing: 0.02em;
@@ -691,7 +693,7 @@ a:focus-visible {
   background: #dfe6e9;
   box-shadow: inset -4px -4px 4px #ffffff, inset 4px 4px 4px rgba(196, 196, 196, 0.8);
   border-radius: 28px;
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", "Inter", sans-serif;
   font-weight: 600;
   letter-spacing: 0.03em;
   color: #2d4cc8;
@@ -703,7 +705,7 @@ a:focus-visible {
 }
 
 .platform-overview-heading {
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", "Inter", sans-serif;
   font-weight: 700;
   letter-spacing: 0.03em;
   color: #2d4cc8;
@@ -871,7 +873,7 @@ a:focus-visible {
 }
 
 .platform-hex-label {
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", "Inter", sans-serif;
   font-weight: 700;
   font-size: 22px;
   line-height: 24px;
@@ -882,7 +884,7 @@ a:focus-visible {
 }
 
 .platform-hex-description {
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", "Inter", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
@@ -911,7 +913,7 @@ a:focus-visible {
 .platform-purpose-heading {
   margin: 0;
   width: 100%;
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", "Inter", sans-serif;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.33;
@@ -967,7 +969,7 @@ a:focus-visible {
 }
 
 .purpose-pill-line {
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", "Inter", sans-serif;
   font-weight: 700;
   font-size: clamp(16px, 1.6vw, 24px);
   line-height: 1.33;
@@ -978,7 +980,7 @@ a:focus-visible {
 }
 
 .purpose-pill-highlight {
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", "Inter", sans-serif;
   font-weight: 700;
   font-size: clamp(16px, 1.6vw, 24px);
   line-height: 1.33;
@@ -1061,7 +1063,7 @@ a:focus-visible {
   background: #dfe6e9;
   box-shadow: inset -4px -4px 4px #ffffff, inset 4px 4px 4px rgba(196, 196, 196, 0.8);
   border-radius: 28px;
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", "Inter", sans-serif;
   font-weight: 600;
   font-size: 24px;
   letter-spacing: 0.03em;
@@ -1075,7 +1077,7 @@ a:focus-visible {
 
 .meet-neurolxp-heading {
   max-width: 583px;
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", "Inter", sans-serif;
   font-weight: 700;
   font-size: clamp(24px, 2.8vw, 36px);
   line-height: 1.22;
@@ -1087,7 +1089,7 @@ a:focus-visible {
 
 .meet-neurolxp-subtext {
   max-width: 315px;
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", "Inter", sans-serif;
   font-weight: 400;
   font-size: clamp(16px, 1.6vw, 24px);
   line-height: 1.33;
@@ -1118,7 +1120,8 @@ a:focus-visible {
   box-shadow: inset -4px -4px 4px #ffffff, inset 4px 4px 4px rgba(196, 196, 196, 0.8);
   z-index: 0;
   height: 280px;
-  top: 55%;
+  /* Centre behind the body, allowing for the badge and its following gap. */
+  top: calc(50% + 40px);
   transform: translateY(-50%);
   border-radius: 0 260px 260px 0;
   left: calc(50% - 908px);
@@ -1145,7 +1148,7 @@ a:focus-visible {
   background: #dfe6e9;
   box-shadow: inset -4px -4px 4px #ffffff, inset 4px 4px 4px rgba(196, 196, 196, 0.8);
   border-radius: 28px;
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", "Inter", sans-serif;
   font-weight: 600;
   font-size: 24px;
   letter-spacing: 0.03em;
@@ -1170,16 +1173,17 @@ a:focus-visible {
   padding: 0;
   flex: 0 1 400px;
   max-width: 400px;
-  padding-top: 90px;
+  padding-top: 0;
   gap: 20px;
   align-items: flex-start;
   /* Pull the complete text design closer to the left page border. */
-  transform: translate(-78px, 40px);
+  transform: translateX(-78px);
+  align-self: center;
   min-width: 0;
 }
 
 .why-choose-heading {
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", "Inter", sans-serif;
   font-weight: 700;
   letter-spacing: 0.03em;
   color: #31344b;
@@ -1197,7 +1201,7 @@ a:focus-visible {
 }
 
 .why-choose-subtext {
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", "Inter", sans-serif;
   font-weight: 400;
   letter-spacing: 0.03em;
   color: #2f3547;
@@ -1276,7 +1280,8 @@ a:focus-visible {
   position: relative;
   z-index: 1;
   width: 107%;
-  padding: 44px 40px 32px;
+  /* Keep the oval size; widen its text area for both Segoe UI and Inter. */
+  padding: 44px 20px 32px;
   border-radius: 50%;
   background: #dfe6e9;
   border: 1px solid var(--dash-color);
@@ -1295,7 +1300,8 @@ a:focus-visible {
 
 .why-choose-card-title {
   margin: 0;
-  font-family: "Segoe UI";
+  width: 100%;
+  font-family: "Segoe UI", "Inter", sans-serif;
   font-weight: 700;
   font-size: 24px;
   line-height: 1.4;
@@ -1307,7 +1313,8 @@ a:focus-visible {
 
 .why-choose-card-description {
   margin: 0;
-  font-family: "Segoe UI";
+  width: 100%;
+  font-family: "Segoe UI", "Inter", sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 1.57;
@@ -1371,7 +1378,7 @@ a:focus-visible {
   background: #dfe6e9;
   box-shadow: inset -4px -4px 4px #ffffff, inset 4px 4px 4px rgba(196, 196, 196, 0.8);
   border-radius: 28px;
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", "Inter", sans-serif;
   font-weight: 600;
   font-size: 24px;
   letter-spacing: 0.03em;
@@ -1381,7 +1388,7 @@ a:focus-visible {
 }
 
 .learning-modules-heading {
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", "Inter", sans-serif;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.15;
@@ -1400,7 +1407,7 @@ a:focus-visible {
 
 .learning-modules-subtext {
   max-width: 890px;
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", "Inter", sans-serif;
   font-weight: 400;
   font-size: 24px;
   line-height: 1.43;
@@ -1489,7 +1496,7 @@ a:focus-visible {
 }
 
 .learning-module-title {
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", "Inter", sans-serif;
   font-weight: 700;
   font-size: 24px;
   line-height: 1.33;
@@ -1517,7 +1524,7 @@ a:focus-visible {
   line-clamp: 4;
   -webkit-box-orient: vertical;
   overflow: hidden;
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", "Inter", sans-serif;
   font-weight: 400;
   font-size: 18px;
   letter-spacing: 0.02em;
@@ -1601,7 +1608,7 @@ a:focus-visible {
   background: #dfe6e9;
   box-shadow: inset -4px -4px 4px #ffffff, inset 4px 4px 4px rgba(196, 196, 196, 0.8);
   border-radius: 28px;
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", "Inter", sans-serif;
   font-weight: 600;
   font-size: 24px;
   letter-spacing: 0.03em;
@@ -1610,7 +1617,7 @@ a:focus-visible {
 
 .testimonials-heading {
   margin: 0;
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", "Inter", sans-serif;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.15;
@@ -1625,7 +1632,7 @@ a:focus-visible {
 .testimonials-subtext {
   margin: 0;
   max-width: 704px;
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", "Inter", sans-serif;
   font-weight: 400;
   font-size: 24px;
   line-height: 1.43;
@@ -1730,7 +1737,7 @@ a:focus-visible {
 }
 
 .testimonial-rating-number {
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", "Inter", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
@@ -1760,7 +1767,7 @@ a:focus-visible {
 
 .testimonial-name {
   margin: 0;
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", "Inter", sans-serif;
   font-weight: 700;
   font-size: 20px;
   line-height: 1.4;
@@ -1771,7 +1778,7 @@ a:focus-visible {
 }
 
 .testimonial-role {
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", "Inter", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.57;
@@ -1791,7 +1798,7 @@ a:focus-visible {
 
 .testimonial-quote {
   margin: 0;
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", "Inter", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
@@ -1893,7 +1900,7 @@ a:focus-visible {
 .faq-heading {
   margin: 0;
   width: 100%;
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", "Inter", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 36px;
@@ -1906,7 +1913,7 @@ a:focus-visible {
 
 .faq-heading-accent {
   color: #2d4cc8;
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", "Inter", sans-serif;
   font-style: normal;
 }
 
@@ -1971,7 +1978,7 @@ a:focus-visible {
 }
 
 .faq-item-number {
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", "Inter", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 28px;
@@ -1993,7 +2000,7 @@ a:focus-visible {
 }
 
 .faq-item-title {
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", "Inter", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 24px;
@@ -2048,7 +2055,7 @@ a:focus-visible {
 .faq-item-answer {
   margin: 0;
   padding: 24px;
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
@@ -2112,7 +2119,7 @@ a:focus-visible {
   background: #dfe6e9;
   box-shadow: inset -4px -4px 4px #ffffff, inset 4px 4px 4px rgba(196, 196, 196, 0.8);
   border-radius: 28px;
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", "Inter", sans-serif;
   font-weight: 600;
   font-size: 24px;
   letter-spacing: 0.03em;
@@ -2127,7 +2134,7 @@ a:focus-visible {
 
 .get-in-touch-heading {
   margin: 0;
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", "Inter", sans-serif;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.25;
@@ -2143,7 +2150,7 @@ a:focus-visible {
 .get-in-touch-subtext {
   margin: 0;
   width: 440px;
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", "Inter", sans-serif;
   font-weight: 400;
   font-size: 0;
   line-height: 0;
@@ -2157,7 +2164,7 @@ a:focus-visible {
   content: "Have questions?\A Our experts are here to help.";
   display: block;
   white-space: pre-line;
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", "Inter", sans-serif;
   font-weight: 400;
   font-size: 24px;
   line-height: 1.29;
@@ -2181,7 +2188,7 @@ a:focus-visible {
 }
 
 .get-in-touch-button-label {
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", "Inter", sans-serif;
   font-weight: 700;
   font-size: 24px;
   line-height: 1.33;
@@ -2273,7 +2280,7 @@ a:focus-visible {
   background: #dfe6e9;
   box-shadow: inset -4px -4px 4px #ffffff, inset 4px 4px 4px rgba(196, 196, 196, 0.8);
   border-radius: 28px;
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", "Inter", sans-serif;
   font-weight: 600;
   letter-spacing: -0.03em;
   color: #2d4cc8;
@@ -2290,7 +2297,7 @@ a:focus-visible {
 }
 
 .smv-heading {
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", "Inter", sans-serif;
   font-weight: 700;
   letter-spacing: 0.03em;
   color: #31344b;
@@ -2300,7 +2307,7 @@ a:focus-visible {
 }
 
 .smv-subtext {
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", "Inter", sans-serif;
   font-weight: 400;
   letter-spacing: 0.03em;
   color: #000000;
@@ -2397,7 +2404,7 @@ a:focus-visible {
 
 .smv-card-title {
   margin: 0;
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", "Inter", sans-serif;
   font-weight: 700;
   letter-spacing: 0.03em;
   text-align: center;
@@ -2410,7 +2417,7 @@ a:focus-visible {
 
 .smv-card-description {
   margin: 0;
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", "Inter", sans-serif;
   font-weight: 400;
   letter-spacing: 0.03em;
   color: #000000;
@@ -2521,7 +2528,7 @@ a:focus-visible {
 }
 
 .smv-stat-value {
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", "Inter", sans-serif;
   font-weight: 700;
   font-size: 30px;
   line-height: 1.38;
@@ -2531,7 +2538,7 @@ a:focus-visible {
 }
 
 .smv-stat-label {
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", "Inter", sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 1.4;
@@ -2615,12 +2622,12 @@ a:focus-visible {
 
 :where(.hero-section, .odyssey-section, .smv-section, .platform-overview-section, .platform-purpose-section, .meet-neurolxp-section, .why-choose-section, .learning-modules-section, .testimonials-section, .faq-section, .get-in-touch-section) {
   box-sizing: border-box;
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", "Inter", sans-serif;
 }
 
 :where(.hero-section, .odyssey-section, .smv-section, .platform-overview-section, .platform-purpose-section, .meet-neurolxp-section, .why-choose-section, .learning-modules-section, .testimonials-section, .faq-section, .get-in-touch-section) * {
   box-sizing: border-box;
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", "Inter", sans-serif;
 }
 
 .platform-overview-media-frame > iframe {
@@ -2730,7 +2737,7 @@ a:focus-visible {
   .why-choose-blob {
     left: -120px;
     width: calc(40% + 80px);
-    top: 55%;
+    top: calc(50% + 40px);
   }
 
   .smv-card { padding-inline: 18px; }
@@ -2836,11 +2843,29 @@ a:focus-visible {
     max-height: calc(100svh - 64px);
   }
   .meet-neurolxp-text {
-    top: clamp(88px, 12svh, 104px);
-    left: clamp(56px, 6vw, 82px);
-    width: min(574px, 52%);
+    /* Keep the copy in the photograph's clear upper-left area. */
+    top: clamp(48px, 6svh, 64px);
+    left: clamp(48px, 5vw, 64px);
+    width: min(360px, 31%);
     max-width: calc(100% - 112px);
     margin: 0;
+  }
+  .meet-neurolxp-heading {
+    width: 100%;
+    max-width: 100%;
+    text-wrap: balance;
+    overflow-wrap: break-word;
+  }
+  .meet-neurolxp-badge {
+    max-width: 100%;
+  }
+  .why-choose-heading {
+    max-width: 340px;
+  }
+  .why-choose-subtext,
+  .why-choose-text .why-choose-description {
+    /* Leave room before the rounded end of the background shape. */
+    max-width: 330px;
   }
 }
 
@@ -3264,12 +3289,12 @@ a:focus-visible {
   }
   .testimonial-name {
     padding-right: 48px;
-    font-family: "Segoe UI";
+    font-family: "Segoe UI", "Inter", sans-serif;
     font-size: clamp(16px, 4.4vw, 20px);
     line-height: 1.4;
   }
   .testimonial-role {
-    font-family: "Segoe UI";
+    font-family: "Segoe UI", "Inter", sans-serif;
     font-size: clamp(14px, 3.7vw, 16px);
     line-height: 1.5;
   }
@@ -3282,7 +3307,7 @@ a:focus-visible {
     grid-column: 1 / -1;
     width: 100%;
     margin-top: var(--testimonial-row-gap);
-    font-family: "Segoe UI";
+    font-family: "Segoe UI", "Inter", sans-serif;
     font-size: clamp(15px, 3.7vw, 16px);
     line-height: 1.55;
   }
@@ -3293,7 +3318,7 @@ a:focus-visible {
     padding: 4px 8px;
   }
   .testimonial-rating-number {
-    font-family: "Segoe UI";
+    font-family: "Segoe UI", "Inter", sans-serif;
     font-size: 14px;
     line-height: 1.5;
   }
@@ -3322,7 +3347,16 @@ a:focus-visible {
   .faq-left { gap: 16px; }
   .faq-illustration { max-width: 300px; }
   .faq-right { gap: 18px; }
-  .faq-item-header { gap: 8px; padding: 14px 12px; min-height: 88px; flex-wrap: nowrap; }
+  /* Narrow the complete FAQ card, including its expanded answer, on phones.
+     Keep the original height, padding, typography and spacing between cards. */
+  .faq-section .faq-item {
+    width: calc(100% - 35px);
+    max-width: 337px;
+    align-self: center;
+  }
+  /* Keep every + icon in the same right-side column. Increase only the inner
+     right padding by another 12px; card width and outer spacing stay unchanged. */
+  .faq-item-header { gap: 8px; padding: 14px 27px 14px 12px; min-height: 88px; flex-wrap: nowrap; }
   .faq-item-header-left { min-width: 0; gap: 8px; }
   .faq-item-triangle { display: none; }
   .faq-item-number { font-size: clamp(20px, 5.6vw, 24px); }
@@ -3431,7 +3465,7 @@ a:focus-visible {
     gap: 6px;
     align-items: center;
     min-height: 88px;
-    padding: 14px 8px;
+    padding: 14px 23px 14px 8px;
   }
   .faq-item-header-left { display: contents; }
   .faq-item-number {
@@ -3511,5 +3545,52 @@ a:focus-visible {
   .purpose-pill:hover, .why-choose-card:hover,
   .why-choose-card:hover .why-choose-icon-circle {
     transform: none;
+  }
+}
+.why-choose-subtext sup,
+.why-choose-description sup {
+  font-size: 0.55em;
+  line-height: 0;
+  vertical-align: super;
+}
+
+.learning-modules-heading-accent sup {
+  position: relative;
+  top: -0.12em;
+  line-height: 0;
+}
+
+/* Desktop: keep the original frame and photo sizes, rotation and vertical
+   placement. Move only the frame left when its rotated right corner needs room.
+   The 24% allowance covers the extra horizontal reach from the -34deg rotation. */
+@media (min-width: 1024px) {
+  .get-in-touch-frame {
+    /* Outside gutter of the existing centred, max-1280px content container. */
+    --contact-frame-outer-gutter: max(0px, calc(50vw - 640px));
+    left: min(-10%, calc(var(--contact-frame-outer-gutter) - 32px - 24%));
+  }
+}
+
+@media (1024px <= width < 1280px) {
+  .get-in-touch-frame {
+    /* Existing 24px section padding plus the centred image-column gutter. */
+    --contact-frame-outer-gutter: max(48px, calc(25vw - 216px));
+  }
+}
+@media (min-width: 1024px) {
+  .meet-neurolxp-text {
+    width: min(680px, 52vw);
+  }
+
+  .meet-neurolxp-heading {
+    text-wrap: wrap;
+  }
+}
+
+@media (min-width: 1280px) {
+  .why-choose-text {
+    transform: translateX(
+      clamp(-114px, calc(565px - 50vw), -78px)
+    );
   }
 }

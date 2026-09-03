@@ -8,7 +8,8 @@
   flex-direction: column;
   align-items: stretch;
   gap: 36px;
-  padding-bottom: 56px;
+  /* The final portrait meets the footer without a bottom spacer. */
+  padding-bottom: 0;
 }
 
 .informationLiteracy > .frameParent8 {
@@ -964,6 +965,7 @@
   position: relative;
   width: min(90%, 252px);
   aspect-ratio: 280 / 339.57;
+  container-type: inline-size;
 }
 
 .thinkingCardSvg {
@@ -976,7 +978,7 @@
   overflow: hidden;
   box-shadow:
     inset 4px 4px 8px #c4c4c4,
-    -4px -4px 14px #fff;
+    inset -4px -4px 8px #ffffff;
 }
 
 .thinkingCardInner {
@@ -990,48 +992,61 @@
   align-items: center;
   width: 82%;
   height: 84%;
-  padding-top: clamp(28px, 8vw, 40px);
+  /* Scale the reference spacing with each card, not with the viewport. */
+  padding-top: 17.857143cqw;
   position: absolute;
   top: 43%;
   left: 50%;
   transform: translate(-50%, -50%);
   overflow: hidden;
   box-shadow:
-    -4px -4px 8px #fff,
-    4px 4px 8px #c4c4c4cc;
+    -4px -4px 8px rgba(255, 255, 255, 0.65),
+    6px 16px 16px rgba(196, 196, 196, 0.95);
 }
 
 .thinkingCardTitle {
-  width: 130px;
-  margin: 0 0 12px;
+  width: 70%;
+  min-height: 2.7em;
+  flex-shrink: 0;
+  margin: 0 0 9.285714cqw;
   font-family: "Segoe UI";
   font-weight: 600;
-  font-size: 20px;
-  line-height: 1.25;
+  font-size: 8.571429cqw;
+  line-height: 1.35;
   letter-spacing: 0.02em;
   text-align: center;
   color: #000;
 }
 
+/* Keep Bias and Detection on separate lines without changing the wording. */
+.thinkingCard:nth-child(2) .thinkingCardTitle {
+  width: min-content;
+  max-width: 100%;
+  white-space: normal;
+}
+
 .evidenceBasedTitle {
-  width: 180px;
-  margin: 0 0 12px;
+  width: 92%;
+  min-height: 2.7em;
+  flex-shrink: 0;
+  margin: 0 0 9.285714cqw;
   font-family: "Segoe UI";
   font-weight: 600;
-  font-size: 20px;
-  line-height: 1.25;
+  font-size: 8.571429cqw;
+  line-height: 1.35;
   letter-spacing: 0.02em;
   text-align: center;
   color: #000;
 }
 
 .thinkingCardDesc {
-  width: 84%;
+  width: 92%;
+  flex-shrink: 0;
   margin: 0;
   font-family: "Segoe UI";
   font-weight: 400;
-  font-size: 18px;
-  line-height: 1.35;
+  font-size: 7.142857cqw;
+  line-height: 1.4;
   letter-spacing: 0.02em;
   text-align: center;
   color: #000;
@@ -1042,10 +1057,11 @@
   width: 26px;
   height: 26px;
   left: 50%;
-  bottom: 13%;
-  transform: translateX(-50%) rotate(-90deg);
+  /* Anchor inside the inner oval; its rounded edge clips the triangle base. */
+  bottom: 0;
+  transform: translateX(-50%);
   background: var(--triangle-color);
-  clip-path: polygon(0 0, 100% 50%, 0 100%);
+  clip-path: polygon(50% 0, 100% 100%, 0 100%);
   z-index: 3;
 }
 
@@ -1055,11 +1071,6 @@
     justify-content: center;
     column-gap: 32px;
     row-gap: 32px;
-  }
-
-  .thinkingCardDesc {
-    font-size: 16px;
-    width: 76%;
   }
 
   .thinkingCard {
@@ -1128,30 +1139,6 @@
   .thinkingCardInner {
     width: 230px;
     height: 84%;
-    padding-top: 56px;
-  }
-
-  .thinkingCardTitle {
-    width: 160px;
-    margin: 0 0 20px;
-    font-size: 22px;
-    line-height: 28px;
-    max-width: 92%;
-  }
-
-  .evidenceBasedTitle {
-    width: 210px;
-    margin: 0 0 20px;
-    font-size: 22px;
-    line-height: 28px;
-    max-width: 92%;
-  }
-
-  .thinkingCardDesc {
-    width: 201.07px;
-    font-size: 20px;
-    line-height: 28px;
-    max-width: 90%;
   }
 
   .thinkingCardTriangle {
@@ -1176,7 +1163,6 @@
 
   .thinkingCardInner {
     width: 82%;
-    padding-top: clamp(48px, 3.889vw, 56px);
   }
 }
 
@@ -1981,7 +1967,7 @@
 }
 
 .frameParent40 {
-  width: calc(100% - 24px);
+  width: calc(100% - 32px);
   max-width: 720px;
   margin: 0 auto;
 }
@@ -2024,13 +2010,13 @@
 }
 
 .frameParent41 {
-  width: calc(100% - 24px);
+  width: calc(100% - 32px);
   max-width: 720px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 32px;
+  gap: 24px;
 }
 
 .skillCircleRow {
@@ -2125,16 +2111,17 @@
 .frameParent47 {
   position: relative;
   width: 100%;
-  max-width: 480px;
+  max-width: 560px;
   aspect-ratio: 677 / 542;
-  overflow: hidden;
+  /* Reserve only the image's natural landscape frame, with no bottom gap. */
+  overflow: visible;
 }
 
 .frameChild35 {
   position: absolute;
   inset: 0;
   border-radius: 40px;
-  background-color: #2d4cc8;
+  background: transparent;
   overflow: hidden;
 }
 
@@ -2146,11 +2133,13 @@
   height: 100%;
   object-fit: contain;
   object-position: bottom center;
+  /* Keep the portrait on the section/footer baseline. */
+  transform: none;
 }
 
 @media (min-width: 641px) {
   .skillCircleRow {
-    gap: 48px;
+    gap: 32px;
   }
 
   .skillCircle {
@@ -2185,15 +2174,15 @@
 @media (min-width: 1025px) {
   .frameParent40 {
     position: relative;
-    width: 959px;
-    max-width: none;
-    margin: 96px auto 0;
+    width: calc(100% - 64px);
+    max-width: 1280px;
+    margin: 48px auto 0;
   }
 
   .builtForTheWayLearnersActParent {
-    width: 1023px;
-    max-width: none;
-    gap: 14px;
+    width: 100%;
+    max-width: 1280px;
+    gap: 16px;
   }
 
   .learnersThinkBadge {
@@ -2204,34 +2193,37 @@
 
   .builtForTheContainer {
     letter-spacing: 0.03em;
-    line-height: 60px;
+    line-height: 1.25;
     font-size: 36px;
   }
 
   .frameParent41 {
     position: relative;
     width: calc(100% - 64px);
-    max-width: 1336px;
+    max-width: 1280px;
     height: auto;
-    margin: 40px 24px 0 max(32px, calc((100% - 1280px) / 2));
-    flex-direction: row;
-    align-items: start;
+    margin: 24px auto 0;
+    align-items: end;
     justify-content: center;
-    gap: clamp(32px, 5.556vw, 80px);
+    gap: 32px;
     display: grid;
-    grid-template-columns: minmax(0, 580px) minmax(0, 677px);
+    /* One shared frame: balanced metrics on the left, a larger portrait on the right. */
+    grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
   }
 
   .skillCircleRow {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     justify-content: center;
-    column-gap: clamp(24px, 6.945vw, 100px);
-    row-gap: 48px;
+    column-gap: 32px;
+    row-gap: 24px;
     width: 100%;
     min-width: 0;
     --skill-circle-size: clamp(150px, calc(25vw - 140px), 220px);
-    padding-top: 40px;
+    padding: 0 0 32px;
+    box-sizing: border-box;
+    align-self: center;
+    justify-items: center;
   }
 
   .skillCircle:nth-child(3) {
@@ -2281,7 +2273,7 @@
   }
 
   .skillCircleLabel {
-    margin-top: 20px;
+    margin-top: 16px;
     max-width: 100%;
     font-size: clamp(16px, 1.667vw, 24px);
     line-height: 1.35;
@@ -2290,10 +2282,12 @@
   }
 
   .frameParent47 {
-    max-width: 677px;
+    max-width: none;
     width: 100%;
     height: auto;
-    aspect-ratio: 677 / 721;
+    aspect-ratio: 677 / 542;
+    align-self: end;
+    min-width: 0;
     flex-shrink: 0;
     overflow: visible;
   }
@@ -2316,6 +2310,7 @@
     object-fit: contain;
     object-position: bottom center;
     bottom: 0;
+    transform: none;
   }
 }
 
@@ -2391,6 +2386,227 @@
 }
 
 /* Full desktop reference spacing; smaller screens retain the compact layout. */
+
+/* Mobile/tablet text containment. Desktop styling remains unchanged. */
+@media (width < 1025px) {
+  .frameParent8 {
+    min-height: 24px;
+    /* Offset only this row's share of the parent's 36px gap: leave 20px. */
+    margin: 12px auto -16px !important;
+  }
+
+  .statsContent {
+    grid-template-columns: minmax(0, 1fr) 2px minmax(0, 1fr) 2px minmax(0, 1fr);
+    gap: 6px;
+    padding: 20px 16px;
+  }
+
+  .statsContent .croreParent,
+  .statsContent .parent,
+  .statsContent .group {
+    max-width: 100%;
+    min-width: 0;
+  }
+
+  .statsContent .crore,
+  .statsContent .skillDomains {
+    max-width: 100%;
+    white-space: normal;
+    overflow-wrap: anywhere;
+    word-break: normal;
+  }
+
+  .statsContent .crore { line-height: 1.2; }
+  .statsContent .skillDomains {
+    line-height: 1.35;
+    min-height: 2.7em;
+    text-wrap: balance;
+  }
+  .statsContent .statsDivider {
+    height: 100%;
+    min-height: 48px;
+  }
+
+  .frameParent24,
+  .frameParent27,
+  .frameParent29,
+  .frameParent30 {
+    display: grid;
+    grid-template-columns: 42px minmax(0, 1fr);
+    /* Keep the cards compact and bring the number closer to the text. */
+    width: calc(100% - 16px);
+    max-width: 300px;
+    margin-inline: auto;
+    gap: 6px;
+    height: auto;
+    padding: 18px 16px;
+    align-items: center;
+    align-content: center;
+  }
+
+  .frameParent25,
+  .frameParent28,
+  .frameParent31 {
+    margin-right: 0;
+    align-self: center;
+  }
+
+  .citationExcellenceParent,
+  .academicIntegrityParent,
+  .intellectualPropertyParent,
+  .ethicalKnowledgeParent {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    /* Centre the heading and description together inside the existing card. */
+    height: 100%;
+    min-height: 0;
+    align-self: stretch;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  .frameParent23 .citationExcellence {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    white-space: normal;
+    overflow-wrap: anywhere;
+    word-break: normal;
+  }
+
+  .frameParent23 .citeSourcesAccuratelyContainer,
+  .frameParent23 .createOriginalPlagiarismContainer {
+    width: 100%;
+    max-width: 26ch;
+    min-width: 0;
+    height: auto;
+    min-height: 0;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.45;
+    text-wrap: balance;
+  }
+
+  .frameParent23 .citeSourcesAccuratelyContainer,
+  .frameParent23 .createOriginalPlagiarismContainer,
+  .frameParent23 .citeSourcesAccuratelyContainer *,
+  .frameParent23 .createOriginalPlagiarismContainer * {
+    /* Override no-wrap spans without clipping or truncating the wording. */
+    white-space: normal !important;
+    overflow-wrap: anywhere;
+    word-break: normal;
+  }
+
+  .frameParent23 .citeSourcesAccuratelyContainer p,
+  .frameParent23 .createOriginalPlagiarismContainer p {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+
+  /* Do not include exported blank paragraphs when centring the visible text.
+     Removing their bottom-only space lets the heading/description sit lower
+     with equal clearance above and below inside the original card design. */
+  .frameParent23 .citeSourcesAccuratelyContainer .blankLine,
+  .frameParent23 .createOriginalPlagiarismContainer .blankLine {
+    display: none;
+  }
+
+  .vectorParent {
+    width: 100%;
+    max-width: 460px;
+    height: auto;
+    aspect-ratio: 662 / 541;
+    container-type: inline-size;
+  }
+
+  .vectorParent .integrityContent {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 82%;
+    min-width: 0;
+    /* Use the child margins once, without the extra mobile flex gap. */
+    gap: 0;
+  }
+
+  .vectorParent .ethicsIntegrityBadge {
+    max-width: 100%;
+    min-height: 30px;
+    margin: 0 0 6px;
+    padding: 6px 12px;
+    font-size: 13px;
+    line-height: 1.3;
+    white-space: normal;
+    text-align: center;
+  }
+
+  .vectorParent .integrityTitle {
+    /* Scale with the shape so the heading also fits narrower phones. */
+    font-size: clamp(15px, 6cqw, 24px);
+    line-height: 1.25;
+    overflow-wrap: anywhere;
+  }
+
+  .vectorParent .integrityDescription {
+    /* Shorter lines stay clear of the hexagon's narrowing lower edges. */
+    width: 100%;
+    max-width: 28ch;
+    font-size: clamp(11px, 4.2cqw, 16px);
+    line-height: 1.4;
+    margin: 8px auto 0;
+    white-space: normal;
+    overflow-wrap: anywhere;
+    /* Let the final line stay shorter beside the lower sloping edges. */
+    text-wrap: wrap;
+  }
+
+  /* A larger, proportional portrait on mobile; keep it on the footer edge. */
+  .frameParent41 {
+    width: 100%;
+    max-width: 752px;
+    margin-inline: auto;
+    gap: 12px;
+  }
+
+  .frameParent41 .skillCircleRow {
+    width: calc(100% - 32px);
+    max-width: 720px;
+    min-width: 0;
+    box-sizing: border-box;
+    justify-content: center;
+  }
+
+  .frameParent41 .frameParent47 {
+    width: 100%;
+    max-width: 640px;
+    height: auto;
+    min-width: 0;
+    /* Reserve the visible portrait, trimming the empty area above it. */
+    aspect-ratio: 3 / 2;
+    margin-inline: auto;
+    overflow: hidden;
+  }
+
+  .frameParent41 .creativeExcitedBrunetteBusiIcon {
+    width: 100%;
+    max-width: 100%;
+    /* Retain natural proportions; only the empty top of the frame is clipped. */
+    height: auto;
+    aspect-ratio: auto;
+    object-fit: contain;
+    object-position: bottom center;
+    top: auto;
+    bottom: 0;
+    transform: none;
+  }
+}
 
 @media (min-width: 1360px) {
   .frameParent22 { gap: 112px; }

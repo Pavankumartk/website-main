@@ -298,7 +298,7 @@ const GenZgalaxy: NextPage = () => {
                   </filter>
                 </defs>
                 <path d="M291.9 2.4 Q300 -2.4 308.1 2.4 L591.3 169.4 Q604 177 598.5 191 L493.2 451.7 Q487.4 466 472 466 H128 Q112.6 466 106.8 451.7 L1.5 191 Q-4 177 8.7 169.4 Z" fill="#dfe6e9" filter={`url(#pentagonShadow1)`} />
-                <polygon points="300,62 542,197 450,416 150,416 58,197" fill="#b39ddb" />
+                <polygon points="300,62 542,197 450,416 150,416 58,197" fill="#C29CC5" />
               </svg>
 
               <h3 className={styles.featureLabel}>Gamified<br />Elements</h3>
@@ -322,7 +322,7 @@ const GenZgalaxy: NextPage = () => {
                   </filter>
                 </defs>
                 <path d="M291.9 2.4 Q300 -2.4 308.1 2.4 L591.3 169.4 Q604 177 598.5 191 L493.2 451.7 Q487.4 466 472 466 H128 Q112.6 466 106.8 451.7 L1.5 191 Q-4 177 8.7 169.4 Z" fill="#dfe6e9" filter={`url(#pentagonShadow2)`} />
-                <polygon points="300,62 542,197 450,416 150,416 58,197" fill="#f4a6c6" />
+                <polygon points="300,62 542,197 450,416 150,416 58,197" fill="#E5A2C3" />
               </svg>
 
               <h3 className={styles.featureLabel}>Interactive<br />Content</h3>
@@ -346,7 +346,7 @@ const GenZgalaxy: NextPage = () => {
                   </filter>
                 </defs>
                 <path d="M291.9 2.4 Q300 -2.4 308.1 2.4 L591.3 169.4 Q604 177 598.5 191 L493.2 451.7 Q487.4 466 472 466 H128 Q112.6 466 106.8 451.7 L1.5 191 Q-4 177 8.7 169.4 Z" fill="#dfe6e9" filter={`url(#pentagonShadow3)`} />
-                <polygon points="300,62 542,197 450,416 150,416 58,197" fill="#f78888" />
+                <polygon points="300,62 542,197 450,416 150,416 58,197" fill="#FF9C9C" />
               </svg>
 
               <h3 className={styles.featureLabel}>Short, Focused<br />Lessons</h3>
@@ -370,7 +370,7 @@ const GenZgalaxy: NextPage = () => {
                   </filter>
                 </defs>
                 <path d="M291.9 2.4 Q300 -2.4 308.1 2.4 L591.3 169.4 Q604 177 598.5 191 L493.2 451.7 Q487.4 466 472 466 H128 Q112.6 466 106.8 451.7 L1.5 191 Q-4 177 8.7 169.4 Z" fill="#dfe6e9" filter={`url(#pentagonShadow4)`} />
-                <polygon points="300,62 542,197 450,416 150,416 58,197" fill="#7fae5c" />
+                <polygon points="300,62 542,197 450,416 150,416 58,197" fill="#7FAB6A" />
               </svg>
 
               <h3 className={styles.featureLabel}>Group-Based<br />Learning</h3>
@@ -396,7 +396,7 @@ const GenZgalaxy: NextPage = () => {
                   </filter>
                 </defs>
                 <path d="M291.9 2.4 Q300 -2.4 308.1 2.4 L591.3 169.4 Q604 177 598.5 191 L493.2 451.7 Q487.4 466 472 466 H128 Q112.6 466 106.8 451.7 L1.5 191 Q-4 177 8.7 169.4 Z" fill="#dfe6e9" filter={`url(#pentagonShadow5)`} />
-                <polygon points="300,62 542,197 450,416 150,416 58,197" fill="#c9a227" />
+                <polygon points="300,62 542,197 450,416 150,416 58,197" fill="#BCAC6A" />
               </svg>
 
               <h3 className={styles.featureLabel}>Mobile-Friendly<br />Design</h3>
@@ -420,7 +420,7 @@ const GenZgalaxy: NextPage = () => {
                   </filter>
                 </defs>
                 <path d="M291.9 2.4 Q300 -2.4 308.1 2.4 L591.3 169.4 Q604 177 598.5 191 L493.2 451.7 Q487.4 466 472 466 H128 Q112.6 466 106.8 451.7 L1.5 191 Q-4 177 8.7 169.4 Z" fill="#dfe6e9" filter={`url(#pentagonShadow6)`} />
-                <polygon points="300,62 542,197 450,416 150,416 58,197" fill="#9694d4" />
+                <polygon points="300,62 542,197 450,416 150,416 58,197" fill="#9CA7D2" />
               </svg>
 
               <h3 className={styles.featureLabel}>Challenges &<br />Rewards</h3>
@@ -444,7 +444,7 @@ const GenZgalaxy: NextPage = () => {
                   </filter>
                 </defs>
                 <path d="M291.9 2.4 Q300 -2.4 308.1 2.4 L591.3 169.4 Q604 177 598.5 191 L493.2 451.7 Q487.4 466 472 466 H128 Q112.6 466 106.8 451.7 L1.5 191 Q-4 177 8.7 169.4 Z" fill="#dfe6e9" filter={`url(#pentagonShadow7)`} />
-                <polygon points="300,62 542,197 450,416 150,416 58,197" fill="#4fb8b6" />
+                <polygon points="300,62 542,197 450,416 150,416 58,197" fill="#6CC3C6" />
               </svg>
 
               <h3 className={styles.featureLabel}>Responsive<br />Quizzes</h3>
@@ -468,7 +468,7 @@ const GenZgalaxy: NextPage = () => {
                   </filter>
                 </defs>
                 <path d="M291.9 2.4 Q300 -2.4 308.1 2.4 L591.3 169.4 Q604 177 598.5 191 L493.2 451.7 Q487.4 466 472 466 H128 Q112.6 466 106.8 451.7 L1.5 191 Q-4 177 8.7 169.4 Z" fill="#dfe6e9" filter={`url(#pentagonShadow8)`} />
-                <polygon points="300,62 542,197 450,416 150,416 58,197" fill="#a99bc9" />
+                <polygon points="300,62 542,197 450,416 150,416 58,197" fill="#A29BBE" />
               </svg>
 
               <h3 className={styles.featureLabel}>Peer<br />Discussion</h3>
