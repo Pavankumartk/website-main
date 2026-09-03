@@ -2633,9 +2633,9 @@ a:focus-visible {
 /* =====================================================================
    Responsive layout
    1280px and above: the centred desktop design defined above.
-   1024Ã¢â‚¬â€œ1279px: compact laptops and landscape tablets.
-   768Ã¢â‚¬â€œ1023px: tablets; large two-column sections stack.
-   600Ã¢â‚¬â€œ767px: wide phones and small tablets.
+   1024â€“1279px: compact laptops and landscape tablets.
+   768â€“1023px: tablets; large two-column sections stack.
+   600â€“767px: wide phones and small tablets.
    Below 600px: narrow phones; content determines card height.
    Rules accumulate from wide to narrow, including fractional widths.
    No device model, screen height, page zoom or fixed carousel offset.
