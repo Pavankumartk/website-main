@@ -9,7 +9,7 @@
 :global(body):has(.genzgalaxy)::after,
 :global(body):has(.genzgalaxy) *::before,
 :global(body):has(.genzgalaxy) *::after {
-  font-family: "Segoe UI", "Inter", sans-serif !important;
+  font-family: "Segoe UI", "Inter" !important;
 }
 
 /* Existing 1440px desktop appearance, consolidated from the supplied CSS.
@@ -26,7 +26,7 @@
   text-align: left;
   font-size: 48px;
   color: #31344b;
-  font-family: "Segoe UI", "Inter", sans-serif;
+  font-family: "Segoe UI", "Inter";
   zoom: 0.89;
 }
 
@@ -2800,7 +2800,7 @@
   .groupBasedLearning,
   .mobileFriendlyDesign,
   .challengesRewards {
-    font-family: "Segoe UI", "Inter", sans-serif !important;
+    font-family: "Segoe UI", "Inter" !important;
   }
 
 .frameParent9 {
@@ -2884,7 +2884,7 @@
     height: auto !important;
     min-height: 48px !important;
 
-    font-family: "Segoe UI", "Inter", sans-serif !important;
+    font-family: "Segoe UI", "Inter" !important;
     font-size: 20px !important;
     line-height: 28px !important;
     font-weight: 600 !important;
@@ -4065,5 +4065,350 @@
     white-space: normal;
     text-overflow: clip;
     text-transform: none;
+  }
+}
+
+/* Reference PNG: taller, rounded pentagons with labels centred in the inset.
+   The SVG supplies the outline, shadow and unchanged Figma colours. */
+.genzgalaxy .frameParent6 .frameParent9 .frameParent10 .polygonParent {
+  height: auto !important;
+  min-height: 0 !important;
+  max-height: none !important;
+  aspect-ratio: 300 / 296 !important;
+  container-type: inline-size;
+}
+.genzgalaxy .frameParent6 .frameParent9 .frameParent10 .polygonParent > .polygonIcon {
+  inset: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  overflow: visible;
+}
+.genzgalaxy .frameParent6 .frameParent9 .frameParent10 .polygonParent > .featureLabel {
+  top: 55.5% !important;
+  left: 50% !important;
+  width: 78% !important;
+  max-width: 78% !important;
+  height: auto !important;
+  min-height: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  transform: translate(-50%, -50%) !important;
+  font-size: clamp(10.5px, 7.8cqi, 20px) !important;
+  line-height: 1.33 !important;
+  letter-spacing: 0 !important;
+  text-align: center !important;
+  white-space: nowrap !important;
+  overflow-wrap: normal !important;
+}
+
+/* Learn Your Way: one compact panel, without a nested scroll area.
+   Original 375px/345px pill widths and 30px offset are retained. Shorter
+   cards/photo and a narrower desktop panel remove the unused middle space. */
+.genzgalaxy .image20Parent {
+  height: auto !important;
+  min-height: 0 !important;
+  padding: 20px !important;
+}
+.genzgalaxy .image20Parent .rectangleParent {
+  position: relative !important;
+  inset: auto !important;
+  display: grid !important;
+  grid-template-columns: minmax(0, 1.25fr) minmax(0, .85fr) !important;
+  grid-template-rows: auto !important;
+  align-items: center !important;
+  width: 100% !important;
+  height: auto !important;
+  min-height: 0 !important;
+  gap: 12px !important;
+  padding: 24px 12px !important;
+  box-sizing: border-box;
+}
+.genzgalaxy .image20Parent :is(.image20, .rectangleIcon) {
+  inset: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+}
+.genzgalaxy .image20Parent .frameParent12 {
+  position: relative !important;
+  inset: auto !important;
+  grid-column: 1 !important;
+  grid-row: 1 !important;
+  display: flex !important;
+  flex-direction: column !important;
+  width: 100% !important;
+  min-width: 0 !important;
+  max-width: none !important;
+  height: auto !important;
+  gap: 20px !important;
+}
+.genzgalaxy .image20Parent :is(.frameParent13, .frameParent14) {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: flex-start !important;
+  width: 100% !important;
+  height: auto !important;
+  gap: 12px !important;
+}
+.genzgalaxy .image20Parent .whatMakesUsDifferentBadge {
+  font-size: 22px !important;
+  line-height: 1.35 !important;
+  padding: 10px 18px !important;
+}
+.genzgalaxy .image20Parent .learnYourWay {
+  width: 100% !important;
+  margin: 0 !important;
+  font-size: 36px !important;
+  line-height: 1.25 !important;
+  text-align: left !important;
+}
+.genzgalaxy .image20Parent .learnAtYour {
+  width: 100% !important;
+  max-width: none !important;
+  margin: 0 !important;
+  font-size: 24px !important;
+  line-height: 1.4 !important;
+  letter-spacing: 0 !important;
+  white-space: nowrap !important;
+  text-wrap: nowrap !important;
+  overflow-wrap: normal !important;
+  text-align: left !important;
+}
+.genzgalaxy .image20Parent .frameParent15 {
+  display: flex !important;
+  flex-direction: column !important;
+  width: 100% !important;
+  max-width: 375px !important;
+  gap: 12px !important;
+}
+.genzgalaxy .image20Parent .frameParent16 {
+  display: flex !important;
+  align-items: center !important;
+  width: 100% !important;
+  height: 72px !important;
+  min-height: 0 !important;
+  padding: 10px 0 10px 30px !important;
+  box-sizing: border-box;
+}
+.genzgalaxy .image20Parent :is(.frameChild20, .frameChild21) {
+  inset: 0 auto 0 0 !important;
+  width: 78.133333% !important;
+  height: 100% !important;
+}
+.genzgalaxy .image20Parent .frameParent15 :is(.skillPathWrapper,
+.usefulResourcesWrapper, .practiceTasksWrapper, .careerFocusedModulesWrapper) {
+  position: relative !important;
+  inset: auto !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 100% !important;
+  height: auto !important;
+  min-height: 52px !important;
+  padding: 8px 16px !important;
+  box-sizing: border-box;
+}
+.genzgalaxy .image20Parent .frameParent15 :is(.skillPath,
+.usefulResources, .practiceTasks, .careerFocusedModules) {
+  position: static !important;
+  inset: auto !important;
+  display: block !important;
+  width: 100% !important;
+  height: auto !important;
+  margin: 0 !important;
+  font-size: 21px !important;
+  line-height: 1.3 !important;
+  letter-spacing: .01em !important;
+  text-align: center !important;
+  white-space: nowrap !important;
+  overflow-wrap: normal !important;
+}
+.genzgalaxy .image20Parent .successfulYoungBusinessmanSIcon {
+  position: relative !important;
+  inset: auto !important;
+  grid-column: 2 !important;
+  grid-row: 1 !important;
+  align-self: end !important;
+  justify-self: start !important;
+  width: auto !important;
+  max-width: 100% !important;
+  height: 560px !important;
+  max-height: none !important;
+  margin: 0 !important;
+  object-fit: contain !important;
+  object-position: left bottom !important;
+  transform: translateY(40px) !important;
+}
+.genzgalaxy .image20Parent .wrapperPolygon14 {
+  position: absolute !important;
+  inset: 0 0 0 auto !important;
+  width: 42% !important;
+  height: 100% !important;
+}
+
+/* Preserve the page's other full-width sections; tighten only this frame. */
+@media (min-width: 1024px) {
+  /* Keep the frame width exactly unchanged. */
+  .genzgalaxy .image20Parent {
+    width: 1080px !important;
+    max-width: 100% !important;
+  }
+
+  /* Reduce only the empty space inside the frame. */
+  .genzgalaxy .image20Parent .rectangleParent {
+    grid-template-columns: minmax(0, .98fr) minmax(0, 1.02fr) !important;
+    column-gap: 0 !important;
+  }
+
+  /* Move only the left-side content slightly right to reduce the middle empty space. */
+  .genzgalaxy .image20Parent .frameParent12 {
+    transform: translateX(46px) !important;
+  }
+
+  /* Keep the desktop heading on one line without changing its font/design. */
+  .genzgalaxy .image20Parent .learnYourWay {
+    width: max-content !important;
+    max-width: none !important;
+    white-space: nowrap !important;
+    text-wrap: nowrap !important;
+    overflow-wrap: normal !important;
+  }
+
+  /* Fill more of the existing frame WITHOUT changing the frame width/height. */
+  .genzgalaxy .image20Parent .successfulYoungBusinessmanSIcon {
+    justify-self: start !important;
+    width: 560px !important;
+    max-width: none !important;
+    height: 570px !important;
+    max-height: none !important;
+    transform: translate(51px, 34px) scale(1.12) !important;
+    transform-origin: center bottom !important;
+  }
+}
+
+@media (768px <= width < 1024px) {
+  .genzgalaxy .image20Parent { padding: 16px !important; }
+  .genzgalaxy .image20Parent .rectangleParent {
+    grid-template-columns: minmax(0, 1.4fr) minmax(0, .8fr) !important;
+    min-height: 0 !important;
+    padding: 20px 24px !important;
+    gap: 20px !important;
+  }
+  .genzgalaxy .image20Parent .whatMakesUsDifferentBadge { font-size: 18px !important; }
+  .genzgalaxy .image20Parent .learnYourWay { font-size: 28px !important; }
+  .genzgalaxy .image20Parent .learnAtYour { font-size: 16px !important; }
+  .genzgalaxy .image20Parent .frameParent15 :is(.skillPath,
+  .usefulResources, .practiceTasks, .careerFocusedModules) { font-size: 18px !important; }
+  .genzgalaxy .image20Parent .successfulYoungBusinessmanSIcon { height: 440px !important; transform: translateY(20px) !important; }
+}
+
+@media (width < 768px) {
+  .genzgalaxy .image20Parent { padding: 8px !important; }
+  .genzgalaxy .image20Parent .rectangleParent {
+    grid-template-columns: minmax(0, 1fr) !important;
+    grid-template-rows: auto auto !important;
+    min-height: 0 !important;
+    padding: 8px !important;
+    gap: 12px !important;
+  }
+  .genzgalaxy .image20Parent .frameParent12 { gap: 16px !important; }
+  .genzgalaxy .image20Parent :is(.frameParent13, .frameParent14) {
+    align-items: center !important;
+    gap: 10px !important;
+  }
+  .genzgalaxy .image20Parent .whatMakesUsDifferentBadge {
+    font-size: 14px !important;
+    padding: 6px 12px !important;
+  }
+  .genzgalaxy .image20Parent .learnYourWay {
+    font-size: clamp(22px, 4.6vw, 28px) !important;
+    text-align: center !important;
+  }
+  .genzgalaxy .image20Parent .learnAtYour {
+    font-size: clamp(11.5px, 3.2vw, 18px) !important;
+    text-align: center !important;
+  }
+  .genzgalaxy .image20Parent .frameParent15 {
+    align-self: center !important;
+    gap: 8px !important;
+  }
+  .genzgalaxy .image20Parent .frameParent16 {
+    height: 52px !important;
+    padding: 6px 0 6px 12px !important;
+  }
+  .genzgalaxy .image20Parent .frameParent15 :is(.skillPathWrapper,
+  .usefulResourcesWrapper, .practiceTasksWrapper, .careerFocusedModulesWrapper) {
+    min-height: 40px !important;
+    padding: 6px 12px !important;
+  }
+  .genzgalaxy .image20Parent .frameParent15 :is(.skillPath,
+  .usefulResources, .practiceTasks, .careerFocusedModules) {
+    font-size: 14px !important;
+    letter-spacing: 0 !important;
+  }
+  .genzgalaxy .image20Parent .successfulYoungBusinessmanSIcon {
+    grid-column: 1 !important;
+    grid-row: 2 !important;
+    justify-self: center !important;
+    width: 100% !important;
+    height: clamp(120px, 22svh, 190px) !important;
+    max-width: 300px !important;
+    object-position: center bottom !important;
+    transform: translateY(8px) !important;
+  }
+}
+
+/* Short landscape screens place the pills beside the photo, below the copy. */
+@media (min-width: 560px) and (height < 520px) {
+  .genzgalaxy .image20Parent { padding: 8px !important; }
+  .genzgalaxy .image20Parent .rectangleParent {
+    grid-template-columns: minmax(0, 1.3fr) minmax(0, .7fr) !important;
+    grid-template-rows: auto auto !important;
+    min-height: 0 !important;
+    padding: 8px !important;
+    gap: 8px 16px !important;
+  }
+  .genzgalaxy .image20Parent .frameParent12 { display: contents !important; }
+  .genzgalaxy .image20Parent :is(.frameParent13, .frameParent14) { gap: 6px !important; }
+  .genzgalaxy .image20Parent .whatMakesUsDifferentBadge {
+    font-size: 13px !important;
+    padding: 5px 12px !important;
+  }
+  .genzgalaxy .image20Parent .learnYourWay { font-size: 20px !important; }
+  .genzgalaxy .image20Parent .learnAtYour { font-size: 13px !important; }
+  .genzgalaxy .image20Parent .frameParent13 {
+    grid-column: 1 / -1 !important;
+    grid-row: 1 !important;
+  }
+  .genzgalaxy .image20Parent .frameParent15 {
+    grid-column: 1 !important;
+    grid-row: 2 !important;
+    gap: 6px !important;
+  }
+  .genzgalaxy .image20Parent .frameParent16 { height: 42px !important; padding-block: 3px !important; }
+  .genzgalaxy .image20Parent .frameParent15 :is(.skillPath,
+  .usefulResources, .practiceTasks, .careerFocusedModules) { font-size: 14px !important; }
+  .genzgalaxy .image20Parent .frameParent15 :is(.skillPathWrapper,
+  .usefulResourcesWrapper, .practiceTasksWrapper, .careerFocusedModulesWrapper) {
+    min-height: 36px !important;
+    padding-block: 4px !important;
+  }
+  .genzgalaxy .image20Parent .successfulYoungBusinessmanSIcon {
+    grid-column: 2 !important;
+    grid-row: 2 !important;
+    height: min(190px, 50svh) !important;
+    transform: translateY(8px) !important;
+  }
+}
+
+/* At extreme zoom/narrow widths, wrap rather than hide or clip the copy. */
+@media (width < 320px) {
+  .genzgalaxy .image20Parent .frameParent16 {
+    height: auto !important;
+    min-height: 52px !important;
+  }
+  .genzgalaxy .image20Parent .learnAtYour,
+  .genzgalaxy .image20Parent .frameParent15 .careerFocusedModules {
+    white-space: normal !important;
+    text-wrap: wrap !important;
   }
 }

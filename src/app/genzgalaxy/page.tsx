@@ -280,15 +280,15 @@ const GenZgalaxy: NextPage = () => {
         <div className={styles.frameParent9}>
           <div className={styles.frameParent10}>
             <div className={styles.polygonParent}>
-              <svg className={styles.polygonIcon} viewBox="0 0 600 466" preserveAspectRatio="xMidYMid meet" aria-hidden="true" focusable="false">
+              <svg className={styles.polygonIcon} viewBox="0 0 300 296" preserveAspectRatio="xMidYMid meet" aria-hidden="true" focusable="false">
                 <defs>
                   <filter id="pentagonShadow1" x="-30%" y="-30%" width="160%" height="160%">
-                    <feGaussianBlur in="SourceAlpha" stdDeviation="4" result="cardBlur" />
-                    <feOffset in="cardBlur" dx="4" dy="4" result="darkOffset" />
-                    <feFlood floodColor="#c4c4c4" floodOpacity="0.6" result="darkColour" />
+                    <feGaussianBlur in="SourceAlpha" stdDeviation="8" result="cardBlur" />
+                    <feOffset in="cardBlur" dx="8" dy="8" result="darkOffset" />
+                    <feFlood floodColor="#c4c4c4" floodOpacity="1" result="darkColour" />
                     <feComposite in="darkColour" in2="darkOffset" operator="in" result="darkShadow" />
-                    <feOffset in="cardBlur" dx="-4" dy="-4" result="lightOffset" />
-                    <feFlood floodColor="#ffffff" floodOpacity="0.9" result="lightColour" />
+                    <feOffset in="cardBlur" dx="-8" dy="-8" result="lightOffset" />
+                    <feFlood floodColor="#ffffff" floodOpacity="0.8" result="lightColour" />
                     <feComposite in="lightColour" in2="lightOffset" operator="in" result="lightShadow" />
                     <feMerge>
                       <feMergeNode in="darkShadow" />
@@ -297,22 +297,22 @@ const GenZgalaxy: NextPage = () => {
                     </feMerge>
                   </filter>
                 </defs>
-                <path d="M291.9 2.4 Q300 -2.4 308.1 2.4 L591.3 169.4 Q604 177 598.5 191 L493.2 451.7 Q487.4 466 472 466 H128 Q112.6 466 106.8 451.7 L1.5 191 Q-4 177 8.7 169.4 Z" fill="#dfe6e9" filter={`url(#pentagonShadow1)`} />
-                <polygon points="300,62 542,197 450,416 150,416 58,197" fill="#C29CC5" />
+                <path d="M145 2 Q150 -1 155 2 L296 108 Q300 111 298.5 116 L246 290 Q244 296 238 296 H62 Q56 296 54 290 L1.5 116 Q0 111 4 108 Z" fill="#dfe6e9" filter={`url(#pentagonShadow1)`} />
+                <polygon points="150,40 270,128 224,268 76,268 30,128" fill="#C29CC5" />
               </svg>
 
               <h3 className={styles.featureLabel}>Gamified<br />Elements</h3>
             </div>
             <div className={styles.polygonParent}>
-              <svg className={styles.polygonIcon} viewBox="0 0 600 466" preserveAspectRatio="xMidYMid meet" aria-hidden="true" focusable="false">
+              <svg className={styles.polygonIcon} viewBox="0 0 300 296" preserveAspectRatio="xMidYMid meet" aria-hidden="true" focusable="false">
                 <defs>
                   <filter id="pentagonShadow2" x="-30%" y="-30%" width="160%" height="160%">
-                    <feGaussianBlur in="SourceAlpha" stdDeviation="4" result="cardBlur" />
-                    <feOffset in="cardBlur" dx="4" dy="4" result="darkOffset" />
-                    <feFlood floodColor="#c4c4c4" floodOpacity="0.6" result="darkColour" />
+                    <feGaussianBlur in="SourceAlpha" stdDeviation="8" result="cardBlur" />
+                    <feOffset in="cardBlur" dx="8" dy="8" result="darkOffset" />
+                    <feFlood floodColor="#c4c4c4" floodOpacity="1" result="darkColour" />
                     <feComposite in="darkColour" in2="darkOffset" operator="in" result="darkShadow" />
-                    <feOffset in="cardBlur" dx="-4" dy="-4" result="lightOffset" />
-                    <feFlood floodColor="#ffffff" floodOpacity="0.9" result="lightColour" />
+                    <feOffset in="cardBlur" dx="-8" dy="-8" result="lightOffset" />
+                    <feFlood floodColor="#ffffff" floodOpacity="0.8" result="lightColour" />
                     <feComposite in="lightColour" in2="lightOffset" operator="in" result="lightShadow" />
                     <feMerge>
                       <feMergeNode in="darkShadow" />
@@ -321,22 +321,22 @@ const GenZgalaxy: NextPage = () => {
                     </feMerge>
                   </filter>
                 </defs>
-                <path d="M291.9 2.4 Q300 -2.4 308.1 2.4 L591.3 169.4 Q604 177 598.5 191 L493.2 451.7 Q487.4 466 472 466 H128 Q112.6 466 106.8 451.7 L1.5 191 Q-4 177 8.7 169.4 Z" fill="#dfe6e9" filter={`url(#pentagonShadow2)`} />
-                <polygon points="300,62 542,197 450,416 150,416 58,197" fill="#E5A2C3" />
+                <path d="M145 2 Q150 -1 155 2 L296 108 Q300 111 298.5 116 L246 290 Q244 296 238 296 H62 Q56 296 54 290 L1.5 116 Q0 111 4 108 Z" fill="#dfe6e9" filter={`url(#pentagonShadow2)`} />
+                <polygon points="150,40 270,128 224,268 76,268 30,128" fill="#E5A2C3" />
               </svg>
 
               <h3 className={styles.featureLabel}>Interactive<br />Content</h3>
             </div>
             <div className={styles.polygonParent}>
-              <svg className={styles.polygonIcon} viewBox="0 0 600 466" preserveAspectRatio="xMidYMid meet" aria-hidden="true" focusable="false">
+              <svg className={styles.polygonIcon} viewBox="0 0 300 296" preserveAspectRatio="xMidYMid meet" aria-hidden="true" focusable="false">
                 <defs>
                   <filter id="pentagonShadow3" x="-30%" y="-30%" width="160%" height="160%">
-                    <feGaussianBlur in="SourceAlpha" stdDeviation="4" result="cardBlur" />
-                    <feOffset in="cardBlur" dx="4" dy="4" result="darkOffset" />
-                    <feFlood floodColor="#c4c4c4" floodOpacity="0.6" result="darkColour" />
+                    <feGaussianBlur in="SourceAlpha" stdDeviation="8" result="cardBlur" />
+                    <feOffset in="cardBlur" dx="8" dy="8" result="darkOffset" />
+                    <feFlood floodColor="#c4c4c4" floodOpacity="1" result="darkColour" />
                     <feComposite in="darkColour" in2="darkOffset" operator="in" result="darkShadow" />
-                    <feOffset in="cardBlur" dx="-4" dy="-4" result="lightOffset" />
-                    <feFlood floodColor="#ffffff" floodOpacity="0.9" result="lightColour" />
+                    <feOffset in="cardBlur" dx="-8" dy="-8" result="lightOffset" />
+                    <feFlood floodColor="#ffffff" floodOpacity="0.8" result="lightColour" />
                     <feComposite in="lightColour" in2="lightOffset" operator="in" result="lightShadow" />
                     <feMerge>
                       <feMergeNode in="darkShadow" />
@@ -345,22 +345,22 @@ const GenZgalaxy: NextPage = () => {
                     </feMerge>
                   </filter>
                 </defs>
-                <path d="M291.9 2.4 Q300 -2.4 308.1 2.4 L591.3 169.4 Q604 177 598.5 191 L493.2 451.7 Q487.4 466 472 466 H128 Q112.6 466 106.8 451.7 L1.5 191 Q-4 177 8.7 169.4 Z" fill="#dfe6e9" filter={`url(#pentagonShadow3)`} />
-                <polygon points="300,62 542,197 450,416 150,416 58,197" fill="#FF9C9C" />
+                <path d="M145 2 Q150 -1 155 2 L296 108 Q300 111 298.5 116 L246 290 Q244 296 238 296 H62 Q56 296 54 290 L1.5 116 Q0 111 4 108 Z" fill="#dfe6e9" filter={`url(#pentagonShadow3)`} />
+                <polygon points="150,40 270,128 224,268 76,268 30,128" fill="#FF9C9C" />
               </svg>
 
               <h3 className={styles.featureLabel}>Short, Focused<br />Lessons</h3>
             </div>
             <div className={styles.polygonParent}>
-              <svg className={styles.polygonIcon} viewBox="0 0 600 466" preserveAspectRatio="xMidYMid meet" aria-hidden="true" focusable="false">
+              <svg className={styles.polygonIcon} viewBox="0 0 300 296" preserveAspectRatio="xMidYMid meet" aria-hidden="true" focusable="false">
                 <defs>
                   <filter id="pentagonShadow4" x="-30%" y="-30%" width="160%" height="160%">
-                    <feGaussianBlur in="SourceAlpha" stdDeviation="4" result="cardBlur" />
-                    <feOffset in="cardBlur" dx="4" dy="4" result="darkOffset" />
-                    <feFlood floodColor="#c4c4c4" floodOpacity="0.6" result="darkColour" />
+                    <feGaussianBlur in="SourceAlpha" stdDeviation="8" result="cardBlur" />
+                    <feOffset in="cardBlur" dx="8" dy="8" result="darkOffset" />
+                    <feFlood floodColor="#c4c4c4" floodOpacity="1" result="darkColour" />
                     <feComposite in="darkColour" in2="darkOffset" operator="in" result="darkShadow" />
-                    <feOffset in="cardBlur" dx="-4" dy="-4" result="lightOffset" />
-                    <feFlood floodColor="#ffffff" floodOpacity="0.9" result="lightColour" />
+                    <feOffset in="cardBlur" dx="-8" dy="-8" result="lightOffset" />
+                    <feFlood floodColor="#ffffff" floodOpacity="0.8" result="lightColour" />
                     <feComposite in="lightColour" in2="lightOffset" operator="in" result="lightShadow" />
                     <feMerge>
                       <feMergeNode in="darkShadow" />
@@ -369,8 +369,8 @@ const GenZgalaxy: NextPage = () => {
                     </feMerge>
                   </filter>
                 </defs>
-                <path d="M291.9 2.4 Q300 -2.4 308.1 2.4 L591.3 169.4 Q604 177 598.5 191 L493.2 451.7 Q487.4 466 472 466 H128 Q112.6 466 106.8 451.7 L1.5 191 Q-4 177 8.7 169.4 Z" fill="#dfe6e9" filter={`url(#pentagonShadow4)`} />
-                <polygon points="300,62 542,197 450,416 150,416 58,197" fill="#7FAB6A" />
+                <path d="M145 2 Q150 -1 155 2 L296 108 Q300 111 298.5 116 L246 290 Q244 296 238 296 H62 Q56 296 54 290 L1.5 116 Q0 111 4 108 Z" fill="#dfe6e9" filter={`url(#pentagonShadow4)`} />
+                <polygon points="150,40 270,128 224,268 76,268 30,128" fill="#7FAB6A" />
               </svg>
 
               <h3 className={styles.featureLabel}>Group-Based<br />Learning</h3>
@@ -378,15 +378,15 @@ const GenZgalaxy: NextPage = () => {
           </div>
           <div className={styles.frameParent10}>
             <div className={styles.polygonParent}>
-              <svg className={styles.polygonIcon} viewBox="0 0 600 466" preserveAspectRatio="xMidYMid meet" aria-hidden="true" focusable="false">
+              <svg className={styles.polygonIcon} viewBox="0 0 300 296" preserveAspectRatio="xMidYMid meet" aria-hidden="true" focusable="false">
                 <defs>
                   <filter id="pentagonShadow5" x="-30%" y="-30%" width="160%" height="160%">
-                    <feGaussianBlur in="SourceAlpha" stdDeviation="4" result="cardBlur" />
-                    <feOffset in="cardBlur" dx="4" dy="4" result="darkOffset" />
-                    <feFlood floodColor="#c4c4c4" floodOpacity="0.6" result="darkColour" />
+                    <feGaussianBlur in="SourceAlpha" stdDeviation="8" result="cardBlur" />
+                    <feOffset in="cardBlur" dx="8" dy="8" result="darkOffset" />
+                    <feFlood floodColor="#c4c4c4" floodOpacity="1" result="darkColour" />
                     <feComposite in="darkColour" in2="darkOffset" operator="in" result="darkShadow" />
-                    <feOffset in="cardBlur" dx="-4" dy="-4" result="lightOffset" />
-                    <feFlood floodColor="#ffffff" floodOpacity="0.9" result="lightColour" />
+                    <feOffset in="cardBlur" dx="-8" dy="-8" result="lightOffset" />
+                    <feFlood floodColor="#ffffff" floodOpacity="0.8" result="lightColour" />
                     <feComposite in="lightColour" in2="lightOffset" operator="in" result="lightShadow" />
                     <feMerge>
                       <feMergeNode in="darkShadow" />
@@ -395,22 +395,22 @@ const GenZgalaxy: NextPage = () => {
                     </feMerge>
                   </filter>
                 </defs>
-                <path d="M291.9 2.4 Q300 -2.4 308.1 2.4 L591.3 169.4 Q604 177 598.5 191 L493.2 451.7 Q487.4 466 472 466 H128 Q112.6 466 106.8 451.7 L1.5 191 Q-4 177 8.7 169.4 Z" fill="#dfe6e9" filter={`url(#pentagonShadow5)`} />
-                <polygon points="300,62 542,197 450,416 150,416 58,197" fill="#BCAC6A" />
+                <path d="M145 2 Q150 -1 155 2 L296 108 Q300 111 298.5 116 L246 290 Q244 296 238 296 H62 Q56 296 54 290 L1.5 116 Q0 111 4 108 Z" fill="#dfe6e9" filter={`url(#pentagonShadow5)`} />
+                <polygon points="150,40 270,128 224,268 76,268 30,128" fill="#BCAC6A" />
               </svg>
 
               <h3 className={styles.featureLabel}>Mobile-Friendly<br />Design</h3>
             </div>
             <div className={styles.polygonParent}>
-              <svg className={styles.polygonIcon} viewBox="0 0 600 466" preserveAspectRatio="xMidYMid meet" aria-hidden="true" focusable="false">
+              <svg className={styles.polygonIcon} viewBox="0 0 300 296" preserveAspectRatio="xMidYMid meet" aria-hidden="true" focusable="false">
                 <defs>
                   <filter id="pentagonShadow6" x="-30%" y="-30%" width="160%" height="160%">
-                    <feGaussianBlur in="SourceAlpha" stdDeviation="4" result="cardBlur" />
-                    <feOffset in="cardBlur" dx="4" dy="4" result="darkOffset" />
-                    <feFlood floodColor="#c4c4c4" floodOpacity="0.6" result="darkColour" />
+                    <feGaussianBlur in="SourceAlpha" stdDeviation="8" result="cardBlur" />
+                    <feOffset in="cardBlur" dx="8" dy="8" result="darkOffset" />
+                    <feFlood floodColor="#c4c4c4" floodOpacity="1" result="darkColour" />
                     <feComposite in="darkColour" in2="darkOffset" operator="in" result="darkShadow" />
-                    <feOffset in="cardBlur" dx="-4" dy="-4" result="lightOffset" />
-                    <feFlood floodColor="#ffffff" floodOpacity="0.9" result="lightColour" />
+                    <feOffset in="cardBlur" dx="-8" dy="-8" result="lightOffset" />
+                    <feFlood floodColor="#ffffff" floodOpacity="0.8" result="lightColour" />
                     <feComposite in="lightColour" in2="lightOffset" operator="in" result="lightShadow" />
                     <feMerge>
                       <feMergeNode in="darkShadow" />
@@ -419,22 +419,22 @@ const GenZgalaxy: NextPage = () => {
                     </feMerge>
                   </filter>
                 </defs>
-                <path d="M291.9 2.4 Q300 -2.4 308.1 2.4 L591.3 169.4 Q604 177 598.5 191 L493.2 451.7 Q487.4 466 472 466 H128 Q112.6 466 106.8 451.7 L1.5 191 Q-4 177 8.7 169.4 Z" fill="#dfe6e9" filter={`url(#pentagonShadow6)`} />
-                <polygon points="300,62 542,197 450,416 150,416 58,197" fill="#9CA7D2" />
+                <path d="M145 2 Q150 -1 155 2 L296 108 Q300 111 298.5 116 L246 290 Q244 296 238 296 H62 Q56 296 54 290 L1.5 116 Q0 111 4 108 Z" fill="#dfe6e9" filter={`url(#pentagonShadow6)`} />
+                <polygon points="150,40 270,128 224,268 76,268 30,128" fill="#9CA7D2" />
               </svg>
 
               <h3 className={styles.featureLabel}>Challenges &<br />Rewards</h3>
             </div>
             <div className={styles.polygonParent}>
-              <svg className={styles.polygonIcon} viewBox="0 0 600 466" preserveAspectRatio="xMidYMid meet" aria-hidden="true" focusable="false">
+              <svg className={styles.polygonIcon} viewBox="0 0 300 296" preserveAspectRatio="xMidYMid meet" aria-hidden="true" focusable="false">
                 <defs>
                   <filter id="pentagonShadow7" x="-30%" y="-30%" width="160%" height="160%">
-                    <feGaussianBlur in="SourceAlpha" stdDeviation="4" result="cardBlur" />
-                    <feOffset in="cardBlur" dx="4" dy="4" result="darkOffset" />
-                    <feFlood floodColor="#c4c4c4" floodOpacity="0.6" result="darkColour" />
+                    <feGaussianBlur in="SourceAlpha" stdDeviation="8" result="cardBlur" />
+                    <feOffset in="cardBlur" dx="8" dy="8" result="darkOffset" />
+                    <feFlood floodColor="#c4c4c4" floodOpacity="1" result="darkColour" />
                     <feComposite in="darkColour" in2="darkOffset" operator="in" result="darkShadow" />
-                    <feOffset in="cardBlur" dx="-4" dy="-4" result="lightOffset" />
-                    <feFlood floodColor="#ffffff" floodOpacity="0.9" result="lightColour" />
+                    <feOffset in="cardBlur" dx="-8" dy="-8" result="lightOffset" />
+                    <feFlood floodColor="#ffffff" floodOpacity="0.8" result="lightColour" />
                     <feComposite in="lightColour" in2="lightOffset" operator="in" result="lightShadow" />
                     <feMerge>
                       <feMergeNode in="darkShadow" />
@@ -443,22 +443,22 @@ const GenZgalaxy: NextPage = () => {
                     </feMerge>
                   </filter>
                 </defs>
-                <path d="M291.9 2.4 Q300 -2.4 308.1 2.4 L591.3 169.4 Q604 177 598.5 191 L493.2 451.7 Q487.4 466 472 466 H128 Q112.6 466 106.8 451.7 L1.5 191 Q-4 177 8.7 169.4 Z" fill="#dfe6e9" filter={`url(#pentagonShadow7)`} />
-                <polygon points="300,62 542,197 450,416 150,416 58,197" fill="#6CC3C6" />
+                <path d="M145 2 Q150 -1 155 2 L296 108 Q300 111 298.5 116 L246 290 Q244 296 238 296 H62 Q56 296 54 290 L1.5 116 Q0 111 4 108 Z" fill="#dfe6e9" filter={`url(#pentagonShadow7)`} />
+                <polygon points="150,40 270,128 224,268 76,268 30,128" fill="#6CC3C6" />
               </svg>
 
               <h3 className={styles.featureLabel}>Responsive<br />Quizzes</h3>
             </div>
             <div className={styles.polygonParent}>
-              <svg className={styles.polygonIcon} viewBox="0 0 600 466" preserveAspectRatio="xMidYMid meet" aria-hidden="true" focusable="false">
+              <svg className={styles.polygonIcon} viewBox="0 0 300 296" preserveAspectRatio="xMidYMid meet" aria-hidden="true" focusable="false">
                 <defs>
                   <filter id="pentagonShadow8" x="-30%" y="-30%" width="160%" height="160%">
-                    <feGaussianBlur in="SourceAlpha" stdDeviation="4" result="cardBlur" />
-                    <feOffset in="cardBlur" dx="4" dy="4" result="darkOffset" />
-                    <feFlood floodColor="#c4c4c4" floodOpacity="0.6" result="darkColour" />
+                    <feGaussianBlur in="SourceAlpha" stdDeviation="8" result="cardBlur" />
+                    <feOffset in="cardBlur" dx="8" dy="8" result="darkOffset" />
+                    <feFlood floodColor="#c4c4c4" floodOpacity="1" result="darkColour" />
                     <feComposite in="darkColour" in2="darkOffset" operator="in" result="darkShadow" />
-                    <feOffset in="cardBlur" dx="-4" dy="-4" result="lightOffset" />
-                    <feFlood floodColor="#ffffff" floodOpacity="0.9" result="lightColour" />
+                    <feOffset in="cardBlur" dx="-8" dy="-8" result="lightOffset" />
+                    <feFlood floodColor="#ffffff" floodOpacity="0.8" result="lightColour" />
                     <feComposite in="lightColour" in2="lightOffset" operator="in" result="lightShadow" />
                     <feMerge>
                       <feMergeNode in="darkShadow" />
@@ -467,8 +467,8 @@ const GenZgalaxy: NextPage = () => {
                     </feMerge>
                   </filter>
                 </defs>
-                <path d="M291.9 2.4 Q300 -2.4 308.1 2.4 L591.3 169.4 Q604 177 598.5 191 L493.2 451.7 Q487.4 466 472 466 H128 Q112.6 466 106.8 451.7 L1.5 191 Q-4 177 8.7 169.4 Z" fill="#dfe6e9" filter={`url(#pentagonShadow8)`} />
-                <polygon points="300,62 542,197 450,416 150,416 58,197" fill="#A29BBE" />
+                <path d="M145 2 Q150 -1 155 2 L296 108 Q300 111 298.5 116 L246 290 Q244 296 238 296 H62 Q56 296 54 290 L1.5 116 Q0 111 4 108 Z" fill="#dfe6e9" filter={`url(#pentagonShadow8)`} />
+                <polygon points="150,40 270,128 224,268 76,268 30,128" fill="#A29BBE" />
               </svg>
 
               <h3 className={styles.featureLabel}>Peer<br />Discussion</h3>

@@ -1330,7 +1330,7 @@ const faqItems: FAQItemData[] = [
     number: "05",
     title: "Who Can Use NeuroLXP™?",
     mobileTitleLines: ["Who Can Use", "NeuroLXP™?"],
-    answer: "Yes. NeuroLXP™ is designed to scale effortlessly - from schools and universities to enterprises, skilling academies, NGOs, and nationwide government learning initiatives.",
+    answer: "Yes, NeuroLXP™ is designed to scale effortlessly - from schools and universities to enterprises, skilling academies, NGOs, and nationwide government learning initiatives.",
     colorStart: "#67096E",
     colorEnd: "#C712D4",
   },
