@@ -4247,21 +4247,21 @@
 
 /* Preserve the page's other full-width sections; tighten only this frame. */
 @media (min-width: 1024px) {
-  /* Keep the frame width exactly unchanged. */
+  /* Widen only this desktop section slightly; all other sections remain unchanged. */
   .genzgalaxy .image20Parent {
-    width: 1080px !important;
+    width: 1160px !important;
     max-width: 100% !important;
   }
 
-  /* Reduce only the empty space inside the frame. */
+  /* Balance the wider frame with a small intentional center gap. */
   .genzgalaxy .image20Parent .rectangleParent {
-    grid-template-columns: minmax(0, .98fr) minmax(0, 1.02fr) !important;
-    column-gap: 0 !important;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) !important;
+    column-gap: 24px !important;
   }
 
-  /* Move only the left-side content slightly right to reduce the middle empty space. */
+  /* Keep the left content comfortably inset inside the wider frame. */
   .genzgalaxy .image20Parent .frameParent12 {
-    transform: translateX(46px) !important;
+    transform: translateX(26px) !important;
   }
 
   /* Keep the desktop heading on one line without changing its font/design. */
@@ -4273,14 +4273,14 @@
     overflow-wrap: normal !important;
   }
 
-  /* Fill more of the existing frame WITHOUT changing the frame width/height. */
+  /* Keep the portrait size unchanged and position it toward the right side. */
   .genzgalaxy .image20Parent .successfulYoungBusinessmanSIcon {
     justify-self: start !important;
     width: 560px !important;
     max-width: none !important;
     height: 570px !important;
     max-height: none !important;
-    transform: translate(51px, 34px) scale(1.12) !important;
+    transform: translate(66px, 34px) scale(1.12) !important;
     transform-origin: center bottom !important;
   }
 }
