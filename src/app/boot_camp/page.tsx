@@ -414,7 +414,7 @@ const Bootcamp: NextPage = () => {
           <div className={styles.image21} />
           <div className={styles.futureReadyTechCareersParent}>
             <b className={styles.futureReadyTechCareers}>Future-Ready Tech Careers</b>
-            <Image className={styles.image24Icon} src="/images/CODINGBootcamp.webp" width={1216} height={548} sizes="100vw" alt="" />
+            <Image className={styles.image24Icon} src="/images/bootcamp.webp" width={1216} height={548} sizes="100vw" alt="" />
           </div>
           <div className={styles.frameChild35} />
         </div>
