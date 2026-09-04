@@ -121,7 +121,7 @@ const Bootcamp: NextPage = () => {
             <div className={styles.frameParent9}>
               <div className={styles.frameWrapper}>
                 <div className={styles.writingAndTestingCodeWrapper}>
-                  <b className={styles.writingAndTesting}>Writing and Testing code</b>
+                  <b className={styles.writingAndTesting}>Writing & Testing Code</b>
                 </div>
               </div>
               <div className={`${styles.frameChild7} ${styles.iconBlue}`}>
@@ -172,7 +172,7 @@ const Bootcamp: NextPage = () => {
         </div>
       </div>
       <div className={styles.bootcampInner2}>
-        <svg className={styles.careerFrameInlineSvg} aria-hidden="true" width="1304" height="303" viewBox="0 0 1304 303" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg className={styles.careerFrameInlineSvg} aria-hidden="true" width="1304" height="303" viewBox="0 0 1304 303" preserveAspectRatio="none" fill="none" xmlns="http://www.w3.org/2000/svg">
           <g filter="url(#filter0_dd_903_12470)">
             <path d="M650.266 12.0932C651.419 11.9676 652.581 11.9676 653.733 12.0932L1277.73 80.0995C1285.85 80.9842 1292 87.8397 1292 96.0053V206.803C1292 214.969 1285.85 221.824 1277.73 222.709L653.733 290.715C652.581 290.841 651.419 290.841 650.266 290.715L26.2665 222.709C18.149 221.824 12 214.969 12 206.803V96.0053C12 87.8397 18.1489 80.9842 26.2665 80.0995L650.266 12.0932Z" fill="#DFE6E9" />
             <g filter="url(#filter1_ii_903_12470)">
@@ -215,7 +215,7 @@ const Bootcamp: NextPage = () => {
           </defs>
         </svg>
         <div className={styles.prepareForHighDemandCareerWrapper}>
-          <b className={styles.prepareForHighDemand}>Prepare for high-demand careers in software and data technology</b>
+          <b className={styles.prepareForHighDemand}>Prepare for High-Demand Careers in Software and Data Technology</b>
         </div>
       </div>
       <div className={styles.frameParent14}>
@@ -272,7 +272,7 @@ const Bootcamp: NextPage = () => {
                    <div className={styles.fromCodingBasics}>
   From coding basics to real-world
   <br />
-  applications.
+  applications
 </div>
                   </div>
                 </div>
@@ -287,23 +287,23 @@ const Bootcamp: NextPage = () => {
                   <div className={styles.frameParent17}>
                     <div className={styles.frameParent18}>
                       <div className={styles.frameChild12} />
-                      <div className={styles.codingFundamentals}>Software developer</div>
+                      <div className={styles.codingFundamentals}>Software Developer</div>
                     </div>
                     <div className={styles.frameParent18}>
                       <div className={styles.frameChild12} />
-                      <div className={styles.codingFundamentals}>Web developer</div>
+                      <div className={styles.codingFundamentals}>Web Developer</div>
                     </div>
                     <div className={styles.frameParent18}>
                       <div className={styles.frameChild16} />
-                      <div className={styles.performanceFeedback}>Application developer</div>
+                      <div className={styles.performanceFeedback}>Application Developer</div>
                     </div>
                     <div className={styles.frameParent18}>
                       <div className={styles.frameChild12} />
-                      <div className={styles.codingFundamentals}>Technology analyst</div>
+                      <div className={styles.codingFundamentals}>Technology Analyst</div>
                     </div>
                     <div className={styles.frameParent18}>
                       <div className={styles.frameChild16} />
-                      <div className={styles.performanceFeedback}>Programming specialist</div>
+                      <div className={styles.performanceFeedback}>Programming Specialist</div>
                     </div>
                   </div>
                 </div>
@@ -325,7 +325,7 @@ const Bootcamp: NextPage = () => {
                   </div>
                   <div className={styles.careerFocusedTechnologyTraiParent}>
                     <div className={styles.structuredAccelerated}>Career Tech Training</div>
-                    <div className={styles.buildPracticalCareerReady}>Build practical, career-ready technology skills.</div>
+                    <div className={styles.buildPracticalCareerReady}>Build practical, career-ready technology skills</div>
                   </div>
                 </div>
               </div>
@@ -377,7 +377,7 @@ const Bootcamp: NextPage = () => {
                 </div>
                 <div className={styles.builtForEducationEnterpriseParent}>
                   <div className={styles.builtForEducationTitle}>{`Education & Enterprise Ready`}</div>
-                  <div className={styles.builtForEducationDescription}>Deploy across diverse learning environments.</div>
+                  <div className={styles.builtForEducationDescription}>Deploy across diverse learning environments</div>
                 </div>
               </div>
             </div>
@@ -414,7 +414,7 @@ const Bootcamp: NextPage = () => {
           <div className={styles.image21} />
           <div className={styles.futureReadyTechCareersParent}>
             <b className={styles.futureReadyTechCareers}>Future-Ready Tech Careers</b>
-            <Image className={styles.image24Icon} src="/images/codingbootcamp.webp" width={1216} height={548} sizes="100vw" alt="" />
+            <Image className={styles.image24Icon} src="/images/CODINGBootcamp.webp" width={1216} height={548} sizes="100vw" alt="" />
           </div>
           <div className={styles.frameChild35} />
         </div>

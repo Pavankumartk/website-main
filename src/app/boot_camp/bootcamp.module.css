@@ -803,7 +803,7 @@
   line-height: 60px;
   text-align: center;
   letter-spacing: 0.03em;
-  text-transform: capitalize;
+  text-transform: none;
   color: #31344b;
   text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
@@ -1813,9 +1813,9 @@
   z-index: 0;
 }
 
-.prepareForHighDemandCareerWrapper {
+/* .prepareForHighDemandCareerWrapper {
   z-index: 5;
-}
+} */
 
 .frameChild12,
 .frameChild16 {
@@ -2429,14 +2429,14 @@
    ========================================================= */
 
 /* Main / section headings */
-.masterSoftwareDevelopmentContainer,
+/* .masterSoftwareDevelopmentContainer,
 .masterSoftwareDevelopment,
 .intensiveLearning,
 .learnByBuilding,
 .prepareForHighDemand,
 .neurolabsCodingBootcamps2 {
   font-size: 36px;
-}
+} */
 
 /* Subheadings / supporting heading text */
 .neurolabsCodingBootcamps,
@@ -2462,8 +2462,7 @@
    This block MUST remain at the very bottom of the CSS.
    ========================================================= */
 
-html,
-body {
+.bootcamp {
   width: 100% !important;
   max-width: 100% !important;
   min-width: 0 !important;
@@ -2472,12 +2471,12 @@ body {
   overflow-x: hidden !important;
 }
 
-.bootcamp,
+/* .bootcamp,
 .bootcamp *,
 .bootcamp *::before,
 .bootcamp *::after {
   box-sizing: border-box;
-}
+} */
 
 .bootcamp {
   /* Preserve the original Figma canvas */
@@ -2626,8 +2625,7 @@ body {
    - One responsive system handles all screens below desktop.
    ===================================================================== */
 @media screen and (max-width: 1199px) {
-  html,
-  body {
+  .bootcamp {
     width: 100%;
     max-width: 100%;
     min-width: 0;
@@ -2773,7 +2771,7 @@ body {
     width: min(100%, 620px) !important;
     height: auto !important;
     margin: 0 !important;
-    font-size: clamp(27px, 6.4vw, 44px) !important;
+    font-size: clamp(24px, 6.4vw, 44px) !important;
     line-height: 1.18 !important;
     text-align: center !important;
   }
@@ -2787,7 +2785,7 @@ body {
     width: min(100%, 620px) !important;
     height: auto !important;
     margin: 0 !important;
-    font-size: clamp(15px, 3.45vw, 22px) !important;
+    font-size: clamp(16px, 3.45vw, 22px) !important;
     line-height: 1.45 !important;
     text-align: center !important;
   }
@@ -3062,7 +3060,7 @@ body {
   }
 
   /* Center the heading inside the polygon frame. */
-  .bootcampInner2 .prepareForHighDemandCareerWrapper {
+  /* .bootcampInner2 .prepareForHighDemandCareerWrapper {
     position: absolute !important;
     inset: 0 !important;
     width: 100% !important;
@@ -3074,7 +3072,7 @@ body {
     align-items: center !important;
     justify-content: center !important;
     z-index: 5 !important;
-  }
+  } */
 
   .bootcampInner2 .prepareForHighDemand {
     width: min(100%, 780px) !important;
@@ -3371,20 +3369,23 @@ body {
   .neurolabsCodingBootcamps2 {
     width: 100% !important;
     height: auto !important;
-    font-size: clamp(28px, 6.8vw, 52px) !important;
+    font-size: clamp(24px, 6.8vw, 52px) !important;
     line-height: 1.25 !important;
+    transform: translateY(25);
   }
 
   .accelerateYourCoding {
     width: min(100%, 760px) !important;
     height: auto !important;
-    font-size: clamp(17px, 3.8vw, 26px) !important;
+    font-size: clamp(16px, 3.8vw, 26px) !important;
     line-height: 1.5 !important;
+    transform: translateY(10);
   }
 
   .frameWrapper11,
   .frameWrapper12 {
-    width: min(100%, 319px) !important;
+    width: min(85%, 319px) !important;
+    transform: translateX(8);
   }
 
   /* ----------------------------- FOOTER ----------------------------- */
@@ -3575,7 +3576,7 @@ body {
     overflow: visible !important;
   }
 
-  .bootcampInner2 .prepareForHighDemandCareerWrapper {
+  /* .bootcampInner2 .prepareForHighDemandCareerWrapper {
     position: relative !important;
     inset: auto !important;
     width: 100% !important;
@@ -3583,7 +3584,7 @@ body {
     min-height: 0 !important;
     margin: 0 !important;
     padding: 0 clamp(18px, 5vw, 36px) !important;
-  }
+  } */
 
   .bootcampInner2 .prepareForHighDemand {
     width: min(100%, 760px) !important;
@@ -4108,7 +4109,7 @@ body {
   }
 
   /* IMPORTANT: no absolute positioning and no horizontal translation */
-  .bootcamp > .bootcampInner2 > .prepareForHighDemandCareerWrapper {
+  /* .bootcamp > .bootcampInner2 > .prepareForHighDemandCareerWrapper {
     position: static !important;
     inset: auto !important;
     top: auto !important;
@@ -4132,7 +4133,7 @@ body {
 
     transform: none !important;
     text-align: center !important;
-  }
+  } */
 
   /* Actual heading centered inside the full-width wrapper */
   .bootcamp > .bootcampInner2 > .prepareForHighDemandCareerWrapper > .prepareForHighDemand {
@@ -4261,8 +4262,8 @@ body {
   width: auto;
   position: absolute;
   top: 50%;
-  left: 132px;
-  right: 22px;
+  left: 100px;
+  right: 32px;
   transform: translateY(-50%);
   margin: 0;
   display: flex;
@@ -4367,8 +4368,8 @@ body {
   .frameParent4 .projectLearningParent,
   .frameParent4 .careerReadinessParent {
     top: 50% !important;
-    left: 126px !important;
-    right: 18px !important;
+    left: 116px !important;
+    right: 28px !important;
     width: auto !important;
     transform: translateY(-50%) !important;
     gap: 7px !important;
@@ -4425,8 +4426,8 @@ body {
   .frameParent4 .practicalCodingParent,
   .frameParent4 .projectLearningParent,
   .frameParent4 .careerReadinessParent {
-    left: 108px !important;
-    right: 14px !important;
+    left: 98px !important;
+    right: 24px !important;
   }
 
   .frameParent4 .practicalCoding,
@@ -5063,3 +5064,663 @@ body {
     margin-right: auto !important;
   }
 }
+
+/* =========================================================
+   MOBILE HERO — REDUCE SUBTITLE / IMAGE GAP
+   Only the person image size is adjusted on mobile.
+   The image remains bottom-aligned; all other design stays same.
+   ========================================================= */
+@media screen and (max-width: 600px) {
+  .image33Icon {
+    width: min(72%, 330px) !important;
+    height: min(55%, 390px) !important;
+    bottom: clamp(4px, 1vw, 10px) !important;
+  }
+}
+
+/* =========================================================
+   MOBILE — ADD SPACE BETWEEN REAL PROJECT CARDS ONLY
+   Writing & Testing Code / Web & App Development /
+   Debug & Optimize / Programming Challenge
+   ========================================================= */
+@media screen and (max-width: 600px) {
+  .frameParent7 {
+    gap: 52px !important;
+  }
+
+  .frameParent8 {
+    gap: 52px !important;
+  }
+}
+
+/* =========================================================
+   FINAL MOBILE CAREER BANNER FIX
+   Targets the inline SVG used in page.tsx.
+   Desktop and all other sections remain unchanged.
+   ========================================================= */
+@media screen and (max-width: 600px) {
+  .bootcamp > .bootcampInner2 {
+    position: relative !important;
+    inset: auto !important;
+    top: auto !important;
+    right: auto !important;
+    bottom: auto !important;
+    left: auto !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    height: clamp(160px, 38vw, 180px) !important;
+    min-height: 160px !important;
+    margin: 0 !important;
+    transform: translateY(12px) !important;
+    padding: 0 !important;
+    display: block !important;
+    align-self: stretch !important;
+    box-sizing: border-box !important;
+    overflow: visible !important;
+    transform: none !important;
+    background: transparent !important;
+  }
+
+  .bootcamp > .bootcampInner2 > .careerFrameInlineSvg {
+    position: absolute !important;
+    inset: 0 !important;
+    top: 0 !important;
+    right: 0 !important;
+    bottom: 0 !important;
+    left: 0 !important;
+    display: block !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    height: 100% !important;
+    min-height: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    transform: none !important;
+    overflow: visible !important;
+    z-index: 1 !important;
+  }
+
+  .bootcamp > .bootcampInner2 > .prepareForHighDemandCareerWrapper {
+    position: absolute !important;
+    inset: 0 !important;
+    top: 0 !important;
+    right: 0 !important;
+    bottom: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    height: 100% !important;
+    min-height: 0 !important;
+    margin: 0 !important;
+    padding: clamp(25px, 6.5vw, 31px) clamp(28px, 7vw, 36px) !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    box-sizing: border-box !important;
+    transform: none !important;
+    text-align: center !important;
+    z-index: 2 !important;
+  }
+
+  .bootcamp > .bootcampInner2
+    > .prepareForHighDemandCareerWrapper
+    > .prepareForHighDemand {
+    position: static !important;
+    inset: auto !important;
+    width: 100% !important;
+    max-width: 420px !important;
+    height: auto !important;
+    margin: 0 auto !important;
+    padding: 0 !important;
+    display: block !important;
+    font-size: clamp(18px, 5vw, 24px) !important;
+    line-height: 1.25 !important;
+    letter-spacing: 0.02em !important;
+    text-align: center !important;
+    text-align-last: center !important;
+    white-space: normal !important;
+    overflow-wrap: normal !important;
+    word-break: normal !important;
+    transform: none !important;
+  }
+
+  .bootcamp > .bootcampInner2 + .frameParent14 {
+    margin-top: clamp(14px, 4vw, 22px) !important;
+  }
+}
+
+/* =========================================================
+   FINAL MOBILE FIX — 01 / 02 / 03 CAREER CARDS ONLY
+   ========================================================= */
+@media screen and (max-width: 600px) {
+  /* Outer card sizes, spacing, shadows and border radii stay unchanged. */
+  .frameParent24 {
+    position: absolute !important;
+    inset: 0 !important;
+    top: 0 !important;
+    right: 0 !important;
+    bottom: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    height: 100% !important;
+    margin: 0 !important;
+    padding: 14px 16px 38px 14px !important;
+    display: grid !important;
+    grid-template-columns: 64px minmax(0, 1fr) !important;
+    column-gap: 6px !important;
+    align-items: center !important;
+    box-sizing: border-box !important;
+    transform: none !important;
+    overflow: visible !important;
+  }
+
+  .frameParent25 {
+    position: relative !important;
+    width: 62px !important;
+    min-width: 62px !important;
+    max-width: 62px !important;
+    height: 64px !important;
+    min-height: 64px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    flex: none !important;
+    align-self: center !important;
+  }
+
+  .frameParent25 .parent {
+    position: relative !important;
+    inset: auto !important;
+    width: 62px !important;
+    height: 64px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    display: block !important;
+    transform: none !important;
+  }
+
+  .frameParent25 .b {
+    position: absolute !important;
+    top: 16px !important;
+    left: 0 !important;
+    width: 36px !important;
+    min-width: 36px !important;
+    font-size: clamp(27px, 7vw, 30px) !important;
+    line-height: 32px !important;
+  }
+
+  /* Mobile only: keep 01 / 02 / 03 in front of the triangle,
+     instead of stacking the number above the triangle. */
+  .frameParent25 .frameChild19 {
+    position: absolute !important;
+    top: 23px !important;
+    left: 38px !important;
+    width: 15px !important;
+    height: 18px !important;
+    transform: none !important;
+  }
+
+  .frameParent25 .frameChild18 {
+    position: absolute !important;
+    top: 8px !important;
+    right: 0 !important;
+    left: auto !important;
+    width: 5px !important;
+    height: 48px !important;
+    transform: none !important;
+  }
+
+  .structuredAcceleratedLearnParent,
+  .careerFocusedTechnologyTraiParent,
+  .builtForEducationEnterpriseParent {
+    width: 100% !important;
+    min-width: 0 !important;
+    max-width: 100% !important;
+    height: auto !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    justify-content: center !important;
+    gap: 4px !important;
+    overflow: visible !important;
+    text-align: left !important;
+  }
+
+  .structuredAccelerated,
+  .careerFocusedTechnologyTrai,
+  .builtForEducationTitle {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    font-size: clamp(19px, 4.8vw, 21px) !important;
+    line-height: 1.2 !important;
+    font-weight: 600 !important;
+    white-space: normal !important;
+    overflow-wrap: normal !important;
+    word-break: normal !important;
+    display: -webkit-box !important;
+    -webkit-box-orient: vertical !important;
+    -webkit-line-clamp: 2 !important;
+    line-clamp: 2 !important;
+    max-height: 2.4em !important;
+    overflow: hidden !important;
+    text-align: left !important;
+  }
+
+  .fromCodingBasics,
+  .buildPracticalCareerReady,
+  .builtForEducationDescription,
+  .deployAcrossDiverse {
+    width: 100% !important;
+    min-width: 0 !important;
+    max-width: 100% !important;
+    height: auto !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    font-size: clamp(12.5px, 3vw, 13.5px) !important;
+    line-height: 1.25 !important;
+    white-space: normal !important;
+    overflow-wrap: break-word !important;
+    word-break: normal !important;
+    display: -webkit-box !important;
+    -webkit-box-orient: vertical !important;
+    -webkit-line-clamp: 3 !important;
+    line-clamp: 3 !important;
+    max-height: 3.75em !important;
+    overflow: hidden !important;
+    text-align: left !important;
+  }
+
+  .fromCodingBasics,
+  .buildPracticalCareerReady {
+    -webkit-line-clamp: 2 !important;
+    line-clamp: 2 !important;
+    max-height: 2.5em !important;
+  }
+
+  .frameChild17,
+  .accordionArrow {
+    position: absolute !important;
+    top: auto !important;
+    right: auto !important;
+    bottom: 7px !important;
+    left: 64% !important;
+    width: 28px !important;
+    height: 24px !important;
+    margin: 0 !important;
+    transform: translateX(-200%) !important;
+    z-index: 20 !important;
+  }
+
+  .accordionArrow.isOpen {
+    transform: translateX(-50%) rotate(180deg) !important;
+  }
+
+  /* Keep each card first and open its details directly below it. */
+  .frameParent16,
+  .frameParent26,
+  .frameParent36 {
+    display: flex !important;
+    flex-direction: column !important;
+    height: auto !important;
+    min-height: 0 !important;
+    overflow: visible !important;
+  }
+
+  .expandableCardTrigger,
+  .expandableCardTrigger.isActive {
+    order: 1 !important;
+    transform: none !important;
+  }
+
+  .expandableCardPanel {
+    order: 2 !important;
+  }
+
+  .frameWrapper6.expandableCardPanel.isOpen,
+  .frameWrapper8.expandableCardPanel.isOpen,
+  .frameWrapper10.expandableCardPanel.isOpen {
+    position: relative !important;
+    inset: auto !important;
+    top: auto !important;
+    right: auto !important;
+    bottom: auto !important;
+    left: auto !important;
+    width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+    margin: 3px 0 0 !important;
+    transform: none !important;
+    z-index: 1 !important;
+  }
+
+  .frameWrapper5.accordionCardSpace.isExpanded,
+  .frameWrapper7.accordionCardSpace.isExpanded,
+  .frameWrapper9.accordionCardSpace.isExpanded,
+  .bootcamp > .frameParent14 > .frameParent15 {
+    height: auto !important;
+    overflow: visible !important;
+  }
+}
+
+/* =========================================================
+   FINAL MOBILE ONLY — MOVE ONLY CAREER STRIP SLIGHTLY DOWN
+   IMPORTANT: keep this block at the VERY BOTTOM of the CSS.
+   ========================================================= */
+@media screen and (max-width: 600px) {
+  .bootcamp > .bootcampInner2 {
+    position: relative !important;
+    top: 18px !important;
+  }
+}
+
+/* =========================================================
+   MOBILE ONLY — FINAL BOTTOM ORDER + RESPONSIVE IMAGE
+   - Only changes the POSITION/ORDER of the final CTA
+   - Keeps CTA design, border, shadow, text and button unchanged
+   - Makes Future Ready image responsive and fully visible
+   - Desktop/tablet remain unchanged
+   ========================================================= */
+@media screen and (max-width: 600px) {
+
+  /* Future Ready section comes before the final CTA */
+  .bootcamp > .rectangleParent4 {
+    order: 97 !important;
+
+    height: auto !important;
+    min-height: 0 !important;
+  }
+
+  /* Allow the image card to take its natural responsive height */
+  .bootcamp > .rectangleParent4 > .image21Parent {
+    position: relative !important;
+
+    inset: auto !important;
+    top: auto !important;
+    right: auto !important;
+    bottom: auto !important;
+    left: auto !important;
+
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+
+    margin: 0 !important;
+  }
+
+  /* Keep decorative/background image inside the responsive card */
+  .bootcamp > .rectangleParent4 .image21 {
+    position: absolute !important;
+    inset: 0 !important;
+
+    width: 100% !important;
+    height: 100% !important;
+
+    object-fit: cover !important;
+    object-position: center !important;
+  }
+
+  .bootcamp > .rectangleParent4 .futureReadyTechCareersParent {
+    position: relative !important;
+
+    top: auto !important;
+    right: auto !important;
+    bottom: auto !important;
+    left: auto !important;
+
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+
+    margin: 0 !important;
+  }
+
+  /* Main photo — show the complete image in one responsive view */
+  .bootcamp > .rectangleParent4 .image24Icon {
+    display: block !important;
+
+    width: 100% !important;
+    max-width: 100% !important;
+
+    height: auto !important;
+    min-height: 0 !important;
+    max-height: none !important;
+
+    object-fit: contain !important;
+    object-position: center center !important;
+
+    flex-shrink: 0 !important;
+  }
+
+  /* ONLY move the final NeuroLabs CTA to the bottom.
+     No border/shadow/design properties are changed here. */
+  .bootcamp > .rectangleParent3 {
+    order: 98 !important;
+  }
+
+  /* Footer remains after the final CTA */
+  .bootcamp > .frameParent46,
+  .bootcamp > .frameParent47,
+  .bootcamp > .frameWrapper13 {
+    order: 99 !important;
+  }
+}
+
+/* =========================================================
+   FINAL MOBILE ONLY — KEEP BOTH FRAMES LIKE DESKTOP WEBPAGE
+   - Future-Ready section: same outer + inner frame/shadow
+   - Final NeuroLabs CTA: same pill frame/shadow
+   - Main photo remains fully responsive
+   - No desktop/tablet changes
+   ========================================================= */
+@media screen and (max-width: 600px) {
+
+  /* =====================================================
+     1) FUTURE-READY TECH CAREERS
+     Same desktop frame design, responsive mobile size
+     ===================================================== */
+  .bootcamp > .rectangleParent4 {
+    order: 97 !important;
+
+    position: relative !important;
+    inset: auto !important;
+    top: auto !important;
+    right: auto !important;
+    bottom: auto !important;
+    left: auto !important;
+
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+
+    margin: 0 !important;
+    padding: 12px !important;
+
+    box-sizing: border-box !important;
+    overflow: hidden !important;
+
+    /* EXACT desktop/webpage frame style */
+    background-color: #dfe6e9 !important;
+    border-radius: 0 100px 0 100px !important;
+    box-shadow:
+      -4px -4px 4px rgba(255, 255, 255, 0.5) inset,
+      4px 4px 4px #c4c4c4 inset !important;
+  }
+
+  .bootcamp > .rectangleParent4 > .image21Parent {
+    position: relative !important;
+    inset: auto !important;
+    top: auto !important;
+    right: auto !important;
+    bottom: auto !important;
+    left: auto !important;
+
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+
+    margin: 0 !important;
+
+    box-sizing: border-box !important;
+    overflow: hidden !important;
+
+    /* EXACT desktop/webpage inner frame */
+    background-color: #dfe6e9 !important;
+    border-radius: 100px !important;
+    box-shadow:
+      4px 4px 4px #c4c4c4,
+      -4px -4px 4px #ffffff !important;
+  }
+
+  .bootcamp > .rectangleParent4 .image21 {
+    position: absolute !important;
+    inset: 0 !important;
+
+    width: 100% !important;
+    height: 100% !important;
+
+    object-fit: cover !important;
+    object-position: center !important;
+
+    pointer-events: none !important;
+  }
+
+  .bootcamp > .rectangleParent4 .futureReadyTechCareersParent {
+    position: relative !important;
+    inset: auto !important;
+    top: auto !important;
+    right: auto !important;
+    bottom: auto !important;
+    left: auto !important;
+
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+
+    margin: 0 !important;
+    padding: 24px 0 0 !important;
+
+    gap: 18px !important;
+    z-index: 2 !important;
+  }
+
+  /* Keep complete photo visible and responsive */
+  .bootcamp > .rectangleParent4 .image24Icon {
+    display: block !important;
+
+    width: 100% !important;
+    max-width: 100% !important;
+
+    height: auto !important;
+    min-height: 0 !important;
+    max-height: none !important;
+
+    margin: 0 !important;
+
+    object-fit: contain !important;
+    object-position: center center !important;
+
+    flex-shrink: 0 !important;
+  }
+
+
+  /* =====================================================
+     2) FINAL NEUROLABS CODING BOOTCAMPS CTA
+     Keep same desktop/webpage pill frame
+     ===================================================== */
+  .bootcamp > .rectangleParent3 {
+    order: 98 !important;
+
+    /* Keep existing mobile responsive placement */
+    position: relative !important;
+    inset: auto !important;
+    top: auto !important;
+    right: auto !important;
+    bottom: auto !important;
+    left: auto !important;
+
+    width: 100% !important;
+    max-width: 100% !important;
+
+    box-sizing: border-box !important;
+    overflow: hidden !important;
+
+    /* EXACT desktop/webpage frame design */
+    background: #dfe6e9 !important;
+    border-radius: 500px !important;
+    box-shadow:
+      -4px -4px 4px rgba(255, 255, 255, 0.5) inset,
+      4px 4px 4px #c4c4c4 inset !important;
+  }
+
+  .bootcamp > .rectangleParent3 > .rectangle2,
+  .bootcamp > .rectangleParent3 > .image202 {
+    border-radius: 500px !important;
+  }
+
+  /* Keep footer after CTA */
+  .bootcamp > .frameParent46,
+  .bootcamp > .frameParent47,
+  .bootcamp > .frameWrapper13 {
+    order: 99 !important;
+  }
+}
+
+/* =========================================================
+   FINAL MOBILE ONLY — EXACT WEBPAGE FRAME VISIBILITY
+   Keeps all existing mobile layout/order/image fixes.
+   Only ensures the final NeuroLabs CTA frame is visible
+   exactly like the desktop/webpage neumorphic frame.
+   ========================================================= */
+@media screen and (max-width: 600px) {
+
+  .bootcamp > .rectangleParent3 {
+    position: relative !important;
+
+    background: #dfe6e9 !important;
+    border: none !important;
+    border-radius: 500px !important;
+
+    box-shadow:
+      -4px -4px 4px rgba(255, 255, 255, 0.5) inset,
+       4px  4px 4px #c4c4c4 inset !important;
+
+    overflow: hidden !important;
+    isolation: isolate !important;
+  }
+
+  /* Keep the same webpage neumorphic frame visible above
+     the background image on mobile. */
+  .bootcamp > .rectangleParent3::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    border-radius: 500px;
+
+    box-shadow:
+      -4px -4px 4px rgba(255, 255, 255, 0.5) inset,
+       4px  4px 4px #c4c4c4 inset;
+
+    pointer-events: none;
+    z-index: 10;
+  }
+
+  .bootcamp > .rectangleParent3 > .rectangle2,
+  .bootcamp > .rectangleParent3 > .image202 {
+    border-radius: 500px !important;
+  }
+
+  .bootcamp > .rectangleParent3 > .frameParent45 {
+    position: relative !important;
+    z-index: 5 !important;
+  }
+}
+

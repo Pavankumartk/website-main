@@ -1,6 +1,6 @@
-import type { NextPage } from "next";
 import Image from "next/image";
 import styles from "./coding-resources.module.css";
+
 import Header from "../../components/Header/header";
 import Footer from "../../components/Footer/footer";
 
@@ -16,7 +16,7 @@ const supportCards = [
   "Practice problems and coding exercises",
   "Code snippets and reusable examples",
   "Step-by-step problem-solving guides",
-  "Debugging and optimization tips",
+  "Debugging and optimization Tilt_Prism",
 ];
 
 const pillars = [
@@ -26,8 +26,8 @@ const pillars = [
     lead: "Build Tech Skills",
     items: [
       "Coding Fundamentals",
-      "Web development",
-      "Software development",
+      "Web Development",
+      "Software Development",
       "Algorithmic Thinking",
     ],
   },
@@ -38,7 +38,7 @@ const pillars = [
     items: [
       "Modern Frameworks",
       "Best Practices",
-      "New development tools",
+      "New Development Tools",
       "Industry Skills",
     ],
   },
@@ -55,7 +55,7 @@ const pillars = [
   },
 ];
 
-const CodingResources: NextPage = () => {
+export default function CodingResources() {
   return (
     <>
       <Header />
@@ -89,10 +89,9 @@ const CodingResources: NextPage = () => {
                 </h1>
 
                 <p>
-                  NeuroLabs Coding Resources provide learners
+                  NeuroLabs Coding Resources
                   <br />
-                  with structured materials for every stage of the programming
-                  journey.
+                  offer structured materials for <br /> every learning stage.
                 </p>
               </div>
 
@@ -115,8 +114,8 @@ const CodingResources: NextPage = () => {
             </h2>
 
             <p>
-              NeuroLabs provides coding resources that support both
-              theoretical understanding and hands-on learning.
+              NeuroLabs provides coding resources that support both theoretical
+              understanding and hands-on learning.
             </p>
 
             <div className={styles.learningCards}>
@@ -133,9 +132,7 @@ const CodingResources: NextPage = () => {
                   />
 
                   <div className={styles.learningCardInner}>
-                    <span className={styles.learningCardText}>
-                      {label}
-                    </span>
+                    <span className={styles.learningCardText}>{label}</span>
                   </div>
                 </div>
               ))}
@@ -169,15 +166,12 @@ const CodingResources: NextPage = () => {
           </section>
 
           <div className={styles.practiceOval}>
-            Strengthen skills through consistent practice
+            Strengthen Skills Through Consistent Practice
           </div>
 
           <section className={styles.pillars}>
             {pillars.map((pillar) => (
-              <article
-                className={styles.pillar}
-                key={pillar.number}
-              >
+              <article className={styles.pillar} key={pillar.number}>
                 <Image
                   className={styles.pillarSvg}
                   src="/icons/coding-resources-card.svg"
@@ -198,10 +192,7 @@ const CodingResources: NextPage = () => {
 
                   <div className={styles.checkList}>
                     {pillar.items.map((item) => (
-                      <div
-                        className={styles.checkItem}
-                        key={item}
-                      >
+                      <div className={styles.checkItem} key={item}>
                         <span className={styles.checkIconCircle}>
                           <Image
                             src="/icons/checkmark-circle-02 copy.svg"
@@ -212,9 +203,7 @@ const CodingResources: NextPage = () => {
                           />
                         </span>
 
-                        <span className={styles.checkText}>
-                          {item}
-                        </span>
+                        <span className={styles.checkText}>{item}</span>
                       </div>
                     ))}
                   </div>
@@ -226,9 +215,7 @@ const CodingResources: NextPage = () => {
           <section className={styles.growthFrame}>
             <div className={styles.growth}>
               <div className={styles.growthCopy}>
-                <span className={styles.pill}>
-                  Programming Growth
-                </span>
+                <span className={styles.pill}>Programming Growth</span>
 
                 <h2>
                   NeuroLabs Coding
@@ -270,6 +257,4 @@ const CodingResources: NextPage = () => {
       <Footer />
     </>
   );
-};
-
-export default CodingResources;
+}

@@ -9,33 +9,33 @@ import "./codingLabs.css";
 import { BookDemoTrigger } from "../../components/Bookademo/Bookademo";
 
 const practiceItems = [
-  { label: "Write & test code", color: "#BF1869" },
-  { label: "Solve real challenges", color: "#2A7308" },
-  { label: "Explore coding solutions", color: "#67096E" },
-  { label: "Build practical projects", color: "#2D4CC8" },
+  { label: "Write & Test Code", color: "#BF1869" },
+  { label: "Solve Real Challenges", color: "#2A7308" },
+  { label: "Explore Coding Solutions", color: "#67096E" },
+  { label: "Build Practical Projects", color: "#2D4CC8" },
 ];
 
 const challengeCards = [
   {
-    title: "Apply concepts",
+    title: "Apply Concepts",
     text: "Apply coding concepts through guided exercises.",
     icon: "/icons/codepen.svg",
     tone: "pink",
   },
   {
-    title: "Problem-solving",
+    title: "Problem-Solving",
     text: "Improve logical thinking through guided challenges.",
     icon: "/icons/brain-cog.svg",
     tone: "teal",
   },
   {
-    title: "Code efficiently",
+    title: "Code Efficiently",
     text: "Learn cleaner and more effective coding techniques.",
     icon: "/icons/brace.png",
     tone: "purple",
   },
   {
-    title: "Interview-ready",
+    title: "Interview-Ready",
     text: "Build confidence for coding tests and technical assessments.",
     icon: "/icons/checkmark-circle-02.svg",
     tone: "blue",
@@ -43,10 +43,10 @@ const challengeCards = [
 ];
 
 const skillItems = [
-  { label: "Write clean, efficient code", color: "#2A7308" },
-  { label: "Debug and fix programs", color: "#BF1869" },
-  { label: "Strengthen programming logic", color: "#67096E" },
-  { label: "Build real-world solutions", color: "#2D4CC8" },
+  { label: "Write Clean, Efficient Code", color: "#2A7308" },
+  { label: "Debug and Fix Programs", color: "#BF1869" },
+  { label: "Strengthen Programming Logic", color: "#67096E" },
+  { label: "Build Real-World Solutions", color: "#2D4CC8" },
 ];
 
 const sliderVideos = [
@@ -322,7 +322,9 @@ export default function CodingLabsPage() {
 
             <div className="coding-cta__actions">
               <BookDemoTrigger>
+              <button type="button" disabled>
                 Book a Demo
+              </button>
               </BookDemoTrigger>
 
               <button

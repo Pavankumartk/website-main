@@ -3089,7 +3089,7 @@
 }
 
 /* =========================================================
-   MOBILE ONLY — FINANCIAL FOUNDATION CARDS FIX
+   MOBILE ONLY â€” FINANCIAL FOUNDATION CARDS FIX
    Reduced coloured area + no text overlap.
    Desktop/tablet unchanged.
    ========================================================= */
@@ -3249,7 +3249,7 @@
 }
 
 /* =========================================================
-   MOBILE ONLY — CENTER SMART DECISIONS TICK LIST
+   MOBILE ONLY â€” CENTER SMART DECISIONS TICK LIST
    Alignment only. No other design changes.
    ========================================================= */
 @media (max-width: 767.98px) {
@@ -3280,7 +3280,7 @@
 }
 
 /* =========================================================
-   MOBILE ONLY — ALIGN EACH LINE WITH CIRCLE CENTER
+   MOBILE ONLY â€” ALIGN EACH LINE WITH CIRCLE CENTER
    Alignment only. No other design changes.
    ========================================================= */
 @media (max-width: 767.98px) {
@@ -3317,7 +3317,7 @@
 }
 
 /* =========================================================
-   DESKTOP — FINANCIAL SKILL CARDS: REMOVE EMPTY RIGHT SPACE
+   DESKTOP â€” FINANCIAL SKILL CARDS: REMOVE EMPTY RIGHT SPACE
    Only card width/layout is adjusted.
    ========================================================= */
 @media (min-width: 1025px) {
@@ -3350,7 +3350,7 @@
   }
 }
 
-/* DESKTOP — reduce the remaining empty space on the right of skill cards */
+/* DESKTOP â€” reduce the remaining empty space on the right of skill cards */
 @media (min-width: 1025px) {
   .frameParent8,
   .frameParent11,
@@ -3374,3 +3374,664 @@
   }
 }
 
+/* =========================================================
+   DESKTOP / TABLET â€” WHO WE SUPPORT SPACING CORRECTION
+   Lowers only the left copy, keeps its supporting copy to two
+   lines, and reduces the oversized badge-to-content gap.
+   ========================================================= */
+@media (min-width: 768px) {
+  .frameParent28 {
+    gap: 48px !important;
+  }
+
+  .frameParent29 {
+    align-items: flex-start !important;
+  }
+
+  .frameParent29 .frameParent16 {
+    width: min(650px, 100%) !important;
+    max-width: 650px !important;
+    margin-top: 110px !important;
+    gap: 24px !important;
+  }
+
+  .frameParent29 .frameParent17 {
+    gap: 24px !important;
+  }
+
+  .frameParent29 .financialLiteracyForContainer {
+    width: 100% !important;
+    max-width: 650px !important;
+    line-height: 1.25 !important;
+  }
+
+  .frameParent29 .forEveryStage {
+    line-height: 1.25 !important;
+  }
+
+  .frameParent29 .buildTheSkills {
+    width: 650px !important;
+    max-width: 100% !important;
+    line-height: 40px !important;
+    white-space: normal !important;
+  }
+}
+
+/* =========================================================
+   SMART DECISIONS â€” KEEP NEW DESIGN, RESTORE ICON CIRCLES
+   Only the four marked icon circles use their original size.
+   ========================================================= */
+@media (min-width: 768px) {
+  .frameParent14 {
+    height: 640px !important;
+    gap: 32px !important;
+  }
+
+  .frameParent15 {
+    width: 100% !important;
+    min-height: 336px !important;
+    align-items: center !important;
+    gap: 48px !important;
+  }
+
+  .frameParent14 .frameParent16 {
+    width: 620px !important;
+    max-width: 620px !important;
+  }
+
+  .frameParent14 .frameParent17 {
+    gap: 28px !important;
+  }
+
+  .frameParent14 .makeConfidentFinancialContainer {
+    width: 620px !important;
+    max-width: 100% !important;
+    line-height: 1.25 !important;
+    display: block !important;
+  }
+
+  .frameParent14 .makeConfidentFinancialContainer2 {
+    width: 100% !important;
+  }
+
+  .frameParent14 .buildTheSkills {
+    width: 620px !important;
+    max-width: 100% !important;
+    line-height: 40px !important;
+  }
+
+  .frameParent14 .frameParent18 {
+    width: 500px !important;
+    margin-top: 32px !important;
+    gap: 32px !important;
+    font-size: 24px !important;
+  }
+
+  .frameParent14 .frameParent19,
+  .frameParent14 .frameParent21 {
+    width: 100% !important;
+    min-height: 41px !important;
+    gap: 24px !important;
+    align-items: center !important;
+  }
+
+  /* Restore only the marked circle areas to the original design. */
+  .frameParent14 .tickWrap {
+    width: 41px !important;
+    height: 41px !important;
+    flex: 0 0 41px !important;
+    border-radius: 50% !important;
+    background: transparent !important;
+    box-shadow: none !important;
+  }
+
+  .frameParent14 .tickBg {
+    inset: 0 !important;
+    width: 41px !important;
+    height: 41px !important;
+    border-radius: 50% !important;
+    background-color: color-mix(
+      in srgb,
+      var(--tick-color, #67096e) 30%,
+      transparent
+    ) !important;
+    box-shadow:
+      -8px -8px 16px 0 #ffffff,
+      8px 8px 16px 0 #c6c6c9 !important;
+  }
+
+  .frameParent14 .frameChild6,
+  .frameParent14 .frameChild8 {
+    display: block !important;
+    width: 41px !important;
+    height: 41px !important;
+  }
+
+  .frameParent14 .tickIcon,
+  .frameParent14 .tick03Icon {
+    width: 24px !important;
+    height: 24px !important;
+    filter: none !important;
+    opacity: 1 !important;
+  }
+
+  .frameParent14 .understandCreditLoans,
+  .frameParent14 .assessRisksBefore {
+    line-height: 34px !important;
+    white-space: nowrap !important;
+  }
+
+  .frameParent14 .ellipseParent {
+    width: 1140px !important;
+    max-width: calc(100% - 120px) !important;
+    height: 270px !important;
+    min-height: 270px !important;
+    align-self: center !important;
+    border: 6px solid rgba(255, 255, 255, 0.9) !important;
+    border-radius: 50% !important;
+    box-sizing: border-box !important;
+    overflow: hidden !important;
+    background-color: #dfe6e9 !important;
+    background-image: radial-gradient(
+      circle,
+      rgba(49, 52, 75, 0.1) 1.2px,
+      transparent 1.3px
+    ) !important;
+    background-size: 7px 7px !important;
+    box-shadow:
+      inset -8px -8px 16px rgba(255, 255, 255, 0.82),
+      inset 8px 8px 16px rgba(196, 196, 196, 0.4),
+      0 9px 0 rgba(196, 196, 196, 0.72) !important;
+  }
+
+  .frameParent14 .frameChild10,
+  .frameParent14 .ellipseDiv {
+    display: none !important;
+  }
+
+  .frameParent14 .theseSkillsBuildConfidenceParent {
+    position: absolute !important;
+    inset: 0 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+
+  .frameParent14 .theseSkillsBuildContainer {
+    position: relative !important;
+    top: auto !important;
+    left: auto !important;
+    width: calc(100% - 120px) !important;
+    height: auto !important;
+    margin: 0 !important;
+    font-size: 44px !important;
+    line-height: 60px !important;
+    text-align: center !important;
+    filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25)) !important;
+  }
+
+  .frameParent14 .theseSkillsBuildContainer .empoweringSmarter,
+  .frameParent14 .theseSkillsBuildContainer .money {
+    display: block !important;
+    line-height: 60px !important;
+  }
+}
+
+/* =========================================================
+   MOBILE FINAL â€” FOUNDATION CARDS + SMART DECISIONS + FOOTER GAP
+   Desktop and tablet rules above remain unchanged.
+   ========================================================= */
+@media (max-width: 767.98px) {
+  /* Financial Foundations: readable mobile cards and typography. */
+  .frameParent5 .frameParent7 {
+    width: 100% !important;
+    max-width: 360px !important;
+    margin-inline: auto !important;
+    padding-inline: 8px !important;
+    align-items: center !important;
+    gap: 14px !important;
+  }
+
+  .frameParent5 .frameParent9 {
+    width: 100% !important;
+    max-width: 320px !important;
+    height: 148px !important;
+    min-height: 148px !important;
+    margin-inline: auto !important;
+    border-radius: 16px !important;
+    overflow: hidden !important;
+  }
+
+  .frameParent5 .wrapper,
+  .frameParent5 .container,
+  .frameParent5 .frame,
+  .frameParent5 .wrapper2 {
+    width: 100% !important;
+    height: 148px !important;
+    left: 0 !important;
+    border-radius: 16px !important;
+  }
+
+  .frameParent5 .skillCardPanel,
+  .frameParent5 .rectangleIcon,
+  .frameParent5 .skillCardPanelAlt,
+  .frameParent5 .rectangleIconAlt {
+    height: 140px !important;
+  }
+
+  .frameParent5 .smartBudgetingParent,
+  .frameParent5 .creditManagementParent,
+  .frameParent5 .savingEssentialsParent {
+    left: 32% !important;
+    width: 64% !important;
+    gap: 7px !important;
+  }
+
+  .frameParent5 .smartBudgeting {
+    font-size: 18px !important;
+    line-height: 22px !important;
+    font-weight: 700 !important;
+  }
+
+  .frameParent5 .planIncomeAnd,
+  .frameParent5 .borrowResponsibly,
+  .frameParent5 .growSavingsAnd,
+  .frameParent5 .achieveFinancialGoals {
+    font-size: 15px !important;
+    line-height: 20px !important;
+  }
+
+  .frameParent5 .b,
+  .frameParent5 .b4 {
+    font-size: 42px !important;
+  }
+
+  /* Smart Decisions: use the new single dotted ellipse on mobile. */
+  .frameParent14 .ellipseParent {
+    position: relative !important;
+    width: 100% !important;
+    max-width: 320px !important;
+    height: 128px !important;
+    min-height: 128px !important;
+    aspect-ratio: auto !important;
+    margin-inline: auto !important;
+    border: 4px solid rgba(255, 255, 255, 0.92) !important;
+    border-radius: 50% !important;
+    box-sizing: border-box !important;
+    overflow: hidden !important;
+    background-color: #dfe6e9 !important;
+    background-image: radial-gradient(
+      circle,
+      rgba(49, 52, 75, 0.1) 0.9px,
+      transparent 1px
+    ) !important;
+    background-size: 6px 6px !important;
+    box-shadow:
+      inset -5px -5px 10px rgba(255, 255, 255, 0.82),
+      inset 5px 5px 10px rgba(196, 196, 196, 0.38),
+      0 6px 0 rgba(196, 196, 196, 0.7) !important;
+  }
+
+  .frameParent14 .frameChild10,
+  .frameParent14 .ellipseDiv {
+    display: none !important;
+  }
+
+  .frameParent14 .theseSkillsBuildConfidenceParent {
+    position: absolute !important;
+    inset: 0 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+
+  .frameParent14 .theseSkillsBuildContainer {
+    position: relative !important;
+    top: auto !important;
+    left: auto !important;
+    width: calc(100% - 28px) !important;
+    height: auto !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    font-size: 11px !important;
+    line-height: 17px !important;
+    letter-spacing: 0 !important;
+    text-align: center !important;
+    white-space: normal !important;
+    filter: drop-shadow(0 2px 2px rgba(0, 0, 0, 0.2)) !important;
+  }
+
+  .frameParent14 .theseSkillsBuildContainer .empoweringSmarter,
+  .frameParent14 .theseSkillsBuildContainer .money {
+    display: block !important;
+    line-height: 17px !important;
+    white-space: nowrap !important;
+  }
+
+  .frameParent14 .theseSkillsBuildContainer .money {
+    margin-top: 5px !important;
+    font-size: 16px !important;
+    line-height: 20px !important;
+  }
+
+  /* Clear breathing room between the final page section and footer. */
+  .finatialLiteracy {
+    padding-bottom: 48px !important;
+    box-sizing: border-box !important;
+  }
+}
+
+@media (max-width: 390px) {
+  .frameParent5 .smartBudgeting {
+    font-size: 17px !important;
+    line-height: 21px !important;
+  }
+
+  .frameParent5 .planIncomeAnd,
+  .frameParent5 .borrowResponsibly,
+  .frameParent5 .growSavingsAnd,
+  .frameParent5 .achieveFinancialGoals {
+    font-size: 14px !important;
+    line-height: 19px !important;
+  }
+
+  .frameParent14 .ellipseParent {
+    max-width: 300px !important;
+    height: 122px !important;
+    min-height: 122px !important;
+  }
+}
+
+/* =========================================================
+   MOBILE FINAL TYPOGRAPHY â€” EXACT REQUESTED SIZES
+   Card title 24px, card subtitle 16px, uniform two-line list,
+   and a readable two-line confidence message.
+   ========================================================= */
+@media (max-width: 767.98px) {
+  .frameParent5 .frameParent9 {
+    height: 164px !important;
+    min-height: 164px !important;
+  }
+
+  .frameParent5 .wrapper,
+  .frameParent5 .container,
+  .frameParent5 .frame,
+  .frameParent5 .wrapper2 {
+    height: 164px !important;
+  }
+
+  .frameParent5 .skillCardPanel,
+  .frameParent5 .rectangleIcon,
+  .frameParent5 .skillCardPanelAlt,
+  .frameParent5 .rectangleIconAlt {
+    height: 156px !important;
+  }
+
+  .frameParent5 .smartBudgetingParent,
+  .frameParent5 .creditManagementParent,
+  .frameParent5 .savingEssentialsParent {
+    left: 29% !important;
+    width: 68% !important;
+    gap: 9px !important;
+  }
+
+  .frameParent5 .smartBudgeting {
+    width: 100% !important;
+    max-width: 100% !important;
+    font-size: 24px !important;
+    line-height: 28px !important;
+    font-weight: 700 !important;
+    white-space: normal !important;
+    overflow-wrap: normal !important;
+    word-break: normal !important;
+  }
+
+  .frameParent5 .planIncomeAnd,
+  .frameParent5 .borrowResponsibly,
+  .frameParent5 .growSavingsAnd,
+  .frameParent5 .achieveFinancialGoals {
+    width: 100% !important;
+    max-width: 100% !important;
+    font-size: 16px !important;
+    line-height: 21px !important;
+    text-align: left !important;
+    white-space: normal !important;
+    overflow-wrap: normal !important;
+    word-break: normal !important;
+  }
+
+  /* Every Smart Decisions line uses the same two-line text column. */
+  .frameParent14 .frameParent18 {
+    width: 100% !important;
+    max-width: 100% !important;
+    align-items: center !important;
+  }
+
+  .frameParent14 .frameParent19,
+  .frameParent14 .frameParent21 {
+    display: grid !important;
+    grid-template-columns: 41px 178px !important;
+    column-gap: 16px !important;
+    align-items: center !important;
+    width: 235px !important;
+    max-width: 100% !important;
+    min-height: 48px !important;
+    margin-inline: auto !important;
+  }
+
+  .frameParent14 .understandCreditLoans,
+  .frameParent14 .assessRisksBefore {
+    width: 178px !important;
+    max-width: 178px !important;
+    min-width: 178px !important;
+    margin: 0 !important;
+    font-size: 16px !important;
+    line-height: 24px !important;
+    white-space: normal !important;
+    overflow-wrap: normal !important;
+    word-break: normal !important;
+    text-align: left !important;
+  }
+
+  /* Readable confidence message, contained in exactly two lines. */
+  .frameParent14 .ellipseParent {
+    max-width: 320px !important;
+    height: 136px !important;
+    min-height: 136px !important;
+  }
+
+  .frameParent14 .theseSkillsBuildContainer {
+    width: calc(100% - 24px) !important;
+    max-width: calc(100% - 24px) !important;
+    font-size: 16px !important;
+    line-height: 22px !important;
+    letter-spacing: 0 !important;
+    white-space: normal !important;
+  }
+
+  .frameParent14 .theseSkillsBuildContainer .empoweringSmarter,
+  .frameParent14 .theseSkillsBuildContainer .money {
+    display: inline !important;
+    margin: 0 !important;
+    font-size: 16px !important;
+    line-height: 22px !important;
+    white-space: normal !important;
+  }
+}
+
+/* =========================================================
+   MOBILE FOUNDATION CARDS â€” FULL WIDTH, NO SCALING/OVERLAP
+   Keeps the requested 24px title and 16px subtitle at their
+   real sizes by cancelling the older responsive zoom rule.
+   ========================================================= */
+@media (max-width: 767.98px) {
+  .frameParent5 .frameParent7 {
+    width: 100% !important;
+    max-width: 320px !important;
+    margin-inline: auto !important;
+    padding-inline: 0 !important;
+    align-items: center !important;
+    gap: 14px !important;
+    overflow: visible !important;
+  }
+
+  .frameParent5 .frameParent9 {
+    width: 100% !important;
+    max-width: 320px !important;
+    height: 124px !important;
+    min-height: 124px !important;
+    margin: 0 auto !important;
+    zoom: 1 !important;
+    transform: none !important;
+    transform-origin: center !important;
+    overflow: hidden !important;
+    box-sizing: border-box !important;
+  }
+
+  .frameParent5 .frameParent9:hover,
+  .frameParent5 .frameParent9:active {
+    transform: none !important;
+  }
+
+  .frameParent5 .wrapper,
+  .frameParent5 .container,
+  .frameParent5 .frame,
+  .frameParent5 .wrapper2 {
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 124px !important;
+  }
+
+  .frameParent5 .skillCardPanel,
+  .frameParent5 .rectangleIcon,
+  .frameParent5 .skillCardPanelAlt,
+  .frameParent5 .rectangleIconAlt {
+    left: 22% !important;
+    width: 78% !important;
+    height: 116px !important;
+  }
+
+  .frameParent5 .smartBudgetingParent,
+  .frameParent5 .creditManagementParent,
+  .frameParent5 .savingEssentialsParent {
+    top: 50% !important;
+    left: 35% !important;
+    width: 63% !important;
+    transform: translateY(-50%) !important;
+    gap: 6px !important;
+    overflow: visible !important;
+  }
+
+  .frameParent5 .smartBudgeting {
+    font-size: 24px !important;
+    line-height: 28px !important;
+    letter-spacing: 0 !important;
+    text-align: left !important;
+  }
+
+  .frameParent5 .planIncomeAnd,
+  .frameParent5 .borrowResponsibly,
+  .frameParent5 .growSavingsAnd,
+  .frameParent5 .achieveFinancialGoals {
+    font-size: 16px !important;
+    line-height: 21px !important;
+    letter-spacing: 0 !important;
+    text-align: left !important;
+  }
+
+  @supports not (zoom: 1) {
+    .frameParent5 .frameParent9,
+    .frameParent5 .frameParent9:hover,
+    .frameParent5 .frameParent9:active {
+      transform: none !important;
+      margin: 0 auto !important;
+    }
+  }
+}
+
+/* =========================================================
+   MOBILE ALIGNMENT + RESPONSIVE SMART-DECISION ROWS
+   - Oval confidence message is centred in both directions.
+   - Large mobiles: icon and sentence remain on one line.
+   - Small mobiles: sentence wraps cleanly into two lines.
+   ========================================================= */
+@media (max-width: 767.98px) {
+  .frameParent14 .theseSkillsBuildConfidenceParent {
+    position: absolute !important;
+    inset: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    transform: none !important;
+  }
+
+  .frameParent14 .theseSkillsBuildContainer {
+    position: absolute !important;
+    top: 50% !important;
+    left: 50% !important;
+    width: calc(100% - 32px) !important;
+    max-width: calc(100% - 32px) !important;
+    height: auto !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    transform: translate(-50%, -50%) !important;
+    text-align: center !important;
+    line-height: 22px !important;
+  }
+
+  .frameParent14 .theseSkillsBuildContainer .empoweringSmarter,
+  .frameParent14 .theseSkillsBuildContainer .money {
+    line-height: 22px !important;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 767.98px) {
+  .frameParent14 .frameParent19,
+  .frameParent14 .frameParent21 {
+    grid-template-columns: 41px max-content !important;
+    column-gap: 16px !important;
+    width: max-content !important;
+    max-width: 100% !important;
+    min-height: 41px !important;
+    margin-inline: auto !important;
+  }
+
+  .frameParent14 .understandCreditLoans,
+  .frameParent14 .assessRisksBefore {
+    width: auto !important;
+    min-width: 0 !important;
+    max-width: none !important;
+    line-height: 24px !important;
+    white-space: nowrap !important;
+    text-align: left !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .frameParent14 .frameParent19,
+  .frameParent14 .frameParent21 {
+    grid-template-columns: 41px 170px !important;
+    column-gap: 14px !important;
+    width: 225px !important;
+    max-width: 100% !important;
+    min-height: 48px !important;
+    margin-inline: auto !important;
+  }
+
+  .frameParent14 .understandCreditLoans,
+  .frameParent14 .assessRisksBefore {
+    width: 170px !important;
+    min-width: 170px !important;
+    max-width: 170px !important;
+    line-height: 24px !important;
+    white-space: normal !important;
+    text-align: left !important;
+  }
+}
+@media (min-width: 1025px) {
+  .frameParent23 {
+    margin-top: 48px !important;
+  }
+}

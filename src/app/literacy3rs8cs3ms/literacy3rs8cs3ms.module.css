@@ -2686,16 +2686,35 @@
     margin-top: -20px;
   }
 
-  /* Move Why it Matters slightly more upward */
+  /* Match the reference PNG for the final section. */
   .whyItMattersParent {
-    top: 1660px;
+    top: 1667.21px;
+    font-family: "Segoe UI", Inter, Arial, sans-serif;
   }
 
   .rectangleParent {
-    top: 1935px;
+    top: 1927.21px;
+    left: calc(50% - 626px);
+    width: 1280px;
+    height: 407px;
+    font-family: "Segoe UI", Inter, Arial, sans-serif;
+  }
+
+  .frameParent22 {
+    top: calc(50% - 114.5px);
+    left: 80px;
+    width: 659px;
+    gap: 36px;
   }
 
   .smilingWomanWithBooksMortaIcon {
-    top: 1771px;
+    top: 1763px;
+    left: calc(50% - 166px) !important;
+    right: auto !important;
+    bottom: auto;
+    width: 766px;
+    height: 571px;
+    object-fit: contain;
+    object-position: center bottom;
   }
 }

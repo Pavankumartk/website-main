@@ -36,7 +36,7 @@ a {
   overflow-x: clip;
   background: var(--coding-bg);
   color: var(--coding-heading);
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", "Inter";
 }
 
 
@@ -934,7 +934,7 @@ a {
 
   .coding-hero p {
     margin-top: 20px;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 28px;
   }
 
@@ -963,7 +963,7 @@ a {
   .coding-section-copy p,
   .coding-challenges__intro p {
     margin-top: 20px;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 28px;
   }
 
@@ -1142,7 +1142,7 @@ a {
 
   .coding-cta p {
     margin-top: 20px;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 28px;
   }
 
@@ -1181,7 +1181,7 @@ a {
   }
 
   .coding-hero h1 {
-    font-size: 36px;
+    font-size: 24px;
   }
 
   .coding-hero__visual {
@@ -1194,7 +1194,7 @@ a {
 
   .coding-section-copy h2,
   .coding-challenges__intro h2 {
-    font-size: 36px;
+    font-size: 24px;
   }
 
   .coding-practice-card {
@@ -1254,7 +1254,7 @@ a {
     width: 184px;
     max-width: 184px;
     margin-top: 8px;
-    font-size: 11px;
+    font-size: 12px;
     line-height: 16px;
   }
 
@@ -1291,7 +1291,7 @@ a {
   }
 
   .coding-cta h2 {
-    font-size: 36px;
+    font-size: 24px;
   }
 
   .coding-cta__actions {
@@ -1301,7 +1301,8 @@ a {
   }
 
   .coding-cta__actions button {
-    width: 100%;
+    width: 60%;
+    transform: translateX(50);
   }
 }
 
@@ -1381,13 +1382,13 @@ a {
 
 
 
-.coding-cta__actions button {
+/* .coding-cta__actions button {
   color: var(--coding-blue);
   background: var(--coding-bg);
   box-shadow:
     -8px -8px 16px #ffffff,
     8px 8px 16px #c6c6c9;
-}
+} */
 
 .coding-cta__actions button.is-selected {
   color: var(--coding-heading);
