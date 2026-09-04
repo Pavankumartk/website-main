@@ -113,7 +113,7 @@ export default function CodingChallengePage() {
   return (
     <>
       {/* HEADER */}
-      <Header />
+      { <Header /> }
 
       <PageScaler>
         <div className={styles.frameDiv}>
@@ -456,28 +456,28 @@ export default function CodingChallengePage() {
           <div className={styles.frameParent11}>
             <div className={styles.frameParent12}>
               <SkillCard
-                line1="Time-based coding"
+                line1="Time-Based Coding"
                 line2="Problems"
                 corner="topLeft"
               />
 
               <SkillCard
-                line1="Algorithm and logic"
-                line2="puzzles"
+                line1="Algorithm and Logic"
+                line2="Puzzles"
                 corner="topRight"
               />
             </div>
 
             <div className={styles.frameParent12}>
               <SkillCard
-                line1="Programming contests"
-                line2="and competitions"
+                line1="Programming Contest"
+                line2="and Competitions"
                 corner="bottomLeft"
               />
 
               <SkillCard
-                line1="Skill-based coding"
-                line2="assessments"
+                line1="Skill-Based Coding"
+                line2="Assessments"
                 corner="bottomRight"
               />
             </div>
@@ -614,7 +614,7 @@ export default function CodingChallengePage() {
                   styles.neurolabsCodingChallenges
                 }
               >
-                NeuroLabs Coding Challenges are Suitable for:
+                NeuroLabs coding challenges are suitable for
               </div>
             </div>
           </div>
@@ -693,10 +693,10 @@ export default function CodingChallengePage() {
         </div>
       </PageScaler>
 
-      {/* FOOTER */}
-      <Footer />
+      {  <footer />  }
+      { <Footer /> }
 
-      <TalkToExpertButton />
+      { <TalkToExpertButton /> }
     </>
   );
 }

@@ -1055,6 +1055,7 @@ box-shadow: 8px 8px 16px #c4c4c4, -8px -8px 16px #fff;
     right 0.45s cubic-bezier(0.22, 1, 0.36, 1),
     max-width 0.45s cubic-bezier(0.22, 1, 0.36, 1);
   box-sizing: border-box;
+  /* transform: translateX(80); */
 }
 
 .interviewTextTop {
@@ -1114,6 +1115,7 @@ box-shadow: 8px 8px 16px #c4c4c4, -8px -8px 16px #fff;
     gap: 28px;
     overflow: hidden;
     transform: translateY(-4px);
+    transform: translateX(110px);
   }
 
   .interviewSectionExpanded .interviewTextTop {
@@ -2896,7 +2898,7 @@ box-shadow: 8px 8px 16px #c4c4c4, -8px -8px 16px #fff;
     justify-items: stretch !important;
   }
 
-  .pillCard {
+  /* .pillCard {
     width: 100% !important;
     max-width: 100% !important;
     height: auto !important;
@@ -2904,7 +2906,7 @@ box-shadow: 8px 8px 16px #c4c4c4, -8px -8px 16px #fff;
     display: flex !important;
     align-items: center !important;
     justify-content: center !important;
-  }
+  } */
 
   .pillCardLabel {
     font-size: clamp(16px, 4.2vw, 22px) !important;
@@ -2995,11 +2997,26 @@ box-shadow: 8px 8px 16px #c4c4c4, -8px -8px 16px #fff;
     text-align: center !important;
   }
 
-  .builtForEveryContainer {
-    font-size: clamp(22px, 5.5vw, 32px) !important;
+  /* .builtForEveryContainer {
+    font-size: clamp(24px, 5.5vw, 32px) !important;
     line-height: 1.25 !important;
     text-align: center !important;
-  }
+  } */
+   .builtForEveryContainer {
+  font-size: clamp(24px, 5.5vw, 32px) !important;
+  line-height: 1.05 !important;
+  text-align: center !important;
+}
+
+.builtForEveryContainer span {
+  line-height: 1.05 !important;
+}
+
+/* Pull Journey slightly upward */
+.builtForEveryContainer > span:last-child {
+  position: relative !important;
+  top: 5px !important;
+}
 
   .neurolabsCodingChallenges {
     width: 100% !important;
@@ -3018,6 +3035,7 @@ box-shadow: 8px 8px 16px #c4c4c4, -8px -8px 16px #fff;
     max-width: 100% !important;
     padding-top: 20px;
     box-sizing: border-box;
+    transform: translateY(-25);
   }
 
   .audienceCard {
@@ -3100,7 +3118,7 @@ box-shadow: 8px 8px 16px #c4c4c4, -8px -8px 16px #fff;
 
   .frameParent8 .skillCard {
     width: 100% !important;
-    max-width: 100% !important;
+    max-width: 85% !important;
     min-height: 96px !important;
     height: auto !important;
     padding: 22px 18px !important;
@@ -3109,6 +3127,7 @@ box-shadow: 8px 8px 16px #c4c4c4, -8px -8px 16px #fff;
     justify-content: center !important;
     box-sizing: border-box !important;
     overflow: visible !important;
+    transform: translateX(25);
   }
 
   .frameParent8 .skillCardDot {
@@ -3118,7 +3137,7 @@ box-shadow: 8px 8px 16px #c4c4c4, -8px -8px 16px #fff;
 
   .frameParent8 .skillCardLabel {
     font-family: 'Segoe UI', !important;
-    font-size: clamp(15px, 4vw, 22px) !important;
+    font-size: clamp(18px, 4vw, 22px) !important;
     font-weight: 600 !important;
     line-height: 1.35 !important;
     letter-spacing: 0 !important;
@@ -3341,8 +3360,8 @@ box-shadow: 8px 8px 16px #c4c4c4, -8px -8px 16px #fff;
   .neurolabsCodingChallenges {
     width: 100% !important;
     height: auto !important;
-    font-size: clamp(14px, 3.8vw, 18px) !important;
-    line-height: 1.45 !important;
+    font-size: clamp(16px, 3.8vw, 18px) !important;
+    line-height: 2 !important;
   }
 
   .thinkSolveAndContainer {
@@ -3487,7 +3506,7 @@ box-shadow: 8px 8px 16px #c4c4c4, -8px -8px 16px #fff;
 
   .neurolabsCodingChallenge .sectionBadge {
     min-width: 0;
-    font-size: 13px;
+    font-size: 18px;
     height: 44px;
     padding: 0 18px;
     margin-left: auto;
@@ -3754,3 +3773,263 @@ box-shadow: 8px 8px 16px #c4c4c4, -8px -8px 16px #fff;
 .skillCard-bottomRight:hover .skillCardDot {
   animation: none !important;
 }
+
+/* =========================================================
+   FINAL HERO ALIGNMENT FIX — MATCH REFERENCE PNG
+   Desktop / tablet artboard only.
+   Keeps all other sections and mobile rules unchanged.
+   Paste/keep this block at the VERY BOTTOM of the CSS file.
+   ========================================================= */
+@media screen and (min-width: 768px) {
+
+  /* Keep the copy above the image and give it its own clean area. */
+  .frameParent3 {
+    width: 620px !important;
+    z-index: 4 !important;
+  }
+
+  .frameParent4 {
+    width: 100% !important;
+    max-width: 620px !important;
+  }
+
+  .testImproveContainer {
+    width: 620px !important;
+    max-width: 620px !important;
+    height: auto !important;
+    position: relative !important;
+    z-index: 4 !important;
+  }
+
+  .testImprove,
+  .codingSkills {
+    position: relative !important;
+    z-index: 4 !important;
+  }
+
+  .solveRealWorldChallenges {
+    width: 540px !important;
+    max-width: 540px !important;
+    position: relative !important;
+    z-index: 4 !important;
+  }
+
+  /* Move and size the people image like the reference:
+     fully on the right, no collision with the heading. */
+  .businessStyleYoungBeautifulIcon {
+    left: auto !important;
+    right: -10px !important;
+    bottom: 84px !important;
+
+    width: 600px !important;
+    height: auto !important;
+    max-height: 500px !important;
+
+    object-fit: contain !important;
+    object-position: right bottom !important;
+
+    z-index: 2 !important;
+  }
+
+  /* Keep the background behind both text and people. */
+  .image20Parent {
+    z-index: 1 !important;
+  }
+
+  /* Keep the Practice / Think / Showcase strip in front,
+     exactly as in the reference PNG. */
+  .frameWrapper4 {
+    z-index: 6 !important;
+  }
+}
+
+/* =========================================================
+   FINAL DESKTOP HERO MATCH — REFERENCE PNG
+   Fixes only the title wrapping / text-image collision.
+   The people image and bottom feature strip keep their
+   current reference-matched position.
+   Keep this block at the VERY BOTTOM of the CSS file.
+   ========================================================= */
+@media screen and (min-width: 768px) {
+
+  /* Wider text area so the heading becomes exactly 2 lines:
+     Test! Improve & Showcase
+     Your Coding Skills
+  */
+  .frameParent3 {
+    width: 700px !important;
+    max-width: 700px !important;
+    z-index: 4 !important;
+  }
+
+  .frameParent4 {
+    width: 700px !important;
+    max-width: 700px !important;
+  }
+
+  .testImproveContainer {
+    width: 700px !important;
+    max-width: 700px !important;
+    height: 123px !important;
+
+    font-size: 48px !important;
+    line-height: 60px !important;
+
+    position: relative !important;
+    z-index: 4 !important;
+  }
+
+  .testImprove,
+  .codingSkills {
+    line-height: 60px !important;
+    position: relative !important;
+    z-index: 4 !important;
+  }
+
+  /* Keep subtitle at the same reference width */
+  .solveRealWorldChallenges {
+    width: 539px !important;
+    max-width: 539px !important;
+    height: 81px !important;
+    position: relative !important;
+    z-index: 4 !important;
+  }
+
+  /* Keep people image exactly on the right;
+     prevent it from entering the title area. */
+  .businessStyleYoungBeautifulIcon {
+    left: auto !important;
+    right: -10px !important;
+    bottom: 84px !important;
+
+    width: 600px !important;
+    height: auto !important;
+    max-height: 500px !important;
+
+    object-fit: contain !important;
+    object-position: right bottom !important;
+
+    z-index: 2 !important;
+  }
+
+  .image20Parent {
+    z-index: 1 !important;
+  }
+
+  .frameWrapper4 {
+    z-index: 6 !important;
+  }
+}
+
+/* =========================================================
+   FINAL HERO IMAGE BOTTOM FIX
+   Keep the people/laptop image fully inside the hero frame.
+   Content and all other sections stay unchanged.
+   Keep this block at the VERY BOTTOM of the CSS file.
+   ========================================================= */
+@media screen and (min-width: 768px) {
+
+  .businessStyleYoungBeautifulIcon {
+    left: auto !important;
+    right: -10px !important;
+
+    /* move image slightly upward so its bottom edge
+       stays inside the hero card like the reference PNG */
+    bottom: 96px !important;
+
+    width: 600px !important;
+    height: auto !important;
+    max-height: 488px !important;
+
+    object-fit: contain !important;
+    object-position: right bottom !important;
+
+    z-index: 2 !important;
+  }
+}
+
+/* =========================================================
+   FINAL HERO IMAGE CLIP FIX
+   Keep the image aligned with the bottom of the hero card,
+   but clip its bottom-right corner to the SAME 32px radius
+   as the hero frame so it does not sit outside the border.
+   Everything else stays unchanged.
+   ========================================================= */
+@media screen and (min-width: 768px) {
+
+  .businessStyleYoungBeautifulIcon {
+    left: auto !important;
+    right: -8px !important;
+
+    /* Hero card is 550px high inside a 634px wrapper,
+       so 84px aligns the image bottom exactly with the card. */
+    bottom: 84px !important;
+
+    width: 600px !important;
+    height: auto !important;
+    max-height: 500px !important;
+
+    display: block !important;
+    object-fit: contain !important;
+    object-position: right bottom !important;
+
+    /* Important part: crop the photo to the hero's rounded edge */
+    border-radius: 0 0 32px 0 !important;
+    clip-path: inset(0 0 0 0 round 0 0 32px 0) !important;
+
+    z-index: 2 !important;
+  }
+}
+
+/* =========================================================
+   FINAL MOBILE CTA SPACING FIX
+   - Reduces gap between subtitle and image
+   - Keeps subtitle font size the same
+   - Adds consistent space after the whole frame
+   - All other code remains unchanged
+   ========================================================= */
+@media screen and (max-width: 767.98px) {
+
+  .rectangleParent4 {
+    margin-bottom: 32px !important;
+  }
+
+  .frameParent25 {
+    padding: 28px 20px 0 !important;
+    gap: 16px !important;
+  }
+
+  .solveRealCoding {
+    width: 100% !important;
+    margin: 0 !important;
+
+    font-size: clamp(16px, 3.8vw, 18px) !important;
+    line-height: 1.45 !important;
+
+    text-align: center !important;
+  }
+
+  .colleaguesDiscussingWorkProIcon {
+    margin-top: clamp(-110px, -20vw, -70px) !important;
+    margin-bottom: 0 !important;
+
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+
+    object-fit: cover !important;
+    object-position: center bottom !important;
+  }
+}
+
+/* =========================================================
+   FINAL MOBILE CTA GAP — SMALL BALANCED SPACE
+   Keeps current design; only adds a little more space
+   between subtitle and image.
+   ========================================================= */
+@media screen and (max-width: 767.98px) {
+  .colleaguesDiscussingWorkProIcon {
+    margin-top: clamp(-55px, -10vw, -35px) !important;
+  }
+}
+
