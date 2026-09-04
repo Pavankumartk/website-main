@@ -2,20 +2,27 @@
 
 import type { NextPage } from "next";
 import Image from "next/image";
-import { type FormEvent, useMemo, useState } from "react";
+import { type FormEvent, useCallback, useEffect, useMemo, useState } from "react";
+import { createPortal } from "react-dom";
 import { getCountries, getCountryCallingCode, isValidPhoneNumber, type CountryCode } from "libphonenumber-js";
 import styles from "./contact.module.css";
 
 const subjectOptions = ["General Inquiry", "Product Information", "Technical Support", "Account Support", "Partnership", "Billing", "Feedback", "Other"];
 
-const ContactUs: NextPage = () => {
+type ContactUsProps = {
+  onClose?: () => void;
+};
+
+const ContactUs: NextPage<ContactUsProps> = ({ onClose }) => {
+  const [isMounted, setIsMounted] = useState(false);
+  const [isOpen, setIsOpen] = useState(true);
   const [isSubjectOpen, setIsSubjectOpen] = useState(false);
   const [selectedSubject, setSelectedSubject] = useState("");
   const [fullName, setFullName] = useState("");
   const [nameTouched, setNameTouched] = useState(false);
   const [emailAddress, setEmailAddress] = useState("");
   const [emailTouched, setEmailTouched] = useState(false);
-  const [countryCode, setCountryCode] = useState("");
+  const [countryCode, setCountryCode] = useState("IN");
   const [countryTouched, setCountryTouched] = useState(false);
   const [isCountryOpen, setIsCountryOpen] = useState(false);
   const [countrySearch, setCountrySearch] = useState("");
@@ -26,6 +33,38 @@ const ContactUs: NextPage = () => {
   const [privacyAccepted, setPrivacyAccepted] = useState(false);
   const [isPrivacyPolicyOpen, setIsPrivacyPolicyOpen] = useState(false);
   const [submitted, setSubmitted] = useState(false);
+
+  const handleClose = useCallback(() => {
+    setIsOpen(false);
+    onClose?.();
+  }, [onClose]);
+
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
+
+  useEffect(() => {
+    if (!isMounted || !isOpen) {
+      return;
+    }
+
+    const previousBodyOverflow = document.body.style.overflow;
+
+    document.body.style.overflow = "hidden";
+
+    const handleKeyDown = (event: KeyboardEvent) => {
+      if (event.key === "Escape") {
+        handleClose();
+      }
+    };
+
+    document.addEventListener("keydown", handleKeyDown);
+
+    return () => {
+      document.body.style.overflow = previousBodyOverflow;
+      document.removeEventListener("keydown", handleKeyDown);
+    };
+  }, [handleClose, isMounted, isOpen]);
 
   const namePattern = /^[A-Za-z]+(?:\s+[A-Za-z]+)*$/;
   const emailPattern = /^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$/;
@@ -269,11 +308,40 @@ const ContactUs: NextPage = () => {
     setIsSubjectOpen(false);
   };
 
-  return (
-    <main className={styles.before}>
-      <div className={styles.frameParent}>
+  if (!isMounted || !isOpen) {
+    return null;
+  }
+
+  return createPortal(
+    <div
+      className={styles.contactModalOverlay}
+      role="presentation"
+      onMouseDown={(event) => {
+        if (event.target === event.currentTarget) {
+          handleClose();
+        }
+      }}
+    >
+      <div
+        className={styles.contactModalDialog}
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="contact-modal-title"
+      >
+        <button
+          type="button"
+          className={styles.contactCloseButton}
+          onClick={handleClose}
+          aria-label="Close Contact Us"
+          autoFocus
+        >
+          <span className={styles.contactCloseIcon} aria-hidden="true">×</span>
+        </button>
+
+        <main className={styles.before}>
+<div className={styles.frameParent}>
         <div className={styles.contactUsParent}>
-          <h1 className={styles.contactUs} style={{ margin: 0, padding: 0, fontSize: "inherit", fontWeight: "bold", fontFamily: "inherit", color: "inherit" }}>
+          <h1 id="contact-modal-title" className={styles.contactUs}>
             Contact Us
           </h1>
 
@@ -421,7 +489,7 @@ const ContactUs: NextPage = () => {
                                     setCountrySearch("");
                                     setIsCountryOpen(false);
                                   }}>
-                                  {country.label}
+                                  {country.shortLabel}
                                 </button>
                               ))
                             ) : (
@@ -523,6 +591,10 @@ const ContactUs: NextPage = () => {
                       <label className={styles.message} htmlFor="message">
                         Message
                       </label>
+
+                      <span className={styles.messageCharacterCount} aria-live="polite">
+                        {250 - message.length}/250 characters left
+                      </span>
                     </div>
                   </div>
 
@@ -543,9 +615,6 @@ const ContactUs: NextPage = () => {
                           aria-describedby={showMessageError ? "messageError" : undefined}
                           required
                         />
-                        <span className={styles.messageCharacterCount} aria-live="polite">
-                          {message.length}/250
-                        </span>
                       </div>
                     </div>
                   </div>
@@ -564,8 +633,7 @@ const ContactUs: NextPage = () => {
                     type="checkbox"
                     name="privacyConfirmation"
                     checked={privacyAccepted}
-                    readOnly
-                    tabIndex={-1}
+                    onChange={(event) => setPrivacyAccepted(event.target.checked)}
                     aria-label="I confirm my information and agree to the Privacy Policy"
                     required
                   />
@@ -752,7 +820,10 @@ const ContactUs: NextPage = () => {
           </form>
         </div>
       </div>
-    </main>
+        </main>
+      </div>
+    </div>,
+    document.body
   );
 };
 

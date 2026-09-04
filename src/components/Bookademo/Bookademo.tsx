@@ -314,15 +314,81 @@ function NeumorphicDropdown({
   const selected = options.find((option) => option.value === value);
 
   const filteredOptions = searchable
-    ? options.filter((option) => {
+    ? (() => {
         const query = searchTerm.trim().toLowerCase();
 
-        if (!query) return true;
+        if (!query) return options;
 
-        return `${option.label} ${option.searchText ?? ""}`
-          .toLowerCase()
-          .includes(query);
-      })
+        return options
+          .map((option) => {
+            const value = option.value.toLowerCase();
+            const label = option.label.toLowerCase();
+            const searchText = (
+              option.searchText ?? ""
+            ).toLowerCase();
+
+            const searchableText =
+              `${label} ${searchText}`.trim();
+
+            const words = searchableText
+              .split(/\s+/)
+              .filter(Boolean);
+
+            let score = -1;
+
+            /*
+             * Highest priority:
+             * exact country/ISO code match.
+             *
+             * Example:
+             * "IN" / "in" => India first.
+             */
+            if (value === query) {
+              score = 100;
+            } else if (
+              label === query ||
+              searchText === query
+            ) {
+              score = 90;
+            } else if (
+              value.startsWith(query)
+            ) {
+              score = 80;
+            } else if (
+              words.some(
+                (word) => word === query
+              )
+            ) {
+              score = 70;
+            } else if (
+              words.some((word) =>
+                word.startsWith(query)
+              )
+            ) {
+              score = 60;
+            } else if (
+              searchableText.includes(query)
+            ) {
+              score = 50;
+            }
+
+            return {
+              option,
+              score,
+            };
+          })
+          .filter(({ score }) => score >= 0)
+          .sort((a, b) => {
+            if (b.score !== a.score) {
+              return b.score - a.score;
+            }
+
+            return a.option.label.localeCompare(
+              b.option.label
+            );
+          })
+          .map(({ option }) => option);
+      })()
     : options;
 
   useLayoutEffect(() => {
@@ -1474,7 +1540,7 @@ export default function BookADemo() {
     useState("");
 
   const [countryCode, setCountryCode] =
-    useState("");
+    useState("in");
 
   const [phone, setPhone] =
     useState("");
@@ -1488,8 +1554,7 @@ export default function BookADemo() {
   const [message, setMessage] =
     useState("");
 
-  const [consent, setConsent] =
-    useState(false);
+  const [consent, setConsent] = useState(false);
 
   const [
     isPrivacyPolicyOpen,
@@ -1838,7 +1903,7 @@ export default function BookADemo() {
 
       setFullName("");
       setEmail("");
-      setCountryCode("");
+      setCountryCode("in");
       setPhone("");
       setDateValue("");
       setTimeValue("");
@@ -1888,7 +1953,13 @@ export default function BookADemo() {
             }
             id={headingId}
           >
-            Book a Demo
+            <span
+              className={
+                styles["book-demo-title-text"]
+              }
+            >
+              Book a Demo
+            </span>
           </h2>
 
           {/*
@@ -1909,6 +1980,11 @@ export default function BookADemo() {
           }
           onSubmit={handleSubmit}
         >
+          <div
+            className={
+              styles["book-demo-name-email-row"]
+            }
+          >
           {/* ---------------------------------------------------------------- */}
           {/* Full Name                                                        */}
           {/* ---------------------------------------------------------------- */}
@@ -2070,6 +2146,8 @@ export default function BookADemo() {
                   Please enter a valid email address.
                 </p>
               )}
+          </div>
+
           </div>
 
           {/* ---------------------------------------------------------------- */}
@@ -2471,10 +2549,13 @@ export default function BookADemo() {
               <span
                 id={`${messageId}-limit`}
                 className={
-                  styles["sr-only"]
+                  styles[
+                    "book-demo-message-count"
+                  ]
                 }
+                aria-live="polite"
               >
-                Maximum 250 characters.
+                {250 - message.length}/250 characters left
               </span>
             </div>
           </div>
@@ -2506,9 +2587,9 @@ export default function BookADemo() {
                   ]
                 }
                 checked={consent}
-                onChange={() => {}}
-                tabIndex={-1}
-                aria-readonly="true"
+                onChange={(event) =>
+                  setConsent(event.target.checked)
+                }
                 aria-label="I agree to be contacted for the platform demo and accept the Privacy Policy of Prgeeq Global Solutions Private Limited."
                 required
               />
@@ -2965,7 +3046,7 @@ export default function BookADemo() {
                         false
                       );
 
-                      setConsent(true);
+                      setConsent(false);
                     }}
                   >
                     Close &amp; Accept
@@ -3003,19 +3084,54 @@ function BookDemoModal({
 }: {
   onClose: () => void;
 }) {
+  const [portalRoot, setPortalRoot] =
+    useState<HTMLElement | null>(null);
+
   const dialogRef =
     useRef<HTMLDivElement | null>(
       null
     );
 
+  const onCloseRef = useRef(onClose);
+
+  const scrollPositionRef = useRef({
+    left: 0,
+    top: 0,
+  });
+
+  const previouslyFocusedElementRef =
+    useRef<HTMLElement | null>(null);
+
   useEffect(() => {
+    onCloseRef.current = onClose;
+  }, [onClose]);
+
+  useEffect(() => {
+    setPortalRoot(document.body);
+  }, []);
+
+  useLayoutEffect(() => {
+    if (!portalRoot) {
+      return;
+    }
+
+    scrollPositionRef.current = {
+      left: window.scrollX,
+      top: window.scrollY,
+    };
+
+    previouslyFocusedElementRef.current =
+      document.activeElement instanceof HTMLElement
+        ? document.activeElement
+        : null;
+
     dialogRef.current?.focus();
 
     const handleKeyDown = (
       event: KeyboardEvent
     ) => {
       if (event.key === "Escape") {
-        onClose();
+        onCloseRef.current();
       }
     };
 
@@ -3026,6 +3142,11 @@ function BookDemoModal({
 
     const previousOverflow =
       document.body.style.overflow;
+
+    const hadModalOpenClass =
+      document.body.classList.contains(
+        "modal-open"
+      );
 
     document.body.style.overflow =
       "hidden";
@@ -3043,11 +3164,42 @@ function BookDemoModal({
       document.body.style.overflow =
         previousOverflow;
 
-      document.body.classList.remove(
-        "modal-open"
-      );
+      if (!hadModalOpenClass) {
+        document.body.classList.remove(
+          "modal-open"
+        );
+      }
+
+      const previousScrollBehavior =
+        document.documentElement.style
+          .scrollBehavior;
+
+      document.documentElement.style.scrollBehavior =
+        "auto";
+
+      window.scrollTo({
+        left: scrollPositionRef.current.left,
+        top: scrollPositionRef.current.top,
+        behavior: "auto",
+      });
+
+      document.documentElement.style.scrollBehavior =
+        previousScrollBehavior;
+
+      if (
+        previouslyFocusedElementRef.current
+          ?.isConnected
+      ) {
+        previouslyFocusedElementRef.current.focus({
+          preventScroll: true,
+        });
+      }
     };
-  }, [onClose]);
+  }, [portalRoot]);
+
+  if (!portalRoot) {
+    return null;
+  }
 
   return createPortal(
     <div
@@ -3056,29 +3208,12 @@ function BookDemoModal({
           "book-demo-modal-overlay"
         ]
       }
-      style={{
-        position: "fixed",
-        inset: 0,
-        zIndex: 2147483000,
-        width: "100vw",
-        height: "100dvh",
-        maxWidth: "100vw",
-        maxHeight: "100dvh",
-        overflow: "hidden",
-        overscrollBehavior: "contain",
-      }}
-      onWheel={(event) => {
-        event.stopPropagation();
-      }}
-      onTouchMove={(event) => {
-        event.stopPropagation();
-      }}
       onMouseDown={(event) => {
         if (
           event.target ===
           event.currentTarget
         ) {
-          onClose();
+          onCloseRef.current();
         }
       }}
     >
@@ -3088,15 +3223,6 @@ function BookDemoModal({
             "book-demo-modal-dialog"
           ]
         }
-        style={{
-          position: "absolute",
-          top: "50%",
-          left: "50%",
-          transform: "translate(-50%, -50%)",
-          maxWidth: "calc(100vw - 24px)",
-          maxHeight: "calc(100dvh - 24px)",
-          overflow: "hidden",
-        }}
         role="dialog"
         aria-modal="true"
         aria-label="Book a demo"
@@ -3110,7 +3236,9 @@ function BookDemoModal({
               "book-demo-modal-close"
             ]
           }
-          onClick={onClose}
+          onClick={() =>
+            onCloseRef.current()
+          }
           aria-label="Close book a demo form"
         >
           <CloseIcon
@@ -3128,19 +3256,12 @@ function BookDemoModal({
               "book-demo-modal-scroll"
             ]
           }
-          style={{
-            maxHeight: "calc(100dvh - 48px)",
-            overflowY: "auto",
-            overflowX: "hidden",
-            overscrollBehavior: "contain",
-            WebkitOverflowScrolling: "touch",
-          }}
         >
           <BookADemo />
         </div>
       </div>
     </div>,
-    document.body
+    portalRoot
   );
 }
 
@@ -3158,23 +3279,60 @@ export function BookDemoTrigger({
   const [isOpen, setIsOpen] =
     useState(false);
 
+  const triggerScrollPositionRef =
+    useRef({
+      left: 0,
+      top: 0,
+    });
+
+  const handleClose = () => {
+    const savedScrollPosition =
+      triggerScrollPositionRef.current;
+
+    setIsOpen(false);
+
+    window.requestAnimationFrame(() => {
+      const previousScrollBehavior =
+        document.documentElement.style
+          .scrollBehavior;
+
+      document.documentElement.style.scrollBehavior =
+        "auto";
+
+      window.scrollTo({
+        left: savedScrollPosition.left,
+        top: savedScrollPosition.top,
+        behavior: "auto",
+      });
+
+      document.documentElement.style.scrollBehavior =
+        previousScrollBehavior;
+    });
+  };
+
   return (
     <>
       <button
         type="button"
         className={className}
-        onClick={() =>
-          setIsOpen(true)
-        }
+        onClick={(event) => {
+          event.preventDefault();
+          event.stopPropagation();
+
+          triggerScrollPositionRef.current = {
+            left: window.scrollX,
+            top: window.scrollY,
+          };
+
+          setIsOpen(true);
+        }}
       >
         {children}
       </button>
 
       {isOpen && (
         <BookDemoModal
-          onClose={() =>
-            setIsOpen(false)
-          }
+          onClose={handleClose}
         />
       )}
     </>

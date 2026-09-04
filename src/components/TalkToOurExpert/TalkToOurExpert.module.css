@@ -279,7 +279,7 @@
 .tte-title {
   margin: 0;
 
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", sans-serif;
 
   font-weight: 700;
 
@@ -302,7 +302,7 @@
 
   gap: 8px;
 
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", sans-serif;
 
   font-weight: 700;
 
@@ -420,7 +420,7 @@
 
   padding: 0 2px;
 
-  font-family: "Segoe UI";
+  font-family: "Inter", sans-serif;
 
   font-weight: 600;
 
@@ -533,7 +533,7 @@
 
   background: transparent;
 
-  font-family: "Segoe UI";
+  font-family: "Inter", sans-serif;
 
   font-weight: 400;
 
@@ -576,7 +576,7 @@
 
   padding: 0 2px;
 
-  font-family: "Segoe UI";
+  font-family: "Inter", sans-serif;
 
   font-size: 11px;
 
@@ -636,7 +636,7 @@
 
   cursor: pointer;
 
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", sans-serif;
 
   font-weight: 600;
 
@@ -712,7 +712,7 @@
 
   outline: none;
 
-  font-family: "Segoe UI";
+  font-family: "Inter", sans-serif;
 
   font-size: 14px;
 
@@ -766,7 +766,7 @@
 
   text-align: left;
 
-  font-family: "Segoe UI";
+  font-family: "Inter", sans-serif;
 
   font-size: 14px;
 
@@ -802,7 +802,7 @@
 
   text-align: left;
 
-  font-family: "Segoe UI";
+  font-family: "Inter", sans-serif;
 
   font-size: 16px;
 
@@ -880,7 +880,7 @@
 }
 
 .tte-interest-option-label {
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", sans-serif;
 
   font-size: 14px;
 
@@ -956,7 +956,7 @@
 
   background: transparent;
 
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", sans-serif;
 
   font-size: 16px;
 
@@ -986,7 +986,7 @@
 }
 
 .tte-query-count {
-  font-family: "Segoe UI";
+  font-family: "Inter", sans-serif;
 
   font-size: 9px;
 
@@ -1066,7 +1066,7 @@
 }
 
 .tte-consent-text {
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", sans-serif;
 
   font-size: 11px;
 
@@ -1109,7 +1109,7 @@
     -8px -8px 16px #ffffff,
     8px 8px 16px #c6c6c9;
 
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", sans-serif;
 
   font-weight: 700;
 
@@ -1168,7 +1168,7 @@
 .tte-success-title {
   margin: 0;
 
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", sans-serif;
 
   font-weight: 700;
 
@@ -1180,7 +1180,7 @@
 .tte-success-body {
   margin: 0;
 
-  font-family: "Segoe UI";
+  font-family: "Inter", sans-serif;
 
   font-size: 16px;
 
@@ -1270,7 +1270,7 @@
 }
 
 .talk-to-expert-fab-label {
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", sans-serif;
 
   font-weight: 700;
 
@@ -2063,7 +2063,7 @@
     -6px -6px 10px rgba(255, 255, 255, 0.72),
     6px 6px 12px rgba(166, 174, 178, 0.72);
 
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", sans-serif;
   color: #31344b;
 }
 
@@ -2083,7 +2083,7 @@
 .tte-privacy-title {
   margin: 0;
 
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", sans-serif;
   font-size: 22px;
   line-height: 1.3;
   font-weight: 700;
@@ -2109,7 +2109,7 @@
     inset -4px -4px 8px rgba(255, 255, 255, 0.72),
     inset 4px 4px 8px rgba(196, 196, 196, 0.78);
 
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", sans-serif;
   font-size: 14px;
   line-height: 1.55;
   color: #31344b;
@@ -2197,7 +2197,7 @@
     -5px -5px 9px rgba(255, 255, 255, 0.72),
     5px 5px 9px rgba(198, 198, 201, 0.82);
 
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", sans-serif;
   font-size: 14px;
   line-height: 20px;
   font-weight: 700;
@@ -2304,265 +2304,1187 @@
   }
 }
 
-/* =========================================================
-   FINAL DESKTOP TALK TO OUR EXPERT LAYOUT
-   Applies to the actual modal component — not an image.
-   This block is intentionally last so older desktop/short-
-   desktop rules cannot override it.
-   ========================================================= */
-@media (min-width: 1025px) {
-  .tte-overlay {
-    padding: 12px 20px !important;
-  }
+/* ==========================================================================
+   FINAL — TALK TO OUR EXPERT LAYOUT MATCHES PROVIDED REFERENCE
+   --------------------------------------------------------------------------
+   Layout-only refinement:
+   - Removes the left media panel from this form presentation.
+   - Centers the Talk To Our Expert header pill above the form.
+   - Desktop: 2-column field layout exactly like the supplied reference.
+   - Query, consent, and submit remain full-width rows.
+   - Keeps all existing field content, validation, dropdowns, privacy content,
+     API behavior, labels, placeholders, and form logic unchanged.
+   - Uses the same typography / spacing / neumorphic language as the approved
+     Book a Demo / Contact Us forms.
+   ========================================================================== */
 
+/* ---------- Overall modal/card ---------- */
+.tte-overlay {
+  padding: 14px !important;
+  overflow-x: hidden !important;
+}
+
+.tte-dialog {
+  width: min(860px, calc(100vw - 28px)) !important;
+  max-width: 860px !important;
+  height: auto !important;
+  max-height: calc(100dvh - 28px) !important;
+  margin: auto !important;
+}
+
+.tte-card {
+  width: 100% !important;
+  height: auto !important;
+  min-height: 0 !important;
+
+  display: block !important;
+
+  padding: 20px !important;
+  box-sizing: border-box !important;
+
+  border-radius: 12px !important;
+  background: #dfe6e9 !important;
+  overflow: visible !important;
+}
+
+/* Reference layout does not use the left video/image panel. */
+.tte-photo-panel {
+  display: none !important;
+}
+
+/* ---------- Form panel ---------- */
+.tte-form-panel {
+  width: 100% !important;
+  height: auto !important;
+  min-height: 0 !important;
+
+  padding: 0 !important;
+  margin: 0 !important;
+
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+
+  gap: 22px !important;
+
+  border-radius: 12px !important;
+  background: transparent !important;
+  overflow: visible !important;
+}
+
+/* ---------- Header pill ---------- */
+.tte-header {
+  width: 270px !important;
+  max-width: calc(100% - 48px) !important;
+  min-height: 62px !important;
+
+  margin: 0 auto !important;
+  padding: 9px 18px !important;
+  box-sizing: border-box !important;
+
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+
+  gap: 3px !important;
+
+  border-radius: 32px !important;
+  background: #dfe6e9 !important;
+
+  box-shadow:
+    4px 4px 4px #c4c4c4,
+    -4px -4px 4px #ffffff !important;
+}
+
+.tte-title {
+  margin: 0 !important;
+
+  font-family: "Inter", sans-serif !important;
+  font-size: 17px !important;
+  line-height: 22px !important;
+  font-weight: 700 !important;
+
+  background: linear-gradient(
+    90deg,
+    #2d4cc8 0%,
+    #5a42bd 58%,
+    #b22686 100%
+  ) !important;
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+
+  text-shadow: none !important;
+}
+
+.tte-subtitle {
+  margin: 0 !important;
+  gap: 6px !important;
+
+  font-family: "Inter", sans-serif !important;
+  font-size: 11px !important;
+  line-height: 15px !important;
+  font-weight: 600 !important;
+
+  color: #31344b !important;
+}
+
+.tte-subtitle svg {
+  width: 18px !important;
+  height: 18px !important;
+  flex: 0 0 18px !important;
+}
+
+/* ---------- Inner recessed form card ---------- */
+.tte-form-surface {
+  width: 100% !important;
+  max-width: none !important;
+
+  height: auto !important;
+  min-height: 0 !important;
+  flex: 0 0 auto !important;
+
+  padding: 16px !important;
+  box-sizing: border-box !important;
+
+  border-radius: 9px !important;
+  background: #dfe6e9 !important;
+
+  box-shadow:
+    inset 4px 4px 4px #c4c4c4,
+    inset -4px -4px 4px #ffffff !important;
+
+  overflow: visible !important;
+}
+
+/* ---------- Desktop grid ---------- */
+.tte-form {
+  width: 100% !important;
+  height: auto !important;
+  min-height: 0 !important;
+
+  display: grid !important;
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  column-gap: 16px !important;
+  row-gap: 14px !important;
+
+  align-items: start !important;
+  overflow: visible !important;
+}
+
+/*
+  Current form field order:
+  1 Full Name
+  2 Email
+  3 Phone Number
+  4 Select Your Interest
+  5 Describe Your Query
+*/
+.tte-form > .tte-field:nth-of-type(5) {
+  grid-column: 1 / -1 !important;
+}
+
+/* Consent + validation + submit span the entire form width. */
+.tte-form > .tte-consent,
+.tte-form > .tte-consent + .tte-error,
+.tte-form > .tte-submit {
+  grid-column: 1 / -1 !important;
+}
+
+/* ---------- Labels ---------- */
+.tte-label {
+  width: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+
+  font-family: "Inter", sans-serif !important;
+  font-size: 13px !important;
+  line-height: 18px !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.02em !important;
+
+  color: rgba(49, 52, 75, 0.9) !important;
+}
+
+.tte-field {
+  width: 100% !important;
+  min-width: 0 !important;
+  gap: 6px !important;
+}
+
+/* ---------- Inputs / controls ---------- */
+.tte-input-shell,
+.tte-country-trigger,
+.tte-interest-trigger {
+  height: 42px !important;
+  min-height: 42px !important;
+  max-height: 42px !important;
+
+  border-radius: 8px !important;
+}
+
+.tte-input-shell {
+  gap: 10px !important;
+  padding: 0 10px !important;
+}
+
+.tte-input,
+.tte-interest-value,
+.tte-country-trigger {
+  font-family: "Inter", sans-serif !important;
+  font-size: 13px !important;
+  line-height: 18px !important;
+}
+
+/* Same compact circular icon treatment used in the other forms. */
+.tte-icon-bubble {
+  width: 27px !important;
+  height: 27px !important;
+  min-width: 27px !important;
+  flex: 0 0 27px !important;
+
+  border: 1.5px solid #2d4cc8 !important;
+  border-radius: 50% !important;
+
+  background: #dfe6e9 !important;
+
+  box-shadow:
+    4px 4px 4px #c4c4c4,
+    -4px -4px 4px #ffffff !important;
+}
+
+.tte-icon-bubble svg {
+  width: 15px !important;
+  height: 15px !important;
+}
+
+/* ---------- Phone row ---------- */
+.tte-phone-row {
+  width: 100% !important;
+  gap: 10px !important;
+  align-items: stretch !important;
+}
+
+.tte-country-select {
+  flex: 0 0 96px !important;
+  width: 96px !important;
+  min-width: 96px !important;
+}
+
+.tte-country-trigger {
+  width: 96px !important;
+  padding: 0 9px !important;
+
+  color: #2d4cc8 !important;
+  font-weight: 600 !important;
+}
+
+/* ---------- Query ---------- */
+.tte-textarea-shell {
+  width: 100% !important;
+  height: 52px !important;
+  min-height: 52px !important;
+  max-height: 52px !important;
+
+  padding: 8px 10px !important;
+  box-sizing: border-box !important;
+
+  border-radius: 9px !important;
+
+  box-shadow:
+    inset 4px 4px 4px #c4c4c4,
+    inset -4px -4px 4px #ffffff !important;
+}
+
+.tte-textarea {
+  width: 100% !important;
+  height: 36px !important;
+  min-height: 36px !important;
+  max-height: 36px !important;
+
+  font-family: "Inter", sans-serif !important;
+  font-size: 13px !important;
+  line-height: 18px !important;
+}
+
+/* Counter/metadata typography follows the same form font. */
+.tte-query-meta {
+  height: 14px !important;
+  min-height: 14px !important;
+  margin-top: 2px !important;
+}
+
+.tte-query-count {
+  font-family: "Inter", sans-serif !important;
+  font-size: 11px !important;
+  line-height: 14px !important;
+  font-weight: 600 !important;
+  color: rgba(49, 52, 75, 0.72) !important;
+}
+
+/* ---------- Consent: same checkbox effect as Contact Us ---------- */
+.tte-consent {
+  width: 100% !important;
+  margin: 0 !important;
+  gap: 8px !important;
+  align-items: center !important;
+}
+
+.tte-consent-box {
+  width: 19px !important;
+  height: 19px !important;
+  flex: 0 0 19px !important;
+
+  border-radius: 4px !important;
+  background: #dfe6e9 !important;
+
+  box-shadow:
+    inset -4px -4px 6px #ffffff,
+    inset 4px 4px 2px #c4c4c4 !important;
+}
+
+.tte-consent-checkbox:checked ~ .tte-consent-box {
+  box-shadow:
+    -4px -4px 8px #ffffff,
+    4px 4px 8px #c4c4c4 !important;
+}
+
+.tte-consent-text {
+  font-family: "Inter", sans-serif !important;
+  font-size: 11px !important;
+  line-height: 17px !important;
+}
+
+/* ---------- Submit ---------- */
+.tte-submit {
+  width: 164px !important;
+  height: 38px !important;
+  min-height: 38px !important;
+
+  justify-self: center !important;
+  margin: 0 auto !important;
+
+  border-radius: 22px !important;
+
+  font-family: "Inter", sans-serif !important;
+  font-size: 13px !important;
+  line-height: 18px !important;
+  font-weight: 700 !important;
+
+  box-shadow:
+    4px 4px 4px #c4c4c4,
+    -4px -4px 4px #ffffff !important;
+}
+
+/* ---------- Close button: keep existing behavior but compact ---------- */
+.tte-close {
+  top: 8px !important;
+  right: 8px !important;
+  width: 32px !important;
+  height: 32px !important;
+
+  box-shadow:
+    4px 4px 4px #c4c4c4,
+    -4px -4px 4px #ffffff !important;
+}
+
+/* ==========================================================================
+   TABLET
+   ========================================================================== */
+@media (min-width: 641px) and (max-width: 768px) {
   .tte-dialog {
-    width: min(1360px, calc(100vw - 40px)) !important;
-    max-width: 1360px !important;
-    height: min(760px, calc(100dvh - 24px)) !important;
-    max-height: calc(100dvh - 24px) !important;
-    margin: 0 auto !important;
-    overflow: visible !important;
+    width: min(720px, calc(100vw - 24px)) !important;
   }
 
-  /* One single large panel around BOTH the photo and form */
   .tte-card {
-    width: 100% !important;
-    height: 100% !important;
-    padding: 22px 28px !important;
-    display: grid !important;
-    grid-template-columns: 500px minmax(0, 1fr) !important;
-    align-items: center !important;
-    column-gap: 28px !important;
-    background: #dfe6e9 !important;
-    border-radius: 26px !important;
-    box-shadow:
-      inset -8px -8px 16px rgba(255,255,255,.92),
-      inset 8px 8px 16px rgba(196,196,196,.78) !important;
-    overflow: hidden !important;
-  }
-
-  .tte-photo-panel {
-    position: relative !important;
-    width: 500px !important;
-    height: 560px !important;
-    flex: none !important;
-    margin: 0 !important;
-    align-self: center !important;
-    justify-self: center !important;
-    z-index: 3 !important;
-  }
-
-  .tte-photo-frame {
-    width: 500px !important;
-    height: 560px !important;
-    border-radius: 30px !important;
-  }
-
-  .tte-photo-inner {
-    width: 438px !important;
-    height: 500px !important;
-    border-radius: 28px !important;
-  }
-
-  .tte-photo {
-    width: 100% !important;
-    height: 100% !important;
-    object-fit: cover !important;
-    object-position: center top !important;
+    padding: 14px !important;
   }
 
   .tte-form-panel {
-    position: relative !important;
-    width: 100% !important;
-    height: 100% !important;
-    min-height: 0 !important;
-    max-height: none !important;
-    padding: 20px 34px 20px 18px !important;
-    display: flex !important;
-    flex-direction: column !important;
-    align-items: center !important;
-    justify-content: flex-start !important;
-    gap: 14px !important;
-    background: transparent !important;
-    border-radius: 0 !important;
-    overflow: visible !important;
-  }
-
-  .tte-header {
-    width: 100% !important;
-    margin: 0 0 6px !important;
-    gap: 5px !important;
-  }
-
-  .tte-title {
-    font-size: 28px !important;
-    line-height: 34px !important;
-  }
-
-  .tte-subtitle {
-    font-size: 16px !important;
-    line-height: 22px !important;
-    gap: 10px !important;
+    gap: 16px !important;
   }
 
   .tte-form-surface {
-    width: 100% !important;
-    max-width: none !important;
-    height: auto !important;
-    min-height: 0 !important;
-    max-height: none !important;
-    flex: 1 1 auto !important;
-    padding: 18px 18px 16px !important;
-    border-radius: 10px !important;
-    overflow: visible !important;
+    padding: 14px !important;
   }
 
   .tte-form {
-    width: 100% !important;
-    height: 100% !important;
-    min-height: 0 !important;
-    padding: 0 !important;
-    padding-bottom: 0 !important;
-    gap: 13px !important;
-    overflow: visible !important;
-  }
-
-  .tte-field {
-    gap: 5px !important;
+    column-gap: 12px !important;
+    row-gap: 12px !important;
   }
 
   .tte-label {
-    font-size: 14px !important;
+    font-size: 12px !important;
+    line-height: 17px !important;
+  }
+
+  .tte-input-shell,
+  .tte-country-trigger,
+  .tte-interest-trigger {
+    height: 40px !important;
+    min-height: 40px !important;
+    max-height: 40px !important;
+  }
+}
+
+/* ==========================================================================
+   MOBILE
+   ========================================================================== */
+@media (max-width: 640px) {
+  .tte-overlay {
+    padding: 8px !important;
+  }
+
+  .tte-dialog {
+    width: calc(100vw - 16px) !important;
+    max-width: calc(100vw - 16px) !important;
+  }
+
+  .tte-card {
+    padding: 10px !important;
+  }
+
+  .tte-form-panel {
+    gap: 14px !important;
+  }
+
+  .tte-header {
+    width: 245px !important;
+    min-height: 58px !important;
+  }
+
+  .tte-form-surface {
+    padding: 11px !important;
+  }
+
+  .tte-form {
+    grid-template-columns: minmax(0, 1fr) !important;
+    gap: 12px !important;
+  }
+
+  .tte-form > .tte-field,
+  .tte-form > .tte-field:nth-of-type(5),
+  .tte-form > .tte-consent,
+  .tte-form > .tte-consent + .tte-error,
+  .tte-form > .tte-submit {
+    grid-column: 1 !important;
+  }
+
+  .tte-label {
+    font-size: 12px !important;
+    line-height: 17px !important;
+  }
+
+  .tte-input-shell,
+  .tte-country-trigger,
+  .tte-interest-trigger {
+    height: 42px !important;
+    min-height: 42px !important;
+    max-height: 42px !important;
+  }
+
+  .tte-phone-row {
+    gap: 8px !important;
+  }
+
+  .tte-country-select {
+    flex-basis: 92px !important;
+    width: 92px !important;
+    min-width: 92px !important;
+  }
+
+  .tte-country-trigger {
+    width: 92px !important;
+  }
+
+  .tte-submit {
+    width: min(190px, 100%) !important;
+  }
+
+  .tte-close {
+    top: 5px !important;
+    right: 5px !important;
+  }
+}
+
+/* ==========================================================================
+   FINAL — TALK TO OUR EXPERT MATCHES APPROVED BOOK A DEMO CONTROLS
+   --------------------------------------------------------------------------
+   Requested changes only:
+   1. Country dropdown list shows short ISO + dial code only: IN (+91), US (+1).
+      Full country names are still searchable because TSX filtering is retained.
+   2. Form labels/inputs/dropdowns use the same Inter typography as Book a Demo.
+   3. Standard input/control height matches Book a Demo.
+   4. "Describe your query or question in detail" gets a Message-style counter
+      ABOVE the textarea at the top-right.
+   5. Checkbox starts unchecked and uses the same Book a Demo neumorphic effect.
+   No content, validation logic, interest options, API behavior, privacy content,
+   submit behavior, or other layout is changed.
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   FORM TYPOGRAPHY — SAME AS BOOK A DEMO
+   -------------------------------------------------------------------------- */
+.tte-label {
+  font-family: "Inter", sans-serif !important;
+  font-size: 14px !important;
+  line-height: 20px !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.02em !important;
+  color: rgba(49, 52, 75, 0.9) !important;
+}
+
+.tte-input,
+.tte-interest-value,
+.tte-country-trigger,
+.tte-country-search,
+.tte-country-option,
+.tte-interest-option-label,
+.tte-textarea,
+.tte-consent-text {
+  font-family: "Inter", sans-serif !important;
+}
+
+.tte-input,
+.tte-interest-value,
+.tte-country-trigger,
+.tte-textarea {
+  font-size: 14px !important;
+  line-height: 20px !important;
+}
+
+/* --------------------------------------------------------------------------
+   INPUT / CONTROL HEIGHT — SAME AS BOOK A DEMO DESKTOP
+   -------------------------------------------------------------------------- */
+.tte-input-shell,
+.tte-country-trigger,
+.tte-interest-trigger {
+  height: 48px !important;
+  min-height: 48px !important;
+  max-height: 48px !important;
+  box-sizing: border-box !important;
+}
+
+.tte-input-shell {
+  gap: 11px !important;
+  padding: 0 11px !important;
+}
+
+/* Compact Book a Demo icon treatment. */
+.tte-icon-bubble {
+  width: 27px !important;
+  height: 27px !important;
+  min-width: 27px !important;
+  min-height: 27px !important;
+  flex: 0 0 27px !important;
+
+  border: 1.5px solid #2d4cc8 !important;
+  border-radius: 50% !important;
+  background: #dfe6e9 !important;
+
+  box-shadow:
+    4px 4px 4px #c4c4c4,
+    -4px -4px 4px #ffffff !important;
+}
+
+.tte-icon-bubble svg {
+  width: 15px !important;
+  height: 15px !important;
+}
+
+/* --------------------------------------------------------------------------
+   COUNTRY CODE — BOOK A DEMO SHORT FORMAT + DROPDOWN
+   -------------------------------------------------------------------------- */
+.tte-country-select {
+  flex: 0 0 122px !important;
+  width: 122px !important;
+  min-width: 122px !important;
+}
+
+.tte-country-trigger {
+  width: 122px !important;
+  padding: 0 28px 0 11px !important;
+  justify-content: space-between !important;
+  font-weight: 600 !important;
+  color: #2f3547 !important;
+  white-space: nowrap !important;
+}
+
+.tte-country-code {
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+  white-space: nowrap !important;
+}
+
+.tte-country-panel {
+  top: calc(100% + 6px) !important;
+  left: 0 !important;
+  right: auto !important;
+
+  width: max-content !important;
+  min-width: 100% !important;
+  max-width: min(260px, calc(100vw - 20px)) !important;
+  max-height: 220px !important;
+
+  padding: 7px !important;
+  box-sizing: border-box !important;
+
+  border-radius: 10px !important;
+  background: #dfe6e9 !important;
+
+  box-shadow:
+    7px 7px 14px #c4c4c4,
+    -7px -7px 14px #ffffff !important;
+
+  overflow: hidden !important;
+}
+
+.tte-country-search {
+  width: 100% !important;
+  height: 36px !important;
+  min-height: 36px !important;
+
+  margin: 0 0 7px !important;
+  padding: 0 10px !important;
+
+  border: 0 !important;
+  border-radius: 7px !important;
+
+  background: #dfe6e9 !important;
+  box-shadow:
+    inset -3px -3px 6px #ffffff,
+    inset 3px 3px 6px rgba(196, 196, 196, 0.8) !important;
+
+  font-size: 14px !important;
+  line-height: 20px !important;
+}
+
+.tte-country-list {
+  max-height: 170px !important;
+  overflow-y: auto !important;
+  overflow-x: hidden !important;
+}
+
+.tte-country-option {
+  width: 100% !important;
+  min-height: 32px !important;
+  padding: 6px 9px !important;
+
+  display: flex !important;
+  align-items: center !important;
+  justify-content: flex-start !important;
+
+  border: 0 !important;
+  border-radius: 7px !important;
+
+  background: transparent !important;
+  color: #2f3547 !important;
+
+  font-size: 14px !important;
+  line-height: 18px !important;
+  font-weight: 500 !important;
+
+  white-space: nowrap !important;
+  text-align: left !important;
+}
+
+.tte-country-option:hover,
+.tte-country-option:focus-visible {
+  background: #dfe6e9 !important;
+  box-shadow:
+    2px 2px 5px #c4c4c4,
+    -2px -2px 5px #ffffff !important;
+  outline: none !important;
+}
+
+.tte-country-option-active {
+  color: #2d4cc8 !important;
+  font-weight: 600 !important;
+  box-shadow:
+    inset 2px 2px 5px rgba(196, 196, 196, 0.65),
+    inset -2px -2px 5px rgba(255, 255, 255, 0.75) !important;
+}
+
+.tte-country-short-label {
+  display: block !important;
+  width: 100% !important;
+  white-space: nowrap !important;
+}
+
+/* --------------------------------------------------------------------------
+   QUERY — SAME STRUCTURE AS BOOK A DEMO MESSAGE + COUNTER
+   -------------------------------------------------------------------------- */
+.tte-query-header {
+  width: 100% !important;
+  min-width: 0 !important;
+
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+
+  gap: 12px !important;
+  padding: 0 8px 0 0 !important;
+  margin: 0 !important;
+
+  box-sizing: border-box !important;
+}
+
+.tte-query-header .tte-label {
+  width: auto !important;
+  min-width: 0 !important;
+  max-width: none !important;
+  flex: 0 1 auto !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.tte-query-count {
+  width: auto !important;
+  min-width: max-content !important;
+  max-width: none !important;
+
+  flex: 0 0 auto !important;
+
+  margin: 0 !important;
+  padding: 0 !important;
+
+  font-family: "Inter", sans-serif !important;
+  font-size: 12px !important;
+  line-height: 16px !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.01em !important;
+
+  color: rgba(49, 52, 75, 0.78) !important;
+
+  white-space: nowrap !important;
+  text-align: right !important;
+  overflow: visible !important;
+  text-overflow: clip !important;
+}
+
+.tte-textarea-shell {
+  width: 100% !important;
+  height: 64px !important;
+  min-height: 64px !important;
+  max-height: 64px !important;
+
+  margin: 0 !important;
+  padding: 9px 11px !important;
+
+  border-radius: 11px !important;
+  background: #dfe6e9 !important;
+
+  box-shadow:
+    inset 4px 4px 4px #c4c4c4,
+    inset -4px -4px 4px #ffffff !important;
+}
+
+.tte-textarea {
+  width: 100% !important;
+  height: 46px !important;
+  min-height: 46px !important;
+  max-height: 46px !important;
+
+  padding: 0 !important;
+  resize: none !important;
+
+  font-family: "Inter", sans-serif !important;
+  font-size: 14px !important;
+  line-height: 20px !important;
+}
+
+/* Query meta remains only for validation text after the counter is moved. */
+.tte-query-meta {
+  width: 100% !important;
+  height: auto !important;
+  min-height: 0 !important;
+  margin: 0 !important;
+}
+
+/* --------------------------------------------------------------------------
+   CHECKBOX — SAME DEFAULT + CHECKED EFFECT AS BOOK A DEMO
+   -------------------------------------------------------------------------- */
+.tte-consent-checkbox {
+  width: 19px !important;
+  height: 19px !important;
+  margin: 0 !important;
+}
+
+.tte-consent-box {
+  width: 19px !important;
+  height: 19px !important;
+  min-width: 19px !important;
+  flex: 0 0 19px !important;
+
+  border-radius: 4px !important;
+  background: #dfe6e9 !important;
+
+  box-shadow:
+    inset -4px -4px 6px #ffffff,
+    inset 4px 4px 2px #c4c4c4 !important;
+}
+
+/* Checked = raised, same as Book a Demo / Contact Us. */
+.tte-consent-checkbox:checked ~ .tte-consent-box {
+  background: #dfe6e9 !important;
+  box-shadow:
+    -4px -4px 8px #ffffff,
+    4px 4px 8px #c4c4c4 !important;
+}
+
+/* Keep existing tick, but center it correctly in the 19px box. */
+.tte-consent-checkbox:checked ~ .tte-consent-box::after {
+  width: 5px !important;
+  height: 9px !important;
+  left: 6px !important;
+  top: 3px !important;
+  border-color: #2d4cc8 !important;
+}
+
+/* --------------------------------------------------------------------------
+   TABLET — SAME BOOK A DEMO RESPONSIVE CONTROL HEIGHT
+   -------------------------------------------------------------------------- */
+@media (min-width: 641px) and (max-width: 768px) {
+  .tte-label {
+    font-size: 13px !important;
     line-height: 18px !important;
   }
 
   .tte-input-shell,
+  .tte-country-trigger,
+  .tte-interest-trigger {
+    height: 46px !important;
+    min-height: 46px !important;
+    max-height: 46px !important;
+  }
+
+  .tte-input,
+  .tte-interest-value,
+  .tte-country-trigger,
+  .tte-textarea {
+    font-size: 14px !important;
+    line-height: 20px !important;
+  }
+
+  .tte-query-count {
+    font-size: 11px !important;
+    line-height: 15px !important;
+    font-weight: 600 !important;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   MOBILE — SAME BOOK A DEMO RESPONSIVE CONTROL HEIGHT
+   -------------------------------------------------------------------------- */
+@media (max-width: 640px) {
+  .tte-label {
+    font-size: 13px !important;
+    line-height: 18px !important;
+  }
+
+  .tte-input-shell,
+  .tte-country-trigger,
+  .tte-interest-trigger {
+    height: 46px !important;
+    min-height: 46px !important;
+    max-height: 46px !important;
+  }
+
+  .tte-input,
+  .tte-interest-value,
+  .tte-country-trigger,
+  .tte-textarea {
+    font-size: 14px !important;
+    line-height: 20px !important;
+  }
+
+  .tte-country-select {
+    flex-basis: 112px !important;
+    width: 112px !important;
+    min-width: 112px !important;
+  }
+
   .tte-country-trigger {
-    height: 45px !important;
-    min-height: 45px !important;
+    width: 112px !important;
   }
 
-  .tte-input-shell {
-    padding: 0 12px !important;
+  .tte-query-header {
+    gap: 8px !important;
+    padding-right: 6px !important;
   }
 
-  .tte-phone-row {
-    gap: 14px !important;
+  .tte-query-count {
+    font-size: 10px !important;
+    line-height: 14px !important;
+    font-weight: 600 !important;
   }
 
   .tte-textarea-shell {
-    height: 105px !important;
-    min-height: 105px !important;
-    max-height: 105px !important;
-    padding: 10px 26px 8px 12px !important;
+    height: 64px !important;
+    min-height: 64px !important;
+    max-height: 64px !important;
   }
 
   .tte-textarea {
-    height: 79px !important;
-    min-height: 79px !important;
-    max-height: 79px !important;
-  }
-
-  .tte-consent {
-    margin-top: 0 !important;
-    align-items: center !important;
-  }
-
-  .tte-consent-text {
-    font-size: 11px !important;
-    line-height: 17px !important;
-  }
-
-  .tte-submit {
-    height: 48px !important;
-    min-height: 48px !important;
-    margin-top: auto !important;
-    margin-bottom: 0 !important;
-    border-radius: 32px !important;
-    font-size: 16px !important;
-  }
-
-  .tte-close {
-    top: 18px !important;
-    right: 18px !important;
+    height: 46px !important;
+    min-height: 46px !important;
+    max-height: 46px !important;
   }
 }
 
-/* =========================================================
-   FINAL SUBMIT BUTTON VISIBILITY FIX
-   Keeps the Submit Query button visible without changing
-   the existing font or visual design.
-   ========================================================= */
+/* ==========================================================================
+   FINAL — ICON COLOR / COUNTRY SEARCH / MANUAL CHECKBOX FIXES ONLY
+   --------------------------------------------------------------------------
+   1. Field icons match Contact Us blue.
+   2. Country search remains fully interactive and searchable.
+   3. Checkbox is directly clickable and shows a reliable tick.
+   No other layout, field height, spacing, fonts, counter, dropdown,
+   validation, submit behavior or responsive rules are changed.
+   ========================================================================== */
 
-.tte-form-panel {
-  overflow-y: auto !important;
-  overflow-x: visible !important;
+/* --- Field icons: same blue treatment as Contact Us --- */
+.tte-icon-bubble {
+  border: 1.5px solid #2d4cc8 !important;
+  background: #dfe6e9 !important;
+  box-shadow:
+    4px 4px 4px #c4c4c4,
+    -4px -4px 4px #ffffff !important;
 }
 
-.tte-form-surface {
-  height: auto !important;
-  min-height: 0 !important;
-  max-height: none !important;
-  flex: 0 0 auto !important;
-  overflow: visible !important;
+.tte-icon-bubble svg,
+.tte-icon-bubble svg path,
+.tte-icon-bubble svg circle,
+.tte-icon-bubble svg line,
+.tte-icon-bubble svg polyline {
+  stroke: #2d4cc8 !important;
 }
 
-.tte-form {
-  height: auto !important;
-  min-height: 0 !important;
-  overflow: visible !important;
-  padding-bottom: 14px !important;
+/* --- Country search: keep input/list fully interactive --- */
+.tte-country-panel {
+  pointer-events: auto !important;
 }
 
-.tte-submit {
-  display: flex !important;
+.tte-country-search {
+  position: relative !important;
+  z-index: 3 !important;
+  pointer-events: auto !important;
+}
+
+.tte-country-list {
+  position: relative !important;
+  z-index: 2 !important;
+  pointer-events: auto !important;
+}
+
+.tte-country-option {
+  pointer-events: auto !important;
+}
+
+/* --- Checkbox: same Contact Us effect + direct click target --- */
+.tte-consent {
+  position: relative !important;
+}
+
+.tte-consent-checkbox {
+  position: absolute !important;
+  left: 0 !important;
+  top: 0 !important;
+
+  width: 19px !important;
+  height: 19px !important;
+
+  margin: 0 !important;
+  opacity: 0 !important;
+
+  cursor: pointer !important;
+  z-index: 4 !important;
+}
+
+.tte-consent-box {
+  position: relative !important;
+
+  width: 19px !important;
+  height: 19px !important;
+  min-width: 19px !important;
+  flex: 0 0 19px !important;
+
+  display: inline-flex !important;
   align-items: center !important;
   justify-content: center !important;
-  visibility: visible !important;
-  opacity: 1;
-  flex: 0 0 40px !important;
-  min-height: 40px !important;
-  margin-top: 2px !important;
-  margin-bottom: 10px !important;
+
+  border-radius: 4px !important;
+  background: #dfe6e9 !important;
+
+  box-shadow:
+    inset -4px -4px 6px #ffffff,
+    inset 4px 4px 2px #c4c4c4 !important;
+
+  pointer-events: none !important;
 }
 
-/* Keep disabled styling while still showing the button */
-.tte-submit:disabled {
+/* Remove older pseudo-element tick to prevent double ticks. */
+.tte-consent-checkbox:checked ~ .tte-consent-box::after {
+  content: none !important;
+  display: none !important;
+}
+
+/* Checked state = raised, same as Contact Us. */
+.tte-consent-checkbox:checked ~ .tte-consent-box {
+  background: #dfe6e9 !important;
+  box-shadow:
+    -4px -4px 8px #ffffff,
+    4px 4px 8px #c4c4c4 !important;
+}
+
+.tte-consent-check {
+  width: 12px !important;
+  height: 12px !important;
+  display: block !important;
+  pointer-events: none !important;
+}
+
+/* Privacy link remains independently clickable. */
+.tte-consent-link {
+  position: relative !important;
+  z-index: 5 !important;
+}
+
+/* ==========================================================================
+   FINAL — TALK TO OUR EXPERT HEADER PILL ONLY
+   --------------------------------------------------------------------------
+   Requested change only:
+   - Headset icon appears at the left inside the header pill.
+   - Title/subtitle remain the same content.
+   - Header pill uses the recessed / inner neumorphic shadow shown in reference.
+   - No form fields, spacing, search, checkbox, validation, counter, API,
+     dropdown or responsive form behavior is changed.
+   ========================================================================== */
+
+.tte-header {
+  width: 280px !important;
+  max-width: calc(100% - 44px) !important;
+  min-height: 64px !important;
+
+  margin: 0 auto !important;
+  padding: 9px 16px !important;
+
   display: flex !important;
-  visibility: visible !important;
-  opacity: 0.5 !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  justify-content: center !important;
+
+  gap: 12px !important;
+
+  border-radius: 32px !important;
+  background: #dfe6e9 !important;
+
+  box-shadow:
+    inset 4px 4px 4px #c4c4c4,
+    inset -4px -4px 4px #ffffff !important;
+
+  box-sizing: border-box !important;
+  text-align: left !important;
 }
 
-/* Desktop */
-@media (min-width: 1025px) {
-  .tte-form-panel {
-    overflow-y: auto !important;
-  }
+.tte-header-icon {
+  width: 30px !important;
+  height: 30px !important;
+  min-width: 30px !important;
+  flex: 0 0 30px !important;
 
-  .tte-form {
-    padding-bottom: 16px !important;
-  }
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
 
-  .tte-submit {
-    flex: 0 0 40px !important;
-    height: 40px !important;
-    min-height: 40px !important;
-    margin-bottom: 12px !important;
-  }
+  margin: 0 !important;
+  padding: 0 !important;
 }
 
-/* Tablet / Mobile */
-@media (max-width: 1024px) {
-  .tte-form-panel {
-    max-height: calc(100dvh - 24px) !important;
-    overflow-y: auto !important;
+.tte-header-icon svg {
+  width: 24px !important;
+  height: 24px !important;
+  display: block !important;
+}
+
+.tte-header-copy {
+  min-width: 0 !important;
+
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: flex-start !important;
+  justify-content: center !important;
+
+  gap: 3px !important;
+}
+
+.tte-title {
+  margin: 0 !important;
+
+  font-family: "Inter", sans-serif !important;
+  font-size: 17px !important;
+  line-height: 22px !important;
+  font-weight: 700 !important;
+
+  background: linear-gradient(
+    90deg,
+    #2d4cc8 0%,
+    #5a42bd 58%,
+    #b22686 100%
+  ) !important;
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+
+  text-shadow: none !important;
+  white-space: nowrap !important;
+}
+
+.tte-subtitle {
+  margin: 0 !important;
+  padding: 0 !important;
+
+  display: block !important;
+
+  font-family: "Inter", sans-serif !important;
+  font-size: 11px !important;
+  line-height: 15px !important;
+  font-weight: 600 !important;
+
+  color: #31344b !important;
+  white-space: nowrap !important;
+  text-align: left !important;
+}
+
+/* Keep the same header proportion on tablet/mobile without changing form layout. */
+@media (max-width: 640px) {
+  .tte-header {
+    width: 260px !important;
+    min-height: 60px !important;
+    padding: 8px 14px !important;
+    gap: 10px !important;
   }
 
-  .tte-submit {
-    flex: 0 0 36px !important;
-    height: 36px !important;
-    min-height: 36px !important;
-    margin-bottom: 8px !important;
+  .tte-header-icon {
+    width: 28px !important;
+    height: 28px !important;
+    min-width: 28px !important;
+    flex-basis: 28px !important;
+  }
+
+  .tte-header-icon svg {
+    width: 22px !important;
+    height: 22px !important;
+  }
+
+  .tte-title {
+    font-size: 16px !important;
+    line-height: 21px !important;
+  }
+
+  .tte-subtitle {
+    font-size: 10px !important;
+    line-height: 14px !important;
   }
 }
 

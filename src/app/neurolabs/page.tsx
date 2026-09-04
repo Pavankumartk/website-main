@@ -6,7 +6,6 @@ import { useRouter } from "next/navigation";
 import Header from "../../components/Header/header";
 import Footer from "../../components/Footer/footer";
 import "./codingLabs.css";
-import { BookDemoTrigger } from "../../components/Bookademo/Bookademo";
 
 const practiceItems = [
   { label: "Write & Test Code", color: "#BF1869" },
@@ -321,12 +320,6 @@ export default function CodingLabsPage() {
             </p>
 
             <div className="coding-cta__actions">
-              <BookDemoTrigger>
-              <button type="button" disabled>
-                Book a Demo
-              </button>
-              </BookDemoTrigger>
-
               <button
                 type="button"
                 className={activeCta === "started" ? "is-selected" : ""}

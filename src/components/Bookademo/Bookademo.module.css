@@ -650,157 +650,21 @@
   }
 }
 
-@media (max-width: 1024px) {
-  .book-demo-card {
-    padding: 32px 20px;
-  }
-}
 
-@media (max-width: 768px) {
-  .book-demo-section {
-    padding: 24px 12px;
-  }
+/* Removed conflicting responsive block: @media (max-width: 1024px) */
 
-  .book-demo-card {
-    padding: 24px 16px;
-    gap: 24px;
-    border-radius: 20px;
-  }
 
-  .book-demo-title {
-    font-size: 24px;
-    line-height: 32px;
-  }
 
-  .book-demo-subtitle {
-    font-size: 18px;
-    line-height: 26px;
-  }
+/* Removed conflicting responsive block: @media (max-width: 768px) */
 
-  .book-demo-subtitle-icon {
-    width: 24px;
-    height: 24px;
-  }
 
-  .book-demo-form {
-    padding: 20px 16px;
-    gap: 24px;
-  }
 
-  .book-demo-phone-row {
-    flex-direction: column;
-    align-items: stretch;
-    gap: 12px;
-  }
+/* Removed conflicting responsive block: @media (max-width: 480px) */
 
-  .book-demo-country-wrap {
-    flex: none;
-    width: 100%;
-  }
 
-  .book-demo-datetime-row {
-    flex-direction: column;
-    align-items: stretch;
-    gap: 12px;
-  }
 
-  .book-demo-submit {
-    max-width: 100%;
-    font-size: 16px;
-    line-height: 24px;
-    height: 54px;
-  }
+/* Removed conflicting responsive block: @media (max-width: 375px) */
 
-  .book-demo-modal-close {
-    top: -12px;
-    right: -4px;
-    width: 40px;
-    height: 40px;
-  }
-}
-
-@media (max-width: 480px) {
-  .book-demo-card {
-    padding: 20px 14px;
-    border-radius: 16px;
-  }
-
-  .book-demo-header {
-    max-width: 100%;
-  }
-
-  .book-demo-title {
-    font-size: 22px;
-  }
-
-  .book-demo-input-wrap,
-  .book-demo-country-wrap {
-    height: 50px;
-    gap: 12px;
-    padding: 0 12px;
-  }
-
-  .book-demo-input-icon {
-    width: 28px;
-    height: 28px;
-  }
-
-  .book-demo-input-icon svg {
-    width: 16px;
-    height: 16px;
-  }
-
-  .book-demo-input,
-  .book-demo-select-field {
-    font-size: 15px;
-  }
-
-  .book-demo-consent-text {
-    font-size: 13px;
-    line-height: 20px;
-  }
-
-  .book-demo-calendar-panel {
-    min-width: 0;
-    padding: 12px;
-  }
-
-  .book-demo-calendar-day {
-    font-size: 12px;
-  }
-}
-
-@media (max-width: 375px) {
-  .book-demo-card {
-    padding: 16px 12px;
-  }
-
-  .book-demo-form {
-    padding: 16px 12px;
-    gap: 20px;
-  }
-
-  .book-demo-title {
-    font-size: 20px;
-  }
-
-  .book-demo-subtitle {
-    font-size: 16px;
-    gap: 8px;
-  }
-
-  .book-demo-consent-row {
-    gap: 10px;
-  }
-
-  .book-demo-calendar-controls {
-    gap: 6px;
-  }
-
-  .book-demo-calendar-select {
-    font-size: 13px;
-  }
-}
 
 /* ==========================================================================
    BOOK A DEMO MODAL — COMPACT, RESPONSIVE, CONTENT-DRIVEN
@@ -1157,203 +1021,17 @@
    Responsive
    -------------------------------------------------------------------------- */
 
-@media (max-width: 768px) {
-  .book-demo-modal-overlay {
-    align-items: flex-start;
-    padding: 8px;
-  }
 
-  .book-demo-modal-dialog {
-    width: min(100%, 620px);
-    max-width: 620px;
-  }
+/* Removed conflicting responsive block: @media (max-width: 768px) */
 
-  .book-demo-modal-dialog .book-demo-card {
-    padding: 11px 10px 9px;
-    gap: 6px;
-  }
 
-  .book-demo-modal-dialog .book-demo-form {
-    padding: 8px 9px;
-    gap: 6px;
-  }
 
-  .book-demo-modal-dialog .book-demo-title {
-    font-size: 21px;
-    line-height: 24px;
-  }
+/* Removed conflicting responsive block: @media (max-width: 480px) */
 
-  .book-demo-modal-dialog .book-demo-input-wrap,
-  .book-demo-modal-dialog .book-demo-country-wrap,
-  .book-demo-modal-dialog .book-demo-date-trigger {
-    height: 34px;
-    min-height: 34px;
-    max-height: 34px;
-    flex-basis: 34px;
-  }
 
-  .book-demo-modal-dialog .book-demo-textarea-wrap {
-    height: 52px;
-    min-height: 52px;
-  }
 
-  .book-demo-modal-dialog .book-demo-textarea {
-    height: 36px;
-    min-height: 36px;
-    max-height: 36px;
-  }
+/* Removed conflicting responsive block: @media (max-height: 700px) and (min-width: 769px) */
 
-  .book-demo-modal-dialog .book-demo-submit {
-    height: 34px;
-    min-height: 34px;
-    max-height: 34px;
-    flex-basis: 34px;
-  }
-
-  .book-demo-modal-close {
-    width: 30px;
-    height: 30px;
-  }
-}
-
-@media (max-width: 480px) {
-  .book-demo-modal-overlay {
-    padding: 12px 8px;
-  }
-
-  .book-demo-modal-dialog {
-    width: 100%;
-    max-width: none;
-  }
-
-  .book-demo-modal-dialog .book-demo-card {
-    padding: 9px 8px 8px;
-    gap: 5px;
-    border-radius: 10px;
-  }
-
-  .book-demo-modal-dialog .book-demo-form {
-    padding: 7px 8px;
-    gap: 5px;
-    border-radius: 8px;
-  }
-
-  .book-demo-modal-dialog .book-demo-title {
-    font-size: 19px;
-    line-height: 22px;
-  }
-
-  .book-demo-modal-dialog .book-demo-label {
-    font-size: 10px;
-    line-height: 13px;
-  }
-
-  .book-demo-modal-dialog .book-demo-error {
-    font-size: 9px;
-    line-height: 11px;
-  }
-
-  .book-demo-modal-dialog .book-demo-input-wrap,
-  .book-demo-modal-dialog .book-demo-country-wrap,
-  .book-demo-modal-dialog .book-demo-date-trigger {
-    height: 32px;
-    min-height: 32px;
-    max-height: 32px;
-    flex-basis: 32px;
-  }
-
-  .book-demo-modal-dialog .book-demo-input,
-  .book-demo-modal-dialog .book-demo-select-field,
-  .book-demo-modal-dialog .book-demo-date-display {
-    font-size: 11px;
-    line-height: 15px;
-  }
-
-  .book-demo-modal-dialog .book-demo-textarea-wrap {
-    height: 48px;
-    min-height: 48px;
-  }
-
-  .book-demo-modal-dialog .book-demo-textarea {
-    height: 32px;
-    min-height: 32px;
-    max-height: 32px;
-    font-size: 11px;
-    line-height: 15px;
-  }
-
-  .book-demo-modal-dialog .book-demo-consent-text {
-    font-size: 9px;
-    line-height: 12px;
-  }
-
-  .book-demo-modal-dialog .book-demo-submit {
-    height: 32px;
-    min-height: 32px;
-    max-height: 32px;
-    flex-basis: 32px;
-    font-size: 13px;
-  }
-
-  .book-demo-modal-close {
-    top: 4px;
-    right: 4px;
-    width: 28px;
-    height: 28px;
-  }
-
-  .book-demo-modal-close-icon {
-    width: 17px;
-    height: 17px;
-  }
-}
-
-@media (max-height: 700px) and (min-width: 769px) {
-  .book-demo-modal-overlay {
-    padding: 5px 8px;
-  }
-
-  .book-demo-modal-dialog {
-    width: min(680px, calc(100vw - 16px));
-  }
-
-  .book-demo-modal-dialog .book-demo-card {
-    padding: 9px 11px 8px;
-    gap: 5px;
-  }
-
-  .book-demo-modal-dialog .book-demo-form {
-    padding: 7px 9px;
-    gap: 5px;
-  }
-
-  .book-demo-modal-dialog .book-demo-input-wrap,
-  .book-demo-modal-dialog .book-demo-country-wrap,
-  .book-demo-modal-dialog .book-demo-date-trigger {
-    height: 34px;
-    min-height: 34px;
-    max-height: 34px;
-    flex-basis: 34px;
-  }
-
-  .book-demo-modal-dialog .book-demo-textarea-wrap {
-    height: 50px;
-    min-height: 50px;
-  }
-
-  .book-demo-modal-dialog .book-demo-textarea {
-    height: 34px;
-    min-height: 34px;
-    max-height: 34px;
-  }
-
-  .book-demo-modal-dialog .book-demo-submit {
-    height: 34px;
-    min-height: 34px;
-    max-height: 34px;
-    flex-basis: 34px;
-  }
-}
 
 /* ==========================================================================
    BOOK A DEMO — FINAL MODAL SIZE + NEUMORPHIC DROPDOWNS
@@ -1652,190 +1330,17 @@
 }
 
 /* Better desktop fit while retaining the increased size */
-@media (max-height: 760px) and (min-width: 769px) {
-  .book-demo-modal-overlay {
-    padding: 10px 14px;
-  }
 
-  .book-demo-modal-dialog {
-    width: min(730px, calc(100vw - 28px));
-  }
+/* Removed conflicting responsive block: @media (max-height: 760px) and (min-width: 769px) */
 
-  .book-demo-modal-dialog .book-demo-card {
-    padding: 13px 16px 12px;
-    gap: 7px;
-  }
 
-  .book-demo-modal-dialog .book-demo-form {
-    padding: 10px 12px;
-    gap: 7px;
-  }
 
-  .book-demo-modal-dialog .book-demo-input-wrap,
-  .book-demo-modal-dialog .book-demo-country-wrap,
-  .book-demo-modal-dialog .book-demo-date-trigger {
-    height: 38px;
-    min-height: 38px;
-    max-height: 38px;
-    flex-basis: 38px;
-  }
+/* Removed conflicting responsive block: @media (max-width: 768px) */
 
-  .book-demo-modal-dialog .book-demo-textarea-wrap {
-    height: 58px;
-    min-height: 58px;
-  }
 
-  .book-demo-modal-dialog .book-demo-textarea {
-    height: 40px;
-    min-height: 40px;
-    max-height: 40px;
-  }
 
-  .book-demo-modal-dialog .book-demo-submit {
-    height: 38px;
-    min-height: 38px;
-    max-height: 38px;
-    flex-basis: 38px;
-  }
-}
+/* Removed conflicting responsive block: @media (max-width: 480px) */
 
-@media (max-width: 768px) {
-  .book-demo-modal-overlay {
-    padding: 10px;
-  }
-
-  .book-demo-modal-dialog {
-    width: min(100%, 650px);
-    max-width: 650px;
-  }
-
-  .book-demo-modal-dialog .book-demo-card {
-    padding: 12px 11px 10px;
-    gap: 6px;
-  }
-
-  .book-demo-modal-dialog .book-demo-form {
-    padding: 9px 10px;
-    gap: 6px;
-  }
-
-  .book-demo-modal-dialog .book-demo-input-wrap,
-  .book-demo-modal-dialog .book-demo-country-wrap,
-  .book-demo-modal-dialog .book-demo-date-trigger {
-    height: 37px;
-    min-height: 37px;
-    max-height: 37px;
-    flex-basis: 37px;
-  }
-
-  .book-demo-modal-dialog .book-demo-country-wrap {
-    flex-basis: 104px;
-    width: 104px;
-  }
-
-  .book-demo-custom-dropdown-trigger {
-    min-height: 37px;
-    font-size: 12px;
-  }
-
-  .book-demo-modal-dialog .book-demo-textarea-wrap {
-    height: 54px;
-    min-height: 54px;
-  }
-
-  .book-demo-modal-dialog .book-demo-textarea {
-    height: 37px;
-    min-height: 37px;
-    max-height: 37px;
-    font-size: 12px;
-  }
-
-  .book-demo-modal-dialog .book-demo-submit {
-    height: 37px;
-    min-height: 37px;
-    max-height: 37px;
-    flex-basis: 37px;
-  }
-}
-
-@media (max-width: 480px) {
-  .book-demo-modal-overlay {
-    padding: 6px;
-  }
-
-  .book-demo-modal-dialog {
-    width: 100%;
-    max-width: none;
-  }
-
-  .book-demo-modal-dialog .book-demo-card {
-    padding: 10px 9px 9px;
-    gap: 5px;
-  }
-
-  .book-demo-modal-dialog .book-demo-form {
-    padding: 8px 8px;
-    gap: 5px;
-  }
-
-  .book-demo-modal-dialog .book-demo-title {
-    font-size: 20px;
-    line-height: 23px;
-  }
-
-  .book-demo-modal-dialog .book-demo-label {
-    font-size: 10px;
-    line-height: 13px;
-  }
-
-  .book-demo-modal-dialog .book-demo-input-wrap,
-  .book-demo-modal-dialog .book-demo-country-wrap,
-  .book-demo-modal-dialog .book-demo-date-trigger {
-    height: 34px;
-    min-height: 34px;
-    max-height: 34px;
-    flex-basis: 34px;
-  }
-
-  .book-demo-modal-dialog .book-demo-country-wrap {
-    flex-basis: 98px;
-    width: 98px;
-  }
-
-  .book-demo-custom-dropdown-trigger {
-    min-height: 34px;
-    font-size: 11px;
-  }
-
-  .book-demo-custom-dropdown-menu {
-    max-height: 190px;
-  }
-
-  .book-demo-modal-dialog .book-demo-textarea-wrap {
-    height: 50px;
-    min-height: 50px;
-  }
-
-  .book-demo-modal-dialog .book-demo-textarea {
-    height: 34px;
-    min-height: 34px;
-    max-height: 34px;
-    font-size: 11px;
-  }
-
-  .book-demo-modal-dialog .book-demo-consent-text {
-    font-size: 9px;
-    line-height: 12px;
-  }
-
-  .book-demo-modal-dialog .book-demo-submit {
-    height: 34px;
-    min-height: 34px;
-    max-height: 34px;
-    flex-basis: 34px;
-    font-size: 13px;
-  }
-}
 
 /* ==========================================================================
    BOOK A DEMO — FINAL REFINEMENT
@@ -2235,148 +1740,13 @@
    Smaller screens
    -------------------------------------------------------------------------- */
 
-@media (max-width: 768px) {
-  .book-demo-modal-overlay {
-    padding: 10px;
-  }
 
-  .book-demo-modal-dialog {
-    width: min(100%, 680px);
-    max-width: 680px;
-  }
+/* Removed conflicting responsive block: @media (max-width: 768px) */
 
-  .book-demo-modal-dialog .book-demo-card {
-    padding: 14px 12px 12px;
-    gap: 8px;
-  }
 
-  .book-demo-modal-dialog .book-demo-form {
-    padding: 10px;
-    gap: 8px;
-  }
 
-  .book-demo-modal-dialog .book-demo-input-wrap,
-  .book-demo-modal-dialog .book-demo-country-wrap,
-  .book-demo-modal-dialog .book-demo-date-trigger {
-    height: 40px;
-    min-height: 40px;
-    max-height: 40px;
-    flex-basis: 40px;
-  }
+/* Removed conflicting responsive block: @media (max-width: 480px) */
 
-  .book-demo-modal-dialog .book-demo-country-wrap {
-    flex-basis: 104px;
-    width: 104px;
-  }
-
-  .book-demo-modal-dialog .book-demo-custom-dropdown-trigger {
-    min-height: 40px;
-    font-size: 12px;
-  }
-
-  .book-demo-modal-dialog .book-demo-textarea-wrap {
-    height: 62px;
-    min-height: 62px;
-  }
-
-  .book-demo-modal-dialog .book-demo-textarea {
-    height: 42px;
-    min-height: 42px;
-    max-height: 42px;
-  }
-}
-
-@media (max-width: 480px) {
-  .book-demo-modal-overlay {
-    padding: 6px;
-  }
-
-  .book-demo-modal-dialog {
-    width: 100%;
-    max-width: none;
-  }
-
-  .book-demo-modal-dialog .book-demo-card {
-    padding: 11px 9px 10px;
-    gap: 6px;
-  }
-
-  .book-demo-modal-dialog .book-demo-form {
-    padding: 8px;
-    gap: 6px;
-  }
-
-  .book-demo-modal-dialog .book-demo-title {
-    font-size: 21px;
-    line-height: 25px;
-  }
-
-  .book-demo-modal-dialog .book-demo-label {
-    font-size: 10px;
-    line-height: 13px;
-  }
-
-  .book-demo-modal-dialog .book-demo-input-wrap,
-  .book-demo-modal-dialog .book-demo-country-wrap,
-  .book-demo-modal-dialog .book-demo-date-trigger {
-    height: 36px;
-    min-height: 36px;
-    max-height: 36px;
-    flex-basis: 36px;
-  }
-
-  .book-demo-modal-dialog .book-demo-country-wrap {
-    flex-basis: 98px;
-    width: 98px;
-  }
-
-  .book-demo-modal-dialog .book-demo-custom-dropdown-trigger {
-    min-height: 36px;
-    font-size: 11px;
-  }
-
-  .book-demo-modal-dialog .book-demo-custom-dropdown-menu {
-    max-height: 180px;
-  }
-
-  .book-demo-modal-dialog .book-demo-calendar-panel {
-    min-width: 0;
-    max-width: calc(100vw - 24px);
-    padding: 11px;
-  }
-
-  .book-demo-modal-dialog .book-demo-calendar-dropdown {
-    height: 36px;
-  }
-
-  .book-demo-modal-dialog .book-demo-calendar-dropdown .book-demo-custom-dropdown-trigger {
-    min-height: 36px;
-    font-size: 11px;
-  }
-
-  .book-demo-modal-dialog .book-demo-calendar-day {
-    font-size: 11px;
-  }
-
-  .book-demo-modal-dialog .book-demo-textarea-wrap {
-    height: 54px;
-    min-height: 54px;
-  }
-
-  .book-demo-modal-dialog .book-demo-textarea {
-    height: 36px;
-    min-height: 36px;
-    max-height: 36px;
-  }
-
-  .book-demo-modal-dialog .book-demo-submit {
-    height: 36px;
-    min-height: 36px;
-    max-height: 36px;
-    flex-basis: 36px;
-    font-size: 13px;
-  }
-}
 
 
 /* Dropdown popup can open upward when the next form row is too close. */
@@ -2781,35 +2151,9 @@
 
 /* Mobile: preserve content-driven widths without letting the time controls
    become cramped. */
-@media (max-width: 480px) {
-  .book-demo-modal-dialog .book-demo-time-picker {
-    gap: 3px;
-  }
 
-  .book-demo-modal-dialog .book-demo-time-picker .book-demo-custom-dropdown-trigger {
-    min-height: 34px;
-    padding-left: 7px;
-    padding-right: 20px;
-    font-size: 11px;
-  }
+/* Removed conflicting responsive block: @media (max-width: 480px) */
 
-  .book-demo-modal-dialog .book-demo-time-part-hour {
-    width: 38px;
-  }
-
-  .book-demo-modal-dialog .book-demo-time-part-minute {
-    width: 44px;
-  }
-
-  .book-demo-modal-dialog .book-demo-time-part-period {
-    width: 53px;
-  }
-
-  .book-demo-modal-dialog .book-demo-time-separator {
-    width: 6px;
-    font-size: 12px;
-  }
-}
 
 /* ==========================================================================
    FINAL MOBILE VIEW — CORRECT ALIGNMENT
@@ -2821,554 +2165,27 @@
      its position from getBoundingClientRect().
    ========================================================================== */
 
-@media (max-width: 768px) {
-  /* Modal */
-  .book-demo-modal-overlay {
-    align-items: flex-start;
-    justify-content: center;
-    padding: 16px 8px;
-    overflow-x: hidden;
-    overflow-y: auto;
-    box-sizing: border-box;
-  }
 
-  .book-demo-modal-dialog {
-    width: 100%;
-    max-width: 620px;
-    margin: 0 auto;
-    box-sizing: border-box;
-  }
+/* Removed conflicting responsive block: @media (max-width: 768px) */
 
-  .book-demo-modal-dialog .book-demo-card {
-    width: 100%;
-    box-sizing: border-box;
-    padding: 11px 10px 9px;
-    gap: 6px;
-    overflow: visible;
-  }
-
-  .book-demo-modal-dialog .book-demo-form {
-    width: 100%;
-    box-sizing: border-box;
-    padding: 8px 9px;
-    gap: 7px;
-    overflow: visible;
-  }
-
-  /* Labels */
-  .book-demo-modal-dialog .book-demo-label {
-    width: 100%;
-    display: block;
-    text-align: left;
-    margin: 0;
-  }
-
-  /* Common inputs */
-  .book-demo-modal-dialog .book-demo-input-wrap,
-  .book-demo-modal-dialog .book-demo-country-wrap,
-  .book-demo-modal-dialog .book-demo-date-trigger {
-    box-sizing: border-box;
-    height: 34px;
-    min-height: 34px;
-    max-height: 34px;
-  }
-
-  /* ================================================================
-     PHONE
-     Country code + phone number stay on one row.
-     ================================================================ */
-  .book-demo-modal-dialog .book-demo-phone-row {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 8px;
-    box-sizing: border-box;
-    overflow: visible;
-  }
-
-  .book-demo-modal-dialog .book-demo-country-wrap {
-    flex: 0 0 92px;
-    width: 92px;
-    min-width: 92px;
-    max-width: 92px;
-    margin: 0;
-  }
-
-  .book-demo-modal-dialog .book-demo-phone-wrap {
-    flex: 1 1 auto;
-    width: auto;
-    min-width: 0;
-    margin: 0;
-  }
-
-  .book-demo-modal-dialog .book-demo-phone-wrap .book-demo-input-wrap {
-    width: 100%;
-    min-width: 0;
-  }
-
-  .book-demo-modal-dialog .book-demo-phone-wrap .book-demo-input {
-    min-width: 0;
-    width: 100%;
-  }
-
-  .book-demo-modal-dialog .book-demo-country-select {
-    min-width: 0;
-    max-width: 100%;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-  }
-
-  /* ================================================================
-     DATE + TIME
-     Stack vertically on mobile.
-     ================================================================ */
-  .book-demo-modal-dialog .book-demo-datetime-row {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-    gap: 7px;
-    box-sizing: border-box;
-    overflow: visible;
-    position: relative;
-    z-index: 100;
-  }
-
-  .book-demo-modal-dialog .book-demo-date-wrap,
-  .book-demo-modal-dialog .book-demo-time-wrap {
-    width: 100%;
-    flex: 0 0 auto;
-    min-width: 0;
-    margin: 0;
-    box-sizing: border-box;
-  }
-
-  .book-demo-modal-dialog .book-demo-date-wrap {
-    position: relative;
-    z-index: 20010;
-  }
-
-  .book-demo-modal-dialog .book-demo-date-trigger {
-    width: 100%;
-    min-width: 0;
-    max-width: 100%;
-    box-sizing: border-box;
-  }
-
-  .book-demo-modal-dialog .book-demo-time-wrap {
-    display: flex;
-    align-items: center;
-    gap: 7px;
-    overflow: visible;
-    position: relative;
-    z-index: 200;
-  }
-
-  /* ================================================================
-     TIME PICKER
-     HH : MM : AM/PM stays on one line.
-     ================================================================ */
-  .book-demo-modal-dialog .book-demo-time-picker {
-    width: 100%;
-    min-width: 0;
-    flex: 1 1 auto;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 4px;
-    overflow: visible;
-    box-sizing: border-box;
-  }
-
-  .book-demo-modal-dialog
-  .book-demo-time-picker
-  .book-demo-custom-dropdown {
-    flex: 0 0 auto;
-    min-width: 0;
-    height: 34px;
-  }
-
-  .book-demo-modal-dialog
-  .book-demo-time-picker
-  .book-demo-custom-dropdown-trigger {
-    height: 34px;
-    min-height: 34px;
-    width: 100%;
-    min-width: 0;
-    box-sizing: border-box;
-    padding: 0 20px 0 7px;
-    font-size: 11px;
-    line-height: 15px;
-    white-space: nowrap;
-    overflow: hidden;
-  }
-
-  .book-demo-modal-dialog
-  .book-demo-time-picker
-  .book-demo-custom-dropdown-value,
-  .book-demo-modal-dialog
-  .book-demo-time-picker
-  .book-demo-custom-dropdown-placeholder {
-    display: block;
-    width: 100%;
-    min-width: 0;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    text-align: center;
-  }
-
-  .book-demo-modal-dialog .book-demo-time-part-hour {
-    width: 43px;
-    min-width: 43px;
-    max-width: 43px;
-  }
-
-  .book-demo-modal-dialog .book-demo-time-part-minute {
-    width: 49px;
-    min-width: 49px;
-    max-width: 49px;
-  }
-
-  .book-demo-modal-dialog .book-demo-time-part-period {
-    width: 58px;
-    min-width: 58px;
-    max-width: 58px;
-  }
-
-  .book-demo-modal-dialog .book-demo-time-separator {
-    flex: 0 0 7px;
-    width: 7px;
-    min-width: 7px;
-    max-width: 7px;
-    text-align: center;
-    font-size: 12px;
-    line-height: 15px;
-  }
-
-  /* ================================================================
-     CALENDAR
-     The TSX calculates top/left from viewport coordinates, so the
-     mobile popup must be fixed to the viewport.
-     ================================================================ */
-  .book-demo-modal-dialog .book-demo-calendar-panel {
-    position: fixed;
-    top: auto;
-    left: auto;
-    right: auto;
-    bottom: auto;
-    width: min(330px, calc(100vw - 24px));
-    min-width: 0;
-    max-width: calc(100vw - 24px);
-    max-height: min(48vh, 360px);
-    box-sizing: border-box;
-    padding: 10px;
-    overflow: hidden;
-    z-index: 50000;
-  }
-
-  .book-demo-modal-dialog .book-demo-calendar-scroll-area {
-    min-height: 0;
-    max-height: 190px;
-    overflow-y: auto;
-    overflow-x: hidden;
-    overscroll-behavior: contain;
-  }
-
-  .book-demo-modal-dialog .book-demo-calendar-controls {
-    width: 100%;
-    display: flex;
-    gap: 6px;
-    box-sizing: border-box;
-  }
-
-  .book-demo-modal-dialog .book-demo-calendar-dropdown {
-    flex: 1 1 0;
-    min-width: 0;
-    width: auto;
-  }
-
-  .book-demo-modal-dialog
-  .book-demo-calendar-dropdown
-  .book-demo-custom-dropdown-trigger {
-    width: 100%;
-    min-width: 0;
-    box-sizing: border-box;
-    font-size: 10px;
-  }
-
-  .book-demo-modal-dialog .book-demo-calendar-weekday,
-  .book-demo-modal-dialog .book-demo-calendar-day {
-    font-size: 10px;
-  }
-
-  /* ================================================================
-     DROPDOWN STACKING
-     ================================================================ */
-  .book-demo-modal-dialog .book-demo-phone-row {
-    position: relative;
-    z-index: 30000;
-  }
-
-  .book-demo-modal-dialog .book-demo-country-wrap {
-    position: relative;
-    z-index: 30010;
-  }
-
-  .book-demo-modal-dialog
-  .book-demo-country-dropdown
-  .book-demo-custom-dropdown-menu {
-    z-index: 30020;
-  }
-
-  .book-demo-modal-dialog .book-demo-datetime-row {
-    position: relative;
-    z-index: 100;
-  }
-
-  .book-demo-modal-dialog .book-demo-date-wrap {
-    position: relative;
-    z-index: 20010;
-  }
-
-  .book-demo-modal-dialog .book-demo-time-wrap {
-    position: relative;
-    z-index: 200;
-  }
-
-  .book-demo-modal-dialog
-  .book-demo-time-picker
-  .book-demo-custom-dropdown-menu {
-    z-index: 40000;
-    max-width: min(180px, calc(100vw - 20px));
-    box-sizing: border-box;
-  }
-
-  .book-demo-modal-dialog .book-demo-calendar-panel {
-    z-index: 50000;
-  }
-
-  .book-demo-modal-dialog
-  .book-demo-calendar-panel
-  .book-demo-calendar-dropdown {
-    position: relative;
-    z-index: 50010;
-  }
-
-  .book-demo-modal-dialog
-  .book-demo-calendar-panel
-  .book-demo-calendar-dropdown
-  .book-demo-custom-dropdown-menu {
-    z-index: 50020;
-  }
-
-  .book-demo-modal-dialog .book-demo-custom-dropdown-menu,
-  .book-demo-modal-dialog .book-demo-calendar-panel {
-    background: #dfe6e9;
-    opacity: 1;
-    isolation: isolate;
-  }
-}
 
 
 /* ==========================================================================
    NARROW MOBILE — 480PX
    ========================================================================== */
 
-@media (max-width: 480px) {
-  .book-demo-modal-overlay {
-    padding: 6px;
-  }
 
-  .book-demo-modal-dialog {
-    width: 100%;
-    max-width: none;
-  }
+/* Removed conflicting responsive block: @media (max-width: 480px) */
 
-  .book-demo-modal-dialog .book-demo-card {
-    padding: 9px 8px 8px;
-    gap: 5px;
-    border-radius: 10px;
-  }
-
-  .book-demo-modal-dialog .book-demo-form {
-    padding: 7px 8px;
-    gap: 6px;
-    border-radius: 8px;
-  }
-
-  .book-demo-modal-dialog .book-demo-phone-row {
-    flex-direction: row;
-    gap: 6px;
-  }
-
-  .book-demo-modal-dialog .book-demo-country-wrap {
-    flex: 0 0 82px;
-    width: 82px;
-    min-width: 82px;
-    max-width: 82px;
-  }
-
-  .book-demo-modal-dialog .book-demo-phone-wrap {
-    flex: 1 1 auto;
-    min-width: 0;
-  }
-
-  .book-demo-modal-dialog .book-demo-datetime-row {
-    flex-direction: column;
-    gap: 6px;
-  }
-
-  .book-demo-modal-dialog .book-demo-date-wrap,
-  .book-demo-modal-dialog .book-demo-time-wrap {
-    width: 100%;
-    flex: 0 0 auto;
-  }
-
-  .book-demo-modal-dialog .book-demo-time-wrap {
-    gap: 6px;
-  }
-
-  .book-demo-modal-dialog .book-demo-time-picker {
-    width: 100%;
-    flex: 1 1 auto;
-    gap: 3px;
-  }
-
-  .book-demo-modal-dialog
-  .book-demo-time-picker
-  .book-demo-custom-dropdown-trigger {
-    height: 32px;
-    min-height: 32px;
-    padding: 0 17px 0 4px;
-    font-size: 10px;
-    line-height: 13px;
-  }
-
-  .book-demo-modal-dialog .book-demo-time-picker .book-demo-custom-dropdown {
-    height: 32px;
-  }
-
-  .book-demo-modal-dialog .book-demo-time-part-hour {
-    width: 38px;
-    min-width: 38px;
-    max-width: 38px;
-  }
-
-  .book-demo-modal-dialog .book-demo-time-part-minute {
-    width: 44px;
-    min-width: 44px;
-    max-width: 44px;
-  }
-
-  .book-demo-modal-dialog .book-demo-time-part-period {
-    width: 53px;
-    min-width: 53px;
-    max-width: 53px;
-  }
-
-  .book-demo-modal-dialog .book-demo-time-separator {
-    flex: 0 0 5px;
-    width: 5px;
-    min-width: 5px;
-    max-width: 5px;
-    font-size: 10px;
-  }
-
-  .book-demo-modal-dialog .book-demo-calendar-panel {
-    width: min(330px, calc(100vw - 20px));
-    max-width: calc(100vw - 20px);
-    max-height: min(46vh, 330px);
-    padding: 9px;
-  }
-
-  .book-demo-modal-dialog .book-demo-calendar-scroll-area {
-    max-height: 175px;
-  }
-}
 
 
 /* ==========================================================================
    VERY NARROW MOBILE — 375PX
    ========================================================================== */
 
-@media (max-width: 375px) {
-  .book-demo-modal-dialog .book-demo-card {
-    padding: 8px 7px;
-  }
 
-  .book-demo-modal-dialog .book-demo-form {
-    padding: 7px;
-  }
+/* Removed conflicting responsive block: @media (max-width: 375px) */
 
-  .book-demo-modal-dialog .book-demo-phone-row {
-    gap: 5px;
-  }
-
-  .book-demo-modal-dialog .book-demo-country-wrap {
-    flex: 0 0 78px;
-    width: 78px;
-    min-width: 78px;
-    max-width: 78px;
-  }
-
-  .book-demo-modal-dialog .book-demo-datetime-row {
-    gap: 5px;
-  }
-
-  .book-demo-modal-dialog .book-demo-time-wrap {
-    gap: 5px;
-  }
-
-  .book-demo-modal-dialog .book-demo-time-picker {
-    gap: 2px;
-  }
-
-  .book-demo-modal-dialog
-  .book-demo-time-picker
-  .book-demo-custom-dropdown-trigger {
-    padding-left: 2px;
-    padding-right: 14px;
-    font-size: 9px;
-  }
-
-  .book-demo-modal-dialog .book-demo-time-part-hour {
-    width: 36px;
-    min-width: 36px;
-    max-width: 36px;
-  }
-
-  .book-demo-modal-dialog .book-demo-time-part-minute {
-    width: 41px;
-    min-width: 41px;
-    max-width: 41px;
-  }
-
-  .book-demo-modal-dialog .book-demo-time-part-period {
-    width: 49px;
-    min-width: 49px;
-    max-width: 49px;
-  }
-
-  .book-demo-modal-dialog .book-demo-time-separator {
-    flex: 0 0 4px;
-    width: 4px;
-    min-width: 4px;
-    max-width: 4px;
-    font-size: 9px;
-  }
-
-  .book-demo-modal-dialog .book-demo-calendar-panel {
-    width: calc(100vw - 16px);
-    max-width: calc(100vw - 16px);
-  }
-
-  .book-demo-modal-dialog .book-demo-calendar-scroll-area {
-    max-height: 165px;
-  }
-}
 
 
 /* ==========================================================================
@@ -3378,91 +2195,17 @@
    Row 2 = Preferred Demo Time
    ========================================================================== */
 
-@media (max-width: 768px) {
-  /* Force Date and Time into two separate full-width rows. */
-  .book-demo-modal-dialog .book-demo-datetime-row {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-    gap: 7px;
-    box-sizing: border-box;
-  }
 
-  /* Date gets the complete row width. */
-  .book-demo-modal-dialog .book-demo-date-wrap {
-    width: 100%;
-    flex: 0 0 auto;
-    min-width: 0;
-    max-width: none;
-    box-sizing: border-box;
-  }
+/* Removed conflicting responsive block: @media (max-width: 768px) */
 
-  .book-demo-modal-dialog .book-demo-date-trigger {
-    width: 100%;
-    min-width: 0;
-    max-width: none;
-    box-sizing: border-box;
-  }
 
-  /* Time gets its own complete row. */
-  .book-demo-modal-dialog .book-demo-time-wrap {
-    width: 100%;
-    flex: 0 0 auto;
-    min-width: 0;
-    max-width: none;
-    box-sizing: border-box;
 
-    display: flex;
-    align-items: center;
-    gap: 7px;
-  }
+/* Removed conflicting responsive block: @media (max-width: 480px) */
 
-  .book-demo-modal-dialog .book-demo-time-picker {
-    width: 100%;
-    flex: 1 1 auto;
-    min-width: 0;
 
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 4px;
-    box-sizing: border-box;
-  }
-}
 
-@media (max-width: 480px) {
-  .book-demo-modal-dialog .book-demo-datetime-row {
-    gap: 6px;
-  }
+/* Removed conflicting responsive block: @media (max-width: 375px) */
 
-  .book-demo-modal-dialog .book-demo-date-wrap,
-  .book-demo-modal-dialog .book-demo-time-wrap {
-    width: 100%;
-    flex: 0 0 auto;
-  }
-
-  .book-demo-modal-dialog .book-demo-time-picker {
-    width: 100%;
-    gap: 3px;
-  }
-}
-
-@media (max-width: 375px) {
-  .book-demo-modal-dialog .book-demo-datetime-row {
-    gap: 5px;
-  }
-
-  .book-demo-modal-dialog .book-demo-date-wrap,
-  .book-demo-modal-dialog .book-demo-time-wrap {
-    width: 100%;
-  }
-
-  .book-demo-modal-dialog .book-demo-time-picker {
-    width: 100%;
-    gap: 2px;
-  }
-}
 
 
 /* ==========================================================================
@@ -3471,264 +2214,34 @@
    Add clear spacing between HH, MM, and AM/PM dropdowns.
    ========================================================================== */
 
-@media (max-width: 768px) {
-  .book-demo-modal-dialog .book-demo-datetime-row {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-    gap: 7px;
-  }
 
-  .book-demo-modal-dialog .book-demo-date-wrap,
-  .book-demo-modal-dialog .book-demo-time-wrap {
-    width: 100%;
-    min-width: 0;
-    max-width: none;
-    flex: 0 0 auto;
-  }
+/* Removed conflicting responsive block: @media (max-width: 768px) */
 
-  .book-demo-modal-dialog .book-demo-time-wrap {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-  }
 
-  /* Time icon + HH + MM + AM/PM stay on one clean line. */
-  .book-demo-modal-dialog .book-demo-time-picker {
-    width: 100%;
-    min-width: 0;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    column-gap: 8px;
-    row-gap: 0;
-    box-sizing: border-box;
-  }
 
-  .book-demo-modal-dialog .book-demo-time-picker
-  .book-demo-custom-dropdown {
-    flex: 0 0 auto;
-    min-width: 0;
-  }
+/* Removed conflicting responsive block: @media (max-width: 480px) */
 
-  /* Keep each time dropdown visually separated. */
-  .book-demo-modal-dialog .book-demo-time-picker
-  .book-demo-custom-dropdown-trigger {
-    box-sizing: border-box;
-    white-space: nowrap;
-  }
 
-  .book-demo-modal-dialog .book-demo-time-separator {
-    flex: 0 0 auto;
-    width: auto;
-    min-width: 5px;
-    margin: 0 1px;
-    text-align: center;
-  }
-}
 
-@media (max-width: 480px) {
-  .book-demo-modal-dialog .book-demo-datetime-row {
-    gap: 6px;
-  }
+/* Removed conflicting responsive block: @media (max-width: 375px) */
 
-  .book-demo-modal-dialog .book-demo-time-picker {
-    column-gap: 7px;
-  }
-
-  .book-demo-modal-dialog .book-demo-time-separator {
-    min-width: 4px;
-    margin: 0;
-  }
-}
-
-@media (max-width: 375px) {
-  .book-demo-modal-dialog .book-demo-datetime-row {
-    gap: 5px;
-  }
-
-  .book-demo-modal-dialog .book-demo-time-picker {
-    column-gap: 6px;
-  }
-
-  .book-demo-modal-dialog .book-demo-time-separator {
-    min-width: 4px;
-    margin: 0;
-  }
-}
 
 /* ==========================================================================
    FINAL MOBILE TIME SPACING — HOURS / MINUTES / AM-PM
    Correct the HH label spacing and keep clear separation between controls.
    ========================================================================== */
 
-@media (max-width: 768px) {
-  .book-demo-modal-dialog .book-demo-time-picker {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 7px !important;
-    column-gap: 7px !important;
-    row-gap: 0 !important;
-    width: 100%;
-    min-width: 0;
-  }
 
-  /* Hour dropdown: keep "HH" visually together and centered. */
-  .book-demo-modal-dialog .book-demo-time-part-hour {
-    flex: 0 0 43px !important;
-    width: 43px !important;
-    min-width: 43px !important;
-    max-width: 43px !important;
-  }
+/* Removed conflicting responsive block: @media (max-width: 768px) */
 
-  .book-demo-modal-dialog .book-demo-time-part-hour
-  .book-demo-custom-dropdown-trigger {
-    width: 43px !important;
-    min-width: 43px !important;
-    padding: 0 17px 0 4px !important;
-    justify-content: center !important;
-    text-align: center !important;
-    letter-spacing: 0 !important;
-    word-spacing: normal !important;
-    white-space: nowrap !important;
-  }
 
-  .book-demo-modal-dialog .book-demo-time-part-hour
-  .book-demo-custom-dropdown-value,
-  .book-demo-modal-dialog .book-demo-time-part-hour
-  .book-demo-custom-dropdown-placeholder {
-    width: 100%;
-    display: block;
-    text-align: center !important;
-    letter-spacing: 0 !important;
-    word-spacing: normal !important;
-  }
 
-  /* Minute dropdown */
-  .book-demo-modal-dialog .book-demo-time-part-minute {
-    flex: 0 0 49px !important;
-    width: 49px !important;
-    min-width: 49px !important;
-    max-width: 49px !important;
-  }
+/* Removed conflicting responsive block: @media (max-width: 480px) */
 
-  /* AM/PM dropdown */
-  .book-demo-modal-dialog .book-demo-time-part-period {
-    flex: 0 0 58px !important;
-    width: 58px !important;
-    min-width: 58px !important;
-    max-width: 58px !important;
-  }
 
-  /* Colons remain centered between the dropdowns. */
-  .book-demo-modal-dialog .book-demo-time-separator {
-    flex: 0 0 5px !important;
-    width: 5px !important;
-    min-width: 5px !important;
-    max-width: 5px !important;
-    margin: 0 !important;
-    padding: 0 !important;
-    text-align: center !important;
-  }
 
-  .book-demo-modal-dialog .book-demo-time-picker
-  .book-demo-custom-dropdown-trigger {
-    box-sizing: border-box;
-    white-space: nowrap;
-  }
-}
+/* Removed conflicting responsive block: @media (max-width: 375px) */
 
-@media (max-width: 480px) {
-  .book-demo-modal-dialog .book-demo-time-picker {
-    gap: 6px !important;
-    column-gap: 6px !important;
-  }
-
-  .book-demo-modal-dialog .book-demo-time-part-hour {
-    flex-basis: 40px !important;
-    width: 40px !important;
-    min-width: 40px !important;
-    max-width: 40px !important;
-  }
-
-  .book-demo-modal-dialog .book-demo-time-part-hour
-  .book-demo-custom-dropdown-trigger {
-    width: 40px !important;
-    min-width: 40px !important;
-    padding: 0 15px 0 3px !important;
-    font-size: 10px !important;
-    letter-spacing: 0 !important;
-  }
-
-  .book-demo-modal-dialog .book-demo-time-part-minute {
-    flex-basis: 45px !important;
-    width: 45px !important;
-    min-width: 45px !important;
-    max-width: 45px !important;
-  }
-
-  .book-demo-modal-dialog .book-demo-time-part-period {
-    flex-basis: 54px !important;
-    width: 54px !important;
-    min-width: 54px !important;
-    max-width: 54px !important;
-  }
-
-  .book-demo-modal-dialog .book-demo-time-separator {
-    flex-basis: 5px !important;
-    width: 5px !important;
-    min-width: 5px !important;
-    max-width: 5px !important;
-    font-size: 10px !important;
-  }
-}
-
-@media (max-width: 375px) {
-  .book-demo-modal-dialog .book-demo-time-picker {
-    gap: 5px !important;
-    column-gap: 5px !important;
-  }
-
-  .book-demo-modal-dialog .book-demo-time-part-hour {
-    flex-basis: 38px !important;
-    width: 38px !important;
-    min-width: 38px !important;
-    max-width: 38px !important;
-  }
-
-  .book-demo-modal-dialog .book-demo-time-part-hour
-  .book-demo-custom-dropdown-trigger {
-    width: 38px !important;
-    min-width: 38px !important;
-    padding: 0 14px 0 2px !important;
-    font-size: 9px !important;
-    letter-spacing: 0 !important;
-  }
-
-  .book-demo-modal-dialog .book-demo-time-part-minute {
-    flex-basis: 42px !important;
-    width: 42px !important;
-    min-width: 42px !important;
-    max-width: 42px !important;
-  }
-
-  .book-demo-modal-dialog .book-demo-time-part-period {
-    flex-basis: 50px !important;
-    width: 50px !important;
-    min-width: 50px !important;
-    max-width: 50px !important;
-  }
-
-  .book-demo-modal-dialog .book-demo-time-separator {
-    flex-basis: 4px !important;
-    width: 4px !important;
-    min-width: 4px !important;
-    max-width: 4px !important;
-    font-size: 9px !important;
-  }
-}
 
 /* FINAL FIX — keep the time dropdown chevrons clear of HH / MM / AM-PM text.
    This is intentionally limited to the time picker only. */
@@ -3738,21 +2251,13 @@
   height: 12px;
 }
 
-@media (max-width: 480px) {
-  .book-demo-modal-dialog .book-demo-time-picker .book-demo-custom-dropdown-chevron {
-    right: 3px;
-    width: 11px;
-    height: 11px;
-  }
-}
 
-@media (max-width: 375px) {
-  .book-demo-modal-dialog .book-demo-time-picker .book-demo-custom-dropdown-chevron {
-    right: 2px;
-    width: 10px;
-    height: 10px;
-  }
-}
+/* Removed conflicting responsive block: @media (max-width: 480px) */
+
+
+
+/* Removed conflicting responsive block: @media (max-width: 375px) */
+
 /* ==========================================================================
    FINAL MOBILE FIX — KEEP ALL DROPDOWNS AND INPUTS INSIDE THE VIEWPORT
    --------------------------------------------------------------------------
@@ -3771,426 +2276,25 @@
    7. Input fields never force the modal wider than the viewport.
    ========================================================================== */
 
-@media (max-width: 768px) {
-  /* Prevent the modal itself from becoming wider than the device. */
-  .book-demo-modal-overlay {
-    width: 100%;
-    max-width: 100vw;
-    box-sizing: border-box;
-    overflow-x: hidden;
-  }
 
-  .book-demo-modal-dialog {
-    width: min(100%, calc(100vw - 16px));
-    max-width: calc(100vw - 16px);
-    min-width: 0;
-    box-sizing: border-box;
-  }
+/* Removed conflicting responsive block: @media (max-width: 768px) */
 
-  .book-demo-modal-dialog .book-demo-card,
-  .book-demo-modal-dialog .book-demo-form,
-  .book-demo-modal-dialog .book-demo-field,
-  .book-demo-modal-dialog .book-demo-phone-row,
-  .book-demo-modal-dialog .book-demo-datetime-row,
-  .book-demo-modal-dialog .book-demo-date-wrap,
-  .book-demo-modal-dialog .book-demo-time-wrap {
-    width: 100%;
-    max-width: 100%;
-    min-width: 0;
-    box-sizing: border-box;
-  }
-
-  /* Keep normal input text inside the field. */
-  .book-demo-modal-dialog .book-demo-input,
-  .book-demo-modal-dialog .book-demo-select-field,
-  .book-demo-modal-dialog .book-demo-date-display,
-  .book-demo-modal-dialog .book-demo-textarea {
-    min-width: 0;
-    max-width: 100%;
-    box-sizing: border-box;
-  }
-
-  /* ---------------------------------------------------------------
-     Country dropdown
-     --------------------------------------------------------------- */
-
-  .book-demo-modal-dialog .book-demo-country-dropdown {
-    position: relative;
-    min-width: 0;
-    max-width: 100%;
-  }
-
-  .book-demo-modal-dialog
-  .book-demo-country-dropdown
-  .book-demo-custom-dropdown-menu {
-    left: 0;
-    right: auto;
-    top: calc(100% + 5px);
-    width: max-content;
-    min-width: 100%;
-    max-width: calc(100vw - 16px);
-    box-sizing: border-box;
-    overflow-x: hidden;
-    overflow-y: auto;
-  }
-
-  .book-demo-modal-dialog
-  .book-demo-country-dropdown
-  .book-demo-custom-dropdown-option {
-    width: 100%;
-    min-width: 0;
-    max-width: 100%;
-    box-sizing: border-box;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-  }
-
-  /* ---------------------------------------------------------------
-     Preferred Demo Date / Time
-     --------------------------------------------------------------- */
-
-  .book-demo-modal-dialog .book-demo-datetime-row {
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-    gap: 7px;
-    overflow: visible;
-  }
-
-  .book-demo-modal-dialog .book-demo-date-wrap,
-  .book-demo-modal-dialog .book-demo-time-wrap {
-    flex: 0 0 auto;
-    width: 100%;
-    min-width: 0;
-    max-width: 100%;
-  }
-
-  .book-demo-modal-dialog .book-demo-date-trigger {
-    width: 100%;
-    min-width: 0;
-    max-width: 100%;
-    box-sizing: border-box;
-  }
-
-  /* ---------------------------------------------------------------
-     Time picker — keep HH : MM : AM/PM on one line
-     --------------------------------------------------------------- */
-
-  .book-demo-modal-dialog .book-demo-time-wrap {
-    display: flex;
-    align-items: center;
-    gap: 6px;
-    overflow: visible;
-  }
-
-  .book-demo-modal-dialog .book-demo-time-picker {
-    width: 100%;
-    min-width: 0;
-    max-width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    flex-wrap: nowrap;
-    gap: 5px;
-    column-gap: 5px;
-    row-gap: 0;
-    box-sizing: border-box;
-    overflow: visible;
-  }
-
-  .book-demo-modal-dialog
-  .book-demo-time-picker
-  .book-demo-custom-dropdown {
-    position: relative;
-    flex: 0 0 auto;
-    min-width: 0;
-    max-width: 100%;
-    overflow: visible;
-  }
-
-  /* Fixed compact widths prevent the controls from pushing each other
-     outside the mobile viewport. */
-  .book-demo-modal-dialog .book-demo-time-part-hour {
-    flex: 0 0 40px !important;
-    width: 40px !important;
-    min-width: 40px !important;
-    max-width: 40px !important;
-  }
-
-  .book-demo-modal-dialog .book-demo-time-part-minute {
-    flex: 0 0 45px !important;
-    width: 45px !important;
-    min-width: 45px !important;
-    max-width: 45px !important;
-  }
-
-  .book-demo-modal-dialog .book-demo-time-part-period {
-    flex: 0 0 54px !important;
-    width: 54px !important;
-    min-width: 54px !important;
-    max-width: 54px !important;
-  }
-
-  .book-demo-modal-dialog .book-demo-time-separator {
-    flex: 0 0 5px !important;
-    width: 5px !important;
-    min-width: 5px !important;
-    max-width: 5px !important;
-    margin: 0 !important;
-    padding: 0 !important;
-    text-align: center !important;
-    box-sizing: border-box;
-  }
-
-  .book-demo-modal-dialog
-  .book-demo-time-picker
-  .book-demo-custom-dropdown-trigger {
-    width: 100%;
-    min-width: 0;
-    max-width: 100%;
-    box-sizing: border-box;
-    padding-left: 4px;
-    padding-right: 15px;
-    white-space: nowrap;
-    overflow: hidden;
-  }
-
-  .book-demo-modal-dialog
-  .book-demo-time-picker
-  .book-demo-custom-dropdown-value,
-  .book-demo-modal-dialog
-  .book-demo-time-picker
-  .book-demo-custom-dropdown-placeholder {
-    min-width: 0;
-    max-width: 100%;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    text-align: center;
-  }
-
-  /* ---------------------------------------------------------------
-     CRITICAL FIX:
-     Time menus use the width of their content/trigger rather than
-     the desktop 150–180px minimum. This prevents the popup from
-     covering other fields or extending outside a narrow screen.
-     --------------------------------------------------------------- */
-
-  .book-demo-modal-dialog
-  .book-demo-time-picker
-  .book-demo-custom-dropdown-menu {
-    top: calc(100% + 5px);
-    left: auto;
-    right: 0;
-    width: max-content;
-    min-width: 100%;
-    max-width: calc(100vw - 16px);
-    max-height: 190px;
-    padding: 5px;
-    box-sizing: border-box;
-    overflow-x: hidden;
-    overflow-y: auto;
-  }
-
-  .book-demo-modal-dialog
-  .book-demo-time-picker
-  .book-demo-custom-dropdown-option {
-    width: 100%;
-    min-width: 0;
-    max-width: 100%;
-    box-sizing: border-box;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
-
-  /* ---------------------------------------------------------------
-     Calendar and its internal month/year dropdowns
-     --------------------------------------------------------------- */
-
-  .book-demo-modal-dialog .book-demo-calendar-panel {
-    max-width: calc(100vw - 16px);
-    box-sizing: border-box;
-    overflow: visible;
-  }
-
-  .book-demo-modal-dialog
-  .book-demo-calendar-panel
-  .book-demo-custom-dropdown-menu {
-    max-width: calc(100vw - 16px);
-    box-sizing: border-box;
-    overflow-x: hidden;
-    overflow-y: auto;
-  }
-
-  .book-demo-modal-dialog
-  .book-demo-calendar-panel
-  .book-demo-custom-dropdown-option {
-    max-width: 100%;
-    box-sizing: border-box;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-  }
-
-  /* Message field stays within the modal. */
-  .book-demo-modal-dialog .book-demo-textarea-wrap,
-  .book-demo-modal-dialog .book-demo-textarea {
-    width: 100%;
-    max-width: 100%;
-    min-width: 0;
-    box-sizing: border-box;
-  }
-}
 
 /* --------------------------------------------------------------------------
    Narrow phones
    -------------------------------------------------------------------------- */
 
-@media (max-width: 480px) {
-  .book-demo-modal-dialog {
-    width: calc(100vw - 12px);
-    max-width: calc(100vw - 12px);
-  }
 
-  .book-demo-modal-dialog .book-demo-card {
-    width: 100%;
-    max-width: 100%;
-    min-width: 0;
-  }
+/* Removed conflicting responsive block: @media (max-width: 480px) */
 
-  .book-demo-modal-dialog .book-demo-form {
-    width: 100%;
-    max-width: 100%;
-    min-width: 0;
-  }
-
-  .book-demo-modal-dialog .book-demo-time-picker {
-    gap: 4px;
-    column-gap: 4px;
-  }
-
-  .book-demo-modal-dialog .book-demo-time-part-hour {
-    flex-basis: 38px !important;
-    width: 38px !important;
-    min-width: 38px !important;
-    max-width: 38px !important;
-  }
-
-  .book-demo-modal-dialog .book-demo-time-part-minute {
-    flex-basis: 43px !important;
-    width: 43px !important;
-    min-width: 43px !important;
-    max-width: 43px !important;
-  }
-
-  .book-demo-modal-dialog .book-demo-time-part-period {
-    flex-basis: 52px !important;
-    width: 52px !important;
-    min-width: 52px !important;
-    max-width: 52px !important;
-  }
-
-  .book-demo-modal-dialog .book-demo-time-separator {
-    flex-basis: 4px !important;
-    width: 4px !important;
-    min-width: 4px !important;
-    max-width: 4px !important;
-  }
-
-  .book-demo-modal-dialog
-  .book-demo-time-picker
-  .book-demo-custom-dropdown-trigger {
-    padding-left: 3px;
-    padding-right: 14px;
-    font-size: 10px;
-  }
-
-  .book-demo-modal-dialog
-  .book-demo-time-picker
-  .book-demo-custom-dropdown-menu {
-    max-width: calc(100vw - 12px);
-  }
-
-  .book-demo-modal-dialog
-  .book-demo-country-dropdown
-  .book-demo-custom-dropdown-menu {
-    max-width: calc(100vw - 12px);
-  }
-
-  .book-demo-modal-dialog .book-demo-calendar-panel {
-    max-width: calc(100vw - 12px);
-  }
-}
 
 /* --------------------------------------------------------------------------
    Very narrow phones
    -------------------------------------------------------------------------- */
 
-@media (max-width: 375px) {
-  .book-demo-modal-dialog {
-    width: calc(100vw - 10px);
-    max-width: calc(100vw - 10px);
-  }
 
-  .book-demo-modal-dialog .book-demo-time-picker {
-    gap: 3px;
-    column-gap: 3px;
-  }
+/* Removed conflicting responsive block: @media (max-width: 375px) */
 
-  .book-demo-modal-dialog .book-demo-time-part-hour {
-    flex-basis: 36px !important;
-    width: 36px !important;
-    min-width: 36px !important;
-    max-width: 36px !important;
-  }
-
-  .book-demo-modal-dialog .book-demo-time-part-minute {
-    flex-basis: 41px !important;
-    width: 41px !important;
-    min-width: 41px !important;
-    max-width: 41px !important;
-  }
-
-  .book-demo-modal-dialog .book-demo-time-part-period {
-    flex-basis: 49px !important;
-    width: 49px !important;
-    min-width: 49px !important;
-    max-width: 49px !important;
-  }
-
-  .book-demo-modal-dialog .book-demo-time-separator {
-    flex-basis: 4px !important;
-    width: 4px !important;
-    min-width: 4px !important;
-    max-width: 4px !important;
-  }
-
-  .book-demo-modal-dialog
-  .book-demo-time-picker
-  .book-demo-custom-dropdown-trigger {
-    padding-left: 2px;
-    padding-right: 12px;
-    font-size: 9px;
-  }
-
-  .book-demo-modal-dialog
-  .book-demo-time-picker
-  .book-demo-custom-dropdown-menu {
-    max-width: calc(100vw - 10px);
-  }
-
-  .book-demo-modal-dialog
-  .book-demo-country-dropdown
-  .book-demo-custom-dropdown-menu {
-    max-width: calc(100vw - 10px);
-  }
-
-  .book-demo-modal-dialog .book-demo-calendar-panel {
-    max-width: calc(100vw - 10px);
-  }
-}
 
 /* ==========================================================================
    INPUT HOVER — INPUT FIELD ONLY
@@ -4368,94 +2472,17 @@
 
 /* Small devices: preserve the existing responsive layout while allowing
    the larger shared typography to wrap naturally. */
-@media (max-width: 768px) {
-  .book-demo-modal-dialog .book-demo-label {
-    font-size: 16px !important;
-    line-height: 20px !important;
-  }
 
-  .book-demo-modal-dialog .book-demo-input,
-  .book-demo-modal-dialog .book-demo-select-field,
-  .book-demo-modal-dialog .book-demo-custom-dropdown-trigger,
-  .book-demo-modal-dialog .book-demo-date-display,
-  .book-demo-modal-dialog .book-demo-textarea {
-    font-size: 16px !important;
-    line-height: 22px !important;
-  }
+/* Removed conflicting responsive block: @media (max-width: 768px) */
 
-  .book-demo-modal-dialog .book-demo-custom-dropdown-option {
-    font-size: 14px !important;
-    line-height: 18px !important;
-  }
 
-  .book-demo-modal-dialog .book-demo-consent-text {
-    font-size: 11px !important;
-    line-height: 18px !important;
-  }
 
-  .book-demo-modal-dialog .book-demo-submit {
-    font-size: 13px !important;
-    line-height: 18px !important;
-  }
+/* Removed conflicting responsive block: @media (max-width: 480px) */
 
-  .book-demo-modal-dialog .book-demo-time-part-hour,
-  .book-demo-modal-dialog .book-demo-time-part-minute {
-    width: 46px !important;
-    min-width: 46px !important;
-    max-width: 46px !important;
-  }
 
-  .book-demo-modal-dialog .book-demo-time-picker
-  .book-demo-custom-dropdown-trigger {
-    font-size: 14px !important;
-    line-height: 20px !important;
-  }
 
-  .book-demo-modal-dialog .book-demo-time-separator {
-    font-size: 14px !important;
-    line-height: 20px !important;
-  }
-}
+/* Removed conflicting responsive block: @media (max-width: 375px) */
 
-@media (max-width: 480px) {
-  .book-demo-modal-dialog .book-demo-label {
-    font-size: 16px !important;
-    line-height: 19px !important;
-  }
-
-  .book-demo-modal-dialog .book-demo-input,
-  .book-demo-modal-dialog .book-demo-select-field,
-  .book-demo-modal-dialog .book-demo-custom-dropdown-trigger,
-  .book-demo-modal-dialog .book-demo-date-display,
-  .book-demo-modal-dialog .book-demo-textarea {
-    font-size: 16px !important;
-    line-height: 21px !important;
-  }
-
-  .book-demo-modal-dialog .book-demo-time-part-hour,
-  .book-demo-modal-dialog .book-demo-time-part-minute {
-    width: 44px !important;
-    min-width: 44px !important;
-    max-width: 44px !important;
-  }
-
-  .book-demo-modal-dialog .book-demo-time-picker
-  .book-demo-custom-dropdown-trigger {
-    font-size: 14px !important;
-    line-height: 20px !important;
-    padding-left: 5px;
-    padding-right: 15px;
-  }
-}
-
-@media (max-width: 375px) {
-  .book-demo-modal-dialog .book-demo-time-part-hour,
-  .book-demo-modal-dialog .book-demo-time-part-minute {
-    width: 42px !important;
-    min-width: 42px !important;
-    max-width: 42px !important;
-  }
-}
 
 
 /* ==========================================================================
@@ -4626,41 +2653,13 @@
   text-align: center !important;
 }
 
-@media (max-width: 480px) {
-  .book-demo-modal-dialog .book-demo-time-picker .book-demo-time-part-hour,
-  .book-demo-modal-dialog .book-demo-time-picker .book-demo-time-part-minute {
-    flex-basis: 50px !important;
-    width: 50px !important;
-    min-width: 50px !important;
-    max-width: 50px !important;
-  }
 
-  .book-demo-modal-dialog .book-demo-time-picker .book-demo-custom-dropdown-trigger {
-    width: 50px !important;
-    min-width: 50px !important;
-    max-width: 50px !important;
-    padding-left: 5px !important;
-    padding-right: 14px !important;
-  }
-}
+/* Removed conflicting responsive block: @media (max-width: 480px) */
 
-@media (max-width: 375px) {
-  .book-demo-modal-dialog .book-demo-time-picker .book-demo-time-part-hour,
-  .book-demo-modal-dialog .book-demo-time-picker .book-demo-time-part-minute {
-    flex-basis: 48px !important;
-    width: 48px !important;
-    min-width: 48px !important;
-    max-width: 48px !important;
-  }
 
-  .book-demo-modal-dialog .book-demo-time-picker .book-demo-custom-dropdown-trigger {
-    width: 48px !important;
-    min-width: 48px !important;
-    max-width: 48px !important;
-    padding-left: 4px !important;
-    padding-right: 13px !important;
-  }
-}
+
+/* Removed conflicting responsive block: @media (max-width: 375px) */
+
 
 
 /* ==========================================================================
@@ -4670,35 +2669,13 @@
    with 10px top spacing instead of being clipped.
    ========================================================================== */
 
-@media (max-width: 768px) {
-  .book-demo-modal-overlay {
-    align-items: center !important;
-    justify-content: center !important;
-    padding: 10px !important;
-    box-sizing: border-box;
-    min-height: 100dvh;
-    overflow-y: auto;
-    overflow-x: hidden;
-  }
 
-  .book-demo-modal-dialog {
-    margin: auto !important;
-    box-sizing: border-box;
-  }
-}
+/* Removed conflicting responsive block: @media (max-width: 768px) */
 
-@media (max-width: 480px) {
-  .book-demo-modal-overlay {
-    align-items: center !important;
-    justify-content: center !important;
-    padding: 10px !important;
-    min-height: 100dvh;
-  }
 
-  .book-demo-modal-dialog {
-    margin: auto !important;
-  }
-}
+
+/* Removed conflicting responsive block: @media (max-width: 480px) */
+
 
 /* ==========================================================================
    PRIVACY POLICY POPUP — NEOMORPHIC UI
@@ -4976,95 +2953,2349 @@
   display: block;
 }
 
-@media (max-width: 768px) {
-  .book-demo-privacy-overlay {
-    padding: 14px;
-  }
 
-  .book-demo-privacy-dialog {
-    max-height: 90vh;
-    border-radius: 18px;
-  }
+/* Removed conflicting responsive block: @media (max-width: 768px) */
 
-  .book-demo-privacy-header {
-    padding: 17px 16px 14px;
-  }
 
-  .book-demo-privacy-title {
-    font-size: 20px;
-  }
 
-  .book-demo-privacy-description {
-    font-size: 13px;
-  }
+/* Removed conflicting responsive block: @media (max-width: 480px) */
 
-  .book-demo-privacy-content {
-    margin: 10px 12px;
-    padding: 14px;
-    font-size: 13px;
-  }
 
-  .book-demo-privacy-footer {
-    padding: 12px 16px 16px;
-  }
 
-  .book-demo-modal-dialog > .book-demo-modal-close {
-    top: 7px;
-    right: 7px;
+/* ==========================================================================
+   FINAL BOOK A DEMO FIX — 03 SEP 2026
+   ========================================================================== */
+
+.book-demo-modal-overlay {
+  box-sizing: border-box !important;
+  width: 100vw !important;
+  height: 100dvh !important;
+  min-height: 0 !important;
+  overflow-x: hidden !important;
+  overflow-y: auto !important;
+}
+
+.book-demo-modal-dialog {
+  box-sizing: border-box !important;
+  margin-top: auto !important;
+  margin-bottom: auto !important;
+}
+
+.book-demo-modal-dialog
+.book-demo-time-picker
+.book-demo-custom-dropdown-trigger {
+  background: transparent !important;
+  box-shadow: none !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  outline: 0 !important;
+}
+
+.book-demo-modal-dialog .book-demo-time-picker {
+  height: 100% !important;
+  min-height: 0 !important;
+  align-items: center !important;
+}
+
+.book-demo-modal-dialog .book-demo-time-part-hour,
+.book-demo-modal-dialog .book-demo-time-part-minute {
+  flex: 0 0 58px !important;
+  width: 58px !important;
+  min-width: 58px !important;
+  max-width: 58px !important;
+}
+
+.book-demo-modal-dialog
+.book-demo-time-picker
+.book-demo-custom-dropdown-trigger {
+  width: 58px !important;
+  min-width: 58px !important;
+  max-width: 58px !important;
+  height: 34px !important;
+  min-height: 34px !important;
+  padding: 0 18px 0 5px !important;
+}
+
+.book-demo-modal-dialog
+.book-demo-time-picker
+.book-demo-custom-dropdown-menu {
+  background: #dfe6e9;
+}
+
+
+/* Removed conflicting responsive block: @media (max-height: 560px) */
+
+
+
+/* Removed conflicting responsive block: @media (max-width: 480px) */
+
+
+
+/* Removed conflicting responsive block: @media (max-width: 375px) */
+
+
+
+
+/* ==========================================================================
+   FINAL VISUAL FIX — CALENDAR OPEN STATE + FIELD ICONS
+   --------------------------------------------------------------------------
+   1. Keep the neumorphic field depth/shadow visible while calendar is open.
+   2. Keep date/time/message/phone/full-name/email field surfaces consistent.
+   3. Give all field icons the raised circular treatment shown in the reference.
+   4. Use #2D4CC8 for icon strokes/fills and circular outline.
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   FIELD SURFACES — KEEP THEIR DEPTH AT ALL TIMES
+   -------------------------------------------------------------------------- */
+
+.book-demo-modal-dialog .book-demo-input-wrap,
+.book-demo-modal-dialog .book-demo-country-wrap,
+.book-demo-modal-dialog .book-demo-date-trigger,
+.book-demo-modal-dialog .book-demo-time-wrap,
+.book-demo-modal-dialog .book-demo-textarea-wrap {
+  background: #dfe6e9 !important;
+  box-shadow:
+    inset -4px -4px 8px rgba(255, 255, 255, 0.95),
+    inset 4px 4px 8px rgba(196, 196, 196, 0.82) !important;
+}
+
+/* The calendar must float above the form without changing the appearance
+   of the date/time row underneath it. */
+.book-demo-modal-dialog .book-demo-date-wrap {
+  position: relative !important;
+  z-index: 20010 !important;
+  isolation: auto !important;
+}
+
+.book-demo-modal-dialog .book-demo-time-wrap {
+  position: relative !important;
+  z-index: 20 !important;
+  isolation: auto !important;
+}
+
+.book-demo-modal-dialog .book-demo-calendar-panel {
+  position: fixed !important;
+  z-index: 30000 !important;
+  background: #dfe6e9 !important;
+  box-shadow:
+    10px 10px 20px rgba(196, 196, 196, 0.95),
+    -10px -10px 20px rgba(255, 255, 255, 0.98) !important;
+}
+
+/* Month/year controls remain above the calendar body. */
+.book-demo-modal-dialog
+.book-demo-calendar-panel
+.book-demo-calendar-dropdown {
+  position: relative !important;
+  z-index: 30010 !important;
+}
+
+.book-demo-modal-dialog
+.book-demo-calendar-panel
+.book-demo-calendar-dropdown
+.book-demo-custom-dropdown-menu {
+  z-index: 30020 !important;
+}
+
+/* Opening/focusing the calendar should never flatten a date field. */
+.book-demo-modal-dialog .book-demo-date-trigger:focus,
+.book-demo-modal-dialog .book-demo-date-trigger:focus-visible,
+.book-demo-modal-dialog .book-demo-date-trigger[aria-expanded="true"] {
+  background: #dfe6e9 !important;
+  box-shadow:
+    inset -4px -4px 8px rgba(255, 255, 255, 0.95),
+    inset 4px 4px 8px rgba(196, 196, 196, 0.82) !important;
+  outline: none !important;
+}
+
+/* Keep the time outer field consistent with the other main fields.
+   HH / MM themselves remain flat inside this single field. */
+.book-demo-modal-dialog .book-demo-time-wrap {
+  min-height: 42px !important;
+  border-radius: 9px !important;
+  padding: 0 11px !important;
+  box-sizing: border-box !important;
+}
+
+.book-demo-modal-dialog
+.book-demo-time-picker
+.book-demo-custom-dropdown-trigger {
+  background: transparent !important;
+  box-shadow: none !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  outline: 0 !important;
+}
+
+/* --------------------------------------------------------------------------
+   FIELD ICONS — REFERENCE IMAGE EFFECT
+   -------------------------------------------------------------------------- */
+
+.book-demo-modal-dialog .book-demo-input-icon {
+  width: 31px !important;
+  height: 31px !important;
+  min-width: 31px !important;
+  min-height: 31px !important;
+  flex: 0 0 31px !important;
+
+  border: 2px solid #2d4cc8 !important;
+  border-radius: 50% !important;
+  background: #dfe6e9 !important;
+
+  box-shadow:
+    6px 6px 12px rgba(183, 190, 197, 0.95),
+    -6px -6px 12px rgba(255, 255, 255, 0.98) !important;
+
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  box-sizing: border-box !important;
+
+  color: #2d4cc8 !important;
+}
+
+/* Keep icon itself clean and blue. */
+.book-demo-modal-dialog .book-demo-input-icon svg {
+  width: 17px !important;
+  height: 17px !important;
+  color: #2d4cc8 !important;
+}
+
+/* Override hard-coded SVG stroke colors. */
+.book-demo-modal-dialog .book-demo-input-icon svg [stroke] {
+  stroke: #2d4cc8 !important;
+}
+
+/* Override only SVG elements that already have a visible fill.
+   Elements declared with fill="none" stay unfilled. */
+.book-demo-modal-dialog
+.book-demo-input-icon
+svg
+[fill]:not([fill="none"]) {
+  fill: #2d4cc8 !important;
+}
+
+/* The calendar and clock icon bubbles use the same raised blue treatment. */
+.book-demo-modal-dialog .book-demo-date-trigger .book-demo-input-icon,
+.book-demo-modal-dialog .book-demo-time-wrap > .book-demo-input-icon {
+  border-color: #2d4cc8 !important;
+  color: #2d4cc8 !important;
+}
+
+/* --------------------------------------------------------------------------
+   HOVER / FOCUS — PRESERVE THE SAME DEPTH
+   -------------------------------------------------------------------------- */
+
+@media (hover: hover) and (pointer: fine) {
+  .book-demo-modal-dialog .book-demo-input-wrap:hover,
+  .book-demo-modal-dialog .book-demo-country-wrap:hover,
+  .book-demo-modal-dialog .book-demo-date-trigger:hover,
+  .book-demo-modal-dialog .book-demo-time-wrap:hover,
+  .book-demo-modal-dialog .book-demo-textarea-wrap:hover {
+    background: #dfe6e9 !important;
+    box-shadow:
+      inset -4px -4px 8px rgba(255, 255, 255, 0.95),
+      inset 4px 4px 8px rgba(196, 196, 196, 0.82) !important;
+    outline: 1px solid #2d4cc8;
+    outline-offset: 2px;
   }
 }
 
+/* --------------------------------------------------------------------------
+   RESPONSIVE ICON SIZING
+   -------------------------------------------------------------------------- */
+
+
+/* Removed conflicting responsive block: @media (max-width: 768px) */
+
+
+
+/* Removed conflicting responsive block: @media (max-width: 480px) */
+
+
+
+/* Removed conflicting responsive block: @media (max-width: 375px) */
+
+
+
+
+/* ==========================================================================
+   FINAL INPUT + ICON SIZE OVERRIDE
+   Target: large raised circular icon treatment as in reference image 1.
+   This block is intentionally LAST so earlier compact/mobile overrides
+   cannot shrink the field icons again.
+   ========================================================================== */
+
+/* Main modal text fields */
+.book-demo-modal-dialog .book-demo-input-wrap,
+.book-demo-modal-dialog .book-demo-date-trigger,
+.book-demo-modal-dialog .book-demo-time-wrap {
+  min-height: 54px !important;
+  height: 54px !important;
+  max-height: 54px !important;
+  border-radius: 10px !important;
+  padding-left: 14px !important;
+  padding-right: 16px !important;
+  gap: 18px !important;
+
+  background: #dfe6e9 !important;
+  box-shadow:
+    inset -5px -5px 10px rgba(255, 255, 255, 0.98),
+    inset 5px 5px 10px rgba(190, 197, 202, 0.82) !important;
+}
+
+/* Full-size raised field icon */
+.book-demo-modal-dialog .book-demo-input-icon {
+  position: relative !important;
+
+  width: 42px !important;
+  height: 42px !important;
+  min-width: 42px !important;
+  min-height: 42px !important;
+  max-width: 42px !important;
+  max-height: 42px !important;
+  flex: 0 0 42px !important;
+
+  margin: 0 !important;
+  padding: 0 !important;
+
+  border: 2px solid #2d4cc8 !important;
+  border-radius: 50% !important;
+
+  background: #dfe6e9 !important;
+
+  box-shadow:
+    8px 8px 16px rgba(185, 191, 197, 0.92),
+    -8px -8px 16px rgba(255, 255, 255, 0.98) !important;
+
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+
+  color: #2d4cc8 !important;
+  box-sizing: border-box !important;
+
+  transform: none !important;
+}
+
+/* Icon drawing */
+.book-demo-modal-dialog .book-demo-input-icon svg {
+  width: 23px !important;
+  height: 23px !important;
+  min-width: 23px !important;
+  min-height: 23px !important;
+
+  color: #2d4cc8 !important;
+}
+
+/* Force all icon strokes to requested brand blue */
+.book-demo-modal-dialog .book-demo-input-icon svg [stroke] {
+  stroke: #2d4cc8 !important;
+}
+
+/* Force visible SVG fills to requested brand blue */
+.book-demo-modal-dialog
+.book-demo-input-icon
+svg
+[fill]:not([fill="none"]) {
+  fill: #2d4cc8 !important;
+}
+
+/* Input typography / spacing */
+.book-demo-modal-dialog .book-demo-input,
+.book-demo-modal-dialog .book-demo-date-display {
+  font-size: 18px !important;
+  line-height: 24px !important;
+  color: #2f3547 !important;
+}
+
+/* Placeholder remains slightly softer */
+.book-demo-modal-dialog .book-demo-input::placeholder,
+.book-demo-modal-dialog .book-demo-date-placeholder {
+  color: #2f3547 !important;
+  opacity: 0.72 !important;
+}
+
+/* Labels sized to visually match reference */
+.book-demo-modal-dialog .book-demo-label {
+  font-size: 17px !important;
+  line-height: 22px !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.01em !important;
+}
+
+/* Phone input follows the same large field treatment */
+.book-demo-modal-dialog .book-demo-phone-wrap {
+  min-height: 54px !important;
+  height: 54px !important;
+  max-height: 54px !important;
+}
+
+/* Preserve icon depth on hover/focus */
+@media (hover: hover) and (pointer: fine) {
+  .book-demo-modal-dialog .book-demo-input-icon:hover {
+    background: #dfe6e9 !important;
+    border-color: #2d4cc8 !important;
+    box-shadow:
+      8px 8px 16px rgba(185, 191, 197, 0.92),
+      -8px -8px 16px rgba(255, 255, 255, 0.98) !important;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Tablet
+   Keep the same visual treatment; only scale slightly.
+   -------------------------------------------------------------------------- */
+
+/* Removed conflicting responsive block: @media (max-width: 768px) */
+
+
+/* --------------------------------------------------------------------------
+   Mobile
+   Do NOT collapse back to the tiny image-2 icon.
+   -------------------------------------------------------------------------- */
+
+/* Removed conflicting responsive block: @media (max-width: 480px) */
+
+
+/* Very narrow phones still keep a visible raised icon. */
+
+/* Removed conflicting responsive block: @media (max-width: 375px) */
+
+
+
+
+/* ==========================================================================
+   FINAL ICON BORDER REFINEMENT
+   Keep the existing icon size, shadow, spacing and #2D4CC8 color.
+   Only make the circular outline slightly thinner.
+   ========================================================================== */
+
+.book-demo-modal-dialog .book-demo-input-icon {
+  border: 1.5px solid #2d4cc8 !important;
+}
+
+/* Keep the same thin outline at tablet/mobile sizes. */
+
+/* Removed conflicting responsive block: @media (max-width: 768px) */
+
+
+
+/* Removed conflicting responsive block: @media (max-width: 480px) */
+
+
+
+/* Removed conflicting responsive block: @media (max-width: 375px) */
+
+
+
+
+/* ==========================================================================
+   FINAL FORM HEIGHT + NEUMORPHIC SHADOW REFINEMENT
+   Requested:
+   - Reduce overall modal/form height slightly
+   - Dark shadow:  4px 4px 4px #c4c4c4
+   - Light shadow: -4px -4px 4px #ffffff
+   ========================================================================== */
+
+/* Slightly reduce vertical space without changing the overall layout */
+.book-demo-modal-dialog .book-demo-card {
+  padding-top: 14px !important;
+  padding-bottom: 13px !important;
+  gap: 7px !important;
+}
+
+.book-demo-modal-dialog .book-demo-form {
+  padding-top: 9px !important;
+  padding-bottom: 9px !important;
+  gap: 7px !important;
+}
+
+.book-demo-modal-dialog .book-demo-field {
+  gap: 3px !important;
+}
+
+/* Keep fields compact */
+.book-demo-modal-dialog .book-demo-input-wrap,
+.book-demo-modal-dialog .book-demo-country-wrap,
+.book-demo-modal-dialog .book-demo-date-trigger {
+  height: 38px !important;
+  min-height: 38px !important;
+  max-height: 38px !important;
+  flex-basis: 38px !important;
+}
+
+/* Slightly reduce message area */
+.book-demo-modal-dialog .book-demo-textarea-wrap {
+  height: 56px !important;
+  min-height: 56px !important;
+}
+
+.book-demo-modal-dialog .book-demo-textarea {
+  height: 39px !important;
+  min-height: 39px !important;
+  max-height: 39px !important;
+}
+
+/* Slightly reduce action button height */
+.book-demo-modal-dialog .book-demo-submit {
+  height: 38px !important;
+  min-height: 38px !important;
+  max-height: 38px !important;
+  flex-basis: 38px !important;
+}
+
+/* Unified raised neumorphic spread:
+   lower/right = #c4c4c4
+   upper/left  = #ffffff */
+.book-demo-modal-dialog .book-demo-input-icon,
+.book-demo-modal-dialog .book-demo-submit,
+.book-demo-modal-dialog .book-demo-modal-close,
+.book-demo-custom-dropdown-menu,
+.book-demo-modal-dialog .book-demo-calendar-panel {
+  box-shadow:
+    4px 4px 4px #c4c4c4,
+    -4px -4px 4px #ffffff !important;
+}
+
+/* Recessed form/field surfaces use the same 4/4/4 ratio as inset shadows. */
+.book-demo-modal-dialog .book-demo-form,
+.book-demo-modal-dialog .book-demo-input-wrap,
+.book-demo-modal-dialog .book-demo-country-wrap,
+.book-demo-modal-dialog .book-demo-date-trigger,
+.book-demo-modal-dialog .book-demo-textarea-wrap,
+.book-demo-custom-dropdown-trigger,
+.book-demo-modal-dialog .book-demo-calendar-select-wrap,
+.book-demo-modal-dialog .book-demo-checkbox-box {
+  box-shadow:
+    inset 4px 4px 4px #c4c4c4,
+    inset -4px -4px 4px #ffffff !important;
+}
+
+/* Preserve requested thin blue icon circle */
+.book-demo-modal-dialog .book-demo-input-icon {
+  border: 1.5px solid #2d4cc8 !important;
+}
+
+/* Responsive: retain the reduced-height proportions */
+
+/* Removed conflicting responsive block: @media (max-width: 768px) */
+
+
+
+/* Removed conflicting responsive block: @media (max-width: 480px) */
+
+
+
+
+/* ==========================================================================
+   FINAL — SLIGHTLY INCREASED FORM HEIGHT
+   Shadow ratio retained:
+   4px 4px 4px #c4c4c4
+   -4px -4px 4px #ffffff
+   ========================================================================== */
+
+.book-demo-modal-dialog .book-demo-card {
+  padding-top: 17px !important;
+  padding-bottom: 16px !important;
+  gap: 9px !important;
+}
+
+.book-demo-modal-dialog .book-demo-form {
+  padding-top: 13px !important;
+  padding-bottom: 13px !important;
+  gap: 9px !important;
+}
+
+.book-demo-modal-dialog .book-demo-field {
+  gap: 4px !important;
+}
+
+/* Increase input height slightly */
+.book-demo-modal-dialog .book-demo-input-wrap,
+.book-demo-modal-dialog .book-demo-country-wrap,
+.book-demo-modal-dialog .book-demo-date-trigger {
+  height: 41px !important;
+  min-height: 41px !important;
+  max-height: 41px !important;
+  flex-basis: 41px !important;
+}
+
+/* Keep custom dropdown aligned with the increased fields */
+.book-demo-modal-dialog .book-demo-custom-dropdown-trigger {
+  min-height: 41px !important;
+}
+
+/* Increase message area slightly */
+.book-demo-modal-dialog .book-demo-textarea-wrap {
+  height: 64px !important;
+  min-height: 64px !important;
+  padding-top: 9px !important;
+  padding-bottom: 9px !important;
+}
+
+.book-demo-modal-dialog .book-demo-textarea {
+  height: 46px !important;
+  min-height: 46px !important;
+  max-height: 46px !important;
+}
+
+/* Increase button height slightly */
+.book-demo-modal-dialog .book-demo-submit {
+  height: 41px !important;
+  min-height: 41px !important;
+  max-height: 41px !important;
+  flex-basis: 41px !important;
+}
+
+/* Requested raised neumorphic shadow */
+.book-demo-modal-dialog .book-demo-input-icon,
+.book-demo-modal-dialog .book-demo-submit,
+.book-demo-modal-dialog .book-demo-modal-close,
+.book-demo-custom-dropdown-menu,
+.book-demo-modal-dialog .book-demo-calendar-panel {
+  box-shadow:
+    4px 4px 4px #c4c4c4,
+    -4px -4px 4px #ffffff !important;
+}
+
+/* Requested recessed neumorphic shadow */
+.book-demo-modal-dialog .book-demo-form,
+.book-demo-modal-dialog .book-demo-input-wrap,
+.book-demo-modal-dialog .book-demo-country-wrap,
+.book-demo-modal-dialog .book-demo-date-trigger,
+.book-demo-modal-dialog .book-demo-textarea-wrap,
+.book-demo-custom-dropdown-trigger,
+.book-demo-modal-dialog .book-demo-calendar-select-wrap,
+.book-demo-modal-dialog .book-demo-checkbox-box {
+  box-shadow:
+    inset 4px 4px 4px #c4c4c4,
+    inset -4px -4px 4px #ffffff !important;
+}
+
+/* Preserve thin blue circular icon border */
+.book-demo-modal-dialog .book-demo-input-icon {
+  border: 1.5px solid #2d4cc8 !important;
+}
+
+/* Tablet */
+
+/* Removed conflicting responsive block: @media (max-width: 768px) */
+
+
+/* Mobile */
+
+/* Removed conflicting responsive block: @media (max-width: 480px) */
+
+
+
+
+/* ==========================================================================
+   FINAL ICON POSITION + SIZE REFINEMENT
+   Goal:
+   - Icon sits fully INSIDE the input field like reference image 1
+   - Reduce icon circle size only
+   - Do not change field/form height, spacing, typography, calendar, shadows,
+     button, or any other existing layout
+   ========================================================================== */
+
+.book-demo-modal-dialog .book-demo-input-icon {
+  position: relative !important;
+
+  width: 32px !important;
+  height: 32px !important;
+  min-width: 32px !important;
+  min-height: 32px !important;
+  max-width: 32px !important;
+  max-height: 32px !important;
+  flex: 0 0 32px !important;
+
+  margin: 0 !important;
+  padding: 0 !important;
+
+  border: 1.5px solid #2d4cc8 !important;
+  border-radius: 50% !important;
+
+  background: #dfe6e9 !important;
+
+  box-shadow:
+    4px 4px 4px #c4c4c4,
+    -4px -4px 4px #ffffff !important;
+
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+
+  color: #2d4cc8 !important;
+  box-sizing: border-box !important;
+
+  transform: none !important;
+  top: 0 !important;
+  bottom: auto !important;
+  left: auto !important;
+  right: auto !important;
+
+  z-index: 1 !important;
+}
+
+/* Keep the drawing proportional to the smaller circle */
+.book-demo-modal-dialog .book-demo-input-icon svg {
+  width: 18px !important;
+  height: 18px !important;
+  min-width: 18px !important;
+  min-height: 18px !important;
+  color: #2d4cc8 !important;
+}
+
+/* Keep blue icon stroke */
+.book-demo-modal-dialog .book-demo-input-icon svg [stroke] {
+  stroke: #2d4cc8 !important;
+}
+
+/* Keep visible fills blue without filling outline-only shapes */
+.book-demo-modal-dialog
+.book-demo-input-icon
+svg
+[fill]:not([fill="none"]) {
+  fill: #2d4cc8 !important;
+}
+
+/* Ensure field itself owns the icon visually and clips nothing */
+.book-demo-modal-dialog .book-demo-input-wrap,
+.book-demo-modal-dialog .book-demo-date-trigger,
+.book-demo-modal-dialog .book-demo-time-wrap {
+  align-items: center !important;
+  overflow: visible !important;
+}
+
+/* Tablet: slightly smaller but still fully inside field */
+
+/* Removed conflicting responsive block: @media (max-width: 768px) */
+
+
+/* Mobile: maintain the same contained look */
+
+/* Removed conflicting responsive block: @media (max-width: 480px) */
+
+
+
+/* Removed conflicting responsive block: @media (max-width: 375px) */
+
+
+
+
+/* ==========================================================================
+   FINAL — MESSAGE CHARACTER COUNTER ONLY
+   Visible small counter in the top-right corner of the message field.
+   No other existing layout or visual styling is changed.
+   ========================================================================== */
+
+.book-demo-modal-dialog .book-demo-textarea-wrap {
+  position: relative !important;
+}
+
+.book-demo-modal-dialog .book-demo-message-count {
+  position: absolute;
+  top: 6px;
+  right: 10px;
+  z-index: 2;
+
+  margin: 0;
+  padding: 0;
+
+  font-family: "Segoe UI", sans-serif;
+  font-size: 10px;
+  line-height: 12px;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+
+  color: rgba(49, 52, 75, 0.62);
+  background: transparent;
+  pointer-events: none;
+  user-select: none;
+}
+
+/* Keep typed text clear of the counter without altering field dimensions. */
+.book-demo-modal-dialog .book-demo-textarea {
+  padding-right: 48px !important;
+  box-sizing: border-box !important;
+}
+
+
+/* Removed conflicting responsive block: @media (max-width: 480px) */
+
+
+
+/* ==========================================================================
+   FINAL — SLIGHTLY SMALLER FIELD ICONS ONLY
+   No other Book a Demo styling is changed.
+   ========================================================================== */
+
+.book-demo-modal-dialog .book-demo-input-icon {
+  width: 27px !important;
+  height: 27px !important;
+  min-width: 27px !important;
+  min-height: 27px !important;
+  flex: 0 0 27px !important;
+}
+
+.book-demo-modal-dialog .book-demo-input-icon svg {
+  width: 15px !important;
+  height: 15px !important;
+}
+
+
+/* Removed conflicting responsive block: @media (max-width: 768px) */
+
+
+
+/* Removed conflicting responsive block: @media (max-width: 480px) */
+
+
+
+/* Removed conflicting responsive block: @media (max-width: 375px) */
+
+
+
+/* ==========================================================================
+   FINAL — SLIGHTLY SHARPER FORM FIELD CORNERS ONLY
+   No other sizing, shadows, icons, typography, spacing or behavior changed.
+   ========================================================================== */
+
+.book-demo-modal-dialog .book-demo-input-wrap,
+.book-demo-modal-dialog .book-demo-country-wrap,
+.book-demo-modal-dialog .book-demo-date-trigger,
+.book-demo-modal-dialog .book-demo-textarea-wrap,
+.book-demo-modal-dialog .book-demo-custom-dropdown-trigger {
+  border-radius: 5px !important;
+}
+
+
+/* ==========================================================================
+   FINAL — TYPOGRAPHY + RESPONSIVE FIT + BOOK A DEMO TITLE REFINEMENT
+   Reference images used for visual direction only.
+   No form text/content or application logic is changed.
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   1. DESKTOP TYPOGRAPHY
+   Labels: 16px semi-bold
+   Inputs / placeholders / date display / dropdown values: 16px
+   -------------------------------------------------------------------------- */
+
+/* Removed conflicting responsive block: @media (min-width: 769px) */
+
+
+/* --------------------------------------------------------------------------
+   2. BOOK A DEMO TITLE
+   Same text, styled using the rounded neumorphic reference treatment.
+   -------------------------------------------------------------------------- */
+.book-demo-modal-dialog .book-demo-header {
+  width: 100% !important;
+  max-width: none !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.book-demo-modal-dialog .book-demo-title {
+  width: auto !important;
+  min-width: 230px !important;
+  max-width: calc(100% - 88px) !important;
+
+  margin: 0 auto !important;
+  padding: 10px 30px !important;
+
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+
+  box-sizing: border-box !important;
+  text-align: center !important;
+
+  background: #dfe6e9 !important;
+  border: 0 !important;
+  border-radius: 999px !important;
+
+  box-shadow:
+    4px 4px 8px #c4c4c4,
+    -4px -4px 8px #ffffff !important;
+
+  color: #2d4cc8 !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.01em !important;
+  text-shadow: none !important;
+}
+
+/* --------------------------------------------------------------------------
+   3. RESPONSIVE FORM FIT
+   Keeps the full form inside the viewport and lets rows stack naturally.
+   -------------------------------------------------------------------------- */
+.book-demo-modal-overlay {
+  box-sizing: border-box !important;
+  overflow-x: hidden !important;
+  overflow-y: auto !important;
+}
+
+.book-demo-modal-dialog {
+  width: min(790px, calc(100vw - 32px)) !important;
+  max-width: 790px !important;
+  min-width: 0 !important;
+  box-sizing: border-box !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.book-demo-modal-dialog .book-demo-card,
+.book-demo-modal-dialog .book-demo-form,
+.book-demo-modal-dialog .book-demo-field,
+.book-demo-modal-dialog .book-demo-phone-row,
+.book-demo-modal-dialog .book-demo-datetime-row,
+.book-demo-modal-dialog .book-demo-input-wrap,
+.book-demo-modal-dialog .book-demo-country-wrap,
+.book-demo-modal-dialog .book-demo-phone-wrap,
+.book-demo-modal-dialog .book-demo-date-wrap,
+.book-demo-modal-dialog .book-demo-time-wrap,
+.book-demo-modal-dialog .book-demo-textarea-wrap {
+  min-width: 0 !important;
+  max-width: 100% !important;
+  box-sizing: border-box !important;
+}
+
+.book-demo-modal-dialog .book-demo-input,
+.book-demo-modal-dialog .book-demo-textarea,
+.book-demo-modal-dialog .book-demo-date-display,
+.book-demo-modal-dialog .book-demo-custom-dropdown-value,
+.book-demo-modal-dialog .book-demo-custom-dropdown-placeholder {
+  min-width: 0 !important;
+  max-width: 100% !important;
+}
+
+/* Tablet */
+
+/* Removed conflicting responsive block: @media (max-width: 768px) */
+
+
+/* Small tablet / large phone:
+   stack country+phone and date+time before they become cramped */
+
+/* Removed conflicting responsive block: @media (max-width: 640px) */
+
+
+/* Mobile */
+
+/* Removed conflicting responsive block: @media (max-width: 480px) */
+
+
+/* Narrow mobile */
+
+/* Removed conflicting responsive block: @media (max-width: 375px) */
+
+
+
+/* ==========================================================================
+   FINAL — TITLE TEXT COLOR + COUNTRY CODE ALIGNMENT ONLY
+   Reference images are used only for visual direction.
+   No other form styles are changed.
+   ========================================================================== */
+
+/* Keep the existing neumorphic Book a Demo pill unchanged.
+   The gradient is applied only to the text span. */
+.book-demo-modal-dialog .book-demo-title-text {
+  display: inline-block;
+  color: #2d4cc8;
+  background: linear-gradient(
+    90deg,
+    #2d4cc8 0%,
+    #5a42bd 58%,
+    #b22686 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Country-code field: keep it properly sized and aligned beside phone number. */
+.book-demo-modal-dialog .book-demo-country-wrap {
+  flex: 0 0 122px !important;
+  width: 122px !important;
+  min-width: 122px !important;
+  max-width: 122px !important;
+  padding: 0 !important;
+  overflow: visible !important;
+  align-self: stretch !important;
+}
+
+.book-demo-modal-dialog
+  .book-demo-country-wrap
+  .book-demo-country-dropdown {
+  width: 100% !important;
+  min-width: 0 !important;
+  height: 100% !important;
+}
+
+.book-demo-modal-dialog
+  .book-demo-country-wrap
+  .book-demo-custom-dropdown-trigger {
+  width: 100% !important;
+  height: 100% !important;
+  min-width: 0 !important;
+  padding-left: 12px !important;
+  padding-right: 30px !important;
+  justify-content: flex-start !important;
+  text-align: left !important;
+  box-sizing: border-box !important;
+}
+
+.book-demo-modal-dialog
+  .book-demo-country-wrap
+  .book-demo-custom-dropdown-value,
+.book-demo-modal-dialog
+  .book-demo-country-wrap
+  .book-demo-custom-dropdown-placeholder {
+  display: block !important;
+  min-width: 0 !important;
+  overflow: hidden !important;
+  white-space: nowrap !important;
+  text-overflow: ellipsis !important;
+}
+
+.book-demo-modal-dialog
+  .book-demo-country-wrap
+  .book-demo-custom-dropdown-chevron {
+  right: 9px !important;
+}
+
+
+/* Removed conflicting responsive block: @media (min-width: 641px) */
+
+
+
+/* Removed conflicting responsive block: @media (max-width: 640px) */
+
+
+
+/* ==========================================================================
+   FINAL — STABLE RESPONSIVE FORM FIT
+   Purpose:
+   - Prevent layout blinking/jumping while resizing or using DevTools devices.
+   - Keep the modal/form fully inside desktop, tablet and mobile widths.
+   - Use width-driven breakpoints only for the final layout.
+   - Preserve all existing colors, typography, shadows, icons and form logic.
+   ========================================================================== */
+
+/* Stable viewport container: avoid width oscillation when vertical scrolling
+   appears/disappears while changing device sizes. */
+.book-demo-modal-overlay {
+  width: 100% !important;
+  max-width: 100% !important;
+  box-sizing: border-box !important;
+
+  display: flex !important;
+  justify-content: center !important;
+  align-items: flex-start !important;
+
+  overflow-x: hidden !important;
+  overflow-y: auto !important;
+  scrollbar-gutter: stable !important;
+
+  padding: 16px !important;
+}
+
+/* Do not calculate modal width from 100vw because browser/DevTools scrollbar
+   changes can repeatedly alter that measurement and cause visible jumping. */
+.book-demo-modal-dialog {
+  width: 100% !important;
+  max-width: 790px !important;
+  min-width: 0 !important;
+
+  margin: 0 auto !important;
+  box-sizing: border-box !important;
+
+  flex: 0 1 790px !important;
+}
+
+/* Keep every principal form container inside its parent width. */
+.book-demo-modal-dialog .book-demo-section,
+.book-demo-modal-dialog .book-demo-card,
+.book-demo-modal-dialog .book-demo-form,
+.book-demo-modal-dialog .book-demo-field,
+.book-demo-modal-dialog .book-demo-phone-row,
+.book-demo-modal-dialog .book-demo-datetime-row,
+.book-demo-modal-dialog .book-demo-input-wrap,
+.book-demo-modal-dialog .book-demo-country-wrap,
+.book-demo-modal-dialog .book-demo-phone-wrap,
+.book-demo-modal-dialog .book-demo-date-wrap,
+.book-demo-modal-dialog .book-demo-time-wrap,
+.book-demo-modal-dialog .book-demo-textarea-wrap,
+.book-demo-modal-dialog .book-demo-time-picker {
+  box-sizing: border-box !important;
+  min-width: 0 !important;
+}
+
+/* The card and form always consume the available modal width. */
+.book-demo-modal-dialog .book-demo-section,
+.book-demo-modal-dialog .book-demo-card,
+.book-demo-modal-dialog .book-demo-form {
+  width: 100% !important;
+  max-width: 100% !important;
+}
+
+/* Prevent text/content from forcing a field wider than the viewport. */
+.book-demo-modal-dialog .book-demo-input,
+.book-demo-modal-dialog .book-demo-textarea,
+.book-demo-modal-dialog .book-demo-date-display,
+.book-demo-modal-dialog .book-demo-custom-dropdown,
+.book-demo-modal-dialog .book-demo-custom-dropdown-trigger,
+.book-demo-modal-dialog .book-demo-custom-dropdown-value,
+.book-demo-modal-dialog .book-demo-custom-dropdown-placeholder {
+  min-width: 0 !important;
+  max-width: 100% !important;
+}
+
+/* Desktop and large tablet: preserve the current side-by-side phone and
+   date/time layouts. */
+
+/* Removed conflicting responsive block: @media (min-width: 769px) */
+
+
+/* Tablet: still two-column where there is enough room, but with a stable
+   container width and without any viewport-width calculations. */
+
+/* Removed conflicting responsive block: @media (min-width: 641px) and (max-width: 768px) */
+
+
+/* Mobile / small tablet: stack compound rows so controls never become
+   compressed or extend outside the card. */
+
+/* Removed conflicting responsive block: @media (max-width: 640px) */
+
+
+/* Standard phones */
+
+/* Removed conflicting responsive block: @media (max-width: 480px) */
+
+
+/* Narrow phones */
+
+/* Removed conflicting responsive block: @media (max-width: 375px) */
+
+
+/* Very narrow devices (320px class). */
+
+/* Removed conflicting responsive block: @media (max-width: 340px) */
+
+
+/* Disable geometry animation on containers. This avoids a flash/jump if any
+   earlier generic transition rule reaches these elements while resizing. */
+.book-demo-modal-overlay,
+.book-demo-modal-dialog,
+.book-demo-modal-dialog .book-demo-card,
+.book-demo-modal-dialog .book-demo-form,
+.book-demo-modal-dialog .book-demo-phone-row,
+.book-demo-modal-dialog .book-demo-datetime-row {
+  transition-property: none !important;
+  animation: none !important;
+}
+
+/* ==========================================================================
+   SINGLE AUTHORITATIVE RESPONSIVE SYSTEM
+   Replaces all former width/height responsive media-query overrides.
+
+   IMPORTANT:
+   - Existing neumorphic effects, colors, shadows, borders, icons and logic
+     above are untouched.
+   - Only responsive geometry/fit is controlled here.
+   - Width-only breakpoints prevent layout oscillation while resizing.
+   ========================================================================== */
+
+/* ---------- Stable base: desktop / large screens ---------- */
+
+.book-demo-modal-overlay {
+  width: 100% !important;
+  max-width: 100% !important;
+  box-sizing: border-box !important;
+
+  display: flex !important;
+  align-items: flex-start !important;
+  justify-content: center !important;
+
+  padding: 16px !important;
+
+  overflow-x: hidden !important;
+  overflow-y: auto !important;
+
+  /*
+   * Reserve scrollbar space continuously.
+   * This prevents the modal width from shifting when DevTools/device
+   * resizing makes vertical scrolling appear or disappear.
+   */
+  scrollbar-gutter: stable !important;
+}
+
+.book-demo-modal-dialog {
+  width: 100% !important;
+  max-width: 790px !important;
+  min-width: 0 !important;
+
+  margin: 0 auto !important;
+  box-sizing: border-box !important;
+
+  flex: 0 1 790px !important;
+}
+
+/* Never allow an inner form container to force horizontal overflow. */
+.book-demo-modal-dialog .book-demo-section,
+.book-demo-modal-dialog .book-demo-card,
+.book-demo-modal-dialog .book-demo-header,
+.book-demo-modal-dialog .book-demo-form,
+.book-demo-modal-dialog .book-demo-field,
+.book-demo-modal-dialog .book-demo-phone-row,
+.book-demo-modal-dialog .book-demo-datetime-row,
+.book-demo-modal-dialog .book-demo-input-wrap,
+.book-demo-modal-dialog .book-demo-country-wrap,
+.book-demo-modal-dialog .book-demo-phone-wrap,
+.book-demo-modal-dialog .book-demo-date-wrap,
+.book-demo-modal-dialog .book-demo-time-wrap,
+.book-demo-modal-dialog .book-demo-time-picker,
+.book-demo-modal-dialog .book-demo-textarea-wrap,
+.book-demo-modal-dialog .book-demo-custom-dropdown {
+  box-sizing: border-box !important;
+  min-width: 0 !important;
+}
+
+.book-demo-modal-dialog .book-demo-section,
+.book-demo-modal-dialog .book-demo-card,
+.book-demo-modal-dialog .book-demo-header,
+.book-demo-modal-dialog .book-demo-form,
+.book-demo-modal-dialog .book-demo-field {
+  width: 100% !important;
+  max-width: 100% !important;
+}
+
+/* Text/content may shrink inside flexible controls instead of widening them. */
+.book-demo-modal-dialog .book-demo-input,
+.book-demo-modal-dialog .book-demo-textarea,
+.book-demo-modal-dialog .book-demo-date-display,
+.book-demo-modal-dialog .book-demo-custom-dropdown-trigger,
+.book-demo-modal-dialog .book-demo-custom-dropdown-value,
+.book-demo-modal-dialog .book-demo-custom-dropdown-placeholder {
+  min-width: 0 !important;
+  max-width: 100% !important;
+}
+
+/* Desktop structure: preserve the existing side-by-side design. */
+.book-demo-modal-dialog .book-demo-phone-row,
+.book-demo-modal-dialog .book-demo-datetime-row {
+  width: 100% !important;
+  flex-direction: row !important;
+  align-items: stretch !important;
+}
+
+.book-demo-modal-dialog .book-demo-country-wrap {
+  flex: 0 0 122px !important;
+  width: 122px !important;
+  min-width: 122px !important;
+  max-width: 122px !important;
+}
+
+.book-demo-modal-dialog .book-demo-phone-wrap {
+  flex: 1 1 0 !important;
+  width: auto !important;
+  min-width: 0 !important;
+}
+
+.book-demo-modal-dialog .book-demo-date-wrap,
+.book-demo-modal-dialog .book-demo-time-wrap {
+  flex: 1 1 0 !important;
+  width: auto !important;
+  min-width: 0 !important;
+}
+
+/* Keep the responsive containers free from geometry animation while resizing.
+   Existing button/icon/dropdown interaction effects are not touched. */
+.book-demo-modal-overlay,
+.book-demo-modal-dialog,
+.book-demo-modal-dialog .book-demo-card,
+.book-demo-modal-dialog .book-demo-form,
+.book-demo-modal-dialog .book-demo-phone-row,
+.book-demo-modal-dialog .book-demo-datetime-row {
+  animation: none !important;
+  transition-property: none !important;
+}
+
+
+/* ---------- Tablet: 641px–768px ---------- */
+
+@media (min-width: 641px) and (max-width: 768px) {
+  .book-demo-modal-overlay {
+    padding: 12px !important;
+  }
+
+  .book-demo-modal-dialog {
+    width: 100% !important;
+    max-width: 680px !important;
+    flex-basis: 680px !important;
+  }
+
+  .book-demo-modal-dialog .book-demo-card {
+    padding-left: 12px !important;
+    padding-right: 12px !important;
+  }
+
+  .book-demo-modal-dialog .book-demo-form {
+    padding-left: 12px !important;
+    padding-right: 12px !important;
+  }
+
+  .book-demo-modal-dialog .book-demo-country-wrap {
+    flex: 0 0 118px !important;
+    width: 118px !important;
+    min-width: 118px !important;
+    max-width: 118px !important;
+  }
+
+  .book-demo-modal-dialog .book-demo-label {
+    font-size: 15px !important;
+    line-height: 20px !important;
+    font-weight: 600 !important;
+  }
+
+  .book-demo-modal-dialog .book-demo-input,
+  .book-demo-modal-dialog .book-demo-select-field,
+  .book-demo-modal-dialog .book-demo-date-display,
+  .book-demo-modal-dialog .book-demo-textarea,
+  .book-demo-modal-dialog .book-demo-custom-dropdown-trigger {
+    font-size: 15px !important;
+    line-height: 21px !important;
+  }
+
+  .book-demo-modal-dialog .book-demo-title {
+    font-size: 21px !important;
+    line-height: 26px !important;
+  }
+}
+
+
+/* ---------- Mobile / small tablet: up to 640px ---------- */
+
+@media (max-width: 640px) {
+  .book-demo-modal-overlay {
+    padding: 8px !important;
+  }
+
+  .book-demo-modal-dialog {
+    width: 100% !important;
+    max-width: 100% !important;
+    flex: 1 1 auto !important;
+  }
+
+  /*
+   * Compound rows stack only once at this breakpoint.
+   * No competing 768 / 480 / height-based rule can switch them back.
+   */
+  .book-demo-modal-dialog .book-demo-phone-row,
+  .book-demo-modal-dialog .book-demo-datetime-row {
+    width: 100% !important;
+    flex-direction: column !important;
+    align-items: stretch !important;
+    gap: 8px !important;
+  }
+
+  .book-demo-modal-dialog .book-demo-country-wrap,
+  .book-demo-modal-dialog .book-demo-phone-wrap,
+  .book-demo-modal-dialog .book-demo-date-wrap,
+  .book-demo-modal-dialog .book-demo-time-wrap {
+    width: 100% !important;
+    min-width: 0 !important;
+    max-width: 100% !important;
+    flex: 0 0 auto !important;
+  }
+
+  .book-demo-modal-dialog
+    .book-demo-country-wrap
+    .book-demo-country-dropdown,
+  .book-demo-modal-dialog
+    .book-demo-country-wrap
+    .book-demo-custom-dropdown-trigger {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .book-demo-modal-dialog .book-demo-label {
+    font-size: 14px !important;
+    line-height: 19px !important;
+    font-weight: 600 !important;
+  }
+
+  /* 16px keeps mobile controls readable and avoids browser input zoom. */
+  .book-demo-modal-dialog .book-demo-input,
+  .book-demo-modal-dialog .book-demo-select-field,
+  .book-demo-modal-dialog .book-demo-date-display,
+  .book-demo-modal-dialog .book-demo-textarea,
+  .book-demo-modal-dialog .book-demo-custom-dropdown-trigger,
+  .book-demo-modal-dialog .book-demo-custom-dropdown-search {
+    font-size: 16px !important;
+    line-height: 21px !important;
+  }
+
+  .book-demo-modal-dialog .book-demo-input::placeholder,
+  .book-demo-modal-dialog .book-demo-textarea::placeholder {
+    font-size: 16px !important;
+  }
+
+  .book-demo-modal-dialog .book-demo-title {
+    font-size: 20px !important;
+    line-height: 25px !important;
+  }
+}
+
+
+/* ---------- Standard phones: up to 480px ---------- */
+
 @media (max-width: 480px) {
-  .book-demo-privacy-overlay {
-    padding: 9px;
+  .book-demo-modal-overlay {
+    padding: 8px !important;
   }
 
-  .book-demo-privacy-dialog {
-    max-height: 92vh;
-    border-radius: 16px;
+  .book-demo-modal-dialog .book-demo-card {
+    padding-left: 9px !important;
+    padding-right: 9px !important;
   }
 
-  .book-demo-privacy-header {
-    gap: 10px;
-    padding: 14px 13px 12px;
+  .book-demo-modal-dialog .book-demo-form {
+    padding-left: 8px !important;
+    padding-right: 8px !important;
   }
 
-  .book-demo-privacy-title {
-    font-size: 18px;
+  .book-demo-modal-dialog .book-demo-title {
+    width: min(250px, calc(100% - 64px)) !important;
+    min-width: 0 !important;
+    max-width: calc(100% - 64px) !important;
+    padding-left: 18px !important;
+    padding-right: 18px !important;
+    font-size: 19px !important;
+    line-height: 24px !important;
+  }
+}
+
+
+/* ---------- Narrow phones: up to 375px ---------- */
+
+@media (max-width: 375px) {
+  .book-demo-modal-overlay {
+    padding: 6px !important;
   }
 
-  .book-demo-privacy-description {
-    font-size: 12px;
-    line-height: 1.4;
+  .book-demo-modal-dialog .book-demo-card,
+  .book-demo-modal-dialog .book-demo-form {
+    padding-left: 7px !important;
+    padding-right: 7px !important;
   }
 
-  .book-demo-privacy-close {
-    flex-basis: 32px;
-    width: 32px;
-    height: 32px;
+  .book-demo-modal-dialog .book-demo-title {
+    width: min(220px, calc(100% - 58px)) !important;
+    max-width: calc(100% - 58px) !important;
+    padding-left: 14px !important;
+    padding-right: 14px !important;
+    font-size: 18px !important;
+    line-height: 23px !important;
   }
 
-  .book-demo-privacy-content {
-    margin: 8px 9px;
-    padding: 12px;
-    font-size: 12px;
-    line-height: 1.55;
+  .book-demo-modal-dialog .book-demo-label {
+    font-size: 13px !important;
+    line-height: 18px !important;
+  }
+}
+
+
+/* ---------- Very narrow devices: up to 340px ---------- */
+
+@media (max-width: 340px) {
+  .book-demo-modal-overlay {
+    padding: 4px !important;
   }
 
-  .book-demo-privacy-content h3 {
-    font-size: 16px;
+  .book-demo-modal-dialog .book-demo-card,
+  .book-demo-modal-dialog .book-demo-form {
+    padding-left: 6px !important;
+    padding-right: 6px !important;
   }
 
-  .book-demo-privacy-content h4 {
-    font-size: 13px;
+  .book-demo-modal-dialog .book-demo-title {
+    width: auto !important;
+    min-width: 0 !important;
+    max-width: calc(100% - 54px) !important;
+    padding-left: 12px !important;
+    padding-right: 12px !important;
+  }
+}
+
+/* ==========================================================================
+   FINAL RESPONSIVE STABILITY FIX — RESPONSIVENESS ONLY
+   --------------------------------------------------------------------------
+   IMPORTANT:
+   - All existing CSS above is retained exactly as provided.
+   - No existing layout/effect/style rule has been deleted.
+   - No colors, shadows, borders, typography, icons, calendar styling,
+     dropdown styling, checkbox styling, button styling, or visual effects
+     are changed here.
+   - This block only stabilizes the modal/form geometry during viewport resize.
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   1. STABLE VIEWPORT CONTAINER
+   Avoid scrollbar-width / 100vw feedback while the viewport is being resized.
+   -------------------------------------------------------------------------- */
+
+.book-demo-modal-overlay {
+  box-sizing: border-box !important;
+  width: 100% !important;
+  max-width: 100% !important;
+
+  display: flex !important;
+  justify-content: center !important;
+  align-items: flex-start !important;
+
+  overflow-x: hidden !important;
+  overflow-y: auto !important;
+
+  scrollbar-gutter: stable both-edges !important;
+  overscroll-behavior: contain !important;
+
+  padding-inline: 16px !important;
+  padding-block: 16px !important;
+}
+
+/* --------------------------------------------------------------------------
+   2. STABLE DIALOG WIDTH
+   Do not use calc(100vw - ...), because scrollbar appearance/disappearance
+   can repeatedly change 100vw while resizing in DevTools.
+   -------------------------------------------------------------------------- */
+
+.book-demo-modal-dialog {
+  box-sizing: border-box !important;
+
+  width: 100% !important;
+  max-width: 790px !important;
+  min-width: 0 !important;
+
+  margin-inline: auto !important;
+
+  flex: 0 1 790px !important;
+
+  transform: none !important;
+}
+
+/* --------------------------------------------------------------------------
+   3. PREVENT CHILDREN FROM FORCING THE MODAL WIDER
+   This changes only sizing constraints, not appearance.
+   -------------------------------------------------------------------------- */
+
+.book-demo-modal-dialog .book-demo-section,
+.book-demo-modal-dialog .book-demo-card,
+.book-demo-modal-dialog .book-demo-header,
+.book-demo-modal-dialog .book-demo-form,
+.book-demo-modal-dialog .book-demo-field,
+.book-demo-modal-dialog .book-demo-phone-row,
+.book-demo-modal-dialog .book-demo-datetime-row,
+.book-demo-modal-dialog .book-demo-input-wrap,
+.book-demo-modal-dialog .book-demo-country-wrap,
+.book-demo-modal-dialog .book-demo-phone-wrap,
+.book-demo-modal-dialog .book-demo-date-wrap,
+.book-demo-modal-dialog .book-demo-time-wrap,
+.book-demo-modal-dialog .book-demo-time-picker,
+.book-demo-modal-dialog .book-demo-textarea-wrap,
+.book-demo-modal-dialog .book-demo-custom-dropdown,
+.book-demo-modal-dialog .book-demo-custom-dropdown-trigger {
+  box-sizing: border-box !important;
+  min-width: 0 !important;
+}
+
+.book-demo-modal-dialog .book-demo-section,
+.book-demo-modal-dialog .book-demo-card,
+.book-demo-modal-dialog .book-demo-header,
+.book-demo-modal-dialog .book-demo-form,
+.book-demo-modal-dialog .book-demo-field {
+  width: 100% !important;
+  max-width: 100% !important;
+}
+
+.book-demo-modal-dialog .book-demo-input,
+.book-demo-modal-dialog .book-demo-select-field,
+.book-demo-modal-dialog .book-demo-date-display,
+.book-demo-modal-dialog .book-demo-textarea,
+.book-demo-modal-dialog .book-demo-custom-dropdown-value,
+.book-demo-modal-dialog .book-demo-custom-dropdown-placeholder {
+  min-width: 0 !important;
+  max-width: 100% !important;
+}
+
+/* --------------------------------------------------------------------------
+   4. STOP RESIZE GEOMETRY ANIMATION ONLY
+   Existing hover/focus/shadow/icon/button effects are not changed.
+   -------------------------------------------------------------------------- */
+
+.book-demo-modal-overlay,
+.book-demo-modal-dialog,
+.book-demo-modal-dialog .book-demo-section,
+.book-demo-modal-dialog .book-demo-card,
+.book-demo-modal-dialog .book-demo-header,
+.book-demo-modal-dialog .book-demo-form,
+.book-demo-modal-dialog .book-demo-field,
+.book-demo-modal-dialog .book-demo-phone-row,
+.book-demo-modal-dialog .book-demo-datetime-row,
+.book-demo-modal-dialog .book-demo-input-wrap,
+.book-demo-modal-dialog .book-demo-country-wrap,
+.book-demo-modal-dialog .book-demo-phone-wrap,
+.book-demo-modal-dialog .book-demo-date-wrap,
+.book-demo-modal-dialog .book-demo-time-wrap,
+.book-demo-modal-dialog .book-demo-textarea-wrap {
+  transition-property: none !important;
+  animation: none !important;
+}
+
+/* ==========================================================================
+   DESKTOP — 769px AND ABOVE
+   Existing desktop visual design is retained.
+   Only responsive geometry is fixed here.
+   ========================================================================== */
+
+@media (min-width: 769px) {
+  .book-demo-modal-overlay {
+    padding-inline: 16px !important;
+    padding-block: 16px !important;
   }
 
-  .book-demo-privacy-footer {
-    padding: 10px 12px 14px;
+  .book-demo-modal-dialog {
+    width: 100% !important;
+    max-width: 790px !important;
+    min-width: 0 !important;
+    flex: 0 1 790px !important;
   }
 
-  .book-demo-privacy-accept {
-    width: min(100%, 220px);
-    min-height: 40px;
+  .book-demo-modal-dialog .book-demo-phone-row,
+  .book-demo-modal-dialog .book-demo-datetime-row {
+    width: 100% !important;
+    flex-direction: row !important;
+    align-items: stretch !important;
   }
+
+  .book-demo-modal-dialog .book-demo-country-wrap {
+    flex: 0 0 122px !important;
+    width: 122px !important;
+    min-width: 122px !important;
+    max-width: 122px !important;
+  }
+
+  .book-demo-modal-dialog .book-demo-phone-wrap {
+    flex: 1 1 0 !important;
+    width: auto !important;
+    min-width: 0 !important;
+  }
+
+  .book-demo-modal-dialog .book-demo-date-wrap,
+  .book-demo-modal-dialog .book-demo-time-wrap {
+    flex: 1 1 0 !important;
+    width: auto !important;
+    min-width: 0 !important;
+  }
+}
+
+/* ==========================================================================
+   TABLET — 641px TO 768px
+   Keep the same visual design and maintain side-by-side compound rows.
+   ========================================================================== */
+
+@media (min-width: 641px) and (max-width: 768px) {
+  .book-demo-modal-overlay {
+    padding-inline: 12px !important;
+    padding-block: 12px !important;
+  }
+
+  .book-demo-modal-dialog {
+    width: 100% !important;
+    max-width: 680px !important;
+    min-width: 0 !important;
+    flex: 0 1 680px !important;
+  }
+
+  .book-demo-modal-dialog .book-demo-phone-row,
+  .book-demo-modal-dialog .book-demo-datetime-row {
+    width: 100% !important;
+    flex-direction: row !important;
+    align-items: stretch !important;
+  }
+
+  .book-demo-modal-dialog .book-demo-country-wrap {
+    flex: 0 0 118px !important;
+    width: 118px !important;
+    min-width: 118px !important;
+    max-width: 118px !important;
+  }
+
+  .book-demo-modal-dialog .book-demo-phone-wrap,
+  .book-demo-modal-dialog .book-demo-date-wrap,
+  .book-demo-modal-dialog .book-demo-time-wrap {
+    flex: 1 1 0 !important;
+    width: auto !important;
+    min-width: 0 !important;
+  }
+}
+
+/* ==========================================================================
+   MOBILE — 640px AND BELOW
+   Stack only the compound rows so the existing field design can fit naturally.
+   ========================================================================== */
+
+@media (max-width: 640px) {
+  .book-demo-modal-overlay {
+    padding-inline: 8px !important;
+    padding-block: 8px !important;
+  }
+
+  .book-demo-modal-dialog {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+    flex: 1 1 auto !important;
+  }
+
+  .book-demo-modal-dialog .book-demo-phone-row,
+  .book-demo-modal-dialog .book-demo-datetime-row {
+    width: 100% !important;
+    flex-direction: column !important;
+    align-items: stretch !important;
+    gap: 8px !important;
+  }
+
+  .book-demo-modal-dialog .book-demo-country-wrap,
+  .book-demo-modal-dialog .book-demo-phone-wrap,
+  .book-demo-modal-dialog .book-demo-date-wrap,
+  .book-demo-modal-dialog .book-demo-time-wrap {
+    width: 100% !important;
+    min-width: 0 !important;
+    max-width: 100% !important;
+    flex: 0 0 auto !important;
+  }
+
+  .book-demo-modal-dialog
+    .book-demo-country-wrap
+    .book-demo-country-dropdown,
+  .book-demo-modal-dialog
+    .book-demo-country-wrap
+    .book-demo-custom-dropdown-trigger {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+}
+
+/* ==========================================================================
+   SMALL MOBILE — 480px AND BELOW
+   Padding-only correction. Existing style/effects stay unchanged.
+   ========================================================================== */
+
+@media (max-width: 480px) {
+  .book-demo-modal-overlay {
+    padding-inline: 8px !important;
+    padding-block: 8px !important;
+  }
+
+  .book-demo-modal-dialog .book-demo-card {
+    max-width: 100% !important;
+  }
+
+  .book-demo-modal-dialog .book-demo-form {
+    max-width: 100% !important;
+  }
+}
+
+/* ==========================================================================
+   NARROW MOBILE — 375px AND BELOW
+   ========================================================================== */
+
+@media (max-width: 375px) {
+  .book-demo-modal-overlay {
+    padding-inline: 6px !important;
+    padding-block: 6px !important;
+  }
+}
+
+/* ==========================================================================
+   VERY NARROW MOBILE — 340px AND BELOW
+   ========================================================================== */
+
+@media (max-width: 340px) {
+  .book-demo-modal-overlay {
+    padding-inline: 4px !important;
+    padding-block: 4px !important;
+  }
+}
+
+/* ==========================================================================
+   FINAL DESKTOP NAME + EMAIL ROW
+   --------------------------------------------------------------------------
+   Requested change only:
+   - Desktop: Full Name and Email Address are shown side-by-side.
+   - Each field keeps its existing label, input, icons, validation and styling.
+   - Desktop modal width is increased slightly from 790px to 860px.
+   - Tablet and mobile layouts are unchanged.
+   ========================================================================== */
+
+.book-demo-name-email-row {
+  width: 100%;
+  min-width: 0;
+  display: block;
+  box-sizing: border-box;
+}
+
+@media (min-width: 769px) {
+  .book-demo-modal-dialog {
+    width: 100% !important;
+    max-width: 860px !important;
+    flex: 0 1 860px !important;
+  }
+
+  .book-demo-modal-dialog .book-demo-name-email-row {
+    width: 100% !important;
+    min-width: 0 !important;
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 16px !important;
+    align-items: start !important;
+    box-sizing: border-box !important;
+  }
+
+  .book-demo-modal-dialog
+    .book-demo-name-email-row
+    > .book-demo-field {
+    width: 100% !important;
+    min-width: 0 !important;
+    max-width: 100% !important;
+  }
+}
+
+/* ==========================================================================
+   FINAL DESKTOP LABEL / INPUT / FIELD-TO-FIELD SPACING CORRECTION
+   --------------------------------------------------------------------------
+   ONLY these desktop refinements are changed:
+   - Labels are slightly larger.
+   - Input/control fields are slightly taller.
+   - Input text is slightly larger.
+   - Label -> its input spacing is slightly increased.
+   - Previous field/input -> next field label spacing is slightly increased.
+   - Name + Email remain side-by-side.
+   - No tablet/mobile, colors, shadows, icons, validation, dropdown,
+     calendar, checkbox, button, or other behavior is changed.
+   ========================================================================== */
+
+@media (min-width: 769px) {
+
+  /* 1. Slightly increase the label size */
+  .book-demo-modal-dialog .book-demo-label {
+    font-size: 14px !important;
+    line-height: 20px !important;
+  }
+
+  /* 2. Increase spacing from each LABEL to its own INPUT/FIELD */
+  .book-demo-modal-dialog .book-demo-field {
+    gap: 8px !important;
+  }
+
+  /* 3. Increase spacing from one FIELD group to the NEXT FIELD LABEL */
+  .book-demo-modal-dialog .book-demo-form {
+    gap: 16px !important;
+  }
+
+  /* 4. Slightly increase normal input/control field height */
+  .book-demo-modal-dialog .book-demo-input-wrap,
+  .book-demo-modal-dialog .book-demo-country-wrap,
+  .book-demo-modal-dialog .book-demo-date-trigger {
+    height: 48px !important;
+    min-height: 48px !important;
+    max-height: 48px !important;
+    flex-basis: 48px !important;
+  }
+
+  /* 5. Match custom dropdowns to the same increased field height */
+  .book-demo-modal-dialog .book-demo-custom-dropdown-trigger {
+    min-height: 48px !important;
+  }
+
+  /* 6. Slightly increase input/control text */
+  .book-demo-modal-dialog .book-demo-input,
+  .book-demo-modal-dialog .book-demo-select-field,
+  .book-demo-modal-dialog .book-demo-date-display,
+  .book-demo-modal-dialog .book-demo-custom-dropdown-trigger {
+    font-size: 14px !important;
+    line-height: 20px !important;
+  }
+
+  /* 7. Keep Name + Email side-by-side with a little more horizontal breathing room */
+  .book-demo-modal-dialog .book-demo-name-email-row {
+    column-gap: 20px !important;
+    row-gap: 0 !important;
+  }
+
+  /* 8. Maintain balanced spacing in phone and date/time split rows */
+  .book-demo-modal-dialog .book-demo-phone-row,
+  .book-demo-modal-dialog .book-demo-datetime-row {
+    gap: 14px !important;
+  }
+}
+
+/* ==========================================================================
+   FINAL — MESSAGE CHARACTER COUNTER POSITION ONLY
+   Places the remaining-character text ABOVE the message input, at the
+   top-right corner. No other form styling or behavior is changed.
+   ========================================================================== */
+
+.book-demo-modal-dialog .book-demo-textarea-wrap {
+  position: relative !important;
+  overflow: visible !important;
+}
+
+.book-demo-modal-dialog .book-demo-message-count {
+  position: absolute !important;
+  top: -17px !important;
+  right: 8px !important;
+  z-index: 2 !important;
+
+  margin: 0 !important;
+  padding: 0 !important;
+
+  font-family: "Segoe UI", sans-serif !important;
+  font-size: 10px !important;
+  line-height: 12px !important;
+  font-weight: 400 !important;
+  letter-spacing: 0.01em !important;
+
+  color: rgba(49, 52, 75, 0.62) !important;
+  background: transparent !important;
+  pointer-events: none !important;
+  user-select: none !important;
+}
+
+/* ==========================================================================
+   FINAL — BOOK A DEMO TITLE SIZE / PILL HEIGHT ONLY
+   --------------------------------------------------------------------------
+   Requested change only:
+   - Title text size: 21px
+   - Reduce the title pill height by reducing vertical padding
+   - Keep existing gradient, width, shadow, radius and all other styling
+   ========================================================================== */
+
+.book-demo-modal-dialog .book-demo-title {
+  font-size: 21px !important;
+  line-height: 25px !important;
+  padding-top: 5px !important;
+  padding-bottom: 5px !important;
+}
+
+/* ==========================================================================
+   FINAL — SPACE BETWEEN BOOK A DEMO TITLE AND FORM ONLY
+   --------------------------------------------------------------------------
+   Requested change only:
+   - Adds a small gap below the Book a Demo title pill before the form starts.
+   - No other layout, typography, shadow, sizing, field or responsive rule changed.
+   ========================================================================== */
+
+.book-demo-modal-dialog .book-demo-header {
+  margin-bottom: 7px !important;
+}
+
+/* ==========================================================================
+   FINAL — FIELD LABEL SEMIBOLD ONLY
+   --------------------------------------------------------------------------
+   Requested change only:
+   - FULL NAME, EMAIL ADDRESS, PHONE NUMBER, PREFERRED DATE & TIME, MESSAGE
+     and the other form field labels use semibold weight.
+   - Existing label color, size, spacing and all other styling are retained.
+   ========================================================================== */
+
+.book-demo-modal-dialog .book-demo-label {
+  font-weight: 600 !important;
+}
+
+/* ==========================================================================
+   FINAL — TABLET + MOBILE SPACING / RESIZE STABILITY ONLY
+   --------------------------------------------------------------------------
+   Requested change only:
+   - Cleaner spacing for tablet and mobile.
+   - Keeps the existing desktop design unchanged.
+   - Prevents visible resize flicker by keeping responsive geometry stable
+     and removing layout transitions from responsive containers.
+   - Existing colors, shadows, icons, field behavior, validation, dropdowns,
+     calendar, message counter, consent and submit behavior are unchanged.
+   ========================================================================== */
+
+/* Keep responsive geometry stable while the viewport width is changing. */
+.book-demo-modal-overlay,
+.book-demo-modal-dialog,
+.book-demo-modal-dialog .book-demo-section,
+.book-demo-modal-dialog .book-demo-card,
+.book-demo-modal-dialog .book-demo-header,
+.book-demo-modal-dialog .book-demo-form,
+.book-demo-modal-dialog .book-demo-name-email-row,
+.book-demo-modal-dialog .book-demo-field,
+.book-demo-modal-dialog .book-demo-phone-row,
+.book-demo-modal-dialog .book-demo-datetime-row {
+  transition: none !important;
+  animation: none !important;
+  will-change: auto !important;
+}
+
+/* --------------------------------------------------------------------------
+   TABLET — 641px to 768px
+   -------------------------------------------------------------------------- */
+@media (min-width: 641px) and (max-width: 768px) {
+  .book-demo-modal-overlay {
+    padding: 12px !important;
+  }
+
+  .book-demo-modal-dialog {
+    width: 100% !important;
+    max-width: 720px !important;
+    min-width: 0 !important;
+    flex: 0 1 720px !important;
+  }
+
+  .book-demo-modal-dialog .book-demo-card {
+    padding: 14px 16px 15px !important;
+    gap: 0 !important;
+  }
+
+  .book-demo-modal-dialog .book-demo-header {
+    margin-bottom: 9px !important;
+  }
+
+  .book-demo-modal-dialog .book-demo-form {
+    padding: 14px !important;
+    gap: 14px !important;
+  }
+
+  .book-demo-modal-dialog .book-demo-field {
+    gap: 6px !important;
+  }
+
+  /* Keep Full Name + Email neat and balanced on tablet. */
+  .book-demo-modal-dialog .book-demo-name-email-row {
+    width: 100% !important;
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    column-gap: 14px !important;
+    row-gap: 0 !important;
+    align-items: start !important;
+  }
+
+  .book-demo-modal-dialog
+    .book-demo-name-email-row
+    > .book-demo-field {
+    width: 100% !important;
+    min-width: 0 !important;
+  }
+
+  .book-demo-modal-dialog .book-demo-label {
+    font-size: 13px !important;
+    line-height: 18px !important;
+    font-weight: 600 !important;
+  }
+
+  .book-demo-modal-dialog .book-demo-input-wrap,
+  .book-demo-modal-dialog .book-demo-country-wrap,
+  .book-demo-modal-dialog .book-demo-date-trigger {
+    height: 46px !important;
+    min-height: 46px !important;
+    max-height: 46px !important;
+    flex-basis: 46px !important;
+  }
+
+  .book-demo-modal-dialog .book-demo-custom-dropdown-trigger {
+    min-height: 46px !important;
+  }
+
+  .book-demo-modal-dialog .book-demo-phone-row,
+  .book-demo-modal-dialog .book-demo-datetime-row {
+    flex-direction: row !important;
+    align-items: stretch !important;
+    gap: 12px !important;
+  }
+
+  .book-demo-modal-dialog .book-demo-country-wrap {
+    flex: 0 0 118px !important;
+    width: 118px !important;
+    min-width: 118px !important;
+    max-width: 118px !important;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   MOBILE — 640px and below
+   -------------------------------------------------------------------------- */
+@media (max-width: 640px) {
+  .book-demo-modal-overlay {
+    padding: 8px !important;
+  }
+
+  .book-demo-modal-dialog {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+    flex: 1 1 auto !important;
+  }
+
+  .book-demo-modal-dialog .book-demo-card {
+    width: 100% !important;
+    padding: 10px !important;
+    gap: 0 !important;
+  }
+
+  .book-demo-modal-dialog .book-demo-header {
+    margin-bottom: 9px !important;
+  }
+
+  .book-demo-modal-dialog .book-demo-form {
+    width: 100% !important;
+    padding: 11px !important;
+    gap: 13px !important;
+  }
+
+  .book-demo-modal-dialog .book-demo-field {
+    gap: 6px !important;
+  }
+
+  /* Name + Email stack cleanly on mobile. */
+  .book-demo-modal-dialog .book-demo-name-email-row {
+    width: 100% !important;
+    display: grid !important;
+    grid-template-columns: minmax(0, 1fr) !important;
+    gap: 13px !important;
+  }
+
+  .book-demo-modal-dialog
+    .book-demo-name-email-row
+    > .book-demo-field {
+    width: 100% !important;
+    min-width: 0 !important;
+  }
+
+  .book-demo-modal-dialog .book-demo-label {
+    font-size: 13px !important;
+    line-height: 18px !important;
+    font-weight: 600 !important;
+  }
+
+  .book-demo-modal-dialog .book-demo-input-wrap,
+  .book-demo-modal-dialog .book-demo-country-wrap,
+  .book-demo-modal-dialog .book-demo-date-trigger {
+    height: 46px !important;
+    min-height: 46px !important;
+    max-height: 46px !important;
+    flex-basis: 46px !important;
+  }
+
+  .book-demo-modal-dialog .book-demo-custom-dropdown-trigger {
+    min-height: 46px !important;
+  }
+
+  .book-demo-modal-dialog .book-demo-phone-row,
+  .book-demo-modal-dialog .book-demo-datetime-row {
+    width: 100% !important;
+    flex-direction: column !important;
+    align-items: stretch !important;
+    gap: 9px !important;
+  }
+
+  .book-demo-modal-dialog .book-demo-country-wrap,
+  .book-demo-modal-dialog .book-demo-phone-wrap,
+  .book-demo-modal-dialog .book-demo-date-wrap,
+  .book-demo-modal-dialog .book-demo-time-wrap {
+    width: 100% !important;
+    min-width: 0 !important;
+    max-width: 100% !important;
+    flex: 0 0 auto !important;
+  }
+
+  .book-demo-modal-dialog .book-demo-textarea-wrap {
+    width: 100% !important;
+  }
+
+  .book-demo-modal-dialog .book-demo-consent-row {
+    gap: 8px !important;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   SMALL MOBILE — 480px and below
+   -------------------------------------------------------------------------- */
+@media (max-width: 480px) {
+  .book-demo-modal-overlay {
+    padding: 6px !important;
+  }
+
+  .book-demo-modal-dialog .book-demo-card {
+    padding: 8px !important;
+  }
+
+  .book-demo-modal-dialog .book-demo-header {
+    margin-bottom: 8px !important;
+  }
+
+  .book-demo-modal-dialog .book-demo-form {
+    padding: 9px !important;
+    gap: 12px !important;
+  }
+
+  .book-demo-modal-dialog .book-demo-name-email-row {
+    gap: 12px !important;
+  }
+
+  .book-demo-modal-dialog .book-demo-field {
+    gap: 5px !important;
+  }
+
+  .book-demo-modal-dialog .book-demo-phone-row,
+  .book-demo-modal-dialog .book-demo-datetime-row {
+    gap: 8px !important;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   VERY NARROW MOBILE — 375px and below
+   -------------------------------------------------------------------------- */
+@media (max-width: 375px) {
+  .book-demo-modal-overlay {
+    padding: 4px !important;
+  }
+
+  .book-demo-modal-dialog .book-demo-card {
+    padding: 7px !important;
+  }
+
+  .book-demo-modal-dialog .book-demo-form {
+    padding: 8px !important;
+    gap: 11px !important;
+  }
+}
+
+/* ==========================================================================
+   FINAL — MATCH CONTACT US CHECKBOX EFFECT + COUNTER TYPOGRAPHY ONLY
+   --------------------------------------------------------------------------
+   Requested changes only:
+   1. Book a Demo checkbox uses the same unchecked/checked neumorphic effect
+      as the current Contact Us form.
+   2. Message character counter uses the same Contact Us font treatment.
+   3. Existing counter position above the Message field is retained.
+   No other Book a Demo styling, layout, spacing, sizing, validation,
+   dropdown, calendar, button or responsive behavior is changed.
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   1. CHECKBOX — same Contact Us effect
+   -------------------------------------------------------------------------- */
+
+.book-demo-modal-dialog .book-demo-checkbox-box {
+  background: #dfe6e9 !important;
+  box-shadow:
+    inset -4px -4px 6px #ffffff,
+    inset 4px 4px 2px #c4c4c4 !important;
+}
+
+/* Checked state: same raised neumorphic effect as Contact Us */
+.book-demo-modal-dialog
+  .book-demo-checkbox-input:checked
+  ~ .book-demo-checkbox-box {
+  background: #dfe6e9 !important;
+  box-shadow:
+    -4px -4px 8px #ffffff,
+    4px 4px 8px #c4c4c4 !important;
+}
+
+/* Keep the existing Book a Demo tick behavior intact */
+.book-demo-modal-dialog
+  .book-demo-checkbox-input:checked
+  ~ .book-demo-checkbox-box
+  .book-demo-check-icon {
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+/* --------------------------------------------------------------------------
+   2. MESSAGE COUNTER — same Contact Us typography
+   Existing top-right-above-field position is retained.
+   -------------------------------------------------------------------------- */
+
+.book-demo-modal-dialog .book-demo-message-count {
+  font-family: "Segoe UI", sans-serif !important;
+  font-size: 12px !important;
+  line-height: 16px !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.01em !important;
+  color: rgba(49, 52, 75, 0.78) !important;
+
+  position: absolute !important;
+  top: -17px !important;
+  right: 8px !important;
+
+  margin: 0 !important;
+  padding: 0 !important;
+  white-space: nowrap !important;
+  text-align: right !important;
+  background: transparent !important;
+  pointer-events: none !important;
+  user-select: none !important;
+}
+
+/* Tablet counter size — same Contact Us responsive treatment */
+@media (max-width: 768px) {
+  .book-demo-modal-dialog .book-demo-message-count {
+    font-size: 11px !important;
+    line-height: 15px !important;
+    font-weight: 600 !important;
+  }
+}
+
+/* Small mobile counter size — same Contact Us responsive treatment */
+@media (max-width: 480px) {
+  .book-demo-modal-dialog .book-demo-message-count {
+    font-size: 10px !important;
+    line-height: 14px !important;
+    font-weight: 600 !important;
+  }
+}
+
+/* ==========================================================================
+   FINAL — COUNTER FONT MATCHES FORM INPUT / LABEL FONT ONLY
+   --------------------------------------------------------------------------
+   Requested change only:
+   - Character counter now uses Inter, the same font family used by the
+     Book a Demo form inputs and labels.
+   - Existing counter size, weight, color, position and responsive behavior
+     remain unchanged.
+   ========================================================================== */
+
+.book-demo-modal-dialog .book-demo-message-count {
+  font-family: "Inter", sans-serif !important;
+}
+
+/* ==========================================================================
+   FINAL — VIEWPORT-LEVEL MODAL LAYER ONLY
+   The modal is rendered through a document-body portal in Bookademo.tsx.
+   These rules keep it above the footer and every page-level stacking context.
+   Existing form styling and responsive layout remain unchanged.
+   ========================================================================== */
+
+.book-demo-modal-overlay {
+  position: fixed !important;
+  inset: 0 !important;
+  z-index: 2147483000 !important;
+  isolation: isolate;
+}
+
+.book-demo-modal-dialog {
+  position: relative !important;
+  z-index: 1 !important;
 }

@@ -2859,3 +2859,1692 @@
     min-height: 40px;
   }
 }
+
+/* ==========================================================================
+   CONTACT US — BOOK A DEMO VISUAL STYLE MATCH
+   --------------------------------------------------------------------------
+   Existing Contact Us layout is retained.
+   This final block aligns typography, colors, icons, checkbox, country-code
+   presentation, phone field treatment and close-button styling with the
+   previous Book a Demo form.
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   Shared Book a Demo palette / typography
+   -------------------------------------------------------------------------- */
+
+.before {
+  background: #dfe6e9;
+  color: #2d4cc8;
+}
+
+.contactUs {
+  display: inline-block;
+  font-family: "Segoe UI", sans-serif !important;
+  font-size: 25px !important;
+  line-height: 29px !important;
+  font-weight: 700 !important;
+  color: #2d4cc8 !important;
+  background: linear-gradient(
+    90deg,
+    #2d4cc8 0%,
+    #5a42bd 58%,
+    #b22686 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.weNeverShare {
+  font-family: "Segoe UI", sans-serif !important;
+  color: #31344b !important;
+}
+
+/* Labels — same 16 px treatment as Book a Demo */
+.fullName,
+.emailAddress,
+.message {
+  font-family: "Inter", sans-serif !important;
+  font-size: 16px !important;
+  line-height: 24px !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.02em !important;
+  text-transform: uppercase !important;
+  color: rgba(49, 52, 75, 0.9) !important;
+}
+
+/* Input / dropdown / textarea text */
+.contactInput,
+.countryCodeSelect,
+.selectedSubjectText,
+.typeYourMessage {
+  font-family: "Inter", sans-serif !important;
+  font-size: 16px !important;
+  line-height: 24px !important;
+  font-weight: 400 !important;
+  letter-spacing: 0.02em !important;
+  color: #2f3547 !important;
+}
+
+.contactInput::placeholder,
+.typeYourMessage::placeholder {
+  color: #2f3547 !important;
+  opacity: 0.7 !important;
+}
+
+/* Validation copy mirrors Book a Demo */
+.validationMessage,
+.emailValidationMessage,
+.countryValidationMessage,
+.phoneValidationMessage,
+.messageValidationMessage {
+  font-family: "Segoe UI", sans-serif !important;
+  font-size: 11px !important;
+  line-height: 18px !important;
+  font-weight: 400 !important;
+  color: #b3261e !important;
+}
+
+/* --------------------------------------------------------------------------
+   Input surface — preserve current dimensions/layout, use Book a Demo shadows
+   -------------------------------------------------------------------------- */
+
+.frameChild,
+.frameWrapper4,
+.frameInner,
+.frameIcon,
+.frameParent4,
+.frameParent6 {
+  background: #dfe6e9 !important;
+  box-shadow:
+    inset 4px 4px 4px #c4c4c4,
+    inset -4px -4px 4px #ffffff !important;
+}
+
+/* --------------------------------------------------------------------------
+   Icons — same compact blue neumorphic icon treatment as Book a Demo
+   -------------------------------------------------------------------------- */
+
+.fieldIconCircle,
+.phoneIconCircle,
+.subjectIconCircle {
+  width: 27px !important;
+  height: 27px !important;
+  min-width: 27px !important;
+  min-height: 27px !important;
+  flex: 0 0 27px !important;
+  border: 1.5px solid #2d4cc8 !important;
+  border-radius: 50% !important;
+  background: #dfe6e9 !important;
+  box-shadow:
+    4px 4px 4px #c4c4c4,
+    -4px -4px 4px #ffffff !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  box-sizing: border-box !important;
+}
+
+.fieldIcon,
+.phoneIcon,
+.subjectIcon {
+  width: 15px !important;
+  height: 15px !important;
+  min-width: 15px !important;
+  min-height: 15px !important;
+  object-fit: contain !important;
+  transform: none !important;
+  filter:
+    brightness(0)
+    saturate(100%)
+    invert(29%)
+    sepia(94%)
+    saturate(2521%)
+    hue-rotate(220deg)
+    brightness(84%)
+    contrast(91%) !important;
+}
+
+.countryArrowIcon,
+.arrowDown01Icon {
+  filter:
+    brightness(0)
+    saturate(100%)
+    invert(29%)
+    sepia(94%)
+    saturate(2521%)
+    hue-rotate(220deg)
+    brightness(84%)
+    contrast(91%) !important;
+}
+
+/* --------------------------------------------------------------------------
+   Country code + phone — same Book a Demo presentation
+   Country remains on the left; phone consumes the remaining row width.
+   -------------------------------------------------------------------------- */
+
+.frameParent3 {
+  grid-template-columns: 122px minmax(0, 1fr) !important;
+  gap: 16px !important;
+}
+
+.countrySelectField,
+.countryCodeSelect {
+  width: 122px !important;
+  min-width: 122px !important;
+  max-width: 122px !important;
+}
+
+.countryCodeSelect {
+  padding-left: 12px !important;
+  padding-right: 30px !important;
+  justify-content: flex-start !important;
+  text-align: left !important;
+  font-family: "Inter", sans-serif !important;
+  font-size: 16px !important;
+  line-height: 24px !important;
+  font-weight: 400 !important;
+  color: #2f3547 !important;
+  background: #dfe6e9 !important;
+  box-shadow:
+    inset 4px 4px 4px #c4c4c4,
+    inset -4px -4px 4px #ffffff !important;
+}
+
+.countryCodeLabel {
+  min-width: 0 !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+  white-space: nowrap !important;
+}
+
+.countryArrowIcon {
+  right: 9px !important;
+  width: 15px !important;
+  height: 15px !important;
+}
+
+/* Country popup uses the Book a Demo neumorphic surface */
+.countryCodeDropdown {
+  width: 210px !important;
+  min-width: 210px !important;
+  max-width: min(310px, calc(100vw - 32px)) !important;
+  border-top: 0 !important;
+  border-radius: 10px !important;
+  background: #dfe6e9 !important;
+  box-shadow:
+    4px 4px 4px #c4c4c4,
+    -4px -4px 4px #ffffff !important;
+}
+
+.countrySearchInput {
+  font-family: "Inter", sans-serif !important;
+  font-size: 14px !important;
+  line-height: 18px !important;
+  color: #2f3547 !important;
+}
+
+.countryCodeOption {
+  font-family: "Inter", sans-serif !important;
+  font-size: 14px !important;
+  line-height: 18px !important;
+  color: #2f3547 !important;
+}
+
+.countryCodeOption:hover,
+.countryCodeOption:focus-visible,
+.countryCodeOptionSelected {
+  color: #2d4cc8 !important;
+}
+
+/* Phone field remains the flexible right-hand control */
+.frameIcon {
+  min-width: 0 !important;
+  width: 100% !important;
+}
+
+.phoneNumberInput {
+  min-width: 0 !important;
+  width: 100% !important;
+}
+
+/* --------------------------------------------------------------------------
+   Subject field — same icon/text hierarchy as Book a Demo
+   -------------------------------------------------------------------------- */
+
+.frameParent4 {
+  color: #2f3547 !important;
+}
+
+.selectedSubjectText {
+  opacity: 0.7 !important;
+}
+
+.hasSubjectValue {
+  color: #2d4cc8 !important;
+  font-weight: 500 !important;
+  opacity: 1 !important;
+}
+
+.subjectDropdown {
+  background: #dfe6e9 !important;
+  border-top: 0 !important;
+  box-shadow:
+    4px 4px 4px #c4c4c4,
+    -4px -4px 4px #ffffff !important;
+}
+
+.subjectOptionText {
+  font-family: "Inter", sans-serif !important;
+  font-size: 14px !important;
+  line-height: 18px !important;
+  color: #2f3547 !important;
+}
+
+/* --------------------------------------------------------------------------
+   Message area / counter
+   -------------------------------------------------------------------------- */
+
+.messageCharacterCount {
+  font-family: "Inter", sans-serif !important;
+  color: rgba(49, 52, 75, 0.68) !important;
+}
+
+/* --------------------------------------------------------------------------
+   Checkbox / consent — directly clickable and visually identical in treatment
+   -------------------------------------------------------------------------- */
+
+.frameParent7 {
+  font-family: "Segoe UI", sans-serif !important;
+  font-size: 11px !important;
+  line-height: 20px !important;
+  color: #31344b !important;
+  text-align: left !important;
+}
+
+.checkboxControl,
+.frameChild2,
+.checkboxVisual {
+  width: 24px !important;
+  height: 24px !important;
+}
+
+.checkboxVisual {
+  background: #dfe6e9 !important;
+  border-radius: 4px !important;
+  box-shadow:
+    inset 4px 4px 4px #c4c4c4,
+    inset -4px -4px 4px #ffffff !important;
+}
+
+.frameChild2:checked + .checkboxVisual {
+  background: #dfe6e9 !important;
+  box-shadow:
+    4px 4px 4px #c4c4c4,
+    -4px -4px 4px #ffffff !important;
+}
+
+.checkboxTickIcon {
+  width: 16px !important;
+  height: 16px !important;
+  filter:
+    brightness(0)
+    saturate(100%)
+    invert(29%)
+    sepia(94%)
+    saturate(2521%)
+    hue-rotate(220deg)
+    brightness(84%)
+    contrast(91%) !important;
+}
+
+.iConfirmMyContainer,
+.iConfirmMy,
+.privacyPolicy {
+  font-family: "Segoe UI", sans-serif !important;
+  font-size: 11px !important;
+  line-height: 20px !important;
+}
+
+.privacyPolicy {
+  color: #2d4cc8 !important;
+  font-weight: 600 !important;
+  text-decoration: underline !important;
+  background: transparent !important;
+  border: 0 !important;
+  padding: 0 !important;
+  cursor: pointer !important;
+}
+
+/* --------------------------------------------------------------------------
+   Submit button — retain current button geometry; use Book a Demo text style
+   -------------------------------------------------------------------------- */
+
+.frameWrapper9 {
+  background: #dfe6e9 !important;
+  color: #2d4cc8 !important;
+  box-shadow:
+    4px 4px 4px #c4c4c4,
+    -4px -4px 4px #ffffff !important;
+  font-family: "Segoe UI", sans-serif !important;
+  font-size: 13px !important;
+  line-height: 18px !important;
+}
+
+.sendMessage {
+  font-size: 13px !important;
+  line-height: 18px !important;
+  color: #2d4cc8 !important;
+}
+
+.sendIcon {
+  width: 18px !important;
+  height: 18px !important;
+  filter:
+    brightness(0)
+    saturate(100%)
+    invert(29%)
+    sepia(94%)
+    saturate(2521%)
+    hue-rotate(220deg)
+    brightness(84%)
+    contrast(91%) !important;
+}
+
+/* --------------------------------------------------------------------------
+   Close button — Book a Demo style, added without changing page structure
+   -------------------------------------------------------------------------- */
+
+.contactCloseButton {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  z-index: 200;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  background: #dfe6e9;
+  color: #31344b;
+  box-shadow:
+    4px 4px 4px #c4c4c4,
+    -4px -4px 4px #ffffff;
+  cursor: pointer;
+}
+
+.contactCloseButton:hover {
+  box-shadow:
+    3px 3px 4px #c4c4c4,
+    -3px -3px 4px #ffffff;
+}
+
+.contactCloseButton:active {
+  box-shadow:
+    inset 3px 3px 4px #c4c4c4,
+    inset -3px -3px 4px #ffffff;
+}
+
+.contactCloseButton:focus-visible {
+  outline: 2px solid #2d4cc8;
+  outline-offset: 2px;
+}
+
+.contactCloseIcon {
+  width: 18px;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Segoe UI", sans-serif;
+  font-size: 22px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #31344b;
+  transform: translateY(-1px);
+}
+
+/* --------------------------------------------------------------------------
+   Responsive protection for the country + phone row only.
+   Existing Contact Us responsive layout remains otherwise unchanged.
+   -------------------------------------------------------------------------- */
+
+@media (max-width: 640px) {
+  .frameParent3 {
+    grid-template-columns: 110px minmax(0, 1fr) !important;
+    gap: 10px !important;
+  }
+
+  .countrySelectField,
+  .countryCodeSelect {
+    width: 110px !important;
+    min-width: 110px !important;
+    max-width: 110px !important;
+  }
+
+  .contactInput,
+  .countryCodeSelect,
+  .selectedSubjectText,
+  .typeYourMessage {
+    font-size: 16px !important;
+  }
+}
+
+@media (max-width: 420px) {
+  .frameParent3 {
+    grid-template-columns: 104px minmax(0, 1fr) !important;
+    gap: 8px !important;
+  }
+
+  .countrySelectField,
+  .countryCodeSelect {
+    width: 104px !important;
+    min-width: 104px !important;
+    max-width: 104px !important;
+  }
+
+  .countryCodeSelect {
+    padding-left: 9px !important;
+    padding-right: 25px !important;
+  }
+
+  .countryArrowIcon {
+    right: 7px !important;
+  }
+}
+
+/* ==========================================================================
+   FINAL REQUESTED FIXES ONLY
+   1. Country list presentation matches Book a Demo
+   2. Selected Subject retains the circular selection design
+   3. Close button hides only this form (handled in TSX)
+   4. Contact Us heading uses the Book a Demo gradient
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   1. CONTACT US TITLE — Book a Demo gradient
+   -------------------------------------------------------------------------- */
+
+.contactUs {
+  width: auto !important;
+  align-self: center !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  display: inline-block !important;
+  position: relative !important;
+
+  font-family: "Segoe UI", sans-serif !important;
+  font-size: 25px !important;
+  line-height: 29px !important;
+  font-weight: 700 !important;
+
+  color: #2d4cc8 !important;
+  background: linear-gradient(
+    90deg,
+    #2d4cc8 0%,
+    #5a42bd 58%,
+    #b22686 100%
+  ) !important;
+
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+
+  text-shadow: none !important;
+}
+
+/* --------------------------------------------------------------------------
+   2. COUNTRY CODE LIST — Book a Demo presentation
+   Keep the existing country-code + phone-row layout unchanged.
+   -------------------------------------------------------------------------- */
+
+.countrySelectField {
+  position: relative !important;
+  overflow: visible !important;
+  z-index: 310 !important;
+}
+
+.countryCodeSelect {
+  position: relative !important;
+  z-index: 311 !important;
+}
+
+.countryCodeDropdown {
+  position: absolute !important;
+  top: calc(100% + 6px) !important;
+  left: 0 !important;
+  right: auto !important;
+
+  width: 212px !important;
+  min-width: 212px !important;
+  max-width: min(260px, calc(100vw - 20px)) !important;
+  max-height: 220px !important;
+
+  padding: 7px !important;
+  box-sizing: border-box !important;
+
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 0 !important;
+
+  border: 0 !important;
+  border-radius: 10px !important;
+  background: #dfe6e9 !important;
+
+  box-shadow:
+    7px 7px 14px #c4c4c4,
+    -7px -7px 14px #ffffff !important;
+
+  overflow-y: auto !important;
+  overflow-x: hidden !important;
+  overscroll-behavior: contain !important;
+  z-index: 10020 !important;
+
+  scrollbar-width: thin;
+  scrollbar-color: #aeb7c0 #dfe6e9;
+}
+
+.countryCodeDropdown::-webkit-scrollbar {
+  width: 8px;
+}
+
+.countryCodeDropdown::-webkit-scrollbar-track {
+  background: #dfe6e9;
+  border-radius: 10px;
+}
+
+.countryCodeDropdown::-webkit-scrollbar-thumb {
+  background: #aeb7c0;
+  border: 2px solid #dfe6e9;
+  border-radius: 10px;
+}
+
+.countrySearchWrapper {
+  position: sticky !important;
+  top: 0 !important;
+  z-index: 2 !important;
+
+  width: 100% !important;
+  margin: 0 !important;
+  padding: 0 0 7px !important;
+  box-sizing: border-box !important;
+
+  background: #dfe6e9 !important;
+}
+
+.countrySearchInput {
+  width: 100% !important;
+  height: 36px !important;
+  padding: 0 10px !important;
+  box-sizing: border-box !important;
+
+  border: 0 !important;
+  outline: 0 !important;
+  border-radius: 7px !important;
+
+  background: #dfe6e9 !important;
+  box-shadow:
+    inset 3px 3px 5px #c4c4c4,
+    inset -3px -3px 5px #ffffff !important;
+
+  font-family: "Inter", sans-serif !important;
+  font-size: 14px !important;
+  line-height: 20px !important;
+  font-weight: 400 !important;
+  color: #2f3547 !important;
+}
+
+.countrySearchInput::placeholder {
+  color: #2f3547 !important;
+  opacity: 0.65 !important;
+}
+
+.countrySearchInput:focus {
+  outline: 1.5px solid #2d4cc8 !important;
+  outline-offset: -1px !important;
+}
+
+.countryOptionsList {
+  width: 100% !important;
+  min-width: 0 !important;
+  box-sizing: border-box !important;
+}
+
+.countryCodeOption {
+  width: 100% !important;
+  min-width: 0 !important;
+  min-height: 34px !important;
+
+  padding: 7px 9px !important;
+  box-sizing: border-box !important;
+
+  border: 0 !important;
+  border-radius: 7px !important;
+
+  display: flex !important;
+  align-items: center !important;
+  justify-content: flex-start !important;
+
+  background: transparent !important;
+
+  font-family: "Inter", sans-serif !important;
+  font-size: 14px !important;
+  line-height: 20px !important;
+  font-weight: 400 !important;
+  color: #2f3547 !important;
+  text-align: left !important;
+  white-space: nowrap !important;
+
+  cursor: pointer !important;
+}
+
+.countryCodeOption:hover,
+.countryCodeOption:focus-visible {
+  color: #2d4cc8 !important;
+  background: #dfe6e9 !important;
+  box-shadow:
+    2px 2px 5px #c4c4c4,
+    -2px -2px 5px #ffffff !important;
+  outline: none !important;
+}
+
+.countryCodeOptionSelected {
+  color: #2d4cc8 !important;
+  font-weight: 600 !important;
+  background: #dfe6e9 !important;
+  box-shadow:
+    inset 2px 2px 5px rgba(196, 196, 196, 0.7),
+    inset -2px -2px 5px rgba(255, 255, 255, 0.8) !important;
+}
+
+.countryNoResults {
+  padding: 8px !important;
+  font-family: "Inter", sans-serif !important;
+  font-size: 14px !important;
+  line-height: 20px !important;
+  color: #2f3547 !important;
+}
+
+/* --------------------------------------------------------------------------
+   3. SUBJECT LIST — keep the circular design after selection
+   -------------------------------------------------------------------------- */
+
+.subjectOption {
+  gap: 16px !important;
+}
+
+.subjectRadio,
+.subjectOptionSelected .subjectRadio {
+  width: 28px !important;
+  height: 28px !important;
+  min-width: 28px !important;
+  min-height: 28px !important;
+  flex: 0 0 28px !important;
+
+  position: relative !important;
+  box-sizing: border-box !important;
+
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+
+  border-radius: 50% !important;
+  background: #dfe6e9 !important;
+}
+
+.subjectRadio {
+  border: 0 !important;
+  box-shadow:
+    inset -4px -4px 8px rgba(255, 255, 255, 0.6),
+    inset 4px 4px 8px #c4c4c4 !important;
+}
+
+.subjectOptionSelected .subjectRadio {
+  border: 1.5px solid #2d4cc8 !important;
+  box-shadow:
+    4px 4px 6px #c4c4c4,
+    -4px -4px 6px #ffffff !important;
+}
+
+/* Always preserve the inner circular ring. */
+.subjectRadio::after,
+.subjectOptionSelected .subjectRadio::after {
+  content: "" !important;
+  display: block !important;
+
+  width: 16px !important;
+  height: 16px !important;
+
+  position: absolute !important;
+  left: 50% !important;
+  top: 50% !important;
+  transform: translate(-50%, -50%) !important;
+
+  box-sizing: border-box !important;
+  border: 1.5px solid rgba(49, 52, 75, 0.22) !important;
+  border-radius: 50% !important;
+  background: transparent !important;
+}
+
+.subjectOptionSelected .subjectRadio::after {
+  border-color: #2d4cc8 !important;
+}
+
+.subjectRadioTick {
+  position: relative !important;
+  z-index: 3 !important;
+
+  width: 14px !important;
+  height: 14px !important;
+
+  display: block !important;
+  object-fit: contain !important;
+
+  opacity: 1 !important;
+  visibility: visible !important;
+
+  filter:
+    brightness(0)
+    saturate(100%)
+    invert(29%)
+    sepia(94%)
+    saturate(2521%)
+    hue-rotate(220deg)
+    brightness(84%)
+    contrast(91%) !important;
+}
+
+.subjectOptionSelected,
+.subjectOptionSelected .subjectOptionText {
+  color: #2d4cc8 !important;
+  font-weight: 600 !important;
+}
+
+/* --------------------------------------------------------------------------
+   4. CLOSE BUTTON VISUAL
+   Its behavior is changed only in TSX: it hides the Contact Us component.
+   -------------------------------------------------------------------------- */
+
+.contactCloseButton {
+  position: absolute !important;
+  top: 8px !important;
+  right: 8px !important;
+  z-index: 500 !important;
+
+  width: 32px !important;
+  height: 32px !important;
+  padding: 0 !important;
+
+  border: 0 !important;
+  border-radius: 50% !important;
+
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+
+  background: #dfe6e9 !important;
+  color: #31344b !important;
+
+  box-shadow:
+    4px 4px 4px #c4c4c4,
+    -4px -4px 4px #ffffff !important;
+
+  cursor: pointer !important;
+}
+
+.contactCloseButton:hover {
+  color: #2d4cc8 !important;
+}
+
+.contactCloseButton:active {
+  box-shadow:
+    inset 3px 3px 4px #c4c4c4,
+    inset -3px -3px 4px #ffffff !important;
+}
+
+.contactCloseButton:focus-visible {
+  outline: 2px solid #2d4cc8 !important;
+  outline-offset: 2px !important;
+}
+
+.contactCloseIcon {
+  width: 18px !important;
+  height: 18px !important;
+
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+
+  font-family: "Segoe UI", sans-serif !important;
+  font-size: 22px !important;
+  line-height: 18px !important;
+  font-weight: 400 !important;
+
+  color: inherit !important;
+  transform: translateY(-1px) !important;
+}
+
+@media (max-width: 640px) {
+  .countryCodeDropdown {
+    width: 212px !important;
+    min-width: 212px !important;
+    max-width: min(260px, calc(100vw - 20px)) !important;
+  }
+}
+
+/* ==========================================================================
+   FINAL COUNTRY DISPLAY + GLOBAL CARD SHADOW CORRECTION
+   Requested changes only.
+   ========================================================================== */
+
+/* Book a Demo raised global card shadow */
+.frameWrapper {
+  background-color: #dfe6e9 !important;
+  box-shadow:
+    4px 4px 4px #c4c4c4,
+    -4px -4px 4px #ffffff !important;
+}
+
+/* Keep compact country-code presentation */
+.countryCodeLabel,
+.countryCodeOption {
+  white-space: nowrap !important;
+}
+
+.countryCodeLabel {
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+}
+
+/* The dropdown is intentionally compact because options now render:
+   IN (+91), US (+1), GB (+44), etc. */
+.countryCodeDropdown {
+  width: 156px !important;
+  min-width: 156px !important;
+  max-width: 156px !important;
+}
+
+/* ==========================================================================
+   FINAL — CONTACT US MATCHES APPROVED BOOK A DEMO FIELD DIMENSIONS
+   --------------------------------------------------------------------------
+   Requested changes only:
+   - Character counter matches Book a Demo.
+   - Field label color / font weight / sizing matches Book a Demo.
+   - Standard input height and field spacing match Book a Demo.
+   - Message field height and counter position match Book a Demo.
+   - Tablet/mobile dimensions follow the same Book a Demo responsive sizing.
+   - Existing Contact Us layout, validation, dropdown behavior, subject,
+     privacy dialog, button behavior, colors/effects not listed here remain.
+   ========================================================================== */
+
+/* ---------- Labels: same visual treatment as Book a Demo ---------- */
+.fullName,
+.emailAddress,
+.message {
+  font-family: "Inter", sans-serif !important;
+  font-size: 14px !important;
+  line-height: 20px !important;
+  font-weight: 600 !important;
+  color: rgba(49, 52, 75, 0.9) !important;
+}
+
+/* ---------- Field-to-field / label-to-field spacing ---------- */
+.fullNameParent,
+.emailAddressParent {
+  gap: 8px !important;
+}
+
+.frameDiv {
+  gap: 16px !important;
+}
+
+/* ---------- Standard input/control height: Book a Demo desktop ---------- */
+.frameChild,
+.frameWrapper4,
+.frameParent3,
+.frameInner,
+.frameIcon,
+.countryCodeSelect,
+.frameParent4 {
+  height: 48px !important;
+  min-height: 48px !important;
+  max-height: 48px !important;
+}
+
+/* Keep inner input content vertically centered inside the 48px controls. */
+.fieldContent,
+.frameParent2,
+.contactInput,
+.phoneNumberInput {
+  height: 34px !important;
+  min-height: 34px !important;
+  max-height: 34px !important;
+}
+
+/* ---------- Input typography ---------- */
+.contactInput,
+.countryCodeSelect,
+.selectedSubjectText,
+.typeYourMessage {
+  font-family: "Inter", sans-serif !important;
+  font-size: 14px !important;
+  line-height: 20px !important;
+  font-weight: 400 !important;
+  color: #2f3547 !important;
+}
+
+/* ---------- Message field: same approved Book a Demo dimensions ---------- */
+.frameParent5 {
+  height: auto !important;
+  min-height: 0 !important;
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 8px !important;
+  position: relative !important;
+}
+
+.frameWrapper7 {
+  width: 100% !important;
+  height: auto !important;
+  position: static !important;
+  left: auto !important;
+  top: auto !important;
+}
+
+.messageWrapper {
+  width: 100% !important;
+  height: auto !important;
+  padding: 0 !important;
+  justify-content: flex-start !important;
+}
+
+.frameParent6 {
+  width: 100% !important;
+  height: 64px !important;
+  min-height: 64px !important;
+  max-height: 64px !important;
+  position: relative !important;
+  top: auto !important;
+  left: auto !important;
+  overflow: visible !important;
+  border-radius: 11px !important;
+  box-shadow:
+    inset 4px 4px 4px #c4c4c4,
+    inset -4px -4px 4px #ffffff !important;
+}
+
+.frameWrapper8 {
+  width: calc(100% - 22px) !important;
+  height: 46px !important;
+  min-height: 46px !important;
+  max-height: 46px !important;
+  position: absolute !important;
+  top: 9px !important;
+  left: 11px !important;
+}
+
+.typeYourMessageHereWrapper {
+  width: 100% !important;
+  height: 46px !important;
+  min-height: 46px !important;
+  max-height: 46px !important;
+  position: relative !important;
+  overflow: visible !important;
+}
+
+.typeYourMessage {
+  width: 100% !important;
+  height: 46px !important;
+  min-height: 46px !important;
+  max-height: 46px !important;
+  padding: 0 !important;
+  box-sizing: border-box !important;
+  resize: none !important;
+  opacity: 1 !important;
+}
+
+/* ---------- Character counter: same Book a Demo font/color/position ---------- */
+.messageCharacterCount {
+  position: absolute !important;
+  top: -17px !important;
+  right: 8px !important;
+  z-index: 2 !important;
+
+  margin: 0 !important;
+  padding: 0 !important;
+
+  font-family: "Segoe UI", sans-serif !important;
+  font-size: 10px !important;
+  line-height: 12px !important;
+  font-weight: 400 !important;
+  letter-spacing: 0.01em !important;
+
+  color: rgba(49, 52, 75, 0.62) !important;
+  background: transparent !important;
+  pointer-events: none !important;
+  user-select: none !important;
+  white-space: nowrap !important;
+}
+
+/* ==========================================================================
+   TABLET — same compact dimensions used by Book a Demo
+   ========================================================================== */
+@media (min-width: 641px) and (max-width: 768px) {
+  .fullName,
+  .emailAddress,
+  .message {
+    font-size: 13px !important;
+    line-height: 18px !important;
+    font-weight: 600 !important;
+  }
+
+  .fullNameParent,
+  .emailAddressParent {
+    gap: 6px !important;
+  }
+
+  .frameDiv {
+    gap: 14px !important;
+  }
+
+  .frameChild,
+  .frameWrapper4,
+  .frameParent3,
+  .frameInner,
+  .frameIcon,
+  .countryCodeSelect,
+  .frameParent4 {
+    height: 46px !important;
+    min-height: 46px !important;
+    max-height: 46px !important;
+  }
+
+  .frameParent5 {
+    gap: 7px !important;
+  }
+}
+
+/* ==========================================================================
+   MOBILE — same compact dimensions used by Book a Demo
+   ========================================================================== */
+@media (max-width: 640px) {
+  .fullName,
+  .emailAddress,
+  .message {
+    font-size: 13px !important;
+    line-height: 18px !important;
+    font-weight: 600 !important;
+  }
+
+  .fullNameParent,
+  .emailAddressParent {
+    gap: 6px !important;
+  }
+
+  .frameDiv {
+    gap: 13px !important;
+  }
+
+  .frameChild,
+  .frameWrapper4,
+  .frameParent3,
+  .frameInner,
+  .frameIcon,
+  .countryCodeSelect,
+  .frameParent4 {
+    height: 46px !important;
+    min-height: 46px !important;
+    max-height: 46px !important;
+  }
+
+  .frameParent5 {
+    gap: 7px !important;
+  }
+
+  .frameParent6 {
+    height: 64px !important;
+    min-height: 64px !important;
+    max-height: 64px !important;
+  }
+
+  .frameWrapper8,
+  .typeYourMessageHereWrapper,
+  .typeYourMessage {
+    height: 46px !important;
+    min-height: 46px !important;
+    max-height: 46px !important;
+  }
+
+  .messageCharacterCount {
+    top: -17px !important;
+    right: 8px !important;
+  }
+}
+
+/* ==========================================================================
+   FINAL — CONTACT US BOOK A DEMO VISUAL CORRECTIONS ONLY
+   --------------------------------------------------------------------------
+   Requested changes only:
+   1. Input icons use the same compact neumorphic treatment as Book a Demo.
+   2. Message counter sits ABOVE the textarea, aligned to the top-right.
+   3. Main inner form card uses the recessed/inset neumorphic effect.
+   4. Message field alignment remains clean after moving the counter.
+   No validation, field order, dimensions outside these items, dropdown logic,
+   subject behavior, privacy dialog, submit behavior or API logic is changed.
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   1. Icons — exact Book a Demo compact neumorphic treatment
+   -------------------------------------------------------------------------- */
+
+.fieldIconCircle,
+.phoneIconCircle,
+.subjectIconCircle {
+  width: 27px !important;
+  height: 27px !important;
+  min-width: 27px !important;
+  min-height: 27px !important;
+  flex: 0 0 27px !important;
+
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+
+  box-sizing: border-box !important;
+  border: 1.5px solid #2d4cc8 !important;
+  border-radius: 50% !important;
+  background: #dfe6e9 !important;
+
+  box-shadow:
+    4px 4px 4px #c4c4c4,
+    -4px -4px 4px #ffffff !important;
+}
+
+.fieldIcon,
+.phoneIcon,
+.subjectIcon {
+  width: 15px !important;
+  height: 15px !important;
+  min-width: 15px !important;
+  min-height: 15px !important;
+
+  display: block !important;
+  object-fit: contain !important;
+  transform: none !important;
+
+  filter:
+    brightness(0)
+    saturate(100%)
+    invert(29%)
+    sepia(94%)
+    saturate(2521%)
+    hue-rotate(220deg)
+    brightness(84%)
+    contrast(91%) !important;
+}
+
+/* --------------------------------------------------------------------------
+   2. Main inner form card — recessed/inset, not raised
+   -------------------------------------------------------------------------- */
+
+.frameWrapper {
+  background-color: #dfe6e9 !important;
+  box-shadow:
+    inset 4px 4px 4px #c4c4c4,
+    inset -4px -4px 4px #ffffff !important;
+}
+
+/* --------------------------------------------------------------------------
+   3. Message heading row + character count
+   Counter is now in the heading row so it is truly ABOVE the input.
+   -------------------------------------------------------------------------- */
+
+.frameParent5 {
+  width: 100% !important;
+  height: auto !important;
+  min-height: 0 !important;
+  position: relative !important;
+
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 8px !important;
+}
+
+.frameWrapper7 {
+  width: 100% !important;
+  height: auto !important;
+  position: static !important;
+  top: auto !important;
+  left: auto !important;
+  padding: 0 !important;
+}
+
+.messageWrapper {
+  width: 100% !important;
+  height: 20px !important;
+  min-height: 20px !important;
+
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+
+  padding: 0 !important;
+  box-sizing: border-box !important;
+}
+
+.messageCharacterCount {
+  position: static !important;
+  inset: auto !important;
+
+  margin: 0 !important;
+  padding: 0 !important;
+
+  font-family: "Segoe UI", sans-serif !important;
+  font-size: 10px !important;
+  line-height: 12px !important;
+  font-weight: 400 !important;
+  letter-spacing: 0.01em !important;
+
+  color: rgba(49, 52, 75, 0.62) !important;
+  background: transparent !important;
+
+  white-space: nowrap !important;
+  text-align: right !important;
+  pointer-events: none !important;
+  user-select: none !important;
+}
+
+/* --------------------------------------------------------------------------
+   4. Message input surface — keep aligned and recessed
+   -------------------------------------------------------------------------- */
+
+.frameParent6 {
+  width: 100% !important;
+  height: 64px !important;
+  min-height: 64px !important;
+  max-height: 64px !important;
+
+  position: relative !important;
+  top: auto !important;
+  left: auto !important;
+
+  margin: 0 !important;
+  overflow: hidden !important;
+  border-radius: 11px !important;
+  background: #dfe6e9 !important;
+
+  box-shadow:
+    inset 4px 4px 4px #c4c4c4,
+    inset -4px -4px 4px #ffffff !important;
+}
+
+.frameWrapper8 {
+  width: calc(100% - 22px) !important;
+  height: 46px !important;
+  min-height: 46px !important;
+  max-height: 46px !important;
+
+  position: absolute !important;
+  top: 9px !important;
+  left: 11px !important;
+
+  padding: 0 !important;
+  box-sizing: border-box !important;
+}
+
+.typeYourMessageHereWrapper,
+.typeYourMessage {
+  width: 100% !important;
+  height: 46px !important;
+  min-height: 46px !important;
+  max-height: 46px !important;
+}
+
+.typeYourMessage {
+  padding: 0 !important;
+  box-sizing: border-box !important;
+  resize: none !important;
+}
+
+/* Tablet/mobile: retain the same clean message-header alignment. */
+@media (max-width: 768px) {
+  .frameParent5 {
+    gap: 7px !important;
+  }
+
+  .messageWrapper {
+    height: 20px !important;
+    min-height: 20px !important;
+  }
+
+  .messageCharacterCount {
+    font-size: 10px !important;
+    line-height: 12px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .messageWrapper {
+    gap: 8px !important;
+  }
+
+  .messageCharacterCount {
+    max-width: 55% !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+  }
+}
+
+/* ==========================================================================
+   CONTACT US MODAL
+   Renders the form above the page instead of inside the footer layout.
+   ========================================================================== */
+
+.contactModalOverlay {
+  position: fixed;
+  inset: 0;
+  z-index: 2147483000;
+  width: 100vw;
+  height: 100dvh;
+  padding: 16px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(31, 36, 52, 0.48);
+  -webkit-backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
+  overflow: hidden;
+}
+
+.contactModalDialog {
+  position: relative;
+  isolation: isolate;
+  width: min(762px, calc(100vw - 32px));
+  max-width: calc(100vw - 32px);
+  max-height: calc(100dvh - 32px);
+  border-radius: 12px;
+  background: #dfe6e9;
+  box-shadow:
+    -8px -8px 16px rgba(255, 255, 255, 0.42),
+    12px 12px 28px rgba(18, 24, 38, 0.34);
+  overflow: hidden;
+}
+
+.contactModalDialog .before {
+  width: 100% !important;
+  max-width: 100% !important;
+  height: auto !important;
+  min-height: 0 !important;
+  max-height: calc(100dvh - 32px) !important;
+  margin: 0 !important;
+  border-radius: inherit !important;
+  overflow-x: hidden !important;
+  overflow-y: auto !important;
+  overscroll-behavior: contain;
+}
+
+.contactModalDialog .contactCloseButton {
+  position: absolute !important;
+  top: 10px !important;
+  right: 10px !important;
+  z-index: 2147483001 !important;
+}
+
+@media (max-width: 640px) {
+  .contactModalOverlay {
+    padding: 10px;
+  }
+
+  .contactModalDialog {
+    width: calc(100vw - 20px);
+    max-width: calc(100vw - 20px);
+    max-height: calc(100dvh - 20px);
+    border-radius: 12px;
+  }
+
+  .contactModalDialog .before {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+    max-height: calc(100dvh - 20px) !important;
+  }
+}
+
+/* ==========================================================================
+   FINAL — MESSAGE COUNTER ALIGNMENT + HORIZONTAL SCROLL FIX ONLY
+   --------------------------------------------------------------------------
+   Requested changes only:
+   - Align the message counter neatly above the message field at the right.
+   - Increase counter text size and use semibold weight.
+   - Remove the unwanted bottom horizontal scrollbar.
+   - No other field, layout, validation, icon, dropdown, button or behavior
+     is changed.
+   ========================================================================== */
+
+/* Prevent any child from forcing the Contact Us card wider than its container. */
+.before,
+.frameParent,
+.frameWrapper,
+.frameGroup,
+.frameContainer,
+.frameDiv,
+.frameParent5,
+.frameWrapper7,
+.messageWrapper,
+.frameParent6,
+.frameWrapper8,
+.typeYourMessageHereWrapper {
+  max-width: 100% !important;
+  min-width: 0 !important;
+  box-sizing: border-box !important;
+}
+
+.before {
+  overflow-x: hidden !important;
+}
+
+.frameWrapper,
+.frameGroup,
+.frameContainer,
+.frameDiv {
+  overflow-x: visible !important;
+}
+
+/* Message heading row: align label left and counter to the field's right edge. */
+.messageWrapper {
+  width: 100% !important;
+  height: 20px !important;
+  min-height: 20px !important;
+
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+
+  padding: 0 11px 0 0 !important;
+  margin: 0 !important;
+  box-sizing: border-box !important;
+}
+
+/* Counter: slightly larger, semibold, and aligned neatly above the input. */
+.messageCharacterCount {
+  position: static !important;
+  inset: auto !important;
+
+  margin: 0 !important;
+  padding: 0 !important;
+
+  flex: 0 0 auto !important;
+  align-self: center !important;
+
+  font-family: "Segoe UI", sans-serif !important;
+  font-size: 12px !important;
+  line-height: 16px !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.01em !important;
+
+  color: rgba(49, 52, 75, 0.78) !important;
+  background: transparent !important;
+
+  white-space: nowrap !important;
+  text-align: right !important;
+  pointer-events: none !important;
+  user-select: none !important;
+}
+
+/* Keep the message box exactly within the form width. */
+.frameParent6 {
+  width: 100% !important;
+  max-width: 100% !important;
+  left: auto !important;
+  right: auto !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+/* Responsive protection against horizontal overflow. */
+@media (max-width: 768px) {
+  .before {
+    width: calc(100% - 20px) !important;
+    max-width: calc(100% - 20px) !important;
+    overflow-x: hidden !important;
+  }
+
+  .messageWrapper {
+    padding-right: 10px !important;
+  }
+
+  .messageCharacterCount {
+    font-size: 11px !important;
+    line-height: 15px !important;
+    font-weight: 600 !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .messageWrapper {
+    padding-right: 8px !important;
+    gap: 8px !important;
+  }
+
+  .messageCharacterCount {
+    max-width: none !important;
+    overflow: visible !important;
+    text-overflow: clip !important;
+    font-size: 10px !important;
+    line-height: 14px !important;
+    font-weight: 600 !important;
+  }
+}
+
+/* ==========================================================================
+   FINAL — MESSAGE COUNTER ALIGNMENT CORRECTION ONLY
+   --------------------------------------------------------------------------
+   Fixes the actual cause of the counter being pushed/clipped:
+   the MESSAGE label inherited width:100%, which forced the counter past the
+   right edge. The label is now content-width only inside the message header.
+   No other field, layout, validation, icon, dropdown or behavior is changed.
+   ========================================================================== */
+
+/* Keep the heading row exactly as wide as the message input. */
+.frameParent5,
+.frameWrapper7,
+.messageWrapper {
+  width: 100% !important;
+  max-width: 100% !important;
+  min-width: 0 !important;
+  box-sizing: border-box !important;
+}
+
+/* MESSAGE label must NOT occupy the full row. */
+.messageWrapper .message {
+  width: auto !important;
+  max-width: none !important;
+  min-width: 0 !important;
+  flex: 0 0 auto !important;
+  margin: 0 !important;
+}
+
+/* Book-a-Demo style: label at left, full counter at the upper-right,
+   with a small inset so it does not touch the field/card corner. */
+.messageWrapper {
+  height: 20px !important;
+  min-height: 20px !important;
+
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+
+  padding: 0 12px 0 0 !important;
+  margin: 0 !important;
+  overflow: visible !important;
+}
+
+/* Always show the COMPLETE counter text. */
+.messageCharacterCount {
+  position: static !important;
+  inset: auto !important;
+
+  width: auto !important;
+  max-width: none !important;
+  min-width: max-content !important;
+
+  flex: 0 0 auto !important;
+  align-self: center !important;
+
+  margin: 0 !important;
+  padding: 0 !important;
+
+  overflow: visible !important;
+  text-overflow: clip !important;
+  white-space: nowrap !important;
+  text-align: right !important;
+
+  font-family: "Segoe UI", sans-serif !important;
+  font-size: 12px !important;
+  line-height: 16px !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.01em !important;
+  color: rgba(49, 52, 75, 0.78) !important;
+
+  background: transparent !important;
+  pointer-events: none !important;
+  user-select: none !important;
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  .messageWrapper {
+    padding-right: 10px !important;
+  }
+
+  .messageCharacterCount {
+    font-size: 11px !important;
+    line-height: 15px !important;
+    font-weight: 600 !important;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .messageWrapper {
+    padding-right: 8px !important;
+    gap: 8px !important;
+  }
+
+  .messageCharacterCount {
+    min-width: max-content !important;
+    max-width: none !important;
+    overflow: visible !important;
+    text-overflow: clip !important;
+    font-size: 10px !important;
+    line-height: 14px !important;
+    font-weight: 600 !important;
+  }
+}

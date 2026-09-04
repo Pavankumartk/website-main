@@ -83,13 +83,6 @@ const COUNTRIES = (
     list.findIndex((entry) => entry.iso2 === country.iso2) === index
 );
 
-function getFlagEmoji(iso2: string) {
-  return iso2
-    .toUpperCase()
-    .replace(/./g, (char) =>
-      String.fromCodePoint(127397 + char.charCodeAt(0))
-    );
-}
 
 function IconBubble({ children }: { children: ReactNode }) {
   return (
@@ -105,14 +98,14 @@ function UserIcon() {
       <g filter="url(#tteUserShadow)">
         <path
           d="M14.6338 7.09509C14.6356 4.79391 12.7715 2.92696 10.4704 2.92515C8.16919 2.92334 6.30224 4.78736 6.30044 7.08854C6.29863 9.38971 8.16265 11.2567 10.4638 11.2585C12.765 11.2603 14.632 9.39625 14.6338 7.09509Z"
-          stroke="#2F3547"
+          stroke="#2D4CC8"
           strokeWidth="1.25"
           strokeLinecap="round"
           strokeLinejoin="round"
         />
         <path
           d="M16.292 17.0964C16.2945 13.8747 13.6849 11.261 10.4632 11.2585C7.24156 11.256 4.62783 13.8656 4.6253 17.0872"
-          stroke="#2F3547"
+          stroke="#2D4CC8"
           strokeWidth="1.25"
           strokeLinecap="round"
           strokeLinejoin="round"
@@ -169,14 +162,14 @@ function MailIcon() {
       <g filter="url(#tteMailShadow)">
         <path
           d="M4.625 5L10.3858 8.26414C12.5097 9.4675 13.407 9.4675 15.5308 8.26414L21.2917 5"
-          stroke="#2F3547"
+          stroke="#2D4CC8"
           strokeWidth="1.25"
           strokeLinejoin="round"
         />
 
         <path
           d="M4.63814 11.231C4.69262 13.7856 4.71986 15.0629 5.66247 16.0091C6.60507 16.9553 7.91694 16.9882 10.5407 17.0541C12.1577 17.0948 13.7589 17.0948 15.376 17.0541C17.9997 16.9882 19.3116 16.9553 20.2542 16.0091C21.1968 15.0629 21.2241 13.7856 21.2785 11.231C21.2961 10.4096 21.2961 9.59305 21.2785 8.77164C21.2241 6.21702 21.1968 4.93971 20.2542 3.99352C19.3116 3.04733 17.9997 3.01437 15.376 2.94844C13.7589 2.90781 12.1577 2.90781 10.5407 2.94844C7.91694 3.01435 6.60507 3.04731 5.66246 3.99351C4.71985 4.9397 4.69262 6.21701 4.63813 8.77164C4.62062 9.59305 4.62063 10.4096 4.63814 11.231Z"
-          stroke="#2F3547"
+          stroke="#2D4CC8"
           strokeWidth="1.25"
           strokeLinejoin="round"
         />
@@ -231,7 +224,7 @@ function PhoneIcon() {
     <svg width="21" height="21" viewBox="0 0 21 21" fill="none">
       <path
         d="M7.64387 4.76618L7.30891 4.01093C7.0899 3.51712 6.98039 3.2702 6.81648 3.08118C6.61106 2.84429 6.34319 2.66991 6.04344 2.57794C5.80425 2.50454 5.53414 2.50433 4.99394 2.5039C4.20369 2.50328 3.80856 2.50297 3.47675 2.65462C3.08589 2.83325 2.73273 3.22153 2.59182 3.62751C2.4722 3.97216 2.50611 4.32647 2.57392 5.03508C3.29577 12.5777 7.42744 16.7159 14.9689 17.4496C15.6774 17.5185 16.0317 17.553 16.3765 17.4339C16.7828 17.2936 17.1716 16.9411 17.3509 16.5505C17.503 16.219 17.5033 15.8238 17.5039 15.0335C17.5043 14.4934 17.5045 14.2233 17.4315 13.984C17.34 13.6841 17.1661 13.4159 16.9295 13.2101C16.7408 13.0459 16.494 12.936 16.0005 12.7162L15.2458 12.3801C14.7114 12.1421 14.4442 12.023 14.1726 11.997C13.9126 11.972 13.6505 12.0083 13.4071 12.1029C13.1528 12.2017 12.928 12.3888 12.4782 12.763C12.0305 13.1354 11.8067 13.3216 11.5333 13.4213C11.2909 13.5097 10.9706 13.5422 10.7154 13.5044C10.4275 13.4617 10.2072 13.3437 9.76648 13.1078C8.39539 12.3736 7.63954 11.6166 6.90757 10.2444C6.67231 9.80327 6.55468 9.58276 6.51248 9.29481C6.47507 9.03962 6.50811 8.71931 6.59682 8.47705C6.69688 8.20381 6.88347 7.98027 7.25663 7.53318C7.63151 7.08404 7.81896 6.85947 7.91816 6.60529C8.0131 6.36206 8.04979 6.09997 8.02527 5.84002C7.99964 5.56837 7.88105 5.30097 7.64387 4.76618Z"
-        stroke="#2F3547"
+        stroke="#2D4CC8"
         strokeWidth="1.25"
         strokeLinecap="round"
       />
@@ -244,42 +237,42 @@ function ClipboardIcon() {
     <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
       <path
         d="M10 9.16602H13.3333"
-        stroke="#2F3547"
+        stroke="#2D4CC8"
         strokeWidth="1.25"
         strokeLinecap="round"
         strokeLinejoin="round"
       />
       <path
         d="M10 13.334H13.3333"
-        stroke="#2F3547"
+        stroke="#2D4CC8"
         strokeWidth="1.25"
         strokeLinecap="round"
         strokeLinejoin="round"
       />
       <path
         d="M6.66699 9.16602H6.67533"
-        stroke="#2F3547"
+        stroke="#2D4CC8"
         strokeWidth="1.25"
         strokeLinecap="round"
         strokeLinejoin="round"
       />
       <path
         d="M6.66699 13.334H6.67533"
-        stroke="#2F3547"
+        stroke="#2D4CC8"
         strokeWidth="1.25"
         strokeLinecap="round"
         strokeLinejoin="round"
       />
       <path
         d="M12.0837 1.66602H7.91699C7.22663 1.66602 6.66699 2.22566 6.66699 2.91602C6.66699 3.60637 7.22663 4.16602 7.91699 4.16602H12.0837C12.774 4.16602 13.3337 3.60637 13.3337 2.91602C13.3337 2.22566 12.774 1.66602 12.0837 1.66602Z"
-        stroke="#2F3547"
+        stroke="#2D4CC8"
         strokeWidth="1.25"
         strokeLinecap="round"
         strokeLinejoin="round"
       />
       <path
         d="M13.333 2.91602C14.6276 2.95502 15.3997 3.09941 15.9341 3.63382C16.6663 4.36605 16.6663 5.54455 16.6663 7.90154V13.3323C16.6663 15.6893 16.6663 16.8678 15.9341 17.6C15.2018 18.3323 14.0233 18.3323 11.6663 18.3323H8.33301C5.97599 18.3323 4.79748 18.3323 4.06525 17.6C3.33302 16.8678 3.33302 15.6893 3.33301 13.3323L3.33302 7.90159C3.33302 5.54456 3.33301 4.36605 4.06524 3.63382C4.59965 3.09941 5.37177 2.95502 6.66626 2.91602"
-        stroke="#2F3547"
+        stroke="#2D4CC8"
         strokeWidth="1.25"
         strokeLinecap="round"
         strokeLinejoin="round"
@@ -305,6 +298,63 @@ function ArrowDownIcon({ open }: { open?: boolean }) {
         strokeWidth="1.25"
         strokeLinecap="round"
         strokeLinejoin="round"
+      />
+    </svg>
+  );
+}
+
+
+function HeadsetIcon() {
+  return (
+    <svg
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      aria-hidden="true"
+      focusable="false"
+    >
+      <defs>
+        <linearGradient
+          id="tteHeadsetGradient"
+          x1="3"
+          y1="4"
+          x2="21"
+          y2="20"
+          gradientUnits="userSpaceOnUse"
+        >
+          <stop offset="0%" stopColor="#2D4CC8" />
+          <stop offset="55%" stopColor="#5A42BD" />
+          <stop offset="100%" stopColor="#B22686" />
+        </linearGradient>
+      </defs>
+
+      <path
+        d="M4 13V11C4 6.582 7.582 3 12 3C16.418 3 20 6.582 20 11V13"
+        stroke="url(#tteHeadsetGradient)"
+        strokeWidth="1.8"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M4 12.5H5.25C6.216 12.5 7 13.284 7 14.25V17.75C7 18.716 6.216 19.5 5.25 19.5H4.75C3.784 19.5 3 18.716 3 17.75V13.5C3 12.948 3.448 12.5 4 12.5Z"
+        stroke="url(#tteHeadsetGradient)"
+        strokeWidth="1.8"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M20 12.5H18.75C17.784 12.5 17 13.284 17 14.25V17.75C17 18.716 17.784 19.5 18.75 19.5H19.25C20.216 19.5 21 18.716 21 17.75V13.5C21 12.948 20.552 12.5 20 12.5Z"
+        stroke="url(#tteHeadsetGradient)"
+        strokeWidth="1.8"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M17 19.5C16.4 21 14.9 21 13.5 21"
+        stroke="url(#tteHeadsetGradient)"
+        strokeWidth="1.8"
+        strokeLinecap="round"
       />
     </svg>
   );
@@ -563,12 +613,36 @@ export default function TalkToOurExpert({
       return COUNTRIES;
     }
 
-    return COUNTRIES.filter(
-      (country) =>
-        country.name.toLowerCase().includes(query) ||
-        country.dialCode.includes(query) ||
-        country.iso2.toLowerCase().includes(query)
+    const normalizedQuery = query
+      .replace(/[()\s-]/g, "")
+      .replace(/^\+/, "");
+
+    /*
+     * Exact ISO-code search gets highest priority.
+     * Example: typing "IN" returns India directly instead of matching
+     * every country name that happens to contain the letters "in".
+     */
+    const exactIsoMatch = COUNTRIES.filter(
+      (country) => country.iso2.toLowerCase() === query
     );
+
+    if (exactIsoMatch.length > 0) {
+      return exactIsoMatch;
+    }
+
+    return COUNTRIES.filter((country) => {
+      const countryName = country.name.toLowerCase();
+      const iso2 = country.iso2.toLowerCase();
+      const dialCode = country.dialCode.replace(/^\+/, "");
+      const shortLabel = `${iso2}(+${dialCode})`;
+
+      return (
+        countryName.includes(query) ||
+        iso2.startsWith(query) ||
+        dialCode.includes(normalizedQuery) ||
+        shortLabel.includes(query.replace(/\s/g, ""))
+      );
+    });
   }, [countrySearch]);
 
   const errors = useMemo(
@@ -773,14 +847,22 @@ export default function TalkToOurExpert({
 
           <div className={styles["tte-form-panel"]}>
             <div className={styles["tte-header"]}>
-              <h2 id="tte-title" className={styles["tte-title"]}>
-                Talk to our Expert
-              </h2>
+              <span
+                className={styles["tte-header-icon"]}
+                aria-hidden="true"
+              >
+                <HeadsetIcon />
+              </span>
 
-              <p className={styles["tte-subtitle"]}>
-                <BotIcon />
-                <span>Get personalized learning guidance</span>
-              </p>
+              <div className={styles["tte-header-copy"]}>
+                <h2 id="tte-title" className={styles["tte-title"]}>
+                  Talk to our Expert
+                </h2>
+
+                <p className={styles["tte-subtitle"]}>
+                  <span>Get personalized learning guidance</span>
+                </p>
+              </div>
             </div>
 
             <div className={styles["tte-form-surface"]}>
@@ -990,27 +1072,10 @@ export default function TalkToOurExpert({
                                   >
                                     <span
                                       className={
-                                        styles["tte-country-flag"]
-                                      }
-                                      aria-hidden="true"
-                                    >
-                                      {getFlagEmoji(country.iso2)}
-                                    </span>
-
-                                    <span
-                                      className={
-                                        styles["tte-country-name"]
+                                        styles["tte-country-short-label"]
                                       }
                                     >
-                                      {country.name}
-                                    </span>
-
-                                    <span
-                                      className={
-                                        styles["tte-country-dial"]
-                                      }
-                                    >
-                                      +{country.dialCode}
+                                      {country.iso2.toUpperCase()} (+{country.dialCode})
                                     </span>
                                   </button>
                                 </li>
@@ -1188,12 +1253,22 @@ export default function TalkToOurExpert({
 
                   {/* QUERY */}
                   <div className={styles["tte-field"]}>
-                    <label
-                      className={styles["tte-label"]}
-                      htmlFor="tte-query"
-                    >
-                      Describe your query or question in detail
-                    </label>
+                    <div className={styles["tte-query-header"]}>
+                      <label
+                        className={styles["tte-label"]}
+                        htmlFor="tte-query"
+                      >
+                        Describe your query or question in detail
+                      </label>
+
+                      <span
+                        id="tte-query-count"
+                        className={styles["tte-query-count"]}
+                        aria-live="polite"
+                      >
+                        {MAX_QUERY_LENGTH - formData.query.length}/{MAX_QUERY_LENGTH} characters left
+                      </span>
+                    </div>
 
                     <div
                       className={`${styles["tte-textarea-shell"]}${
@@ -1230,8 +1305,8 @@ export default function TalkToOurExpert({
                       </span>
                     </div>
 
-                    <div className={styles["tte-query-meta"]}>
-                      {errors.query ? (
+                    {errors.query && (
+                      <div className={styles["tte-query-meta"]}>
                         <span
                           id="tte-query-error"
                           className={styles["tte-error"]}
@@ -1239,15 +1314,8 @@ export default function TalkToOurExpert({
                         >
                           {errors.query}
                         </span>
-                      ) : (
-                        <span
-                          id="tte-query-count"
-                          className={styles["tte-query-count"]}
-                        >
-                          {formData.query.length}/{MAX_QUERY_LENGTH}
-                        </span>
-                      )}
-                    </div>
+                      </div>
+                    )}
                   </div>
 
                   {/* CONSENT */}
@@ -1256,8 +1324,13 @@ export default function TalkToOurExpert({
                       type="checkbox"
                       className={styles["tte-consent-checkbox"]}
                       checked={formData.consent}
-                      readOnly
-                      tabIndex={-1}
+                      onChange={(event) => {
+                        handleFieldChange("consent", event.target.checked);
+                        setTouched((prev) => ({
+                          ...prev,
+                          consent: true,
+                        }));
+                      }}
                       aria-invalid={
                         touched.consent &&
                         Boolean(errors.consent)
@@ -1272,7 +1345,25 @@ export default function TalkToOurExpert({
                     <span
                       className={styles["tte-consent-box"]}
                       aria-hidden="true"
-                    />
+                    >
+                      {formData.consent && (
+                        <svg
+                          className={styles["tte-consent-check"]}
+                          width="12"
+                          height="12"
+                          viewBox="0 0 16 16"
+                          fill="none"
+                        >
+                          <path
+                            d="M3.5 8.2L6.7 11.2L12.5 4.8"
+                            stroke="#2D4CC8"
+                            strokeWidth="2"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                          />
+                        </svg>
+                      )}
+                    </span>
 
                     <span className={styles["tte-consent-text"]}>
                       I agree to be contacted for the platform demo
