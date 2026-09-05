@@ -3,7 +3,6 @@
 import styles from "./Bookademo.module.css";
 import { useEffect, useId, useLayoutEffect, useRef, useState } from "react";
 import type { ReactNode, RefObject } from "react";
-import { createPortal } from "react-dom";
 import { allCountries } from "country-telephone-data";
 import {
   isValidPhoneNumber,
@@ -244,7 +243,7 @@ function CheckIcon({ className }: { className?: string }) {
     >
       <path
         d="M3.5 8.5L6.5 11.5L12.5 4.5"
-        stroke="#2D4CC8"
+        stroke="#FFFFFF"
         strokeWidth="2"
         strokeLinecap="round"
         strokeLinejoin="round"
@@ -641,7 +640,81 @@ function NeumorphicDropdown({
 /* Validation / Time constants                                                */
 /* -------------------------------------------------------------------------- */
 
-const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+const emailPattern =
+  /^[A-Za-z0-9.!#$%&'*+/=?^_`{|}~-]+@[A-Za-z0-9](?:[A-Za-z0-9-]{0,61}[A-Za-z0-9])?(?:\.[A-Za-z0-9](?:[A-Za-z0-9-]{0,61}[A-Za-z0-9])?)+$/;
+
+const COMMON_EMAIL_DOMAIN_TYPOS: Record<string, string> = {
+  "gmail.co": "gmail.com",
+  "gmail.con": "gmail.com",
+  "gmail.cm": "gmail.com",
+  "gmai.com": "gmail.com",
+  "gmial.com": "gmail.com",
+  "yahoo.co": "yahoo.com",
+  "yahoo.con": "yahoo.com",
+  "outlook.co": "outlook.com",
+  "outlook.con": "outlook.com",
+  "hotmail.co": "hotmail.com",
+  "hotmail.con": "hotmail.com",
+  "icloud.co": "icloud.com",
+  "icloud.con": "icloud.com",
+};
+
+function validateEmailAddress(value: string) {
+  const normalized = value.trim().toLowerCase();
+
+  if (!emailPattern.test(normalized)) {
+    return {
+      valid: false,
+      message: "Please enter a valid email address.",
+    };
+  }
+
+  const [, domain = ""] = normalized.split("@");
+
+  /*
+   * Reject known incomplete / mistyped provider domains.
+   * Example:
+   * abc@gmail.co  -> invalid
+   * abc@gmail.com -> valid
+   */
+  const suggestedDomain = COMMON_EMAIL_DOMAIN_TYPOS[domain];
+
+  if (suggestedDomain) {
+    return {
+      valid: false,
+      message: `Please enter the complete email address. Did you mean ${suggestedDomain}?`,
+    };
+  }
+
+  /*
+   * For common consumer providers, require their complete canonical domain.
+   * This makes gmail.co, gmail.c, yahoo.co, outlook.co, etc. invalid even
+   * when they otherwise satisfy the generic email syntax.
+   */
+  const commonProviderRules: Record<string, string> = {
+    gmail: "gmail.com",
+    yahoo: "yahoo.com",
+    outlook: "outlook.com",
+    hotmail: "hotmail.com",
+    icloud: "icloud.com",
+  };
+
+  const domainParts = domain.split(".");
+  const provider = domainParts[0] ?? "";
+  const requiredDomain = commonProviderRules[provider];
+
+  if (requiredDomain && domain !== requiredDomain) {
+    return {
+      valid: false,
+      message: `Please enter the complete email address. Did you mean ${requiredDomain}?`,
+    };
+  }
+
+  return {
+    valid: true,
+    message: "",
+  };
+}
 
 const MAX_PHONE_DIGITS = 15;
 
@@ -1719,10 +1792,11 @@ export default function BookADemo() {
       fullName.trim()
     );
 
+  const emailValidation =
+    validateEmailAddress(email);
+
   const isEmailValid =
-    emailPattern.test(
-      email.trim()
-    );
+    emailValidation.valid;
 
   const isCountryCodeValid =
     countryCodeOptions.some(
@@ -1754,6 +1828,13 @@ export default function BookADemo() {
   const isTimeValid =
     timeValue.trim().length > 0;
 
+  const isMessageValid =
+    message.trim().length > 0 &&
+    message.length <= 250;
+
+  const isMessageAtLimit =
+    message.length === 250;
+
   const isFormValid =
     isFullNameValid &&
     isEmailValid &&
@@ -1761,6 +1842,7 @@ export default function BookADemo() {
     isPhoneValid &&
     isDateValid &&
     isTimeValid &&
+    isMessageValid &&
     consent;
 
   const markTouched = (
@@ -2027,6 +2109,9 @@ export default function BookADemo() {
                 }
                 placeholder="Enter your name"
                 value={fullName}
+                spellCheck={false}
+                autoCorrect="off"
+                autoCapitalize="words"
                 onChange={(event) =>
                   setFullName(
                     event.target.value.replace(
@@ -2132,7 +2217,8 @@ export default function BookADemo() {
               />
             </div>
 
-            {touched.email &&
+            {(touched.email ||
+              (email.includes("@") && email.includes("."))) &&
               !isEmailValid && (
                 <p
                   id={`${emailId}-error`}
@@ -2143,7 +2229,7 @@ export default function BookADemo() {
                   }
                   role="alert"
                 >
-                  Please enter a valid email address.
+                  {emailValidation.message}
                 </p>
               )}
           </div>
@@ -2544,6 +2630,7 @@ export default function BookADemo() {
                 maxLength={250}
                 aria-describedby={`${messageId}-limit`}
                 rows={5}
+                required
               />
 
               <span
@@ -2555,8 +2642,22 @@ export default function BookADemo() {
                 }
                 aria-live="polite"
               >
-                {250 - message.length}/250 characters left
+                {250 - message.length}/250
               </span>
+
+              {isMessageAtLimit && (
+                <span
+                  className={
+                    styles[
+                      "book-demo-message-limit"
+                    ]
+                  }
+                  role="status"
+                  aria-live="polite"
+                >
+                  Maximum character limit reached.
+                </span>
+              )}
             </div>
           </div>
 
@@ -3084,54 +3185,19 @@ function BookDemoModal({
 }: {
   onClose: () => void;
 }) {
-  const [portalRoot, setPortalRoot] =
-    useState<HTMLElement | null>(null);
-
   const dialogRef =
     useRef<HTMLDivElement | null>(
       null
     );
 
-  const onCloseRef = useRef(onClose);
-
-  const scrollPositionRef = useRef({
-    left: 0,
-    top: 0,
-  });
-
-  const previouslyFocusedElementRef =
-    useRef<HTMLElement | null>(null);
-
   useEffect(() => {
-    onCloseRef.current = onClose;
-  }, [onClose]);
-
-  useEffect(() => {
-    setPortalRoot(document.body);
-  }, []);
-
-  useLayoutEffect(() => {
-    if (!portalRoot) {
-      return;
-    }
-
-    scrollPositionRef.current = {
-      left: window.scrollX,
-      top: window.scrollY,
-    };
-
-    previouslyFocusedElementRef.current =
-      document.activeElement instanceof HTMLElement
-        ? document.activeElement
-        : null;
-
     dialogRef.current?.focus();
 
     const handleKeyDown = (
       event: KeyboardEvent
     ) => {
       if (event.key === "Escape") {
-        onCloseRef.current();
+        onClose();
       }
     };
 
@@ -3142,11 +3208,6 @@ function BookDemoModal({
 
     const previousOverflow =
       document.body.style.overflow;
-
-    const hadModalOpenClass =
-      document.body.classList.contains(
-        "modal-open"
-      );
 
     document.body.style.overflow =
       "hidden";
@@ -3164,44 +3225,13 @@ function BookDemoModal({
       document.body.style.overflow =
         previousOverflow;
 
-      if (!hadModalOpenClass) {
-        document.body.classList.remove(
-          "modal-open"
-        );
-      }
-
-      const previousScrollBehavior =
-        document.documentElement.style
-          .scrollBehavior;
-
-      document.documentElement.style.scrollBehavior =
-        "auto";
-
-      window.scrollTo({
-        left: scrollPositionRef.current.left,
-        top: scrollPositionRef.current.top,
-        behavior: "auto",
-      });
-
-      document.documentElement.style.scrollBehavior =
-        previousScrollBehavior;
-
-      if (
-        previouslyFocusedElementRef.current
-          ?.isConnected
-      ) {
-        previouslyFocusedElementRef.current.focus({
-          preventScroll: true,
-        });
-      }
+      document.body.classList.remove(
+        "modal-open"
+      );
     };
-  }, [portalRoot]);
+  }, [onClose]);
 
-  if (!portalRoot) {
-    return null;
-  }
-
-  return createPortal(
+  return (
     <div
       className={
         styles[
@@ -3213,7 +3243,7 @@ function BookDemoModal({
           event.target ===
           event.currentTarget
         ) {
-          onCloseRef.current();
+          onClose();
         }
       }}
     >
@@ -3236,9 +3266,7 @@ function BookDemoModal({
               "book-demo-modal-close"
             ]
           }
-          onClick={() =>
-            onCloseRef.current()
-          }
+          onClick={onClose}
           aria-label="Close book a demo form"
         >
           <CloseIcon
@@ -3260,8 +3288,7 @@ function BookDemoModal({
           <BookADemo />
         </div>
       </div>
-    </div>,
-    portalRoot
+    </div>
   );
 }
 
@@ -3279,60 +3306,23 @@ export function BookDemoTrigger({
   const [isOpen, setIsOpen] =
     useState(false);
 
-  const triggerScrollPositionRef =
-    useRef({
-      left: 0,
-      top: 0,
-    });
-
-  const handleClose = () => {
-    const savedScrollPosition =
-      triggerScrollPositionRef.current;
-
-    setIsOpen(false);
-
-    window.requestAnimationFrame(() => {
-      const previousScrollBehavior =
-        document.documentElement.style
-          .scrollBehavior;
-
-      document.documentElement.style.scrollBehavior =
-        "auto";
-
-      window.scrollTo({
-        left: savedScrollPosition.left,
-        top: savedScrollPosition.top,
-        behavior: "auto",
-      });
-
-      document.documentElement.style.scrollBehavior =
-        previousScrollBehavior;
-    });
-  };
-
   return (
     <>
       <button
         type="button"
         className={className}
-        onClick={(event) => {
-          event.preventDefault();
-          event.stopPropagation();
-
-          triggerScrollPositionRef.current = {
-            left: window.scrollX,
-            top: window.scrollY,
-          };
-
-          setIsOpen(true);
-        }}
+        onClick={() =>
+          setIsOpen(true)
+        }
       >
         {children}
       </button>
 
       {isOpen && (
         <BookDemoModal
-          onClose={handleClose}
+          onClose={() =>
+            setIsOpen(false)
+          }
         />
       )}
     </>

@@ -2,7 +2,7 @@
   width: 100%;
   background-color: #dfe6e9;
   color: #31344b;
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", "Inter";
   overflow-x: hidden;
   display: flex;
   flex-direction: column;
@@ -753,7 +753,7 @@
   width: calc(100% - 24px);
   max-width: 620px;
   margin: 0 auto;
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", "Inter";
 }
 
 .statsPanelShape {
@@ -1009,7 +1009,7 @@
   min-height: 2.7em;
   flex-shrink: 0;
   margin: 0 0 9.285714cqw;
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", "Inter";
   font-weight: 600;
   font-size: 8.571429cqw;
   line-height: 1.35;
@@ -1030,7 +1030,7 @@
   min-height: 2.7em;
   flex-shrink: 0;
   margin: 0 0 9.285714cqw;
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", "Inter";
   font-weight: 600;
   font-size: 8.571429cqw;
   line-height: 1.35;
@@ -1043,7 +1043,7 @@
   width: 92%;
   flex-shrink: 0;
   margin: 0;
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", "Inter";
   font-weight: 400;
   font-size: 7.142857cqw;
   line-height: 1.4;
@@ -2090,7 +2090,7 @@
 }
 
 .skillCircleValue {
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", "Inter";
   font-size: 16px;
   font-weight: 700;
   color: var(--circle-color);
@@ -2098,7 +2098,7 @@
 
 .skillCircleLabel {
   margin-top: 12px;
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", "Inter";
   font-size: 13px;
   font-weight: 700;
   line-height: 18px;
@@ -2610,5 +2610,300 @@
 
 @media (min-width: 1360px) {
   .frameParent22 { gap: 112px; }
+}
+
+
+/* =========================================================
+   ETHICS & INTEGRITY — DESKTOP FIGMA MATCH
+   Uses the supplied 1280px / 520px / 662px reference values.
+   Only this section is overridden. Mobile/tablet rules stay unchanged.
+   ========================================================= */
+@media (min-width: 1360px) {
+  .frameParent22 {
+    position: relative;
+    width: 1280px;
+    max-width: 1280px;
+    height: 568px;
+    margin: 96px auto 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 98px;
+  }
+
+  .frameParent23 {
+    position: relative;
+    width: 520px;
+    height: 568px;
+    flex: 0 0 520px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+  }
+
+  .frameParent26 {
+    display: contents;
+  }
+
+  .frameParent24,
+  .frameParent27,
+  .frameParent29,
+  .frameParent30 {
+    position: relative;
+    inset: auto;
+    width: 520px;
+    height: 118px;
+    min-height: 118px;
+    flex: 0 0 118px;
+    margin: 0;
+    padding: 9px 32px 16px;
+    background: #dfe6e9;
+    border: 0;
+    border-radius: 50px 50px 0 50px;
+    box-sizing: border-box;
+    overflow: hidden;
+    display: block;
+    isolation: isolate;
+    box-shadow:
+      -4px -4px 4px #ffffff,
+      4px 4px 4px #c4c4c4;
+  }
+
+  .frameParent30 {
+    box-shadow:
+      -4px -4px 4px #ffffff,
+      4px 4px 4px #c4c4c4;
+  }
+
+  .frameParent25,
+  .frameParent28,
+  .frameParent31 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    flex: none;
+    margin: 0;
+    z-index: 2;
+  }
+
+  .frameChild15,
+  .frameChild16,
+  .frameChild17,
+  .frameChild18 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    border-radius: 8px;
+  }
+
+  .b5 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+    line-height: 38px;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    color: #ffffff;
+  }
+
+  .frameParent29 .b5 {
+    font-size: 32px;
+    line-height: 32px;
+  }
+
+  .citationExcellenceParent,
+  .academicIntegrityParent,
+  .intellectualPropertyParent,
+  .ethicalKnowledgeParent {
+    position: absolute;
+    top: 50%;
+    left: 85px;
+    width: 405px;
+    height: auto;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 16px;
+    margin: 0;
+    padding: 0;
+    color: #31344b;
+    text-align: left;
+  }
+
+  .ethicalKnowledgeParent {
+    left: 86px;
+    width: 376px;
+  }
+
+  .citationExcellence {
+    width: 100%;
+    height: auto;
+    min-height: 32px;
+    margin: 0;
+    padding: 0;
+    font-family: "Segoe UI", "Inter";
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 0.03em;
+    color: #31344b;
+    text-align: left;
+  }
+
+  .citeSourcesAccuratelyContainer,
+  .createOriginalPlagiarismContainer {
+    width: 100%;
+    max-width: 416px;
+    height: auto;
+    min-height: 28px;
+    margin: 0;
+    padding: 0;
+    font-family: "Segoe UI", "Inter";
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 0.03em;
+    color: #2f3547;
+    text-align: left;
+  }
+
+  .frameParent23 .citeSourcesAccuratelyContainer,
+  .frameParent23 .createOriginalPlagiarismContainer,
+  .frameParent23 .citeSourcesAccuratelyContainer *,
+  .frameParent23 .createOriginalPlagiarismContainer * {
+    white-space: normal !important;
+    overflow-wrap: normal;
+    word-break: normal;
+  }
+
+  .frameParent23 .blankLine {
+    display: none;
+  }
+
+  .vectorParent {
+    position: relative;
+    width: 662px;
+    max-width: 662px;
+    min-width: 662px;
+    height: 543px;
+    flex: 0 0 662px;
+    aspect-ratio: auto;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #31344b;
+    overflow: visible;
+  }
+
+  .integrityHexagonSvg {
+    position: absolute;
+    top: -23.5px;
+    right: 0;
+    bottom: auto;
+    left: auto;
+    width: 680px;
+    height: 589px;
+    overflow: visible;
+    z-index: 0;
+  }
+
+  .integrityContent {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 580px;
+    max-width: 580px;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+  }
+
+  .ethicsIntegrityBadge {
+    width: 252.31px;
+    min-width: 252.31px;
+    height: 50px;
+    min-height: 50px;
+    margin: 0;
+    padding: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 28px;
+    background: #dfe6e9;
+    box-shadow:
+      inset -4px -4px 8px #ffffff,
+      inset 4px 4px 8px rgba(196, 196, 196, 0.8);
+    font-family: "Segoe UI", "Inter";
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 0.03em;
+    color: #2d4cc8;
+    white-space: nowrap;
+  }
+
+  .integrityTitle {
+    width: 556px;
+    max-width: 556px;
+    margin: 0;
+    font-family: "Segoe UI", "Inter";
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 60px;
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: #31344b;
+  }
+
+  .integrityTitle span {
+    color: #2d4cc8;
+  }
+
+  .integrityDescription {
+    width: 580px;
+    max-width: 580px;
+    margin: 0;
+    font-family: "Segoe UI", "Inter";
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 40px;
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: #2f3547;
+  }
+}
+
+/* =========================================================
+   REQUEST DEMO — PRESSED/CLICKABLE STATE ONLY
+   Keep the original button design and placement unchanged.
+   ========================================================= */
+.requestDemoWrapper:hover,
+.requestDemoWrapper:active,
+.requestDemoWrapper:focus-visible {
+  box-shadow:
+    inset -4px -4px 4px rgba(255, 255, 255, 0.95),
+    inset 4px 4px 4px rgba(198, 198, 201, 0.7);
+}
+
+.requestDemoWrapper:hover .requestDemo,
+.requestDemoWrapper:active .requestDemo,
+.requestDemoWrapper:focus-visible .requestDemo {
+  color: #2d4cc8;
 }
 

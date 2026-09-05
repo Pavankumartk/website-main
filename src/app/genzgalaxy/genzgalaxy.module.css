@@ -1938,10 +1938,6 @@
     box-shadow 0.2s ease;
 }
 
-.frameWrapper12:hover {
-  background-color: #e8edf0;
-}
-
 .explorePlatformWrapper {
   display: flex;
   align-items: center;
@@ -2113,6 +2109,9 @@
 
 .genzgalaxy {
   box-sizing: border-box;
+  /* Create a predictable stacking context so the decorative hero frame stays
+     behind the header content without falling behind the page background. */
+  isolation: isolate;
 }
 
 .genzgalaxy:not(.layoutReady) {
@@ -2569,7 +2568,7 @@
 
 .frameParent32 { width:100%; height:auto; gap:17px; }
 
-.learningTogetherBadge { align-self: flex-start !important; transform: translateX(0) !important; margin-right:0; padding:9px 20px; font-size:17px; line-height:20px; border-radius:25px; 
+.learningTogetherBadge { align-self: flex-start !important; transform: translateX(0) !important; margin-right:0; padding:13px 24px; font-size:24px; line-height:24px; border-radius:28px; 
   margin-left: 0 !important;}
 
 .greatLearningHappensContainer { width:100%; font-size: 36px; line-height:43px; letter-spacing:.02em; }
@@ -2605,34 +2604,8 @@
     background-color 0.18s ease;
 }
 
-.frameWrapper12:hover {
-  background-color: #dfe6e9;
-  box-shadow:
-    -4px -4px 8px rgba(255, 255, 255, 0.95),
-    4px 4px 8px rgba(198, 198, 201, 0.9);
-}
-
-.frameWrapper12:active {
-  transform: translateY(1px);
-  box-shadow:
-    inset -4px -4px 8px rgba(255, 255, 255, 0.9),
-    inset 4px 4px 8px rgba(198, 198, 201, 0.85);
-}
-
-.frameWrapper12:focus-visible {
-  outline: none;
-  box-shadow:
-    inset -4px -4px 8px rgba(255, 255, 255, 0.88),
-    inset 4px 4px 8px rgba(198, 198, 201, 0.8);
-}
-
-.frameWrapper12:active .explorePlatform2,
-.frameWrapper12:focus-visible .explorePlatform2 {
-  transform: translateY(1px);
-}
-
 .explorePlatform2 {
-  transition: transform 0.18s ease;
+  transition: transform 0.16s ease;
 }
 
 .slide6Smaller {
@@ -2670,7 +2643,8 @@
   transform: translateY(1px);
 }
 
-.frameWrapper4 {
+.frameWrapper4,
+.genzgalaxy .rectangleGroup .frameWrapper12 {
   border: none !important;
   outline: none !important;
   box-shadow:
@@ -2682,14 +2656,26 @@
     background-color 0.16s ease !important;
 }
 
-.frameWrapper4:hover {
-  background-color: #e3eaed;
+.frameWrapper4:hover,
+.frameWrapper4:focus-visible,
+.genzgalaxy .rectangleGroup .frameWrapper12:hover,
+.genzgalaxy .rectangleGroup .frameWrapper12:focus-visible {
+  background-color: #dfe6e9;
+  transform: translateY(-2px);
   box-shadow:
-    -4px -4px 8px rgba(255, 255, 255, 0.92),
-    4px 4px 8px rgba(190, 196, 200, 0.8) !important;
+    inset -4px -4px 8px rgba(255, 255, 255, 0.88),
+    inset 4px 4px 8px rgba(190, 196, 200, 0.78) !important;
 }
 
-.frameWrapper4:active {
+.frameWrapper4:hover .explorePlatform,
+.frameWrapper4:focus-visible .explorePlatform,
+.genzgalaxy .rectangleGroup .frameWrapper12:hover .explorePlatform2,
+.genzgalaxy .rectangleGroup .frameWrapper12:focus-visible .explorePlatform2 {
+  transform: translateY(-1px);
+}
+
+.frameWrapper4:active,
+.genzgalaxy .rectangleGroup .frameWrapper12:active {
   transform: translateY(1px);
   background-color: #dfe6e9;
   box-shadow:
@@ -2697,12 +2683,14 @@
     inset 4px 4px 8px rgba(190, 196, 200, 0.78) !important;
 }
 
-.frameWrapper4:active .explorePlatform {
+.frameWrapper4:active .explorePlatform,
+.genzgalaxy .rectangleGroup .frameWrapper12:active .explorePlatform2 {
   transform: translateY(1px);
 }
 
 .learnMoreFlat,
-.explorePlatform {
+.explorePlatform,
+.explorePlatform2 {
   transition: transform 0.16s ease;
 }
 
@@ -3324,6 +3312,7 @@
 /* Mobile refinements: keep the desktop/tablet rules above unchanged. */
 @media (width < 768px) {
   .genzgalaxy .genzHeroFrame {
+    /* Phone layout intentionally omits the decorative background curve. */
     display: none !important;
   }
 
@@ -3834,9 +3823,15 @@
     overflow-y: visible;
   }
 
-  /* Raise the background so its lower design stays hidden by the middle portrait. */
+  /* Preserve the supplied desktop artwork position. */
   .genzgalaxy .genzHeroFrame {
     top: -244px;
+    display: block;
+    visibility: visible;
+    opacity: 1;
+    filter:
+      drop-shadow(8px 8px 8px rgba(196, 196, 196, 0.8))
+      drop-shadow(-8px -8px 8px rgba(255, 255, 255, 0.9));
   }
 
   /* Only the six outer section positions change. Their artwork stays intact. */
@@ -4261,7 +4256,7 @@
 
   /* Keep the left content comfortably inset inside the wider frame. */
   .genzgalaxy .image20Parent .frameParent12 {
-    transform: translateX(26px) !important;
+    transform: translate(26px, -12px) !important;
   }
 
   /* Keep the desktop heading on one line without changing its font/design. */
@@ -4273,12 +4268,12 @@
     overflow-wrap: normal !important;
   }
 
-  /* Keep the portrait size unchanged and position it toward the right side. */
+  /* Use a slightly shorter desktop portrait and keep it toward the right side. */
   .genzgalaxy .image20Parent .successfulYoungBusinessmanSIcon {
     justify-self: start !important;
     width: 560px !important;
     max-width: none !important;
-    height: 570px !important;
+    height: 520px !important;
     max-height: none !important;
     transform: translate(66px, 34px) scale(1.12) !important;
     transform-origin: center bottom !important;

@@ -4241,83 +4241,6 @@
 }
 
 /* ==========================================================================
-   CONTACT US MODAL
-   Renders the form above the page instead of inside the footer layout.
-   ========================================================================== */
-
-.contactModalOverlay {
-  position: fixed;
-  inset: 0;
-  z-index: 2147483000;
-  width: 100vw;
-  height: 100dvh;
-  padding: 16px;
-  box-sizing: border-box;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: rgba(31, 36, 52, 0.48);
-  -webkit-backdrop-filter: blur(6px);
-  backdrop-filter: blur(6px);
-  overflow: hidden;
-}
-
-.contactModalDialog {
-  position: relative;
-  isolation: isolate;
-  width: min(762px, calc(100vw - 32px));
-  max-width: calc(100vw - 32px);
-  max-height: calc(100dvh - 32px);
-  border-radius: 12px;
-  background: #dfe6e9;
-  box-shadow:
-    -8px -8px 16px rgba(255, 255, 255, 0.42),
-    12px 12px 28px rgba(18, 24, 38, 0.34);
-  overflow: hidden;
-}
-
-.contactModalDialog .before {
-  width: 100% !important;
-  max-width: 100% !important;
-  height: auto !important;
-  min-height: 0 !important;
-  max-height: calc(100dvh - 32px) !important;
-  margin: 0 !important;
-  border-radius: inherit !important;
-  overflow-x: hidden !important;
-  overflow-y: auto !important;
-  overscroll-behavior: contain;
-}
-
-.contactModalDialog .contactCloseButton {
-  position: absolute !important;
-  top: 10px !important;
-  right: 10px !important;
-  z-index: 2147483001 !important;
-}
-
-@media (max-width: 640px) {
-  .contactModalOverlay {
-    padding: 10px;
-  }
-
-  .contactModalDialog {
-    width: calc(100vw - 20px);
-    max-width: calc(100vw - 20px);
-    max-height: calc(100dvh - 20px);
-    border-radius: 12px;
-  }
-
-  .contactModalDialog .before {
-    width: 100% !important;
-    max-width: 100% !important;
-    height: auto !important;
-    min-height: 0 !important;
-    max-height: calc(100dvh - 20px) !important;
-  }
-}
-
-/* ==========================================================================
    FINAL — MESSAGE COUNTER ALIGNMENT + HORIZONTAL SCROLL FIX ONLY
    --------------------------------------------------------------------------
    Requested changes only:
@@ -4548,3 +4471,334 @@
     font-weight: 600 !important;
   }
 }
+
+/* ==========================================================================
+   FINAL — REQUESTED CONTACT FORM CORRECTIONS ONLY
+   --------------------------------------------------------------------------
+   1. Submit button width fits its text/content.
+   2. Full Name browser spellcheck red underline is disabled in TSX.
+   3. Checkbox matches the supplied neumorphic green/white reference.
+   4. Email validation is stricter in TSX.
+   5. Country search exact ISO code priority is fixed in TSX.
+   No other field sizing, spacing, colors, layout, validation, counter,
+   dropdown behavior, Privacy Policy, API logic, or responsive design changed.
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   SUBMIT BUTTON — CONTENT-DRIVEN WIDTH
+   -------------------------------------------------------------------------- */
+.frameWrapper9 {
+  width: auto !important;
+  max-width: none !important;
+  min-width: 0 !important;
+
+  align-self: center !important;
+
+  padding-left: 24px !important;
+  padding-right: 24px !important;
+
+  box-sizing: border-box !important;
+  white-space: nowrap !important;
+}
+
+.sendParent {
+  width: auto !important;
+  min-width: 0 !important;
+}
+
+.sendMessage {
+  width: auto !important;
+  min-width: 0 !important;
+  flex-shrink: 1 !important;
+  white-space: nowrap !important;
+}
+
+/* --------------------------------------------------------------------------
+   CHECKBOX — MATCH SUPPLIED REFERENCE
+   -------------------------------------------------------------------------- */
+.checkboxControl,
+.frameChild2,
+.checkboxVisual {
+  width: 24px !important;
+  height: 24px !important;
+}
+
+.checkboxControl {
+  position: relative !important;
+  flex: 0 0 24px !important;
+}
+
+.frameChild2 {
+  position: absolute !important;
+  inset: 0 !important;
+  margin: 0 !important;
+  opacity: 0 !important;
+  cursor: pointer !important;
+  z-index: 5 !important;
+}
+
+.checkboxVisual {
+  position: absolute !important;
+  inset: 0 !important;
+
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+
+  box-sizing: border-box !important;
+
+  border: 0 !important;
+  border-radius: 6px !important;
+
+  background: #dfe6e9 !important;
+
+  box-shadow:
+    4px 4px 7px #c4c4c4,
+    -4px -4px 7px #ffffff !important;
+
+  overflow: hidden !important;
+  transform: none !important;
+  pointer-events: none !important;
+}
+
+/* Green inner rounded square appears only when checked. */
+.checkboxVisual::before {
+  content: "" !important;
+
+  position: absolute !important;
+  left: 50% !important;
+  top: 50% !important;
+
+  width: 17px !important;
+  height: 17px !important;
+
+  transform: translate(-50%, -50%) scale(0.82) !important;
+
+  border-radius: 5px !important;
+  background: #146b56 !important;
+
+  opacity: 0 !important;
+
+  transition:
+    opacity 0.15s ease,
+    transform 0.15s ease !important;
+}
+
+.frameChild2:checked + .checkboxVisual::before {
+  opacity: 1 !important;
+  transform: translate(-50%, -50%) scale(1) !important;
+}
+
+/* Use CSS for the white tick to exactly match the reference. */
+.checkboxVisual::after {
+  content: "" !important;
+
+  position: absolute !important;
+  left: 50% !important;
+  top: 50% !important;
+
+  width: 8px !important;
+  height: 4px !important;
+
+  border-left: 2px solid #ffffff !important;
+  border-bottom: 2px solid #ffffff !important;
+
+  transform:
+    translate(-50%, -62%)
+    rotate(-45deg) !important;
+
+  opacity: 0 !important;
+  z-index: 2 !important;
+}
+
+.frameChild2:checked + .checkboxVisual::after {
+  opacity: 1 !important;
+}
+
+/* Hide the old image tick so there is no double-tick. */
+.checkboxTickIcon {
+  display: none !important;
+  opacity: 0 !important;
+  visibility: hidden !important;
+}
+
+/* Keep keyboard focus accessible. */
+.frameChild2:focus-visible + .checkboxVisual {
+  outline: 2px solid #2d4cc8 !important;
+  outline-offset: 3px !important;
+}
+
+/* Tablet/mobile keep the same visual without altering layout. */
+@media (max-width: 768px) {
+  .checkboxControl,
+  .frameChild2,
+  .checkboxVisual {
+    width: 22px !important;
+    height: 22px !important;
+  }
+
+  .checkboxControl {
+    flex-basis: 22px !important;
+  }
+
+  .checkboxVisual::before {
+    width: 16px !important;
+    height: 16px !important;
+  }
+
+  .checkboxVisual::after {
+    width: 7px !important;
+    height: 4px !important;
+  }
+}
+
+/* ==========================================================================
+   FINAL CHECKBOX STATE CORRECTION ONLY
+   --------------------------------------------------------------------------
+   UNCHECKED : inset / pressed-in neumorphic box
+   CHECKED   : raised outer shadow + green inner box + white tick
+   No other CSS is changed.
+   ========================================================================== */
+
+.checkboxControl {
+  position: relative !important;
+}
+
+/* Base / unchecked state — inner box effect */
+.checkboxVisual {
+  background: #dfe6e9 !important;
+  border: 0 !important;
+  border-radius: 6px !important;
+
+  box-shadow:
+    inset -4px -4px 6px #ffffff,
+    inset 4px 4px 4px #c4c4c4 !important;
+
+  overflow: hidden !important;
+  transform: none !important;
+}
+
+/* No green inner box before selection */
+.checkboxVisual::before {
+  content: "" !important;
+  position: absolute !important;
+  left: 50% !important;
+  top: 50% !important;
+
+  width: 17px !important;
+  height: 17px !important;
+
+  border-radius: 5px !important;
+  background: #146b56 !important;
+
+  opacity: 0 !important;
+  transform: translate(-50%, -50%) scale(0.82) !important;
+
+  transition:
+    opacity 0.15s ease,
+    transform 0.15s ease !important;
+}
+
+/* No white tick before selection */
+.checkboxVisual::after {
+  content: "" !important;
+  position: absolute !important;
+  left: 50% !important;
+  top: 50% !important;
+
+  width: 8px !important;
+  height: 4px !important;
+
+  border-left: 2px solid #ffffff !important;
+  border-bottom: 2px solid #ffffff !important;
+
+  opacity: 0 !important;
+  transform: translate(-50%, -62%) rotate(-45deg) !important;
+  z-index: 2 !important;
+}
+
+/* Checked state — raised outer box */
+.frameChild2:checked + .checkboxVisual {
+  background: #dfe6e9 !important;
+
+  box-shadow:
+    4px 4px 7px #c4c4c4,
+    -4px -4px 7px #ffffff !important;
+}
+
+/* Checked state — green inner rounded box */
+.frameChild2:checked + .checkboxVisual::before {
+  opacity: 1 !important;
+  transform: translate(-50%, -50%) scale(1) !important;
+}
+
+/* Checked state — white tick */
+.frameChild2:checked + .checkboxVisual::after {
+  opacity: 1 !important;
+}
+
+/* Existing image tick stays hidden because the tick is drawn in CSS. */
+.checkboxTickIcon,
+.frameChild2:checked + .checkboxVisual .checkboxTickIcon {
+  display: none !important;
+  opacity: 0 !important;
+  visibility: hidden !important;
+}
+
+/* Preserve keyboard accessibility. */
+.frameChild2:focus-visible + .checkboxVisual {
+  outline: 2px solid #2d4cc8 !important;
+  outline-offset: 3px !important;
+}
+
+/* ==========================================================================
+   FINAL — MESSAGE REQUIRED + BLUE COUNTER + MAX-LIMIT STATUS ONLY
+   --------------------------------------------------------------------------
+   Requested changes only:
+   1. Submit remains disabled until Message has non-whitespace content.
+   2. Counter uses the form blue (#2d4cc8).
+   3. At 250 characters, show a short red professional status message:
+      "Maximum character limit reached."
+   No other layout, spacing, field size, checkbox, dropdown, validation,
+   API behavior, privacy content, subject behavior, or responsiveness changed.
+   ========================================================================== */
+
+/* Same blue used throughout the form */
+.messageCharacterCount {
+  color: #2d4cc8 !important;
+  font-weight: 600 !important;
+}
+
+/* Professional status shown only when 250/250 is reached */
+.messageLimitMessage {
+  display: block !important;
+  width: 100% !important;
+
+  margin: 0 !important;
+  padding: 0 !important;
+
+  font-family: "Inter", sans-serif !important;
+  font-size: 11px !important;
+  line-height: 16px !important;
+  font-weight: 600 !important;
+
+  color: #d64545 !important;
+  text-align: left !important;
+
+  box-sizing: border-box !important;
+}
+
+/* Ensure a disabled submit cannot be activated and looks disabled. */
+.frameWrapper9:disabled {
+  opacity: 0.5 !important;
+  cursor: not-allowed !important;
+  pointer-events: none !important;
+}
+
+@media (max-width: 768px) {
+  .messageLimitMessage {
+    font-size: 10px !important;
+    line-height: 15px !important;
+  }
+}
+

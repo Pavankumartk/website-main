@@ -379,7 +379,7 @@ a:focus-visible {
   border-radius: 8px;
   border: none;
   cursor: pointer;
-  font-family: "Segoe UI", "Inter", sans-serif;
+  font-family: "Segoe UI", "Inter";
   font-weight: 600;
   font-size: 24px;
   letter-spacing: 0.02em;
@@ -489,7 +489,7 @@ a:focus-visible {
 
 .odyssey-card-title {
   margin: 0;
-  font-family: "Segoe UI", "Inter", sans-serif;
+  font-family: "Segoe UI", "Inter";
   font-weight: 700;
   font-size: 20px;
   letter-spacing: 0.03em;
@@ -499,7 +499,7 @@ a:focus-visible {
 
 .odyssey-card-description {
   margin: 0;
-  font-family: "Segoe UI", "Inter", sans-serif;
+  font-family: "Segoe UI", "Inter";
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
@@ -2058,7 +2058,7 @@ a:focus-visible {
   font-family: "Segoe UI", "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 24px;
+  font-size: 16px;
   line-height: 1.36;
   letter-spacing: 0.03em;
   color: #2f3547;
@@ -3374,7 +3374,7 @@ a:focus-visible {
   .faq-item-toggle-icon { width: 20px; height: 20px; }
   .faq-item-answer {
     padding: 20px 16px;
-    font-size: clamp(14px, 4vw, 16px);
+    font-size: 16px;
     line-height: 1.5;
   }
 
@@ -3554,6 +3554,141 @@ a:focus-visible {
   vertical-align: super;
 }
 
+/* ==========================================================================
+   FINAL — TALK TO OUR EXPERT ROUND IMAGE BUTTON ONLY
+   The popup remains at page level; only its trigger is placed in this slot.
+   ========================================================================== */
+
+.get-in-touch-expert-button-slot {
+  position: absolute;
+  right: -16px;
+  bottom: 36px;
+  z-index: 4;
+  width: 76px;
+  height: 76px;
+  display: grid;
+  place-items: center;
+}
+
+.get-in-touch-expert-button-slot > .get-in-touch-expert-button {
+  position: relative !important;
+  inset: auto !important;
+  width: 76px !important;
+  min-width: 76px !important;
+  max-width: 76px !important;
+  height: 76px !important;
+  min-height: 76px !important;
+  max-height: 76px !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  gap: 0 !important;
+  display: grid !important;
+  place-items: center !important;
+  flex: 0 0 76px !important;
+  transform: none !important;
+  border-radius: 50% !important;
+  background: #dfe6e9 !important;
+  box-shadow: -6px -6px 12px #ffffff, 6px 6px 12px rgba(198, 198, 201, 0.9) !important;
+  z-index: 1 !important;
+}
+
+.get-in-touch-expert-button-slot
+  > .get-in-touch-expert-button
+  > span:first-child {
+  width: 58px !important;
+  min-width: 58px !important;
+  height: 58px !important;
+  min-height: 58px !important;
+  margin: 0 !important;
+  display: grid !important;
+  place-items: center !important;
+  border-radius: 50% !important;
+}
+
+.get-in-touch-expert-button-slot
+  > .get-in-touch-expert-button
+  > span:first-child
+  > span {
+  width: 42px !important;
+  min-width: 42px !important;
+  height: 42px !important;
+  min-height: 42px !important;
+  display: grid !important;
+  place-items: center !important;
+  border-radius: 50% !important;
+}
+
+.get-in-touch-expert-button-slot
+  > .get-in-touch-expert-button
+  > span:first-child
+  svg {
+  width: 24px !important;
+  height: 24px !important;
+}
+
+.get-in-touch-expert-button-slot
+  > .get-in-touch-expert-button
+  > span:last-child {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
+
+@media (width < 1024px) {
+  .get-in-touch-expert-button-slot {
+    right: -12px;
+    bottom: 28px;
+    width: 68px;
+    height: 68px;
+  }
+
+  .get-in-touch-expert-button-slot > .get-in-touch-expert-button {
+    width: 68px !important;
+    min-width: 68px !important;
+    max-width: 68px !important;
+    height: 68px !important;
+    min-height: 68px !important;
+    max-height: 68px !important;
+    flex-basis: 68px !important;
+  }
+}
+
+@media (width < 600px) {
+  .get-in-touch-expert-button-slot {
+    right: -8px;
+    bottom: calc(var(--contact-footer-overlap) + 8px);
+    width: 64px;
+    height: 64px;
+    z-index: 10;
+  }
+
+  .get-in-touch-expert-button-slot > .get-in-touch-expert-button {
+    width: 64px !important;
+    min-width: 64px !important;
+    max-width: 64px !important;
+    height: 64px !important;
+    min-height: 64px !important;
+    max-height: 64px !important;
+    flex-basis: 64px !important;
+  }
+}
+  .get-in-touch-expert-button-slot > .get-in-touch-expert-button {
+    width: 64px !important;
+    min-width: 64px !important;
+    max-width: 64px !important;
+    height: 64px !important;
+    min-height: 64px !important;
+    max-height: 64px !important;
+    flex-basis: 64px !important;
+  }
+
+
 .learning-modules-heading-accent sup {
   position: relative;
   top: -0.12em;
@@ -3593,4 +3728,120 @@ a:focus-visible {
       clamp(-114px, calc(565px - 50vw), -78px)
     );
   }
+}
+
+/* ==========================================================================
+   FINAL INTERACTION FIXES
+   - The scroll-to-top control remains fixed and above the footer.
+   - An open modal hides the control completely so it cannot cover the form.
+   - Mobile carousels keep their JS arrow/autoplay transform while also
+     supporting native finger swiping.
+   ========================================================================== */
+
+/* Keep the footer scroll control above ordinary footer content but below the
+   application's modal layer. Do not change its original position, display or
+   visibility; the component remains responsible for those states. */
+:global(button[class*="scroll-top-button"]) {
+  /* Keep only the outer footer chevron button in its existing position.
+     The original Footer component continues to control the chevron/icon design. */
+  translate: 0 -50% !important;
+  z-index: 5 !important;
+}
+
+@media (width < 768px) {
+  /* overflow-x:auto provides finger/trackpad dragging. The track transform is
+     deliberately left untouched: the existing arrow and autoplay JavaScript
+     can therefore continue to animate it. */
+  .learning-modules-viewport,
+  .testimonials-viewport {
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    overscroll-behavior-inline: contain;
+    touch-action: pan-x pinch-zoom;
+    scroll-behavior: smooth;
+    scroll-snap-type: x proximity;
+    scrollbar-width: none;
+  }
+
+  .learning-modules-viewport::-webkit-scrollbar,
+  .testimonials-viewport::-webkit-scrollbar {
+    display: none;
+  }
+
+  .learning-module-card,
+  .testimonial-card-wrapper {
+    scroll-snap-align: center;
+  }
+
+  /* Every item has an explicit, non-shrinking mobile basis. This prevents a
+     single active/short card from becoming narrower or shorter than its
+     neighbours while preserving the existing content and animation. */
+  .learning-modules-track,
+  .testimonials-track {
+    align-items: stretch;
+  }
+
+  .learning-module-card,
+  .learning-module-card-featured {
+    --learning-card-mobile-width: min(320px, calc(100vw - 48px));
+    flex: 0 0 var(--learning-card-mobile-width);
+    width: var(--learning-card-mobile-width);
+    min-width: var(--learning-card-mobile-width);
+    max-width: var(--learning-card-mobile-width);
+    min-height: 300px;
+  }
+
+  .testimonial-card-wrapper {
+    --testimonial-card-mobile-width: min(480px, calc(100vw - 48px));
+    flex: 0 0 var(--testimonial-card-mobile-width);
+    display: flex;
+    width: var(--testimonial-card-mobile-width);
+    min-width: var(--testimonial-card-mobile-width);
+    max-width: var(--testimonial-card-mobile-width);
+    min-height: 250px;
+  }
+
+  .testimonial-card {
+    width: 100%;
+    height: 100%;
+    min-height: 250px;
+  }
+
+  .learning-modules-nav-button,
+  .testimonials-nav-button {
+    touch-action: manipulation;
+  }
+
+}
+
+/* Structural fallback for the centred chevron shown in the screenshots. It is
+   rendered by the footer, so its layer must remain below dialogs without any
+   modal-open selector. This also means closing Contact Us cannot leave an
+   invisible blocker behind. */
+.home-footer button,
+.home-footer [role="button"],
+:global(footer) button,
+:global(footer) [role="button"] {
+  z-index: 5 !important;
+}
+
+/* Restore the chevron to the original top-centre footer position and allow its
+   upper half to remain visible outside the footer boundary. These rules affect
+   only the footer/chevron placement; every modal and carousel fix above stays
+   unchanged. */
+.home-footer,
+:global(footer) {
+  position: relative;
+  overflow: visible !important;
+}
+
+.home-footer > button[aria-label*="top" i],
+.home-footer > [role="button"][aria-label*="top" i],
+.home-footer > button:has([class*="chevron" i]),
+:global(footer) > button[aria-label*="top" i],
+:global(footer) > [role="button"][aria-label*="top" i],
+:global(footer) > button:has([class*="chevron" i]) {
+  translate: 0 -50% !important;
+  z-index: 5 !important;
 }

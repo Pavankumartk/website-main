@@ -11,7 +11,7 @@
   	text-align: left;
   	font-size: 48px;
   	color: #31344b;
-  	font-family: 'Segoe UI';
+  	font-family: "Segoe UI", "Inter", sans-serif;
 }
 .frameParent {
   	position: absolute;
@@ -23,7 +23,7 @@
   	height: 80px;
   	overflow: hidden;
   	font-size: 16px;
-  	font-family: Inter;
+  	font-family: "Segoe UI", "Inter", sans-serif;
 }
 .frameChild {
   	position: absolute;
@@ -102,7 +102,7 @@
   	box-sizing: border-box;
   	text-align: center;
   	color: #2d4cc8;
-  	font-family: 'Segoe UI';
+  	font-family: "Segoe UI", "Inter", sans-serif;
 }
 .signInHelp {
   	width: 97px;
@@ -793,7 +793,7 @@
   	justify-content: center;
   	font-size: 32px;
   	color: #000;
-  	font-family: 'Segoe UI',;
+  	font-family: "Segoe UI", "Inter", sans-serif;
 }
 .frameParent17 {
   	align-self: stretch;
@@ -848,7 +848,7 @@
 .pillCardLabel {
   position: relative;
   z-index: 1;
-  font-family: 'Segoe UI',;
+  font-family: "Segoe UI", "Inter", sans-serif;
   font-size: 32px;
   font-weight: 600;
   font-style: normal;
@@ -992,7 +992,7 @@ box-shadow: 8px 8px 16px #c4c4c4, -8px -8px 16px #fff;
   text-align: left;
   font-size: 48px;
   color: #31344b;
-  font-family: 'Segoe UI';
+  font-family: "Segoe UI", "Inter", sans-serif;
 }
 
 .interviewLayout {
@@ -1246,7 +1246,7 @@ box-shadow: 8px 8px 16px #c4c4c4, -8px -8px 16px #fff;
   	text-align: center;
   	font-size: 48px;
   	color: #31344b;
-  	font-family: 'Segoe UI',;
+  	font-family: "Segoe UI", "Inter", sans-serif;
   	overflow: visible;
 }
 
@@ -1303,7 +1303,7 @@ box-shadow: 8px 8px 16px #c4c4c4, -8px -8px 16px #fff;
   position: relative;
   text-align: center;
   font-size: 32px;
-  font-family: 'Segoe UI', ;
+  font-family: "Segoe UI", "Inter", sans-serif;
   color: var(--audience-color);
   overflow: visible;
   transition: transform 0.3s cubic-bezier(0.22, 1, 0.36, 1);
@@ -1499,7 +1499,7 @@ box-shadow: 8px 8px 16px #c4c4c4, -8px -8px 16px #fff;
   	text-align: left;
   	font-size: 48px;
   	color: #31344b;
-  	font-family: 'Segoe UI',;
+  	font-family: "Segoe UI", "Inter", sans-serif;
 }
 .colleaguesDiscussingWorkProIcon {
   	position: absolute;
@@ -2134,7 +2134,7 @@ box-shadow: 8px 8px 16px #c4c4c4, -8px -8px 16px #fff;
   z-index: 2;
   width: 100%;
   margin: 0;
-  font-family: 'Segoe UI',;
+  font-family: "Segoe UI", "Inter", sans-serif;
   font-size: 24px;
   font-weight: 600;
   font-style: normal;
@@ -3136,7 +3136,7 @@ box-shadow: 8px 8px 16px #c4c4c4, -8px -8px 16px #fff;
   }
 
   .frameParent8 .skillCardLabel {
-    font-family: 'Segoe UI', !important;
+    font-family: "Segoe UI", "Inter", sans-serif !important;
     font-size: clamp(18px, 4vw, 22px) !important;
     font-weight: 600 !important;
     line-height: 1.35 !important;
@@ -4030,6 +4030,83 @@ box-shadow: 8px 8px 16px #c4c4c4, -8px -8px 16px #fff;
 @media screen and (max-width: 767.98px) {
   .colleaguesDiscussingWorkProIcon {
     margin-top: clamp(-55px, -10vw, -35px) !important;
+  }
+}
+
+/* ==========================================================================
+   INTERVIEW SECTION — EXPANDED VIDEO TEXT SAFE POSITION + TYPOGRAPHY ONLY
+   - Keeps the existing expanded video design
+   - Moves text away from the person's face
+   - Keeps Segoe UI primary / Inter fallback
+   - Matches previous page typography: 36px heading, 24px body
+   ========================================================================== */
+.interviewSection,
+.interviewSection * {
+  font-family: "Segoe UI", "Inter", sans-serif;
+}
+
+@media (min-width: 768px) {
+  .interviewSectionExpanded .interviewText {
+    left: auto !important;
+    right: 58px !important;
+    top: 44px !important;
+    bottom: 44px !important;
+    width: min(470px, 40%) !important;
+    max-width: min(470px, 40%) !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    transform: none !important;
+    justify-content: center !important;
+    align-items: flex-start !important;
+    overflow: visible !important;
+  }
+
+  .interviewSectionExpanded .interviewTextTop {
+    width: 100% !important;
+    max-width: 100% !important;
+    gap: 24px !important;
+  }
+
+  .interviewSectionExpanded .prepareForTechnical {
+    font-size: 36px !important;
+    line-height: 1.25 !important;
+  }
+
+  .interviewSectionExpanded .practiceCodingChallenges {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    font-size: 24px !important;
+    line-height: 1.42 !important;
+  }
+
+  /* Keep the person more to the left so the right-side text area remains clear. */
+  .interviewSectionExpanded .interviewVideo {
+    object-fit: cover !important;
+    object-position: 38% center !important;
+  }
+}
+
+/* Tablet: keep same hierarchy but fit the available width safely. */
+@media (min-width: 768px) and (max-width: 1100px) {
+  .interviewSectionExpanded .interviewText {
+    right: 36px !important;
+    width: min(410px, 42%) !important;
+    max-width: min(410px, 42%) !important;
+  }
+
+  .interviewSectionExpanded .prepareForTechnical {
+    font-size: 32px !important;
+    line-height: 1.24 !important;
+  }
+
+  .interviewSectionExpanded .practiceCodingChallenges {
+    font-size: 20px !important;
+    line-height: 1.4 !important;
+  }
+
+  .interviewSectionExpanded .interviewVideo {
+    object-position: 34% center !important;
   }
 }
 

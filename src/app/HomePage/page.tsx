@@ -8,11 +8,14 @@ import { useEffect, useRef, useState, type JSX, type CSSProperties, type RefObje
 import dynamic from "next/dynamic";
 import { GraduationCapOutlineIcon, LightbulbIcon, CursorClickIcon, TargetIcon, UsersIcon, SmartphoneIcon, GraduationCapIcon, SettingsGearIcon, LibraryIcon, BuildingIcon, ContentWritingIcon, BrainIcon, AnalyticsUpIcon, UniversityIcon, HandshakeIcon, LandmarkIcon, UserIcon, PlayIcon, CloseIcon, HeadphonesIcon } from "@/components/icons/Icons";
 import BookDemoModal from "@/components/Bookademo/BookDemoModal";
-import BookDemoButton from "@/components/BookDemoButton/BookDemoButton";
+// import BookDemoButton from "@/components/BookDemoButton/BookDemoButton";
+import TalkToExpertButton from "@/components/TalkToOurExpert/TalkToExpertButton";
 import ContactUs from "@/components/contact/page";
 import styles from "./home-page.module.css";
 
 const Lottie = dynamic(() => import("lottie-react"), { ssr: false });
+
+const TALK_TO_EXPERT_SLOT_ID = "home-talk-to-expert-button-slot";
 
 type HeroSlide = (
   | { id: number; type: "image"; image: string; heading: string }
@@ -1443,6 +1446,10 @@ function GetInTouch({ onContactClick, contactButtonRef }: { onContactClick: () =
           <div className={styles["get-in-touch-photo-wrapper"]}>
             <Image src="/images/homepage.webp" alt="Smiling businesswoman with glasses" fill sizes="(max-width: 480px) 280px, (max-width: 1024px) 380px, 677px" className={styles["get-in-touch-photo"]} />
           </div>
+          <div
+            id={TALK_TO_EXPERT_SLOT_ID}
+            className={styles["get-in-touch-expert-button-slot"]}
+          />
         </div>
       </div>
     </section>
@@ -1478,7 +1485,24 @@ function ContactUsModal({ onClose }: { onClose: () => void }) {
         <button type="button" className={styles["book-demo-modal-close"]} onClick={onClose} aria-label="Close contact us form">
           <CloseIcon className={styles["book-demo-modal-close-icon"]} />
         </button>
-        <div className={styles["book-demo-modal-scroll"]}>
+        <div
+          className={styles["book-demo-modal-scroll"]}
+          onClickCapture={(event) => {
+            const target = event.target;
+            if (!(target instanceof Element)) return;
+
+            const clickedButton = target.closest("button");
+            if (!clickedButton) return;
+
+            const classNames = Array.from(clickedButton.classList);
+            const ariaLabel = clickedButton.getAttribute("aria-label")?.toLowerCase() ?? "";
+            const isContactCloseButton =
+              classNames.some((className) => className.includes("contactCloseButton")) ||
+              ariaLabel.includes("close contact");
+
+            if (isContactCloseButton) onClose();
+          }}
+        >
           <ContactUs />
         </div>
       </div>
@@ -1500,8 +1524,8 @@ export default function HomePage() {
 
   const openContactUs = () => setIsContactOpen(true);
   const closeContactUs = () => {
-    setIsContactOpen(false);
-    contactButtonRef.current?.focus();
+    flushSync(() => setIsContactOpen(false));
+    window.requestAnimationFrame(() => contactButtonRef.current?.focus());
   };
 
   useEffect(() => {
@@ -1518,6 +1542,23 @@ export default function HomePage() {
 
   return (
     <>
+      <style jsx global>{`
+        /* Keep the footer and its scroll control below every modal. The
+           !important value intentionally overrides Footer's inline z-index. */
+        footer[class*="nlxp-footer"] {
+          z-index: 1 !important;
+          overflow: visible !important;
+        }
+
+        /* Center the chevron on the footer edge: half above and half inside. */
+        footer[class*="nlxp-footer"] [class*="scroll-top-button"] {
+          top: 0 !important;
+          translate: none !important;
+          transform: translate(-50%, -50%) !important;
+          z-index: 2 !important;
+        }
+      `}</style>
+
       <Header />
 
       <main id="main-content">
@@ -1534,7 +1575,11 @@ export default function HomePage() {
       <GetInTouch onContactClick={openContactUs} contactButtonRef={contactButtonRef} />
       {isBookDemoOpen && <BookDemoModal onClose={closeBookDemo} />}
       {isContactOpen && <ContactUsModal onClose={closeContactUs} />}
-      <BookDemoButton />
+      {/* <BookDemoButton /> */}
+      <TalkToExpertButton
+        portalTargetId={TALK_TO_EXPERT_SLOT_ID}
+        className={styles["get-in-touch-expert-button"]}
+      />
     </main>
 
       <div className={styles["home-footer"]}>

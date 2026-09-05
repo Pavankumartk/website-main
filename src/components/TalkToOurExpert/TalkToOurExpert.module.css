@@ -3488,3 +3488,214 @@
   }
 }
 
+/* ==========================================================================
+   FINAL — TALK TO OUR EXPERT REQUESTED CORRECTIONS ONLY
+   --------------------------------------------------------------------------
+   1. Submit Query button width fits its text.
+   2. Full Name spellcheck/autocorrect underline disabled in TSX.
+   3. Checkbox: unchecked inset; checked raised + green inner + white tick.
+   4. Email validation strengthened in TSX for common provider domains.
+   5. Country search exact ISO priority retained/reinforced in TSX.
+   No other layout, spacing, field size, typography, query counter,
+   interest dropdown, privacy behavior, phone validation, API logic,
+   header, or responsive design is changed.
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   SUBMIT BUTTON — CONTENT-DRIVEN WIDTH ONLY
+   -------------------------------------------------------------------------- */
+.tte-submit {
+  width: auto !important;
+  max-width: none !important;
+  min-width: 0 !important;
+
+  align-self: center !important;
+
+  padding-left: 24px !important;
+  padding-right: 24px !important;
+
+  box-sizing: border-box !important;
+  white-space: nowrap !important;
+}
+
+/* --------------------------------------------------------------------------
+   CHECKBOX — UNCHECKED INSET / CHECKED RAISED + GREEN + WHITE TICK
+   -------------------------------------------------------------------------- */
+
+.tte-consent {
+  position: relative !important;
+}
+
+.tte-consent-checkbox {
+  position: absolute !important;
+  left: 0 !important;
+  top: 0 !important;
+
+  width: 19px !important;
+  height: 19px !important;
+
+  margin: 0 !important;
+  opacity: 0 !important;
+
+  cursor: pointer !important;
+  z-index: 4 !important;
+}
+
+/* Unchecked: inset / pressed-in box */
+.tte-consent-box {
+  position: relative !important;
+
+  width: 19px !important;
+  height: 19px !important;
+  min-width: 19px !important;
+  flex: 0 0 19px !important;
+
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+
+  border: 0 !important;
+  border-radius: 5px !important;
+  background: #dfe6e9 !important;
+
+  box-shadow:
+    inset -4px -4px 6px #ffffff,
+    inset 4px 4px 4px #c4c4c4 !important;
+
+  overflow: hidden !important;
+  pointer-events: none !important;
+}
+
+/* Green inner rounded box — hidden until checked */
+.tte-consent-box::before {
+  content: "" !important;
+
+  position: absolute !important;
+  left: 50% !important;
+  top: 50% !important;
+
+  width: 14px !important;
+  height: 14px !important;
+
+  border-radius: 4px !important;
+  background: #146b56 !important;
+
+  opacity: 0 !important;
+  transform: translate(-50%, -50%) scale(0.82) !important;
+
+  transition:
+    opacity 0.15s ease,
+    transform 0.15s ease !important;
+}
+
+/* Checked: raised outer neumorphic box */
+.tte-consent-checkbox:checked ~ .tte-consent-box {
+  background: #dfe6e9 !important;
+
+  box-shadow:
+    4px 4px 7px #c4c4c4,
+    -4px -4px 7px #ffffff !important;
+}
+
+/* Checked: reveal green inner box */
+.tte-consent-checkbox:checked ~ .tte-consent-box::before {
+  opacity: 1 !important;
+  transform: translate(-50%, -50%) scale(1) !important;
+}
+
+/* Existing SVG white tick remains on top of the green inner box */
+.tte-consent-check {
+  position: relative !important;
+  z-index: 2 !important;
+
+  width: 11px !important;
+  height: 11px !important;
+
+  display: block !important;
+  pointer-events: none !important;
+}
+
+.tte-consent-check path {
+  stroke: #ffffff !important;
+}
+
+/* Remove the older CSS-generated tick so there is no duplicate tick */
+.tte-consent-checkbox:checked ~ .tte-consent-box::after {
+  content: none !important;
+  display: none !important;
+}
+
+/* Preserve accessible keyboard focus */
+.tte-consent-checkbox:focus-visible ~ .tte-consent-box {
+  outline: 2px solid #2d4cc8 !important;
+  outline-offset: 3px !important;
+}
+
+/* Keep the same visual behavior on tablet/mobile without changing layout */
+@media (max-width: 768px) {
+  .tte-consent-checkbox,
+  .tte-consent-box {
+    width: 18px !important;
+    height: 18px !important;
+  }
+
+  .tte-consent-box {
+    min-width: 18px !important;
+    flex-basis: 18px !important;
+  }
+
+  .tte-consent-box::before {
+    width: 13px !important;
+    height: 13px !important;
+  }
+
+  .tte-consent-check {
+    width: 10px !important;
+    height: 10px !important;
+  }
+}
+
+/* ==========================================================================
+   FINAL — QUERY REQUIRED + COUNTER COLOR + MAX-LIMIT MESSAGE ONLY
+   --------------------------------------------------------------------------
+   Requested changes only:
+   1. Query field is mandatory before Submit Query can be enabled.
+   2. Character counter uses the form blue (#2d4cc8).
+   3. At 250/250, show a short professional red message:
+      "Maximum character limit reached."
+   No other layout, spacing, field dimensions, checkbox, search, validation,
+   email, phone, interest dropdown, header, API, or responsive behavior changed.
+   ========================================================================== */
+
+.tte-query-count {
+  color: #2d4cc8 !important;
+  font-weight: 600 !important;
+}
+
+/* Professional max-character status message */
+.tte-query-limit-message {
+  display: block !important;
+  width: 100% !important;
+
+  margin: 0 !important;
+  padding: 0 2px !important;
+
+  font-family: "Inter", sans-serif !important;
+  font-size: 11px !important;
+  line-height: 18px !important;
+  font-weight: 600 !important;
+
+  color: #d64545 !important;
+  text-align: left !important;
+
+  box-sizing: border-box !important;
+}
+
+/* Keep the max-limit message readable on smaller screens. */
+@media (max-width: 768px) {
+  .tte-query-limit-message {
+    font-size: 10px !important;
+    line-height: 16px !important;
+  }
+}
+

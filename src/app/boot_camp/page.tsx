@@ -21,11 +21,11 @@ const Bootcamp: NextPage = () => {
   const secondCardOpen = openCards.includes(2);
   const thirdCardOpen = openCards.includes(3);
 
-  const firstRowHeight = firstCardOpen ? 601 : secondCardOpen ? 594 : 198;
+  const firstRowHeight = firstCardOpen ? 601 : secondCardOpen ? 594 : 150;
 
-  const thirdCardHeight = thirdCardOpen ? 553 : 198;
+  const thirdCardHeight = thirdCardOpen ? 553 : 150;
 
-  const accordionExtraHeight = firstRowHeight - 198 + (thirdCardHeight - 198);
+  const accordionExtraHeight = firstRowHeight - 150 + (thirdCardHeight - 150);
 
   const accordionStyle = {
     "--accordion-extra-height": `${accordionExtraHeight}px`,

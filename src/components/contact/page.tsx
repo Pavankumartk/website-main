@@ -2,20 +2,13 @@
 
 import type { NextPage } from "next";
 import Image from "next/image";
-import { type FormEvent, useCallback, useEffect, useMemo, useState } from "react";
-import { createPortal } from "react-dom";
+import { type FormEvent, useMemo, useState } from "react";
 import { getCountries, getCountryCallingCode, isValidPhoneNumber, type CountryCode } from "libphonenumber-js";
 import styles from "./contact.module.css";
 
 const subjectOptions = ["General Inquiry", "Product Information", "Technical Support", "Account Support", "Partnership", "Billing", "Feedback", "Other"];
 
-type ContactUsProps = {
-  onClose?: () => void;
-};
-
-const ContactUs: NextPage<ContactUsProps> = ({ onClose }) => {
-  const [isMounted, setIsMounted] = useState(false);
-  const [isOpen, setIsOpen] = useState(true);
+const ContactUs: NextPage = () => {
   const [isSubjectOpen, setIsSubjectOpen] = useState(false);
   const [selectedSubject, setSelectedSubject] = useState("");
   const [fullName, setFullName] = useState("");
@@ -34,46 +27,53 @@ const ContactUs: NextPage<ContactUsProps> = ({ onClose }) => {
   const [isPrivacyPolicyOpen, setIsPrivacyPolicyOpen] = useState(false);
   const [submitted, setSubmitted] = useState(false);
 
-  const handleClose = useCallback(() => {
-    setIsOpen(false);
-    onClose?.();
-  }, [onClose]);
+  const namePattern = /^[A-Za-z]+(?:\s+[A-Za-z]+)*$/;
+  const emailPattern =
+    /^[A-Za-z0-9.!#$%&'*+/=?^_`{|}~-]+@[A-Za-z0-9](?:[A-Za-z0-9-]{0,61}[A-Za-z0-9])?(?:\.[A-Za-z0-9](?:[A-Za-z0-9-]{0,61}[A-Za-z0-9])?)+$/;
 
-  useEffect(() => {
-    setIsMounted(true);
-  }, []);
+  const commonEmailDomains: Record<string, string> = {
+    gmail: "gmail.com",
+    yahoo: "yahoo.com",
+    outlook: "outlook.com",
+    hotmail: "hotmail.com",
+    icloud: "icloud.com",
+  };
 
-  useEffect(() => {
-    if (!isMounted || !isOpen) {
-      return;
+  const validateEmailAddress = (value: string) => {
+    const normalized = value.trim().toLowerCase();
+
+    if (!emailPattern.test(normalized)) {
+      return {
+        valid: false,
+        message: "Enter a valid email address",
+      };
     }
 
-    const previousBodyOverflow = document.body.style.overflow;
+    const [, domain = ""] = normalized.split("@");
+    const provider = domain.split(".")[0] ?? "";
+    const requiredDomain = commonEmailDomains[provider];
 
-    document.body.style.overflow = "hidden";
+    if (requiredDomain && domain !== requiredDomain) {
+      return {
+        valid: false,
+        message: `Enter the complete email address. Did you mean ${requiredDomain}?`,
+      };
+    }
 
-    const handleKeyDown = (event: KeyboardEvent) => {
-      if (event.key === "Escape") {
-        handleClose();
-      }
+    return {
+      valid: true,
+      message: "",
     };
-
-    document.addEventListener("keydown", handleKeyDown);
-
-    return () => {
-      document.body.style.overflow = previousBodyOverflow;
-      document.removeEventListener("keydown", handleKeyDown);
-    };
-  }, [handleClose, isMounted, isOpen]);
-
-  const namePattern = /^[A-Za-z]+(?:\s+[A-Za-z]+)*$/;
-  const emailPattern = /^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$/;
+  };
 
   const isNameValid = fullName.trim().length > 0 && namePattern.test(fullName.trim());
-  const isEmailValid = emailAddress.length > 0 && emailPattern.test(emailAddress);
+  const emailValidation = validateEmailAddress(emailAddress);
+  const isEmailValid = emailAddress.length > 0 && emailValidation.valid;
   const isCountryValid = Boolean(countryCode);
   const isSubjectValid = Boolean(selectedSubject);
-  const isMessageValid = message.trim().length > 0 && message.length <= 250;
+  const hasMessageContent = message.trim().length > 0;
+  const isMessageValid = hasMessageContent && message.length <= 250;
+  const isMessageAtLimit = message.length === 250;
   const isPrivacyValid = privacyAccepted;
 
   const showNameError = nameTouched && !isNameValid;
@@ -114,7 +114,38 @@ const ContactUs: NextPage<ContactUsProps> = ({ onClose }) => {
       return countryOptions;
     }
 
-    return countryOptions.filter((country) => country.label.toLowerCase().includes(searchValue) || country.shortLabel.toLowerCase().includes(searchValue));
+    const normalizedSearch = searchValue
+      .replace(/[()\s-]/g, "")
+      .replace(/^\+/, "");
+
+    /*
+     * Exact ISO code has highest priority.
+     * Example: typing "IN" returns India immediately.
+     */
+    const exactIsoMatch = countryOptions.filter(
+      (country) => country.value.toLowerCase() === searchValue
+    );
+
+    if (exactIsoMatch.length > 0) {
+      return exactIsoMatch;
+    }
+
+    return countryOptions.filter((country) => {
+      const isoCode = country.value.toLowerCase();
+      const fullName = country.label.toLowerCase();
+      const shortLabel = country.shortLabel.toLowerCase();
+      const dialCode = shortLabel
+        .replace(/[()\s-]/g, "")
+        .replace(/^.*\+/, "");
+
+      return (
+        isoCode.startsWith(searchValue) ||
+        fullName.startsWith(searchValue) ||
+        fullName.includes(searchValue) ||
+        shortLabel.startsWith(searchValue) ||
+        dialCode.includes(normalizedSearch)
+      );
+    });
   }, [countryOptions, countrySearch]);
 
   const normalizedPhoneNumber = phoneNumber.replace(/\D/g, "");
@@ -308,40 +339,11 @@ const ContactUs: NextPage<ContactUsProps> = ({ onClose }) => {
     setIsSubjectOpen(false);
   };
 
-  if (!isMounted || !isOpen) {
-    return null;
-  }
-
-  return createPortal(
-    <div
-      className={styles.contactModalOverlay}
-      role="presentation"
-      onMouseDown={(event) => {
-        if (event.target === event.currentTarget) {
-          handleClose();
-        }
-      }}
-    >
-      <div
-        className={styles.contactModalDialog}
-        role="dialog"
-        aria-modal="true"
-        aria-labelledby="contact-modal-title"
-      >
-        <button
-          type="button"
-          className={styles.contactCloseButton}
-          onClick={handleClose}
-          aria-label="Close Contact Us"
-          autoFocus
-        >
-          <span className={styles.contactCloseIcon} aria-hidden="true">×</span>
-        </button>
-
-        <main className={styles.before}>
+  return (
+    <main className={styles.before}>
 <div className={styles.frameParent}>
         <div className={styles.contactUsParent}>
-          <h1 id="contact-modal-title" className={styles.contactUs}>
+          <h1 className={styles.contactUs}>
             Contact Us
           </h1>
 
@@ -383,7 +385,7 @@ const ContactUs: NextPage<ContactUsProps> = ({ onClose }) => {
                             <Image className={styles.fieldIcon} src="/icons/user.svg" width={20} height={20} alt="" aria-hidden="true" />
                           </span>
 
-                          <input id="fullName" className={styles.contactInput} type="text" name="fullName" autoComplete="name" placeholder="Enter your name" value={fullName} onChange={(event) => setFullName(event.target.value.replace(/[^A-Za-z\s]/g, "").replace(/\s{2,}/g, " ").slice(0, 80))} onBlur={() => setNameTouched(true)} aria-invalid={showNameError} aria-describedby={showNameError ? "fullNameError" : undefined} inputMode="text" required />
+                          <input id="fullName" className={styles.contactInput} type="text" name="fullName" autoComplete="name" spellCheck={false} autoCorrect="off" autoCapitalize="words" placeholder="Enter your name" value={fullName} onChange={(event) => setFullName(event.target.value.replace(/[^A-Za-z\s]/g, "").replace(/\s{2,}/g, " ").slice(0, 80))} onBlur={() => setNameTouched(true)} aria-invalid={showNameError} aria-describedby={showNameError ? "fullNameError" : undefined} inputMode="text" required />
                         </div>
                       </div>
                     </div>
@@ -432,7 +434,7 @@ const ContactUs: NextPage<ContactUsProps> = ({ onClose }) => {
 
                   {showEmailError && (
                     <small id="emailAddressError" className={styles.emailValidationMessage} role="alert">
-                      Enter a valid email address
+                      {emailValidation.message}
                     </small>
                   )}
                 </div>
@@ -593,7 +595,7 @@ const ContactUs: NextPage<ContactUsProps> = ({ onClose }) => {
                       </label>
 
                       <span className={styles.messageCharacterCount} aria-live="polite">
-                        {250 - message.length}/250 characters left
+                        {250 - message.length}/250 
                       </span>
                     </div>
                   </div>
@@ -621,6 +623,12 @@ const ContactUs: NextPage<ContactUsProps> = ({ onClose }) => {
                   {showMessageError && (
                     <small id="messageError" className={styles.messageValidationMessage} role="alert">
                       Enter a message
+                    </small>
+                  )}
+
+                  {isMessageAtLimit && (
+                    <small className={styles.messageLimitMessage} role="status" aria-live="polite">
+                      Maximum character limit reached.
                     </small>
                   )}
                 </div>
@@ -809,7 +817,12 @@ const ContactUs: NextPage<ContactUsProps> = ({ onClose }) => {
               </div>
             )}
 
-            <button className={styles.frameWrapper9} type="submit" disabled={!isFormValid || submitted} aria-disabled={!isFormValid || submitted}>
+            <button
+              className={styles.frameWrapper9}
+              type="submit"
+              disabled={!isFormValid || !hasMessageContent || submitted}
+              aria-disabled={!isFormValid || !hasMessageContent || submitted}
+            >
               <div className={styles.sendParent}>
                 <Image className={styles.sendIcon} src="/icons/send.svg" width={24} height={24} alt="" aria-hidden="true" />
                 <strong className={styles.sendMessage}>Send Message</strong>
@@ -820,10 +833,7 @@ const ContactUs: NextPage<ContactUsProps> = ({ onClose }) => {
           </form>
         </div>
       </div>
-        </main>
-      </div>
-    </div>,
-    document.body
+    </main>
   );
 };
 

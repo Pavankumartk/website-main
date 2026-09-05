@@ -1,5 +1,5 @@
 .digital-literacy {
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", "Inter";
 }
 
 /* Digital Literacy page background */
@@ -20,7 +20,7 @@
 }
 
 .dl-breadcrumb-label {
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", "Inter";
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
@@ -32,7 +32,7 @@
   display: flex;
   align-items: center;
   gap: 8px;
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", "Inter";
   font-weight: 700;
   font-size: 16px;
   line-height: 24px;
@@ -66,7 +66,7 @@
   padding: 36px 0 0 36px;
   box-sizing: border-box;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 48px;
   flex-wrap: wrap;
   overflow: hidden;
@@ -80,7 +80,10 @@
   flex-direction: column;
   align-items: flex-start;
   gap: 32px;
-  margin-bottom: 160px;
+  margin-top: 0;
+  margin-bottom: 64px;
+  padding: 0;
+  align-self: flex-start;
 }
 
 .dl-hero-badge {
@@ -90,7 +93,7 @@
     inset -4px -4px 4px #ffffff,
     inset 4px 4px 4px rgba(196, 196, 196, 0.8);
   border-radius: 28px;
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", "Inter";
   font-weight: 600;
   font-size: 20px;
   letter-spacing: 0.03em;
@@ -109,7 +112,7 @@
 
 .dl-hero-heading {
   margin: 0;
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", "Inter";
   font-weight: 700;
   font-size: 36px;
   line-height: 1.25;
@@ -125,7 +128,7 @@
 
 .dl-hero-subtext {
   margin: 0;
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", "Inter";
   font-weight: 400;
   font-size: 24px;
   line-height: 1.43;
@@ -146,7 +149,7 @@
   cursor: pointer;
   border-radius: 8px;
   padding: 16px 32px;
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", "Inter";
   font-weight: 600;
   font-size: 22px;
   letter-spacing: 0.02em;
@@ -241,7 +244,7 @@
   display: inline-flex;
   align-items: center;
   gap: 4px;
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", "Inter";
   font-weight: 700;
   font-size: 32px;
   letter-spacing: 0.02em;
@@ -263,7 +266,7 @@
 }
 
 .dl-hero-stat-label {
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", "Inter";
   font-weight: 600;
   font-size: 18px;
   letter-spacing: 0.02em;
@@ -359,17 +362,12 @@
 }
 
 .dl-advantage-wedge {
-  position: absolute;
-  left: -60px;
-  top: -90px;
-  width: 68%;
-  height: auto;
-  pointer-events: none;
+  display: none;
 }
 
 .dl-section-heading {
   margin: 0;
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", "Inter";
   font-weight: 700;
   font-size: 36px;
   line-height: 1.25;
@@ -460,7 +458,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", "Inter";
   font-weight: 700;
   font-size: 36px;
   line-height: 1;
@@ -472,7 +470,7 @@
 .dl-adv-card-title {
   width: 100%;
   margin: 0;
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", "Inter";
   font-weight: 700;
   font-size: 20px;
   line-height: 28px;
@@ -484,7 +482,7 @@
 .dl-adv-card-desc {
   width: 100%;
   margin: 16px 0 0;
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", "Inter";
   font-weight: 400;
   font-size: 18px;
   line-height: 28px;
@@ -531,7 +529,7 @@
 .dl-pill-label-text {
   position: relative;
   z-index: 1;
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", "Inter";
   font-weight: 700;
   font-size: clamp(28px, 4vw, 64px);
   line-height: 1.25;
@@ -681,7 +679,7 @@
 }
 
 .dl-check-pill-text {
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", "Inter";
   font-weight: 600;
   font-size: 20px;
   color: #2f3547;
@@ -780,13 +778,13 @@
 }
 
 .dl-analytics-card-value {
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", "Inter";
   font-weight: 700;
   font-size: 32px;
 }
 
 .dl-analytics-card-label {
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", "Inter";
   font-weight: 700;
   font-size: 20px;
   letter-spacing: 0.03em;
@@ -794,12 +792,13 @@
 }
 
 .dl-analytics-card-desc {
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", "Inter";
   font-weight: 400;
   font-size: 16px;
   color: #31344b;
 }
 
+/* How it works cards - matched to the supplied reference PNG */
 .dl-howitworks-section {
   max-width: 1280px;
   margin: 0 auto;
@@ -812,82 +811,97 @@
 
 .dl-step-grid {
   width: 100%;
+  max-width: 1120px;
+  margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4, minmax(0, 250px));
+  justify-content: space-between;
+  align-items: stretch;
   gap: 36px;
 }
 
 .dl-step-card {
   position: relative;
+  width: 250px;
+  height: 320px;
+  min-height: 320px;
+  justify-self: center;
   background: #dfe6e9;
-  border-right: 10px solid var(--step-color);
-  border-radius: 16px 80px 80px 16px;
+  border: 0;
+  border-right: 4px solid var(--step-color);
+  border-radius: 16px 64px 64px 16px;
   box-shadow:
-    4px 4px 4px #c4c4c4,
-    -4px -4px 4px #ffffff;
-  padding: 46px 24px 32px;
-  min-height: 300px;
+    4px 4px 4px rgba(196, 196, 196, 0.9),
+    -4px -4px 4px rgba(255, 255, 255, 0.95);
+  padding: 150px 24px 18px;
   box-sizing: border-box;
+  overflow: hidden;
+  text-align: left;
   transition:
     transform 0.3s ease,
     box-shadow 0.3s ease;
 }
 
-.dl-step-card::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  border-radius: inherit;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-  pointer-events: none;
-}
-
+.dl-step-card::before,
 .dl-step-card::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  border-radius: inherit;
-  border: 3px solid var(--step-color);
-  opacity: 0;
-  transition: opacity 0.3s ease;
-  pointer-events: none;
+  content: none;
 }
 
 .dl-step-card-badge {
-  display: inline-flex;
+  position: absolute;
+  top: 42px;
+  right: -1px;
+  width: 126px;
+  height: 76px;
+  margin: 0;
+  display: flex;
   align-items: center;
   justify-content: center;
-  width: 100px;
-  height: 70px;
   background: #dfe6e9;
   box-shadow:
-    inset -4px -4px 4px #ffffff,
-    inset 4px 4px 4px rgba(196, 196, 196, 0.8);
+    inset -4px -4px 4px rgba(255, 255, 255, 0.95),
+    inset 4px 4px 4px rgba(196, 196, 196, 0.55);
   border-radius: 28px 0 0 28px;
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", "Inter";
   font-weight: 700;
   font-size: 44px;
-  margin-bottom: 24px;
+  line-height: 1;
+  letter-spacing: 0.01em;
+  color: var(--step-color);
   transition:
     transform 0.3s ease,
     box-shadow 0.3s ease;
 }
 
 .dl-step-card-title {
-  margin: 0 0 12px;
-  font-family: "Segoe UI";
+  width: 100%;
+  margin: 0 0 16px;
+  font-family: "Segoe UI", "Inter";
   font-weight: 700;
   font-size: 28px;
+  line-height: 1.2;
   color: #31344b;
+  text-align: left;
 }
 
 .dl-step-card-desc {
+  width: 100%;
   margin: 0;
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", "Inter";
+  font-weight: 400;
   font-size: 20px;
-  line-height: 1.5;
-  color: #000;
+  line-height: 1.45;
+  letter-spacing: 0;
+  color: #31344b;
+  text-align: left;
+}
+
+/* Keep only the first step-card description on two clean lines. */
+.dl-step-grid > .dl-step-card:first-child .dl-step-card-desc {
+  font-size: 18px;
+  white-space: normal;
+  overflow-wrap: normal;
+  word-break: normal;
 }
 
 .dl-why-section {
@@ -919,7 +933,7 @@
   display: flex;
   align-items: center;
   gap: 16px;
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", "Inter";
   font-weight: 600;
   font-size: 20px;
   color: #2f3547;
@@ -999,7 +1013,7 @@
   z-index: 2;
   display: inline-block;
   margin: 0 0 14px;
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", "Inter";
   font-weight: 700;
   font-size: 28px;
   letter-spacing: 0.03em;
@@ -1021,7 +1035,7 @@
   position: relative;
   z-index: 2;
   margin: 0;
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", "Inter";
   font-size: 20px;
   color: #31344b;
 }
@@ -1053,7 +1067,7 @@
 .dl-cta-heading {
   margin: 0;
   max-width: 900px;
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", "Inter";
   font-weight: 700;
   font-size: 36px;
   line-height: 1.15;
@@ -1064,7 +1078,7 @@
 .dl-cta-subtext {
   margin: 0;
   max-width: 960px;
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", "Inter";
   font-size: 24px;
   line-height: 1.43;
   letter-spacing: 0.03em;
@@ -1145,7 +1159,7 @@
 .digital-literacy {
   width: 100%;
   min-width: 0;
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", "Inter";
 }
 .digital-literacy *,
 .digital-literacy *::before,
@@ -1165,9 +1179,14 @@
   display: grid;
   grid-template-columns: minmax(0, 1.35fr) minmax(0, 1fr);
   gap: clamp(24px, 3.4vw, 48px);
-  align-items: center;
+  align-items: start;
 }
-.dl-hero-content { margin-bottom: 64px; padding-block: 24px; }
+.dl-hero-content {
+  margin-top: 0;
+  margin-bottom: 64px;
+  padding: 0;
+  align-self: start;
+}
 .dl-hero-media { width: 100%; align-self: end; justify-self: end; }
 .dl-hero-image-frame { position: absolute; inset: 0 5%; width: auto; height: auto; }
 .dl-hero-stats {
@@ -1265,7 +1284,7 @@
   .dl-advantage-wedge { display: none; }
   .dl-advantage-grid { max-width: 610px; margin-inline: auto; }
   .dl-step-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); max-width: 800px; }
-  .dl-step-card { min-height: 260px; }
+  .dl-step-card { width: 250px; height: 320px; min-height: 320px; }
   .dl-accelerate-section { padding: 24px; }
   .dl-accelerate { padding: 24px; gap: 28px; }
   .dl-check-pill { padding: 14px 20px; }
@@ -1350,11 +1369,12 @@
   .dl-analytics-card-value { font-size: 24px; }
   .dl-analytics-card-label { font-size: 18px; }
   .dl-analytics-card-desc { font-size: 15px; }
-  .dl-step-grid { gap: 24px; }
-  .dl-step-card { padding: 24px 20px; min-height: 0; border-right-width: 8px; border-radius: 16px 64px 64px 16px; }
-  .dl-step-card-badge { width: 80px; height: 56px; font-size: 34px; margin-bottom: 20px; }
-  .dl-step-card-title { font-size: 22px; }
-  .dl-step-card-desc { font-size: 16px; }
+  .dl-step-grid { max-width: 610px; gap: 28px; justify-content: center; }
+  .dl-step-card { width: 250px; height: 300px; min-height: 300px; padding: 132px 22px 18px; border-right-width: 4px; border-radius: 16px 58px 58px 16px; }
+  .dl-step-card-badge { top: 34px; right: -1px; width: 112px; height: 68px; font-size: 38px; }
+  .dl-step-card-title { font-size: 22px; margin-bottom: 12px; }
+  .dl-step-card-desc { font-size: 16px; line-height: 1.45; }
+  .dl-step-grid > .dl-step-card:first-child .dl-step-card-desc { font-size: 16px; }
   .dl-why-content { gap: 24px; }
   .dl-bullet-list { gap: 20px; max-width: 360px; }
   .dl-bullet-item { font-size: 18px; gap: 12px; }
@@ -1371,7 +1391,7 @@
   .dl-transform-row { flex-direction: column; align-items: center; }
 }
 @media (max-width: 599px) {
-  .dl-step-grid { grid-template-columns: minmax(0, 1fr); max-width: 360px; }
+  .dl-step-grid { grid-template-columns: minmax(0, 250px); max-width: 250px; }
 }
 @media (max-width: 479px) {
   .dl-hero-buttons { width: 100%; flex-direction: column; gap: 16px; }
@@ -1392,5 +1412,266 @@
   .digital-literacy *, .digital-literacy *::before, .digital-literacy *::after {
     animation: none !important;
     transition: none !important;
+  }
+}
+/* =========================================================
+   DESKTOP HERO HEIGHT FIX
+   Reduce only the empty space between buttons and stats.
+   ========================================================= */
+
+@media (min-width: 1024px) {
+  .dl-hero-card {
+    min-height: 0;
+  }
+
+  .dl-hero-content {
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 24px;
+  }
+
+  .dl-hero-media {
+    width: 100%;
+    max-width: 430px;
+
+    /* reduce image/card height */
+    height: 500px;
+    aspect-ratio: auto;
+
+    align-self: end;
+    justify-self: end;
+  }
+
+  .dl-hero-image-frame {
+    position: absolute;
+    top: 0;
+    right: 5%;
+    bottom: 0;
+    left: 5%;
+
+    width: auto;
+    height: auto;
+  }
+
+  .dl-hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center bottom;
+  }
+}
+@media (min-width: 1024px) {
+  .dl-hero-content {
+    margin-bottom: 12px;
+  }
+
+  .dl-hero-media {
+    height: 480px;
+  }
+}
+
+/* =========================================================
+   FINAL MOBILE FIX — HOW IT WORKS CARDS
+   Smaller cards + less empty space + every description in 2 lines.
+   Keep this block at the VERY END of this module.
+   ========================================================= */
+@media (max-width: 599px) {
+  .digital-literacy {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  .dl-howitworks-section {
+    width: 100%;
+    max-width: 100%;
+    padding: 16px 12px !important;
+    gap: 12px !important;
+    overflow: hidden;
+  }
+
+  .dl-step-grid {
+    width: 100% !important;
+    max-width: 198px !important;
+    margin: 0 auto !important;
+    padding: 0 !important;
+
+    display: grid !important;
+    grid-template-columns: minmax(0, 1fr) !important;
+    grid-auto-rows: auto !important;
+
+    justify-content: center !important;
+    justify-items: center !important;
+    align-items: stretch !important;
+
+    /* Less vertical space between cards */
+    gap: 12px !important;
+  }
+
+  .dl-step-card {
+    position: relative;
+
+    width: 198px !important;
+    max-width: 198px !important;
+
+    /* Reduce the large empty area inside each box */
+    height: 102px !important;
+    min-height: 102px !important;
+    max-height: 102px !important;
+
+    margin: 0 !important;
+    padding: 35px 11px 7px !important;
+
+    box-sizing: border-box !important;
+    overflow: hidden !important;
+
+    border-right-width: 3px !important;
+    border-radius: 13px 27px 27px 13px !important;
+
+    justify-self: center !important;
+  }
+
+  .dl-step-card::before,
+  .dl-step-card::after {
+    content: none !important;
+    display: none !important;
+  }
+
+  .dl-step-card-badge {
+    top: 4px !important;
+    right: 0 !important;
+
+    width: 58px !important;
+    height: 28px !important;
+
+    margin: 0 !important;
+
+    border-radius: 14px 0 0 14px !important;
+
+    font-size: 21px !important;
+    line-height: 1 !important;
+  }
+
+  .dl-step-card-title {
+    width: 100% !important;
+
+    margin: 0 0 2px !important;
+
+    font-size: 15px !important;
+    line-height: 17px !important;
+
+    white-space: normal !important;
+    overflow-wrap: normal !important;
+    word-break: normal !important;
+  }
+
+  .dl-step-card-desc,
+  .dl-step-grid > .dl-step-card:first-child .dl-step-card-desc {
+    margin: 0 !important;
+
+    min-height: 28px !important;
+
+    font-size: 11.2px !important;
+    line-height: 14px !important;
+    letter-spacing: 0 !important;
+
+    white-space: normal !important;
+    overflow-wrap: normal !important;
+    word-break: normal !important;
+    hyphens: none !important;
+    text-wrap: balance !important;
+  }
+
+  /* Keep EVERY supporting line visually at two lines. */
+  .dl-step-grid > .dl-step-card:nth-child(1) .dl-step-card-desc {
+    width: 184px !important;
+    max-width: 184px !important;
+  }
+
+  .dl-step-grid > .dl-step-card:nth-child(2) .dl-step-card-desc {
+    width: 158px !important;
+    max-width: 158px !important;
+  }
+
+  .dl-step-grid > .dl-step-card:nth-child(3) .dl-step-card-desc {
+    width: 125px !important;
+    max-width: 125px !important;
+  }
+
+  .dl-step-grid > .dl-step-card:nth-child(4) .dl-step-card-desc {
+    width: 138px !important;
+    max-width: 138px !important;
+  }
+}
+
+/* Extra-small phones */
+@media (max-width: 359px) {
+  .dl-step-grid {
+    max-width: 190px !important;
+    gap: 10px !important;
+  }
+
+  .dl-step-card {
+    width: 190px !important;
+    max-width: 190px !important;
+
+    height: 100px !important;
+    min-height: 100px !important;
+    max-height: 100px !important;
+
+    padding: 34px 10px 6px !important;
+  }
+
+  .dl-step-card-badge {
+    width: 56px !important;
+    height: 27px !important;
+    font-size: 20px !important;
+  }
+
+  .dl-step-card-title {
+    font-size: 14.5px !important;
+    line-height: 17px !important;
+  }
+
+  .dl-step-card-desc,
+  .dl-step-grid > .dl-step-card:first-child .dl-step-card-desc {
+    font-size: 10.8px !important;
+    line-height: 13.5px !important;
+  }
+
+  .dl-step-grid > .dl-step-card:nth-child(1) .dl-step-card-desc {
+    width: 176px !important;
+    max-width: 176px !important;
+  }
+
+  .dl-step-grid > .dl-step-card:nth-child(2) .dl-step-card-desc {
+    width: 150px !important;
+    max-width: 150px !important;
+  }
+
+  .dl-step-grid > .dl-step-card:nth-child(3) .dl-step-card-desc {
+    width: 118px !important;
+    max-width: 118px !important;
+  }
+
+  .dl-step-grid > .dl-step-card:nth-child(4) .dl-step-card-desc {
+    width: 130px !important;
+    max-width: 130px !important;
+  }
+}
+
+
+/* =========================================================
+   FINAL MOBILE HERO PATTERN FIX
+   Move ONLY the blue decorative pattern away from the buttons.
+   Buttons, image, card size, text, spacing and all other sections
+   remain unchanged.
+   ========================================================= */
+@media (max-width: 767px) {
+  .dl-hero-pattern {
+    left: 18% !important;
+    top: 14% !important;
+    width: 108% !important;
+    height: 96% !important;
   }
 }

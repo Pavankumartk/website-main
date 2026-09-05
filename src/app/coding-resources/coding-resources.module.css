@@ -2,7 +2,7 @@
   min-height: 100vh;
   background: #dfe6e9;
   color: #2f3547;
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", "Inter", sans-serif;
 }
 
 .navbar {
@@ -138,7 +138,7 @@
     inset -4px -4px 8px #FFFFFF,
     inset 4px 4px 8px #C4C4C4;
 
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", "Inter", sans-serif;
   font-size: 17px;
   font-weight: 600;
 }
@@ -267,7 +267,7 @@
   width: 150px;
   margin-left: -10px;
   color: #31344b;
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", "Inter", sans-serif;
   font-size: 20px;
   font-weight: 600;
   line-height: 30px;
@@ -439,7 +439,7 @@
   position: relative;
   z-index: 2;
   margin: 0;
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", "Inter", sans-serif;
   font-size: 54px;
   font-weight: 700;
   line-height: 62px;
@@ -455,7 +455,7 @@
   position: relative;
   z-index: 2;
   color: #000000;
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", "Inter", sans-serif;
   font-size: 28px;
   font-weight: 600;
   line-height: 40px;
@@ -467,7 +467,7 @@
   width: calc(100% + 62px);
   margin: 32px 0 31px -31px;
   color: #2d4cc8;
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", "Inter", sans-serif;
   font-size: 24px;
   font-weight: 700;
   line-height: 32px;
@@ -522,7 +522,7 @@
 
 .checkText {
   color: #31344b;
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", "Inter", sans-serif;
   font-size: 22px;
   font-weight: 400;
   line-height: 36px;
@@ -595,7 +595,7 @@
   position: absolute;
   font-size: 130px;
   color: rgba(255, 255, 255, 0.12);
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", "Inter", sans-serif;
 }
 
 .footer {
@@ -987,7 +987,7 @@
   width: 150px;
   text-align: center;
   color: #31344B;
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", "Inter", sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 600;
@@ -1165,7 +1165,7 @@
   z-index: 2;
   margin: 0;
 
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", "Inter", sans-serif;
   font-size: 54px;
   font-weight: 700;
   line-height: 64px;
@@ -1192,7 +1192,7 @@
   margin-top: 1px;
   color: #000000;
 
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", "Inter", sans-serif;
   font-size: 27px;
   font-weight: 600;
   line-height: 38px;
@@ -1206,7 +1206,7 @@
   margin: 40px 0 28px -30px;
 
   color: #2d4cc8;
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", "Inter", sans-serif;
   font-size: 24px;
   font-weight: 700;
   line-height: 32px;
@@ -1266,7 +1266,7 @@
 
 .checkText {
   color: #31344b;
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", "Inter", sans-serif;
   font-size: 22px;
   font-weight: 400;
   line-height: 32px;
@@ -2147,7 +2147,7 @@
 
 .pillarHead b {
   margin: 0;
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", "Inter", sans-serif;
   font-size: 54px;
   font-weight: 700;
   line-height: 62px;
@@ -2162,7 +2162,7 @@
 .pillarHead span {
   margin: 0;
   color: #000000;
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", "Inter", sans-serif;
   font-size: 28px;
   font-weight: 600;
   line-height: 40px;
@@ -2174,7 +2174,7 @@
   width: 100%;
   margin: 40px 0 32px;
   color: #2d4cc8;
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", "Inter", sans-serif;
   font-size: 24px;
   font-weight: 700;
   line-height: 32px;
@@ -2226,7 +2226,7 @@
 
 .checkText {
   color: #31344b;
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", "Inter", sans-serif;
   font-size: 22px;
   font-weight: 400;
   line-height: 32px;
@@ -5173,6 +5173,895 @@
   .growthFrame .videoVisual {
     border-radius: 0 0 18px 18px !important;
     overflow: hidden !important;
+  }
+}
+
+/* ==========================================================================
+   FINAL CODING RESOURCES RESPONSIVE SYSTEM
+   Keeps existing content, colors, shadows, cards and visual language.
+   Segoe UI is primary; Inter is fallback.
+   ========================================================================== */
+
+.page {
+  width: 100% !important;
+  max-width: 100% !important;
+  min-width: 0 !important;
+  overflow-x: hidden !important;
+  font-family: "Segoe UI", "Inter", sans-serif !important;
+}
+
+.page,
+.page *,
+.page *::before,
+.page *::after {
+  box-sizing: border-box !important;
+}
+
+.shell {
+  width: min(1280px, calc(100% - 48px)) !important;
+  max-width: 1280px !important;
+  min-width: 0 !important;
+  margin: 0 auto !important;
+  padding: 0 !important;
+}
+
+.breadcrumb {
+  width: 100% !important;
+  min-width: 0 !important;
+  flex-wrap: wrap !important;
+}
+
+.breadcrumb b {
+  color: #2d4cc8 !important;
+  font-weight: 700 !important;
+}
+
+/* ---------- TYPOGRAPHY ---------- */
+.heroCopy h1 {
+  font-size: 36px !important;
+  line-height: 1.25 !important;
+  font-weight: 700 !important;
+}
+
+.learning h2,
+.practice h2,
+.practiceIntro h2,
+.growth h2,
+.growthCopy h2 {
+  font-size: 36px !important;
+  line-height: 1.25 !important;
+  font-weight: 700 !important;
+}
+
+.heroCopy p,
+.learning > p,
+.practiceIntro p,
+.growthCopy p {
+  font-size: 24px !important;
+  line-height: 1.42 !important;
+  font-weight: 400 !important;
+}
+
+.pill,
+.learningCardText,
+.pillarHead b,
+.pillarHead span,
+.pillar h3,
+.checkText,
+.supportCard {
+  font-family: "Segoe UI", "Inter", sans-serif !important;
+}
+
+/* ---------- COMMON WIDTH SAFETY ---------- */
+.heroFrame,
+.hero,
+.learning,
+.practice,
+.practiceIntro,
+.supportGrid,
+.practiceOval,
+.pillars,
+.growthFrame,
+.growth,
+.growthCopy,
+.videoVisual {
+  min-width: 0 !important;
+  max-width: 100% !important;
+}
+
+.heroFrame,
+.growthFrame {
+  width: 100% !important;
+}
+
+.heroImage,
+.learningCardOuter,
+.pillarSvg,
+.growthVideo {
+  max-width: 100% !important;
+}
+
+/* ---------- DESKTOP ---------- */
+@media screen and (min-width: 1051px) {
+  .heroFrame {
+    padding: 32px !important;
+  }
+
+  .hero {
+    width: 100% !important;
+    height: 550px !important;
+  }
+
+  .heroCopy {
+    position: absolute !important;
+    left: 36px !important;
+    top: 88px !important;
+    width: min(46%, 560px) !important;
+    max-width: 560px !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    transform: none !important;
+    text-align: left !important;
+  }
+
+  .heroCopy p {
+    max-width: 500px !important;
+  }
+
+  .heroImage {
+    position: absolute !important;
+    left: auto !important;
+    right: -167px !important;
+    bottom: -27px !important;
+    width: 940px !important;
+    height: 660px !important;
+    object-fit: contain !important;
+    transform: scaleX(-1) !important;
+  }
+
+  .learningCards {
+    width: 100% !important;
+    height: 132px !important;
+    display: grid !important;
+    grid-template-columns: repeat(5, 248px) !important;
+    justify-content: center !important;
+    gap: 10px !important;
+  }
+
+  .pillars {
+    width: 100% !important;
+    display: grid !important;
+    grid-template-columns: repeat(3, minmax(0, 400px)) !important;
+    justify-content: center !important;
+    gap: 36px !important;
+  }
+
+  .pillar {
+    width: 400px !important;
+    max-width: 100% !important;
+  }
+
+  .growth {
+    display: grid !important;
+    grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr) !important;
+    height: 480px !important;
+  }
+
+  .growthCopy {
+    padding: 64px 70px !important;
+  }
+}
+
+/* ---------- TABLET ---------- */
+@media screen and (min-width: 701px) and (max-width: 1050px) {
+  .shell {
+    width: min(92%, 900px) !important;
+  }
+
+  .heroFrame,
+  .growthFrame {
+    padding: 24px !important;
+  }
+
+  .hero {
+    height: auto !important;
+    min-height: 560px !important;
+    display: grid !important;
+    grid-template-columns: minmax(0, 1fr) minmax(320px, 0.92fr) !important;
+    align-items: center !important;
+    overflow: hidden !important;
+  }
+
+  .heroCopy {
+    position: relative !important;
+    inset: auto !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 48px 0 48px 36px !important;
+    margin: 0 !important;
+    transform: none !important;
+    z-index: 3 !important;
+  }
+
+  .heroCopy h1 {
+    font-size: 34px !important;
+  }
+
+  .heroCopy p {
+    font-size: 20px !important;
+    max-width: 430px !important;
+  }
+
+  .heroImage {
+    position: relative !important;
+    inset: auto !important;
+    width: min(560px, 125%) !important;
+    height: auto !important;
+    justify-self: end !important;
+    align-self: end !important;
+    transform: scaleX(-1) !important;
+  }
+
+  .learning {
+    padding: 64px 0 48px !important;
+  }
+
+  .learningCards {
+    width: min(100%, 760px) !important;
+    height: auto !important;
+    margin: 36px auto 0 !important;
+    display: grid !important;
+    grid-template-columns: repeat(2, 248px) !important;
+    justify-content: center !important;
+    gap: 20px 28px !important;
+  }
+
+  .supportGrid {
+    position: static !important;
+    width: 100% !important;
+    height: auto !important;
+    margin: 0 auto !important;
+    padding: 42px 20px !important;
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 28px !important;
+  }
+
+  .supportGrid .supportCard,
+  .supportGrid .supportCard:nth-child(1),
+  .supportGrid .supportCard:nth-child(2),
+  .supportGrid .supportCard:nth-child(3),
+  .supportGrid .supportCard:nth-child(4) {
+    position: relative !important;
+    inset: auto !important;
+    width: 100% !important;
+    height: auto !important;
+    min-height: 100px !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+  }
+
+  .practiceOval {
+    width: min(92%, 820px) !important;
+    margin: 30px auto 60px !important;
+  }
+
+  .pillars {
+    width: 100% !important;
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 400px)) !important;
+    justify-content: center !important;
+    gap: 28px !important;
+  }
+
+  .pillar {
+    width: 100% !important;
+    max-width: 400px !important;
+  }
+
+  .growth {
+    height: auto !important;
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+  }
+
+  .growthCopy {
+    width: 100% !important;
+    padding: 48px 44px !important;
+  }
+
+  .videoVisual {
+    width: 100% !important;
+    min-height: 360px !important;
+    border-radius: 0 0 18px 18px !important;
+  }
+}
+
+/* ---------- MOBILE ---------- */
+@media screen and (max-width: 700px) {
+  .shell {
+    width: calc(100% - 24px) !important;
+    padding: 0 !important;
+  }
+
+  .breadcrumb {
+    min-height: 58px !important;
+    height: auto !important;
+    padding: 14px 0 !important;
+    font-size: 14px !important;
+    line-height: 22px !important;
+  }
+
+  .heroFrame,
+  .growthFrame {
+    padding: 14px !important;
+    border-radius: 24px !important;
+  }
+
+  .hero {
+    width: 100% !important;
+    height: auto !important;
+    min-height: 560px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    overflow: hidden !important;
+    border-radius: 16px !important;
+  }
+
+  .heroCopy {
+    position: relative !important;
+    inset: auto !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 34px 22px 0 !important;
+    margin: 0 !important;
+    transform: none !important;
+    text-align: left !important;
+    align-items: flex-start !important;
+    z-index: 5 !important;
+  }
+
+  .heroCopy .pill {
+    align-self: flex-start !important;
+    margin: 0 0 22px !important;
+  }
+
+  .heroCopy h1 {
+    width: 100% !important;
+    max-width: 330px !important;
+    margin: 0 0 16px !important;
+    font-size: 32px !important;
+    line-height: 40px !important;
+    text-align: left !important;
+  }
+
+  .heroCopy p {
+    width: 100% !important;
+    max-width: 310px !important;
+    margin: 0 !important;
+    font-size: 16px !important;
+    line-height: 24px !important;
+    text-align: left !important;
+  }
+
+  .heroImage {
+    position: relative !important;
+    inset: auto !important;
+    width: min(520px, 118%) !important;
+    max-width: none !important;
+    height: auto !important;
+    margin: auto -9% -4px auto !important;
+    align-self: flex-end !important;
+    object-fit: contain !important;
+    object-position: center bottom !important;
+    transform: scaleX(-1) !important;
+    z-index: 4 !important;
+  }
+
+  .learning {
+    padding: 48px 0 !important;
+  }
+
+  .learning h2,
+  .practice h2,
+  .practiceIntro h2,
+  .growth h2,
+  .growthCopy h2 {
+    font-size: 24px !important;
+    line-height: 32px !important;
+  }
+
+  .learning > p,
+  .practiceIntro p,
+  .growthCopy p {
+    font-size: 16px !important;
+    line-height: 24px !important;
+  }
+
+  .learningCards {
+    width: min(248px, 100%) !important;
+    height: auto !important;
+    margin: 24px auto 0 !important;
+    display: grid !important;
+    grid-template-columns: minmax(0, 248px) !important;
+    justify-content: center !important;
+    gap: 16px !important;
+  }
+
+  .learningCard {
+    width: min(248px, 100%) !important;
+    max-width: 100% !important;
+    margin: 0 auto !important;
+  }
+
+  .practiceIntro {
+    width: 100% !important;
+    padding: 44px 22px !important;
+    border-radius: 8px 60px 8px 60px !important;
+  }
+
+  .supportGrid {
+    position: static !important;
+    width: 100% !important;
+    height: auto !important;
+    margin: 0 !important;
+    padding: 28px 6px !important;
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 18px !important;
+  }
+
+  .supportGrid .supportCard,
+  .supportGrid .supportCard:nth-child(1),
+  .supportGrid .supportCard:nth-child(2),
+  .supportGrid .supportCard:nth-child(3),
+  .supportGrid .supportCard:nth-child(4) {
+    position: relative !important;
+    inset: auto !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    min-height: 92px !important;
+    margin: 0 !important;
+    padding: 22px 24px !important;
+    font-size: 18px !important;
+    line-height: 26px !important;
+  }
+
+  .practiceOval {
+    width: calc(100% - 12px) !important;
+    min-height: 0 !important;
+    margin: 30px auto 48px !important;
+    padding: 24px 18px !important;
+    font-size: 20px !important;
+    line-height: 28px !important;
+  }
+
+  .pillars {
+    width: 100% !important;
+    max-width: 424px !important;
+    margin: 0 auto !important;
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 18px !important;
+  }
+
+  .pillar {
+    width: 100% !important;
+    max-width: 424px !important;
+    height: auto !important;
+    min-height: 0 !important;
+    margin: 0 auto !important;
+    padding: 0 22px 30px !important;
+  }
+
+  .pillarHead {
+    width: calc(100% + 44px) !important;
+    min-height: 200px !important;
+    height: 200px !important;
+    margin-left: -22px !important;
+    padding: 24px 18px 54px !important;
+  }
+
+  .pillarHead b {
+    font-size: 46px !important;
+    line-height: 54px !important;
+  }
+
+  .pillarHead span {
+    width: 100% !important;
+    font-size: 18px !important;
+    line-height: 26px !important;
+  }
+
+  .pillar h3 {
+    width: calc(100% + 44px) !important;
+    margin: 26px 0 20px -22px !important;
+    padding: 0 16px !important;
+    font-size: 18px !important;
+    line-height: 26px !important;
+  }
+
+  .checkList {
+    width: 100% !important;
+    padding: 0 !important;
+    gap: 12px !important;
+  }
+
+  .checkItem {
+    width: 100% !important;
+    height: auto !important;
+    min-height: 42px !important;
+  }
+
+  .checkText {
+    flex: 1 1 auto !important;
+    min-width: 0 !important;
+    font-size: 16px !important;
+    line-height: 24px !important;
+  }
+
+  .growthFrame {
+    margin: 48px 0 !important;
+  }
+
+  .growth {
+    width: 100% !important;
+    height: auto !important;
+    display: flex !important;
+    flex-direction: column !important;
+  }
+
+  .growthCopy {
+    width: 100% !important;
+    padding: 36px 24px !important;
+  }
+
+  .growthCopy h2 {
+    margin-top: 24px !important;
+  }
+
+  .videoVisual {
+    width: 100% !important;
+    height: clamp(230px, 65vw, 320px) !important;
+    min-height: 0 !important;
+    border-radius: 0 0 18px 18px !important;
+  }
+
+  .growthVideo {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+  }
+}
+
+/* ---------- VERY SMALL MOBILE ---------- */
+@media screen and (max-width: 420px) {
+  .shell {
+    width: calc(100% - 16px) !important;
+  }
+
+  .heroFrame,
+  .growthFrame {
+    padding: 10px !important;
+  }
+
+  .heroCopy {
+    padding: 28px 18px 0 !important;
+  }
+
+  .heroCopy h1 {
+    font-size: 28px !important;
+    line-height: 36px !important;
+  }
+
+  .heroImage {
+    width: 122% !important;
+    margin-right: -12% !important;
+  }
+
+  .supportCard {
+    padding: 20px !important;
+  }
+
+  .pillar {
+    padding-left: 18px !important;
+    padding-right: 18px !important;
+  }
+
+  .pillarHead {
+    width: calc(100% + 36px) !important;
+    margin-left: -18px !important;
+  }
+
+  .pillar h3 {
+    width: calc(100% + 36px) !important;
+    margin-left: -18px !important;
+  }
+}
+
+/* ==========================================================================
+   PILLAR CARDS — PROPORTIONAL REFERENCE LAYOUT
+   Fixes text overlap and scales the complete 3-card group like the reference.
+   Other sections are untouched.
+   ========================================================================== */
+
+.pillars {
+  width: 100% !important;
+  max-width: 1180px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  display: grid !important;
+  grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+  gap: clamp(14px, 2.4vw, 36px) !important;
+  align-items: stretch !important;
+}
+
+.pillars .pillar {
+  position: relative !important;
+  width: 100% !important;
+  max-width: none !important;
+  height: auto !important;
+  min-height: 0 !important;
+  aspect-ratio: 424 / 630 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow: hidden !important;
+  border-radius: clamp(12px, 1.4vw, 20px) !important;
+  container-type: inline-size;
+}
+
+.pillars .pillarSvg {
+  position: absolute !important;
+  inset: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  max-width: none !important;
+  object-fit: fill !important;
+  pointer-events: none !important;
+}
+
+.pillars .pillarContent {
+  position: relative !important;
+  z-index: 2 !important;
+  width: 100% !important;
+  height: 100% !important;
+  min-height: 0 !important;
+  padding: 0 7.2% 5.5% !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: stretch !important;
+  box-sizing: border-box !important;
+}
+
+/* Top pointed area */
+.pillars .pillarHead {
+  width: calc(100% + 15.5%) !important;
+  height: 33.5% !important;
+  min-height: 0 !important;
+  margin-left: -7.75% !important;
+  padding: 5.5% 5% 0 !important;
+  flex: 0 0 33.5% !important;
+  gap: 0.8% !important;
+  box-sizing: border-box !important;
+}
+
+.pillars .pillarHead b {
+  margin: 0 !important;
+  font-family: "Segoe UI", "Inter", sans-serif !important;
+  font-size: clamp(24px, 12cqw, 48px) !important;
+  line-height: 1.05 !important;
+}
+
+.pillars .pillarHead span {
+  width: 100% !important;
+  margin: 0 !important;
+  font-family: "Segoe UI", "Inter", sans-serif !important;
+  font-size: clamp(12px, 6.2cqw, 24px) !important;
+  line-height: 1.18 !important;
+  text-align: center !important;
+  white-space: normal !important;
+}
+
+/* Blue subheading */
+.pillars .pillar h3 {
+  width: 100% !important;
+  margin: 13% 0 8% !important;
+  padding: 0 !important;
+  font-family: "Segoe UI", "Inter", sans-serif !important;
+  font-size: clamp(12px, 6.1cqw, 24px) !important;
+  line-height: 1.18 !important;
+  text-align: center !important;
+  flex: 0 0 auto !important;
+}
+
+/* Checklist */
+.pillars .checkList {
+  width: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  display: flex !important;
+  flex-direction: column !important;
+  gap: clamp(6px, 3.1cqw, 14px) !important;
+  flex: 1 1 auto !important;
+  justify-content: flex-start !important;
+  min-height: 0 !important;
+}
+
+.pillars .checkItem {
+  width: 100% !important;
+  height: auto !important;
+  min-height: 0 !important;
+  margin: 0 !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: clamp(7px, 3.2cqw, 14px) !important;
+}
+
+.pillars .checkIconCircle {
+  width: clamp(24px, 10.4cqw, 44px) !important;
+  height: clamp(24px, 10.4cqw, 44px) !important;
+  min-width: clamp(24px, 10.4cqw, 44px) !important;
+  min-height: clamp(24px, 10.4cqw, 44px) !important;
+  flex: 0 0 auto !important;
+}
+
+.pillars .checkIcon {
+  width: clamp(14px, 5.7cqw, 24px) !important;
+  height: clamp(14px, 5.7cqw, 24px) !important;
+}
+
+.pillars .checkText {
+  min-width: 0 !important;
+  font-family: "Segoe UI", "Inter", sans-serif !important;
+  font-size: clamp(10px, 5.2cqw, 20px) !important;
+  line-height: 1.2 !important;
+  white-space: normal !important;
+  overflow-wrap: anywhere !important;
+}
+
+/* Tablet: still preserve the 3-card reference composition */
+@media screen and (max-width: 900px) {
+  .pillars {
+    max-width: 100% !important;
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+    gap: clamp(10px, 2vw, 18px) !important;
+  }
+}
+
+/* Narrow mobile: stack cards so content remains readable */
+@media screen and (max-width: 520px) {
+  .pillars {
+    width: min(100%, 360px) !important;
+    grid-template-columns: 1fr !important;
+    gap: 18px !important;
+  }
+
+  .pillars .pillar {
+    aspect-ratio: 424 / 630 !important;
+  }
+
+  .pillars .pillarHead b {
+    font-size: clamp(34px, 12cqw, 48px) !important;
+  }
+
+  .pillars .pillarHead span,
+  .pillars .pillar h3 {
+    font-size: clamp(18px, 6.2cqw, 24px) !important;
+  }
+
+  .pillars .checkText {
+    font-size: clamp(16px, 5.2cqw, 20px) !important;
+  }
+}
+
+/* ==========================================================================
+   PILLAR HEADER — CENTER ALIGNMENT ONLY
+   Centers 01/02/03 and their titles inside the pointed top section.
+   No other card sizing, content, spacing, shadows or responsiveness changed.
+   ========================================================================== */
+.pillars .pillarHead {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: flex-start !important;
+  text-align: center !important;
+}
+
+.pillars .pillarHead b,
+.pillars .pillarHead span {
+  width: 100% !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  text-align: center !important;
+  align-self: center !important;
+}
+
+.pillars .pillarHead b {
+  display: block !important;
+}
+
+.pillars .pillarHead span {
+  display: block !important;
+}
+
+/* ==========================================================================
+   PILLAR HEADER — TRUE HORIZONTAL CENTER FIX ONLY
+   The previous header was wider than the card and shifted left.
+   Keep the same visual design; center the header geometry itself.
+   ========================================================================== */
+.pillars .pillarHead {
+  position: relative !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+.pillars .pillarHead b,
+.pillars .pillarHead span {
+  position: relative !important;
+  left: 0 !important;
+  transform: none !important;
+  width: 100% !important;
+  text-align: center !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+/* ==========================================================================
+   PRACTICE-ORIENTED CODING SUPPORT — INNER EMPTY SPACE REDUCTION ONLY
+   Keeps the existing shape, shadow, typography, colors and alignment.
+   ========================================================================== */
+.practiceIntro {
+  padding-top: 42px !important;
+  padding-bottom: 42px !important;
+}
+
+@media (max-width: 700px) {
+  .practiceIntro {
+    padding-top: 32px !important;
+    padding-bottom: 32px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .practiceIntro {
+    padding-top: 28px !important;
+    padding-bottom: 28px !important;
+  }
+}
+
+/* ==========================================================================
+   PRACTICE-ORIENTED CODING SUPPORT — EMPTY SPACE FIX
+   Removes the forced minimum height that was keeping the card too tall.
+   Keeps the same shape, shadows, colors, text and alignment.
+   ========================================================================== */
+
+/* Desktop */
+@media screen and (min-width: 1051px) {
+  .practiceIntro {
+    height: auto !important;
+    min-height: 0 !important;
+    padding: 38px 70px !important;
+  }
+}
+
+/* Tablet */
+@media screen and (min-width: 701px) and (max-width: 1050px) {
+  .practiceIntro {
+    height: auto !important;
+    min-height: 0 !important;
+    padding: 34px 40px !important;
+  }
+}
+
+/* Mobile */
+@media screen and (max-width: 700px) {
+  .practiceIntro {
+    height: auto !important;
+    min-height: 0 !important;
+    padding: 28px 22px !important;
   }
 }
 

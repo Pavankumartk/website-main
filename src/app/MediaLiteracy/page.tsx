@@ -134,7 +134,7 @@ const MediaLiteracy: NextPage = () => {
               <div
                 className={styles.heroPhotoPolygon}
                 style={{
-                  backgroundImage: "url('/images/Polygon1.webp')",
+                  backgroundImage: "url('/images/smiling-student-with-laptop 1.png')",
                 }}
                 role="img"
                 aria-label="Media literacy learner"

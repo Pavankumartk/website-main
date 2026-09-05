@@ -7,8 +7,8 @@
   text-align: left;
   font-size: 16px;
   color: #31344b;
-  font-family: "Segoe UI";
-  zoom: 0.89;
+  font-family: "Segoe UI", "Inter", sans-serif;
+  zoom: 1;
   padding-bottom: 20px;
   box-sizing: border-box;
 	max-width: 1440px; 
@@ -26,7 +26,7 @@
   height: 80px;
   overflow: hidden;
   flex-shrink: 0;
-  font-family: Inter;
+  font-family: "Segoe UI", "Inter", sans-serif;
 }
 .frameChild {
   position: absolute;
@@ -107,7 +107,7 @@
   box-sizing: border-box;
   text-align: center;
   color: #2d4cc8;
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", "Inter", sans-serif;
 }
 .signInHelp {
   width: 97px;
@@ -222,7 +222,7 @@
   align-items: center;
   justify-content: center;
   box-sizing: border-box;
-  font-family: "Segoe UI",;
+  font-family: "Segoe UI", "Inter", sans-serif;
   font-weight: 600;
   font-size: 24px;
   line-height: 32px;
@@ -277,7 +277,7 @@
   gap: 8px;
   flex-shrink: 0;
   color: #2f3547;
-  font-family: Inter;
+  font-family: "Segoe UI", "Inter", sans-serif;
   font-size: 16px;
 }
 .neuroLabsWrapper {
@@ -294,6 +294,7 @@
   position: relative;
   letter-spacing: 0.02em;
   line-height: 24px;
+  color: #2d4cc8;
 }
 .frameParent4 {
   position: absolute;
@@ -304,7 +305,7 @@
   gap: 24px;
   flex-shrink: 0;
   font-size: 28px;
-  font-family: Inter;
+  font-family: "Segoe UI", "Inter", sans-serif;
 }
 .rectangleGroup {
   height: 114px;
@@ -393,7 +394,7 @@
   flex-shrink: 0;
   font-size: 22px;
   color: #000;
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", "Inter", sans-serif;
 }
 .practicalCoding {
   width: 189px;
@@ -445,7 +446,7 @@
   text-align: center;
   font-size: 22px;
   color: #000;
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", "Inter", sans-serif;
 }
 .projectLearning {
   align-self: stretch;
@@ -494,7 +495,7 @@
   flex-shrink: 0;
   font-size: 22px;
   color: #000;
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", "Inter", sans-serif;
 }
 .careerReadiness {
   width: 201px;
@@ -796,7 +797,7 @@
 .prepareForHighDemand {
   width: 100%;
   margin: 0;
-  font-family: "Segoe UI",;
+  font-family: "Segoe UI", "Inter", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
@@ -914,7 +915,7 @@
   overflow: hidden;
   flex-shrink: 0;
   font-size: 54px;
-  font-family: Inter;
+  font-family: "Segoe UI", "Inter", sans-serif;
 }
 .frameChild17 {
   position: absolute;
@@ -986,7 +987,7 @@
   gap: 14px;
   flex-shrink: 0;
   font-size: 28px;
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", "Inter", sans-serif;
 }
 .structuredAccelerated {
   align-self: stretch;
@@ -1042,7 +1043,7 @@
   height: 198px;
   overflow: hidden;
   font-size: 54px;
-  font-family: Inter;
+  font-family: "Segoe UI", "Inter", sans-serif;
 }
 .careerFocusedTechnologyTraiParent {
   width: 429px;
@@ -1052,7 +1053,7 @@
   gap: 14px;
   flex-shrink: 0;
   font-size: 28px;
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", "Inter", sans-serif;
 }
 .buildPracticalCareerReady {
   width: 291px;
@@ -1154,7 +1155,7 @@
   height: 100%;
 
   object-fit: cover;
-  object-position: center center;
+  object-position: center 20%;
 
   pointer-events: none;
   z-index: 0;
@@ -1193,7 +1194,7 @@
   width: 881px;
   height: 149px;
   margin: 0;
-  font-family: "Segoe UI",;
+  font-family: "Segoe UI", "Inter", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 54px;
@@ -1212,7 +1213,7 @@
   width: 876px;
   height: 80px;
   margin: 0;
-  font-family: "Segoe UI", ;
+  font-family: "Segoe UI", "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 28px;
@@ -1295,7 +1296,7 @@
   width: 152px;
   height: 32px;
   margin: 0;
-  font-family: "Segoe UI",;
+  font-family: "Segoe UI", "Inter", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 24px;
@@ -1961,7 +1962,7 @@
   box-shadow: none !important;
   color: #bf1869 !important;
   -webkit-text-fill-color: #bf1869 !important;
-  font-family: Inter, "Segoe UI",;
+  font-family: "Segoe UI", "Inter", sans-serif;
   font-size: 54px;
   font-weight: 700;
   line-height: 62px;
@@ -2123,7 +2124,7 @@
   gap: 14px;
   flex-shrink: 0;
   font-size: 28px;
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", "Inter", sans-serif;
   overflow: visible;
 }
 
@@ -2624,6 +2625,555 @@
    - No device-width-specific zoom values.
    - One responsive system handles all screens below desktop.
    ===================================================================== */
+
+
+/* =====================================================================
+   FINAL RESPONSIVE ACCORDION FLOW FIX
+   Keeps all 3 cards in normal document flow and prevents the third card
+   from overlapping the final CTA.
+   Desktop remains unchanged.
+   ===================================================================== */
+
+
+/* =====================================================================
+   FINAL CLEAN RESPONSIVE FIX FOR CAREER STRIP + 01/02/03 CARDS
+   - Removes the decorative background frame completely on responsive views
+   - Keeps 01 / 02 / 03 cards clean and aligned
+   - Prevents third-card text overflow
+   - Keeps next section directly below
+   - Desktop remains unchanged
+   ===================================================================== */
+
+
+/* =========================================================
+   FINAL FIX — 01 / 02 / 03 LEFT DESIGN
+   Only fixes the marked triangle + number + vertical bar.
+   Rest of card/design remains unchanged.
+   ========================================================= */
+
+
+
+
+/* Extra refinement for mobile screens like your 375px screenshot */
+
+/* ONLY CENTER THE "PREPARE FOR HIGH-DEMAND..." HEADING */
+
+
+
+/* =====================================================================
+   ABSOLUTE FINAL MOBILE/TABLET FIX
+   - Remove decorative career rectangle/polygon completely
+   - Keep the heading exactly centered in the available page width
+   - No 100vw, no left:50%, no translateX()
+   - Desktop remains unchanged
+   ===================================================================== */
+
+
+
+/* =========================================================
+   SECOND SECTION — PNG MATCH
+   Practical Coding / Project Learning / Career Readiness
+   ========================================================= */
+
+.frameParent4 {
+  position: absolute;
+  top: 819px;
+  left: 50%;
+  width: min(1280px, calc(100% - 64px));
+  transform: translateX(-50%);
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  align-items: center;
+  gap: 24px;
+  font-family: "Segoe UI", "Inter", sans-serif;
+}
+
+.frameParent4 .rectangleGroup {
+  width: 100%;
+  height: 136px;
+  position: relative;
+  padding: 10px;
+  border-radius: 68px;
+  background: #dfe6e9;
+  box-shadow:
+    -4px -4px 4px rgba(255, 255, 255, 0.95),
+    4px 4px 4px rgba(196, 196, 198, 0.9);
+  box-sizing: border-box;
+  overflow: visible;
+  isolation: isolate;
+}
+
+.frameParent4 .frameInner {
+  position: absolute;
+  inset: 10px;
+  width: auto;
+  height: auto;
+  margin: 0;
+  border-radius: 58px;
+  background: #dfe6e9;
+  box-shadow:
+    -4px -4px 4px rgba(255, 255, 255, 0.9) inset,
+    4px 4px 4px rgba(196, 196, 198, 0.75) inset;
+  z-index: 0;
+}
+
+/* The ring is drawn in CSS so it matches the supplied PNG exactly. */
+.frameParent4 .rectangleIcon {
+  display: none;
+}
+
+.frameParent4 .ellipseDiv {
+  width: 96px;
+  height: 96px;
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+  margin: 0;
+  border: 15px solid #c81067;
+  border-radius: 50%;
+  background: #d9d9d9;
+  box-sizing: border-box;
+  z-index: 2;
+}
+
+/* Step numbers */
+.frameParent4 .div,
+.frameParent4 .div2,
+.frameParent4 .div3 {
+  width: 66px;
+  height: 66px;
+  position: absolute;
+  top: 50%;
+  left: 35px;
+  transform: translateY(-50%);
+  margin: 0;
+  display: grid;
+  place-items: center;
+  color: #31344b;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: 0;
+  text-shadow: none;
+  z-index: 3;
+}
+
+/* Text block */
+.frameParent4 .practicalCodingParent,
+.frameParent4 .projectLearningParent,
+.frameParent4 .careerReadinessParent {
+  width: auto;
+  position: absolute;
+  top: 50%;
+  left: 100px;
+  right: 32px;
+  transform: translateY(-50%);
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  text-align: center;
+  z-index: 4;
+  font-family: "Segoe UI", "Inter", sans-serif;
+}
+
+.frameParent4 .practicalCoding,
+.frameParent4 .projectLearning,
+.frameParent4 .careerReadiness {
+  width: 100%;
+  margin: 0;
+  color: #050505;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 1.15;
+  letter-spacing: 0.02em;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.frameParent4 .problemSolving,
+.frameParent4 .handsOnPractice,
+.frameParent4 .technologyCareers {
+  width: 100%;
+  margin: 0;
+  color: #31344b;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  text-align: center;
+  white-space: nowrap;
+}
+
+/* Keep the PNG-style cards clean on tablets/mobile too. */
+
+
+
+
+
+/* =========================================================
+   SECOND SECTION CORRECTION
+   - Inner pill is RAISED, not inset
+   - Subheadings are bolder
+   ========================================================= */
+
+.frameParent4 .frameInner {
+  background: #dfe6e9 !important;
+  box-shadow:
+    -4px -4px 4px rgba(255, 255, 255, 0.95),
+    4px 4px 4px rgba(196, 196, 198, 0.9) !important;
+}
+
+/* Problem solving / Hands-on Practice / Technology Careers */
+.frameParent4 .problemSolving,
+.frameParent4 .handsOnPractice,
+.frameParent4 .technologyCareers {
+  font-weight: 600 !important;
+}
+
+
+/* =========================================================
+   REAL PROJECT DATA POINTS — CENTER TEXT INSIDE EACH BOX
+   ========================================================= */
+
+.frameParent8 .writingAndTestingCodeWrapper,
+.frameParent8 .webAppDevelopmentWrapper,
+.frameParent8 .debugOptimizeWrapper,
+.frameParent8 .programmingChallengeWrapper {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  text-align: center !important;
+}
+
+/* Remove the old absolute left offsets from all four labels. */
+.frameParent8 .writingAndTesting,
+.frameParent8 .webApp,
+.frameParent8 .debugOptimize,
+.frameParent8 .programmingChallenge {
+  position: static !important;
+  top: auto !important;
+  left: auto !important;
+  width: 100% !important;
+  height: auto !important;
+  margin: 0 !important;
+  padding: 0 28px !important;
+  box-sizing: border-box !important;
+
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+
+  text-align: center !important;
+  line-height: 40px !important;
+}
+
+
+/* =========================================================
+   FEATURE CARDS — REMOVE EXTRA EMPTY SPACE
+   01 Accelerated Learning / 02 Career Tech Training /
+   03 Education & Enterprise Ready
+   ========================================================= */
+
+/* Top two card wrappers */
+.frameWrapper5,
+.frameWrapper7 {
+  height: 500px !important;
+}
+
+/* Third card wrapper */
+.frameWrapper9 {
+  height: 470px !important;
+}
+
+/* Main top cards */
+.frameParent23,
+.frameParent33 {
+  height: 170px !important;
+}
+
+/* Third card header */
+.frameParent36 {
+  height: 415px !important;
+}
+
+/* Pull the content together so there is no large blank right side */
+.frameParent24 {
+  width: 540px !important;
+  gap: 28px !important;
+}
+
+.structuredAcceleratedLearnParent,
+.careerFocusedTechnologyTraiParent {
+  width: 390px !important;
+  gap: 10px !important;
+  align-items: flex-start !important;
+}
+
+.fromCodingBasics,
+.buildPracticalCareerReady,
+.deployAcrossDiverse {
+  width: 100% !important;
+  max-width: 360px !important;
+}
+
+/* Keep title/subtitle compact */
+.structuredAccelerated,
+.careerFocusedTechnologyTraiParent > :first-child {
+  margin: 0 !important;
+}
+
+/* Reduce unnecessary space before the lower inset content */
+.frameWrapper6,
+.frameWrapper8,
+.frameWrapper10 {
+  top: 120px !important;
+}
+
+/* Keep the down arrow visually centered and closer to content */
+.frameChild17 {
+  top: auto !important;
+  bottom: 18px !important;
+  right: 28px !important;
+}
+
+/* Reduce the large gap between this 3-card section and next section */
+.frameParent14 {
+  gap: 28px !important;
+}
+
+.frameParent15 {
+  gap: 32px !important;
+}
+
+
+/* =========================================================
+   01 / 02 / 03 CARDS — FINAL EMPTY-SPACE FIX
+   ========================================================= */
+
+/* Make each visible header card compact */
+.frameParent23,
+.frameParent33 {
+  height: 150px !important;
+}
+
+/* Use almost the full card width for number + text */
+.frameParent24 {
+  top: 18px !important;
+  left: 0 !important;
+  width: 100% !important;
+  padding-right: 24px !important;
+  box-sizing: border-box !important;
+  gap: 22px !important;
+}
+
+/* Number column: smaller fixed footprint */
+.frameParent25 {
+  width: 145px !important;
+  flex: 0 0 145px !important;
+}
+
+/* Let heading/subheading consume remaining width instead of leaving blank space */
+.structuredAcceleratedLearnParent,
+.careerFocusedTechnologyTraiParent {
+  width: auto !important;
+  flex: 1 1 auto !important;
+  min-width: 0 !important;
+  align-items: flex-start !important;
+  gap: 8px !important;
+}
+
+/* Text should use available card width */
+.structuredAccelerated,
+.fromCodingBasics,
+.careerFocusedTechnologyTraiParent > *,
+.buildPracticalCareerReady,
+.deployAcrossDiverse {
+  width: 100% !important;
+  max-width: none !important;
+}
+
+/* Remove the large reserved icon area on the right */
+.frameChild17 {
+  right: 18px !important;
+  bottom: 10px !important;
+  width: 34px !important;
+  height: 34px !important;
+}
+
+/* Pull the lower detail panel directly under the compact header */
+.frameWrapper6,
+.frameWrapper8,
+.frameWrapper10 {
+  top: 105px !important;
+}
+
+/* Reduce wrapper heights so the next content starts sooner */
+.frameWrapper5,
+.frameWrapper7 {
+  height: 465px !important;
+}
+
+.frameWrapper9 {
+  height: 435px !important;
+}
+
+/* Reduce vertical spacing between the three cards/rows */
+.frameParent14 {
+  gap: 18px !important;
+}
+
+.frameParent15 {
+  gap: 24px !important;
+}
+
+/* Third card: keep the same compact proportions */
+.frameParent36 {
+  height: 400px !important;
+}
+
+
+/* =========================================================
+   FINAL — KEEP ALL THREE CARD SUBHEADINGS ON ONE LINE
+   ========================================================= */
+
+
+
+/* =========================================================
+   SCREENSHOT FIX — KEEP SUBHEADINGS ON ONE LINE IN ALL 3 CARDS
+   ========================================================= */
+
+
+
+/* =========================================================
+   01 / 02 / 03 CARD TITLES — EXACTLY 24PX
+   ========================================================= */
+.structuredAccelerated,
+.careerFocusedTechnologyTrai,
+.builtForEducationTitle {
+  font-size: 24px !important;
+  line-height: 32px !important;
+}
+
+/* Ensure parent font sizes cannot make card 02/03 headings larger */
+.structuredAcceleratedLearnParent,
+.careerFocusedTechnologyTraiParent,
+.builtForEducationEnterpriseParent {
+  font-size: 24px !important;
+}
+
+
+/* =========================================================
+   01 / 02 / 03 CARDS — COMPACT WIDTH LIKE REFERENCE PNG
+   Desktop only. Keeps mobile/tablet rules unchanged.
+   ========================================================= */
+
+
+
+/* =========================================================
+   FINAL ALIGNMENT FIX — 01 / 02 / 03 CARDS
+   Match internal alignment across all three cards
+   ========================================================= */
+
+
+/* =========================================================
+   MOBILE HERO — REDUCE SUBTITLE / IMAGE GAP
+   Only the person image size is adjusted on mobile.
+   The image remains bottom-aligned; all other design stays same.
+   ========================================================= */
+
+
+/* =========================================================
+   MOBILE — ADD SPACE BETWEEN REAL PROJECT CARDS ONLY
+   Writing & Testing Code / Web & App Development /
+   Debug & Optimize / Programming Challenge
+   ========================================================= */
+
+
+/* =========================================================
+   FINAL MOBILE CAREER BANNER FIX
+   Targets the inline SVG used in page.tsx.
+   Desktop and all other sections remain unchanged.
+   ========================================================= */
+
+
+/* =========================================================
+   FINAL MOBILE FIX — 01 / 02 / 03 CAREER CARDS ONLY
+   ========================================================= */
+
+
+/* =========================================================
+   FINAL MOBILE ONLY — MOVE ONLY CAREER STRIP SLIGHTLY DOWN
+   IMPORTANT: keep this block at the VERY BOTTOM of the CSS.
+   ========================================================= */
+
+
+/* =========================================================
+   MOBILE ONLY — FINAL BOTTOM ORDER + RESPONSIVE IMAGE
+   - Only changes the POSITION/ORDER of the final CTA
+   - Keeps CTA design, border, shadow, text and button unchanged
+   - Makes Future Ready image responsive and fully visible
+   - Desktop/tablet remain unchanged
+   ========================================================= */
+
+
+/* =========================================================
+   FINAL MOBILE ONLY — KEEP BOTH FRAMES LIKE DESKTOP WEBPAGE
+   - Future-Ready section: same outer + inner frame/shadow
+   - Final NeuroLabs CTA: same pill frame/shadow
+   - Main photo remains fully responsive
+   - No desktop/tablet changes
+   ========================================================= */
+
+
+/* =========================================================
+   FINAL MOBILE ONLY — EXACT WEBPAGE FRAME VISIBILITY
+   Keeps all existing mobile layout/order/image fixes.
+   Only ensures the final NeuroLabs CTA frame is visible
+   exactly like the desktop/webpage neumorphic frame.
+   ========================================================= */
+
+/* ==========================================================================
+   FLUID BOOTCAMP CANVAS — NO MEDIA QUERIES
+   Keeps the existing 1440px design, effects, spacing and content unchanged.
+   The complete canvas scales continuously with the viewport instead of
+   switching layouts at breakpoints.
+   ========================================================================== */
+.bootcamp {
+  --bootcamp-fluid-scale: clamp(
+    0.20,
+    calc(100vw / 1440px),
+    1
+  );
+
+  width: 1440px !important;
+  min-width: 1440px !important;
+  max-width: 1440px !important;
+
+  margin-left: auto !important;
+  margin-right: auto !important;
+
+  zoom: var(--bootcamp-fluid-scale) !important;
+
+  transform: none !important;
+  transform-origin: top center !important;
+
+  overflow-x: hidden !important;
+}
+
+/* Prevent fixed-width descendants/decorations from creating page-level
+   horizontal scrolling while preserving their existing visual design. */
+.bootcamp,
+.bootcamp * {
+  box-sizing: border-box;
+  max-inline-size: none;
+}
+
+/* RESTORED TABLET / MOBILE RESPONSIVE FLOW */
+
 @media screen and (max-width: 1199px) {
   .bootcamp {
     width: 100%;
@@ -2678,7 +3228,7 @@
     visibility: visible !important;
     opacity: 1 !important;
     z-index: 5 !important;
-    font-family: "Segoe UI" !important;
+    font-family: "Segoe UI", "Inter", sans-serif !important;
     font-size: clamp(12px, 2.8vw, 16px) !important;
     line-height: 1.5 !important;
   }
@@ -3408,12 +3958,6 @@
   }
 }
 
-/* =====================================================================
-   FINAL RESPONSIVE ACCORDION FLOW FIX
-   Keeps all 3 cards in normal document flow and prevents the third card
-   from overlapping the final CTA.
-   Desktop remains unchanged.
-   ===================================================================== */
 @media screen and (max-width: 1199px) {
 
   .bootcamp > .frameParent14 {
@@ -3538,14 +4082,6 @@
   }
 }
 
-/* =====================================================================
-   FINAL CLEAN RESPONSIVE FIX FOR CAREER STRIP + 01/02/03 CARDS
-   - Removes the decorative background frame completely on responsive views
-   - Keeps 01 / 02 / 03 cards clean and aligned
-   - Prevents third-card text overflow
-   - Keeps next section directly below
-   - Desktop remains unchanged
-   ===================================================================== */
 @media screen and (max-width: 1199px) {
 
   /* Remove the decorative background design completely. */
@@ -3823,12 +4359,6 @@
   }
 }
 
-/* =========================================================
-   FINAL FIX — 01 / 02 / 03 LEFT DESIGN
-   Only fixes the marked triangle + number + vertical bar.
-   Rest of card/design remains unchanged.
-   ========================================================= */
-
 @media screen and (max-width: 1199px) {
 
   /* Give the left number/design enough room */
@@ -3936,8 +4466,6 @@
   }
 }
 
-
-/* Extra refinement for mobile screens like your 375px screenshot */
 @media screen and (max-width: 480px) {
 
   .frameParent24 {
@@ -3986,7 +4514,7 @@
     transform: none !important;
   }
 }
-/* ONLY CENTER THE "PREPARE FOR HIGH-DEMAND..." HEADING */
+
 @media screen and (max-width: 1199px) {
 
   .bootcamp > .bootcampInner2 {
@@ -4045,14 +4573,6 @@
   }
 }
 
-
-/* =====================================================================
-   ABSOLUTE FINAL MOBILE/TABLET FIX
-   - Remove decorative career rectangle/polygon completely
-   - Keep the heading exactly centered in the available page width
-   - No 100vw, no left:50%, no translateX()
-   - Desktop remains unchanged
-   ===================================================================== */
 @media screen and (max-width: 1199px) {
 
   /* Remove ONLY the decorative frame */
@@ -4165,146 +4685,6 @@
   }
 }
 
-
-/* =========================================================
-   SECOND SECTION — PNG MATCH
-   Practical Coding / Project Learning / Career Readiness
-   ========================================================= */
-
-.frameParent4 {
-  position: absolute;
-  top: 819px;
-  left: 50%;
-  width: min(1280px, calc(100% - 64px));
-  transform: translateX(-50%);
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  align-items: center;
-  gap: 24px;
-  font-family: "Segoe UI";
-}
-
-.frameParent4 .rectangleGroup {
-  width: 100%;
-  height: 136px;
-  position: relative;
-  padding: 10px;
-  border-radius: 68px;
-  background: #dfe6e9;
-  box-shadow:
-    -4px -4px 4px rgba(255, 255, 255, 0.95),
-    4px 4px 4px rgba(196, 196, 198, 0.9);
-  box-sizing: border-box;
-  overflow: visible;
-  isolation: isolate;
-}
-
-.frameParent4 .frameInner {
-  position: absolute;
-  inset: 10px;
-  width: auto;
-  height: auto;
-  margin: 0;
-  border-radius: 58px;
-  background: #dfe6e9;
-  box-shadow:
-    -4px -4px 4px rgba(255, 255, 255, 0.9) inset,
-    4px 4px 4px rgba(196, 196, 198, 0.75) inset;
-  z-index: 0;
-}
-
-/* The ring is drawn in CSS so it matches the supplied PNG exactly. */
-.frameParent4 .rectangleIcon {
-  display: none;
-}
-
-.frameParent4 .ellipseDiv {
-  width: 96px;
-  height: 96px;
-  position: absolute;
-  top: 50%;
-  left: 20px;
-  transform: translateY(-50%);
-  margin: 0;
-  border: 15px solid #c81067;
-  border-radius: 50%;
-  background: #d9d9d9;
-  box-sizing: border-box;
-  z-index: 2;
-}
-
-/* Step numbers */
-.frameParent4 .div,
-.frameParent4 .div2,
-.frameParent4 .div3 {
-  width: 66px;
-  height: 66px;
-  position: absolute;
-  top: 50%;
-  left: 35px;
-  transform: translateY(-50%);
-  margin: 0;
-  display: grid;
-  place-items: center;
-  color: #31344b;
-  font-size: 30px;
-  font-weight: 700;
-  line-height: 1;
-  letter-spacing: 0;
-  text-shadow: none;
-  z-index: 3;
-}
-
-/* Text block */
-.frameParent4 .practicalCodingParent,
-.frameParent4 .projectLearningParent,
-.frameParent4 .careerReadinessParent {
-  width: auto;
-  position: absolute;
-  top: 50%;
-  left: 100px;
-  right: 32px;
-  transform: translateY(-50%);
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-  text-align: center;
-  z-index: 4;
-  font-family: "Segoe UI";
-}
-
-.frameParent4 .practicalCoding,
-.frameParent4 .projectLearning,
-.frameParent4 .careerReadiness {
-  width: 100%;
-  margin: 0;
-  color: #050505;
-  font-size: 25px;
-  font-weight: 700;
-  line-height: 1.15;
-  letter-spacing: 0.02em;
-  text-align: center;
-  white-space: nowrap;
-}
-
-.frameParent4 .problemSolving,
-.frameParent4 .handsOnPractice,
-.frameParent4 .technologyCareers {
-  width: 100%;
-  margin: 0;
-  color: #31344b;
-  font-size: 17px;
-  font-weight: 400;
-  line-height: 1.25;
-  letter-spacing: 0.03em;
-  text-align: center;
-  white-space: nowrap;
-}
-
-/* Keep the PNG-style cards clean on tablets/mobile too. */
 @media (max-width: 900px) {
   .frameParent4 {
     position: relative !important;
@@ -4443,633 +4823,6 @@
   }
 }
 
-
-/* =========================================================
-   SECOND SECTION CORRECTION
-   - Inner pill is RAISED, not inset
-   - Subheadings are bolder
-   ========================================================= */
-
-.frameParent4 .frameInner {
-  background: #dfe6e9 !important;
-  box-shadow:
-    -4px -4px 4px rgba(255, 255, 255, 0.95),
-    4px 4px 4px rgba(196, 196, 198, 0.9) !important;
-}
-
-/* Problem solving / Hands-on Practice / Technology Careers */
-.frameParent4 .problemSolving,
-.frameParent4 .handsOnPractice,
-.frameParent4 .technologyCareers {
-  font-weight: 600 !important;
-}
-
-
-/* =========================================================
-   REAL PROJECT DATA POINTS — CENTER TEXT INSIDE EACH BOX
-   ========================================================= */
-
-.frameParent8 .writingAndTestingCodeWrapper,
-.frameParent8 .webAppDevelopmentWrapper,
-.frameParent8 .debugOptimizeWrapper,
-.frameParent8 .programmingChallengeWrapper {
-  display: flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-  text-align: center !important;
-}
-
-/* Remove the old absolute left offsets from all four labels. */
-.frameParent8 .writingAndTesting,
-.frameParent8 .webApp,
-.frameParent8 .debugOptimize,
-.frameParent8 .programmingChallenge {
-  position: static !important;
-  top: auto !important;
-  left: auto !important;
-  width: 100% !important;
-  height: auto !important;
-  margin: 0 !important;
-  padding: 0 28px !important;
-  box-sizing: border-box !important;
-
-  display: flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-
-  text-align: center !important;
-  line-height: 40px !important;
-}
-
-
-/* =========================================================
-   FEATURE CARDS — REMOVE EXTRA EMPTY SPACE
-   01 Accelerated Learning / 02 Career Tech Training /
-   03 Education & Enterprise Ready
-   ========================================================= */
-
-/* Top two card wrappers */
-.frameWrapper5,
-.frameWrapper7 {
-  height: 500px !important;
-}
-
-/* Third card wrapper */
-.frameWrapper9 {
-  height: 470px !important;
-}
-
-/* Main top cards */
-.frameParent23,
-.frameParent33 {
-  height: 170px !important;
-}
-
-/* Third card header */
-.frameParent36 {
-  height: 415px !important;
-}
-
-/* Pull the content together so there is no large blank right side */
-.frameParent24 {
-  width: 540px !important;
-  gap: 28px !important;
-}
-
-.structuredAcceleratedLearnParent,
-.careerFocusedTechnologyTraiParent {
-  width: 390px !important;
-  gap: 10px !important;
-  align-items: flex-start !important;
-}
-
-.fromCodingBasics,
-.buildPracticalCareerReady,
-.deployAcrossDiverse {
-  width: 100% !important;
-  max-width: 360px !important;
-}
-
-/* Keep title/subtitle compact */
-.structuredAccelerated,
-.careerFocusedTechnologyTraiParent > :first-child {
-  margin: 0 !important;
-}
-
-/* Reduce unnecessary space before the lower inset content */
-.frameWrapper6,
-.frameWrapper8,
-.frameWrapper10 {
-  top: 120px !important;
-}
-
-/* Keep the down arrow visually centered and closer to content */
-.frameChild17 {
-  top: auto !important;
-  bottom: 18px !important;
-  right: 28px !important;
-}
-
-/* Reduce the large gap between this 3-card section and next section */
-.frameParent14 {
-  gap: 28px !important;
-}
-
-.frameParent15 {
-  gap: 32px !important;
-}
-
-
-/* =========================================================
-   01 / 02 / 03 CARDS — FINAL EMPTY-SPACE FIX
-   ========================================================= */
-
-/* Make each visible header card compact */
-.frameParent23,
-.frameParent33 {
-  height: 150px !important;
-}
-
-/* Use almost the full card width for number + text */
-.frameParent24 {
-  top: 18px !important;
-  left: 0 !important;
-  width: 100% !important;
-  padding-right: 24px !important;
-  box-sizing: border-box !important;
-  gap: 22px !important;
-}
-
-/* Number column: smaller fixed footprint */
-.frameParent25 {
-  width: 145px !important;
-  flex: 0 0 145px !important;
-}
-
-/* Let heading/subheading consume remaining width instead of leaving blank space */
-.structuredAcceleratedLearnParent,
-.careerFocusedTechnologyTraiParent {
-  width: auto !important;
-  flex: 1 1 auto !important;
-  min-width: 0 !important;
-  align-items: flex-start !important;
-  gap: 8px !important;
-}
-
-/* Text should use available card width */
-.structuredAccelerated,
-.fromCodingBasics,
-.careerFocusedTechnologyTraiParent > *,
-.buildPracticalCareerReady,
-.deployAcrossDiverse {
-  width: 100% !important;
-  max-width: none !important;
-}
-
-/* Remove the large reserved icon area on the right */
-.frameChild17 {
-  right: 18px !important;
-  bottom: 10px !important;
-  width: 34px !important;
-  height: 34px !important;
-}
-
-/* Pull the lower detail panel directly under the compact header */
-.frameWrapper6,
-.frameWrapper8,
-.frameWrapper10 {
-  top: 105px !important;
-}
-
-/* Reduce wrapper heights so the next content starts sooner */
-.frameWrapper5,
-.frameWrapper7 {
-  height: 465px !important;
-}
-
-.frameWrapper9 {
-  height: 435px !important;
-}
-
-/* Reduce vertical spacing between the three cards/rows */
-.frameParent14 {
-  gap: 18px !important;
-}
-
-.frameParent15 {
-  gap: 24px !important;
-}
-
-/* Third card: keep the same compact proportions */
-.frameParent36 {
-  height: 400px !important;
-}
-
-
-/* =========================================================
-   FINAL — KEEP ALL THREE CARD SUBHEADINGS ON ONE LINE
-   ========================================================= */
-@media (min-width: 901px) {
-
-  /* Card 01: From Coding Basics ... */
-  .fromCodingBasics,
-
-  /* Card 02: Build Practical Career-Ready ... */
-  .buildPracticalCareerReady,
-
-  /* Card 03: Deploy Across Diverse ... */
-  .deployAcrossDiverse {
-    width: max-content !important;
-    min-width: max-content !important;
-    max-width: none !important;
-    height: auto !important;
-
-    white-space: nowrap !important;
-    overflow-wrap: normal !important;
-    word-break: keep-all !important;
-    text-wrap: nowrap !important;
-
-    display: block !important;
-    flex: none !important;
-
-    font-size: 18px !important;
-    line-height: 28px !important;
-    letter-spacing: 0 !important;
-  }
-
-  /* Give the text area enough width in cards 01 and 02 */
-  .structuredAcceleratedLearnParent,
-  .careerFocusedTechnologyTraiParent {
-    width: 440px !important;
-    max-width: 440px !important;
-    min-width: 440px !important;
-    gap: 6px !important;
-    overflow: visible !important;
-  }
-
-  /* Card 03 text area */
-  .usedLearningEnvironmentsInParent {
-    width: 520px !important;
-    max-width: 520px !important;
-    overflow: visible !important;
-    gap: 6px !important;
-  }
-
-  /* Prevent any parent from clipping the single-line subheading */
-  .frameParent23,
-  .frameParent33,
-  .frameParent36,
-  .frameParent24,
-  .frameParent16,
-  .frameParent26 {
-    overflow: visible !important;
-  }
-}
-
-
-/* =========================================================
-   SCREENSHOT FIX — KEEP SUBHEADINGS ON ONE LINE IN ALL 3 CARDS
-   ========================================================= */
-@media (min-width: 901px) {
-
-  /* Keep all three subheadings on exactly one line */
-  .fromCodingBasics,
-  .buildPracticalCareerReady,
-  .deployAcrossDiverse {
-    width: auto !important;
-    min-width: 0 !important;
-    max-width: none !important;
-    height: auto !important;
-
-    white-space: nowrap !important;
-    overflow: visible !important;
-    overflow-wrap: normal !important;
-    word-break: normal !important;
-    text-wrap: nowrap !important;
-
-    display: block !important;
-    flex: none !important;
-
-    font-size: 16px !important;
-    line-height: 24px !important;
-    letter-spacing: 0 !important;
-  }
-
-  /* Card 01 text area */
-  .structuredAcceleratedLearnParent {
-    width: 455px !important;
-    max-width: 455px !important;
-    min-width: 455px !important;
-    gap: 4px !important;
-    overflow: visible !important;
-  }
-
-  /* Card 02 text area */
-  .careerFocusedTechnologyTraiParent {
-    width: 455px !important;
-    max-width: 455px !important;
-    min-width: 455px !important;
-    gap: 4px !important;
-    overflow: visible !important;
-  }
-
-  /* Card 03 text area */
-  .usedLearningEnvironmentsInParent {
-    width: 455px !important;
-    max-width: 455px !important;
-    min-width: 455px !important;
-    gap: 4px !important;
-    overflow: visible !important;
-  }
-
-  /* Reduce the number/text gap so the subtitle gets more usable room */
-  .frameParent24 {
-    gap: 10px !important;
-    padding-right: 10px !important;
-    overflow: visible !important;
-  }
-
-  /* Prevent card wrappers from clipping the one-line subtitle */
-  .frameParent23,
-  .frameParent33,
-  .frameParent36,
-  .frameParent16,
-  .frameParent26,
-  .frameWrapper5,
-  .frameWrapper7,
-  .frameWrapper9 {
-    overflow: visible !important;
-  }
-}
-
-
-/* =========================================================
-   01 / 02 / 03 CARD TITLES — EXACTLY 24PX
-   ========================================================= */
-.structuredAccelerated,
-.careerFocusedTechnologyTrai,
-.builtForEducationTitle {
-  font-size: 24px !important;
-  line-height: 32px !important;
-}
-
-/* Ensure parent font sizes cannot make card 02/03 headings larger */
-.structuredAcceleratedLearnParent,
-.careerFocusedTechnologyTraiParent,
-.builtForEducationEnterpriseParent {
-  font-size: 24px !important;
-}
-
-
-/* =========================================================
-   01 / 02 / 03 CARDS — COMPACT WIDTH LIKE REFERENCE PNG
-   Desktop only. Keeps mobile/tablet rules unchanged.
-   ========================================================= */
-@media screen and (min-width: 1200px) {
-
-  /* Center the complete card section */
-  .frameParent14 {
-    width: 1100px !important;
-    left: 50% !important;
-    transform: translateX(-50%) !important;
-    gap: 28px !important;
-  }
-
-  /* Two cards in the first row */
-  .frameParent15 {
-    width: 1100px !important;
-    justify-content: center !important;
-    gap: 28px !important;
-  }
-
-  /* Reduce the actual outer width of cards 01 and 02 */
-  .frameWrapper5,
-  .frameWrapper7,
-  .frameParent16,
-  .frameParent26,
-  .frameParent23,
-  .frameParent33 {
-    width: 536px !important;
-  }
-
-  .frameParent23,
-  .frameParent33 {
-    left: 0 !important;
-    height: 150px !important;
-  }
-
-  /* Card 03 — same width and centered */
-  .frameWrapper9,
-  .frameParent36 {
-    width: 536px !important;
-  }
-
-  .frameWrapper9 {
-    margin-left: auto !important;
-    margin-right: auto !important;
-  }
-
-  .frameParent36 {
-    left: 0 !important;
-    height: 150px !important;
-  }
-
-  /* Compact number + text spacing */
-  .frameParent24 {
-    top: 18px !important;
-    left: 0 !important;
-    width: 100% !important;
-    padding: 0 18px !important;
-    box-sizing: border-box !important;
-    gap: 14px !important;
-  }
-
-  .frameParent25 {
-    width: 125px !important;
-    min-width: 125px !important;
-    flex: 0 0 125px !important;
-  }
-
-  /* Let text use remaining card width */
-  .structuredAcceleratedLearnParent,
-  .careerFocusedTechnologyTraiParent,
-  .builtForEducationEnterpriseParent,
-  .usedLearningEnvironmentsInParent {
-    width: auto !important;
-    min-width: 0 !important;
-    max-width: none !important;
-    flex: 1 1 auto !important;
-    gap: 5px !important;
-    overflow: visible !important;
-  }
-
-  /* Titles stay 24px */
-  .structuredAccelerated,
-  .careerFocusedTechnologyTrai,
-  .builtForEducationTitle {
-    font-size: 24px !important;
-    line-height: 30px !important;
-    white-space: nowrap !important;
-  }
-
-  /* Subheadings stay compact */
-  .fromCodingBasics,
-  .buildPracticalCareerReady,
-  .builtForEducationDescription,
-  .deployAcrossDiverse {
-    width: max-content !important;
-    max-width: none !important;
-    white-space: nowrap !important;
-    font-size: 16px !important;
-    line-height: 24px !important;
-  }
-
-  /* Center arrows in each compact card */
-  .frameChild17,
-  .accordionArrow {
-    left: 50% !important;
-    right: auto !important;
-    bottom: 10px !important;
-    transform: translateX(-50%) !important;
-  }
-
-  /* Avoid clipping after reducing widths */
-  .frameWrapper5,
-  .frameWrapper7,
-  .frameWrapper9,
-  .frameParent16,
-  .frameParent26,
-  .frameParent23,
-  .frameParent33,
-  .frameParent36 {
-    overflow: visible !important;
-  }
-}
-
-
-/* =========================================================
-   FINAL ALIGNMENT FIX — 01 / 02 / 03 CARDS
-   Match internal alignment across all three cards
-   ========================================================= */
-@media screen and (min-width: 1200px) {
-
-  /* Keep equal card widths */
-  .frameWrapper5,
-  .frameWrapper7,
-  .frameWrapper9,
-  .frameParent16,
-  .frameParent26,
-  .frameParent36,
-  .frameParent23,
-  .frameParent33 {
-    width: 536px !important;
-  }
-
-  /* Same height for all collapsed cards */
-  .frameParent23,
-  .frameParent33,
-  .frameParent36 {
-    height: 150px !important;
-  }
-
-  /* Same inner layout for every card */
-  .frameParent24 {
-    top: 50% !important;
-    left: 0 !important;
-    width: 100% !important;
-    height: auto !important;
-    transform: translateY(-50%) !important;
-
-    display: grid !important;
-    grid-template-columns: 125px 1fr !important;
-    align-items: center !important;
-
-    gap: 16px !important;
-    padding: 0 24px !important;
-    box-sizing: border-box !important;
-  }
-
-  /* Number block same size/alignment */
-  .frameParent25 {
-    width: 125px !important;
-    height: 73px !important;
-    min-width: 125px !important;
-    margin: 0 !important;
-    align-self: center !important;
-  }
-
-  /* Force all text groups to align exactly the same */
-  .structuredAcceleratedLearnParent,
-  .careerFocusedTechnologyTraiParent,
-  .builtForEducationEnterpriseParent {
-    width: auto !important;
-    min-width: 0 !important;
-    max-width: none !important;
-
-    display: flex !important;
-    flex-direction: column !important;
-    justify-content: center !important;
-    align-items: flex-start !important;
-
-    gap: 6px !important;
-    margin: 0 !important;
-    padding: 0 !important;
-    text-align: left !important;
-  }
-
-  /* Headings */
-  .structuredAccelerated,
-  .careerFocusedTechnologyTrai,
-  .builtForEducationTitle {
-    width: auto !important;
-    margin: 0 !important;
-    padding: 0 !important;
-
-    font-size: 24px !important;
-    line-height: 30px !important;
-    font-weight: 600 !important;
-    white-space: nowrap !important;
-    text-align: left !important;
-  }
-
-  /* Subheadings */
-  .fromCodingBasics,
-  .buildPracticalCareerReady,
-  .builtForEducationDescription {
-    width: auto !important;
-    max-width: none !important;
-    margin: 0 !important;
-    padding: 0 !important;
-
-    font-size: 16px !important;
-    line-height: 22px !important;
-    white-space: nowrap !important;
-    text-align: left !important;
-  }
-
-  /* Put all arrows at exact same vertical position */
-  .frameChild17,
-  .accordionArrow {
-    top: auto !important;
-    bottom: 10px !important;
-    left: 50% !important;
-    right: auto !important;
-    transform: translateX(-50%) !important;
-    margin: 0 !important;
-  }
-
-  /* Center third card under first row */
-  .frameWrapper9 {
-    margin-left: auto !important;
-    margin-right: auto !important;
-  }
-}
-
-/* =========================================================
-   MOBILE HERO — REDUCE SUBTITLE / IMAGE GAP
-   Only the person image size is adjusted on mobile.
-   The image remains bottom-aligned; all other design stays same.
-   ========================================================= */
 @media screen and (max-width: 600px) {
   .image33Icon {
     width: min(72%, 330px) !important;
@@ -5078,11 +4831,6 @@
   }
 }
 
-/* =========================================================
-   MOBILE — ADD SPACE BETWEEN REAL PROJECT CARDS ONLY
-   Writing & Testing Code / Web & App Development /
-   Debug & Optimize / Programming Challenge
-   ========================================================= */
 @media screen and (max-width: 600px) {
   .frameParent7 {
     gap: 52px !important;
@@ -5093,11 +4841,6 @@
   }
 }
 
-/* =========================================================
-   FINAL MOBILE CAREER BANNER FIX
-   Targets the inline SVG used in page.tsx.
-   Desktop and all other sections remain unchanged.
-   ========================================================= */
 @media screen and (max-width: 600px) {
   .bootcamp > .bootcampInner2 {
     position: relative !important;
@@ -5189,9 +4932,6 @@
   }
 }
 
-/* =========================================================
-   FINAL MOBILE FIX — 01 / 02 / 03 CAREER CARDS ONLY
-   ========================================================= */
 @media screen and (max-width: 600px) {
   /* Outer card sizes, spacing, shadows and border radii stay unchanged. */
   .frameParent24 {
@@ -5407,10 +5147,6 @@
   }
 }
 
-/* =========================================================
-   FINAL MOBILE ONLY — MOVE ONLY CAREER STRIP SLIGHTLY DOWN
-   IMPORTANT: keep this block at the VERY BOTTOM of the CSS.
-   ========================================================= */
 @media screen and (max-width: 600px) {
   .bootcamp > .bootcampInner2 {
     position: relative !important;
@@ -5418,13 +5154,6 @@
   }
 }
 
-/* =========================================================
-   MOBILE ONLY — FINAL BOTTOM ORDER + RESPONSIVE IMAGE
-   - Only changes the POSITION/ORDER of the final CTA
-   - Keeps CTA design, border, shadow, text and button unchanged
-   - Makes Future Ready image responsive and fully visible
-   - Desktop/tablet remain unchanged
-   ========================================================= */
 @media screen and (max-width: 600px) {
 
   /* Future Ready section comes before the final CTA */
@@ -5511,13 +5240,6 @@
   }
 }
 
-/* =========================================================
-   FINAL MOBILE ONLY — KEEP BOTH FRAMES LIKE DESKTOP WEBPAGE
-   - Future-Ready section: same outer + inner frame/shadow
-   - Final NeuroLabs CTA: same pill frame/shadow
-   - Main photo remains fully responsive
-   - No desktop/tablet changes
-   ========================================================= */
 @media screen and (max-width: 600px) {
 
   /* =====================================================
@@ -5673,12 +5395,6 @@
   }
 }
 
-/* =========================================================
-   FINAL MOBILE ONLY — EXACT WEBPAGE FRAME VISIBILITY
-   Keeps all existing mobile layout/order/image fixes.
-   Only ensures the final NeuroLabs CTA frame is visible
-   exactly like the desktop/webpage neumorphic frame.
-   ========================================================= */
 @media screen and (max-width: 600px) {
 
   .bootcamp > .rectangleParent3 {
@@ -5721,6 +5437,1220 @@
   .bootcamp > .rectangleParent3 > .frameParent45 {
     position: relative !important;
     z-index: 5 !important;
+  }
+}
+
+/* =========================================================
+   RESPONSIVE ALIGNMENT GUARD
+   Desktop design/effects remain unchanged.
+   Tablet/mobile content stacks vertically and stays inside viewport.
+   ========================================================= */
+.bootcamp {
+  width: 100%;
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow-x: hidden;
+}
+
+.bootcamp,
+.bootcamp * {
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 1199px) {
+  .bootcamp {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+    height: auto !important;
+    min-height: 100vh !important;
+    zoom: 1 !important;
+    overflow-x: hidden !important;
+  }
+
+  .frameParent4,
+  .frameParent5,
+  .frameParent14,
+  .rectangleParent4,
+  .rectangleParent3,
+  .frameParent46 {
+    max-width: calc(100vw - 32px) !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  .frameParent8,
+  .frameParent15,
+  .frameParent49,
+  .frameParent53,
+  .frameParent60 {
+    flex-wrap: wrap !important;
+  }
+
+  .bootcamp img,
+  .bootcamp video,
+  .bootcamp svg {
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .bootcamp {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+  }
+
+  .frameParent4,
+  .frameParent5,
+  .frameParent14,
+  .rectangleParent4,
+  .rectangleParent3,
+  .frameParent46 {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .frameParent8,
+  .frameParent15,
+  .frameParent49,
+  .frameParent53,
+  .frameParent60 {
+    width: 100% !important;
+    flex-direction: column !important;
+    align-items: stretch !important;
+  }
+}
+
+/* ==========================================================================
+   CAREER BANNER — RESPONSIVE TEXT FIT + DESKTOP SHADOW RETENTION
+   Only affects the "Prepare for High-Demand Careers..." banner on tablet/mobile.
+   ========================================================================== */
+@media screen and (max-width: 1199px) {
+  .bootcampInner2 {
+    width: calc(100% - 48px) !important;
+    max-width: 1304px !important;
+    left: 24px !important;
+    right: 24px !important;
+  }
+
+  .careerFrameInlineSvg {
+    width: 100% !important;
+    height: 100% !important;
+    display: block !important;
+    overflow: visible !important;
+  }
+
+  .prepareForHighDemandCareerWrapper {
+    inset: 0 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 28px clamp(48px, 8vw, 90px) !important;
+    box-sizing: border-box !important;
+    overflow: hidden !important;
+  }
+
+  .prepareForHighDemand {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    font-size: clamp(28px, 4vw, 40px) !important;
+    line-height: 1.28 !important;
+    overflow-wrap: break-word !important;
+    word-break: normal !important;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .bootcampInner2 {
+    width: calc(100% - 24px) !important;
+    left: 12px !important;
+    right: 12px !important;
+    height: clamp(220px, 56vw, 303px) !important;
+  }
+
+  .prepareForHighDemandCareerWrapper {
+    padding: 24px clamp(28px, 9vw, 52px) !important;
+  }
+
+  .prepareForHighDemand {
+    font-size: clamp(22px, 6.6vw, 32px) !important;
+    line-height: 1.22 !important;
+    letter-spacing: 0.02em !important;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .bootcampInner2 {
+    width: calc(100% - 16px) !important;
+    left: 8px !important;
+    right: 8px !important;
+    height: clamp(210px, 62vw, 270px) !important;
+  }
+
+  .prepareForHighDemandCareerWrapper {
+    padding: 22px clamp(22px, 8vw, 38px) !important;
+  }
+
+  .prepareForHighDemand {
+    font-size: clamp(20px, 6.4vw, 27px) !important;
+    line-height: 1.2 !important;
+  }
+}
+
+/* ==========================================================================
+   TABLET / MOBILE VISUAL PRESERVATION
+   - Keep career heading inside its SVG frame
+   - Preserve desktop box-shadow / inset-shadow effects
+   - Keep left/right card borders fully visible
+   ========================================================================== */
+
+@media screen and (max-width: 1199px) {
+  .bootcamp {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+    overflow-x: hidden !important;
+    zoom: 1 !important;
+  }
+
+  /* Keep the complete career banner as ONE responsive unit */
+  .bootcampInner2 {
+    width: calc(100% - 48px) !important;
+    max-width: 1304px !important;
+    left: 24px !important;
+    right: 24px !important;
+    height: clamp(220px, 24vw, 303px) !important;
+    overflow: visible !important;
+  }
+
+  .careerFrameInlineSvg {
+    position: absolute !important;
+    inset: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    display: block !important;
+    overflow: visible !important;
+  }
+
+  .prepareForHighDemandCareerWrapper {
+    inset: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    padding: clamp(24px, 3vw, 36px) clamp(54px, 8vw, 96px) !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    box-sizing: border-box !important;
+    overflow: hidden !important;
+  }
+
+  .prepareForHighDemand {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    margin: 0 !important;
+    font-size: clamp(28px, 3.8vw, 40px) !important;
+    line-height: 1.22 !important;
+    text-align: center !important;
+    white-space: normal !important;
+    overflow-wrap: normal !important;
+    word-break: normal !important;
+  }
+
+  /* Keep responsive cards inside the viewport without clipping shadows/borders */
+  .rectangleGroup,
+  .frameParent9,
+  .frameWrapper5,
+  .frameWrapper7,
+  .frameWrapper9,
+  .frameParent23,
+  .frameParent33,
+  .frameWrapper6,
+  .frameWrapper8,
+  .frameWrapper10,
+  .rectangleParent3,
+  .rectangleParent4,
+  .image21Parent {
+    max-width: calc(100vw - 40px) !important;
+  }
+
+  .frameParent4,
+  .frameParent5,
+  .frameParent14,
+  .frameParent15,
+  .frameParent8 {
+    max-width: calc(100vw - 40px) !important;
+  }
+
+  /* Preserve all original shadows while giving them room to render */
+  .rectangleGroup,
+  .frameParent9,
+  .frameWrapper5,
+  .frameWrapper7,
+  .frameWrapper9,
+  .frameParent23,
+  .frameParent33,
+  .frameWrapper6,
+  .frameWrapper8,
+  .frameWrapper10,
+  .rectangleParent3,
+  .rectangleParent4,
+  .image21Parent,
+  .frameChild7,
+  .codeIconCircle,
+  .frameItem,
+  .frameIcon,
+  .frameWrapper12 {
+    overflow: visible;
+  }
+
+  /* Restore visible left/right card edges where responsive widths shrink */
+  .rectangleGroup,
+  .frameParent23,
+  .frameParent33,
+  .frameWrapper6,
+  .frameWrapper8,
+  .frameWrapper10 {
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .bootcampInner2 {
+    width: calc(100% - 24px) !important;
+    left: 12px !important;
+    right: 12px !important;
+    height: clamp(190px, 45vw, 250px) !important;
+  }
+
+  .prepareForHighDemandCareerWrapper {
+    padding: 20px clamp(28px, 9vw, 48px) !important;
+  }
+
+  .prepareForHighDemand {
+    font-size: clamp(20px, 6.2vw, 28px) !important;
+    line-height: 1.18 !important;
+    letter-spacing: 0.02em !important;
+  }
+
+  .rectangleGroup,
+  .frameParent9,
+  .frameWrapper5,
+  .frameWrapper7,
+  .frameWrapper9,
+  .frameParent23,
+  .frameParent33,
+  .frameWrapper6,
+  .frameWrapper8,
+  .frameWrapper10,
+  .rectangleParent3,
+  .rectangleParent4,
+  .image21Parent,
+  .frameParent4,
+  .frameParent5,
+  .frameParent14,
+  .frameParent15,
+  .frameParent8 {
+    width: calc(100% - 24px) !important;
+    max-width: calc(100% - 24px) !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  /* Add safe shadow breathing room so left/right neumorphic edges remain visible */
+  .frameParent4,
+  .frameParent5,
+  .frameParent14,
+  .frameParent15,
+  .frameParent8 {
+    padding-left: 8px !important;
+    padding-right: 8px !important;
+    box-sizing: border-box !important;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .bootcampInner2 {
+    width: calc(100% - 16px) !important;
+    left: 8px !important;
+    right: 8px !important;
+    height: clamp(180px, 52vw, 230px) !important;
+  }
+
+  .prepareForHighDemandCareerWrapper {
+    padding: 18px clamp(22px, 8vw, 34px) !important;
+  }
+
+  .prepareForHighDemand {
+    font-size: clamp(18px, 6.4vw, 24px) !important;
+    line-height: 1.16 !important;
+  }
+
+  .rectangleGroup,
+  .frameParent9,
+  .frameWrapper5,
+  .frameWrapper7,
+  .frameWrapper9,
+  .frameParent23,
+  .frameParent33,
+  .frameWrapper6,
+  .frameWrapper8,
+  .frameWrapper10,
+  .rectangleParent3,
+  .rectangleParent4,
+  .image21Parent,
+  .frameParent4,
+  .frameParent5,
+  .frameParent14,
+  .frameParent15,
+  .frameParent8 {
+    width: calc(100% - 16px) !important;
+    max-width: calc(100% - 16px) !important;
+  }
+}
+
+/* ==========================================================================
+   MOBILE / TABLET — 01 / 02 / 03 CARD ALIGNMENT + COMPACT SPACING ONLY
+   Keeps existing card design, colors, borders and shadows unchanged.
+   ========================================================================== */
+@media screen and (max-width: 1199px) {
+  .frameParent14 {
+    left: 0 !important;
+    right: 0 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    padding-left: 24px !important;
+    padding-right: 24px !important;
+    box-sizing: border-box !important;
+  }
+
+  .frameParent15 {
+    width: 100% !important;
+    max-width: 100% !important;
+    gap: 24px !important;
+    box-sizing: border-box !important;
+  }
+
+  .frameWrapper5,
+  .frameWrapper7,
+  .frameWrapper9 {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  .frameParent16,
+  .frameParent26,
+  .frameParent36 {
+    left: 0 !important;
+    right: 0 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .frameParent23,
+  .frameParent33,
+  .frameWrapper6,
+  .frameWrapper8,
+  .frameWrapper10 {
+    left: 0 !important;
+    right: 0 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    box-sizing: border-box !important;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .frameParent14 {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+    gap: 24px !important;
+  }
+
+  .frameParent15 {
+    gap: 14px !important;
+  }
+
+  .frameWrapper5,
+  .frameWrapper7,
+  .frameWrapper9 {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  /* Remove excess vertical blank space around each stacked card group */
+  .frameWrapper5,
+  .frameWrapper7 {
+    height: 520px !important;
+  }
+
+  .frameWrapper9 {
+    height: 480px !important;
+  }
+
+  .frameParent16,
+  .frameParent26,
+  .frameParent36 {
+    top: 0 !important;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .frameParent14 {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+  }
+
+  .frameParent15 {
+    gap: 12px !important;
+  }
+}
+
+/* ==========================================================================
+   CAREER BANNER — MOBILE/TABLET TEXT FIT INSIDE POLYGON ONLY
+   Keeps the existing polygon shape, SVG shadow effects, colors and layout.
+   ========================================================================== */
+@media screen and (max-width: 700px) {
+  .bootcampInner2 {
+    height: clamp(205px, 48vw, 250px) !important;
+  }
+
+  .prepareForHighDemandCareerWrapper {
+    padding:
+      clamp(28px, 7vw, 38px)
+      clamp(42px, 12vw, 64px) !important;
+    overflow: hidden !important;
+  }
+
+  .prepareForHighDemand {
+    max-width: 86% !important;
+    margin: 0 auto !important;
+    font-size: clamp(18px, 5.2vw, 25px) !important;
+    line-height: 1.16 !important;
+    letter-spacing: 0.01em !important;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .bootcampInner2 {
+    height: clamp(190px, 52vw, 225px) !important;
+  }
+
+  .prepareForHighDemandCareerWrapper {
+    padding:
+      clamp(24px, 7vw, 32px)
+      clamp(36px, 11vw, 52px) !important;
+  }
+
+  .prepareForHighDemand {
+    max-width: 82% !important;
+    font-size: clamp(17px, 5.5vw, 22px) !important;
+    line-height: 1.14 !important;
+  }
+}
+
+/* ==========================================================================
+   FINAL MOBILE / TABLET CORRECTION — ONLY TWO SECTIONS
+   1) Career polygon: text stays fully inside and centered.
+   2) Bottom CTA capsule: left/right neumorphic shadow remains visible.
+   Desktop design/content/effects are unchanged.
+   ========================================================================== */
+
+/* ---------- TABLET ---------- */
+@media screen and (max-width: 1199px) {
+
+  /* CAREER POLYGON — preserve SVG + shadow, keep text inside */
+  .bootcamp > .bootcampInner2 {
+    width: calc(100% - 48px) !important;
+    max-width: 1304px !important;
+    left: 24px !important;
+    right: 24px !important;
+    height: clamp(210px, 23vw, 303px) !important;
+    overflow: visible !important;
+  }
+
+  .bootcamp > .bootcampInner2 > .careerFrameInlineSvg {
+    position: absolute !important;
+    inset: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    max-width: none !important;
+    overflow: visible !important;
+    display: block !important;
+  }
+
+  .bootcamp > .bootcampInner2 > .prepareForHighDemandCareerWrapper {
+    position: absolute !important;
+    inset: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    padding: clamp(34px, 4vw, 48px) clamp(72px, 10vw, 120px) !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    box-sizing: border-box !important;
+    overflow: hidden !important;
+  }
+
+  .bootcamp > .bootcampInner2 > .prepareForHighDemandCareerWrapper > .prepareForHighDemand {
+    width: min(100%, 1080px) !important;
+    max-width: 100% !important;
+    height: auto !important;
+    margin: 0 auto !important;
+    font-size: clamp(26px, 3.3vw, 40px) !important;
+    line-height: 1.18 !important;
+    letter-spacing: 0.02em !important;
+    text-align: center !important;
+    white-space: normal !important;
+    overflow-wrap: normal !important;
+    word-break: normal !important;
+  }
+
+  /* CTA CAPSULE — allow outer shadow to render on both sides */
+  .bootcamp > .rectangleParent3 {
+    width: calc(100% - 64px) !important;
+    max-width: 1280px !important;
+    left: auto !important;
+    right: auto !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+
+    border-radius: 500px !important;
+    overflow: hidden !important;
+
+    box-shadow:
+      -6px -6px 10px rgba(255, 255, 255, 0.78),
+       6px  6px 10px rgba(196, 196, 196, 0.62),
+      inset -4px -4px 4px rgba(255, 255, 255, 0.50),
+      inset  4px  4px 4px #c4c4c4 !important;
+  }
+
+  .bootcamp > .rectangleParent3::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    box-shadow:
+      inset -4px -4px 4px rgba(255, 255, 255, 0.50),
+      inset  4px  4px 4px #c4c4c4;
+    pointer-events: none;
+    z-index: 10;
+  }
+
+  .bootcamp > .rectangleParent3 > .rectangle2,
+  .bootcamp > .rectangleParent3 > .image202 {
+    border-radius: inherit !important;
+  }
+}
+
+/* ---------- MOBILE ---------- */
+@media screen and (max-width: 700px) {
+
+  /* CAREER POLYGON */
+  .bootcamp > .bootcampInner2 {
+    width: calc(100% - 28px) !important;
+    left: 14px !important;
+    right: 14px !important;
+    height: clamp(185px, 44vw, 225px) !important;
+  }
+
+  .bootcamp > .bootcampInner2 > .prepareForHighDemandCareerWrapper {
+    padding:
+      clamp(32px, 8vw, 42px)
+      clamp(52px, 13vw, 70px) !important;
+  }
+
+  .bootcamp > .bootcampInner2 > .prepareForHighDemandCareerWrapper > .prepareForHighDemand {
+    width: 100% !important;
+    max-width: 100% !important;
+    font-size: clamp(18px, 4.9vw, 24px) !important;
+    line-height: 1.14 !important;
+    letter-spacing: 0.01em !important;
+  }
+
+  /* CTA CAPSULE */
+  .bootcamp > .rectangleParent3 {
+    width: calc(100% - 40px) !important;
+    max-width: calc(100% - 40px) !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+
+    border-radius: 999px !important;
+    overflow: hidden !important;
+
+    box-shadow:
+      -5px -5px 9px rgba(255, 255, 255, 0.82),
+       5px  5px 9px rgba(196, 196, 196, 0.68),
+      inset -4px -4px 4px rgba(255, 255, 255, 0.50),
+      inset  4px  4px 4px #c4c4c4 !important;
+  }
+
+  .bootcamp > .rectangleParent3::after {
+    border-radius: 999px !important;
+  }
+
+  .bootcamp > .rectangleParent3 > .rectangle2,
+  .bootcamp > .rectangleParent3 > .image202 {
+    border-radius: 999px !important;
+  }
+}
+
+/* ---------- SMALL MOBILE ---------- */
+@media screen and (max-width: 480px) {
+
+  /* CAREER POLYGON */
+  .bootcamp > .bootcampInner2 {
+    width: calc(100% - 20px) !important;
+    left: 10px !important;
+    right: 10px !important;
+    height: clamp(170px, 48vw, 205px) !important;
+  }
+
+  .bootcamp > .bootcampInner2 > .prepareForHighDemandCareerWrapper {
+    padding:
+      clamp(28px, 8vw, 36px)
+      clamp(44px, 13vw, 58px) !important;
+  }
+
+  .bootcamp > .bootcampInner2 > .prepareForHighDemandCareerWrapper > .prepareForHighDemand {
+    font-size: clamp(16px, 4.8vw, 20px) !important;
+    line-height: 1.12 !important;
+  }
+
+  /* CTA CAPSULE — extra side room so both shadows remain visible */
+  .bootcamp > .rectangleParent3 {
+    width: calc(100% - 32px) !important;
+    max-width: calc(100% - 32px) !important;
+  }
+}
+
+/* ==========================================================================
+   01 / 02 / 03 CARDS — MOBILE ALIGNMENT CORRECTION ONLY
+   Keeps card sizes, shadows, colors, borders and desktop design unchanged.
+   ========================================================================== */
+@media screen and (max-width: 700px) {
+
+  /* Center the complete 3-card section within the available mobile width */
+  .bootcamp > .frameParent14 {
+    width: calc(100% - 32px) !important;
+    max-width: calc(100% - 32px) !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    align-items: stretch !important;
+    box-sizing: border-box !important;
+  }
+
+  .bootcamp > .frameParent14 > .frameParent15 {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    align-items: stretch !important;
+  }
+
+  .frameWrapper5,
+  .frameWrapper7,
+  .frameWrapper9,
+  .frameWrapper5.accordionCardSpace,
+  .frameWrapper7.accordionCardSpace,
+  .frameWrapper9.accordionCardSpace {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
+  .frameParent23,
+  .frameParent33 {
+    width: 100% !important;
+    max-width: 100% !important;
+    left: 0 !important;
+    right: 0 !important;
+    margin: 0 !important;
+    box-sizing: border-box !important;
+  }
+
+  /* Keep number/title/description aligned consistently on all 3 cards */
+  .frameParent24 {
+    left: 0 !important;
+    right: 0 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding-left: clamp(14px, 4vw, 22px) !important;
+    padding-right: clamp(14px, 4vw, 22px) !important;
+    box-sizing: border-box !important;
+    align-items: center !important;
+  }
+
+  /* Arrow must sit exactly at the horizontal center of every card */
+  .frameChild17,
+  .accordionArrow {
+    left: 50% !important;
+    right: auto !important;
+    bottom: 8px !important;
+    transform: translateX(-50%) !important;
+  }
+
+  .accordionArrow.isOpen {
+    transform: translateX(-50%) rotate(180deg) !important;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .bootcamp > .frameParent14 {
+    width: calc(100% - 24px) !important;
+    max-width: calc(100% - 24px) !important;
+  }
+
+  .frameParent24 {
+    padding-left: 12px !important;
+    padding-right: 12px !important;
+  }
+}
+
+/* ==========================================================================
+   REQUESTED FINAL REFINEMENTS ONLY
+   1) Mobile CTA text gets safe inner breathing room
+   2) Future-Ready heading/image group sits slightly lower on desktop
+   3) Book a Demo gets raised <-> inset hover in/out
+   4) Excess responsive section gaps are reduced
+   No content, colors, desktop structure, card design or other effects changed.
+   ========================================================================== */
+
+/* 2) DESKTOP — move Future-Ready heading/image group slightly down
+   so the heading/shadow is not clipped at the top edge. */
+@media screen and (min-width: 1200px) {
+  .futureReadyTechCareersParent {
+    top: 64px !important;
+  }
+}
+
+/* 3) BOOK A DEMO — neumorphic hover IN / OUT only */
+.frameWrapper12 {
+  transition:
+    box-shadow 0.22s ease,
+    color 0.22s ease !important;
+}
+
+.frameWrapper12:hover {
+  transform: none !important;
+  box-shadow:
+    inset -4px -4px 6px #ffffff,
+    inset 4px 4px 6px #c6c6c9 !important;
+}
+
+.frameWrapper12:not(:hover) {
+  transform: none !important;
+  box-shadow:
+    -4px -4px 4px #ffffff,
+    4px 4px 4px #c6c6c9 !important;
+}
+
+/* 1 + 4) TABLET / MOBILE */
+@media screen and (max-width: 1199px) {
+  /* Reduce only the large vertical gap created by the responsive flow. */
+  .bootcamp {
+    gap: clamp(22px, 4vw, 40px) !important;
+  }
+
+  /* Keep CTA content comfortably inside the capsule. */
+  .bootcamp > .rectangleParent3 > .frameParent45 {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-height: inherit !important;
+    margin: 0 !important;
+    padding:
+      clamp(48px, 7vw, 66px)
+      clamp(34px, 8vw, 76px)
+      clamp(42px, 6vw, 58px) !important;
+    box-sizing: border-box !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+
+  .bootcamp > .rectangleParent3 .neurolabsCodingBootcampsFasParent {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    margin: 0 !important;
+  }
+
+  .bootcamp > .rectangleParent3 .neurolabsCodingBootcamps2 {
+    width: min(100%, 820px) !important;
+    max-width: 100% !important;
+    height: auto !important;
+    margin: 0 auto !important;
+    transform: none !important;
+  }
+
+  .bootcamp > .rectangleParent3 .accelerateYourCoding {
+    width: min(88%, 760px) !important;
+    max-width: 88% !important;
+    height: auto !important;
+    margin: 0 auto !important;
+    transform: none !important;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  /* Tighter section flow without collapsing the design. */
+  .bootcamp {
+    gap: clamp(18px, 4vw, 28px) !important;
+  }
+
+  /* Mobile CTA — keep title/paragraph away from all capsule edges. */
+  .bootcamp > .rectangleParent3 > .frameParent45 {
+    padding:
+      clamp(58px, 12vw, 72px)
+      clamp(38px, 10vw, 58px)
+      clamp(48px, 10vw, 62px) !important;
+    gap: clamp(22px, 5vw, 30px) !important;
+  }
+
+  .bootcamp > .rectangleParent3 .neurolabsCodingBootcampsFasParent {
+    gap: clamp(18px, 4vw, 24px) !important;
+  }
+
+  .bootcamp > .rectangleParent3 .neurolabsCodingBootcamps2 {
+    width: 100% !important;
+    max-width: 100% !important;
+    font-size: clamp(23px, 5.8vw, 30px) !important;
+    line-height: 1.22 !important;
+    letter-spacing: 0.02em !important;
+  }
+
+  .bootcamp > .rectangleParent3 .accelerateYourCoding {
+    width: 86% !important;
+    max-width: 86% !important;
+    font-size: clamp(16px, 4vw, 20px) !important;
+    line-height: 1.42 !important;
+  }
+
+  .bootcamp > .rectangleParent3 .frameWrapper11,
+  .bootcamp > .rectangleParent3 .frameWrapper12 {
+    transform: none !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .bootcamp {
+    gap: 18px !important;
+  }
+
+  .bootcamp > .rectangleParent3 > .frameParent45 {
+    padding:
+      56px
+      34px
+      46px !important;
+  }
+
+  .bootcamp > .rectangleParent3 .neurolabsCodingBootcamps2 {
+    font-size: clamp(21px, 6vw, 27px) !important;
+    line-height: 1.2 !important;
+  }
+
+  .bootcamp > .rectangleParent3 .accelerateYourCoding {
+    width: 84% !important;
+    max-width: 84% !important;
+    font-size: clamp(15px, 4.2vw, 18px) !important;
+    line-height: 1.4 !important;
+  }
+}
+
+/* ==========================================================================
+   DESKTOP SPACING CORRECTION ONLY
+   Reduces the large blank spaces shown previously while keeping:
+   - all section designs
+   - all shadows
+   - all card dimensions
+   - accordion dynamic height behavior
+   - tablet/mobile layouts
+   unchanged.
+   ========================================================================== */
+@media screen and (min-width: 1200px) {
+
+  /* Hero -> Practical Coding / Project Learning / Career Readiness */
+  .frameParent4 {
+    top: 775px !important;
+  }
+
+  /* Keep the next major section following naturally */
+  .frameParent5 {
+    top: 955px !important;
+  }
+
+  /* Education & Enterprise Ready -> Future-Ready Tech Careers
+     Keep accordion expansion offset intact. */
+  .rectangleParent4 {
+    top: calc(2718px + var(--accordion-extra-height)) !important;
+    transition: top 0.35s ease !important;
+  }
+
+  /* Future-Ready Tech Careers -> final Bootcamp CTA
+     2718 + 756 = 3474, leaving a controlled 48px gap. */
+  .rectangleParent3 {
+    top: calc(3522px + var(--accordion-extra-height)) !important;
+    transition: top 0.35s ease !important;
+  }
+}
+
+/* ==========================================================================
+   DESKTOP — FINAL SPACING CORRECTION ONLY
+   Keeps the career-banner spacing correction and removes the large blank
+   area before the real Footer component.
+   ========================================================================== */
+@media screen and (min-width: 1200px) {
+
+  /* Keep the reduced gap before "Prepare for High-Demand Careers..." */
+  .bootcampInner2 {
+    top: 1796.21px !important;
+  }
+
+  /* Footer is rendered outside .bootcamp in page.tsx.
+     Final CTA starts at 3522px + accordion offset and is 505px high.
+     End .bootcamp 24px after that visual section. */
+  .bootcamp {
+    height: calc(4051px + var(--accordion-extra-height)) !important;
+    padding-bottom: 0 !important;
+    transition: height 0.35s ease !important;
+  }
+}
+
+/* ==========================================================================
+   BREADCRUMB CURRENT ITEM COLOR ONLY
+   Ensures "Coding Bootcamps" stays blue even when responsive/inherited
+   breadcrumb rules apply.
+   ========================================================================== */
+.frameParent3 .codingBootcamps,
+.frameParent3 .breadcrumbCurrent,
+.frameParent3 a.codingBootcamps,
+.frameParent3 span.codingBootcamps {
+  color: #2d4cc8 !important;
+}
+
+/* BREADCRUMB "Coding Bootcamps" — BOLD ONLY */
+.frameParent3 .codingBootcamps,
+.frameParent3 .breadcrumbCurrent,
+.frameParent3 a.codingBootcamps,
+.frameParent3 span.codingBootcamps {
+  font-weight: 700 !important;
+}
+
+/* ==========================================================================
+   LEARN BY BUILDING REAL PROJECTS — DESKTOP VERTICAL SPACING ONLY
+   Reduces only the visible empty spaces in this section.
+   Card sizes, icons, borders, shadows, typography and all other sections
+   remain unchanged.
+   ========================================================================== */
+@media screen and (min-width: 1200px) {
+
+  /* Overall heading block -> project cards */
+  .frameParent5 {
+    gap: 34px !important;
+  }
+
+  /* Badge -> heading/content group */
+  .frameParent6 {
+    gap: 24px !important;
+  }
+
+  /* Main heading -> supporting paragraph */
+  .learnByBuildingRealProjectParent {
+    gap: 20px !important;
+  }
+
+  /* First project-card row -> second project-card row */
+  .frameParent7 {
+    gap: 28px !important;
+  }
+}
+
+/* ==========================================================================
+   FINAL DESKTOP SPACING FIX — ONLY THE TWO REQUESTED SECTIONS
+   1) Learn by Building Real Projects
+   2) 01 / 02 / 03 accordion cards
+   Keeps all card sizes, typography, shadows, colors and other sections intact.
+   ========================================================================== */
+@media screen and (min-width: 1200px) {
+
+  /* ----------------------------------------------------------
+     SECTION 1: LEARN BY BUILDING REAL PROJECTS
+     Reduce only the vertical empty spaces.
+     ---------------------------------------------------------- */
+  .frameParent5 {
+    gap: 24px !important;
+  }
+
+  .frameParent6 {
+    gap: 18px !important;
+  }
+
+  .learnByBuildingRealProjectParent {
+    gap: 14px !important;
+  }
+
+  .frameParent7 {
+    gap: 18px !important;
+  }
+
+  /* ----------------------------------------------------------
+     SECTION 2: 01 / 02 / 03 ACCORDION CARDS
+     The visible collapsed card is 150px high, so use that same
+     height in the flow. This removes the hidden 48px spacer.
+     ---------------------------------------------------------- */
+  .frameParent14 {
+    top: 2140px !important;
+    gap: 16px !important;
+  }
+
+  .frameParent15 {
+    gap: 24px !important;
+    min-height: 150px !important;
+  }
+
+  .frameWrapper5.accordionCardSpace.isCollapsed,
+  .frameWrapper7.accordionCardSpace.isCollapsed,
+  .frameWrapper9.accordionCardSpace.isCollapsed {
+    height: 150px !important;
+    min-height: 150px !important;
+  }
+
+  /* Third card follows the first row with only the intended 16px gap. */
+  .frameWrapper9.accordionCardSpace {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+  }
+
+  /* Keep the next section a compact 54px below the accordion.
+     The TSX variable now measures expansion from the true 150px baseline. */
+  .rectangleParent4 {
+    top: calc(2510px + var(--accordion-extra-height)) !important;
+    transition: top 0.35s ease !important;
+  }
+
+  /* Keep 48px between Future-Ready section and CTA. */
+  .rectangleParent3 {
+    top: calc(3314px + var(--accordion-extra-height)) !important;
+    transition: top 0.35s ease !important;
+  }
+
+  /* End the page 24px after the CTA so no extra blank area is added. */
+  .bootcamp {
+    height: calc(3843px + var(--accordion-extra-height)) !important;
+    padding-bottom: 0 !important;
+    transition: height 0.35s ease !important;
+  }
+}
+
+/* ==========================================================================
+   DESKTOP — TRUE UNIFORM SECTION SPACING
+   Only vertical positions/gaps are corrected.
+   No card size, typography, shadow, border, color, image or content changes.
+   ========================================================================== */
+@media screen and (min-width: 1200px) {
+
+  /* Learn by Building Real Projects — keep internal spacing compact */
+  .frameParent5 {
+    gap: 24px !important;
+  }
+
+  .frameParent6 {
+    gap: 18px !important;
+  }
+
+  .learnByBuildingRealProjectParent {
+    gap: 14px !important;
+  }
+
+  .frameParent7 {
+    gap: 18px !important;
+  }
+
+  /* Project cards end at about 1674px.
+     Keep a uniform ~48px section gap before the career banner. */
+  .bootcampInner2 {
+    top: 1722px !important;
+  }
+
+  /* Career banner height = 303px.
+     1722 + 303 + 48 = 2073px */
+  .frameParent14 {
+    top: 2073px !important;
+    gap: 16px !important;
+  }
+
+  /* Collapsed accordion:
+     150px first row + 16px gap + 150px third card = 316px.
+     2073 + 316 + 48 = 2437px */
+  .rectangleParent4 {
+    top: calc(2437px + var(--accordion-extra-height)) !important;
+    transition: top 0.35s ease !important;
+  }
+
+  /* Future-Ready section height = 756px.
+     2437 + 756 + 48 = 3241px */
+  .rectangleParent3 {
+    top: calc(3241px + var(--accordion-extra-height)) !important;
+    transition: top 0.35s ease !important;
+  }
+
+  /* CTA height = 505px; leave only 24px after it before page end. */
+  .bootcamp {
+    height: calc(3770px + var(--accordion-extra-height)) !important;
+    padding-bottom: 0 !important;
+    transition: height 0.35s ease !important;
+  }
+}
+
+/* ==========================================================================
+   PROJECT CARDS — SLIGHTLY SMALLER ICON CIRCLES + CARD HEIGHT ONLY
+   Desktop only. No typography, colors, borders, shadows, widths or content changed.
+   ========================================================================== */
+@media screen and (min-width: 1200px) {
+  /* Reduce each of the four dashed cards from 150px to 136px. */
+  .frameParent9 {
+    height: 185px !important;
+  }
+
+  .frameWrapper {
+    top: 49px !important;
+    height: 136px !important;
+  }
+
+  .writingAndTestingCodeWrapper,
+  .webAppDevelopmentWrapper,
+  .debugOptimizeWrapper,
+  .programmingChallengeWrapper {
+    height: 136px !important;
+  }
+
+  /* Slight reduction only: outer icon holder 100px -> 90px. */
+  .frameChild7 {
+    width: 90px !important;
+    height: 90px !important;
+    left: calc(50% - 45px) !important;
+  }
+
+  /* Inner icon circle 70px -> 64px. */
+  .codeIconCircle {
+    width: 64px !important;
+    height: 64px !important;
+  }
+
+  /* Keep the actual symbol proportional. */
+  .codeBoxImage {
+    width: 36px !important;
+    height: 36px !important;
   }
 }
 

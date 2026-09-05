@@ -43,6 +43,7 @@ interface TouchedState {
   email: boolean;
   phoneNumber: boolean;
   interest: boolean;
+  query: boolean;
   consent: boolean;
 }
 
@@ -64,6 +65,41 @@ const NAME_PATTERN = /^[A-Za-z]+(?: [A-Za-z]+)*$/;
 
 const EMAIL_PATTERN =
   /^[A-Za-z0-9.!#$%&'*+/=?^_`{|}~-]+@[A-Za-z0-9](?:[A-Za-z0-9-]{0,61}[A-Za-z0-9])?(?:\.[A-Za-z0-9](?:[A-Za-z0-9-]{0,61}[A-Za-z0-9])?)+$/;
+
+const COMMON_EMAIL_DOMAINS: Record<string, string> = {
+  gmail: "gmail.com",
+  yahoo: "yahoo.com",
+  outlook: "outlook.com",
+  hotmail: "hotmail.com",
+  icloud: "icloud.com",
+};
+
+function validateEmailAddress(value: string) {
+  const normalized = value.trim().toLowerCase();
+
+  if (!EMAIL_PATTERN.test(normalized)) {
+    return {
+      valid: false,
+      message: "Please enter a valid email address.",
+    };
+  }
+
+  const [, domain = ""] = normalized.split("@");
+  const provider = domain.split(".")[0] ?? "";
+  const requiredDomain = COMMON_EMAIL_DOMAINS[provider];
+
+  if (requiredDomain && domain !== requiredDomain) {
+    return {
+      valid: false,
+      message: `Please enter the complete email address. Did you mean ${requiredDomain}?`,
+    };
+  }
+
+  return {
+    valid: true,
+    message: "",
+  };
+}
 
 /*
  * Phone numbers are validated against the selected country.
@@ -98,7 +134,7 @@ function UserIcon() {
       <g filter="url(#tteUserShadow)">
         <path
           d="M14.6338 7.09509C14.6356 4.79391 12.7715 2.92696 10.4704 2.92515C8.16919 2.92334 6.30224 4.78736 6.30044 7.08854C6.29863 9.38971 8.16265 11.2567 10.4638 11.2585C12.765 11.2603 14.632 9.39625 14.6338 7.09509Z"
-          stroke="#2D4CC8"
+          stroke="#FFFFFF"
           strokeWidth="1.25"
           strokeLinecap="round"
           strokeLinejoin="round"
@@ -509,6 +545,7 @@ export default function TalkToOurExpert({
     email: false,
     phoneNumber: false,
     interest: false,
+    query: false,
     consent: false,
   });
 
@@ -535,6 +572,7 @@ export default function TalkToOurExpert({
         email: false,
         phoneNumber: false,
         interest: false,
+        query: false,
         consent: false,
       });
 
@@ -623,7 +661,9 @@ export default function TalkToOurExpert({
      * every country name that happens to contain the letters "in".
      */
     const exactIsoMatch = COUNTRIES.filter(
-      (country) => country.iso2.toLowerCase() === query
+      (country) =>
+        country.iso2.toLowerCase() ===
+        query.replace(/[^a-z]/g, "")
     );
 
     if (exactIsoMatch.length > 0) {
@@ -651,9 +691,7 @@ export default function TalkToOurExpert({
         ? "Please enter a valid name using letters and spaces only."
         : "",
 
-      email: !EMAIL_PATTERN.test(formData.email.trim())
-        ? "Please enter a valid email address."
-        : "",
+      email: validateEmailAddress(formData.email).message,
 
       phoneNumber: (() => {
         const phone = formData.phoneNumber.trim();
@@ -682,8 +720,8 @@ export default function TalkToOurExpert({
       })(),
 
       query:
-        formData.query.length > MAX_QUERY_LENGTH
-          ? "Query details must be 250 characters or fewer."
+        formData.query.trim().length === 0
+          ? "Please enter your query."
           : "",
 
       consent: !formData.consent
@@ -735,6 +773,7 @@ export default function TalkToOurExpert({
       email: true,
       phoneNumber: true,
       interest: true,
+      query: true,
       consent: true,
     });
 
@@ -909,6 +948,9 @@ export default function TalkToOurExpert({
                         className={styles["tte-input"]}
                         placeholder="Enter your name"
                         value={formData.fullName}
+                        spellCheck={false}
+                        autoCorrect="off"
+                        autoCapitalize="words"
                         onChange={(event) =>
                           handleFieldChange(
                             "fullName",
@@ -1266,13 +1308,13 @@ export default function TalkToOurExpert({
                         className={styles["tte-query-count"]}
                         aria-live="polite"
                       >
-                        {MAX_QUERY_LENGTH - formData.query.length}/{MAX_QUERY_LENGTH} characters left
+                        {MAX_QUERY_LENGTH - formData.query.length}/{MAX_QUERY_LENGTH} 
                       </span>
                     </div>
 
                     <div
                       className={`${styles["tte-textarea-shell"]}${
-                        errors.query
+                        touched.query && errors.query
                           ? ` ${styles["tte-textarea-error"]}`
                           : ""
                       }`}
@@ -1289,9 +1331,12 @@ export default function TalkToOurExpert({
                             event.target.value
                           )
                         }
-                        aria-invalid={Boolean(errors.query)}
+                        onBlur={() => handleBlur("query")}
+                        aria-invalid={
+                          touched.query && Boolean(errors.query)
+                        }
                         aria-describedby={
-                          errors.query
+                          touched.query && errors.query
                             ? "tte-query-error"
                             : "tte-query-count"
                         }
@@ -1305,7 +1350,7 @@ export default function TalkToOurExpert({
                       </span>
                     </div>
 
-                    {errors.query && (
+                    {touched.query && errors.query && (
                       <div className={styles["tte-query-meta"]}>
                         <span
                           id="tte-query-error"
@@ -1313,6 +1358,18 @@ export default function TalkToOurExpert({
                           role="alert"
                         >
                           {errors.query}
+                        </span>
+                      </div>
+                    )}
+
+                    {formData.query.length === MAX_QUERY_LENGTH && (
+                      <div className={styles["tte-query-meta"]}>
+                        <span
+                          className={styles["tte-query-limit-message"]}
+                          role="status"
+                          aria-live="polite"
+                        >
+                          Maximum character limit reached.
                         </span>
                       </div>
                     )}
