@@ -1457,3 +1457,69 @@ a {
     8px 8px 16px #c6c6c9 !important;
 }
 
+/* ==========================================================================
+   VIDEO NAVIGATION — SLIGHTLY UP + UNIFORM SECTION SPACING
+   Desktop only. No other layout, sizing, video, typography or effects changed.
+   ========================================================================== */
+@media (min-width: 901px) {
+  .coding-video-controls {
+    margin-top: 12px !important;
+  }
+}
+
+/* ==========================================================================
+   VIDEO NAVIGATION — MOVE BUTTONS UP ONLY
+   Desktop only. This visually lifts the Previous/Next controls without
+   changing the video deck, section layout, button design, or other content.
+   ========================================================================== */
+@media (min-width: 901px) {
+  .coding-video-controls {
+    margin-top: 0 !important;
+    transform: translateY(-32px) !important;
+  }
+}
+
+/* ==========================================================================
+   VIDEO SECTION — UNIFORM DESKTOP SECTION-TO-SECTION SPACING
+   Keeps the buttons raised, but removes the large blank area below them.
+   No video/card/button design, typography, colors or other sections changed.
+   ========================================================================== */
+@media (min-width: 901px) {
+  .coding-learning {
+    margin-bottom: -105px !important;
+  }
+
+  .coding-cta {
+    margin-top: 96px !important;
+  }
+}
+
+/* ==========================================================================
+   VIDEO NAVIGATION — SLIGHT RIGHT SHIFT ONLY
+   Keeps the existing raised position and all button/video styling unchanged.
+   ========================================================================== */
+@media (min-width: 901px) {
+  .coding-video-controls {
+    transform: translate(28px, -32px) !important;
+  }
+}
+
+/* ==========================================================================
+   BOOK A DEMO — MOBILE CENTER ALIGNMENT ONLY
+   Keeps the existing button size, shadow, typography and desktop/tablet design.
+   ========================================================================== */
+@media (max-width: 700px) {
+  .coding-cta__actions {
+    width: 100% !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+
+  .coding-cta__actions button {
+    margin-left: auto !important;
+    margin-right: auto !important;
+    transform: none !important;
+  }
+}
+
