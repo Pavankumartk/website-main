@@ -7,7 +7,7 @@
 			text-align: left;
 			font-size: 48px;
 			color: #31344b;
-			font-family: "Segoe UI";
+			font-family: "Segoe UI", "Inter";
 			overflow-x: clip;
 			overflow-y: visible;
 			zoom: 0.89;
@@ -16,14 +16,16 @@
 			position: absolute;
 			top: 0px;
 			left: 0px;
-			box-shadow: -8px -8px 16px #fff, 8px 8px 16px #c6c6c9;
+			box-shadow:
+			  4px 4px 4px #c6c6c9,
+			  -4px -4px 4px #fff;
 			background-color: #dfe6e9;
 			width: 1440px;
 			height: 80px;
 			overflow: hidden;
 			flex-shrink: 0;
 			font-size: 16px;
-			font-family: "Segoe UI";
+			font-family: "Segoe UI", "Inter";
 		}
 		.frameChild {
 			position: absolute;
@@ -89,7 +91,9 @@
 			position: absolute;
 			top: calc(50% - 22.5px);
 			left: 1244px;
-			box-shadow: -8px -8px 16px #fff, 8px 8px 16px #c6c6c9;
+			box-shadow:
+			  4px 4px 4px #c6c6c9,
+			  -4px -4px 4px #fff;
 			border-radius: 32px;
 			background-color: #dfe6e9;
 			width: 132px;
@@ -102,7 +106,7 @@
 			box-sizing: border-box;
 			text-align: center;
 			color: #2d4cc8;
-			font-family: "Segoe UI";
+			font-family: "Segoe UI", "Inter";
 		}
 		.signInHelp {
 			width: 97px;
@@ -125,7 +129,7 @@
 			flex-shrink: 0;
 			font-size: 16px;
 			color: #2f3547;
-			font-family: "Segoe UI";
+			font-family: "Segoe UI", "Inter";
 		}
 		.featuresWrapper {
 			display: flex;
@@ -206,7 +210,7 @@
 			line-height: 60px;
 			display: inline-block;
 			flex-shrink: 0;
-			text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+			text-shadow: none !important;
 		}
 		.neurolxpHelpsLearners {
 			width: 1056px;
@@ -259,7 +263,9 @@
 			align-self: stretch;
 			height: 120px;
 			position: relative;
-			box-shadow: -4px -4px 8px #fff, 4px 4px 8px rgba(196, 196, 196, 0.8);
+			box-shadow:
+			  4px 4px 4px rgba(196, 196, 196, 0.8),
+			  -4px -4px 4px #fff;
 			border-radius: 16px;
 			background-color: #dfe6e9;
 			overflow: hidden;
@@ -314,7 +320,9 @@
 			align-self: stretch;
 			height: 120px;
 			position: relative;
-			box-shadow: -4px -4px 8px #fff, 4px 4px 8px rgba(196, 196, 196, 0.8);
+			box-shadow:
+			  4px 4px 4px rgba(196, 196, 196, 0.8),
+			  -4px -4px 4px #fff;
 			border-radius: 16px;
 			background-color: #dfe6e9;
 			overflow: hidden;
@@ -336,7 +344,9 @@
 			height: 120px;
 			width: 290px;
 			position: relative;
-			box-shadow: -4px -4px 8px #fff, 4px 4px 8px rgba(196, 196, 196, 0.8);
+			box-shadow:
+			  4px 4px 4px rgba(196, 196, 196, 0.8),
+			  -4px -4px 4px #fff;
 			border-radius: 16px;
 			background-color: #dfe6e9;
 			overflow: hidden;
@@ -358,7 +368,9 @@
 			height: 120px;
 			width: 290px;
 			position: relative;
-			box-shadow: -4px -4px 8px #fff, 4px 4px 8px rgba(196, 196, 196, 0.8);
+			box-shadow:
+			  4px 4px 4px rgba(196, 196, 196, 0.8),
+			  -4px -4px 4px #fff;
 			border-radius: 16px;
 			background-color: #dfe6e9;
 			overflow: hidden;
@@ -445,7 +457,9 @@
 		.frameWrapper6 {
 			width: 614px;
 			height: 120px;
-			box-shadow: -8px -8px 16px #fff, 8px 8px 16px #c4c4c4;
+			box-shadow:
+			  4px 4px 4px #c4c4c4,
+			  -4px -4px 4px #fff;
 			border-radius: 24px;
 			background-color: #dfe6e9;
 			overflow: hidden;
@@ -492,7 +506,9 @@
 		.frameWrapper7 {
 			width: 614px;
 			height: 120px;
-			box-shadow: -8px -8px 16px #fff, 8px 8px 16px #c4c4c4;
+			box-shadow:
+			  4px 4px 4px #c4c4c4,
+			  -4px -4px 4px #fff;
 			border-radius: 24px;
 			background-color: #dfe6e9;
 			overflow: hidden;
@@ -529,7 +545,9 @@
 		.frameWrapper8 {
 			width: 614px;
 			height: 120px;
-			box-shadow: -8px -8px 16px #fff, 8px 8px 16px #c4c4c4;
+			box-shadow:
+			  4px 4px 4px #c4c4c4,
+			  -4px -4px 4px #fff;
 			border-radius: 24px;
 			background-color: #dfe6e9;
 			overflow: hidden;
@@ -557,7 +575,9 @@
 		.frameWrapper9 {
 			width: 614px;
 			height: 120px;
-			box-shadow: -8px -8px 16px #fff, 8px 8px 16px #c4c4c4;
+			box-shadow:
+			  4px 4px 4px #c4c4c4,
+			  -4px -4px 4px #fff;
 			border-radius: 24px;
 			background-color: #dfe6e9;
 			overflow: hidden;
@@ -600,7 +620,9 @@
 		.frameWrapper10 {
 			width: 614px;
 			height: 120px;
-			box-shadow: -8px -8px 16px #fff, 8px 8px 16px #c4c4c4;
+			box-shadow:
+			  4px 4px 4px #c4c4c4,
+			  -4px -4px 4px #fff;
 			border-radius: 24px;
 			background-color: #dfe6e9;
 			overflow: hidden;
@@ -799,7 +821,9 @@
 			position: absolute;
 			top: 0px;
 			left: 0px;
-			box-shadow: -8px -8px 16px #fff, 8px 8px 16px #c4c4c4;
+			box-shadow:
+			  4px 4px 4px #c4c4c4,
+			  -4px -4px 4px #fff;
 			width: 323px;
 			height: 323px;
 		}
@@ -985,7 +1009,9 @@
 			height: 160px;
 			width: 603px;
 			position: relative;
-			box-shadow: -8px -8px 16px #fff inset, 8px 8px 16px rgba(196, 196, 196, 0.8) inset;
+			box-shadow:
+			  inset 4px 4px 4px rgba(196, 196, 196, 0.8),
+			  inset -4px -4px 4px #fff;
 			border-radius: 24px;
 			background-color: #dfe6e9;
 			overflow: hidden;
@@ -1059,7 +1085,9 @@
 			height: 160px;
 			width: 603px;
 			position: relative;
-			box-shadow: -8px -8px 16px #fff inset, 8px 8px 16px rgba(196, 196, 196, 0.8) inset;
+			box-shadow:
+			  inset 4px 4px 4px rgba(196, 196, 196, 0.8),
+			  inset -4px -4px 4px #fff;
 			border-radius: 24px;
 			background-color: #dfe6e9;
 			overflow: hidden;
@@ -1121,7 +1149,9 @@
 			height: 160px;
 			width: 603px;
 			position: relative;
-			box-shadow: -8px -8px 16px #fff inset, 8px 8px 16px rgba(196, 196, 196, 0.8) inset;
+			box-shadow:
+			  inset 4px 4px 4px rgba(196, 196, 196, 0.8),
+			  inset -4px -4px 4px #fff;
 			border-radius: 24px;
 			background-color: #dfe6e9;
 			overflow: hidden;
@@ -1154,7 +1184,9 @@
 			width: 603px;
 			height: 160px;
 			position: relative;
-			box-shadow: -8px -8px 16px #fff inset, 8px 8px 16px rgba(196, 196, 196, 0.8) inset;
+			box-shadow:
+			  inset 4px 4px 4px rgba(196, 196, 196, 0.8),
+			  inset -4px -4px 4px #fff;
 			border-radius: 24px;
 			background-color: #dfe6e9;
 			overflow: hidden;
@@ -1238,13 +1270,15 @@
 			position: relative;
 			letter-spacing: 0.03em;
 			line-height: 60px;
-			text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+			text-shadow: none !important;
 		}
 		.frameParent55 {
 			align-self: stretch;
 			height: 597px;
 			position: relative;
-			box-shadow: -8px -8px 16px #fff inset, 8px 8px 16px rgba(196, 196, 196, 0.8) inset;
+			box-shadow:
+			  inset 4px 4px 4px rgba(196, 196, 196, 0.8),
+			  inset -4px -4px 4px #fff;
 			border-radius: 32px;
 			background-color: #dfe6e9;
 			overflow: hidden;
@@ -1255,7 +1289,9 @@
 			position: absolute;
 			top: 32px;
 			left: 32px;
-			box-shadow: 10px 10px 20px #c4c4c4, -10px -10px 20px rgba(255, 255, 255, 0.6);
+			box-shadow:
+			  4px 4px 4px #c4c4c4,
+			  -4px -4px 4px rgba(255, 255, 255, 0.6);
 			border-radius: 16px;
 			background-color: #dfe6e9;
 			width: 1216px;
@@ -1336,7 +1372,8 @@
 			position: relative;
 			flex-shrink: 0;
 			object-fit: contain;
-			filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+			filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.25))
+			  drop-shadow(-4px -4px 4px rgba(255, 255, 255, 0.75));
 		}
 		.clearDirection {
 			position: relative;
@@ -1446,7 +1483,9 @@
 		.frameWrapper20 {
 			height: 64px;
 			width: 210px;
-			box-shadow: -8px -8px 16px #fff, 8px 8px 16px #c6c6c9;
+			box-shadow:
+			  4px 4px 4px #c6c6c9,
+			  -4px -4px 4px #fff;
 			border-radius: 32px;
 			background-color: #dfe6e9;
 			overflow: hidden;
@@ -1495,7 +1534,9 @@
 			position: absolute;
 			bottom: -0.01px;
 			left: calc(50% - 720px);
-			box-shadow: -10px -10px 20px #fff inset, 8px 8px 16px #c4c4c4 inset;
+			box-shadow:
+			  inset 4px 4px 4px #c4c4c4,
+			  inset -4px -4px 4px #fff;
 			background-color: #dfe6e9;
 			width: 1440px;
 			height: 459px;
@@ -1554,7 +1595,7 @@
 			position: relative;
 			letter-spacing: -0.03em;
 			line-height: 34px;
-			text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+			text-shadow: none !important;
 		}
 		.sparklesIcon {
 			height: 23px;
@@ -1722,7 +1763,9 @@
 			position: absolute;
 			bottom: 0px;
 			left: calc(50% - 720px);
-			box-shadow: -8px -8px 16px #fff inset, 10px 10px 10px #c4c4c4 inset;
+			box-shadow:
+			  inset 4px 4px 4px #c4c4c4,
+			  inset -4px -4px 4px #fff;
 			background-color: #dfe6e9;
 			width: 1440px;
 			height: 459px;
@@ -1890,7 +1933,8 @@
 			height: 32px;
 			width: 32px;
 			position: relative;
-			filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+			filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.25))
+			  drop-shadow(-4px -4px 4px rgba(255, 255, 255, 0.75));
 		}
 		.setGoals {
 			height: 56px;
@@ -2018,7 +2062,9 @@
 			position: absolute;
 			top: calc(50% - 60px);
 			left: calc(50% - 153px);
-			box-shadow: -4px -4px 8px #fff, 4px 4px 8px #c4c4c4;
+			box-shadow:
+			  4px 4px 4px #c4c4c4,
+			  -4px -4px 4px #fff;
 			border-radius: 16px;
 			background-color: #dfe6e9;
 			width: 306px;
@@ -2028,7 +2074,9 @@
 			position: absolute;
 			top: calc(50% - 44px);
 			left: calc(50% - 137px);
-			box-shadow: -4px -4px 8px #fff, 4px 4px 8px #c4c4c4;
+			box-shadow:
+			  4px 4px 4px #c4c4c4,
+			  -4px -4px 4px #fff;
 			border-radius: 16px;
 			background-color: #dfe6e9;
 			width: 274px;
@@ -2084,14 +2132,15 @@
 		}
 		.frameItem, .frameIcon, .frameChild7, .frameChild12, .frameChild27, .frameChild28, .frameChild39, .frameChild40 {
 			background-color: #dfe6e9;
-			box-shadow: inset -4px -4px 8px #ffffff,
-				inset 4px 4px 8px rgba(196, 196, 196, 0.8);
+			box-shadow:
+			  inset 4px 4px 4px rgba(196, 196, 196, 0.8),
+			  inset -4px -4px 4px #ffffff;
 			border-radius: 28px;
 			display: flex;
 			align-items: center;
 			justify-content: center;
 			color: #2d4cc8;
-			font-family: "Segoe UI";
+			font-family: "Segoe UI", "Inter";
 			font-style: normal;
 			font-weight: 600;
 			font-size: 24px;
@@ -2111,15 +2160,17 @@
 			padding: 11px;
 			border-radius: 50%;
 			background-color: #dfe6e9;
-			box-shadow: 8px 8px 16px #c6c6c9,
-				-8px -8px 16px #ffffff;
+			box-shadow:
+			  4px 4px 4px #c6c6c9,
+			  -4px -4px 4px #ffffff;
 		}
 		.frameChild8 {
 			padding: 15px;
 			border-radius: 50%;
 			background-color: #dfe6e9;
-			box-shadow: 8px 8px 16px #c6c6c9,
-				-8px -8px 16px #ffffff;
+			box-shadow:
+			  4px 4px 4px #c6c6c9,
+			  -4px -4px 4px #ffffff;
 		}
 		.goalSettingsAndProgressTraChild, .flatLayStatisticsPresentatiIcon, .collageCustomerExperienceCoIcon, .rectangle, .handHoldingWoodenCubeWithIcon {
 			object-fit: cover;
@@ -2152,10 +2203,11 @@
 			box-sizing: border-box;
 			padding: 9px 20px;
 			background: #dfe6e9;
-			box-shadow: inset -4px -4px 8px #fff,
-					inset 4px 4px 8px rgba(196, 196, 196, 0.8);
+			box-shadow:
+			  inset 4px 4px 4px rgba(196, 196, 196, 0.8),
+			  inset -4px -4px 4px #fff;
 			color: #2d4cc8;
-			font-family: "Segoe UI";
+			font-family: "Segoe UI", "Inter";
 			font-size: 24px;
 			font-weight: 600;
 			line-height: 32px;
@@ -2166,7 +2218,7 @@
 		}
 		.setClearGoals {
 			margin: 0;
-			font-family: "Segoe UI";
+			font-family: "Segoe UI", "Inter";
 			font-size: 48px;
 			font-weight: 700;
 			text-align: center;
@@ -2174,7 +2226,7 @@
 		}
 		.neurolxpHelpsLearners {
 			margin: 0;
-			font-family: "Segoe UI";
+			font-family: "Segoe UI", "Inter";
 			font-weight: 400;
 			text-align: center;
 		}
@@ -2195,7 +2247,9 @@
 			flex: 0 0 64px;
 			border-radius: 50%;
 			background: #dfe6e9;
-			box-shadow: 8px 8px 16px #c6c6c9, -8px -8px 16px #ffffff;
+			box-shadow:
+			  4px 4px 4px #c6c6c9,
+			  -4px -4px 4px #ffffff;
 			display: grid;
 			place-items: center;
 			overflow: visible;
@@ -2233,8 +2287,9 @@
 			flex: 0 0 64px;
 			border-radius: 50%;
 			background: #dfe6e9;
-			box-shadow: 8px 8px 16px #c6c6c9,
-				-8px -8px 16px #ffffff;
+			box-shadow:
+			  4px 4px 4px #c6c6c9,
+			  -4px -4px 4px #ffffff;
 			display: flex;
 			align-items: center;
 			justify-content: center;
@@ -2251,8 +2306,9 @@
 		.frameWrapper6, .frameWrapper7, .frameWrapper8, .frameWrapper9, .frameWrapper10 {
 			border-radius: 24px;
 			background: #dfe6e9;
-			box-shadow: -8px -8px 16px #ffffff,
-				8px 8px 16px #c4c4c4;
+			box-shadow:
+			  4px 4px 4px #c4c4c4,
+			  -4px -4px 4px #ffffff;
 		}
 		.alert01Parent {
 			left: 24px;
@@ -2319,8 +2375,8 @@
 			height: 347px !important;
 			object-fit: contain !important;
 			box-shadow: none !important;
-			filter: drop-shadow(-8px -8px 10px rgba(255, 255, 255, 0.95))
-				drop-shadow(8px 10px 10px rgba(196, 196, 196, 0.75));
+			filter: drop-shadow(4px 4px 4px rgba(196, 196, 196, 0.75))
+			  drop-shadow(-4px -4px 4px rgba(255, 255, 255, 0.95));
 			z-index: 1;
 		}
 		.frameChild13 {
@@ -2332,8 +2388,9 @@
 			transform: translate(-50%, -50%);
 			clip-path: polygon(50% 0%, 91% 18%, 100% 50%, 91% 82%, 50% 100%, 9% 82%, 0% 50%, 9% 18%);
 			background: #dfe6e9;
-			box-shadow: inset -10px -10px 18px rgba(255, 255, 255, 0.95),
-				inset 10px 10px 18px rgba(196, 196, 196, 0.72);
+			box-shadow:
+			  inset 4px 4px 4px rgba(196, 196, 196, 0.72),
+			  inset -4px -4px 4px rgba(255, 255, 255, 0.95);
 			z-index: 2;
 		}
 		.frameParent31 {
@@ -2380,7 +2437,7 @@
 			width: 100%;
 			height: auto;
 			margin: 0;
-			font-family: "Segoe UI";
+			font-family: "Segoe UI", "Inter";
 			font-size: 22px;
 			font-weight: 700;
 			line-height: 30px;
@@ -2404,7 +2461,7 @@
 			width: 220px;
 			max-width: 100%;
 			margin: 0;
-			font-family: "Segoe UI";
+			font-family: "Segoe UI", "Inter";
 			font-size: 16px;
 			font-weight: 400;
 			line-height: 24px;
@@ -2475,8 +2532,8 @@
 			height: 323px !important;
 			object-fit: contain !important;
 			box-shadow: none !important;
-			filter: drop-shadow(-8px -8px 8px #ffffff)
-				drop-shadow(8px 8px 8px #c4c4c4);
+			filter: drop-shadow(4px 4px 4px #c4c4c4)
+			  drop-shadow(-4px -4px 4px #ffffff);
 			z-index: 1;
 		}
 		.frameChild13 {
@@ -2497,8 +2554,9 @@
 				9% 18%
 			);
 			background: #dfe6e9;
-			box-shadow: inset -8px -8px 16px #ffffff,
-				inset 8px 8px 16px #c4c4c4;
+			box-shadow:
+			  inset 4px 4px 4px #c4c4c4,
+			  inset -4px -4px 4px #ffffff;
 			z-index: 2;
 		}
 		.frameParent31 {
@@ -2544,13 +2602,14 @@
 			box-shadow: none !important;
 			object-fit: contain !important;
 			display: block !important;
-			filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+			filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.25))
+			  drop-shadow(-4px -4px 4px rgba(255, 255, 255, 0.75));
 		}
 		.personalizedGoals, .smartSuggestions, .planSchedule, .reviewImprove {
 			width: 211px;
 			height: 35px;
 			margin: 0;
-			font-family: "Segoe UI";
+			font-family: "Segoe UI", "Inter";
 			font-size: 22px;
 			font-weight: 700;
 			line-height: 32px;
@@ -2574,7 +2633,7 @@
 			width: 207px;
 			height: 48px;
 			margin: 0;
-			font-family: "Segoe UI";
+			font-family: "Segoe UI", "Inter";
 			font-size: 16px;
 			font-weight: 400;
 			line-height: 24px;
@@ -2647,8 +2706,8 @@
 			object-fit: contain !important;
 			object-position: center !important;
 			box-shadow: none !important;
-			filter: drop-shadow(-8px -8px 8px rgba(255,255,255,1))
-				drop-shadow(8px 8px 8px rgba(196,196,196,0.95)) !important;
+			filter: drop-shadow(4px 4px 4px rgba(196,196,196,0.95))
+			  drop-shadow(-4px -4px 4px rgba(255,255,255,1)) !important;
 			z-index: 1 !important;
 		}
 		.frameChild13 {
@@ -2670,8 +2729,9 @@
 				8.5% 18.5%
 			) !important;
 			background: #dfe6e9 !important;
-			box-shadow: inset -8px -8px 16px #ffffff,
-				inset 8px 8px 16px #c4c4c4 !important;
+			box-shadow:
+			  inset 4px 4px 4px #c4c4c4,
+			  inset -4px -4px 4px #ffffff !important;
 			z-index: 2 !important;
 		}
 		.frameParent31 {
@@ -2723,13 +2783,14 @@
 			background: transparent !important;
 			border-radius: 0 !important;
 			box-shadow: none !important;
-			filter: drop-shadow(0 4px 4px rgba(0,0,0,0.25)) !important;
+			filter: drop-shadow(4px 4px 4px rgba(0,0,0,0.25))
+			  drop-shadow(-4px -4px 4px rgba(255, 255, 255, 0.75)) !important;
 			display: block !important;
 		}
 		.personalizedGoals, .smartSuggestions, .planSchedule, .reviewImprove {
 			height: 35px !important;
 			margin: 0 !important;
-			font-family: "Segoe UI";
+			font-family: "Segoe UI", "Inter";
 			font-style: normal !important;
 			font-weight: 700 !important;
 			font-size: 22px !important;
@@ -2762,7 +2823,7 @@
 		.setAcademicAnd, .scheduleLearningAnd, .reviewRefineAnd {
 			height: 48px !important;
 			margin: 0 !important;
-			font-family: "Segoe UI";
+			font-family: "Segoe UI", "Inter";
 			font-style: normal !important;
 			font-weight: 500 !important;
 			font-size: 16px;
@@ -2817,8 +2878,9 @@
 			height: 160px;
 			border-radius: 24px;
 			background: #dfe6e9;
-			box-shadow: inset -8px -8px 16px #ffffff,
-				inset 8px 8px 16px rgba(196, 196, 196, 0.8);
+			box-shadow:
+			  inset 4px 4px 4px rgba(196, 196, 196, 0.8),
+			  inset -4px -4px 4px #ffffff;
 			overflow: hidden;
 			box-sizing: border-box;
 		}
@@ -2870,7 +2932,7 @@
 			height: auto;
 			transform: translate(-50%, -50%);
 			margin: 0;
-			font-family: "Segoe UI";
+			font-family: "Segoe UI", "Inter";
 			font-style: normal;
 			font-weight: 700;
 			font-size: 28px;
@@ -2909,7 +2971,7 @@
 		.trackMilestonesAnd {
 			width: 100%;
 			margin: 0;
-			font-family: "Segoe UI";
+			font-family: "Segoe UI", "Inter";
 			font-style: normal;
 			font-weight: 600;
 			font-size: 20px;
@@ -2930,8 +2992,9 @@
 			border: 0 !important;
 			border-radius: 24px !important;
 			background: #dfe6e9 !important;
-			box-shadow: inset -8px -8px 16px #ffffff,
-				inset 8px 8px 16px rgba(196, 196, 196, 0.8) !important;
+			box-shadow:
+			  inset 4px 4px 4px rgba(196, 196, 196, 0.8),
+			  inset -4px -4px 4px #ffffff !important;
 			overflow: hidden !important;
 			isolation: isolate;
 		}
@@ -2962,9 +3025,9 @@
 			border-radius: 0 0 100px 100px !important;
 			box-sizing: border-box !important;
 			overflow: hidden !important;
-			box-shadow: inset 0 8px 14px rgba(196, 196, 196, 0.44),
-				inset -7px -7px 12px rgba(255, 255, 255, 0.86),
-				inset 7px 7px 12px rgba(196, 196, 196, 0.26) !important;
+			box-shadow:
+			  inset 4px 4px 4px rgba(196, 196, 196, 0.44),
+			  inset -4px -4px 4px rgba(255, 255, 255, 0.86) !important;
 		}
 		.image21Parent {
 			border-bottom: 3px solid #67096e !important;
@@ -3022,7 +3085,7 @@
 			width: max-content !important;
 			max-width: 520px !important;
 			height: 28px !important;
-			font-family: "Segoe UI";
+			font-family: "Segoe UI", "Inter";
 			font-style: normal !important;
 			font-weight: 600 !important;
 			font-size: 20px !important;
@@ -3072,9 +3135,10 @@
 			box-sizing: border-box;
 			border-radius: 28px;
 			background: #dfe6e9;
-			box-shadow: inset -4px -4px 8px #ffffff,
-				inset 4px 4px 8px rgba(196, 196, 196, 0.8);
-			font-family: "Segoe UI";
+			box-shadow:
+			  inset 4px 4px 4px rgba(196, 196, 196, 0.8),
+			  inset -4px -4px 4px #ffffff;
+			font-family: "Segoe UI", "Inter";
 			font-size: 24px;
 			font-weight: 600;
 			line-height: 32px;
@@ -3086,7 +3150,7 @@
 			width: 621px;
 			height: auto;
 			margin: 0;
-			font-family: "Segoe UI";
+			font-family: "Segoe UI", "Inter";
 			font-size: 48px;
 			font-weight: 700;
 			line-height: 60px;
@@ -3097,7 +3161,7 @@
 			width: 607px;
 			height: auto;
 			margin: 0;
-			font-family: "Segoe UI";
+			font-family: "Segoe UI", "Inter";
 			font-size: 28px;
 			font-weight: 400;
 			line-height: 40px;
@@ -3125,8 +3189,9 @@
 			flex: 0 0 70px;
 			border-radius: 50%;
 			background: #dfe6e9;
-			box-shadow: 8px 8px 16px #c6c6c9,
-				-8px -8px 16px #ffffff;
+			box-shadow:
+			  4px 4px 4px #c6c6c9,
+			  -4px -4px 4px #ffffff;
 			display: grid;
 			place-items: center;
 			color: #2d4cc8;
@@ -3135,7 +3200,8 @@
 			width: 48px;
 			height: 48px;
 			display: block;
-			filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.12));
+			filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.12))
+			  drop-shadow(-4px -4px 4px rgba(255, 255, 255, 0.75));
 		}
 		.adaptiveBlue {
 			color: #2d4cc8;
@@ -3153,7 +3219,7 @@
 			width: auto;
 			height: auto;
 			margin: 0;
-			font-family: "Segoe UI";
+			font-family: "Segoe UI", "Inter";
 			font-size: 24px;
 			font-weight: 600;
 			line-height: 36px;
@@ -3170,8 +3236,9 @@
 			flex: 0 0 70px !important;
 			border-radius: 100px !important;
 			background: #dfe6e9 !important;
-			box-shadow: inset -4px -4px 8px #ffffff,
-				inset 4px 4px 8px rgba(196, 196, 196, 0.8) !important;
+			box-shadow:
+			  inset 4px 4px 4px rgba(196, 196, 196, 0.8),
+			  inset -4px -4px 4px #ffffff !important;
 			display: block !important;
 			transform: rotate(0.05deg);
 			overflow: visible !important;
@@ -3184,8 +3251,9 @@
 			top: calc(50% - 25px);
 			border-radius: 50%;
 			background: #dfe6e9;
-			box-shadow: 4px 4px 8px #c6c6c9,
-				-4px -4px 8px #ffffff;
+			box-shadow:
+			  4px 4px 4px #c6c6c9,
+			  -4px -4px 4px #ffffff;
 			display: grid;
 			place-items: center;
 			overflow: visible;
@@ -3298,13 +3366,14 @@
 			border: 0 !important;
 			border-radius: 0 !important;
 			box-shadow: none !important;
-			filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+			filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.25))
+			  drop-shadow(-4px -4px 4px rgba(255, 255, 255, 0.75));
 		}
 		.clearDirection, .careerReadiness {
 			position: relative;
 			height: 28px;
 			margin: 0;
-			font-family: "Segoe UI";
+			font-family: "Segoe UI", "Inter";
 			font-style: normal;
 			font-weight: 600;
 			font-size: 24px;
@@ -3394,13 +3463,14 @@
 			border: 0 !important;
 			border-radius: 0 !important;
 			box-shadow: none !important;
-			filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+			filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.25))
+			  drop-shadow(-4px -4px 4px rgba(255, 255, 255, 0.75));
 		}
 		.setGoals, .learn, .trackProgress, .analyzePerformance, .createPlans, .adaptImprove {
 			width: auto !important;
 			height: auto !important;
 			margin: 0;
-			font-family: "Segoe UI";
+			font-family: "Segoe UI", "Inter";
 			font-style: normal;
 			font-weight: 700;
 			font-size: 28px;
@@ -3552,13 +3622,14 @@
 			border: 0 !important;
 			border-radius: 0 !important;
 			box-shadow: none !important;
-			filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25)) !important;
+			filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.25))
+			  drop-shadow(-4px -4px 4px rgba(255, 255, 255, 0.75)) !important;
 		}
 		.frameParent29 .reviewImprove {
 			width: 220px !important;
 			height: 35px !important;
 			margin: 0 !important;
-			font-family: "Segoe UI";
+			font-family: "Segoe UI", "Inter";
 			font-size: 22px !important;
 			font-weight: 700 !important;
 			line-height: 32px !important;
@@ -3572,7 +3643,7 @@
 			max-width: 180px !important;
 			height: 48px !important;
 			margin: 0 auto !important;
-			font-family: "Segoe UI";
+			font-family: "Segoe UI", "Inter";
 			font-size: 16px !important;
 			font-weight: 500 !important;
 			line-height: 24px !important;
@@ -3703,7 +3774,7 @@
 		.goalSettingsAndProgressTra *,
 		.goalSettingsAndProgressTra *::before,
 		.goalSettingsAndProgressTra *::after {
-			font-family: "Segoe UI" !important;
+			font-family: "Segoe UI", "Inter" !important;
 			box-sizing: border-box;
 		}
 		.goalSettingsAndProgressTra b,
@@ -3798,7 +3869,7 @@
 		.setClearGoals,
 		.whyGoalSetting,
 		.onePlatform {
-			text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+			text-shadow: none !important;
 		}
 		.frameParent,
 		.signInHelpWrapper,
@@ -3814,8 +3885,8 @@
 		.image20Parent3,
 		.frameWrapper20 {
 			box-shadow:
-				-8px -8px 16px #ffffff,
-				8px 8px 16px #c4c4c4;
+			  4px 4px 4px #c4c4c4,
+			  -4px -4px 4px #ffffff;
 		}
 		.frameWrapper2,
 		.frameWrapper3,
@@ -3823,8 +3894,8 @@
 		.frameWrapper5,
 		.rectangleGroup {
 			box-shadow:
-				-4px -4px 8px #ffffff,
-				4px 4px 8px rgba(196, 196, 196, 0.8);
+			  4px 4px 4px rgba(196, 196, 196, 0.8),
+			  -4px -4px 4px #ffffff;
 		}
 		.goalSettingsAndProgressTraChild,
 		.frameItem,
@@ -3837,8 +3908,8 @@
 		.frameChild39,
 		.frameChild40 {
 			box-shadow:
-				inset -4px -4px 8px #ffffff,
-				inset 4px 4px 8px rgba(196, 196, 196, 0.8);
+			  inset 4px 4px 4px rgba(196, 196, 196, 0.8),
+			  inset -4px -4px 4px #ffffff;
 		}
 		.goalSettingsAndProgressTraInner .frameParent3,
 		.frameParent12,
@@ -3907,7 +3978,7 @@
 			display: none !important;
 		}
 		.polygonParent .b {
-			font-family: "Segoe UI" !important;
+			font-family: "Segoe UI", "Inter" !important;
 			font-weight: 700 !important;
 		}
 		
@@ -4327,7 +4398,7 @@
 			line-height: 1.18;
 			letter-spacing: 0.02em;
 			text-wrap: balance;
-			text-shadow: 0 3px 4px rgba(0, 0, 0, 0.18);
+			text-shadow: none !important;
 		}
 	.neurolxpHelpsLearners {
 			width: 100%;
@@ -4495,7 +4566,9 @@
 			width: 56px;
 			height: 56px;
 			flex-basis: 56px;
-			box-shadow: 6px 6px 12px #c6c6c9, -6px -6px 12px #ffffff;
+			box-shadow:
+			  4px 4px 4px #c6c6c9,
+			  -4px -4px 4px #ffffff;
 		}
 	.challengeIconCircle .alert01Icon {
 			width: 32px;
@@ -4757,8 +4830,9 @@
 			width: 62px;
 			height: 62px;
 			flex-basis: 62px;
-			box-shadow: 6px 6px 12px #c6c6c9,
-					-6px -6px 12px #ffffff;
+			box-shadow:
+			  4px 4px 4px #c6c6c9,
+			  -4px -4px 4px #ffffff;
 		}
 	.adaptiveCheckCircle svg {
 			width: 42px;
@@ -4780,8 +4854,9 @@
 			height: 44px;
 			left: calc(50% - 22px);
 			top: calc(50% - 22px);
-			box-shadow: 6px 6px 12px #c6c6c9,
-					-6px -6px 12px #ffffff;
+			box-shadow:
+			  4px 4px 4px #c6c6c9,
+			  -4px -4px 4px #ffffff;
 		}
 	.adaptiveCheckIcon {
 			width: 30px !important;
@@ -5954,8 +6029,9 @@
 			padding: 0 !important;
 			border-radius: 16px !important;
 			background: #dfe6e9 !important;
-			box-shadow: inset -4px -4px 8px #ffffff,
-					inset 4px 4px 8px rgba(196, 196, 196, 0.8) !important;
+			box-shadow:
+			  inset 4px 4px 4px rgba(196, 196, 196, 0.8),
+			  inset -4px -4px 4px #ffffff !important;
 			overflow: hidden !important;
 			transform: none !important;
 		}
@@ -6247,8 +6323,9 @@
 			padding: 0 !important;
 			border-radius: 16px !important;
 			background: #dfe6e9 !important;
-			box-shadow: -4px -4px 8px #ffffff,
-					4px 4px 8px rgba(196, 196, 196, 0.8) !important;
+			box-shadow:
+			  4px 4px 4px rgba(196, 196, 196, 0.8),
+			  -4px -4px 4px #ffffff !important;
 			overflow: hidden !important;
 			transform: none !important;
 		}
@@ -6551,7 +6628,7 @@
 	.setClearGoals,
 			.whyGoalSetting,
 			.onePlatform {
-				text-shadow: 0 3px 4px rgba(0, 0, 0, 0.18);
+				text-shadow: none !important;
 			}
 	.goalCombinedPolygons {
 				top: 72px;
@@ -9180,7 +9257,9 @@
 			border-radius: clamp(20px, 1.875vw, 24px) !important;
 
 			background-color: #dfe6e9 !important;
-			box-shadow: -8px -8px 16px #fff, 8px 8px 16px #c4c4c4 !important;
+			box-shadow:
+			  4px 4px 4px #c4c4c4,
+			  -4px -4px 4px #fff !important;
 
 			display: flex !important;
 			align-items: center !important;
@@ -9344,8 +9423,8 @@
 			box-sizing: border-box !important;
 			isolation: isolate;
 			box-shadow:
-				inset -8px -8px 16px rgba(255, 255, 255, 0.78),
-				inset 8px 8px 16px rgba(196, 196, 196, 0.62) !important;
+			  inset 4px 4px 4px rgba(196, 196, 196, 0.62),
+			  inset -4px -4px 4px rgba(255, 255, 255, 0.78) !important;
 		}
 
 		
@@ -9390,8 +9469,8 @@
 			pointer-events: none;
 			z-index: 20;
 			box-shadow:
-				inset -7px -7px 14px rgba(255, 255, 255, 0.72),
-				inset 7px 7px 14px rgba(190, 196, 200, 0.50);
+			  inset 4px 4px 4px rgba(190, 196, 200, 0.50),
+			  inset -4px -4px 4px rgba(255, 255, 255, 0.72);
 		}
 
 		
@@ -9404,23 +9483,23 @@
 			outline: 0 !important;
 			background-color: #dfe6e9 !important;
 			box-shadow:
-				-8px -8px 16px #fff,
-				8px 8px 16px #c6c6c9 !important;
+			  4px 4px 4px #c6c6c9,
+			  -4px -4px 4px #fff !important;
 			transition: box-shadow 0.15s ease, transform 0.15s ease !important;
 		}
 
 		.goalSettingsAndProgressTra .rectangleParent .frameWrapper20:hover {
 			box-shadow:
-				-6px -6px 12px rgba(255, 255, 255, 0.95),
-				6px 6px 12px rgba(198, 198, 201, 0.90) !important;
+			  4px 4px 4px rgba(198, 198, 201, 0.90),
+			  -4px -4px 4px rgba(255, 255, 255, 0.95) !important;
 		}
 
 		.goalSettingsAndProgressTra .rectangleParent .frameWrapper20:active,
 		.goalSettingsAndProgressTra .rectangleParent .frameWrapper20:focus-visible {
 			transform: translateY(1px);
 			box-shadow:
-				inset -6px -6px 12px rgba(255, 255, 255, 0.92),
-				inset 6px 6px 12px rgba(190, 196, 200, 0.84) !important;
+			  inset 4px 4px 4px rgba(190, 196, 200, 0.84),
+			  inset -4px -4px 4px rgba(255, 255, 255, 0.92) !important;
 		}
 	}
 
@@ -10433,6 +10512,7 @@
 		font-weight: 500 !important;
 	}
 }
+
 
 	@media screen and (max-width: 420px) {
 	.goalSettingsAndProgressTra > .frameParent11 {
@@ -11669,8 +11749,8 @@
 
 		
 		box-shadow:
-		inset -8px -8px 16px rgba(255,255,255,0.78),
-		inset 8px 8px 16px rgba(196,196,196,0.62) !important;
+		  inset 4px 4px 4px rgba(196,196,196,0.62),
+		  inset -4px -4px 4px rgba(255,255,255,0.78) !important;
 
 		isolation: isolate !important;
 	}
@@ -11813,8 +11893,8 @@
 
 		
 		box-shadow:
-		-8px -8px 16px #fff,
-		8px 8px 16px #c6c6c9 !important;
+		  4px 4px 4px #c6c6c9,
+		  -4px -4px 4px #fff !important;
 	}
 
 	.goalSettingsAndProgressTra .rectangleParent .bookADemoWrapper,
@@ -11870,8 +11950,8 @@
 		pointer-events: none !important;
 
 		box-shadow:
-		inset -7px -7px 14px rgba(255,255,255,0.72),
-		inset 7px 7px 14px rgba(190,196,200,0.50) !important;
+		  inset 4px 4px 4px rgba(190,196,200,0.50),
+		  inset -4px -4px 4px rgba(255,255,255,0.72) !important;
 
 		z-index: 20 !important;
 	}
@@ -12028,7 +12108,7 @@
 		box-sizing: border-box !important;
 		border-radius: 28px !important;
 
-		font-family: "Segoe UI" !important;
+		font-family: "Segoe UI", "Inter" !important;
 		font-size: 18px !important;
 		font-weight: 600 !important;
 		line-height: 24px !important;
@@ -12057,7 +12137,7 @@
 	.goalSettingsAndProgressTra .frameChild29 *,
 	.goalSettingsAndProgressTra .frameChild39 *,
 	.goalSettingsAndProgressTra .frameChild40 * {
-		font-family: "Segoe UI" !important;
+		font-family: "Segoe UI", "Inter" !important;
 		font-size: 18px !important;
 		font-weight: 600 !important;
 		line-height: 24px !important;
@@ -12273,7 +12353,7 @@
 	.goalSettingsAndProgressTra .frameChild39 *,
 	.goalSettingsAndProgressTra .frameChild40,
 	.goalSettingsAndProgressTra .frameChild40 * {
-		font-family: "Segoe UI" !important;
+		font-family: "Segoe UI", "Inter" !important;
 		font-size: 18px !important;
 		font-style: normal !important;
 		font-weight: 700 !important;
@@ -12331,7 +12411,7 @@
 	.goalSettingsAndProgressTra .frameChild39 *,
 	.goalSettingsAndProgressTra .frameChild40,
 	.goalSettingsAndProgressTra .frameChild40 * {
-		font-family: "Segoe UI" !important;
+		font-family: "Segoe UI", "Inter" !important;
 		font-size: 18px !important;
 		font-weight: 700 !important;
 		line-height: 24px !important;
@@ -12387,7 +12467,7 @@
 	.goalSettingsAndProgressTra .frameChild29 *,
 	.goalSettingsAndProgressTra .frameChild39 *,
 	.goalSettingsAndProgressTra .frameChild40 * {
-		font-family: "Segoe UI" !important;
+		font-family: "Segoe UI", "Inter" !important;
 		font-size: 18px !important;
 		font-style: normal !important;
 		font-weight: 600 !important;
@@ -12428,7 +12508,7 @@
 	
 	.goalSettingsAndProgressTra .frameParent83 .frameChild40,
 	.goalSettingsAndProgressTra .frameParent83 .frameChild40 * {
-		font-family: "Segoe UI" !important;
+		font-family: "Segoe UI", "Inter" !important;
 		font-size: 18px !important;
 		font-style: normal !important;
 		font-weight: 600 !important;
@@ -12508,7 +12588,7 @@
 		box-sizing: border-box !important;
 		border-radius: 28px !important;
 
-		font-family: "Segoe UI" !important;
+		font-family: "Segoe UI", "Inter" !important;
 		font-size: 18px !important;
 		font-style: normal !important;
 		font-weight: 600 !important;
@@ -12527,7 +12607,7 @@
 	}
 
 	.goalSettingsAndProgressTra .frameParent53 .frameChild28 * {
-		font-family: "Segoe UI" !important;
+		font-family: "Segoe UI", "Inter" !important;
 		font-size: 18px !important;
 		font-style: normal !important;
 		font-weight: 600 !important;
@@ -12730,8 +12810,8 @@
     border-radius: 24px !important;
     background-color: #dfe6e9 !important;
     box-shadow:
-      -8px -8px 16px #fff,
-       8px 8px 16px #c4c4c4 !important;
+      4px 4px 4px #c4c4c4,
+      -4px -4px 4px #fff !important;
 
     overflow: hidden !important;
     transform: none !important;
@@ -13185,8 +13265,8 @@
 
 .goalSettingsAndProgressTra > .rectangleParent {
   box-shadow:
-    inset -8px -8px 16px rgba(255,255,255,0.78),
-    inset 8px 8px 16px rgba(196,196,196,0.62) !important;
+    inset 4px 4px 4px rgba(196,196,196,0.62),
+    inset -4px -4px 4px rgba(255,255,255,0.78) !important;
 }
 
 
@@ -13208,9 +13288,8 @@
 @media screen and (min-width: 768px) {
   .goalSettingsAndProgressTra .rectangleParent > .frameParent57 {
     box-shadow:
-      inset 8px 0 16px rgba(196,196,196,0.42),
-      inset 0 8px 14px rgba(196,196,196,0.22),
-      inset 0 -8px 14px rgba(255,255,255,0.46) !important;
+      inset 4px 4px 4px rgba(196,196,196,0.42),
+      inset -4px -4px 4px rgba(255,255,255,0.46) !important;
   }
 
   .goalSettingsAndProgressTra .rectangleParent > .handHoldingWoodenCubeWithIcon {
@@ -13242,9 +13321,8 @@
   pointer-events: none !important;
 
   box-shadow:
-    inset 7px 0 13px rgba(196, 196, 196, 0.42),
-    inset 0 7px 13px rgba(255, 255, 255, 0.72),
-    inset 0 -7px 13px rgba(196, 196, 196, 0.26) !important;
+    inset 4px 4px 4px rgba(196, 196, 196, 0.42),
+    inset -4px -4px 4px rgba(196, 196, 196, 0.26) !important;
 
   z-index: 12 !important;
 }
@@ -13268,7 +13346,9 @@
 
 .goalSettingsAndProgressTra > .rectangleParent {
   
-  box-shadow: 0 8px 18px rgba(120, 130, 140, 0.22) !important;
+  box-shadow:
+    4px 4px 4px rgba(120, 130, 140, 0.22),
+    -4px -4px 4px #ffffff !important;
 }
 
 
@@ -13303,9 +13383,8 @@
 .goalSettingsAndProgressTra > .rectangleParent {
   
   box-shadow:
-    -8px -8px 16px rgba(255, 255, 255, 0.70),
-    -8px  0   16px rgba(185, 192, 197, 0.28),
-     0    8px 16px rgba(185, 192, 197, 0.28) !important;
+    4px 4px 4px rgba(185, 192, 197, 0.28),
+    -4px -4px 4px rgba(255, 255, 255, 0.70) !important;
 }
 
 
@@ -14027,14 +14106,14 @@ body {
 /* CTA interaction without changing the visual design */
 .goalSettingsAndProgressTra .frameWrapper20 {
   border: 0;
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", "Inter";
   cursor: pointer;
 }
 
 .goalSettingsAndProgressTra .frameWrapper20:active {
   box-shadow:
-    inset -4px -4px 8px #ffffff,
-    inset 4px 4px 8px rgba(196, 196, 196, 0.8) !important;
+    inset 4px 4px 4px rgba(196, 196, 196, 0.8),
+    inset -4px -4px 4px #ffffff !important;
 }
 
 /* =========================================================
@@ -14313,7 +14392,7 @@ body {
 
   flex: 1 1 auto !important;
 
-  font-family: "Segoe UI" !important;
+  font-family: "Segoe UI", "Inter" !important;
   font-weight: 700 !important;
   line-height: 1.25 !important;
 
@@ -14454,5 +14533,825 @@ body {
     overflow-wrap: normal !important;
     word-break: normal !important;
   }
+}
+
+/* Final font stack: Segoe UI with Inter as the only fallback. */
+.goalSettingsAndProgressTra,
+.goalSettingsAndProgressTra *,
+.goalSettingsAndProgressTra *::before,
+.goalSettingsAndProgressTra *::after {
+	font-family: "Segoe UI", "Inter" !important;
+}
+
+/* =========================================================
+   FINAL BOOK A DEMO BUTTON + PAGE-LEVEL FORM OVERLAY
+   ========================================================= */
+.goalSettingsAndProgressTra .rectangleParent .frameWrapper20 {
+	width: auto !important;
+	height: auto !important;
+	min-height: 52px !important;
+	padding: 14px 28px !important;
+	background: #dfe6e9 !important;
+	color: #2d4cc8 !important;
+	border-radius: 32px !important;
+	border: 0 !important;
+	cursor: pointer !important;
+	box-shadow:
+		-4px -4px 4px #ffffff,
+		4px 4px 4px #c6c6c9 !important;
+	transition: transform 0.2s ease, box-shadow 0.2s ease, color 0.2s ease !important;
+}
+
+.goalSettingsAndProgressTra .rectangleParent .bookADemoWrapper,
+.goalSettingsAndProgressTra .rectangleParent .bookADemo {
+	width: auto !important;
+	height: auto !important;
+	margin: 0 !important;
+	padding: 0 !important;
+	font-family: "Segoe UI", "Inter" !important;
+	font-weight: 600 !important;
+	font-size: 16px !important;
+	line-height: 24px !important;
+	text-align: center !important;
+	color: #2d4cc8 !important;
+	white-space: nowrap !important;
+}
+
+.goalSettingsAndProgressTra .rectangleParent .frameWrapper20:hover,
+.goalSettingsAndProgressTra .rectangleParent .frameWrapper20:focus-visible,
+.goalSettingsAndProgressTra .rectangleParent .frameWrapper20:active {
+	background: #dfe6e9 !important;
+	color: #1f39a3 !important;
+	transform: none !important;
+	box-shadow:
+		inset -4px -4px 4px #ffffff,
+		inset 4px 4px 4px #c6c6c9 !important;
+}
+
+.goalSettingsAndProgressTra .rectangleParent .frameWrapper20:hover .bookADemo,
+.goalSettingsAndProgressTra .rectangleParent .frameWrapper20:focus-visible .bookADemo,
+.goalSettingsAndProgressTra .rectangleParent .frameWrapper20:active .bookADemo {
+	color: #1f39a3 !important;
+}
+
+/* Lift only the modal layer; the shared form keeps its existing page styles. */
+.goalSettingsAndProgressTra:has(dialog[open][class*="demo" i]),
+.goalSettingsAndProgressTra:has([class*="bookDemoModal" i]),
+.goalSettingsAndProgressTra:has([class*="demoFormModal" i]),
+.goalSettingsAndProgressTra:has([class*="bookDemoForm" i]),
+.goalSettingsAndProgressTra:has([class*="bookDemoOverlay" i]),
+.goalSettingsAndProgressTra:has([class*="demoFormOverlay" i]) {
+	z-index: 2147483000 !important;
+	overflow: visible !important;
+	isolation: auto !important;
+}
+
+.goalSettingsAndProgressTra .rectangleParent:has(dialog[open][class*="demo" i]),
+.goalSettingsAndProgressTra .rectangleParent:has([class*="bookDemoModal" i]),
+.goalSettingsAndProgressTra .rectangleParent:has([class*="demoFormModal" i]),
+.goalSettingsAndProgressTra .rectangleParent:has([class*="bookDemoForm" i]),
+.goalSettingsAndProgressTra .rectangleParent:has([class*="bookDemoOverlay" i]),
+.goalSettingsAndProgressTra .rectangleParent:has([class*="demoFormOverlay" i]) {
+	z-index: 2147483000 !important;
+	overflow: visible !important;
+	isolation: auto !important;
+}
+
+.goalSettingsAndProgressTra dialog[open][class*="demo" i],
+.goalSettingsAndProgressTra [class*="bookDemoModal" i],
+.goalSettingsAndProgressTra [class*="demoFormModal" i],
+.goalSettingsAndProgressTra [class*="bookDemoForm" i] {
+	z-index: 2147483647 !important;
+}
+
+.goalSettingsAndProgressTra [class*="bookDemoOverlay" i],
+.goalSettingsAndProgressTra [class*="demoFormOverlay" i] {
+	z-index: 2147483646 !important;
+}
+
+.goalSettingsAndProgressTra dialog[open][class*="demo" i]::backdrop {
+	background: rgba(31, 37, 55, 0.48) !important;
+}
+
+/* Final modal stacking fix: keep every form layer above page cards and footer. */
+.goalSettingsAndProgressTra:has(form) {
+	z-index: 2147483000 !important;
+	overflow: visible !important;
+	isolation: auto !important;
+}
+
+.goalSettingsAndProgressTra .rectangleParent:has(form) {
+	z-index: 2147483000 !important;
+	overflow: visible !important;
+	isolation: auto !important;
+}
+
+.goalSettingsAndProgressTra div:has(form) {
+	z-index: 2147483600 !important;
+	isolation: auto !important;
+}
+
+.goalSettingsAndProgressTra [class*="overlay" i] {
+	position: fixed !important;
+	inset: 0 !important;
+	width: 100vw !important;
+	height: 100dvh !important;
+	min-height: 100dvh !important;
+	z-index: 2147483600 !important;
+}
+
+.goalSettingsAndProgressTra form,
+.goalSettingsAndProgressTra [class*="modal" i],
+.goalSettingsAndProgressTra [role="dialog"],
+.goalSettingsAndProgressTra [aria-modal="true"] {
+	z-index: 2147483647 !important;
+}
+
+/* Main CTA label size only; the modal submit button keeps its shared styling. */
+.goalSettingsAndProgressTra .rectangleParent .frameParent57 .frameWrapper20 .bookADemoWrapper,
+.goalSettingsAndProgressTra .rectangleParent .frameParent57 .frameWrapper20 .bookADemo {
+	font-size: 24px !important;
+	line-height: 32px !important;
+}
+
+/* ==========================================================================
+   FINAL MOBILE — KEEP TRUST & INTELLIGENCE DESIGN SAME AS DESKTOP
+   IMPORTANT:
+   Desktop is a 2 x 2 card layout.
+   Mobile keeps the SAME 2 x 2 layout and scales the cards proportionally.
+   No desktop styles are changed.
+   ========================================================================== */
+@media screen and (max-width: 767px) {
+
+  /* Section: heading first, original 2x2 card design below it. */
+  .goalSettingsAndProgressTra .frameParent75 .frameParent82 {
+    position: relative !important;
+    inset: auto !important;
+
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+    height: auto !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+
+    gap: 28px !important;
+
+    overflow: visible !important;
+    transform: none !important;
+  }
+
+  .goalSettingsAndProgressTra .frameParent75 .frameParent83 {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+
+    gap: 18px !important;
+    text-align: center !important;
+  }
+
+  /* ----------------------------------------------------------
+     DESKTOP = 2 cards per row.
+     Keep the same 2x2 design on mobile instead of stacking.
+     ---------------------------------------------------------- */
+  .goalSettingsAndProgressTra .frameParent75 .frameParent84 {
+    width: min(100%, 304px) !important;
+    max-width: 304px !important;
+    min-width: 0 !important;
+    height: auto !important;
+
+    margin: 0 auto !important;
+    padding: 0 !important;
+
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    column-gap: 14px !important;
+    row-gap: 16px !important;
+
+    align-items: start !important;
+    justify-items: center !important;
+
+    overflow: visible !important;
+    box-sizing: border-box !important;
+  }
+
+  /*
+   * frameParent85 is only a desktop row wrapper.
+   * display: contents keeps all four cards inside the 2-column mobile grid.
+   */
+  .goalSettingsAndProgressTra .frameParent75 .frameParent84 .frameParent85 {
+    display: contents !important;
+  }
+
+  /* ----------------------------------------------------------
+     CARD OUTER GEOMETRY
+     Desktop ratio = 306 x 120.
+     ---------------------------------------------------------- */
+  .goalSettingsAndProgressTra
+    .frameParent75
+    .frameParent84
+    .rectangleGroup {
+    position: relative !important;
+    inset: auto !important;
+
+    width: 100% !important;
+    max-width: 145px !important;
+    min-width: 0 !important;
+
+    height: auto !important;
+    min-height: 0 !important;
+    max-height: none !important;
+    aspect-ratio: 306 / 120 !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    border-radius: 8px !important;
+    background: transparent !important;
+
+    box-shadow:
+      2px 2px 2px rgba(196, 196, 196, 0.8),
+      -2px -2px 2px #ffffff !important;
+
+    overflow: visible !important;
+    box-sizing: border-box !important;
+    transform: none !important;
+  }
+
+  /* Original desktop outer layer, scaled proportionally. */
+  .goalSettingsAndProgressTra
+    .frameParent75
+    .frameParent84
+    .rectangleDiv {
+    position: absolute !important;
+    inset: 0 !important;
+
+    width: 100% !important;
+    height: 100% !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    border-radius: 8px !important;
+    background-color: #dfe6e9 !important;
+
+    box-shadow:
+      2px 2px 2px #c4c4c4,
+      -2px -2px 2px #ffffff !important;
+
+    box-sizing: border-box !important;
+    z-index: 1 !important;
+  }
+
+  /*
+   * Desktop inner card = 274 x 88 inside 306 x 120.
+   * 16px desktop inset becomes 5.23% horizontally and 13.33% vertically.
+   */
+  .goalSettingsAndProgressTra
+    .frameParent75
+    .frameParent84
+    .frameChild41 {
+    position: absolute !important;
+
+    top: 13.3333% !important;
+    right: 5.2288% !important;
+    bottom: 13.3333% !important;
+    left: 5.2288% !important;
+
+    width: auto !important;
+    height: auto !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    border-radius: 8px !important;
+    background-color: #dfe6e9 !important;
+
+    box-shadow:
+      2px 2px 2px #c4c4c4,
+      -2px -2px 2px #ffffff !important;
+
+    box-sizing: border-box !important;
+    z-index: 2 !important;
+  }
+
+  /* ----------------------------------------------------------
+     ICON + TEXT
+     Same desktop placement, proportionally scaled for mobile.
+     ---------------------------------------------------------- */
+  .goalSettingsAndProgressTra
+    .frameParent75
+    .frameParent84
+    .rectangleGroup > .aiBookParent,
+  .goalSettingsAndProgressTra
+    .frameParent75
+    .frameParent84
+    .rectangleGroup > .analyticsUpParent,
+  .goalSettingsAndProgressTra
+    .frameParent75
+    .frameParent84
+    .rectangleGroup > :has(.aiMl),
+  .goalSettingsAndProgressTra
+    .frameParent75
+    .frameParent84
+    .rectangleGroup > :has(.learningAnalytics),
+  .goalSettingsAndProgressTra
+    .frameParent75
+    .frameParent84
+    .rectangleGroup > :has(.privacyFirst),
+  .goalSettingsAndProgressTra
+    .frameParent75
+    .frameParent84
+    .rectangleGroup > :has(.realTimeInsights) {
+    position: absolute !important;
+
+    top: 50% !important;
+    left: 10.4575% !important;
+    right: 6% !important;
+    bottom: auto !important;
+
+    width: auto !important;
+    max-width: none !important;
+    min-width: 0 !important;
+    height: auto !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+
+    gap: 7px !important;
+
+    transform: translateY(-50%) !important;
+    overflow: visible !important;
+    z-index: 3 !important;
+  }
+
+  .goalSettingsAndProgressTra
+    .frameParent75
+    .frameParent84
+    .aiBookIcon,
+  .goalSettingsAndProgressTra
+    .frameParent75
+    .frameParent84
+    .analyticsUpIcon,
+  .goalSettingsAndProgressTra
+    .frameParent75
+    .frameParent84
+    .shieldTickIcon,
+  .goalSettingsAndProgressTra
+    .frameParent75
+    .frameParent84
+    .sparklesIcon {
+    position: static !important;
+
+    width: 15px !important;
+    height: 15px !important;
+    min-width: 15px !important;
+    max-width: 15px !important;
+
+    flex: 0 0 15px !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    object-fit: contain !important;
+    transform: none !important;
+  }
+
+  .goalSettingsAndProgressTra
+    .frameParent75
+    .frameParent84
+    .aiMl,
+  .goalSettingsAndProgressTra
+    .frameParent75
+    .frameParent84
+    .learningAnalytics,
+  .goalSettingsAndProgressTra
+    .frameParent75
+    .frameParent84
+    .privacyFirst,
+  .goalSettingsAndProgressTra
+    .frameParent75
+    .frameParent84
+    .realTimeInsights {
+    position: static !important;
+    inset: auto !important;
+
+    width: auto !important;
+    max-width: calc(100% - 22px) !important;
+    min-width: 0 !important;
+    height: auto !important;
+    min-height: 0 !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    flex: 1 1 auto !important;
+
+    font-size: 10.5px !important;
+    line-height: 14px !important;
+    font-weight: 700 !important;
+    letter-spacing: 0.02em !important;
+
+    text-align: left !important;
+    white-space: normal !important;
+
+    overflow: visible !important;
+    transform: none !important;
+  }
+
+  /* Preserve the card colours exactly as the desktop section. */
+  .goalSettingsAndProgressTra
+    .frameParent75
+    .frameParent84
+    .aiMl {
+    color: #2d4cc8 !important;
+  }
+
+  .goalSettingsAndProgressTra
+    .frameParent75
+    .frameParent84
+    .learningAnalytics {
+    color: #907507 !important;
+  }
+
+  .goalSettingsAndProgressTra
+    .frameParent75
+    .frameParent84
+    .privacyFirst {
+    color: #2d4cc8 !important;
+  }
+
+  .goalSettingsAndProgressTra
+    .frameParent75
+    .frameParent84
+    .realTimeInsights {
+    color: #67096e !important;
+  }
+}
+
+/* Slightly more room on wider phones while keeping the same 2x2 design. */
+@media screen and (min-width: 390px) and (max-width: 767px) {
+  .goalSettingsAndProgressTra .frameParent75 .frameParent84 {
+    width: min(100%, 350px) !important;
+    max-width: 350px !important;
+    column-gap: 18px !important;
+    row-gap: 18px !important;
+  }
+
+  .goalSettingsAndProgressTra
+    .frameParent75
+    .frameParent84
+    .rectangleGroup {
+    max-width: 166px !important;
+  }
+
+  .goalSettingsAndProgressTra
+    .frameParent75
+    .frameParent84
+    .aiBookIcon,
+  .goalSettingsAndProgressTra
+    .frameParent75
+    .frameParent84
+    .analyticsUpIcon,
+  .goalSettingsAndProgressTra
+    .frameParent75
+    .frameParent84
+    .shieldTickIcon,
+  .goalSettingsAndProgressTra
+    .frameParent75
+    .frameParent84
+    .sparklesIcon {
+    width: 17px !important;
+    height: 17px !important;
+    min-width: 17px !important;
+    max-width: 17px !important;
+    flex-basis: 17px !important;
+  }
+
+  .goalSettingsAndProgressTra
+    .frameParent75
+    .frameParent84
+    .aiMl,
+  .goalSettingsAndProgressTra
+    .frameParent75
+    .frameParent84
+    .learningAnalytics,
+  .goalSettingsAndProgressTra
+    .frameParent75
+    .frameParent84
+    .privacyFirst,
+  .goalSettingsAndProgressTra
+    .frameParent75
+    .frameParent84
+    .realTimeInsights {
+    font-size: 12px !important;
+    line-height: 16px !important;
+  }
+}
+
+/* ==========================================================================
+   FINAL — TRUST & INTELLIGENCE TEXT COLOUR ONLY
+   All four card labels use the same normal text colour.
+   Icon colours are intentionally untouched.
+   ========================================================================== */
+.goalSettingsAndProgressTra
+  .frameParent75
+  .frameParent84
+  .aiMl,
+.goalSettingsAndProgressTra
+  .frameParent75
+  .frameParent84
+  .learningAnalytics,
+.goalSettingsAndProgressTra
+  .frameParent75
+  .frameParent84
+  .privacyFirst,
+.goalSettingsAndProgressTra
+  .frameParent75
+  .frameParent84
+  .realTimeInsights {
+  color: #31344b !important;
+}
+
+/* ==========================================================================
+   FINAL BOOK A DEMO FONT SIZE ONLY
+   Preserve all previous design/layout changes.
+   Desktop/tablet = 24px
+   Mobile = 16px
+   ========================================================================== */
+
+@media screen and (min-width: 768px) {
+  .goalSettingsAndProgressTra
+    .rectangleParent
+    .frameParent57
+    .frameWrapper20
+    .bookADemoWrapper,
+  .goalSettingsAndProgressTra
+    .rectangleParent
+    .frameParent57
+    .frameWrapper20
+    .bookADemo {
+    font-size: 24px !important;
+    line-height: 32px !important;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .goalSettingsAndProgressTra
+    .rectangleParent
+    .frameParent57
+    .frameWrapper20
+    .bookADemoWrapper,
+  .goalSettingsAndProgressTra
+    .rectangleParent
+    .frameParent57
+    .frameWrapper20
+    .bookADemo {
+    font-size: 16px !important;
+    line-height: 24px !important;
+  }
+}
+
+/* ==========================================================================
+   FINAL MOBILE — REDUCE PROGRESS CARD WIDTH ONLY
+   Preserve every previous fix, including Book a Demo 24px/16px sizing.
+   ========================================================================== */
+@media screen and (max-width: 767px) {
+  .goalSettingsAndProgressTra
+    > .polygonParent
+    .frameParent4 {
+    align-items: center !important;
+  }
+
+  .goalSettingsAndProgressTra
+    > .polygonParent
+    .frameWrapper2,
+  .goalSettingsAndProgressTra
+    > .polygonParent
+    .frameWrapper3,
+  .goalSettingsAndProgressTra
+    > .polygonParent
+    .frameWrapper4,
+  .goalSettingsAndProgressTra
+    > .polygonParent
+    .frameWrapper5 {
+    width: 280px !important;
+    max-width: calc(100vw - 56px) !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    align-self: center !important;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .goalSettingsAndProgressTra
+    > .polygonParent
+    .frameWrapper2,
+  .goalSettingsAndProgressTra
+    > .polygonParent
+    .frameWrapper3,
+  .goalSettingsAndProgressTra
+    > .polygonParent
+    .frameWrapper4,
+  .goalSettingsAndProgressTra
+    > .polygonParent
+    .frameWrapper5 {
+    width: 270px !important;
+    max-width: calc(100vw - 64px) !important;
+  }
+}
+
+/* ==========================================================================
+   FINAL MOBILE ONLY — REDUCE GAP WITHOUT SECTION OVERLAP
+   Keep a smaller top gap, but preserve normal flow below the polygon section.
+   ========================================================================== */
+@media screen and (max-width: 767px) {
+  .goalSettingsAndProgressTra > .frameParent25 {
+    transform: translateY(-20px) !important;
+    margin-bottom: 0 !important;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .goalSettingsAndProgressTra > .frameParent25 {
+    transform: translateY(-20px) !important;
+    margin-bottom: 0 !important;
+  }
+}
+
+/* ==========================================================================
+   FINAL MOBILE ONLY — TEAM PLANS TEXT IN TWO BALANCED LINES
+   Change only the Team Plans polygon. Preserve every previous fix.
+   ========================================================================== */
+@media screen and (max-width: 767px) {
+
+  /* Team Plans = polygonGroup inside the second polygon row (frameParent37). */
+  .goalSettingsAndProgressTra
+    .frameParent25
+    .frameParent37
+    .polygonGroup
+    .personalizedGoals {
+    width: 86px !important;
+    max-width: 86px !important;
+    height: auto !important;
+    min-height: 0 !important;
+
+    margin: 0 auto !important;
+    padding: 0 !important;
+
+    font-size: 17px !important;
+    line-height: 20px !important;
+
+    text-align: center !important;
+    white-space: normal !important;
+    overflow: visible !important;
+    overflow-wrap: normal !important;
+    word-break: normal !important;
+  }
+
+  /* Keep Team Plans description safely below the 2-line title. */
+  .goalSettingsAndProgressTra
+    .frameParent25
+    .frameParent37
+    .polygonGroup
+    .setAcademicAnd {
+    width: 160px !important;
+    max-width: 160px !important;
+    height: auto !important;
+    min-height: 0 !important;
+
+    margin: 0 auto !important;
+    padding: 0 !important;
+
+    font-size: 13px !important;
+    line-height: 18px !important;
+
+    text-align: center !important;
+    white-space: normal !important;
+    overflow: visible !important;
+  }
+
+  /* Natural-height content stack so the new 2-line title cannot collide. */
+  .goalSettingsAndProgressTra
+    .frameParent25
+    .frameParent37
+    .polygonGroup
+    .frameParent31,
+  .goalSettingsAndProgressTra
+    .frameParent25
+    .frameParent37
+    .polygonGroup
+    .frameParent32 {
+    height: auto !important;
+    min-height: 0 !important;
+    gap: 6px !important;
+    overflow: visible !important;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .goalSettingsAndProgressTra
+    .frameParent25
+    .frameParent37
+    .polygonGroup
+    .personalizedGoals {
+    width: 80px !important;
+    max-width: 80px !important;
+    font-size: 16px !important;
+    line-height: 19px !important;
+  }
+
+  .goalSettingsAndProgressTra
+    .frameParent25
+    .frameParent37
+    .polygonGroup
+    .setAcademicAnd {
+    width: 150px !important;
+    max-width: 150px !important;
+    font-size: 12.5px !important;
+    line-height: 17px !important;
+  }
+}
+
+/* ==========================================================================
+   FINAL FULL-PAGE TYPOGRAPHY — EXCLUDING HERO SECTION
+   Main section headings: 36px
+   Section subheadings / pill labels: 24px
+
+   HERO IS INTENTIONALLY EXCLUDED:
+   - .setClearGoals
+   - .frameItem
+   ========================================================================== */
+
+/* Main section headings — all sections after hero */
+.goalSettingsAndProgressTra .turningLearningGoalsContainer,
+.goalSettingsAndProgressTra .oneConnectedLearning,
+.goalSettingsAndProgressTra .personalized,
+.goalSettingsAndProgressTra .whyGoalSetting,
+.goalSettingsAndProgressTra .seeYourProgress,
+.goalSettingsAndProgressTra .progressWithPurpose {
+  font-size: 36px !important;
+  line-height: 44px !important;
+}
+
+/* Section subheadings / pill labels — hero .frameItem excluded */
+.goalSettingsAndProgressTra .frameIcon,
+.goalSettingsAndProgressTra .frameChild7,
+.goalSettingsAndProgressTra .frameChild12,
+.goalSettingsAndProgressTra .frameChild27,
+.goalSettingsAndProgressTra .frameChild28,
+.goalSettingsAndProgressTra .frameChild29,
+.goalSettingsAndProgressTra .frameChild39,
+.goalSettingsAndProgressTra .frameChild40 {
+  font-size: 24px !important;
+  line-height: 32px !important;
+}
+
+/* Keep the same typography on tablet and mobile too. */
+@media screen and (max-width: 1023px) {
+  .goalSettingsAndProgressTra .turningLearningGoalsContainer,
+  .goalSettingsAndProgressTra .oneConnectedLearning,
+  .goalSettingsAndProgressTra .personalized,
+  .goalSettingsAndProgressTra .whyGoalSetting,
+  .goalSettingsAndProgressTra .seeYourProgress,
+  .goalSettingsAndProgressTra .progressWithPurpose {
+    font-size: 36px !important;
+    line-height: 44px !important;
+  }
+
+  .goalSettingsAndProgressTra .frameIcon,
+  .goalSettingsAndProgressTra .frameChild7,
+  .goalSettingsAndProgressTra .frameChild12,
+  .goalSettingsAndProgressTra .frameChild27,
+  .goalSettingsAndProgressTra .frameChild28,
+  .goalSettingsAndProgressTra .frameChild29,
+  .goalSettingsAndProgressTra .frameChild39,
+  .goalSettingsAndProgressTra .frameChild40 {
+    font-size: 24px !important;
+    line-height: 32px !important;
+  }
+}
+
+/* Protect hero typography from any broad full-page rules. */
+.goalSettingsAndProgressTra .goalSettingsAndProgressTraInner .setClearGoals,
+.goalSettingsAndProgressTra .goalSettingsAndProgressTraInner .frameItem {
+  /* Keep existing hero typography from the original stylesheet. */
 }
 

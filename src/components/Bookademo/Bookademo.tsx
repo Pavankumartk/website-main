@@ -1,6 +1,7 @@
 "use client";
 
 import styles from "./Bookademo.module.css";
+import { createPortal } from "react-dom";
 import { useEffect, useId, useLayoutEffect, useRef, useState } from "react";
 import type { ReactNode, RefObject } from "react";
 import { allCountries } from "country-telephone-data";
@@ -3318,13 +3319,16 @@ export function BookDemoTrigger({
         {children}
       </button>
 
-      {isOpen && (
-        <BookDemoModal
-          onClose={() =>
-            setIsOpen(false)
-          }
-        />
-      )}
+      {isOpen &&
+        typeof document !== "undefined" &&
+        createPortal(
+          <BookDemoModal
+            onClose={() =>
+              setIsOpen(false)
+            }
+          />,
+          document.body
+        )}
     </>
   );
 }

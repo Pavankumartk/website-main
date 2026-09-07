@@ -5619,3 +5619,14 @@ svg
   }
 }
 
+/* ==========================================================================
+   FINAL — BOOK A DEMO MODAL LAYERING ONLY
+   Keeps the modal above every page section when rendered through document.body.
+   No form design, spacing, field styling, or responsive layout is changed.
+   ========================================================================== */
+.book-demo-modal-overlay {
+  position: fixed !important;
+  inset: 0 !important;
+  z-index: 99999 !important;
+}
+

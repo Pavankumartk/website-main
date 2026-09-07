@@ -2677,6 +2677,11 @@
    ========================================================= */
 @media screen and (min-width: 1280px) {
 
+  /* Match the 64px desktop footer gap used by the reference page. */
+  .neurolxp2103rs8cs3msLite {
+    height: 2398.21px;
+  }
+
   .frameParent6 {
     top: 770px;
     gap: 30px;
@@ -2716,5 +2721,34 @@
     height: 571px;
     object-fit: contain;
     object-position: center bottom;
+  }
+}
+
+/* =========================================================
+   MOBILE FINAL WOMAN IMAGE
+   Keep the desktop overlap unchanged. On phones, place the
+   woman after the final section and outside its framed card.
+   ========================================================= */
+@media screen and (max-width: 600px) {
+  .rectangleParent {
+    margin-bottom: 0 !important;
+  }
+
+  .smilingWomanWithBooksMortaIcon {
+    display: block !important;
+    position: relative !important;
+    top: auto !important;
+    right: auto !important;
+    bottom: auto !important;
+    /* The source PNG has transparent space on its left side. */
+    left: 50% !important;
+    transform: translateX(-78%) !important;
+    width: min(100%, 430px) !important;
+    max-width: 430px !important;
+    height: auto !important;
+    margin: 0 !important;
+    object-fit: contain !important;
+    object-position: center bottom !important;
+    z-index: 3;
   }
 }

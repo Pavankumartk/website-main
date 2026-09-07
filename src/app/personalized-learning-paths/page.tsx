@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState, type ReactElement, type CSSProperties } from "react";
+import { useRouter } from "next/navigation";
 import Image from "next/image";
 import Header from "../../components/Header/header";
 import Footer from "../../components/Footer/footer";
@@ -409,6 +410,7 @@ function BenefitsSection() {
 
 export default function PersonalizedLearningPathsPage() {
   const [openStep, setOpenStep] = useState<string | null>(null);
+  const router = useRouter();
 
   useEffect(() => {
     document.title = "Personalized Learning Paths | NeuroLXP";
@@ -476,19 +478,19 @@ export default function PersonalizedLearningPathsPage() {
         <div className={styles["plp-personalization-grid"]}>
           <div className={`${styles["plp-personalization-card"]} ${styles["plp-personalization-card-pink"]}`}>
             <h3 className={`${styles["plp-personalization-title"]} ${styles["plp-title-pink"]}`}>Learning Insights</h3>
-            <p className={styles["plp-personalization-desc"]}>Understand learner needs.</p>
+            <p className={styles["plp-personalization-desc"]}>Understand learner needs</p>
           </div>
           <div className={`${styles["plp-personalization-card"]} ${styles["plp-personalization-card-blue"]}`}>
             <h3 className={`${styles["plp-personalization-title"]} ${styles["plp-title-blue"]}`}>Personalized Paths</h3>
-            <p className={styles["plp-personalization-desc"]}>Personalize learning paths.</p>
+            <p className={styles["plp-personalization-desc"]}>Personalize learning paths</p>
           </div>
           <div className={`${styles["plp-personalization-card"]} ${styles["plp-personalization-card-purple"]}`}>
             <h3 className={`${styles["plp-personalization-title"]} ${styles["plp-title-purple"]}`}>Adaptive Learning</h3>
-            <p className={styles["plp-personalization-desc"]}>Deliver relevant content.</p>
+            <p className={styles["plp-personalization-desc"]}>Deliver relevant content</p>
           </div>
           <div className={`${styles["plp-personalization-card"]} ${styles["plp-personalization-card-olive"]}`}>
             <h3 className={`${styles["plp-personalization-title"]} ${styles["plp-title-olive"]}`}>Learning Analytics</h3>
-            <p className={styles["plp-personalization-desc"]}>Improve outcomes with data.</p>
+            <p className={styles["plp-personalization-desc"]}>Improve outcomes with data</p>
           </div>
         </div>
       </section>
@@ -509,7 +511,7 @@ export default function PersonalizedLearningPathsPage() {
       </section>
 
       <section className={styles["plp-how"]}>
-        <span className={styles["plp-hero-pill"]}>How It Works</span>
+        <span className={styles["plp-hero-pill"]}>How it Works</span>
 
         <h2 className={styles["plp-section-heading"]}>Learning Style Analysis Module</h2>
 
@@ -552,7 +554,7 @@ export default function PersonalizedLearningPathsPage() {
             <p className={styles["plp-cta-subtext"]}>Transform fragmented learning into a structured journey that builds knowledge, skills, and career-ready capabilities.</p>
           </div>
 
-          <button type="button" className={styles["plp-cta-button"]} onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>
+          <button type="button" className={styles["plp-cta-button"]} onClick={() => router.push("/HomePage")}>
             Explore Learning Paths
           </button>
         </div>

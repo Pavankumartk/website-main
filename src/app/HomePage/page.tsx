@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Header from "../../components/Header/header";
 import Footer from "../../components/Footer/footer";
-import { flushSync } from "react-dom";
+import { createPortal, flushSync } from "react-dom";
 import { useEffect, useRef, useState, type JSX, type CSSProperties, type RefObject } from "react";
 import dynamic from "next/dynamic";
 import { GraduationCapOutlineIcon, LightbulbIcon, CursorClickIcon, TargetIcon, UsersIcon, SmartphoneIcon, GraduationCapIcon, SettingsGearIcon, LibraryIcon, BuildingIcon, ContentWritingIcon, BrainIcon, AnalyticsUpIcon, UniversityIcon, HandshakeIcon, LandmarkIcon, UserIcon, PlayIcon, CloseIcon, HeadphonesIcon } from "@/components/icons/Icons";
@@ -786,12 +786,16 @@ function WhyChooseNeuroLXP() {
               <span className={styles["why-choose-heading-accent"]}>Digital Learning</span>
             </h2>
             <p className={styles["why-choose-subtext"]}>
-  NeuroLXP<sup className={styles["why-choose-tm"]}>TM</sup> empowers learners with
-  <br />
- personalized learning, future
-  <br />
-  skills, and meaningful outcomes.
-</p>
+              <span className={styles["why-choose-subtext-line"]}>
+                NeuroLXP<sup className={styles["why-choose-tm"]}>TM</sup> empowers learners with
+              </span>
+              <span className={styles["why-choose-subtext-line"]}>
+                personalized learning, future
+              </span>
+              <span className={styles["why-choose-subtext-line"]}>
+                skills, and meaningful outcomes.
+              </span>
+            </p>
           </div>
           <div className={styles["why-choose-grid"]}>
             {whyChooseCards.map((card) => (
@@ -850,7 +854,7 @@ const learningModuleCards = [
   },
 ];
 
-const CARD_CLONE_COUNT = 2;
+const CARD_CLONE_COUNT = learningModuleCards.length;
 
 const extendedLearningModuleCards = [...learningModuleCards.slice(-CARD_CLONE_COUNT), ...learningModuleCards, ...learningModuleCards.slice(0, CARD_CLONE_COUNT)];
 
@@ -891,35 +895,221 @@ function LearningModuleCard({ title, description, image, isFeatured, isTextExpan
 
 function LearningModules() {
   const realCount = learningModuleCards.length;
-  const [trackIndex, setTrackIndex] = useState(CARD_CLONE_COUNT + 2);
-  const [settledActiveId, setSettledActiveId] = useState(extendedLearningModuleCards[CARD_CLONE_COUNT + 2].id);
+  const firstRealIndex = CARD_CLONE_COUNT;
+  const lastRealIndex = CARD_CLONE_COUNT + realCount - 1;
+  const initialIndex = CARD_CLONE_COUNT + 2;
+
+  const [trackIndex, setTrackIndex] = useState(initialIndex);
+  const [settledActiveId, setSettledActiveId] = useState(
+    extendedLearningModuleCards[initialIndex].id
+  );
   const [transitionsEnabled, setTransitionsEnabled] = useState(true);
   const [isHovered, setIsHovered] = useState(false);
+
   const viewportRef = useRef<HTMLDivElement | null>(null);
   const trackRef = useRef<HTMLDivElement | null>(null);
   const cardRefs = useRef<(HTMLDivElement | null)[]>([]);
   const [translateX, setTranslateX] = useState(0);
+
   const isAnimatingRef = useRef(false);
+  const mobileScrollTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const isMobileResetRef = useRef(false);
 
-  const activeId = extendedLearningModuleCards[trackIndex].id;
+  const activeId =
+    extendedLearningModuleCards[trackIndex]?.id ?? learningModuleCards[0].id;
 
-  const goToPreviousOnly = () => {
-    if (isAnimatingRef.current) return;
-    isAnimatingRef.current = true;
-    setTrackIndex((current) => current - 1);
+  const isMobileViewport = () =>
+    typeof window !== "undefined" &&
+    window.matchMedia("(max-width: 767px)").matches;
+
+  const getCenteredScrollLeft = (index: number) => {
+    const viewport = viewportRef.current;
+    const card = cardRefs.current[index];
+
+    if (!viewport || !card) return null;
+
+    return (
+      card.offsetLeft +
+      card.offsetWidth / 2 -
+      viewport.clientWidth / 2
+    );
   };
 
-  const goToNextOnly = () => {
-    if (isAnimatingRef.current) return;
-    isAnimatingRef.current = true;
-    setTrackIndex((current) => current + 1);
+  const scrollMobileToIndex = (
+    index: number,
+    behavior: ScrollBehavior = "smooth"
+  ) => {
+    const viewport = viewportRef.current;
+    const targetLeft = getCenteredScrollLeft(index);
+
+    if (!viewport || targetLeft === null) return;
+
+    viewport.scrollTo({
+      left: Math.max(0, targetLeft),
+      behavior,
+    });
   };
+
+  const normalizeMobileIndex = (index: number) => {
+    if (index < firstRealIndex) return index + realCount;
+    if (index > lastRealIndex) return index - realCount;
+    return index;
+  };
+
+  const findNearestMobileIndex = () => {
+    const viewport = viewportRef.current;
+    if (!viewport) return trackIndex;
+
+    const viewportCenter = viewport.scrollLeft + viewport.clientWidth / 2;
+
+    let nearestIndex = trackIndex;
+    let nearestDistance = Number.POSITIVE_INFINITY;
+
+    cardRefs.current.forEach((card, index) => {
+      if (!card) return;
+
+      const cardCenter = card.offsetLeft + card.offsetWidth / 2;
+      const distance = Math.abs(cardCenter - viewportCenter);
+
+      if (distance < nearestDistance) {
+        nearestDistance = distance;
+        nearestIndex = index;
+      }
+    });
+
+    return nearestIndex;
+  };
+
+  const settleMobileCarousel = () => {
+    if (!isMobileViewport() || isMobileResetRef.current) return;
+
+    const viewport = viewportRef.current;
+    if (!viewport) return;
+
+    const nearestIndex = findNearestMobileIndex();
+    const normalizedIndex = normalizeMobileIndex(nearestIndex);
+
+    if (normalizedIndex !== nearestIndex) {
+      const firstRealCard = cardRefs.current[firstRealIndex];
+      const matchingRightClone = cardRefs.current[firstRealIndex + realCount];
+
+      if (firstRealCard && matchingRightClone) {
+        const firstRealCenter =
+          firstRealCard.offsetLeft + firstRealCard.offsetWidth / 2;
+        const rightCloneCenter =
+          matchingRightClone.offsetLeft + matchingRightClone.offsetWidth / 2;
+
+        /* One complete real-card cycle, including all inter-card gaps. */
+        const cycleWidth = rightCloneCenter - firstRealCenter;
+
+        if (cycleWidth > 0) {
+          isMobileResetRef.current = true;
+
+          /* Preserve the exact relative finger-scroll position.
+             Left clone -> add one cycle.
+             Right clone -> subtract one cycle.
+             Because the cards are identical, this reset is visually invisible
+             and never animates in the opposite direction. */
+          if (nearestIndex < firstRealIndex) {
+            viewport.scrollLeft += cycleWidth;
+          } else if (nearestIndex > lastRealIndex) {
+            viewport.scrollLeft -= cycleWidth;
+          }
+
+          requestAnimationFrame(() => {
+            isMobileResetRef.current = false;
+          });
+        }
+      }
+    }
+
+    setTrackIndex(normalizedIndex);
+    setSettledActiveId(extendedLearningModuleCards[normalizedIndex].id);
+    isAnimatingRef.current = false;
+  };
+
+  const handleMobileScroll = () => {
+    if (!isMobileViewport() || isMobileResetRef.current) return;
+
+    if (mobileScrollTimerRef.current) {
+      clearTimeout(mobileScrollTimerRef.current);
+    }
+
+    /* Wait until finger/momentum scrolling has stopped, then snap and normalize. */
+    mobileScrollTimerRef.current = setTimeout(settleMobileCarousel, 140);
+  };
+
+  const handleMobileTouchStart = () => {
+    if (!isMobileViewport()) return;
+
+    if (mobileScrollTimerRef.current) {
+      clearTimeout(mobileScrollTimerRef.current);
+    }
+
+    isAnimatingRef.current = false;
+    setIsHovered(true);
+  };
+
+  const handleMobileTouchEnd = () => {
+    if (!isMobileViewport()) return;
+
+    if (mobileScrollTimerRef.current) {
+      clearTimeout(mobileScrollTimerRef.current);
+    }
+
+    mobileScrollTimerRef.current = setTimeout(() => {
+      settleMobileCarousel();
+      setIsHovered(false);
+    }, 180);
+  };
+
+  const moveByOneCard = (direction: -1 | 1) => {
+    if (isAnimatingRef.current) return;
+
+    if (isMobileViewport()) {
+      const viewport = viewportRef.current;
+      if (!viewport) return;
+
+      const currentIndex = findNearestMobileIndex();
+      const targetIndex = currentIndex + direction;
+
+      /* Full clone sets exist at both ends, so there is always one complete
+         next/previous card available for a circular step. */
+      if (
+        targetIndex < 0 ||
+        targetIndex >= extendedLearningModuleCards.length
+      ) {
+        return;
+      }
+
+      isAnimatingRef.current = true;
+      scrollMobileToIndex(targetIndex, "smooth");
+
+      if (mobileScrollTimerRef.current) {
+        clearTimeout(mobileScrollTimerRef.current);
+      }
+
+      mobileScrollTimerRef.current = setTimeout(
+        settleMobileCarousel,
+        520
+      );
+      return;
+    }
+
+    isAnimatingRef.current = true;
+    setTrackIndex((current) => current + direction);
+  };
+
+  const goToPreviousOnly = () => moveByOneCard(-1);
+  const goToNextOnly = () => moveByOneCard(1);
 
   useEffect(() => {
     if (isHovered) return;
+
     const timer = setInterval(() => {
       goToNextOnly();
     }, 4000);
+
     return () => clearInterval(timer);
   }, [isHovered, trackIndex]);
 
@@ -927,7 +1117,33 @@ function LearningModules() {
     const recalculate = () => {
       const viewport = viewportRef.current;
       const activeCard = cardRefs.current[trackIndex];
+
       if (!viewport || !activeCard) return;
+
+      if (isMobileViewport()) {
+        /* Mobile uses scrollLeft only. Never animate this state-sync/reset. */
+        const targetLeft = getCenteredScrollLeft(trackIndex);
+
+        if (
+          targetLeft !== null &&
+          Math.abs(viewport.scrollLeft - targetLeft) > 1
+        ) {
+          isMobileResetRef.current = true;
+
+          viewport.scrollTo({
+            left: Math.max(0, targetLeft),
+            behavior: "auto",
+          });
+
+          requestAnimationFrame(() => {
+            isMobileResetRef.current = false;
+          });
+        }
+
+        setTranslateX(0);
+        return;
+      }
+
       const viewportCenter = viewport.offsetWidth / 2;
       const cardCenter = activeCard.offsetLeft + activeCard.offsetWidth / 2;
       setTranslateX(viewportCenter - cardCenter);
@@ -936,19 +1152,26 @@ function LearningModules() {
     recalculate();
 
     const viewport = viewportRef.current;
+
     const handleCardResize = (event: TransitionEvent) => {
-      if (event.propertyName === "width" || event.propertyName === "height") {
+      if (isMobileViewport()) return;
+
+      if (
+        event.propertyName === "width" ||
+        event.propertyName === "height"
+      ) {
         recalculate();
         setSettledActiveId(activeId);
       }
     };
 
     viewport?.addEventListener("transitionend", handleCardResize);
+    window.addEventListener("resize", recalculate);
+
     const fallbackTimer = setTimeout(() => {
       recalculate();
       setSettledActiveId(activeId);
     }, 550);
-    window.addEventListener("resize", recalculate);
 
     return () => {
       window.removeEventListener("resize", recalculate);
@@ -957,7 +1180,11 @@ function LearningModules() {
     };
   }, [trackIndex, activeId]);
 
+  /* Desktop-only transform-loop reset. Mobile circularity is handled by
+     scrollLeft + clone normalization in settleMobileCarousel(). */
   useEffect(() => {
+    if (isMobileViewport()) return;
+
     const track = trackRef.current;
     if (!track) return;
 
@@ -968,16 +1195,22 @@ function LearningModules() {
       const isBeforeStart = trackIndex < CARD_CLONE_COUNT;
 
       if (isPastEnd || isBeforeStart) {
-        const nextIndex = isPastEnd ? trackIndex - realCount : trackIndex + realCount;
+        const nextIndex = isPastEnd
+          ? trackIndex - realCount
+          : trackIndex + realCount;
+
         const viewport = viewportRef.current;
         const nextCard = cardRefs.current[nextIndex];
 
         flushSync(() => {
           setTransitionsEnabled(false);
           setTrackIndex(nextIndex);
+
           if (viewport && nextCard) {
             const viewportCenter = viewport.offsetWidth / 2;
-            const cardCenter = nextCard.offsetLeft + nextCard.offsetWidth / 2;
+            const cardCenter =
+              nextCard.offsetLeft + nextCard.offsetWidth / 2;
+
             setTranslateX(viewportCenter - cardCenter);
           }
         });
@@ -987,17 +1220,32 @@ function LearningModules() {
     };
 
     track.addEventListener("transitionend", handleTrackTransitionEnd);
-    return () => track.removeEventListener("transitionend", handleTrackTransitionEnd);
+
+    return () =>
+      track.removeEventListener(
+        "transitionend",
+        handleTrackTransitionEnd
+      );
   }, [trackIndex, realCount]);
 
   useEffect(() => {
     if (transitionsEnabled) return;
+
     const raf = requestAnimationFrame(() => {
       setTransitionsEnabled(true);
       isAnimatingRef.current = false;
     });
+
     return () => cancelAnimationFrame(raf);
   }, [transitionsEnabled]);
+
+  useEffect(() => {
+    return () => {
+      if (mobileScrollTimerRef.current) {
+        clearTimeout(mobileScrollTimerRef.current);
+      }
+    };
+  }, []);
 
   return (
     <section className={styles["learning-modules-section"]} aria-labelledby="learning-modules-heading" onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)} onFocus={() => setIsHovered(true)} onBlur={() => setIsHovered(false)}>
@@ -1017,8 +1265,18 @@ function LearningModules() {
         {`Now showing: ${extendedLearningModuleCards[trackIndex].title}`}
       </span>
 
-      <div className={styles["learning-modules-viewport"]} ref={viewportRef}>
-        <div className={styles["learning-modules-track"]} ref={trackRef} style={{ transform: `translateX(${translateX}px)`, transition: transitionsEnabled ? undefined : "none" }}>
+      <div
+        className={styles["learning-modules-viewport"]}
+        ref={viewportRef}
+        onScroll={handleMobileScroll}
+        onTouchStart={handleMobileTouchStart}
+        onTouchEnd={handleMobileTouchEnd}
+        onTouchCancel={handleMobileTouchEnd}
+      >
+        <div className={styles["learning-modules-track"]} ref={trackRef} style={{
+          transform: `translateX(${translateX}px)`,
+          transition: transitionsEnabled ? undefined : "none",
+        }}>
           {extendedLearningModuleCards.map((card, index) => {
             const isClone = index < CARD_CLONE_COUNT || index >= CARD_CLONE_COUNT + realCount;
             return (
@@ -1043,6 +1301,13 @@ function LearningModules() {
           <ArrowRightIcon className={styles["learning-modules-nav-icon"]} />
         </button>
       </div>
+
+      {/* Keep the round Talk to Expert trigger in the empty area between
+          Learning Modules and Testimonials. */}
+      <div
+        id={TALK_TO_EXPERT_SLOT_ID}
+        className={styles["learning-modules-expert-button-slot"]}
+      />
     </section>
   );
 }
@@ -1107,7 +1372,7 @@ const testimonials: TestimonialData[] = [
   },
 ];
 
-const TESTIMONIAL_CLONE_COUNT = 2;
+const TESTIMONIAL_CLONE_COUNT = testimonials.length;
 
 const extendedTestimonials = [...testimonials.slice(-TESTIMONIAL_CLONE_COUNT), ...testimonials, ...testimonials.slice(0, TESTIMONIAL_CLONE_COUNT)];
 
@@ -1150,32 +1415,202 @@ function TestimonialCard({ id, name, role, quote, image, accentColor, isClone }:
 
 function Testimonials() {
   const realCount = testimonials.length;
-  const [trackIndex, setTrackIndex] = useState(TESTIMONIAL_CLONE_COUNT + 1);
+  const firstRealIndex = TESTIMONIAL_CLONE_COUNT;
+  const lastRealIndex = TESTIMONIAL_CLONE_COUNT + realCount - 1;
+  const initialIndex = TESTIMONIAL_CLONE_COUNT + 1;
+
+  const [trackIndex, setTrackIndex] = useState(initialIndex);
   const [transitionsEnabled, setTransitionsEnabled] = useState(true);
   const [isHovered, setIsHovered] = useState(false);
+
   const viewportRef = useRef<HTMLDivElement | null>(null);
   const trackRef = useRef<HTMLDivElement | null>(null);
   const cardRefs = useRef<(HTMLDivElement | null)[]>([]);
   const [translateX, setTranslateX] = useState(0);
+
   const isAnimatingRef = useRef(false);
+  const mobileScrollTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const isMobileResetRef = useRef(false);
 
-  const goToPreviousOnly = () => {
-    if (isAnimatingRef.current) return;
-    isAnimatingRef.current = true;
-    setTrackIndex((current) => current - 1);
+  const isMobileViewport = () =>
+    typeof window !== "undefined" &&
+    window.matchMedia("(max-width: 767px)").matches;
+
+  const getCenteredScrollLeft = (index: number) => {
+    const viewport = viewportRef.current;
+    const card = cardRefs.current[index];
+
+    if (!viewport || !card) return null;
+
+    return (
+      card.offsetLeft +
+      card.offsetWidth / 2 -
+      viewport.clientWidth / 2
+    );
   };
 
-  const goToNextOnly = () => {
-    if (isAnimatingRef.current) return;
-    isAnimatingRef.current = true;
-    setTrackIndex((current) => current + 1);
+  const scrollMobileToIndex = (
+    index: number,
+    behavior: ScrollBehavior = "smooth"
+  ) => {
+    const viewport = viewportRef.current;
+    const targetLeft = getCenteredScrollLeft(index);
+
+    if (!viewport || targetLeft === null) return;
+
+    viewport.scrollTo({
+      left: Math.max(0, targetLeft),
+      behavior,
+    });
   };
+
+  const normalizeMobileIndex = (index: number) => {
+    if (index < firstRealIndex) return index + realCount;
+    if (index > lastRealIndex) return index - realCount;
+    return index;
+  };
+
+  const findNearestMobileIndex = () => {
+    const viewport = viewportRef.current;
+    if (!viewport) return trackIndex;
+
+    const viewportCenter = viewport.scrollLeft + viewport.clientWidth / 2;
+
+    let nearestIndex = trackIndex;
+    let nearestDistance = Number.POSITIVE_INFINITY;
+
+    cardRefs.current.forEach((card, index) => {
+      if (!card) return;
+
+      const cardCenter = card.offsetLeft + card.offsetWidth / 2;
+      const distance = Math.abs(cardCenter - viewportCenter);
+
+      if (distance < nearestDistance) {
+        nearestDistance = distance;
+        nearestIndex = index;
+      }
+    });
+
+    return nearestIndex;
+  };
+
+  const settleMobileCarousel = () => {
+    if (!isMobileViewport() || isMobileResetRef.current) return;
+
+    const viewport = viewportRef.current;
+    if (!viewport) return;
+
+    const nearestIndex = findNearestMobileIndex();
+    const normalizedIndex = normalizeMobileIndex(nearestIndex);
+
+    if (normalizedIndex !== nearestIndex) {
+      const firstRealCard = cardRefs.current[firstRealIndex];
+      const matchingRightClone = cardRefs.current[firstRealIndex + realCount];
+
+      if (firstRealCard && matchingRightClone) {
+        const firstRealCenter =
+          firstRealCard.offsetLeft + firstRealCard.offsetWidth / 2;
+        const rightCloneCenter =
+          matchingRightClone.offsetLeft + matchingRightClone.offsetWidth / 2;
+
+        const cycleWidth = rightCloneCenter - firstRealCenter;
+
+        if (cycleWidth > 0) {
+          isMobileResetRef.current = true;
+
+          if (nearestIndex < firstRealIndex) {
+            viewport.scrollLeft += cycleWidth;
+          } else if (nearestIndex > lastRealIndex) {
+            viewport.scrollLeft -= cycleWidth;
+          }
+
+          requestAnimationFrame(() => {
+            isMobileResetRef.current = false;
+          });
+        }
+      }
+    }
+
+    setTrackIndex(normalizedIndex);
+    isAnimatingRef.current = false;
+  };
+
+  const handleMobileScroll = () => {
+    if (!isMobileViewport() || isMobileResetRef.current) return;
+
+    if (mobileScrollTimerRef.current) {
+      clearTimeout(mobileScrollTimerRef.current);
+    }
+
+    mobileScrollTimerRef.current = setTimeout(
+      settleMobileCarousel,
+      140
+    );
+  };
+
+  const handleMobileTouchStart = () => {
+    if (!isMobileViewport()) return;
+
+    if (mobileScrollTimerRef.current) {
+      clearTimeout(mobileScrollTimerRef.current);
+    }
+
+    isAnimatingRef.current = false;
+    setIsHovered(true);
+  };
+
+  const handleMobileTouchEnd = () => {
+    if (!isMobileViewport()) return;
+
+    if (mobileScrollTimerRef.current) {
+      clearTimeout(mobileScrollTimerRef.current);
+    }
+
+    mobileScrollTimerRef.current = setTimeout(() => {
+      settleMobileCarousel();
+      setIsHovered(false);
+    }, 180);
+  };
+
+  const moveByOneCard = (direction: -1 | 1) => {
+    if (isAnimatingRef.current) return;
+
+    if (isMobileViewport()) {
+      const currentIndex = findNearestMobileIndex();
+      const targetIndex = currentIndex + direction;
+
+      if (targetIndex < 0 || targetIndex >= extendedTestimonials.length) {
+        return;
+      }
+
+      isAnimatingRef.current = true;
+      scrollMobileToIndex(targetIndex, "smooth");
+
+      if (mobileScrollTimerRef.current) {
+        clearTimeout(mobileScrollTimerRef.current);
+      }
+
+      mobileScrollTimerRef.current = setTimeout(
+        settleMobileCarousel,
+        520
+      );
+      return;
+    }
+
+    isAnimatingRef.current = true;
+    setTrackIndex((current) => current + direction);
+  };
+
+  const goToPreviousOnly = () => moveByOneCard(-1);
+  const goToNextOnly = () => moveByOneCard(1);
 
   useEffect(() => {
     if (isHovered) return;
+
     const timer = setInterval(() => {
       goToNextOnly();
     }, 4000);
+
     return () => clearInterval(timer);
   }, [isHovered, trackIndex]);
 
@@ -1183,37 +1618,73 @@ function Testimonials() {
     const recalculate = () => {
       const viewport = viewportRef.current;
       const activeCard = cardRefs.current[trackIndex];
+
       if (!viewport || !activeCard) return;
+
+      if (isMobileViewport()) {
+        const targetLeft = getCenteredScrollLeft(trackIndex);
+
+        if (
+          targetLeft !== null &&
+          Math.abs(viewport.scrollLeft - targetLeft) > 1
+        ) {
+          isMobileResetRef.current = true;
+
+          viewport.scrollTo({
+            left: Math.max(0, targetLeft),
+            behavior: "auto",
+          });
+
+          requestAnimationFrame(() => {
+            isMobileResetRef.current = false;
+          });
+        }
+
+        setTranslateX(0);
+        return;
+      }
+
       const viewportCenter = viewport.offsetWidth / 2;
       const cardCenter = activeCard.offsetLeft + activeCard.offsetWidth / 2;
       setTranslateX(viewportCenter - cardCenter);
     };
+
     recalculate();
     window.addEventListener("resize", recalculate);
+
     return () => window.removeEventListener("resize", recalculate);
   }, [trackIndex]);
 
   useEffect(() => {
+    if (isMobileViewport()) return;
+
     const track = trackRef.current;
     if (!track) return;
 
     const handleTrackTransitionEnd = (event: TransitionEvent) => {
       if (event.propertyName !== "transform") return;
 
-      const isPastEnd = trackIndex >= TESTIMONIAL_CLONE_COUNT + realCount;
+      const isPastEnd =
+        trackIndex >= TESTIMONIAL_CLONE_COUNT + realCount;
       const isBeforeStart = trackIndex < TESTIMONIAL_CLONE_COUNT;
 
       if (isPastEnd || isBeforeStart) {
-        const nextIndex = isPastEnd ? trackIndex - realCount : trackIndex + realCount;
+        const nextIndex = isPastEnd
+          ? trackIndex - realCount
+          : trackIndex + realCount;
+
         const viewport = viewportRef.current;
         const nextCard = cardRefs.current[nextIndex];
 
         flushSync(() => {
           setTransitionsEnabled(false);
           setTrackIndex(nextIndex);
+
           if (viewport && nextCard) {
             const viewportCenter = viewport.offsetWidth / 2;
-            const cardCenter = nextCard.offsetLeft + nextCard.offsetWidth / 2;
+            const cardCenter =
+              nextCard.offsetLeft + nextCard.offsetWidth / 2;
+
             setTranslateX(viewportCenter - cardCenter);
           }
         });
@@ -1223,17 +1694,32 @@ function Testimonials() {
     };
 
     track.addEventListener("transitionend", handleTrackTransitionEnd);
-    return () => track.removeEventListener("transitionend", handleTrackTransitionEnd);
+
+    return () =>
+      track.removeEventListener(
+        "transitionend",
+        handleTrackTransitionEnd
+      );
   }, [trackIndex, realCount]);
 
   useEffect(() => {
     if (transitionsEnabled) return;
+
     const raf = requestAnimationFrame(() => {
       setTransitionsEnabled(true);
       isAnimatingRef.current = false;
     });
+
     return () => cancelAnimationFrame(raf);
   }, [transitionsEnabled]);
+
+  useEffect(() => {
+    return () => {
+      if (mobileScrollTimerRef.current) {
+        clearTimeout(mobileScrollTimerRef.current);
+      }
+    };
+  }, []);
 
   return (
     <section className={styles["testimonials-section"]} aria-labelledby="testimonials-heading" onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)} onFocus={() => setIsHovered(true)} onBlur={() => setIsHovered(false)}>
@@ -1251,8 +1737,18 @@ function Testimonials() {
         {`Now showing testimonial from ${extendedTestimonials[trackIndex].name}`}
       </span>
 
-      <div className={styles["testimonials-viewport"]} ref={viewportRef}>
-        <div className={styles["testimonials-track"]} ref={trackRef} style={{ transform: `translateX(${translateX}px)`, transition: transitionsEnabled ? undefined : "none" }}>
+      <div
+        className={styles["testimonials-viewport"]}
+        ref={viewportRef}
+        onScroll={handleMobileScroll}
+        onTouchStart={handleMobileTouchStart}
+        onTouchEnd={handleMobileTouchEnd}
+        onTouchCancel={handleMobileTouchEnd}
+      >
+        <div className={styles["testimonials-track"]} ref={trackRef} style={{
+          transform: `translateX(${translateX}px)`,
+          transition: transitionsEnabled ? undefined : "none",
+        }}>
           {extendedTestimonials.map((testimonial, index) => {
             const isClone = index < TESTIMONIAL_CLONE_COUNT || index >= TESTIMONIAL_CLONE_COUNT + realCount;
             return (
@@ -1446,10 +1942,6 @@ function GetInTouch({ onContactClick, contactButtonRef }: { onContactClick: () =
           <div className={styles["get-in-touch-photo-wrapper"]}>
             <Image src="/images/homepage.webp" alt="Smiling businesswoman with glasses" fill sizes="(max-width: 480px) 280px, (max-width: 1024px) 380px, 677px" className={styles["get-in-touch-photo"]} />
           </div>
-          <div
-            id={TALK_TO_EXPERT_SLOT_ID}
-            className={styles["get-in-touch-expert-button-slot"]}
-          />
         </div>
       </div>
     </section>
@@ -1458,56 +1950,63 @@ function GetInTouch({ onContactClick, contactButtonRef }: { onContactClick: () =
 
 function ContactUsModal({ onClose }: { onClose: () => void }) {
   const dialogRef = useRef<HTMLDivElement | null>(null);
+  const closeButtonRef = useRef<HTMLButtonElement | null>(null);
 
   useEffect(() => {
-    dialogRef.current?.focus();
+    const focusTimer = window.requestAnimationFrame(() => {
+      closeButtonRef.current?.focus();
+    });
+
     const handleKeyDown = (event: KeyboardEvent) => {
       if (event.key === "Escape") onClose();
     };
+
     document.addEventListener("keydown", handleKeyDown);
+
     const previousOverflow = document.body.style.overflow;
     document.body.style.overflow = "hidden";
     document.body.classList.add("modal-open");
+
     return () => {
+      window.cancelAnimationFrame(focusTimer);
       document.removeEventListener("keydown", handleKeyDown);
       document.body.style.overflow = previousOverflow;
       document.body.classList.remove("modal-open");
     };
   }, [onClose]);
 
-  return (
+  const modal = (
     <div
-      className={styles["book-demo-modal-overlay"]}
-      onMouseDown={(event) => {
+      className={styles["contact-modal-overlay"]}
+      onPointerDown={(event) => {
         if (event.target === event.currentTarget) onClose();
-      }}>
-      <div className={styles["book-demo-modal-dialog"]} role="dialog" aria-modal="true" aria-label="Contact us" ref={dialogRef} tabIndex={-1}>
-        <button type="button" className={styles["book-demo-modal-close"]} onClick={onClose} aria-label="Close contact us form">
-          <CloseIcon className={styles["book-demo-modal-close-icon"]} />
-        </button>
-        <div
-          className={styles["book-demo-modal-scroll"]}
-          onClickCapture={(event) => {
-            const target = event.target;
-            if (!(target instanceof Element)) return;
-
-            const clickedButton = target.closest("button");
-            if (!clickedButton) return;
-
-            const classNames = Array.from(clickedButton.classList);
-            const ariaLabel = clickedButton.getAttribute("aria-label")?.toLowerCase() ?? "";
-            const isContactCloseButton =
-              classNames.some((className) => className.includes("contactCloseButton")) ||
-              ariaLabel.includes("close contact");
-
-            if (isContactCloseButton) onClose();
-          }}
+      }}
+    >
+      <div
+        className={styles["contact-modal-dialog"]}
+        role="dialog"
+        aria-modal="true"
+        aria-label="Contact us"
+        ref={dialogRef}
+      >
+        <button
+          ref={closeButtonRef}
+          type="button"
+          className={styles["contact-modal-close"]}
+          onClick={onClose}
+          aria-label="Close contact us form"
         >
+          <CloseIcon className={styles["contact-modal-close-icon"]} />
+        </button>
+
+        <div className={styles["contact-modal-scroll"]}>
           <ContactUs />
         </div>
       </div>
     </div>
   );
+
+  return createPortal(modal, document.body);
 }
 
 export default function HomePage() {

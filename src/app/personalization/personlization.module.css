@@ -11,7 +11,7 @@
   justify-self: center;
   	font-size: 48px;
   	color: #31344b;
-  	font-family: 'Segoe UI';
+  	font-family: 'Segoe UI', 'Inter';
     zoom: 0.89;
 }
 .personalizationChild {
@@ -100,7 +100,7 @@
   	height: 80px;
   	overflow: hidden;
   	font-size: 16px;
-  	font-family: 'Segoe UI';
+  	font-family: 'Segoe UI', 'Inter';
 }
 .frameInner {
   	position: absolute;
@@ -179,7 +179,7 @@
   	box-sizing: border-box;
   	text-align: center;
   	color: #2d4cc8;
-  	font-family: 'Segoe UI';
+  	font-family: 'Segoe UI', 'Inter';
 }
 .signInHelp {
   	width: 97px;
@@ -201,7 +201,7 @@
   	gap: 8px;
   	font-size: 18px;
   	color: #2f3547;
-  	font-family: 'Segoe UI';
+  	font-family: 'Segoe UI', 'Inter';
     transform: translateY(15);
     
 }
@@ -1367,7 +1367,7 @@
   	display: flex;
   	align-items: center;
   	gap: 221px;
-  	font-family: 'Segoe UI';
+  	font-family: 'Segoe UI', 'Inter';
 }
 .frameParent46 {
   	height: 356px;
@@ -1376,7 +1376,7 @@
   	flex-direction: column;
   	align-items: flex-start;
   	gap: 32px;
-  	font-family: 'Segoe UI';
+  	font-family: 'Segoe UI', 'Inter';
  
 }
 .frameChild23 {
@@ -1389,7 +1389,7 @@
 }
 
 .frameParent46 > :nth-child(2) {
-	font-family: 'Segoe UI';
+	font-family: 'Segoe UI', 'Inter';
 	font-style: normal;
 	font-weight: 700;
 	font-size: 48px;
@@ -1406,7 +1406,7 @@
   	color: #2f3547;
   	display: inline-block;
   	flex-shrink: 0;
-  	font-family: 'Segoe UI';
+  	font-family: 'Segoe UI', 'Inter';
   	font-style: normal;
   	font-weight: 400;
 }
@@ -1419,7 +1419,7 @@
   	text-align: center;
   	font-size: 24px;
   	color: #2d4cc8;
-  	font-family: 'Segoe UI';
+  	font-family: 'Segoe UI', 'Inter';
 }
 .frameChild24 {
   	height: 70.1px;
@@ -1447,7 +1447,7 @@
   	line-height: 36px;
   	display: inline-block;
   	flex-shrink: 0;
-  	font-family: 'Segoe UI';
+  	font-family: 'Segoe UI', 'Inter';
   	font-style: normal;
   	font-weight: 700;
   	font-size: 24px;
@@ -1463,7 +1463,7 @@
   	text-align: left;
   	display: inline-block;
   	flex-shrink: 0;
-  	font-family: 'Segoe UI';
+  	font-family: 'Segoe UI', 'Inter';
   	font-style: normal;
   	font-weight: 400;
 }
@@ -1489,7 +1489,7 @@
   	line-height: 36px;
   	display: inline-block;
   	flex-shrink: 0;
-  	font-family: 'Segoe UI';
+  	font-family: 'Segoe UI', 'Inter';
   	font-style: normal;
   	font-weight: 700;
   	font-size: 24px;
@@ -1505,7 +1505,7 @@
   	text-align: left;
   	display: inline-block;
   	flex-shrink: 0;
-  	font-family: 'Segoe UI';
+  	font-family: 'Segoe UI', 'Inter';
   	font-style: normal;
   	font-weight: 400;
 }
@@ -1524,7 +1524,7 @@
   	line-height: 36px;
   	display: inline-block;
   	flex-shrink: 0;
-  	font-family: 'Segoe UI';
+  	font-family: 'Segoe UI', 'Inter';
   	font-style: normal;
   	font-weight: 700;
   	font-size: 24px;
@@ -1540,7 +1540,7 @@
   	text-align: left;
   	display: inline-block;
   	flex-shrink: 0;
-  	font-family: 'Segoe UI';
+  	font-family: 'Segoe UI', 'Inter';
   	font-style: normal;
   	font-weight: 400;
 }
@@ -1555,7 +1555,7 @@
   	text-align: left;
   	display: inline-block;
   	flex-shrink: 0;
-  	font-family: 'Segoe UI';
+  	font-family: 'Segoe UI', 'Inter';
   	font-style: normal;
   	font-weight: 400;
 }
@@ -1665,8 +1665,11 @@
     padding: 16px 32px;
     box-sizing: border-box;
     cursor: pointer;
+    color: #2d4cc8;
+    transition: box-shadow 0.2s ease;
 }
 
+.frameWrapper18:hover,
 .frameWrapper18:active {
     box-shadow: inset -4px -4px 4px #fff,
                 inset 4px 4px 4px #c6c6c9;
@@ -2174,7 +2177,7 @@
   height: auto;
   margin: 56px 0 52px;
   color: #31344b;
-  font-family: 'Segoe UI';
+  font-family: 'Segoe UI', 'Inter';
   font-size: 52px;
   font-weight: 700;
   line-height: 1.08;
@@ -2187,7 +2190,7 @@
   height: auto;
   margin: 0;
   color: #31344b;
-  font-family: 'Segoe UI';
+  font-family: 'Segoe UI', 'Inter';
   font-size: 28px;
   font-weight: 400;
   line-height: 1.48;
@@ -2220,7 +2223,7 @@
 
 .actionCardTitle {
   margin: 0;
-  font-family: 'Segoe UI';
+  font-family: 'Segoe UI', 'Inter';
   font-size: 24px;
   font-weight: 700;
   line-height: 36px;
@@ -2239,7 +2242,7 @@
   background: #dfe6e9;
   box-shadow: -4px -4px 4px #fff, 4px 4px 4px #c4c4c4;
   color: #111;
-  font-family: 'Segoe UI';
+  font-family: 'Segoe UI', 'Inter';
   font-size: 20px;
   font-weight: 400;
   line-height: 28px;
@@ -2900,7 +2903,7 @@
   grid-template-columns: minmax(420px, 520px) minmax(560px, 1fr);
   align-items: center;
   column-gap: 150px;
-  font-family: 'Segoe UI';
+  font-family: 'Segoe UI', 'Inter';
 }
 
 .modernLearningIntro {
@@ -3672,7 +3675,7 @@
   overflow: hidden;
   z-index: 1;
   text-align: center;
-  font-family: 'Segoe UI';
+  font-family: 'Segoe UI', 'Inter';
 }
 
 .personalizationHeroFrame {
@@ -3749,6 +3752,11 @@
   cursor: pointer;
 }
 
+.personalizationHeroButton {
+  transition: box-shadow 0.2s ease;
+}
+
+.personalizationHeroButton:hover,
 .personalizationHeroButton:active {
   box-shadow: inset -4px -4px 4px #ffffff,
               inset 4px 4px 4px rgba(196, 196, 196, 0.8);
@@ -5821,7 +5829,7 @@ body {
 }	
 .frameParent47,
 .frameParent47 * {
-  font-family: 'Segoe UI';
+  font-family: 'Segoe UI', 'Inter';
 }
 
 .frameParent47 .structuredLearning,
@@ -5854,7 +5862,7 @@ body {
   border-radius: 8px;
   background: #ffffff;
   color: #1f2937;
-  font-family: 'Segoe UI';
+  font-family: 'Segoe UI', 'Inter';
   font-size: 16px;
   font-weight: 600;
   line-height: 24px;

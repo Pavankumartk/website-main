@@ -385,10 +385,14 @@ a:focus-visible {
   letter-spacing: 0.02em;
   color: #2d4cc8;
   margin-bottom: 48px;
+  transition: box-shadow 0.2s ease;
 }
 
-.odyssey-demo-button:hover {
-  box-shadow: -4px -4px 4px #ffffff, 4px 4px 4px #c6c6c9;
+.odyssey-demo-button:hover,
+.odyssey-demo-button:active {
+  box-shadow:
+    inset -4px -4px 4px #ffffff,
+    inset 4px 4px 4px rgba(196, 196, 196, 0.8);
 }
 
 .odyssey-grid {
@@ -885,8 +889,8 @@ a:focus-visible {
 
 .platform-hex-description {
   font-family: "Segoe UI", "Inter", sans-serif;
-  font-weight: 400;
-  font-size: 14px;
+  font-weight: 500;
+  font-size: 16px;
   line-height: 24px;
   letter-spacing: -0.03em;
   color: #31344b;
@@ -1148,7 +1152,7 @@ a:focus-visible {
   background: #dfe6e9;
   box-shadow: inset -4px -4px 4px #ffffff, inset 4px 4px 4px rgba(196, 196, 196, 0.8);
   border-radius: 28px;
-  font-family: "Segoe UI", "Inter", sans-serif;
+  font-family: "Segoe UI", "Inter";
   font-weight: 600;
   font-size: 24px;
   letter-spacing: 0.03em;
@@ -1212,6 +1216,11 @@ a:focus-visible {
   line-height: 1.4;
   max-width: 100%;
   overflow-wrap: break-word;
+}
+
+.why-choose-subtext-line {
+  display: block;
+  white-space: nowrap;
 }
 
 .platform-overview-heading sup {
@@ -1346,6 +1355,7 @@ a:focus-visible {
 }
 
 .learning-modules-section {
+  position: relative;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -2547,11 +2557,6 @@ a:focus-visible {
   overflow-wrap: break-word;
 }
 
-.book-demo-modal-dialog--contact .book-demo-modal-close {
-  top: 24px;
-  right: 24px;
-}
-
 :global(.book-demo-button) {
   position: fixed !important;
   right: 24px !important;
@@ -2697,13 +2702,14 @@ a:focus-visible {
   }
   .platform-hex-grid {
     width: 100%;
-    grid-template-columns: repeat(2, minmax(0, 285px));
+    grid-template-columns: repeat(2, minmax(0, 300px));
     column-gap: 24px;
     row-gap: 20px;
   }
+  .platform-hex-card { max-width: 300px; }
   .platform-hex-label { font-size: 20px; line-height: 1.2; }
-  .platform-hex-description { font-size: 14px; line-height: 1.35; }
-  .platform-hex-text { gap: 4px; }
+  .platform-hex-description { font-size: 16px; line-height: 1.45; font-weight: 500; }
+  .platform-hex-text { max-width: 252px; gap: 4px; }
 
   .platform-purpose-bottom { justify-content: center; }
   .purpose-pill { flex: 0 1 400px; }
@@ -2787,13 +2793,13 @@ a:focus-visible {
   }
   .platform-overview-content {
     /* Keep the overview cards wide enough for every description to stay inside. */
-    --overview-card-width: clamp(257px, 20vw, 285px);
+    --overview-card-width: clamp(270px, 21vw, 305px);
     --overview-column-gap: clamp(24px, 2.2vw, 32px);
     /* Match the left edge of the centred, two-column card grid. */
     --overview-content-inset: max(0px, calc(50% - var(--overview-card-width) - var(--overview-column-gap) / 2));
     --overview-icon-size: clamp(36px, 6svh, 46px);
     width: 100%;
-    max-width: 650px;
+    max-width: 680px;
   }
   .platform-overview-tag {
     margin-bottom: 16px;
@@ -2833,7 +2839,8 @@ a:focus-visible {
   }
   .platform-hex-description {
     width: 100%;
-    line-height: 1.35;
+    font-size: 16px;
+    line-height: 1.45;
     overflow-wrap: anywhere;
   }
 
@@ -3129,6 +3136,26 @@ a:focus-visible {
     text-align: center;
     overflow-wrap: break-word;
   }
+
+  /* Keep this paragraph at the normal mobile paragraph size (16px), but
+     allow it to use the phone's inner padding so the requested copy stays
+     on exactly three lines instead of wrapping the first line again. */
+  .why-choose-text {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .why-choose-subtext {
+    width: calc(100vw - 16px);
+    max-width: calc(100vw - 16px);
+    margin-inline: auto;
+    letter-spacing: 0.01em;
+  }
+
+  .why-choose-subtext-line {
+    display: block;
+    white-space: nowrap;
+  }
   .smv-badge, .platform-overview-tag, .meet-neurolxp-badge,
   .why-choose-badge, .learning-modules-badge, .testimonials-badge,
   .get-in-touch-badge {
@@ -3160,18 +3187,20 @@ a:focus-visible {
 
   .platform-overview-inner { gap: 24px; }
   .platform-overview-media { width: 100%; max-width: 360px; }
-  .platform-overview-content { max-width: 594px; }
+  .platform-overview-content { max-width: 640px; }
   .platform-overview-tag { margin-bottom: 16px; }
   .platform-overview-heading { margin-bottom: 24px; }
   .platform-overview-play-button { width: 64px; height: 64px; }
   .platform-overview-play-icon { width: 30px; height: 30px; }
   .platform-hex-grid {
-    grid-template-columns: repeat(2, minmax(0, 257px));
+    grid-template-columns: repeat(2, minmax(0, 280px));
+    justify-content: center;
     justify-items: center;
     gap: 24px;
   }
-  .platform-hex-card { max-width: 257px; aspect-ratio: 257 / 170; }
-  .platform-hex-text { max-width: 205px; }
+  .platform-hex-card { max-width: 280px; aspect-ratio: 280 / 170; }
+  .platform-hex-text { max-width: 235px; }
+  .platform-hex-description { font-size: 16px; line-height: 1.45; font-weight: 500; }
 
   .platform-purpose-section { gap: 24px; }
   .platform-purpose-pillars { gap: 24px; }
@@ -3441,9 +3470,11 @@ a:focus-visible {
   .odyssey-card-title { font-size: 20px; }
   .odyssey-card-description { font-size: 16px; }
   .platform-overview-media { max-width: 280px; }
-  .platform-hex-grid { grid-template-columns: minmax(0, 257px); }
+  .platform-hex-grid { grid-template-columns: minmax(0, 280px); }
+  .platform-hex-card { max-width: 280px; aspect-ratio: 280 / 170; }
+  .platform-hex-text { max-width: 235px; }
   .platform-hex-label { font-size: 20px; }
-  .platform-hex-description { font-size: 14px; }
+  .platform-hex-description { font-size: 16px; line-height: 1.45; font-weight: 500; }
   .platform-overview-play-button { width: 56px; height: 56px; }
   .purpose-pill { max-width: 320px; padding: 16px; }
   .why-choose-grid { grid-template-columns: minmax(0, 280px); gap: 40px; }
@@ -3559,18 +3590,23 @@ a:focus-visible {
    The popup remains at page level; only its trigger is placed in this slot.
    ========================================================================== */
 
-.get-in-touch-expert-button-slot {
+.learning-modules-expert-button-slot {
   position: absolute;
-  right: -16px;
-  bottom: 36px;
-  z-index: 4;
+
+  /* Exact requested area: empty right-side band between
+     Learning Modules and Testimonials. */
+  right: clamp(28px, 5vw, 72px);
+  bottom: 26px;
+
+  z-index: 12;
   width: 76px;
   height: 76px;
+
   display: grid;
   place-items: center;
 }
 
-.get-in-touch-expert-button-slot > .get-in-touch-expert-button {
+.learning-modules-expert-button-slot > .get-in-touch-expert-button {
   position: relative !important;
   inset: auto !important;
   width: 76px !important;
@@ -3592,7 +3628,7 @@ a:focus-visible {
   z-index: 1 !important;
 }
 
-.get-in-touch-expert-button-slot
+.learning-modules-expert-button-slot
   > .get-in-touch-expert-button
   > span:first-child {
   width: 58px !important;
@@ -3605,7 +3641,7 @@ a:focus-visible {
   border-radius: 50% !important;
 }
 
-.get-in-touch-expert-button-slot
+.learning-modules-expert-button-slot
   > .get-in-touch-expert-button
   > span:first-child
   > span {
@@ -3618,7 +3654,7 @@ a:focus-visible {
   border-radius: 50% !important;
 }
 
-.get-in-touch-expert-button-slot
+.learning-modules-expert-button-slot
   > .get-in-touch-expert-button
   > span:first-child
   svg {
@@ -3626,7 +3662,7 @@ a:focus-visible {
   height: 24px !important;
 }
 
-.get-in-touch-expert-button-slot
+.learning-modules-expert-button-slot
   > .get-in-touch-expert-button
   > span:last-child {
   position: absolute !important;
@@ -3641,14 +3677,14 @@ a:focus-visible {
 }
 
 @media (width < 1024px) {
-  .get-in-touch-expert-button-slot {
-    right: -12px;
-    bottom: 28px;
+  .learning-modules-expert-button-slot {
+    right: 24px;
+    bottom: 24px;
     width: 68px;
     height: 68px;
   }
 
-  .get-in-touch-expert-button-slot > .get-in-touch-expert-button {
+  .learning-modules-expert-button-slot > .get-in-touch-expert-button {
     width: 68px !important;
     min-width: 68px !important;
     max-width: 68px !important;
@@ -3660,15 +3696,15 @@ a:focus-visible {
 }
 
 @media (width < 600px) {
-  .get-in-touch-expert-button-slot {
-    right: -8px;
-    bottom: calc(var(--contact-footer-overlap) + 8px);
+  .learning-modules-expert-button-slot {
+    right: 12px;
+    bottom: 18px;
     width: 64px;
     height: 64px;
-    z-index: 10;
+    z-index: 12;
   }
 
-  .get-in-touch-expert-button-slot > .get-in-touch-expert-button {
+  .learning-modules-expert-button-slot > .get-in-touch-expert-button {
     width: 64px !important;
     min-width: 64px !important;
     max-width: 64px !important;
@@ -3678,7 +3714,7 @@ a:focus-visible {
     flex-basis: 64px !important;
   }
 }
-  .get-in-touch-expert-button-slot > .get-in-touch-expert-button {
+  .learning-modules-expert-button-slot > .get-in-touch-expert-button {
     width: 64px !important;
     min-width: 64px !important;
     max-width: 64px !important;
@@ -3749,19 +3785,39 @@ a:focus-visible {
 }
 
 @media (width < 768px) {
-  /* overflow-x:auto provides finger/trackpad dragging. The track transform is
-     deliberately left untouched: the existing arrow and autoplay JavaScript
-     can therefore continue to animate it. */
+  /*
+     MOBILE — UNIFORM CIRCULAR FINGER SCROLL
+     - Native horizontal hand/finger scrolling.
+     - Every flex item has exactly the same width.
+     - Mandatory center snapping means every swipe finishes on a full card.
+     - Full clone sets on both ends are invisibly normalized by HomePage.tsx.
+     - Desktop translateX animation is completely disabled on mobile.
+  */
   .learning-modules-viewport,
   .testimonials-viewport {
-    overflow-x: auto;
-    overflow-y: hidden;
+    width: 100%;
+    overflow-x: auto !important;
+    overflow-y: hidden !important;
+
     -webkit-overflow-scrolling: touch;
-    overscroll-behavior-inline: contain;
-    touch-action: pan-x pinch-zoom;
-    scroll-behavior: smooth;
-    scroll-snap-type: x proximity;
+
+    overscroll-behavior-x: contain;
+    overscroll-behavior-y: auto;
+
+    touch-action: pan-x pan-y;
+
+    scroll-snap-type: x mandatory;
+
+    /* IMPORTANT:
+       keep the circular clone reset instant/invisible.
+       Arrow/autoplay movement still uses behavior:"smooth" directly in TSX. */
+    scroll-behavior: auto;
+
     scrollbar-width: none;
+
+    user-select: none;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
   }
 
   .learning-modules-viewport::-webkit-scrollbar,
@@ -3769,50 +3825,111 @@ a:focus-visible {
     display: none;
   }
 
-  .learning-module-card,
-  .testimonial-card-wrapper {
-    scroll-snap-align: center;
-  }
-
-  /* Every item has an explicit, non-shrinking mobile basis. This prevents a
-     single active/short card from becoming narrower or shorter than its
-     neighbours while preserving the existing content and animation. */
   .learning-modules-track,
   .testimonials-track {
+    transform: none !important;
+    transition: none !important;
+
+    display: flex;
     align-items: stretch;
+
+    width: max-content;
+    max-width: none;
+
+    flex-wrap: nowrap;
+  }
+
+  /* Learning Modules: wrapper AND card use the exact same fixed width.
+     The active/featured card is not allowed to change width on mobile. */
+  .learning-modules-track > div {
+    --learning-card-mobile-width: min(320px, calc(100vw - 48px));
+
+    flex: 0 0 var(--learning-card-mobile-width);
+    width: var(--learning-card-mobile-width);
+    min-width: var(--learning-card-mobile-width);
+    max-width: var(--learning-card-mobile-width);
+
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
   }
 
   .learning-module-card,
   .learning-module-card-featured {
     --learning-card-mobile-width: min(320px, calc(100vw - 48px));
-    flex: 0 0 var(--learning-card-mobile-width);
-    width: var(--learning-card-mobile-width);
-    min-width: var(--learning-card-mobile-width);
-    max-width: var(--learning-card-mobile-width);
+
+    flex: none !important;
+
+    width: 100% !important;
+    min-width: 100% !important;
+    max-width: 100% !important;
+
+    height: auto;
     min-height: 300px;
+
+    padding: 18px;
+    gap: 12px;
+
+    transition:
+      box-shadow 0.25s ease,
+      height 0.25s ease !important;
+  }
+
+  .learning-module-image-frame,
+  .learning-module-card-featured .learning-module-image-frame {
+    width: 100%;
+    height: auto !important;
+    aspect-ratio: 16 / 9;
+
+    transition: none !important;
+  }
+
+  /* Testimonials: outer mapped wrapper AND visual card wrapper share one
+     identical mobile width, so sliding never changes spacing. */
+  .testimonials-track > div {
+    --testimonial-card-mobile-width: min(480px, calc(100vw - 48px));
+
+    flex: 0 0 var(--testimonial-card-mobile-width);
+    width: var(--testimonial-card-mobile-width);
+    min-width: var(--testimonial-card-mobile-width);
+    max-width: var(--testimonial-card-mobile-width);
+
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
   }
 
   .testimonial-card-wrapper {
     --testimonial-card-mobile-width: min(480px, calc(100vw - 48px));
-    flex: 0 0 var(--testimonial-card-mobile-width);
+
+    flex: none !important;
+
     display: flex;
-    width: var(--testimonial-card-mobile-width);
-    min-width: var(--testimonial-card-mobile-width);
-    max-width: var(--testimonial-card-mobile-width);
+
+    width: 100% !important;
+    min-width: 100% !important;
+    max-width: 100% !important;
+
     min-height: 250px;
   }
 
   .testimonial-card {
     width: 100%;
+    min-width: 0;
+
     height: 100%;
     min-height: 250px;
+  }
+
+  .learning-modules-viewport img,
+  .testimonials-viewport img {
+    pointer-events: none;
+    -webkit-user-drag: none;
+    user-select: none;
   }
 
   .learning-modules-nav-button,
   .testimonials-nav-button {
     touch-action: manipulation;
   }
-
 }
 
 /* Structural fallback for the centred chevron shown in the screenshots. It is
@@ -3845,3 +3962,204 @@ a:focus-visible {
   translate: 0 -50% !important;
   z-index: 5 !important;
 }
+
+/* ==========================================================================
+   CONTACT US — TRUE POPUP MODAL
+   Uses the same neumorphic close-button treatment as Book a Demo.
+   The form itself is unchanged; only its presentation is converted to a
+   centered popup mounted above the page.
+   ========================================================================== */
+
+.contact-modal-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 10020;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100vw;
+  min-height: 100vh;
+  min-height: 100dvh;
+
+  padding: 16px;
+  box-sizing: border-box;
+
+  overflow-x: hidden;
+  overflow-y: auto;
+
+  background: rgba(49, 52, 75, 0.55);
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+}
+
+.contact-modal-dialog {
+  position: relative;
+
+  width: min(760px, calc(100vw - 32px));
+  max-width: 760px;
+
+  max-height: calc(100vh - 32px);
+  max-height: calc(100dvh - 32px);
+
+  margin: auto;
+  box-sizing: border-box;
+
+  border-radius: 18px;
+  background: #dfe6e9;
+
+  box-shadow:
+    12px 12px 24px rgba(30, 36, 50, 0.35),
+    -8px -8px 18px rgba(255, 255, 255, 0.18);
+
+  overflow: visible;
+  outline: none;
+}
+
+.contact-modal-scroll {
+  position: relative;
+
+  width: 100%;
+  max-height: calc(100vh - 32px);
+  max-height: calc(100dvh - 32px);
+
+  overflow-x: hidden;
+  overflow-y: auto;
+
+  border-radius: 18px;
+  box-sizing: border-box;
+
+  scrollbar-width: thin;
+  overscroll-behavior: contain;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Keep the embedded Contact Us page inside the popup instead of letting its
+   page wrapper behave like a separate full-screen page. */
+.contact-modal-scroll > * {
+  width: 100% !important;
+  max-width: 100% !important;
+  min-height: 0 !important;
+  height: auto !important;
+
+  margin: 0 !important;
+  box-sizing: border-box !important;
+}
+
+/* The modal supplies the close control. Hide an embedded Contact Us close
+   control if that component already contains one, so only one X is visible. */
+.contact-modal-scroll :global(button[class*="contactCloseButton"]) {
+  display: none !important;
+}
+
+/* Same close-button visual language as the Book a Demo popup. */
+.contact-modal-close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+
+  width: 32px;
+  height: 32px;
+
+  margin: 0;
+  padding: 0;
+
+  border: 0;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+
+  background: #dfe6e9;
+
+  box-shadow:
+    4px 4px 8px rgba(166, 174, 178, 0.72),
+    -4px -4px 8px rgba(255, 255, 255, 0.68);
+
+  z-index: 10022;
+}
+
+.contact-modal-close:hover {
+  box-shadow:
+    inset 3px 3px 6px rgba(166, 174, 178, 0.72),
+    inset -3px -3px 6px rgba(255, 255, 255, 0.78);
+}
+
+.contact-modal-close:active {
+  box-shadow:
+    inset 4px 4px 8px rgba(166, 174, 178, 0.78),
+    inset -4px -4px 8px rgba(255, 255, 255, 0.82);
+}
+
+.contact-modal-close:focus-visible {
+  outline: 3px solid #2d4cc8;
+  outline-offset: 2px;
+}
+
+.contact-modal-close-icon {
+  display: block;
+
+  width: 18px;
+  height: 18px;
+
+  color: #31344b;
+  pointer-events: none;
+}
+
+@media (width < 768px) {
+  .contact-modal-overlay {
+    align-items: center;
+    padding: 10px;
+  }
+
+  .contact-modal-dialog {
+    width: min(100%, calc(100vw - 20px));
+
+    max-height: calc(100vh - 20px);
+    max-height: calc(100dvh - 20px);
+
+    border-radius: 16px;
+  }
+
+  .contact-modal-scroll {
+    max-height: calc(100vh - 20px);
+    max-height: calc(100dvh - 20px);
+
+    border-radius: 16px;
+  }
+
+  .contact-modal-close {
+    top: 8px;
+    right: 8px;
+
+    width: 32px;
+    height: 32px;
+  }
+}
+
+@media (width < 480px) {
+  .contact-modal-overlay {
+    padding: 6px;
+  }
+
+  .contact-modal-dialog {
+    width: calc(100vw - 12px);
+
+    max-height: calc(100vh - 12px);
+    max-height: calc(100dvh - 12px);
+
+    border-radius: 14px;
+  }
+
+  .contact-modal-scroll {
+    max-height: calc(100vh - 12px);
+    max-height: calc(100dvh - 12px);
+
+    border-radius: 14px;
+  }
+}
+
