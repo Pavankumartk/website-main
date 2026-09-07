@@ -5721,7 +5721,7 @@ body {
 }
 
 
-/* FINAL MOBILE CENTERING FIX â€” keeps desktop design unchanged */
+/* FINAL MOBILE CENTERING FIX Ã¢â‚¬â€ keeps desktop design unchanged */
 @media (max-width: 900px) {
   html,
   body {
@@ -6290,14 +6290,14 @@ button.limitsButton:active {
   outline: 0;
 }
 
-/* Microlearning â€” shift only the right benefits section slightly right */
+/* Microlearning Ã¢â‚¬â€ shift only the right benefits section slightly right */
 @media screen and (min-width: 901px) {
   .microBenefits {
     transform: translateX(40px);
   }
 }
 
-/* Mobile â€” prevent Routine heading from overlapping/clipping */
+/* Mobile Ã¢â‚¬â€ prevent Routine heading from overlapping/clipping */
 @media (max-width: 480px) {
   .routineHeader {
     width: 100% !important;
@@ -6332,7 +6332,7 @@ button.limitsButton:active {
   }
 }
 
-/* Mobile â€” compact and center the Routine feature pills */
+/* Mobile Ã¢â‚¬â€ compact and center the Routine feature pills */
 @media (max-width: 480px) {
   .routineFeatures {
     width: 100% !important;
@@ -6374,7 +6374,7 @@ button.limitsButton:active {
   }
 }
 
-/* Mobile â€” remove excess gap before Flexible Learning Access section */
+/* Mobile Ã¢â‚¬â€ remove excess gap before Flexible Learning Access section */
 @media (max-width: 480px) {
   .routineSection {
     margin-top: 36px !important;
@@ -6382,7 +6382,7 @@ button.limitsButton:active {
   }
 }
 
-/* FINAL MOBILE FIX â€” remove the large empty patterned area
+/* FINAL MOBILE FIX Ã¢â‚¬â€ remove the large empty patterned area
    after the last Interactive Learning card and before Routine */
 @media (max-width: 480px) {
   .interactiveSection {
@@ -6410,7 +6410,7 @@ button.limitsButton:active {
   }
 }
 
-/* MOBILE â€” remove the gap between Microlearning and Interactive Mobile Learning */
+/* MOBILE Ã¢â‚¬â€ remove the gap between Microlearning and Interactive Mobile Learning */
 @media (max-width: 480px) {
   .microSection {
     margin-bottom: 0 !important;
@@ -6427,7 +6427,7 @@ button.limitsButton:active {
   }
 }
 
-/* MOBILE â€” compact Learning Without Limits + reduce first-section 3 stat circles */
+/* MOBILE Ã¢â‚¬â€ compact Learning Without Limits + reduce first-section 3 stat circles */
 @media (max-width: 600px) {
   /* Learning Without Limits */
   .limitsSection {
@@ -6481,7 +6481,7 @@ button.limitsButton:active {
     font-size: 17px !important;
   }
 
-  /* Flexible Learning Access â€” the first section's 3 circular stats */
+  /* Flexible Learning Access Ã¢â‚¬â€ the first section's 3 circular stats */
   .routineStats {
     gap: 18px !important;
   }
@@ -6527,7 +6527,7 @@ button.limitsButton:active {
   }
 }
 
-/* MOBILE â€” reduce Mobile First / Cloud Access / Flexible Learning card widths */
+/* MOBILE Ã¢â‚¬â€ reduce Mobile First / Cloud Access / Flexible Learning card widths */
 @media (max-width: 600px) {
   .audienceCard {
     width: min(320px, calc(100% - 48px)) !important;
@@ -6544,7 +6544,7 @@ button.limitsButton:active {
   }
 }
 
-/* MOBILE â€” reduce the 3 Flexible Learning Access circles further */
+/* MOBILE Ã¢â‚¬â€ reduce the 3 Flexible Learning Access circles further */
 @media (max-width: 600px) {
   .routineStats {
     gap: 16px !important;
@@ -6603,4 +6603,49 @@ button.limitsButton:active {
 .modernBuiltDescription,
 .limitsDescription {
   font-size: 24px !important;
+}
+
+/* Both Book a Demo buttons â€” inset hover with smooth hover-out */
+.mobileLearning .mobileHeroButton,
+.mobileLearning .limitsButton {
+  position: relative;
+  cursor: pointer !important;
+  transform: translateY(0) scale(1);
+  will-change: transform, box-shadow;
+  backface-visibility: hidden;
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    color 0.25s ease !important;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .mobileLearning .mobileHeroButton:hover,
+  .mobileLearning .limitsButton:hover {
+    transform: translateY(1px) scale(0.995) !important;
+    box-shadow:
+      inset -4px -4px 5px rgba(255, 255, 255, 0.98),
+      inset 4px 4px 5px rgba(177, 184, 188, 0.88) !important;
+  }
+}
+
+.mobileLearning .mobileHeroButton:active,
+.mobileLearning .limitsButton:active {
+  transform: translateY(2px) scale(0.985) !important;
+  box-shadow:
+    inset -3px -3px 5px #ffffff,
+    inset 5px 5px 7px rgba(177, 184, 188, 0.92) !important;
+}
+
+.mobileLearning .mobileHeroButton:focus-visible,
+.mobileLearning .limitsButton:focus-visible {
+  outline: 2px solid #2d55d2 !important;
+  outline-offset: 4px !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .mobileLearning .mobileHeroButton,
+  .mobileLearning .limitsButton {
+    transition: none !important;
+  }
 }

@@ -184,7 +184,7 @@ const CorporateTraining: NextPage = () => {
             <div className={styles.businesspeopleDiscussingDigiParent}>
                 <Image
                     className={styles.businesspeopleDiscussingDigiIcon}
-                    src="/images/businesspeople-discussing-digital-tablet 1.webp"
+                    src="/images/group-entrepreneurs-happy-work-together.jpeg"
                     width={1184}
                     height={615}
                     sizes="100vw"
