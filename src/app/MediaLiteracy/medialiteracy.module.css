@@ -11,17 +11,6 @@
   font-display: swap;
 }
 
-@font-face {
-  font-family: "Segoe UI";
-  src:
-    local("Segoe UI Variable Italic"),
-    local("Segoe UI Italic"),
-    local("SegoeUI-Italic");
-  font-style: italic;
-  font-weight: 100 900;
-  font-display: swap;
-}
-
 .skipToContent {
   position: absolute;
   top: -60px;
@@ -3166,7 +3155,7 @@
 
     border-radius: 28px !important;
 
-    font-family: "Segoe UI", "Inter" !important;
+    font-family: "Segoe UI", "Inter";
     font-weight: 600 !important;
     font-size: 24px !important;
     line-height: 32px !important;
@@ -3187,7 +3176,7 @@
 
     margin: 0 !important;
 
-    font-family: "Segoe UI", "Inter" !important;
+    font-family: "Segoe UI", "Inter";
     font-weight: 700 !important;
     font-size: 48px !important;
     line-height: 60px !important;
@@ -3210,7 +3199,7 @@
 
     margin: 0 !important;
 
-    font-family: "Segoe UI", "Inter" !important;
+    font-family: "Segoe UI", "Inter";
     font-weight: 400 !important;
     font-size: 28px !important;
     line-height: 40px !important;
@@ -3331,7 +3320,7 @@
 
     margin: 0 !important;
 
-    font-family: "Segoe UI", "Inter" !important;
+    font-family: "Segoe UI", "Inter";
     font-weight: 700 !important;
     font-size: 30px !important;
     line-height: 44px !important;
@@ -3350,7 +3339,7 @@
 
     margin: 0 !important;
 
-    font-family: "Segoe UI", "Inter" !important;
+    font-family: "Segoe UI", "Inter";
     font-weight: 400 !important;
     font-size: 24px !important;
     line-height: 32px !important;
@@ -3872,7 +3861,7 @@
    ========================================================= */
 .mediaLiteracy,
 .mediaLiteracy * {
-  font-family: "Segoe UI", "Inter" !important;
+  font-family: "Segoe UI", "Inter";
 }
 
 @media (max-width: 767px) {
@@ -3950,3 +3939,68 @@
     text-align: center !important;
   }
 }
+
+/* ==========================================================================
+   FINAL TYPOGRAPHY — SEGOE UI + INTER FALLBACK / NO ITALICS
+   Preserve all existing layout and design rules.
+   ========================================================================== */
+.mediaLiteracy,
+.mediaLiteracy *,
+.mediaLiteracy *::before,
+.mediaLiteracy *::after {
+  font-family: "Segoe UI", "Inter" !important;
+  font-style: normal !important;
+}
+
+/* ==========================================================================
+   FINAL FONT MATCH — ONLY SEGOE UI + INTER
+   No other font family. No italic font style.
+   ========================================================================== */
+.mediaLiteracy,
+.mediaLiteracy *,
+.mediaLiteracy *::before,
+.mediaLiteracy *::after {
+  font-family: "Segoe UI", "Inter" !important;
+  font-style: normal !important;
+}
+
+/* ==========================================================================
+   FINAL DESKTOP SECTION TYPOGRAPHY — HERO EXCLUDED
+   All non-hero section headings: 36px
+   All non-hero section subheadings: 24px
+   ========================================================================== */
+@media screen and (min-width: 1025px) {
+  .mediaLiteracy .understandTheSystems,
+  .mediaLiteracy .spotBiasVerify,
+  .mediaLiteracy .questionUnderstandEvaluate,
+  .mediaLiteracy .createResponsiblyInspireContainer,
+  .mediaLiteracy .navigateMediaWithContainer,
+  .mediaLiteracy .howInteractiveLearning {
+    font-family: "Segoe UI", "Inter" !important;
+    font-style: normal !important;
+    font-size: 36px !important;
+    line-height: 1.25 !important;
+  }
+
+  .mediaLiteracy .buildEssentialMedia,
+  .mediaLiteracy .questionHeadlinesVerify,
+  .mediaLiteracy .strengthenYourAbility,
+  .mediaLiteracy .createEthicalCredible,
+  .mediaLiteracy .interactiveLearningDrives {
+    font-family: "Segoe UI", "Inter" !important;
+    font-style: normal !important;
+    font-size: 24px !important;
+    line-height: 1.5 !important;
+  }
+}
+
+/* ==========================================================================
+   FINAL DESKTOP — RESPONSIBLE CONTENT LEFT TEXT SPACING ONLY
+   Reduce only the vertical gap between badge, heading and subheading.
+   ========================================================================== */
+@media screen and (min-width: 1025px) {
+  .mediaLiteracy .rectangleParent .frameParent38 {
+    gap: 18px !important;
+  }
+}
+

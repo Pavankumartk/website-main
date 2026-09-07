@@ -5,9 +5,9 @@
 	background-color: #dfe6e9;
 	overflow: hidden;
 	text-align: left;
-	font-size: 48px;
+	font-size: 36px;
 	color: #31344b;
-	font-family: "Segoe UI";
+	font-family: "Segoe UI", "Inter";
 	zoom: 0.89;
 }
 
@@ -21,7 +21,7 @@
 	height: 80px;
 	overflow: hidden;
 	font-size: 16px;
-	font-family: "Segoe UI";
+	font-family: "Segoe UI", "Inter";
 }
 
 .frameChild {
@@ -111,7 +111,7 @@
 	box-sizing: border-box;
 	text-align: center;
 	color: #2d4cc8;
-	font-family: "Segoe UI";
+	font-family: "Segoe UI", "Inter";
 }
 
 .signInHelp {
@@ -135,7 +135,7 @@
 	gap: 8px;
 	font-size: 16px;
 	color: #2f3547;
-	font-family: "Segoe UI";
+	font-family: "Segoe UI", "Inter";
 }
 
 .ourCustomersWrapper {
@@ -244,7 +244,7 @@
 	box-sizing: border-box;
 	flex-shrink: 0;
 	color: #2d4cc8;
-	font-family: "Segoe UI";
+	font-family: "Segoe UI", "Inter";
 	font-size: 24px;
 	font-weight: 600;
 	line-height: 28px;
@@ -267,7 +267,7 @@
 	align-self: stretch;
 	height: 80px;
 	position: relative;
-	font-size: 28px;
+	font-size: 24px;
 	letter-spacing: 0.03em;
 	line-height: 40px;
 	color: #2f3547;
@@ -280,7 +280,7 @@
 	align-items: center;
 	gap: 32px;
 	text-align: left;
-	font-size: 22px;
+	font-size: 24px;
 	color: #2d4cc8;
 }
 
@@ -298,8 +298,8 @@
 	padding: 0 24px;
 	box-sizing: border-box;
 	color: #31344b;
-	font-family: "Segoe UI";
-	font-size: 22px;
+	font-family: "Segoe UI", "Inter";
+	font-size: 24px;
 	font-weight: 600;
 	line-height: 30px;
 	cursor: pointer;
@@ -334,8 +334,8 @@
 	padding: 16px 32px;
 	box-sizing: border-box;
 	color: #2d4cc8;
-	font-family: "Segoe UI";
-	font-size: 22px;
+	font-family: "Segoe UI", "Inter";
+	font-size: 24px;
 	cursor: pointer;
 }
 
@@ -441,7 +441,7 @@
 	box-sizing: border-box;
 	flex-shrink: 0;
 	color: #2D4CC8;
-	font-family: "Segoe UI";
+	font-family: "Segoe UI", "Inter";
 	font-size: 24px;
 	font-weight: 600;
 	line-height: 32px;
@@ -472,7 +472,7 @@
 	width: 1014px;
 	height: 72px;
 	position: relative;
-	font-size: 28px;
+	font-size: 24px;
 	letter-spacing: 0.03em;
 	line-height: 40px;
 	color: #2f3547;
@@ -485,7 +485,7 @@
 	display: flex;
 	align-items: center;
 	gap: 26px;
-	font-size: 28px;
+	font-size: 24px;
 }
 
 .frameWrapper4 {
@@ -1030,7 +1030,7 @@
 	justify-content: center;
 	box-sizing: border-box;
 	color: #2D4CC8;
-	font-family: "Segoe UI";
+	font-family: "Segoe UI", "Inter";
 	font-size: 24px;
 	font-weight: 600;
 	line-height: 32px;
@@ -1466,7 +1466,7 @@
 	box-sizing: border-box;
 	flex-shrink: 0;
 	color: #2D4CC8;
-	font-family: "Segoe UI";
+	font-family: "Segoe UI", "Inter";
 	font-size: 24px;
 	font-weight: 600;
 	line-height: 28px;
@@ -1487,7 +1487,7 @@
 .neurolxpHelpsInstitutions {
 	align-self: stretch;
 	position: relative;
-	font-size: 28px;
+	font-size: 24px;
 	letter-spacing: 0.03em;
 	line-height: 40px;
 	color: #2f3547;
@@ -1517,7 +1517,7 @@
 	flex-direction: column;
 	align-items: flex-start;
 	gap: 50px;
-	font-size: 28px;
+	font-size: 24px;
 }
 
 .frameParent68 {
@@ -1654,7 +1654,7 @@
 	width: 793px;
 	height: 72px;
 	position: relative;
-	font-size: 28px;
+	font-size: 24px;
 	letter-spacing: 0.03em;
 	line-height: 40px;
 	color: #2f3547;
@@ -1905,7 +1905,7 @@
 	width: 481px;
 	height: 149px;
 	position: relative;
-	font-size: 28px;
+	font-size: 24px;
 	letter-spacing: 0.03em;
 	line-height: 36px;
 	color: #2f3547;
@@ -2054,7 +2054,7 @@
 	border-radius: 28px;
 	background: #DFE6E9;
 	box-shadow: inset -4px -4px 4px #FFFFFF, inset 4px 4px 4px #C4C4C4;
-	font-family: "Segoe UI";
+	font-family: "Segoe UI", "Inter";
 	font-size: 24px;
 	font-weight: 600;
 	line-height: 28px;
@@ -2100,7 +2100,7 @@
 	background-color: #DFE6E9;
 	box-shadow: inset -4px -4px 4px #FFFFFF, inset 4px 4px 4px #C4C4C4;
 	color: #2D4CC8;
-	font-family: "Segoe UI";
+	font-family: "Segoe UI", "Inter";
 	font-size: 24px;
 	font-weight: 600;
 	line-height: 32px;
@@ -2357,7 +2357,7 @@
 		padding: 0;
 		overflow-x: hidden;
 		background-color: #dfe6e9;
-		font-family: "Segoe UI";
+		font-family: "Segoe UI", "Inter";
 	}
 
 	.universityAndCollege {
@@ -2374,8 +2374,8 @@
 		transform: none;
 		transform-origin: top center;
 		overflow: hidden;
-		font-family: "Segoe UI";
-		font-size: 48px;
+		font-family: "Segoe UI", "Inter";
+		font-size: 36px;
 	}
 
 	.frameDiv,
@@ -2399,7 +2399,7 @@
 	.keyChallengesIn,
 	.howNeurolxpSupports,
 	.futureReadyUniversitiesStar {
-		font-size: 48px;
+		font-size: 36px;
 		line-height: 60px;
 	}
 
@@ -2408,14 +2408,14 @@
 	.neurolxpHelpsInstitutions,
 	.institutionsUsingNeurolxp,
 	.neurolxpHelpsUniversities {
-		font-size: 28px;
+		font-size: 24px;
 		line-height: 40px;
 	}
 
 	.frameParent10,
 	.frameParent46,
 	.frameParent67 {
-		font-size: 28px;
+		font-size: 24px;
 	}
 
 	.smartLearning,
@@ -2446,7 +2446,7 @@
 	.frameIcon,
 	.frameWrapper2,
 	.courseAndContent {
-		font-size: 22px;
+		font-size: 20px;
 		line-height: 30px;
 	}
 
@@ -2894,7 +2894,7 @@
 .actionLink {
 	color: inherit;
 	text-decoration: none;
-	font-family: "Segoe UI";
+	font-family: "Segoe UI", "Inter";
 }
 
 .brandLink,
@@ -2908,7 +2908,7 @@
 	min-width: 120px;
 	display: flex;
 	align-items: center;
-	font-family: "Segoe UI";
+	font-family: "Segoe UI", "Inter";
 	font-size: 28px;
 	font-weight: 700;
 	letter-spacing: -0.02em;
@@ -2919,7 +2919,7 @@
 .footerBrand {
 	display: flex;
 	align-items: center;
-	font-family: "Segoe UI";
+	font-family: "Segoe UI", "Inter";
 	font-size: 48px;
 	line-height: 56px;
 	font-weight: 700;
@@ -2959,7 +2959,7 @@
 .universityAndCollege {
 	position: relative;
 	z-index: 1;
-	font-family: "Segoe UI";
+	font-family: "Segoe UI", "Inter";
 }
 
 /* Shared Header/Footer must stay above/outside the positioned university canvas */
@@ -2967,7 +2967,7 @@
 :global(footer) {
 	position: relative;
 	z-index: 9999;
-	font-family: "Segoe UI";
+	font-family: "Segoe UI", "Inter";
 }
 
 
@@ -3013,7 +3013,7 @@
 		padding: 20px 14px 36px !important;
 		overflow: hidden !important;
 		position: relative !important;
-		font-family: "Segoe UI" !important;
+		font-family: "Segoe UI", "Inter" !important;
 		font-size: 16px !important;
 	}
 
@@ -3031,7 +3031,7 @@
 		gap: 7px !important;
 		margin: 6px 0 24px !important;
 		padding: 0 4px !important;
-		font-size: 13px !important;
+		font-size: 14px !important;
 		line-height: 20px !important;
 	}
 
@@ -3042,7 +3042,7 @@
 	}
 
 	.industriesWeServe {
-		font-size: 13px !important;
+		font-size: 14px !important;
 		line-height: 20px !important;
 		white-space: normal !important;
 	}
@@ -3115,7 +3115,7 @@
 		display: flex !important;
 		align-items: center !important;
 		justify-content: center !important;
-		font-size: 14px !important;
+		font-size: 18px !important;
 		line-height: 20px !important;
 		white-space: normal !important;
 		text-align: center !important;
@@ -3124,7 +3124,7 @@
 	.empoweringHigherEducation {
 		width: 100% !important;
 		height: auto !important;
-		font-size: clamp(26px, 7vw, 32px) !important;
+		font-size: 36px !important;
 		line-height: 1.25 !important;
 		text-align: center !important;
 		letter-spacing: 0.02em !important;
@@ -3144,7 +3144,7 @@
 		flex-wrap: wrap !important;
 		justify-content: center !important;
 		gap: 14px !important;
-		font-size: 15px !important;
+		font-size: 18px !important;
 	}
 
 	.frameIcon,
@@ -3154,7 +3154,7 @@
 		max-width: 100% !important;
 		height: 48px !important;
 		padding: 10px 20px !important;
-		font-size: 15px !important;
+		font-size: 18px !important;
 		line-height: 22px !important;
 	}
 
@@ -3206,7 +3206,7 @@
 		width: 100% !important;
 		max-width: 100% !important;
 		height: auto !important;
-		font-size: clamp(23px, 6.4vw, 29px) !important;
+		font-size: 36px !important;
 		line-height: 1.3 !important;
 		text-align: center !important;
 	}
@@ -3218,7 +3218,7 @@
 		width: 100% !important;
 		max-width: 100% !important;
 		height: auto !important;
-		font-size: 15px !important;
+		font-size: 16px !important;
 		line-height: 23px !important;
 		text-align: center !important;
 	}
@@ -3283,14 +3283,14 @@
 		width: 100% !important;
 		height: auto !important;
 		padding-top: 60px !important;
-		font-size: 16px !important;
+		font-size: 20px !important;
 		line-height: 22px !important;
 		text-align: center !important;
 	}
 
 	.flexibleLearningFor {
 		width: 100% !important;
-		font-size: 13px !important;
+		font-size: 15px !important;
 		line-height: 19px !important;
 		text-align: center !important;
 	}
@@ -3331,7 +3331,7 @@
 		display: grid !important;
 		grid-template-columns: 1fr !important;
 		gap: 18px !important;
-		font-size: 16px !important;
+		font-size: 20px !important;
 	}
 
 	.rapidSkillChangesParent,
@@ -3371,7 +3371,7 @@
 	.careerReadiness {
 		width: 100% !important;
 		height: auto !important;
-		font-size: 17px !important;
+		font-size: 20px !important;
 		line-height: 23px !important;
 		text-align: center !important;
 	}
@@ -3399,7 +3399,7 @@
 		width: 100% !important;
 		height: auto !important;
 		padding: 18px !important;
-		font-size: 14px !important;
+		font-size: 15px !important;
 		line-height: 21px !important;
 		text-align: center !important;
 	}
@@ -3550,7 +3550,7 @@
 		width: auto !important;
 		height: auto !important;
 		flex: 1 1 auto !important;
-		font-size: 15px !important;
+		font-size: 16px !important;
 		line-height: 21px !important;
 		white-space: normal !important;
 	}
@@ -3724,7 +3724,7 @@
 		height: auto !important;
 		margin: 0 !important;
 		padding: 0 !important;
-		font-size: 14px !important;
+		font-size: 16px !important;
 		line-height: 18px !important;
 		text-align: left !important;
 		white-space: normal !important;
@@ -3737,7 +3737,7 @@
 		height: auto !important;
 		margin: 0 !important;
 		padding: 0 !important;
-		font-size: 11px !important;
+		font-size: 15px !important;
 		line-height: 15px !important;
 		text-align: left !important;
 		white-space: normal !important;
@@ -3820,7 +3820,7 @@
 		max-width: 330px !important;
 		height: auto !important;
 		margin: 0 auto !important;
-		font-size: clamp(24px, 6.7vw, 29px) !important;
+		font-size: 36px !important;
 		line-height: 1.28 !important;
 		text-align: center !important;
 	}
@@ -3830,7 +3830,7 @@
 		max-width: 330px !important;
 		height: auto !important;
 		margin: 0 auto !important;
-		font-size: 15px !important;
+		font-size: 16px !important;
 		line-height: 23px !important;
 		text-align: center !important;
 	}
@@ -4034,6 +4034,49 @@
 	}
 }
 
+/* Reference typography only — no layout changes */
+@media screen and (max-width: 480px) {
+	.frameDiv,
+	.industriesWeServe {
+		font-size: 13px !important;
+	}
+
+	.empoweringHigherEducation,
+	.modernLearningFor,
+	.keyChallengesIn,
+	.howNeurolxpSupports,
+	.futureReadyUniversitiesStar {
+		font-size: 24px !important;
+	}
+
+	.smartLearning,
+	.passiveLearning,
+	.largeContentManagement,
+	.diverseLearningNeeds,
+	.studentProgressTracking,
+	.careerReadiness {
+		font-size: 16px !important;
+	}
+
+	.flexibleLearningFor,
+	.interactiveLearningWith,
+	.centralizeCourseMaterials,
+	.personalizedLearningPathways,
+	.trackAttendanceCourse,
+	.supportSkillDevelopment {
+		font-size: 12px !important;
+	}
+
+	.courseAndContent,
+	.realTimePerformanceAnalytic {
+		font-size: 15px !important;
+	}
+
+	.frameWrapper17 .flexibleLearningFor {
+		font-size: 12px !important;
+	}
+}
+
 /* Extra narrow phone safety */
 @media screen and (max-width: 430px) {
 	.universityAndCollege {
@@ -4198,3 +4241,1097 @@
 		margin-right: auto !important;
 	}
 }
+
+/* =========================================================
+   UNIVERSITY HERO — SPACING + CTA BUTTON STATE UPDATE
+   Scope: hero section only.
+   No other section/layout styles are changed.
+   ========================================================= */
+
+/* Desktop/laptop only:
+   1) remove the unused fixed heading height,
+   2) remove the extra fixed wrapper space below the description.
+   Because the image section follows this same hero block in normal
+   flex flow, it also moves upward by the exact same amount, so no
+   new empty gap is created below the buttons. */
+@media screen and (min-width: 768px) {
+	.frameParent3 .empoweringHigherEducation {
+		height: 63px;
+	}
+
+	.frameParent3 .frameWrapper {
+		height: 252px;
+	}
+}
+
+/* Book a Demo:
+   default blue text + existing inset state.
+   Hover keeps the same raised effect already used here. */
+.frameParent7 .frameIcon {
+	color: #2d4cc8;
+	box-shadow: inset -4px -4px 4px #FFFFFF, inset 4px 4px 4px #C4C4C4;
+	transition: box-shadow 0.2s ease, color 0.2s ease;
+}
+
+.frameParent7 .frameIcon:hover {
+	color: #2d4cc8;
+	box-shadow: -4px -4px 4px #FFFFFF, 4px 4px 4px #C4C4C4;
+}
+
+.frameParent7 .frameIcon:active {
+	color: #2d4cc8;
+	box-shadow: inset -4px -4px 4px #FFFFFF, inset 4px 4px 4px #C4C4C4;
+}
+
+/* Start Learning:
+   default black text + same inset -> raised hover interaction
+   as Book a Demo. The label is kept on one line without changing
+   the button's outer width/height. */
+.frameParent7 .frameWrapper2 {
+	color: #31344b;
+	padding-left: 20px;
+	padding-right: 20px;
+	box-shadow: inset -4px -4px 4px #FFFFFF, inset 4px 4px 4px #C4C4C4;
+	transition: box-shadow 0.2s ease, color 0.2s ease;
+}
+
+.frameParent7 .frameWrapper2 .startLearningWrapper {
+	width: auto;
+	justify-content: center;
+}
+
+.frameParent7 .frameWrapper2 .startLearning {
+	width: auto;
+	color: #31344b;
+	white-space: nowrap;
+	justify-content: center;
+}
+
+.frameParent7 .frameWrapper2:hover {
+	color: #31344b;
+	box-shadow: -4px -4px 4px #FFFFFF, 4px 4px 4px #C4C4C4;
+}
+
+.frameParent7 .frameWrapper2:hover .startLearning {
+	color: #31344b;
+}
+
+.frameParent7 .frameWrapper2:active {
+	color: #31344b;
+	box-shadow: inset -4px -4px 4px #FFFFFF, inset 4px 4px 4px #C4C4C4;
+}
+
+/* ==========================================================================
+   FINAL SPACING + CHALLENGE CARD RESPONSIVE UPDATE
+   Scope:
+   1) Digital Learning -> Key Challenges spacing
+   2) Key Challenges card height/content fit + responsive behaviour
+   3) Support -> Key Benefits and Benefits header spacing
+   All unrelated sections/design rules remain unchanged.
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   DESKTOP / TABLET LANDSCAPE COMPOSITION
+   The page continues to use the existing 1440px design canvas and zoom rules.
+   Only the requested sections and the sections below them are moved upward so
+   removing whitespace does not create a new gap farther down the page.
+   -------------------------------------------------------------------------- */
+@media screen and (min-width: 768px) {
+
+	/* 1) Reduce the large blank area before Key Challenges. */
+	.frameParent44 {
+		top: 1795px !important;
+		height: 841px !important;
+	}
+
+	/* Compact the Key Challenges heading block slightly. */
+	.frameParent45 {
+		height: 133px !important;
+		gap: 20px !important;
+	}
+
+	/* 2) Compact challenge rows while preserving room for all text. */
+	.frameParent46 {
+		top: 173px !important;
+		height: 668px !important;
+		gap: 28px !important;
+	}
+
+	.frameParent46 .rapidSkillChangesParent {
+		width: 100% !important;
+		display: grid !important;
+		grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+		align-items: stretch !important;
+		gap: 24px !important;
+	}
+
+	.frameParent46 .progressTrackingParent {
+		width: 100% !important;
+		display: grid !important;
+		grid-template-columns: repeat(2, minmax(0, 410px)) !important;
+		justify-content: center !important;
+		align-items: stretch !important;
+		gap: 24px !important;
+	}
+
+	.frameParent46 .rapidSkillChanges,
+	.frameParent46 .lowEngagementParent,
+	.frameParent46 .lowEngagement {
+		width: 100% !important;
+		max-width: 410px !important;
+		height: 320px !important;
+		min-height: 320px !important;
+	}
+
+	/* Keep every card's icon/title + description inside the reduced card height. */
+	.frameParent46 .frameParent47,
+	.frameParent46 .frameParent51,
+	.frameParent46 .lowEngagementInner {
+		top: 20px !important;
+		left: 50% !important;
+		width: 354px !important;
+		max-width: calc(100% - 40px) !important;
+		height: 280px !important;
+		transform: translateX(-50%) !important;
+		gap: 20px !important;
+		box-sizing: border-box !important;
+	}
+
+	.frameParent46 .frameParent54 {
+		width: 100% !important;
+		height: 280px !important;
+		gap: 20px !important;
+	}
+
+	.frameParent46 .frameParent48,
+	.frameParent46 .frameParent52,
+	.frameParent46 .frameWrapper11,
+	.frameParent46 .frameWrapper12 {
+		height: 120px !important;
+		min-height: 120px !important;
+		box-sizing: border-box !important;
+	}
+
+	.frameParent46 .frameParent50,
+	.frameParent46 .frameParent53 {
+		width: 100% !important;
+		height: 140px !important;
+		min-height: 140px !important;
+		display: flex !important;
+		align-items: center !important;
+		justify-content: center !important;
+		box-sizing: border-box !important;
+	}
+
+	.frameParent46 .frameChild24 {
+		width: 100% !important;
+		height: 140px !important;
+	}
+
+	.frameParent46 .interactiveLearningWith,
+	.frameParent46 .centralizeCourseMaterials,
+	.frameParent46 .personalizedLearningPathways,
+	.frameParent46 .trackAttendanceCourse,
+	.frameParent46 .supportSkillDevelopment {
+		position: relative !important;
+		top: auto !important;
+		left: auto !important;
+		width: calc(100% - 24px) !important;
+		height: auto !important;
+		margin: 0 auto !important;
+		padding: 12px !important;
+		box-sizing: border-box !important;
+		z-index: 3 !important;
+	}
+
+	.frameParent46 .passiveLearning,
+	.frameParent46 .largeContentManagement,
+	.frameParent46 .diverseLearningNeeds,
+	.frameParent46 .studentProgressTracking,
+	.frameParent46 .careerReadiness {
+		max-width: 100% !important;
+		height: auto !important;
+	}
+
+	/* Move every following section upward by the same accumulated reduction.
+	   This prevents the removed space from reappearing between later sections. */
+	.universityAndCollegeChild {
+		top: 2732px !important;
+	}
+
+	/* 3) Reduce the small gap before Key Benefits. */
+	.frameParent71 {
+		top: 3836px !important;
+		gap: 36px !important;
+	}
+
+	.frameParent72 {
+		height: auto !important;
+		gap: 12px !important;
+	}
+
+	.frameParent72 .keyBenefitsBadge {
+		margin: 0 auto !important;
+	}
+
+	.frameParent72 .benefitsForEducationalInstiParent {
+		height: auto !important;
+		gap: 10px !important;
+	}
+
+	/* The TSX currently contains <br /><br /> after these two lines.
+	   Hide only those breaks inside the Benefits heading block so they do not
+	   create artificial blank space. */
+	.frameParent72 .benefitsForEducationalInstiParent br {
+		display: none !important;
+	}
+
+	.frameParent72 .benefitsForEducationalInstiParent .keyChallengesIn,
+	.frameParent72 .institutionsUsingNeurolxp {
+		height: auto !important;
+		min-height: 0 !important;
+	}
+
+	/* Keep the section below Benefits moving upward with the compacted content. */
+	.image20Parent7 {
+		top: 4740px !important;
+	}
+
+	/* Match page height to the new compact vertical flow so no large blank area
+	   is left at the bottom of the page. */
+	.universityAndCollege {
+		height: 5450px !important;
+		min-height: 5450px !important;
+	}
+}
+
+
+/* --------------------------------------------------------------------------
+   TRUE MOBILE RESPONSIVE — requested sections only
+   Keeps the existing mobile layout, but uses tighter section spacing and
+   card dimensions that still leave enough room for wrapped text.
+   -------------------------------------------------------------------------- */
+@media screen and (max-width: 767px) {
+
+	/* Image 1: smaller gap before Key Challenges. */
+	.frameParent44 {
+		margin-top: 36px !important;
+	}
+
+	.frameParent45 {
+		gap: 12px !important;
+		margin-bottom: 16px !important;
+	}
+
+	/* Image 2: compact cards without text overlap. */
+	.frameParent46 {
+		gap: 14px !important;
+	}
+
+	.rapidSkillChangesParent,
+	.progressTrackingParent {
+		gap: 14px !important;
+	}
+
+	.frameParent46 .rapidSkillChanges,
+	.frameParent46 .lowEngagementParent,
+	.frameParent46 .lowEngagement {
+		width: 100% !important;
+		max-width: 100% !important;
+		height: 245px !important;
+		min-height: 245px !important;
+	}
+
+	.frameParent46 .frameParent47,
+	.frameParent46 .frameParent51,
+	.frameParent46 .lowEngagementInner,
+	.frameParent46 .frameParent54 {
+		width: 100% !important;
+		max-width: 100% !important;
+		height: 100% !important;
+		top: 0 !important;
+		left: 0 !important;
+		padding: 16px 14px !important;
+		gap: 12px !important;
+		box-sizing: border-box !important;
+	}
+
+	.frameParent46 .frameParent47,
+	.frameParent46 .frameParent51,
+	.frameParent46 .lowEngagementInner {
+		transform: none !important;
+	}
+
+	/* Slightly smaller icon container on phones gives the text more vertical room
+	   while keeping the same icon artwork and visual style. */
+	.frameParent46 .challengeIcon {
+		width: 58px !important;
+		height: 56px !important;
+	}
+
+	.frameParent46 .challengeIcon::before {
+		width: 54px !important;
+		height: 54px !important;
+		left: 2px !important;
+		top: 1px !important;
+	}
+
+	.frameParent46 .challengeIcon::after {
+		width: 40px !important;
+		height: 40px !important;
+		left: 9px !important;
+		top: 8px !important;
+	}
+
+	.frameParent46 .challengeIconImage {
+		width: 22px !important;
+		height: 22px !important;
+	}
+
+	.frameParent46 .frameParent48,
+	.frameParent46 .frameParent52,
+	.frameParent46 .frameWrapper11,
+	.frameParent46 .frameWrapper12 {
+		height: auto !important;
+		min-height: 82px !important;
+	}
+
+	.frameParent46 .frameParent50,
+	.frameParent46 .frameParent53 {
+		width: 100% !important;
+		height: auto !important;
+		min-height: 88px !important;
+		display: flex !important;
+		align-items: center !important;
+		justify-content: center !important;
+		box-sizing: border-box !important;
+	}
+
+	.frameParent46 .frameChild24 {
+		width: 100% !important;
+		height: 100% !important;
+		min-height: 88px !important;
+	}
+
+	.frameParent46 .interactiveLearningWith,
+	.frameParent46 .centralizeCourseMaterials,
+	.frameParent46 .personalizedLearningPathways,
+	.frameParent46 .trackAttendanceCourse,
+	.frameParent46 .supportSkillDevelopment {
+		position: relative !important;
+		top: auto !important;
+		left: auto !important;
+		width: 100% !important;
+		height: auto !important;
+		margin: 0 !important;
+		padding: 12px 10px !important;
+		box-sizing: border-box !important;
+		z-index: 3 !important;
+	}
+
+	/* Image 3: reduce only the unnecessary spacing around the Benefits heading. */
+	.frameParent71 {
+		margin-top: 36px !important;
+		gap: 18px !important;
+	}
+
+	.frameParent72,
+	.benefitsForEducationalInstiParent {
+		height: auto !important;
+		gap: 10px !important;
+	}
+
+	.frameParent72 .keyBenefitsBadge {
+		margin: 0 auto !important;
+	}
+
+	.frameParent72 .benefitsForEducationalInstiParent br {
+		display: none !important;
+	}
+
+	.frameParent72 .benefitsForEducationalInstiParent .keyChallengesIn,
+	.frameParent72 .institutionsUsingNeurolxp {
+		height: auto !important;
+		min-height: 0 !important;
+		margin-bottom: 0 !important;
+	}
+}
+
+
+/* Extra-small phones: allow a little more card height only when needed.
+   This prevents wrapped text from ever colliding with the card boundary. */
+@media screen and (max-width: 374px) {
+	.frameParent46 .rapidSkillChanges,
+	.frameParent46 .lowEngagementParent,
+	.frameParent46 .lowEngagement {
+		height: 255px !important;
+		min-height: 255px !important;
+	}
+}
+.diverseLearningNeeds,
+.studentProgressTracking {
+	width: max-content;
+	max-width: none;
+	height: 34px;
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+	margin: 0;
+	letter-spacing: 0.03em;
+	line-height: 32px;
+	display: block;
+	flex-shrink: 0;
+	white-space: nowrap;
+	text-align: center;
+}
+
+/* ==========================================================================
+   FINAL — KEY CHALLENGES TITLE ALIGNMENT + RESPONSIVE SECTION FIX
+   Scope is limited to the Key Challenges section and the positional movement
+   required below it on tablet-sized scaled layouts.
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   The two longer titles use the same centered title area as the other cards.
+   Do not offset the text with left/translate; center the text inside the
+   existing centered card-title wrapper instead.
+   -------------------------------------------------------------------------- */
+.frameParent46 .diverseLearningNeeds,
+.frameParent46 .studentProgressTracking {
+	width: 100% !important;
+	max-width: 100% !important;
+	height: 34px;
+	position: relative;
+	left: auto !important;
+	transform: none !important;
+	margin: 0 !important;
+	letter-spacing: 0.03em;
+	line-height: 32px;
+	display: block;
+	flex-shrink: 0;
+	white-space: nowrap;
+	text-align: center;
+	box-sizing: border-box;
+}
+
+
+/* ==========================================================================
+   TABLET / SMALL-LAPTOP KEY CHALLENGES LAYOUT
+   768px–1199px
+   The rest of the page keeps its existing scaled-canvas behaviour.
+   Only this card section changes from 3+2 to a balanced 2+1 / 2 layout.
+   ========================================================================== */
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+
+	.frameParent44 {
+		height: 1121px !important;
+	}
+
+	.frameParent46 {
+		top: 173px !important;
+		width: 1280px !important;
+		height: 948px !important;
+		display: flex !important;
+		flex-direction: column !important;
+		align-items: center !important;
+		gap: 24px !important;
+	}
+
+	/* First three cards: two on first row, third centered below. */
+	.frameParent46 .rapidSkillChangesParent {
+		width: 100% !important;
+		display: grid !important;
+		grid-template-columns: repeat(2, 560px) !important;
+		grid-auto-rows: 300px !important;
+		justify-content: center !important;
+		align-items: stretch !important;
+		gap: 24px !important;
+	}
+
+	.frameParent46 .rapidSkillChangesParent > :nth-child(3) {
+		grid-column: 1 / -1 !important;
+		justify-self: center !important;
+		width: 560px !important;
+	}
+
+	/* Last two cards remain a balanced centered row. */
+	.frameParent46 .progressTrackingParent {
+		width: 100% !important;
+		display: grid !important;
+		grid-template-columns: repeat(2, 560px) !important;
+		grid-auto-rows: 300px !important;
+		justify-content: center !important;
+		align-items: stretch !important;
+		gap: 24px !important;
+	}
+
+	.frameParent46 .rapidSkillChanges,
+	.frameParent46 .lowEngagementParent,
+	.frameParent46 .lowEngagement {
+		width: 560px !important;
+		max-width: 560px !important;
+		height: 300px !important;
+		min-height: 300px !important;
+	}
+
+	/* Keep the content centered vertically after reducing the card height. */
+	.frameParent46 .frameParent47,
+	.frameParent46 .frameParent51,
+	.frameParent46 .lowEngagementInner {
+		top: 20px !important;
+		left: 50% !important;
+		width: 430px !important;
+		max-width: calc(100% - 44px) !important;
+		height: 260px !important;
+		padding: 0 !important;
+		transform: translateX(-50%) !important;
+		display: flex !important;
+		flex-direction: column !important;
+		align-items: center !important;
+		justify-content: space-between !important;
+		gap: 16px !important;
+		box-sizing: border-box !important;
+	}
+
+	.frameParent46 .frameParent54 {
+		width: 100% !important;
+		height: 260px !important;
+		display: flex !important;
+		flex-direction: column !important;
+		align-items: center !important;
+		justify-content: space-between !important;
+		gap: 16px !important;
+	}
+
+	.frameParent46 .frameWrapper9,
+	.frameParent46 .frameWrapper11,
+	.frameParent46 .frameWrapper12,
+	.frameParent46 .frameParent48,
+	.frameParent46 .frameParent49,
+	.frameParent46 .frameParent52,
+	.frameParent46 .frameParent55 {
+		width: 100% !important;
+		max-width: 100% !important;
+		height: auto !important;
+		min-height: 0 !important;
+		align-items: center !important;
+		box-sizing: border-box !important;
+	}
+
+	.frameParent46 .frameParent48,
+	.frameParent46 .frameParent52,
+	.frameParent46 .frameWrapper11,
+	.frameParent46 .frameWrapper12 {
+		min-height: 104px !important;
+	}
+
+	.frameParent46 .frameParent50,
+	.frameParent46 .frameParent53 {
+		width: 100% !important;
+		height: 132px !important;
+		min-height: 132px !important;
+		display: flex !important;
+		align-items: center !important;
+		justify-content: center !important;
+		box-sizing: border-box !important;
+	}
+
+	.frameParent46 .frameChild24 {
+		width: 100% !important;
+		height: 132px !important;
+	}
+
+	.frameParent46 .interactiveLearningWith,
+	.frameParent46 .centralizeCourseMaterials,
+	.frameParent46 .personalizedLearningPathways,
+	.frameParent46 .trackAttendanceCourse,
+	.frameParent46 .supportSkillDevelopment {
+		position: relative !important;
+		top: auto !important;
+		left: auto !important;
+		width: calc(100% - 28px) !important;
+		height: auto !important;
+		margin: 0 auto !important;
+		padding: 10px 14px !important;
+		box-sizing: border-box !important;
+		text-align: center !important;
+		z-index: 3 !important;
+	}
+
+	/* The two long headings now occupy the same centered title area. */
+	.frameParent46 .diverseLearningNeeds,
+	.frameParent46 .studentProgressTracking {
+		width: 100% !important;
+		max-width: 100% !important;
+		height: 34px !important;
+		line-height: 32px !important;
+		white-space: nowrap !important;
+		text-align: center !important;
+		left: auto !important;
+		transform: none !important;
+	}
+
+	/* The challenge section is taller in 2-column tablet mode.
+	   Move only the following top-level sections so nothing overlaps. */
+	.universityAndCollegeChild {
+		top: 2976px !important;
+	}
+
+	.frameParent71 {
+		top: 4100px !important;
+	}
+
+	.image20Parent7 {
+		top: 5004px !important;
+	}
+
+	.universityAndCollege {
+		height: 5700px !important;
+		min-height: 5700px !important;
+	}
+}
+
+
+/* ==========================================================================
+   MOBILE KEY CHALLENGES LAYOUT
+   <= 767px
+   One readable card per row; card content uses normal centered spacing and
+   enough height for wrapped descriptions without overlap.
+   ========================================================================== */
+@media screen and (max-width: 767px) {
+
+	.frameParent44 {
+		margin-top: 36px !important;
+		height: auto !important;
+	}
+
+	.frameParent45 {
+		width: 100% !important;
+		height: auto !important;
+		gap: 12px !important;
+		margin-bottom: 16px !important;
+	}
+
+	.frameParent46 {
+		position: relative !important;
+		top: auto !important;
+		left: auto !important;
+		width: 100% !important;
+		max-width: 100% !important;
+		height: auto !important;
+		display: flex !important;
+		flex-direction: column !important;
+		align-items: stretch !important;
+		gap: 14px !important;
+	}
+
+	.frameParent46 .rapidSkillChangesParent,
+	.frameParent46 .progressTrackingParent {
+		width: 100% !important;
+		max-width: 100% !important;
+		display: grid !important;
+		grid-template-columns: minmax(0, 1fr) !important;
+		grid-auto-rows: auto !important;
+		justify-content: stretch !important;
+		align-items: stretch !important;
+		gap: 14px !important;
+	}
+
+	.frameParent46 .rapidSkillChangesParent > :nth-child(3) {
+		grid-column: auto !important;
+		width: 100% !important;
+	}
+
+	.frameParent46 .rapidSkillChanges,
+	.frameParent46 .lowEngagementParent,
+	.frameParent46 .lowEngagement {
+		width: 100% !important;
+		max-width: 100% !important;
+		height: 260px !important;
+		min-height: 260px !important;
+		margin: 0 !important;
+		box-sizing: border-box !important;
+	}
+
+	.frameParent46 .frameParent47,
+	.frameParent46 .frameParent51,
+	.frameParent46 .lowEngagementInner,
+	.frameParent46 .frameParent54 {
+		width: 100% !important;
+		max-width: 100% !important;
+		height: 100% !important;
+		min-height: 0 !important;
+		top: 0 !important;
+		left: 0 !important;
+		padding: 16px 14px !important;
+		transform: none !important;
+		display: flex !important;
+		flex-direction: column !important;
+		align-items: center !important;
+		justify-content: space-between !important;
+		gap: 12px !important;
+		box-sizing: border-box !important;
+	}
+
+	.frameParent46 .frameWrapper9,
+	.frameParent46 .frameWrapper11,
+	.frameParent46 .frameWrapper12,
+	.frameParent46 .frameParent48,
+	.frameParent46 .frameParent49,
+	.frameParent46 .frameParent52,
+	.frameParent46 .frameParent55 {
+		width: 100% !important;
+		max-width: 100% !important;
+		height: auto !important;
+		min-height: 0 !important;
+		display: flex !important;
+		flex-direction: column !important;
+		align-items: center !important;
+		box-sizing: border-box !important;
+	}
+
+	.frameParent46 .frameParent50,
+	.frameParent46 .frameParent53 {
+		width: 100% !important;
+		height: auto !important;
+		min-height: 96px !important;
+		display: flex !important;
+		align-items: center !important;
+		justify-content: center !important;
+		box-sizing: border-box !important;
+	}
+
+	.frameParent46 .frameChild24 {
+		width: 100% !important;
+		height: 100% !important;
+		min-height: 96px !important;
+	}
+
+	.frameParent46 .passiveLearning,
+	.frameParent46 .largeContentManagement,
+	.frameParent46 .diverseLearningNeeds,
+	.frameParent46 .studentProgressTracking,
+	.frameParent46 .careerReadiness {
+		width: 100% !important;
+		max-width: 100% !important;
+		height: auto !important;
+		min-height: 0 !important;
+		margin: 0 !important;
+		left: auto !important;
+		transform: none !important;
+		text-align: center !important;
+		white-space: normal !important;
+		overflow-wrap: normal !important;
+		word-break: normal !important;
+	}
+
+	.frameParent46 .interactiveLearningWith,
+	.frameParent46 .centralizeCourseMaterials,
+	.frameParent46 .personalizedLearningPathways,
+	.frameParent46 .trackAttendanceCourse,
+	.frameParent46 .supportSkillDevelopment {
+		position: relative !important;
+		top: auto !important;
+		left: auto !important;
+		width: 100% !important;
+		max-width: 100% !important;
+		height: auto !important;
+		margin: 0 !important;
+		padding: 12px !important;
+		box-sizing: border-box !important;
+		text-align: center !important;
+		overflow-wrap: normal !important;
+		word-break: normal !important;
+		z-index: 3 !important;
+	}
+
+	/* Keep icon/title spacing identical for all five cards. */
+	.frameParent46 .frameParent49,
+	.frameParent46 .frameParent52,
+	.frameParent46 .frameParent55 {
+		gap: 12px !important;
+	}
+
+	/* Preserve the existing smaller mobile icon treatment. */
+	.frameParent46 .challengeIcon {
+		width: 58px !important;
+		height: 56px !important;
+		flex: 0 0 56px !important;
+	}
+
+	.frameParent46 .challengeIcon::before {
+		width: 54px !important;
+		height: 54px !important;
+		left: 2px !important;
+		top: 1px !important;
+	}
+
+	.frameParent46 .challengeIcon::after {
+		width: 40px !important;
+		height: 40px !important;
+		left: 9px !important;
+		top: 8px !important;
+	}
+
+	.frameParent46 .challengeIconImage {
+		width: 22px !important;
+		height: 22px !important;
+	}
+}
+
+
+/* Narrow phones need a little more vertical room for description wrapping. */
+@media screen and (max-width: 374px) {
+	.frameParent46 .rapidSkillChanges,
+	.frameParent46 .lowEngagementParent,
+	.frameParent46 .lowEngagement {
+		height: 275px !important;
+		min-height: 275px !important;
+	}
+}
+
+/* ==========================================================================
+   FINAL PATCH — KEY CHALLENGES TITLE CENTERING + RESPONSIVE SHADOW RETENTION
+   Scope:
+   - centers the two long Key Challenges headings exactly like the other cards
+   - keeps the same neumorphic raised/inset shadow appearance on tablet/mobile
+   - does not change unrelated sections
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   1) EXACT TITLE CENTERING
+   The long titles were visually shifted because their inner title wrappers
+   kept the original narrow widths. Make all challenge title wrappers use the
+   full card-content width, then center the titles inside that shared space.
+   -------------------------------------------------------------------------- */
+.frameParent46 .frameParent49,
+.frameParent46 .frameParent52,
+.frameParent46 .frameParent55 {
+	width: 100% !important;
+	max-width: 100% !important;
+	margin-left: auto !important;
+	margin-right: auto !important;
+	display: flex !important;
+	flex-direction: column !important;
+	align-items: center !important;
+	justify-content: flex-start !important;
+	box-sizing: border-box !important;
+}
+
+.frameParent46 .diverseLearningNeeds,
+.frameParent46 .studentProgressTracking {
+	width: 100% !important;
+	max-width: 100% !important;
+	height: 34px !important;
+	min-height: 34px !important;
+	position: relative !important;
+	left: auto !important;
+	right: auto !important;
+	transform: none !important;
+	margin: 0 !important;
+	padding: 0 !important;
+	display: block !important;
+	align-self: stretch !important;
+	flex-shrink: 0 !important;
+	letter-spacing: 0.03em;
+	line-height: 32px !important;
+	white-space: nowrap !important;
+	text-align: center !important;
+	box-sizing: border-box !important;
+}
+
+
+/* --------------------------------------------------------------------------
+   2) TABLET / SMALL LAPTOP SHADOW RETENTION
+   These viewports still use the existing scaled desktop canvas. Slightly
+   stronger source shadows compensate for the page zoom so the final rendered
+   shadow remains visually equivalent to the desktop neumorphic appearance.
+   -------------------------------------------------------------------------- */
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+
+	/* Give outer shadows room so they are not clipped by responsive wrappers. */
+	.frameParent44,
+	.frameParent46,
+	.frameParent46 .rapidSkillChangesParent,
+	.frameParent46 .progressTrackingParent {
+		overflow: visible !important;
+	}
+
+	/* Raised challenge cards */
+	.frameParent46 .rapidSkillChanges,
+	.frameParent46 .lowEngagement {
+		box-shadow:
+			-7px -7px 13px #FFFFFF,
+			 7px  7px 13px #C4C4C4 !important;
+	}
+
+	/* The third-card wrapper itself must not hide the card's outside shadow. */
+	.frameParent46 .lowEngagementParent {
+		overflow: visible !important;
+	}
+
+	/* Inset description panels */
+	.frameParent46 .frameChild24 {
+		box-shadow:
+			inset -6px -6px 11px #FFFFFF,
+			inset  6px  6px 11px #C4C4C4 !important;
+	}
+
+	/* Icon outer ring / icon plate */
+	.frameParent46 .challengeIcon::before {
+		box-shadow:
+			inset -6px -6px 11px #FFFFFF,
+			inset  6px  6px 11px #C4C4C4 !important;
+	}
+
+	.frameParent46 .challengeIcon::after {
+		box-shadow:
+			-6px -6px 11px #FFFFFF,
+			 6px  6px 11px #C4C4C4 !important;
+	}
+
+	/* Keep the two long headings on one centered line in tablet view. */
+	.frameParent46 .diverseLearningNeeds,
+	.frameParent46 .studentProgressTracking {
+		width: 100% !important;
+		max-width: 100% !important;
+		white-space: nowrap !important;
+		text-align: center !important;
+	}
+}
+
+
+/* Extra compensation for 768–1023 where the original 1440px canvas is
+   reduced the most by zoom. */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+	.frameParent46 .rapidSkillChanges,
+	.frameParent46 .lowEngagement {
+		box-shadow:
+			-8px -8px 15px #FFFFFF,
+			 8px  8px 15px #C4C4C4 !important;
+	}
+
+	.frameParent46 .frameChild24 {
+		box-shadow:
+			inset -7px -7px 13px #FFFFFF,
+			inset  7px  7px 13px #C4C4C4 !important;
+	}
+
+	.frameParent46 .challengeIcon::before {
+		box-shadow:
+			inset -7px -7px 13px #FFFFFF,
+			inset  7px  7px 13px #C4C4C4 !important;
+	}
+
+	.frameParent46 .challengeIcon::after {
+		box-shadow:
+			-7px -7px 13px #FFFFFF,
+			 7px  7px 13px #C4C4C4 !important;
+	}
+}
+
+
+/* --------------------------------------------------------------------------
+   3) TRUE MOBILE SHADOW RETENTION
+   Keep cards inside a small shadow-safe gutter and restore a clearly visible
+   raised/inset neumorphic effect without changing the card design.
+   -------------------------------------------------------------------------- */
+@media screen and (max-width: 767px) {
+
+	.frameParent44 {
+		overflow: visible !important;
+	}
+
+	.frameParent46 {
+		overflow: visible !important;
+		padding-left: 8px !important;
+		padding-right: 8px !important;
+		box-sizing: border-box !important;
+	}
+
+	.frameParent46 .rapidSkillChangesParent,
+	.frameParent46 .progressTrackingParent {
+		overflow: visible !important;
+		padding: 7px 0 !important;
+		box-sizing: border-box !important;
+	}
+
+	.frameParent46 .rapidSkillChanges,
+	.frameParent46 .lowEngagementParent,
+	.frameParent46 .lowEngagement {
+		max-width: calc(100% - 8px) !important;
+		margin-left: auto !important;
+		margin-right: auto !important;
+	}
+
+	.frameParent46 .rapidSkillChanges,
+	.frameParent46 .lowEngagement {
+		box-shadow:
+			-5px -5px 10px #FFFFFF,
+			 5px  5px 10px #C4C4C4 !important;
+	}
+
+	.frameParent46 .lowEngagementParent {
+		overflow: visible !important;
+	}
+
+	.frameParent46 .frameChild24 {
+		box-shadow:
+			inset -5px -5px 10px #FFFFFF,
+			inset  5px  5px 10px #C4C4C4 !important;
+	}
+
+	.frameParent46 .challengeIcon::before {
+		box-shadow:
+			inset -5px -5px 9px #FFFFFF,
+			inset  5px  5px 9px #C4C4C4 !important;
+	}
+
+	.frameParent46 .challengeIcon::after {
+		box-shadow:
+			-4px -4px 8px #FFFFFF,
+			 4px  4px 8px #C4C4C4 !important;
+	}
+
+	/* On phones, allow only these two long headings to wrap when necessary.
+	   They remain perfectly centered and keep the same title spacing. */
+	.frameParent46 .diverseLearningNeeds,
+	.frameParent46 .studentProgressTracking {
+		width: 100% !important;
+		max-width: 100% !important;
+		height: auto !important;
+		min-height: 32px !important;
+		line-height: 24px !important;
+		white-space: normal !important;
+		text-align: center !important;
+		margin: 0 auto !important;
+	}
+
+	/* Preserve clean spacing around every title after the wrapper correction. */
+	.frameParent46 .frameParent49,
+	.frameParent46 .frameParent52,
+	.frameParent46 .frameParent55 {
+		width: 100% !important;
+		max-width: 100% !important;
+		align-items: center !important;
+		justify-content: flex-start !important;
+	}
+}
+
+
+/* Very small phones: keep a safe side gutter so raised shadows never touch
+   the viewport edge or get visually cut off. */
+@media screen and (max-width: 374px) {
+	.frameParent46 {
+		padding-left: 10px !important;
+		padding-right: 10px !important;
+	}
+
+	.frameParent46 .rapidSkillChanges,
+	.frameParent46 .lowEngagementParent,
+	.frameParent46 .lowEngagement {
+		max-width: calc(100% - 6px) !important;
+	}
+}
+

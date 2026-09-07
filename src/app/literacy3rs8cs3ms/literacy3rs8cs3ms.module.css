@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
 .neurolxp2103rs8cs3msLite {
   width: 100%;
   height: 2526px;
@@ -7,7 +9,7 @@
   text-align: left;
   font-size: 16px;
   color: #31344b;
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", "Inter";
 }
 .frameParent {
   position: absolute;
@@ -20,7 +22,7 @@
   width: 1440px;
   height: 80px;
   overflow: hidden;
-  font-family: Inter;
+  font-family: "Segoe UI", "Inter";
 }
 .frameChild {
   position: absolute;
@@ -101,7 +103,7 @@
   box-sizing: border-box;
   text-align: center;
   color: #2d4cc8;
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", "Inter";
 }
 .signInHelp {
   width: 97px;
@@ -1353,7 +1355,7 @@
 
   display: block;
 
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", "Inter";
   font-size: 48px;
   font-weight: 700;
   line-height: 60px;
@@ -1369,7 +1371,7 @@
 
   display: block;
 
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", "Inter";
   font-size: 28px;
   font-weight: 400;
   line-height: 36px;
@@ -2694,7 +2696,7 @@
   /* Match the reference PNG for the final section. */
   .whyItMattersParent {
     top: 1667.21px;
-    font-family: "Segoe UI", Inter, Arial, sans-serif;
+    font-family: "Segoe UI", "Inter";
   }
 
   .rectangleParent {
@@ -2702,7 +2704,7 @@
     left: calc(50% - 626px);
     width: 1280px;
     height: 407px;
-    font-family: "Segoe UI", Inter, Arial, sans-serif;
+    font-family: "Segoe UI", "Inter";
   }
 
   .frameParent22 {
@@ -2752,3 +2754,62 @@
     z-index: 3;
   }
 }
+
+/* ==========================================================================
+   FINAL TYPOGRAPHY — HERO EXCLUDED
+   Main section headings: 36px
+   Section subheadings/descriptions: 24px
+   Font stack: Segoe UI primary + Inter fallback only
+   ========================================================================== */
+
+/* Keep the whole page on Segoe UI with Inter as the only fallback. */
+.neurolxp2103rs8cs3msLite,
+.neurolxp2103rs8cs3msLite *,
+.neurolxp2103rs8cs3msLite *::before,
+.neurolxp2103rs8cs3msLite *::after {
+  font-family: "Segoe UI", "Inter" !important;
+}
+
+/* ----------------------------------------------------------
+   NON-HERO MAIN SECTION HEADINGS — 36px
+   ---------------------------------------------------------- */
+.neurolxp2103rs8cs3msLite .poweredByTheContainer,
+.neurolxp2103rs8cs3msLite .whyItMatters,
+.neurolxp2103rs8cs3msLite .neurolxp {
+  font-size: 36px !important;
+  line-height: 45px !important;
+  height: auto !important;
+}
+
+/* Keep coloured words/spans inside section headings on the same rhythm. */
+.neurolxp2103rs8cs3msLite .poweredByTheContainer .poweredByThe2,
+.neurolxp2103rs8cs3msLite .poweredByTheContainer .rs,
+.neurolxp2103rs8cs3msLite .poweredByTheContainer .cs,
+.neurolxp2103rs8cs3msLite .poweredByTheContainer .ms {
+  line-height: 45px !important;
+}
+
+/* ----------------------------------------------------------
+   NON-HERO SECTION SUBHEADINGS / DESCRIPTIONS — 24px
+   ---------------------------------------------------------- */
+.neurolxp2103rs8cs3msLite .buildingStrongFoundations,
+.neurolxp2103rs8cs3msLite .transformingLearningInto,
+.neurolxp2103rs8cs3msLite .bringingThe3rs8cs3msContainer {
+  font-size: 24px !important;
+  line-height: 36px !important;
+  height: auto !important;
+}
+
+/* Keep highlighted words inside the final section copy aligned. */
+.neurolxp2103rs8cs3msLite .bringingThe,
+.neurolxp2103rs8cs3msLite .rs8cs3m,
+.neurolxp2103rs8cs3msLite .cs3,
+.neurolxp2103rs8cs3msLite .m {
+  line-height: 36px !important;
+}
+
+/* HERO TYPOGRAPHY IS INTENTIONALLY UNCHANGED:
+   .skillsThatMatter
+   .poweredByThe
+*/
+

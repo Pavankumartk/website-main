@@ -4111,3 +4111,1052 @@
   }
 }
 
+/* ========================================================================== 
+   CODING LABS VISUAL BASELINE — FINAL TYPOGRAPHY + SPACING NORMALIZATION
+   Reference: Coding Labs page.
+   Scope: typography, font family, whitespace reduction and responsive rhythm.
+   Existing colors, neumorphic effects, card shapes and interactions are retained.
+   ========================================================================== */
+
+.governmentStateInstitution {
+  width: 100% !important;
+  max-width: none !important;
+  height: auto !important;
+  min-height: 100vh !important;
+  margin: 0 auto !important;
+  background: #dfe6e9 !important;
+  color: #31344b !important;
+  font-family: "Segoe UI", "Inter", sans-serif !important;
+  font-size: 16px !important;
+  overflow-x: clip !important;
+  overflow-y: visible !important;
+  zoom: 1 !important;
+}
+
+.governmentStateInstitution,
+.governmentStateInstitution *,
+.governmentStateInstitution *::before,
+.governmentStateInstitution *::after {
+  box-sizing: border-box;
+  font-family: inherit;
+}
+
+/* Remove semantic/manual line-break whitespace that was reserving empty height. */
+.textWrapper {
+  display: none !important;
+}
+
+.trainingAtScale br,
+.centralizedLearning br,
+.trainingAnalytics br,
+.trainAcrossDepartments br,
+.theseCapabilitiesHelp br,
+.scaleTrainingStatewide br {
+  display: none !important;
+}
+
+/* Breadcrumb — same scale as Coding Labs. */
+.frameDiv,
+.industriesWeServe,
+.governmentState {
+  font-size: 16px !important;
+  line-height: 24px !important;
+}
+
+/* Pills / eyebrow labels. */
+.frameInner,
+.useCasesPill,
+.benefitsPill,
+.frameChild22,
+.frameChild23 {
+  font-size: 24px !important;
+  line-height: 30px !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.03em !important;
+}
+
+/* Primary headings — Coding Labs desktop scale. */
+.empoweringGovernmentWorkforcContainer,
+.keyChallengesIn,
+.governmentLearningUse,
+.poweringStatewideLearning,
+.empoweringPublicLearning,
+.poweringGovernmentWorkforce {
+  font-size: 36px !important;
+  line-height: 1.25 !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.03em !important;
+}
+
+.empowering,
+.governmentWorkforce {
+  line-height: inherit !important;
+}
+
+/* Main section/body copy — Coding Labs desktop scale. */
+.neurolxpEnablesGovernments,
+.neurolxpCentralizesGovernmen,
+.theseCapabilitiesHelp,
+.neurolxpEnablesScalable,
+.neurolxpHelpsGovernments {
+  font-size: 24px !important;
+  line-height: 1.43 !important;
+  letter-spacing: 0.03em !important;
+  color: #2f3547 !important;
+}
+
+/* Feature-card typography. */
+.trainingAtScale,
+.centralizedLearning,
+.trainingAnalytics {
+  height: auto !important;
+  font-size: 24px !important;
+  line-height: 32px !important;
+  font-weight: 600 !important;
+}
+
+.trainAcrossDepartments {
+  height: auto !important;
+  font-size: 20px !important;
+  line-height: 28px !important;
+}
+
+/* Accordion/challenge typography. */
+.trainingAtScale2,
+.centralizedTraining,
+.multipleDepartments {
+  height: auto !important;
+  font-size: 24px !important;
+  line-height: 32px !important;
+  font-weight: 600 !important;
+}
+
+.trainGovernmentTeams,
+.ensureRegulatoryCompliance,
+.challengeAnswer,
+.howNeurolxpHelps {
+  height: auto !important;
+  font-size: 20px !important;
+  line-height: 28px !important;
+}
+
+.challengeToggle {
+  font-size: 20px !important;
+  line-height: 28px !important;
+}
+
+/* Use-case and benefit rows follow the Coding Labs skill/card scale. */
+.useCaseTitle {
+  font-size: 20px !important;
+  line-height: 28px !important;
+  font-weight: 600 !important;
+}
+
+.scaleTrainingStatewide,
+.ensurePolicyCompliance,
+.developWorkforceSkills,
+.improvePublicServices,
+.driveDigitalTransformation {
+  height: auto !important;
+  font-size: 20px !important;
+  line-height: 28px !important;
+  font-weight: 600 !important;
+}
+
+.frameIcon {
+  font-size: 24px !important;
+  line-height: 32px !important;
+  font-weight: 600 !important;
+}
+
+/* --------------------------------------------------------------------------
+   DESKTOP — replace fixed page positioning with a compact, predictable flow.
+   -------------------------------------------------------------------------- */
+@media screen and (min-width: 901px) {
+  .governmentStateInstitution {
+    padding: 32px 0 72px !important;
+  }
+
+  .frameDiv {
+    position: relative !important;
+    inset: auto !important;
+    width: min(1280px, calc(100% - 48px)) !important;
+    min-height: 24px !important;
+    margin: 0 auto !important;
+    gap: 8px !important;
+  }
+
+  .vectorParent {
+    position: relative !important;
+    top: auto !important;
+    right: auto !important;
+    bottom: auto !important;
+    left: auto !important;
+    width: min(1280px, calc(100% - 48px)) !important;
+    height: 680px !important;
+    margin: 32px auto 0 !important;
+    transform: none !important;
+  }
+
+  .frameParent2 {
+    top: 44px !important;
+    gap: 28px !important;
+  }
+
+  .frameParent3,
+  .frameParent4 {
+    gap: 24px !important;
+  }
+
+  .neurolxpEnablesGovernments {
+    width: 520px !important;
+  }
+
+  .ellipseParent {
+    top: 28px !important;
+  }
+
+  .frameParent5 {
+    position: relative !important;
+    top: auto !important;
+    right: auto !important;
+    bottom: auto !important;
+    left: auto !important;
+    width: min(840px, calc(100% - 48px)) !important;
+    margin: 64px auto 0 !important;
+    gap: 32px !important;
+  }
+
+  .frameParent6 {
+    gap: 36px !important;
+  }
+
+  .frameWrapper4,
+  .frameWrapper3 {
+    height: 230px !important;
+  }
+
+  .trainingAtScaleParent {
+    top: 50% !important;
+    transform: translateY(-50%) !important;
+    gap: 18px !important;
+  }
+
+  .frameParent8 {
+    position: relative !important;
+    top: auto !important;
+    right: auto !important;
+    bottom: auto !important;
+    left: auto !important;
+    width: min(1280px, calc(100% - 48px)) !important;
+    margin: 72px auto 0 !important;
+    gap: 72px !important;
+    transform: none !important;
+  }
+
+  .frameParent9,
+  .frameWrapper7,
+  .keyChallengesInGovernmentWParent,
+  .frameParent23,
+  .frameParent24,
+  .governmentLearningUseCasesWrapper,
+  .frameParent34,
+  .frameParent35,
+  .frameParent45,
+  .poweringGovernmentWorkforceParent {
+    height: auto !important;
+    min-height: 0 !important;
+  }
+
+  .frameParent9 {
+    gap: 32px !important;
+  }
+
+  .frameWrapper7 {
+    width: min(100%, 1000px) !important;
+  }
+
+  .keyChallengesInGovernmentWParent {
+    gap: 18px !important;
+  }
+
+  .neurolxpCentralizesGovernmen {
+    height: auto !important;
+  }
+
+  .challengeGrid {
+    row-gap: 32px !important;
+  }
+
+  .challengeCard.frameWrapper8,
+  .challengeCard.frameWrapper10 {
+    height: 310px !important;
+    min-height: 310px !important;
+  }
+
+  .challengeCard.challengeCardOpen {
+    height: 455px !important;
+    min-height: 455px !important;
+  }
+
+  .challengeCard .frameParent12 {
+    margin-top: 18px !important;
+  }
+
+  .challengeCard .frameParent13 {
+    gap: 14px !important;
+  }
+
+  .challengeCard .trainingAtScaleGroup {
+    height: auto !important;
+    gap: 10px !important;
+  }
+
+  .challengeToggle {
+    min-height: 62px !important;
+    gap: 6px !important;
+  }
+
+  .challengeAnswer {
+    bottom: 20px !important;
+    min-height: 0 !important;
+    padding: 18px 22px !important;
+  }
+
+  .frameParent23 {
+    gap: 32px !important;
+  }
+
+  .frameParent24 {
+    gap: 16px !important;
+  }
+
+  .governmentLearningUseCasesWrapper {
+    height: auto !important;
+  }
+
+  .frameParent25 {
+    gap: 0 !important;
+  }
+
+  .useCaseGrid {
+    gap: 24px !important;
+  }
+
+  .useCaseCard {
+    height: 100px !important;
+    min-height: 100px !important;
+  }
+
+  .frameParent34 {
+    gap: 72px !important;
+  }
+
+  .frameParent35 {
+    gap: 20px !important;
+  }
+
+  .frameParent36 {
+    gap: 14px !important;
+  }
+
+  .frameParent37 {
+    height: 64px !important;
+    min-height: 64px !important;
+    gap: 14px !important;
+  }
+
+  .benefitIconOuter {
+    width: 64px !important;
+    height: 64px !important;
+    flex-basis: 64px !important;
+  }
+
+  .benefitIconInner {
+    width: 46px !important;
+    height: 46px !important;
+    flex-basis: 46px !important;
+  }
+
+  .benefitIconImage {
+    width: 30px !important;
+    height: 30px !important;
+  }
+
+  .rectangleParent {
+    margin: 0 !important;
+  }
+
+  .frameWrapper19 {
+    top: 64px !important;
+  }
+
+  .frameParent44 {
+    height: auto !important;
+    gap: 20px !important;
+  }
+
+  .frameParent45 {
+    gap: 20px !important;
+  }
+
+  .poweringGovernmentWorkforceParent {
+    gap: 20px !important;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   TABLET — keep Coding Labs typography and tighter section rhythm.
+   -------------------------------------------------------------------------- */
+@media screen and (max-width: 900px) {
+  .governmentStateInstitution {
+    padding: 24px 20px 56px !important;
+  }
+
+  .frameDiv {
+    margin-bottom: 24px !important;
+  }
+
+  .vectorParent {
+    margin-bottom: 56px !important;
+  }
+
+  .frameParent5 {
+    margin-bottom: 56px !important;
+    gap: 24px !important;
+  }
+
+  .frameParent8 {
+    gap: 56px !important;
+  }
+
+  .frameParent9,
+  .frameParent23,
+  .frameParent34,
+  .rectangleParent,
+  .frameParent45,
+  .frameWrapper7,
+  .keyChallengesInGovernmentWParent,
+  .frameParent24,
+  .governmentLearningUseCasesWrapper,
+  .frameParent35,
+  .frameParent36,
+  .poweringGovernmentWorkforceParent {
+    height: auto !important;
+    min-height: 0 !important;
+  }
+
+  .frameParent9 {
+    gap: 28px !important;
+  }
+
+  .keyChallengesInGovernmentWParent,
+  .frameParent24,
+  .frameParent35,
+  .frameParent45,
+  .poweringGovernmentWorkforceParent {
+    gap: 18px !important;
+  }
+
+  .frameParent23,
+  .frameParent34 {
+    gap: 32px !important;
+  }
+
+  .challengeGrid {
+    gap: 28px !important;
+  }
+
+  .useCaseGrid {
+    gap: 18px !important;
+  }
+
+  .empoweringGovernmentWorkforcContainer,
+  .keyChallengesIn,
+  .governmentLearningUse,
+  .poweringStatewideLearning,
+  .empoweringPublicLearning,
+  .poweringGovernmentWorkforce {
+    font-size: 36px !important;
+    line-height: 1.25 !important;
+  }
+
+  .neurolxpEnablesGovernments,
+  .neurolxpCentralizesGovernmen,
+  .theseCapabilitiesHelp,
+  .neurolxpEnablesScalable,
+  .neurolxpHelpsGovernments {
+    font-size: 24px !important;
+    line-height: 34px !important;
+  }
+
+  .frameInner,
+  .useCasesPill,
+  .benefitsPill,
+  .frameChild22,
+  .frameChild23 {
+    font-size: 24px !important;
+    line-height: 30px !important;
+  }
+
+  .frameIcon {
+    font-size: 20px !important;
+    line-height: 28px !important;
+  }
+
+  .trainingAtScale,
+  .centralizedLearning,
+  .trainingAnalytics,
+  .trainingAtScale2,
+  .centralizedTraining,
+  .multipleDepartments {
+    font-size: 22px !important;
+    line-height: 30px !important;
+  }
+
+  .trainAcrossDepartments,
+  .trainGovernmentTeams,
+  .ensureRegulatoryCompliance,
+  .challengeAnswer,
+  .howNeurolxpHelps,
+  .useCaseTitle,
+  .scaleTrainingStatewide,
+  .ensurePolicyCompliance,
+  .developWorkforceSkills,
+  .improvePublicServices,
+  .driveDigitalTransformation {
+    font-size: 18px !important;
+    line-height: 26px !important;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   MOBILE — mirrors Coding Labs <=700px typography and spacing reductions.
+   -------------------------------------------------------------------------- */
+@media screen and (max-width: 700px) {
+  .governmentStateInstitution {
+    padding: 18px 16px 48px !important;
+  }
+
+  .frameDiv,
+  .industriesWeServe,
+  .governmentState {
+    font-size: 14px !important;
+    line-height: 22px !important;
+  }
+
+  .vectorParent {
+    margin-bottom: 48px !important;
+    padding: 28px 20px 34px !important;
+  }
+
+  .frameParent5 {
+    margin-bottom: 48px !important;
+    gap: 20px !important;
+  }
+
+  .frameParent6 {
+    gap: 16px !important;
+  }
+
+  .frameParent8 {
+    gap: 48px !important;
+  }
+
+  .empoweringGovernmentWorkforcContainer,
+  .keyChallengesIn,
+  .governmentLearningUse,
+  .poweringStatewideLearning,
+  .empoweringPublicLearning,
+  .poweringGovernmentWorkforce {
+    font-size: 36px !important;
+    line-height: 1.25 !important;
+  }
+
+  .neurolxpEnablesGovernments,
+  .neurolxpCentralizesGovernmen,
+  .theseCapabilitiesHelp,
+  .neurolxpEnablesScalable,
+  .neurolxpHelpsGovernments {
+    font-size: 16px !important;
+    line-height: 28px !important;
+  }
+
+  .frameInner,
+  .useCasesPill,
+  .benefitsPill,
+  .frameChild22,
+  .frameChild23 {
+    min-height: 42px !important;
+    padding: 8px 20px !important;
+    font-size: 18px !important;
+    line-height: 26px !important;
+  }
+
+  .frameIcon {
+    font-size: 18px !important;
+    line-height: 26px !important;
+  }
+
+  .trainingAtScale,
+  .centralizedLearning,
+  .trainingAnalytics {
+    font-size: 18px !important;
+    line-height: 26px !important;
+  }
+
+  .trainAcrossDepartments {
+    font-size: 16px !important;
+    line-height: 24px !important;
+  }
+
+  .trainingAtScale2,
+  .centralizedTraining,
+  .multipleDepartments {
+    font-size: 20px !important;
+    line-height: 26px !important;
+  }
+
+  .trainGovernmentTeams,
+  .ensureRegulatoryCompliance,
+  .challengeAnswer,
+  .howNeurolxpHelps {
+    font-size: 15px !important;
+    line-height: 22px !important;
+  }
+
+  .challengeToggle {
+    font-size: 15px !important;
+    line-height: 22px !important;
+  }
+
+  .useCaseTitle,
+  .scaleTrainingStatewide,
+  .ensurePolicyCompliance,
+  .developWorkforceSkills,
+  .improvePublicServices,
+  .driveDigitalTransformation {
+    font-size: 16px !important;
+    line-height: 24px !important;
+  }
+
+  .frameParent9,
+  .frameParent23,
+  .frameParent34 {
+    gap: 28px !important;
+  }
+
+  .keyChallengesInGovernmentWParent,
+  .frameParent24,
+  .frameParent35,
+  .frameParent45,
+  .poweringGovernmentWorkforceParent {
+    gap: 16px !important;
+  }
+
+  .challengeGrid {
+    gap: 24px !important;
+  }
+
+  .useCaseGrid {
+    gap: 14px !important;
+  }
+
+  .frameParent36 {
+    gap: 10px !important;
+  }
+
+  .rectangleParent {
+    margin-top: 0 !important;
+  }
+}
+
+/* Small phones — Coding Labs <=480px heading/card scale. */
+@media screen and (max-width: 480px) {
+  .governmentStateInstitution {
+    padding-left: 12px !important;
+    padding-right: 12px !important;
+  }
+
+  .frameDiv,
+  .industriesWeServe,
+  .governmentState {
+    font-size: 13px !important;
+  }
+
+  .empoweringGovernmentWorkforcContainer,
+  .keyChallengesIn,
+  .governmentLearningUse,
+  .poweringStatewideLearning,
+  .empoweringPublicLearning,
+  .poweringGovernmentWorkforce {
+    font-size: 24px !important;
+    line-height: 1.25 !important;
+  }
+
+  .trainingAtScale,
+  .centralizedLearning,
+  .trainingAnalytics,
+  .trainingAtScale2,
+  .centralizedTraining,
+  .multipleDepartments {
+    font-size: 16px !important;
+    line-height: 22px !important;
+  }
+
+  .trainAcrossDepartments,
+  .trainGovernmentTeams,
+  .ensureRegulatoryCompliance,
+  .challengeAnswer,
+  .howNeurolxpHelps {
+    font-size: 12px !important;
+    line-height: 18px !important;
+  }
+
+  .useCaseTitle,
+  .scaleTrainingStatewide,
+  .ensurePolicyCompliance,
+  .developWorkforceSkills,
+  .improvePublicServices,
+  .driveDigitalTransformation {
+    font-size: 15px !important;
+    line-height: 20px !important;
+  }
+
+  .vectorParent,
+  .frameParent5,
+  .frameParent8 {
+    margin-bottom: 0 !important;
+  }
+
+  .vectorParent {
+    margin-bottom: 40px !important;
+  }
+
+  .frameParent5 {
+    margin-bottom: 40px !important;
+  }
+
+  .frameParent8 {
+    gap: 40px !important;
+  }
+}
+
+/* ==========================================================================
+   TARGETED FINAL ADJUSTMENTS — REQUESTED SCREENSHOTS ONLY
+   1) Explore Public Learning hover in/out effect
+   2) Top feature cards: slightly tighter section spacing + slightly shorter cards
+   3) Key Challenges cards: slightly shorter cards
+   4) Benefits list: one bullet + one single-line sentence per row
+
+   IMPORTANT:
+   - No other section styling is changed here.
+   - Desktop-only layout adjustments are scoped to min-width: 901px.
+   - Hover styling is limited to devices that actually support hover.
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   IMAGE 1 — EXPLORE PUBLIC LEARNING BUTTON
+   Hover in  = soft inset/neumorphic pressed state
+   Hover out = returns smoothly to the existing raised state
+   -------------------------------------------------------------------------- */
+.frameWrapper2 .frameIcon {
+  transition:
+    box-shadow 0.24s ease,
+    transform 0.24s ease,
+    color 0.24s ease !important;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .frameWrapper2:hover .frameIcon {
+    box-shadow:
+      inset -4px -4px 6px #ffffff,
+      inset 4px 4px 6px rgba(196, 196, 196, 0.82) !important;
+    transform: translateY(1px) rotate(0.05deg) !important;
+    color: #2d4cc8 !important;
+  }
+
+  .frameWrapper2:not(:hover) .frameIcon {
+    box-shadow:
+      -4px -4px 4px #ffffff,
+      4px 4px 4px rgba(196, 196, 196, 0.8) !important;
+    transform: translateY(0) rotate(0.05deg) !important;
+  }
+}
+
+/* Keep the existing click/pressed feedback stronger than hover. */
+.frameWrapper2:active .frameIcon,
+.frameWrapper2.exploreLearningPressed .frameIcon {
+  box-shadow:
+    inset -4px -4px 4px #ffffff,
+    inset 4px 4px 4px rgba(196, 196, 196, 0.8) !important;
+  transform: translateY(1px) rotate(0.05deg) !important;
+}
+
+/* --------------------------------------------------------------------------
+   IMAGES 2–4 — DESKTOP ONLY
+   -------------------------------------------------------------------------- */
+@media screen and (min-width: 901px) {
+  /* IMAGE 2 — top four feature cards.
+     Only slightly reduce the whitespace before/after this section. */
+  .frameParent5 {
+    margin-top: 52px !important;
+    gap: 26px !important;
+  }
+
+  .frameParent5 .topFeatureCard {
+    height: 218px !important;
+    min-height: 218px !important;
+  }
+
+  /* This is only the gap immediately after the top-feature section,
+     before Key Challenges begins. */
+  .frameParent8 {
+    margin-top: 60px !important;
+  }
+
+  /* Keep the content centered after the small card-height reduction. */
+  .frameParent5 .trainingAtScaleParent {
+    top: 50% !important;
+    transform: translateY(-50%) !important;
+  }
+
+  /* IMAGE 3 — Key Challenges cards.
+     Slight reduction only; widths, radii, icons and internal design stay intact. */
+  .challengeGrid .challengeCard.frameWrapper8,
+  .challengeGrid .challengeCard.frameWrapper10 {
+    height: 296px !important;
+    min-height: 296px !important;
+  }
+
+  .challengeGrid .challengeCard.challengeCardOpen {
+    height: 430px !important;
+    min-height: 430px !important;
+  }
+
+  /* Bring the inner content up only enough to remain visually centered. */
+  .challengeGrid .challengeCard .frameParent12 {
+    margin-top: 10px !important;
+  }
+
+  /* IMAGE 4 — Benefits list.
+     Give the list enough horizontal room so every sentence stays on one line. */
+  .frameParent36 {
+    width: 520px !important;
+    align-items: stretch !important;
+    gap: 14px !important;
+  }
+
+  .frameParent37 {
+    width: 100% !important;
+    height: 64px !important;
+    min-height: 64px !important;
+    display: grid !important;
+    grid-template-columns: 64px minmax(0, 1fr) !important;
+    align-items: center !important;
+    justify-content: start !important;
+    column-gap: 16px !important;
+    margin: 0 !important;
+    text-align: left !important;
+  }
+
+  .frameParent37 .benefitIconOuter {
+    position: relative !important;
+    inset: auto !important;
+    margin: 0 !important;
+    transform: none !important;
+    justify-self: start !important;
+  }
+
+  .frameParent37 .scaleTrainingStatewide,
+  .frameParent37 .ensurePolicyCompliance,
+  .frameParent37 .developWorkforceSkills,
+  .frameParent37 .improvePublicServices,
+  .frameParent37 .trackLearningProgress,
+  .frameParent37 .driveDigitalTransformation {
+    width: auto !important;
+    max-width: none !important;
+    height: auto !important;
+    min-height: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    display: block !important;
+    text-align: left !important;
+    white-space: nowrap !important;
+    line-height: 36px !important;
+    flex: none !important;
+  }
+}
+
+/* ==========================================================================
+   FINAL DESKTOP-ONLY SPACING FIX — HERO TO TOP FEATURE CARDS
+   Reduces only the blank space shown between the hero section and the
+   Training at Scale / Centralized Learning card section.
+   Tablet and mobile layouts are untouched.
+   ========================================================================== */
+@media screen and (min-width: 901px) {
+  .frameParent5 {
+    margin-top: 24px !important;
+  }
+}
+
+/* ==========================================================================
+   FINAL DESKTOP-ONLY FIX — KEY CHALLENGE CARDS
+   Changes ONLY this section:
+   1. Slightly reduces all five closed card heights.
+   2. Keeps opened cards compact.
+   3. Centers icon, title, description, "How NeuroLXP Helps", and arrow.
+   4. Does not change tablet/mobile or any other page section.
+   ========================================================================== */
+@media screen and (min-width: 901px) {
+
+  /* Slightly shorter closed cards */
+  .challengeGrid .challengeCard.frameWrapper8,
+  .challengeGrid .challengeCard.frameWrapper10 {
+    height: 276px !important;
+    min-height: 276px !important;
+  }
+
+  /* Keep expanded state proportional to the reduced card */
+  .challengeGrid .challengeCard.challengeCardOpen {
+    height: 410px !important;
+    min-height: 410px !important;
+  }
+
+  /* Main content block — exact horizontal centering */
+  .challengeGrid .challengeCard .frameParent12 {
+    position: relative !important;
+    top: auto !important;
+    left: auto !important;
+    right: auto !important;
+
+    width: 320px !important;
+    max-width: calc(100% - 40px) !important;
+
+    margin: 12px auto 0 !important;
+    padding: 0 !important;
+
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+    gap: 8px !important;
+
+    text-align: center !important;
+    transform: none !important;
+  }
+
+  /* Icon stays exactly in the middle of the card */
+  .challengeGrid .challengeCard .cardIconOuter {
+    margin: 0 auto !important;
+    flex: 0 0 70px !important;
+  }
+
+  /* Text + action content takes the full centered width */
+  .challengeGrid .challengeCard .frameParent13 {
+    width: 100% !important;
+    align-self: center !important;
+
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+
+    gap: 8px !important;
+    margin: 0 auto !important;
+    text-align: center !important;
+  }
+
+  .challengeGrid .challengeCard .trainingAtScaleGroup {
+    width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+
+    gap: 6px !important;
+    margin: 0 auto !important;
+    text-align: center !important;
+  }
+
+  /* All five card titles use the exact same center alignment */
+  .challengeGrid .challengeCard .trainingAtScale2,
+  .challengeGrid .challengeCard .centralizedTraining,
+  .challengeGrid .challengeCard .multipleDepartments {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+
+    margin: 0 auto !important;
+    padding: 0 !important;
+
+    display: block !important;
+    align-self: center !important;
+
+    text-align: center !important;
+    line-height: 30px !important;
+  }
+
+  /* All descriptions use the exact same center line */
+  .challengeGrid .challengeCard .trainGovernmentTeams,
+  .challengeGrid .challengeCard .ensureRegulatoryCompliance {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+
+    margin: 0 auto !important;
+    padding: 0 !important;
+
+    display: block !important;
+    align-self: center !important;
+
+    text-align: center !important;
+    line-height: 28px !important;
+  }
+
+  /* Center the How NeuroLXP Helps text and arrow */
+  .challengeGrid .challengeCard .challengeToggle {
+    width: 100% !important;
+    min-height: 64px !important;
+
+    margin: 0 auto !important;
+    padding: 0 !important;
+
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+
+    gap: 4px !important;
+    text-align: center !important;
+  }
+
+  .challengeGrid .challengeCard .howNeurolxpHelps {
+    width: 100% !important;
+    height: auto !important;
+
+    margin: 0 auto !important;
+    padding: 0 !important;
+
+    display: block !important;
+    text-align: center !important;
+    line-height: 30px !important;
+  }
+
+  .challengeGrid .challengeCard .arrowDownDoubleIcon {
+    display: block !important;
+    margin: 0 auto !important;
+    flex: 0 0 32px !important;
+  }
+
+  /* Keep the expanded answer inside the shorter open card */
+  .challengeGrid .challengeCard .challengeAnswer {
+    bottom: 16px !important;
+    min-height: 0 !important;
+    padding: 16px 20px !important;
+  }
+}

@@ -6460,3 +6460,2544 @@
   }
 }
 
+/* ==========================================================================
+   FINAL RESPONSIVE PATCH — ONLY THE 3 REQUESTED SECTIONS
+   Desktop (1025px+) is intentionally untouched.
+
+   Updated sections:
+   1) Benefits for Retail Organizations
+   2) Smarter Healthcare Learning
+   3) Powering Learning for Healthcare / final CTA
+
+   No other section layout is changed.
+   ========================================================================== */
+
+
+/* ==========================================================================
+   TABLET — 769px to 1024px
+   ========================================================================== */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+
+  /* ------------------------------------------------------------------------
+     1) BENEFITS FOR RETAIL ORGANIZATIONS
+     Header first, then a balanced 2-column benefits grid.
+     ------------------------------------------------------------------------ */
+  .retailHealthcare > .frameParent15 {
+    position: relative !important;
+    inset: auto !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+    margin-top: 72px !important;
+    padding: 0 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 30px !important;
+    box-sizing: border-box !important;
+  }
+
+  .retailHealthcare > .frameParent15 .frameParent16 {
+    position: relative !important;
+    inset: auto !important;
+    width: 100% !important;
+    max-width: 780px !important;
+    height: auto !important;
+    min-height: 0 !important;
+    margin: 0 auto !important;
+    padding: 66px 0 0 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 14px !important;
+    text-align: center !important;
+    box-sizing: border-box !important;
+  }
+
+  .retailHealthcare > .frameParent15 .frameParent16::before {
+    top: 0 !important;
+    left: 50% !important;
+    right: auto !important;
+    transform: translateX(-50%) !important;
+    margin: 0 !important;
+  }
+
+  .retailHealthcare > .frameParent15 .benefitsForRetail,
+  .retailHealthcare > .frameParent15 .neurolxpEnablesSmarter2 {
+    position: relative !important;
+    inset: auto !important;
+    width: 100% !important;
+    max-width: 760px !important;
+    height: auto !important;
+    min-height: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    text-align: center !important;
+    white-space: normal !important;
+    overflow: visible !important;
+  }
+
+  .retailHealthcare > .frameParent15 .neurolxpEnablesSmarter2 br {
+    display: none !important;
+  }
+
+  .retailHealthcare > .frameParent15 .frameParent17 {
+    position: relative !important;
+    inset: auto !important;
+    width: 100% !important;
+    max-width: 780px !important;
+    height: auto !important;
+    min-height: 0 !important;
+    margin: 0 auto !important;
+    padding: 0 !important;
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    align-items: stretch !important;
+    justify-content: center !important;
+    gap: 20px 28px !important;
+    box-sizing: border-box !important;
+  }
+
+  .retailHealthcare > .frameParent15 .frameParent17 > .frameParent18,
+  .retailHealthcare > .frameParent15 .frameParent17 > .frameParent19 {
+    position: relative !important;
+    inset: auto !important;
+    width: 100% !important;
+    min-width: 0 !important;
+    max-width: none !important;
+    height: auto !important;
+    min-height: 72px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    display: grid !important;
+    grid-template-columns: 70px minmax(0, 1fr) !important;
+    column-gap: 14px !important;
+    align-items: center !important;
+    box-sizing: border-box !important;
+  }
+
+  .retailHealthcare > .frameParent15 .frameParent17 > :last-child {
+    grid-column: 1 / -1 !important;
+    width: calc((100% - 28px) / 2) !important;
+    justify-self: center !important;
+  }
+
+  .retailHealthcare > .frameParent15 .frameChild9,
+  .retailHealthcare > .frameParent15 .retailBenefitIcon {
+    position: relative !important;
+    inset: auto !important;
+    width: 70px !important;
+    min-width: 70px !important;
+    max-width: 70px !important;
+    height: 70px !important;
+    min-height: 70px !important;
+    max-height: 70px !important;
+    margin: 0 !important;
+    align-self: center !important;
+  }
+
+  .retailHealthcare > .frameParent15 .consistentTraining,
+  .retailHealthcare > .frameParent15 .betterCustomerExperience,
+  .retailHealthcare > .frameParent15 .quickOnboarding,
+  .retailHealthcare > .frameParent15 .continuousDevelopment,
+  .retailHealthcare > .frameParent15 .performanceTracking {
+    position: relative !important;
+    inset: auto !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    display: block !important;
+    align-self: center !important;
+    text-align: left !important;
+    white-space: normal !important;
+    overflow: visible !important;
+    overflow-wrap: normal !important;
+    word-break: normal !important;
+  }
+
+
+  /* ------------------------------------------------------------------------
+     2) SMARTER HEALTHCARE LEARNING
+     Badge, heading and paragraph are centered with normal spacing.
+     Cards use 2 columns + the final card centered on the second row.
+     ------------------------------------------------------------------------ */
+  .retailHealthcare > .frameParent23 {
+    position: relative !important;
+    inset: auto !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+    margin-top: 72px !important;
+    padding: 0 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 30px !important;
+    box-sizing: border-box !important;
+  }
+
+  .retailHealthcare > .frameParent23 .frameParent27 {
+    order: 1 !important;
+    position: relative !important;
+    inset: auto !important;
+    width: 100% !important;
+    max-width: 760px !important;
+    height: auto !important;
+    min-height: 0 !important;
+    margin: 0 auto !important;
+    padding: 66px 0 0 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 14px !important;
+    text-align: center !important;
+    box-sizing: border-box !important;
+  }
+
+  .retailHealthcare > .frameParent23 .frameParent27::before {
+    top: 0 !important;
+    left: 50% !important;
+    right: auto !important;
+    transform: translateX(-50%) !important;
+    margin: 0 !important;
+  }
+
+  .retailHealthcare > .frameParent23 .smarterHealthcareLearning,
+  .retailHealthcare > .frameParent23 .healthcareOrganizationsNeed {
+    position: relative !important;
+    inset: auto !important;
+    width: 100% !important;
+    max-width: 720px !important;
+    height: auto !important;
+    min-height: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    text-align: center !important;
+    white-space: normal !important;
+    overflow: visible !important;
+    overflow-wrap: normal !important;
+    word-break: normal !important;
+  }
+
+  .retailHealthcare > .frameParent23 .healthcareOrganizationsNeed br {
+    display: none !important;
+  }
+
+  .retailHealthcare > .frameParent23 .frameParent24 {
+    order: 2 !important;
+    position: relative !important;
+    inset: auto !important;
+    width: 100% !important;
+    max-width: 680px !important;
+    height: auto !important;
+    min-height: 0 !important;
+    margin: 0 auto !important;
+    padding: 0 !important;
+    display: grid !important;
+    grid-template-columns: repeat(2, 300px) !important;
+    justify-content: center !important;
+    align-items: stretch !important;
+    gap: 26px !important;
+    box-sizing: border-box !important;
+  }
+
+  .retailHealthcare > .frameParent23 .frameParent26 {
+    display: contents !important;
+  }
+
+  .retailHealthcare > .frameParent23 .frameWrapper10,
+  .retailHealthcare > .frameParent23 .rectangleParent3,
+  .retailHealthcare > .frameParent23 .rectangleParent4 {
+    width: 300px !important;
+    max-width: 300px !important;
+    min-width: 0 !important;
+    margin: 0 auto !important;
+    box-sizing: border-box !important;
+  }
+
+  .retailHealthcare > .frameParent23 .frameParent26 > :last-child {
+    grid-column: 1 / -1 !important;
+    justify-self: center !important;
+  }
+}
+
+
+/* ==========================================================================
+   WIDE TABLET CTA — 861px to 1024px
+   Preserve the desktop-style split visual, but reserve a separate image area
+   so text can never overlap or be clipped by the image.
+   ========================================================================== */
+@media screen and (min-width: 861px) and (max-width: 1024px) {
+
+  .retailHealthcare > .frameParent33 {
+    position: relative !important;
+    inset: auto !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    height: 470px !important;
+    min-height: 470px !important;
+    margin-top: 72px !important;
+    padding: 20px !important;
+    box-sizing: border-box !important;
+    overflow: hidden !important;
+  }
+
+  .retailHealthcare > .frameParent33 > .image21Parent {
+    position: relative !important;
+    inset: auto !important;
+    top: auto !important;
+    left: auto !important;
+    width: 100% !important;
+    height: 430px !important;
+    min-height: 430px !important;
+    margin: 0 !important;
+    overflow: hidden !important;
+  }
+
+  .retailHealthcare > .frameParent33 .image21Parent.retailVideoRevealSection .retailFinalVideoSlide,
+  .retailHealthcare > .frameParent33 .image21Parent .retailFinalVideo {
+    position: absolute !important;
+    top: 0 !important;
+    right: 0 !important;
+    bottom: 0 !important;
+    left: auto !important;
+    width: 52% !important;
+    max-width: 52% !important;
+    height: 100% !important;
+    min-height: 100% !important;
+    object-fit: cover !important;
+    object-position: center !important;
+    transform: none !important;
+  }
+
+  .retailHealthcare > .frameParent33 .image21Parent.retailVideoRevealSection .retailFinalVideoContent {
+    position: absolute !important;
+    top: 50% !important;
+    left: 30px !important;
+    right: auto !important;
+    bottom: auto !important;
+    width: 40% !important;
+    max-width: 40% !important;
+    height: auto !important;
+    min-height: 0 !important;
+    padding: 0 !important;
+    transform: translateY(-50%) !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 24px !important;
+    text-align: left !important;
+    box-sizing: border-box !important;
+    overflow: visible !important;
+  }
+
+  .retailHealthcare > .frameParent33 .frameParent34,
+  .retailHealthcare > .frameParent33 .frameParent4,
+  .retailHealthcare > .frameParent33 .frameParent36 {
+    position: relative !important;
+    inset: auto !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    align-items: flex-start !important;
+    text-align: left !important;
+    overflow: visible !important;
+  }
+
+  .retailHealthcare > .frameParent33 .frameParent34 {
+    gap: 26px !important;
+  }
+
+  .retailHealthcare > .frameParent33 .frameParent36 {
+    padding-top: 66px !important;
+    gap: 14px !important;
+  }
+
+  .retailHealthcare > .frameParent33 .frameParent36::before {
+    top: 0 !important;
+    left: 50% !important;
+    right: auto !important;
+    transform: translateX(-50%) !important;
+    margin: 0 !important;
+  }
+
+  .retailHealthcare > .frameParent33 .poweringLearningFor,
+  .retailHealthcare > .frameParent33 .neurolxpHelpsRetail {
+    position: relative !important;
+    inset: auto !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    text-align: left !important;
+    white-space: normal !important;
+    overflow: visible !important;
+    overflow-wrap: normal !important;
+    word-break: normal !important;
+  }
+
+  .retailHealthcare > .frameParent33 .neurolxpHelpsRetail br {
+    display: none !important;
+  }
+
+  .retailHealthcare > .frameParent33 .frameWrapper14 {
+    margin: 0 !important;
+    flex-shrink: 0 !important;
+  }
+}
+
+
+/* ==========================================================================
+   NARROW TABLET — 769px to 860px
+   The final CTA stacks before the split layout becomes too narrow.
+   ========================================================================== */
+@media screen and (min-width: 769px) and (max-width: 860px) {
+
+  .retailHealthcare > .frameParent33 {
+    position: relative !important;
+    inset: auto !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+    margin-top: 72px !important;
+    padding: 16px !important;
+    box-sizing: border-box !important;
+    overflow: hidden !important;
+  }
+
+  .retailHealthcare > .frameParent33 > .image21Parent {
+    position: relative !important;
+    inset: auto !important;
+    width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+    margin: 0 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    overflow: hidden !important;
+  }
+
+  .retailHealthcare > .frameParent33 .image21Parent.retailVideoRevealSection .retailFinalVideoContent {
+    position: relative !important;
+    inset: auto !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+    transform: none !important;
+    order: 1 !important;
+    padding: 28px 24px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 22px !important;
+    text-align: center !important;
+    box-sizing: border-box !important;
+  }
+
+  .retailHealthcare > .frameParent33 .frameParent34,
+  .retailHealthcare > .frameParent33 .frameParent4,
+  .retailHealthcare > .frameParent33 .frameParent36 {
+    position: relative !important;
+    inset: auto !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+    margin: 0 !important;
+    align-items: center !important;
+    text-align: center !important;
+  }
+
+  .retailHealthcare > .frameParent33 .frameParent36 {
+    padding-top: 66px !important;
+    gap: 14px !important;
+  }
+
+  .retailHealthcare > .frameParent33 .frameParent36::before {
+    top: 0 !important;
+    left: 50% !important;
+    right: auto !important;
+    transform: translateX(-50%) !important;
+    margin: 0 !important;
+  }
+
+  .retailHealthcare > .frameParent33 .poweringLearningFor,
+  .retailHealthcare > .frameParent33 .neurolxpHelpsRetail {
+    width: 100% !important;
+    max-width: 620px !important;
+    height: auto !important;
+    min-height: 0 !important;
+    margin: 0 auto !important;
+    text-align: center !important;
+    white-space: normal !important;
+    overflow: visible !important;
+  }
+
+  .retailHealthcare > .frameParent33 .neurolxpHelpsRetail br {
+    display: none !important;
+  }
+
+  .retailHealthcare > .frameParent33 .frameWrapper14 {
+    margin: 0 auto !important;
+  }
+
+  .retailHealthcare > .frameParent33 .image21Parent.retailVideoRevealSection .retailFinalVideoSlide,
+  .retailHealthcare > .frameParent33 .image21Parent .retailFinalVideo {
+    position: relative !important;
+    inset: auto !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    height: 300px !important;
+    min-height: 300px !important;
+    order: 2 !important;
+    object-fit: cover !important;
+    object-position: center !important;
+    transform: none !important;
+  }
+}
+
+
+/* ==========================================================================
+   MOBILE — 768px and below
+   ========================================================================== */
+@media screen and (max-width: 768px) {
+
+  /* ------------------------------------------------------------------------
+     1) RETAIL BENEFITS — one clean centered list
+     ------------------------------------------------------------------------ */
+  .retailHealthcare > .frameParent15 {
+    position: relative !important;
+    inset: auto !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+    margin-top: 48px !important;
+    margin-bottom: 0 !important;
+    padding: 0 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 24px !important;
+    box-sizing: border-box !important;
+  }
+
+  .retailHealthcare > .frameParent15 .frameParent16 {
+    position: relative !important;
+    inset: auto !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+    margin: 0 auto !important;
+    padding: 62px 0 0 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 12px !important;
+    text-align: center !important;
+  }
+
+  .retailHealthcare > .frameParent15 .frameParent16::before {
+    top: 0 !important;
+    left: 50% !important;
+    right: auto !important;
+    transform: translateX(-50%) !important;
+    margin: 0 !important;
+  }
+
+  .retailHealthcare > .frameParent15 .benefitsForRetail,
+  .retailHealthcare > .frameParent15 .neurolxpEnablesSmarter2 {
+    position: relative !important;
+    inset: auto !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    text-align: center !important;
+    white-space: normal !important;
+    overflow: visible !important;
+  }
+
+  .retailHealthcare > .frameParent15 .neurolxpEnablesSmarter2 br {
+    display: none !important;
+  }
+
+  .retailHealthcare > .frameParent15 .frameParent17 {
+    position: relative !important;
+    inset: auto !important;
+    width: min(100%, 360px) !important;
+    max-width: 360px !important;
+    height: auto !important;
+    min-height: 0 !important;
+    margin: 0 auto !important;
+    padding: 0 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: stretch !important;
+    gap: 14px !important;
+  }
+
+  .retailHealthcare > .frameParent15 .frameParent17 > .frameParent18,
+  .retailHealthcare > .frameParent15 .frameParent17 > .frameParent19,
+  .retailHealthcare > .frameParent15 .frameParent17 > :last-child {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-height: 66px !important;
+    height: auto !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    display: grid !important;
+    grid-template-columns: 64px minmax(0, 1fr) !important;
+    column-gap: 12px !important;
+    align-items: center !important;
+  }
+
+  .retailHealthcare > .frameParent15 .frameChild9,
+  .retailHealthcare > .frameParent15 .retailBenefitIcon {
+    width: 64px !important;
+    min-width: 64px !important;
+    max-width: 64px !important;
+    height: 64px !important;
+    min-height: 64px !important;
+    max-height: 64px !important;
+    margin: 0 !important;
+  }
+
+  .retailHealthcare > .frameParent15 .consistentTraining,
+  .retailHealthcare > .frameParent15 .betterCustomerExperience,
+  .retailHealthcare > .frameParent15 .quickOnboarding,
+  .retailHealthcare > .frameParent15 .continuousDevelopment,
+  .retailHealthcare > .frameParent15 .performanceTracking {
+    position: relative !important;
+    inset: auto !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    text-align: left !important;
+    white-space: normal !important;
+    overflow: visible !important;
+  }
+
+
+  /* ------------------------------------------------------------------------
+     2) SMARTER HEALTHCARE LEARNING — one card per row
+     ------------------------------------------------------------------------ */
+  .retailHealthcare > .frameParent23 {
+    position: relative !important;
+    inset: auto !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+    margin-top: 48px !important;
+    margin-bottom: 0 !important;
+    padding: 0 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 24px !important;
+    box-sizing: border-box !important;
+  }
+
+  .retailHealthcare > .frameParent23 .frameParent27 {
+    order: 1 !important;
+    position: relative !important;
+    inset: auto !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+    margin: 0 auto !important;
+    padding: 62px 0 0 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 12px !important;
+    text-align: center !important;
+    box-sizing: border-box !important;
+  }
+
+  .retailHealthcare > .frameParent23 .frameParent27::before {
+    top: 0 !important;
+    left: 50% !important;
+    right: auto !important;
+    transform: translateX(-50%) !important;
+    margin: 0 !important;
+  }
+
+  .retailHealthcare > .frameParent23 .smarterHealthcareLearning,
+  .retailHealthcare > .frameParent23 .healthcareOrganizationsNeed {
+    position: relative !important;
+    inset: auto !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    text-align: center !important;
+    white-space: normal !important;
+    overflow: visible !important;
+  }
+
+  .retailHealthcare > .frameParent23 .healthcareOrganizationsNeed br {
+    display: none !important;
+  }
+
+  .retailHealthcare > .frameParent23 .frameParent24 {
+    order: 2 !important;
+    position: relative !important;
+    inset: auto !important;
+    width: 100% !important;
+    max-width: 340px !important;
+    height: auto !important;
+    min-height: 0 !important;
+    margin: 0 auto !important;
+    padding: 0 !important;
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    justify-items: center !important;
+    gap: 18px !important;
+  }
+
+  .retailHealthcare > .frameParent23 .frameParent26 {
+    display: contents !important;
+  }
+
+  .retailHealthcare > .frameParent23 .frameWrapper10,
+  .retailHealthcare > .frameParent23 .rectangleParent3,
+  .retailHealthcare > .frameParent23 .rectangleParent4 {
+    width: min(100%, 320px) !important;
+    max-width: 320px !important;
+    margin: 0 auto !important;
+    grid-column: auto !important;
+  }
+
+
+  /* ------------------------------------------------------------------------
+     3) FINAL CTA — text above image; no clipping or overlap
+     ------------------------------------------------------------------------ */
+  .retailHealthcare > .frameParent33 {
+    position: relative !important;
+    inset: auto !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+    margin-top: 48px !important;
+    margin-bottom: 0 !important;
+    padding: 12px !important;
+    box-sizing: border-box !important;
+    overflow: hidden !important;
+  }
+
+  .retailHealthcare > .frameParent33 > .image21Parent {
+    position: relative !important;
+    inset: auto !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+    margin: 0 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    overflow: hidden !important;
+  }
+
+  .retailHealthcare > .frameParent33 .image21Parent.retailVideoRevealSection .retailFinalVideoContent {
+    position: relative !important;
+    inset: auto !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+    transform: none !important;
+    order: 1 !important;
+    padding: 24px 16px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 20px !important;
+    text-align: center !important;
+    box-sizing: border-box !important;
+  }
+
+  .retailHealthcare > .frameParent33 .frameParent34,
+  .retailHealthcare > .frameParent33 .frameParent4,
+  .retailHealthcare > .frameParent33 .frameParent36 {
+    position: relative !important;
+    inset: auto !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    align-items: center !important;
+    text-align: center !important;
+  }
+
+  .retailHealthcare > .frameParent33 .frameParent36 {
+    padding-top: 62px !important;
+    gap: 12px !important;
+  }
+
+  .retailHealthcare > .frameParent33 .frameParent36::before {
+    top: 0 !important;
+    left: 50% !important;
+    right: auto !important;
+    transform: translateX(-50%) !important;
+    margin: 0 !important;
+  }
+
+  .retailHealthcare > .frameParent33 .poweringLearningFor,
+  .retailHealthcare > .frameParent33 .neurolxpHelpsRetail {
+    position: relative !important;
+    inset: auto !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+    margin: 0 auto !important;
+    padding: 0 !important;
+    text-align: center !important;
+    white-space: normal !important;
+    overflow: visible !important;
+    overflow-wrap: normal !important;
+    word-break: normal !important;
+  }
+
+  .retailHealthcare > .frameParent33 .neurolxpHelpsRetail br {
+    display: none !important;
+  }
+
+  .retailHealthcare > .frameParent33 .frameWrapper14 {
+    margin: 0 auto !important;
+  }
+
+  .retailHealthcare > .frameParent33 .image21Parent.retailVideoRevealSection .retailFinalVideoSlide,
+  .retailHealthcare > .frameParent33 .image21Parent .retailFinalVideo {
+    position: relative !important;
+    inset: auto !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    height: 230px !important;
+    min-height: 230px !important;
+    order: 2 !important;
+    object-fit: cover !important;
+    object-position: center !important;
+    transform: none !important;
+  }
+}
+
+
+/* ==========================================================================
+   SMALL MOBILE — 425px and below
+   ========================================================================== */
+@media screen and (max-width: 425px) {
+
+  .retailHealthcare > .frameParent15 .frameParent17,
+  .retailHealthcare > .frameParent23 .frameParent24 {
+    max-width: 320px !important;
+  }
+
+  .retailHealthcare > .frameParent15 .frameParent17 > .frameParent18,
+  .retailHealthcare > .frameParent15 .frameParent17 > .frameParent19,
+  .retailHealthcare > .frameParent15 .frameParent17 > :last-child {
+    grid-template-columns: 60px minmax(0, 1fr) !important;
+    column-gap: 10px !important;
+  }
+
+  .retailHealthcare > .frameParent15 .frameChild9,
+  .retailHealthcare > .frameParent15 .retailBenefitIcon {
+    width: 60px !important;
+    min-width: 60px !important;
+    max-width: 60px !important;
+    height: 60px !important;
+    min-height: 60px !important;
+    max-height: 60px !important;
+  }
+
+  .retailHealthcare > .frameParent33 .image21Parent.retailVideoRevealSection .retailFinalVideoSlide,
+  .retailHealthcare > .frameParent33 .image21Parent .retailFinalVideo {
+    height: 210px !important;
+    min-height: 210px !important;
+  }
+}
+
+/* ==========================================================================
+   FINAL REQUESTED UPDATE — UPLOADED FILE ONLY
+
+   Scope:
+   1) Book a Demo / Start Learning button state + colors
+   2) Healthcare learning card title weight/color
+   3) Get Started hover in/out neumorphic effect
+   4) Remove blank gap between this page and Footer
+
+   No other section layout, sizing, responsive arrangement, imagery,
+   typography or spacing is changed.
+   ========================================================================== */
+
+
+/* ==========================================================================
+   1) HERO BUTTONS — SAME BEHAVIOUR AS PREVIOUS UNIVERSITY/BFSI BUTTONS
+
+   Book a Demo:
+   - default blue text
+   - default inset/pressed neumorphic state
+
+   Start Learning:
+   - default dark text
+   - same neumorphic behaviour
+
+   Both:
+   - hover = raised/out
+   - active = inset/in
+   ========================================================================== */
+
+.retailHealthcare .frameParent6 > .requestDemoWrapper,
+.retailHealthcare .frameParent6 > .frameWrapper2 {
+  cursor: pointer !important;
+  background: #dfe6e9 !important;
+  border: 0 !important;
+
+  box-shadow:
+    inset -4px -4px 8px #ffffff,
+    inset 4px 4px 8px rgba(196, 196, 196, 0.82) !important;
+
+  transition:
+    box-shadow 180ms ease,
+    transform 180ms ease,
+    color 180ms ease !important;
+}
+
+
+/* Raised / OUT state */
+.retailHealthcare .frameParent6 > .requestDemoWrapper:hover,
+.retailHealthcare .frameParent6 > .frameWrapper2:hover {
+  box-shadow:
+    -8px -8px 16px #ffffff,
+    8px 8px 16px #c6c6c9 !important;
+
+  transform: none !important;
+}
+
+
+/* Pressed / IN state */
+.retailHealthcare .frameParent6 > .requestDemoWrapper:active,
+.retailHealthcare .frameParent6 > .frameWrapper2:active {
+  box-shadow:
+    inset -4px -4px 8px #ffffff,
+    inset 4px 4px 8px rgba(196, 196, 196, 0.9) !important;
+
+  transform: none !important;
+}
+
+
+/* Book a Demo — blue by default and through interaction states */
+.retailHealthcare .requestDemo,
+.retailHealthcare .frameParent6 > .requestDemoWrapper:hover .requestDemo,
+.retailHealthcare .frameParent6 > .requestDemoWrapper:active .requestDemo {
+  color: #2d4cc8 !important;
+  white-space: nowrap !important;
+}
+
+
+/* Start Learning — dark by default and through interaction states */
+.retailHealthcare .startLearning,
+.retailHealthcare .frameParent6 > .frameWrapper2:hover .startLearning,
+.retailHealthcare .frameParent6 > .frameWrapper2:active .startLearning {
+  color: #31344b !important;
+  white-space: nowrap !important;
+}
+
+
+/* Keep the inner Start Learning wrapper from forcing an unwanted width. */
+.retailHealthcare .startLearningWrapper {
+  width: auto !important;
+  max-width: 100% !important;
+  justify-content: center !important;
+}
+
+
+/* Keyboard focus without altering button geometry. */
+.retailHealthcare .frameParent6 > .requestDemoWrapper:focus-visible,
+.retailHealthcare .frameParent6 > .frameWrapper2:focus-visible {
+  outline: 3px solid #2d4cc8 !important;
+  outline-offset: 3px !important;
+}
+
+
+/* ==========================================================================
+   2) HEALTHCARE LEARNING CARD TITLES — REMOVE HEAVY/BOLD DARK APPEARANCE
+   Only these three card titles are changed.
+   ========================================================================== */
+
+.retailHealthcare .frameParent23 .complianceAndCertification,
+.retailHealthcare .frameParent23 .continuousMedicalEducation,
+.retailHealthcare .frameParent23 .largeHealthcareTeams {
+  font-weight: 400 !important;
+  color: #2f3547 !important;
+  text-shadow: none !important;
+}
+
+
+/* ==========================================================================
+   3) GET STARTED — IN / OUT HOVER EFFECT
+   Same neumorphic interaction pattern as the hero buttons.
+   ========================================================================== */
+
+.retailHealthcare .frameWrapper14 {
+  cursor: pointer !important;
+  background: #dfe6e9 !important;
+
+  /* Default = IN */
+  box-shadow:
+    inset -4px -4px 8px #ffffff,
+    inset 4px 4px 8px rgba(196, 196, 196, 0.82) !important;
+
+  transition:
+    box-shadow 180ms ease,
+    transform 180ms ease,
+    color 180ms ease !important;
+}
+
+
+/* Hover = OUT */
+.retailHealthcare .frameWrapper14:hover {
+  box-shadow:
+    -8px -8px 16px #ffffff,
+    8px 8px 16px #c6c6c9 !important;
+
+  transform: none !important;
+}
+
+
+/* Click = IN */
+.retailHealthcare .frameWrapper14:active {
+  box-shadow:
+    inset -4px -4px 8px #ffffff,
+    inset 4px 4px 8px rgba(196, 196, 196, 0.9) !important;
+
+  transform: none !important;
+}
+
+
+/* Keep Get Started blue in every state. */
+.retailHealthcare .getStarted,
+.retailHealthcare .frameWrapper14:hover .getStarted,
+.retailHealthcare .frameWrapper14:active .getStarted {
+  color: #2d4cc8 !important;
+  white-space: nowrap !important;
+}
+
+
+.retailHealthcare .frameWrapper14:focus-visible {
+  outline: 3px solid #2d4cc8 !important;
+  outline-offset: 3px !important;
+}
+
+
+/* ==========================================================================
+   4) REMOVE WHITE BLANK GAP BETWEEN PAGE AND FOOTER
+
+   The uploaded CSS adds 96px / 72px / 48px bottom padding to
+   .retailHealthcare and also adds footer margin on smaller screens.
+   Override only for this Retail & Healthcare page.
+   ========================================================================== */
+
+.retailAndHealthCare,
+.retailHealthcare {
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+
+/* The final CTA itself should finish exactly at the page boundary. */
+.retailHealthcare > .frameParent33 {
+  margin-bottom: 0 !important;
+}
+
+
+/* Remove the route-specific footer top margin only while this page exists.
+   This avoids changing the footer spacing on unrelated pages. */
+:global(body):has(.retailAndHealthCare) :global(footer) {
+  margin-top: 0 !important;
+}
+
+
+/* In case the page wrapper and footer are direct siblings. */
+.retailAndHealthCare + :global(footer) {
+  margin-top: 0 !important;
+}
+
+
+/* Ensure no extra mobile/tablet bottom padding reappears from earlier rules. */
+@media screen and (max-width: 1200px) {
+  .retailHealthcare {
+    padding-bottom: 0 !important;
+  }
+}
+
+/* ==========================================================================
+   FINAL BREADCRUMB ALIGNMENT FIX
+   Scope: Retail & Healthcare breadcrumb only.
+   Keeps desktop/tablet/mobile section layouts unchanged.
+   ========================================================================== */
+
+.retailHealthcare > .frameDiv {
+  justify-content: flex-start !important;
+  text-align: left !important;
+  align-self: stretch !important;
+}
+
+.retailHealthcare > .frameDiv .ourCustomersWrapper,
+.retailHealthcare > .frameDiv .arrowRightDoubleGroup {
+  justify-content: flex-start !important;
+  text-align: left !important;
+}
+
+.retailHealthcare > .frameDiv .retailHealthcare2,
+.retailHealthcare > .frameDiv .industriesWeServe {
+  text-align: left !important;
+}
+
+/* Tablet: breadcrumb starts from the page's existing 32px content gutter. */
+@media screen and (min-width: 769px) and (max-width: 1200px) {
+  .retailHealthcare > .frameDiv {
+    width: 100% !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    justify-content: flex-start !important;
+    text-align: left !important;
+  }
+}
+
+/* Mobile: breadcrumb starts from the page's existing mobile content gutter. */
+@media screen and (max-width: 768px) {
+  .retailHealthcare > .frameDiv {
+    width: 100% !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    justify-content: flex-start !important;
+    text-align: left !important;
+    align-items: center !important;
+  }
+}
+
+/* ==========================================================================
+   FINAL MOBILE CTA SPACING FIX
+   Scope: "Powering Learning for Retail and Healthcare" section only.
+   Reduces the large empty space between the NeuroLXP badge and heading.
+   No desktop/tablet layout or any other section is changed.
+   ========================================================================== */
+
+@media screen and (max-width: 768px) {
+
+  /* Put the NeuroLXP badge into the normal flex flow on mobile instead of
+     reserving a large absolute-position padding area above the heading. */
+  .retailHealthcare > .frameParent33 .frameParent36 {
+    padding-top: 0 !important;
+    gap: 12px !important;
+  }
+
+  .retailHealthcare > .frameParent33 .frameParent36::before {
+    position: relative !important;
+    top: auto !important;
+    right: auto !important;
+    bottom: auto !important;
+    left: auto !important;
+
+    width: 170.7px !important;
+    height: 50.1px !important;
+
+    margin: 0 auto 6px !important;
+    transform: none !important;
+    align-self: center !important;
+    flex: 0 0 50.1px !important;
+  }
+
+  /* Keep the heading immediately below the badge with only the intended gap. */
+  .retailHealthcare > .frameParent33 .poweringLearningFor {
+    margin-top: 0 !important;
+  }
+}
+
+/* ==========================================================================
+   FINAL SPACING + HEALTHCARE CARD COMPACTNESS FIX
+   Scope is limited to the areas shown in the latest screenshots:
+
+   1) Reduce the large gap between Statistics -> Retail Learning
+   2) Reduce the large gap between Retail Learning cards -> Retail Excellence
+   3) Reduce Healthcare Learning card height and title size slightly
+   4) Remove the duplicated mobile gap before the final CTA
+
+   No other section layout, colors, typography, shadows, images, button
+   behavior or desktop composition is changed.
+   ========================================================================== */
+
+
+/* ==========================================================================
+   1 + 2) DESKTOP SECTION GAPS
+   Existing desktop section gaps were 96px.
+   Keep a clear section division, but make these two specific gaps more compact.
+   ========================================================================== */
+@media screen and (min-width: 1201px) {
+
+  /* Statistics -> Retail Learning */
+  .retailHealthcare > .frameParent8 {
+    margin-top: 52px !important;
+  }
+
+  /* Retail Learning cards -> Retail Excellence */
+  .retailHealthcare > .rectangleParent {
+    margin-top: 52px !important;
+  }
+}
+
+
+/* ==========================================================================
+   TABLET / SMALL LAPTOP
+   Keep the same compact spacing at reduced widths without touching the layout.
+   ========================================================================== */
+@media screen and (min-width: 769px) and (max-width: 1200px) {
+
+  /* Statistics -> Retail Learning */
+  .retailHealthcare > .frameParent8 {
+    margin-top: 44px !important;
+  }
+
+  /* Retail Learning cards -> Retail Excellence */
+  .retailHealthcare > .rectangleParent {
+    margin-top: 44px !important;
+  }
+}
+
+
+/* ==========================================================================
+   3) SMARTER HEALTHCARE LEARNING — COMPACT CARDS
+   Slightly shorter cards + slightly smaller card titles.
+   The section height becomes content-driven so shortening the cards does not
+   leave a new blank area below them.
+   ========================================================================== */
+
+/* Desktop */
+@media screen and (min-width: 1201px) {
+
+  .retailHealthcare > .frameParent23 {
+    height: auto !important;
+    min-height: 0 !important;
+  }
+
+  .retailHealthcare > .frameParent23 .frameParent24 {
+    height: auto !important;
+    min-height: 0 !important;
+    gap: 30px !important;
+  }
+
+  .retailHealthcare > .frameParent23 .frameParent26 {
+    gap: 30px !important;
+  }
+
+  .retailHealthcare > .frameParent23 .frameWrapper10,
+  .retailHealthcare > .frameParent23 .rectangleParent3,
+  .retailHealthcare > .frameParent23 .rectangleParent4 {
+    height: 280px !important;
+    min-height: 280px !important;
+    max-height: 280px !important;
+  }
+
+  .retailHealthcare > .frameParent23 .complianceAndCertification,
+  .retailHealthcare > .frameParent23 .continuousMedicalEducation,
+  .retailHealthcare > .frameParent23 .largeHealthcareTeams {
+    font-size: 22px !important;
+    line-height: 28px !important;
+  }
+}
+
+
+/* Tablet */
+@media screen and (min-width: 769px) and (max-width: 1200px) {
+
+  .retailHealthcare > .frameParent23 {
+    height: auto !important;
+    min-height: 0 !important;
+  }
+
+  .retailHealthcare > .frameParent23 .frameWrapper10,
+  .retailHealthcare > .frameParent23 .rectangleParent3,
+  .retailHealthcare > .frameParent23 .rectangleParent4 {
+    height: 270px !important;
+    min-height: 270px !important;
+    max-height: 270px !important;
+  }
+
+  .retailHealthcare > .frameParent23 .complianceAndCertification,
+  .retailHealthcare > .frameParent23 .continuousMedicalEducation,
+  .retailHealthcare > .frameParent23 .largeHealthcareTeams {
+    font-size: 20px !important;
+    line-height: 27px !important;
+  }
+}
+
+
+/* Mobile */
+@media screen and (max-width: 768px) {
+
+  .retailHealthcare > .frameParent23 .frameWrapper10,
+  .retailHealthcare > .frameParent23 .rectangleParent3,
+  .retailHealthcare > .frameParent23 .rectangleParent4 {
+    height: 260px !important;
+    min-height: 260px !important;
+    max-height: 260px !important;
+  }
+
+  .retailHealthcare > .frameParent23 .complianceAndCertification,
+  .retailHealthcare > .frameParent23 .continuousMedicalEducation,
+  .retailHealthcare > .frameParent23 .largeHealthcareTeams {
+    font-size: 18px !important;
+    line-height: 25px !important;
+  }
+}
+
+
+/* ==========================================================================
+   4) MOBILE — HEALTHCARE BENEFITS -> FINAL CTA SPACING
+   The mobile page shell already supplies its section gap. The final CTA also
+   had its own 48px margin-top, producing a doubled blank space. Remove only
+   that duplicate margin and retain the normal page gap.
+   ========================================================================== */
+@media screen and (max-width: 768px) {
+
+  .retailHealthcare > .frameParent33 {
+    margin-top: 0 !important;
+  }
+}
+
+
+/* Very small phones retain the same compact relationship. */
+@media screen and (max-width: 425px) {
+
+  .retailHealthcare > .frameParent23 .frameWrapper10,
+  .retailHealthcare > .frameParent23 .rectangleParent3,
+  .retailHealthcare > .frameParent23 .rectangleParent4 {
+    height: 250px !important;
+    min-height: 250px !important;
+    max-height: 250px !important;
+  }
+
+  .retailHealthcare > .frameParent23 .complianceAndCertification,
+  .retailHealthcare > .frameParent23 .continuousMedicalEducation,
+  .retailHealthcare > .frameParent23 .largeHealthcareTeams {
+    font-size: 17px !important;
+    line-height: 23px !important;
+  }
+}
+
+/* ==========================================================================
+   FINAL HEALTHCARE LEARNING CARD SHADOW FIX
+   Scope: Smarter Healthcare Learning cards only.
+
+   Fixes:
+   - restores the missing TOP white highlight
+   - restores the missing BOTTOM/right dark shadow
+   - keeps the existing inset neumorphic depth
+   - gives the shadows enough room so they are not visually clipped
+   - does not modify any other page section
+   ========================================================================== */
+
+
+/* --------------------------------------------------------------------------
+   1) Give the Healthcare Learning card area enough room for outside shadows.
+   This is scoped only to .frameParent23.
+   -------------------------------------------------------------------------- */
+.retailHealthcare > .frameParent23,
+.retailHealthcare > .frameParent23 .frameParent24,
+.retailHealthcare > .frameParent23 .frameParent26 {
+  overflow: visible !important;
+}
+
+
+/* The card area needs a small top/bottom breathing room for the raised shadow.
+   This does not change the card dimensions themselves. */
+.retailHealthcare > .frameParent23 .frameParent24 {
+  padding-top: 14px !important;
+  padding-bottom: 16px !important;
+  box-sizing: border-box !important;
+}
+
+
+/* --------------------------------------------------------------------------
+   2) Restore the full raised + inset neumorphic shadow around all Healthcare
+   Learning cards.
+
+   Outer:
+   - upper/left white highlight
+   - lower/right grey depth
+
+   Inner:
+   - retains the original soft inset effect
+   -------------------------------------------------------------------------- */
+.retailHealthcare > .frameParent23 .frameWrapper10,
+.retailHealthcare > .frameParent23 .rectangleParent3,
+.retailHealthcare > .frameParent23 .rectangleParent4 {
+  background-color: #dfe6e9 !important;
+
+  box-shadow:
+    -8px -8px 16px rgba(255, 255, 255, 0.96),
+     8px  8px 16px rgba(196, 196, 196, 0.88),
+    inset -4px -4px 8px rgba(255, 255, 255, 0.62),
+    inset  4px  4px 8px rgba(196, 196, 196, 0.42) !important;
+}
+
+
+/* The third Healthcare card has its own inner container.
+   Keep that container's shadow consistent with the other cards. */
+.retailHealthcare > .frameParent23 .largeHealthcareTeamsParent {
+  box-shadow:
+    -6px -6px 12px rgba(255, 255, 255, 0.92),
+     6px  6px 12px rgba(196, 196, 196, 0.82) !important;
+}
+
+
+/* --------------------------------------------------------------------------
+   3) TABLET
+   Keep the same visible shadow when the cards become slightly smaller.
+   -------------------------------------------------------------------------- */
+@media screen and (min-width: 769px) and (max-width: 1200px) {
+
+  .retailHealthcare > .frameParent23 .frameParent24 {
+    padding-top: 14px !important;
+    padding-bottom: 16px !important;
+  }
+
+  .retailHealthcare > .frameParent23 .frameWrapper10,
+  .retailHealthcare > .frameParent23 .rectangleParent3,
+  .retailHealthcare > .frameParent23 .rectangleParent4 {
+    box-shadow:
+      -7px -7px 14px rgba(255, 255, 255, 0.96),
+       7px  7px 14px rgba(196, 196, 196, 0.88),
+      inset -4px -4px 8px rgba(255, 255, 255, 0.62),
+      inset  4px  4px 8px rgba(196, 196, 196, 0.42) !important;
+  }
+}
+
+
+/* --------------------------------------------------------------------------
+   4) MOBILE
+   Keep a safe gutter around the cards so the top/bottom/side shadows remain
+   visible even when the viewport is narrow.
+   -------------------------------------------------------------------------- */
+@media screen and (max-width: 768px) {
+
+  .retailHealthcare > .frameParent23 .frameParent24 {
+    width: 100% !important;
+    padding:
+      12px
+      14px
+      16px !important;
+    box-sizing: border-box !important;
+    overflow: visible !important;
+  }
+
+  .retailHealthcare > .frameParent23 .frameWrapper10,
+  .retailHealthcare > .frameParent23 .rectangleParent3,
+  .retailHealthcare > .frameParent23 .rectangleParent4 {
+    max-width: calc(100% - 18px) !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+
+    box-shadow:
+      -6px -6px 12px rgba(255, 255, 255, 0.98),
+       6px  6px 12px rgba(196, 196, 196, 0.88),
+      inset -3px -3px 7px rgba(255, 255, 255, 0.60),
+      inset  3px  3px 7px rgba(196, 196, 196, 0.40) !important;
+  }
+
+  .retailHealthcare > .frameParent23 .largeHealthcareTeamsParent {
+    box-shadow:
+      -5px -5px 10px rgba(255, 255, 255, 0.94),
+       5px  5px 10px rgba(196, 196, 196, 0.82) !important;
+  }
+}
+
+
+/* Very small phones: a little more side clearance prevents clipping. */
+@media screen and (max-width: 425px) {
+
+  .retailHealthcare > .frameParent23 .frameParent24 {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+  }
+
+  .retailHealthcare > .frameParent23 .frameWrapper10,
+  .retailHealthcare > .frameParent23 .rectangleParent3,
+  .retailHealthcare > .frameParent23 .rectangleParent4 {
+    max-width: calc(100% - 20px) !important;
+  }
+}
+
+/* ==========================================================================
+   FINAL HEALTHCARE LEARNING CARD — OUTER + INNER SIZE / SHADOW CORRECTION
+
+   Scope: Smarter Healthcare Learning cards ONLY.
+
+   Reason for this fix:
+   The outer cards were reduced in height, but some inner content/card surfaces
+   were still effectively using the full outer-card size. That left no visible
+   top/bottom rim for the neumorphic shadow.
+
+   This patch:
+   - keeps the compact outer-card sizes already approved
+   - makes the inner card/content area slightly smaller
+   - restores a visible top, bottom, left and right neumorphic rim
+   - keeps the image safely inside the inner area
+   - keeps all three cards visually consistent
+   - does not change any other section
+   ========================================================================== */
+
+
+/* --------------------------------------------------------------------------
+   OUTER CARD
+   Keep the raised outer surface visible and do NOT clip the outer shadow.
+   -------------------------------------------------------------------------- */
+.retailHealthcare > .frameParent23 .frameWrapper10 {
+  position: relative !important;
+  overflow: visible !important;
+  background: #dfe6e9 !important;
+  border-radius: 50px 50px 16px 16px !important;
+
+  box-shadow:
+    -8px -8px 16px rgba(255, 255, 255, 0.98),
+     8px  8px 16px rgba(196, 196, 196, 0.90) !important;
+}
+
+
+/* --------------------------------------------------------------------------
+   INNER CARD SURFACE
+   Create a smaller inner surface inside every Healthcare Learning card.
+   This is what restores the visible outer rim/shadow at the top and bottom.
+   -------------------------------------------------------------------------- */
+.retailHealthcare > .frameParent23 .frameWrapper10::before {
+  content: "";
+  position: absolute;
+  inset: 10px;
+  border-radius: 42px 42px 12px 12px;
+  background: #dfe6e9;
+
+  box-shadow:
+    inset -5px -5px 10px rgba(255, 255, 255, 0.82),
+    inset  5px  5px 10px rgba(196, 196, 196, 0.58);
+
+  pointer-events: none;
+  z-index: 0;
+}
+
+
+/* All real card content stays above the new inner surface. */
+.retailHealthcare > .frameParent23 .frameWrapper10 > *,
+.retailHealthcare > .frameParent23 .rectangleParent3,
+.retailHealthcare > .frameParent23 .rectangleParent4 {
+  z-index: 1;
+}
+
+
+/* --------------------------------------------------------------------------
+   CARD 1 — Compliance and Certification
+   Reduce the image slightly so it no longer reaches the outer-card bottom.
+   -------------------------------------------------------------------------- */
+.retailHealthcare > .frameParent23 .frameChild14 {
+  top: auto !important;
+  bottom: 10px !important;
+  left: 50% !important;
+
+  width: calc(100% - 32px) !important;
+  max-width: none !important;
+  height: 52% !important;
+
+  transform: translateX(-50%) !important;
+  object-fit: cover !important;
+
+  border-radius: 0 0 10px 10px !important;
+  z-index: 2 !important;
+}
+
+
+/* Keep title inside the smaller inner card area. */
+.retailHealthcare > .frameParent23 .complianceAndCertification {
+  top: 18px !important;
+  left: 50% !important;
+
+  width: calc(100% - 44px) !important;
+  max-width: 230px !important;
+  height: auto !important;
+
+  transform: translateX(-50%) !important;
+  z-index: 2 !important;
+}
+
+
+/* --------------------------------------------------------------------------
+   CARD 2 — Continuous Medical Education
+   The whole inner content wrapper is reduced, not only the outer card.
+   -------------------------------------------------------------------------- */
+.retailHealthcare > .frameParent23 .continuousMedicalEducationParent {
+  top: 10px !important;
+  right: 10px !important;
+  bottom: 10px !important;
+  left: 10px !important;
+
+  width: auto !important;
+  height: auto !important;
+
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+
+  padding: 14px 6px 0 !important;
+  gap: 10px !important;
+
+  box-sizing: border-box !important;
+  z-index: 2 !important;
+}
+
+
+.retailHealthcare > .frameParent23 .continuousMedicalEducation {
+  position: relative !important;
+  top: auto !important;
+  left: auto !important;
+
+  width: calc(100% - 20px) !important;
+  max-width: 230px !important;
+  height: auto !important;
+
+  margin: 0 auto !important;
+  transform: none !important;
+  flex: 0 0 auto !important;
+}
+
+
+.retailHealthcare > .frameParent23 .youngBusinesswomanHerColleaIcon {
+  position: relative !important;
+  inset: auto !important;
+
+  width: 100% !important;
+  max-width: 100% !important;
+  height: 52% !important;
+  min-height: 0 !important;
+
+  margin: auto 0 0 !important;
+  transform: none !important;
+
+  object-fit: cover !important;
+  border-radius: 0 0 10px 10px !important;
+  flex: 0 0 52% !important;
+}
+
+
+/* --------------------------------------------------------------------------
+   CARD 3 — Large Healthcare Teams
+   This card already has a real inner container. Make that inner container
+   smaller than the reduced outer card so the outer shadow remains visible.
+   -------------------------------------------------------------------------- */
+.retailHealthcare > .frameParent23 .largeHealthcareTeamsParent {
+  top: 10px !important;
+  right: 10px !important;
+  bottom: 10px !important;
+  left: 10px !important;
+
+  width: auto !important;
+  height: auto !important;
+
+  border-radius: 42px 42px 12px 12px !important;
+  background: #dfe6e9 !important;
+  overflow: hidden !important;
+
+  box-shadow:
+    inset -5px -5px 10px rgba(255, 255, 255, 0.82),
+    inset  5px  5px 10px rgba(196, 196, 196, 0.58) !important;
+
+  z-index: 2 !important;
+}
+
+
+.retailHealthcare > .frameParent23 .largeHealthcareTeams {
+  top: 18px !important;
+  left: 50% !important;
+
+  width: calc(100% - 40px) !important;
+  max-width: 230px !important;
+  height: auto !important;
+
+  transform: translateX(-50%) !important;
+  z-index: 2 !important;
+}
+
+
+.retailHealthcare > .frameParent23 .frameChild15 {
+  top: auto !important;
+  right: 0 !important;
+  bottom: 0 !important;
+  left: 0 !important;
+
+  width: 100% !important;
+  max-width: 100% !important;
+  height: 52% !important;
+
+  transform: none !important;
+  object-fit: cover !important;
+
+  border-radius: 0 0 10px 10px !important;
+  z-index: 1 !important;
+}
+
+
+/* --------------------------------------------------------------------------
+   SHADOW SAFE AREA
+   Allow enough breathing room around the row so both top and bottom shadows
+   are visible.
+   -------------------------------------------------------------------------- */
+.retailHealthcare > .frameParent23,
+.retailHealthcare > .frameParent23 .frameParent24,
+.retailHealthcare > .frameParent23 .frameParent26 {
+  overflow: visible !important;
+}
+
+
+.retailHealthcare > .frameParent23 .frameParent24 {
+  padding-top: 18px !important;
+  padding-bottom: 22px !important;
+  box-sizing: border-box !important;
+}
+
+
+/* --------------------------------------------------------------------------
+   TABLET
+   Keep the same inner/outer proportion when cards become smaller.
+   -------------------------------------------------------------------------- */
+@media screen and (min-width: 769px) and (max-width: 1200px) {
+
+  .retailHealthcare > .frameParent23 .frameWrapper10::before {
+    inset: 9px;
+  }
+
+  .retailHealthcare > .frameParent23 .largeHealthcareTeamsParent {
+    top: 9px !important;
+    right: 9px !important;
+    bottom: 9px !important;
+    left: 9px !important;
+  }
+
+  .retailHealthcare > .frameParent23 .frameChild14 {
+    bottom: 9px !important;
+    width: calc(100% - 30px) !important;
+  }
+
+  .retailHealthcare > .frameParent23 .continuousMedicalEducationParent {
+    top: 9px !important;
+    right: 9px !important;
+    bottom: 9px !important;
+    left: 9px !important;
+  }
+
+  .retailHealthcare > .frameParent23 .frameParent24 {
+    padding-top: 16px !important;
+    padding-bottom: 20px !important;
+  }
+}
+
+
+/* --------------------------------------------------------------------------
+   MOBILE
+   Preserve the full top/bottom shadow while keeping the cards inside the
+   viewport.
+   -------------------------------------------------------------------------- */
+@media screen and (max-width: 768px) {
+
+  .retailHealthcare > .frameParent23 .frameWrapper10 {
+    max-width: calc(100% - 28px) !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+
+    box-shadow:
+      -6px -6px 12px rgba(255, 255, 255, 0.98),
+       6px  6px 12px rgba(196, 196, 196, 0.90) !important;
+  }
+
+  .retailHealthcare > .frameParent23 .frameWrapper10::before {
+    inset: 8px;
+    border-radius: 38px 38px 10px 10px;
+  }
+
+  .retailHealthcare > .frameParent23 .largeHealthcareTeamsParent {
+    top: 8px !important;
+    right: 8px !important;
+    bottom: 8px !important;
+    left: 8px !important;
+    border-radius: 38px 38px 10px 10px !important;
+  }
+
+  .retailHealthcare > .frameParent23 .frameChild14 {
+    bottom: 8px !important;
+    width: calc(100% - 28px) !important;
+    height: 51% !important;
+  }
+
+  .retailHealthcare > .frameParent23 .continuousMedicalEducationParent {
+    top: 8px !important;
+    right: 8px !important;
+    bottom: 8px !important;
+    left: 8px !important;
+  }
+
+  .retailHealthcare > .frameParent23 .youngBusinesswomanHerColleaIcon,
+  .retailHealthcare > .frameParent23 .frameChild15 {
+    height: 51% !important;
+  }
+
+  .retailHealthcare > .frameParent23 .frameParent24 {
+    padding:
+      16px
+      16px
+      22px !important;
+  }
+}
+
+
+/* Very small phones */
+@media screen and (max-width: 425px) {
+
+  .retailHealthcare > .frameParent23 .frameWrapper10 {
+    max-width: calc(100% - 32px) !important;
+  }
+
+  .retailHealthcare > .frameParent23 .frameParent24 {
+    padding-left: 18px !important;
+    padding-right: 18px !important;
+  }
+}
+
+/* ==========================================================================
+   FINAL LARGE HEALTHCARE TEAMS IMAGE POSITION FIX
+   Scope: Large Healthcare Teams card image only.
+   Pushes the image slightly downward without changing card size, title,
+   shadows, spacing, or any other section.
+   ========================================================================== */
+
+.retailHealthcare > .frameParent23 .largeHealthcareTeamsParent .frameChild15 {
+  bottom: -8px !important;
+}
+
+/* ==========================================================================
+   FINAL LARGE HEALTHCARE TEAMS — SHOW FULL PEOPLE / FACES
+   Scope: Large Healthcare Teams card image only.
+
+   This replaces the previous "push image down" adjustment.
+   The image is now FIT inside the available area instead of CROPPED with
+   object-fit: cover, so the people at the left/right edges and their faces
+   remain visible.
+
+   No card size, title, shadow, other Healthcare cards, or other sections
+   are changed.
+   ========================================================================== */
+
+.retailHealthcare > .frameParent23
+.largeHealthcareTeamsParent
+.frameChild15 {
+  top: auto !important;
+
+  /* Undo the previous bottom: -8px push. */
+  bottom: 8px !important;
+
+  left: 50% !important;
+  right: auto !important;
+
+  /* Slightly smaller than the inner card so the complete group is visible. */
+  width: calc(100% - 16px) !important;
+  max-width: calc(100% - 16px) !important;
+
+  height: 54% !important;
+  max-height: 54% !important;
+
+  transform: translateX(-50%) !important;
+
+  /* IMPORTANT: do not crop the people/faces. */
+  object-fit: contain !important;
+  object-position: center bottom !important;
+
+  border-radius: 0 0 10px 10px !important;
+}
+
+
+/* Tablet: retain the same full-image treatment. */
+@media screen and (min-width: 769px) and (max-width: 1200px) {
+  .retailHealthcare > .frameParent23
+  .largeHealthcareTeamsParent
+  .frameChild15 {
+    bottom: 8px !important;
+    width: calc(100% - 14px) !important;
+    max-width: calc(100% - 14px) !important;
+    height: 54% !important;
+    max-height: 54% !important;
+    object-fit: contain !important;
+    object-position: center bottom !important;
+  }
+}
+
+
+/* Mobile: use a little extra side room so edge faces stay visible. */
+@media screen and (max-width: 768px) {
+  .retailHealthcare > .frameParent23
+  .largeHealthcareTeamsParent
+  .frameChild15 {
+    bottom: 7px !important;
+    width: calc(100% - 18px) !important;
+    max-width: calc(100% - 18px) !important;
+    height: 53% !important;
+    max-height: 53% !important;
+    object-fit: contain !important;
+    object-position: center bottom !important;
+  }
+}
+
+/* ==========================================================================
+   FINAL HEALTHCARE LEARNING IMAGE UNIFORMITY FIX
+
+   Scope: Smarter Healthcare Learning cards only.
+
+   Goal:
+   - Make all 3 inner image areas use the SAME width, height and positioning.
+   - Follow the first "Compliance and Certification" card as the reference.
+   - Keep the Large Healthcare Teams full-group visibility.
+   - Do not change card size, card shadow, section layout or any other section.
+   ========================================================================== */
+
+
+/* --------------------------------------------------------------------------
+   1) Use the first card as the master inner-image layout.
+   All three image areas now share the same:
+   - width
+   - height
+   - bottom offset
+   - horizontal centering
+   -------------------------------------------------------------------------- */
+.retailHealthcare > .frameParent23 .frameChild14,
+.retailHealthcare > .frameParent23 .youngBusinesswomanHerColleaIcon,
+.retailHealthcare > .frameParent23 .frameChild15 {
+  position: absolute !important;
+
+  top: auto !important;
+  right: auto !important;
+  bottom: 10px !important;
+  left: 50% !important;
+
+  width: calc(100% - 32px) !important;
+  max-width: calc(100% - 32px) !important;
+
+  height: 52% !important;
+  min-height: 0 !important;
+  max-height: 52% !important;
+
+  margin: 0 !important;
+  transform: translateX(-50%) !important;
+
+  border-radius: 0 0 10px 10px !important;
+}
+
+
+/* First card remains the visual reference. */
+.retailHealthcare > .frameParent23 .frameChild14 {
+  object-fit: cover !important;
+  object-position: center center !important;
+}
+
+
+/* Second card now follows the exact same image box as the first card. */
+.retailHealthcare > .frameParent23 .youngBusinesswomanHerColleaIcon {
+  object-fit: cover !important;
+  object-position: center center !important;
+  align-self: auto !important;
+  flex: none !important;
+}
+
+
+/* Third card uses the SAME image box, but contain is retained so all faces
+   stay visible and are not cropped. */
+.retailHealthcare > .frameParent23 .frameChild15 {
+  object-fit: contain !important;
+  object-position: center bottom !important;
+}
+
+
+/* --------------------------------------------------------------------------
+   2) Remove the different inner wrapper sizing from cards 2 and 3.
+   Their content now positions against the same outer card reference as card 1.
+   The common ::before inner surface on .frameWrapper10 remains unchanged.
+   -------------------------------------------------------------------------- */
+.retailHealthcare > .frameParent23 .continuousMedicalEducationParent,
+.retailHealthcare > .frameParent23 .largeHealthcareTeamsParent {
+  position: static !important;
+
+  top: auto !important;
+  right: auto !important;
+  bottom: auto !important;
+  left: auto !important;
+
+  width: auto !important;
+  max-width: none !important;
+  height: auto !important;
+  min-height: 0 !important;
+
+  margin: 0 !important;
+  padding: 0 !important;
+
+  display: block !important;
+
+  background: transparent !important;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+  overflow: visible !important;
+}
+
+
+/* --------------------------------------------------------------------------
+   3) Make all three titles use the same vertical layout inside the cards.
+   Text widths remain flexible for each title, but top position is identical.
+   -------------------------------------------------------------------------- */
+.retailHealthcare > .frameParent23 .complianceAndCertification,
+.retailHealthcare > .frameParent23 .continuousMedicalEducation,
+.retailHealthcare > .frameParent23 .largeHealthcareTeams {
+  position: absolute !important;
+
+  top: 18px !important;
+  right: auto !important;
+  bottom: auto !important;
+  left: 50% !important;
+
+  width: calc(100% - 44px) !important;
+  max-width: 230px !important;
+  height: auto !important;
+  min-height: 0 !important;
+
+  margin: 0 !important;
+  transform: translateX(-50%) !important;
+
+  text-align: center !important;
+}
+
+
+/* --------------------------------------------------------------------------
+   4) Tablet: keep exactly the same proportions.
+   -------------------------------------------------------------------------- */
+@media screen and (min-width: 769px) and (max-width: 1200px) {
+
+  .retailHealthcare > .frameParent23 .frameChild14,
+  .retailHealthcare > .frameParent23 .youngBusinesswomanHerColleaIcon,
+  .retailHealthcare > .frameParent23 .frameChild15 {
+    bottom: 9px !important;
+
+    width: calc(100% - 30px) !important;
+    max-width: calc(100% - 30px) !important;
+
+    height: 52% !important;
+    max-height: 52% !important;
+  }
+
+  .retailHealthcare > .frameParent23 .complianceAndCertification,
+  .retailHealthcare > .frameParent23 .continuousMedicalEducation,
+  .retailHealthcare > .frameParent23 .largeHealthcareTeams {
+    top: 17px !important;
+  }
+}
+
+
+/* --------------------------------------------------------------------------
+   5) Mobile: all 3 inner images remain identical in size and placement.
+   -------------------------------------------------------------------------- */
+@media screen and (max-width: 768px) {
+
+  .retailHealthcare > .frameParent23 .frameChild14,
+  .retailHealthcare > .frameParent23 .youngBusinesswomanHerColleaIcon,
+  .retailHealthcare > .frameParent23 .frameChild15 {
+    bottom: 8px !important;
+
+    width: calc(100% - 28px) !important;
+    max-width: calc(100% - 28px) !important;
+
+    height: 51% !important;
+    max-height: 51% !important;
+  }
+
+  .retailHealthcare > .frameParent23 .complianceAndCertification,
+  .retailHealthcare > .frameParent23 .continuousMedicalEducation,
+  .retailHealthcare > .frameParent23 .largeHealthcareTeams {
+    top: 16px !important;
+    width: calc(100% - 40px) !important;
+    max-width: 220px !important;
+  }
+}
+
+/* ==========================================================================
+   FINAL THIRD HEALTHCARE CARD IMAGE FIT FIX
+   Scope: Large Healthcare Teams image only.
+
+   Goal:
+   - make the 3rd image fill exactly like the 1st and 2nd card images
+   - keep the same width, height and position
+   - remove the contain-style empty area
+   - keep the main faces visible as much as possible
+   - do not change any other section/card
+   ========================================================================== */
+
+.retailHealthcare > .frameParent23
+.largeHealthcareTeamsParent
+.frameChild15 {
+  bottom: 10px !important;
+  left: 50% !important;
+
+  width: calc(100% - 32px) !important;
+  max-width: calc(100% - 32px) !important;
+
+  height: 52% !important;
+  min-height: 0 !important;
+  max-height: 52% !important;
+
+  transform: translateX(-50%) !important;
+
+  /* Match card 1 and card 2 filling behavior */
+  object-fit: cover !important;
+
+  /* Keep the group centered while avoiding excessive top cropping */
+  object-position: center 38% !important;
+
+  border-radius: 0 0 10px 10px !important;
+}
+
+
+/* Tablet */
+@media screen and (min-width: 769px) and (max-width: 1200px) {
+  .retailHealthcare > .frameParent23
+  .largeHealthcareTeamsParent
+  .frameChild15 {
+    bottom: 9px !important;
+
+    width: calc(100% - 30px) !important;
+    max-width: calc(100% - 30px) !important;
+
+    height: 52% !important;
+    max-height: 52% !important;
+
+    object-fit: cover !important;
+    object-position: center 38% !important;
+  }
+}
+
+
+/* Mobile */
+@media screen and (max-width: 768px) {
+  .retailHealthcare > .frameParent23
+  .largeHealthcareTeamsParent
+  .frameChild15 {
+    bottom: 8px !important;
+
+    width: calc(100% - 28px) !important;
+    max-width: calc(100% - 28px) !important;
+
+    height: 51% !important;
+    max-height: 51% !important;
+
+    object-fit: cover !important;
+    object-position: center 38% !important;
+  }
+}
+
+/* ==========================================================================
+   FINAL HEALTHCARE BENEFITS CARD DESIGN — IMAGE 2 STYLE
+   Scope: "Benefits for Healthcare Organizations" five cards ONLY.
+
+   Changes only this card group from the arrow/chevron shape to:
+   - rounded rectangular neumorphic cards
+   - small colored downward triangle at the top-center
+   - centered card titles
+   - equal card width/height
+   - responsive wrapping
+
+   No other section layout or component is changed.
+   ========================================================================== */
+
+
+/* --------------------------------------------------------------------------
+   CARD GROUP
+   -------------------------------------------------------------------------- */
+.retailHealthcare > .frameParent29 .frameParent31 {
+  width: min(100%, 1114px) !important;
+  max-width: 1114px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+
+  display: grid !important;
+  grid-template-columns: repeat(5, 210px) !important;
+  justify-content: center !important;
+  justify-items: center !important;
+  align-items: stretch !important;
+
+  gap: 16px !important;
+
+  padding: 0 !important;
+  overflow: visible !important;
+
+  text-align: center !important;
+}
+
+
+/* --------------------------------------------------------------------------
+   ALL FIVE CARDS
+   -------------------------------------------------------------------------- */
+.retailHealthcare > .frameParent29 .frameParent31 > .frameParent32,
+.retailHealthcare > .frameParent29 .frameParent31 > .vectorParent {
+  position: relative !important;
+  inset: auto !important;
+
+  width: 210px !important;
+  min-width: 210px !important;
+  max-width: 210px !important;
+
+  height: 140px !important;
+  min-height: 140px !important;
+  max-height: 140px !important;
+
+  margin: 0 !important;
+  padding: 0 !important;
+
+  flex: none !important;
+
+  border: 0 !important;
+  border-radius: 24px !important;
+
+  background: #dfe6e9 !important;
+
+  box-shadow:
+    -4px -4px 8px rgba(255, 255, 255, 0.98),
+     4px  4px 8px rgba(196, 196, 196, 0.92) !important;
+
+  filter: none !important;
+  overflow: visible !important;
+
+  transform: none !important;
+  transition:
+    box-shadow 180ms ease,
+    transform 180ms ease !important;
+}
+
+
+/* Keep the existing small hover movement, but with the new card shape. */
+.retailHealthcare > .frameParent29 .frameParent31 > .frameParent32:hover,
+.retailHealthcare > .frameParent29 .frameParent31 > .vectorParent:hover {
+  transform: translateY(-2px) !important;
+
+  box-shadow:
+    -6px -6px 12px rgba(255, 255, 255, 0.98),
+     6px  6px 12px rgba(196, 196, 196, 0.90) !important;
+}
+
+
+/* --------------------------------------------------------------------------
+   REMOVE THE OLD IMAGE-1 ARROW / CHEVRON DESIGN
+   -------------------------------------------------------------------------- */
+
+/* Hide the original card background assets. */
+.retailHealthcare > .frameParent29 .frameParent31 .frameChild19,
+.retailHealthcare > .frameParent29 .frameParent31 .rectangleIcon {
+  opacity: 0 !important;
+  visibility: hidden !important;
+  display: none !important;
+  pointer-events: none !important;
+}
+
+
+/* Hide the original left-side arrow icons. */
+.retailHealthcare > .frameParent29 .frameParent31 .polygonIcon,
+.retailHealthcare > .frameParent29 .frameParent31 .healthArrow {
+  display: none !important;
+}
+
+
+/* Remove the previous large arrow-shaped pseudo background. */
+.retailHealthcare > .frameParent29 .frameParent31 > .frameParent32::before,
+.retailHealthcare > .frameParent29 .frameParent31 > .vectorParent::before {
+  content: none !important;
+  display: none !important;
+}
+
+
+/* --------------------------------------------------------------------------
+   TOP COLORED TRIANGLE — IMAGE 2 STYLE
+   -------------------------------------------------------------------------- */
+.retailHealthcare > .frameParent29 .frameParent31 > .frameParent32::after,
+.retailHealthcare > .frameParent29 .frameParent31 > .vectorParent::after {
+  content: "" !important;
+
+  position: absolute !important;
+  top: 0 !important;
+  left: 50% !important;
+
+  width: 0 !important;
+  height: 0 !important;
+
+  border-left: 10px solid transparent !important;
+  border-right: 10px solid transparent !important;
+  border-bottom: 0 !important;
+  border-top: 20px solid #2d4cc8 !important;
+
+  transform: translateX(-50%) !important;
+
+  z-index: 3 !important;
+  pointer-events: none !important;
+}
+
+
+/* Individual triangle colors */
+.retailHealthcare > .frameParent29 .frameParent31 > :nth-child(1)::after {
+  border-top-color: #2d4cc8 !important;
+}
+
+.retailHealthcare > .frameParent29 .frameParent31 > :nth-child(2)::after {
+  border-top-color: #bf1869 !important;
+}
+
+.retailHealthcare > .frameParent29 .frameParent31 > :nth-child(3)::after {
+  border-top-color: #67096e !important;
+}
+
+.retailHealthcare > .frameParent29 .frameParent31 > :nth-child(4)::after {
+  border-top-color: #9e8500 !important;
+}
+
+.retailHealthcare > .frameParent29 .frameParent31 > :nth-child(5)::after {
+  border-top-color: #c05512 !important;
+}
+
+
+/* --------------------------------------------------------------------------
+   CARD TITLES
+   -------------------------------------------------------------------------- */
+.retailHealthcare > .frameParent29 .frameParent31 .complianceTraining,
+.retailHealthcare > .frameParent29 .frameParent31 .professionalDevelopment,
+.retailHealthcare > .frameParent29 .frameParent31 .betterPatientCare,
+.retailHealthcare > .frameParent29 .frameParent31 .certificationTracking,
+.retailHealthcare > .frameParent29 .frameParent31 .scalableProgrammes {
+  position: absolute !important;
+
+  top: 50% !important;
+  right: auto !important;
+  bottom: auto !important;
+  left: 50% !important;
+
+  width: 172px !important;
+  max-width: 172px !important;
+  height: auto !important;
+  min-height: 0 !important;
+
+  margin: 0 !important;
+  padding: 0 !important;
+
+  transform: translate(-50%, -42%) !important;
+
+  display: block !important;
+
+  font-family: "Segoe UI", "Inter", sans-serif !important;
+  font-size: 20px !important;
+  line-height: 29px !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.02em !important;
+
+  color: #31344b !important;
+
+  text-align: center !important;
+  white-space: normal !important;
+
+  overflow: visible !important;
+  overflow-wrap: normal !important;
+  word-break: normal !important;
+
+  z-index: 2 !important;
+}
+
+
+/* Remove TSX hard line breaks so all five titles wrap uniformly according
+   to the common title width. */
+.retailHealthcare > .frameParent29 .frameParent31 .complianceTraining br,
+.retailHealthcare > .frameParent29 .frameParent31 .professionalDevelopment br,
+.retailHealthcare > .frameParent29 .frameParent31 .betterPatientCare br,
+.retailHealthcare > .frameParent29 .frameParent31 .certificationTracking br,
+.retailHealthcare > .frameParent29 .frameParent31 .scalableProgrammes br {
+  display: none !important;
+}
+
+
+/* ==========================================================================
+   RESPONSIVE — TABLET / SMALL LAPTOP
+   Same design; only the row count changes.
+   ========================================================================== */
+@media screen and (min-width: 769px) and (max-width: 1200px) {
+
+  .retailHealthcare > .frameParent29 .frameParent31 {
+    width: 100% !important;
+    max-width: 920px !important;
+
+    grid-template-columns: repeat(3, 210px) !important;
+    justify-content: center !important;
+
+    gap: 20px !important;
+  }
+
+  .retailHealthcare > .frameParent29 .frameParent31 > .frameParent32,
+  .retailHealthcare > .frameParent29 .frameParent31 > .vectorParent {
+    width: 210px !important;
+    min-width: 210px !important;
+    max-width: 210px !important;
+
+    height: 140px !important;
+    min-height: 140px !important;
+    max-height: 140px !important;
+  }
+
+  /* Center the last two cards as a balanced second row. */
+  .retailHealthcare > .frameParent29 .frameParent31 > :nth-child(4) {
+    grid-column: 1 / 2 !important;
+    justify-self: end !important;
+    transform: translateX(115px) !important;
+  }
+
+  .retailHealthcare > .frameParent29 .frameParent31 > :nth-child(5) {
+    grid-column: 3 / 4 !important;
+    justify-self: start !important;
+    transform: translateX(-115px) !important;
+  }
+
+  .retailHealthcare > .frameParent29 .frameParent31 > :nth-child(4):hover {
+    transform: translate(115px, -2px) !important;
+  }
+
+  .retailHealthcare > .frameParent29 .frameParent31 > :nth-child(5):hover {
+    transform: translate(-115px, -2px) !important;
+  }
+}
+
+
+/* ==========================================================================
+   RESPONSIVE — MOBILE
+   Two cards per row where possible, final card centered.
+   ========================================================================== */
+@media screen and (max-width: 768px) {
+
+  .retailHealthcare > .frameParent29 .frameParent31 {
+    width: 100% !important;
+    max-width: 460px !important;
+
+    grid-template-columns: repeat(2, minmax(0, 190px)) !important;
+
+    gap: 18px !important;
+
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  .retailHealthcare > .frameParent29 .frameParent31 > .frameParent32,
+  .retailHealthcare > .frameParent29 .frameParent31 > .vectorParent {
+    width: 190px !important;
+    min-width: 190px !important;
+    max-width: 190px !important;
+
+    height: 132px !important;
+    min-height: 132px !important;
+    max-height: 132px !important;
+
+    border-radius: 22px !important;
+
+    transform: none !important;
+  }
+
+  .retailHealthcare > .frameParent29 .frameParent31 > :nth-child(4),
+  .retailHealthcare > .frameParent29 .frameParent31 > :nth-child(5) {
+    grid-column: auto !important;
+    justify-self: center !important;
+    transform: none !important;
+  }
+
+  .retailHealthcare > .frameParent29 .frameParent31 > :nth-child(5) {
+    grid-column: 1 / -1 !important;
+  }
+
+  .retailHealthcare > .frameParent29 .frameParent31 > .frameParent32:hover,
+  .retailHealthcare > .frameParent29 .frameParent31 > .vectorParent:hover,
+  .retailHealthcare > .frameParent29 .frameParent31 > :nth-child(4):hover,
+  .retailHealthcare > .frameParent29 .frameParent31 > :nth-child(5):hover {
+    transform: translateY(-2px) !important;
+  }
+
+  .retailHealthcare > .frameParent29 .frameParent31 .complianceTraining,
+  .retailHealthcare > .frameParent29 .frameParent31 .professionalDevelopment,
+  .retailHealthcare > .frameParent29 .frameParent31 .betterPatientCare,
+  .retailHealthcare > .frameParent29 .frameParent31 .certificationTracking,
+  .retailHealthcare > .frameParent29 .frameParent31 .scalableProgrammes {
+    width: 158px !important;
+    max-width: 158px !important;
+
+    font-size: 18px !important;
+    line-height: 26px !important;
+  }
+}
+
+
+/* ==========================================================================
+   RESPONSIVE — SMALL PHONE
+   One centered card per row so nothing gets squeezed.
+   ========================================================================== */
+@media screen and (max-width: 425px) {
+
+  .retailHealthcare > .frameParent29 .frameParent31 {
+    max-width: 100% !important;
+
+    grid-template-columns: 1fr !important;
+    justify-items: center !important;
+
+    gap: 16px !important;
+  }
+
+  .retailHealthcare > .frameParent29 .frameParent31 > .frameParent32,
+  .retailHealthcare > .frameParent29 .frameParent31 > .vectorParent,
+  .retailHealthcare > .frameParent29 .frameParent31 > :nth-child(5) {
+    grid-column: auto !important;
+
+    width: 210px !important;
+    min-width: 210px !important;
+    max-width: 210px !important;
+
+    height: 132px !important;
+    min-height: 132px !important;
+    max-height: 132px !important;
+
+    justify-self: center !important;
+  }
+}
+

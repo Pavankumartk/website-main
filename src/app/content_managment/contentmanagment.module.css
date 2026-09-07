@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
 .contentIntelligenceManagem {
   width: 100%;
   height: 6100px;
@@ -7,7 +9,7 @@
   text-align: center;
   font-size: 48px;
   color: #31344b;
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", "Inter";
   max-width: 1440px; 
 	margin: 0 auto;
     zoom: 0.99;
@@ -110,7 +112,7 @@
   flex-shrink: 0;
   text-align: left;
   font-size: 16px;
-  font-family: Inter;
+  font-family: "Segoe UI", "Inter";
 }
 .frameChild2 {
   position: absolute;
@@ -193,7 +195,7 @@
   box-sizing: border-box;
   text-align: center;
   color: #2d4cc8;
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", "Inter";
 }
 .signInHelp {
   width: 97px;
@@ -225,7 +227,7 @@
   text-align: left;
   font-size: 18px;
   color: #2f3547;
-  font-family: Inter;
+  font-family: "Segoe UI", "Inter";
 }
 .featuresWrapper {
   display: flex;
@@ -2418,7 +2420,7 @@
     inset -4px -4px 8px #fff,
     inset 4px 4px 8px rgba(196, 196, 196, 0.8);
   color: #2d4cc8;
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", "Inter";
   font-size: 24px;
   font-weight: 600;
   line-height: 50.2px;
@@ -2461,7 +2463,7 @@
     inset -4px -4px 8px #ffffff,
     inset 4px 4px 8px rgba(196, 196, 196, 0.8);
   color: #2d4cc8;
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", "Inter";
   font-size: 24px;
   font-weight: 600;
   line-height: 50.2px;
@@ -2572,7 +2574,7 @@
     inset -4px -4px 8px #ffffff,
     inset 4px 4px 8px rgba(196, 196, 196, 0.8);
   color: #2d4cc8;
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", "Inter";
   font-size: 24px;
   font-weight: 600;
   line-height: 50.2px;
@@ -2768,7 +2770,7 @@
   max-width: 455px;
   margin: 0;
   color: #31344b;
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", "Inter";
   font-size: 24px;
   font-weight: 600;
   line-height: 36px;
@@ -3009,7 +3011,7 @@
 .frameParent55 .ensureConsistencyAcross {
   height: 37px;
   margin: 0;
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", "Inter";
   font-style: normal;
   font-weight: 600;
   font-size: 24px;
@@ -3106,7 +3108,7 @@
     inset -4px -4px 8px #ffffff,
     inset 4px 4px 8px rgba(196, 196, 196, 0.8);
   color: #2d4cc8;
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", "Inter";
   font-size: 24px;
   font-weight: 600;
   line-height: 50.2px;
@@ -3436,7 +3438,7 @@
     -4px -4px 8px #ffffff,
     4px 4px 8px rgba(196, 196, 196, 0.8);
   color: #2d4cc8;
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", "Inter";
   font-size: 24px;
   font-weight: 600;
   line-height: 50.2px;
@@ -4420,7 +4422,7 @@
   justify-content: center;
   box-sizing: border-box;
   color: #2d4cc8;
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", "Inter";
   font-size: 24px;
   font-weight: 600;
   line-height: 36px;
@@ -4445,7 +4447,7 @@
   gap: 16px;
   box-sizing: border-box;
   color: #2d4cc8;
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", "Inter";
   font-size: 22px;
   font-weight: 600;
   line-height: 32px;
@@ -4573,7 +4575,7 @@
   align-items: center;
   gap: 14px;
   color: #31344b;
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", "Inter";
   font-size: 18px;
   font-weight: 400;
   line-height: 28px;
@@ -5045,7 +5047,7 @@
     gap: 48px !important;
     padding: 0 0 48px !important;
     position: relative !important;
-    font-family: "Segoe UI" !important;
+    font-family: "Segoe UI", "Inter";
   }
 
   .contentIntelligenceManagem > .frameParent4 {
@@ -5061,7 +5063,7 @@
     gap: 6px 8px !important;
     font-size: 14px !important;
     line-height: 22px !important;
-    font-family: "Segoe UI" !important;
+    font-family: "Segoe UI", "Inter";
   }
 
   .contentIntelligenceManagem > .frameParent,
@@ -8812,6 +8814,1044 @@
     right: auto !important;
     margin-left: auto !important;
     margin-right: auto !important;
+    transform: none !important;
+  }
+}
+
+/* ==========================================================================
+   FINAL — HERO EDGE SPREAD + BUTTON HOVER + INTER FALLBACK
+   - Hero background/design fills both left and right edges.
+   - Main CTA buttons receive the same neumorphic hover/pressed effect.
+   - Segoe UI primary + Inter fallback only.
+   - Existing section layout, spacing, typography sizes and cards preserved.
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   FONT STACK — INTER IS THE ONLY FALLBACK
+   -------------------------------------------------------------------------- */
+.contentIntelligenceManagem,
+.contentIntelligenceManagem *,
+.contentIntelligenceManagem *::before,
+.contentIntelligenceManagem *::after {
+  font-family: "Segoe UI", "Inter" !important;
+}
+
+/* --------------------------------------------------------------------------
+   FIRST HERO — SPREAD THE DESIGN TO BOTH EDGES
+   The previous child was shifted left while keeping the same 1440px width,
+   which could leave a visible gap on the right. Keep the intended overhang,
+   but widen it equally so both sides are fully covered.
+   -------------------------------------------------------------------------- */
+.contentIntelligenceManagem > .frameParent {
+  left: 0 !important;
+  right: 0 !important;
+  width: 100% !important;
+  max-width: none !important;
+  margin: 0 !important;
+  overflow: visible !important;
+}
+
+.contentIntelligenceManagem > .frameParent > .frameChild {
+  left: -25px !important;
+  right: auto !important;
+  width: calc(100% + 50px) !important;
+  max-width: none !important;
+  height: 647px !important;
+  object-fit: fill !important;
+  object-position: center top !important;
+}
+
+/* --------------------------------------------------------------------------
+   MAIN BUTTONS — NORMAL + HOVER/PRESSED NEUMORPHIC EFFECT
+   -------------------------------------------------------------------------- */
+.contentIntelligenceManagem .signInHelpWrapper,
+.contentIntelligenceManagem .headerBookDemoButton,
+.contentIntelligenceManagem .requestADemoWrapper {
+  cursor: pointer !important;
+  user-select: none !important;
+  -webkit-user-select: none !important;
+  transition:
+    box-shadow 0.2s ease,
+    transform 0.2s ease !important;
+}
+
+/* Hover + keyboard focus */
+.contentIntelligenceManagem .signInHelpWrapper:hover,
+.contentIntelligenceManagem .signInHelpWrapper:focus-visible,
+.contentIntelligenceManagem .headerBookDemoButton:hover,
+.contentIntelligenceManagem .headerBookDemoButton:focus-visible,
+.contentIntelligenceManagem .requestADemoWrapper:hover,
+.contentIntelligenceManagem .requestADemoWrapper:focus-visible {
+  box-shadow:
+    inset -4px -4px 4px #ffffff,
+    inset 4px 4px 4px rgba(196, 196, 196, 0.8) !important;
+}
+
+/* Pressed state */
+.contentIntelligenceManagem .signInHelpWrapper:active,
+.contentIntelligenceManagem .headerBookDemoButton:active,
+.contentIntelligenceManagem .requestADemoWrapper:active {
+  box-shadow:
+    inset -4px -4px 4px #ffffff,
+    inset 4px 4px 4px rgba(196, 196, 196, 0.8) !important;
+}
+
+/* Keep text inside CTA controls from intercepting the interaction. */
+.contentIntelligenceManagem .requestADemoWrapper .requestADemo {
+  pointer-events: none !important;
+}
+
+/* ==========================================================================
+   FINAL — BOOK A DEMO CHROME REMOVAL + NON-HERO 36/24 TYPOGRAPHY
+   Hero typography remains untouched.
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   BOOK A DEMO — REMOVE BLACK / NATIVE BUTTON WRAPPER
+   Keep only the intended neumorphic button surface.
+   -------------------------------------------------------------------------- */
+.contentIntelligenceManagem .headerBookDemoButton {
+  -webkit-appearance: none !important;
+  appearance: none !important;
+  border: 0 !important;
+  outline: none !important;
+  background: #dfe6e9 !important;
+  background-color: #dfe6e9 !important;
+  color: #2d4cc8 !important;
+  text-decoration: none !important;
+  box-shadow:
+    -4px -4px 4px #ffffff,
+    4px 4px 4px rgba(196, 196, 196, 0.8) !important;
+}
+
+/* Do not show a dark/default outer ring on focus or click. */
+.contentIntelligenceManagem .headerBookDemoButton:focus,
+.contentIntelligenceManagem .headerBookDemoButton:focus-visible {
+  outline: none !important;
+  border: 0 !important;
+}
+
+/* Preserve the requested pressed neumorphic hover. */
+.contentIntelligenceManagem .headerBookDemoButton:hover,
+.contentIntelligenceManagem .headerBookDemoButton:active {
+  outline: none !important;
+  border: 0 !important;
+  box-shadow:
+    inset -4px -4px 4px #ffffff,
+    inset 4px 4px 4px rgba(196, 196, 196, 0.8) !important;
+}
+
+/* --------------------------------------------------------------------------
+   DESKTOP / TABLET NON-HERO TYPOGRAPHY
+   Main headings = 36px
+   Main subheadings/descriptions = 24px
+   Hero .onePlatformMany + .bringContentTogether are intentionally excluded.
+   -------------------------------------------------------------------------- */
+@media screen and (min-width: 768px) {
+
+  /* Non-hero major headings */
+  .contentIntelligenceManagem .frameParent22 .turnExistingKnowledge,
+  .contentIntelligenceManagem .rectangleParent .onePlatformMany,
+  .contentIntelligenceManagem .rectangleParent .createEngageLearn,
+  .contentIntelligenceManagem .frameParent37 .contentThatWorks,
+  .contentIntelligenceManagem .frameParent55 .organizeLearningContent,
+  .contentIntelligenceManagem .image20Parent4 .turnExistingContent,
+  .contentIntelligenceManagem .frameParent79 .onePlatformFor {
+    font-size: 36px !important;
+    line-height: 45px !important;
+    height: auto !important;
+    min-height: 0 !important;
+  }
+
+  /* Non-hero main subheadings / descriptions */
+  .contentIntelligenceManagem .frameParent22 .neurolxpTransformsContent,
+  .contentIntelligenceManagem .rectangleParent .neurolxpTransformsContent,
+  .contentIntelligenceManagem .frameParent37 .neurolxpSupportsDiverse,
+  .contentIntelligenceManagem .frameParent55 .manageLearningResources,
+  .contentIntelligenceManagem .image20Parent4 .neurolxpHelpsInstitutions,
+  .contentIntelligenceManagem .frameParent79 .neurolxpSupportsOrganization,
+  .contentIntelligenceManagem .frameParent96 .neurolxpBringsContent {
+    font-size: 24px !important;
+    line-height: 36px !important;
+    height: auto !important;
+    min-height: 0 !important;
+  }
+}
+
+/* Preserve font stack everywhere. */
+.contentIntelligenceManagem,
+.contentIntelligenceManagem *,
+.contentIntelligenceManagem *::before,
+.contentIntelligenceManagem *::after {
+  font-family: "Segoe UI", "Inter" !important;
+}
+
+/* ==========================================================================
+   FINAL MOBILE RESPONSIVENESS — NO OVERLAPS / CENTERED SECTIONS
+   Applies only to phones.
+   - Converts the exported absolute desktop layout into normal mobile flow.
+   - Removes old negative offsets/transforms that caused overlaps.
+   - Centers every major section.
+   - Keeps 48px breathing room between main sections.
+   - Preserves desktop/tablet, hero styling, fonts and button effects.
+   ========================================================================== */
+@media screen and (max-width: 767.98px) {
+
+  html,
+  body {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow-x: hidden !important;
+  }
+
+  .contentIntelligenceManagem {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+    margin: 0 !important;
+    padding: 0 0 48px !important;
+    position: relative !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 48px !important;
+    overflow-x: hidden !important;
+    overflow-y: visible !important;
+    zoom: 1 !important;
+    box-sizing: border-box !important;
+  }
+
+  /* ----------------------------------------------------------
+     MAIN PAGE SECTIONS — NORMAL FLOW + TRUE CENTER
+     ---------------------------------------------------------- */
+  .contentIntelligenceManagem > .frameParent,
+  .contentIntelligenceManagem > .frameParent22,
+  .contentIntelligenceManagem > .rectangleParent,
+  .contentIntelligenceManagem > .frameParent37,
+  .contentIntelligenceManagem > .frameParent55,
+  .contentIntelligenceManagem > .image20Parent4,
+  .contentIntelligenceManagem > .frameParent79,
+  .contentIntelligenceManagem > .frameParent96 {
+    position: relative !important;
+    top: auto !important;
+    right: auto !important;
+    bottom: auto !important;
+    left: auto !important;
+    inset: auto !important;
+
+    width: calc(100% - 32px) !important;
+    max-width: 480px !important;
+    height: auto !important;
+    min-height: 0 !important;
+
+    margin: 0 auto !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+
+    transform: none !important;
+    box-sizing: border-box !important;
+    overflow: visible !important;
+    flex: 0 0 auto !important;
+  }
+
+  /* Keep the hero edge-to-edge, as requested previously. */
+  .contentIntelligenceManagem > .frameParent {
+    order: 1 !important;
+    width: 100% !important;
+    max-width: none !important;
+    min-height: 590px !important;
+    margin: 0 !important;
+    padding: 88px 16px 48px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    overflow: hidden !important;
+  }
+
+  .contentIntelligenceManagem > .frameParent22 {
+    order: 2 !important;
+  }
+
+  .contentIntelligenceManagem > .rectangleParent {
+    order: 3 !important;
+  }
+
+  .contentIntelligenceManagem > .frameParent37 {
+    order: 4 !important;
+  }
+
+  .contentIntelligenceManagem > .frameParent55 {
+    order: 5 !important;
+  }
+
+  .contentIntelligenceManagem > .image20Parent4 {
+    order: 6 !important;
+  }
+
+  .contentIntelligenceManagem > .frameParent79 {
+    order: 7 !important;
+  }
+
+  .contentIntelligenceManagem > .frameParent96 {
+    order: 8 !important;
+  }
+
+  /* ----------------------------------------------------------
+     REMOVE THE OLD MOBILE NEGATIVE OFFSETS
+     These were the main cause of section overlap.
+     ---------------------------------------------------------- */
+  .contentIntelligenceManagem > .frameParent22,
+  .contentIntelligenceManagem > .frameParent37,
+  .contentIntelligenceManagem > .frameParent55,
+  .contentIntelligenceManagem > .image20Parent4,
+  .contentIntelligenceManagem > .frameParent79,
+  .contentIntelligenceManagem > .frameParent96,
+  .contentIntelligenceManagem .frameGroup,
+  .contentIntelligenceManagem .frameParent65,
+  .contentIntelligenceManagem .frameParent80,
+  .contentIntelligenceManagem .frameParent81,
+  .contentIntelligenceManagem .frameWrapper72,
+  .contentIntelligenceManagem .frameWrapper73,
+  .contentIntelligenceManagem .onePlatformSmarterLearningParent,
+  .contentIntelligenceManagem .requestADemoWrapper {
+    transform: none !important;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+  }
+
+  /* ----------------------------------------------------------
+     HERO CONTENT — CENTERED INSIDE THE FULL-WIDTH HERO
+     ---------------------------------------------------------- */
+  .contentIntelligenceManagem > .frameParent > .frameChild {
+    position: absolute !important;
+    top: 0 !important;
+    left: -25px !important;
+    right: auto !important;
+    bottom: auto !important;
+    width: calc(100% + 50px) !important;
+    max-width: none !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    object-position: center top !important;
+  }
+
+  .contentIntelligenceManagem > .frameParent > .frameGroup {
+    position: relative !important;
+    top: auto !important;
+    left: auto !important;
+    right: auto !important;
+    width: 100% !important;
+    max-width: 440px !important;
+    height: auto !important;
+    margin: 0 auto !important;
+    padding: 0 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center !important;
+    gap: 24px !important;
+    z-index: 2 !important;
+  }
+
+  .contentIntelligenceManagem .frameGroup .frameContainer,
+  .contentIntelligenceManagem .frameGroup .onePlatformManyFormatSmaParent {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    margin: 0 auto !important;
+    align-items: center !important;
+    text-align: center !important;
+  }
+
+  /* ----------------------------------------------------------
+     COMMON SECTION HEADING WRAPPERS — CENTERED, AUTO HEIGHT
+     ---------------------------------------------------------- */
+  .contentIntelligenceManagem .frameWrapper3,
+  .contentIntelligenceManagem .frameWrapper4,
+  .contentIntelligenceManagem .frameParent23,
+  .contentIntelligenceManagem .frameWrapper35,
+  .contentIntelligenceManagem .frameParent32,
+  .contentIntelligenceManagem .frameWrapper42,
+  .contentIntelligenceManagem .frameWrapper43,
+  .contentIntelligenceManagem .frameParent38,
+  .contentIntelligenceManagem .frameParent39,
+  .contentIntelligenceManagem .frameParent56,
+  .contentIntelligenceManagem .frameParent57,
+  .contentIntelligenceManagem .frameParent65,
+  .contentIntelligenceManagem .frameWrapper66,
+  .contentIntelligenceManagem .frameParent80,
+  .contentIntelligenceManagem .frameParent81,
+  .contentIntelligenceManagem .frameWrapper72,
+  .contentIntelligenceManagem .frameWrapper73,
+  .contentIntelligenceManagem .onePlatformSmarterLearningParent {
+    position: relative !important;
+    top: auto !important;
+    right: auto !important;
+    bottom: auto !important;
+    left: auto !important;
+    inset: auto !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+    margin: 0 auto !important;
+    transform: none !important;
+    box-sizing: border-box !important;
+  }
+
+  .contentIntelligenceManagem .frameParent23,
+  .contentIntelligenceManagem .frameParent38,
+  .contentIntelligenceManagem .frameParent39,
+  .contentIntelligenceManagem .frameParent57,
+  .contentIntelligenceManagem .frameParent81,
+  .contentIntelligenceManagem .onePlatformSmarterLearningParent {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center !important;
+    gap: 16px !important;
+  }
+
+  /* Text must never force the viewport wider. */
+  .contentIntelligenceManagem .onePlatformMany,
+  .contentIntelligenceManagem .turnExistingKnowledge,
+  .contentIntelligenceManagem .contentThatWorks,
+  .contentIntelligenceManagem .organizeLearningContent,
+  .contentIntelligenceManagem .turnExistingContent,
+  .contentIntelligenceManagem .onePlatformFor,
+  .contentIntelligenceManagem .fromContentTo,
+  .contentIntelligenceManagem .bringContentTogether,
+  .contentIntelligenceManagem .neurolxpTransformsContent,
+  .contentIntelligenceManagem .neurolxpSupportsDiverse,
+  .contentIntelligenceManagem .manageLearningResources,
+  .contentIntelligenceManagem .neurolxpHelpsInstitutions,
+  .contentIntelligenceManagem .neurolxpSupportsOrganization,
+  .contentIntelligenceManagem .neurolxpBringsContent {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    text-align: center !important;
+    white-space: normal !important;
+    overflow-wrap: normal !important;
+    word-break: normal !important;
+  }
+
+  /* ----------------------------------------------------------
+     CONTENT INTELLIGENCE SECTION
+     ---------------------------------------------------------- */
+  .contentIntelligenceManagem > .frameParent22 {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 24px !important;
+  }
+
+  .contentIntelligenceManagem .frameParent24,
+  .contentIntelligenceManagem .frameParent25,
+  .contentIntelligenceManagem .frameParent29 {
+    position: relative !important;
+    inset: auto !important;
+    width: 100% !important;
+    height: auto !important;
+    margin: 0 auto !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 24px !important;
+    transform: none !important;
+  }
+
+  .contentIntelligenceManagem .frameParent26 {
+    width: min(326px, 100%) !important;
+    max-width: 100% !important;
+    margin: 0 auto !important;
+  }
+
+  /* ----------------------------------------------------------
+     CONTENT CREATION SECTION
+     ---------------------------------------------------------- */
+  .contentIntelligenceManagem > .rectangleParent {
+    padding: 24px 16px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 24px !important;
+  }
+
+  .contentIntelligenceManagem .rectangleParent .frameParent32,
+  .contentIntelligenceManagem .rectangleParent .rectangleGroup,
+  .contentIntelligenceManagem .rectangleParent .createEngageLearnParent {
+    position: relative !important;
+    inset: auto !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+    margin: 0 auto !important;
+    transform: none !important;
+  }
+
+  .contentIntelligenceManagem .rectangleParent .frameParent32,
+  .contentIntelligenceManagem .rectangleParent .createEngageLearnParent {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center !important;
+    gap: 20px !important;
+  }
+
+  .contentIntelligenceManagem .rectangleParent .frameParent34,
+  .contentIntelligenceManagem .rectangleParent .frameParent35 {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: stretch !important;
+    gap: 16px !important;
+  }
+
+  .contentIntelligenceManagem .rectangleParent .frameWrapper36,
+  .contentIntelligenceManagem .rectangleParent .frameWrapper37 {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    min-height: 64px !important;
+    margin: 0 auto !important;
+  }
+
+  /* ----------------------------------------------------------
+     CONTENT COMPATIBILITY SECTION
+     ---------------------------------------------------------- */
+  .contentIntelligenceManagem > .frameParent37 {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 24px !important;
+  }
+
+  .contentIntelligenceManagem .frameParent37 .compatibilitySwitchGrid {
+    width: 100% !important;
+    max-width: 401px !important;
+    margin: 0 auto !important;
+    display: grid !important;
+    grid-template-columns: minmax(0, 1fr) !important;
+    gap: 20px !important;
+    justify-content: center !important;
+  }
+
+  .contentIntelligenceManagem .frameParent37 .compatibilitySwitchCard,
+  .contentIntelligenceManagem .frameParent37 .compatibilitySwitchHeader,
+  .contentIntelligenceManagem .frameParent37 .compatibilitySwitchDetails {
+    width: 100% !important;
+    max-width: 401px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    box-sizing: border-box !important;
+  }
+
+  /* ----------------------------------------------------------
+     CENTRALIZED CONTENT SECTION
+     ---------------------------------------------------------- */
+  .contentIntelligenceManagem > .frameParent55,
+  .contentIntelligenceManagem .frameParent55 .frameParent56 {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center !important;
+    gap: 24px !important;
+  }
+
+  .contentIntelligenceManagem .frameParent55 .frameParent56,
+  .contentIntelligenceManagem .frameParent55 .frameWrapper62,
+  .contentIntelligenceManagem .frameParent55 .frameWrapper63,
+  .contentIntelligenceManagem .frameParent55 .frameWrapper64,
+  .contentIntelligenceManagem .frameParent55 .frameParent58 {
+    position: relative !important;
+    inset: auto !important;
+    width: 100% !important;
+    max-width: 480px !important;
+    height: auto !important;
+    min-height: 0 !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    transform: none !important;
+    box-sizing: border-box !important;
+  }
+
+  /* ----------------------------------------------------------
+     CONTENT VALUE / JOURNEY SECTION
+     ---------------------------------------------------------- */
+  .contentIntelligenceManagem > .image20Parent4 {
+    padding: 24px 12px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 24px !important;
+  }
+
+  .contentIntelligenceManagem .image20Parent4 .frameParent65,
+  .contentIntelligenceManagem .image20Parent4 .frameParent67,
+  .contentIntelligenceManagem .image20Parent4 .frameParent68,
+  .contentIntelligenceManagem .image20Parent4 .frameParent71,
+  .contentIntelligenceManagem .image20Parent4 .frameParent75 {
+    position: relative !important;
+    inset: auto !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+    margin: 0 auto !important;
+    transform: none !important;
+  }
+
+  .contentIntelligenceManagem .image20Parent4 .frameParent65,
+  .contentIntelligenceManagem .image20Parent4 .frameParent67,
+  .contentIntelligenceManagem .image20Parent4 .frameParent68,
+  .contentIntelligenceManagem .image20Parent4 .frameParent71,
+  .contentIntelligenceManagem .image20Parent4 .frameParent75 {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 16px !important;
+  }
+
+  .contentIntelligenceManagem .image20Parent4 .turnExistingContent {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 auto !important;
+  }
+
+  .contentIntelligenceManagem .image20Parent4 .frameParent69,
+  .contentIntelligenceManagem .image20Parent4 .frameWrapper67,
+  .contentIntelligenceManagem .image20Parent4 .frameWrapper68,
+  .contentIntelligenceManagem .image20Parent4 .frameParent73 {
+    width: 100% !important;
+    max-width: 420px !important;
+    margin: 0 auto !important;
+    box-sizing: border-box !important;
+  }
+
+  /* ----------------------------------------------------------
+     ORGANIZATION / LEARNING-SCALE CAROUSEL
+     Remove old sideways translations and center the visible card + controls.
+     ---------------------------------------------------------- */
+  .contentIntelligenceManagem > .frameParent79 {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center !important;
+    gap: 32px !important;
+  }
+
+  .contentIntelligenceManagem .frameParent79 .frameParent80,
+  .contentIntelligenceManagem .frameParent79 .frameParent81,
+  .contentIntelligenceManagem .frameParent79 .frameParent83,
+  .contentIntelligenceManagem .frameParent79 .frameParent85,
+  .contentIntelligenceManagem .frameParent79 .frameParent86,
+  .contentIntelligenceManagem .frameParent79 .frameParent87,
+  .contentIntelligenceManagem .frameParent79 .frameWrapper70,
+  .contentIntelligenceManagem .frameParent79 .frameParent89,
+  .contentIntelligenceManagem .frameParent79 .frameParent90,
+  .contentIntelligenceManagem .frameParent79 .frameParent91 {
+    position: relative !important;
+    top: auto !important;
+    right: auto !important;
+    bottom: auto !important;
+    left: auto !important;
+    inset: auto !important;
+    max-width: 100% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    transform: none !important;
+    box-sizing: border-box !important;
+  }
+
+  .contentIntelligenceManagem .frameParent79 .frameParent83,
+  .contentIntelligenceManagem .frameParent79 .frameParent85,
+  .contentIntelligenceManagem .frameParent79 .frameParent86 {
+    width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+  }
+
+  .contentIntelligenceManagem .frameParent79 .frameParent87,
+  .contentIntelligenceManagem .frameParent79 .frameWrapper70 {
+    width: calc(100% - 8px) !important;
+    max-width: 350px !important;
+    margin: 0 auto !important;
+    transform: none !important;
+  }
+
+  .contentIntelligenceManagem .frameParent79 .frameParent90,
+  .contentIntelligenceManagem .frameParent79 .frameParent84 {
+    left: auto !important;
+    right: auto !important;
+    width: auto !important;
+    max-width: 100% !important;
+    margin: 18px auto 0 !important;
+    transform: none !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 24px !important;
+  }
+
+  .contentIntelligenceManagem .frameParent79 .learningArrowButton {
+    position: relative !important;
+    inset: auto !important;
+    transform: none !important;
+    margin: 0 !important;
+  }
+
+  /* ----------------------------------------------------------
+     FINAL CTA
+     ---------------------------------------------------------- */
+  .contentIntelligenceManagem > .frameParent96 {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center !important;
+    gap: 24px !important;
+    padding: 32px 16px !important;
+  }
+
+  .contentIntelligenceManagem .frameParent96 > .frameWrapper72,
+  .contentIntelligenceManagem .frameParent96 .frameWrapper73,
+  .contentIntelligenceManagem .frameParent96 .onePlatformSmarterLearningParent {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+    margin: 0 auto !important;
+    transform: none !important;
+  }
+
+  .contentIntelligenceManagem .frameParent96 > .requestADemoWrapper {
+    position: relative !important;
+    inset: auto !important;
+    width: min(250px, calc(100vw - 48px)) !important;
+    max-width: 250px !important;
+    height: 64px !important;
+    min-height: 64px !important;
+    margin: 0 auto !important;
+    transform: none !important;
+    flex-shrink: 0 !important;
+  }
+
+  /* ----------------------------------------------------------
+     INTERNAL FOOTER — KEEP IT AFTER ALL CONTENT, NOT OVERLAYING IT
+     ---------------------------------------------------------- */
+  .contentIntelligenceManagem > .frameParent5 {
+    order: 99 !important;
+    position: relative !important;
+    top: auto !important;
+    right: auto !important;
+    bottom: auto !important;
+    left: auto !important;
+    inset: auto !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+    margin: 0 auto !important;
+    transform: none !important;
+    overflow: visible !important;
+  }
+
+  .contentIntelligenceManagem > .frameParent5 > .frameParent6 {
+    position: relative !important;
+    top: auto !important;
+    right: auto !important;
+    bottom: auto !important;
+    left: auto !important;
+    width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+    padding: 32px 20px 24px !important;
+    box-sizing: border-box !important;
+    overflow: visible !important;
+  }
+
+  .contentIntelligenceManagem > .frameParent5 .frameParent7 {
+    position: relative !important;
+    top: auto !important;
+    left: auto !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 auto !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 24px !important;
+  }
+
+  .contentIntelligenceManagem > .frameParent5 .frameParent8,
+  .contentIntelligenceManagem > .frameParent5 .frameParent9,
+  .contentIntelligenceManagem > .frameParent5 .frameParent11,
+  .contentIntelligenceManagem > .frameParent5 .frameParent12,
+  .contentIntelligenceManagem > .frameParent5 .frameParent13 {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    box-sizing: border-box !important;
+  }
+
+  .contentIntelligenceManagem > .frameParent5 .frameParent8,
+  .contentIntelligenceManagem > .frameParent5 .frameParent12 {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    align-items: flex-start !important;
+    gap: 24px !important;
+  }
+
+  /* General media safety inside all mobile sections. */
+  .contentIntelligenceManagem img,
+  .contentIntelligenceManagem svg,
+  .contentIntelligenceManagem video {
+    max-width: 100%;
+  }
+}
+
+/* Extra narrow phones */
+@media screen and (max-width: 420px) {
+  .contentIntelligenceManagem {
+    gap: 40px !important;
+  }
+
+  .contentIntelligenceManagem > .frameParent22,
+  .contentIntelligenceManagem > .rectangleParent,
+  .contentIntelligenceManagem > .frameParent37,
+  .contentIntelligenceManagem > .frameParent55,
+  .contentIntelligenceManagem > .image20Parent4,
+  .contentIntelligenceManagem > .frameParent79,
+  .contentIntelligenceManagem > .frameParent96 {
+    width: calc(100% - 24px) !important;
+    max-width: 100% !important;
+  }
+
+  .contentIntelligenceManagem > .frameParent {
+    width: 100% !important;
+  }
+}
+
+/* ==========================================================================
+   FINAL — TRUE 48PX VISIBLE SECTION SPACING + BOOK A DEMO WRAPPER REMOVAL
+   - Keeps every section's existing internal height/design unchanged.
+   - Preserves existing transforms inside the sections.
+   - Changes only the main section vertical positions on tablet/desktop.
+   - Mobile already uses normal flow with a 48px root gap.
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   BOOK A DEMO — REMOVE ONLY THE EXTRA OUTER WRAPPER / CHROME
+   Keep the actual .headerBookDemoButton surface and hover effect.
+   -------------------------------------------------------------------------- */
+.contentIntelligenceManagem .frameGroup > .frameWrapper {
+  width: auto !important;
+  height: auto !important;
+  min-width: 0 !important;
+  min-height: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+  outline: 0 !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  background-color: transparent !important;
+  box-shadow: none !important;
+  overflow: visible !important;
+}
+
+/* Neutralize any old decorative wrapper element if it is still present. */
+.contentIntelligenceManagem .frameGroup > .frameWrapper > .frameInner {
+  border: 0 !important;
+  outline: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+/* Keep only the intended Book a Demo button visual. */
+.contentIntelligenceManagem .headerBookDemoButton {
+  -webkit-appearance: none !important;
+  appearance: none !important;
+  border: 0 !important;
+  outline: 0 !important;
+  background: #dfe6e9 !important;
+  box-shadow:
+    -4px -4px 4px #ffffff,
+    4px 4px 4px rgba(196, 196, 196, 0.8) !important;
+}
+
+/* --------------------------------------------------------------------------
+   TABLET / DESKTOP — EXACT 48PX VISIBLE GAP BETWEEN MAIN SECTIONS
+   Internal section sizes and transforms are deliberately preserved.
+   -------------------------------------------------------------------------- */
+@media screen and (min-width: 768px) {
+
+  /* HERO visible end:
+     top -28px + height 647px = 619px
+     Next visible section begins at 667px. */
+
+  /* Content Intelligence section keeps its existing translateY(-95px).
+     762 - 95 = 667px visible top. */
+  .contentIntelligenceManagem > .frameParent22 {
+    top: 762px !important;
+  }
+
+  /* Content Intelligence visible height ≈ 844px:
+     667 + 844 = 1511px
+     + 48px = 1559px visible next top.
+     Content Creation keeps translateY(-170px), so top = 1729px. */
+  .contentIntelligenceManagem > .rectangleParent {
+    top: 1729px !important;
+  }
+
+  /* Content Creation visible end:
+     1559 + 736 = 2295px
+     + 48px = 2343px. */
+  .contentIntelligenceManagem > .frameParent37 {
+    top: 2343px !important;
+  }
+
+  /* Compatibility section keeps its existing internal -50px content shift.
+     Visible section end ≈ 3141px
+     + 48px = 3189px. */
+  .contentIntelligenceManagem > .frameParent55 {
+    top: 3189px !important;
+  }
+
+  /* Centralized content visible height = 658px:
+     3189 + 658 = 3847px
+     + 48px = 3895px. */
+  .contentIntelligenceManagem > .image20Parent4 {
+    top: 3895px !important;
+  }
+
+  /* Content journey height = 700px:
+     3895 + 700 = 4595px
+     + 48px = 4643px visible next top.
+     Learning-scale section keeps its internal translateY(-370px),
+     so its outer top is 5013px. */
+  .contentIntelligenceManagem > .frameParent79 {
+    top: 5013px !important;
+  }
+
+  /* Learning-scale visible content ends at ≈ 5731.2px
+     + 48px = 5779.2px visible CTA top.
+     Final CTA keeps its existing -470px content shift,
+     so its outer top is 6249.2px. */
+  .contentIntelligenceManagem > .frameParent96 {
+    top: 6249.2px !important;
+  }
+
+  /* Final CTA visible content ends at ≈ 5961.2px.
+     Footer's visible inner panel begins 42px inside .frameParent5.
+     Place footer wrapper at 5967.2px so the visible footer begins
+     at 6009.2px = exactly 48px after the CTA. */
+  .contentIntelligenceManagem > .frameParent5 {
+    top: 5967.2px !important;
+    bottom: auto !important;
+  }
+
+  /* Extend only the page canvas so the repositioned footer is not clipped. */
+  .contentIntelligenceManagem {
+    height: 6468.2px !important;
+    min-height: 6468.2px !important;
+  }
+}
+
+/* Mobile already has normal-flow sections with gap: 48px.
+   Do not add extra margins that would double the spacing. */
+@media screen and (max-width: 767.98px) {
+  .contentIntelligenceManagem {
+    gap: 48px !important;
+  }
+}
+
+/* ==========================================================================
+   FINAL NO-OVERLAP FIX — TRUE 48PX IN THE LAST SECTION GROUP
+   The overlap was caused by negative translateY values inside the
+   Learning Scale / Why NeuroLXP / final CTA area.
+   No card, image, text size, width, color or shadow is changed.
+   ========================================================================== */
+@media screen and (min-width: 768px) {
+
+  /* Content Journey ends at:
+     3895px + 700px = 4595px
+     Next main section starts exactly 48px later. */
+  .contentIntelligenceManagem > .frameParent79 {
+    top: 4643px !important;
+    gap: 48px !important;
+  }
+
+  /* These two are separate visible sections inside frameParent79.
+     Remove only the old negative vertical pulls that made them overlap. */
+  .contentIntelligenceManagem .frameParent79 > .frameParent80 {
+    transform: none !important;
+  }
+
+  .contentIntelligenceManagem .frameParent79 > .frameParent91 {
+    transform: none !important;
+  }
+
+  /* frameParent80 = 683px
+     + 48px section gap
+     + frameParent91 = 260px header + 50px internal gap + 221px cards
+     = 1262px total.
+     4643 + 1262 = 5905
+     Final CTA begins exactly 48px later. */
+  .contentIntelligenceManagem > .frameParent96 {
+    top: 5953px !important;
+    transform: none !important;
+  }
+
+  /* Remove the old -470px / -500px pulls that caused
+     "One Platform. Smarter Learning" to sit on top of the cards. */
+  .contentIntelligenceManagem .frameParent96 .onePlatformSmarterLearningParent {
+    transform: none !important;
+  }
+
+  .contentIntelligenceManagem .frameParent96 > .requestADemoWrapper {
+    transform: none !important;
+  }
+
+  /* Final CTA natural height:
+     178px content + 50px gap + 64px button = 292px
+     5953 + 292 = 6245
+     Footer starts exactly 48px later. */
+  .contentIntelligenceManagem > .frameParent5 {
+    top: 6293px !important;
+    bottom: auto !important;
+  }
+
+  /* Footer is 501px high. Extend only the page canvas so nothing clips. */
+  .contentIntelligenceManagem {
+    height: 6794px !important;
+    min-height: 6794px !important;
+  }
+}
+
+/* Mobile already uses normal document flow.
+   Keep one 48px rhythm and do not introduce absolute desktop offsets. */
+@media screen and (max-width: 767.98px) {
+  .contentIntelligenceManagem {
+    gap: 48px !important;
+  }
+
+  .contentIntelligenceManagem .frameParent79 > .frameParent80,
+  .contentIntelligenceManagem .frameParent79 > .frameParent91,
+  .contentIntelligenceManagem .frameParent96 .onePlatformSmarterLearningParent,
+  .contentIntelligenceManagem .frameParent96 > .requestADemoWrapper {
     transform: none !important;
   }
 }

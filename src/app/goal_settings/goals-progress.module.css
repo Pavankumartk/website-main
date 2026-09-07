@@ -15355,3 +15355,14 @@ body {
   /* Keep existing hero typography from the original stylesheet. */
 }
 
+/* ==========================================================================
+   FINAL DESKTOP CENTERING — FIVE GOAL-SETTING POLYGONS
+   Move only this full section slightly left so its visual center aligns
+   with the page center. Polygon sizes, rows, gaps and text are unchanged.
+   ========================================================================== */
+@media screen and (min-width: 1024px) {
+  .goalSettingsAndProgressTra > .frameParent25 {
+    left: calc(50% - 595px) !important;
+  }
+}
+

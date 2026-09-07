@@ -7282,3 +7282,119 @@ body {
     border: 0 !important;
 }
 
+/* ==========================================================================
+   FINAL TYPOGRAPHY — HERO EXCLUDED
+   Main non-hero section headings: 36px
+   Main non-hero section subheadings/descriptions: 24px
+
+   HERO IS INTENTIONALLY UNCHANGED:
+   .learningThatAdapts
+   .neurolxpPersonalizesLearning
+   ========================================================================== */
+
+/* ----------------------------------------------------------
+   NON-HERO MAIN SECTION HEADINGS — 36px
+   ---------------------------------------------------------- */
+.personalization .learningBuiltAroundContainer,
+.personalization .personalizationInAction,
+.personalization .betterLearningBetterContainer,
+.personalization .frameParent36 .learningThatAdapts,
+.personalization .frameParent46 > :nth-child(2),
+.personalization .modernLearningHeading,
+.personalization .makeLearningPersonal {
+  font-size: 36px !important;
+  line-height: 45px !important;
+  height: auto !important;
+  min-height: 0 !important;
+}
+
+/* Keep coloured words/spans inside the section headings aligned. */
+.personalization .learningBuiltAroundContainer .learningBuiltAround,
+.personalization .learningBuiltAroundContainer .everyLearner,
+.personalization .modernLearningHeading .learningBuiltAround,
+.personalization .modernLearningHeading .everyLearner {
+  line-height: 45px !important;
+}
+
+/* ----------------------------------------------------------
+   NON-HERO MAIN SUBHEADINGS / DESCRIPTIONS — 24px
+   ---------------------------------------------------------- */
+.personalization .personalizedLearningAdapts,
+.personalization .everyLearnerIs,
+.personalization .adaptiveLearningImproves,
+.personalization .frameParent36 .neurolxpPersonalizesEvery,
+.personalization .learnYourWay,
+.personalization .modernLearningIntro .learnYourWay,
+.personalization .createAdaptiveLearning {
+  font-size: 24px !important;
+  line-height: 36px !important;
+  height: auto !important;
+  min-height: 0 !important;
+}
+
+/* HERO TYPOGRAPHY REMAINS EXACTLY AS IT WAS:
+   .frameParent > .frameGroup .learningThatAdapts
+   .frameParent > .frameGroup .neurolxpPersonalizesLearning
+*/
+
+/* ==========================================================================
+   FINAL DESKTOP SPACING — PERSONALIZED LEARNING + PERSONALIZATION IN ACTION
+   Tighten only the two highlighted text blocks and move them slightly upward.
+   Keep 36px headings / 24px subheadings and all card/image layouts unchanged.
+   ========================================================================== */
+@media screen and (min-width: 1024px) {
+
+  /* ----------------------------------------------------------
+     1) LEARNING BUILT AROUND EVERY LEARNER
+     Reduce badge → heading and heading → description gaps.
+     Pull only the left copy upward; checklist on the right is untouched.
+     ---------------------------------------------------------- */
+  .personalization .personalizedLearningCopy {
+    transform: translateY(-55px) !important;
+  }
+
+  .personalization .personalizedLearningBadge {
+    margin-bottom: 24px !important;
+  }
+
+  .personalization .learningBuiltAroundContainer {
+    margin: 0 !important;
+  }
+
+  .personalization .personalizedLearningAdapts {
+    margin-top: 20px !important;
+  }
+
+  /* ----------------------------------------------------------
+     2) PERSONALIZATION IN ACTION
+     Reduce the large spaces around the heading and pull only
+     the left intro block upward. Right-side cards stay fixed.
+     ---------------------------------------------------------- */
+  .personalization .actionIntro {
+    transform: translateY(-55px) !important;
+  }
+
+  .personalization .personalizationInAction {
+    margin: 24px 0 20px !important;
+  }
+
+  .personalization .everyLearnerIs {
+    margin: 0 !important;
+  }
+
+  /* Preserve the requested typography exactly. */
+  .personalization .learningBuiltAroundContainer,
+  .personalization .personalizationInAction {
+    font-size: 36px !important;
+    line-height: 45px !important;
+    height: auto !important;
+  }
+
+  .personalization .personalizedLearningAdapts,
+  .personalization .everyLearnerIs {
+    font-size: 24px !important;
+    line-height: 36px !important;
+    height: auto !important;
+  }
+}
+

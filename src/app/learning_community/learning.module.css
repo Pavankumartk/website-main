@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
 .learningCommunitySupport {
   width: 100%;
   height: 5600px;
@@ -7,7 +9,7 @@
   text-align: left;
   font-size: 48px;
   color: #31344b;
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", "Inter";
   zoom: 0.89;
   max-width: 1440px;
   margin: 0 auto;
@@ -24,7 +26,7 @@
   height: 80px;
   overflow: hidden;
   font-size: 16px;
-  font-family: Inter;
+  font-family: "Segoe UI", "Inter";
 }
 .frameChild {
   position: absolute;
@@ -107,7 +109,7 @@
   box-sizing: border-box;
   text-align: center;
   color: #2d4cc8;
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", "Inter";
 }
 .signInHelp {
   width: 97px;
@@ -137,7 +139,7 @@
   gap: 8px;
   font-size: 16px;
   color: #2f3547;
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", "Inter";
 }
 .featuresWrapper {
   display: flex;
@@ -379,7 +381,7 @@
     inset -4px -4px 4px #ffffff,
     inset 4px 4px 4px #c4c4c4;
   color: #2d4cc8;
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", "Inter";
   font-size: 24px;
   font-weight: 600;
   line-height: 32px;
@@ -589,7 +591,7 @@
     inset -4px -4px 4px #ffffff,
     inset 4px 4px 4px #c4c4c4;
   color: #2d4cc8;
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", "Inter";
   font-size: 24px;
   font-weight: 600;
   line-height: 32px;
@@ -1033,7 +1035,7 @@
   text-align: left;
   font-size: 22px;
   color: #2f3547;
-  font-family: "Segoe UI", sans-serif;
+  font-family: "Segoe UI", "Inter";
 }
 .frameParent17 {
   width: 419px;
@@ -1616,7 +1618,7 @@
     inset -4px -4px 4px #ffffff,
     inset 4px 4px 4px rgba(196, 196, 196, 0.8);
   color: #2d4cc8;
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", "Inter";
   font-size: 24px;
   font-weight: 600;
   line-height: 32px;
@@ -1934,7 +1936,7 @@
   text-align: left;
   font-size: 54px;
   color: #000;
-  font-family: Inter;
+  font-family: "Segoe UI", "Inter";
 }
 .wrapper {
   display: flex;
@@ -1956,7 +1958,7 @@
   letter-spacing: 0.03em;
   line-height: 40px;
   font-weight: 600;
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", "Inter";
   text-align: center;
 }
 .frameParent57 {
@@ -2002,7 +2004,7 @@
   text-align: left;
   font-size: 54px;
   color: #000;
-  font-family: Inter;
+  font-family: "Segoe UI", "Inter";
 }
 .frameChild34 {
   position: absolute;
@@ -2031,7 +2033,7 @@
   letter-spacing: 0.03em;
   line-height: 40px;
   font-weight: 600;
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", "Inter";
   text-align: center;
   display: inline-block;
   flex-shrink: 0;
@@ -2059,7 +2061,7 @@
   text-align: left;
   font-size: 54px;
   color: #000;
-  font-family: Inter;
+  font-family: "Segoe UI", "Inter";
 }
 .frameParent61 {
   width: 994px;
@@ -2151,7 +2153,7 @@
     inset -4px -4px 4px #ffffff,
     inset 4px 4px 4px rgba(196, 196, 196, 0.8);
   color: #2d4cc8;
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", "Inter";
   font-size: 24px;
   font-weight: 500;
   line-height: 24px;
@@ -2219,7 +2221,7 @@
     inset -4px -4px 4px #ffffff,
     inset 4px 4px 4px rgba(196, 196, 196, 0.8);
   color: #2d4cc8;
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", "Inter";
   font-size: 24px;
   font-weight: 600;
   line-height: 32px;
@@ -2239,7 +2241,7 @@
   margin: 0;
   width: 941px;
   color: #31344b;
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", "Inter";
   font-size: 38px;
   font-weight: 700;
   line-height: 60px;
@@ -2251,7 +2253,7 @@
   margin: 0;
   width: 797px;
   color: #2f3547;
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", "Inter";
   font-size: 24px;
   font-weight: 400;
   line-height: 40px;
@@ -2262,7 +2264,7 @@
 .rectangleContainer .everyQuestionMatters {
   margin: 0;
   width: 941px;
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", "Inter";
   font-size: 36px;
   font-weight: 700;
   line-height: 44px;
@@ -2296,7 +2298,7 @@
   width: 870px;
   height: auto;
   margin: 0;
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", "Inter";
   font-size:38px;
   font-weight: 700;
   line-height: 60px;
@@ -2394,7 +2396,7 @@
   justify-content: center;
   box-sizing: content-box;
   text-align: center;
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", "Inter";
   font-size: 54px;
   font-weight: 700;
   line-height: 62px;
@@ -2414,7 +2416,7 @@
   margin: 6px 0 0;
   text-align: center;
   color: #000000;
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", "Inter";
   font-size: 28px;
   font-weight: 600;
   line-height: 38px;
@@ -2432,7 +2434,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", "Inter";
   font-size: 22px;
   font-weight: 400;
   line-height: 30px;
@@ -3492,7 +3494,7 @@ button.requestADemoWrapper {
   outline: 0 !important;
 
   /* restore the original CTA typography/layout */
-  font-family: 'Segoe UI' !important;
+  font-family: "Segoe UI", "Inter";
   font-size: 24px !important;
   line-height: 32px !important;
   font-weight: 600 !important;
@@ -3508,7 +3510,7 @@ button.requestADemoWrapper:focus-visible {
 
 button.requestADemoWrapper .requestADemo {
   width: 215px !important;
-  font-family: 'Segoe UI' !important;
+  font-family: "Segoe UI", "Inter";
   font-size: 24px !important;
   line-height: 32px !important;
   font-weight: 600 !important;
@@ -3531,6 +3533,123 @@ button.requestADemoWrapper::-moz-focus-inner {
     font-size: 17px !important;
     line-height: 26px !important;
     white-space: nowrap !important;
+  }
+}
+
+/* ==========================================================================
+   FINAL — BUTTON HOVER + INTER FALLBACK + 4PX SHADOWS
+   Applied to this latest uploaded file only.
+   No layout, spacing, sizing, colors or responsive structure changed.
+   ========================================================================== */
+
+/* Full page font stack: Segoe UI first, Inter fallback only. */
+.learningCommunitySupport,
+.learningCommunitySupport *,
+.learningCommunitySupport *::before,
+.learningCommunitySupport *::after {
+  font-family: "Segoe UI", "Inter" !important;
+}
+
+/* ----------------------------------------------------------
+   BUTTON NORMAL STATE
+   Shadow values exactly:
+   -4px -4px 4px
+    4px  4px 4px
+   ---------------------------------------------------------- */
+.learningCommunitySupport .signInHelpWrapper,
+.learningCommunitySupport .frameWrapper3,
+.learningCommunitySupport .requestADemoWrapper,
+.learningCommunitySupport .videoControlButton {
+  box-shadow:
+    -4px -4px 4px #ffffff,
+    4px 4px 4px #c6c6c9 !important;
+
+  transition:
+    box-shadow 0.2s ease,
+    transform 0.2s ease !important;
+}
+
+/* Keep the circular video/play control shape. */
+.learningCommunitySupport .videoControlButton {
+  border-radius: 50% !important;
+}
+
+/* ----------------------------------------------------------
+   BUTTON HOVER / KEYBOARD FOCUS
+   Same 4px values, changed to inset for pressed neumorphism.
+   ---------------------------------------------------------- */
+.learningCommunitySupport .signInHelpWrapper:hover,
+.learningCommunitySupport .signInHelpWrapper:focus-visible,
+.learningCommunitySupport .frameWrapper3:hover,
+.learningCommunitySupport .frameWrapper3:focus-visible,
+.learningCommunitySupport .requestADemoWrapper:hover,
+.learningCommunitySupport .requestADemoWrapper:focus-visible,
+.learningCommunitySupport .videoControlButton:hover,
+.learningCommunitySupport .videoControlButton:focus-visible {
+  box-shadow:
+    inset -4px -4px 4px #ffffff,
+    inset 4px 4px 4px #c6c6c9 !important;
+}
+
+/* Pressed state */
+.learningCommunitySupport .signInHelpWrapper:active,
+.learningCommunitySupport .frameWrapper3:active,
+.learningCommunitySupport .requestADemoWrapper:active,
+.learningCommunitySupport .videoControlButton:active {
+  box-shadow:
+    inset -4px -4px 4px #ffffff,
+    inset 4px 4px 4px #c6c6c9 !important;
+}
+
+/* Preserve existing native-button reset while enforcing the requested font. */
+.learningCommunitySupport button.bookADemoWrapper,
+.learningCommunitySupport button.bookADemoWrapper:hover,
+.learningCommunitySupport button.bookADemoWrapper:focus,
+.learningCommunitySupport button.bookADemoWrapper:focus-visible,
+.learningCommunitySupport button.bookADemoWrapper:active,
+.learningCommunitySupport button.requestADemoWrapper,
+.learningCommunitySupport button.requestADemoWrapper:hover,
+.learningCommunitySupport button.requestADemoWrapper:focus,
+.learningCommunitySupport button.requestADemoWrapper:focus-visible,
+.learningCommunitySupport button.requestADemoWrapper:active {
+  font-family: "Segoe UI", "Inter" !important;
+}
+
+/* ==========================================================================
+   FINAL CORRECTION — INCREASE SPACE BEFORE FOOTER TO 48PX
+   Do NOT compress or move the last section.
+   Restore the original desktop canvas height and add a real 48px gap
+   between the page content and the external site footer.
+   ========================================================================== */
+
+/* Desktop / tablet: restore the original page height.
+   The footer gap is added AFTER the page instead of shrinking the page. */
+@media screen and (min-width: 768px) {
+  .learningCommunitySupport {
+    height: 5600px !important;
+    min-height: 5600px !important;
+    margin-bottom: 48px !important;
+    padding-bottom: 0 !important;
+  }
+
+  /* Do not pull/compress the final section. */
+  .frameParent61 {
+    margin-bottom: 0 !important;
+  }
+}
+
+/* Mobile: keep normal-flow content and add the same clear 48px
+   breathing space before the external footer. */
+@media screen and (max-width: 767px) {
+  .learningCommunitySupport {
+    height: auto !important;
+    min-height: 0 !important;
+    padding-bottom: 0 !important;
+    margin-bottom: 48px !important;
+  }
+
+  .frameParent61 {
+    margin-bottom: 0 !important;
   }
 }
 

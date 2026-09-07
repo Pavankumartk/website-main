@@ -2756,3 +2756,469 @@ body {
     margin: 0 !important;
   }
 }
+
+/* ==========================================================================
+   FINAL DESKTOP ALIGNMENT FIX — CENTER ONLY THE SECTIONS THAT USED
+   FIXED LEFT OFFSETS
+   --------------------------------------------------------------------------
+   Affects desktop only (1200px+).
+   Keeps all existing sizes, content, spacing, animations and responsive CSS.
+   ========================================================================== */
+@media screen and (min-width: 1200px) {
+
+  /* 1. HOW NEUROLXP SUPPORTS NGOs
+     Previously: left: 80px;
+     Center the complete 1280px section inside the page instead. */
+  .frameParent5 {
+    left: 50% !important;
+    right: auto !important;
+    transform: translateX(-50%) !important;
+  }
+
+  /* 2. COLLABORATIVE LEARNING
+     Previously: left: 78px;
+     Center the complete section instead of relying on a fixed left offset. */
+  .image20Group {
+    left: 50% !important;
+    right: auto !important;
+    transform: translateX(-50%) !important;
+  }
+
+  /* 3. ENABLING LEARNING FOR SOCIAL IMPACT
+     Previously: left: 80px;
+     Center the complete section inside the page. */
+  .frameParent38 {
+    left: 50% !important;
+    right: auto !important;
+    transform: translateX(-50%) !important;
+  }
+
+  /* When a Key Challenge card expands, the existing page animation moves
+     the sections down by 144px. Preserve that vertical movement AND the
+     corrected horizontal centering. */
+  .supportCardsExpanded .image20Group,
+  .supportCardsExpanded .frameParent38 {
+    left: 50% !important;
+    right: auto !important;
+    transform: translate(-50%, 144px) !important;
+  }
+}
+
+
+/* ==========================================================================
+   FINAL DESKTOP CENTERING — HERO FRAME + BOTTOM VIDEO FRAME ONLY
+   --------------------------------------------------------------------------
+   Corrects the small remaining right shift on desktop without changing
+   section sizes, typography, spacing, animations, tablet or mobile layouts.
+   ========================================================================== */
+@media screen and (min-width: 1200px) {
+
+  /* TOP HERO FRAME
+     Original desktop values used .ngoInner left: 94px while a 1280px
+     centered frame on a 1440px canvas should begin at 80px.
+     Center the holder and pin the 1280px hero card to its true center. */
+  .ngoInner {
+    left: 50% !important;
+    right: auto !important;
+    width: 1280px !important;
+    transform: translateX(-50%) !important;
+  }
+
+  .ngoInner .image20Parent {
+    left: 0 !important;
+    right: auto !important;
+    transform: none !important;
+  }
+
+  /* BOTTOM VIDEO FRAME
+     frameParent38 is already centered. Its flex alignment was pushing the
+     1236px video frame to the right edge of the 1280px parent.
+     Center only the video frame inside that section. */
+  .frameParent38 .frameWrapper30 {
+    align-self: center !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  /* Center the inner rounded video viewport exactly inside the outer frame. */
+  .frameParent38 .happyStudentsGraduationCereParent {
+    left: 50% !important;
+    right: auto !important;
+    transform: translateX(-50%) !important;
+  }
+}
+
+
+/* ==========================================================================
+   FINAL BOOK A DEMO BUTTON — NEUMORPHIC HOVER IN / HOVER OUT + MOBILE
+   --------------------------------------------------------------------------
+   Changes ONLY the hero "Book a Demo" button.
+   Default / mouse-out = raised.
+   Hover = pressed/inset.
+   Active = slightly stronger pressed state.
+   Mobile = compact, centered text, no overflow.
+   ========================================================================== */
+
+/* Base state / hover-out state */
+.frameWrapper {
+  cursor: pointer !important;
+  background: #dfe6e9 !important;
+  border: 0 !important;
+  box-shadow:
+    -4px -4px 4px #ffffff,
+    4px 4px 4px #c6c6c9 !important;
+
+  transition:
+    box-shadow 0.28s ease,
+    transform 0.28s ease,
+    color 0.28s ease !important;
+
+  transform: translateY(0) !important;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Hover-in: pressed / inset neumorphic effect */
+@media (hover: hover) and (pointer: fine) {
+  .frameWrapper:hover {
+    box-shadow:
+      inset -4px -4px 4px #ffffff,
+      inset 4px 4px 4px rgba(196, 196, 196, 0.82) !important;
+
+    transform: translateY(1px) !important;
+  }
+}
+
+/* Click / tap feedback */
+.frameWrapper:active {
+  box-shadow:
+    inset -3px -3px 4px #ffffff,
+    inset 3px 3px 5px rgba(187, 193, 197, 0.9) !important;
+
+  transform: translateY(2px) !important;
+}
+
+/* Keyboard accessibility without changing the design */
+.frameWrapper:focus-visible {
+  outline: 2px solid rgba(45, 76, 200, 0.45) !important;
+  outline-offset: 4px !important;
+}
+
+/* Keep label perfectly centered */
+.frameWrapper .bookADemoWrapper {
+  width: auto !important;
+  min-width: 0 !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  margin: 0 auto !important;
+}
+
+.frameWrapper .bookADemo {
+  width: auto !important;
+  margin: 0 !important;
+  text-align: center !important;
+  white-space: nowrap !important;
+}
+
+/* --------------------------------------------------------------------------
+   TABLET / SMALL LAPTOP
+   -------------------------------------------------------------------------- */
+@media screen and (max-width: 1199px) {
+  .frameWrapper {
+    width: fit-content !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+
+    height: auto !important;
+    min-height: 52px !important;
+
+    padding: 12px clamp(20px, 5vw, 30px) !important;
+    box-sizing: border-box !important;
+
+    border-radius: 16px !important;
+    font-size: clamp(16px, 3vw, 20px) !important;
+    line-height: 1.3 !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    flex-shrink: 0 !important;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   MOBILE
+   -------------------------------------------------------------------------- */
+@media screen and (max-width: 767px) {
+  .frameWrapper {
+    width: min(100%, 220px) !important;
+    max-width: 220px !important;
+    min-height: 52px !important;
+
+    padding: 11px 20px !important;
+    border-radius: 14px !important;
+
+    font-size: 16px !important;
+    line-height: 24px !important;
+
+    align-self: flex-start !important;
+  }
+
+  .frameWrapper .bookADemoWrapper {
+    width: 100% !important;
+  }
+
+  .frameWrapper .bookADemo {
+    width: 100% !important;
+    line-height: 24px !important;
+    text-align: center !important;
+  }
+}
+
+/* Extra-small mobile */
+@media screen and (max-width: 480px) {
+  .frameWrapper {
+    width: min(100%, 200px) !important;
+    max-width: 200px !important;
+    min-height: 48px !important;
+
+    padding: 10px 16px !important;
+    border-radius: 13px !important;
+
+    font-size: 15px !important;
+    line-height: 22px !important;
+  }
+
+  .frameWrapper .bookADemo {
+    line-height: 22px !important;
+  }
+}
+
+/* Users who prefer reduced motion still get the visual in/out state. */
+@media (prefers-reduced-motion: reduce) {
+  .frameWrapper {
+    transition: none !important;
+  }
+}
+
+/* ==========================================================================
+   FINAL TYPOGRAPHY STANDARDIZATION — NGO PAGE ONLY
+   Scope: font family + font sizes only.
+   No layout, spacing, dimensions, positioning, colors, shadows, images,
+   hover effects, animations, or responsive structure are changed.
+
+   Reference typography:
+   Desktop:
+   - Main / section headings: 36px
+   - Body copy: 24px
+   - Pills / CTA text: 24px
+   - Card headings: 24px
+   - Supporting / expanded card copy: 20px
+
+   Tablet:
+   - Main / section headings: 32px
+   - Body copy: 20px
+   - Pills / CTA text: 20px
+   - Card headings: 20px
+   - Supporting copy: 16px
+
+   Mobile:
+   - Hero heading: 28px
+   - Section headings: 24px
+   - Body copy: 16px
+   - Pills / CTA text: 16px
+   - Card headings: 18px
+   - Supporting copy: 16px
+   ========================================================================== */
+
+
+/* ==========================================================================
+   FONT FAMILY — WHOLE NGO PAGE
+   ========================================================================== */
+.ngo,
+.ngo * {
+  font-family: "Segoe UI", "Inter", sans-serif !important;
+}
+
+
+/* ==========================================================================
+   DESKTOP TYPOGRAPHY
+   ========================================================================== */
+@media screen and (min-width: 1200px) {
+
+  /* Main and section headings */
+  .empoweringNgosThroughContainer,
+  .missionDrivenLearning,
+  .scaleYourImpact,
+  .howNeurolxpSupports,
+  .collaborativeLearning,
+  .benefitsForNgosContainer,
+  .enablingLearningFor {
+    font-size: 36px !important;
+  }
+
+  /* Main body / section descriptions */
+  .empoweringNonprofitsThrough,
+  .neurolxpHelpsNonprofits,
+  .createOnceTrainContainer,
+  .neurolxpHelpsNonprofits2,
+  .withFlexibleLearning {
+    font-size: 24px !important;
+  }
+
+  /* Neumorphic labels / pills */
+  .frameInner,
+  .frameIcon,
+  .frameChild6,
+  .frameChild7,
+  .frameChild15,
+  .frameChild21 {
+    font-size: 24px !important;
+  }
+
+  /* Hero CTA */
+  .frameWrapper,
+  .bookADemo {
+    font-size: 24px !important;
+  }
+
+  /* Main card titles */
+  .supportCardTitle,
+  .volunteerOnboarding,
+  .leadershipTraining,
+  .empoweredTeams,
+  .missionDrivenGrowth,
+  .higherLearnerEngagement,
+  .smarterLearningManagement,
+  .measurableSocialImpact {
+    font-size: 24px !important;
+  }
+
+  /* Supporting card copy */
+  .empowerStaffVolunteers,
+  .deliverStructuredTraining,
+  .supportCardDetails p {
+    font-size: 20px !important;
+  }
+}
+
+
+/* ==========================================================================
+   TABLET / SMALL LAPTOP TYPOGRAPHY
+   ========================================================================== */
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+
+  /* Main and section headings */
+  .empoweringNgosThroughContainer,
+  .missionDrivenLearning,
+  .scaleYourImpact,
+  .howNeurolxpSupports,
+  .collaborativeLearning,
+  .benefitsForNgosContainer,
+  .enablingLearningFor {
+    font-size: 32px !important;
+  }
+
+  /* Main body / section descriptions */
+  .empoweringNonprofitsThrough,
+  .neurolxpHelpsNonprofits,
+  .createOnceTrainContainer,
+  .neurolxpHelpsNonprofits2,
+  .withFlexibleLearning {
+    font-size: 20px !important;
+  }
+
+  /* Neumorphic labels / pills */
+  .frameInner,
+  .frameIcon,
+  .frameChild6,
+  .frameChild7,
+  .frameChild15,
+  .frameChild21,
+  .frameWrapper,
+  .bookADemo {
+    font-size: 20px !important;
+  }
+
+  /* Card titles */
+  .supportCardTitle,
+  .volunteerOnboarding,
+  .leadershipTraining,
+  .empoweredTeams,
+  .missionDrivenGrowth,
+  .higherLearnerEngagement,
+  .smarterLearningManagement,
+  .measurableSocialImpact {
+    font-size: 20px !important;
+  }
+
+  /* Supporting copy */
+  .empowerStaffVolunteers,
+  .deliverStructuredTraining,
+  .supportCardDetails p {
+    font-size: 16px !important;
+  }
+}
+
+
+/* ==========================================================================
+   MOBILE TYPOGRAPHY
+   ========================================================================== */
+@media screen and (max-width: 767px) {
+
+  /* Hero heading */
+  .empoweringNgosThroughContainer {
+    font-size: 28px !important;
+  }
+
+  /* Section headings */
+  .missionDrivenLearning,
+  .scaleYourImpact,
+  .howNeurolxpSupports,
+  .collaborativeLearning,
+  .benefitsForNgosContainer,
+  .enablingLearningFor {
+    font-size: 24px !important;
+  }
+
+  /* Body copy */
+  .empoweringNonprofitsThrough,
+  .neurolxpHelpsNonprofits,
+  .createOnceTrainContainer,
+  .neurolxpHelpsNonprofits2,
+  .withFlexibleLearning,
+  .empowerStaffVolunteers,
+  .deliverStructuredTraining {
+    font-size: 16px !important;
+  }
+
+  /* Pills / CTA */
+  .frameInner,
+  .frameIcon,
+  .frameChild6,
+  .frameChild7,
+  .frameChild15,
+  .frameChild21,
+  .frameWrapper,
+  .bookADemo {
+    font-size: 16px !important;
+  }
+
+  /* Card titles */
+  .supportCardTitle,
+  .volunteerOnboarding,
+  .leadershipTraining,
+  .empoweredTeams,
+  .missionDrivenGrowth,
+  .higherLearnerEngagement,
+  .smarterLearningManagement,
+  .measurableSocialImpact {
+    font-size: 18px !important;
+  }
+
+  /* Expanded / supporting card text */
+  .supportCardDetails p {
+    font-size: 16px !important;
+  }
+}
+

@@ -5548,14 +5548,197 @@ body {
     border: 0 !important;
 }
 
+/* =========================================================
+   BUTTON HOVER — RAISED TO INSET AND BACK
+   Scoped to devices with a real hover-capable pointer.
+   ========================================================= */
+@media (hover: hover) and (pointer: fine) {
+    .interactiveGamifiedLearnin .frameIcon:hover,
+    .interactiveGamifiedLearnin .frameWrapper3:hover,
+    .interactiveGamifiedLearnin .frameWrapper3:has(.startLearning:hover),
+    .interactiveGamifiedLearnin .frameWrapper19:hover,
+    .interactiveGamifiedLearnin .frameWrapper19:has(.bookADemo:hover),
+    .interactiveGamifiedLearnin .learnMorePill:hover {
+        box-shadow:
+            inset -4px -4px 4px #ffffff,
+            inset 4px 4px 4px rgba(196, 196, 196, 0.9) !important;
+        transform: translateY(1px);
+    }
+}
 
 /* =========================================================
-   GAMIFIED PAGE — SEGOE UI ONLY
+   NON-HERO TYPE SCALE + ONE-VIEWPORT SECTION RHYTHM
+   Desktop sections use a 36px / 24px hierarchy and a
+   consistent 48px gap. The hero remains unchanged.
+   ========================================================= */
+@media screen and (min-width: 768px) {
+    .interactiveGamifiedLearnin {
+        --section-gap: 48px;
+        height: 5264px !important;
+    }
+
+    /* 36px section headings */
+    .interactiveActivitiesThatContainer,
+    .frameParent40 .beyondLearningInto,
+    .image20Parent4 .howInteractiveLearning,
+    .frameParent62 .howInteractiveLearning,
+    .frameParent73 .beyondLearningInto {
+        font-size: 36px !important;
+        font-weight: 600;
+    }
+
+    /* 24px section copy; supporting card copy remains 20px. */
+    .activeParticipationMakes,
+    .neurolxpOffersA,
+    .frameParent40 .perfectForUniversities,
+    .image20Parent4 .interactiveLearningDrives,
+    .frameParent62 .interactiveLearningDrives,
+    .frameParent73 .perfectForUniversities {
+        font-size: 24px !important;
+    }
+
+    /*
+       Section bounds at the 1440px design canvas:
+       hero 545, overview 397, activities 862, modes 656,
+       results 728, scale 613, CTA 597. Every boundary below
+       leaves exactly 48px before the next section.
+    */
+    .frameParent8 {
+        top: 664px !important;
+        height: 397px;
+        font-size: 24px;
+    }
+
+    .frameParent17 {
+        top: 1109px !important;
+        height: 862px !important;
+    }
+
+    /* The title is one line: remove its unused second-line box. */
+    .frameParent17 .interactiveActivitiesThatContainer {
+        height: 60px !important;
+    }
+
+    .frameParent17 .frameWrapper6 {
+        height: 262px;
+    }
+
+    .frameParent17 .frameParent20 {
+        top: 312px;
+    }
+
+    .frameParent40 {
+        top: 2019px !important;
+        height: 656px;
+    }
+
+    .image20Parent4 {
+        top: 2723px !important;
+        height: 728px !important;
+    }
+
+    /* Compact only the results section's internal whitespace. */
+    .image20Parent4 .frameParent52 {
+        top: 24px;
+        gap: 22px;
+    }
+
+    .image20Parent4 .frameWrapper15 {
+        height: 202px !important;
+    }
+
+    .image20Parent4 .frameParent53 {
+        gap: 16px !important;
+    }
+
+    .image20Parent4 .howInteractiveLearningDriveParent {
+        height: 136px !important;
+        gap: 16px !important;
+    }
+
+    .image20Parent4 .howInteractiveLearning {
+        height: 48px;
+        line-height: 48px;
+    }
+
+    .image20Parent4 .interactiveLearningDrives {
+        height: 72px;
+        line-height: 36px;
+    }
+
+    .image20Parent4 .frameParent54,
+    .image20Parent4 .image20Parent5,
+    .image20Parent4 .collageCustomerExperienceCoIcon {
+        height: 480px !important;
+    }
+
+    .image20Parent4 .image20Parent5 {
+        top: 0;
+    }
+
+    .image20Parent4 .frameParent55 {
+        top: 5px;
+        height: 470px;
+        gap: 10px;
+    }
+
+    .image20Parent4 .frameParent56,
+    .image20Parent4 .frameParent57 {
+        height: 70px;
+    }
+
+    /* This decorative child belongs to the results section. */
+    .interactiveGamifiedLearninChild {
+        top: 2921px !important;
+    }
+
+    .frameParent62 {
+        top: 3499px !important;
+        height: 613px;
+    }
+
+    .frameParent73 {
+        top: 4160px !important;
+        height: 597px;
+    }
+
+    /* Keep exactly 48px between the last section and footer. */
+    .frameParent78 {
+        top: 4805px !important;
+        height: 459px !important;
+    }
+
+    .frameParent78 .frameParent79 {
+        top: 0 !important;
+        bottom: auto !important;
+    }
+}
+
+/* Mobile/tablet reflow keeps the responsive type scale while using
+   the same 48px section-to-section rhythm. */
+@media screen and (max-width: 767px) {
+    .interactiveGamifiedLearnin {
+        padding-bottom: 48px !important;
+    }
+
+    .frameParent8,
+    .frameParent17,
+    .frameParent40,
+    .image20Parent4,
+    .interactiveGamifiedLearninChild,
+    .frameParent73 {
+        margin-top: 48px !important;
+    }
+}
+
+
+/* =========================================================
+   GAMIFIED PAGE — SEGOE UI WITH INTER FALLBACK
    Includes breadcrumbs and all page descendants.
    ========================================================= */
 .interactiveGamifiedLearnin,
 .interactiveGamifiedLearnin * {
-    font-family: 'Segoe UI' !important;
+    font-family: 'Segoe UI', 'Inter' !important;
 }
 
 /* =========================================================
@@ -5580,5 +5763,103 @@ body {
 .frameIcon::-moz-focus-inner,
 .bookADemo::-moz-focus-inner {
     border: 0 !important;
+}
+
+/* =========================================================
+   FINAL SECTION -> FOOTER: EXACTLY 48PX
+   CTA: 4160px + 597px = 4757px
+   Footer begins: 4757px + 48px = 4805px
+
+   The Footer component can be rendered outside this page wrapper.
+   In that structure the wrapper must stop at 4805px; reserving the
+   footer's additional 459px creates the large blank area seen below
+   the CTA. Only include that 459px when the footer is actually nested
+   inside this wrapper.
+   Keep this block as the final CSS in the file.
+   ========================================================= */
+@media screen and (min-width: 768px) {
+    .interactiveGamifiedLearnin {
+        height: 4805px !important;
+        min-height: 0 !important;
+    }
+
+    .interactiveGamifiedLearnin:has(.frameParent78) {
+        height: 5264px !important;
+    }
+
+    .interactiveGamifiedLearnin .frameParent78 {
+        display: block !important;
+        position: absolute !important;
+        top: 4805px !important;
+        bottom: auto !important;
+        height: 459px !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+        z-index: 5 !important;
+    }
+
+    .interactiveGamifiedLearnin .frameParent78 .frameParent79 {
+        display: block !important;
+        top: 0 !important;
+        bottom: auto !important;
+        height: 459px !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+    }
+}
+
+/* ==========================================================================
+   FINAL SECTION-TO-SECTION SPACING — EXACTLY 48PX
+   Only locks the vertical distance between the existing main sections.
+   No internal section layout, typography, cards, images, colors or widths
+   are changed.
+   ========================================================================== */
+@media screen and (min-width: 768px) {
+  /* Hero ends: 71 + 545 = 616 → next section starts at 664 */
+  .interactiveGamifiedLearnin .frameParent8 {
+    top: 664px !important;
+  }
+
+  /* 664 + 397 = 1061 → +48 */
+  .interactiveGamifiedLearnin .frameParent17 {
+    top: 1109px !important;
+  }
+
+  /* 1109 + 862 = 1971 → +48 */
+  .interactiveGamifiedLearnin .frameParent40 {
+    top: 2019px !important;
+  }
+
+  /* 2019 + 656 = 2675 → +48 */
+  .interactiveGamifiedLearnin .image20Parent4 {
+    top: 2723px !important;
+  }
+
+  /* 2723 + 728 = 3451 → +48 */
+  .interactiveGamifiedLearnin .frameParent62 {
+    top: 3499px !important;
+  }
+
+  /* 3499 + 613 = 4112 → +48 */
+  .interactiveGamifiedLearnin .frameParent73 {
+    top: 4160px !important;
+  }
+
+  /* 4160 + 597 = 4757 → +48 to footer */
+  .interactiveGamifiedLearnin .frameParent78 {
+    top: 4805px !important;
+  }
+}
+
+/* Mobile keeps the same 48px rhythm in normal flow. */
+@media screen and (max-width: 767px) {
+  .interactiveGamifiedLearnin .frameParent8,
+  .interactiveGamifiedLearnin .frameParent17,
+  .interactiveGamifiedLearnin .frameParent40,
+  .interactiveGamifiedLearnin .image20Parent4,
+  .interactiveGamifiedLearnin .frameParent62,
+  .interactiveGamifiedLearnin .frameParent73 {
+    margin-top: 64px !important;
+  }
 }
 

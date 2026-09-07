@@ -6654,3 +6654,128 @@
   }
 }
 
+/* ==========================================================================
+   FINAL DESKTOP CORRECTION — CAREER-BANNER SPACING + CTA TYPOGRAPHY ONLY
+   1) Reduces the extra blank space before "Prepare for High-Demand Careers".
+   2) Keeps all following sections moving together with the same spacing rhythm.
+   3) Reduces the final Bootcamp CTA heading/body typography only.
+   No card design, shadows, colors, images, content, or responsive mobile rules changed.
+   ========================================================================== */
+@media screen and (min-width: 1200px) {
+
+  /* ----------------------------------------------------------
+     1) PROJECT CARDS -> HIGH-DEMAND CAREER BANNER
+     After the reduced 136px project-card height, the project section
+     ends earlier. Move the career banner up to restore a compact,
+     uniform section gap.
+     ---------------------------------------------------------- */
+  .bootcampInner2 {
+    top: 1668px !important;
+  }
+
+  /* Career banner height = 303px.
+     Keep ~48px before the accordion section. */
+  .frameParent14 {
+    top: 2019px !important;
+  }
+
+  /* Keep the downstream sections synchronized so nothing overlaps. */
+  .rectangleParent4 {
+    top: calc(2383px + var(--accordion-extra-height)) !important;
+    transition: top 0.35s ease !important;
+  }
+
+  .rectangleParent3 {
+    top: calc(3187px + var(--accordion-extra-height)) !important;
+    transition: top 0.35s ease !important;
+  }
+
+  .bootcamp {
+    height: calc(3716px + var(--accordion-extra-height)) !important;
+    padding-bottom: 0 !important;
+    transition: height 0.35s ease !important;
+  }
+
+  /* ----------------------------------------------------------
+     2) FINAL BOOTCAMP CTA — FONT SIZE CONSISTENCY
+     Reduce only the oversized CTA typography.
+     ---------------------------------------------------------- */
+  .rectangleParent3 .neurolabsCodingBootcamps2 {
+    width: min(100%, 820px) !important;
+    height: auto !important;
+    margin: 0 auto !important;
+    font-family: "Segoe UI", "Inter", sans-serif !important;
+    font-size: 36px !important;
+    line-height: 48px !important;
+    letter-spacing: 0.03em !important;
+  }
+
+  .rectangleParent3 .accelerateYourCoding {
+    width: min(100%, 820px) !important;
+    height: auto !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    font-family: "Segoe UI", "Inter", sans-serif !important;
+    font-size: 24px !important;
+    line-height: 36px !important;
+  }
+
+  /* Keep the CTA's existing layout but tighten only the text-group gaps
+     so the smaller typography stays visually centered. */
+  .rectangleParent3 .neurolabsCodingBootcampsFasParent {
+    height: auto !important;
+    gap: 24px !important;
+  }
+
+  .rectangleParent3 .frameParent45 {
+    height: auto !important;
+    gap: 36px !important;
+  }
+}
+
+/* ==========================================================================
+   FINAL CTA — REDUCED HEIGHT, FULL TOP/BOTTOM NEUMORPHIC EFFECT RETAINED
+   Only the final CTA height is reduced.
+   The existing inset shadow values are preserved and overlaid above the image
+   so the top AND bottom edge effects remain visible.
+   ========================================================================== */
+@media screen and (min-width: 1200px) {
+  .rectangleParent3 {
+    height: 430px !important;
+    box-shadow:
+      -4px -4px 4px rgba(255, 255, 255, 0.5) inset,
+      4px 4px 4px #c4c4c4 inset !important;
+  }
+
+  .rectangleParent3 .rectangle2 {
+    width: 100% !important;
+    height: 100% !important;
+    border-radius: 500px !important;
+  }
+
+  .rectangleParent3 .image202 {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    object-position: center 20% !important;
+  }
+
+  /* Keep the original inset effect visible above the background image. */
+  .rectangleParent3::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 500px;
+    box-shadow:
+      -4px -4px 4px rgba(255, 255, 255, 0.5) inset,
+      4px 4px 4px #c4c4c4 inset;
+    pointer-events: none;
+    z-index: 10;
+  }
+}
+
+.fromCodingBasics {
+  width: auto !important;
+  white-space: nowrap !important;
+  display: inline-block !important;
+}

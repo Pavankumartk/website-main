@@ -2181,3 +2181,29 @@
 .plp-page * {
   font-family: "Segoe UI", "Inter" !important;
 }
+
+/* ==========================================================================
+   FINAL DESKTOP TYPOGRAPHY — HERO EXCLUDED
+   All main section headings after the hero: 36px
+   All section subheadings/descriptions after the hero: 24px
+   Card titles, stage titles, badges, buttons and hero typography are untouched.
+   ========================================================================== */
+@media screen and (min-width: 1024px) {
+
+  /* Main non-hero section headings */
+  .plp-page .plp-section-heading,
+  .plp-page .plp-challenge-heading,
+  .plp-page .plp-cta-heading {
+    font-size: 36px !important;
+    line-height: 45px !important;
+  }
+
+  /* Main non-hero section subheadings / descriptions */
+  .plp-page .plp-section-subtext,
+  .plp-page .plp-challenge-subtext,
+  .plp-page .plp-cta-subtext {
+    font-size: 24px !important;
+    line-height: 36px !important;
+  }
+}
+

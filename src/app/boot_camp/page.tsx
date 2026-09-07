@@ -270,9 +270,7 @@ const Bootcamp: NextPage = () => {
                   <div className={styles.structuredAcceleratedLearnParent}>
                     <div className={styles.structuredAccelerated}>{`Accelerated Learning`}</div>
                    <div className={styles.fromCodingBasics}>
-  From coding basics to real-world
-  <br />
-  applications
+  From coding basics to real-world applications
 </div>
                   </div>
                 </div>

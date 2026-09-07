@@ -86,6 +86,7 @@ export default function CodingLabsPage() {
   const router = useRouter();
   const [videoOrder, setVideoOrder] = useState([0, 1, 2]);
   const videoSliderRef = useRef<HTMLDivElement>(null);
+  const swipeStartX = useRef<number | null>(null);
 
   useEffect(() => {
     const videos = videoSliderRef.current?.querySelectorAll("video");
@@ -106,6 +107,33 @@ export default function CodingLabsPage() {
 
   const nextVideo = () => {
     setVideoOrder((current) => [current[1], current[2], current[0]]);
+  };
+
+  const handleSwipeStart = (event: React.TouchEvent<HTMLDivElement>) => {
+    swipeStartX.current = event.touches[0]?.clientX ?? null;
+  };
+
+  const handleSwipeEnd = (event: React.TouchEvent<HTMLDivElement>) => {
+    if (swipeStartX.current === null) return;
+
+    const endX = event.changedTouches[0]?.clientX;
+    if (typeof endX !== "number") {
+      swipeStartX.current = null;
+      return;
+    }
+
+    const distance = endX - swipeStartX.current;
+    const swipeThreshold = 45;
+
+    if (Math.abs(distance) >= swipeThreshold) {
+      if (distance < 0) {
+        nextVideo();
+      } else {
+        previousVideo();
+      }
+    }
+
+    swipeStartX.current = null;
   };
 
   return (
@@ -238,7 +266,12 @@ export default function CodingLabsPage() {
           </div>
 
           <div className="coding-video-area">
-            <div className="coding-video-deck" ref={videoSliderRef}>
+            <div
+              className="coding-video-deck"
+              ref={videoSliderRef}
+              onTouchStart={handleSwipeStart}
+              onTouchEnd={handleSwipeEnd}
+            >
               <div className="coding-video-card coding-video-card--back">
                 <video
                   key={`back-${videoOrder[2]}`}

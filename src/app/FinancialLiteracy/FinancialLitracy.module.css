@@ -4217,3 +4217,242 @@
     word-break: keep-all !important;
   }
 }
+
+/* ==========================================================================
+   FINAL DESKTOP TYPOGRAPHY + SMART FINANCE COMPACT VIEW
+   - Hero section is intentionally untouched.
+   - Non-hero main headings = 36px.
+   - Non-hero main subheadings/descriptions = 24px.
+   - Smart Finance section is tightened to fit comfortably in one desktop view.
+   ========================================================================== */
+@media screen and (min-width: 1025px) {
+
+  /* ----------------------------------------------------------
+     NON-HERO MAIN SECTION HEADINGS — 36px
+     ---------------------------------------------------------- */
+  .finatialLiteracy .buildTheConfidenceContainer,
+  .finatialLiteracy .makeConfidentFinancialContainer,
+  .finatialLiteracy .buildResponsibleFinancial,
+  .finatialLiteracy .financialLiteracyForContainer,
+  .finatialLiteracy .financialConfidenceStarts {
+    font-size: 36px !important;
+    line-height: 45px !important;
+    height: auto !important;
+  }
+
+  /* Keep nested coloured heading spans on the same 36px rhythm. */
+  .finatialLiteracy .buildTheConfidenceContainer .empoweringSmarter,
+  .finatialLiteracy .buildTheConfidenceContainer .build,
+  .finatialLiteracy .buildTheConfidenceContainer .the,
+  .finatialLiteracy .buildTheConfidenceContainer .money,
+  .finatialLiteracy .makeConfidentFinancialContainer .empoweringSmarter,
+  .finatialLiteracy .makeConfidentFinancialContainer .money,
+  .finatialLiteracy .financialLiteracyForContainer .money,
+  .finatialLiteracy .financialLiteracyForContainer .forEveryStage {
+    line-height: 45px !important;
+  }
+
+  /* ----------------------------------------------------------
+     NON-HERO MAIN SUBHEADINGS / DESCRIPTIONS — 24px
+     ---------------------------------------------------------- */
+  .finatialLiteracy .developPracticalFinancial,
+  .finatialLiteracy .buildTheSkills,
+  .finatialLiteracy .neurolxpEmpowersLearners {
+    font-size: 24px !important;
+    line-height: 36px !important;
+    height: auto !important;
+  }
+
+  /* The Smart Finance explanatory copy is the sibling directly
+     below Build Responsible Financial Habits. */
+  .finatialLiteracy
+    .buildResponsibleFinancialHaParent
+    > :not(.buildResponsibleFinancial) {
+    font-size: 24px !important;
+    line-height: 36px !important;
+    height: auto !important;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+  }
+
+  /* ----------------------------------------------------------
+     SMART FINANCE — REDUCE VERTICAL SPACE ONLY
+     Keep card width, colours, icons, shadows and hover design.
+     ---------------------------------------------------------- */
+  .finatialLiteracy .frameParent23 {
+    gap: 24px !important;
+  }
+
+  .finatialLiteracy .buildResponsibleFinancialHaParent {
+    gap: 14px !important;
+  }
+
+  .finatialLiteracy .frameParent25 {
+    gap: 24px !important;
+  }
+
+  .finatialLiteracy .frameParent26,
+  .finatialLiteracy .frameParent27 {
+    gap: 36px !important;
+  }
+
+  /* Make all four Smart Finance cards shorter, without changing width. */
+  .finatialLiteracy .frameParent23 .image20Parent {
+    height: 160px !important;
+    min-height: 160px !important;
+  }
+
+  .finatialLiteracy .frameParent23 .image21Parent,
+  .finatialLiteracy .frameParent23 .image21Container {
+    top: 50% !important;
+    height: 124px !important;
+    min-height: 124px !important;
+    transform: translateY(-50%) !important;
+  }
+
+  .finatialLiteracy .frameParent23 .checkmarkBadge03Parent,
+  .finatialLiteracy .frameParent23 .checkmarkBadge03Container {
+    top: 50% !important;
+    height: auto !important;
+    min-height: 0 !important;
+    gap: 12px !important;
+    transform: translateY(-50%) !important;
+  }
+}
+
+/* ==========================================================================
+   FINAL FULL-PAGE SECTION RHYTHM — EXACT 48PX BETWEEN MAJOR SECTIONS
+   The Smart Finance section was compacted by 218px, so every section below
+   it is moved upward by the same amount. This removes the stale empty space.
+   Existing typography, cards, hover effects and section designs are preserved.
+   ========================================================================== */
+
+.finatialLiteracy {
+  --section-gap: 48px !important;
+}
+
+/* Desktop / scaled desktop canvas */
+@media screen and (min-width: 768px) {
+
+  /* Hero ends at 768px -> 48px -> next section */
+  .finatialLiteracy .frameParent5 {
+    top: 816px !important;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+  }
+
+  /* 816 + 685.24 + 48 */
+  .finatialLiteracy .frameParent14 {
+    top: 1549.24px !important;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+  }
+
+  /* 1549.24 + 640 + 48 */
+  .finatialLiteracy .frameParent23 {
+    top: 2237.24px !important;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+  }
+
+  /* Compact Smart Finance now occupies about 573.16px.
+     2237.24 + 573.16 + 48 = 2858.40 */
+  .finatialLiteracy .frameParent28 {
+    top: 2858.4px !important;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+  }
+
+  /* Preserve the existing Who We Support section height/rhythm.
+     2858.4 + 640.2 + 48 = 3546.6 */
+  .finatialLiteracy .image20Parent3 {
+    top: 3546.6px !important;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+  }
+
+  /* CTA height is 409px.
+     3546.6 + 409 + 48 = 4003.6 */
+  .finatialLiteracy .frameParent37 {
+    top: 4003.6px !important;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+  }
+}
+
+/* Mobile normal-flow layout — one consistent 48px gap only.
+   Remove any older extra bottom margins that could create blank space. */
+@media screen and (max-width: 767.98px) {
+  .finatialLiteracy .frameParent5,
+  .finatialLiteracy .frameParent14,
+  .finatialLiteracy .frameParent23,
+  .finatialLiteracy .frameParent28,
+  .finatialLiteracy .image20Parent3,
+  .finatialLiteracy .frameParent37 {
+    margin-top: 48px !important;
+    margin-bottom: 0 !important;
+  }
+}
+
+/* ==========================================================================
+   FINAL CTA → FOOTER GAP FIX
+   The footer wrapper is positioned independently, so target it directly.
+   Keep exactly 48px after the 409px CTA section on desktop/tablet.
+   ========================================================================== */
+@media screen and (min-width: 768px) {
+  .frameParent37 {
+    top: 4003.6px !important;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+  }
+}
+
+/* ==========================================================================
+   FINAL EMPTY-SPACE FIX — PAGE HEIGHT MATCHES CTA + 48PX
+   The remaining blank area came from the old fixed 4280px page height.
+   CTA: top 3546.6px + height 409px = 3955.6px
+   Required footer gap: 48px
+   Final desktop page height: 4003.6px
+   ========================================================================== */
+
+/* Full desktop: end the Financial Literacy canvas exactly 48px after CTA. */
+@media screen and (min-width: 1440px) {
+  .finatialLiteracy {
+    height: 4003.6px !important;
+    min-height: 4003.6px !important;
+  }
+
+  .pageScale {
+    height: 4003.6px !important;
+    min-height: 4003.6px !important;
+  }
+}
+
+/* Scaled desktop/tablet canvas:
+   the child is visually scaled by viewport/1440, but transforms do not shrink
+   layout height. Give the wrapper the same visual height so no blank area is
+   left before the external footer.
+   4003.6 / 1440 * 100 = 278.0277778vw
+*/
+@media screen and (min-width: 768px) and (max-width: 1439.98px) {
+  .finatialLiteracy {
+    height: 4003.6px !important;
+    min-height: 4003.6px !important;
+  }
+
+  .pageScale {
+    height: 278.0277778vw !important;
+    min-height: 0 !important;
+    overflow: hidden !important;
+  }
+}
+
+/* Mobile remains normal-flow and keeps the existing 48px section rhythm. */
+@media screen and (max-width: 767.98px) {
+  .pageScale,
+  .finatialLiteracy {
+    height: auto !important;
+    min-height: 0 !important;
+  }
+}
+

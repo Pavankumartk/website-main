@@ -7,7 +7,7 @@
   	text-align: left;
   	font-size: 36px;
   	color: #31344b;
-  	font-family: 'Segoe UI';
+	font-family: 'Segoe UI', 'Inter';
 }
 .frameParent {
   	position: absolute;
@@ -20,7 +20,7 @@
   	overflow: hidden;
   	flex-shrink: 0;
   	font-size: 16px;
-  	font-family: 'Segoe UI';
+	font-family: 'Segoe UI', 'Inter';
 }
 .frameChild {
   	position: absolute;
@@ -101,7 +101,7 @@
   	box-sizing: border-box;
   	text-align: center;
   	color: #2d4cc8;
-  	font-family: 'Segoe UI';
+	font-family: 'Segoe UI', 'Inter';
 }
 .signInHelp {
   	width: 97px;
@@ -141,7 +141,7 @@
   	flex-shrink: 0;
   	font-size: 16px;
   	color: #2f3547;
-  	font-family: 'Segoe UI';
+	font-family: 'Segoe UI', 'Inter';
 }
 .featuresWrapper {
   	display: flex;
@@ -4819,7 +4819,7 @@ body {
   border-radius: 8px;
   background: #243fa8;
   color: #ffffff;
-  font-family: 'Segoe UI';
+  font-family: 'Segoe UI', 'Inter';
   font-size: 16px;
   line-height: 24px;
   font-weight: 600;
@@ -4862,7 +4862,7 @@ body {
   min-width: 212.74px;
   height: 50px;
   padding: 0 18px;
-  font-family: 'Segoe UI';
+  font-family: 'Segoe UI', 'Inter';
   font-size: 24px;
   line-height: 32px;
   font-weight: 600;
@@ -4873,7 +4873,7 @@ body {
   width: 472px;
   max-width: 100%;
   margin-top: 24px;
-  font-family: 'Segoe UI';
+  font-family: 'Segoe UI', 'Inter';
   font-size: 36px;
   line-height: 50px;
   font-weight: 700;
@@ -4890,7 +4890,7 @@ body {
   width: 470px;
   max-width: 100%;
   margin-top: 24px;
-  font-family: 'Segoe UI';
+  font-family: 'Segoe UI', 'Inter';
   font-size: 24px;
   line-height: 32px;
   font-weight: 400;
@@ -4907,14 +4907,14 @@ body {
   width: 100%;
   min-height: 70.05px;
   gap: 16px;
-  font-family: 'Segoe UI';
+  font-family: 'Segoe UI', 'Inter';
 }
 
 .microBenefit span {
   width: auto;
   max-width: calc(100% - 86px);
   height: auto;
-  font-family: 'Segoe UI';
+  font-family: 'Segoe UI', 'Inter';
   font-size: 24px !important;
   line-height: 36px !important;
   font-weight: 700 !important;
@@ -5062,7 +5062,7 @@ body {
   max-width: calc(100% - 160px) !important;
   margin: 96px auto 0 !important;
   gap: 96px !important;
-  font-family: 'Segoe UI' !important;
+  font-family: 'Segoe UI', 'Inter' !important;
 }
 
 .modernLearningTop {
@@ -5080,7 +5080,7 @@ body {
   height: 50px !important;
   padding: 0 12px !important;
   border-radius: 28px !important;
-  font-family: 'Segoe UI' !important;
+  font-family: 'Segoe UI', 'Inter' !important;
   font-size: 24px !important;
   line-height: 32px !important;
   font-weight: 600 !important;
@@ -5092,7 +5092,7 @@ body {
   max-width: 100% !important;
   min-height: 50px !important;
   margin: 24px 0 0 !important;
-  font-family: 'Segoe UI' !important;
+  font-family: 'Segoe UI', 'Inter' !important;
   font-size: 36px !important;
   line-height: 50px !important;
   font-weight: 700 !important;
@@ -5105,7 +5105,7 @@ body {
   max-width: 100% !important;
   min-height: 64px !important;
   margin: 24px 0 0 !important;
-  font-family: 'Segoe UI' !important;
+  font-family: 'Segoe UI', 'Inter' !important;
   font-size: 24px !important;
   line-height: 32px !important;
   font-weight: 400 !important;
@@ -5133,7 +5133,7 @@ body {
   min-height: 121px !important;
   padding: 0 24px !important;
   border-radius: 50% !important;
-  font-family: 'Segoe UI' !important;
+  font-family: 'Segoe UI', 'Inter' !important;
   font-size: 24px !important;
   line-height: 30px !important;
   font-weight: 700 !important;
@@ -5189,7 +5189,7 @@ body {
   max-width: 100% !important;
   min-height: 50px !important;
   margin: 0 !important;
-  font-family: 'Segoe UI' !important;
+  font-family: 'Segoe UI', 'Inter' !important;
   font-size: 36px !important;
   line-height: 50px !important;
   font-weight: 700 !important;
@@ -5202,7 +5202,7 @@ body {
   max-width: 100% !important;
   min-height: 64px !important;
   margin: 24px 0 0 !important;
-  font-family: 'Segoe UI' !important;
+  font-family: 'Segoe UI', 'Inter' !important;
   font-size: 24px !important;
   line-height: 32px !important;
   font-weight: 400 !important;
@@ -5229,7 +5229,7 @@ body {
   padding: 22px !important;
   border-radius: 32px !important;
   gap: 8px !important;
-  font-family: 'Segoe UI' !important;
+  font-family: 'Segoe UI', 'Inter' !important;
   font-size: 24px !important;
   line-height: 36px !important;
   font-weight: 700 !important;
@@ -5279,7 +5279,7 @@ body {
 }
 
 .modernLearningCard strong {
-  font-family: 'Segoe UI' !important;
+  font-family: 'Segoe UI', 'Inter' !important;
   font-size: 24px !important;
   line-height: 36px !important;
   font-weight: 700 !important;
@@ -5721,7 +5721,7 @@ body {
 }
 
 
-/* FINAL MOBILE CENTERING FIX — keeps desktop design unchanged */
+/* FINAL MOBILE CENTERING FIX â€” keeps desktop design unchanged */
 @media (max-width: 900px) {
   html,
   body {
@@ -6290,14 +6290,14 @@ button.limitsButton:active {
   outline: 0;
 }
 
-/* Microlearning — shift only the right benefits section slightly right */
+/* Microlearning â€” shift only the right benefits section slightly right */
 @media screen and (min-width: 901px) {
   .microBenefits {
     transform: translateX(40px);
   }
 }
 
-/* Mobile — prevent Routine heading from overlapping/clipping */
+/* Mobile â€” prevent Routine heading from overlapping/clipping */
 @media (max-width: 480px) {
   .routineHeader {
     width: 100% !important;
@@ -6332,7 +6332,7 @@ button.limitsButton:active {
   }
 }
 
-/* Mobile — compact and center the Routine feature pills */
+/* Mobile â€” compact and center the Routine feature pills */
 @media (max-width: 480px) {
   .routineFeatures {
     width: 100% !important;
@@ -6374,7 +6374,7 @@ button.limitsButton:active {
   }
 }
 
-/* Mobile — remove excess gap before Flexible Learning Access section */
+/* Mobile â€” remove excess gap before Flexible Learning Access section */
 @media (max-width: 480px) {
   .routineSection {
     margin-top: 36px !important;
@@ -6382,7 +6382,7 @@ button.limitsButton:active {
   }
 }
 
-/* FINAL MOBILE FIX — remove the large empty patterned area
+/* FINAL MOBILE FIX â€” remove the large empty patterned area
    after the last Interactive Learning card and before Routine */
 @media (max-width: 480px) {
   .interactiveSection {
@@ -6410,7 +6410,7 @@ button.limitsButton:active {
   }
 }
 
-/* MOBILE — remove the gap between Microlearning and Interactive Mobile Learning */
+/* MOBILE â€” remove the gap between Microlearning and Interactive Mobile Learning */
 @media (max-width: 480px) {
   .microSection {
     margin-bottom: 0 !important;
@@ -6427,7 +6427,7 @@ button.limitsButton:active {
   }
 }
 
-/* MOBILE — compact Learning Without Limits + reduce first-section 3 stat circles */
+/* MOBILE â€” compact Learning Without Limits + reduce first-section 3 stat circles */
 @media (max-width: 600px) {
   /* Learning Without Limits */
   .limitsSection {
@@ -6481,7 +6481,7 @@ button.limitsButton:active {
     font-size: 17px !important;
   }
 
-  /* Flexible Learning Access — the first section's 3 circular stats */
+  /* Flexible Learning Access â€” the first section's 3 circular stats */
   .routineStats {
     gap: 18px !important;
   }
@@ -6527,7 +6527,7 @@ button.limitsButton:active {
   }
 }
 
-/* MOBILE — reduce Mobile First / Cloud Access / Flexible Learning card widths */
+/* MOBILE â€” reduce Mobile First / Cloud Access / Flexible Learning card widths */
 @media (max-width: 600px) {
   .audienceCard {
     width: min(320px, calc(100% - 48px)) !important;
@@ -6544,7 +6544,7 @@ button.limitsButton:active {
   }
 }
 
-/* MOBILE — reduce the 3 Flexible Learning Access circles further */
+/* MOBILE â€” reduce the 3 Flexible Learning Access circles further */
 @media (max-width: 600px) {
   .routineStats {
     gap: 16px !important;
@@ -6586,3 +6586,21 @@ button.limitsButton:active {
   }
 }
 
+/* Unified non-hero section typography */
+.routineTitle,
+.microTitle,
+.interactiveTitle,
+.modernLearningTitle,
+.modernBuiltTitle,
+.limitsTitle {
+  font-size: 36px !important;
+}
+
+.routineSubtitle,
+.microDescription,
+.interactiveDescription,
+.modernLearningSubtitle,
+.modernBuiltDescription,
+.limitsDescription {
+  font-size: 24px !important;
+}

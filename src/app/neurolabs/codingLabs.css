@@ -1523,3 +1523,49 @@ a {
   }
 }
 
+/* ==========================================================================
+   CTA CARD — COMPACT WIDTH / HEIGHT ONLY
+   Reduces excess empty space while retaining the same design and effects.
+   ========================================================================== */
+@media (min-width: 901px) {
+  .coding-cta {
+    width: min(1180px, calc(100% - 64px)) !important;
+    min-height: 430px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    padding: 48px !important;
+    border-radius: 220px !important;
+  }
+
+  .coding-cta__content {
+    width: min(800px, 100%) !important;
+  }
+
+  .coding-cta p {
+    margin-top: 22px !important;
+  }
+
+  .coding-cta__actions {
+    margin-top: 36px !important;
+  }
+}
+
+/* ==========================================================================
+   VIDEO CARDS — FINGER SWIPE ON TABLET + MOBILE
+   Swipe left = next video. Swipe right = previous video.
+   Vertical page scrolling remains enabled.
+   ========================================================================== */
+@media (max-width: 900px) {
+  .coding-video-deck {
+    touch-action: pan-y !important;
+    user-select: none !important;
+    -webkit-user-select: none !important;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  .coding-video-card,
+  .coding-video-card video {
+    touch-action: pan-y !important;
+  }
+}
+

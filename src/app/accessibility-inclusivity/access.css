@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
 .accessibilityInclusivity {
 	width: 100%;
 	height: 3810px;
@@ -7,7 +9,7 @@
 	text-align: left;
 	font-size: 48px;
 	color: #31344b;
-	font-family: 'Segoe UI';
+	font-family: "Segoe UI", "Inter";
 	zoom: 0.89;
 }
 
@@ -21,7 +23,7 @@
 	height: 80px;
 	overflow: hidden;
 	font-size: 16px;
-	font-family: Inter;
+	font-family: "Segoe UI", "Inter";
 }
 
 .frameChild {
@@ -113,7 +115,7 @@
 	box-sizing: border-box;
 	text-align: center;
 	color: #2d4cc8;
-	font-family: 'Segoe UI';
+	font-family: "Segoe UI", "Inter";
 }
 
 .signInHelp {
@@ -146,7 +148,7 @@
 	gap: 8px;
 	font-size: 16px;
 	color: #2f3547;
-	font-family: 'Segoe UI';
+	font-family: "Segoe UI", "Inter";
 }
 
 .featuresWrapper {
@@ -1060,7 +1062,7 @@
 .institutionCardText {
 	width: 272.05px;
 	min-height: 61px;
-	font-family: "Segoe UI";
+	font-family: "Segoe UI", "Inter";
 	font-style: normal;
 	font-weight: 700;
 	font-size: 20px;
@@ -1121,7 +1123,7 @@
 	font-weight: 600;
 	line-height: 24px;
 	letter-spacing: .02em;
-	font-family: 'Segoe UI';
+	font-family: "Segoe UI", "Inter";
 	display: flex;
 	align-items: flex-start;
 }
@@ -2706,5 +2708,270 @@ button.frameWrapper:active {
     outline: 0 !important;
     outline-offset: 0 !important;
     -webkit-tap-highlight-color: transparent !important;
+}
+
+/* ==========================================================================
+   FINAL — INTER FALLBACK + NON-HERO 36/24 + BOOK A DEMO HOVER
+   No spacing, positioning, widths, heights, cards, images, colors,
+   shadows outside the Book a Demo interaction, or responsive structure changed.
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   FONT STACK
+   Segoe UI primary + Inter as the only fallback.
+   -------------------------------------------------------------------------- */
+.accessibilityInclusivity,
+.accessibilityInclusivity *,
+.accessibilityInclusivity *::before,
+.accessibilityInclusivity *::after {
+  font-family: "Segoe UI", "Inter" !important;
+}
+
+/* --------------------------------------------------------------------------
+   DESKTOP NON-HERO TYPOGRAPHY
+   HERO IS INTENTIONALLY EXCLUDED:
+   .image20Parent .learningDesignedFor
+   .image20Parent .neurolxpEnsuresEvery
+   -------------------------------------------------------------------------- */
+@media screen and (min-width: 1024px) {
+
+  /* Main section headings — 36px */
+  .accessibilityInclusivity .frameParent6 .learningDesignedFor,
+  .accessibilityInclusivity .frameParent11 .multipleContentFormats,
+  .accessibilityInclusivity .accessibilityInclusivityInner .learningDesignedFor,
+  .accessibilityInclusivity .frameParent28 .supportingInstitutionsInContainer,
+  .accessibilityInclusivity .frameParent31 .empoweringInclusiveLearning {
+    font-size: 36px !important;
+  }
+
+  /* Main section subheadings / descriptions — 24px */
+  .accessibilityInclusivity .frameParent6 .designedToMake,
+  .accessibilityInclusivity .frameParent11 .deliverEngagingLearning,
+  .accessibilityInclusivity .accessibilityInclusivityInner .designedToMake,
+  .accessibilityInclusivity .frameParent28 .enableAccessibleFlexible,
+  .accessibilityInclusivity .frameParent31 .neurolxpHelpsInstitutions {
+    font-size: 24px !important;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   BOOK A DEMO — BLUE + NEUMORPHIC HOVER/PRESSED EFFECT
+   Keep existing size, position, radius, padding and typography unchanged.
+   -------------------------------------------------------------------------- */
+.accessibilityInclusivity .image20Parent .frameWrapper {
+  cursor: pointer !important;
+  color: #2d4cc8 !important;
+  transition:
+    box-shadow 0.2s ease,
+    transform 0.2s ease !important;
+}
+
+.accessibilityInclusivity .image20Parent .bookADemoWrapper,
+.accessibilityInclusivity .image20Parent .bookADemo {
+  color: #2d4cc8 !important;
+}
+
+/* Remove native black button chrome/ring if the inner control is a button. */
+.accessibilityInclusivity .image20Parent button.bookADemoWrapper,
+.accessibilityInclusivity .image20Parent .bookADemoWrapper {
+  -webkit-appearance: none !important;
+  appearance: none !important;
+  border: 0 !important;
+  outline: 0 !important;
+  background: transparent !important;
+  background-color: transparent !important;
+  text-decoration: none !important;
+  -webkit-tap-highlight-color: transparent !important;
+}
+
+/* Hover + keyboard focus */
+.accessibilityInclusivity .image20Parent .frameWrapper:hover,
+.accessibilityInclusivity .image20Parent .frameWrapper:focus-within {
+  box-shadow:
+    inset -4px -4px 4px #ffffff,
+    inset 4px 4px 4px rgba(196, 196, 196, 0.8) !important;
+}
+
+/* Pressed state */
+.accessibilityInclusivity .image20Parent .frameWrapper:active {
+  box-shadow:
+    inset -4px -4px 4px #ffffff,
+    inset 4px 4px 4px rgba(196, 196, 196, 0.8) !important;
+}
+
+/* Blue in every interaction state. */
+.accessibilityInclusivity .image20Parent .frameWrapper:hover .bookADemo,
+.accessibilityInclusivity .image20Parent .frameWrapper:focus-within .bookADemo,
+.accessibilityInclusivity .image20Parent .frameWrapper:active .bookADemo,
+.accessibilityInclusivity .image20Parent .bookADemoWrapper:hover,
+.accessibilityInclusivity .image20Parent .bookADemoWrapper:focus,
+.accessibilityInclusivity .image20Parent .bookADemoWrapper:focus-visible,
+.accessibilityInclusivity .image20Parent .bookADemoWrapper:active {
+  color: #2d4cc8 !important;
+}
+
+/* ==========================================================================
+   FINAL MOBILE HERO IMAGE FIX
+   Mobile only:
+   - Reduce the hero/image card height.
+   - Reduce the people image height.
+   - Keep the people image fully inside the hero card.
+   - Prevent the image from colliding with the text/button or next section.
+   Desktop/tablet and all existing design rules remain unchanged.
+   ========================================================================== */
+@media screen and (max-width: 767.98px) {
+
+  .accessibilityInclusivity .image20Parent {
+    height: 620px !important;
+    min-height: 620px !important;
+    overflow: hidden !important;
+  }
+
+  .accessibilityInclusivity .image20Parent .frameParent2 {
+    height: calc(100% - 32px) !important;
+    min-height: 0 !important;
+    overflow: hidden !important;
+  }
+
+  .accessibilityInclusivity .image20Parent .peopleTakingPartBusinessEvParent {
+    height: 100% !important;
+    min-height: 0 !important;
+    overflow: hidden !important;
+  }
+
+  /* Keep all hero copy/button above the image layer. */
+  .accessibilityInclusivity .image20Parent .frameParent3 {
+    z-index: 3 !important;
+  }
+
+  /* Smaller mobile image and fully contained at the bottom. */
+  .accessibilityInclusivity .image20Parent .youngAdultWatchingTvShowWIcon {
+    top: auto !important;
+    right: 0 !important;
+    bottom: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 210px !important;
+    max-height: 210px !important;
+    object-fit: contain !important;
+    object-position: center bottom !important;
+    z-index: 1 !important;
+  }
+
+  /* Keep the following section in normal flow after the shorter hero. */
+  .accessibilityInclusivity .frameParent6 {
+    margin-top: 56px !important;
+  }
+}
+
+/* Extra-small phones */
+@media screen and (max-width: 480px) {
+  .accessibilityInclusivity .image20Parent {
+    height: 600px !important;
+    min-height: 600px !important;
+  }
+
+  .accessibilityInclusivity .image20Parent .youngAdultWatchingTvShowWIcon {
+    height: 190px !important;
+    max-height: 190px !important;
+  }
+}
+
+/* ==========================================================================
+   FINAL MOBILE — FIX BOTH IMAGE AREAS
+   1) Hero people image: shorter + clear space below Book a Demo.
+   2) Accessibility photo: remove desktop-height behavior on phones.
+   Desktop/tablet and all other design remain unchanged.
+   ========================================================================== */
+@media screen and (max-width: 767.98px) {
+
+  /* ----------------------------------------------------------
+     HERO IMAGE
+     Keep the image fully below the Book a Demo button.
+     ---------------------------------------------------------- */
+  .accessibilityInclusivity .image20Parent {
+    height: 580px !important;
+    min-height: 580px !important;
+    overflow: hidden !important;
+  }
+
+  .accessibilityInclusivity .image20Parent .frameParent2,
+  .accessibilityInclusivity .image20Parent .peopleTakingPartBusinessEvParent {
+    height: calc(100% - 26px) !important;
+    min-height: 0 !important;
+    overflow: hidden !important;
+  }
+
+  .accessibilityInclusivity .image20Parent .youngAdultWatchingTvShowWIcon {
+    top: auto !important;
+    right: 0 !important;
+    bottom: 8px !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 165px !important;
+    max-height: 165px !important;
+    object-fit: contain !important;
+    object-position: center bottom !important;
+    z-index: 1 !important;
+  }
+
+  /* Keep the hero text/button above the image. */
+  .accessibilityInclusivity .image20Parent .frameParent3 {
+    z-index: 3 !important;
+  }
+
+  /* ----------------------------------------------------------
+     ACCESSIBLE-LEARNING PHOTO
+     Remove the old fixed 528px mobile height.
+     ---------------------------------------------------------- */
+  .accessibilityInclusivity .accessibilityInclusivityInner {
+    height: auto !important;
+    min-height: 0 !important;
+  }
+
+  .accessibilityInclusivity .accessibilityInclusivityInner .frameParent24 {
+    gap: 24px !important;
+  }
+
+  .accessibilityInclusivity .accessibilityInclusivityInner .frameParent25 {
+    height: auto !important;
+    min-height: 0 !important;
+  }
+
+  .accessibilityInclusivity .accessibilityInclusivityInner .learningAnalytics {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: min(300px, 78vw) !important;
+    min-height: 0 !important;
+    max-height: 300px !important;
+    aspect-ratio: auto !important;
+    margin: 0 auto !important;
+    overflow: hidden !important;
+  }
+
+  .accessibilityInclusivity .accessibilityInclusivityInner .teamSupportingInvalidWoman {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    object-position: center !important;
+  }
+}
+
+/* Extra-small phones */
+@media screen and (max-width: 480px) {
+  .accessibilityInclusivity .image20Parent {
+    height: 565px !important;
+    min-height: 565px !important;
+  }
+
+  .accessibilityInclusivity .image20Parent .youngAdultWatchingTvShowWIcon {
+    height: 155px !important;
+    max-height: 155px !important;
+  }
+
+  .accessibilityInclusivity .accessibilityInclusivityInner .learningAnalytics {
+    height: min(280px, 76vw) !important;
+    max-height: 280px !important;
+  }
 }
 

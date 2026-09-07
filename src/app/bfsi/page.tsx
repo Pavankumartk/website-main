@@ -424,7 +424,7 @@ export default function BfsiPage() {
               <span>Future Ready</span>
             </div>
             <h2 className={styles["bfsi-finance-heading"]}>Future-Ready Finance Learning</h2>
-            <p className={styles["bfsi-finance-subtext"]}>Empowering BFSI with secure, intelligent learning.</p>
+            <p className={styles["bfsi-finance-subtext"]}>Empowering BFSI with secure, <br></br>intelligent learning.</p>
           </div>
         </div>
       </section>
