@@ -2975,3 +2975,1822 @@ button.frameWrapper:active {
   }
 }
 
+
+/* FINAL ACCESSIBILITY & INCLUSIVITY ALIGNMENT / RESPONSIVE FIX */
+
+/* Book a Demo — keep label on one line */
+.accessibilityInclusivity .image20Parent .bookADemoWrapper {
+  width: auto !important;
+  min-width: max-content !important;
+  justify-content: center !important;
+}
+
+.accessibilityInclusivity .image20Parent .bookADemo {
+  width: auto !important;
+  white-space: nowrap !important;
+  text-align: center !important;
+}
+
+/* Desktop / large tablet */
+@media screen and (min-width: 1024px) {
+
+  /* Accessible Learning feature boxes:
+     same text area + same vertical alignment in every card */
+  .accessibilityInclusivity .frameParent6 .frameWrapper3 {
+    height: 150px !important;
+  }
+
+  .accessibilityInclusivity .frameParent6 .frameWrapper3 .compassParent {
+    top: 50% !important;
+    left: 50% !important;
+    width: 252px !important;
+    min-height: 126px !important;
+    transform: translate(-50%, -50%) !important;
+    transform-origin: center !important;
+    justify-content: center !important;
+    gap: 12px !important;
+  }
+
+  .accessibilityInclusivity .frameParent6 .frameWrapper3 .compassIcon {
+    transform: none !important;
+    flex: 0 0 50px !important;
+  }
+
+  .accessibilityInclusivity .frameParent6 .frameWrapper3 .compassParent > :last-child,
+  .accessibilityInclusivity .frameParent6 .easyNavigationWrapper,
+  .accessibilityInclusivity .frameParent6 .easyNavigation,
+  .accessibilityInclusivity .frameParent6 .multiFormatLearning,
+  .accessibilityInclusivity .frameParent6 .unlimitedAssessments {
+    width: 170px !important;
+    max-width: 170px !important;
+    height: 64px !important;
+    min-height: 64px !important;
+    max-height: 64px !important;
+    margin: 0 auto !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center !important;
+    white-space: normal !important;
+    line-height: 30px !important;
+    overflow: visible !important;
+  }
+
+  /* Flexible Learning Format cards:
+     identical text block size and two-line alignment */
+  .accessibilityInclusivity .frameParent11 .frameParent16 {
+    top: 50% !important;
+    left: 50% !important;
+    width: 291px !important;
+    transform: translate(-50%, -50%) !important;
+    gap: 12px !important;
+  }
+
+  .accessibilityInclusivity .frameParent11 .frameParent16 > :last-child,
+  .accessibilityInclusivity .frameParent11 .textStructured,
+  .accessibilityInclusivity .frameParent11 .interactiveVideoLearning {
+    width: 190px !important;
+    max-width: 190px !important;
+    height: 64px !important;
+    min-height: 64px !important;
+    max-height: 64px !important;
+    margin: 0 auto !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center !important;
+    white-space: normal !important;
+    line-height: 30px !important;
+    overflow: visible !important;
+  }
+
+  /* Inclusive Learning Experiences:
+     remove excess internal spacing and keep text/list aligned */
+  .accessibilityInclusivity .accessibilityInclusivityInner {
+    margin-top: 64px !important;
+  }
+
+  .accessibilityInclusivity .accessibilityInclusivityInner .frameParent24 {
+    align-items: center !important;
+  }
+
+  .accessibilityInclusivity .accessibilityInclusivityInner .frameParent25 {
+    height: auto !important;
+    gap: 24px !important;
+  }
+
+  .accessibilityInclusivity .accessibilityInclusivityInner .frameParent26 {
+    gap: 20px !important;
+  }
+
+  .accessibilityInclusivity .accessibilityInclusivityInner .designedToMake {
+    height: auto !important;
+  }
+
+  .accessibilityInclusivity .accessibilityInclusivityInner .frameParent27 {
+    gap: 16px !important;
+  }
+
+  .accessibilityInclusivity .accessibilityInclusivityInner .inclusiveItem {
+    flex-shrink: 0 !important;
+  }
+
+  /* Reduce the large gap after the inclusive section */
+  .accessibilityInclusivity .frameParent28 {
+    margin-top: 64px !important;
+  }
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) and (max-width: 1023.98px) {
+
+  .accessibilityInclusivity .frameParent6 .frameWrapper3 .compassParent {
+    justify-content: center !important;
+  }
+
+  .accessibilityInclusivity .frameParent6 .frameWrapper3 .compassParent > :last-child,
+  .accessibilityInclusivity .frameParent6 .easyNavigationWrapper,
+  .accessibilityInclusivity .frameParent6 .easyNavigation,
+  .accessibilityInclusivity .frameParent6 .multiFormatLearning,
+  .accessibilityInclusivity .frameParent6 .unlimitedAssessments {
+    width: 170px !important;
+    max-width: 170px !important;
+    min-height: 58px !important;
+    height: auto !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center !important;
+    white-space: normal !important;
+  }
+
+  .accessibilityInclusivity .frameParent11 .frameParent16 > :last-child,
+  .accessibilityInclusivity .frameParent11 .textStructured,
+  .accessibilityInclusivity .frameParent11 .interactiveVideoLearning {
+    width: 190px !important;
+    max-width: 190px !important;
+    min-height: 58px !important;
+    height: auto !important;
+    margin: 0 auto !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center !important;
+    white-space: normal !important;
+  }
+
+  .accessibilityInclusivity .accessibilityInclusivityInner {
+    margin-top: 56px !important;
+  }
+
+  .accessibilityInclusivity .frameParent28 {
+    margin-top: 56px !important;
+  }
+}
+
+/* Mobile — responsive typography + box alignment */
+@media screen and (max-width: 767.98px) {
+
+  /* Main section headings: mobile size, not desktop size */
+  .accessibilityInclusivity .frameParent6 .learningDesignedFor,
+  .accessibilityInclusivity .frameParent11 .multipleContentFormats,
+  .accessibilityInclusivity .accessibilityInclusivityInner .learningDesignedFor,
+  .accessibilityInclusivity .frameParent28 .supportingInstitutionsInContainer,
+  .accessibilityInclusivity .frameParent31 .empoweringInclusiveLearning {
+    font-size: 24px !important;
+    line-height: 30px !important;
+    height: auto !important;
+    min-height: 0 !important;
+    max-height: none !important;
+  }
+
+  /* Main section descriptions: mobile size */
+  .accessibilityInclusivity .frameParent6 .designedToMake,
+  .accessibilityInclusivity .frameParent11 .deliverEngagingLearning,
+  .accessibilityInclusivity .accessibilityInclusivityInner .designedToMake,
+  .accessibilityInclusivity .frameParent28 .enableAccessibleFlexible,
+  .accessibilityInclusivity .frameParent31 .neurolxpHelpsInstitutions {
+    font-size: 16px !important;
+    line-height: 24px !important;
+    height: auto !important;
+    min-height: 0 !important;
+    max-height: none !important;
+  }
+
+  /* Section pills */
+  .accessibilityInclusivity .frameParent6 .frameIcon,
+  .accessibilityInclusivity .frameParent11 .frameChild2,
+  .accessibilityInclusivity .frameParent31 .neurolxpBadge,
+  .accessibilityInclusivity .frameParent31 .neurolxpBadgeText {
+    font-size: 16px !important;
+    line-height: 22px !important;
+  }
+
+  /* Accessible Learning four boxes — uniform text placement */
+  .accessibilityInclusivity .frameParent6 .frameWrapper3 {
+    height: 140px !important;
+  }
+
+  .accessibilityInclusivity .frameParent6 .frameWrapper3 .compassParent {
+    position: static !important;
+    width: 100% !important;
+    height: 100% !important;
+    min-height: 0 !important;
+    padding: 14px !important;
+    box-sizing: border-box !important;
+    transform: none !important;
+    justify-content: center !important;
+    gap: 10px !important;
+  }
+
+  .accessibilityInclusivity .frameParent6 .frameWrapper3 .compassIcon {
+    width: 42px !important;
+    height: 42px !important;
+    flex: 0 0 42px !important;
+  }
+
+  .accessibilityInclusivity .frameParent6 .frameWrapper3 .compassParent > :last-child,
+  .accessibilityInclusivity .frameParent6 .easyNavigationWrapper,
+  .accessibilityInclusivity .frameParent6 .easyNavigation,
+  .accessibilityInclusivity .frameParent6 .multiFormatLearning,
+  .accessibilityInclusivity .frameParent6 .unlimitedAssessments {
+    width: 112px !important;
+    max-width: 112px !important;
+    height: 48px !important;
+    min-height: 48px !important;
+    max-height: 48px !important;
+    margin: 0 auto !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center !important;
+    white-space: normal !important;
+    font-size: 16px !important;
+    line-height: 22px !important;
+    overflow: visible !important;
+  }
+
+  /* Flexible Learning boxes — mobile text no longer uses desktop 24px */
+  .accessibilityInclusivity .frameParent11 .frameParent16 {
+    top: 50% !important;
+    left: 50% !important;
+    width: 100% !important;
+    transform: translate(-50%, -50%) !important;
+    gap: 10px !important;
+  }
+
+  .accessibilityInclusivity .frameParent11 .frameParent16 > :last-child,
+  .accessibilityInclusivity .frameParent11 .textStructured,
+  .accessibilityInclusivity .frameParent11 .interactiveVideoLearning {
+    width: 150px !important;
+    max-width: 150px !important;
+    height: 48px !important;
+    min-height: 48px !important;
+    max-height: 48px !important;
+    margin: 0 auto !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center !important;
+    white-space: normal !important;
+    font-size: 16px !important;
+    line-height: 22px !important;
+    overflow: visible !important;
+  }
+
+  /* Inclusive Learning Experience list */
+  .accessibilityInclusivity .accessibilityInclusivityInner {
+    margin-top: 48px !important;
+  }
+
+  .accessibilityInclusivity .accessibilityInclusivityInner .frameParent25,
+  .accessibilityInclusivity .accessibilityInclusivityInner .frameParent26 {
+    gap: 18px !important;
+  }
+
+  .accessibilityInclusivity .accessibilityInclusivityInner .frameParent27 {
+    gap: 12px !important;
+  }
+
+  .accessibilityInclusivity .accessibilityInclusivityInner .inclusiveItem {
+    min-height: 54px !important;
+    height: auto !important;
+    padding: 10px 14px !important;
+    gap: 10px !important;
+  }
+
+  .accessibilityInclusivity .accessibilityInclusivityInner .inclusiveItem span {
+    font-size: 16px !important;
+    line-height: 22px !important;
+    white-space: normal !important;
+  }
+
+  .accessibilityInclusivity .frameParent28,
+  .accessibilityInclusivity .frameParent31 {
+    margin-top: 48px !important;
+  }
+
+  /* Hero Book a Demo stays one line on mobile too */
+  .accessibilityInclusivity .image20Parent .frameWrapper {
+    width: min(220px, 84%) !important;
+  }
+
+  .accessibilityInclusivity .image20Parent .bookADemoWrapper,
+  .accessibilityInclusivity .image20Parent .bookADemo {
+    white-space: nowrap !important;
+  }
+}
+
+/* Extra small phones */
+@media screen and (max-width: 480px) {
+
+  .accessibilityInclusivity .frameParent6 .learningDesignedFor,
+  .accessibilityInclusivity .frameParent11 .multipleContentFormats,
+  .accessibilityInclusivity .accessibilityInclusivityInner .learningDesignedFor,
+  .accessibilityInclusivity .frameParent28 .supportingInstitutionsInContainer,
+  .accessibilityInclusivity .frameParent31 .empoweringInclusiveLearning {
+    font-size: 24px !important;
+    line-height: 30px !important;
+  }
+
+  .accessibilityInclusivity .frameParent6 .designedToMake,
+  .accessibilityInclusivity .frameParent11 .deliverEngagingLearning,
+  .accessibilityInclusivity .accessibilityInclusivityInner .designedToMake,
+  .accessibilityInclusivity .frameParent28 .enableAccessibleFlexible,
+  .accessibilityInclusivity .frameParent31 .neurolxpHelpsInstitutions {
+    font-size: 16px !important;
+    line-height: 24px !important;
+  }
+}
+
+
+@media screen and (min-width: 1024px) {
+  .accessibilityInclusivity .accessibilityInclusivityInner {
+    height: 660px !important;
+    min-height: 660px !important;
+  }
+
+  .accessibilityInclusivity .accessibilityInclusivityInner .frameParent25 {
+    height: 528px !important;
+    min-height: 528px !important;
+    gap: 18px !important;
+  }
+
+  .accessibilityInclusivity .accessibilityInclusivityInner .frameParent26 {
+    gap: 16px !important;
+  }
+
+  .accessibilityInclusivity .accessibilityInclusivityInner .frameParent27 {
+    gap: 12px !important;
+  }
+
+  .accessibilityInclusivity .accessibilityInclusivityInner .inclusiveItem {
+    height: 56px !important;
+    min-height: 56px !important;
+  }
+
+  .accessibilityInclusivity .frameParent28 {
+    margin-top: 64px !important;
+  }
+}
+
+
+/* FINAL — ONLY THE TWO REQUESTED CORRECTIONS */
+
+/* 1) Inclusive Learning Experiences:
+      reduce heading -> paragraph -> list spacing */
+@media screen and (min-width: 1024px) {
+  .accessibilityInclusivity .accessibilityInclusivityInner
+    .accessibleLearningForDiversWrapper {
+    height: auto !important;
+    min-height: 0 !important;
+    max-height: none !important;
+  }
+
+  .accessibilityInclusivity .accessibilityInclusivityInner
+    .frameParent25 {
+    height: auto !important;
+    min-height: 0 !important;
+    gap: 10px !important;
+  }
+
+  .accessibilityInclusivity .accessibilityInclusivityInner
+    .frameParent26 {
+    height: auto !important;
+    min-height: 0 !important;
+    gap: 12px !important;
+  }
+
+  .accessibilityInclusivity .accessibilityInclusivityInner
+    .frameParent26 > * {
+    height: auto !important;
+    min-height: 0 !important;
+    max-height: none !important;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+  }
+
+  .accessibilityInclusivity .accessibilityInclusivityInner
+    .designedToMake {
+    height: auto !important;
+    min-height: 0 !important;
+    margin: 0 !important;
+  }
+
+  .accessibilityInclusivity .accessibilityInclusivityInner
+    .frameParent27 {
+    margin-top: 0 !important;
+    gap: 12px !important;
+  }
+}
+
+
+/* 2) Second section feature boxes:
+      make every label use the SAME two-line text area */
+@media screen and (min-width: 1024px) {
+  .accessibilityInclusivity .frameParent6
+    .frameWrapper3 .compassParent > :last-child,
+  .accessibilityInclusivity .frameParent6
+    .easyNavigationWrapper,
+  .accessibilityInclusivity .frameParent6
+    .easyNavigation,
+  .accessibilityInclusivity .frameParent6
+    .multiFormatLearning,
+  .accessibilityInclusivity .frameParent6
+    .unlimitedAssessments {
+    width: 150px !important;
+    max-width: 150px !important;
+    min-width: 150px !important;
+
+    height: 64px !important;
+    min-height: 64px !important;
+    max-height: 64px !important;
+
+    margin: 0 auto !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    text-align: center !important;
+    white-space: normal !important;
+    line-height: 30px !important;
+
+    overflow: visible !important;
+  }
+}
+
+/* Keep the same two-line treatment on tablet/mobile,
+   while preserving responsive font sizes already in the file. */
+@media screen and (max-width: 1023.98px) {
+  .accessibilityInclusivity .frameParent6
+    .frameWrapper3 .compassParent > :last-child,
+  .accessibilityInclusivity .frameParent6
+    .easyNavigationWrapper,
+  .accessibilityInclusivity .frameParent6
+    .easyNavigation,
+  .accessibilityInclusivity .frameParent6
+    .multiFormatLearning,
+  .accessibilityInclusivity .frameParent6
+    .unlimitedAssessments {
+    width: 112px !important;
+    max-width: 112px !important;
+
+    min-height: 48px !important;
+    height: 48px !important;
+
+    margin: 0 auto !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    text-align: center !important;
+    white-space: normal !important;
+  }
+}
+
+
+/* FINAL FIX — reduce marked gap + keep previous section labels in two lines */
+
+@media screen and (min-width: 1024px) {
+
+  /* Inclusive Learning Experiences:
+     move ONLY the three list boxes upward into the marked empty space */
+  .accessibilityInclusivity .accessibilityInclusivityInner {
+    height: 610px !important;
+    min-height: 610px !important;
+  }
+
+  .accessibilityInclusivity .accessibilityInclusivityInner .frameParent24 {
+    top: 40px !important;
+  }
+
+  .accessibilityInclusivity .accessibilityInclusivityInner .frameParent25 {
+    height: 528px !important;
+    min-height: 528px !important;
+    justify-content: flex-start !important;
+    gap: 0 !important;
+  }
+
+  .accessibilityInclusivity .accessibilityInclusivityInner .frameParent26 {
+    height: auto !important;
+    min-height: 0 !important;
+    gap: 12px !important;
+    flex-shrink: 0 !important;
+  }
+
+  .accessibilityInclusivity .accessibilityInclusivityInner .frameParent27 {
+    margin-top: 0 !important;
+    transform: translateY(-52px) !important;
+    gap: 12px !important;
+  }
+
+  /* Keep next section at a clean, smaller distance */
+  .accessibilityInclusivity .frameParent28 {
+    margin-top: 48px !important;
+  }
+
+
+  /* PREVIOUS SECTION — Flexible Learning Formats
+     All four card labels use one identical balanced TWO-LINE text area. */
+  .accessibilityInclusivity .frameParent11 .frameParent16 {
+    top: 50% !important;
+    left: 50% !important;
+    width: 291px !important;
+    transform: translate(-50%, -50%) !important;
+    gap: 12px !important;
+  }
+
+  .accessibilityInclusivity .frameParent11 .frameParent16 > :last-child,
+  .accessibilityInclusivity .frameParent11 .textStructured,
+  .accessibilityInclusivity .frameParent11 .interactiveVideoLearning {
+    width: 190px !important;
+    max-width: 190px !important;
+    min-width: 190px !important;
+
+    height: 64px !important;
+    min-height: 64px !important;
+    max-height: 64px !important;
+
+    margin: 0 auto !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    text-align: center !important;
+    white-space: normal !important;
+    text-wrap: balance !important;
+
+    line-height: 30px !important;
+    overflow: visible !important;
+  }
+}
+
+
+/* Tablet/mobile: keep the same two-line treatment,
+   but retain the responsive font sizes already applied earlier. */
+@media screen and (max-width: 1023.98px) {
+
+  .accessibilityInclusivity .frameParent11 .frameParent16 > :last-child,
+  .accessibilityInclusivity .frameParent11 .textStructured,
+  .accessibilityInclusivity .frameParent11 .interactiveVideoLearning {
+    white-space: normal !important;
+    text-wrap: balance !important;
+    text-align: center !important;
+  }
+}
+
+
+/* ============================================================
+   FINAL MOBILE SECTIONS RESPONSIVE FIX
+   <= 767.98px ONLY
+   ============================================================ */
+@media screen and (max-width: 767.98px) {
+
+  /* ---------- GLOBAL MOBILE SECTION RHYTHM ---------- */
+  .accessibilityInclusivity {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 20px 12px 48px !important;
+    overflow-x: hidden !important;
+  }
+
+  .accessibilityInclusivity .frameParent6,
+  .accessibilityInclusivity .frameParent11,
+  .accessibilityInclusivity .accessibilityInclusivityInner,
+  .accessibilityInclusivity .frameParent28,
+  .accessibilityInclusivity .frameParent31 {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin-top: 40px !important;
+  }
+
+  /* =========================================================
+     HERO
+     ========================================================= */
+  .accessibilityInclusivity .image20Parent {
+    width: 100% !important;
+    height: 560px !important;
+    min-height: 560px !important;
+    margin-top: 24px !important;
+  }
+
+  .accessibilityInclusivity .image20Parent .frameParent2 {
+    inset: 12px !important;
+    width: auto !important;
+    height: calc(100% - 24px) !important;
+  }
+
+  .accessibilityInclusivity .image20Parent .frameParent3 {
+    top: 20px !important;
+    left: 12px !important;
+    right: 12px !important;
+    width: auto !important;
+    gap: 16px !important;
+  }
+
+  .accessibilityInclusivity .image20Parent .frameParent4,
+  .accessibilityInclusivity .image20Parent .frameParent5 {
+    width: 100% !important;
+    height: auto !important;
+    gap: 14px !important;
+  }
+
+  .accessibilityInclusivity .image20Parent .frameIcon {
+    width: max-content !important;
+    max-width: calc(100% - 16px) !important;
+    height: 40px !important;
+    padding: 0 12px !important;
+    font-size: 14px !important;
+    line-height: 20px !important;
+  }
+
+  .accessibilityInclusivity .image20Parent .learningDesignedFor {
+    font-size: 28px !important;
+    line-height: 34px !important;
+    text-align: center !important;
+  }
+
+  .accessibilityInclusivity .image20Parent .neurolxpEnsuresEvery {
+    max-width: 286px !important;
+    margin: 0 auto !important;
+    font-size: 16px !important;
+    line-height: 23px !important;
+    text-align: center !important;
+  }
+
+  .accessibilityInclusivity .image20Parent .frameWrapper {
+    width: 194px !important;
+    height: 54px !important;
+    margin: 0 auto !important;
+  }
+
+  .accessibilityInclusivity .image20Parent .bookADemoWrapper,
+  .accessibilityInclusivity .image20Parent .bookADemo {
+    width: auto !important;
+    white-space: nowrap !important;
+    font-size: 18px !important;
+    line-height: 24px !important;
+  }
+
+  .accessibilityInclusivity .image20Parent .youngAdultWatchingTvShowWIcon {
+    right: 0 !important;
+    bottom: 4px !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 150px !important;
+    max-height: 150px !important;
+    object-fit: contain !important;
+    object-position: center bottom !important;
+  }
+
+  /* =========================================================
+     ACCESSIBLE LEARNING FOR DIVERSE NEEDS
+     ========================================================= */
+  .accessibilityInclusivity .frameParent6 {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 22px !important;
+  }
+
+  .accessibilityInclusivity .frameParent6 .frameWrapper2,
+  .accessibilityInclusivity .frameParent6 .frameParent4,
+  .accessibilityInclusivity .frameParent6 .accessibleLearningForDiversWrapper,
+  .accessibilityInclusivity .frameParent6 .frameParent8 {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+  }
+
+  .accessibilityInclusivity .frameParent6 .frameParent4 {
+    gap: 14px !important;
+  }
+
+  .accessibilityInclusivity .frameParent6 .learningDesignedFor {
+    font-size: 24px !important;
+    line-height: 30px !important;
+    text-align: center !important;
+  }
+
+  .accessibilityInclusivity .frameParent6 .designedToMake {
+    width: 100% !important;
+    max-width: 290px !important;
+    height: auto !important;
+    margin: 0 auto !important;
+    font-size: 16px !important;
+    line-height: 24px !important;
+    text-align: center !important;
+  }
+
+  .accessibilityInclusivity .frameParent6 .frameParent8,
+  .accessibilityInclusivity .frameParent6 .frameParent9 {
+    gap: 14px !important;
+  }
+
+  .accessibilityInclusivity .frameParent6 .frameParent9 {
+    width: 100% !important;
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    justify-items: center !important;
+  }
+
+  .accessibilityInclusivity .frameParent6 .frameWrapper3 {
+    width: min(100%, 296px) !important;
+    max-width: 296px !important;
+    height: 132px !important;
+    min-height: 132px !important;
+    margin: 0 auto !important;
+  }
+
+  .accessibilityInclusivity .frameParent6 .frameWrapper3 .compassParent {
+    position: static !important;
+    width: 100% !important;
+    height: 100% !important;
+    padding: 12px 14px !important;
+    box-sizing: border-box !important;
+    transform: none !important;
+    justify-content: center !important;
+    gap: 8px !important;
+  }
+
+  .accessibilityInclusivity .frameParent6 .compassIcon {
+    width: 38px !important;
+    height: 38px !important;
+    flex: 0 0 38px !important;
+  }
+
+  .accessibilityInclusivity .frameParent6 .frameWrapper3 .compassParent > :last-child,
+  .accessibilityInclusivity .frameParent6 .easyNavigationWrapper,
+  .accessibilityInclusivity .frameParent6 .easyNavigation,
+  .accessibilityInclusivity .frameParent6 .multiFormatLearning,
+  .accessibilityInclusivity .frameParent6 .unlimitedAssessments {
+    width: 124px !important;
+    max-width: 124px !important;
+    min-width: 124px !important;
+    height: 46px !important;
+    min-height: 46px !important;
+    max-height: 46px !important;
+    margin: 0 auto !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    font-size: 16px !important;
+    line-height: 22px !important;
+    text-align: center !important;
+    white-space: normal !important;
+    text-wrap: balance !important;
+  }
+
+  /* =========================================================
+     FLEXIBLE LEARNING FORMATS
+     Fix horizontal overflow and stack all four cards.
+     ========================================================= */
+  .accessibilityInclusivity .frameParent11 {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 22px !important;
+  }
+
+  .accessibilityInclusivity .frameParent11 .frameWrapper7,
+  .accessibilityInclusivity .frameParent11 .frameWrapper8,
+  .accessibilityInclusivity .frameParent11 .frameParent12,
+  .accessibilityInclusivity .frameParent11 .multipleContentFormatsForFParent,
+  .accessibilityInclusivity .frameParent11 .frameParent13 {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+  }
+
+  .accessibilityInclusivity .frameParent11 .frameParent12,
+  .accessibilityInclusivity .frameParent11 .multipleContentFormatsForFParent {
+    gap: 14px !important;
+  }
+
+  .accessibilityInclusivity .frameParent11 .frameChild2 {
+    width: max-content !important;
+    max-width: calc(100% - 16px) !important;
+    height: 42px !important;
+    padding: 0 14px !important;
+    font-size: 16px !important;
+    line-height: 22px !important;
+  }
+
+  .accessibilityInclusivity .frameParent11 .multipleContentFormats {
+    width: 100% !important;
+    height: auto !important;
+    font-size: 24px !important;
+    line-height: 30px !important;
+  }
+
+  .accessibilityInclusivity .frameParent11 .deliverEngagingLearning {
+    width: 100% !important;
+    max-width: 292px !important;
+    height: auto !important;
+    margin: 0 auto !important;
+    font-size: 16px !important;
+    line-height: 24px !important;
+  }
+
+  .accessibilityInclusivity .frameParent11 .frameParent13 {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 14px !important;
+  }
+
+  .accessibilityInclusivity .frameParent11 .frameParent14,
+  .accessibilityInclusivity .frameParent11 .frameParent19 {
+    width: 100% !important;
+    height: auto !important;
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    justify-items: center !important;
+    gap: 14px !important;
+  }
+
+  .accessibilityInclusivity .frameParent11 .frameWrapper9,
+  .accessibilityInclusivity .frameParent11 .frameWrapper11,
+  .accessibilityInclusivity .frameParent11 .frameWrapper15 {
+    width: min(100%, 296px) !important;
+    max-width: 296px !important;
+    height: 176px !important;
+    min-height: 176px !important;
+    margin: 0 auto !important;
+  }
+
+  .accessibilityInclusivity .frameParent11 .frameParent15 {
+    top: 10px !important;
+    left: 50% !important;
+    width: calc(100% - 20px) !important;
+    height: calc(100% - 20px) !important;
+    transform: translateX(-50%) !important;
+  }
+
+  .accessibilityInclusivity .frameParent11 .frameParent16 {
+    top: 50% !important;
+    left: 50% !important;
+    width: 100% !important;
+    transform: translate(-50%, -50%) !important;
+    gap: 8px !important;
+  }
+
+  .accessibilityInclusivity .frameParent11 .formatIconOuter {
+    width: 56px !important;
+    height: 56px !important;
+  }
+
+  .accessibilityInclusivity .frameParent11 .formatIconInner {
+    width: 40px !important;
+    height: 40px !important;
+  }
+
+  .accessibilityInclusivity .frameParent11 .formatIconImage {
+    width: 26px !important;
+    height: 26px !important;
+  }
+
+  .accessibilityInclusivity .frameParent11 .frameParent16 > :last-child,
+  .accessibilityInclusivity .frameParent11 .textStructured,
+  .accessibilityInclusivity .frameParent11 .interactiveVideoLearning {
+    width: 154px !important;
+    max-width: 154px !important;
+    min-width: 154px !important;
+    height: 46px !important;
+    min-height: 46px !important;
+    max-height: 46px !important;
+    margin: 0 auto !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    font-size: 16px !important;
+    line-height: 22px !important;
+    text-align: center !important;
+    white-space: normal !important;
+    text-wrap: balance !important;
+  }
+
+  /* =========================================================
+     INCLUSIVE LEARNING EXPERIENCES
+     Remove the huge empty middle gap.
+     ========================================================= */
+  .accessibilityInclusivity .accessibilityInclusivityInner {
+    height: auto !important;
+    min-height: 0 !important;
+    padding: 18px 14px !important;
+  }
+
+  .accessibilityInclusivity .accessibilityInclusivityInner .frameParent24 {
+    position: relative !important;
+    top: auto !important;
+    left: auto !important;
+    width: 100% !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 18px !important;
+  }
+
+  .accessibilityInclusivity .accessibilityInclusivityInner .frameParent25,
+  .accessibilityInclusivity .accessibilityInclusivityInner .frameParent26,
+  .accessibilityInclusivity .accessibilityInclusivityInner .frameParent27 {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+    margin: 0 !important;
+    transform: none !important;
+  }
+
+  .accessibilityInclusivity .accessibilityInclusivityInner .frameParent25 {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 16px !important;
+  }
+
+  .accessibilityInclusivity .accessibilityInclusivityInner .frameParent26 {
+    gap: 10px !important;
+  }
+
+  .accessibilityInclusivity .accessibilityInclusivityInner
+    .accessibleLearningForDiversWrapper {
+    height: auto !important;
+  }
+
+  .accessibilityInclusivity .accessibilityInclusivityInner .learningDesignedFor {
+    font-size: 24px !important;
+    line-height: 30px !important;
+    text-align: center !important;
+  }
+
+  .accessibilityInclusivity .accessibilityInclusivityInner .designedToMake {
+    width: 100% !important;
+    max-width: 288px !important;
+    height: auto !important;
+    margin: 0 auto !important;
+    font-size: 16px !important;
+    line-height: 24px !important;
+    text-align: center !important;
+  }
+
+  .accessibilityInclusivity .accessibilityInclusivityInner .frameParent27 {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: stretch !important;
+    gap: 10px !important;
+  }
+
+  .accessibilityInclusivity .accessibilityInclusivityInner .inclusiveItem {
+    width: 100% !important;
+    min-height: 58px !important;
+    height: auto !important;
+    padding: 8px 12px !important;
+    gap: 8px !important;
+  }
+
+  .accessibilityInclusivity .accessibilityInclusivityInner .inclusiveArrow {
+    width: 28px !important;
+    height: 28px !important;
+    flex: 0 0 28px !important;
+    transform: none !important;
+  }
+
+  .accessibilityInclusivity .accessibilityInclusivityInner .inclusiveItem span {
+    font-size: 16px !important;
+    line-height: 22px !important;
+    white-space: normal !important;
+    transform: none !important;
+  }
+
+  .accessibilityInclusivity .accessibilityInclusivityInner .learningAnalytics {
+    width: 100% !important;
+    max-width: 296px !important;
+    height: 220px !important;
+    max-height: 220px !important;
+    margin: 0 auto !important;
+  }
+
+  .accessibilityInclusivity .accessibilityInclusivityInner
+    .teamSupportingInvalidWoman {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    object-position: center !important;
+  }
+
+  /* =========================================================
+     SUPPORTING INSTITUTIONS
+     Fix heading line spacing and compact the cards.
+     ========================================================= */
+  .accessibilityInclusivity .frameParent28 {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 22px !important;
+  }
+
+  .accessibilityInclusivity .frameParent28 .frameWrapper17,
+  .accessibilityInclusivity .frameParent28 .frameWrapper18,
+  .accessibilityInclusivity .frameParent28 .frameParent29,
+  .accessibilityInclusivity .frameParent28
+    .supportingInstitutionsInIncWrapper {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+  }
+
+  .accessibilityInclusivity .frameParent28 .frameParent29 {
+    gap: 14px !important;
+  }
+
+  .accessibilityInclusivity .frameParent28
+    .supportingInstitutionsInContainer {
+    width: 100% !important;
+    max-width: 300px !important;
+    height: auto !important;
+    min-height: 0 !important;
+    margin: 0 auto !important;
+    font-size: 24px !important;
+    line-height: 30px !important;
+    text-align: center !important;
+    display: block !important;
+  }
+
+  .accessibilityInclusivity .frameParent28
+    .supportingInstitutionsIn,
+  .accessibilityInclusivity .frameParent28
+    .inclusiveEducation {
+    line-height: 30px !important;
+  }
+
+  .accessibilityInclusivity .frameParent28 .enableAccessibleFlexible {
+    width: 100% !important;
+    max-width: 296px !important;
+    height: auto !important;
+    margin: 0 auto !important;
+    font-size: 16px !important;
+    line-height: 24px !important;
+    text-align: center !important;
+  }
+
+  .accessibilityInclusivity .frameParent28 .frameParent30 {
+    width: 100% !important;
+    height: auto !important;
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    justify-items: center !important;
+    gap: 14px !important;
+  }
+
+  .accessibilityInclusivity .frameParent28 .institutionCard,
+  .accessibilityInclusivity .frameParent28 .institutionCard1,
+  .accessibilityInclusivity .frameParent28 .institutionCard2,
+  .accessibilityInclusivity .frameParent28 .institutionCard3,
+  .accessibilityInclusivity .frameParent28 .institutionCard4 {
+    position: relative !important;
+    top: auto !important;
+    left: auto !important;
+    width: min(100%, 296px) !important;
+    max-width: 296px !important;
+    height: 166px !important;
+    min-height: 166px !important;
+    margin: 0 auto !important;
+    transform: none !important;
+  }
+
+  .accessibilityInclusivity .frameParent28 .institutionCardContent {
+    top: 50% !important;
+    left: 50% !important;
+    width: calc(100% - 24px) !important;
+    height: auto !important;
+    transform: translate(-50%, -50%) !important;
+    gap: 8px !important;
+  }
+
+  .accessibilityInclusivity .frameParent28 .institutionIconOuter {
+    width: 56px !important;
+    height: 56px !important;
+  }
+
+  .accessibilityInclusivity .frameParent28 .institutionIconInner {
+    width: 40px !important;
+    height: 40px !important;
+  }
+
+  .accessibilityInclusivity .frameParent28 .institutionIconImage {
+    width: 26px !important;
+    height: 26px !important;
+  }
+
+  .accessibilityInclusivity .frameParent28 .institutionCardText {
+    width: 190px !important;
+    min-height: 44px !important;
+    font-size: 16px !important;
+    line-height: 22px !important;
+    text-align: center !important;
+  }
+
+  /* =========================================================
+     CLOSING SECTION
+     ========================================================= */
+  .accessibilityInclusivity .frameParent31 {
+    gap: 18px !important;
+  }
+
+  .accessibilityInclusivity .frameParent31 .neurolxpBadge {
+    width: max-content !important;
+    height: 42px !important;
+    padding: 0 14px !important;
+    font-size: 16px !important;
+  }
+
+  .accessibilityInclusivity .frameParent31 .neurolxpBadgeText {
+    font-size: 16px !important;
+    line-height: 22px !important;
+  }
+
+  .accessibilityInclusivity .frameParent31 .neurolxpTm {
+    font-size: 10px !important;
+    top: -5px !important;
+  }
+
+  .accessibilityInclusivity .frameParent31
+    .empoweringInclusiveLearningParent {
+    width: 100% !important;
+    height: auto !important;
+    gap: 14px !important;
+  }
+
+  .accessibilityInclusivity .frameParent31
+    .empoweringInclusiveLearning {
+    width: 100% !important;
+    height: auto !important;
+    font-size: 24px !important;
+    line-height: 30px !important;
+  }
+
+  .accessibilityInclusivity .frameParent31
+    .neurolxpHelpsInstitutions {
+    width: 100% !important;
+    max-width: 296px !important;
+    height: auto !important;
+    font-size: 16px !important;
+    line-height: 24px !important;
+  }
+}
+
+
+/* 320px phones — tighten only sizes, preserve the same design */
+@media screen and (max-width: 339.98px) {
+
+  .accessibilityInclusivity .image20Parent {
+    height: 548px !important;
+    min-height: 548px !important;
+  }
+
+  .accessibilityInclusivity .image20Parent .youngAdultWatchingTvShowWIcon {
+    height: 140px !important;
+    max-height: 140px !important;
+  }
+
+  .accessibilityInclusivity .frameParent6 .frameWrapper3,
+  .accessibilityInclusivity .frameParent11 .frameWrapper9,
+  .accessibilityInclusivity .frameParent11 .frameWrapper11,
+  .accessibilityInclusivity .frameParent11 .frameWrapper15,
+  .accessibilityInclusivity .accessibilityInclusivityInner .learningAnalytics,
+  .accessibilityInclusivity .frameParent28 .institutionCard,
+  .accessibilityInclusivity .frameParent28 .institutionCard1,
+  .accessibilityInclusivity .frameParent28 .institutionCard2,
+  .accessibilityInclusivity .frameParent28 .institutionCard3,
+  .accessibilityInclusivity .frameParent28 .institutionCard4 {
+    max-width: 286px !important;
+  }
+}
+
+
+/* ============================================================
+   MOBILE — IMAGE OVERLAP + EXCESS SPACE FIX
+   ONLY affects the two sections shown in the screenshots.
+   ============================================================ */
+@media screen and (max-width: 767.98px) {
+
+  /* ----------------------------------------------------------
+     HERO IMAGE
+     Keep the person image clearly below the Book a Demo button.
+     ---------------------------------------------------------- */
+  .accessibilityInclusivity .image20Parent {
+    height: 540px !important;
+    min-height: 540px !important;
+  }
+
+  .accessibilityInclusivity .image20Parent .frameParent3 {
+    gap: 12px !important;
+  }
+
+  .accessibilityInclusivity .image20Parent .frameWrapper {
+    margin: 0 auto 10px !important;
+  }
+
+  .accessibilityInclusivity .image20Parent .youngAdultWatchingTvShowWIcon {
+    position: absolute !important;
+    left: 50% !important;
+    right: auto !important;
+    bottom: 10px !important;
+
+    width: 170px !important;
+    height: 120px !important;
+    max-width: 170px !important;
+    max-height: 120px !important;
+
+    object-fit: contain !important;
+    object-position: center bottom !important;
+
+    transform: translateX(-50%) !important;
+    z-index: 1 !important;
+  }
+
+  .accessibilityInclusivity .image20Parent .frameParent3 {
+    z-index: 3 !important;
+  }
+
+
+  /* ----------------------------------------------------------
+     INCLUSIVE LEARNING EXPERIENCES
+     Remove the large empty gap and keep the image completely
+     below the three list boxes with a clean gap.
+     ---------------------------------------------------------- */
+  .accessibilityInclusivity .accessibilityInclusivityInner {
+    height: auto !important;
+    min-height: 0 !important;
+    padding: 16px 12px !important;
+    overflow: hidden !important;
+  }
+
+  .accessibilityInclusivity .accessibilityInclusivityInner .frameParent24 {
+    position: relative !important;
+
+    width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+
+    gap: 10px !important;
+
+    overflow: visible !important;
+  }
+
+  .accessibilityInclusivity .accessibilityInclusivityInner .frameParent25 {
+    width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+
+    gap: 8px !important;
+
+    margin: 0 !important;
+  }
+
+  .accessibilityInclusivity .accessibilityInclusivityInner .frameParent26 {
+    width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+
+    gap: 6px !important;
+
+    margin: 0 !important;
+  }
+
+  .accessibilityInclusivity .accessibilityInclusivityInner
+    .frameParent26 > * {
+    height: auto !important;
+    min-height: 0 !important;
+    max-height: none !important;
+
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+  }
+
+  .accessibilityInclusivity .accessibilityInclusivityInner
+    .accessibleLearningForDiversWrapper {
+    height: auto !important;
+    min-height: 0 !important;
+    margin: 0 !important;
+  }
+
+  .accessibilityInclusivity .accessibilityInclusivityInner .designedToMake {
+    width: 100% !important;
+    max-width: 288px !important;
+
+    height: auto !important;
+    min-height: 0 !important;
+
+    margin: 0 auto !important;
+  }
+
+  /* Pull only the list group upward into the unused space.
+     Keep it in normal document flow — no transform overlap. */
+  .accessibilityInclusivity .accessibilityInclusivityInner .frameParent27 {
+    position: relative !important;
+
+    width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+
+    margin: -18px 0 0 !important;
+
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: stretch !important;
+
+    gap: 10px !important;
+
+    transform: none !important;
+  }
+
+  .accessibilityInclusivity .accessibilityInclusivityInner .inclusiveItem {
+    width: 100% !important;
+    min-height: 56px !important;
+    height: auto !important;
+
+    margin: 0 !important;
+  }
+
+  /* Image card is now a normal, separate block after the list */
+  .accessibilityInclusivity .accessibilityInclusivityInner .learningAnalytics {
+    position: relative !important;
+
+    top: auto !important;
+    right: auto !important;
+    bottom: auto !important;
+    left: auto !important;
+    inset: auto !important;
+
+    width: 100% !important;
+    max-width: 296px !important;
+
+    height: 190px !important;
+    min-height: 190px !important;
+    max-height: 190px !important;
+
+    margin: 2px auto 0 !important;
+
+    flex: 0 0 190px !important;
+
+    overflow: hidden !important;
+    transform: none !important;
+  }
+
+  .accessibilityInclusivity .accessibilityInclusivityInner
+    .teamSupportingInvalidWoman {
+    position: absolute !important;
+    inset: 0 !important;
+
+    width: 100% !important;
+    height: 100% !important;
+
+    object-fit: cover !important;
+    object-position: center 38% !important;
+
+    transform: none !important;
+  }
+
+  /* Reduce gap after this section as well */
+  .accessibilityInclusivity .frameParent28 {
+    margin-top: 32px !important;
+  }
+}
+
+
+/* 320px phone */
+@media screen and (max-width: 339.98px) {
+
+  .accessibilityInclusivity .image20Parent {
+    height: 530px !important;
+    min-height: 530px !important;
+  }
+
+  .accessibilityInclusivity .image20Parent .youngAdultWatchingTvShowWIcon {
+    width: 158px !important;
+    max-width: 158px !important;
+    height: 112px !important;
+    max-height: 112px !important;
+  }
+
+  .accessibilityInclusivity .accessibilityInclusivityInner .learningAnalytics {
+    max-width: 286px !important;
+    height: 184px !important;
+    min-height: 184px !important;
+    max-height: 184px !important;
+    flex-basis: 184px !important;
+  }
+}
+
+
+/* MOBILE ONLY — remove Inclusive Learning Experiences image */
+@media screen and (max-width: 767.98px) {
+  .accessibilityInclusivity .accessibilityInclusivityInner .learningAnalytics {
+    display: none !important;
+  }
+
+  .accessibilityInclusivity .accessibilityInclusivityInner
+    .teamSupportingInvalidWoman {
+    display: none !important;
+  }
+
+  .accessibilityInclusivity .frameParent28 {
+    margin-top: 24px !important;
+  }
+}
+
+
+/* FORCE REMOVE THE RIGHT-SIDE INCLUSIVE LEARNING IMAGE ON MOBILE */
+@media screen and (max-width: 767.98px) {
+
+  /* Hide the actual right-side image container */
+  .accessibilityInclusivity .accessibilityInclusivityInner
+    .frameParent24 > .learningAnalytics,
+  .accessibilityInclusivity .accessibilityInclusivityInner
+    .frameParent24 > div:last-child.learningAnalytics {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+
+    width: 0 !important;
+    height: 0 !important;
+    min-width: 0 !important;
+    min-height: 0 !important;
+    max-width: 0 !important;
+    max-height: 0 !important;
+
+    flex: 0 0 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+
+    overflow: hidden !important;
+    pointer-events: none !important;
+  }
+
+  /* Hide the image itself as an extra safeguard */
+  .accessibilityInclusivity .accessibilityInclusivityInner
+    img.teamSupportingInvalidWoman {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+  }
+
+  /* Left content now takes the full section width */
+  .accessibilityInclusivity .accessibilityInclusivityInner
+    .frameParent24 {
+    display: block !important;
+    height: auto !important;
+    min-height: 0 !important;
+  }
+
+  .accessibilityInclusivity .accessibilityInclusivityInner
+    .frameParent25 {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+    margin: 0 auto !important;
+  }
+
+  /* Remove any space that belonged to the deleted image */
+  .accessibilityInclusivity .accessibilityInclusivityInner {
+    height: auto !important;
+    min-height: 0 !important;
+    padding-bottom: 14px !important;
+  }
+
+  .accessibilityInclusivity .frameParent28 {
+    margin-top: 24px !important;
+  }
+}
+
+
+/* ============================================================
+   FINAL RESPONSIVE TYPOGRAPHY + MOBILE HERO IMAGE REMOVAL
+   ------------------------------------------------------------
+   Mobile:
+   - remove hero person image completely
+   - headings 24px
+   - descriptions / body text 16px
+
+   Tablet:
+   - headings 24px
+   - descriptions / body text 16px
+
+   Desktop remains unchanged.
+   ============================================================ */
+
+
+/* MOBILE ONLY */
+@media screen and (max-width: 767.98px) {
+
+  /* Remove the HERO person image completely on mobile */
+  .accessibilityInclusivity .image20Parent
+    .youngAdultWatchingTvShowWIcon {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+
+    width: 0 !important;
+    height: 0 !important;
+    min-width: 0 !important;
+    min-height: 0 !important;
+    max-width: 0 !important;
+    max-height: 0 !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    pointer-events: none !important;
+  }
+
+  /* Remove the empty hero image space left behind */
+  .accessibilityInclusivity .image20Parent {
+    height: auto !important;
+    min-height: 0 !important;
+  }
+
+  .accessibilityInclusivity .image20Parent .frameParent2 {
+    height: auto !important;
+    min-height: 0 !important;
+    padding-bottom: 18px !important;
+  }
+
+  .accessibilityInclusivity .image20Parent
+    .peopleTakingPartBusinessEvParent {
+    height: auto !important;
+    min-height: 0 !important;
+    padding-bottom: 18px !important;
+  }
+
+
+  /* ----------------------------------------------------------
+     MOBILE HEADINGS = 24px
+     ---------------------------------------------------------- */
+  .accessibilityInclusivity .image20Parent .learningDesignedFor,
+  .accessibilityInclusivity .frameParent6 .learningDesignedFor,
+  .accessibilityInclusivity .frameParent11 .multipleContentFormats,
+  .accessibilityInclusivity .accessibilityInclusivityInner .learningDesignedFor,
+  .accessibilityInclusivity .frameParent28 .supportingInstitutionsInContainer,
+  .accessibilityInclusivity .frameParent31 .empoweringInclusiveLearning {
+    font-size: 24px !important;
+    line-height: 30px !important;
+    height: auto !important;
+    min-height: 0 !important;
+    max-height: none !important;
+  }
+
+
+  /* ----------------------------------------------------------
+     MOBILE BODY / DESCRIPTIONS = 16px
+     ---------------------------------------------------------- */
+  .accessibilityInclusivity .image20Parent .neurolxpEnsuresEvery,
+  .accessibilityInclusivity .frameParent6 .designedToMake,
+  .accessibilityInclusivity .frameParent11 .deliverEngagingLearning,
+  .accessibilityInclusivity .accessibilityInclusivityInner .designedToMake,
+  .accessibilityInclusivity .frameParent28 .enableAccessibleFlexible,
+  .accessibilityInclusivity .frameParent31 .neurolxpHelpsInstitutions,
+  .accessibilityInclusivity .accessibilityInclusivityInner .inclusiveItem span,
+  .accessibilityInclusivity .frameParent6 .easyNavigation,
+  .accessibilityInclusivity .frameParent6 .multiFormatLearning,
+  .accessibilityInclusivity .frameParent6 .unlimitedAssessments,
+  .accessibilityInclusivity .frameParent11 .textStructured,
+  .accessibilityInclusivity .frameParent11 .interactiveVideoLearning,
+  .accessibilityInclusivity .frameParent28 .institutionCardText {
+    font-size: 16px !important;
+    line-height: 24px !important;
+  }
+
+  .accessibilityInclusivity .image20Parent .frameIcon,
+  .accessibilityInclusivity .frameParent11 .frameChild2,
+  .accessibilityInclusivity .frameParent31 .neurolxpBadgeText {
+    font-size: 16px !important;
+    line-height: 22px !important;
+  }
+}
+
+
+/* TABLET ONLY */
+@media screen and (min-width: 768px) and (max-width: 1023.98px) {
+
+  /* ----------------------------------------------------------
+     TABLET HEADINGS = 24px
+     ---------------------------------------------------------- */
+  .accessibilityInclusivity .image20Parent .learningDesignedFor,
+  .accessibilityInclusivity .frameParent6 .learningDesignedFor,
+  .accessibilityInclusivity .frameParent11 .multipleContentFormats,
+  .accessibilityInclusivity .accessibilityInclusivityInner .learningDesignedFor,
+  .accessibilityInclusivity .frameParent28 .supportingInstitutionsInContainer,
+  .accessibilityInclusivity .frameParent31 .empoweringInclusiveLearning {
+    font-size: 24px !important;
+    line-height: 30px !important;
+    height: auto !important;
+    min-height: 0 !important;
+    max-height: none !important;
+  }
+
+
+  /* ----------------------------------------------------------
+     TABLET BODY / DESCRIPTIONS = 16px
+     ---------------------------------------------------------- */
+  .accessibilityInclusivity .image20Parent .neurolxpEnsuresEvery,
+  .accessibilityInclusivity .frameParent6 .designedToMake,
+  .accessibilityInclusivity .frameParent11 .deliverEngagingLearning,
+  .accessibilityInclusivity .accessibilityInclusivityInner .designedToMake,
+  .accessibilityInclusivity .frameParent28 .enableAccessibleFlexible,
+  .accessibilityInclusivity .frameParent31 .neurolxpHelpsInstitutions,
+  .accessibilityInclusivity .accessibilityInclusivityInner .inclusiveItem span,
+  .accessibilityInclusivity .frameParent6 .easyNavigation,
+  .accessibilityInclusivity .frameParent6 .multiFormatLearning,
+  .accessibilityInclusivity .frameParent6 .unlimitedAssessments,
+  .accessibilityInclusivity .frameParent11 .textStructured,
+  .accessibilityInclusivity .frameParent11 .interactiveVideoLearning,
+  .accessibilityInclusivity .frameParent28 .institutionCardText {
+    font-size: 16px !important;
+    line-height: 24px !important;
+  }
+
+  .accessibilityInclusivity .image20Parent .frameIcon,
+  .accessibilityInclusivity .frameParent11 .frameChild2,
+  .accessibilityInclusivity .frameParent31 .neurolxpBadgeText {
+    font-size: 16px !important;
+    line-height: 22px !important;
+  }
+}
+
+
+/* ============================================================
+   MOBILE HERO — KEEP THE COMPLETE HERO SECTION
+   REMOVE ONLY THE PERSON IMAGE
+   ============================================================ */
+@media screen and (max-width: 767.98px) {
+
+  /* Keep the HERO section/card itself */
+  .accessibilityInclusivity .image20Parent {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+
+    width: 100% !important;
+    height: 500px !important;
+    min-height: 500px !important;
+    max-height: none !important;
+
+    margin-top: 24px !important;
+    overflow: hidden !important;
+  }
+
+  /* Restore the inner hero card instead of collapsing it */
+  .accessibilityInclusivity .image20Parent .frameParent2 {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+
+    position: absolute !important;
+    inset: 12px !important;
+
+    width: auto !important;
+    height: calc(100% - 24px) !important;
+    min-height: 0 !important;
+
+    padding: 0 !important;
+    overflow: hidden !important;
+  }
+
+  /* Keep the complete hero text/button content */
+  .accessibilityInclusivity .image20Parent
+    .peopleTakingPartBusinessEvParent {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+
+    width: 100% !important;
+    height: 100% !important;
+    min-height: 0 !important;
+
+    padding: 0 !important;
+  }
+
+  .accessibilityInclusivity .image20Parent .frameParent3 {
+    display: flex !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+
+    position: absolute !important;
+    top: 24px !important;
+    left: 12px !important;
+    right: 12px !important;
+
+    width: auto !important;
+    height: auto !important;
+
+    flex-direction: column !important;
+    align-items: center !important;
+
+    gap: 14px !important;
+
+    z-index: 5 !important;
+  }
+
+  /* REMOVE ONLY THE HERO PERSON IMAGE */
+  .accessibilityInclusivity .image20Parent
+    .youngAdultWatchingTvShowWIcon {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+
+    width: 0 !important;
+    height: 0 !important;
+    min-width: 0 !important;
+    min-height: 0 !important;
+    max-width: 0 !important;
+    max-height: 0 !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    pointer-events: none !important;
+  }
+
+  /* Mobile typography stays exactly as requested */
+  .accessibilityInclusivity .image20Parent .learningDesignedFor {
+    font-size: 24px !important;
+    line-height: 30px !important;
+  }
+
+  .accessibilityInclusivity .image20Parent .neurolxpEnsuresEvery {
+    font-size: 16px !important;
+    line-height: 24px !important;
+  }
+
+  .accessibilityInclusivity .image20Parent .frameWrapper {
+    margin: 2px auto 0 !important;
+  }
+}
+
+
+/* 320px phone — keep the same hero, only slightly shorter */
+@media screen and (max-width: 339.98px) {
+  .accessibilityInclusivity .image20Parent {
+    height: 485px !important;
+    min-height: 485px !important;
+  }
+}
+
+
+/* MOBILE HERO — REMOVE ONLY THE EMPTY SPACE BELOW THE BUTTON */
+@media screen and (max-width: 767.98px) {
+  .accessibilityInclusivity .image20Parent {
+    height: 390px !important;
+    min-height: 390px !important;
+  }
+
+  .accessibilityInclusivity .image20Parent .frameParent2 {
+    height: calc(100% - 24px) !important;
+  }
+}
+
+@media screen and (max-width: 339.98px) {
+  .accessibilityInclusivity .image20Parent {
+    height: 380px !important;
+    min-height: 380px !important;
+  }
+}
+

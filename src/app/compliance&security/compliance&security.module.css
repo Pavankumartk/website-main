@@ -3122,7 +3122,7 @@
   width: 100%;
   margin: 0;
   color: #31344b;
-  font-size: 52px;
+  font-size: 36px;
   line-height: 1.2;
   font-weight: 700;
   letter-spacing: 0.02em;
@@ -6228,4 +6228,251 @@ body {
     row-gap: 16px !important;
   }
 }
+/* ==========================================================================
+   FINAL TABLET / 1024 ALIGNMENT CORRECTION
+   Applies only from 768px through 1199px.
+   Desktop 1200px+ and phone <768px are not changed.
 
+   1. Remove the decorative hero background at tablet / 1024 widths.
+   2. Keep Compliance Training status boxes equal and centered.
+   3. Make all 6 Industry Compliance cards one continuous 2 x 3 grid,
+      so the rows align 2 + 2 + 2 instead of 2 + 1 / 2 + 1.
+   ========================================================================== */
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+
+  /* -------------------------------------------------------
+     HERO
+     Remove only the decorative background used behind the hero.
+     Hero text, breadcrumb, badge and buttons remain unchanged.
+     ------------------------------------------------------- */
+  .complianceSecurity > .complianceSecurityChild,
+  .complianceSecurity .frameItem {
+    display: none !important;
+  }
+
+  /* Keep the hero itself transparent so no replacement block/background
+     appears after the decorative artwork is removed. */
+  .complianceSecurity .complianceSecurityInner,
+  .complianceSecurity .frameWrapper,
+  .complianceSecurity .frameWrapper2,
+  .complianceSecurity .frameParent2,
+  .complianceSecurity .frameParent3,
+  .complianceSecurity .frameParent4,
+  .complianceSecurity .frameParent5 {
+    background: transparent !important;
+  }
+
+  /* -------------------------------------------------------
+     COMPLIANCE TRAINING STATUS BOXES
+     Every box has exactly the same width and height.
+     ------------------------------------------------------- */
+  .complianceSecurity .frameParent10 {
+    width: min(100%, 620px) !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  .complianceSecurity .frameParent11 {
+    width: 100% !important;
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    align-items: stretch !important;
+    justify-items: stretch !important;
+    gap: 20px !important;
+  }
+
+  .complianceSecurity .complianceStatus {
+    width: 100% !important;
+    min-width: 0 !important;
+    max-width: none !important;
+    height: 60px !important;
+    min-height: 60px !important;
+    margin: 0 !important;
+    align-self: stretch !important;
+    justify-self: stretch !important;
+    padding-inline: 16px !important;
+    text-align: center !important;
+  }
+
+  /* -------------------------------------------------------
+     INDUSTRY-SPECIFIC COMPLIANCE
+     Flatten the two original 3-card row wrappers into one grid.
+     Result at tablet / 1024: 2 equal cards per row, 3 rows.
+     ------------------------------------------------------- */
+  .complianceSecurity .frameParent26 {
+    width: 100% !important;
+    max-width: 860px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 400px)) !important;
+    justify-content: center !important;
+    align-items: stretch !important;
+    column-gap: clamp(20px, 3vw, 28px) !important;
+    row-gap: clamp(22px, 3vw, 30px) !important;
+  }
+
+  /* The two original row containers should not create separate grids.
+     Their six children participate in frameParent26's single grid. */
+  .complianceSecurity .frameParent26 > .frameParent27 {
+    display: contents !important;
+  }
+
+  .complianceSecurity .frameParent26 .frameParent28 {
+    width: 100% !important;
+    max-width: 400px !important;
+    height: auto !important;
+    min-height: 0 !important;
+    aspect-ratio: 400 / 306 !important;
+    margin: 0 !important;
+    justify-self: stretch !important;
+    align-self: stretch !important;
+  }
+
+  /* Keep each inner industry card equally inset from its outer card. */
+  .complianceSecurity .frameParent26 .frameChild15 {
+    width: 100% !important;
+    height: 100% !important;
+  }
+
+  .complianceSecurity .frameParent26 .frameWrapper23,
+  .complianceSecurity .frameParent26 .frameWrapper24 {
+    top: 5.23% !important;
+    left: 4% !important;
+    width: 92% !important;
+    height: 89.54% !important;
+    transform: none !important;
+  }
+
+  .complianceSecurity .frameParent26 .frameParent29 {
+    width: 100% !important;
+    height: 100% !important;
+  }
+}
+/* ==========================================================================
+   ABSOLUTE FINAL RESPONSIVE TYPOGRAPHY LOCK
+   ----------------------------------------------------------
+   Applies to every responsive view below 1200px:
+   - Mobile
+   - Tablet portrait
+   - Tablet landscape
+   - 1024px view
+   - Small laptop widths up to 1199px
+
+   Responsive typography:
+   - MAIN SECTION HEADINGS = 24px / 31px
+   - SECTION DESCRIPTIONS / SUBHEADINGS = 16px / 24px
+   - SECTION BADGES / PILLS = 16px / 24px
+
+   Desktop >= 1200px is NOT changed.
+   Keep this block at the absolute bottom of the stylesheet.
+   ========================================================================== */
+@media screen and (max-width: 1199.98px) {
+
+  /* ------------------------------------------------------------------------
+     MAIN SECTION HEADINGS — EXACTLY 24px
+     Covers original 36px / 40px / 42px / 48px / 52px inherited rules.
+     ------------------------------------------------------------------------ */
+  .complianceSecurity .secureLearningSmarterContainer,
+  .complianceSecurity .structuredTrainingFor,
+  .complianceSecurity .centralizeMonitorStayContainer,
+  .complianceSecurity .industrySpecificCompliance,
+  .complianceSecurity .makeMandatoryTrainingContainer,
+  .complianceSecurity .makeMandatoryTrainingContainer2,
+  .complianceSecurity .realTimeVisibilityTitle,
+  .complianceSecurity .maintainVerifiableTraining,
+  .complianceSecurity .learningSecurityTitle,
+  .complianceSecurity .diverseOrganizationsTitle,
+  .complianceSecurity .secureLearningSmarterContainer2,
+  .complianceSecurity .neurolxpClosingTitle {
+    font-size: 24px !important;
+    line-height: 31px !important;
+
+    width: min(100%, 100%) !important;
+    max-width: 100% !important;
+
+    height: auto !important;
+    min-height: 0 !important;
+    max-height: none !important;
+
+    white-space: normal !important;
+    overflow: visible !important;
+    overflow-wrap: break-word !important;
+    text-wrap: balance;
+  }
+
+  /* Nested coloured/accent words must inherit the responsive heading size. */
+  .complianceSecurity .secureLearningSmarter,
+  .complianceSecurity .greaterConfidence,
+  .complianceSecurity .secureLearning,
+  .complianceSecurity .smarterCompliance,
+  .complianceSecurity .centralizeMonitor,
+  .complianceSecurity .stayReady {
+    font-size: inherit !important;
+    line-height: inherit !important;
+  }
+
+  /* ------------------------------------------------------------------------
+     SECTION DESCRIPTIONS / SUBHEADINGS — EXACTLY 16px
+     Covers original 22px / 24px / 28px / 40px line-height text.
+     ------------------------------------------------------------------------ */
+  .complianceSecurity .neurolxpCombinesCompliance,
+  .complianceSecurity .neurolxpDeliversStructured,
+  .complianceSecurity .simplifyComplianceTraining,
+  .complianceSecurity .makeComplianceLearning,
+  .complianceSecurity .realTimeVisibilityText,
+  .complianceSecurity .issueDigitalCertificates,
+  .complianceSecurity .learningSecurityIntro,
+  .complianceSecurity .neurolxpEnablesSecure,
+  .complianceSecurity .diverseOrganizationsText,
+  .complianceSecurity .neurolxpHelpsOrganizations,
+  .complianceSecurity .neurolxpClosingText {
+    font-size: 16px !important;
+    line-height: 24px !important;
+
+    width: min(100%, 100%) !important;
+    max-width: 100% !important;
+
+    height: auto !important;
+    min-height: 0 !important;
+    max-height: none !important;
+
+    white-space: normal !important;
+    overflow: visible !important;
+    overflow-wrap: break-word !important;
+  }
+
+  /* ------------------------------------------------------------------------
+     SECTION BADGES / PILLS — EXACTLY 16px
+     ------------------------------------------------------------------------ */
+  .complianceSecurity .heroBadge,
+  .complianceSecurity .complianceTrainingBadge,
+  .complianceSecurity .smartComplianceBadge,
+  .complianceSecurity .engagingComplianceBadge,
+  .complianceSecurity .automatedTrackingBadge,
+  .complianceSecurity .trainingRecordsBadge,
+  .complianceSecurity .learningSecurityBadge,
+  .complianceSecurity .neurolxpClosingBadge {
+    font-size: 16px !important;
+    line-height: 24px !important;
+
+    width: auto !important;
+    max-width: 100% !important;
+
+    min-height: 42px !important;
+    height: auto !important;
+
+    padding: 8px 18px !important;
+
+    white-space: normal !important;
+    text-align: center !important;
+  }
+
+  /* Remove inherited 48px parent font-size from hero / closing wrappers.
+     Children with their own card/text sizes remain unaffected. */
+  .complianceSecurity .complianceSecurityInner,
+  .complianceSecurity .complianceSecurityInner3 {
+    font-size: 24px !important;
+  }
+}

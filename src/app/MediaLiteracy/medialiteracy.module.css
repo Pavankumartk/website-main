@@ -1,16 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
 
-@font-face {
-  font-family: "Segoe UI";
-  src:
-    local("Segoe UI Variable"),
-    local("Segoe UI"),
-    local("SegoeUI");
-  font-style: normal;
-  font-weight: 100 900;
-  font-display: swap;
-}
-
 .skipToContent {
   position: absolute;
   top: -60px;
@@ -3941,26 +3930,26 @@
 }
 
 /* ==========================================================================
-   FINAL TYPOGRAPHY — SEGOE UI + INTER FALLBACK / NO ITALICS
+   FINAL TYPOGRAPHY — SEGOE UI ONLY / NO ITALICS
    Preserve all existing layout and design rules.
    ========================================================================== */
 .mediaLiteracy,
 .mediaLiteracy *,
 .mediaLiteracy *::before,
 .mediaLiteracy *::after {
-  font-family: "Segoe UI", "Inter" !important;
+  font-family: "Segoe UI", "Inter";
   font-style: normal !important;
 }
 
 /* ==========================================================================
-   FINAL FONT MATCH — ONLY SEGOE UI + INTER
+   FINAL FONT MATCH — ONLY SEGOE UI
    No other font family. No italic font style.
    ========================================================================== */
 .mediaLiteracy,
 .mediaLiteracy *,
 .mediaLiteracy *::before,
 .mediaLiteracy *::after {
-  font-family: "Segoe UI", "Inter" !important;
+  font-family: "Segoe UI", "Inter";
   font-style: normal !important;
 }
 
@@ -3976,7 +3965,7 @@
   .mediaLiteracy .createResponsiblyInspireContainer,
   .mediaLiteracy .navigateMediaWithContainer,
   .mediaLiteracy .howInteractiveLearning {
-    font-family: "Segoe UI", "Inter" !important;
+    font-family: "Segoe UI", "Inter";
     font-style: normal !important;
     font-size: 36px !important;
     line-height: 1.25 !important;
@@ -3987,7 +3976,7 @@
   .mediaLiteracy .strengthenYourAbility,
   .mediaLiteracy .createEthicalCredible,
   .mediaLiteracy .interactiveLearningDrives {
-    font-family: "Segoe UI", "Inter" !important;
+    font-family: "Segoe UI", "Inter";
     font-style: normal !important;
     font-size: 24px !important;
     line-height: 1.5 !important;

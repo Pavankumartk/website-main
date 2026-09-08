@@ -6649,3 +6649,196 @@ button.limitsButton:active {
     transition: none !important;
   }
 }
+
+
+/* FINAL MOBILE TYPOGRAPHY — MUST STAY LAST */
+@media screen and (max-width: 767.98px) {
+
+  /* Main headings = 24px */
+  .mobileLearning .mobileHeroTitle,
+  .mobileLearning .routineTitle,
+  .mobileLearning .microTitle,
+  .mobileLearning .interactiveTitle,
+  .mobileLearning .modernLearningTitle,
+  .mobileLearning .modernBuiltTitle,
+  .mobileLearning .limitsTitle {
+    font-size: 24px !important;
+    line-height: 30px !important;
+    height: auto !important;
+    min-height: 0 !important;
+    max-height: none !important;
+  }
+
+  /* Main descriptions / subheadings = 16px */
+  .mobileLearning .mobileHeroDescription,
+  .mobileLearning .routineSubtitle,
+  .mobileLearning .microDescription,
+  .mobileLearning .interactiveDescription,
+  .mobileLearning .modernLearningSubtitle,
+  .mobileLearning .modernBuiltDescription,
+  .mobileLearning .limitsDescription {
+    font-size: 16px !important;
+    line-height: 24px !important;
+    height: auto !important;
+    min-height: 0 !important;
+    max-height: none !important;
+  }
+}
+
+
+/* MOBILE ONLY — FINAL "LEARNING WITHOUT LIMITS" SECTION
+   Last two requested corrections:
+   1) compact/correct only the last section
+   2) stop Book a Demo from overlapping */
+@media screen and (max-width: 767.98px) {
+
+  .mobileLearning .limitsSection {
+    width: calc(100% - 24px) !important;
+    max-width: 340px !important;
+
+    height: 370px !important;
+    min-height: 370px !important;
+    flex: 0 0 370px !important;
+
+    margin: 32px auto 0 !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    overflow: hidden !important;
+  }
+
+  .mobileLearning .limitsPolygon {
+    position: absolute !important;
+    inset: 0 !important;
+
+    width: 100% !important;
+    height: 100% !important;
+
+    object-fit: fill !important;
+    object-position: center !important;
+  }
+
+  .mobileLearning .limitsContent {
+    position: relative !important;
+    inset: auto !important;
+
+    width: 100% !important;
+    max-width: calc(100% - 36px) !important;
+
+    height: auto !important;
+    min-height: 0 !important;
+    max-height: none !important;
+
+    margin: 0 auto !important;
+
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    gap: 12px !important;
+
+    text-align: center !important;
+    transform: none !important;
+  }
+
+  .mobileLearning .limitsBadge {
+    min-width: 132px !important;
+    height: 42px !important;
+
+    margin: 0 !important;
+    padding: 0 16px !important;
+
+    font-size: 16px !important;
+    line-height: 22px !important;
+
+    flex-shrink: 0 !important;
+  }
+
+  .mobileLearning .limitsBadge sup {
+    position: relative !important;
+    top: -4px !important;
+
+    font-size: 10px !important;
+    line-height: 1 !important;
+  }
+
+  .mobileLearning .limitsTitle {
+    width: 100% !important;
+    height: auto !important;
+
+    margin: 0 !important;
+
+    font-size: 24px !important;
+    line-height: 30px !important;
+
+    text-align: center !important;
+    white-space: normal !important;
+
+    flex-shrink: 0 !important;
+  }
+
+  .mobileLearning .limitsDescription {
+    width: 100% !important;
+    max-width: 270px !important;
+    height: auto !important;
+
+    margin: 0 !important;
+
+    font-size: 16px !important;
+    line-height: 24px !important;
+
+    text-align: center !important;
+
+    flex-shrink: 0 !important;
+  }
+
+  .mobileLearning .limitsButton {
+    position: relative !important;
+
+    top: auto !important;
+    right: auto !important;
+    bottom: auto !important;
+    left: auto !important;
+    inset: auto !important;
+
+    min-width: 190px !important;
+    width: 190px !important;
+    height: 54px !important;
+
+    margin: 6px auto 0 !important;
+    padding: 0 22px !important;
+
+    font-size: 17px !important;
+    line-height: 22px !important;
+
+    flex: 0 0 54px !important;
+    flex-shrink: 0 !important;
+
+    transform: none !important;
+    z-index: 2 !important;
+  }
+}
+
+@media screen and (max-width: 339.98px) {
+  .mobileLearning .limitsSection {
+    width: calc(100% - 20px) !important;
+
+    height: 360px !important;
+    min-height: 360px !important;
+    flex-basis: 360px !important;
+
+    margin-top: 28px !important;
+  }
+
+  .mobileLearning .limitsContent {
+    max-width: calc(100% - 30px) !important;
+  }
+
+  .mobileLearning .limitsDescription {
+    max-width: 250px !important;
+  }
+}
+

@@ -4456,3 +4456,63 @@
   }
 }
 
+/* =========================================================
+   INTER FALLBACK — FINANCIAL FOUNDATION CARD TEXT FIX
+   Vertically center the complete title + subtitle block using
+   its real rendered height instead of the Segoe-specific offset.
+   This prevents Inter from touching/overlapping the card bottom.
+   Mobile rules below/elsewhere remain unchanged.
+   ========================================================= */
+@media (min-width: 768px) {
+  .frameParent5 .smartBudgetingParent,
+  .frameParent5 .creditManagementParent,
+  .frameParent5 .savingEssentialsParent {
+    top: 50% !important;
+    transform: translateY(-50%) !important;
+    height: auto !important;
+    min-height: 0 !important;
+    justify-content: center !important;
+    gap: 10px !important;
+    box-sizing: border-box !important;
+  }
+
+  .frameParent5 .smartBudgeting {
+    margin: 0 !important;
+    line-height: 36px !important;
+  }
+
+  .frameParent5 .planIncomeAnd,
+  .frameParent5 .borrowResponsibly,
+  .frameParent5 .growSavingsAnd,
+  .frameParent5 .achieveFinancialGoals {
+    margin: 0 !important;
+    line-height: 32px !important;
+  }
+}
+
+
+/* =========================================================
+   FINANCIAL FOUNDATION CARDS — SINGLE-LINE CENTERED HEADINGS
+   ========================================================= */
+@media (min-width: 768px) {
+  .frameParent5 .smartBudgeting,
+  .frameParent5 .creditManagement,
+  .frameParent5 .savingEssentials,
+  .frameParent5 .futurePlanning {
+    width: 100% !important;
+    max-width: none !important;
+    text-align: center !important;
+    white-space: nowrap !important;
+    display: block !important;
+    margin: 0 !important;
+  }
+
+  .frameParent5 .smartBudgetingParent,
+  .frameParent5 .creditManagementParent,
+  .frameParent5 .savingEssentialsParent,
+  .frameParent5 .futurePlanningParent {
+    align-items: center !important;
+    text-align: center !important;
+  }
+}
+

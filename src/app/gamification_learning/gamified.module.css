@@ -12,7 +12,7 @@
     text-align: left;
     font-size: 48px;
     color: #31344b;
-    font-family: 'Segoe UI';
+    font-family: "Segoe UI", "Inter";
     zoom: 0.89;
     max-width: 1440px; 
 	margin: 0 auto;
@@ -28,7 +28,7 @@
     height: 80px;
     overflow: hidden;
     font-size: 16px;
-    font-family: 'Segoe UI';
+    font-family: "Segoe UI", "Inter";
 }
 
 .frameChild {
@@ -118,7 +118,7 @@
     box-sizing: border-box;
     text-align: center;
     color: #2d4cc8;
-    font-family: 'Segoe UI';
+    font-family: "Segoe UI", "Inter";
 }
 
 .signInHelp {
@@ -142,7 +142,7 @@
     gap: 8px;
     font-size: 16px;
     color: #2f3547;
-    font-family: 'Segoe UI';
+    font-family: "Segoe UI", "Inter";
 }
 
 .featuresWrapper {
@@ -376,7 +376,7 @@
     box-shadow: inset -4px -4px 4px #FFFFFF,
                 inset 4px 4px 4px rgba(196,196,196,.8);
     color:#2D4CC8;
-    font-family: 'Segoe UI';
+    font-family: "Segoe UI", "Inter";
     font-size:24px;
     font-weight:500;
     line-height:24px;
@@ -2095,7 +2095,7 @@
     box-sizing: border-box;
     flex-shrink: 0;
     color: #2d4cc8;
-    font-family: 'Segoe UI';
+    font-family: "Segoe UI", "Inter";
     font-size: 24px;
     font-weight: 600;
     line-height: 32px;
@@ -2118,7 +2118,7 @@
     box-sizing: border-box;
     flex-shrink: 0;
     color: #2D4CC8;
-    font-family: 'Segoe UI';
+    font-family: "Segoe UI", "Inter";
     font-size: 24px;
     font-weight: 600;
     line-height: 32px;
@@ -2138,7 +2138,7 @@
     box-shadow: inset -4px -4px 4px #FFFFFF,
                 inset 4px 4px 4px rgba(196,196,196,.8);
     color:#2D4CC8;
-    font-family: 'Segoe UI';
+    font-family: "Segoe UI", "Inter";
     font-size:24px;
     font-weight:500;
     line-height:24px;
@@ -2213,7 +2213,7 @@
     background:#DFE6E9;
     box-shadow: inset -4px -4px 4px #FFFFFF, inset 4px 4px 4px #C4C4C4;
     color:#2D4CC8;
-    font-family: 'Segoe UI';
+    font-family: "Segoe UI", "Inter";
     font-size:24px;
     font-weight:600;
     line-height:24px;
@@ -2235,7 +2235,7 @@
         inset -4px -4px 4px #FFFFFF,
         inset 4px 4px 4px rgba(196, 196, 196, 0.8);
     color: #2D4CC8;
-    font-family: 'Segoe UI';
+    font-family: "Segoe UI", "Inter";
     font-size: 24px;
     font-weight: 500;
     line-height: 1;
@@ -2361,7 +2361,7 @@
         inset 4px 4px 4px rgba(196, 196, 196, 0.8);
 
     color: #2D4CC8;
-    font-family: 'Segoe UI';
+    font-family: "Segoe UI", "Inter";
     font-size: 24px;
     font-weight: 500;
     line-height: 24px;
@@ -2430,7 +2430,7 @@ border:none;
 border-radius:28px;
 background:#DFE6E9;
 box-shadow:inset -4px -4px 4px #FFFFFF,inset 4px 4px 4px rgba(196,196,196,.8);
-font-family: 'Segoe UI';
+font-family: "Segoe UI", "Inter";
 font-size:24px;
 font-weight:500;
 line-height:24px;
@@ -2458,7 +2458,7 @@ padding:0;
 
 .startLearning{
 color:#2D4CC8;
-font-family: 'Segoe UI';
+font-family: "Segoe UI", "Inter";
 font-weight:600;
 opacity:1;
 -webkit-text-fill-color:#2D4CC8;
@@ -2538,7 +2538,7 @@ opacity:1;
     width: 573px;
     margin: 0;
     color: #31344B;
-    font-family: 'Segoe UI';
+    font-family: "Segoe UI", "Inter";
     font-size: 36px;
     font-weight: 600;
     line-height: 60px;
@@ -2550,7 +2550,7 @@ opacity:1;
     width: 573px;
     margin: 0;
     color: #2F3547;
-    font-family: 'Segoe UI';
+    font-family: "Segoe UI", "Inter";
     font-size: 24px;
     font-weight: 400;
     line-height: 40px;
@@ -2569,7 +2569,7 @@ opacity:1;
 .frameParent73 .bookADemo {
     width: auto;
     color: #2D4CC8;
-    font-family: 'Segoe UI';
+    font-family: "Segoe UI", "Inter";
     font-size: 24px;
     font-weight: 600;
     line-height: 32px;
@@ -4683,7 +4683,7 @@ opacity:1;
   .frameParent73 .learnMore,
   .frameParent73 .learnMorePill,
   .frameParent73 .learnMorePill * {
-    font-family: 'Segoe UI';
+    font-family: "Segoe UI", "Inter";
     font-size: 16px !important;
     font-weight: 600 !important;
     line-height: 24px !important;
@@ -5331,7 +5331,7 @@ opacity:1;
 }
 
 
-@media screen and (min-width: 1100px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .interactiveGamifiedLearnin {
     zoom: 0.76 !important;
   }
@@ -5428,7 +5428,7 @@ opacity:1;
 }
 
 
-@media screen and (min-width: 1100px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .interactiveGamifiedLearnin {
     width: 131.578947vw !important;
     max-width: none !important;
@@ -5566,300 +5566,1184 @@ body {
     }
 }
 
-/* =========================================================
-   NON-HERO TYPE SCALE + ONE-VIEWPORT SECTION RHYTHM
-   Desktop sections use a 36px / 24px hierarchy and a
-   consistent 48px gap. The hero remains unchanged.
-   ========================================================= */
 @media screen and (min-width: 768px) {
-    .interactiveGamifiedLearnin {
-        --section-gap: 48px;
-        height: 5264px !important;
-    }
+  .interactiveGamifiedLearnin,
+  .interactiveGamifiedLearnin * {
+    font-family: "Segoe UI", "Inter";
+  }
 
-    /* 36px section headings */
-    .interactiveActivitiesThatContainer,
-    .frameParent40 .beyondLearningInto,
-    .image20Parent4 .howInteractiveLearning,
-    .frameParent62 .howInteractiveLearning,
-    .frameParent73 .beyondLearningInto {
-        font-size: 36px !important;
-        font-weight: 600;
-    }
+  .interactiveGamifiedLearnin {
+    width: 1440px !important;
+    min-width: 1440px !important;
+    max-width: 1440px !important;
+    height: 6072px !important;
+    min-height: 6072px !important;
+    margin: 0 auto !important;
+    zoom: 0.89 !important;
+    overflow: hidden !important;
+  }
 
-    /* 24px section copy; supporting card copy remains 20px. */
-    .activeParticipationMakes,
-    .neurolxpOffersA,
-    .frameParent40 .perfectForUniversities,
-    .image20Parent4 .interactiveLearningDrives,
-    .frameParent62 .interactiveLearningDrives,
-    .frameParent73 .perfectForUniversities {
-        font-size: 24px !important;
-    }
+  .interactiveGamifiedLearnin .frameParent2 {
+    top: 71px !important;
+    left: calc(50% - 640px) !important;
+    width: 1280px !important;
+    height: 545px !important;
+  }
 
-    /*
-       Section bounds at the 1440px design canvas:
-       hero 545, overview 397, activities 862, modes 656,
-       results 728, scale 613, CTA 597. Every boundary below
-       leaves exactly 48px before the next section.
-    */
-    .frameParent8 {
-        top: 664px !important;
-        height: 397px;
-        font-size: 24px;
-    }
-
-    .frameParent17 {
-        top: 1109px !important;
-        height: 862px !important;
-    }
-
-    /* The title is one line: remove its unused second-line box. */
-    .frameParent17 .interactiveActivitiesThatContainer {
-        height: 60px !important;
-    }
-
-    .frameParent17 .frameWrapper6 {
-        height: 262px;
-    }
-
-    .frameParent17 .frameParent20 {
-        top: 312px;
-    }
-
-    .frameParent40 {
-        top: 2019px !important;
-        height: 656px;
-    }
-
-    .image20Parent4 {
-        top: 2723px !important;
-        height: 728px !important;
-    }
-
-    /* Compact only the results section's internal whitespace. */
-    .image20Parent4 .frameParent52 {
-        top: 24px;
-        gap: 22px;
-    }
-
-    .image20Parent4 .frameWrapper15 {
-        height: 202px !important;
-    }
-
-    .image20Parent4 .frameParent53 {
-        gap: 16px !important;
-    }
-
-    .image20Parent4 .howInteractiveLearningDriveParent {
-        height: 136px !important;
-        gap: 16px !important;
-    }
-
-    .image20Parent4 .howInteractiveLearning {
-        height: 48px;
-        line-height: 48px;
-    }
-
-    .image20Parent4 .interactiveLearningDrives {
-        height: 72px;
-        line-height: 36px;
-    }
-
-    .image20Parent4 .frameParent54,
-    .image20Parent4 .image20Parent5,
-    .image20Parent4 .collageCustomerExperienceCoIcon {
-        height: 480px !important;
-    }
-
-    .image20Parent4 .image20Parent5 {
-        top: 0;
-    }
-
-    .image20Parent4 .frameParent55 {
-        top: 5px;
-        height: 470px;
-        gap: 10px;
-    }
-
-    .image20Parent4 .frameParent56,
-    .image20Parent4 .frameParent57 {
-        height: 70px;
-    }
-
-    /* This decorative child belongs to the results section. */
-    .interactiveGamifiedLearninChild {
-        top: 2921px !important;
-    }
-
-    .frameParent62 {
-        top: 3499px !important;
-        height: 613px;
-    }
-
-    .frameParent73 {
-        top: 4160px !important;
-        height: 597px;
-    }
-
-    /* Keep exactly 48px between the last section and footer. */
-    .frameParent78 {
-        top: 4805px !important;
-        height: 459px !important;
-    }
-
-    .frameParent78 .frameParent79 {
-        top: 0 !important;
-        bottom: auto !important;
-    }
-}
-
-/* Mobile/tablet reflow keeps the responsive type scale while using
-   the same 48px section-to-section rhythm. */
-@media screen and (max-width: 767px) {
-    .interactiveGamifiedLearnin {
-        padding-bottom: 48px !important;
-    }
-
-    .frameParent8,
-    .frameParent17,
-    .frameParent40,
-    .image20Parent4,
-    .interactiveGamifiedLearninChild,
-    .frameParent73 {
-        margin-top: 48px !important;
-    }
-}
-
-
-/* =========================================================
-   GAMIFIED PAGE — SEGOE UI WITH INTER FALLBACK
-   Includes breadcrumbs and all page descendants.
-   ========================================================= */
-.interactiveGamifiedLearnin,
-.interactiveGamifiedLearnin * {
-    font-family: 'Segoe UI', 'Inter' !important;
-}
-
-/* =========================================================
-   BOOK A DEMO — REMOVE BLACK/NATIVE BUTTON RING ONLY
-   ========================================================= */
-.frameIcon,
-.bookADemo {
-    border: 0 !important;
-    outline: 0 !important;
-    -webkit-appearance: none !important;
-    appearance: none !important;
-}
-
-.frameIcon:focus,
-.frameIcon:focus-visible,
-.bookADemo:focus,
-.bookADemo:focus-visible {
-    border: 0 !important;
-    outline: 0 !important;
-}
-
-.frameIcon::-moz-focus-inner,
-.bookADemo::-moz-focus-inner {
-    border: 0 !important;
-}
-
-/* =========================================================
-   FINAL SECTION -> FOOTER: EXACTLY 48PX
-   CTA: 4160px + 597px = 4757px
-   Footer begins: 4757px + 48px = 4805px
-
-   The Footer component can be rendered outside this page wrapper.
-   In that structure the wrapper must stop at 4805px; reserving the
-   footer's additional 459px creates the large blank area seen below
-   the CTA. Only include that 459px when the footer is actually nested
-   inside this wrapper.
-   Keep this block as the final CSS in the file.
-   ========================================================= */
-@media screen and (min-width: 768px) {
-    .interactiveGamifiedLearnin {
-        height: 4805px !important;
-        min-height: 0 !important;
-    }
-
-    .interactiveGamifiedLearnin:has(.frameParent78) {
-        height: 5264px !important;
-    }
-
-    .interactiveGamifiedLearnin .frameParent78 {
-        display: block !important;
-        position: absolute !important;
-        top: 4805px !important;
-        bottom: auto !important;
-        height: 459px !important;
-        visibility: visible !important;
-        opacity: 1 !important;
-        z-index: 5 !important;
-    }
-
-    .interactiveGamifiedLearnin .frameParent78 .frameParent79 {
-        display: block !important;
-        top: 0 !important;
-        bottom: auto !important;
-        height: 459px !important;
-        visibility: visible !important;
-        opacity: 1 !important;
-    }
-}
-
-/* ==========================================================================
-   FINAL SECTION-TO-SECTION SPACING — EXACTLY 48PX
-   Only locks the vertical distance between the existing main sections.
-   No internal section layout, typography, cards, images, colors or widths
-   are changed.
-   ========================================================================== */
-@media screen and (min-width: 768px) {
-  /* Hero ends: 71 + 545 = 616 → next section starts at 664 */
   .interactiveGamifiedLearnin .frameParent8 {
     top: 664px !important;
+    left: calc(50% - 642.5px) !important;
+    width: 1285px !important;
+    height: 397px !important;
   }
 
-  /* 664 + 397 = 1061 → +48 */
   .interactiveGamifiedLearnin .frameParent17 {
     top: 1109px !important;
+    left: calc(50% - 644.5px) !important;
+    width: 1289px !important;
+    height: 925px !important;
   }
 
-  /* 1109 + 862 = 1971 → +48 */
   .interactiveGamifiedLearnin .frameParent40 {
-    top: 2019px !important;
+    top: 2082px !important;
+    left: calc(50% - 638px) !important;
+    width: 1276px !important;
+    height: 696px !important;
   }
 
-  /* 2019 + 656 = 2675 → +48 */
   .interactiveGamifiedLearnin .image20Parent4 {
-    top: 2723px !important;
+    top: 2826px !important;
+    left: calc(50% - 640px) !important;
+    width: 1280px !important;
+    height: 954px !important;
   }
 
-  /* 2723 + 728 = 3451 → +48 */
+  .interactiveGamifiedLearnin .interactiveGamifiedLearninChild {
+    top: 3024px !important;
+  }
+
   .interactiveGamifiedLearnin .frameParent62 {
-    top: 3499px !important;
+    top: 3828px !important;
+    left: calc(50% - 595px) !important;
+    width: 1190px !important;
   }
 
-  /* 3499 + 613 = 4112 → +48 */
   .interactiveGamifiedLearnin .frameParent73 {
-    top: 4160px !important;
+    top: 4314px !important;
+    left: calc(50% - 640px) !important;
+    width: 1280px !important;
+    height: 597px !important;
   }
 
-  /* 4160 + 597 = 4757 → +48 to footer */
   .interactiveGamifiedLearnin .frameParent78 {
-    top: 4805px !important;
+    top: 4959px !important;
+    left: calc(50% - 720px) !important;
+    width: 1440px !important;
+    height: 501px !important;
   }
 }
 
-/* Mobile keeps the same 48px rhythm in normal flow. */
-@media screen and (max-width: 767px) {
-  .interactiveGamifiedLearnin .frameParent8,
-  .interactiveGamifiedLearnin .frameParent17,
-  .interactiveGamifiedLearnin .frameParent40,
-  .interactiveGamifiedLearnin .image20Parent4,
-  .interactiveGamifiedLearnin .frameParent62,
+
+@media screen and (min-width: 768px) {
+  .interactiveGamifiedLearnin,
+  .interactiveGamifiedLearnin * {
+    font-family: "Segoe UI", "Inter";
+  }
+
+  /* Built for Scale contains:
+     50.2 badge + 50 gap + 260 heading area + 50 gap + 338 feature panel
+     = 748.2px actual visible height. */
+  .interactiveGamifiedLearnin .frameParent62 {
+    top: 3828px !important;
+    height: 748.2px !important;
+  }
+
+  /* 3828 + 748.2 + 48 = 4624.2 */
   .interactiveGamifiedLearnin .frameParent73 {
-    margin-top: 64px !important;
+    top: 4624.2px !important;
+    height: 597px !important;
+  }
+
+  /* 4624.2 + 597 + 48 = 5269.2 */
+  .interactiveGamifiedLearnin .frameParent78 {
+    top: 5269.2px !important;
+    height: 501px !important;
+  }
+
+  .interactiveGamifiedLearnin {
+    height: 5770.2px !important;
+    min-height: 5770.2px !important;
   }
 }
 
+
+@media screen and (min-width: 768px) {
+  /* Add clear space between the end of Interactive Learning
+     and the start of Explore & Engage / Interactive Activities. */
+  .interactiveGamifiedLearnin .frameParent17 {
+    top: 1157px !important;
+  }
+
+  /* Keep every following desktop section in the same design and
+     move it down by the same 48px so nothing overlaps. */
+  .interactiveGamifiedLearnin .frameParent40 {
+    top: 2130px !important;
+  }
+
+  .interactiveGamifiedLearnin .image20Parent4 {
+    top: 2874px !important;
+  }
+
+  .interactiveGamifiedLearnin .interactiveGamifiedLearninChild {
+    top: 3072px !important;
+  }
+
+  .interactiveGamifiedLearnin .frameParent62 {
+    top: 3876px !important;
+  }
+
+  .interactiveGamifiedLearnin .frameParent73 {
+    top: 4672.2px !important;
+  }
+
+  .interactiveGamifiedLearnin .frameParent78 {
+    top: 5317.2px !important;
+  }
+
+  .interactiveGamifiedLearnin {
+    height: 5818.2px !important;
+    min-height: 5818.2px !important;
+  }
+}
+
+
+@media screen and (min-width: 768px) {
+  /* Learn by Doing — desktop correction only */
+  .interactiveGamifiedLearnin .frameParent40 .beyondLearningInto {
+    width: 520px !important;
+    max-width: 520px !important;
+    font-size: 36px !important;
+    line-height: 1.2 !important;
+  }
+
+  .interactiveGamifiedLearnin .frameParent40 .frameParent43 {
+    width: 664px !important;
+    min-width: 664px !important;
+    height: 696px !important;
+    overflow: visible !important;
+  }
+
+  .interactiveGamifiedLearnin .frameParent40 .frameWrapper8,
+  .interactiveGamifiedLearnin .frameParent40 .frameWrapper9,
+  .interactiveGamifiedLearnin .frameParent40 .frameWrapper11,
+  .interactiveGamifiedLearnin .frameParent40 .frameWrapper13 {
+    width: 620px !important;
+    min-width: 620px !important;
+    overflow: visible !important;
+  }
+
+  .interactiveGamifiedLearnin .frameParent40 .frameWrapper10,
+  .interactiveGamifiedLearnin .frameParent40 .frameWrapper12,
+  .interactiveGamifiedLearnin .frameParent40 .frameWrapper14 {
+    left: 120px !important;
+    width: 430px !important;
+    max-width: 430px !important;
+    overflow: visible !important;
+    box-sizing: border-box !important;
+  }
+
+  .interactiveGamifiedLearnin .frameParent40 .simulations,
+  .interactiveGamifiedLearnin .frameParent40 .scenarioBasedLearning,
+  .interactiveGamifiedLearnin .frameParent40 .visualLearning,
+  .interactiveGamifiedLearnin .frameParent40 .interactiveAssessments {
+    width: 410px !important;
+    max-width: 410px !important;
+    white-space: nowrap !important;
+    overflow: visible !important;
+    font-size: 24px !important;
+    line-height: normal !important;
+  }
+}
+
+
+@media screen and (min-width: 768px) {
+  /* Learn by Doing — match reference PNG */
+  .interactiveGamifiedLearnin .frameParent40 {
+    top: 2130px !important;
+    left: 82px !important;
+    width: 1278px !important;
+    height: 696px !important;
+    display: flex !important;
+    align-items: center !important;
+    gap: 87px !important;
+    overflow: visible !important;
+  }
+
+  .interactiveGamifiedLearnin .frameParent40 .frameParent41 {
+    width: 527px !important;
+    min-width: 527px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 32px !important;
+  }
+
+  .interactiveGamifiedLearnin .frameParent40 .frameChild16 {
+    width: 224.8px !important;
+    height: 50.2px !important;
+  }
+
+  .interactiveGamifiedLearnin .frameParent40 .beyondLearningInto {
+    width: 533px !important;
+    max-width: 533px !important;
+    height: auto !important;
+    display: block !important;
+    font-size: 36px !important;
+    font-weight: 600 !important;
+    line-height: 1.15 !important;
+    letter-spacing: 0 !important;
+    word-spacing: 0 !important;
+    text-align: left !important;
+  }
+
+  .interactiveGamifiedLearnin .frameParent40 .perfectForUniversities {
+    width: 468px !important;
+    max-width: 468px !important;
+    height: auto !important;
+    font-size: 28px !important;
+    line-height: 40px !important;
+    text-align: left !important;
+  }
+
+  .interactiveGamifiedLearnin .frameParent40 .frameParent43 {
+    width: 664px !important;
+    min-width: 664px !important;
+    height: 696px !important;
+    position: relative !important;
+    flex-shrink: 0 !important;
+    overflow: visible !important;
+  }
+
+  .interactiveGamifiedLearnin .frameParent40 .frameWrapper8 {
+    position: absolute !important;
+    top: 0 !important;
+    right: 0 !important;
+    left: auto !important;
+    width: 539px !important;
+    height: 150px !important;
+    overflow: visible !important;
+  }
+
+  .interactiveGamifiedLearnin .frameParent40 .frameWrapper9 {
+    position: absolute !important;
+    top: 182px !important;
+    left: 0 !important;
+    right: auto !important;
+    width: 539px !important;
+    height: 150px !important;
+    overflow: visible !important;
+  }
+
+  .interactiveGamifiedLearnin .frameParent40 .frameWrapper11 {
+    position: absolute !important;
+    top: 364px !important;
+    right: 0 !important;
+    left: auto !important;
+    width: 539px !important;
+    height: 150px !important;
+    overflow: visible !important;
+  }
+
+  .interactiveGamifiedLearnin .frameParent40 .frameWrapper13 {
+    position: absolute !important;
+    top: 546px !important;
+    left: 0 !important;
+    right: auto !important;
+    width: 539px !important;
+    height: 150px !important;
+    overflow: visible !important;
+  }
+
+  .interactiveGamifiedLearnin .frameParent40 .frameParent44 {
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 539px !important;
+    height: 150px !important;
+    overflow: visible !important;
+  }
+
+  .interactiveGamifiedLearnin .frameParent40 .image20Parent {
+    position: absolute !important;
+    top: calc(50% - 59px) !important;
+    left: 63px !important;
+    width: 476px !important;
+    height: 118px !important;
+    border-radius: 16px !important;
+    overflow: hidden !important;
+  }
+
+  .interactiveGamifiedLearnin .frameParent40 .frameParent45,
+  .interactiveGamifiedLearnin .frameParent40 .image20Wrapper {
+    width: 150px !important;
+    height: 150px !important;
+  }
+
+  .interactiveGamifiedLearnin .frameParent40 .frameParent45 {
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+  }
+
+  .interactiveGamifiedLearnin .frameParent40 .simulationsParent {
+    top: calc(50% - 39px) !important;
+    left: 120px !important;
+    width: 336px !important;
+    gap: 14px !important;
+    align-items: flex-start !important;
+  }
+
+  .interactiveGamifiedLearnin .frameParent40 .frameWrapper10 {
+    position: absolute !important;
+    top: calc(50% - 39px) !important;
+    left: 120px !important;
+    width: 406px !important;
+    max-width: 406px !important;
+    display: flex !important;
+    align-items: center !important;
+    overflow: visible !important;
+  }
+
+  .interactiveGamifiedLearnin .frameParent40 .frameWrapper12 {
+    position: absolute !important;
+    top: calc(50% - 39px) !important;
+    left: 120px !important;
+    width: 406px !important;
+    max-width: 406px !important;
+    overflow: visible !important;
+  }
+
+  .interactiveGamifiedLearnin .frameParent40 .frameWrapper14 {
+    position: absolute !important;
+    top: calc(50% - 39px) !important;
+    left: 120px !important;
+    width: 406px !important;
+    max-width: 406px !important;
+    overflow: visible !important;
+  }
+
+  .interactiveGamifiedLearnin .frameParent40 .interactiveAssessmentsParent {
+    width: 286px !important;
+    gap: 14px !important;
+    align-items: flex-start !important;
+  }
+
+  .interactiveGamifiedLearnin .frameParent40 .simulations,
+  .interactiveGamifiedLearnin .frameParent40 .scenarioBasedLearning,
+  .interactiveGamifiedLearnin .frameParent40 .visualLearning,
+  .interactiveGamifiedLearnin .frameParent40 .interactiveAssessments {
+    width: auto !important;
+    max-width: none !important;
+    height: 37px !important;
+    font-size: 24px !important;
+    line-height: 36px !important;
+    white-space: nowrap !important;
+    overflow: visible !important;
+    text-align: left !important;
+  }
+
+  .interactiveGamifiedLearnin .frameParent40 .practiceRealWorldSkills,
+  .interactiveGamifiedLearnin .frameParent40 .linkConceptsStepByContainer {
+    width: 336px !important;
+    max-width: 336px !important;
+    height: auto !important;
+    font-size: 20px !important;
+    line-height: 28px !important;
+    white-space: normal !important;
+    overflow: visible !important;
+    text-align: left !important;
+  }
+
+  .interactiveGamifiedLearnin .frameParent40 .div,
+  .interactiveGamifiedLearnin .frameParent40 .div2,
+  .interactiveGamifiedLearnin .frameParent40 .div4 {
+    font-size: 80px !important;
+    line-height: 128px !important;
+  }
+}
+
+
+@media screen and (min-width: 768px) {
+  .interactiveGamifiedLearnin .frameParent40 .perfectForUniversities {
+    width: 500px !important;
+    max-width: 500px !important;
+  }
+}
+
+
+@media screen and (min-width: 768px) {
+  /* Measurable Impact — align the marked right-side labels consistently */
+  .interactiveGamifiedLearnin .image20Parent4 .frameParent55 {
+    right: 32px !important;
+    width: 360px !important;
+    align-items: flex-start !important;
+  }
+
+  .interactiveGamifiedLearnin .image20Parent4 .frameParent56,
+  .interactiveGamifiedLearnin .image20Parent4 .frameParent57,
+  .interactiveGamifiedLearnin .image20Parent4 .frameParent58,
+  .interactiveGamifiedLearnin .image20Parent4 .frameParent59,
+  .interactiveGamifiedLearnin .image20Parent4 .frameParent60,
+  .interactiveGamifiedLearnin .image20Parent4 .frameParent61 {
+    width: 360px !important;
+    min-width: 360px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+    text-align: left !important;
+  }
+
+  .interactiveGamifiedLearnin .image20Parent4 .frameParent56 > div:last-child,
+  .interactiveGamifiedLearnin .image20Parent4 .frameParent57 > div:last-child,
+  .interactiveGamifiedLearnin .image20Parent4 .frameParent58 > div:last-child,
+  .interactiveGamifiedLearnin .image20Parent4 .frameParent59 > div:last-child,
+  .interactiveGamifiedLearnin .image20Parent4 .frameParent60 > div:last-child,
+  .interactiveGamifiedLearnin .image20Parent4 .frameParent61 > div:last-child {
+    width: 245px !important;
+    min-width: 245px !important;
+    max-width: 245px !important;
+    text-align: left !important;
+  }
+}
+
+
+/* Full page font: Segoe UI first, Inter fallback only */
+.interactiveGamifiedLearnin,
+.interactiveGamifiedLearnin * {
+  font-family: "Segoe UI", "Inter";
+}
+
+@media screen and (min-width: 768px) {
+  /* Built for Scale — alignment correction only */
+  .interactiveGamifiedLearnin .frameParent62 {
+    left: 50% !important;
+    width: 1190px !important;
+    transform: translateX(-50%) !important;
+    align-items: center !important;
+  }
+
+  .interactiveGamifiedLearnin .frameParent62 .frameWrapper18 {
+    width: 1190px !important;
+    height: 338px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  .interactiveGamifiedLearnin .frameParent62 .frameParent64 {
+    left: 50% !important;
+    width: 1090px !important;
+    transform: translateX(-50%) !important;
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: flex-start !important;
+    gap: 50px !important;
+  }
+
+  .interactiveGamifiedLearnin .frameParent62 .frameParent65,
+  .interactiveGamifiedLearnin .frameParent62 .frameParent69 {
+    width: 520px !important;
+    min-width: 520px !important;
+    flex: 0 0 520px !important;
+  }
+
+  .interactiveGamifiedLearnin .frameParent62 .frameParent66,
+  .interactiveGamifiedLearnin .frameParent62 .frameParent67,
+  .interactiveGamifiedLearnin .frameParent62 .frameParent68,
+  .interactiveGamifiedLearnin .frameParent62 .frameParent70,
+  .interactiveGamifiedLearnin .frameParent62 .frameParent71,
+  .interactiveGamifiedLearnin .frameParent62 .frameParent72 {
+    width: 520px !important;
+    min-width: 520px !important;
+    display: flex !important;
+    align-items: center !important;
+  }
+
+  .interactiveGamifiedLearnin .frameParent62 .frameParent66 > div:last-child,
+  .interactiveGamifiedLearnin .frameParent62 .frameParent67 > div:last-child,
+  .interactiveGamifiedLearnin .frameParent62 .frameParent68 > div:last-child,
+  .interactiveGamifiedLearnin .frameParent62 .frameParent70 > div:last-child,
+  .interactiveGamifiedLearnin .frameParent62 .frameParent71 > div:last-child,
+  .interactiveGamifiedLearnin .frameParent62 .frameParent72 > div:last-child {
+    flex: 1 1 auto !important;
+    text-align: center !important;
+  }
+}
+
+
+@media screen and (min-width: 768px) {
+  /* Built for Scale — correct only the alignment INSIDE the feature box */
+  .interactiveGamifiedLearnin .frameParent62 .frameWrapper18 {
+    position: relative !important;
+    width: 1190px !important;
+    height: 338px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  .interactiveGamifiedLearnin .frameParent62 .frameParent64 {
+    position: absolute !important;
+    top: 32px !important;
+    left: 50% !important;
+    width: 1090px !important;
+    height: 274px !important;
+    transform: translateX(-50%) !important;
+    display: grid !important;
+    grid-template-columns: 520px 520px !important;
+    column-gap: 50px !important;
+    align-items: start !important;
+  }
+
+  .interactiveGamifiedLearnin .frameParent62 .frameParent65,
+  .interactiveGamifiedLearnin .frameParent62 .frameParent69 {
+    width: 520px !important;
+    height: 274px !important;
+    display: grid !important;
+    grid-template-rows: repeat(3, 70px) !important;
+    row-gap: 21px !important;
+    align-items: center !important;
+  }
+
+  .interactiveGamifiedLearnin .frameParent62 .frameParent66,
+  .interactiveGamifiedLearnin .frameParent62 .frameParent67,
+  .interactiveGamifiedLearnin .frameParent62 .frameParent68,
+  .interactiveGamifiedLearnin .frameParent62 .frameParent70,
+  .interactiveGamifiedLearnin .frameParent62 .frameParent71,
+  .interactiveGamifiedLearnin .frameParent62 .frameParent72 {
+    width: 520px !important;
+    height: 70px !important;
+    display: grid !important;
+    grid-template-columns: 70px 1fr !important;
+    column-gap: 28px !important;
+    align-items: center !important;
+    justify-content: initial !important;
+  }
+
+  .interactiveGamifiedLearnin .frameParent62 .frameParent66 > *:first-child,
+  .interactiveGamifiedLearnin .frameParent62 .frameParent67 > *:first-child,
+  .interactiveGamifiedLearnin .frameParent62 .frameParent68 > *:first-child,
+  .interactiveGamifiedLearnin .frameParent62 .frameParent70 > *:first-child,
+  .interactiveGamifiedLearnin .frameParent62 .frameParent71 > *:first-child,
+  .interactiveGamifiedLearnin .frameParent62 .frameParent72 > *:first-child {
+    width: 70px !important;
+    height: 70px !important;
+    margin: 0 !important;
+    justify-self: center !important;
+    align-self: center !important;
+  }
+
+  .interactiveGamifiedLearnin .frameParent62 .frameParent66 > *:last-child,
+  .interactiveGamifiedLearnin .frameParent62 .frameParent67 > *:last-child,
+  .interactiveGamifiedLearnin .frameParent62 .frameParent68 > *:last-child,
+  .interactiveGamifiedLearnin .frameParent62 .frameParent70 > *:last-child,
+  .interactiveGamifiedLearnin .frameParent62 .frameParent71 > *:last-child,
+  .interactiveGamifiedLearnin .frameParent62 .frameParent72 > *:last-child {
+    width: 390px !important;
+    max-width: 390px !important;
+    margin: 0 !important;
+    text-align: center !important;
+    justify-self: start !important;
+    align-self: center !important;
+  }
+}
+
+
+@media screen and (min-width: 768px) {
+  /* Built for Scale — match supplied PNG:
+     equal two-column layout, with every label kept on one line. */
+  .interactiveGamifiedLearnin .frameParent62 .frameWrapper18 {
+    width: 1190px !important;
+    height: 338px !important;
+  }
+
+  .interactiveGamifiedLearnin .frameParent62 .frameParent64 {
+    top: 32px !important;
+    left: 50% !important;
+    width: 1090px !important;
+    height: 274px !important;
+    transform: translateX(-50%) !important;
+    display: grid !important;
+    grid-template-columns: 520px 520px !important;
+    column-gap: 50px !important;
+  }
+
+  .interactiveGamifiedLearnin .frameParent62 .frameParent65,
+  .interactiveGamifiedLearnin .frameParent62 .frameParent69 {
+    width: 520px !important;
+    height: 274px !important;
+    display: grid !important;
+    grid-template-rows: repeat(3, 70px) !important;
+    row-gap: 21px !important;
+  }
+
+  .interactiveGamifiedLearnin .frameParent62 .frameParent66,
+  .interactiveGamifiedLearnin .frameParent62 .frameParent67,
+  .interactiveGamifiedLearnin .frameParent62 .frameParent68,
+  .interactiveGamifiedLearnin .frameParent62 .frameParent70,
+  .interactiveGamifiedLearnin .frameParent62 .frameParent71,
+  .interactiveGamifiedLearnin .frameParent62 .frameParent72 {
+    width: 520px !important;
+    height: 70px !important;
+    display: grid !important;
+    grid-template-columns: 70px 1fr !important;
+    column-gap: 28px !important;
+    align-items: center !important;
+  }
+
+  .interactiveGamifiedLearnin .frameParent62 .frameParent66 > *:last-child,
+  .interactiveGamifiedLearnin .frameParent62 .frameParent67 > *:last-child,
+  .interactiveGamifiedLearnin .frameParent62 .frameParent68 > *:last-child,
+  .interactiveGamifiedLearnin .frameParent62 .frameParent70 > *:last-child,
+  .interactiveGamifiedLearnin .frameParent62 .frameParent71 > *:last-child,
+  .interactiveGamifiedLearnin .frameParent62 .frameParent72 > *:last-child {
+    width: 422px !important;
+    max-width: 422px !important;
+    white-space: nowrap !important;
+    text-align: left !important;
+    justify-self: start !important;
+    margin: 0 !important;
+  }
+}
+
+
+/* BUILT FOR SCALE — ACTUAL DOM ROW FIX */
+@media screen and (min-width: 768px) {
+  .interactiveGamifiedLearnin,
+  .interactiveGamifiedLearnin * {
+    font-family: "Segoe UI", "Inter";
+  }
+
+  .interactiveGamifiedLearnin .frameParent62 .frameParent64 {
+    width: 1090px !important;
+    left: calc(50% - 545px) !important;
+    transform: none !important;
+    display: flex !important;
+    align-items: flex-start !important;
+    justify-content: space-between !important;
+    gap: 50px !important;
+  }
+
+  /* Both actual feature columns */
+  .interactiveGamifiedLearnin .frameParent62 .frameParent64 > div {
+    width: 520px !important;
+    min-width: 520px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 32px !important;
+  }
+
+  /* Target the REAL row wrappers by the text they contain */
+  .interactiveGamifiedLearnin .frameParent62 .frameParent64 div:has(> .createInteractiveCourses),
+  .interactiveGamifiedLearnin .frameParent62 .frameParent64 div:has(> .buildEngagingActivities),
+  .interactiveGamifiedLearnin .frameParent62 .frameParent64 div:has(> .deliverSimulationsAnd),
+  .interactiveGamifiedLearnin .frameParent62 .frameParent64 div:has(> .reinforceLearningWith),
+  .interactiveGamifiedLearnin .frameParent62 .frameParent64 div:has(> .trackLearnerPerformance),
+  .interactiveGamifiedLearnin .frameParent62 .frameParent64 div:has(> .supportDigitalAnd) {
+    width: 520px !important;
+    min-width: 520px !important;
+    height: 70px !important;
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+    gap: 28px !important;
+    margin: 0 !important;
+    text-align: left !important;
+  }
+
+  /* Match PNG: every label stays on one clean line */
+  .interactiveGamifiedLearnin .frameParent62 .createInteractiveCourses,
+  .interactiveGamifiedLearnin .frameParent62 .buildEngagingActivities,
+  .interactiveGamifiedLearnin .frameParent62 .deliverSimulationsAnd,
+  .interactiveGamifiedLearnin .frameParent62 .reinforceLearningWith,
+  .interactiveGamifiedLearnin .frameParent62 .trackLearnerPerformance,
+  .interactiveGamifiedLearnin .frameParent62 .supportDigitalAnd {
+    width: auto !important;
+    max-width: none !important;
+    height: 37px !important;
+    display: block !important;
+    flex: 0 0 auto !important;
+    margin: 0 !important;
+    white-space: nowrap !important;
+    text-align: left !important;
+    line-height: 36px !important;
+  }
+}
+
+
+/* =========================================================
+   LEARNING JOURNEY — ACTUAL CLASS FIX
+   Exact 48px section rhythm + PNG layout
+   ========================================================= */
+@media screen and (min-width: 768px) {
+
+  .interactiveGamifiedLearnin,
+  .interactiveGamifiedLearnin * {
+    font-family: "Segoe UI", "Inter";
+  }
+
+  /* Restore the original 744px section-top rhythm:
+     Built for Scale top = 3876px
+     Learning Journey top = 4620px
+     This removes the extra blank space added by the old override. */
+  .interactiveGamifiedLearnin .frameParent73 {
+    top: 4620px !important;
+    left: calc(50% - 640px) !important;
+    width: 1280px !important;
+    height: 597px !important;
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    gap: 0 !important;
+    overflow: visible !important;
+  }
+
+  /* LEFT SIDE — use the real classes from the file */
+  .interactiveGamifiedLearnin .frameParent73 .frameParent74 {
+    width: 573px !important;
+    min-width: 573px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    justify-content: center !important;
+    gap: 48px !important;
+    flex-shrink: 0 !important;
+  }
+
+  .interactiveGamifiedLearnin .frameParent73 .masteryPill {
+    width: 320px !important;
+    min-width: 320px !important;
+    height: 50px !important;
+    margin: 0 !important;
+    padding: 0 20px !important;
+    white-space: nowrap !important;
+  }
+
+  /* PNG: heading is two lines */
+  .interactiveGamifiedLearnin .frameParent73 .beyondLearningInto {
+    width: 455px !important;
+    max-width: 455px !important;
+    height: auto !important;
+    margin: 0 !important;
+    font-size: 36px !important;
+    line-height: 1.2 !important;
+    font-weight: 600 !important;
+    text-align: left !important;
+    white-space: normal !important;
+  }
+
+  /* PNG: description is two lines */
+  .interactiveGamifiedLearnin .frameParent73 .perfectForUniversities {
+    width: 455px !important;
+    max-width: 455px !important;
+    height: auto !important;
+    margin: 0 !important;
+    font-size: 24px !important;
+    line-height: 40px !important;
+    font-weight: 400 !important;
+    text-align: left !important;
+    white-space: normal !important;
+  }
+
+  .interactiveGamifiedLearnin .frameParent73 .frameParent77 {
+    width: auto !important;
+    height: 65px !important;
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+    gap: 32px !important;
+    margin: 0 !important;
+  }
+
+  .interactiveGamifiedLearnin .frameParent73 .frameWrapper19 {
+    width: 215px !important;
+    height: 65px !important;
+    flex-shrink: 0 !important;
+  }
+
+  .interactiveGamifiedLearnin .frameParent73 .learnMorePill {
+    width: 208px !important;
+    height: 65px !important;
+    flex-shrink: 0 !important;
+  }
+
+  /* RIGHT SIDE — target the actual custom image frame, not frameChild39 */
+  .interactiveGamifiedLearnin .frameParent73 .masteryImageFrame {
+    position: relative !important;
+    width: 708px !important;
+    min-width: 708px !important;
+    height: 597px !important;
+    margin: 0 !important;
+    transform: none !important;
+    flex-shrink: 0 !important;
+    overflow: hidden !important;
+  }
+
+  .interactiveGamifiedLearnin .frameParent73 .masteryImage {
+    left: 28px !important;
+    top: 25px !important;
+    width: 652px !important;
+    height: 549px !important;
+    object-fit: cover !important;
+    object-position: center center !important;
+  }
+
+  /* EXACTLY 48px after the 597px Learning Journey section */
+  .interactiveGamifiedLearnin .frameParent78 {
+    top: 5265px !important; /* 4620 + 597 + 48 */
+    left: calc(50% - 720px) !important;
+    width: 1440px !important;
+    height: 501px !important;
+  }
+
+  .interactiveGamifiedLearnin {
+    height: 5766px !important;
+    min-height: 5766px !important;
+  }
+}
+
+
+/* =========================================================
+   LEARNING JOURNEY -> FOOTER
+   Remove empty section height; keep ONLY 48px visible gap
+   ========================================================= */
+@media screen and (min-width: 768px) {
+
+  .interactiveGamifiedLearnin,
+  .interactiveGamifiedLearnin * {
+    font-family: "Segoe UI", "Inter";
+  }
+
+  /* Keep Learning Journey itself unchanged, but make its section
+     boundary end with the visible composition instead of carrying
+     a large invisible empty area underneath. */
+  .interactiveGamifiedLearnin .frameParent73 {
+    height: 597px !important;
+    margin-bottom: 0 !important;
+  }
+
+  /* Footer must follow the actual bottom of Learning Journey by 48px.
+     Explicitly remove old transforms/margins that were creating the
+     large blank area seen in the screenshot. */
+  .interactiveGamifiedLearnin .frameParent78 {
+    top: 5265px !important;
+    margin-top: 0 !important;
+    transform: none !important;
+  }
+
+  .interactiveGamifiedLearnin .frameParent78 .frameParent79 {
+    top: 0 !important;
+    bottom: auto !important;
+    margin-top: 0 !important;
+    transform: none !important;
+  }
+
+  /* Pull the footer's visible content to the top of its own section;
+     this removes the extra internal blank strip above the footer. */
+  .interactiveGamifiedLearnin .frameParent78 > * {
+    margin-top: 0 !important;
+  }
+
+  .interactiveGamifiedLearnin {
+    height: 5766px !important;
+    min-height: 5766px !important;
+  }
+}
+
+
+/* =========================================================
+   FOOTER — VISIBLE 48PX GAP CORRECTION
+   Based on the actual rendered desktop view.
+   ========================================================= */
+@media screen and (min-width: 768px) {
+
+  .interactiveGamifiedLearnin,
+  .interactiveGamifiedLearnin * {
+    font-family: "Segoe UI", "Inter";
+  }
+
+  /* The previous top value still left ~491px of VISIBLE blank space.
+     Pull only the footer upward by 443px:
+     491px - 443px = 48px visible gap. */
+  .interactiveGamifiedLearnin .frameParent78 {
+    top: 4822px !important;
+    margin: 0 !important;
+    transform: none !important;
+  }
+
+  /* Keep the footer panel at the top of its wrapper. */
+  .interactiveGamifiedLearnin .frameParent78 .frameParent79 {
+    top: 0 !important;
+    bottom: auto !important;
+    margin: 0 !important;
+    transform: none !important;
+  }
+
+  /* Reduce the page height by the same amount so no empty tail remains. */
+  .interactiveGamifiedLearnin {
+    height: 5323px !important;
+    min-height: 5323px !important;
+  }
+}
+
+
+/* FONT FAMILY — Segoe UI primary, Inter fallback only */
+.interactiveGamifiedLearnin,
+.interactiveGamifiedLearnin * {
+  font-family: "Segoe UI", "Inter" !important;
+}
+
+
+/* MOBILE — Interactive & Gamified Learning hero pill correction only */
+@media screen and (max-width: 767px) {
+  .interactiveGamifiedLearnin .frameChild {
+    width: auto !important;
+    min-width: 0 !important;
+    max-width: calc(100% - 32px) !important;
+    height: auto !important;
+    min-height: 44px !important;
+    padding: 8px 14px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    box-sizing: border-box !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+
+  .interactiveGamifiedLearnin .interactiveGamifiedLearning {
+    width: auto !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    font-size: 16px !important;
+    line-height: 24px !important;
+    white-space: nowrap !important;
+    text-align: center !important;
+  }
+}
+
+
+/* =========================================================
+   TABLET + 1024 RESPONSIVENESS — FINAL OVERRIDE
+   Keeps the exact desktop design and scales it fluidly.
+   Applies only from 768px to 1099px.
+   ========================================================= */
+@media screen and (min-width: 768px) and (max-width: 1099px) {
+  html,
+  body {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow-x: hidden !important;
+    background-color: #dfe6e9 !important;
+  }
+
+  .interactiveGamifiedLearnin,
+  .interactiveGamifiedLearnin * {
+    font-family: "Segoe UI", "Inter" !important;
+  }
+
+  .interactiveGamifiedLearnin {
+    width: 1440px !important;
+    min-width: 1440px !important;
+    max-width: 1440px !important;
+
+    margin: 0 !important;
+    position: relative !important;
+    left: 50% !important;
+
+    /* Continuous scaling while dragging between tablet and 1024 */
+    zoom: calc(100vw / 1440px) !important;
+
+    /* Center the original 1440px design canvas */
+    transform: translateX(-50%) !important;
+    transform-origin: top center !important;
+
+    overflow: hidden !important;
+    box-sizing: border-box !important;
+  }
+
+  /* Remove all old stepped tablet widths/offsets */
+  .interactiveGamifiedLearnin,
+  .interactiveGamifiedLearnin > * {
+    max-width: none;
+  }
+
+  /* Keep the corrected desktop section geometry while scaling */
+  .interactiveGamifiedLearnin .frameParent2 {
+    top: 71px !important;
+    left: calc(50% - 640px) !important;
+    width: 1280px !important;
+    height: 545px !important;
+  }
+
+  .interactiveGamifiedLearnin .frameParent8 {
+    top: 664px !important;
+    left: calc(50% - 642.5px) !important;
+    width: 1285px !important;
+    height: 397px !important;
+  }
+
+  .interactiveGamifiedLearnin .frameParent17 {
+    top: 1157px !important;
+    left: calc(50% - 644.5px) !important;
+    width: 1289px !important;
+    height: 925px !important;
+  }
+
+  .interactiveGamifiedLearnin .frameParent40 {
+    top: 2130px !important;
+    left: 82px !important;
+    width: 1278px !important;
+    height: 696px !important;
+  }
+
+  .interactiveGamifiedLearnin .image20Parent4 {
+    top: 2874px !important;
+    left: calc(50% - 640px) !important;
+    width: 1280px !important;
+    height: 954px !important;
+  }
+
+  .interactiveGamifiedLearnin .interactiveGamifiedLearninChild {
+    top: 3072px !important;
+  }
+
+  .interactiveGamifiedLearnin .frameParent62 {
+    top: 3876px !important;
+    left: 50% !important;
+    width: 1190px !important;
+    transform: translateX(-50%) !important;
+  }
+
+  .interactiveGamifiedLearnin .frameParent73 {
+    top: 4620px !important;
+    left: calc(50% - 640px) !important;
+    width: 1280px !important;
+    height: 597px !important;
+  }
+
+  .interactiveGamifiedLearnin .frameParent78 {
+    top: 5265px !important;
+    left: calc(50% - 720px) !important;
+    width: 1440px !important;
+    height: 501px !important;
+  }
+
+  .interactiveGamifiedLearnin {
+    height: 5766px !important;
+    min-height: 5766px !important;
+  }
+
+  /* Prevent tablet text/card compression from old media queries */
+  .interactiveGamifiedLearnin .frameParent40 .beyondLearningInto {
+    width: 533px !important;
+    max-width: 533px !important;
+    font-size: 36px !important;
+    line-height: 1.15 !important;
+  }
+
+  .interactiveGamifiedLearnin .frameParent40 .perfectForUniversities {
+    width: 500px !important;
+    max-width: 500px !important;
+    font-size: 28px !important;
+    line-height: 40px !important;
+  }
+
+  .interactiveGamifiedLearnin .frameParent40 .frameParent43 {
+    width: 664px !important;
+    min-width: 664px !important;
+    height: 696px !important;
+  }
+
+  .interactiveGamifiedLearnin .frameParent62 .frameWrapper18 {
+    width: 1190px !important;
+    height: 338px !important;
+  }
+
+  .interactiveGamifiedLearnin .frameParent73 .frameParent74 {
+    width: 573px !important;
+    min-width: 573px !important;
+  }
+
+  .interactiveGamifiedLearnin .frameParent73 .masteryImageFrame {
+    width: 708px !important;
+    min-width: 708px !important;
+    height: 597px !important;
+  }
+}
+
+/* Exact 1024px safeguard */
+@media screen and (width: 1024px) {
+  .interactiveGamifiedLearnin {
+    zoom: calc(1024 / 1440) !important;
+  }
+}
+
+
+/* =========================================================
+   TABLET / 1024 — ACTUAL FINAL FIX
+   All corrected desktop section rules above now also run at 768+.
+   This block only scales the corrected 1440px canvas to tablet width.
+   ========================================================= */
+@media screen and (min-width: 768px) and (max-width: 1099px) {
+  html,
+  body {
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow-x: hidden !important;
+    background: #dfe6e9 !important;
+  }
+
+  .interactiveGamifiedLearnin,
+  .interactiveGamifiedLearnin * {
+    font-family: "Segoe UI", "Inter" !important;
+  }
+
+  .interactiveGamifiedLearnin {
+    position: relative !important;
+    left: auto !important;
+    right: auto !important;
+    transform: none !important;
+    transform-origin: top left !important;
+    width: 1440px !important;
+    min-width: 1440px !important;
+    max-width: 1440px !important;
+    margin: 0 !important;
+    overflow: hidden !important;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 839px) {
+  .interactiveGamifiedLearnin { zoom: 0.5333333333 !important; }
+}
+
+@media screen and (min-width: 840px) and (max-width: 899px) {
+  .interactiveGamifiedLearnin { zoom: 0.60 !important; }
+}
+
+@media screen and (min-width: 900px) and (max-width: 959px) {
+  .interactiveGamifiedLearnin { zoom: 0.64 !important; }
+}
+
+@media screen and (min-width: 960px) and (max-width: 1023px) {
+  .interactiveGamifiedLearnin { zoom: 0.68 !important; }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1099px) {
+  .interactiveGamifiedLearnin { zoom: 0.7111111111 !important; }
+}

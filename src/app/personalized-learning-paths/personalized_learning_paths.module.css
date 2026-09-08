@@ -2207,3 +2207,145 @@
   }
 }
 
+
+/* ==========================================================================
+   FINAL REQUESTED FIXES
+   1) Segoe UI -> Inter only
+   2) More space after breadcrumb + uniform 2x2 personalization cards
+   3) Compact desktop "How It Works" section so both rows fit on one screen
+   Images and existing image placement are intentionally untouched.
+   ========================================================================== */
+
+/* Keep the entire PLP page on Segoe UI with Inter as the ONLY fallback. */
+.plp-page,
+.plp-page *,
+.plp-page *::before,
+.plp-page *::after {
+  font-family: "Segoe UI", "Inter" !important;
+}
+
+/* ---------- Desktop / laptop fixes ---------- */
+@media screen and (min-width: 1024px) {
+
+  /* Give the breadcrumb its own breathing room before the hero content. */
+  .plp-page .plp-breadcrumb {
+    margin-bottom: 24px !important;
+  }
+
+  /* Keep the hero spacing predictable after the breadcrumb gap. */
+  .plp-page .plp-hero {
+    padding-top: 8px !important;
+  }
+
+  /* ----------------------------------------------------------
+     Intelligent Personalization
+     Four cards in a clean, uniform 2 x 2 layout.
+     ---------------------------------------------------------- */
+  .plp-page .plp-personalization-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    width: 100% !important;
+    max-width: 920px !important;
+    margin: 0 auto !important;
+    column-gap: 24px !important;
+    row-gap: 20px !important;
+  }
+
+  .plp-page .plp-personalization-card {
+    min-height: 154px !important;
+    padding: 18px 24px !important;
+    box-sizing: border-box !important;
+
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    text-align: center !important;
+  }
+
+  /* Reserve equal title/description space so every card lines up uniformly
+     whether Segoe UI or Inter is active. */
+  .plp-page .plp-personalization-title {
+    width: 100% !important;
+    max-width: none !important;
+    min-height: 60px !important;
+    margin: 0 !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    text-align: center !important;
+  }
+
+  .plp-page .plp-personalization-desc {
+    width: 100% !important;
+    max-width: 300px !important;
+    min-height: 60px !important;
+    margin: 4px auto 0 !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    text-align: center !important;
+  }
+
+  /* ----------------------------------------------------------
+     How It Works
+     Reduce only vertical whitespace/card height.
+     No colour, content, or image changes.
+     ---------------------------------------------------------- */
+  .plp-page .plp-how {
+    gap: 10px !important;
+    padding-top: 14px !important;
+    padding-bottom: 18px !important;
+  }
+
+  .plp-page .plp-how-grid {
+    margin-top: 4px !important;
+    column-gap: 40px !important;
+    row-gap: 16px !important;
+  }
+
+  /* Closed cards are shorter so all six fit in one desktop viewport.
+     Open/expanded cards are allowed to grow naturally. */
+  .plp-page .plp-how-card:not(.plp-how-card-open) {
+    height: 154px !important;
+    min-height: 154px !important;
+    padding: 14px 16px !important;
+    box-sizing: border-box !important;
+  }
+
+  .plp-page .plp-how-card-open {
+    height: auto !important;
+    min-height: 154px !important;
+    padding: 14px 16px !important;
+    box-sizing: border-box !important;
+  }
+
+  .plp-page .plp-how-card-trigger {
+    height: 100% !important;
+    min-height: 0 !important;
+    justify-content: center !important;
+    gap: 8px !important;
+  }
+
+  .plp-page .plp-how-icon-title {
+    gap: 6px !important;
+  }
+
+  .plp-page .plp-how-icon-circle {
+    width: 48px !important;
+    height: 48px !important;
+  }
+
+  .plp-page .plp-how-card-open .plp-how-panel-wrap {
+    margin-top: 10px !important;
+  }
+
+  .plp-page .plp-how-panel-inner {
+    padding: 14px 10px !important;
+  }
+}
+

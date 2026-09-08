@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
 .analyticsReporting {
   width: 100%;
   height: 6801px;
@@ -7,7 +9,7 @@
   text-align: center;
   font-size: 48px;
   color: #31344b;
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", "Inter";
   max-width: 1440px;
   margin: 0 auto;
 }
@@ -23,7 +25,7 @@
   overflow: hidden;
   text-align: left;
   font-size: 16px;
-  font-family: Inter;
+  font-family: "Segoe UI", "Inter";
 }
 .frameChild {
   position: absolute;
@@ -105,7 +107,7 @@
   box-sizing: border-box;
   text-align: center;
   color: #2d4cc8;
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", "Inter";
 }
 .signInHelp {
   width: 97px;
@@ -136,7 +138,7 @@
   text-align: left;
   font-size: 16px;
   color: #2f3547;
-  font-family: Inter;
+  font-family: "Segoe UI", "Inter";
 }
 .featuresWrapper {
   display: flex;
@@ -1919,7 +1921,7 @@
   justify-content: center;
   box-sizing: border-box;
 
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", "Inter";
   font-size: 24px;
   font-weight: 600;
   letter-spacing: 0.03em;
@@ -1938,7 +1940,7 @@
   align-items: center;
   justify-content: center;
   box-sizing: border-box;
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", "Inter";
   font-size: 24px;
   font-weight: 600;
   line-height: 60.2px;
@@ -1971,7 +1973,7 @@
   box-sizing: border-box;
   flex-shrink: 0;
 
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", "Inter";
   font-size: 24px;
   font-weight: 600;
   line-height: 1;
@@ -2082,7 +2084,7 @@
   box-sizing: border-box;
   flex-shrink: 0;
 
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", "Inter";
   font-size: 24px;
   font-weight: 600;
   line-height: 1;
@@ -2211,7 +2213,7 @@
   box-sizing: border-box;
   flex-shrink: 0;
 
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", "Inter";
   font-size: 24px;
   font-weight: 600;
   line-height: 1;
@@ -2318,7 +2320,7 @@
   height: 120px;
   padding: 0 24px;
   box-sizing: border-box;
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", "Inter";
   font-size: 24px;
   font-weight: 600;
   line-height: 32px;
@@ -2435,7 +2437,7 @@
   box-sizing: border-box;
   flex-shrink: 0;
 
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", "Inter";
   font-size: 24px;
   font-weight: 600;
   line-height: 1;
@@ -2451,7 +2453,7 @@
   height: auto;
   position: relative;
   margin: 0;
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", "Inter";
   font-size: 36px;
   font-weight: 700;
   line-height: 60px;
@@ -2466,7 +2468,7 @@
   width: 468px;
   position: relative;
   margin: 0;
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", "Inter";
   font-size: 24px;
   font-weight: 400;
   line-height: 40px;
@@ -2592,7 +2594,7 @@
   flex: 1;
   position: relative;
   margin: 0;
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", "Inter";
   font-size: 20px;
   font-weight: 600;
   line-height: 28px;
@@ -2656,7 +2658,7 @@
   box-sizing: border-box;
   flex-shrink: 0;
 
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", "Inter";
   font-size: 20px;
   font-weight: 600;
   line-height: 1;
@@ -2711,7 +2713,7 @@
   align-items: center;
   justify-content: center;
   box-sizing: border-box;
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", "Inter";
   font-size: 22px;
   font-weight: 600;
   line-height: 1;
@@ -3048,7 +3050,7 @@ h2.makeEveryLearning {
 .learnerPerformance,
 .builtForEvery,
 .smarterAnalyticsBetterContainer {
-  font-family: "Segoe UI" !important;
+  font-family: "Segoe UI", "Inter";
   font-weight: 700 !important;
 }
 
@@ -6471,7 +6473,7 @@ h2.makeEveryLearning {
   display: flex !important;
   align-items: center !important;
   justify-content: center !important;
-  font-family: "Segoe UI" !important;
+  font-family: "Segoe UI", "Inter";
   font-size: 1.875cqw !important;
   line-height: 1 !important;
   font-weight: 600 !important;
@@ -6486,7 +6488,7 @@ h2.makeEveryLearning {
   height: auto !important;
   margin: 0 !important;
   padding: 0 !important;
-  font-family: "Segoe UI" !important;
+  font-family: "Segoe UI", "Inter";
   font-size: 36px;
   line-height: 1.28 !important;
   font-weight: 700 !important;
@@ -6503,7 +6505,7 @@ h2.makeEveryLearning {
   height: auto !important;
   margin: 0 !important;
   padding: 0 !important;
-  font-family: "Segoe UI" !important;
+  font-family: "Segoe UI", "Inter";
   font-size: 24px;
   line-height: 1.42 !important;
   font-weight: 400 !important;
@@ -6586,7 +6588,7 @@ h2.makeEveryLearning {
   margin: 0 !important;
   padding: 0 !important;
   flex: 1 1 auto !important;
-  font-family: "Segoe UI" !important;
+  font-family: "Segoe UI", "Inter";
   font-size: 1.875cqw !important;
   line-height: 1.25 !important;
   font-weight: 600 !important;
@@ -6730,7 +6732,7 @@ h2.makeEveryLearning {
     top: 34px !important;
     margin: 0 !important;
     padding: 0 !important;
-    font-family: "Segoe UI" !important;
+    font-family: "Segoe UI", "Inter";
     font-style: normal !important;
     font-weight: 600 !important;
     font-size: 21px !important;
@@ -7407,7 +7409,7 @@ h2.makeEveryLearning {
     margin: 0 auto !important;
     padding: 0 !important;
 
-    font-family: "Segoe UI" !important;
+    font-family: "Segoe UI", "Inter";
     font-style: normal !important;
     font-weight: 400 !important;
     font-size: 24px !important;
@@ -7525,7 +7527,7 @@ h2.makeEveryLearning {
     margin: 0 !important;
     padding: 0 !important;
 
-    font-family: "Segoe UI" !important;
+    font-family: "Segoe UI", "Inter";
     font-style: normal !important;
     font-weight: 600 !important;
     font-size: 18px !important;
@@ -7836,7 +7838,7 @@ h2.makeEveryLearning {
     align-items: center !important;
     justify-content: center !important;
 
-    font-family: "Segoe UI" !important;
+    font-family: "Segoe UI", "Inter";
     font-style: normal !important;
     font-size: 20px !important;
     font-weight: 600 !important;
@@ -7908,7 +7910,7 @@ h2.makeEveryLearning {
     margin: 0 !important;
     padding: 0 !important;
 
-    font-family: "Segoe UI" !important;
+    font-family: "Segoe UI", "Inter";
     font-style: normal !important;
     font-size: 36px !important;
     font-weight: 700 !important;
@@ -7930,7 +7932,7 @@ h2.makeEveryLearning {
     margin: 0 auto !important;
     padding: 0 !important;
 
-    font-family: "Segoe UI" !important;
+    font-family: "Segoe UI", "Inter";
     font-style: normal !important;
     font-size: 22px !important;
     font-weight: 400 !important;
@@ -7967,7 +7969,7 @@ h2.makeEveryLearning {
     margin: 0 !important;
     padding: 0 !important;
 
-    font-family: "Segoe UI" !important;
+    font-family: "Segoe UI", "Inter";
     font-style: normal !important;
     font-size: 27px !important;
     font-weight: 700 !important;
@@ -8016,7 +8018,7 @@ h2.makeEveryLearning {
     align-items: center !important;
     justify-content: center !important;
 
-    font-family: "Segoe UI" !important;
+    font-family: "Segoe UI", "Inter";
     font-style: normal !important;
     font-size: 18px !important;
     font-weight: 600 !important;
@@ -8250,7 +8252,7 @@ h2.makeEveryLearning {
     align-items: center !important;
     justify-content: center !important;
 
-    font-family: "Segoe UI" !important;
+    font-family: "Segoe UI", "Inter";
     font-size: 20px !important;
     font-weight: 600 !important;
     line-height: 1 !important;
@@ -8328,7 +8330,7 @@ h2.makeEveryLearning {
 
     position: relative !important;
 
-    font-family: "Segoe UI" !important;
+    font-family: "Segoe UI", "Inter";
     font-size: 48px !important;
     font-weight: 700 !important;
     line-height: 60px !important;
@@ -8354,7 +8356,7 @@ h2.makeEveryLearning {
 
     position: relative !important;
 
-    font-family: "Segoe UI" !important;
+    font-family: "Segoe UI", "Inter";
     font-size: 28px !important;
     font-weight: 400 !important;
     line-height: 40px !important;
@@ -8423,7 +8425,7 @@ h2.makeEveryLearning {
     margin: 0 !important;
     padding: 0 !important;
 
-    font-family: "Segoe UI" !important;
+    font-family: "Segoe UI", "Inter";
     font-size: 36px !important;
     font-weight: 700 !important;
     line-height: 48px !important;
@@ -8473,7 +8475,7 @@ h2.makeEveryLearning {
     align-items: center !important;
     justify-content: center !important;
 
-    font-family: "Segoe UI" !important;
+    font-family: "Segoe UI", "Inter";
     font-size: 24px !important;
     font-weight: 600 !important;
     line-height: 1 !important;
@@ -9131,7 +9133,7 @@ h2.makeEveryLearning {
 
     gap: 5px !important;
 
-    font-family: "Segoe UI" !important;
+    font-family: "Segoe UI", "Inter";
     font-size: 12px !important;
     line-height: 18px !important;
 
@@ -9549,7 +9551,7 @@ h2.makeEveryLearning {
 
     gap: 4px !important;
 
-    font-family: "Segoe UI" !important;
+    font-family: "Segoe UI", "Inter";
     font-size: 10.5px !important;
     line-height: 16px !important;
     letter-spacing: 0 !important;
@@ -12857,6 +12859,564 @@ h2.makeEveryLearning {
     margin: 0 !important;
     text-align: center !important;
     line-height: 32px !important;
+  }
+}
+
+
+/* ==========================================================================
+   FINAL — CONSISTENT SECTION SPACING + NON-HERO TYPOGRAPHY
+   Requested:
+   - 48px between main sections
+   - non-hero main headings = exactly 36px
+   - non-hero section descriptions = exactly 24px
+   - hero typography stays untouched
+   - no card/image/icon/design changes
+   ========================================================================== */
+
+/* Main page sections: exact 48px section-to-section spacing. */
+.analyticsReporting {
+  gap: 48px !important;
+}
+
+/* --------------------------------------------------------------------------
+   NON-HERO MAIN SECTION HEADINGS — EXACTLY 36px
+   Hero selectors intentionally excluded:
+   .turnLearningDataContainer
+   .neurolxpsLearningAnalytics
+   -------------------------------------------------------------------------- */
+.analyticsReporting .transformLearningData,
+.analyticsReporting .oneDashboardFull,
+.analyticsReporting .reportsThatDrive,
+.analyticsReporting .identifyLearningGaps,
+.analyticsReporting .turnDataIntoContainer,
+.analyticsReporting .makeEveryLearning {
+  font-size: 36px !important;
+  line-height: 44px !important;
+  height: auto !important;
+  min-height: 0 !important;
+  max-height: none !important;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  overflow: visible !important;
+}
+
+/* Any nested coloured/span text inside these headings follows the same size. */
+.analyticsReporting .transformLearningData *,
+.analyticsReporting .oneDashboardFull *,
+.analyticsReporting .reportsThatDrive *,
+.analyticsReporting .identifyLearningGaps *,
+.analyticsReporting .turnDataIntoContainer *,
+.analyticsReporting .makeEveryLearning * {
+  font-size: 36px !important;
+  line-height: 44px !important;
+}
+
+/* --------------------------------------------------------------------------
+   NON-HERO SECTION DESCRIPTIONS / SUBHEADINGS — EXACTLY 24px
+   Hero description .neurolxpsLearningAnalytics intentionally excluded.
+   -------------------------------------------------------------------------- */
+.analyticsReporting .neurolxpTurnsLearning,
+.analyticsReporting .getRealTimeInsights,
+.analyticsReporting .createDetailedCustomizable,
+.analyticsReporting .aiAnalyticsSpot,
+.analyticsReporting .builtForEvery,
+.analyticsReporting .goBeyondBasic {
+  font-size: 24px !important;
+  line-height: 34px !important;
+  height: auto !important;
+  min-height: 0 !important;
+  max-height: none !important;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  overflow: visible !important;
+}
+
+/* Prevent older responsive transforms from creating artificial spacing
+   around these non-hero section descriptions. */
+.analyticsReporting .createDetailedCustomizable,
+.analyticsReporting .builtForEvery {
+  transform: none !important;
+}
+
+/* Keep heading/description wrapper spacing clean without changing design. */
+.analyticsReporting .transformLearningDataIntoMParent,
+.analyticsReporting .reportsThatDriveBetterDeciParent,
+.analyticsReporting .turnDataIntoBetterOutcomesParent,
+.analyticsReporting .makeEveryLearningDecisionSParent {
+  gap: 24px !important;
+  height: auto !important;
+  min-height: 0 !important;
+}
+
+/* Tablet/desktop: reinforce exact requested values against earlier media rules. */
+@media screen and (min-width: 768px) {
+  .analyticsReporting {
+    gap: 48px !important;
+  }
+
+  .analyticsReporting .transformLearningData,
+  .analyticsReporting .oneDashboardFull,
+  .analyticsReporting .reportsThatDrive,
+  .analyticsReporting .identifyLearningGaps,
+  .analyticsReporting .turnDataIntoContainer,
+  .analyticsReporting .makeEveryLearning {
+    font-size: 36px !important;
+    line-height: 44px !important;
+  }
+
+  .analyticsReporting .neurolxpTurnsLearning,
+  .analyticsReporting .getRealTimeInsights,
+  .analyticsReporting .createDetailedCustomizable,
+  .analyticsReporting .aiAnalyticsSpot,
+  .analyticsReporting .builtForEvery,
+  .analyticsReporting .goBeyondBasic {
+    font-size: 24px !important;
+    line-height: 34px !important;
+  }
+}
+
+/* Hero stays exactly as defined in the original CSS:
+   .turnLearningDataContainer
+   .neurolxpsLearningAnalytics
+*/
+
+
+/* ==========================================================================
+   FINAL DESKTOP — COMPACT HERO SPACING ONLY
+   - Breadcrumb -> hero = exactly 24px
+   - Reduce large internal hero gaps
+   - Preserve 48px between MAIN sections
+   - No font-size / image / card / colour / design changes
+   ========================================================================== */
+@media screen and (min-width: 1025px) {
+
+  /* Main page section rhythm stays exactly 48px. */
+  .analyticsReporting {
+    gap: 48px !important;
+  }
+
+  /* The direct flex layout already has a 48px gap.
+     A -24px bottom margin gives an effective 24px gap
+     from breadcrumb to the hero section. */
+  .analyticsReporting > .frameDiv {
+    margin-top: 0 !important;
+    margin-bottom: -24px !important;
+  }
+
+  /* HERO SECTION:
+     remove old fixed vertical reservations and use natural content height. */
+  .analyticsReporting > .frameParent12 {
+    height: auto !important;
+    min-height: 0 !important;
+    gap: 32px !important;
+  }
+
+  /* Top hero content block: pill + heading/description + CTA */
+  .analyticsReporting
+  > .frameParent12
+  > .frameParent13 {
+    width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+    flex: 0 0 auto !important;
+    gap: 24px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  .analyticsReporting
+  > .frameParent12
+  > .frameParent13
+  > .frameWrapper {
+    width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+    flex: 0 0 auto !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  /* Pill -> heading block spacing */
+  .analyticsReporting
+  .frameParent12
+  .frameParent14 {
+    height: auto !important;
+    min-height: 0 !important;
+    flex: 0 0 auto !important;
+    gap: 18px !important;
+    margin: 0 auto !important;
+  }
+
+  .analyticsReporting
+  .frameParent12
+  .frameChild14 {
+    margin: 0 auto !important;
+  }
+
+  /* Heading -> subheading spacing */
+  .analyticsReporting
+  .frameParent12
+  .turnLearningDataIntoActionParent {
+    height: auto !important;
+    min-height: 0 !important;
+    flex: 0 0 auto !important;
+    gap: 14px !important;
+    margin: 0 auto !important;
+  }
+
+  .analyticsReporting
+  .frameParent12
+  .turnLearningDataContainer {
+    height: auto !important;
+    min-height: 0 !important;
+    max-height: none !important;
+    margin: 0 !important;
+    transform: none !important;
+  }
+
+  .analyticsReporting
+  .frameParent12
+  .neurolxpsLearningAnalytics {
+    height: auto !important;
+    min-height: 0 !important;
+    max-height: none !important;
+    margin: 0 !important;
+    transform: none !important;
+  }
+
+  /* Description -> Book a Demo spacing */
+  .analyticsReporting
+  .frameParent12
+  .frameChild15 {
+    margin: 2px auto 0 !important;
+    transform: none !important;
+  }
+
+  /* Keep a clean but smaller gap from CTA to the stats/program row. */
+  .analyticsReporting
+  .frameParent12
+  > .frameParent15 {
+    margin-top: 0 !important;
+  }
+}
+
+
+/* ==========================================================================
+   FINAL DESKTOP — HERO SPACING + CENTER ALIGNMENT ONLY
+   No font-size, card, image, colour or design changes.
+   ========================================================================== */
+@media screen and (min-width: 1025px) {
+
+  /* Keep breadcrumb -> hero at the previously requested 24px. */
+  .analyticsReporting {
+    gap: 48px !important;
+  }
+
+  .analyticsReporting > .frameDiv {
+    margin-bottom: -24px !important;
+  }
+
+  /* Center the complete hero content stack on one axis. */
+  .analyticsReporting
+  > .frameParent12
+  > .frameParent13 {
+    width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+
+    gap: 12px !important;
+    margin: 0 auto !important;
+    padding: 0 !important;
+  }
+
+  .analyticsReporting
+  > .frameParent12
+  > .frameParent13
+  > .frameWrapper {
+    width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+
+    margin: 0 auto !important;
+    padding: 0 !important;
+  }
+
+  /* Pill -> heading block */
+  .analyticsReporting
+  .frameParent12
+  .frameParent14 {
+    width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+
+    gap: 10px !important;
+    margin: 0 auto !important;
+    padding: 0 !important;
+  }
+
+  .analyticsReporting
+  .frameParent12
+  .frameChild14 {
+    margin: 0 auto !important;
+    align-self: center !important;
+  }
+
+  /* Heading -> description */
+  .analyticsReporting
+  .frameParent12
+  .turnLearningDataIntoActionParent {
+    width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+
+    gap: 8px !important;
+    margin: 0 auto !important;
+    padding: 0 !important;
+  }
+
+  .analyticsReporting
+  .frameParent12
+  .turnLearningDataContainer,
+  .analyticsReporting
+  .frameParent12
+  .neurolxpsLearningAnalytics {
+    margin: 0 auto !important;
+    padding: 0 !important;
+    text-align: center !important;
+    align-self: center !important;
+    transform: none !important;
+  }
+
+  /* Description -> Book a Demo */
+  .analyticsReporting
+  .frameParent12
+  .frameChild15 {
+    margin: 0 auto !important;
+    align-self: center !important;
+    transform: none !important;
+  }
+
+  /* Do not disturb the cards / Learning Programs row. */
+  .analyticsReporting
+  .frameParent12
+  > .frameParent15 {
+    margin-top: 0 !important;
+  }
+}
+
+
+/* ==========================================================================
+   FINAL DESKTOP — WHY ANALYTICS MATTERS GAP ONLY
+   Reduce only the empty space between the description and the cards.
+   No font-size, card, image, colour, pill or design changes.
+   ========================================================================== */
+@media screen and (min-width: 1025px) {
+
+  .analyticsReporting > .frameParent2 {
+    gap: 20px !important;
+  }
+
+  /* Remove only the unused fixed vertical space in the text block. */
+  .analyticsReporting
+  > .frameParent2
+  > .frameParent3 {
+    height: auto !important;
+    min-height: 0 !important;
+  }
+
+  .analyticsReporting
+  > .frameParent2
+  .transformLearningDataIntoMParent {
+    height: auto !important;
+    min-height: 0 !important;
+  }
+
+  .analyticsReporting
+  > .frameParent2
+  .transformLearningData,
+  .analyticsReporting
+  > .frameParent2
+  .neurolxpTurnsLearning {
+    height: auto !important;
+    min-height: 0 !important;
+    max-height: none !important;
+    margin-bottom: 0 !important;
+  }
+
+  /* Keep the card section in its existing position/alignment,
+     just remove extra layout whitespace before it. */
+  .analyticsReporting
+  > .frameParent2
+  > .frameParent4 {
+    margin-top: 0 !important;
+  }
+}
+
+
+/* ==========================================================================
+   FINAL DESKTOP — SMARTER LEARNING REPORTS SPACING ONLY
+   Reduce only:
+   pill -> heading
+   heading -> description
+   description -> report cards
+   No font-size, card, icon, colour or design changes.
+   ========================================================================== */
+@media screen and (min-width: 1025px) {
+
+  /* Overall section internal spacing */
+  .analyticsReporting > .frameParent30 {
+    gap: 18px !important;
+  }
+
+  /* Pill + heading + description block */
+  .analyticsReporting
+  > .frameParent30
+  > .frameParent31 {
+    height: auto !important;
+    min-height: 0 !important;
+    gap: 12px !important;
+    margin: 0 auto !important;
+  }
+
+  .analyticsReporting
+  > .frameParent30
+  .reportsThatDriveBetterDeciParent {
+    height: auto !important;
+    min-height: 0 !important;
+    gap: 8px !important;
+    margin: 0 auto !important;
+  }
+
+  .analyticsReporting
+  > .frameParent30
+  .reportsThatDrive,
+  .analyticsReporting
+  > .frameParent30
+  .createDetailedCustomizable {
+    height: auto !important;
+    min-height: 0 !important;
+    max-height: none !important;
+    margin: 0 auto !important;
+  }
+
+  /* Remove only the old artificial vertical movement on the description. */
+  .analyticsReporting
+  > .frameParent30
+  .createDetailedCustomizable {
+    transform: none !important;
+  }
+
+  /* Pull the report cards up only by removing the old section transform. */
+  .analyticsReporting
+  > .frameParent30
+  > .frameParent32 {
+    margin-top: 0 !important;
+    transform: none !important;
+  }
+}
+
+
+/* ==========================================================================
+   FINAL DESKTOP — HERO TIGHT SAFE SPACING
+   Reduce visual whitespace without overlap.
+   Font sizes, cards, images, colours and design remain unchanged.
+   ========================================================================== */
+@media screen and (min-width: 1025px) {
+
+  /* Keep the complete hero stack centered and compact. */
+  .analyticsReporting
+  > .frameParent12
+  > .frameParent13 {
+    gap: 8px !important;
+    align-items: center !important;
+  }
+
+  /* Pill -> heading block */
+  .analyticsReporting
+  .frameParent12
+  .frameParent14 {
+    gap: 8px !important;
+    height: auto !important;
+    min-height: 0 !important;
+  }
+
+  /* Heading -> description */
+  .analyticsReporting
+  .frameParent12
+  .turnLearningDataIntoActionParent {
+    gap: 4px !important;
+    height: auto !important;
+    min-height: 0 !important;
+  }
+
+  /* Keep the same font size; tighten only line-height so the text box
+     itself does not create hidden vertical whitespace. */
+  .analyticsReporting
+  .frameParent12
+  .turnLearningDataContainer {
+    height: auto !important;
+    min-height: 0 !important;
+    max-height: none !important;
+    margin: 0 auto !important;
+    padding: 0 !important;
+    line-height: 46px !important;
+    transform: none !important;
+    text-align: center !important;
+  }
+
+  .analyticsReporting
+  .frameParent12
+  .turnLearningData,
+  .analyticsReporting
+  .frameParent12
+  .actionableInsights {
+    line-height: 46px !important;
+  }
+
+  .analyticsReporting
+  .frameParent12
+  .neurolxpsLearningAnalytics {
+    height: auto !important;
+    min-height: 0 !important;
+    max-height: none !important;
+    margin: 0 auto !important;
+    padding: 0 !important;
+    line-height: 34px !important;
+    transform: none !important;
+    text-align: center !important;
+  }
+
+  /* Description -> Book a Demo */
+  .analyticsReporting
+  .frameParent12
+  .frameChild15 {
+    margin: 4px auto 0 !important;
+    align-self: center !important;
+    transform: none !important;
+  }
+
+  /* Keep button -> stats/program row compact but safely separated. */
+  .analyticsReporting
+  .frameParent12
+  > .frameParent15 {
+    margin-top: 8px !important;
   }
 }
 

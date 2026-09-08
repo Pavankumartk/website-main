@@ -2813,3 +2813,113 @@
    .poweredByThe
 */
 
+/* ==========================================================================
+   FINAL DESKTOP SPACING — POWERED BY + WHY IT MATTERS
+   Reduce only the two highlighted vertical gaps.
+   Preserve typography, cards, images and all previous responsive fixes.
+   ========================================================================== */
+@media screen and (min-width: 1280px) {
+
+  /* Practical Learning:
+     slightly tighten badge → heading and heading → subheading spacing. */
+  .neurolxp2103rs8cs3msLite .frameParent7 {
+    gap: 24px !important;
+  }
+
+  .neurolxp2103rs8cs3msLite .poweredByThe3rs8cs3msParent {
+    gap: 16px !important;
+  }
+
+  /* Why It Matters:
+     tighten heading → subheading spacing. */
+  .neurolxp2103rs8cs3msLite .whyItMattersParent {
+    gap: 16px !important;
+  }
+
+  /* Pull the NeuroLXP final section upward so there is only a clean,
+     compact gap below the Why It Matters copy. */
+  .neurolxp2103rs8cs3msLite .rectangleParent {
+    top: 1848.21px !important;
+  }
+
+  /* Keep the same 64px footer breathing room after moving the final section. */
+  .neurolxp2103rs8cs3msLite {
+    height: 2319.21px !important;
+  }
+}
+
+
+/* ==========================================================================
+   FINAL DESKTOP TEXT-SPACING FIX
+   Spacing only — no card geometry, image position, section position,
+   colours, font sizes, or visual design are changed.
+   ========================================================================== */
+@media screen and (min-width: 1280px) {
+
+  /* Practical Learning: remove the hidden fixed/min-height space that becomes
+     more noticeable when Inter is the active fallback font. */
+  .neurolxp2103rs8cs3msLite .frameParent7 {
+    gap: 18px !important;
+  }
+
+  .neurolxp2103rs8cs3msLite .poweredByThe3rs8cs3msParent {
+    gap: 8px !important;
+  }
+
+  .neurolxp2103rs8cs3msLite .poweredByTheContainer {
+    height: auto !important;
+    min-height: 0 !important;
+    margin: 0 !important;
+  }
+
+  .neurolxp2103rs8cs3msLite .buildingStrongFoundations {
+    height: auto !important;
+    min-height: 0 !important;
+    margin: 0 !important;
+  }
+
+  /* Keep a clean, compact gap between the Practical Learning copy and cards. */
+  .neurolxp2103rs8cs3msLite .frameParent6 {
+    gap: 24px !important;
+  }
+
+  /* Why it Matters: tighten only heading → description spacing. */
+  .neurolxp2103rs8cs3msLite .whyItMattersParent {
+    gap: 8px !important;
+  }
+
+  .neurolxp2103rs8cs3msLite .whyItMatters,
+  .neurolxp2103rs8cs3msLite .transformingLearningInto {
+    height: auto !important;
+    min-height: 0 !important;
+    margin: 0 !important;
+  }
+}
+
+
+/* ==========================================================================
+   RESTORE ORIGINAL DESKTOP GIRL / FINAL-SECTION ALIGNMENT
+   Keep the spacing fixes above, but do NOT shift the NeuroLXP panel relative
+   to the woman image.
+   ========================================================================== */
+@media screen and (min-width: 1280px) {
+  .neurolxp2103rs8cs3msLite .rectangleParent {
+    top: 1927.21px !important;
+  }
+
+  .neurolxp2103rs8cs3msLite .smilingWomanWithBooksMortaIcon {
+    top: 1763px !important;
+    left: calc(50% - 166px) !important;
+    right: auto !important;
+    bottom: auto !important;
+    width: 766px !important;
+    height: 571px !important;
+    object-fit: contain !important;
+    object-position: center bottom !important;
+  }
+
+  .neurolxp2103rs8cs3msLite {
+    height: 2398.21px !important;
+  }
+}
+

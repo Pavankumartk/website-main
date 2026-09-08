@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
 .assessments {
   	width: 100%;
   	height: 4981px;
@@ -7,7 +9,7 @@
   	text-align: center;
   	font-size: 48px;
   	color: #31344b;
-  	font-family: 'Segoe UI';
+  	font-family: "Segoe UI", "Inter";
 }
 .arrowDown01Icon {
   	height: 16px;
@@ -29,7 +31,7 @@
   	text-align: left;
   	font-size: 18px;
   	color: #2f3547;
-  	font-family: Inter;
+  	font-family: "Segoe UI", "Inter";
 }
 .featuresWrapper {
   	display: flex;
@@ -1136,7 +1138,7 @@ min-height: 40px;
 
 padding: 4px 20px;
 
-font-family: "Segoe UI";
+font-family: "Segoe UI", "Inter";
 font-size: 18px;
 font-weight: 600;
 line-height: 28px;
@@ -1540,7 +1542,7 @@ min-height: 50px;
 
 padding: 8px 24px;
 
-font-family: "Segoe UI";
+font-family: "Segoe UI", "Inter";
 font-size: 24px;
 font-weight: 600;
 line-height: 28px;
@@ -1669,7 +1671,7 @@ align-items: center;
 min-width: 165px;
 min-height: 50px;
 padding: 8px 24px;
-font-family: "Segoe UI";
+font-family: "Segoe UI", "Inter";
 font-size: 24px;
 font-weight: 600;
 line-height: 28px;
@@ -1887,7 +1889,7 @@ align-items: center;
 min-width: 165px;
 min-height: 50px;
 padding: 8px 24px;
-font-family: "Segoe UI";
+font-family: "Segoe UI", "Inter";
 font-size: 24px;
 font-weight: 600;
 line-height: 28px;
@@ -2857,7 +2859,7 @@ box-shadow: inset -4px -4px 4px rgba(255,255,255,1),
   background: #DFE6E9;
 
   color: #2D4CC8;
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", "Inter";
   font-size: 18px;
   font-weight: 600;
   line-height: 28px;
@@ -2886,7 +2888,7 @@ box-shadow: inset -4px -4px 4px rgba(255,255,255,1),
 	box-shadow: -4px -4px 4px #ffffff,
 		4px 4px 4px rgba(196, 196, 196, 0.8);
 	color: #2d4cc8;
-	font-family: "Segoe UI";
+	font-family: "Segoe UI", "Inter";
 	font-size: 24px;
 	font-weight: 600;
 	line-height: 28px;
@@ -7242,5 +7244,22 @@ button.requestADemoWrapper::-moz-focus-inner {
     white-space: nowrap !important;
     text-align: center !important;
   }
+}
+
+
+/* =========================================================
+   FINAL — BOOK / REQUEST A DEMO HOVER EFFECT ONLY
+   Preserve all existing size, spacing and button placement.
+   ========================================================= */
+.heroBookDemoButton {
+  transition: box-shadow 0.18s ease !important;
+}
+
+.heroBookDemoButton:hover,
+.requestADemoWrapper:hover {
+  background-color: #dfe6e9 !important;
+  box-shadow:
+    inset -4px -4px 4px #ffffff,
+    inset 4px 4px 4px rgba(196, 196, 196, 0.9) !important;
 }
 
