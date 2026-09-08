@@ -1,12 +1,13 @@
 'use client';
 
 
+import { useState } from "react";
 import Image from "next/image";
 import "./Assistant.css";
 import GradientText from "./GradientText";
 
 type AssistantProps = {
-    onClose: () => void;
+    onClose?: () => void;
 };
 
 const ASSISTANT_ASSETS = {
@@ -15,6 +16,7 @@ const ASSISTANT_ASSETS = {
 };
 
 export default function Assistant({ onClose }: AssistantProps) {
+    const [isOpen, setIsOpen] = useState(true);
 
     const messages = [
         "Good Afternoon! Hope You're Doing Well",
@@ -23,10 +25,15 @@ export default function Assistant({ onClose }: AssistantProps) {
     ];
 
     const handleClose = () => {
-        // Header owns visibility. Closing here immediately sets
-        // Header's isAssistantOpen=false, which unmounts the WHOLE portal.
-        onClose();
+        if (onClose) {
+            onClose();
+            return;
+        }
+
+        setIsOpen(false);
     };
+
+    if (!isOpen) return null;
 
 
     return (
