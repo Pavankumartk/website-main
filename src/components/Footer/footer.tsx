@@ -89,7 +89,16 @@ export default function Footer() {
                 <ul className={styles["nlxp-footer-list"]}>
                   {footerAboutLinks.map((link) => (
                     <li key={link.label}>
-                      <FooterAboutLink link={link} />
+                      {link.label === "Our Team" ? (
+                        <Link
+                          href="/our-Team"
+                          className={styles["nlxp-footer-link"]}
+                        >
+                          {link.label}
+                        </Link>
+                      ) : (
+                        <FooterAboutLink link={link} />
+                      )}
                     </li>
                   ))}
                 </ul>
@@ -123,11 +132,32 @@ export default function Footer() {
                 </h3>
 
                 <ul className={styles["nlxp-footer-list"]}>
-                  {footerNeuroLxpLinks.map((link) => (
-                    <li key={link.label}>
-                      <FooterAboutLink link={link} />
-                    </li>
-                  ))}
+                  {footerNeuroLxpLinks.map((link) => {
+                    const customHref =
+                      link.label === "Our Customers"
+                        ? "/university-college"
+                        : link.label === "Smart Learning Paths"
+                          ? "/learning_community"
+                          : link.label === "Smart Content Management" ||
+                              link.label === "Smart Content Creation"
+                            ? "/content_managment"
+                            : null;
+
+                    return (
+                      <li key={link.label}>
+                        {customHref ? (
+                          <Link
+                            href={customHref}
+                            className={styles["nlxp-footer-link"]}
+                          >
+                            {link.label}
+                          </Link>
+                        ) : (
+                          <FooterAboutLink link={link} />
+                        )}
+                      </li>
+                    );
+                  })}
                 </ul>
               </div>
             </div>

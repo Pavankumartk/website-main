@@ -7,7 +7,7 @@
   text-align: left;
   font-size: 36px;
   color: #31344b;
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", "Inter";
   zoom: 0.97;
   max-width: 1440px;
   margin: 0 auto;
@@ -24,7 +24,7 @@
   height: 80px;
   overflow: hidden;
   font-size: 16px;
-  font-family: Inter;
+  font-family: "Segoe UI", "Inter";
 }
 .frameChild {
   position: absolute;
@@ -107,7 +107,7 @@
   box-sizing: border-box;
   text-align: center;
   color: #2d4cc8;
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", "Inter";
 }
 .signInHelp {
   position: relative;
@@ -143,7 +143,7 @@
   gap: 8px;
   font-size: 16px;
   color: #2f3547;
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", "Inter";
 }
 .resourcesWrapper {
   display: flex;
@@ -255,7 +255,7 @@
   align-items: center;
   justify-content: center;
   padding: 0 24px;
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", "Inter";
   font-size: 24px;
   font-weight: 600;
   line-height: 1;
@@ -299,7 +299,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", "Inter";
   font-size: 20px;
   font-weight: 600;
   color: #2d4cc8;
@@ -756,7 +756,7 @@
 }
 .structuredLearning {
   position: relative;
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", "Inter";
   font-size: 22px;
   font-weight: 400;
   line-height: 36px;
@@ -771,7 +771,7 @@
 }
 .transparentAssessments {
   position: relative;
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", "Inter";
   font-size: 22px;
   font-weight: 400;
   line-height: 36px;
@@ -790,7 +790,7 @@
   align-items: center;
   font-size: 54px;
   color: #000;
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", "Inter";
 }
 .frameWrapper4 {
   width: 100%;
@@ -838,7 +838,7 @@
 }
 .b {
   position: relative;
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", "Inter";
   font-size: 54px;
   font-weight: 700;
   line-height: 62px;
@@ -855,7 +855,7 @@
   letter-spacing: 0.03em;
   line-height: 40px;
   font-weight: 600;
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", "Inter";
   text-align: center;
   color: #000;
 }
@@ -870,7 +870,7 @@
   align-items: center;
   font-size: 54px;
   color: #000;
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", "Inter";
 }
 .frameWrapper7 {
   width: 100%;
@@ -973,7 +973,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", "Inter";
   font-size: 20px;
   font-weight: 600;
   line-height: 28px;
@@ -1077,7 +1077,7 @@
   flex-shrink: 0;
 }
 .benefitsBadge span {
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", "Inter";
   font-size: 24px;
   font-weight: 600;
   color: #2d4cc8;
@@ -1167,7 +1167,7 @@
   width: 100%;
   height: auto;
   margin: 0;
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", "Inter";
   font-size: 48px;
   font-weight: 700;
   line-height: 60px;
@@ -1181,7 +1181,7 @@
   width: 760px;
   max-width: 100%;
   margin: 0;
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", "Inter";
   font-size: 28px;
   font-weight: 400;
   line-height: 40px;
@@ -1211,7 +1211,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", "Inter";
   font-size: 24px;
   font-weight: 600;
   line-height: 32px;
@@ -1417,7 +1417,7 @@
   overflow-x: hidden;
   overflow-y: visible;
   text-align: left;
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", "Inter";
   zoom: 1;
   box-sizing: border-box;
 }
@@ -1927,7 +1927,7 @@
   border-radius: 8px;
   background: #31344b;
   color: #ffffff;
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", "Inter";
   font-size: 16px;
   font-weight: 600;
   line-height: 24px;
@@ -2934,7 +2934,7 @@
 
   margin: clamp(-2px, -0.1vw, 0px) 0 !important;
 
-  font-family: "Segoe UI Symbol", "Segoe UI", sans-serif !important;
+  font-family: "Segoe UI Symbol", "Segoe UI", "Inter", sans-serif !important;
   font-size: clamp(30px, 3.3vw, 44px) !important;
   font-weight: 400 !important;
   line-height: 1 !important;
@@ -2992,7 +2992,7 @@
 
   display: block !important;
 
-  font-family: "Segoe UI Symbol", "Segoe UI", Arial, sans-serif !important;
+  font-family: "Segoe UI Symbol", "Segoe UI", "Inter", Arial, sans-serif !important;
   font-size: 38px !important;
   font-weight: 400 !important;
   line-height: 1 !important;
@@ -4065,6 +4065,563 @@ button.frameChild29:focus-visible {
     margin-left: auto !important;
     margin-right: auto !important;
     text-align: center !important;
+  }
+}
+
+
+/* =========================================================
+   BUTTON INSET HOVER — REQUESTED ONLY
+   ========================================================= */
+.signInHelpWrapper,
+button.frameChild2,
+button.frameChild29 {
+  cursor: pointer;
+  transition:
+    box-shadow 180ms ease,
+    transform 180ms ease,
+    color 180ms ease !important;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .signInHelpWrapper:hover,
+  button.frameChild2:hover,
+  button.frameChild29:hover {
+    box-shadow:
+      inset -4px -4px 4px #ffffff,
+      inset 4px 4px 4px rgba(196, 196, 196, 0.82) !important;
+    transform: translateY(1px) !important;
+  }
+}
+
+.signInHelpWrapper:active,
+button.frameChild2:active,
+button.frameChild29:active {
+  box-shadow:
+    inset -3px -3px 4px #ffffff,
+    inset 4px 4px 5px rgba(191, 194, 196, 0.9) !important;
+  transform: translateY(2px) !important;
+}
+
+.signInHelpWrapper:focus-visible,
+button.frameChild2:focus-visible,
+button.frameChild29:focus-visible {
+  box-shadow:
+    inset -4px -4px 4px #ffffff,
+    inset 4px 4px 4px rgba(196, 196, 196, 0.82) !important;
+  outline: none !important;
+}
+
+/* Fallback-font safety for the existing buttons only.
+   Keeps their current dimensions/design and prevents text clipping. */
+.signInHelpWrapper,
+button.frameChild2,
+button.frameChild29 {
+  font-family: "Segoe UI", "Inter" !important;
+}
+
+.signInHelpWrapper *,
+button.frameChild2 *,
+button.frameChild29 * {
+  font-family: inherit !important;
+}
+
+
+/* =========================================================
+   MOBILE ONLY — 01 / 02 / 03 CARD CONTENT OVERLAP FIX
+   Keeps the card design/background unchanged.
+   ========================================================= */
+@media (max-width: 600px) {
+
+  /* Lift the checklist slightly so the final row stays
+     completely inside each card. */
+  .standardsTraining .frameParent27 .frameParent28 {
+    top: 148px !important;
+    gap: 8px !important;
+  }
+
+  /* Keep every checklist row compact and uniform. */
+  .standardsTraining .frameParent27 .frameParent29 {
+    height: 42px !important;
+    min-height: 42px !important;
+    gap: 12px !important;
+    align-items: center !important;
+  }
+
+  /* Prevent the label itself from creating extra vertical height. */
+  .standardsTraining .frameParent27 .structuredLearning,
+  .standardsTraining .frameParent27 .transparentAssessments {
+    height: auto !important;
+    min-height: 0 !important;
+    line-height: 22px !important;
+    margin: 0 !important;
+  }
+}
+
+
+/* =========================================================
+   MOBILE ONLY — 01 / 02 / 03 CARD VERTICAL GAP FIX
+   Only removes the extra empty space between cards.
+   Card artwork, size, text, icons and colors stay unchanged.
+   ========================================================= */
+@media (max-width: 600px) {
+
+  .standardsTraining .frameParent26 {
+    gap: 12px !important;
+  }
+
+  /* The mobile card wrapper reserves more height than the
+     visible SVG card. Collapse only that unused bottom space. */
+  .standardsTraining .frameParent27:not(:last-child) {
+    margin-bottom: -58px !important;
+  }
+}
+
+
+/* =========================================================
+   MOBILE ONLY — FIX TEXT OVERLAP INSIDE 01 / 02 / 03 CARDS
+   No visual redesign.
+   ========================================================= */
+@media (max-width: 600px) {
+
+  /* Keep the checklist safely BELOW the card heading area. */
+  .standardsTraining .frameParent27 .frameParent28 {
+    top: 172px !important;
+    left: 24px !important;
+    right: 24px !important;
+    width: auto !important;
+    height: auto !important;
+    gap: 8px !important;
+    padding: 0 !important;
+  }
+
+  /* Give every checklist row its own fixed vertical space. */
+  .standardsTraining .frameParent27 .frameParent29 {
+    width: 100% !important;
+    height: 42px !important;
+    min-height: 42px !important;
+    max-height: 42px !important;
+    gap: 12px !important;
+    align-items: center !important;
+    flex-shrink: 0 !important;
+  }
+
+  /* Keep checklist labels from touching neighbouring rows. */
+  .standardsTraining .frameParent27 .structuredLearning,
+  .standardsTraining .frameParent27 .transparentAssessments {
+    height: auto !important;
+    min-height: 0 !important;
+    max-height: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+
+    font-size: 16px !important;
+    line-height: 22px !important;
+
+    white-space: nowrap !important;
+    overflow: visible !important;
+  }
+
+  /* Remove the previous negative card margin that could make
+     one card's content visually run into the next card. */
+  .standardsTraining .frameParent27:not(:last-child) {
+    margin-bottom: 0 !important;
+  }
+
+  .standardsTraining .frameParent26 {
+    gap: 18px !important;
+  }
+}
+
+
+/* =========================================================
+   MOBILE ONLY — ACTUAL 01 / 02 / 03 TEXT OVERLAP FIX
+   Moves only the number/title block fully inside the card.
+   ========================================================= */
+@media (max-width: 600px) {
+
+  .standardsTraining .frameParent27 .frameParent33 {
+    top: 32px !important;
+  }
+
+  .standardsTraining .frameParent27 .b {
+    margin: 0 !important;
+    line-height: 46px !important;
+  }
+
+  .standardsTraining .frameParent27 .forLearners {
+    margin: 0 !important;
+    line-height: 28px !important;
+  }
+}
+
+
+/* =========================================================
+   MOBILE ONLY — FINAL 01 / 02 / 03 CARD FIT FIX
+   Extend the card slightly so ALL text stays inside cleanly.
+   No design/color/icon changes.
+   ========================================================= */
+@media (max-width: 600px) {
+
+  /* Give the mobile card enough vertical room. */
+  .standardsTraining .frameParent27 {
+    height: 430px !important;
+    min-height: 430px !important;
+  }
+
+  /* Make the existing SVG/card background follow the new height. */
+  .standardsTraining .frameParent27 > .standardBackground {
+    height: calc(100% + 20px) !important;
+  }
+
+  .standardsTraining .frameParent27 .frameWrapper2,
+  .standardsTraining .frameParent27 .rectangleParent {
+    height: 100% !important;
+  }
+
+  /* Keep 01 / 02 / 03 and the title fully inside the top area. */
+  .standardsTraining .frameParent27 .frameWrapper3,
+  .standardsTraining .frameParent27 .frameWrapper6,
+  .standardsTraining .frameParent27 .frameWrapper4,
+  .standardsTraining .frameParent27 .frameWrapper7,
+  .standardsTraining .frameParent27 .vectorParent,
+  .standardsTraining .frameParent27 .vectorGroup {
+    height: 172px !important;
+  }
+
+  .standardsTraining .frameParent27 .frameParent33 {
+    top: 46px !important;
+    height: auto !important;
+    gap: 6px !important;
+  }
+
+  .standardsTraining .frameParent27 .b {
+    margin: 0 !important;
+    line-height: 44px !important;
+  }
+
+  .standardsTraining .frameParent27 .forLearners {
+    margin: 0 !important;
+    line-height: 28px !important;
+  }
+
+  /* Start the checklist below the title area with enough room
+     for all four rows inside the extended card. */
+  .standardsTraining .frameParent27 .frameParent28 {
+    top: 188px !important;
+    left: 24px !important;
+    right: 24px !important;
+    width: auto !important;
+    height: auto !important;
+    gap: 8px !important;
+    padding: 0 !important;
+  }
+
+  .standardsTraining .frameParent27 .frameParent29 {
+    width: 100% !important;
+    height: 42px !important;
+    min-height: 42px !important;
+    max-height: 42px !important;
+    gap: 12px !important;
+    align-items: center !important;
+    flex-shrink: 0 !important;
+  }
+
+  .standardsTraining .frameParent27 .structuredLearning,
+  .standardsTraining .frameParent27 .transparentAssessments {
+    height: auto !important;
+    min-height: 0 !important;
+    max-height: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    font-size: 16px !important;
+    line-height: 22px !important;
+    white-space: nowrap !important;
+    overflow: visible !important;
+  }
+
+  /* Keep normal card separation — no negative overlap. */
+  .standardsTraining .frameParent27:not(:last-child) {
+    margin-bottom: 0 !important;
+  }
+
+  .standardsTraining .frameParent26 {
+    gap: 20px !important;
+  }
+}
+
+
+/* =========================================================
+   MOBILE ONLY — FINAL 01 / 02 / 03 CARD TEXT FIT
+   Fixes the actual overlap by making the content follow the
+   mobile-scaled card height. No colour/design changes.
+   ========================================================= */
+@media screen and (max-width: 600px) {
+
+  .standardsTraining .frameParent26 {
+    width: 100% !important;
+    grid-template-columns: 1fr !important;
+    justify-items: center !important;
+    gap: 22px !important;
+  }
+
+  /* Keep the same card proportion on mobile instead of reserving
+     a tall wrapper while the visible SVG stays much shorter. */
+  .standardsTraining .frameParent27 {
+    width: min(296px, calc(100vw - 24px)) !important;
+    max-width: 296px !important;
+    min-width: 0 !important;
+
+    height: auto !important;
+    min-height: 0 !important;
+    aspect-ratio: 400 / 470 !important;
+
+    margin: 0 auto !important;
+    overflow: visible !important;
+    position: relative !important;
+  }
+
+  /* Force the supplied SVG to occupy the complete mobile card.
+     This removes the mismatch between wrapper height and visible card. */
+  .standardsTraining .frameParent27 > .standardBackground {
+    display: block !important;
+    position: absolute !important;
+
+    top: 0 !important;
+    left: 0 !important;
+    right: auto !important;
+    bottom: auto !important;
+
+    width: 100% !important;
+    max-width: none !important;
+    min-width: 100% !important;
+
+    height: 100% !important;
+    max-height: none !important;
+    min-height: 100% !important;
+
+    margin: 0 !important;
+
+    object-fit: fill !important;
+    object-position: center !important;
+
+    transform: none !important;
+    z-index: 0 !important;
+    pointer-events: none !important;
+  }
+
+  .standardsTraining .frameParent27::before {
+    display: none !important;
+  }
+
+  .standardsTraining .frameParent27 .frameWrapper2,
+  .standardsTraining .frameParent27 .rectangleParent {
+    position: absolute !important;
+    inset: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+  }
+
+  /* Mobile-scaled top number/title area */
+  .standardsTraining .frameParent27 .frameWrapper3,
+  .standardsTraining .frameParent27 .frameWrapper6,
+  .standardsTraining .frameParent27 .frameWrapper4,
+  .standardsTraining .frameParent27 .frameWrapper7,
+  .standardsTraining .frameParent27 .vectorParent,
+  .standardsTraining .frameParent27 .vectorGroup {
+    width: 100% !important;
+    height: 142px !important;
+    min-height: 142px !important;
+  }
+
+  .standardsTraining .frameParent27 .frameParent33 {
+    position: absolute !important;
+    top: 14px !important;
+    left: 50% !important;
+
+    width: calc(100% - 36px) !important;
+    height: auto !important;
+    min-height: 0 !important;
+
+    gap: 4px !important;
+
+    transform: translateX(-50%) !important;
+
+    align-items: center !important;
+    text-align: center !important;
+
+    z-index: 4 !important;
+  }
+
+  .standardsTraining .frameParent27 .b {
+    margin: 0 !important;
+    padding: 0 !important;
+
+    font-size: 40px !important;
+    line-height: 42px !important;
+
+    flex-shrink: 0 !important;
+  }
+
+  .standardsTraining .frameParent27 .forLearners {
+    width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    font-size: 20px !important;
+    line-height: 26px !important;
+
+    text-align: center !important;
+    white-space: nowrap !important;
+  }
+
+  /* Checklist is positioned to fit completely inside the
+     actual visible SVG card — including the last row. */
+  .standardsTraining .frameParent27 .frameParent28 {
+    position: absolute !important;
+
+    top: 150px !important;
+    left: 18px !important;
+    right: 14px !important;
+
+    width: auto !important;
+    height: auto !important;
+    min-height: 0 !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: stretch !important;
+
+    gap: 6px !important;
+
+    z-index: 4 !important;
+  }
+
+  .standardsTraining .frameParent27 .frameParent29 {
+    width: 100% !important;
+
+    height: 38px !important;
+    min-height: 38px !important;
+    max-height: 38px !important;
+
+    display: flex !important;
+    align-items: center !important;
+
+    gap: 10px !important;
+
+    flex: 0 0 38px !important;
+  }
+
+  .standardsTraining .frameParent27 .checkIconCircle,
+  .standardsTraining .frameParent27 .frameChild13,
+  .standardsTraining .frameParent27 .frameChild15 {
+    width: 38px !important;
+    height: 38px !important;
+    min-width: 38px !important;
+
+    flex: 0 0 38px !important;
+  }
+
+  .standardsTraining .frameParent27 .structuredLearning,
+  .standardsTraining .frameParent27 .transparentAssessments {
+    width: auto !important;
+    max-width: calc(100% - 48px) !important;
+
+    height: auto !important;
+    min-height: 0 !important;
+    max-height: none !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    font-size: 16px !important;
+    line-height: 22px !important;
+
+    white-space: nowrap !important;
+    overflow: visible !important;
+    word-break: normal !important;
+    overflow-wrap: normal !important;
+  }
+
+  /* Explicitly cancel the old mobile negative-margin experiments. */
+  .standardsTraining .frameParent27:not(:last-child) {
+    margin-bottom: 0 !important;
+  }
+}
+
+
+/* =========================================================
+   MOBILE ONLY — CENTER BENEFITS SECTION
+   Only alignment is changed. Design/sizes/colors stay same.
+   ========================================================= */
+@media screen and (max-width: 600px) {
+
+  .standardsTraining > .frameParent16 {
+    width: calc(100% - 24px) !important;
+    max-width: 320px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    align-items: center !important;
+    text-align: center !important;
+  }
+
+  .standardsTraining > .frameParent16 > .resourcesWrapper {
+    width: 100% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    display: flex !important;
+    justify-content: center !important;
+  }
+
+  .standardsTraining .frameParent17,
+  .standardsTraining .frameParent18 {
+    width: 100% !important;
+    align-items: center !important;
+    text-align: center !important;
+  }
+
+  .standardsTraining .benefitsBadge {
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  .standardsTraining .benefitsOfEmployee,
+  .standardsTraining .organizationsCanAchieve {
+    width: 100% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    text-align: center !important;
+  }
+
+  .standardsTraining .frameParent19 {
+    width: 100% !important;
+    max-width: 300px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    align-items: center !important;
+  }
+
+  .standardsTraining .frameParent20,
+  .standardsTraining .frameParent21,
+  .standardsTraining .frameParent22,
+  .standardsTraining .frameParent23 {
+    width: 100% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    grid-template-columns: 70px minmax(0, 1fr) !important;
+    justify-content: center !important;
+  }
+
+  .standardsTraining .standardisedCurriculumParent {
+    width: 100% !important;
+    min-width: 0 !important;
+    align-items: flex-start !important;
+    text-align: left !important;
   }
 }
 

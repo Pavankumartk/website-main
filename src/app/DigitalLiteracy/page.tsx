@@ -67,7 +67,7 @@ function DigitalLiteracyHero({ onBookDemoClick, bookDemoButtonRef }: { onBookDem
             Empower Every Employee with <span className={styles["dl-hero-heading-accent"]}>Digital Skills</span>
           </h1>
           <p className={styles["dl-hero-subtext"]}>
-            NeuroLXP<sup className={styles["nlxp-footer-heading-tm"]}>TM</sup> delivers engaging digital skills training from basics to advanced workplace tools.
+            NeuroLXP<sup className={styles["nlxp-footer-heading-tm"]}></sup> delivers engaging digital skills training from basics to advanced workplace tools.
           </p>
 
           <div className={styles["dl-hero-buttons"]}>
@@ -493,7 +493,7 @@ function DigitalLiteracyCTA({ onBookDemoClick, bookDemoButtonRef }: { onBookDemo
       <div className={styles["dl-cta-card"]}>
         <h2 className={styles["dl-cta-heading"]}>Ready to Build a Digitally-Skilled Workforce</h2>
         <p className={styles["dl-cta-subtext"]}>
-          Build a future-ready workforce with NeuroLXP<sup className={styles["nlxp-footer-heading-tm"]}>TM</sup>
+          Build a future-ready workforce with NeuroLXP<sup className={styles["nlxp-footer-heading-tm"]}></sup>
           <br />
           Empower every learner with digital skills that drive business success
         </p>

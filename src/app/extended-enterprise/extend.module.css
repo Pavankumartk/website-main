@@ -7,7 +7,7 @@
   	text-align: left;
   	font-size: 16px;
   	color: #31344b;
-  	font-family: 'Segoe UI';
+  	font-family: "Segoe UI", "Inter";
     zoom: 0.97;
 }
 .frameParent {
@@ -19,7 +19,7 @@
   	width: 1440px;
   	height: 80px;
   	overflow: hidden;
-  	font-family: Inter;
+  	font-family: "Segoe UI", "Inter";
 }
 .frameChild {
   	position: absolute;
@@ -100,7 +100,7 @@
   	box-sizing: border-box;
   	text-align: center;
   	color: #2d4cc8;
-  	font-family: 'Segoe UI';
+  	font-family: "Segoe UI", "Inter";
 }
 .signInHelp {
   	position: relative;
@@ -135,7 +135,7 @@
   	align-items: center;
   	gap: 8px;
   	color: #2f3547;
-  	font-family: 'Segoe UI';
+  	font-family: "Segoe UI", "Inter";
 }
 .resourcesWrapper {
   	display: flex;
@@ -159,7 +159,7 @@
 	width: 1440px;
 	height: 475px;
 	text-align: center;
-	font-family: "Segoe UI";
+	font-family: "Segoe UI", "Inter";
 	overflow: visible;
 }
 
@@ -206,7 +206,7 @@
 	align-items: center;
 	justify-content: center;
 	box-sizing: border-box;
-	font-family: "Segoe UI";
+	font-family: "Segoe UI", "Inter";
 	font-weight: 600;
 	font-size: 24px;
 	line-height: 32px;
@@ -227,7 +227,7 @@
 .extendLearningBeyond {
 	width: 883px;
 	height: 50px;
-	font-family: "Segoe UI";
+	font-family: "Segoe UI", "Inter";
 	font-weight: 700;
 	font-size: 36px;
 	line-height: 50px;
@@ -240,7 +240,7 @@
 .trainPartnersVendors {
 	width: 714px;
 	height: 64px;
-	font-family: "Segoe UI";
+	font-family: "Segoe UI", "Inter";
 	font-weight: 400;
 	font-size: 24px;
 	line-height: 32px;
@@ -271,7 +271,7 @@
 	align-items: center;
 	justify-content: center;
 	box-sizing: border-box;
-	font-family: "Segoe UI";
+	font-family: "Segoe UI", "Inter";
 	font-weight: 700;
 	font-size: 18px;
 	line-height: 26px;
@@ -492,7 +492,7 @@
 }
 
 .stakeholderChallenge {
-	font-family: "Segoe UI";
+	font-family: "Segoe UI", "Inter";
 	font-size: 20px;
 	font-weight: 700;
 	line-height: 28px;
@@ -517,7 +517,7 @@
 }
 
 .stakeholderCardTitle {
-	font-family: "Segoe UI";
+	font-family: "Segoe UI", "Inter";
 	font-size: 28px;
 	font-weight: 700;
 	line-height: 36px;
@@ -526,7 +526,7 @@
 }
 
 .stakeholderCardDescription {
-	font-family: "Segoe UI";
+	font-family: "Segoe UI", "Inter";
 	font-size: 18px;
 	font-weight: 400;
 	line-height: 28px;
@@ -569,7 +569,7 @@
 }
 
 .stakeholderHelpTitle {
-	font-family: "Segoe UI";
+	font-family: "Segoe UI", "Inter";
 	font-size: 18px;
 	font-weight: 700;
 	line-height: 24px;
@@ -586,7 +586,7 @@
 }
 
 .stakeholderHelpText {
-	font-family: "Segoe UI";
+	font-family: "Segoe UI", "Inter";
 	font-size: 18px;
 	font-weight: 400;
 	line-height: 26px;
@@ -623,7 +623,7 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	font-family: 'Segoe UI';
+	font-family: "Segoe UI", "Inter";
 	font-size: 24px;
 	font-weight: 600;
 	line-height: 1;
@@ -852,7 +852,7 @@
 		inset 4px 4px 4px #c4c4c4;
 	border-radius: 32px;
 	overflow: hidden;
-	font-family: "Segoe UI";
+	font-family: "Segoe UI", "Inter";
 }
 
 .frameParent24 {
@@ -877,7 +877,7 @@
 
 .empowerYourExtended {
 	width: 540px;
-	font-family: "Segoe UI";
+	font-family: "Segoe UI", "Inter";
 	font-size: 54px;
 	font-weight: 700;
 	line-height: 1.22;
@@ -888,7 +888,7 @@
 
 .neurolxpConnectsTrains {
 	width: 560px;
-	font-family: "Segoe UI";
+	font-family: "Segoe UI", "Inter";
 	font-size: 28px;
 	font-weight: 400;
 	line-height: 40px;
@@ -918,7 +918,7 @@
 	align-items: center;
 	justify-content: center;
 	box-sizing: border-box;
-	font-family: "Segoe UI";
+	font-family: "Segoe UI", "Inter";
 	font-size: 20px;
 	font-weight: 700;
 	line-height: 28px;
@@ -1320,7 +1320,7 @@
     justify-content:center;
     text-decoration:none;
     color:#2D4CC8;
-    font-family:"Segoe UI";
+    font-family: "Segoe UI", "Inter";
     font-size:24px;
     font-weight:600;
     line-height:1;
@@ -3400,17 +3400,157 @@
   }
 }
 
-/* MOBILE ONLY — remove extra gap above "One Platform! Every Stakeholder!" */
-@media (max-width: 600px) {
-  .extendedEnterpriseLearning .frameParent5 {
-    margin-top: -70px !important;
+/* =========================================================
+   BUTTON HOVER ONLY — INSET EFFECT
+   No sizing, positioning, spacing, colour or layout changes.
+   ========================================================= */
+.signInHelpWrapper,
+.bookDemoBtn,
+.bookADemoButton,
+.frameWrapper10 .frameChild21 {
+  cursor: pointer;
+  transition:
+    box-shadow 180ms ease,
+    transform 180ms ease !important;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .signInHelpWrapper:hover,
+  .bookDemoBtn:hover,
+  .bookADemoButton:hover,
+  .frameWrapper10:hover .frameChild21 {
+    box-shadow:
+      inset -4px -4px 4px #ffffff,
+      inset 4px 4px 4px rgba(196, 196, 196, 0.82) !important;
+    transform: translateY(1px) !important;
   }
 }
 
-/* MOBILE ONLY — add a small space above "One Platform! Every Stakeholder!" */
+.signInHelpWrapper:active,
+.bookDemoBtn:active,
+.bookADemoButton:active,
+.frameWrapper10:active .frameChild21 {
+  box-shadow:
+    inset -3px -3px 4px #ffffff,
+    inset 4px 4px 5px rgba(191, 194, 196, 0.90) !important;
+  transform: translateY(2px) !important;
+}
+
+.signInHelpWrapper:focus-visible,
+.bookDemoBtn:focus-visible,
+.bookADemoButton:focus-visible,
+.frameWrapper10:focus-visible .frameChild21 {
+  box-shadow:
+    inset -4px -4px 4px #ffffff,
+    inset 4px 4px 4px rgba(196, 196, 196, 0.82) !important;
+  outline: none !important;
+}
+
+/* Keep the requested font stack on the button text itself. */
+.signInHelpWrapper,
+.signInHelpWrapper *,
+.bookDemoBtn,
+.bookDemoBtn *,
+.bookADemoButton,
+.bookADemoButton *,
+.frameWrapper10,
+.frameWrapper10 * {
+  font-family: "Segoe UI", "Inter" !important;
+}
+
+
+/* =========================================================
+   LAST CTA SECTION ONLY — 36PX HEADING / 24PX SUBHEADING
+   Alignment correction only.
+   ========================================================= */
+.extendedEnterpriseLearning .frameParent23 .frameParent24 {
+  align-items: flex-start !important;
+  justify-content: flex-start !important;
+  gap: 26px !important;
+  text-align: left !important;
+}
+
+.extendedEnterpriseLearning .frameParent23 .empowerYourExtendedEnterpriParent {
+  width: 100% !important;
+  align-items: flex-start !important;
+  gap: 18px !important;
+  text-align: left !important;
+}
+
+.extendedEnterpriseLearning .frameParent23 .empowerYourExtended {
+  width: 100% !important;
+  height: auto !important;
+  min-height: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+
+  font-size: 24px !important;
+  line-height: 32px !important;
+
+  text-align: left !important;
+  white-space: normal !important;
+  overflow: visible !important;
+}
+
+.extendedEnterpriseLearning .frameParent23 .neurolxpConnectsTrains {
+  width: 100% !important;
+  height: auto !important;
+  min-height: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+
+  font-size: 24px !important;
+  line-height: 34px !important;
+
+  text-align: left !important;
+  white-space: normal !important;
+  overflow: visible !important;
+}
+
+.extendedEnterpriseLearning .frameParent23 .frameWrapper10 {
+  margin-top: 2px !important;
+  align-self: flex-start !important;
+}
+
+
+/* =========================================================
+   BENEFITS SECTION — OVERLAP FIX ONLY
+   Keeps the existing design, font sizes, widths, colors,
+   icons, spacing and layout unchanged.
+   ========================================================= */
+@media screen and (min-width: 1200px) {
+
+  /* "Consistent Training" can wrap to two lines.
+     Remove only its fixed 37px height so the description
+     naturally starts below the complete title. */
+  .extendedEnterpriseLearning .frameParent13 .consistentTraining {
+    height: auto !important;
+    min-height: 37px !important;
+    max-height: none !important;
+    overflow: visible !important;
+  }
+
+  .extendedEnterpriseLearning .frameParent13 .consistentTrainingParent {
+    height: auto !important;
+    min-height: 0 !important;
+    overflow: visible !important;
+  }
+}
+
+
+/* MOBILE ONLY — LAST CTA SUBHEADING SIZE */
+@media screen and (max-width: 767.98px) {
+  .extendedEnterpriseLearning .frameParent23 .neurolxpConnectsTrains {
+    font-size: 16px !important;
+    line-height: 24px !important;
+  }
+}
+
+
+/* MOBILE ONLY — PREVENT STAKEHOLDER HEADING FROM OVERLAPPING HERO PILLS */
 @media (max-width: 600px) {
-  .extendedEnterpriseLearning .frameParent5 {
-    margin-top: -45px !important;
+  .extendedEnterpriseLearning > .frameParent5 {
+    margin-top: 24px !important;
   }
 }
 

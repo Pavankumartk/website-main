@@ -29,6 +29,7 @@ export default function TalkToExpertButton({
 
   const buttonClassName = [
     styles["talk-to-expert-fab"],
+    portalTargetId ? styles["talk-to-expert-fab--embedded"] : undefined,
     className,
   ]
     .filter(Boolean)

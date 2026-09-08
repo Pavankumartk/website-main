@@ -25,7 +25,7 @@
   background-color: var(--page-bg);
   color: var(--text);
   text-align: left;
-  font-family: 'Segoe UI', sans-serif;
+  font-family: 'Segoe UI', 'Inter';
 }
 
 .blendedLearning *,
@@ -747,11 +747,18 @@
   align-items: center;
   justify-content: center;
   color: var(--blue);
-  font-family: 'Segoe UI', sans-serif;
+  font-family: 'Segoe UI', 'Inter';
   font-size: clamp(16px, 1.53vw, 22px);
   line-height: 1.35;
   font-weight: 700;
   cursor: pointer;
+  transition: box-shadow 0.2s ease;
+}
+
+.blendedCtaButton:hover {
+  box-shadow:
+    inset -4px -4px 4px #ffffff,
+    inset 4px 4px 4px rgba(196, 196, 196, 0.8);
 }
 
 .blendedCtaImageFrame {
@@ -1070,15 +1077,22 @@
   }
 }
 
+@media (max-width: 900px) {
+  .blendedHeroTitle,
+  .blendedHeroDescription {
+    text-align: center;
+  }
+}
 
-/* Segoe UI only — including breadcrumb and all page descendants */
+
+/* Segoe UI primary with Inter fallback — including breadcrumb and all page descendants */
 .blendedLearning,
 .blendedLearning *,
 .blendedLearning *::before,
 .blendedLearning *::after,
 .frameDiv,
 .frameDiv * {
-  font-family: 'Segoe UI', sans-serif !important;
+  font-family: 'Segoe UI', 'Inter' !important;
 }
 
 /* =========================================================
@@ -1109,4 +1123,3 @@
     word-break: normal !important;
   }
 }
-

@@ -69,7 +69,7 @@ body {
     display: flex;
     align-items: flex-end;
 
-    font-family: "Segoe UI";
+    font-family: "Segoe UI", "Inter", sans-serif;
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
@@ -98,7 +98,7 @@ body {
     display: flex;
     align-items: flex-end;
 
-    font-family: "Segoe UI";
+    font-family: "Segoe UI", "Inter", sans-serif;
     font-size: 16px;
     font-weight: 700;
     line-height: 24px;
@@ -190,7 +190,7 @@ body {
 }
 
 .hero-badge span {
-    font-family: "Segoe UI";
+    font-family: "Segoe UI", "Inter", sans-serif;
     font-size: 22px;
     font-weight: 600;
     line-height: 32px;
@@ -205,7 +205,7 @@ body {
 
     margin: 0;
 
-    font-family: "Segoe UI";
+    font-family: "Segoe UI", "Inter", sans-serif;
     font-weight: 700;
     font-size: 48px;
     line-height: 60px;
@@ -224,7 +224,7 @@ body {
 
     margin: 0;
 
-    font-family: "Segoe UI";
+    font-family: "Segoe UI", "Inter", sans-serif;
     font-size: 28px;
     font-weight: 400;
     line-height: 40px;
@@ -250,7 +250,7 @@ body {
         -4px -4px 8px #FFFFFF,
         4px 4px 8px rgba(196, 196, 196, 0.80);
 
-    transition: all 0.3s ease;
+    transition: box-shadow 0.3s ease, transform 0.25s ease, filter 0.25s ease;
 }
 
 .hero-btn-text {
@@ -260,7 +260,7 @@ body {
     align-items: center;
     justify-content: center;
 
-    font-family: "Segoe UI";
+    font-family: "Segoe UI", "Inter", sans-serif;
     font-size: 22px;
     font-weight: 700;
     line-height: 30px;
@@ -270,7 +270,7 @@ body {
 }
 
 .hero-btn span {
-    font-family: "Segoe UI";
+    font-family: "Segoe UI", "Inter", sans-serif;
     font-size: 22px;
     font-weight: 600;
     line-height: 32px;
@@ -280,12 +280,16 @@ body {
 }
 
 .hero-btn:hover {
+    transform: translateY(-2px);
+    filter: brightness(1.02);
     box-shadow:
         inset -4px -4px 8px #FFFFFF,
         inset 4px 4px 8px rgba(196, 196, 196, 0.80);
 }
 
 .hero-btn:active {
+    transform: translateY(0);
+    filter: brightness(1);
     box-shadow:
         inset -4px -4px 8px #FFFFFF,
         inset 4px 4px 8px rgba(196, 196, 196, 0.80);
@@ -364,7 +368,7 @@ body {
 }
 
 .insights-badge span {
-    font-family: "Segoe UI";
+    font-family: "Segoe UI", "Inter", sans-serif;
     font-size: 22px;
     font-weight: 600;
     line-height: 32px;
@@ -399,7 +403,7 @@ body {
     align-items: center;
     justify-content: center;
 
-    font-family: "Segoe UI";
+    font-family: "Segoe UI", "Inter", sans-serif;
     font-size: 24px;
     font-weight: 600;
     line-height: 32px;
@@ -417,7 +421,7 @@ body {
 
     margin: 0;
 
-    font-family: "Segoe UI";
+    font-family: "Segoe UI", "Inter", sans-serif;
     font-size: 48px;
     font-weight: 700;
     line-height: 60px;
@@ -437,7 +441,7 @@ body {
 
     margin: 0;
 
-    font-family: "Segoe UI";
+    font-family: "Segoe UI", "Inter", sans-serif;
     font-size: 28px;
     font-weight: 400;
     line-height: 40px;
@@ -492,7 +496,7 @@ body {
 
     margin: 0;
 
-    font-family: "Segoe UI";
+    font-family: "Segoe UI", "Inter", sans-serif;
     font-weight: 700;
     font-size: 36px;
     line-height: 50px;
@@ -509,7 +513,7 @@ body {
 
     margin: 0;
 
-    font-family: "Segoe UI";
+    font-family: "Segoe UI", "Inter", sans-serif;
     font-weight: 400;
     font-size: 24px;
     line-height: 32px;
@@ -581,7 +585,7 @@ body {
 
     width: 184px;
 
-    font-family: "Segoe UI";
+    font-family: "Segoe UI", "Inter", sans-serif;
     font-size: 24px;
     font-weight: 700;
     line-height: 36px;
@@ -730,7 +734,7 @@ body {
 
 .frame-four-title {
     margin: 0;
-    font-family: "Segoe UI";
+    font-family: "Segoe UI", "Inter", sans-serif;
     font-weight: 700;
     font-size: 36px;
     line-height: 50px;
@@ -741,7 +745,7 @@ body {
 .frame-four-description {
     width: 486px;
     margin: 0;
-    font-family: "Segoe UI";
+    font-family: "Segoe UI", "Inter", sans-serif;
     font-weight: 400;
     font-size: 28px;
     line-height: 40px;
@@ -810,7 +814,7 @@ body {
     width: 286px;
     height: 37px;
 
-    font-family: "Segoe UI";
+    font-family: "Segoe UI", "Inter", sans-serif;
     font-weight: 600;
     font-size: 24px;
     line-height: 36px;
@@ -849,7 +853,7 @@ body {
 .frame-five-title {
     width: 883px;
     margin: 0;
-    font-family: "Segoe UI";
+    font-family: "Segoe UI", "Inter", sans-serif;
     font-size: 48px;
     font-weight: 700;
     line-height: 60px;
@@ -872,7 +876,7 @@ body {
 
     margin: 0;
 
-    font-family: "Segoe UI";
+    font-family: "Segoe UI", "Inter", sans-serif;
     font-size: 24px;
     font-weight: 400;
     line-height: 32px;
@@ -2773,4 +2777,305 @@ body {
     outline: 0;
     background: transparent;
     box-shadow: none;
+}
+
+/* =========================================================
+   FINAL RESPONSIVE TYPOGRAPHY + OVERLAP CORRECTION
+   Hero typography/design is intentionally left unchanged.
+   ========================================================= */
+
+/* ---------- NON-HERO TYPOGRAPHY: DESKTOP BASE ---------- */
+.insights-title,
+.topics-title,
+.frame-four-title,
+.frame-five-title {
+    font-size: 36px;
+    line-height: 50px;
+}
+
+.insights-description,
+.topics-description,
+.frame-four-description,
+.frame-five-description,
+.insights-badge-text,
+.topic-title,
+.frame-four-item-text {
+    font-size: 24px;
+    line-height: 32px;
+}
+
+.insights-badge span {
+    font-size: 24px;
+    line-height: 32px;
+}
+
+/* ---------- KEEP THE NEXT CARD CLEAR OF THE TOPICS WAVE ---------- */
+.frame-four-section {
+    position: relative;
+    z-index: 0;
+}
+
+@media (min-width: 1241px) {
+    .frame-four-section {
+        padding-top: 72px;
+    }
+}
+
+/* ---------- LARGE TABLET / SMALL LAPTOP ---------- */
+@media (min-width: 1025px) and (max-width: 1240px) {
+    .insights-title,
+    .topics-title,
+    .frame-four-title,
+    .frame-five-title {
+        font-size: 34px;
+        line-height: 46px;
+    }
+
+    .insights-description,
+    .topics-description,
+    .frame-four-description,
+    .frame-five-description,
+    .insights-badge-text,
+    .topic-title,
+    .frame-four-item-text {
+        font-size: 22px;
+        line-height: 31px;
+    }
+
+    .insights-badge span {
+        font-size: 22px;
+        line-height: 31px;
+    }
+
+    .frame-four-section {
+        padding-top: 58px;
+    }
+}
+
+/* ---------- TABLET ---------- */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .insights-title,
+    .topics-title,
+    .frame-four-title,
+    .frame-five-title {
+        font-size: 32px;
+        line-height: 43px;
+    }
+
+    .insights-description,
+    .topics-description,
+    .frame-four-description,
+    .frame-five-description,
+    .insights-badge-text,
+    .topic-title,
+    .frame-four-item-text {
+        font-size: 20px;
+        line-height: 29px;
+    }
+
+    .insights-badge span {
+        font-size: 20px;
+        line-height: 29px;
+    }
+
+    /* Two columns prevents the topic cards from becoming too narrow. */
+    .topics-section {
+        height: 900px;
+        min-height: 900px;
+    }
+
+    .topics-grid {
+        width: min(100%, 720px);
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        grid-template-rows: auto;
+        gap: 24px;
+        margin-inline: auto;
+    }
+
+    .topic-card {
+        width: 100%;
+        max-width: 330px;
+    }
+
+    /* Stack this section on tablet so the text/card never overlap. */
+    .frame-four-container {
+        width: min(100%, 720px);
+        max-width: 720px;
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .frame-four-left,
+    .frame-four-right,
+    .frame-four-content,
+    .frame-four-heading {
+        width: 100%;
+    }
+
+    .frame-four-content {
+        align-items: center;
+        text-align: center;
+    }
+
+    .frame-four-title,
+    .frame-four-description {
+        text-align: center;
+    }
+
+    .frame-four-description {
+        max-width: 680px;
+        margin-inline: auto;
+    }
+
+    .frame-four-card {
+        width: min(100%, 520px);
+        margin-inline: auto;
+    }
+
+    .frame-four-section {
+        padding-top: 52px;
+    }
+}
+
+/* ---------- MOBILE ---------- */
+@media (max-width: 768px) {
+    .insights-title,
+    .topics-title,
+    .frame-four-title,
+    .frame-five-title {
+        font-size: 28px;
+        line-height: 38px;
+    }
+
+    .insights-description,
+    .topics-description,
+    .frame-four-description,
+    .frame-five-description,
+    .insights-badge-text {
+        font-size: 18px;
+        line-height: 27px;
+    }
+
+    .insights-badge span {
+        font-size: 18px;
+        line-height: 27px;
+    }
+
+    .topic-title {
+        font-size: 20px;
+        line-height: 28px;
+    }
+
+    .frame-four-item-text {
+        font-size: 18px;
+        line-height: 26px;
+    }
+
+    .topics-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .topic-card {
+        width: min(100%, 350px);
+        max-width: 350px;
+        margin-inline: auto;
+    }
+
+    .frame-four-section {
+        padding-top: 44px;
+    }
+}
+
+/* ---------- VERY SMALL MOBILE ---------- */
+@media (max-width: 420px) {
+    .insights-title,
+    .topics-title,
+    .frame-four-title,
+    .frame-five-title {
+        font-size: 26px;
+        line-height: 35px;
+    }
+
+    .insights-description,
+    .topics-description,
+    .frame-four-description,
+    .frame-five-description,
+    .insights-badge-text {
+        font-size: 17px;
+        line-height: 25px;
+    }
+
+    .topic-title {
+        font-size: 19px;
+        line-height: 27px;
+    }
+
+    .frame-four-item-text {
+        font-size: 17px;
+        line-height: 25px;
+    }
+}
+
+/* =========================================================
+   ONLY TWO CORRECTIONS
+   1. Desktop frame-four card alignment
+   2. Mobile Insights heading = 3 lines
+   ========================================================= */
+
+/* 1) DESKTOP: keep the following card aligned with its section content
+      instead of appearing early by itself on the right. */
+@media (min-width: 1241px) {
+    .topics-section {
+        margin-bottom: 0;
+    }
+
+    .frame-four-container {
+        align-items: flex-start;
+    }
+
+    .frame-four-right {
+        align-self: flex-start;
+    }
+}
+
+/* 2) MOBILE: preserve the existing two <br> breaks and keep the
+      highlighted span inline, producing:
+      Insights Shaping
+      the Future of
+      Learning
+*/
+@media (max-width: 768px) {
+    .insights-title br {
+        display: initial !important;
+    }
+
+    .insights-title span {
+        display: inline !important;
+        width: auto !important;
+        max-width: none !important;
+        white-space: nowrap !important;
+    }
+}
+
+
+/* =========================================================
+   ONLY CHANGE: MOVE FRAME FOUR LEFT CONTENT SLIGHTLY DOWN
+   DESKTOP ONLY
+   ========================================================= */
+@media (min-width: 1241px) {
+    .frame-four-left {
+        transform: translateY(32px);
+    }
+}
+
+
+/* =========================================================
+   ONLY CHANGE: MOBILE "INSIGHTS SHAPING THE FUTURE OF LEARNING"
+   ========================================================= */
+@media (max-width: 768px) {
+    .insights-title {
+        font-size: 24px;
+        line-height: 32px;
+    }
 }

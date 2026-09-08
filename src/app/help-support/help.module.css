@@ -7,7 +7,7 @@
   	text-align: left;
   	font-size: 16px;
   	color: #31344b;
-  	font-family: 'Segoe UI';
+  	font-family: "Segoe UI", "Inter";
 	zoom: 0.97;
 }
 .frameParent {
@@ -100,7 +100,7 @@
   	box-sizing: border-box;
   	text-align: center;
   	color: #2d4cc8;
-  	font-family: 'Segoe UI';
+  	font-family: "Segoe UI", "Inter";
 }
 .signInHelp {
   	position: relative;
@@ -135,7 +135,7 @@
   	align-items: center;
   	gap: 8px;
   	color: #2f3547;
-  	font-family: 'Segoe UI';
+  	font-family: "Segoe UI", "Inter";
 }
 .resourcesWrapper {
   	display: flex;
@@ -197,7 +197,7 @@
 	align-items: center;
 	justify-content: center;
 	box-sizing: border-box;
-	font-family: "Segoe UI";
+	font-family: "Segoe UI", "Inter";
 	font-size: 24px;
 	font-weight: 600;
 	line-height: 26px;
@@ -241,7 +241,7 @@
 	justify-content: center;
 	box-sizing: border-box;
 	text-decoration: none;
-	font-family: "Segoe UI";
+	font-family: "Segoe UI", "Inter";
 	font-size: 24px;
 	font-weight: 700;
 	line-height: 26px;
@@ -378,7 +378,7 @@
 
 .supportCardTitle {
 	width: 150px;
-	font-family: "Segoe UI";
+	font-family: "Segoe UI", "Inter";
 	font-style: normal;
 	font-weight: 700;
 	font-size: 24px;
@@ -389,7 +389,7 @@
 
 .supportCardText {
 	width: 202px;
-	font-family: "Segoe UI";
+	font-family: "Segoe UI", "Inter";
 	font-style: normal;
 	font-weight: 400;
 	font-size: 20px;
@@ -495,7 +495,7 @@
 
 .knowledgeResources {
 	width: 472px;
-	font-family: "Segoe UI";
+	font-family: "Segoe UI", "Inter";
 	font-weight: 700;
 	font-size: 36px;
 	line-height: 50px;
@@ -505,7 +505,7 @@
 
 .accessPracticalResources {
 	width: 470px;
-	font-family: "Segoe UI";
+	font-family: "Segoe UI", "Inter";
 	font-weight: 400;
 	font-size: 24px;
 	line-height: 32px;
@@ -596,7 +596,7 @@
 .contentManagementResources {
 	height: 37px;
 	position: relative;
-	font-family: "Segoe UI";
+	font-family: "Segoe UI", "Inter";
 	font-weight: 700;
 	font-size: 24px;
 	line-height: 36px;
@@ -656,7 +656,7 @@
 	justify-content: center;
 	box-sizing: border-box;
 	flex-shrink: 0;
-	font-family: "Segoe UI";
+	font-family: "Segoe UI", "Inter";
 	color: #2d4cc8;
 }
 
@@ -1132,7 +1132,7 @@
 	text-align: left;
 	font-size: 16px;
 	color: #31344b;
-	font-family: "Segoe UI";
+	font-family: "Segoe UI", "Inter";
 	zoom: 1;
 	box-sizing: border-box;
 }
@@ -1157,7 +1157,7 @@
 	gap: 8px;
 	background-color: #dfe6e9;
 	color: #2f3547;
-	font-family: "Segoe UI";
+	font-family: "Segoe UI", "Inter";
 	box-sizing: border-box;
 }
 
@@ -1798,7 +1798,7 @@
 	width: 100%;
 	margin: 0;
 
-	font-family: "Segoe UI";
+	font-family: "Segoe UI", "Inter";
 	font-style: normal;
 	font-weight: 700;
 
@@ -1816,7 +1816,7 @@
 	width: 100%;
 	margin: 0;
 
-	font-family: "Segoe UI";
+	font-family: "Segoe UI", "Inter";
 	font-style: normal;
 	font-weight: 400;
 
@@ -2219,7 +2219,7 @@
 	height: auto !important;
 	margin: 0 !important;
 
-	font-family: "Segoe UI" !important;
+	font-family: "Segoe UI", "Inter" !important;
 	font-size: 36px !important;
 	line-height: 50px !important;
 	font-weight: 700 !important;
@@ -2336,7 +2336,7 @@
 
 	margin: 0 !important;
 
-	font-family: "Segoe UI" !important;
+	font-family: "Segoe UI", "Inter" !important;
 	font-style: normal !important;
 	font-weight: 700 !important;
 
@@ -2355,7 +2355,7 @@
 
 	margin: 0 !important;
 
-	font-family: "Segoe UI" !important;
+	font-family: "Segoe UI", "Inter" !important;
 	font-style: normal !important;
 	font-weight: 400 !important;
 
@@ -2829,7 +2829,7 @@
 /* Card Title */
 .supportCardTitle {
     width: 100%;
-    font-family: 'Segoe UI', sans-serif;
+    font-family: "Segoe UI", "Inter", sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 22px;
@@ -2841,7 +2841,7 @@
 /* Card Subtitle / Description */
 .supportCardText {
     width: 100%;
-    font-family: 'Segoe UI', sans-serif;
+    font-family: "Segoe UI", "Inter", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 15px;
@@ -2978,3 +2978,67 @@
     margin-top: 0 !important;
   }
 }
+
+
+/* BUTTON HOVER ONLY — NO SIZE / POSITION / COLOR / LAYOUT CHANGES */
+.signInHelpWrapper,
+.frameChild2 {
+    cursor: pointer;
+    transition: box-shadow 180ms ease !important;
+}
+
+@media (hover: hover) and (pointer: fine) {
+    .signInHelpWrapper:hover,
+    .helpAndSupport .frameParent3 > button:has(> .bookDemoVisual):hover > .bookDemoVisual,
+    .helpAndSupport .frameParent3 > button:has(> .frameChild2):hover > .frameChild2,
+    .frameChild2:hover {
+        box-shadow:
+            inset -4px -4px 8px #ffffff,
+            inset 4px 4px 8px rgba(196, 196, 196, 0.8) !important;
+    }
+}
+
+.signInHelpWrapper:active,
+.helpAndSupport .frameParent3 > button:has(> .bookDemoVisual):active > .bookDemoVisual,
+.helpAndSupport .frameParent3 > button:has(> .frameChild2):active > .frameChild2,
+.frameChild2:active {
+    box-shadow:
+        inset -3px -3px 6px #ffffff,
+        inset 4px 4px 7px rgba(191, 194, 196, 0.9) !important;
+}
+
+
+/* =========================================================
+   SECTION SPACING ONLY — HERO TO COMPREHENSIVE SUPPORT
+   Keep exactly 48px between these two sections.
+   No design/content/font/card/image changes.
+   ========================================================= */
+.helpAndSupport > .frameParent2 {
+    margin-bottom: 48px !important;
+}
+
+
+/* =========================================================
+   FOOTER SPACING ONLY
+   Keep exactly 48px between the final page section and footer.
+   No design/content/card/font/image changes.
+   ========================================================= */
+.helpAndSupport {
+    padding-bottom: 48px !important;
+}
+
+
+/* =========================================================
+   EXACT LAST SECTION → FOOTER GAP = 48PX
+   The extra blank space was coming from the page min-height.
+   No section/card/font/image/design changes.
+   ========================================================= */
+.helpAndSupport {
+    min-height: 0 !important;
+    padding-bottom: 48px !important;
+}
+
+.helpAndSupport > .helpAndSupportChild {
+    margin-bottom: 0 !important;
+}
+

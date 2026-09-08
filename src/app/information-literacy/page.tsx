@@ -254,7 +254,7 @@ const InformationLiteracy: NextPage = () => {
               <b className={styles.findEvaluate}>{`Find, Evaluate & Use Knowledge Responsibly`}</b>
             </div>
             <div className={styles.neurolxpEquipsLearners}>
-              NeuroLXP™ equips learners to cut through digital noise identifying credible sources, thinking critically, and acting on information with confidence.
+              NeuroLXP equips learners to cut through digital noise identifying credible sources, thinking critically, and acting on information with confidence.
               <br />
             </div>
           </div>
@@ -528,7 +528,7 @@ const InformationLiteracy: NextPage = () => {
         <div className={styles.builtForTheWayLearnersActParent}>
           <div className={styles.learnersThinkBadge}>Why NeuroLXP™</div>
           <b className={styles.builtForTheContainer}>Built for the Way Learners Actually Think</b>
-          <div className={styles.empowerLearnersTo}>NeuroLXP™ transforms information literacy into practical skills through structured learning and real-world application.</div>
+          <div className={styles.empowerLearnersTo}>NeuroLXP transforms information literacy into practical skills through structured learning and real-world application.</div>
         </div>
       </div>
       <div className={styles.frameParent41}>

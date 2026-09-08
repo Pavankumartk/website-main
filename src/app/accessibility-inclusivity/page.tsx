@@ -366,7 +366,7 @@ const AccessibilityInclusivity: NextPage = () => {
 				</div>
 			</div>
 			<div className="frameParent31">
-				<div className="neurolxpBadge"><span className="neurolxpBadgeText">NeuroLXP<span className="neurolxpTm">™</span></span></div>
+				<div className="neurolxpBadge"><span className="neurolxpBadgeText">NeuroLXP<span className="neurolxp">™</span></span></div>
 				<div className="empoweringInclusiveLearningParent">
 					<b className="empoweringInclusiveLearning">Empowering Inclusive Learning</b>
 					<div className="neurolxpHelpsInstitutions">NeuroLXP helps institutions create learning ecosystems where every learner has the opportunity to succeed without barriers.<br /><br /></div>

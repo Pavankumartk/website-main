@@ -1,0 +1,713 @@
+.team-page {
+  --team-bg: #dfe6e9;
+  --team-primary: #2d4cc8;
+  --team-primary-dark: #243fa8;
+  --team-dark: #31344b;
+  --team-text: #2f3547;
+  --team-raised: -8px -8px 16px #ffffff, 8px 8px 16px #c6c6c9;
+  --team-raised-strong: 10px 10px 20px #c4c4c4, -10px -10px 20px #ffffff;
+  --team-inset: -4px -4px 8px #ffffff, 4px 4px 8px rgba(196, 196, 196, 0.8);
+  --team-inset-deep: inset -8px -8px 16px #ffffff, inset 8px 8px 16px rgba(196, 196, 196, 0.8);
+  background: var(--team-bg);
+  color: var(--team-dark);
+  font-family:
+    "Segoe UI",
+    -apple-system,
+    BlinkMacSystemFont,
+    sans-serif;
+  overflow-x: hidden;
+}
+
+.team-page * {
+  box-sizing: border-box;
+}
+
+.team-page a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.team-page a:focus-visible,
+.team-page button:focus-visible {
+  outline: 2px solid var(--team-primary);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .team-page * {
+    transition: none !important;
+    animation: none !important;
+  }
+}
+
+.team-breadcrumb {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 20px 24px 0;
+}
+
+.team-breadcrumb ol {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: 0.02em;
+  color: var(--team-text);
+  flex-wrap: wrap;
+}
+
+.team-breadcrumb li[aria-current="page"] {
+  font-weight: 700;
+  color: var(--team-primary-dark);
+}
+
+.team-breadcrumb-sep {
+  display: flex;
+  align-items: center;
+}
+
+.team-hero {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 24px 0;
+  text-align: center;
+}
+
+.team-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 24px;
+  border-radius: 28px;
+  background: var(--team-bg);
+  box-shadow: var(--team-inset);
+  color: var(--team-primary);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  text-transform: capitalize;
+}
+
+.team-hero-title {
+  margin: 12px 0 0;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: 0.03em;
+  color: var(--team-dark);
+}
+
+.team-hero-desc {
+  margin: 12px 0 0;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: var(--team-text);
+}
+
+.team-hero-pills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 24px;
+}
+
+.team-hero-pill {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 140px;
+  height: 56px;
+  padding: 0 28px;
+  background: var(--team-bg);
+  border-width: 0 4px;
+  border-style: solid;
+  border-radius: 200px;
+  box-shadow: var(--team-raised);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: var(--team-dark);
+}
+
+.team-founder {
+  max-width: 1280px;
+  margin: 48px auto 0;
+  padding: 0 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.team-founder-photo {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 608 / 603;
+  border-radius: 24px;
+  overflow: hidden;
+  background: #ffffff;
+}
+
+.team-founder-photo img {
+  object-fit: cover;
+}
+
+.team-founder-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.team-eyebrow--inline {
+  text-transform: none;
+}
+
+.team-founder-name {
+  margin: 0;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 38px;
+  letter-spacing: 0.03em;
+  color: var(--team-dark);
+}
+
+.team-founder-role {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: 0.03em;
+  color: var(--team-primary);
+}
+
+.team-founder-tagline {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: 0.03em;
+  color: var(--team-text);
+}
+
+.team-founder-desc {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: var(--team-text);
+}
+
+.team-linkedin-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 8px;
+  padding: 14px 24px;
+  background: var(--team-bg);
+  border-radius: 32px;
+  box-shadow: var(--team-raised);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--team-primary);
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+    border: none;
+}
+
+.team-linkedin-btn:hover {
+  transform: translateY(-2px);
+  box-shadow:
+    -10px -10px 18px #ffffff,
+    10px 10px 18px #c6c6c9;
+}
+
+.team-values {
+  max-width: 1280px;
+  margin: 48px auto 0;
+  padding: 0 24px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+
+.team-value-card {
+  background: var(--team-bg);
+  border-radius: 24px;
+  box-shadow: var(--team-inset-deep);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.team-value-photo {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 360 / 150;
+  border-radius: 8px;
+  overflow: hidden;
+  background: var(--team-bg);
+  box-shadow: var(--team-raised-strong);
+}
+
+.team-value-photo img {
+  object-fit: cover;
+}
+
+.team-value-title {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+  letter-spacing: 0.03em;
+  color: var(--team-primary);
+}
+
+.team-value-desc {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0.03em;
+  color: var(--team-text);
+}
+
+.team-group-photo {
+  max-width: 1280px;
+  margin: 48px auto 0;
+  padding: 0 24px;
+}
+
+.team-group-photo-frame {
+  position: relative;
+  aspect-ratio: 1280 / 694;
+  border-radius: 32px;
+  background: var(--team-bg);
+  box-shadow: var(--team-inset-deep);
+}
+
+.team-group-photo-inner {
+  position: absolute;
+  inset: 16px;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: var(--team-raised-strong);
+}
+
+.team-group-photo-inner img {
+  object-fit: cover;
+}
+
+.team-section-title {
+  margin: 0 auto;
+  max-width: 900px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: 0.03em;
+  text-transform: capitalize;
+  color: var(--team-dark);
+}
+
+.team-grid-section {
+  max-width: 1280px;
+  margin: 48px auto 0;
+  padding: 0 24px;
+}
+
+.team-grid {
+  margin-top: 24px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+
+.team-card {
+  background: var(--team-bg);
+  border-radius: 16px;
+  box-shadow: var(--team-raised-strong);
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 8px;
+}
+
+.team-avatar {
+  position: relative;
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  overflow: hidden;
+  background: var(--team-bg);
+  box-shadow: var(--team-inset);
+  margin-bottom: 8px;
+}
+
+.team-avatar img {
+  object-fit: cover;
+}
+
+.team-card-name {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+  letter-spacing: 0.03em;
+  color: var(--team-primary);
+}
+
+.team-card-role {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: var(--team-dark);
+}
+
+.team-card-blurb {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0.03em;
+  color: var(--team-text);
+}
+
+.team-bring {
+  max-width: 1180px;
+  margin: 48px auto 0;
+  padding: 0 24px;
+  justify-self: center;
+}
+
+.team-bring-grid {
+  margin-top: 24px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+}
+
+.team-bring-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.team-bring-icon {
+  flex: none;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--team-bg);
+  box-shadow: var(--team-inset);
+}
+
+.team-bring-icon svg {
+  width: 26px;
+  height: 26px;
+}
+
+.team-bring-copy h3 {
+  margin: 0 0 8px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+  letter-spacing: 0.03em;
+}
+
+.team-bring-copy p {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: var(--team-dark);
+}
+
+.team-how {
+  max-width: 900px;
+  margin: 48px auto 0;
+  padding: 0 24px 48px;
+  justify-self: center;
+}
+
+.team-how-grid {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 60px;
+}
+
+.team-how-card {
+  background: var(--team-bg);
+  box-shadow: var(--team-inset);
+  text-align: center;
+  border-radius: 24px 24px 100px 100px;
+  padding: 40px 24px 20px;
+  position: relative;
+  width: 330px;
+  height: 132px;
+}
+
+.team-how-icon {
+  position: absolute;
+  top: -28px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #dfe6e9;
+  box-shadow: var(--team-raised-strong);
+  border: 2px solid;
+}
+
+.team-how-icon svg {
+  width: 26px;
+  height: 26px;
+}
+
+.team-how-card h3 {
+  margin: 0 0 8px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+  letter-spacing: 0.03em;
+}
+
+.team-how-card p {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 22px;
+  letter-spacing: 0.03em;
+  color: var(--team-dark);
+}
+
+@media (min-width: 768px) {
+  .team-hero {
+    max-width: 700px;
+    padding-top: 56px;
+  }
+
+  .team-hero-title {
+    font-size: 36px;
+    line-height: 44px;
+  }
+
+  .team-hero-desc {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .team-founder {
+    flex-direction: row;
+    align-items: center;
+    margin-top: 64px;
+  }
+
+  .team-founder-photo {
+    flex: 0 0 45%;
+  }
+
+  .team-founder-content {
+    flex: 1;
+  }
+
+  .team-founder-name {
+    font-size: 40px;
+    line-height: 46px;
+  }
+
+  .team-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .team-bring-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+  }
+
+  .team-how-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .team-section-title {
+    font-size: 24px;
+    line-height: 44px;
+  }
+  
+}
+
+@media (min-width: 1024px) {
+  .team-founder-photo {
+    flex: 0 0 460px;
+  }
+
+  .team-hero {
+    max-width: 900px;
+  }
+
+  .team-values {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .team-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 1280px) {
+  .team-hero {
+    max-width: 1052px;
+    padding-top: 64px;
+  }
+
+  .team-eyebrow {
+    font-size: 24px;
+    line-height: 32px;
+    padding: 12px 32px;
+  }
+
+  .team-hero-pills {
+    gap: 32px;
+    margin-top: 32px;
+  }
+
+  .team-hero-pill {
+    width: 300px;
+    height: 90px;
+  }
+
+  .team-founder-photo {
+    flex: 0 0 608px;
+  }
+
+  .team-founder-name {
+    font-size: 48px;
+    line-height: 50px;
+  }
+
+  .team-founder-role,
+  .team-founder-tagline {
+    font-size: 28px;
+    line-height: 40px;
+  }
+
+  .team-founder-desc {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .team-linkedin-btn {
+    padding: 16px 32px;
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .team-values {
+    gap: 32px;
+  }
+
+  .team-value-title {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .team-value-desc {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .team-section-title {
+    font-size: 36px;
+    line-height: 70px;
+  }
+
+  .team-how .team-section-title {
+    font-size: 36px;
+    line-height: 74px;
+  }
+
+  .team-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+  }
+
+  .team-avatar {
+    width: 147px;
+    height: 147px;
+  }
+
+  .team-card-name,
+  .team-card-blurb {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .team-card-role {
+    font-size: 18px;
+    line-height: 26px;
+  }
+
+  .team-bring-item h3 {
+    font-size: 24px;
+    line-height: 36px;
+  }
+
+  .team-bring-item p {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .team-how-card h3 {
+    font-size: 28px;
+    line-height: 42px;
+  }
+
+  .team-how-card p {
+    font-size: 20px;
+    line-height: 28px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .team-breadcrumb,
+  .team-founder,
+  .team-values,
+  .team-group-photo,
+  .team-grid-section,
+  .team-bring,
+  .team-how {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+}
+
+@media (min-width: 2560px) {
+  .team-page {
+    font-size: 1.15em;
+  }
+}

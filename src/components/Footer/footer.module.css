@@ -4,8 +4,8 @@
   background: #dfe6e9;
 
   box-shadow:
-    inset -10px -10px 20px #ffffff,
-    inset 10px 10px 10px #c4c4c4;
+    inset -4px -4px 4px #ffffff,
+    inset 4px 4px 4px #c4c4c4;
 }
 
 .nlxp-footer-inner {
@@ -566,5 +566,361 @@
 @media (min-width: 2560px) {
   .nlxp-footer-inner {
     max-width: 1800px;
+  }
+}
+
+/* =========================================================
+   FOOTER — FIGMA / PNG DESKTOP MATCH
+   Reference values taken from the supplied Figma CSS.
+   Mobile/tablet layout is intentionally untouched.
+   Segoe UI remains primary; Inter is fallback.
+   ========================================================= */
+
+.nlxp-footer,
+.nlxp-footer * {
+  font-family: "Segoe UI", "Inter";
+}
+
+@media (min-width: 1280px) {
+
+  /* Figma footer frame: 1440 × 459 */
+  .nlxp-footer {
+    width: 100% !important;
+    height: 459px !important;
+    min-height: 459px !important;
+  }
+
+  /* Figma inner frame: ~1339.46 × 374.06, top ~49.81 */
+  .nlxp-footer-inner {
+    position: relative !important;
+    top: 49.81px !important;
+
+    width: calc(100% - 100px) !important;
+    max-width: 1339.46px !important;
+    height: 374.06px !important;
+
+    margin: 0 auto !important;
+    padding: 0 !important;
+
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 24px !important;
+
+    box-sizing: border-box !important;
+  }
+
+  /* Figma top row: left 676 + gap 35 + right 631 */
+  .nlxp-footer-top {
+    width: 100% !important;
+    height: 303.06px !important;
+
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: flex-start !important;
+    justify-content: space-between !important;
+
+    gap: 35px !important;
+  }
+
+  /* ---------------- LEFT SIDE ---------------- */
+
+  .nlxp-footer-brand {
+    flex: 0 0 676px !important;
+    width: 676px !important;
+    height: 295px !important;
+
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+
+    gap: 24px !important;
+
+    text-align: left !important;
+  }
+
+  .nlxp-footer-brand-top {
+    width: 100% !important;
+    height: 166px !important;
+
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+
+    gap: 20px !important;
+  }
+
+  /* Exact Figma logo size */
+  .nlxp-footer-logo {
+    display: block !important;
+
+    width: 299px !important;
+    height: 112px !important;
+    min-width: 299px !important;
+    min-height: 112px !important;
+    max-width: 299px !important;
+    max-height: 112px !important;
+
+    margin: 0 !important;
+
+    object-fit: contain !important;
+    object-position: left center !important;
+
+    align-self: flex-start !important;
+    flex: 0 0 auto !important;
+  }
+
+  /* Exact Figma tagline row: 636 × 34 */
+  .nlxp-footer-tagline {
+    width: 636px !important;
+    height: 34px !important;
+
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+
+    flex-wrap: nowrap !important;
+    gap: 14px !important;
+
+    white-space: nowrap !important;
+  }
+
+  .nlxp-footer-tagline-text {
+    font-size: 26px !important;
+    line-height: 34px !important;
+    font-weight: 700 !important;
+
+    white-space: nowrap !important;
+  }
+
+  .nlxp-footer-sparkle {
+    width: 23px !important;
+    height: 23px !important;
+    min-width: 23px !important;
+    flex: 0 0 23px !important;
+  }
+
+  /* Figma company block: 459 × 105 */
+  .nlxp-footer-company {
+    width: 459px !important;
+    height: 105px !important;
+
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+
+    gap: 4px !important;
+
+    text-align: left !important;
+  }
+
+  .nlxp-footer-company-name,
+  .nlxp-footer-address {
+    width: 459px !important;
+    margin: 0 !important;
+
+    font-size: 16px !important;
+    line-height: 24px !important;
+    font-weight: 700 !important;
+
+    text-align: left !important;
+  }
+
+  /* ---------------- RIGHT SIDE ---------------- */
+
+  .nlxp-footer-right {
+    flex: 0 0 631px !important;
+    width: 631px !important;
+    height: 303.06px !important;
+
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-end !important;
+
+    gap: 24px !important;
+  }
+
+  /* Figma columns frame: 619 × 199, gap 32 */
+  .nlxp-footer-columns {
+    width: 619px !important;
+    height: 199px !important;
+
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: flex-start !important;
+    justify-content: flex-start !important;
+
+    flex-wrap: nowrap !important;
+    gap: 32px !important;
+  }
+
+  .nlxp-footer-column {
+    flex: 0 0 auto !important;
+    min-width: 0 !important;
+
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+
+    gap: 20px !important;
+  }
+
+  .nlxp-footer-column:nth-child(1) {
+    width: 123px !important;
+  }
+
+  .nlxp-footer-column:nth-child(2) {
+    width: 207px !important;
+  }
+
+  .nlxp-footer-column:nth-child(3) {
+    width: 225px !important;
+  }
+
+  .nlxp-footer-heading {
+    margin: 0 !important;
+
+    font-size: 22px !important;
+    line-height: 30px !important;
+    font-weight: 700 !important;
+
+    white-space: nowrap !important;
+  }
+
+  .nlxp-footer-heading-tm {
+    font-size: 12px !important;
+  }
+
+  .nlxp-footer-list {
+    width: 100% !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    display: flex !important;
+    flex-direction: column !important;
+
+    gap: 15px !important;
+  }
+
+  /* Figma desktop links are 18px / 28px in the supplied final frame. */
+  .nlxp-footer-link {
+    font-size: 18px !important;
+    line-height: 28px !important;
+    font-weight: 400 !important;
+
+    white-space: nowrap !important;
+  }
+
+  /* PNG contains five icons. Keep all five on one row. */
+  .nlxp-footer-social {
+    align-self: flex-end !important;
+
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+
+    gap: 24px !important;
+
+    width: auto !important;
+    height: 80.06px !important;
+  }
+
+  /* Figma social button: ~80 × 80 with inner ~60 × 60 */
+  .nlxp-footer-social-icon {
+    width: 80px !important;
+    height: 80px !important;
+    min-width: 80px !important;
+    min-height: 80px !important;
+
+    flex: 0 0 80px !important;
+  }
+
+  .nlxp-footer-social-icon::before {
+    width: 60px !important;
+    height: 60px !important;
+  }
+
+  .nlxp-footer-social-svg {
+    width: 32px !important;
+    height: 32px !important;
+  }
+
+  /* Figma copyright row: 47px high */
+  .nlxp-footer-copyright {
+    width: 100% !important;
+    height: 47px !important;
+
+    margin: 0 !important;
+
+    font-size: 16px !important;
+    line-height: 56px !important;
+    font-weight: 600 !important;
+
+    text-align: center !important;
+  }
+}
+ /* FOOTER LOGO — 299 × 112 WITHOUT OVERLAP
+   Only the logo sizing/flex behavior is corrected. */
+
+@media (min-width: 1280px) {
+  .nlxp-footer-logo {
+    width: 299px !important;
+    height: 112px !important;
+
+    min-width: 299px !important;
+    min-height: 112px !important;
+    max-width: 299px !important;
+    max-height: 112px !important;
+
+    /* Important: do NOT use flex-basis: 299px in a column layout.
+       That makes the logo reserve 299px vertically and can cause overlap. */
+    flex: none !important;
+    flex-grow: 0 !important;
+    flex-shrink: 0 !important;
+
+    display: block !important;
+    object-fit: contain !important;
+    object-position: left center !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  /* Keep the Figma logo + tagline stack tall enough naturally. */
+  .nlxp-footer-brand-top {
+    min-height: 166px !important;
+    height: auto !important;
+  }
+}
+/* FOOTER LOGO — VISIBLE SIZE INCREASE, NO OVERLAP
+   The original CSS already had 299px × 112px, so setting the same
+   values again could not create a visible change.
+   This keeps that exact layout box and only enlarges the rendered logo. */
+
+@media (min-width: 1280px) {
+  .nlxp-footer-logo {
+    width: 299px !important;
+    height: 112px !important;
+    min-width: 299px !important;
+    min-height: 112px !important;
+    max-width: 299px !important;
+    max-height: 112px !important;
+
+    flex: none !important;
+    flex-grow: 0 !important;
+    flex-shrink: 0 !important;
+
+    display: block !important;
+    object-fit: contain !important;
+    object-position: left top !important;
+
+    /* Visibly enlarge the logo without changing its layout footprint. */
+    transform: scale(1.17) !important;
+    transform-origin: left top !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
   }
 }

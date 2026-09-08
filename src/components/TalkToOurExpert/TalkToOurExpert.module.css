@@ -3699,3 +3699,106 @@
   }
 }
 
+
+/* ==========================================================================
+   FINAL — HOME PAGE ROUND BUTTON WHEN RENDERED INTO A PAGE SLOT
+   - Leaves the existing floating button unchanged when portalTargetId is absent.
+   - When portalTargetId is supplied, matches the Home page round icon button.
+   - The popup/modal behavior is unchanged.
+   ========================================================================== */
+.talk-to-expert-fab--embedded {
+  position: relative !important;
+  inset: auto !important;
+
+  width: 76px !important;
+  min-width: 76px !important;
+  max-width: 76px !important;
+  height: 76px !important;
+  min-height: 76px !important;
+  max-height: 76px !important;
+
+  margin: 0 !important;
+  padding: 0 !important;
+  gap: 0 !important;
+
+  display: grid !important;
+  place-items: center !important;
+  flex: 0 0 76px !important;
+
+  transform: none !important;
+  border-radius: 50% !important;
+  background: #dfe6e9 !important;
+  box-shadow:
+    -6px -6px 12px #ffffff,
+    6px 6px 12px rgba(198, 198, 201, 0.9) !important;
+
+  z-index: 1 !important;
+}
+
+.talk-to-expert-fab--embedded:hover {
+  transform: none !important;
+}
+
+.talk-to-expert-fab--embedded .talk-to-expert-fab-icon-ring {
+  width: 58px !important;
+  min-width: 58px !important;
+  height: 58px !important;
+  min-height: 58px !important;
+  margin: 0 !important;
+
+  display: grid !important;
+  place-items: center !important;
+  border-radius: 50% !important;
+}
+
+.talk-to-expert-fab--embedded .talk-to-expert-fab-icon-circle {
+  width: 42px !important;
+  min-width: 42px !important;
+  height: 42px !important;
+  min-height: 42px !important;
+
+  display: grid !important;
+  place-items: center !important;
+  border-radius: 50% !important;
+}
+
+.talk-to-expert-fab--embedded .talk-to-expert-fab-icon {
+  width: 24px !important;
+  height: 24px !important;
+}
+
+.talk-to-expert-fab--embedded .talk-to-expert-fab-label {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
+
+@media (max-width: 1023px) {
+  .talk-to-expert-fab--embedded {
+    width: 68px !important;
+    min-width: 68px !important;
+    max-width: 68px !important;
+    height: 68px !important;
+    min-height: 68px !important;
+    max-height: 68px !important;
+    flex-basis: 68px !important;
+  }
+}
+
+@media (max-width: 599px) {
+  .talk-to-expert-fab--embedded {
+    width: 64px !important;
+    min-width: 64px !important;
+    max-width: 64px !important;
+    height: 64px !important;
+    min-height: 64px !important;
+    max-height: 64px !important;
+    flex-basis: 64px !important;
+  }
+}

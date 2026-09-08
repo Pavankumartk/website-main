@@ -5967,3 +5967,860 @@ button:has(> .bookDemoBtn)::-moz-focus-inner {
   }
 }
 
+
+/* ============================================================
+   INTERCONNECTIVITY — REQUESTED CORRECTIONS ONLY
+   1) Keep hero Book a Demo fully inside the card
+   2) Reduce breadcrumb text/arrow spacing
+   3) Proper mobile/tablet typography instead of desktop sizes
+   ============================================================ */
+
+/* ---------- DESKTOP / LARGE SCREEN ---------- */
+@media screen and (min-width: 1025px) {
+
+  /* Move only the hero Book a Demo slightly upward so it stays
+     completely inside the hero card. */
+  .interconnectivity .frameParent2 .frameWrapper {
+    transform: translateY(-18px) !important;
+  }
+
+  /* Breadcrumbs — compact spacing between words and arrows */
+  .interconnectivity > .frameDiv {
+    gap: 5px !important;
+  }
+
+  .interconnectivity > .frameDiv .featuresWrapper,
+  .interconnectivity > .frameDiv .arrowRightDoubleGroup {
+    gap: 5px !important;
+  }
+
+  .interconnectivity > .frameDiv > img,
+  .interconnectivity > .frameDiv > svg,
+  .interconnectivity > .frameDiv .arrowRightDoubleGroup > img,
+  .interconnectivity > .frameDiv .arrowRightDoubleGroup > svg {
+    width: 14px !important;
+    height: 14px !important;
+    min-width: 14px !important;
+    flex: 0 0 14px !important;
+    margin: 0 1px !important;
+  }
+}
+
+
+/* ---------- TABLET ---------- */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+  /* Breadcrumbs */
+  .interconnectivity > .frameDiv {
+    gap: 5px !important;
+    font-size: 14px !important;
+  }
+
+  .interconnectivity > .frameDiv .featuresWrapper,
+  .interconnectivity > .frameDiv .arrowRightDoubleGroup {
+    gap: 5px !important;
+  }
+
+  .interconnectivity > .frameDiv > img,
+  .interconnectivity > .frameDiv > svg,
+  .interconnectivity > .frameDiv .arrowRightDoubleGroup > img,
+  .interconnectivity > .frameDiv .arrowRightDoubleGroup > svg {
+    width: 13px !important;
+    height: 13px !important;
+    min-width: 13px !important;
+    flex: 0 0 13px !important;
+    margin: 0 1px !important;
+  }
+
+  /* Hero */
+  .interconnectivity .frameParent2 .frameIcon {
+    font-size: 18px !important;
+    line-height: 24px !important;
+  }
+
+  .interconnectivity .frameParent2 .seamlessInterconnectivityWit {
+    font-size: 30px !important;
+    line-height: 38px !important;
+    height: auto !important;
+  }
+
+  .interconnectivity .frameParent2 .connectLearnersEducators {
+    font-size: 18px !important;
+    line-height: 27px !important;
+    height: auto !important;
+  }
+
+  .interconnectivity .frameParent2 .bookADemo {
+    font-size: 18px !important;
+    line-height: 24px !important;
+  }
+
+  /* Main section headings */
+  .interconnectivity .frameParent8 .oneConnectedPlatform,
+  .interconnectivity .frameParent11 .breakSilosBuildContainer,
+  .interconnectivity .frameParent19 .builtForDiverse,
+  .interconnectivity .frameParent22 .connectYourEcosystemInFourParent > :first-child,
+  .interconnectivity .connectedLearningEcosystemParent .connectedLearningEcosystem,
+  .interconnectivity .ellipseGroup .readyToConnectContainer {
+    font-size: 30px !important;
+    line-height: 38px !important;
+    height: auto !important;
+  }
+
+  /* Main descriptions */
+  .interconnectivity .frameParent8 .connectSystemsContent,
+  .interconnectivity .frameParent11 .connectSystemsContent3,
+  .interconnectivity .frameParent19 .aConnectedPlatform,
+  .interconnectivity .frameParent22 .connectSystemsPeople,
+  .interconnectivity .ellipseGroup .connectYourEcosystem2 {
+    font-size: 18px !important;
+    line-height: 28px !important;
+    height: auto !important;
+  }
+}
+
+
+/* ---------- MOBILE ---------- */
+@media screen and (max-width: 767.98px) {
+
+  /* Breadcrumbs — compact and mobile sized */
+  .interconnectivity > .frameDiv {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin-top: 16px !important;
+    gap: 4px !important;
+    padding: 0 2px !important;
+    font-size: 13px !important;
+    line-height: 20px !important;
+  }
+
+  .interconnectivity > .frameDiv .featuresWrapper,
+  .interconnectivity > .frameDiv .arrowRightDoubleGroup {
+    gap: 4px !important;
+  }
+
+  .interconnectivity > .frameDiv > img,
+  .interconnectivity > .frameDiv > svg,
+  .interconnectivity > .frameDiv .arrowRightDoubleGroup > img,
+  .interconnectivity > .frameDiv .arrowRightDoubleGroup > svg {
+    width: 12px !important;
+    height: 12px !important;
+    min-width: 12px !important;
+    flex: 0 0 12px !important;
+    margin: 0 !important;
+  }
+
+  /* Hero typography — MOBILE, not desktop */
+  .interconnectivity .frameParent2 .frameIcon {
+    width: auto !important;
+    max-width: 100% !important;
+    min-height: 42px !important;
+    padding: 0 14px !important;
+    font-size: 16px !important;
+    line-height: 22px !important;
+  }
+
+  .interconnectivity .frameParent2 .seamlessInterconnectivityWit {
+    width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+    font-size: 24px !important;
+    line-height: 30px !important;
+    text-align: center !important;
+  }
+
+  .interconnectivity .frameParent2 .connectLearnersEducators {
+    width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+    font-size: 16px !important;
+    line-height: 24px !important;
+    text-align: center !important;
+  }
+
+  /* Book a Demo — mobile size and fully contained */
+  .interconnectivity .frameParent2 .frameWrapper {
+    width: 200px !important;
+    max-width: 80% !important;
+    height: 54px !important;
+    margin: 0 auto !important;
+    padding: 0 20px !important;
+    transform: none !important;
+    flex-shrink: 0 !important;
+  }
+
+  .interconnectivity .frameParent2 .bookADemoWrapper {
+    width: auto !important;
+    max-width: 100% !important;
+    justify-content: center !important;
+  }
+
+  .interconnectivity .frameParent2 .bookADemo {
+    width: auto !important;
+    font-size: 16px !important;
+    line-height: 22px !important;
+    white-space: nowrap !important;
+    text-align: center !important;
+  }
+
+  /* Main non-hero headings — 24px on mobile */
+  .interconnectivity .frameParent8 .oneConnectedPlatform,
+  .interconnectivity .frameParent11 .breakSilosBuildContainer,
+  .interconnectivity .frameParent19 .builtForDiverse,
+  .interconnectivity .frameParent22 .connectYourEcosystemInFourParent > :first-child,
+  .interconnectivity .connectedLearningEcosystemParent .connectedLearningEcosystem,
+  .interconnectivity .ellipseGroup .readyToConnectContainer {
+    width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+    font-size: 24px !important;
+    line-height: 30px !important;
+    text-align: center !important;
+    white-space: normal !important;
+  }
+
+  /* Main descriptions/subheadings — 16px on mobile */
+  .interconnectivity .frameParent8 .connectSystemsContent,
+  .interconnectivity .frameParent11 .connectSystemsContent3,
+  .interconnectivity .frameParent19 .aConnectedPlatform,
+  .interconnectivity .frameParent22 .connectSystemsPeople,
+  .interconnectivity .ellipseGroup .connectYourEcosystem2 {
+    width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+    font-size: 16px !important;
+    line-height: 24px !important;
+    text-align: center !important;
+    white-space: normal !important;
+  }
+
+  /* Section/list/card text should also use mobile sizing */
+  .interconnectivity .onePlatformFor,
+  .interconnectivity .seamlessSystemIntegration,
+  .interconnectivity .betterCollaborationAnd,
+  .interconnectivity .clearerLearningPerformance,
+  .interconnectivity .integrateExistingSystems,
+  .interconnectivity .connectLearnersAnd,
+  .interconnectivity .enableCollaborativeLearning,
+  .interconnectivity .academicLearning,
+  .interconnectivity .trainingEcosystems,
+  .interconnectivity .lmsIntegration,
+  .interconnectivity .collaborativeLearning2 {
+    font-size: 16px !important;
+    line-height: 22px !important;
+  }
+}
+
+
+/* FINAL REQUESTED CORRECTIONS ONLY */
+
+/* Desktop / large screens */
+@media screen and (min-width: 1025px) {
+
+  /* Lift only the LEFT HERO CONTENT slightly upward */
+  .interconnectivity .frameParent2 .frameParent3 {
+    top: calc(50% - 205px) !important;
+  }
+
+  /* Breadcrumb: reduce the extra space between Features and Add-On Modules */
+  .interconnectivity > .frameDiv {
+    column-gap: 3px !important;
+    row-gap: 0 !important;
+  }
+
+  .interconnectivity > .frameDiv .featuresWrapper {
+    margin-right: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  .interconnectivity > .frameDiv .addOnModules {
+    margin-left: 0 !important;
+    padding-left: 0 !important;
+  }
+
+  .interconnectivity > .frameDiv .arrowRightDoubleGroup {
+    gap: 3px !important;
+    margin: 0 !important;
+  }
+
+  .interconnectivity > .frameDiv > img,
+  .interconnectivity > .frameDiv > svg,
+  .interconnectivity > .frameDiv .arrowRightDoubleGroup > img,
+  .interconnectivity > .frameDiv .arrowRightDoubleGroup > svg {
+    width: 12px !important;
+    height: 12px !important;
+    min-width: 12px !important;
+    flex: 0 0 12px !important;
+    margin: 0 !important;
+  }
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .interconnectivity .frameParent2 .frameParent3 {
+    transform: translateY(-14px) !important;
+  }
+
+  .interconnectivity > .frameDiv {
+    gap: 3px !important;
+  }
+
+  .interconnectivity > .frameDiv .arrowRightDoubleGroup {
+    gap: 3px !important;
+    margin: 0 !important;
+  }
+}
+
+/* Mobile */
+@media screen and (max-width: 767.98px) {
+  .interconnectivity .frameParent2 .frameParent3 {
+    transform: translateY(-10px) !important;
+  }
+
+  .interconnectivity > .frameDiv {
+    gap: 2px !important;
+  }
+
+  .interconnectivity > .frameDiv .arrowRightDoubleGroup {
+    gap: 2px !important;
+    margin: 0 !important;
+  }
+}
+
+
+/* FINAL DESKTOP — Why NeuroLXP TM + Key Benefits one-line text */
+@media screen and (min-width: 1280px) {
+
+  /* Make only the TM smaller and keep it neatly at the top-right */
+  .interconnectivity .whyNeuroLxpTm {
+    font-size: 10px !important;
+    line-height: 10px !important;
+    top: -7px !important;
+    right: -12px !important;
+    transform: none !important;
+  }
+
+  /* Give the right Key Benefits area enough width for one-line labels */
+  .interconnectivity .frameParent11 {
+    gap: 160px !important;
+  }
+
+  .interconnectivity .keyBenefitsParent {
+    width: 620px !important;
+    max-width: 620px !important;
+    flex: 0 0 620px !important;
+  }
+
+  .interconnectivity .keyBenefitsParent .frameParent14 {
+    width: 620px !important;
+    max-width: 620px !important;
+  }
+
+  .interconnectivity .keyBenefitsParent .frameParent15 {
+    width: 620px !important;
+    max-width: 620px !important;
+    gap: 16px !important;
+  }
+
+  .interconnectivity .keyBenefitsParent .onePlatformFor,
+  .interconnectivity .keyBenefitsParent .seamlessSystemIntegration,
+  .interconnectivity .keyBenefitsParent .betterCollaborationAnd,
+  .interconnectivity .keyBenefitsParent .clearerLearningPerformance {
+    width: 520px !important;
+    max-width: 520px !important;
+    min-width: 520px !important;
+    height: auto !important;
+
+    font-size: 24px !important;
+    line-height: 36px !important;
+
+    white-space: nowrap !important;
+    overflow-wrap: normal !important;
+    word-break: normal !important;
+
+    text-align: left !important;
+  }
+}
+
+
+/* MOBILE ONLY — FINAL CTA BOOK A DEMO */
+@media screen and (max-width: 767.98px) {
+
+  .interconnectivity .ellipseGroup .bookDemoBtn {
+    width: 190px !important;
+    max-width: 190px !important;
+    min-width: 190px !important;
+
+    height: 52px !important;
+    min-height: 52px !important;
+
+    margin: -4px auto 0 !important;
+    padding: 0 18px !important;
+
+    font-size: 16px !important;
+    line-height: 22px !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    white-space: nowrap !important;
+    text-align: center !important;
+
+    transform: none !important;
+    flex-shrink: 0 !important;
+  }
+
+  .interconnectivity .ellipseGroup button:has(> .bookDemoBtn) {
+    width: 190px !important;
+    max-width: 190px !important;
+    height: 52px !important;
+
+    margin: 0 auto !important;
+
+    display: block !important;
+    flex-shrink: 0 !important;
+  }
+
+  .interconnectivity .ellipseGroup .frameParent43 {
+    gap: 18px !important;
+  }
+}
+
+@media screen and (max-width: 339.98px) {
+  .interconnectivity .ellipseGroup .bookDemoBtn,
+  .interconnectivity .ellipseGroup button:has(> .bookDemoBtn) {
+    width: 176px !important;
+    max-width: 176px !important;
+    min-width: 176px !important;
+  }
+}
+
+
+/* ============================================================
+   ONLY BREADCRUMBS OVERLAP FIX
+   No hero / pills / sections changed
+   ============================================================ */
+@media screen and (max-width: 767.98px) {
+
+  .interconnectivity > .frameDiv {
+    position: relative !important;
+    top: auto !important;
+    left: auto !important;
+
+    width: 100% !important;
+    max-width: 100% !important;
+
+    margin: 14px 0 0 !important;
+    padding: 0 2px !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+    flex-wrap: nowrap !important;
+
+    gap: 4px !important;
+
+    font-size: 11px !important;
+    line-height: 18px !important;
+    letter-spacing: 0 !important;
+
+    white-space: nowrap !important;
+    overflow-x: auto !important;
+    overflow-y: hidden !important;
+
+    scrollbar-width: none !important;
+    box-sizing: border-box !important;
+  }
+
+  .interconnectivity > .frameDiv::-webkit-scrollbar {
+    display: none !important;
+  }
+
+  .interconnectivity > .frameDiv .featuresWrapper,
+  .interconnectivity > .frameDiv .arrowRightDoubleGroup {
+    display: flex !important;
+    align-items: center !important;
+
+    gap: 4px !important;
+
+    flex: 0 0 auto !important;
+    min-width: max-content !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    white-space: nowrap !important;
+  }
+
+  .interconnectivity > .frameDiv .addOnModules,
+  .interconnectivity > .frameDiv .features,
+  .interconnectivity > .frameDiv .arrowRightDoubleGroup > * {
+    margin: 0 !important;
+    padding: 0 !important;
+
+    font-size: 11px !important;
+    line-height: 18px !important;
+    letter-spacing: 0 !important;
+
+    white-space: nowrap !important;
+    flex-shrink: 0 !important;
+  }
+
+  .interconnectivity > .frameDiv > img,
+  .interconnectivity > .frameDiv > svg,
+  .interconnectivity > .frameDiv .arrowRightDoubleGroup > img,
+  .interconnectivity > .frameDiv .arrowRightDoubleGroup > svg {
+    width: 8px !important;
+    height: 8px !important;
+    min-width: 8px !important;
+    max-width: 8px !important;
+
+    margin: 0 !important;
+
+    flex: 0 0 8px !important;
+    object-fit: contain !important;
+  }
+}
+
+/* 320px phones */
+@media screen and (max-width: 339.98px) {
+
+  .interconnectivity > .frameDiv {
+    gap: 3px !important;
+    font-size: 10px !important;
+    line-height: 17px !important;
+  }
+
+  .interconnectivity > .frameDiv .featuresWrapper,
+  .interconnectivity > .frameDiv .arrowRightDoubleGroup {
+    gap: 3px !important;
+  }
+
+  .interconnectivity > .frameDiv .addOnModules,
+  .interconnectivity > .frameDiv .features,
+  .interconnectivity > .frameDiv .arrowRightDoubleGroup > * {
+    font-size: 10px !important;
+    line-height: 17px !important;
+  }
+}
+
+
+/* MOBILE ONLY — BREADCRUMB TYPOGRAPHY UNIFORMITY */
+@media screen and (max-width: 767.98px) {
+
+  .interconnectivity > .frameDiv,
+  .interconnectivity > .frameDiv .featuresWrapper,
+  .interconnectivity > .frameDiv .features,
+  .interconnectivity > .frameDiv .addOnModules,
+  .interconnectivity > .frameDiv .arrowRightDoubleGroup,
+  .interconnectivity > .frameDiv .arrowRightDoubleGroup > :last-child {
+    font-size: 11px !important;
+    line-height: 18px !important;
+    font-weight: 500 !important;
+    letter-spacing: 0 !important;
+    font-family: "Segoe UI", "Inter" !important;
+  }
+
+  .interconnectivity > .frameDiv .features,
+  .interconnectivity > .frameDiv .addOnModules,
+  .interconnectivity > .frameDiv .arrowRightDoubleGroup > :last-child {
+    display: inline-flex !important;
+    align-items: center !important;
+    height: 18px !important;
+    min-height: 18px !important;
+    white-space: nowrap !important;
+  }
+
+  .interconnectivity > .frameDiv .arrowRightDoubleGroup > :last-child {
+    color: #243fa8 !important;
+    font-weight: 600 !important;
+  }
+
+  .interconnectivity > .frameDiv .features,
+  .interconnectivity > .frameDiv .addOnModules {
+    color: #2f3547 !important;
+  }
+}
+
+@media screen and (max-width: 339.98px) {
+  .interconnectivity > .frameDiv,
+  .interconnectivity > .frameDiv .featuresWrapper,
+  .interconnectivity > .frameDiv .features,
+  .interconnectivity > .frameDiv .addOnModules,
+  .interconnectivity > .frameDiv .arrowRightDoubleGroup,
+  .interconnectivity > .frameDiv .arrowRightDoubleGroup > :last-child {
+    font-size: 10px !important;
+    line-height: 17px !important;
+  }
+
+  .interconnectivity > .frameDiv .features,
+  .interconnectivity > .frameDiv .addOnModules,
+  .interconnectivity > .frameDiv .arrowRightDoubleGroup > :last-child {
+    height: 17px !important;
+    min-height: 17px !important;
+  }
+}
+
+
+/* MOBILE ONLY — SHIFT CORE FEATURE CARD TEXT SLIGHTLY RIGHT */
+@media screen and (max-width: 767.98px) {
+
+  .interconnectivity .frameParent8 .unifiedLearningEcosystemParent,
+  .interconnectivity .frameParent8 .collaborativeLearningParent,
+  .interconnectivity .frameParent8 .systemIntegrationsParent {
+    left: calc(50% + 6px) !important;
+    transform: translateX(-50%) !important;
+  }
+}
+
+
+/* MOBILE ONLY — REDUCE ONLY THE MARKED EMPTY SPACE AROUND HERO ORBIT */
+@media screen and (max-width: 767.98px) {
+
+  .interconnectivity > .frameParent2 {
+    min-height: 650px !important;
+  }
+
+  .interconnectivity .frameParent2 .ellipseParent {
+    top: 0 !important;
+    margin-top: 6px !important;
+    margin-bottom: -135px !important;
+  }
+}
+
+/* Smaller phones */
+@media screen and (max-width: 425px) {
+
+  .interconnectivity > .frameParent2 {
+    min-height: 610px !important;
+  }
+
+  .interconnectivity .frameParent2 .ellipseParent {
+    top: 0 !important;
+    margin-top: 4px !important;
+    margin-bottom: -155px !important;
+  }
+}
+
+/* 320–360px phones */
+@media screen and (max-width: 360px) {
+
+  .interconnectivity > .frameParent2 {
+    min-height: 590px !important;
+  }
+
+  .interconnectivity .frameParent2 .ellipseParent {
+    top: 0 !important;
+    margin-top: 2px !important;
+    margin-bottom: -175px !important;
+  }
+}
+
+
+/* MOBILE ONLY — GIVE THE ORBIT ENOUGH SPACE SO IT IS NOT CROPPED */
+@media screen and (max-width: 767.98px) {
+  .interconnectivity > .frameParent2 {
+    min-height: 675px !important;
+    padding-bottom: 24px !important;
+  }
+
+  .interconnectivity .frameParent2 .ellipseParent {
+    margin-bottom: -85px !important;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .interconnectivity > .frameParent2 {
+    min-height: 650px !important;
+    padding-bottom: 22px !important;
+  }
+
+  .interconnectivity .frameParent2 .ellipseParent {
+    margin-bottom: -95px !important;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .interconnectivity > .frameParent2 {
+    min-height: 640px !important;
+    padding-bottom: 20px !important;
+  }
+
+  .interconnectivity .frameParent2 .ellipseParent {
+    margin-bottom: -100px !important;
+  }
+}
+
+
+/* MOBILE ONLY — CORE FEATURE CARDS CENTER + PILL TEXT 24PX */
+@media screen and (max-width: 767.98px) {
+
+  /* Center the complete Core Features card stack */
+  .interconnectivity .frameParent8 .frameParent10 {
+    position: relative !important;
+    left: -4px !important;
+
+    width: 100% !important;
+    max-width: 100% !important;
+
+    margin-left: auto !important;
+    margin-right: auto !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+
+    align-items: center !important;
+    justify-content: flex-start !important;
+  }
+
+  .interconnectivity .frameParent8 .frameWrapper2,
+  .interconnectivity .frameParent8 .frameWrapper3,
+  .interconnectivity .frameParent8 .frameWrapper4,
+  .interconnectivity .frameParent8 .rectangleParent2 {
+    left: auto !important;
+    right: auto !important;
+
+    margin-left: auto !important;
+    margin-right: auto !important;
+
+    align-self: center !important;
+  }
+
+  /* Keep the Core Features pill text at the requested mobile size */
+  .interconnectivity .coreFeaturesBadge span {
+    font-size: 24px !important;
+    line-height: 30px !important;
+    font-weight: 600 !important;
+  }
+}
+
+/* 320px phones — same centered alignment */
+@media screen and (max-width: 339.98px) {
+  .interconnectivity .frameParent8 .frameParent10 {
+    left: -4px !important;
+  }
+
+  .interconnectivity .coreFeaturesBadge span {
+    font-size: 24px !important;
+    line-height: 30px !important;
+  }
+}
+
+
+/* MOBILE ONLY — WHY NEUROLXP / KEY BENEFITS SPACING FIX */
+@media screen and (max-width: 767.98px) {
+
+  /* Reduce space between left block and Key Benefits */
+  .interconnectivity .frameParent11 {
+    gap: 24px !important;
+  }
+
+  /* Reduce spacing inside Why NeuroLXP content */
+  .interconnectivity .frameParent11 .frameParent12 {
+    gap: 16px !important;
+  }
+
+  .interconnectivity .frameParent11 .frameParent13 {
+    gap: 14px !important;
+  }
+
+  /* The child spans were still using desktop 50px line-height.
+     Keep the same font size, only correct the vertical spacing. */
+  .interconnectivity .frameParent11 .breakSilos,
+  .interconnectivity .frameParent11 .buildConnectedLearning {
+    line-height: 30px !important;
+  }
+
+  .interconnectivity .frameParent11 .breakSilosBuildContainer {
+    line-height: 30px !important;
+    margin: 0 !important;
+  }
+
+  .interconnectivity .frameParent11 .connectSystemsContent3 {
+    margin: 0 !important;
+  }
+
+  .interconnectivity .frameParent11 .keyBenefitsParent {
+    gap: 22px !important;
+  }
+}
+
+
+/* MOBILE ONLY — REQUESTED 3 CORRECTIONS */
+@media screen and (max-width: 767.98px) {
+
+  /* 1) Make the TM inside Why NeuroLXP pill smaller */
+  .interconnectivity .whyNeuroLxpTm {
+    font-size: 9px !important;
+    line-height: 9px !important;
+    top: -5px !important;
+    right: -9px !important;
+    transform: none !important;
+  }
+
+  /* 2) Reduce only the space between breadcrumbs and hero */
+  .interconnectivity > .frameParent2 {
+    margin-top: 22px !important;
+  }
+
+  /* 3) Visually center the Core Features card stack */
+  .interconnectivity .frameParent8 .frameParent10 {
+    left: auto !important;
+    right: auto !important;
+    transform: translateX(-8px) !important;
+  }
+
+  .interconnectivity .frameParent8 .frameWrapper2,
+  .interconnectivity .frameParent8 .frameWrapper3,
+  .interconnectivity .frameParent8 .frameWrapper4,
+  .interconnectivity .frameParent8 .rectangleParent2 {
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+}
+
+@media screen and (max-width: 339.98px) {
+  .interconnectivity > .frameParent2 {
+    margin-top: 18px !important;
+  }
+
+  .interconnectivity .frameParent8 .frameParent10 {
+    transform: translateX(-8px) !important;
+  }
+}
+
+
+/* LAST SECTION ONLY — BOOK A DEMO HOVER EFFECT */
+.interconnectivity .ellipseGroup .bookDemoBtn {
+  transition:
+    box-shadow 180ms ease,
+    transform 180ms ease,
+    color 180ms ease !important;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .interconnectivity .ellipseGroup .bookDemoBtn:hover {
+    box-shadow:
+      inset -4px -4px 4px #ffffff,
+      inset 4px 4px 4px #c4c4c4 !important;
+    transform: translateY(1px) !important;
+    color: #243fa8 !important;
+  }
+}
+
+.interconnectivity .ellipseGroup .bookDemoBtn:focus-visible {
+  box-shadow:
+    inset -4px -4px 4px #ffffff,
+    inset 4px 4px 4px #c4c4c4 !important;
+  transform: translateY(1px) !important;
+  color: #243fa8 !important;
+  outline: none !important;
+}
+
+.interconnectivity .ellipseGroup .bookDemoBtn:active {
+  box-shadow:
+    inset -3px -3px 4px #ffffff,
+    inset 4px 4px 5px #bfc2c4 !important;
+  transform: translateY(2px) !important;
+}
+

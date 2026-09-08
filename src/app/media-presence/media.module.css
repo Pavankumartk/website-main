@@ -8,7 +8,7 @@
   	text-align: center;
   	font-size: 48px;
   	color: #31344b;
-  	font-family: 'Segoe UI';
+  	font-family: "Segoe UI", "Inter";
     zoom: 0.89;
 }
 .mediaPresenceChild {
@@ -111,7 +111,7 @@
   	flex-shrink: 0;
   	text-align: left;
   	font-size: 16px;
-  	font-family: Inter;
+  	font-family: "Segoe UI", "Inter";
 }
 .frameInner {
   	position: absolute;
@@ -130,7 +130,7 @@
   	width: 1376px;
   	height: 45px;
   	flex-shrink: 0;
-	font-family: 'Segoe UI';
+	font-family: "Segoe UI", "Inter";
 }
 .logo01SynapseSpark1Parent {
   	position: absolute;
@@ -193,7 +193,7 @@
   	box-sizing: border-box;
   	text-align: center;
   	color: #2d4cc8;
-  	font-family: 'Segoe UI';
+  	font-family: "Segoe UI", "Inter";
 }
 .signInHelp {
   	position: relative;
@@ -231,7 +231,7 @@
   	text-align: left;
   	font-size: 16px;
   	color: #2f3547;
-  	font-family: Inter;
+  	font-family: "Segoe UI", "Inter";
 }
 .resourcesWrapper {
   	display: flex;
@@ -585,7 +585,7 @@
   margin:0;
   display:block;
   white-space:nowrap;
-  font-family:"Segoe UI";
+  font-family: "Segoe UI", "Inter";
   font-size:36px;
   font-weight:700;
   line-height:50px;
@@ -1133,7 +1133,7 @@ display:block;
   background-color: #dfe6e9;
   box-shadow: inset -4px -4px 8px #fff, inset 4px 4px 8px rgba(196, 196, 196, 0.8);
   color: #2d4cc8;
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", "Inter";
   font-size: 24px;
   font-weight: 600;
   line-height: 32px;
@@ -1151,7 +1151,7 @@ display:block;
   align-self: stretch;
   margin: 0;
   position: relative;
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", "Inter";
   font-size: 48px;
   font-weight: 700;
   letter-spacing: 0.03em;
@@ -1164,7 +1164,7 @@ display:block;
   width: 662px;
   margin: 0;
   position: relative;
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", "Inter";
   font-size: 28px;
   font-weight: 400;
   letter-spacing: 0.03em;
@@ -1183,7 +1183,7 @@ display:block;
   background-color: #dfe6e9;
   box-shadow: -4px -4px 8px #fff, 4px 4px 8px rgba(196, 196, 196, 0.8);
   color: #2d4cc8;
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", "Inter";
   font-size: 24px;
   font-weight: 600;
   line-height: 32px;
@@ -1200,7 +1200,7 @@ align-items:center;
 justify-content:center;
 box-shadow:-8px -8px 16px #ffffff,8px 8px 16px rgba(196,196,196,.8) ;
 background:#dfe6e9;
-font:600 24px 'Segoe UI';
+font: 600 24px "Segoe UI", "Inter";
 color:#2d4cc8;
 transform: translatey(25);
 }
@@ -1215,7 +1215,7 @@ flex-direction:column;
 
 
 .bookDemoText{
-  font-family:'Segoe UI';
+  font-family: "Segoe UI", "Inter";
   font-size:24px;
   font-weight:600;
   line-height:32px;
@@ -1400,7 +1400,7 @@ flex-direction:column;
   border-radius: 50px;
   background: #DFE6E9;
   color: #2D4CC8;
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", "Inter";
   font-size: 24px;
   line-height: 32px;
   font-weight: 600;
@@ -1514,7 +1514,7 @@ flex-direction:column;
   width: 100%;
   height: auto;
   margin: 0;
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", "Inter";
   font-size: 48px;
   line-height: 60px;
   font-weight: 700;
@@ -1530,7 +1530,7 @@ flex-direction:column;
   max-width: 100%;
   height: auto;
   margin: 0;
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", "Inter";
   font-size: 24px;
   line-height: 32px;
   font-weight: 400;
@@ -1579,7 +1579,7 @@ flex-direction:column;
   height: auto;
   margin: 0;
   color: #BF1869;
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", "Inter";
   font-size: 36px;
   line-height: 48px;
   font-weight: 700;
@@ -1652,7 +1652,7 @@ flex-direction:column;
 }
 
 .mediaPresence > .frameParent5 .aiPoweredLearning {
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", "Inter";
   font-size: 24px;
   line-height: 28px;
   font-weight: 600;
@@ -4726,6 +4726,94 @@ flex-direction:column;
 
   .mediaPresence > .frameParent17 .frameParent21 {
     margin-bottom: 0 !important;
+  }
+}
+
+
+/* =========================================================
+   BUTTON HOVER ONLY + INTER FALLBACK
+   No sizing, spacing, positioning or layout changes.
+   ========================================================= */
+
+.signInHelpWrapper,
+.mediaDemoButton,
+.frameChild29 {
+  cursor: pointer !important;
+  transition:
+    box-shadow 180ms ease,
+    transform 180ms ease !important;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .signInHelpWrapper:hover,
+  .mediaDemoButton:hover,
+  .frameChild29:hover {
+    box-shadow:
+      inset -4px -4px 8px #ffffff,
+      inset 4px 4px 8px rgba(196, 196, 196, 0.80) !important;
+    transform: translateY(1px) !important;
+  }
+}
+
+.signInHelpWrapper:active,
+.mediaDemoButton:active,
+.frameChild29:active {
+  box-shadow:
+    inset -3px -3px 6px #ffffff,
+    inset 4px 4px 7px rgba(191, 194, 196, 0.90) !important;
+  transform: translateY(2px) !important;
+}
+
+.signInHelpWrapper:focus-visible,
+.mediaDemoButton:focus-visible,
+.frameChild29:focus-visible {
+  box-shadow:
+    inset -4px -4px 8px #ffffff,
+    inset 4px 4px 8px rgba(196, 196, 196, 0.80) !important;
+}
+
+/* Keep the requested font stack on button text as well. */
+.signInHelpWrapper,
+.signInHelpWrapper *,
+.mediaDemoButton,
+.mediaDemoButton *,
+.frameChild29,
+.frameChild29 * {
+  font-family: "Segoe UI", "Inter" !important;
+}
+
+
+/* =========================================================
+   MOBILE ONLY — PARTNERSHIP CARD TEXT OVERLAP FIX
+   Keeps the same card design; only gives wrapped titles room.
+   ========================================================= */
+@media screen and (max-width: 767px) {
+
+  .mediaPresence > .frameParent17 .frameParent21 {
+    height: 180px !important;
+    min-height: 180px !important;
+  }
+
+  .mediaPresence > .frameParent17 .frameParent21 .frameChild9 {
+    height: 180px !important;
+  }
+
+  /* Center each icon + title group by its ACTUAL content height.
+     This prevents two-line titles from dropping outside the card. */
+  .mediaPresence > .frameParent17 .frameParent21 > :not(.frameChild9) {
+    top: 50% !important;
+    transform: translateY(-50%) !important;
+  }
+
+  .mediaPresence > .frameParent17 .higherEducation,
+  .mediaPresence > .frameParent17 .corporateLearning,
+  .mediaPresence > .frameParent17 .workforceSkills,
+  .mediaPresence > .frameParent17 .professionalTraining {
+    height: auto !important;
+    min-height: 0 !important;
+    max-height: none !important;
+    margin: 0 !important;
+    overflow: visible !important;
   }
 }
 

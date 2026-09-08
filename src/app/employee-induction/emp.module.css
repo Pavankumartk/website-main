@@ -7,7 +7,7 @@
   	text-align: left;
   	font-size: 48px;
   	color: #31344b;
-  	font-family: 'Segoe UI';
+  	font-family: "Segoe UI", "Inter";
     zoom: 0.89;
 }
 .frameParent {
@@ -20,7 +20,7 @@
   	height: 80px;
   	overflow: hidden;
   	font-size: 16px;
-  	font-family: Inter;
+  	font-family: "Segoe UI", "Inter";
 }
 .frameChild {
   	position: absolute;
@@ -101,7 +101,7 @@
   	box-sizing: border-box;
   	text-align: center;
   	color: #2d4cc8;
-  	font-family: 'Segoe UI';
+  	font-family: "Segoe UI", "Inter";
 }
 .signInHelp {
   	position: relative;
@@ -137,7 +137,7 @@
   	gap: 8px;
   	font-size: 16px;
   	color: #2f3547;
-  	font-family: 'Segoe UI';
+  	font-family: "Segoe UI", "Inter";
 }
 .resourcesWrapper {
   	display: flex;
@@ -2278,5 +2278,210 @@ button.frameChild19:focus-visible {
   text-align: center !important;
   align-items: center !important;
   justify-content: center !important;
+}
+
+
+/* BUTTON HOVER ONLY */
+.employeeInduction .signInHelpWrapper,
+.employeeInduction .frameChild19 {
+  cursor: pointer;
+  transition:
+    box-shadow 180ms ease,
+    transform 180ms ease,
+    color 180ms ease !important;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .employeeInduction .signInHelpWrapper:hover,
+  .employeeInduction .frameChild19:hover {
+    box-shadow:
+      inset -4px -4px 4px #ffffff,
+      inset 4px 4px 4px #c4c4c4 !important;
+    transform: translateY(1px) !important;
+    color: #243fa8 !important;
+  }
+}
+
+.employeeInduction .signInHelpWrapper:active,
+.employeeInduction .frameChild19:active {
+  box-shadow:
+    inset -3px -3px 4px #ffffff,
+    inset 4px 4px 5px #bfc2c4 !important;
+  transform: translateY(2px) !important;
+}
+
+.employeeInduction .signInHelpWrapper:focus-visible,
+.employeeInduction .frameChild19:focus-visible {
+  box-shadow:
+    inset -4px -4px 4px #ffffff,
+    inset 4px 4px 4px #c4c4c4 !important;
+  transform: translateY(1px) !important;
+  outline: none !important;
+}
+
+
+/* ============================================================
+   REQUESTED CORRECTIONS ONLY
+   ============================================================ */
+
+/* Keep "Employees" in the Structured Onboarding heading visible
+   using the same pink-to-blue treatment as the full sentence. */
+.employeeInduction .structuredOnboardingFor,
+.employeeInduction .structuredOnboardingFor span,
+.employeeInduction .structuredOnboardingFor strong,
+.employeeInduction .structuredOnboardingFor b {
+  background: linear-gradient(90deg, #bf1869 14.9%, #2d4cc8 100%) !important;
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  color: transparent !important;
+}
+
+
+/* Desktop/tablet Benefits list — keep the right-side labels on one line. */
+@media screen and (min-width: 768px) {
+  .employeeInduction .frameParent24 .fasterEmployeeIntegration,
+  .employeeInduction .frameParent24 .consistentValuesAnd,
+  .employeeInduction .frameParent24 .betterOnboardingEngagement,
+  .employeeInduction .frameParent24 .easyProgressTracking,
+  .employeeInduction .frameParent24 .reducedHrWorkload {
+    width: auto !important;
+    max-width: none !important;
+    flex: 1 1 auto !important;
+    white-space: nowrap !important;
+    overflow: visible !important;
+    word-break: normal !important;
+    overflow-wrap: normal !important;
+  }
+}
+
+
+/* Mobile hero only */
+@media screen and (max-width: 767.98px) {
+
+  /* Remove only the circular/oval background around the employee image.
+     Keep the employee image itself. */
+  .employeeInduction .businessmenClosingDealWithWrapper {
+    background: transparent !important;
+    box-shadow: none !important;
+    border: 0 !important;
+    border-radius: 0 !important;
+    overflow: visible !important;
+  }
+
+  /* Keep the hero pill fully inside the card and prevent overlap. */
+  .employeeInduction .frameParent2 .frameIcon {
+    width: fit-content !important;
+    max-width: calc(100% - 24px) !important;
+    height: auto !important;
+    min-height: 40px !important;
+
+    margin: 0 auto 2px !important;
+    padding: 7px 12px !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    font-size: 13px !important;
+    line-height: 18px !important;
+    text-align: center !important;
+    white-space: normal !important;
+
+    flex-shrink: 0 !important;
+  }
+
+  .employeeInduction .frameParent2 .frameParent4 {
+    height: auto !important;
+    min-height: 0 !important;
+    gap: 16px !important;
+  }
+
+  .employeeInduction .frameParent2 .frameParent3 {
+    top: 24px !important;
+  }
+}
+
+
+/* 320–479px phones */
+@media screen and (max-width: 479.98px) {
+  .employeeInduction .frameParent2 .frameIcon {
+    max-width: calc(100% - 16px) !important;
+    min-height: 38px !important;
+    padding: 6px 10px !important;
+    font-size: 12px !important;
+    line-height: 17px !important;
+  }
+
+  .employeeInduction .frameParent2 .frameParent3 {
+    top: 22px !important;
+  }
+}
+
+
+/* ============================================================
+   REQUESTED FIX ONLY
+   1) Hero pill text stays fully inside the pill
+   2) "Employees" is fully visible and no longer overlaps
+   ============================================================ */
+
+/* Desktop / large tablet */
+@media screen and (min-width: 1024px) {
+
+  /* Give the hero pill enough room for the complete label */
+  .employeeInduction .frameParent2 .frameIcon {
+    width: 400px !important;
+    max-width: 400px !important;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+    font-size: 22px !important;
+    line-height: 28px !important;
+    white-space: nowrap !important;
+  }
+
+  /* The heading is intentionally two lines.
+     Increase only its wrapper height so "Employees" does not
+     sit on top of the description below. */
+  .employeeInduction .frameParent5 .frameWrapper {
+    height: auto !important;
+    min-height: 118px !important;
+  }
+
+  .employeeInduction .frameParent5 .structuredOnboardingForProdWrapper {
+    width: 100% !important;
+    height: auto !important;
+    min-height: 118px !important;
+    padding: 0 !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+
+  .employeeInduction .frameParent5 .structuredOnboardingFor {
+    width: 100% !important;
+    height: auto !important;
+    min-height: 118px !important;
+
+    margin: 0 !important;
+
+    line-height: 56px !important;
+    overflow: visible !important;
+
+    background: linear-gradient(
+      90deg,
+      #bf1869 14.9%,
+      #2d4cc8 100%
+    ) !important;
+    -webkit-background-clip: text !important;
+    background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    color: transparent !important;
+  }
+
+  /* Keep the description safely below the two-line heading */
+  .employeeInduction .frameParent5 .neurolxpHelpsOrganizations {
+    margin-top: 4px !important;
+  }
 }
 

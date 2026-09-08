@@ -11,7 +11,7 @@
   text-align: left;
   font-size: 48px;
   color: #31344b;
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", "Inter";
 }
 .frameParent {
   position: absolute;
@@ -106,7 +106,7 @@
   box-sizing: border-box;
   text-align: center;
   color: #2d4cc8;
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", "Inter";
 }
 .signInHelp {
   position: relative;
@@ -144,7 +144,7 @@
   gap: 8px;
   font-size: 16px;
   color: #2f3547;
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", "Inter";
 }
 .resourcesWrapper {
   display: flex;
@@ -1385,7 +1385,7 @@
   display: flex;
   align-items: flex-start;
   justify-content: center;
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", "Inter";
   font-weight: 600;
   color: #2d4cc8;
   line-height: 1;
@@ -1423,7 +1423,7 @@
   box-shadow: inset -4px -4px 4px #ffffff,
     inset 4px 4px 4px rgba(196, 196, 196, 0.8);
 
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", "Inter";
   font-size: 24px;
   font-weight: 600;
   line-height: 32px;
@@ -1444,7 +1444,7 @@
   box-shadow: inset -4px -4px 4px #fff,
     inset 4px 4px 4px rgba(196, 196, 196, 0.8);
 
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", "Inter";
   font-size: 24px;
   font-weight: 600;
   color: #2d4cc8;
@@ -2806,3 +2806,434 @@
     padding-top: 0 !important;
   }
 }
+
+
+/* =========================================================
+   BUTTON HOVER ONLY — INSET EFFECT
+   No size, spacing, positioning, color or layout changes.
+   ========================================================= */
+.signInHelpWrapper,
+.frameParent2 > button:has(> .frameWrapper2) .frameWrapper3 {
+  cursor: pointer;
+  transition: box-shadow 180ms ease !important;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .signInHelpWrapper:hover,
+  .frameParent2 > button:has(> .frameWrapper2):hover .frameWrapper3 {
+    box-shadow:
+      inset -4px -4px 4px #ffffff,
+      inset 4px 4px 4px rgba(196, 196, 196, 0.82) !important;
+  }
+}
+
+
+/* =========================================================
+   BLOGS — REQUESTED CORRECTIONS ONLY
+   1) prevent blog card text/image overlap
+   2) keep "Teams" visible in the main heading
+   3) keep "Book a Demo" on one line
+   ========================================================= */
+
+/* Allow the full "Expert Insights for Modern Learning Teams"
+   heading to use a second line when needed instead of clipping it. */
+.frameParent6 {
+  height: auto !important;
+}
+
+.expertInsightsFor {
+  height: auto !important;
+  min-height: 63px !important;
+  max-height: none !important;
+  overflow: visible !important;
+}
+
+/* Move only the existing blog-card text block slightly lower,
+   so titles no longer touch/overlap the image panel. */
+.aiPoweredLmsParent,
+.interactiveLearningParent,
+.corporateTrainingParent,
+.digitalEducationParent {
+  bottom: 4% !important;
+  gap: 12px !important;
+}
+
+/* Keep every card title/description free from fixed-height clipping. */
+.aiPoweredLms,
+.interactiveLearning,
+.corporateTraining,
+.learningInnovation,
+.digitalEducation,
+.aiTransformingModern,
+.upskillingTodaysWorkforce,
+.modernAndFlexible,
+.dataDrivenLearningInsights {
+  height: auto !important;
+  min-height: 0 !important;
+  max-height: none !important;
+  overflow: visible !important;
+}
+
+/* Book a Demo must stay on one line. */
+.bookADemo,
+.bookADemoWrapper {
+  white-space: nowrap !important;
+}
+
+
+/* =========================================================
+   BLOG CARDS — UNIFORM TEXT + MOBILE FIT
+   Keeps the existing card design unchanged.
+   ========================================================= */
+
+/* DESKTOP / TABLET
+   All card headings stay on one line.
+   All card descriptions use the same two-line text area. */
+@media screen and (min-width: 768px) {
+
+  .blogs .frameParent7 .aiPoweredLms,
+  .blogs .frameParent7 .interactiveLearning,
+  .blogs .frameParent7 .corporateTraining,
+  .blogs .frameParent7 .learningInnovation,
+  .blogs .frameParent7 .digitalEducation,
+  .blogs .frameParent7 .learningAnalytics,
+  .blogs .frameParent7 .aiPoweredLmsParent > :first-child,
+  .blogs .frameParent7 .interactiveLearningParent > :first-child,
+  .blogs .frameParent7 .corporateTrainingParent > :first-child,
+  .blogs .frameParent7 .digitalEducationParent > :first-child {
+    width: 100% !important;
+    height: 40px !important;
+    min-height: 40px !important;
+    max-height: 40px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+
+    font-size: 32px !important;
+    line-height: 40px !important;
+
+    white-space: nowrap !important;
+    overflow: visible !important;
+    text-align: center !important;
+  }
+
+  .blogs .frameParent7 .aiTransformingModern,
+  .blogs .frameParent7 .upskillingTodaysWorkforce,
+  .blogs .frameParent7 .modernAndFlexible,
+  .blogs .frameParent7 .dataDrivenLearningInsights,
+  .blogs .frameParent7 .aiPoweredLmsParent > :nth-child(2),
+  .blogs .frameParent7 .interactiveLearningParent > :nth-child(2),
+  .blogs .frameParent7 .corporateTrainingParent > :nth-child(2),
+  .blogs .frameParent7 .digitalEducationParent > :nth-child(2) {
+    width: 280px !important;
+    max-width: 100% !important;
+    height: 72px !important;
+    min-height: 72px !important;
+    max-height: 72px !important;
+
+    margin: 0 auto !important;
+    padding: 0 !important;
+
+    font-size: 24px !important;
+    line-height: 36px !important;
+
+    white-space: normal !important;
+    overflow: visible !important;
+    overflow-wrap: normal !important;
+    word-break: normal !important;
+    text-align: center !important;
+  }
+
+  .blogs .frameParent7 .aiPoweredLmsParent,
+  .blogs .frameParent7 .interactiveLearningParent,
+  .blogs .frameParent7 .corporateTrainingParent,
+  .blogs .frameParent7 .digitalEducationParent {
+    gap: 12px !important;
+  }
+}
+
+
+/* MOBILE
+   Keep the same card design, but constrain text to the card width
+   so nothing overflows horizontally. */
+@media screen and (max-width: 767px) {
+
+  .blogs .frameParent7 {
+    width: 100% !important;
+    grid-template-columns: minmax(0, 300px) !important;
+    justify-content: center !important;
+    justify-items: center !important;
+    overflow: visible !important;
+  }
+
+  .blogs .frameParent7 .rectangleGroup,
+  .blogs .frameParent7 .rectangleParent2,
+  .blogs .frameParent7 .rectangleParent4,
+  .blogs .frameParent7 .rectangleParent8,
+  .blogs .frameParent7 .rectangleParent10 {
+    width: min(300px, 100%) !important;
+    max-width: 300px !important;
+    min-width: 0 !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    overflow: hidden !important;
+  }
+
+  .blogs .frameParent7 .aiPoweredLmsParent,
+  .blogs .frameParent7 .interactiveLearningParent,
+  .blogs .frameParent7 .corporateTrainingParent,
+  .blogs .frameParent7 .digitalEducationParent {
+    left: 6% !important;
+    width: 88% !important;
+    max-width: 88% !important;
+    bottom: 4% !important;
+    gap: 8px !important;
+    box-sizing: border-box !important;
+  }
+
+  /* One-line title on every mobile card */
+  .blogs .frameParent7 .aiPoweredLms,
+  .blogs .frameParent7 .interactiveLearning,
+  .blogs .frameParent7 .corporateTraining,
+  .blogs .frameParent7 .learningInnovation,
+  .blogs .frameParent7 .digitalEducation,
+  .blogs .frameParent7 .learningAnalytics,
+  .blogs .frameParent7 .aiPoweredLmsParent > :first-child,
+  .blogs .frameParent7 .interactiveLearningParent > :first-child,
+  .blogs .frameParent7 .corporateTrainingParent > :first-child,
+  .blogs .frameParent7 .digitalEducationParent > :first-child {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: 26px !important;
+    min-height: 26px !important;
+    max-height: 26px !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    font-size: 18px !important;
+    line-height: 26px !important;
+
+    white-space: nowrap !important;
+    overflow: visible !important;
+    text-align: center !important;
+  }
+
+  /* Uniform two-line description on every mobile card */
+  .blogs .frameParent7 .aiTransformingModern,
+  .blogs .frameParent7 .upskillingTodaysWorkforce,
+  .blogs .frameParent7 .modernAndFlexible,
+  .blogs .frameParent7 .dataDrivenLearningInsights,
+  .blogs .frameParent7 .aiPoweredLmsParent > :nth-child(2),
+  .blogs .frameParent7 .interactiveLearningParent > :nth-child(2),
+  .blogs .frameParent7 .corporateTrainingParent > :nth-child(2),
+  .blogs .frameParent7 .digitalEducationParent > :nth-child(2) {
+    width: 230px !important;
+    max-width: 100% !important;
+
+    height: 48px !important;
+    min-height: 48px !important;
+    max-height: 48px !important;
+
+    margin: 0 auto !important;
+    padding: 0 !important;
+
+    font-size: 16px !important;
+    line-height: 24px !important;
+
+    white-space: normal !important;
+    overflow: visible !important;
+    overflow-wrap: normal !important;
+    word-break: normal !important;
+    text-align: center !important;
+  }
+}
+
+
+/* =========================================================
+   BLOG CARDS — FINAL TYPOGRAPHY + MOBILE DESIGN RESTORE
+   Only:
+   - card heading = 24px
+   - card subheading = 16px
+   - restore original mobile card geometry/design
+   ========================================================= */
+
+/* CARD TYPOGRAPHY — ALL DEVICES */
+.blogs .frameParent7 .aiPoweredLms,
+.blogs .frameParent7 .interactiveLearning,
+.blogs .frameParent7 .corporateTraining,
+.blogs .frameParent7 .learningInnovation,
+.blogs .frameParent7 .digitalEducation,
+.blogs .frameParent7 .learningAnalytics,
+.blogs .frameParent7 .aiPoweredLmsParent > :first-child,
+.blogs .frameParent7 .interactiveLearningParent > :first-child,
+.blogs .frameParent7 .corporateTrainingParent > :first-child,
+.blogs .frameParent7 .digitalEducationParent > :first-child {
+  width: 100% !important;
+  max-width: 100% !important;
+  height: 32px !important;
+  min-height: 32px !important;
+  max-height: 32px !important;
+
+  margin: 0 !important;
+  padding: 0 !important;
+
+  font-size: 24px !important;
+  line-height: 32px !important;
+
+  white-space: nowrap !important;
+  overflow: visible !important;
+  text-align: center !important;
+}
+
+.blogs .frameParent7 .aiTransformingModern,
+.blogs .frameParent7 .upskillingTodaysWorkforce,
+.blogs .frameParent7 .modernAndFlexible,
+.blogs .frameParent7 .dataDrivenLearningInsights,
+.blogs .frameParent7 .aiPoweredLmsParent > :nth-child(2),
+.blogs .frameParent7 .interactiveLearningParent > :nth-child(2),
+.blogs .frameParent7 .corporateTrainingParent > :nth-child(2),
+.blogs .frameParent7 .digitalEducationParent > :nth-child(2) {
+  width: 280px !important;
+  max-width: 100% !important;
+
+  height: 48px !important;
+  min-height: 48px !important;
+  max-height: 48px !important;
+
+  margin: 0 auto !important;
+  padding: 0 !important;
+
+  font-size: 16px !important;
+  line-height: 24px !important;
+
+  white-space: normal !important;
+  overflow: visible !important;
+  overflow-wrap: normal !important;
+  word-break: normal !important;
+  text-align: center !important;
+}
+
+
+/* MOBILE — RESTORE ORIGINAL CARD DESIGN */
+@media screen and (max-width: 767px) {
+
+  .blogs .frameParent7 {
+    width: 100% !important;
+    display: grid !important;
+    grid-template-columns: repeat(1, minmax(0, 400px)) !important;
+    justify-content: center !important;
+    justify-items: stretch !important;
+    gap: 16px !important;
+    overflow: visible !important;
+  }
+
+  .blogs .frameParent7 .rectangleGroup,
+  .blogs .frameParent7 .rectangleParent2,
+  .blogs .frameParent7 .rectangleParent4,
+  .blogs .frameParent7 .rectangleParent8,
+  .blogs .frameParent7 .rectangleParent10 {
+    width: 100% !important;
+    max-width: 300px !important;
+    min-width: 0 !important;
+    aspect-ratio: 400 / 390 !important;
+    height: auto !important;
+
+    margin-left: auto !important;
+    margin-right: auto !important;
+
+    overflow: visible !important;
+  }
+
+  /* Restore the original text-block placement inside each card. */
+  .blogs .frameParent7 .aiPoweredLmsParent,
+  .blogs .frameParent7 .interactiveLearningParent,
+  .blogs .frameParent7 .corporateTrainingParent,
+  .blogs .frameParent7 .digitalEducationParent {
+    left: 6% !important;
+    bottom: 6% !important;
+    width: 88% !important;
+    max-width: none !important;
+    gap: 8px !important;
+    box-sizing: border-box !important;
+  }
+
+  /* Keep requested 24 / 16 typography in mobile too. */
+  .blogs .frameParent7 .aiPoweredLms,
+  .blogs .frameParent7 .interactiveLearning,
+  .blogs .frameParent7 .corporateTraining,
+  .blogs .frameParent7 .learningInnovation,
+  .blogs .frameParent7 .digitalEducation,
+  .blogs .frameParent7 .learningAnalytics,
+  .blogs .frameParent7 .aiPoweredLmsParent > :first-child,
+  .blogs .frameParent7 .interactiveLearningParent > :first-child,
+  .blogs .frameParent7 .corporateTrainingParent > :first-child,
+  .blogs .frameParent7 .digitalEducationParent > :first-child {
+    height: 32px !important;
+    min-height: 32px !important;
+    max-height: 32px !important;
+    font-size: 24px !important;
+    line-height: 32px !important;
+  }
+
+  .blogs .frameParent7 .aiTransformingModern,
+  .blogs .frameParent7 .upskillingTodaysWorkforce,
+  .blogs .frameParent7 .modernAndFlexible,
+  .blogs .frameParent7 .dataDrivenLearningInsights,
+  .blogs .frameParent7 .aiPoweredLmsParent > :nth-child(2),
+  .blogs .frameParent7 .interactiveLearningParent > :nth-child(2),
+  .blogs .frameParent7 .corporateTrainingParent > :nth-child(2),
+  .blogs .frameParent7 .digitalEducationParent > :nth-child(2) {
+    width: 230px !important;
+    max-width: 100% !important;
+    height: 48px !important;
+    min-height: 48px !important;
+    max-height: 48px !important;
+    font-size: 16px !important;
+    line-height: 24px !important;
+  }
+}
+
+
+/* MOBILE ONLY — MOVE BLOG CARD TEXT SLIGHTLY DOWN */
+@media screen and (max-width: 767px) {
+  .blogs .frameParent7 .aiPoweredLmsParent,
+  .blogs .frameParent7 .interactiveLearningParent,
+  .blogs .frameParent7 .corporateTrainingParent,
+  .blogs .frameParent7 .digitalEducationParent {
+    transform: translateY(8px) !important;
+  }
+}
+
+
+/* =========================================================
+   BLOG CARDS — UNIFORM TWO-LINE SUBHEADINGS
+   Desktop + tablet + mobile only.
+   No card/design/image changes.
+   ========================================================= */
+.blogs .frameParent7 .aiTransformingModern,
+.blogs .frameParent7 .upskillingTodaysWorkforce,
+.blogs .frameParent7 .modernAndFlexible,
+.blogs .frameParent7 .dataDrivenLearningInsights,
+.blogs .frameParent7 .aiPoweredLmsParent > :nth-child(2),
+.blogs .frameParent7 .interactiveLearningParent > :nth-child(2),
+.blogs .frameParent7 .corporateTrainingParent > :nth-child(2),
+.blogs .frameParent7 .digitalEducationParent > :nth-child(2) {
+  width: 190px !important;
+  max-width: 190px !important;
+
+  height: 48px !important;
+  min-height: 48px !important;
+  max-height: 48px !important;
+
+  margin-left: auto !important;
+  margin-right: auto !important;
+
+  font-size: 16px !important;
+  line-height: 24px !important;
+
+  white-space: normal !important;
+  overflow: visible !important;
+  text-align: center !important;
+  text-wrap: balance !important;
+}
+

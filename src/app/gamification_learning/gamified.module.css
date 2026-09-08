@@ -6747,3 +6747,43 @@ body {
 @media screen and (min-width: 1024px) and (max-width: 1099px) {
   .interactiveGamifiedLearnin { zoom: 0.7111111111 !important; }
 }
+
+
+/* =========================================================
+   PAGE CENTER FIX ONLY
+   ---------------------------------------------------------
+   The last tablet override was anchoring the original 1440px
+   design canvas with margin:0, which makes the whole page drift
+   sideways after zooming. Center the SAME canvas only.
+   No section sizes, spacing, typography, colors or design changed.
+   ========================================================= */
+
+/* Tablet / 1024: center the scaled 1440px page canvas */
+@media screen and (min-width: 768px) and (max-width: 1099px) {
+  .interactiveGamifiedLearnin {
+    position: relative !important;
+
+    left: 50% !important;
+    right: auto !important;
+
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+
+    transform: translateX(-50%) !important;
+    transform-origin: top center !important;
+  }
+}
+
+/* Desktop: retain the existing centered page canvas */
+@media screen and (min-width: 1100px) {
+  .interactiveGamifiedLearnin {
+    left: auto !important;
+    right: auto !important;
+
+    margin-left: auto !important;
+    margin-right: auto !important;
+
+    transform: none !important;
+  }
+}
+

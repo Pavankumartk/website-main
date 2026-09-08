@@ -127,7 +127,7 @@ function HeroCarousel() {
       data-home-hero
       className={styles["hero-section"]}
       aria-roledescription="carousel"
-      aria-label="NeuroLXP™ highlights"
+      aria-label="NeuroLXP highlights"
       onPointerEnter={(event) => {
         if (event.pointerType === "mouse" && window.matchMedia("(hover: hover) and (pointer: fine)").matches) setIsHovered(true);
       }}
@@ -404,7 +404,7 @@ const storyMissionVisionCards: StoryMissionVisionCardData[] = [
   {
     id: 1,
     title: "Our Story",
-    description: "NeuroLXP™ transforms learning with an intelligent platform for future-ready digital skills.",
+    description: "NeuroLXP transforms learning with an intelligent platform for future-ready digital skills.",
     image: "/images/interested-coworkers-with-new-project.webp",
     accentColor: "#2D4CC8",
     Icon: BookOpenIcon,
@@ -493,7 +493,7 @@ function StoryMissionVision() {
           <span className={styles["smv-heading-vision"]}>Our Vision</span>
         </h2>
         <p className={styles["smv-subtext"]}>
-          At NeuroLXP<sup className={styles["smv-badge-tm"]}>TM</sup>, we&apos;re driven by purpose and a bold vision to transform learning, empowering learners and organizations to achieve more.
+          At NeuroLXP<sup className={styles["smv-badge-tm"]}></sup>, we&apos;re driven by purpose and a bold vision to transform learning, empowering learners and organizations to achieve more.
         </p>
       </div>
 
@@ -787,7 +787,7 @@ function WhyChooseNeuroLXP() {
             </h2>
             <p className={styles["why-choose-subtext"]}>
               <span className={styles["why-choose-subtext-line"]}>
-                NeuroLXP<sup className={styles["why-choose-tm"]}>TM</sup> empowers learners with
+                NeuroLXP<sup className={styles["why-choose-tm"]}></sup> empowers learners with
               </span>
               <span className={styles["why-choose-subtext-line"]}>
                 personalized learning, future
@@ -1326,7 +1326,7 @@ const testimonials: TestimonialData[] = [
     id: 1,
     name: "Sara Thomas",
     role: "Software Engineer",
-    quote: "NeuroLXP™ made learning faster and more engaging. The personalized learning paths helped me build new skills with confidence.",
+    quote: "NeuroLXP made learning faster and more engaging. The personalized learning paths helped me build new skills with confidence.",
     image: "/images/SaraThomas.jpg",
     accentColor: "#2DC8BB",
   },
@@ -1342,7 +1342,7 @@ const testimonials: TestimonialData[] = [
     id: 3,
     name: "Ramesh",
     role: "Lecturer",
-    quote: "NeuroLXP™ makes course delivery effortless. Interactive learning and real-time insights keep my learners engaged.",
+    quote: "NeuroLXP makes course delivery effortless. Interactive learning and real-time insights keep my learners engaged.",
     image: "/images/successful-businessman.webp",
     accentColor: "#907507",
   },
@@ -1350,7 +1350,7 @@ const testimonials: TestimonialData[] = [
     id: 4,
     name: "Joanna",
     role: "Software Engineer",
-    quote: "NeuroLXP™ made learning faster and more engaging. The personalized learning paths helped me build new skills with confidence.",
+    quote: "NeuroLXP made learning faster and more engaging. The personalized learning paths helped me build new skills with confidence.",
     image: "/images/Joanna.jpg",
     accentColor: "#BF1869",
   },
@@ -1366,7 +1366,7 @@ const testimonials: TestimonialData[] = [
     id: 6,
     name: "Aben Sabu",
     role: "Lecturer",
-    quote: "NeuroLXP™ makes course delivery effortless. Interactive learning and real-time insights keep my learners engaged.",
+    quote: "NeuroLXP makes course delivery effortless. Interactive learning and real-time insights keep my learners engaged.",
     image: "/images/handsome.jpg",
     accentColor: "#861109",
   },
@@ -1729,7 +1729,7 @@ function Testimonials() {
           Success Powered by <span className={styles["testimonials-heading-accent"]}>NeuroLXP</span>
         </h2>
         <p className={styles["testimonials-subtext"]}>
-          NeuroLXP<sup className={styles["smv-badge-tm"]}>TM</sup> made learning engaging, simple, and truly effective for our learners.
+          NeuroLXP<sup className={styles["smv-badge-tm"]}></sup> made learning engaging, simple, and truly effective for our learners.
         </p>
       </div>
 
@@ -1793,43 +1793,43 @@ const faqItems: FAQItemData[] = [
     number: "01",
     title: "What is NeuroLXP?",
     mobileTitleLines: ["What is", "NeuroLXP?"],
-    answer: "NeuroLXP™ is a next-generation Learning Experience Platform (LXP) that transforms how organizations design, deliver, and manage learning through personalized, engaging, and scalable learning experiences.",
+    answer: "NeuroLXP is a next-generation Learning Experience Platform (LXP) that transforms how organizations design, deliver, and manage learning through personalized, engaging, and scalable learning experiences.",
     colorStart: "#2D4CC8",
     colorEnd: "#162562",
   },
   {
     id: 2,
     number: "02",
-    title: "Who is NeuroLXP™ Designed for?",
-    mobileTitleLines: ["Who is NeuroLXP™", "Designed for?"],
-    answer: "NeuroLXP™ is purpose-built for academic institutions, corporates, skilling academies, NGOs, trusts, and government skill development programs.",
+    title: "Who is NeuroLXP Designed for?",
+    mobileTitleLines: ["Who is NeuroLXP", "Designed for?"],
+    answer: "NeuroLXP is purpose-built for academic institutions, corporates, skilling academies, NGOs, trusts, and government skill development programs.",
     colorStart: "#BF1869",
     colorEnd: "#590B31",
   },
   {
     id: 3,
     number: "03",
-    title: "How Is NeuroLXP™ Different?",
-    mobileTitleLines: ["How Is NeuroLXP™", "Different?"],
-    answer: "Unlike a conventional LMS that focuses on course administration, NeuroLXP™ delivers learner-centric experiences through personalization, skill-based learning, collaboration, and continuous development.",
+    title: "How Is NeuroLXP Different?",
+    mobileTitleLines: ["How Is NeuroLXP", "Different?"],
+    answer: "Unlike a conventional LMS that focuses on course administration, NeuroLXP delivers learner-centric experiences through personalization, skill-based learning, collaboration, and continuous development.",
     colorStart: "#861109",
     colorEnd: "#200402",
   },
   {
     id: 4,
     number: "04",
-    title: "Why is NeuroLXP™ Groundbreaking?",
-    mobileTitleLines: ["Why is NeuroLXP™", "Groundbreaking?"],
-    answer: "NeuroLXP™ reimagines digital learning by combining intelligent personalization, modern learning experiences, scalable architecture, and data-driven insights into a unified platform built for the future of education and workforce development.",
+    title: "Why is NeuroLXP Groundbreaking?",
+    mobileTitleLines: ["Why is NeuroLXP", "Groundbreaking?"],
+    answer: "NeuroLXP reimagines digital learning by combining intelligent personalization, modern learning experiences, scalable architecture, and data-driven insights into a unified platform built for the future of education and workforce development.",
     colorStart: "#162562",
     colorEnd: "#2D4CC8",
   },
   {
     id: 5,
     number: "05",
-    title: "Who Can Use NeuroLXP™?",
-    mobileTitleLines: ["Who Can Use", "NeuroLXP™?"],
-    answer: "Yes, NeuroLXP™ is designed to scale effortlessly - from schools and universities to enterprises, skilling academies, NGOs, and nationwide government learning initiatives.",
+    title: "Who Can Use NeuroLXP?",
+    mobileTitleLines: ["Who Can Use", "NeuroLXP?"],
+    answer: "Yes, NeuroLXP is designed to scale effortlessly - from schools and universities to enterprises, skilling academies, NGOs, and nationwide government learning initiatives.",
     colorStart: "#67096E",
     colorEnd: "#C712D4",
   },
