@@ -189,7 +189,7 @@ export default function ContentIntelligenceManagement() {
           </svg>
           <div className={styles.frameGroup}>
             <div className={styles.frameContainer}>
-              <p className={styles.headerContentExperienceBadge}>Content Experience</p>
+              <p className={styles.headerContentExperienceBadge}>Content Management</p>
               <div className={styles.onePlatformManyFormatSmaParent}>
                 <h1 className={`${styles.onePlatformMany} ${styles.semanticBoldHeading}`}>One Platform! Many Format! Smarter Learning</h1>
                 <div className={styles.bringContentTogether}>{`Bring content together and transform it into engaging learning experiences. `}</div>
@@ -380,13 +380,13 @@ export default function ContentIntelligenceManagement() {
                     <div className={styles.frameWrapper37}>
                       <div className={styles.checkmarkCircle04Group}>
                         <Image className={styles.checkmarkCircle04Icon} src="/icons/checkmark-circle-04-green.svg" width={32} height={32} sizes="32px" alt="" aria-hidden="true" />
-                        <div className={styles.interactiveLearning}>Multimedia Lessons</div>
+                        <div className={styles.interactiveLearning}>Multimedia lessons</div>
                       </div>
                     </div>
                     <div className={styles.frameWrapper37}>
                       <div className={styles.checkmarkCircle04Container}>
                         <Image className={styles.checkmarkCircle04Icon} src="/icons/checkmark-circle-04-green.svg" width={32} height={32} sizes="32px" alt="" aria-hidden="true" />
-                        <div className={styles.interactiveLearning}>Clickable Content</div>
+                        <div className={styles.interactiveLearning}>Clickable content</div>
                       </div>
                     </div>
                   </div>
@@ -400,7 +400,7 @@ export default function ContentIntelligenceManagement() {
                     <div className={styles.frameWrapper36}>
                       <div className={styles.checkmarkCircle04Parent3}>
                         <Image className={styles.checkmarkCircle04Icon} src="/icons/checkmark-circle-04-green.svg" width={32} height={32} sizes="32px" alt="" aria-hidden="true" />
-                        <div className={styles.interactiveLearning}>Gamified Activities</div>
+                        <div className={styles.interactiveLearning}>Gamified activities</div>
                       </div>
                     </div>
                     <div className={styles.frameWrapper36}>
@@ -690,10 +690,7 @@ export default function ContentIntelligenceManagement() {
                   <Image className={styles.embeddedFeatureGlyph} src="/icons/teacher.svg" width={32} height={32} sizes="32px" alt="" />
                 </span>
                 <div className={styles.forEducatorsParent}>
-                  <h3 className={`${styles.forEducators} ${styles.semanticBoldHeading}`}>
-                    For Educators
-                    <br />
-                  </h3>
+                  <h3 className={`${styles.forEducators} ${styles.semanticBoldHeading}`}>For Educators</h3>
                   <div className={styles.lessContentWork}>Less content work. More teaching</div>
                 </div>
               </div>
@@ -703,10 +700,7 @@ export default function ContentIntelligenceManagement() {
                   <Image className={styles.learnerCombinedIcon} src="/icons/student-saffron-circle.svg" width={70} height={70} sizes="70px" alt="" />
                 </span>
                 <div className={styles.forEducatorsParent}>
-                  <h3 className={`${styles.forEducators} ${styles.semanticBoldHeading}`}>
-                    For Learners
-                    <br />
-                  </h3>
+                  <h3 className={`${styles.forEducators} ${styles.semanticBoldHeading}`}>For Learners</h3>
                   <div className={styles.accessFocusedResources}>Access focused resources, practice, and learn deeper</div>
                 </div>
               </div>
@@ -716,16 +710,8 @@ export default function ContentIntelligenceManagement() {
                   <Image className={styles.embeddedFeatureGlyph} src="/icons/building-03.svg" width={32} height={32} sizes="32px" alt="" />
                 </span>
                 <div className={styles.forEducatorsParent}>
-                  <h3 className={`${styles.forEducators} ${styles.semanticBoldHeading}`}>
-                    For Institutions
-                    <br />
-                    <br />
-                  </h3>
-                  <div className={styles.manageContentAt}>
-                    Manage content
-                    <br />
-                    at scale
-                  </div>
+                  <h3 className={`${styles.forEducators} ${styles.semanticBoldHeading}`}>For Institutions</h3>
+                  <div className={styles.manageContentAt}>Manage content at scale</div>
                 </div>
               </div>
             </div>

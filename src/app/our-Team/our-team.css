@@ -242,28 +242,174 @@
   gap: 16px;
 }
 
+/* ==========================================================
+   VALUE CARD - REFERENCE NEUMORPHIC BORDER STYLE
+   ========================================================== */
+
 .team-value-card {
-  background: var(--team-bg);
-  border-radius: 24px;
-  box-shadow: var(--team-inset-deep);
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
+
+    background: var(--team-bg);
+
+    border-radius: 28px;
+
+    /* remove normal border */
+    border: none;
+
+
+    /* outer raised card */
+    box-shadow:
+
+        10px 10px 22px rgba(190,190,194,0.75),
+
+        -10px -10px 22px rgba(255,255,255,0.95),
+
+        inset 0 0 0 14px rgba(255,255,255,0.55);
+
+    
+    padding: 38px 30px;
+
+
+    min-height: 190px;
+
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+
+    text-align:center;
+
+    position:relative;
+
+    overflow:hidden;
+
 }
 
-.team-value-photo {
-  position: relative;
-  width: 100%;
-  aspect-ratio: 360 / 150;
-  border-radius: 8px;
-  overflow: hidden;
-  background: var(--team-bg);
-  box-shadow: var(--team-raised-strong);
+
+/* inner surface effect */
+
+.team-value-card::before {
+
+    content:"";
+
+    position:absolute;
+
+    inset:14px;
+
+    border-radius:18px;
+
+
+    background:var(--team-bg);
+
+
+    box-shadow:
+
+        inset 6px 6px 12px rgba(190,190,194,0.35),
+
+        inset -6px -6px 12px rgba(255,255,255,0.85);
+
+
+    z-index:0;
+
 }
 
-.team-value-photo img {
-  object-fit: cover;
+
+/* keep text above inner layer */
+
+.team-value-card h3,
+.team-value-card p {
+
+    position:relative;
+
+    z-index:1;
+
+}
+
+
+/* Heading */
+
+.team-value-title {
+
+    font-family:
+        "Segoe UI",
+        "Inter",
+        sans-serif;
+
+    font-size:24px;
+
+    line-height:32px;
+
+    font-weight:700;
+
+    text-align:center;
+
+}
+
+
+/* Description */
+
+.team-value-desc {
+
+    font-family:
+        "Segoe UI",
+        "Inter",
+        sans-serif;
+
+    font-size:20px;
+
+    line-height:28px;
+
+    text-align:center;
+
+}
+
+
+
+/* Mobile */
+
+@media(max-width:767px){
+
+    .team-value-card {
+
+        min-height:150px;
+
+        padding:30px 20px;
+
+        border-radius:24px;
+
+    }
+
+
+    .team-value-card::before {
+
+        inset:12px;
+
+        border-radius:16px;
+
+    }
+
+
+    .team-value-title {
+
+        font-size:18px;
+
+        line-height:26px;
+
+    }
+
+
+    .team-value-desc {
+
+        font-size:14px;
+
+        line-height:22px;
+
+    }
+
 }
 
 .team-value-title {
@@ -284,30 +430,59 @@
   color: var(--team-text);
 }
 
+/* ==========================================================
+   GROUP IMAGE FRAME - REDUCED HEIGHT
+   ========================================================== */
+
 .team-group-photo {
   max-width: 1280px;
   margin: 48px auto 0;
   padding: 0 24px;
 }
 
+
 .team-group-photo-frame {
+
   position: relative;
-  aspect-ratio: 1280 / 694;
+
+  width: 100%;
+
+  height: 420px;
+
   border-radius: 32px;
+
   background: var(--team-bg);
+
   box-shadow: var(--team-inset-deep);
+
+  overflow: hidden;
+
 }
+
 
 .team-group-photo-inner {
+
   position: absolute;
+
   inset: 16px;
+
   border-radius: 16px;
+
   overflow: hidden;
+
   box-shadow: var(--team-raised-strong);
+
 }
 
+
 .team-group-photo-inner img {
-  object-fit: cover;
+
+  width:100%;
+
+  height:100%;
+
+  object-fit:cover;
+
 }
 
 .team-section-title {
@@ -709,5 +884,943 @@
 @media (min-width: 2560px) {
   .team-page {
     font-size: 1.15em;
+  }
+}
+
+/* Value cards - no image layout */
+.team-value-title {
+  margin: 0;
+  font-family: "Segoe UI", "Inter", sans-serif;
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  color: var(--team-primary);
+}
+
+.team-value-desc {
+  margin: 0;
+  font-family: "Segoe UI", "Inter", sans-serif;
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+  color: var(--team-text);
+}
+
+@media(max-width:767px){
+  .team-values{
+    grid-template-columns:1fr;
+    gap:16px;
+    padding:0 20px;
+  }
+
+  .team-value-card{
+    min-height:120px;
+    padding:20px;
+    border-radius:20px;
+  }
+
+  .team-value-title{
+    font-size:18px;
+    line-height:26px;
+  }
+
+  .team-value-desc{
+    font-size:14px;
+    line-height:22px;
+  }
+}
+
+
+/* ==========================================================
+   VALUE CARDS - CENTER ALIGN + REFERENCE BORDER STYLE
+   ========================================================== */
+
+.team-values {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  justify-content: center;
+  align-items: center;
+  gap: 28px;
+}
+
+.team-value-card {
+
+  background: var(--team-bg);
+
+  border-radius: 26px;
+
+  /* reference neumorphic raised border */
+  border: 1px solid rgba(255,255,255,0.75);
+
+  box-shadow:
+    8px 8px 18px rgba(198,198,201,0.65),
+    -8px -8px 18px rgba(255,255,255,0.95);
+
+  padding: 28px 24px;
+
+  min-height: 150px;
+
+  display:flex;
+  flex-direction:column;
+
+  justify-content:center;
+  align-items:center;
+
+  text-align:center;
+
+  gap:10px;
+
+}
+
+
+/* Heading center */
+
+.team-value-title {
+
+  width:100%;
+
+  margin:0;
+
+  text-align:center;
+
+  font-family:"Segoe UI","Inter",sans-serif;
+
+  font-size:24px;
+
+  line-height:1.3;
+
+  font-weight:700;
+
+}
+
+
+/* Description center */
+
+.team-value-desc {
+
+  width:100%;
+
+  margin:0;
+
+  text-align:center;
+
+  font-family:"Segoe UI","Inter",sans-serif;
+
+  font-size:20px;
+
+  line-height:1.4;
+
+}
+
+
+/* Tablet */
+
+@media(max-width:1024px){
+
+  .team-values{
+
+    grid-template-columns:repeat(2,minmax(0,1fr));
+
+    gap:24px;
+
+  }
+
+}
+
+
+/* Mobile */
+
+@media(max-width:767px){
+
+  .team-values{
+
+    grid-template-columns:1fr;
+
+    gap:18px;
+
+    padding-inline:20px;
+
+  }
+
+
+  .team-value-card{
+
+    min-height:130px;
+
+    padding:22px 18px;
+
+    border-radius:22px;
+
+  }
+
+
+  .team-value-title{
+
+    font-size:18px;
+
+    line-height:26px;
+
+  }
+
+
+  .team-value-desc{
+
+    font-size:14px;
+
+    line-height:22px;
+
+  }
+
+}
+
+/* ==========================================================
+   FINAL VALUE CARD - REFERENCE INNER SHADOW BORDER
+   Overrides previous value card styles
+   ========================================================== */
+
+.team-value-card {
+  background: var(--team-bg);
+  border: none;
+  border-radius: 28px;
+
+  position: relative;
+  overflow: hidden;
+
+  padding: 38px 30px;
+  min-height: 190px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+
+  box-shadow:
+    10px 10px 22px rgba(196,196,196,0.45),
+    -10px -10px 22px rgba(255,255,255,0.95);
+}
+
+
+/* Inner recessed border only */
+.team-value-card::before {
+  content: "";
+  position: absolute;
+  inset: 14px;
+
+  border-radius: 20px;
+
+  background: var(--team-bg);
+
+  box-shadow:
+    inset 6px 6px 14px rgba(196,196,196,0.55),
+    inset -6px -6px 14px rgba(255,255,255,0.95);
+
+  z-index: 0;
+}
+
+
+.team-value-card h3,
+.team-value-card p {
+  position: relative;
+  z-index: 1;
+}
+
+
+/* Keep typography */
+.team-value-title {
+  margin: 0 0 14px;
+
+  font-family:
+    "Segoe UI",
+    "Inter",
+    sans-serif;
+
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 700;
+
+  text-align: center;
+  color: var(--team-primary);
+}
+
+
+.team-value-desc {
+  margin: 0;
+
+  font-family:
+    "Segoe UI",
+    "Inter",
+    sans-serif;
+
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 400;
+
+  text-align: center;
+  color: var(--team-text);
+}
+
+
+@media(max-width:767px){
+
+  .team-value-card {
+    min-height:150px;
+    padding:28px 20px;
+    border-radius:24px;
+  }
+
+  .team-value-card::before {
+    inset:12px;
+    border-radius:18px;
+  }
+
+  .team-value-title {
+    font-size:18px;
+    line-height:26px;
+  }
+
+  .team-value-desc {
+    font-size:14px;
+    line-height:22px;
+  }
+}
+
+/* ==========================================================
+   FOUNDER SECTION - TABLET & MOBILE ORDER FIX
+   Order:
+   Label
+   Image
+   Name
+   Role
+   Tagline
+   Description
+   Button
+   ========================================================== */
+
+
+@media (max-width:1024px){
+
+  .team-founder{
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    gap:28px;
+
+    padding:0 24px;
+
+  }
+
+
+  /*
+     Make content children participate
+     in parent ordering
+  */
+
+  .team-founder-content{
+
+    display:contents;
+
+  }
+
+
+  /* 1. Label */
+
+  .team-eyebrow--inline{
+
+    order:1;
+
+    align-self:center;
+
+    margin-bottom:4px;
+
+  }
+
+
+  /* 2. Image */
+
+  .team-founder-photo{
+
+    order:2;
+
+    width:100%;
+
+    max-width:520px;
+
+    aspect-ratio:1 / 1;
+
+  }
+
+
+  /* 3. Name */
+
+  .team-founder-name{
+
+    order:3;
+
+    width:100%;
+
+    text-align:center;
+
+  }
+
+
+  /* 4. Role */
+
+  .team-founder-role{
+
+    order:4;
+
+    width:100%;
+
+    text-align:center;
+
+  }
+
+
+  /* 5. Tagline */
+
+  .team-founder-tagline{
+
+    order:5;
+
+    width:100%;
+
+    text-align:center;
+
+  }
+
+
+  /* 6. Description */
+
+  .team-founder-desc{
+
+    order:6;
+
+    width:100%;
+
+    text-align:center;
+
+  }
+
+
+  /* 7. Button */
+
+  .team-linkedin-btn{
+
+    order:7;
+
+    align-self:center;
+
+  }
+
+}
+
+
+
+/* ==========================================================
+   MOBILE SPECIFIC
+   ========================================================== */
+
+
+@media(max-width:767px){
+
+
+  .team-founder{
+
+    padding:0 20px;
+
+    gap:22px;
+
+    margin-top:32px;
+
+  }
+
+
+
+  .team-eyebrow--inline{
+
+    font-size:18px;
+
+    line-height:26px;
+
+    padding:10px 24px;
+
+  }
+
+
+
+  .team-founder-photo{
+
+    width:100%;
+
+    max-width:360px;
+
+    aspect-ratio:1 / 1;
+
+    border-radius:24px;
+
+  }
+
+
+
+  .team-founder-name{
+
+    font-size:32px;
+
+    line-height:40px;
+
+  }
+
+
+
+  .team-founder-role{
+
+    font-size:20px;
+
+    line-height:28px;
+
+  }
+
+
+
+  .team-founder-tagline{
+
+    font-size:20px;
+
+    line-height:28px;
+
+  }
+
+
+
+  .team-founder-desc{
+
+    font-size:16px;
+
+    line-height:26px;
+
+  }
+
+
+
+  .team-linkedin-btn{
+
+    font-size:18px;
+
+    padding:14px 28px;
+
+  }
+
+
+}
+
+/* ==========================================================
+   LINKEDIN BUTTON - CLEAN HOVER IN / OUT EFFECT
+   SINGLE VERSION ONLY
+   ========================================================== */
+
+.team-linkedin-btn {
+
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 12px;
+
+  margin-top: 8px;
+
+  padding: 16px 32px;
+
+  background: var(--team-bg);
+
+  border: none;
+
+  border-radius: 32px;
+
+  cursor: pointer;
+
+  font-family:
+    "Segoe UI",
+    "Inter",
+    sans-serif;
+
+  font-size: 24px;
+
+  line-height: 32px;
+
+  font-weight: 600;
+
+  color: var(--team-primary);
+
+
+  /* Normal OUT / Raised state */
+
+  box-shadow:
+    -8px -8px 16px #ffffff,
+    8px 8px 16px #c6c6c9;
+
+
+  transform: translateY(0);
+
+  transition:
+    transform .35s ease,
+    box-shadow .35s ease;
+}
+
+
+
+/* Hover IN */
+
+.team-linkedin-btn:hover {
+
+  transform: translateY(-4px);
+
+  box-shadow:
+    -14px -14px 24px #ffffff,
+    14px 14px 24px #c6c6c9;
+
+}
+
+
+
+/* Remove click movement */
+
+.team-linkedin-btn:active {
+
+  transform: translateY(0);
+
+}
+
+/* ==========================================================
+   TEAM CARD LINKEDIN ICON
+   NEUMORPHIC CIRCLE STYLE
+   ========================================================== */
+
+.team-card-linkedin {
+
+    width:58px;
+    height:58px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    margin-top:18px;
+
+    border-radius:50%;
+
+    background:var(--team-bg);
+
+    color:var(--team-primary);
+
+    box-shadow:
+        -6px -6px 14px #ffffff,
+        6px 6px 14px #c6c6c9;
+
+    transition:
+        transform .35s ease,
+        box-shadow .35s ease;
+
+}
+
+
+/* LinkedIn icon */
+
+.team-card-linkedin svg {
+
+    width:30px;
+    height:30px;
+
+    stroke:var(--team-primary);
+
+}
+
+
+
+/* Hover IN */
+
+.team-card-linkedin:hover {
+
+    transform:translateY(-4px);
+
+    box-shadow:
+        -10px -10px 20px #ffffff,
+        10px 10px 20px #c6c6c9;
+
+}
+
+
+
+/* Hover OUT */
+
+.team-card-linkedin {
+
+    transition:
+        transform .35s ease,
+        box-shadow .35s ease;
+
+}
+
+
+
+@media(max-width:767px){
+
+    .team-card-linkedin {
+
+        width:48px;
+        height:48px;
+
+    }
+
+
+    .team-card-linkedin svg {
+
+        width:24px;
+        height:24px;
+
+    }
+
+}
+
+
+/* ==========================================================================
+   FOUNDER SECTION — IMAGE BACKGROUND REMOVED + IMAGE/HEADINGS ALIGNMENT FIX
+   Scoped only to the founder block shown in the supplied screenshot.
+   ========================================================================== */
+
+.team-founder {
+  align-items: center;
+}
+
+.team-founder-photo {
+  background: transparent !important;
+  border-radius: 0 !important;
+  overflow: visible !important;
+  box-shadow: none !important;
+}
+
+.team-founder-photo img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: contain !important;
+  object-position: center !important;
+}
+
+.team-founder-content {
+  min-width: 0;
+}
+
+.team-eyebrow--inline,
+.team-founder-name,
+.team-founder-role,
+.team-founder-tagline,
+.team-founder-desc {
+  max-width: 100%;
+}
+
+.team-founder-name,
+.team-founder-role,
+.team-founder-tagline,
+.team-founder-desc {
+  overflow: visible !important;
+  white-space: normal !important;
+  word-break: normal !important;
+  overflow-wrap: normal !important;
+}
+
+
+/* Desktop — preserve the existing desktop design/sizing, only correct alignment */
+@media (min-width: 1025px) {
+  .team-founder {
+    display: grid !important;
+    grid-template-columns: minmax(0, 608px) minmax(0, 1fr) !important;
+    column-gap: 32px !important;
+    align-items: center !important;
+  }
+
+  .team-founder-photo {
+    width: 100% !important;
+    max-width: 608px !important;
+    aspect-ratio: 608 / 603 !important;
+    flex: none !important;
+  }
+
+  .team-founder-content {
+    width: 100% !important;
+    min-width: 0 !important;
+    align-items: flex-start !important;
+  }
+
+  .team-eyebrow--inline {
+    width: fit-content !important;
+    max-width: 100% !important;
+  }
+
+  .team-founder-name,
+  .team-founder-role,
+  .team-founder-tagline,
+  .team-founder-desc {
+    width: 100% !important;
+    text-align: left !important;
+  }
+}
+
+
+/* Tablet — label, image and every heading remain fully visible and centered */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .team-founder {
+    width: 100% !important;
+    max-width: 760px !important;
+    margin-inline: auto !important;
+    padding-inline: 24px !important;
+  }
+
+  .team-founder-photo {
+    width: min(100%, 560px) !important;
+    max-width: 560px !important;
+    aspect-ratio: 608 / 603 !important;
+  }
+
+  .team-founder-content {
+    width: 100% !important;
+  }
+
+  .team-eyebrow--inline {
+    width: fit-content !important;
+    max-width: calc(100% - 24px) !important;
+    text-align: center !important;
+  }
+
+  .team-founder-name,
+  .team-founder-role,
+  .team-founder-tagline,
+  .team-founder-desc {
+    width: 100% !important;
+    max-width: 680px !important;
+    margin-inline: auto !important;
+    text-align: center !important;
+  }
+}
+
+
+/* Mobile — no cropped image, no cut headings */
+@media (max-width: 767px) {
+  .team-founder {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding-inline: 20px !important;
+  }
+
+  .team-founder-photo {
+    width: 100% !important;
+    max-width: 380px !important;
+    height: auto !important;
+    aspect-ratio: 608 / 603 !important;
+  }
+
+  .team-founder-photo img {
+    object-fit: contain !important;
+    object-position: center !important;
+  }
+
+  .team-founder-content {
+    width: 100% !important;
+    min-width: 0 !important;
+  }
+
+  .team-eyebrow--inline {
+    width: fit-content !important;
+    max-width: 100% !important;
+    margin-inline: auto !important;
+    padding-inline: 18px !important;
+    white-space: normal !important;
+    text-align: center !important;
+  }
+
+  .team-founder-name,
+  .team-founder-role,
+  .team-founder-tagline,
+  .team-founder-desc {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin-inline: auto !important;
+    text-align: center !important;
+    overflow: visible !important;
+  }
+}
+/* ==========================================================================
+   GROUP PHOTO — FULL IMAGE VISIBLE, NO TOP/BOTTOM CROP
+   Only the group-photo section is corrected.
+   ========================================================================== */
+
+.team-group-photo-frame {
+  width: 100% !important;
+  height: auto !important;
+  min-height: 0 !important;
+  aspect-ratio: 1104 / 388 !important;
+  overflow: visible !important;
+}
+
+.team-group-photo-inner {
+  position: absolute !important;
+  inset: 16px !important;
+  overflow: hidden !important;
+}
+
+.team-group-photo-inner img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: contain !important;
+  object-position: center center !important;
+}
+
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .team-group-photo {
+    padding-inline: 24px !important;
+  }
+
+  .team-group-photo-frame {
+    aspect-ratio: 1104 / 388 !important;
+  }
+
+  .team-group-photo-inner {
+    inset: 12px !important;
+  }
+}
+
+
+/* Mobile */
+@media (max-width: 767px) {
+  .team-group-photo {
+    width: 100% !important;
+    padding-inline: 20px !important;
+  }
+
+  .team-group-photo-frame {
+    width: 100% !important;
+    height: auto !important;
+    aspect-ratio: 1104 / 388 !important;
+    border-radius: 22px !important;
+  }
+
+  .team-group-photo-inner {
+    inset: 8px !important;
+    border-radius: 14px !important;
+  }
+
+  .team-group-photo-inner img {
+    object-fit: contain !important;
+    object-position: center center !important;
   }
 }

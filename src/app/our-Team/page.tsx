@@ -1,7 +1,6 @@
 import Image from "next/image";
-import Link from "next/link";
-import Header from "@/components/Header/header";
-import Footer from "@/components/Footer/footer";
+import Header from "../../components/Header/header";
+import Footer from "../../components/Footer/footer";
 import "./our-team.css";
 
 type IconName =
@@ -93,20 +92,85 @@ const heroPills: { label: string; color: string }[] = [
   { label: "Innovation", color: "#C05512" },
 ];
 
-const valueCards: { title: string; desc: string; image: string }[] = [
-  { title: "Human-First Learning", desc: "Built around learners.", image: "/images/value-human-first-learning.jpg" },
-  { title: "Intelligent Technology", desc: "Smarter through technology.", image: "/images/value-intelligent-technology.jpg" },
-  { title: "Meaningful Impact", desc: "Learning with Impact.", image: "/images/value-meaningful-impact.jpg" },
+const valueCards: { title: string; desc: string }[] = [
+  {
+    title: "Human-First Learning",
+    desc: "Built around learners.",
+  },
+  {
+    title: "Intelligent Technology",
+    desc: "Smarter through technology.",
+  },
+  {
+    title: "Meaningful Impact",
+    desc: "Learning with Impact.",
+  },
 ];
 
-const teamMembers: { name: string; role: string; blurb: string; photo: string }[] = [
-  { name: "Ranjitha.M", role: "Full-Stack Developer", blurb: "Driving projects from idea to execution", photo: "/images/team-ranjitha.jpg" },
-  // { name: "Rakesh Kumar", role: "Full-Stack Developer", blurb: "Building powerful backend solutions", photo: "/images/team-rakesh.jpg" },
-  { name: "Jeethu", role: "Full-Stack Developer", blurb: "Building seamless product experiences", photo: "/images/team-jeethu.jpg" },
-  { name: "Veena Raju", role: "Product Designer", blurb: "Creating intuitive digital experiences", photo: "/images/team-veena.jpg" },
-  { name: "Inchana", role: "Full-Stack Developer", blurb: "Creating scalable product solutions", photo: "/images/team-inchana.jpg" },
-  { name: "Pavan", role: "Full-Stack Developer", blurb: "Building reliable digital solutions", photo: "/images/team-pavan.jpg" },
-  { name: "Heena", role: "Full-Stack Developer", blurb: "Creating engaging product experiences", photo: "/images/team-heena.jpg" },
+const teamMembers: {
+  name: string;
+  role: string;
+  blurb: string;
+  photo: string;
+  linkedin: string;
+}[] = [
+
+  {
+    name: "Ranjitha A M",
+    role: "Full-Stack Developer",
+    blurb: "Driving projects from idea to execution",
+    photo: "/images/team-ranjitha.jpg",
+    linkedin: "https://www.linkedin.com/",
+  },
+
+  {
+    name: "Rakesh R",
+    role: "Full-Stack Developer",
+    blurb: "Building powerful backend solutions",
+    photo: "/images/team-rakesh.jpg",
+    linkedin: "https://www.linkedin.com/",
+  },
+
+  {
+    name: "Jeethu",
+    role: "Full-Stack Developer",
+    blurb: "Building seamless product experiences",
+    photo: "/images/team-jeethu.jpg",
+    linkedin: "https://www.linkedin.com/",
+  },
+
+  {
+    name: "Veena Raju",
+    role: "Product Designer",
+    blurb: "Creating intuitive digital experiences",
+    photo: "/images/team-veena.jpg",
+    linkedin: "https://www.linkedin.com/",
+  },
+
+  {
+    name: "Inchana",
+    role: "Full-Stack Developer",
+    blurb: "Creating scalable product solutions",
+    photo: "/images/team-inchana.jpg",
+    linkedin: "https://www.linkedin.com/",
+  },
+
+  {
+    name: "Pavan",
+    role: "Full-Stack Developer",
+    blurb: "Building reliable digital solutions",
+    photo: "/images/team-pavan.jpg",
+    linkedin: "https://www.linkedin.com/",
+  },
+
+  // {
+  //   name: "Heena",
+  //   role: "Full-Stack Developer",
+  //   blurb: "Creating engaging product experiences",
+  //   photo: "/images/team-heena.jpg",
+  //   linkedin: "https://www.linkedin.com/",
+  // },
+
 ];
 
 const bringTogether: { title: string; desc: string; color: string; icon: IconName }[] = [
@@ -127,7 +191,8 @@ export default function OurTeamPage() {
   return (
     <>
       <Header />
-       <main id="main-content" className="team-page">
+
+      <main id="main-content" className="team-page">
         
         <section className="team-hero">
           <span className="team-eyebrow">Our Team</span>
@@ -147,7 +212,7 @@ export default function OurTeamPage() {
 
         <section className="team-founder">
           <div className="team-founder-photo">
-            <Image src="/images/pavan-kumar-founder.jpg" alt="Mr Pavan Kumar, Founder and CEO of NeuroLXP" fill sizes="(max-width: 767px) 100vw, 608px" />
+            <Image src="/images/marketing-concept-with-vision-word-flat-lay 1.png" alt="Mr Pavan Kumar, Founder and CEO of NeuroLXP" fill sizes="(max-width: 767px) 100vw, 608px" />
           </div>
           <div className="team-founder-content">
             <span className="team-eyebrow team-eyebrow--inline">The Vision Behind NeuroLXP</span>
@@ -167,9 +232,6 @@ export default function OurTeamPage() {
         <section className="team-values" aria-label="What sets NeuroLXP apart">
           {valueCards.map((card) => (
             <article key={card.title} className="team-value-card">
-              <div className="team-value-photo">
-                <Image src={card.image} alt="" fill sizes="(max-width: 767px) 100vw, 360px" />
-              </div>
               <h3 className="team-value-title">{card.title}</h3>
               <p className="team-value-desc">{card.desc}</p>
             </article>
@@ -180,7 +242,7 @@ export default function OurTeamPage() {
           <div className="team-group-photo-frame">
             <div className="team-group-photo-inner">
               <Image
-                src="/images/team-group-photo.jpg"
+                src="/images/team-six-office-workers-white-wall 1.png"
                 alt="The NeuroLXP team together"
                 fill
                 sizes="(max-width: 767px) 100vw, 1216px"
@@ -198,12 +260,19 @@ export default function OurTeamPage() {
           <div className="team-grid">
             {teamMembers.map((member) => (
               <article key={member.name} className="team-card">
-                <div className="team-avatar">
-                  <Image src={member.photo} alt={member.name} fill sizes="147px" />
-                </div>
                 <h3 className="team-card-name">{member.name}</h3>
                 <p className="team-card-role">{member.role}</p>
                 <p className="team-card-blurb">{member.blurb}</p>
+
+                <a
+                  href={member.linkedin}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="team-card-linkedin"
+                  aria-label={`Connect with ${member.name} on LinkedIn`}
+                >
+                  <Icon name="linkedin" />
+                </a>
               </article>
             ))}
           </div>
@@ -241,6 +310,7 @@ export default function OurTeamPage() {
           </div>
         </section>
       </main>
+
       <Footer />
     </>
   );

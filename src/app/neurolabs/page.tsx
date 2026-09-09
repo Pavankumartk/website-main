@@ -6,7 +6,7 @@ import { useRouter } from "next/navigation";
 import Header from "../../components/Header/header";
 import Footer from "../../components/Footer/footer";
 import "./codingLabs.css";
-
+import TalkToExpertButton from "@/components/TalkToOurExpert/TalkToExpertButton";
 const practiceItems = [
   { label: "Write & Test Code", color: "#BF1869" },
   { label: "Solve Real Challenges", color: "#2A7308" },
@@ -371,7 +371,7 @@ export default function CodingLabsPage() {
         </section>
       </div>
     </main>
-
+ <TalkToExpertButton />
     <Footer />
   </>
   );

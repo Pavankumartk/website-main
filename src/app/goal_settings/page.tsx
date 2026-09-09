@@ -10,7 +10,7 @@ import Header from "../../components/Header/header";
 import Footer from "../../components/Footer/footer";
 import { BookDemoTrigger } from "../../components/Bookademo/Bookademo";
 
-import styles from "./goals-progress.module.css";
+import styles from "./GoalsHero.module.css";
 
 type Tone = "blue" | "pink" | "purple" | "orange" | "teal" | "green" | "gold";
 
@@ -74,7 +74,7 @@ const goalCards = [
   },
   {
     title: "Review & Improve",
-    description: <>Review, refine and<br />improve</>,
+    description: <>Review, refine, and<br />improve</>,
     icon: "/icons/message-multiple-02.svg",
     tone: "teal" as Tone,
   },
@@ -291,7 +291,7 @@ function FeatureIcon({ src, alt, tone }: { src: string; alt: string; tone: Tone 
       <svg viewBox="0 0 74 74" fill="none" aria-hidden="true" focusable="false">
         <g filter="url(#featureIconInset)">
           <path
-            d="M37 0L63.1629 10.837L74 37L63.1629 63.1629L37 74L10.837 63.1629L0 37L10.837 10.837L37 0Z"
+            d="M37 0L69.0433 18.5V55.5L37 74L4.9567 55.5V18.5L37 0Z"
             fill="#DFE6E9"
           />
         </g>
@@ -331,13 +331,13 @@ function FeatureIcon({ src, alt, tone }: { src: string; alt: string; tone: Tone 
   );
 }
 
-function OctagonFrame({ id }: { id: string }) {
-  const outer = `outerOctagon-${id}`;
-  const inner = `innerOctagon-${id}`;
+function HexagonFrame({ id }: { id: string }) {
+  const outer = `outerHexagon-${id}`;
+  const inner = `innerHexagon-${id}`;
 
   return (
     <svg
-      className={styles.octagonSvg}
+      className={styles.hexagonSvg}
       viewBox="0 0 371 371"
       fill="none"
       aria-hidden="true"
@@ -345,13 +345,13 @@ function OctagonFrame({ id }: { id: string }) {
     >
       <g filter={`url(#${outer})`}>
         <path
-          d="M185.5 24L299.698 71.3023L347 185.5L299.698 299.698L185.5 347L71.3023 299.698L24 185.5L71.3023 71.3023L185.5 24Z"
+          d="M185.5 24L347 117.25V253.75L185.5 347L24 253.75V117.25L185.5 24Z"
           fill="#DFE6E9"
         />
       </g>
       <g filter={`url(#${inner})`}>
         <path
-          d="M183 56L274.924 94.0761L313 186L274.924 277.924L183 316L91.0761 277.924L53 186L91.0761 94.0761L183 56Z"
+          d="M183 56L313 131.06V240.94L183 316L53 240.94V131.06L183 56Z"
           fill="#DFE6E9"
         />
       </g>
@@ -445,7 +445,7 @@ function GoalCard({
 }) {
   return (
     <article className={`${styles.goalCard} ${styles[`tone${tone}`]}`}>
-      <OctagonFrame id={id} />
+      <HexagonFrame id={id} />
       <div className={styles.goalCardContent}>
         <FeatureIcon src={icon} alt={title} tone={tone} />
         <h3>{title}</h3>
@@ -742,7 +742,7 @@ const GoalSettingsAndProgressTracking: NextPage = () => {
               <div className={styles.benefitsInner}>
                 <Image
                   className={styles.benefitsImage}
-                  src="/images/cheerful-diverse-people-showing-graph-tablet 1.webp"
+                  src="/images/twooffice.png"
                   width={606}
                   height={473}
                   sizes="(max-width: 960px) 100vw, 606px"

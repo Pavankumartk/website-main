@@ -7,6 +7,7 @@ import Image from "next/image";
 import Header from "../../components/Header/header";
 import Footer from "../../components/Footer/footer";
 import { BookDemoModal } from "../../components/Bookademo/Bookademo";
+import TalkToExpertButton from "@/components/TalkToOurExpert/TalkToExpertButton";
 import styles from "./bootcamp.module.css";
 
 const Bootcamp: NextPage = () => {
@@ -423,7 +424,7 @@ const Bootcamp: NextPage = () => {
       {isBookDemoOpen && (
         <BookDemoModal onClose={() => setIsBookDemoOpen(false)} />
       )}
-
+ <TalkToExpertButton />
       <Footer />
     </>
   );

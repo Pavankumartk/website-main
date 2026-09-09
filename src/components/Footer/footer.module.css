@@ -924,3 +924,265 @@
     padding: 0 !important;
   }
 }
+
+/* =========================================================
+   FINAL FOOTER RESPONSIVE WIDTH / OVERFLOW FIX
+   - Prevents horizontal overflow at 100% zoom.
+   - Keeps the original wide-desktop layout.
+   - Makes laptop/desktop widths fluid from 1024px–1499px.
+   - Does not change the existing mobile stacking design.
+   ========================================================= */
+
+.nlxp-footer,
+.nlxp-footer-inner,
+.nlxp-footer-top,
+.nlxp-footer-brand,
+.nlxp-footer-brand-top,
+.nlxp-footer-tagline,
+.nlxp-footer-company,
+.nlxp-footer-right,
+.nlxp-footer-columns,
+.nlxp-footer-column,
+.nlxp-footer-social,
+.nlxp-footer-copyright {
+  box-sizing: border-box;
+  min-width: 0;
+}
+
+.nlxp-footer {
+  max-width: 100%;
+  overflow-x: hidden;
+  overflow-x: clip;
+}
+
+.nlxp-footer-inner,
+.nlxp-footer-top,
+.nlxp-footer-brand,
+.nlxp-footer-right,
+.nlxp-footer-columns {
+  max-width: 100%;
+}
+
+/* ---------------------------------------------------------
+   SMALL / MEDIUM LAPTOPS: 1024px–1279px
+   --------------------------------------------------------- */
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .nlxp-footer-inner {
+    width: 100%;
+    padding-left: clamp(22px, 3vw, 32px);
+    padding-right: clamp(22px, 3vw, 32px);
+  }
+
+  .nlxp-footer-top {
+    width: 100%;
+    gap: clamp(20px, 2.2vw, 28px);
+  }
+
+  .nlxp-footer-brand,
+  .nlxp-footer-right {
+    flex: 1 1 0;
+    width: auto;
+    min-width: 0;
+  }
+
+  .nlxp-footer-tagline {
+    width: 100%;
+    max-width: 100%;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .nlxp-footer-tagline-text {
+    white-space: normal;
+  }
+
+  .nlxp-footer-columns {
+    width: 100%;
+    max-width: 100%;
+    gap: clamp(16px, 1.8vw, 24px);
+  }
+
+  .nlxp-footer-column {
+    flex: 1 1 0;
+    width: auto;
+    min-width: 0;
+  }
+
+  .nlxp-footer-link {
+    white-space: normal;
+    overflow-wrap: anywhere;
+  }
+
+  .nlxp-footer-social {
+    max-width: 100%;
+    gap: clamp(14px, 1.6vw, 20px);
+  }
+}
+
+/* ---------------------------------------------------------
+   STANDARD DESKTOP / LARGE LAPTOPS: 1280px–1499px
+   Override the fixed Figma dimensions that caused overflow.
+   --------------------------------------------------------- */
+@media (min-width: 1280px) and (max-width: 1499px) {
+  .nlxp-footer {
+    width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+  }
+
+  .nlxp-footer-inner {
+    position: relative !important;
+    top: 0 !important;
+
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+
+    margin: 0 auto !important;
+    padding: 48px clamp(28px, 3vw, 42px) 28px !important;
+  }
+
+  .nlxp-footer-top {
+    width: 100% !important;
+    height: auto !important;
+
+    justify-content: space-between !important;
+    gap: clamp(20px, 2vw, 30px) !important;
+  }
+
+  .nlxp-footer-brand {
+    flex: 1 1 52% !important;
+    width: auto !important;
+    max-width: none !important;
+    height: auto !important;
+    min-width: 0 !important;
+  }
+
+  .nlxp-footer-brand-top {
+    width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+  }
+
+  .nlxp-footer-logo {
+    width: clamp(245px, 22vw, 299px) !important;
+    height: auto !important;
+
+    min-width: 0 !important;
+    min-height: 0 !important;
+    max-width: 299px !important;
+    max-height: none !important;
+
+    aspect-ratio: 299 / 112;
+    transform: none !important;
+  }
+
+  .nlxp-footer-tagline {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+
+    flex-wrap: wrap !important;
+    gap: 10px !important;
+
+    white-space: normal !important;
+  }
+
+  .nlxp-footer-tagline-text {
+    font-size: clamp(20px, 1.65vw, 24px) !important;
+    line-height: 1.3 !important;
+    white-space: normal !important;
+  }
+
+  .nlxp-footer-company,
+  .nlxp-footer-company-name,
+  .nlxp-footer-address {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+  }
+
+  .nlxp-footer-right {
+    flex: 1 1 48% !important;
+    width: auto !important;
+    max-width: none !important;
+    height: auto !important;
+    min-width: 0 !important;
+  }
+
+  .nlxp-footer-columns {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+
+    gap: clamp(14px, 1.5vw, 22px) !important;
+  }
+
+  .nlxp-footer-column,
+  .nlxp-footer-column:nth-child(1),
+  .nlxp-footer-column:nth-child(2),
+  .nlxp-footer-column:nth-child(3) {
+    flex: 1 1 0 !important;
+    width: auto !important;
+    min-width: 0 !important;
+  }
+
+  .nlxp-footer-heading {
+    font-size: clamp(18px, 1.45vw, 22px) !important;
+    line-height: 1.35 !important;
+    white-space: normal !important;
+  }
+
+  .nlxp-footer-link {
+    font-size: clamp(15px, 1.2vw, 18px) !important;
+    line-height: 1.45 !important;
+
+    white-space: normal !important;
+    overflow-wrap: anywhere;
+  }
+
+  .nlxp-footer-social {
+    width: auto !important;
+    max-width: 100% !important;
+    height: auto !important;
+
+    gap: clamp(14px, 1.5vw, 22px) !important;
+    flex-wrap: nowrap !important;
+  }
+
+  .nlxp-footer-social-icon {
+    width: clamp(60px, 5.25vw, 74px) !important;
+    height: clamp(60px, 5.25vw, 74px) !important;
+    min-width: clamp(60px, 5.25vw, 74px) !important;
+    min-height: clamp(60px, 5.25vw, 74px) !important;
+    flex: 0 0 clamp(60px, 5.25vw, 74px) !important;
+  }
+
+  .nlxp-footer-social-icon::before {
+    width: clamp(44px, 4vw, 56px) !important;
+    height: clamp(44px, 4vw, 56px) !important;
+  }
+
+  .nlxp-footer-social-svg {
+    width: clamp(26px, 2.2vw, 32px) !important;
+    height: clamp(26px, 2.2vw, 32px) !important;
+  }
+
+  .nlxp-footer-copyright {
+    width: 100% !important;
+    height: auto !important;
+    line-height: 28px !important;
+    padding-top: 4px !important;
+  }
+}
+
+/* ---------------------------------------------------------
+   WIDE DESKTOPS: retain the supplied Figma dimensions, but
+   remove the tiny 2–3px overflow created by 676 + 35 + 631.
+   --------------------------------------------------------- */
+@media (min-width: 1500px) {
+  .nlxp-footer-top {
+    gap: 32px !important;
+  }
+}
+

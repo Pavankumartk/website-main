@@ -3,6 +3,7 @@ import styles from "./coding-resources.module.css";
 
 import Header from "../../components/Header/header";
 import Footer from "../../components/Footer/footer";
+import TalkToExpertButton from "@/components/TalkToOurExpert/TalkToExpertButton";
 
 const learningCards = [
   "Programming Guides",
@@ -253,7 +254,7 @@ export default function CodingResources() {
           </section>
         </div>
       </main>
-
+ <TalkToExpertButton />
       <Footer />
     </>
   );
