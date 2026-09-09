@@ -12733,3 +12733,198 @@
     overflow-wrap: anywhere !important;
   }
 }
+
+/* ==========================================================================\n   FINAL RESTORE — IMAGE / CARD NEUMORPHIC DEPTH\n   --------------------------------------------------------------------------\n   Restores the shadow layers that belong to the card/image sections only.\n   No layout, spacing, typography, sizing or responsive positioning changes.\n   ========================================================================== */
+
+/* Content compatibility cards — outer raised card + lower soft depth. */
+.contentIntelligenceManagem .frameParent37 .compatibilitySwitchCard {
+  box-shadow:
+    10px 10px 4px #c4c4c4,
+    -10px -10px 4px #ffffff !important;
+}
+
+.contentIntelligenceManagem .frameParent37 .compatibilitySwitchHeader {
+  box-shadow:
+    0 14px 20px rgba(196, 196, 196, 0.8) !important;
+}
+
+.contentIntelligenceManagem .frameParent37 .compatibilitySwitchDetails {
+  box-shadow:
+    inset 8px 8px 4px rgba(196, 196, 196, 0.8),
+    inset -8px -8px 4px #ffffff !important;
+}
+
+.contentIntelligenceManagem .frameParent37 .compatibilitySwitchTitle .contentFormatIcon {
+  box-shadow:
+    inset -4px -4px 4px #ffffff,
+    inset 4px 4px 4px rgba(196, 196, 196, 0.8) !important;
+}
+
+/* Keep the original static card shell depth too, where that markup is used. */
+.contentIntelligenceManagem .frameParent37 .frameWrapper46 {
+  box-shadow:
+    4px 4px 4px #c4c4c4,
+    -4px -4px 4px #ffffff !important;
+}
+
+/* Content-value image section — restore raised shadows around every card. */
+.contentIntelligenceManagem .image20Parent4 .frameParent69,
+.contentIntelligenceManagem .image20Parent4 .frameWrapper67,
+.contentIntelligenceManagem .image20Parent4 .frameWrapper68,
+.contentIntelligenceManagem .image20Parent4 .frameParent73 {
+  box-shadow:
+    -4px -4px 4px #ffffff,
+    4px 4px 4px #c6c6c6 !important;
+}
+
+/* Restore the raised shadow on the colored pill/label area inside each card. */
+.contentIntelligenceManagem .image20Parent4 .rectangleDiv,
+.contentIntelligenceManagem .image20Parent4 .frameChild32,
+.contentIntelligenceManagem .image20Parent4 .frameChild33,
+.contentIntelligenceManagem .image20Parent4 .frameChild35,
+.contentIntelligenceManagem .image20Parent4 .deliverWrapper,
+.contentIntelligenceManagem .image20Parent4 .improveWrapper {
+  box-shadow:
+    -4px -4px 4px #ffffff,
+    4px 4px 4px #c6c6c6 !important;
+}
+
+/* Preserve the inset depth of the large image/content-value panel. */
+.contentIntelligenceManagem > .image20Parent4 {
+  box-shadow:
+    inset -4px -4px 4px #ffffff,
+    inset 4px 4px 4px rgba(196, 196, 196, 0.8) !important;
+}
+
+/* Mobile/tablet: keep the same design language with a slightly tighter spread. */
+@media (max-width: 767px) {
+  .contentIntelligenceManagem .frameParent37 .compatibilitySwitchCard {
+    box-shadow:
+      6px 6px 8px rgba(196, 196, 196, 0.9),
+      -6px -6px 8px rgba(255, 255, 255, 0.95) !important;
+  }
+
+  .contentIntelligenceManagem .frameParent37 .compatibilitySwitchHeader {
+    box-shadow:
+      0 10px 16px rgba(196, 196, 196, 0.72) !important;
+  }
+
+  .contentIntelligenceManagem .image20Parent4 .frameParent69,
+  .contentIntelligenceManagem .image20Parent4 .frameWrapper67,
+  .contentIntelligenceManagem .image20Parent4 .frameWrapper68,
+  .contentIntelligenceManagem .image20Parent4 .frameParent73 {
+    box-shadow:
+      -4px -4px 6px rgba(255, 255, 255, 0.95),
+      4px 4px 6px rgba(198, 198, 201, 0.9) !important;
+  }
+}
+
+/* ==========================================================================\n   END RESTORE — IMAGE / CARD NEUMORPHIC DEPTH\n   ========================================================================== */
+
+/* ========================================================================== 
+   FINAL FIX — BUILT FOR LEARNING AT SCALE CARD BOTTOM DEPTH
+   --------------------------------------------------------------------------
+   Restores the visible neumorphic lower/outer shadow on the three layered
+   Learning Organization cards. The ::after edge sits above the image/content,
+   so the bottom rounded shadow cannot be visually covered.
+   No card sizing, position, text, images, carousel logic or spacing changed.
+   ========================================================================== */
+
+.contentIntelligenceManagem .frameParent79 .frameWrapper70,
+.contentIntelligenceManagem .frameParent79 .frameParent88,
+.contentIntelligenceManagem .frameParent79 .frameParent87 {
+  position: absolute !important;
+  background: #dfe6e9 !important;
+
+  /* Outer raised depth + original inset card depth. */
+  box-shadow:
+    -8px -8px 14px rgba(255, 255, 255, 0.92),
+    8px 12px 18px rgba(166, 174, 178, 0.48),
+    inset -7px -7px 8px rgba(255, 255, 255, 0.96),
+    inset 7px 7px 8px rgba(196, 196, 196, 0.78) !important;
+}
+
+/* Keep the active/front card slightly stronger, as in the layered design. */
+.contentIntelligenceManagem .frameParent79 .frameWrapper70 {
+  box-shadow:
+    -10px -10px 16px rgba(255, 255, 255, 0.96),
+    10px 14px 22px rgba(166, 174, 178, 0.54),
+    inset -8px -8px 9px rgba(255, 255, 255, 0.98),
+    inset 8px 8px 9px rgba(196, 196, 196, 0.82) !important;
+}
+
+/*
+ * The image/content children were covering the inset edge visually.
+ * Draw the neumorphic border as a non-interactive top layer instead.
+ */
+.contentIntelligenceManagem .frameParent79 .frameWrapper70::after,
+.contentIntelligenceManagem .frameParent79 .frameParent88::after,
+.contentIntelligenceManagem .frameParent79 .frameParent87::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 20;
+  pointer-events: none;
+  border-radius: inherit;
+
+  box-shadow:
+    inset -4px -7px 8px rgba(255, 255, 255, 0.98),
+    inset 7px 7px 8px rgba(196, 196, 196, 0.82) !important;
+}
+
+.contentIntelligenceManagem .frameParent79 .frameWrapper70::after {
+  box-shadow:
+    inset -9px -9px 10px rgba(255, 255, 255, 1),
+    inset 9px 9px 10px rgba(196, 196, 196, 0.86) !important;
+}
+
+/* Extra lower depth only — makes the curved bottom clearly visible. */
+.contentIntelligenceManagem .frameParent79 .frameWrapper70::before,
+.contentIntelligenceManagem .frameParent79 .frameParent88::before,
+.contentIntelligenceManagem .frameParent79 .frameParent87::before {
+  content: "";
+  position: absolute;
+  left: 10%;
+  right: 10%;
+  bottom: -10px;
+  height: 24px;
+  border-radius: 50%;
+  background: transparent;
+  box-shadow: 4px 4px 4px rgba(166, 174, 178, 0.34);
+  z-index: -1;
+  pointer-events: none;
+}
+
+/* The card stage must allow the external bottom shadow to remain visible. */
+.contentIntelligenceManagem .frameParent79 .frameParent83,
+.contentIntelligenceManagem .frameParent79 .frameParent85,
+.contentIntelligenceManagem .frameParent79 .frameParent86 {
+  overflow: visible !important;
+}
+
+/* Tablet/mobile cards become normal-flow elements in the responsive CSS.
+   Preserve that layout and only tighten the shadow strength. */
+@media (max-width: 1199px) {
+  .contentIntelligenceManagem .frameParent79 .frameWrapper70,
+  .contentIntelligenceManagem .frameParent79 .frameParent88,
+  .contentIntelligenceManagem .frameParent79 .frameParent87 {
+    position: relative !important;
+    box-shadow:
+      -4px -4px 4px rgba(255, 255, 255, 0.94),
+      4px 4px 4px rgba(166, 174, 178, 0.46),
+      inset -4px -4px 4px rgba(255, 255, 255, 0.96),
+      inset 4px 4px 4px rgba(196, 196, 196, 0.78) !important;
+  }
+
+  .contentIntelligenceManagem .frameParent79 .frameWrapper70::after,
+  .contentIntelligenceManagem .frameParent79 .frameParent88::after,
+  .contentIntelligenceManagem .frameParent79 .frameParent87::after {
+    box-shadow:
+      inset -4px -4px 4px rgba(255, 255, 255, 0.98),
+      inset 4px 4px 4px rgba(196, 196, 196, 0.8) !important;
+  }
+}
+
+/* ========================================================================== 
+   END FINAL FIX — BUILT FOR LEARNING AT SCALE CARD BOTTOM DEPTH
+   ========================================================================== */

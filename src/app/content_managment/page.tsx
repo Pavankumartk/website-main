@@ -6,6 +6,7 @@ import styles from "./contentmanagment.module.css";
 import Header from "../../components/Header/header";
 import Footer from "../../components/Footer/footer";
 import { BookDemoTrigger } from "../../components/Bookademo/Bookademo";
+import TalkToExpertButton from "@/components/TalkToOurExpert/TalkToExpertButton";
 
 const compatibilityCards = [
   {
@@ -737,6 +738,7 @@ export default function ContentIntelligenceManagement() {
           </BookDemoTrigger>
         </div>
       </main>
+       <TalkToExpertButton />
       <Footer />
     </>
   );
