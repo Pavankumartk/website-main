@@ -151,15 +151,37 @@ export default function Footer() {
 
                 <ul className={styles["nlxp-footer-list"]}>
                   {footerNeuroLxpLinks.map((link) => {
-                    const customHref =
-                      link.label === "Our Customers"
-                        ? "/university-college"
-                        : link.label === "Smart Learning Paths"
-                          ? "/learning_community"
-                          : link.label === "Smart Content Management" ||
-                              link.label === "Smart Content Creation"
-                            ? "/content_managment"
-                            : null;
+                    const normalizedLabel = link.label
+                      .trim()
+                      .toLowerCase();
+
+                    const isUniversityCollege =
+                      normalizedLabel === "our customers" ||
+                      normalizedLabel === "university and college";
+
+                    const isPersonalizedLearning =
+                      normalizedLabel === "smart learning paths" ||
+                      normalizedLabel === "personalized learning path";
+
+                    const isContentManagement =
+                      normalizedLabel === "smart content creation" ||
+                      normalizedLabel === "content management";
+
+                    const customHref = isUniversityCollege
+                      ? "/university"
+                      : isPersonalizedLearning
+                        ? "/personalized-learning-paths"
+                        : isContentManagement
+                          ? "/content_managment"
+                          : null;
+
+                    const displayLabel = isUniversityCollege
+                      ? "University and College"
+                      : isPersonalizedLearning
+                        ? "Personalized Learning Path"
+                        : isContentManagement
+                          ? "Content Management"
+                          : link.label;
 
                     return (
                       <li key={link.label}>
@@ -168,7 +190,7 @@ export default function Footer() {
                             href={customHref}
                             className={styles["nlxp-footer-link"]}
                           >
-                            {link.label}
+                            {displayLabel}
                           </Link>
                         ) : (
                           <FooterAboutLink link={link} />

@@ -303,7 +303,7 @@ export const navItems: NavItem[] = [
           {
             label: "Employee Induction",
             href: "/employee-induction",
-          },  
+          },
           {
             label: "Standards Training",
             href: "/standards-training",
@@ -333,6 +333,11 @@ export const navItems: NavItem[] = [
       {
         label: "Help and Support",
         href: "/help-support",
+      },
+
+      {
+        label: "Our Team",
+        href: "/our-Team",
       },
     ],
 

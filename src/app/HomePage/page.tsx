@@ -354,6 +354,40 @@ function LearningOdyssey({ onBookDemoClick, bookDemoButtonRef }: { onBookDemoCli
 
   const visibleCards = odysseyCards.slice(0, 4);
   const extraCards = odysseyCards.slice(4);
+  const viewMoreScrollPositionRef = useRef<number | null>(null);
+
+  const handleOdysseyToggle = () => {
+    const isMobile =
+      typeof window !== "undefined" &&
+      window.matchMedia("(max-width: 767px)").matches;
+
+    if (!isExpanded) {
+      if (isMobile) {
+        viewMoreScrollPositionRef.current = window.scrollY;
+      }
+      setIsExpanded(true);
+      return;
+    }
+
+    if (isMobile && viewMoreScrollPositionRef.current !== null) {
+      const savedScrollPosition = viewMoreScrollPositionRef.current;
+
+      flushSync(() => {
+        setIsExpanded(false);
+      });
+
+      requestAnimationFrame(() => {
+        window.scrollTo({
+          top: savedScrollPosition,
+          behavior: "auto",
+        });
+        viewMoreScrollPositionRef.current = null;
+      });
+      return;
+    }
+
+    setIsExpanded(false);
+  };
 
   return (
     <section className={styles["odyssey-section"]} aria-labelledby="odyssey-heading">
@@ -383,7 +417,7 @@ function LearningOdyssey({ onBookDemoClick, bookDemoButtonRef }: { onBookDemoCli
         </div>
       </div>
 
-      <button type="button" className={styles["odyssey-toggle-button"]} onClick={() => setIsExpanded((current) => !current)} aria-expanded={isExpanded} aria-controls="odyssey-extra-cards">
+      <button type="button" className={styles["odyssey-toggle-button"]} onClick={handleOdysseyToggle} aria-expanded={isExpanded} aria-controls="odyssey-extra-cards">
         <span className={styles["odyssey-toggle-pill"]}>
           <span className={styles["odyssey-toggle-label"]}>{isExpanded ? "View Less" : "View More"}</span>
         </span>
@@ -1996,7 +2030,7 @@ function GetInTouch({ onContactClick, contactButtonRef }: { onContactClick: () =
         <div className={styles["get-in-touch-media"]}>
           <div className={styles["get-in-touch-frame"]} />
           <div className={styles["get-in-touch-photo-wrapper"]}>
-            <Image src="/images/remove medium-shot-man-working-as-real-estate-agent.png" alt="Smiling businesswoman with glasses" fill sizes="(max-width: 480px) 280px, (max-width: 1024px) 380px, 677px" className={styles["get-in-touch-photo"]} />
+            <Image src="/images/business-partners-together-office 1.png" alt="Smiling businesswoman with glasses" fill sizes="(max-width: 480px) 280px, (max-width: 1024px) 380px, 677px" className={styles["get-in-touch-photo"]} />
           </div>
         </div>
       </div>

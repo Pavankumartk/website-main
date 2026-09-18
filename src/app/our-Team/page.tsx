@@ -120,7 +120,7 @@ const teamMembers: {
     role: "Full-Stack Developer",
     blurb: "Driving projects from idea to execution",
     photo: "/images/team-ranjitha.jpg",
-    linkedin: "https://www.linkedin.com/",
+    linkedin: "https://www.linkedin.com/in/ranjitha-mahesha-376545284?utm_source=share_via&utm_content=profile&utm_medium=member_android/",
   },
 
   {
@@ -136,7 +136,7 @@ const teamMembers: {
     role: "Full-Stack Developer",
     blurb: "Building seamless product experiences",
     photo: "/images/team-jeethu.jpg",
-    linkedin: "https://www.linkedin.com/",
+    linkedin: "https://www.linkedin.com/in/jeethu-p-joy-7555703b/",
   },
 
   {
@@ -144,7 +144,7 @@ const teamMembers: {
     role: "Product Designer",
     blurb: "Creating intuitive digital experiences",
     photo: "/images/team-veena.jpg",
-    linkedin: "https://www.linkedin.com/",
+    linkedin: "https://www.linkedin.com/in/veena-r-design/",
   },
 
   {
@@ -152,7 +152,7 @@ const teamMembers: {
     role: "Full-Stack Developer",
     blurb: "Creating scalable product solutions",
     photo: "/images/team-inchana.jpg",
-    linkedin: "https://www.linkedin.com/",
+    linkedin: "https://www.linkedin.com/in/inchana-b-c/",
   },
 
   {
@@ -223,9 +223,15 @@ export default function OurTeamPage() {
               Beyond courses, Neuro LXP connects people, technology and data to transform learning into smarter
               experiences, continuous growth and measurable impact.
             </p>
-            <button className="team-linkedin-btn">
-              Connect on Linkedin
-            </button>
+           <a
+  href="https://www.linkedin.com/in/pavankumar-chandrappa-1bb84879/"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="team-linkedin-btn"
+  aria-label="Connect with Mr Pavan Kumar on LinkedIn"
+>
+  Connect on Linkedin
+</a>
           </div>
         </section>
 
