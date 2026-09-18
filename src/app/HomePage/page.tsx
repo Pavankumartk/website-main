@@ -29,7 +29,7 @@ const heroSlides: HeroSlide[] = [
   { id: 4, type: "image", image: "/images/Organisation.jpeg", heading: "Beyond the Classroom, Beyond Limits", mobileLines: ["Beyond the Classroom,", "Beyond Limits"] },
   { id: 5, type: "image", image: "/images/Gratuation.jpeg", heading: "Designed for Minds That Refuse to Average", mobileLines: ["Designed for Minds", "That Refuse to Average"] },
   { id: 6, type: "video", src: "/videos/home.mp4", heading: "Where Great Ideas Take Shape Together", mobileLines: ["Where Great Ideas", "Take Shape Together"] },
-  { id: 7, type: "image", image: "/images/group-different-people-volunteering-foodbank.webp", heading: "Reimagine How the World Learns", mobileLines: ["Reimagine How", "the World Learns"] },
+  { id: 7, type: "image", image: "/images/group-different-people-volunteering-foodbank 1.webp", heading: "Reimagine How the World Learns", mobileLines: ["Reimagine How", "the World Learns"] },
   { id: 8, type: "image", image: "/images/portrait-school-girls-with-books-park.webp", heading: "Transform the Way the World Learns", mobileLines: ["Transform the Way", "the World Learns"] },
 ];
 
@@ -60,6 +60,41 @@ function HeroCarousel() {
   const isPaused = isHovered || isKeyboardFocused;
   const [prefersReducedMotion, setPrefersReducedMotion] = useState(false);
   const intervalRef = useRef<ReturnType<typeof setInterval> | null>(null);
+  const heroMobileViewportRef = useRef<HTMLDivElement | null>(null);
+  const heroMobileSlideRefs = useRef<(HTMLDivElement | null)[]>([]);
+  const heroMobileScrollTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+
+  const isHeroMobileViewport = () =>
+    typeof window !== "undefined" && window.matchMedia("(max-width: 767px)").matches;
+
+  const scrollHeroMobileToSlide = (index: number, behavior: ScrollBehavior = "smooth") => {
+    const viewport = heroMobileViewportRef.current;
+    const slide = heroMobileSlideRefs.current[index];
+    if (!viewport || !slide || !isHeroMobileViewport()) return;
+    viewport.scrollTo({ left: slide.offsetLeft, behavior });
+  };
+
+  const settleHeroMobileScroll = () => {
+    const viewport = heroMobileViewportRef.current;
+    if (!viewport || !isHeroMobileViewport()) return;
+    let nearestIndex = activeSlide;
+    let nearestDistance = Number.POSITIVE_INFINITY;
+    heroMobileSlideRefs.current.forEach((slide, index) => {
+      if (!slide) return;
+      const distance = Math.abs(slide.offsetLeft - viewport.scrollLeft);
+      if (distance < nearestDistance) {
+        nearestDistance = distance;
+        nearestIndex = index;
+      }
+    });
+    if (nearestIndex !== activeSlide) setActiveSlide(nearestIndex);
+  };
+
+  const handleHeroMobileScroll = () => {
+    if (!isHeroMobileViewport()) return;
+    if (heroMobileScrollTimerRef.current) clearTimeout(heroMobileScrollTimerRef.current);
+    heroMobileScrollTimerRef.current = setTimeout(settleHeroMobileScroll, 120);
+  };
 
   useEffect(() => {
     const mediaQuery = window.matchMedia("(prefers-reduced-motion: reduce)");
@@ -112,14 +147,23 @@ function HeroCarousel() {
 
   const goToSlide = (index: number) => {
     setActiveSlide(index);
+    requestAnimationFrame(() => scrollHeroMobileToSlide(index));
   };
 
   const goToPrevious = () => {
-    setActiveSlide((current) => (current - 1 + heroSlides.length) % heroSlides.length);
+    setActiveSlide((current) => {
+      const next = (current - 1 + heroSlides.length) % heroSlides.length;
+      requestAnimationFrame(() => scrollHeroMobileToSlide(next));
+      return next;
+    });
   };
 
   const goToNext = () => {
-    setActiveSlide((current) => (current + 1) % heroSlides.length);
+    setActiveSlide((current) => {
+      const next = (current + 1) % heroSlides.length;
+      requestAnimationFrame(() => scrollHeroMobileToSlide(next));
+      return next;
+    });
   };
 
   return (
@@ -142,9 +186,21 @@ function HeroCarousel() {
       }}
     >
       <div className={styles["hero-frame"]}>
-        <div className={styles["hero-image-stage"]}>
+        <div
+          className={styles["hero-image-stage"]}
+          ref={heroMobileViewportRef}
+          onScroll={handleHeroMobileScroll}
+        >
           {heroSlides.map((slide, index) => (
-            <div key={slide.id} className={`${styles["hero-slide"]}${index === activeSlide ? ` ${styles["hero-slide-active"]}` : ""}`} role="group" aria-roledescription="slide" aria-label={`${index + 1} of ${heroSlides.length}`} aria-hidden={index !== activeSlide}>
+            <div
+              key={slide.id}
+              ref={(element) => { heroMobileSlideRefs.current[index] = element; }}
+              className={`${styles["hero-slide"]}${index === activeSlide ? ` ${styles["hero-slide-active"]}` : ""}`}
+              role="group"
+              aria-roledescription="slide"
+              aria-label={`${index + 1} of ${heroSlides.length}`}
+              aria-hidden={index !== activeSlide}
+            >
               {slide.type === "video" ? (
                 <video
                   ref={(video) => { videoRefs.current[index] = video; }}
@@ -811,7 +867,7 @@ function WhyChooseNeuroLXP() {
 const learningModuleCards = [
   {
     id: 1,
-    image: "/images/learning-new-statistics.webp",
+    image: "/images/image 63.png",
     title: "Blended Learning",
     description:
       "Blend online and in-person learning for flexible, engaging experiences.",
@@ -833,21 +889,21 @@ const learningModuleCards = [
   },
   {
     id: 4,
-    image: "/images/group-businesswomen-working-office 1.png",
+    image: "/images/man-woman-florists-using-laptop-writing-notebook-flower-shop 1.png",
     title: "Immersive Learning",
     description:
       "Interactive learning that builds skills and delivers results.",
   },
   {
     id: 5,
-    image: "/images/smiling-business-leader-greeting-partner.webp",
+    image: "/images/two-smiling-partners-shaking-hands-lobby 1.png",
     title: "Smart Onboarding",
     description:
       "Accelerate onboarding with guided, engaging learning.",
   },
   {
     id: 6,
-    image: "/images/exchanging-business-card-posing.webp",
+    image: "/images/colleagues-discussing-new-ideas-business-meeting 1.png",
     title: "Standards Training",
     description:
       "Stay fully compliant with trusted, standards-based learning.",
@@ -1324,7 +1380,7 @@ type TestimonialData = {
 const testimonials: TestimonialData[] = [
   {
     id: 1,
-    name: "Sara Thomas",
+    name: "Sneha",
     role: "Software Engineer",
     quote: "NeuroLXP made learning faster and more engaging. The personalized learning paths helped me build new skills with confidence.",
     image: "/images/SaraThomas.jpg",
@@ -1354,20 +1410,20 @@ const testimonials: TestimonialData[] = [
     image: "/images/Joanna.jpg",
     accentColor: "#BF1869",
   },
-  {
-    id: 5,
-    name: "Janoah",
-    role: "Institute Admin",
-    quote: "Managing courses and learners is now seamless. NeuroLXP has simplified administration and improved learner engagement.",
-    image: "/images/young-businesswoman.webp",
-    accentColor: "#67096E",
-  },
+  // {
+  //   id: 5,
+  //   name: "Janoah",
+  //   role: "Institute Admin",
+  //   quote: "Managing courses and learners is now seamless. NeuroLXP has simplified administration and improved learner engagement.",
+  //   image: "/images/young-businesswoman.webp",
+  //   accentColor: "#67096E",
+  // },
   {
     id: 6,
-    name: "Aben Sabu",
+    name: "Shankar",
     role: "Lecturer",
     quote: "NeuroLXP makes course delivery effortless. Interactive learning and real-time insights keep my learners engaged.",
-    image: "/images/handsome.jpg",
+    image: "/images/handsome-businessman-suit-glasses-cross-arms-chest-look 1.png",
     accentColor: "#861109",
   },
 ];
@@ -1940,7 +1996,7 @@ function GetInTouch({ onContactClick, contactButtonRef }: { onContactClick: () =
         <div className={styles["get-in-touch-media"]}>
           <div className={styles["get-in-touch-frame"]} />
           <div className={styles["get-in-touch-photo-wrapper"]}>
-            <Image src="/images/homepage.webp" alt="Smiling businesswoman with glasses" fill sizes="(max-width: 480px) 280px, (max-width: 1024px) 380px, 677px" className={styles["get-in-touch-photo"]} />
+            <Image src="/images/remove medium-shot-man-working-as-real-estate-agent.png" alt="Smiling businesswoman with glasses" fill sizes="(max-width: 480px) 280px, (max-width: 1024px) 380px, 677px" className={styles["get-in-touch-photo"]} />
           </div>
         </div>
       </div>

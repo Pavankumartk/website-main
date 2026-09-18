@@ -110,16 +110,34 @@ export default function Footer() {
                 </h3>
 
                 <ul className={styles["nlxp-footer-list"]}>
-                  {footerQuickLinks.map((link) => (
-                    <li key={link.label}>
-                      <Link
-                        href={link.href}
-                        className={styles["nlxp-footer-link"]}
-                      >
-                        {link.label}
-                      </Link>
-                    </li>
-                  ))}
+                  {footerQuickLinks.map((link) => {
+                    const normalizedLabel = link.label
+                      .trim()
+                      .toLowerCase();
+
+                    const customHref =
+                      normalizedLabel === "privacy policy"
+                        ? "/privacy-policy"
+                        : normalizedLabel === "terms and conditions" ||
+                            normalizedLabel === "terms & conditions" ||
+                            normalizedLabel === "terms of declaration"
+                          ? "/terms-of-declaration"
+                          : normalizedLabel === "terms of use" ||
+                              normalizedLabel === "terms-of-use"
+                            ? "/terms-of-use"
+                            : link.href;
+
+                    return (
+                      <li key={link.label}>
+                        <Link
+                          href={customHref}
+                          className={styles["nlxp-footer-link"]}
+                        >
+                          {link.label}
+                        </Link>
+                      </li>
+                    );
+                  })}
                 </ul>
               </div>
 
