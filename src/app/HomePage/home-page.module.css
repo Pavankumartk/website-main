@@ -2302,12 +2302,12 @@ a:focus-visible {
 
 .smv-heading {
   font-family: "Segoe UI", "Inter";
-  font-weight: 600;
+  font-weight: 700;
   letter-spacing: 0.03em;
   color: #31344b;
   margin: 0 0 16px;
   font-size: 36px;
-  line-height:44px;
+  line-height: 44px;
 }
 
 .smv-subtext {
@@ -2964,7 +2964,7 @@ a:focus-visible {
   }
   .why-choose-blob { display: none; }
 
-  .smv-heading { font-size: 30px; line-height: 1.25; }
+  .smv-heading { font-size: 30px; line-height: 38px; }
   .smv-subtext { font-size: 20px; line-height: 1.45; }
   .smv-cards { flex-wrap: wrap; gap: 48px 24px; }
   .smv-card { flex: 0 1 calc((100% - 24px) / 2); }
@@ -3138,6 +3138,8 @@ a:focus-visible {
   }
   .smv-section .smv-heading {
     font-size: clamp(20px, 6vw, 24px);
+    line-height: calc(clamp(20px, 6vw, 24px) + 8px);
+    font-weight: 700;
   }
   .smv-heading-lead,
   .smv-heading-vision {
