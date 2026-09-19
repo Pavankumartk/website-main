@@ -4372,3 +4372,43 @@ a:focus-visible {
   text-align: center;
   text-wrap: balance;
 }
+
+
+/* FINAL REQUESTED CORRECTIONS
+   1. Why Choose copy uses two larger lines and a shorter background design.
+   2. View More/View Less position restoration is handled in page.tsx. */
+@media (min-width: 1024px) {
+  .why-choose-blob {
+    height: 230px;
+    top: calc(50% + 40px);
+  }
+
+  .why-choose-text {
+    max-width: 570px;
+    gap: 16px;
+  }
+
+  .why-choose-subtext {
+    width: 570px;
+    max-width: 570px;
+    font-size: 22px;
+    line-height: 30px;
+    letter-spacing: 0.01em;
+  }
+
+  .why-choose-subtext-line {
+    display: block;
+    white-space: nowrap;
+  }
+}
+
+@media (width < 768px) {
+  .why-choose-subtext {
+    font-size: 18px;
+    line-height: 26px;
+  }
+
+  .why-choose-subtext-line {
+    white-space: normal;
+  }
+}

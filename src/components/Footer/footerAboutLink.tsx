@@ -21,6 +21,8 @@ export default function FooterAboutLink({
     const targetPath = link.href.slice(0, hashIndex) || "/";
     const targetId = link.href.slice(hashIndex + 1);
 
+    // If destination is on another page,
+    // allow Next.js to navigate normally.
     if (pathname !== targetPath) return;
 
     const targetEl = document.getElementById(targetId);
@@ -31,10 +33,32 @@ export default function FooterAboutLink({
 
     targetEl.scrollIntoView({
       behavior: "smooth",
-      block: "start",
+      block: "center",
     });
 
     window.history.pushState(null, "", link.href);
+
+    // Wait until smooth scrolling reaches the card.
+    window.setTimeout(() => {
+      // Remove first so clicking the same link again
+      // restarts the animation.
+      targetEl.classList.remove(
+        styles["footer-target-highlight"]
+      );
+
+      void targetEl.offsetWidth;
+
+      targetEl.classList.add(
+        styles["footer-target-highlight"]
+      );
+
+      // Return the card to its original design.
+      window.setTimeout(() => {
+        targetEl.classList.remove(
+          styles["footer-target-highlight"]
+        );
+      }, 1800);
+    }, 500);
   };
 
   return (

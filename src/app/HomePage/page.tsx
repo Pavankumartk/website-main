@@ -354,39 +354,55 @@ function LearningOdyssey({ onBookDemoClick, bookDemoButtonRef }: { onBookDemoCli
 
   const visibleCards = odysseyCards.slice(0, 4);
   const extraCards = odysseyCards.slice(4);
+
+  // Remember the exact page position where View More was clicked.
+  // This works on desktop, tablet and mobile.
   const viewMoreScrollPositionRef = useRef<number | null>(null);
+  const toggleButtonRef = useRef<HTMLButtonElement | null>(null);
+
+  const restoreViewMorePosition = () => {
+    const savedScrollPosition = viewMoreScrollPositionRef.current;
+    if (savedScrollPosition === null) return;
+
+    // Restore after the collapsing content has been removed/reflowed.
+    window.scrollTo({
+      top: savedScrollPosition,
+      behavior: "auto",
+    });
+  };
 
   const handleOdysseyToggle = () => {
-    const isMobile =
-      typeof window !== "undefined" &&
-      window.matchMedia("(max-width: 767px)").matches;
-
     if (!isExpanded) {
-      if (isMobile) {
-        viewMoreScrollPositionRef.current = window.scrollY;
-      }
+      // Save the ORIGINAL screen shown when View More is clicked.
+      viewMoreScrollPositionRef.current = window.scrollY;
       setIsExpanded(true);
       return;
     }
 
-    if (isMobile && viewMoreScrollPositionRef.current !== null) {
-      const savedScrollPosition = viewMoreScrollPositionRef.current;
+    // Close the extra cards first.
+    flushSync(() => {
+      setIsExpanded(false);
+    });
 
-      flushSync(() => {
-        setIsExpanded(false);
-      });
+    // The extra-card wrapper can have a CSS collapse transition.
+    // Keep restoring during that collapse so the browser cannot leave
+    // the user at the following section.
+    restoreViewMorePosition();
+
+    requestAnimationFrame(() => {
+      restoreViewMorePosition();
 
       requestAnimationFrame(() => {
-        window.scrollTo({
-          top: savedScrollPosition,
-          behavior: "auto",
-        });
-        viewMoreScrollPositionRef.current = null;
+        restoreViewMorePosition();
       });
-      return;
-    }
+    });
 
-    setIsExpanded(false);
+    window.setTimeout(restoreViewMorePosition, 150);
+    window.setTimeout(restoreViewMorePosition, 300);
+    window.setTimeout(() => {
+      restoreViewMorePosition();
+      viewMoreScrollPositionRef.current = null;
+    }, 500);
   };
 
   return (
@@ -417,7 +433,7 @@ function LearningOdyssey({ onBookDemoClick, bookDemoButtonRef }: { onBookDemoCli
         </div>
       </div>
 
-      <button type="button" className={styles["odyssey-toggle-button"]} onClick={handleOdysseyToggle} aria-expanded={isExpanded} aria-controls="odyssey-extra-cards">
+      <button ref={toggleButtonRef} type="button" className={styles["odyssey-toggle-button"]} onClick={handleOdysseyToggle} aria-expanded={isExpanded} aria-controls="odyssey-extra-cards">
         <span className={styles["odyssey-toggle-pill"]}>
           <span className={styles["odyssey-toggle-label"]}>{isExpanded ? "View Less" : "View More"}</span>
         </span>

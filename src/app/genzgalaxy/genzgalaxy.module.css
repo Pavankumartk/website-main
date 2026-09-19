@@ -4407,3 +4407,81 @@
     text-wrap: wrap !important;
   }
 }
+/* =========================================================
+   GENZGALAXY ONLY
+   1. Make GenZGalaxy page text selectable
+   2. Make GenZGalaxy buttons blue
+   3. DO NOT affect Header or Footer
+   4. Keep existing hover/shadow/animation unchanged
+   ========================================================= */
+
+/* ---------- SELECTABLE TEXT: GENZGALAXY ONLY ---------- */
+
+.genzgalaxy,
+.genzgalaxy p,
+.genzgalaxy h1,
+.genzgalaxy h2,
+.genzgalaxy h3,
+.genzgalaxy h4,
+.genzgalaxy h5,
+.genzgalaxy h6,
+.genzgalaxy span,
+.genzgalaxy div,
+.genzgalaxy li,
+.genzgalaxy label,
+.genzgalaxy strong,
+.genzgalaxy em,
+.genzgalaxy a {
+  -webkit-user-select: text !important;
+  user-select: text !important;
+}
+
+
+/* Selection highlight */
+
+.genzgalaxy ::selection {
+  background: rgba(45, 76, 200, 0.22);
+  color: inherit;
+}
+
+.genzgalaxy ::-moz-selection {
+  background: rgba(45, 76, 200, 0.22);
+  color: inherit;
+}
+
+
+/* ---------- GENZGALAXY BUTTONS ONLY ---------- */
+
+.genzgalaxy button,
+.genzgalaxy button span,
+.genzgalaxy button div,
+.genzgalaxy a[role="button"],
+.genzgalaxy a[role="button"] span,
+.genzgalaxy [role="button"],
+.genzgalaxy [role="button"] span {
+  color: #2d4cc8 !important;
+}
+
+
+/* Button text can also be selected */
+
+.genzgalaxy button,
+.genzgalaxy button *,
+.genzgalaxy a[role="button"],
+.genzgalaxy a[role="button"] *,
+.genzgalaxy [role="button"],
+.genzgalaxy [role="button"] * {
+  -webkit-user-select: text !important;
+  user-select: text !important;
+}
+/* Learn More button - same blue as other GenZGalaxy buttons */
+.genzgalaxy .learnMoreFlat {
+  color: #2d4cc8 !important;
+}
+/* Job Ready Skills - align with the other skills in second section */
+.genzgalaxy .jobReadySkills {
+  transform: translateY(26px) !important;
+}
+.genzgalaxy .jobReadySkills {
+  transform: translate(10px, 28px) !important;
+}
