@@ -352,7 +352,7 @@ export default function Personalization() {
 
         <div className={styles.frameParent26}>
           <div className={styles.frameParent27}>
-            <div className={styles.frameChild16} aria-hidden="true" />
+            <p className={styles.frameChild16}>Why Personalized Learning Matters</p>
             <h2 className={styles.betterLearningBetterContainer} style={{ margin: 0 }}>
               <span className={styles.learningBuiltAround}>{`Better Learning! `}</span>
               <span className={styles.everyLearner}>Better Outcomes</span>
@@ -403,7 +403,7 @@ export default function Personalization() {
         <div className={styles.frameParent36}>
           <div className={styles.frameWrapper9}>
             <div className={styles.frameParent20}>
-              <div className={styles.frameChild22} aria-hidden="true" />
+              <p className={styles.frameChild22}>Intelligent Learning Experience</p>
               <div className={styles.learningThatAdaptsToYouParent}>
                 <h2 className={styles.learningThatAdapts} style={{ margin: 0 }}>
                   Learning That Continuously Improves

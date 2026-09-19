@@ -11,7 +11,7 @@
   justify-self: center;
   	font-size: 48px;
   	color: #31344b;
-  	font-family: 'Segoe UI', 'Inter';
+  	font-family: "Segoe UI", "Inter";
     zoom: 0.89;
 }
 .personalizationChild {
@@ -100,7 +100,7 @@
   	height: 80px;
   	overflow: hidden;
   	font-size: 16px;
-  	font-family: 'Segoe UI', 'Inter';
+  	font-family: "Segoe UI", "Inter";
 }
 .frameInner {
   	position: absolute;
@@ -179,7 +179,7 @@
   	box-sizing: border-box;
   	text-align: center;
   	color: #2d4cc8;
-  	font-family: 'Segoe UI', 'Inter';
+  	font-family: "Segoe UI", "Inter";
 }
 .signInHelp {
   	width: 97px;
@@ -201,7 +201,7 @@
   	gap: 8px;
   	font-size: 18px;
   	color: #2f3547;
-  	font-family: 'Segoe UI', 'Inter';
+  	font-family: "Segoe UI", "Inter";
     transform: translateY(15);
     
 }
@@ -1367,7 +1367,7 @@
   	display: flex;
   	align-items: center;
   	gap: 221px;
-  	font-family: 'Segoe UI', 'Inter';
+  	font-family: "Segoe UI", "Inter";
 }
 .frameParent46 {
   	height: 356px;
@@ -1376,7 +1376,7 @@
   	flex-direction: column;
   	align-items: flex-start;
   	gap: 32px;
-  	font-family: 'Segoe UI', 'Inter';
+  	font-family: "Segoe UI", "Inter";
  
 }
 .frameChild23 {
@@ -1389,7 +1389,7 @@
 }
 
 .frameParent46 > :nth-child(2) {
-	font-family: 'Segoe UI', 'Inter';
+	font-family: "Segoe UI", "Inter";
 	font-style: normal;
 	font-weight: 700;
 	font-size: 48px;
@@ -1406,7 +1406,7 @@
   	color: #2f3547;
   	display: inline-block;
   	flex-shrink: 0;
-  	font-family: 'Segoe UI', 'Inter';
+  	font-family: "Segoe UI", "Inter";
   	font-style: normal;
   	font-weight: 400;
 }
@@ -1419,7 +1419,7 @@
   	text-align: center;
   	font-size: 24px;
   	color: #2d4cc8;
-  	font-family: 'Segoe UI', 'Inter';
+  	font-family: "Segoe UI", "Inter";
 }
 .frameChild24 {
   	height: 70.1px;
@@ -1447,7 +1447,7 @@
   	line-height: 36px;
   	display: inline-block;
   	flex-shrink: 0;
-  	font-family: 'Segoe UI', 'Inter';
+  	font-family: "Segoe UI", "Inter";
   	font-style: normal;
   	font-weight: 700;
   	font-size: 24px;
@@ -1463,7 +1463,7 @@
   	text-align: left;
   	display: inline-block;
   	flex-shrink: 0;
-  	font-family: 'Segoe UI', 'Inter';
+  	font-family: "Segoe UI", "Inter";
   	font-style: normal;
   	font-weight: 400;
 }
@@ -1489,7 +1489,7 @@
   	line-height: 36px;
   	display: inline-block;
   	flex-shrink: 0;
-  	font-family: 'Segoe UI', 'Inter';
+  	font-family: "Segoe UI", "Inter";
   	font-style: normal;
   	font-weight: 700;
   	font-size: 24px;
@@ -1505,7 +1505,7 @@
   	text-align: left;
   	display: inline-block;
   	flex-shrink: 0;
-  	font-family: 'Segoe UI', 'Inter';
+  	font-family: "Segoe UI", "Inter";
   	font-style: normal;
   	font-weight: 400;
 }
@@ -1524,7 +1524,7 @@
   	line-height: 36px;
   	display: inline-block;
   	flex-shrink: 0;
-  	font-family: 'Segoe UI', 'Inter';
+  	font-family: "Segoe UI", "Inter";
   	font-style: normal;
   	font-weight: 700;
   	font-size: 24px;
@@ -1540,7 +1540,7 @@
   	text-align: left;
   	display: inline-block;
   	flex-shrink: 0;
-  	font-family: 'Segoe UI', 'Inter';
+  	font-family: "Segoe UI", "Inter";
   	font-style: normal;
   	font-weight: 400;
 }
@@ -1555,7 +1555,7 @@
   	text-align: left;
   	display: inline-block;
   	flex-shrink: 0;
-  	font-family: 'Segoe UI', 'Inter';
+  	font-family: "Segoe UI", "Inter";
   	font-style: normal;
   	font-weight: 400;
 }
@@ -2177,7 +2177,7 @@
   height: auto;
   margin: 56px 0 52px;
   color: #31344b;
-  font-family: 'Segoe UI', 'Inter';
+  font-family: "Segoe UI", "Inter";
   font-size: 52px;
   font-weight: 700;
   line-height: 1.08;
@@ -2190,7 +2190,7 @@
   height: auto;
   margin: 0;
   color: #31344b;
-  font-family: 'Segoe UI', 'Inter';
+  font-family: "Segoe UI", "Inter";
   font-size: 28px;
   font-weight: 400;
   line-height: 1.48;
@@ -2223,7 +2223,7 @@
 
 .actionCardTitle {
   margin: 0;
-  font-family: 'Segoe UI', 'Inter';
+  font-family: "Segoe UI", "Inter";
   font-size: 24px;
   font-weight: 700;
   line-height: 36px;
@@ -2242,7 +2242,7 @@
   background: #dfe6e9;
   box-shadow: -4px -4px 4px #fff, 4px 4px 4px #c4c4c4;
   color: #111;
-  font-family: 'Segoe UI', 'Inter';
+  font-family: "Segoe UI", "Inter";
   font-size: 20px;
   font-weight: 400;
   line-height: 28px;
@@ -2350,7 +2350,7 @@
   background: #dfe6e9;
   box-shadow: inset -4px -4px 4px #fff, inset 4px 4px 4px rgba(196,196,196,.8);
   color: #2d4cc8;
-  font: 600 24px/1 'Segoe UI';
+  font: 600 24px/1 "Segoe UI", "Inter";
   letter-spacing: .02em;
   box-sizing: border-box;
 }
@@ -2365,7 +2365,7 @@
   width: auto;
   height: auto;
   margin: 0;
-  font: 700 48px/1.2 'Segoe UI';
+  font: 700 48px/1.2 "Segoe UI", "Inter";
   letter-spacing: .02em;
 }
 
@@ -2373,7 +2373,7 @@
   width: min(910px, 100%);
   height: auto;
   margin: 0;
-  font: 400 28px/1.45 'Segoe UI';
+  font: 400 28px/1.45 "Segoe UI", "Inter";
   letter-spacing: .02em;
   color: #2f3547;
 }
@@ -2423,7 +2423,7 @@
   background: #dfe6e9;
   box-shadow: inset 4px 4px 4px #c4c4c4, inset -4px -4px 4px #fff;
   color: var(--stage-color);
-  font: 700 48px/1 'Segoe UI';
+  font: 700 48px/1 "Segoe UI", "Inter";
   letter-spacing: .02em;
   box-sizing: border-box;
 }
@@ -2444,7 +2444,7 @@
 .understand, .develop {
   width: 100%;
   margin: 0;
-  font: 700 32px/1.25 'Segoe UI';
+  font: 700 32px/1.25 "Segoe UI", "Inter";
   letter-spacing: .02em;
   color: #31344b;
 }
@@ -2453,7 +2453,7 @@
   width: 100%;
   height: auto;
   margin: 0;
-  font: 400 24px/1.5 'Segoe UI';
+  font: 400 24px/1.5 "Segoe UI", "Inter";
   letter-spacing: .02em;
   color: #000;
 }
@@ -2495,7 +2495,7 @@
   background: #dfe6e9;
   box-shadow: inset -4px -4px 4px #fff, inset 4px 4px 4px rgba(196,196,196,.75);
   color: #2d4cc8;
-  font: 600 20px/1.2 "Segoe UI";
+  font: 600 20px/1.2 "Segoe UI", "Inter";
   font-size: 24px;
   letter-spacing: .02em;
   box-sizing: border-box;
@@ -2572,7 +2572,7 @@
   display: flex !important;
   align-items: center;
   justify-content: center;
-  font: 600 24px/1.25 "Segoe UI";
+  font: 600 24px/1.25 "Segoe UI", "Inter";
   letter-spacing: .02em;
   text-align: center;
   color: #31344b;
@@ -2670,7 +2670,7 @@
   display: flex !important;
   align-items: center;
   justify-content: center;
-  font: 600 26px/1.2 "Segoe UI";
+  font: 600 26px/1.2 "Segoe UI", "Inter";
   letter-spacing: .02em;
   text-align: center;
   color: #2d4cc8;
@@ -2685,7 +2685,7 @@
 .analyticsRevealLearner,
 .everyInteractionImproves {
   width: auto;
-  font: 600 20px/1.4 "Segoe UI";
+  font: 600 20px/1.4 "Segoe UI", "Inter";
   letter-spacing: .01em;
   text-align: center;
   color: #111;
@@ -2778,7 +2778,7 @@
 .frameParent26 *,
 .frameParent36 *,
 .frameParent45 * {
-  font-family: "Segoe UI" !important;
+  font-family: "Segoe UI", "Inter" !important;
 }
 
 @media (max-width: 767px) {
@@ -2903,7 +2903,7 @@
   grid-template-columns: minmax(420px, 520px) minmax(560px, 1fr);
   align-items: center;
   column-gap: 150px;
-  font-family: 'Segoe UI', 'Inter';
+  font-family: "Segoe UI", "Inter";
 }
 
 .modernLearningIntro {
@@ -2926,7 +2926,7 @@
   background: #dfe6e9;
   box-shadow: inset -4px -4px 4px #fff, inset 4px 4px 4px rgba(196,196,196,.8);
   color: #2d4cc8;
-  font: 600 24px/1.2 'Segoe UI';
+  font: 600 24px/1.2 "Segoe UI", "Inter";
   letter-spacing: .02em;
   white-space: nowrap;
 }
@@ -2939,7 +2939,7 @@
   flex-direction: column;
   align-items: flex-start;
   gap: 2px;
-  font: 700 54px/1.14 'Segoe UI' !important;
+  font: 700 54px/1.14 "Segoe UI", "Inter" !important;
   letter-spacing: .015em;
   color: #31344b;
 }
@@ -2954,7 +2954,7 @@
   height: auto;
   margin: 0;
   color: #31344b;
-  font: 400 28px/1.5 'Segoe UI';
+  font: 400 28px/1.5 "Segoe UI", "Inter";
   letter-spacing: .02em;
 }
 
@@ -3013,12 +3013,12 @@
   letter-spacing: .015em;
 }
 .modernLearningFeature h3 {
-  font: 700 27px/1.25 'Segoe UI' !important;
+  font: 700 27px/1.25 "Segoe UI", "Inter" !important;
   white-space: nowrap;
 }
 .modernLearningFeature p {
   color: #31344b;
-  font: 500 20px/1.4 'Segoe UI' !important;
+  font: 500 20px/1.4 "Segoe UI", "Inter" !important;
 }
 .modernLearningFeatureStructured h3 { color: #2d4cc8; }
 .modernLearningFeatureAdaptive h3 { color: #bf1869; }
@@ -3675,7 +3675,7 @@
   overflow: hidden;
   z-index: 1;
   text-align: center;
-  font-family: 'Segoe UI', 'Inter';
+  font-family: "Segoe UI", "Inter";
 }
 
 .personalizationHeroFrame {
@@ -3748,7 +3748,7 @@
   background: #dfe6e9;
   box-shadow: -4px -4px 4px #ffffff,
               4px 4px 4px rgba(196, 196, 196, 0.8);
-  font: 600 24px/1.2 'Segoe UI';
+  font: 600 24px/1.2 "Segoe UI", "Inter";
   cursor: pointer;
 }
 
@@ -4375,7 +4375,7 @@ body {
     width: min(100% - 48px, 1080px);
     margin: 18px auto 16px;
     flex-wrap: wrap;
-    font-family: "Segoe UI";
+    font-family: "Segoe UI", "Inter";
   }
 
   .personalizationHero {
@@ -5829,7 +5829,7 @@ body {
 }	
 .frameParent47,
 .frameParent47 * {
-  font-family: 'Segoe UI', 'Inter';
+  font-family: "Segoe UI", "Inter";
 }
 
 .frameParent47 .structuredLearning,
@@ -5862,7 +5862,7 @@ body {
   border-radius: 8px;
   background: #ffffff;
   color: #1f2937;
-  font-family: 'Segoe UI', 'Inter';
+  font-family: "Segoe UI", "Inter";
   font-size: 16px;
   font-weight: 600;
   line-height: 24px;
@@ -7283,15 +7283,17 @@ body {
 }
 
 /* ==========================================================================
-   FINAL TYPOGRAPHY — HERO EXCLUDED
+   DESKTOP TYPOGRAPHY — HERO EXCLUDED
    Main non-hero section headings: 36px
    Main non-hero section subheadings/descriptions: 24px
+   Mobile keeps its responsive typography.
 
    HERO IS INTENTIONALLY UNCHANGED:
    .learningThatAdapts
    .neurolxpPersonalizesLearning
    ========================================================================== */
 
+@media (min-width: 768px) {
 /* ----------------------------------------------------------
    NON-HERO MAIN SECTION HEADINGS — 36px
    ---------------------------------------------------------- */
@@ -7330,6 +7332,8 @@ body {
   line-height: 36px !important;
   height: auto !important;
   min-height: 0 !important;
+}
+
 }
 
 /* HERO TYPOGRAPHY REMAINS EXACTLY AS IT WAS:
@@ -7398,3 +7402,637 @@ body {
   }
 }
 
+/* Keep the existing hero artwork visible behind the desktop copy. */
+@media (min-width: 768px) {
+  .personalization > .personalizationHero .personalizationHeroContent,
+  .personalization > .personalizationHero .personalizationHeroTitle,
+  .personalization > .personalizationHero .personalizationHeroDescription {
+    background: transparent !important;
+  }
+}
+
+/* Mobile: content determines the width and height of these sections.
+   These scoped overrides replace the older fixed-width/absolute layouts. */
+@media (max-width: 767px) {
+  .personalization {
+    zoom: 1 !important;
+    transform: none !important;
+    min-width: 0 !important;
+    font-family: "Segoe UI", "Inter";
+  }
+
+  .personalization > :is(.frameParent45, .modernLearningSection) {
+    position: relative !important;
+    inset: auto !important;
+    transform: none !important;
+    width: calc(100% - 32px) !important;
+    max-width: 680px !important;
+    min-width: 0 !important;
+    height: auto !important;
+    margin: 48px auto 0 !important;
+    padding: 0 !important;
+    box-sizing: border-box !important;
+    display: grid !important;
+    grid-template-columns: minmax(0, 1fr) !important;
+    gap: 32px !important;
+  }
+
+  .personalization :is(.frameParent46, .modernLearningIntro, .frameParent47, .modernLearningFeatures) {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+    height: auto !important;
+    box-sizing: border-box !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  .personalization :is(.frameParent46, .modernLearningIntro) {
+    align-items: center !important;
+    gap: 20px !important;
+    text-align: center !important;
+  }
+
+  .personalization .modernLearningBadge {
+    max-width: 100% !important;
+    min-height: 40px !important;
+    height: auto !important;
+    padding: 8px 16px !important;
+    box-sizing: border-box !important;
+    font: 600 16px/1.4 "Segoe UI", "Inter" !important;
+    white-space: normal !important;
+  }
+
+  .personalization .modernLearningHeading,
+  .personalization .frameParent46 > :nth-child(2) {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+    height: auto !important;
+    margin: 0 !important;
+    font: 700 clamp(24px, 6vw, 30px)/1.25 "Segoe UI", "Inter" !important;
+    text-align: center !important;
+    align-items: center !important;
+    white-space: normal !important;
+    overflow-wrap: break-word !important;
+  }
+
+  .personalization .modernLearningHeading :is(.learningBuiltAround, .everyLearner),
+  .personalization .frameParent46 > :nth-child(2) > span {
+    max-width: 100% !important;
+    min-width: 0 !important;
+    font: inherit !important;
+    line-height: inherit !important;
+    white-space: normal !important;
+    overflow-wrap: break-word !important;
+  }
+
+  .personalization .modernLearningIntro .learnYourWay,
+  .personalization .frameParent46 .learnYourWay {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+    height: auto !important;
+    margin: 0 !important;
+    font: 400 18px/1.5 "Segoe UI", "Inter" !important;
+    white-space: normal !important;
+    overflow-wrap: break-word !important;
+    text-align: center !important;
+  }
+
+  .personalization :is(.frameParent47, .modernLearningFeatures) {
+    display: grid !important;
+    grid-template-columns: minmax(0, 1fr) !important;
+    gap: 24px !important;
+  }
+
+  .personalization .modernLearningFeature,
+  .personalization .frameParent47 > :is(.frameParent13, .frameParent49, .frameParent50, .frameParent16) {
+    display: grid !important;
+    grid-template-columns: 66px minmax(0, 1fr) !important;
+    gap: 16px !important;
+    align-items: center !important;
+    width: 100% !important;
+    min-width: 0 !important;
+    height: auto !important;
+  }
+
+  .personalization .modernLearningFeatureText,
+  .personalization .frameParent47 > :is(.frameParent13, .frameParent49, .frameParent50, .frameParent16) > :last-child {
+    width: 100% !important;
+    min-width: 0 !important;
+    max-width: 100% !important;
+    height: auto !important;
+    gap: 6px !important;
+  }
+
+  .personalization .modernLearningFeature h3,
+  .personalization .frameParent47 :is(.structuredLearning, .adaptiveTechnology, .competencyBasedDevelopment) {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    font: 700 18px/1.3 "Segoe UI", "Inter" !important;
+    white-space: normal !important;
+    overflow-wrap: break-word !important;
+  }
+
+  .personalization .modernLearningFeature p,
+  .personalization .frameParent47 :is(.clearGoalOrientedLearning, .learningThatAdapts2, .learningAlignedWith, .realTimeVisibilityInto) {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    font: 400 16px/1.5 "Segoe UI", "Inter" !important;
+    white-space: normal !important;
+    overflow-wrap: break-word !important;
+  }
+
+  /* Stack the CTA copy and portrait in normal flow so they cannot overlap. */
+  .personalization > .rectangleParent7 {
+    position: relative !important;
+    inset: auto !important;
+    transform: none !important;
+    width: calc(100% - 24px) !important;
+    max-width: 520px !important;
+    min-width: 0 !important;
+    height: auto !important;
+    min-height: 0 !important;
+    max-height: none !important;
+    margin: 40px auto 52px !important;
+    padding: 28px 16px 0 !important;
+    box-sizing: border-box !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+    gap: 24px !important;
+    border-radius: 32px !important;
+    isolation: isolate;
+  }
+
+  .personalization > .rectangleParent7 .frameParent52 {
+    position: relative !important;
+    inset: auto !important;
+    transform: none !important;
+    order: 0 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+    height: auto !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    gap: 20px !important;
+    align-items: center !important;
+    text-align: center !important;
+  }
+
+  .personalization > .rectangleParent7 .makeLearningPersonalParent,
+  .personalization > .rectangleParent7 .makeLearningPersonal,
+  .personalization > .rectangleParent7 .createAdaptiveLearning {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+    height: auto !important;
+    min-height: 0 !important;
+    margin: 0 !important;
+    transform: none !important;
+    gap: 16px !important;
+    align-items: center !important;
+    white-space: normal !important;
+    overflow-wrap: break-word !important;
+    text-align: center !important;
+  }
+
+  .personalization > .rectangleParent7 .makeLearningPersonal {
+    font: 700 24px/1.25 "Segoe UI", "Inter" !important;
+  }
+
+  .personalization > .rectangleParent7 .createAdaptiveLearning {
+    font: 400 16px/1.5 "Segoe UI", "Inter" !important;
+  }
+
+  .personalization > .rectangleParent7 .frameWrapper17 {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    margin: 0 !important;
+    transform: none !important;
+    justify-content: center !important;
+  }
+
+  .personalization > .rectangleParent7 .frameWrapper18 {
+    width: min(210px, 100%) !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+    height: auto !important;
+    min-height: 52px !important;
+    padding: 12px 24px !important;
+    box-sizing: border-box !important;
+  }
+
+  .personalization > .rectangleParent7 .handHoldingWoodenCubeWithIcon {
+    position: relative !important;
+    inset: auto !important;
+    transform: none !important;
+    order: 1 !important;
+    flex: 0 0 auto !important;
+    display: block !important;
+    width: min(100%, 360px) !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+    height: auto !important;
+    max-height: none !important;
+    margin: 0 !important;
+    align-self: center !important;
+    object-fit: contain !important;
+    object-position: center bottom !important;
+    z-index: 1 !important;
+  }
+}
+
+/* Section heading alignment and the 48px gap before the footer.
+   All text selectors below are scoped to non-hero sections. */
+.personalization :is(.personalizedLearningCopy, .actionIntro, .frameParent27,
+  .frameParent46, .modernLearningIntro, .makeLearningPersonalParent) {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: flex-start !important;
+  min-width: 0 !important;
+  height: auto !important;
+  gap: 20px !important;
+  transform: none !important;
+  text-align: left !important;
+}
+
+
+.personalization .learningBuiltAroundContainer,
+.personalization .personalizationInAction,
+.personalization .betterLearningBetterContainer,
+.personalization .frameParent19 .learningThatAdapts,
+.personalization .frameParent36 .learningThatAdapts,
+.personalization .frameParent46 > :nth-child(2),
+.personalization .modernLearningHeading,
+.personalization > .rectangleParent7 .makeLearningPersonal {
+  position: relative !important;
+  inset: auto !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  min-width: 0 !important;
+  height: auto !important;
+  min-height: 0 !important;
+  margin: 0 !important;
+  transform: none !important;
+  box-sizing: border-box !important;
+  text-align: inherit !important;
+  align-items: inherit !important;
+  white-space: normal !important;
+  overflow-wrap: break-word !important;
+}
+
+.personalization .personalizedLearningAdapts,
+.personalization .everyLearnerIs,
+.personalization .adaptiveLearningImproves,
+.personalization .frameParent19 .neurolxpPersonalizesEvery,
+.personalization .frameParent36 .neurolxpPersonalizesEvery,
+.personalization .frameParent46 .learnYourWay,
+.personalization .modernLearningIntro .learnYourWay,
+.personalization > .rectangleParent7 .createAdaptiveLearning {
+  position: relative !important;
+  inset: auto !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  min-width: 0 !important;
+  height: auto !important;
+  min-height: 0 !important;
+  margin: 0 !important;
+  transform: none !important;
+  box-sizing: border-box !important;
+  text-align: inherit !important;
+  white-space: normal !important;
+  overflow-wrap: break-word !important;
+}
+
+.personalization :is(.frameParent19, .frameParent36)
+  :is(.frameWrapper9, .frameParent20, .learningThatAdaptsToYouParent) {
+  height: auto !important;
+  min-width: 0 !important;
+  max-width: 100% !important;
+  align-items: center !important;
+  text-align: center !important;
+  gap: 20px !important;
+}
+
+.personalization :is(.learningBuiltAroundContainer, .modernLearningHeading,
+  .betterLearningBetterContainer) > span {
+  line-height: inherit !important;
+}
+
+@media (min-width: 768px) {
+  .personalization .learningBuiltAroundContainer,
+  .personalization .personalizationInAction,
+  .personalization .betterLearningBetterContainer,
+  .personalization .frameParent19 .learningThatAdapts,
+  .personalization .frameParent36 .learningThatAdapts,
+  .personalization .frameParent46 > :nth-child(2),
+  .personalization .modernLearningHeading,
+  .personalization > .rectangleParent7 .makeLearningPersonal {
+    font-size: 36px !important;
+    line-height: 45px !important;
+  }
+
+  .personalization .personalizedLearningAdapts,
+  .personalization .everyLearnerIs,
+  .personalization .adaptiveLearningImproves,
+  .personalization .frameParent19 .neurolxpPersonalizesEvery,
+  .personalization .frameParent36 .neurolxpPersonalizesEvery,
+  .personalization .frameParent46 .learnYourWay,
+  .personalization .modernLearningIntro .learnYourWay,
+  .personalization > .rectangleParent7 .createAdaptiveLearning {
+    font-size: 24px !important;
+    line-height: 36px !important;
+  }
+
+  .personalization > .rectangleParent7 .makeLearningPersonalParent {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+}
+
+@media (max-width: 767px) {
+  .personalization :is(.personalizedLearningCopy, .actionIntro, .frameParent27,
+    .frameParent46, .modernLearningIntro),
+  .personalization > .rectangleParent7 .makeLearningPersonalParent {
+    width: 100% !important;
+    max-width: 100% !important;
+    align-items: center !important;
+    gap: 20px !important;
+    text-align: center !important;
+  }
+
+  .personalization .learningBuiltAroundContainer,
+  .personalization .personalizationInAction,
+  .personalization .betterLearningBetterContainer,
+  .personalization .frameParent19 .learningThatAdapts,
+  .personalization .frameParent36 .learningThatAdapts,
+  .personalization .frameParent46 > :nth-child(2),
+  .personalization .modernLearningHeading {
+    font-size: clamp(24px, 6vw, 30px) !important;
+    line-height: 1.25 !important;
+  }
+
+  .personalization .personalizedLearningAdapts,
+  .personalization .everyLearnerIs,
+  .personalization .adaptiveLearningImproves,
+  .personalization .frameParent19 .neurolxpPersonalizesEvery,
+  .personalization .frameParent36 .neurolxpPersonalizesEvery,
+  .personalization .frameParent46 .learnYourWay,
+  .personalization .modernLearningIntro .learnYourWay {
+    font-size: 18px !important;
+    line-height: 1.5 !important;
+  }
+
+  .personalization .learningBuiltAroundContainer :is(.learningBuiltAround, .everyLearner),
+  .personalization .modernLearningHeading :is(.learningBuiltAround, .everyLearner) {
+    line-height: inherit !important;
+  }
+
+}
+
+/* Section spacing: original badge rules above remain unchanged.
+   Keep content sections in document flow so wrapping does not change the gap. */
+.personalization {
+  --section-page-scale: 1;
+  height: auto !important;
+  min-height: 0 !important;
+  margin-bottom: 0 !important;
+  padding-bottom: calc(48px / var(--section-page-scale)) !important;
+}
+
+.personalization > :is(.frameParent5, .frameParent10, .frameParent19,
+  .frameParent26, .frameParent36, .frameParent45, .modernLearningSection,
+  .rectangleParent7) {
+  position: relative !important;
+  inset: auto !important;
+  transform: none !important;
+  margin: calc(48px / var(--section-page-scale)) auto 0 !important;
+  box-sizing: border-box !important;
+}
+
+@media (min-width: 768px) {
+  .personalization {
+    /* Preserve the desktop hero's existing -47px top and 836px height.
+       Reserve its occupied space without changing the hero itself. */
+    padding-top: 789px !important;
+    zoom: var(--section-page-scale) !important;
+    transform: none !important;
+  }
+
+  /* Flow-aware scaling keeps the footer directly after the content. */
+  .personalization > .frameParent5 {
+    height: 614px !important;
+  }
+
+  .personalization > .rectangleParent7 {
+    height: 542px !important;
+    min-height: 542px !important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1439px) {
+  .personalization {
+    --section-page-scale: calc(100vw / 1440px);
+  }
+}
+
+@media (min-width: 2561px) {
+  .personalization {
+    --section-page-scale: 0.89;
+  }
+}
+
+@media (max-width: 767px) {
+  .personalization {
+    padding-top: 0 !important;
+  }
+}
+
+/* Use the same font family for page text and form controls. */
+.personalization,
+.personalization *,
+.personalization *::before,
+.personalization *::after {
+  font-family: "Segoe UI", "Inter" !important;
+}
+
+/* =========================================================
+   FINAL TEXT-SELECTION + BADGE ALIGNMENT FIX
+   ---------------------------------------------------------
+   Single-file CSS fix:
+   - Makes normal page text selectable/copyable.
+   - Makes the two CSS-generated badge labels selectable.
+   - Aligns "Why Personalized Learning Matters" with the
+     left content column and keeps it on one line on desktop.
+   - Keeps "Intelligent Learning Experience" centered.
+   - Preserves decorative images/icons as non-selectable.
+   ========================================================= */
+
+/* All real text in the Personalization page */
+.personalization,
+.personalization * {
+  -webkit-user-select: text !important;
+  -moz-user-select: text !important;
+  -ms-user-select: text !important;
+  user-select: text !important;
+}
+
+/* Decorative/non-text elements */
+.personalization img,
+.personalization svg,
+.personalization picture,
+.personalization canvas,
+.personalization video {
+  -webkit-user-select: none !important;
+  -moz-user-select: none !important;
+  -ms-user-select: none !important;
+  user-select: none !important;
+}
+
+/* These two labels are rendered with ::before in the original file.
+   Explicitly override the pseudo-element default so their text can
+   be highlighted/copied like the rest of the page. */
+.personalization .frameParent27::before,
+.personalization .frameParent36 > .frameWrapper9::before {
+  -webkit-user-select: text !important;
+  -moz-user-select: text !important;
+  -ms-user-select: text !important;
+  user-select: text !important;
+  cursor: text !important;
+  pointer-events: auto !important;
+}
+
+/* First badge: line up with the heading/description column. */
+.personalization .frameParent27 {
+  align-items: flex-start !important;
+}
+
+.personalization .frameParent27::before {
+  align-self: flex-start !important;
+  width: max-content !important;
+  max-width: 100% !important;
+  min-height: 50px !important;
+  height: auto !important;
+  margin: 0 !important;
+  padding: 8px 28px !important;
+  box-sizing: border-box !important;
+  white-space: nowrap !important;
+  text-align: center !important;
+  line-height: 1.2 !important;
+}
+
+/* Second badge: preserve centered placement. */
+.personalization .frameParent36 > .frameWrapper9::before {
+  align-self: center !important;
+  width: max-content !important;
+  max-width: 100% !important;
+  min-height: 50px !important;
+  height: auto !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  padding: 8px 28px !important;
+  box-sizing: border-box !important;
+  white-space: nowrap !important;
+  text-align: center !important;
+  line-height: 1.2 !important;
+}
+
+/* Small screens: allow the badge text to wrap safely. */
+@media (max-width: 767px) {
+  .personalization .frameParent27 {
+    align-items: center !important;
+  }
+
+  .personalization .frameParent27::before,
+  .personalization .frameParent36 > .frameWrapper9::before {
+    max-width: 100% !important;
+    min-height: 44px !important;
+    padding: 8px 18px !important;
+    white-space: normal !important;
+    text-align: center !important;
+  }
+
+  .personalization .frameParent27::before {
+    align-self: center !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+}
+
+
+
+/* =========================================================
+   SELECTABLE BADGES — real DOM text, same visual treatment
+   ========================================================= */
+
+/* Disable the old generated text. */
+.personalization .frameParent27::before,
+.personalization .frameParent36 > .frameWrapper9::before {
+  content: none !important;
+  display: none !important;
+}
+
+/* Reuse the existing badge placeholder elements as the badges. */
+.personalization .frameParent26 .frameChild16,
+.personalization .frameParent36 .frameChild22 {
+  display: inline-flex !important;
+  position: static !important;
+  width: max-content !important;
+  max-width: 100% !important;
+  min-width: 0 !important;
+  min-height: 50px !important;
+  height: auto !important;
+  margin: 0 !important;
+  padding: 8px 28px !important;
+  align-items: center !important;
+  justify-content: center !important;
+  border: 0 !important;
+  border-radius: 28px !important;
+  background: #dfe6e9 !important;
+  box-shadow: inset -4px -4px 4px #fff,
+              inset 4px 4px 4px rgba(196,196,196,.75) !important;
+  color: #2d4cc8 !important;
+  font: 600 24px/1.2 "Segoe UI", "Inter", sans-serif !important;
+  letter-spacing: .02em !important;
+  text-align: center !important;
+  white-space: nowrap !important;
+  box-sizing: border-box !important;
+  -webkit-user-select: text !important;
+  -moz-user-select: text !important;
+  -ms-user-select: text !important;
+  user-select: text !important;
+  cursor: text !important;
+  pointer-events: auto !important;
+}
+
+/* Keep the first badge aligned with its heading. */
+.personalization .frameParent27 {
+  align-items: flex-start !important;
+}
+
+.personalization .frameParent26 .frameChild16 {
+  align-self: flex-start !important;
+}
+
+/* Keep the second badge centered. */
+.personalization .frameParent36 .frameChild22 {
+  align-self: center !important;
+}
+
+@media (max-width: 767px) {
+  .personalization .frameParent26 .frameChild16,
+  .personalization .frameParent36 .frameChild22 {
+    white-space: normal !important;
+    font-size: 16px !important;
+    min-height: 44px !important;
+    padding: 8px 22px !important;
+  }
+}

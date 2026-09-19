@@ -136,7 +136,9 @@ const CareerPathwaysSkilling: NextPage = () => {
                 								<div className={styles.frameChild8} />
                 								<div className={styles.frameChild9} />
                 								<div className={styles.buildStrongCoreKnowledgeAnWrapper}>
-                  									<div className={styles.developPracticalJobReady}>Develop Practical Job-Ready Skills</div>
+                  									Develop Practical
+<br />
+<span className={styles.keepTogether}>Job-Ready</span> Skills
                 								</div>
                 								<div className={styles.buildSkillsWrapper}>
                   									<h3 style={{ display: "contents" }}><strong className={styles.buildSkills}>Build Skills</strong></h3>

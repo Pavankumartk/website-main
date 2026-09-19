@@ -148,10 +148,12 @@ export default function ContentIntelligenceManagement() {
             }}
           >
             <g filter="url(#contentHeroOuterShadow)">
-              <path d="M24 28H1464V524.978L741 647L24 547.604V28Z" fill="#DFE6E9" />
+              <path d="M0 28H1488V524.978L741 647L0 547.604V28Z"
+  fill="#DFE6E9" fill="#DFE6E9" />
             </g>
             <g filter="url(#contentHeroInnerShadow)">
-              <path d="M26 0H1466V496.978L743 619L26 519.604V0Z" fill="#DFE6E9" />
+              <path d="M0 0H1488V496.978L743 619L0 519.604V0Z"
+  fill="#DFE6E9" />
             </g>
             <defs>
               <filter id="contentHeroOuterShadow" x="0" y="4" width="1488" height="667" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
@@ -226,7 +228,7 @@ export default function ContentIntelligenceManagement() {
           <div className={styles.frameWrapper3}>
             <div className={styles.frameWrapper4}>
               <div className={styles.frameParent23}>
-                <div className={styles.frameChild12} aria-hidden="true" />
+                <p className={styles.contentIntelligenceBadge}>Content Intelligence</p>
                 <div className={styles.onePlatformManyFormatSmaParent}>
                   <h2 className={`${styles.turnExistingKnowledge} ${styles.semanticBoldHeading}`}>Turn Existing Knowledge into Better Learning</h2>
                   <div className={styles.neurolxpTransformsContent}>NeuroLXP transforms content across formats into structured, learner-focused experiences.</div>

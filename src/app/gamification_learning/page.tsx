@@ -617,15 +617,11 @@ const InteractiveGamifiedLearning: NextPage = () => {
             </div>
             <div className={styles.perfectForUniversities}>Explore, practice, apply, and master new skills.</div>
           </div>
-          <div className={styles.frameParent77}>
-            <div className={styles.frameWrapper19}>
-              <div className={styles.startLearningWrapper}>
-                <BookDemoTrigger className={styles.bookADemo}>
-                  Book a Demo
-                </BookDemoTrigger>
-              </div>
-            </div>
-            <Link className={styles.learnMorePill} href="/HomePage">
+          <div className={`${styles.frameParent77} ${styles.journeyActions}`}>
+            <BookDemoTrigger className={`${styles.frameWrapper19} ${styles.journeyAction} ${styles.journeyDemoAction}`}>
+              Book a Demo
+            </BookDemoTrigger>
+            <Link className={`${styles.learnMorePill} ${styles.journeyAction}`} href="/HomePage">
               Learn more
             </Link>
           </div>

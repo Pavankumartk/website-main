@@ -221,14 +221,14 @@ const BlendedLearning: NextPage = () => {
 					</div>
 				</section>
 				<section className={styles.blendedBenefitsSection} aria-labelledby="blended-benefits-title">
-					<Image
+					{/* <Image
 						className={styles.blendedBenefitsBackground}
-						src="/images/blended background.webp"
+						// src="/images/blended background.webp"
 						alt=""
 						fill
 						sizes="(max-width: 900px) 100vw, 1280px"
 						aria-hidden="true"
-					/>
+					/> */}
 
 					<div className={styles.blendedBenefitsContent}>
 						<div className={styles.blendedBenefitsIntro}>
@@ -344,7 +344,7 @@ const BlendedLearning: NextPage = () => {
 						<div className={styles.blendedCtaImageShell}>
 							<Image
 								className={styles.blendedCtaImage}
-								src="/images/ellipse 412.webp"
+								src="/images/onlineclass.webp"
 								width={1280}
 								height={726}
 								sizes="(max-width: 900px) calc(100vw - 48px), 1280px"

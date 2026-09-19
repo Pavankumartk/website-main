@@ -16623,3 +16623,385 @@ body {
   }
 }
 
+
+
+/* Requested corrections: centred readiness cards, aligned copy, 48px section spacing. */
+
+.careerPathwaysSkilling.careerPathwaysSkilling {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  gap: 0 !important;
+  height: auto !important;
+  min-height: 100vh !important;
+}
+
+.careerPathwaysSkilling.careerPathwaysSkilling > .frameParent2 {
+  position: relative !important;
+  inset: auto !important;
+  transform: none !important;
+  margin: 0 auto 0 !important;
+  flex: none !important;
+  order: 1 !important;
+}
+
+.careerPathwaysSkilling.careerPathwaysSkilling > .frameParent7 {
+  position: relative !important;
+  inset: auto !important;
+  transform: none !important;
+  margin: 48px auto 0 !important;
+  flex: none !important;
+  order: 2 !important;
+}
+
+.careerPathwaysSkilling.careerPathwaysSkilling > .frameParent19 {
+  position: relative !important;
+  inset: auto !important;
+  transform: none !important;
+  margin: 48px auto 0 !important;
+  flex: none !important;
+  order: 3 !important;
+}
+
+.careerPathwaysSkilling.careerPathwaysSkilling > .frameParent14 {
+  position: relative !important;
+  inset: auto !important;
+  transform: none !important;
+  margin: 48px auto 0 !important;
+  flex: none !important;
+  order: 4 !important;
+}
+
+.careerPathwaysSkilling.careerPathwaysSkilling > .frameParent23 {
+  position: relative !important;
+  inset: auto !important;
+  transform: none !important;
+  margin: 48px auto 0 !important;
+  flex: none !important;
+  order: 5 !important;
+}
+
+.careerPathwaysSkilling.careerPathwaysSkilling > .careerPathwaysSkillingInner {
+  position: relative !important;
+  inset: auto !important;
+  transform: none !important;
+  margin: 48px auto 0 !important;
+  flex: none !important;
+  order: 6 !important;
+}
+
+.careerPathwaysSkilling.careerPathwaysSkilling > .frameParent39 {
+  position: relative !important;
+  inset: auto !important;
+  transform: none !important;
+  margin: 48px auto 0 !important;
+  flex: none !important;
+  order: 7 !important;
+}
+
+.careerPathwaysSkilling.careerPathwaysSkilling > .frameParent44 {
+  position: relative !important;
+  inset: auto !important;
+  transform: none !important;
+  margin: 48px auto 0 !important;
+  flex: none !important;
+  order: 8 !important;
+}
+
+.careerPathwaysSkilling.careerPathwaysSkilling > .frameParent53 {
+  position: relative !important;
+  inset: auto !important;
+  transform: none !important;
+  margin: 48px auto 0 !important;
+  flex: none !important;
+  order: 9 !important;
+}
+
+.careerPathwaysSkilling.careerPathwaysSkilling > .frameParent64 {
+  position: relative !important;
+  inset: auto !important;
+  transform: none !important;
+  margin: 48px auto 0 !important;
+  flex: none !important;
+  order: 10 !important;
+}
+
+.careerPathwaysSkilling.careerPathwaysSkilling > .frameParent53 + .frameParent64 {
+  margin-top: 48px !important;
+  margin-bottom: 0 !important;
+}
+
+.careerPathwaysSkilling.careerPathwaysSkilling > .frameParent67 {
+  position: relative !important;
+  inset: auto !important;
+  transform: none !important;
+  margin: 48px auto 0 !important;
+  flex: none !important;
+  order: 11 !important;
+}
+
+.careerPathwaysSkilling.careerPathwaysSkilling > .frameParent {
+  order: -2 !important;
+}
+
+.careerPathwaysSkilling.careerPathwaysSkilling > .frameDiv {
+  order: -1 !important;
+}
+
+@media (min-width: 1280px) {
+.careerPathwaysSkilling.careerPathwaysSkilling {
+  padding-top: 168px !important;
+}
+}
+
+.careerPathwaysSkilling.careerPathwaysSkilling > .frameParent7 {
+  align-self: center !important;
+  align-items: center !important;
+  box-sizing: border-box !important;
+}
+
+@media (min-width: 1280px) {
+.careerPathwaysSkilling.careerPathwaysSkilling > .frameParent7 {
+  width: min(1280px, calc(100% - 32px)) !important;
+  max-width: 1280px !important;
+}
+}
+
+.careerPathwaysSkilling.careerPathwaysSkilling .frameParent7 .frameParent8,
+.careerPathwaysSkilling.careerPathwaysSkilling .frameParent7 .fromLearningToCareerReadinParent {
+  max-width: 100% !important;
+  align-self: center !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.careerPathwaysSkilling.careerPathwaysSkilling .frameParent7 .turnLearningInto {
+  width: min(1028px,100%) !important;
+  max-width: 100% !important;
+  align-self: center !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  text-align: center !important;
+}
+
+.careerPathwaysSkilling.careerPathwaysSkilling .frameParent7 .frameParent9 {
+  width: 100% !important;
+  max-width: 100% !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  justify-content: center !important;
+  justify-items: center !important;
+  box-sizing: border-box !important;
+}
+
+@media (min-width: 1280px) {
+.careerPathwaysSkilling.careerPathwaysSkilling .frameParent7 .frameParent9 {
+  display: grid !important;
+  grid-template-columns: repeat(4,minmax(0,1fr)) !important;
+  gap: 40px !important;
+  align-items: start !important;
+}
+}
+
+@media (min-width: 1280px) {
+.careerPathwaysSkilling.careerPathwaysSkilling .frameParent9 > *,
+.careerPathwaysSkilling.careerPathwaysSkilling .frameParent9 .frameParent10,
+.careerPathwaysSkilling.careerPathwaysSkilling .frameParent9 .frameWrapper6,
+.careerPathwaysSkilling.careerPathwaysSkilling .frameParent9 .rectangleParent {
+  width: 100% !important;
+  min-width: 0 !important;
+  max-width: 100% !important;
+  box-sizing: border-box !important;
+}
+}
+
+@media (min-width: 1280px) {
+.careerPathwaysSkilling.careerPathwaysSkilling .frameParent9 .frameChild5,
+.careerPathwaysSkilling.careerPathwaysSkilling .frameParent9 .rectangleDiv,
+.careerPathwaysSkilling.careerPathwaysSkilling .frameParent9 .frameChild8,
+.careerPathwaysSkilling.careerPathwaysSkilling .frameParent9 .frameChild14,
+.careerPathwaysSkilling.careerPathwaysSkilling .frameParent9 .learnWrapper,
+.careerPathwaysSkilling.careerPathwaysSkilling .frameParent9 .buildSkillsWrapper,
+.careerPathwaysSkilling.careerPathwaysSkilling .frameParent9 .proveCompetencyWrapper,
+.careerPathwaysSkilling.careerPathwaysSkilling .frameParent9 .careerReadyWrapper {
+  width: 100% !important;
+  box-sizing: border-box !important;
+}
+}
+
+.careerPathwaysSkilling.careerPathwaysSkilling .frameParent9 .buildStrongCoreKnowledgeAnWrapper {
+  position: absolute !important;
+  left: 50% !important;
+  right: auto !important;
+  top: 56% !important;
+  bottom: auto !important;
+  transform: translateX(-50%) !important;
+  width: calc(100% - 40px) !important;
+  max-width: 250px !important;
+  height: auto !important;
+  min-height: 60px !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  text-align: center !important;
+}
+
+.careerPathwaysSkilling.careerPathwaysSkilling .frameParent9 .buildStrongCore,
+.careerPathwaysSkilling.careerPathwaysSkilling .frameParent9 .developPracticalJobReady,
+.careerPathwaysSkilling.careerPathwaysSkilling .frameParent9 .validateSkillsAnd,
+.careerPathwaysSkilling.careerPathwaysSkilling .frameParent9 .trackProgressToward {
+  position: absolute !important;
+  left: 50% !important;
+  right: auto !important;
+  top: 56% !important;
+  bottom: auto !important;
+  transform: translateX(-50%) !important;
+  width: calc(100% - 40px) !important;
+  max-width: 250px !important;
+  height: auto !important;
+  min-height: 60px !important;
+  max-height: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  display: block !important;
+  text-align: center !important;
+  letter-spacing: 0 !important;
+  white-space: normal !important;
+  overflow-wrap: normal !important;
+  word-break: normal !important;
+  hyphens: none !important;
+  text-wrap: balance !important;
+}
+
+.careerPathwaysSkilling.careerPathwaysSkilling .frameParent9 .buildStrongCoreKnowledgeAnWrapper .buildStrongCore,
+.careerPathwaysSkilling.careerPathwaysSkilling .frameParent9 .buildStrongCoreKnowledgeAnWrapper .developPracticalJobReady,
+.careerPathwaysSkilling.careerPathwaysSkilling .frameParent9 .buildStrongCoreKnowledgeAnWrapper .validateSkillsAnd,
+.careerPathwaysSkilling.careerPathwaysSkilling .frameParent9 .buildStrongCoreKnowledgeAnWrapper .trackProgressToward {
+  position: static !important;
+  inset: auto !important;
+  transform: none !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+@media (min-width: 1280px) {
+.careerPathwaysSkilling.careerPathwaysSkilling .frameParent9 .buildStrongCore,
+.careerPathwaysSkilling.careerPathwaysSkilling .frameParent9 .developPracticalJobReady,
+.careerPathwaysSkilling.careerPathwaysSkilling .frameParent9 .validateSkillsAnd,
+.careerPathwaysSkilling.careerPathwaysSkilling .frameParent9 .trackProgressToward {
+  font-size: 20px !important;
+  line-height: 30px !important;
+  font-weight: 600 !important;
+}
+}
+
+@media (max-width: 767.98px) {
+.careerPathwaysSkilling.careerPathwaysSkilling .frameParent9 .buildStrongCore,
+.careerPathwaysSkilling.careerPathwaysSkilling .frameParent9 .developPracticalJobReady,
+.careerPathwaysSkilling.careerPathwaysSkilling .frameParent9 .validateSkillsAnd,
+.careerPathwaysSkilling.careerPathwaysSkilling .frameParent9 .trackProgressToward {
+  font-size: 15px !important;
+  line-height: 22px !important;
+  min-height: 44px !important;
+}
+}
+
+@media (max-width: 767.98px) {
+.careerPathwaysSkilling.careerPathwaysSkilling .frameParent9 .buildStrongCoreKnowledgeAnWrapper {
+  min-height: 44px !important;
+}
+}
+
+.keepTogether {
+  white-space: nowrap;
+  display: inline-block;
+  word-break: normal;
+  overflow-wrap: normal;
+}
+
+
+.careerPathwaysSkilling.careerPathwaysSkilling .frameParent9 .developPracticalJobReady {
+  text-wrap: wrap !important;
+}
+
+
+/* Footer clearance and compact desktop learning-stage cards. */
+.careerPathwaysSkilling.careerPathwaysSkilling {
+  height: auto !important;
+  max-height: none !important;
+  padding-bottom: 48px !important;
+  margin-bottom: 0 !important;
+}
+
+/* The CTA contributes its entire height before the external footer starts. */
+.careerPathwaysSkilling.careerPathwaysSkilling > .frameParent64 {
+  position: relative !important;
+  top: auto !important;
+  bottom: auto !important;
+  height: auto !important;
+  min-height: 0 !important;
+  max-height: none !important;
+  flex-shrink: 0 !important;
+  padding-bottom: 0 !important;
+  margin-bottom: 0 !important;
+  overflow: visible !important;
+}
+
+.careerPathwaysSkilling.careerPathwaysSkilling .frameParent64 .frameParent65,
+.careerPathwaysSkilling.careerPathwaysSkilling .frameParent64 .frameParent66,
+.careerPathwaysSkilling.careerPathwaysSkilling .frameParent64 .turnLearningIntoCareerGrowParent {
+  height: auto !important;
+  min-height: 0 !important;
+  max-height: none !important;
+  flex-shrink: 0 !important;
+}
+
+.careerPathwaysSkilling.careerPathwaysSkilling .frameParent64 .frameWrapper21 {
+  position: relative !important;
+  top: auto !important;
+  bottom: auto !important;
+  flex-shrink: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+/* If this page uses its original internal footer, place the same gap BEFORE it. */
+.careerPathwaysSkilling.careerPathwaysSkilling:has(> .frameParent67) {
+  padding-bottom: 0 !important;
+}
+.careerPathwaysSkilling.careerPathwaysSkilling > .frameParent67 {
+  position: relative !important;
+  inset: auto !important;
+  transform: none !important;
+  margin-top: 48px !important;
+  flex-shrink: 0 !important;
+}
+
+/* 306px -> 266px: remove 40px of empty bottom space, keeping the top content fixed. */
+@media screen and (min-width: 1280px) {
+  .careerPathwaysSkilling.careerPathwaysSkilling .frameParent14 .rectangleParent3,
+  .careerPathwaysSkilling.careerPathwaysSkilling .frameParent14 .rectangleParent4,
+  .careerPathwaysSkilling.careerPathwaysSkilling .frameParent14 .rectangleParent5,
+  .careerPathwaysSkilling.careerPathwaysSkilling .frameParent14 .rectangleParent7 {
+    height: 266px !important;
+    min-height: 266px !important;
+    max-height: none !important;
+    aspect-ratio: auto !important;
+  }
+
+  .careerPathwaysSkilling.careerPathwaysSkilling .frameParent14 .frameChild17 {
+    top: 0 !important;
+    bottom: 0 !important;
+    height: 100% !important;
+    min-height: 0 !important;
+    max-height: none !important;
+  }
+
+  .careerPathwaysSkilling.careerPathwaysSkilling .frameParent14 .frameChild18 {
+    top: 24px !important;
+    bottom: 24px !important;
+    height: calc(100% - 48px) !important;
+    min-height: 0 !important;
+    max-height: none !important;
+  }
+}

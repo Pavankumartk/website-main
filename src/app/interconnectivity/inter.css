@@ -6824,3 +6824,182 @@ button:has(> .bookDemoBtn)::-moz-focus-inner {
   transform: translateY(2px) !important;
 }
 
+
+
+/* =====================================================================
+   CONTENT-DRIVEN LAYOUT REPAIR
+   Retains the existing artwork, class names, type, colour, shadows,
+   interactions and breakpoints. Only layout geometry is corrected here.
+   Main sections reserve their own height before fonts/images finish loading.
+   Absolute positioning remains available to decorative layers inside cards.
+   ===================================================================== */
+.interconnectivity {
+  height: auto !important;
+  max-height: none !important;
+  position: relative !important;
+  display: flex !important;
+  flex-direction: column !important;
+}
+
+/* These are complete sections, not decorative layers. Descendant selectors
+   also work if React wraps a section in an animation or layout container. */
+.interconnectivity .frameParent2,
+.interconnectivity .frameParent8,
+.interconnectivity .frameParent11,
+.interconnectivity .frameParent19,
+.interconnectivity .frameParent22,
+.interconnectivity .connectedLearningEcosystemParent,
+.interconnectivity .ellipseGroup {
+  position: relative !important;
+  top: auto !important;
+  right: auto !important;
+  bottom: auto !important;
+  left: auto !important;
+  height: auto !important;
+  max-height: none !important;
+  min-width: 0 !important;
+  flex: 0 0 auto !important;
+  transform: none !important;
+}
+
+/* Preserve the designed desktop section heights as minimums. Longer copy
+   can now increase the height and move the next section down naturally. */
+.interconnectivity .frameParent2 { min-height: 546px; }
+.interconnectivity .ellipseGroup { min-height: 539px; }
+
+.interconnectivity .frameParent2 .frameParent4,
+.interconnectivity .frameParent2 .frameParent5,
+.interconnectivity .frameParent8 .frameParent9,
+.interconnectivity .frameParent8 .oneConnectedPlatformForModParent,
+.interconnectivity .frameParent11 .frameParent13,
+.interconnectivity .frameParent19 .frameParent20,
+.interconnectivity .frameParent19 .builtForDiverseLearningEnvParent,
+.interconnectivity .frameParent22 .frameParent23,
+.interconnectivity .frameParent22 .connectYourEcosystemInFourParent,
+.interconnectivity .ellipseGroup .readyToConnectYourLearningParent {
+  height: auto !important;
+  max-height: none !important;
+  min-width: 0 !important;
+  flex-shrink: 0 !important;
+}
+
+.interconnectivity .frameParent2 .seamlessInterconnectivityWit,
+.interconnectivity .frameParent2 .connectLearnersEducators,
+.interconnectivity .frameParent8 .oneConnectedPlatform,
+.interconnectivity .frameParent8 .connectSystemsContent,
+.interconnectivity .frameParent11 .breakSilosBuildContainer,
+.interconnectivity .frameParent11 .connectSystemsContent3,
+.interconnectivity .frameParent19 .builtForDiverse,
+.interconnectivity .frameParent19 .aConnectedPlatform,
+.interconnectivity .frameParent22 .connectSystemsPeople,
+.interconnectivity .connectedLearningEcosystemParent .connectedLearningEcosystem,
+.interconnectivity .ellipseGroup .readyToConnectContainer,
+.interconnectivity .ellipseGroup .connectYourEcosystem2 {
+  height: auto !important;
+  max-height: none !important;
+  min-width: 0 !important;
+  flex-shrink: 0 !important;
+}
+
+/* Keep headline spans on the same line-height as their responsive parent. */
+.interconnectivity .frameParent11 .breakSilos,
+.interconnectivity .frameParent11 .buildConnectedLearning,
+.interconnectivity .ellipseGroup .learningEcosystem {
+  line-height: inherit !important;
+}
+
+/* Put the CTA copy in flow; the ellipse backgrounds remain absolute.
+   Grid centering matches the old centered placement without a fixed text box. */
+.interconnectivity .ellipseGroup {
+  display: grid !important;
+  grid-template-columns: minmax(0, 1fr) !important;
+  place-items: center !important;
+  padding: 32px 0 !important;
+  box-sizing: border-box !important;
+}
+.interconnectivity .ellipseGroup .ellipseContainer {
+  position: relative !important;
+  inset: auto !important;
+  height: auto !important;
+  min-height: 475px !important;
+  margin: 0 auto !important;
+  padding: 64px 0 !important;
+  display: grid !important;
+  grid-template-columns: minmax(0, 1fr) !important;
+  place-items: center !important;
+  box-sizing: border-box !important;
+  transform: none !important;
+}
+.interconnectivity .ellipseGroup .frameChild44 {
+  position: absolute !important;
+  inset: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+}
+.interconnectivity .ellipseGroup .frameParent43 {
+  position: relative !important;
+  inset: auto !important;
+  height: auto !important;
+  max-width: calc(100% - 48px) !important;
+  min-width: 0 !important;
+  margin: 0 auto !important;
+  transform: none !important;
+}
+.interconnectivity .ellipseGroup .connectYourEcosystem2 {
+  flex: 0 0 auto !important;
+}
+
+@media screen and (min-width: 1025px) {
+  /* The original desktop copy starts 68px down and 50px in. Reserving
+     this space with padding lets its container grow if the heading wraps. */
+  .interconnectivity .frameParent2 {
+    padding: 68px 0 54px !important;
+    box-sizing: border-box !important;
+  }
+  .interconnectivity .frameParent2 .frameParent3 {
+    position: relative !important;
+    inset: auto !important;
+    height: auto !important;
+    margin: 0 0 0 50px !important;
+    transform: none !important;
+  }
+  .interconnectivity .frameParent8 .frameParent9 { min-height: 259px; }
+  .interconnectivity .frameParent19 .frameParent20 { min-height: 244px; }
+  .interconnectivity .frameParent22 .frameParent23 { min-height: 212px; }
+}
+
+/* Tablet cards must reserve at least the 300px used by their own image
+   and caption shell; the old shared 278px rule let the caption paint out. */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .interconnectivity .frameParent19 .frameWrapper6 {
+    height: 300px !important;
+    min-height: 300px !important;
+  }
+  .interconnectivity .ellipseGroup { padding: 12px 0 !important; }
+  .interconnectivity .ellipseGroup .ellipseContainer {
+    min-height: 500px !important;
+  }
+}
+
+@media screen and (max-width: 767.98px) {
+  /* Content grows inside the hero instead of escaping a 546px desktop box. */
+  .interconnectivity .frameParent2 .frameParent3 {
+    position: relative !important;
+    inset: auto !important;
+    height: auto !important;
+    min-height: 0 !important;
+  }
+  .interconnectivity .frameParent8 .frameParent9,
+  .interconnectivity .frameParent19 .frameParent20,
+  .interconnectivity .frameParent22 .frameParent23 {
+    min-height: 0 !important;
+  }
+  .interconnectivity .ellipseGroup {
+    min-height: 430px !important;
+    padding: 12px 0 !important;
+  }
+  .interconnectivity .ellipseGroup .ellipseContainer {
+    min-height: 406px !important;
+    padding: 40px 0 !important;
+  }
+}

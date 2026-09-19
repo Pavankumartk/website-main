@@ -7,7 +7,7 @@
   text-align: center;
   font-size: 48px;
   color: #31344b;
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", "Inter";
   max-width: 1440px;
   margin: 0 auto;
 }
@@ -23,7 +23,7 @@
   overflow: hidden;
   text-align: left;
   font-size: 16px;
-  font-family: Inter;
+  font-family: "Segoe UI", "Inter";
 }
 .frameChild {
   position: absolute;
@@ -105,7 +105,7 @@
   box-sizing: border-box;
   text-align: center;
   color: #2d4cc8;
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", "Inter";
 }
 .signInHelp {
   width: 97px;
@@ -136,7 +136,7 @@
   text-align: left;
   font-size: 16px;
   color: #2f3547;
-  font-family: Inter;
+  font-family: "Segoe UI", "Inter";
 }
 .featuresWrapper {
   display: flex;
@@ -861,7 +861,7 @@
   font-weight: 600;
   display: inline-block;
   flex-shrink: 0;
-  text-shadow:4px 4px 4px rgba(0, 0, 0, 0.25);
+  text-shadow: none;
 }
 .frameParent25 {
   align-self: stretch;
@@ -884,7 +884,7 @@
   font-weight: 600;
   display: inline-block;
   flex-shrink: 0;
-  text-shadow:4px 4px 4px rgba(0, 0, 0, 0.25);
+  text-shadow: none;
 }
 .timeSpentLearning {
   height: 37px;
@@ -895,7 +895,7 @@
   font-weight: 600;
   display: inline-block;
   flex-shrink: 0;
-  text-shadow:4px 4px 4px rgba(0, 0, 0, 0.25);
+  text-shadow: none;
 }
 .assessmentPerformance {
   height: 37px;
@@ -906,7 +906,7 @@
   font-weight: 600;
   display: inline-block;
   flex-shrink: 0;
-  text-shadow:4px 4px 4px rgba(0, 0, 0, 0.25);
+  text-shadow: none;
 }
 .discussionParticipation {
   height: 37px;
@@ -917,7 +917,7 @@
   font-weight: 600;
   display: inline-block;
   flex-shrink: 0;
-  text-shadow:4px 4px 4px rgba(0, 0, 0, 0.25);
+  text-shadow: none;
 }
 .gamificationProgress {
   height: 37px;
@@ -928,7 +928,7 @@
   font-weight: 600;
   display: inline-block;
   flex-shrink: 0;
-  text-shadow:4px 4px 4px rgba(0, 0, 0, 0.25);
+  text-shadow: none;
 }
 .frameParent30 {
   position: absolute;
@@ -1489,7 +1489,7 @@
   line-height: 60px;
   display: inline-block;
   flex-shrink: 0;
-  text-shadow:4px 4px 4px rgba(0, 0, 0, 0.25);
+  text-shadow: none;
 }
 .goBeyondBasic {
   width: 858px;
@@ -1627,7 +1627,7 @@
   position: relative;
   letter-spacing: -0.03em;
   line-height: 34px;
-  text-shadow:4px 4px 4px rgba(0, 0, 0, 0.25);
+  text-shadow: none;
 }
 .sparklesIcon {
   height: 23px;
@@ -1919,7 +1919,7 @@
   justify-content: center;
   box-sizing: border-box;
 
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", "Inter";
   font-size: 24px;
   font-weight: 600;
   letter-spacing: 0.03em;
@@ -1938,7 +1938,7 @@
   align-items: center;
   justify-content: center;
   box-sizing: border-box;
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", "Inter";
   font-size: 24px;
   font-weight: 600;
   line-height: 60.2px;
@@ -1971,7 +1971,7 @@
   box-sizing: border-box;
   flex-shrink: 0;
 
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", "Inter";
   font-size: 24px;
   font-weight: 600;
   line-height: 1;
@@ -2035,7 +2035,7 @@
   position: relative;
   z-index: 2;
   color: #31344b;
-  text-shadow:none;
+  text-shadow: none;
 }
 
 .analyticsReportingInner {
@@ -2082,7 +2082,7 @@
   box-sizing: border-box;
   flex-shrink: 0;
 
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", "Inter";
   font-size: 24px;
   font-weight: 600;
   line-height: 1;
@@ -2098,7 +2098,7 @@
   line-height: 60px;
   font-weight: 700;
   color: #31344b;
-  text-shadow:none;
+  text-shadow: none;
 }
 
 .analyticsReportingInner .getRealTimeInsights {
@@ -2106,7 +2106,7 @@
   line-height: 40px;
   font-weight: 400;
   color: #2f3547;
-  text-shadow:none;
+  text-shadow: none;
 }
 
 .analyticsReportingInner .frameParent23 {
@@ -2173,7 +2173,7 @@
   line-height: 36px;
   font-weight: 600;
   color: #31344b;
-  text-shadow:0 4px 4px rgba(0, 0, 0, 0.18);
+  text-shadow: none;
   display: block;
   flex: 1;
 }
@@ -2211,7 +2211,7 @@
   box-sizing: border-box;
   flex-shrink: 0;
 
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", "Inter";
   font-size: 24px;
   font-weight: 600;
   line-height: 1;
@@ -2318,7 +2318,7 @@
   height: 120px;
   padding: 0 24px;
   box-sizing: border-box;
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", "Inter";
   font-size: 24px;
   font-weight: 600;
   line-height: 32px;
@@ -2435,7 +2435,7 @@
   box-sizing: border-box;
   flex-shrink: 0;
 
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", "Inter";
   font-size: 24px;
   font-weight: 600;
   line-height: 1;
@@ -2451,7 +2451,7 @@
   height: auto;
   position: relative;
   margin: 0;
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", "Inter";
   font-size: 36px;
   font-weight: 700;
   line-height: 60px;
@@ -2466,7 +2466,7 @@
   width: 468px;
   position: relative;
   margin: 0;
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", "Inter";
   font-size: 24px;
   font-weight: 400;
   line-height: 40px;
@@ -2592,7 +2592,7 @@
   flex: 1;
   position: relative;
   margin: 0;
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", "Inter";
   font-size: 20px;
   font-weight: 600;
   line-height: 28px;
@@ -2656,7 +2656,7 @@
   box-sizing: border-box;
   flex-shrink: 0;
 
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", "Inter";
   font-size: 20px;
   font-weight: 600;
   line-height: 1;
@@ -2711,7 +2711,7 @@
   align-items: center;
   justify-content: center;
   box-sizing: border-box;
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", "Inter";
   font-size: 22px;
   font-weight: 600;
   line-height: 1;
@@ -2789,7 +2789,7 @@
   line-height: 36px;
   font-weight: 600;
   color: #31344b;
-  text-shadow:0 4px 4px rgba(0, 0, 0, 0.18);
+  text-shadow: none;
 }
 
 .analyticsReporting {
@@ -2919,7 +2919,7 @@
 .discussionParticipation,
 .gamificationProgress {
   color: #31344b;
-  text-shadow:none;
+  text-shadow: none;
 }
 
 .frameChild21 {
@@ -3048,7 +3048,7 @@ h2.makeEveryLearning {
 .learnerPerformance,
 .builtForEvery,
 .smarterAnalyticsBetterContainer {
-  font-family: "Segoe UI" !important;
+  font-family: "Segoe UI", "Inter" !important;
   font-weight: 700 !important;
 }
 
@@ -6471,7 +6471,7 @@ h2.makeEveryLearning {
   display: flex !important;
   align-items: center !important;
   justify-content: center !important;
-  font-family: "Segoe UI" !important;
+  font-family: "Segoe UI", "Inter" !important;
   font-size: 1.875cqw !important;
   line-height: 1 !important;
   font-weight: 600 !important;
@@ -6486,7 +6486,7 @@ h2.makeEveryLearning {
   height: auto !important;
   margin: 0 !important;
   padding: 0 !important;
-  font-family: "Segoe UI" !important;
+  font-family: "Segoe UI", "Inter" !important;
   font-size: 36px;
   line-height: 1.28 !important;
   font-weight: 700 !important;
@@ -6494,7 +6494,7 @@ h2.makeEveryLearning {
   color: #31344b !important;
   text-align: left !important;
   white-space: normal !important;
-  text-shadow:none !important;
+  text-shadow: none !important;
   transform: translateY(15);
 }
 
@@ -6503,7 +6503,7 @@ h2.makeEveryLearning {
   height: auto !important;
   margin: 0 !important;
   padding: 0 !important;
-  font-family: "Segoe UI" !important;
+  font-family: "Segoe UI", "Inter" !important;
   font-size: 24px;
   line-height: 1.42 !important;
   font-weight: 400 !important;
@@ -6511,7 +6511,7 @@ h2.makeEveryLearning {
   color: #2f3547 !important;
   text-align: left !important;
   white-space: normal !important;
-  text-shadow:none !important;
+  text-shadow: none !important;
 }
 
 .analyticsReportingInner .frameParent23 {
@@ -6586,7 +6586,7 @@ h2.makeEveryLearning {
   margin: 0 !important;
   padding: 0 !important;
   flex: 1 1 auto !important;
-  font-family: "Segoe UI" !important;
+  font-family: "Segoe UI", "Inter" !important;
   font-size: 1.875cqw !important;
   line-height: 1.25 !important;
   font-weight: 600 !important;
@@ -6595,7 +6595,7 @@ h2.makeEveryLearning {
   text-align: left !important;
   white-space: nowrap !important;
   overflow-wrap: normal !important;
-  text-shadow:0 .31cqw .31cqw rgba(0,0,0,.18) !important;
+  text-shadow: none !important;
   transform: none !important;
 }
 
@@ -6730,7 +6730,7 @@ h2.makeEveryLearning {
     top: 34px !important;
     margin: 0 !important;
     padding: 0 !important;
-    font-family: "Segoe UI" !important;
+    font-family: "Segoe UI", "Inter" !important;
     font-style: normal !important;
     font-weight: 600 !important;
     font-size: 21px !important;
@@ -7407,7 +7407,7 @@ h2.makeEveryLearning {
     margin: 0 auto !important;
     padding: 0 !important;
 
-    font-family: "Segoe UI" !important;
+    font-family: "Segoe UI", "Inter" !important;
     font-style: normal !important;
     font-weight: 400 !important;
     font-size: 24px !important;
@@ -7525,7 +7525,7 @@ h2.makeEveryLearning {
     margin: 0 !important;
     padding: 0 !important;
 
-    font-family: "Segoe UI" !important;
+    font-family: "Segoe UI", "Inter" !important;
     font-style: normal !important;
     font-weight: 600 !important;
     font-size: 18px !important;
@@ -7836,7 +7836,7 @@ h2.makeEveryLearning {
     align-items: center !important;
     justify-content: center !important;
 
-    font-family: "Segoe UI" !important;
+    font-family: "Segoe UI", "Inter" !important;
     font-style: normal !important;
     font-size: 20px !important;
     font-weight: 600 !important;
@@ -7908,7 +7908,7 @@ h2.makeEveryLearning {
     margin: 0 !important;
     padding: 0 !important;
 
-    font-family: "Segoe UI" !important;
+    font-family: "Segoe UI", "Inter" !important;
     font-style: normal !important;
     font-size: 36px !important;
     font-weight: 700 !important;
@@ -7918,7 +7918,7 @@ h2.makeEveryLearning {
     color: #31344b !important;
     text-align: center !important;
 
-    text-shadow:0 4px 4px rgba(0, 0, 0, 0.25) !important;
+    text-shadow: none !important;
     overflow: visible !important;
   }
 
@@ -7930,7 +7930,7 @@ h2.makeEveryLearning {
     margin: 0 auto !important;
     padding: 0 !important;
 
-    font-family: "Segoe UI" !important;
+    font-family: "Segoe UI", "Inter" !important;
     font-style: normal !important;
     font-size: 22px !important;
     font-weight: 400 !important;
@@ -7967,7 +7967,7 @@ h2.makeEveryLearning {
     margin: 0 !important;
     padding: 0 !important;
 
-    font-family: "Segoe UI" !important;
+    font-family: "Segoe UI", "Inter" !important;
     font-style: normal !important;
     font-size: 27px !important;
     font-weight: 700 !important;
@@ -8016,7 +8016,7 @@ h2.makeEveryLearning {
     align-items: center !important;
     justify-content: center !important;
 
-    font-family: "Segoe UI" !important;
+    font-family: "Segoe UI", "Inter" !important;
     font-style: normal !important;
     font-size: 18px !important;
     font-weight: 600 !important;
@@ -8250,7 +8250,7 @@ h2.makeEveryLearning {
     align-items: center !important;
     justify-content: center !important;
 
-    font-family: "Segoe UI" !important;
+    font-family: "Segoe UI", "Inter" !important;
     font-size: 20px !important;
     font-weight: 600 !important;
     line-height: 1 !important;
@@ -8328,7 +8328,7 @@ h2.makeEveryLearning {
 
     position: relative !important;
 
-    font-family: "Segoe UI" !important;
+    font-family: "Segoe UI", "Inter" !important;
     font-size: 48px !important;
     font-weight: 700 !important;
     line-height: 60px !important;
@@ -8337,7 +8337,7 @@ h2.makeEveryLearning {
     color: #31344b !important;
     text-align: center !important;
 
-    text-shadow:0 4px 4px rgba(0, 0, 0, 0.25) !important;
+    text-shadow: none !important;
 
     display: inline-block !important;
     flex-shrink: 0 !important;
@@ -8354,7 +8354,7 @@ h2.makeEveryLearning {
 
     position: relative !important;
 
-    font-family: "Segoe UI" !important;
+    font-family: "Segoe UI", "Inter" !important;
     font-size: 28px !important;
     font-weight: 400 !important;
     line-height: 40px !important;
@@ -8423,7 +8423,7 @@ h2.makeEveryLearning {
     margin: 0 !important;
     padding: 0 !important;
 
-    font-family: "Segoe UI" !important;
+    font-family: "Segoe UI", "Inter" !important;
     font-size: 36px !important;
     font-weight: 700 !important;
     line-height: 48px !important;
@@ -8473,7 +8473,7 @@ h2.makeEveryLearning {
     align-items: center !important;
     justify-content: center !important;
 
-    font-family: "Segoe UI" !important;
+    font-family: "Segoe UI", "Inter" !important;
     font-size: 24px !important;
     font-weight: 600 !important;
     line-height: 1 !important;
@@ -9131,7 +9131,7 @@ h2.makeEveryLearning {
 
     gap: 5px !important;
 
-    font-family: "Segoe UI" !important;
+    font-family: "Segoe UI", "Inter" !important;
     font-size: 12px !important;
     line-height: 18px !important;
 
@@ -9549,7 +9549,7 @@ h2.makeEveryLearning {
 
     gap: 4px !important;
 
-    font-family: "Segoe UI" !important;
+    font-family: "Segoe UI", "Inter" !important;
     font-size: 10.5px !important;
     line-height: 16px !important;
     letter-spacing: 0 !important;
@@ -12880,7 +12880,7 @@ h2.makeEveryLearning {
 .analyticsReporting *,
 .analyticsReporting *::before,
 .analyticsReporting *::after {
-  font-family: "Segoe UI", "Inter", sans-serif !important;
+  font-family: "Segoe UI", "Inter" !important;
 }
 
 /* Remove ONLY trailing/manual blank-line spacing created by <br> tags.
@@ -12929,7 +12929,7 @@ h2.makeEveryLearning {
     transform 0.28s ease,
     color 0.28s ease !important;
 
-  font-family: "Segoe UI", "Inter", sans-serif !important;
+  font-family: "Segoe UI", "Inter" !important;
   font-weight: 600 !important;
   text-align: center !important;
   white-space: nowrap !important;
@@ -13491,7 +13491,7 @@ h2.makeEveryLearning {
 
 /* Global page font stack + safe base size */
 .analyticsReporting {
-  font-family: "Segoe UI", "Inter", sans-serif !important;
+  font-family: "Segoe UI", "Inter" !important;
   font-size: 16px !important;
 }
 
@@ -13499,7 +13499,7 @@ h2.makeEveryLearning {
 .analyticsReporting *,
 .analyticsReporting *::before,
 .analyticsReporting *::after {
-  font-family: "Segoe UI", "Inter", sans-serif !important;
+  font-family: "Segoe UI", "Inter" !important;
 }
 
 /* ==========================================================================
@@ -13518,7 +13518,7 @@ h2.makeEveryLearning {
   .turnDataIntoContainer,
   .makeEveryLearning,
   .smarterAnalyticsBetterContainer {
-    font-family: "Segoe UI", "Inter", sans-serif !important;
+    font-family: "Segoe UI", "Inter" !important;
     font-size: 36px !important;
     line-height: 48px !important;
     font-weight: 700 !important;
@@ -13532,7 +13532,7 @@ h2.makeEveryLearning {
   .turnDataIntoContainer .actionableInsights,
   .smarterAnalyticsBetterContainer .smarterAnalyticsBetter,
   .smarterAnalyticsBetterContainer .span {
-    font-family: "Segoe UI", "Inter", sans-serif !important;
+    font-family: "Segoe UI", "Inter" !important;
     font-size: inherit !important;
     line-height: inherit !important;
     font-weight: inherit !important;
@@ -13548,7 +13548,7 @@ h2.makeEveryLearning {
   .aiAnalyticsSpot,
   .builtForEvery,
   .goBeyondBasic {
-    font-family: "Segoe UI", "Inter", sans-serif !important;
+    font-family: "Segoe UI", "Inter" !important;
     font-size: 24px !important;
     line-height: 40px !important;
     font-weight: 400 !important;
@@ -13563,7 +13563,7 @@ h2.makeEveryLearning {
   .frameChild28,
   .frameChild35,
   .frameChild50 {
-    font-family: "Segoe UI", "Inter", sans-serif !important;
+    font-family: "Segoe UI", "Inter" !important;
     font-size: 24px !important;
     line-height: 32px !important;
     font-weight: 600 !important;
@@ -13603,7 +13603,7 @@ h2.makeEveryLearning {
   .universities,
   .corporateTraining,
   .edtechProviders {
-    font-family: "Segoe UI", "Inter", sans-serif !important;
+    font-family: "Segoe UI", "Inter" !important;
     font-size: 24px !important;
     line-height: 32px !important;
     font-weight: 600 !important;
@@ -13619,7 +13619,7 @@ h2.makeEveryLearning {
 
   /* Progress/report supporting labels */
   .engagement {
-    font-family: "Segoe UI", "Inter", sans-serif !important;
+    font-family: "Segoe UI", "Inter" !important;
     font-size: 20px !important;
     line-height: 28px !important;
     font-weight: 400 !important;
@@ -13637,14 +13637,14 @@ h2.makeEveryLearning {
      ------------------------------------------------------------------------ */
   .k,
   .b {
-    font-family: "Segoe UI", "Inter", sans-serif !important;
+    font-family: "Segoe UI", "Inter" !important;
     font-size: 36px !important;
     line-height: 44px !important;
     font-weight: 700 !important;
   }
 
   .b2 {
-    font-family: "Segoe UI", "Inter", sans-serif !important;
+    font-family: "Segoe UI", "Inter" !important;
     font-size: 24px !important;
     line-height: 32px !important;
     font-weight: 700 !important;
@@ -13653,7 +13653,7 @@ h2.makeEveryLearning {
   /* CTA button typography remains consistent with the reference buttons. */
   .frameParent12 .frameChild15,
   .ellipseParent .frameChild51 {
-    font-family: "Segoe UI", "Inter", sans-serif !important;
+    font-family: "Segoe UI", "Inter" !important;
     font-size: 20px !important;
     line-height: 28px !important;
     font-weight: 600 !important;
@@ -13738,7 +13738,7 @@ h2.makeEveryLearning {
   .analyticsReporting *,
   .analyticsReporting *::before,
   .analyticsReporting *::after {
-    font-family: "Segoe UI", "Inter", sans-serif !important;
+    font-family: "Segoe UI", "Inter" !important;
   }
 
   .transformLearningData,
@@ -13967,7 +13967,7 @@ h2.makeEveryLearning {
    font-family: "Segoe UI" !important declarations. */
 .analyticsReporting.analyticsReporting.analyticsReporting,
 .analyticsReporting.analyticsReporting.analyticsReporting * {
-  font-family: "Segoe UI", "Inter", sans-serif !important;
+  font-family: "Segoe UI", "Inter" !important;
 }
 
 @media screen and (min-width: 1024px) {
@@ -16686,4 +16686,178 @@ h2.makeEveryLearning {
   .analyticsReporting > .frameParent2 .improveCurriculum {
     max-width: 146px !important;
   }
+}
+
+
+/* Scoped corrections only. Original desktop geometry and decorative circles are retained. */
+
+.analyticsReporting.analyticsReporting *,
+.analyticsReporting.analyticsReporting *::before,
+.analyticsReporting.analyticsReporting *::after {
+  font-family: "Segoe UI", "Inter" !important;
+  text-shadow: none !important;
+}
+
+.analyticsReporting.analyticsReporting .frameParent30 .frameWrapper3,
+.analyticsReporting.analyticsReporting .frameParent30 .frameWrapper4 {
+  box-shadow: none !important;
+  background: transparent !important;
+}
+
+.analyticsReporting.analyticsReporting .frameParent46 .frameChild36 {
+  box-shadow: none !important;
+  background: transparent !important;
+}
+
+.analyticsReporting.analyticsReporting .frameParent46 .frameChild37,
+.analyticsReporting.analyticsReporting .frameParent46 .frameChild39 {
+  box-shadow: -4px -4px 6px #fff, 4px 4px 6px rgba(190,196,200,.7) !important;
+}
+
+@media (min-width: 1024px) {
+.analyticsReporting.analyticsReporting .frameParent2 .frameParent6,
+.analyticsReporting.analyticsReporting .frameParent2 .frameParent7,
+.analyticsReporting.analyticsReporting .frameParent2 .frameParent8,
+.analyticsReporting.analyticsReporting .frameParent2 .frameParent10,
+.analyticsReporting.analyticsReporting .frameParent2 .frameParent11 {
+  top: 50% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%) !important;
+  width: 200px !important;
+  max-width: calc(100% - 40px) !important;
+  height: auto !important;
+  min-height: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  gap: 12px !important;
+  align-items: center !important;
+  justify-content: center !important;
+  text-align: center !important;
+}
+}
+
+.analyticsReporting.analyticsReporting .frameParent2 .monitorLearnerProgress,
+.analyticsReporting.analyticsReporting .frameParent2 .spotKnowledgeGaps,
+.analyticsReporting.analyticsReporting .frameParent2 .trackEngagement,
+.analyticsReporting.analyticsReporting .frameParent2 .improveCurriculum {
+  width: 100% !important;
+  max-width: 100% !important;
+  height: auto !important;
+  min-height: 0 !important;
+  flex: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  display: block !important;
+  letter-spacing: 0 !important;
+  white-space: normal !important;
+  word-break: normal !important;
+  overflow-wrap: normal !important;
+  text-wrap: balance !important;
+  text-align: center !important;
+}
+
+@media (min-width: 1024px) {
+.analyticsReporting.analyticsReporting .frameParent2 .monitorLearnerProgress,
+.analyticsReporting.analyticsReporting .frameParent2 .spotKnowledgeGaps,
+.analyticsReporting.analyticsReporting .frameParent2 .trackEngagement,
+.analyticsReporting.analyticsReporting .frameParent2 .improveCurriculum {
+  font-size: 22px !important;
+  line-height: 28px !important;
+}
+}
+
+@media (max-width: 767px) {
+.analyticsReporting.analyticsReporting .frameParent2 .monitorLearnerProgress,
+.analyticsReporting.analyticsReporting .frameParent2 .spotKnowledgeGaps,
+.analyticsReporting.analyticsReporting .frameParent2 .trackEngagement,
+.analyticsReporting.analyticsReporting .frameParent2 .improveCurriculum {
+  font-size: 16px !important;
+  line-height: 23px !important;
+}
+}
+
+.analyticsReporting.analyticsReporting .frameParent46 .checkmarkSquare04Parent {
+  gap: 12px !important;
+  min-width: 0 !important;
+  box-sizing: border-box !important;
+}
+
+.analyticsReporting.analyticsReporting .frameParent46 .checkmarkSquare04Icon {
+  width: 32px !important;
+  height: 32px !important;
+  flex: 0 0 32px !important;
+  filter: none !important;
+}
+
+.analyticsReporting.analyticsReporting .frameParent46 .improveCourseAnd,
+.analyticsReporting.analyticsReporting .frameParent46 .strengthenTeachingStrategies,
+.analyticsReporting.analyticsReporting .frameParent46 .increaseOverallLearner,
+.analyticsReporting.analyticsReporting .frameParent46 .boostCourseCompletion {
+  width: auto !important;
+  min-width: 0 !important;
+  max-width: 100% !important;
+  height: auto !important;
+  flex: 1 1 0 !important;
+  display: block !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  letter-spacing: 0 !important;
+  white-space: normal !important;
+  overflow-wrap: normal !important;
+  word-break: normal !important;
+  text-wrap: balance !important;
+  text-align: left !important;
+}
+
+@media (min-width: 1024px) {
+.analyticsReporting.analyticsReporting .frameParent46 .improveCourseAnd,
+.analyticsReporting.analyticsReporting .frameParent46 .strengthenTeachingStrategies,
+.analyticsReporting.analyticsReporting .frameParent46 .increaseOverallLearner,
+.analyticsReporting.analyticsReporting .frameParent46 .boostCourseCompletion {
+  font-size: 20px !important;
+  line-height: 28px !important;
+}
+}
+
+@media (max-width: 767px) {
+.analyticsReporting.analyticsReporting .frameParent46 .improveCourseAnd,
+.analyticsReporting.analyticsReporting .frameParent46 .strengthenTeachingStrategies,
+.analyticsReporting.analyticsReporting .frameParent46 .increaseOverallLearner,
+.analyticsReporting.analyticsReporting .frameParent46 .boostCourseCompletion {
+  font-size: 16px !important;
+  line-height: 24px !important;
+}
+}
+
+@media (max-width: 767px) {
+.analyticsReporting.analyticsReporting .frameParent30 .frameParent31,
+.analyticsReporting.analyticsReporting .frameParent30 .reportsThatDriveBetterDeciParent {
+  height: auto !important;
+  min-height: 0 !important;
+  flex-basis: auto !important;
+  flex-shrink: 0 !important;
+  transform: none !important;
+}
+}
+
+@media (max-width: 767px) {
+.analyticsReporting.analyticsReporting .frameParent30 .reportsThatDrive,
+.analyticsReporting.analyticsReporting .frameParent30 .createDetailedCustomizable {
+  height: auto !important;
+  min-height: 0 !important;
+  flex-shrink: 0 !important;
+  top: auto !important;
+  bottom: auto !important;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  transform: none !important;
+}
+}
+
+@media (max-width: 767px) {
+.analyticsReporting.analyticsReporting .frameParent30 .frameParent32 {
+  top: auto !important;
+  margin-top: 0 !important;
+  transform: none !important;
+}
 }

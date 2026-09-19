@@ -2478,9 +2478,27 @@
 
 
 
-/* Mobile CTA heading */
+/* Mobile CTA: fit the copy to the card's inner width. */
 
 @media(max-width:640px){
+
+    .ctaCopy {
+        width:100%;
+        max-width:100%;
+        min-width:0;
+        margin-inline:auto;
+    }
+
+    .ctaCopy h2,
+    .ctaCopy p {
+        width:100%;
+        max-width:100%;
+        min-width:0;
+        white-space:normal;
+        word-break:normal;
+        overflow-wrap:break-word;
+        text-align:center;
+    }
 
     .ctaCopy h2 {
 
@@ -2488,7 +2506,7 @@
 
         line-height:1.25;
 
-        max-width:320px;
+        text-wrap:balance;
 
         margin-inline:auto;
 
@@ -2501,10 +2519,71 @@
 
         line-height:1.45;
 
-        max-width:320px;
-
         margin-inline:auto;
 
     }
 
+    .ctaCopy .demoButton {
+        max-width:100%;
+        align-self:center;
+        white-space:normal;
+    }
+
+}
+
+/* Shared desktop typography: includes the hero and final CTA.
+   Matches the existing desktop layout breakpoint. */
+@media (min-width: 1025px) {
+  .page {
+    --section-title-size: 36px;
+    --section-body-size: 24px;
+    --hero-title-size: var(--section-title-size);
+    --hero-body-size: var(--section-body-size);
+    --cta-title-size: var(--section-title-size);
+    --cta-body-size: var(--section-body-size);
+    --badge-font-size: 24px;
+  }
+
+  .heroCopy h1,
+  .challengeText h2,
+  .centerHeading h2,
+  .centerHeadingCompact h2,
+  .adaptiveCopy h2,
+  .trustHeading h2,
+  .ctaCopy h2 {
+    font-size: var(--section-title-size);
+  }
+
+  .heroCopy > p:last-child,
+  .challengeText > p,
+  .centerHeading > p:last-child,
+  .centerHeadingCompact > p:last-child,
+  .adaptiveCopy > p:not(.sectionPill),
+  .trustHeading > p:not(.sectionPill),
+  .ctaCopy p {
+    font-size: var(--section-body-size);
+  }
+
+  .adaptiveCopy h2,
+  .trustHeading h2 {
+    max-width: 100%;
+    color: var(--ink);
+    line-height: 1.25;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    white-space: normal;
+  }
+
+  .adaptiveCopy > p:not(.sectionPill),
+  .trustHeading > p:not(.sectionPill) {
+    max-width: 100%;
+    color: var(--body);
+    line-height: 1.45;
+    letter-spacing: 0.03em;
+    white-space: normal;
+  }
+
+  .sectionPill {
+    font-size: var(--badge-font-size);
+  }
 }

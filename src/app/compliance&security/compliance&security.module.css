@@ -6476,3 +6476,18 @@ body {
     font-size: 24px !important;
   }
 }
+
+/* =========================================================
+   FINAL FIX — ONLY REDUCE THE LARGE GAP SHOWN IN SCREENSHOT
+   Hero -> Compliance Training
+   NOTHING ELSE IS CHANGED
+   ========================================================= */
+
+@media screen and (min-width: 1200px) {
+
+  .complianceSecurity .frameParent6 {
+    top: 400 px !important;
+    margin-top: 0 !important;
+  }
+
+}

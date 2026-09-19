@@ -623,7 +623,7 @@ function StoryMissionVision() {
 const platformOverviewItems = [
      { id: 1, label: "Universities", title: "Shaping future graduates", color: "#2D4CC8", Icon: GraduationCapOutlineIcon },
   { id: 2, label: "Colleges", title: "Building career pathways", color: "#861109", Icon: UniversityIcon },
-  { id: 3, label: "Corporates", title: "Empowering future-ready teams", color: "#67096E", Icon: BuildingIcon },
+  { id: 3, label: "Corporates", title: <>Empowering <span style={{ whiteSpace: "nowrap" }}>future-ready</span> teams</>, color: "#67096E", Icon: BuildingIcon },
   { id: 4, label: "NGOs", title: "Driving meaningful social impact", color: "#BF1869", Icon: HandshakeIcon },
   { id: 5, label: "Governments", title: "Future-ready workforce skilling", color: "#2A7308", Icon: LandmarkIcon },
   { id: 6, label: "Individuals", title: "Unlocking career opportunities", color: "#0B9BA0", Icon: UserIcon },
@@ -713,7 +713,7 @@ function PlatformOverview() {
   );
 }
 
-function PlatformHexCard({ label, title, color, Icon }: { label: string; title: string; color: string; Icon: (props: { className?: string }) => JSX.Element }) {
+function PlatformHexCard({ label, title, color, Icon }: { label: string; title: React.ReactNode; color: string; Icon: (props: { className?: string }) => JSX.Element }) {
   return (
     <div className={styles["platform-hex-card"]}>
       <div className={styles["platform-hex-icon-ring"]} aria-hidden="true">

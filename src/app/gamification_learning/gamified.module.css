@@ -252,8 +252,8 @@
     line-height: 60px;
     display: inline-block;
     flex-shrink: 0;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    font-size: 38px;
+    /* text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
+    font-size: 36px;
     width: 578px;
 }
 
@@ -6787,3 +6787,172 @@ body {
   }
 }
 
+
+/* Learn by Doing: one shared text column; badge artwork stays unchanged. */
+.interactiveGamifiedLearnin .frameParent40 .frameParent41 {
+  min-width: 0 !important;
+  height: auto !important;
+  align-items: flex-start !important;
+  gap: 24px !important;
+  text-align: left !important;
+}
+
+.interactiveGamifiedLearnin .frameParent40 .beyondLearningInto,
+.interactiveGamifiedLearnin .frameParent40 .perfectForUniversities {
+  position: relative !important;
+  inset: auto !important;
+  display: block !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  min-width: 0 !important;
+  height: auto !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  transform: none !important;
+  box-sizing: border-box !important;
+  text-align: left !important;
+  white-space: normal !important;
+  word-break: normal !important;
+  overflow-wrap: break-word !important;
+  font-family: "Segoe UI", "Inter" !important;
+}
+
+.interactiveGamifiedLearnin .frameParent40 .beyondLearningInto {
+  line-height: 1.25 !important;
+  text-wrap: balance;
+}
+
+.interactiveGamifiedLearnin .frameParent40 .perfectForUniversities {
+  line-height: 1.5 !important;
+  letter-spacing: 0.02em !important;
+}
+
+/* Use flow layout for the sections, instead of independent top offsets.
+   Compensate for the existing page zoom to keep 48 visible pixels. */
+.interactiveGamifiedLearnin {
+  --section-zoom: 0.89;
+  --section-gap: calc(48px / var(--section-zoom));
+  height: auto !important;
+  min-height: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+.interactiveGamifiedLearnin > :is(.frameParent8, .frameParent17,
+  .frameParent40, .image20Parent4, .frameParent62, .frameParent73,
+  .frameParent78) {
+  position: relative !important;
+  inset: auto !important;
+  transform: none !important;
+  margin: var(--section-gap) auto 0 !important;
+}
+
+@media screen and (min-width: 768px) {
+  .interactiveGamifiedLearnin {
+    /* Existing hero ends at 71 + 545 = 616px. */
+    padding-top: 616px !important;
+    padding-bottom: 0 !important;
+  }
+
+  .interactiveGamifiedLearnin > .frameParent8 { height: 397px !important; }
+  .interactiveGamifiedLearnin > .frameParent17 { height: 925px !important; }
+  .interactiveGamifiedLearnin > .frameParent40 { height: 696px !important; }
+  .interactiveGamifiedLearnin > .image20Parent4 { height: 954px !important; }
+  .interactiveGamifiedLearnin > .frameParent73 { height: 597px !important; }
+
+  /* Preserve the separate decorative element's position within Impact. */
+  .interactiveGamifiedLearnin > .interactiveGamifiedLearninChild {
+    top: calc(2832px + 4 * var(--section-gap)) !important;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 839px) {
+  .interactiveGamifiedLearnin { --section-zoom: 0.5333333333; }
+}
+@media screen and (min-width: 840px) and (max-width: 899px) {
+  .interactiveGamifiedLearnin { --section-zoom: 0.60; }
+}
+@media screen and (min-width: 900px) and (max-width: 959px) {
+  .interactiveGamifiedLearnin { --section-zoom: 0.64; }
+}
+@media screen and (min-width: 960px) and (max-width: 1023px) {
+  .interactiveGamifiedLearnin { --section-zoom: 0.68; }
+}
+@media screen and (min-width: 1024px) and (max-width: 1099px) {
+  .interactiveGamifiedLearnin { --section-zoom: 0.7111111111; }
+}
+
+@media screen and (max-width: 767px) {
+  .interactiveGamifiedLearnin {
+    --section-zoom: 1;
+    padding-top: 0 !important;
+    padding-bottom: 48px !important;
+  }
+
+  .interactiveGamifiedLearnin .frameParent40 .frameParent41 {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .interactiveGamifiedLearnin > .interactiveGamifiedLearninChild {
+    margin-top: 48px !important;
+    margin-bottom: 0 !important;
+  }
+}
+
+/* Learning Journey actions: shared geometry on the actual button and link. */
+.interactiveGamifiedLearnin .frameParent73 .journeyActions > .journeyAction {
+  position: relative !important;
+  inset: auto !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  align-self: center !important;
+  box-sizing: border-box !important;
+  margin: 0 !important;
+  border: 0 !important;
+  text-align: center !important;
+  text-decoration: none !important;
+  white-space: nowrap !important;
+  font-family: "Segoe UI", "Inter" !important;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 32px;
+  cursor: pointer;
+}
+
+.interactiveGamifiedLearnin .frameParent73 .journeyActions > .journeyDemoAction {
+  color: #2d4cc8;
+}
+
+@media screen and (max-width: 767px) {
+  .interactiveGamifiedLearnin .frameParent73 .journeyActions {
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    grid-template-rows: 52px !important;
+    align-items: stretch !important;
+    justify-items: stretch !important;
+    width: 100% !important;
+    max-width: 328px !important;
+    min-width: 0 !important;
+    height: 52px !important;
+    gap: 8px !important;
+    padding: 0 !important;
+    margin: 0 auto !important;
+  }
+
+  .interactiveGamifiedLearnin .frameParent73 .journeyActions > .journeyAction {
+    width: 100% !important;
+    min-width: 0 !important;
+    max-width: 100% !important;
+    height: 52px !important;
+    min-height: 52px !important;
+    max-height: 52px !important;
+    padding: 0 12px !important;
+    font-size: 16px !important;
+    line-height: 24px !important;
+    letter-spacing: 0 !important;
+    transform: none !important;
+    translate: none !important;
+    animation: none !important;
+  }
+}
