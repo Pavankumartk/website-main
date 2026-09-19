@@ -3042,3 +3042,30 @@
     margin-bottom: 0 !important;
 }
 
+.frameParent6 {
+  position: relative;
+  overflow: visible;
+}
+
+.frameChild3 {
+  position: relative;
+  z-index: 1;
+  display: block;
+}
+
+.welcomeSign1Wrapper {
+  position: absolute;
+  z-index: 2;
+  overflow: visible;
+}
+
+.welcomeSign1Icon {
+  position: relative;
+  z-index: 3;
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  opacity: 1;
+  visibility: visible;
+}
