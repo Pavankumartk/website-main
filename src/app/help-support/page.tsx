@@ -43,7 +43,7 @@ const HelpAndSupport: NextPage = () => {
           <div className={styles.frameParent6}>
             <Image className={styles.frameChild3} src="/images/bghelp.png" width={736} height={486} sizes="(max-width: 768px) 100vw, 736px" alt="" />
             <div className={styles.welcomeSign1Wrapper}>
-              <Image className={styles.welcomeSign1Icon} src="/images/tumbsup.webp" width={642} height={440} sizes="(max-width: 768px) 100vw, 642px" alt="Help and support representative" />
+              <Image className={styles.welcomeSign1Icon} src="/images/man.webp" width={642} height={440} sizes="(max-width: 768px) 100vw, 642px" alt="Help and support representative" />
             </div>
           </div>
         </div>
@@ -94,14 +94,14 @@ const HelpAndSupport: NextPage = () => {
         </div>
 
         <div className={styles.helpAndSupportInner}>
-          <Image
+          {/* <Image
             className={styles.helpAndSupportBg}
             src="/images/helpandsupportbg.webp"
             fill
             sizes="100vw"
             alt=""
             aria-hidden="true"
-          />
+          /> */}
 
           <div className={styles.frameParent8}>
             <div className={styles.frameWrapper}>
