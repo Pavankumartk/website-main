@@ -149,7 +149,7 @@ export default function ContentIntelligenceManagement() {
           >
             <g filter="url(#contentHeroOuterShadow)">
               <path d="M0 28H1488V524.978L741 647L0 547.604V28Z"
-  fill="#DFE6E9" fill="#DFE6E9" />
+  fill="#DFE6E9" />
             </g>
             <g filter="url(#contentHeroInnerShadow)">
               <path d="M0 0H1488V496.978L743 619L0 519.604V0Z"
