@@ -7263,3 +7263,37 @@ button.requestADemoWrapper::-moz-focus-inner {
     inset 4px 4px 4px rgba(196, 196, 196, 0.9) !important;
 }
 
+/* =========================================================
+   TEXT SELECTION FIX
+   Make all visible page text, including badge text, selectable.
+   ========================================================= */
+.assessments,
+.assessments * {
+  -webkit-user-select: text !important;
+  -moz-user-select: text !important;
+  -ms-user-select: text !important;
+  user-select: text !important;
+}
+
+/* Badge text must remain selectable even when badge containers
+   or decorative layers sit around it. */
+.assessments .assessmentSectionBadge,
+.assessments .assessmentSectionBadge *,
+.assessments .formatsSectionBadge,
+.assessments .formatsSectionBadge *,
+.assessments .aiSectionBadge,
+.assessments .aiSectionBadge *,
+.assessments [class*="Badge"],
+.assessments [class*="Badge"] * {
+  -webkit-user-select: text !important;
+  -moz-user-select: text !important;
+  -ms-user-select: text !important;
+  user-select: text !important;
+  cursor: text;
+}
+
+/* Decorative pseudo-elements should never block text selection. */
+.assessments *::before,
+.assessments *::after {
+  pointer-events: none;
+}

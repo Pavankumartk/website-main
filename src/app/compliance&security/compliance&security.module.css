@@ -7,7 +7,7 @@
   	text-align: left;
   	font-size: 36px;
   	color: #31344b;
-  	font-family: 'Segoe UI';
+  	font-family: 'Segoe UI', Inter;
   	padding-bottom: 96px;
   	box-sizing: border-box;
 }
@@ -117,7 +117,7 @@
   	box-sizing: border-box;
   	text-align: center;
   	color: #2d4cc8;
-  	font-family: 'Segoe UI';
+  	font-family: 'Segoe UI', Inter;
 }
 .signInHelp {
   	width: 97px;
@@ -2124,7 +2124,7 @@
   border-radius: 8px;
   background: #dfe6e9;
   box-shadow: -4px -4px 4px #fff, 4px 4px 4px #c6c6c9;
-  font-family: 'Segoe UI';
+  font-family: 'Segoe UI', Inter;
   font-size: 22px;
   line-height: 30px;
   font-weight: 600;
@@ -3183,7 +3183,7 @@
   display: flex;
   align-items: center;
   gap: 10px;
-  font-family: "Segoe UI";
+  font-family: 'Segoe UI', Inter;
   font-size: 16px;
   color: #2f3547;
   z-index: 3;
