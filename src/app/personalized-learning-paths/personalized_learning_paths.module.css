@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
+
 .plp-page {
   background: #dfe6e9;
   width: 100%;
@@ -2570,4 +2572,12 @@
     gap: 10px;
     padding-top: 20px;
   }
+}
+
+/* Keep the entire hero heading on the page's intended font family.
+   Inter is loaded above for devices without Segoe UI. */
+.plp-page .plp-hero-heading,
+.plp-page .plp-hero-heading *,
+.plp-page .plp-hero-heading-accent {
+  font-family: "Segoe UI", "Inter" !important;
 }
