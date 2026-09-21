@@ -127,14 +127,23 @@ export default function Footer() {
                             ? "/terms-of-use"
                             : link.href;
 
+                    const cardNames = ["ourstory", "ourmission", "ourvision"];
+                    const isCardLink =
+                      cardNames.includes(normalizedLabel.replace(/[^a-z0-9]/g, "")) ||
+                      cardNames.includes((customHref.split("#")[1] ?? "").toLowerCase().replace(/[^a-z0-9]/g, ""));
+
                     return (
                       <li key={link.label}>
-                        <Link
-                          href={customHref}
-                          className={styles["nlxp-footer-link"]}
-                        >
-                          {link.label}
-                        </Link>
+                        {isCardLink ? (
+                          <FooterAboutLink link={{ ...link, href: customHref }} />
+                        ) : (
+                          <Link
+                            href={customHref}
+                            className={styles["nlxp-footer-link"]}
+                          >
+                            {link.label}
+                          </Link>
+                        )}
                       </li>
                     );
                   })}

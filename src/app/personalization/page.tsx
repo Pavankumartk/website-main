@@ -72,20 +72,88 @@ export default function Personalization() {
         Skip to main content
       </a>
       <main id="main-content" className={styles.personalization} tabIndex={-1}>
-        <nav className={styles.frameParent3} aria-label="Breadcrumb">
-          <div className={styles.frameWrapper}>
-            <span className={styles.learning}>Features</span>
-          </div>
-          <div className={styles.homeParent}>
-            <Image className={styles.arrowDown01Icon} src="/icons/arrow-right-double.svg" width={16} height={16} alt="" aria-hidden="true" />
-            <div className={styles.frameWrapper}>
-              <span className={styles.learning}>Learning</span>
-            </div>
-          </div>
-          <div className={styles.arrowRightDoubleGroup}>
-            <Image className={styles.arrowDown01Icon} src="/icons/arrow-right-double.svg" width={16} height={16} alt="" aria-hidden="true" />
-            <span className={styles.learning}>Personalization</span>
-          </div>
+        <nav
+          className={styles.frameParent3}
+          aria-label="Breadcrumb"
+          style={{
+            display: "flex",
+            alignItems: "center",
+            gap: "8px",
+            position: "absolute",
+            top: "12px",
+            left: "max(20px, calc((100% - 1280px) / 2 + 20px))",
+            margin: 0,
+            padding: 0,
+            zIndex: 1000,
+            fontFamily: '"Segoe UI", "Inter"',
+            fontSize: "14px",
+            lineHeight: "20px",
+            letterSpacing: "0.02em",
+          }}
+        >
+          <span
+            className={styles.learning}
+            style={{
+              fontFamily: '"Segoe UI", "Inter"',
+              fontWeight: 400,
+              fontSize: "14px",
+              lineHeight: "20px",
+              letterSpacing: "0.02em",
+              color: "#2f3547",
+              whiteSpace: "nowrap",
+            }}
+          >
+            Features
+          </span>
+
+          <Image
+            className={styles.arrowDown01Icon}
+            src="/icons/arrow-right-double.svg"
+            width={16}
+            height={16}
+            alt=""
+            aria-hidden="true"
+            style={{ flexShrink: 0 }}
+          />
+
+          <span
+            className={styles.learning}
+            style={{
+              fontFamily: '"Segoe UI", "Inter"',
+              fontWeight: 400,
+              fontSize: "14px",
+              lineHeight: "20px",
+              letterSpacing: "0.02em",
+              color: "#2f3547",
+              whiteSpace: "nowrap",
+            }}
+          >
+            Learning
+          </span>
+
+          <Image
+            className={styles.arrowDown01Icon}
+            src="/icons/arrow-right-double.svg"
+            width={16}
+            height={16}
+            alt=""
+            aria-hidden="true"
+            style={{ flexShrink: 0 }}
+          />
+
+          <span
+            style={{
+              fontFamily: '"Segoe UI", "Inter"',
+              fontWeight: 700,
+              fontSize: "16px",
+              lineHeight: "20px",
+              letterSpacing: "0.02em",
+              color: "#243fa8",
+              whiteSpace: "nowrap",
+            }}
+          >
+            Personalization
+          </span>
         </nav>
         <section className={styles.personalizationHero} aria-labelledby="personalization-hero-title">
           <svg className={styles.personalizationHeroFrame} width="1488" height="863" viewBox="24 0 1440 863" preserveAspectRatio="none" fill="none" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false">
@@ -584,12 +652,10 @@ export default function Personalization() {
               </p>
             </div>
             <div className={styles.frameWrapper17}>
-              <BookDemoTrigger className={styles.frameWrapper18}>
-                <div className={styles.bookADemoWrapper}>
-                  <span className={styles.bookADemo}>Book a Demo</span>
-                </div>
-              </BookDemoTrigger>
-            </div>
+  <BookDemoTrigger className={styles.personalizationHeroButton}>
+    Book a Demo
+  </BookDemoTrigger>
+</div>
           </div>
         </div>
       </main>

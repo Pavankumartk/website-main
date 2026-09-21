@@ -8036,3 +8036,733 @@ body {
     padding: 8px 22px !important;
   }
 }
+
+/* ==========================================================================
+   FINAL BREADCRUMB MATCH — Goal & Setting page
+   Breadcrumb only. No other Personalization styles are changed.
+   ========================================================================== */
+
+.personalization .frameParent3 {
+  position: absolute !important;
+  top: 12px !important;
+  left: max(20px, calc((100% - 1280px) / 2 + 20px)) !important;
+  width: auto !important;
+  max-width: calc(100% - 40px) !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  transform: none !important;
+
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  justify-content: flex-start !important;
+  flex-wrap: nowrap !important;
+  gap: 8px !important;
+
+  font-family: "Segoe UI", "Inter" !important;
+  font-weight: 400 !important;
+  font-size: 14px !important;
+  line-height: 20px !important;
+  letter-spacing: 0.02em !important;
+  color: #2f3547 !important;
+
+  z-index: 1000 !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+.personalization .frameParent3 .learning {
+  position: relative !important;
+  margin: 0 !important;
+  padding: 0 !important;
+
+  font-family: "Segoe UI", "Inter" !important;
+  font-weight: 400 !important;
+  font-size: 14px !important;
+  line-height: 20px !important;
+  letter-spacing: 0.02em !important;
+  color: #2f3547 !important;
+  white-space: nowrap !important;
+}
+
+.personalization .frameParent3 .arrowRightDoubleGroup {
+  display: flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+  margin: 0 !important;
+  padding: 0 !important;
+
+  font-family: "Segoe UI", "Inter" !important;
+  font-weight: 700 !important;
+  font-size: 14px !important;
+  line-height: 20px !important;
+  letter-spacing: 0.02em !important;
+  color: #243fa8 !important;
+  white-space: nowrap !important;
+}
+
+.personalization .frameParent3 .arrowDown01Icon {
+  width: 16px !important;
+  height: 16px !important;
+  flex-shrink: 0 !important;
+  margin: 0 !important;
+}
+
+/* Goal & Setting page uses 32px breadcrumb top padding from tablet upward. */
+@media (min-width: 768px) {
+  .personalization .frameParent3 {
+    top: 32px !important;
+  }
+}
+
+/* Goal & Setting page uses 80px side placement on desktop. */
+@media (min-width: 1280px) {
+  .personalization .frameParent3 {
+    left: 80px !important;
+  }
+}
+
+/* Goal & Setting mobile breadcrumb typography. */
+@media (max-width: 480px) {
+  .personalization .frameParent3 {
+    top: 12px !important;
+    left: 20px !important;
+    max-width: calc(100% - 40px) !important;
+    font-size: 12px !important;
+    line-height: 18px !important;
+  }
+
+  .personalization .frameParent3 .learning,
+  .personalization .frameParent3 .arrowRightDoubleGroup {
+    font-size: 12px !important;
+    line-height: 18px !important;
+    letter-spacing: 0.02em !important;
+  }
+
+  /* Reference page keeps the current breadcrumb blue but regular on mobile. */
+  .personalization .frameParent3 .arrowRightDoubleGroup {
+    font-weight: 400 !important;
+    color: #243fa8 !important;
+  }
+}
+
+/* ==========================================================
+   FINAL FIX
+   1. Last CTA Book a Demo = exact desktop button design
+   2. Prevent mobile breadcrumb overlap
+   Keep this block LAST in the CSS file
+   ========================================================== */
+
+
+/* ==========================================================
+   1. LAST CTA — BOOK A DEMO
+   Exact size / shape / shadow / typography
+   ========================================================== */
+
+.personalization > .rectangleParent7 .frameWrapper18 {
+  position: relative !important;
+
+  width: 210px !important;
+  min-width: 210px !important;
+  max-width: 210px !important;
+
+  height: 64px !important;
+  min-height: 64px !important;
+  max-height: 64px !important;
+
+  margin: 0 !important;
+  padding: 16px 32px !important;
+
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  flex: 0 0 210px !important;
+
+  box-sizing: border-box !important;
+
+  background: #dfe6e9 !important;
+  background-color: #dfe6e9 !important;
+
+  border: 0 !important;
+  outline: 0 !important;
+
+  border-radius: 32px !important;
+
+  box-shadow:
+    -4px -4px 4px #ffffff,
+     4px 4px 4px #c6c6c9 !important;
+
+  overflow: hidden !important;
+
+  color: #2d4cc8 !important;
+  cursor: pointer !important;
+
+  -webkit-appearance: none !important;
+  appearance: none !important;
+
+  transform: none !important;
+
+  transition: box-shadow 0.2s ease !important;
+}
+
+
+/* Button inner wrapper */
+.personalization > .rectangleParent7
+.frameWrapper18 .bookADemoWrapper {
+
+  width: 140px !important;
+  min-width: 140px !important;
+  max-width: 140px !important;
+
+  height: auto !important;
+
+  margin: 0 !important;
+  padding: 0 !important;
+
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+
+  flex: 0 0 140px !important;
+}
+
+
+/* Button text */
+.personalization > .rectangleParent7
+.frameWrapper18 .bookADemo {
+
+  position: relative !important;
+
+  width: 152px !important;
+  min-width: 152px !important;
+
+  height: auto !important;
+
+  margin: 0 !important;
+  padding: 0 !important;
+
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+
+  flex-shrink: 0 !important;
+
+  font-family: "Segoe UI", "Inter", sans-serif !important;
+  font-size: 24px !important;
+  font-weight: 600 !important;
+  line-height: 32px !important;
+
+  color: #2d4cc8 !important;
+
+  text-align: center !important;
+  white-space: nowrap !important;
+}
+
+
+/* Exact pressed / hover behaviour */
+.personalization > .rectangleParent7 .frameWrapper18:hover,
+.personalization > .rectangleParent7 .frameWrapper18:active {
+
+  width: 210px !important;
+  height: 64px !important;
+
+  border: 0 !important;
+  outline: 0 !important;
+
+  border-radius: 32px !important;
+
+  background-color: #dfe6e9 !important;
+
+  box-shadow:
+    inset -4px -4px 4px #ffffff,
+    inset 4px 4px 4px #c6c6c9 !important;
+
+  transform: none !important;
+}
+
+
+.personalization > .rectangleParent7 .frameWrapper18:focus,
+.personalization > .rectangleParent7 .frameWrapper18:focus-visible {
+  border: 0 !important;
+  outline: 0 !important;
+}
+
+
+.personalization > .rectangleParent7
+.frameWrapper18::-moz-focus-inner {
+  border: 0 !important;
+  padding: 0 !important;
+}
+
+
+
+/* ==========================================================
+   2. MOBILE BREADCRUMB — PREVENT OVERLAP
+   ========================================================== */
+
+@media (max-width: 767px) {
+
+  /*
+   * Give the breadcrumb its own space instead of allowing it
+   * to sit over the hero content.
+   */
+  .personalization > .personalizationHero {
+    padding-top: 54px !important;
+    box-sizing: border-box !important;
+  }
+
+  .personalization .frameParent3 {
+    position: absolute !important;
+
+    top: 14px !important;
+    left: 16px !important;
+    right: 16px !important;
+
+    width: auto !important;
+    max-width: none !important;
+
+    height: auto !important;
+    min-height: 20px !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+
+    gap: 6px !important;
+
+    flex-wrap: nowrap !important;
+
+    transform: none !important;
+
+    z-index: 20 !important;
+
+    overflow: hidden !important;
+
+    font-family: "Segoe UI", "Inter", sans-serif !important;
+    font-size: 12px !important;
+    line-height: 18px !important;
+
+    white-space: nowrap !important;
+  }
+
+
+  .personalization .frameParent3 .learning,
+  .personalization .frameParent3 .arrowRightDoubleGroup {
+    width: auto !important;
+    max-width: 100% !important;
+
+    margin: 0 !important;
+
+    font-size: 12px !important;
+    line-height: 18px !important;
+    letter-spacing: 0.02em !important;
+
+    white-space: nowrap !important;
+  }
+
+
+  .personalization .frameParent3 .arrowDown01Icon {
+    width: 14px !important;
+    height: 14px !important;
+
+    min-width: 14px !important;
+
+    margin: 0 !important;
+
+    flex: 0 0 14px !important;
+  }
+}
+
+
+/* Extra protection for narrow phones */
+@media (max-width: 480px) {
+
+  .personalization > .personalizationHero {
+    padding-top: 58px !important;
+  }
+
+  .personalization .frameParent3 {
+    top: 12px !important;
+    left: 16px !important;
+    right: 16px !important;
+
+    gap: 5px !important;
+
+    font-size: 11px !important;
+    line-height: 17px !important;
+  }
+
+  .personalization .frameParent3 .learning,
+  .personalization .frameParent3 .arrowRightDoubleGroup {
+    font-size: 11px !important;
+    line-height: 17px !important;
+  }
+}
+/* =========================================================
+   FINAL MOBILE BREADCRUMB FIX
+   ========================================================= */
+
+@media (max-width: 767px) {
+
+  /* Reserve space above the hero for breadcrumb */
+  .personalization {
+    padding-top: 46px !important;
+  }
+
+  .personalization .frameParent3 {
+    position: absolute !important;
+
+    top: 12px !important;
+    left: 16px !important;
+    right: 16px !important;
+
+    width: calc(100% - 32px) !important;
+    max-width: calc(100% - 32px) !important;
+
+    height: 22px !important;
+    min-height: 22px !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+
+    gap: 6px !important;
+    flex-wrap: nowrap !important;
+
+    box-sizing: border-box !important;
+
+    z-index: 1000 !important;
+
+    overflow: hidden !important;
+
+    font-size: 12px !important;
+    line-height: 18px !important;
+
+    white-space: nowrap !important;
+  }
+
+  .personalization .frameParent3 .learning,
+  .personalization .frameParent3 > span {
+    position: relative !important;
+
+    width: auto !important;
+    height: auto !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    font-size: 12px !important;
+    line-height: 18px !important;
+
+    white-space: nowrap !important;
+
+    flex: 0 0 auto !important;
+  }
+
+  .personalization .frameParent3 .arrowDown01Icon {
+    position: relative !important;
+
+    width: 14px !important;
+    height: 14px !important;
+    min-width: 14px !important;
+
+    margin: 0 !important;
+
+    flex: 0 0 14px !important;
+  }
+
+  /*
+   * Hero begins below breadcrumb.
+   * Prevent old absolute-position rules pulling it upward.
+   */
+  .personalization > .personalizationHero {
+    position: relative !important;
+
+    top: auto !important;
+    left: auto !important;
+    right: auto !important;
+
+    margin-top: 0 !important;
+
+    transform: none !important;
+  }
+}
+
+
+/* Very small phones */
+@media (max-width: 380px) {
+
+  .personalization {
+    padding-top: 44px !important;
+  }
+
+  .personalization .frameParent3 {
+    left: 12px !important;
+    right: 12px !important;
+
+    width: calc(100% - 24px) !important;
+    max-width: calc(100% - 24px) !important;
+
+    gap: 4px !important;
+  }
+
+  .personalization .frameParent3 .learning,
+  .personalization .frameParent3 > span {
+    font-size: 11px !important;
+    line-height: 17px !important;
+  }
+
+  .personalization .frameParent3 .arrowDown01Icon {
+    width: 12px !important;
+    height: 12px !important;
+    min-width: 12px !important;
+
+    flex-basis: 12px !important;
+  }
+}
+/* Mobile breadcrumb — 16px */
+@media (max-width: 767px) {
+
+  .personalization .frameParent3 {
+    font-size: 16px !important;
+    line-height: 24px !important;
+
+    /* slightly more height for 16px text */
+    height: 28px !important;
+    min-height: 28px !important;
+  }
+
+  .personalization .frameParent3 .learning,
+  .personalization .frameParent3 > span {
+    font-size: 16px !important;
+    line-height: 24px !important;
+  }
+
+  .personalization .frameParent3 .arrowDown01Icon {
+    width: 16px !important;
+    height: 16px !important;
+    min-width: 16px !important;
+    flex: 0 0 16px !important;
+  }
+}
+
+/* Keep 16px even on small phones */
+@media (max-width: 380px) {
+
+  .personalization .frameParent3 {
+    font-size: 16px !important;
+    line-height: 24px !important;
+  }
+
+  .personalization .frameParent3 .learning,
+  .personalization .frameParent3 > span {
+    font-size: 16px !important;
+    line-height: 24px !important;
+  }
+}
+/* =========================================================
+   MOBILE — BOTTOM CTA BOOK A DEMO OVERLAP FIX
+   Keeps EXACT same button design as hero
+   Only fixes positioning / spacing
+   ========================================================= */
+
+@media (max-width: 767px) {
+
+  /* Bottom CTA content */
+  .personalization > .rectangleParent7 .frameParent52 {
+    position: relative !important;
+    inset: auto !important;
+
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+
+    gap: 24px !important;
+
+    margin: 0 !important;
+    padding: 32px 20px 24px !important;
+
+    box-sizing: border-box !important;
+
+    transform: none !important;
+
+    z-index: 5 !important;
+  }
+
+
+  /* Heading + description */
+  .personalization > .rectangleParent7
+  .makeLearningPersonalParent {
+
+    position: relative !important;
+    inset: auto !important;
+
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+
+    gap: 16px !important;
+
+    text-align: center !important;
+
+    transform: none !important;
+  }
+
+
+  /* Button wrapper gets its OWN row */
+  .personalization > .rectangleParent7
+  .frameWrapper17 {
+
+    position: relative !important;
+    inset: auto !important;
+
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    min-height: 64px !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    flex: 0 0 auto !important;
+
+    transform: none !important;
+
+    z-index: 10 !important;
+  }
+
+
+  /*
+   * IMPORTANT:
+   * Do NOT change button width/height/radius here.
+   * It remains exactly the hero button.
+   */
+  .personalization > .rectangleParent7
+  .frameWrapper17 .personalizationHeroButton {
+
+    position: relative !important;
+    inset: auto !important;
+
+    margin: 0 auto !important;
+
+    flex-shrink: 0 !important;
+
+    transform: none !important;
+
+    z-index: 11 !important;
+  }
+
+
+  /* Bottom CTA container must grow with its content */
+  .personalization > .rectangleParent7 {
+    height: auto !important;
+    min-height: 0 !important;
+
+    overflow: hidden !important;
+
+    box-sizing: border-box !important;
+  }
+
+
+  /*
+   * Image must not sit over the CTA text/button.
+   * Put it below the content on mobile.
+   */
+  .personalization > .rectangleParent7
+  .handHoldingWoodenCubeWithIcon {
+
+    position: relative !important;
+    inset: auto !important;
+
+    display: block !important;
+
+    width: min(100%, 340px) !important;
+    max-width: 100% !important;
+    height: auto !important;
+
+    margin: 8px auto 0 !important;
+
+    object-fit: contain !important;
+    object-position: center bottom !important;
+
+    transform: none !important;
+
+    z-index: 1 !important;
+  }
+}
+
+
+/* Extra-small mobile */
+@media (max-width: 380px) {
+
+  .personalization > .rectangleParent7
+  .frameParent52 {
+
+    padding: 28px 16px 20px !important;
+    gap: 22px !important;
+  }
+
+  .personalization > .rectangleParent7
+  .frameWrapper17 {
+
+    min-height: 64px !important;
+  }
+}
+/* FINAL MOBILE BREADCRUMB SIZE — 14px */
+@media (max-width: 767px) {
+
+  .personalization .frameParent3 {
+    font-size: 14px !important;
+    line-height: 20px !important;
+    height: 26px !important;
+    min-height: 26px !important;
+  }
+
+  .personalization .frameParent3 .learning,
+  .personalization .frameParent3 > span {
+    font-size: 14px !important;
+    line-height: 20px !important;
+  }
+
+  .personalization .frameParent3 .arrowDown01Icon {
+    width: 14px !important;
+    height: 14px !important;
+    min-width: 14px !important;
+    flex: 0 0 14px !important;
+  }
+}
+
+/* Keep same 14px size on smaller phones */
+@media (max-width: 380px) {
+
+  .personalization .frameParent3,
+  .personalization .frameParent3 .learning,
+  .personalization .frameParent3 > span {
+    font-size: 14px !important;
+    line-height: 20px !important;
+  }
+}

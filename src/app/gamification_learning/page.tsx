@@ -546,7 +546,10 @@ const InteractiveGamifiedLearning: NextPage = () => {
                     <Image className={styles.scaleIconImage} src="/icons/pointer.svg" width={32} height={32} alt="" aria-hidden="true" />
                   </div>
                 </div>
-                <div className={styles.createInteractiveCourses}>Create interactive courses</div>
+                <div className={styles.createInteractiveCourses}>
+                  <span className={styles.scaleLabelLine}>Create interactive</span>{" "}
+                  <span className={styles.scaleLabelLine}>courses</span>
+                </div>
               </div>
               <div className={styles.frameParent57}>
                 <div className={styles.scaleIconCircle}>
@@ -555,9 +558,8 @@ const InteractiveGamifiedLearning: NextPage = () => {
                   </div>
                 </div>
                 <div className={styles.buildEngagingActivities}>
-                  Build engaging activities
-                  <br />
-                  <br />
+                  <span className={styles.scaleLabelLine}>Build engaging</span>{" "}
+                  <span className={styles.scaleLabelLine}>activities</span>
                 </div>
               </div>
               <div className={styles.frameParent57}>
@@ -567,9 +569,8 @@ const InteractiveGamifiedLearning: NextPage = () => {
                   </div>
                 </div>
                 <div className={styles.deliverSimulationsAnd}>
-                  Deliver simulations and scenarios
-                  <br />
-                  <br />
+                  <span className={styles.scaleLabelLine}>Deliver simulations</span>{" "}
+                  <span className={styles.scaleLabelLine}>and scenarios</span>
                 </div>
               </div>
             </div>
@@ -581,9 +582,8 @@ const InteractiveGamifiedLearning: NextPage = () => {
                   </div>
                 </div>
                 <div className={styles.reinforceLearningWith}>
-                  Reinforce learning with gamification
-                  <br />
-                  <br />
+                  <span className={styles.scaleLabelLine}>Reinforce learning</span>{" "}
+                  <span className={styles.scaleLabelLine}>with gamification</span>
                 </div>
               </div>
               <div className={styles.frameParent57}>
@@ -592,7 +592,10 @@ const InteractiveGamifiedLearning: NextPage = () => {
                     <Image className={styles.scaleIconImage} src="/icons/barchart-color.svg" width={32} height={32} alt="" aria-hidden="true" />
                   </div>
                 </div>
-                <div className={styles.trackLearnerPerformance}>Track learner performance</div>
+                <div className={styles.trackLearnerPerformance}>
+                  <span className={styles.scaleLabelLine}>Track learner</span>{" "}
+                  <span className={styles.scaleLabelLine}>performance</span>
+                </div>
               </div>
               <div className={styles.frameParent57}>
                 <div className={styles.scaleIconCircle}>
@@ -600,7 +603,10 @@ const InteractiveGamifiedLearning: NextPage = () => {
                     <Image className={styles.scaleIconImage} src="/icons/laptop.svg" width={32} height={32} alt="" aria-hidden="true" />
                   </div>
                 </div>
-                <div className={styles.supportDigitalAnd}>Support digital and blended learning</div>
+                <div className={styles.supportDigitalAnd}>
+                  <span className={styles.scaleLabelLine}>Support digital and</span>{" "}
+                  <span className={styles.scaleLabelLine}>blended learning</span>
+                </div>
               </div>
             </div>
           </div>

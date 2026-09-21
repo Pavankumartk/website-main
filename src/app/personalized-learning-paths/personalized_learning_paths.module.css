@@ -1943,7 +1943,7 @@
   }
 
   .plp-hero-heading {
-    font-size: 48px;
+    font-size: 36px;
     line-height: 60px;
     max-width: 1160px;
     /* text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25); */
@@ -2246,12 +2246,12 @@
     width: 100% !important;
     max-width: 920px !important;
     margin: 0 auto !important;
-    column-gap: 24px !important;
-    row-gap: 20px !important;
+    column-gap: clamp(56px, 6vw, 88px) !important;
+    row-gap: 24px !important;
   }
 
   .plp-page .plp-personalization-card {
-    min-height: 154px !important;
+    min-height: 180px !important;
     padding: 18px 24px !important;
     box-sizing: border-box !important;
 
@@ -2259,35 +2259,32 @@
     flex-direction: column !important;
     align-items: center !important;
     justify-content: center !important;
-
+    gap: 8px !important;
     text-align: center !important;
   }
 
-  /* Reserve equal title/description space so every card lines up uniformly
-     whether Segoe UI or Inter is active. */
+  /* Single-line card headings; descriptions retain their two-line measure. */
   .plp-page .plp-personalization-title {
     width: 100% !important;
-    max-width: none !important;
-    min-height: 60px !important;
-    margin: 0 !important;
-
-    display: flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-
+    max-width: 100% !important;
+    min-height: 30px !important;
+    margin: 0 auto !important;
+    display: block !important;
+    line-height: 30px !important;
+    white-space: nowrap !important;
+    text-wrap: nowrap;
     text-align: center !important;
   }
 
   .plp-page .plp-personalization-desc {
-    width: 100% !important;
-    max-width: 300px !important;
+    width: 18ch !important;
+    max-width: 100% !important;
     min-height: 60px !important;
-    margin: 4px auto 0 !important;
-
-    display: flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-
+    margin: 0 auto !important;
+    display: block !important;
+    line-height: 30px !important;
+    white-space: normal !important;
+    text-wrap: balance;
     text-align: center !important;
   }
 
@@ -2349,3 +2346,228 @@
   }
 }
 
+/* HOME-ALIGNED CONTROLS — final overrides, after every legacy breakpoint.
+   Action buttons follow Home's Book a Demo: 8px corners, weight 600,
+   blue text on the original grey surface. Only the shadow changes on hover.
+   Width follows the label; padding, typography and height are shared.
+   Accordion triggers retain their full-card layout and tap target. */
+.plp-page {
+  --plp-control-blue: #2d4cc8;
+  --plp-control-surface: #dfe6e9;
+  --plp-control-size: 24px;
+  --plp-control-line: 32px;
+  --plp-control-padding: 16px 32px;
+  --plp-control-raised: -4px -4px 4px #ffffff, 4px 4px 4px #c6c6c9;
+  --plp-control-inset: inset -4px -4px 4px #ffffff,
+    inset 4px 4px 4px rgba(196, 196, 196, 0.8);
+}
+
+.plp-page .plp-benefits-tab,
+.plp-page .plp-cta-button {
+  appearance: none;
+  box-sizing: border-box;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  width: auto;
+  max-width: 100%;
+  min-width: 0;
+  min-height: 52px;
+  height: auto;
+  padding: var(--plp-control-padding);
+  border: 0;
+  border-radius: 8px;
+  background: var(--plp-control-surface);
+  color: var(--plp-control-blue);
+  font-family: "Segoe UI", "Inter";
+  font-size: var(--plp-control-size);
+  font-weight: 600;
+  line-height: var(--plp-control-line);
+  letter-spacing: 0.02em;
+  text-align: center;
+  text-decoration: none;
+  text-transform: none;
+  white-space: normal;
+  overflow-wrap: anywhere;
+  box-shadow: var(--plp-control-raised);
+  transform: none;
+  cursor: pointer;
+  touch-action: manipulation;
+  transition: box-shadow 0.2s ease;
+}
+
+/* Includes visited links and focus after clicking: never white or purple. */
+.plp-page :is(.plp-benefits-tab, .plp-cta-button):is(:hover, :active, :focus, :visited),
+.plp-page .plp-benefits-tab-active,
+.plp-page .plp-benefits-tab[aria-selected="true"] {
+  background: var(--plp-control-surface);
+  color: var(--plp-control-blue);
+  transform: none;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .plp-page :is(.plp-benefits-tab, .plp-cta-button):hover:not(:disabled):not([aria-disabled="true"]) {
+    box-shadow: var(--plp-control-inset);
+  }
+}
+
+.plp-page :is(.plp-benefits-tab, .plp-cta-button):active:not(:disabled):not([aria-disabled="true"]),
+.plp-page .plp-benefits-tab-active,
+.plp-page .plp-benefits-tab[aria-selected="true"] {
+  box-shadow: var(--plp-control-inset);
+}
+
+.plp-page :is(.plp-benefits-tab, .plp-cta-button, .plp-how-card-trigger):focus-visible {
+  outline: 3px solid var(--plp-control-blue);
+  outline-offset: 3px;
+  border-radius: 8px;
+}
+
+.plp-page :is(.plp-benefits-tab, .plp-cta-button):is(:disabled, [aria-disabled="true"]) {
+  opacity: 0.55;
+  cursor: not-allowed;
+  box-shadow: var(--plp-control-raised);
+}
+
+/* Labels/icons inherit blue even when rendered inside nested spans or SVGs.
+   Do not override SVG fill/stroke: that would break mixed/outline icons. */
+.plp-page :is(.plp-benefits-tab, .plp-cta-button) :is(span, svg) {
+  color: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+.plp-page .plp-how-card-trigger,
+.plp-page .plp-how-card-trigger :is(.plp-how-title, .plp-how-chevron, .plp-how-icon-circle) {
+  color: var(--plp-control-blue) !important;
+  font-size: var(--plp-control-size);
+  font-weight: 600;
+  line-height: var(--plp-control-line);
+}
+
+/* Section badges match Home's shared badge style. The scoped !important
+   size supersedes the supplied legacy .plp-hero-pill !important overrides. */
+.plp-page .plp-hero-pill {
+  box-sizing: border-box;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  max-width: 100%;
+  min-width: 0;
+  height: auto;
+  min-height: 56px;
+  padding: 12px 36px;
+  border: 0;
+  border-radius: 999px;
+  background: var(--plp-control-surface);
+  box-shadow: var(--plp-control-inset);
+  color: var(--plp-control-blue);
+  font-family: "Segoe UI", "Inter";
+  font-size: 24px !important;
+  font-weight: 600;
+  line-height: 1.3;
+  letter-spacing: 0.03em;
+  text-align: center;
+  text-transform: none;
+  white-space: normal;
+  overflow-wrap: anywhere;
+}
+
+/* Decorative checklist badges remain circular, not text pills. */
+.plp-page :is(.plp-challenge-badge-outer, .plp-challenge-badge-inner, .plp-benefits-badge) {
+  box-sizing: border-box;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background: var(--plp-control-surface);
+  color: var(--plp-control-blue);
+}
+
+@media (width < 1024px) {
+  .plp-page {
+    --plp-control-size: 20px;
+    --plp-control-line: 28px;
+  }
+}
+
+@media (max-width: 767px) {
+  .plp-page {
+    --plp-control-size: 18px;
+    --plp-control-line: 24px;
+    --plp-control-padding: 14px 24px;
+  }
+  .plp-page .plp-benefits-tabs { align-items: stretch; }
+  .plp-page .plp-benefits-tab { width: 100%; }
+  .plp-page .plp-hero-pill {
+    min-height: 48px;
+    padding: 10px 26px;
+    font-size: 20px !important;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .plp-page :is(.plp-benefits-tab, .plp-cta-button) { transition: none; }
+}
+
+/* Screenshot spacing corrections: only the personalization and Stages intro.
+   Remove default heading/paragraph margins as well as excess flex gaps. */
+.plp-page .plp-stages {
+  gap: 12px;
+  padding-top: 24px;
+}
+
+.plp-page .plp-stages > .plp-hero-pill,
+.plp-page .plp-stages .plp-section-heading,
+.plp-page .plp-stages .plp-section-subtext {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+.plp-page .plp-stages-timeline {
+  margin-top: 8px;
+}
+
+@media (max-width: 1023px) {
+  .plp-page .plp-personalization-grid {
+    column-gap: 40px;
+    row-gap: 20px;
+  }
+  .plp-page .plp-personalization-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    min-height: 160px;
+    box-sizing: border-box;
+    padding: 18px 20px;
+  }
+  .plp-page .plp-personalization-title {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    min-height: 26px;
+    margin: 0 auto;
+    line-height: 26px;
+    white-space: nowrap;
+    text-wrap: nowrap;
+  }
+  .plp-page .plp-personalization-desc {
+    display: block;
+    width: 18ch;
+    max-width: 100%;
+    min-height: 48px;
+    margin: 0 auto;
+    line-height: 24px;
+    white-space: normal;
+    text-wrap: balance;
+  }
+}
+
+@media (max-width: 767px) {
+  .plp-page .plp-stages {
+    gap: 10px;
+    padding-top: 20px;
+  }
+}

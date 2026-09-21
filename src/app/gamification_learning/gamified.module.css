@@ -6956,3 +6956,1713 @@ body {
     animation: none !important;
   }
 }
+
+/* Home-page matched CTA buttons + breadcrumb */
+.interactiveGamifiedLearnin .frameIcon,
+.interactiveGamifiedLearnin .frameWrapper3,
+.interactiveGamifiedLearnin .frameWrapper19,
+.interactiveGamifiedLearnin .learnMorePill {
+    width: auto;
+    min-width: 198px;
+    height: auto;
+    min-height: 60px;
+    padding: 16px 32px;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 8px;
+    background: #dfe6e9;
+    box-shadow: -4px -4px 4px #ffffff, 4px 4px 4px #c6c6c9;
+    color: #2d4cc8;
+    font-family: "Segoe UI", "Inter";
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    white-space: nowrap;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: box-shadow 0.2s ease;
+}
+
+.interactiveGamifiedLearnin .startLearning,
+.interactiveGamifiedLearnin .bookADemo {
+    width: auto;
+    min-width: 0;
+    margin: 0 !important;
+    padding: 0 !important;
+    color: #2d4cc8;
+    font-family: "Segoe UI", "Inter";
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    white-space: nowrap;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (hover: hover) and (pointer: fine) {
+    .interactiveGamifiedLearnin .frameIcon:hover,
+    .interactiveGamifiedLearnin .frameWrapper3:hover,
+    .interactiveGamifiedLearnin .frameWrapper3:has(.startLearning:hover),
+    .interactiveGamifiedLearnin .frameWrapper19:hover,
+    .interactiveGamifiedLearnin .frameWrapper19:has(.bookADemo:hover),
+    .interactiveGamifiedLearnin .learnMorePill:hover {
+        box-shadow: inset -4px -4px 4px #ffffff,
+                    inset 4px 4px 4px rgba(196, 196, 196, 0.8) !important;
+        transform: none;
+    }
+}
+
+.interactiveGamifiedLearnin .frameIcon:active,
+.interactiveGamifiedLearnin .frameWrapper3:active,
+.interactiveGamifiedLearnin .frameWrapper19:active,
+.interactiveGamifiedLearnin .learnMorePill:active {
+    box-shadow: inset -4px -4px 4px #ffffff,
+                inset 4px 4px 4px rgba(196, 196, 196, 0.8) !important;
+    transform: none;
+}
+
+.interactiveGamifiedLearnin .frameDiv {
+    position: absolute;
+    top: 32px;
+    left: 80px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-family: "Segoe UI", "Inter";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    color: #2f3547;
+}
+
+.interactiveGamifiedLearnin .frameDiv .featuresWrapper,
+.interactiveGamifiedLearnin .frameDiv .homeParent,
+.interactiveGamifiedLearnin .frameDiv .arrowRightDoubleGroup {
+    display: flex;
+    align-items: center;
+}
+
+.interactiveGamifiedLearnin .frameDiv .homeParent,
+.interactiveGamifiedLearnin .frameDiv .arrowRightDoubleGroup {
+    gap: 8px;
+}
+
+.interactiveGamifiedLearnin .frameDiv .augmentation {
+    margin: 0;
+    padding: 0;
+    font: inherit;
+    line-height: 24px;
+    white-space: nowrap;
+}
+
+.interactiveGamifiedLearnin .frameDiv .arrowRightDoubleGroup {
+    color: #2d4cc8;
+    font-weight: 600;
+}
+
+.interactiveGamifiedLearnin .frameDiv .arrowDown01Icon {
+    width: 16px;
+    height: 16px;
+    flex: 0 0 16px;
+}
+
+@media screen and (max-width: 767px) {
+    .interactiveGamifiedLearnin .frameDiv {
+        position: relative !important;
+        top: auto !important;
+        left: auto !important;
+        width: calc(100% - 32px) !important;
+        max-width: calc(100% - 32px) !important;
+        margin: 16px auto 12px !important;
+        padding: 0 !important;
+        gap: 6px !important;
+        flex-wrap: nowrap !important;
+        overflow: hidden !important;
+        box-sizing: border-box !important;
+        font-size: 14px !important;
+        line-height: 20px !important;
+    }
+
+    .interactiveGamifiedLearnin .frameDiv .augmentation {
+        font-size: 14px !important;
+        line-height: 20px !important;
+        letter-spacing: 0 !important;
+    }
+
+    .interactiveGamifiedLearnin .frameDiv .arrowRightDoubleGroup {
+        min-width: 0;
+        flex: 1 1 auto;
+        overflow: hidden;
+    }
+
+    .interactiveGamifiedLearnin .frameDiv .arrowRightDoubleGroup .augmentation {
+        min-width: 0;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    .interactiveGamifiedLearnin .frameDiv .arrowDown01Icon {
+        width: 14px !important;
+        height: 14px !important;
+        flex-basis: 14px !important;
+    }
+
+    .interactiveGamifiedLearnin .frameIcon,
+    .interactiveGamifiedLearnin .frameWrapper3,
+    .interactiveGamifiedLearnin .frameWrapper19,
+    .interactiveGamifiedLearnin .learnMorePill {
+        width: auto !important;
+        min-width: 142px !important;
+        max-width: none !important;
+        height: auto !important;
+        min-height: 46px !important;
+        padding: 12px 20px !important;
+        border-radius: 8px !important;
+        font-size: 16px !important;
+        line-height: 22px !important;
+        font-weight: 600 !important;
+        flex: 0 0 auto !important;
+    }
+
+    .interactiveGamifiedLearnin .startLearning,
+    .interactiveGamifiedLearnin .bookADemo {
+        font-size: 16px !important;
+        line-height: 22px !important;
+        font-weight: 600 !important;
+    }
+}
+
+
+/* Reference-matched layout. Keep this block after the legacy rules.
+   Main sections size from their content; no zoom or fixed page heights. */
+
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin {
+  --page-gutter: clamp(16px, 3.75vw, 48px) !important;
+  --section-space: 64px !important;
+  width:100% !important;
+  max-width:none !important;
+  min-width:0 !important;
+  height:auto !important;
+  min-height:0 !important;
+  position:relative !important;
+  inset:auto !important;
+  margin:0 auto !important;
+  padding:0 0 48px !important;
+  display:flex !important;
+  flex-direction:column !important;
+  align-items:center !important;
+  gap:0 !important;
+  zoom:1 !important;
+  transform:none !important;
+  overflow:visible !important;
+  font-size:20px !important;
+  line-height:1.5 !important;
+  box-sizing:border-box !important;
+}
+
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin *,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin *::before,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin *::after {
+  box-sizing:border-box !important;
+}
+
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin > .frameParent2,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin > .frameParent8,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin > .frameParent17,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin > .frameParent40,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin > .image20Parent4,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin > .frameParent62,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin > .frameParent73 {
+  position:relative !important;
+  inset:auto !important;
+  width:min(1280px, calc(100% - 2 * var(--page-gutter))) !important;
+  max-width:1280px !important;
+  min-width:0 !important;
+  height:auto !important;
+  min-height:0 !important;
+  margin:var(--section-space) auto 0 !important;
+  transform:none !important;
+  zoom:1 !important;
+  flex-shrink:0 !important;
+  overflow:visible !important;
+}
+
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin > .frameParent2 {
+  margin-top:0 !important;
+  padding:24px !important;
+  border-radius:24px !important;
+  box-shadow:-4px -4px 4px #fff, 4px 4px 4px #c4c4c4 !important;
+}
+
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin > .frameParent73 {
+  margin-top:48px !important;
+}
+
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameItem,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .interactiveGamifiedLearninChild,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameChild38,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .image20,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .image202,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameChild17,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .image209,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .image20Parent5,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .peopleTakingPartBusinessEv,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .image21,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .groupYoungBusinesspeopleUsi {
+  display:none !important;
+}
+
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameParent3,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameParent4,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameWrapper,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameParent5,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameParent6,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameWrapper2,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameParent7,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameWrapper3,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .startLearningWrapper,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameWrapper4,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameParent9,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .activeParticipationMakesLeaWrapper,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameParent10,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameParent11,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameParent12,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameParent13,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameParent14,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameParent16,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .interactiveParent,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameWrapper5,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameWrapper6,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameWrapper7,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameParent18,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameParent19,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameParent20,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameParent21,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameParent35,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .curiousClicksParent,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameParent41,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameParent43,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameWrapper8,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameWrapper9,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameWrapper11,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameWrapper13,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameParent44,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .image20Parent,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .simulationsParent,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameWrapper10,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameWrapper12,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameWrapper14,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .interactiveAssessmentsParent,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameParent52,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameWrapper15,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameParent53,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .howInteractiveLearningDriveParent,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameWrapper16,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameParent54,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameParent55,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameParent56,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameParent57,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameWrapper18,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameParent64,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameParent65,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameParent74,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameParent77 {
+  position:relative !important;
+  inset:auto !important;
+  width:100% !important;
+  max-width:100% !important;
+  min-width:0 !important;
+  height:auto !important;
+  min-height:0 !important;
+  max-height:none !important;
+  margin:0 !important;
+  padding:0 !important;
+  transform:none !important;
+  translate:none !important;
+  flex:initial !important;
+  overflow:visible !important;
+  gap:0 !important;
+}
+
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameParent5,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameParent6,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameParent4,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameParent41,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameParent74 {
+  display:flex !important;
+  flex-direction:column !important;
+  align-items:flex-start !important;
+  gap:24px !important;
+}
+
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameParent3 {
+  display:grid !important;
+  grid-template-columns:minmax(0,1fr) minmax(0,1fr) !important;
+  align-items:center !important;
+  gap:20px !important;
+  padding:36px 0 0 40px !important;
+  overflow:hidden !important;
+}
+
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameParent4 {
+  padding-bottom:36px !important;
+  z-index:1 !important;
+}
+
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .mixRacedGroupStudentsWatchIcon {
+  position:relative !important;
+  inset:auto !important;
+  width:100% !important;
+  max-width:100% !important;
+  height:auto !important;
+  min-width:0 !important;
+  align-self:end !important;
+  object-fit:contain !important;
+  object-position:center bottom !important;
+  transform:none !important;
+}
+
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .transformLearningInto,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .transformPassiveLearning,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .activeParticipationMakes,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .interactiveActivitiesThatContainer,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .neurolxpOffersA,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .beyondLearningInto,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .perfectForUniversities,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .howInteractiveLearning,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .interactiveLearningDrives,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .interactive,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .adaptive,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .engaging,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .practical,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .activitiesThatMake,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .experiencesThatRespond,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .contentThatEngages,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .realWorldActivitiesThat,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .curiousClicks,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .discoverNewInsightsContainer,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .linkConceptsStepByContainer,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .simulations,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .scenarioBasedLearning,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .visualLearning,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .interactiveAssessments,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .practiceRealWorldSkills,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .activeParticipation,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .criticalThinking,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .exploration,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .betterRetention,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .focusedPractice,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .enjoyableLearning,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .createInteractiveCourses,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .buildEngagingActivities,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .deliverSimulationsAnd,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .reinforceLearningWith,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .trackLearnerPerformance,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .supportDigitalAnd {
+  position:relative !important;
+  inset:auto !important;
+  width:auto !important;
+  max-width:100% !important;
+  min-width:0 !important;
+  height:auto !important;
+  min-height:0 !important;
+  margin:0 !important;
+  padding:0 !important;
+  transform:none !important;
+  white-space:normal !important;
+  overflow-wrap:break-word !important;
+  word-break:normal !important;
+  flex-shrink:1 !important;
+  text-align:inherit !important;
+}
+
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .transformLearningInto,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .beyondLearningInto,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .howInteractiveLearning,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .interactiveActivitiesThatContainer {
+  display:block !important;
+  font-size:36px !important;
+  line-height:1.35 !important;
+  letter-spacing:0.01em !important;
+  font-weight:700 !important;
+}
+
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .interactiveActivitiesThat,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .understanding {
+  line-height:inherit !important;
+}
+
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .transformPassiveLearning,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .activeParticipationMakes,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .neurolxpOffersA,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .perfectForUniversities,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .interactiveLearningDrives {
+  font-size:24px !important;
+  line-height:1.5 !important;
+  letter-spacing:0.02em !important;
+}
+
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .interactive,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .adaptive,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .engaging,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .practical {
+  font-size:26px !important;
+  line-height:1.35 !important;
+  font-weight:700 !important;
+}
+
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .activitiesThatMake,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .experiencesThatRespond,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .contentThatEngages,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .realWorldActivitiesThat {
+  font-size:20px !important;
+  line-height:1.45 !important;
+}
+
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameParent41 br,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .curiousClicksParent br,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameParent55 br,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameParent65 br,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .blankLine {
+  display:none !important;
+}
+
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameDiv {
+  position:relative !important;
+  inset:auto !important;
+  display:flex !important;
+  flex-wrap:wrap !important;
+  justify-content:flex-start !important;
+  align-items:center !important;
+  gap:8px !important;
+  width:min(100%,1280px) !important;
+  max-width:none !important;
+  height:auto !important;
+  margin:0 auto 24px !important;
+  padding:32px 20px 0 !important;
+  overflow:visible !important;
+  font-size:14px !important;
+  line-height:20px !important;
+  font-weight:400 !important;
+  letter-spacing:0.02em !important;
+  color:#2f3547 !important;
+}
+
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameDiv .featuresWrapper,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameDiv .homeParent,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameDiv .arrowRightDoubleGroup {
+  display:flex !important;
+  align-items:center !important;
+  gap:8px !important;
+  min-width:0 !important;
+  width:auto !important;
+  flex:0 1 auto !important;
+  overflow:visible !important;
+}
+
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameDiv .augmentation {
+  font-size:inherit !important;
+  line-height:inherit !important;
+  font-weight:400 !important;
+  letter-spacing:inherit !important;
+  white-space:normal !important;
+  overflow:visible !important;
+  text-overflow:clip !important;
+  color:inherit !important;
+}
+
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameDiv .arrowRightDoubleGroup {
+  color:#243fa8 !important;
+  align-items:baseline !important;
+}
+
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameDiv .arrowRightDoubleGroup .augmentation {
+  font-size:16px !important;
+  font-weight:700 !important;
+  line-height:24px !important;
+}
+
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameDiv .arrowDown01Icon {
+  width:16px !important;
+  height:16px !important;
+  flex:0 0 16px !important;
+  align-self:center !important;
+}
+
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameInner,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameChild2,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .exploreEngagePill,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .practicePill,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .builtForScalePill,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .masteryPill {
+  display:inline-flex !important;
+  align-items:center !important;
+  justify-content:center !important;
+  width:fit-content !important;
+  max-width:100% !important;
+  min-width:0 !important;
+  min-height:56px !important;
+  height:auto !important;
+  padding:12px 36px !important;
+  margin:0 !important;
+  border:0 !important;
+  border-radius:999px !important;
+  background:#dfe6e9 !important;
+  box-shadow:inset -4px -4px 4px #fff, inset 4px 4px 4px rgba(196,196,196,.8) !important;
+  color:#2d4cc8 !important;
+  font-size:24px !important;
+  font-weight:600 !important;
+  line-height:1.3 !important;
+  letter-spacing:0.03em !important;
+  text-align:center !important;
+  white-space:normal !important;
+  overflow-wrap:anywhere !important;
+  flex:0 0 auto !important;
+  transform:none !important;
+}
+
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameParent7,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameParent77.journeyActions {
+  display:flex !important;
+  flex-direction:row !important;
+  align-items:stretch !important;
+  justify-content:flex-start !important;
+  flex-wrap:wrap !important;
+  gap:24px !important;
+  width:100% !important;
+  height:auto !important;
+  max-height:none !important;
+}
+
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameIcon,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameWrapper3,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameWrapper19.journeyAction,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .learnMorePill.journeyAction {
+  display:inline-flex !important;
+  align-items:center !important;
+  justify-content:center !important;
+  width:auto !important;
+  min-width:0 !important;
+  max-width:100% !important;
+  height:auto !important;
+  min-height:60px !important;
+  max-height:none !important;
+  padding:16px 28px !important;
+  flex:0 1 auto !important;
+  font-size:24px !important;
+  font-weight:600 !important;
+  line-height:1.2 !important;
+  white-space:normal !important;
+  text-align:center !important;
+  transform:none !important;
+}
+
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .startLearningWrapper,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .startLearning {
+  width:auto !important;
+  min-width:0 !important;
+  max-width:100% !important;
+  height:auto !important;
+  padding:0 !important;
+  margin:0 !important;
+  font-size:inherit !important;
+  line-height:inherit !important;
+  white-space:normal !important;
+}
+
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameParent8,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameParent17,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameParent62,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameParent52 {
+  display:flex !important;
+  flex-direction:column !important;
+  align-items:center !important;
+  gap:32px !important;
+}
+
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameParent9,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameParent18,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameParent19,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameParent53,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .howInteractiveLearningDriveParent {
+  display:flex !important;
+  flex-direction:column !important;
+  align-items:center !important;
+  gap:24px !important;
+  text-align:center !important;
+}
+
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameParent9,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameParent18,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameParent53 {
+  max-width:1080px !important;
+  margin-inline:auto !important;
+}
+
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameParent10 {
+  display:grid !important;
+  grid-template-columns:repeat(2,minmax(0,1fr)) !important;
+  gap:48px !important;
+  padding-inline:32px !important;
+  text-align:left !important;
+}
+
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameParent11,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameParent14 {
+  display:flex !important;
+  flex-direction:column !important;
+  align-items:stretch !important;
+  gap:28px !important;
+}
+
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameParent12,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameParent13,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameParent16 {
+  display:flex !important;
+  align-items:flex-start !important;
+  gap:24px !important;
+}
+
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .interactiveParent,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .interactiveAssessmentsParent,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .simulationsParent {
+  display:flex !important;
+  flex-direction:column !important;
+  align-items:flex-start !important;
+  gap:8px !important;
+}
+
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameChild3 {
+  width:64px !important;
+  height:64px !important;
+  flex:0 0 64px !important;
+}
+
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameParent20 {
+  display:flex !important;
+  flex-direction:column !important;
+  gap:28px !important;
+  align-items:center !important;
+}
+
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameParent21 {
+  display:grid !important;
+  grid-template-columns:repeat(3,minmax(0,1fr)) !important;
+  gap:28px !important;
+}
+
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameParent35 {
+  display:grid !important;
+  grid-template-columns:repeat(2,minmax(0,1fr)) !important;
+  gap:28px !important;
+  width:calc((100% - 56px) / 3 * 2 + 28px) !important;
+  margin-inline:auto !important;
+}
+
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameParent22,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameParent24 {
+  position:relative !important;
+  inset:auto !important;
+  width:100% !important;
+  min-width:0 !important;
+  max-width:100% !important;
+  height:auto !important;
+  min-height:156px !important;
+  display:flex !important;
+  align-items:center !important;
+  padding:26px 20px 24px 76px !important;
+  overflow:visible !important;
+}
+
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .curiousClicksParent {
+  display:flex !important;
+  flex-direction:column !important;
+  align-items:flex-start !important;
+  gap:8px !important;
+  text-align:left !important;
+}
+
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .curiousClicks {
+  font-size:22px !important;
+  line-height:1.3 !important;
+}
+
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .discoverNewInsightsContainer,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .linkConceptsStepByContainer {
+  font-size:18px !important;
+  line-height:1.45 !important;
+}
+
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameParent40,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameParent73 {
+  display:grid !important;
+  grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr) !important;
+  align-items:center !important;
+  gap:48px !important;
+}
+
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameParent43 {
+  display:flex !important;
+  flex-direction:column !important;
+  gap:24px !important;
+  text-align:left !important;
+}
+
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameWrapper8,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameWrapper11 {
+  width:calc(100% - 32px) !important;
+  align-self:flex-end !important;
+}
+
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameWrapper9,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameWrapper13 {
+  width:calc(100% - 32px) !important;
+  align-self:flex-start !important;
+}
+
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameParent44 {
+  display:grid !important;
+  grid-template-columns:96px minmax(0,1fr) !important;
+  align-items:center !important;
+  min-height:96px !important;
+}
+
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .image20Parent {
+  grid-column:2 !important;
+  grid-row:1 !important;
+  width:calc(100% + 28px) !important;
+  margin-left:-28px !important;
+  min-height:80px !important;
+  padding:14px 16px 14px 48px !important;
+  border-radius:14px !important;
+  display:flex !important;
+  align-items:center !important;
+}
+
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameParent45 {
+  position:relative !important;
+  inset:auto !important;
+  grid-column:1 !important;
+  grid-row:1 !important;
+  width:96px !important;
+  height:96px !important;
+  z-index:1 !important;
+  display:grid !important;
+  place-items:center !important;
+}
+
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .image20Wrapper {
+  position:absolute !important;
+  inset:0 !important;
+  width:100% !important;
+  height:100% !important;
+  border-radius:24px !important;
+}
+
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .div,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .div2,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .div4 {
+  position:relative !important;
+  inset:auto !important;
+  width:auto !important;
+  height:auto !important;
+  margin:0 !important;
+  font-size:48px !important;
+  line-height:1 !important;
+  font-weight:600 !important;
+  text-align:center !important;
+  z-index:1 !important;
+  transform:none !important;
+}
+
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .simulations,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .scenarioBasedLearning,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .visualLearning,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .interactiveAssessments {
+  font-size:22px !important;
+  line-height:1.3 !important;
+  text-align:left !important;
+}
+
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .practiceRealWorldSkills {
+  font-size:18px !important;
+  line-height:1.4 !important;
+}
+
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .image20Parent4 {
+  padding:32px !important;
+  border-radius:32px !important;
+}
+
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameParent54 {
+  display:grid !important;
+  grid-template-columns:minmax(0,1.3fr) minmax(0,1fr) !important;
+  align-items:stretch !important;
+  overflow:hidden !important;
+}
+
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .collageCustomerExperienceCoIcon {
+  position:relative !important;
+  inset:auto !important;
+  width:100% !important;
+  max-width:100% !important;
+  min-width:0 !important;
+  height:auto !important;
+  align-self:center !important;
+  object-fit:contain !important;
+  transform:none !important;
+}
+
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameParent55 {
+  display:flex !important;
+  flex-direction:column !important;
+  align-items:stretch !important;
+  justify-content:center !important;
+  gap:20px !important;
+  padding:28px !important;
+  border-radius:64px 16px 16px 64px !important;
+  box-shadow:inset -4px -4px 4px #fff, inset 4px 4px 4px #c4c4c4 !important;
+}
+
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameParent56,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameParent57 {
+  display:flex !important;
+  align-items:center !important;
+  justify-content:flex-start !important;
+  gap:20px !important;
+  text-align:left !important;
+}
+
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameParent55 .frameParent56 > div:last-child,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameParent55 .frameParent57 > div:last-child,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameParent65 .frameParent57 > div:last-child {
+  width:auto !important;
+  min-width:0 !important;
+  max-width:100% !important;
+  height:auto !important;
+  font-size:22px !important;
+  line-height:1.4 !important;
+  flex:1 1 0 !important;
+}
+
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameWrapper18 {
+  padding:32px !important;
+  overflow:visible !important;
+}
+
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameParent64 {
+  display:grid !important;
+  grid-template-columns:repeat(2,minmax(0,1fr)) !important;
+  align-items:start !important;
+  gap:40px !important;
+}
+
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameParent65 {
+  display:flex !important;
+  flex-direction:column !important;
+  align-items:stretch !important;
+  gap:24px !important;
+}
+
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .resultIconCircle,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .scaleIconCircle {
+  width:64px !important;
+  height:64px !important;
+  min-width:64px !important;
+  flex:0 0 64px !important;
+}
+
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .masteryImageFrame {
+  position:relative !important;
+  inset:auto !important;
+  width:100% !important;
+  max-width:708px !important;
+  min-width:0 !important;
+  height:auto !important;
+  aspect-ratio:708 / 597 !important;
+  margin:0 !important;
+  transform:none !important;
+  overflow:hidden !important;
+  justify-self:end !important;
+}
+
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .masteryImageFrame::before {
+  inset:7% !important;
+  width:auto !important;
+  height:auto !important;
+}
+
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .masteryImage {
+  position:absolute !important;
+  inset:4% !important;
+  width:92% !important;
+  height:92% !important;
+  max-width:92% !important;
+  object-fit:contain !important;
+  transform:none !important;
+}
+
+@media (min-width:1280px) {
+
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameDiv {
+  padding-inline:80px !important;
+}
+
+}
+
+@media (min-width:1440px) {
+
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameDiv {
+  width:min(100%,1440px) !important;
+}
+
+}
+
+@media (max-width:1099px) {
+
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameParent3 {
+  padding:28px 0 0 28px !important;
+  gap:16px !important;
+}
+
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameParent4 {
+  padding-bottom:28px !important;
+}
+
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .transformLearningInto,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .beyondLearningInto,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .howInteractiveLearning,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .interactiveActivitiesThatContainer {
+  font-size:30px !important;
+}
+
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .transformPassiveLearning,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .activeParticipationMakes,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .neurolxpOffersA,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .perfectForUniversities,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .interactiveLearningDrives {
+  font-size:20px !important;
+}
+
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameParent40,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameParent73 {
+  gap:32px !important;
+}
+
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameParent10 {
+  padding:0 !important;
+  gap:32px !important;
+}
+
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameParent7,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameParent77.journeyActions {
+  gap:16px !important;
+}
+
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameIcon,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameWrapper3,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameWrapper19.journeyAction,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .learnMorePill.journeyAction {
+  font-size:20px !important;
+  padding:14px 20px !important;
+  min-height:52px !important;
+}
+
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameParent21 {
+  grid-template-columns:repeat(2,minmax(0,1fr)) !important;
+  gap:24px !important;
+}
+
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameParent35 {
+  width:100% !important;
+  gap:24px !important;
+}
+
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameWrapper8,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameWrapper9,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameWrapper11,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameWrapper13 {
+  width:100% !important;
+}
+
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameParent44 {
+  grid-template-columns:80px minmax(0,1fr) !important;
+  min-height:80px !important;
+}
+
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameParent45 {
+  width:80px !important;
+  height:80px !important;
+}
+
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .div,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .div2,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .div4 {
+  font-size:42px !important;
+}
+
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .simulations,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .scenarioBasedLearning,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .visualLearning,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .interactiveAssessments {
+  font-size:18px !important;
+}
+
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .practiceRealWorldSkills {
+  font-size:16px !important;
+}
+
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameParent55 {
+  padding:24px 20px !important;
+  gap:16px !important;
+}
+
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameParent55 .frameParent56 > div:last-child,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameParent55 .frameParent57 > div:last-child,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameParent65 .frameParent57 > div:last-child {
+  font-size:18px !important;
+}
+
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameParent56,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameParent57 {
+  gap:16px !important;
+}
+
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameParent64 {
+  gap:24px !important;
+}
+
+}
+
+@media (max-width:767px) {
+
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin {
+  --section-space:48px !important;
+}
+
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameDiv {
+  padding:12px 20px 0 !important;
+  margin-bottom:24px !important;
+  gap:6px !important;
+  font-size:14px !important;
+  line-height:20px !important;
+}
+
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin > .frameParent2 {
+  padding:16px !important;
+}
+
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameParent3 {
+  grid-template-columns:minmax(0,1fr) !important;
+  padding:24px 20px 0 !important;
+  gap:24px !important;
+}
+
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameParent4 {
+  padding:0 !important;
+}
+
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .mixRacedGroupStudentsWatchIcon {
+  width:min(100%,440px) !important;
+  justify-self:center !important;
+}
+
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameInner,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameChild2,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .exploreEngagePill,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .practicePill,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .builtForScalePill,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .masteryPill {
+  min-height:48px !important;
+  padding:10px 26px !important;
+  font-size:20px !important;
+}
+
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .transformLearningInto,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .beyondLearningInto,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .howInteractiveLearning,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .interactiveActivitiesThatContainer {
+  font-size:28px !important;
+  line-height:1.3 !important;
+}
+
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .transformPassiveLearning,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .activeParticipationMakes,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .neurolxpOffersA,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .perfectForUniversities,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .interactiveLearningDrives {
+  font-size:18px !important;
+  line-height:1.5 !important;
+}
+
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameParent8,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameParent17,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameParent62,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameParent52 {
+  gap:28px !important;
+}
+
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameParent9,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameParent18,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameParent19,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameParent53,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .howInteractiveLearningDriveParent {
+  gap:20px !important;
+}
+
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameParent10,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameParent40,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameParent73,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameParent54,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameParent64 {
+  grid-template-columns:minmax(0,1fr) !important;
+  gap:28px !important;
+}
+
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameParent11,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameParent14 {
+  gap:24px !important;
+}
+
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameParent12,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameParent13,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameParent16 {
+  gap:16px !important;
+}
+
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .interactive,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .adaptive,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .engaging,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .practical {
+  font-size:22px !important;
+}
+
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .activitiesThatMake,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .experiencesThatRespond,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .contentThatEngages,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .realWorldActivitiesThat {
+  font-size:16px !important;
+}
+
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameParent7,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameParent77.journeyActions {
+  display:flex !important;
+  flex-wrap:wrap !important;
+  justify-content:flex-start !important;
+  width:100% !important;
+  max-width:100% !important;
+  height:auto !important;
+  gap:16px !important;
+}
+
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameIcon,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameWrapper3,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameWrapper19.journeyAction,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .learnMorePill.journeyAction {
+  font-size:18px !important;
+  line-height:24px !important;
+  padding:12px 20px !important;
+  min-height:48px !important;
+  height:auto !important;
+  min-width:0 !important;
+  max-width:100% !important;
+  flex:1 1 140px !important;
+}
+
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameParent22,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameParent24 {
+  padding:60px 20px 24px !important;
+  min-height:168px !important;
+}
+
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .curiousClicks {
+  font-size:20px !important;
+}
+
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .discoverNewInsightsContainer,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .linkConceptsStepByContainer {
+  font-size:16px !important;
+}
+
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameParent43 {
+  gap:20px !important;
+}
+
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameParent44 {
+  grid-template-columns:72px minmax(0,1fr) !important;
+  min-height:80px !important;
+}
+
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameParent45 {
+  width:72px !important;
+  height:72px !important;
+}
+
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .image20Wrapper {
+  border-radius:20px !important;
+}
+
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .div,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .div2,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .div4 {
+  font-size:36px !important;
+}
+
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .image20Parent {
+  padding:14px 16px 14px 40px !important;
+}
+
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .image20Parent4,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameWrapper18 {
+  padding:24px 20px !important;
+}
+
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameParent54 {
+  gap:0 !important;
+}
+
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameParent55 {
+  border-radius:24px !important;
+  padding:24px 16px !important;
+}
+
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .collageCustomerExperienceCoIcon {
+  border-radius:16px !important;
+  max-height:none !important;
+}
+
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameParent65 {
+  gap:24px !important;
+}
+
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .masteryImageFrame {
+  width:min(100%,520px) !important;
+  justify-self:center !important;
+}
+
+}
+
+@media (max-width:480px) {
+
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameDiv {
+  font-size:12px !important;
+  line-height:18px !important;
+}
+
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameDiv .arrowRightDoubleGroup .augmentation {
+  font-weight:400 !important;
+}
+
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameParent21,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameParent35 {
+  grid-template-columns:minmax(0,1fr) !important;
+  width:100% !important;
+}
+
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameParent22,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameParent24 {
+  padding:24px 20px 24px 76px !important;
+  min-height:136px !important;
+}
+
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameParent3 {
+  padding:24px 16px 0 !important;
+}
+
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .transformLearningInto {
+  font-size:26px !important;
+}
+
+}
+
+/* Mobile alignment repair: journey, scale rows and practice number boxes. */
+@media (max-width:767px) {
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameParent73 .frameParent74,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameParent73 .frameParent41,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameParent73 .frameParent5 {
+  width:100% !important;
+  min-width:0 !important;
+  max-width:100% !important;
+  align-items:center !important;
+  justify-content:center !important;
+  text-align:center !important;
+  margin:0 !important;
+  padding:0 !important;
+  gap:24px !important;
+}
+
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameParent73 .masteryPill {
+  align-self:center !important;
+  margin-inline:auto !important;
+  max-width:100% !important;
+}
+
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameParent73 .beyondLearningInto,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameParent73 .perfectForUniversities {
+  width:100% !important;
+  max-width:100% !important;
+  text-align:center !important;
+  margin:0 !important;
+  text-wrap:balance !important;
+}
+
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameParent73 .journeyActions {
+  display:grid !important;
+  grid-template-columns:repeat(2,minmax(0,1fr)) !important;
+  grid-template-rows:auto !important;
+  width:100% !important;
+  max-width:380px !important;
+  height:auto !important;
+  min-width:0 !important;
+  margin:0 auto !important;
+  padding:0 !important;
+  gap:16px !important;
+  align-items:stretch !important;
+  justify-items:stretch !important;
+}
+
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameParent73 .journeyActions > .journeyAction {
+  display:flex !important;
+  justify-content:center !important;
+  align-items:center !important;
+  width:100% !important;
+  min-width:0 !important;
+  max-width:100% !important;
+  height:auto !important;
+  min-height:48px !important;
+  max-height:none !important;
+  margin:0 !important;
+  padding:12px 10px !important;
+  font-size:16px !important;
+  line-height:24px !important;
+  font-weight:600 !important;
+  letter-spacing:0 !important;
+  white-space:normal !important;
+  text-align:center !important;
+  transform:none !important;
+  flex:initial !important;
+}
+
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameParent62 .frameWrapper18 {
+  width:100% !important;
+  min-width:0 !important;
+  max-width:100% !important;
+  padding:24px 20px !important;
+  overflow:visible !important;
+}
+
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameParent62 .frameParent64 {
+  display:grid !important;
+  grid-template-columns:minmax(0,1fr) !important;
+  gap:20px !important;
+  width:100% !important;
+  min-width:0 !important;
+  max-width:100% !important;
+  margin:0 !important;
+  padding:0 !important;
+}
+
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameParent62 .frameParent65 {
+  display:grid !important;
+  grid-template-columns:minmax(0,1fr) !important;
+  grid-template-rows:none !important;
+  grid-auto-rows:minmax(72px,auto) !important;
+  gap:20px !important;
+  width:100% !important;
+  min-width:0 !important;
+  max-width:100% !important;
+  align-items:stretch !important;
+}
+
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameParent62 .frameParent65 > .frameParent57 {
+  display:grid !important;
+  grid-template-columns:56px minmax(0,1fr) !important;
+  align-items:center !important;
+  justify-content:initial !important;
+  column-gap:16px !important;
+  row-gap:0 !important;
+  width:100% !important;
+  max-width:100% !important;
+  min-width:0 !important;
+  height:auto !important;
+  min-height:72px !important;
+  margin:0 !important;
+  padding:0 !important;
+  transform:none !important;
+  text-align:left !important;
+}
+
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameParent62 .scaleIconCircle {
+  position:relative !important;
+  inset:auto !important;
+  width:56px !important;
+  height:56px !important;
+  min-width:56px !important;
+  max-width:56px !important;
+  margin:0 !important;
+  align-self:center !important;
+  justify-self:center !important;
+  transform:none !important;
+}
+
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameParent62 .scaleIconInner {
+  width:42px !important;
+  height:42px !important;
+  left:50% !important;
+  top:50% !important;
+  transform:translate(-50%,-50%) !important;
+}
+
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameParent62 .scaleIconImage {
+  width:26px !important;
+  height:26px !important;
+  object-fit:contain !important;
+}
+
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameParent62 .frameParent65 > .frameParent57 > div:last-child {
+  width:100% !important;
+  min-width:0 !important;
+  max-width:100% !important;
+  height:auto !important;
+  margin:0 !important;
+  padding:0 !important;
+  font-size:18px !important;
+  font-weight:600 !important;
+  line-height:26px !important;
+  letter-spacing:0 !important;
+  white-space:normal !important;
+  overflow-wrap:break-word !important;
+  word-break:normal !important;
+  text-align:left !important;
+  transform:none !important;
+}
+
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameParent40 .frameParent41 {
+  align-items:flex-start !important;
+  text-align:left !important;
+  gap:24px !important;
+}
+
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameParent40 .frameParent5 {
+  align-items:flex-start !important;
+  text-align:left !important;
+}
+
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameParent40 .perfectForUniversities {
+  text-align:left !important;
+  margin:0 !important;
+}
+
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameParent40 .perfectForUniversities br {
+  display:initial !important;
+}
+
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameParent40 .frameParent43 {
+  display:flex !important;
+  flex-direction:column !important;
+  gap:24px !important;
+  width:100% !important;
+  min-width:0 !important;
+}
+
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameParent40 .frameWrapper8,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameParent40 .frameWrapper9,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameParent40 .frameWrapper11,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameParent40 .frameWrapper13 {
+  width:100% !important;
+  min-width:0 !important;
+  max-width:100% !important;
+  margin:0 !important;
+  padding:0 !important;
+  transform:none !important;
+}
+
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameParent40 .frameParent44 {
+  position:relative !important;
+  inset:auto !important;
+  display:grid !important;
+  grid-template-columns:64px minmax(0,1fr) !important;
+  align-items:center !important;
+  width:100% !important;
+  min-width:0 !important;
+  height:auto !important;
+  min-height:88px !important;
+  margin:0 !important;
+  padding:0 !important;
+  transform:none !important;
+}
+
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameParent40 .frameParent45 {
+  position:relative !important;
+  inset:auto !important;
+  grid-column:1 !important;
+  grid-row:1 !important;
+  display:grid !important;
+  place-items:center !important;
+  align-self:center !important;
+  width:64px !important;
+  min-width:64px !important;
+  height:64px !important;
+  margin:0 !important;
+  padding:0 !important;
+  transform:none !important;
+  translate:none !important;
+  z-index:1 !important;
+}
+
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameParent40 .image20Wrapper {
+  position:absolute !important;
+  inset:0 !important;
+  width:100% !important;
+  height:100% !important;
+  border-radius:18px !important;
+  transform:none !important;
+  translate:none !important;
+}
+
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameParent40 .div,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameParent40 .div2,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameParent40 .div4 {
+  position:relative !important;
+  inset:auto !important;
+  display:block !important;
+  width:auto !important;
+  height:auto !important;
+  margin:0 !important;
+  padding:0 !important;
+  font-size:34px !important;
+  line-height:1 !important;
+  transform:none !important;
+  translate:none !important;
+  text-align:center !important;
+}
+
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameParent40 .image20Parent {
+  position:relative !important;
+  inset:auto !important;
+  grid-column:2 !important;
+  grid-row:1 !important;
+  align-self:center !important;
+  display:flex !important;
+  align-items:center !important;
+  width:calc(100% + 16px) !important;
+  max-width:none !important;
+  min-width:0 !important;
+  height:auto !important;
+  min-height:88px !important;
+  margin:0 0 0 -16px !important;
+  padding:14px 14px 14px 32px !important;
+  border-radius:14px !important;
+  transform:none !important;
+  translate:none !important;
+  overflow:visible !important;
+}
+
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameParent40 .simulationsParent,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameParent40 .frameWrapper10,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameParent40 .frameWrapper12,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameParent40 .frameWrapper14,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameParent40 .interactiveParent,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameParent40 .interactiveAssessmentsParent {
+  position:relative !important;
+  inset:auto !important;
+  width:100% !important;
+  min-width:0 !important;
+  max-width:100% !important;
+  height:auto !important;
+  display:flex !important;
+  flex-direction:column !important;
+  align-items:flex-start !important;
+  justify-content:center !important;
+  margin:0 !important;
+  padding:0 !important;
+  gap:8px !important;
+  transform:none !important;
+  text-align:left !important;
+}
+
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameParent40 .simulations,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameParent40 .scenarioBasedLearning,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameParent40 .visualLearning,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameParent40 .interactiveAssessments {
+  font-size:18px !important;
+  line-height:24px !important;
+  margin:0 !important;
+  width:100% !important;
+  height:auto !important;
+  white-space:normal !important;
+  text-align:left !important;
+}
+
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameParent40 .practiceRealWorldSkills {
+  font-size:16px !important;
+  line-height:23px !important;
+  width:100% !important;
+  height:auto !important;
+  white-space:normal !important;
+  text-align:left !important;
+  margin:0 !important;
+}
+}
+
+/* Keep feature text inline on desktop; use deliberate two-line labels on mobile. */
+.scaleLabelLine { display: inline; }
+@media (max-width:767px) {
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameParent40 .frameParent41,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameParent40 .frameParent5 {
+  align-items:center !important;
+  text-align:center !important;
+  width:100% !important;
+  margin-inline:auto !important;
+}
+
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameParent40 .practicePill {
+  align-self:center !important;
+  margin-inline:auto !important;
+}
+
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameParent40 .beyondLearningInto,
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameParent40 .perfectForUniversities {
+  width:100% !important;
+  text-align:center !important;
+  margin-inline:auto !important;
+  text-wrap:balance !important;
+}
+
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameParent62 .scaleLabelLine {
+  display:block !important;
+  margin:0 !important;
+  padding:0 !important;
+  font:inherit !important;
+  color:inherit !important;
+  line-height:inherit !important;
+  white-space:normal !important;
+}
+
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameParent62 .frameParent65 > .frameParent57 > div:last-child {
+  line-height:26px !important;
+  min-height:52px !important;
+  display:flex !important;
+  flex-direction:column !important;
+  justify-content:center !important;
+  text-align:left !important;
+  gap:0 !important;
+}
+}
+
+@media (max-width:359px) {
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameParent62 .frameParent65 > .frameParent57 > div:last-child {
+  font-size:16px !important;
+  line-height:24px !important;
+  min-height:48px !important;
+}
+}

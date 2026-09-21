@@ -56,7 +56,7 @@ const goalCards = [
   },
   {
     title: "Smart Suggestions",
-    description: <>Get relevant goal<br />recommendations</>,
+    description: <>Get Goals That <br />Matters</>,
     icon: "/icons/ai-sparkles.svg",
     tone: "blue" as Tone,
   },
@@ -68,7 +68,7 @@ const goalCards = [
   },
   {
     title: "Team Plans",
-    description: <>Share plans with<br />mentors and peers</>,
+    description: <>Get Goals That Matter<br />Matter</>,
     icon: "/icons/university-usergroup.svg",
     tone: "purple" as Tone,
   },

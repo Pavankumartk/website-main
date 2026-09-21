@@ -8,7 +8,7 @@
   text-align: center;
   font-size: 48px;
   color: #31344b;
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", "Inter";
   max-width: 1440px; 
 	margin: 0 auto;
     zoom: 0.99;
@@ -108,7 +108,7 @@
   flex-shrink: 0;
   text-align: left;
   font-size: 16px;
-  font-family: Inter;
+  font-family: "Segoe UI", "Inter";
 }
 .frameChild2 {
   position: absolute;
@@ -191,7 +191,7 @@
   box-sizing: border-box;
   text-align: center;
   color: #2d4cc8;
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", "Inter";
 }
 .signInHelp {
   width: 97px;
@@ -223,7 +223,7 @@
   text-align: left;
   font-size: 18px;
   color: #2f3547;
-  font-family: Inter;
+  font-family: "Segoe UI", "Inter";
 }
 .featuresWrapper {
   display: flex;
@@ -2436,7 +2436,7 @@
     inset -4px -4px 4px #fff,
     inset 4px 4px 4px rgba(196, 196, 196, 0.8);
   color: #2d4cc8;
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", "Inter";
   font-size: 24px;
   font-weight: 600;
   line-height: 50.2px;
@@ -2486,7 +2486,7 @@
     inset -4px -4px 4px #ffffff,
     inset 4px 4px 4px rgba(196, 196, 196, 0.8);
   color: #2d4cc8;
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", "Inter";
   font-size: 24px;
   font-weight: 600;
   line-height: 50.2px;
@@ -2644,7 +2644,7 @@
     inset -4px -4px 4px #ffffff,
     inset 4px 4px 4px rgba(196, 196, 196, 0.8);
   color: #2d4cc8;
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", "Inter";
   font-size: 24px;
   font-weight: 600;
   line-height: 50.2px;
@@ -2840,7 +2840,7 @@
   max-width: 455px;
   margin: 0;
   color: #31344b;
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", "Inter";
   font-size: 24px;
   font-weight: 600;
   line-height: 36px;
@@ -2986,7 +2986,7 @@
 .frameParent55 .ensureConsistencyAcross {
   height: 37px;
   margin: 0;
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", "Inter";
   font-style: normal;
   font-weight: 600;
   font-size: 24px;
@@ -3015,7 +3015,7 @@
     inset -4px -4px 4px #ffffff,
     inset 4px 4px 4px rgba(196, 196, 196, 0.8);
   color: #2d4cc8;
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", "Inter";
   font-size: 24px;
   font-weight: 600;
   line-height: 50.2px;
@@ -3093,7 +3093,7 @@
     -4px -4px 4px #ffffff,
     4px 4px 4px rgba(196, 196, 196, 0.8);
   color: #2d4cc8;
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", "Inter";
   font-size: 24px;
   font-weight: 600;
   line-height: 50.2px;
@@ -3649,7 +3649,7 @@
   justify-content: center;
   box-sizing: border-box;
   color: #2d4cc8;
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", "Inter";
   font-size: 24px;
   font-weight: 600;
   line-height: 36px;
@@ -3674,7 +3674,7 @@
   gap: 16px;
   box-sizing: border-box;
   color: #2d4cc8;
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", "Inter";
   font-size: 22px;
   font-weight: 600;
   line-height: 32px;
@@ -3802,7 +3802,7 @@
   align-items: center;
   gap: 14px;
   color: #31344b;
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", "Inter";
   font-size: 18px;
   font-weight: 400;
   line-height: 28px;
@@ -13556,4 +13556,930 @@
     flex: 0 0 48px !important;
   }
 
+}
+
+
+/* Shared CTA and breadcrumb styles; full-width hero and content-sized spacing. */
+
+.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem {
+  --flow-page-gutter:clamp(16px,3.75vw,48px) !important;
+  --flow-section-gap:64px !important;
+  --flow-content-gap:32px !important;
+  --flow-intro-gap:24px !important;
+  --shared-cta-size:24px !important;
+  --shared-cta-line:32px !important;
+  --shared-cta-padding:16px 32px !important;
+  width:100% !important;
+  max-width:none !important;
+  min-width:0 !important;
+  height:auto !important;
+  min-height:0 !important;
+  margin:0 auto !important;
+  padding:0 0 48px !important;
+  gap:0 !important;
+  display:flex !important;
+  flex-direction:column !important;
+  align-items:stretch !important;
+  zoom:1 !important;
+  transform:none !important;
+  overflow-x:clip !important;
+  overflow-y:visible !important;
+}
+
+.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem,
+.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem *,
+.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem *::before,
+.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem *::after {
+  font-family:"Segoe UI", "Inter" !important;
+  box-sizing:border-box !important;
+}
+
+.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem > .frameParent22,
+.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem > .rectangleParent,
+.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem > .frameParent37,
+.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem > .frameParent55,
+.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem > .image20Parent4,
+.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem > .frameParent79,
+.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem > .frameParent96 {
+  position:relative !important;
+  inset:auto !important;
+  width:min(1280px,calc(100% - 2 * var(--flow-page-gutter))) !important;
+  min-width:0 !important;
+  max-width:1280px !important;
+  height:auto !important;
+  min-height:0 !important;
+  margin:var(--flow-section-gap) auto 0 !important;
+  transform:none !important;
+  flex:none !important;
+}
+
+.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem > .frameParent79 {
+  gap:var(--flow-section-gap) !important;
+}
+
+.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem > .frameParent96 {
+  margin-top:48px !important;
+  padding-bottom:0 !important;
+  gap:24px !important;
+}
+
+.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem > .frameParent5 {
+  position:relative !important;
+  inset:auto !important;
+  margin:48px 0 0 !important;
+  height:auto !important;
+  min-height:0 !important;
+  width:100% !important;
+  max-width:100% !important;
+  transform:none !important;
+}
+
+.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem > .frameParent {
+  position:relative !important;
+  inset:auto !important;
+  width:100% !important;
+  min-width:0 !important;
+  max-width:none !important;
+  height:auto !important;
+  min-height:520px !important;
+  margin:0 !important;
+  padding:64px 0 !important;
+  display:flex !important;
+  align-items:center !important;
+  justify-content:center !important;
+  overflow:hidden !important;
+  isolation:isolate !important;
+  transform:none !important;
+  order:0 !important;
+}
+
+.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem > .frameParent > .frameChild {
+  position:absolute !important;
+  inset:0 !important;
+  display:block !important;
+  width:100% !important;
+  min-width:100% !important;
+  max-width:none !important;
+  height:100% !important;
+  margin:0 !important;
+  padding:0 !important;
+  object-fit:fill !important;
+  object-position:center !important;
+  transform:none !important;
+  pointer-events:none !important;
+  z-index:0 !important;
+}
+
+.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem > .frameParent .frameGroup {
+  position:relative !important;
+  inset:auto !important;
+  width:min(1123px,calc(100% - 2 * var(--flow-page-gutter))) !important;
+  max-width:1123px !important;
+  min-width:0 !important;
+  height:auto !important;
+  min-height:0 !important;
+  margin:0 auto !important;
+  padding:0 !important;
+  gap:32px !important;
+  align-items:center !important;
+  transform:none !important;
+  z-index:1 !important;
+}
+
+.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem > .frameParent .frameContainer,
+.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem > .frameParent .onePlatformManyFormatSmaParent {
+  position:relative !important;
+  inset:auto !important;
+  width:100% !important;
+  min-width:0 !important;
+  max-width:100% !important;
+  height:auto !important;
+  min-height:0 !important;
+  margin:0 !important;
+  padding:0 !important;
+  gap:24px !important;
+  transform:none !important;
+}
+
+.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem > .frameParent .onePlatformMany,
+.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem > .frameParent .bringContentTogether {
+  width:100% !important;
+  max-width:100% !important;
+  height:auto !important;
+  min-height:0 !important;
+  margin:0 !important;
+  padding:0 !important;
+  white-space:normal !important;
+  overflow-wrap:break-word !important;
+  word-break:normal !important;
+  text-wrap:balance !important;
+  text-align:center !important;
+}
+
+.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem > .frameParent .frameWrapper {
+  position:relative !important;
+  inset:auto !important;
+  width:auto !important;
+  max-width:100% !important;
+  min-width:0 !important;
+  height:auto !important;
+  margin:0 auto !important;
+  padding:0 !important;
+  transform:none !important;
+}
+
+.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem > .frameParent4 {
+  position:relative !important;
+  inset:auto !important;
+  order:-1 !important;
+  display:flex !important;
+  align-items:center !important;
+  justify-content:flex-start !important;
+  flex-wrap:wrap !important;
+  gap:8px !important;
+  width:min(100%,1280px) !important;
+  max-width:none !important;
+  min-width:0 !important;
+  height:auto !important;
+  margin:0 auto 24px !important;
+  padding:32px 20px 0 !important;
+  font-size:14px !important;
+  font-weight:400 !important;
+  line-height:20px !important;
+  letter-spacing:.02em !important;
+  text-align:left !important;
+  color:#2f3547 !important;
+  white-space:normal !important;
+  overflow:visible !important;
+  transform:none !important;
+}
+
+.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem > .frameParent4 .featuresWrapper,
+.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem > .frameParent4 .homeParent,
+.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem > .frameParent4 .arrowRightDoubleGroup {
+  display:flex !important;
+  align-items:center !important;
+  flex:0 1 auto !important;
+  gap:8px !important;
+  min-width:0 !important;
+  width:auto !important;
+  max-width:100% !important;
+  white-space:normal !important;
+  overflow:visible !important;
+}
+
+.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem > .frameParent4 .augmentation {
+  font-size:inherit !important;
+  font-weight:400 !important;
+  line-height:inherit !important;
+  letter-spacing:inherit !important;
+  color:inherit !important;
+  white-space:normal !important;
+  overflow-wrap:break-word !important;
+  text-overflow:clip !important;
+  overflow:visible !important;
+}
+
+.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem > .frameParent4 .arrowRightDoubleGroup {
+  color:#243fa8 !important;
+}
+
+.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem > .frameParent4 .arrowRightDoubleGroup .augmentation,
+.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem > .frameParent4 [aria-current="page"] {
+  font-size:16px !important;
+  line-height:24px !important;
+  font-weight:700 !important;
+  color:#243fa8 !important;
+}
+
+.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem > .frameParent4 .arrowDown01Icon {
+  width:16px !important;
+  min-width:16px !important;
+  height:16px !important;
+  flex:0 0 16px !important;
+}
+
+.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem .headerBookDemoButton,
+.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem .requestADemoWrapper {
+  position:relative !important;
+  inset:auto !important;
+  display:inline-flex !important;
+  flex-direction:row !important;
+  align-items:center !important;
+  justify-content:center !important;
+  gap:12px !important;
+  width:auto !important;
+  min-width:0 !important;
+  max-width:100% !important;
+  height:auto !important;
+  min-height:52px !important;
+  max-height:none !important;
+  margin:0 !important;
+  padding:var(--shared-cta-padding) !important;
+  border:0 !important;
+  border-radius:8px !important;
+  background:#dfe6e9 !important;
+  box-shadow:-4px -4px 4px #fff, 4px 4px 4px #c6c6c9 !important;
+  color:#2d4cc8 !important;
+  -webkit-text-fill-color:#2d4cc8 !important;
+  font-size:var(--shared-cta-size) !important;
+  font-weight:600 !important;
+  line-height:var(--shared-cta-line) !important;
+  letter-spacing:.02em !important;
+  text-align:center !important;
+  text-decoration:none !important;
+  white-space:normal !important;
+  overflow-wrap:break-word !important;
+  transform:none !important;
+  cursor:pointer !important;
+  transition:box-shadow .2s ease !important;
+  flex:0 1 auto !important;
+}
+
+.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem .headerBookDemoButton span,
+.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem .requestADemo {
+  position:relative !important;
+  inset:auto !important;
+  width:auto !important;
+  min-width:0 !important;
+  max-width:100% !important;
+  height:auto !important;
+  margin:0 !important;
+  padding:0 !important;
+  font-size:inherit !important;
+  line-height:inherit !important;
+  font-weight:inherit !important;
+  letter-spacing:inherit !important;
+  color:inherit !important;
+  -webkit-text-fill-color:inherit !important;
+  white-space:normal !important;
+  text-align:center !important;
+  transform:none !important;
+}
+
+.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem .headerBookDemoArrow {
+  width:24px !important;
+  height:24px !important;
+  flex:0 0 24px !important;
+  object-fit:contain !important;
+}
+
+.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem .headerBookDemoButton:active,
+.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem .requestADemoWrapper:active {
+  box-shadow:inset -4px -4px 4px #fff, inset 4px 4px 4px rgba(196,196,196,.8) !important;
+  transform:none !important;
+}
+
+.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem .headerBookDemoButton:focus-visible,
+.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem .requestADemoWrapper:focus-visible {
+  outline:3px solid #2d4cc8 !important;
+  outline-offset:4px !important;
+}
+
+@media (hover:hover) and (pointer:fine) {
+
+.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem .headerBookDemoButton:hover,
+.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem .requestADemoWrapper:hover {
+  box-shadow:inset -4px -4px 4px #fff, inset 4px 4px 4px rgba(196,196,196,.8) !important;
+  transform:none !important;
+}
+
+}
+
+@media (min-width:1280px) {
+
+.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem > .frameParent4 {
+  padding-inline:80px !important;
+}
+
+}
+@media (min-width:1440px) {
+
+.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem > .frameParent4 {
+  width:min(100%,1440px) !important;
+}
+
+}
+@media (max-width:1023px) {
+
+.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem {
+  --shared-cta-size:20px !important;
+  --shared-cta-line:28px !important;
+}
+
+.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem > .frameParent {
+  min-height:440px !important;
+  padding-block:48px !important;
+}
+
+}
+@media (max-width:1199px) {
+
+.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem .frameParent79 .frameParent86 {
+  overflow-x:auto !important;
+  overflow-y:hidden !important;
+  max-width:100% !important;
+  min-width:0 !important;
+  padding:12px 8px 24px !important;
+  overscroll-behavior-x:contain !important;
+  touch-action:pan-x pan-y !important;
+  scroll-snap-type:x mandatory !important;
+  scroll-padding-inline:8px !important;
+}
+
+.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem .frameParent79 .frameWrapper70,
+.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem .frameParent79 .frameParent87,
+.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem .frameParent79 .frameParent88 {
+  position:relative !important;
+  scroll-snap-align:center !important;
+}
+
+}
+@media (max-width:767px) {
+
+.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem {
+  --flow-section-gap:48px !important;
+  --flow-content-gap:24px !important;
+  --flow-intro-gap:20px !important;
+  --shared-cta-size:18px !important;
+  --shared-cta-line:24px !important;
+  --shared-cta-padding:14px 24px !important;
+}
+
+.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem > .frameParent4 {
+  padding:12px 20px 0 !important;
+  margin:0 auto 24px !important;
+  gap:6px !important;
+  font-size:14px !important;
+  line-height:20px !important;
+}
+
+.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem > .frameParent {
+  min-height:0 !important;
+  padding:32px 0 !important;
+  overflow:hidden !important;
+}
+
+.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem > .frameParent .frameGroup {
+  gap:24px !important;
+}
+
+.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem > .frameParent .frameContainer,
+.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem > .frameParent .onePlatformManyFormatSmaParent {
+  gap:20px !important;
+}
+
+.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem > .frameParent .onePlatformMany {
+  font-size:28px !important;
+  line-height:36px !important;
+}
+
+.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem > .frameParent .bringContentTogether {
+  font-size:18px !important;
+  line-height:27px !important;
+}
+
+.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem .contentIntelligenceBadge,
+.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem .headerContentExperienceBadge {
+  width:fit-content !important;
+  min-width:0 !important;
+  max-width:100% !important;
+  height:auto !important;
+  white-space:normal !important;
+  overflow-wrap:break-word !important;
+  margin-inline:auto !important;
+}
+
+.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem .frameParent79 .frameParent83,
+.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem .frameParent79 .frameParent85 {
+  width:100% !important;
+  max-width:100% !important;
+  min-width:0 !important;
+}
+
+.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem .frameParent79 .frameParent86 {
+  display:flex !important;
+  flex-direction:row !important;
+  flex-wrap:nowrap !important;
+  width:100% !important;
+  gap:16px !important;
+}
+
+.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem .frameParent79 .frameWrapper70,
+.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem .frameParent79 .frameParent87,
+.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem .frameParent79 .frameParent88 {
+  inset:auto !important;
+  flex:0 0 min(304px,100%) !important;
+  width:min(304px,100%) !important;
+  min-width:0 !important;
+  max-width:100% !important;
+  margin:0 !important;
+  transform:none !important;
+}
+
+}
+@media (max-width:480px) {
+
+.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem > .frameParent4 {
+  font-size:12px !important;
+  line-height:18px !important;
+}
+
+.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem > .frameParent4 .arrowRightDoubleGroup .augmentation,
+.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem > .frameParent4 [aria-current="page"] {
+  font-weight:400 !important;
+}
+
+}
+@media (prefers-reduced-motion:reduce) {
+
+.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem .headerBookDemoButton,
+.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem .requestADemoWrapper {
+  transition:none !important;
+}
+
+}
+
+/* Hero edge coverage, reference badges/CTAs and final-section spacing. */
+.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem {
+  overflow:visible !important;
+}
+
+.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem > .frameParent {
+  width:100vw !important;
+  max-width:none !important;
+  min-width:0 !important;
+  margin-inline:calc(50% - 50vw) !important;
+  padding-inline:0 !important;
+  border-radius:0 !important;
+  overflow:hidden !important;
+}
+
+.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem > .frameParent > .frameChild {
+  position:absolute !important;
+  top:0 !important;
+  bottom:0 !important;
+  left:0 !important;
+  right:0 !important;
+  width:100% !important;
+  min-width:0 !important;
+  max-width:none !important;
+  height:100% !important;
+  margin:0 !important;
+  padding:0 !important;
+  object-fit:fill !important;
+  display:block !important;
+  transform:none !important;
+  pointer-events:none !important;
+}
+
+.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem .headerContentExperienceBadge,
+.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem .contentIntelligenceBadge,
+.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem .contentCreationBadge,
+.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem .contentCompatibilityBadge,
+.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem .centralizedContentBadge,
+.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem .contentValueBadge,
+.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem .learningScaleBadge,
+.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem .whyNeurolxpBadge {
+  display:inline-flex !important;
+  align-items:center !important;
+  justify-content:center !important;
+  width:fit-content !important;
+  max-width:100% !important;
+  min-width:0 !important;
+  height:auto !important;
+  min-height:56px !important;
+  padding:12px 36px !important;
+  border:0 !important;
+  border-radius:999px !important;
+  background:#dfe6e9 !important;
+  box-shadow:inset -4px -4px 4px #fff, inset 4px 4px 4px rgba(196,196,196,.8) !important;
+  color:#2d4cc8 !important;
+  font-family:"Segoe UI", "Inter" !important;
+  font-size:24px !important;
+  font-weight:600 !important;
+  line-height:1.3 !important;
+  letter-spacing:.03em !important;
+  text-align:center !important;
+  white-space:normal !important;
+  overflow-wrap:break-word !important;
+  flex:0 0 auto !important;
+}
+
+.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem .headerBookDemoButton,
+.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem .requestADemoWrapper {
+  font-size:24px !important;
+  line-height:1.2 !important;
+  font-weight:600 !important;
+  min-height:60px !important;
+  padding:16px 28px !important;
+  color:#2d4cc8 !important;
+  border-radius:8px !important;
+  box-shadow:-4px -4px 4px #fff,4px 4px 4px #c6c6c9 !important;
+}
+
+.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem .headerBookDemoButton span,
+.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem .requestADemo {
+  font-size:inherit !important;
+  line-height:inherit !important;
+  color:inherit !important;
+}
+
+.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem > .frameParent79 {
+  gap:48px !important;
+  margin-bottom:0 !important;
+}
+
+.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem .frameParent79 .frameParent91 {
+  height:auto !important;
+  min-height:0 !important;
+  margin:0 auto !important;
+  padding:0 !important;
+  gap:32px !important;
+}
+
+.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem .frameParent79 .frameParent91 .frameWrapper4,
+.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem .frameParent79 .frameParent91 .frameParent23,
+.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem .frameParent79 .frameParent91 .onePlatformManyFormatSmaParent {
+  height:auto !important;
+  min-height:0 !important;
+  margin:0 !important;
+  padding:0 !important;
+  gap:24px !important;
+  transform:none !important;
+}
+
+.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem .frameParent79 .frameParent91 .rectangleParent5 {
+  height:auto !important;
+  min-height:0 !important;
+  grid-template-columns:repeat(3,minmax(0,1fr)) !important;
+  align-items:center !important;
+  gap:32px !important;
+  margin:0 auto !important;
+  padding:0 !important;
+}
+
+.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem .frameParent79 .frameParent91 .frameParent93,
+.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem .frameParent79 .frameParent91 .frameParent94,
+.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem .frameParent79 .frameParent91 .frameParent95 {
+  width:100% !important;
+  min-width:0 !important;
+  max-width:100% !important;
+  height:auto !important;
+  margin:0 !important;
+  transform:none !important;
+}
+
+.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem > .frameParent96 {
+  position:relative !important;
+  inset:auto !important;
+  height:auto !important;
+  min-height:0 !important;
+  margin:48px auto 0 !important;
+  padding:0 !important;
+  gap:24px !important;
+}
+
+.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem .frameParent96 .frameWrapper72,
+.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem .frameParent96 .frameWrapper73,
+.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem .frameParent96 .onePlatformSmarterLearningParent {
+  position:relative !important;
+  inset:auto !important;
+  width:100% !important;
+  min-width:0 !important;
+  max-width:100% !important;
+  height:auto !important;
+  min-height:0 !important;
+  margin:0 !important;
+  padding:0 !important;
+  gap:24px !important;
+  transform:none !important;
+}
+
+.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem .frameParent96 .contentThatWorks,
+.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem .frameParent96 .neurolxpBringsContent {
+  height:auto !important;
+  min-height:0 !important;
+  margin:0 !important;
+  padding:0 !important;
+  white-space:normal !important;
+}
+
+.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem .frameParent96 .requestADemoWrapper {
+  margin:0 auto !important;
+  transform:none !important;
+}
+
+@media (max-width:1099px) {
+
+.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem .headerBookDemoButton,
+.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem .requestADemoWrapper {
+  font-size:20px !important;
+  min-height:52px !important;
+  padding:14px 20px !important;
+}
+
+}
+@media (max-width:767px) {
+
+.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem > .frameParent {
+  width:100% !important;
+  margin-inline:0 !important;
+  padding:24px 0 !important;
+  background:none !important;
+  box-shadow:none !important;
+  min-height:0 !important;
+}
+
+.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem > .frameParent > .frameChild,
+.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem > .frameParent > .rectangleIcon,
+.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem > .rectangleIcon,
+.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem > .frameParent::before,
+.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem > .frameParent::after {
+  display:none !important;
+  background:none !important;
+  box-shadow:none !important;
+}
+
+.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem .headerContentExperienceBadge,
+.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem .contentIntelligenceBadge,
+.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem .contentCreationBadge,
+.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem .contentCompatibilityBadge,
+.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem .centralizedContentBadge,
+.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem .contentValueBadge,
+.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem .learningScaleBadge,
+.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem .whyNeurolxpBadge {
+  min-height:48px !important;
+  padding:10px 26px !important;
+  font-size:20px !important;
+  line-height:1.3 !important;
+}
+
+.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem .headerBookDemoButton,
+.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem .requestADemoWrapper {
+  font-size:18px !important;
+  line-height:24px !important;
+  min-height:48px !important;
+  padding:12px 20px !important;
+}
+
+.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem .frameParent79 .frameParent91 {
+  gap:24px !important;
+}
+
+.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem .frameParent79 .frameParent91 .rectangleParent5 {
+  display:grid !important;
+  grid-template-columns:minmax(0,1fr) !important;
+  gap:24px !important;
+}
+
+.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem .frameParent79 .frameParent91 .frameParent93,
+.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem .frameParent79 .frameParent91 .frameParent94,
+.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem .frameParent79 .frameParent91 .frameParent95 {
+  grid-column:auto !important;
+  grid-row:auto !important;
+  height:auto !important;
+  min-height:0 !important;
+  padding:24px 16px !important;
+}
+
+.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem .frameParent79 .frameParent91 .frameWrapper4,
+.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem .frameParent79 .frameParent91 .frameParent23,
+.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem .frameParent79 .frameParent91 .onePlatformManyFormatSmaParent,
+.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem .frameParent96 .frameWrapper72,
+.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem .frameParent96 .frameWrapper73,
+.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem .frameParent96 .onePlatformSmarterLearningParent {
+  gap:20px !important;
+}
+
+}
+
+:global(body):has(.contentIntelligenceManagem) { overflow-x: clip; }
+
+/* Screenshot refinements: 80px management gutters and tighter section rhythm. */
+
+.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem > .frameParent37 {
+  gap:24px !important;
+}
+
+.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem .frameParent37 .frameWrapper42,
+.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem .frameParent37 .frameWrapper43,
+.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem .frameParent37 .frameParent38,
+.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem .frameParent37 .frameParent39 {
+  height:auto !important;
+  min-height:0 !important;
+  margin-block:0 !important;
+  padding-block:0 !important;
+  gap:20px !important;
+}
+
+.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem .frameParent37 .contentThatWorks,
+.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem .frameParent37 .neurolxpSupportsDiverse {
+  height:auto !important;
+  min-height:0 !important;
+  margin-block:0 !important;
+  padding-block:0 !important;
+}
+
+.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem .frameParent37 .compatibilitySwitchGrid {
+  margin-block:0 !important;
+}
+
+.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem > .frameParent79 {
+  gap:32px !important;
+}
+
+.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem .frameParent79 .frameParent91 {
+  margin:0 auto !important;
+  transform:none !important;
+}
+
+.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem > .frameParent96 {
+  margin:32px auto 0 !important;
+  margin-top:32px !important;
+}
+
+@media (min-width:1200px) {
+
+.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem > .frameParent55 {
+  width:calc(100% - 160px) !important;
+  max-width:none !important;
+  margin-inline:80px !important;
+  padding:0 !important;
+  grid-template-columns:minmax(0, 0.9fr) minmax(0, 1.1fr) !important;
+  gap:48px !important;
+  align-items:center !important;
+}
+
+.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem .frameParent55 .frameParent56,
+.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem .frameParent55 .frameParent57,
+.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem .frameParent55 .frameWrapper62,
+.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem .frameParent55 .frameWrapper63 {
+  width:100% !important;
+  min-width:0 !important;
+  max-width:100% !important;
+  height:auto !important;
+  min-height:0 !important;
+  margin:0 !important;
+}
+
+.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem .frameParent55 .frameWrapper64,
+.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem .frameParent55 .frameParent58 {
+  height:auto !important;
+  min-height:0 !important;
+}
+
+.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem .frameParent55 .frameParent59 {
+  height:auto !important;
+  min-height:70px !important;
+  min-width:0 !important;
+}
+
+.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem .frameParent55 .organizeLearningContent,
+.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem .frameParent55 .manageLearningResources,
+.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem .frameParent55 .organizeByCourse,
+.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem .frameParent55 .manageFromOne,
+.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem .frameParent55 .maintainContentVersions,
+.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem .frameParent55 .updateWithoutDisruption,
+.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem .frameParent55 .keepContentStructured,
+.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem .frameParent55 .ensureConsistencyAcross {
+  max-width:100% !important;
+  min-width:0 !important;
+  height:auto !important;
+  white-space:normal !important;
+  overflow-wrap:break-word !important;
+}
+
+}
+@media (max-width:767px) {
+
+.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem > .frameParent::before {
+  content:none !important;
+  display:none !important;
+  background:none !important;
+}
+
+.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem .frameParent37 .frameParent38,
+.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem .frameParent37 .frameParent39 {
+  gap:16px !important;
+}
+
+}
+
+/* Keep the closing CTA in document flow and clear of the footer. */
+
+.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem {
+  flex:0 0 auto !important;
+  max-height:none !important;
+  padding-bottom:80px !important;
+}
+
+.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem > .frameParent96,
+.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem .frameParent96 .frameWrapper72,
+.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem .frameParent96 .frameWrapper73,
+.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem .frameParent96 .onePlatformSmarterLearningParent {
+  position:relative !important;
+  inset:auto !important;
+  height:auto !important;
+  max-height:none !important;
+  min-height:0 !important;
+  flex:0 0 auto !important;
+  overflow:visible !important;
+  transform:none !important;
+}
+
+.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem .frameParent96 .requestADemoWrapper {
+  position:relative !important;
+  inset:auto !important;
+  flex:0 0 auto !important;
+  margin:0 auto !important;
+  transform:none !important;
+}
+
+.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem + :global(footer) {
+  position:relative !important;
+  inset:auto !important;
+  margin-top:0 !important;
+  transform:none !important;
+  flex-shrink:0 !important;
+}
+
+/* Hero background only: reference chevron and soft raised lower rim.
+   Content layout, text, badges, buttons and mobile styling are unchanged. */
+@media (min-width:768px) {
+.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem > .frameParent > .frameChild {
+  display:none !important;
+}
+.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem > .frameParent::before {
+  content:"" !important;
+  display:block !important;
+  position:absolute !important;
+  inset:0 !important;
+  width:100% !important;
+  height:100% !important;
+  min-width:0 !important;
+  max-width:none !important;
+  margin:0 !important;
+  padding:0 !important;
+  border:0 !important;
+  border-radius:0 !important;
+  box-shadow:none !important;
+  background:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%202048%20920%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cfilter%20id%3D%22drop%22%20x%3D%22-20%25%22%20y%3D%22-20%25%22%20width%3D%22140%25%22%20height%3D%22160%25%22%3E%3CfeDropShadow%20dx%3D%220%22%20dy%3D%2214%22%20stdDeviation%3D%2211%22%20flood-color%3D%22%23b6b6b6%22%20flood-opacity%3D%22.8%22%2F%3E%3C%2Ffilter%3E%3Cfilter%20id%3D%22blur%22%20x%3D%22-30%25%22%20y%3D%22-30%25%22%20width%3D%22160%25%22%20height%3D%22160%25%22%3E%3CfeGaussianBlur%20stdDeviation%3D%2210%22%2F%3E%3C%2Ffilter%3E%3CclipPath%20id%3D%22face%22%3E%3Cpath%20d%3D%22M-32-32H2080V663L1020%20840L-32%20695Z%22%2F%3E%3C%2FclipPath%3E%3C%2Fdefs%3E%3Cpath%20d%3D%22M-32-32H2080V703L1020%20880L-32%20735Z%22%20fill%3D%22%23dfe6e9%22%20filter%3D%22url%28%23drop%29%22%2F%3E%3Cpath%20d%3D%22M-32-32H2080V663L1020%20840L-32%20695Z%22%20fill%3D%22%23dfe6e9%22%2F%3E%3Cg%20clip-path%3D%22url%28%23face%29%22%3E%3Cpath%20d%3D%22M4-32V699%22%20stroke%3D%22%23bec4c6%22%20stroke-width%3D%2218%22%20fill%3D%22none%22%20filter%3D%22url%28%23blur%29%22%2F%3E%3Cpath%20d%3D%22M2045-32V668L1020%20840L-32%20695%22%20stroke%3D%22%23ffffff%22%20stroke-width%3D%2221%22%20fill%3D%22none%22%20filter%3D%22url%28%23blur%29%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E") center / 100% 100% no-repeat !important;
+  opacity:1 !important;
+  visibility:visible !important;
+  transform:none !important;
+  pointer-events:none !important;
+  z-index:0 !important;
+}
+.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem > .frameParent::after {
+  content:none !important;
+  display:none !important;
+}
+}
+
+/* Lift only the hero badge, heading and description; retain the CTA position. */
+@media (min-width:768px) {
+  .contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem > .frameParent .frameContainer {
+    transform:translateY(-20px) !important;
+  }
 }
