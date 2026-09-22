@@ -1,26 +1,6 @@
-/* ============================================================
-   ROUTE-SAFE / NO-COLLAPSE VERSION
-   - Layout height is content-driven.
-   - Removed page min-height:100vh dependency.
-   - All generic Figma selectors are scoped under .interconnectivity.
-   - Prevents CSS from other Next.js routes affecting this page
-     after Back/Forward client-side navigation.
-   - Existing desktop/tablet/mobile design is otherwise retained.
-   ============================================================ */
-
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
-
-/* REVISION 2 â€” REFERENCE CONTROLS + COMPACT STEPS + FOOTER CLEARANCE
-   Verification: --step-box: 104px; --step-number: 48px; --footer-gap: 72px.
-   COMPLETE REPLACEMENT â€” do not append to the old stylesheet.
-   Existing component class names are retained.
-   Content uses normal flow. Only the orbit icon and CTA background are absolute.
-   Buttons and badges match the supplied reference: blue text, raised buttons, inset pills.
-   Responsive rules live in ONE tablet block and ONE mobile block at the end.
-*/
-
-/* 1. Page and shared sizing */
-.interconnectivity{
+/* Interconnectivity page: plain CSS, loaded by import "./inter.css".
+   Every class has a page-specific name to avoid other routes' generic classes. */
+.interconnectivity-page{
   --surface: #dfe6e9;
   --ink: #31344b;
   --body-ink: #2f3547;
@@ -29,7 +9,7 @@
   --inset: inset -4px -4px 4px #fff, inset 4px 4px 4px rgba(196, 196, 196, .8);
   --pill-shadow: var(--inset);
   --gutter: clamp(24px, 5.55vw, 80px);
-  --section-gap: 64px;
+  --section-gap: 48px;
   --heading-size: 36px;
   --heading-leading: 1.25;
   --body-size: 24px;
@@ -44,7 +24,7 @@
   --step-number: 48px;
   --step-label: 22px;
   --step-panel-height: 88px;
-  --footer-gap: 72px;
+  --footer-gap: 48px;
   --icon-size: 70px;
   width: 100%;
   min-width: 0;
@@ -58,50 +38,49 @@
   position: relative;
   background: var(--surface);
   color: var(--ink);
-  font-family: "Segoe UI", "Inter", sans-serif;
+  font-family: "Segoe UI", "Inter";
   font-size: var(--heading-size);
   line-height: 1.5;
   text-align: left;
   overflow-wrap: break-word;
 }
 
-.interconnectivity, .interconnectivity *, .interconnectivity *::before, .interconnectivity *::after{
+.interconnectivity-page, .interconnectivity-page *, .interconnectivity-page *::before, .interconnectivity-page *::after{
   box-sizing: border-box;
 }
 
-.interconnectivity *{
+ .interconnectivity-page *{
+  position: relative;
+  inset: auto;
   min-width: 0;
+  -webkit-user-select: text;
+  user-select: text;
   font-family: inherit;
 }
 
-/* Every direct section keeps its full content height, even when the page
-   participates in a flex layout supplied by the application. */
-.interconnectivity > *{ flex-shrink: 0; }
-/* An external footer still gets clearance when the page has no own footer. */
-.interconnectivity:not(:has(.frameParent44)){ padding-bottom: var(--footer-gap); }
+.interconnectivity-page > *{ flex-shrink: 0; }
 
-.interconnectivity :where(h1, h2, h3, h4, p, figure){ margin: 0; }
-.interconnectivity :where(img, svg){ max-width: 100%; vertical-align: middle; }
-.interconnectivity :where(button, a){ -webkit-tap-highlight-color: transparent; }
+.interconnectivity-page:not(:has(.inter-frameParent44)){ padding-bottom: var(--footer-gap); }
 
-/* Width is constrained, height is determined by content. Descendant selectors
-   also support a section wrapped by an ordinary React/animation container. */
-.interconnectivity .interPage.frameDiv, .interconnectivity .interPage.frameParent2, .interconnectivity .interPage.frameParent8, .interconnectivity .interPage.frameParent11, .interconnectivity .interPage.frameParent19, .interconnectivity .interPage.frameParent22, .interconnectivity .interPage.connectedLearningEcosystemParent, .interconnectivity .interPage.ellipseGroup{
+.interconnectivity-page :where(h1, h2, h3, h4, p, figure){ margin: 0; }
+.interconnectivity-page :where(img, svg){ max-width: 100%; vertical-align: middle; }
+.interconnectivity-page :where(button, a){ -webkit-tap-highlight-color: transparent; }
+
+.interconnectivity-page .inter-frameDiv, .interconnectivity-page .inter-frameParent2, .interconnectivity-page .inter-frameParent8, .interconnectivity-page .inter-frameParent11, .interconnectivity-page .inter-frameParent19, .interconnectivity-page .inter-frameParent22, .interconnectivity-page .inter-connectedLearningEcosystemParent, .interconnectivity-page .inter-ellipseGroup{
   width: min(1280px, calc(100% - var(--gutter) - var(--gutter)));
   margin-inline: auto;
 }
 
-.interconnectivity .interPage.frameParent8, .interconnectivity .interPage.frameParent11, .interconnectivity .interPage.frameParent19, .interconnectivity .interPage.frameParent22, .interconnectivity .interPage.connectedLearningEcosystemParent, .interconnectivity .interPage.ellipseGroup{ margin-top: var(--section-gap); }
+.interconnectivity-page .inter-frameParent8, .interconnectivity-page .inter-frameParent11, .interconnectivity-page .inter-frameParent19, .interconnectivity-page .inter-frameParent22, .interconnectivity-page .inter-connectedLearningEcosystemParent, .interconnectivity-page .inter-ellipseGroup{ margin-top: var(--section-gap); }
 
-/* 2. Header and breadcrumb */
-.interconnectivity .interPage.frameParent{
+.interconnectivity-page .inter-frameParent{
   width: 100%;
   background: var(--surface);
   box-shadow: var(--raised);
   font-size: 16px;
 }
 
-.interconnectivity .interPage.frameGroup{
+.interconnectivity-page .inter-frameGroup{
   width: min(1440px, 100%);
   margin-inline: auto;
   padding: 18px 32px;
@@ -112,7 +91,7 @@
   gap: 16px 24px;
 }
 
-.interconnectivity .interPage.logo01SynapseSpark1Parent{
+.interconnectivity-page .inter-logo01SynapseSpark1Parent{
   flex: 1 1 auto;
   display: flex;
   flex-wrap: wrap;
@@ -121,40 +100,38 @@
   gap: 20px 32px;
 }
 
-.interconnectivity .interPage.logo01SynapseSpark1Icon{
+.interconnectivity-page .inter-logo01SynapseSpark1Icon{
   width: 120px;
   height: 45px;
   object-fit: contain;
   flex: 0 0 auto;
 }
 
-.interconnectivity .interPage.frameContainer{
+.interconnectivity-page .inter-frameContainer{
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   gap: 16px 30px;
 }
 
-.interconnectivity .interPage.homeParent, .interconnectivity .interPage.featuresParent, .interconnectivity .interPage.featuresWrapper, .interconnectivity .interPage.arrowRightDoubleGroup{
+.interconnectivity-page .inter-homeParent, .interconnectivity-page .inter-featuresParent, .interconnectivity-page .inter-featuresWrapper, .interconnectivity-page .inter-arrowRightDoubleGroup{
   display: inline-flex;
   align-items: center;
   gap: 5px;
 }
 
-.interconnectivity .interPage.home{ font-weight: 600; line-height: 1.5; }
-.interconnectivity .interPage.features{ line-height: 1.5; }
-.interconnectivity .interPage.featuresParent, .interconnectivity .interPage.arrowRightDoubleGroup{ color: var(--blue); }
-.interconnectivity .interPage.arrowDown01Icon{ width: 16px; height: 16px; flex: 0 0 16px; }
-.interconnectivity .interPage.frameChild{ display: flex; align-items: center; font-size: 16px; }
-.interconnectivity .interPage.frameChild:empty{ display: none; }
-.interconnectivity .interPage.signInHelp{ font-weight: 600; letter-spacing: .02em; }
+.interconnectivity-page .inter-home{ font-weight: 600; line-height: 1.5; }
+.interconnectivity-page .inter-features{ line-height: 1.5; }
+.interconnectivity-page .inter-featuresParent, .interconnectivity-page .inter-arrowRightDoubleGroup{ color: var(--blue); }
+.interconnectivity-page .inter-arrowDown01Icon{ width: 16px; height: 16px; flex: 0 0 16px; }
+.interconnectivity-page .inter-frameChild{ display: flex; align-items: center; font-size: 16px; }
+.interconnectivity-page .inter-frameChild:empty{ display: none; }
+.interconnectivity-page .inter-signInHelp{ font-weight: 600; letter-spacing: .02em; }
 
-/* These old Figma backdrop nodes contain no layout content. Keep them out
-   of flow without using offsets or a large fixed-height canvas. */
-.interconnectivity .interPage.frameItem, .interconnectivityChild{ display: none; }
-.interconnectivity .interPage.frameInner{ width: 100%; }
+.interconnectivity-page .inter-frameItem, .inter-interconnectivityChild{ display: none; }
+.interconnectivity-page .inter-frameInner{ width: 100%; }
 
-.interconnectivity .interPage.frameDiv{
+.interconnectivity-page .inter-frameDiv{
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -165,12 +142,11 @@
   color: var(--body-ink);
 }
 
-.interconnectivity .interPage.frameDiv :where(img, svg){ width: 12px; height: 12px; flex: 0 0 12px; }
-.interconnectivity .interPage.frameDiv :where(.features, .addOnModules){ font-size: inherit; line-height: inherit; }
-.interconnectivity .interPage.addOnModules{ letter-spacing: .02em; }
+.interconnectivity-page .inter-frameDiv :where(img, svg){ width: 12px; height: 12px; flex: 0 0 12px; }
+.interconnectivity-page .inter-frameDiv :where(.inter-features, .inter-addOnModules){ font-size: inherit; line-height: inherit; }
+.interconnectivity-page .inter-addOnModules{ letter-spacing: .02em; }
 
-/* 3. Hero â€” copy and illustration both reserve their own space */
-.interconnectivity .interPage.frameParent2{
+.interconnectivity-page .inter-frameParent2{
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(0, 1.08fr);
   grid-template-rows: auto 1fr auto;
@@ -184,7 +160,7 @@
   box-shadow: var(--raised);
 }
 
-.interconnectivity .interPage.frameParent3{
+.interconnectivity-page .inter-frameParent3{
   grid-column: 1;
   grid-row: 1 / 4;
   display: flex;
@@ -193,7 +169,7 @@
   gap: 40px;
 }
 
-.interconnectivity .interPage.frameParent4, .interconnectivity .interPage.frameParent5, .interconnectivity .interPage.frameParent12, .interconnectivity .interPage.frameParent13{
+.interconnectivity-page .inter-frameParent4, .interconnectivity-page .inter-frameParent5, .interconnectivity-page .inter-frameParent12, .interconnectivity-page .inter-frameParent13{
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -201,7 +177,7 @@
   gap: 24px;
 }
 
-.interconnectivity .interPage.seamlessInterconnectivityWit{
+.interconnectivity-page .inter-seamlessInterconnectivityWit{
   display: block;
   width: 100%;
   font-size: var(--heading-size);
@@ -210,7 +186,7 @@
   letter-spacing: .03em;
 }
 
-.interconnectivity .interPage.connectLearnersEducators, .interconnectivity .interPage.connectSystemsContent, .interconnectivity .interPage.connectSystemsContent3, .interconnectivity .interPage.aConnectedPlatform, .interconnectivity .interPage.connectSystemsPeople, .interconnectivity .interPage.connectYourEcosystem2{
+.interconnectivity-page .inter-connectLearnersEducators, .interconnectivity-page .inter-connectSystemsContent, .interconnectivity-page .inter-connectSystemsContent3, .interconnectivity-page .inter-aConnectedPlatform, .interconnectivity-page .inter-connectSystemsPeople, .interconnectivity-page .inter-connectYourEcosystem2{
   display: block;
   width: 100%;
   font-size: var(--body-size);
@@ -220,9 +196,7 @@
   color: var(--body-ink);
 }
 
-/* Concentric artwork uses a shared grid cell, never page coordinates.
-   Aspect ratio reserves space before image/font loading. */
-.interconnectivity .interPage.ellipseParent{
+.interconnectivity-page .inter-ellipseParent{
   grid-column: 2;
   grid-row: 1 / 4;
   justify-self: center;
@@ -235,9 +209,9 @@
   color: var(--blue);
 }
 
-.interconnectivity .interPage.ellipseDiv, .interconnectivity .interPage.ellipseIcon, .interconnectivity .interPage.frameChild2, .interconnectivity .interPage.hierarchySquare06Parent{ grid-area: 1 / 1; }
+.interconnectivity-page .inter-ellipseDiv, .interconnectivity-page .inter-ellipseIcon, .interconnectivity-page .inter-frameChild2, .interconnectivity-page .inter-hierarchySquare06Parent{ grid-area: 1 / 1; }
 
-.interconnectivity .interPage.ellipseDiv{
+.interconnectivity-page .inter-ellipseDiv{
   width: 54.23%;
   aspect-ratio: 1;
   border-radius: 50%;
@@ -246,17 +220,18 @@
   z-index: 2;
 }
 
-.interconnectivity .interPage.ellipseIcon, .interconnectivity .interPage.frameChild2{
+.interconnectivity-page .inter-ellipseIcon, .interconnectivity-page .inter-frameChild2{
+  height: auto;
   aspect-ratio: 1;
   border: 2px dashed;
   border-radius: 50%;
   filter: drop-shadow(0 4px 4px rgba(0, 0, 0, .25));
 }
 
-.interconnectivity .interPage.ellipseIcon{ width: 76.89%; border-color: #67096e; z-index: 1; }
-.interconnectivity .interPage.frameChild2{ width: 100%; border-color: #bf1869; z-index: 0; }
+.interconnectivity-page .inter-ellipseIcon{ width: 76.89%; border-color: #67096e; z-index: 1; }
+.interconnectivity-page .inter-frameChild2{ width: 100%; border-color: #bf1869; z-index: 0; }
 
-.interconnectivity .interPage.hierarchySquare06Parent{
+.interconnectivity-page .inter-hierarchySquare06Parent{
   width: 44%;
   display: flex;
   flex-direction: column;
@@ -266,7 +241,7 @@
   text-align: center;
 }
 
-.interconnectivity .interPage.hierarchySquare06Icon{
+.interconnectivity-page .inter-hierarchySquare06Icon{
   width: 32%;
   max-width: 60px;
   height: auto;
@@ -275,14 +250,13 @@
   filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, .25));
 }
 
-.interconnectivity .interPage.neurolxpWrapper, .interconnectivity .interPage.neurolxpTxt, .interconnectivity .interPage.breakSilosBuildContainer2{ width: 100%; }
-.interconnectivity .interPage.neurolxp{ font-size: clamp(18px, 2.5vw, 36px); line-height: 1.12; letter-spacing: -.03em; }
-.interconnectivity .interPage.neurolxp2{ line-height: inherit; }
-.interconnectivity .interPage.span{ font-size: .61em; line-height: inherit; }
-.interconnectivity .interPage.span2{ font-size: .33em; line-height: inherit; }
+.interconnectivity-page .inter-neurolxpWrapper, .interconnectivity-page .inter-neurolxpTxt, .interconnectivity-page .inter-breakSilosBuildContainer2{ width: 100%; }
+.interconnectivity-page .inter-neurolxp{ font-size: clamp(18px, 2.5vw, 36px); line-height: 1.12; letter-spacing: -.03em; }
+.interconnectivity-page .inter-neurolxp2{ line-height: inherit; }
+.interconnectivity-page .inter-span{ font-size: .61em; line-height: inherit; }
+.interconnectivity-page .inter-span2{ font-size: .33em; line-height: inherit; }
 
-/* The orbit decoration is scoped to its responsive illustration. */
-.interconnectivity .interPage.smallHierarchyIcon{
+.interconnectivity-page .inter-smallHierarchyIcon{
   position: absolute;
   top: 0;
   left: 0;
@@ -294,17 +268,17 @@
   offset-distance: 25%;
   offset-rotate: 0deg;
   offset-anchor: center;
-  animation: smallHierarchyOrbit 10s linear infinite;
+  animation: interconnectivityHierarchyOrbit 10s linear infinite;
   pointer-events: none;
   z-index: 4;
 }
 
-@keyframes smallHierarchyOrbit {
+@keyframes interconnectivityHierarchyOrbit {
   from { offset-distance: 25%; }
   to { offset-distance: 125%; }
 }
 
-.interconnectivity .interPage.frameParent6, .interconnectivity .interPage.frameParent7{
+.interconnectivity-page .inter-frameParent6, .interconnectivity-page .inter-frameParent7{
   grid-column: 2;
   display: flex;
   flex-wrap: wrap;
@@ -315,10 +289,10 @@
   font-size: 16px;
   text-align: center;
 }
-.interconnectivity .interPage.frameParent6{ grid-row: 1; align-self: start; }
-.interconnectivity .interPage.frameParent7{ grid-row: 3; align-self: end; }
+.interconnectivity-page .inter-frameParent6{ grid-row: 1; align-self: start; }
+.interconnectivity-page .inter-frameParent7{ grid-row: 3; align-self: end; }
 
-.interconnectivity .interPage.userGroup02Parent, .interconnectivity .interPage.bankParent, .interconnectivity .interPage.analyticsUpParent{
+.interconnectivity-page .inter-userGroup02Parent, .interconnectivity-page .inter-bankParent, .interconnectivity-page .inter-analyticsUpParent{
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -330,11 +304,10 @@
   color: var(--blue);
   box-shadow: var(--raised);
 }
-.interconnectivity .interPage.userGroup02Icon{ width: 32px; height: 32px; flex: 0 0 32px; object-fit: contain; }
-.interconnectivity .interPage.learners{ line-height: 1.5; letter-spacing: .02em; }
+.interconnectivity-page .inter-userGroup02Icon{ width: 32px; height: 32px; flex: 0 0 32px; object-fit: contain; }
+.interconnectivity-page .inter-learners{ line-height: 1.5; letter-spacing: .02em; }
 
-/* 4. Reference controls: blue text, 8px buttons, rounded inset badges */
-.interconnectivity .interPage.frameWrapper, .interconnectivity .interPage.bookDemoBtn, .interconnectivity .interPage.signInHelpWrapper{
+.interconnectivity-page .inter-frameWrapper, .interconnectivity-page .inter-bookDemoBtn, .interconnectivity-page .inter-signInHelpWrapper{
   appearance: none;
   display: inline-flex;
   align-items: center;
@@ -366,9 +339,9 @@
   touch-action: manipulation;
   transition: box-shadow .2s ease;
 }
-.interconnectivity .interPage.signInHelpWrapper{ min-height: 44px; padding: 8px 24px; font-size: 16px; line-height: 28px; }
+.interconnectivity-page .inter-signInHelpWrapper{ min-height: 44px; padding: 8px 24px; font-size: 16px; line-height: 28px; }
 
-.interconnectivity .interPage.bookADemoWrapper{
+.interconnectivity-page .inter-bookADemoWrapper{
   appearance: none;
   display: inline-flex;
   justify-content: center;
@@ -382,10 +355,9 @@
   text-decoration: none;
   cursor: pointer;
 }
-.interconnectivity .interPage.bookADemo{ color: inherit; font: inherit; letter-spacing: inherit; }
+.interconnectivity-page .inter-bookADemo{ color: inherit; font: inherit; letter-spacing: inherit; }
 
-/* Existing modal trigger wrappers retain their click handlers. */
-.interconnectivity button:has(> .frameWrapper), .interconnectivity button:has(> .bookDemoBtn){
+.interconnectivity-page button:has(> .inter-frameWrapper), .interconnectivity-page button:has(> .inter-bookDemoBtn){
   appearance: none;
   display: inline-flex;
   flex: 0 0 auto;
@@ -400,20 +372,20 @@
   cursor: pointer;
 }
 
-.interconnectivity .interPage.frameWrapper :where(button, a, span, svg), .interconnectivity .interPage.bookDemoBtn :where(button, a, span, svg), .interconnectivity .interPage.signInHelpWrapper :where(button, a, span, svg){ color: inherit; font: inherit; letter-spacing: inherit; text-decoration: none; }
+.interconnectivity-page .inter-frameWrapper :where(button, a, span, svg), .interconnectivity-page .inter-bookDemoBtn :where(button, a, span, svg), .interconnectivity-page .inter-signInHelpWrapper :where(button, a, span, svg){ color: inherit; font: inherit; letter-spacing: inherit; text-decoration: none; }
 
-.interconnectivity .interPage.frameWrapper:is(:hover, .interconnectivity :active, .interconnectivity :focus, .interconnectivity :visited), .interconnectivity .interPage.bookDemoBtn:is(:hover, .interconnectivity :active, .interconnectivity :focus, .interconnectivity :visited), .interconnectivity .interPage.signInHelpWrapper:is(:hover, .interconnectivity :active, .interconnectivity :focus, .interconnectivity :visited){ background: var(--surface); color: var(--blue); transform: none; }
+.interconnectivity-page .inter-frameWrapper:is(:hover, :active, :focus, :visited), .interconnectivity-page .inter-bookDemoBtn:is(:hover, :active, :focus, :visited), .interconnectivity-page .inter-signInHelpWrapper:is(:hover, :active, :focus, :visited){ background: var(--surface); color: var(--blue); transform: none; }
 
-.interconnectivity .interPage.frameWrapper:active:not(:disabled):not([aria-disabled="true"]), .interconnectivity .interPage.bookDemoBtn:active:not(:disabled):not([aria-disabled="true"]), .interconnectivity .interPage.signInHelpWrapper:active:not(:disabled):not([aria-disabled="true"]){ box-shadow: var(--inset); }
+.interconnectivity-page .inter-frameWrapper:active:not(:disabled):not([aria-disabled="true"]), .interconnectivity-page .inter-bookDemoBtn:active:not(:disabled):not([aria-disabled="true"]), .interconnectivity-page .inter-signInHelpWrapper:active:not(:disabled):not([aria-disabled="true"]){ box-shadow: var(--inset); }
 
-.interconnectivity .interPage.frameWrapper:is(:disabled, .interconnectivity [aria-disabled="true"]), .interconnectivity .interPage.bookDemoBtn:is(:disabled, .interconnectivity [aria-disabled="true"]), .interconnectivity .interPage.signInHelpWrapper:is(:disabled, .interconnectivity [aria-disabled="true"]){ opacity: .55; cursor: not-allowed; box-shadow: var(--raised); }
+.interconnectivity-page .inter-frameWrapper:is(:disabled, [aria-disabled="true"]), .interconnectivity-page .inter-bookDemoBtn:is(:disabled, [aria-disabled="true"]), .interconnectivity-page .inter-signInHelpWrapper:is(:disabled, [aria-disabled="true"]){ opacity: .55; cursor: not-allowed; box-shadow: var(--raised); }
 
-.interconnectivity :where(button, a, [role="button"]):focus-visible, .interconnectivity .interPage.frameWrapper:focus-visible, .interconnectivity .interPage.bookDemoBtn:focus-visible, .interconnectivity .interPage.signInHelpWrapper:focus-visible{
+.interconnectivity-page :where(button, a, [role="button"]):focus-visible, .interconnectivity-page .inter-frameWrapper:focus-visible, .interconnectivity-page .inter-bookDemoBtn:focus-visible, .interconnectivity-page .inter-signInHelpWrapper:focus-visible{
   outline: 3px solid var(--blue);
   outline-offset: 3px;
 }
 
-.interconnectivity .interPage.frameIcon, .interconnectivity .interPage.coreFeaturesBadge, .interconnectivity .interPage.whyNeuroLxpBadge, .interconnectivity .interPage.useCasesBadge, .interconnectivity .interPage.howItWorksBadge{
+.interconnectivity-page .inter-frameIcon, .interconnectivity-page .inter-coreFeaturesBadge, .interconnectivity-page .inter-whyNeuroLxpBadge, .interconnectivity-page .inter-useCasesBadge, .interconnectivity-page .inter-howItWorksBadge{
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -438,20 +410,18 @@
   white-space: normal;
   overflow-wrap: anywhere;
 }
-.interconnectivity .interPage.coreFeaturesBadge{ margin-inline: auto; }
-.interconnectivity .interPage.coreFeaturesBadge span, .interconnectivity .interPage.useCasesBadge span, .interconnectivity .interPage.whyNeuroLxpText, .interconnectivity .interPage.howItWorksBadgeText{ color: var(--blue); font: inherit; letter-spacing: inherit; }
-.interconnectivity .interPage.whyNeuroLxpTm{ display: inline; vertical-align: super; font-size: 10px; line-height: 0; letter-spacing: 0; }
+.interconnectivity-page .inter-coreFeaturesBadge{ margin-inline: auto; }
+.interconnectivity-page .inter-coreFeaturesBadge span, .interconnectivity-page .inter-useCasesBadge span, .interconnectivity-page .inter-whyNeuroLxpText, .interconnectivity-page .inter-howItWorksBadgeText{ color: var(--blue); font: inherit; letter-spacing: inherit; }
+.interconnectivity-page .inter-whyNeuroLxpTm{ display: inline; vertical-align: super; font-size: 10px; line-height: 0; letter-spacing: 0; }
 
-/* Legacy image badge slots: retain the supplied artwork's aspect ratio. */
-.interconnectivity .interPage.frameChild3, .interconnectivity .interPage.frameChild19, .interconnectivity .interPage.frameChild24, .interconnectivity .interPage.frameChild33, .interconnectivity .interPage.frameChild45{ display: block; width: auto; max-width: 100%; height: auto; border-radius: 28px; object-fit: contain; }
-.interconnectivity .interPage.frameChild3{ max-width: 214px; }
-.interconnectivity .interPage.frameChild19{ max-width: 213px; }
-.interconnectivity .interPage.frameChild24{ max-width: 164px; }
-.interconnectivity .interPage.frameChild33{ max-width: 240px; }
-.interconnectivity .interPage.frameChild45{ max-width: 255px; box-shadow: var(--raised); }
+.interconnectivity-page .inter-frameChild3, .interconnectivity-page .inter-frameChild19, .interconnectivity-page .inter-frameChild24, .interconnectivity-page .inter-frameChild33, .interconnectivity-page .inter-frameChild45{ display: block; width: auto; max-width: 100%; height: auto; border-radius: 28px; object-fit: contain; }
+.interconnectivity-page .inter-frameChild3{ max-width: 214px; }
+.interconnectivity-page .inter-frameChild19{ max-width: 213px; }
+.interconnectivity-page .inter-frameChild24{ max-width: 164px; }
+.interconnectivity-page .inter-frameChild33{ max-width: 240px; }
+.interconnectivity-page .inter-frameChild45{ max-width: 255px; box-shadow: var(--raised); }
 
-/* 5. Section headers */
-.interconnectivity .interPage.frameParent8, .interconnectivity .interPage.frameParent19, .interconnectivity .interPage.frameParent22, .interconnectivity .interPage.connectedLearningEcosystemParent{
+.interconnectivity-page .inter-frameParent8, .interconnectivity-page .inter-frameParent19, .interconnectivity-page .inter-frameParent22, .interconnectivity-page .inter-connectedLearningEcosystemParent{
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -459,7 +429,7 @@
   text-align: center;
 }
 
-.interconnectivity .interPage.frameParent9, .interconnectivity .interPage.frameParent20, .interconnectivity .interPage.frameParent23{
+.interconnectivity-page .inter-frameParent9, .interconnectivity-page .inter-frameParent20, .interconnectivity-page .inter-frameParent23{
   width: 100%;
   max-width: 1103px;
   display: flex;
@@ -468,7 +438,7 @@
   gap: 32px;
 }
 
-.interconnectivity .interPage.oneConnectedPlatformForModParent, .interconnectivity .interPage.builtForDiverseLearningEnvParent, .interconnectivity .interPage.connectYourEcosystemInFourParent{
+.interconnectivity-page .inter-oneConnectedPlatformForModParent, .interconnectivity-page .inter-builtForDiverseLearningEnvParent, .interconnectivity-page .inter-connectYourEcosystemInFourParent{
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -476,7 +446,7 @@
   gap: 24px;
 }
 
-.interconnectivity .interPage.oneConnectedPlatform, .interconnectivity .interPage.breakSilosBuildContainer, .interconnectivity .interPage.builtForDiverse, .interconnectivity .interPage.connectedLearningEcosystem, .interconnectivity .interPage.readyToConnectContainer, .interconnectivity .interPage.keyBenefits{
+.interconnectivity-page .inter-oneConnectedPlatform, .interconnectivity-page .inter-breakSilosBuildContainer, .interconnectivity-page .inter-builtForDiverse, .interconnectivity-page .inter-connectedLearningEcosystem, .interconnectivity-page .inter-readyToConnectContainer, .interconnectivity-page .inter-keyBenefits{
   display: block;
   width: 100%;
   font-size: var(--heading-size);
@@ -484,15 +454,14 @@
   line-height: var(--heading-leading);
   letter-spacing: .03em;
 }
-.interconnectivity .interPage.oneConnectedPlatform{ max-width: 740px; }
-.interconnectivity .interPage.builtForDiverse{ max-width: 1000px; }
-.interconnectivity .interPage.aConnectedPlatform{ max-width: 900px; }
-.interconnectivity .interPage.breakSilos, .interconnectivity .interPage.buildConnectedLearning, .interconnectivity .interPage.learningEcosystem{ line-height: inherit; }
-.interconnectivity .interPage.buildConnectedLearning{ color: var(--body-ink); }
-.interconnectivity .interPage.learningEcosystem, .interconnectivity .interPage.learningBlue{ color: var(--blue); }
+.interconnectivity-page .inter-oneConnectedPlatform{ max-width: 740px; }
+.interconnectivity-page .inter-builtForDiverse{ max-width: 1000px; }
+.interconnectivity-page .inter-aConnectedPlatform{ max-width: 900px; }
+.interconnectivity-page .inter-breakSilos, .interconnectivity-page .inter-buildConnectedLearning, .interconnectivity-page .inter-learningEcosystem{ line-height: inherit; }
+.interconnectivity-page .inter-buildConnectedLearning{ color: var(--body-ink); }
+.interconnectivity-page .inter-learningEcosystem, .interconnectivity-page .inter-learningBlue{ color: var(--blue); }
 
-/* 6. Core feature cards â€” artwork layers share grid cells; text stays in flow */
-.interconnectivity .interPage.frameParent10, .interconnectivity .interPage.frameParent21{
+.interconnectivity-page .inter-frameParent10, .interconnectivity-page .inter-frameParent21{
   width: 100%;
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -500,14 +469,14 @@
   gap: 25px;
 }
 
-.interconnectivity .interPage.frameWrapper2, .interconnectivity .interPage.frameWrapper3, .interconnectivity .interPage.frameWrapper4{ display: grid; width: 100%; }
-.interconnectivity .interPage.frameWrapper2{ color: var(--blue); }
-.interconnectivity .interPage.frameWrapper3{ color: #bf1869; }
-.interconnectivity .interPage.frameWrapper4{ color: #67096e; }
+.interconnectivity-page .inter-frameWrapper2, .interconnectivity-page .inter-frameWrapper3, .interconnectivity-page .inter-frameWrapper4{ display: grid; width: 100%; }
+.interconnectivity-page .inter-frameWrapper2{ color: var(--blue); }
+.interconnectivity-page .inter-frameWrapper3{ color: #bf1869; }
+.interconnectivity-page .inter-frameWrapper4{ color: #67096e; }
 
-.interconnectivity .interPage.rectangleParent, .interconnectivity .interPage.rectangleGroup, .interconnectivity .interPage.rectangleParent2{
+.interconnectivity-page .inter-rectangleParent, .interconnectivity-page .inter-rectangleGroup, .interconnectivity-page .inter-rectangleParent2{
   position: relative;
-  overflow: hidden;
+  overflow: visible;
   display: grid;
   grid-template-columns: minmax(0, 1fr);
   grid-template-rows: 75px minmax(min-content, 1fr) 12px;
@@ -518,32 +487,38 @@
   border-radius: 24px;
   text-align: center;
 }
-.interconnectivity .interPage.rectangleParent2{ color: #c05512; }
+.interconnectivity-page .inter-rectangleParent2{ color: #c05512; }
 
-.interconnectivity .interPage.rectangleDiv, .interconnectivity .interPage.frameChild4{
+/* Each feature card has one raised surface. The old outer surface produced
+   the faint, clipped second outline around the card. */
+.interconnectivity-page .inter-frameParent10 .inter-rectangleDiv{
+  display: none;
+}
+
+.interconnectivity-page .inter-frameChild4{
   grid-area: 1 / 1 / 4 / 2;
+  margin: 24px 24px 0;
   border-radius: 24px;
   background: var(--surface);
   box-shadow: var(--raised);
   pointer-events: none;
-  z-index: -1;
+  z-index: 0;
 }
-.interconnectivity .interPage.frameChild4{ margin: 24px; }
 
-.interconnectivity .interPage.unifiedLearningEcosystemParent, .interconnectivity .interPage.collaborativeLearningParent, .interconnectivity .interPage.systemIntegrationsParent{
+.interconnectivity-page .inter-unifiedLearningEcosystemParent, .interconnectivity-page .inter-collaborativeLearningParent, .interconnectivity-page .inter-systemIntegrationsParent{
   grid-area: 2 / 1;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 8px;
-  padding-inline: 24px;
-  font-size: 22px;
+  padding-inline: 36px;
+  font-size: clamp(20px, 1.6vw, 22px);
   line-height: 1.45;
+  z-index: 1;
 }
 
-/* Keep every core-feature card title and description aligned uniformly. */
-.interconnectivity .interPage.unifiedLearningEcosystem, .interconnectivity .interPage.collaborativeLearning, .interconnectivity .interPage.systemIntegrations, .interconnectivity .interPage.centralizedDataAndInsights{
+.interconnectivity-page .inter-unifiedLearningEcosystem, .interconnectivity-page .inter-collaborativeLearning, .interconnectivity-page .inter-systemIntegrations, .interconnectivity-page .inter-centralizedDataAndInsights{
   width: 100%;
   min-height: 64px;
   display: flex;
@@ -554,14 +529,16 @@
   text-align: center;
 }
 
-/* Keep the core-card headings visually uniform at two lines.
-   Only the text width is constrained; the cards themselves are unchanged. */
-.interconnectivity .interPage.unifiedLearningEcosystem{ max-width: 220px; }
-.interconnectivity .interPage.collaborativeLearning{ max-width: 190px; }
-.interconnectivity .interPage.systemIntegrations{ max-width: 155px; }
-.interconnectivity .interPage.centralizedDataAndInsights{ max-width: 230px; }
+.interconnectivity-page .inter-unifiedLearningEcosystem{ max-width: 220px; }
+.interconnectivity-page .inter-collaborativeLearning{ max-width: 190px; }
+.interconnectivity-page .inter-systemIntegrations{ max-width: 155px; }
+.interconnectivity-page .inter-centralizedDataAndInsights{ max-width: 230px; }
+/* Existing markup uses the same title class in all four cards. */
+.interconnectivity-page .inter-frameWrapper3 .inter-unifiedLearningEcosystem{ max-width: 190px; }
+.interconnectivity-page .inter-frameWrapper4 .inter-unifiedLearningEcosystem{ max-width: 155px; }
+.interconnectivity-page .inter-rectangleParent2 .inter-unifiedLearningEcosystem{ max-width: 230px; }
 
-.interconnectivity .interPage.enableSharingAnd, .interconnectivity .interPage.connectLmsHrms{
+.interconnectivity-page .inter-enableSharingAnd, .interconnectivity-page .inter-connectLmsHrms{
   width: 100%;
   min-height: 52px;
   display: flex;
@@ -574,48 +551,49 @@
   text-align: center;
 }
 
-.interconnectivity .interPage.frameChild5, .interconnectivity .interPage.featureIconTop{
+.interconnectivity-page .inter-frameChild5, .interconnectivity-page .inter-featureIconTop{
   grid-area: 1 / 1;
   justify-self: center;
   align-self: start;
   width: 90px;
   height: 75px;
   border-radius: 0 0 36px 36px;
+  z-index: 1;
 }
-.interconnectivity .interPage.featureIconTop{ display: grid; place-items: center; }
-.interconnectivity .interPage.featureIconTopBlue{ background: var(--blue); }
-.interconnectivity .interPage.featureIconTopPink{ background: #c91570; }
-.interconnectivity .interPage.featureIconTopPurple{ background: #67096e; }
-.interconnectivity .interPage.featureIconTopGreen{ background: #287c0b; }
-.interconnectivity .interPage.featureCardIcon{ display: block; width: 40px; height: 40px; object-fit: contain; }
-.interconnectivity .interPage.frameChild6, .interconnectivity .interPage.frameChild8, .interconnectivity .interPage.frameChild12, .interconnectivity .interPage.frameChild16{
+.interconnectivity-page .inter-featureIconTop{ display: grid; place-items: center; }
+.interconnectivity-page .inter-featureIconTopBlue{ background: var(--blue); }
+.interconnectivity-page .inter-featureIconTopPink{ background: #c91570; }
+.interconnectivity-page .inter-featureIconTopPurple{ background: #67096e; }
+.interconnectivity-page .inter-featureIconTopGreen{ background: #287c0b; }
+.interconnectivity-page .inter-featureCardIcon{ display: block; width: 40px; height: 40px; object-fit: contain; }
+.interconnectivity-page .inter-frameChild6, .interconnectivity-page .inter-frameChild8, .interconnectivity-page .inter-frameChild12, .interconnectivity-page .inter-frameChild16{
   grid-area: 3 / 1;
   justify-self: center;
   align-self: end;
   width: 78px;
   height: 12px;
   border-radius: 50px 50px 0 0;
+  z-index: 1;
 }
-.interconnectivity .interPage.frameChild6{ background: var(--blue); }
-.interconnectivity .interPage.frameChild8{ background: #bf1869; }
-.interconnectivity .interPage.frameChild12{ background: #67096e; }
-.interconnectivity .interPage.frameChild16{ background: #2a7308; }
+.interconnectivity-page .inter-frameChild6{ background: var(--blue); }
+.interconnectivity-page .inter-frameChild8{ background: #bf1869; }
+.interconnectivity-page .inter-frameChild12{ background: #67096e; }
+.interconnectivity-page .inter-frameChild16{ background: #2a7308; }
 
-/* 7. Why NeuroLXP and benefits */
-.interconnectivity .interPage.frameParent11{
+.interconnectivity-page .inter-frameParent11{
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(0, 1.2fr);
   align-items: center;
   gap: clamp(32px, 7vw, 100px);
 }
-.interconnectivity .interPage.frameWrapper5{ width: 100%; }
-.interconnectivity .interPage.keyBenefitsParent, .interconnectivity .interPage.frameParent14{ display: flex; flex-direction: column; width: 100%; gap: 24px; }
-.interconnectivity .interPage.keyBenefitsParent{ gap: 32px; }
-.interconnectivity .interPage.frameParent15{ display: flex; align-items: center; gap: 16px; width: 100%; }
-.interconnectivity .interPage.frameChild20, .interconnectivity .interPage.frameChild21{ width: var(--icon-size); height: var(--icon-size); object-fit: contain; flex: 0 0 var(--icon-size); }
-.interconnectivity .interPage.onePlatformFor, .interconnectivity .interPage.seamlessSystemIntegration, .interconnectivity .interPage.betterCollaborationAnd, .interconnectivity .interPage.clearerLearningPerformance{ flex: 1; font-size: var(--label-size); line-height: 1.5; letter-spacing: .03em; }
+.interconnectivity-page .inter-frameWrapper5{ width: 100%; }
+.interconnectivity-page .inter-keyBenefitsParent, .interconnectivity-page .inter-frameParent14{ display: flex; flex-direction: column; width: 100%; gap: 24px; }
+.interconnectivity-page .inter-keyBenefitsParent{ gap: 32px; }
+.interconnectivity-page .inter-frameParent15{ display: flex; align-items: center; gap: 16px; width: 100%; }
+.interconnectivity-page .inter-frameChild20, .interconnectivity-page .inter-frameChild21{ width: var(--icon-size); height: var(--icon-size); object-fit: contain; flex: 0 0 var(--icon-size); }
+.interconnectivity-page .inter-onePlatformFor, .interconnectivity-page .inter-seamlessSystemIntegration, .interconnectivity-page .inter-betterCollaborationAnd, .interconnectivity-page .inter-clearerLearningPerformance{ flex: 1; font-size: var(--label-size); line-height: 1.5; letter-spacing: .03em; }
 
-.interconnectivity .interPage.benefitIconFrame, .interconnectivity .interPage.ecosystemIconFrame{
+.interconnectivity-page .inter-benefitIconFrame, .interconnectivity-page .inter-ecosystemIconFrame{
   width: var(--icon-size);
   height: var(--icon-size);
   flex: 0 0 var(--icon-size);
@@ -625,22 +603,21 @@
   background: var(--surface);
   box-shadow: inset -4px -4px 8px #fff, inset 4px 4px 8px rgba(196, 196, 196, .8);
 }
-.interconnectivity .interPage.benefitIconCircle, .interconnectivity .interPage.ecosystemIconCircle{ width: 72%; aspect-ratio: 1; display: grid; place-items: center; border-radius: 50%; box-shadow: var(--raised); }
-.interconnectivity .interPage.benefitIconCircle{ background: #67096e; }
-.interconnectivity .interPage.benefitIconImage, .interconnectivity .interPage.ecosystemIconImage{ display: block; width: 68%; height: auto; aspect-ratio: 1; object-fit: contain; }
-.interconnectivity .interPage.benefitPink{ background: #c91570; }
-.interconnectivity .interPage.benefitPurple{ background: #67096e; }
-.interconnectivity .interPage.benefitBlue{ background: var(--blue); }
-.interconnectivity .interPage.benefitTeal{ background: #0b7c84; }
-.interconnectivity .interPage.ecosystemIconPink{ background: #bf1869; }
-.interconnectivity .interPage.ecosystemIconBlue{ background: var(--blue); }
-.interconnectivity .interPage.ecosystemIconTeal{ background: #087f84; }
-.interconnectivity .interPage.ecosystemIconOrange{ background: #c9550a; }
-.interconnectivity .interPage.ecosystemIconMaroon{ background: #67003d; }
+.interconnectivity-page .inter-benefitIconCircle, .interconnectivity-page .inter-ecosystemIconCircle{ width: 72%; aspect-ratio: 1; display: grid; place-items: center; border-radius: 50%; box-shadow: var(--raised); }
+.interconnectivity-page .inter-benefitIconCircle{ background: #67096e; }
+.interconnectivity-page .inter-benefitIconImage, .interconnectivity-page .inter-ecosystemIconImage{ display: block; width: 68%; height: auto; aspect-ratio: 1; object-fit: contain; }
+.interconnectivity-page .inter-benefitPink{ background: #c91570; }
+.interconnectivity-page .inter-benefitPurple{ background: #67096e; }
+.interconnectivity-page .inter-benefitBlue{ background: var(--blue); }
+.interconnectivity-page .inter-benefitTeal{ background: #0b7c84; }
+.interconnectivity-page .inter-ecosystemIconPink{ background: #bf1869; }
+.interconnectivity-page .inter-ecosystemIconBlue{ background: var(--blue); }
+.interconnectivity-page .inter-ecosystemIconTeal{ background: #087f84; }
+.interconnectivity-page .inter-ecosystemIconOrange{ background: #c9550a; }
+.interconnectivity-page .inter-ecosystemIconMaroon{ background: #67003d; }
 
-/* 8. Use-case cards */
-.interconnectivity .interPage.frameWrapper6{ display: grid; width: 100%; color: var(--body-ink); }
-.interconnectivity .interPage.rectangleParent3{
+.interconnectivity-page .inter-frameWrapper6{ display: grid; width: 100%; color: var(--body-ink); }
+.interconnectivity-page .inter-rectangleParent3{
   display: grid;
   grid-template-columns: minmax(0, 1fr);
   grid-template-rows: auto minmax(min-content, 1fr);
@@ -649,26 +626,25 @@
   border-radius: 24px;
   text-align: center;
 }
-.interconnectivity .interPage.frameChild25{ grid-area: 1 / 1 / 3 / 2; border-radius: 24px; background: var(--surface); box-shadow: var(--raised); z-index: -1; pointer-events: none; }
-.interconnectivity .interPage.frameChild26, .interconnectivity .interPage.frameChild28{ grid-area: 1 / 1; display: block; width: 100%; height: auto; aspect-ratio: 300 / 204; border-radius: 24px; object-fit: cover; }
-.interconnectivity .interPage.universitiesAndHigher{ grid-area: 2 / 1; display: block; padding: 20px 24px; font-size: 18px; line-height: 1.45; letter-spacing: .02em; }
+.interconnectivity-page .inter-frameChild25{ grid-area: 1 / 1 / 3 / 2; border-radius: 24px; background: var(--surface); box-shadow: var(--raised); z-index: -1; pointer-events: none; }
+.interconnectivity-page .inter-frameChild26, .interconnectivity-page .inter-frameChild28{ grid-area: 1 / 1; display: block; width: 100%; height: auto; aspect-ratio: 300 / 204; border-radius: 24px; object-fit: cover; }
+.interconnectivity-page .inter-universitiesAndHigher{ grid-area: 2 / 1; display: block; padding: 20px 24px; font-size: 18px; line-height: 1.45; letter-spacing: .02em; }
 
-/* 9. How it works â€” numbered panels grow with their labels */
-.interconnectivity .interPage.frameParent24{ display: flex; flex-direction: column; width: 100%; max-width: 1120px; margin-inline: auto; gap: 28px; text-align: left; }
-.interconnectivity .interPage.frameParent25, .interconnectivity .interPage.frameParent30{ display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); align-items: stretch; gap: 48px; width: 100%; }
-.interconnectivity .interPage.frameWrapper10, .interconnectivity .interPage.frameWrapper11, .interconnectivity .interPage.frameWrapper12, .interconnectivity .interPage.frameWrapper13{ display: grid; width: 100%; }
-.interconnectivity .interPage.frameWrapper10{ color: #67096e; }
-.interconnectivity .interPage.frameWrapper11{ color: #bf1869; }
-.interconnectivity .interPage.frameWrapper12, .interconnectivity .interPage.frameParent30{ color: #67096e; }
-.interconnectivity .interPage.frameWrapper13{ color: #134e4a; }
-.interconnectivity .interPage.frameParent26{
+.interconnectivity-page .inter-frameParent24{ display: flex; flex-direction: column; width: 100%; max-width: 1120px; margin-inline: auto; gap: 28px; text-align: left; }
+.interconnectivity-page .inter-frameParent25, .interconnectivity-page .inter-frameParent30{ display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); align-items: stretch; gap: 48px; width: 100%; }
+.interconnectivity-page .inter-frameWrapper10, .interconnectivity-page .inter-frameWrapper11, .interconnectivity-page .inter-frameWrapper12, .interconnectivity-page .inter-frameWrapper13{ display: grid; width: 100%; }
+.interconnectivity-page .inter-frameWrapper10{ color: #67096e; }
+.interconnectivity-page .inter-frameWrapper11{ color: #bf1869; }
+.interconnectivity-page .inter-frameWrapper12, .interconnectivity-page .inter-frameParent30{ color: #67096e; }
+.interconnectivity-page .inter-frameWrapper13{ color: #134e4a; }
+.interconnectivity-page .inter-frameParent26{
   --number-size: var(--step-box);
   display: grid;
   grid-template-columns: var(--number-size) minmax(0, 1fr);
   align-items: center;
   width: 100%;
 }
-.interconnectivity .interPage.image20Parent{
+.interconnectivity-page .inter-image20Parent{
   grid-area: 1 / 1 / 2 / 3;
   display: grid;
   align-items: center;
@@ -681,11 +657,10 @@
   box-shadow: var(--inset);
   transition: border-color .2s ease;
 }
-/* Empty oversized Figma texture/placeholder layers are replaced by the
-   same surface and inset shadow on their parent. */
-.interconnectivity .interPage.image20, .interconnectivity .interPage.image202, .interconnectivity .interPage.frameChild34{ display: none; }
-.interconnectivity .interPage.integrateExistingSystemsAndWrapper, .interconnectivity .interPage.connectLearnersAndEducatorsWrapper{ display: flex; flex-direction: column; align-items: flex-start; justify-content: center; width: 100%; min-height: 62px; }
-.interconnectivity .interPage.integrateExistingSystems, .interconnectivity .interPage.connectLearnersAnd, .interconnectivity .interPage.enableCollaborativeLearning{
+
+.interconnectivity-page .inter-image20, .interconnectivity-page .inter-image202, .interconnectivity-page .inter-frameChild34{ display: none; }
+.interconnectivity-page .inter-integrateExistingSystemsAndWrapper, .interconnectivity-page .inter-connectLearnersAndEducatorsWrapper{ display: flex; flex-direction: column; align-items: flex-start; justify-content: center; width: 100%; min-height: 62px; }
+.interconnectivity-page .inter-integrateExistingSystems, .interconnectivity-page .inter-connectLearnersAnd, .interconnectivity-page .inter-enableCollaborativeLearning{
   width: 100%;
   min-height: 62px;
   display: flex;
@@ -696,34 +671,29 @@
   letter-spacing: .02em;
 }
 
-/* Desktop: deliberately move only one/two words onto line 2. */
-.interconnectivity .interPage.integrateExistingSystems{ max-width: 330px; }
-.interconnectivity .interPage.connectLearnersAnd{ max-width: 300px; }
-.interconnectivity .interPage.enableCollaborativeLearning{ max-width: 265px; }
-.interconnectivity .interPage.frameParent27, .interconnectivity .interPage.frameParent32, .interconnectivity .interPage.frameParent34{ grid-area: 1 / 1; display: grid; place-items: center; min-height: var(--number-size); aspect-ratio: 1; align-self: center; width: 100%; z-index: 1; }
-.interconnectivity .interPage.frameParent34{ color: #046f73; }
-.interconnectivity .interPage.image20Wrapper{ grid-area: 1 / 1; width: 100%; height: 100%; border-radius: 24px; background: var(--surface); box-shadow: var(--raised); }
-.interconnectivity .interPage.div, .interconnectivity .interPage.div2, .interconnectivity .interPage.div4{ grid-area: 1 / 1; padding: 16px 8px; font-size: var(--step-number); font-weight: 600; line-height: 1.1; text-align: center; text-shadow: 2px 3px 3px rgba(0, 0, 0, .2); }
+.interconnectivity-page .inter-integrateExistingSystems{ max-width: 330px; }
+.interconnectivity-page .inter-connectLearnersAnd{ max-width: 300px; }
+.interconnectivity-page .inter-enableCollaborativeLearning{ max-width: 265px; }
+.interconnectivity-page .inter-frameParent27, .interconnectivity-page .inter-frameParent32, .interconnectivity-page .inter-frameParent34{ grid-area: 1 / 1; display: grid; place-items: center; min-height: var(--number-size); aspect-ratio: 1; align-self: center; width: 100%; z-index: 1; }
+.interconnectivity-page .inter-frameParent34{ color: #046f73; }
+.interconnectivity-page .inter-image20Wrapper{ grid-area: 1 / 1; width: 100%; height: 100%; border-radius: 24px; background: var(--surface); box-shadow: var(--raised); }
+.interconnectivity-page .inter-div, .interconnectivity-page .inter-div2, .interconnectivity-page .inter-div4{ grid-area: 1 / 1; padding: 16px 8px; font-size: var(--step-number); font-weight: 600; line-height: 1.1; text-align: center; text-shadow: none; }
 
-/* 10. Connected learning ecosystem */
-.interconnectivity .interPage.connectedLearningEcosystem{
+.interconnectivity-page .inter-connectedLearningEcosystem{
   background: linear-gradient(90deg, #bf1869, #2d4cc8);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
   -webkit-text-fill-color: transparent;
-  text-shadow: 4px 4px 4px rgba(0, 0, 0, .25);
+  text-shadow: none;
 }
-.interconnectivity .interPage.frameParent35{ display: flex; flex-direction: column; align-items: center; gap: 40px; width: 100%; text-align: left; }
-.interconnectivity .interPage.frameParent36, .interconnectivity .interPage.frameParent40{ display: flex; flex-wrap: wrap; justify-content: center; gap: 32px; width: 100%; }
-.interconnectivity .interPage.frameWrapper14{ flex: 0 1 calc((100% - 64px) / 3); min-height: 131px; padding: 28px 24px; border-radius: 24px; background: var(--surface); box-shadow: var(--inset); }
-.interconnectivity .interPage.frameParent37{ display: flex; align-items: center; gap: 16px; width: 100%; }
-.interconnectivity .interPage.academicLearning, .interconnectivity .interPage.trainingEcosystems, .interconnectivity .interPage.lmsIntegration, .interconnectivity .interPage.collaborativeLearning2{ flex: 1; font-size: var(--label-size); line-height: 1.5; }
+.interconnectivity-page .inter-frameParent35{ display: flex; flex-direction: column; align-items: center; gap: 40px; width: 100%; text-align: left; }
+.interconnectivity-page .inter-frameParent36, .interconnectivity-page .inter-frameParent40{ display: flex; flex-wrap: wrap; justify-content: center; gap: 32px; width: 100%; }
+.interconnectivity-page .inter-frameWrapper14{ flex: 0 1 calc((100% - 64px) / 3); min-height: 131px; padding: 28px 24px; border-radius: 24px; background: var(--surface); box-shadow: var(--inset); }
+.interconnectivity-page .inter-frameParent37{ display: flex; align-items: center; gap: 16px; width: 100%; }
+.interconnectivity-page .inter-academicLearning, .interconnectivity-page .inter-trainingEcosystems, .interconnectivity-page .inter-lmsIntegration, .interconnectivity-page .inter-collaborativeLearning2{ flex: 1; font-size: var(--label-size); line-height: 1.5; }
 
-/* 11. Final CTA â€” the copy and button determine the complete section height.
-   Only the decorative background is removed from flow. There is no fixed
-   height, percentage-height track, negative margin, or translated content. */
-.interconnectivity .interPage.ellipseGroup{
+.interconnectivity-page .inter-ellipseGroup{
   position: relative;
   inset: auto;
   display: block;
@@ -739,7 +709,7 @@
   text-align: center;
   transform: none;
 }
-.interconnectivity .interPage.frameChild43{
+.interconnectivity-page .inter-frameChild43{
   position: absolute;
   inset: 0;
   width: 100%;
@@ -749,7 +719,7 @@
   z-index: 0;
   pointer-events: none;
 }
-.interconnectivity .interPage.ellipseContainer{
+.interconnectivity-page .inter-ellipseContainer{
   position: relative;
   inset: auto;
   z-index: 1;
@@ -765,9 +735,9 @@
   box-shadow: var(--inset);
   transform: none;
 }
-/* The old empty background node is drawn by its parent. */
-.interconnectivity .interPage.frameChild44{ display: none; }
-.interconnectivity .interPage.frameParent43{
+
+.interconnectivity-page .inter-frameChild44{ display: none; }
+.interconnectivity-page .inter-frameParent43{
   position: relative;
   inset: auto;
   display: flex;
@@ -778,13 +748,12 @@
   width: 100%;
   max-width: 815px;
   height: auto;
-  transform: translateY(12px);
+  transform: none;
 }
-.interconnectivity .interPage.readyToConnectYourLearningParent{ display: flex; flex-direction: column; align-items: center; flex: 0 0 auto; gap: 20px; width: 100%; height: auto; }
-.interconnectivity .interPage.connectYourEcosystem2{ max-width: 673px; flex: 0 0 auto; }
+.interconnectivity-page .inter-readyToConnectYourLearningParent{ display: flex; flex-direction: column; align-items: center; flex: 0 0 auto; gap: 20px; width: 100%; height: auto; }
+.interconnectivity-page .inter-connectYourEcosystem2{ max-width: 673px; flex: 0 0 auto; }
 
-/* 12. Footer â€” own flow box, with explicit clearance after the entire CTA. */
-.interconnectivity .interPage.frameParent44{
+.interconnectivity-page .inter-frameParent44{
   position: relative;
   inset: auto;
   display: flow-root;
@@ -797,7 +766,7 @@
   color: var(--body-ink);
   font-size: 26px;
 }
-.interconnectivity .interPage.frameParent45, .interconnectivity .interPage.frameWrapper19{
+.interconnectivity-page .inter-frameParent45, .interconnectivity-page .inter-frameWrapper19{
   position: relative;
   inset: auto;
   display: flow-root;
@@ -810,40 +779,38 @@
   background: var(--surface);
   box-shadow: var(--inset);
 }
-/* Legacy alternate footer shells: retain the final shell if both are present. */
-.interconnectivity .interPage.frameParent45:has(~ .frameWrapper19){ display: none; }
-.interconnectivity .interPage.frameParent46{ width: min(1340px, 100%); margin-inline: auto; display: flex; flex-direction: column; align-items: stretch; gap: 24px; }
-.interconnectivity .interPage.frameParent47{ display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 40px; align-items: start; }
-.interconnectivity .interPage.frameParent48, .interconnectivity .interPage.logo01SynapseSpark1Group{ width: 100%; display: flex; flex-direction: column; align-items: flex-start; gap: 24px; }
-.interconnectivity .interPage.logo01SynapseSpark1Icon2{ width: min(299px, 100%); height: auto; aspect-ratio: 299 / 112; object-fit: contain; }
-.interconnectivity .interPage.frameParent49{ display: flex; flex-wrap: wrap; align-items: center; gap: 14px; }
-.interconnectivity .interPage.onePlatformParent{ display: flex; align-items: center; gap: 10px; }
-.interconnectivity .interPage.onePlatform{ letter-spacing: -.03em; line-height: 1.3; text-shadow: 4px 4px 4px rgba(0, 0, 0, .25); }
-.interconnectivity .interPage.sparklesIcon{ width: 23px; height: 23px; flex: 0 0 23px; }
-.interconnectivity .interPage.prgeeqGlobalSolutionsPrivatParent{ width: 100%; max-width: 459px; display: flex; flex-direction: column; gap: 4px; font-size: 16px; line-height: 1.5; }
-.interconnectivity .interPage.prgeeqGlobalSolutions{ letter-spacing: .03em; }
-.interconnectivity .interPage.prestigeAtlanta1012Container{ width: 100%; line-height: 1.5; }
-.interconnectivity .interPage.blankLine{ line-height: inherit; }
-.interconnectivity .interPage.frameParent50, .interconnectivity .interPage.frameParent57{ display: flex; flex-direction: column; align-items: flex-end; gap: 24px; width: 100%; font-size: 22px; color: var(--blue); }
-.interconnectivity .interPage.frameParent51, .interconnectivity .interPage.frameParent58{ display: grid; grid-template-columns: .8fr 1.1fr 1.1fr; align-items: start; gap: 24px; width: 100%; }
-.interconnectivity .interPage.aboutUsParent, .interconnectivity .interPage.quickLinksParent, .interconnectivity .interPage.neurolxpParent{ display: flex; flex-direction: column; align-items: flex-start; gap: 20px; width: 100%; }
-.interconnectivity .interPage.aboutUs, .interconnectivity .interPage.quickLinks, .interconnectivity .interPage.neurolxp3, .interconnectivity .interPage.neurolxp4{ line-height: 1.4; letter-spacing: -.03em; }
-.interconnectivity .interPage.ourMissionParent, .interconnectivity .interPage.ourMissionGroup, .interconnectivity .interPage.ourCustomersGroup, .interconnectivity .interPage.ourCustomersContainer{ display: flex; flex-direction: column; gap: 15px; width: 100%; font-size: 18px; line-height: 1.5; color: var(--body-ink); }
-.interconnectivity .interPage.ourMission, .interconnectivity .interPage.smartContentCreation{ line-height: 1.5; letter-spacing: .03em; }
-.interconnectivity .interPage.neurolxpGroup{ display: inline-flex; align-items: baseline; }
-.interconnectivity .interPage.neurolxp5{ line-height: inherit; }
-.interconnectivity .interPage.span3, .interconnectivity .interPage.tm{ font-size: 12px; line-height: 1; vertical-align: super; }
-.interconnectivity .interPage.frameParent52, .interconnectivity .interPage.frameParent60{ display: flex; flex-wrap: wrap; align-items: center; justify-content: flex-end; gap: 24px; width: 100%; }
-.interconnectivity .interPage.frameChild46, .interconnectivity .interPage.frameChild50{ width: 64px; height: 64px; flex: 0 0 64px; object-fit: contain; }
-.interconnectivity .interPage.copyright2026{ width: 100%; padding-top: 16px; font-size: 16px; line-height: 1.5; font-weight: 600; letter-spacing: -.03em; color: var(--blue); text-align: center; }
-.interconnectivity .interPage.frameChild55{ display: block; width: 59px; height: auto; margin-inline: auto; object-fit: contain; }
 
-/* 13. Responsive rules â€” two mutually exclusive viewport ranges.
-   Desktop >= 1200px uses the base styles above. No repeated breakpoints. */
+.interconnectivity-page .inter-frameParent45:has(~ .inter-frameWrapper19){ display: none; }
+.interconnectivity-page .inter-frameParent46{ width: min(1340px, 100%); margin-inline: auto; display: flex; flex-direction: column; align-items: stretch; gap: 24px; }
+.interconnectivity-page .inter-frameParent47{ display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 40px; align-items: start; }
+.interconnectivity-page .inter-frameParent48, .interconnectivity-page .inter-logo01SynapseSpark1Group{ width: 100%; display: flex; flex-direction: column; align-items: flex-start; gap: 24px; }
+.interconnectivity-page .inter-logo01SynapseSpark1Icon2{ width: min(299px, 100%); height: auto; aspect-ratio: 299 / 112; object-fit: contain; }
+.interconnectivity-page .inter-frameParent49{ display: flex; flex-wrap: wrap; align-items: center; gap: 14px; }
+.interconnectivity-page .inter-onePlatformParent{ display: flex; align-items: center; gap: 10px; }
+.interconnectivity-page .inter-onePlatform{ letter-spacing: -.03em; line-height: 1.3; text-shadow: none; }
+.interconnectivity-page .inter-sparklesIcon{ width: 23px; height: 23px; flex: 0 0 23px; }
+.interconnectivity-page .inter-prgeeqGlobalSolutionsPrivatParent{ width: 100%; max-width: 459px; display: flex; flex-direction: column; gap: 4px; font-size: 16px; line-height: 1.5; }
+.interconnectivity-page .inter-prgeeqGlobalSolutions{ letter-spacing: .03em; }
+.interconnectivity-page .inter-prestigeAtlanta1012Container{ width: 100%; line-height: 1.5; }
+.interconnectivity-page .inter-blankLine{ line-height: inherit; }
+.interconnectivity-page .inter-frameParent50, .interconnectivity-page .inter-frameParent57{ display: flex; flex-direction: column; align-items: flex-end; gap: 24px; width: 100%; font-size: 22px; color: var(--blue); }
+.interconnectivity-page .inter-frameParent51, .interconnectivity-page .inter-frameParent58{ display: grid; grid-template-columns: .8fr 1.1fr 1.1fr; align-items: start; gap: 24px; width: 100%; }
+.interconnectivity-page .inter-aboutUsParent, .interconnectivity-page .inter-quickLinksParent, .interconnectivity-page .inter-neurolxpParent{ display: flex; flex-direction: column; align-items: flex-start; gap: 20px; width: 100%; }
+.interconnectivity-page .inter-aboutUs, .interconnectivity-page .inter-quickLinks, .interconnectivity-page .inter-neurolxp3, .interconnectivity-page .inter-neurolxp4{ line-height: 1.4; letter-spacing: -.03em; }
+.interconnectivity-page .inter-ourMissionParent, .interconnectivity-page .inter-ourMissionGroup, .interconnectivity-page .inter-ourCustomersGroup, .interconnectivity-page .inter-ourCustomersContainer{ display: flex; flex-direction: column; gap: 15px; width: 100%; font-size: 18px; line-height: 1.5; color: var(--body-ink); }
+.interconnectivity-page .inter-ourMission, .interconnectivity-page .inter-smartContentCreation{ line-height: 1.5; letter-spacing: .03em; }
+.interconnectivity-page .inter-neurolxpGroup{ display: inline-flex; align-items: baseline; }
+.interconnectivity-page .inter-neurolxp5{ line-height: inherit; }
+.interconnectivity-page .inter-span3, .interconnectivity-page .inter-tm{ font-size: 12px; line-height: 1; vertical-align: super; }
+.interconnectivity-page .inter-frameParent52, .interconnectivity-page .inter-frameParent60{ display: flex; flex-wrap: wrap; align-items: center; justify-content: flex-end; gap: 24px; width: 100%; }
+.interconnectivity-page .inter-frameChild46, .interconnectivity-page .inter-frameChild50{ width: 64px; height: 64px; flex: 0 0 64px; object-fit: contain; }
+.interconnectivity-page .inter-copyright2026{ width: 100%; padding-top: 16px; font-size: 16px; line-height: 1.5; font-weight: 600; letter-spacing: -.03em; color: var(--blue); text-align: center; }
+.interconnectivity-page .inter-frameChild55{ display: block; width: 59px; height: auto; margin-inline: auto; object-fit: contain; }
+
 @media (768px <= width < 1200px) {
-  .interconnectivity{
+  .interconnectivity-page{
     --gutter: 24px;
-    --section-gap: 56px;
+    --section-gap: 48px;
     --heading-size: 30px;
     --heading-leading: 1.27;
     --body-size: 18px;
@@ -854,26 +821,30 @@
     --step-number: 42px;
     --step-label: 18px;
     --step-panel-height: 84px;
-    --footer-gap: 64px;
+    --footer-gap: 48px;
   }
-  .interconnectivity .interPage.frameGroup{ padding-inline: 24px; }
-  .interconnectivity .interPage.frameDiv{ font-size: 14px; }
-  .interconnectivity .interPage.frameParent2{ padding: 32px; column-gap: 24px; }
-  .interconnectivity .interPage.frameParent3{ gap: 28px; }
-  .interconnectivity .interPage.frameParent6, .interconnectivity .interPage.frameParent7{ font-size: 13px; gap: 8px; }
-  .interconnectivity .interPage.userGroup02Parent, .interconnectivity .interPage.bankParent, .interconnectivity .interPage.analyticsUpParent{ padding: 8px; gap: 6px; }
-  .interconnectivity .interPage.userGroup02Icon{ width: 24px; height: 24px; flex-basis: 24px; }
-  .interconnectivity .interPage.frameParent10, .interconnectivity .interPage.frameParent21{ grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 28px; }
-  .interconnectivity .interPage.frameParent11{ gap: 32px; }
-  .interconnectivity .interPage.frameParent25, .interconnectivity .interPage.frameParent30{ gap: 28px; }
-  .interconnectivity .interPage.frameWrapper14{ flex-basis: calc((100% - 32px) / 2); }
-  .interconnectivity .interPage.ellipseGroup{ padding: 24px 32px; }
-  .interconnectivity .interPage.frameParent47{ grid-template-columns: minmax(0, 1fr); }
-  .interconnectivity .interPage.frameParent50, .interconnectivity .interPage.frameParent57{ align-items: stretch; }
+  .interconnectivity-page .inter-frameGroup{ padding-inline: 24px; }
+  .interconnectivity-page .inter-frameDiv{ font-size: 14px; }
+  .interconnectivity-page .inter-frameParent2{ padding: 32px; grid-template-columns: minmax(0,1fr); grid-template-rows: auto auto auto auto; gap: 28px; }
+  .interconnectivity-page .inter-frameParent3{ grid-area: 1 / 1; }
+  .interconnectivity-page .inter-ellipseParent{ grid-area: 3 / 1; }
+  .interconnectivity-page .inter-frameParent6{ grid-area: 2 / 1; }
+  .interconnectivity-page .inter-frameParent7{ grid-area: 4 / 1; }
+  .interconnectivity-page .inter-frameParent3{ gap: 28px; }
+  .interconnectivity-page .inter-frameParent6, .interconnectivity-page .inter-frameParent7{ font-size: 13px; gap: 8px; }
+  .interconnectivity-page .inter-userGroup02Parent, .interconnectivity-page .inter-bankParent, .interconnectivity-page .inter-analyticsUpParent{ padding: 8px; gap: 6px; }
+  .interconnectivity-page .inter-userGroup02Icon{ width: 24px; height: 24px; flex-basis: 24px; }
+  .interconnectivity-page .inter-frameParent10, .interconnectivity-page .inter-frameParent21{ grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 28px; }
+  .interconnectivity-page .inter-frameParent11{ gap: 32px; }
+  .interconnectivity-page .inter-frameParent25, .interconnectivity-page .inter-frameParent30{ gap: 28px; }
+  .interconnectivity-page .inter-frameWrapper14{ flex-basis: calc((100% - 32px) / 2); }
+  .interconnectivity-page .inter-ellipseGroup{ padding: 24px 32px; }
+  .interconnectivity-page .inter-frameParent47{ grid-template-columns: minmax(0, 1fr); }
+  .interconnectivity-page .inter-frameParent50, .interconnectivity-page .inter-frameParent57{ align-items: stretch; }
 }
 
 @media (width < 768px) {
-  .interconnectivity{
+  .interconnectivity-page{
     --gutter: 16px;
     --section-gap: 48px;
     --heading-size: 24px;
@@ -893,164 +864,56 @@
     --footer-gap: 48px;
     --icon-size: 58px;
   }
-  .interconnectivity .interPage.frameGroup{ padding: 16px; gap: 16px; }
-  .interconnectivity .interPage.logo01SynapseSpark1Parent{ gap: 16px; }
-  .interconnectivity .interPage.frameContainer{ gap: 12px 16px; font-size: 14px; }
-  .interconnectivity .interPage.signInHelpWrapper{ padding-inline: 18px; font-size: 14px; }
-  .interconnectivity .interPage.frameDiv{ margin-top: 16px; font-size: 11px; line-height: 18px; }
-  .interconnectivity .interPage.frameDiv :where(img, svg){ width: 8px; height: 8px; flex-basis: 8px; }
-  .interconnectivity .interPage.frameParent2{ grid-template-columns: minmax(0, 1fr); grid-template-rows: auto auto; gap: 28px; margin-top: 22px; padding: 28px 16px; }
-  .interconnectivity .interPage.frameParent3{ grid-area: 1 / 1; align-items: center; text-align: center; gap: 24px; }
-  .interconnectivity .interPage.frameParent4, .interconnectivity .interPage.frameParent5{ align-items: center; gap: 20px; }
-  .interconnectivity .interPage.ellipseParent{ grid-area: 2 / 1; width: min(310px, 100%); }
-  .interconnectivity .interPage.neurolxp{ font-size: clamp(18px, 6vw, 26px); }
-  .interconnectivity .interPage.hierarchySquare06Parent{ gap: 8px; }
-  .interconnectivity .interPage.frameParent6, .interconnectivity .interPage.frameParent7{ display: none; }
-  .interconnectivity .interPage.frameParent8, .interconnectivity .interPage.frameParent19, .interconnectivity .interPage.frameParent22, .interconnectivity .interPage.connectedLearningEcosystemParent{ gap: 32px; }
-  .interconnectivity .interPage.frameParent9, .interconnectivity .interPage.frameParent20, .interconnectivity .interPage.frameParent23{ gap: 20px; }
-  .interconnectivity .interPage.oneConnectedPlatformForModParent, .interconnectivity .interPage.builtForDiverseLearningEnvParent, .interconnectivity .interPage.connectYourEcosystemInFourParent{ gap: 16px; }
-  .interconnectivity .interPage.frameParent10, .interconnectivity .interPage.frameParent21{ grid-template-columns: minmax(0, 1fr); justify-items: center; gap: 24px; }
-  .interconnectivity .interPage.frameWrapper2, .interconnectivity .interPage.frameWrapper3, .interconnectivity .interPage.frameWrapper4, .interconnectivity .interPage.rectangleParent2, .interconnectivity .interPage.frameWrapper6{ width: min(280px, 100%); }
-  .interconnectivity .interPage.frameParent11{ grid-template-columns: minmax(0, 1fr); gap: 24px; text-align: center; }
-  .interconnectivity .interPage.frameParent12, .interconnectivity .interPage.frameParent13{ align-items: center; gap: 16px; }
-  .interconnectivity .interPage.keyBenefitsParent{ gap: 22px; }
-  .interconnectivity .interPage.frameParent14{ gap: 20px; }
-  .interconnectivity .interPage.frameParent15{ gap: 14px; text-align: left; }
-  .interconnectivity .interPage.frameParent24{ gap: 24px; }
-  .interconnectivity .interPage.frameParent25, .interconnectivity .interPage.frameParent30{ grid-template-columns: minmax(0, 1fr); gap: 24px; }
-  .interconnectivity .interPage.image20Parent{ padding: 14px 16px 14px calc(var(--number-size) * .58 + 14px); }
-  .interconnectivity .interPage.integrateExistingSystems, .interconnectivity .interPage.connectLearnersAnd, .interconnectivity .interPage.enableCollaborativeLearning{ max-width: 100%; }
-  .interconnectivity .interPage.image20Wrapper{ border-radius: 20px; }
-  .interconnectivity .interPage.frameParent35, .interconnectivity .interPage.frameParent36, .interconnectivity .interPage.frameParent40{ gap: 24px; }
-  .interconnectivity .interPage.frameWrapper14{ flex-basis: 100%; max-width: 400px; min-height: 110px; padding: 24px; }
-  .interconnectivity .interPage.ellipseGroup{ max-width: 420px; padding: 12px; }
-  .interconnectivity .interPage.ellipseContainer{ padding: 48px 20px; }
-  .interconnectivity .interPage.frameParent43{ gap: 22px; }
-  .interconnectivity .interPage.readyToConnectYourLearningParent{ gap: 18px; }
-  .interconnectivity .interPage.frameParent45, .interconnectivity .interPage.frameWrapper19{ padding-top: 32px; }
-  .interconnectivity .interPage.frameParent44{ font-size: 22px; }
-  .interconnectivity .interPage.frameParent47{ grid-template-columns: minmax(0, 1fr); gap: 32px; }
-  .interconnectivity .interPage.frameParent51, .interconnectivity .interPage.frameParent58{ grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px 16px; }
-  .interconnectivity .interPage.frameParent50, .interconnectivity .interPage.frameParent57{ font-size: 20px; }
-  .interconnectivity .interPage.frameParent52, .interconnectivity .interPage.frameParent60{ justify-content: center; gap: 16px; }
-  .interconnectivity .interPage.frameChild46, .interconnectivity .interPage.frameChild50{ width: 56px; height: 56px; flex-basis: 56px; }
-  .interconnectivity .interPage.copyright2026{ font-size: 14px; }
+  .interconnectivity-page .inter-frameGroup{ padding: 16px; gap: 16px; }
+  .interconnectivity-page .inter-logo01SynapseSpark1Parent{ gap: 16px; }
+  .interconnectivity-page .inter-frameContainer{ gap: 12px 16px; font-size: 14px; }
+  .interconnectivity-page .inter-signInHelpWrapper{ padding-inline: 18px; font-size: 14px; }
+  .interconnectivity-page .inter-frameDiv{ margin-top: 16px; font-size: 11px; line-height: 18px; }
+  .interconnectivity-page .inter-frameDiv :where(img, svg){ width: 8px; height: 8px; flex-basis: 8px; }
+  .interconnectivity-page .inter-frameParent2{ grid-template-columns: minmax(0, 1fr); grid-template-rows: auto auto; gap: 28px; margin-top: 22px; padding: 28px 16px; }
+  .interconnectivity-page .inter-frameParent3{ grid-area: 1 / 1; align-items: center; text-align: center; gap: 24px; }
+  .interconnectivity-page .inter-frameParent4, .interconnectivity-page .inter-frameParent5{ align-items: center; gap: 20px; }
+  .interconnectivity-page .inter-ellipseParent{ grid-area: 2 / 1; width: min(310px, 100%); }
+  .interconnectivity-page .inter-neurolxp{ font-size: clamp(18px, 6vw, 26px); }
+  .interconnectivity-page .inter-hierarchySquare06Parent{ gap: 8px; }
+  .interconnectivity-page .inter-frameParent6, .interconnectivity-page .inter-frameParent7{ display: none; }
+  .interconnectivity-page .inter-frameParent8, .interconnectivity-page .inter-frameParent19, .interconnectivity-page .inter-frameParent22, .interconnectivity-page .inter-connectedLearningEcosystemParent{ gap: 32px; }
+  .interconnectivity-page .inter-frameParent9, .interconnectivity-page .inter-frameParent20, .interconnectivity-page .inter-frameParent23{ gap: 20px; }
+  .interconnectivity-page .inter-oneConnectedPlatformForModParent, .interconnectivity-page .inter-builtForDiverseLearningEnvParent, .interconnectivity-page .inter-connectYourEcosystemInFourParent{ gap: 16px; }
+  .interconnectivity-page .inter-frameParent10, .interconnectivity-page .inter-frameParent21{ grid-template-columns: minmax(0, 1fr); justify-items: center; gap: 24px; }
+  .interconnectivity-page .inter-frameWrapper2, .interconnectivity-page .inter-frameWrapper3, .interconnectivity-page .inter-frameWrapper4, .interconnectivity-page .inter-rectangleParent2, .interconnectivity-page .inter-frameWrapper6{ width: min(280px, 100%); }
+  .interconnectivity-page .inter-frameParent11{ grid-template-columns: minmax(0, 1fr); gap: 24px; text-align: center; }
+  .interconnectivity-page .inter-frameParent12, .interconnectivity-page .inter-frameParent13{ align-items: center; gap: 16px; }
+  .interconnectivity-page .inter-keyBenefitsParent{ gap: 22px; }
+  .interconnectivity-page .inter-frameParent14{ gap: 20px; }
+  .interconnectivity-page .inter-frameParent15{ gap: 14px; text-align: left; }
+  .interconnectivity-page .inter-frameParent24{ gap: 24px; }
+  .interconnectivity-page .inter-frameParent25, .interconnectivity-page .inter-frameParent30{ grid-template-columns: minmax(0, 1fr); gap: 24px; }
+  .interconnectivity-page .inter-image20Parent{ padding: 14px 16px 14px calc(var(--number-size) * .58 + 14px); }
+  .interconnectivity-page .inter-integrateExistingSystems, .interconnectivity-page .inter-connectLearnersAnd, .interconnectivity-page .inter-enableCollaborativeLearning{ max-width: 100%; }
+  .interconnectivity-page .inter-image20Wrapper{ border-radius: 20px; }
+  .interconnectivity-page .inter-frameParent35, .interconnectivity-page .inter-frameParent36, .interconnectivity-page .inter-frameParent40{ gap: 24px; }
+  .interconnectivity-page .inter-frameWrapper14{ flex-basis: 100%; max-width: 400px; min-height: 110px; padding: 24px; }
+  .interconnectivity-page .inter-ellipseGroup{ max-width: 420px; padding: 12px; }
+  .interconnectivity-page .inter-ellipseContainer{ padding: 48px 20px; }
+  .interconnectivity-page .inter-frameParent43{ gap: 22px; }
+  .interconnectivity-page .inter-readyToConnectYourLearningParent{ gap: 18px; }
+  .interconnectivity-page .inter-frameParent45, .interconnectivity-page .inter-frameWrapper19{ padding-top: 32px; }
+  .interconnectivity-page .inter-frameParent44{ font-size: 22px; }
+  .interconnectivity-page .inter-frameParent47{ grid-template-columns: minmax(0, 1fr); gap: 32px; }
+  .interconnectivity-page .inter-frameParent51, .interconnectivity-page .inter-frameParent58{ grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px 16px; }
+  .interconnectivity-page .inter-frameParent50, .interconnectivity-page .inter-frameParent57{ font-size: 20px; }
+  .interconnectivity-page .inter-frameParent52, .interconnectivity-page .inter-frameParent60{ justify-content: center; gap: 16px; }
+  .interconnectivity-page .inter-frameChild46, .interconnectivity-page .inter-frameChild50{ width: 56px; height: 56px; flex-basis: 56px; }
+  .interconnectivity-page .inter-copyright2026{ font-size: 14px; }
 }
 
-/* Input/accessibility queries are separate from viewport layout. */
 @media (hover: hover) and (pointer: fine) {
-  .interconnectivity .interPage.frameWrapper:hover:not(:disabled):not([aria-disabled="true"]), .interconnectivity .interPage.bookDemoBtn:hover:not(:disabled):not([aria-disabled="true"]), .interconnectivity .interPage.signInHelpWrapper:hover:not(:disabled):not([aria-disabled="true"]){ box-shadow: var(--inset); }
-  .interconnectivity .interPage.frameWrapper2, .interconnectivity .interPage.frameWrapper3, .interconnectivity .interPage.frameWrapper4, .interconnectivity .interPage.rectangleParent2, .interconnectivity .interPage.frameWrapper6{ transition: transform .25s ease; }
-  .interconnectivity .interPage.frameWrapper2:hover, .interconnectivity .interPage.frameWrapper3:hover, .interconnectivity .interPage.frameWrapper4:hover, .interconnectivity .interPage.rectangleParent2:hover, .interconnectivity .interPage.frameWrapper6:hover{ transform: translateY(-6px); }
-  .interconnectivity .interPage.frameWrapper14:hover{ box-shadow: -10px -10px 20px #fff, 10px 10px 20px #c4c4c4; }
-  .interconnectivity .interPage.frameWrapper10:hover .image20Parent, .interconnectivity .interPage.frameWrapper11:hover .image20Parent, .interconnectivity .interPage.frameWrapper12:hover .image20Parent, .interconnectivity .interPage.frameWrapper13:hover .image20Parent{ border-color: currentColor; }
+  .interconnectivity-page .inter-frameWrapper:hover, .interconnectivity-page .inter-bookDemoBtn:hover { box-shadow: var(--inset); }
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .interconnectivity .interPage.smallHierarchyIcon{ animation: none; }
-  .interconnectivity *, .interconnectivity *::before, .interconnectivity *::after{ transition: none; }
-  .interconnectivity .interPage.frameWrapper2:hover, .interconnectivity .interPage.frameWrapper3:hover, .interconnectivity .interPage.frameWrapper4:hover, .interconnectivity .interPage.rectangleParent2:hover, .interconnectivity .interPage.frameWrapper6:hover{ transform: none; }
-}
-
-/* ============================================================
-   ROUTE NAVIGATION STABILITY — FINAL
-   - Applies to the real .interconnectivity page root.
-   - Does NOT require the root to also have .interPage.
-   - Keeps all major page sections in normal document flow.
-   - Protects the layout from route-transition/global animation rules.
-   ============================================================ */
-
-html,
-body {
-  min-height: 100%;
-}
-
-/*
-  IMPORTANT:
-  The page root throughout this stylesheet is .interconnectivity.
-  Do not require .interconnectivity.interPage here, because in the
-  normal component structure .interPage is used on the inner sections.
-*/
-.interconnectivity {
-  position: relative !important;
-  width: 100% !important;
-  height: auto !important;
-  min-height: 0 !important;
-  max-height: none !important;
-  overflow: visible !important;
-
-  display: flex !important;
-  flex-direction: column !important;
-  align-items: stretch !important;
-
-  flex: 0 0 auto !important;
-}
-
-/* Never allow a top-level section to shrink to zero height. */
-.interconnectivity > * {
-  flex-shrink: 0 !important;
-}
-
-/*
-  Keep every main page section in normal flow.
-  These selectors work whether or not the section also has .interPage.
-*/
-.interconnectivity > .frameDiv,
-.interconnectivity > .frameParent2,
-.interconnectivity > .frameParent8,
-.interconnectivity > .frameParent11,
-.interconnectivity > .frameParent19,
-.interconnectivity > .frameParent22,
-.interconnectivity > .connectedLearningEcosystemParent,
-.interconnectivity > .ellipseGroup,
-.interconnectivity > .frameParent44 {
-  position: relative !important;
-
-  top: auto !important;
-  right: auto !important;
-  bottom: auto !important;
-  left: auto !important;
-  inset: auto !important;
-
-  height: auto !important;
-  max-height: none !important;
-
-  flex-shrink: 0 !important;
-  transform: none !important;
-}
-
-/*
-  If a route/animation wrapper sits between the page root and a section,
-  protect the known section classes there too. This is intentionally
-  limited to the page's major sections so the existing card/icon design
-  is not changed.
-*/
-.interconnectivity .frameDiv.interPage,
-.interconnectivity .frameParent2.interPage,
-.interconnectivity .frameParent8.interPage,
-.interconnectivity .frameParent11.interPage,
-.interconnectivity .frameParent19.interPage,
-.interconnectivity .frameParent22.interPage,
-.interconnectivity .connectedLearningEcosystemParent.interPage,
-.interconnectivity .ellipseGroup.interPage,
-.interconnectivity .frameParent44.interPage {
-  position: relative !important;
-
-  top: auto !important;
-  right: auto !important;
-  bottom: auto !important;
-  left: auto !important;
-  inset: auto !important;
-
-  height: auto !important;
-  max-height: none !important;
-
-  flex-shrink: 0 !important;
-  transform: none !important;
-}
-
-/* Decorative layers are intentionally absolute and stay unchanged. */
-.interconnectivity .smallHierarchyIcon,
-.interconnectivity .frameChild43 {
-  position: absolute !important;
+  .interconnectivity-page .inter-smallHierarchyIcon{ animation: none; }
+  .interconnectivity-page *, .interconnectivity-page *::before, .interconnectivity-page *::after{ transition: none; }
+  .interconnectivity-page .inter-frameWrapper2:hover, .interconnectivity-page .inter-frameWrapper3:hover, .interconnectivity-page .inter-frameWrapper4:hover, .interconnectivity-page .inter-rectangleParent2:hover, .interconnectivity-page .inter-frameWrapper6:hover{ transform: none; }
 }
