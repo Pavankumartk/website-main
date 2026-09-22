@@ -70,7 +70,7 @@ const AccessibilityInclusivity: NextPage = () => {
 							<div className="compassParent">
 								<Image className="compassIcon" src="/icons/compasspink.svg" width={50} height={50} sizes="100vw" alt="" />
 								<div className="easyNavigationWrapper">
-									<div className="easyNavigation">Easy Navigation</div>
+									<div className="easyNavigation"><span>Easy</span><span>Navigation</span></div>
 								</div>
 							</div>
 						</div>
@@ -78,7 +78,7 @@ const AccessibilityInclusivity: NextPage = () => {
 							<div className="compassParent">
 								<Image className="compassIcon" src="/icons/library.svg" width={50} height={50} sizes="100vw" alt="" />
 								<div className="easyNavigationWrapper">
-									<div className="multiFormatLearning">Multi-Format Learning</div>
+									<div className="multiFormatLearning"><span>Multi-Format</span><span>Learning</span></div>
 								</div>
 							</div>
 						</div>
@@ -88,7 +88,7 @@ const AccessibilityInclusivity: NextPage = () => {
 							<div className="compassParent">
 								<Image className="compassIcon" src="/icons/mousepurple.svg" width={50} height={50} sizes="100vw" alt="" />
 								<div className="easyNavigationWrapper">
-									<div className="easyNavigation">Interactive Content</div>
+									<div className="easyNavigation"><span>Interactive</span><span>Content</span></div>
 								</div>
 							</div>
 						</div>
@@ -96,7 +96,7 @@ const AccessibilityInclusivity: NextPage = () => {
 							<div className="compassParent">
 								<Image className="compassIcon" src="/icons/clipboardorange.svg" width={50} height={50} sizes="100vw" alt="" />
 								<div className="easyNavigationWrapper">
-									<div className="unlimitedAssessments">Unlimited Assessments</div>
+									<div className="unlimitedAssessments"><span>Unlimited</span><span>Assessments</span></div>
 								</div>
 							</div>
 						</div>
@@ -135,7 +135,7 @@ const AccessibilityInclusivity: NextPage = () => {
 											/>
 										</div>
 									</div>
-									<b className="textStructured">Text &amp; Structured Notes</b>
+									<b className="formatCardTitle formatCardTitleGreen"><span>Text &amp; Structured</span><span>Notes</span></b>
 								</div>
 							</div>
 						</div>
@@ -157,7 +157,7 @@ const AccessibilityInclusivity: NextPage = () => {
 											/>
 										</div>
 									</div>
-									<b className="interactiveVideoLearning">Interactive Video Learning<br /></b>
+									<b className="formatCardTitle formatCardTitlePurple"><span>Interactive</span><span>Video Learning</span></b>
 								</div>
 							</div>
 						</div>
@@ -181,7 +181,7 @@ const AccessibilityInclusivity: NextPage = () => {
 											/>
 										</div>
 									</div>
-									<b className="interactiveVideoLearning">Visual Learning Aids<br /><br /></b>
+									<b className="formatCardTitle formatCardTitleOrange"><span>Visual</span><span>Learning Aids</span></b>
 								</div>
 							</div>
 						</div>
@@ -203,8 +203,7 @@ const AccessibilityInclusivity: NextPage = () => {
 											/>
 										</div>
 									</div>
-									<b className="interactiveVideoLearning">Audio-Supported Content
-									</b>
+									<b className="formatCardTitle formatCardTitlePink"><span>Audio-Supported</span><span>Content</span></b>
 								</div>
 							</div>
 						</div>

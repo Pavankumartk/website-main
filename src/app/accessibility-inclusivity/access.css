@@ -2,10 +2,11 @@
 
 .accessibilityInclusivity {
 	width: 100%;
-	height: 3810px;
+	height: auto;
+	min-height: 3810px;
 	position: relative;
 	background-color: #dfe6e9;
-	overflow: hidden;
+	overflow: visible;
 	text-align: left;
 	font-size: 48px;
 	color: #31344b;
@@ -4794,3 +4795,295 @@ button.frameWrapper:active {
   }
 }
 
+/* ============================================================
+   INTERCONNECTIVITY-MATCHED CONTROLS
+   Only Book a Demo buttons and section badges are normalized.
+   ============================================================ */
+
+.accessibilityInclusivity {
+  --control-surface: #dfe6e9;
+  --control-blue: #2d4cc8;
+  --control-raised: -4px -4px 4px #fff, 4px 4px 4px #c6c6c9;
+  --control-inset: inset -4px -4px 4px #fff,
+                   inset 4px 4px 4px rgba(196, 196, 196, .8);
+}
+
+/* BOOK A DEMO — same control treatment as Interconnectivity */
+.accessibilityInclusivity .frameWrapper {
+  appearance: none !important;
+  -webkit-appearance: none !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 12px !important;
+  flex: 0 0 auto !important;
+  width: fit-content !important;
+  max-width: 100% !important;
+  min-width: 0 !important;
+  min-height: 52px !important;
+  height: auto !important;
+  padding: 16px 32px !important;
+  border: 0 !important;
+  border-radius: 8px !important;
+  background: var(--control-surface) !important;
+  color: var(--control-blue) !important;
+  box-shadow: var(--control-raised) !important;
+  font-family: "Segoe UI", "Inter" !important;
+  font-size: 24px !important;
+  font-weight: 600 !important;
+  line-height: 32px !important;
+  letter-spacing: .02em !important;
+  text-align: center !important;
+  text-decoration: none !important;
+  white-space: normal !important;
+  cursor: pointer !important;
+  transition: box-shadow .2s ease !important;
+  box-sizing: border-box !important;
+}
+
+.accessibilityInclusivity .frameWrapper .bookADemoWrapper,
+.accessibilityInclusivity .frameWrapper .bookADemo {
+  color: var(--control-blue) !important;
+  font: inherit !important;
+  letter-spacing: inherit !important;
+  text-decoration: none !important;
+}
+
+.accessibilityInclusivity .frameWrapper .bookADemoWrapper {
+  appearance: none !important;
+  -webkit-appearance: none !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: auto !important;
+  min-width: 0 !important;
+  max-width: 100% !important;
+  padding: 0 !important;
+  border: 0 !important;
+  outline: 0 !important;
+  background: transparent !important;
+}
+
+.accessibilityInclusivity .frameWrapper:hover,
+.accessibilityInclusivity .frameWrapper:focus-within {
+  background: var(--control-surface) !important;
+  color: var(--control-blue) !important;
+  box-shadow: var(--control-raised) !important;
+  transform: none !important;
+}
+
+.accessibilityInclusivity .frameWrapper:active {
+  box-shadow: var(--control-inset) !important;
+}
+
+/* BADGES — same rounded inset pills as Interconnectivity */
+.accessibilityInclusivity .frameIcon,
+.accessibilityInclusivity .frameChild2,
+.accessibilityInclusivity .neurolxpBadge {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  flex: 0 0 auto !important;
+  width: fit-content !important;
+  max-width: 100% !important;
+  min-width: 0 !important;
+  min-height: 56px !important;
+  height: auto !important;
+  padding: 12px 36px !important;
+  box-sizing: border-box !important;
+  border: 0 !important;
+  border-radius: 999px !important;
+  background: var(--control-surface) !important;
+  box-shadow: var(--control-inset) !important;
+  color: var(--control-blue) !important;
+  font-family: "Segoe UI", "Inter" !important;
+  font-size: 24px !important;
+  font-weight: 600 !important;
+  line-height: 1.3 !important;
+  letter-spacing: .03em !important;
+  text-align: center !important;
+  white-space: normal !important;
+  overflow-wrap: anywhere !important;
+}
+
+.accessibilityInclusivity .neurolxpBadgeText {
+  color: var(--control-blue) !important;
+  font: inherit !important;
+  letter-spacing: inherit !important;
+}
+
+/* Keep controls proportional on mobile, matching Interconnectivity behavior. */
+@media screen and (max-width: 767.98px) {
+  .accessibilityInclusivity .frameWrapper {
+    min-height: 48px !important;
+    padding: 12px 24px !important;
+    font-size: 20px !important;
+    line-height: 28px !important;
+  }
+
+  .accessibilityInclusivity .frameIcon,
+  .accessibilityInclusivity .frameChild2,
+  .accessibilityInclusivity .neurolxpBadge {
+    min-height: 48px !important;
+    padding: 10px 26px !important;
+    font-size: 20px !important;
+  }
+}
+
+/* ============================================================
+   INCLUSIVE LEARNING EXPERIENCES — slightly larger inner content
+   Only this section is adjusted.
+   ============================================================ */
+@media screen and (min-width: 1024px) {
+  .accessibilityInclusivityInner {
+    height: 650px;
+  }
+
+  .accessibilityInclusivityInner .frameParent24 {
+    top: 35px;
+    left: 40px;
+    width: 1200px;
+    gap: 24px;
+  }
+
+  .accessibilityInclusivityInner .frameParent25 {
+    width: 590px;
+    height: 560px;
+  }
+
+  .accessibilityInclusivityInner .frameParent27 {
+    width: 520px;
+  }
+
+  .accessibilityInclusivityInner .inclusiveItem {
+    width: 520px;
+  }
+
+  .accessibilityInclusivityInner .learningAnalytics {
+    width: 590px;
+    height: 550px;
+  }
+}
+
+/* Inclusive Learning image — fit inside without overlapping left content */
+@media screen and (min-width: 1024px) {
+  .accessibilityInclusivityInner .learningAnalytics {
+    width: 550px;
+    height: 540px;
+    flex-shrink: 0;
+    transform: translateY(-45px);
+  }
+}
+/* ===== ALL FOUR TITLES: EXACTLY 2 LINES ===== */
+
+.textStructured,
+.interactiveVideoLearning {
+  width: 390px !important;
+  max-width: calc(100% - 20px) !important;
+  height: 64px !important;
+  min-height: 64px !important;
+
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+
+  padding: 0 !important;
+  margin: 0 auto !important;
+
+  font-size: 22px !important;
+  line-height: 30px !important;
+  text-align: center !important;
+
+  white-space: normal !important;
+  word-break: normal !important;
+  overflow-wrap: normal !important;
+  box-sizing: border-box !important;
+}
+
+/* Allow enough horizontal room inside every card */
+.frameParent16 {
+  width: 410px !important;
+  max-width: calc(100% - 20px) !important;
+}
+
+/* =========================================================
+   FLEXIBLE LEARNING FORMAT CARDS — EXACTLY TWO TITLE LINES
+   Scoped only to these four cards.
+   ========================================================= */
+.frameParent11 .frameParent16 {
+  width: 100% !important;
+  max-width: 380px !important;
+  left: 50% !important;
+  right: auto !important;
+  transform: translateX(-50%) !important;
+  box-sizing: border-box !important;
+}
+
+.frameParent11 .formatCardTitle {
+  width: 100% !important;
+  min-height: 64px !important;
+  margin: 0 !important;
+  padding: 0 8px !important;
+  box-sizing: border-box !important;
+
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+
+  font-family: "Segoe UI", "Inter" !important;
+  font-size: 24px !important;
+  font-weight: 700 !important;
+  line-height: 32px !important;
+  letter-spacing: 0.03em !important;
+  text-align: center !important;
+}
+
+.frameParent11 .formatCardTitle > span {
+  display: block !important;
+  width: 100% !important;
+  white-space: nowrap !important;
+  word-break: keep-all !important;
+  overflow-wrap: normal !important;
+}
+
+.frameParent11 .formatCardTitleGreen  { color: #2a7308 !important; }
+.frameParent11 .formatCardTitlePurple { color: #67096e !important; }
+.frameParent11 .formatCardTitleOrange { color: #c05512 !important; }
+.frameParent11 .formatCardTitlePink   { color: #bf1869 !important; }
+
+@media (max-width: 520px) {
+  .frameParent11 .formatCardTitle {
+    font-size: 20px !important;
+    line-height: 28px !important;
+  }
+}
+
+
+/* =========================================================
+   ACCESSIBLE LEARNING CARDS — ALL FOUR TITLES EXACTLY 2 LINES
+   ========================================================= */
+.frameParent6 .easyNavigation,
+.frameParent6 .multiFormatLearning,
+.frameParent6 .unlimitedAssessments {
+  width: 100% !important;
+  height: auto !important;
+  min-height: 64px !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  text-align: center !important;
+  line-height: 32px !important;
+  box-sizing: border-box !important;
+}
+
+.frameParent6 .easyNavigation > span,
+.frameParent6 .multiFormatLearning > span,
+.frameParent6 .unlimitedAssessments > span {
+  display: block !important;
+  width: 100% !important;
+  white-space: nowrap !important;
+  word-break: keep-all !important;
+  overflow-wrap: normal !important;
+}
