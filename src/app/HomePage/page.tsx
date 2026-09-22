@@ -1993,13 +1993,42 @@ function FAQItem({ item, isOpen, onToggle }: { item: FAQItemData; isOpen: boolea
 
 function FAQSection() {
   const [activeIndex, setActiveIndex] = useState(-1);
+  const faqSectionRef = useRef<HTMLElement | null>(null);
 
   const handleToggle = (index: number) => {
     setActiveIndex((current) => (current === index ? -1 : index));
   };
 
+  useEffect(() => {
+    const section = faqSectionRef.current;
+    if (!section || activeIndex === -1) return;
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        // If the user leaves the FAQ section without closing the
+        // currently open item, close it automatically.
+        if (!entry.isIntersecting) {
+          setActiveIndex(-1);
+        }
+      },
+      {
+        threshold: 0,
+      }
+    );
+
+    observer.observe(section);
+
+    return () => {
+      observer.disconnect();
+    };
+  }, [activeIndex]);
+
   return (
-    <section className={styles["faq-section"]} aria-labelledby="faq-heading">
+    <section
+      ref={faqSectionRef}
+      className={styles["faq-section"]}
+      aria-labelledby="faq-heading"
+    >
       <div className={styles["faq-card"]}>
         <div className={styles["faq-background-image"]} aria-hidden="true">
           <Image src="/images/fc52be16-4788-44b6-9212-f93370a7f939 2.webp" alt="" fill sizes="(min-width: 1280px) 1280px, 100vw" className={styles["faq-background-photo"]} />

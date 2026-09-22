@@ -187,7 +187,7 @@ export default function Footer() {
                     const displayLabel = isUniversityCollege
                       ? "University and College"
                       : isPersonalizedLearning
-                        ? "Personalized Learning Path"
+                        ? "Personalized Learning"
                         : isContentManagement
                           ? "Content Management"
                           : link.label;

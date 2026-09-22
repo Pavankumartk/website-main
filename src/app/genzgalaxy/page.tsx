@@ -693,7 +693,7 @@ const GenZgalaxy: NextPage = () => {
                 <div className={styles.frameParent32}>
                   <div className={styles.learningTogetherBadge}>Learning Together</div>
                   <h2 className={styles.greatLearningHappensContainer} style={{ margin: 0, fontWeight: 700 }}>
-                    <span className={styles.futureOfLearning}>Great Learning</span>
+                    <span className={styles.futureOfLearning}> Every Great Learning</span>
                     <span className={`${styles.happensTogether} ${styles.nowrapLine}`}> Happens</span>
                     <br />
                     <span className={styles.happensTogether}>Together</span>

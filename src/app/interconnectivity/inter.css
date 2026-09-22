@@ -80,9 +80,9 @@
 /* An external footer still gets clearance when the page has no own footer. */
 .interconnectivity:not(:has(.frameParent44)){ padding-bottom: var(--footer-gap); }
 
-.interconnectivity :where(h1, .interconnectivity h2, .interconnectivity h3, .interconnectivity h4, .interconnectivity p, .interconnectivity figure){ margin: 0; }
-.interconnectivity :where(img, .interconnectivity svg){ max-width: 100%; vertical-align: middle; }
-.interconnectivity :where(button, .interconnectivity a){ -webkit-tap-highlight-color: transparent; }
+.interconnectivity :where(h1, h2, h3, h4, p, figure){ margin: 0; }
+.interconnectivity :where(img, svg){ max-width: 100%; vertical-align: middle; }
+.interconnectivity :where(button, a){ -webkit-tap-highlight-color: transparent; }
 
 /* Width is constrained, height is determined by content. Descendant selectors
    also support a section wrapped by an ordinary React/animation container. */
@@ -165,8 +165,8 @@
   color: var(--body-ink);
 }
 
-.interconnectivity .interPage.frameDiv :where(img, .interconnectivity svg){ width: 12px; height: 12px; flex: 0 0 12px; }
-.interconnectivity .interPage.frameDiv :where(.features, .interconnectivity .interPage.addOnModules){ font-size: inherit; line-height: inherit; }
+.interconnectivity .interPage.frameDiv :where(img, svg){ width: 12px; height: 12px; flex: 0 0 12px; }
+.interconnectivity .interPage.frameDiv :where(.features, .addOnModules){ font-size: inherit; line-height: inherit; }
 .interconnectivity .interPage.addOnModules{ letter-spacing: .02em; }
 
 /* 3. Hero â€” copy and illustration both reserve their own space */
@@ -400,7 +400,7 @@
   cursor: pointer;
 }
 
-.interconnectivity .interPage.frameWrapper :where(button, .interconnectivity a, .interconnectivity span, .interconnectivity svg), .interconnectivity .interPage.bookDemoBtn :where(button, .interconnectivity a, .interconnectivity span, .interconnectivity svg), .interconnectivity .interPage.signInHelpWrapper :where(button, .interconnectivity a, .interconnectivity span, .interconnectivity svg){ color: inherit; font: inherit; letter-spacing: inherit; text-decoration: none; }
+.interconnectivity .interPage.frameWrapper :where(button, a, span, svg), .interconnectivity .interPage.bookDemoBtn :where(button, a, span, svg), .interconnectivity .interPage.signInHelpWrapper :where(button, a, span, svg){ color: inherit; font: inherit; letter-spacing: inherit; text-decoration: none; }
 
 .interconnectivity .interPage.frameWrapper:is(:hover, .interconnectivity :active, .interconnectivity :focus, .interconnectivity :visited), .interconnectivity .interPage.bookDemoBtn:is(:hover, .interconnectivity :active, .interconnectivity :focus, .interconnectivity :visited), .interconnectivity .interPage.signInHelpWrapper:is(:hover, .interconnectivity :active, .interconnectivity :focus, .interconnectivity :visited){ background: var(--surface); color: var(--blue); transform: none; }
 
@@ -408,7 +408,7 @@
 
 .interconnectivity .interPage.frameWrapper:is(:disabled, .interconnectivity [aria-disabled="true"]), .interconnectivity .interPage.bookDemoBtn:is(:disabled, .interconnectivity [aria-disabled="true"]), .interconnectivity .interPage.signInHelpWrapper:is(:disabled, .interconnectivity [aria-disabled="true"]){ opacity: .55; cursor: not-allowed; box-shadow: var(--raised); }
 
-.interconnectivity :where(button, .interconnectivity a, .interconnectivity [role="button"]):focus-visible, .interconnectivity .interPage.frameWrapper:focus-visible, .interconnectivity .interPage.bookDemoBtn:focus-visible, .interconnectivity .interPage.signInHelpWrapper:focus-visible{
+.interconnectivity :where(button, a, [role="button"]):focus-visible, .interconnectivity .interPage.frameWrapper:focus-visible, .interconnectivity .interPage.bookDemoBtn:focus-visible, .interconnectivity .interPage.signInHelpWrapper:focus-visible{
   outline: 3px solid var(--blue);
   outline-offset: 3px;
 }
@@ -506,6 +506,8 @@
 .interconnectivity .interPage.frameWrapper4{ color: #67096e; }
 
 .interconnectivity .interPage.rectangleParent, .interconnectivity .interPage.rectangleGroup, .interconnectivity .interPage.rectangleParent2{
+  position: relative;
+  overflow: hidden;
   display: grid;
   grid-template-columns: minmax(0, 1fr);
   grid-template-rows: 75px minmax(min-content, 1fr) 12px;
@@ -896,7 +898,7 @@
   .interconnectivity .interPage.frameContainer{ gap: 12px 16px; font-size: 14px; }
   .interconnectivity .interPage.signInHelpWrapper{ padding-inline: 18px; font-size: 14px; }
   .interconnectivity .interPage.frameDiv{ margin-top: 16px; font-size: 11px; line-height: 18px; }
-  .interconnectivity .interPage.frameDiv :where(img, .interconnectivity svg){ width: 8px; height: 8px; flex-basis: 8px; }
+  .interconnectivity .interPage.frameDiv :where(img, svg){ width: 8px; height: 8px; flex-basis: 8px; }
   .interconnectivity .interPage.frameParent2{ grid-template-columns: minmax(0, 1fr); grid-template-rows: auto auto; gap: 28px; margin-top: 22px; padding: 28px 16px; }
   .interconnectivity .interPage.frameParent3{ grid-area: 1 / 1; align-items: center; text-align: center; gap: 24px; }
   .interconnectivity .interPage.frameParent4, .interconnectivity .interPage.frameParent5{ align-items: center; gap: 20px; }
