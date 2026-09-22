@@ -7058,12 +7058,10 @@ button.limitsButton:active {
 
 
 /* ============================================================
-   FINAL BADGE POSITION + HOVER CORRECTION
-   Keep every badge in its ORIGINAL page position.
+   FINAL BADGE POSITION — NO HOVER / ACTIVE EFFECTS
+   Keep every badge in its ORIGINAL page position and appearance.
    ============================================================ */
 
-/* Undo only the centering margins introduced by the consistency block.
-   Existing parent/layout rules continue to control badge placement. */
 .mobileLearning .mobileHeroBadge,
 .mobileLearning .routineBadge,
 .mobileLearning .microBadge,
@@ -7072,38 +7070,7 @@ button.limitsButton:active {
 .mobileLearning .limitsBadge {
   margin-left: 0 !important;
   margin-right: 0 !important;
-  transition:
-    box-shadow 0.22s ease,
-    transform 0.22s ease,
-    color 0.22s ease !important;
-}
-
-/* Same neumorphic hover behaviour as the other page controls.
-   No margin/left/top changes, so the badge stays in the same place. */
-.mobileLearning .mobileHeroBadge:hover,
-.mobileLearning .routineBadge:hover,
-.mobileLearning .microBadge:hover,
-.mobileLearning .interactiveBadge:hover,
-.mobileLearning .modernLearningBadge:hover,
-.mobileLearning .limitsBadge:hover {
-  box-shadow:
-    -5px -5px 7px #fff,
-    5px 5px 7px #c6c6c9 !important;
-  transform: translateY(-2px) !important;
-  color: #2d4cc8 !important;
-}
-
-/* Restore without horizontal movement */
-.mobileLearning .mobileHeroBadge:active,
-.mobileLearning .routineBadge:active,
-.mobileLearning .microBadge:active,
-.mobileLearning .interactiveBadge:active,
-.mobileLearning .modernLearningBadge:active,
-.mobileLearning .limitsBadge:active {
-  box-shadow:
-    inset -4px -4px 4px #fff,
-    inset 4px 4px 4px rgba(196, 196, 196, .8) !important;
-  transform: translateY(0) !important;
+  transition: none !important;
 }
 
 /* Book-a-demo hover: same raised feedback, without moving its placement. */
@@ -7188,3 +7155,16 @@ button.limitsButton:active {
 .mobileLearning .limitsButton:not(:hover) {
   transform: none !important;
 }
+
+/* ============================================================
+   FINAL MAIN SECTION SPACING — EXACTLY 48PX
+   Only section-to-section spacing is changed.
+   ============================================================ */
+.mobileLearning .routineSection,
+.mobileLearning .microSection,
+.mobileLearning .interactiveSection,
+.mobileLearning .modernLearningSection,
+.mobileLearning .limitsSection {
+  margin-top: 48px !important;
+}
+

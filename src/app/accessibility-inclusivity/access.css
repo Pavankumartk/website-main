@@ -5087,3 +5087,16 @@ button.frameWrapper:active {
   word-break: keep-all !important;
   overflow-wrap: normal !important;
 }
+
+/* ============================================================
+   FINAL SECTION SPACING — 48PX ONLY
+   No other design/layout/typography changes.
+   ============================================================ */
+.accessibilityInclusivity .frameParent6,
+.accessibilityInclusivity .frameParent11,
+.accessibilityInclusivity .accessibilityInclusivityInner,
+.accessibilityInclusivity .frameParent28,
+.accessibilityInclusivity .frameParent31 {
+  margin-top: 48px !important;
+}
+

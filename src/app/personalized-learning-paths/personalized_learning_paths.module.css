@@ -2639,3 +2639,62 @@
     letter-spacing: 0.03em !important;
   }
 }
+
+/* ==========================================================================
+   FINAL CANONICAL HOMEPAGE FONT — FULL PERSONALIZED LEARNING PAGE
+   Font only: no layout, spacing, card, image, or responsive geometry changes.
+   ========================================================================== */
+
+.plp-page,
+.plp-page *,
+.plp-page *::before,
+.plp-page *::after,
+.plp-page button,
+.plp-page input,
+.plp-page textarea,
+.plp-page select,
+.plp-page option,
+.plp-page label,
+.plp-page a,
+.plp-page h1,
+.plp-page h2,
+.plp-page h3,
+.plp-page h4,
+.plp-page h5,
+.plp-page h6,
+.plp-page p,
+.plp-page span,
+.plp-page li,
+.plp-page strong,
+.plp-page b,
+.plp-page em,
+.plp-page small {
+  font-family: "Segoe UI", "Inter" !important;
+}
+
+.plp-page input::placeholder,
+.plp-page textarea::placeholder {
+  font-family: "Segoe UI", "Inter" !important;
+}
+
+/* Home Page uses 700 for its primary/section headings.
+   Apply that same face weight to all PLP primary headings, not only the hero. */
+.plp-page .plp-hero-heading,
+.plp-page .plp-section-heading,
+.plp-page .plp-challenge-heading,
+.plp-page .plp-cta-heading {
+  font-family: "Segoe UI", "Inter" !important;
+  font-weight: 700 !important;
+}
+
+/* Keep highlighted words on exactly the same face/weight as their parent title. */
+.plp-page .plp-hero-heading-accent,
+.plp-page .plp-section-heading-accent,
+.plp-page .plp-hero-heading span,
+.plp-page .plp-section-heading span,
+.plp-page .plp-challenge-heading span,
+.plp-page .plp-cta-heading span {
+  font-family: inherit !important;
+  font-weight: inherit !important;
+}
+

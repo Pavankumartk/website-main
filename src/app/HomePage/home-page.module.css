@@ -1045,7 +1045,7 @@ a:focus-visible {
 }
 
 .why-choose-badge sup {
-  font-weight: 700;
+  font-weight: 400;
 }
 
 .meet-neurolxp-overlay {
@@ -1096,7 +1096,7 @@ a:focus-visible {
 }
 
 .meet-neurolxp-badge sup {
-  font-weight: 700;
+  font-weight: 400;
 }
 
 .meet-neurolxp-heading {
@@ -1253,7 +1253,7 @@ a:focus-visible {
 }
 
 .platform-overview-heading sup {
-  font-weight: 800;
+  font-weight: 400;
 }
 
 .why-choose-grid {
@@ -1300,7 +1300,7 @@ a:focus-visible {
   aspect-ratio: 1;
   flex-shrink: 0;
   border-radius: 50%;
-  box-shadow: 4px 4px 4px #c6c6c9, -4px -4px 4px #ffffff;
+  box-shadow: 3px 3px 4px rgba(198, 198, 201, 0.55), -3px -3px 4px rgba(255, 255, 255, 0.65);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1410,7 +1410,7 @@ a:focus-visible {
 }
 
 .smv-badge sup {
-  font-weight: 700;
+  font-weight: 400;
 }
 
 .learning-modules-badge {
@@ -1447,7 +1447,7 @@ a:focus-visible {
 }
 
 .learning-modules-heading-accent sup {
-  font-weight: 900;
+  font-weight: 400;
 }
 
 .learning-modules-heading-accent {

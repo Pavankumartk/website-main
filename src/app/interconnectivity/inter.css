@@ -950,58 +950,105 @@
   .interconnectivity .interPage.frameWrapper2:hover, .interconnectivity .interPage.frameWrapper3:hover, .interconnectivity .interPage.frameWrapper4:hover, .interconnectivity .interPage.rectangleParent2:hover, .interconnectivity .interPage.frameWrapper6:hover{ transform: none; }
 }
 
-
 /* ============================================================
    ROUTE NAVIGATION STABILITY — FINAL
+   - Applies to the real .interconnectivity page root.
+   - Does NOT require the root to also have .interPage.
+   - Keeps all major page sections in normal document flow.
+   - Protects the layout from route-transition/global animation rules.
    ============================================================ */
-html, body {
+
+html,
+body {
   min-height: 100%;
 }
 
-.interconnectivity.interPage {
+/*
+  IMPORTANT:
+  The page root throughout this stylesheet is .interconnectivity.
+  Do not require .interconnectivity.interPage here, because in the
+  normal component structure .interPage is used on the inner sections.
+*/
+.interconnectivity {
   position: relative !important;
   width: 100% !important;
   height: auto !important;
   min-height: 0 !important;
   max-height: none !important;
   overflow: visible !important;
+
   display: flex !important;
   flex-direction: column !important;
   align-items: stretch !important;
-  flex: none !important;
+
+  flex: 0 0 auto !important;
 }
 
-/* Every actual page section owns its height in normal document flow. */
-.interconnectivity.interPage > .interPage {
-  position: relative;
-  height: auto;
-  max-height: none;
-  flex-shrink: 0;
+/* Never allow a top-level section to shrink to zero height. */
+.interconnectivity > * {
+  flex-shrink: 0 !important;
 }
 
-/* Prevent route-transition/global animation rules from leaving sections
-   absolutely positioned or translated after returning to this route. */
-.interconnectivity.interPage > .frameDiv.interPage,
-.interconnectivity.interPage > .frameParent2.interPage,
-.interconnectivity.interPage > .frameParent8.interPage,
-.interconnectivity.interPage > .frameParent11.interPage,
-.interconnectivity.interPage > .frameParent19.interPage,
-.interconnectivity.interPage > .frameParent22.interPage,
-.interconnectivity.interPage > .connectedLearningEcosystemParent.interPage,
-.interconnectivity.interPage > .ellipseGroup.interPage {
+/*
+  Keep every main page section in normal flow.
+  These selectors work whether or not the section also has .interPage.
+*/
+.interconnectivity > .frameDiv,
+.interconnectivity > .frameParent2,
+.interconnectivity > .frameParent8,
+.interconnectivity > .frameParent11,
+.interconnectivity > .frameParent19,
+.interconnectivity > .frameParent22,
+.interconnectivity > .connectedLearningEcosystemParent,
+.interconnectivity > .ellipseGroup,
+.interconnectivity > .frameParent44 {
   position: relative !important;
-  inset: auto !important;
+
   top: auto !important;
   right: auto !important;
   bottom: auto !important;
   left: auto !important;
+  inset: auto !important;
+
   height: auto !important;
   max-height: none !important;
-  transform: none;
+
+  flex-shrink: 0 !important;
+  transform: none !important;
 }
 
-/* Decorative elements are the only absolute layers. */
-.interconnectivity.interPage .smallHierarchyIcon.interPage,
-.interconnectivity.interPage .frameChild43.interPage {
+/*
+  If a route/animation wrapper sits between the page root and a section,
+  protect the known section classes there too. This is intentionally
+  limited to the page's major sections so the existing card/icon design
+  is not changed.
+*/
+.interconnectivity .frameDiv.interPage,
+.interconnectivity .frameParent2.interPage,
+.interconnectivity .frameParent8.interPage,
+.interconnectivity .frameParent11.interPage,
+.interconnectivity .frameParent19.interPage,
+.interconnectivity .frameParent22.interPage,
+.interconnectivity .connectedLearningEcosystemParent.interPage,
+.interconnectivity .ellipseGroup.interPage,
+.interconnectivity .frameParent44.interPage {
+  position: relative !important;
+
+  top: auto !important;
+  right: auto !important;
+  bottom: auto !important;
+  left: auto !important;
+  inset: auto !important;
+
+  height: auto !important;
+  max-height: none !important;
+
+  flex-shrink: 0 !important;
+  transform: none !important;
+}
+
+/* Decorative layers are intentionally absolute and stay unchanged. */
+.interconnectivity .smallHierarchyIcon,
+.interconnectivity .frameChild43 {
   position: absolute !important;
 }
