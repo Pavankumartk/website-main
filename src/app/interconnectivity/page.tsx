@@ -240,14 +240,14 @@ const Interconnectivity: NextPage = () => {
             <div className="inter-rectangleParent3">
               <div className="inter-frameChild25" />
               <Image className="inter-frameChild28" src="/images/img3-inter.webp" width={300} height={204} sizes="100vw" alt="Skill Development Centers" />
-              <b className="inter-universitiesAndHigher">Skill Development Centers</b>
+              <b className="inter-universitiesAndHigher"><span style={{ display: "block", whiteSpace: "nowrap" }}>Skill Development</span>{" "}<span style={{ display: "block", whiteSpace: "nowrap" }}>Centers</span></b>
             </div>
           </div>
           <div className="inter-frameWrapper6">
             <div className="inter-rectangleParent3">
               <div className="inter-frameChild25" />
               <Image className="inter-frameChild28" src="/images/img4-inter.webp" width={300} height={204} sizes="100vw" alt="Hybrid and Remote Learning" />
-              <b className="inter-universitiesAndHigher">{`Hybrid & Remote Learning`}</b>
+              <b className="inter-universitiesAndHigher"><span style={{ display: "block", whiteSpace: "nowrap" }}>Hybrid &amp; Remote</span>{" "}<span style={{ display: "block", whiteSpace: "nowrap" }}>Learning</span></b>
             </div>
           </div>
         </div>

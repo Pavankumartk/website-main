@@ -8766,3 +8766,21 @@ body {
     line-height: 20px !important;
   }
 }
+
+/* Match Make Learning Personal to the other section headings. */
+.personalization .makeLearningPersonal,
+.personalization > .rectangleParent7 .makeLearningPersonal {
+  font-family: "Segoe UI", "Inter" !important;
+  font-size: 36px !important;
+  font-weight: 700 !important;
+  line-height: 45px !important;
+  height: auto !important;
+}
+
+@media (max-width: 767px) {
+  .personalization .makeLearningPersonal,
+  .personalization > .rectangleParent7 .makeLearningPersonal {
+    font-size: clamp(24px, 6vw, 30px) !important;
+    line-height: 1.25 !important;
+  }
+}

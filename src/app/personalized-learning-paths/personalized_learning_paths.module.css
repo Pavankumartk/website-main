@@ -2698,3 +2698,52 @@
   font-weight: inherit !important;
 }
 
+
+
+/* Benefits: photo and matching points side by side on desktop.
+   Alternate the photo position with the selected benefit tab. */
+@media (min-width: 1024px) {
+  .plp-benefits .plp-benefits-outer {
+    display: grid;
+    grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr);
+    grid-template-areas: "photo points";
+    align-items: center;
+    gap: 32px;
+  }
+
+  .plp-benefits .plp-benefits-photo-wrap {
+    grid-area: photo;
+    width: 100%;
+    min-width: 0;
+    aspect-ratio: 4 / 3;
+  }
+
+  .plp-benefits .plp-benefits-cutout-photo {
+    object-fit: contain;
+    object-position: center bottom;
+  }
+
+  .plp-benefits .plp-benefits-checklist-grid {
+    grid-area: points;
+    width: 100%;
+    min-width: 0;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 20px;
+    margin: 0;
+  }
+
+  .plp-benefits:has(.plp-benefits-tab:nth-child(even)[aria-pressed="true"])
+    .plp-benefits-outer {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1.4fr);
+    grid-template-areas: "points photo";
+  }
+}
+
+
+/* Enlarge only the learner photo inside the existing frame. */
+@media (min-width: 1024px) {
+  .plp-benefits .plp-benefits-cutout-photo {
+    transform: scale(1.15);
+    transform-origin: center bottom;
+  }
+}

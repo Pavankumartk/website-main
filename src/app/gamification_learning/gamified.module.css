@@ -8666,3 +8666,51 @@ body {
   min-height:48px !important;
 }
 }
+
+
+/* Hero edge clearance and consistent main heading sizes.
+   Match the existing selector scope so older responsive rules cannot win. */
+@media (min-width: 768px) {
+  .interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameParent3 {
+    padding-right: 24px !important;
+  }
+}
+
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin :is(
+  .transformLearningInto,
+  .interactiveActivitiesThatContainer,
+  .beyondLearningInto,
+  .howInteractiveLearning,
+  .scaleDesktopTitle,
+  .scaleMobileTitle
+) {
+  font-family: "Segoe UI", "Inter" !important;
+  font-size: 36px !important;
+  font-weight: 700 !important;
+  line-height: 44px !important;
+  height: auto !important;
+  min-height: 0 !important;
+}
+
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .interactiveActivitiesThatContainer :is(
+  .interactiveActivitiesThat,
+  .understanding
+) {
+  font-size: inherit !important;
+  font-weight: inherit !important;
+  line-height: inherit !important;
+}
+
+@media (max-width: 767px) {
+  .interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin :is(
+    .transformLearningInto,
+    .interactiveActivitiesThatContainer,
+    .beyondLearningInto,
+    .howInteractiveLearning,
+    .scaleDesktopTitle,
+    .scaleMobileTitle
+  ) {
+    font-size: 24px !important;
+    line-height: 32px !important;
+  }
+}

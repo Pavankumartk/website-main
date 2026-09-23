@@ -917,3 +917,18 @@
   .interconnectivity-page *, .interconnectivity-page *::before, .interconnectivity-page *::after{ transition: none; }
   .interconnectivity-page .inter-frameWrapper2:hover, .interconnectivity-page .inter-frameWrapper3:hover, .interconnectivity-page .inter-frameWrapper4:hover, .interconnectivity-page .inter-rectangleParent2:hover, .interconnectivity-page .inter-frameWrapper6:hover{ transform: none; }
 }
+
+/* Give the four corner labels more clearance from the circular diagram. */
+@media (min-width: 1200px) {
+  .interconnectivity-page .inter-frameParent6 > :first-child,
+  .interconnectivity-page .inter-frameParent7 > :first-child {
+    position: relative;
+    left: -24px;
+  }
+
+  .interconnectivity-page .inter-frameParent6 > :last-child,
+  .interconnectivity-page .inter-frameParent7 > :last-child {
+    position: relative;
+    left: 24px;
+  }
+}

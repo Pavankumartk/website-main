@@ -6079,3 +6079,95 @@ flex-shrink:0;
 }
 
 }
+
+/* Requested: 36px hero heading and no target-audience shuffle animation. */
+.careerPathwaysSkilling.careerPathwaysSkilling.careerPathwaysSkilling .frameParent2 .buildSkillsFollowContainer {
+  font-size: 36px !important;
+}
+
+.careerPathwaysSkilling.careerPathwaysSkilling.careerPathwaysSkilling :is(.targetAudienceCard, .targetAudienceCardCenter, .targetAudienceCardLeft, .targetAudienceCardRight) {
+  animation: none !important;
+  transform: none !important;
+  translate: none !important;
+  rotate: none !important;
+  scale: 1 !important;
+  will-change: auto !important;
+}
+
+/* Slide a stable track one card at a time; never re-mount or shuffle cards. */
+.careerPathwaysSkilling.careerPathwaysSkilling.careerPathwaysSkilling .targetAudienceViewport {
+  width: 100%;
+  min-width: 0;
+  overflow: hidden;
+  container-type: inline-size;
+  padding-block: 8px;
+}
+
+.careerPathwaysSkilling.careerPathwaysSkilling.careerPathwaysSkilling .targetAudienceTrack {
+  --target-width: 30cqw;
+  --target-center-width: 34cqw;
+  --target-gap: calc(2cqw + 28px);
+  --target-title-height: 76px;
+  display: flex;
+  width: 100%;
+  box-sizing: border-box;
+  gap: var(--target-gap);
+  padding-inline: calc(50% - var(--target-width) / 2);
+  align-items: center;
+  transform: translateX(calc(var(--target-index) * (var(--target-width) + var(--target-gap)) * -1));
+  transition: transform .55s ease !important;
+  animation: none !important;
+}
+
+.careerPathwaysSkilling.careerPathwaysSkilling.careerPathwaysSkilling .targetAudienceSlot {
+  display: flex;
+  flex: 0 0 var(--target-width);
+  width: var(--target-width);
+  min-width: 0;
+  height: calc(var(--target-center-width) * .75 + var(--target-title-height));
+  align-items: center;
+  justify-content: center;
+}
+
+.careerPathwaysSkilling.careerPathwaysSkilling.careerPathwaysSkilling .targetAudienceSlot .targetAudienceCard {
+  display: block !important;
+  flex: 0 0 auto !important;
+  width: var(--target-width) !important;
+  max-width: none !important;
+  height: auto !important;
+  min-height: 0 !important;
+  margin: 0 !important;
+  animation: none !important;
+  transform: none !important;
+  transition: width .55s ease !important;
+}
+
+.careerPathwaysSkilling.careerPathwaysSkilling.careerPathwaysSkilling .targetAudienceSlot .targetAudienceCardCenter {
+  width: var(--target-center-width) !important;
+}
+
+.careerPathwaysSkilling.careerPathwaysSkilling.careerPathwaysSkilling .targetAudienceSlot .targetAudienceTitle {
+  height: var(--target-title-height) !important;
+  min-height: var(--target-title-height) !important;
+}
+
+.careerPathwaysSkilling.careerPathwaysSkilling.careerPathwaysSkilling .targetAudienceTrackNoTransition,
+.careerPathwaysSkilling.careerPathwaysSkilling.careerPathwaysSkilling .targetAudienceTrackNoTransition .targetAudienceCard {
+  transition: none !important;
+}
+
+@media (max-width: 767px) {
+  .careerPathwaysSkilling.careerPathwaysSkilling.careerPathwaysSkilling .targetAudienceTrack {
+    --target-width: min(320px, calc(100cqw - 16px));
+    --target-center-width: var(--target-width);
+    --target-gap: 24px;
+    --target-title-height: 64px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .careerPathwaysSkilling.careerPathwaysSkilling.careerPathwaysSkilling .targetAudienceTrack,
+  .careerPathwaysSkilling.careerPathwaysSkilling.careerPathwaysSkilling .targetAudienceSlot .targetAudienceCard {
+    transition: none !important;
+  }
+}

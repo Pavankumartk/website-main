@@ -2,7 +2,7 @@
 
 import type { NextPage } from "next";
 import Image from "next/image";
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import type { CSSProperties } from "react";
 import styles from "./assissments.module.css";
 import Header from "../../components/Header/header";
@@ -44,41 +44,60 @@ const Assessments: NextPage = () => {
   ];
 
   const cardCount = audienceCards.length;
-  const [audiencePosition, setAudiencePosition] = useState(cardCount);
+  const [audiencePosition, setAudiencePosition] = useState(cardCount + 1);
   const [audienceTransition, setAudienceTransition] = useState(true);
   const [audiencePaused, setAudiencePaused] = useState(false);
 
-  useEffect(() => {
-    if (audiencePaused) return;
+  const audienceMoving = useRef(false);
 
-    const intervalId = window.setInterval(() => {
-      setAudienceTransition(true);
-      setAudiencePosition((current) => current + 1);
-    }, 2000);
-
-    return () => window.clearInterval(intervalId);
-  }, [audiencePaused]);
-
-  const moveAudience = (direction: number) => {
+  const moveAudience = useCallback((direction: -1 | 1) => {
+    // One accepted action moves exactly one card, even during rapid clicks.
+    if (audienceMoving.current) return;
+    audienceMoving.current = true;
     setAudienceTransition(true);
     setAudiencePosition((current) => current + direction);
-  };
+  }, []);
 
-  const handleAudienceTransitionEnd = () => {
-    if (audiencePosition >= cardCount * 2) {
+  useEffect(() => {
+    if (audiencePaused || !audienceTransition) return;
+    // Restart the three-second countdown after every manual or automatic move.
+    const timeoutId = window.setTimeout(() => moveAudience(1), 3000);
+    return () => window.clearTimeout(timeoutId);
+  }, [audiencePaused, audiencePosition, audienceTransition, moveAudience]);
+
+  const finishAudienceMove = useCallback(() => {
+    if (!audienceMoving.current) return;
+    if (audiencePosition < cardCount || audiencePosition >= cardCount * 2) {
+      // Rebase to the identical middle copy without animating the reset.
       setAudienceTransition(false);
-      setAudiencePosition(cardCount);
-      requestAnimationFrame(() => {
-        requestAnimationFrame(() => setAudienceTransition(true));
-      });
-    } else if (audiencePosition <= 0) {
-      setAudienceTransition(false);
-      setAudiencePosition(cardCount);
-      requestAnimationFrame(() => {
-        requestAnimationFrame(() => setAudienceTransition(true));
-      });
+      setAudiencePosition(cardCount + ((audiencePosition % cardCount) + cardCount) % cardCount);
+    } else {
+      audienceMoving.current = false;
     }
-  };
+  }, [audiencePosition, cardCount]);
+
+  useEffect(() => {
+    if (!audienceTransition || !audienceMoving.current) return;
+    // Reduced-motion styles can suppress transitionend entirely.
+    const timeoutId = window.setTimeout(finishAudienceMove, 650);
+    return () => window.clearTimeout(timeoutId);
+  }, [audiencePosition, audienceTransition, finishAudienceMove]);
+
+  useEffect(() => {
+    if (audienceTransition) return;
+    let secondFrame = 0;
+    const firstFrame = window.requestAnimationFrame(() => {
+      secondFrame = window.requestAnimationFrame(() => {
+        audienceMoving.current = false;
+        setAudienceTransition(true);
+      });
+    });
+    return () => {
+      window.cancelAnimationFrame(firstFrame);
+      window.cancelAnimationFrame(secondFrame);
+    };
+  }, [audienceTransition]);
+
 
   return (
     <>
@@ -207,7 +226,6 @@ const Assessments: NextPage = () => {
                 <div className={styles.modernLmsAssessmentsGoBeyoParent}>
                   <b className={styles.modernLmsAssessments}>
                     Modern LMS Assessments Go Beyond Simple Tests
-                    <br />
                   </b>
                   <div className={styles.interactiveGamifiedAnd}>
                     Interactive, gamified, and adaptive assessments that measure critical thinking, knowledge, and problem-solving.
@@ -476,7 +494,14 @@ const Assessments: NextPage = () => {
             </div>
           </div>
         </div>
-        <section className={`${styles.frameParent45} ${styles.audienceSection}`} aria-labelledby="audience-section-title">
+        <section className={`${styles.frameParent45} ${styles.audienceSection}`} aria-labelledby="audience-section-title"
+          onMouseEnter={() => setAudiencePaused(true)}
+          onMouseLeave={() => setAudiencePaused(false)}
+          onFocusCapture={() => setAudiencePaused(true)}
+          onBlurCapture={(event) => {
+            if (!event.currentTarget.contains(event.relatedTarget)) setAudiencePaused(false);
+          }}
+        >
           <div className={styles.audienceHeader}>
             <div className={styles.audienceSectionBadge}>Who Can Benefit From NeuroLXP?</div>
             <h2 id="audience-section-title" className={styles.audienceTitle}>
@@ -485,12 +510,15 @@ const Assessments: NextPage = () => {
             <p className={styles.audienceDescription}>Modern digital learning with exams, assessments, skills evaluation, and certification.</p>
           </div>
 
-          <div className={styles.audienceCarouselViewport} onMouseEnter={() => setAudiencePaused(true)} onMouseLeave={() => setAudiencePaused(false)} onFocusCapture={() => setAudiencePaused(true)} onBlurCapture={() => setAudiencePaused(false)}>
-            <div className={`${styles.audienceCarouselTrack} ${audienceTransition ? "" : styles.audienceCarouselTrackNoTransition}`} style={{ "--audience-index": audiencePosition } as CSSProperties} onTransitionEnd={handleAudienceTransitionEnd}>
+          <div className={styles.audienceCarouselViewport}>
+            <div className={`${styles.audienceCarouselTrack} ${audienceTransition ? "" : styles.audienceCarouselTrackNoTransition}`} style={{ "--audience-index": audiencePosition } as CSSProperties} onTransitionEnd={(event) => {
+              if (event.target === event.currentTarget && event.propertyName === "transform") finishAudienceMove();
+            }}>
               {[...audienceCards, ...audienceCards, ...audienceCards].map((card, index) => {
-                const isFeatured = index === audiencePosition + 1;
+                const isFeatured = index % cardCount === audiencePosition % cardCount;
                 return (
-                  <article className={`${styles.audienceCard} ${card.className} ${isFeatured ? styles.audienceCardFeatured : ""}`} key={`${card.title}-${index}`}>
+                  <div className={styles.audienceCardSlot} key={`${card.title}-${index}`}>
+                  <article className={`${styles.audienceCard} ${card.className} ${isFeatured ? styles.audienceCardFeatured : ""}`}>
                     <div className={styles.audienceImageWrap}>
                       <Image className={styles.audienceImage} src={card.image} width={473} height={258} sizes="(max-width: 767px) 88vw, 473px" alt="" />
                     </div>
@@ -499,6 +527,7 @@ const Assessments: NextPage = () => {
                       <span>{card.subtitle}</span>
                     </div>
                   </article>
+                  </div>
                 );
               })}
             </div>

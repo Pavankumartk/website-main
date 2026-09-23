@@ -4299,3 +4299,336 @@ button.requestADemoWrapper::-moz-focus-inner {
 @media (max-width: 767px) {
 .learningCommunitySupport.learningCommunitySupport.learningCommunitySupport.learningCommunitySupport.learningCommunitySupport .frameParent61 { gap: 12px !important; }
 }
+
+
+/* Learning Community: default cursor on static content, including hover-only cards. */
+.learningCommunitySupport.learningCommunitySupport.learningCommunitySupport.learningCommunitySupport.learningCommunitySupport,
+.learningCommunitySupport.learningCommunitySupport.learningCommunitySupport.learningCommunitySupport.learningCommunitySupport * {
+  cursor: default !important;
+}
+
+/* Keep real links, action buttons and video controls visibly interactive. */
+.learningCommunitySupport.learningCommunitySupport.learningCommunitySupport.learningCommunitySupport.learningCommunitySupport :is(
+  a[href],
+  button:where(:not(.communityCard)),
+  [role="button"]:where(:not(.communityCard)),
+  [role="link"]:where(:not(.communityCard)),
+  summary, select, label[for],
+  input:where([type="button"], [type="submit"], [type="reset"], [type="checkbox"], [type="radio"]),
+  .frameWrapper3, .requestADemoWrapper, .videoControlButton, .signInHelpWrapper
+),
+.learningCommunitySupport.learningCommunitySupport.learningCommunitySupport.learningCommunitySupport.learningCommunitySupport :is(
+  a[href],
+  button:where(:not(.communityCard)),
+  [role="button"]:where(:not(.communityCard)),
+  [role="link"]:where(:not(.communityCard)),
+  summary, select, label[for],
+  input:where([type="button"], [type="submit"], [type="reset"], [type="checkbox"], [type="radio"]),
+  .frameWrapper3, .requestADemoWrapper, .videoControlButton, .signInHelpWrapper
+) * {
+  cursor: pointer !important;
+}
+
+.learningCommunitySupport.learningCommunitySupport.learningCommunitySupport.learningCommunitySupport.learningCommunitySupport input:where(:not([type="button"], [type="submit"], [type="reset"], [type="checkbox"], [type="radio"], [type="range"], [type="file"], [type="color"])),
+.learningCommunitySupport.learningCommunitySupport.learningCommunitySupport.learningCommunitySupport.learningCommunitySupport textarea,
+.learningCommunitySupport.learningCommunitySupport.learningCommunitySupport.learningCommunitySupport.learningCommunitySupport [contenteditable="true"] {
+  cursor: text !important;
+}
+
+.learningCommunitySupport.learningCommunitySupport.learningCommunitySupport.learningCommunitySupport.learningCommunitySupport :is(button:disabled, input:disabled, select:disabled, [aria-disabled="true"]),
+.learningCommunitySupport.learningCommunitySupport.learningCommunitySupport.learningCommunitySupport.learningCommunitySupport :is(button:disabled, input:disabled, select:disabled, [aria-disabled="true"]) * {
+  cursor: default !important;
+}
+
+/* Shared card typography: two title lines followed by three description lines.
+   Minimum heights align the text; longer content remains visible and can grow. */
+.learningCommunitySupport.learningCommunitySupport.learningCommunitySupport.learningCommunitySupport.learningCommunitySupport {
+  --community-card-title-size: 24px;
+  --community-card-title-line: 32px;
+  --community-card-body-size: 20px;
+  --community-card-body-line: 28px;
+}
+
+.learningCommunitySupport.learningCommunitySupport.learningCommunitySupport.learningCommunitySupport.learningCommunitySupport .frameParent12 {
+  align-items: stretch !important;
+}
+
+.learningCommunitySupport.learningCommunitySupport.learningCommunitySupport.learningCommunitySupport.learningCommunitySupport .communityCard,
+.learningCommunitySupport.learningCommunitySupport.learningCommunitySupport.learningCommunitySupport.learningCommunitySupport .communityCard:hover,
+.learningCommunitySupport.learningCommunitySupport.learningCommunitySupport.learningCommunitySupport.learningCommunitySupport .communityCard:focus-visible {
+  height: auto !important;
+  min-height: 0 !important;
+  align-items: stretch !important;
+  justify-content: flex-start !important;
+  padding: 24px 16px !important;
+}
+
+.learningCommunitySupport.learningCommunitySupport.learningCommunitySupport.learningCommunitySupport.learningCommunitySupport .communityCard :is(.discussionForumsParent, .learningCommunitiesParent) {
+  position: static !important;
+  inset: auto !important;
+  display: grid !important;
+  grid-template-columns: minmax(0, 1fr) !important;
+  grid-template-rows: minmax(calc(2 * var(--community-card-title-line)), auto) minmax(calc(3 * var(--community-card-body-line)), auto) !important;
+  justify-items: center !important;
+  align-items: start !important;
+  width: 100% !important;
+  min-width: 0 !important;
+  height: auto !important;
+  margin: 0 !important;
+  gap: 16px !important;
+  transform: none !important;
+  text-align: center !important;
+}
+
+.learningCommunitySupport.learningCommunitySupport.learningCommunitySupport.learningCommunitySupport.learningCommunitySupport .communityCard :is(.discussionForums, .learningCommunities),
+.learningCommunitySupport.learningCommunitySupport.learningCommunitySupport.learningCommunitySupport.learningCommunitySupport .ecosystemCard .ecosystemTitle {
+  position: relative !important;
+  inset: auto !important;
+  display: block !important;
+  width: min(100%, 12ch) !important;
+  max-width: 100% !important;
+  min-width: 0 !important;
+  height: auto !important;
+  min-height: calc(2 * var(--community-card-title-line)) !important;
+  margin: 0 auto !important;
+  padding: 0 !important;
+  font-size: var(--community-card-title-size) !important;
+  font-weight: 600 !important;
+  line-height: var(--community-card-title-line) !important;
+  text-align: center !important;
+  white-space: normal !important;
+  text-wrap: balance !important;
+  overflow-wrap: break-word !important;
+  word-break: normal !important;
+  overflow: visible !important;
+  -webkit-line-clamp: unset !important;
+  transform: none !important;
+}
+
+.learningCommunitySupport.learningCommunitySupport.learningCommunitySupport.learningCommunitySupport.learningCommunitySupport .communityCard :is(.askQuestionsExchange, .createDedicatedSpaces),
+.learningCommunitySupport.learningCommunitySupport.learningCommunitySupport.learningCommunitySupport.learningCommunitySupport .ecosystemCard .ecosystemDescription {
+  position: static !important;
+  inset: auto !important;
+  display: block !important;
+  width: min(100%, 24ch) !important;
+  max-width: 100% !important;
+  min-width: 0 !important;
+  height: auto !important;
+  min-height: calc(3 * var(--community-card-body-line)) !important;
+  max-height: none !important;
+  margin: 0 auto !important;
+  padding: 0 !important;
+  font-size: var(--community-card-body-size) !important;
+  font-weight: 400 !important;
+  line-height: var(--community-card-body-line) !important;
+  text-align: center !important;
+  white-space: normal !important;
+  text-wrap: balance !important;
+  overflow-wrap: break-word !important;
+  word-break: normal !important;
+  overflow: visible !important;
+  -webkit-line-clamp: unset !important;
+  transform: none !important;
+}
+
+/* Keep the numbered cards in normal flow so two-line titles clear the pointed top. */
+.learningCommunitySupport.learningCommunitySupport.learningCommunitySupport.learningCommunitySupport.learningCommunitySupport .frameParent53 {
+  display: grid !important;
+  grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+  align-items: stretch !important;
+}
+
+.learningCommunitySupport.learningCommunitySupport.learningCommunitySupport.learningCommunitySupport.learningCommunitySupport .ecosystemCard {
+  width: 100% !important;
+  min-width: 0 !important;
+  max-width: 100% !important;
+  height: auto !important;
+  min-height: 0 !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: flex-start !important;
+  gap: 24px !important;
+  padding: 0 0 24px !important;
+  flex: initial !important;
+}
+
+.learningCommunitySupport.learningCommunitySupport.learningCommunitySupport.learningCommunitySupport.learningCommunitySupport .ecosystemCardTop {
+  width: 100% !important;
+  height: auto !important;
+  min-height: 0 !important;
+  box-sizing: border-box !important;
+  padding: 20px 20px 72px !important;
+  gap: 12px !important;
+  flex: 0 0 auto !important;
+}
+
+.learningCommunitySupport.learningCommunitySupport.learningCommunitySupport.learningCommunitySupport.learningCommunitySupport .ecosystemNumber {
+  width: auto !important;
+  height: auto !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  flex: 0 0 auto !important;
+}
+
+.learningCommunitySupport.learningCommunitySupport.learningCommunitySupport.learningCommunitySupport.learningCommunitySupport .ecosystemCard .ecosystemTitle {
+  width: min(100%, 10ch) !important;
+}
+
+.learningCommunitySupport.learningCommunitySupport.learningCommunitySupport.learningCommunitySupport.learningCommunitySupport .ecosystemCard .ecosystemDescription {
+  width: min(calc(100% - 40px), 24ch) !important;
+}
+
+@media (min-width: 768px) and (max-width: 1100px) {
+  .learningCommunitySupport.learningCommunitySupport.learningCommunitySupport.learningCommunitySupport.learningCommunitySupport .frameParent12 {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .learningCommunitySupport.learningCommunitySupport.learningCommunitySupport.learningCommunitySupport.learningCommunitySupport {
+    --community-card-title-size: 18px;
+    --community-card-title-line: 26px;
+    --community-card-body-size: 16px;
+    --community-card-body-line: 24px;
+  }
+
+  .learningCommunitySupport.learningCommunitySupport.learningCommunitySupport.learningCommunitySupport.learningCommunitySupport .frameParent12,
+  .learningCommunitySupport.learningCommunitySupport.learningCommunitySupport.learningCommunitySupport.learningCommunitySupport .frameParent53 {
+    grid-template-columns: minmax(0, 1fr) !important;
+  }
+
+  .learningCommunitySupport.learningCommunitySupport.learningCommunitySupport.learningCommunitySupport.learningCommunitySupport .ecosystemCardTop {
+    padding: 16px 20px 56px !important;
+  }
+}
+
+
+/* Requested adjustments: compact, uniform community cards and centered Grow. */
+.learningCommunitySupport.learningCommunitySupport.learningCommunitySupport.learningCommunitySupport.learningCommunitySupport.learningCommunitySupport .frameParent12 {
+  gap: 20px !important;
+  align-items: stretch !important;
+  grid-auto-rows: 1fr !important;
+}
+
+.learningCommunitySupport.learningCommunitySupport.learningCommunitySupport.learningCommunitySupport.learningCommunitySupport.learningCommunitySupport .communityCard,
+.learningCommunitySupport.learningCommunitySupport.learningCommunitySupport.learningCommunitySupport.learningCommunitySupport.learningCommunitySupport .communityCard:hover,
+.learningCommunitySupport.learningCommunitySupport.learningCommunitySupport.learningCommunitySupport.learningCommunitySupport.learningCommunitySupport .communityCard:focus-visible {
+  --community-card-body-size: 18px;
+  --community-card-body-line: 26px;
+  padding: 20px 16px !important;
+  min-height: 0 !important;
+  height: 100% !important;
+  align-items: stretch !important;
+  justify-content: flex-start !important;
+}
+
+.learningCommunitySupport.learningCommunitySupport.learningCommunitySupport.learningCommunitySupport.learningCommunitySupport.learningCommunitySupport .communityCard :is(.discussionForumsParent, .learningCommunitiesParent) {
+  grid-template-rows: calc(2 * var(--community-card-title-line)) minmax(calc(3 * var(--community-card-body-line)), auto) !important;
+  gap: 8px !important;
+  align-content: start !important;
+  align-items: start !important;
+}
+
+.learningCommunitySupport.learningCommunitySupport.learningCommunitySupport.learningCommunitySupport.learningCommunitySupport.learningCommunitySupport .communityCard :is(.askQuestionsExchange, .createDedicatedSpaces) {
+  width: 100% !important;
+  font-size: var(--community-card-body-size) !important;
+  line-height: var(--community-card-body-line) !important;
+  letter-spacing: 0.01em !important;
+  text-wrap: balance !important;
+}
+
+.learningCommunitySupport.learningCommunitySupport.learningCommunitySupport.learningCommunitySupport.learningCommunitySupport.learningCommunitySupport .communityCard :is(.discussionForums, .learningCommunities, .askQuestionsExchange, .createDedicatedSpaces) p {
+  margin: 0 !important;
+}
+
+/* Remove unnecessary vertical space between support items. */
+.learningCommunitySupport.learningCommunitySupport.learningCommunitySupport.learningCommunitySupport.learningCommunitySupport.learningCommunitySupport .frameParent44 {
+  column-gap: 40px !important;
+  row-gap: 20px !important;
+}
+
+.learningCommunitySupport.learningCommunitySupport.learningCommunitySupport.learningCommunitySupport.learningCommunitySupport.learningCommunitySupport :is(.frameParent45, .frameParent49) {
+  grid-auto-rows: auto !important;
+  gap: 20px !important;
+}
+
+.learningCommunitySupport.learningCommunitySupport.learningCommunitySupport.learningCommunitySupport.learningCommunitySupport.learningCommunitySupport .frameParent44 .getSupportParent {
+  gap: 4px !important;
+}
+
+.learningCommunitySupport.learningCommunitySupport.learningCommunitySupport.learningCommunitySupport.learningCommunitySupport.learningCommunitySupport .frameParent44 :is(.frameParent46, .frameParent47, .frameParent48, .frameParent51) {
+  gap: 18px !important;
+  align-items: start !important;
+}
+
+@media (min-width: 768px) {
+  /* Let the five items share one grid instead of two separate columns. */
+  .learningCommunitySupport.learningCommunitySupport.learningCommunitySupport.learningCommunitySupport.learningCommunitySupport.learningCommunitySupport .frameParent44 {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+
+  .learningCommunitySupport.learningCommunitySupport.learningCommunitySupport.learningCommunitySupport.learningCommunitySupport.learningCommunitySupport .frameParent44 > :is(.frameParent45, .frameParent49) {
+    display: contents !important;
+  }
+
+  .learningCommunitySupport.learningCommunitySupport.learningCommunitySupport.learningCommunitySupport.learningCommunitySupport.learningCommunitySupport .frameParent45 > .frameParent46 {
+    grid-column: 1 !important;
+    grid-row: 1 !important;
+  }
+
+  .learningCommunitySupport.learningCommunitySupport.learningCommunitySupport.learningCommunitySupport.learningCommunitySupport.learningCommunitySupport .frameParent49 > .frameParent46 {
+    grid-column: 2 !important;
+    grid-row: 1 !important;
+  }
+
+  .learningCommunitySupport.learningCommunitySupport.learningCommunitySupport.learningCommunitySupport.learningCommunitySupport.learningCommunitySupport .frameParent45 > .frameParent47 {
+    grid-column: 1 !important;
+    grid-row: 2 !important;
+  }
+
+  .learningCommunitySupport.learningCommunitySupport.learningCommunitySupport.learningCommunitySupport.learningCommunitySupport.learningCommunitySupport .frameParent49 > .frameParent51 {
+    grid-column: 2 !important;
+    grid-row: 2 !important;
+  }
+
+  .learningCommunitySupport.learningCommunitySupport.learningCommunitySupport.learningCommunitySupport.learningCommunitySupport.learningCommunitySupport .frameParent45 > .frameParent48 {
+    grid-column: 1 / -1 !important;
+    grid-row: 3 !important;
+    width: calc((100% - 40px) / 2) !important;
+    justify-self: center !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .learningCommunitySupport.learningCommunitySupport.learningCommunitySupport.learningCommunitySupport.learningCommunitySupport.learningCommunitySupport .frameParent12 {
+    gap: 16px !important;
+    grid-auto-rows: auto !important;
+  }
+
+  .learningCommunitySupport.learningCommunitySupport.learningCommunitySupport.learningCommunitySupport.learningCommunitySupport.learningCommunitySupport .communityCard,
+  .learningCommunitySupport.learningCommunitySupport.learningCommunitySupport.learningCommunitySupport.learningCommunitySupport.learningCommunitySupport .communityCard:hover,
+  .learningCommunitySupport.learningCommunitySupport.learningCommunitySupport.learningCommunitySupport.learningCommunitySupport.learningCommunitySupport .communityCard:focus-visible {
+    --community-card-body-size: 16px;
+    --community-card-body-line: 24px;
+    padding: 18px 16px !important;
+  }
+
+  .learningCommunitySupport.learningCommunitySupport.learningCommunitySupport.learningCommunitySupport.learningCommunitySupport.learningCommunitySupport .frameParent44 :is(.frameParent46, .frameParent47, .frameParent48, .frameParent51) {
+    gap: 12px !important;
+  }
+}
+
+/* Expert Connect: match the three-line descriptions without changing the card. */
+.learningCommunitySupport.learningCommunitySupport.learningCommunitySupport.learningCommunitySupport.learningCommunitySupport.learningCommunitySupport .communityCard.frameWrapper11 :is(.askQuestionsExchange, .createDedicatedSpaces) {
+  width: min(100%, 22ch) !important;
+  margin-inline: auto !important;
+  text-wrap: balance !important;
+}
+
+/* Keep the Educators and Institutions headings on a single line. */
+.learningCommunitySupport.learningCommunitySupport.learningCommunitySupport.learningCommunitySupport.learningCommunitySupport.learningCommunitySupport .frameParent53 .ecosystemCard:is(:nth-child(2), :nth-child(3)) .ecosystemTitle {
+  width: 100% !important;
+  white-space: nowrap !important;
+  text-wrap: nowrap !important;
+}

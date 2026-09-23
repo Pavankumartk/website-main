@@ -2860,102 +2860,186 @@
   overflow-wrap: normal;
 }
 
-/* Plain tick-and-text columns, with more room for the longer middle labels. */
+/* Journey: three numbered steps per row, in reading order.
+   The existing markup groups Set Goals/Learn, Track Progress/Analyze
+   Performance, and Create Plans/Adapt & Improve into three columns. */
+.page .journeyBlock {
+  gap: 32px;
+}
+
 .page .journeyColumns {
+  display: grid;
   width: 100%;
   max-width: 1200px;
   margin-inline: auto;
-  grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.25fr) minmax(0, 1fr);
-  gap: clamp(32px, 5vw, 72px);
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-auto-flow: row;
+  gap: 24px 32px;
   align-items: start;
 }
 
+/* Flatten only the column wrappers so all six steps share one grid. */
 .page .journeyColumn,
 .page .journeyColumn:last-child {
-  width: 100%;
-  min-width: 0;
-  grid-column: auto;
-  gap: 24px;
+  display: contents;
 }
 
 .page .journeyItem {
+  --journey-circle-size: 70px;
+  --journey-circle-inset: 8px;
+  position: relative;
   width: 100%;
+  min-width: 0;
+  max-width: 100%;
   display: flex;
   align-items: center;
-  min-height: 56px;
+  min-height: 48px;
   height: auto;
+  margin: 0;
   padding: 0;
   border: 0;
   border-radius: 0;
   background: transparent;
   box-shadow: none;
-  color: #31344b;
-  gap: 16px;
+  color: var(--ink);
+  gap: 12px;
   font-size: 24px;
   font-weight: 700;
   line-height: 32px;
   justify-content: flex-start;
   text-align: left;
   transform: none;
-  white-space: nowrap;
-  overflow-wrap: normal;
+  white-space: normal;
+  overflow-wrap: break-word;
 }
 
-.page .journeyItem img {
-  width: 32px;
-  height: 32px;
-  flex: 0 0 32px;
-  object-fit: contain;
+/* Replace the former tick icons with matching blue number circles. */
+.page .journeyItem img,
+.page .journeyItem svg {
+  display: none;
+}
+
+/* Double circle matches the reference: recessed outer ring, raised face. */
+.page .journeyItem::before {
+  content: "";
+  box-sizing: border-box;
+  display: block;
+  flex: 0 0 var(--journey-circle-size);
+  width: var(--journey-circle-size);
+  height: var(--journey-circle-size);
+  border: 0;
+  border-radius: 50%;
+  background: var(--bg);
+  box-shadow:
+    inset 4px 4px 4px #c4c4c4,
+    inset -4px -4px 4px #ffffff;
+  pointer-events: none;
+}
+
+.page .journeyItem::after {
+  content: var(--journey-number);
+  box-sizing: border-box;
+  position: absolute;
+  left: var(--journey-circle-inset);
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: calc(var(--journey-circle-size) - 2 * var(--journey-circle-inset));
+  height: calc(var(--journey-circle-size) - 2 * var(--journey-circle-inset));
+  border: 0;
+  border-radius: 50%;
+  background: var(--bg);
+  color: var(--blue);
+  box-shadow:
+    3px 3px 4px rgba(196, 196, 196, 0.9),
+    -3px -3px 4px #ffffff;
+  font-family: "Segoe UI", "Inter";
+  font-size: 24px;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  line-height: 32px;
+  text-align: center;
+  pointer-events: none;
 }
 
 .page .journeyItem span {
-  flex: 0 1 auto;
+  min-width: 0;
+  flex: 1 1 auto;
   font-size: inherit;
   font-weight: inherit;
   color: inherit;
   line-height: inherit;
-  white-space: nowrap;
-  text-wrap: nowrap;
-  overflow-wrap: normal;
+  white-space: normal;
+  text-wrap: wrap;
+  overflow-wrap: break-word;
   word-break: normal;
   text-align: left;
 }
 
+/* Row 1: Set Goals, Create Plans, Learn.
+   Row 2: Track Progress, Analyze Performance, Adapt & Improve. */
+.page .journeyColumn:nth-child(1) .journeyItem:nth-child(1) {
+  order: 1;
+  --journey-number: "1";
+}
+
+.page .journeyColumn:nth-child(3) .journeyItem:nth-child(1) {
+  order: 2;
+  --journey-number: "2";
+}
+
+.page .journeyColumn:nth-child(1) .journeyItem:nth-child(2) {
+  order: 3;
+  --journey-number: "3";
+}
+
+.page .journeyColumn:nth-child(2) .journeyItem:nth-child(1) {
+  order: 4;
+  --journey-number: "4";
+}
+
+.page .journeyColumn:nth-child(2) .journeyItem:nth-child(2) {
+  order: 5;
+  --journey-number: "5";
+}
+
+.page .journeyColumn:nth-child(3) .journeyItem:nth-child(2) {
+  order: 6;
+  --journey-number: "6";
+}
+
 .page .journeyItem:is(:hover, :active, :focus, :visited) {
-  color: #31344b;
+  color: var(--ink);
   background: transparent;
   box-shadow: none;
   transform: none;
 }
 
-@media (max-width: 1199px) {
+@media (max-width: 1024px) {
   .page .journeyColumns {
     max-width: 800px;
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 24px;
+    gap: 20px 24px;
   }
-  .page .journeyColumn:last-child {
-    grid-column: 1 / -1;
-    width: calc((100% - 24px) / 2);
-    justify-self: center;
-  }
-  .page .journeyItem { font-size: 20px; line-height: 28px; }
 }
 
-@media (max-width: 720px) {
+@media (max-width: 767px) {
+  .page .journeyBlock {
+    gap: 24px;
+  }
+
   .page .journeyColumns {
-    max-width: 360px;
-    grid-template-columns: 1fr;
-    gap: 20px;
+    max-width: 420px;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 16px;
   }
-  .page .journeyColumn:last-child {
-    width: 100%;
-    grid-column: auto;
-  }
+
   .page .journeyItem {
-    font-size: 18px;
+    --journey-circle-size: 56px;
+    font-size: 16px;
     line-height: 24px;
-    padding-inline: 0;
   }
 }
 
@@ -2998,4 +3082,65 @@
 
 @media (max-width: 640px) {
   .page .goalCardContent { gap: 8px; }
+}
+
+/* Benefits list: slightly tighter, centered rows with natural panel height. */
+.page .benefitsInner {
+  height: auto;
+}
+
+.page .benefitsList {
+  width: 100%;
+  min-width: 0;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  gap: 24px;
+}
+
+.page .benefitItem {
+  width: 100%;
+  min-width: 0;
+  flex-shrink: 0;
+}
+
+.page .benefitItem p {
+  margin: 0;
+  line-height: 1.4;
+}
+
+@media (min-width: 1025px) {
+  .page .benefitsInner {
+    min-height: clamp(380px, 34vw, 500px);
+    padding-block: 24px;
+  }
+
+  .page .benefitsList {
+    align-self: center;
+    justify-content: center;
+    gap: 28px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .page .benefitsInner {
+    min-height: 0;
+    padding-block: 24px;
+  }
+
+  .page .benefitsList {
+    align-self: auto;
+    justify-content: flex-start;
+    gap: 24px;
+  }
+}
+
+@media (max-width: 640px) {
+  .page .benefitsList {
+    gap: 20px;
+  }
+
+  .page .benefitItem p {
+    line-height: 24px;
+  }
 }

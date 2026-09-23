@@ -295,7 +295,11 @@ export default function LearningCommunitySupport() {
 						<div className={`${styles.frameWrapper11} ${styles.communityCard}`} tabIndex={0}>
 							<div className={styles.discussionForumsParent}>
 								<h3 className={styles.discussionForums} style={{ display: "inline", margin: 0, padding: 0, fontWeight: "bold" }}>Expert Connect</h3>
-								<div className={styles.askQuestionsExchange}>Get guidance and insights from educators and experts</div>
+								<div className={styles.askQuestionsExchange}>
+									<span style={{ display: "block", whiteSpace: "nowrap" }}>Get guidance and</span>{" "}
+									<span style={{ display: "block", whiteSpace: "nowrap" }}>insights from</span>{" "}
+									<span style={{ display: "block", whiteSpace: "nowrap" }}>educators and experts</span>
+								</div>
 							</div>
 						</div>
 					</div>

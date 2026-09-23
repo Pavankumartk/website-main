@@ -7758,3 +7758,225 @@ button.requestADemoWrapper::-moz-focus-inner {
 .assessments.assessments.assessments .frameParent2 .frameParent4 {
   gap:20px !important;
 }
+
+/* Center only the hero; retain its existing sizes, artwork and spacing. */
+.assessments.assessments.assessments > .frameParent2 {
+  left: auto !important;
+  right: auto !important;
+  margin-inline: auto !important;
+  transform: none !important;
+  align-self: center !important;
+}
+
+.assessments.assessments.assessments .frameParent2 .ellipseGroup {
+  left: 50% !important;
+  right: auto !important;
+  margin-inline: 0 !important;
+  transform: translateX(-50%) !important;
+}
+
+@media (min-width: 768px) {
+  .assessments.assessments.assessments .frameParent2 .frameParent3 {
+    left: 50% !important;
+    right: auto !important;
+    margin-inline: 0 !important;
+    transform: translate(-50%, -50%) !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .assessments.assessments.assessments .frameParent2 .frameParent3 {
+    left: auto !important;
+    right: auto !important;
+    margin-inline: auto !important;
+    transform: none !important;
+  }
+}
+
+.assessments.assessments.assessments .modernLmsAssessments {
+  word-break: normal !important;
+  overflow-wrap: normal !important;
+  hyphens: none !important;
+}
+
+/* Keep the entire second-section heading on one line at every screen size. */
+.assessments.assessments.assessments .modernLmsAssessmentsGoBeyoParent {
+  container-type: inline-size;
+}
+
+.assessments.assessments.assessments .modernLmsAssessments {
+  width: 100% !important;
+  max-width: none !important;
+  height: auto !important;
+  min-height: 0 !important;
+  white-space: nowrap !important;
+  text-wrap: nowrap !important;
+  font-size: min(36px, 3cqw) !important;
+  line-height: 1.3 !important;
+  text-align: center !important;
+}
+
+/* Align the existing controls beneath the visible middle card, including zoomed layouts. */
+.assessments.assessments.assessments .audienceControls {
+  position: relative !important;
+  top: auto !important;
+  right: auto !important;
+  bottom: auto !important;
+  left: var(--audience-controls-offset, 0px) !important;
+  margin-inline: auto !important;
+  transform: none !important;
+  align-self: center !important;
+}
+
+/* Uniform spacing within Why Assessments Matter only. */
+.assessments.assessments.assessments .frameParent10 {
+  gap: 32px !important;
+}
+
+.assessments.assessments.assessments .frameParent10 :is(.frameWrapper6, .frameWrapper7, .frameParent11, .modernLmsAssessmentsGoBeyoParent) {
+  height: auto !important;
+  min-height: 0 !important;
+  margin-block: 0 !important;
+  padding-block: 0 !important;
+  transform: none !important;
+}
+
+.assessments.assessments.assessments .frameParent10 :is(.frameParent11, .modernLmsAssessmentsGoBeyoParent) {
+  gap: 16px !important;
+}
+
+.assessments.assessments.assessments .frameParent10 :is(.modernLmsAssessments, .interactiveGamifiedAnd) {
+  height: auto !important;
+  min-height: 0 !important;
+  margin-block: 0 !important;
+  transform: none !important;
+}
+
+.assessments.assessments.assessments .frameParent10 .interactiveGamifiedAnd {
+  line-height: 1.5 !important;
+  padding-block: 0 !important;
+}
+
+.assessments.assessments.assessments .frameParent10 .interactiveGamifiedAnd br,
+.assessments.assessments.assessments .frameParent10 :is(.interactiveAndEngaging, .alignedWithLearning, .onlineRemote, .scalableForEducation, .idealForExams) br {
+  display: none !important;
+}
+
+.assessments.assessments.assessments .frameParent10 .frameParent12 {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+/* Equal inner margins and true vertical centering for every benefit label. */
+.assessments.assessments.assessments .frameParent10 :is(.interactiveAndEngaging, .alignedWithLearning, .onlineRemote, .scalableForEducation, .idealForExams) {
+  position: absolute !important;
+  top: 50% !important;
+  left: 50% !important;
+  right: auto !important;
+  bottom: auto !important;
+  width: calc(100% - 40px) !important;
+  max-width: none !important;
+  height: auto !important;
+  min-height: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  transform: translate(-50%, -50%) !important;
+  line-height: 1.3 !important;
+  text-align: center !important;
+  text-wrap: balance !important;
+}
+
+/* Fixed carousel slots: featured-card growth cannot displace its neighbours. */
+.assessments.assessments.assessments .audienceCarouselTrack {
+  --card-width: 365px !important;
+  --card-gap: 92px !important;
+  --audience-small-height: 312px;
+  --audience-large-height: 405px;
+  display: flex !important;
+  width: 100% !important;
+  min-width: 0 !important;
+  max-width: none !important;
+  box-sizing: border-box !important;
+  gap: var(--card-gap) !important;
+  padding-inline: calc(50% - var(--card-width) / 2) !important;
+  align-items: center !important;
+  transform: translateX(calc(var(--audience-index) * (var(--card-width) + var(--card-gap)) * -1)) !important;
+}
+
+.assessments.assessments.assessments .audienceCardSlot {
+  position: relative;
+  display: flex;
+  flex: 0 0 var(--card-width);
+  width: var(--card-width);
+  min-width: 0;
+  height: var(--audience-large-height);
+  align-items: center;
+  justify-content: center;
+  overflow: visible;
+}
+
+.assessments.assessments.assessments .audienceCardSlot .audienceCard {
+  flex: 0 0 auto !important;
+  width: var(--card-width) !important;
+  max-width: none !important;
+  height: var(--audience-small-height) !important;
+  min-height: 0 !important;
+  margin: 0 !important;
+  transform: none !important;
+  transition: width .55s ease, height .55s ease !important;
+}
+
+.assessments.assessments.assessments .audienceCardSlot .audienceCardFeatured {
+  width: 473px !important;
+  height: var(--audience-large-height) !important;
+}
+
+.assessments.assessments.assessments .audienceImageWrap {
+  transition: height .55s ease !important;
+}
+
+.assessments.assessments.assessments .audienceCardTitle {
+  transition: font-size .55s ease, min-height .55s ease !important;
+}
+
+.assessments.assessments.assessments .audienceControls {
+  left: auto !important;
+  right: auto !important;
+  margin-inline: auto !important;
+  transform: none !important;
+  align-self: center !important;
+}
+
+@media (max-width: 767px) {
+  .assessments.assessments.assessments .audienceCarouselTrack {
+    --card-width: min(82vw, 340px) !important;
+    --card-gap: 18px !important;
+    --audience-small-height: 292px;
+    --audience-large-height: 292px;
+  }
+
+  .assessments.assessments.assessments .audienceCardSlot .audienceCardFeatured {
+    width: var(--card-width) !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .assessments.assessments.assessments .audienceCarouselTrack {
+    --card-width: min(84vw, 320px) !important;
+    --card-gap: 16px !important;
+    --audience-small-height: 282px;
+    --audience-large-height: 282px;
+  }
+}
+
+.assessments.assessments.assessments .audienceCarouselTrackNoTransition :is(.audienceCard, .audienceImageWrap, .audienceCardTitle) {
+  transition: none !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .assessments.assessments.assessments .audienceCardSlot .audienceCard,
+  .assessments.assessments.assessments .audienceImageWrap,
+  .assessments.assessments.assessments .audienceCardTitle {
+    transition: none !important;
+  }
+}

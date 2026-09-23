@@ -383,7 +383,7 @@ const ComplianceSecurity: NextPage = () => {
                                 																<div className={styles.frameWrapper30}>
                                   																	<div className={styles.frameParent48}>
                                     																		<div className={styles.mandatoryIconBox}><Image className={styles.mandatoryIcon} src="/icons/drama.svg" width={40} height={40} alt="Scenario-Based Learning" /></div>
-                                    																		<div className={styles.scenarioBasedLearning} style={{ width: "138px", maxWidth: "138px", minWidth: 0, whiteSpace: "normal", lineHeight: "28px", overflowWrap: "normal", wordBreak: "normal", flexShrink: 1 }}>Scenario-Based Learning</div>
+                                    																		<div className={styles.scenarioBasedLearning} style={{ width: "auto", maxWidth: "100%", minWidth: 0, whiteSpace: "normal", lineHeight: "28px", overflowWrap: "normal", wordBreak: "normal", flex: "1 1 auto" }}><span style={{ display: "block", whiteSpace: "nowrap" }}>Scenario-Based</span>{" "}<span style={{ display: "block", whiteSpace: "nowrap" }}>Learning</span></div>
                                   																	</div>
                                 																</div>
                                 																<div className={styles.frameWrapper31}>

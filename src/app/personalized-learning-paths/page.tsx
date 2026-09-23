@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState, type ReactElement, type CSSProperties } from "react";
+import { useEffect, useRef, useState, type ReactElement, type CSSProperties } from "react";
 import { useRouter } from "next/navigation";
 import Image from "next/image";
 import Header from "../../components/Header/header";
@@ -409,7 +409,50 @@ function BenefitsSection() {
 }
 
 export default function PersonalizedLearningPathsPage() {
-  const [openStep, setOpenStep] = useState<string | null>(null);
+  const [openSteps, setOpenSteps] = useState<Set<string>>(() => new Set());
+  const howSectionRef = useRef<HTMLElement | null>(null);
+
+  const openStep = (key: string) => {
+    setOpenSteps((previous) => {
+      if (previous.has(key)) return previous;
+      return new Set(previous).add(key);
+    });
+  };
+
+  useEffect(() => {
+    const section = howSectionRef.current;
+    if (!section) return;
+
+    const closeSteps = () => {
+      setOpenSteps((previous) => (previous.size === 0 ? previous : new Set<string>()));
+    };
+
+    // Observe the whole section so moving between its cards keeps them open.
+    const observer = new IntersectionObserver(
+      (entries) => {
+        for (const entry of entries) {
+          if (entry.target === section && !entry.isIntersecting) closeSteps();
+        }
+      },
+      { threshold: 0 },
+    );
+    observer.observe(section);
+
+    // Reset when navigating or interacting with another page section, too.
+    const handleSectionChange = (event: Event) => {
+      const target = event.target;
+      if (!(target instanceof Element) || section.contains(target)) return;
+      if (target.closest("section, header, footer, nav")) closeSteps();
+    };
+    document.addEventListener("pointerdown", handleSectionChange, true);
+    document.addEventListener("focusin", handleSectionChange, true);
+
+    return () => {
+      observer.disconnect();
+      document.removeEventListener("pointerdown", handleSectionChange, true);
+      document.removeEventListener("focusin", handleSectionChange, true);
+    };
+  }, []);
   const router = useRouter();
 
   useEffect(() => {
@@ -510,7 +553,7 @@ export default function PersonalizedLearningPathsPage() {
         </div>
       </section>
 
-      <section className={styles["plp-how"]}>
+      <section ref={howSectionRef} className={styles["plp-how"]}>
         <span className={styles["plp-hero-pill"]}>How it Works</span>
 
         <h2 className={styles["plp-section-heading"]}>Learning Style Analysis Module</h2>
@@ -519,7 +562,7 @@ export default function PersonalizedLearningPathsPage() {
 
         <div className={styles["plp-how-grid"]}>
           {howItWorksSteps.map((step) => (
-            <HowItWorksCard key={step.key} step={step} isOpen={openStep === step.key} onToggle={() => setOpenStep(openStep === step.key ? null : step.key)} />
+            <HowItWorksCard key={step.key} step={step} isOpen={openSteps.has(step.key)} onToggle={() => openStep(step.key)} />
           ))}
         </div>
       </section>

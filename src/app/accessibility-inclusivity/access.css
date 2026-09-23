@@ -5100,3 +5100,18 @@ button.frameWrapper:active {
   margin-top: 48px !important;
 }
 
+/* ============================================================
+   FINAL DESKTOP HEADING SIZE — 36px
+   Keeps tablet/mobile responsive heading sizes unchanged.
+   ============================================================ */
+@media screen and (min-width: 1024px) {
+  .accessibilityInclusivity .image20Parent .learningDesignedFor,
+  .accessibilityInclusivity .frameParent6 .learningDesignedFor,
+  .accessibilityInclusivity .frameParent11 .multipleContentFormats,
+  .accessibilityInclusivity .accessibilityInclusivityInner .learningDesignedFor,
+  .accessibilityInclusivity .frameParent28 .supportingInstitutionsInContainer,
+  .accessibilityInclusivity .frameParent31 .empoweringInclusiveLearning {
+    font-size: 36px !important;
+    line-height: 44px !important;
+  }
+}

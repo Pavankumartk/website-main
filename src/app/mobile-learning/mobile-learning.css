@@ -415,7 +415,7 @@
   	line-height: 50px;
   	display: inline-block;
   	flex-shrink: 0;
-  	text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+  	text-shadow: none !important;
 }
 .frameWrapper7 {
   	display: flex;
@@ -816,7 +816,7 @@
   	line-height: 50px;
   	display: inline-block;
   	flex-shrink: 0;
-  	text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+  	text-shadow: none !important;
 }
 .makeMobileLearning {
   	align-self: stretch;
@@ -1294,7 +1294,7 @@
   	line-height: 60px;
   	display: inline-block;
   	flex-shrink: 0;
-  	text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+  	text-shadow: none !important;
 }
 .neurolxpEnablesInteractive {
   	width: 945px;
@@ -1393,7 +1393,7 @@
   	position: relative;
   	letter-spacing: -0.03em;
   	line-height: 34px;
-  	text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+  	text-shadow: none !important;
 }
 .sparklesIcon {
   	height: 23px;
@@ -1926,7 +1926,7 @@
   line-height: 1.13;
   letter-spacing: 0.025em;
   font-weight: 700;
-  text-shadow: 0 5px 5px rgba(0, 0, 0, 0.22);
+  text-shadow: none !important;
 }
 
 .mobileHeroTitleAccent {
@@ -2286,7 +2286,7 @@
     letter-spacing: -0.02em;
     font-weight: 700;
     color: #31344b;
-    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    text-shadow: none !important;
   }
 
   .mobileHeroTitle > span {
@@ -2458,7 +2458,7 @@
   line-height: 1.15;
   letter-spacing: 0.02em;
   font-weight: 700;
-  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  text-shadow: none !important;
 }
 
 .routineSubtitle {
@@ -2668,7 +2668,7 @@
   line-height: 1.28;
   letter-spacing: 0.01em;
   font-weight: 700;
-  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.22);
+  text-shadow: none !important;
 }
 
 .microTitleAccent {
@@ -2927,7 +2927,7 @@
   line-height: 1.15;
   letter-spacing: 0.015em;
   font-weight: 700;
-  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.24);
+  text-shadow: none !important;
 }
 
 .interactiveDescription {
@@ -3387,7 +3387,7 @@ body {
   line-height: 1.18;
   font-weight: 700;
   letter-spacing: 0.015em;
-  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.24);
+  text-shadow: none !important;
 }
 
 .modernLearningSubtitle {
@@ -3714,7 +3714,7 @@ body {
   line-height: 1.2;
   letter-spacing: 0.025em;
   font-weight: 700;
-  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.24);
+  text-shadow: none !important;
 }
 
 .limitsDescription {
@@ -3930,7 +3930,7 @@ body {
     line-height: 60px !important;
     letter-spacing: 0.03em !important;
     font-weight: 700 !important;
-    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25) !important;
+    text-shadow: none !important;
   }
 
   .mobileHeroTitle > span {
@@ -7168,3 +7168,64 @@ button.limitsButton:active {
   margin-top: 48px !important;
 }
 
+
+/* Requested hero size and centered final learning point. */
+.mobileLearning .mobileHeroTitle {
+  font-size: 36px !important;
+}
+
+@media (min-width: 901px) {
+  .mobileLearning .routineFeatures > .routineFeature:last-child {
+    grid-column: 1 / -1 !important;
+    justify-self: center !important;
+    width: calc(50% - 32px) !important;
+    margin-inline: auto !important;
+  }
+}
+
+@media (min-width: 901px) and (max-width: 1180px) {
+  .mobileLearning .routineFeatures > .routineFeature:last-child {
+    width: calc(50% - 8px) !important;
+  }
+}
+
+/* Remove text shadows throughout this page, including generated text. */
+.mobileLearning.mobileLearning,
+.mobileLearning.mobileLearning *,
+.mobileLearning.mobileLearning::before,
+.mobileLearning.mobileLearning::after,
+.mobileLearning.mobileLearning *::before,
+.mobileLearning.mobileLearning *::after {
+  text-shadow: none !important;
+}
+
+/* Compact the Learning Without Limits section without changing its styling. */
+.mobileLearning.mobileLearning .limitsSection {
+  height: auto !important;
+  min-height: 0 !important;
+  flex-basis: auto !important;
+  padding-block: 32px !important;
+}
+
+.mobileLearning.mobileLearning .limitsContent {
+  gap: 0 !important;
+}
+
+.mobileLearning.mobileLearning .limitsBadge {
+  margin-block: 0 !important;
+}
+
+.mobileLearning.mobileLearning .limitsTitle {
+  margin-top: 16px !important;
+  margin-bottom: 0 !important;
+}
+
+.mobileLearning.mobileLearning .limitsDescription {
+  margin-top: 12px !important;
+  margin-bottom: 0 !important;
+}
+
+.mobileLearning.mobileLearning .limitsButton {
+  margin-top: 24px !important;
+  margin-bottom: 0 !important;
+}

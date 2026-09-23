@@ -1,7 +1,8 @@
 "use client";
 
 import type { NextPage } from 'next';
-import { useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
+import type { CSSProperties } from "react";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 import styles from "./careerpathways-skilling.module.css";
@@ -34,20 +35,62 @@ const CareerPathwaysSkilling: NextPage = () => {
 			accentClass: styles.targetAudienceOrange,
 		},
 	];
-	const [targetAudienceIndex, setTargetAudienceIndex] = useState(1);
+  const targetAudienceCount = targetAudienceItems.length;
+  const [targetAudienceIndex, setTargetAudienceIndex] = useState(targetAudienceCount + 1);
+  const [targetAudienceTransition, setTargetAudienceTransition] = useState(true);
+  const [targetAudiencePaused, setTargetAudiencePaused] = useState(false);
 
-	const moveTargetAudience = (direction: number) => {
-		setTargetAudienceIndex((currentIndex) =>
-			(currentIndex + direction + targetAudienceItems.length) %
-			targetAudienceItems.length
-		);
-	};
+  const targetAudienceMoving = useRef(false);
 
-	const getTargetAudienceItem = (offset: number) =>
-		targetAudienceItems[
-			(targetAudienceIndex + offset + targetAudienceItems.length) %
-				targetAudienceItems.length
-		];
+  const moveTargetAudience = useCallback((direction: -1 | 1) => {
+    // One accepted action moves exactly one card, even during rapid clicks.
+    if (targetAudienceMoving.current) return;
+    targetAudienceMoving.current = true;
+    setTargetAudienceTransition(true);
+    setTargetAudienceIndex((current) => current + direction);
+  }, []);
+
+  useEffect(() => {
+    if (targetAudiencePaused || !targetAudienceTransition) return;
+    // Restart the three-second countdown after every manual or automatic move.
+    const timeoutId = window.setTimeout(() => moveTargetAudience(1), 3000);
+    return () => window.clearTimeout(timeoutId);
+  }, [targetAudiencePaused, targetAudienceIndex, targetAudienceTransition, moveTargetAudience]);
+
+  const finishTargetAudienceMove = useCallback(() => {
+    if (!targetAudienceMoving.current) return;
+    if (targetAudienceIndex < targetAudienceCount || targetAudienceIndex >= targetAudienceCount * 2) {
+      // Rebase to the identical middle copy without animating the reset.
+      setTargetAudienceTransition(false);
+      setTargetAudienceIndex(targetAudienceCount + ((targetAudienceIndex % targetAudienceCount) + targetAudienceCount) % targetAudienceCount);
+    } else {
+      targetAudienceMoving.current = false;
+    }
+  }, [targetAudienceIndex, targetAudienceCount]);
+
+  useEffect(() => {
+    if (!targetAudienceTransition || !targetAudienceMoving.current) return;
+    // Reduced-motion styles can suppress transitionend entirely.
+    const timeoutId = window.setTimeout(finishTargetAudienceMove, 650);
+    return () => window.clearTimeout(timeoutId);
+  }, [targetAudienceIndex, targetAudienceTransition, finishTargetAudienceMove]);
+
+  useEffect(() => {
+    if (targetAudienceTransition) return;
+    let secondFrame = 0;
+    const firstFrame = window.requestAnimationFrame(() => {
+      secondFrame = window.requestAnimationFrame(() => {
+        targetAudienceMoving.current = false;
+        setTargetAudienceTransition(true);
+      });
+    });
+    return () => {
+      window.cancelAnimationFrame(firstFrame);
+      window.cancelAnimationFrame(secondFrame);
+    };
+  }, [targetAudienceTransition]);
+
+
 
   	return (
         <>
@@ -460,7 +503,7 @@ const CareerPathwaysSkilling: NextPage = () => {
 									</h2>
 								</div>
 								<p className={styles.aiRecommendationsDescription}>
-									Use intelligent insights to help learners identify the right next step in their learning journey. NeuroLXP can help surface:
+									Use intelligent insights to help learners identify the right next step in their learning journey. NeuroLXP can help surface
 								</p>
 							</div>
 
@@ -686,7 +729,14 @@ const CareerPathwaysSkilling: NextPage = () => {
           					</div>
         				</div>
       			</div>
-      			<div className={styles.frameParent53}>
+      			<div className={styles.frameParent53}
+                onMouseEnter={() => setTargetAudiencePaused(true)}
+                onMouseLeave={() => setTargetAudiencePaused(false)}
+                onFocusCapture={() => setTargetAudiencePaused(true)}
+                onBlurCapture={(event) => {
+                  if (!event.currentTarget.contains(event.relatedTarget)) setTargetAudiencePaused(false);
+                }}
+              >
         				<div className={styles.frameParent54}>
           					<div className={styles.frameWrapper17}>
             						<div className={styles.frameParent15}>
@@ -698,36 +748,29 @@ const CareerPathwaysSkilling: NextPage = () => {
             						</div>
           					</div>
           					<div className={styles.targetAudienceCarousel}>
-						<div className={styles.targetAudienceCards} aria-live="polite">
-							{[-1, 0, 1].map((offset) => {
-								const item = getTargetAudienceItem(offset);
-								const positionClass =
-									offset === 0
-										? styles.targetAudienceCardCenter
-										: offset < 0
-											? styles.targetAudienceCardLeft
-											: styles.targetAudienceCardRight;
-
-								return (
-									<div
-										className={`${styles.targetAudienceCard} ${positionClass} ${item.accentClass}`}
-										key={`${item.title}-${targetAudienceIndex}-${offset}`}
-									>
-										<div className={styles.targetAudienceImageFrame}>
-											<Image
-												className={styles.targetAudienceImage}
-												src={item.image}
-												width={473}
-												height={315}
-												sizes="100vw"
-												alt={item.title}
-											/>
-										</div>
-										<div className={styles.targetAudienceTitle}>{item.title}</div>
-									</div>
-								);
-							})}
-						</div>
+						<div className={styles.targetAudienceViewport}>
+                          <div
+                            className={`${styles.targetAudienceTrack} ${targetAudienceTransition ? "" : styles.targetAudienceTrackNoTransition}`}
+                            style={{ "--target-index": targetAudienceIndex } as CSSProperties}
+                            onTransitionEnd={(event) => {
+                              if (event.target === event.currentTarget && event.propertyName === "transform") finishTargetAudienceMove();
+                            }}
+                          >
+                            {[...targetAudienceItems, ...targetAudienceItems, ...targetAudienceItems].map((item, index) => {
+                              const isCenter = index % targetAudienceCount === targetAudienceIndex % targetAudienceCount;
+                              return (
+                                <div className={styles.targetAudienceSlot} key={`${item.title}-${index}`}>
+                                  <div className={`${styles.targetAudienceCard} ${isCenter ? styles.targetAudienceCardCenter : ""} ${item.accentClass}`}>
+                                    <div className={styles.targetAudienceImageFrame}>
+                                      <Image className={styles.targetAudienceImage} src={item.image} width={473} height={315} sizes="(max-width: 767px) 85vw, 34vw" alt={item.title} />
+                                    </div>
+                                    <div className={styles.targetAudienceTitle}>{item.title}</div>
+                                  </div>
+                                </div>
+                              );
+                            })}
+                          </div>
+                        </div>
 					</div>
 				</div>
         				<div className={styles.neurolxpNavigation} role="navigation" aria-label="Career pathway navigation">
