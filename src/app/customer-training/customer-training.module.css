@@ -1,3 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+/* HOME PAGE ALIGNMENT — 22 September 2026
+   Full replacement: existing selectors and artwork retained below.
+   The final scoped section owns typography, controls and content layout.
+   Keep the same module import filename in your application.
+   Uses the same Inter font import as the supplied home stylesheet. */
+
 	.customerTraining {
 		width: 100%;
 		height: 4246px;
@@ -5545,5 +5553,1059 @@
     white-space: normal !important;
     overflow: visible !important;
     box-sizing: border-box !important;
+  }
+}
+
+
+/* =====================================================================
+   HOME PAGE ALIGNMENT
+   Scoped specificity intentionally wins over the supplied legacy overrides.
+   No viewport zoom, fixed text heights, or translated section spacing.
+   64px section rhythm / 48px on phones; 24px content gaps / 16px on phones.
+   ===================================================================== */
+
+.customerTraining.customerTraining {
+  --page-font: "Segoe UI", "Inter", sans-serif !important;
+  --page-bg: #dfe6e9 !important;
+  --page-blue: #2d4cc8 !important;
+  --page-raised: -4px -4px 4px #ffffff, 4px 4px 4px #c6c6c9 !important;
+  --page-inset: inset -4px -4px 4px #ffffff, inset 4px 4px 4px rgba(196,196,196,.8) !important;
+  --page-section-gap: 64px !important;
+  --page-content-gap: 24px !important;
+  --page-heading: 36px !important;
+  --page-body: 24px !important;
+  --page-badge: 24px !important;
+  --page-button: 24px !important;
+  --page-icon: 70px !important;
+  --page-inner-icon: 52px !important;
+  --page-panel-padding: 32px !important;
+  box-sizing: border-box !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  height: auto !important;
+  min-height: 0 !important;
+  zoom: 1 !important;
+  padding: 0 24px 48px !important;
+  margin: 0 !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  gap: 0 !important;
+  font-family: var(--page-font) !important;
+  font-size: 16px !important;
+  line-height: 1.5 !important;
+  background: var(--page-bg) !important;
+  overflow-x: clip !important;
+  overflow-y: visible !important;
+}
+
+.customerTraining.customerTraining *,
+.customerTraining.customerTraining *::before,
+.customerTraining.customerTraining *::after {
+  box-sizing: border-box !important;
+}
+
+.customerTraining.customerTraining :where(h1,h2,h3,h4,p,a,button,input,textarea,select,span,div,li,strong,b) {
+  font-family: var(--page-font) !important;
+}
+
+.customerTraining.customerTraining :where(img,svg,video) {
+  max-width: 100% !important;
+}
+
+.customerTraining.customerTraining .frameParent2,
+.customerTraining.customerTraining .image20Parent,
+.customerTraining.customerTraining .frameParent23,
+.customerTraining.customerTraining .frameParent50,
+.customerTraining.customerTraining .frameDiv {
+  position: relative !important;
+  inset: auto !important;
+  width: 100% !important;
+  max-width: 1280px !important;
+  height: auto !important;
+  min-height: 0 !important;
+  min-width: 0 !important;
+  margin: var(--page-section-gap) auto 0 !important;
+  transform: none !important;
+  translate: none !important;
+  aspect-ratio: auto !important;
+  flex-shrink: 0 !important;
+}
+
+.customerTraining.customerTraining .frameDiv {
+  margin: 24px auto 0 !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: flex-start !important;
+  flex-wrap: wrap !important;
+  column-gap: 8px !important;
+  row-gap: 4px !important;
+  padding: 0 !important;
+  font-size: 16px !important;
+  line-height: 24px !important;
+  white-space: normal !important;
+  overflow: visible !important;
+}
+
+.customerTraining.customerTraining .frameDiv .resourcesWrapper,
+.customerTraining.customerTraining .frameDiv .arrowRightDoubleGroup {
+  display: inline-flex !important;
+  align-items: center !important;
+  flex-wrap: wrap !important;
+  gap: 8px !important;
+  min-width: 0 !important;
+  max-width: 100% !important;
+}
+
+.customerTraining.customerTraining .frameDiv .useCases,
+.customerTraining.customerTraining .frameDiv .resources,
+.customerTraining.customerTraining .frameDiv a,
+.customerTraining.customerTraining .frameDiv span {
+  font-size: inherit !important;
+  line-height: inherit !important;
+  white-space: normal !important;
+  overflow-wrap: anywhere !important;
+}
+
+.customerTraining.customerTraining .frameDiv .breadcrumbArrow,
+.customerTraining.customerTraining .frameDiv img,
+.customerTraining.customerTraining .frameDiv svg {
+  width: 16px !important;
+  height: 16px !important;
+  flex: 0 0 16px !important;
+  object-fit: contain !important;
+}
+
+.customerTraining.customerTraining .frameDiv a {
+  color: var(--page-blue) !important;
+  text-decoration: none !important;
+  text-underline-offset: 3px !important;
+}
+
+.customerTraining.customerTraining .frameDiv a:hover {
+  text-decoration: underline !important;
+}
+
+.customerTraining.customerTraining .frameParent2 {
+  margin-top: 24px !important;
+}
+
+.customerTraining.customerTraining .frameIcon,
+.customerTraining.customerTraining .frameChild10,
+.customerTraining.customerTraining .frameChild27 {
+  position: relative !important;
+  inset: auto !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  align-self: auto !important;
+  width: fit-content !important;
+  min-width: 0 !important;
+  max-width: 100% !important;
+  height: auto !important;
+  min-height: 56px !important;
+  margin: 0 !important;
+  padding: 12px 36px !important;
+  border: 0 !important;
+  border-radius: 999px !important;
+  background: var(--page-bg) !important;
+  box-shadow: var(--page-inset) !important;
+  font-family: var(--page-font) !important;
+  font-size: var(--page-badge) !important;
+  font-weight: 600 !important;
+  line-height: 1.3 !important;
+  letter-spacing: .03em !important;
+  color: var(--page-blue) !important;
+  white-space: normal !important;
+  text-align: center !important;
+  overflow-wrap: anywhere !important;
+  word-break: normal !important;
+  flex-shrink: 0 !important;
+  transform: none !important;
+}
+
+.customerTraining.customerTraining .frameChild2 {
+  position: relative !important;
+  inset: auto !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 12px !important;
+  width: fit-content !important;
+  max-width: 100% !important;
+  min-width: 0 !important;
+  height: auto !important;
+  min-height: 48px !important;
+  padding: 16px 32px !important;
+  margin: 0 !important;
+  appearance: none !important;
+  border: 0 !important;
+  border-radius: 8px !important;
+  background: var(--page-bg) !important;
+  box-shadow: var(--page-raised) !important;
+  font-family: var(--page-font) !important;
+  font-size: var(--page-button) !important;
+  font-weight: 600 !important;
+  line-height: 1.3 !important;
+  letter-spacing: .02em !important;
+  color: var(--page-blue) !important;
+  text-decoration: none !important;
+  white-space: normal !important;
+  overflow-wrap: anywhere !important;
+  text-align: center !important;
+  cursor: pointer !important;
+  transform: none !important;
+  touch-action: manipulation !important;
+  transition: box-shadow .2s ease !important;
+  overflow: visible !important;
+}
+
+@media (hover: hover) and (pointer: fine) {
+.customerTraining.customerTraining .frameChild2:hover {
+  box-shadow: var(--page-inset) !important;
+  transform: none !important;
+}
+}
+
+.customerTraining.customerTraining .frameChild2:active {
+  box-shadow: var(--page-inset) !important;
+  transform: none !important;
+}
+
+.customerTraining.customerTraining .frameChild2:focus-visible,
+.customerTraining.customerTraining .frameDiv a:focus-visible {
+  outline: 3px solid var(--page-blue) !important;
+  outline-offset: 4px !important;
+  transform: none !important;
+}
+
+.customerTraining.customerTraining .turnProductKnowledgeContainer,
+.customerTraining.customerTraining .empowerCustomersDrive,
+.customerTraining.customerTraining .benefitsOfCustomer,
+.customerTraining.customerTraining .turnCustomerEducationContainer,
+.customerTraining.customerTraining .turnCustomerEducation {
+  width: 100% !important;
+  max-width: 100% !important;
+  height: auto !important;
+  min-height: 0 !important;
+  min-width: 0 !important;
+  margin: 0 !important;
+  font-size: var(--page-heading) !important;
+  font-weight: 700 !important;
+  line-height: 1.25 !important;
+  letter-spacing: .03em !important;
+  white-space: normal !important;
+  overflow-wrap: break-word !important;
+  text-wrap: balance !important;
+  overflow: visible !important;
+  display: block !important;
+}
+
+.customerTraining.customerTraining .turnProductKnowledgeContainer :where(span,strong,b),
+.customerTraining.customerTraining .empowerCustomersDrive :where(span,strong,b),
+.customerTraining.customerTraining .benefitsOfCustomer :where(span,strong,b),
+.customerTraining.customerTraining .turnCustomerEducationContainer :where(span,strong,b),
+.customerTraining.customerTraining .turnCustomerEducation :where(span,strong,b) {
+  font-size: inherit !important;
+  line-height: inherit !important;
+}
+
+.customerTraining.customerTraining .neurolxpDeliversScalable,
+.customerTraining.customerTraining .neurolxpDeliversSelfService,
+.customerTraining.customerTraining .improveProductAdoption,
+.customerTraining.customerTraining .neurolxpDrivesCustomer {
+  width: 100% !important;
+  max-width: 100% !important;
+  height: auto !important;
+  min-height: 0 !important;
+  min-width: 0 !important;
+  margin: 0 !important;
+  font-size: var(--page-body) !important;
+  font-weight: 400 !important;
+  line-height: 1.5 !important;
+  letter-spacing: .03em !important;
+  white-space: normal !important;
+  overflow-wrap: break-word !important;
+  overflow: visible !important;
+  display: block !important;
+}
+
+.customerTraining.customerTraining .increaseProductUsage,
+.customerTraining.customerTraining .lowerSupportRequests,
+.customerTraining.customerTraining .trainAtScale,
+.customerTraining.customerTraining .unlockProductValue,
+.customerTraining.customerTraining .measureLearning,
+.customerTraining.customerTraining .strengthenEngagement {
+  width: 100% !important;
+  max-width: 100% !important;
+  min-width: 0 !important;
+  height: auto !important;
+  margin: 0 !important;
+  font-size: var(--page-body) !important;
+  font-weight: 600 !important;
+  line-height: 1.5 !important;
+  white-space: normal !important;
+  overflow-wrap: break-word !important;
+  word-break: normal !important;
+  text-align: left !important;
+  flex: 1 1 0 !important;
+  display: block !important;
+}
+
+.customerTraining.customerTraining .benefitIconOuter,
+.customerTraining.customerTraining .benefitIconCircle {
+  width: var(--page-icon) !important;
+  height: var(--page-icon) !important;
+  min-width: var(--page-icon) !important;
+  flex: 0 0 var(--page-icon) !important;
+}
+
+.customerTraining.customerTraining .benefitIconInner {
+  width: var(--page-inner-icon) !important;
+  height: var(--page-inner-icon) !important;
+  min-width: var(--page-inner-icon) !important;
+  flex: 0 0 var(--page-inner-icon) !important;
+}
+
+@media (max-width: 1023.98px) {
+.customerTraining.customerTraining {
+  --page-heading: 32px !important;
+  --page-body: 20px !important;
+  --page-button: 20px !important;
+}
+}
+
+@media (max-width: 767.98px) {
+.customerTraining.customerTraining {
+  --page-section-gap: 48px !important;
+  --page-content-gap: 16px !important;
+  --page-heading: 24px !important;
+  --page-body: 16px !important;
+  --page-badge: 20px !important;
+  --page-button: 18px !important;
+  --page-icon: 56px !important;
+  --page-inner-icon: 40px !important;
+  --page-panel-padding: 16px !important;
+  padding: 0 16px 32px !important;
+}
+}
+
+@media (max-width: 767.98px) {
+.customerTraining.customerTraining .frameDiv {
+  font-size: 14px !important;
+  line-height: 22px !important;
+  margin-top: 16px !important;
+}
+}
+
+@media (max-width: 767.98px) {
+.customerTraining.customerTraining .frameParent2 {
+  margin-top: 16px !important;
+}
+}
+
+@media (max-width: 767.98px) {
+.customerTraining.customerTraining .frameIcon,
+.customerTraining.customerTraining .frameChild10,
+.customerTraining.customerTraining .frameChild27 {
+  min-height: 48px !important;
+  padding: 10px 26px !important;
+}
+}
+
+@media (max-width: 767.98px) {
+.customerTraining.customerTraining .frameChild2 {
+  padding: 14px 24px !important;
+}
+}
+
+@media (max-width: 767.98px) {
+.customerTraining.customerTraining .benefitIcon,
+.customerTraining.customerTraining .benefitIconImage {
+  width: 28px !important;
+  height: 28px !important;
+}
+}
+
+.customerTraining.customerTraining .frameParent2 {
+  position: relative !important;
+  inset: auto !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  height: auto !important;
+  min-height: 0 !important;
+  transform: none !important;
+  translate: none !important;
+  margin: 0 !important;
+  min-width: 0 !important;
+  aspect-ratio: auto !important;
+  overflow: visible !important;
+  display: flex !important;
+  flex-direction: column !important;
+  gap: var(--page-section-gap) !important;
+  padding: 0 !important;
+  text-align: center !important;
+}
+
+.customerTraining.customerTraining .vectorParent {
+  position: relative !important;
+  inset: auto !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  height: auto !important;
+  min-height: 0 !important;
+  transform: none !important;
+  translate: none !important;
+  margin: 0 !important;
+  min-width: 0 !important;
+  aspect-ratio: auto !important;
+  overflow: visible !important;
+  padding: var(--page-panel-padding) !important;
+  isolation: isolate !important;
+}
+
+.customerTraining.customerTraining .polygonIcon {
+  position: absolute !important;
+  inset: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: fill !important;
+  z-index: -1 !important;
+  pointer-events: none !important;
+}
+
+.customerTraining.customerTraining .frameWrapper,
+.customerTraining.customerTraining .frameParent3,
+.customerTraining.customerTraining .frameParent4,
+.customerTraining.customerTraining .turnProductKnowledgeIntoCuParent,
+.customerTraining.customerTraining .frameParent5,
+.customerTraining.customerTraining .frameParent24,
+.customerTraining.customerTraining .frameParent25,
+.customerTraining.customerTraining .frameParent51,
+.customerTraining.customerTraining .frameParent52 {
+  position: relative !important;
+  inset: auto !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  height: auto !important;
+  min-height: 0 !important;
+  transform: none !important;
+  translate: none !important;
+  margin: 0 !important;
+  min-width: 0 !important;
+  aspect-ratio: auto !important;
+  overflow: visible !important;
+  display: flex !important;
+  flex-direction: column !important;
+  gap: var(--page-content-gap) !important;
+  align-items: center !important;
+  text-align: center !important;
+}
+
+.customerTraining.customerTraining .frameWrapper3,
+.customerTraining.customerTraining .empowerCustomersDriveAdoptWrapper {
+  position: relative !important;
+  inset: auto !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  height: auto !important;
+  min-height: 0 !important;
+  transform: none !important;
+  translate: none !important;
+  margin: 0 !important;
+  min-width: 0 !important;
+  aspect-ratio: auto !important;
+  overflow: visible !important;
+  padding: 0 !important;
+}
+
+.customerTraining.customerTraining .frameWrapper2,
+.customerTraining.customerTraining .frameWrapper11 {
+  position: relative !important;
+  inset: auto !important;
+  width: fit-content !important;
+  max-width: 100% !important;
+  height: auto !important;
+  min-height: 0 !important;
+  margin: 0 auto !important;
+  padding: 0 !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  border-radius: 8px !important;
+  transform: none !important;
+}
+
+.customerTraining.customerTraining .customerTrainingChild {
+  position: relative !important;
+  inset: auto !important;
+  width: 100% !important;
+  max-width: 1280px !important;
+  height: 4px !important;
+  margin: 32px auto 0 !important;
+  transform: none !important;
+}
+
+.customerTraining.customerTraining .image20Parent {
+  padding: 0 var(--page-panel-padding) var(--page-panel-padding) !important;
+  overflow: hidden !important;
+}
+
+.customerTraining.customerTraining .frameParent6 {
+  position: relative !important;
+  inset: auto !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  height: auto !important;
+  min-height: 0 !important;
+  transform: none !important;
+  translate: none !important;
+  margin: 0 !important;
+  min-width: 0 !important;
+  aspect-ratio: auto !important;
+  overflow: visible !important;
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 32px !important;
+  align-items: center !important;
+}
+
+.customerTraining.customerTraining .frameWrapper4 {
+  position: relative !important;
+  inset: auto !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  height: auto !important;
+  min-height: 0 !important;
+  transform: none !important;
+  translate: none !important;
+  margin: 0 !important;
+  min-width: 0 !important;
+  aspect-ratio: auto !important;
+  overflow: visible !important;
+  display: flex !important;
+  padding: 0 !important;
+  border-radius: 0 0 64px 64px !important;
+}
+
+.customerTraining.customerTraining .frameWrapper5 {
+  position: relative !important;
+  inset: auto !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  height: auto !important;
+  min-height: 0 !important;
+  transform: none !important;
+  translate: none !important;
+  margin: 0 !important;
+  min-width: 0 !important;
+  aspect-ratio: auto !important;
+  overflow: visible !important;
+  padding: 32px var(--page-panel-padding) !important;
+}
+
+.customerTraining.customerTraining .frameParent7,
+.customerTraining.customerTraining .frameParent8 {
+  position: relative !important;
+  inset: auto !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  height: auto !important;
+  min-height: 0 !important;
+  transform: none !important;
+  translate: none !important;
+  margin: 0 !important;
+  min-width: 0 !important;
+  aspect-ratio: auto !important;
+  overflow: visible !important;
+  display: flex !important;
+  flex-direction: column !important;
+  gap: var(--page-content-gap) !important;
+  align-items: center !important;
+}
+
+.customerTraining.customerTraining .frameParent9 {
+  position: relative !important;
+  inset: auto !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  height: auto !important;
+  min-height: 0 !important;
+  transform: none !important;
+  translate: none !important;
+  margin: 0 !important;
+  min-width: 0 !important;
+  aspect-ratio: auto !important;
+  overflow: visible !important;
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 24px !important;
+  align-items: center !important;
+}
+
+.customerTraining.customerTraining .frameParent10 {
+  width: 100% !important;
+  max-width: 100% !important;
+  display: grid !important;
+  grid-template-columns: repeat(2,minmax(0,1fr)) !important;
+  grid-template-areas: "challenge1 challenge2" "challenge3 challenge4" !important;
+  gap: 24px !important;
+  align-items: stretch !important;
+  justify-content: center !important;
+}
+
+.customerTraining.customerTraining .frameParent11,
+.customerTraining.customerTraining .frameParent16 {
+  display: contents !important;
+}
+
+.customerTraining.customerTraining .frameParent12,
+.customerTraining.customerTraining .frameParent14,
+.customerTraining.customerTraining .frameParent19,
+.customerTraining.customerTraining .frameParent21 {
+  position: relative !important;
+  inset: auto !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  height: auto !important;
+  min-height: 200px !important;
+  transform: none !important;
+  translate: none !important;
+  margin: 0 !important;
+  min-width: 0 !important;
+  aspect-ratio: auto !important;
+  overflow: hidden !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding: 24px 36px !important;
+  grid-area: auto !important;
+  grid-column: auto !important;
+  grid-row: auto !important;
+}
+
+.customerTraining.customerTraining .frameParent21 {
+  width: 100% !important;
+  max-width: calc((100% - 24px) / 2) !important;
+  align-self: center !important;
+}
+
+.customerTraining.customerTraining .frameParent13,
+.customerTraining.customerTraining .challenge1Parent {
+  position: relative !important;
+  inset: auto !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  height: auto !important;
+  min-height: 0 !important;
+  transform: none !important;
+  translate: none !important;
+  margin: 0 !important;
+  min-width: 0 !important;
+  aspect-ratio: auto !important;
+  overflow: visible !important;
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 12px !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.customerTraining.customerTraining .challenge1 {
+  width: auto !important;
+  height: auto !important;
+  font-size: 14px !important;
+  line-height: 1.5 !important;
+  margin: 0 !important;
+}
+
+.customerTraining.customerTraining .simplifyProducts {
+  width: 100% !important;
+  height: auto !important;
+  font-size: 24px !important;
+  line-height: 1.3 !important;
+  font-weight: 600 !important;
+  white-space: normal !important;
+  text-align: center !important;
+}
+
+.customerTraining.customerTraining .helpCustomersLearn {
+  width: 100% !important;
+  height: auto !important;
+  font-size: 18px !important;
+  line-height: 1.5 !important;
+  text-align: center !important;
+}
+
+.customerTraining.customerTraining .frameParent23 {
+  display: grid !important;
+  grid-template-columns: repeat(2,minmax(0,1fr)) !important;
+  gap: 48px !important;
+  align-items: center !important;
+  padding: 0 !important;
+}
+
+.customerTraining.customerTraining .frameParent24,
+.customerTraining.customerTraining .frameParent25 {
+  align-items: flex-start !important;
+  text-align: left !important;
+}
+
+.customerTraining.customerTraining .frameParent26 {
+  position: relative !important;
+  inset: auto !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  height: auto !important;
+  min-height: 0 !important;
+  transform: none !important;
+  translate: none !important;
+  margin: 0 !important;
+  min-width: 0 !important;
+  aspect-ratio: auto !important;
+  overflow: visible !important;
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 24px !important;
+  align-items: stretch !important;
+}
+
+.customerTraining.customerTraining .frameParent27,
+.customerTraining.customerTraining .frameParent28 {
+  position: relative !important;
+  inset: auto !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  height: auto !important;
+  min-height: 0 !important;
+  transform: none !important;
+  translate: none !important;
+  margin: 0 !important;
+  min-width: 0 !important;
+  aspect-ratio: auto !important;
+  overflow: visible !important;
+  display: grid !important;
+  grid-template-columns: var(--page-icon) minmax(0,1fr) !important;
+  align-items: center !important;
+  gap: 16px !important;
+}
+
+.customerTraining.customerTraining .frameParent50 {
+  position: relative !important;
+  inset: auto !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  height: auto !important;
+  min-height: 0 !important;
+  transform: none !important;
+  translate: none !important;
+  margin: 0 !important;
+  min-width: 0 !important;
+  aspect-ratio: auto !important;
+  overflow: visible !important;
+  display: flex !important;
+  flex-direction: column !important;
+  gap: var(--page-content-gap) !important;
+  padding: 0 !important;
+  text-align: center !important;
+  align-items: center !important;
+}
+
+.customerTraining.customerTraining .frameParent50 {
+  margin: var(--page-section-gap) auto 0 !important;
+}
+
+.customerTraining.customerTraining .frameChild29 {
+  width: min(935px,100%) !important;
+  height: auto !important;
+  max-width: 100% !important;
+  margin: 8px auto 0 !important;
+  object-fit: contain !important;
+}
+
+@media (max-width: 1023.98px) {
+.customerTraining.customerTraining .frameParent23 {
+  grid-template-columns: minmax(0,1fr) !important;
+  gap: 32px !important;
+}
+}
+
+@media (max-width: 1023.98px) {
+.customerTraining.customerTraining .frameParent24,
+.customerTraining.customerTraining .frameParent25 {
+  align-items: center !important;
+  text-align: center !important;
+}
+}
+
+@media (max-width: 1023.98px) {
+.customerTraining.customerTraining .frameParent26 {
+  max-width: 620px !important;
+  margin: 0 auto !important;
+}
+}
+
+@media (max-width: 767.98px) {
+.customerTraining.customerTraining .frameParent10 {
+  grid-template-columns: minmax(0,1fr) !important;
+  grid-template-areas: "challenge1" "challenge2" "challenge3" "challenge4" !important;
+}
+}
+
+@media (max-width: 767.98px) {
+.customerTraining.customerTraining .frameParent12,
+.customerTraining.customerTraining .frameParent14,
+.customerTraining.customerTraining .frameParent19,
+.customerTraining.customerTraining .frameParent21 {
+  grid-area: auto !important;
+  grid-column: auto !important;
+  grid-row: auto !important;
+  max-width: 100% !important;
+  min-height: 0 !important;
+  padding: 24px 32px !important;
+}
+}
+
+@media (max-width: 767.98px) {
+.customerTraining.customerTraining .frameWrapper4 {
+  border-radius: 0 0 32px 32px !important;
+}
+}
+
+@media (max-width: 767.98px) {
+.customerTraining.customerTraining .frameWrapper5 {
+  padding: 24px 8px !important;
+}
+}
+
+@media (max-width: 767.98px) {
+.customerTraining.customerTraining .simplifyProducts {
+  font-size: 20px !important;
+}
+}
+
+@media (max-width: 767.98px) {
+.customerTraining.customerTraining .helpCustomersLearn {
+  font-size: 16px !important;
+}
+}
+
+.customerTraining.customerTraining .frameParent2 {
+  margin-top: 24px !important;
+}
+
+@media (max-width: 767.98px) {
+.customerTraining.customerTraining .frameParent2 {
+  margin-top: 16px !important;
+}
+}
+
+.customerTraining.customerTraining .frameParent11 > .frameParent12 {
+  grid-area: challenge1 !important;
+}
+
+.customerTraining.customerTraining .frameParent16 > .frameParent12 {
+  grid-area: challenge2 !important;
+}
+
+.customerTraining.customerTraining .frameParent11 > .frameParent14 {
+  grid-area: challenge3 !important;
+}
+
+.customerTraining.customerTraining .frameParent16 > .frameParent19 {
+  grid-area: challenge4 !important;
+}
+
+.customerTraining.customerTraining img.frameIcon,
+.customerTraining.customerTraining img.frameChild10,
+.customerTraining.customerTraining img.frameChild27,
+.customerTraining.customerTraining img.frameChild2 {
+  width: auto !important;
+  max-width: 100% !important;
+  height: auto !important;
+  min-height: 0 !important;
+  padding: 0 !important;
+  object-fit: contain !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+.customerTraining.customerTraining *,
+.customerTraining.customerTraining *::before,
+.customerTraining.customerTraining *::after {
+  animation: none !important;
+  transition: none !important;
+  scroll-behavior: auto !important;
+}
+}
+
+/* Breadcrumbs matched to the supplied Goals and Tracking stylesheet. */
+.customerTraining.customerTraining.customerTraining {
+  --matched-breadcrumb-width: min(100vw, 1280px);
+}
+
+.customerTraining.customerTraining.customerTraining :is(.frameDiv, .breadcrumb, .breadcrumbs, [aria-label="Breadcrumb"], [aria-label="Breadcrumbs"]) {
+  position: relative !important;
+  inset: auto !important;
+  box-sizing: border-box !important;
+  width: var(--matched-breadcrumb-width) !important;
+  max-width: none !important;
+  min-width: 0 !important;
+  height: auto !important;
+  min-height: 0 !important;
+  align-self: center !important;
+  flex-shrink: 0 !important;
+  margin: 0 !important;
+  padding: 12px 20px 0 !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: flex-start !important;
+  flex-wrap: nowrap !important;
+  gap: 8px !important;
+  font-family: "Segoe UI", "Inter" !important;
+  font-size: 14px !important;
+  font-weight: 400 !important;
+  line-height: 20px !important;
+  letter-spacing: 0.02em !important;
+  color: #2f3547 !important;
+  text-align: left !important;
+  white-space: nowrap !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  transform: none !important;
+  translate: none !important;
+  overflow-x: auto !important;
+  scrollbar-width: none;
+}
+
+.customerTraining.customerTraining.customerTraining :is(.frameDiv, .breadcrumb, .breadcrumbs, [aria-label="Breadcrumb"], [aria-label="Breadcrumbs"])::-webkit-scrollbar { display: none; }
+
+.customerTraining.customerTraining.customerTraining :is(.frameDiv, .breadcrumb, .breadcrumbs, [aria-label="Breadcrumb"], [aria-label="Breadcrumbs"]) :is(ol, ul, .resourcesWrapper, .arrowRightDoubleGroup, li) {
+  display: inline-flex !important;
+  align-items: center !important;
+  flex-wrap: nowrap !important;
+  flex-shrink: 0 !important;
+  gap: 8px !important;
+  width: auto !important;
+  max-width: none !important;
+  min-width: 0 !important;
+  height: auto !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  list-style: none !important;
+  font: inherit !important;
+  letter-spacing: inherit !important;
+  color: inherit !important;
+}
+
+.customerTraining.customerTraining.customerTraining :is(.frameDiv, .breadcrumb, .breadcrumbs, [aria-label="Breadcrumb"], [aria-label="Breadcrumbs"]) :is(a, button, span, b, strong, .useCases, .resources, .home) {
+  font-family: "Segoe UI", "Inter" !important;
+  font-size: inherit !important;
+  font-weight: inherit !important;
+  line-height: inherit !important;
+  letter-spacing: inherit !important;
+  color: inherit !important;
+  width: auto !important;
+  max-width: none !important;
+  min-width: 0 !important;
+  height: auto !important;
+  white-space: nowrap !important;
+  overflow-wrap: normal !important;
+  word-break: normal !important;
+  text-shadow: none !important;
+  background-clip: border-box !important;
+  -webkit-text-fill-color: currentColor !important;
+}
+
+.customerTraining.customerTraining.customerTraining :is(.frameDiv, .breadcrumb, .breadcrumbs, [aria-label="Breadcrumb"], [aria-label="Breadcrumbs"]) :is(a, button) {
+  display: inline-flex !important;
+  align-items: center !important;
+  min-height: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  text-decoration: none !important;
+  text-underline-offset: 4px !important;
+  cursor: pointer !important;
+}
+
+.customerTraining.customerTraining.customerTraining :is(.frameDiv, .breadcrumb, .breadcrumbs, [aria-label="Breadcrumb"], [aria-label="Breadcrumbs"]) :is(.arrowRightDoubleGroup, strong, [aria-current="page"], li:last-child) {
+  color: #243fa8 !important;
+  font-weight: 700 !important;
+  font-size: 16px !important;
+  line-height: 24px !important;
+  flex-shrink: 0 !important;
+  white-space: nowrap !important;
+}
+
+.customerTraining.customerTraining.customerTraining :is(.frameDiv, .breadcrumb, .breadcrumbs, [aria-label="Breadcrumb"], [aria-label="Breadcrumbs"]) :is(img, svg, .breadcrumbArrow, .arrowRightDoubleIcon, .arrowRightDoubleIcon2, .arrowDown01Icon) {
+  display: block !important;
+  width: 16px !important;
+  height: 16px !important;
+  min-width: 16px !important;
+  flex: 0 0 16px !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  object-fit: contain !important;
+  transform: none !important;
+}
+
+.customerTraining.customerTraining.customerTraining :is(.frameDiv, .breadcrumb, .breadcrumbs, [aria-label="Breadcrumb"], [aria-label="Breadcrumbs"]) :is(a, button):hover { text-decoration: underline !important; }
+.customerTraining.customerTraining.customerTraining :is(.frameDiv, .breadcrumb, .breadcrumbs, [aria-label="Breadcrumb"], [aria-label="Breadcrumbs"]) :is(a, button):focus-visible {
+  outline: 3px solid #2d4cc8 !important;
+  outline-offset: 3px !important;
+}
+
+@media (min-width: 768px) {
+  .customerTraining.customerTraining.customerTraining :is(.frameDiv, .breadcrumb, .breadcrumbs, [aria-label="Breadcrumb"], [aria-label="Breadcrumbs"]) { padding-top: 32px !important; }
+}
+
+@media (min-width: 1280px) {
+  .customerTraining.customerTraining.customerTraining :is(.frameDiv, .breadcrumb, .breadcrumbs, [aria-label="Breadcrumb"], [aria-label="Breadcrumbs"]) { padding-inline: 80px !important; }
+}
+
+@media (min-width: 1440px) {
+  .customerTraining.customerTraining.customerTraining { --matched-breadcrumb-width: min(100vw, 1440px); }
+}
+
+@media (max-width: 480px) {
+  .customerTraining.customerTraining.customerTraining :is(.frameDiv, .breadcrumb, .breadcrumbs, [aria-label="Breadcrumb"], [aria-label="Breadcrumbs"]) { font-size: 12px !important; line-height: 18px !important; }
+  .customerTraining.customerTraining.customerTraining :is(.frameDiv, .breadcrumb, .breadcrumbs, [aria-label="Breadcrumb"], [aria-label="Breadcrumbs"]) :is(.arrowRightDoubleGroup, strong, [aria-current="page"], li:last-child) {
+    font-weight: 700 !important;
+  }
+}
+
+/* Current breadcrumb: the screenshot uses #243fa8 with bold text.
+   Set the label itself as well as nested text, overriding inherited colors. */
+.customerTraining.customerTraining.customerTraining :is(.frameDiv, .breadcrumb, .breadcrumbs, [aria-label="Breadcrumb"], [aria-label="Breadcrumbs"]) > :last-child:not(img, svg, ol, ul),
+.customerTraining.customerTraining.customerTraining :is(.frameDiv, .breadcrumb, .breadcrumbs, [aria-label="Breadcrumb"], [aria-label="Breadcrumbs"]) :is(.arrowRightDoubleGroup, [aria-current="page"], strong, li:last-child),
+.customerTraining.customerTraining.customerTraining :is(.frameDiv, .breadcrumb, .breadcrumbs, [aria-label="Breadcrumb"], [aria-label="Breadcrumbs"]) > :last-child:not(img, svg, ol, ul) :is(a, button, span, div, b, strong),
+.customerTraining.customerTraining.customerTraining :is(.frameDiv, .breadcrumb, .breadcrumbs, [aria-label="Breadcrumb"], [aria-label="Breadcrumbs"]) :is(.arrowRightDoubleGroup, [aria-current="page"], strong, li:last-child) :is(a, button, span, div, b, strong) {
+  color: #243fa8 !important;
+  -webkit-text-fill-color: #243fa8 !important;
+  font-weight: 700 !important;
+  text-shadow: none !important;
+}
+
+/* Requested position adjustment: move the complete benefits list. */
+@media (min-width: 1024px) {
+  .frameParent26.frameParent26.frameParent26.frameParent26 {
+    position: relative !important;
+    left: 64px !important;
+    right: auto !important;
+    width: calc(100% - 64px) !important;
+    max-width: calc(100% - 64px) !important;
+    padding-left: 0 !important;
+    margin-left: 0 !important;
+    transform: none !important;
+    translate: none !important;
+  }
+}
+
+/* Move the breadcrumb row slightly left on desktop and tablet. */
+@media (min-width: 768px) {
+  .customerTraining.customerTraining.customerTraining :is(.frameDiv, .breadcrumb, .breadcrumbs, [aria-label="Breadcrumb"], [aria-label="Breadcrumbs"]) {
+    transform: translateX(-16px) !important;
   }
 }

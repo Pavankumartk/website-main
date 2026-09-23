@@ -1824,3 +1824,51 @@
     object-position: center center !important;
   }
 }
+
+
+/* Requested corrections: shared badges and founder LinkedIn hover only. */
+.team-page .team-eyebrow {
+  justify-content: center;
+  padding-inline: 20px;
+  border-radius: 28px;
+  background: var(--team-bg);
+  box-shadow:
+    inset -4px -4px 4px #ffffff,
+    inset 4px 4px 4px rgba(196, 196, 196, 0.8);
+  font-family: "Segoe UI", Inter, Arial, sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 32px;
+  color: var(--team-primary);
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .team-page .team-eyebrow {
+    font-size: 18px;
+    line-height: 26px;
+  }
+}
+
+.team-page .team-founder .team-linkedin-btn {
+  color: var(--team-primary);
+  cursor: pointer;
+  box-shadow: -4px -4px 4px #ffffff, 4px 4px 4px #c6c6c9;
+  transform: none;
+  transition: box-shadow 180ms ease;
+}
+
+.team-page .team-founder .team-linkedin-btn:hover,
+.team-page .team-founder .team-linkedin-btn:focus-visible,
+.team-page .team-founder .team-linkedin-btn:active {
+  box-shadow:
+    inset -4px -4px 4px #ffffff,
+    inset 4px 4px 4px rgba(196, 196, 196, 0.8);
+  transform: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .team-page .team-founder .team-linkedin-btn {
+    transition: none;
+  }
+}

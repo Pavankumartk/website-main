@@ -1,3 +1,5 @@
+/* Extended Enterprise Learning — complete replacement stylesheet.
+   Keep your current CSS-module filename/import. Do not append to the old file. */
 .extendedEnterpriseLearning {
   	width: 100%;
   	height: 3543px;
@@ -1331,70 +1333,6 @@
     transform:translateY(-2px);
 }
 
-.extendedEnterpriseLearning {
-	height: 3630px;
-	padding-bottom: 80px;
-	box-sizing: border-box;
-}
-
-.frameDiv {
-	top: 32px;
-}
-
-.vectorParent {
-	top: 64px;
-}
-
-.frameParent5 {
-	top: 579px;
-}
-
-.frameParent13 {
-	top: 2367.61px;
-}
-
-.frameParent23 {
-	top: 3075px;
-}
-
-.frameChild2,
-.frameChild4 {
-    cursor: default;
-    transition:
-        transform 0.25s ease,
-        box-shadow 0.25s ease,
-        filter 0.25s ease;
-    will-change: transform;
-}
-
-.frameChild2:hover,
-.frameChild4:hover {
-    transform: translateY(-8px);
-    box-shadow:
-        -4px -4px 4px #ffffff,
-        4px 4px 4px rgba(196, 196, 196, 0.9);
-    filter: brightness(1.02);
-}
-
-.frameChild2:active,
-.frameChild4:active {
-    transform: translateY(-3px);
-}
-
-@media (prefers-reduced-motion: reduce) {
-    .frameChild2,
-    .frameChild4 {
-        transition: none;
-    }
-
-    .frameChild2:hover,
-    .frameChild4:hover,
-    .frameChild2:active,
-    .frameChild4:active {
-        transform: none;
-    }
-}
-
 .sparklesIcon{
     position:relative;
     overflow:hidden;
@@ -1540,2017 +1478,475 @@
     }
 }
 
-@media (max-width: 1199px) {
+
+/* Responsive layout: these rules replace the accumulated legacy overrides.
+   Existing CSS-module class names and JSX can remain in place. */
 .extendedEnterpriseLearning {
-    width: 100% !important;
-    height: auto !important;
-    min-height: 100vh !important;
-    overflow-x: hidden !important;
-    overflow-y: visible !important;
-    padding: 0 24px 72px !important;
-    box-sizing: border-box !important;
-  }
+  --page-bg: #dfe6e9;
+  --page-blue: #2d4cc8;
+  --page-font: "Segoe UI", Inter, Arial, sans-serif;
+  --shadow-raised: -4px -4px 4px #fff, 4px 4px 4px #c6c6c9;
+  --shadow-inset: inset -4px -4px 4px #fff, inset 4px 4px 4px rgba(196,196,196,.8);
+  --heading-size: clamp(24px, 2.8vw, 36px);
+  --body-size: clamp(16px, 1.6vw, 24px);
+  --section-gap: clamp(40px, 5vw, 72px);
+  width: 100%; height: auto; min-height: 0; zoom: 1;
+  display: flow-root; overflow: visible;
+  padding: 0 clamp(16px, 4vw, 80px) 56px;
+  font-family: var(--page-font); font-size: 16px; line-height: 1.5;
+}
+.extendedEnterpriseLearning,
+.extendedEnterpriseLearning *,
+.extendedEnterpriseLearning *::before,
+.extendedEnterpriseLearning *::after { box-sizing: border-box; }
+.extendedEnterpriseLearning * { font-family: var(--page-font); }
+.extendedEnterpriseLearning :is(h1,h2,h3,p) { margin: 0; }
+.extendedEnterpriseLearning :is(button,a) { -webkit-tap-highlight-color: transparent; }
 
-  .extendedEnterpriseLearning > .frameParent,
-  .extendedEnterpriseLearning > .frameDiv,
-  .extendedEnterpriseLearning > .vectorParent,
-  .extendedEnterpriseLearning > .frameParent5,
-  .extendedEnterpriseLearning > .frameParent13,
-  .extendedEnterpriseLearning > .frameParent23,
-  .extendedEnterpriseLearning > .frameParent25 {
-    width: 100% !important;
-    max-width: 100% !important;
-    left: auto !important;
-    right: auto !important;
-    transform: none !important;
-    box-sizing: border-box !important;
-  }
-
-  .frameDiv {
-    left: auto !important;
-    margin-left: auto !important;
-    margin-right: auto !important;
-  }
-
-  .vectorParent {
-    left: auto !important;
-    width: 100% !important;
-    max-width: 100% !important;
-    overflow: hidden !important;
-  }
-
-  .groupChild {
-    left: 50% !important;
-    width: 1440px !important;
-    max-width: none !important;
-    transform: translateX(-50%) !important;
-  }
-
-  .frameParent2 {
-    left: 50% !important;
-    width: min(1103px, calc(100% - 80px)) !important;
-    transform: translateX(-50%) !important;
-  }
-
-  .extendLearningBeyondYourWoParent,
-  .extendLearningBeyond,
-  .trainPartnersVendors {
-    width: 100% !important;
-    max-width: 100% !important;
-  }
-
-  .frameParent4 {
-    width: 100% !important;
-    max-width: 100% !important;
-    flex-wrap: wrap !important;
-    height: auto !important;
-  }
-
-  .frameParent5 {
-    left: 50% !important;
-    width: min(1201.9px, calc(100% - 48px)) !important;
-    transform: translateX(-50%) !important;
-  }
-
-  .frameParent6,
-  .frameWrapper,
-  .onePlatformEveryStakeholdeWrapper,
-  .onePlatformEvery,
-  .neurolxpConnectsYour {
-    width: 100% !important;
-    max-width: 100% !important;
-    height: auto !important;
-  }
-
-  .frameParent7 {
-    width: 100% !important;
-    gap: 24px !important;
-  }
-
-  .frameParent8 {
-    width: calc(100% - 150px) !important;
-  }
-
-  .frameWrapper2 {
-    width: 100% !important;
-  }
-
-  .frameParent13 {
-    left: 50% !important;
-    width: min(1285px, calc(100% - 48px)) !important;
-    transform: translateX(-50%) !important;
-  }
-
-  .benefitsOfExtendedEnterprisParent,
-  .benefitsOfExtendedContainer,
-  .aUnifiedLearning {
-    width: 100% !important;
-    max-width: 100% !important;
-    height: auto !important;
-  }
-
-  .frameParent15 {
-    width: 100% !important;
-    gap: 64px !important;
-    justify-content: center !important;
-  }
-
-  .frameParent16,
-  .frameParent20 {
-    width: min(500px, calc(50% - 32px)) !important;
-  }
-
-  .standardizeLearningAcross,
-  .deliverConsistentCustomer,
-  .monitorCertificationsAnd,
-  .improveProductUnderstanding {
-    width: 100% !important;
-    height: auto !important;
-  }
-
-  .frameParent23 {
-    left: 50% !important;
-    width: min(1280px, calc(100% - 48px)) !important;
-    transform: translateX(-50%) !important;
-  }
-
-  .frameParent24 {
-    left: 40px !important;
-    width: calc(50% - 60px) !important;
-  }
-
-  .empowerYourExtendedEnterpriParent,
-  .empowerYourExtended,
-  .neurolxpConnectsTrains {
-    width: 100% !important;
-    max-width: 100% !important;
-  }
-
-  .empowerImageWrapper {
-    width: 50% !important;
-  }
-
-  .departmentMeeting1Icon {
-    width: 100% !important;
-  }
-
-.vectorParent .groupChild {
-    display: none !important;
-  }
-
-  .vectorParent {
-    background: #dfe6e9 !important;
-  }
+/* Shared content edge and natural section height at every viewport. */
+.extendedEnterpriseLearning > :is(.frameParent,.frameDiv,.vectorParent,.frameParent5,.frameParent13,.frameParent23,.frameParent25) {
+  position: relative; inset: auto; transform: none;
+  width: 100%; max-width: 1280px; height: auto; min-height: 0;
+  margin: 0 auto;
+}
+.extendedEnterpriseLearning > :is(.frameParent5,.frameParent13,.frameParent23,.frameParent25) {
+  margin-top: var(--section-gap);
 }
 
-@media (max-width: 1024px) {
-  .extendedEnterpriseLearning {
-    zoom: 1 !important;
-  }
-
-  .frameParent2 {
-    width: calc(100% - 48px) !important;
-    gap: 36px !important;
-  }
-
-  .frameIcon {
-    max-width: 100% !important;
-  }
-
-  .extendLearningBeyond {
-    font-size: 34px !important;
-    line-height: 44px !important;
-  }
-
-  .trainPartnersVendors {
-    font-size: 22px !important;
-    line-height: 32px !important;
-  }
-
-  .frameParent5 {
-    width: calc(100% - 32px) !important;
-  }
-
-  .onePlatformEvery {
-    font-size: 42px !important;
-    line-height: 52px !important;
-    text-align: center !important;
-  }
-
-  .neurolxpConnectsYour {
-    font-size: 24px !important;
-    line-height: 38px !important;
-  }
-
-  .frameChild6 {
-    width: 110px !important;
-  }
-
-  .frameParent8 {
-    width: calc(100% - 130px) !important;
-  }
-
-  .frameWrapper2 {
-    height: auto !important;
-    min-height: 322px !important;
-  }
-
-  .frameParent13 {
-    width: calc(100% - 32px) !important;
-  }
-
-  .benefitsOfExtendedContainer {
-    font-size: 42px !important;
-    line-height: 52px !important;
-  }
-
-  .aUnifiedLearning {
-    font-size: 24px !important;
-    line-height: 36px !important;
-  }
-
-  .frameParent15 {
-    gap: 40px !important;
-  }
-
-  .frameParent16,
-  .frameParent20 {
-    width: calc(50% - 20px) !important;
-  }
-
-  .frameParent23 {
-    width: calc(100% - 32px) !important;
-  }
-
-  .frameParent24 {
-    left: 32px !important;
-    width: calc(52% - 48px) !important;
-  }
-
-  .empowerYourExtended {
-    font-size: 44px !important;
-  }
-
-  .neurolxpConnectsTrains {
-    font-size: 24px !important;
-    line-height: 36px !important;
-  }
-
-  .empowerImageWrapper {
-    width: 46% !important;
-  }
-}
-
-@media (max-width: 767px) {
-  .extendedEnterpriseLearning {
-    width: 100% !important;
-    height: auto !important;
-    min-height: 100vh !important;
-    padding: 0 16px 56px !important;
-    overflow-x: hidden !important;
-  }
-
-  .frameDiv {
-    position: relative !important;
-    top: auto !important;
-    left: auto !important;
-    width: 100% !important;
-    margin: 20px auto 0 !important;
-    flex-wrap: nowrap !important;
-    white-space: nowrap !important;
-    overflow-x: auto !important;
-    overflow-y: hidden !important;
-    scrollbar-width: none;
-  }
-
-  .frameDiv::-webkit-scrollbar {
-    display: none;
-  }
-
-  .resourcesWrapper,
-  .arrowRightDoubleGroup {
-    flex-shrink: 0 !important;
-    white-space: nowrap !important;
-  }
-
-  .vectorParent {
-    position: relative !important;
-    top: auto !important;
-    left: auto !important;
-    width: 100% !important;
-    height: auto !important;
-    min-height: 610px !important;
-    margin: 20px auto 0 !important;
-    overflow: hidden !important;
-  }
-
-  .groupChild {
-    top: 0 !important;
-    left: 50% !important;
-    width: 980px !important;
-    height: 610px !important;
-    transform: translateX(-50%) !important;
-    object-fit: fill !important;
-  }
-
-  .frameParent2 {
-    position: relative !important;
-    top: auto !important;
-    left: auto !important;
-    width: 100% !important;
-    height: auto !important;
-    min-height: 560px !important;
-    margin: 0 auto !important;
-    padding: 52px 8px 32px !important;
-    transform: none !important;
-    gap: 28px !important;
-    box-sizing: border-box !important;
-  }
-
-  .frameParent3 {
-    width: 100% !important;
-    height: auto !important;
-    gap: 20px !important;
-  }
-
-  .frameIcon {
-    width: min(395px, 100%) !important;
-    height: auto !important;
-    min-height: 50px !important;
-    padding: 8px 16px !important;
-    font-size: 18px !important;
-    line-height: 28px !important;
-    text-align: center !important;
-  }
-
-  .extendLearningBeyondYourWoParent {
-    width: 100% !important;
-    height: auto !important;
-    gap: 18px !important;
-  }
-
-  .extendLearningBeyond {
-    width: 100% !important;
-    height: auto !important;
-    font-size: clamp(28px, 8vw, 36px) !important;
-    line-height: 1.25 !important;
-    text-align: center !important;
-  }
-
-  .trainPartnersVendors {
-    width: 100% !important;
-    height: auto !important;
-    font-size: clamp(18px, 5vw, 22px) !important;
-    line-height: 1.45 !important;
-  }
-
-  .frameParent4 {
-    width: 100% !important;
-    height: auto !important;
-    display: grid !important;
-    grid-template-columns: 1fr !important;
-    gap: 14px !important;
-  }
-
-  .frameChild2,
-  .frameChild4 {
-    width: min(280px, 100%) !important;
-    margin: 0 auto !important;
-  }
-
-  .frameParent5 {
-    position: relative !important;
-    top: auto !important;
-    left: auto !important;
-    width: 100% !important;
-    height: auto !important;
-    margin: 56px auto 0 !important;
-    transform: none !important;
-    gap: 32px !important;
-  }
-
-  .frameParent6 {
-    width: 100% !important;
-    height: auto !important;
-    gap: 20px !important;
-  }
-
-  .frameWrapper,
-  .onePlatformEveryStakeholdeWrapper,
-  .onePlatformEvery {
-    width: 100% !important;
-    height: auto !important;
-  }
-
-  .onePlatformEvery {
-    font-size: clamp(30px, 8vw, 40px) !important;
-    line-height: 1.2 !important;
-    text-align: center !important;
-  }
-
-  .neurolxpConnectsYour {
-    width: 100% !important;
-    height: auto !important;
-    font-size: clamp(18px, 5vw, 22px) !important;
-    line-height: 1.45 !important;
-    text-align: center !important;
-  }
-
-  .frameParent7 {
-    width: 100% !important;
-    height: auto !important;
-    display: block !important;
-  }
-
-  .frameChild6 {
-    display: none !important;
-  }
-
-  .frameParent8 {
-    width: 100% !important;
-    display: flex !important;
-    flex-direction: column !important;
-    gap: 24px !important;
-  }
-
-  .frameWrapper2 {
-    width: 100% !important;
-    height: auto !important;
-    min-height: 0 !important;
-    padding: 24px 18px !important;
-    gap: 22px !important;
-  }
-
-  .stakeholderCardContent {
-    gap: 12px !important;
-  }
-
-  .stakeholderChallenge {
-    font-size: 16px !important;
-    line-height: 24px !important;
-  }
-
-  .stakeholderCardTitle {
-    font-size: 24px !important;
-    line-height: 32px !important;
-  }
-
-  .stakeholderCardDescription {
-    font-size: 17px !important;
-    line-height: 26px !important;
-  }
-
-  .stakeholderHelpBox {
-    height: auto !important;
-    min-height: 100px !important;
-  }
-
-  .stakeholderHelpTitle,
-  .stakeholderHelpText {
-    font-size: 16px !important;
-  }
-
-  .frameParent13 {
-    position: relative !important;
-    top: auto !important;
-    left: auto !important;
-    width: 100% !important;
-    height: auto !important;
-    margin: 56px auto 0 !important;
-    transform: none !important;
-    gap: 32px !important;
-  }
-
-  .frameParent14,
-  .benefitsOfExtendedEnterprisParent {
-    width: 100% !important;
-    height: auto !important;
-    gap: 22px !important;
-  }
-
-  .frameChild15 {
-    width: 150px !important;
-  }
-
-  .benefitsOfExtendedContainer {
-    width: 100% !important;
-    height: auto !important;
-    font-size: clamp(30px, 8vw, 40px) !important;
-    line-height: 1.2 !important;
-  }
-
-  .benefitsOfExtended,
-  .enterpriseLearning {
-    line-height: inherit !important;
-  }
-
-  .aUnifiedLearning {
-    width: 100% !important;
-    height: auto !important;
-    font-size: clamp(18px, 5vw, 22px) !important;
-    line-height: 1.45 !important;
-  }
-
-  .frameParent15 {
-    width: 100% !important;
-    flex-direction: column !important;
-    gap: 28px !important;
-  }
-
-  .frameParent16,
-  .frameParent20 {
-    width: 100% !important;
-    gap: 24px !important;
-  }
-
-  .frameParent17,
-  .frameParent18,
-  .frameParent19,
-  .frameParent22 {
-    width: 100% !important;
-    align-items: flex-start !important;
-    gap: 16px !important;
-  }
-
-  .consistentTrainingParent,
-  .betterProductKnowledgeParent {
-    width: calc(100% - 86px) !important;
-  }
-
-  .consistentTraining,
-  .complianceTracking,
-  .globalScale {
-    width: 100% !important;
-    height: auto !important;
-    font-size: 22px !important;
-    line-height: 30px !important;
-  }
-
-  .standardizeLearningAcross,
-  .deliverConsistentCustomer,
-  .monitorCertificationsAnd,
-  .improveProductUnderstanding {
-    width: 100% !important;
-    height: auto !important;
-    font-size: 17px !important;
-    line-height: 26px !important;
-  }
-
-  .frameParent23 {
-    position: relative !important;
-    top: auto !important;
-    left: auto !important;
-    width: 100% !important;
-    height: auto !important;
-    min-height: 760px !important;
-    margin: 56px auto 0 !important;
-    transform: none !important;
-    overflow: hidden !important;
-  }
-
-  .frameParent24 {
-    position: relative !important;
-    top: auto !important;
-    left: auto !important;
-    width: 100% !important;
-    height: auto !important;
-    min-height: 360px !important;
-    padding: 32px 20px 24px !important;
-    box-sizing: border-box !important;
-    z-index: 3 !important;
-  }
-
-  .empowerYourExtendedEnterpriParent {
-    width: 100% !important;
-    gap: 18px !important;
-  }
-
-  .empowerYourExtended {
-    width: 100% !important;
-    font-size: clamp(32px, 9vw, 44px) !important;
-    line-height: 1.2 !important;
-  }
-
-  .neurolxpConnectsTrains {
-    width: 100% !important;
-    font-size: clamp(18px, 5vw, 22px) !important;
-    line-height: 1.45 !important;
-  }
-
-  .frameWrapper10 {
-    margin-top: 24px !important;
-  }
-
-  .empowerImageWrapper {
-    position: relative !important;
-    top: auto !important;
-    right: auto !important;
-    width: 100% !important;
-    height: 320px !important;
-    border-radius: 80px 0 0 80px !important;
-    margin-top: 0 !important;
-  }
-
-  .departmentMeeting1Icon {
-    width: 100% !important;
-    height: 100% !important;
-  }
-
-  .frameParent25 {
-    position: relative !important;
-    bottom: auto !important;
-    left: auto !important;
-    width: 100% !important;
-    height: auto !important;
-    margin-top: 56px !important;
-  }
-
-  .frameParent26,
-  .frameWrapper11 {
-    width: 100% !important;
-    left: auto !important;
-  }
-}
-
-@media (max-width: 425px) {
-  .extendedEnterpriseLearning {
-    padding-left: 12px !important;
-    padding-right: 12px !important;
-  }
-
-  .vectorParent {
-    min-height: 650px !important;
-  }
-
-  .groupChild {
-    width: 900px !important;
-    height: 650px !important;
-  }
-
-  .frameParent2 {
-    min-height: 610px !important;
-    padding-left: 4px !important;
-    padding-right: 4px !important;
-  }
-
-  .frameIcon {
-    font-size: 16px !important;
-  }
-
-  .frameChild2,
-  .frameChild4 {
-    width: 100% !important;
-  }
-
-  .frameWrapper2 {
-    padding: 20px 16px !important;
-  }
-
-  .stakeholderCardTitle {
-    font-size: 22px !important;
-    line-height: 30px !important;
-  }
-
-  .frameParent23 {
-    min-height: 720px !important;
-  }
-
-  .empowerImageWrapper {
-    height: 280px !important;
-  }
-
-  .frameChild16 {
-    width: 60px !important;
-    height: 60px !important;
-    flex: 0 0 60px !important;
-  }
-
-  .benefitIconInner {
-    width: 44px !important;
-    height: 44px !important;
-  }
-
-  .benefitIconImage {
-    width: 30px !important;
-    height: 30px !important;
-  }
-}
-
-@media (max-width: 360px) {
-  .extendedEnterpriseLearning {
-    padding-left: 8px !important;
-    padding-right: 8px !important;
-  }
-
-  .extendLearningBeyond {
-    font-size: 28px !important;
-  }
-
-  .onePlatformEvery,
-  .benefitsOfExtendedContainer {
-    font-size: 28px !important;
-  }
-
-  .empowerYourExtended {
-    font-size: 32px !important;
-  }
-
-  .stakeholderCardDescription,
-  .stakeholderHelpText,
-  .standardizeLearningAcross,
-  .deliverConsistentCustomer,
-  .monitorCertificationsAnd,
-  .improveProductUnderstanding {
-    font-size: 16px !important;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 1199px) {
-.extendedEnterpriseLearning {
-    min-height: 4050px !important;
-  }
-
-  .extendedEnterpriseLearning > .frameParent13 {
-    top: 2368px !important;
-    left: 50% !important;
-    width: calc(100% - 96px) !important;
-    max-width: 1120px !important;
-    height: auto !important;
-    min-height: 650px !important;
-    padding: 0 24px 32px !important;
-    margin: 0 !important;
-    box-sizing: border-box !important;
-    transform: translateX(-50%) !important;
-    overflow: visible !important;
-  }
-
-  .frameParent13 .frameParent14,
-  .frameParent13 .benefitsOfExtendedEnterprisParent {
-    width: 100% !important;
-    max-width: 100% !important;
-    height: auto !important;
-    box-sizing: border-box !important;
-  }
-
-  .frameParent13 .benefitsOfExtendedContainer,
-  .frameParent13 .aUnifiedLearning {
-    width: 100% !important;
-    max-width: 100% !important;
-    height: auto !important;
-    box-sizing: border-box !important;
-    overflow-wrap: break-word !important;
-  }
-
-  .frameParent13 .frameParent15 {
-    width: 100% !important;
-    max-width: 100% !important;
-    display: flex !important;
-    align-items: flex-start !important;
-    justify-content: space-between !important;
-    gap: 48px !important;
-    box-sizing: border-box !important;
-  }
-
-  .frameParent13 .frameParent16,
-  .frameParent13 .frameParent20 {
-    width: calc(50% - 24px) !important;
-    max-width: calc(50% - 24px) !important;
-    min-width: 0 !important;
-    flex: 0 1 calc(50% - 24px) !important;
-    box-sizing: border-box !important;
-  }
-
-  .frameParent13 .frameParent17,
-  .frameParent13 .frameParent18,
-  .frameParent13 .frameParent19,
-  .frameParent13 .frameParent22 {
-    width: 100% !important;
-    min-width: 0 !important;
-    box-sizing: border-box !important;
-  }
-
-  .frameParent13 .consistentTrainingParent,
-  .frameParent13 .betterProductKnowledgeParent {
-    width: calc(100% - 94px) !important;
-    max-width: calc(100% - 94px) !important;
-    min-width: 0 !important;
-  }
-
-  .frameParent13 .standardizeLearningAcross,
-  .frameParent13 .deliverConsistentCustomer,
-  .frameParent13 .monitorCertificationsAnd,
-  .frameParent13 .improveProductUnderstanding {
-    width: 100% !important;
-    max-width: 100% !important;
-    height: auto !important;
-    min-width: 0 !important;
-    overflow-wrap: break-word !important;
-  }
-
-  .extendedEnterpriseLearning > .frameParent23 {
-    top: 3150px !important;
-    left: 50% !important;
-    width: calc(100% - 96px) !important;
-    max-width: 1120px !important;
-    height: 468px !important;
-    margin: 0 !important;
-    box-sizing: border-box !important;
-    transform: translateX(-50%) !important;
-    overflow: hidden !important;
-  }
-
-  .frameParent23 .frameParent24 {
-    top: 50px !important;
-    left: 40px !important;
-    width: calc(52% - 60px) !important;
-    max-width: 560px !important;
-    height: 368px !important;
-    box-sizing: border-box !important;
-  }
-
-  .frameParent23 .empowerYourExtendedEnterpriParent,
-  .frameParent23 .empowerYourExtended,
-  .frameParent23 .neurolxpConnectsTrains {
-    width: 100% !important;
-    max-width: 100% !important;
-    box-sizing: border-box !important;
-    overflow-wrap: break-word !important;
-  }
-
-  .frameParent23 .empowerImageWrapper {
-    top: 0 !important;
-    right: 0 !important;
-    width: 46% !important;
-    max-width: 520px !important;
-    height: 468px !important;
-    overflow: hidden !important;
-  }
-
-  .frameParent23 .departmentMeeting1Icon {
-    width: 100% !important;
-    height: 100% !important;
-    object-fit: cover !important;
-  }
-
-.extendedEnterpriseLearning {
-    height: auto !important;
-    min-height: 0 !important;
-    padding-bottom: 48px !important;
-  }
-
-  .extendedEnterpriseLearning > .frameParent23 {
-    margin-bottom: 0 !important;
-  }
-
-  .extendedEnterpriseLearning > .frameParent25 {
-    position: relative !important;
-    top: auto !important;
-    bottom: auto !important;
-    left: auto !important;
-    width: 100% !important;
-    margin: 64px auto 0 !important;
-  }
-
+/* Breadcrumb: wrap complete segments, with the separator next to its label. */
 .extendedEnterpriseLearning > .frameDiv {
-    margin-bottom: 24px !important;
-  }
+  display: flex; flex-wrap: wrap; align-items: center;
+  gap: 4px 8px; margin: 24px auto; padding: 0;
+  font-size: 16px; line-height: 24px; color: #2f3547;
+  white-space: normal; overflow: visible;
+}
+.frameDiv :is(.resourcesWrapper,.arrowRightDoubleGroup) {
+  display: inline-flex; align-items: center; gap: 8px;
+  min-width: 0; max-width: 100%; flex-shrink: 1;
+}
+.frameDiv :is(.useCases,a) {
+  font-size: inherit; line-height: inherit; letter-spacing: .02em;
+  white-space: normal; overflow-wrap: anywhere; text-decoration: none;
+}
+.frameDiv :is(svg,img) { width: 16px; height: 16px; flex: 0 0 16px; object-fit: contain; }
+.frameDiv a { color: inherit; }
+.frameDiv a:hover { text-decoration: underline; text-underline-offset: 3px; }
+.frameDiv :is(.arrowRightDoubleGroup,[aria-current="page"]) { color: #243fa8; }
+.frameDiv a:focus-visible { outline: 2px solid var(--page-blue); outline-offset: 3px; border-radius: 3px; }
 
-  .extendedEnterpriseLearning > .vectorParent {
-    margin-bottom: 48px !important;
-  }
-
-  .extendedEnterpriseLearning > .frameParent5,
-  .extendedEnterpriseLearning > .frameParent13,
-  .extendedEnterpriseLearning > .frameParent23,
-  .extendedEnterpriseLearning > .frameParent25 {
-    margin-top: 48px !important;
-  }
-
-  .frameParent6,
-  .frameParent14 {
-    gap: 24px !important;
-  }
-
-  .frameParent3,
-  .extendLearningBeyondYourWoParent,
-  .benefitsOfExtendedEnterprisParent,
-  .empowerYourExtendedEnterpriParent {
-    gap: 12px !important;
-  }
-
-  .frameParent4 {
-    gap: 16px !important;
-  }
-
-  .frameParent8,
-  .frameParent15,
-  .frameParent16,
-  .frameParent20 {
-    gap: 24px !important;
-  }
-
-  .frameParent17,
-  .frameParent18,
-  .frameParent19,
-  .frameParent22 {
-    gap: 16px !important;
-  }
-
-  .consistentTrainingParent,
-  .betterProductKnowledgeParent,
-  .stakeholderCardContent {
-    gap: 8px !important;
-  }
-
-  .frameWrapper10 {
-    margin-top: 24px !important;
-  }
-
-.extendedEnterpriseLearning {
-    height: 3750px !important;
-    min-height: 3750px !important;
-    background-color: #dfe6e9 !important;
-    padding-bottom: 0 !important;
-    overflow-x: hidden !important;
-    overflow-y: hidden !important;
-  }
-
-  .extendedEnterpriseLearning > .vectorParent,
-  .extendedEnterpriseLearning > .frameParent5,
-  .extendedEnterpriseLearning > .frameParent13,
-  .extendedEnterpriseLearning > .frameParent23 {
-    margin-top: 0 !important;
-    margin-bottom: 0 !important;
-  }
-
-  .extendedEnterpriseLearning > .vectorParent {
-    background-color: #dfe6e9 !important;
-  }
-
-  .extendedEnterpriseLearning > .frameParent25 {
-    margin-top: 0 !important;
-  }
-
-.extendedEnterpriseLearning > .frameParent13 {
-    top: 2250px !important;
-    min-height: 610px !important;
-    padding-bottom: 16px !important;
-  }
-
-  .extendedEnterpriseLearning > .frameParent23 {
-    top: 2920px !important;
-  }
+/* Hero, badges and typography share the previous page's scale. */
+.vectorParent { isolation: isolate; overflow: visible; }
+.groupChild { inset: 0; width: 100%; height: 100%; object-fit: fill; z-index: -1; }
+.frameParent2 {
+  position: relative; inset: auto; transform: none;
+  width: 100%; max-width: 1104px; height: auto; min-height: 0;
+  margin: 0 auto; padding: 40px 16px; gap: 32px;
+}
+.frameParent3,.extendLearningBeyondYourWoParent,.frameParent6,
+.frameParent14,.benefitsOfExtendedEnterprisParent {
+  width: 100%; height: auto; min-height: 0;
+  display: flex; flex-direction: column; align-items: center; gap: 24px;
+}
+.extendLearningBeyondYourWoParent,.benefitsOfExtendedEnterprisParent,.frameParent6 { gap: 16px; }
+.frameIcon,.frameChild15 {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: fit-content; max-width: 100%; height: auto; min-height: 56px;
+  padding: 12px 36px; margin: 0; border-radius: 999px;
+  background: var(--page-bg); box-shadow: var(--shadow-inset);
+  font-size: 24px; line-height: 1.3; font-weight: 600;
+  letter-spacing: .03em; color: var(--page-blue);
+  white-space: normal; overflow-wrap: anywhere; text-align: center;
+}
+.extendLearningBeyond,.onePlatformEvery,.benefitsOfExtendedContainer,.empowerYourExtended {
+  display: block; width: 100%; height: auto; min-height: 0; max-width: 100%;
+  font-size: var(--heading-size); line-height: 1.22; font-weight: 700;
+  letter-spacing: .03em; overflow-wrap: break-word;
+}
+.benefitsOfExtended,.enterpriseLearning { line-height: inherit; }
+.trainPartnersVendors,.neurolxpConnectsYour,.aUnifiedLearning,.neurolxpConnectsTrains {
+  display: block; width: 100%; max-width: 960px; height: auto; min-height: 0;
+  font-size: var(--body-size); line-height: 1.33; font-weight: 400;
+  letter-spacing: .03em; overflow-wrap: break-word; color: #2f3547;
+}
+.trainPartnersVendors { max-width: 820px; }
+.frameParent4 {
+  display: grid; grid-template-columns: repeat(4,minmax(0,1fr));
+  width: 100%; max-width: 1000px; height: auto; gap: 16px;
+}
+.frameChild2,.frameChild4 {
+  width: 100%; height: auto; min-height: 60px; padding: 12px 18px;
+  font-size: 18px; line-height: 1.45; text-align: center;
+  white-space: normal; overflow-wrap: break-word;
+  box-shadow: var(--shadow-inset); cursor: default;
 }
 
-@media (min-width: 768px) and (max-width: 900px) {
-  .extendedEnterpriseLearning > .frameParent13,
-  .extendedEnterpriseLearning > .frameParent23 {
-    width: calc(100% - 64px) !important;
-  }
+/* Stakeholder rows grow together, keeping each timeline node centred. */
+.frameParent5,.frameParent13 { gap: 32px; }
+.frameWrapper,.onePlatformEveryStakeholdeWrapper {
+  width: 100%; height: auto; padding: 0; display: block;
+}
+.frameParent7 {
+  width: 100%; height: auto; display: grid;
+  grid-template-columns: 100px minmax(0,1fr); gap: 24px; align-items: stretch;
+}
+.frameChild6 {
+  position: relative; width: 100%; height: auto; min-height: 0;
+  display: grid; grid-template-rows: repeat(4,minmax(0,1fr)); gap: 24px;
+  justify-items: center; align-items: center; isolation: isolate;
+}
+.stakeholderTimelineRail { top: 12.5%; bottom: 12.5%; height: auto; z-index: -1; }
+.stakeholderTimelineNode { position: relative; inset: auto; transform: none; width: 88px; height: 88px; }
+.frameParent8 { width: 100%; min-width: 0; display: grid; grid-auto-rows: 1fr; gap: 24px; }
+.frameWrapper2 {
+  width: 100%; height: auto; min-height: 230px; padding: 28px;
+  display: grid; grid-template-columns: minmax(0,1.5fr) minmax(0,1fr);
+  align-items: center; gap: 24px; border-radius: 16px;
+}
+.stakeholderCardContent { width: 100%; min-width: 0; gap: 10px; }
+.stakeholderChallenge { font-size: 18px; line-height: 1.5; }
+.stakeholderCardTitle { font-size: 24px; line-height: 1.33; }
+.stakeholderCardDescription { font-size: 18px; line-height: 1.55; }
+.stakeholderHelpBox { width: 100%; height: auto; min-width: 0; min-height: 118px; padding: 16px; gap: 8px; }
+.stakeholderHelpTitle,.stakeholderHelpText { width: 100%; height: auto; font-size: 16px; line-height: 1.5; }
+.stakeholderCardContent *,.stakeholderHelpBox * { max-width: 100%; overflow-wrap: break-word; }
 
-  .frameParent13 .frameParent15 {
-    gap: 32px !important;
-  }
-
-  .frameParent13 .frameParent16,
-  .frameParent13 .frameParent20 {
-    width: calc(50% - 16px) !important;
-    max-width: calc(50% - 16px) !important;
-    flex-basis: calc(50% - 16px) !important;
-  }
-
-  .frameParent23 .frameParent24 {
-    left: 28px !important;
-    width: calc(54% - 42px) !important;
-  }
-
-  .frameParent23 .empowerImageWrapper {
-    width: 44% !important;
-  }
+/* Benefits: equal columns, full text width and no fixed text heights. */
+.frameParent15 {
+  display: grid; width: 100%; grid-template-columns: repeat(2,minmax(0,1fr));
+  align-items: start; gap: 40px 64px;
+}
+.frameParent16,.frameParent20 {
+  display: flex; flex-direction: column; width: 100%; min-width: 0;
+  gap: 28px;
+}
+.frameParent17,.frameParent18,.frameParent19,.frameParent22 {
+  display: grid; grid-template-columns: 70px minmax(0,1fr);
+  width: 100%; min-width: 0; align-items: start; gap: 24px;
+}
+.frameChild16 { width: 70px; height: 70px; flex: 0 0 70px; transform: none; }
+.consistentTrainingParent,.betterProductKnowledgeParent {
+  width: 100%; max-width: 100%; min-width: 0; height: auto;
+  display: flex; flex-direction: column; gap: 8px;
+}
+.consistentTraining,.complianceTracking,.globalScale {
+  display: block; width: 100%; height: auto; min-height: 0;
+  font-size: 24px; line-height: 1.4; font-weight: 700; letter-spacing: .01em;
+  overflow-wrap: break-word;
+}
+.standardizeLearningAcross,.deliverConsistentCustomer,
+.monitorCertificationsAnd,.improveProductUnderstanding {
+  display: block; width: 100%; height: auto; min-height: 0;
+  font-size: 20px; line-height: 1.5; letter-spacing: .01em;
+  overflow-wrap: break-word;
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
-.extendedEnterpriseLearning {
-    min-height: 4200px !important;
-    overflow-x: hidden !important;
-  }
-
-  .extendedEnterpriseLearning > .frameParent13 {
-    top: 2368px !important;
-    left: 50% !important;
-    width: calc(100% - 64px) !important;
-    max-width: 960px !important;
-    min-height: 720px !important;
-    height: auto !important;
-    padding: 0 20px 40px !important;
-    transform: translateX(-50%) !important;
-    box-sizing: border-box !important;
-    overflow: visible !important;
-  }
-
-  .frameParent13 .benefitsOfExtendedEnterprisParent {
-    width: 100% !important;
-    height: auto !important;
-    gap: 24px !important;
-  }
-
-  .frameParent13 .benefitsOfExtendedContainer {
-    width: 100% !important;
-    height: auto !important;
-    font-size: 36px !important;
-    line-height: 44px !important;
-    text-align: center !important;
-  }
-
-  .frameParent13 .aUnifiedLearning {
-    width: 100% !important;
-    height: auto !important;
-    font-size: 22px !important;
-    line-height: 32px !important;
-    text-align: center !important;
-  }
-
-  .frameParent13 .frameParent15 {
-    width: 100% !important;
-    display: grid !important;
-    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) !important;
-    column-gap: 28px !important;
-    row-gap: 0 !important;
-    align-items: start !important;
-  }
-
-  .frameParent13 .frameParent16,
-  .frameParent13 .frameParent20 {
-    width: 100% !important;
-    max-width: 100% !important;
-    min-width: 0 !important;
-    gap: 26px !important;
-  }
-
-  .frameParent13 .frameParent17,
-  .frameParent13 .frameParent18,
-  .frameParent13 .frameParent19,
-  .frameParent13 .frameParent22 {
-    width: 100% !important;
-    min-width: 0 !important;
-    gap: 14px !important;
-    align-items: flex-start !important;
-  }
-
-  .frameParent13 .frameChild16 {
-    width: 62px !important;
-    height: 62px !important;
-    flex: 0 0 62px !important;
-  }
-
-  .frameParent13 .benefitIconInner {
-    width: 46px !important;
-    height: 46px !important;
-  }
-
-  .frameParent13 .benefitIconImage {
-    width: 30px !important;
-    height: 30px !important;
-  }
-
-  .frameParent13 .consistentTrainingParent,
-  .frameParent13 .betterProductKnowledgeParent {
-    width: calc(100% - 76px) !important;
-    max-width: calc(100% - 76px) !important;
-    min-width: 0 !important;
-    gap: 8px !important;
-  }
-
-  .frameParent13 .consistentTraining,
-  .frameParent13 .complianceTracking,
-  .frameParent13 .globalScale {
-    width: 100% !important;
-    height: auto !important;
-    font-size: 22px !important;
-    line-height: 30px !important;
-    overflow-wrap: break-word !important;
-  }
-
-  .frameParent13 .standardizeLearningAcross,
-  .frameParent13 .deliverConsistentCustomer,
-  .frameParent13 .monitorCertificationsAnd,
-  .frameParent13 .improveProductUnderstanding {
-    width: 100% !important;
-    max-width: 100% !important;
-    height: auto !important;
-    font-size: 17px !important;
-    line-height: 26px !important;
-    overflow-wrap: break-word !important;
-  }
-
-  .extendedEnterpriseLearning > .frameParent23 {
-    top: 3220px !important;
-    left: 50% !important;
-    width: calc(100% - 64px) !important;
-    max-width: 960px !important;
-    height: 460px !important;
-    transform: translateX(-50%) !important;
-    box-sizing: border-box !important;
-    overflow: hidden !important;
-  }
-
-  .frameParent23 .frameParent24 {
-    top: 44px !important;
-    left: 28px !important;
-    width: calc(52% - 42px) !important;
-    max-width: none !important;
-    height: 372px !important;
-    box-sizing: border-box !important;
-  }
-
-  .frameParent23 .empowerYourExtendedEnterpriParent {
-    width: 100% !important;
-    gap: 18px !important;
-  }
-
-  .frameParent23 .empowerYourExtended {
-    width: 100% !important;
-    max-width: 100% !important;
-    font-size: 38px !important;
-    line-height: 1.15 !important;
-    overflow-wrap: break-word !important;
-  }
-
-  .frameParent23 .neurolxpConnectsTrains {
-    width: 100% !important;
-    max-width: 100% !important;
-    font-size: 20px !important;
-    line-height: 30px !important;
-    overflow-wrap: break-word !important;
-  }
-
-  .frameParent23 .frameWrapper10 {
-    width: 200px !important;
-    height: 56px !important;
-  }
-
-  .frameParent23 .frameChild21 {
-    height: 56px !important;
-    font-size: 18px !important;
-  }
-
-  .frameParent23 .empowerImageWrapper {
-    top: 0 !important;
-    right: 0 !important;
-    width: 46% !important;
-    height: 460px !important;
-    border-radius: 90px 0 0 90px !important;
-    overflow: hidden !important;
-  }
-
-  .frameParent23 .departmentMeeting1Icon {
-    width: 100% !important;
-    height: 100% !important;
-    object-fit: cover !important;
-  }
-
-.extendedEnterpriseLearning {
-    height: auto !important;
-    min-height: 0 !important;
-    padding-bottom: 48px !important;
-  }
-
-  .extendedEnterpriseLearning > .frameParent23 {
-    margin-bottom: 0 !important;
-  }
-
-  .extendedEnterpriseLearning > .frameParent25 {
-    position: relative !important;
-    top: auto !important;
-    bottom: auto !important;
-    left: auto !important;
-    width: 100% !important;
-    margin: 64px auto 0 !important;
-  }
-
-.extendedEnterpriseLearning > .frameDiv {
-    margin-bottom: 24px !important;
-  }
-
-  .extendedEnterpriseLearning > .vectorParent {
-    margin-bottom: 48px !important;
-  }
-
-  .extendedEnterpriseLearning > .frameParent5,
-  .extendedEnterpriseLearning > .frameParent13,
-  .extendedEnterpriseLearning > .frameParent23,
-  .extendedEnterpriseLearning > .frameParent25 {
-    margin-top: 48px !important;
-  }
-
-  .frameParent6,
-  .frameParent14 {
-    gap: 24px !important;
-  }
-
-  .frameParent3,
-  .extendLearningBeyondYourWoParent,
-  .benefitsOfExtendedEnterprisParent,
-  .empowerYourExtendedEnterpriParent {
-    gap: 12px !important;
-  }
-
-  .frameParent4 {
-    gap: 16px !important;
-  }
-
-  .frameParent8,
-  .frameParent15,
-  .frameParent16,
-  .frameParent20 {
-    gap: 24px !important;
-  }
-
-  .frameParent17,
-  .frameParent18,
-  .frameParent19,
-  .frameParent22 {
-    gap: 16px !important;
-  }
-
-  .consistentTrainingParent,
-  .betterProductKnowledgeParent,
-  .stakeholderCardContent {
-    gap: 8px !important;
-  }
-
-  .frameWrapper10 {
-    margin-top: 24px !important;
-  }
-
-.extendedEnterpriseLearning {
-    height: 3750px !important;
-    min-height: 3750px !important;
-    background-color: #dfe6e9 !important;
-    padding-bottom: 0 !important;
-    overflow-x: hidden !important;
-    overflow-y: hidden !important;
-  }
-
-  .extendedEnterpriseLearning > .vectorParent,
-  .extendedEnterpriseLearning > .frameParent5,
-  .extendedEnterpriseLearning > .frameParent13,
-  .extendedEnterpriseLearning > .frameParent23 {
-    margin-top: 0 !important;
-    margin-bottom: 0 !important;
-  }
-
-  .extendedEnterpriseLearning > .vectorParent {
-    background-color: #dfe6e9 !important;
-  }
-
-  .extendedEnterpriseLearning > .frameParent25 {
-    margin-top: 0 !important;
-  }
-
-.extendedEnterpriseLearning {
-    height: 3728px !important;
-    min-height: 3728px !important;
-  }
-
-.extendedEnterpriseLearning > .frameParent13 {
-    top: 2250px !important;
-    min-height: 610px !important;
-    padding-bottom: 16px !important;
-  }
-
-  .extendedEnterpriseLearning > .frameParent23 {
-    top: 2920px !important;
-  }
-
-.extendedEnterpriseLearning > .frameParent13 {
-    top: 2250px !important;
-    min-height: 610px !important;
-    padding-bottom: 16px !important;
-  }
-
-  .extendedEnterpriseLearning > .frameParent23 {
-    top: 2920px !important;
-  }
-
-.extendedEnterpriseLearning > .frameParent13 {
-    top: 2290px !important;
-    min-height: 700px !important;
-    height: 700px !important;
-    padding-bottom: 20px !important;
-    overflow: visible !important;
-  }
-
-  .extendedEnterpriseLearning > .frameParent23 {
-    top: 3038px !important;
-  }
-
-  .extendedEnterpriseLearning {
-    height: 3560px !important;
-    min-height: 3560px !important;
-  }
+/* CTA uses a content-driven grid instead of absolutely positioned text. */
+.frameParent23 { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); align-items: center; overflow: hidden; }
+.frameParent24 {
+  position: relative; inset: auto; width: 100%; height: auto; min-width: 0;
+  padding: clamp(24px,3.5vw,48px); gap: 26px;
+  align-items: flex-start; justify-content: center; text-align: left;
 }
-
-/* =========================================================
-   FINAL RESPONSIVE BREADCRUMB ONLY
-   Changes only the breadcrumb.
-   All other layout, design, colours, shadows, typography,
-   animations and effects remain unchanged.
-   ========================================================= */
-
-@media (max-width: 1199px) {
-  .extendedEnterpriseLearning > .frameDiv {
-    position: relative !important;
-    top: auto !important;
-    left: auto !important;
-    right: auto !important;
-
-    width: min(100%, 1280px) !important;
-    max-width: 100% !important;
-
-    margin: 20px auto 24px !important;
-    padding: 0 clamp(4px, 1.5vw, 16px) !important;
-
-    display: flex !important;
-    align-items: center !important;
-    justify-content: flex-start !important;
-    flex-wrap: wrap !important;
-
-    column-gap: 8px !important;
-    row-gap: 6px !important;
-
-    white-space: normal !important;
-    overflow: visible !important;
-
-    box-sizing: border-box !important;
-  }
-
-  .extendedEnterpriseLearning > .frameDiv .resourcesWrapper,
-  .extendedEnterpriseLearning > .frameDiv .arrowRightDoubleGroup {
-    min-width: 0 !important;
-    max-width: 100% !important;
-
-    display: flex !important;
-    align-items: center !important;
-    flex-wrap: wrap !important;
-
-    gap: 8px !important;
-
-    white-space: normal !important;
-    flex-shrink: 1 !important;
-  }
-
-  .extendedEnterpriseLearning > .frameDiv .useCases {
-    max-width: 100% !important;
-
-    line-height: 24px !important;
-
-    white-space: normal !important;
-    overflow-wrap: break-word !important;
-    word-break: normal !important;
-  }
+.empowerYourExtendedEnterpriParent { width: 100%; min-width: 0; gap: 18px; }
+.empowerImageWrapper {
+  position: relative; inset: auto; width: 100%; height: auto; min-width: 0;
+  display: flex; align-items: center; justify-content: center;
+  border-radius: 80px 0 0 80px; overflow: hidden;
 }
+.departmentMeeting1Icon { display: block; width: 100%; height: auto; max-width: 100%; object-fit: contain; }
 
-/* Narrow widths:
-   keep each breadcrumb segment readable instead of forcing
-   horizontal scrolling or clipping. */
-@media (max-width: 767px) {
-  .extendedEnterpriseLearning > .frameDiv {
-    width: 100% !important;
-
-    margin: 16px auto 20px !important;
-    padding: 0 4px !important;
-
-    column-gap: 6px !important;
-    row-gap: 6px !important;
-
-    font-size: 14px !important;
-    line-height: 22px !important;
-  }
-
-  .extendedEnterpriseLearning > .frameDiv .resourcesWrapper,
-  .extendedEnterpriseLearning > .frameDiv .arrowRightDoubleGroup {
-    gap: 6px !important;
-  }
-
-  .extendedEnterpriseLearning > .frameDiv .useCases {
-    line-height: 22px !important;
-  }
+/* Match the prior page's 8px demo buttons; retain a single shadow layer. */
+.signInHelpWrapper,.bookDemoBtn,.bookADemoButton,.frameChild21 {
+  appearance: none; border: 0; border-radius: 8px;
+  background: var(--page-bg); color: var(--page-blue);
+  box-shadow: var(--shadow-raised);
+  display: inline-flex; align-items: center; justify-content: center;
+  width: auto; max-width: 100%; height: auto; min-height: 56px;
+  padding: 16px 32px; font-family: var(--page-font);
+  font-size: 24px; font-weight: 600; line-height: 1.3; letter-spacing: .02em;
+  text-decoration: none; text-align: center; white-space: normal;
+  overflow-wrap: break-word; cursor: pointer;
+  transition: box-shadow 180ms ease; transform: none;
 }
-
-/* =========================================================
-   STAKEHOLDER CHALLENGE CARDS — DESKTOP/TABLET LAYOUT FIX
-   Only this section is changed.
-   Keeps challenge content on the left and
-   "HOW NEUROLXP HELPS" box on the right.
-   ========================================================= */
-
-@media (min-width: 768px) {
-  .frameWrapper2 {
-    width: 100% !important;
-    height: 230px !important;
-    min-height: 230px !important;
-
-    display: flex !important;
-    flex-direction: row !important;
-    align-items: center !important;
-    justify-content: space-between !important;
-
-    gap: 24px !important;
-    padding: 24px 32px !important;
-    box-sizing: border-box !important;
-  }
-
-  .stakeholderCardContent {
-    width: auto !important;
-    min-width: 0 !important;
-    flex: 1 1 auto !important;
-
-    display: flex !important;
-    flex-direction: column !important;
-    align-items: flex-start !important;
-    justify-content: center !important;
-
-    gap: 8px !important;
-  }
-
-  .stakeholderCardDescription {
-    width: 100% !important;
-    max-width: 620px !important;
-    height: auto !important;
-  }
-
-  .stakeholderHelpBox {
-    width: 36% !important;
-    min-width: 300px !important;
-    max-width: 390px !important;
-    height: auto !important;
-    min-height: 118px !important;
-
-    flex: 0 0 36% !important;
-
-    display: flex !important;
-    flex-direction: column !important;
-    align-items: flex-start !important;
-    justify-content: center !important;
-
-    gap: 6px !important;
-    padding: 14px 18px !important;
-    box-sizing: border-box !important;
-  }
-
-  .stakeholderHelpTitle,
-  .stakeholderHelpText {
-    width: 100% !important;
-    max-width: 100% !important;
-    height: auto !important;
-  }
+.signInHelpWrapper { min-height: 44px; padding: 10px 20px; font-size: 16px; }
+.frameWrapper10 {
+  display: inline-flex; width: fit-content; max-width: 100%; height: auto;
+  min-height: 56px; border-radius: 8px; margin: 0; text-decoration: none; cursor: pointer;
 }
-
-/* Keep the same side-by-side composition on medium screens,
-   while allowing the right panel to shrink proportionally. */
-@media (min-width: 768px) and (max-width: 1024px) {
-  .frameWrapper2 {
-    gap: 20px !important;
-    padding: 22px 24px !important;
-  }
-
-  .stakeholderHelpBox {
-    width: 38% !important;
-    min-width: 260px !important;
-    max-width: 340px !important;
-    min-height: 112px !important;
-    flex-basis: 38% !important;
-  }
+.frameWrapper10 .frameChild21 { width: 100%; }
+.frameParent24 > button:has(.frameWrapper10),
+.bookADemoButton:has(.frameWrapper10),.bookADemoButton:has(.frameChild21) {
+  appearance: none; background: transparent; border: 0;
+  padding: 0; margin: 0; box-shadow: none; max-width: 100%; cursor: pointer;
 }
-
-
-/* =========================================================
-   FINAL STAKEHOLDER SECTION SPACING + TYPOGRAPHY
-   Only the "One Platform: Every Stakeholder" section.
-   Desktop: H = 36px, P = 24px
-   Mobile:  H = 24px, P = 16px
-   ========================================================= */
-
-@media (min-width: 768px) {
-  .extendedEnterpriseLearning > .frameParent5 {
-    gap: 24px !important;
-  }
-
-  .frameParent5 .frameParent6 {
-    height: auto !important;
-    min-height: 0 !important;
-    gap: 12px !important;
-  }
-
-  .frameParent5 .frameWrapper,
-  .frameParent5 .onePlatformEveryStakeholdeWrapper,
-  .frameParent5 .onePlatformEvery,
-  .frameParent5 .neurolxpConnectsYour {
-    height: auto !important;
-    min-height: 0 !important;
-  }
-
-  .frameParent5 .onePlatformEveryStakeholdeWrapper {
-    padding: 0 !important;
-  }
-
-  .frameParent5 .onePlatformEvery {
-    font-size: 36px !important;
-    line-height: 44px !important;
-  }
-
-  .frameParent5 .neurolxpConnectsYour {
-    font-size: 24px !important;
-    line-height: 34px !important;
-  }
-
-  .frameParent5 .frameParent7 {
-    height: 992px !important;
-    min-height: 992px !important;
-    gap: 24px !important;
-    align-items: flex-start !important;
-  }
-
-  .frameParent5 .frameChild6 {
-    height: 992px !important;
-  }
-
-  .frameParent5 .stakeholderTimelineRail {
-    top: 35px !important;
-    height: 922px !important;
-  }
-
-  .frameParent5 .stakeholderTimelineNode1 { top: 20px !important; }
-  .frameParent5 .stakeholderTimelineNode2 { top: 274px !important; }
-  .frameParent5 .stakeholderTimelineNode3 { top: 528px !important; }
-  .frameParent5 .stakeholderTimelineNode4 { top: 782px !important; }
-
-  .frameParent5 .frameParent8 {
-    gap: 24px !important;
-  }
-}
-
-@media (max-width: 767px) {
-  .frameParent5 .onePlatformEvery {
-    font-size: 24px !important;
-    line-height: 32px !important;
-  }
-
-  .frameParent5 .neurolxpConnectsYour {
-    font-size: 16px !important;
-    line-height: 24px !important;
-  }
-
-  .frameParent5 .frameParent6 {
-    height: auto !important;
-    min-height: 0 !important;
-    gap: 10px !important;
-  }
-
-  .frameParent5 .frameWrapper,
-  .frameParent5 .onePlatformEveryStakeholdeWrapper,
-  .frameParent5 .onePlatformEvery,
-  .frameParent5 .neurolxpConnectsYour {
-    height: auto !important;
-    min-height: 0 !important;
-  }
-
-  .frameParent5 .onePlatformEveryStakeholdeWrapper {
-    padding: 0 !important;
-  }
-}
-
-/* =========================================================
-   FINAL SECTION GAP + RESPONSIVE IMAGE SAFETY
-   Scope:
-   1. Removes only the excess blank space after stakeholder cards.
-   2. Keeps Benefits / CTA cleanly spaced.
-   3. Prevents content images from being cropped as width reduces.
-   No colors, shadows, borders, animations or card designs changed.
-   ========================================================= */
-
-/* ---------------------------------------------------------
-   DESKTOP
-   Stakeholder section:
-   frameParent5 starts at 579px.
-   Its compact content is now ~1100px tall, so Benefits should
-   begin directly after it instead of retaining the old 2290px top.
-   --------------------------------------------------------- */
-@media (min-width: 1200px) {
-  .extendedEnterpriseLearning > .frameParent13 {
-    top: 1740px !important;
-    height: auto !important;
-    min-height: 650px !important;
-    padding-bottom: 20px !important;
-    overflow: visible !important;
-  }
-
-  .extendedEnterpriseLearning > .frameParent23 {
-    top: 2450px !important;
-  }
-
-  .extendedEnterpriseLearning {
-    height: 2980px !important;
-    min-height: 2980px !important;
-    overflow-x: hidden !important;
-    overflow-y: visible !important;
-  }
-}
-
-
-/* ---------------------------------------------------------
-   TABLET / REDUCED DESKTOP WIDTH
-   Keep the same section order but remove the old oversized
-   absolute gaps.
-   --------------------------------------------------------- */
-@media (min-width: 768px) and (max-width: 1199px) {
-  .extendedEnterpriseLearning > .frameParent13 {
-    top: 1740px !important;
-    height: auto !important;
-    min-height: 700px !important;
-    padding-bottom: 24px !important;
-    overflow: visible !important;
-  }
-
-  .extendedEnterpriseLearning > .frameParent23 {
-    top: 2500px !important;
-  }
-
-  .extendedEnterpriseLearning {
-    min-height: 3050px !important;
-    height: 3050px !important;
-    overflow-x: hidden !important;
-    overflow-y: visible !important;
-  }
-
-  /* Do not crop the CTA image as its container narrows. */
-  .frameParent23 .empowerImageWrapper {
-    display: flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-
-    overflow: hidden !important;
-    background: #dfe6e9 !important;
-  }
-
-  .frameParent23 .departmentMeeting1Icon {
-    width: 100% !important;
-    height: 100% !important;
-
-    object-fit: contain !important;
-    object-position: center center !important;
-  }
-
-  /* Logos also scale without clipping. */
-  .logo01SynapseSpark1Icon,
-  .logo01SynapseSpark1Icon2 {
-    max-width: 100% !important;
-    object-fit: contain !important;
-  }
-}
-
-
-/* ---------------------------------------------------------
-   MOBILE
-   Sections already use natural document flow in the existing
-   CSS. Only tighten the section-to-section rhythm and protect
-   images from cropping.
-   --------------------------------------------------------- */
-@media (max-width: 767px) {
-  .extendedEnterpriseLearning > .frameParent5 {
-    margin-top: 40px !important;
-  }
-
-  .extendedEnterpriseLearning > .frameParent13 {
-    margin-top: 40px !important;
-  }
-
-  .extendedEnterpriseLearning > .frameParent23 {
-    margin-top: 40px !important;
-  }
-
-  .extendedEnterpriseLearning > .frameParent25 {
-    margin-top: 40px !important;
-  }
-
-  .frameParent23 .empowerImageWrapper {
-    width: 100% !important;
-    height: auto !important;
-    min-height: 0 !important;
-    aspect-ratio: 633 / 468 !important;
-
-    display: flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-
-    overflow: hidden !important;
-    background: #dfe6e9 !important;
-  }
-
-  .frameParent23 .departmentMeeting1Icon {
-    width: 100% !important;
-    height: 100% !important;
-
-    object-fit: contain !important;
-    object-position: center center !important;
-  }
-
-  .logo01SynapseSpark1Icon,
-  .logo01SynapseSpark1Icon2 {
-    max-width: 100% !important;
-    height: auto !important;
-    object-fit: contain !important;
-  }
-}
-
-
-/* ---------------------------------------------------------
-   GLOBAL IMAGE SAFETY FOR THIS PAGE
-   Preserve intrinsic image proportions. Icon classes are not
-   included, so their existing visual design is untouched.
-   --------------------------------------------------------- */
-.extendedEnterpriseLearning .departmentMeeting1Icon,
-.extendedEnterpriseLearning .logo01SynapseSpark1Icon,
-.extendedEnterpriseLearning .logo01SynapseSpark1Icon2 {
-  max-width: 100%;
-}
-
-/* Book a Demo - smooth hover in / hover out */
-.bookADemoButton {
-  cursor: pointer;
-
-  transition:
-    transform 0.28s ease,
-    box-shadow 0.28s ease;
-}
-
-/* Hover IN */
-.bookADemoButton:hover {
-  transform: translateY(-4px) scale(1.03);
-
-  box-shadow:
-    -4px -4px 4px rgba(255, 255, 255, 0.95),
-    4px 4px 4px rgba(198, 198, 201, 0.9);
-}
-
-/* Click */
-.bookADemoButton:active {
-  transform: translateY(0) scale(0.98);
-
-  box-shadow:
-    inset -4px -4px 4px rgba(255, 255, 255, 0.9),
-    inset 4px 4px 4px rgba(198, 198, 201, 0.8);
-}
-
-/* Book a Demo trigger wrapper — remove native button chrome only */
-.frameParent24 > button:has(> .frameWrapper10) {
-  appearance: none !important;
-  -webkit-appearance: none !important;
-  background: transparent !important;
-  border: 0 !important;
-  outline: 0 !important;
-  box-shadow: none !important;
-  padding: 0 !important;
-  margin: 0 !important;
-  color: inherit !important;
-  font: inherit !important;
-  cursor: pointer !important;
-  -webkit-tap-highlight-color: transparent !important;
-}
-
-.frameParent24 > button:has(> .frameWrapper10):hover,
-.frameParent24 > button:has(> .frameWrapper10):focus,
-.frameParent24 > button:has(> .frameWrapper10):focus-visible,
-.frameParent24 > button:has(> .frameWrapper10):active {
-  background: transparent !important;
-  border: 0 !important;
-  outline: 0 !important;
-  box-shadow: none !important;
-}
-
-/* HERO ONLY — softer light effect + no hover effect */
-.vectorParent .frameIcon:hover,
-.vectorParent .frameChild2:hover,
-.vectorParent .frameChild4:hover,
-.vectorParent .heroPillBlue:hover,
-.vectorParent .heroPillPink:hover,
-.vectorParent .heroPillGreen:hover,
-.vectorParent .heroPillPurple:hover {
-  transform: none !important;
-  filter: none !important;
-}
-
-/* =========================================================
-   MOBILE ONLY — tighter page spacing + narrower hero pills
-   Desktop/tablet and existing visual design are unchanged.
-   ========================================================= */
-@media (max-width: 600px) {
-  /* Reduce the large blank area below the breadcrumb. */
-  .extendedEnterpriseLearning .vectorParent {
-    margin-top: -24px !important;
-  }
-
-  /* Keep hero content compact without changing typography/design. */
-  .extendedEnterpriseLearning .frameParent2 {
-    gap: 24px !important;
-  }
-
-  .extendedEnterpriseLearning .frameParent3 {
-    gap: 18px !important;
-  }
-
-  /* Reduce width of the four hero pills shown in the screenshot. */
-  .extendedEnterpriseLearning .frameParent4 {
-    width: 100% !important;
-    max-width: 340px !important;
-    gap: 12px !important;
-  }
-
-  .extendedEnterpriseLearning .frameParent4 .frameChild2,
-  .extendedEnterpriseLearning .frameParent4 .frameChild4 {
-    width: calc(100% - 28px) !important;
-    max-width: 330px !important;
-    margin-left: auto !important;
-    margin-right: auto !important;
-  }
-
-  /* Reduce excessive vertical gaps through the remaining mobile page. */
-  .extendedEnterpriseLearning .frameParent5,
-  .extendedEnterpriseLearning .frameParent13 {
-    gap: 28px !important;
-  }
-
-  .extendedEnterpriseLearning .frameParent6,
-  .extendedEnterpriseLearning .frameParent14 {
-    gap: 20px !important;
-  }
-
-  .extendedEnterpriseLearning .frameParent8 {
-    gap: 24px !important;
-  }
-
-  .extendedEnterpriseLearning .frameParent15 {
-    gap: 28px !important;
-  }
-
-  .extendedEnterpriseLearning .frameParent16,
-  .extendedEnterpriseLearning .frameParent20 {
-    gap: 22px !important;
-  }
-}
-
-/* =========================================================
-   BUTTON HOVER ONLY — INSET EFFECT
-   No sizing, positioning, spacing, colour or layout changes.
-   ========================================================= */
-.signInHelpWrapper,
-.bookDemoBtn,
-.bookADemoButton,
-.frameWrapper10 .frameChild21 {
-  cursor: pointer;
-  transition:
-    box-shadow 180ms ease,
-    transform 180ms ease !important;
-}
-
 @media (hover: hover) and (pointer: fine) {
-  .signInHelpWrapper:hover,
-  .bookDemoBtn:hover,
-  .bookADemoButton:hover,
-  .frameWrapper10:hover .frameChild21 {
-    box-shadow:
-      inset -4px -4px 4px #ffffff,
-      inset 4px 4px 4px rgba(196, 196, 196, 0.82) !important;
-    transform: translateY(1px) !important;
+  .signInHelpWrapper:hover,.bookDemoBtn:hover,.bookADemoButton:not(:has(.frameChild21)):hover,
+  .frameWrapper10:hover .frameChild21 { box-shadow: var(--shadow-inset); transform: none; }
+}
+.signInHelpWrapper:active,.bookDemoBtn:active,.bookADemoButton:not(:has(.frameChild21)):active,
+.frameWrapper10:active .frameChild21 { box-shadow: var(--shadow-inset); transform: none; }
+.signInHelpWrapper:focus-visible,.bookDemoBtn:focus-visible,.bookADemoButton:focus-visible,
+.frameWrapper10:focus-visible,.frameParent24 > button:focus-visible {
+  outline: 3px solid var(--page-blue); outline-offset: 4px;
+}
+.frameWrapper10:focus-visible .frameChild21 { outline: none; }
+
+/* Legacy header/footer, when rendered within this page. */
+.frameParent { overflow: visible; padding: 16px; }
+.frameGroup { position: relative; inset: auto; width: 100%; height: auto; display: flex; flex-wrap: wrap; align-items: center; gap: 20px; }
+.logo01SynapseSpark1Parent { position: relative; inset: auto; flex: 1; flex-wrap: wrap; gap: 24px; }
+.frameContainer { flex-wrap: wrap; gap: 16px 24px; }
+.frameChild,.signInHelpWrapper { position: relative; inset: auto; }
+.logo01SynapseSpark1Icon,.logo01SynapseSpark1Icon2 { max-width: 100%; height: auto; object-fit: contain; }
+.frameParent26,.frameWrapper11,.frameParent27 {
+  position: relative; inset: auto; width: 100%; height: auto; overflow: visible;
+}
+.frameParent26,.frameWrapper11 { padding: 32px 24px; }
+.frameParent28 { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 32px; }
+.frameParent29,.frameParent31,.frameParent38,.logo01SynapseSpark1Group,
+.prgeeqGlobalSolutionsPrivatParent { width: 100%; min-width: 0; }
+.frameParent32,.frameParent39 { display: flex; flex-wrap: wrap; width: 100%; gap: 24px; }
+.frameParent33,.frameParent41 { position: relative; inset: auto; width: 100%; height: auto; flex-wrap: wrap; gap: 16px; }
+.frameParent30,.onePlatformParent { flex-wrap: wrap; }
+.aboutUsParent,.quickLinksParent,.neurolxpParent,.ourCustomersGroup,
+.ourCustomersContainer { width: auto; min-width: 0; max-width: 100%; height: auto; }
+.ourMission,.smartContentCreation,.copyright2026,.prestigeAtlanta1012Container { width: 100%; height: auto; line-height: 1.5; }
+.frameChild22,.frameChild26 { width: 56px; height: 56px; }
+
+/* Share row tracks across the two benefit columns when supported. */
+@supports (grid-template-rows: subgrid) {
+  @media (min-width: 768px) {
+    .frameParent15 { grid-template-rows: repeat(3, auto); row-gap: 28px; }
+    .frameParent16,.frameParent20 { display: grid; grid-row: span 3; grid-template-rows: subgrid; }
   }
 }
-
-.signInHelpWrapper:active,
-.bookDemoBtn:active,
-.bookADemoButton:active,
-.frameWrapper10:active .frameChild21 {
-  box-shadow:
-    inset -3px -3px 4px #ffffff,
-    inset 4px 4px 5px rgba(191, 194, 196, 0.90) !important;
-  transform: translateY(2px) !important;
+@media (max-width: 1100px) {
+  .frameParent4 { grid-template-columns: repeat(2,minmax(0,1fr)); max-width: 720px; }
+  .frameWrapper2 { grid-template-columns: 1fr; min-height: 0; gap: 20px; }
+  .frameParent15 { column-gap: 32px; }
+  .frameParent17,.frameParent18,.frameParent19,.frameParent22 { gap: 18px; }
+}
+@media (max-width: 767px) {
+  .extendedEnterpriseLearning { padding: 0 16px 40px; }
+  .extendedEnterpriseLearning > .frameDiv { margin: 16px auto 20px; font-size: 14px; line-height: 22px; }
+  .frameDiv :is(.resourcesWrapper,.arrowRightDoubleGroup) { gap: 6px; }
+  .frameParent2 { padding: 16px 0 0; gap: 24px; }
+  .groupChild { display: none; }
+  .frameIcon,.frameChild15 { min-height: 44px; padding: 10px 24px; font-size: 18px; }
+  .frameParent3,.frameParent14 { gap: 20px; }
+  .frameParent5,.frameParent13 { gap: 28px; }
+  .frameParent7 { display: block; }
+  .frameChild6 { display: none; }
+  .frameParent8 { grid-auto-rows: auto; }
+  .frameWrapper2 { padding: 24px 20px; }
+  .stakeholderChallenge,.stakeholderCardDescription { font-size: 16px; line-height: 1.5; }
+  .stakeholderCardTitle { font-size: 22px; line-height: 1.4; }
+  .stakeholderHelpBox { min-height: 0; }
+  .frameParent15 { grid-template-columns: 1fr; gap: 24px; }
+  .frameParent16,.frameParent20 { gap: 24px; }
+  .frameParent17,.frameParent18,.frameParent19,.frameParent22 { grid-template-columns: 60px minmax(0,1fr); gap: 16px; }
+  .frameChild16 { width: 60px; height: 60px; }
+  .benefitIconInner { width: 44px; height: 44px; }
+  .benefitIconImage { width: 30px; height: 30px; }
+  .consistentTraining,.complianceTracking,.globalScale { font-size: 20px; line-height: 1.4; }
+  .standardizeLearningAcross,.deliverConsistentCustomer,.monitorCertificationsAnd,.improveProductUnderstanding { font-size: 16px; line-height: 1.5; }
+  .frameParent23 { grid-template-columns: 1fr; border-radius: 24px; }
+  .frameParent24 { padding: 28px 24px; gap: 24px; }
+  .empowerImageWrapper { border-radius: 32px 32px 0 0; }
+  .bookDemoBtn,.bookADemoButton,.frameChild21 { min-height: 48px; padding: 14px 24px; font-size: 18px; }
+  .frameWrapper10 { min-height: 48px; }
+  .frameParent28 { grid-template-columns: 1fr; }
+  .frameParent26,.frameWrapper11 { padding: 24px 16px; }
+}
+@media (max-width: 480px) {
+  .frameParent4 { grid-template-columns: 1fr; max-width: 340px; gap: 12px; }
+  .frameChild2,.frameChild4 { min-height: 52px; font-size: 16px; }
+  .frameWrapper2 { padding: 20px 16px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .extendedEnterpriseLearning *,
+  .extendedEnterpriseLearning *::before,
+  .extendedEnterpriseLearning *::after { animation: none !important; transition: none !important; }
 }
 
-.signInHelpWrapper:focus-visible,
-.bookDemoBtn:focus-visible,
-.bookADemoButton:focus-visible,
-.frameWrapper10:focus-visible .frameChild21 {
-  box-shadow:
-    inset -4px -4px 4px #ffffff,
-    inset 4px 4px 4px rgba(196, 196, 196, 0.82) !important;
-  outline: none !important;
+/* HERO REFERENCE: restore the original 1440px composition and badge scale.
+   Reuses the existing groupChild artwork; no replacement image is required. */
+.extendedEnterpriseLearning > .vectorParent {
+  --hero-bleed: clamp(16px, 4vw, 80px);
+  position: relative;
+  inset: auto;
+  width: min(1440px, calc(100% + var(--hero-bleed) + var(--hero-bleed)));
+  max-width: none;
+  height: auto;
+  min-height: 475px;
+  margin: 0 0 0 50%;
+  padding: 0;
+  transform: translateX(-50%);
+  isolation: isolate;
+  overflow: visible;
+  text-align: center;
 }
-
-/* Keep the requested font stack on the button text itself. */
-.signInHelpWrapper,
-.signInHelpWrapper *,
-.bookDemoBtn,
-.bookDemoBtn *,
-.bookADemoButton,
-.bookADemoButton *,
-.frameWrapper10,
-.frameWrapper10 * {
-  font-family: "Segoe UI", "Inter" !important;
+.extendedEnterpriseLearning .vectorParent .groupChild {
+  display: block;
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  transform: none;
+  object-fit: fill;
+  z-index: -1;
+  pointer-events: none;
 }
-
-
-/* =========================================================
-   LAST CTA SECTION ONLY — 36PX HEADING / 24PX SUBHEADING
-   Alignment correction only.
-   ========================================================= */
-.extendedEnterpriseLearning .frameParent23 .frameParent24 {
-  align-items: flex-start !important;
-  justify-content: flex-start !important;
-  gap: 26px !important;
-  text-align: left !important;
+.extendedEnterpriseLearning .vectorParent .frameParent2 {
+  position: relative;
+  inset: auto;
+  width: calc(100% - 48px);
+  max-width: 1104px;
+  height: auto;
+  min-height: 0;
+  margin: 0 auto;
+  padding: 82px 0 56px;
+  transform: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
 }
-
-.extendedEnterpriseLearning .frameParent23 .empowerYourExtendedEnterpriParent {
-  width: 100% !important;
-  align-items: flex-start !important;
-  gap: 18px !important;
-  text-align: left !important;
+.extendedEnterpriseLearning .vectorParent .frameParent3 {
+  width: 100%;
+  height: auto;
+  min-height: 0;
+  gap: 24px;
+  align-items: center;
 }
-
-.extendedEnterpriseLearning .frameParent23 .empowerYourExtended {
-  width: 100% !important;
-  height: auto !important;
-  min-height: 0 !important;
-  margin: 0 !important;
-  padding: 0 !important;
-
-  font-size: 24px !important;
-  line-height: 32px !important;
-
-  text-align: left !important;
-  white-space: normal !important;
-  overflow: visible !important;
+.extendedEnterpriseLearning .vectorParent .extendLearningBeyondYourWoParent {
+  width: 100%;
+  max-width: 999px;
+  height: auto;
+  gap: 24px;
+  align-items: center;
 }
-
-.extendedEnterpriseLearning .frameParent23 .neurolxpConnectsTrains {
-  width: 100% !important;
-  height: auto !important;
-  min-height: 0 !important;
-  margin: 0 !important;
-  padding: 0 !important;
-
-  font-size: 24px !important;
-  line-height: 34px !important;
-
-  text-align: left !important;
-  white-space: normal !important;
-  overflow: visible !important;
+.extendedEnterpriseLearning .vectorParent .extendLearningBeyond {
+  width: 100%;
+  max-width: 999px;
+  height: auto;
+  margin: 0;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 50px;
+  letter-spacing: .03em;
+  text-align: center;
 }
-
-.extendedEnterpriseLearning .frameParent23 .frameWrapper10 {
-  margin-top: 2px !important;
-  align-self: flex-start !important;
+.extendedEnterpriseLearning .vectorParent .trainPartnersVendors {
+  width: 100%;
+  max-width: 714px;
+  height: auto;
+  margin: 0;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: .03em;
+  text-align: center;
 }
+.extendedEnterpriseLearning .vectorParent .frameIcon,
+.extendedEnterpriseLearning .vectorParent .frameChild2,
+.extendedEnterpriseLearning .vectorParent .frameChild4 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  min-width: 0;
+  max-width: 100%;
+  height: auto;
+  margin: 0;
+  background: #dfe6e9;
+  box-shadow: inset -4px -4px 4px #ffffff,
+              inset 4px 4px 4px rgba(196,196,196,.8);
+  font-family: "Segoe UI", Inter, Arial, sans-serif;
+  text-align: center;
+  white-space: normal;
+  overflow-wrap: break-word;
+  transform: none;
+  filter: none;
+  cursor: default;
+}
+.extendedEnterpriseLearning .vectorParent .frameIcon {
+  width: 395px;
+  min-height: 50px;
+  padding: 9px 20px;
+  border: 0;
+  border-radius: 28px;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 32px;
+  letter-spacing: .03em;
+  color: #2d4cc8;
+}
+.extendedEnterpriseLearning .vectorParent .frameParent4 {
+  display: grid;
+  grid-template-columns: 250fr 250fr 200fr 200fr;
+  width: 100%;
+  max-width: 948px;
+  height: auto;
+  gap: 16px;
+  align-items: stretch;
+}
+.extendedEnterpriseLearning .vectorParent .frameChild2,
+.extendedEnterpriseLearning .vectorParent .frameChild4 {
+  width: 100%;
+  min-height: 60px;
+  padding: 12px 20px;
+  border: 0;
+  border-bottom: 5px solid currentColor;
+  border-radius: 32px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+  letter-spacing: .03em;
+}
+.extendedEnterpriseLearning .vectorParent .heroPillBlue { color: #2d4cc8; }
+.extendedEnterpriseLearning .vectorParent .heroPillPink { color: #bf1869; }
+.extendedEnterpriseLearning .vectorParent .heroPillGreen { color: #2a7308; }
+.extendedEnterpriseLearning .vectorParent .heroPillPurple { color: #67096e; }
 
-
-/* =========================================================
-   BENEFITS SECTION — OVERLAP FIX ONLY
-   Keeps the existing design, font sizes, widths, colors,
-   icons, spacing and layout unchanged.
-   ========================================================= */
-@media screen and (min-width: 1200px) {
-
-  /* "Consistent Training" can wrap to two lines.
-     Remove only its fixed 37px height so the description
-     naturally starts below the complete title. */
-  .extendedEnterpriseLearning .frameParent13 .consistentTraining {
-    height: auto !important;
-    min-height: 37px !important;
-    max-height: none !important;
-    overflow: visible !important;
+@media (max-width: 1023px) {
+  .extendedEnterpriseLearning .vectorParent .frameParent2 { padding-top: 64px; gap: 36px; }
+  .extendedEnterpriseLearning .vectorParent .frameParent4 {
+    max-width: 650px;
+    grid-template-columns: repeat(2, minmax(0,1fr));
   }
-
-  .extendedEnterpriseLearning .frameParent13 .consistentTrainingParent {
-    height: auto !important;
-    min-height: 0 !important;
-    overflow: visible !important;
+}
+@media (max-width: 767px) {
+  .extendedEnterpriseLearning > .vectorParent { --hero-bleed: 16px; min-height: 0; }
+  .extendedEnterpriseLearning .vectorParent .frameParent2 {
+    width: calc(100% - 40px);
+    padding: 48px 0 36px;
+    gap: 28px;
+  }
+  .extendedEnterpriseLearning .vectorParent .frameParent3,
+  .extendedEnterpriseLearning .vectorParent .extendLearningBeyondYourWoParent { gap: 20px; }
+  .extendedEnterpriseLearning .vectorParent .frameIcon {
+    width: fit-content;
+    min-height: 44px;
+    padding: 10px 20px;
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .extendedEnterpriseLearning .vectorParent .extendLearningBeyond { font-size: 24px; line-height: 32px; }
+  .extendedEnterpriseLearning .vectorParent .trainPartnersVendors { font-size: 16px; line-height: 24px; }
+  .extendedEnterpriseLearning .vectorParent .frameChild2,
+  .extendedEnterpriseLearning .vectorParent .frameChild4 {
+    min-height: 52px;
+    padding: 10px 16px;
+    font-size: 16px;
+    line-height: 24px;
   }
 }
-
-
-/* MOBILE ONLY — LAST CTA SUBHEADING SIZE */
-@media screen and (max-width: 767.98px) {
-  .extendedEnterpriseLearning .frameParent23 .neurolxpConnectsTrains {
-    font-size: 16px !important;
-    line-height: 24px !important;
+@media (max-width: 479px) {
+  .extendedEnterpriseLearning .vectorParent .frameParent4 {
+    max-width: 330px;
+    grid-template-columns: minmax(0,1fr);
+    gap: 12px;
   }
 }
-
-
-/* MOBILE ONLY — PREVENT STAKEHOLDER HEADING FROM OVERLAPPING HERO PILLS */
-@media (max-width: 600px) {
-  .extendedEnterpriseLearning > .frameParent5 {
-    margin-top: 24px !important;
-  }
-}
-

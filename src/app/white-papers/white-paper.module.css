@@ -3079,3 +3079,666 @@ body {
         line-height: 32px;
     }
 }
+
+/* =========================================================
+   Whitepaper page: shared controls and content-sized layouts.
+   Keep this block after the existing responsive rules.
+   ========================================================= */
+
+.whitepaper-page {
+    --wp-font: "Segoe UI", "Inter", sans-serif;
+    --wp-blue: #2D4CC8;
+    --wp-raised: -4px -4px 4px #FFFFFF, 4px 4px 4px #C6C6C9;
+    --wp-inset: inset -4px -4px 4px #FFFFFF,
+        inset 4px 4px 4px rgba(196, 196, 196, 0.8);
+    --wp-button-size: 24px;
+    --wp-badge-size: 24px;
+    font-family: var(--wp-font);
+}
+
+.whitepaper-page *,
+.whitepaper-page *::before,
+.whitepaper-page *::after {
+    box-sizing: border-box;
+}
+
+/* Matching pill badges, with room for labels to wrap. */
+.whitepaper-page :is(.hero-badge, .insights-badge) {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    flex: 0 1 auto;
+    width: fit-content;
+    max-width: 100%;
+    min-width: 0;
+    height: auto;
+    min-height: 56px;
+    padding: 12px 36px;
+    border: 0;
+    border-radius: 999px;
+    background: var(--page-bg);
+    box-shadow: var(--wp-inset);
+    color: var(--wp-blue);
+    font-family: var(--wp-font);
+    font-size: var(--wp-badge-size);
+    font-weight: 600;
+    line-height: 1.3;
+    letter-spacing: 0.03em;
+    text-align: center;
+    white-space: normal;
+    overflow-wrap: anywhere;
+    transform: none;
+    filter: none;
+    transition: none;
+}
+
+.whitepaper-page .hero-badge {
+    align-self: flex-start;
+    margin: 0;
+}
+
+.whitepaper-page :is(.hero-badge, .insights-badge):hover {
+    box-shadow: var(--wp-inset);
+    transform: none;
+    filter: none;
+}
+
+.whitepaper-page :is(.hero-badge, .insights-badge) span,
+.whitepaper-page .insights-badge-text {
+    display: block;
+    width: auto;
+    max-width: 100%;
+    min-width: 0;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    font: inherit;
+    letter-spacing: inherit;
+    color: inherit;
+    white-space: normal;
+    overflow-wrap: anywhere;
+}
+
+/* Raised buttons; inset on interaction, without moving the label. */
+.whitepaper-page .hero-btn {
+    appearance: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    align-self: flex-start;
+    flex: 0 1 auto;
+    width: fit-content;
+    max-width: 100%;
+    min-width: 0;
+    height: auto;
+    min-height: 48px;
+    margin: 0;
+    padding: 16px 32px;
+    border: 0;
+    border-radius: 8px;
+    background: var(--page-bg);
+    box-shadow: var(--wp-raised);
+    color: var(--wp-blue);
+    font-family: var(--wp-font);
+    font-size: var(--wp-button-size);
+    font-weight: 600;
+    line-height: 1.3;
+    letter-spacing: 0.02em;
+    text-align: center;
+    text-decoration: none;
+    white-space: normal;
+    overflow-wrap: anywhere;
+    cursor: pointer;
+    touch-action: manipulation;
+    transform: none;
+    filter: none;
+    transition: box-shadow 180ms ease;
+}
+
+.whitepaper-page .hero-btn span,
+.whitepaper-page .hero-btn-text {
+    display: block;
+    width: auto;
+    min-width: 0;
+    max-width: 100%;
+    height: auto;
+    font: inherit;
+    color: inherit;
+    letter-spacing: inherit;
+    white-space: normal;
+}
+
+/* BookDemoTrigger can supply the interactive outer button. */
+.whitepaper-page .hero-content-wrapper > button:has(> .hero-btn) {
+    display: inline-flex;
+    align-self: flex-start;
+    width: fit-content;
+    max-width: 100%;
+    min-width: 0;
+    height: auto;
+    min-height: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    border-radius: 8px;
+    background: transparent;
+    box-shadow: none;
+    transform: none;
+    filter: none;
+}
+
+.whitepaper-page .hero-btn:hover,
+.whitepaper-page .hero-btn:active,
+.whitepaper-page .hero-content-wrapper > button:has(> .hero-btn):hover > .hero-btn,
+.whitepaper-page .hero-content-wrapper > button:has(> .hero-btn):active > .hero-btn {
+    box-shadow: var(--wp-inset);
+    transform: none;
+    filter: none;
+}
+
+.whitepaper-page .hero-btn:focus-visible,
+.whitepaper-page .hero-content-wrapper > button:has(> .hero-btn):focus-visible {
+    outline: 3px solid var(--wp-blue);
+    outline-offset: 4px;
+}
+
+/* Remove negative breadcrumb spacing before the hero. */
+.whitepaper-page .breadcrumb {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    min-height: 24px;
+    margin: 0 0 24px;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.whitepaper-page .breadcrumb-right,
+.whitepaper-page .breadcrumb-link,
+.whitepaper-page .breadcrumb-current {
+    width: auto;
+    height: auto;
+    min-width: 0;
+    align-items: center;
+}
+
+/* Let hero text determine its own height. The desktop artwork still
+   overlaps the empty end of the card, with space reserved for it. */
+.whitepaper-page .hero-container {
+    display: grid;
+    grid-template-columns: minmax(0, 46fr) minmax(0, 20fr) minmax(0, 34fr);
+    align-items: center;
+    gap: 0;
+    position: relative;
+    width: 100%;
+    height: auto;
+    min-height: 0;
+}
+
+.whitepaper-page .hero-content {
+    display: contents;
+}
+
+.whitepaper-page .hero-card {
+    grid-column: 1 / 3;
+    grid-row: 1;
+    position: relative;
+    inset: auto;
+    width: 100%;
+    min-width: 0;
+    height: auto;
+    min-height: 0;
+    padding: 40px calc(30.304% + 24px) 40px 40px;
+}
+
+.whitepaper-page .hero-content-wrapper,
+.whitepaper-page .hero-text-wrapper,
+.whitepaper-page .hero-heading-wrapper {
+    position: relative;
+    inset: auto;
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    height: auto;
+    min-height: 0;
+    padding: 0;
+    justify-content: flex-start;
+    gap: 24px;
+}
+
+.whitepaper-page .hero-title,
+.whitepaper-page .hero-description {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    margin: 0;
+    overflow-wrap: break-word;
+}
+
+.whitepaper-page .hero-image-wrapper {
+    grid-column: 2 / 4;
+    grid-row: 1;
+    justify-self: end;
+    position: relative;
+    inset: auto;
+    width: 100%;
+    max-width: 620px;
+    height: auto;
+    aspect-ratio: 1;
+    margin: 0;
+    padding: clamp(16px, 2.2vw, 28px);
+}
+
+.whitepaper-page .hero-image-circle {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1;
+}
+
+.whitepaper-page .hero-image {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+/* Topic cards now contribute to the section height. The SVGs stay
+   behind the content and the bottom curve has its own clear space. */
+.whitepaper-page .topics-section {
+    --topics-curve-clearance: clamp(160px, 15vw, 240px);
+    position: relative;
+    isolation: isolate;
+    width: 100%;
+    height: auto;
+    min-height: 0;
+    margin: 0;
+    padding: 48px 0 var(--topics-curve-clearance);
+    overflow: hidden;
+}
+
+/* Works whether topics-content is inside topics-panel or its sibling. */
+.whitepaper-page .topics-panel {
+    display: contents;
+    position: static;
+    inset: auto;
+    width: auto;
+    height: auto;
+}
+
+.whitepaper-page .topics-bg {
+    display: block;
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    pointer-events: none;
+}
+
+.whitepaper-page .topics-panel-svg,
+.whitepaper-page .topics-panel > svg,
+.whitepaper-page .topics-panel > img,
+.whitepaper-page .topics-bg-svg,
+.whitepaper-page .topics-bg > svg,
+.whitepaper-page .topics-bg > img {
+    display: block;
+    position: absolute;
+    inset: auto 0 0;
+    width: 100%;
+    max-width: none;
+    height: auto;
+    margin: 0;
+    pointer-events: none;
+}
+
+.whitepaper-page .topics-panel-svg,
+.whitepaper-page .topics-panel > svg,
+.whitepaper-page .topics-panel > img {
+    z-index: 1;
+}
+
+.whitepaper-page .topics-content {
+    position: relative;
+    inset: auto;
+    z-index: 2;
+    display: block;
+    width: 100%;
+    min-width: 0;
+    height: auto;
+}
+
+.whitepaper-page .topics-wrapper {
+    width: calc(100% - 48px);
+    max-width: 1150px;
+    min-width: 0;
+    height: auto;
+    min-height: 0;
+    margin: 0 auto;
+    padding: 0;
+    gap: 32px;
+}
+
+.whitepaper-page .topics-header,
+.whitepaper-page .topics-header-content {
+    width: 100%;
+    min-width: 0;
+    height: auto;
+    min-height: 0;
+}
+
+.whitepaper-page .topics-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-rows: none;
+    grid-auto-rows: 1fr;
+    align-items: stretch;
+    justify-items: stretch;
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    height: auto;
+    min-height: 0;
+    margin: 0;
+    padding: 0;
+    gap: 32px;
+}
+
+.whitepaper-page .topic-card {
+    display: grid;
+    grid-template-columns: 50px minmax(0, 1fr);
+    align-items: stretch;
+    gap: 16px;
+    width: 100%;
+    max-width: none;
+    min-width: 0;
+    height: auto;
+    min-height: 161px;
+    margin: 0;
+    padding: 16px 18px;
+    overflow: visible;
+}
+
+.whitepaper-page .topic-icon {
+    grid-column: 1;
+    grid-row: 1;
+    align-self: center;
+    position: relative;
+    inset: auto;
+    width: 50px;
+    height: 50px;
+    margin: 0;
+    transform: none;
+}
+
+.whitepaper-page .topic-content {
+    grid-column: 2;
+    grid-row: 1;
+    position: relative;
+    inset: auto;
+    width: 100%;
+    min-width: 0;
+    height: auto;
+    min-height: 120px;
+    padding: 16px 12px;
+}
+
+.whitepaper-page .topic-title {
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
+    height: auto;
+    margin: 0;
+    white-space: normal;
+    overflow-wrap: anywhere;
+}
+
+/* The following section starts after the curve. Its text, card and
+   list rows all stay in normal flow when their content wraps. */
+.whitepaper-page .frame-four-section {
+    padding: 24px 0;
+    margin: 0;
+}
+
+.whitepaper-page .frame-four-container {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin-inline: auto;
+    gap: 48px;
+}
+
+.whitepaper-page .frame-four-left,
+.whitepaper-page .frame-four-right,
+.whitepaper-page .frame-four-content,
+.whitepaper-page .frame-four-heading {
+    width: 100%;
+    min-width: 0;
+    height: auto;
+    min-height: 0;
+    align-self: center;
+    transform: none;
+}
+
+.whitepaper-page .frame-four-card {
+    width: 100%;
+    max-width: 557px;
+    min-width: 0;
+    height: auto;
+    min-height: 0;
+    margin: 0;
+    padding: 16px;
+}
+
+.whitepaper-page .frame-four-inner {
+    width: 100%;
+    min-width: 0;
+    height: auto;
+    min-height: 0;
+    padding: 24px;
+}
+
+.whitepaper-page .frame-four-list {
+    width: 100%;
+    min-width: 0;
+    margin: 0;
+    padding: 0;
+    gap: 16px;
+}
+
+.whitepaper-page .frame-four-item {
+    width: 100%;
+    min-width: 0;
+    height: auto;
+    min-height: 70px;
+    gap: 16px;
+}
+
+.whitepaper-page .frame-four-item-text {
+    width: auto;
+    min-width: 0;
+    height: auto;
+    white-space: normal;
+    overflow-wrap: anywhere;
+}
+
+.whitepaper-page .hero-section {
+    padding-bottom: 24px;
+}
+
+.whitepaper-page .insights-section {
+    padding-block: 24px;
+}
+
+.whitepaper-page .frame-five-section {
+    padding-top: 24px;
+    padding-bottom: 48px;
+}
+
+@media (max-width: 1240px) {
+    .whitepaper-page {
+        --wp-button-size: 20px;
+    }
+
+    .whitepaper-page .topics-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        max-width: 760px;
+        margin-inline: auto;
+        gap: 24px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .whitepaper-page .hero-container {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 32px;
+    }
+
+    .whitepaper-page .hero-card {
+        grid-column: 1;
+        grid-row: 1;
+        padding: 32px;
+    }
+
+    .whitepaper-page .hero-image-wrapper {
+        grid-column: 1;
+        grid-row: 2;
+        justify-self: center;
+        width: min(100%, 380px);
+    }
+
+    .whitepaper-page .hero-title,
+    .whitepaper-page .hero-description {
+        text-align: center;
+    }
+
+    .whitepaper-page .hero-badge,
+    .whitepaper-page .hero-btn,
+    .whitepaper-page .hero-content-wrapper > button:has(> .hero-btn) {
+        align-self: center;
+        margin-inline: auto;
+    }
+
+    .whitepaper-page .frame-four-container {
+        grid-template-columns: minmax(0, 1fr);
+        max-width: 720px;
+        gap: 32px;
+    }
+
+    .whitepaper-page .frame-four-content {
+        align-items: center;
+    }
+
+    .whitepaper-page .frame-four-title,
+    .whitepaper-page .frame-four-description {
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .whitepaper-page {
+        --wp-button-size: 18px;
+        --wp-badge-size: 20px;
+    }
+
+    .whitepaper-page :is(.hero-badge, .insights-badge) {
+        min-height: 48px;
+        padding: 10px 26px;
+    }
+
+    .whitepaper-page .hero-card {
+        padding: 24px 20px;
+    }
+
+    .whitepaper-page .hero-content-wrapper,
+    .whitepaper-page .hero-text-wrapper,
+    .whitepaper-page .hero-heading-wrapper {
+        gap: 20px;
+    }
+
+    .whitepaper-page .hero-image-wrapper {
+        width: min(100%, 295px);
+        padding: 16px;
+    }
+
+    .whitepaper-page .topics-section {
+        padding: 24px 0;
+    }
+
+    /* The decorative desktop SVG is omitted on narrow screens, as
+       in the original design; it must not occupy an extra flow row. */
+    .whitepaper-page .topics-bg,
+    .whitepaper-page .topics-panel-svg,
+    .whitepaper-page .topics-panel > svg,
+    .whitepaper-page .topics-panel > img {
+        display: none;
+    }
+
+    .whitepaper-page .topics-wrapper {
+        width: calc(100% - 32px);
+        gap: 24px;
+    }
+
+    .whitepaper-page .topics-grid {
+        grid-template-columns: minmax(0, 1fr);
+        max-width: 380px;
+        grid-auto-rows: auto;
+        gap: 24px;
+    }
+
+    .whitepaper-page .topic-card {
+        grid-template-columns: 48px minmax(0, 1fr);
+        min-height: 140px;
+        padding: 14px;
+        gap: 12px;
+    }
+
+    .whitepaper-page .topic-icon {
+        width: 48px;
+        height: 48px;
+    }
+
+    .whitepaper-page .topic-content {
+        min-height: 104px;
+        padding: 12px;
+    }
+
+    .whitepaper-page .frame-four-card {
+        padding: 14px;
+    }
+
+    .whitepaper-page .frame-four-inner {
+        padding: 20px 16px;
+    }
+
+    .whitepaper-page .frame-four-item {
+        min-height: 56px;
+        gap: 12px;
+    }
+}
+
+@media (max-width: 420px) {
+    .whitepaper-page .hero-card {
+        padding: 24px 16px;
+    }
+
+    .whitepaper-page .frame-four-card {
+        padding: 12px;
+    }
+
+    .whitepaper-page .frame-four-inner {
+        padding: 18px 12px;
+    }
+
+    .whitepaper-page .frame-four-item {
+        gap: 10px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .whitepaper-page .hero-btn {
+        transition: none;
+    }
+}

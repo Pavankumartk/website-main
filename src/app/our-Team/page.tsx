@@ -123,13 +123,13 @@ const teamMembers: {
     linkedin: "https://www.linkedin.com/in/ranjitha-mahesha-376545284?utm_source=share_via&utm_content=profile&utm_medium=member_android/",
   },
 
-  {
-    name: "Rakesh R",
-    role: "Full-Stack Developer",
-    blurb: "Building powerful backend solutions",
-    photo: "/images/team-rakesh.jpg",
-    linkedin: "https://www.linkedin.com/",
-  },
+  // {
+  //   name: "Rakesh R",
+  //   role: "Full-Stack Developer",
+  //   blurb: "Building powerful backend solutions",
+  //   photo: "/images/team-rakesh.jpg",
+  //   linkedin: "https://www.linkedin.com/",
+  // },
 
   {
     name: "Jeethu",

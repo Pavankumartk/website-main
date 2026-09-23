@@ -105,7 +105,7 @@ const StandardsTraining: NextPage = () => {
 							<div className={styles.benefitsBadge}><span>Benefits</span></div>
 							<h2 className={styles.benefitsOfEmployee}>Benefits of Employee Induction with NeuroLXP</h2>
 						</div>
-						<div className={styles.organizationsCanAchieve}>Organizations can achieve several advantages through digital onboarding:</div>
+						<div className={styles.organizationsCanAchieve}>Organizations can achieve several advantages through digital onboarding</div>
 					</div>
 				</div>
 				<div className={styles.frameParent19}>
