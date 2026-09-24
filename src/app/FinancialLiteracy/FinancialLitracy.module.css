@@ -4516,3 +4516,182 @@
   }
 }
 
+
+/* ========================================================================== 
+   FINAL MOBILE — FINANCIAL FOUNDATION CARDS UNIFORM TYPOGRAPHY + ALIGNMENT
+   Mobile only. Keeps desktop/tablet and all card colours/shapes unchanged.
+   ========================================================================== */
+@media screen and (max-width: 767.98px) {
+  .finatialLiteracy .frameParent5 .frameParent9 {
+    height: 164px !important;
+    min-height: 164px !important;
+  }
+
+  .finatialLiteracy .frameParent5 .wrapper,
+  .finatialLiteracy .frameParent5 .container,
+  .finatialLiteracy .frameParent5 .frame,
+  .finatialLiteracy .frameParent5 .wrapper2 {
+    height: 164px !important;
+  }
+
+  .finatialLiteracy .frameParent5 .skillCardPanel,
+  .finatialLiteracy .frameParent5 .rectangleIcon,
+  .finatialLiteracy .frameParent5 .skillCardPanelAlt,
+  .finatialLiteracy .frameParent5 .rectangleIconAlt {
+    height: 156px !important;
+  }
+
+  /* Put every title + subtitle block at exactly the same position. */
+  .finatialLiteracy .frameParent5 .smartBudgetingParent,
+  .finatialLiteracy .frameParent5 .savingEssentialsParent,
+  .finatialLiteracy .frameParent5 .creditManagementParent,
+  .finatialLiteracy .frameParent5 .futurePlanningParent {
+    top: 50% !important;
+    left: 29% !important;
+    width: 68% !important;
+    height: auto !important;
+    min-height: 0 !important;
+    transform: translateY(-50%) !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    justify-content: center !important;
+    gap: 9px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    text-align: left !important;
+    box-sizing: border-box !important;
+  }
+
+  /* All four card titles use one identical mobile typography rule. */
+  .finatialLiteracy .frameParent5 .smartBudgeting,
+  .finatialLiteracy .frameParent5 .savingEssentials,
+  .finatialLiteracy .frameParent5 .creditManagement,
+  .finatialLiteracy .frameParent5 .futurePlanning {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    font-size: 24px !important;
+    line-height: 28px !important;
+    font-weight: 700 !important;
+    letter-spacing: 0 !important;
+    text-align: left !important;
+    white-space: normal !important;
+    overflow-wrap: normal !important;
+    word-break: normal !important;
+  }
+
+  /* All four descriptions use one identical mobile typography rule. */
+  .finatialLiteracy .frameParent5 .planIncomeAnd,
+  .finatialLiteracy .frameParent5 .growSavingsAnd,
+  .finatialLiteracy .frameParent5 .borrowResponsibly,
+  .finatialLiteracy .frameParent5 .achieveFinancialGoals {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    font-size: 16px !important;
+    line-height: 21px !important;
+    font-weight: 400 !important;
+    letter-spacing: 0 !important;
+    text-align: left !important;
+    white-space: normal !important;
+    overflow-wrap: normal !important;
+    word-break: normal !important;
+  }
+
+  /* Keep all four number labels visually identical. */
+  .finatialLiteracy .frameParent5 .b,
+  .finatialLiteracy .frameParent5 .b4 {
+    top: 50% !important;
+    left: 14px !important;
+    transform: translateY(-50%) !important;
+    font-size: 42px !important;
+    line-height: 1 !important;
+    letter-spacing: 0 !important;
+  }
+}
+
+/* ========================================================================== 
+   FINAL MOBILE — FOUNDATION CARDS: TWO-LINE TITLE + TWO-LINE SUBTITLE
+   Fixes text overlap only. Desktop/tablet, colours, shapes and shadows unchanged.
+   ========================================================================== */
+@media screen and (max-width: 767.98px) {
+  /* Keep enough vertical room for 2 title lines + 2 subtitle lines. */
+  .finatialLiteracy .frameParent5 .frameParent9,
+  .finatialLiteracy .frameParent5 .wrapper,
+  .finatialLiteracy .frameParent5 .container,
+  .finatialLiteracy .frameParent5 .frame,
+  .finatialLiteracy .frameParent5 .wrapper2 {
+    height: 164px !important;
+    min-height: 164px !important;
+  }
+
+  /* All four cards use these existing text containers. */
+  .finatialLiteracy .frameParent5 .smartBudgetingParent,
+  .finatialLiteracy .frameParent5 .creditManagementParent,
+  .finatialLiteracy .frameParent5 .savingEssentialsParent {
+    top: 50% !important;
+    left: 34% !important;
+    width: 62% !important;
+    height: 108px !important;
+    min-height: 108px !important;
+    transform: translateY(-50%) !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    justify-content: flex-start !important;
+    gap: 8px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow: visible !important;
+    box-sizing: border-box !important;
+    text-align: left !important;
+  }
+
+  /* All card headings: exactly the same 2-line space. */
+  .finatialLiteracy .frameParent5 .smartBudgeting,
+  .finatialLiteracy .frameParent5 .creditManagementParent .smartBudgeting,
+  .finatialLiteracy .frameParent5 .savingEssentialsParent .smartBudgeting {
+    display: block !important;
+    width: 160px !important;
+    max-width: 160px !important;
+    min-height: 56px !important;
+    max-height: 56px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    font-size: 24px !important;
+    line-height: 28px !important;
+    font-weight: 700 !important;
+    letter-spacing: 0 !important;
+    text-align: left !important;
+    white-space: normal !important;
+    overflow: hidden !important;
+    overflow-wrap: normal !important;
+    word-break: normal !important;
+  }
+
+  /* All card subheadings: same 2-line space and no collision with title. */
+  .finatialLiteracy .frameParent5 .planIncomeAnd,
+  .finatialLiteracy .frameParent5 .growSavingsAnd,
+  .finatialLiteracy .frameParent5 .borrowResponsibly,
+  .finatialLiteracy .frameParent5 .achieveFinancialGoals {
+    display: block !important;
+    width: 132px !important;
+    max-width: 132px !important;
+    min-height: 42px !important;
+    max-height: 42px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    font-size: 16px !important;
+    line-height: 21px !important;
+    font-weight: 400 !important;
+    letter-spacing: 0 !important;
+    text-align: left !important;
+    white-space: normal !important;
+    overflow: hidden !important;
+    overflow-wrap: normal !important;
+    word-break: normal !important;
+  }
+}

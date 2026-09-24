@@ -3615,19 +3615,54 @@ a:focus-visible {
 
 /* Pointer behaviour is independent of viewport size. */
 @media (hover: hover) and (pointer: fine) {
-  .odyssey-card:hover { transform: translateY(-8px); }
+  /* Keep the normal lift hover, but prevent bottom-edge hover flicker/jumping.
+     The transparent guard fills the exact gap created by translateY(). */
+  .odyssey-card,
+  .purpose-pill {
+    position: relative;
+  }
+
+  .odyssey-card:hover {
+    transform: translateY(-8px);
+  }
+
+  .odyssey-card:hover::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -8px;
+    height: 8px;
+    background: transparent;
+    pointer-events: auto;
+  }
+
   .odyssey-card:hover .odyssey-card-inner {
     box-shadow: 4px 4px 4px #c4c4c4, -4px -4px 4px #ffffff;
   }
+
   .odyssey-card:hover .odyssey-card-icon-circle {
     transform: scale(1.08);
     box-shadow: 4px 4px 4px #c6c6c9, -4px -4px 4px #ffffff;
   }
+
   .purpose-pill:hover {
     transform: translateY(-6px);
     border-width: 0 10px;
     box-shadow: inset -4px -4px 4px #ffffff, inset 4px 4px 4px rgba(196, 196, 196, 0.8);
   }
+
+  .purpose-pill:hover::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -6px;
+    height: 6px;
+    background: transparent;
+    pointer-events: auto;
+  }
+
   /* Why Choose cards keep the same position and icon size when hovered. */
   .get-in-touch-button:hover {
     box-shadow: inset -4px -4px 4px #ffffff, inset 4px 4px 4px #c6c6c9;

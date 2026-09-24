@@ -156,7 +156,7 @@
   font-size: 24px;
   letter-spacing: 0.03em;
   line-height: 1.24;
-  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+  text-shadow: none;
 }
 
 .buildResearchSkills {
@@ -610,7 +610,7 @@
   font-size: 24px;
   letter-spacing: 0.02em;
   line-height: 1.25;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  text-shadow: none;
 }
 
 .neurolxpEquipsLearners {
@@ -708,7 +708,7 @@
     max-width: 1280px;
     font-size: clamp(32px, 3.056vw, 44px);
     line-height: 1.25;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    text-shadow: none;
   }
 
   .neurolxpEquipsLearners {
@@ -793,7 +793,7 @@
   font-size: clamp(15px, 4.2vw, 20px);
   line-height: 1.1;
   letter-spacing: 0.02em;
-  text-shadow: 0 3px 4px rgba(0, 0, 0, 0.22);
+  text-shadow: none;
   white-space: nowrap;
 }
 
@@ -865,12 +865,12 @@
 
   .crore {
     font-size: clamp(34px, 3.195vw, 46px);
-    /* text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
+    /* text-shadow: none; */
   }
 
   .skillDomains {
     font-size: clamp(22px, 2.223vw, 32px);
-    /* text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
+    /* text-shadow: none; */
   }
 
   .statsDivider {
@@ -2907,3 +2907,256 @@
   color: #2d4cc8;
 }
 
+
+
+/* Requested updates only: colours, section spacing, heading sizes, text shadows. */
+.informationLiteracy {
+  --il-heading-size: 36px;
+  --il-heading-line: 44px;
+  gap: 0 !important;
+}
+
+/* Replace accumulated outer margins with one 48px gap after each section. */
+.informationLiteracy > :is(
+  .frameParent9,
+  .frameParent13,
+  .frameParent19,
+  .image20Parent,
+  .frameParent22,
+  .frameParent34,
+  .frameParent40,
+  .frameParent41
+) {
+  margin-top: 0 !important;
+  margin-bottom: 48px !important;
+}
+
+/* Preserve the existing 20px mobile/tablet breadcrumb-to-hero spacing. */
+@media (max-width: 1024px) {
+  .informationLiteracy > .frameParent8 {
+    margin-bottom: 20px !important;
+  }
+}
+
+/* Match the previous page's badge/button palette without changing their sizes. */
+.informationLiteracy :is(
+  .informationLiteracyBadge,
+  .researchDiscoveryBadge,
+  .trackOutcomesBadge,
+  .ethicsIntegrityBadge,
+  .frameChild21,
+  .learnersThinkBadge,
+  .requestDemoWrapper,
+  .frameWrapper5
+) {
+  background: #dfe6e9 !important;
+  color: #2d4cc8 !important;
+}
+
+.informationLiteracy :is(
+  .informationLiteracyBadge,
+  .researchDiscoveryBadge,
+  .trackOutcomesBadge,
+  .ethicsIntegrityBadge,
+  .frameChild21,
+  .learnersThinkBadge,
+  .requestDemoWrapper,
+  .frameWrapper5
+) * {
+  color: inherit !important;
+}
+
+/* Main page/section headings only; retain existing card-title typography. */
+.informationLiteracy :is(
+  .findEvaluate,
+  .researchSmarterLearn,
+  .buildConfidenceThroughContainer,
+  .integrityTitle,
+  .masterInformationUnlockContainer,
+  .builtForTheContainer
+) {
+  font-size: var(--il-heading-size) !important;
+  line-height: var(--il-heading-line) !important;
+}
+
+.informationLiteracy,
+.informationLiteracy *,
+.informationLiteracy *::before,
+.informationLiteracy *::after {
+  text-shadow: none !important;
+}
+
+@media (max-width: 767px) {
+  .informationLiteracy {
+    --il-heading-size: 24px;
+    --il-heading-line: 32px;
+  }
+}
+
+
+/* Enable selection throughout this page, including its shared header/footer. */
+.informationLiteracy,
+.informationLiteracy *,
+html:has(.informationLiteracy),
+body:has(.informationLiteracy),
+body:has(.informationLiteracy) * {
+  -webkit-user-select: text !important;
+  -moz-user-select: text !important;
+  user-select: text !important;
+  -webkit-touch-callout: default !important;
+}
+
+.informationLiteracy :is(svg text, svg tspan) {
+  pointer-events: auto !important;
+}
+
+/* Mobile: remove only the Ethics & Integrity polygon and align its content. */
+@media (max-width: 767px) {
+  .informationLiteracy .vectorParent .integrityHexagonSvg {
+    display: none !important;
+  }
+
+  .informationLiteracy .vectorParent {
+    position: relative;
+    width: 100%;
+    max-width: 460px;
+    min-width: 0;
+    height: auto !important;
+    min-height: 0;
+    aspect-ratio: auto !important;
+    margin-inline: auto;
+    padding: 0 16px;
+    box-sizing: border-box;
+    container-type: normal;
+    text-align: center;
+  }
+
+  .informationLiteracy .vectorParent .integrityContent {
+    position: static !important;
+    inset: auto !important;
+    transform: none !important;
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 16px;
+  }
+
+  .informationLiteracy .vectorParent .ethicsIntegrityBadge {
+    width: fit-content;
+    max-width: 100%;
+    margin: 0;
+  }
+
+  .informationLiteracy .vectorParent .integrityTitle {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    font-size: 24px !important;
+    line-height: 32px !important;
+    overflow-wrap: normal;
+    word-break: normal;
+    text-align: center;
+  }
+
+  .informationLiteracy .vectorParent .integrityDescription {
+    width: 100%;
+    max-width: 36ch;
+    margin: 0;
+    font-size: 16px;
+    line-height: 24px;
+    white-space: normal;
+    overflow-wrap: normal;
+    word-break: normal;
+    text-align: center;
+  }
+}
+
+/* Desktop: a larger, uncropped portrait aligned directly with the footer. */
+@media (min-width: 1025px) {
+  .informationLiteracy > .frameParent41 {
+    grid-template-columns: minmax(0, 0.7fr) minmax(0, 1.3fr);
+    align-items: end;
+    margin-bottom: 0 !important;
+    padding-bottom: 0;
+  }
+
+  .informationLiteracy .frameParent41 .frameParent47 {
+    width: 100%;
+    max-width: none;
+    min-width: 0;
+    height: auto !important;
+    min-height: 0;
+    max-height: none;
+    aspect-ratio: auto !important;
+    align-self: end;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    overflow: visible !important;
+  }
+
+  .informationLiteracy .frameParent41 .frameChild35 {
+    position: relative;
+    inset: auto;
+    width: 100%;
+    height: auto;
+    max-height: none;
+    border-radius: 0;
+    overflow: visible !important;
+  }
+
+  .informationLiteracy .frameParent41 .creativeExcitedBrunetteBusiIcon {
+    position: relative !important;
+    inset: auto !important;
+    display: block;
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    max-height: none !important;
+    margin: 0;
+    padding: 0;
+    object-fit: contain !important;
+    object-position: center bottom !important;
+    transform: none !important;
+    clip-path: none;
+  }
+}
+
+
+/* Matching text sizes for both buttons; existing shared dimensions retained. */
+.informationLiteracy .requestDemoWrapper,
+.informationLiteracy .requestDemoWrapper *,
+.informationLiteracy .frameWrapper5,
+.informationLiteracy .frameWrapper5 *,
+.informationLiteracy .startLearning,
+.informationLiteracy .requestDemo {
+  font-family: "Segoe UI", "Inter";
+  font-size: 24px !important;
+  font-weight: 600 !important;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .informationLiteracy .requestDemoWrapper,
+  .informationLiteracy .requestDemoWrapper *,
+  .informationLiteracy .frameWrapper5,
+.informationLiteracy .frameWrapper5 *,
+.informationLiteracy .startLearning,
+.informationLiteracy .requestDemo {
+    font-size: 20px !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .informationLiteracy .requestDemoWrapper,
+  .informationLiteracy .requestDemoWrapper *,
+  .informationLiteracy .frameWrapper5,
+.informationLiteracy .frameWrapper5 *,
+.informationLiteracy .startLearning,
+.informationLiteracy .requestDemo {
+    font-size: 18px !important;
+  }
+}

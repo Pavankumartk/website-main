@@ -271,7 +271,7 @@ export default function FinancialLiteracyPage() {
             <HabitCard label="Borrow Wisely" />
           </div>
           <div className={styles.frameParent27}>
-            <HabitCard label="Smart Financial Plan" wide />
+            <HabitCard label="Smart Financial Plan" />
             <HabitCard label="Spend Wisely" />
           </div>
         </div>

@@ -2922,4 +2922,260 @@
     height: 2398.21px !important;
   }
 }
+/* ==========================================================================
+   FINAL STANDARDIZATION — MATCH PREVIOUS PAGE
+   - Same badge sizing
+   - Same main heading / subheading sizing
+   - No text/word shadows
+   - Remove unnecessary vertical whitespace
+   - 48px between major sections
+   ========================================================================== */
 
+/* Flat text only — keep card/container shadows unchanged. */
+.neurolxp2103rs8cs3msLite,
+.neurolxp2103rs8cs3msLite *,
+.neurolxp2103rs8cs3msLite *::before,
+.neurolxp2103rs8cs3msLite *::after {
+  font-family: "Segoe UI", "Inter", sans-serif !important;
+  text-shadow: none !important;
+}
+
+/* Main page headings — same as previous page. */
+.neurolxp2103rs8cs3msLite :is(
+  .skillsThatMatter,
+  .poweredByTheContainer,
+  .whyItMatters,
+  .neurolxp
+) {
+  height: auto !important;
+  min-height: 0 !important;
+  margin: 0 !important;
+  font-size: 36px !important;
+  line-height: 44px !important;
+  font-weight: 700 !important;
+}
+
+/* Main supporting copy — same as previous page. */
+.neurolxp2103rs8cs3msLite :is(
+  .poweredByThe,
+  .buildingStrongFoundations,
+  .transformingLearningInto,
+  .bringingThe3rs8cs3msContainer
+) {
+  height: auto !important;
+  min-height: 0 !important;
+  margin: 0 !important;
+  font-size: 24px !important;
+  line-height: 36px !important;
+  font-weight: 400 !important;
+}
+
+/* Keep nested coloured text on the same line-height as its parent. */
+.neurolxp2103rs8cs3msLite :is(
+  .poweredByThe2,
+  .rs,
+  .cs,
+  .ms
+) {
+  line-height: 44px !important;
+}
+
+.neurolxp2103rs8cs3msLite :is(
+  .bringingThe,
+  .rs8cs3m,
+  .cs3,
+  .m
+) {
+  line-height: 36px !important;
+}
+
+/* Remove the old blur effect behind final-section wording. */
+.neurolxp2103rs8cs3msLite .bringingThe3rs8cs3msContainer {
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+}
+
+/* Badges — same size, typography and inset treatment as the previous page. */
+.neurolxp2103rs8cs3msLite :is(.frameItem, .frameInner) {
+  box-sizing: border-box !important;
+  width: fit-content !important;
+  min-width: 0 !important;
+  max-width: 100% !important;
+  height: auto !important;
+  min-height: 50px !important;
+  padding: 10px 24px !important;
+  border-radius: 28px !important;
+  background: #dfe6e9 !important;
+  color: #2d4cc8 !important;
+  font-size: 24px !important;
+  font-weight: 600 !important;
+  line-height: 1.3 !important;
+  letter-spacing: 0.02em !important;
+  text-align: center !important;
+  white-space: normal !important;
+  overflow: visible !important;
+  object-fit: initial !important;
+  box-shadow:
+    inset -4px -4px 4px #ffffff,
+    inset 4px 4px 4px rgba(196, 196, 196, 0.8) !important;
+}
+
+/* Remove hidden/fixed text space and keep the text blocks compact. */
+.neurolxp2103rs8cs3msLite .frameParent4,
+.neurolxp2103rs8cs3msLite .frameParent5,
+.neurolxp2103rs8cs3msLite .frameParent7,
+.neurolxp2103rs8cs3msLite .poweredByThe3rs8cs3msParent,
+.neurolxp2103rs8cs3msLite .whyItMattersParent,
+.neurolxp2103rs8cs3msLite .frameParent22 {
+  min-height: 0 !important;
+}
+
+.neurolxp2103rs8cs3msLite .frameParent4,
+.neurolxp2103rs8cs3msLite .frameParent5,
+.neurolxp2103rs8cs3msLite .frameParent7,
+.neurolxp2103rs8cs3msLite .poweredByThe3rs8cs3msParent,
+.neurolxp2103rs8cs3msLite .whyItMattersParent,
+.neurolxp2103rs8cs3msLite .frameParent22 {
+  gap: 16px !important;
+}
+
+/* ==========================================================================
+   DESKTOP — normal-flow major sections with one exact 48px gap.
+   This removes the old absolute-position blank areas while keeping the
+   original card/image geometry.
+   ========================================================================== */
+@media screen and (min-width: 1280px) {
+  .neurolxp2103rs8cs3msLite {
+    height: auto !important;
+    min-height: 0 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 48px !important;
+    padding: 32px 0 48px !important;
+    box-sizing: border-box !important;
+  }
+
+  .neurolxp2103rs8cs3msLite > .frameDiv,
+  .neurolxp2103rs8cs3msLite > .frameParent6,
+  .neurolxp2103rs8cs3msLite > .whyItMattersParent,
+  .neurolxp2103rs8cs3msLite > .rectangleParent {
+    position: relative !important;
+    top: auto !important;
+    left: auto !important;
+    right: auto !important;
+    bottom: auto !important;
+    margin: 0 !important;
+  }
+
+  .neurolxp2103rs8cs3msLite > .frameDiv,
+  .neurolxp2103rs8cs3msLite > .frameParent6,
+  .neurolxp2103rs8cs3msLite > .rectangleParent {
+    width: min(1280px, 100%) !important;
+  }
+
+  .neurolxp2103rs8cs3msLite > .whyItMattersParent {
+    width: min(900px, calc(100% - 48px)) !important;
+    padding: 0 !important;
+  }
+
+  .neurolxp2103rs8cs3msLite > .frameParent6 {
+    padding: 0 !important;
+  }
+
+  /* Keep the woman aligned to the bottom of the final panel after flow cleanup. */
+  .neurolxp2103rs8cs3msLite > .smilingWomanWithBooksMortaIcon {
+    position: absolute !important;
+    top: auto !important;
+    bottom: 48px !important;
+    left: calc(50% - 166px) !important;
+    right: auto !important;
+    width: 766px !important;
+    height: 571px !important;
+    margin: 0 !important;
+    object-fit: contain !important;
+    object-position: center bottom !important;
+  }
+}
+
+/* ==========================================================================
+   TABLET + PHONE — remove stacked padding/margins.
+   One 48px major-section gap, no extra hidden whitespace.
+   ========================================================================== */
+@media screen and (max-width: 1279.98px) {
+  .neurolxp2103rs8cs3msLite .frameParent6 {
+    padding-top: 48px !important;
+  }
+
+  .neurolxp2103rs8cs3msLite .whyItMattersParent {
+    padding-top: 48px !important;
+    padding-bottom: 0 !important;
+  }
+
+  .neurolxp2103rs8cs3msLite .rectangleParent {
+    margin-top: 48px !important;
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 1279.98px) {
+  .neurolxp2103rs8cs3msLite .rectangleParent {
+    margin-bottom: 48px !important;
+  }
+}
+
+/* Previous-page mobile typography. */
+@media screen and (max-width: 767.98px) {
+  .neurolxp2103rs8cs3msLite :is(
+    .skillsThatMatter,
+    .poweredByTheContainer,
+    .whyItMatters,
+    .neurolxp
+  ) {
+    font-size: 24px !important;
+    line-height: 32px !important;
+  }
+
+  .neurolxp2103rs8cs3msLite :is(
+    .poweredByThe,
+    .buildingStrongFoundations,
+    .transformingLearningInto,
+    .bringingThe3rs8cs3msContainer
+  ) {
+    font-size: 16px !important;
+    line-height: 24px !important;
+  }
+
+  .neurolxp2103rs8cs3msLite :is(.frameItem, .frameInner) {
+    min-height: 50px !important;
+    font-size: 20px !important;
+    line-height: 1.3 !important;
+  }
+
+  .neurolxp2103rs8cs3msLite :is(
+    .poweredByThe2,
+    .rs,
+    .cs,
+    .ms
+  ) {
+    line-height: 32px !important;
+  }
+
+  .neurolxp2103rs8cs3msLite :is(
+    .bringingThe,
+    .rs8cs3m,
+    .cs3,
+    .m
+  ) {
+    line-height: 24px !important;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .neurolxp2103rs8cs3msLite .rectangleParent {
+    margin-bottom: 0 !important;
+  }
+
+  .neurolxp2103rs8cs3msLite .smilingWomanWithBooksMortaIcon {
+    margin-bottom: 48px !important;
+  }
+}

@@ -4173,7 +4173,7 @@ body {
 .assessments > .frameParent45,
 .assessments > .frameParent49 {
   width: min(1280px, calc(100% - 160px));
-  margin: 96px auto 0 !important;
+  margin: 48px auto 0 !important;
   align-self: center;
 }
 
@@ -4185,7 +4185,7 @@ body {
   width: 100%;
   max-width: 1440px;
   height: 5px;
-  margin: 96px auto 0;
+  margin: 48px auto 0;
   align-self: center;
 }
 
@@ -4292,7 +4292,7 @@ body {
   .assessments > .frameParent45,
   .assessments > .frameParent49,
   .assessments > .assessmentsChild {
-    margin-top: 72px !important;
+    margin-top: 48px !important;
   }
 
   
@@ -4322,7 +4322,7 @@ body {
   .assessments > .frameParent49,
   .assessments > .assessmentsChild {
     width: 100%;
-    margin-top: 56px !important;
+    margin-top: 48px !important;
   }
 }
 
@@ -4416,7 +4416,7 @@ body {
   }
 
   .assessments > .frameParent49 {
-    margin-top: 72px !important;
+    margin-top: 48px !important;
   }
 }
 
@@ -4431,7 +4431,7 @@ body {
   }
 
   .assessments > .frameParent49 {
-    margin-top: 56px !important;
+    margin-top: 48px !important;
   }
 }
 
@@ -7978,5 +7978,273 @@ button.requestADemoWrapper::-moz-focus-inner {
   .assessments.assessments.assessments .audienceImageWrap,
   .assessments.assessments.assessments .audienceCardTitle {
     transition: none !important;
+  }
+}
+
+/* ======================================================================
+   FINAL HERO CENTERING FIX
+   Keep the existing hero artwork/design, but lock every hero layer to the
+   horizontal centre so later responsive overrides cannot push it right.
+   ====================================================================== */
+.assessments.assessments.assessments > .frameParent2 {
+  position: relative !important;
+  left: auto !important;
+  right: auto !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  align-self: center !important;
+  transform-origin: top center !important;
+}
+
+.assessments.assessments.assessments > .frameParent2 > .ellipseParent {
+  position: relative !important;
+  left: auto !important;
+  right: auto !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  align-self: center !important;
+  transform: none !important;
+  transform-origin: top center !important;
+}
+
+.assessments.assessments.assessments > .frameParent2 .frameInner {
+  left: 50% !important;
+  right: auto !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  transform: translateX(-50%) !important;
+  transform-origin: center center !important;
+}
+
+.assessments.assessments.assessments > .frameParent2 .ellipseGroup {
+  left: 50% !important;
+  right: auto !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  transform: translateX(-50%) !important;
+  transform-origin: center center !important;
+}
+
+.assessments.assessments.assessments > .frameParent2 .frameParent6 {
+  margin-left: auto !important;
+  margin-right: auto !important;
+  justify-content: center !important;
+  align-self: center !important;
+}
+
+/* Desktop: keep the original 1280px hero design centered. */
+@media (min-width: 1200px) {
+  .assessments.assessments.assessments > .frameParent2 {
+    width: min(1280px, calc(100% - 160px)) !important;
+    max-width: 1280px !important;
+    zoom: 1 !important;
+    transform: none !important;
+  }
+
+  .assessments.assessments.assessments > .frameParent2 > .ellipseParent {
+    width: 100% !important;
+    max-width: 1280px !important;
+  }
+}
+
+/* Tablet: retain the existing scaled design, but centre the scaled block. */
+@media (min-width: 768px) and (max-width: 1199px) {
+  .assessments.assessments.assessments > .frameParent2 {
+    width: 1280px !important;
+    max-width: none !important;
+    left: auto !important;
+    right: auto !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    align-self: center !important;
+    transform: none !important;
+    transform-origin: top center !important;
+  }
+
+  .assessments.assessments.assessments > .frameParent2 > .ellipseParent {
+    width: 1280px !important;
+    max-width: none !important;
+    margin-inline: auto !important;
+  }
+}
+
+/* Mobile: use the available width and centre every hero content layer. */
+@media (max-width: 767px) {
+  .assessments.assessments.assessments > .frameParent2 {
+    width: 100% !important;
+    max-width: 100% !important;
+    left: auto !important;
+    right: auto !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    align-self: center !important;
+    transform: none !important;
+    zoom: 1 !important;
+  }
+
+  .assessments.assessments.assessments > .frameParent2 > .ellipseParent,
+  .assessments.assessments.assessments > .frameParent2 .ellipseGroup,
+  .assessments.assessments.assessments > .frameParent2 .frameParent3,
+  .assessments.assessments.assessments > .frameParent2 .frameWrapper,
+  .assessments.assessments.assessments > .frameParent2 .frameParent4,
+  .assessments.assessments.assessments > .frameParent2 .frameParent5 {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    text-align: center !important;
+    align-items: center !important;
+  }
+
+  .assessments.assessments.assessments > .frameParent2 .ellipseGroup,
+  .assessments.assessments.assessments > .frameParent2 .frameParent3 {
+    left: auto !important;
+    right: auto !important;
+    transform: none !important;
+  }
+}
+
+/* =========================================================
+   FINAL — KEEP HOVER, REMOVE ONLY CARD JUMPING
+   Hover visuals remain. Only vertical card movement is disabled so the
+   pointer cannot repeatedly leave/re-enter at the bottom edge.
+   ========================================================= */
+@media (hover: hover) and (pointer: fine) {
+  /* Audience cards: keep hover shadow, remove only upward movement. */
+  .audienceCard:hover,
+  .audienceCard:focus-visible {
+    transform: translateY(0) scale(1) !important;
+    box-shadow: -4px -4px 4px #ffffff, 4px 4px 4px #b9b9b9 !important;
+  }
+
+  /* Assessment benefit cards: keep hover shadow + colour reveal,
+     but do not physically move the card. */
+  .frameParent14:hover .image20Parent,
+  .frameParent14:hover .image20Group,
+  .frameParent14:focus-within .image20Parent,
+  .frameParent14:focus-within .image20Group {
+    transform: translateY(0) !important;
+    box-shadow: -4px -4px 4px rgba(255, 255, 255, 0.95),
+      4px 4px 4px rgba(196, 196, 196, 0.9) !important;
+  }
+
+  .frameParent14:hover .image20Parent::after,
+  .frameParent14:hover .image20Group::after,
+  .frameParent14:focus-within .image20Parent::after,
+  .frameParent14:focus-within .image20Group::after {
+    transform: translateY(0) !important;
+    opacity: 1 !important;
+  }
+
+  /* AI cards: keep hover shadow + top colour strip,
+     remove only the translateY lift. */
+  .aiHoverCard:hover,
+  .aiHoverCard:focus-within {
+    transform: translateY(0) !important;
+    box-shadow: -4px -4px 4px rgba(255, 255, 255, 0.95),
+      4px 4px 4px rgba(196, 196, 196, 0.9) !important;
+  }
+
+  .aiHoverCard:hover::before,
+  .aiHoverCard:focus-within::before {
+    transform: translateY(0) !important;
+    opacity: 1 !important;
+  }
+}
+
+/* =========================================================
+   MAIN SECTION SPACING — 48 CSS PIXELS ON EVERY SCREEN
+   Tablet sections use zoom. Compensate their outer margins so
+   the rendered gap stays 48px instead of shrinking with them.
+   ========================================================= */
+.assessments.assessments.assessments {
+  --assessment-section-gap: 48px;
+  --assessment-section-zoom: 1;
+  height: auto !important;
+  row-gap: 0 !important;
+  justify-content: flex-start !important;
+  padding-bottom: var(--assessment-section-gap) !important;
+}
+
+.assessments.assessments.assessments > :is(
+  .frameParent2,
+  .frameParent10,
+  .frameParent20,
+  .assessmentsInner,
+  .frameParent45,
+  .audienceSection,
+  .frameParent49
+) {
+  position: relative !important;
+  inset: auto !important;
+  height: auto !important;
+  min-height: 0 !important;
+  max-height: none !important;
+  margin-block: 0 !important;
+  margin-inline: auto !important;
+  transform: none !important;
+  flex: 0 0 auto !important;
+}
+
+.assessments.assessments.assessments > :is(
+  .frameParent10,
+  .frameParent20,
+  .assessmentsInner,
+  .frameParent45,
+  .audienceSection,
+  .frameParent49
+) {
+  margin-top: calc(var(--assessment-section-gap) / var(--assessment-section-zoom)) !important;
+}
+
+/* These wrappers have no painted panel: trailing padding would
+   add empty space to the 48px margin of the following section. */
+.assessments.assessments.assessments > :is(
+  .frameParent2,
+  .frameParent10,
+  .frameParent20,
+  .frameParent45,
+  .audienceSection,
+  .frameParent49
+) {
+  padding-block: 0 !important;
+}
+
+/* The empty exported spacer is not a section or a visible divider. */
+.assessments.assessments.assessments > .assessmentsChild {
+  display: none !important;
+}
+
+/* Keep the carousel's header and viewport in normal document flow so
+   the section height includes its content instead of blank space. */
+.assessments.assessments.assessments > :is(.frameParent45, .audienceSection) > :is(
+  .audienceHeader,
+  .audienceCarouselViewport
+) {
+  position: relative !important;
+  inset: auto !important;
+  margin-block: 0 !important;
+}
+
+.assessments.assessments.assessments > :is(.frameParent45, .audienceSection) > .audienceControls {
+  margin-block: 0 !important;
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .assessments.assessments.assessments {
+    --assessment-section-zoom: var(--assessment-tablet-scale);
+  }
+
+  /* Keep the inset panel's existing inner breathing room while letting
+     the content establish its height instead of absolute coordinates. */
+  .assessments.assessments.assessments > .assessmentsInner {
+    padding-block: 50px !important;
+  }
+
+  .assessments.assessments.assessments > .assessmentsInner > .frameParent35 {
+    position: relative !important;
+    inset: auto !important;
+    margin-block: 0 !important;
+    transform: none !important;
   }
 }
