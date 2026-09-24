@@ -1568,4 +1568,165 @@ a {
     touch-action: pan-y !important;
   }
 }
+/* ==========================================================================
+   FINAL CONSISTENCY FIX — BADGES + TEXT BUTTONS + 48PX SECTION GAP ONLY
+   Matches the previous page styling.
+   No other layout, typography, cards, videos, colours or effects are changed.
+   ========================================================================== */
 
+/* ---------- BADGES: same as previous pages ---------- */
+.coding-page .coding-pill,
+.coding-page .coding-pill--wide {
+  box-sizing: border-box !important;
+  width: fit-content !important;
+  min-width: 0 !important;
+  max-width: 100% !important;
+  height: auto !important;
+  min-height: 50px !important;
+
+  padding: 10px 24px !important;
+
+  border-radius: 28px !important;
+  background: var(--coding-bg) !important;
+  color: var(--coding-blue) !important;
+
+  font-size: 24px !important;
+  font-weight: 600 !important;
+  line-height: 1.3 !important;
+  letter-spacing: 0.02em !important;
+
+  text-align: center !important;
+  white-space: normal !important;
+
+  box-shadow:
+    inset -4px -4px 4px #ffffff,
+    inset 4px 4px 4px rgba(196, 196, 196, 0.8) !important;
+}
+
+/* ---------- TEXT BUTTONS: same as previous pages ----------
+   Only CTA text buttons are standardized.
+   Video navigation/icon buttons are intentionally untouched.
+   --------------------------------------------------------- */
+.coding-page .coding-cta__actions button {
+  box-sizing: border-box !important;
+
+  width: 210px !important;
+  max-width: 100% !important;
+  min-width: 0 !important;
+
+  height: auto !important;
+  min-height: 60px !important;
+
+  padding: 12px 20px !important;
+
+  border: 0 !important;
+  border-radius: 8px !important;
+
+  background: var(--coding-bg) !important;
+  color: var(--coding-blue) !important;
+
+  font-size: 24px !important;
+  font-weight: 600 !important;
+  line-height: 1.35 !important;
+
+  box-shadow:
+    -4px -4px 4px #ffffff,
+    4px 4px 4px #c6c6c9 !important;
+
+  transform: none !important;
+}
+
+.coding-page .coding-cta__actions button:hover,
+.coding-page .coding-cta__actions button:active,
+.coding-page .coding-cta__actions button.is-selected,
+.coding-page .coding-cta__actions button.is-selected:hover,
+.coding-page .coding-cta__actions button.is-selected:active {
+  background: var(--coding-bg) !important;
+  color: var(--coding-blue) !important;
+
+  box-shadow:
+    inset -4px -4px 4px #ffffff,
+    inset 4px 4px 4px rgba(196, 196, 196, 0.8) !important;
+}
+
+/* ---------- EXACT 48PX BETWEEN MAJOR SECTIONS ---------- */
+.coding-page .coding-section,
+.coding-page .coding-challenges,
+.coding-page .coding-cta {
+  margin-top: 48px !important;
+}
+
+/* Remove the older negative spacing adjustment below the video section. */
+.coding-page .coding-learning {
+  margin-bottom: 0 !important;
+}
+
+/* ---------- MOBILE: same previous-page badge/button sizing ---------- */
+@media (max-width: 767.98px) {
+  .coding-page .coding-pill,
+  .coding-page .coding-pill--wide {
+    min-height: 50px !important;
+    padding: 10px 24px !important;
+    font-size: 20px !important;
+    line-height: 1.3 !important;
+  }
+
+  .coding-page .coding-cta__actions button {
+    width: 210px !important;
+    max-width: 100% !important;
+    min-height: 52px !important;
+    padding: 10px 18px !important;
+    font-size: 18px !important;
+    line-height: 1.35 !important;
+  }
+}
+/* ==========================================================================
+   FINAL ARROW BUTTON FIX ONLY
+   1) Center Previous/Next controls under the FIRST video card.
+   2) Keep the existing gap between the two arrow buttons.
+   3) Reduce only the arrow-button shadows to 4px values.
+   ========================================================================== */
+
+/* Desktop: first video card is 501px wide, so center the control group
+   inside that same 501px width. Keep the existing 30px button gap. */
+@media (min-width: 901px) {
+  .coding-page .coding-video-controls {
+    width: 501px !important;
+    max-width: 501px !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    justify-content: center !important;
+    gap: 30px !important;
+    transform: translateY(-32px) !important;
+  }
+}
+
+/* Arrow button shadows only — 4 / 4 / 4 and -4 / -4 / 4. */
+.coding-page .coding-video-controls button {
+  box-shadow:
+    inset 4px 4px 4px #c4c4c4,
+    inset -4px -4px 4px #ffffff !important;
+}
+
+.coding-page .coding-video-controls button::before {
+  box-shadow:
+    -4px -4px 4px #ffffff,
+    4px 4px 4px #c6c6c9 !important;
+}
+
+.coding-page .coding-video-controls button:active::before {
+  box-shadow:
+    inset -4px -4px 4px #ffffff,
+    inset 4px 4px 4px #c4c4c4 !important;
+}
+/* ==========================================================================
+   FINAL ARROW POSITION FIX ONLY
+   Move the arrow controls down so they sit below the first video frame
+   without overlapping it. Horizontal centering and button gap stay the same.
+   ========================================================================== */
+@media (min-width: 901px) {
+  .coding-page .coding-video-controls {
+    margin-top: 18px !important;
+    transform: none !important;
+  }
+}

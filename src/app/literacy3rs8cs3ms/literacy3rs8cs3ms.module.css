@@ -3179,3 +3179,38 @@
     margin-bottom: 48px !important;
   }
 }
+/* ==========================================================================
+   FINAL DESKTOP HERO CLEANUP ONLY
+   - Reduce hero height
+   - Move the student image slightly upward
+   - Vertically center the left hero copy
+   - No changes to typography, badges, colours, shadows, or other sections
+   ========================================================================== */
+@media screen and (min-width: 1280px) {
+  .neurolxp2103rs8cs3msLite .image20Parent {
+    height: 530px !important;
+    min-height: 530px !important;
+  }
+
+  .neurolxp2103rs8cs3msLite .image21Wrapper {
+    top: 24px !important;
+    height: 482px !important;
+  }
+
+  /* Use the reduced hero height to center both columns cleanly. */
+  .neurolxp2103rs8cs3msLite .frameParent3 {
+    top: 0 !important;
+    height: 530px !important;
+    align-items: center !important;
+  }
+
+  /* Right gradient/image panel follows the shorter hero. */
+  .neurolxp2103rs8cs3msLite .smilingStudentsWithBackpackWrapper {
+    height: 482px !important;
+  }
+
+  /* Lift only the students image slightly inside its existing panel. */
+  .neurolxp2103rs8cs3msLite .smilingStudentsWithBackpackIcon {
+    bottom: 14px !important;
+  }
+}

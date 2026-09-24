@@ -6779,3 +6779,720 @@
   white-space: nowrap !important;
   display: inline-block !important;
 }
+/* ==========================================================================
+   FINAL REQUESTED CONSISTENCY FIX ONLY
+   1) Badges match previous pages
+   2) Book A Demo button matches previous pages
+   3) Main headings = 36px desktop / 24px mobile
+   4) Major section-to-section gap = 48px
+   No card design, images, colours, accordion logic, or other typography changed.
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   BADGES — SAME AS PREVIOUS PAGES
+   -------------------------------------------------------------------------- */
+.bootcamp .frameItem,
+.bootcamp .frameIcon {
+  box-sizing: border-box !important;
+  width: fit-content !important;
+  min-width: 0 !important;
+  max-width: 100% !important;
+  height: auto !important;
+  min-height: 50px !important;
+  padding: 10px 24px !important;
+
+  border-radius: 28px !important;
+  background: #dfe6e9 !important;
+  color: #2d4cc8 !important;
+
+  font-family: "Segoe UI", "Inter", sans-serif !important;
+  font-size: 24px !important;
+  font-weight: 600 !important;
+  line-height: 1.3 !important;
+  letter-spacing: 0.02em !important;
+
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  text-align: center !important;
+  white-space: normal !important;
+
+  box-shadow:
+    inset -4px -4px 4px #ffffff,
+    inset 4px 4px 4px rgba(196, 196, 196, 0.8) !important;
+}
+
+/* --------------------------------------------------------------------------
+   BOOK A DEMO — SAME TEXT-BUTTON STYLE AS PREVIOUS PAGES
+   -------------------------------------------------------------------------- */
+.bootcamp .frameWrapper11,
+.bootcamp .frameWrapper12 {
+  width: 210px !important;
+  max-width: 100% !important;
+  height: auto !important;
+  min-height: 60px !important;
+}
+
+.bootcamp .frameWrapper12 {
+  padding: 12px 20px !important;
+  border: 0 !important;
+  border-radius: 8px !important;
+  background: #dfe6e9 !important;
+  color: #2d4cc8 !important;
+
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+
+  box-shadow:
+    -4px -4px 4px #ffffff,
+    4px 4px 4px #c6c6c9 !important;
+
+  transform: none !important;
+}
+
+.bootcamp .frameWrapper12:hover,
+.bootcamp .frameWrapper12:active {
+  transform: none !important;
+  box-shadow:
+    inset -4px -4px 4px #ffffff,
+    inset 4px 4px 4px #c4c4c4 !important;
+}
+
+.bootcamp .bookADemoWrapper,
+.bootcamp .bookADemo {
+  width: auto !important;
+  height: auto !important;
+  min-width: 0 !important;
+  margin: 0 !important;
+}
+
+.bootcamp .bookADemo {
+  font-size: 24px !important;
+  font-weight: 600 !important;
+  line-height: 1.35 !important;
+  color: #2d4cc8 !important;
+}
+
+/* --------------------------------------------------------------------------
+   MAIN HEADINGS — DESKTOP 36px
+   -------------------------------------------------------------------------- */
+@media screen and (min-width: 1200px) {
+  .bootcamp .masterSoftwareDevelopmentContainer,
+  .bootcamp .masterSoftwareDevelopment,
+  .bootcamp .intensiveLearning,
+  .bootcamp .learnByBuilding,
+  .bootcamp .prepareForHighDemand,
+  .bootcamp .futureReadyTechCareers,
+  .bootcamp .neurolabsCodingBootcamps2 {
+    height: auto !important;
+    min-height: 0 !important;
+    font-size: 36px !important;
+    line-height: 45px !important;
+  }
+
+  /* Hero bottom = 90 + 601 = 691. Next section starts exactly 48px later. */
+  .bootcamp > .frameParent4 {
+    top: 739px !important;
+  }
+
+  /* Intro cards are 114px tall: 739 + 114 + 48 = 901. */
+  .bootcamp > .frameParent5 {
+    top: 901px !important;
+  }
+
+  /* Preserve the already-established 48px rhythm for all later sections. */
+  .bootcamp > .frameParent14 {
+    top: 2019px !important;
+  }
+
+  .bootcamp > .rectangleParent4 {
+    top: calc(2383px + var(--accordion-extra-height)) !important;
+  }
+
+  .bootcamp > .rectangleParent3 {
+    top: calc(3187px + var(--accordion-extra-height)) !important;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   RESPONSIVE SECTION FLOW — EXACT 48px BETWEEN MAJOR SECTIONS
+   Keep breadcrumb -> hero separate from section spacing.
+   -------------------------------------------------------------------------- */
+@media screen and (max-width: 1199px) {
+  .bootcamp {
+    gap: 0 !important;
+  }
+
+  .bootcamp > .bootcampOuterFrame {
+    margin-top: 32px !important;
+  }
+
+  .bootcamp > .frameParent4,
+  .bootcamp > .frameParent5,
+  .bootcamp > .bootcampInner2,
+  .bootcamp > .frameParent14,
+  .bootcamp > .rectangleParent4,
+  .bootcamp > .rectangleParent3 {
+    margin-top: 48px !important;
+    margin-bottom: 0 !important;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   MOBILE — HEADING 24px + PREVIOUS-PAGE BADGE/BUTTON SIZES
+   -------------------------------------------------------------------------- */
+@media screen and (max-width: 767.98px) {
+  .bootcamp .masterSoftwareDevelopmentContainer,
+  .bootcamp .masterSoftwareDevelopment,
+  .bootcamp .intensiveLearning,
+  .bootcamp .learnByBuilding,
+  .bootcamp .prepareForHighDemand,
+  .bootcamp .futureReadyTechCareers,
+  .bootcamp .neurolabsCodingBootcamps2 {
+    height: auto !important;
+    min-height: 0 !important;
+    font-size: 24px !important;
+    line-height: 32px !important;
+  }
+
+  .bootcamp .frameItem,
+  .bootcamp .frameIcon {
+    min-height: 50px !important;
+    padding: 10px 24px !important;
+    font-size: 20px !important;
+    line-height: 1.3 !important;
+  }
+
+  .bootcamp .frameWrapper11,
+  .bootcamp .frameWrapper12 {
+    width: 210px !important;
+    min-height: 52px !important;
+  }
+
+  .bootcamp .frameWrapper12 {
+    padding: 10px 18px !important;
+  }
+
+  .bootcamp .bookADemo {
+    font-size: 18px !important;
+    line-height: 1.35 !important;
+  }
+}
+/* ==========================================================================
+   FINAL REQUESTED CLEANUP ONLY
+   1) Remove all shadows applied to words/text.
+   2) Keep an exact 48px gap between the major page sections.
+   3) Center the complete content inside the final CTA design.
+   No card/image/button/badge design changes are made here.
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   WORD / TEXT SHADOWS ONLY
+   Keep all card, button, icon and section box-shadows unchanged.
+   -------------------------------------------------------------------------- */
+.bootcamp,
+.bootcamp * {
+  text-shadow: none !important;
+}
+
+/* The hero heading used filter: drop-shadow instead of text-shadow. */
+.bootcamp .masterSoftwareDevelopmentContainer {
+  filter: none !important;
+}
+
+/* --------------------------------------------------------------------------
+   DESKTOP — EXACT 48PX SECTION-TO-SECTION RHYTHM
+   Hero ends: 90 + 601 = 691
+   Intro cards: 739 + 114 = 853
+   Project section keeps its existing visual height after the earlier card fix.
+   Career banner height = 303
+   Collapsed accordion visual height = 316
+   Future-ready section height = 756
+   Final CTA height = 430
+   -------------------------------------------------------------------------- */
+@media screen and (min-width: 1200px) {
+  /* Hero -> three intro cards */
+  .bootcamp > .frameParent4 {
+    top: 739px !important;
+  }
+
+  /* Intro cards -> Learn by Building Real Projects */
+  .bootcamp > .frameParent5 {
+    top: 901px !important;
+  }
+
+  /* Learn by Building Real Projects -> career banner */
+  .bootcamp > .bootcampInner2 {
+    top: 1614px !important;
+  }
+
+  /* Career banner -> accordion section */
+  .bootcamp > .frameParent14 {
+    top: 1965px !important;
+  }
+
+  /* Accordion -> Future-Ready Tech Careers */
+  .bootcamp > .rectangleParent4 {
+    top: calc(2329px + var(--accordion-extra-height)) !important;
+  }
+
+  /* Future-Ready Tech Careers -> final CTA */
+  .bootcamp > .rectangleParent3 {
+    top: calc(3133px + var(--accordion-extra-height)) !important;
+  }
+
+  /* Keep 48px after the final section before the external footer. */
+  .bootcamp {
+    height: calc(3611px + var(--accordion-extra-height)) !important;
+    padding-bottom: 0 !important;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   TABLET + MOBILE — EXACT 48PX BETWEEN MAJOR SECTIONS
+   The responsive page already uses flex-column flow; remove competing gap
+   values and let only these explicit 48px margins control the rhythm.
+   -------------------------------------------------------------------------- */
+@media screen and (max-width: 1199px) {
+  .bootcamp {
+    gap: 0 !important;
+  }
+
+  .bootcamp > .frameParent4,
+  .bootcamp > .frameParent5,
+  .bootcamp > .bootcampInner2,
+  .bootcamp > .frameParent14,
+  .bootcamp > .rectangleParent4,
+  .bootcamp > .rectangleParent3 {
+    margin-top: 48px !important;
+    margin-bottom: 0 !important;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   FINAL CTA — CENTER ALL INNER DATA IN THE MIDDLE OF THE DESIGN
+   -------------------------------------------------------------------------- */
+.bootcamp > .rectangleParent3 {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.bootcamp > .rectangleParent3 > .frameParent45 {
+  width: min(881px, calc(100% - 128px)) !important;
+  max-width: calc(100% - 128px) !important;
+  height: auto !important;
+  min-height: 0 !important;
+  margin: 0 auto !important;
+  padding: 0 !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 36px !important;
+  text-align: center !important;
+}
+
+.bootcamp > .rectangleParent3 .neurolabsCodingBootcampsFasParent {
+  width: 100% !important;
+  height: auto !important;
+  margin: 0 !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 24px !important;
+}
+
+.bootcamp > .rectangleParent3 .neurolabsCodingBootcamps2,
+.bootcamp > .rectangleParent3 .accelerateYourCoding {
+  margin-left: auto !important;
+  margin-right: auto !important;
+  text-align: center !important;
+}
+
+@media screen and (min-width: 1200px) {
+  .bootcamp > .rectangleParent3 > .frameParent45 {
+    position: absolute !important;
+    top: 50% !important;
+    left: 50% !important;
+    right: auto !important;
+    bottom: auto !important;
+    transform: translate(-50%, -50%) !important;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .bootcamp > .rectangleParent3 > .frameParent45 {
+    position: relative !important;
+    inset: auto !important;
+    transform: none !important;
+    width: min(881px, calc(100% - 64px)) !important;
+    max-width: calc(100% - 64px) !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .bootcamp > .rectangleParent3 > .frameParent45 {
+    width: calc(100% - 48px) !important;
+    max-width: calc(100% - 48px) !important;
+  }
+}
+/* ==========================================================================
+   FINAL TEXT SELECTION FIX ONLY
+   Make every visible word/text on the Bootcamp page selectable.
+   No layout, spacing, font, colour, shadow, hover or button design changes.
+   ========================================================================== */
+.bootcamp,
+.bootcamp *,
+.bootcamp *::before,
+.bootcamp *::after {
+  -webkit-user-select: text !important;
+  user-select: text !important;
+}
+/* ==========================================================================
+   FINAL MOBILE OVERLAP FIX ONLY
+   - Hero text and person image use separate vertical space.
+   - Text blocks are allowed to grow naturally instead of colliding.
+   - Accordion/card copy gets enough room above the arrow.
+   - Existing colours, shadows, badges, buttons and 48px section spacing stay.
+   ========================================================================== */
+@media screen and (max-width: 767.98px) {
+
+  /* ------------------------------------------------------------------------
+     HERO — text first, image below it. No absolute image/text collision.
+     ------------------------------------------------------------------------ */
+  .bootcamp > .bootcampOuterFrame {
+    height: auto !important;
+    min-height: 0 !important;
+    padding: 14px !important;
+  }
+
+  .bootcamp .bootcampInner {
+    position: relative !important;
+    width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+  }
+
+  .bootcamp .rectangleParent {
+    position: relative !important;
+    inset: auto !important;
+    width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+
+    padding: 28px 16px 0 !important;
+    overflow: hidden !important;
+  }
+
+  .bootcamp .frameDiv {
+    position: relative !important;
+    inset: auto !important;
+    top: auto !important;
+    left: auto !important;
+
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    order: 1 !important;
+    z-index: 4 !important;
+
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+
+    gap: 16px !important;
+    text-align: center !important;
+  }
+
+  .bootcamp .frameParent2 {
+    width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+    gap: 16px !important;
+  }
+
+  .bootcamp .masterSoftwareDevelopmentContainer,
+  .bootcamp .neurolabsCodingBootcamps {
+    position: relative !important;
+    inset: auto !important;
+
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+    max-height: none !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    white-space: normal !important;
+    overflow: visible !important;
+    overflow-wrap: break-word !important;
+    word-break: normal !important;
+    text-overflow: clip !important;
+  }
+
+  .bootcamp .image33Icon {
+    position: relative !important;
+    inset: auto !important;
+    top: auto !important;
+    right: auto !important;
+    bottom: auto !important;
+    left: auto !important;
+
+    order: 2 !important;
+
+    display: block !important;
+    width: min(78%, 300px) !important;
+    max-width: 300px !important;
+    height: auto !important;
+    max-height: none !important;
+
+    margin: 18px auto 0 !important;
+
+    transform: none !important;
+    object-fit: contain !important;
+    object-position: center bottom !important;
+    flex-shrink: 0 !important;
+  }
+
+  /* ------------------------------------------------------------------------
+     TEXT FLOW — remove fixed/clamped heights that can make words overlap.
+     Typography values themselves are not changed.
+     ------------------------------------------------------------------------ */
+  .bootcamp :is(
+    .learnByBuilding,
+    .buildRealProjects,
+    .prepareForHighDemand,
+    .structuredAccelerated,
+    .fromCodingBasics,
+    .careerFocusedTechnologyTrai,
+    .buildPracticalCareerReady,
+    .builtForEducationTitle,
+    .builtForEducationDescription,
+    .usedLearningEnvironments,
+    .deployAcrossDiverse,
+    .futureReadyTechCareers,
+    .neurolabsCodingBootcamps2,
+    .accelerateYourCoding
+  ) {
+    height: auto !important;
+    min-height: 0 !important;
+    max-height: none !important;
+
+    white-space: normal !important;
+    overflow: visible !important;
+    overflow-wrap: break-word !important;
+    word-break: normal !important;
+    text-overflow: clip !important;
+
+    -webkit-line-clamp: unset !important;
+    line-clamp: unset !important;
+  }
+
+  /* Project-card labels must have enough vertical room if a label wraps. */
+  .bootcamp :is(
+    .writingAndTesting,
+    .webApp,
+    .debugOptimize,
+    .programmingChallenge
+  ) {
+    height: auto !important;
+    min-height: 0 !important;
+    max-height: none !important;
+
+    top: 50% !important;
+    transform: translateY(-50%) !important;
+
+    white-space: normal !important;
+    overflow: visible !important;
+    overflow-wrap: break-word !important;
+    word-break: normal !important;
+
+    line-height: 1.25 !important;
+  }
+
+  /* ------------------------------------------------------------------------
+     01 / 02 / 03 CARDS — reserve space for wrapped title/subtitle and arrow.
+     ------------------------------------------------------------------------ */
+  .bootcamp :is(
+    .frameParent23,
+    .frameParent33,
+    .frameParent36 > .expandableCardTrigger
+  ) {
+    height: auto !important;
+    min-height: 156px !important;
+    padding-top: 18px !important;
+    padding-bottom: 42px !important;
+    overflow: hidden !important;
+  }
+
+  .bootcamp .frameParent24 {
+    height: auto !important;
+    min-height: 0 !important;
+    align-items: center !important;
+  }
+
+  .bootcamp :is(
+    .structuredAcceleratedLearnParent,
+    .careerFocusedTechnologyTraiParent,
+    .builtForEducationEnterpriseParent
+  ) {
+    height: auto !important;
+    min-height: 0 !important;
+    max-height: none !important;
+    justify-content: center !important;
+    overflow: visible !important;
+  }
+
+  .bootcamp :is(
+    .structuredAccelerated,
+    .careerFocusedTechnologyTrai,
+    .builtForEducationTitle,
+    .fromCodingBasics,
+    .buildPracticalCareerReady,
+    .builtForEducationDescription,
+    .deployAcrossDiverse
+  ) {
+    position: relative !important;
+    inset: auto !important;
+    margin: 0 !important;
+  }
+
+  .bootcamp .accordionArrow,
+  .bootcamp .frameChild17 {
+    bottom: 10px !important;
+  }
+
+  /* ------------------------------------------------------------------------
+     FINAL TWO VISUAL SECTIONS — natural text height inside their designs.
+     ------------------------------------------------------------------------ */
+  .bootcamp > .rectangleParent4 .futureReadyTechCareersParent,
+  .bootcamp > .rectangleParent3 .neurolabsCodingBootcampsFasParent,
+  .bootcamp > .rectangleParent3 > .frameParent45 {
+    height: auto !important;
+    min-height: 0 !important;
+    max-height: none !important;
+  }
+
+  .bootcamp > .rectangleParent3 > .frameParent45 {
+    padding-top: 44px !important;
+    padding-bottom: 44px !important;
+  }
+}
+
+/* Small phones need a little more breathing room around wrapped copy only. */
+@media screen and (max-width: 480px) {
+  .bootcamp .rectangleParent {
+    padding-left: 14px !important;
+    padding-right: 14px !important;
+  }
+
+  .bootcamp .image33Icon {
+    width: min(82%, 280px) !important;
+    margin-top: 16px !important;
+  }
+
+  .bootcamp :is(
+    .frameParent23,
+    .frameParent33,
+    .frameParent36 > .expandableCardTrigger
+  ) {
+    min-height: 164px !important;
+    padding-bottom: 44px !important;
+  }
+}
+/* ==========================================================================
+   FINAL SCREENSHOT FIXES ONLY
+   Desktop:
+   - Stop the 01-card subtitle from clipping at the right edge.
+   - Give the first expanded checklist enough text width so its last item
+     stays fully inside the existing card.
+   Mobile:
+   - Move only the four project-card labels slightly below their top icons,
+     preventing icon/text overlap.
+   EVERYTHING ELSE remains unchanged.
+   ========================================================================== */
+
+/* ----------------------------- DESKTOP ONLY ----------------------------- */
+@media screen and (min-width: 1200px) {
+
+  /* "From coding basics to real-world applications" may wrap naturally
+     instead of being forced outside the header card. */
+  .bootcamp .fromCodingBasics {
+    width: 100% !important;
+    max-width: 100% !important;
+    white-space: normal !important;
+    overflow: visible !important;
+    overflow-wrap: normal !important;
+    word-break: normal !important;
+  }
+
+  /* Keep the existing checklist position and typography.
+     Only widen its available text row so "Coding Fundamentals" does not
+     consume an unnecessary extra line and push the final row out. */
+  .bootcamp .bootcampLearningTypicallyInParent .frameParent17 {
+    width: 360px !important;
+    max-width: 100% !important;
+  }
+}
+
+/* ------------------------------ MOBILE ONLY ----------------------------- */
+@media screen and (max-width: 767.98px) {
+
+  /* Preserve the existing dashed-card sizes/design.
+     Add internal top room only so the floating icon and wording do not touch. */
+  .bootcamp .frameParent8 :is(
+    .writingAndTestingCodeWrapper,
+    .webAppDevelopmentWrapper,
+    .debugOptimizeWrapper,
+    .programmingChallengeWrapper
+  ) {
+    padding-top: 38px !important;
+    padding-bottom: 10px !important;
+    box-sizing: border-box !important;
+  }
+
+  /* Keep the exact existing font sizes and alignment; only ensure the
+     label remains in normal flex flow inside the padded card area. */
+  .bootcamp .frameParent8 :is(
+    .writingAndTesting,
+    .webApp,
+    .debugOptimize,
+    .programmingChallenge
+  ) {
+    position: static !important;
+    inset: auto !important;
+    top: auto !important;
+    left: auto !important;
+    transform: none !important;
+    margin: 0 !important;
+  }
+}
+/* ==========================================================================
+   BOOTCAMP LEARNING HEADING — ONE LINE ONLY
+   Desktop/tablet only. No other styling changed.
+   ========================================================================== */
+@media screen and (min-width: 768px) {
+  .bootcamp .bootcampLearningTypically {
+    width: max-content !important;
+    max-width: none !important;
+    height: auto !important;
+    white-space: nowrap !important;
+    overflow: visible !important;
+  }
+}

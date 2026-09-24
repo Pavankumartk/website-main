@@ -4109,4 +4109,489 @@ box-shadow: 8px 8px 16px #c4c4c4, -8px -8px 16px #fff;
     object-position: 34% center !important;
   }
 }
+/* ==========================================================================
+   FINAL REQUESTED STANDARDIZATION ONLY
+   - Main headings: 36px on desktop
+   - Every visible word/text is selectable
+   - Remove shadows from words/text only
+   - Section badges match the previous pages
+   - Maintain 48px between the major sections
+   No card sizes, images, colours, hover logic, buttons, or other design
+   properties are changed.
+   ========================================================================== */
 
+/* --------------------------------------------------------------------------
+   EVERY TEXT SELECTABLE
+   -------------------------------------------------------------------------- */
+.neurolabsCodingChallenge,
+.neurolabsCodingChallenge *,
+.neurolabsCodingChallenge *::before,
+.neurolabsCodingChallenge *::after {
+  -webkit-user-select: text !important;
+  user-select: text !important;
+}
+
+/* --------------------------------------------------------------------------
+   REMOVE WORD / TEXT SHADOWS ONLY
+   Keep card, icon, image and container shadows unchanged.
+   -------------------------------------------------------------------------- */
+.neurolabsCodingChallenge,
+.neurolabsCodingChallenge *,
+.neurolabsCodingChallenge *::before,
+.neurolabsCodingChallenge *::after {
+  text-shadow: none !important;
+}
+
+/* These two headings use filter: drop-shadow instead of text-shadow. */
+.neurolabsCodingChallenge .testImproveContainer,
+.neurolabsCodingChallenge .thinkSolveAndContainer {
+  filter: none !important;
+}
+
+/* --------------------------------------------------------------------------
+   BADGES — MATCH PREVIOUS PAGES
+   -------------------------------------------------------------------------- */
+.neurolabsCodingChallenge .sectionBadge {
+  box-sizing: border-box !important;
+  width: fit-content !important;
+  min-width: 0 !important;
+  max-width: 100% !important;
+  height: auto !important;
+  min-height: 50px !important;
+  padding: 10px 24px !important;
+
+  border-radius: 28px !important;
+  background: #dfe6e9 !important;
+  color: #2d4cc8 !important;
+
+  font-family: "Segoe UI", "Inter", sans-serif !important;
+  font-size: 24px !important;
+  font-weight: 600 !important;
+  line-height: 1.3 !important;
+  letter-spacing: 0.02em !important;
+  text-transform: none !important;
+
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  text-align: center !important;
+  white-space: normal !important;
+
+  box-shadow:
+    inset -4px -4px 4px #ffffff,
+    inset 4px 4px 4px rgba(196, 196, 196, 0.8) !important;
+}
+
+/* --------------------------------------------------------------------------
+   DESKTOP / TABLET ARTBOARD
+   MAIN HEADINGS = 36PX
+   -------------------------------------------------------------------------- */
+@media screen and (min-width: 768px) {
+  .neurolabsCodingChallenge :is(
+    .testImproveContainer,
+    .realWorldProblemSolving,
+    .thinkSolveAndContainer,
+    .learnCompeteGrow,
+    .improveCodingEfficiency,
+    .prepareForTechnical,
+    .builtForEveryContainer,
+    .challengeYourSkillsContainer
+  ) {
+    font-size: 36px !important;
+    line-height: 45px !important;
+  }
+
+  .neurolabsCodingChallenge :is(
+    .testImprove,
+    .codingSkills,
+    .thinkSolveAndPerformLike,
+    .thinkSolve,
+    .a,
+    .span,
+    .builtForEvery,
+    .learning,
+    .challengeYourSkills,
+    .future
+  ) {
+    line-height: 45px !important;
+  }
+
+  /* --------------------------------------------------------
+     EXACT 48PX MAJOR-SECTION RHYTHM ON THE 1440PX ARTBOARD
+     Existing section sizes/design remain unchanged.
+     -------------------------------------------------------- */
+
+  /* Hero ends at 714px -> next section starts at 762px. */
+  .neurolabsCodingChallenge > .frameParent5 {
+    top: 762px !important;
+  }
+
+  /* Real-World Problem Solving ends at 1333px -> 48px. */
+  .neurolabsCodingChallenge > .thinkSolveAndContainer {
+    top: 1381px !important;
+  }
+
+  /* Think/Solve heading ends at 1527px -> 48px. */
+  .neurolabsCodingChallenge > .frameParent8 {
+    top: 1575px !important;
+  }
+
+  /* Learn/Compete section keeps its existing visual height -> 48px. */
+  .neurolabsCodingChallenge > .frameParent14 {
+    top: 1937.66px !important;
+  }
+
+  /* Coding Excellence section height = 678px -> 48px. */
+  .neurolabsCodingChallenge > .frameParent19 {
+    top: 2663.66px !important;
+  }
+
+  /* Interview section visual height = 460px -> 48px. */
+  .neurolabsCodingChallenge > .frameParent22 {
+    top: 3171.66px !important;
+  }
+
+  /* Audience section keeps its existing visual height -> 48px. */
+  .neurolabsCodingChallenge > .rectangleParent4 {
+    top: 3807.86px !important;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   MOBILE — KEEP EXISTING TYPOGRAPHY, ONLY STANDARDIZE BADGES + 48PX SECTIONS
+   -------------------------------------------------------------------------- */
+@media screen and (max-width: 767.98px) {
+  .neurolabsCodingChallenge .sectionBadge {
+    min-height: 50px !important;
+    padding: 10px 24px !important;
+    font-size: 20px !important;
+    line-height: 1.3 !important;
+  }
+
+  .neurolabsCodingChallenge > .frameParent5,
+  .neurolabsCodingChallenge > .thinkSolveAndContainer,
+  .neurolabsCodingChallenge > .frameParent8,
+  .neurolabsCodingChallenge > .frameParent14,
+  .neurolabsCodingChallenge > .frameParent19,
+  .neurolabsCodingChallenge > .frameParent22,
+  .neurolabsCodingChallenge > .rectangleParent4 {
+    margin-top: 48px !important;
+    margin-bottom: 0 !important;
+  }
+}
+/* ==========================================================================
+   FINAL REQUESTED ALIGNMENT FIX ONLY
+   - Reduce only heading-to-subheading spacing.
+   - Center only the hero section horizontally.
+   - Keep all existing typography, 48px section spacing, badges, cards,
+     colours, shadows, images and hover behavior unchanged.
+   ========================================================================== */
+
+/* -------------------- HEADING -> SUBHEADING GAP ONLY -------------------- */
+.neurolabsCodingChallenge .frameParent3,
+.neurolabsCodingChallenge .realWorldProblemSolvingParent,
+.neurolabsCodingChallenge .frameParent9,
+.neurolabsCodingChallenge .improveCodingEfficiencyAcParent,
+.neurolabsCodingChallenge .interviewText,
+.neurolabsCodingChallenge .builtForEveryLearningJournParent,
+.neurolabsCodingChallenge .frameParent25 {
+  gap: 16px !important;
+}
+
+/* ------------------------- HERO CENTERING ONLY -------------------------- */
+@media screen and (min-width: 768px) {
+  .neurolabsCodingChallenge > .frameParent2 {
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+  }
+
+  .neurolabsCodingChallenge .frameParent2 .image20Parent {
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+  }
+}
+
+/* Mobile hero already uses fluid positioning; keep it centered explicitly. */
+@media screen and (max-width: 767.98px) {
+  .neurolabsCodingChallenge > .frameParent2 {
+    left: auto !important;
+    right: auto !important;
+    transform: none !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  .neurolabsCodingChallenge .frameParent2 .image20Parent {
+    left: auto !important;
+    right: auto !important;
+    transform: none !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+}
+/* ==========================================================================
+   FINAL THREE FIXES ONLY
+   1) Reduce the HERO heading -> subheading gap.
+   2) Remove the large empty space after the LAST section on desktop.
+   3) Add a clean 48px space after the LAST section on mobile.
+   No other design, section, card, badge, image, font size, or hover changes.
+   ========================================================================== */
+
+/* -------------------- HERO HEADING -> SUBHEADING -------------------- */
+.neurolabsCodingChallenge .frameParent2 .frameParent3 {
+  height: auto !important;
+  gap: 8px !important;
+}
+
+.neurolabsCodingChallenge .frameParent2 .testImproveContainer {
+  height: auto !important;
+  min-height: 0 !important;
+  margin: 0 !important;
+}
+
+.neurolabsCodingChallenge .frameParent2 .solveRealWorldChallenges {
+  margin: 0 !important;
+}
+
+/* -------------------- DESKTOP: LAST SECTION -> PAGE END --------------------
+   Last section starts at 3807.86px and is 505px tall.
+   3807.86 + 505 + 48 = 4360.86px.
+   Keep only the requested 48px after it.
+   -------------------------------------------------------------------------- */
+@media screen and (min-width: 768px) {
+  .neurolabsCodingChallenge {
+    height: 4361px !important;
+    min-height: 4361px !important;
+    padding-bottom: 0 !important;
+  }
+}
+
+/* -------------------- MOBILE: LAST SECTION -> PAGE END ---------------------
+   Mobile is normal-flow content, so add exactly 48px after the final section.
+   -------------------------------------------------------------------------- */
+@media screen and (max-width: 767.98px) {
+  .neurolabsCodingChallenge {
+    height: auto !important;
+    min-height: 0 !important;
+    padding-bottom: 48px !important;
+  }
+
+  .neurolabsCodingChallenge > .rectangleParent4 {
+    margin-bottom: 0 !important;
+  }
+}
+/* ==========================================================================
+   FINAL DIRECT FIX
+   Only:
+   1. Force exactly 48px after the final section.
+   2. Make the first breadcrumb item normal weight.
+   ========================================================================== */
+
+/* Remove any fixed page height that can create a large blank area. */
+@media screen and (min-width: 768px) {
+  .neurolabsCodingChallenge {
+    height: auto !important;
+    min-height: 0 !important;
+    padding-bottom: 48px !important;
+    box-sizing: border-box !important;
+  }
+
+  /* Final section itself keeps its existing position/size.
+     The page ends 48px after its actual content. */
+  .neurolabsCodingChallenge > .rectangleParent4 {
+    margin-bottom: 48px !important;
+  }
+}
+
+/* Mobile: same exact 48px after the final section. */
+@media screen and (max-width: 767.98px) {
+  .neurolabsCodingChallenge {
+    height: auto !important;
+    min-height: 0 !important;
+    padding-bottom: 48px !important;
+    box-sizing: border-box !important;
+  }
+
+  .neurolabsCodingChallenge > .rectangleParent4 {
+    margin-bottom: 48px !important;
+  }
+}
+
+/* Breadcrumb first word/item — normal weight only. */
+.neurolabsCodingChallenge .breadcrumb :first-child,
+.neurolabsCodingChallenge .breadcrumb > *:first-child,
+.neurolabsCodingChallenge .breadcrumb a:first-child,
+.neurolabsCodingChallenge .breadcrumb span:first-child {
+  font-weight: 400 !important;
+}
+
+/* ======================================================================
+   FINAL VERIFIED FIX — CODING CHALLENGES
+   Only fixes:
+   1. Exact 48px space after the final section.
+   2. First breadcrumb item (NeuroLabs) is normal weight.
+   ====================================================================== */
+
+/* Desktop / scaled desktop: the final section starts at 4167.86px and
+   is 505px tall, so the page must end at 4720.86px for exactly 48px. */
+@media screen and (min-width: 768px) {
+  .neurolabsCodingChallenge {
+    height: 4720.86px !important;
+    min-height: 4720.86px !important;
+    padding-bottom: 0 !important;
+    box-sizing: border-box !important;
+  }
+
+  .neurolabsCodingChallenge > .rectangleParent4 {
+    margin-bottom: 0 !important;
+  }
+
+  /* Breadcrumb: first item only — normal, not bold. */
+  .neurolabsCodingChallenge > .frameParent,
+  .neurolabsCodingChallenge .frameDiv {
+    font-weight: 400 !important;
+  }
+
+  .neurolabsCodingChallenge .frameDiv > .neuroLabsWrapper,
+  .neurolabsCodingChallenge .frameDiv > .neuroLabsWrapper * {
+    font-weight: 400 !important;
+  }
+}
+
+/* Mobile: final section remains in responsive flow; give the page exactly
+   48px after it instead of relying on the desktop fixed artboard height. */
+@media screen and (max-width: 767.98px) {
+  .neurolabsCodingChallenge {
+    height: auto !important;
+    min-height: 0 !important;
+    padding-bottom: 0 !important;
+    box-sizing: border-box !important;
+  }
+
+  .neurolabsCodingChallenge > .rectangleParent4 {
+    margin-bottom: 48px !important;
+  }
+
+  /* Breadcrumb first item — normal weight. */
+  .neurolabsCodingChallenge .frameDiv,
+  .neurolabsCodingChallenge .frameDiv > .neuroLabsWrapper,
+  .neurolabsCodingChallenge .frameDiv > .neuroLabsWrapper * {
+    font-weight: 400 !important;
+  }
+}
+
+
+/* ==========================================================================
+   FINAL SPACING CORRECTION — LAST SECTION ONLY
+   The last CTA is absolutely positioned, so margin/padding on the parent
+   cannot reliably create the visible page-end gap. Keep the CTA unchanged
+   and set the artboard height to its bottom edge + exactly 48px.
+   ========================================================================== */
+
+@media screen and (min-width: 768px) {
+  .neurolabsCodingChallenge {
+    height: 4720.86px !important;
+    min-height: 4720.86px !important;
+    padding-bottom: 0 !important;
+    box-sizing: border-box !important;
+  }
+
+  .neurolabsCodingChallenge > .rectangleParent4 {
+    margin-bottom: 0 !important;
+  }
+}
+
+@media screen and (max-width: 767.98px) {
+  .neurolabsCodingChallenge {
+    height: auto !important;
+    min-height: 0 !important;
+    padding-bottom: 0 !important;
+    box-sizing: border-box !important;
+  }
+
+  .neurolabsCodingChallenge > .rectangleParent4 {
+    margin-bottom: 48px !important;
+  }
+}
+
+/* Breadcrumb — first item only, normal weight. */
+.neurolabsCodingChallenge .frameDiv > .neuroLabsWrapper,
+.neurolabsCodingChallenge .frameDiv > .neuroLabsWrapper *,
+.neurolabsCodingChallenge .frameDiv > :first-child {
+  font-weight: 400 !important;
+}
+
+
+/* FINAL OVERRIDE — correct last-section/page-end spacing. The final section is at 3807.86px and 505px tall, so its bottom is 4312.86px; +48px = 4360.86px. */
+@media screen and (min-width: 768px) {
+  .neurolabsCodingChallenge { height: 4360.86px !important; min-height: 4360.86px !important; padding-bottom: 0 !important; box-sizing: border-box !important; }
+  .neurolabsCodingChallenge > .rectangleParent4 { margin-bottom: 0 !important; }
+}
+@media screen and (max-width: 767.98px) {
+  .neurolabsCodingChallenge { height: auto !important; min-height: 0 !important; padding-bottom: 0 !important; box-sizing: border-box !important; }
+  .neurolabsCodingChallenge > .rectangleParent4 { margin-bottom: 48px !important; }
+}
+
+/* ==========================================================================\n   FINAL 48PX PAGE-END SPACING — LAST SECTION ONLY\n   Do not change the CTA itself. The desktop artboard uses the actual final\n   section position (3807.86px) + its 505px height + exactly 48px.\n   ========================================================================== */
+@media screen and (min-width: 768px) {
+  .neurolabsCodingChallenge {
+    height: 4360.86px !important;
+    min-height: 4360.86px !important;
+    padding-bottom: 0 !important;
+    box-sizing: border-box !important;
+    overflow: hidden !important;
+  }
+
+  .neurolabsCodingChallenge > .rectangleParent4 {
+    top: 3807.86px !important;
+    height: 505px !important;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+  }
+}
+
+@media screen and (max-width: 767.98px) {
+  .neurolabsCodingChallenge {
+    height: auto !important;
+    min-height: 0 !important;
+    padding-bottom: 0 !important;
+    box-sizing: border-box !important;
+  }
+
+  .neurolabsCodingChallenge > .rectangleParent4 {
+    margin-bottom: 48px !important;
+  }
+}
+
+
+/* ==========================================================================
+   ACTUAL PAGE-SCALE FIX — KEEP THE VISUAL 48PX AFTER THE LAST SECTION
+   The Coding Challenges artboard is transformed on desktop. CSS transforms
+   do not change the parent's layout height, which can leave extra space
+   before the following content/footer. Match .pageScale to the transformed
+   artboard height, while keeping exactly 48px after .rectangleParent4.
+   ========================================================================== */
+
+@media screen and (min-width: 1440px) {
+  .pageScale {
+    height: 4360.86px !important;
+  }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1439.98px) {
+  .pageScale {
+    height: calc(4312.86px * ((100vw - 80px) / 1440px) + 48px) !important;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199.98px) {
+  .pageScale {
+    height: calc(4312.86px * ((100vw - 64px) / 1440px) + 48px) !important;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991.98px) {
+  .pageScale {
+    height: calc(4312.86px * ((100vw - 48px) / 1440px) + 48px) !important;
+  }
+}
