@@ -3222,3 +3222,934 @@ body {
   }
 }
 
+/* ==========================================================================
+   FINAL REQUESTED OVERRIDES — NGO PAGE
+   1) Match the Government-page CTA button treatment.
+   2) Make every word selectable.
+   3) Keep exactly 48px between the main content sections.
+   No card, typography, image, color, or content redesign.
+   ========================================================================== */
+
+
+/* ==========================================================================
+   1. EVERY WORD SELECTABLE
+   Includes the NGO page plus shared header/footer rendered on the same page.
+   ========================================================================== */
+body:has(.ngo),
+body:has(.ngo) * {
+  -webkit-user-select: text !important;
+  -moz-user-select: text !important;
+  user-select: text !important;
+  -webkit-touch-callout: default;
+}
+
+.ngo,
+.ngo * {
+  -webkit-user-select: text !important;
+  -moz-user-select: text !important;
+  user-select: text !important;
+  -webkit-touch-callout: default;
+}
+
+
+/* ==========================================================================
+   2. BOOK A DEMO — SAME BUTTON STYLE AS THE GOVERNMENT PAGE
+   Default = raised neumorphic.
+   Hover/press = inset neumorphic.
+   No translate/jumping effect.
+   ========================================================================== */
+.ngo .frameWrapper {
+  appearance: none;
+  -webkit-appearance: none;
+
+  border: 0 !important;
+  border-radius: 8px !important;
+  background: #dfe6e9 !important;
+  color: #2d4cc8 !important;
+
+  box-shadow:
+    -4px -4px 4px #ffffff,
+    4px 4px 4px #c6c6c9 !important;
+
+  font-family: "Segoe UI", "Inter", sans-serif !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.02em !important;
+  text-align: center !important;
+  text-decoration: none !important;
+
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+
+  cursor: pointer !important;
+  transform: none !important;
+  transition: box-shadow 0.2s ease !important;
+
+  -webkit-user-select: text !important;
+  -moz-user-select: text !important;
+  user-select: text !important;
+}
+
+.ngo .frameWrapper .bookADemoWrapper,
+.ngo .frameWrapper .bookADemo {
+  color: #2d4cc8 !important;
+  font-family: "Segoe UI", "Inter", sans-serif !important;
+  font-weight: 600 !important;
+  text-align: center !important;
+  transform: none !important;
+
+  -webkit-user-select: text !important;
+  -moz-user-select: text !important;
+  user-select: text !important;
+}
+
+/* Same inset hover as the Government-page CTA — no movement. */
+@media (hover: hover) and (pointer: fine) {
+  .ngo .frameWrapper:hover {
+    box-shadow:
+      inset -4px -4px 4px #ffffff,
+      inset 4px 4px 4px rgba(196, 196, 196, 0.8) !important;
+
+    color: #2d4cc8 !important;
+    transform: none !important;
+  }
+}
+
+/* Click/tap keeps the same pressed treatment without shifting the button. */
+.ngo .frameWrapper:active {
+  box-shadow:
+    inset -4px -4px 4px #ffffff,
+    inset 4px 4px 4px rgba(196, 196, 196, 0.8) !important;
+
+  color: #2d4cc8 !important;
+  transform: none !important;
+}
+
+.ngo .frameWrapper:focus-visible {
+  outline: 3px solid #2d4cc8 !important;
+  outline-offset: 3px !important;
+}
+
+
+/* ==========================================================================
+   3. EXACT 48PX SECTION-TO-SECTION SPACING — DESKTOP
+   Existing section dimensions/design are untouched.
+
+   Section geometry retained:
+   Hero:                   527px
+   Mission/Impact:         496px
+   NGO support section:    553px closed
+   Collaborative section: 614px
+   Use cases section:      617px
+   Benefits section:       538px
+
+   Only each following section's vertical start is corrected so the space
+   between section boundaries is exactly 48px.
+   ========================================================================== */
+@media screen and (min-width: 1200px) {
+
+  /* Hero ends at 88 + 527 = 615. Next section begins at 615 + 48. */
+  .ngo > .frame {
+    top: 663px !important;
+  }
+
+  /* Mission/Impact ends at 663 + 496 = 1159. */
+  .ngo > .frameParent5 {
+    top: 1207px !important;
+  }
+
+  /* NGO support section ends at 1207 + 553 = 1760. */
+  .ngo > .image20Group {
+    top: 1808px !important;
+  }
+
+  /* Collaborative section ends at 1808 + 614 = 2422. */
+  .ngo > .frameParent18 {
+    top: 2470px !important;
+  }
+
+  /* Use-cases section ends at 2470 + 617 = 3087. */
+  .ngo > .ngoChild {
+    top: 3135px !important;
+  }
+
+  /* Benefits section ends at 3135 + 538 = 3673. */
+  .ngo > .frameParent38 {
+    top: 3721px !important;
+  }
+
+  /* The content stack becomes 256px shorter after normalizing all gaps.
+     Reduce the page canvas by the same amount so bottom-positioned content
+     keeps its existing relationship to the page instead of creating a new
+     empty area. */
+  .ngo {
+    height: 4724px !important;
+  }
+
+  .ngo.supportCardsExpanded {
+    height: 4918px !important;
+  }
+}
+
+
+/* ==========================================================================
+   EXACT 48PX SECTION RHYTHM — TABLET + MOBILE
+   The existing responsive layout is already a vertical flex composition.
+   Only its inter-section gap is standardized to 48px.
+   Internal section spacing remains unchanged.
+   ========================================================================== */
+@media screen and (max-width: 1199px) {
+  .ngo {
+    gap: 48px !important;
+  }
+
+  /* Ensure the major content sections do not add extra outer margins on top
+     of the 48px parent gap. */
+  .ngo > .ngoInner,
+  .ngo > .frame,
+  .ngo > .frameParent5,
+  .ngo > .image20Group,
+  .ngo > .frameParent18,
+  .ngo > .ngoChild,
+  .ngo > .frameParent38 {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+  }
+}
+
+
+/* Keep the requested button appearance consistent at all responsive sizes.
+   Existing width/font-size rules remain in control; only the visual shape
+   and non-jumping interaction are standardized. */
+@media screen and (max-width: 1199px) {
+  .ngo .frameWrapper {
+    border-radius: 8px !important;
+    transform: none !important;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .ngo .frameWrapper {
+    border-radius: 8px !important;
+    transform: none !important;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .ngo .frameWrapper {
+    border-radius: 8px !important;
+    transform: none !important;
+  }
+}
+
+/* ==========================================================================
+   COLLABORATIVE LEARNING — IMAGE / BADGE / CURSOR FIX
+   Only the requested corrections are made here.
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   DESKTOP: keep the photo fully to the right of the text.
+   Text block ends around 561px inside the section.
+   Photo now begins around 578px, leaving a clean gap with no overlap.
+   -------------------------------------------------------------------------- */
+@media screen and (min-width: 1200px) {
+  .ngo .image20Group .wrapperPexelsMbaClassroom2 {
+    top: 4px !important;
+    right: 0 !important;
+    left: auto !important;
+
+    width: 670px !important;
+    height: 550px !important;
+
+    border-radius: 0 100px 0 0 !important;
+    overflow: hidden !important;
+
+    z-index: 1 !important;
+  }
+
+  .ngo .image20Group .pexelsMbaClassroom215566522Icon {
+    width: 100% !important;
+    height: 100% !important;
+    left: 0 !important;
+    top: 0 !important;
+
+    object-fit: cover !important;
+    object-position: center !important;
+    transform: none !important;
+  }
+
+  /* Keep the complete text block above the decorative/background layers. */
+  .ngo .image20Group .frameWrapper9 {
+    width: 511px !important;
+    z-index: 4 !important;
+  }
+
+  .ngo .image20Group .frameWrapper10,
+  .ngo .image20Group .frameWrapper11,
+  .ngo .image20Group .frameParent16,
+  .ngo .image20Group .frameParent17,
+  .ngo .image20Group .collaborativeLearning,
+  .ngo .image20Group .createOnceTrainContainer {
+    position: relative;
+    z-index: 4 !important;
+  }
+}
+
+
+/* --------------------------------------------------------------------------
+   "HOW NEUROLXP HELPS" BADGE
+   Match the page's other 50px inset badges exactly.
+   -------------------------------------------------------------------------- */
+.ngo .frameChild6 {
+  width: fit-content !important;
+  min-width: 0 !important;
+  max-width: 100% !important;
+
+  height: 50px !important;
+  min-height: 50px !important;
+
+  padding: 9px 24px !important;
+  box-sizing: border-box !important;
+
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+
+  background: #dfe6e9 !important;
+  box-shadow:
+    inset -4px -4px 4px #ffffff,
+    inset 4px 4px 4px rgba(196, 196, 196, 0.8) !important;
+
+  border: 0 !important;
+  border-radius: 28px !important;
+
+  font-family: "Segoe UI", "Inter", sans-serif !important;
+  font-weight: 600 !important;
+  font-size: 24px !important;
+  line-height: 32px !important;
+  letter-spacing: 0.03em !important;
+  color: #2d4cc8 !important;
+
+  white-space: nowrap !important;
+  text-align: center !important;
+
+  filter: none !important;
+  text-shadow: none !important;
+  transform: none !important;
+  transition: none !important;
+  animation: none !important;
+}
+
+/* Badge is not a control — no hover movement/effect. */
+.ngo .frameChild6:hover,
+.ngo .frameChild6:active {
+  background: #dfe6e9 !important;
+  box-shadow:
+    inset -4px -4px 4px #ffffff,
+    inset 4px 4px 4px rgba(196, 196, 196, 0.8) !important;
+  transform: none !important;
+}
+
+
+/* Responsive badge size follows the same page badge scale. */
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .ngo .frameChild6 {
+    height: 50px !important;
+    min-height: 50px !important;
+    padding: 9px 22px !important;
+    font-size: 20px !important;
+    line-height: 28px !important;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .ngo .frameChild6 {
+    width: auto !important;
+    max-width: calc(100% - 24px) !important;
+    height: auto !important;
+    min-height: 46px !important;
+    padding: 9px 20px !important;
+
+    font-size: 16px !important;
+    line-height: 24px !important;
+    white-space: normal !important;
+  }
+}
+
+
+/* --------------------------------------------------------------------------
+   CURSOR CLEANUP
+   Remove the hand from non-clickable content. Keep it on genuine controls.
+   This does not affect text selection.
+   -------------------------------------------------------------------------- */
+.ngo,
+.ngo * {
+  cursor: default !important;
+}
+
+/* Real semantic interactive elements keep the hand cursor. */
+.ngo :is(
+  a[href],
+  button,
+  input[type="button"],
+  input[type="submit"],
+  input[type="reset"],
+  select,
+  summary,
+  [role="button"]
+) {
+  cursor: pointer !important;
+}
+
+/* Hero CTA is styled as a clickable wrapper in the existing page. */
+.ngo .frameWrapper {
+  cursor: pointer !important;
+}
+
+/* Explicitly keep decorative/non-clickable page elements on the normal cursor. */
+.ngo :is(
+  .frameInner,
+  .frameIcon,
+  .frameChild6,
+  .frameChild7,
+  .frameChild15,
+  .frameChild21,
+  .image61Icon,
+  .frameInner2,
+  .frameInner3,
+  .frameParent22,
+  .wrapperPexelsMbaClassroom2,
+  .pexelsMbaClassroom215566522Icon
+) {
+  cursor: default !important;
+}
+
+/* ==========================================================================
+   FINAL TM + BADGE CONSISTENCY FIX
+   Only:
+   1) Correct the NeuroLXP ™ placement in the final/footer area.
+   2) Make every page badge match the approved reference-page pill style.
+   ========================================================================== */
+
+
+/* ==========================================================================
+   1. TRADEMARK — PROPER SUPERSCRIPT POSITION
+   ========================================================================== */
+
+/* Keep NeuroLXP and ™ together on one clean baseline. */
+.ngo .neurolxpContainer {
+  display: inline-flex !important;
+  align-items: flex-start !important;
+  gap: 2px !important;
+  width: auto !important;
+}
+
+/* Do not reserve an oversized fixed box around the word. */
+.ngo .neurolxp3 {
+  width: auto !important;
+  height: auto !important;
+  min-height: 26px !important;
+  line-height: 30px !important;
+  overflow: visible !important;
+  flex-shrink: 0 !important;
+}
+
+/* If the ™ exists inside the NeuroLXP text itself, render it as a real superscript. */
+.ngo .span2 {
+  display: inline-block !important;
+  position: relative !important;
+  top: -0.48em !important;
+
+  margin-left: 1px !important;
+
+  font-size: 10px !important;
+  line-height: 1 !important;
+  letter-spacing: 0 !important;
+  vertical-align: baseline !important;
+}
+
+/* If the markup uses the separate .tm element, apply the same correction. */
+.ngo .tm {
+  position: relative !important;
+  top: -3px !important;
+
+  width: auto !important;
+  height: auto !important;
+  min-width: 0 !important;
+
+  margin-left: 1px !important;
+
+  display: inline-flex !important;
+  align-items: flex-start !important;
+
+  font-family: "Segoe UI", "Inter", sans-serif !important;
+  font-size: 10px !important;
+  line-height: 1 !important;
+  letter-spacing: 0 !important;
+
+  flex-shrink: 0 !important;
+}
+
+
+/* ==========================================================================
+   2. ALL NGO BADGES — SAME AS APPROVED REFERENCE PAGE
+   Inset neumorphic pill, blue text, no hover animation.
+   ========================================================================== */
+.ngo :is(
+  .frameInner,
+  .frameIcon,
+  .frameChild6,
+  .frameChild7,
+  .frameChild15,
+  .frameChild21
+) {
+  width: fit-content !important;
+  max-width: 100% !important;
+  min-width: 0 !important;
+
+  height: 50px !important;
+  min-height: 50px !important;
+
+  padding: 9px 24px !important;
+  box-sizing: border-box !important;
+
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+
+  border: 0 !important;
+  border-radius: 28px !important;
+
+  background: #dfe6e9 !important;
+  box-shadow:
+    inset -4px -4px 4px #ffffff,
+    inset 4px 4px 4px rgba(196, 196, 196, 0.8) !important;
+
+  font-family: "Segoe UI", "Inter", sans-serif !important;
+  font-style: normal !important;
+  font-weight: 600 !important;
+  font-size: 24px !important;
+  line-height: 32px !important;
+  letter-spacing: 0.03em !important;
+  color: #2d4cc8 !important;
+
+  text-align: center !important;
+  white-space: nowrap !important;
+
+  filter: none !important;
+  text-shadow: none !important;
+  transform: none !important;
+  transition: none !important;
+  animation: none !important;
+
+  /* Badges are labels, not clickable controls. */
+  cursor: default !important;
+}
+
+/* No badge hover or pressed visual change. */
+.ngo :is(
+  .frameInner,
+  .frameIcon,
+  .frameChild6,
+  .frameChild7,
+  .frameChild15,
+  .frameChild21
+):is(:hover, :active) {
+  background: #dfe6e9 !important;
+  color: #2d4cc8 !important;
+
+  box-shadow:
+    inset -4px -4px 4px #ffffff,
+    inset 4px 4px 4px rgba(196, 196, 196, 0.8) !important;
+
+  transform: none !important;
+}
+
+
+/* Tablet: same reference appearance, only responsive type sizing. */
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .ngo :is(
+    .frameInner,
+    .frameIcon,
+    .frameChild6,
+    .frameChild7,
+    .frameChild15,
+    .frameChild21
+  ) {
+    height: auto !important;
+    min-height: 48px !important;
+    padding: 9px 22px !important;
+
+    font-size: 20px !important;
+    line-height: 28px !important;
+
+    white-space: normal !important;
+  }
+}
+
+
+/* Mobile: retain the exact same badge design without overflowing. */
+@media screen and (max-width: 767px) {
+  .ngo :is(
+    .frameInner,
+    .frameIcon,
+    .frameChild6,
+    .frameChild7,
+    .frameChild15,
+    .frameChild21
+  ) {
+    width: fit-content !important;
+    max-width: calc(100% - 24px) !important;
+
+    height: auto !important;
+    min-height: 46px !important;
+
+    padding: 9px 20px !important;
+
+    font-size: 16px !important;
+    line-height: 24px !important;
+
+    white-space: normal !important;
+  }
+
+  .ngo .span2,
+  .ngo .tm {
+    font-size: 9px !important;
+  }
+}
+
+/* ==========================================================================
+   FINAL ™ POSITION FIX — FOOTER / LAST SECTION
+   Attach TM tightly to the upper-right of NeuroLXP with no extra layout gap.
+   ========================================================================== */
+
+.ngo .neurolxpContainer {
+  position: relative !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  width: fit-content !important;
+  max-width: max-content !important;
+  flex: 0 0 auto !important;
+
+  /* Small room only for the superscript. */
+  padding-right: 12px !important;
+  gap: 0 !important;
+  overflow: visible !important;
+}
+
+.ngo .neurolxp3 {
+  position: relative !important;
+
+  width: auto !important;
+  min-width: 0 !important;
+  max-width: none !important;
+
+  height: 30px !important;
+  min-height: 30px !important;
+
+  display: inline-flex !important;
+  align-items: center !important;
+
+  line-height: 30px !important;
+  overflow: visible !important;
+  flex: 0 0 auto !important;
+}
+
+.ngo .neurolxpTxt {
+  width: auto !important;
+  display: inline !important;
+  white-space: nowrap !important;
+  overflow: visible !important;
+}
+
+.ngo .neurolxp4 {
+  display: inline !important;
+  line-height: 30px !important;
+}
+
+/* Remove any spacing character/span that was reserving room before TM. */
+.ngo .span2 {
+  display: none !important;
+}
+
+/* TM is anchored directly to the top-right of NeuroLXP. */
+.ngo .tm {
+  position: absolute !important;
+
+  top: 1px !important;
+  right: 0 !important;
+  left: auto !important;
+
+  width: 10px !important;
+  min-width: 10px !important;
+  max-width: 10px !important;
+
+  height: 10px !important;
+  min-height: 10px !important;
+
+  margin: 0 !important;
+  padding: 0 !important;
+
+  display: block !important;
+
+  font-family: "Segoe UI", "Inter", sans-serif !important;
+  font-size: 8px !important;
+  font-weight: 600 !important;
+  line-height: 10px !important;
+  letter-spacing: 0 !important;
+
+  text-align: left !important;
+  vertical-align: top !important;
+
+  transform: none !important;
+  overflow: visible !important;
+  flex: none !important;
+  z-index: 5 !important;
+}
+
+/* Tablet/mobile: keep the same attached superscript proportion. */
+@media screen and (max-width: 1199px) {
+  .ngo .neurolxpContainer {
+    padding-right: 10px !important;
+  }
+
+  .ngo .tm {
+    top: 1px !important;
+    right: 0 !important;
+
+    width: 9px !important;
+    min-width: 9px !important;
+    max-width: 9px !important;
+
+    height: 9px !important;
+    min-height: 9px !important;
+
+    font-size: 7px !important;
+    line-height: 9px !important;
+  }
+}
+
+/* ==========================================================================
+   FINAL CORRECTION
+   1) Replace literal "TM" with the real ™ symbol and position it correctly.
+   2) Reduce ONLY heading-to-subheading spacing.
+   ========================================================================== */
+
+
+/* ==========================================================================
+   1. REAL ™ SYMBOL BESIDE NeuroLXP
+   The original markup has a separate .tm element containing "TM".
+   Hide those letters visually and render the correct trademark glyph.
+   ========================================================================== */
+.ngo .neurolxpContainer {
+  position: relative !important;
+  display: inline-flex !important;
+  align-items: flex-start !important;
+  width: auto !important;
+  max-width: max-content !important;
+  padding-right: 11px !important;
+  gap: 0 !important;
+  overflow: visible !important;
+  flex-shrink: 0 !important;
+}
+
+.ngo .neurolxpContainer .neurolxp3 {
+  width: auto !important;
+  min-width: 0 !important;
+  height: auto !important;
+  min-height: 26px !important;
+  position: relative !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  overflow: visible !important;
+  flex-shrink: 0 !important;
+}
+
+.ngo .neurolxpContainer .neurolxpTxt {
+  width: auto !important;
+  display: inline-block !important;
+  white-space: nowrap !important;
+  overflow: visible !important;
+}
+
+/* Remove only the old blank spacer after NeuroLXP. */
+.ngo .neurolxpContainer .span2 {
+  display: none !important;
+}
+
+/* Hide the literal "TM" text without removing its element. */
+.ngo .neurolxpContainer > .tm {
+  position: absolute !important;
+  top: -2px !important;
+  right: 0 !important;
+  left: auto !important;
+
+  width: 10px !important;
+  min-width: 10px !important;
+  height: 10px !important;
+  min-height: 10px !important;
+
+  margin: 0 !important;
+  padding: 0 !important;
+
+  display: block !important;
+
+  font-size: 0 !important;
+  line-height: 0 !important;
+  letter-spacing: 0 !important;
+
+  overflow: visible !important;
+  transform: none !important;
+  z-index: 10 !important;
+}
+
+/* Render the proper trademark symbol. */
+.ngo .neurolxpContainer > .tm::before {
+  content: "\2122" !important; /* ™ */
+
+  display: block !important;
+
+  font-family: "Segoe UI", "Inter", sans-serif !important;
+  font-size: 9px !important;
+  font-weight: 600 !important;
+  line-height: 10px !important;
+  letter-spacing: 0 !important;
+
+  color: inherit !important;
+  white-space: nowrap !important;
+}
+
+
+/* ==========================================================================
+   2. REDUCE HEADING → SUBHEADING SPACE ONLY
+   Existing parent gaps are 32px. A -16px top margin on the subheading makes
+   the visual heading/subheading gap 16px while leaving badge-to-heading
+   spacing and all section/card geometry unchanged.
+   ========================================================================== */
+
+/* Hero heading → hero subheading */
+.ngo .frameParent3 + .empoweringNonprofitsThrough {
+  margin-top: -16px !important;
+}
+
+/* Mission Driven Learning heading → subheading */
+.ngo .missionDrivenLearning + .empowerStaffVolunteers {
+  margin-top: -16px !important;
+}
+
+/* Scale Your Impact heading → subheading */
+.ngo .scaleYourImpact + .deliverStructuredTraining {
+  margin-top: -16px !important;
+}
+
+/* How NeuroLXP Supports NGOs heading → subheading */
+.ngo .howNeurolxpSupports + .neurolxpHelpsNonprofits {
+  margin-top: -16px !important;
+}
+
+/* Collaborative Learning heading → subheading */
+.ngo .collaborativeLearning + .createOnceTrainContainer {
+  margin-top: -16px !important;
+}
+
+/* Benefits for NGOs heading → subheading */
+.ngo .benefitsForNgosContainer + .neurolxpHelpsNonprofits2 {
+  margin-top: -16px !important;
+}
+
+/* Last section heading → subheading */
+.ngo .enablingLearningFor + .withFlexibleLearning {
+  margin-top: -16px !important;
+}
+
+
+/* Keep the true ™ proportionally positioned on smaller screens. */
+@media screen and (max-width: 767px) {
+  .ngo .neurolxpContainer {
+    padding-right: 9px !important;
+  }
+
+  .ngo .neurolxpContainer > .tm {
+    top: -1px !important;
+    width: 8px !important;
+    min-width: 8px !important;
+    height: 8px !important;
+    min-height: 8px !important;
+  }
+
+  .ngo .neurolxpContainer > .tm::before {
+    font-size: 7px !important;
+    line-height: 8px !important;
+  }
+}
+
+/* ==========================================================================
+   ACTUAL LAST-SECTION NeuroLXP™ FIX
+   Matches the real TSX class: styles.neurolxpTrademark
+   ========================================================================== */
+
+.ngo .frameChild21 {
+  overflow: visible !important;
+}
+
+.ngo .frameChild21 > span {
+  display: inline-block !important;
+  line-height: 32px !important;
+}
+
+/* The TM is a separate flex child inside .frameChild21, so position THAT
+   actual class instead of the unrelated old .tm class. */
+.ngo .neurolxpTrademark {
+  display: inline-block !important;
+  flex: 0 0 auto !important;
+
+  margin-left: 1px !important;
+  padding: 0 !important;
+
+  font-family: "Segoe UI", "Inter", sans-serif !important;
+  font-size: 9px !important;
+  font-weight: 600 !important;
+  line-height: 9px !important;
+  letter-spacing: 0 !important;
+
+  color: #2d4cc8 !important;
+
+  align-self: center !important;
+  position: relative !important;
+  top: -9px !important;
+
+  transform: none !important;
+  text-transform: none !important;
+}
+
+/* Keep the same clean superscript proportion on smaller screens. */
+@media screen and (max-width: 767px) {
+  .ngo .neurolxpTrademark {
+    font-size: 7px !important;
+    line-height: 7px !important;
+    top: -7px !important;
+    margin-left: 1px !important;
+  }
+}
+
+/* ==========================================================================
+   FINAL ™ SIZE ADJUSTMENT
+   Make the trademark symbol clearly visible while keeping it as a superscript.
+   ========================================================================== */
+
+.ngo .neurolxpTrademark {
+  font-size: 12px !important;
+  line-height: 12px !important;
+  top: -8px !important;
+  margin-left: 2px !important;
+}
+
+@media screen and (max-width: 767px) {
+  .ngo .neurolxpTrademark {
+    font-size: 10px !important;
+    line-height: 10px !important;
+    top: -6px !important;
+    margin-left: 1px !important;
+  }
+}
+

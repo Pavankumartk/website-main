@@ -138,18 +138,49 @@ function HeaderDropdownPanel({
         triggerRect.left + panelWidth >
         window.innerWidth - margin;
 
-      const top = triggerRect.bottom + 12;
+      const headerBottom =
+        triggerEl
+          .closest("header")
+          ?.getBoundingClientRect()
+          .bottom;
+
+      const top =
+        headerBottom ?? triggerRect.bottom;
 
       if (
         variant === "customers" ||
         variant === "features" ||
         variant === "resources"
       ) {
+        /*
+         * Our Customers + Features + Resources:
+         * keep the primary category box under/near its trigger and let the
+         * nested submenu expand to the RIGHT. Clamp the full panel so it
+         * never leaves the viewport.
+         */
+        const nestedMargin = 8;
+
+        /*
+         * Move the complete two-panel dropdown further LEFT so both
+         * the category panel and its right-side submenu remain visible.
+         * The viewport clamp still prevents the panel leaving the screen.
+         */
+        const preferredLeft = triggerRect.left - 72;
+
+        const maxLeft = Math.max(
+          nestedMargin,
+          window.innerWidth - panelWidth - nestedMargin
+        );
+
+        const left = Math.min(
+          Math.max(preferredLeft, nestedMargin),
+          maxLeft
+        );
+
         setCoords({
           top,
-          right:
-            window.innerWidth - triggerRect.right,
-          left: undefined,
+          left,
+          right: undefined,
         });
       } else if (wouldOverflow) {
         setCoords({

@@ -260,7 +260,7 @@
 	line-height: 60px;
 	display: inline-block;
 	flex-shrink: 0;
-	text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	text-shadow: none;
 }
 
 .neurolxpEnablesUniversities {
@@ -673,7 +673,7 @@
 	position: relative;
 	letter-spacing: -0.03em;
 	line-height: 34px;
-	text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	text-shadow: none;
 }
 
 .sparklesIcon {
@@ -1838,7 +1838,7 @@
 	height: 546px;
 	object-fit: cover;
 	flex-shrink: 0;
-	transform: translatey(5);
+	transform: translateY(5px);
 }
 
 .frameWrapper23 {
@@ -1898,7 +1898,7 @@
 	line-height: 60px;
 	display: inline-block;
 	flex-shrink: 0;
-	text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	text-shadow: none;
 }
 
 .neurolxpHelpsUniversities {
@@ -5335,3 +5335,1593 @@
 	}
 }
 
+
+
+/* University: reference controls, consistent typography and responsive content flow.
+   Keep this section last. Existing component class names are preserved. */
+.universityAndCollege.universityAndCollege {
+  --uni-surface: #dfe6e9;
+  --uni-blue: #2d4cc8;
+  --uni-raised: -4px -4px 4px #fff, 4px 4px 4px #c6c6c9;
+  --uni-inset: inset -4px -4px 4px #fff, inset 4px 4px 4px rgba(196,196,196,.8);
+  position: relative !important;
+  inset: auto !important;
+  width: 100% !important;
+  min-width: 0 !important;
+  max-width: 1440px !important;
+  height: auto !important;
+  min-height: 0 !important;
+  margin: 0 auto !important;
+  padding: 32px clamp(24px, 5.55vw, 80px) 48px !important;
+  zoom: 1 !important;
+  transform: none !important;
+  overflow: visible !important;
+  font-family: "Segoe UI", "Inter", sans-serif !important;
+  font-size: 20px !important;
+  line-height: 1.5 !important;
+}
+
+.universityAndCollege.universityAndCollege *,
+.universityAndCollege.universityAndCollege *::before,
+.universityAndCollege.universityAndCollege *::after {
+  box-sizing: border-box !important;
+  text-shadow: none !important;
+}
+
+.universityAndCollege.universityAndCollege * {
+  font-family: "Segoe UI", "Inter", sans-serif !important;
+}
+
+.universityAndCollege.universityAndCollege .frameDiv {
+  position: relative !important;
+  inset: auto !important;
+  width: 100% !important;
+  min-width: 0 !important;
+  max-width: 100% !important;
+  height: auto !important;
+  min-height: 0 !important;
+  max-height: none !important;
+  transform: none !important;
+  margin: 0 !important;
+  box-sizing: border-box !important;
+  display: flex !important;
+  flex-wrap: wrap !important;
+  align-items: center !important;
+  justify-content: flex-start !important;
+  gap: 8px !important;
+  padding: 0 !important;
+  margin-bottom: 24px !important;
+  font-size: 16px !important;
+  line-height: 24px !important;
+  text-align: left !important;
+  color: #2f3547 !important;
+  overflow: visible !important;
+}
+
+.universityAndCollege.universityAndCollege .frameDiv .ourCustomersWrapper,
+.universityAndCollege.universityAndCollege .frameDiv .homeParent,
+.universityAndCollege.universityAndCollege .frameDiv .arrowRightDoubleGroup {
+  display: inline-flex !important;
+  flex-wrap: wrap !important;
+  align-items: center !important;
+  min-width: 0 !important;
+  gap: 8px !important;
+}
+
+.universityAndCollege.universityAndCollege .frameDiv .industriesWeServe,
+.universityAndCollege.universityAndCollege .frameDiv a {
+  font-size: inherit !important;
+  line-height: inherit !important;
+  letter-spacing: .02em !important;
+  white-space: normal !important;
+  text-decoration: none !important;
+}
+
+.universityAndCollege.universityAndCollege .frameDiv img,
+.universityAndCollege.universityAndCollege .frameDiv svg {
+  width: 16px !important;
+  height: 16px !important;
+  flex: 0 0 16px !important;
+}
+
+.universityAndCollege.universityAndCollege .universityAndCollegeInner {
+  display: none !important;
+}
+
+.universityAndCollege.universityAndCollege .frameParent2,
+.universityAndCollege.universityAndCollege .frameParent44,
+.universityAndCollege.universityAndCollege .universityAndCollegeChild,
+.universityAndCollege.universityAndCollege .frameParent71,
+.universityAndCollege.universityAndCollege .image20Parent7 {
+  position: relative !important;
+  inset: auto !important;
+  width: 100% !important;
+  min-width: 0 !important;
+  max-width: 100% !important;
+  height: auto !important;
+  min-height: 0 !important;
+  max-height: none !important;
+  transform: none !important;
+  margin: 0 !important;
+  box-sizing: border-box !important;
+  overflow: visible !important;
+}
+
+.universityAndCollege.universityAndCollege .frameParent44,
+.universityAndCollege.universityAndCollege .universityAndCollegeChild,
+.universityAndCollege.universityAndCollege .frameParent71,
+.universityAndCollege.universityAndCollege .image20Parent7 {
+  margin-top: 48px !important;
+}
+
+.universityAndCollege.universityAndCollege .frameParent2 {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 48px !important;
+}
+
+.universityAndCollege.universityAndCollege .frameParent3,
+.universityAndCollege.universityAndCollege .frameParent4,
+.universityAndCollege.universityAndCollege .frameWrapper,
+.universityAndCollege.universityAndCollege .frameParent5,
+.universityAndCollege.universityAndCollege .frameParent6,
+.universityAndCollege.universityAndCollege .frameParent8,
+.universityAndCollege.universityAndCollege .frameParent9,
+.universityAndCollege.universityAndCollege .modernLearningForUniversitiParent,
+.universityAndCollege.universityAndCollege .frameParent45,
+.universityAndCollege.universityAndCollege .keyChallengesInHigherEducaWrapper,
+.universityAndCollege.universityAndCollege .frameParent46,
+.universityAndCollege.universityAndCollege .frameParent63,
+.universityAndCollege.universityAndCollege .frameParent65,
+.universityAndCollege.universityAndCollege .frameParent66,
+.universityAndCollege.universityAndCollege .frameParent67,
+.universityAndCollege.universityAndCollege .frameParent72,
+.universityAndCollege.universityAndCollege .benefitsForEducationalInstiParent,
+.universityAndCollege.universityAndCollege .frameParent73,
+.universityAndCollege.universityAndCollege .frameParent74,
+.universityAndCollege.universityAndCollege .frameWrapper23,
+.universityAndCollege.universityAndCollege .frameWrapper24,
+.universityAndCollege.universityAndCollege .frameWrapper25,
+.universityAndCollege.universityAndCollege .frameParent87,
+.universityAndCollege.universityAndCollege .frameParent88 {
+  position: relative !important;
+  inset: auto !important;
+  width: 100% !important;
+  min-width: 0 !important;
+  max-width: 100% !important;
+  height: auto !important;
+  min-height: 0 !important;
+  max-height: none !important;
+  transform: none !important;
+  margin: 0 !important;
+  box-sizing: border-box !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  gap: 24px !important;
+  padding: 0 !important;
+}
+
+.universityAndCollege.universityAndCollege .frameParent3 {
+  padding: 40px 32px 24px !important;
+  border-radius: 100px 0 100px 0 !important;
+  background: var(--uni-surface) !important;
+  box-shadow: var(--uni-raised) !important;
+  gap: 32px !important;
+}
+
+.universityAndCollege.universityAndCollege .frameParent4 {
+  max-width: 1092px !important;
+}
+
+.universityAndCollege.universityAndCollege .frameParent8,
+.universityAndCollege.universityAndCollege .frameParent44,
+.universityAndCollege.universityAndCollege .frameParent71,
+.universityAndCollege.universityAndCollege .frameParent63 {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 32px !important;
+}
+
+.universityAndCollege.universityAndCollege .modernLearningForUniversitiParent,
+.universityAndCollege.universityAndCollege .benefitsForEducationalInstiParent {
+  gap: 16px !important;
+}
+
+.universityAndCollege.universityAndCollege .benefitsForEducationalInstiParent br {
+  display: none !important;
+}
+
+.universityAndCollege.universityAndCollege .frameParent7 {
+  width: 100% !important;
+  display: flex !important;
+  flex-wrap: wrap !important;
+  justify-content: center !important;
+  gap: 24px !important;
+}
+
+.universityAndCollege.universityAndCollege .frameWrapper3 {
+  position: relative !important;
+  inset: auto !important;
+  width: 100% !important;
+  min-width: 0 !important;
+  max-width: 100% !important;
+  height: auto !important;
+  min-height: 0 !important;
+  max-height: none !important;
+  transform: none !important;
+  margin: 0 !important;
+  box-sizing: border-box !important;
+  aspect-ratio: 2.1 !important;
+  padding: 24px 32px !important;
+  flex-shrink: 0 !important;
+  border-radius: 500px !important;
+}
+
+.universityAndCollege.universityAndCollege .happyStudentsGraduationCereParent {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.universityAndCollege.universityAndCollege .empoweringHigherEducation,
+.universityAndCollege.universityAndCollege .modernLearningFor,
+.universityAndCollege.universityAndCollege .keyChallengesIn,
+.universityAndCollege.universityAndCollege .howNeurolxpSupports,
+.universityAndCollege.universityAndCollege .futureReadyUniversitiesStar {
+  position: relative !important;
+  inset: auto !important;
+  width: 100% !important;
+  min-width: 0 !important;
+  max-width: 100% !important;
+  height: auto !important;
+  min-height: 0 !important;
+  max-height: none !important;
+  transform: none !important;
+  margin: 0 !important;
+  box-sizing: border-box !important;
+  display: block !important;
+  padding: 0 !important;
+  font-size: 36px !important;
+  font-weight: 700 !important;
+  line-height: 48px !important;
+  letter-spacing: .02em !important;
+  white-space: normal !important;
+  overflow-wrap: break-word !important;
+  text-align: center !important;
+}
+
+.universityAndCollege.universityAndCollege .neurolxpEnablesUniversities,
+.universityAndCollege.universityAndCollege .neurolxpUnifiesContent,
+.universityAndCollege.universityAndCollege .neurolxpHelpsInstitutions,
+.universityAndCollege.universityAndCollege .institutionsUsingNeurolxp,
+.universityAndCollege.universityAndCollege .neurolxpHelpsUniversities {
+  position: relative !important;
+  inset: auto !important;
+  width: 100% !important;
+  min-width: 0 !important;
+  max-width: 100% !important;
+  height: auto !important;
+  min-height: 0 !important;
+  max-height: none !important;
+  transform: none !important;
+  margin: 0 !important;
+  box-sizing: border-box !important;
+  display: block !important;
+  padding: 0 !important;
+  font-size: 24px !important;
+  font-weight: 400 !important;
+  line-height: 32px !important;
+  letter-spacing: .02em !important;
+  white-space: normal !important;
+  overflow-wrap: break-word !important;
+  text-align: center !important;
+}
+
+.universityAndCollege.universityAndCollege .frameInner,
+.universityAndCollege.universityAndCollege .frameChild2,
+.universityAndCollege.universityAndCollege .frameChild21,
+.universityAndCollege.universityAndCollege .frameChild34,
+.universityAndCollege.universityAndCollege .futureReadyBadge,
+.universityAndCollege.universityAndCollege .keyBenefitsBadge {
+  position: relative !important;
+  inset: auto !important;
+  width: fit-content !important;
+  min-width: 0 !important;
+  max-width: 100% !important;
+  height: auto !important;
+  min-height: 50px !important;
+  max-height: none !important;
+  flex: 0 0 auto !important;
+  margin: 0 !important;
+  padding: 8px 24px !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  border: 0 !important;
+  border-radius: 28px !important;
+  background: var(--uni-surface) !important;
+  box-shadow: var(--uni-inset) !important;
+  color: var(--uni-blue) !important;
+  font-size: 24px !important;
+  font-weight: 600 !important;
+  line-height: 32px !important;
+  letter-spacing: .02em !important;
+  text-align: center !important;
+  white-space: normal !important;
+  transform: none !important;
+  transition: none !important;
+  animation: none !important;
+  cursor: default !important;
+}
+
+.universityAndCollege.universityAndCollege .frameInner:hover,
+.universityAndCollege.universityAndCollege .frameInner:active,
+.universityAndCollege.universityAndCollege .frameInner:focus,
+.universityAndCollege.universityAndCollege .frameChild2:hover,
+.universityAndCollege.universityAndCollege .frameChild2:active,
+.universityAndCollege.universityAndCollege .frameChild2:focus,
+.universityAndCollege.universityAndCollege .frameChild21:hover,
+.universityAndCollege.universityAndCollege .frameChild21:active,
+.universityAndCollege.universityAndCollege .frameChild21:focus,
+.universityAndCollege.universityAndCollege .frameChild34:hover,
+.universityAndCollege.universityAndCollege .frameChild34:active,
+.universityAndCollege.universityAndCollege .frameChild34:focus,
+.universityAndCollege.universityAndCollege .futureReadyBadge:hover,
+.universityAndCollege.universityAndCollege .futureReadyBadge:active,
+.universityAndCollege.universityAndCollege .futureReadyBadge:focus,
+.universityAndCollege.universityAndCollege .keyBenefitsBadge:hover,
+.universityAndCollege.universityAndCollege .keyBenefitsBadge:active,
+.universityAndCollege.universityAndCollege .keyBenefitsBadge:focus {
+  box-shadow: var(--uni-inset) !important;
+  transform: none !important;
+  color: var(--uni-blue) !important;
+}
+
+.universityAndCollege.universityAndCollege .frameIcon,
+.universityAndCollege.universityAndCollege .frameWrapper2 {
+  width: fit-content !important;
+  min-width: 203px !important;
+  max-width: 100% !important;
+  height: auto !important;
+  min-height: 60px !important;
+  flex: 0 1 auto !important;
+  padding: 14px 32px !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  border: 0 !important;
+  border-radius: 8px !important;
+  background: var(--uni-surface) !important;
+  box-shadow: var(--uni-raised) !important;
+  color: var(--uni-blue) !important;
+  font-size: 24px !important;
+  font-weight: 600 !important;
+  line-height: 30px !important;
+  letter-spacing: .02em !important;
+  text-align: center !important;
+  white-space: normal !important;
+  text-decoration: none !important;
+  cursor: pointer !important;
+  transform: none !important;
+  transition: box-shadow .22s ease !important;
+}
+
+.universityAndCollege.universityAndCollege .frameIcon:hover,
+.universityAndCollege.universityAndCollege .frameIcon:active,
+.universityAndCollege.universityAndCollege .frameWrapper2:hover,
+.universityAndCollege.universityAndCollege .frameWrapper2:active {
+  box-shadow: var(--uni-inset) !important;
+  transform: none !important;
+  color: var(--uni-blue) !important;
+}
+
+.universityAndCollege.universityAndCollege .frameIcon:focus-visible,
+.universityAndCollege.universityAndCollege .frameWrapper2:focus-visible {
+  outline: 3px solid var(--uni-blue) !important;
+  outline-offset: 4px !important;
+  box-shadow: var(--uni-inset) !important;
+}
+
+.universityAndCollege.universityAndCollege .startLearningWrapper,
+.universityAndCollege.universityAndCollege .startLearning {
+  width: auto !important;
+  min-width: 0 !important;
+  max-width: 100% !important;
+  color: inherit !important;
+  font-size: inherit !important;
+  font-weight: inherit !important;
+  line-height: inherit !important;
+  white-space: normal !important;
+  text-align: center !important;
+  justify-content: center !important;
+}
+
+.universityAndCollege.universityAndCollege .frameParent10 {
+  position: relative !important;
+  inset: auto !important;
+  width: 100% !important;
+  min-width: 0 !important;
+  max-width: 100% !important;
+  height: auto !important;
+  min-height: 0 !important;
+  max-height: none !important;
+  transform: none !important;
+  margin: 0 !important;
+  box-sizing: border-box !important;
+  display: grid !important;
+  grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+  grid-auto-rows: 1fr !important;
+  align-items: stretch !important;
+  gap: 24px !important;
+}
+
+.universityAndCollege.universityAndCollege .frameWrapper4 {
+  position: relative !important;
+  inset: auto !important;
+  width: 100% !important;
+  min-width: 0 !important;
+  max-width: 100% !important;
+  height: auto !important;
+  min-height: 0 !important;
+  max-height: none !important;
+  transform: none !important;
+  margin: 0 !important;
+  box-sizing: border-box !important;
+  display: flex !important;
+  padding: 24px 16px !important;
+  overflow: visible !important;
+}
+
+.universityAndCollege.universityAndCollege .frameParent11,
+.universityAndCollege.universityAndCollege .frameParent12 {
+  position: relative !important;
+  inset: auto !important;
+  width: 100% !important;
+  min-width: 0 !important;
+  max-width: 100% !important;
+  height: auto !important;
+  min-height: 0 !important;
+  max-height: none !important;
+  transform: none !important;
+  margin: 0 !important;
+  box-sizing: border-box !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  gap: 16px !important;
+  padding: 0 !important;
+}
+
+.universityAndCollege.universityAndCollege .frameParent11 {
+  height: 100% !important;
+}
+
+.universityAndCollege.universityAndCollege .frameChild3 {
+  position: relative !important;
+  inset: auto !important;
+  transform: none !important;
+  flex: 0 0 60px !important;
+  width: 60px !important;
+  height: 60px !important;
+}
+
+.universityAndCollege.universityAndCollege .smartLearning,
+.universityAndCollege.universityAndCollege .passiveLearning,
+.universityAndCollege.universityAndCollege .largeContentManagement,
+.universityAndCollege.universityAndCollege .diverseLearningNeeds,
+.universityAndCollege.universityAndCollege .studentProgressTracking,
+.universityAndCollege.universityAndCollege .careerReadiness,
+.universityAndCollege.universityAndCollege .courseAndContent,
+.universityAndCollege.universityAndCollege .digitalBlended,
+.universityAndCollege.universityAndCollege .interactiveLearningExperienc2,
+.universityAndCollege.universityAndCollege .personalizedLearningPathways2,
+.universityAndCollege.universityAndCollege .efficientContentManagement,
+.universityAndCollege.universityAndCollege .realTimePerformanceAnalytic {
+  position: relative !important;
+  inset: auto !important;
+  width: 100% !important;
+  min-width: 0 !important;
+  max-width: 100% !important;
+  height: auto !important;
+  min-height: 0 !important;
+  max-height: none !important;
+  transform: none !important;
+  margin: 0 !important;
+  box-sizing: border-box !important;
+  display: block !important;
+  padding: 0 !important;
+  font-size: 24px !important;
+  font-weight: 600 !important;
+  line-height: 32px !important;
+  letter-spacing: .02em !important;
+  white-space: normal !important;
+  overflow-wrap: break-word !important;
+  word-break: normal !important;
+  text-align: center !important;
+}
+
+.universityAndCollege.universityAndCollege .smartLearning,
+.universityAndCollege.universityAndCollege .passiveLearning,
+.universityAndCollege.universityAndCollege .largeContentManagement,
+.universityAndCollege.universityAndCollege .diverseLearningNeeds,
+.universityAndCollege.universityAndCollege .studentProgressTracking,
+.universityAndCollege.universityAndCollege .careerReadiness {
+  min-height: 64px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.universityAndCollege.universityAndCollege .flexibleLearningFor,
+.universityAndCollege.universityAndCollege .interactiveLearningWith,
+.universityAndCollege.universityAndCollege .centralizeCourseMaterials,
+.universityAndCollege.universityAndCollege .personalizedLearningPathways,
+.universityAndCollege.universityAndCollege .trackAttendanceCourse,
+.universityAndCollege.universityAndCollege .supportSkillDevelopment {
+  position: relative !important;
+  inset: auto !important;
+  width: 100% !important;
+  min-width: 0 !important;
+  max-width: 100% !important;
+  height: auto !important;
+  min-height: 0 !important;
+  max-height: none !important;
+  transform: none !important;
+  margin: 0 !important;
+  box-sizing: border-box !important;
+  display: block !important;
+  padding: 0 !important;
+  font-size: 20px !important;
+  font-weight: 400 !important;
+  line-height: 28px !important;
+  letter-spacing: .02em !important;
+  white-space: normal !important;
+  overflow-wrap: break-word !important;
+  word-break: normal !important;
+  text-align: center !important;
+}
+
+.universityAndCollege.universityAndCollege .rapidSkillChangesParent,
+.universityAndCollege.universityAndCollege .progressTrackingParent {
+  position: relative !important;
+  inset: auto !important;
+  width: 100% !important;
+  min-width: 0 !important;
+  max-width: 100% !important;
+  height: auto !important;
+  min-height: 0 !important;
+  max-height: none !important;
+  transform: none !important;
+  margin: 0 !important;
+  box-sizing: border-box !important;
+  display: grid !important;
+  grid-auto-rows: 1fr !important;
+  gap: 24px !important;
+  align-items: stretch !important;
+  padding: 0 !important;
+  overflow: visible !important;
+}
+
+.universityAndCollege.universityAndCollege .rapidSkillChangesParent {
+  grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+}
+
+.universityAndCollege.universityAndCollege .progressTrackingParent {
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  width: calc((100% - 24px) * 2 / 3) !important;
+  margin-inline: auto !important;
+}
+
+.universityAndCollege.universityAndCollege .rapidSkillChanges,
+.universityAndCollege.universityAndCollege .lowEngagementParent,
+.universityAndCollege.universityAndCollege .lowEngagement {
+  position: relative !important;
+  inset: auto !important;
+  width: 100% !important;
+  min-width: 0 !important;
+  max-width: 100% !important;
+  height: auto !important;
+  min-height: 0 !important;
+  max-height: none !important;
+  transform: none !important;
+  margin: 0 !important;
+  box-sizing: border-box !important;
+  display: flex !important;
+  flex-direction: column !important;
+  padding: 24px !important;
+  overflow: visible !important;
+}
+
+.universityAndCollege.universityAndCollege .rapidSkillChanges,
+.universityAndCollege.universityAndCollege .lowEngagement {
+  box-shadow: var(--uni-raised) !important;
+}
+
+.universityAndCollege.universityAndCollege .lowEngagementParent {
+  padding: 0 !important;
+}
+
+.universityAndCollege.universityAndCollege .lowEngagement {
+  flex: 1 1 auto !important;
+}
+
+.universityAndCollege.universityAndCollege .frameParent47,
+.universityAndCollege.universityAndCollege .frameParent51,
+.universityAndCollege.universityAndCollege .lowEngagementInner,
+.universityAndCollege.universityAndCollege .frameParent54,
+.universityAndCollege.universityAndCollege .frameWrapper9,
+.universityAndCollege.universityAndCollege .frameParent48,
+.universityAndCollege.universityAndCollege .frameParent49,
+.universityAndCollege.universityAndCollege .frameParent52,
+.universityAndCollege.universityAndCollege .frameParent55,
+.universityAndCollege.universityAndCollege .frameWrapper11,
+.universityAndCollege.universityAndCollege .frameWrapper12 {
+  position: relative !important;
+  inset: auto !important;
+  width: 100% !important;
+  min-width: 0 !important;
+  max-width: 100% !important;
+  height: auto !important;
+  min-height: 0 !important;
+  max-height: none !important;
+  transform: none !important;
+  margin: 0 !important;
+  box-sizing: border-box !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: flex-start !important;
+  padding: 0 !important;
+  gap: 16px !important;
+}
+
+.universityAndCollege.universityAndCollege .frameParent47,
+.universityAndCollege.universityAndCollege .frameParent51,
+.universityAndCollege.universityAndCollege .lowEngagementInner,
+.universityAndCollege.universityAndCollege .frameParent54 {
+  flex: 1 1 auto !important;
+  gap: 24px !important;
+}
+
+.universityAndCollege.universityAndCollege .frameParent50,
+.universityAndCollege.universityAndCollege .frameParent53 {
+  position: relative !important;
+  inset: auto !important;
+  width: 100% !important;
+  min-width: 0 !important;
+  max-width: 100% !important;
+  height: auto !important;
+  min-height: 0 !important;
+  max-height: none !important;
+  transform: none !important;
+  margin: 0 !important;
+  box-sizing: border-box !important;
+  display: flex !important;
+  flex: 1 0 auto !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding: 20px 16px !important;
+  min-height: 152px !important;
+  border-radius: 24px !important;
+  isolation: isolate !important;
+}
+
+.universityAndCollege.universityAndCollege .frameChild24 {
+  position: absolute !important;
+  inset: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  min-height: 0 !important;
+  z-index: 0 !important;
+  box-shadow: var(--uni-inset) !important;
+}
+
+.universityAndCollege.universityAndCollege .interactiveLearningWith,
+.universityAndCollege.universityAndCollege .centralizeCourseMaterials,
+.universityAndCollege.universityAndCollege .personalizedLearningPathways,
+.universityAndCollege.universityAndCollege .trackAttendanceCourse,
+.universityAndCollege.universityAndCollege .supportSkillDevelopment {
+  z-index: 1 !important;
+}
+
+.universityAndCollege.universityAndCollege .b {
+  top: 16px !important;
+  left: auto !important;
+  right: 16px !important;
+  font-size: 32px !important;
+  line-height: 40px !important;
+  pointer-events: none !important;
+}
+
+.universityAndCollege.universityAndCollege .universityAndCollegeChild {
+  padding: 0 0 32px !important;
+}
+
+.universityAndCollege.universityAndCollege .frameParent64 {
+  position: relative !important;
+  inset: auto !important;
+  width: 100% !important;
+  min-width: 0 !important;
+  max-width: 100% !important;
+  height: auto !important;
+  min-height: 0 !important;
+  max-height: none !important;
+  transform: none !important;
+  margin: 0 !important;
+  box-sizing: border-box !important;
+  display: grid !important;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) !important;
+  gap: 32px !important;
+  align-items: stretch !important;
+  padding: 32px !important;
+}
+
+.universityAndCollege.universityAndCollege .frameParent65,
+.universityAndCollege.universityAndCollege .frameParent66 {
+  align-items: flex-start !important;
+  justify-content: center !important;
+}
+
+.universityAndCollege.universityAndCollege .howNeurolxpSupports,
+.universityAndCollege.universityAndCollege .neurolxpHelpsInstitutions {
+  text-align: left !important;
+}
+
+.universityAndCollege.universityAndCollege .youngStudentSittingTableUsParent {
+  position: relative !important;
+  inset: auto !important;
+  width: 100% !important;
+  min-width: 0 !important;
+  max-width: 100% !important;
+  height: auto !important;
+  min-height: 0 !important;
+  max-height: none !important;
+  transform: none !important;
+  margin: 0 !important;
+  box-sizing: border-box !important;
+  min-height: 320px !important;
+  border-radius: 32px !important;
+  overflow: hidden !important;
+}
+
+.universityAndCollege.universityAndCollege .youngStudentSittingTableUsVideo {
+  position: absolute !important;
+  inset: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+}
+
+.universityAndCollege.universityAndCollege .frameParent67 {
+  max-width: 1040px !important;
+  padding-inline: 24px !important;
+  gap: 24px !important;
+}
+
+.universityAndCollege.universityAndCollege .frameParent68,
+.universityAndCollege.universityAndCollege .frameParent69 {
+  position: relative !important;
+  inset: auto !important;
+  width: 100% !important;
+  min-width: 0 !important;
+  max-width: 100% !important;
+  height: auto !important;
+  min-height: 0 !important;
+  max-height: none !important;
+  transform: none !important;
+  margin: 0 !important;
+  box-sizing: border-box !important;
+  display: grid !important;
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  grid-auto-rows: 1fr !important;
+  align-items: stretch !important;
+  gap: 24px !important;
+}
+
+.universityAndCollege.universityAndCollege .frameWrapper17 {
+  position: relative !important;
+  inset: auto !important;
+  width: 100% !important;
+  min-width: 0 !important;
+  max-width: 100% !important;
+  height: auto !important;
+  min-height: 0 !important;
+  max-height: none !important;
+  transform: none !important;
+  margin: 0 !important;
+  box-sizing: border-box !important;
+  display: flex !important;
+  padding: 0 !important;
+  overflow: hidden !important;
+}
+
+.universityAndCollege.universityAndCollege .wrapperLine2Parent {
+  position: relative !important;
+  inset: auto !important;
+  width: 100% !important;
+  min-width: 0 !important;
+  max-width: 100% !important;
+  height: auto !important;
+  min-height: 0 !important;
+  max-height: none !important;
+  transform: none !important;
+  margin: 0 !important;
+  box-sizing: border-box !important;
+  display: flex !important;
+  padding: 24px 24px 24px 40px !important;
+}
+
+.universityAndCollege.universityAndCollege .courseAndContentParent {
+  position: relative !important;
+  inset: auto !important;
+  width: 100% !important;
+  min-width: 0 !important;
+  max-width: 100% !important;
+  height: auto !important;
+  min-height: 0 !important;
+  max-height: none !important;
+  transform: none !important;
+  margin: 0 !important;
+  box-sizing: border-box !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: flex-start !important;
+  justify-content: flex-start !important;
+  padding: 0 !important;
+  gap: 12px !important;
+}
+
+.universityAndCollege.universityAndCollege .courseAndContent,
+.universityAndCollege.universityAndCollege .frameWrapper17 .flexibleLearningFor {
+  text-align: left !important;
+}
+
+.universityAndCollege.universityAndCollege .frameParent75 {
+  position: relative !important;
+  inset: auto !important;
+  width: 100% !important;
+  min-width: 0 !important;
+  max-width: 100% !important;
+  height: auto !important;
+  min-height: 0 !important;
+  max-height: none !important;
+  transform: none !important;
+  margin: 0 !important;
+  box-sizing: border-box !important;
+  display: grid !important;
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  grid-auto-rows: 1fr !important;
+  align-items: stretch !important;
+  gap: 24px !important;
+}
+
+.universityAndCollege.universityAndCollege .image20Parent {
+  position: relative !important;
+  inset: auto !important;
+  width: 100% !important;
+  min-width: 0 !important;
+  max-width: 100% !important;
+  height: auto !important;
+  min-height: 0 !important;
+  max-height: none !important;
+  transform: none !important;
+  margin: 0 !important;
+  box-sizing: border-box !important;
+  display: flex !important;
+  padding: 20px !important;
+  overflow: hidden !important;
+}
+
+.universityAndCollege.universityAndCollege .frameParent76 {
+  position: relative !important;
+  inset: auto !important;
+  width: 100% !important;
+  min-width: 0 !important;
+  max-width: 100% !important;
+  height: auto !important;
+  min-height: 0 !important;
+  max-height: none !important;
+  transform: none !important;
+  margin: 0 !important;
+  box-sizing: border-box !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: 24px !important;
+  padding: 0 !important;
+}
+
+.universityAndCollege.universityAndCollege .digitalBlended,
+.universityAndCollege.universityAndCollege .interactiveLearningExperienc2,
+.universityAndCollege.universityAndCollege .personalizedLearningPathways2,
+.universityAndCollege.universityAndCollege .efficientContentManagement,
+.universityAndCollege.universityAndCollege .realTimePerformanceAnalytic {
+  flex: 1 1 0 !important;
+  text-align: left !important;
+}
+
+.universityAndCollege.universityAndCollege .image20Parent7 {
+  display: grid !important;
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  align-items: stretch !important;
+  gap: 32px !important;
+  padding: 32px !important;
+  overflow: hidden !important;
+}
+
+.universityAndCollege.universityAndCollege .image21Parent {
+  position: relative !important;
+  inset: auto !important;
+  width: 100% !important;
+  min-width: 0 !important;
+  max-width: 100% !important;
+  height: auto !important;
+  min-height: 0 !important;
+  max-height: none !important;
+  transform: none !important;
+  margin: 0 !important;
+  box-sizing: border-box !important;
+  min-height: 380px !important;
+  border-radius: 50px 0 50px 0 !important;
+  overflow: hidden !important;
+}
+
+.universityAndCollege.universityAndCollege .image21,
+.universityAndCollege.universityAndCollege .image209 {
+  position: absolute !important;
+  inset: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  pointer-events: none !important;
+}
+
+.universityAndCollege.universityAndCollege .happyCollegeStudentsWithBoIcon {
+  position: absolute !important;
+  inset: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  border-radius: inherit !important;
+  transform: none !important;
+  object-fit: cover !important;
+}
+
+.universityAndCollege.universityAndCollege .frameWrapper23 {
+  justify-content: center !important;
+  z-index: 1 !important;
+}
+
+.universityAndCollege.universityAndCollege .frameWrapper24,
+.universityAndCollege.universityAndCollege .frameWrapper25,
+.universityAndCollege.universityAndCollege .frameParent87,
+.universityAndCollege.universityAndCollege .frameParent88 {
+  align-items: flex-start !important;
+}
+
+.universityAndCollege.universityAndCollege .futureReadyUniversitiesStar,
+.universityAndCollege.universityAndCollege .neurolxpHelpsUniversities {
+  text-align: left !important;
+}
+
+.universityAndCollege.universityAndCollege .frameWrapper4:hover,
+.universityAndCollege.universityAndCollege .frameWrapper4:nth-child(even):hover,
+.universityAndCollege.universityAndCollege .image20Parent:hover {
+  transform: none !important;
+  box-shadow: var(--uni-inset) !important;
+}
+
+.universityAndCollege.universityAndCollege .smartLearning:hover {
+  transform: none !important;
+}
+
+@media (max-width: 1100px) {
+.universityAndCollege.universityAndCollege .frameParent10 {
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+}
+
+.universityAndCollege.universityAndCollege .rapidSkillChangesParent {
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+}
+
+.universityAndCollege.universityAndCollege .rapidSkillChangesParent > :last-child {
+  grid-column: 1 / -1 !important;
+  width: calc((100% - 24px) / 2) !important;
+  justify-self: center !important;
+}
+
+.universityAndCollege.universityAndCollege .progressTrackingParent {
+  width: 100% !important;
+}
+
+.universityAndCollege.universityAndCollege .frameParent64,
+.universityAndCollege.universityAndCollege .image20Parent7 {
+  grid-template-columns: 1fr !important;
+}
+
+.universityAndCollege.universityAndCollege .frameParent65,
+.universityAndCollege.universityAndCollege .frameParent66,
+.universityAndCollege.universityAndCollege .frameWrapper24,
+.universityAndCollege.universityAndCollege .frameWrapper25,
+.universityAndCollege.universityAndCollege .frameParent87,
+.universityAndCollege.universityAndCollege .frameParent88 {
+  align-items: center !important;
+}
+
+.universityAndCollege.universityAndCollege .howNeurolxpSupports,
+.universityAndCollege.universityAndCollege .neurolxpHelpsInstitutions,
+.universityAndCollege.universityAndCollege .futureReadyUniversitiesStar,
+.universityAndCollege.universityAndCollege .neurolxpHelpsUniversities {
+  text-align: center !important;
+}
+
+}
+@media (max-width: 767.98px) {
+.universityAndCollege.universityAndCollege { padding: 24px 16px 48px !important; font-size: 16px !important; }
+.universityAndCollege.universityAndCollege .frameDiv {
+  font-size: 14px !important;
+  line-height: 22px !important;
+  gap: 6px !important;
+}
+
+.universityAndCollege.universityAndCollege .frameDiv img,
+.universityAndCollege.universityAndCollege .frameDiv svg {
+  width: 14px !important;
+  height: 14px !important;
+  flex-basis: 14px !important;
+}
+
+.universityAndCollege.universityAndCollege .frameParent3 {
+  padding: 28px 16px 20px !important;
+  border-radius: 48px 0 48px 0 !important;
+  gap: 24px !important;
+}
+
+.universityAndCollege.universityAndCollege .frameWrapper3 {
+  aspect-ratio: 1.5 !important;
+  padding: 10px !important;
+  border-radius: 80px !important;
+}
+
+.universityAndCollege.universityAndCollege .empoweringHigherEducation,
+.universityAndCollege.universityAndCollege .modernLearningFor,
+.universityAndCollege.universityAndCollege .keyChallengesIn,
+.universityAndCollege.universityAndCollege .howNeurolxpSupports,
+.universityAndCollege.universityAndCollege .futureReadyUniversitiesStar {
+  font-size: 24px !important;
+  line-height: 32px !important;
+}
+
+.universityAndCollege.universityAndCollege .empoweringHigherEducation {
+  font-size: 24px !important;
+  line-height: 32px !important;
+}
+
+.universityAndCollege.universityAndCollege .neurolxpEnablesUniversities,
+.universityAndCollege.universityAndCollege .neurolxpUnifiesContent,
+.universityAndCollege.universityAndCollege .neurolxpHelpsInstitutions,
+.universityAndCollege.universityAndCollege .institutionsUsingNeurolxp,
+.universityAndCollege.universityAndCollege .neurolxpHelpsUniversities {
+  font-size: 16px !important;
+  line-height: 24px !important;
+}
+
+.universityAndCollege.universityAndCollege .frameInner,
+.universityAndCollege.universityAndCollege .frameChild2,
+.universityAndCollege.universityAndCollege .frameChild21,
+.universityAndCollege.universityAndCollege .frameChild34,
+.universityAndCollege.universityAndCollege .futureReadyBadge,
+.universityAndCollege.universityAndCollege .keyBenefitsBadge {
+  min-height: 44px !important;
+  padding: 8px 18px !important;
+  font-size: 16px !important;
+  line-height: 24px !important;
+}
+
+.universityAndCollege.universityAndCollege .frameIcon,
+.universityAndCollege.universityAndCollege .frameWrapper2 {
+  min-width: min(190px, 100%) !important;
+  min-height: 54px !important;
+  padding: 12px 24px !important;
+  font-size: 18px !important;
+  line-height: 24px !important;
+}
+
+.universityAndCollege.universityAndCollege .frameParent7 {
+  gap: 16px !important;
+}
+
+.universityAndCollege.universityAndCollege .smartLearning,
+.universityAndCollege.universityAndCollege .passiveLearning,
+.universityAndCollege.universityAndCollege .largeContentManagement,
+.universityAndCollege.universityAndCollege .diverseLearningNeeds,
+.universityAndCollege.universityAndCollege .studentProgressTracking,
+.universityAndCollege.universityAndCollege .careerReadiness,
+.universityAndCollege.universityAndCollege .courseAndContent,
+.universityAndCollege.universityAndCollege .digitalBlended,
+.universityAndCollege.universityAndCollege .interactiveLearningExperienc2,
+.universityAndCollege.universityAndCollege .personalizedLearningPathways2,
+.universityAndCollege.universityAndCollege .efficientContentManagement,
+.universityAndCollege.universityAndCollege .realTimePerformanceAnalytic {
+  font-size: 20px !important;
+  line-height: 28px !important;
+}
+
+.universityAndCollege.universityAndCollege .flexibleLearningFor,
+.universityAndCollege.universityAndCollege .interactiveLearningWith,
+.universityAndCollege.universityAndCollege .centralizeCourseMaterials,
+.universityAndCollege.universityAndCollege .personalizedLearningPathways,
+.universityAndCollege.universityAndCollege .trackAttendanceCourse,
+.universityAndCollege.universityAndCollege .supportSkillDevelopment {
+  font-size: 16px !important;
+  line-height: 24px !important;
+}
+
+.universityAndCollege.universityAndCollege .smartLearning,
+.universityAndCollege.universityAndCollege .passiveLearning,
+.universityAndCollege.universityAndCollege .largeContentManagement,
+.universityAndCollege.universityAndCollege .diverseLearningNeeds,
+.universityAndCollege.universityAndCollege .studentProgressTracking,
+.universityAndCollege.universityAndCollege .careerReadiness {
+  min-height: 56px !important;
+}
+
+.universityAndCollege.universityAndCollege .rapidSkillChangesParent,
+.universityAndCollege.universityAndCollege .progressTrackingParent,
+.universityAndCollege.universityAndCollege .frameParent68,
+.universityAndCollege.universityAndCollege .frameParent69,
+.universityAndCollege.universityAndCollege .frameParent75 {
+  grid-template-columns: 1fr !important;
+  width: 100% !important;
+  gap: 24px !important;
+}
+
+.universityAndCollege.universityAndCollege .rapidSkillChangesParent > :last-child {
+  grid-column: auto !important;
+  width: 100% !important;
+}
+
+.universityAndCollege.universityAndCollege .frameParent46 {
+  padding: 0 !important;
+}
+
+.universityAndCollege.universityAndCollege .frameParent64 {
+  padding: 24px 16px !important;
+  gap: 24px !important;
+}
+
+.universityAndCollege.universityAndCollege .frameParent67 {
+  padding-inline: 16px !important;
+}
+
+.universityAndCollege.universityAndCollege .frameParent50,
+.universityAndCollege.universityAndCollege .frameParent53 {
+  min-height: 0 !important;
+}
+
+.universityAndCollege.universityAndCollege .frameParent76 {
+  gap: 16px !important;
+}
+
+.universityAndCollege.universityAndCollege .frameChild37 {
+  width: 54px !important;
+  height: 54px !important;
+  flex: 0 0 54px !important;
+}
+
+.universityAndCollege.universityAndCollege .benefitIcon {
+  width: 32px !important;
+  height: 32px !important;
+}
+
+.universityAndCollege.universityAndCollege .image20Parent7 {
+  padding: 20px 16px !important;
+  gap: 24px !important;
+}
+
+.universityAndCollege.universityAndCollege .image21Parent {
+  min-height: 0 !important;
+  height: auto !important;
+  aspect-ratio: 1.35 !important;
+}
+
+.universityAndCollege.universityAndCollege .youngStudentSittingTableUsParent {
+  min-height: 0 !important;
+  aspect-ratio: 1.35 !important;
+}
+
+}
+@media (max-width: 540px) {
+.universityAndCollege.universityAndCollege .frameParent10 {
+  grid-template-columns: 1fr !important;
+}
+
+.universityAndCollege.universityAndCollege .smartLearning {
+  min-height: 0 !important;
+}
+
+}
+@media (max-width: 360px) {
+.universityAndCollege.universityAndCollege .frameDiv {
+  font-size: 12px !important;
+  line-height: 18px !important;
+  gap: 4px !important;
+}
+
+.universityAndCollege.universityAndCollege .empoweringHigherEducation {
+  font-size: 30px !important;
+  line-height: 38px !important;
+}
+
+}/* Support the final panel when its text is nested inside the image wrapper. */
+.universityAndCollege.universityAndCollege .image20Parent7:has(> .image21Parent .frameWrapper23) {
+  display: block !important;
+}
+.universityAndCollege.universityAndCollege .image21Parent:has(.frameWrapper23) {
+  display: grid !important;
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  align-items: stretch !important;
+  gap: 32px !important;
+  padding: 24px !important;
+  height: auto !important;
+  aspect-ratio: auto !important;
+}
+.universityAndCollege.universityAndCollege .image21Parent:has(.frameWrapper23) .happyCollegeStudentsWithBoIcon {
+  position: relative !important;
+  inset: auto !important;
+  grid-column: 2 !important;
+  grid-row: 1 !important;
+  min-height: 320px !important;
+  border-radius: 32px !important;
+}
+.universityAndCollege.universityAndCollege .image21Parent > .frameWrapper23 {
+  grid-column: 1 !important;
+  grid-row: 1 !important;
+}
+@media (max-width: 1100px) {
+  .universityAndCollege.universityAndCollege .image21Parent:has(.frameWrapper23) {
+    grid-template-columns: 1fr !important;
+    padding: 16px !important;
+    gap: 24px !important;
+  }
+  .universityAndCollege.universityAndCollege .image21Parent:has(.frameWrapper23) .happyCollegeStudentsWithBoIcon {
+    grid-column: 1 !important;
+    grid-row: 1 !important;
+    height: auto !important;
+    min-height: 0 !important;
+    aspect-ratio: 1.5 !important;
+  }
+  .universityAndCollege.universityAndCollege .image21Parent > .frameWrapper23 {
+    grid-row: 2 !important;
+  }
+}
+
+/* Requested correction: uniform challenge cards and original final section. */
+.universityAndCollege.universityAndCollege.universityAndCollege .frameParent46 .frameParent47 ,
+.universityAndCollege.universityAndCollege.universityAndCollege .frameParent46 .frameParent51 ,
+.universityAndCollege.universityAndCollege.universityAndCollege .frameParent46 .lowEngagementInner ,
+.universityAndCollege.universityAndCollege.universityAndCollege .frameParent46 .frameParent54 ,
+.universityAndCollege.universityAndCollege.universityAndCollege .frameParent46 .frameWrapper9 ,
+.universityAndCollege.universityAndCollege.universityAndCollege .frameParent46 .frameParent48 ,
+.universityAndCollege.universityAndCollege.universityAndCollege .frameParent46 .frameParent49 ,
+.universityAndCollege.universityAndCollege.universityAndCollege .frameParent46 .frameParent52 ,
+.universityAndCollege.universityAndCollege.universityAndCollege .frameParent46 .frameParent55 ,
+.universityAndCollege.universityAndCollege.universityAndCollege .frameParent46 .frameWrapper11 ,
+.universityAndCollege.universityAndCollege.universityAndCollege .frameParent46 .frameWrapper12 ,
+.universityAndCollege.universityAndCollege.universityAndCollege .frameParent46 .distributedTeamsInner ,
+.universityAndCollege.universityAndCollege.universityAndCollege .frameParent46 .frameWrapper10 ,
+.universityAndCollege.universityAndCollege.universityAndCollege .frameParent46 .frameChild25 {
+  display: contents !important;
+}
+.universityAndCollege.universityAndCollege.universityAndCollege .frameParent46 .frameChild23 {
+  display: contents !important;
+}
+.universityAndCollege.universityAndCollege.universityAndCollege .frameParent46 .rapidSkillChanges ,
+.universityAndCollege.universityAndCollege.universityAndCollege .frameParent46 .lowEngagement {
+  display: grid !important;
+  grid-template-columns: minmax(0, 1fr) !important;
+  grid-template-rows: 63px minmax(64px, auto) minmax(152px, 1fr) !important;
+  align-items: stretch !important;
+  justify-items: center !important;
+  gap: 16px !important;
+  padding: 24px !important;
+  width: 100% !important;
+  min-width: 0 !important;
+  max-width: 100% !important;
+  height: 100% !important;
+  min-height: 359px !important;
+}
+.universityAndCollege.universityAndCollege.universityAndCollege .frameParent46 .lowEngagementParent {
+  display: flex !important;
+  padding: 0 !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  height: 100% !important;
+}
+.universityAndCollege.universityAndCollege.universityAndCollege .frameParent46 .challengeIcon {
+  grid-row: 1 !important;
+  align-self: center !important;
+  justify-self: center !important;
+}
+.universityAndCollege.universityAndCollege.universityAndCollege .frameParent46 .passiveLearning ,
+.universityAndCollege.universityAndCollege.universityAndCollege .frameParent46 .largeContentManagement ,
+.universityAndCollege.universityAndCollege.universityAndCollege .frameParent46 .diverseLearningNeeds ,
+.universityAndCollege.universityAndCollege.universityAndCollege .frameParent46 .studentProgressTracking ,
+.universityAndCollege.universityAndCollege.universityAndCollege .frameParent46 .careerReadiness {
+  grid-row: 2 !important;
+  width: 100% !important;
+  height: auto !important;
+  min-height: 64px !important;
+  margin: 0 !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  line-height: 32px !important;
+  text-align: center !important;
+  transform: none !important;
+}
+.universityAndCollege.universityAndCollege.universityAndCollege .frameParent46 .frameParent50 ,
+.universityAndCollege.universityAndCollege.universityAndCollege .frameParent46 .frameParent53 {
+  grid-row: 3 !important;
+  width: 100% !important;
+  height: auto !important;
+  min-height: 152px !important;
+  margin: 0 !important;
+  padding: 20px 16px !important;
+  align-self: stretch !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+.universityAndCollege.universityAndCollege.universityAndCollege .frameParent46 .progressTrackingParent {
+  width: calc((100% - 48px) / 3 * 2 + 24px) !important;
+}
+.universityAndCollege.universityAndCollege.universityAndCollege .image20Parent7 {
+  position: relative !important;
+  display: block !important;
+  width: 100% !important;
+  height: 614px !important;
+  min-height: 0 !important;
+  margin-top: 48px !important;
+  padding: 32px !important;
+  border-radius: 32px !important;
+  overflow: hidden !important;
+}
+.universityAndCollege.universityAndCollege.universityAndCollege .image21Parent {
+  position: absolute !important;
+  inset: 32px !important;
+  display: block !important;
+  width: auto !important;
+  height: auto !important;
+  min-height: 0 !important;
+  max-width: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  aspect-ratio: auto !important;
+  border-radius: 50px 0 50px 0 !important;
+  overflow: hidden !important;
+}
+.universityAndCollege.universityAndCollege.universityAndCollege .image20Parent7:has(> .image21Parent .frameWrapper23) {
+  display: block !important;
+}
+.universityAndCollege.universityAndCollege.universityAndCollege .image21Parent:has(.frameWrapper23) {
+  display: block !important;
+  padding: 0 !important;
+  height: auto !important;
+  aspect-ratio: auto !important;
+}
+.universityAndCollege.universityAndCollege.universityAndCollege .image21 {
+  position: absolute !important;
+  inset: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+}
+.universityAndCollege.universityAndCollege.universityAndCollege .happyCollegeStudentsWithBoIcon ,
+.universityAndCollege.universityAndCollege.universityAndCollege .image21Parent:has(.frameWrapper23) .happyCollegeStudentsWithBoIcon {
+  position: absolute !important;
+  top: 0 !important;
+  right: 0 !important;
+  bottom: 0 !important;
+  left: auto !important;
+  width: 49.6% !important;
+  height: 100% !important;
+  min-height: 0 !important;
+  border-radius: 0 0 0 200px !important;
+  object-fit: cover !important;
+  object-position: center !important;
+  transform: none !important;
+  aspect-ratio: auto !important;
+}
+.universityAndCollege.universityAndCollege.universityAndCollege .frameWrapper23 {
+  position: absolute !important;
+  inset: auto !important;
+  top: 50% !important;
+  left: 68px !important;
+  width: calc(50% - 84px) !important;
+  max-width: none !important;
+  height: auto !important;
+  transform: translateY(-50%) !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  display: flex !important;
+  align-items: center !important;
+  z-index: 1 !important;
+}
+.universityAndCollege.universityAndCollege.universityAndCollege .image21Parent > .frameWrapper23 {
+  left: 36px !important;
+  width: calc(50% - 52px) !important;
+}
+.universityAndCollege.universityAndCollege.universityAndCollege .frameWrapper24 ,
+.universityAndCollege.universityAndCollege.universityAndCollege .frameWrapper25 ,
+.universityAndCollege.universityAndCollege.universityAndCollege .frameParent87 ,
+.universityAndCollege.universityAndCollege.universityAndCollege .frameParent88 {
+  position: relative !important;
+  inset: auto !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  height: auto !important;
+  min-height: 0 !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: flex-start !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  text-align: left !important;
+}
+.universityAndCollege.universityAndCollege.universityAndCollege .frameParent87 ,
+.universityAndCollege.universityAndCollege.universityAndCollege .frameParent88 {
+  gap: 32px !important;
+}
+.universityAndCollege.universityAndCollege.universityAndCollege .futureReadyUniversitiesStar {
+  width: 100% !important;
+  max-width: 100% !important;
+  height: auto !important;
+  font-size: 36px !important;
+  line-height: 48px !important;
+  text-align: left !important;
+}
+.universityAndCollege.universityAndCollege.universityAndCollege .neurolxpHelpsUniversities {
+  width: 100% !important;
+  max-width: 100% !important;
+  height: auto !important;
+  font-size: 24px !important;
+  line-height: 36px !important;
+  text-align: left !important;
+}
+@media (max-width: 1100px) {
+.universityAndCollege.universityAndCollege.universityAndCollege .frameParent46 .progressTrackingParent {
+  width: 100% !important;
+}
+}
+@media (max-width: 900px) {
+.universityAndCollege.universityAndCollege.universityAndCollege .image20Parent7 {
+  height: auto !important;
+  display: flex !important;
+  flex-direction: column !important;
+  padding: 18px !important;
+  gap: 24px !important;
+}
+.universityAndCollege.universityAndCollege.universityAndCollege .image21Parent {
+  position: relative !important;
+  inset: auto !important;
+  width: 100% !important;
+  height: auto !important;
+  min-height: 0 !important;
+  aspect-ratio: 1.5 !important;
+  margin: 0 !important;
+  border-radius: 32px 0 32px 0 !important;
+}
+.universityAndCollege.universityAndCollege.universityAndCollege .happyCollegeStudentsWithBoIcon {
+  position: absolute !important;
+  inset: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  border-radius: inherit !important;
+}
+.universityAndCollege.universityAndCollege.universityAndCollege .frameWrapper23 ,
+.universityAndCollege.universityAndCollege.universityAndCollege .image21Parent > .frameWrapper23 {
+  position: relative !important;
+  inset: auto !important;
+  width: 100% !important;
+  height: auto !important;
+  transform: none !important;
+}
+.universityAndCollege.universityAndCollege.universityAndCollege .frameWrapper24 ,
+.universityAndCollege.universityAndCollege.universityAndCollege .frameWrapper25 ,
+.universityAndCollege.universityAndCollege.universityAndCollege .frameParent87 ,
+.universityAndCollege.universityAndCollege.universityAndCollege .frameParent88 {
+  align-items: center !important;
+  text-align: center !important;
+}
+.universityAndCollege.universityAndCollege.universityAndCollege .frameParent87 ,
+.universityAndCollege.universityAndCollege.universityAndCollege .frameParent88 {
+  gap: 16px !important;
+}
+.universityAndCollege.universityAndCollege.universityAndCollege .futureReadyUniversitiesStar ,
+.universityAndCollege.universityAndCollege.universityAndCollege .neurolxpHelpsUniversities {
+  text-align: center !important;
+}
+.universityAndCollege.universityAndCollege.universityAndCollege .image21Parent:has(.frameWrapper23) {
+  display: flex !important;
+  flex-direction: column !important;
+  aspect-ratio: auto !important;
+  gap: 24px !important;
+  padding: 16px !important;
+}
+.universityAndCollege.universityAndCollege.universityAndCollege .image21Parent:has(.frameWrapper23) .happyCollegeStudentsWithBoIcon {
+  position: relative !important;
+  inset: auto !important;
+  width: 100% !important;
+  height: auto !important;
+  min-height: 0 !important;
+  aspect-ratio: 1.5 !important;
+  border-radius: 32px 0 32px 0 !important;
+}
+}
+@media (max-width: 767.98px) {
+.universityAndCollege.universityAndCollege.universityAndCollege .frameParent46 .rapidSkillChanges ,
+.universityAndCollege.universityAndCollege.universityAndCollege .frameParent46 .lowEngagement {
+  grid-template-rows: 63px minmax(56px, auto) minmax(136px, 1fr) !important;
+  min-height: 335px !important;
+  padding: 24px !important;
+}
+.universityAndCollege.universityAndCollege.universityAndCollege .frameParent46 .passiveLearning ,
+.universityAndCollege.universityAndCollege.universityAndCollege .frameParent46 .largeContentManagement ,
+.universityAndCollege.universityAndCollege.universityAndCollege .frameParent46 .diverseLearningNeeds ,
+.universityAndCollege.universityAndCollege.universityAndCollege .frameParent46 .studentProgressTracking ,
+.universityAndCollege.universityAndCollege.universityAndCollege .frameParent46 .careerReadiness {
+  min-height: 56px !important;
+  line-height: 28px !important;
+}
+.universityAndCollege.universityAndCollege.universityAndCollege .frameParent46 .frameParent50 ,
+.universityAndCollege.universityAndCollege.universityAndCollege .frameParent46 .frameParent53 {
+  min-height: 136px !important;
+}
+.universityAndCollege.universityAndCollege.universityAndCollege .futureReadyUniversitiesStar {
+  font-size: 24px !important;
+  line-height: 32px !important;
+}
+.universityAndCollege.universityAndCollege.universityAndCollege .neurolxpHelpsUniversities {
+  font-size: 16px !important;
+  line-height: 24px !important;
+}
+}
+
+/* Four-line challenge descriptions: equal text areas, no clipping. */
+.universityAndCollege.universityAndCollege.universityAndCollege .frameParent46 .interactiveLearningWith,
+.universityAndCollege.universityAndCollege.universityAndCollege .frameParent46 .centralizeCourseMaterials,
+.universityAndCollege.universityAndCollege.universityAndCollege .frameParent46 .personalizedLearningPathways,
+.universityAndCollege.universityAndCollege.universityAndCollege .frameParent46 .trackAttendanceCourse,
+.universityAndCollege.universityAndCollege.universityAndCollege .frameParent46 .supportSkillDevelopment {
+  width: 100% !important;
+  height: auto !important;
+  min-height: 112px !important;
+  margin: 0 auto !important;
+  padding: 0 !important;
+  font-size: 20px !important;
+  line-height: 28px !important;
+  font-weight: 400 !important;
+  text-align: center !important;
+  white-space: normal !important;
+  text-wrap: balance !important;
+  overflow: visible !important;
+  overflow-wrap: normal !important;
+  word-break: normal !important;
+  transform: none !important;
+}
+
+/* This shorter description needs a narrower measure to form four lines. */
+.universityAndCollege.universityAndCollege.universityAndCollege .frameParent46 .personalizedLearningPathways {
+  max-width: 18ch !important;
+}
+
+@media (max-width: 767.98px) {
+  .universityAndCollege.universityAndCollege.universityAndCollege .frameParent46 .interactiveLearningWith,
+  .universityAndCollege.universityAndCollege.universityAndCollege .frameParent46 .centralizeCourseMaterials,
+  .universityAndCollege.universityAndCollege.universityAndCollege .frameParent46 .personalizedLearningPathways,
+  .universityAndCollege.universityAndCollege.universityAndCollege .frameParent46 .trackAttendanceCourse,
+  .universityAndCollege.universityAndCollege.universityAndCollege .frameParent46 .supportSkillDevelopment {
+    min-height: 96px !important;
+    font-size: 16px !important;
+    line-height: 24px !important;
+  }
+}

@@ -6301,3 +6301,638 @@
       4px 4px 8px #c4c4c4 !important;
   }
 }
+
+/* ==========================================================================
+   FINAL REQUESTED CONSISTENCY OVERRIDES — E-LEARNING PAGE
+   ONLY:
+   1) Badges match the previously approved inset pill style.
+   2) CTA buttons match the previously approved raised/inset style.
+   3) Every word is selectable.
+   NO spacing, section, card, image, typography-size or layout changes.
+   ========================================================================== */
+
+
+/* ==========================================================================
+   1) EVERY WORD SELECTABLE
+   ========================================================================== */
+body:has(.eLearning),
+body:has(.eLearning) * {
+  -webkit-user-select: text !important;
+  -moz-user-select: text !important;
+  user-select: text !important;
+  -webkit-touch-callout: default;
+}
+
+.eLearning,
+.eLearning *,
+.eLearning *::before,
+.eLearning *::after {
+  -webkit-user-select: text !important;
+  -moz-user-select: text !important;
+  user-select: text !important;
+}
+
+
+/* ==========================================================================
+   2) BADGES — SAME AS PREVIOUS APPROVED PAGES
+   Inset neumorphic pill + blue text + NO hover/movement.
+   ========================================================================== */
+.eLearning :is(
+  .frameChild,
+  .keyChallengesBadge,
+  .platformFeaturesBadge,
+  .idealForBadge,
+  .neuroLxpBadge
+) {
+  width: fit-content !important;
+  max-width: 100% !important;
+  min-width: 0 !important;
+
+  height: 50px !important;
+  min-height: 50px !important;
+
+  padding: 9px 24px !important;
+  box-sizing: border-box !important;
+
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+
+  border: 0 !important;
+  border-radius: 28px !important;
+
+  background: #dfe6e9 !important;
+  box-shadow:
+    inset -4px -4px 4px #ffffff,
+    inset 4px 4px 4px rgba(196, 196, 196, 0.8) !important;
+
+  color: #2d4cc8 !important;
+
+  font-family: "Segoe UI", "Inter", sans-serif !important;
+  font-style: normal !important;
+  font-weight: 600 !important;
+  font-size: 24px !important;
+  line-height: 32px !important;
+  letter-spacing: 0.03em !important;
+
+  text-align: center !important;
+  white-space: nowrap !important;
+
+  filter: none !important;
+  text-shadow: none !important;
+
+  transform: none !important;
+  transition: none !important;
+  animation: none !important;
+
+  cursor: default !important;
+}
+
+/* Badges are labels, not buttons. */
+.eLearning :is(
+  .frameChild,
+  .keyChallengesBadge,
+  .platformFeaturesBadge,
+  .idealForBadge,
+  .neuroLxpBadge
+):is(:hover, :active) {
+  background: #dfe6e9 !important;
+  color: #2d4cc8 !important;
+
+  box-shadow:
+    inset -4px -4px 4px #ffffff,
+    inset 4px 4px 4px rgba(196, 196, 196, 0.8) !important;
+
+  transform: none !important;
+}
+
+/* Preserve the existing trademark treatment inside the NeuroLXP badge.
+   This does not alter the badge layout itself. */
+.eLearning .neuroLxpBadge sup {
+  flex-shrink: 0 !important;
+}
+
+
+/* ==========================================================================
+   3) CTA BUTTONS — SAME AS PREVIOUS APPROVED PAGES
+   Raised normally, inset on hover/press, NO jumping/translate movement.
+   ========================================================================== */
+.eLearning :is(
+  .bookDemoButton,
+  .frameWrapper2,
+  .frameParent35 .frameWrapper18
+) {
+  appearance: none !important;
+  -webkit-appearance: none !important;
+
+  border: 0 !important;
+  border-radius: 8px !important;
+
+  background: #dfe6e9 !important;
+  color: #2d4cc8 !important;
+
+  box-shadow:
+    -4px -4px 4px #ffffff,
+    4px 4px 4px #c6c6c9 !important;
+
+  font-family: "Segoe UI", "Inter", sans-serif !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.02em !important;
+
+  text-decoration: none !important;
+  text-align: center !important;
+
+  cursor: pointer !important;
+
+  transform: none !important;
+  transition: box-shadow 0.2s ease !important;
+}
+
+/* Keep labels centered and blue. */
+.eLearning :is(
+  .bookDemoButton,
+  .frameWrapper2,
+  .frameParent35 .frameWrapper18,
+  .startLearning,
+  .getStarted
+) {
+  color: #2d4cc8 !important;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .eLearning :is(
+    .bookDemoButton,
+    .frameWrapper2,
+    .frameParent35 .frameWrapper18
+  ):hover {
+    box-shadow:
+      inset -4px -4px 4px #ffffff,
+      inset 4px 4px 4px rgba(196, 196, 196, 0.8) !important;
+
+    color: #2d4cc8 !important;
+    transform: none !important;
+  }
+}
+
+.eLearning :is(
+  .bookDemoButton,
+  .frameWrapper2,
+  .frameParent35 .frameWrapper18
+):active {
+  box-shadow:
+    inset -4px -4px 4px #ffffff,
+    inset 4px 4px 4px rgba(196, 196, 196, 0.8) !important;
+
+  color: #2d4cc8 !important;
+  transform: none !important;
+}
+
+/* Keep the existing accessible focus treatment without moving the button. */
+.eLearning :is(
+  .bookDemoButton,
+  .frameWrapper2,
+  .frameParent35 .frameWrapper18
+):focus-visible {
+  outline: 3px solid rgba(45, 76, 200, 0.35) !important;
+  outline-offset: 3px !important;
+  transform: none !important;
+}
+
+
+/* ==========================================================================
+   RESPONSIVE BADGE SCALE
+   Same style; only prevents badge overflow on smaller devices.
+   ========================================================================== */
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .eLearning :is(
+    .frameChild,
+    .keyChallengesBadge,
+    .platformFeaturesBadge,
+    .idealForBadge,
+    .neuroLxpBadge
+  ) {
+    height: auto !important;
+    min-height: 48px !important;
+    padding: 9px 22px !important;
+
+    font-size: 20px !important;
+    line-height: 28px !important;
+
+    white-space: normal !important;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .eLearning :is(
+    .frameChild,
+    .keyChallengesBadge,
+    .platformFeaturesBadge,
+    .idealForBadge,
+    .neuroLxpBadge
+  ) {
+    width: fit-content !important;
+    max-width: calc(100% - 24px) !important;
+
+    height: auto !important;
+    min-height: 46px !important;
+
+    padding: 9px 20px !important;
+
+    font-size: 16px !important;
+    line-height: 24px !important;
+
+    white-space: normal !important;
+  }
+}
+
+/* ==========================================================================
+   BREADCRUMB — MATCH PREVIOUS PAGES
+   E-Learning page only.
+   No hero, section, card, badge, button, image or page-spacing changes.
+   ========================================================================== */
+
+/* Desktop */
+@media screen and (min-width: 1200px) {
+  .eLearning > .frameParent5 {
+    position: relative !important;
+    top: auto !important;
+    right: auto !important;
+    bottom: auto !important;
+    left: auto !important;
+
+    width: 1280px !important;
+    max-width: calc(100% - 64px) !important;
+    height: 24px !important;
+
+    margin: 32px auto 0 !important;
+    padding: 0 !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+    flex-wrap: nowrap !important;
+
+    gap: 8px !important;
+
+    font-family: "Segoe UI", "Inter", sans-serif !important;
+    font-size: 16px !important;
+    line-height: 24px !important;
+    font-weight: 400 !important;
+    letter-spacing: 0.02em !important;
+
+    color: #2f3547 !important;
+    text-align: left !important;
+
+    transform: none !important;
+    z-index: 5 !important;
+  }
+
+  /* Previous / parent breadcrumb item */
+  .eLearning > .frameParent5 .ourCustomersWrapper,
+  .eLearning > .frameParent5 .solutionsFor {
+    display: inline-flex !important;
+    align-items: center !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    font-family: "Segoe UI", "Inter", sans-serif !important;
+    font-size: 16px !important;
+    line-height: 24px !important;
+    font-weight: 400 !important;
+
+    color: #2f3547 !important;
+    white-space: nowrap !important;
+  }
+
+  /* Current breadcrumb + separator group */
+  .eLearning > .frameParent5 .arrowRightDoubleGroup {
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 8px !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    font-family: "Segoe UI", "Inter", sans-serif !important;
+    font-size: 16px !important;
+    line-height: 24px !important;
+    font-weight: 600 !important;
+
+    color: #243fa8 !important;
+    white-space: nowrap !important;
+  }
+
+  .eLearning > .frameParent5 img,
+  .eLearning > .frameParent5 svg {
+    width: 16px !important;
+    height: 16px !important;
+    flex: 0 0 16px !important;
+    object-fit: contain !important;
+  }
+}
+
+
+/* Tablet / small laptop */
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .eLearning > .frameParent5 {
+    width: 100% !important;
+    max-width: 1280px !important;
+    height: auto !important;
+
+    margin: 24px auto 0 !important;
+    padding: 0 !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+    flex-wrap: wrap !important;
+
+    gap: 8px !important;
+
+    font-family: "Segoe UI", "Inter", sans-serif !important;
+    font-size: 15px !important;
+    line-height: 24px !important;
+    color: #2f3547 !important;
+    text-align: left !important;
+  }
+
+  .eLearning > .frameParent5 .ourCustomersWrapper,
+  .eLearning > .frameParent5 .solutionsFor,
+  .eLearning > .frameParent5 .arrowRightDoubleGroup {
+    font-family: "Segoe UI", "Inter", sans-serif !important;
+    font-size: 15px !important;
+    line-height: 24px !important;
+  }
+
+  .eLearning > .frameParent5 .ourCustomersWrapper,
+  .eLearning > .frameParent5 .solutionsFor {
+    color: #2f3547 !important;
+    font-weight: 400 !important;
+  }
+
+  .eLearning > .frameParent5 .arrowRightDoubleGroup {
+    color: #243fa8 !important;
+    font-weight: 600 !important;
+    gap: 8px !important;
+  }
+
+  .eLearning > .frameParent5 img,
+  .eLearning > .frameParent5 svg {
+    width: 15px !important;
+    height: 15px !important;
+  }
+}
+
+
+/* Mobile — same compact breadcrumb treatment as the previous pages */
+@media screen and (max-width: 767px) {
+  .eLearning > .frameParent5 {
+    width: 100% !important;
+    height: auto !important;
+
+    margin: 8px auto 12px !important;
+    padding: 0 2px !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+    flex-wrap: wrap !important;
+
+    gap: 6px !important;
+
+    font-family: "Segoe UI", "Inter", sans-serif !important;
+    font-size: 11.5px !important;
+    line-height: 18px !important;
+    color: #2f3547 !important;
+    text-align: left !important;
+  }
+
+  .eLearning > .frameParent5 .ourCustomersWrapper,
+  .eLearning > .frameParent5 .solutionsFor,
+  .eLearning > .frameParent5 .arrowRightDoubleGroup {
+    font-family: "Segoe UI", "Inter", sans-serif !important;
+    font-size: 11.5px !important;
+    line-height: 18px !important;
+  }
+
+  .eLearning > .frameParent5 .ourCustomersWrapper,
+  .eLearning > .frameParent5 .solutionsFor {
+    color: #2f3547 !important;
+    font-weight: 400 !important;
+  }
+
+  .eLearning > .frameParent5 .arrowRightDoubleGroup {
+    color: #243fa8 !important;
+    font-weight: 600 !important;
+    gap: 6px !important;
+  }
+
+  .eLearning > .frameParent5 img,
+  .eLearning > .frameParent5 svg {
+    width: 12px !important;
+    height: 12px !important;
+    flex: 0 0 12px !important;
+  }
+}
+
+/* ==========================================================================
+   FINAL SMALL CORRECTIONS — E-LEARNING PAGE
+   ONLY:
+   1) Last/current breadcrumb text = blue + bold.
+   2) Reduce ONLY heading -> subheading spacing.
+   Section-to-section spacing, badge spacing, cards and layouts stay unchanged.
+   ========================================================================== */
+
+
+/* ==========================================================================
+   1) CURRENT / LAST BREADCRUMB ITEM
+   ========================================================================== */
+.eLearning > .frameParent5 .arrowRightDoubleGroup {
+  color: #2d4cc8 !important;
+  font-weight: 700 !important;
+}
+
+.eLearning > .frameParent5 .arrowRightDoubleGroup * {
+  color: #2d4cc8 !important;
+  font-weight: 700 !important;
+}
+
+
+/* ==========================================================================
+   2) HEADING -> SUBHEADING SPACING ONLY
+   Do NOT change outer section gaps or badge -> heading gaps.
+   ========================================================================== */
+
+/* Hero:
+   "Deliver Engaging Digital Learning..." -> supporting paragraph */
+.eLearning .deliverEngagingDigitalContainer + .neurolxpEmpowersOrganization {
+  margin-top: -16px !important;
+}
+
+
+/* Key Challenges:
+   "Addressing Key Challenges in E-Learning" -> supporting paragraph */
+.eLearning .addressingKeyChallengesInEParent {
+  gap: 16px !important;
+}
+
+
+/* Ideal For:
+   heading -> "NeuroLXP supports..." supporting paragraph
+   Scoped to the Ideal For heading block only. */
+@media screen and (min-width: 1200px) {
+  .eLearning .frameParent15 .frameParent16 > .frameParent7
+  .addressingKeyChallengesInEParent {
+    gap: 10px !important;
+  }
+}
+
+
+/* Final CTA:
+   "Future-Ready E-Learning..." heading group -> supporting paragraph.
+   This changes only that inner text gap. */
+.eLearning .frameParent35 .frameParent37 {
+  gap: 16px !important;
+}
+
+
+/* Keep the same compact heading/subheading relationship responsively. */
+@media screen and (max-width: 1199px) {
+  .eLearning .addressingKeyChallengesInEParent {
+    gap: 12px !important;
+  }
+
+  .eLearning .frameParent35 .frameParent37 {
+    gap: 12px !important;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .eLearning .deliverEngagingDigitalContainer + .neurolxpEmpowersOrganization {
+    margin-top: -8px !important;
+  }
+
+  .eLearning .addressingKeyChallengesInEParent {
+    gap: 8px !important;
+  }
+
+  .eLearning .frameParent35 .frameParent37 {
+    gap: 10px !important;
+  }
+}
+
+/* ==========================================================================
+   FINAL MOBILE KEY CHALLENGES TEXT SPACING FIX
+   Scope: ONLY the "Key Challenges" intro shown in the screenshot.
+   Badge, cards, section-to-section spacing and all other sections untouched.
+   ========================================================================== */
+
+@media screen and (max-width: 767px) {
+
+  /* Let the Key Challenges intro size itself only from its real content. */
+  .eLearning > .frameParent6 > .frameParent7 {
+    width: 100% !important;
+    max-width: 100% !important;
+
+    height: auto !important;
+    min-height: 0 !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+
+    gap: 12px !important;
+  }
+
+  /* Heading + supporting paragraph wrapper */
+  .eLearning > .frameParent6 > .frameParent7
+  .addressingKeyChallengesInEParent {
+    width: 100% !important;
+    max-width: 100% !important;
+
+    height: auto !important;
+    min-height: 0 !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+
+    gap: 12px !important;
+
+    position: relative !important;
+    top: auto !important;
+    right: auto !important;
+    bottom: auto !important;
+    left: auto !important;
+
+    transform: none !important;
+  }
+
+  /* Heading — remove old fixed box that was creating false spacing. */
+  .eLearning > .frameParent6 > .frameParent7
+  .addressingKeyChallenges {
+    width: 100% !important;
+    max-width: 100% !important;
+
+    height: auto !important;
+    min-height: 0 !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    position: static !important;
+    inset: auto !important;
+    transform: none !important;
+
+    display: block !important;
+
+    text-align: center !important;
+
+    font-size: 29px !important;
+    line-height: 38px !important;
+  }
+
+  /* Subtitle — place it immediately below the heading with only the 12px gap. */
+  .eLearning > .frameParent6 > .frameParent7
+  .neurolxpHelpsOrganizations {
+    width: 100% !important;
+    max-width: 100% !important;
+
+    height: auto !important;
+    min-height: 0 !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    position: static !important;
+    inset: auto !important;
+    transform: none !important;
+
+    display: block !important;
+
+    text-align: center !important;
+
+    font-size: 17px !important;
+    line-height: 27px !important;
+  }
+}
+
+
+/* Slightly smaller heading only on very narrow phones so it remains neat.
+   This does not affect spacing or any other section. */
+@media screen and (max-width: 420px) {
+  .eLearning > .frameParent6 > .frameParent7
+  .addressingKeyChallenges {
+    font-size: 27px !important;
+    line-height: 35px !important;
+  }
+}
+

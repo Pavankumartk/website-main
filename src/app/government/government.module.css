@@ -5160,3 +5160,411 @@
     padding: 16px 20px !important;
   }
 }
+
+/* ==========================================================================
+   REFERENCE-MATCHED BUTTONS + BADGES + SELECTABLE TEXT
+   Only these requested visual/interaction rules are overridden below.
+   Existing layout, cards, sections, spacing, images and content stay unchanged.
+   ========================================================================== */
+
+/* Make every word on this page selectable, including shared header/footer text. */
+body:has(.governmentStateInstitution),
+body:has(.governmentStateInstitution) * {
+  -webkit-user-select: text !important;
+  -moz-user-select: text !important;
+  user-select: text !important;
+  -webkit-touch-callout: default;
+}
+
+.governmentStateInstitution,
+.governmentStateInstitution * {
+  -webkit-user-select: text !important;
+  -moz-user-select: text !important;
+  user-select: text !important;
+  -webkit-touch-callout: default;
+}
+
+/* --------------------------------------------------------------------------
+   BUTTON — match the reference page's raised blue neumorphic CTA.
+   -------------------------------------------------------------------------- */
+.governmentStateInstitution .frameWrapper2 {
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.governmentStateInstitution .frameWrapper2 .frameIcon {
+  appearance: none;
+  -webkit-appearance: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+
+  border: 0 !important;
+  border-radius: 8px !important;
+  background: #dfe6e9 !important;
+  color: #2d4cc8 !important;
+
+  box-shadow:
+    -4px -4px 4px #ffffff,
+    4px 4px 4px #c6c6c9 !important;
+
+  font-family: "Segoe UI", "Inter", sans-serif !important;
+  font-size: 24px !important;
+  line-height: 32px !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.02em !important;
+  text-align: center;
+  text-decoration: none;
+
+  transform: none !important;
+  transition: box-shadow 0.2s ease !important;
+
+  /* Override the old user-select:none without affecting click behaviour. */
+  -webkit-user-select: text !important;
+  -moz-user-select: text !important;
+  user-select: text !important;
+}
+
+/* Reference hover / pressed state: inset, with no movement or jump. */
+@media (hover: hover) and (pointer: fine) {
+  .governmentStateInstitution .frameWrapper2:hover .frameIcon {
+    box-shadow:
+      inset -4px -4px 4px #ffffff,
+      inset 4px 4px 4px rgba(196, 196, 196, 0.8) !important;
+    color: #2d4cc8 !important;
+    transform: none !important;
+  }
+}
+
+.governmentStateInstitution .frameWrapper2:active .frameIcon,
+.governmentStateInstitution .frameWrapper2.exploreLearningPressed .frameIcon {
+  box-shadow:
+    inset -4px -4px 4px #ffffff,
+    inset 4px 4px 4px rgba(196, 196, 196, 0.8) !important;
+  color: #2d4cc8 !important;
+  transform: none !important;
+}
+
+.governmentStateInstitution .frameWrapper2:focus-visible {
+  outline: 3px solid #2d4cc8;
+  outline-offset: 3px;
+}
+
+/* --------------------------------------------------------------------------
+   BADGES — match the reference page's inset blue pill treatment.
+   No badge hover/press movement or animation.
+   -------------------------------------------------------------------------- */
+.governmentStateInstitution :is(
+  .frameInner,
+  .useCasesPill,
+  .benefitsPill,
+  .frameChild22,
+  .frameChild23
+) {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  box-sizing: border-box !important;
+
+  width: fit-content !important;
+  max-width: 100% !important;
+  min-width: 0 !important;
+  height: auto !important;
+  min-height: 56px !important;
+  padding: 12px 36px !important;
+
+  border: 0 !important;
+  border-radius: 999px !important;
+  background: #dfe6e9 !important;
+  color: #2d4cc8 !important;
+
+  box-shadow:
+    inset -4px -4px 4px #ffffff,
+    inset 4px 4px 4px rgba(196, 196, 196, 0.8) !important;
+
+  font-family: "Segoe UI", "Inter", sans-serif !important;
+  font-size: 24px !important;
+  line-height: 1.3 !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.03em !important;
+  text-align: center !important;
+  white-space: normal !important;
+
+  filter: none !important;
+  text-shadow: none !important;
+  transform: none !important;
+  animation: none !important;
+  transition: none !important;
+  cursor: text;
+}
+
+/* Keep badge appearance unchanged on hover/active. */
+.governmentStateInstitution :is(
+  .frameInner,
+  .useCasesPill,
+  .benefitsPill,
+  .frameChild22,
+  .frameChild23
+):is(:hover, :active) {
+  background: #dfe6e9 !important;
+  color: #2d4cc8 !important;
+  box-shadow:
+    inset -4px -4px 4px #ffffff,
+    inset 4px 4px 4px rgba(196, 196, 196, 0.8) !important;
+  transform: none !important;
+}
+
+/* Match the reference page's responsive button/badge sizing only. */
+@media (min-width: 701px) and (max-width: 1024px) {
+  .governmentStateInstitution .frameWrapper2 .frameIcon {
+    font-size: 20px !important;
+    line-height: 28px !important;
+  }
+}
+
+@media (max-width: 700px) {
+  .governmentStateInstitution .frameWrapper2 .frameIcon {
+    font-size: 18px !important;
+    line-height: 26px !important;
+  }
+
+  .governmentStateInstitution :is(
+    .frameInner,
+    .useCasesPill,
+    .benefitsPill,
+    .frameChild22,
+    .frameChild23
+  ) {
+    min-height: 48px !important;
+    padding: 10px 26px !important;
+    font-size: 20px !important;
+    line-height: 1.3 !important;
+  }
+}
+
+/* ==========================================================================
+   FINAL DESKTOP HERO ALIGNMENT FIX
+   Only the requested hero changes:
+   - "Workforce" starts on the second heading line.
+   - CTA gets more width so its text never looks cramped/overlapped.
+   - Right circular hero image is lifted slightly upward.
+   Tablet/mobile and all other sections remain unchanged.
+   ========================================================================== */
+@media screen and (min-width: 901px) {
+
+  /* Force:
+     Line 1: Empowering Government
+     Line 2: Workforce Learning
+  */
+  .governmentStateInstitution .empoweringGovernmentWorkforcContainer {
+    width: 620px !important;
+    max-width: 620px !important;
+    height: auto !important;
+  }
+
+  /* Give the CTA text comfortable horizontal space. */
+  .governmentStateInstitution .frameWrapper2 {
+    width: 340px !important;
+    min-width: 340px !important;
+  }
+
+  .governmentStateInstitution .frameWrapper2 .frameIcon {
+    width: 340px !important;
+    min-width: 340px !important;
+    height: 60px !important;
+    padding: 0 28px !important;
+    white-space: nowrap !important;
+    overflow: visible !important;
+  }
+
+  /* Lift the right hero image a little so it sits cleanly inside the hero. */
+  .governmentStateInstitution .ellipseParent {
+    top: 4px !important;
+  }
+}
+
+/* ==========================================================================
+   FINAL DESKTOP FIX — KEY CHALLENGE CARDS 3 & 4
+   Only aligns Policy Compliance and Multiple Departments with the other cards.
+   Card sizes, colors, grid placement, other sections, tablet and mobile stay unchanged.
+   ========================================================================== */
+@media screen and (min-width: 901px) {
+
+  /* Cards 3 and 4 have one-line descriptions, while the surrounding cards
+     use two lines. Reserve the same text area so the action + arrow sit on
+     exactly the same horizontal level as the neighboring cards. */
+  .challengeGrid > .challengeCard:nth-child(3) .trainingAtScaleGroup,
+  .challengeGrid > .challengeCard:nth-child(4) .trainingAtScaleGroup {
+    height: 92px !important;
+    min-height: 92px !important;
+    flex: 0 0 92px !important;
+  }
+
+  .challengeGrid > .challengeCard:nth-child(3) .trainGovernmentTeams,
+  .challengeGrid > .challengeCard:nth-child(3) .ensureRegulatoryCompliance,
+  .challengeGrid > .challengeCard:nth-child(4) .trainGovernmentTeams,
+  .challengeGrid > .challengeCard:nth-child(4) .ensureRegulatoryCompliance {
+    min-height: 56px !important;
+    height: 56px !important;
+    display: flex !important;
+    align-items: flex-start !important;
+    justify-content: center !important;
+  }
+
+  /* Keep the lower action block centered after reserving the uniform text area. */
+  .challengeGrid > .challengeCard:nth-child(3) .challengeToggle,
+  .challengeGrid > .challengeCard:nth-child(4) .challengeToggle {
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+}
+
+/* ==========================================================================
+   FINAL DESKTOP UNIFORMITY FIX — CARD 3 + CARD 4
+   Make the description text wrap to two lines exactly like the other cards.
+   No other card/section/layout changes.
+   ========================================================================== */
+@media screen and (min-width: 901px) {
+
+  /* Restore the same title + description area height used by the other cards. */
+  .challengeGrid > .challengeCard:nth-child(3) .trainingAtScaleGroup,
+  .challengeGrid > .challengeCard:nth-child(4) .trainingAtScaleGroup {
+    height: 116px !important;
+    min-height: 116px !important;
+    flex: 0 0 116px !important;
+  }
+
+  /* Card 3: Policy Compliance
+     Card 4: Multiple Departments
+     Narrow only their description text so it cleanly becomes two lines. */
+  .challengeGrid > .challengeCard:nth-child(3) :is(
+    .ensureRegulatoryCompliance,
+    .trainGovernmentTeams
+  ),
+  .challengeGrid > .challengeCard:nth-child(4) :is(
+    .ensureRegulatoryCompliance,
+    .trainGovernmentTeams
+  ) {
+    width: 210px !important;
+    max-width: 210px !important;
+    min-width: 210px !important;
+
+    height: 60px !important;
+    min-height: 60px !important;
+
+    margin-left: auto !important;
+    margin-right: auto !important;
+
+    display: block !important;
+    white-space: normal !important;
+    overflow-wrap: normal !important;
+    word-break: normal !important;
+
+    line-height: 30px !important;
+    text-align: center !important;
+  }
+
+  /* Keep the action area exactly aligned with the other cards. */
+  .challengeGrid > .challengeCard:nth-child(3) .challengeToggle,
+  .challengeGrid > .challengeCard:nth-child(4) .challengeToggle {
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+}
+
+/* ==========================================================================
+   FINAL CARD 3/4 SPACING NORMALIZATION + CURSOR CLEANUP
+   - Cards 3 and 4 now use the same compact vertical rhythm as cards 1, 2 and 5.
+   - Their descriptions remain exactly two lines.
+   - Pointer cursor appears only on genuinely clickable elements.
+   ========================================================================== */
+
+@media screen and (min-width: 901px) {
+
+  /* Match cards 1, 2 and 5:
+     30px title + 6px gap + 56px two-line description = 92px total. */
+  .challengeGrid > .challengeCard:nth-child(3) .trainingAtScaleGroup,
+  .challengeGrid > .challengeCard:nth-child(4) .trainingAtScaleGroup {
+    height: 92px !important;
+    min-height: 92px !important;
+    flex: 0 0 92px !important;
+
+    gap: 6px !important;
+    margin: 0 auto !important;
+    padding: 0 !important;
+  }
+
+  /* Keep the two descriptions on two clean lines,
+     using the same 28px line-height as the other cards. */
+  .challengeGrid > .challengeCard:nth-child(3) :is(
+    .ensureRegulatoryCompliance,
+    .trainGovernmentTeams
+  ),
+  .challengeGrid > .challengeCard:nth-child(4) :is(
+    .ensureRegulatoryCompliance,
+    .trainGovernmentTeams
+  ) {
+    width: 210px !important;
+    max-width: 210px !important;
+    min-width: 0 !important;
+
+    height: 56px !important;
+    min-height: 56px !important;
+
+    margin: 0 auto !important;
+    padding: 0 !important;
+
+    display: block !important;
+    line-height: 28px !important;
+    text-align: center !important;
+
+    white-space: normal !important;
+    overflow-wrap: normal !important;
+    word-break: normal !important;
+  }
+
+  /* Same spacing before "How NeuroLXP Helps" as the remaining cards. */
+  .challengeGrid > .challengeCard:nth-child(3) .challengeToggle,
+  .challengeGrid > .challengeCard:nth-child(4) .challengeToggle {
+    margin: 0 auto !important;
+    padding: 0 !important;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   CURSOR CLEANUP
+   Non-clickable content keeps the normal arrow cursor.
+   Text remains selectable.
+   -------------------------------------------------------------------------- */
+.governmentStateInstitution,
+.governmentStateInstitution * {
+  cursor: default !important;
+}
+
+/* Keep the hand cursor ONLY for real interactive controls. */
+.governmentStateInstitution :is(
+  a[href],
+  button,
+  input[type="button"],
+  input[type="submit"],
+  input[type="reset"],
+  select,
+  [role="button"],
+  .frameWrapper2,
+  .challengeToggle
+) {
+  cursor: pointer !important;
+}
+
+/* Badges are selectable but are not clickable. */
+.governmentStateInstitution :is(
+  .frameInner,
+  .useCasesPill,
+  .benefitsPill,
+  .frameChild22,
+  .frameChild23
+) {
+  cursor: default !important;
+}
+

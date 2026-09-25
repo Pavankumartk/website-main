@@ -368,7 +368,34 @@ const NGO: NextPage = () => {
                 </div>
                 <div className={styles.frameParent38}>
                     <div className={styles.frameParent39}>
-                        <div className={styles.frameChild21}>NeuroLXP<sup className={styles.neurolxpTrademark}>TM</sup></div>
+                        <div
+                                    className={styles.frameChild21}
+                                    style={{
+                                        display: "inline-flex",
+                                        alignItems: "center",
+                                        justifyContent: "center",
+                                        overflow: "visible",
+                                    }}
+                                >
+                                    <span>NeuroLXP</span>
+                                    <sup
+                                        aria-label="trademark"
+                                        style={{
+                                            display: "inline-block",
+                                            fontSize: "14px",
+                                            lineHeight: "14px",
+                                            fontWeight: 700,
+                                            marginLeft: "3px",
+                                            position: "relative",
+                                            top: "-7px",
+                                            color: "#2D4CC8",
+                                            flexShrink: 0,
+                                            whiteSpace: "nowrap",
+                                        }}
+                                    >
+                                        TM
+                                    </sup>
+                                </div>
                         <div className={styles.enablingLearningForSocialIParent}>
                             <h2 className={styles.enablingLearningFor} style={{ margin: 0, fontWeight: 700 }}>Enabling Learning for Social Impact</h2>
                             <div className={styles.withFlexibleLearning}>With flexible learning tools, collaborative knowledge sharing, and scalable training capabilities, NeuroLXP helps nonprofit organizations build stronger teams, empower communities, and amplify their social impact through learning.<br /><br /><br /><br /></div>

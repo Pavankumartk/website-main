@@ -45,7 +45,21 @@ const RetailAndHealthCare: NextPage = () => {
   return (
     <>
       <Header />
-    <main className={`${styles.retailAndHealthCare} ${openRetailCard ? styles.retailDropdownOpen : ""}`}>
+    <main
+      className={`${styles.retailAndHealthCare} ${openRetailCard ? styles.retailDropdownOpen : ""}`}
+      onClickCapture={(event) => {
+        const selection = window.getSelection();
+        if (
+          selection &&
+          !selection.isCollapsed &&
+          selection.toString().trim() &&
+          selection.containsNode(event.target as Node, true)
+        ) {
+          event.preventDefault();
+          event.stopPropagation();
+        }
+      }}
+    >
       <div className={styles.retailHealthcare}>
         <div className={styles.frameDiv}>
           <div className={styles.ourCustomersWrapper}>
@@ -76,6 +90,7 @@ const RetailAndHealthCare: NextPage = () => {
               <div className={styles.frameWrapper}>
                 <div className={styles.frameParent4}>
                   <div className={styles.frameParent5}>
+                    <span className={styles.selectableBadgeText}>Retail &amp; Healthcare Solutions</span>
                     <Image src="/assets/retail and helath/transparent.webp" className={styles.frameInner} width={386.2} height={50.3} sizes="100vw" alt="" />
                     <h1 className={styles.scalableLearningForContainer} style={{ margin: 0 }}>
                       <span className={styles.scalableLearningFor}>{`Scalable Learning for `}</span>
@@ -169,6 +184,7 @@ const RetailAndHealthCare: NextPage = () => {
         </div>
         <div className={styles.frameParent8}>
           <div className={styles.frameParent9}>
+            <span className={styles.selectableBadgeText}>Retail Learning</span>
             <Image src="/images/transparent.webp" className={styles.frameChild3} width={222.2} height={50.2} sizes="100vw" alt="" />
             <div className={styles.empoweringSmarterRetailLearParent}>
               <h2 className={styles.empoweringSmarterRetail} style={{ margin: 0 }}>
@@ -238,6 +254,7 @@ const RetailAndHealthCare: NextPage = () => {
           <div className={styles.rectangle} />
           <div className={styles.image20} />
           <div className={styles.frameParent14}>
+            <span className={styles.selectableBadgeText}>Retail Excellence</span>
             <Image src="/images/transparent.webp" className={styles.frameChild7} width={235} height={50.2} sizes="100vw" alt="" />
             <h2 className={styles.empoweringSmarterRetail2} style={{ margin: 0 }}>
               Empowering Smarter Retail Learning
@@ -253,6 +270,7 @@ const RetailAndHealthCare: NextPage = () => {
         </div>
         <div className={styles.frameParent15}>
           <div className={styles.frameParent16}>
+            <span className={styles.selectableBadgeText}>Retail Benefits</span>
             <Image src="/images/transparent.webp" className={styles.frameChild8} width={209.8} height={50.2} sizes="100vw" alt="" />
             <h2 className={styles.benefitsForRetail} style={{ margin: 0 }}>
               Benefits for Retail Organizations
@@ -348,6 +366,7 @@ const RetailAndHealthCare: NextPage = () => {
             </div>
           </div>
           <div className={styles.frameParent27}>
+            <span className={styles.selectableBadgeText}>Healthcare Learning</span>
             <Image src="/assets/retail and helath/transparent.webp" className={styles.frameChild16} width={281.6} height={50.2} sizes="100vw" alt="" />
             <h2 className={styles.smarterHealthcareLearning} style={{ margin: 0 }}>
               Smarter Healthcare Learning
@@ -365,6 +384,7 @@ const RetailAndHealthCare: NextPage = () => {
           <div className={styles.rectangle} />
           <div className={styles.image20} />
           <div className={styles.frameParent28}>
+            <span className={styles.selectableBadgeText}>Retail Excellence</span>
             <Image src="/assets/retail and helath/transparent.webp" className={styles.frameChild7} width={235} height={50.2} sizes="100vw" alt="" />
             <h2 className={styles.empoweringHealthcareOrganiza} style={{ margin: 0 }}>
               Empowering Healthcare Organizations
@@ -377,6 +397,7 @@ const RetailAndHealthCare: NextPage = () => {
         </div>
         <div className={styles.frameParent29}>
           <div className={styles.frameParent30}>
+            <span className={styles.selectableBadgeText}>Healthcare Benefits</span>
             <Image src="/images/transparent.webp" className={styles.frameChild18} width={282} height={50.2} sizes="100vw" alt="" />
             <div className={styles.benefitsForHealthcareOrganiParent}>
               <h2 className={styles.benefitsForHealthcare} style={{ margin: 0 }}>
@@ -448,6 +469,7 @@ const RetailAndHealthCare: NextPage = () => {
             <div className={`${styles.frameParent34} ${styles.retailFinalVideoContent}`}>
               <div className={styles.frameParent4}>
                 <div className={styles.frameParent36}>
+                  <span className={styles.selectableBadgeText}>NeuroLXP</span>
                   <Image src="/images/transparent.webp" className={styles.frameChild32} width={170.7} height={50.1} sizes="100vw" alt="" />
                   <h2 className={styles.poweringLearningFor} style={{ margin: 0 }}>
                     Powering Learning for Retail and Healthcare
