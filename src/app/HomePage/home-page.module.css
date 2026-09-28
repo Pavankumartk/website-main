@@ -141,6 +141,13 @@ a:focus-visible {
   object-position: 50% 10%;
 }
 
+/* First and seventh hero photos: shift slightly right within the hero frame. */
+.hero-slide:nth-child(1) .hero-slide-image,
+.hero-slide:nth-child(7) .hero-slide-image {
+  transform: translateX(3%) scale(1.06);
+  transform-origin: center center;
+}
+
 .hero-slide:nth-child(4) .hero-slide-image {
   /* Preserve the top of the photo so the rear learner's head stays visible. */
   object-position: 50% 0%;
