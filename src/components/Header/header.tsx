@@ -360,7 +360,7 @@ export default function Header() {
 
   useEffect(() => {
     const desktopMedia =
-      window.matchMedia("(min-width: 1101px)");
+      window.matchMedia("(min-width: 1024px)");
 
     const syncResponsiveState = (
       event?: MediaQueryListEvent
@@ -1164,12 +1164,7 @@ export default function Header() {
 
       {mobileOpen && (
         <div className="nlxp-header-mobile-panel">
-          {navItems
-            .filter(
-              (item) =>
-                item.label !== "Home"
-            )
-            .map((item) => {
+          {navItems.map((item) => {
               if (item.type === "link") {
                 return (
                   <Link

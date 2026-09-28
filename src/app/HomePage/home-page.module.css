@@ -141,11 +141,17 @@ a:focus-visible {
   object-position: 50% 10%;
 }
 
-/* First and seventh hero photos: shift slightly right within the hero frame. */
-.hero-slide:nth-child(1) .hero-slide-image,
+/* Preserve the top of both photos and retain the rightward shift. */
+.hero-slide:nth-child(1) .hero-slide-image {
+  object-position: 50% 0%;
+  transform: translate(3%, 6px) scale(1.06);
+  transform-origin: center top;
+}
+
 .hero-slide:nth-child(7) .hero-slide-image {
-  transform: translateX(3%) scale(1.06);
-  transform-origin: center center;
+  object-position: 50% 0%;
+  transform: translate(3%, 12px) scale(1.06);
+  transform-origin: center top;
 }
 
 .hero-slide:nth-child(4) .hero-slide-image {
@@ -233,7 +239,7 @@ a:focus-visible {
   color: #31344b;
   text-align: center;
   width: 100%;
-  text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25), 0px 4px 8px rgba(0, 0, 0, 0.25);
+  text-shadow: none;
   font-size: 36px;
   line-height: 40px;
   margin: 0;
@@ -940,7 +946,7 @@ a:focus-visible {
   letter-spacing: 0.03em;
   text-align: center;
   color: #000000;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  text-shadow: none;
 }
 
 .platform-purpose-pillars {
@@ -1114,7 +1120,7 @@ a:focus-visible {
   line-height: 1.22;
   letter-spacing: 0.03em;
   color: #2f3547;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  text-shadow: none;
   margin: 0 0 16px;
 }
 
@@ -1126,7 +1132,7 @@ a:focus-visible {
   line-height: 1.33;
   letter-spacing: 0.03em;
   color: #2f3547;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  text-shadow: none;
   margin: 0;
 }
 
@@ -1974,7 +1980,7 @@ a:focus-visible {
   text-align: center;
   letter-spacing: 0.03em;
   color: #31344b;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  text-shadow: none;
 }
 
 .faq-heading-accent {
@@ -2495,7 +2501,7 @@ a:focus-visible {
   font-weight: 700;
   letter-spacing: 0.03em;
   text-align: center;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  text-shadow: none;
   font-size: 26px;
   line-height: 1.15;
   max-width: 100%;
@@ -2620,7 +2626,7 @@ a:focus-visible {
   font-size: 30px;
   line-height: 1.38;
   letter-spacing: 0.03em;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  text-shadow: none;
   overflow-wrap: break-word;
 }
 
@@ -4588,4 +4594,30 @@ a:focus-visible {
 .get-in-touch-badge sup {
   font-size: 0.45em;
   font-weight: 700;
+}
+/* Move only these two learning-module images slightly upward */
+.learning-module-image[alt*="Smart Onboarding" i],
+.learning-module-image[alt*="Standards Training" i] {
+  transform: translateY(-8px) scale(1.03);
+  transform-origin: center top;
+}
+
+/* Smart Onboarding only */
+.learning-module-image[alt*="Smart Onboarding" i] {
+  object-position: 50% -14px !important;
+  transform: scale(1.04);
+  transform-origin: center top;
+}
+
+/* Keep Standards Training as it is */
+.learning-module-image[alt*="Standards Training" i] {
+  object-position: 50% 0% !important;
+  transform: translateY(-8px) scale(1.03);
+  transform-origin: center top;
+}
+/* Smart Onboarding only — lift image a little more */
+.learning-module-image[alt*="Smart Onboarding" i] {
+  object-position: 50% -22px !important;
+  transform: scale(1.04);
+  transform-origin: center top;
 }

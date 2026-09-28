@@ -785,12 +785,12 @@ function PlatformPurpose() {
 
 function MeetNeuroLXP() {
   return (
-    <section className={styles["meet-neurolxp-section"]} aria-labelledby="meet-neurolxp-heading">
-      <div className={styles["meet-neurolxp-frame"]}>
-        <div className={styles["meet-neurolxp-overlay"]}>
+    <section data-meet-neurolxp className={styles["meet-neurolxp-section"]} aria-labelledby="meet-neurolxp-heading">
+      <div data-meet-frame className={styles["meet-neurolxp-frame"]}>
+        <div data-meet-media className={styles["meet-neurolxp-overlay"]}>
           <Image src="/images/image 21.png" alt="Students collaborating on a laptop" fill sizes="(min-width: 1312px) 1216px, 100vw" className={styles["meet-neurolxp-image"]} />
         </div>
-        <div className={styles["meet-neurolxp-text"]}>
+        <div data-meet-text className={styles["meet-neurolxp-text"]}>
           <span className={styles["meet-neurolxp-badge"]}>
             Meet NeuroLXP<sup className={styles["smv-badge-tm"]}>TM</sup>
           </span>
@@ -801,6 +801,34 @@ learning Platform
           <p className={styles["meet-neurolxp-subtext"]}>Neomorphic platform for smarter learning</p>
         </div>
       </div>
+      <style jsx global>{`
+        /* Match the right-side tone INSIDE the card only.
+           The outer section keeps its original stylesheet background. */
+        [data-meet-neurolxp] [data-meet-frame] {
+          --meet-surface: #EFF2F1;
+          background: var(--meet-surface) !important;
+        }
+
+        [data-meet-neurolxp] [data-meet-frame] [data-meet-media],
+        [data-meet-neurolxp] [data-meet-frame] [data-meet-text] {
+          background: transparent !important;
+          backdrop-filter: none !important;
+          -webkit-backdrop-filter: none !important;
+        }
+
+        /* Clear decorative tint/gradient layers without changing layout. */
+        [data-meet-neurolxp] [data-meet-frame]::before,
+        [data-meet-neurolxp] [data-meet-frame]::after,
+        [data-meet-neurolxp] [data-meet-frame] [data-meet-media]::before,
+        [data-meet-neurolxp] [data-meet-frame] [data-meet-media]::after,
+        [data-meet-neurolxp] [data-meet-frame] [data-meet-text]::before,
+        [data-meet-neurolxp] [data-meet-frame] [data-meet-text]::after {
+          background: transparent !important;
+          box-shadow: none !important;
+          backdrop-filter: none !important;
+          -webkit-backdrop-filter: none !important;
+        }
+      `}</style>
     </section>
   );
 }
@@ -917,7 +945,7 @@ function WhyChooseNeuroLXP() {
 const learningModuleCards = [
   {
     id: 1,
-    image: "/images/image 63.png",
+    image: "/images/Frame 2095586554.png",
     title: "Blended Learning",
     description:
       "Blend online and in-person learning for flexible, engaging experiences.",
@@ -939,21 +967,21 @@ const learningModuleCards = [
   },
   {
     id: 4,
-    image: "/images/man-woman-florists-using-laptop-writing-notebook-flower-shop 1.png",
+    image: "/images/smiling-young-beautiful-girl-wearing-holding-vr-headset-showing-thumb-up-isolated-purple-wall 1.png",
     title: "Immersive Learning",
     description:
       "Interactive learning that builds skills and delivers results.",
   },
   {
     id: 5,
-    image: "/images/two-smiling-partners-shaking-hands-lobby 1.png",
+    image: "/images/AdobeExpressPhotos_0586dfdc8eee41a19d4ff9a110d7a31b_CopyEdited 1.png",
     title: "Smart Onboarding",
     description:
       "Accelerate onboarding with guided, engaging learning.",
   },
   {
     id: 6,
-    image: "/images/colleagues-discussing-new-ideas-business-meeting 1.png",
+    image: "/images/Standard.png",
     title: "Standards Training",
     description:
       "Stay fully compliant with trusted, standards-based learning.",
@@ -1916,7 +1944,7 @@ const faqItems: FAQItemData[] = [
     id: 3,
     number: "03",
     title: "How Is NeuroLXP Different?",
-    mobileTitleLines: ["How Is NeuroLXP", "Different?"],
+    mobileTitleLines: ["How is NeuroLXP", "Different?"],
     answer: "Unlike a conventional LMS that focuses on course administration, NeuroLXP delivers learner-centric experiences through personalization, skill-based learning, collaboration, and continuous development.",
     colorStart: "#861109",
     colorEnd: "#200402",
