@@ -752,8 +752,10 @@
   background: transparent;
   transform: none;}
 
+@media (min-width: 1024px) and (hover: hover) and (pointer: fine) {
 .skillPathWrapper:hover {
   border-color: #2D4CC8;
+}
 }
 
 .skillPath {
@@ -814,8 +816,10 @@
   background: transparent;
   transform: none;}
 
+@media (min-width: 1024px) and (hover: hover) and (pointer: fine) {
 .usefulResourcesWrapper:hover {
   border-color: #67096E;
+}
 }
 
 .usefulResources {
@@ -861,8 +865,10 @@
   background: transparent;
   transform: none;}
 
+@media (min-width: 1024px) and (hover: hover) and (pointer: fine) {
 .practiceTasksWrapper:hover {
   border-color: #590B31;
+}
 }
 
 .practiceTasks {
@@ -908,8 +914,10 @@
   background: transparent;
   transform: none;}
 
+@media (min-width: 1024px) and (hover: hover) and (pointer: fine) {
 .careerFocusedModulesWrapper:hover {
   border-color: #141B34;
+}
 }
 
 .careerFocusedModules {
@@ -2052,6 +2060,7 @@
   transform: translateY(-8px);
 }
 
+@media (min-width: 1024px) and (hover: hover) and (pointer: fine) {
 .skillPathWrapper:focus-visible,
 .skillPathWrapper:active,
 .usefulResourcesWrapper:focus-visible,
@@ -2061,6 +2070,7 @@
 .careerFocusedModulesWrapper:focus-visible,
 .careerFocusedModulesWrapper:active {
   transform: translateX(8px);
+}
 }
 
 .frameParent24:focus-visible,
@@ -2243,11 +2253,13 @@
   transform: translateY(-8px);
 }
 
+@media (min-width: 1024px) and (hover: hover) and (pointer: fine) {
 .skillPathWrapper:hover,
 .usefulResourcesWrapper:hover,
 .practiceTasksWrapper:hover,
 .careerFocusedModulesWrapper:hover {
   transform: translateX(8px);
+}
 }
 
 .frameParent24:hover,
@@ -2351,28 +2363,36 @@
     box-shadow 0.2s ease;
 }
 
+@media (min-width: 1024px) and (hover: hover) and (pointer: fine) {
 .skillPathWrapper:hover,
 .skillPathWrapper:focus-visible {
   border-color: #2d4cc8;
   transform: none;
 }
+}
 
+@media (min-width: 1024px) and (hover: hover) and (pointer: fine) {
 .usefulResourcesWrapper:hover,
 .usefulResourcesWrapper:focus-visible {
   border-color: #67096e;
   transform: none;
 }
+}
 
+@media (min-width: 1024px) and (hover: hover) and (pointer: fine) {
 .practiceTasksWrapper:hover,
 .practiceTasksWrapper:focus-visible {
   border-color: #590b31;
   transform: none;
 }
+}
 
+@media (min-width: 1024px) and (hover: hover) and (pointer: fine) {
 .careerFocusedModulesWrapper:hover,
 .careerFocusedModulesWrapper:focus-visible {
   border-color: #141b34;
   transform: none;
+}
 }
 
 .skillPath {
@@ -3530,10 +3550,10 @@
   }
   .genzgalaxy .frameParent29 .greatLearningHappensContainer {
     display: grid !important;
-    grid-template-columns: max-content max-content !important;
+    grid-template-columns: max-content !important;
     justify-content: center !important;
     align-items: baseline !important;
-    column-gap: 0.25em !important;
+    column-gap: 0 !important;
     row-gap: 0 !important;
     width: 100% !important;
     height: auto !important;
