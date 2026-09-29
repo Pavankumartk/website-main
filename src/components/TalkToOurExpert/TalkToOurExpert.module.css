@@ -1194,32 +1194,33 @@
 
 .talk-to-expert-fab {
   position: fixed;
-
   right: 32px;
-
   bottom: 32px;
-
   z-index: 500;
-
+  box-sizing: border-box;
+  width: 64px;
+  height: 64px;
+  min-width: 64px;
+  min-height: 64px;
+  max-width: 64px;
+  max-height: 64px;
   display: inline-flex;
-
   align-items: center;
-
-  gap: 16px;
-
-  padding: 12px 28px 12px 12px;
-
+  justify-content: center;
+  gap: 0;
+  padding: 0;
   border: none;
-
-  border-radius: 100px;
-
+  border-radius: 50%;
   background: #dfe6e9;
-
   box-shadow:
     -8px -8px 16px #ffffff,
     8px 8px 16px #c6c6c9;
-
   cursor: pointer;
+}
+
+.talk-to-expert-fab:focus-visible {
+  outline: 3px solid #2d4cc8;
+  outline-offset: 4px;
 }
 
 .talk-to-expert-fab:hover {
@@ -1229,8 +1230,8 @@
 .talk-to-expert-fab-icon-ring {
   flex-shrink: 0;
 
-  width: 56px;
-  height: 56px;
+  width: 48px;
+  height: 48px;
 
   border-radius: 50%;
 
@@ -1269,17 +1270,6 @@
   height: 22px;
 }
 
-.talk-to-expert-fab-label {
-  font-family: "Segoe UI", sans-serif;
-
-  font-weight: 700;
-
-  font-size: 18px;
-
-  color: #31344b;
-
-  white-space: nowrap;
-}
 
 
 /* =========================================================
@@ -1648,9 +1638,9 @@
 
     bottom: 20px;
 
-    gap: 12px;
+    gap: 0;
 
-    padding: 8px 20px 8px 8px;
+    padding: 0;
   }
 
   .talk-to-expert-fab-icon-ring {
@@ -1671,9 +1661,6 @@
     height: 18px;
   }
 
-  .talk-to-expert-fab-label {
-    font-size: 15px;
-  }
 }
 
 
@@ -1788,14 +1775,11 @@
   }
 
   .talk-to-expert-fab {
-    padding: 6px;
+    padding: 0;
 
     gap: 0;
   }
 
-  .talk-to-expert-fab-label {
-    display: none;
-  }
 }
 
 
@@ -3699,228 +3683,236 @@
   }
 }
 
-
 /* ==========================================================================
-   FINAL — HOME PAGE ROUND BUTTON WHEN RENDERED INTO A PAGE SLOT
-   - Leaves the existing floating button unchanged when portalTargetId is absent.
-   - When portalTargetId is supplied, matches the Home page round icon button.
-   - The popup/modal behavior is unchanged.
-   ========================================================================== */
-.talk-to-expert-fab--embedded {
-  position: relative !important;
-  inset: auto !important;
-
-  width: 76px !important;
-  min-width: 76px !important;
-  max-width: 76px !important;
-  height: 76px !important;
-  min-height: 76px !important;
-  max-height: 76px !important;
-
-  margin: 0 !important;
-  padding: 0 !important;
-  gap: 0 !important;
-
-  display: grid !important;
-  place-items: center !important;
-  flex: 0 0 76px !important;
-
-  transform: none !important;
-  border-radius: 50% !important;
-  background: #dfe6e9 !important;
-  box-shadow:
-    -6px -6px 12px #ffffff,
-    6px 6px 12px rgba(198, 198, 201, 0.9) !important;
-
-  z-index: 1 !important;
-}
-
-.talk-to-expert-fab--embedded:hover {
-  transform: none !important;
-}
-
-.talk-to-expert-fab--embedded .talk-to-expert-fab-icon-ring {
-  width: 58px !important;
-  min-width: 58px !important;
-  height: 58px !important;
-  min-height: 58px !important;
-  margin: 0 !important;
-
-  display: grid !important;
-  place-items: center !important;
-  border-radius: 50% !important;
-}
-
-.talk-to-expert-fab--embedded .talk-to-expert-fab-icon-circle {
-  width: 42px !important;
-  min-width: 42px !important;
-  height: 42px !important;
-  min-height: 42px !important;
-
-  display: grid !important;
-  place-items: center !important;
-  border-radius: 50% !important;
-}
-
-.talk-to-expert-fab--embedded .talk-to-expert-fab-icon {
-  width: 24px !important;
-  height: 24px !important;
-}
-
-.talk-to-expert-fab--embedded .talk-to-expert-fab-label {
-  position: absolute !important;
-  width: 1px !important;
-  height: 1px !important;
-  padding: 0 !important;
-  margin: -1px !important;
-  overflow: hidden !important;
-  clip: rect(0, 0, 0, 0) !important;
-  white-space: nowrap !important;
-  border: 0 !important;
-}
-
-@media (max-width: 1023px) {
-  .talk-to-expert-fab--embedded {
-    width: 68px !important;
-    min-width: 68px !important;
-    max-width: 68px !important;
-    height: 68px !important;
-    min-height: 68px !important;
-    max-height: 68px !important;
-    flex-basis: 68px !important;
-  }
-}
-
-@media (max-width: 599px) {
-  .talk-to-expert-fab--embedded {
-    width: 64px !important;
-    min-width: 64px !important;
-    max-width: 64px !important;
-    height: 64px !important;
-    min-height: 64px !important;
-    max-height: 64px !important;
-    flex-basis: 64px !important;
-  }
-}
-
-
-/* ==========================================================================
-   FINAL — TALK TO YOUR EXPERT BUTTON MATCHES HOME PAGE ROUND BUTTON
-   --------------------------------------------------------------------------
-   Visual/button treatment copied from the Home page expert button:
-   - 76px round outer button
-   - 58px icon ring
-   - 42px inner circle
-   - 24px icon
-   - text remains accessible but visually hidden
-   - keeps this component's existing fixed floating position
-   - popup/modal behavior is unchanged
+   FINAL — COUNTRY FLAG / COMPACT DROPDOWN / BORDER-ONLY HOVER
+   These rules intentionally come last so they override older duplicate rules.
    ========================================================================== */
 
-.talk-to-expert-fab {
-  width: 76px !important;
-  min-width: 76px !important;
-  max-width: 76px !important;
-
-  height: 76px !important;
-  min-height: 76px !important;
-  max-height: 76px !important;
-
-  padding: 0 !important;
-  gap: 0 !important;
-
-  display: grid !important;
-  place-items: center !important;
-
-  border: 0 !important;
-  border-radius: 50% !important;
-
-  background: #dfe6e9 !important;
-
-  box-shadow:
-    -6px -6px 12px #ffffff,
-    6px 6px 12px rgba(198, 198, 201, 0.9) !important;
-
-  transform: none !important;
-}
-
-.talk-to-expert-fab:hover,
-.talk-to-expert-fab:active {
-  transform: none !important;
-}
-
-.talk-to-expert-fab .talk-to-expert-fab-icon-ring {
-  width: 58px !important;
-  min-width: 58px !important;
-  height: 58px !important;
-  min-height: 58px !important;
-
-  margin: 0 !important;
-
-  display: grid !important;
-  place-items: center !important;
-
-  border-radius: 50% !important;
-}
-
-.talk-to-expert-fab .talk-to-expert-fab-icon-circle {
-  width: 42px !important;
-  min-width: 42px !important;
-  height: 42px !important;
-  min-height: 42px !important;
-
-  display: grid !important;
-  place-items: center !important;
-
-  border-radius: 50% !important;
-}
-
-.talk-to-expert-fab .talk-to-expert-fab-icon {
-  width: 24px !important;
-  height: 24px !important;
-}
-
-/* Same Home page behavior: icon-only round button.
-   Keep label available to screen readers. */
-.talk-to-expert-fab .talk-to-expert-fab-label {
-  position: absolute !important;
-
-  width: 1px !important;
-  height: 1px !important;
-
-  padding: 0 !important;
-  margin: -1px !important;
-
-  overflow: hidden !important;
-  clip: rect(0, 0, 0, 0) !important;
-
+/* Selected country: show flag + dial code only. */
+.tte-country-code,
+.tte-country-short-label {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 7px !important;
   white-space: nowrap !important;
-  border: 0 !important;
 }
 
-/* Tablet — same Home page responsive size */
-@media (max-width: 1023px) {
-  .talk-to-expert-fab {
-    width: 68px !important;
-    min-width: 68px !important;
-    max-width: 68px !important;
+.tte-country-flag {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 22px !important;
+  min-width: 22px !important;
+  height: 22px !important;
+  font-size: 18px !important;
+  line-height: 1 !important;
+  flex: 0 0 22px !important;
+}
 
-    height: 68px !important;
-    min-height: 68px !important;
-    max-height: 68px !important;
+/* Keep the trigger compact; it contains only flag + dial code + chevron. */
+.tte-country-trigger {
+  width: auto !important;
+  min-width: 92px !important;
+  max-width: 118px !important;
+  padding: 0 9px !important;
+  gap: 7px !important;
+  border: 1px solid transparent !important;
+  outline: none !important;
+  transform: none !important;
+  transition: border-color 0.18s ease !important;
+}
+
+/* Compact country dropdown. */
+.tte-country-panel {
+  width: 220px !important;
+  min-width: 220px !important;
+  max-width: 220px !important;
+}
+
+/* Country name remains available inside the dropdown/search results only. */
+.tte-country-option {
+  border: 1px solid transparent !important;
+  transform: none !important;
+  transition: border-color 0.18s ease, background-color 0.18s ease !important;
+}
+
+/* Border-only hover/focus. No inflate, deflate, translate or shadow change. */
+.tte-input-shell,
+.tte-country-trigger,
+.tte-interest-trigger,
+.tte-textarea-shell,
+.tte-country-search {
+  border: 1px solid transparent !important;
+  transform: none !important;
+  transition: border-color 0.18s ease !important;
+}
+
+.tte-input-shell:hover,
+.tte-input-shell:focus-within,
+.tte-country-trigger:hover,
+.tte-country-trigger:focus-visible,
+.tte-interest-trigger:hover,
+.tte-interest-trigger:focus-visible,
+.tte-textarea-shell:hover,
+.tte-textarea-shell:focus-within,
+.tte-country-search:hover,
+.tte-country-search:focus {
+  border-color: #2d4cc8 !important;
+  outline: none !important;
+  transform: none !important;
+}
+
+/* Preserve the existing inset neumorphic shadows while hovering/focusing. */
+.tte-input-shell:hover,
+.tte-input-shell:focus-within,
+.tte-country-trigger:hover,
+.tte-country-trigger:focus-visible,
+.tte-interest-trigger:hover,
+.tte-interest-trigger:focus-visible,
+.tte-country-search:hover,
+.tte-country-search:focus {
+  box-shadow:
+    inset -4px -4px 8px #ffffff,
+    inset 4px 4px 8px rgba(196, 196, 196, 0.8) !important;
+}
+
+.tte-textarea-shell:hover,
+.tte-textarea-shell:focus-within {
+  box-shadow:
+    inset -8px -8px 16px rgba(255, 255, 255, 0.8),
+    inset 8px 8px 16px #c6c6c9 !important;
+}
+
+.tte-country-option:hover,
+.tte-country-option:focus-visible,
+.tte-country-option-active {
+  border-color: #2d4cc8 !important;
+  outline: none !important;
+  transform: none !important;
+}
+
+/* Keep the compact selector/dropdown usable on mobile. */
+@media (max-width: 768px) {
+  .tte-country-trigger {
+    min-width: 88px !important;
+    max-width: 112px !important;
+  }
+
+  .tte-country-panel {
+    width: 210px !important;
+    min-width: 210px !important;
+    max-width: min(210px, calc(100vw - 32px)) !important;
+  }
+
+  .tte-country-flag {
+    width: 20px !important;
+    min-width: 20px !important;
+    height: 20px !important;
+    flex-basis: 20px !important;
+    font-size: 17px !important;
   }
 }
 
-/* Mobile — same Home page responsive size */
-@media (max-width: 599px) {
-  .talk-to-expert-fab {
-    width: 64px !important;
-    min-width: 64px !important;
-    max-width: 64px !important;
 
-    height: 64px !important;
-    min-height: 64px !important;
-    max-height: 64px !important;
-  }
+/* ==========================================================================
+   FINAL FIX — VISIBLE COUNTRY FLAGS + CLEAR HOVER STATES
+   Keep this block LAST so older duplicated rules cannot override it.
+   ========================================================================== */
+
+/* The TSX uses a real flag image URL (FlagCDN), so Windows also shows flags. */
+.tte-country-flag {
+  display: block !important;
+  width: 24px !important;
+  min-width: 24px !important;
+  height: 18px !important;
+  flex: 0 0 24px !important;
+  object-fit: cover !important;
+  border-radius: 2px !important;
+  line-height: normal !important;
 }
 
+/* Selected value: flag + dial code only. */
+.tte-country-code {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+  white-space: nowrap !important;
+}
+
+/* Dropdown row: flag + dial code + country name. */
+.tte-country-short-label {
+  display: flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+  width: 100% !important;
+  min-width: 0 !important;
+}
+
+.tte-country-name {
+  min-width: 0 !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+  white-space: nowrap !important;
+  color: #31344b !important;
+}
+
+/* Country-code trigger hover/focus: visible blue border, no movement. */
+.tte-country-trigger {
+  border: 1px solid transparent !important;
+  transform: none !important;
+  transition: border-color 0.18s ease, box-shadow 0.18s ease !important;
+}
+
+.tte-country-trigger:hover,
+.tte-country-trigger:focus-visible,
+.tte-country-trigger[aria-expanded="true"] {
+  border-color: #2d4cc8 !important;
+  outline: none !important;
+  transform: none !important;
+  box-shadow:
+    inset -4px -4px 8px #ffffff,
+    inset 4px 4px 8px rgba(196, 196, 196, 0.8),
+    0 0 0 1px rgba(45, 76, 200, 0.08) !important;
+}
+
+/* All normal form controls receive the same hover/focus border. */
+.tte-input-shell:hover,
+.tte-input-shell:focus-within,
+.tte-interest-trigger:hover,
+.tte-interest-trigger:focus-visible,
+.tte-country-search:hover,
+.tte-country-search:focus {
+  border-color: #2d4cc8 !important;
+  outline: none !important;
+  transform: none !important;
+}
+
+/* Country list rows now have a clear hover state. */
+.tte-country-option {
+  width: 100% !important;
+  border: 1px solid transparent !important;
+  transform: none !important;
+  transition: border-color 0.16s ease, background-color 0.16s ease !important;
+}
+
+.tte-country-option:hover,
+.tte-country-option:focus-visible {
+  border-color: #2d4cc8 !important;
+  background: rgba(45, 76, 200, 0.06) !important;
+  outline: none !important;
+  transform: none !important;
+}
+
+.tte-country-option-active {
+  border-color: #2d4cc8 !important;
+  background: rgba(45, 76, 200, 0.08) !important;
+}
+
+@media (max-width: 768px) {
+  .tte-country-flag {
+    width: 22px !important;
+    min-width: 22px !important;
+    height: 16px !important;
+    flex-basis: 22px !important;
+  }
+}

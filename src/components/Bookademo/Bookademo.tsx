@@ -1,7 +1,7 @@
 "use client";
 
 import styles from "./Bookademo.module.css";
-import { createPortal } from "react-dom";
+import "flag-icons/css/flag-icons.min.css";
 import { useEffect, useId, useLayoutEffect, useRef, useState } from "react";
 import type { ReactNode, RefObject } from "react";
 import { allCountries } from "country-telephone-data";
@@ -257,11 +257,20 @@ function CheckIcon({ className }: { className?: string }) {
 /* Country options                                                            */
 /* -------------------------------------------------------------------------- */
 
+function countryFlag(iso2: string) {
+  return iso2
+    .toUpperCase()
+    .replace(/[A-Z]/g, (letter) =>
+      String.fromCodePoint(127397 + letter.charCodeAt(0))
+    );
+}
+
 const countryCodeOptions = allCountries
   .map((country) => ({
     id: country.iso2,
     dialCode: `+${country.dialCode}`,
     label: country.name,
+    flag: countryFlag(country.iso2),
   }))
   .sort((a, b) => a.label.localeCompare(b.label));
 
@@ -1613,6 +1622,9 @@ export default function BookADemo() {
   const [email, setEmail] =
     useState("");
 
+  const [organizationName, setOrganizationName] =
+    useState("");
+
   const [countryCode, setCountryCode] =
     useState("in");
 
@@ -1639,6 +1651,7 @@ export default function BookADemo() {
     useState({
       fullName: false,
       email: false,
+      organizationName: false,
       countryCode: false,
       phone: false,
       date: false,
@@ -1799,6 +1812,9 @@ export default function BookADemo() {
   const isEmailValid =
     emailValidation.valid;
 
+  const isOrganizationNameValid =
+    organizationName.trim().length >= 2;
+
   const isCountryCodeValid =
     countryCodeOptions.some(
       (option) =>
@@ -1839,6 +1855,7 @@ export default function BookADemo() {
   const isFormValid =
     isFullNameValid &&
     isEmailValid &&
+    isOrganizationNameValid &&
     isCountryCodeValid &&
     isPhoneValid &&
     isDateValid &&
@@ -1912,6 +1929,7 @@ export default function BookADemo() {
 
   const nameId = useId();
   const emailId = useId();
+  const organizationId = useId();
   const countryId = useId();
   const phoneId = useId();
   const dateId = useId();
@@ -1933,6 +1951,7 @@ export default function BookADemo() {
     setTouched({
       fullName: true,
       email: true,
+      organizationName: true,
       countryCode: true,
       phone: true,
       date: true,
@@ -1954,6 +1973,7 @@ export default function BookADemo() {
     body: JSON.stringify({
       fullName: fullName.trim(),
       email: email.trim(),
+      organizationName: organizationName.trim(),
       countryCode,
       phone: normalizedPhone,
       demoDate: dateValue,
@@ -1986,6 +2006,7 @@ export default function BookADemo() {
 
       setFullName("");
       setEmail("");
+      setOrganizationName("");
       setCountryCode("in");
       setPhone("");
       setDateValue("");
@@ -1996,6 +2017,7 @@ export default function BookADemo() {
       setTouched({
         fullName: false,
         email: false,
+        organizationName: false,
         countryCode: false,
         phone: false,
         date: false,
@@ -2238,352 +2260,450 @@ export default function BookADemo() {
           </div>
 
           {/* ---------------------------------------------------------------- */}
-          {/* Phone                                                             */}
+          {/* Contact / Scheduling layout                                      */}
+          {/* Phone + Date/Time on the left; Organization on the right.         */}
           {/* ---------------------------------------------------------------- */}
 
-          <div
-            className={
-              styles["book-demo-field"]
-            }
-          >
-            <label
-              htmlFor={phoneId}
-              className={
-                styles["book-demo-label"]
-              }
-            >
-              Phone Number
-            </label>
+          <div className={styles["book-demo-contact-schedule-layout"]}>
+            <div className={styles["book-demo-contact-schedule-left"]}>
+              {/* ---------------------------------------------------------------- */}
+                        {/* Phone                                                             */}
+                        {/* ---------------------------------------------------------------- */}
 
-            <div
-              className={
-                styles[
-                  "book-demo-phone-row"
-                ]
-              }
-            >
-              <div
-                className={
-                  styles[
-                    "book-demo-country-wrap"
-                  ]
-                }
-              >
-                <label
-                  htmlFor={countryId}
-                  className={
-                    styles["sr-only"]
-                  }
-                >
-                  Country code
-                </label>
+                        <div
+                          className={
+                            styles["book-demo-field"]
+                          }
+                        >
+                          <label
+                            htmlFor={phoneId}
+                            className={
+                              styles["book-demo-label"]
+                            }
+                          >
+                            Phone Number
+                          </label>
 
-                <NeumorphicDropdown
-                  value={countryCode}
-                  placeholder="Select"
-                  ariaLabel="Country code"
-                  onChange={
-                    setCountryCode
-                  }
-                  onBlur={() =>
-                    markTouched(
-                      "countryCode"
-                    )
-                  }
-                  className={
-                    styles[
-                      "book-demo-country-dropdown"
-                    ]
-                  }
-                  searchable
-                  searchPlaceholder="Search country or code"
-                  options={countryCodeOptions.map(
-                    (option) => ({
-                      value: option.id,
-                      label: `${option.id.toUpperCase()} (${option.dialCode})`,
-                      searchText: `${option.label} ${option.id} ${option.dialCode}`,
-                    })
-                  )}
-                />
-              </div>
+                          <div
+                            className={
+                              styles[
+                                "book-demo-phone-row"
+                              ]
+                            }
+                          >
+                            <div
+                              className={
+                                styles[
+                                  "book-demo-country-wrap"
+                                ]
+                              }
+                            >
+                              <label
+                                htmlFor={countryId}
+                                className={
+                                  styles["sr-only"]
+                                }
+                              >
+                                Country code
+                              </label>
 
-              <div
-                className={`${styles["book-demo-input-wrap"]} ${styles["book-demo-phone-wrap"]}`}
-              >
-                <span
-                  className={
-                    styles[
-                      "book-demo-input-icon"
-                    ]
-                  }
-                  aria-hidden="true"
-                >
-                  <PhoneIcon />
-                </span>
+                              <NeumorphicDropdown
+                                value={countryCode}
+                                placeholder="Select"
+                                ariaLabel="Country code"
+                                onChange={
+                                  setCountryCode
+                                }
+                                onBlur={() =>
+                                  markTouched(
+                                    "countryCode"
+                                  )
+                                }
+                                className={
+                                  styles[
+                                    "book-demo-country-dropdown"
+                                  ]
+                                }
+                                searchable
+                                searchPlaceholder="Search country or code"
+                                options={countryCodeOptions.map(
+                                  (option) => ({
+                                    value: option.id,
+                                    label: `${option.flag} ${option.dialCode} — ${option.label}`,
+                                    searchText: `${option.label} ${option.id} ${option.dialCode}`,
+                                  })
+                                )}
+                                renderValue={(option) => {
+                                  const selectedCountry =
+                                    countryCodeOptions.find(
+                                      (country) =>
+                                        country.id === option.value
+                                    );
 
-                <input
-                  id={phoneId}
-                  type="tel"
-                  className={
-                    styles[
-                      "book-demo-input"
-                    ]
-                  }
-                  placeholder="Enter phone number"
-                  maxLength={
-                    MAX_PHONE_DIGITS
-                  }
-                  inputMode="numeric"
-                  value={phone}
-                  onChange={(event) =>
-                    setPhone(
-                      event.target.value
-                        .replace(/\D/g, "")
-                        .slice(
-                          0,
-                          MAX_PHONE_DIGITS
-                        )
-                    )
-                  }
-                  onBlur={() =>
-                    markTouched("phone")
-                  }
-                  aria-invalid={
-                    touched.phone &&
-                    !isPhoneValid
-                  }
-                  aria-describedby={
-                    touched.phone &&
-                    !isPhoneValid
-                      ? `${phoneId}-error`
-                      : undefined
-                  }
-                  required
-                />
-              </div>
+                                  return selectedCountry ? (
+                                    <span
+                                      style={{
+                                        display: "inline-flex",
+                                        alignItems: "center",
+                                        gap: "6px",
+                                        whiteSpace: "nowrap",
+                                      }}
+                                    >
+                                      <span
+                                        aria-hidden="true"
+                                        className={`fi fi-${selectedCountry.id.toLowerCase()}`}
+                                        style={{
+                                          width: "22px",
+                                          minWidth: "22px",
+                                          height: "16px",
+                                          borderRadius: "2px",
+                                          backgroundSize: "cover",
+                                          backgroundPosition: "center",
+                                        }}
+                                      />
+                                      <span>
+                                        {selectedCountry.dialCode}
+                                      </span>
+                                    </span>
+                                  ) : (
+                                    option.label
+                                  );
+                                }}
+                              />
+                            </div>
+
+                            <div
+                              className={`${styles["book-demo-input-wrap"]} ${styles["book-demo-phone-wrap"]}`}
+                            >
+                              <span
+                                className={
+                                  styles[
+                                    "book-demo-input-icon"
+                                  ]
+                                }
+                                aria-hidden="true"
+                              >
+                                <PhoneIcon />
+                              </span>
+
+                              <input
+                                id={phoneId}
+                                type="tel"
+                                className={
+                                  styles[
+                                    "book-demo-input"
+                                  ]
+                                }
+                                placeholder="Enter phone number"
+                                maxLength={
+                                  MAX_PHONE_DIGITS
+                                }
+                                inputMode="numeric"
+                                value={phone}
+                                onChange={(event) =>
+                                  setPhone(
+                                    event.target.value
+                                      .replace(/\D/g, "")
+                                      .slice(
+                                        0,
+                                        MAX_PHONE_DIGITS
+                                      )
+                                  )
+                                }
+                                onBlur={() =>
+                                  markTouched("phone")
+                                }
+                                aria-invalid={
+                                  touched.phone &&
+                                  !isPhoneValid
+                                }
+                                aria-describedby={
+                                  touched.phone &&
+                                  !isPhoneValid
+                                    ? `${phoneId}-error`
+                                    : undefined
+                                }
+                                required
+                              />
+                            </div>
+                          </div>
+
+                          {touched.countryCode &&
+                            !isCountryCodeValid && (
+                              <p
+                                id={`${countryId}-error`}
+                                className={
+                                  styles[
+                                    "book-demo-error"
+                                  ]
+                                }
+                                role="alert"
+                              >
+                                Please select a country code.
+                              </p>
+                            )}
+
+                          {touched.phone &&
+                            !isPhoneValid && (
+                              <p
+                                id={`${phoneId}-error`}
+                                className={
+                                  styles[
+                                    "book-demo-error"
+                                  ]
+                                }
+                                role="alert"
+                              >
+                                Please enter a valid phone number for the selected country code.
+                              </p>
+                            )}
+                        </div>
+
+              {/* ---------------------------------------------------------------- */}
+                        {/* Date and Time                                                    */}
+                        {/* ---------------------------------------------------------------- */}
+
+                        <div
+                          className={
+                            styles["book-demo-field"]
+                          }
+                        >
+                          <label
+                            htmlFor={dateId}
+                            className={
+                              styles["book-demo-label"]
+                            }
+                          >
+                            Preferred Demo Date and Time
+                          </label>
+
+                          <div
+                            className={
+                              `${styles[
+                                "book-demo-datetime-row"
+                              ]} ${styles["book-demo-datetime-single-field"]}`
+                            }
+                            data-book-demo-datetime-row
+                          >
+                            {/* Date */}
+                            <div
+                              className={
+                                styles["book-demo-date-wrap"]
+                              }
+                              ref={dateFieldRef}
+                            >
+                              <button
+                                type="button"
+                                id={dateId}
+                                ref={dateButtonRef}
+                                className={`${styles["book-demo-input-wrap"]} ${styles["book-demo-date-trigger"]}`}
+                                onClick={toggleCalendar}
+                                onBlur={() =>
+                                  markTouched("date")
+                                }
+                                aria-haspopup="dialog"
+                                aria-expanded={
+                                  isCalendarOpen
+                                }
+                                aria-controls={
+                                  calendarPanelId
+                                }
+                                aria-invalid={
+                                  touched.date &&
+                                  !isDateValid
+                                }
+                                aria-describedby={
+                                  touched.date &&
+                                  !isDateValid
+                                    ? `${dateId}-error`
+                                    : undefined
+                                }
+                              >
+                                <span
+                                  className={
+                                    styles[
+                                      "book-demo-input-icon"
+                                    ]
+                                  }
+                                  aria-hidden="true"
+                                >
+                                  <CalendarIcon />
+                                </span>
+
+                                <span
+                                  className={`${styles["book-demo-input"]} ${styles["book-demo-date-display"]}${
+                                    dateValue
+                                      ? ""
+                                      : ` ${styles["book-demo-date-placeholder"]}`
+                                  }`}
+                                >
+                                  {dateValue
+                                    ? formatDisplayDate(
+                                        dateValue
+                                      )
+                                    : "Select date"}
+                                </span>
+                              </button>
+
+                              {isCalendarOpen && (
+                                <NeumorphicCalendar
+                                  panelId={
+                                    calendarPanelId
+                                  }
+                                  selectedDate={
+                                    dateValue
+                                  }
+                                  anchorRef={
+                                    dateButtonRef
+                                  }
+                                  viewYear={viewYear}
+                                  viewMonth={viewMonth}
+                                  yearOptions={
+                                    yearOptions
+                                  }
+                                  todayIso={todayIso}
+                                  onSelectDate={
+                                    handleSelectDate
+                                  }
+                                  onViewMonthChange={
+                                    setViewMonth
+                                  }
+                                  onViewYearChange={
+                                    setViewYear
+                                  }
+                                />
+                              )}
+                            </div>
+
+                            {/* Time */}
+                            <div
+                              className={`${styles["book-demo-input-wrap"]} ${styles["book-demo-time-wrap"]}`}
+                            >
+                              <span
+                                className={
+                                  styles[
+                                    "book-demo-input-icon"
+                                  ]
+                                }
+                                aria-hidden="true"
+                              >
+                                <ClockIcon />
+                              </span>
+
+                              <label
+                                htmlFor={timeId}
+                                className={
+                                  styles["sr-only"]
+                                }
+                              >
+                                Preferred time
+                              </label>
+
+                              <TimePicker
+                                value={timeValue}
+                                onChange={
+                                  setTimeValue
+                                }
+                                onOpenChange={(
+                                  open
+                                ) => {
+                                  if (open) {
+                                    setIsCalendarOpen(
+                                      false
+                                    );
+                                  }
+                                }}
+                                onBlur={() =>
+                                  markTouched("time")
+                                }
+                              />
+                            </div>
+                          </div>
+
+                          {touched.date &&
+                            !isDateValid && (
+                              <p
+                                id={`${dateId}-error`}
+                                className={
+                                  styles[
+                                    "book-demo-error"
+                                  ]
+                                }
+                                role="alert"
+                              >
+                                Please select a date from tomorrow onward.
+                              </p>
+                            )}
+
+                          {touched.time &&
+                            !isTimeValid && (
+                              <p
+                                id={`${timeId}-error`}
+                                className={
+                                  styles[
+                                    "book-demo-error"
+                                  ]
+                                }
+                                role="alert"
+                              >
+                                Please select a time.
+                              </p>
+                            )}
+                        </div>
             </div>
 
-            {touched.countryCode &&
-              !isCountryCodeValid && (
-                <p
-                  id={`${countryId}-error`}
-                  className={
-                    styles[
-                      "book-demo-error"
-                    ]
-                  }
-                  role="alert"
-                >
-                  Please select a country code.
-                </p>
-              )}
+            <div className={styles["book-demo-organization-column"]}>
+              {/* ---------------------------------------------------------------- */}
+                        {/* Organization Name                                                */}
+                        {/* ---------------------------------------------------------------- */}
 
-            {touched.phone &&
-              !isPhoneValid && (
-                <p
-                  id={`${phoneId}-error`}
-                  className={
-                    styles[
-                      "book-demo-error"
-                    ]
-                  }
-                  role="alert"
-                >
-                  Please enter a valid phone number for the selected country code.
-                </p>
-              )}
-          </div>
+                        <div className={styles["book-demo-field"]}>
+                          <label
+                            htmlFor={organizationId}
+                            className={styles["book-demo-label"]}
+                          >
+                            Organization Name
+                          </label>
 
-          {/* ---------------------------------------------------------------- */}
-          {/* Date and Time                                                    */}
-          {/* ---------------------------------------------------------------- */}
+                          <div className={styles["book-demo-input-wrap"]}>
+                            <span
+                              className={styles["book-demo-input-icon"]}
+                              aria-hidden="true"
+                            >
+                              <UserIcon />
+                            </span>
 
-          <div
-            className={
-              styles["book-demo-field"]
-            }
-          >
-            <label
-              htmlFor={dateId}
-              className={
-                styles["book-demo-label"]
-              }
-            >
-              Preferred Demo Date and Time
-            </label>
+                            <textarea
+                              id={organizationId}
+                              className={`${styles["book-demo-textarea"]} ${styles["book-demo-organization-textarea"]}`}
+                              placeholder="Enter organization name"
+                              value={organizationName}
+                              onChange={(event) => setOrganizationName(event.target.value)}
+                              onBlur={() => markTouched("organizationName")}
+                              aria-invalid={
+                                touched.organizationName && !isOrganizationNameValid
+                              }
+                              aria-describedby={
+                                touched.organizationName && !isOrganizationNameValid
+                                  ? `${organizationId}-error`
+                                  : undefined
+                              }
+                              rows={4}
+                              required
+                            />
+                          </div>
 
-            <div
-              className={
-                styles[
-                  "book-demo-datetime-row"
-                ]
-              }
-              data-book-demo-datetime-row
-            >
-              {/* Date */}
-              <div
-                className={
-                  styles["book-demo-date-wrap"]
-                }
-                ref={dateFieldRef}
-              >
-                <button
-                  type="button"
-                  id={dateId}
-                  ref={dateButtonRef}
-                  className={`${styles["book-demo-input-wrap"]} ${styles["book-demo-date-trigger"]}`}
-                  onClick={toggleCalendar}
-                  onBlur={() =>
-                    markTouched("date")
-                  }
-                  aria-haspopup="dialog"
-                  aria-expanded={
-                    isCalendarOpen
-                  }
-                  aria-controls={
-                    calendarPanelId
-                  }
-                  aria-invalid={
-                    touched.date &&
-                    !isDateValid
-                  }
-                  aria-describedby={
-                    touched.date &&
-                    !isDateValid
-                      ? `${dateId}-error`
-                      : undefined
-                  }
-                >
-                  <span
-                    className={
-                      styles[
-                        "book-demo-input-icon"
-                      ]
-                    }
-                    aria-hidden="true"
-                  >
-                    <CalendarIcon />
-                  </span>
-
-                  <span
-                    className={`${styles["book-demo-input"]} ${styles["book-demo-date-display"]}${
-                      dateValue
-                        ? ""
-                        : ` ${styles["book-demo-date-placeholder"]}`
-                    }`}
-                  >
-                    {dateValue
-                      ? formatDisplayDate(
-                          dateValue
-                        )
-                      : "Select date"}
-                  </span>
-                </button>
-
-                {isCalendarOpen && (
-                  <NeumorphicCalendar
-                    panelId={
-                      calendarPanelId
-                    }
-                    selectedDate={
-                      dateValue
-                    }
-                    anchorRef={
-                      dateButtonRef
-                    }
-                    viewYear={viewYear}
-                    viewMonth={viewMonth}
-                    yearOptions={
-                      yearOptions
-                    }
-                    todayIso={todayIso}
-                    onSelectDate={
-                      handleSelectDate
-                    }
-                    onViewMonthChange={
-                      setViewMonth
-                    }
-                    onViewYearChange={
-                      setViewYear
-                    }
-                  />
-                )}
-              </div>
-
-              {/* Time */}
-              <div
-                className={`${styles["book-demo-input-wrap"]} ${styles["book-demo-time-wrap"]}`}
-              >
-                <span
-                  className={
-                    styles[
-                      "book-demo-input-icon"
-                    ]
-                  }
-                  aria-hidden="true"
-                >
-                  <ClockIcon />
-                </span>
-
-                <label
-                  htmlFor={timeId}
-                  className={
-                    styles["sr-only"]
-                  }
-                >
-                  Preferred time
-                </label>
-
-                <TimePicker
-                  value={timeValue}
-                  onChange={
-                    setTimeValue
-                  }
-                  onOpenChange={(
-                    open
-                  ) => {
-                    if (open) {
-                      setIsCalendarOpen(
-                        false
-                      );
-                    }
-                  }}
-                  onBlur={() =>
-                    markTouched("time")
-                  }
-                />
-              </div>
+                          {touched.organizationName && !isOrganizationNameValid && (
+                            <p
+                              id={`${organizationId}-error`}
+                              className={styles["book-demo-error"]}
+                              role="alert"
+                            >
+                              Please enter your organization name.
+                            </p>
+                          )}
+                        </div>
             </div>
-
-            {touched.date &&
-              !isDateValid && (
-                <p
-                  id={`${dateId}-error`}
-                  className={
-                    styles[
-                      "book-demo-error"
-                    ]
-                  }
-                  role="alert"
-                >
-                  Please select a date from tomorrow onward.
-                </p>
-              )}
-
-            {touched.time &&
-              !isTimeValid && (
-                <p
-                  id={`${timeId}-error`}
-                  className={
-                    styles[
-                      "book-demo-error"
-                    ]
-                  }
-                  role="alert"
-                >
-                  Please select a time.
-                </p>
-              )}
           </div>
 
           {/* ---------------------------------------------------------------- */}
@@ -3319,16 +3439,13 @@ export function BookDemoTrigger({
         {children}
       </button>
 
-      {isOpen &&
-        typeof document !== "undefined" &&
-        createPortal(
-          <BookDemoModal
-            onClose={() =>
-              setIsOpen(false)
-            }
-          />,
-          document.body
-        )}
+      {isOpen && (
+        <BookDemoModal
+          onClose={() =>
+            setIsOpen(false)
+          }
+        />
+      )}
     </>
   );
 }
