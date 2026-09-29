@@ -1,6 +1,5 @@
 import Image from "next/image";
 import styles from "./coding-resources.module.css";
-
 import Header from "../../components/Header/header";
 import Footer from "../../components/Footer/footer";
 import TalkToExpertButton from "@/components/TalkToOurExpert/TalkToExpertButton";
@@ -60,42 +59,35 @@ export default function CodingResources() {
   return (
     <>
       <Header />
-
       <main className={styles.page}>
         <div className={styles.shell}>
           <div className={styles.breadcrumb}>
             <span>Neuro Labs</span>
-
             <Image
               src="/icons/arrow-right-double.svg"
               width={16}
               height={16}
               alt=""
             />
-
             <b>Coding Resources</b>
           </div>
 
           <section className={styles.heroFrame}>
             <div className={styles.hero}>
               <div className={styles.heroShape} />
-
               <div className={styles.heroCopy}>
                 <span className={styles.pill}>Coding Resources</span>
-
                 <h1>
                   Everything to Learn!
                   <br />
-                  Practice! Master Coding
+                  Practice! <span className={styles.headingAccent}>Master Coding</span>
                 </h1>
-
                 <p>
                   NeuroLabs Coding Resources
                   <br />
                   offer structured materials for <br /> every learning stage.
                 </p>
               </div>
-
               <Image
                 className={styles.heroImage}
                 src="/icons/coding-resources.png"
@@ -111,14 +103,12 @@ export default function CodingResources() {
             <h2>
               Comprehensive Programming
               <br />
-              Learning Materials
+              <span className={styles.headingAccent}>Learning Materials</span>
             </h2>
-
             <p>
               NeuroLabs provides coding resources that support both theoretical
               understanding and hands-on learning.
             </p>
-
             <div className={styles.learningCards}>
               {learningCards.map((label) => (
                 <div className={styles.learningCard} key={label}>
@@ -131,7 +121,6 @@ export default function CodingResources() {
                     alt=""
                     aria-hidden="true"
                   />
-
                   <div className={styles.learningCardInner}>
                     <span className={styles.learningCardText}>{label}</span>
                   </div>
@@ -143,7 +132,6 @@ export default function CodingResources() {
           <section className={styles.practice}>
             <div className={styles.practiceIntro}>
               <h2>Practice-Oriented Coding Support</h2>
-
               <p>
                 Master coding through consistent practice. NeuroLabs provides
                 hands-on
@@ -151,16 +139,13 @@ export default function CodingResources() {
                 resources that strengthen skills and build coding confidence.
               </p>
             </div>
-
             <div className={styles.supportGrid}>
               {supportCards.map((item, index) => (
                 <div
-                  className={`${styles.supportCard} ${
-                    styles[`accent${index}`] ?? ""
-                  }`}
+                  className={`${styles.supportCard} ${styles[`accent${index}`] ?? ""}`}
                   key={item}
                 >
-                  {item}
+                  <span className={styles.supportCardText}>{item}</span>
                 </div>
               ))}
             </div>
@@ -182,15 +167,12 @@ export default function CodingResources() {
                   alt=""
                   aria-hidden="true"
                 />
-
                 <div className={styles.pillarContent}>
                   <div className={styles.pillarHead}>
                     <b>{pillar.number}</b>
                     <span>{pillar.title}</span>
                   </div>
-
                   <h3>{pillar.lead}</h3>
-
                   <div className={styles.checkList}>
                     {pillar.items.map((item) => (
                       <div className={styles.checkItem} key={item}>
@@ -203,7 +185,6 @@ export default function CodingResources() {
                             className={styles.checkIcon}
                           />
                         </span>
-
                         <span className={styles.checkText}>{item}</span>
                       </div>
                     ))}
@@ -217,19 +198,16 @@ export default function CodingResources() {
             <div className={styles.growth}>
               <div className={styles.growthCopy}>
                 <span className={styles.pill}>Programming Growth</span>
-
                 <h2>
                   NeuroLabs Coding
                   <br />
-                  Resources
+                  <span className={styles.headingAccent}>Resources</span>
                 </h2>
-
                 <p>
                   Build strong programming skills with tutorials, hands-on
                   practice, and up-to-date learning resources.
                 </p>
               </div>
-
               <div className={styles.videoVisual}>
                 <video
                   className={styles.growthVideo}
@@ -242,11 +220,7 @@ export default function CodingResources() {
                   disablePictureInPicture
                   controlsList="nodownload nofullscreen noremoteplayback"
                 >
-                  <source
-                    src="/videos/codingresources.mp4"
-                    type="video/mp4"
-                  />
-
+                  <source src="/videos/codingresources.mp4" type="video/mp4" />
                   Your browser does not support the video tag.
                 </video>
               </div>
@@ -254,7 +228,7 @@ export default function CodingResources() {
           </section>
         </div>
       </main>
- <TalkToExpertButton />
+      <TalkToExpertButton />
       <Footer />
     </>
   );

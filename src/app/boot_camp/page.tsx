@@ -1,39 +1,55 @@
 "use client";
-
 import type { NextPage } from "next";
 import type { CSSProperties } from "react";
-import { useState } from "react";
+import { useEffect, useLayoutEffect, useRef, useState } from "react";
 import Image from "next/image";
 import Header from "../../components/Header/header";
 import Footer from "../../components/Footer/footer";
 import { BookDemoModal } from "../../components/Bookademo/Bookademo";
 import TalkToExpertButton from "@/components/TalkToOurExpert/TalkToExpertButton";
 import styles from "./bootcamp.module.css";
-
 const Bootcamp: NextPage = () => {
   const [openCards, setOpenCards] = useState<number[]>([]);
   const [isBookDemoOpen, setIsBookDemoOpen] = useState(false);
+  const accordionRef = useRef<HTMLDivElement>(null);
+  const nextSectionRef = useRef<HTMLDivElement>(null);
+  const nextSectionTop = useRef<number | null>(null);
+
+  useEffect(() => {
+    if (!openCards.length) return;
+    const closeAfterSection = () => {
+      const section = accordionRef.current;
+      if (!section || section.getBoundingClientRect().bottom > 100) return;
+      nextSectionTop.current = nextSectionRef.current?.getBoundingClientRect().top ?? null;
+      setOpenCards([]);
+    };
+    window.addEventListener("scroll", closeAfterSection, { passive: true });
+    return () => window.removeEventListener("scroll", closeAfterSection);
+  }, [openCards.length]);
+
+  useLayoutEffect(() => {
+    if (openCards.length || nextSectionTop.current === null) return;
+    const nextTop = nextSectionRef.current?.getBoundingClientRect().top;
+    if (nextTop !== undefined) {
+      window.scrollBy({ top: nextTop - nextSectionTop.current, behavior: "instant" });
+    }
+    nextSectionTop.current = null;
+  }, [openCards.length]);
 
   const toggleCard = (cardNumber: number) => {
     setOpenCards((current) => (current.includes(cardNumber) ? current.filter((number) => number !== cardNumber) : [...current, cardNumber]));
   };
-
   const firstCardOpen = openCards.includes(1);
   const secondCardOpen = openCards.includes(2);
   const thirdCardOpen = openCards.includes(3);
-
   const firstRowHeight = firstCardOpen ? 601 : secondCardOpen ? 594 : 150;
-
   const thirdCardHeight = thirdCardOpen ? 553 : 150;
-
   const accordionExtraHeight = firstRowHeight - 150 + (thirdCardHeight - 150);
-
   const accordionStyle = {
     "--accordion-extra-height": `${accordionExtraHeight}px`,
     "--first-row-height": `${firstRowHeight}px`,
     "--third-card-height": `${thirdCardHeight}px`,
   } as CSSProperties;
-
   return (
     <>
       <Header />
@@ -68,7 +84,6 @@ const Bootcamp: NextPage = () => {
               </div>
               <div className={styles.neurolabsCodingBootcamps}>NeuroLabs Coding Bootcamps build job-ready programming skills through intensive, hands-on learning, real-world coding, interactive labs, and expert mentorship.</div>
             </div>
-
             <Image className={styles.image33Icon} src="/images/student.webp" width={366} height={578} sizes="366px" alt="Coding bootcamp student" priority />
           </div>
         </div>
@@ -216,10 +231,10 @@ const Bootcamp: NextPage = () => {
           </defs>
         </svg>
         <div className={styles.prepareForHighDemandCareerWrapper}>
-          <b className={styles.prepareForHighDemand}>Prepare for High-Demand Careers in Software and Data Technology</b>
+          <b className={styles.prepareForHighDemand}>Prepare for <span style={{ whiteSpace: "nowrap" }}>High-Demand</span> Careers in Software and Data Technology</b>
         </div>
       </div>
-      <div className={styles.frameParent14}>
+      <div className={styles.frameParent14} ref={accordionRef}>
         <div className={styles.frameParent15} style={{ height: firstRowHeight }}>
           <div className={`${styles.frameWrapper5} ${styles.accordionCardSpace} ${openCards.includes(1) ? styles.isExpanded : styles.isCollapsed}`}>
             <div className={styles.frameParent16}>
@@ -271,7 +286,7 @@ const Bootcamp: NextPage = () => {
                   <div className={styles.structuredAcceleratedLearnParent}>
                     <div className={styles.structuredAccelerated}>{`Accelerated Learning`}</div>
                    <div className={styles.fromCodingBasics}>
-  From coding basics to real-world applications
+  <span>From coding basics to</span>{" "}<span>real-world applications</span>
 </div>
                   </div>
                 </div>
@@ -324,7 +339,7 @@ const Bootcamp: NextPage = () => {
                   </div>
                   <div className={styles.careerFocusedTechnologyTraiParent}>
                     <div className={styles.structuredAccelerated}>Career Tech Training</div>
-                    <div className={styles.buildPracticalCareerReady}>Build practical, career-ready technology skills</div>
+                    <div className={styles.buildPracticalCareerReady}><span>Build Career-Ready Skills</span>{" "}<span>technology skills</span></div>
                   </div>
                 </div>
               </div>
@@ -375,8 +390,8 @@ const Bootcamp: NextPage = () => {
                   <div className={styles.frameChild19} aria-hidden="true" />
                 </div>
                 <div className={styles.builtForEducationEnterpriseParent}>
-                  <div className={styles.builtForEducationTitle}>{`Education & Enterprise Ready`}</div>
-                  <div className={styles.builtForEducationDescription}>Deploy across diverse learning environments</div>
+                  <div className={styles.builtForEducationTitle}>{`Education & Enterprise`}</div>
+                  <div className={styles.builtForEducationDescription}><span>Deploy across diverse</span>{" "}<span>learning environments</span></div>
                 </div>
               </div>
             </div>
@@ -386,10 +401,9 @@ const Bootcamp: NextPage = () => {
       <div className={styles.rectangleParent3}>
         <div className={styles.rectangle2} />
         <Image className={styles.image202} src="/images/bootbg.webp" alt="NeuroLabs Coding Bootcamp Background" width={1280} height={800} priority />
-
         <div className={styles.frameParent45}>
           <div className={styles.neurolabsCodingBootcampsFasParent}>
-            <b className={styles.neurolabsCodingBootcamps2}>NeuroLabs Coding Bootcamps Fast-Track Your Coding Journey</b>
+            <b className={styles.neurolabsCodingBootcamps2}>NeuroLabs Coding Bootcamps Fast-Track Your <span className={styles.codingJourneyBlue}>Coding Journey</span></b>
             <div className={styles.accelerateYourCoding}>Accelerate your coding journey with hands-on projects, expert guidance, and industry-ready training.</div>
           </div>
           <div className={styles.frameWrapper11}>
@@ -406,7 +420,7 @@ const Bootcamp: NextPage = () => {
           </div>
         </div>
       </div>
-      <div className={styles.rectangleParent4}>
+      <div className={styles.rectangleParent4} ref={nextSectionRef}>
         <div className={styles.rectangle3} />
         <div className={styles.image20} />
         <div className={styles.image21Parent}>
@@ -418,9 +432,7 @@ const Bootcamp: NextPage = () => {
           <div className={styles.frameChild35} />
         </div>
       </div>
-
     </div>
-
       {isBookDemoOpen && (
         <BookDemoModal onClose={() => setIsBookDemoOpen(false)} />
       )}
@@ -429,5 +441,4 @@ const Bootcamp: NextPage = () => {
     </>
   );
 };
-
 export default Bootcamp;

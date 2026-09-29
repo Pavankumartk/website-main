@@ -6127,3 +6127,98 @@
     white-space: nowrap !important;
   }
 }
+
+
+/* Requested heading colours and card text alignment. */
+.page .heroCopy h1 .headingAccent,
+.page .learning h2 .headingAccent,
+.page .growthCopy h2 .headingAccent {
+  color: #2d4cc8 !important;
+  -webkit-text-fill-color: #2d4cc8 !important;
+}
+
+.page .supportGrid .supportCard {
+  justify-content: center !important;
+  text-align: center !important;
+}
+
+.page .supportGrid .supportCard .supportCardText {
+  display: block;
+  width: 100%;
+  min-width: 0;
+  text-align: center !important;
+  white-space: normal;
+}
+
+/* Move only the numbers and titles; preserve the pointed card design. */
+.page .pillars .pillarHead > b,
+.page .pillars .pillarHead > span {
+  position: relative !important;
+  top: 12px !important;
+}
+
+/* ==================================================
+   MOBILE SUPPORT CARDS — NARROWER WIDTH + SIDE SPACE
+   Keeps desktop/tablet design unchanged.
+================================================== */
+@media screen and (max-width: 700px) {
+  .page .supportGrid {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  .page .supportGrid .supportCard,
+  .page .supportGrid .supportCard:nth-child(1),
+  .page .supportGrid .supportCard:nth-child(2),
+  .page .supportGrid .supportCard:nth-child(3),
+  .page .supportGrid .supportCard:nth-child(4) {
+    width: calc(100% - 28px) !important;
+    max-width: 340px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    box-sizing: border-box !important;
+  }
+}
+
+/* ==================================================
+   MOBILE HERO CONTENT — CENTER ALIGNMENT ONLY
+   Centers the Coding Resources badge, heading and paragraph.
+   Desktop/tablet remain unchanged.
+================================================== */
+@media screen and (max-width: 480px) {
+  .page .hero .heroCopy {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    padding-left: 22px !important;
+    padding-right: 22px !important;
+    box-sizing: border-box !important;
+    text-align: center !important;
+  }
+
+  .page .hero .heroCopy .pill {
+    align-self: center !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    text-align: center !important;
+  }
+
+  .page .hero .heroCopy h1 {
+    width: 100% !important;
+    max-width: 320px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    text-align: center !important;
+  }
+
+  .page .hero .heroCopy p {
+    width: 100% !important;
+    max-width: 300px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    text-align: center !important;
+  }
+}

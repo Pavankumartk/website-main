@@ -4599,28 +4599,19 @@ a:focus-visible {
   font-size: 0.45em;
   font-weight: 700;
 }
-/* Preserve the Standards Training image position. */
+/* Figma image placement: center the complete artwork at the frame bottom.
+   The small top inset matches the reference while retaining the existing
+   card dimensions, frame, typography and carousel behaviour.
+   !important on the fill geometry also supports Next.js Image fill styles. */
+.learning-module-image[alt*="Smart Onboarding" i],
 .learning-module-image[alt*="Standards Training" i] {
-  transform: translateY(-8px) scale(1.03);
-  transform-origin: center top;
-}
-
-/* Smart Onboarding only */
-.learning-module-image[alt*="Smart Onboarding" i] {
-  object-position: 50% 0% !important;
+  position: absolute;
+  inset: 6% 0 0 !important;
+  width: 100% !important;
+  height: 94% !important;
+  max-width: 100%;
+  object-fit: contain;
+  object-position: center bottom !important;
   transform: none;
-  transform-origin: center top;
-}
-
-/* Keep Standards Training as it is */
-.learning-module-image[alt*="Standards Training" i] {
-  object-position: 50% 0% !important;
-  transform: translateY(-8px) scale(1.03);
-  transform-origin: center top;
-}
-/* Smart Onboarding: keep the full head inside the image frame. */
-.learning-module-image[alt*="Smart Onboarding" i] {
-  object-position: 50% 0% !important;
-  transform: none;
-  transform-origin: center top;
+  transform-origin: center bottom;
 }

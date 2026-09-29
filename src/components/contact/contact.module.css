@@ -5082,3 +5082,174 @@
     max-width: min(220px, calc(100vw - 32px)) !important;
   }
 }
+
+/* ==========================================================================
+   FINAL COUNTRY DROPDOWN + SUBJECT HOVER ADJUSTMENT
+   ========================================================================== */
+
+.countrySelectField .countryCodeDropdown {
+  width: 178px !important;
+  min-width: 178px !important;
+  max-width: 178px !important;
+  padding-left: 8px !important;
+  padding-right: 8px !important;
+}
+
+.countrySelectField .countrySearchWrapper {
+  width: 100% !important;
+  min-width: 0 !important;
+  box-sizing: border-box !important;
+}
+
+.countrySelectField .countrySearchInput {
+  width: 100% !important;
+  min-width: 0 !important;
+  max-width: 100% !important;
+  box-sizing: border-box !important;
+}
+
+.frameParent4 {
+  border: 1px solid transparent !important;
+  transition: border-color 0.2s ease !important;
+}
+
+.frameParent4:hover {
+  border-color: #2d4cc8 !important;
+}
+
+.frameParent4:focus-visible {
+  border-color: #2d4cc8 !important;
+  outline: none !important;
+}
+
+@media (max-width: 760px) {
+  .countrySelectField .countryCodeDropdown {
+    width: 172px !important;
+    min-width: 172px !important;
+    max-width: 172px !important;
+  }
+}
+
+/* ==========================================================================
+   FINAL SUBJECT DROPDOWN VISIBILITY + HOVER FIX
+   - Border-only hover on the Select a subject field
+   - Border-only hover on each subject option
+   - Dropdown overlays the form instead of pushing the page/footer
+   - Compact dropdown with internal scrolling only when required
+   ========================================================================== */
+
+.subjectField {
+  position: relative !important;
+  z-index: 1000 !important;
+  overflow: visible !important;
+}
+
+.frameParent4 {
+  border: 1px solid transparent !important;
+  box-sizing: border-box !important;
+  transition: border-color 0.2s ease !important;
+}
+
+.frameParent4:hover,
+.frameParent4:focus-visible {
+  border-color: #2d4cc8 !important;
+  outline: none !important;
+}
+
+/* Keep the dropdown out of normal document flow. */
+.subjectDropdown {
+  position: absolute !important;
+  top: calc(100% + 7px) !important;
+  left: 0 !important;
+  right: auto !important;
+  width: 312px !important;
+  max-width: min(312px, calc(100vw - 32px)) !important;
+  height: auto !important;
+  max-height: 252px !important;
+  padding: 10px 12px !important;
+  gap: 3px !important;
+  box-sizing: border-box !important;
+  overflow-x: hidden !important;
+  overflow-y: auto !important;
+  transform: none !important;
+  z-index: 5000 !important;
+  scrollbar-width: thin;
+  scrollbar-color: #aeb8c2 transparent;
+}
+
+.subjectDropdown::-webkit-scrollbar {
+  width: 5px;
+}
+
+.subjectDropdown::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.subjectDropdown::-webkit-scrollbar-thumb {
+  background: #aeb8c2;
+  border-radius: 8px;
+}
+
+/* Subject options: compact + border-only hover. */
+.subjectOption {
+  width: 100% !important;
+  min-height: 34px !important;
+  height: 34px !important;
+  padding: 0 7px !important;
+  gap: 14px !important;
+  box-sizing: border-box !important;
+  border: 1px solid transparent !important;
+  border-radius: 7px !important;
+  background: transparent !important;
+  transition: border-color 0.2s ease, color 0.2s ease !important;
+}
+
+.subjectOption:hover,
+.subjectOption:focus-visible {
+  border-color: #2d4cc8 !important;
+  background: transparent !important;
+  outline: none !important;
+}
+
+.subjectOption:hover .subjectOptionText,
+.subjectOption:focus-visible .subjectOptionText {
+  color: #2d4cc8 !important;
+}
+
+/* Make sure parent containers do not clip the floating dropdown. */
+.frameWrapper,
+.frameGroup,
+.frameContainer,
+.frameDiv,
+.emailAddressParent {
+  overflow: visible !important;
+}
+
+/* Keep the message / consent / send button in their normal positions. */
+.frameParent5,
+.frameParent6,
+.frameParent7,
+.frameWrapper9 {
+  position: relative;
+  z-index: 1;
+}
+
+/* Responsive subject dropdown. */
+@media (max-width: 768px) {
+  .subjectDropdown {
+    width: min(312px, calc(100vw - 40px)) !important;
+    max-width: calc(100vw - 40px) !important;
+    max-height: 238px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .subjectDropdown {
+    left: 0 !important;
+    right: auto !important;
+    width: min(300px, calc(100vw - 40px)) !important;
+    max-width: calc(100vw - 40px) !important;
+    max-height: 220px !important;
+    transform: none !important;
+  }
+}

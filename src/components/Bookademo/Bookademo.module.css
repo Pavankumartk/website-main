@@ -7759,3 +7759,111 @@ svg
 .book-demo-modal-dialog .book-demo-country-flag {
   font-size: 17px;
 }
+
+/* ==========================================================================
+   FINAL PHONE ROW WIDTH ADJUSTMENT
+   ========================================================================== */
+.book-demo-modal-dialog .book-demo-phone-row {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  gap: 10px;
+}
+
+.book-demo-modal-dialog .book-demo-phone-row .book-demo-country-wrap {
+  flex: 0 0 104px !important;
+  width: 104px !important;
+  min-width: 104px !important;
+  max-width: 104px !important;
+}
+
+.book-demo-modal-dialog .book-demo-phone-row .book-demo-phone-wrap {
+  flex: 1 1 auto !important;
+  width: auto !important;
+  min-width: 0 !important;
+  max-width: none !important;
+}
+
+@media (max-width: 480px) {
+  .book-demo-modal-dialog .book-demo-phone-row {
+    gap: 8px;
+  }
+
+  .book-demo-modal-dialog .book-demo-phone-row .book-demo-country-wrap {
+    flex: 0 0 98px !important;
+    width: 98px !important;
+    min-width: 98px !important;
+    max-width: 98px !important;
+  }
+}
+
+/* ==========================================================================
+   FINAL — COUNTRY POPUP WIDTH MATCHES COUNTRY CODE FIELD
+   Keeps the dropdown list narrow instead of expanding to 210px.
+   ========================================================================== */
+.book-demo-modal-dialog .book-demo-country-dropdown .book-demo-custom-dropdown-menu {
+  left: 0 !important;
+  right: auto !important;
+  width: 104px !important;
+  min-width: 104px !important;
+  max-width: 104px !important;
+  box-sizing: border-box !important;
+}
+
+.book-demo-modal-dialog .book-demo-country-dropdown .book-demo-custom-dropdown-option {
+  width: 100% !important;
+  min-width: 0 !important;
+  padding-left: 7px !important;
+  padding-right: 7px !important;
+  box-sizing: border-box !important;
+}
+
+.book-demo-modal-dialog .book-demo-country-dropdown .book-demo-country-value {
+  min-width: 0 !important;
+  gap: 5px !important;
+}
+
+@media (max-width: 480px) {
+  .book-demo-modal-dialog .book-demo-country-dropdown .book-demo-custom-dropdown-menu {
+    width: 98px !important;
+    min-width: 98px !important;
+    max-width: 98px !important;
+  }
+}
+
+/* ==========================================================================
+   FINAL — COUNTRY SEARCH VISIBILITY
+   Slightly widens only the country popup so "Search country or code" is visible.
+   Main flag + dial-code field remains 104px.
+   ========================================================================== */
+.book-demo-modal-dialog .book-demo-country-dropdown .book-demo-custom-dropdown-menu {
+  width: 148px !important;
+  min-width: 148px !important;
+  max-width: 148px !important;
+}
+
+.book-demo-modal-dialog .book-demo-country-dropdown .book-demo-custom-dropdown-search-wrap {
+  padding: 7px !important;
+}
+
+.book-demo-modal-dialog .book-demo-country-dropdown .book-demo-custom-dropdown-search {
+  width: 100% !important;
+  min-width: 0 !important;
+  padding: 0 7px !important;
+  font-size: 12px !important;
+  line-height: 18px !important;
+  box-sizing: border-box !important;
+}
+
+.book-demo-modal-dialog .book-demo-country-dropdown .book-demo-custom-dropdown-search::placeholder {
+  font-size: 12px !important;
+  white-space: nowrap !important;
+}
+
+@media (max-width: 480px) {
+  .book-demo-modal-dialog .book-demo-country-dropdown .book-demo-custom-dropdown-menu {
+    width: 148px !important;
+    min-width: 148px !important;
+    max-width: 148px !important;
+  }
+}

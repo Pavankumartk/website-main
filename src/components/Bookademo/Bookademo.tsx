@@ -2325,7 +2325,7 @@ export default function BookADemo() {
                                   ]
                                 }
                                 searchable
-                                searchPlaceholder="Search country or code"
+                                searchPlaceholder="Search code"
                                 options={countryCodeOptions.map(
                                   (option) => ({
                                     value: option.id,
