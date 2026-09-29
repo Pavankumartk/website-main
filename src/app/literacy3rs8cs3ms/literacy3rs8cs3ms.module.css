@@ -2945,7 +2945,7 @@
 }
 .neurolxp2103rs8cs3msLite :is(.ms2, .rs2, .beyondSkillsIts),
 .neurolxp2103rs8cs3msLite .frameParent11 :is(.mindset, .metacognition) {
-  text-align: left !important;
+  text-align: Center !important;
 }
 
 /* Mobile framework heading and centred card content. */

@@ -10,7 +10,7 @@ import TalkToExpertButton from "@/components/TalkToOurExpert/TalkToExpertButton"
 type ThinkingCardData = {
   id: string;
   title: ReactNode;
-  description: string;
+  description: ReactNode;
   accent: string;
 };
 const THINKING_CARDS: ThinkingCardData[] = [
@@ -23,7 +23,13 @@ const THINKING_CARDS: ThinkingCardData[] = [
   {
     id: "bias-detection",
     title: "Bias Detection",
-    description: "Recognise perspective and intent behind information",
+    description: (
+      <>
+        <span style={{ display: "block", whiteSpace: "nowrap" }}>Recognise</span>
+        <span style={{ display: "block", whiteSpace: "nowrap" }}>the intent behind</span>
+        <span style={{ display: "block", whiteSpace: "nowrap" }}>information</span>
+      </>
+    ),
     accent: "#0B9BA0",
   },
   {
@@ -41,7 +47,13 @@ const THINKING_CARDS: ThinkingCardData[] = [
   {
     id: "digital-verification",
     title: "Digital Verification",
-    description: "Use tools and techniques to validate online content",
+    description: (
+      <>
+        <span style={{ display: "block", whiteSpace: "nowrap" }}>Use tools and</span>
+        <span style={{ display: "block", whiteSpace: "nowrap" }}>techniques to validate</span>
+        <span style={{ display: "block", whiteSpace: "nowrap" }}>online content</span>
+      </>
+    ),
     accent: "#2D4CC8",
   },
 ];

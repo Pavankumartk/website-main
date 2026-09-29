@@ -75,7 +75,7 @@ const MediaLiteracy: NextPage = () => {
         <section className={styles.heroSection}>
           <div className={styles.heroContent}>
             <div className={styles.heroCopy}>
-              <div className={styles.heroBadge}>Media literacy</div>
+              <div className={styles.heroBadge}>Media Literacy</div>
               <h1 className={styles.heroTitle}>
                 Think Critically Navigate
                 <span>Confidently</span>
