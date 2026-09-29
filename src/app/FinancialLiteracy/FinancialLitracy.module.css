@@ -4761,7 +4761,11 @@
   pointer-events: none;
   z-index: 0;
 }
-.finatialLiteracy .frameParent2 :is(.heroOuterCircle, .heroInnerCircle) {
+/* Hide the hero pattern only inside the portrait circle. */
+.finatialLiteracy .frameParent2 .heroOuterCircle {
+  background-color: #dfe6e9 !important;
+}
+.finatialLiteracy .frameParent2 .heroInnerCircle {
   background-color: transparent !important;
 }
 

@@ -2849,3 +2849,139 @@ body:has(.informationLiteracy) * {
     padding-inline: 12px;
   }
 }
+
+/* Ethics cards: wider text areas retain larger, single-line typography. */
+.informationLiteracy .frameParent22 {
+  width: calc(100% - 24px);
+  max-width: 1280px;
+  height: auto;
+  gap: 78px;
+}
+.informationLiteracy .frameParent23 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 540px;
+  max-width: 100%;
+  height: auto;
+  flex: 0 0 auto;
+}
+.informationLiteracy .frameParent26 {
+  display: contents;
+}
+.informationLiteracy .frameParent23 :is(
+  .frameParent24, .frameParent27, .frameParent29, .frameParent30
+) {
+  position: relative;
+  inset: auto;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: none;
+  height: auto;
+  min-height: 118px;
+  flex: 0 0 auto;
+  margin: 0;
+  padding: 16px 12px 16px 85px;
+  box-sizing: border-box;
+}
+.informationLiteracy .frameParent23 :is(
+  .frameParent25, .frameParent28, .frameParent31
+) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0;
+}
+.informationLiteracy .frameParent23 :is(
+  .citationExcellenceParent, .academicIntegrityParent,
+  .intellectualPropertyParent, .ethicalKnowledgeParent
+) {
+  position: static;
+  inset: auto;
+  transform: none;
+  width: 100%;
+  max-width: none;
+  min-width: 0;
+  height: auto;
+  flex: 1 1 auto;
+  align-self: auto;
+  align-items: flex-start;
+  gap: 12px;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  container-type: inline-size;
+}
+.informationLiteracy .frameParent23 .citationExcellence {
+  width: 100%;
+  min-height: 0;
+  font-size: 24px;
+  line-height: 1.35;
+  text-align: inherit;
+  white-space: nowrap !important;
+  overflow-wrap: normal;
+  word-break: normal;
+  text-wrap: nowrap;
+}
+.informationLiteracy .frameParent23 :is(
+  .citeSourcesAccuratelyContainer, .createOriginalPlagiarismContainer
+) {
+  width: 100%;
+  max-width: none;
+  height: auto;
+  min-height: 0;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: 1.4;
+  text-align: inherit;
+  white-space: nowrap !important;
+  overflow-wrap: normal;
+  word-break: normal;
+  text-wrap: nowrap;
+}
+.informationLiteracy .frameParent23 :is(
+  .citeSourcesAccuratelyContainer, .createOriginalPlagiarismContainer
+) * {
+  font-size: inherit;
+  white-space: nowrap !important;
+  overflow-wrap: normal;
+  word-break: normal;
+}
+.informationLiteracy .frameParent23 .citationExcellence br,
+.informationLiteracy .frameParent23 .citeSourcesAccuratelyContainer br,
+.informationLiteracy .frameParent23 .createOriginalPlagiarismContainer br,
+.informationLiteracy .frameParent23 .blankLine {
+  display: none;
+}
+/* Stack this section before the wider cards and polygon can collide. */
+@media (max-width: 1359px) {
+  .informationLiteracy .frameParent22 {
+    flex-direction: column;
+    gap: 40px;
+  }
+}
+/* Use the full mobile card width for text, below the number badge. */
+@media (max-width: 640px) {
+  .informationLiteracy .frameParent23 :is(
+    .frameParent24, .frameParent27, .frameParent29, .frameParent30
+  ) {
+    padding: 56px 12px 18px;
+  }
+  .informationLiteracy .frameParent23 :is(
+    .citationExcellenceParent, .academicIntegrityParent,
+    .intellectualPropertyParent, .ethicalKnowledgeParent
+  ) {
+    align-items: center;
+    text-align: center;
+    gap: 8px;
+  }
+  .informationLiteracy .frameParent23 .citationExcellence {
+    font-size: 22px;
+  }
+  .informationLiteracy .frameParent23 :is(
+    .citeSourcesAccuratelyContainer, .createOriginalPlagiarismContainer
+  ) {
+    font-size: min(20px, 4.3cqw);
+  }
+}

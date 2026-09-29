@@ -2161,15 +2161,7 @@
 }
 
 
-/* =========================================================
-   DESKTOP — CENTER THE COMPLETE SPOT MISINFORMATION SECTION
-   Only this section is shifted slightly to the right.
-   ========================================================= */
-@media (min-width: 1025px) {
-  .mediaLiteracyInner {
-    transform: translateX(24px);
-  }
-}
+/* Spot Misinformation centering is handled by the scoped rules below. */
 
 
 /* =========================================================
@@ -4584,5 +4576,63 @@ body:has(.mediaLiteracy) * {
 @media (max-width: 767px) {
   .mediaLiteracy .mediaLiteracyInner .checklistSecondLine {
     display: block;
+  }
+}
+
+
+/* Spot Misinformation: equal outer margins on every screen. */
+.mediaLiteracy .mediaLiteracyInner {
+  position: relative;
+  inset: auto;
+  box-sizing: border-box;
+  min-width: 0;
+  align-self: center;
+  margin-inline: auto !important;
+  transform: none !important;
+  translate: none;
+}
+.mediaLiteracy .mediaLiteracyInner :is(
+  .frameWrapper, .image20Parent, .frameContainer, .image21Parent
+) {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  margin-inline: auto;
+}
+@media (min-width: 1025px) {
+  .mediaLiteracy .mediaLiteracyInner {
+    width: min(1280px, calc(100% - 48px));
+    max-width: 1280px;
+  }
+  /* Center both columns as one group; stack when their readable widths
+     cannot fit, instead of clipping or shifting the whole section. */
+  .mediaLiteracy .mediaLiteracyInner .image21Parent {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    min-height: 0;
+    padding: 24px 0;
+  }
+  .mediaLiteracy .mediaLiteracyInner .frameDiv {
+    flex: 1 1 460px;
+    width: 100%;
+    max-width: 575px;
+    min-width: 0;
+    height: auto;
+    aspect-ratio: 575 / 672;
+    margin: 0;
+  }
+  .mediaLiteracy .mediaLiteracyInner .frameParent {
+    flex: 1 1 460px;
+    width: 100%;
+    max-width: 556px;
+    min-width: 0;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
   }
 }

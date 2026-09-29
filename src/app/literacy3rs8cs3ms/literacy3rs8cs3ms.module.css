@@ -2937,7 +2937,6 @@
     bottom: 14px !important;
   }
 }
-
 /* Match the centre card: left-align the 3Rs and 3Ms wording. */
 .neurolxp2103rs8cs3msLite :is(.msParent, .rsParent) {
   align-items: flex-start !important;
@@ -2947,7 +2946,6 @@
 .neurolxp2103rs8cs3msLite .frameParent11 :is(.mindset, .metacognition) {
   text-align: Center !important;
 }
-
 /* Mobile framework heading and centred card content. */
 .frameworkTerms {
   display: inline;
@@ -3010,9 +3008,25 @@
     flex: 0 1 auto !important;
   }
 }
-
 /* Keep the 3Ms Metacognition glyph green, including its source SVG fill. */
 .neurolxp2103rs8cs3msLite .frameParent10 .analyticsUpIcon {
   filter: brightness(0) saturate(100%) invert(33%) sepia(83%)
     saturate(714%) hue-rotate(57deg) brightness(90%) contrast(97%);
+}
+
+/* Align only the 3Rs and 3Ms row labels next to their icons. */
+.neurolxp2103rs8cs3msLite :is(.frameParent10, .frameParent20)
+  .frameParent11 :is(.brain01Parent, .analyticsUpParent) {
+  display: grid !important;
+  grid-template-columns: 24px minmax(0, 1fr) !important;
+  column-gap: 14px !important;
+  align-items: center !important;
+  width: 100% !important;
+}
+.neurolxp2103rs8cs3msLite :is(.frameParent10, .frameParent20)
+  .frameParent11 :is(.mindset, .metacognition) {
+  text-align: left !important;
+  justify-self: stretch !important;
+  margin: 0 !important;
+  min-width: 0;
 }
