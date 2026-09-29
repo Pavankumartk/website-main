@@ -218,7 +218,7 @@ export default function FinancialLiteracyPage() {
           </div>
           <div className={styles.frameParent18}>
             <TickRow label="Understand credit, loans, and interest" color="#67096E" tick="/icons/tick-03-3.svg" />
-            <TickRow label="Compare Financial Products" color="#2A7308" tick="/icons/tick-03-2.svg" />
+            <TickRow label="Compare financial products" color="#2A7308" tick="/icons/tick-03-2.svg" />
             <TickRow label="Assess risks before making decisions" color="#0B9BA0" tick="/icons/tick-03.svg" stretch />
             <TickRow label="Spend wisely, save for tomorrow" color="#861109" tick="/icons/tick.svg" stretch />
           </div>
@@ -229,17 +229,17 @@ export default function FinancialLiteracyPage() {
           <div className={styles.theseSkillsBuildConfidenceParent}>
             <b className={styles.theseSkillsBuildContainer}>
               <span className={styles.empoweringSmarter}>These Skills Build Confidence for a Stronger </span>
-              <span className={styles.money}>Financial future</span>
+              <span className={styles.money}>Financial Future</span>
             </b>
           </div>
         </div>
       </div>
       <div className={styles.frameParent23}>
         <div className={styles.buildTheConfidenceToManageParent}>
-          <SectionBadge label="Smart finance" className={styles.frameChild11} />
+          <SectionBadge label="Smart Finance" className={styles.frameChild11} />
           <div className={styles.buildResponsibleFinancialHaParent}>
             <b className={styles.buildResponsibleFinancial}>Build Responsible Financial Habits</b>
-            <div className={styles.buildTheSkills}>Financial literacy helps learners build responsible money habits for long-term financial well-being Learn to</div>
+            <div className={styles.buildTheSkills}>Financial literacy help learners build responsible money habits for long-term financial well-being Learn to</div>
           </div>
         </div>
         <div className={styles.frameParent25}>
@@ -333,7 +333,7 @@ export default function FinancialLiteracyPage() {
           <SectionBadge label="NeuroLXP" className={styles.frameChild18} />
           <div className={styles.financialConfidenceStartsHeParent}>
             <b className={styles.financialConfidenceStarts}>Financial Confidence Starts Here</b>
-            <div className={styles.neurolxpEmpowersLearners}>NeuroLXP empowers learners with practical financial skills for smarter decisions and lasting financial{" "}<span className="mobileWellBeing">well-being.</span></div>
+            <div className={styles.neurolxpEmpowersLearners}>NeuroLXP empower learners with practical financial skills for smarter decisions and lasting financial{" "}<span className="mobileWellBeing">well-being.</span></div>
           </div>
         </div>
       </div>
