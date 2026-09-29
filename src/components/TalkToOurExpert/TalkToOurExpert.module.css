@@ -1194,33 +1194,37 @@
 
 .talk-to-expert-fab {
   position: fixed;
+
   right: 32px;
+
   bottom: 32px;
+
   z-index: 500;
-  box-sizing: border-box;
+
   width: 64px;
   height: 64px;
   min-width: 64px;
   min-height: 64px;
-  max-width: 64px;
-  max-height: 64px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0;
+
   padding: 0;
+
   border: none;
-  border-radius: 50%;
+  border-radius: 50% !important;
+
   background: #dfe6e9;
+
   box-shadow:
     -8px -8px 16px #ffffff,
     8px 8px 16px #c6c6c9;
-  cursor: pointer;
-}
 
-.talk-to-expert-fab:focus-visible {
-  outline: 3px solid #2d4cc8;
-  outline-offset: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+
+  box-sizing: border-box;
+  overflow: hidden;
 }
 
 .talk-to-expert-fab:hover {
@@ -1230,8 +1234,8 @@
 .talk-to-expert-fab-icon-ring {
   flex-shrink: 0;
 
-  width: 48px;
-  height: 48px;
+  width: 52px;
+  height: 52px;
 
   border-radius: 50%;
 
@@ -1270,6 +1274,9 @@
   height: 22px;
 }
 
+.talk-to-expert-fab-label {
+  display: none !important;
+}
 
 
 /* =========================================================
@@ -1638,9 +1645,14 @@
 
     bottom: 20px;
 
-    gap: 0;
+    width: 56px;
+    height: 56px;
+    min-width: 56px;
+    min-height: 56px;
 
     padding: 0;
+
+    border-radius: 50% !important;
   }
 
   .talk-to-expert-fab-icon-ring {
@@ -1661,6 +1673,9 @@
     height: 18px;
   }
 
+  .talk-to-expert-fab-label {
+    font-size: 15px;
+  }
 }
 
 
@@ -1775,11 +1790,19 @@
   }
 
   .talk-to-expert-fab {
+    width: 52px;
+    height: 52px;
+    min-width: 52px;
+    min-height: 52px;
+
     padding: 0;
 
-    gap: 0;
+    border-radius: 50% !important;
   }
 
+  .talk-to-expert-fab-label {
+    display: none;
+  }
 }
 
 
@@ -3914,5 +3937,282 @@
     min-width: 22px !important;
     height: 16px !important;
     flex-basis: 22px !important;
+  }
+}
+
+
+/* ==========================================================================
+   FINAL — COMPACT COUNTRY DROPDOWN + REDUCED PHONE FIELD GAP
+   --------------------------------------------------------------------------
+   Requested adjustment:
+   - Reduce the country dropdown card width.
+   - Reduce the horizontal gap between country selector and phone input.
+   - Keep existing flags, hover borders, neumorphic styling and behavior.
+   ========================================================================== */
+
+.tte-phone-row {
+  gap: 4px !important;
+}
+
+/* Keep the selected country trigger compact. */
+.tte-country-trigger {
+  min-width: 92px !important;
+  max-width: 96px !important;
+  padding-left: 8px !important;
+  padding-right: 8px !important;
+}
+
+/* Smaller dropdown card. */
+.tte-country-panel {
+  width: 190px !important;
+  min-width: 190px !important;
+  max-width: 190px !important;
+
+  padding: 8px !important;
+}
+
+/* Search field follows the new compact dropdown width. */
+.tte-country-search {
+  width: 100% !important;
+  height: 34px !important;
+  min-height: 34px !important;
+
+  padding-left: 9px !important;
+  padding-right: 9px !important;
+
+  margin-bottom: 6px !important;
+
+  font-size: 13px !important;
+}
+
+/* Compact country rows without affecting readability. */
+.tte-country-option {
+  padding: 6px 7px !important;
+  gap: 7px !important;
+  font-size: 13px !important;
+}
+
+.tte-country-short-label {
+  gap: 7px !important;
+}
+
+/* Keep dial code readable while allowing long country names to truncate. */
+.tte-country-dial-code {
+  flex: 0 0 auto !important;
+  white-space: nowrap !important;
+}
+
+.tte-country-name {
+  flex: 1 1 auto !important;
+  min-width: 0 !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+  white-space: nowrap !important;
+}
+
+/* Responsive compact sizing. */
+@media (max-width: 768px) {
+  .tte-phone-row {
+    gap: 4px !important;
+  }
+
+  .tte-country-trigger {
+    min-width: 88px !important;
+    max-width: 94px !important;
+  }
+
+  .tte-country-panel {
+    width: 184px !important;
+    min-width: 184px !important;
+    max-width: min(184px, calc(100vw - 24px)) !important;
+  }
+}
+
+@media (max-width: 375px) {
+  .tte-phone-row {
+    gap: 3px !important;
+  }
+
+  .tte-country-panel {
+    width: 178px !important;
+    min-width: 178px !important;
+    max-width: min(178px, calc(100vw - 20px)) !important;
+  }
+}
+
+
+/* ==========================================================================
+   FINAL MICRO-ADJUSTMENT — COUNTRY DROPDOWN + PHONE GAP
+   Requested: slightly narrower dropdown and almost no gap between
+   the country-code control and phone-number field.
+   ========================================================================== */
+
+.tte-phone-row {
+  gap: 2px !important;
+}
+
+.tte-country-trigger {
+  min-width: 86px !important;
+  max-width: 90px !important;
+  padding-left: 7px !important;
+  padding-right: 7px !important;
+  gap: 6px !important;
+}
+
+.tte-country-panel {
+  width: 175px !important;
+  min-width: 175px !important;
+  max-width: 175px !important;
+  padding: 7px !important;
+}
+
+.tte-country-search {
+  width: 100% !important;
+  padding-left: 8px !important;
+  padding-right: 8px !important;
+}
+
+.tte-country-option {
+  padding-left: 6px !important;
+  padding-right: 6px !important;
+  gap: 6px !important;
+}
+
+@media (max-width: 768px) {
+  .tte-phone-row {
+    gap: 2px !important;
+  }
+
+  .tte-country-trigger {
+    min-width: 84px !important;
+    max-width: 88px !important;
+  }
+
+  .tte-country-panel {
+    width: 170px !important;
+    min-width: 170px !important;
+    max-width: min(170px, calc(100vw - 24px)) !important;
+  }
+}
+
+@media (max-width: 375px) {
+  .tte-phone-row {
+    gap: 1px !important;
+  }
+
+  .tte-country-panel {
+    width: 166px !important;
+    min-width: 166px !important;
+    max-width: min(166px, calc(100vw - 20px)) !important;
+  }
+}
+
+/* =========================================================
+   FINAL PHONE ROW ALIGNMENT
+   ========================================================= */
+
+.tte-phone-row {
+  display: flex !important;
+  align-items: flex-start !important;
+  gap: 0 !important;
+  column-gap: 0 !important;
+  width: 100% !important;
+}
+
+.tte-country-select {
+  flex: 0 0 86px !important;
+  width: 86px !important;
+  min-width: 86px !important;
+  max-width: 86px !important;
+  margin-right: 2px !important;
+}
+
+.tte-country-trigger {
+  width: 86px !important;
+  min-width: 86px !important;
+  max-width: 86px !important;
+  padding-left: 6px !important;
+  padding-right: 6px !important;
+  gap: 5px !important;
+}
+
+/* Number field takes all newly available width */
+.tte-phone-row .tte-input-shell-grow {
+  flex: 1 1 0 !important;
+  width: auto !important;
+  min-width: 0 !important;
+  max-width: none !important;
+  margin-left: 0 !important;
+}
+
+/* Keep the dropdown card compact */
+.tte-country-panel {
+  width: 175px !important;
+  min-width: 175px !important;
+  max-width: 175px !important;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .tte-phone-row {
+    gap: 0 !important;
+    column-gap: 0 !important;
+  }
+
+  .tte-country-select,
+  .tte-country-trigger {
+    flex-basis: 84px !important;
+    width: 84px !important;
+    min-width: 84px !important;
+    max-width: 84px !important;
+  }
+
+  .tte-country-select {
+    margin-right: 2px !important;
+  }
+
+  .tte-country-panel {
+    width: 170px !important;
+    min-width: 170px !important;
+    max-width: 170px !important;
+  }
+}
+
+/* =========================================================
+   FINAL FLOATING EXPERT BUTTON — TRUE CIRCLE
+   ========================================================= */
+.talk-to-expert-fab {
+  width: 64px !important;
+  height: 64px !important;
+  min-width: 64px !important;
+  min-height: 64px !important;
+  padding: 0 !important;
+  border-radius: 50% !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 0 !important;
+  overflow: hidden !important;
+}
+
+.talk-to-expert-fab-label {
+  display: none !important;
+}
+
+@media (max-width: 768px) {
+  .talk-to-expert-fab {
+    width: 56px !important;
+    height: 56px !important;
+    min-width: 56px !important;
+    min-height: 56px !important;
+  }
+}
+
+@media (max-width: 375px) {
+  .talk-to-expert-fab {
+    width: 52px !important;
+    height: 52px !important;
+    min-width: 52px !important;
+    min-height: 52px !important;
   }
 }
