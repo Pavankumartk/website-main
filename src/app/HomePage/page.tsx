@@ -2210,10 +2210,9 @@ export default function HomePage() {
       {isBookDemoOpen && <BookDemoModal onClose={closeBookDemo} />}
       {isContactOpen && <ContactUsModal onClose={closeContactUs} />}
       {/* <BookDemoButton /> */}
-      <TalkToExpertButton
-        portalTargetId={TALK_TO_EXPERT_SLOT_ID}
-        className={styles["get-in-touch-expert-button"]}
-      />
+      <div className={styles["get-in-touch-expert-button"]}>
+        <TalkToExpertButton />
+      </div>
     </main>
 
       <div className={styles["home-footer"]}>
