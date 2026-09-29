@@ -4,7 +4,6 @@ import styles from "./medialiteracy.module.css";
 import Header from "../../components/Header/header";
 import Footer from "../../components/Footer/footer";
 import TalkToExpertButton from "@/components/TalkToOurExpert/TalkToExpertButton";
-
 const MediaLiteracy: NextPage = () => {
   return (
     <>
@@ -26,7 +25,10 @@ const MediaLiteracy: NextPage = () => {
                         <div className={styles.frameParent2}>
                           <div className={styles.frameItem}>Spot Misinformation</div>
                           <div className={styles.spotBiasVerifyFactsBuildWrapper}>
-                            <b className={styles.spotBiasVerify}>Spot Bias! Verify Facts Build Trust</b>
+                            <b className={styles.spotBiasVerify}>
+                              <span className={styles.spotBiasLine}>Spot Bias!</span>{" "}
+                              <span className={styles.spotBiasLine}>Verify Facts Build Trust</span>
+                            </b>
                           </div>
                           <div className={styles.questionHeadlinesVerify}>Question Headlines! Verify Facts! Think Critically.</div>
                         </div>
@@ -43,7 +45,10 @@ const MediaLiteracy: NextPage = () => {
                         <div className={`${styles.frameInner} ${styles.frameInnerPurple}`}>
                           <Image className={styles.tickIcon} src="/icons/tick-03-3.svg" width={24} height={24} sizes="24px" alt="" aria-hidden="true" />
                         </div>
-                        <div className={styles.recognizeCredibleSources}>Spot Misleading Content</div>
+                        <div className={styles.recognizeCredibleSources}>
+                          Spot Misleading{" "}
+                          <span className={styles.checklistSecondLine}>Content</span>
+                        </div>
                       </div>
                       <div className={styles.frameParent6}>
                         <div className={`${styles.frameInner} ${styles.frameInnerCyan}`}>
@@ -71,14 +76,11 @@ const MediaLiteracy: NextPage = () => {
           <div className={styles.heroContent}>
             <div className={styles.heroCopy}>
               <div className={styles.heroBadge}>Media literacy</div>
-
               <h1 className={styles.heroTitle}>
                 Think Critically Navigate
                 <span>Confidently</span>
               </h1>
-
               <p className={styles.heroDescription}>Build critical media skills to evaluate information and navigate the digital world confidently.</p>
-
               <div className={styles.heroStats}>
                 <div className={styles.heroStatCard}>
                   <div className={styles.heroStatCircle}>
@@ -86,14 +88,12 @@ const MediaLiteracy: NextPage = () => {
                   </div>
                   <span>Verify News</span>
                 </div>
-
                 <div className={styles.heroStatCard}>
                   <div className={styles.heroStatCircle}>
                     <strong className={styles.heroStatGreen}>3x</strong>
                   </div>
                   <span>Verify Sources</span>
                 </div>
-
                 <div className={styles.heroStatCard}>
                   <div className={styles.heroStatCircle}>
                     <strong className={styles.heroStatOrange}>
@@ -104,13 +104,11 @@ const MediaLiteracy: NextPage = () => {
                 </div>
               </div>
             </div>
-
             <div className={styles.heroImages}>
               <svg className={styles.heroFramePolygon} width="524" height="526" viewBox="0 0 524 526" fill="none" aria-hidden="true" focusable="false">
                 <g filter="url(#filter0_ii_2022_2)">
                   <path d="M261.973 0L523.945 131.5V394.5L261.973 526L-3.05176e-05 394.5V131.5L261.973 0Z" fill="#DFE6E9" />
                 </g>
-
                 <defs>
                   <filter id="filter0_ii_2022_2" x="-8" y="-8" width="539.945" height="542" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
                     <feFlood floodOpacity="0" result="BackgroundImageFix" />
@@ -130,7 +128,6 @@ const MediaLiteracy: NextPage = () => {
                   </filter>
                 </defs>
               </svg>
-
               <div
                 className={styles.heroPhotoPolygon}
                 style={{
@@ -292,14 +289,11 @@ const MediaLiteracy: NextPage = () => {
             <div className={styles.frameParent32}>
               <div className={styles.frameChild20}>Critical Thinking</div>
               <b className={styles.questionUnderstandEvaluate}>
-                {" "}
                 Question! Understand! Evaluate
-                <br />
               </b>
             </div>
             <div className={styles.strengthenYourAbility}>
-              <br /> Strengthen your ability to analyze information
-              <br /> and make informed decisions.
+              Strengthen your ability to analyze information and make informed decisions.
             </div>
           </div>
           <div className={styles.frameParent33}>
@@ -413,7 +407,7 @@ const MediaLiteracy: NextPage = () => {
                     Detect, resist, and report misinformation with confidence.
                     <br />
                   </span>
-                  <span className={styles.blankLine}>&nbsp;</span>
+                  <span className={styles.blankLine}> </span>
                 </div>
               </div>
               <div className={styles.frameChild23} aria-hidden="true">
@@ -430,10 +424,10 @@ const MediaLiteracy: NextPage = () => {
                 </b>
                 <div className={styles.detectResistAndContainer}>
                   <span className={styles.detectResistAnd}>
-                    Earn recognition for ethical and responsible media engagement
+                    Earn recognition for ethical and responsible media engagement.
                     <br />
                   </span>
-                  <span className={styles.blankLine}>&nbsp;</span>
+                  <span className={styles.blankLine}> </span>
                 </div>
               </div>
               <div className={styles.frameChild25} aria-hidden="true">
@@ -452,5 +446,4 @@ const MediaLiteracy: NextPage = () => {
     </>
   );
 };
-
 export default MediaLiteracy;

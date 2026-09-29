@@ -3,7 +3,6 @@ import Image from "next/image";
 import styles from "./literacy3rs8cs3ms.module.css";
 import Header from "../../components/Header/header";
 import Footer from "../../components/Footer/footer";
-
 const NeuroLXP2103Rs8Cs3MsLiteracy: NextPage = () => {
   return (
     <>
@@ -51,9 +50,11 @@ const NeuroLXP2103Rs8Cs3MsLiteracy: NextPage = () => {
           <div className={styles.poweredByThe3rs8cs3msParent}>
             <b className={styles.poweredByTheContainer}>
               <span className={styles.poweredByThe2}>{`Powered by the `}</span>
-              <span className={styles.rs}>3Rs-</span>
-              <span className={styles.cs}>8Cs-</span>
-              <span className={styles.ms}>3Ms</span>
+              <span className={styles.frameworkTerms}>
+                <span className={styles.rs}>3Rs-</span>
+                <span className={styles.cs}>8Cs-</span>
+                <span className={styles.ms}>3Ms</span>
+              </span>
             </b>
             <div className={styles.buildingStrongFoundations}>Building strong foundations, future-ready skills, and lifelong learning mindsets.</div>
           </div>
@@ -206,7 +207,7 @@ const NeuroLXP2103Rs8Cs3MsLiteracy: NextPage = () => {
         </div>
       </div>
       <div className={styles.whyItMattersParent}>
-        <b className={styles.whyItMatters}>Why it Matters</b>
+        <b className={styles.frameInner}>Why it Matters</b>
         <div className={styles.transformingLearningInto}>Transforming learning into practical skills that inspire confidence resilience and lifelong success every day.</div>
       </div>
       <div className={styles.rectangleParent}>
@@ -235,5 +236,4 @@ const NeuroLXP2103Rs8Cs3MsLiteracy: NextPage = () => {
     </>
   );
 };
-
 export default NeuroLXP2103Rs8Cs3MsLiteracy;

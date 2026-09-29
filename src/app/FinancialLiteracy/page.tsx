@@ -1,29 +1,21 @@
 'use client';
-
 import { useLayoutEffect, useRef, type ReactNode } from 'react';
 import Image from "next/image";
 import styles from "./FinancialLitracy.module.css";
 import Header from "../../components/Header/header";
 import Footer from "../../components/Footer/footer";
-
-
 const ARTBOARD_WIDTH = 1440;
 const ARTBOARD_HEIGHT = 4280;
 const DESKTOP_MIN = 768;
-
 function PageScaler({ children }: { children: ReactNode }) {
   const shellRef = useRef<HTMLDivElement>(null);
   const boardRef = useRef<HTMLDivElement>(null);
-
   useLayoutEffect(() => {
     const shell = shellRef.current;
     const board = boardRef.current;
-
     if (!shell || !board) return;
-
     const applyScale = () => {
       const vw = document.documentElement.clientWidth || window.innerWidth;
-
       if (vw < DESKTOP_MIN) {
         board.style.width = "";
         board.style.transform = "";
@@ -33,30 +25,22 @@ function PageScaler({ children }: { children: ReactNode }) {
         shell.dataset.mode = "fluid";
         return;
       }
-
       shell.dataset.mode = "artboard";
-
       const scale = Math.min(1, vw / ARTBOARD_WIDTH);
-
       board.style.width = `${ARTBOARD_WIDTH}px`;
       board.style.transform = `scale(${scale})`;
       board.style.transformOrigin = "top left";
-
       shell.style.height = `${ARTBOARD_HEIGHT * scale}px`;
       shell.style.justifyContent = scale < 1 ? "flex-start" : "center";
     };
-
     applyScale();
-
     window.addEventListener("resize", applyScale);
     window.addEventListener("orientationchange", applyScale);
-
     return () => {
       window.removeEventListener("resize", applyScale);
       window.removeEventListener("orientationchange", applyScale);
     };
   }, []);
-
   return (
     <div className={styles.pageScale} ref={shellRef}>
       <div className={styles.finatialLiteracy} ref={boardRef}>
@@ -65,11 +49,9 @@ function PageScaler({ children }: { children: ReactNode }) {
     </div>
   );
 }
-
 function SectionBadge({ label, className }: { label: string; className?: string }) {
   return <div className={`${styles.sectionBadge} ${className ?? ""}`.trim()}>{label}</div>;
 }
-
 function TickRow({ label, color, tick, stretch = false }: { label: string; color: string; tick: string; stretch?: boolean }) {
   return (
     <div className={stretch ? styles.frameParent21 : styles.frameParent19}>
@@ -81,7 +63,6 @@ function TickRow({ label, color, tick, stretch = false }: { label: string; color
     </div>
   );
 }
-
 function HabitCard({ label, wide = false }: { label: string; wide?: boolean }) {
   return (
     <div className={styles.image20Parent}>
@@ -94,7 +75,6 @@ function HabitCard({ label, wide = false }: { label: string; wide?: boolean }) {
     </div>
   );
 }
-
 function StageIcon({ src, tone }: { src: string; tone: "pink" | "blue" | "purple" | "teal" }) {
   const toneClass = {
     pink: styles.stageIconInnerPink,
@@ -102,7 +82,6 @@ function StageIcon({ src, tone }: { src: string; tone: "pink" | "blue" | "purple
     purple: styles.stageIconInnerPurple,
     teal: styles.stageIconInnerTeal,
   }[tone];
-
   return (
     <div className={styles.stageIcon}>
       <div className={`${styles.stageIconInner} ${toneClass}`}>
@@ -111,14 +90,20 @@ function StageIcon({ src, tone }: { src: string; tone: "pink" | "blue" | "purple
     </div>
   );
 }
-
 export default function FinancialLiteracyPage() {
   return (
     <>
+      <style jsx>{`
+        @media (max-width: 767.98px) {
+          .mobileWellBeing {
+            display: block;
+            white-space: nowrap;
+          }
+        }
+      `}</style>
       <Header />
       <PageScaler>
       <div className={styles.wrapperEllipse359} aria-hidden="true" />
-
       <div className={styles.frameDiv}>
         <div className={styles.neurolxp21Wrapper}>
           <div className={styles.financialLiteracy}>NeuroLXP 2.1</div>
@@ -128,7 +113,6 @@ export default function FinancialLiteracyPage() {
           <b className={styles.financialLiteracy}>Financial Literacy</b>
         </div>
       </div>
-
       <div className={styles.frameParent2}>
         <div className={styles.frameParent3}>
           <div className={styles.frameParent4}>
@@ -150,7 +134,6 @@ export default function FinancialLiteracyPage() {
           </div>
         </div>
       </div>
-
       <div className={styles.frameParent5}>
         <div className={styles.frameParent6}>
           <SectionBadge label="Financial Foundations" className={styles.frameIcon} />
@@ -174,8 +157,6 @@ export default function FinancialLiteracyPage() {
         <div className={styles.frameParent7}>
           <div className={styles.frameParent8}>
             <div className={styles.frameParent9}>
-
-
               <div className={styles.wrapper}>
                 <b className={styles.b}>01</b>
               </div>
@@ -198,7 +179,6 @@ export default function FinancialLiteracyPage() {
           </div>
           <div className={styles.frameParent11}>
             <div className={styles.frameParent9}>
-
               <div className={styles.frame}>
                 <b className={styles.b}>02</b>
               </div>
@@ -209,7 +189,6 @@ export default function FinancialLiteracyPage() {
               </div>
             </div>
             <div className={styles.frameParent9}>
-              
               <div className={styles.wrapper2}>
                 <b className={styles.b4}>04</b>
               </div>
@@ -222,7 +201,6 @@ export default function FinancialLiteracyPage() {
           </div>
         </div>
       </div>
-
       <div className={styles.frameParent14}>
         <div className={styles.frameParent15}>
           <div className={styles.frameParent16}>
@@ -250,13 +228,12 @@ export default function FinancialLiteracyPage() {
           <div className={styles.ellipseDiv} aria-hidden />
           <div className={styles.theseSkillsBuildConfidenceParent}>
             <b className={styles.theseSkillsBuildContainer}>
-              <span className={styles.empoweringSmarter}>These Skills Build confidence for a stronger </span>
+              <span className={styles.empoweringSmarter}>These Skills Build Confidence for a Stronger </span>
               <span className={styles.money}>Financial future</span>
             </b>
           </div>
         </div>
       </div>
-
       <div className={styles.frameParent23}>
         <div className={styles.buildTheConfidenceToManageParent}>
           <SectionBadge label="Smart finance" className={styles.frameChild11} />
@@ -276,7 +253,6 @@ export default function FinancialLiteracyPage() {
           </div>
         </div>
       </div>
-
       <div className={styles.frameParent28}>
         <SectionBadge label="Who We Support" className={styles.frameChild12} />
         <div className={styles.frameParent29}>
@@ -331,7 +307,6 @@ export default function FinancialLiteracyPage() {
           </div>
         </div>
       </div>
-
       <div className={styles.image20Parent3}>
         <div className={styles.image20} />
         <svg className={styles.ctaBorderFrame} viewBox="0 0 1232 361" preserveAspectRatio="none" fill="none" aria-hidden="true">
@@ -358,7 +333,7 @@ export default function FinancialLiteracyPage() {
           <SectionBadge label="NeuroLXP" className={styles.frameChild18} />
           <div className={styles.financialConfidenceStartsHeParent}>
             <b className={styles.financialConfidenceStarts}>Financial Confidence Starts Here</b>
-            <div className={styles.neurolxpEmpowersLearners}>NeuroLXP empowers learners with practical financial skills for smarter decisions and lasting financial well-being.</div>
+            <div className={styles.neurolxpEmpowersLearners}>NeuroLXP empowers learners with practical financial skills for smarter decisions and lasting financial{" "}<span className="mobileWellBeing">well-being.</span></div>
           </div>
         </div>
       </div>

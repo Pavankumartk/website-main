@@ -460,7 +460,7 @@
 }
 
 .frameParent9:hover {
-  transform: translateY(-8px);
+  transform: none;
   z-index: 3;
 }
 
@@ -845,7 +845,7 @@
 
 .frameParent19:hover .tickWrap,
 .frameParent21:hover .tickWrap {
-  transform: translateY(-8px);
+  transform: none;
 }
 
 .tickBg {
@@ -1050,7 +1050,7 @@
 }
 
 .image20Parent:hover {
-  transform: translateY(-8px);
+  transform: none;
   box-shadow:
     inset 4px 4px 4px rgba(196, 196, 196, 0.8),
     inset -4px -4px 4px #ffffff,
@@ -1257,11 +1257,11 @@
 }
 
 .frameParent31 > .frameParent32:nth-child(odd):hover .frameWrapper {
-  transform: translateX(16px);
+  transform: none;
 }
 
 .frameParent31 > .frameParent32:nth-child(even):hover .frameWrapper {
-  transform: translateX(-16px);
+  transform: none;
 }
 
 .stageIcon {
@@ -1440,7 +1440,7 @@
 
 .ctaBorderPath {
   fill: none;
-  animation: ctaBorderMarch 1.2s linear infinite;
+  animation: none;
 }
 
 @keyframes ctaBorderMarch {
@@ -2143,7 +2143,7 @@
   }
 
   .frameParent9:hover {
-    transform: translateY(-8px) !important;
+    transform: none !important;
   }
 
   @supports not (zoom: 1) {
@@ -2155,7 +2155,7 @@
     }
 
     .frameParent9:hover {
-      transform: scale(calc((100vw - 80px) / 620px)) translateY(-8px) !important;
+      transform: scale(calc((100vw - 80px) / 620px)) !important;
     }
   }
 
@@ -2349,6 +2349,9 @@
   }
 
   .frameParent29 .frameParent16 {
+    flex: 0 0 auto;
+    min-width: 0;
+    height: auto;
     width: 100% !important;
     max-width: 640px;
     text-align: center;
@@ -2444,9 +2447,10 @@
   .buildMoneyHabits {
     font-size: 13px !important;
     line-height: 1.3 !important;
-    white-space: normal !important;
-    overflow-wrap: break-word;
-    word-break: break-word;
+    white-space: nowrap !important;
+    overflow-wrap: normal;
+    word-break: normal;
+    hyphens: none;
   }
 
   .frameParent31 > .frameParent32:nth-child(odd):hover .frameWrapper,
@@ -2528,6 +2532,10 @@
     line-height: 1.45 !important;
     height: auto !important;
     white-space: normal !important;
+    hyphens: none !important;
+    -webkit-hyphens: none !important;
+    overflow-wrap: normal !important;
+    word-break: normal !important;
     text-align: center;
     max-width: 34em;
     margin: 0 auto;
@@ -2721,7 +2729,7 @@
     }
 
     .frameParent9:hover {
-      transform: scale(calc((100vw - 40px) / 620px)) translateY(-4px) !important;
+      transform: scale(calc((100vw - 40px) / 620px)) !important;
     }
   }
 
@@ -2808,22 +2816,22 @@
   }
 
   .frameParent9:hover {
-    transform: translateY(-4px) !important;
+    transform: none !important;
   }
 
   @supports not (zoom: 1) {
     .frameParent9:hover {
-      transform: scale(calc((100vw - 40px) / 620px)) translateY(-4px) !important;
+      transform: scale(calc((100vw - 40px) / 620px)) !important;
     }
   }
 
   .image20Parent:hover {
-    transform: translateY(-4px);
+    transform: none;
   }
 
   .frameParent19:hover .tickWrap,
   .frameParent21:hover .tickWrap {
-    transform: translateY(-4px);
+    transform: none;
   }
 
   .ellipseParent {
@@ -2938,11 +2946,11 @@
   }
 
   .frameParent9:active {
-    transform: translateY(-4px) !important;
+    transform: none !important;
   }
 
   .image20Parent:active {
-    transform: translateY(-4px);
+    transform: none;
   }
 
   .frameParent19:hover .tickWrap,
@@ -2952,7 +2960,7 @@
 
   .frameParent19:active .tickWrap,
   .frameParent21:active .tickWrap {
-    transform: translateY(-4px);
+    transform: none;
   }
 }
 
@@ -4114,7 +4122,10 @@
 }
 
 @media (max-width: 767.98px) {
-  .frameParent2,
+  .frameParent2 {
+    margin-top: 12px !important;
+  }
+
   .frameParent5,
   .frameParent14,
   .frameParent23,
@@ -4693,5 +4704,215 @@
     overflow: hidden !important;
     overflow-wrap: normal !important;
     word-break: normal !important;
+  }
+}
+
+
+/* Match the supplied Media Literacy reference badges. */
+.finatialLiteracy .sectionBadge {
+  box-sizing: border-box !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: fit-content !important;
+  min-width: 0 !important;
+  max-width: 100% !important;
+  height: auto !important;
+  min-height: 50px !important;
+  max-height: none !important;
+  padding: 10px 24px !important;
+  border-radius: 999px !important;
+  background: #dfe6e9 !important;
+  color: #2d4cc8 !important;
+  font-size: 24px !important;
+  font-weight: 600 !important;
+  line-height: 1.3 !important;
+  letter-spacing: 0.02em !important;
+  text-transform: none !important;
+  text-align: center !important;
+  white-space: normal !important;
+  overflow-wrap: normal !important;
+  word-break: normal !important;
+  overflow: visible !important;
+  box-shadow: inset -4px -4px 4px #ffffff,
+    inset 4px 4px 4px rgba(196, 196, 196, 0.8) !important;
+}
+.finatialLiteracy .sectionBadge * {
+  font: inherit !important;
+  color: inherit !important;
+  text-transform: none !important;
+}
+
+/* One continuous pattern across the hero, visible behind its circle too. */
+.finatialLiteracy .frameParent2::before {
+  content: '' !important;
+  display: block !important;
+  width: 1440px;
+  height: calc(100% + 80px);
+  left: 50%;
+  top: -80px;
+  transform: translateX(-50%);
+  background-color: #dfe6e9;
+  background-image: url('/images/Ellipse 359.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  opacity: 1;
+  pointer-events: none;
+  z-index: 0;
+}
+.finatialLiteracy .frameParent2 :is(.heroOuterCircle, .heroInnerCircle) {
+  background-color: transparent !important;
+}
+
+/* Financial Literacy / for Every Stage of Life. */
+.finatialLiteracy .frameParent28 .financialLiteracyForContainer {
+  display: block !important;
+  height: auto !important;
+}
+.finatialLiteracy .frameParent28 .financialLiteracyForContainer .forEveryStage {
+  display: block !important;
+  margin: 0 !important;
+  line-height: inherit !important;
+  white-space: normal !important;
+}
+@media (min-width: 768px) {
+  .finatialLiteracy .frameParent28 .financialLiteracyForContainer .forEveryStage {
+    white-space: nowrap !important;
+  }
+}
+@media (max-width: 767.98px) {
+  .finatialLiteracy .sectionBadge {
+    font-size: 20px !important;
+    min-height: 50px !important;
+    padding: 10px 24px !important;
+  }
+  .finatialLiteracy .frameParent2::before {
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    opacity: 1;
+  }
+}
+
+/* The source pattern is oval. Crop its enlarged centre inside a rectangular
+   hero layer so the oval's clear corners stay outside the visible hero. */
+@media (min-width: 768px) {
+  .pageScale {
+    position: relative;
+    isolation: isolate;
+    background-color: #dfe6e9;
+    background-image: none;
+  }
+  .pageScale::before {
+    content: '';
+    position: absolute;
+    inset: 0 0 auto;
+    height: 768px;
+    background: #dfe6e9 url('/images/Ellipse 359.png') center / 200% 200% no-repeat;
+    pointer-events: none;
+    z-index: 0;
+  }
+  .finatialLiteracy {
+    z-index: 1;
+    background-color: transparent !important;
+    background-image: linear-gradient(to bottom,
+      transparent 0, transparent 768px, #dfe6e9 768px, #dfe6e9 100%);
+  }
+  .finatialLiteracy .frameParent2::before {
+    display: none !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 1439.98px) {
+  .pageScale::before {
+    height: 53.3333333333vw;
+  }
+}
+@media (max-width: 767.98px) {
+  .finatialLiteracy .frameParent2::before {
+    width: 100vw;
+    left: 50%;
+    transform: translateX(-50%);
+    background-size: 200% 200%;
+    background-position: center;
+  }
+}
+
+/* Hover feedback stays in place: colours, brightness and shadows only. */
+.finatialLiteracy :is(.frameParent9, .tickWrap, .image20Parent, .frameWrapper) {
+  transition: background-color 0.28s ease, box-shadow 0.28s ease, filter 0.28s ease;
+  will-change: auto;
+}
+.finatialLiteracy :is(.frameParent19, .frameParent21):hover .tickWrap,
+.finatialLiteracy .frameParent31 > .frameParent32:hover .frameWrapper {
+  box-shadow: -4px -4px 4px #ffffff, 4px 4px 8px rgba(0, 0, 0, 0.18);
+}
+
+/* Mobile breadcrumb stays visible above the hero's decorative layer. */
+@media (max-width: 767.98px) {
+  .finatialLiteracy .frameDiv {
+    display: flex !important;
+    position: relative !important;
+    z-index: 3 !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    height: auto !important;
+    min-height: 24px !important;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 8px;
+    margin: 0 auto !important;
+    padding-block: 12px 0 !important;
+    box-sizing: border-box;
+  }
+  .finatialLiteracy .frameParent2::before {
+    top: 0 !important;
+    height: 100% !important;
+  }
+
+  /* 16px inside each heading group, with the existing 48px section gaps. */
+  .finatialLiteracy :is(.frameParent23, .frameParent28) {
+    gap: 16px !important;
+  }
+  .finatialLiteracy .buildResponsibleFinancialHaParent,
+  .finatialLiteracy .frameParent28 :is(.frameParent16, .frameParent17) {
+    gap: 16px !important;
+    height: auto !important;
+    min-height: 0 !important;
+    margin-block: 0 !important;
+  }
+  .finatialLiteracy .buildResponsibleFinancialHaParent > *,
+  .finatialLiteracy .frameParent28 :is(.financialLiteracyForEverySWrapper,
+    .financialLiteracyForContainer, .buildTheSkills) {
+    margin-block: 0 !important;
+    padding-block: 0 !important;
+    height: auto !important;
+    min-height: 0 !important;
+  }
+  .finatialLiteracy .buildResponsibleFinancialHaParent p,
+  .finatialLiteracy .frameParent28 .financialLiteracyForContainer p {
+    margin-block: 0 !important;
+  }
+  .finatialLiteracy .buildResponsibleFinancial br:last-child,
+  .finatialLiteracy .buildResponsibleFinancialHaParent > :not(.buildResponsibleFinancial) > br:first-child,
+  .finatialLiteracy .frameParent28 .financialLiteracyForContainer br {
+    display: none;
+  }
+  /* Reset the inherited 60px line-height on every nested heading span. */
+  .finatialLiteracy .frameParent28 .financialLiteracyForContainer,
+  .finatialLiteracy .frameParent28 .financialLiteracyForContainer * {
+    line-height: 1.2 !important;
+    margin-block: 0 !important;
+    padding-block: 0 !important;
+  }
+  .finatialLiteracy .frameParent28 {
+    gap: 12px !important;
+  }
+  .finatialLiteracy .frameParent28 :is(.frameParent16, .frameParent17) {
+    gap: 12px !important;
+  }
+  .finatialLiteracy .frameParent28 .frameParent29 {
+    gap: 20px !important;
   }
 }

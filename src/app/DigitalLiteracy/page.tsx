@@ -326,7 +326,7 @@ function DigitalLiteracyAccelerate() {
     </section>
   );
 }
-function AnalyticsCard({ value, label, description, color, textColor = color, icon }: { value: string; label: string; description: string; color: string; textColor?: string; icon: React.ReactNode }) {
+function AnalyticsCard({ value, label, description, color, textColor = color, icon, singleLine = false }: { value: string; label: string; description: string; color: string; textColor?: string; icon: React.ReactNode; singleLine?: boolean }) {
   return (
     <div className={styles["dl-analytics-card"]} style={{ "--analytics-color": color } as React.CSSProperties}>
       <svg className={styles["dl-analytics-card-border"]} aria-hidden="true">
@@ -340,7 +340,7 @@ function AnalyticsCard({ value, label, description, color, textColor = color, ic
           {value}
         </span>
         <span className={styles["dl-analytics-card-label"]}>{label}</span>
-        <span className={styles["dl-analytics-card-desc"]}>{description}</span>
+        <span className={`${styles["dl-analytics-card-desc"]}${singleLine ? ` ${styles["dl-single-line"]}` : ""}`}>{description}</span>
       </div>
     </div>
   );
@@ -372,7 +372,8 @@ function DigitalLiteracyAnalytics() {
         <AnalyticsCard
           value="99%"
           label="Learner Insights"
-          description="View skills and competency in one place"
+          description="View skills in one place."
+          singleLine
           color="#2A7308"
           icon={
             <svg width="60" height="60" viewBox="0 0 60 60" fill="none">
@@ -471,7 +472,7 @@ function BulletItem({ text, color }: { text: string; color: string }) {
     </div>
   );
 }
-function CalloutCard({ title, description, color }: { title: string; description: string; color: string }) {
+function CalloutCard({ title, description, color, singleLine = false }: { title: string; description: React.ReactNode; color: string; singleLine?: boolean }) {
   return (
     <div
       className={styles["dl-callout-card"]}
@@ -482,7 +483,7 @@ function CalloutCard({ title, description, color }: { title: string; description
         } as React.CSSProperties
       }>
       <h4 className={styles["dl-callout-title"]}>{title}</h4>
-      <p className={styles["dl-callout-desc"]}>{description}</p>
+      <p className={`${styles["dl-callout-desc"]}${singleLine ? ` ${styles["dl-single-line"]}` : ""}`}>{description}</p>
     </div>
   );
 }
@@ -504,7 +505,17 @@ function DigitalLiteracyWhyNeuroLXP() {
       </div>
       <div className={styles["dl-why-callouts"]}>
         <CalloutCard title="Faster Tool Adoption" description="Get teams productive with new tech in record time" color="#861109" />
-        <CalloutCard title="Compliance Built-In" description="Automated certification tracking across every regulation" color="#0B9BA0" />
+        <CalloutCard
+          title="Compliance Built-In"
+          singleLine
+          description={
+            <>
+              <span className={styles["dl-certification-line"]}>Automatically track</span>{" "}
+              <span className={styles["dl-certification-line"]}>every certification.</span>
+            </>
+          }
+          color="#0B9BA0"
+        />
       </div>
     </section>
   );

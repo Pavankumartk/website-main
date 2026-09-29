@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
-
 .neurolxp2103rs8cs3msLite {
   width: 100%;
   height: 2526px;
@@ -1155,14 +1154,12 @@
   height: 92px;
   object-fit: contain;
 }
-
 .frameParent5 {
   width: 621px;
   height: auto;
   min-height: 350px;
   gap: 32px;
 }
-
 .frameItem {
   width: 296.7px;
   height: 50.2px;
@@ -1179,7 +1176,6 @@
   font-weight: 600;
   letter-spacing: 0.03em;
 }
-
 .frameInner {
   width: 270px;
   height: 50.2px;
@@ -1195,16 +1191,13 @@
   font-size: 20px;
   font-weight: 600;
 }
-
 .poweredByTheContainer {
   height: auto;
   min-height: 63px;
 }
-
 .buildingStrongFoundations {
   height: auto;
 }
-
 .rectangleParent {
   position: absolute;
   top: 2087px;
@@ -1214,7 +1207,6 @@
   border-radius: 32px;
   overflow: hidden;
 }
-
 .background3rs {
   position: absolute;
   inset: 0;
@@ -1223,7 +1215,6 @@
   object-fit: cover;
   z-index: 1;
 }
-
 .frameParent22 {
   position: absolute;
   top: 90px;
@@ -1234,7 +1225,6 @@
   flex-direction: column;
   gap: 36px;
 }
-
 .smilingWomanWithBooksMortaIcon {
   position: absolute;
   right: 0;
@@ -1244,43 +1234,35 @@
   object-fit: contain;
   z-index: 3;
 }
-
 .frameParent {
   display: none;
 }
-
 .frameDiv {
   top: 32px;
 }
-
 .frameParent23,
 .frameParent24,
 .frameParent32,
 .frameWrapper17 {
   display: none;
 }
-
 .image21Wrapper {
   top: 32px;
   left: 32px;
 }
-
 .frameParent3 {
   top: 32px;
   left: 68px;
   gap: 78px;
 }
-
 .smilingStudentsWithBackpackIcon {
   width: 640px;
   height: auto;
   object-fit: contain;
 }
-
 .rectangleParent {
   top: 2087px;
 }
-
 .smilingWomanWithBooksMortaIcon {
   right: 0;
   left: auto;
@@ -1288,7 +1270,6 @@
   bottom: 0;
   object-fit: contain;
 }
-
 .frameParent5 {
   width: 621px;
   height: auto;
@@ -1298,36 +1279,28 @@
   align-items: flex-start;
   gap: 32px;
 }
-
 .skillsThatMatter {
   width: 444px;
   height: auto;
   margin: 0;
-
   font-size: 48px;
   line-height: 60px;
   letter-spacing: 0.03em;
-
   display: block;
 }
-
 .poweredByThe {
   width: 574px;
   height: auto;
   margin: 0;
-
   font-size: 28px;
   line-height: 36px;
   letter-spacing: 0.03em;
-
   display: block;
 }
-
 .frameParent3 {
   align-items: flex-start;
   gap: 78px;
 }
-
 .frameWrapper2,
 .frameParent4 {
   height: auto;
@@ -1341,66 +1314,52 @@
   align-items: flex-start;
   gap: 32px;
 }
-
 .frameItem {
   width: 296.7px;
   height: 50.2px;
   flex-shrink: 0;
 }
-
 .skillsThatMatter {
   width: 444px;
   height: auto;
   margin: 0;
-
   display: block;
-
   font-family: "Segoe UI", "Inter";
   font-size: 48px;
   font-weight: 700;
   line-height: 60px;
   letter-spacing: 0.03em;
-
   color: #31344b;
 }
-
 .poweredByThe {
   width: 574px;
   height: auto;
   margin: 0;
-
   display: block;
-
   font-family: "Segoe UI", "Inter";
   font-size: 28px;
   font-weight: 400;
   line-height: 36px;
   letter-spacing: 0.03em;
-
   color: #2f3547;
 }
-
 .frameWrapper2 {
   height: auto;
 }
-
 .frameParent4 {
   height: auto;
   gap: 32px;
 }
-
 .frameParent5 {
   padding-top: 32px;
   box-sizing: border-box;
 }
-
 .skillIcon {
   width: 24px;
   height: 24px;
   object-fit: contain;
   flex-shrink: 0;
 }
-
 .cardIcon {
   position: relative;
   width: 24px;
@@ -1408,7 +1367,6 @@
   object-fit: contain;
   flex-shrink: 0;
 }
-
 .ellipse334Icon {
   position: absolute;
   width: 60px;
@@ -1416,7 +1374,6 @@
   left: 10px;
   top: 10px;
 }
-
 .topBookIcon {
   position: absolute;
   width: 32px;
@@ -1424,7 +1381,6 @@
   left: 24px;
   top: 24px;
 }
-
 .iconFrame {
   position: absolute;
   width: 80px;
@@ -1435,7 +1391,6 @@
     inset -4px -4px 8px #ffffff,
     inset 4px 4px 8px rgba(196, 196, 196, 0.8);
 }
-
 .iconCircle {
   position: absolute;
   left: 10px;
@@ -1445,7 +1400,6 @@
   border-radius: 100px;
   object-fit: contain;
 }
-
 .iconImage {
   position: absolute;
   left: 24px;
@@ -1454,7 +1408,6 @@
   height: 32px;
   object-fit: contain;
 }
-
 .iconFrame {
   position: absolute;
   top: 10px;
@@ -1468,7 +1421,6 @@
     inset 4px 4px 8px rgba(196, 196, 196, 0.8);
   z-index: 5;
 }
-
 .iconCircleBlue,
 .iconCircleOrange,
 .iconCircleGreen {
@@ -1482,7 +1434,6 @@
     8px 8px 16px #c6c6c9,
     -8px -8px 16px #ffffff;
 }
-
 .iconCircleBlue {
   background: #2d4cc8;
 }
@@ -1492,7 +1443,6 @@
 .iconCircleGreen {
   background: #2a7308;
 }
-
 .iconImage {
   position: absolute;
   left: 24px;
@@ -1502,7 +1452,6 @@
   object-fit: contain;
   z-index: 2;
 }
-
 .iconFrame {
   position: absolute;
   width: 80px;
@@ -1542,7 +1491,6 @@
   left: 14px;
   top: 14px;
 }
-
 .iconFrame {
   position: absolute;
   top: 10px;
@@ -1556,7 +1504,6 @@
     inset 4px 4px 8px rgba(196, 196, 196, 0.8);
   z-index: 5;
 }
-
 .iconCircleBlue,
 .iconCircleOrange,
 .iconCircleGreen {
@@ -1570,19 +1517,15 @@
     8px 8px 16px #c6c6c9,
     -8px -8px 16px #ffffff;
 }
-
 .iconCircleBlue {
   background: #2d4cc8;
 }
-
 .iconCircleOrange {
   background: #c05512;
 }
-
 .iconCircleGreen {
   background: #2a7308;
 }
-
 .iconImage {
   position: absolute;
   left: 14px;
@@ -1591,7 +1534,6 @@
   height: 32px;
   object-fit: contain;
 }
-
 .iconFrame {
   position: absolute;
   width: 80px;
@@ -1603,7 +1545,6 @@
     inset 4px 4px 8px rgba(196, 196, 196, 0.8);
   z-index: 5;
 }
-
 .iconCircleBlue,
 .iconCircleOrange,
 .iconCircleGreen {
@@ -1621,19 +1562,15 @@
     -8px -8px 16px #ffffff;
   z-index: 6;
 }
-
 .iconCircleBlue {
   background: #2d4cc8;
 }
-
 .iconCircleOrange {
   background: #c05512;
 }
-
 .iconCircleGreen {
   background: #2a7308;
 }
-
 .iconImage {
   position: relative;
   left: auto;
@@ -1644,13 +1581,10 @@
   z-index: 7;
   display: block;
 }
-
-
 /* =========================================================
    RESPONSIVE OVERRIDES ONLY
    Desktop styles above remain unchanged.
-   ========================================================= */
-
+   \========================================================= */
 /* Tablet: 601px–1024px */
 @media screen and (min-width: 601px) and (max-width: 1279px) {
   .neurolxp2103rs8cs3msLite {
@@ -1660,7 +1594,6 @@
     overflow-x: hidden;
     overflow-y: visible;
   }
-
   .frameDiv {
     position: relative;
     top: 0;
@@ -1670,12 +1603,10 @@
     box-sizing: border-box;
     gap: 24px;
   }
-
   .homeParent {
     width: 100%;
     flex-wrap: wrap;
   }
-
   .image20Parent {
     width: 100%;
     height: auto;
@@ -1685,12 +1616,10 @@
     border-radius: 28px;
     overflow: hidden;
   }
-
   .image20,
   .image21Wrapper {
     display: none;
   }
-
   .frameParent3 {
     position: relative;
     top: auto;
@@ -1701,7 +1630,6 @@
     align-items: stretch;
     gap: 32px;
   }
-
   .frameWrapper,
   .frameWrapper2,
   .frameParent4,
@@ -1710,33 +1638,28 @@
     height: auto;
     min-height: 0;
   }
-
   .frameParent5 {
     padding-top: 0;
     align-items: flex-start;
     gap: 24px;
   }
-
   .skillsThatMatter {
     width: 100%;
     height: auto;
     font-size: clamp(38px, 5vw, 48px);
     line-height: 1.2;
   }
-
   .poweredByThe {
     width: 100%;
     height: auto;
     font-size: 24px;
     line-height: 34px;
   }
-
   .smilingStudentsWithBackpackWrapper {
     width: 100%;
     height: 420px;
     border-radius: 220px 0 0 0;
   }
-
   .smilingStudentsWithBackpackIcon {
     left: 0;
     width: 100%;
@@ -1744,7 +1667,6 @@
     object-fit: cover;
     object-position: top center;
   }
-
   .frameParent6 {
     position: relative;
     top: auto;
@@ -1754,24 +1676,20 @@
     box-sizing: border-box;
     gap: 40px;
   }
-
   .frameParent7,
   .poweredByTheContainer,
   .buildingStrongFoundations {
     width: 100%;
     height: auto;
   }
-
   .poweredByTheContainer {
     font-size: clamp(38px, 5vw, 48px);
     line-height: 1.2;
   }
-
   .buildingStrongFoundations {
     font-size: 24px;
     line-height: 34px;
   }
-
   .frameParent8 {
     width: 100%;
     height: auto;
@@ -1780,7 +1698,6 @@
     align-items: center;
     gap: 36px;
   }
-
   .frameParent19,
   .frameParent12,
   .frameParent9 {
@@ -1791,7 +1708,6 @@
     height: auto;
     margin: 0;
   }
-
   .frameParent20,
   .frameParent13,
   .frameParent10 {
@@ -1805,13 +1721,11 @@
     box-sizing: border-box;
     overflow: visible;
   }
-
   .iconFrame {
     top: 0;
     left: 50%;
     transform: translateX(-50%);
   }
-
   .rsParent,
   .csParent,
   .msParent {
@@ -1824,19 +1738,16 @@
     align-items: center;
     margin-bottom: 24px;
   }
-
   .rs2,
   .cs2,
   .ms2 {
     height: auto;
   }
-
   .beyondSkillsIts,
   .afterBasicsItsContainer {
     width: 100%;
     height: auto;
   }
-
   .frameParent11,
   .frameParent14 {
     position: relative;
@@ -1846,23 +1757,19 @@
     padding: 0;
     box-sizing: border-box;
   }
-
   .frameParent15 {
     width: 100%;
     gap: 16px;
   }
-
   .frameWrapper3,
   .frameWrapper6 {
     flex: 1 1 0;
     width: auto;
     min-width: 0;
   }
-
   .frameChild2 {
     display: none;
   }
-
   .whyItMattersParent {
     position: relative;
     top: auto;
@@ -1871,23 +1778,19 @@
     padding: 72px 32px 40px;
     box-sizing: border-box;
   }
-
   .whyItMatters,
   .transformingLearningInto {
     width: 100%;
     height: auto;
   }
-
   .whyItMatters {
     font-size: 44px;
     line-height: 54px;
   }
-
   .transformingLearningInto {
     font-size: 24px;
     line-height: 34px;
   }
-
   .rectangleParent {
     position: relative;
     top: auto;
@@ -1897,36 +1800,30 @@
     margin: 32px;
     box-sizing: border-box;
   }
-
   .frameParent22 {
     top: 64px;
     left: 48px;
     width: 60%;
     gap: 24px;
   }
-
   .neurolxpWrapper,
   .neurolxp,
   .bringingThe3rs8cs3msContainer {
     width: 100%;
     height: auto;
   }
-
   .neurolxp {
     font-size: 44px;
     line-height: 54px;
   }
-
   .bringingThe3rs8cs3msContainer {
     font-size: 26px;
     line-height: 38px;
   }
-
   .smilingWomanWithBooksMortaIcon {
     display: none;
   }
 }
-
 /* Phone: up to 600px */
 @media screen and (max-width: 600px) {
   .neurolxp2103rs8cs3msLite {
@@ -1936,7 +1833,6 @@
     overflow-x: hidden;
     overflow-y: visible;
   }
-
   .frameDiv {
     position: relative;
     top: 0;
@@ -1946,17 +1842,14 @@
     box-sizing: border-box;
     gap: 20px;
   }
-
   .homeParent {
     width: 100%;
     flex-wrap: wrap;
     gap: 8px;
   }
-
   .rs8cs3ms {
     line-height: 22px;
   }
-
   .image20Parent {
     width: 100%;
     height: auto;
@@ -1967,12 +1860,10 @@
     border-radius: 24px;
     overflow: hidden;
   }
-
   .image20,
   .image21Wrapper {
     display: none;
   }
-
   .frameParent3 {
     position: relative;
     top: auto;
@@ -1983,7 +1874,6 @@
     align-items: stretch;
     gap: 24px;
   }
-
   .frameWrapper,
   .frameWrapper2,
   .frameParent4,
@@ -1992,22 +1882,18 @@
     height: auto;
     min-height: 0;
   }
-
   .frameParent4 {
     gap: 20px;
   }
-
   .frameParent5 {
     padding-top: 0;
     align-items: center;
     text-align: center;
     gap: 20px;
   }
-
   .frameItem {
     width: min(100%, 296.7px);
   }
-
   .skillsThatMatter {
     width: 100%;
     height: auto;
@@ -2016,7 +1902,6 @@
     line-height: 1.2;
     text-align: center;
   }
-
   .poweredByThe {
     width: 100%;
     height: auto;
@@ -2025,13 +1910,11 @@
     line-height: 29px;
     text-align: center;
   }
-
   .smilingStudentsWithBackpackWrapper {
     width: 100%;
     height: clamp(240px, 78vw, 320px);
     border-radius: 110px 0 0 0;
   }
-
   .smilingStudentsWithBackpackIcon {
     position: absolute;
     top: 0;
@@ -2042,7 +1925,6 @@
     object-fit: cover;
     object-position: top center;
   }
-
   .frameParent6 {
     position: relative;
     top: auto;
@@ -2052,20 +1934,16 @@
     box-sizing: border-box;
     gap: 32px;
   }
-
   .frameParent7 {
     width: 100%;
     gap: 24px;
   }
-
   .frameInner {
     width: min(100%, 270px);
   }
-
   .poweredByThe3rs8cs3msParent {
     gap: 20px;
   }
-
   .poweredByTheContainer {
     width: 100%;
     height: auto;
@@ -2073,21 +1951,18 @@
     font-size: clamp(30px, 9vw, 36px);
     line-height: 1.2;
   }
-
   .poweredByThe2,
   .rs,
   .cs,
   .ms {
     line-height: inherit;
   }
-
   .buildingStrongFoundations {
     width: 100%;
     height: auto;
     font-size: 19px;
     line-height: 29px;
   }
-
   .frameParent8 {
     width: 100%;
     height: auto;
@@ -2096,7 +1971,6 @@
     align-items: stretch;
     gap: 28px;
   }
-
   .frameParent19,
   .frameParent12,
   .frameParent9 {
@@ -2107,7 +1981,6 @@
     height: auto;
     margin: 0;
   }
-
   .frameParent20,
   .frameParent13,
   .frameParent10 {
@@ -2125,7 +1998,6 @@
     flex-direction: column;
     align-items: center;
   }
-
   .iconFrame {
     position: absolute;
     top: 0;
@@ -2134,7 +2006,6 @@
     margin: 0;
     z-index: 10;
   }
-
   .rsParent,
   .csParent,
   .msParent {
@@ -2148,14 +2019,12 @@
     align-items: center;
     gap: 10px;
   }
-
   .rs2,
   .cs2,
   .ms2 {
     height: auto;
     line-height: 40px;
   }
-
   .beyondSkillsIts,
   .afterBasicsItsContainer {
     width: 100%;
@@ -2163,11 +2032,9 @@
     font-size: 22px;
     line-height: 32px;
   }
-
   .afterBasicsIts {
     line-height: inherit;
   }
-
   .frameParent11,
   .frameParent14 {
     position: relative;
@@ -2180,7 +2047,6 @@
     flex-direction: column;
     gap: 14px;
   }
-
   .frameParent15 {
     width: 100%;
     display: flex;
@@ -2188,30 +2054,25 @@
     align-items: stretch;
     gap: 14px;
   }
-
   .frameWrapper3,
   .frameWrapper6 {
     width: 100%;
     height: 50px;
     box-sizing: border-box;
   }
-
   .brain01Parent,
   .analyticsUpParent,
   .award02Parent,
   .target01Parent {
     max-width: calc(100% - 32px);
   }
-
   .mindset,
   .metacognition {
     white-space: normal;
   }
-
   .frameChild2 {
     display: none;
   }
-
   .whyItMattersParent {
     position: relative;
     top: auto;
@@ -2221,20 +2082,17 @@
     box-sizing: border-box;
     gap: 20px;
   }
-
   .whyItMatters {
     width: 100%;
     height: auto;
     font-size: clamp(30px, 9vw, 36px);
     line-height: 1.2;
   }
-
   .transformingLearningInto {
     width: 100%;
     font-size: 19px;
     line-height: 29px;
   }
-
   .rectangleParent {
     position: relative;
     top: auto;
@@ -2248,13 +2106,11 @@
     border-radius: 24px;
     overflow: hidden;
   }
-
   .background3rs {
     width: 100%;
     height: 100%;
     object-fit: cover;
   }
-
   .frameParent22 {
     position: relative;
     top: auto;
@@ -2262,54 +2118,45 @@
     width: 100%;
     gap: 20px;
   }
-
   .neurolxpWrapper,
   .neurolxp {
     width: 100%;
     height: auto;
   }
-
   .neurolxp {
     font-size: clamp(32px, 10vw, 42px);
     line-height: 1.2;
   }
-
   .bringingThe3rs8cs3msContainer {
     width: 100%;
     font-size: 20px;
     line-height: 30px;
   }
-
   .bringingThe,
   .rs8cs3m,
   .cs3,
   .m {
     line-height: inherit;
   }
-
   .smilingWomanWithBooksMortaIcon {
     display: none;
   }
 }
-
 /* Small phones */
 @media screen and (max-width: 380px) {
   .frameDiv {
     padding-left: 12px;
     padding-right: 12px;
   }
-
   .image20Parent {
     padding-left: 12px;
     padding-right: 12px;
   }
-
   .skillsThatMatter,
   .poweredByTheContainer,
   .whyItMatters {
     font-size: 30px;
   }
-
   .poweredByThe,
   .buildingStrongFoundations,
   .transformingLearningInto,
@@ -2317,13 +2164,11 @@
     font-size: 18px;
     line-height: 27px;
   }
-
   .beyondSkillsIts,
   .afterBasicsItsContainer {
     font-size: 20px;
     line-height: 30px;
   }
-
   .frameParent20,
   .frameParent13,
   .frameParent10 {
@@ -2331,101 +2176,75 @@
     padding-right: 12px;
   }
 }
-
 /* =========================================================
    SINGLE-COLUMN CARD CONTENT FIX ONLY
    Fixes 3Rs and 3Ms list rows without changing other design.
-   ========================================================= */
-
+   \========================================================= */
 .frameParent11 {
   align-items: stretch !important;
 }
-
 .frameParent11 .frameWrapper3 {
   width: 100% !important;
   min-width: 0 !important;
   max-width: 100% !important;
   flex: 0 0 auto !important;
-
   height: 50px !important;
   padding: 0 24px !important;
   box-sizing: border-box !important;
-
   display: flex !important;
   flex-direction: row !important;
   align-items: center !important;
   justify-content: flex-start !important;
-
   overflow: hidden !important;
 }
-
 .frameParent11 .brain01Parent,
 .frameParent11 .analyticsUpParent,
 .frameParent11 .award02Parent,
 .frameParent11 .target01Parent {
   position: static !important;
-
   top: auto !important;
   left: auto !important;
-
   width: 100% !important;
   min-width: 0 !important;
   max-width: 100% !important;
-
   margin: 0 !important;
-
   display: flex !important;
   flex-direction: row !important;
   align-items: center !important;
   justify-content: flex-start !important;
-
   gap: 14px !important;
-
   transform: none !important;
   transform-origin: initial !important;
-
   flex: 1 1 auto !important;
   flex-shrink: 1 !important;
 }
-
 .frameParent11 .brain01Icon,
 .frameParent11 .analyticsUpIcon {
   position: static !important;
-
   width: 24px !important;
   height: 24px !important;
-
   flex: 0 0 24px !important;
-
   transform: none !important;
 }
-
 .frameParent11 .mindset,
 .frameParent11 .metacognition {
   position: static !important;
-
   width: auto !important;
   min-width: 0 !important;
   max-width: 100% !important;
-
   margin: 0 !important;
-
   display: block !important;
-
   white-space: normal !important;
   overflow: visible !important;
   text-overflow: clip !important;
-
   flex: 1 1 auto !important;
 }
-
 /* Keep the single-column rows full width on tablet and mobile. */
 @media screen and (max-width: 1024px) {
   .frameParent11 {
     width: 100% !important;
     align-items: stretch !important;
   }
-
   .frameParent11 .frameWrapper3 {
     width: 100% !important;
     min-width: 0 !important;
@@ -2433,7 +2252,6 @@
     flex: 0 0 auto !important;
   }
 }
-
 /* Smaller padding only when the available width is narrow. */
 @media screen and (max-width: 600px) {
   .frameParent11 .frameWrapper3 {
@@ -2441,15 +2259,13 @@
     padding-right: 16px !important;
   }
 }
-
 /* =========================================================
    RESPONSIVE VISUAL ALIGNMENT FIX
    - Prevents 1025–1279px from using fixed desktop dimensions
    - Keeps hero content inside the viewport
    - Preserves desktop-style floating card icon placement
    - Preserves CTA border/shadow treatment on tablet/mobile
-   ========================================================= */
-
+   \========================================================= */
 /* ---------- Tablet / small laptop ---------- */
 @media screen and (min-width: 601px) and (max-width: 1279px) {
   /* Hero must always stay inside the responsive container. */
@@ -2457,17 +2273,14 @@
     max-width: 100% !important;
     overflow: visible !important;
   }
-
   .image20Parent {
     max-width: 100% !important;
     overflow: hidden !important;
   }
-
   .frameParent3 {
     max-width: 100% !important;
     box-sizing: border-box !important;
   }
-
   .frameWrapper,
   .frameWrapper2,
   .frameParent4,
@@ -2478,7 +2291,6 @@
     max-width: 100% !important;
     box-sizing: border-box !important;
   }
-
   /*
    * Keep the desktop hero composition on wider tablets/small laptops:
    * text on the left, students on the right.
@@ -2490,30 +2302,25 @@
       align-items: stretch !important;
       gap: 32px !important;
     }
-
     .frameWrapper,
     .frameWrapper2 {
       width: 100% !important;
       min-width: 0 !important;
     }
-
     .frameParent4 {
       height: 100% !important;
       justify-content: center !important;
     }
-
     .frameParent5 {
       width: 100% !important;
       align-items: flex-start !important;
       text-align: left !important;
     }
-
     .skillsThatMatter,
     .poweredByThe {
       width: 100% !important;
       text-align: left !important;
     }
-
     .smilingStudentsWithBackpackWrapper {
       width: 100% !important;
       min-width: 0 !important;
@@ -2521,7 +2328,6 @@
       min-height: 420px !important;
       align-self: stretch !important;
     }
-
     .smilingStudentsWithBackpackIcon {
       position: absolute !important;
       left: 0 !important;
@@ -2535,7 +2341,6 @@
       object-position: bottom center !important;
     }
   }
-
   /*
    * Desktop card construction:
    * outer wrapper reserves 56px for the floating icon,
@@ -2549,14 +2354,12 @@
     box-sizing: border-box !important;
     overflow: visible !important;
   }
-
   .frameParent20,
   .frameParent13,
   .frameParent10 {
     margin: 0 !important;
     overflow: hidden !important;
   }
-
   .iconFrame {
     top: 10px !important;
     left: 50% !important;
@@ -2564,14 +2367,12 @@
     margin: 0 !important;
     z-index: 10 !important;
   }
-
   /* Keep headings comfortably below the floating icon. */
   .frameParent20,
   .frameParent13,
   .frameParent10 {
     padding-top: 58px !important;
   }
-
   /* Preserve the same rounded/shadowed CTA treatment at smaller widths. */
   .rectangleParent {
     border-radius: 32px !important;
@@ -2580,19 +2381,16 @@
       -8px -8px 16px rgba(255, 255, 255, 0.9),
       8px 8px 16px rgba(196, 196, 196, 0.85) !important;
   }
-
   .background3rs {
     inset: 0 !important;
     width: 100% !important;
     height: 100% !important;
     border-radius: inherit !important;
   }
-
   .frameParent22 {
     z-index: 2 !important;
   }
 }
-
 /* ---------- Phone ---------- */
 @media screen and (max-width: 600px) {
   /* Avoid any edge clipping in the hero. */
@@ -2607,17 +2405,14 @@
     max-width: 100% !important;
     box-sizing: border-box !important;
   }
-
   .image20Parent {
     overflow: hidden !important;
   }
-
   .skillsThatMatter,
   .poweredByThe {
     max-width: 100% !important;
     overflow-wrap: anywhere !important;
   }
-
   /* Same floating icon geometry as desktop, scaled only by available width. */
   .frameParent19,
   .frameParent12,
@@ -2626,7 +2421,6 @@
     box-sizing: border-box !important;
     overflow: visible !important;
   }
-
   .frameParent20,
   .frameParent13,
   .frameParent10 {
@@ -2634,14 +2428,12 @@
     padding-top: 58px !important;
     overflow: hidden !important;
   }
-
   .iconFrame {
     top: 10px !important;
     left: 50% !important;
     transform: translateX(-50%) !important;
     z-index: 10 !important;
   }
-
   /*
    * Recreate the desktop side/bottom shadow on the responsive CTA.
    * The parent supplies the shadow so it cannot be cropped by the
@@ -2653,12 +2445,10 @@
     margin-right: 16px !important;
     border-radius: 24px !important;
     overflow: hidden !important;
-
     box-shadow:
       -6px -6px 12px rgba(255, 255, 255, 0.9),
       6px 6px 12px rgba(196, 196, 196, 0.85) !important;
   }
-
   .background3rs {
     inset: 0 !important;
     width: 100% !important;
@@ -2666,39 +2456,32 @@
     border-radius: inherit !important;
     object-fit: cover !important;
   }
-
   .frameParent22 {
     position: relative !important;
     z-index: 2 !important;
   }
 }
-
 /* =========================================================
    DESKTOP SPACING REDUCTION ONLY
    No tablet/mobile/design changes.
-   ========================================================= */
+   \========================================================= */
 @media screen and (min-width: 1280px) {
-
   /* Match the 64px desktop footer gap used by the reference page. */
   .neurolxp2103rs8cs3msLite {
     height: 2398.21px;
   }
-
   .frameParent6 {
     top: 770px;
     gap: 30px;
   }
-
   .frameParent8 {
     margin-top: -20px;
   }
-
   /* Match the reference PNG for the final section. */
   .whyItMattersParent {
     top: 1667.21px;
     font-family: "Segoe UI", "Inter";
   }
-
   .rectangleParent {
     top: 1927.21px;
     left: calc(50% - 626px);
@@ -2706,14 +2489,12 @@
     height: 407px;
     font-family: "Segoe UI", "Inter";
   }
-
   .frameParent22 {
     top: calc(50% - 114.5px);
     left: 80px;
     width: 659px;
     gap: 36px;
   }
-
   .smilingWomanWithBooksMortaIcon {
     top: 1763px;
     left: calc(50% - 166px) !important;
@@ -2725,17 +2506,15 @@
     object-position: center bottom;
   }
 }
-
 /* =========================================================
    MOBILE FINAL WOMAN IMAGE
    Keep the desktop overlap unchanged. On phones, place the
    woman after the final section and outside its framed card.
-   ========================================================= */
+   \========================================================= */
 @media screen and (max-width: 600px) {
   .rectangleParent {
     margin-bottom: 0 !important;
   }
-
   .smilingWomanWithBooksMortaIcon {
     display: block !important;
     position: relative !important;
@@ -2754,14 +2533,12 @@
     z-index: 3;
   }
 }
-
 /* ==========================================================================
    FINAL TYPOGRAPHY — HERO EXCLUDED
    Main section headings: 36px
    Section subheadings/descriptions: 24px
    Font stack: Segoe UI primary + Inter fallback only
-   ========================================================================== */
-
+   \========================================================================== */
 /* Keep the whole page on Segoe UI with Inter as the only fallback. */
 .neurolxp2103rs8cs3msLite,
 .neurolxp2103rs8cs3msLite *,
@@ -2769,7 +2546,6 @@
 .neurolxp2103rs8cs3msLite *::after {
   font-family: "Segoe UI", "Inter" !important;
 }
-
 /* ----------------------------------------------------------
    NON-HERO MAIN SECTION HEADINGS — 36px
    ---------------------------------------------------------- */
@@ -2780,7 +2556,6 @@
   line-height: 45px !important;
   height: auto !important;
 }
-
 /* Keep coloured words/spans inside section headings on the same rhythm. */
 .neurolxp2103rs8cs3msLite .poweredByTheContainer .poweredByThe2,
 .neurolxp2103rs8cs3msLite .poweredByTheContainer .rs,
@@ -2788,7 +2563,6 @@
 .neurolxp2103rs8cs3msLite .poweredByTheContainer .ms {
   line-height: 45px !important;
 }
-
 /* ----------------------------------------------------------
    NON-HERO SECTION SUBHEADINGS / DESCRIPTIONS — 24px
    ---------------------------------------------------------- */
@@ -2799,7 +2573,6 @@
   line-height: 36px !important;
   height: auto !important;
 }
-
 /* Keep highlighted words inside the final section copy aligned. */
 .neurolxp2103rs8cs3msLite .bringingThe,
 .neurolxp2103rs8cs3msLite .rs8cs3m,
@@ -2807,87 +2580,71 @@
 .neurolxp2103rs8cs3msLite .m {
   line-height: 36px !important;
 }
-
 /* HERO TYPOGRAPHY IS INTENTIONALLY UNCHANGED:
    .skillsThatMatter
    .poweredByThe
 */
-
 /* ==========================================================================
    FINAL DESKTOP SPACING — POWERED BY + WHY IT MATTERS
    Reduce only the two highlighted vertical gaps.
    Preserve typography, cards, images and all previous responsive fixes.
-   ========================================================================== */
+   \========================================================================== */
 @media screen and (min-width: 1280px) {
-
   /* Practical Learning:
      slightly tighten badge → heading and heading → subheading spacing. */
   .neurolxp2103rs8cs3msLite .frameParent7 {
     gap: 24px !important;
   }
-
   .neurolxp2103rs8cs3msLite .poweredByThe3rs8cs3msParent {
     gap: 16px !important;
   }
-
   /* Why It Matters:
      tighten heading → subheading spacing. */
   .neurolxp2103rs8cs3msLite .whyItMattersParent {
     gap: 16px !important;
   }
-
   /* Pull the NeuroLXP final section upward so there is only a clean,
      compact gap below the Why It Matters copy. */
   .neurolxp2103rs8cs3msLite .rectangleParent {
     top: 1848.21px !important;
   }
-
   /* Keep the same 64px footer breathing room after moving the final section. */
   .neurolxp2103rs8cs3msLite {
     height: 2319.21px !important;
   }
 }
-
-
 /* ==========================================================================
    FINAL DESKTOP TEXT-SPACING FIX
    Spacing only — no card geometry, image position, section position,
    colours, font sizes, or visual design are changed.
-   ========================================================================== */
+   \========================================================================== */
 @media screen and (min-width: 1280px) {
-
   /* Practical Learning: remove the hidden fixed/min-height space that becomes
      more noticeable when Inter is the active fallback font. */
   .neurolxp2103rs8cs3msLite .frameParent7 {
     gap: 18px !important;
   }
-
   .neurolxp2103rs8cs3msLite .poweredByThe3rs8cs3msParent {
     gap: 8px !important;
   }
-
   .neurolxp2103rs8cs3msLite .poweredByTheContainer {
     height: auto !important;
     min-height: 0 !important;
     margin: 0 !important;
   }
-
   .neurolxp2103rs8cs3msLite .buildingStrongFoundations {
     height: auto !important;
     min-height: 0 !important;
     margin: 0 !important;
   }
-
   /* Keep a clean, compact gap between the Practical Learning copy and cards. */
   .neurolxp2103rs8cs3msLite .frameParent6 {
     gap: 24px !important;
   }
-
   /* Why it Matters: tighten only heading → description spacing. */
   .neurolxp2103rs8cs3msLite .whyItMattersParent {
     gap: 8px !important;
   }
-
   .neurolxp2103rs8cs3msLite .whyItMatters,
   .neurolxp2103rs8cs3msLite .transformingLearningInto {
     height: auto !important;
@@ -2895,18 +2652,15 @@
     margin: 0 !important;
   }
 }
-
-
 /* ==========================================================================
    RESTORE ORIGINAL DESKTOP GIRL / FINAL-SECTION ALIGNMENT
    Keep the spacing fixes above, but do NOT shift the NeuroLXP panel relative
    to the woman image.
-   ========================================================================== */
+   \========================================================================== */
 @media screen and (min-width: 1280px) {
   .neurolxp2103rs8cs3msLite .rectangleParent {
     top: 1927.21px !important;
   }
-
   .neurolxp2103rs8cs3msLite .smilingWomanWithBooksMortaIcon {
     top: 1763px !important;
     left: calc(50% - 166px) !important;
@@ -2917,7 +2671,6 @@
     object-fit: contain !important;
     object-position: center bottom !important;
   }
-
   .neurolxp2103rs8cs3msLite {
     height: 2398.21px !important;
   }
@@ -2929,8 +2682,7 @@
    - No text/word shadows
    - Remove unnecessary vertical whitespace
    - 48px between major sections
-   ========================================================================== */
-
+   \========================================================================== */
 /* Flat text only — keep card/container shadows unchanged. */
 .neurolxp2103rs8cs3msLite,
 .neurolxp2103rs8cs3msLite *,
@@ -2939,7 +2691,6 @@
   font-family: "Segoe UI", "Inter", sans-serif !important;
   text-shadow: none !important;
 }
-
 /* Main page headings — same as previous page. */
 .neurolxp2103rs8cs3msLite :is(
   .skillsThatMatter,
@@ -2954,7 +2705,6 @@
   line-height: 44px !important;
   font-weight: 700 !important;
 }
-
 /* Main supporting copy — same as previous page. */
 .neurolxp2103rs8cs3msLite :is(
   .poweredByThe,
@@ -2969,7 +2719,6 @@
   line-height: 36px !important;
   font-weight: 400 !important;
 }
-
 /* Keep nested coloured text on the same line-height as its parent. */
 .neurolxp2103rs8cs3msLite :is(
   .poweredByThe2,
@@ -2979,7 +2728,6 @@
 ) {
   line-height: 44px !important;
 }
-
 .neurolxp2103rs8cs3msLite :is(
   .bringingThe,
   .rs8cs3m,
@@ -2988,13 +2736,11 @@
 ) {
   line-height: 36px !important;
 }
-
 /* Remove the old blur effect behind final-section wording. */
 .neurolxp2103rs8cs3msLite .bringingThe3rs8cs3msContainer {
   backdrop-filter: none !important;
   -webkit-backdrop-filter: none !important;
 }
-
 /* Badges — same size, typography and inset treatment as the previous page. */
 .neurolxp2103rs8cs3msLite :is(.frameItem, .frameInner) {
   box-sizing: border-box !important;
@@ -3019,7 +2765,6 @@
     inset -4px -4px 4px #ffffff,
     inset 4px 4px 4px rgba(196, 196, 196, 0.8) !important;
 }
-
 /* Remove hidden/fixed text space and keep the text blocks compact. */
 .neurolxp2103rs8cs3msLite .frameParent4,
 .neurolxp2103rs8cs3msLite .frameParent5,
@@ -3029,7 +2774,6 @@
 .neurolxp2103rs8cs3msLite .frameParent22 {
   min-height: 0 !important;
 }
-
 .neurolxp2103rs8cs3msLite .frameParent4,
 .neurolxp2103rs8cs3msLite .frameParent5,
 .neurolxp2103rs8cs3msLite .frameParent7,
@@ -3038,12 +2782,11 @@
 .neurolxp2103rs8cs3msLite .frameParent22 {
   gap: 16px !important;
 }
-
 /* ==========================================================================
    DESKTOP — normal-flow major sections with one exact 48px gap.
    This removes the old absolute-position blank areas while keeping the
    original card/image geometry.
-   ========================================================================== */
+   \========================================================================== */
 @media screen and (min-width: 1280px) {
   .neurolxp2103rs8cs3msLite {
     height: auto !important;
@@ -3055,7 +2798,6 @@
     padding: 32px 0 48px !important;
     box-sizing: border-box !important;
   }
-
   .neurolxp2103rs8cs3msLite > .frameDiv,
   .neurolxp2103rs8cs3msLite > .frameParent6,
   .neurolxp2103rs8cs3msLite > .whyItMattersParent,
@@ -3067,22 +2809,18 @@
     bottom: auto !important;
     margin: 0 !important;
   }
-
   .neurolxp2103rs8cs3msLite > .frameDiv,
   .neurolxp2103rs8cs3msLite > .frameParent6,
   .neurolxp2103rs8cs3msLite > .rectangleParent {
     width: min(1280px, 100%) !important;
   }
-
   .neurolxp2103rs8cs3msLite > .whyItMattersParent {
     width: min(900px, calc(100% - 48px)) !important;
     padding: 0 !important;
   }
-
   .neurolxp2103rs8cs3msLite > .frameParent6 {
     padding: 0 !important;
   }
-
   /* Keep the woman aligned to the bottom of the final panel after flow cleanup. */
   .neurolxp2103rs8cs3msLite > .smilingWomanWithBooksMortaIcon {
     position: absolute !important;
@@ -3097,32 +2835,27 @@
     object-position: center bottom !important;
   }
 }
-
 /* ==========================================================================
    TABLET + PHONE — remove stacked padding/margins.
    One 48px major-section gap, no extra hidden whitespace.
-   ========================================================================== */
+   \========================================================================== */
 @media screen and (max-width: 1279.98px) {
   .neurolxp2103rs8cs3msLite .frameParent6 {
     padding-top: 48px !important;
   }
-
   .neurolxp2103rs8cs3msLite .whyItMattersParent {
     padding-top: 48px !important;
     padding-bottom: 0 !important;
   }
-
   .neurolxp2103rs8cs3msLite .rectangleParent {
     margin-top: 48px !important;
   }
 }
-
 @media screen and (min-width: 601px) and (max-width: 1279.98px) {
   .neurolxp2103rs8cs3msLite .rectangleParent {
     margin-bottom: 48px !important;
   }
 }
-
 /* Previous-page mobile typography. */
 @media screen and (max-width: 767.98px) {
   .neurolxp2103rs8cs3msLite :is(
@@ -3134,7 +2867,6 @@
     font-size: 24px !important;
     line-height: 32px !important;
   }
-
   .neurolxp2103rs8cs3msLite :is(
     .poweredByThe,
     .buildingStrongFoundations,
@@ -3144,13 +2876,11 @@
     font-size: 16px !important;
     line-height: 24px !important;
   }
-
   .neurolxp2103rs8cs3msLite :is(.frameItem, .frameInner) {
     min-height: 50px !important;
     font-size: 20px !important;
     line-height: 1.3 !important;
   }
-
   .neurolxp2103rs8cs3msLite :is(
     .poweredByThe2,
     .rs,
@@ -3159,7 +2889,6 @@
   ) {
     line-height: 32px !important;
   }
-
   .neurolxp2103rs8cs3msLite :is(
     .bringingThe,
     .rs8cs3m,
@@ -3169,12 +2898,10 @@
     line-height: 24px !important;
   }
 }
-
 @media screen and (max-width: 600px) {
   .neurolxp2103rs8cs3msLite .rectangleParent {
     margin-bottom: 0 !important;
   }
-
   .neurolxp2103rs8cs3msLite .smilingWomanWithBooksMortaIcon {
     margin-bottom: 48px !important;
   }
@@ -3185,32 +2912,107 @@
    - Move the student image slightly upward
    - Vertically center the left hero copy
    - No changes to typography, badges, colours, shadows, or other sections
-   ========================================================================== */
+   \========================================================================== */
 @media screen and (min-width: 1280px) {
   .neurolxp2103rs8cs3msLite .image20Parent {
     height: 530px !important;
     min-height: 530px !important;
   }
-
   .neurolxp2103rs8cs3msLite .image21Wrapper {
     top: 24px !important;
     height: 482px !important;
   }
-
   /* Use the reduced hero height to center both columns cleanly. */
   .neurolxp2103rs8cs3msLite .frameParent3 {
     top: 0 !important;
     height: 530px !important;
     align-items: center !important;
   }
-
   /* Right gradient/image panel follows the shorter hero. */
   .neurolxp2103rs8cs3msLite .smilingStudentsWithBackpackWrapper {
     height: 482px !important;
   }
-
   /* Lift only the students image slightly inside its existing panel. */
   .neurolxp2103rs8cs3msLite .smilingStudentsWithBackpackIcon {
     bottom: 14px !important;
   }
+}
+
+/* Match the centre card: left-align the 3Rs and 3Ms wording. */
+.neurolxp2103rs8cs3msLite :is(.msParent, .rsParent) {
+  align-items: flex-start !important;
+  text-align: left !important;
+}
+.neurolxp2103rs8cs3msLite :is(.ms2, .rs2, .beyondSkillsIts),
+.neurolxp2103rs8cs3msLite .frameParent11 :is(.mindset, .metacognition) {
+  text-align: left !important;
+}
+
+/* Mobile framework heading and centred card content. */
+.frameworkTerms {
+  display: inline;
+}
+@media (max-width: 767.98px) {
+  .neurolxp2103rs8cs3msLite .poweredByTheContainer {
+    display: block !important;
+    height: auto !important;
+    margin: 0 !important;
+    line-height: 32px !important;
+    text-align: center !important;
+  }
+  .neurolxp2103rs8cs3msLite .poweredByTheContainer .poweredByThe2,
+  .neurolxp2103rs8cs3msLite .frameworkTerms {
+    display: block !important;
+    line-height: 32px !important;
+    white-space: nowrap !important;
+  }
+  .neurolxp2103rs8cs3msLite .frameworkTerms > span {
+    display: inline !important;
+    line-height: inherit !important;
+  }
+  .neurolxp2103rs8cs3msLite .poweredByThe3rs8cs3msParent,
+  .neurolxp2103rs8cs3msLite .frameParent7 {
+    gap: 16px !important;
+  }
+  .neurolxp2103rs8cs3msLite :is(.msParent, .rsParent, .csParent) {
+    align-items: center !important;
+    text-align: center !important;
+    gap: 12px !important;
+  }
+  .neurolxp2103rs8cs3msLite .frameParent8 :is(.ms2, .rs2, .cs2,
+    .beyondSkillsIts, .afterBasicsItsContainer, .afterBasicsIts,
+    .mindset, .metacognition) {
+    text-align: center !important;
+  }
+  .neurolxp2103rs8cs3msLite .frameParent8 :is(.frameWrapper3, .frameWrapper6) {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+  .neurolxp2103rs8cs3msLite .frameParent8 :is(.brain01Parent,
+    .analyticsUpParent, .award02Parent, .target01Parent) {
+    position: static !important;
+    display: grid !important;
+    grid-template-columns: 24px minmax(0, 1fr) !important;
+    column-gap: 14px !important;
+    padding-left: 10px !important;
+    box-sizing: border-box !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    flex: 1 1 auto !important;
+    justify-content: stretch !important;
+    align-items: center !important;
+    transform: none !important;
+    margin: 0 !important;
+  }
+  .neurolxp2103rs8cs3msLite .frameParent8 :is(.mindset, .metacognition) {
+    width: auto !important;
+    flex: 0 1 auto !important;
+  }
+}
+
+/* Keep the 3Ms Metacognition glyph green, including its source SVG fill. */
+.neurolxp2103rs8cs3msLite .frameParent10 .analyticsUpIcon {
+  filter: brightness(0) saturate(100%) invert(33%) sepia(83%)
+    saturate(714%) hue-rotate(57deg) brightness(90%) contrast(97%);
 }
