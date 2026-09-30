@@ -16,8 +16,6 @@ import PageScaler from "./PageScaler";
 
 import TalkToExpertButton from "@/components/TalkToOurExpert/TalkToExpertButton";
 
-
-
 export const metadata: Metadata = {
 
   title: "Coding Challenges | Neuro Labs",
@@ -27,8 +25,6 @@ export const metadata: Metadata = {
     "Solve real-world coding challenges and build coding confidence with NeuroLabs.",
 
 };
-
-
 
 function SectionBadge({
 
@@ -60,8 +56,6 @@ function SectionBadge({
 
 }
 
-
-
 const SKILL_DOTS = {
 
   topLeft: "#BF1869",
@@ -73,8 +67,6 @@ const SKILL_DOTS = {
   bottomRight: "#C05512",
 
 } as const;
-
-
 
 function SkillCard({
 
@@ -124,11 +116,18 @@ function SkillCard({
 
       <p className={styles.skillCardLabel}>
 
-        {line1}
-
-        <br />
-
-        {line2}
+        {line1 === "Programming Contest" ? (
+          <>
+            <span style={{ display: "block", whiteSpace: "nowrap" }}>{line1}</span>
+            <span style={{ display: "block", whiteSpace: "nowrap" }}>{line2.trim()}</span>
+          </>
+        ) : (
+          <>
+            {line1}
+            <br />
+            {line2}
+          </>
+        )}
 
       </p>
 
@@ -137,8 +136,6 @@ function SkillCard({
   );
 
 }
-
-
 
 function PillCard({
 
@@ -171,8 +168,6 @@ function PillCard({
   );
 
 }
-
-
 
 function AudienceCard({
 
@@ -218,8 +213,6 @@ function AudienceCard({
 
 }
 
-
-
 export default function CodingChallengePage() {
 
   return (
@@ -230,8 +223,6 @@ export default function CodingChallengePage() {
 
       { <Header /> }
 
-
-
       <PageScaler>
 
         <div className={styles.frameDiv}>
@@ -241,8 +232,6 @@ export default function CodingChallengePage() {
             <b className={styles.codingChallenges}>Neuro Labs</b>
 
           </div>
-
-
 
           <div className={styles.arrowRightDoubleParent}>
 
@@ -269,8 +258,6 @@ export default function CodingChallengePage() {
           </div>
 
         </div>
-
-
 
         {/* HERO SECTION */}
 
@@ -302,11 +289,7 @@ export default function CodingChallengePage() {
 
                   />
 
-
-
                   <div className={styles.image21} />
-
-
 
                   <div className={styles.frameParent3}>
 
@@ -319,8 +302,6 @@ export default function CodingChallengePage() {
                         className={styles.frameItem}
 
                       />
-
-
 
                       <b className={styles.testImproveContainer}>
 
@@ -340,8 +321,6 @@ export default function CodingChallengePage() {
 
                     </div>
 
-
-
                     <div
 
                       className={
@@ -352,7 +331,7 @@ export default function CodingChallengePage() {
 
                     >
 
-                      Solve real-world challenges and build coding
+                      Solve <span style={{ whiteSpace: "nowrap" }}>real-world</span> challenges and build coding
 
                       confidence.
 
@@ -367,8 +346,6 @@ export default function CodingChallengePage() {
             </div>
 
           </div>
-
-
 
           <Image
 
@@ -391,8 +368,6 @@ export default function CodingChallengePage() {
             priority
 
           />
-
-
 
           <div className={styles.frameWrapper4}>
 
@@ -420,8 +395,6 @@ export default function CodingChallengePage() {
 
                   />
 
-
-
                   <div className={styles.heroStripContent}>
 
                     <Image
@@ -438,8 +411,6 @@ export default function CodingChallengePage() {
 
                     />
 
-
-
                     <span className={styles.heroStripLabel}>
 
                       <b>Practice Coding</b>
@@ -449,8 +420,6 @@ export default function CodingChallengePage() {
                   </div>
 
                 </div>
-
-
 
                 <div
 
@@ -472,8 +441,6 @@ export default function CodingChallengePage() {
 
                   />
 
-
-
                   <div className={styles.heroStripContent}>
 
                     <Image
@@ -490,8 +457,6 @@ export default function CodingChallengePage() {
 
                     />
 
-
-
                     <span className={styles.heroStripLabel}>
 
                       <b>Think Logically</b>
@@ -501,8 +466,6 @@ export default function CodingChallengePage() {
                   </div>
 
                 </div>
-
-
 
                 <div
 
@@ -524,8 +487,6 @@ export default function CodingChallengePage() {
 
                   />
 
-
-
                   <div className={styles.heroStripContent}>
 
                     <Image
@@ -541,8 +502,6 @@ export default function CodingChallengePage() {
                       alt=""
 
                     />
-
-
 
                     <span className={styles.heroStripLabel}>
 
@@ -562,8 +521,6 @@ export default function CodingChallengePage() {
 
         </div>
 
-
-
         {/* PRACTICAL SKILLS */}
 
         <div className={styles.frameParent5}>
@@ -578,8 +535,6 @@ export default function CodingChallengePage() {
 
             />
 
-
-
             <div
 
               className={
@@ -592,13 +547,11 @@ export default function CodingChallengePage() {
 
               <b className={styles.realWorldProblemSolving}>
 
-                Real-World Problem <span style={{ color: "#2d4cc8" }}>Solving</span>
+                <span style={{ whiteSpace: "nowrap" }}>Real-World</span> Problem <span style={{ color: "#2d4cc8" }}>Solving</span>
 
                 <br />
 
               </b>
-
-
 
               <div
 
@@ -610,7 +563,7 @@ export default function CodingChallengePage() {
 
               >
 
-                Coding challenges simulate real-world development,
+                Coding challenges simulate <span style={{ whiteSpace: "nowrap" }}>real-world</span> development,
 
                 helping learners apply programming concepts to
 
@@ -622,8 +575,6 @@ export default function CodingChallengePage() {
 
           </div>
 
-
-
           <div className={styles.frameParent7}>
 
             {/* CARD 1 */}
@@ -634,15 +585,11 @@ export default function CodingChallengePage() {
 
                 <div className={styles.rectangleDiv} />
 
-
-
                 <div className={styles.frameChild2}>
 
                   <div className={styles.ellipseParent}>
 
                     <div className={styles.ellipseDiv} />
-
-
 
                     <Image
 
@@ -657,8 +604,6 @@ export default function CodingChallengePage() {
                       alt=""
 
                     />
-
-
 
                     <div
 
@@ -680,8 +625,6 @@ export default function CodingChallengePage() {
 
             </div>
 
-
-
             {/* CARD 2 */}
 
             <div className={styles.frameWrapper5}>
@@ -690,8 +633,6 @@ export default function CodingChallengePage() {
 
                 <div className={styles.rectangleDiv} />
 
-
-
                 <div className={styles.frameChild2}>
 
                   <div className={styles.frameWrapper9}>
@@ -699,8 +640,6 @@ export default function CodingChallengePage() {
                     <div className={styles.ellipseGroup}>
 
                       <div className={styles.frameChild4} />
-
-
 
                       <Image
 
@@ -715,8 +654,6 @@ export default function CodingChallengePage() {
                         alt=""
 
                       />
-
-
 
                       <div
 
@@ -744,8 +681,6 @@ export default function CodingChallengePage() {
 
             </div>
 
-
-
             {/* CARD 3 */}
 
             <div className={styles.frameWrapper5}>
@@ -754,15 +689,11 @@ export default function CodingChallengePage() {
 
                 <div className={styles.rectangleDiv} />
 
-
-
                 <div className={styles.frameChild2}>
 
                   <div className={styles.ellipseContainer}>
 
                     <div className={styles.frameChild6} />
-
-
 
                     <Image
 
@@ -777,8 +708,6 @@ export default function CodingChallengePage() {
                       alt=""
 
                     />
-
-
 
                     <div
 
@@ -802,8 +731,6 @@ export default function CodingChallengePage() {
 
             </div>
 
-
-
             {/* CARD 4 */}
 
             <div className={styles.frameWrapper5}>
@@ -812,15 +739,11 @@ export default function CodingChallengePage() {
 
                 <div className={styles.rectangleDiv} />
 
-
-
                 <div className={styles.frameChild2}>
 
                   <div className={styles.ellipseParent2}>
 
                     <div className={styles.frameChild8} />
-
-
 
                     <Image
 
@@ -835,8 +758,6 @@ export default function CodingChallengePage() {
                       alt=""
 
                     />
-
-
 
                     <div
 
@@ -866,8 +787,6 @@ export default function CodingChallengePage() {
 
         </div>
 
-
-
         {/* LEARN COMPETE GROW */}
 
         <div className={styles.frameParent8}>
@@ -884,8 +803,6 @@ export default function CodingChallengePage() {
 
               />
 
-
-
               <b className={styles.learnCompeteGrow}>
 
                 Learn! Compete! <span style={{ color: "#2d4cc8" }}>Grow!</span>
@@ -896,8 +813,6 @@ export default function CodingChallengePage() {
 
             </div>
 
-
-
             <div className={styles.learnCompeteAnd}>
 
               Learn, compete, and grow through coding challenges.
@@ -905,8 +820,6 @@ export default function CodingChallengePage() {
             </div>
 
           </div>
-
-
 
           <div className={styles.frameParent11}>
 
@@ -922,8 +835,6 @@ export default function CodingChallengePage() {
 
               />
 
-
-
               <SkillCard
 
                 line1="Algorithm and Logic"
@@ -936,8 +847,6 @@ export default function CodingChallengePage() {
 
             </div>
 
-
-
             <div className={styles.frameParent12}>
 
               <SkillCard
@@ -949,8 +858,6 @@ export default function CodingChallengePage() {
                 corner="bottomLeft"
 
               />
-
-
 
               <SkillCard
 
@@ -967,8 +874,6 @@ export default function CodingChallengePage() {
           </div>
 
         </div>
-
-
 
         {/* THINK SOLVE */}
 
@@ -992,11 +897,7 @@ export default function CodingChallengePage() {
 
               </span>
 
-
-
               <span className={styles.a}>a</span>
-
-
 
               <span className={styles.thinkSolve}>
 
@@ -1004,17 +905,11 @@ export default function CodingChallengePage() {
 
               </span>
 
-
-
               <span className={styles.a}>a</span>
-
-
 
               <span className={styles.span}> </span>
 
             </span>
-
-
 
             <span className={styles.span}>
 
@@ -1038,8 +933,6 @@ export default function CodingChallengePage() {
 
         </b>
 
-
-
         {/* IMPROVE EFFICIENCY */}
 
         <div className={styles.frameParent14}>
@@ -1057,8 +950,6 @@ export default function CodingChallengePage() {
                   className={styles.frameChild14}
 
                 />
-
-
 
                 <div
 
@@ -1084,8 +975,6 @@ export default function CodingChallengePage() {
 
                   </b>
 
-
-
                   <div
 
                     className={styles.buildBetterCoding}
@@ -1094,7 +983,7 @@ export default function CodingChallengePage() {
 
                     Build better coding habits through regular
 
-                    practice and real-world challenges.
+                    practice and <span style={{ whiteSpace: "nowrap" }}>real-world</span> challenges.
 
                   </div>
 
@@ -1106,8 +995,6 @@ export default function CodingChallengePage() {
 
           </div>
 
-
-
           <div className={styles.frameParent16}>
 
             <PillCard
@@ -1118,8 +1005,6 @@ export default function CodingChallengePage() {
 
             />
 
-
-
             <PillCard
 
               label="Smart Debugging"
@@ -1128,8 +1013,6 @@ export default function CodingChallengePage() {
 
             />
 
-
-
             <PillCard
 
               label="Optimize Algorithms"
@@ -1137,8 +1020,6 @@ export default function CodingChallengePage() {
               accent="#C05512"
 
             />
-
-
 
             <PillCard
 
@@ -1152,8 +1033,6 @@ export default function CodingChallengePage() {
 
         </div>
 
-
-
         {/* INTERVIEWS */}
 
         <div className={styles.frameParent19}>
@@ -1161,8 +1040,6 @@ export default function CodingChallengePage() {
           <InterviewSection />
 
         </div>
-
-
 
         {/* AUDIENCE */}
 
@@ -1177,8 +1054,6 @@ export default function CodingChallengePage() {
               className={styles.frameChild20}
 
             />
-
-
 
             <div
 
@@ -1198,15 +1073,11 @@ export default function CodingChallengePage() {
 
                 </span>
 
-
-
                 <span className={styles.learning}>
 
                   Learning
 
                 </span>
-
-
 
                 <span className={styles.builtForEvery}>
 
@@ -1217,8 +1088,6 @@ export default function CodingChallengePage() {
                 </span>
 
               </b>
-
-
 
               <div
 
@@ -1238,8 +1107,6 @@ export default function CodingChallengePage() {
 
           </div>
 
-
-
           <div className={styles.audienceGrid}>
 
             <AudienceCard
@@ -1250,8 +1117,6 @@ export default function CodingChallengePage() {
 
             />
 
-
-
             <AudienceCard
 
               label="Coding Bootcamps"
@@ -1260,8 +1125,6 @@ export default function CodingChallengePage() {
 
             />
 
-
-
             <AudienceCard
 
               label="Corporate Training"
@@ -1269,8 +1132,6 @@ export default function CodingChallengePage() {
               color="#BF1869"
 
             />
-
-
 
             <AudienceCard
 
@@ -1283,8 +1144,6 @@ export default function CodingChallengePage() {
           </div>
 
         </div>
-
-
 
         {/* CTA */}
 
@@ -1310,8 +1169,6 @@ export default function CodingChallengePage() {
 
           />
 
-
-
           <div className={styles.frameParent25}>
 
             <div className={styles.ctaTextGroup}>
@@ -1323,8 +1180,6 @@ export default function CodingChallengePage() {
                 className={styles.frameChild21}
 
               />
-
-
 
               <b
 
@@ -1356,8 +1211,6 @@ export default function CodingChallengePage() {
 
                   </span>
 
-
-
                   <span className={styles.future}>
 
                     Future
@@ -1369,8 +1222,6 @@ export default function CodingChallengePage() {
               </b>
 
             </div>
-
-
 
             <div className={styles.solveRealCoding}>
 
@@ -1386,13 +1237,9 @@ export default function CodingChallengePage() {
 
       </PageScaler>
 
-
-
       {  <footer />  }
 
       { <Footer /> }
-
-
 
       { <TalkToExpertButton /> }
 

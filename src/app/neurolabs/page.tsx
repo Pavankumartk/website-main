@@ -224,7 +224,9 @@ export default function CodingLabsPage() {
                   height={36}
                   alt=""
                 />
-                <span>{item.label}</span>
+                <span style={item.label === "Strengthen Programming Logic" ? { whiteSpace: "nowrap" } : undefined}>
+                  {item.label}
+                </span>
               </div>
             ))}
           </div>
@@ -305,7 +307,7 @@ export default function CodingLabsPage() {
             alt=""
           />
           <div className="coding-cta__content">
-            <h2>NeuroLabs Coding Labs Learn by Coding</h2>
+            <h2>NeuroLabs Coding Labs Learn by <span className="coding-heading-blue" style={{ color: "#2D4CC8" }}>Coding</span></h2>
             <p>
               Build real-world coding skills through hands on practice and
               interactive challenges.
