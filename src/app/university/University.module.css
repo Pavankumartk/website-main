@@ -6886,7 +6886,7 @@
 }
 }
 
-/* Four-line challenge descriptions: equal text areas, no clipping. */
+/* Two-line challenge descriptions: equal text areas, no clipping. */
 .universityAndCollege.universityAndCollege.universityAndCollege .frameParent46 .interactiveLearningWith,
 .universityAndCollege.universityAndCollege.universityAndCollege .frameParent46 .centralizeCourseMaterials,
 .universityAndCollege.universityAndCollege.universityAndCollege .frameParent46 .personalizedLearningPathways,
@@ -6894,10 +6894,10 @@
 .universityAndCollege.universityAndCollege.universityAndCollege .frameParent46 .supportSkillDevelopment {
   width: 100% !important;
   height: auto !important;
-  min-height: 112px !important;
+  min-height: 56px !important;
   margin: 0 auto !important;
   padding: 0 !important;
-  font-size: 20px !important;
+  font-size: 19px !important;
   line-height: 28px !important;
   font-weight: 400 !important;
   text-align: center !important;
@@ -6909,9 +6909,9 @@
   transform: none !important;
 }
 
-/* This shorter description needs a narrower measure to form four lines. */
+/* Keep the personalized-learning description at the same width as the other cards. */
 .universityAndCollege.universityAndCollege.universityAndCollege .frameParent46 .personalizedLearningPathways {
-  max-width: 18ch !important;
+  max-width: 100% !important;
 }
 
 @media (max-width: 767.98px) {
@@ -6920,8 +6920,261 @@
   .universityAndCollege.universityAndCollege.universityAndCollege .frameParent46 .personalizedLearningPathways,
   .universityAndCollege.universityAndCollege.universityAndCollege .frameParent46 .trackAttendanceCourse,
   .universityAndCollege.universityAndCollege.universityAndCollege .frameParent46 .supportSkillDevelopment {
-    min-height: 96px !important;
-    font-size: 16px !important;
+    min-height: 48px !important;
+    font-size: 15px !important;
     line-height: 24px !important;
+  }
+}
+
+
+/* =========================================================
+   FINAL — COMPACT CHALLENGE SUBTEXT CARDS
+   Only reduces the inner subtext-card height / top-bottom space.
+   Keeps all five cards uniform.
+   ========================================================= */
+
+@media screen and (min-width: 768px) {
+  .universityAndCollege.universityAndCollege.universityAndCollege
+    .frameParent46 .rapidSkillChanges,
+  .universityAndCollege.universityAndCollege.universityAndCollege
+    .frameParent46 .lowEngagement {
+    grid-template-rows:
+      63px
+      minmax(64px, auto)
+      96px !important;
+
+    min-height: 303px !important;
+  }
+
+  .universityAndCollege.universityAndCollege.universityAndCollege
+    .frameParent46 .frameParent50,
+  .universityAndCollege.universityAndCollege.universityAndCollege
+    .frameParent46 .frameParent53 {
+    height: 96px !important;
+    min-height: 96px !important;
+    padding: 8px 14px !important;
+  }
+
+  .universityAndCollege.universityAndCollege.universityAndCollege
+    .frameParent46 .frameChild24 {
+    height: 96px !important;
+    min-height: 96px !important;
+  }
+}
+
+@media screen and (max-width: 767.98px) {
+  .universityAndCollege.universityAndCollege.universityAndCollege
+    .frameParent46 .rapidSkillChanges,
+  .universityAndCollege.universityAndCollege.universityAndCollege
+    .frameParent46 .lowEngagement {
+    grid-template-rows:
+      63px
+      minmax(56px, auto)
+      88px !important;
+
+    min-height: 279px !important;
+  }
+
+  .universityAndCollege.universityAndCollege.universityAndCollege
+    .frameParent46 .frameParent50,
+  .universityAndCollege.universityAndCollege.universityAndCollege
+    .frameParent46 .frameParent53 {
+    height: 88px !important;
+    min-height: 88px !important;
+    padding: 8px 12px !important;
+  }
+
+  .universityAndCollege.universityAndCollege.universityAndCollege
+    .frameParent46 .frameChild24 {
+    height: 88px !important;
+    min-height: 88px !important;
+  }
+}
+
+
+/* =========================================================
+   FINAL — KEY CHALLENGES GAP ONLY
+   Reduces only the space below the Key Challenges heading.
+   No other section/layout styles are changed.
+   ========================================================= */
+
+/* Remove the two extra <br /> lines inside ONLY this heading. */
+.universityAndCollege.universityAndCollege
+  .keyChallengesInHigherEducaWrapper
+  .keyChallengesIn br {
+  display: none !important;
+}
+
+/* Keep a clean, smaller gap between the heading block and cards. */
+.universityAndCollege.universityAndCollege .frameParent44 {
+  gap: 20px !important;
+}
+
+@media screen and (max-width: 767.98px) {
+  .universityAndCollege.universityAndCollege .frameParent44 {
+    gap: 16px !important;
+  }
+}
+
+
+/* =========================================================
+   FINAL MOBILE FIX — UNIFORM SUPPORT TEXT + DIGITAL GAP
+   Only these two requested areas are changed.
+   ========================================================= */
+
+@media screen and (max-width: 767.98px) {
+
+  /* -------------------------------------------------------
+     1) HOW NEUROLXP SUPPORTS — uniform card text
+     ------------------------------------------------------- */
+  .universityAndCollege.universityAndCollege
+    .frameWrapper17 .courseAndContent {
+    font-size: 20px !important;
+    line-height: 28px !important;
+    font-weight: 600 !important;
+    white-space: nowrap !important;
+  }
+
+  .universityAndCollege.universityAndCollege
+    .frameWrapper17 .flexibleLearningFor {
+    font-size: 14px !important;
+    line-height: 20px !important;
+    font-weight: 400 !important;
+    white-space: nowrap !important;
+  }
+
+  .universityAndCollege.universityAndCollege
+    .frameWrapper17 .courseAndContentParent {
+    gap: 8px !important;
+  }
+
+  /* -------------------------------------------------------
+     2) DIGITAL LEARNING — remove the large blank space
+        before the feature cards
+     ------------------------------------------------------- */
+
+  /* The source contains trailing <br /><br /> after this paragraph.
+     Hide only those breaks in this paragraph. */
+  .universityAndCollege.universityAndCollege
+    .neurolxpUnifiesContent br {
+    display: none !important;
+  }
+
+  /* Reduce only the space between the Digital Learning
+     heading/description block and its cards. */
+  .universityAndCollege.universityAndCollege
+    .frameParent8 {
+    gap: 10px !important;
+  }
+
+  .universityAndCollege.universityAndCollege
+    .frameParent9 {
+    margin-bottom: 0 !important;
+  }
+
+  .universityAndCollege.universityAndCollege
+    .frameParent10 {
+    margin-top: 0 !important;
+  }
+}
+
+
+/* =========================================================
+   FINAL — 16PX GAP FOR BOTH REQUESTED SECTIONS
+   Applies on desktop and mobile only to:
+   1) Digital Learning -> cards
+   2) Key Challenges -> cards
+   ========================================================= */
+
+/* DIGITAL LEARNING:
+   remove only the extra <br> spacing in the description,
+   then keep exactly 16px before the cards. */
+.universityAndCollege.universityAndCollege
+  .neurolxpUnifiesContent br {
+  display: none !important;
+}
+
+.universityAndCollege.universityAndCollege
+  .frameParent8 {
+  gap: 16px !important;
+}
+
+.universityAndCollege.universityAndCollege
+  .frameParent9 {
+  margin-bottom: 0 !important;
+}
+
+.universityAndCollege.universityAndCollege
+  .frameParent10 {
+  margin-top: 0 !important;
+}
+
+/* KEY CHALLENGES:
+   remove only the heading's extra <br> spacing,
+   then keep exactly 16px before the cards. */
+.universityAndCollege.universityAndCollege
+  .keyChallengesInHigherEducaWrapper
+  .keyChallengesIn br {
+  display: none !important;
+}
+
+.universityAndCollege.universityAndCollege
+  .frameParent44 {
+  gap: 16px !important;
+}
+
+/* Keep the same 16px value explicitly on mobile too. */
+@media screen and (max-width: 767.98px) {
+  .universityAndCollege.universityAndCollege
+    .frameParent8,
+  .universityAndCollege.universityAndCollege
+    .frameParent44 {
+    gap: 16px !important;
+  }
+}
+
+
+/* =========================================================
+   FINAL REQUEST — 24PX SECTION GAPS + MOBILE CARD SHADOW
+   Only these requested items are changed:
+   1) Digital Learning -> cards = 24px
+   2) Key Challenges -> cards = 24px
+   3) Restore bottom shadow on support cards in mobile
+   ========================================================= */
+
+/* DIGITAL LEARNING — 24px on desktop and mobile */
+.universityAndCollege.universityAndCollege .frameParent8 {
+  gap: 24px !important;
+}
+
+/* KEY CHALLENGES — 24px on desktop and mobile */
+.universityAndCollege.universityAndCollege .frameParent44 {
+  gap: 24px !important;
+}
+
+@media screen and (max-width: 767.98px) {
+  .universityAndCollege.universityAndCollege .frameParent8,
+  .universityAndCollege.universityAndCollege .frameParent44 {
+    gap: 24px !important;
+  }
+
+  /* Allow the raised shadow to render fully around the support cards. */
+  .universityAndCollege.universityAndCollege .frameParent67,
+  .universityAndCollege.universityAndCollege .frameParent68,
+  .universityAndCollege.universityAndCollege .frameParent69 {
+    overflow: visible !important;
+  }
+
+  .universityAndCollege.universityAndCollege .frameWrapper17 {
+    box-shadow:
+      -4px -4px 4px #FFFFFF,
+      4px 4px 4px #C4C4C4 !important;
+    overflow: hidden !important;
+  }
+
+  /* Small breathing room only for the final row so the bottom shadow
+     is not visually clipped by the parent edge. */
+  .universityAndCollege.universityAndCollege .frameParent69 {
+    padding-bottom: 6px !important;
   }
 }

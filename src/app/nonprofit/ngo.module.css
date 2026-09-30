@@ -1896,8 +1896,7 @@
 
 /* ==========================================================================\n   FLUID RESPONSIVE LAYOUT\n   - Desktop source design above remains unchanged.\n   - No device-specific width ranges.\n   - One fluid layout is used for every viewport below the desktop canvas.\n   - No CSS zoom is used in responsive views.\n   ========================================================================== */
 
-html,
-body {
+.ngoPage {
   width: 100%;
   max-width: 100%;
   margin: 0;
@@ -1908,8 +1907,7 @@ body {
 
 /* Keep the original desktop composition untouched. */
 @media screen and (max-width: 1199px) {
-  html,
-  body {
+  .ngoPage {
     overflow-x: hidden !important;
   }
 
@@ -4153,3 +4151,699 @@ body:has(.ngo) * {
   }
 }
 
+
+/* Requested heading accents. The hero heading retains its original markup/colors. */
+.ngo :is(h2, h3) .headingAccent {
+  color: #2d4cc8 !important;
+}
+
+.ngo .supportCardTitle {
+  display: block !important;
+  align-content: center;
+}
+
+/* Compact Mission / Impact cards. Content sets their height at every width. */
+.ngo .frame {
+  width: min(1218px, 100%) !important;
+  height: auto !important;
+  min-height: 0 !important;
+  display: grid !important;
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  align-items: stretch !important;
+  gap: 32px !important;
+  padding: 32px !important;
+  box-sizing: border-box !important;
+}
+
+.ngo .frame :is(.frameInner2, .frameInner3) {
+  position: relative !important;
+  inset: auto !important;
+  width: 100% !important;
+  height: auto !important;
+  min-height: 0 !important;
+  display: flex !important;
+  align-items: stretch !important;
+  container-type: inline-size;
+}
+
+.ngo .frame :is(.frameWrapper2, .frameWrapper3, .frameWrapper4) {
+  position: relative !important;
+  inset: auto !important;
+  transform: none !important;
+  width: 100% !important;
+  height: auto !important;
+  min-height: 0 !important;
+  display: flex !important;
+  align-items: stretch !important;
+  box-sizing: border-box !important;
+}
+
+.ngo .frame :is(.frameWrapper2, .frameWrapper4) {
+  padding: 24px !important;
+}
+
+.ngo .frame .missionDrivenLearningParent {
+  position: static !important;
+  inset: auto !important;
+  transform: none !important;
+  width: 100% !important;
+  min-width: 0 !important;
+  height: auto !important;
+  margin: 0 !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: flex-start !important;
+  gap: 16px !important;
+  text-align: center !important;
+}
+
+.ngo .frame :is(.missionDrivenLearning, .scaleYourImpact) {
+  display: block !important;
+  width: 100% !important;
+  min-width: 0 !important;
+  height: auto !important;
+  margin: 0 !important;
+  font-size: 32px !important;
+  line-height: 1.25 !important;
+  letter-spacing: 0 !important;
+  white-space: nowrap !important;
+  text-align: center !important;
+}
+
+/* Size the title against its own card, including narrow phones and tablets. */
+@supports (font-size: 1cqw) {
+  .ngo .frame :is(.missionDrivenLearning, .scaleYourImpact) {
+    font-size: clamp(16px, 6.4cqw, 36px) !important;
+  }
+}
+
+.ngo .frame :is(.empowerStaffVolunteers, .deliverStructuredTraining) {
+  width: 100% !important;
+  height: auto !important;
+  min-height: 0 !important;
+  margin: 0 !important;
+  font-size: 20px !important;
+  line-height: 30px !important;
+  text-align: center !important;
+}
+
+/* Shortened final copy does not reserve the old paragraph's empty space. */
+.ngo .enablingLearningForSocialIParent {
+  height: auto !important;
+  min-height: 0 !important;
+  gap: 16px !important;
+}
+
+.ngo .enablingLearningForSocialIParent .withFlexibleLearning {
+  width: min(100%, 900px) !important;
+  height: auto !important;
+  min-height: 0 !important;
+  margin: 0 auto !important;
+}
+
+.ngo .frameParent38 {
+  gap: 32px !important;
+}
+
+/* Keep 48px between desktop sections as cards shrink or accordions expand. */
+@media screen and (min-width: 1200px) {
+  .ngo,
+  .ngo.supportCardsExpanded {
+    height: auto !important;
+    min-height: 0 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 48px !important;
+    padding-top: 88px !important;
+    padding-bottom: 48px !important;
+    box-sizing: border-box !important;
+  }
+
+  .ngo > :is(.ngoInner, .frame, .frameParent5, .image20Group, .frameParent18, .ngoChild, .frameParent38) {
+    position: relative !important;
+    inset: auto !important;
+    transform: none !important;
+    margin: 0 auto !important;
+    flex-shrink: 0 !important;
+    align-self: center !important;
+  }
+
+  .ngo > .ngoInner {
+    height: 527px !important;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .ngo .frame {
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 340px), 1fr)) !important;
+    gap: 24px !important;
+    padding: 24px !important;
+  }
+
+  .ngo .frame :is(.empowerStaffVolunteers, .deliverStructuredTraining) {
+    font-size: 16px !important;
+    line-height: 26px !important;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .ngo .frame {
+    grid-template-columns: minmax(0, 1fr) !important;
+    padding: 16px !important;
+    gap: 20px !important;
+  }
+
+  .ngo .frame :is(.frameWrapper2, .frameWrapper4) {
+    padding: 18px 16px !important;
+  }
+
+  .ngo .frame .missionDrivenLearningParent {
+    gap: 12px !important;
+  }
+}
+
+@supports not (font-size: 1cqw) {
+  @media screen and (max-width: 1199px) {
+    .ngo .frame :is(.missionDrivenLearning, .scaleYourImpact) {
+      font-size: 24px !important;
+      white-space: normal !important;
+    }
+  }
+}
+
+/* Key Challenges: dark headings and consistent, compact spacing. */
+.ngo .frameParent5 :is(.howNeurolxpSupports, .supportCardTitle) {
+  color: #31344b !important;
+}
+
+.ngo .frameParent5 .headingAccent {
+  color: inherit !important;
+}
+
+.ngo .frameParent5 {
+  gap: 28px !important;
+}
+
+.ngo .frameParent5 .frameParent6 {
+  height: auto !important;
+  min-height: 0 !important;
+  gap: 16px !important;
+}
+
+.ngo .frameParent5 .howNeurolxpSupportsNgosParent {
+  height: auto !important;
+  min-height: 0 !important;
+  gap: 12px !important;
+}
+
+.ngo .frameParent5 .howNeurolxpSupports {
+  height: auto !important;
+  margin: 0 !important;
+  line-height: 1.3 !important;
+}
+
+.ngo .frameParent5 .neurolxpHelpsNonprofits {
+  width: min(100%, 900px) !important;
+  height: auto !important;
+  min-height: 0 !important;
+  margin: 0 auto !important;
+  line-height: 1.5 !important;
+}
+
+.ngo .frameParent5 .neurolxpHelpsNonprofits br {
+  display: none !important;
+}
+
+.ngo .frameParent5 .frameParent7 {
+  align-items: start !important;
+  gap: 24px !important;
+}
+
+.ngo .frameParent5 .supportCardContent {
+  padding: 20px 16px !important;
+  gap: 8px !important;
+  box-sizing: border-box !important;
+}
+
+.ngo .frameParent5 .supportIconOuter {
+  width: 60px !important;
+  height: 60px !important;
+  flex: 0 0 60px !important;
+  margin: 0 auto !important;
+}
+
+.ngo .frameParent5 .supportCardTitle {
+  width: 100% !important;
+  max-width: 248px !important;
+  height: auto !important;
+  min-height: 68px !important;
+  margin: 0 !important;
+  display: block !important;
+  align-content: center;
+  line-height: 34px !important;
+  text-align: center !important;
+}
+
+.ngo .frameParent5 .supportArrowButton {
+  width: 44px !important;
+  height: 44px !important;
+  flex: 0 0 44px !important;
+  padding: 6px !important;
+  margin: 0 auto !important;
+}
+
+@media screen and (max-width: 1199px) {
+  .ngo .frameParent5 .supportCardTitle {
+    min-height: 56px !important;
+    line-height: 28px !important;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .ngo .frameParent5 {
+    gap: 24px !important;
+  }
+
+  .ngo .frameParent5 .supportCardTitle {
+    min-height: 52px !important;
+    line-height: 26px !important;
+  }
+}
+
+/* Inline on desktop; explicit two-line card labels on phones. */
+.mobileTitleLine {
+  display: inline;
+}
+
+@media screen and (max-width: 767px) {
+  .ngo .mobileTitleLine {
+    display: block;
+  }
+
+  /* Hero: one centered text column followed by the video. */
+  .ngo .ngoInner .image20Parent {
+    min-height: 0 !important;
+    height: auto !important;
+    padding: 0 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 24px !important;
+  }
+
+  .ngo .ngoInner .frameDiv {
+    order: 0 !important;
+    width: 100% !important;
+    max-width: none !important;
+    padding: 24px 20px 0 !important;
+    margin: 0 auto !important;
+    box-sizing: border-box !important;
+    align-items: center !important;
+    gap: 20px !important;
+    text-align: center !important;
+  }
+
+  .ngo .ngoInner :is(.frameParent2, .frameParent3) {
+    width: 100% !important;
+    min-width: 0 !important;
+    align-items: center !important;
+    gap: 16px !important;
+    text-align: center !important;
+  }
+
+  .ngo .ngoInner .empoweringNgosThroughContainer {
+    font-size: 24px !important;
+    line-height: 32px !important;
+    text-align: center !important;
+  }
+
+  .ngo .ngoInner .empoweringNonprofitsThrough {
+    margin: 0 !important;
+    line-height: 24px !important;
+    text-align: center !important;
+  }
+
+  .ngo .ngoInner :is(.frameInner, .frameWrapper) {
+    align-self: center !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  .ngo .ngoInner .image20Parent video {
+    position: relative !important;
+    inset: auto !important;
+    order: 1 !important;
+    width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+    aspect-ratio: 4 / 3 !important;
+    display: block !important;
+    object-fit: cover !important;
+  }
+
+  /* Benefits: text can wrap within its own column beside the check mark. */
+  .ngo .ngoChild {
+    padding: 16px !important;
+  }
+
+  .ngo .ngoChild .frameWrapper29 {
+    padding: 16px 12px !important;
+  }
+
+  .ngo .ngoChild .frameParent30 {
+    grid-template-columns: minmax(0, 1fr) !important;
+    gap: 20px !important;
+  }
+
+  .ngo .ngoChild :is(.frameParent31, .frameParent32) {
+    min-width: 0 !important;
+    width: 100% !important;
+    height: auto !important;
+    margin: 0 !important;
+  }
+
+  .ngo .ngoChild .frameParent31 {
+    gap: 12px !important;
+  }
+
+  .ngo .ngoChild .neurolxpHelpsNonprofits2 {
+    margin: 0 !important;
+    line-height: 24px !important;
+  }
+
+  .ngo .ngoChild .frameParent32 {
+    align-items: stretch !important;
+    gap: 12px !important;
+  }
+
+  .ngo .ngoChild .frameParent33 {
+    display: grid !important;
+    grid-template-columns: 44px minmax(0, 1fr) !important;
+    gap: 12px !important;
+    align-items: center !important;
+    min-width: 0 !important;
+    min-height: 44px !important;
+    height: auto !important;
+  }
+
+  .ngo .ngoChild .frameParent33 :is(.frameChild16, .frameChild19) {
+    width: 44px !important;
+    height: 44px !important;
+    min-width: 44px !important;
+    min-height: 44px !important;
+  }
+
+  .ngo .ngoChild .benefitCheckInner {
+    width: 34px !important;
+    height: 34px !important;
+  }
+
+  .ngo .ngoChild .benefitCheckIcon {
+    width: 24px !important;
+    height: 24px !important;
+  }
+
+  .ngo .ngoChild .frameParent33 > :is(.empoweredTeams, .missionDrivenGrowth, .higherLearnerEngagement, .smarterLearningManagement, .measurableSocialImpact) {
+    width: auto !important;
+    min-width: 0 !important;
+    max-width: 100% !important;
+    height: auto !important;
+    font-size: 15px !important;
+    line-height: 22px !important;
+    letter-spacing: 0 !important;
+    white-space: normal !important;
+    overflow-wrap: break-word !important;
+    text-align: left !important;
+  }
+
+  /* Use cases: flatten the two old rows into one continuous two-column grid. */
+  .ngo .frameParent18 .frameParent20 {
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    width: 100% !important;
+    height: auto !important;
+    gap: 14px 12px !important;
+  }
+
+  .ngo .frameParent18 :is(.frameParent21, .frameWrapper12, .frameWrapper13, .volunteerOnboardingWrapper) {
+    display: contents !important;
+  }
+
+  .ngo .frameParent18 .frameParent22 {
+    position: relative !important;
+    width: 100% !important;
+    min-width: 0 !important;
+    height: auto !important;
+    min-height: 94px !important;
+    padding: 10px !important;
+    box-sizing: border-box !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 6px !important;
+    border-radius: 28px !important;
+    background: #dfe6e9 !important;
+    box-shadow: -4px -4px 4px #fff, 4px 4px 4px #c4c4c4 !important;
+    transform: none !important;
+  }
+
+  .ngo .frameParent18 .useCaseCheckWrap {
+    position: static !important;
+    inset: auto !important;
+    order: -1 !important;
+    width: 32px !important;
+    height: 32px !important;
+    min-width: 32px !important;
+    min-height: 32px !important;
+    flex: 0 0 32px !important;
+    margin: 0 !important;
+    transform: none !important;
+  }
+
+  .ngo .frameParent18 .useCaseCheckWrap .frameChild8 {
+    width: 22px !important;
+    height: 22px !important;
+    transform: none !important;
+  }
+
+  .ngo .frameParent18 :is(.volunteerOnboarding, .leadershipTraining) {
+    position: static !important;
+    inset: auto !important;
+    width: 100% !important;
+    min-width: 0 !important;
+    height: auto !important;
+    min-height: 36px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    font-size: 14px !important;
+    line-height: 18px !important;
+    letter-spacing: 0 !important;
+    text-align: center !important;
+    white-space: normal !important;
+    overflow-wrap: break-word !important;
+    transform: none !important;
+  }
+
+  /* Collaborative Learning: the image starts after the complete text block. */
+  .ngo .image20Group {
+    min-height: 0 !important;
+    height: auto !important;
+    padding: 12px !important;
+    box-sizing: border-box !important;
+  }
+
+  .ngo .image20Group .image21Parent {
+    position: relative !important;
+    inset: auto !important;
+    width: 100% !important;
+    min-height: 0 !important;
+    height: auto !important;
+    display: flex !important;
+    flex-direction: column !important;
+    overflow: hidden !important;
+  }
+
+  .ngo .image20Group :is(.frameWrapper9, .frameWrapper10, .frameWrapper11, .frameParent16, .frameParent17) {
+    position: static !important;
+    inset: auto !important;
+    transform: none !important;
+    width: 100% !important;
+    min-width: 0 !important;
+    height: auto !important;
+    min-height: 0 !important;
+    margin: 0 !important;
+    box-sizing: border-box !important;
+    align-items: center !important;
+    text-align: center !important;
+  }
+
+  .ngo .image20Group .frameWrapper9 {
+    order: 0 !important;
+    padding: 24px 16px !important;
+  }
+
+  .ngo .image20Group .frameParent16 {
+    gap: 16px !important;
+  }
+
+  .ngo .image20Group .frameParent17 {
+    gap: 12px !important;
+  }
+
+  .ngo .image20Group .collaborativeLearning {
+    font-size: 24px !important;
+    line-height: 32px !important;
+    max-width: 15ch !important;
+    align-self: center !important;
+  }
+
+  .ngo .image20Group .createOnceTrainContainer {
+    font-size: 16px !important;
+    line-height: 24px !important;
+    margin: 0 !important;
+  }
+
+  .ngo .image20Group .createOnceTrain {
+    line-height: inherit !important;
+  }
+
+  .ngo .image20Group .wrapperPexelsMbaClassroom2 {
+    position: relative !important;
+    inset: auto !important;
+    transform: none !important;
+    order: 1 !important;
+    width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+    aspect-ratio: 4 / 3 !important;
+    display: block !important;
+    border-radius: 0 0 16px 16px !important;
+  }
+
+  .ngo .image20Group .pexelsMbaClassroom215566522Icon {
+    position: absolute !important;
+    inset: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    transform: none !important;
+  }
+
+  /* Challenges: compact pairs, with expanded content inside normal card flow. */
+  .ngo .frameParent5 .frameParent7 {
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    width: 100% !important;
+    gap: 16px 12px !important;
+    align-items: start !important;
+  }
+
+  .ngo .frameParent5 .frameWrapper5.supportCard,
+  .ngo .frameParent5 .frameWrapper5.supportCardOpen {
+    width: 100% !important;
+    min-width: 0 !important;
+    height: auto !important;
+    min-height: 0 !important;
+    border-radius: 48px 48px 16px 16px !important;
+    transform: none !important;
+  }
+
+  .ngo .frameParent5 .supportCardContent {
+    height: auto !important;
+    min-height: 180px !important;
+    padding: 18px 10px 12px !important;
+    gap: 8px !important;
+  }
+
+  .ngo .frameParent5 .supportIconOuter {
+    width: 48px !important;
+    height: 48px !important;
+    flex: 0 0 48px !important;
+  }
+
+  .ngo .frameParent5 .supportIcon {
+    width: 32px !important;
+    height: 32px !important;
+  }
+
+  .ngo .frameParent5 .supportCardTitle {
+    min-height: 40px !important;
+    height: auto !important;
+    font-size: clamp(12px, 3.6vw, 14px) !important;
+    line-height: 20px !important;
+    letter-spacing: 0 !important;
+    text-align: center !important;
+  }
+
+  .ngo .frameParent5 .supportArrowButton .arrowDownDoubleIcon {
+    width: 24px !important;
+    height: 24px !important;
+  }
+
+  .ngo .frameParent5 .supportCardDetails {
+    position: relative !important;
+    inset: auto !important;
+    width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+    margin: 0 !important;
+    padding: 12px 8px !important;
+    box-sizing: border-box !important;
+    transform: none !important;
+    border-radius: 12px !important;
+    background: #dfe6e9 !important;
+    box-shadow: inset -3px -3px 4px #fff, inset 3px 3px 4px #c4c4c4 !important;
+  }
+
+  .ngo .frameParent5 .supportCardDetails[aria-hidden="true"] {
+    display: none !important;
+  }
+
+  .ngo .frameParent5 .supportCardDetails[aria-hidden="false"] {
+    display: block !important;
+    opacity: 1 !important;
+    pointer-events: auto !important;
+  }
+
+  .ngo .frameParent5 .supportCardDetails::before,
+  .ngo .frameParent5 .supportCardDetails::after {
+    display: none !important;
+  }
+
+  .ngo .frameParent5 .supportCardDetails p {
+    position: static !important;
+    inset: auto !important;
+    width: 100% !important;
+    margin: 0 !important;
+    transform: none !important;
+    font-size: 13px !important;
+    line-height: 20px !important;
+    letter-spacing: 0 !important;
+    overflow-wrap: break-word !important;
+  }
+
+  /* Expansion already increases layout height; remove the old extra movement. */
+  .ngo.supportCardsExpanded > :is(.image20Group, .frameParent18, .ngoChild, .frameParent38) {
+    transform: none !important;
+  }
+
+  .ngo .frameParent18 :is(.frameParent6, .howNeurolxpSupportsNgosParent) {
+    height: auto !important;
+    min-height: 0 !important;
+    gap: 12px !important;
+  }
+
+  .ngo .frameParent18 .neurolxpHelpsNonprofits {
+    height: auto !important;
+    margin: 0 !important;
+    line-height: 24px !important;
+  }
+
+  .ngo :is(.frameParent5, .frameParent18, .ngoChild) h2 {
+    font-size: 24px !important;
+    line-height: 32px !important;
+    text-align: center !important;
+    text-wrap: balance;
+  }
+}

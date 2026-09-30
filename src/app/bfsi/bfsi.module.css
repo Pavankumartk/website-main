@@ -3561,3 +3561,146 @@
   display: block;
   overflow: visible;
 }
+
+
+/* =========================================================
+   FINAL — BFSI HERO CONTENT LIFT
+   Only moves the desktop hero content upward so the CTA
+   buttons sit clearly above the curved background edge.
+   No typography, buttons, artwork, or other sections changed.
+   ========================================================= */
+@media (min-width: 1025px) {
+  .bfsi-hero .bfsi-hero-content.bfsi-hero-content {
+    margin-top: 0 !important;
+    transform: translateY(-32px) !important;
+  }
+}
+
+
+/* =========================================================
+   FINAL — BFSI HERO REFERENCE LAYOUT
+   Matches the supplied hero reference ONLY.
+   No typography, button design, colors, or other sections changed.
+   ========================================================= */
+@media (min-width: 1025px) {
+
+  /* Keep the hero/background at the same 1440 × 624 proportion
+     used by the existing SVG artwork so its curved bottom is not
+     compressed around the CTA buttons. */
+  .bfsi-page > section.bfsi-hero {
+    position: relative !important;
+    width: 100% !important;
+    height: clamp(624px, 43.333vw, 800px) !important;
+    min-height: 624px !important;
+    padding: 24px 20px 0 !important;
+    box-sizing: border-box !important;
+    overflow: hidden !important;
+  }
+
+  /* Restore the reference spacing of the centered content stack. */
+  .bfsi-hero .bfsi-hero-content.bfsi-hero-content {
+    width: 100% !important;
+    max-width: 1078px !important;
+    margin: 80px auto 0 !important;
+    transform: none !important;
+    gap: 32px !important;
+    row-gap: 32px !important;
+  }
+
+  /* Let the existing SVG occupy the complete reference-sized hero. */
+  .bfsi-hero .bfsi-hero-bg.bfsi-hero-bg {
+    position: absolute !important;
+    inset: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    display: block !important;
+    z-index: 0 !important;
+  }
+
+  /* Keep the CTA row centered inside the curved artwork. */
+  .bfsi-hero .bfsi-hero-buttons {
+    position: relative !important;
+    z-index: 2 !important;
+    margin: 0 !important;
+  }
+}
+
+
+/* =========================================================
+   FINAL — REQUESTED BFSI SPACING + BENEFIT TEXT ALIGNMENT
+   Only:
+   1) 48px gap between page sections
+   2) Center the two-line Benefit-card text
+   ========================================================= */
+
+.bfsi-page {
+  gap: 48px !important;
+  row-gap: 48px !important;
+}
+
+.bfsi-benefit-text {
+  flex: 1 1 auto !important;
+  text-align: center !important;
+}
+
+/* Keep the same 48px section spacing on tablet and mobile. */
+@media (max-width: 1024px) {
+  .bfsi-page {
+    gap: 48px !important;
+    row-gap: 48px !important;
+  }
+}
+
+
+/* =========================================================
+   FINAL MOBILE ONLY — BENEFIT ICON ALIGNMENT + STAT CENTERING
+   No desktop styles are changed.
+   ========================================================= */
+@media screen and (max-width: 768px) {
+
+  /* Benefit cards:
+     move the green icon inward/right and keep the two-line text
+     visually centered by balancing the icon with an equal spacer. */
+  .bfsi-benefit-card {
+    display: grid !important;
+    grid-template-columns: 32px minmax(0, 1fr) 32px !important;
+    align-items: center !important;
+    column-gap: 12px !important;
+    padding: 20px 24px !important;
+  }
+
+  .bfsi-benefit-icon {
+    grid-column: 1 !important;
+    justify-self: center !important;
+    margin: 0 !important;
+  }
+
+  .bfsi-benefit-text {
+    grid-column: 2 !important;
+    width: 100% !important;
+    margin: 0 !important;
+    text-align: center !important;
+    justify-self: center !important;
+  }
+
+  /* Future-Ready BFSI Training card:
+     center the badge, heading and paragraph on mobile. */
+  .bfsi-stat-content {
+    align-items: center !important;
+    text-align: center !important;
+  }
+
+  .bfsi-stat-badge {
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  .bfsi-stat-heading,
+  .bfsi-stat-subtext {
+    width: 100% !important;
+    max-width: 100% !important;
+    text-align: center !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+}
