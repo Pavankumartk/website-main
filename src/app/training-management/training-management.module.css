@@ -9156,7 +9156,7 @@ body,
     font-family: "Segoe UI", "Inter" !important;
     font-size: 24px !important;
     font-weight: 700 !important;
-    line-height: 24px !important;
+    line-height: 32px !important;
     letter-spacing: 0.02em !important;
 
     text-align: center !important;
@@ -9201,12 +9201,16 @@ body,
 
 @media screen and (min-width: 1200px) {
 
+  .trainingManagement .frameParent8.coreFeatureCard .personalizedIconHexagon {
+    top: 91px !important;
+  }
+
   .trainingManagement .frameParent8.coreFeatureCard
   .personalizedCardContent {
     position: absolute !important;
 
     /* IMPORTANT: no inset shorthand here */
-    top: 170px !important;
+    top: 166px !important;
     left: 0 !important;
     right: auto !important;
     bottom: auto !important;
@@ -9216,7 +9220,7 @@ body,
 
     height: auto !important;
     min-height: 0 !important;
-    max-height: 112px !important;
+    max-height: none !important;
 
     margin: 0 !important;
     padding: 0 14px !important;
@@ -9227,7 +9231,7 @@ body,
     align-items: center !important;
     justify-content: flex-start !important;
 
-    gap: 10px !important;
+    gap: 4px !important;
 
     text-align: center !important;
     transform: none !important;
@@ -9250,7 +9254,7 @@ body,
     font-family: "Segoe UI", "Inter" !important;
     font-size: 24px !important;
     font-weight: 700 !important;
-    line-height: 24px !important;
+    line-height: 32px !important;
     letter-spacing: 0.02em !important;
 
     text-align: center !important;
@@ -9290,3 +9294,90 @@ body,
   }
 }
 
+
+/* Final-word emphasis belongs only to main section headings. */
+.trainingManagement h2 .headingLastWord {
+  color: #2d4cc8 !important;
+  display: inline;
+  font: inherit;
+  letter-spacing: inherit;
+}
+
+/* Two explicit centered rows; the second row stays together. */
+.trainingManagement .engageLearnersWith {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: flex-start !important;
+  gap: 4px !important;
+  left: 50% !important;
+  right: auto !important;
+  width: calc(100% - 32px) !important;
+  max-width: none !important;
+  height: auto !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  transform: translateX(-50%) !important;
+  text-align: center !important;
+}
+
+.trainingManagement .engageLearnersWith .headingLine {
+  display: block !important;
+  flex: 0 0 auto !important;
+  width: auto !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  font: inherit;
+  letter-spacing: inherit;
+  white-space: nowrap !important;
+}
+
+/* Restore the original blue badge labels. */
+.trainingManagement :is(.trainingManagementPill, .whyNeurolxpPill),
+.trainingManagement :is(.trainingManagementPill, .whyNeurolxpPill):is(:hover, :active) {
+  color: #2d4cc8 !important;
+}
+
+
+/* Mobile spacing: hero copy, step-card wrapping, and footer clearance. */
+@media screen and (max-width: 767px) {
+  .trainingManagement .smarterTrainingManagementWiParent {
+    top: 50% !important;
+    height: auto !important;
+    min-height: 0 !important;
+    gap: 16px !important;
+  }
+
+  .trainingManagement .smarterTrainingManagementContainer,
+  .trainingManagement .transformLearningWith {
+    flex: 0 0 auto !important;
+    height: auto !important;
+    min-height: 0 !important;
+    margin: 0 !important;
+  }
+
+  .trainingManagement .transformLearningWith {
+    transform: none !important;
+  }
+
+  .trainingManagement .engageLearnersWith {
+    display: block !important;
+    gap: 0 !important;
+  }
+
+  .trainingManagement .engageLearnersWith .headingLine {
+    display: inline !important;
+    width: auto !important;
+    min-width: 0 !important;
+    white-space: normal !important;
+    overflow-wrap: break-word !important;
+  }
+
+  .trainingManagement .engageLearnersWith .headingLine + .headingLine::before {
+    content: " ";
+  }
+
+  .trainingManagement {
+    padding-bottom: 64px !important;
+  }
+}

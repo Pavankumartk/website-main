@@ -6936,3 +6936,189 @@ body:has(.eLearning) * {
   }
 }
 
+
+/* Final-word emphasis for section and card headings; the hero is unchanged. */
+.eLearning .headingLastWord {
+  color: #2d4cc8;
+  display: inline;
+  font: inherit;
+  letter-spacing: inherit;
+}
+
+/* Ideal For: keep the layered surfaces, but let real text size each card. */
+.eLearning .frameParent15 .frameParent27 {
+  width: 100% !important;
+  height: auto !important;
+  min-height: 0 !important;
+}
+
+.eLearning .frameParent15 .frameParent27 :is(.frameParent28, .frameParent32) {
+  position: relative !important;
+  inset: auto !important;
+  display: grid !important;
+  grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+  align-items: stretch !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  height: auto !important;
+  min-height: 0 !important;
+  gap: 40px !important;
+  margin: 0 auto !important;
+}
+
+.eLearning .frameParent15 .frameParent27 .frameParent32 {
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  width: calc((100% - 80px) * 2 / 3 + 40px) !important;
+}
+
+.eLearning .frameParent15 .frameParent27 :is(.frameWrapper12, .frameWrapper13, .frameWrapper14, .frameWrapper16) {
+  position: relative !important;
+  inset: auto !important;
+  width: 100% !important;
+  max-width: none !important;
+  min-width: 0 !important;
+  height: auto !important;
+  min-height: 162px !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  display: flex !important;
+  flex: initial !important;
+}
+
+.eLearning .frameParent15 .frameParent27 .rectangleParent {
+  position: relative !important;
+  inset: auto !important;
+  width: 100% !important;
+  height: auto !important;
+  min-height: 162px !important;
+  box-sizing: border-box !important;
+  padding: 32px 20px 32px 32px !important;
+  transform: none !important;
+  display: flex !important;
+  align-items: center !important;
+}
+
+.eLearning .frameParent15 .frameParent27 .rectangleDiv {
+  position: absolute !important;
+  inset: 0 auto 0 0 !important;
+  width: 76% !important;
+  height: auto !important;
+}
+
+.eLearning .frameParent15 .frameParent27 :is(.frameChild27, .frameChild29) {
+  position: absolute !important;
+  inset: 16px 0 16px 16px !important;
+  width: auto !important;
+  height: auto !important;
+}
+
+.eLearning .frameParent15 .frameParent27 :is(.frameParent29, .frameParent30) {
+  position: relative !important;
+  inset: auto !important;
+  transform: none !important;
+  width: 100% !important;
+  min-width: 0 !important;
+  height: auto !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  gap: 20px !important;
+  z-index: 3 !important;
+}
+
+.eLearning .frameParent15 .frameParent27 :is(.frameParent29, .frameParent30) > .ourCustomersWrapper {
+  flex: 0 0 50px !important;
+  width: 50px !important;
+}
+
+.eLearning .frameParent15 .frameParent27 .mortarboard01Icon {
+  width: 50px !important;
+  height: 50px !important;
+  object-fit: contain !important;
+}
+
+.eLearning .frameParent15 .frameParent27 :is(.onlineEducationParent, .corporateTrainingParent) {
+  position: relative !important;
+  inset: auto !important;
+  display: flex !important;
+  flex: 1 1 0 !important;
+  flex-direction: column !important;
+  align-items: stretch !important;
+  width: auto !important;
+  min-width: 0 !important;
+  height: auto !important;
+  gap: 6px !important;
+}
+
+.eLearning .frameParent15 .frameParent27 :is(.onlineEducation, .corporateTraining, .skillDevelopment, .customerEducation, .universitiesSchools, .employeeDevelopment, .professionalCertifications, .customerPartner) {
+  position: static !important;
+  transform: none !important;
+  display: block !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  min-width: 0 !important;
+  height: auto !important;
+  min-height: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  white-space: normal !important;
+  overflow-wrap: anywhere !important;
+  word-break: normal !important;
+  flex-shrink: 0 !important;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .eLearning .frameParent15 .frameParent27 .frameParent28 {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+  .eLearning .frameParent15 .frameParent27 .frameParent32 {
+    width: 100% !important;
+  }
+  .eLearning .frameParent15 .frameParent27 .frameWrapper14 {
+    grid-column: 1 / -1;
+    width: calc((100% - 40px) / 2) !important;
+    justify-self: center;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .eLearning .frameParent15 .frameParent27 :is(.frameParent28, .frameParent32) {
+    grid-template-columns: minmax(0, 1fr) !important;
+    width: min(100%, 310px) !important;
+    gap: 18px !important;
+  }
+  .eLearning .frameParent15 .frameParent27 :is(.frameWrapper12, .frameWrapper13, .frameWrapper14, .frameWrapper16, .rectangleParent) {
+    min-height: 136px !important;
+  }
+  .eLearning .frameParent15 .frameParent27 .rectangleParent {
+    padding: 26px 16px 26px 24px !important;
+  }
+  .eLearning .frameParent15 .frameParent27 :is(.frameChild27, .frameChild29) {
+    inset: 10px 0 10px 12px !important;
+  }
+  .eLearning .frameParent15 .frameParent27 :is(.frameParent29, .frameParent30) {
+    gap: 14px !important;
+  }
+  .eLearning .frameParent15 .frameParent27 :is(.frameParent29, .frameParent30) > .ourCustomersWrapper {
+    flex-basis: 40px !important;
+    width: 40px !important;
+  }
+  .eLearning .frameParent15 .frameParent27 .mortarboard01Icon {
+    width: 40px !important;
+    height: 40px !important;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 900px) {
+  .eLearning .frameParent15 .frameParent27 :is(.frameParent28, .frameParent32) {
+    grid-template-columns: minmax(0, 1fr) !important;
+    width: min(100%, 396px) !important;
+    gap: 28px !important;
+  }
+  .eLearning .frameParent15 .frameParent27 .frameWrapper14 {
+    width: 100% !important;
+    grid-column: auto;
+  }
+}

@@ -168,7 +168,7 @@ export default function CodingLabsPage() {
             <h2>
   Master Coding with
   <br />
-  Hands-<span className="coding-heading-blue">On Practice</span>
+  Hands-On<span className="coding-heading-blue"> Practice</span>
 </h2>
 <p>
   Practice programming through interactive coding

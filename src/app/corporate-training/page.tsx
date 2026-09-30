@@ -32,7 +32,7 @@ const challengeCards = [
 
         description: <>Continuous workforce<br />upskilling</>,
 
-        dropdown: "Continuous workforce upskilling",
+        dropdown: (<>Continuous workforce<br />upskilling</>),
 
         icon: "/icons/target-11.svg",
 

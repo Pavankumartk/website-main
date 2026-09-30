@@ -1,5 +1,4 @@
 "use client";
-
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 import { useRef, useState } from "react";
@@ -7,19 +6,15 @@ import styles from "./E-Learning.module.css";
 import Header from "../../components/Header/header";
 import Footer from "../../components/Footer/footer";
 import { BookDemoTrigger } from "../../components/Bookademo/Bookademo";
-
 export default function ELearningPage() {
   const router = useRouter();
   const futureReadyVideoRef = useRef<HTMLVideoElement>(null);
   const [isFutureReadyVideoPaused, setIsFutureReadyVideoPaused] = useState(false);
-
   const toggleFutureReadyVideo = () => {
     const video = futureReadyVideoRef.current;
-
     if (!video) {
       return;
     }
-
     if (video.paused) {
       void video.play().then(() => {
         setIsFutureReadyVideoPaused(false);
@@ -29,7 +24,6 @@ export default function ELearningPage() {
       setIsFutureReadyVideoPaused(true);
     }
   };
-
   return (
     <>
       <Header />
@@ -103,10 +97,7 @@ export default function ELearningPage() {
           <div className={styles.frameParent7}>
             <div className={styles.keyChallengesBadge}>Key Challenges</div>
             <div className={styles.addressingKeyChallengesInEParent}>
-              <h2 className={styles.addressingKeyChallenges} style={{ margin: 0, padding: 0, fontSize: "inherit", fontFamily: "inherit", color: "inherit", fontWeight: "bold" }}>
-                Addressing key Challenges in E-Learning
-                <br />
-              </h2>
+              <h2 className={styles.addressingKeyChallenges} style={{ margin: 0, padding: 0, fontSize: "inherit", fontFamily: "inherit", color: "inherit", fontWeight: "bold" }}>Addressing key Challenges in <span className={styles.headingLastWord}>E-Learning</span></h2>
               <div className={styles.neurolxpHelpsOrganizations}>NeuroLXP helps organizations deliver engaging, accessible, and measurable learning experiences.</div>
             </div>
           </div>
@@ -130,7 +121,7 @@ export default function ELearningPage() {
               <article className={styles.challengeCard}>
                 <div className={styles.challengeMainContent}>
                   <span className={`${styles.challengeNumber} ${styles.challengeNumberPink}`}>CHALLENGE 1</span>
-                  <h3>Passive Online Learning</h3>
+                  <h3>Passive Online <span className={styles.headingLastWord}>Learning</span></h3>
                   <p>Static content reduces engagement and knowledge retention.</p>
                 </div>
                 <div className={`${styles.challengeSolution} ${styles.challengeSolutionPink}`}>
@@ -141,7 +132,7 @@ export default function ELearningPage() {
               <article className={styles.challengeCard}>
                 <div className={styles.challengeMainContent}>
                   <span className={`${styles.challengeNumber} ${styles.challengeNumberBlue}`}>CHALLENGE 2</span>
-                  <h3>Managing Large Learning Content</h3>
+                  <h3>Managing Large Learning <span className={styles.headingLastWord}>Content</span></h3>
                   <p>Managing videos, PDFs, presentations, and assessments is complex.</p>
                 </div>
                 <div className={`${styles.challengeSolution} ${styles.challengeSolutionBlue}`}>
@@ -152,7 +143,7 @@ export default function ELearningPage() {
               <article className={styles.challengeCard}>
                 <div className={styles.challengeMainContent}>
                   <span className={`${styles.challengeNumber} ${styles.challengeNumberPurple}`}>CHALLENGE 3</span>
-                  <h3>Low Learner Engagement</h3>
+                  <h3>Low Learner <span className={styles.headingLastWord}>Engagement</span></h3>
                   <p>Maintaining learner motivation is challenging.</p>
                 </div>
                 <div className={`${styles.challengeSolution} ${styles.challengeSolutionPurple}`}>
@@ -163,7 +154,7 @@ export default function ELearningPage() {
               <article className={styles.challengeCard}>
                 <div className={styles.challengeMainContent}>
                   <span className={`${styles.challengeNumber} ${styles.challengeNumberGreen}`}>CHALLENGE 4</span>
-                  <h3>Measuring Learning Effectiveness</h3>
+                  <h3>Measuring Learning <span className={styles.headingLastWord}>Effectiveness</span></h3>
                   <p>Tracking learning outcomes is challenging.</p>
                 </div>
                 <div className={`${styles.challengeSolution} ${styles.challengeSolutionGreen}`}>
@@ -184,11 +175,7 @@ export default function ELearningPage() {
               <div className={styles.frameParent18}>
                 <div className={styles.platformFeaturesBadge}>Platform Features</div>
                 <div className={styles.keyFeaturesOfNeurolxpELeaWrapper}>
-                  <h2 className={styles.keyFeaturesOf} style={{ margin: 0, padding: 0, fontSize: "inherit", fontFamily: "inherit", color: "inherit", fontWeight: "bold" }}>
-                    Key Features of NeuroLXP E-Learning Platform
-                    <br />
-                    <br />
-                  </h2>
+                  <h2 className={styles.keyFeaturesOf} style={{ margin: 0, padding: 0, fontSize: "inherit", fontFamily: "inherit", color: "inherit", fontWeight: "bold" }}>Key Features of NeuroLXP E-Learning <span className={styles.headingLastWord}>Platform</span></h2>
                 </div>
               </div>
               <div className={styles.frameParent19}>
@@ -199,9 +186,7 @@ export default function ELearningPage() {
                     <div className={styles.frameParent21}>
                       <div className={styles.ellipseGroup}>
                         <div className={styles.frameChild16} />
-                        <h3 className={styles.aiPoweredContent} style={{ margin: 0, padding: 0, fontSize: "inherit", fontFamily: "inherit", color: "inherit", fontWeight: "bold" }}>
-                          AI-Powered Content<br />
-                        </h3>
+                        <h3 className={styles.aiPoweredContent} style={{ margin: 0, padding: 0, fontSize: "inherit", fontFamily: "inherit", color: "inherit", fontWeight: "bold" }}>AI-Powered <span className={styles.headingLastWord}>Content</span></h3>
                         <Image className={styles.aiBookIcon} src="/icons/ai-book.svg" width={32} height={32} sizes="100vw" alt="" aria-hidden="true" tabIndex={-1} draggable={false} />
                       </div>
                       <div className={styles.smartContentCuration}>Smart content curation.</div>
@@ -213,9 +198,7 @@ export default function ELearningPage() {
                     <div className={styles.frameParent21}>
                       <div className={styles.ellipseGroup}>
                         <div className={styles.frameChild19} />
-                        <h3 className={styles.aiPoweredContent} style={{ margin: 0, padding: 0, fontSize: "inherit", fontFamily: "inherit", color: "inherit", fontWeight: "bold" }}>
-                          Mobile Learning<br /><br />
-                        </h3>
+                        <h3 className={styles.aiPoweredContent} style={{ margin: 0, padding: 0, fontSize: "inherit", fontFamily: "inherit", color: "inherit", fontWeight: "bold" }}>Mobile <span className={styles.headingLastWord}>Learning</span></h3>
                         <Image className={styles.aiBookIcon} src="/icons/smart-phone.svg" width={32} height={32} sizes="100vw" alt="" aria-hidden="true" tabIndex={-1} draggable={false} />
                       </div>
                       <div className={styles.smartContentCuration}>Learn anytime, anywhere.</div>
@@ -229,9 +212,7 @@ export default function ELearningPage() {
                     <div className={styles.frameParent21}>
                       <div className={styles.ellipseGroup}>
                         <div className={styles.frameChild22} />
-                        <h3 className={styles.aiPoweredContent} style={{ margin: 0, padding: 0, fontSize: "inherit", fontFamily: "inherit", color: "inherit", fontWeight: "bold" }}>
-                          Skill Pathways<br /><br /><br />
-                        </h3>
+                        <h3 className={styles.aiPoweredContent} style={{ margin: 0, padding: 0, fontSize: "inherit", fontFamily: "inherit", color: "inherit", fontWeight: "bold" }}>Skill <span className={styles.headingLastWord}>Pathways</span></h3>
                         <Image className={styles.aiBookIcon} src="/icons/graduation-cap.svg" width={32} height={32} sizes="100vw" alt="" aria-hidden="true" tabIndex={-1} draggable={false} />
                       </div>
                       <div className={styles.smartContentCuration}>Career-ready skills</div>
@@ -243,9 +224,7 @@ export default function ELearningPage() {
                     <div className={styles.frameParent21}>
                       <div className={styles.ellipseGroup}>
                         <div className={styles.frameChild25} />
-                        <h3 className={styles.aiPoweredContent} style={{ margin: 0, padding: 0, fontSize: "inherit", fontFamily: "inherit", color: "inherit", fontWeight: "bold" }}>
-                          Scalable Platform<br />
-                        </h3>
+                        <h3 className={styles.aiPoweredContent} style={{ margin: 0, padding: 0, fontSize: "inherit", fontFamily: "inherit", color: "inherit", fontWeight: "bold" }}>Scalable <span className={styles.headingLastWord}>Platform</span></h3>
                         <Image className={styles.aiBookIcon} src="/icons/justice.svg" width={32} height={32} sizes="100vw" alt="" aria-hidden="true" tabIndex={-1} draggable={false} />
                       </div>
                       <div className={styles.smartContentCuration}>Scalable digital learning.</div>
@@ -257,9 +236,7 @@ export default function ELearningPage() {
             <div className={styles.frameParent7}>
               <div className={styles.idealForBadge}>Ideal For</div>
               <div className={styles.addressingKeyChallengesInEParent}>
-                <h2 className={styles.addressingKeyChallenges} style={{ margin: 0, padding: 0, fontSize: "inherit", fontFamily: "inherit", color: "inherit", fontWeight: "bold" }}>
-                  Ideal for Diverse Learning Environments<br /><br /><br />
-                </h2>
+                <h2 className={styles.addressingKeyChallenges} style={{ margin: 0, padding: 0, fontSize: "inherit", fontFamily: "inherit", color: "inherit", fontWeight: "bold" }}>Ideal for Diverse Learning <span className={styles.headingLastWord}>Environments</span></h2>
                 <div className={styles.neurolxpSupportsA}>
                   NeuroLXP supports a wide range of digital learning initiatives.<br /><br />
                 </div>
@@ -277,9 +254,7 @@ export default function ELearningPage() {
                       <Image className={styles.mortarboard01Icon} src="/icons/cap.svg" width={50} height={50} sizes="100vw" alt="" aria-hidden="true" tabIndex={-1} draggable={false} />
                     </div>
                     <div className={styles.onlineEducationParent}>
-                      <h3 className={styles.onlineEducation} style={{ margin: 0, padding: 0, fontSize: "inherit", fontFamily: "inherit", color: "inherit", fontWeight: "bold" }}>
-                        Online Education<br /><br /><br /><br /><br />
-                      </h3>
+                      <h3 className={styles.onlineEducation} style={{ margin: 0, padding: 0, fontSize: "inherit", fontFamily: "inherit", color: "inherit", fontWeight: "bold" }}>Online <span className={styles.headingLastWord}>Education</span></h3>
                       <div className={styles.universitiesSchools}>{`Universities & schools`}</div>
                     </div>
                   </div>
@@ -294,9 +269,7 @@ export default function ELearningPage() {
                       <Image className={styles.mortarboard01Icon} src="/icons/university-usergroup.svg" width={50} height={50} sizes="100vw" alt="" aria-hidden="true" tabIndex={-1} draggable={false} />
                     </div>
                     <div className={styles.corporateTrainingParent}>
-                      <h3 className={styles.corporateTraining} style={{ margin: 0, padding: 0, fontSize: "inherit", fontFamily: "inherit", color: "inherit", fontWeight: "bold" }}>
-                        Corporate Training<br /><br /><br /><br /><br /><br /><br />
-                      </h3>
+                      <h3 className={styles.corporateTraining} style={{ margin: 0, padding: 0, fontSize: "inherit", fontFamily: "inherit", color: "inherit", fontWeight: "bold" }}>Corporate <span className={styles.headingLastWord}>Training</span></h3>
                       <div className={styles.employeeDevelopment}>Employee development</div>
                     </div>
                   </div>
@@ -313,9 +286,7 @@ export default function ELearningPage() {
                       </div>
                     </div>
                     <div className={styles.corporateTrainingParent}>
-                      <h3 className={styles.corporateTraining} style={{ margin: 0, padding: 0, fontSize: "inherit", fontFamily: "inherit", color: "inherit", fontWeight: "bold" }}>
-                        Certification Programs<br />
-                      </h3>
+                      <h3 className={styles.corporateTraining} style={{ margin: 0, padding: 0, fontSize: "inherit", fontFamily: "inherit", color: "inherit", fontWeight: "bold" }}>Certification <span className={styles.headingLastWord}>Programs</span></h3>
                       <div className={styles.professionalCertifications}>Professional certifications</div>
                     </div>
                   </div>
@@ -332,9 +303,7 @@ export default function ELearningPage() {
                       <Image className={styles.mortarboard01Icon} src="/icons/idea.svg" width={50} height={50} sizes="100vw" alt="" aria-hidden="true" tabIndex={-1} draggable={false} />
                     </div>
                     <div className={styles.onlineEducationParent}>
-                      <h3 className={styles.skillDevelopment} style={{ margin: 0, padding: 0, fontSize: "inherit", fontFamily: "inherit", color: "inherit", fontWeight: "bold" }}>
-                        Skill Development<br />
-                      </h3>
+                      <h3 className={styles.skillDevelopment} style={{ margin: 0, padding: 0, fontSize: "inherit", fontFamily: "inherit", color: "inherit", fontWeight: "bold" }}>Skill <span className={styles.headingLastWord}>Development</span></h3>
                       <div className={styles.universitiesSchools}>Workforce upskilling</div>
                     </div>
                   </div>
@@ -349,9 +318,7 @@ export default function ELearningPage() {
                       <Image className={styles.mortarboard01Icon} src="/icons/chat.svg" width={50} height={50} sizes="100vw" alt="" aria-hidden="true" tabIndex={-1} draggable={false} />
                     </div>
                     <div className={styles.onlineEducationParent}>
-                      <h3 className={styles.customerEducation} style={{ margin: 0, padding: 0, fontSize: "inherit", fontFamily: "inherit", color: "inherit", fontWeight: "bold" }}>
-                        Customer Education<br /><br /><br /><br /><br /><br />
-                      </h3>
+                      <h3 className={styles.customerEducation} style={{ margin: 0, padding: 0, fontSize: "inherit", fontFamily: "inherit", color: "inherit", fontWeight: "bold" }}>Customer <span className={styles.headingLastWord}>Education</span></h3>
                       <div className={styles.customerPartner}>{`Customer & partner training`}</div>
                     </div>
                   </div>
@@ -360,7 +327,6 @@ export default function ELearningPage() {
             </div>
           </div>
         </div>
-
         <div className={styles.frameParent35}>
           <div className={styles.peopleTakingPartBusinessEvParent}>
             <div className={styles.peopleTakingPartBusinessEv} />

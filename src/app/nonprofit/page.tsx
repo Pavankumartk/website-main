@@ -75,8 +75,8 @@ const NGO: NextPage = () => {
     return (
         <>
             <Header />
-        <main className={styles.ngoPage} aria-label="Nonprofit organizations page">
-            <title>Nonprofit Organizations
+        <main className={styles.ngoPage} aria-label="Non-profit organizations page">
+            <title>Non-profit Organizations
                  (NGOs) | NeuroLXP</title>
             <div className={`${styles.ngo} ${openSupportCards.length > 0 ? styles.supportCardsExpanded : ""}`}>
                 <div className={styles.ngoInner}>
@@ -119,14 +119,14 @@ const NGO: NextPage = () => {
                         <div className={styles.frameDiv}>
                             <div className={styles.frameParent2}>
                                 <div className={styles.frameParent3}>
-                                    <div className={styles.frameInner}>Nonprofit Organizations (NGOs)</div>
+                                    <div className={styles.frameInner}>Non-profit Organizations (NGOs)</div>
                                     <h1 className={styles.empoweringNgosThroughContainer} style={{ margin: 0, fontWeight: 700 }}>
                                         <span className={styles.empowering}>Empowering</span>
                                         <span className={styles.ngos}> NGOs<br /></span>
                                         <span className={styles.empowering}>Through Learning<br /></span>
                                     </h1>
                                 </div>
-                                <div className={styles.empoweringNonprofitsThrough}>Empowering nonprofits through scalable digital learning.</div>
+                                <div className={styles.empoweringNonprofitsThrough}>Empowering non-profits through scalable digital learning.</div>
                             </div>
                             <BookDemoTrigger className={styles.frameWrapper}>
                                 <div className={styles.bookADemoWrapper}>
@@ -148,7 +148,7 @@ const NGO: NextPage = () => {
                     </div>
                     <div className={styles.arrowRightDoubleGroup}>
                         <Image className={styles.arrowDown01Icon} src="/icons/arrowright.svg" width={16} height={16} sizes="100vw" alt="" aria-hidden="true" />
-                        <b className={styles.industriesWeServe}>Nonprofit Organizations</b>
+                        <b className={styles.industriesWeServe}>Non-profit Organizations</b>
                     </div>
                 </div>
                 <div className={styles.frame}>

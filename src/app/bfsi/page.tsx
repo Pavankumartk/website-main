@@ -1621,7 +1621,7 @@ export default function BfsiPage() {
 
 
 
-          <p className={styles["bfsi-benefits-subtext"]}>NeuroLXP helps BFSI organizations strengthen compliance, build skills, and improve workforce performance through intelligent learning.</p>
+          <p className={styles["bfsi-benefits-subtext"]}>NeuroLXP help BFSI organizations strengthen compliance, build skills, and improve workforce performance through intelligent learning.</p>
 
 
 
