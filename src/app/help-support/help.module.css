@@ -3455,3 +3455,38 @@
 @media (prefers-reduced-motion: reduce) {
   .helpAndSupport.helpAndSupport :is(.frameChild2, .bookDemoVisual) { transition: none !important; }
 }
+
+
+/* Blue final words on the main page and section headings. */
+.helpAndSupport.helpAndSupport .everyStep {
+  color: inherit;
+}
+
+.helpAndSupport.helpAndSupport .headingAccent {
+  color: #2d4cc8;
+  -webkit-text-fill-color: currentColor;
+}
+
+/* Keep every support description centered on exactly two lines.
+   Retain the existing card typography and circular design. */
+.helpAndSupport.helpAndSupport .supportCardContent {
+  padding-left: 8px !important;
+  padding-right: 8px !important;
+}
+
+.helpAndSupport.helpAndSupport .supportTextLine {
+  display: block;
+  white-space: nowrap;
+}
+
+/* Mobile only: keep each Knowledge & Resources label on exactly two lines */
+.mobileResourceBreak {
+	display: none;
+}
+
+@media (max-width: 768px) {
+	.mobileResourceBreak {
+		display: block;
+	}
+}
+

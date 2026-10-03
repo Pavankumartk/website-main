@@ -3793,3 +3793,16 @@ body {
     display: block !important;
 }
 
+
+/* Desktop: allow the first sentence line to fit before the existing <br />. */
+@media (min-width: 1024px) {
+    .whitepaper-page .topics-description {
+        width: 100%;
+        max-width: 1100px;
+        height: auto;
+        margin-inline: auto;
+        text-align: center;
+        white-space: normal;
+        text-wrap: initial;
+    }
+}
