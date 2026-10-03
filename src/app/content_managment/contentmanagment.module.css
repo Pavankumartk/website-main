@@ -14483,3 +14483,278 @@
     transform:translateY(-20px) !important;
   }
 }
+
+/* =========================================================
+   CURATE CARD — KEEP "Transform existing resources" ONE LINE
+   Existing responsive rules force this text back to wrapping,
+   so this final override must stay at the very end of the file.
+   ========================================================= */
+.contentIntelligenceManagem.contentIntelligenceManagem
+  .image20Parent4
+  .transformExistingResources {
+  width: max-content !important;
+  min-width: max-content !important;
+  max-width: none !important;
+  white-space: nowrap !important;
+  overflow-wrap: normal !important;
+  word-break: normal !important;
+}
+
+/* =========================================================
+   FINAL MOBILE SCREENSHOT CORRECTIONS
+   Only the five requested changes below.
+   ========================================================= */
+@media screen and (max-width: 767px) {
+
+  /* 1) Reduce the large gap between the hero CTA and Content Intelligence. */
+  .contentIntelligenceManagem.contentIntelligenceManagem > .frameParent22 {
+    margin-top: -24px !important;
+  }
+
+  /* 2) Content Intelligence card subtexts: show in two clean lines. */
+  .contentIntelligenceManagem.contentIntelligenceManagem
+    .frameParent22
+    .makeComplexContent,
+  .contentIntelligenceManagem.contentIntelligenceManagem
+    .frameParent22
+    .highlightEssentialConcepts {
+    width: 180px !important;
+    max-width: 180px !important;
+    height: auto !important;
+    min-height: 48px !important;
+    white-space: normal !important;
+    overflow-wrap: normal !important;
+    word-break: normal !important;
+    line-height: 24px !important;
+    text-align: center !important;
+  }
+
+  /* 3) Content Compatibility: Video & Media should use two lines,
+        matching the other long card titles. */
+  .contentIntelligenceManagem.contentIntelligenceManagem
+    .frameParent37
+    .compatibilitySwitchCard:nth-child(2)
+    .documentsPresentations {
+    width: 118px !important;
+    max-width: 118px !important;
+    min-height: 64px !important;
+    white-space: normal !important;
+    overflow-wrap: normal !important;
+    word-break: normal !important;
+    text-align: center !important;
+  }
+
+  /* 4) Keep the shortened final Centralized Content text on one line. */
+  .contentIntelligenceManagem.contentIntelligenceManagem
+    .frameParent55
+    .ensureConsistencyAcross {
+    width: auto !important;
+    max-width: none !important;
+    white-space: nowrap !important;
+    overflow-wrap: normal !important;
+    word-break: normal !important;
+  }
+
+  /* 5) Learning-at-Scale heading + description: center on mobile. */
+  .contentIntelligenceManagem.contentIntelligenceManagem
+    .frameParent79
+    .frameParent81,
+  .contentIntelligenceManagem.contentIntelligenceManagem
+    .frameParent79
+    .frameParent81
+    .frameParent57 {
+    align-items: center !important;
+    text-align: center !important;
+  }
+
+  .contentIntelligenceManagem.contentIntelligenceManagem
+    .frameParent79
+    .frameParent81
+    .onePlatformFor,
+  .contentIntelligenceManagem.contentIntelligenceManagem
+    .frameParent79
+    .frameParent81
+    .neurolxpSupportsOrganization {
+    width: min(100%, 330px) !important;
+    max-width: 330px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    text-align: center !important;
+  }
+}
+
+/* =========================================================
+   FINAL MOBILE FIX — TWO-LINE TEXT + HIDE CAROUSEL ARROWS
+   ========================================================= */
+@media screen and (max-width: 767px) {
+
+  /* Key Insights subtext: exactly two clean lines. */
+  .contentIntelligenceManagem.contentIntelligenceManagem
+    .frameParent22
+    .highlightEssentialConcepts {
+    width: 220px !important;
+    max-width: 220px !important;
+    min-height: 48px !important;
+    white-space: normal !important;
+    overflow-wrap: normal !important;
+    word-break: normal !important;
+    line-height: 24px !important;
+    text-align: center !important;
+    text-wrap: balance !important;
+  }
+
+  /* Interactive Learning + Knowledge Content: two-line mobile titles. */
+  .contentIntelligenceManagem.contentIntelligenceManagem
+    .frameParent37
+    .compatibilitySwitchCard:nth-child(5)
+    .documentsPresentations,
+  .contentIntelligenceManagem.contentIntelligenceManagem
+    .frameParent37
+    .compatibilitySwitchCard:nth-child(6)
+    .documentsPresentations {
+    width: 160px !important;
+    max-width: 160px !important;
+    min-height: 64px !important;
+    white-space: normal !important;
+    overflow-wrap: normal !important;
+    word-break: normal !important;
+    line-height: 32px !important;
+    text-align: center !important;
+    text-wrap: balance !important;
+  }
+
+  /* Remove Learning-at-Scale left/right arrows on mobile only. */
+  .contentIntelligenceManagem.contentIntelligenceManagem
+    .frameParent79
+    .frameParent84,
+  .contentIntelligenceManagem.contentIntelligenceManagem
+    .frameParent79
+    .learningArrowButton {
+    display: none !important;
+  }
+}
+
+/* =========================================================
+   FINAL CONTENT COMPATIBILITY BEHAVIOR + OPEN ICON CENTERING
+   ========================================================= */
+@media screen and (max-width: 767px) {
+  .contentIntelligenceManagem.contentIntelligenceManagem
+    .frameParent37
+    .compatibilitySwitchCardOpen
+    .compatibilitySwitchTitle {
+    align-items: center !important;
+    justify-content: flex-start !important;
+    text-align: center !important;
+  }
+
+  .contentIntelligenceManagem.contentIntelligenceManagem
+    .frameParent37
+    .compatibilitySwitchCardOpen
+    .compatibilitySwitchTitle
+    .contentFormatIcon {
+    position: relative !important;
+    left: auto !important;
+    right: auto !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    align-self: center !important;
+    transform: none !important;
+  }
+
+  .contentIntelligenceManagem.contentIntelligenceManagem
+    .frameParent37
+    .compatibilitySwitchCardOpen
+    .compatibilitySwitchTitle
+    .contentFormatIcon::before {
+    top: 50% !important;
+    left: 50% !important;
+    right: auto !important;
+    bottom: auto !important;
+    transform: translate(-50%, -50%) !important;
+  }
+
+  .contentIntelligenceManagem.contentIntelligenceManagem
+    .frameParent37
+    .compatibilitySwitchCardOpen
+    .contentFormatOpenIcon {
+    position: absolute !important;
+    top: 50% !important;
+    left: 50% !important;
+    right: auto !important;
+    bottom: auto !important;
+    margin: 0 !important;
+    transform: translate(-50%, -50%) !important;
+  }
+}
+
+/* =========================================================
+   FINAL MOBILE OPEN-ICON FIX
+   Use ONE centered circle only. Remove the extra inner circle
+   that made the open icon look shifted/doubled.
+   ========================================================= */
+@media screen and (max-width: 767px) {
+  .contentIntelligenceManagem.contentIntelligenceManagem
+    .frameParent37
+    .compatibilitySwitchCardOpen
+    .compatibilitySwitchTitle
+    .contentFormatIcon {
+    position: relative !important;
+    inset: auto !important;
+
+    width: 60px !important;
+    min-width: 60px !important;
+    height: 60px !important;
+    min-height: 60px !important;
+    flex: 0 0 60px !important;
+
+    margin: 0 auto !important;
+    padding: 0 !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    align-self: center !important;
+
+    border-radius: 50% !important;
+    background: #dfe6e9 !important;
+    box-shadow:
+      -4px -4px 4px #ffffff,
+      4px 4px 4px rgba(196, 196, 196, 0.8) !important;
+
+    overflow: visible !important;
+    transform: none !important;
+  }
+
+  /* Remove the second decorative circle in open state. */
+  .contentIntelligenceManagem.contentIntelligenceManagem
+    .frameParent37
+    .compatibilitySwitchCardOpen
+    .compatibilitySwitchTitle
+    .contentFormatIcon::before {
+    display: none !important;
+    content: none !important;
+  }
+
+  /* Keep the minus icon exactly in the center of the single circle. */
+  .contentIntelligenceManagem.contentIntelligenceManagem
+    .frameParent37
+    .compatibilitySwitchCardOpen
+    .contentFormatOpenIcon {
+    position: absolute !important;
+    top: 50% !important;
+    left: 50% !important;
+    right: auto !important;
+    bottom: auto !important;
+
+    width: 24px !important;
+    height: 24px !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    transform: translate(-50%, -50%) !important;
+    object-fit: contain !important;
+    z-index: 2 !important;
+  }
+}
+

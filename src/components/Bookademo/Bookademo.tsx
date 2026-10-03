@@ -1,6 +1,7 @@
 "use client";
 
 import styles from "./Bookademo.module.css";
+import { createPortal } from "react-dom";
 import "flag-icons/css/flag-icons.min.css";
 import { useEffect, useId, useLayoutEffect, useRef, useState } from "react";
 import type { ReactNode, RefObject } from "react";
@@ -3301,79 +3302,188 @@ export default function BookADemo() {
 /* Book a Demo Modal                                                          */
 /* -------------------------------------------------------------------------- */
 
-function BookDemoModal({
-  onClose,
-}: {
-  onClose: () => void;
-}) {
-  const dialogRef =
-    useRef<HTMLDivElement | null>(
-      null
-    );
+const BOOK_DEMO_MODAL_LAYOUT = `
+/* Modal positioning stays in this component; existing form styles are preserved. */
+[data-book-demo-modal-overlay][data-book-demo-modal-overlay] {
+  position: fixed !important;
+  inset: 0 !important;
+  z-index: 2147483000 !important;
+  width: 100% !important;
+  max-width: none !important;
+  height: 100vh !important;
+  height: 100dvh !important;
+  min-height: 0 !important;
+  max-height: none !important;
+  margin: 0 !important;
+  padding: 16px !important;
+  box-sizing: border-box !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  overflow: hidden !important;
+  transform: none !important;
+  isolation: isolate;
+  overscroll-behavior: contain;
+  background: rgba(25, 32, 51, 0.48);
+}
+
+[data-book-demo-modal-dialog][data-book-demo-modal-dialog] {
+  position: relative !important;
+  inset: auto !important;
+  transform: none !important;
+  margin: 0 !important;
+  width: min(1080px, 100%) !important;
+  max-width: 100% !important;
+  min-width: 0 !important;
+  height: auto !important;
+  min-height: 0 !important;
+  max-height: 100% !important;
+  padding: 0 !important;
+  box-sizing: border-box !important;
+  display: flex !important;
+  flex-direction: column !important;
+  overflow: visible !important;
+  flex: 0 1 auto !important;
+  background: #dfe6e9;
+  border-radius: 20px;
+}
+
+[data-book-demo-modal-scroll][data-book-demo-modal-scroll] {
+  position: relative !important;
+  inset: auto !important;
+  transform: none !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  height: auto !important;
+  min-height: 0 !important;
+  max-height: calc(100vh - 32px) !important;
+  max-height: calc(100dvh - 32px) !important;
+  margin: 0 !important;
+  padding: 16px !important;
+  box-sizing: border-box !important;
+  flex: 1 1 auto !important;
+  overflow-x: hidden !important;
+  overflow-y: auto !important;
+  overscroll-behavior: contain;
+  -webkit-overflow-scrolling: touch;
+  border-radius: inherit;
+}
+
+/* Keep the embedded form in normal flow so Submit is part of the scroll area. */
+[data-book-demo-modal-scroll][data-book-demo-modal-scroll] > section {
+  position: relative !important;
+  inset: auto !important;
+  transform: none !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  min-width: 0 !important;
+  height: auto !important;
+  min-height: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  box-sizing: border-box !important;
+}
+
+[data-book-demo-modal-close][data-book-demo-modal-close] {
+  position: absolute !important;
+  top: 10px !important;
+  right: 10px !important;
+  bottom: auto !important;
+  left: auto !important;
+  z-index: 10 !important;
+  transform: none !important;
+}
+
+@media (max-width: 767px) {
+  [data-book-demo-modal-overlay][data-book-demo-modal-overlay] { padding: 8px !important; }
+  [data-book-demo-modal-scroll][data-book-demo-modal-scroll] {
+    max-height: calc(100vh - 16px) !important;
+    max-height: calc(100dvh - 16px) !important;
+    padding: 12px !important;
+  }
+}
+`;
+
+function BookDemoModal({ onClose }: { onClose: () => void }) {
+  const dialogRef = useRef<HTMLDivElement | null>(null);
+  const closeRef = useRef(onClose);
+  const [portalTarget, setPortalTarget] = useState<HTMLElement | null>(null);
 
   useEffect(() => {
-    dialogRef.current?.focus();
-
-    const handleKeyDown = (
-      event: KeyboardEvent
-    ) => {
-      if (event.key === "Escape") {
-        onClose();
-      }
-    };
-
-    document.addEventListener(
-      "keydown",
-      handleKeyDown
-    );
-
-    const previousOverflow =
-      document.body.style.overflow;
-
-    document.body.style.overflow =
-      "hidden";
-
-    document.body.classList.add(
-      "modal-open"
-    );
-
-    return () => {
-      document.removeEventListener(
-        "keydown",
-        handleKeyDown
-      );
-
-      document.body.style.overflow =
-        previousOverflow;
-
-      document.body.classList.remove(
-        "modal-open"
-      );
-    };
+    closeRef.current = onClose;
   }, [onClose]);
 
-  return (
-    <div
-      className={
-        styles[
-          "book-demo-modal-overlay"
-        ]
+  // Render outside every page section, transformed wrapper, and footer.
+  // Waiting for mount keeps document access safe during Next.js rendering.
+  useEffect(() => {
+    setPortalTarget(document.body);
+  }, []);
+
+  useEffect(() => {
+    if (!portalTarget) return;
+
+    const previouslyFocused = document.activeElement;
+    const previousBodyOverflow = document.body.style.overflow;
+    const previousRootOverflow = document.documentElement.style.overflow;
+    const alreadyModalOpen = document.body.classList.contains("modal-open");
+
+    document.body.style.overflow = "hidden";
+    document.documentElement.style.overflow = "hidden";
+    document.body.classList.add("modal-open");
+    dialogRef.current?.focus({ preventScroll: true });
+
+    const handleKeyDown = (event: KeyboardEvent) => {
+      if (event.defaultPrevented) return;
+      if (event.key === "Escape") {
+        closeRef.current();
+        return;
       }
+      if (event.key !== "Tab") return;
+
+      const dialog = dialogRef.current;
+      if (!dialog) return;
+      const controls = Array.from(dialog.querySelectorAll<HTMLElement>(
+        'a[href], button:not([disabled]), input:not([disabled]), select:not([disabled]), textarea:not([disabled]), [tabindex]:not([tabindex="-1"])'
+      )).filter((element) => element.getClientRects().length > 0 && !element.closest('[inert]'));
+      const first = controls[0];
+      const last = controls[controls.length - 1];
+
+      if (!first) {
+        event.preventDefault();
+        dialog.focus();
+      } else if (event.shiftKey && (document.activeElement === first || document.activeElement === dialog)) {
+        event.preventDefault();
+        last.focus();
+      } else if (!event.shiftKey && (document.activeElement === last || document.activeElement === dialog)) {
+        event.preventDefault();
+        first.focus();
+      }
+    };
+
+    document.addEventListener("keydown", handleKeyDown);
+    return () => {
+      document.removeEventListener("keydown", handleKeyDown);
+      document.body.style.overflow = previousBodyOverflow;
+      document.documentElement.style.overflow = previousRootOverflow;
+      if (!alreadyModalOpen) document.body.classList.remove("modal-open");
+      if (previouslyFocused instanceof HTMLElement && previouslyFocused.isConnected) {
+        previouslyFocused.focus({ preventScroll: true });
+      }
+    };
+  }, [portalTarget]);
+
+  if (!portalTarget) return null;
+
+  return createPortal(
+    <div
+      className={styles["book-demo-modal-overlay"]} data-book-demo-modal-overlay="true"
       onMouseDown={(event) => {
-        if (
-          event.target ===
-          event.currentTarget
-        ) {
-          onClose();
-        }
+        if (event.target === event.currentTarget) closeRef.current();
       }}
     >
+      <style>{BOOK_DEMO_MODAL_LAYOUT}</style>
       <div
-        className={
-          styles[
-            "book-demo-modal-dialog"
-          ]
-        }
+        className={styles["book-demo-modal-dialog"]} data-book-demo-modal-dialog="true"
         role="dialog"
         aria-modal="true"
         aria-label="Book a demo"
@@ -3382,34 +3492,18 @@ function BookDemoModal({
       >
         <button
           type="button"
-          className={
-            styles[
-              "book-demo-modal-close"
-            ]
-          }
+          className={styles["book-demo-modal-close"]} data-book-demo-modal-close="true"
           onClick={onClose}
           aria-label="Close book a demo form"
         >
-          <CloseIcon
-            className={
-              styles[
-                "book-demo-modal-close-icon"
-              ]
-            }
-          />
+          <CloseIcon className={styles["book-demo-modal-close-icon"]} />
         </button>
-
-        <div
-          className={
-            styles[
-              "book-demo-modal-scroll"
-            ]
-          }
-        >
+        <div className={styles["book-demo-modal-scroll"]} data-book-demo-modal-scroll="true">
           <BookADemo />
         </div>
       </div>
-    </div>
+    </div>,
+    portalTarget
   );
 }
 

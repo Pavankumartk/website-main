@@ -873,7 +873,7 @@
   justify-self: end;
   display: flex;
   flex-direction: column;
-  gap: clamp(16px, 1.71875vw, 22px);
+  gap: 12px;
 }
 
 .adaptiveItem {
@@ -2772,9 +2772,18 @@
     --matched-button-padding: 14px 24px;
   }
   .page .sectionPill.sectionPill {
+    width: max-content;
+    max-width: calc(100vw - 16px);
     min-height: 48px;
-    padding: 10px 26px;
-    font-size: 20px;
+    flex-shrink: 0;
+    padding: 10px 8px;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0.01em;
+    white-space: nowrap;
+    text-wrap: nowrap;
+    overflow-wrap: normal;
+    word-break: normal;
   }
 }
 
@@ -2855,8 +2864,8 @@
   margin: 0;
   font-size: clamp(12px, 4.65cqw, 15px);
   line-height: 1.4;
-  white-space: normal;
-  text-wrap: balance;
+  white-space: nowrap;
+  text-wrap: nowrap;
   overflow-wrap: normal;
 }
 
@@ -3031,7 +3040,9 @@
   }
 
   .page .journeyColumns {
-    max-width: 420px;
+    width: calc(100% - 24px);
+    max-width: 300px;
+    margin-inline: auto;
     grid-template-columns: minmax(0, 1fr);
     gap: 16px;
   }
@@ -3142,5 +3153,59 @@
 
   .page .benefitItem p {
     line-height: 24px;
+  }
+}
+
+/* Apply the accent only to the marked last word in main headings. */
+.page h1 .blueText,
+.page h2 .blueText {
+  color: var(--blue);
+  font: inherit;
+  letter-spacing: inherit;
+}
+
+/* Widen only the polygon frame slightly; keep its text and line breaks. */
+.page .goalCard .hexagonSvg {
+  transform: scaleX(1.08);
+  transform-origin: center;
+}
+.mobileHeadingTail {
+  display: inline;
+}
+@media (max-width: 767px) {
+  .page .adaptiveCopy .mobileHeadingTail {
+    display: block;
+    white-space: nowrap;
+  }
+  .page .adaptiveList {
+    width: 100%;
+    max-width: 420px;
+    margin-inline: auto;
+  }
+  .page .adaptiveItem {
+    min-height: 48px;
+    grid-template-columns: 48px minmax(0, 1fr);
+    column-gap: 12px;
+  }
+  .page .adaptiveIconCircle {
+    width: 48px;
+    height: 48px;
+    flex-basis: 48px;
+  }
+  .page .adaptiveIconCircle > span {
+    width: 36px;
+    height: 36px;
+  }
+  .page .adaptiveIconCircle img {
+    width: 26px;
+    height: 26px;
+  }
+  .page .adaptiveItem p {
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0;
+    white-space: nowrap;
+    overflow-wrap: normal;
+    text-align: left;
   }
 }

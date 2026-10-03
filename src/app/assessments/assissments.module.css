@@ -8248,3 +8248,222 @@ button.requestADemoWrapper::-moz-focus-inner {
     transform: none !important;
   }
 }
+
+/* =========================================================
+   FINAL MOBILE CORRECTIONS — HERO SPACING/TYPOGRAPHY,
+   CONSISTENT 2-LINE CARD TITLES, HIDE AUDIENCE ARROWS
+   ========================================================= */
+@media screen and (max-width: 767px) {
+
+  /* HERO: clean centered spacing, 24px heading, 16px subtext. */
+  .assessments.assessments.assessments > .frameParent2 {
+    transform: none !important;
+    margin-top: 12px !important;
+  }
+
+  .assessments.assessments.assessments .frameParent2 .frameParent3 {
+    width: calc(100% - 20px) !important;
+    max-width: 350px !important;
+    margin: 0 auto !important;
+    gap: 24px !important;
+    align-items: center !important;
+    text-align: center !important;
+  }
+
+  .assessments.assessments.assessments .frameParent2 .frameParent4 {
+    gap: 16px !important;
+    align-items: center !important;
+    text-align: center !important;
+  }
+
+  .assessments.assessments.assessments .frameParent2 .frameParent5 {
+    gap: 16px !important;
+    align-items: center !important;
+    text-align: center !important;
+  }
+
+  .assessments.assessments.assessments .frameParent2 .moreThan60Container {
+    width: 100% !important;
+    max-width: 340px !important;
+    margin: 0 auto !important;
+    padding: 0 !important;
+    font-size: 24px !important;
+    line-height: 31px !important;
+    letter-spacing: 0.01em !important;
+    text-align: center !important;
+    transform: none !important;
+  }
+
+  .assessments.assessments.assessments .frameParent2 .neurolxpOffers60 {
+    width: 100% !important;
+    max-width: 340px !important;
+    margin: 0 auto !important;
+    padding: 0 !important;
+    font-size: 16px !important;
+    line-height: 24px !important;
+    letter-spacing: 0.01em !important;
+    text-align: center !important;
+    transform: none !important;
+  }
+
+  .assessments.assessments.assessments .frameParent2 .frameWrapper2 {
+    margin: 0 auto !important;
+    transform: none !important;
+  }
+
+  /* BENEFIT CARDS: every title = exactly two centered lines. */
+  .assessments.assessments.assessments .frameParent10
+    :is(.interactiveAndEngaging, .alignedWithLearning, .onlineRemote, .scalableForEducation, .idealForExams) {
+    width: calc(100% - 36px) !important;
+    max-width: 290px !important;
+    font-size: 18px !important;
+    line-height: 26px !important;
+    text-align: center !important;
+  }
+
+  .assessments.assessments.assessments .frameParent10
+    :is(.interactiveAndEngaging, .alignedWithLearning, .onlineRemote, .scalableForEducation, .idealForExams) > span {
+    display: block !important;
+    white-space: nowrap !important;
+  }
+
+  /* AI CARDS: every title = exactly two centered lines. */
+  .assessments.assessments.assessments .assessmentsInner
+    :is(.generateExamQuestions, .createPracticeQuizzes, .recommendSmartQuestions, .enableAdaptiveTesting) {
+    width: 100% !important;
+    max-width: 240px !important;
+    min-height: 52px !important;
+    margin: 0 auto !important;
+    font-size: 18px !important;
+    line-height: 26px !important;
+    text-align: center !important;
+  }
+
+  .assessments.assessments.assessments .assessmentsInner
+    :is(.generateExamQuestions, .createPracticeQuizzes, .recommendSmartQuestions, .enableAdaptiveTesting) > span {
+    display: block !important;
+    white-space: nowrap !important;
+  }
+
+  /* MOBILE ONLY: remove the left/right audience carousel arrows and connector. */
+  .assessments.assessments.assessments .audienceControls {
+    display: none !important;
+  }
+}
+
+/* =========================================================
+   FINAL MOBILE SPACING + 24PX SECTION HEADING CORRECTIONS
+   ========================================================= */
+@media screen and (max-width: 767px) {
+
+  /* 1) HERO: reduce the large empty space below the breadcrumb. */
+  .assessments.assessments.assessments > .frameParent2 {
+    margin-top: -48px !important;
+  }
+
+  /* Keep the hero content compact and vertically consistent. */
+  .assessments.assessments.assessments > .frameParent2 > .ellipseParent {
+    min-height: 520px !important;
+    height: auto !important;
+  }
+
+  /* 2) WHY ASSESSMENTS MATTER:
+        restore the requested 24px main heading on mobile.
+        The older container-query rule was shrinking it too much. */
+  .assessments.assessments.assessments
+    .frameParent10
+    .modernLmsAssessments {
+    width: calc(100% - 16px) !important;
+    max-width: 350px !important;
+    margin: 0 auto !important;
+    padding: 0 !important;
+
+    font-size: 24px !important;
+    line-height: 31px !important;
+    letter-spacing: 0 !important;
+
+    white-space: normal !important;
+    text-wrap: balance !important;
+    overflow-wrap: normal !important;
+    word-break: normal !important;
+    text-align: center !important;
+  }
+
+  /* Keep its supporting copy at the requested 16px. */
+  .assessments.assessments.assessments
+    .frameParent10
+    .interactiveGamifiedAnd {
+    font-size: 16px !important;
+    line-height: 24px !important;
+  }
+
+  /* 3) FINAL CTA:
+        the arrows are hidden, so remove the unused carousel control space
+        and reduce the gap before "A Smarter LMS for Digital Learning". */
+  .assessments.assessments.assessments
+    > :is(.frameParent45, .audienceSection)
+    .audienceCarouselViewport {
+    min-height: 0 !important;
+    height: auto !important;
+    padding-bottom: 0 !important;
+  }
+
+  .assessments.assessments.assessments
+    > :is(.frameParent45, .audienceSection) {
+    padding-bottom: 0 !important;
+  }
+
+  .assessments.assessments.assessments > .frameParent49 {
+    margin-top: 12px !important;
+  }
+}
+
+/* =========================================================
+   FINAL MOBILE FIX — HERO GAP + CAROUSEL SHADOW/AUTO-SCROLL
+   ========================================================= */
+@media screen and (max-width: 767px) {
+
+  /* Reduce the empty space between the breadcrumb and hero badge. */
+  .assessments.assessments.assessments > .frameParent2 {
+    margin-top: -88px !important;
+  }
+
+  /* Keep carousel card shadows fully visible instead of clipping them
+     at the bottom edge of the viewport. */
+  .assessments.assessments.assessments
+    > :is(.frameParent45, .audienceSection)
+    .audienceCarouselViewport {
+    overflow-x: hidden !important;
+    padding-top: 12px !important;
+    padding-bottom: 16px !important;
+  }
+
+  /* Use one clean, consistent mobile shadow for every audience card. */
+  .assessments.assessments.assessments
+    .audienceCardSlot
+    .audienceCard,
+  .assessments.assessments.assessments
+    .audienceCardSlot
+    .audienceCardFeatured {
+    box-shadow:
+      -4px -4px 4px #ffffff,
+      4px 4px 4px rgba(196, 196, 196, 0.85) !important;
+  }
+
+  /* No hover lift on touch/mobile; keeps the bottom shadow stable. */
+  .assessments.assessments.assessments
+    .audienceCard:hover,
+  .assessments.assessments.assessments
+    .audienceCard:focus-visible {
+    transform: none !important;
+    box-shadow:
+      -4px -4px 4px #ffffff,
+      4px 4px 4px rgba(196, 196, 196, 0.85) !important;
+  }
+
+  /* Arrows remain hidden on mobile; cards continue auto-scrolling. */
+  .assessments.assessments.assessments .audienceControls {
+    display: none !important;
+  }
+}
+

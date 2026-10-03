@@ -6171,3 +6171,344 @@ flex-shrink:0;
     transition: none !important;
   }
 }
+
+/* =========================================================
+   FINAL MOBILE CONTENT ALIGNMENT FIXES
+   ========================================================= */
+
+/* Desktop/tablet: the explicit pathway line breaks stay disabled. */
+.mobileOnlyBreak {
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+
+  /* 1) Personalized Pathways — exactly two lines for every item. */
+  .careerPathwaysSkilling.careerPathwaysSkilling.careerPathwaysSkilling .mobileOnlyBreak {
+    display: block !important;
+  }
+
+  .careerPathwaysSkilling.careerPathwaysSkilling.careerPathwaysSkilling .pathwayItem {
+    min-height: 72px !important;
+    padding: 10px 14px !important;
+    gap: 10px !important;
+    font-size: 16px !important;
+    line-height: 22px !important;
+    align-items: center !important;
+  }
+
+  .careerPathwaysSkilling.careerPathwaysSkilling.careerPathwaysSkilling .pathwayItem > span {
+    flex: 1 !important;
+    width: auto !important;
+    min-width: 0 !important;
+    max-width: none !important;
+    white-space: normal !important;
+    line-height: 22px !important;
+  }
+
+  /* 2) Track panel — keep every item on one line with no overlap. */
+  .careerPathwaysSkilling.careerPathwaysSkilling.careerPathwaysSkilling .learningAnalytics .trackItem {
+    min-height: 42px !important;
+    gap: 10px !important;
+    align-items: center !important;
+    overflow: visible !important;
+  }
+
+  .careerPathwaysSkilling.careerPathwaysSkilling.careerPathwaysSkilling .learningAnalytics .trackItem > span {
+    display: block !important;
+    flex: 1 1 auto !important;
+    width: auto !important;
+    min-width: 0 !important;
+    max-width: none !important;
+    min-height: 0 !important;
+    margin: 0 !important;
+    font-size: 16px !important;
+    line-height: 22px !important;
+    white-space: nowrap !important;
+    text-wrap: nowrap !important;
+    overflow-wrap: normal !important;
+    word-break: keep-all !important;
+  }
+
+  /* 3) Target-audience carousel — remove arrows/navigation on mobile. */
+  .careerPathwaysSkilling.careerPathwaysSkilling.careerPathwaysSkilling .neurolxpNavigation {
+    display: none !important;
+  }
+
+  /* 4) Analytics checklist — keep labels on one line. */
+  .careerPathwaysSkilling.careerPathwaysSkilling.careerPathwaysSkilling
+    :is(.trackSkillAcquisition,
+        .identifyCompetencyGaps,
+        .monitorLearnerProgress,
+        .measureAssessmentPerformance,
+        .trackCredentials,
+        .evaluateCareerReadiness) {
+    flex: 1 1 auto !important;
+    width: auto !important;
+    min-width: 0 !important;
+    max-width: none !important;
+    height: auto !important;
+    font-size: 16px !important;
+    line-height: 22px !important;
+    white-space: nowrap !important;
+    overflow-wrap: normal !important;
+    word-break: keep-all !important;
+    text-align: left !important;
+  }
+
+  .careerPathwaysSkilling.careerPathwaysSkilling.careerPathwaysSkilling
+    .frameParent46 :is(.frameParent47, .frameParent48) {
+    width: 100% !important;
+    gap: 12px !important;
+    align-items: center !important;
+  }
+
+  /* 5) Analytics & Reporting — remove the oversized vertical gap. */
+  .careerPathwaysSkilling.careerPathwaysSkilling.careerPathwaysSkilling .frameParent44 {
+    gap: 18px !important;
+  }
+
+  .careerPathwaysSkilling.careerPathwaysSkilling.careerPathwaysSkilling .frameParent45 {
+    gap: 14px !important;
+  }
+
+  .careerPathwaysSkilling.careerPathwaysSkilling.careerPathwaysSkilling .learningAnalyticsHelp {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  /* 6) AI Recommendations — keep all labels on one line where they fit. */
+  .careerPathwaysSkilling.careerPathwaysSkilling.careerPathwaysSkilling .aiRecommendationItem {
+    min-height: 54px !important;
+    gap: 12px !important;
+  }
+
+  .careerPathwaysSkilling.careerPathwaysSkilling.careerPathwaysSkilling .aiRecommendationItem h3 {
+    flex: 1 1 auto !important;
+    width: auto !important;
+    min-width: 0 !important;
+    max-width: none !important;
+    margin: 0 !important;
+    font-size: 16px !important;
+    line-height: 22px !important;
+    white-space: nowrap !important;
+    overflow-wrap: normal !important;
+    word-break: keep-all !important;
+    text-align: left !important;
+  }
+}
+
+/* =========================================================
+   FINAL MOBILE OVERFLOW CORRECTIONS
+   ========================================================= */
+@media screen and (max-width: 767px) {
+
+  /* Hero main heading requested at 24px. */
+  .careerPathwaysSkilling.careerPathwaysSkilling.careerPathwaysSkilling
+    .frameParent2 .buildSkillsFollowContainer {
+    width: calc(100% - 16px) !important;
+    max-width: 350px !important;
+    margin-inline: auto !important;
+    font-size: 24px !important;
+    line-height: 1.3 !important;
+    overflow: visible !important;
+    overflow-wrap: normal !important;
+    word-break: normal !important;
+    text-align: center !important;
+  }
+
+  /* Analytics checklist: remove the legacy 429px width and keep every row
+     inside the mobile viewport. Longer labels may use two lines. */
+  .careerPathwaysSkilling.careerPathwaysSkilling.careerPathwaysSkilling .frameParent46 {
+    width: 100% !important;
+    max-width: 340px !important;
+    min-width: 0 !important;
+    margin-inline: auto !important;
+    box-sizing: border-box !important;
+  }
+
+  .careerPathwaysSkilling.careerPathwaysSkilling.careerPathwaysSkilling
+    .frameParent46 :is(.frameParent47, .frameParent48) {
+    width: 100% !important;
+    min-width: 0 !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+    overflow: visible !important;
+  }
+
+  .careerPathwaysSkilling.careerPathwaysSkilling.careerPathwaysSkilling
+    :is(.trackSkillAcquisition,
+        .identifyCompetencyGaps,
+        .monitorLearnerProgress,
+        .measureAssessmentPerformance,
+        .trackCredentials,
+        .evaluateCareerReadiness) {
+    flex: 1 1 0 !important;
+    width: auto !important;
+    min-width: 0 !important;
+    max-width: 100% !important;
+    font-size: 16px !important;
+    line-height: 22px !important;
+    white-space: normal !important;
+    text-wrap: pretty !important;
+    overflow-wrap: normal !important;
+    word-break: normal !important;
+    overflow: visible !important;
+  }
+
+  /* AI Recommendations heading: final word gets its own mobile line,
+     preventing the blue word from extending outside the card. */
+  .careerPathwaysSkilling.careerPathwaysSkilling.careerPathwaysSkilling .aiRecommendationsTitle {
+    width: 100% !important;
+    max-width: 320px !important;
+    margin-inline: auto !important;
+    padding-inline: 4px !important;
+    font-size: 28px !important;
+    line-height: 1.28 !important;
+    text-align: center !important;
+    overflow: visible !important;
+    overflow-wrap: normal !important;
+    word-break: normal !important;
+  }
+
+  /* AI recommendation rows: remove nowrap so the final long item can use
+     two lines instead of overflowing to the right. */
+  .careerPathwaysSkilling.careerPathwaysSkilling.careerPathwaysSkilling .aiRecommendationsList {
+    width: 100% !important;
+    max-width: 320px !important;
+    min-width: 0 !important;
+    margin-inline: auto !important;
+  }
+
+  .careerPathwaysSkilling.careerPathwaysSkilling.careerPathwaysSkilling .aiRecommendationItem {
+    width: 100% !important;
+    min-width: 0 !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+    overflow: visible !important;
+  }
+
+  .careerPathwaysSkilling.careerPathwaysSkilling.careerPathwaysSkilling .aiRecommendationItem h3 {
+    flex: 1 1 0 !important;
+    width: auto !important;
+    min-width: 0 !important;
+    max-width: 100% !important;
+    font-size: 16px !important;
+    line-height: 22px !important;
+    white-space: normal !important;
+    text-wrap: pretty !important;
+    overflow-wrap: normal !important;
+    word-break: normal !important;
+    overflow: visible !important;
+  }
+}
+
+/* =========================================================
+   MOBILE COMPACT ANALYTICS LIST + AI HEADING FIX
+   ========================================================= */
+@media screen and (max-width: 767px) {
+
+  /* FIRST SCREENSHOT: make the analytics checklist compact. */
+  .careerPathwaysSkilling.careerPathwaysSkilling.careerPathwaysSkilling .frameParent46 {
+    width: calc(100% - 20px) !important;
+    max-width: 315px !important;
+    margin-inline: auto !important;
+    gap: 6px !important;
+    align-items: stretch !important;
+  }
+
+  .careerPathwaysSkilling.careerPathwaysSkilling.careerPathwaysSkilling
+    .frameParent46 :is(.frameParent47, .frameParent48) {
+    width: 100% !important;
+    min-height: 48px !important;
+    height: auto !important;
+    padding-block: 2px !important;
+    gap: 10px !important;
+    align-items: center !important;
+  }
+
+  .careerPathwaysSkilling.careerPathwaysSkilling.careerPathwaysSkilling
+    .frameParent46 .frameChild54.analyticsCheckOuter {
+    width: 48px !important;
+    height: 48px !important;
+    min-width: 48px !important;
+    min-height: 48px !important;
+    flex: 0 0 48px !important;
+  }
+
+  .careerPathwaysSkilling.careerPathwaysSkilling.careerPathwaysSkilling
+    .frameParent46 .analyticsCheckInner {
+    width: 34px !important;
+    height: 34px !important;
+  }
+
+  .careerPathwaysSkilling.careerPathwaysSkilling.careerPathwaysSkilling
+    .frameParent46 .analyticsCheckIcon {
+    width: 24px !important;
+    height: 24px !important;
+  }
+
+  .careerPathwaysSkilling.careerPathwaysSkilling.careerPathwaysSkilling
+    :is(.trackSkillAcquisition,
+        .identifyCompetencyGaps,
+        .monitorLearnerProgress,
+        .measureAssessmentPerformance,
+        .trackCredentials,
+        .evaluateCareerReadiness) {
+    font-size: 16px !important;
+    line-height: 21px !important;
+    font-weight: 600 !important;
+    white-space: normal !important;
+    text-wrap: pretty !important;
+    overflow: visible !important;
+  }
+
+  /* SECOND SCREENSHOT: the title was still a flex row, so the blue word
+     was being pushed outside the card. Make it a normal text block on mobile. */
+  .careerPathwaysSkilling.careerPathwaysSkilling.careerPathwaysSkilling .aiRecommendationsTitle {
+    display: block !important;
+    width: 100% !important;
+    max-width: 300px !important;
+    height: auto !important;
+    margin: 0 auto !important;
+    padding: 0 !important;
+    font-size: 26px !important;
+    line-height: 34px !important;
+    text-align: center !important;
+    white-space: normal !important;
+    overflow: visible !important;
+    overflow-wrap: normal !important;
+    word-break: normal !important;
+  }
+
+  .careerPathwaysSkilling.careerPathwaysSkilling.careerPathwaysSkilling
+    .aiRecommendationsTitle .mobileOnlyBreak {
+    display: block !important;
+  }
+
+  .careerPathwaysSkilling.careerPathwaysSkilling.careerPathwaysSkilling .aiRecommendationsHeadingGroup {
+    width: 100% !important;
+    max-width: 320px !important;
+    margin-inline: auto !important;
+    align-items: center !important;
+  }
+}
+
+/* FINAL MOBILE LABEL FIX — keep the shortened subtexts on one line. */
+@media screen and (max-width: 767px) {
+  .careerPathwaysSkilling.careerPathwaysSkilling.careerPathwaysSkilling
+    :is(.trackSkillAcquisition,
+        .identifyCompetencyGaps,
+        .monitorLearnerProgress,
+        .measureAssessmentPerformance,
+        .trackCredentials,
+        .evaluateCareerReadiness) {
+    white-space: nowrap !important;
+  }
+
+  .careerPathwaysSkilling.careerPathwaysSkilling.careerPathwaysSkilling
+    .aiRecommendationItem h3 {
+    white-space: nowrap !important;
+  }
+}
+

@@ -1,7 +1,6 @@
 /* Blended Learning - complete replacement stylesheet.
    Buttons and badges match the supplied homepage CSS.
    Keep the existing page component and stylesheet import. */
-
 .blendedLearning {
   --page-bg: #dfe6e9;
   --text: #31344b;
@@ -14,7 +13,6 @@
   --raised: -4px -4px 4px #ffffff, 4px 4px 4px #c6c6c9;
   --inset: inset -4px -4px 4px #ffffff, inset 4px 4px 4px rgba(196, 196, 196, 0.8);
   --page-gutter: clamp(16px, 5.55vw, 80px);
-
   width: 100%;
   min-height: 100vh;
   position: relative;
@@ -29,13 +27,11 @@
   text-align: left;
   font-family: 'Segoe UI', 'Inter';
 }
-
 .blendedLearning *,
 .blendedLearning *::before,
 .blendedLearning *::after {
   box-sizing: border-box;
 }
-
 /* Breadcrumb */
 .blendedLearning .frameDiv {
   width: min(var(--content-width), calc(100% - (2 * var(--page-gutter))));
@@ -50,36 +46,30 @@
   font-size: clamp(13px, 1.11vw, 16px);
   line-height: 24px;
 }
-
 .blendedLearning .resourcesWrapper,
 .blendedLearning .homeParent,
 .blendedLearning .arrowRightDoubleGroup {
   display: flex;
   align-items: center;
 }
-
 .blendedLearning .homeParent,
 .blendedLearning .arrowRightDoubleGroup {
   gap: 8px;
 }
-
 .blendedLearning .useCases {
   position: relative;
   letter-spacing: 0.02em;
   line-height: 24px;
 }
-
 .blendedLearning .arrowRightDoubleGroup {
   color: #243fa8;
 }
-
 .blendedLearning .arrowDown01Icon {
   width: 16px;
   height: 16px;
   flex: 0 0 16px;
   position: relative;
 }
-
 /* Hero */
 .blendedLearning .blendedHero {
   width: min(var(--content-width), calc(100% - (2 * var(--page-gutter))));
@@ -89,7 +79,6 @@
   align-items: start;
   gap: clamp(32px, 4.3vw, 62px);
 }
-
 .blendedLearning .blendedHeroContent {
   width: 100%;
   min-width: 0;
@@ -100,29 +89,25 @@
   align-self: start;
   padding: 60px 0;
 }
-
 .blendedLearning .blendedHeroTitle {
   width: 100%;
   max-width: 100%;
   margin: 0;
   color: var(--text);
-  font-size: clamp(32px, 3.33vw, 48px);
+  font-size: 36px;
   line-height: 1.25;
   font-weight: 700;
   letter-spacing: 0.03em;
-  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  text-shadow: none;
 }
-
 .blendedLearning .blendedHeroTitleLine {
   display: block;
   width: 100%;
   white-space: normal;
 }
-
 .blendedLearning .blendedHeroTitleAccent {
   color: var(--blue);
 }
-
 .blendedLearning .blendedHeroDescription {
   width: 100%;
   max-width: 100%;
@@ -133,7 +118,6 @@
   font-weight: 400;
   letter-spacing: 0.03em;
 }
-
 .blendedLearning .blendedHeroVisual {
   width: 100%;
   min-width: 0;
@@ -141,7 +125,6 @@
   border-radius: clamp(20px, 2.22vw, 32px);
   background: var(--page-bg);
   box-shadow:
-
     inset -4px -4px 4px #ffffff,
     inset 4px 4px 4px #c4c4c4;
   overflow: hidden;
@@ -151,7 +134,6 @@
   justify-content: center;
   padding: clamp(18px, 2.22vw, 32px) clamp(16px, 2.08vw, 30px) clamp(18px, 1.94vw, 28px);
 }
-
 .blendedLearning .blendedHeroImages {
   width: 100%;
   max-width: 700px;
@@ -161,7 +143,6 @@
   align-items: center;
   gap: clamp(12px, 2.78vw, 40px);
 }
-
 .blendedLearning .blendedHeroImage {
   width: 100%;
   height: auto;
@@ -169,11 +150,9 @@
   border-radius: clamp(18px, 2.22vw, 32px);
   object-fit: cover;
   box-shadow:
-
     -4px -4px 4px #ffffff,
     4px 4px 4px #c4c4c4;
 }
-
 .blendedLearning .blendedHeroPlus {
   width: clamp(34px, 2.78vw, 40px);
   height: clamp(34px, 2.78vw, 40px);
@@ -185,7 +164,6 @@
   border-radius: 50%;
   background: var(--page-bg);
   box-shadow:
-
     -4px -4px 4px #ffffff,
     4px 4px 4px #c4c4c4;
   display: flex;
@@ -196,7 +174,6 @@
   line-height: 1;
   font-weight: 400;
 }
-
 .blendedLearning .blendedHeroEquation {
   width: 100%;
   margin: clamp(18px, 1.94vw, 28px) 0 0;
@@ -206,13 +183,11 @@
   font-weight: 700;
   letter-spacing: 0.03em;
   overflow-wrap: anywhere;
-  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+  filter: none;
 }
-
 .blendedLearning .blendedHeroEquationBlue { color: var(--blue); }
 .blendedLearning .blendedHeroEquationPink { color: var(--pink); }
 .blendedLearning .blendedHeroEquationEquals { color: var(--body-text); }
-
 .blendedLearning .blendedHeroEquationGradient {
   background: linear-gradient(90deg, #2d4cc8 57.21%, #bf1869);
   -webkit-background-clip: text;
@@ -220,7 +195,6 @@
   background-clip: text;
   color: transparent;
 }
-
 /* How it works */
 .blendedLearning .howItWorksSection {
   width: min(var(--content-width), calc(100% - (2 * var(--page-gutter))));
@@ -233,7 +207,6 @@
   padding: 0;
   min-width: 0;
 }
-
 .blendedLearning .howItWorksHeader {
   width: min(1103px, 100%);
   display: flex;
@@ -241,7 +214,6 @@
   align-items: center;
   margin-inline: auto;
 }
-
 /* Homepage inset badge: shared sizing, content-dependent width, no hover. */
 .blendedLearning .blendedHeroBadge,
 .blendedLearning .howItWorksBadge,
@@ -277,7 +249,6 @@
   transition: none;
   transform: none;
 }
-
 .blendedLearning .blendedHeroBadge:hover,
 .blendedLearning .howItWorksBadge:hover,
 .blendedLearning .blendedBenefitsBadge:hover,
@@ -287,22 +258,19 @@
   box-shadow: var(--inset);
   transform: none;
 }
-
 .blendedLearning .howItWorksTitle,
 .blendedLearning .blendedCtaTitle {
   margin: 24px 0 0;
   color: var(--text);
-  font-size: clamp(24px, 2.5vw, 36px);
+  font-size: 36px;
   line-height: 1.38;
   font-weight: 700;
   letter-spacing: 0.03em;
 }
-
 .blendedLearning .howItWorksTitleAccent,
 .blendedLearning .blendedCtaTitleAccent {
   color: var(--blue);
 }
-
 .blendedLearning .howItWorksDescription {
   margin: 16px 0 0;
   color: var(--body-text);
@@ -311,7 +279,6 @@
   font-weight: 400;
   letter-spacing: 0.03em;
 }
-
 .blendedLearning .howItWorksBody {
   width: 100%;
   margin-top: 32px;
@@ -322,7 +289,6 @@
   min-width: 0;
   margin-inline: auto;
 }
-
 .blendedLearning .howItWorksTimeline {
   width: 100%;
   min-height: 100%;
@@ -333,7 +299,6 @@
   justify-content: space-between;
   padding: clamp(8px, 1.25vw, 18px) 0;
 }
-
 .blendedLearning .howItWorksLine {
   position: absolute;
   top: clamp(28px, 2.64vw, 38px);
@@ -344,11 +309,9 @@
   border-radius: 28px;
   background: var(--page-bg);
   box-shadow:
-
     inset -4px -4px 4px #ffffff,
     inset 4px 4px 4px rgba(196, 196, 196, 0.8);
 }
-
 .blendedLearning .howItWorksIcon {
   width: clamp(52px, 5.55vw, 80px);
   height: clamp(52px, 5.55vw, 80px);
@@ -357,14 +320,12 @@
   border-radius: 50%;
   background: var(--page-bg);
   box-shadow:
-
     -4px -4px 4px #ffffff,
     4px 4px 4px #c4c4c4;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-
 .blendedLearning .howItWorksIcon::before {
   content: "";
   position: absolute;
@@ -372,7 +333,6 @@
   border: 2px solid currentColor;
   border-radius: 50%;
 }
-
 .blendedLearning .howItWorksIcon img {
   width: clamp(25px, 2.64vw, 38px);
   height: clamp(25px, 2.64vw, 38px);
@@ -380,13 +340,11 @@
   z-index: 1;
   object-fit: contain;
 }
-
 .blendedLearning .howItWorksIconPink { color: #a30e58; }
 .blendedLearning .howItWorksIconBlue { color: #2d55d2; }
 .blendedLearning .howItWorksIconPurple { color: #680879; }
 .blendedLearning .howItWorksIconGreen { color: #1f6408; }
 .blendedLearning .howItWorksIconWine { color: #590b31; }
-
 .blendedLearning .howItWorksCards {
   width: 100%;
   min-width: 0;
@@ -394,7 +352,6 @@
   flex-direction: column;
   gap: 32px;
 }
-
 .blendedLearning .howItWorksCard {
   width: 100%;
   min-width: 0;
@@ -403,7 +360,6 @@
   border-radius: 16px;
   background: var(--page-bg);
   box-shadow:
-
     inset -4px -4px 4px #ffffff,
     inset 4px 4px 4px rgba(196, 196, 196, 0.8);
   display: flex;
@@ -411,7 +367,6 @@
   align-items: flex-start;
   text-align: left;
 }
-
 .blendedLearning .howItWorksChallenge {
   margin: 0;
   color: var(--challenge-color);
@@ -420,7 +375,6 @@
   font-weight: 700;
   letter-spacing: 0.03em;
 }
-
 .blendedLearning .howItWorksCard h3 {
   margin: clamp(14px, 1.67vw, 24px) 0 0;
   color: var(--text);
@@ -429,7 +383,6 @@
   font-weight: 700;
   letter-spacing: 0.03em;
 }
-
 .blendedLearning .howItWorksProblem {
   margin: clamp(10px, 1.11vw, 16px) 0 0;
   color: var(--body-text);
@@ -438,7 +391,6 @@
   font-weight: 400;
   letter-spacing: 0.03em;
 }
-
 .blendedLearning .howItWorksSolution {
   width: 100%;
   min-height: clamp(86px, 6.94vw, 100px);
@@ -449,12 +401,10 @@
   border-radius: 16px;
   background: var(--page-bg);
   box-shadow:
-
     -4px -4px 4px #ffffff,
     4px 4px 4px #c4c4c4;
   min-width: 0;
 }
-
 .blendedLearning .howItWorksSolution strong {
   display: block;
   color: #2d55d2;
@@ -463,7 +413,6 @@
   font-weight: 700;
   letter-spacing: 0.03em;
 }
-
 .blendedLearning .howItWorksSolution p {
   margin: 8px 0 0;
   color: var(--body-text);
@@ -472,13 +421,11 @@
   font-weight: 400;
   letter-spacing: 0.02em;
 }
-
 .blendedLearning .howItWorksCardPink { --challenge-color: #a30e58; }
 .blendedLearning .howItWorksCardBlue { --challenge-color: #2d55d2; }
 .blendedLearning .howItWorksCardPurple { --challenge-color: #680879; }
 .blendedLearning .howItWorksCardGreen { --challenge-color: #1f6408; }
 .blendedLearning .howItWorksCardWine { --challenge-color: #590b31; }
-
 /* Benefits */
 .blendedLearning .blendedBenefitsSection {
   width: min(var(--content-width), calc(100% - (2 * var(--page-gutter))));
@@ -489,14 +436,11 @@
   border-radius: clamp(20px, 2.22vw, 32px);
   background: var(--page-bg);
   isolation: isolate;
-
   /* Balanced neumorphic edge — same visual strength as the other sections. */
   box-shadow:
-
     -4px -4px 4px rgba(255, 255, 255, 0.72),
     4px 4px 4px rgba(196, 196, 196, 0.68);
 }
-
 /* Keep the recessed border visible without creating a wide white halo. */
 .blendedLearning .blendedBenefitsSection::after {
   content: "";
@@ -506,11 +450,9 @@
   pointer-events: none;
   border-radius: inherit;
   box-shadow:
-
     inset 4px 4px 4px rgba(196, 196, 196, 0.52),
     inset -4px -4px 4px rgba(255, 255, 255, 0.58);
 }
-
 .blendedLearning .blendedBenefitsBackground {
   position: absolute !important;
   inset: 0 !important;
@@ -523,7 +465,6 @@
   display: block !important;
   pointer-events: none;
 }
-
 .blendedLearning .blendedBenefitsContent {
   position: relative;
   z-index: 1;
@@ -536,7 +477,6 @@
   gap: clamp(24px, 3vw, 40px);
   padding: clamp(24px, 3.47vw, 50px);
 }
-
 .blendedLearning .blendedBenefitsIntro {
   min-width: 0;
   display: flex;
@@ -545,20 +485,18 @@
   gap: 24px;
   width: 100%;
 }
-
 .blendedLearning .blendedBenefitsTitle {
   width: 100%;
   max-width: 100%;
   margin: 0;
   color: var(--text);
-  font-size: clamp(30px, 2.5vw, 36px);
+  font-size: 36px;
   line-height: 1.24;
   font-weight: 700;
   letter-spacing: 0.03em;
-  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.22);
+  text-shadow: none;
   white-space: normal;
 }
-
 .blendedLearning .blendedBenefitsDescription {
   margin: 0;
   color: var(--body-text);
@@ -569,7 +507,6 @@
   max-width: 100%;
   white-space: normal;
 }
-
 .blendedLearning .blendedBenefitsList {
   width: 100%;
   min-width: 0;
@@ -577,7 +514,6 @@
   flex-direction: column;
   gap: clamp(14px, 1.53vw, 22px);
 }
-
 .blendedLearning .blendedBenefitItem {
   width: 100%;
   min-width: 0;
@@ -586,7 +522,6 @@
   align-items: center;
   gap: clamp(12px, 1.11vw, 16px);
 }
-
 .blendedLearning .blendedBenefitIcon {
   width: clamp(58px, 4.86vw, 70px);
   height: clamp(58px, 4.86vw, 70px);
@@ -595,14 +530,12 @@
   border-radius: 50%;
   background: var(--page-bg);
   box-shadow:
-
     inset -4px -4px 4px #ffffff,
     inset 4px 4px 4px rgba(196, 196, 196, 0.82);
   display: flex;
   align-items: center;
   justify-content: center;
 }
-
 .blendedLearning .blendedBenefitIcon::before {
   content: "";
   position: absolute;
@@ -610,11 +543,9 @@
   border-radius: 50%;
   background: var(--page-bg);
   box-shadow:
-
     -4px -4px 4px rgba(255, 255, 255, 0.98),
     4px 4px 4px rgba(196, 196, 196, 0.88);
 }
-
 .blendedLearning .blendedBenefitIcon img {
   width: clamp(30px, 2.64vw, 38px);
   height: clamp(30px, 2.64vw, 38px);
@@ -622,7 +553,6 @@
   z-index: 1;
   object-fit: contain;
 }
-
 .blendedLearning .blendedBenefitItem p {
   min-width: 0;
   margin: 0;
@@ -632,16 +562,14 @@
   font-weight: 600;
   letter-spacing: 0.03em;
   overflow-wrap: anywhere;
-  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.22);
+  text-shadow: none;
 }
-
 .blendedLearning .blendedBenefitIconBlue { color: #2d55d2; }
 .blendedLearning .blendedBenefitIconPink { color: #a30e58; }
 .blendedLearning .blendedBenefitIconPurple { color: #680879; }
 .blendedLearning .blendedBenefitIconOrange { color: #c45200; }
 .blendedLearning .blendedBenefitIconGold { color: #9c7a00; }
 .blendedLearning .blendedBenefitIconWine { color: #590b31; }
-
 /* CTA */
 .blendedLearning .blendedCtaSection {
   width: min(var(--content-width), calc(100% - (2 * var(--page-gutter))));
@@ -652,7 +580,6 @@
   color: var(--text);
   text-align: center;
 }
-
 .blendedLearning .blendedCtaHeader {
   width: min(1103px, 100%);
   display: flex;
@@ -660,12 +587,10 @@
   align-items: center;
   margin-inline: auto;
 }
-
 .blendedLearning .blendedCtaTitle {
   margin-top: 24px;
-  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.22);
+  text-shadow: none;
 }
-
 .blendedLearning .blendedCtaDescription {
   margin: clamp(12px, 1.39vw, 20px) 0 0;
   color: var(--body-text);
@@ -674,7 +599,6 @@
   font-weight: 400;
   letter-spacing: 0.03em;
 }
-
 .blendedLearning .blendedCtaButton {
   min-width: 0;
   min-height: 0;
@@ -705,18 +629,15 @@
   user-select: text;
   appearance: none;
 }
-
 .blendedLearning .blendedCtaButton:hover {
   box-shadow: var(--inset);
 }
-
 .blendedLearning .blendedCtaImageFrame {
   width: 100%;
   margin-top: 32px;
   display: flex;
   justify-content: center;
 }
-
 .blendedLearning .blendedCtaImageShell {
   width: 100%;
   aspect-ratio: 1280 / 726;
@@ -726,11 +647,9 @@
   border-radius: 50%;
   background: var(--page-bg);
   box-shadow:
-
     inset -4px -4px 4px rgba(255, 255, 255, 0.96),
     inset 4px 4px 4px rgba(196, 196, 196, 0.9);
 }
-
 .blendedLearning .blendedCtaImage {
   width: 100%;
   height: 100%;
@@ -738,7 +657,6 @@
   object-fit: cover;
   border-radius: 50%;
 }
-
 /* Selectable copy and predictable shrinking within all page columns. */
 .blendedLearning * { min-width: 0; font-family: inherit; }
 .blendedLearning :where(h1, h2, h3, p, b, strong, span, button, a) {
@@ -751,7 +669,6 @@
   outline: 3px solid var(--blue);
   outline-offset: 4px;
 }
-
 /* A modal-trigger wrapper must not add a second button background. */
 .blendedLearning .blendedCtaHeader > button:has(> .blendedCtaButton) {
   appearance: none;
@@ -777,7 +694,6 @@
   outline: 3px solid var(--blue);
   outline-offset: 4px;
 }
-
 /* Side-by-side challenge and solution; both columns may shrink and wrap. */
 @media (min-width: 901px) {
   .blendedLearning .howItWorksCard {
@@ -799,12 +715,10 @@
     align-self: center;
   }
 }
-
 /* Homepage tablet button size. */
 @media (max-width: 1023px) {
   .blendedLearning .blendedCtaButton { font-size: 20px; }
 }
-
 @media (max-width: 900px) {
   .blendedLearning .blendedHeroImages {
     width: min(100%, 420px);
@@ -815,14 +729,12 @@
     align-items: center;
     row-gap: clamp(18px, 4vw, 24px);
   }
-
   .blendedLearning .blendedHeroImage {
     width: min(100%, 320px);
     max-width: 320px;
     aspect-ratio: 1;
     justify-self: center;
   }
-
   .blendedLearning .blendedHeroPlus {
     position: relative;
     top: auto;
@@ -837,15 +749,12 @@
     line-height: 1;
     padding: 0 0 3px;
   }
-
   .blendedLearning .blendedHeroImage:first-child {
     grid-row: 1;
   }
-
   .blendedLearning .blendedHeroImage:last-child {
     grid-row: 3;
   }
-
   .blendedLearning .blendedHero { gap: 32px; }
   .blendedLearning .blendedHeroContent,
 .blendedLearning .blendedBenefitsIntro {
@@ -864,7 +773,6 @@
   .blendedLearning .howItWorksCard { min-height: 0; padding: 24px; }
   .blendedLearning .howItWorksSolution { min-height: 0; margin-top: 24px; }
 }
-
 /* Homepage mobile controls, with safe wrapping for the longer hero badge. */
 @media (max-width: 767px) {
   .blendedLearning { --page-gutter: 16px; }
@@ -895,7 +803,133 @@
 .blendedLearning .howItWorksSolution p { width: 100%; text-align: center; }
   .blendedLearning .blendedBenefitsContent { padding: 24px 20px; }
 }
-
 @media (prefers-reduced-motion: reduce) {
   .blendedLearning .blendedCtaButton { transition: none; }
+}
+
+/* Heading and mobile layout corrections. Existing accent spans stay blue.
+   Wrap any unmarked final heading word in blendedHeadingAccent in the JSX. */
+.blendedLearning .blendedHeadingAccent,
+.blendedLearning .blendedBenefitsTitleAccent { color: var(--blue); }
+
+.blendedLearning :is(.blendedHeroTitle, .howItWorksTitle, .blendedBenefitsTitle, .blendedCtaTitle),
+.blendedLearning .howItWorksCard h3 {
+  max-width: 100%;
+  white-space: normal;
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 900px) {
+  .blendedLearning .blendedHero,
+  .blendedLearning .blendedBenefitsContent {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .blendedLearning .blendedHeroContent { padding: 0; }
+}
+
+@media (max-width: 767px) {
+  .blendedLearning :is(.blendedHeroTitle, .howItWorksTitle, .blendedBenefitsTitle, .blendedCtaTitle) {
+    font-size: 24px;
+    line-height: 1.35;
+  }
+  .blendedLearning .blendedHero { margin-top: 24px; gap: 24px; }
+  .blendedLearning .blendedHeroVisual { min-height: 0; }
+  .blendedLearning .howItWorksHeader,
+  .blendedLearning .blendedCtaHeader { min-width: 0; }
+  .blendedLearning .howItWorksBody { margin-top: 24px; }
+  .blendedLearning .howItWorksCard h3 { margin-top: 12px; }
+  .blendedLearning .howItWorksSolution { margin-top: 16px; }
+  .blendedLearning .blendedBenefitsContent { gap: 24px; }
+  .blendedLearning .blendedBenefitItem { align-items: center; }
+  .blendedLearning .blendedCtaImageFrame { margin-top: 24px; }
+}
+
+/* Give the challenge copy enough room on narrow phones. */
+@media (max-width: 374px) {
+  .blendedLearning .howItWorksBody { grid-template-columns: 40px minmax(0, 1fr); gap: 10px; }
+  .blendedLearning .howItWorksIcon { width: 40px; height: 40px; }
+  .blendedLearning .howItWorksIcon img { width: 22px; height: 22px; }
+  .blendedLearning .howItWorksIcon::before { inset: 5px; }
+  .blendedLearning .howItWorksCard { padding: 20px 12px; }
+  .blendedLearning .blendedBenefitsContent { padding: 24px 16px; }
+}
+
+/* Screenshot corrections: clear text and room around the plus symbol. */
+.blendedLearning,
+.blendedLearning *,
+.blendedLearning *::before,
+.blendedLearning *::after {
+  text-shadow: none !important;
+}
+.blendedLearning .blendedHeroEquation { filter: none; }
+
+/* Reserve a full centre column, including space for the circle's shadow. */
+@media (min-width: 901px) {
+  .blendedLearning .blendedHeroImages {
+    grid-template-columns: minmax(0, 1fr) 40px minmax(0, 1fr);
+    column-gap: 16px;
+  }
+  .blendedLearning .blendedHeroImage:first-child { grid-column: 1; grid-row: 1; }
+  .blendedLearning .blendedHeroImage:last-child { grid-column: 3; grid-row: 1; }
+  .blendedLearning .blendedHeroPlus {
+    position: relative;
+    inset: auto;
+    transform: none;
+    grid-column: 2;
+    grid-row: 1;
+    justify-self: center;
+    align-self: center;
+    margin: 0;
+  }
+}
+@media (max-width: 900px) {
+  .blendedLearning .blendedHeroImages { row-gap: 24px; }
+  .blendedLearning .blendedHeroPlus { margin-block: 4px; }
+}
+
+/* Apply this class to the NeuroLXP word in the Benefits text. */
+.blendedLearning .blendedBenefitsBrand {
+  color: var(--blue);
+  -webkit-text-fill-color: var(--blue);
+  font-size: inherit;
+  font-weight: inherit;
+  text-shadow: none;
+}
+
+/* Natural wrapping replaces forced breaks in the two marked descriptions. */
+.blendedLearning .howItWorksProblem,
+.blendedLearning .blendedBenefitsDescription {
+  white-space: normal;
+  word-break: normal;
+  overflow-wrap: normal;
+  text-wrap: balance;
+  max-width: 100%;
+  height: auto;
+}
+.blendedLearning .howItWorksProblem br,
+.blendedLearning .blendedBenefitsDescription br { display: none; }
+
+@media (max-width: 767px) {
+  .blendedLearning .howItWorksBody {
+    grid-template-columns: 40px minmax(0, 1fr);
+    column-gap: 8px;
+  }
+  .blendedLearning .howItWorksIcon { width: 40px; height: 40px; }
+  .blendedLearning .howItWorksIcon img { width: 22px; height: 22px; }
+  .blendedLearning .howItWorksIcon::before { inset: 5px; }
+  .blendedLearning .howItWorksCard { padding-inline: 12px; }
+  .blendedLearning .blendedBenefitsContent { padding-inline: 16px; }
+  .blendedLearning .blendedBenefitsDescription { width: 100%; }
+}
+
+/* Keep Benefits in two columns on desktop and visibly inset the list. */
+@media (min-width: 1024px) {
+  .blendedLearning .blendedBenefitsContent {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  }
+  .blendedLearning .blendedBenefitsList {
+    margin-left: 48px;
+    width: calc(100% - 48px);
+    min-width: 0;
+  }
 }

@@ -1,12 +1,10 @@
 "use client";
-
 import { useEffect, useRef, useState, type ReactElement, type CSSProperties } from "react";
 import { useRouter } from "next/navigation";
 import Image from "next/image";
 import Header from "../../components/Header/header";
 import Footer from "../../components/Footer/footer";
 import styles from "./personalized_learning_paths.module.css";
-
 function ArrowRightDouble() {
   return (
     <svg width="16" height="16" viewBox="0 0 16 16" fill="none" className={styles["plp-breadcrumb-arrow"]} aria-hidden="true" focusable="false">
@@ -15,7 +13,6 @@ function ArrowRightDouble() {
     </svg>
   );
 }
-
 type StageData = {
   number: string;
   color: string;
@@ -29,7 +26,6 @@ type StageData = {
   modules: number;
   duration: string;
 };
-
 const stages: StageData[] = [
   {
     number: "01",
@@ -84,7 +80,6 @@ const stages: StageData[] = [
     duration: "6 weeks",
   },
 ];
-
 function CheckCircle({ color, size = 24 }: { color: string; size?: number }) {
   return (
     <svg width={size} height={size} viewBox="0 0 24 24" fill="none" className={styles["plp-check-icon"]} aria-hidden="true" focusable="false">
@@ -93,7 +88,6 @@ function CheckCircle({ color, size = 24 }: { color: string; size?: number }) {
     </svg>
   );
 }
-
 function ArrowRightBig({ color }: { color: string }) {
   return (
     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" className={styles["plp-stage-arrow"]} aria-hidden="true" focusable="false">
@@ -101,7 +95,6 @@ function ArrowRightBig({ color }: { color: string }) {
     </svg>
   );
 }
-
 function CheckCircleOutline({ color }: { color: string }) {
   return (
     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" className={styles["plp-check-icon"]} aria-hidden="true" focusable="false">
@@ -110,7 +103,6 @@ function CheckCircleOutline({ color }: { color: string }) {
     </svg>
   );
 }
-
 function ChevronDouble() {
   return (
     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false">
@@ -119,7 +111,6 @@ function ChevronDouble() {
     </svg>
   );
 }
-
 function ClipboardCheckIcon({ color }: { color: string }) {
   return (
     <svg width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true" focusable="false">
@@ -129,7 +120,6 @@ function ClipboardCheckIcon({ color }: { color: string }) {
     </svg>
   );
 }
-
 function AnalyticsUpIcon({ color }: { color: string }) {
   return (
     <svg width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true" focusable="false">
@@ -139,7 +129,6 @@ function AnalyticsUpIcon({ color }: { color: string }) {
     </svg>
   );
 }
-
 function UserIcon({ color }: { color: string }) {
   return (
     <svg width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true" focusable="false">
@@ -148,7 +137,6 @@ function UserIcon({ color }: { color: string }) {
     </svg>
   );
 }
-
 function RefreshIcon({ color }: { color: string }) {
   return (
     <svg width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true" focusable="false">
@@ -159,7 +147,6 @@ function RefreshIcon({ color }: { color: string }) {
     </svg>
   );
 }
-
 function ActivityIcon({ color }: { color: string }) {
   return (
     <svg width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true" focusable="false">
@@ -167,7 +154,6 @@ function ActivityIcon({ color }: { color: string }) {
     </svg>
   );
 }
-
 function TargetIcon({ color }: { color: string }) {
   return (
     <svg width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true" focusable="false">
@@ -177,12 +163,10 @@ function TargetIcon({ color }: { color: string }) {
     </svg>
   );
 }
-
 function MasteryRing({ percent, color }: { percent: number; color: string }) {
   const radius = 78;
   const circumference = 2 * Math.PI * radius;
   const offset = circumference - (percent / 100) * circumference;
-
   return (
     <div className={styles["plp-mastery-ring-base"]}>
       <div className={styles["plp-mastery-ring"]}>
@@ -200,7 +184,6 @@ function MasteryRing({ percent, color }: { percent: number; color: string }) {
     </div>
   );
 }
-
 function StageCard({ stage }: { stage: StageData }) {
   return (
     <div className={styles["plp-stage-row"]}>
@@ -213,7 +196,6 @@ function StageCard({ stage }: { stage: StageData }) {
           </div>
         </div>
       </div>
-
       <div className={styles["plp-stage-card"]}>
         <div className={styles["plp-stage-content"]}>
           <span className={styles["plp-stage-label"]} style={{ color: stage.color }}>
@@ -221,7 +203,6 @@ function StageCard({ stage }: { stage: StageData }) {
           </span>
           <h3 className={styles["plp-stage-title"]}>{stage.title}</h3>
           <p className={styles["plp-stage-subtitle"]}>{stage.subtitle}</p>
-
           <ul className={styles["plp-stage-checklist"]}>
             {stage.checklist.map((item) => (
               <li key={item} className={styles["plp-stage-checklist-item"]} style={{ "--stage-accent": stage.color } as CSSProperties}>
@@ -230,19 +211,15 @@ function StageCard({ stage }: { stage: StageData }) {
               </li>
             ))}
           </ul>
-
           <div className={styles["plp-stage-divider"]} style={{ borderColor: stage.color }} />
-
           <div className={styles["plp-stage-note-row"]}>
             <ArrowRightBig color={stage.color} />
             <p className={styles["plp-stage-note"]}>{stage.note}</p>
           </div>
         </div>
-
         <div className={styles["plp-stage-side"]}>
           <div className={styles["plp-stage-ring-row"]}>
             <MasteryRing percent={stage.mastery} color={stage.color} />
-
             <ul className={styles["plp-stage-ring-checklist"]}>
               {stage.ringChecklist.map((item) => (
                 <li key={item} className={styles["plp-stage-ring-checklist-item"]}>
@@ -254,7 +231,6 @@ function StageCard({ stage }: { stage: StageData }) {
               ))}
             </ul>
           </div>
-
           <div className={styles["plp-stage-stats"]}>
             <div className={styles["plp-stage-stat"]}>
               <span className={styles["plp-stage-stat-value"]} style={{ color: stage.color }}>
@@ -274,7 +250,6 @@ function StageCard({ stage }: { stage: StageData }) {
     </div>
   );
 }
-
 type HowItWorksStep = {
   key: string;
   color: string;
@@ -282,7 +257,6 @@ type HowItWorksStep = {
   description: string;
   Icon: (props: { color: string }) => ReactElement;
 };
-
 const howItWorksSteps: HowItWorksStep[] = [
   { key: "assess", color: "#2D4CC8", title: "Assess", description: "Understand learner needs, knowledge, and goals.", Icon: ClipboardCheckIcon },
   { key: "analyse", color: "#BF1869", title: "Analyse", description: "Use learning data to identify progress and gaps.", Icon: AnalyticsUpIcon },
@@ -291,9 +265,7 @@ const howItWorksSteps: HowItWorksStep[] = [
   { key: "track", color: "#2A7308", title: "Track", description: "Monitor progress throughout the learning journey.", Icon: ActivityIcon },
   { key: "master", color: "#907507", title: "Master", description: "Build validated skills for real-world application.", Icon: TargetIcon },
 ];
-
 const challengeItems = ["Clear Milestones", "Logical Progression", "Competency Development", "Continuous Analytics"];
-
 type BenefitTab = {
   id: string;
   label: string;
@@ -302,7 +274,6 @@ type BenefitTab = {
   photoAlt: string;
   checklist: string[];
 };
-
 const benefitTabs: BenefitTab[] = [
   {
     id: "learners",
@@ -329,7 +300,6 @@ const benefitTabs: BenefitTab[] = [
     checklist: ["Standardized Learning Journeys", "Skill-based development", "Performance tracking", "Scalable training"],
   },
 ];
-
 function HowItWorksCard({ step, isOpen, onToggle }: { step: HowItWorksStep; isOpen: boolean; onToggle: () => void }) {
   const { Icon } = step;
   return (
@@ -347,8 +317,7 @@ function HowItWorksCard({ step, isOpen, onToggle }: { step: HowItWorksStep; isOp
           <ChevronDouble />
         </span>
       </button>
-
-      <div className={styles["plp-how-panel-wrap"]}>
+      <div className={styles["plp-how-panel-wrap"]} aria-hidden={!isOpen}>
         <div className={styles["plp-how-panel"]}>
           <div className={styles["plp-how-panel-inner"]}>
             <p className={styles["plp-how-panel-text"]}>{step.description}</p>
@@ -358,19 +327,24 @@ function HowItWorksCard({ step, isOpen, onToggle }: { step: HowItWorksStep; isOp
     </div>
   );
 }
-
 function BenefitsSection() {
   const [activeTabId, setActiveTabId] = useState("learners");
+  const [photoRatios, setPhotoRatios] = useState<Record<string, number>>({});
   const activeTab = benefitTabs.find((tab) => tab.id === activeTabId) ?? benefitTabs[0];
-
+  const recordPhotoRatio = (image: HTMLImageElement) => {
+    if (!image.naturalWidth || !image.naturalHeight) return;
+    const ratio = image.naturalWidth / image.naturalHeight;
+    setPhotoRatios((previous) =>
+      previous[activeTab.id] === ratio ? previous : { ...previous, [activeTab.id]: ratio },
+    );
+  };
   return (
     <section className={styles["plp-benefits"]}>
       <span className={styles["plp-hero-pill"]}>Benefits</span>
-
-      <h2 className={styles["plp-section-heading"]}>Benefits of Learning Paths</h2>
-
-      <p className={styles["plp-section-subtext"]}>Whether you are a learner, an academic institution, or a corporate training organization NeuroLXP Learning Paths deliver measurable, transformational impact.</p>
-
+      <div className={styles["plp-section-intro"]}>
+        <h2 className={styles["plp-section-heading"]}>Benefits of Learning <span className={styles["plp-section-heading-accent"]}>Paths</span></h2>
+        <p className={styles["plp-section-subtext"]}>Whether you are a learner, an academic institution, or a corporate training organization NeuroLXP Learning Paths deliver measurable, transformational impact.</p>
+      </div>
       <div className={styles["plp-benefits-tabs"]}>
         {benefitTabs.map((tab) => (
           <button key={tab.id} type="button" className={`${styles["plp-benefits-tab"]}${activeTabId === tab.id ? ` ${styles["plp-benefits-tab-active"]}` : ""}`} onClick={() => setActiveTabId(tab.id)} aria-pressed={activeTabId === tab.id}>
@@ -378,21 +352,25 @@ function BenefitsSection() {
           </button>
         ))}
       </div>
-
       <div className={styles["plp-benefits-outer"]}>
-        <div className={styles["plp-benefits-photo-wrap"]}>
-          {activeTab.imageStyle === "cutout" ? (
-            <>
-              <Image src="/images/personalised-learning-background.webp" alt="" fill className={styles["plp-benefits-pattern-bg"]} />
-              <div className={styles["plp-benefits-cutout-photo-wrap"]}>
-                <Image src={activeTab.photo} alt={activeTab.photoAlt} fill className={styles["plp-benefits-cutout-photo"]} />
-              </div>
-            </>
-          ) : (
-            <Image src={activeTab.photo} alt={activeTab.photoAlt} fill className={styles["plp-benefits-cover-photo"]} />
-          )}
+        <div
+          className={styles["plp-benefits-photo-wrap"]}
+          style={{
+            aspectRatio: photoRatios[activeTab.id] ?? 4 / 3,
+            padding: activeTab.id === "institutions" ? undefined : 0,
+          }}
+        >
+          <div
+            className={styles["plp-benefits-cutout-photo-wrap"]}
+            style={activeTab.id === "institutions" ? undefined : {
+              inset: 0,
+              borderRadius: "inherit",
+              overflow: "hidden",
+            }}
+          >
+            <Image key={activeTab.photo} src={activeTab.photo} alt={activeTab.photoAlt} fill className={styles["plp-benefits-cover-photo"]} onLoad={(event) => recordPhotoRatio(event.currentTarget)} />
+          </div>
         </div>
-
         <ul className={styles["plp-benefits-checklist-grid"]}>
           {activeTab.checklist.map((item) => (
             <li key={item} className={styles["plp-benefits-checklist-item"]}>
@@ -407,46 +385,42 @@ function BenefitsSection() {
     </section>
   );
 }
-
 export default function PersonalizedLearningPathsPage() {
   const [openSteps, setOpenSteps] = useState<Set<string>>(() => new Set());
   const howSectionRef = useRef<HTMLElement | null>(null);
-
-  const openStep = (key: string) => {
+  const toggleStep = (key: string) => {
     setOpenSteps((previous) => {
-      if (previous.has(key)) return previous;
-      return new Set(previous).add(key);
+      const next = new Set(previous);
+      if (next.has(key)) next.delete(key);
+      else next.add(key);
+      return next;
     });
   };
-
   useEffect(() => {
     const section = howSectionRef.current;
     if (!section) return;
-
     const closeSteps = () => {
       setOpenSteps((previous) => (previous.size === 0 ? previous : new Set<string>()));
     };
-
-    // Observe the whole section so moving between its cards keeps them open.
+    // Close once the section leaves the main viewing area, in either scroll direction.
+    // Observe the section, not individual cards, so moving between cards is safe.
     const observer = new IntersectionObserver(
       (entries) => {
         for (const entry of entries) {
           if (entry.target === section && !entry.isIntersecting) closeSteps();
         }
       },
-      { threshold: 0 },
+      { threshold: 0, rootMargin: "-12% 0px -12% 0px" },
     );
     observer.observe(section);
-
     // Reset when navigating or interacting with another page section, too.
     const handleSectionChange = (event: Event) => {
       const target = event.target;
       if (!(target instanceof Element) || section.contains(target)) return;
-      if (target.closest("section, header, footer, nav")) closeSteps();
+      closeSteps();
     };
     document.addEventListener("pointerdown", handleSectionChange, true);
     document.addEventListener("focusin", handleSectionChange, true);
-
     return () => {
       observer.disconnect();
       document.removeEventListener("pointerdown", handleSectionChange, true);
@@ -454,15 +428,12 @@ export default function PersonalizedLearningPathsPage() {
     };
   }, []);
   const router = useRouter();
-
   useEffect(() => {
     document.title = "Personalized Learning Paths | NeuroLXP";
   }, []);
-
   return (
     <>
       <Header />
-
       <main className={styles["plp-page"]}>
       <nav className={styles["plp-breadcrumb"]}>
         <span className={styles["plp-breadcrumb-item"]}>Features</span>
@@ -471,23 +442,20 @@ export default function PersonalizedLearningPathsPage() {
         <ArrowRightDouble />
         <span className={styles["plp-breadcrumb-current"]}>Personalized Learning Paths</span>
       </nav>
-
       <section className={styles["plp-hero"]}>
         <span className={styles["plp-hero-pill"]}>Personalized Learning Paths</span>
-
-        <h1 className={styles["plp-hero-heading"]}>
-          Empower <span className={styles["plp-hero-heading-accent"]}>Learning Journey</span> Tailored for Success
-        </h1>
-
-        <p className={styles["plp-hero-subtext"]}>NeuroLXP personalizes learning journeys to build skills, knowledge, and career readiness.</p>
-
+        <div className={styles["plp-section-intro"]}>
+          <h1 className={styles["plp-hero-heading"]}>
+            Empower <span className={styles["plp-hero-heading-accent"]}>Learning Journey</span> Tailored for Success
+          </h1>
+          <p className={styles["plp-hero-subtext"]}>NeuroLXP personalizes learning journeys to build skills, knowledge, and career readiness.</p>
+        </div>
         <div className={styles["plp-hero-visual"]}>
           <div className={styles["plp-hero-image-frame"]}>
             <div className={styles["plp-hero-image-wrap"]}>
               <Image src="/images/roommates-using-laptop.webp" alt="Learner using a laptop" fill className={styles["plp-hero-image"]} />
             </div>
           </div>
-
           <div className={styles["plp-hero-stats"]}>
             <div className={`${styles["plp-stat-card"]} ${styles["plp-stat-card-green"]}`}>
               <span className={`${styles["plp-stat-value"]} ${styles["plp-stat-green"]}`}>20–30%</span>
@@ -508,16 +476,14 @@ export default function PersonalizedLearningPathsPage() {
           </div>
         </div>
       </section>
-
       <section className={styles["plp-personalization"]}>
         <span className={styles["plp-hero-pill"]}>Intelligent Personalization</span>
-
-        <h2 className={styles["plp-section-heading"]}>
-          Learning Designed Around <span className={styles["plp-section-heading-accent"]}>Every Learner</span>
-        </h2>
-
-        <p className={styles["plp-section-subtext"]}>NeuroLXP adapts learning experiences based on learner needs, preferences, progress, and performance.</p>
-
+        <div className={styles["plp-section-intro"]}>
+          <h2 className={styles["plp-section-heading"]}>
+            Learning Designed Around Every <span className={styles["plp-section-heading-accent"]}>Learner</span>
+          </h2>
+          <p className={styles["plp-section-subtext"]}>NeuroLXP adapts learning experiences based on learner needs, preferences, progress, and performance.</p>
+        </div>
         <div className={styles["plp-personalization-grid"]}>
           <div className={`${styles["plp-personalization-card"]} ${styles["plp-personalization-card-pink"]}`}>
             <h3 className={`${styles["plp-personalization-title"]} ${styles["plp-title-pink"]}`}>Learning Insights</h3>
@@ -537,14 +503,12 @@ export default function PersonalizedLearningPathsPage() {
           </div>
         </div>
       </section>
-
       <section className={styles["plp-stages"]}>
         <span className={styles["plp-hero-pill"]}>Stages</span>
-
-        <h2 className={styles["plp-section-heading"]}>Four Progressive Stages of Mastery</h2>
-
-        <p className={styles["plp-section-subtext"]}>NeuroLXP builds knowledge and skills through structured stages toward career-ready performance.</p>
-
+        <div className={styles["plp-section-intro"]}>
+          <h2 className={styles["plp-section-heading"]}>Four Progressive Stages of <span className={styles["plp-section-heading-accent"]}>Mastery</span></h2>
+          <p className={styles["plp-section-subtext"]}>NeuroLXP builds knowledge and skills through structured stages toward career-ready performance.</p>
+        </div>
         <div className={styles["plp-stages-timeline"]}>
           <div className={styles["plp-stages-track"]} />
           {stages.map((stage) => (
@@ -552,28 +516,26 @@ export default function PersonalizedLearningPathsPage() {
           ))}
         </div>
       </section>
-
       <section ref={howSectionRef} className={styles["plp-how"]}>
         <span className={styles["plp-hero-pill"]}>How it Works</span>
-
-        <h2 className={styles["plp-section-heading"]}>Learning Style Analysis Module</h2>
-
-        <p className={styles["plp-section-subtext"]}>Learning style analysis identifies each learner&apos;s preferred learning style to deliver more effective and personalized learning.</p>
-
+        <div className={styles["plp-section-intro"]}>
+          <h2 className={styles["plp-section-heading"]}>Learning Style Analysis <span className={styles["plp-section-heading-accent"]}>Module</span></h2>
+          <p className={styles["plp-section-subtext"]}>Learning style analysis identifies each learner's preferred learning style to deliver more effective and personalized learning.</p>
+        </div>
         <div className={styles["plp-how-grid"]}>
           {howItWorksSteps.map((step) => (
-            <HowItWorksCard key={step.key} step={step} isOpen={openSteps.has(step.key)} onToggle={() => openStep(step.key)} />
+            <HowItWorksCard key={step.key} step={step} isOpen={openSteps.has(step.key)} onToggle={() => toggleStep(step.key)} />
           ))}
         </div>
       </section>
-
       <section className={styles["plp-challenge"]}>
         <div className={styles["plp-challenge-left"]}>
           <span className={styles["plp-hero-pill"]}>The Challenge</span>
-          <h2 className={styles["plp-challenge-heading"]}>Built for Measurable Progress</h2>
-          <p className={styles["plp-challenge-subtext"]}>NeuroLXP brings clarity, structure, and measurable progress to every learning journey.</p>
+          <div className={styles["plp-section-intro"]}>
+            <h2 className={styles["plp-challenge-heading"]}>Built for Measurable <span className={styles["plp-section-heading-accent"]}>Progress</span></h2>
+            <p className={styles["plp-challenge-subtext"]}>NeuroLXP brings clarity, structure, and measurable progress to every learning journey.</p>
+          </div>
         </div>
-
         <ul className={styles["plp-challenge-checklist"]}>
           {challengeItems.map((item) => (
             <li key={item} className={styles["plp-challenge-item"]}>
@@ -587,23 +549,19 @@ export default function PersonalizedLearningPathsPage() {
           ))}
         </ul>
       </section>
-
       <BenefitsSection />
-
       <section className={styles["plp-cta"]}>
         <div className={styles["plp-cta-inner"]}>
           <div className={styles["plp-cta-text"]}>
-            <h2 className={styles["plp-cta-heading"]}>The Future of Learning is Personalized</h2>
+            <h2 className={styles["plp-cta-heading"]}>The Future of Learning is <span className={styles["plp-section-heading-accent"]}>Personalized</span></h2>
             <p className={styles["plp-cta-subtext"]}>Transform fragmented learning into a structured journey that builds knowledge, skills, and career-ready capabilities.</p>
           </div>
-
           <button type="button" className={styles["plp-cta-button"]} onClick={() => router.push("/HomePage")}>
             Explore Learning Paths
           </button>
         </div>
       </section>
       </main>
-
       <Footer />
     </>
   );

@@ -7229,3 +7229,154 @@ button.limitsButton:active {
   margin-top: 24px !important;
   margin-bottom: 0 !important;
 }
+
+
+/* Mobile main headings and subtext sizes. */
+@media (max-width: 767.98px) {
+  .mobileLearning .mobileHeroTitle,
+  .mobileLearning .routineTitle,
+  .mobileLearning .microTitle,
+  .mobileLearning .interactiveTitle,
+  .mobileLearning .modernLearningTitle,
+  .mobileLearning .modernBuiltTitle,
+  .mobileLearning .limitsTitle {
+    font-size: 24px !important;
+  }
+
+  .mobileLearning .mobileHeroDescription,
+  .mobileLearning .routineSubtitle,
+  .mobileLearning .microDescription,
+  .mobileLearning .interactiveDescription,
+  .mobileLearning .modernLearningSubtitle,
+  .mobileLearning .modernBuiltDescription,
+  .mobileLearning .limitsDescription {
+    font-size: 16px !important;
+  }
+}
+
+
+/* Preserve full benefit text on desktop; use shorter labels only on mobile. */
+.mobileLearning .microBenefit > .microBenefitMobile {
+  display: none !important;
+}
+
+@media (max-width: 767.98px) {
+  /* Content determines the final oval's height, with safe curved-edge clearance. */
+  .mobileLearning.mobileLearning .limitsSection {
+    height: auto !important;
+    min-height: 420px !important;
+    flex-basis: auto !important;
+    padding: 64px 28px !important;
+  }
+
+  .mobileLearning.mobileLearning .limitsContent {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 0 !important;
+    gap: 0 !important;
+  }
+
+  .mobileLearning.mobileLearning .limitsTitle {
+    max-width: 240px !important;
+    font-size: 24px !important;
+    line-height: 32px !important;
+    text-wrap: balance;
+    white-space: normal !important;
+  }
+
+  .mobileLearning.mobileLearning .limitsDescription {
+    max-width: 264px !important;
+    font-size: 16px !important;
+    line-height: 24px !important;
+    text-wrap: balance;
+  }
+
+  /* Four single-line labels, without changing desktop wording or icon colors. */
+  .mobileLearning .microBenefit > .microBenefitDesktop {
+    display: none !important;
+  }
+
+  .mobileLearning .microBenefit > .microBenefitMobile {
+    display: block !important;
+    flex: 1 1 auto;
+    width: auto !important;
+    max-width: none !important;
+    min-width: 0 !important;
+    font-size: 16px !important;
+    line-height: 24px !important;
+    white-space: nowrap !important;
+    overflow-wrap: normal !important;
+    word-break: normal !important;
+    text-align: left !important;
+  }
+
+  .mobileLearning .microBenefit {
+    gap: 12px !important;
+    align-items: center !important;
+  }
+
+  /* Balanced two-line heading and description inside the Routine panel. */
+  .mobileLearning .routineHeader {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding-inline: 16px !important;
+    box-sizing: border-box !important;
+    text-align: center !important;
+  }
+
+  .mobileLearning .routineTitle,
+  .mobileLearning .routineSubtitle {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin-inline: auto !important;
+    text-align: center !important;
+  }
+
+  .mobileLearning .routineTitle {
+    font-size: 24px !important;
+    line-height: 32px !important;
+  }
+
+  .mobileLearning .routineSubtitle {
+    font-size: 16px !important;
+    line-height: 24px !important;
+  }
+
+  .mobileLearning .routineTextLine {
+    display: block;
+  }
+}
+
+
+/* Mobile: center the Microlearning list and tighten the following section gap. */
+@media (max-width: 767.98px) {
+  .mobileLearning .microBenefits {
+    width: max-content !important;
+    max-width: calc(100% - 16px) !important;
+    margin-inline: auto !important;
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+    align-self: center !important;
+    align-items: stretch !important;
+    transform: none !important;
+  }
+
+  .mobileLearning .microBenefit {
+    width: 100% !important;
+    max-width: none !important;
+    overflow: visible !important;
+  }
+
+  .mobileLearning .microSection {
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+  }
+
+  .mobileLearning .interactiveSection {
+    margin-top: 16px !important;
+  }
+
+  .mobileLearning .interactiveSectionInner {
+    padding-top: 16px !important;
+  }
+}

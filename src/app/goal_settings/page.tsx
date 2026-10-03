@@ -1,19 +1,14 @@
 "use client";
-
 import type { NextPage } from "next";
 import type { ReactNode } from "react";
 import { useEffect } from "react";
 import { useRouter } from "next/navigation";
 import Image from "next/image";
-
 import Header from "../../components/Header/header";
 import Footer from "../../components/Footer/footer";
 import { BookDemoTrigger } from "../../components/Bookademo/Bookademo";
-
 import styles from "./GoalsHero.module.css";
-
 type Tone = "blue" | "pink" | "purple" | "orange" | "teal" | "green" | "gold";
-
 const challengeCards = [
   {
     title: "Lack of Clarity",
@@ -46,11 +41,10 @@ const challengeCards = [
     tone: "teal" as Tone,
   },
 ];
-
 const goalCards = [
   {
     title: "Personalized Goals",
-    description: <>Set academic and<br />career goals</>,
+    description: <>Set academic and career<br />goals</>,
     icon: "/icons/target-01-pink.svg",
     tone: "pink" as Tone,
   },
@@ -62,7 +56,7 @@ const goalCards = [
   },
   {
     title: "Plan & Schedule",
-    description: <>Schedule learning<br />and milestones</>,
+    description: <>Schedule learning and<br />milestones</>,
     icon: "/icons/calendar-03.svg",
     tone: "orange" as Tone,
   },
@@ -79,7 +73,6 @@ const goalCards = [
     tone: "teal" as Tone,
   },
 ];
-
 const progressCards = [
   {
     title: "Increased Motivation",
@@ -107,7 +100,6 @@ const progressCards = [
     tone: "gold" as Tone,
   },
 ];
-
 const adaptiveItems = [
   {
     label: "Adaptive Paths",
@@ -130,7 +122,6 @@ const adaptiveItems = [
     tone: "orange" as Tone,
   },
 ];
-
 const benefitItems = [
   "Clear Direction",
   "Higher Motivation",
@@ -139,24 +130,20 @@ const benefitItems = [
   "Continuous Improvement",
   "Career Readiness",
 ];
-
 const journeyColumns = [
   ["Set Goals", "Learn"],
   ["Track Progress", "Analyze Performance"],
   ["Create Plans", "Adapt & Improve"],
 ];
-
 const trustItems = [
   { label: "AI / ML Powered", icon: "/icons/ai-book-blue.svg" },
   { label: "Learning Analytics", icon: "/icons/analytics-up.svg" },
   { label: "Privacy First", icon: "/icons/shield-check.svg" },
   { label: "Real-Time Insights", icon: "/icons/activity-01.svg" },
 ];
-
 function SectionPill({ children }: { children: ReactNode }) {
   return <p className={styles.sectionPill}>{children}</p>;
 }
-
 function HeroPolygons() {
   return (
     <svg
@@ -220,7 +207,6 @@ function HeroPolygons() {
           />
           <feBlend mode="normal" in2="effect1_innerShadow" result="effect2_innerShadow" />
         </filter>
-
         <filter
           id="goalHeroBottomInset"
           x="-6.0625"
@@ -265,7 +251,6 @@ function HeroPolygons() {
     </svg>
   );
 }
-
 function StatCard({
   value,
   label,
@@ -284,7 +269,6 @@ function StatCard({
     </article>
   );
 }
-
 function FeatureIcon({ src, alt, tone }: { src: string; alt: string; tone: Tone }) {
   return (
     <span className={`${styles.featureIcon} ${styles[`tone${tone}`]}`}>
@@ -330,11 +314,9 @@ function FeatureIcon({ src, alt, tone }: { src: string; alt: string; tone: Tone 
     </span>
   );
 }
-
 function HexagonFrame({ id }: { id: string }) {
   const outer = `outerHexagon-${id}`;
   const inner = `innerHexagon-${id}`;
-
   return (
     <svg
       className={styles.hexagonSvg}
@@ -396,7 +378,6 @@ function HexagonFrame({ id }: { id: string }) {
           <feBlend mode="normal" in2="effect1_dropShadow" result="effect2_dropShadow" />
           <feBlend mode="normal" in="SourceGraphic" in2="effect2_dropShadow" result="shape" />
         </filter>
-
         <filter
           id={inner}
           x="45"
@@ -429,7 +410,6 @@ function HexagonFrame({ id }: { id: string }) {
     </svg>
   );
 }
-
 function GoalCard({
   id,
   title,
@@ -454,7 +434,6 @@ function GoalCard({
     </article>
   );
 }
-
 function ProgressCard({
   title,
   description,
@@ -473,7 +452,6 @@ function ProgressCard({
     </article>
   );
 }
-
 function TrustCard({ label, icon }: { label: string; icon: string }) {
   return (
     <article className={styles.trustCard}>
@@ -484,23 +462,17 @@ function TrustCard({ label, icon }: { label: string; icon: string }) {
     </article>
   );
 }
-
 const GoalSettingsAndProgressTracking: NextPage = () => {
   const router = useRouter();
-
   useEffect(() => {
     const revealItems = Array.from(
       document.querySelectorAll<HTMLElement>("[data-scroll-reveal]")
     );
-
     if (!revealItems.length) return;
-
     let raf = 0;
-
     const update = () => {
       raf = 0;
       const viewportHeight = window.innerHeight;
-
       revealItems.forEach((item) => {
         const rect = item.getBoundingClientRect();
         const start = viewportHeight * 0.92;
@@ -510,26 +482,21 @@ const GoalSettingsAndProgressTracking: NextPage = () => {
         item.style.setProperty("--scroll-reveal", safe.toFixed(4));
       });
     };
-
     const requestUpdate = () => {
       if (!raf) raf = window.requestAnimationFrame(update);
     };
-
     update();
     window.addEventListener("scroll", requestUpdate, { passive: true });
     window.addEventListener("resize", requestUpdate);
-
     return () => {
       window.removeEventListener("scroll", requestUpdate);
       window.removeEventListener("resize", requestUpdate);
       if (raf) window.cancelAnimationFrame(raf);
     };
   }, []);
-
   return (
     <>
       <Header />
-
       <main id="main-content" className={styles.page}>
         <div className={styles.shell}>
           <nav className={styles.breadcrumb} aria-label="Breadcrumb">
@@ -551,19 +518,16 @@ const GoalSettingsAndProgressTracking: NextPage = () => {
             />
             <strong>Goals and Tracking</strong>
           </nav>
-
           <section className={styles.heroSection} aria-labelledby="goal-hero-heading">
             <HeroPolygons />
-
             <div className={styles.heroCopy}>
-              <SectionPill>Goal Setting &amp; Progress Tracking</SectionPill>
-              <h1 id="goal-hero-heading">Set Clear Goals! Track Progress! Achieve It!</h1>
+              <SectionPill>Goal Setting & Progress Tracking</SectionPill>
+              <h1 id="goal-hero-heading">Set Clear Goals! Track Progress! <span className={styles.blueText}>Achieve It!</span></h1>
               <p>
                 NeuroLXP helps learners set goals, create personalized plans, and track
                 progress for continuous improvement and better outcomes.
               </p>
             </div>
-
             <div className={styles.statsStage}>
               <StatCard
                 value="95%"
@@ -591,19 +555,17 @@ const GoalSettingsAndProgressTracking: NextPage = () => {
               />
             </div>
           </section>
-
           <section className={`${styles.section} ${styles.challengeSection}`}>
             <div className={styles.challengeText}>
               <SectionPill>The Challenge</SectionPill>
               <h2>
-                Turning Learning Goals into{" "}
-                <span className={styles.blueText}>Measurable Progress</span>
+                Turning Learning Goals into Measurable{" "}
+                <span className={styles.blueText}>Progress</span>
               </h2>
               <p>
                 Unclear goals, competing priorities, and limited progress visibility can
                 hinder learner motivation and outcomes.
               </p>
-
               <Image
                 className={styles.challengeImage}
                 data-scroll-reveal
@@ -614,7 +576,6 @@ const GoalSettingsAndProgressTracking: NextPage = () => {
                 alt="Learning progress arrows chart"
               />
             </div>
-
             <div className={styles.challengeCards}>
               {challengeCards.map((card) => (
                 <article
@@ -638,17 +599,15 @@ const GoalSettingsAndProgressTracking: NextPage = () => {
               ))}
             </div>
           </section>
-
           <section className={`${styles.section} ${styles.centerSection}`}>
             <div className={styles.centerHeading}>
-              <SectionPill>Goal Setting &amp; Planning</SectionPill>
-              <h2>From Aspirations to Action</h2>
+              <SectionPill>Goal Setting & Planning</SectionPill>
+              <h2>From Aspirations to <span className={styles.blueText}>Action</span></h2>
               <p>
                 NeuroLXP helps learners turn academic and career aspirations into clear,
                 achievable goals with structured planning and personalized guidance.
               </p>
             </div>
-
             <div className={styles.goalCards}>
               <div className={styles.goalTopRow}>
                 {goalCards.slice(0, 3).map((card, index) => (
@@ -670,17 +629,15 @@ const GoalSettingsAndProgressTracking: NextPage = () => {
               </div>
             </div>
           </section>
-
           <section className={`${styles.section} ${styles.centerSection}`}>
             <div className={styles.centerHeading}>
               <SectionPill>Progress Tracking</SectionPill>
-              <h2>See Your Progress! Know What’s Next</h2>
+              <h2>See Your Progress! Know What’s <span className={styles.blueText}>Next</span></h2>
               <p>
                 Track performance, engagement, and achievements with real-time insights
                 for better learning decisions.
               </p>
             </div>
-
             <div className={styles.progressCards}>
               <div className={styles.progressRow}>
                 {progressCards.slice(0, 2).map((card) => (
@@ -697,17 +654,15 @@ const GoalSettingsAndProgressTracking: NextPage = () => {
               </div>
             </div>
           </section>
-
           <section className={`${styles.section} ${styles.adaptiveSection}`}>
             <div className={styles.adaptiveCopy}>
               <SectionPill>Adaptive Learning Experience</SectionPill>
-              <h2>Learning That Adapts With You</h2>
+              <h2>Learning That Adapts <span className={styles.mobileHeadingTail}>With <span className={styles.blueText}>You</span></span></h2>
               <p>
                 NeuroLXP continuously connects goals, plans, and progress to create a
                 more personalized learning experience.
               </p>
             </div>
-
             <div className={styles.adaptiveList}>
               {adaptiveItems.map((item) => (
                 <div key={item.label} className={styles.adaptiveItem}>
@@ -731,13 +686,11 @@ const GoalSettingsAndProgressTracking: NextPage = () => {
               ))}
             </div>
           </section>
-
           <section className={`${styles.section} ${styles.centerSection}`}>
             <div className={styles.centerHeadingCompact}>
               <SectionPill>Key Benefits</SectionPill>
-              <h2>Why Goal Setting &amp; Progress Tracking Matter</h2>
+              <h2>Why Goal Setting & Progress Tracking <span className={styles.blueText}>Matter</span></h2>
             </div>
-
             <div className={styles.benefitsFrame}>
               <div className={styles.benefitsInner}>
                 <Image
@@ -748,7 +701,6 @@ const GoalSettingsAndProgressTracking: NextPage = () => {
                   sizes="(max-width: 960px) 100vw, 606px"
                   alt="Goal setting and progress growth chart"
                 />
-
                 <div className={styles.benefitsList}>
                   {benefitItems.map((item) => (
                     <div key={item} className={styles.benefitItem}>
@@ -766,14 +718,12 @@ const GoalSettingsAndProgressTracking: NextPage = () => {
               </div>
             </div>
           </section>
-
           <section className={`${styles.section} ${styles.journeyTrustSection}`}>
             <div className={styles.journeyBlock}>
               <div className={styles.centerHeadingCompact}>
                 <SectionPill>Personalized Learning Journey</SectionPill>
-                <h2>One Connected Learning Journey</h2>
+                <h2>One Connected Learning <span className={styles.blueText}>Journey</span></h2>
               </div>
-
               <div className={styles.journeyColumns}>
                 {journeyColumns.map((column, columnIndex) => (
                   <div className={styles.journeyColumn} key={`journey-${columnIndex}`}>
@@ -798,17 +748,15 @@ const GoalSettingsAndProgressTracking: NextPage = () => {
                 ))}
               </div>
             </div>
-
             <div className={styles.trustBlock}>
               <div className={styles.trustHeading}>
-                <SectionPill>Trust &amp; Intelligence</SectionPill>
+                <SectionPill>Trust & Intelligence</SectionPill>
                 <h2>
                   Personalized!
                   <br />
-                  Intelligent! Secure!
+                  Intelligent! <span className={styles.blueText}>Secure!</span>
                 </h2>
               </div>
-
               <div className={styles.trustGrid}>
                 {trustItems.map((item) => (
                   <TrustCard key={item.label} {...item} />
@@ -816,7 +764,6 @@ const GoalSettingsAndProgressTracking: NextPage = () => {
               </div>
             </div>
           </section>
-
           <section className={styles.ctaSection}>
             <Image
               className={styles.ctaBackground}
@@ -827,19 +774,16 @@ const GoalSettingsAndProgressTracking: NextPage = () => {
               alt=""
               aria-hidden="true"
             />
-
             <div className={styles.ctaCopy}>
-              <h2>Progress With Purpose</h2>
+              <h2>Progress With <span className={styles.blueText}>Purpose</span></h2>
               <p>
                 NeuroLXP helps learners track progress, adapt, and achieve better
                 outcomes.
               </p>
-
               <BookDemoTrigger className={styles.demoButton}>
                 <span>Book a Demo</span>
               </BookDemoTrigger>
             </div>
-
             <Image
               className={styles.ctaPerson}
               src="/images/hand-holding-wooden-cube-with-target 1.webp"
@@ -851,10 +795,8 @@ const GoalSettingsAndProgressTracking: NextPage = () => {
           </section>
         </div>
       </main>
-
       <Footer />
     </>
   );
 };
-
 export default GoalSettingsAndProgressTracking;

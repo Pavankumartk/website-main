@@ -3742,3 +3742,54 @@ body {
         transition: none;
     }
 }
+
+/* Heading size update: main page headings only */
+.hero-title,
+.insights-title,
+.topics-title,
+.frame-four-title,
+.frame-five-title {
+    font-size: 36px;
+}
+
+@media (max-width: 768px) {
+    .hero-title,
+    .insights-title,
+    .topics-title,
+    .frame-four-title,
+    .frame-five-title {
+        font-size: 24px;
+    }
+}
+
+/* Main heading last-word color only */
+.main-last-word {
+    color: #2D4CC8;
+    -webkit-text-fill-color: #2D4CC8;
+}
+
+/* Remove the full-heading gradient so only the last word is blue */
+.insights-title,
+.frame-five-title {
+    background: none;
+    -webkit-background-clip: initial;
+    background-clip: initial;
+    -webkit-text-fill-color: #343A52;
+    color: #343A52;
+}
+
+.insights-title .main-last-word,
+.frame-five-title .main-last-word {
+    color: #2D4CC8;
+    -webkit-text-fill-color: #2D4CC8;
+}
+
+/* Requested fixes only */
+.insights-title {
+    text-shadow: none !important;
+}
+
+.topics-description br {
+    display: block !important;
+}
+

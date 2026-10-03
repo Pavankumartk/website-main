@@ -8714,3 +8714,112 @@ body {
     line-height: 32px !important;
   }
 }
+
+
+/* Heading accents and the two numbered-card groups only. */
+.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .mainHeadingLastWord {
+  color: #2d4cc8 !important;
+}
+@media (min-width: 1024px) {
+  /* Narrower activity number boxes leave more room for the single-line copy. */
+  .interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameParent20 :is(.frameParent22, .frameParent24) {
+    padding-left: 64px !important;
+    padding-right: 16px !important;
+  }
+  .interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameParent20 .frameParent23 {
+    width: 48px !important;
+    height: 48px !important;
+  }
+  .interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameParent20 .frameParent23 > div {
+    width: 100% !important;
+    height: 100% !important;
+  }
+  .interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameParent20 .frameParent23 > span {
+    position: absolute !important;
+    inset: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    display: grid !important;
+    place-items: center !important;
+  }
+  .interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameParent20 .curiousClicksParent {
+    width: 100% !important;
+    min-width: 0 !important;
+    max-width: 100% !important;
+  }
+  .interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameParent20 :is(.discoverNewInsightsContainer, .linkConceptsStepByContainer) {
+    height: auto !important;
+    min-height: 0 !important;
+    width: 100% !important;
+    white-space: nowrap !important;
+  }
+  .interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameParent20 .discoverNewInsights {
+    white-space: nowrap !important;
+  }
+
+  /* Narrower raised number boxes in the practice section. */
+  .interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameParent40 .frameParent44 {
+    grid-template-columns: 76px minmax(0, 1fr) !important;
+  }
+  .interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameParent40 .frameParent45 {
+    width: 76px !important;
+    min-width: 76px !important;
+    height: 76px !important;
+  }
+  .interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameParent40 .image20Wrapper {
+    width: 100% !important;
+    height: 100% !important;
+  }
+  .interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameParent40 .practiceRealWorldSkills {
+    white-space: nowrap !important;
+  }
+}
+
+/* Permit wrapping below the wide desktop layout to prevent horizontal overflow. */
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameParent20 :is(.discoverNewInsightsContainer, .linkConceptsStepByContainer, .discoverNewInsights),
+  .interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameParent40 .practiceRealWorldSkills {
+    white-space: normal !important;
+  }
+}
+/* your existing last CSS rules above */
+.someExistingClass {
+  /* ... */
+}
+
+
+/* =========================================================
+   MOBILE — ACTIVITY CARD SUBTEXTS IN TWO LINES
+   ========================================================= */
+@media screen and (max-width: 767px) {
+
+  .interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin
+    .frameParent20
+    :is(.discoverNewInsightsContainer, .linkConceptsStepByContainer) {
+    
+    width: 180px !important;
+    max-width: 180px !important;
+    height: auto !important;
+    min-height: 44px !important;
+
+    white-space: normal !important;
+    word-break: normal !important;
+    overflow-wrap: normal !important;
+
+    font-size: 15px !important;
+    line-height: 22px !important;
+
+    text-align: left !important;
+    text-wrap: balance !important;
+  }
+
+  .interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin
+    .frameParent20
+    .discoverNewInsights {
+    
+    white-space: normal !important;
+    word-break: normal !important;
+    overflow-wrap: normal !important;
+    text-wrap: balance !important;
+  }
+}

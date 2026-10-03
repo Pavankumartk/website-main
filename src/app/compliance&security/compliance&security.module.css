@@ -3442,3 +3442,81 @@
   .frameParent103:hover,
   .complianceStatus:hover { transform: none; }
 }
+
+/* =========================================================
+   REAL-TIME METRICS + INDUSTRY CARD TEXT ALIGNMENT
+   ========================================================= */
+
+/* Keep the long Department Compliance Metrics label on one line. */
+.realTimeMetric:last-child .realTimeMetricTitle {
+  white-space: nowrap;
+  font-size: 20px;
+  overflow-wrap: normal;
+  word-break: normal;
+}
+
+/* Industry-card subtexts: exactly two centered lines,
+   with one word only on the second line. */
+.industrySubtextFirst,
+.industrySubtextLast {
+  display: block;
+  white-space: nowrap;
+}
+
+.industrySubtextLast {
+  margin-top: 2px;
+}
+
+/* Preserve the existing card typography/alignment. */
+.healthSafetyAnd,
+.dataProtectionAnd,
+.codeOfConduct,
+.antiHarassmentAndWorkplace {
+  text-align: center;
+}
+
+/* Slightly reduce only when needed so the first line remains unbroken. */
+@media (max-width: 1279px) {
+  .industrySubtextFirst,
+  .industrySubtextLast {
+    font-size: 18px;
+    line-height: 1.4;
+  }
+}
+
+/* FINAL industry-card copy fix — shorter, uniform, no overlap. */
+.industrySubtextFirst,
+.industrySubtextLast {
+  display: block !important;
+  max-width: 100% !important;
+  white-space: nowrap !important;
+  overflow: visible !important;
+  text-align: center !important;
+}
+
+.healthSafetyAnd,
+.dataProtectionAnd,
+.codeOfConduct,
+.antiHarassmentAndWorkplace {
+  width: 100% !important;
+  max-width: 100% !important;
+  padding-inline: 14px !important;
+  box-sizing: border-box !important;
+  text-align: center !important;
+}
+
+/* FINAL mobile overflow fix for the last real-time metric. */
+@media screen and (max-width: 767px) {
+  .realTimeMetric:last-child .realTimeMetricTitle {
+    flex: 1 1 auto !important;
+    min-width: 0 !important;
+    max-width: 100% !important;
+    font-size: 18px !important;
+    line-height: 1.35 !important;
+    white-space: nowrap !important;
+    overflow: visible !important;
+    overflow-wrap: normal !important;
+    word-break: normal !important;
+  }
+}
+
