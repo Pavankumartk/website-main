@@ -4638,3 +4638,145 @@ box-shadow: 8px 8px 16px #c4c4c4, -8px -8px 16px #fff;
     order: 8 !important;
   }
 }
+
+/* =========================================================
+   CODING CHALLENGES — TALK TO OUR EXPERT BUTTON
+   Desktop/tablet artboard:
+   uses the unused right-side area of the Practical Skills
+   section, outside the centered 944px heading block.
+
+   Phone:
+   moves into the existing 48px gap above the section so the
+   launcher never covers the heading or challenge cards.
+   ========================================================= */
+
+.codingChallengeExpertSlot {
+  --expert-button-size: 64px;
+  position: absolute;
+  top: 0;
+  right: 18px;
+  width: var(--expert-button-size);
+  height: var(--expert-button-size);
+  z-index: 20;
+  pointer-events: none;
+}
+
+.codingChallengeExpertSlot > :global(button[class*="talk-to-expert-fab"]) {
+  position: absolute !important;
+  inset: 0 !important;
+  top: 0 !important;
+  right: 0 !important;
+  bottom: auto !important;
+  left: auto !important;
+  margin: 0 !important;
+  transform: none !important;
+  translate: none !important;
+  pointer-events: auto !important;
+}
+
+/* Phone layout is fluid and the section has an exact 48px top gap. */
+@media screen and (max-width: 767.98px) {
+  .codingChallengeExpertSlot {
+    --expert-button-size: 40px;
+    top: -44px;
+    right: 4px;
+  }
+
+  /* Keep the full attention ring out of neighbouring content on small screens. */
+  .codingChallengeExpertSlot::after {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .codingChallengeExpertSlot {
+    --expert-button-size: 38px;
+    top: -43px;
+    right: 2px;
+  }
+}
+
+/* Same subtle professional attention effect as the other corrected pages. */
+.codingChallengeExpertSlot::after {
+  content: "";
+  position: absolute;
+  inset: 2px;
+  z-index: 0;
+  border: 2px solid rgba(45, 76, 200, 0.38);
+  border-radius: 50%;
+  box-sizing: border-box;
+  pointer-events: none;
+  opacity: 0;
+  animation: codingChallengeExpertPulse 3s ease-out infinite;
+}
+
+@keyframes codingChallengeExpertPulse {
+  0%, 15% {
+    transform: scale(1);
+    opacity: 0;
+  }
+
+  30% {
+    opacity: 0.55;
+  }
+
+  75%, 100% {
+    transform: scale(1.32);
+    opacity: 0;
+  }
+}
+
+.codingChallengeExpertSlot > :global(button[class*="talk-to-expert-fab"]) {
+  transition: box-shadow 180ms ease, background-color 180ms ease;
+}
+
+.codingChallengeExpertSlot > :global(button[class*="talk-to-expert-fab"]):hover,
+.codingChallengeExpertSlot > :global(button[class*="talk-to-expert-fab"]):focus-visible {
+  box-shadow:
+    -5px -5px 10px #ffffff,
+    5px 5px 10px #c6c6c9,
+    0 0 0 3px rgba(45, 76, 200, 0.14);
+}
+
+.codingChallengeExpertSlot > :global(button[class*="talk-to-expert-fab"]):hover svg,
+.codingChallengeExpertSlot > :global(button[class*="talk-to-expert-fab"]):focus-visible svg {
+  transform-origin: center;
+  animation: codingChallengeExpertWave 600ms ease-in-out;
+}
+
+@keyframes codingChallengeExpertWave {
+  0%, 100% { transform: rotate(0deg); }
+  25% { transform: rotate(-12deg); }
+  50% { transform: rotate(10deg); }
+  75% { transform: rotate(-5deg); }
+}
+
+.codingChallengeExpertSlot > :global(button[class*="talk-to-expert-fab"]):active {
+  box-shadow:
+    inset -4px -4px 8px #ffffff,
+    inset 4px 4px 8px #c6c6c9;
+}
+
+.codingChallengeExpertSlot:has(> :global(button[aria-expanded="true"]))::after {
+  animation: none;
+  opacity: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .codingChallengeExpertSlot::after,
+  .codingChallengeExpertSlot > :global(button[class*="talk-to-expert-fab"]):hover svg,
+  .codingChallengeExpertSlot > :global(button[class*="talk-to-expert-fab"]):focus-visible svg {
+    animation: none;
+  }
+
+  .codingChallengeExpertSlot > :global(button[class*="talk-to-expert-fab"]) {
+    transition: none;
+  }
+}
+
+@media screen and (max-width: 767.98px) {
+  .codingChallengeExpertSlot::after {
+    display: none;
+  }
+}
+

@@ -1343,10 +1343,10 @@
 }
 /* Home-page component styles and the shared heading sizes. */
 .digital-literacy {
-  \--dl-heading-size: 36px;
-  \--dl-heading-line: 44px;
-  \--dl-subheading-size: 24px;
-  \--dl-subheading-line: 32px;
+  --dl-heading-size: 36px;
+  --dl-heading-line: 44px;
+  --dl-subheading-size: 24px;
+  --dl-subheading-line: 32px;
 }
 /* Include button labels, badge labels and inline SVG text. */
 .digital-literacy,
@@ -1460,10 +1460,10 @@
 }
 @media (max-width: 767px) {
   .digital-literacy {
-    \--dl-heading-size: 24px;
-    \--dl-heading-line: 32px;
-    \--dl-subheading-size: 16px;
-    \--dl-subheading-line: 24px;
+    --dl-heading-size: 24px;
+    --dl-heading-line: 32px;
+    --dl-subheading-size: 16px;
+    --dl-subheading-line: 24px;
   }
   .digital-literacy :is(.dl-hero-button, .dl-hero-button-primary, .dl-hero-button-secondary) {
     padding: 14px 24px;
@@ -2073,7 +2073,6 @@ html:has(.digital-literacy) :is(svg text, svg tspan) {
     text-align: center;
   }
 }
-
 /* Compact coloured cards: preserve type sizes and colours, with no movement. */
 .digital-literacy .dl-check-list {
   width: 100%;
@@ -2134,7 +2133,6 @@ html:has(.digital-literacy) :is(svg text, svg tspan) {
   .digital-literacy .dl-check-pill-outer,
   .digital-literacy .dl-check-pill { transition: none; }
 }
-
 /* Centre the entire Accelerate content group, including its heading and copy. */
 .digital-literacy .dl-accelerate-content {
   width: 100%;
@@ -2160,7 +2158,6 @@ html:has(.digital-literacy) :is(svg text, svg tspan) {
     max-width: 480px;
   }
 }
-
 /* Mobile: centre the list as a group; keep arrows and labels left-aligned. */
 @media (max-width: 767px) {
   .digital-literacy .dl-bullet-list {
@@ -2191,7 +2188,6 @@ html:has(.digital-literacy) :is(svg text, svg tspan) {
     text-align: left;
   }
 }
-
 /* Compact mobile step cards and the spacing around the Today / Tomorrow caption. */
 @media (max-width: 767px) {
   .digital-literacy .dl-step-grid {
@@ -2242,7 +2238,6 @@ html:has(.digital-literacy) :is(svg text, svg tspan) {
     padding-top: 12px;
   }
 }
-
 /* Certification description: a deliberate two-line sentence on phones. */
 .digital-literacy .dl-certification-line {
   display: inline;
@@ -2251,5 +2246,111 @@ html:has(.digital-literacy) :is(svg text, svg tspan) {
   .digital-literacy .dl-certification-line {
     display: block;
     white-space: nowrap;
+  }
+}
+
+/* The shared round launcher belongs to this section and does not occupy flow space. */
+.dl-howitworks-section {
+  position: relative;
+}
+
+.dl-expert-slot {
+  --expert-button-size: 64px;
+  position: absolute;
+  top: 30px;
+  right: 24px;
+  width: var(--expert-button-size);
+  height: var(--expert-button-size);
+  z-index: 12;
+  pointer-events: none;
+}
+
+.dl-expert-slot > :global(button[class*="talk-to-expert-fab"]) {
+  position: absolute !important;
+  inset: 0 !important;
+  margin: 0 !important;
+  transform: none !important;
+  translate: none !important;
+  pointer-events: auto;
+}
+
+@media (max-width: 767px) {
+  .dl-expert-slot {
+    top: 20px;
+    right: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .dl-expert-slot {
+    --expert-button-size: 48px;
+    top: 24px;
+    right: 12px;
+  }
+}
+
+/* Same pulse and hover animation as the GenZGalaxy button. */
+.dl-expert-slot::after {
+  content: "";
+  position: absolute;
+  inset: 2px;
+  z-index: 0;
+  border: 2px solid rgba(45, 76, 200, 0.38);
+  border-radius: 50%;
+  box-sizing: border-box;
+  pointer-events: none;
+  opacity: 0;
+  animation: dlExpertPulse 3s ease-out infinite;
+}
+
+@keyframes dlExpertPulse {
+  0%, 15% { transform: scale(1); opacity: 0; }
+  30% { opacity: 0.55; }
+  75%, 100% { transform: scale(1.32); opacity: 0; }
+}
+
+.dl-expert-slot > :global(button[class*="talk-to-expert-fab"]) {
+  transition: box-shadow 180ms ease, background-color 180ms ease;
+}
+
+.dl-expert-slot > :global(button[class*="talk-to-expert-fab"]):hover,
+.dl-expert-slot > :global(button[class*="talk-to-expert-fab"]):focus-visible {
+  box-shadow: -5px -5px 10px #ffffff,
+    5px 5px 10px #c6c6c9,
+    0 0 0 3px rgba(45, 76, 200, 0.14);
+}
+
+.dl-expert-slot > :global(button[class*="talk-to-expert-fab"]):hover svg,
+.dl-expert-slot > :global(button[class*="talk-to-expert-fab"]):focus-visible svg {
+  transform-origin: center;
+  animation: dlExpertWave 600ms ease-in-out;
+}
+
+@keyframes dlExpertWave {
+  0%, 100% { transform: rotate(0deg); }
+  25% { transform: rotate(-12deg); }
+  50% { transform: rotate(10deg); }
+  75% { transform: rotate(-5deg); }
+}
+
+.dl-expert-slot > :global(button[class*="talk-to-expert-fab"]):active {
+  box-shadow: inset -4px -4px 8px #ffffff,
+    inset 4px 4px 8px #c6c6c9;
+}
+
+.dl-expert-slot:has(> :global(button[aria-expanded="true"]))::after {
+  animation: none;
+  opacity: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .dl-expert-slot::after,
+  .dl-expert-slot > :global(button[class*="talk-to-expert-fab"]):hover svg,
+  .dl-expert-slot > :global(button[class*="talk-to-expert-fab"]):focus-visible svg {
+    animation: none;
+  }
+
+  .dl-expert-slot > :global(button[class*="talk-to-expert-fab"]) {
+    transition: none;
   }
 }

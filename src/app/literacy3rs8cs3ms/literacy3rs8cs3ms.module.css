@@ -3030,3 +3030,138 @@
   margin: 0 !important;
   min-width: 0;
 }
+
+/* =========================================================
+   3RS 8CS 3MS — TALK TO OUR EXPERT
+   Exact section-slot pattern used by Information Literacy.
+   ========================================================= */
+
+/* Attach the existing shared launcher only to Practical Learning. */
+.frameParent6 {
+  position: relative;
+}
+
+.sectionExpertSlot {
+  --expert-button-size: 64px;
+  position: absolute;
+  top: -6px;
+  right: 16px;
+  width: var(--expert-button-size);
+  height: var(--expert-button-size);
+  z-index: 12;
+  pointer-events: none;
+}
+
+.sectionExpertSlot > :global(button[class*="talk-to-expert-fab"]) {
+  position: absolute !important;
+  inset: 0 !important;
+  margin: 0 !important;
+  transform: none !important;
+  translate: none !important;
+  pointer-events: auto;
+}
+
+@media (max-width: 1024px) {
+  .sectionExpertSlot {
+    top: -16px;
+    right: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .sectionExpertSlot {
+    --expert-button-size: 48px;
+    top: -8px;
+    right: 8px;
+  }
+}
+
+/* Same pulse and hover effects as the reference section button. */
+.sectionExpertSlot::after {
+  content: "";
+  position: absolute;
+  inset: 2px;
+  z-index: 0;
+  border: 2px solid rgba(45, 76, 200, 0.38);
+  border-radius: 50%;
+  box-sizing: border-box;
+  pointer-events: none;
+  opacity: 0;
+  animation: literacy3rsExpertPulse 3s ease-out infinite;
+}
+
+@keyframes literacy3rsExpertPulse {
+  0%, 15% {
+    transform: scale(1);
+    opacity: 0;
+  }
+
+  30% {
+    opacity: 0.55;
+  }
+
+  75%, 100% {
+    transform: scale(1.32);
+    opacity: 0;
+  }
+}
+
+.sectionExpertSlot > :global(button[class*="talk-to-expert-fab"]) {
+  transition: box-shadow 180ms ease, background-color 180ms ease;
+}
+
+.sectionExpertSlot > :global(button[class*="talk-to-expert-fab"]):hover,
+.sectionExpertSlot > :global(button[class*="talk-to-expert-fab"]):focus-visible {
+  box-shadow:
+    -5px -5px 10px #ffffff,
+    5px 5px 10px #c6c6c9,
+    0 0 0 3px rgba(45, 76, 200, 0.14);
+}
+
+.sectionExpertSlot > :global(button[class*="talk-to-expert-fab"]):hover svg,
+.sectionExpertSlot > :global(button[class*="talk-to-expert-fab"]):focus-visible svg {
+  transform-origin: center;
+  animation: literacy3rsExpertWave 600ms ease-in-out;
+}
+
+@keyframes literacy3rsExpertWave {
+  0%, 100% {
+    transform: rotate(0deg);
+  }
+
+  25% {
+    transform: rotate(-12deg);
+  }
+
+  50% {
+    transform: rotate(10deg);
+  }
+
+  75% {
+    transform: rotate(-5deg);
+  }
+}
+
+.sectionExpertSlot > :global(button[class*="talk-to-expert-fab"]):active {
+  box-shadow:
+    inset -4px -4px 8px #ffffff,
+    inset 4px 4px 8px #c6c6c9;
+}
+
+.sectionExpertSlot:has(> :global(button[aria-expanded="true"]))::after {
+  animation: none;
+  opacity: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .sectionExpertSlot::after,
+  .sectionExpertSlot > :global(button[class*="talk-to-expert-fab"]):hover svg,
+  .sectionExpertSlot > :global(button[class*="talk-to-expert-fab"]):focus-visible svg {
+    animation: none;
+  }
+
+  .sectionExpertSlot > :global(button[class*="talk-to-expert-fab"]) {
+    transition: none;
+  }
+}
+

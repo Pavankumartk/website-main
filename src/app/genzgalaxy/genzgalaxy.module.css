@@ -4624,3 +4624,100 @@
     --home-demo-padding-x: 24px;
   }
 }
+
+
+/* Place the existing round expert button in the marked Why GenZGalaxy area.
+   Absolute placement adds no size, margins, padding or gaps to the section. */
+.sectionExpertSlot {
+  position: absolute;
+  top: 96px;
+  right: -48px;
+  width: 64px;
+  height: 64px;
+  z-index: 12;
+  pointer-events: none;
+}
+
+/* Override only the launcher placed inside this slot, including module hashes. */
+.sectionExpertSlot > :global(button[class*="talk-to-expert-fab"]) {
+  position: absolute !important;
+  inset: 0 !important;
+  margin: 0 !important;
+  transform: none !important;
+  translate: none !important;
+  pointer-events: auto;
+}
+
+
+/* Keep the launcher within the fluid page on tablet and phone screens. */
+@media (width < 1024px) {
+  .sectionExpertSlot {
+    right: 8px;
+  }
+}
+
+/* Animate a separate ring so the button stays anchored to the same spot. */
+.sectionExpertSlot::after {
+  content: "";
+  position: absolute;
+  inset: 2px;
+  z-index: 0;
+  border: 2px solid rgba(45, 76, 200, 0.38);
+  border-radius: 50%;
+  box-sizing: border-box;
+  pointer-events: none;
+  opacity: 0;
+  animation: sectionExpertPulse 3s ease-out infinite;
+}
+
+@keyframes sectionExpertPulse {
+  0%, 15% { transform: scale(1); opacity: 0; }
+  30% { opacity: 0.55; }
+  75%, 100% { transform: scale(1.32); opacity: 0; }
+}
+
+.sectionExpertSlot > :global(button[class*="talk-to-expert-fab"]) {
+  transition: box-shadow 180ms ease, background-color 180ms ease;
+}
+
+.sectionExpertSlot > :global(button[class*="talk-to-expert-fab"]):hover,
+.sectionExpertSlot > :global(button[class*="talk-to-expert-fab"]):focus-visible {
+  box-shadow: -5px -5px 10px #ffffff,
+    5px 5px 10px #c6c6c9,
+    0 0 0 3px rgba(45, 76, 200, 0.14);
+}
+
+.sectionExpertSlot > :global(button[class*="talk-to-expert-fab"]):hover svg,
+.sectionExpertSlot > :global(button[class*="talk-to-expert-fab"]):focus-visible svg {
+  transform-origin: center;
+  animation: sectionExpertWave 600ms ease-in-out;
+}
+
+@keyframes sectionExpertWave {
+  0%, 100% { transform: rotate(0deg); }
+  25% { transform: rotate(-12deg); }
+  50% { transform: rotate(10deg); }
+  75% { transform: rotate(-5deg); }
+}
+
+.sectionExpertSlot > :global(button[class*="talk-to-expert-fab"]):active {
+  box-shadow: inset -4px -4px 8px #ffffff,
+    inset 4px 4px 8px #c6c6c9;
+}
+
+.sectionExpertSlot:has(> :global(button[aria-expanded="true"]))::after {
+  animation: none;
+  opacity: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .sectionExpertSlot::after,
+  .sectionExpertSlot > :global(button[class*="talk-to-expert-fab"]):hover svg,
+  .sectionExpertSlot > :global(button[class*="talk-to-expert-fab"]):focus-visible svg {
+    animation: none;
+  }
+
+  .sectionExpertSlot > :global(button[class*="talk-to-expert-fab"]) {
+    transition: none;
+  }
+}

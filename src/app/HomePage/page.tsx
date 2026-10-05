@@ -8,7 +8,6 @@ import { useEffect, useRef, useState, type JSX, type CSSProperties, type RefObje
 import dynamic from "next/dynamic";
 import { GraduationCapOutlineIcon, LightbulbIcon, CursorClickIcon, TargetIcon, UsersIcon, SmartphoneIcon, GraduationCapIcon, SettingsGearIcon, LibraryIcon, BuildingIcon, ContentWritingIcon, BrainIcon, AnalyticsUpIcon, UniversityIcon, HandshakeIcon, LandmarkIcon, UserIcon, PlayIcon, CloseIcon, HeadphonesIcon } from "@/components/icons/Icons";
 import BookDemoModal from "@/components/Bookademo/BookDemoModal";
-// import BookDemoButton from "@/components/BookDemoButton/BookDemoButton";
 import TalkToExpertButton from "@/components/TalkToOurExpert/TalkToExpertButton";
 import ContactUs from "@/components/contact/page";
 import styles from "./home-page.module.css";
@@ -1408,8 +1407,7 @@ function LearningModules() {
         </button>
       </div>
 
-      {/* Keep the round Talk to Expert trigger in the empty area between
-          Learning Modules and Testimonials. */}
+      {/* Position marker for the existing round launcher beside Learning Modules. */}
       <div
         id={TALK_TO_EXPERT_SLOT_ID}
         className={styles["learning-modules-expert-button-slot"]}
@@ -2144,7 +2142,88 @@ function ContactUsModal({ onClose }: { onClose: () => void }) {
   return createPortal(modal, document.body);
 }
 
+function useSectionExpertPlacement() {
+  useEffect(() => {
+    const slot = document.getElementById(TALK_TO_EXPERT_SLOT_ID);
+    const main = document.getElementById("main-content");
+    if (!slot || !main) return;
+
+    const saved = new Map<HTMLElement, string>();
+    let frame = 0;
+    let disposed = false;
+
+    const placeButton = () => {
+      frame = 0;
+      if (disposed) return;
+      // CSS Modules add a prefix/suffix to this class name in Next.js.
+      const button = document.querySelector<HTMLButtonElement>(
+        'button[class*="talk-to-expert-fab"]',
+      );
+      if (!button) return;
+      if (!saved.has(button)) saved.set(button, button.getAttribute("style") ?? "");
+
+      // Override the launcher's own fixed positioning before measuring its parent.
+      // This works for both global CSS and hashed CSS Module class names.
+      button.style.setProperty("position", "absolute", "important");
+      button.style.setProperty("right", "auto", "important");
+      button.style.setProperty("bottom", "auto", "important");
+      button.style.setProperty("transform", "none", "important");
+      button.style.setProperty("translate", "none", "important");
+      button.style.setProperty("margin", "0", "important");
+      button.style.setProperty("pointer-events", "auto", "important");
+
+      // Document/section coordinates remain unchanged when the page scrolls.
+      // Keep the existing component, click handler, icon and popup intact.
+      const target = slot.getBoundingClientRect();
+      const parent = button.offsetParent;
+      let originX = -window.scrollX;
+      let originY = -window.scrollY;
+      if (parent instanceof HTMLElement &&
+          (parent !== document.body || getComputedStyle(parent).position !== "static")) {
+        const rect = parent.getBoundingClientRect();
+        originX = rect.left + parent.clientLeft - parent.scrollLeft;
+        originY = rect.top + parent.clientTop - parent.scrollTop;
+      }
+      const left = `${target.left - originX}px`;
+      const top = `${target.top - originY}px`;
+      button.style.setProperty("--home-expert-left", left);
+      button.style.setProperty("--home-expert-top", top);
+      button.style.setProperty("left", left, "important");
+      button.style.setProperty("top", top, "important");
+      button.style.setProperty("--home-expert-visibility", "visible");
+    };
+
+    const schedulePlacement = () => {
+      if (!disposed && !frame) frame = window.requestAnimationFrame(placeButton);
+    };
+    const resizeObserver = new ResizeObserver(schedulePlacement);
+    resizeObserver.observe(main);
+    resizeObserver.observe(slot);
+    // Also catches a launcher mounted asynchronously or through a portal.
+    const mountObserver = new MutationObserver(schedulePlacement);
+    mountObserver.observe(document.body, { childList: true, subtree: true });
+    window.addEventListener("resize", schedulePlacement);
+    window.addEventListener("load", schedulePlacement);
+    document.fonts.ready.then(schedulePlacement);
+    schedulePlacement();
+
+    return () => {
+      disposed = true;
+      window.cancelAnimationFrame(frame);
+      resizeObserver.disconnect();
+      mountObserver.disconnect();
+      window.removeEventListener("resize", schedulePlacement);
+      window.removeEventListener("load", schedulePlacement);
+      saved.forEach((style, button) => {
+        if (style) button.setAttribute("style", style);
+        else button.removeAttribute("style");
+      });
+    };
+  }, []);
+}
+
 export default function HomePage() {
+  useSectionExpertPlacement();
   const [isBookDemoOpen, setIsBookDemoOpen] = useState(false);
   const bookDemoButtonRef = useRef<HTMLButtonElement>(null);
   const [isContactOpen, setIsContactOpen] = useState(false);
@@ -2195,7 +2274,7 @@ export default function HomePage() {
 
       <Header />
 
-      <main id="main-content">
+      <main id="main-content" className={styles["home-expert-placement"]}>
       <HeroCarousel />
       <LearningOdyssey onBookDemoClick={openBookDemo} bookDemoButtonRef={bookDemoButtonRef} />
       <StoryMissionVision />
@@ -2209,7 +2288,6 @@ export default function HomePage() {
       <GetInTouch onContactClick={openContactUs} contactButtonRef={contactButtonRef} />
       {isBookDemoOpen && <BookDemoModal onClose={closeBookDemo} />}
       {isContactOpen && <ContactUsModal onClose={closeContactUs} />}
-      {/* <BookDemoButton /> */}
       <div className={styles["get-in-touch-expert-button"]}>
         <TalkToExpertButton />
       </div>

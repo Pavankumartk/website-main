@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import { GlobalExpertProvider } from "@/components/TalkToOurExpert/TalkToExpertButton";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -9,7 +10,11 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <GlobalExpertProvider>
+          {children}
+        </GlobalExpertProvider>
+      </body>
     </html>
   );
 }

@@ -1192,91 +1192,17 @@
    FLOATING BUTTON
    ========================================================= */
 
-.talk-to-expert-fab {
-  position: fixed;
 
-  right: 32px;
 
-  bottom: 32px;
 
-  z-index: 500;
 
-  width: 64px;
-  height: 64px;
-  min-width: 64px;
-  min-height: 64px;
 
-  padding: 0;
 
-  border: none;
-  border-radius: 50% !important;
 
-  background: #dfe6e9;
 
-  box-shadow:
-    -8px -8px 16px #ffffff,
-    8px 8px 16px #c6c6c9;
 
-  display: flex;
-  align-items: center;
-  justify-content: center;
 
-  cursor: pointer;
 
-  box-sizing: border-box;
-  overflow: hidden;
-}
-
-.talk-to-expert-fab:hover {
-  transform: translateY(-4px);
-}
-
-.talk-to-expert-fab-icon-ring {
-  flex-shrink: 0;
-
-  width: 52px;
-  height: 52px;
-
-  border-radius: 50%;
-
-  background: #dfe6e9;
-
-  box-shadow:
-    inset -4px -4px 8px #ffffff,
-    inset 4px 4px 8px rgba(196, 196, 196, 0.8);
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.talk-to-expert-fab-icon-circle {
-  width: 40px;
-  height: 40px;
-
-  border-radius: 50%;
-
-  background: #dfe6e9;
-
-  box-shadow:
-    6px 6px 12px #c6c6c9,
-    -6px -6px 12px #ffffff;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  color: #2d4cc8;
-}
-
-.talk-to-expert-fab-icon {
-  width: 22px;
-  height: 22px;
-}
-
-.talk-to-expert-fab-label {
-  display: none !important;
-}
 
 
 /* =========================================================
@@ -1640,42 +1566,15 @@
     height: 36px !important;
   }
 
-  .talk-to-expert-fab {
-    right: 20px;
+  
 
-    bottom: 20px;
+  
 
-    width: 56px;
-    height: 56px;
-    min-width: 56px;
-    min-height: 56px;
+  
 
-    padding: 0;
+  
 
-    border-radius: 50% !important;
-  }
-
-  .talk-to-expert-fab-icon-ring {
-    width: 48px;
-
-    height: 48px;
-  }
-
-  .talk-to-expert-fab-icon-circle {
-    width: 34px;
-
-    height: 34px;
-  }
-
-  .talk-to-expert-fab-icon {
-    width: 18px;
-
-    height: 18px;
-  }
-
-  .talk-to-expert-fab-label {
-    font-size: 15px;
-  }
+  
 }
 
 
@@ -1789,20 +1688,9 @@
     height: 34px !important;
   }
 
-  .talk-to-expert-fab {
-    width: 52px;
-    height: 52px;
-    min-width: 52px;
-    min-height: 52px;
+  
 
-    padding: 0;
-
-    border-radius: 50% !important;
-  }
-
-  .talk-to-expert-fab-label {
-    display: none;
-  }
+  
 }
 
 
@@ -1811,11 +1699,7 @@
    ========================================================= */
 
 @media (prefers-reduced-motion: reduce) {
-  .talk-to-expert-fab {
-    transition: none;
-
-    transform: none;
-  }
+  
 }
 
 
@@ -4181,38 +4065,139 @@
 /* =========================================================
    FINAL FLOATING EXPERT BUTTON — TRUE CIRCLE
    ========================================================= */
-.talk-to-expert-fab {
-  width: 64px !important;
-  height: 64px !important;
-  min-width: 64px !important;
-  min-height: 64px !important;
-  padding: 0 !important;
-  border-radius: 50% !important;
-  display: flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-  gap: 0 !important;
-  overflow: hidden !important;
-}
 
-.talk-to-expert-fab-label {
-  display: none !important;
-}
+
+
 
 @media (max-width: 768px) {
-  .talk-to-expert-fab {
-    width: 56px !important;
-    height: 56px !important;
-    min-width: 56px !important;
-    min-height: 56px !important;
-  }
+  
 }
 
 @media (max-width: 375px) {
-  .talk-to-expert-fab {
-    width: 52px !important;
-    height: 52px !important;
-    min-width: 52px !important;
-    min-height: 52px !important;
-  }
+  
+}
+
+
+/* Fixed to the viewport; does not change any page width or alignment. */
+.talk-to-expert-fab {
+  position: fixed;
+  top: 50%;
+  right: max(var(--expert-button-right, 12px), env(safe-area-inset-right, 0px));
+  bottom: auto;
+  left: auto;
+  transform: translateY(-50%);
+  z-index: 500;
+
+  width: var(--expert-button-size, 64px);
+  height: var(--expert-button-size, 64px);
+  min-width: var(--expert-button-size, 64px);
+  min-height: var(--expert-button-size, 64px);
+  max-width: var(--expert-button-size, 64px);
+  max-height: var(--expert-button-size, 64px);
+  aspect-ratio: 1;
+  flex: 0 0 auto;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  appearance: none;
+  -webkit-appearance: none;
+  background: #dfe6e9;
+  color: #2d4cc8;
+  box-shadow: -4px -4px 8px #ffffff, 4px 4px 8px #c6c6c9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+  overflow: hidden;
+  cursor: pointer;
+  touch-action: manipulation;
+  transition: box-shadow 160ms ease;
+}
+
+.talk-to-expert-fab:hover {
+  box-shadow: -3px -3px 6px #ffffff, 3px 3px 6px #c6c6c9;
+}
+
+.talk-to-expert-fab:active {
+  box-shadow: inset -4px -4px 8px #ffffff, inset 4px 4px 8px #c6c6c9;
+}
+
+.talk-to-expert-fab:focus-visible {
+  outline: 3px solid #2d4cc8;
+  outline-offset: 3px;
+}
+
+.talk-to-expert-fab-icon-ring {
+  flex: 0 0 auto;
+  width: calc(var(--expert-button-size, 64px) - 12px);
+  height: calc(var(--expert-button-size, 64px) - 12px);
+  border-radius: 50%;
+  background: #dfe6e9;
+  box-shadow: inset -4px -4px 8px #ffffff, inset 4px 4px 8px rgba(196, 196, 196, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+
+.talk-to-expert-fab-icon-circle {
+  width: calc(var(--expert-button-size, 64px) - 24px);
+  height: calc(var(--expert-button-size, 64px) - 24px);
+  border-radius: 50%;
+  background: #dfe6e9;
+  box-shadow: 4px 4px 8px #c6c6c9, -4px -4px 8px #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #2d4cc8;
+}
+
+.talk-to-expert-fab-icon {
+  width: 22px;
+  height: 22px;
+  display: block;
+}
+
+/* Retained for any existing references; the circular control is icon-only. */
+.talk-to-expert-fab-label { display: none; }
+
+@media (max-width: 768px) {
+  .talk-to-expert-fab-icon { width: 18px; height: 18px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .talk-to-expert-fab { transition: none; }
+}
+
+
+/* A quiet attention cue: only the blue ring opacity changes.
+   The button stays at exactly the same position and size. */
+.talk-to-expert-fab::after {
+  content: "";
+  display: var(--expert-attention-display, none);
+  position: absolute;
+  inset: 3px;
+  border: 2px solid rgba(45, 76, 200, 0.45);
+  border-radius: 50%;
+  box-shadow: inset 0 0 5px rgba(45, 76, 200, 0.12);
+  pointer-events: none;
+  opacity: 0;
+  animation: expert-presence 7s ease-in-out 1s 3;
+}
+
+@keyframes expert-presence {
+  0%, 65%, 100% { opacity: 0; }
+  30%, 40% { opacity: 0.6; }
+}
+
+.talk-to-expert-fab:hover::after,
+.talk-to-expert-fab:focus-visible::after,
+.talk-to-expert-fab[aria-expanded="true"]::after {
+  animation: none;
+  opacity: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .talk-to-expert-fab::after { animation: none; opacity: 0; }
 }

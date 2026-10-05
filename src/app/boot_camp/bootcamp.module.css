@@ -7814,3 +7814,140 @@
     overflow-wrap: normal !important;
   }
 }
+
+/* =========================================================
+   BOOTCAMP — TALK TO OUR EXPERT BUTTON
+   Desktop: placed in the unused right-side space of the
+   Practical Learning section.
+   Tablet/mobile: moved into the empty section gap above
+   so it never overlaps text, cards, images, or controls.
+   ========================================================= */
+
+.bootcampExpertSlot {
+  --expert-button-size: 64px;
+  position: absolute;
+  top: 0;
+  right: 18px;
+  width: var(--expert-button-size);
+  height: var(--expert-button-size);
+  z-index: 20;
+  pointer-events: none;
+}
+
+.bootcampExpertSlot > :global(button[class*="talk-to-expert-fab"]) {
+  position: absolute !important;
+  inset: 0 !important;
+  top: 0 !important;
+  right: 0 !important;
+  bottom: auto !important;
+  left: auto !important;
+  margin: 0 !important;
+  transform: none !important;
+  translate: none !important;
+  pointer-events: auto !important;
+}
+
+/* Tablet: use the empty space above the section. */
+@media screen and (max-width: 1199px) {
+  .bootcampExpertSlot {
+    --expert-button-size: 48px;
+    top: -58px;
+    right: 8px;
+  }
+}
+
+/* Phone */
+@media screen and (max-width: 600px) {
+  .bootcampExpertSlot {
+    --expert-button-size: 44px;
+    top: -54px;
+    right: 6px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .bootcampExpertSlot {
+    --expert-button-size: 42px;
+    top: -52px;
+    right: 4px;
+  }
+}
+
+/* Same subtle professional pulse as the other corrected pages. */
+.bootcampExpertSlot::after {
+  content: "";
+  position: absolute;
+  inset: 2px;
+  z-index: 0;
+  border: 2px solid rgba(45, 76, 200, 0.38);
+  border-radius: 50%;
+  box-sizing: border-box;
+  pointer-events: none;
+  opacity: 0;
+  animation: bootcampExpertPulse 3s ease-out infinite;
+}
+
+@keyframes bootcampExpertPulse {
+  0%, 15% {
+    transform: scale(1);
+    opacity: 0;
+  }
+
+  30% {
+    opacity: 0.55;
+  }
+
+  75%, 100% {
+    transform: scale(1.32);
+    opacity: 0;
+  }
+}
+
+.bootcampExpertSlot > :global(button[class*="talk-to-expert-fab"]) {
+  transition: box-shadow 180ms ease, background-color 180ms ease;
+}
+
+.bootcampExpertSlot > :global(button[class*="talk-to-expert-fab"]):hover,
+.bootcampExpertSlot > :global(button[class*="talk-to-expert-fab"]):focus-visible {
+  box-shadow:
+    -5px -5px 10px #ffffff,
+    5px 5px 10px #c6c6c9,
+    0 0 0 3px rgba(45, 76, 200, 0.14);
+}
+
+.bootcampExpertSlot > :global(button[class*="talk-to-expert-fab"]):hover svg,
+.bootcampExpertSlot > :global(button[class*="talk-to-expert-fab"]):focus-visible svg {
+  transform-origin: center;
+  animation: bootcampExpertWave 600ms ease-in-out;
+}
+
+@keyframes bootcampExpertWave {
+  0%, 100% { transform: rotate(0deg); }
+  25% { transform: rotate(-12deg); }
+  50% { transform: rotate(10deg); }
+  75% { transform: rotate(-5deg); }
+}
+
+.bootcampExpertSlot > :global(button[class*="talk-to-expert-fab"]):active {
+  box-shadow:
+    inset -4px -4px 8px #ffffff,
+    inset 4px 4px 8px #c6c6c9;
+}
+
+.bootcampExpertSlot:has(> :global(button[aria-expanded="true"]))::after {
+  animation: none;
+  opacity: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .bootcampExpertSlot::after,
+  .bootcampExpertSlot > :global(button[class*="talk-to-expert-fab"]):hover svg,
+  .bootcampExpertSlot > :global(button[class*="talk-to-expert-fab"]):focus-visible svg {
+    animation: none;
+  }
+
+  .bootcampExpertSlot > :global(button[class*="talk-to-expert-fab"]) {
+    transition: none;
+  }
+}
+

@@ -108,6 +108,12 @@ export default function CodingResources() {
           </section>
 
           <section className={styles.learning}>
+            <div
+              id="coding-resources-talk-to-expert-button-slot"
+              data-expert-button-slot
+              className={styles.codingResourcesExpertSlot}
+            />
+
             <h2>
               Comprehensive Programming
               <br />
@@ -141,7 +147,7 @@ export default function CodingResources() {
           </section>
 
           <section className={styles.practice}>
-            <div className={styles.practiceIntro}>
+<div className={styles.practiceIntro}>
               <h2>
                 Practice-Oriented Coding{" "}
                 <span style={{ color: "#2d4cc8" }}>Support</span>
