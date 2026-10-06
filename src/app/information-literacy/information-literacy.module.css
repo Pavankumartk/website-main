@@ -3105,3 +3105,27 @@ body:has(.informationLiteracy) * {
     --expert-button-right: 112px;
   }
 }
+
+/* Mobile Learning Journey alignment fix:
+   keep all four numbered circles and cards in the same two-column alignment. */
+@media (max-width: 640px) {
+  .informationLiteracy .journeyStageSynthesise {
+    row-gap: initial;
+  }
+
+  .informationLiteracy .journeyStageSynthesise .journeyCard {
+    grid-column: auto;
+    width: 100%;
+    max-width: none;
+    padding: 16px 18px;
+  }
+}
+.learnersThinkTm {
+  position: relative;
+  top: -0.55em;
+  margin-left: 1px;
+  font-size: 0.45em;
+  line-height: 0;
+  vertical-align: baseline;
+  font-weight: 600;
+}
