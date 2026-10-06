@@ -152,11 +152,11 @@ const InformationLiteracy: NextPage = () => {
           <div className={styles.frameGroup}>
             <div className={styles.frameContainer}>
               <div className={styles.researchDiscoveryBadge}>Research & Discovery</div>
-              <b className={styles.researchSmarterLearn}>
-                Research Smarter
-                <br />
-                Learn Better
-              </b>
+             <b className={styles.researchSmarterLearn}>
+  Research Smarter
+  <br />
+  Learn <span style={{ color: "#2D4CC8" }}>Better</span>
+</b>
             </div>
             <div className={styles.buildResearchSkills}>Build research skills that transform information into meaningful, actionable insights.</div>
           </div>
@@ -252,7 +252,7 @@ const InformationLiteracy: NextPage = () => {
             onClick={openBookDemo}
             ref={bookDemoButtonRef}
           >
-            <div className={styles.requestDemo}>Request Demo</div>
+            <div className={styles.requestDemo}>Book a Demo</div>
           </button>
           <button
             type="button"
@@ -512,9 +512,11 @@ const InformationLiteracy: NextPage = () => {
       </div>
       <div className={styles.frameParent40}>
         <div className={styles.builtForTheWayLearnersActParent}>
-          <div className={styles.learnersThinkBadge}>Why NeuroLXP™</div>
-          <b className={styles.builtForTheContainer}>Built for the Way Learners Actually Think</b>
-          <div className={styles.empowerLearnersTo}>NeuroLXP transforms information literacy into practical skills through structured learning and real-world application.</div>
+<div className={styles.learnersThinkBadge}>
+  Why NeuroLXP<sup className={styles.learnersThinkTm}>TM</sup>
+</div><b className={styles.builtForTheContainer}>
+  Built for the Way Learners Actually <span style={{ color: "#2D4CC8" }}>Think</span>
+</b>          <div className={styles.empowerLearnersTo}>NeuroLXP transforms information literacy into practical skills through structured learning and real-world application.</div>
         </div>
       </div>
       <div className={styles.frameParent41}>
