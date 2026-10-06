@@ -3165,3 +3165,167 @@
   }
 }
 
+
+
+/* Mobile only: center the top text in the 3Ms card. */
+@media (max-width: 767.98px) {
+  .frameParent9 .msParent {
+    left: 50% !important;
+    right: auto !important;
+    transform: translateX(-50%) !important;
+    width: calc(100% - 40px) !important;
+    max-width: 320px !important;
+    align-items: center !important;
+    text-align: center !important;
+  }
+
+  .frameParent9 .ms2,
+  .frameParent9 .beyondSkillsIts {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    text-align: center !important;
+  }
+}
+
+
+
+/* Mobile only: align only the 3Ms icons and text like the 8Cs list.
+   The existing label/card size and position are unchanged. */
+@media (max-width: 767.98px) {
+  .frameParent9 .brain01Parent,
+  .frameParent9 .analyticsUpParent {
+    left: 24px !important;
+    right: 14px !important;
+    width: auto !important;
+    margin: 0 !important;
+    display: flex !important;
+    align-items: center !important;
+    gap: 14px !important;
+    transform: none !important;
+  }
+
+  .frameParent9 .brain01Icon,
+  .frameParent9 .analyticsUpIcon {
+    width: 24px !important;
+    height: 24px !important;
+    flex: 0 0 24px !important;
+    transform: none !important;
+  }
+
+  .frameParent9 .mindset,
+  .frameParent9 .metacognition {
+    flex: 1 1 auto !important;
+    margin: 0 !important;
+    text-align: center !important;
+  }
+}
+
+
+
+@media (max-width: 767.98px) {
+  .frameParent22 {
+    align-items: center !important;
+    text-align: center !important;
+  }
+
+  .neurolxpWrapper {
+    width: 100% !important;
+    align-items: center !important;
+    text-align: center !important;
+  }
+
+  .neurolxp {
+    width: 100% !important;
+    text-align: center !important;
+  }
+
+  .bringingThe3rs8cs3msContainer {
+    width: 100% !important;
+    text-align: center !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+}
+
+/* =========================================================
+   Final alignment and text-selection fixes
+   ========================================================= */
+
+/* Center the icon + text content inside every list item
+   across the 3Rs, 8Cs and 3Ms cards. */
+.frameParent8 .brain01Parent,
+.frameParent8 .analyticsUpParent,
+.frameParent8 .award02Parent,
+.frameParent8 .target01Parent {
+  left: 0 !important;
+  right: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  top: 0 !important;
+  margin: 0 !important;
+  padding: 0 14px !important;
+  box-sizing: border-box !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 14px !important;
+  transform: none !important;
+}
+
+/* Keep the icons at their original size while centering each row. */
+.frameParent8 .brain01Icon,
+.frameParent8 .analyticsUpIcon,
+.frameParent8 .cardIcon,
+.frameParent8 .skillIcon {
+  flex: 0 0 24px !important;
+}
+
+/* Make the complete last section text selectable. */
+.rectangleParent,
+.rectangleParent .frameParent22,
+.rectangleParent .neurolxpWrapper,
+.rectangleParent .neurolxp,
+.rectangleParent .bringingThe3rs8cs3msContainer,
+.rectangleParent .bringingThe,
+.rectangleParent .rs8cs3m,
+.rectangleParent .cs3,
+.rectangleParent .m {
+  -webkit-user-select: text !important;
+  user-select: text !important;
+}
+
+.rectangleParent .frameParent22 {
+  pointer-events: auto !important;
+}
+
+.rectangleParent .background3rs,
+.rectangleParent .smilingWomanWithBooksMortaIcon {
+  pointer-events: none !important;
+}
+
+/* Mobile: keep the last-section text centered and selectable. */
+@media (max-width: 767.98px) {
+  .rectangleParent .frameParent22 {
+    align-items: center !important;
+    text-align: center !important;
+  }
+
+  .rectangleParent .neurolxpWrapper {
+    width: 100% !important;
+    align-items: center !important;
+    text-align: center !important;
+  }
+
+  .rectangleParent .neurolxp,
+  .rectangleParent .bringingThe3rs8cs3msContainer {
+    width: 100% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    text-align: center !important;
+    -webkit-user-select: text !important;
+    user-select: text !important;
+  }
+}
+
