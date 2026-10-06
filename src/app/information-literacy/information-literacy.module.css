@@ -3135,3 +3135,16 @@ body:has(.informationLiteracy) * {
     flex: 1 1 662px;
   }
 }
+
+
+/* Mobile only: move the Ethics & Integrity card text upward into the empty top space. */
+@media (max-width: 640px) {
+  .informationLiteracy .frameParent23 :is(
+    .citationExcellenceParent,
+    .academicIntegrityParent,
+    .intellectualPropertyParent,
+    .ethicalKnowledgeParent
+  ) {
+    transform: translateY(-18px);
+  }
+}
