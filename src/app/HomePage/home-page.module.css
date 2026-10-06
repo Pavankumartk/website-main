@@ -2388,9 +2388,13 @@ a:focus-visible {
 }
 
 .smv-badge-tm {
-  font-size: 0.6em;
-  font-weight: 500;
+  display: inline-block;
+  font-size: 0.45em;
+  font-weight: 700;
+  line-height: 1;
+  vertical-align: super;
   margin-left: 2px;
+  letter-spacing: 0;
 }
 
 .smv-heading {
@@ -4535,19 +4539,6 @@ a:focus-visible {
   }
 }
 
-/* Lift badge trademarks slightly without changing badge or text dimensions. */
-.smv-badge sup,
-.smv-badge-tm,
-.platform-overview-tag sup,
-.meet-neurolxp-badge sup,
-.why-choose-badge sup,
-.learning-modules-badge sup,
-.testimonials-badge sup,
-.get-in-touch-badge sup {
-  position: relative;
-  top: -3px;
-}
-
 /* Restore equal breathing space only inside Transforming Digital Learning.
    The background follows the text height, including wrapped lines. */
 @media (min-width: 1024px) {
@@ -4627,5 +4618,406 @@ a:focus-visible {
 @media (min-width: 1024px) {
   :global(body):has(.home-expert-placement) {
     --expert-button-right: 112px;
+  }
+}
+
+/* =========================================================
+   NeuroLXP TM — exact raised trademark placement
+   Keeps all existing badge/layout styling unchanged.
+   ========================================================= */
+.smv-badge-tm {
+  display: inline-block !important;
+  position: relative !important;
+  top: -0.72em !important;
+  vertical-align: baseline !important;
+  margin-left: 1px !important;
+  margin-right: 0 !important;
+  padding: 0 !important;
+  font-size: 0.42em !important;
+  font-weight: 600 !important;
+  line-height: 1 !important;
+  letter-spacing: 0 !important;
+  white-space: nowrap !important;
+}
+
+/* =========================================================
+   MOBILE ONLY — hide carousel previous/next arrow controls
+   Desktop and tablet remain unchanged.
+   ========================================================= */
+@media (max-width: 767px) {
+  .hero-nav-button,
+  .learning-modules-nav-button,
+  .testimonials-nav-button {
+    display: none !important;
+  }
+}
+
+/* Mobile: completely remove carousel arrow controls and their leftover dots */
+@media (max-width: 767px) {
+  .hero-nav-button,
+  .hero-nav-button-prev,
+  .hero-nav-button-next,
+  .learning-modules-nav-button,
+  .testimonials-nav-button {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+    box-shadow: none !important;
+    border: 0 !important;
+    width: 0 !important;
+    height: 0 !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    pointer-events: none !important;
+  }
+
+  .hero-nav-button::before,
+  .hero-nav-button::after,
+  .learning-modules-nav-button::before,
+  .learning-modules-nav-button::after,
+  .testimonials-nav-button::before,
+  .testimonials-nav-button::after {
+    display: none !important;
+    content: none !important;
+  }
+}
+
+/* MOBILE FINAL: remove carousel navigation controls completely */
+@media screen and (max-width: 767px) {
+  .learning-modules-nav,
+  .testimonials-nav {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+    width: 0 !important;
+    height: 0 !important;
+    min-width: 0 !important;
+    min-height: 0 !important;
+    max-width: 0 !important;
+    max-height: 0 !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    border: 0 !important;
+    box-shadow: none !important;
+    background: transparent !important;
+    overflow: hidden !important;
+    pointer-events: none !important;
+  }
+
+  .learning-modules-nav-button,
+  .testimonials-nav-button,
+  .learning-modules-nav-icon,
+  .testimonials-nav-icon {
+    display: none !important;
+    visibility: hidden !important;
+  }
+
+  .learning-modules-nav::before,
+  .learning-modules-nav::after,
+  .testimonials-nav::before,
+  .testimonials-nav::after {
+    display: none !important;
+    content: none !important;
+  }
+}
+
+/* =========================================================
+   MOBILE — keep the Talk to Our Expert launcher below the
+   Learning Modules cards so it never overlaps a card.
+   Desktop and tablet remain unchanged.
+   ========================================================= */
+@media screen and (max-width: 767px) {
+  .learning-modules-section {
+    /* Reserve a clean row below the cards for the floating expert launcher. */
+    padding-bottom: 88px !important;
+  }
+
+  .learning-modules-expert-button-slot {
+    right: 14px !important;
+    bottom: 12px !important;
+    width: 56px !important;
+    height: 56px !important;
+    z-index: 12 !important;
+  }
+
+  .learning-modules-expert-button-slot > .get-in-touch-expert-button {
+    width: 56px !important;
+    min-width: 56px !important;
+    max-width: 56px !important;
+    height: 56px !important;
+    min-height: 56px !important;
+    max-height: 56px !important;
+    flex-basis: 56px !important;
+    margin: 0 !important;
+  }
+
+  .learning-modules-expert-button-slot
+    > .get-in-touch-expert-button
+    > span:first-child {
+    width: 46px !important;
+    min-width: 46px !important;
+    height: 46px !important;
+    min-height: 46px !important;
+  }
+
+  .learning-modules-expert-button-slot
+    > .get-in-touch-expert-button
+    > span:first-child
+    > span {
+    width: 34px !important;
+    min-width: 34px !important;
+    height: 34px !important;
+    min-height: 34px !important;
+  }
+
+  .learning-modules-expert-button-slot
+    > .get-in-touch-expert-button
+    > span:first-child
+    svg {
+    width: 20px !important;
+    height: 20px !important;
+  }
+
+  /* Keep Testimonials clearly below the reserved launcher row. */
+  .testimonials-section {
+    padding-top: 20px !important;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .faq-item-title {
+    white-space: nowrap !important;
+    word-break: keep-all !important;
+    overflow-wrap: normal !important;
+    font-size: 15px !important;
+  }
+}
+
+/* MOBILE FAQ — keep question text on one line */
+@media screen and (max-width: 767px) {
+  .faq-item-header {
+    display: flex !important;
+    align-items: center !important;
+    flex-wrap: nowrap !important;
+  }
+
+  .faq-item-number {
+    flex: 0 0 auto !important;
+    white-space: nowrap !important;
+  }
+
+  .faq-item-title {
+    flex: 1 1 auto !important;
+    min-width: 0 !important;
+    white-space: nowrap !important;
+    word-break: keep-all !important;
+    overflow-wrap: normal !important;
+    font-size: 14px !important;
+    line-height: 1.2 !important;
+  }
+
+  .faq-item-toggle,
+  .faq-item-icon,
+  .faq-item-button {
+    flex: 0 0 auto !important;
+  }
+}
+
+/* MOBILE FAQ FINAL — force every FAQ question onto one line */
+@media screen and (max-width: 767px) {
+  .faq-item-header {
+    display: grid !important;
+    grid-template-columns: auto auto minmax(0, 1fr) 36px !important;
+    align-items: center !important;
+    column-gap: 6px !important;
+    padding: 12px 14px 12px 8px !important;
+    min-height: 78px !important;
+  }
+
+  .faq-item-header-left {
+    display: contents !important;
+  }
+
+  .faq-item-triangle {
+    display: none !important;
+  }
+
+  .faq-item-number {
+    grid-column: 1 !important;
+    grid-row: 1 !important;
+    font-size: 20px !important;
+    line-height: 1 !important;
+    white-space: nowrap !important;
+  }
+
+  .faq-item-divider {
+    grid-column: 2 !important;
+    grid-row: 1 !important;
+    width: 3px !important;
+    height: 26px !important;
+    margin: 0 2px !important;
+  }
+
+  .faq-item-title {
+    grid-column: 3 !important;
+    grid-row: 1 !important;
+    width: auto !important;
+    min-width: 0 !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    font-size: 14px !important;
+    line-height: 1.15 !important;
+    letter-spacing: 0 !important;
+    white-space: nowrap !important;
+    word-break: keep-all !important;
+    overflow-wrap: normal !important;
+    hyphens: none !important;
+  }
+
+  /* Critical: TSX has an explicit <br>; hide it on mobile. */
+  .faq-item-title .faq-mobile-break,
+  .faq-mobile-break {
+    display: none !important;
+  }
+
+  .faq-item-toggle {
+    grid-column: 4 !important;
+    grid-row: 1 !important;
+    justify-self: end !important;
+    width: 34px !important;
+    height: 34px !important;
+    min-width: 34px !important;
+    flex: none !important;
+  }
+
+  .faq-item-toggle-icon {
+    width: 18px !important;
+    height: 18px !important;
+  }
+}
+
+
+/* CAROUSEL ARROWS — interaction fix only */
+.learning-modules-nav,
+.learning-modules-nav-button,
+.learning-modules-nav-icon,
+.testimonials-nav,
+.testimonials-nav-button,
+.testimonials-nav-icon {
+  -webkit-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+}
+
+.learning-modules-nav-button,
+.testimonials-nav-button {
+  touch-action: manipulation;
+}
+
+
+/* FAQ FULL-CARD CLICK TARGET — interaction only */
+.faq-item-heading {
+  position: relative;
+}
+
+.faq-item-header {
+  cursor: pointer;
+  -webkit-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+  touch-action: manipulation;
+}
+
+.faq-item-header-left,
+.faq-item-triangle,
+.faq-item-number,
+.faq-item-divider,
+.faq-item-title,
+.faq-item-toggle,
+.faq-item-toggle-icon {
+  pointer-events: none;
+}
+
+/* MOBILE FINAL — compact Learning Modules/Testimonial gap + responsive FAQ wrapping */
+@media screen and (max-width: 767px) {
+  /*
+    The previous mobile rule reserved 88px under Learning Modules for the
+    expert button. Keep only the space actually needed by the 56px button.
+  */
+  .learning-modules-section {
+    padding-bottom: 58px !important;
+  }
+
+  .learning-modules-expert-button-slot {
+    bottom: 2px !important;
+  }
+
+  /* Pull Testimonials up without changing its badge/card styling. */
+  .testimonials-section {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+  }
+
+  /*
+    FAQ: keep number/divider/toggle fixed and let only the question use the
+    remaining width. Short questions stay on one line; longer questions wrap
+    naturally to line two instead of being clipped.
+  */
+  .faq-item-header {
+    display: grid !important;
+    grid-template-columns: auto auto minmax(0, 1fr) 34px !important;
+    align-items: center !important;
+    column-gap: 6px !important;
+    padding: 12px 14px 12px 8px !important;
+    min-height: 78px !important;
+  }
+
+  .faq-item-header-left {
+    display: contents !important;
+  }
+
+  .faq-item-number {
+    grid-column: 1 !important;
+    grid-row: 1 !important;
+    white-space: nowrap !important;
+  }
+
+  .faq-item-divider {
+    grid-column: 2 !important;
+    grid-row: 1 !important;
+  }
+
+  .faq-item-title {
+    grid-column: 3 !important;
+    grid-row: 1 !important;
+    width: 100% !important;
+    min-width: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    font-size: 14px !important;
+    line-height: 1.25 !important;
+    letter-spacing: 0 !important;
+    white-space: normal !important;
+    word-break: normal !important;
+    overflow-wrap: break-word !important;
+    hyphens: none !important;
+    overflow: visible !important;
+    text-overflow: clip !important;
+  }
+
+  /* Do not force the old authored mobile break; wrapping follows real space. */
+  .faq-item-title .faq-mobile-break,
+  .faq-mobile-break {
+    display: none !important;
+  }
+
+  .faq-item-toggle {
+    grid-column: 4 !important;
+    grid-row: 1 !important;
+    justify-self: end !important;
+    width: 34px !important;
+    height: 34px !important;
+    min-width: 34px !important;
+    flex: none !important;
   }
 }
