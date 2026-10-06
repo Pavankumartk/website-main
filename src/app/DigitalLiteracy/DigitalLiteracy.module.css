@@ -2040,7 +2040,7 @@
 
   .dl-bullet-item:hover .dl-bullet-underline line {
 
-    stroke-dashoffset: 0;
+    stroke-dashoffset: 1;
 
   }
 
@@ -2054,7 +2054,7 @@
 
   .dl-callout-card:hover .dl-callout-title::after {
 
-    width: 100%;
+    width: 0;
 
   }
 
@@ -4406,7 +4406,7 @@ html:has(.digital-literacy) :is(svg text, svg tspan) {
 
     max-width: 240px;
 
-    gap: 14px;
+    gap: 22px;
 
     grid-auto-rows: 1fr;
 
