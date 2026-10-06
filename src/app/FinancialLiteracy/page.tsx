@@ -974,11 +974,13 @@ export default function FinancialLiteracyPage() {
 
 
 
-            <b className={styles.buildResponsibleFinancial}>Build Responsible Financial Habits</b>
+<b className={styles.buildResponsibleFinancial}>
+  Build Responsible Financial{" "}
+  <span style={{ color: "#2D4CC8" }}>Habits</span>
+</b>
 
 
-
-            <div className={styles.buildTheSkills}>Financial literacy help learners build responsible money habits for long-term financial well-being Learn to</div>
+            <div className={styles.buildTheSkills}>Financial literacy help learners build responsible money habits for long term financial well-being Learn to</div>
 
 
 
@@ -1342,8 +1344,10 @@ export default function FinancialLiteracyPage() {
 
 
 
-          <SectionBadge label="NeuroLXP" className={styles.frameChild18} />
-
+<div className={styles.neuroBadgeWithTM}>
+  <SectionBadge label="NeuroLXP" className={styles.frameChild18} />
+  <sup className={styles.neuroTrademark}>TM</sup>
+</div>
 
 
           <div className={styles.financialConfidenceStartsHeParent}>
