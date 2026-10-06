@@ -62,17 +62,15 @@ const NeuroLXP2103Rs8Cs3MsLiteracy: NextPage = () => {
 
                     <div className={styles.frameItem}>NeuroLXP Framework</div>
 
-                    <b className={styles.skillsThatMatter}>
-
-                      Skills That Matter Beyond Exams
-
-                      <br />
-
-                    </b>
+                   <b className={styles.skillsThatMatter}>
+  Skills That Matter Beyond{" "}
+  <span style={{ color: "#2D4CC8" }}>Exams</span>
+  <br />
+</b>
 
                   </div>
 
-                  <div className={styles.poweredByThe}>Powered by the 3Rs-8Cs-3Ms framework, NeuroLXP builds future-ready skills and lifelong learning.</div>
+                  <div className={styles.poweredByThe}>Powered by the 3Rs-8Cs-3Ms framework, NeuroLXP builds future ready skills and lifelong learning.</div>
 
                 </div>
 
