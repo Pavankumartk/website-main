@@ -4650,8 +4650,8 @@
 }
 
 
-/* Keep the launcher within the fluid page on tablet and phone screens. */
-@media (width < 1024px) {
+/* Keep the launcher within the fluid page on tablet screens. */
+@media (min-width: 768px) and (width < 1024px) {
   .sectionExpertSlot {
     right: 8px;
   }
@@ -4739,3 +4739,92 @@
   margin-left: auto !important;
   margin-right: auto !important;
 }
+
+/* Why GenZGalaxy badge alignment only */
+.genzgalaxy .frameParent6 .frameParent7 .frameParent8 {
+  width: 100%;
+  align-items: center;
+  text-align: center;
+}
+
+.genzgalaxy .frameParent6 .frameParent7 .frameParent8 .whyGenzBadge {
+  align-self: center;
+  margin-left: auto;
+  margin-right: auto;
+  transform: none;
+}
+
+@media (width < 1024px) {
+  .genzgalaxy .frameParent6 .frameParent7 .frameParent8 .whyGenzBadge {
+    align-self: center !important;
+    justify-self: center !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    transform: none !important;
+  }
+}
+
+/* Mobile: place the Talk to Expert button in the free space beside the
+   Why GenZGalaxy badge so it never overlaps the heading or description. */
+@media (width < 768px) {
+  .genzgalaxy .frameParent6 {
+    position: relative !important;
+  }
+
+  .genzgalaxy .frameParent6 .sectionExpertSlot {
+    top: 0 !important;
+    right: 8px !important;
+    left: auto !important;
+    width: 52px !important;
+    height: 52px !important;
+    transform: none !important;
+  }
+
+  .genzgalaxy .frameParent6 .sectionExpertSlot > :global(button[class*="talk-to-expert-fab"]) {
+    width: 52px !important;
+    height: 52px !important;
+    min-width: 52px !important;
+    min-height: 52px !important;
+    inset: 0 !important;
+    margin: 0 !important;
+    transform: none !important;
+  }
+
+  .genzgalaxy .frameParent6 .sectionExpertSlot > :global(button[class*="talk-to-expert-fab"]) svg {
+    width: 22px !important;
+    height: 22px !important;
+  }
+}
+
+/* Mobile: move only the round Talk-to-Expert button upward.
+   Keep the "Why GenZGalaxy" label and the rest of the section unchanged. */
+@media (width < 768px) {
+  .genzgalaxy .frameParent6 {
+    position: relative !important;
+  }
+
+  .genzgalaxy .frameParent6 .sectionExpertSlot {
+    top: -50px !important;
+    right: 8px !important;
+    left: auto !important;
+    width: 52px !important;
+    height: 52px !important;
+    transform: none !important;
+  }
+
+  .genzgalaxy .frameParent6 .sectionExpertSlot > :global(button[class*="talk-to-expert-fab"]) {
+    width: 52px !important;
+    height: 52px !important;
+    min-width: 52px !important;
+    min-height: 52px !important;
+    inset: 0 !important;
+    margin: 0 !important;
+    transform: none !important;
+  }
+
+  .genzgalaxy .frameParent6 .sectionExpertSlot > :global(button[class*="talk-to-expert-fab"]) svg {
+    width: 22px !important;
+    height: 22px !important;
+  }
+}
+
