@@ -463,18 +463,10 @@ const MediaLiteracy: NextPage = () => {
                   <br />
 
                 </b>
-
-                <div className={styles.understandMediaPlatforms}>
-
-                  Understand media platforms and their reach
-
-                  <br />
-
-                  <br />
-
-                  <br />
-
-                </div>
+<div className={styles.understandMediaPlatforms}>
+  <span className={styles.mobileFirstLine}>Understand media platforms</span>
+  <span className={styles.mobileSecondLine}> and their reach</span>
+</div>
 
               </div>
 
@@ -586,11 +578,10 @@ const MediaLiteracy: NextPage = () => {
 
               <div className={styles.frameChild20}>Critical Thinking</div>
 
-              <b className={styles.questionUnderstandEvaluate}>
-
-                Question! Understand! Evaluate
-
-              </b>
+             <b className={styles.questionUnderstandEvaluate}>
+  Question! Understand!{" "}
+  <span style={{ color: "#2D4CC8" }}>Evaluate</span>
+</b>
 
             </div>
 
@@ -788,8 +779,9 @@ const MediaLiteracy: NextPage = () => {
 
                 <div className={styles.frameParent42}>
 
-                  <div className={styles.frameChild22}>Why NeuroLXP</div>
-
+<div className={styles.frameChild22}>
+  Why NeuroLXP<sup className={styles.neuroTrademark}>TM</sup>
+</div>
                   <div className={styles.navigateMediaWithConfidenceWrapper}>
 
 <b className={styles.navigateMediaWithContainer}>
