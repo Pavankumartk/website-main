@@ -79,7 +79,7 @@
   width: 380px;
   height: 480px;
   overflow: hidden;
- 
+
 }
 
 .frameChild {
@@ -140,7 +140,8 @@
 .frameParent4 {
   position: absolute;
   top: 315px;
-  left: calc(50% - 257.01px);
+  left: 50%;
+  transform: translateX(-50%);
   display: flex;
   align-items: center;
   gap: 32px;
@@ -558,7 +559,7 @@
 	left: 9px;
 	width: 1207px;
 	height: 754px;
-	
+
 	flex-shrink: 0;
 	opacity: 0.08;
 	z-index: 0;
@@ -736,7 +737,7 @@
     4px 4px 8px #c6c6c9;
   border-radius: 100px;
   background-color: transparent;
-  
+
   box-sizing: border-box;
   width: 345px;
   height: 72px;
@@ -773,7 +774,7 @@
   justify-content: center;
   flex-shrink: 0;
   z-index: 0;
-  
+
 
   color: #2D4CC8;}
 
@@ -800,7 +801,7 @@
     4px 4px 8px #c6c6c9;
   border-radius: 100px;
   background-color: transparent;
-  
+
   box-sizing: border-box;
   width: 345px;
   height: 72px;
@@ -849,7 +850,7 @@
     4px 4px 8px #c6c6c9;
   border-radius: 100px;
   background-color: transparent;
-  
+
   box-sizing: border-box;
   width: 345px;
   height: 72px;
@@ -898,7 +899,7 @@
     4px 4px 8px #c6c6c9;
   border-radius: 100px;
   background-color: transparent;
-  
+
   box-sizing: border-box;
   width: 345px;
   height: 72px;
@@ -1467,7 +1468,7 @@
   gap: 78px;
   flex-shrink: 0;
   color: #2d4cc8;
-  
+
 }
 
 .wrapperPolygon16Parent {
@@ -1523,7 +1524,7 @@
   width: 768px;
   height: 759px;
   object-fit: cover;
-  
+
 }
 
 .frameWrapper6 {
@@ -1841,7 +1842,7 @@
   flex-shrink: 0;
   opacity: 0.04;
 	z-index: 0;
-  
+
 }
 
 .image202 {
@@ -2508,7 +2509,7 @@
     font-size: 15px;
     line-height: 18px;
     border-radius: 24px;
-  
+
   margin-left: 0 !important;}
 
 .greatLearningHappensContainer {
@@ -2605,7 +2606,7 @@
 
 .frameParent32 { width:100%; height:auto; gap:17px; }
 
-.learningTogetherBadge { align-self: flex-start !important; transform: translateX(0) !important; margin-right:0; padding:13px 24px; font-size:24px; line-height:24px; border-radius:28px; 
+.learningTogetherBadge { align-self: flex-start !important; transform: translateX(0) !important; margin-right:0; padding:13px 24px; font-size:24px; line-height:24px; border-radius:28px;
   margin-left: 0 !important;}
 
 .greatLearningHappensContainer { width:100%; font-size: 36px; line-height:43px; letter-spacing:.02em; }
@@ -2651,7 +2652,7 @@
   object-position: center bottom !important;
   padding: 8px 4px 0 !important;
 
-  
+
   transform: translateX(20px) !important;
 }
 
@@ -4720,4 +4721,21 @@
   .sectionExpertSlot > :global(button[class*="talk-to-expert-fab"]) {
     transition: none;
   }
+}
+
+/* Keep the top Explore Platform button centered on every device.
+   Responsive layouts make this element relative, so do not offset it with left/translate. */
+.genzgalaxy .frameParent4 {
+  left: auto !important;
+  right: auto !important;
+  transform: none !important;
+  align-self: center !important;
+  justify-content: center !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.genzgalaxy .frameParent4 .frameWrapper4 {
+  margin-left: auto !important;
+  margin-right: auto !important;
 }
