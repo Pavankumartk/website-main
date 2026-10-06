@@ -3148,3 +3148,76 @@ body:has(.informationLiteracy) * {
     transform: translateY(-18px);
   }
 }
+
+
+/* Mobile only: align Learning Journey circles and cards consistently. */
+@media (max-width: 640px) {
+  .journeyTimeline {
+    width: 100%;
+    gap: 20px;
+  }
+
+  .journeyStage {
+    width: 100%;
+    grid-template-columns: 54px minmax(0, 1fr);
+    align-items: center;
+    gap: 12px;
+  }
+
+  .journeyCircle {
+    width: 54px;
+    height: 54px;
+    flex: 0 0 54px;
+    align-self: center;
+  }
+
+  .journeyCircle::before {
+    width: 40px;
+    height: 40px;
+  }
+
+  .journeyCircle span {
+    font-size: 15px;
+  }
+
+  .journeyCard {
+    grid-column: 2;
+    width: 100%;
+    min-width: 0;
+    min-height: 82px;
+    height: auto;
+    padding: 12px 14px;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: left;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+
+  .journeyCardTitle {
+    margin: 0 0 5px;
+    font-size: 15px;
+    line-height: 1.2;
+  }
+
+  .journeyCardDescription {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    font-size: 12px;
+    line-height: 1.35;
+    white-space: normal;
+    overflow-wrap: break-word;
+  }
+
+  .journeyStageSynthesise {
+    row-gap: 0;
+  }
+
+  .journeyStageSynthesise .journeyCard {
+    grid-column: 2;
+    width: 100%;
+    max-width: none;
+    padding: 12px 14px;
+  }
+}
