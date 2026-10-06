@@ -509,7 +509,7 @@ const storyMissionVisionCards: StoryMissionVisionCardData[] = [
   {
     id: 1,
     title: "Our Story",
-    description: "NeuroLXP transforms learning with an intelligent platform for future-ready digital skills.",
+    description: "NeuroLXP transforms learning with an intelligent platform for future ready digital skills.",
     image: "/images/interested-coworkers-with-new-project.webp",
     accentColor: "#2D4CC8",
     Icon: BookOpenIcon,
@@ -517,7 +517,7 @@ const storyMissionVisionCards: StoryMissionVisionCardData[] = [
   {
     id: 2,
     title: "Our Mission",
-    description: "Intelligent learning and skilling for measurable, future-ready success across learners and organizations.",
+    description: "Intelligent learning and skilling for measurable, future ready success across learners and organizations.",
     image: "/images/interested-coworkers-project.webp",
     accentColor: "#2A7308",
     Icon: GoalIcon,
@@ -598,7 +598,9 @@ function StoryMissionVision() {
           <span className={styles["smv-heading-vision"]}>Our Vision</span>
         </h2>
         <p className={styles["smv-subtext"]}>
-          At NeuroLXP<sup className={styles["smv-badge-tm"]}>TM</sup>, we&apos;re driven by purpose and a bold vision to transform learning, empowering learners and organizations to achieve more.
+          At NeuroLXP
+          {/* <sup className={styles["smv-badge-tm"]}>TM</sup> */}
+          , we&apos;re driven by purpose and a bold vision to transform learning, empowering learners and organizations to achieve more.
         </p>
       </div>
 
@@ -624,7 +626,7 @@ const platformOverviewItems = [
   { id: 2, label: "Colleges", title: "Building career pathways", color: "#861109", Icon: UniversityIcon },
   { id: 3, label: "Corporates", title: <>Empowering <span style={{ whiteSpace: "nowrap" }}>future-ready</span> teams</>, color: "#67096E", Icon: BuildingIcon },
   { id: 4, label: "NGOs", title: "Driving meaningful social impact", color: "#BF1869", Icon: HandshakeIcon },
-  { id: 5, label: "Governments", title: "Future-ready workforce skilling", color: "#2A7308", Icon: LandmarkIcon },
+  { id: 5, label: "Governments", title: "Future ready workforce skilling", color: "#2A7308", Icon: LandmarkIcon },
   { id: 6, label: "Individuals", title: "Unlocking career opportunities", color: "#0B9BA0", Icon: UserIcon },
 ];
 
