@@ -598,7 +598,7 @@ function StoryMissionVision() {
           <span className={styles["smv-heading-vision"]}>Our Vision</span>
         </h2>
         <p className={styles["smv-subtext"]}>
-          At NeuroLXP<sup className={styles["smv-badge-tm"]}></sup>, we&apos;re driven by purpose and a bold vision to transform learning, empowering learners and organizations to achieve more.
+          At NeuroLXP<sup className={styles["smv-badge-tm"]}>TM</sup>, we&apos;re driven by purpose and a bold vision to transform learning, empowering learners and organizations to achieve more.
         </p>
       </div>
 
@@ -662,7 +662,8 @@ function PlatformOverview() {
         <div className={styles["platform-overview-content"]}>
           <span className={styles["platform-overview-tag"]}>Platform Overview</span>
           <h2 className={styles["platform-overview-heading"]} id="platform-overview-heading">
-            NeuroLXP<sup className={styles["smv-badge-tm"]}>TM</sup>
+            NeuroLXP
+            {/* <sup className={styles["smv-badge-tm"]}>TM</sup> */}
             <span className={styles["platform-overview-heading-text"]}> One Platform! Many Missions! One Future</span>
           </h2>
           <div className={styles["platform-hex-grid"]}>
@@ -895,11 +896,11 @@ function WhyChooseNeuroLXP() {
                 NeuroLXP<sup className={styles["why-choose-tm"]}></sup> empowers learners with
               </span>
               <span className={styles["why-choose-subtext-line"]}>
-                personalized learning, future
+                personalized learning, future skills, and meaningful outcomes.
               </span>
-              <span className={styles["why-choose-subtext-line"]}>
+              {/* <span className={styles["why-choose-subtext-line"]}>
                 skills, and meaningful outcomes.
-              </span>
+              </span> */}
             </p>
           </div>
           <div className={styles["why-choose-grid"]}>
@@ -1017,6 +1018,7 @@ function LearningModules() {
   const [translateX, setTranslateX] = useState(0);
 
   const isAnimatingRef = useRef(false);
+  const navigationIndexRef = useRef(trackIndex);
   const mobileScrollTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
   const isMobileResetRef = useRef(false);
 
@@ -1128,6 +1130,7 @@ function LearningModules() {
       }
     }
 
+    navigationIndexRef.current = normalizedIndex;
     setTrackIndex(normalizedIndex);
     setSettledActiveId(extendedLearningModuleCards[normalizedIndex].id);
     isAnimatingRef.current = false;
@@ -1169,25 +1172,29 @@ function LearningModules() {
   };
 
   const moveByOneCard = (direction: -1 | 1) => {
-    if (isAnimatingRef.current) return;
+    /*
+      One click = exactly one card.
+      Do not discard a second/rapid click while the previous card is moving.
+      navigationIndexRef is updated synchronously, so double-clicking advances
+      two card positions instead of sending both clicks to the same card.
+    */
+    const currentIndex = navigationIndexRef.current;
+    const targetIndex = currentIndex + direction;
+
+    if (
+      targetIndex < 0 ||
+      targetIndex >= extendedLearningModuleCards.length
+    ) {
+      return;
+    }
+
+    navigationIndexRef.current = targetIndex;
 
     if (isMobileViewport()) {
       const viewport = viewportRef.current;
       if (!viewport) return;
 
-      const currentIndex = findNearestMobileIndex();
-      const targetIndex = currentIndex + direction;
-
-      /* Full clone sets exist at both ends, so there is always one complete
-         next/previous card available for a circular step. */
-      if (
-        targetIndex < 0 ||
-        targetIndex >= extendedLearningModuleCards.length
-      ) {
-        return;
-      }
-
-      isAnimatingRef.current = true;
+      setTrackIndex(targetIndex);
       scrollMobileToIndex(targetIndex, "smooth");
 
       if (mobileScrollTimerRef.current) {
@@ -1201,8 +1208,7 @@ function LearningModules() {
       return;
     }
 
-    isAnimatingRef.current = true;
-    setTrackIndex((current) => current + direction);
+    setTrackIndex(targetIndex);
   };
 
   const goToPreviousOnly = () => moveByOneCard(-1);
@@ -1309,6 +1315,7 @@ function LearningModules() {
 
         flushSync(() => {
           setTransitionsEnabled(false);
+          navigationIndexRef.current = nextIndex;
           setTrackIndex(nextIndex);
 
           if (viewport && nextCard) {
@@ -1359,7 +1366,8 @@ function LearningModules() {
         <h2 className={styles["learning-modules-heading"]} id="learning-modules-heading">
           Future Ready{" "}
           <span className={styles["learning-modules-heading-accent"]}>
-            NeuroLXP<sup className={styles["smv-badge-tm"]}>TM</sup>
+            NeuroLXP
+            {/* <sup className={styles["smv-badge-tm"]}>TM</sup> */}
           </span>{" "}
           Learning Solutions
         </h2>
@@ -1533,6 +1541,7 @@ function Testimonials() {
   const [translateX, setTranslateX] = useState(0);
 
   const isAnimatingRef = useRef(false);
+  const navigationIndexRef = useRef(trackIndex);
   const mobileScrollTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
   const isMobileResetRef = useRef(false);
 
@@ -1635,6 +1644,7 @@ function Testimonials() {
       }
     }
 
+    navigationIndexRef.current = normalizedIndex;
     setTrackIndex(normalizedIndex);
     isAnimatingRef.current = false;
   };
@@ -1677,17 +1687,21 @@ function Testimonials() {
   };
 
   const moveByOneCard = (direction: -1 | 1) => {
-    if (isAnimatingRef.current) return;
+    /*
+      One click = exactly one testimonial.
+      Rapid/double clicks are counted separately instead of being ignored.
+    */
+    const currentIndex = navigationIndexRef.current;
+    const targetIndex = currentIndex + direction;
+
+    if (targetIndex < 0 || targetIndex >= extendedTestimonials.length) {
+      return;
+    }
+
+    navigationIndexRef.current = targetIndex;
 
     if (isMobileViewport()) {
-      const currentIndex = findNearestMobileIndex();
-      const targetIndex = currentIndex + direction;
-
-      if (targetIndex < 0 || targetIndex >= extendedTestimonials.length) {
-        return;
-      }
-
-      isAnimatingRef.current = true;
+      setTrackIndex(targetIndex);
       scrollMobileToIndex(targetIndex, "smooth");
 
       if (mobileScrollTimerRef.current) {
@@ -1701,8 +1715,7 @@ function Testimonials() {
       return;
     }
 
-    isAnimatingRef.current = true;
-    setTrackIndex((current) => current + direction);
+    setTrackIndex(targetIndex);
   };
 
   const goToPreviousOnly = () => moveByOneCard(-1);
@@ -1782,6 +1795,7 @@ function Testimonials() {
 
         flushSync(() => {
           setTransitionsEnabled(false);
+          navigationIndexRef.current = nextIndex;
           setTrackIndex(nextIndex);
 
           if (viewport && nextCard) {
@@ -1833,7 +1847,9 @@ function Testimonials() {
           Success Powered by <span className={styles["testimonials-heading-accent"]}>NeuroLXP</span>
         </h2>
         <p className={styles["testimonials-subtext"]}>
-          NeuroLXP<sup className={styles["smv-badge-tm"]}></sup> made learning engaging, simple, and truly effective for our learners.
+          NeuroLXP   made learning engaging, simple, and truly effective for our learners.
+          {/* <sup className={styles["smv-badge-tm"]}>TM</sup>  */}
+           {/* made learning engaging, simple, and truly effective for our learners. */}
         </p>
       </div>
 
@@ -1962,10 +1978,21 @@ function FAQItem({ item, isOpen, onToggle }: { item: FAQItemData; isOpen: boolea
   return (
     <div className={styles["faq-item"]}>
       <h3 className={styles["faq-item-heading"]}>
-        <button type="button" id={buttonId} className={styles["faq-item-header"]} onClick={onToggle} aria-expanded={isOpen} aria-controls={panelId}>
+        <button
+          type="button"
+          id={buttonId}
+          className={styles["faq-item-header"]}
+          onClick={onToggle}
+          aria-expanded={isOpen}
+          aria-controls={panelId}
+        >
           <div className={styles["faq-item-header-left"]}>
             <span className={styles["faq-item-triangle"]} style={{ borderLeftColor: item.colorStart }} aria-hidden="true" />
-            <span className={styles["faq-item-number"]} style={{ backgroundImage: `linear-gradient(180deg, ${item.colorStart} 0%, ${item.colorEnd} 100%)` }} aria-hidden="true">
+            <span
+              className={styles["faq-item-number"]}
+              style={{ backgroundImage: `linear-gradient(180deg, ${item.colorStart} 0%, ${item.colorEnd} 100%)` }}
+              aria-hidden="true"
+            >
               {item.number}
             </span>
             <span className={styles["faq-item-divider"]} style={{ backgroundImage: `linear-gradient(180deg, ${item.colorStart} 0%, ${item.colorEnd} 100%)` }} aria-hidden="true" />
@@ -2063,8 +2090,11 @@ function GetInTouch({ onContactClick, contactButtonRef }: { onContactClick: () =
               Learn Smarter with <br />
               <span className={styles["get-in-touch-heading-accent"]}>NeuroLXP</span>
             </h2>
-            <p className={styles["get-in-touch-subtext"]}>Have questions? Our experts are here to help.</p>
-          </div>
+<p className={styles["get-in-touch-subtext"]}>
+  Have questions?
+  <br />
+  Our experts are here to help.
+</p>          </div>
           <button type="button" className={styles["get-in-touch-button"]} onClick={onContactClick} ref={contactButtonRef}>
             <span className={styles["get-in-touch-button-label"]}>Contact Us</span>
             <HeadphonesIcon className={styles["get-in-touch-button-icon"]} />
