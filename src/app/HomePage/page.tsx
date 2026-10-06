@@ -939,14 +939,14 @@ const learningModuleCards = [
   },
   {
     id: 4,
-    image: "/images/smiling-young-beautiful-girl-wearing-holding-vr-headset-showing-thumb-up-isolated-purple-wall 1.png",
+    image: "/images/girl-student-with-laptop-standing-by-window-corridor 1.png",  
     title: "Immersive Learning",
     description:
       "Interactive learning that builds skills and delivers results.",
   },
   {
     id: 5,
-    image: "/images/labor-union-members-working-together 1.png",
+    image: "/images/agreement-coworkers-two-men-having-deal 1.png",  
     title: "Smart Onboarding",
     description:
       "Accelerate onboarding with guided, engaging learning.",
