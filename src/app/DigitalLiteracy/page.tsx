@@ -62,21 +62,28 @@ function DigitalLiteracyHero({ onBookDemoClick, bookDemoButtonRef }: { onBookDem
             Empower Every Employee with <span className={styles["dl-hero-heading-accent"]}>Digital Skills</span>
           </h1>
           <p className={styles["dl-hero-subtext"]}>
-            NeuroLXP<sup className={styles["nlxp-footer-heading-tm"]}></sup> delivers engaging digital skills training from basics to advanced workplace tools.
+            NeuroLXP delivers engaging digital skills training from basics to advanced workplace tools.
           </p>
           <div className={styles["dl-hero-buttons"]}>
             <button type="button" className={`${styles["dl-hero-button"]} ${styles["dl-hero-button-secondary"]}`} onClick={onBookDemoClick} ref={bookDemoButtonRef}>
-              Request Demo
+              Book a Demo
             </button>
-            <button type="button" className={`${styles["dl-hero-button"]} ${styles["dl-hero-button-primary"]}`} onClick={() => { window.location.href = "/HomePage"; }}>
+            {/* <button type="button" className={`${styles["dl-hero-button"]} ${styles["dl-hero-button-primary"]}`} onClick={() => { window.location.href = "/HomePage"; }}>
               Start Learning
-            </button>
+            </button> */}
           </div>
         </div>
         <div className={styles["dl-hero-media"]}>
           <TopographicPattern className={styles["dl-hero-pattern"]} />
           <div className={styles["dl-hero-image-frame"]}>
-            <Image src="/images/horizontal-shot-joyful-young-woman-with-glasses-posing-against-white-wall 1.webp" alt="Employee learning digital skills" fill priority sizes="(max-width: 767px) 90vw, (max-width: 1023px) 400px, 460px" className={styles["dl-hero-image"]} />
+            <Image
+              src="/images/horizontal-shot-joyful-young-woman-with-glasses-posing-against-white-wall 1.webp"
+              alt="Employee learning digital skills"
+              fill
+              priority
+              sizes="(max-width: 767px) 90vw, (max-width: 1023px) 400px, 460px"
+              className={styles["dl-hero-image"]}
+            />
           </div>
         </div>
       </div>
@@ -350,7 +357,7 @@ function DigitalLiteracyAnalytics() {
     <section className={styles["dl-analytics-section"]}>
       <div className={styles["dl-analytics-header"]}>
         <span className={styles["dl-hero-badge"]}>Real-Time Analytics</span>
-        <h2 className={`${styles["dl-section-heading"]} ${styles["dl-center"]}`}>Track Every Learner - Improve Every Outcome</h2>
+        <h2 className={`${styles["dl-section-heading"]} ${styles["dl-center"]}`}>Track Every Learner Improve Every Outcome</h2>
         <p className={`${styles["dl-hero-subtext"]} ${styles["dl-center"]} ${styles["dl-insights-summary"]}`}>
           <span>Turn learning data into actionable insights with live dashboards,</span>{" "}
           <span>competency tracking, and compliance reporting.</span>
@@ -497,7 +504,7 @@ function DigitalLiteracyWhyNeuroLXP() {
     <section className={styles["dl-why-section"]}>
       <div className={styles["dl-why-content"]}>
         <span className={styles["dl-hero-badge"]}>
-          Why NeuroLXP<sup className={styles["nlxp-footer-heading-tm"]}>TM</sup>
+          Why NeuroLXP<sup className={styles["nlxp-badge-tm"]}>TM</sup>
         </span>
         <h2 className={styles["dl-section-heading"]}>The Smarter Way to Build a Digitally-Ready Workforce</h2>
         <p className={styles["dl-hero-subtext"]}>Built around the learner driving engagement, closing gaps, and proving ROI from day one.</p>
@@ -531,14 +538,15 @@ function DigitalLiteracyCTA({ onBookDemoClick, bookDemoButtonRef }: { onBookDemo
       <div className={styles["dl-cta-card"]}>
         <h2 className={styles["dl-cta-heading"]}>Ready to Build a Digitally-Skilled Workforce</h2>
         <p className={styles["dl-cta-subtext"]}>
-          Build a future-ready workforce with NeuroLXP<sup className={styles["nlxp-footer-heading-tm"]}></sup>
+          Build a future-ready workforce with NeuroLXP
+          {/* <sup className={styles["nlxp-footer-heading-tm"]}>TM</sup> */}
           <br />
           Empower every learner with digital skills that drive business success
         </p>
         <div className={styles["dl-hero-buttons"]}>
-          <button type="button" className={`${styles["dl-hero-button"]} ${styles["dl-hero-button-primary"]}`} onClick={onBookDemoClick} ref={bookDemoButtonRef}>
+          {/* <button type="button" className={`${styles["dl-hero-button"]} ${styles["dl-hero-button-primary"]}`} onClick={onBookDemoClick} ref={bookDemoButtonRef}>
             Book a Demo
-          </button>
+          </button> */}
           <button type="button" className={`${styles["dl-hero-button"]} ${styles["dl-hero-button-secondary"]}`} onClick={() => { window.location.href = "/HomePage"; }}>
             Get Started
           </button>
