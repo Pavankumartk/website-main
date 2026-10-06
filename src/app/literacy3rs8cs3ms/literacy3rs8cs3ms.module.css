@@ -3282,10 +3282,16 @@
   flex: 0 0 24px !important;
 }
 
-/* Make the complete last section text selectable. */
+/* Clean text selection: only actual text is selectable. */
 .rectangleParent,
 .rectangleParent .frameParent22,
-.rectangleParent .neurolxpWrapper,
+.rectangleParent .neurolxpWrapper {
+  -webkit-user-select: auto !important;
+  user-select: auto !important;
+}
+
+.whyItMatters,
+.transformingLearningInto,
 .rectangleParent .neurolxp,
 .rectangleParent .bringingThe3rs8cs3msContainer,
 .rectangleParent .bringingThe,
@@ -3294,6 +3300,7 @@
 .rectangleParent .m {
   -webkit-user-select: text !important;
   user-select: text !important;
+  cursor: text !important;
 }
 
 .rectangleParent .frameParent22 {
@@ -3302,7 +3309,22 @@
 
 .rectangleParent .background3rs,
 .rectangleParent .smilingWomanWithBooksMortaIcon {
+  -webkit-user-select: none !important;
+  user-select: none !important;
   pointer-events: none !important;
+}
+
+/* Use a clean selection highlight instead of the browser grey highlight. */
+.whyItMatters::selection,
+.transformingLearningInto::selection,
+.rectangleParent .neurolxp::selection,
+.rectangleParent .bringingThe3rs8cs3msContainer::selection,
+.rectangleParent .bringingThe::selection,
+.rectangleParent .rs8cs3m::selection,
+.rectangleParent .cs3::selection,
+.rectangleParent .m::selection {
+  background: rgba(45, 76, 200, 0.18);
+  color: inherit;
 }
 
 /* Mobile: keep the last-section text centered and selectable. */
@@ -3324,8 +3346,107 @@
     margin-left: auto !important;
     margin-right: auto !important;
     text-align: center !important;
-    -webkit-user-select: text !important;
-    user-select: text !important;
   }
 }
 
+/* Mobile only: align the center 8Cs card rows exactly like the side cards. */
+@media (max-width: 767.98px) {
+  .frameParent12 .brain01Parent,
+  .frameParent12 .analyticsUpParent,
+  .frameParent12 .award02Parent,
+  .frameParent12 .target01Parent {
+    left: 24px !important;
+    right: 14px !important;
+    top: 0 !important;
+    width: auto !important;
+    height: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+    gap: 14px !important;
+    transform: none !important;
+  }
+
+  .frameParent12 .brain01Icon,
+  .frameParent12 .analyticsUpIcon,
+  .frameParent12 .cardIcon,
+  .frameParent12 .skillIcon {
+    width: 24px !important;
+    height: 24px !important;
+    flex: 0 0 24px !important;
+    transform: none !important;
+  }
+
+  .frameParent12 .mindset,
+  .frameParent12 .metacognition {
+    flex: 1 1 auto !important;
+    margin: 0 !important;
+    text-align: center !important;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .frameParent12 .frameParent13 {
+    padding-bottom: 42px !important;
+  }
+
+  .frameParent12 .frameParent14 {
+    margin-bottom: 0 !important;
+  }
+}
+@media (max-width: 767.98px) {
+  /* 8Cs card: remove excess empty space below Competence */
+  .frameParent12 .frameParent13 {
+    padding-bottom: 24px !important;
+  }
+
+  .frameParent12 .frameParent14 {
+    margin-bottom: 0 !important;
+  }
+
+  .frameParent12 {
+    height: auto !important;
+  }
+
+  /* Keep a clean, equal gap after the final list item */
+  .frameParent12 .frameParent15:last-child,
+  .frameParent12 .frameWrapper6:last-child {
+    margin-bottom: 0 !important;
+  }
+}
+
+/* Mobile only: vertically center the icon and text inside every 8Cs list row. */
+@media (max-width: 767.98px) {
+  .frameParent12 .brain01Parent,
+  .frameParent12 .analyticsUpParent,
+  .frameParent12 .award02Parent,
+  .frameParent12 .target01Parent {
+    top: 50% !important;
+    bottom: auto !important;
+    height: auto !important;
+    align-items: center !important;
+    transform: translateY(-50%) !important;
+  }
+
+  .frameParent12 .mindset,
+  .frameParent12 .metacognition {
+    margin: 0 !important;
+    padding: 0 !important;
+    line-height: 24px !important;
+    display: flex !important;
+    align-items: center !important;
+  }
+
+  .frameParent12 .brain01Icon,
+  .frameParent12 .analyticsUpIcon,
+  .frameParent12 .cardIcon,
+  .frameParent12 .skillIcon {
+    width: 24px !important;
+    height: 24px !important;
+    margin: 0 !important;
+    flex: 0 0 24px !important;
+    transform: none !important;
+  }
+}
