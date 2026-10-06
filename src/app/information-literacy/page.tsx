@@ -237,8 +237,10 @@ const InformationLiteracy: NextPage = () => {
           <div className={styles.frameParent10}>
             <div className={styles.frameParent11}>
               <div className={styles.informationLiteracyBadge}>Information Literacy</div>
-              <b className={styles.findEvaluate}>{`Find, Evaluate And Use Knowledge Responsibly`}</b>
-            </div>
+<b className={styles.findEvaluate}>
+  Find, Evaluate And Use Knowledge{" "}
+  <span style={{ color: "#2D4CC8" }}>Responsibly</span>
+</b>            </div>
             <div className={styles.neurolxpEquipsLearners}>
               NeuroLXP equips learners to cut through digital noise identifying credible sources, thinking critically, and acting on information with confidence.
               <br />
