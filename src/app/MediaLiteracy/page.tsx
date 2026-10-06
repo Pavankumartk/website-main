@@ -56,8 +56,9 @@ const MediaLiteracy: NextPage = () => {
 
                               <span className={styles.spotBiasLine}>Spot Bias!</span>{" "}
 
-                              <span className={styles.spotBiasLine}>Verify Facts Build Trust</span>
-
+<span className={styles.spotBiasLine}>
+  Verify Facts Build <span style={{ color: "#2D4CC8" }}>Trust</span>
+</span>
                             </b>
 
                           </div>
@@ -94,9 +95,9 @@ const MediaLiteracy: NextPage = () => {
 
                         <div className={styles.recognizeCredibleSources}>
 
-                          Spot Misleading{" "}
+                          Spot Misleading Content{" "}
 
-                          <span className={styles.checklistSecondLine}>Content</span>
+                          {/* <span className={styles.checklistSecondLine}>Content</span> */}
 
                         </div>
 
@@ -202,7 +203,7 @@ const MediaLiteracy: NextPage = () => {
 
                   </div>
 
-                  <span>Learners Rating</span>
+                  <span>Learner Rating</span>
 
                 </div>
 
@@ -292,8 +293,9 @@ const MediaLiteracy: NextPage = () => {
 
               </div>
 
-              <b className={styles.understandTheSystems}>Understand the Systems Behind Every Story</b>
-
+<b className={styles.understandTheSystems}>
+  Understand the Systems Behind Every <span style={{ color: "#2D4CC8" }}>Story</span>
+</b>
             </div>
 
             <div className={styles.buildEssentialMedia}>Build essential media literacy for today's digital world.</div>
@@ -790,11 +792,12 @@ const MediaLiteracy: NextPage = () => {
 
                   <div className={styles.navigateMediaWithConfidenceWrapper}>
 
-                    <b className={styles.navigateMediaWithContainer}>Navigate Media with Confidence</b>
-
+<b className={styles.navigateMediaWithContainer}>
+  Navigate Media with <span style={{ color: "#2D4CC8" }}>Confidence</span>
+</b>
                   </div>
 
-                  <div className={styles.questionHeadlinesVerify}>Interactive learning that builds skills to evaluate, engage, and create.</div>
+                  <div className={styles.questionHeadlinesVerify}>Interactive learning that builds skills to evaluate, engage and create</div>
 
                 </div>
 
