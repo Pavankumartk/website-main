@@ -253,8 +253,7 @@ function DigitalLiteracyAdvantage() {
       </svg>
       <div className={styles["dl-advantage-text"]}>
         <span className={styles["dl-hero-badge"]}>
-          The NeuroLXP<sup className={styles["nlxp-footer-heading-tm"]}>TM</sup> Advantage
-        </span>
+The NeuroLXP<sup className={styles["nlxp-footer-heading-tm"]}>TM</sup>&nbsp;Advantage        </span>
         <h2 className={styles["dl-section-heading"]}>Equip Every Workforce for a Digital Future</h2>
         <p className={styles["dl-hero-subtext"]}>From foundational skills to advanced expertise skills in one platform.</p>
       </div>
@@ -262,7 +261,7 @@ function DigitalLiteracyAdvantage() {
         <AdvantageCard number="01" color="#BF1869" title="Digital Skill Training" description="Building skills from basics to future readiness" />
         <AdvantageCard number="02" color="#0B9BA0" title="Personalized Learning" description="Learning journeys tailored to every skill level" mirrored />
         <AdvantageCard number="03" color="#67096E" title="Progress Tracking" description="Track competency performance with insights" />
-        <AdvantageCard number="04" color="#BCCF10" title="Mobile-First Access" description="Learn anytime, anywhere on any device" mirrored />
+        <AdvantageCard number="04" color="#BCCF10" title="Mobile First Access" description="Learn anytime, anywhere on any device" mirrored />
       </div>
     </section>
   );
@@ -504,7 +503,7 @@ function DigitalLiteracyWhyNeuroLXP() {
     <section className={styles["dl-why-section"]}>
       <div className={styles["dl-why-content"]}>
         <span className={styles["dl-hero-badge"]}>
-          Why NeuroLXP<sup className={styles["nlxp-badge-tm"]}>TM</sup>
+          Why NeuroLXP<sup className={styles["nlxp-footer-heading-tm"]}>TM</sup>
         </span>
         <h2 className={styles["dl-section-heading"]}>The Smarter Way to Build a Digitally-Ready Workforce</h2>
         <p className={styles["dl-hero-subtext"]}>Built around the learner driving engagement, closing gaps, and proving ROI from day one.</p>
@@ -536,8 +535,9 @@ function DigitalLiteracyCTA({ onBookDemoClick, bookDemoButtonRef }: { onBookDemo
   return (
     <section className={styles["dl-cta-section"]}>
       <div className={styles["dl-cta-card"]}>
-        <h2 className={styles["dl-cta-heading"]}>Ready to Build a Digitally-Skilled Workforce</h2>
-        <p className={styles["dl-cta-subtext"]}>
+<h2 className={styles["dl-cta-heading"]}>
+  Ready to Build a Digitally-Skilled <span style={{ color: "#2d4cc8" }}>Workforce</span>
+</h2>        <p className={styles["dl-cta-subtext"]}>
           Build a future-ready workforce with NeuroLXP
           {/* <sup className={styles["nlxp-footer-heading-tm"]}>TM</sup> */}
           <br />
