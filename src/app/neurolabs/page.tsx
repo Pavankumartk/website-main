@@ -296,7 +296,7 @@ export default function CodingLabsPage() {
 
             <div className="coding-hero__content">
 
-              <span className="coding-pill">Coding Mastery</span>
+              <span className="coding-pill">Coding Labs</span>
 
               <h1>Practice! Build! and Master <span className="coding-heading-blue">Coding Skills</span></h1>
 
@@ -381,8 +381,10 @@ export default function CodingLabsPage() {
 
             <span className="coding-pill coding-pill--wide">What Learners Gain</span>
 
-            <h2>Interactive Coding Challenges</h2>
-
+<h2>
+  Interactive Coding{" "}
+  <span style={{ color: "#2D4CC8" }}>Challenges</span>
+</h2>
             <p>Learn by building, solving, and improving with every challenge.</p>
 
           </div>
@@ -471,7 +473,10 @@ export default function CodingLabsPage() {
 
             <span className="coding-pill">Code Smarter</span>
 
-            <h2>Real-World Skill Development</h2>
+            <h2>
+  Real-World Skill{" "}
+  <span style={{ color: "#2D4CC8" }}>Development</span>
+</h2>
 
             <p>
 
