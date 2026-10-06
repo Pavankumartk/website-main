@@ -2844,9 +2844,12 @@ body:has(.informationLiteracy) * {
   .informationLiteracy .journeyStageSynthesise {
     row-gap: 10px;
   }
+
   .informationLiteracy .journeyStageSynthesise .journeyCard {
-    grid-column: 1 / -1;
-    padding-inline: 12px;
+    grid-column: auto;
+    width: 100%;
+    max-width: none;
+    padding-inline: 18px;
   }
 }
 
@@ -3106,26 +3109,29 @@ body:has(.informationLiteracy) * {
   }
 }
 
-/* Mobile Learning Journey alignment fix:
-   keep all four numbered circles and cards in the same two-column alignment. */
-@media (max-width: 640px) {
-  .informationLiteracy .journeyStageSynthesise {
-    row-gap: initial;
+/* Desktop: keep the Ethics & Integrity cards and integrity panel side by side. */
+@media (min-width: 1025px) {
+  .informationLiteracy .frameParent22 {
+    width: min(1280px, calc(100% - 64px));
+    max-width: 1280px;
+    height: auto;
+    flex-direction: row !important;
+    align-items: center;
+    justify-content: center;
+    gap: clamp(24px, 3vw, 48px);
   }
 
-  .informationLiteracy .journeyStageSynthesise .journeyCard {
-    grid-column: auto;
-    width: 100%;
-    max-width: none;
-    padding: 16px 18px;
+  .informationLiteracy .frameParent23 {
+    width: min(540px, 46%);
+    max-width: 540px;
+    min-width: 0;
+    flex: 1 1 540px;
   }
-}
-.learnersThinkTm {
-  position: relative;
-  top: -0.55em;
-  margin-left: 1px;
-  font-size: 0.45em;
-  line-height: 0;
-  vertical-align: baseline;
-  font-weight: 600;
+
+  .informationLiteracy .vectorParent {
+    width: min(662px, 50%);
+    max-width: 662px;
+    min-width: 0;
+    flex: 1 1 662px;
+  }
 }
