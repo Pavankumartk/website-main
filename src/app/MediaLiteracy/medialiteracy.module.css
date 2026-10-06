@@ -944,9 +944,9 @@
   line-height: 1.3;
   font-weight: 600;
   font-size: 18px;
-  width: 200px;
+  width: auto;
+  white-space: nowrap;
 }
-
 @media (min-width: 641px) {
   .image21Parent {
     flex-direction: row;
@@ -1062,7 +1062,10 @@
   .recognizeCredibleSources {
     font-size: 24px;
     line-height: 36px;
-    white-space: normal;
+    width: max-content;
+    min-width: max-content;
+    max-width: none;
+    white-space: nowrap;
   }
 }
 
@@ -4772,3 +4775,28 @@ body:has(.mediaLiteracy) * {
   }
 }
 
+/* Mobile only: reduce vertical empty space inside the feature cards. */
+@media (max-width: 640px) {
+  .featureCard {
+    min-height: 175px;
+  }
+
+  .platformAwarenessParent,
+  .culturalInfluenceParent,
+  .messageIntentParent,
+  .digitalEcosystemsParent {
+    height: 175px;
+    padding: 46px 20px 18px;
+    justify-content: center;
+  }
+}
+
+
+
+/* Keep "Verify Facts with Confidence" on one line at every screen size. */
+.mediaLiteracy .mediaLiteracyInner .recognizeCredibleSources {
+  width: max-content;
+  min-width: max-content;
+  max-width: none;
+  white-space: nowrap !important;
+}
