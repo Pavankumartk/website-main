@@ -8465,5 +8465,43 @@ button.requestADemoWrapper::-moz-focus-inner {
   .assessments.assessments.assessments .audienceControls {
     display: none !important;
   }
+}.audienceSectionBadge .neuroTrademark {
+  display: inline-block !important;
+  font-size: 4px !important;
+  line-height: 4px !important;
+  font-weight: 600 !important;
+  margin-left: 1px !important;
+  position: relative !important;
+  top: 0 !important;
+  color: #2d4cc8 !important;
+  vertical-align: baseline !important;
+  white-space: nowrap !important;
+  transform: translateY(-11px) scale(0.75) !important;
+  transform-origin: left bottom !important;
+}
+
+/* Talk to Expert button — Who Can Benefit From NeuroLXP section */
+.assessments .audienceSection {
+  position: relative;
+}
+
+.assessments .audienceExpertButtonSlot {
+  position: absolute;
+  top: 50%;
+  right: 16px;
+  width: 64px;
+  height: 64px;
+  transform: translateY(-50%);
+  z-index: 30;
+}
+
+@media screen and (max-width: 767px) {
+  .assessments .audienceExpertButtonSlot {
+    top: 5px;
+    right: 8px;
+    bottom: auto;
+    left: auto;
+    transform: none;
+  }
 }
 
