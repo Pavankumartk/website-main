@@ -258,8 +258,25 @@ const TrainingManagement: NextPage = () => {
 
                         <div className={styles.frameParent22}>
 
-                          <div className={styles.whyNeurolxpPill}>Why NeuroLXP</div>
-
+<div className={styles.whyNeurolxpPill}>
+  <span>Why NeuroLXP</span>
+  <sup
+    aria-label="trademark"
+    style={{
+      display: "inline-block",
+      fontSize: "10.8px",
+      lineHeight: "6px",
+      fontWeight: 700,
+      marginLeft: "2px",
+      position: "relative",
+      top: "-6px",
+      color: "#2D4CC8",
+      whiteSpace: "nowrap",
+    }}
+  >
+    TM
+  </sup>
+</div>
                           <h2 className={styles.upgradeFromLms}>Upgrade from LMS to <span className={styles.headingLastWord}>NeuroLXP</span></h2>
 
                         </div>
@@ -333,6 +350,10 @@ const TrainingManagement: NextPage = () => {
             </div>
 
             <div className={styles.frameParent24}>
+              <div
+                className={styles.howItWorksExpertButtonSlot}
+                data-expert-button-slot
+              />
 
               <div className={styles.howItWorksWrapper}>
 
@@ -413,7 +434,9 @@ const TrainingManagement: NextPage = () => {
                            <span className={styles.headingLine}>Engage learners with{" "}</span>
 
                            <span className={styles.headingLine}>
+
                              <span style={{ whiteSpace: "nowrap" }}>AI-driven experiences</span>
+
                            </span>
 
                          </div>
