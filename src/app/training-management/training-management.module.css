@@ -7166,7 +7166,6 @@ body,
   }
 }
 
-
 /* ========================================================================== */
 /* FINAL DESKTOP HERO ALIGNMENT FIX — prevents inherited breakpoint overlap   */
 /* ========================================================================== */
@@ -7424,7 +7423,6 @@ body,
     z-index: 2 !important;
   }
 }
-
 
 /* ========================================================================== */
 /* FINAL DESKTOP HERO MATCH — reference PNG                                   */
@@ -7766,7 +7764,6 @@ body,
     white-space: nowrap !important;
   }
 }
-
 
 /* ==========================================================================
    FINAL VISUAL BASELINE — TRAINING MANAGEMENT
@@ -8308,7 +8305,6 @@ body,
   }
 }
 
-
 /* ==========================================================================
    FINAL TARGETED DESKTOP POLISH
    --------------------------------------------------------------------------
@@ -8482,7 +8478,6 @@ body,
   }
 }
 
-
 /* ==========================================================================
    FINAL CTA SHADOW MATCH — REFERENCE IMAGE
    --------------------------------------------------------------------------
@@ -8531,7 +8526,6 @@ body,
       7px 7px 14px rgba(196, 196, 196, 0.72) !important;
   }
 }
-
 
 /* ==========================================================================
    FINAL CTA CARD — INNER SHADOW ONLY
@@ -8592,7 +8586,6 @@ body,
       inset 7px 7px 14px rgba(196, 196, 196, 0.68) !important;
   }
 }
-
 
 /* ==========================================================================
    FINAL CTA INNER SHADOW — LEFT EDGE VISIBILITY FIX
@@ -8681,7 +8674,6 @@ body,
   }
 }
 
-
 /* ==========================================================================
    FINAL CTA POLISH — LESS BOTTOM WHITE SPREAD + SAFE LEFT TEXT INSET
    --------------------------------------------------------------------------
@@ -8767,7 +8759,6 @@ body,
       inset 0 -2px 6px -5px rgba(255, 255, 255, 0.18) !important;
   }
 }
-
 
 /* ==========================================================================
    FINAL CTA — TEXT SECTION POSITION FIX ONLY
@@ -8872,7 +8863,6 @@ body,
    - NO page layout changes
    ========================================================================== */
 
-
 /* ==========================================================================
    BADGES — SAME STYLE AS PREVIOUS APPROVED PAGES
    ========================================================================== */
@@ -8926,7 +8916,6 @@ body,
   transform: none !important;
 }
 
-
 /* ==========================================================================
    CTA BUTTONS — SAME STYLE AS PREVIOUS APPROVED PAGES
    Book a Demo + Start Free Trial
@@ -8958,7 +8947,6 @@ body,
     box-shadow 0.2s ease !important;
 }
 
-
 /* Button text */
 .trainingManagement :is(
   .frameWrapper17 .bookADemo,
@@ -8975,7 +8963,6 @@ body,
 
   transform: none !important;
 }
-
 
 /* Hover = inset, but button never moves. */
 @media (hover: hover) and (pointer: fine) {
@@ -8999,7 +8986,6 @@ body,
   }
 }
 
-
 /* Click/touch = same inset state; no position change. */
 .trainingManagement :is(
   .frameWrapper17,
@@ -9019,7 +9005,6 @@ body,
 ) {
   color: #2d4cc8 !important;
 }
-
 
 /* ==========================================================================
    RESPONSIVE TYPOGRAPHY — BADGES/BUTTONS ONLY
@@ -9294,7 +9279,6 @@ body,
   }
 }
 
-
 /* Final-word emphasis belongs only to main section headings. */
 .trainingManagement h2 .headingLastWord {
   color: #2d4cc8 !important;
@@ -9338,7 +9322,6 @@ body,
   color: #2d4cc8 !important;
 }
 
-
 /* Mobile spacing: hero copy, step-card wrapping, and footer clearance. */
 @media screen and (max-width: 767px) {
   .trainingManagement .smarterTrainingManagementWiParent {
@@ -9379,5 +9362,82 @@ body,
 
   .trainingManagement {
     padding-bottom: 64px !important;
+  }
+}
+
+/* ==========================================================================
+   WHY NEUROLXP — KEEP CARD TEXT SELECTABLE
+   ========================================================================== */
+
+.trainingManagement .frameParent19,
+.trainingManagement .peopleTakingPartBusinessEvParent,
+.trainingManagement .frameParent20,
+.trainingManagement .frameWrapper8,
+.trainingManagement .frameParent21,
+.trainingManagement .frameParent22,
+.trainingManagement .neurolxpDeliversEngaging,
+.trainingManagement .frameParent23,
+.trainingManagement .frameWrapper9,
+.trainingManagement .bookmarkCheck01Parent,
+.trainingManagement .bookmarkCheck01Group,
+.trainingManagement .fasterOnboarding,
+.trainingManagement .continuousLearning {
+  user-select: text !important;
+  -webkit-user-select: text !important;
+}
+
+.trainingManagement .frameWrapper9,
+.trainingManagement .bookmarkCheck01Parent,
+.trainingManagement .bookmarkCheck01Group,
+.trainingManagement .fasterOnboarding,
+.trainingManagement .continuousLearning {
+  pointer-events: auto !important;
+}
+
+/* Decorative layers must never block mouse/text selection. */
+.trainingManagement .peopleTakingPartBusinessEv,
+.trainingManagement .image21,
+.trainingManagement .groupYoungBusinesspeopleUsi,
+.trainingManagement .image20 {
+  pointer-events: none !important;
+  user-select: none !important;
+  -webkit-user-select: none !important;
+}
+
+/* ==========================================================================
+   TALK TO OUR EXPERT — HOW IT WORKS
+   Anchored on the right side without changing the existing section layout.
+   ========================================================================== */
+
+.trainingManagement .frameParent24 {
+  position: relative;
+}
+
+.trainingManagement .howItWorksExpertButtonSlot {
+  position: absolute;
+  top: 50%;
+  right: -8px;
+  bottom: auto;
+  left: auto;
+  width: 64px;
+  height: 64px;
+  margin: 0;
+  padding: 0;
+  transform: translateY(-50%);
+  z-index: 30;
+  pointer-events: auto;
+}
+
+@media screen and (max-width: 1100px) {
+  .trainingManagement .howItWorksExpertButtonSlot {
+    top: 50%;
+    right: 4px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .trainingManagement .howItWorksExpertButtonSlot {
+    top: 30%;
+    right: 0;
   }
 }
