@@ -1,7 +1,5 @@
 "use client";
 
-
-
 import type { NextPage } from "next";
 
 import Image from "next/image";
@@ -16,8 +14,6 @@ import Header from "../../components/Header/header";
 
 import Footer from "../../components/Footer/footer";
 
-
-
 const GovernmentStateInstitutions: NextPage = () => {
 
   const router = useRouter();
@@ -26,8 +22,6 @@ const GovernmentStateInstitutions: NextPage = () => {
 
   const challengeSectionRef = useRef<HTMLDivElement | null>(null);
 
-
-
   const toggleCard = (index: number) => {
 
     setOpenCards((currentCards) => currentCards.map((isOpen, cardIndex) => (cardIndex === index ? !isOpen : isOpen)));
@@ -35,29 +29,40 @@ const GovernmentStateInstitutions: NextPage = () => {
   };
 
   useEffect(() => {
+
     const section = challengeSectionRef.current;
 
     if (!section) return;
 
     const observer = new IntersectionObserver(
+
       ([entry]) => {
+
         if (!entry.isIntersecting) {
+
           setOpenCards([false, false, false, false, false]);
+
         }
+
       },
+
       {
+
         threshold: 0.05,
+
       },
+
     );
 
     observer.observe(section);
 
     return () => {
+
       observer.disconnect();
+
     };
+
   }, []);
-
-
 
   return (
 
@@ -84,8 +89,6 @@ const GovernmentStateInstitutions: NextPage = () => {
             color: inherit;
 
           }
-
-
 
           :where([data-semantic-origin="b"]) {
 
@@ -447,8 +450,6 @@ const GovernmentStateInstitutions: NextPage = () => {
 
                 </div>
 
-
-
                 <div className={`${styles.challengeCard} ${styles.frameWrapper8} ${openCards[1] ? styles.challengeCardOpen : ""}`}>
 
                   <div className={styles.frameParent12}>
@@ -504,8 +505,6 @@ const GovernmentStateInstitutions: NextPage = () => {
                   )}
 
                 </div>
-
-
 
                 <div className={`${styles.challengeCard} ${styles.frameWrapper10} ${openCards[2] ? styles.challengeCardOpen : ""}`}>
 
@@ -563,8 +562,6 @@ const GovernmentStateInstitutions: NextPage = () => {
 
                 </div>
 
-
-
                 <div className={`${styles.challengeCard} ${styles.frameWrapper8} ${openCards[3] ? styles.challengeCardOpen : ""}`}>
 
                   <div className={styles.frameParent12}>
@@ -620,8 +617,6 @@ const GovernmentStateInstitutions: NextPage = () => {
                   )}
 
                 </div>
-
-
 
                 <div className={`${styles.challengeCard} ${styles.frameWrapper8} ${openCards[4] ? styles.challengeCardOpen : ""}`}>
 
@@ -685,8 +680,6 @@ const GovernmentStateInstitutions: NextPage = () => {
 
           </div>
 
-
-
           <div className={styles.frameParent23}>
 
             <div className={styles.frameParent24}>
@@ -729,8 +722,6 @@ const GovernmentStateInstitutions: NextPage = () => {
 
                 </div>
 
-
-
                 <div className={`${styles.useCaseCard} ${styles.useCasePink}`}>
 
                   <span className={styles.useCaseIconCircle}>
@@ -746,8 +737,6 @@ const GovernmentStateInstitutions: NextPage = () => {
                   </h3>
 
                 </div>
-
-
 
                 <div className={`${styles.useCaseCard} ${styles.useCasePurple}`}>
 
@@ -765,8 +754,6 @@ const GovernmentStateInstitutions: NextPage = () => {
 
                 </div>
 
-
-
                 <div className={`${styles.useCaseCard} ${styles.useCaseTeal}`}>
 
                   <span className={styles.useCaseIconCircle}>
@@ -783,8 +770,6 @@ const GovernmentStateInstitutions: NextPage = () => {
 
                 </div>
 
-
-
                 <div className={`${styles.useCaseCard} ${styles.useCaseGold}`}>
 
                   <span className={styles.useCaseIconCircle}>
@@ -800,8 +785,6 @@ const GovernmentStateInstitutions: NextPage = () => {
                   </h3>
 
                 </div>
-
-
 
                 <div className={`${styles.useCaseCard} ${styles.useCaseGreen}`}>
 
@@ -826,6 +809,10 @@ const GovernmentStateInstitutions: NextPage = () => {
           </div>
 
           <div className={styles.frameParent34}>
+            <div
+              className={styles.governmentExpertButtonSlot}
+              data-expert-button-slot
+            />
 
             <div className={styles.frameParent35}>
 
@@ -843,7 +830,7 @@ const GovernmentStateInstitutions: NextPage = () => {
 
               <p className={styles.theseCapabilitiesHelp} data-semantic-origin="div">
 
-                These capabilities help public institutions improve workforce readiness, citizen education, compliance, and service delivery.
+                These capabilities help public institutions improve workforce readiness, citizen education, compliance, and service delivery
 
                 <br />
 
@@ -1035,11 +1022,13 @@ const GovernmentStateInstitutions: NextPage = () => {
 
           <div className={styles.frameParent45}>
 
-            <p className={styles.frameChild23} data-semantic-origin="div">
+           <p className={styles.frameChild23} data-semantic-origin="div">
 
-              NeuroLXP
+  NeuroLXP
 
-            </p>
+  <sup className={styles.neuroTrademark}>TM</sup>
+
+</p>
 
             <div className={styles.poweringGovernmentWorkforceParent}>
 
@@ -1070,7 +1059,5 @@ const GovernmentStateInstitutions: NextPage = () => {
   );
 
 };
-
-
 
 export default GovernmentStateInstitutions;
