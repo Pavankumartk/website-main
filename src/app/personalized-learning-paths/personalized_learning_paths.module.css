@@ -2276,8 +2276,6 @@
   }
 }
 
-
-
 /* Requested card sizing and responsive alignment. */
 .plp-page,
 .plp-page *,
@@ -2589,4 +2587,103 @@
   .plp-page .plp-challenge-left > .plp-section-intro {
     align-items: center;
   }
+}
+
+/* REQUESTED FIXES: breadcrumb alignment/wrapping + Benefits expert button */
+.plp-page .plp-breadcrumb {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  width: 100%;
+  max-width: 1280px;
+  min-width: 0;
+  margin: 0 auto;
+  padding: 12px 20px 0;
+  box-sizing: border-box;
+}
+.plp-page .plp-breadcrumb-item,
+.plp-page .plp-breadcrumb-arrow {
+  flex: 0 0 auto;
+}
+.plp-page .plp-breadcrumb-arrow {
+  margin-top: 2px;
+}
+.plp-page .plp-breadcrumb-current {
+  flex: 1 1 auto;
+  min-width: 0;
+  max-width: 100%;
+  font-weight: 700;
+  line-height: 20px;
+  color: #243fa8;
+  white-space: normal;
+  overflow-wrap: normal;
+  word-break: normal;
+  text-align: left;
+}
+.plp-page .plp-benefits {
+  position: relative;
+}
+.plp-page .plpBenefitsExpertButtonSlot {
+  position: absolute;
+  top: 10%;
+  right: 8px;
+  bottom: auto;
+  left: auto;
+  width: 64px;
+  height: 64px;
+  margin: 0;
+  padding: 0;
+  transform: translateY(-50%);
+  z-index: 30;
+  pointer-events: auto;
+}
+@media (max-width: 1100px) {
+  .plp-page .plpBenefitsExpertButtonSlot {
+    top: 50%;
+    right: 6px;
+  }
+}
+@media (max-width: 767px) {
+  .plp-page .plp-breadcrumb {
+    gap: 6px;
+    padding-inline: 16px;
+  }
+  .plp-page .plpBenefitsExpertButtonSlot {
+    top: 5%;
+    right: 0;
+  }
+}
+
+/* ==========================================================================
+   REQUESTED MOBILE FIXES ONLY
+   - Center the Stages number marker
+   - Add a little more vertical space between How It Works cards
+   ========================================================================== */
+@media (max-width: 767px) {
+  .plp-page .plp-stage-marker {
+    width: 100%;
+    margin-inline: auto;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .plp-page .plp-stage-circle-outer {
+    margin-inline: auto;
+  }
+
+  .plp-page .plp-how-grid {
+    row-gap: 24px;
+    gap: 24px;
+  }
+}
+
+/* ==========================================================================
+   BENEFITS — DEFAULT SELECTED TAB FIX
+   For Learners is selected on initial load and keeps the inset selected state.
+   ========================================================================== */
+.plp-page .plp-benefits-tab.plp-benefits-tab-active,
+.plp-page .plp-benefits-tab[aria-pressed="true"] {
+  box-shadow:
+    inset -4px -4px 4px #ffffff,
+    inset 4px 4px 4px rgba(196, 196, 196, 0.8) !important;
 }
