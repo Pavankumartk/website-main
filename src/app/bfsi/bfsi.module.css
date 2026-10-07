@@ -546,6 +546,14 @@
 
 .bfsi-challenge-chevron {
   display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: transform 0.3s ease;
+}
+
+.bfsi-challenge-chevron.open {
+  transform: rotate(180deg);
 }
 
 .bfsi-challenge-panel {
@@ -3702,5 +3710,123 @@
     text-align: center !important;
     margin-left: auto !important;
     margin-right: auto !important;
+  }
+}
+
+
+/* Talk-to-Expert anchor only — no existing BFSI layout rules are changed. */
+.bfsiExpertAnchor {
+  position: absolute;
+  top: 150px;
+  right: 24px;
+  width: 64px;
+  height: 64px;
+  z-index: 12;
+  pointer-events: none;
+}
+
+.bfsiExpertAnchor > :global(button[class*="talk-to-expert-fab"]) {
+  position: absolute !important;
+  inset: 0 !important;
+  margin: 0 !important;
+  transform: none !important;
+  translate: none !important;
+  pointer-events: auto;
+}
+
+.bfsi-stat-expert-btn {
+  width: 220px;
+  height: 60px;
+  border: none;
+  border-radius: 8px;
+  background: #dfe6e9;
+  box-shadow:
+    -8px -8px 16px #ffffff,
+    8px 8px 16px #c6c6c9;
+  font-family: "Segoe UI", "Inter";
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: 0.02em;
+  color: #2d4cc8;
+  cursor: pointer;
+}
+
+.bfsi-stat-expert-btn:hover {
+  box-shadow:
+    inset -4px -4px 8px #ffffff,
+    inset 4px 4px 8px #c4c4c4;
+}.bfsi-benefit-break {
+  display: none;
+}
+
+.bfsi-benefit-line2::before {
+  content: " ";
+}
+
+.bfsi-benefit-text {
+  white-space: nowrap;
+}
+
+/* =========================================================
+   FINAL MOBILE FIX — CHALLENGES & SOLUTIONS ARROW
+   Only moves the dropdown arrow upward.
+   No other section/card/layout is changed.
+   ========================================================= */
+
+@media (max-width: 768px) {
+  .bfsi-challenge-chevron {
+    margin-top: -10px !important;
+    transform: translateY(-8px) !important;
+  }
+}
+
+@media (max-width: 420px) {
+  .bfsi-challenge-chevron {
+    margin-top: -12px !important;
+    transform: translateY(-10px) !important;
+  }
+}
+
+/* =========================================================
+   FINAL — CHALLENGE CARD ARROW FIX
+   Closed: ↓
+   Open:   ↑
+   Mobile: arrow positioned slightly higher
+   ========================================================= */
+
+.bfsi-challenge-chevron {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: transform 0.3s ease;
+}
+
+.bfsi-challenge-chevron.open {
+  transform: rotate(180deg);
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .bfsi-challenge-chevron {
+    margin-top: -10px !important;
+    transform: translateY(-8px) !important;
+  }
+
+  .bfsi-challenge-chevron.open {
+    transform: translateY(-8px) rotate(180deg) !important;
+  }
+}
+
+/* Small mobile */
+@media (max-width: 420px) {
+  .bfsi-challenge-chevron {
+    margin-top: -12px !important;
+    transform: translateY(-10px) !important;
+  }
+
+  .bfsi-challenge-chevron.open {
+    transform: translateY(-10px) rotate(180deg) !important;
   }
 }
