@@ -66,14 +66,21 @@ function ExpertLauncher() {
    * Hide Talk to Our Expert only on the University page.
    * The button remains available on all other pages.
    */
-  if (pathname === "/university" || pathname.startsWith("/university/")) {
+  if (
+    pathname === "/university" ||
+    pathname.startsWith("/university/") ||
+    pathname === "/bfsi" ||
+    pathname.startsWith("/bfsi/")
+  ) {
     return null;
   }
 
   const launcherButton = (
     <button
       type="button"
-      className={styles["talk-to-expert-fab"]}
+      className={`${styles["talk-to-expert-fab"]} ${
+        slot ? styles["talk-to-expert-fab-slotted"] : ""
+      }`}
       onClick={openExpert}
       aria-label="Talk to our Expert"
       aria-haspopup="dialog"
