@@ -6,7 +6,19 @@
 
 
 
+
+
+
+
+
+
+
+
 import { useEffect, useRef, useState } from "react";
+
+
+
+
 
 
 
@@ -14,7 +26,15 @@ import Link from "next/link";
 
 
 
+
+
+
+
 import { useRouter } from "next/navigation";
+
+
+
+
 
 
 
@@ -22,7 +42,15 @@ import styles from "./bfsi.module.css";
 
 
 
+
+
+
+
 import Image from "next/image";
+
+
+
+
 
 
 
@@ -30,7 +58,15 @@ import Header from "../../components/Header/header";
 
 
 
+
+
+
+
 import Footer from "../../components/Footer/footer";
+
+
+
+
 
 
 
@@ -42,7 +78,19 @@ import { BookDemoTrigger } from "../../components/Bookademo/Bookademo";
 
 
 
+
+
+
+
+
+
+
+
 function BfsiHeroBackground() {
+
+
+
+
 
 
 
@@ -50,7 +98,15 @@ function BfsiHeroBackground() {
 
 
 
+
+
+
+
     <svg className={styles["bfsi-hero-bg"]} width="100%" height="100%" preserveAspectRatio="xMidYMax slice" viewBox="0 0 1440 624" fill="none" aria-hidden="true">
+
+
+
+
 
 
 
@@ -58,7 +114,15 @@ function BfsiHeroBackground() {
 
 
 
+
+
+
+
         <ellipse cx="720" cy="-136.5" rx="780" ry="760.5" fill="#DFE6E9" />
+
+
+
+
 
 
 
@@ -66,7 +130,15 @@ function BfsiHeroBackground() {
 
 
 
+
+
+
+
       </g>
+
+
+
+
 
 
 
@@ -74,7 +146,15 @@ function BfsiHeroBackground() {
 
 
 
+
+
+
+
         <filter id="filter0_ii_903_12871" x="-68" y="-905" width="1576" height="1537" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+
+
+
+
 
 
 
@@ -82,11 +162,23 @@ function BfsiHeroBackground() {
 
 
 
+
+
+
+
           <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
 
 
 
+
+
+
+
           <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+
+
+
+
 
 
 
@@ -94,11 +186,23 @@ function BfsiHeroBackground() {
 
 
 
+
+
+
+
           <feGaussianBlur stdDeviation="8" />
 
 
 
+
+
+
+
           <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1" />
+
+
+
+
 
 
 
@@ -106,7 +210,15 @@ function BfsiHeroBackground() {
 
 
 
+
+
+
+
           <feBlend mode="normal" in2="shape" result="effect1_innerShadow_903_12871" />
+
+
+
+
 
 
 
@@ -114,7 +226,15 @@ function BfsiHeroBackground() {
 
 
 
+
+
+
+
           <feOffset dx="-8" dy="-8" />
+
+
+
+
 
 
 
@@ -122,7 +242,15 @@ function BfsiHeroBackground() {
 
 
 
+
+
+
+
           <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1" />
+
+
+
+
 
 
 
@@ -130,7 +258,15 @@ function BfsiHeroBackground() {
 
 
 
+
+
+
+
           <feBlend mode="normal" in2="effect1_innerShadow_903_12871" result="effect2_innerShadow_903_12871" />
+
+
+
+
 
 
 
@@ -138,7 +274,15 @@ function BfsiHeroBackground() {
 
 
 
+
+
+
+
         <pattern id="pattern0_903_12871" patternContentUnits="objectBoundingBox" width="0.0461538" height="0.0946746">
+
+
+
+
 
 
 
@@ -146,7 +290,15 @@ function BfsiHeroBackground() {
 
 
 
+
+
+
+
         </pattern>
+
+
+
+
 
 
 
@@ -154,7 +306,15 @@ function BfsiHeroBackground() {
 
 
 
+
+
+
+
       </defs>
+
+
+
+
 
 
 
@@ -162,7 +322,15 @@ function BfsiHeroBackground() {
 
 
 
+
+
+
+
   );
+
+
+
+
 
 
 
@@ -174,7 +342,19 @@ function BfsiHeroBackground() {
 
 
 
+
+
+
+
+
+
+
+
 export default function BfsiPage() {
+
+
+
+
 
 
 
@@ -182,8 +362,21 @@ export default function BfsiPage() {
 
 
 
+
+
+
+
   const [openCards, setOpenCards] = useState<Set<number>>(new Set());
+
   const challengesSectionRef = useRef<HTMLElement | null>(null);
+
+
+
+
+
+
+
+
 
 
 
@@ -195,7 +388,15 @@ export default function BfsiPage() {
 
 
 
+
+
+
+
     setOpenCards((prev) => {
+
+
+
+
 
 
 
@@ -203,7 +404,15 @@ export default function BfsiPage() {
 
 
 
+
+
+
+
       if (next.has(index)) {
+
+
+
+
 
 
 
@@ -211,7 +420,15 @@ export default function BfsiPage() {
 
 
 
+
+
+
+
       } else {
+
+
+
+
 
 
 
@@ -219,7 +436,15 @@ export default function BfsiPage() {
 
 
 
+
+
+
+
       }
+
+
+
+
 
 
 
@@ -227,11 +452,27 @@ export default function BfsiPage() {
 
 
 
+
+
+
+
     });
 
 
 
+
+
+
+
   };
+
+
+
+
+
+
+
+
 
 
 
@@ -240,29 +481,56 @@ export default function BfsiPage() {
 
 
   useEffect(() => {
+
     const section = challengesSectionRef.current;
+
+
 
     if (!section) return;
 
+
+
     const observer = new IntersectionObserver(
+
       ([entry]) => {
+
         if (!entry.isIntersecting) {
+
           setOpenCards(new Set());
+
         }
+
       },
+
       {
+
         threshold: 0.05,
+
       }
+
     );
+
+
 
     observer.observe(section);
 
+
+
     return () => {
+
       observer.disconnect();
+
     };
+
   }, []);
 
+
+
   const handleCardKeyDown = (e: React.KeyboardEvent, index: number) => {
+
+
+
+
 
 
 
@@ -270,7 +538,15 @@ export default function BfsiPage() {
 
 
 
+
+
+
+
       e.preventDefault();
+
+
+
+
 
 
 
@@ -278,11 +554,27 @@ export default function BfsiPage() {
 
 
 
+
+
+
+
     }
 
 
 
+
+
+
+
   };
+
+
+
+
+
+
+
+
 
 
 
@@ -294,7 +586,15 @@ export default function BfsiPage() {
 
 
 
+
+
+
+
     {
+
+
+
+
 
 
 
@@ -302,7 +602,15 @@ export default function BfsiPage() {
 
 
 
+
+
+
+
       desc: "Track compliance, certifications and audits.",
+
+
+
+
 
 
 
@@ -310,7 +618,15 @@ export default function BfsiPage() {
 
 
 
+
+
+
+
       icon: (
+
+
+
+
 
 
 
@@ -318,7 +634,15 @@ export default function BfsiPage() {
 
 
 
+
+
+
+
           <path d="M21.9533 3.00048C19.4312 1.74314 16.3443 1.00228 13.0098 0.999664C9.67523 0.997044 6.58718 1.73304 4.06308 2.98642C2.82529 3.60108 2.20639 3.9084 1.60618 4.87574C1.00595 5.8431 1.00522 6.78021 1.00374 8.65442L1.00009 13.3064C0.994132 20.8842 7.0473 25.1022 10.5534 26.9095C11.5313 27.4136 12.0201 27.6656 12.9888 27.6663C13.9575 27.6671 14.4467 27.4159 15.4253 26.9133C18.9343 25.1115 24.9941 20.9031 25.0001 13.3252L25.0037 8.67328C25.0052 6.79908 25.0059 5.86197 24.4072 4.89366C23.8085 3.92536 23.1901 3.61708 21.9533 3.00048Z" stroke="#2D4CC8" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+
+
+
+
 
 
 
@@ -326,7 +650,15 @@ export default function BfsiPage() {
 
 
 
+
+
+
+
       ),
+
+
+
+
 
 
 
@@ -334,7 +666,15 @@ export default function BfsiPage() {
 
 
 
+
+
+
+
     {
+
+
+
+
 
 
 
@@ -342,7 +682,15 @@ export default function BfsiPage() {
 
 
 
+
+
+
+
       desc: "Role-based learning for modern finance.",
+
+
+
+
 
 
 
@@ -350,11 +698,23 @@ export default function BfsiPage() {
 
 
 
+
+
+
+
       icon: (
 
 
 
+
+
+
+
         <svg width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+
+
+
+
 
 
 
@@ -362,7 +722,15 @@ export default function BfsiPage() {
 
 
 
+
+
+
+
           <path d="M24 16V20.0892C24 21.5111 24 22.222 23.6493 22.8095L23.6421 22.8212C23.2881 23.4068 22.6457 23.7651 21.3608 24.4815C18.7527 25.9357 17.4485 26.6629 16.0145 26.6667H15.9855C14.5515 26.6629 13.2473 25.9357 10.6392 24.4815C9.35432 23.7651 8.71188 23.4068 8.35787 22.8212L8.35073 22.8095C8 22.222 8 21.5111 8 20.0892V16" stroke="#BF1869" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+
+
+
+
 
 
 
@@ -370,7 +738,15 @@ export default function BfsiPage() {
 
 
 
+
+
+
+
         </svg>
+
+
+
+
 
 
 
@@ -378,11 +754,23 @@ export default function BfsiPage() {
 
 
 
+
+
+
+
     },
 
 
 
+
+
+
+
     {
+
+
+
+
 
 
 
@@ -390,7 +778,15 @@ export default function BfsiPage() {
 
 
 
+
+
+
+
       desc: "Consistent training across teams.",
+
+
+
+
 
 
 
@@ -398,11 +794,23 @@ export default function BfsiPage() {
 
 
 
+
+
+
+
       icon: (
 
 
 
+
+
+
+
         <svg width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+
+
+
+
 
 
 
@@ -410,7 +818,15 @@ export default function BfsiPage() {
 
 
 
+
+
+
+
           <path d="M4.49935 22.0017C3.48683 22.0017 2.66602 21.1468 2.66602 20.092C2.66602 17.9464 4.88794 15.8007 8.66602 15.3887" stroke="#67096E" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+
+
+
+
 
 
 
@@ -418,7 +834,15 @@ export default function BfsiPage() {
 
 
 
+
+
+
+
           <path d="M27.5004 21.9978C28.5129 21.9978 29.3337 21.1428 29.3337 20.0881C29.3337 17.9425 27.1119 15.7969 23.334 15.3848" stroke="#67096E" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+
+
+
+
 
 
 
@@ -426,7 +850,15 @@ export default function BfsiPage() {
 
 
 
+
+
+
+
           <path d="M16 19.334C11 19.334 8 22.1912 8 25.0483C8 26.3107 8.89543 27.334 10 27.334H22C23.1045 27.334 24 26.3107 24 25.0483C24 22.1912 21 19.334 16 19.334Z" stroke="#67096E" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+
+
+
+
 
 
 
@@ -434,7 +866,15 @@ export default function BfsiPage() {
 
 
 
+
+
+
+
       ),
+
+
+
+
 
 
 
@@ -442,7 +882,15 @@ export default function BfsiPage() {
 
 
 
+
+
+
+
     {
+
+
+
+
 
 
 
@@ -450,7 +898,15 @@ export default function BfsiPage() {
 
 
 
+
+
+
+
       desc: "Banking, finance & insurance training.",
+
+
+
+
 
 
 
@@ -458,11 +914,23 @@ export default function BfsiPage() {
 
 
 
+
+
+
+
       icon: (
 
 
 
+
+
+
+
         <svg width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+
+
+
+
 
 
 
@@ -470,7 +938,15 @@ export default function BfsiPage() {
 
 
 
+
+
+
+
           <path d="M24.8889 4.00001C21.6083 3.99543 18.442 5.18279 16 7.33333V28C18.442 25.8495 21.6083 24.6621 24.8889 24.6667C26.9716 24.6667 28.0129 24.6667 28.4729 24.3723C28.7492 24.1955 28.862 24.0825 29.0388 23.8063C29.3333 23.3463 29.3333 22.5255 29.3333 20.8839V8.53763C29.3333 6.63391 29.3333 5.68205 28.6017 4.91048C27.87 4.13891 27.1211 4.09909 25.6231 4.01947C25.38 4.00655 25.1352 4.00001 24.8889 4.00001Z" stroke="#C05512" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+
+
+
+
 
 
 
@@ -478,11 +954,23 @@ export default function BfsiPage() {
 
 
 
+
+
+
+
       ),
 
 
 
+
+
+
+
     },
+
+
+
+
 
 
 
@@ -490,7 +978,15 @@ export default function BfsiPage() {
 
 
 
+
+
+
+
       title: "Training Effectiveness",
+
+
+
+
 
 
 
@@ -498,7 +994,15 @@ export default function BfsiPage() {
 
 
 
+
+
+
+
       color: "#2A7308",
+
+
+
+
 
 
 
@@ -506,7 +1010,15 @@ export default function BfsiPage() {
 
 
 
+
+
+
+
         <svg width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+
+
+
+
 
 
 
@@ -514,7 +1026,15 @@ export default function BfsiPage() {
 
 
 
+
+
+
+
           <path d="M19.334 22.666C20.4386 22.666 21.334 21.7706 21.334 20.666C21.334 19.5614 20.4386 18.666 19.334 18.666C18.2294 18.666 17.334 19.5614 17.334 20.666C17.334 21.7706 18.2294 22.666 19.334 22.666Z" stroke="#2A7308" strokeWidth="2" />
+
+
+
+
 
 
 
@@ -522,7 +1042,15 @@ export default function BfsiPage() {
 
 
 
+
+
+
+
           <path d="M20.5788 19.0617L24 12M12.7767 15.4245L17.6051 19.0617M4 25.3333L10.1194 15.8389" stroke="#2A7308" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+
+
+
+
 
 
 
@@ -530,7 +1058,15 @@ export default function BfsiPage() {
 
 
 
+
+
+
+
         </svg>
+
+
+
+
 
 
 
@@ -538,11 +1074,27 @@ export default function BfsiPage() {
 
 
 
+
+
+
+
     },
 
 
 
+
+
+
+
   ];
+
+
+
+
+
+
+
+
 
 
 
@@ -551,13 +1103,28 @@ export default function BfsiPage() {
 
 
   const benefitCards = [
+
     { line1: "Structured Compliance", line2: "Regulatory Training" },
+
     { line1: "Industry Skills", line2: "Team Upskilling" },
+
     { line1: "Branch Network", line2: "Staff Training" },
+
     { line1: "Product Knowledge", line2: "Advisory Skills" },
+
     { line1: "Training Performance", line2: "Analytics Insights" },
+
     { line1: "Audit Compliance", line2: "Record Keeping" },
+
   ];
+
+
+
+
+
+
+
+
 
 
 
@@ -569,7 +1136,15 @@ export default function BfsiPage() {
 
 
 
+
+
+
+
     <>
+
+
+
+
 
 
 
@@ -581,11 +1156,27 @@ export default function BfsiPage() {
 
 
 
+
+
+
+
+
+
+
+
       <main id="main-content" className={styles["bfsi-page"]}>
 
 
 
+
+
+
+
       <section className={styles["bfsi-hero"]}>
+
+
+
+
 
 
 
@@ -597,7 +1188,19 @@ export default function BfsiPage() {
 
 
 
+
+
+
+
+
+
+
+
          <nav className={styles["bfsi-breadcrumb"]} aria-label="breadcrumb">
+
+
+
+
 
 
 
@@ -605,7 +1208,15 @@ export default function BfsiPage() {
 
 
 
+
+
+
+
             Our Customers
+
+
+
+
 
 
 
@@ -613,7 +1224,15 @@ export default function BfsiPage() {
 
 
 
+
+
+
+
           <span className={styles["bfsi-breadcrumb-arrow"]}>
+
+
+
+
 
 
 
@@ -621,7 +1240,15 @@ export default function BfsiPage() {
 
 
 
+
+
+
+
               <path d="M4 3L8 8L4 13" stroke="#31344B" strokeWidth="1.5" />
+
+
+
+
 
 
 
@@ -629,11 +1256,23 @@ export default function BfsiPage() {
 
 
 
+
+
+
+
             </svg>
 
 
 
+
+
+
+
           </span>
+
+
+
+
 
 
 
@@ -641,7 +1280,15 @@ export default function BfsiPage() {
 
 
 
+
+
+
+
             Industries we Serve
+
+
+
+
 
 
 
@@ -649,7 +1296,15 @@ export default function BfsiPage() {
 
 
 
+
+
+
+
           <span className={styles["bfsi-breadcrumb-arrow"]}>
+
+
+
+
 
 
 
@@ -657,7 +1312,15 @@ export default function BfsiPage() {
 
 
 
+
+
+
+
               <path d="M4 3L8 8L4 13" stroke="#31344B" strokeWidth="1.5" />
+
+
+
+
 
 
 
@@ -665,11 +1328,23 @@ export default function BfsiPage() {
 
 
 
+
+
+
+
             </svg>
 
 
 
+
+
+
+
           </span>
+
+
+
+
 
 
 
@@ -677,11 +1352,23 @@ export default function BfsiPage() {
 
 
 
+
+
+
+
             BFSI
 
 
 
+
+
+
+
           </span>
+
+
+
+
 
 
 
@@ -693,7 +1380,19 @@ export default function BfsiPage() {
 
 
 
+
+
+
+
+
+
+
+
         <div className={styles["bfsi-hero-content"]}>
+
+
+
+
 
 
 
@@ -701,11 +1400,23 @@ export default function BfsiPage() {
 
 
 
+
+
+
+
             <span>BFSI</span>
 
 
 
+
+
+
+
           </div>
+
+
+
+
 
 
 
@@ -713,7 +1424,15 @@ export default function BfsiPage() {
 
 
 
+
+
+
+
           <p className={styles["bfsi-hero-subtext"]}>NeuroLXP enables secure, scalable, and compliant learning for banking, financial services, and insurance.</p>
+
+
+
+
 
 
 
@@ -721,7 +1440,15 @@ export default function BfsiPage() {
 
 
 
+
+
+
+
             <BookDemoTrigger className={styles["bfsi-btn-secondary"]}>
+
+
+
+
 
 
 
@@ -729,7 +1456,15 @@ export default function BfsiPage() {
 
 
 
+
+
+
+
             </BookDemoTrigger>
+
+
+
+
 
 
 
@@ -737,7 +1472,15 @@ export default function BfsiPage() {
 
 
 
+
+
+
+
               type="button"
+
+
+
+
 
 
 
@@ -745,7 +1488,15 @@ export default function BfsiPage() {
 
 
 
+
+
+
+
               onClick={() => router.push("/HomePage")}
+
+
+
+
 
 
 
@@ -753,7 +1504,15 @@ export default function BfsiPage() {
 
 
 
+
+
+
+
               <span>Start Learning</span>
+
+
+
+
 
 
 
@@ -761,7 +1520,15 @@ export default function BfsiPage() {
 
 
 
+
+
+
+
           </div>
+
+
+
+
 
 
 
@@ -769,7 +1536,19 @@ export default function BfsiPage() {
 
 
 
+
+
+
+
       </section>
+
+
+
+
+
+
+
+
 
 
 
@@ -781,7 +1560,15 @@ export default function BfsiPage() {
 
 
 
+
+
+
+
         <div className={styles["bfsi-banner-inner"]}>
+
+
+
+
 
 
 
@@ -789,7 +1576,15 @@ export default function BfsiPage() {
 
 
 
+
+
+
+
             <div className={styles["bfsi-banner-text"]}>
+
+
+
+
 
 
 
@@ -797,11 +1592,23 @@ export default function BfsiPage() {
 
 
 
+
+
+
+
                 <span>Regulated Learning Ecosystem</span>
 
 
 
+
+
+
+
               </div>
+
+
+
+
 
 
 
@@ -809,11 +1616,23 @@ export default function BfsiPage() {
 
 
 
+
+
+
+
               <p className={styles["bfsi-banner-subtext"]}>Deliver secure, compliant learning for workforce readiness and continuous upskilling across the BFSI sector.</p>
 
 
 
+
+
+
+
             </div>
+
+
+
+
 
 
 
@@ -821,7 +1640,15 @@ export default function BfsiPage() {
 
 
 
+
+
+
+
               <div className={styles["bfsi-secure-icon-bubble"]}>
+
+
+
+
 
 
 
@@ -829,7 +1656,15 @@ export default function BfsiPage() {
 
 
 
+
+
+
+
                   <svg width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+
+
+
+
 
 
 
@@ -837,7 +1672,15 @@ export default function BfsiPage() {
 
 
 
+
+
+
+
                     <rect x="6.5" y="14.5" width="19" height="14" rx="3" stroke="#FFFFFF" strokeWidth="2" />
+
+
+
+
 
 
 
@@ -845,7 +1688,15 @@ export default function BfsiPage() {
 
 
 
+
+
+
+
                   </svg>
+
+
+
+
 
 
 
@@ -853,7 +1704,15 @@ export default function BfsiPage() {
 
 
 
+
+
+
+
               </div>
+
+
+
+
 
 
 
@@ -861,7 +1720,15 @@ export default function BfsiPage() {
 
 
 
+
+
+
+
               <p className={styles["bfsi-secure-desc"]}>Deliver compliant, audit-ready learning from one secure platform.</p>
+
+
+
+
 
 
 
@@ -869,7 +1736,15 @@ export default function BfsiPage() {
 
 
 
+
+
+
+
           </div>
+
+
+
+
 
 
 
@@ -877,7 +1752,15 @@ export default function BfsiPage() {
 
 
 
+
+
+
+
             <Image src="/images/cheerful-young-man-holding-money.webp" alt="BFSI professional using NeuroLXP" fill sizes="(max-width: 1024px) 90vw, 690px" className={styles["bfsi-banner-photo-img"]} />
+
+
+
+
 
 
 
@@ -885,11 +1768,27 @@ export default function BfsiPage() {
 
 
 
+
+
+
+
         </div>
 
 
 
+
+
+
+
       </section>
+
+
+
+
+
+
+
+
 
 
 
@@ -901,7 +1800,15 @@ export default function BfsiPage() {
 
 
 
+
+
+
+
         <div className={styles["bfsi-cards-wrapper"]}>
+
+
+
+
 
 
 
@@ -909,7 +1816,15 @@ export default function BfsiPage() {
 
 
 
+
+
+
+
             <div className={styles["bfsi-card-icon"]}>
+
+
+
+
 
 
 
@@ -917,7 +1832,15 @@ export default function BfsiPage() {
 
 
 
+
+
+
+
                 <g filter="url(#filter0_dd_903_12986)">
+
+
+
+
 
 
 
@@ -925,7 +1848,15 @@ export default function BfsiPage() {
 
 
 
+
+
+
+
                 </g>
+
+
+
+
 
 
 
@@ -933,7 +1864,15 @@ export default function BfsiPage() {
 
 
 
+
+
+
+
                 <path d="M43.9333 23.7212C41.4112 22.4638 38.3243 21.723 34.9898 21.7204C31.6552 21.7177 28.5672 22.4537 26.0431 23.7071C24.8053 24.3218 24.1864 24.6291 23.5862 25.5964C22.9859 26.5638 22.9852 27.5009 22.9837 29.3751L22.9801 34.0271C22.9741 41.6049 29.0273 45.8229 32.5334 47.6302C33.5113 48.1343 34.0001 48.3863 34.9688 48.387C35.9375 48.3878 36.4267 48.1366 37.4053 47.634C40.9143 45.8322 46.9741 41.6238 46.9801 34.0459L46.9837 29.394C46.9852 27.5198 46.9859 26.5827 46.3872 25.6144C45.7885 24.6461 45.1701 24.3378 43.9333 23.7212Z" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+
+
+
+
 
 
 
@@ -941,7 +1880,15 @@ export default function BfsiPage() {
 
 
 
+
+
+
+
                   <filter id="filter0_dd_903_12986" x="-15.0005" y="-15" width="99" height="99" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+
+
+
+
 
 
 
@@ -949,7 +1896,15 @@ export default function BfsiPage() {
 
 
 
+
+
+
+
                     <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+
+
+
+
 
 
 
@@ -957,11 +1912,23 @@ export default function BfsiPage() {
 
 
 
+
+
+
+
                     <feGaussianBlur stdDeviation="8" />
 
 
 
+
+
+
+
                     <feComposite in2="hardAlpha" operator="out" />
+
+
+
+
 
 
 
@@ -969,7 +1936,15 @@ export default function BfsiPage() {
 
 
 
+
+
+
+
                     <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_903_12986" />
+
+
+
+
 
 
 
@@ -977,7 +1952,15 @@ export default function BfsiPage() {
 
 
 
+
+
+
+
                     <feOffset dx="8" dy="8" />
+
+
+
+
 
 
 
@@ -985,7 +1968,15 @@ export default function BfsiPage() {
 
 
 
+
+
+
+
                     <feComposite in2="hardAlpha" operator="out" />
+
+
+
+
 
 
 
@@ -993,7 +1984,15 @@ export default function BfsiPage() {
 
 
 
+
+
+
+
                     <feBlend mode="normal" in2="effect1_dropShadow_903_12986" result="effect2_dropShadow_903_12986" />
+
+
+
+
 
 
 
@@ -1001,7 +2000,15 @@ export default function BfsiPage() {
 
 
 
+
+
+
+
                   </filter>
+
+
+
+
 
 
 
@@ -1009,7 +2016,15 @@ export default function BfsiPage() {
 
 
 
+
+
+
+
               </svg>
+
+
+
+
 
 
 
@@ -1017,7 +2032,15 @@ export default function BfsiPage() {
 
 
 
+
+
+
+
             <h3 className={styles["bfsi-card-title"]}>Compliance Ready</h3>
+
+
+
+
 
 
 
@@ -1025,7 +2048,19 @@ export default function BfsiPage() {
 
 
 
+
+
+
+
           </div>
+
+
+
+
+
+
+
+
 
 
 
@@ -1037,7 +2072,15 @@ export default function BfsiPage() {
 
 
 
+
+
+
+
             <div className={styles["bfsi-card-icon"]}>
+
+
+
+
 
 
 
@@ -1045,7 +2088,15 @@ export default function BfsiPage() {
 
 
 
+
+
+
+
                 <g filter="url(#filter0_dd_903_12964)">
+
+
+
+
 
 
 
@@ -1053,7 +2104,15 @@ export default function BfsiPage() {
 
 
 
+
+
+
+
                 </g>
+
+
+
+
 
 
 
@@ -1061,7 +2120,15 @@ export default function BfsiPage() {
 
 
 
+
+
+
+
                 <path d="M26.9703 34.3626C29.8437 34.4606 36.3598 34.032 40.0706 28.1529M37.6426 27.4404L40.1436 27.0399C40.4484 27.0013 40.8957 27.2423 41.0054 27.5292L41.6649 29.7143" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+
+
+
+
 
 
 
@@ -1069,7 +2136,15 @@ export default function BfsiPage() {
 
 
 
+
+
+
+
                   <filter id="filter0_dd_903_12964" x="-15.0005" y="-15" width="99" height="99" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+
+
+
+
 
 
 
@@ -1077,7 +2152,15 @@ export default function BfsiPage() {
 
 
 
+
+
+
+
                     <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+
+
+
+
 
 
 
@@ -1085,11 +2168,23 @@ export default function BfsiPage() {
 
 
 
+
+
+
+
                     <feGaussianBlur stdDeviation="8" />
 
 
 
+
+
+
+
                     <feComposite in2="hardAlpha" operator="out" />
+
+
+
+
 
 
 
@@ -1097,7 +2192,15 @@ export default function BfsiPage() {
 
 
 
+
+
+
+
                     <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_903_12964" />
+
+
+
+
 
 
 
@@ -1105,7 +2208,15 @@ export default function BfsiPage() {
 
 
 
+
+
+
+
                     <feOffset dx="8" dy="8" />
+
+
+
+
 
 
 
@@ -1113,7 +2224,15 @@ export default function BfsiPage() {
 
 
 
+
+
+
+
                     <feComposite in2="hardAlpha" operator="out" />
+
+
+
+
 
 
 
@@ -1121,7 +2240,15 @@ export default function BfsiPage() {
 
 
 
+
+
+
+
                     <feBlend mode="normal" in2="effect1_dropShadow_903_12964" result="effect2_dropShadow_903_12964" />
+
+
+
+
 
 
 
@@ -1129,7 +2256,15 @@ export default function BfsiPage() {
 
 
 
+
+
+
+
                   </filter>
+
+
+
+
 
 
 
@@ -1137,7 +2272,15 @@ export default function BfsiPage() {
 
 
 
+
+
+
+
               </svg>
+
+
+
+
 
 
 
@@ -1145,7 +2288,15 @@ export default function BfsiPage() {
 
 
 
+
+
+
+
             <h3 className={styles["bfsi-card-title"]}>Skill Focused</h3>
+
+
+
+
 
 
 
@@ -1153,7 +2304,19 @@ export default function BfsiPage() {
 
 
 
+
+
+
+
           </div>
+
+
+
+
+
+
+
+
 
 
 
@@ -1165,7 +2328,15 @@ export default function BfsiPage() {
 
 
 
+
+
+
+
             <div className={styles["bfsi-card-icon"]}>
+
+
+
+
 
 
 
@@ -1173,7 +2344,15 @@ export default function BfsiPage() {
 
 
 
+
+
+
+
                 <g filter="url(#filter0_dd_903_12975)">
+
+
+
+
 
 
 
@@ -1181,7 +2360,15 @@ export default function BfsiPage() {
 
 
 
+
+
+
+
                 </g>
+
+
+
+
 
 
 
@@ -1189,7 +2376,15 @@ export default function BfsiPage() {
 
 
 
+
+
+
+
                 <path d="M38.3224 21.7217L31.6558 21.7164C30.5512 21.7155 29.6551 22.6103 29.6542 23.7148C29.6533 24.8194 30.5481 25.7155 31.6526 25.7164L38.3193 25.7217C39.4238 25.7225 40.32 24.8278 40.3209 23.7232C40.3217 22.6187 39.427 21.7225 38.3224 21.7217Z" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+
+
+
+
 
 
 
@@ -1197,7 +2392,15 @@ export default function BfsiPage() {
 
 
 
+
+
+
+
                 <defs>
+
+
+
+
 
 
 
@@ -1205,11 +2408,23 @@ export default function BfsiPage() {
 
 
 
+
+
+
+
                     <feFlood floodOpacity="0" result="BackgroundImageFix" />
 
 
 
+
+
+
+
                     <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+
+
+
+
 
 
 
@@ -1217,11 +2432,23 @@ export default function BfsiPage() {
 
 
 
+
+
+
+
                     <feGaussianBlur stdDeviation="8" />
 
 
 
+
+
+
+
                     <feComposite in2="hardAlpha" operator="out" />
+
+
+
+
 
 
 
@@ -1229,7 +2456,15 @@ export default function BfsiPage() {
 
 
 
+
+
+
+
                     <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_903_12975" />
+
+
+
+
 
 
 
@@ -1237,7 +2472,15 @@ export default function BfsiPage() {
 
 
 
+
+
+
+
                     <feOffset dx="8" dy="8" />
+
+
+
+
 
 
 
@@ -1245,7 +2488,15 @@ export default function BfsiPage() {
 
 
 
+
+
+
+
                     <feComposite in2="hardAlpha" operator="out" />
+
+
+
+
 
 
 
@@ -1253,7 +2504,15 @@ export default function BfsiPage() {
 
 
 
+
+
+
+
                     <feBlend mode="normal" in2="effect1_dropShadow_903_12975" result="effect2_dropShadow_903_12975" />
+
+
+
+
 
 
 
@@ -1261,7 +2520,15 @@ export default function BfsiPage() {
 
 
 
+
+
+
+
                   </filter>
+
+
+
+
 
 
 
@@ -1269,7 +2536,15 @@ export default function BfsiPage() {
 
 
 
+
+
+
+
               </svg>
+
+
+
+
 
 
 
@@ -1277,7 +2552,15 @@ export default function BfsiPage() {
 
 
 
+
+
+
+
             <h3 className={styles["bfsi-card-title"]}>Audit Friendly</h3>
+
+
+
+
 
 
 
@@ -1285,7 +2568,15 @@ export default function BfsiPage() {
 
 
 
+
+
+
+
           </div>
+
+
+
+
 
 
 
@@ -1293,7 +2584,19 @@ export default function BfsiPage() {
 
 
 
+
+
+
+
       </section>
+
+
+
+
+
+
+
+
 
 
 
@@ -1305,7 +2608,15 @@ export default function BfsiPage() {
 
 
 
+
+
+
+
         <div className={styles["bfsi-challenges-header"]}>
+
+
+
+
 
 
 
@@ -1313,7 +2624,15 @@ export default function BfsiPage() {
 
 
 
+
+
+
+
             <span>Challenges & Solutions</span>
+
+
+
+
 
 
 
@@ -1321,7 +2640,15 @@ export default function BfsiPage() {
 
 
 
+
+
+
+
           <h2 className={styles["bfsi-challenges-heading"]}>Addressing Key Challenges in BFSI <span style={{ color: "#2D4CC8" }}>Training</span></h2>
+
+
+
+
 
 
 
@@ -1329,7 +2656,19 @@ export default function BfsiPage() {
 
 
 
+
+
+
+
         </div>
+
+
+
+
+
+
+
+
 
 
 
@@ -1341,7 +2680,15 @@ export default function BfsiPage() {
 
 
 
+
+
+
+
           {challengeCards.slice(0, 3).map((card, i) => (
+
+
+
+
 
 
 
@@ -1349,7 +2696,15 @@ export default function BfsiPage() {
 
 
 
+
+
+
+
               <div className={`${styles["bfsi-challenge-top"]} ${openCards.has(i) ? styles.open : ""}`} onClick={() => toggleCard(i)} onKeyDown={(e) => handleCardKeyDown(e, i)} role="button" tabIndex={0} aria-expanded={openCards.has(i)} aria-controls={`bfsi-challenge-panel-${i}`}>
+
+
+
+
 
 
 
@@ -1357,7 +2712,15 @@ export default function BfsiPage() {
 
 
 
+
+
+
+
                   {card.icon}
+
+
+
+
 
 
 
@@ -1365,39 +2728,35 @@ export default function BfsiPage() {
 
 
 
+
+
+
+
                 <h3 className={styles["bfsi-challenge-title"]}>{card.title}</h3>
 
 
 
-                {!openCards.has(i) && (
 
 
 
-                  <span className={styles["bfsi-challenge-chevron"]}>
+
+                <span className={`${styles["bfsi-challenge-chevron"]} ${openCards.has(i) ? styles.open : ""}`}>
+                  <svg width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+                    <path d="M8 13L16 21L24 13" stroke="#141B34" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                  </svg>
+                </span>
 
 
 
-                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true">
 
-
-
-                      <path d="M8 13L16 21L24 13" stroke="#141B34" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-
-
-
-                    </svg>
-
-
-
-                  </span>
-
-
-
-                )}
 
 
 
               </div>
+
+
+
+
 
 
 
@@ -1405,7 +2764,15 @@ export default function BfsiPage() {
 
 
 
+
+
+
+
                 <p className={styles["bfsi-challenge-desc"]}>{card.desc}</p>
+
+
+
+
 
 
 
@@ -1413,7 +2780,15 @@ export default function BfsiPage() {
 
 
 
+
+
+
+
             </div>
+
+
+
+
 
 
 
@@ -1421,7 +2796,19 @@ export default function BfsiPage() {
 
 
 
+
+
+
+
         </div>
+
+
+
+
+
+
+
+
 
 
 
@@ -1433,7 +2820,15 @@ export default function BfsiPage() {
 
 
 
+
+
+
+
           {challengeCards.slice(3, 5).map((card, i) => {
+
+
+
+
 
 
 
@@ -1441,7 +2836,15 @@ export default function BfsiPage() {
 
 
 
+
+
+
+
             return (
+
+
+
+
 
 
 
@@ -1449,7 +2852,15 @@ export default function BfsiPage() {
 
 
 
+
+
+
+
                 <div className={`${styles["bfsi-challenge-top"]} ${openCards.has(index) ? styles.open : ""}`} onClick={() => toggleCard(index)} onKeyDown={(e) => handleCardKeyDown(e, index)} role="button" tabIndex={0} aria-expanded={openCards.has(index)} aria-controls={`bfsi-challenge-panel-${index}`}>
+
+
+
+
 
 
 
@@ -1457,7 +2868,15 @@ export default function BfsiPage() {
 
 
 
+
+
+
+
                     {card.icon}
+
+
+
+
 
 
 
@@ -1465,39 +2884,35 @@ export default function BfsiPage() {
 
 
 
+
+
+
+
                   <h3 className={styles["bfsi-challenge-title"]}>{card.title}</h3>
 
 
 
-                  {!openCards.has(index) && (
 
 
 
-                    <span className={styles["bfsi-challenge-chevron"]}>
+
+                  <span className={`${styles["bfsi-challenge-chevron"]} ${openCards.has(index) ? styles.open : ""}`}>
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+                      <path d="M8 13L16 21L24 13" stroke="#141B34" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                    </svg>
+                  </span>
 
 
 
-                      <svg width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true">
 
-
-
-                        <path d="M8 13L16 21L24 13" stroke="#141B34" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-
-
-
-                      </svg>
-
-
-
-                    </span>
-
-
-
-                  )}
 
 
 
                 </div>
+
+
+
+
 
 
 
@@ -1505,7 +2920,15 @@ export default function BfsiPage() {
 
 
 
+
+
+
+
                   <p className={styles["bfsi-challenge-desc"]}>{card.desc}</p>
+
+
+
+
 
 
 
@@ -1513,7 +2936,15 @@ export default function BfsiPage() {
 
 
 
+
+
+
+
               </div>
+
+
+
+
 
 
 
@@ -1521,7 +2952,15 @@ export default function BfsiPage() {
 
 
 
+
+
+
+
           })}
+
+
+
+
 
 
 
@@ -1529,7 +2968,19 @@ export default function BfsiPage() {
 
 
 
+
+
+
+
       </section>
+
+
+
+
+
+
+
+
 
 
 
@@ -1541,7 +2992,15 @@ export default function BfsiPage() {
 
 
 
+
+
+
+
         <div className={styles["bfsi-stat-panel"]}>
+
+
+
+
 
 
 
@@ -1549,7 +3008,15 @@ export default function BfsiPage() {
 
 
 
+
+
+
+
           <div className={styles["bfsi-stat-shadow-overlay"]} />
+
+
+
+
 
 
 
@@ -1557,7 +3024,15 @@ export default function BfsiPage() {
 
 
 
+
+
+
+
             <div className={styles["bfsi-stat-badge"]}>
+
+
+
+
 
 
 
@@ -1565,7 +3040,15 @@ export default function BfsiPage() {
 
 
 
+
+
+
+
               <span className={styles["bfsi-stat-badge-tm"]}>TM</span>
+
+
+
+
 
 
 
@@ -1573,7 +3056,15 @@ export default function BfsiPage() {
 
 
 
+
+
+
+
             <h2 className={styles["bfsi-stat-heading"]}>Future-Ready BFSI <span style={{ color: "#2D4CC8" }}>Training</span></h2>
+
+
+
+
 
 
 
@@ -1581,7 +3072,15 @@ export default function BfsiPage() {
 
 
 
+
+
+
+
           </div>
+
+
+
+
 
 
 
@@ -1589,7 +3088,19 @@ export default function BfsiPage() {
 
 
 
+
+
+
+
       </section>
+
+
+
+
+
+
+
+
 
 
 
@@ -1601,7 +3112,15 @@ export default function BfsiPage() {
 
 
 
+
+
+
+
         <div className={styles["bfsi-benefits-header"]}>
+
+
+
+
 
 
 
@@ -1609,7 +3128,15 @@ export default function BfsiPage() {
 
 
 
+
+
+
+
             <span>Organization Benefit</span>
+
+
+
+
 
 
 
@@ -1617,7 +3144,15 @@ export default function BfsiPage() {
 
 
 
+
+
+
+
           <h2 className={styles["bfsi-benefits-heading"]}>Benefits of NeuroLXP for BFSI <span style={{ color: "#2D4CC8" }}>Organisations</span></h2>
+
+
+
+
 
 
 
@@ -1625,7 +3160,19 @@ export default function BfsiPage() {
 
 
 
+
+
+
+
         </div>
+
+
+
+
+
+
+
+
 
 
 
@@ -1637,11 +3184,23 @@ export default function BfsiPage() {
 
 
 
+
+
+
+
           {benefitCards.map((item) => (
+
             <div
+
               className={styles["bfsi-benefit-card"]}
+
               key={`${item.line1}-${item.line2}`}
+
             >
+
+
+
+
 
 
 
@@ -1649,7 +3208,15 @@ export default function BfsiPage() {
 
 
 
+
+
+
+
                 <svg width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+
+
+
+
 
 
 
@@ -1657,7 +3224,15 @@ export default function BfsiPage() {
 
 
 
+
+
+
+
                   <path d="M10 16.5L14 20.5L22 11.5" stroke="#2A7308" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
+
+
+
+
 
 
 
@@ -1665,14 +3240,29 @@ export default function BfsiPage() {
 
 
 
+
+
+
+
               </span>
 
 
 
+
+
+
+
               <p className={styles["bfsi-benefit-text"]}>
+
                 {item.line1}<br />
+
                 {item.line2}
+
               </p>
+
+
+
+
 
 
 
@@ -1680,7 +3270,15 @@ export default function BfsiPage() {
 
 
 
+
+
+
+
           ))}
+
+
+
+
 
 
 
@@ -1688,7 +3286,19 @@ export default function BfsiPage() {
 
 
 
+
+
+
+
       </section>
+
+
+
+
+
+
+
+
 
 
 
@@ -1700,7 +3310,15 @@ export default function BfsiPage() {
 
 
 
+
+
+
+
         <div className={styles["bfsi-finance-panel"]}>
+
+
+
+
 
 
 
@@ -1708,7 +3326,15 @@ export default function BfsiPage() {
 
 
 
+
+
+
+
           <div className={styles["bfsi-finance-overlay"]} />
+
+
+
+
 
 
 
@@ -1716,7 +3342,15 @@ export default function BfsiPage() {
 
 
 
+
+
+
+
             <div className={styles["bfsi-finance-blur"]} />
+
+
+
+
 
 
 
@@ -1724,7 +3358,15 @@ export default function BfsiPage() {
 
 
 
+
+
+
+
               <span>Future Ready</span>
+
+
+
+
 
 
 
@@ -1732,7 +3374,15 @@ export default function BfsiPage() {
 
 
 
+
+
+
+
             <h2 className={styles["bfsi-finance-heading"]}>Future-Ready Finance <span style={{ color: "#2D4CC8" }}>Learning</span></h2>
+
+
+
+
 
 
 
@@ -1740,7 +3390,15 @@ export default function BfsiPage() {
 
 
 
+
+
+
+
           </div>
+
+
+
+
 
 
 
@@ -1748,7 +3406,19 @@ export default function BfsiPage() {
 
 
 
+
+
+
+
       </section>
+
+
+
+
+
+
+
+
 
 
 
@@ -1760,7 +3430,15 @@ export default function BfsiPage() {
 
 
 
+
+
+
+
         <div className={styles["bfsi-cta-badge"]}>
+
+
+
+
 
 
 
@@ -1768,7 +3446,15 @@ export default function BfsiPage() {
 
 
 
+
+
+
+
         </div>
+
+
+
+
 
 
 
@@ -1776,11 +3462,23 @@ export default function BfsiPage() {
 
 
 
+
+
+
+
         <p className={styles["bfsi-cta-subtext"]}>AI-powered learning, compliance-ready training, and advanced analytics<br />help BFSI teams stay skilled, compliant, and future-ready.</p>
 
 
 
+
+
+
+
       </section>
+
+
+
+
 
 
 
@@ -1792,7 +3490,19 @@ export default function BfsiPage() {
 
 
 
+
+
+
+
+
+
+
+
       <Footer />
+
+
+
+
 
 
 
@@ -1800,7 +3510,15 @@ export default function BfsiPage() {
 
 
 
+
+
+
+
   );
+
+
+
+
 
 
 
