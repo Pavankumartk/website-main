@@ -5,7 +5,7 @@
   	background-color: #dfe6e9;
   	overflow: hidden;
   	text-align: center;
-    max-width: 1440px; 
+    max-width: 1440px;
 	margin: 0 auto;
   align-items: center;
   justify-self: center;
@@ -203,7 +203,7 @@
   	color: #2f3547;
   	font-family: "Segoe UI", "Inter";
     transform: translateY(15);
-    
+
 }
 .learning {
   	position: relative;
@@ -555,7 +555,7 @@
   	letter-spacing: 0.03em;
   	line-height: 28px;
   	font-weight: 600;
-    
+
 }
 .checkmarkCircle04Group {
   	margin: 0 !important;
@@ -1377,7 +1377,7 @@
   	align-items: flex-start;
   	gap: 32px;
   	font-family: "Segoe UI", "Inter";
- 
+
 }
 .frameChild23 {
   	width: 355.6px;
@@ -1566,7 +1566,7 @@
   	border-radius: 100px;
   	width: 1280px;
   	height: 542px;
-  	
+
   	background-size: cover;
   	background-repeat: no-repeat;
   	background-position: top;
@@ -2095,7 +2095,7 @@
   object-fit: cover;
   object-position: center;
   z-index: 0;
-  
+
 }
 
 .rectangleParent7 > .rectangle,
@@ -3737,7 +3737,6 @@
   transform: translateY(-20);
 }
 
-
  .personalizationHeroButton {
   min-width: 190px;
   min-height: 54px;
@@ -4209,7 +4208,7 @@ body {
   bottom: auto !important;
   left: 0 !important;
   right: 0 !important;
-  
+
   height: calc(100% + 24px) !important;
   margin: 0 !important;
   padding: 0 !important;
@@ -4956,7 +4955,7 @@ body {
 }
 
 @media (max-width: 599px) {
-  
+
   .personalization > .personalizationHero {
     position: relative !important;
     top: auto !important;
@@ -5239,7 +5238,7 @@ body {
     width: 100% !important;
     height: 100% !important;
     object-fit: cover !important;
-   
+
   }
 
   .frameParent52 {
@@ -5826,7 +5825,7 @@ body {
 .personalizationHeroStat,
 .personalizedLearningPill {
   list-style: none;
-}	
+}
 .frameParent47,
 .frameParent47 * {
   font-family: "Segoe UI", "Inter";
@@ -5902,7 +5901,6 @@ body {
 .personalizationHeroStat span {
   isolation: isolate;
 }
-
 
 @media (max-width: 599px) {
   .personalizationHeroStats {
@@ -6002,7 +6000,6 @@ body {
   }
 }
 
-
 @media (min-width: 768px) and (max-width: 1439px) {
   html,
   body {
@@ -6027,7 +6024,6 @@ body {
     transform-origin: top left !important;
   }
 }
-
 
 @media (min-width: 1440px) and (max-width: 2560px) {
   html,
@@ -6060,8 +6056,6 @@ body {
     gap: 16px !important;
   }
 }
-
-
 
 /* =========================================================
    FINAL PERSONALIZATION CTA RESPONSIVE FIX
@@ -6314,8 +6308,6 @@ body {
   }
 }
 
-
-
 /* =========================================================
    CTA ALIGNMENT ONLY — FINAL
    "Make Learning Personal" section only.
@@ -6485,8 +6477,6 @@ body {
     object-position: center !important;
   }
 }
-
-
 
 /* =========================================================
    CTA POSITION / SAFE-SIDE / SPACING FIX
@@ -6787,8 +6777,6 @@ body {
   }
 }
 
-
-
 /* =========================================================
    CTA EDGE-CUT FIX ONLY
    "Make Learning Personal" section only
@@ -6908,7 +6896,6 @@ body {
     width: calc(100vw - 20px) !important;
   }
 }
-
 
 /* =========================================================
    FINAL CTA LAYOUT FIX — "MAKE LEARNING PERSONAL"
@@ -7143,7 +7130,6 @@ body {
   }
 }
 
-
 /* =========================================================
    FINAL DESKTOP CTA SIDE ALIGNMENT FIX
    "Make Learning Personal" section only.
@@ -7189,7 +7175,6 @@ body {
     right: 48px !important;
   }
 }
-
 
 /* =========================================================
    ABSOLUTE FINAL FIX — LAST CTA SHAPE ONLY
@@ -7261,7 +7246,6 @@ body {
     width: calc(100% - 96px) !important;
   }
 }
-
 
 /* BOOK A DEMO — remove browser/native black ring only */
 .frameWrapper18 {
@@ -7663,7 +7647,6 @@ body {
   text-align: left !important;
 }
 
-
 .personalization .learningBuiltAroundContainer,
 .personalization .personalizationInAction,
 .personalization .betterLearningBetterContainer,
@@ -7967,8 +7950,6 @@ body {
   }
 }
 
-
-
 /* =========================================================
    SELECTABLE BADGES — real DOM text, same visual treatment
    ========================================================= */
@@ -8153,7 +8134,6 @@ body {
    Keep this block LAST in the CSS file
    ========================================================== */
 
-
 /* ==========================================================
    1. LAST CTA — BOOK A DEMO
    Exact size / shape / shadow / typography
@@ -8205,7 +8185,6 @@ body {
   transition: box-shadow 0.2s ease !important;
 }
 
-
 /* Button inner wrapper */
 .personalization > .rectangleParent7
 .frameWrapper18 .bookADemoWrapper {
@@ -8225,7 +8204,6 @@ body {
 
   flex: 0 0 140px !important;
 }
-
 
 /* Button text */
 .personalization > .rectangleParent7
@@ -8258,7 +8236,6 @@ body {
   white-space: nowrap !important;
 }
 
-
 /* Exact pressed / hover behaviour */
 .personalization > .rectangleParent7 .frameWrapper18:hover,
 .personalization > .rectangleParent7 .frameWrapper18:active {
@@ -8280,21 +8257,17 @@ body {
   transform: none !important;
 }
 
-
 .personalization > .rectangleParent7 .frameWrapper18:focus,
 .personalization > .rectangleParent7 .frameWrapper18:focus-visible {
   border: 0 !important;
   outline: 0 !important;
 }
 
-
 .personalization > .rectangleParent7
 .frameWrapper18::-moz-focus-inner {
   border: 0 !important;
   padding: 0 !important;
 }
-
-
 
 /* ==========================================================
    2. MOBILE BREADCRUMB — PREVENT OVERLAP
@@ -8349,7 +8322,6 @@ body {
     white-space: nowrap !important;
   }
 
-
   .personalization .frameParent3 .learning,
   .personalization .frameParent3 .arrowRightDoubleGroup {
     width: auto !important;
@@ -8364,7 +8336,6 @@ body {
     white-space: nowrap !important;
   }
 
-
   .personalization .frameParent3 .arrowDown01Icon {
     width: 14px !important;
     height: 14px !important;
@@ -8376,7 +8347,6 @@ body {
     flex: 0 0 14px !important;
   }
 }
-
 
 /* Extra protection for narrow phones */
 @media (max-width: 480px) {
@@ -8496,7 +8466,6 @@ body {
   }
 }
 
-
 /* Very small phones */
 @media (max-width: 380px) {
 
@@ -8602,7 +8571,6 @@ body {
     z-index: 5 !important;
   }
 
-
   /* Heading + description */
   .personalization > .rectangleParent7
   .makeLearningPersonalParent {
@@ -8627,7 +8595,6 @@ body {
 
     transform: none !important;
   }
-
 
   /* Button wrapper gets its OWN row */
   .personalization > .rectangleParent7
@@ -8655,7 +8622,6 @@ body {
     z-index: 10 !important;
   }
 
-
   /*
    * IMPORTANT:
    * Do NOT change button width/height/radius here.
@@ -8676,7 +8642,6 @@ body {
     z-index: 11 !important;
   }
 
-
   /* Bottom CTA container must grow with its content */
   .personalization > .rectangleParent7 {
     height: auto !important;
@@ -8686,7 +8651,6 @@ body {
 
     box-sizing: border-box !important;
   }
-
 
   /*
    * Image must not sit over the CTA text/button.
@@ -8714,7 +8678,6 @@ body {
     z-index: 1 !important;
   }
 }
-
 
 /* Extra-small mobile */
 @media (max-width: 380px) {
@@ -8785,7 +8748,6 @@ body {
   }
 }
 
-
 /* =========================================================
    FINAL PERSONALIZATION ALIGNMENT FIXES - 2026-10-01
    ========================================================= */
@@ -8834,7 +8796,6 @@ body {
   .learningPathsAdaptAsProgreWrapper p, .analyticsRevealLearner, .everyInteractionImproves, .modernLearningFeatureText p { white-space: normal !important; }
   .assessKnowledgeSkills, .buildALearning, .useLearningData, .closeSkillGaps { width: 100% !important; height: auto !important; min-height: 0 !important; }
 }
-
 
 /* Screenshot corrections: compact feature rows and predictable text lines. */
 .personalization .modernLearningFeatures {
@@ -9132,5 +9093,81 @@ body {
   .personalization .frameParent21 :is(.understandParent, .adaptParent, .optimizeParent, .developParent) {
     padding-left: 24px !important;
     box-sizing: border-box !important;
+  }
+}
+
+/* Intelligent Learning Experience badge — scoped fix only */
+.personalization .frameParent36 .frameChild22 {
+  display: inline-flex !important;
+  position: static !important;
+  width: max-content !important;
+  max-width: 100% !important;
+  min-width: 0 !important;
+  min-height: 50px !important;
+  height: auto !important;
+  margin: 0 auto !important;
+  padding: 8px 28px !important;
+  align-items: center !important;
+  justify-content: center !important;
+  align-self: center !important;
+  border: 0 !important;
+  border-radius: 28px !important;
+  background: #dfe6e9 !important;
+  box-shadow: inset -4px -4px 4px #fff, inset 4px 4px 4px rgba(196, 196, 196, 0.75) !important;
+  color: #2d4cc8 !important;
+  font: 600 24px/1.2 "Segoe UI", "Inter", sans-serif !important;
+  letter-spacing: 0.02em !important;
+  text-align: center !important;
+  white-space: nowrap !important;
+  box-sizing: border-box !important;
+}
+
+@media (max-width: 767px) {
+  .personalization .frameParent36 .frameChild22 {
+    width: max-content !important;
+    max-width: calc(100% - 32px) !important;
+    min-height: 44px !important;
+    padding: 8px 22px !important;
+    font-size: 16px !important;
+    white-space: nowrap !important;
+  }
+}
+
+/* ==========================================================================
+   TALK TO OUR EXPERT — INTELLIGENT LEARNING EXPERIENCE
+   Anchors the global expert launcher to this section only.
+   ========================================================================== */
+
+.personalization .frameParent36 {
+  position: relative !important;
+}
+
+.personalization .intelligentLearningExpertButtonSlot {
+  position: absolute;
+  top: 20%;
+  right: 16px;
+  bottom: auto;
+  left: auto;
+  width: 64px;
+  height: 64px;
+  margin: 0;
+  padding: 0;
+  transform: translateY(-50%);
+  z-index: 20;
+  pointer-events: auto;
+}
+
+@media (max-width: 1100px) {
+  .personalization .intelligentLearningExpertButtonSlot {
+    top: 40%;
+    right: 12px;
+  }
+}
+
+@media (max-width: 767px) {
+  .personalization .intelligentLearningExpertButtonSlot {
+    top: 900px;
+    right: 8px;
+    transform: none;
   }
 }
