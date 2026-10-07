@@ -2802,7 +2802,6 @@
   }
 }
 
-
 /* ==========================================================================
    FINAL DESKTOP CENTERING — HERO FRAME + BOTTOM VIDEO FRAME ONLY
    --------------------------------------------------------------------------
@@ -2845,7 +2844,6 @@
     transform: translateX(-50%) !important;
   }
 }
-
 
 /* ==========================================================================
    FINAL BOOK A DEMO BUTTON — NEUMORPHIC HOVER IN / HOVER OUT + MOBILE
@@ -3029,7 +3027,6 @@
    - Supporting copy: 16px
    ========================================================================== */
 
-
 /* ==========================================================================
    FONT FAMILY — WHOLE NGO PAGE
    ========================================================================== */
@@ -3037,7 +3034,6 @@
 .ngo * {
   font-family: "Segoe UI", "Inter", sans-serif !important;
 }
-
 
 /* ==========================================================================
    DESKTOP TYPOGRAPHY
@@ -3100,7 +3096,6 @@
   }
 }
 
-
 /* ==========================================================================
    TABLET / SMALL LAPTOP TYPOGRAPHY
    ========================================================================== */
@@ -3157,7 +3152,6 @@
     font-size: 16px !important;
   }
 }
-
 
 /* ==========================================================================
    MOBILE TYPOGRAPHY
@@ -3228,7 +3222,6 @@
    No card, typography, image, color, or content redesign.
    ========================================================================== */
 
-
 /* ==========================================================================
    1. EVERY WORD SELECTABLE
    Includes the NGO page plus shared header/footer rendered on the same page.
@@ -3248,7 +3241,6 @@ body:has(.ngo) * {
   user-select: text !important;
   -webkit-touch-callout: default;
 }
-
 
 /* ==========================================================================
    2. BOOK A DEMO — SAME BUTTON STYLE AS THE GOVERNMENT PAGE
@@ -3328,7 +3320,6 @@ body:has(.ngo) * {
   outline-offset: 3px !important;
 }
 
-
 /* ==========================================================================
    3. EXACT 48PX SECTION-TO-SECTION SPACING — DESKTOP
    Existing section dimensions/design are untouched.
@@ -3389,7 +3380,6 @@ body:has(.ngo) * {
   }
 }
 
-
 /* ==========================================================================
    EXACT 48PX SECTION RHYTHM — TABLET + MOBILE
    The existing responsive layout is already a vertical flex composition.
@@ -3414,7 +3404,6 @@ body:has(.ngo) * {
     margin-bottom: 0 !important;
   }
 }
-
 
 /* Keep the requested button appearance consistent at all responsive sizes.
    Existing width/font-size rules remain in control; only the visual shape
@@ -3493,7 +3482,6 @@ body:has(.ngo) * {
   }
 }
 
-
 /* --------------------------------------------------------------------------
    "HOW NEUROLXP HELPS" BADGE
    Match the page's other 50px inset badges exactly.
@@ -3548,7 +3536,6 @@ body:has(.ngo) * {
   transform: none !important;
 }
 
-
 /* Responsive badge size follows the same page badge scale. */
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .ngo .frameChild6 {
@@ -3573,7 +3560,6 @@ body:has(.ngo) * {
     white-space: normal !important;
   }
 }
-
 
 /* --------------------------------------------------------------------------
    CURSOR CLEANUP
@@ -3628,7 +3614,6 @@ body:has(.ngo) * {
    1) Correct the NeuroLXP ™ placement in the final/footer area.
    2) Make every page badge match the approved reference-page pill style.
    ========================================================================== */
-
 
 /* ==========================================================================
    1. TRADEMARK — PROPER SUPERSCRIPT POSITION
@@ -3687,7 +3672,6 @@ body:has(.ngo) * {
 
   flex-shrink: 0 !important;
 }
-
 
 /* ==========================================================================
    2. ALL NGO BADGES — SAME AS APPROVED REFERENCE PAGE
@@ -3763,7 +3747,6 @@ body:has(.ngo) * {
   transform: none !important;
 }
 
-
 /* Tablet: same reference appearance, only responsive type sizing. */
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .ngo :is(
@@ -3784,7 +3767,6 @@ body:has(.ngo) * {
     white-space: normal !important;
   }
 }
-
 
 /* Mobile: retain the exact same badge design without overflowing. */
 @media screen and (max-width: 767px) {
@@ -3933,7 +3915,6 @@ body:has(.ngo) * {
    2) Reduce ONLY heading-to-subheading spacing.
    ========================================================================== */
 
-
 /* ==========================================================================
    1. REAL ™ SYMBOL BESIDE NeuroLXP
    The original markup has a separate .tm element containing "TM".
@@ -4017,7 +3998,6 @@ body:has(.ngo) * {
   white-space: nowrap !important;
 }
 
-
 /* ==========================================================================
    2. REDUCE HEADING → SUBHEADING SPACE ONLY
    Existing parent gaps are 32px. A -16px top margin on the subheading makes
@@ -4059,7 +4039,6 @@ body:has(.ngo) * {
 .ngo .enablingLearningFor + .withFlexibleLearning {
   margin-top: -16px !important;
 }
-
 
 /* Keep the true ™ proportionally positioned on smaller screens. */
 @media screen and (max-width: 767px) {
@@ -4150,7 +4129,6 @@ body:has(.ngo) * {
     margin-left: 1px !important;
   }
 }
-
 
 /* Requested heading accents. The hero heading retains its original markup/colors. */
 .ngo :is(h2, h3) .headingAccent {
@@ -4845,5 +4823,49 @@ body:has(.ngo) * {
     line-height: 32px !important;
     text-align: center !important;
     text-wrap: balance;
+  }
+}
+
+/* =========================================================
+   TALK TO OUR EXPERT — NEUROLXP™ SECTION
+   Right-side anchor only. Absolute positioning keeps the
+   existing section layout and alignment unchanged.
+   ========================================================= */
+
+.ngo .frameParent38 {
+  position: absolute;
+}
+
+.ngo .ngoExpertButtonSlot {
+  position: absolute;
+  top: 26%;
+  right: 16px;
+  bottom: auto;
+  left: auto;
+  width: 64px;
+  height: 64px;
+  margin: 0;
+  padding: 0;
+  transform: translateY(-50%);
+  z-index: 20;
+  pointer-events: auto;
+}
+
+@media (max-width: 1100px) {
+  .ngo .frameParent38 {
+    position: relative !important;
+  }
+
+  .ngo .ngoExpertButtonSlot {
+    top: 42%;
+    right: 12px;
+  }
+}
+
+@media (max-width: 768px) {
+  .ngo .ngoExpertButtonSlot {
+    top: 0px;
+    right: 8px;
+    transform: none;
   }
 }
