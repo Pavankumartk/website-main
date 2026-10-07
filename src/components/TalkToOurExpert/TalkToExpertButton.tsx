@@ -63,14 +63,20 @@ function ExpertLauncher() {
   }, [pathname]);
 
   /*
-   * Hide Talk to Our Expert only on the University page.
+   * Hide Talk to Our Expert on:
+   * - University
+   * - BFSI
+   * - Learning Community
+   *
    * The button remains available on all other pages.
    */
   if (
     pathname === "/university" ||
     pathname.startsWith("/university/") ||
     pathname === "/bfsi" ||
-    pathname.startsWith("/bfsi/")
+    pathname.startsWith("/bfsi/") ||
+    pathname === "/learning_community" ||
+    pathname.startsWith("/learning_community/")
   ) {
     return null;
   }
@@ -102,9 +108,7 @@ function ExpertLauncher() {
 
   return (
     <>
-      {slot
-        ? createPortal(launcherButton, slot)
-        : launcherButton}
+      {slot ? createPortal(launcherButton, slot) : launcherButton}
 
       <TalkToOurExpert
         isOpen={isOpen}
