@@ -153,7 +153,7 @@ export const navItems: NavItem[] = [
             href: "/government",
           },
           {
-            label: "Nonprofit Organizations",
+            label: "Non-profit Organizations",
             href: "/nonprofit",
           },
         ],
