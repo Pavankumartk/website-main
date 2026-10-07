@@ -1,7 +1,5 @@
 "use client";
 
-
-
 import Image from "next/image";
 
 import Header from "../../components/Header/header";
@@ -14,8 +12,6 @@ import { useEffect } from "react";
 
 import styles from "./personlization.module.css";
 
-
-
 export default function Personalization() {
 
   useEffect(() => {
@@ -24,15 +20,9 @@ export default function Personalization() {
 
     const cardGroup = document.querySelector<HTMLElement>(".frameParent21");
 
-
-
     if (!cards.length || !cardGroup) return;
 
-
-
     const timers: number[] = [];
-
-
 
     const clearTimers = () => {
 
@@ -41,8 +31,6 @@ export default function Personalization() {
       timers.length = 0;
 
     };
-
-
 
     const resetCards = () => {
 
@@ -56,13 +44,9 @@ export default function Personalization() {
 
     };
 
-
-
     const playAnimation = () => {
 
       resetCards();
-
-
 
       requestAnimationFrame(() => {
 
@@ -74,8 +58,6 @@ export default function Personalization() {
 
           }, index * 280);
 
-
-
           timers.push(timer);
 
         });
@@ -83,8 +65,6 @@ export default function Personalization() {
       });
 
     };
-
-
 
     const observer = new IntersectionObserver(
 
@@ -112,11 +92,7 @@ export default function Personalization() {
 
     );
 
-
-
     observer.observe(cardGroup);
-
-
 
     return () => {
 
@@ -128,15 +104,11 @@ export default function Personalization() {
 
   }, []);
 
-
-
   return (
 
     <>
 
       <Header />
-
-
 
       <a className={styles.skipLink} href="#main-content">
 
@@ -212,8 +184,6 @@ export default function Personalization() {
 
           </span>
 
-
-
           <Image
 
             className={styles.arrowDown01Icon}
@@ -231,8 +201,6 @@ export default function Personalization() {
             style={{ flexShrink: 0 }}
 
           />
-
-
 
           <span
 
@@ -262,8 +230,6 @@ export default function Personalization() {
 
           </span>
 
-
-
           <Image
 
             className={styles.arrowDown01Icon}
@@ -281,8 +247,6 @@ export default function Personalization() {
             style={{ flexShrink: 0 }}
 
           />
-
-
 
           <span
 
@@ -314,7 +278,7 @@ export default function Personalization() {
 
         <section className={styles.personalizationHero} aria-labelledby="personalization-hero-title">
 
-          <svg className={styles.personalizationHeroFrame} width="1488" height="863" viewBox="24 0 1440 863" preserveAspectRatio="none" fill="none" xmlns="http\://www.w3.org/2000/svg" xmlnsXlink="http\://www.w3.org/1999/xlink" aria-hidden="true" focusable="false">
+          <svg className={styles.personalizationHeroFrame} width="1488" height="863" viewBox="24 0 1440 863" preserveAspectRatio="none" fill="none" xmlns="http\\://www.w3.org/2000/svg" xmlnsXlink="http\\://www.w3.org/1999/xlink" aria-hidden="true" focusable="false">
 
             <g filter="url(#filter0_dd_3295_67)">
 
@@ -324,15 +288,11 @@ export default function Personalization() {
 
             </g>
 
-
-
             <g filter="url(#filter1_dd_3295_67)">
 
               <path d="M25 715.364C25 711.754 27.2797 708.63 30.7696 707.704C83.6321 693.672 487.996 588.726 755.577 589.001C1018.9 589.271 1406.97 693.551 1458.32 707.672C1461.77 708.622 1464 711.722 1464 715.305V830.975C1464 835.392 1460.69 838.974 1456.27 838.974C1398 838.982 1022.63 839.029 755.577 838.973C487.14 838.918 92.5265 838.964 32.7129 838.972C28.2942 838.973 25 835.391 25 830.972V715.364Z" fill="#DFE6E9" />
 
             </g>
-
-
 
             <defs>
 
@@ -368,15 +328,11 @@ export default function Personalization() {
 
               </filter>
 
-
-
               <pattern id="pattern0_3295_67" patternContentUnits="objectBoundingBox" width="0.0583333" height="0.131737">
 
                 <use xlinkHref="#image0_3295_67" transform="scale(0.000694444 0.00149701)" />
 
               </pattern>
-
-
 
               <filter id="filter1_dd_3295_67" x="1" y="565" width="1487" height="298" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
 
@@ -410,15 +366,11 @@ export default function Personalization() {
 
               </filter>
 
-
-
               <image id="image0_3295_67" width="84" height="88" preserveAspectRatio="none" xlinkHref="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFQAAABYCAYAAABrqdC6AAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAOdEVYdFNvZnR3YXJlAEZpZ21hnrGWYwAAAPVJREFUeAHt26ENgEAUBcE7Ql8kFE5CZaAwSLICMaPQm8+5N4/jvAaZZZBan4993+bgs+dPd6ExQWOCxgSNCRoTNCZoTNCYoDFBY4LGBI0JGhM0JmhM0JigMUFjgsYEjQkaEzQmaEzQmKAxQWOCxgSNCRoTNCZoTNCYoDFBY4LGBI0JGhM0JmhsWtK1XGhM0Jigsd/vO99v/N83qS40JmhM0JigMUFjgsYEjQkaEzQmaEzQmKAxQWOCxgSNCRoTNCZoTNCYoDFBY4LGBI0JGhM0JmhM0JigMUFjgsYEjQkaEzQmaEzQmKAxQWOCxgSN2XrGXGjsBiaoEmMT2B9KAAAAAElFTkSuQmCC" />
 
             </defs>
 
           </svg>
-
-
 
           <div className={styles.personalizationHeroContent}>
 
@@ -440,8 +392,6 @@ export default function Personalization() {
 
           </div>
 
-
-
           <ul className={styles.personalizationHeroStats} aria-label="Personalization outcomes">
 
             <li className={`${styles.personalizationHeroStat} ${styles.personalizationHeroStatGreen}`}>
@@ -452,8 +402,6 @@ export default function Personalization() {
 
             </li>
 
-
-
             <li className={`${styles.personalizationHeroStat} ${styles.personalizationHeroStatBlue}`}>
 
               <strong>92%</strong>
@@ -461,8 +409,6 @@ export default function Personalization() {
               <span>Completion Rate</span>
 
             </li>
-
-
 
             <li className={`${styles.personalizationHeroStat} ${styles.personalizationHeroStatPink}`}>
 
@@ -475,8 +421,6 @@ export default function Personalization() {
           </ul>
 
         </section>
-
-
 
         <div className={styles.vectorParent}>
 
@@ -563,6 +507,7 @@ export default function Personalization() {
               <h2 id="personalized-learning-heading" className={styles.learningBuiltAroundContainer}>
 
                 <span className={styles.learningBuiltAround}>Learning Built Around Every{"\u00a0"}</span>
+
               <span className={styles.headingLastWord}>Learner</span>
 
               </h2>
@@ -581,8 +526,6 @@ export default function Personalization() {
 
               </li>
 
-
-
               <li className={styles.personalizedLearningPill}>
 
                 <Image className={styles.checkmarkCircle04Icon} src="/icons/checkmark-circle-04.svg" width={32} height={32} alt="" aria-hidden="true" />
@@ -590,8 +533,6 @@ export default function Personalization() {
                 <span>Learning Pace</span>
 
               </li>
-
-
 
               <li className={styles.personalizedLearningPill}>
 
@@ -601,8 +542,6 @@ export default function Personalization() {
 
               </li>
 
-
-
               <li className={styles.personalizedLearningPill}>
 
                 <Image className={styles.checkmarkCircle04Icon} src="/icons/checkmark-circle-04.svg" width={32} height={32} alt="" aria-hidden="true" />
@@ -610,8 +549,6 @@ export default function Personalization() {
                 <span>Learning Goals</span>
 
               </li>
-
-
 
               <li className={styles.personalizedLearningPill}>
 
@@ -627,22 +564,70 @@ export default function Personalization() {
 
         </section>
 
-
-
         <section className={styles.frameParent10} aria-labelledby="personalization-action-title">
 
           <div className={styles.actionIntro}>
 
-            <p className={styles.actionEyebrow} style={{ margin: 0 }}>
+           <p className={styles.actionEyebrow} style={{ margin: 0 }}>
 
-              How NeuroLXP Personalizes Learning
+  How NeuroLXP
 
-            </p>
+  <sup
+
+    aria-label="trademark"
+
+    style={{
+
+      display: "inline-block",
+
+      fontSize: "10.8px",
+
+      lineHeight: "6px",
+
+      fontWeight: 700,
+
+      marginLeft: "2px",
+
+      position: "relative",
+
+      top: "-6px",
+
+      color: "#2D4CC8",
+
+      whiteSpace: "nowrap",
+
+    }}
+
+  >
+
+    TM
+
+  </sup>
+
+  <span
+
+    style={{
+
+      display: "inline-block",
+
+      width: "6px",
+
+    }}
+
+    aria-hidden="true"
+
+  />
+
+  Personalizes Learning
+
+</p>
 
             <h2 id="personalization-action-title" className={styles.personalizationInAction}>
 
               Personalization in
+
             <br />
+
             <span className={styles.headingLastWord}>Action</span>
 
             </h2>
@@ -651,8 +636,6 @@ export default function Personalization() {
 
           </div>
 
-
-
           <div className={`${styles.frameParent12} ${styles.actionCards}`}>
 
             <article className={`${styles.actionCard} ${styles.actionCardSmart}`}>
@@ -660,47 +643,53 @@ export default function Personalization() {
               <h3 className={styles.actionCardTitle}>Smart Learning</h3>
 
               <p className={styles.actionCardBody}>
+
                 <span className={styles.copyLine}>Content matched to your</span>
+
                 <span className={styles.copyLine}>goals and skills</span>
+
               </p>
 
             </article>
-
-
 
             <article className={`${styles.actionCard} ${styles.actionCardAdaptive}`}>
 
               <h3 className={styles.actionCardTitle}>Adaptive Pathways</h3>
 
               <p className={styles.actionCardBody}>
+
                 <span className={styles.copyLine}>Paths adapt to</span>
+
                 <span className={styles.copyLine}>performance and pace</span>
+
               </p>
 
             </article>
-
-
 
             <article className={`${styles.actionCard} ${styles.actionCardSkill}`}>
 
               <h3 className={styles.actionCardTitle}>Skill-Gap Analysis</h3>
 
               <p className={styles.actionCardBody}>
+
                 <span className={styles.copyLine}>Identify skill gaps</span>
+
                 <span className={styles.copyLine}>with targeted support</span>
+
               </p>
 
             </article>
-
-
 
             <article className={`${styles.actionCard} ${styles.actionCardProgress}`}>
 
               <h3 className={styles.actionCardTitle}>Progress Learning</h3>
 
               <p className={styles.actionCardBody}>
+
                 <span className={styles.copyLine}>Content adapts</span>
+
                 <span className={styles.copyLine}>as learners progress</span>
+
               </p>
 
             </article>
@@ -708,8 +697,6 @@ export default function Personalization() {
           </div>
 
         </section>
-
-
 
         <div className={styles.frameParent19}>
 
@@ -813,8 +800,6 @@ export default function Personalization() {
 
         </div>
 
-
-
         <div className={styles.frameParent26}>
 
           <div className={styles.frameParent27}>
@@ -824,6 +809,7 @@ export default function Personalization() {
             <h2 className={styles.betterLearningBetterContainer} style={{ margin: 0 }}>
 
               <span className={styles.learningBuiltAround}>Better Learning! Better </span>
+
             <span className={styles.headingLastWord}>Outcomes</span>
 
             </h2>
@@ -915,6 +901,10 @@ export default function Personalization() {
         </div>
 
         <div className={styles.frameParent36}>
+          <div
+            className={styles.intelligentLearningExpertButtonSlot}
+            data-expert-button-slot
+          />
 
           <div className={styles.frameWrapper9}>
 
@@ -1146,8 +1136,6 @@ export default function Personalization() {
 
           </div>
 
-
-
           <div className={`${styles.frameParent47} ${styles.modernLearningFeatures}`}>
 
             <article className={`${styles.modernLearningFeature} ${styles.modernLearningFeatureStructured}`}>
@@ -1172,8 +1160,6 @@ export default function Personalization() {
 
             </article>
 
-
-
             <article className={`${styles.modernLearningFeature} ${styles.modernLearningFeatureAdaptive}`}>
 
               <span className={`${styles.frameChild24} ${styles.modernLearningIcon}`} aria-hidden="true">
@@ -1196,8 +1182,6 @@ export default function Personalization() {
 
             </article>
 
-
-
             <article className={`${styles.modernLearningFeature} ${styles.modernLearningFeatureCompetency}`}>
 
               <span className={`${styles.frameChild24} ${styles.modernLearningIcon}`} aria-hidden="true">
@@ -1219,8 +1203,6 @@ export default function Personalization() {
               </div>
 
             </article>
-
-
 
             <article className={`${styles.modernLearningFeature} ${styles.modernLearningFeatureInsights}`}>
 
@@ -1247,8 +1229,6 @@ export default function Personalization() {
           </div>
 
         </section>
-
-
 
         <div className={styles.rectangleParent7}>
 
@@ -1293,8 +1273,6 @@ export default function Personalization() {
         </div>
 
       </main>
-
-
 
       <Footer />
 
