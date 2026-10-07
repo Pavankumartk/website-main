@@ -1,7 +1,5 @@
 "use client";
 
-
-
 import type { NextPage } from 'next';
 
 import Image from "next/image";
@@ -18,10 +16,6 @@ import styles from "./University.module.css";
 
 import { BookDemoTrigger } from "../../components/Bookademo/Bookademo";
 
-
-
-
-
 const UniversityAndCollege: NextPage = () => {
 
     const router = useRouter();
@@ -30,21 +24,15 @@ const UniversityAndCollege: NextPage = () => {
 
     const [isSupportVideoPlaying, setIsSupportVideoPlaying] = useState(true);
 
-
-
     const toggleSupportVideo = () => {
 
         const video = supportVideoRef.current;
-
-
 
         if (!video) {
 
             return;
 
         }
-
-
 
         if (video.paused) {
 
@@ -62,8 +50,6 @@ const UniversityAndCollege: NextPage = () => {
 
     };
 
-
-
     return (
 
         <>
@@ -76,11 +62,7 @@ const UniversityAndCollege: NextPage = () => {
 
             </div>
 
-
-
             <main id="main-content" className={styles.universityAndCollege} tabIndex={-1}>
-
-
 
                 <nav className={styles.frameDiv} aria-label="Breadcrumb">
 
@@ -149,8 +131,6 @@ const UniversityAndCollege: NextPage = () => {
                                     Book a Demo
 
                                 </BookDemoTrigger>
-
-
 
                                 <button
 
@@ -378,8 +358,6 @@ const UniversityAndCollege: NextPage = () => {
 
                 </div>
 
-
-
                 <div className={styles.frameParent44}>
 
                     <div className={styles.frameParent45}>
@@ -423,8 +401,6 @@ const UniversityAndCollege: NextPage = () => {
                                                         className={styles.challengeIconImage}
 
                                                         aria-hidden="true"
-
-
 
                                                         focusable="false"
 
@@ -498,8 +474,6 @@ const UniversityAndCollege: NextPage = () => {
 
                                                 aria-hidden="true"
 
-
-
                                                 focusable="false"
 
                                             >
@@ -565,8 +539,6 @@ const UniversityAndCollege: NextPage = () => {
                                                                 className={styles.challengeIconImage}
 
                                                                 aria-hidden="true"
-
-
 
                                                                 focusable="false"
 
@@ -636,8 +608,6 @@ const UniversityAndCollege: NextPage = () => {
 
                                                         aria-hidden="true"
 
-
-
                                                         focusable="false"
 
                                                     >
@@ -702,8 +672,6 @@ const UniversityAndCollege: NextPage = () => {
 
                                                         aria-hidden="true"
 
-
-
                                                         focusable="false"
 
                                                     >
@@ -756,7 +724,11 @@ const UniversityAndCollege: NextPage = () => {
 
                                 <div className={styles.frameParent66}>
 
-                                    <div className={styles.frameChild34}>NeuroLXP</div>
+<div className={styles.futureReadyBadge}>
+
+  NeuroLXP<sup className={styles.neuroTrademark}>TM</sup>
+
+</div>
 
                                     <h2 className={styles.howNeurolxpSupports} style={{ margin: 0, fontSize: "inherit", fontWeight: 700 }}>How NeuroLXP Supports Higher <span style={{ color: "#2D4CC8" }}>Education</span></h2>
 
@@ -793,8 +765,6 @@ const UniversityAndCollege: NextPage = () => {
                                     onPause={() => setIsSupportVideoPlaying(false)}
 
                                 />
-
-
 
                                 <button
 
@@ -980,7 +950,7 @@ const UniversityAndCollege: NextPage = () => {
 
                     <div className={styles.frameParent72}>
 
-                        <div className={styles.keyBenefitsBadge}>Key Benifits</div>
+                        <div className={styles.keyBenefitsBadge}>Key benefits</div>
 
                         <div className={styles.benefitsForEducationalInstiParent}>
 
@@ -1060,7 +1030,7 @@ const UniversityAndCollege: NextPage = () => {
 
                                         </div>
 
-                                        <div className={styles.digitalBlended}>Higher Student Engagement<br /><br /></div>
+                                        <div className={styles.digitalBlended}>Higher Student Engagement</div>
 
                                     </div>
 
@@ -1318,7 +1288,11 @@ const UniversityAndCollege: NextPage = () => {
 
                                     <div className={styles.frameParent88}>
 
-                                        <div className={styles.futureReadyBadge}>NeuroLXP</div>
+<div className={styles.futureReadyBadge}>
+
+  NeuroLXP<sup className={styles.neuroTrademark}>TM</sup>
+
+</div>
 
                                         <h2 className={styles.futureReadyUniversitiesStar} style={{ margin: 0, fontSize: "inherit", fontWeight: 700 }}>Future-Ready Universities <span style={{ color: "#2D4CC8" }}>Start Here</span></h2>
 
@@ -1338,8 +1312,6 @@ const UniversityAndCollege: NextPage = () => {
 
             </main>
 
-
-
             <div style={{ width: "100%", position: "relative", zIndex: 10000, overflow: "visible" }}>
 
                 <Footer />
@@ -1351,7 +1323,5 @@ const UniversityAndCollege: NextPage = () => {
     );
 
 };
-
-
 
 export default UniversityAndCollege;
