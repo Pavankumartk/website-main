@@ -14,7 +14,7 @@
     color: #31344b;
     font-family: "Segoe UI", "Inter";
     zoom: 0.89;
-    max-width: 1440px; 
+    max-width: 1440px;
 	margin: 0 auto;
 }
 
@@ -182,7 +182,7 @@
     width: 1273px;
     height: 545px;
     overflow: hidden;
-   
+
 }
 
 .frameParent3 {
@@ -678,7 +678,7 @@
     box-shadow: -4px -4px 4px #fff, 4px 4px 4px #c4c4c4;
     border-radius: 50px 12px 12px 12px;
     background-color: #dfe6e9;
-    
+
     box-sizing: border-box;
     overflow: hidden;
     flex-shrink: 0;
@@ -775,7 +775,7 @@
     box-shadow: -4px -4px 4px #fff, 4px 4px 4px #c4c4c4;
     border-radius: 50px 12px 12px 12px;
     background-color: #dfe6e9;
-    
+
     box-sizing: border-box;
     overflow: hidden;
     flex-shrink: 0;
@@ -2126,7 +2126,6 @@
     white-space: nowrap;
 }
 
-
 .frameParent9 > .frameChild2 {
     width: 274.5px;
     height: 50.2px;
@@ -2200,8 +2199,6 @@
     flex-shrink: 0;
 }
 
-
-
 .exploreEngagePill{
     display:inline-flex;
     align-items:center;
@@ -2242,7 +2239,6 @@
     letter-spacing: 0.02em;
     text-align: center;
 }
-
 
 .resultIconCircle {
     position: relative;
@@ -2285,7 +2281,6 @@
     flex-shrink: 0;
 }
 
-
 .frameParent10 .frameChild3 {
     position: relative;
     width: 70px;
@@ -2316,7 +2311,6 @@
     border: none;
     outline: none;
 
-    
     box-shadow:
         -4px -4px 4px rgba(255, 255, 255, 0.72),
         4px 4px 4px rgba(196, 196, 196, 0.52);
@@ -2355,7 +2349,6 @@
     border-radius: 28px;
     background: #DFE6E9;
 
-    
     box-shadow:
         inset -4px -4px 4px #FFFFFF,
         inset 4px 4px 4px rgba(196, 196, 196, 0.8);
@@ -2370,7 +2363,6 @@
     border: none;
     outline: none;
 }
-
 
 .scaleIconCircle {
     position: relative;
@@ -2401,7 +2393,6 @@
     border: none;
     outline: none;
 
-    
     box-shadow:
         -4px -4px 4px rgba(255, 255, 255, 0.72),
         4px 4px 4px rgba(196, 196, 196, 0.52);
@@ -2416,8 +2407,6 @@
     outline: none;
     flex-shrink: 0;
 }
-
-
 
 .masteryPill,
 .learnMorePill{
@@ -2464,7 +2453,6 @@ opacity:1;
 -webkit-text-fill-color:#2D4CC8;
 }
 
-
 .masteryImageFrame{
     position:relative;
     width:708px;
@@ -2475,7 +2463,6 @@ opacity:1;
     box-shadow:inset -4px -4px 4px #FFFFFF,
                inset 4px 4px 4px #C4C4C4;
 }
-
 
 .masteryImageFrame::before{
     content:"";
@@ -2505,8 +2492,6 @@ opacity:1;
     border:none;
     z-index:2;
 }
-
-
 
 .frameParent73 .frameParent74 {
     gap: 48px;
@@ -2586,7 +2571,6 @@ opacity:1;
     box-shadow: -4px -4px 4px #FFFFFF, 4px 4px 4px #C6C6C9;
 }
 
-
 @media screen and (min-width: 2500px) and (max-width: 2600px) {
     html,
     body {
@@ -2605,7 +2589,6 @@ opacity:1;
         overflow: hidden;
     }
 }
-
 
 @media screen and (min-width: 1440px) and (max-width: 1440px) {
     html,
@@ -2628,7 +2611,6 @@ opacity:1;
         overflow: hidden;
     }
 }
-
 
 @media screen and (min-width: 1360px) and (max-width: 1439px) {
     html,
@@ -2653,7 +2635,6 @@ opacity:1;
     }
 }
 
-
 @media screen and (min-width: 1025px) and (max-width: 1359px) {
     html,
     body {
@@ -2676,7 +2657,6 @@ opacity:1;
         overflow: hidden;
     }
 }
-
 
 @media screen and (min-width: 1024px) and (max-width: 1024px) {
     html,
@@ -2702,7 +2682,6 @@ opacity:1;
         overflow: hidden;
     }
 }
-
 
 @media screen and (min-width:768px) and (max-width:768px){
   html,body{
@@ -2803,7 +2782,6 @@ opacity:1;
         top: 5771px;
     }
 }
-
 
 @media screen and (min-width: 321px) and (max-width: 767px) {
     html,
@@ -2951,7 +2929,6 @@ opacity:1;
  }
 }
 
-
 .frameChild8,
 .frameChild9,
 .frameChild10,
@@ -2964,41 +2941,33 @@ opacity:1;
     will-change: transform, filter, box-shadow;
 }
 
-
 .frameChild8 {
     animation: numberPulse 3.8s ease-in-out infinite;
 }
-
 
 .frameChild9 {
     animation: numberSideShift 4.2s ease-in-out infinite;
 }
 
-
 .frameChild10 {
     animation: numberTilt 4.6s ease-in-out infinite;
 }
-
 
 .frameChild11 {
     animation: numberBounce 4s ease-in-out infinite;
 }
 
-
 .frameChild12 {
     animation: numberOrbit 5s ease-in-out infinite;
 }
-
 
 .frameChild13 {
     animation: numberFlip 5.4s ease-in-out infinite;
 }
 
-
 .frameChild14 {
     animation: numberGlow 4.8s ease-in-out infinite;
 }
-
 
 .frameChild15 {
     animation: numberSettle 4.4s ease-in-out infinite;
@@ -3099,7 +3068,6 @@ opacity:1;
     }
 }
 
-
 .frameChild8:hover,
 .frameChild9:hover,
 .frameChild10:hover,
@@ -3110,7 +3078,6 @@ opacity:1;
 .frameChild15:hover {
     animation-play-state: paused;
 }
-
 
 @media (prefers-reduced-motion: reduce) {
     .frameChild8,
@@ -3127,7 +3094,6 @@ opacity:1;
     }
 }
 
-
 .frameWrapper8 .image20Parent,
 .frameWrapper9 .image20Parent,
 .frameWrapper11 .image20Parent,
@@ -3139,26 +3105,21 @@ opacity:1;
         box-shadow 0.3s ease;
 }
 
-
 .frameWrapper8:hover .image20Parent {
     border-color: #67096e;
 }
-
 
 .frameWrapper9:hover .image20Parent {
     border-color: #bf1869;
 }
 
-
 .frameWrapper11:hover .image20Parent {
     border-color: #2d4cc8;
 }
 
-
 .frameWrapper13:hover .image20Parent {
     border-color: #046f73;
 }
-
 
 .frameWrapper8:focus-within .image20Parent {
     border-color: #67096e;
@@ -3192,26 +3153,21 @@ opacity:1;
     will-change: transform, filter;
 }
 
-
 .frameParent62 .frameParent57:has(.createInteractiveCourses) .scaleIconCircle {
     animation: builtScaleGlowBlue 3.2s ease-in-out infinite;
 }
-
 
 .frameParent62 .frameParent57:has(.buildEngagingActivities) .scaleIconCircle {
     animation: builtScaleGlowPink 3.2s ease-in-out infinite;
 }
 
-
 .frameParent62 .frameParent57:has(.deliverSimulationsAnd) .scaleIconCircle {
     animation: builtScaleGlowGreen 3.2s ease-in-out infinite;
 }
 
-
 .frameParent62 .frameParent57:has(.reinforceLearningWith) .scaleIconCircle {
     animation: builtScaleGlowOrange 3.2s ease-in-out infinite;
 }
-
 
 .frameParent62 .frameParent57:has(.trackLearnerPerformance) .scaleIconCircle {
     animation: builtScaleGlowTeal 3.2s ease-in-out infinite;
@@ -3307,7 +3263,6 @@ opacity:1;
     }
 }
 
-
 @media screen and (max-width: 767px) {
   html,
   body {
@@ -3336,13 +3291,11 @@ opacity:1;
     box-sizing: border-box !important;
   }
 
-  
   .frameParent,
   .frameParent78 {
     display: none !important;
   }
 
-  
   .frameDiv {
     position: relative !important;
     top: auto !important;
@@ -3355,7 +3308,6 @@ opacity:1;
     line-height: 22px !important;
   }
 
-  
   .frameParent2 {
     position: relative !important;
     top: auto !important;
@@ -3523,7 +3475,6 @@ opacity:1;
     z-index: 1 !important;
   }
 
-  
   .frameParent8 {
     position: relative !important;
     top: auto !important;
@@ -3615,7 +3566,6 @@ opacity:1;
     line-height: 22px !important;
   }
 
-  
   .frameParent17 {
     position: relative !important;
     top: auto !important;
@@ -3728,7 +3678,6 @@ opacity:1;
     height: 52px !important;
   }
 
-  
   .frameParent40 {
     position: relative !important;
     top: auto !important;
@@ -3906,7 +3855,6 @@ opacity:1;
     line-height: 1 !important;
   }
 
-  
   .image20Parent4 {
     position: relative !important;
     top: auto !important;
@@ -4041,14 +3989,11 @@ opacity:1;
     box-sizing: border-box !important;
   }
 
-  
-  
   .focusedPractice,
   .enjoyableLearning {
     transform: translateY(14px) !important;
   }
 
-  
   .frameParent55 {
     margin-bottom: -21px !important;
   }
@@ -4088,7 +4033,6 @@ opacity:1;
     flex: 0 1 auto !important;
   }
 
-  
   .interactiveGamifiedLearninChild {
     position: relative !important;
     top: auto !important;
@@ -4149,7 +4093,6 @@ opacity:1;
     white-space: normal !important;
   }
 
-  
   .frameParent73 {
     position: relative !important;
     top: auto !important;
@@ -4204,7 +4147,6 @@ opacity:1;
     object-fit: contain !important;
   }
 
-  
   .interactiveGamifiedLearnin img,
   .interactiveGamifiedLearnin svg,
   .interactiveGamifiedLearnin video {
@@ -4283,9 +4225,6 @@ opacity:1;
   }
 }
 
-
-
-
 @media screen and (max-width: 767px) {
   .frameParent62 .scaleDesktopTitle,
   .frameParent62 .scaleDesktopSubtitle {
@@ -4319,8 +4258,6 @@ opacity:1;
   }
 }
 
-
-
 @media screen and (max-width: 767px) {
   .frameParent62 {
     position: relative !important;
@@ -4349,7 +4286,6 @@ opacity:1;
     gap: 18px !important;
   }
 
-  
   .frameParent62 .howInteractiveLearning {
     width: 100% !important;
     max-width: 100% !important;
@@ -4362,7 +4298,6 @@ opacity:1;
     white-space: normal !important;
   }
 
-  
   .frameParent62 .interactiveLearningDrives {
     width: 100% !important;
     max-width: 100% !important;
@@ -4376,10 +4311,8 @@ opacity:1;
   }
 }
 
-
-
 @media screen and (max-width: 767px) {
-  
+
   .frameParent62 .howInteractiveLearning {
     width: 360px !important;
     max-width: calc(100vw - 32px) !important;
@@ -4397,7 +4330,6 @@ opacity:1;
     overflow-wrap: normal !important;
   }
 
-  
   .frameParent62 .interactiveLearningDrives {
     width: 390px !important;
     max-width: calc(100vw - 32px) !important;
@@ -4431,8 +4363,6 @@ opacity:1;
     line-height: 23px !important;
   }
 }
-
-
 
 @media screen and (max-width: 767px) {
   .frameParent62 .frameWrapper18 {
@@ -4528,7 +4458,6 @@ opacity:1;
     overflow-wrap: normal !important;
   }
 
-  
   .frameParent62 .buildEngagingActivities br,
   .frameParent62 .deliverSimulationsAnd br,
   .frameParent62 .reinforceLearningWith br {
@@ -4579,8 +4508,6 @@ opacity:1;
   }
 }
 
-
-
 @media screen and (max-width: 767px) {
   .collageCustomerExperienceCoIcon {
     width: 108% !important;
@@ -4594,8 +4521,6 @@ opacity:1;
     transform: none !important;
   }
 }
-
-
 
 @media screen and (max-width: 767px) {
   .masteryImageFrame {
@@ -4640,8 +4565,6 @@ opacity:1;
   }
 }
 
-
-
 @media screen and (max-width: 767px) {
   .frameParent73 {
     gap: 12px !important;
@@ -4677,8 +4600,6 @@ opacity:1;
   }
 }
 
-
-
 @media screen and (max-width: 767px) {
   .frameParent73 .learnMore,
   .frameParent73 .learnMorePill,
@@ -4712,8 +4633,6 @@ opacity:1;
     margin-top: -28px !important;
   }
 }
-
-
 
 @media screen and (max-width: 767px) {
   .frameParent43 {
@@ -4765,7 +4684,6 @@ opacity:1;
     line-height: 1 !important;
   }
 
-  
   .simulationsParent,
   .frameWrapper10,
   .frameWrapper12,
@@ -4894,8 +4812,6 @@ opacity:1;
   }
 }
 
-
-
 @media screen and (max-width: 767px) {
   .frameWrapper8,
   .frameWrapper9,
@@ -4994,8 +4910,6 @@ opacity:1;
   }
 }
 
-
-
 @media screen and (max-width: 767px) {
   .frameParent6 .frameInner {
     width: fit-content !important;
@@ -5024,8 +4938,6 @@ opacity:1;
   }
 }
 
-
-
 @media screen and (max-width: 767px) {
   .frameParent6 .frameInner {
     width: calc(100% - 12px) !important;
@@ -5048,8 +4960,6 @@ opacity:1;
     padding-right: 20px !important;
   }
 }
-
-
 
 @media screen and (max-width: 767px) {
   .frameParent6 .frameInner {
@@ -5076,10 +4986,6 @@ opacity:1;
   }
 }
 
-
-
-
-
 .frameIcon,
 .frameWrapper3,
 .frameWrapper19,
@@ -5090,7 +4996,6 @@ opacity:1;
   -webkit-tap-highlight-color: transparent;
 }
 
-
 .frameIcon,
 .frameWrapper3,
 .frameWrapper19,
@@ -5100,14 +5005,12 @@ opacity:1;
     transform 0.12s ease;
 }
 
-
 .frameIcon:active {
   box-shadow:
     inset -4px -4px 4px #ffffff,
     inset 4px 4px 4px rgba(196, 196, 196, 0.9) !important;
   transform: translateY(1px);
 }
-
 
 .frameWrapper3:active,
 .frameWrapper3:has(.startLearning:active) {
@@ -5117,7 +5020,6 @@ opacity:1;
   transform: translateY(1px);
 }
 
-
 .frameWrapper19:active,
 .frameWrapper19:has(.bookADemo:active) {
   box-shadow:
@@ -5126,7 +5028,6 @@ opacity:1;
   transform: translateY(1px);
 }
 
-
 .learnMorePill:active {
   box-shadow:
     inset -4px -4px 4px #ffffff,
@@ -5134,15 +5035,12 @@ opacity:1;
   transform: translateY(1px);
 }
 
-
 .startLearning:focus-visible,
 .bookADemo:focus-visible,
 .learnMorePill:focus-visible {
   outline: 2px solid #2d4cc8;
   outline-offset: 3px;
 }
-
-
 
 @media screen and (min-width: 768px) {
   .frameParent43 {
@@ -5189,14 +5087,11 @@ opacity:1;
   }
 }
 
-
-
 @media screen and (min-width: 768px) {
   .image20Parent4 {
     height: 900px !important;
   }
 
-  
   .frameWrapper15 {
     height: 225px !important;
   }
@@ -5210,17 +5105,14 @@ opacity:1;
     gap: 20px !important;
   }
 
-  
   .frameParent52 {
     gap: 32px !important;
   }
 
-  
   .frameParent54 {
     height: 580px !important;
   }
 
-  
   .frameParent62 {
     top: 4000px !important;
   }
@@ -5234,26 +5126,20 @@ opacity:1;
   }
 }
 
-
-
 @media screen and (min-width: 1025px) {
-  
+
   .frameParent73 {
     top: 4718px !important;
   }
 
-  
   .frameParent78 {
     top: 5471px !important;
   }
 
-  
   .interactiveGamifiedLearnin {
     height: 5375px !important;
   }
 }
-
-
 
 @media screen and (max-width: 767px) {
   .frameParent54 {
@@ -5273,16 +5159,11 @@ opacity:1;
   }
 }
 
-
-
 @media screen and (max-width: 767px) {
   .frameParent54 {
     padding-top: 0px !important;
   }
 }
-
-
-
 
 @media screen and (min-width: 768px) and (max-width: 1439px) {
   .interactiveGamifiedLearnin {
@@ -5295,13 +5176,11 @@ opacity:1;
   }
 }
 
-
 @media screen and (min-width: 768px) and (max-width: 839px) {
   .interactiveGamifiedLearnin {
     zoom: 0.52 !important;
   }
 }
-
 
 @media screen and (min-width: 840px) and (max-width: 899px) {
   .interactiveGamifiedLearnin {
@@ -5309,13 +5188,11 @@ opacity:1;
   }
 }
 
-
 @media screen and (min-width: 900px) and (max-width: 959px) {
   .interactiveGamifiedLearnin {
     zoom: 0.61 !important;
   }
 }
-
 
 @media screen and (min-width: 960px) and (max-width: 1023px) {
   .interactiveGamifiedLearnin {
@@ -5323,13 +5200,11 @@ opacity:1;
   }
 }
 
-
 @media screen and (min-width: 1024px) and (max-width: 1099px) {
   .interactiveGamifiedLearnin {
     zoom: 0.70 !important;
   }
 }
-
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .interactiveGamifiedLearnin {
@@ -5337,13 +5212,11 @@ opacity:1;
   }
 }
 
-
 @media screen and (min-width: 1200px) and (max-width: 1279px) {
   .interactiveGamifiedLearnin {
     zoom: 0.82 !important;
   }
 }
-
 
 @media screen and (min-width: 1280px) and (max-width: 1359px) {
   .interactiveGamifiedLearnin {
@@ -5351,13 +5224,11 @@ opacity:1;
   }
 }
 
-
 @media screen and (min-width: 1360px) and (max-width: 1439px) {
   .interactiveGamifiedLearnin {
     zoom: 0.89 !important;
   }
 }
-
 
 @media screen and (min-width: 1440px) and (max-width: 2560px) {
   .interactiveGamifiedLearnin {
@@ -5369,10 +5240,6 @@ opacity:1;
   }
 }
 
-
-
-
-
 @media screen and (min-width: 768px) and (max-width: 839px) {
   .interactiveGamifiedLearnin {
     width: 192.307692vw !important;
@@ -5382,7 +5249,6 @@ opacity:1;
     background-color: #dfe6e9 !important;
   }
 }
-
 
 @media screen and (min-width: 840px) and (max-width: 899px) {
   .interactiveGamifiedLearnin {
@@ -5394,7 +5260,6 @@ opacity:1;
   }
 }
 
-
 @media screen and (min-width: 900px) and (max-width: 959px) {
   .interactiveGamifiedLearnin {
     width: 163.934426vw !important;
@@ -5404,7 +5269,6 @@ opacity:1;
     background-color: #dfe6e9 !important;
   }
 }
-
 
 @media screen and (min-width: 960px) and (max-width: 1023px) {
   .interactiveGamifiedLearnin {
@@ -5416,7 +5280,6 @@ opacity:1;
   }
 }
 
-
 @media screen and (min-width: 1024px) and (max-width: 1099px) {
   .interactiveGamifiedLearnin {
     width: 142.857143vw !important;
@@ -5426,7 +5289,6 @@ opacity:1;
     background-color: #dfe6e9 !important;
   }
 }
-
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .interactiveGamifiedLearnin {
@@ -5438,7 +5300,6 @@ opacity:1;
   }
 }
 
-
 @media screen and (min-width: 1200px) and (max-width: 1279px) {
   .interactiveGamifiedLearnin {
     width: 121.95122vw !important;
@@ -5449,7 +5310,6 @@ opacity:1;
   }
 }
 
-
 @media screen and (min-width: 1280px) and (max-width: 1359px) {
   .interactiveGamifiedLearnin {
     width: 114.942529vw !important;
@@ -5459,7 +5319,6 @@ opacity:1;
     background-color: #dfe6e9 !important;
   }
 }
-
 
 @media screen and (min-width: 1360px) and (max-width: 2560px) {
   .interactiveGamifiedLearnin {
@@ -5643,7 +5502,6 @@ body {
   }
 }
 
-
 @media screen and (min-width: 768px) {
   .interactiveGamifiedLearnin,
   .interactiveGamifiedLearnin * {
@@ -5675,7 +5533,6 @@ body {
     min-height: 5770.2px !important;
   }
 }
-
 
 @media screen and (min-width: 768px) {
   /* Add clear space between the end of Interactive Learning
@@ -5715,7 +5572,6 @@ body {
     min-height: 5818.2px !important;
   }
 }
-
 
 @media screen and (min-width: 768px) {
   /* Learn by Doing — desktop correction only */
@@ -5764,7 +5620,6 @@ body {
     line-height: normal !important;
   }
 }
-
 
 @media screen and (min-width: 768px) {
   /* Learn by Doing — match reference PNG */
@@ -5972,14 +5827,12 @@ body {
   }
 }
 
-
 @media screen and (min-width: 768px) {
   .interactiveGamifiedLearnin .frameParent40 .perfectForUniversities {
     width: 500px !important;
     max-width: 500px !important;
   }
 }
-
 
 @media screen and (min-width: 768px) {
   /* Measurable Impact — align the marked right-side labels consistently */
@@ -6015,7 +5868,6 @@ body {
     text-align: left !important;
   }
 }
-
 
 /* Full page font: Segoe UI first, Inter fallback only */
 .interactiveGamifiedLearnin,
@@ -6078,7 +5930,6 @@ body {
     text-align: center !important;
   }
 }
-
 
 @media screen and (min-width: 768px) {
   /* Built for Scale — correct only the alignment INSIDE the feature box */
@@ -6156,7 +6007,6 @@ body {
   }
 }
 
-
 @media screen and (min-width: 768px) {
   /* Built for Scale — match supplied PNG:
      equal two-column layout, with every label kept on one line. */
@@ -6213,7 +6063,6 @@ body {
     margin: 0 !important;
   }
 }
-
 
 /* BUILT FOR SCALE — ACTUAL DOM ROW FIX */
 @media screen and (min-width: 768px) {
@@ -6279,7 +6128,6 @@ body {
     line-height: 36px !important;
   }
 }
-
 
 /* =========================================================
    LEARNING JOURNEY — ACTUAL CLASS FIX
@@ -6414,7 +6262,6 @@ body {
   }
 }
 
-
 /* =========================================================
    LEARNING JOURNEY -> FOOTER
    Remove empty section height; keep ONLY 48px visible gap
@@ -6462,7 +6309,6 @@ body {
   }
 }
 
-
 /* =========================================================
    FOOTER — VISIBLE 48PX GAP CORRECTION
    Based on the actual rendered desktop view.
@@ -6498,13 +6344,11 @@ body {
   }
 }
 
-
 /* FONT FAMILY — Segoe UI primary, Inter fallback only */
 .interactiveGamifiedLearnin,
 .interactiveGamifiedLearnin * {
   font-family: "Segoe UI", "Inter" !important;
 }
-
 
 /* MOBILE — Interactive & Gamified Learning hero pill correction only */
 @media screen and (max-width: 767px) {
@@ -6533,7 +6377,6 @@ body {
     text-align: center !important;
   }
 }
-
 
 /* =========================================================
    TABLET + 1024 RESPONSIVENESS — FINAL OVERRIDE
@@ -6693,7 +6536,6 @@ body {
   }
 }
 
-
 /* =========================================================
    TABLET / 1024 — ACTUAL FINAL FIX
    All corrected desktop section rules above now also run at 768+.
@@ -6748,7 +6590,6 @@ body {
   .interactiveGamifiedLearnin { zoom: 0.7111111111 !important; }
 }
 
-
 /* =========================================================
    PAGE CENTER FIX ONLY
    ---------------------------------------------------------
@@ -6786,7 +6627,6 @@ body {
     transform: none !important;
   }
 }
-
 
 /* Learn by Doing: one shared text column; badge artwork stays unchanged. */
 .interactiveGamifiedLearnin .frameParent40 .frameParent41 {
@@ -7140,7 +6980,6 @@ body {
         font-weight: 600 !important;
     }
 }
-
 
 /* Reference-matched layout. Keep this block after the legacy rules.
    Main sections size from their content; no zoom or fixed page heights. */
@@ -8667,7 +8506,6 @@ body {
 }
 }
 
-
 /* Hero edge clearance and consistent main heading sizes.
    Match the existing selector scope so older responsive rules cannot win. */
 @media (min-width: 768px) {
@@ -8714,7 +8552,6 @@ body {
     line-height: 32px !important;
   }
 }
-
 
 /* Heading accents and the two numbered-card groups only. */
 .interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .mainHeadingLastWord {
@@ -8787,7 +8624,6 @@ body {
   /* ... */
 }
 
-
 /* =========================================================
    MOBILE — ACTIVITY CARD SUBTEXTS IN TWO LINES
    ========================================================= */
@@ -8796,7 +8632,7 @@ body {
   .interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin
     .frameParent20
     :is(.discoverNewInsightsContainer, .linkConceptsStepByContainer) {
-    
+
     width: 180px !important;
     max-width: 180px !important;
     height: auto !important;
@@ -8816,10 +8652,332 @@ body {
   .interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin
     .frameParent20
     .discoverNewInsights {
-    
+
     white-space: normal !important;
     word-break: normal !important;
     overflow-wrap: normal !important;
     text-wrap: balance !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .discoverNewInsights {
+    width: 100% !important;
+    max-width: none !important;
+    height: auto !important;
+    display: block !important;
+    text-align: left !important;
+    white-space: normal !important;
+    margin: 0 !important;
+  }
+}
+
+/* ==========================================================================
+   MOBILE — EXPLORE & ENGAGE LIST 1–8
+   Lets every title and description align naturally and wrap responsively.
+   Desktop/tablet styles remain unchanged.
+   ========================================================================== */
+@media (max-width: 767px) {
+  .interactiveGamifiedLearnin .frameParent20 {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .interactiveGamifiedLearnin .frameParent20 .frameParent21,
+  .interactiveGamifiedLearnin .frameParent20 .frameParent35 {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .interactiveGamifiedLearnin .frameParent20 .frameParent22,
+  .interactiveGamifiedLearnin .frameParent20 .frameParent24 {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+    box-sizing: border-box !important;
+  }
+
+  .interactiveGamifiedLearnin .frameParent20 .curiousClicksParent {
+    width: auto !important;
+    max-width: none !important;
+    min-width: 0 !important;
+    right: 20px !important;
+    box-sizing: border-box !important;
+    align-items: flex-start !important;
+  }
+
+  .interactiveGamifiedLearnin .frameParent20 .curiousClicks {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    min-width: 0 !important;
+    white-space: normal !important;
+    overflow-wrap: anywhere !important;
+    word-break: normal !important;
+    text-align: left !important;
+  }
+
+  .interactiveGamifiedLearnin .frameParent20 .discoverNewInsightsContainer,
+  .interactiveGamifiedLearnin .frameParent20 .linkConceptsStepByContainer {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    min-width: 0 !important;
+    display: block !important;
+    flex-shrink: 1 !important;
+    text-align: left !important;
+  }
+
+  .interactiveGamifiedLearnin .frameParent20 .discoverNewInsights {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    min-width: 0 !important;
+    display: block !important;
+    margin: 0 !important;
+    white-space: normal !important;
+    overflow-wrap: anywhere !important;
+    word-break: normal !important;
+    text-align: left !important;
+  }
+}
+
+
+/* FINAL REQUESTED FIXES — breadcrumb, expert button, mobile cards 1–8 */
+.interactiveGamifiedLearnin .frameDiv,
+.interactiveGamifiedLearnin .frameDiv .augmentation,
+.interactiveGamifiedLearnin .frameDiv .featuresWrapper .augmentation,
+.interactiveGamifiedLearnin .frameDiv .arrowRightDoubleGroup .augmentation {
+  font-size: 16px !important;
+  line-height: 24px !important;
+}
+
+.interactiveGamifiedLearnin .frameParent62 { position: relative !important; }
+.interactiveGamifiedLearnin .builtForScaleExpertButtonSlot {
+  position: absolute !important; top: 50% !important; right: 16px !important;
+  bottom: auto !important; left: auto !important; width: 64px !important;
+  height: 64px !important; margin: 0 !important; padding: 0 !important;
+  transform: translateY(-50%) !important; z-index: 30 !important;
+  pointer-events: auto !important;
+}
+
+@media screen and (max-width: 767px) {
+  .interactiveGamifiedLearnin .frameDiv,
+  .interactiveGamifiedLearnin .frameDiv .augmentation,
+  .interactiveGamifiedLearnin .frameDiv .featuresWrapper .augmentation,
+  .interactiveGamifiedLearnin .frameDiv .arrowRightDoubleGroup .augmentation {
+    font-size: 14px !important; line-height: 20px !important;
+  }
+  .interactiveGamifiedLearnin .builtForScaleExpertButtonSlot {
+    top: 50% !important; right: 8px !important; left: auto !important;
+    transform: translateY(-50%) !important;
+  }
+  .interactiveGamifiedLearnin .frameParent20 {
+    width: 100% !important; max-width: 100% !important;
+    align-items: stretch !important; gap: 16px !important;
+  }
+  .interactiveGamifiedLearnin .frameParent20 .frameParent21,
+  .interactiveGamifiedLearnin .frameParent20 .frameParent35 {
+    width: 100% !important; max-width: 100% !important;
+    display: flex !important; flex-direction: column !important;
+    align-items: stretch !important; gap: 16px !important;
+  }
+  .interactiveGamifiedLearnin .frameParent20 .frameParent22,
+  .interactiveGamifiedLearnin .frameParent20 .frameParent24 {
+    width: 100% !important; max-width: 100% !important; min-width: 0 !important;
+    height: 104px !important; min-height: 104px !important;
+    padding: 18px 12px 14px 70px !important; box-sizing: border-box !important;
+    display: flex !important; align-items: center !important; justify-content: flex-start !important;
+  }
+  .interactiveGamifiedLearnin .frameParent20 .frameParent23,
+  .interactiveGamifiedLearnin .frameParent20 :is(.frameChild8,.frameChild9,.frameChild10,.frameChild11,.frameChild12,.frameChild13,.frameChild14,.frameChild15) {
+    width: 52px !important; height: 52px !important;
+  }
+  .interactiveGamifiedLearnin .frameParent20 .curiousClicksParent {
+    position: static !important; inset: auto !important; width: 100% !important;
+    max-width: 100% !important; min-width: 0 !important; margin: 0 !important;
+    gap: 6px !important; align-items: flex-start !important;
+  }
+  .interactiveGamifiedLearnin .frameParent20 .curiousClicks {
+    width: 100% !important; max-width: 100% !important; height: auto !important;
+    font-size: clamp(14px,4.1vw,18px) !important; line-height: 24px !important;
+    white-space: nowrap !important; overflow: hidden !important; text-align: left !important;
+  }
+  .interactiveGamifiedLearnin .frameParent20 :is(.discoverNewInsightsContainer,.linkConceptsStepByContainer) {
+    width: 100% !important; max-width: 100% !important; height: auto !important;
+    min-height: 0 !important; font-size: clamp(10px,3.15vw,13px) !important;
+    line-height: 20px !important; white-space: nowrap !important;
+    overflow: hidden !important; text-align: left !important;
+  }
+  .interactiveGamifiedLearnin .frameParent20 .discoverNewInsights {
+    display: block !important; width: 100% !important; max-width: 100% !important;
+    margin: 0 !important; font-size: inherit !important; line-height: inherit !important;
+    white-space: nowrap !important; overflow: hidden !important; text-align: left !important;
+  }
+}
+
+/* Mobile only — move Built for Scale expert button upward */
+@media screen and (max-width: 767px) {
+  .interactiveGamifiedLearnin .builtForScaleExpertButtonSlot {
+    top: 5px !important;
+    right: 8px !important;
+    bottom: auto !important;
+    left: auto !important;
+    transform: none !important;
+  }
+}
+
+/* ==========================================================================
+   MOBILE ONLY — EXPLORE & ENGAGE CARDS 1–8 SINGLE-LINE CONTENT
+   ========================================================================== */
+@media screen and (max-width: 767px) {
+  .interactiveGamifiedLearnin .frameParent20 .curiousClicksParent {
+    position: absolute !important;
+    top: 50% !important;
+    left: 66px !important;
+    right: 6px !important;
+    width: auto !important;
+    max-width: none !important;
+    min-width: 0 !important;
+    margin: 0 !important;
+    transform: translateY(-50%) !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 5px !important;
+  }
+
+  .interactiveGamifiedLearnin .frameParent20 .curiousClicks {
+    width: 100% !important;
+    max-width: none !important;
+    min-width: 0 !important;
+    height: auto !important;
+    font-size: clamp(14px, 4.1vw, 18px) !important;
+    line-height: 24px !important;
+    white-space: nowrap !important;
+    word-break: normal !important;
+    overflow-wrap: normal !important;
+    overflow: visible !important;
+    text-align: left !important;
+  }
+
+  .interactiveGamifiedLearnin .frameParent20 .discoverNewInsightsContainer,
+  .interactiveGamifiedLearnin .frameParent20 .linkConceptsStepByContainer {
+    width: auto !important;
+    max-width: none !important;
+    min-width: 0 !important;
+    height: auto !important;
+    min-height: 0 !important;
+    font-size: clamp(10px, 3vw, 13px) !important;
+    line-height: 20px !important;
+    white-space: nowrap !important;
+    word-break: normal !important;
+    overflow-wrap: normal !important;
+    overflow: visible !important;
+    text-align: left !important;
+  }
+
+  .interactiveGamifiedLearnin .frameParent20 .discoverNewInsights {
+    display: inline-block !important;
+    width: auto !important;
+    max-width: none !important;
+    min-width: 0 !important;
+    height: auto !important;
+    margin: 0 !important;
+    font-size: inherit !important;
+    line-height: inherit !important;
+    white-space: nowrap !important;
+    word-break: normal !important;
+    overflow-wrap: normal !important;
+    overflow: visible !important;
+    text-align: left !important;
+  }
+}
+
+/* Desktop only — move Built for Scale expert button a little higher */
+@media screen and (min-width: 768px) {
+  .interactiveGamifiedLearnin .builtForScaleExpertButtonSlot {
+    top: 20% !important;
+    right: 16px !important;
+    bottom: auto !important;
+    left: auto !important;
+    transform: translateY(-50%) !important;
+  }
+}
+
+/* ==========================================================================
+   FINAL RESPONSIVE FIXES
+   ========================================================================== */
+
+/* Breadcrumbs — all three breadcrumb texts use the same font size */
+.interactiveGamifiedLearnin .frameDiv,
+.interactiveGamifiedLearnin .frameDiv .augmentation,
+.interactiveGamifiedLearnin .frameDiv .featuresWrapper .augmentation,
+.interactiveGamifiedLearnin .frameDiv .arrowRightDoubleGroup .augmentation {
+  font-size: 16px !important;
+  line-height: 24px !important;
+}
+
+@media screen and (max-width: 767px) {
+  /* First-section buttons — narrower only on mobile */
+  .interactiveGamifiedLearnin .frameIcon {
+    width: 170px !important;
+  }
+
+  .interactiveGamifiedLearnin .frameWrapper3 {
+    width: 170px !important;
+    padding-left: 12px !important;
+    padding-right: 12px !important;
+  }
+
+  /* Breadcrumbs — same size for Features, Augmentation and current page */
+  .interactiveGamifiedLearnin .frameDiv,
+  .interactiveGamifiedLearnin .frameDiv .augmentation,
+  .interactiveGamifiedLearnin .frameDiv .featuresWrapper .augmentation,
+  .interactiveGamifiedLearnin .frameDiv .arrowRightDoubleGroup .augmentation {
+    font-size: 14px !important;
+    line-height: 20px !important;
+  }
+}
+
+/* Desktop only — move Built for Scale expert button further upward */
+@media screen and (min-width: 768px) {
+  .interactiveGamifiedLearnin .builtForScaleExpertButtonSlot {
+    top: 32% !important;
+    right: 16px !important;
+    bottom: auto !important;
+    left: auto !important;
+    transform: translateY(-50%) !important;
+  }
+}
+
+/* ==========================================================================
+   MOBILE ONLY — HERO BUTTON WIDTH + UNIFORM BREADCRUMB FONT SIZE
+   ========================================================================== */
+@media screen and (max-width: 767px) {
+  /* Reduce only the two hero buttons on mobile */
+  .interactiveGamifiedLearnin .frameParent7 {
+    width: 100% !important;
+    justify-content: center !important;
+  }
+
+  .interactiveGamifiedLearnin .frameIcon,
+  .interactiveGamifiedLearnin .frameWrapper3 {
+    width: 150px !important;
+    max-width: 150px !important;
+  }
+
+  .interactiveGamifiedLearnin .frameWrapper3 {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+
+  /* Keep all three breadcrumb labels at exactly the same font size */
+  .interactiveGamifiedLearnin .frameDiv,
+  .interactiveGamifiedLearnin .frameDiv .augmentation,
+  .interactiveGamifiedLearnin .frameDiv .featuresWrapper .augmentation,
+  .interactiveGamifiedLearnin .frameDiv .arrowRightDoubleGroup .augmentation {
+    font-size: 12px !important;
+    line-height: 18px !important;
   }
 }
