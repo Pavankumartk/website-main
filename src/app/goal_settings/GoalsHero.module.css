@@ -265,7 +265,6 @@
   gap:clamp(32px,4vw,64px);
 }
 
-
 .challengeText {
   min-width:0;
   display:flex;
@@ -278,7 +277,6 @@
 
   padding-block:clamp(12px,2vw,24px);
 }
-
 
 .challengeText h2 {
 
@@ -298,7 +296,6 @@
 
 }
 
-
 .challengeText > p {
 
   max-width:560px;
@@ -312,8 +309,6 @@
   letter-spacing:.03em;
 
 }
-
-
 
 /* Cards */
 
@@ -331,8 +326,6 @@
 
 }
 
-
-
 .challengeCard {
 
   width:100%;
@@ -345,13 +338,11 @@
 
   clamp(14px,1.5vw,22px);
 
-
   border-radius:clamp(18px,1.7vw,22px);
 
   background:var(--bg);
 
   box-shadow:var(--out);
-
 
   display:flex;
 
@@ -359,12 +350,9 @@
 
   gap:clamp(12px,1.5vw,20px);
 
-
   overflow:hidden;
 
 }
-
-
 
 .challengeIconCircle {
 
@@ -386,8 +374,6 @@
 
 }
 
-
-
 .challengeIconCircle img {
 
   width:clamp(30px,3vw,40px);
@@ -395,8 +381,6 @@
   height:clamp(30px,3vw,40px);
 
 }
-
-
 
 .challengeCard > div {
 
@@ -410,8 +394,6 @@
 
 }
 
-
-
 .challengeCard h3 {
 
   color:var(--tone);
@@ -424,8 +406,6 @@
 
 }
 
-
-
 .challengeCard p {
 
   color:var(--ink);
@@ -435,8 +415,6 @@
   line-height:1.4;
 
 }
-
-
 
 /* ==========================================================
    Tablet
@@ -452,7 +430,6 @@
 
 }
 
-
 .challengeText{
 
  align-items:center;
@@ -461,14 +438,12 @@
 
 }
 
-
 .challengeText h2,
 .challengeText p{
 
  max-width:700px;
 
 }
-
 
 .challengeCards{
 
@@ -478,10 +453,7 @@
 
 }
 
-
 }
-
-
 
 /* ==========================================================
    Mobile
@@ -489,13 +461,11 @@
 
 @media(max-width:640px){
 
-
 .challengeSection{
 
  gap:28px;
 
 }
-
 
 .challengeText{
 
@@ -503,14 +473,11 @@
 
 }
 
-
 .challengeText h2{
 
  line-height:1.3;
 
 }
-
-
 
 .challengeCard{
 
@@ -522,8 +489,6 @@
 
 }
 
-
-
 .challengeCard h3{
 
  font-size:16px;
@@ -531,8 +496,6 @@
  line-height:1.25;
 
 }
-
-
 
 .challengeCard p{
 
@@ -542,22 +505,15 @@
 
 }
 
-
-
 }
 
-
-
 @media(max-width:380px){
-
 
 .challengeCard{
 
  align-items:flex-start;
 
 }
-
-
 
 .challengeIconCircle{
 
@@ -566,8 +522,6 @@
  height:48px;
 
 }
-
-
 
 }
 
@@ -1121,19 +1075,13 @@
 
   min-height:505px;
 
-
   margin-top:var(--section-space);
-
 
   border-radius:100px;
 
-
   overflow:hidden;
 
-
   background:var(--bg);
-
-
 
   /* Added neumorphic floating card effect */
 
@@ -1142,8 +1090,6 @@
     10px 10px 20px rgba(196,196,196,0.75),
 
     -10px -10px 20px rgba(255,255,255,0.95);
-
-
 
 }
 
@@ -1233,17 +1179,13 @@
 
   z-index:1;
 
-
   width:min(47%,601px);
 
   height:500px;
 
-
   object-fit:cover;
 
   object-position:center;
-
-
 
   /* soft depth separation */
 
@@ -1414,7 +1356,6 @@
 
     border-radius:clamp(34px,5.8vw,60px);
 
-
     box-shadow:
 
       8px 8px 16px rgba(196,196,196,.7),
@@ -1425,13 +1366,11 @@
 
 }
 
-
 @media(max-width:640px){
 
   .ctaSection{
 
     border-radius:32px;
-
 
     box-shadow:
 
@@ -1715,8 +1654,6 @@
   color: var(--blue) !important;
 }
 
-
-
 /* ==========================================================
    Challenge illustration position correction
    Move only left side image upward without affecting layout
@@ -1752,26 +1689,22 @@
   margin-top: clamp(36px, 4vw, 56px);
 }
 
-
 /* Goal Setting Section spacing correction */
 .centerSection {
   margin-top: 0;
   padding-top: 0;
 }
 
-
 /* Reduce heading to card gap */
 .goalCards {
   margin-top: clamp(20px, 2.5vw, 36px);
 }
-
 
 /* Keep section content compact */
 .centerHeading,
 .centerHeadingCompact {
   gap: clamp(12px, 1.8vw, 20px);
 }
-
 
 /* Desktop */
 @media (min-width:1025px) {
@@ -1786,7 +1719,6 @@
 
 }
 
-
 /* Tablet */
 @media (max-width:1024px) {
 
@@ -1799,7 +1731,6 @@
   }
 
 }
-
 
 /* Mobile */
 @media (max-width:640px) {
@@ -1838,7 +1769,6 @@
   }
 }
 
-
 @media(max-width:1024px){
 
   .goalCardContent{
@@ -1846,7 +1776,6 @@
   }
 
 }
-
 
 @media(max-width:640px){
 
@@ -1866,7 +1795,6 @@
   }
 
 }
-
 
 @media(max-width:380px){
 
@@ -1888,7 +1816,6 @@
    Inner + Outer Depth Effect
    ========================================================== */
 
-
 .benefitsFrame {
 
   width:100%;
@@ -1902,13 +1829,10 @@
   padding:
     clamp(14px,2vw,24px);
 
-
   border-radius:
     clamp(24px,2.5vw,32px);
 
-
   background:var(--bg);
-
 
   /* outer raised + inner pressed effect */
   box-shadow:
@@ -1923,19 +1847,13 @@
 
 }
 
-
-
 .benefitsInner {
-
 
   width:100%;
 
-
   height:clamp(380px,34vw,500px);
 
-
   min-height:0;
-
 
   padding:
 
@@ -1943,16 +1861,10 @@
 
     clamp(14px,2.2vw,28px);
 
-
-
   border-radius:
     clamp(18px,2vw,28px);
 
-
-
   background:var(--bg);
-
-
 
   /* raised inner panel like reference image */
   box-shadow:
@@ -1961,31 +1873,20 @@
 
     -7px -7px 14px rgba(255,255,255,0.9);
 
-
-
   display:grid;
-
 
   grid-template-columns:
     minmax(0,606px)
     minmax(0,383px);
 
-
-
   align-items:center;
-
 
   gap:
     clamp(40px,7vw,100px);
 
-
   overflow:hidden;
 
 }
-
-
-
-
 
 .benefitsImage {
 
@@ -1993,18 +1894,12 @@
 
   max-width:606px;
 
-
   height:
     clamp(320px,32vw,430px);
-
 
   object-fit:contain;
 
 }
-
-
-
-
 
 .benefitsList {
 
@@ -2012,18 +1907,12 @@
 
   flex-direction:column;
 
-
   align-items:flex-start;
-
 
   gap:
     clamp(14px,2vw,28px);
 
 }
-
-
-
-
 
 .benefitItem {
 
@@ -2031,17 +1920,11 @@
 
   align-items:center;
 
-
   gap:14px;
-
 
   min-width:0;
 
 }
-
-
-
-
 
 .benefitItem img {
 
@@ -2051,16 +1934,11 @@
 
   flex:0 0 auto;
 
-
   filter:
     drop-shadow(4px 4px 4px rgba(0,0,0,.20))
     drop-shadow(-4px -4px 4px rgba(255,255,255,.8));
 
 }
-
-
-
-
 
 .benefitItem p {
 
@@ -2068,10 +1946,8 @@
 
   color:var(--ink);
 
-
   font-size:
     clamp(16px,1.6vw,22px);
-
 
   line-height:1.25;
 
@@ -2081,22 +1957,15 @@
 
 }
 
-
-
-
-
 /* Tablet */
 
 @media(max-width:1024px){
-
 
   .benefitsFrame{
 
     min-height:0;
 
   }
-
-
 
   .benefitsInner{
 
@@ -2108,8 +1977,6 @@
 
   }
 
-
-
   .benefitsImage{
 
     height:auto;
@@ -2120,25 +1987,17 @@
 
   }
 
-
 }
-
-
-
-
 
 /* Mobile */
 
 @media(max-width:640px){
-
 
   .benefitsFrame{
 
     padding:14px;
 
   }
-
-
 
   .benefitsInner{
 
@@ -2147,8 +2006,6 @@
     gap:24px;
 
   }
-
-
 
   .benefitsImage{
 
@@ -2160,15 +2017,11 @@
 
   }
 
-
-
   .benefitsList{
 
     gap:18px;
 
   }
-
-
 
   .benefitItem p{
 
@@ -2178,13 +2031,11 @@
 
   }
 
-
 }
 
 /* ==========================================================
    FINAL CTA MOBILE CARD SHADOW + TOP SPACE FIX
    ========================================================== */
-
 
 /* Desktop + Tablet CTA depth correction */
 .ctaSection {
@@ -2197,11 +2048,8 @@
 
 }
 
-
-
 /* Mobile CTA correction */
 @media(max-width:640px){
-
 
   .ctaSection{
 
@@ -2213,9 +2061,7 @@
 
     padding-bottom:18px;
 
-
     border-radius:32px;
-
 
     box-shadow:
 
@@ -2227,23 +2073,15 @@
 
       inset -3px -3px 7px rgba(255,255,255,0.8);
 
-
   }
-
-
 
   .ctaCopy{
 
-
     padding-top:0;
-
 
     gap:18px;
 
-
   }
-
-
 
   .ctaCopy h2{
 
@@ -2251,15 +2089,11 @@
 
   }
 
-
-
   .ctaCopy p{
 
     margin-top:4px;
 
   }
-
-
 
   .demoButton{
 
@@ -2267,46 +2101,30 @@
 
   }
 
-
-
   .ctaPerson{
-
 
     margin-top:24px;
 
-
     border-radius:0 0 26px 26px;
-
 
   }
 
-
 }
-
-
 
 /* Very small mobile */
 @media(max-width:380px){
 
-
  .ctaSection{
-
 
     padding-top:26px;
 
-
  }
-
 
  .ctaPerson{
 
-
     margin-top:20px;
 
-
  }
-
-
 
 }
 
@@ -2382,7 +2200,6 @@
   }
 }
 
-
 /* ==========================================================
    FINAL BOOK A DEMO BUTTON — HOVER IN / OUT ONLY
    Default = raised/out effect
@@ -2447,7 +2264,6 @@
    FINAL CTA HEADING SIZE FIX
    ========================================================== */
 
-
 .ctaCopy h2 {
 
     font-family: "Segoe UI", "Inter", sans-serif;
@@ -2462,8 +2278,6 @@
 
 }
 
-
-
 /* CTA paragraph maintain body scale */
 
 .ctaCopy p {
@@ -2475,8 +2289,6 @@
     line-height: 1.45;
 
 }
-
-
 
 /* Mobile CTA: fit the copy to the card's inner width. */
 
@@ -2511,7 +2323,6 @@
         margin-inline:auto;
 
     }
-
 
     .ctaCopy p {
 
@@ -3207,5 +3018,70 @@
     white-space: nowrap;
     overflow-wrap: normal;
     text-align: left;
+  }
+}
+
+/* ==========================================================================
+   REQUESTED FIXES ONLY
+   1. Breadcrumb current text matches the other breadcrumb font size
+   2. Mobile section pills have more horizontal space around their text
+   3. Personalized Learning Journey entries are non-clickable
+   ========================================================================== */
+
+.page .breadcrumb :is(strong, [aria-current="page"]) {
+  font-size: inherit;
+  line-height: inherit;
+}
+
+.page .journeyItem {
+  cursor: default;
+  user-select: text;
+  -webkit-user-select: text;
+}
+
+@media (max-width: 767px) {
+  .page .sectionPill.sectionPill {
+    width: auto;
+    min-width: max-content;
+    max-width: calc(100vw - 32px);
+    padding-inline: 16px;
+  }
+}
+
+/* ==========================================================================
+   TALK TO OUR EXPERT — TRUST & INTELLIGENCE
+   Anchors the global expert launcher to this section only.
+   ========================================================================== */
+
+.page .trustBlock {
+  position: relative;
+}
+
+.page .trustExpertButtonSlot {
+  position: absolute;
+  top: -30%;
+  right: -24px;
+  bottom: auto;
+  left: auto;
+  width: 64px;
+  height: 64px;
+  margin: 0;
+  padding: 0;
+  transform: translateY(-50%);
+  z-index: 20;
+  pointer-events: auto;
+}
+
+@media (max-width: 1100px) {
+  .page .trustExpertButtonSlot {
+    right: 4px;
+  }
+}
+
+@media (max-width: 767px) {
+  .page .trustExpertButtonSlot {
+    top: -10%;
+    right: 0;
+    transform: translateY(-50%);
   }
 }
