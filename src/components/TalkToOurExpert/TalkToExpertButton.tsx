@@ -9,6 +9,7 @@ import {
   type ReactNode,
 } from "react";
 import { createPortal } from "react-dom";
+import { usePathname } from "next/navigation";
 import TalkToOurExpert from "@/components/TalkToOurExpert/TalkToOurExpert";
 import { HeadphonesIcon } from "@/components/icons/Icons";
 import styles from "./TalkToOurExpert.module.css";
@@ -16,7 +17,11 @@ import styles from "./TalkToOurExpert.module.css";
 const GlobalExpertContext = createContext(false);
 
 /** Installed once in the root layout; older page instances become redundant. */
-export function GlobalExpertProvider({ children }: { children: ReactNode }) {
+export function GlobalExpertProvider({
+  children,
+}: {
+  children: ReactNode;
+}) {
   return (
     <GlobalExpertContext.Provider value={true}>
       {children}
@@ -26,6 +31,8 @@ export function GlobalExpertProvider({ children }: { children: ReactNode }) {
 }
 
 function ExpertLauncher() {
+  const pathname = usePathname();
+
   const [isOpen, setIsOpen] = useState(false);
   const [slot, setSlot] = useState<HTMLElement | null>(null);
 
@@ -46,13 +53,22 @@ function ExpertLauncher() {
     syncSlot();
 
     const observer = new MutationObserver(syncSlot);
+
     observer.observe(document.body, {
       childList: true,
       subtree: true,
     });
 
     return () => observer.disconnect();
-  }, []);
+  }, [pathname]);
+
+  /*
+   * Hide Talk to Our Expert only on the University page.
+   * The button remains available on all other pages.
+   */
+  if (pathname === "/university" || pathname.startsWith("/university/")) {
+    return null;
+  }
 
   const launcherButton = (
     <button
@@ -69,7 +85,9 @@ function ExpertLauncher() {
         aria-hidden="true"
       >
         <span className={styles["talk-to-expert-fab-icon-circle"]}>
-          <HeadphonesIcon className={styles["talk-to-expert-fab-icon"]} />
+          <HeadphonesIcon
+            className={styles["talk-to-expert-fab-icon"]}
+          />
         </span>
       </span>
     </button>
@@ -77,8 +95,14 @@ function ExpertLauncher() {
 
   return (
     <>
-      {slot ? createPortal(launcherButton, slot) : launcherButton}
-      <TalkToOurExpert isOpen={isOpen} onClose={closeExpert} />
+      {slot
+        ? createPortal(launcherButton, slot)
+        : launcherButton}
+
+      <TalkToOurExpert
+        isOpen={isOpen}
+        onClose={closeExpert}
+      />
     </>
   );
 }
@@ -86,5 +110,6 @@ function ExpertLauncher() {
 /** Retain this export so existing page imports continue to work. */
 export default function TalkToExpertButton() {
   const hasGlobalExpert = useContext(GlobalExpertContext);
+
   return hasGlobalExpert ? null : <ExpertLauncher />;
 }
