@@ -7178,3 +7178,63 @@
     padding-bottom: 6px !important;
   }
 }
+
+
+.neuroTrademark {
+  position: relative;
+  top: -6px;
+  margin-left: 2px;
+  font-size: 10.8px;
+  line-height: 1;
+  font-weight: 600;
+}
+
+/* Key Challenges badge: normal page flow */
+.frameParent44 .frameParent45 {
+  align-items: center !important;
+}
+
+.frameParent44 .frameChild21 {
+  position: relative !important;
+  top: auto !important;
+  left: auto !important;
+  right: auto !important;
+  bottom: auto !important;
+  inset: auto !important;
+  align-self: center !important;
+  margin: 0 auto !important;
+  transform: none !important;
+}
+
+.frameParent44 .keyChallengesInHigherEducaWrapper {
+  margin-top: 0 !important;
+}
+
+@media screen and (max-width: 767px) {
+  .frameParent44 .frameParent45 {
+    position: relative !important;
+    top: auto !important;
+    left: auto !important;
+    right: auto !important;
+    bottom: auto !important;
+    width: 100% !important;
+    height: auto !important;
+    align-items: center !important;
+  }
+
+  .frameParent44 .frameChild21 {
+    position: relative !important;
+    top: auto !important;
+    left: auto !important;
+    right: auto !important;
+    bottom: auto !important;
+    inset: auto !important;
+    align-self: center !important;
+    margin: 0 auto !important;
+    transform: none !important;
+  }
+
+  .frameParent44 .keyChallengesInHigherEducaWrapper {
+    margin-top: 0 !important;
+  }
+}
