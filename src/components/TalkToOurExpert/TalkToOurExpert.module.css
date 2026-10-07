@@ -4159,6 +4159,17 @@
   display: block;
 }
 
+/* Page-anchored variant used only when the launcher is rendered into
+   a data-expert-button-slot by TalkToExpertButton.tsx. */
+.talk-to-expert-fab-slotted {
+  position: relative !important;
+  top: auto !important;
+  right: auto !important;
+  bottom: auto !important;
+  left: auto !important;
+  transform: none !important;
+}
+
 /* Retained for any existing references; the circular control is icon-only. */
 .talk-to-expert-fab-label { display: none; }
 
