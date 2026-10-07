@@ -248,7 +248,7 @@ export default function LearningCommunitySupport() {
 
                             <div className={styles.frameParent4}>
 
-                                <div className={styles.userSupportSocialLearning}>User Support & Social Learning</div>
+                                <div className={styles.userSupportSocialLearning}>Learning Community</div>
 
                                 <h1 className={styles.learnTogetherStay} style={{ display: "inline", margin: 0, padding: 0, fontWeight: "bold" }}>Learn Together! Stay <span style={{ color: "#2d4cc8", WebkitTextFillColor: "#2d4cc8" }}>Connected</span></h1>
 
@@ -298,7 +298,9 @@ export default function LearningCommunitySupport() {
 
                             <div className={styles.getTheHelpYouNeedWhenYoParent}>
 
-                                <h2 className={styles.getTheHelp} style={{ display: "inline", margin: 0, padding: 0, fontWeight: "bold" }}>Get the help you need! When you need <span style={{ color: "#2d4cc8", WebkitTextFillColor: "#2d4cc8" }}>it</span></h2>
+                                <h2 className={styles.getTheHelp} style={{ display: "inline", margin: 0, padding: 0, fontWeight: "bold" }}>Get the help you need! When you need it
+                                    {/* <span style={{ color: "#2d4cc8", WebkitTextFillColor: "#2d4cc8" }}>it</span> */}
+                                    </h2>
 
                                 <div className={styles.neurolxpKeepsLearners}>NeuroLXP keeps learners and educators supported with</div>
 
@@ -1148,7 +1150,7 @@ export default function LearningCommunitySupport() {
 
                     <BookDemoTrigger className={styles.requestADemoWrapper}>
 
-                        <h3 className={styles.requestADemo} style={{ display: "inline", margin: 0, padding: 0, fontWeight: "bold" }}>Request a Demo</h3>
+                        <h3 className={styles.requestADemo} style={{ display: "inline", margin: 0, padding: 0, fontWeight: "bold" }}>Book a Demo</h3>
 
                     </BookDemoTrigger>
 
