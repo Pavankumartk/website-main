@@ -4911,8 +4911,6 @@
   }
 }
 
-
-
 /* =========================================================
    FINAL CTA — TM + E-LEARNING FIX
    Keeps the existing design; only fixes the two marked issues.
@@ -5235,7 +5233,6 @@
 .eLearning *::after {
   font-family: "Segoe UI" !important;
 }
-
 
 /* ==========================================================================
    FINAL VISUAL BASELINE UPDATE
@@ -5606,7 +5603,6 @@
   }
 }
 
-
 /* ==========================================================================
    FINAL DESKTOP SPACING FIX — "IDEAL FOR" SECTION ONLY
    --------------------------------------------------------------------------
@@ -5654,7 +5650,6 @@
     gap: 28px !important;
   }
 }
-
 
 /* ==========================================================================
    FINAL DESKTOP SPACING FIX — PLATFORM FEATURES SECTION ONLY
@@ -5705,7 +5700,6 @@
     margin-top: 0 !important;
   }
 }
-
 
 /* ==========================================================================
    FINAL CANONICAL MOBILE FIX
@@ -6243,7 +6237,6 @@
   }
 }
 
-
 /* ==========================================================================
    FINAL MOBILE NORMALIZATION — IDEAL FOR CARDS
    --------------------------------------------------------------------------
@@ -6311,7 +6304,6 @@
    NO spacing, section, card, image, typography-size or layout changes.
    ========================================================================== */
 
-
 /* ==========================================================================
    1) EVERY WORD SELECTABLE
    ========================================================================== */
@@ -6331,7 +6323,6 @@ body:has(.eLearning) * {
   -moz-user-select: text !important;
   user-select: text !important;
 }
-
 
 /* ==========================================================================
    2) BADGES — SAME AS PREVIOUS APPROVED PAGES
@@ -6411,7 +6402,6 @@ body:has(.eLearning) * {
 .eLearning .neuroLxpBadge sup {
   flex-shrink: 0 !important;
 }
-
 
 /* ==========================================================================
    3) CTA BUTTONS — SAME AS PREVIOUS APPROVED PAGES
@@ -6497,7 +6487,6 @@ body:has(.eLearning) * {
   outline-offset: 3px !important;
   transform: none !important;
 }
-
 
 /* ==========================================================================
    RESPONSIVE BADGE SCALE
@@ -6632,7 +6621,6 @@ body:has(.eLearning) * {
   }
 }
 
-
 /* Tablet / small laptop */
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .eLearning > .frameParent5 {
@@ -6683,7 +6671,6 @@ body:has(.eLearning) * {
     height: 15px !important;
   }
 }
-
 
 /* Mobile — same compact breadcrumb treatment as the previous pages */
 @media screen and (max-width: 767px) {
@@ -6744,7 +6731,6 @@ body:has(.eLearning) * {
    Section-to-section spacing, badge spacing, cards and layouts stay unchanged.
    ========================================================================== */
 
-
 /* ==========================================================================
    1) CURRENT / LAST BREADCRUMB ITEM
    ========================================================================== */
@@ -6758,7 +6744,6 @@ body:has(.eLearning) * {
   font-weight: 700 !important;
 }
 
-
 /* ==========================================================================
    2) HEADING -> SUBHEADING SPACING ONLY
    Do NOT change outer section gaps or badge -> heading gaps.
@@ -6770,13 +6755,11 @@ body:has(.eLearning) * {
   margin-top: -16px !important;
 }
 
-
 /* Key Challenges:
    "Addressing Key Challenges in E-Learning" -> supporting paragraph */
 .eLearning .addressingKeyChallengesInEParent {
   gap: 16px !important;
 }
-
 
 /* Ideal For:
    heading -> "NeuroLXP supports..." supporting paragraph
@@ -6788,14 +6771,12 @@ body:has(.eLearning) * {
   }
 }
 
-
 /* Final CTA:
    "Future-Ready E-Learning..." heading group -> supporting paragraph.
    This changes only that inner text gap. */
 .eLearning .frameParent35 .frameParent37 {
   gap: 16px !important;
 }
-
 
 /* Keep the same compact heading/subheading relationship responsively. */
 @media screen and (max-width: 1199px) {
@@ -6925,7 +6906,6 @@ body:has(.eLearning) * {
   }
 }
 
-
 /* Slightly smaller heading only on very narrow phones so it remains neat.
    This does not affect spacing or any other section. */
 @media screen and (max-width: 420px) {
@@ -6935,7 +6915,6 @@ body:has(.eLearning) * {
     line-height: 35px !important;
   }
 }
-
 
 /* Final-word emphasis for section and card headings; the hero is unchanged. */
 .eLearning .headingLastWord {
@@ -7120,5 +7099,81 @@ body:has(.eLearning) * {
   .eLearning .frameParent15 .frameParent27 .frameWrapper14 {
     width: 100% !important;
     grid-column: auto;
+  }
+}
+
+/* ==========================================================================
+   REQUESTED HERO FIXES ONLY
+   - Mobile: reduce top space
+   - Mobile: add breathing room after Start Learning before statistics
+   - Talk to Our Expert: anchor inside the hero without changing layout flow
+   ========================================================================== */
+
+.eLearning > .frameParent {
+  position: relative;
+}
+
+@media screen and (max-width: 767px) {
+  /* Pull only the hero upward on mobile. */
+  .eLearning > .frameParent {
+    margin-top: -18px !important;
+  }
+
+  /* Keep clear separation after Start Learning before the statistics card. */
+  .eLearning > .eLearningInner {
+    margin-top: 72px !important;
+  }
+
+  /* Ideal mobile location: right side beside the hero copy, above the CTAs. */
+
+}
+
+@media screen and (max-width: 479px) {
+  .eLearning > .frameParent {
+    margin-top: -22px !important;
+  }
+
+  .eLearning > .eLearningInner {
+    margin-top: 76px !important;
+  }
+
+}
+
+/* ==========================================================================
+   TALK TO OUR EXPERT — IDEAL FOR
+   Anchored to the Ideal For heading section without changing its layout.
+   ========================================================================== */
+
+.eLearning .frameParent16 {
+  position: relative;
+}
+
+.eLearning .idealForExpertButtonSlot {
+  position: absolute;
+  top: 90%;
+  right: -12px;
+  bottom: auto;
+  left: auto;
+  width: 64px;
+  height: 64px;
+  margin: 0;
+  padding: 0;
+  transform: translateY(-50%);
+  z-index: 20;
+  pointer-events: auto;
+}
+
+@media screen and (max-width: 1100px) {
+  .eLearning .idealForExpertButtonSlot {
+    top: 58%;
+    right: 4px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .eLearning .idealForExpertButtonSlot {
+    top: 85%;
+    right: 0;
+    transform: translateY(-50%);
   }
 }
