@@ -1,7 +1,5 @@
 "use client";
 
-
-
 import type { NextPage } from 'next';
 
 import Image from "next/image";
@@ -17,10 +15,6 @@ import Header from "../../components/Header/header";
 import Footer from "../../components/Footer/footer";
 
 import { BookDemoTrigger } from "../../components/Bookademo/Bookademo";
-
-
-
-
 
 const challengeCards = [
 
@@ -106,8 +100,6 @@ const challengeCards = [
 
 ] as const;
 
-
-
 const CorporateTraining: NextPage = () => {
 
     const [openChallengeCard, setOpenChallengeCard] = useState<string | null>(null);
@@ -120,29 +112,21 @@ const CorporateTraining: NextPage = () => {
 
     const corporateVideoRef = useRef<HTMLVideoElement | null>(null);
 
-
-
     const toggleChallengeCard = (cardId: string) => {
 
         setOpenChallengeCard((current) => (current === cardId ? null : cardId));
 
     };
 
-
-
     const toggleCorporateVideo = () => {
 
         const video = corporateVideoRef.current;
-
-
 
         if (!video) {
 
             return;
 
         }
-
-
 
         if (video.paused) {
 
@@ -156,13 +140,9 @@ const CorporateTraining: NextPage = () => {
 
     };
 
-
-
     useEffect(() => {
 
         const section = trainingSectionRef.current;
-
-
 
         if (!section) {
 
@@ -170,15 +150,11 @@ const CorporateTraining: NextPage = () => {
 
         }
 
-
-
         let animationFrame = 0;
 
         let startTime = 0;
 
         const duration = 1800;
-
-
 
         const runCounter = (time: number) => {
 
@@ -188,19 +164,13 @@ const CorporateTraining: NextPage = () => {
 
             }
 
-
-
             const elapsed = time - startTime;
 
             const progress = Math.min(elapsed / duration, 1);
 
             const easedProgress = 1 - Math.pow(1 - progress, 3);
 
-
-
             setTrainingLoadProgress(easedProgress);
-
-
 
             if (progress < 1) {
 
@@ -209,8 +179,6 @@ const CorporateTraining: NextPage = () => {
             }
 
         };
-
-
 
         const observer = new IntersectionObserver(
 
@@ -246,11 +214,7 @@ const CorporateTraining: NextPage = () => {
 
         );
 
-
-
         observer.observe(section);
-
-
 
         return () => {
 
@@ -261,8 +225,6 @@ const CorporateTraining: NextPage = () => {
         };
 
     }, []);
-
-
 
     const completionValue = Math.round(94 * trainingLoadProgress);
 
@@ -277,8 +239,6 @@ const CorporateTraining: NextPage = () => {
     const techValue = Math.round(78 * trainingLoadProgress);
 
     const salesValue = Math.round(85 * trainingLoadProgress);
-
-
 
     return (
 
@@ -306,8 +266,6 @@ const CorporateTraining: NextPage = () => {
 
                 </div>
 
-
-
                 <Image
 
                     src="/icons/arrow-right-double.svg"
@@ -323,8 +281,6 @@ const CorporateTraining: NextPage = () => {
                     aria-hidden="true"
 
                 />
-
-
 
                 <div className={styles.ourCustomersWrapper}>
 
@@ -332,8 +288,6 @@ const CorporateTraining: NextPage = () => {
 
                 </div>
 
-
-
                 <Image
 
                     src="/icons/arrow-right-double.svg"
@@ -349,8 +303,6 @@ const CorporateTraining: NextPage = () => {
                     aria-hidden="true"
 
                 />
-
-
 
                 <div className={styles.arrowRightDoubleGroup}>
 
@@ -395,8 +347,11 @@ const CorporateTraining: NextPage = () => {
                                 <div className={styles.frameItem}>Corporate Training Solutions</div>
 
                                 <h2 className={styles.empoweringWorkforce}>
+
                                   Empowering{" "}
+
                                   <span style={{ color: "#2d4cc8" }}>Workforce</span>
+
                               </h2>
 
                             </div>
@@ -558,6 +513,10 @@ const CorporateTraining: NextPage = () => {
                 </div>
 
                 <div className={styles.frameParent16}>
+                    <div
+                        className={styles.corporateExpertButtonSlot}
+                        data-expert-button-slot
+                    />
 
                     <div className={styles.frameParent17}>
 
@@ -587,8 +546,6 @@ const CorporateTraining: NextPage = () => {
 
                                 const isOpen = openChallengeCard === card.id;
 
-
-
                                 return (
 
                                     <article
@@ -615,11 +572,7 @@ const CorporateTraining: NextPage = () => {
 
                                             </div>
 
-
-
                                             <p className={styles.continuousWorkforceUpskillin}>{card.description}</p>
-
-
 
                                             <button
 
@@ -650,8 +603,6 @@ const CorporateTraining: NextPage = () => {
                                                 </span>
 
                                             </button>
-
-
 
                                             <div
 
@@ -677,15 +628,11 @@ const CorporateTraining: NextPage = () => {
 
                         </div>
 
-
-
                         <div className={`${styles.frameParent29} ${styles.corporateChallengeRow} ${styles.corporateChallengeRowBottom}`}>
 
                             {challengeCards.slice(3).map((card) => {
 
                                 const isOpen = openChallengeCard === card.id;
-
-
 
                                 return (
 
@@ -713,11 +660,7 @@ const CorporateTraining: NextPage = () => {
 
                                             </div>
 
-
-
                                             <p className={styles.continuousWorkforceUpskillin}>{card.description}</p>
-
-
 
                                             <button
 
@@ -748,8 +691,6 @@ const CorporateTraining: NextPage = () => {
                                                 </span>
 
                                             </button>
-
-
 
                                             <div
 
@@ -963,8 +904,10 @@ const CorporateTraining: NextPage = () => {
 
                             <div className={styles.frameParent47}>
 
-                                <div className={styles.frameChild28}>Benefits of Corporate Training With NeuroLXP</div>
-
+<div className={styles.frameChild28}>
+  Benefits of Corporate Training With NeuroLXP
+  <sup className={styles.neuroLxpTm}>TM</sup>
+</div>
                                 <div className={styles.whyOrganizationsChooseNeuroParent}>
 
                                     <h2 className={styles.keyChallengesInContainer}>
@@ -1190,9 +1133,13 @@ const CorporateTraining: NextPage = () => {
                                         <div className={styles.frameChild36}>NeuroLXP<sup>TM</sup></div>
 
                                         <h2 className={styles.neurolxpTransformingCorporat}>
-                                          NeuroLXP-Transforming Corporate{" "}
+
+                                          NeuroLXP Transforming Corporate{" "}
+
                                           <span style={{ color: "#2d4cc8" }}>Learning</span>
+
                                           <br />
+
                                       </h2>
 
                                     </div>
@@ -1205,7 +1152,11 @@ const CorporateTraining: NextPage = () => {
 
                                     <div className={styles.getStartedWrapper}>
 
-                                        <div className={styles.getStarted}>{`Get Started `}</div>
+<Link href="/HomePage" className={styles.getStarted}>
+
+  Get Started
+
+</Link>
 
                                     </div>
 
@@ -1263,10 +1214,6 @@ const CorporateTraining: NextPage = () => {
 
     );
 
-
-
 };
-
-
 
 export default CorporateTraining;
