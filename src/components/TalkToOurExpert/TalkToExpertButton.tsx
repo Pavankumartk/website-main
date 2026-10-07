@@ -67,6 +67,7 @@ function ExpertLauncher() {
    * - University
    * - BFSI
    * - Learning Community
+   * - Assessments
    *
    * The button remains available on all other pages.
    */
@@ -76,7 +77,9 @@ function ExpertLauncher() {
     pathname === "/bfsi" ||
     pathname.startsWith("/bfsi/") ||
     pathname === "/learning_community" ||
-    pathname.startsWith("/learning_community/")
+    pathname.startsWith("/learning_community/") ||
+    pathname === "/assessments" ||
+    pathname.startsWith("/assessments/")
   ) {
     return null;
   }
