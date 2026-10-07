@@ -14758,3 +14758,87 @@
   }
 }
 
+/* ==========================================================================
+   DESKTOP ONLY — REDUCE TOP SPACE ABOVE HERO CONTENT
+   ========================================================================== */
+@media screen and (min-width: 1200px) {
+  .contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem > .frameParent {
+    align-items: flex-start !important;
+    padding-top: 90px !important;
+    padding-bottom: 64px !important;
+  }
+}
+
+
+/* Audience cards — static appearance only */
+.contentIntelligenceManagem .rectangleParent5 .frameParent93,
+.contentIntelligenceManagem .rectangleParent5 .frameParent94,
+.contentIntelligenceManagem .rectangleParent5 .frameParent95,
+.contentIntelligenceManagem .rectangleParent5 .intelligenceFeatureIcon {
+  transition: none !important;
+}
+
+.contentIntelligenceManagem .rectangleParent5 .frameParent93:hover,
+.contentIntelligenceManagem .rectangleParent5 .frameParent94:hover,
+.contentIntelligenceManagem .rectangleParent5 .frameParent95:hover {
+  transform: none !important;
+}
+
+.contentIntelligenceManagem .rectangleParent5 .frameParent93:hover .intelligenceFeatureIcon,
+.contentIntelligenceManagem .rectangleParent5 .frameParent94:hover .intelligenceFeatureIcon,
+.contentIntelligenceManagem .rectangleParent5 .frameParent95:hover .intelligenceFeatureIcon {
+  transform: none !important;
+}
+
+/* Content Compatibility — Talk to Expert button */
+.contentIntelligenceManagem .contentCompatibilityExpertButtonSlot {
+  position: absolute !important;
+  top: 20% !important;
+  right: 16px !important;
+  width: 64px !important;
+  height: 64px !important;
+  transform: translateY(-50%) !important;
+  z-index: 30 !important;
+}
+
+@media screen and (max-width: 767px) {
+  .contentIntelligenceManagem .contentCompatibilityExpertButtonSlot {
+    top: 50px !important;
+    right: 8px !important;
+    bottom: auto !important;
+    left: auto !important;
+    transform: none !important;
+  }
+}
+
+/* ==========================================================================
+   BREADCRUMB FONT SIZE FIX
+   Keep all breadcrumb text at exactly the same size.
+   ========================================================================== */
+.contentIntelligenceManagem .frameParent4,
+.contentIntelligenceManagem .frameParent4 .featuresWrapper,
+.contentIntelligenceManagem .frameParent4 .augmentation,
+.contentIntelligenceManagem .frameParent4 .arrowRightDoubleGroup,
+.contentIntelligenceManagem .frameParent4 .arrowRightDoubleGroup .augmentation {
+  font-size: 18px !important;
+  line-height: 24px !important;
+}
+
+@media screen and (max-width: 767px) {
+  .contentIntelligenceManagem .frameParent4,
+  .contentIntelligenceManagem .frameParent4 .featuresWrapper,
+  .contentIntelligenceManagem .frameParent4 .augmentation,
+  .contentIntelligenceManagem .frameParent4 .arrowRightDoubleGroup,
+  .contentIntelligenceManagem .frameParent4 .arrowRightDoubleGroup .augmentation {
+    font-size: 18px !important;
+    line-height: 24px !important;
+  }
+}
+.tmMark {
+  display: inline-block;
+  font-size: 10.8px;
+  line-height: 1;
+  position: relative;
+  top: -9px;
+  margin-left: 1px;
+}
