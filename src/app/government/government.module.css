@@ -161,8 +161,7 @@
   top: 88px;
   left: 80px;
   width: 1280px;
-  
-  
+
   border-radius: 16px;
   font-size: 48px;
 }
@@ -177,7 +176,6 @@
   
   z-index: 0;
 
-  
   filter:
     drop-shadow(-10px -10px 10px rgba(255, 255, 255, 0.95))
     drop-shadow(10px 12px 12px rgba(174, 181, 184, 0.72));
@@ -517,8 +515,7 @@
 }
 .frameParent10 {
   	align-self: stretch;
-  	
-  	
+
   	text-align: left;
   	font-size: 28px;
   	color: #000;
@@ -938,10 +935,7 @@
 }
 .frameParent37 {
   	align-self: stretch;
-  	
-  	
-  	
-  	
+
 }
 .frameChild16 {
   	height: 70.1px;
@@ -1572,19 +1566,9 @@
   min-height:50.1px;
   padding:0 16px;
   box-sizing:border-box;
-  
-  
-  
-  
-  
-  
-  
+
   font-family:"Segoe UI";
-  
-  
-  
-  
-  
+
   flex-shrink:0;
   overflow:visible;
 }
@@ -1965,107 +1949,6 @@
     transform: translateX(-50%);
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .vectorParent{
   height: 680px !important;
@@ -3105,7 +2988,6 @@
   }
 }
 
-
 /* =========================================================
    MOBILE/TABLET — KEY CHALLENGES SECTION ONLY
    Reduces extra top spacing and keeps all challenge-card
@@ -3275,7 +3157,6 @@
   }
 }
 
-
 /* Desktop-only: hero image spacing + fourth top card title wrapping */
 @media screen and (min-width: 1025px) {
   .ellipseParent {
@@ -3373,7 +3254,6 @@
     white-space: normal !important;
   }
 }
-
 
 /* =========================================================
    MOBILE/TABLET ONLY:
@@ -3484,7 +3364,6 @@
   }
 }
 
-
 /* FINAL MOBILE/TABLET BENEFITS ALIGNMENT FIX */
 @media screen and (max-width: 1024px) {
   .frameParent34 {
@@ -3542,7 +3421,6 @@
     line-height: 1.3 !important;
   }
 }
-
 
 /* =========================================================
    EXPLORE PUBLIC LEARNING CTA
@@ -3829,7 +3707,6 @@
   }
 }
 
-
 /* =========================================================
    FINAL MOBILE CHALLENGE CARD OPEN STATE
    Answer opens BELOW the arrow and stays centered.
@@ -3959,7 +3836,6 @@
     gap: 24px !important;
   }
 }
-
 
 /* =========================================================
    ABSOLUTE FINAL MOBILE FIX
@@ -5568,8 +5444,6 @@ body:has(.governmentStateInstitution) * {
   cursor: default !important;
 }
 
-
-
 /* ==========================================================================
    FINAL — TOP FOUR FEATURE CARDS IN ONE ROW
    Desktop only:
@@ -5669,7 +5543,6 @@ body:has(.governmentStateInstitution) * {
     width: min(360px, calc(100% - 32px)) !important;
   }
 }
-
 
 /* ==========================================================================
    FINAL — KEY CHALLENGE TEXT + ARROW VISIBILITY ONLY
@@ -5785,7 +5658,6 @@ body:has(.governmentStateInstitution) * {
   }
 }
 
-
 /* ==========================================================================
    FINAL — FIRST KEY-CHALLENGE CARD OVERLAP SAFETY
    Only the first challenge card is adjusted.
@@ -5808,7 +5680,6 @@ body:has(.governmentStateInstitution) * {
     overflow: visible !important;
   }
 }
-
 
 /* ==========================================================================
    FINAL DROP-IN FIX — KEY CHALLENGE CARD ALIGNMENT
@@ -5923,7 +5794,6 @@ body:has(.governmentStateInstitution) * {
     overflow: visible !important;
   }
 }
-
 
 /* ==========================================================================
    FINAL — KEY CHALLENGE CARDS: TRUE CENTER ALIGNMENT
@@ -6041,7 +5911,6 @@ body:has(.governmentStateInstitution) * {
   }
 }
 
-
 /* ==========================================================================
    FINAL — MOVE ONLY "HOW NEUROLXP HELPS" + ARROW SLIGHTLY UP
    No other card content is changed.
@@ -6061,7 +5930,6 @@ body:has(.governmentStateInstitution) * {
     transform: translateY(-8px) !important;
   }
 }
-
 
 /* ==========================================================================
    FINAL CORRECTION — MOVE CTA + ARROW UP ONLY IN FIRST CHALLENGE CARD
@@ -6091,7 +5959,6 @@ body:has(.governmentStateInstitution) * {
     transform: translateY(-8px) !important;
   }
 }
-
 
 /* ==========================================================================
    FINAL — FIRST CHALLENGE CARD MATCHES SECOND CARD EXACTLY
@@ -6151,7 +6018,6 @@ body:has(.governmentStateInstitution) * {
     transform: none !important;
   }
 }
-
 
 /* ==========================================================================
    FINAL FIX — OPENED CHALLENGE DROPDOWN STAYS AT THE BOTTOM OF THE CARD
@@ -6632,5 +6498,47 @@ body:has(.governmentStateInstitution) * {
 
   .governmentStateInstitution .challengeGrid > .challengeCard:last-child:nth-child(odd) {
     width: 100% !important;
+  }
+}
+
+.neuroTrademark {
+  font-size: 10.8px;
+  line-height: 1;
+  position: relative;
+  top: -6px;
+  margin-left: 1px;
+  font-weight: 600;
+}
+
+/* =========================================================
+   TALK TO OUR EXPERT — BENEFITS FOR STATE GOVERNMENTS
+   Anchored in the empty right-side space without affecting
+   the existing section layout or alignment.
+   ========================================================= */
+
+.governmentStateInstitution .frameParent34 {
+  position: relative;
+}
+
+.governmentStateInstitution .governmentExpertButtonSlot {
+  position: absolute;
+  top: 42%;
+  right: 16px;
+  bottom: auto;
+  left: auto;
+  width: 64px;
+  height: 64px;
+  margin: 0;
+  padding: 0;
+  transform: translateY(-50%);
+  z-index: 20;
+  pointer-events: auto;
+}
+
+@media (max-width: 768px) {
+  .governmentStateInstitution .governmentExpertButtonSlot {
+    top: 190px;
+    right: 8px;
+    transform: none;
   }
 }
