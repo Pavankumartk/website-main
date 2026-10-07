@@ -1968,10 +1968,11 @@ const Assessments: NextPage = () => {
 
           <div className={styles.audienceHeader}>
 
-
-
-            <div className={styles.audienceSectionBadge}>Who Can Benefit From NeuroLXP?</div>
-
+<div className={styles.audienceSectionBadge}>
+  <span>Who Can Benefit From NeuroLXP</span>
+  <sup className={styles.neuroTrademark}>TM</sup>
+  <span>?</span>
+</div>
 
 
             <h2 id="audience-section-title" className={styles.audienceTitle}>
@@ -2182,7 +2183,7 @@ const Assessments: NextPage = () => {
 
 
 
-            <b className={styles.requestADemo}>Request a Demo</b>
+            <b className={styles.requestADemo}>Book a Demo</b>
 
 
 
