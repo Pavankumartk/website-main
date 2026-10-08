@@ -1,3 +1,4 @@
+
 "use client";
 
 import {
@@ -63,29 +64,32 @@ function ExpertLauncher() {
   }, [pathname]);
 
   /*
-   * Hide Talk to Our Expert on:
+   * Hide the global Talk to Our Expert button on:
    * - University
    * - BFSI
    * - Learning Community
    * - Assessments
    * - Mobile Learning
+   * - Interconnectivity
+   * - Customer Training
    *
-   * On Interconnectivity, the button is displayed
-   * inside the How It Works section.
+   * The button remains available on all other pages.
    */
- const hideExpertButton =
-  pathname === "/university" ||
-  pathname.startsWith("/university/") ||
-  pathname === "/bfsi" ||
-  pathname.startsWith("/bfsi/") ||
-  pathname === "/learning_community" ||
-  pathname.startsWith("/learning_community/") ||
-  pathname === "/assessments" ||
-  pathname.startsWith("/assessments/") ||
-  pathname === "/mobile-learning" ||
-  pathname.startsWith("/mobile-learning/") ||
-  pathname === "/interconnectivity" ||
-  pathname.startsWith("/interconnectivity/");
+  const hideExpertButton =
+    pathname === "/university" ||
+    pathname.startsWith("/university/") ||
+    pathname === "/bfsi" ||
+    pathname.startsWith("/bfsi/") ||
+    pathname === "/learning_community" ||
+    pathname.startsWith("/learning_community/") ||
+    pathname === "/assessments" ||
+    pathname.startsWith("/assessments/") ||
+    pathname === "/mobile-learning" ||
+    pathname.startsWith("/mobile-learning/") ||
+    pathname === "/interconnectivity" ||
+    pathname.startsWith("/interconnectivity/") ||
+    pathname === "/customer-training" ||
+    pathname.startsWith("/customer-training/");
 
   if (hideExpertButton) {
     return null;
