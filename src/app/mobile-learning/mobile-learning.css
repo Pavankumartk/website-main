@@ -7380,3 +7380,114 @@ button.limitsButton:active {
     padding-top: 16px !important;
   }
 }
+
+/* Mobile Learning: Expert launcher anchor on right; preserve existing card font sizes. */
+.mobileLearning .routinePanel { position: relative; }
+.mobileLearning .routineExpertSlot { position: absolute; right: 24px; top: 24px; z-index: 20; }
+@media (max-width: 767.98px) {
+  .mobileLearning .interactiveCardInner strong { white-space: nowrap !important; overflow-wrap: normal !important; word-break: normal !important; }
+  .mobileLearning .interactiveCardLineBreak { display: none !important; }
+  .mobileLearning .routineExpertSlot { right: 12px; top: 12px; }
+}
+
+/* Requested fixes only: Expert button at right of Flexible Learning Access. */
+.mobileLearning .routinePanel { position: relative; }
+.mobileLearning .routineExpertButton {
+  position: absolute !important;
+  top: 48px !important;
+  right: 48px !important;
+  left: auto !important;
+  z-index: 30 !important;
+  display: inline-flex !important;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+  min-height: 44px;
+  padding: 10px 18px;
+  border: 0;
+  border-radius: 24px;
+  background: #dfe6e9;
+  box-shadow: -4px -4px 4px #fff, 4px 4px 4px #c6c6c9;
+  color: #2d4cc8;
+  font: 600 16px 'Segoe UI', 'Inter', sans-serif;
+  cursor: pointer;
+}
+@media (max-width: 767.98px) {
+  /* Keep original card font size. Remove only the forced line breaks. */
+  .mobileLearning .interactiveCards .interactiveCardDesktopBreak { display: none !important; }
+  .mobileLearning .interactiveCards .interactiveCardInner strong {
+    white-space: nowrap !important;
+    overflow-wrap: normal !important;
+    word-break: normal !important;
+  }
+  .mobileLearning .routineExpertButton {
+    top: 12px !important;
+    right: 12px !important;
+    padding: 8px 12px;
+  }
+}
+
+/* Expert action: scoped to Flexible Learning Access only. */
+.mobileLearning .routinePanel .routineExpertAction {
+  position: absolute;
+  top: 48px;
+  right: 48px;
+  z-index: 50;
+  display: block;
+}
+.mobileLearning .routinePanel .routineExpertAction .routineExpertButton {
+  position: relative !important;
+  top: auto !important;
+  right: auto !important;
+  left: auto !important;
+  display: inline-flex !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  pointer-events: auto !important;
+}
+@media (max-width: 767.98px) {
+  .mobileLearning .routinePanel .routineExpertAction {
+    top: 12px;
+    right: 12px;
+  }
+}
+
+/* Mobile only: keep Expert action at the bottom of its own section. */
+@media (max-width: 767.98px) {
+  .mobileLearning .routinePanel {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+
+  .mobileLearning .routinePanel .routineExpertAction {
+    position: relative !important;
+    inset: auto !important;
+    order: 10 !important;
+    align-self: center !important;
+    margin: 24px 0 0 !important;
+    z-index: 2 !important;
+  }
+
+  .mobileLearning .routinePanel .routineExpertAction .routineExpertButton {
+    position: relative !important;
+    inset: auto !important;
+  }
+}
+@media (max-width: 767.98px) {
+  .mobileLearning .routineExpertAction {
+    transform: translateY(-14px);
+  }
+}
+
+.limitsTrademark {
+  display: inline-block;
+  font-size: 10.8px !important;
+  line-height: 6px !important;
+  font-weight: 600;
+  margin-left: 2px;
+  position: relative;
+  top: -6px;
+  color: #2D4CC8;
+  vertical-align: baseline;
+  white-space: nowrap;
+}
