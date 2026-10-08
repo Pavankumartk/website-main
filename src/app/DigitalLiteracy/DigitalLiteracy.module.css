@@ -185,7 +185,7 @@
 .nlxp-footer-heading-tm {
   display: inline-block !important;
   position: relative !important;
-  top: -0.72em !important;
+  top: -12 !important;
   vertical-align: baseline !important;
   margin-left: 1px !important;
   margin-right: 0 !important;
@@ -1978,21 +1978,7 @@
 
   }
 
-  .dl-check-pill-outer:hover {
 
-    box-shadow:
-
-      -4px -4px 4px #ffffff,
-
-      4px 4px 4px var(--pill-glow);
-
-  }
-
-  .dl-check-pill-outer:hover .dl-check-pill {
-
-    background: var(--pill-bg-hover);
-
-  }
 
   .dl-analytics-card:hover .dl-analytics-card-icon {
 
@@ -2032,19 +2018,7 @@
 
   }
 
-  .dl-bullet-item:hover .dl-bullet-arrow {
-
-    transform: translateX(8px);
-
-  }
-
-  .dl-bullet-item:hover .dl-bullet-underline line {
-
-    stroke-dashoffset: 1;
-
-  }
-
-  .dl-callout-card:hover::before,
+.dl-callout-card:hover::before,
 
   .dl-callout-card:hover::after {
 
@@ -4230,23 +4204,7 @@ html:has(.digital-literacy) :is(svg text, svg tspan) {
 
 .digital-literacy .dl-check-icon-arrow { display: none; }
 
-@media (hover: hover) and (pointer: fine) {
 
-  .digital-literacy .dl-check-pill-outer:hover {
-
-    box-shadow: -4px -4px 4px #ffffff,
-
-      4px 4px 4px var(--pill-glow, #c6c6c9);
-
-  }
-
-  .digital-literacy .dl-check-pill-outer:hover .dl-check-pill {
-
-    background: var(--pill-bg-hover, var(--pill-bg));
-
-  }
-
-}
 
 @media (max-width: 767px) {
 
@@ -4697,3 +4655,4 @@ html:has(.digital-literacy) :is(svg text, svg tspan) {
   }
 
 }
+
