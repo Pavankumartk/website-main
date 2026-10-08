@@ -3516,3 +3516,79 @@
     height: 200px;
   }
 }
+
+.neuroBadgeTM {
+  display: inline-block;
+  font-size: 10.8px !important;
+  line-height: 6px !important;
+  font-weight: 600;
+  margin-left: 2px;
+  position: relative;
+  top: -12px;
+  color: #2D4CC8;
+  vertical-align: baseline;
+  white-space: nowrap;
+}
+
+/* Keep the five practical-idea labels steady on hover. */
+.frameWrapper7:hover,
+.frameWrapper8:hover {
+  transform: none;
+}
+.frameWrapper7:hover .target02Icon,
+.frameWrapper8:hover .target02Icon {
+  animation: none;
+}
+
+/* Place the existing global expert launcher at the right of the NeuroLXP section. */
+.blogsInner .frameParent21 {
+  position: relative;
+}
+.expertButtonSlot {
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 5;
+}
+
+
+/* Prevent the five practical-idea labels and icons from shifting on hover. */
+.blogs .frameWrapper7,
+.blogs .frameWrapper8,
+.blogs .target02Parent,
+.blogs .monitorParent,
+.blogs .refresh03Parent,
+.blogs .trendingDownParent,
+.blogs .chartUpParent,
+.blogs .frameWrapper7 .target02Icon,
+.blogs .frameWrapper8 .target02Icon {
+  transform: none !important;
+  transition: none !important;
+  animation: none !important;
+}
+.blogs .frameWrapper7:hover,
+.blogs .frameWrapper8:hover,
+.blogs .frameWrapper7:hover .target02Icon,
+.blogs .frameWrapper8:hover .target02Icon {
+  transform: none !important;
+  animation: none !important;
+}
+.blogs .frameWrapper7::after,
+.blogs .frameWrapper8::after {
+  display: none !important;
+}
+
+/* Anchor the existing expert launcher to the NeuroLXP section without reflow. */
+.blogsInner .frameParent21 { position: relative; }
+.expertButtonSlot {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
