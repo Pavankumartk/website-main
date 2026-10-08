@@ -3537,3 +3537,76 @@
 
 .accessibilityInclusivity .inclusiveArrow,
 .accessibilityInclusivity .inclusiveItem span { transform: none; }
+
+
+/* Expert launcher slot: NeuroLXP closing section only */
+.accessibilityInclusivity .frameParent31 {
+  position: relative;
+}
+
+.accessibilityInclusivity .accessibilityExpertButtonSlot {
+  top:30%;
+  position: absolute;
+  right: 24px;
+  bottom: 16px;
+  z-index: 2;
+}
+
+@media (max-width: 767px) {
+  .accessibilityInclusivity .accessibilityExpertButtonSlot {
+    top:0px;
+    right: 12px;
+    bottom: 8px;
+  }
+}
+
+/* Mobile only: keep each Accessible Learning card label on one line. */
+@media (max-width: 767px) {
+  .accessibilityInclusivity .frameParent6 .easyNavigation,
+  .accessibilityInclusivity .frameParent6 .multiFormatLearning,
+  .accessibilityInclusivity .frameParent6 .unlimitedAssessments {
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    width: 100% !important;
+    max-width: none !important;
+    gap: 0.3em;
+    white-space: nowrap !important;
+    font-size: clamp(14px, 4vw, 20px) !important;
+  }
+  .accessibilityInclusivity .frameParent6 .easyNavigationWrapper,
+  .accessibilityInclusivity .frameParent6 .compassParent > :last-child {
+    width: 100% !important;
+    max-width: none !important;
+  }
+  .accessibilityInclusivity .frameParent6 .easyNavigation > span,
+  .accessibilityInclusivity .frameParent6 .multiFormatLearning > span,
+  .accessibilityInclusivity .frameParent6 .unlimitedAssessments > span {
+    display: inline !important;
+    white-space: nowrap !important;
+    overflow-wrap: normal !important;
+  }
+}
+
+/* Mobile only: a little more space between Flexible Learning Format cards. */
+@media (max-width: 767px) {
+  .accessibilityInclusivity .frameParent11 .frameParent14,
+  .accessibilityInclusivity .frameParent11 .frameParent19 {
+    gap: 24px !important;
+  }
+  .accessibilityInclusivity .frameParent11 .frameParent13 {
+    gap: 24px !important;
+  }
+}
+
+.neurolxpTrademark {
+  display: inline-block;
+  font-size: 10.8px !important;
+  line-height: 6px !important;
+  font-weight: 600;
+  margin-left: 2px;
+  position: relative;
+  top: -1px;
+  color: #2D4CC8;
+  vertical-align: baseline;
+  white-space: nowrap;
+}
