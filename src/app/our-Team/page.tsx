@@ -1,2886 +1,594 @@
-.team-page {
+import Image from "next/image";
 
-  --team-bg: #dfe6e9;
+import Header from "../../components/Header/header";
 
-  --team-primary: #2d4cc8;
+import Footer from "../../components/Footer/footer";
 
-  --team-primary-dark: #243fa8;
+import "./our-team.css";
 
-  --team-dark: #31344b;
+type IconName =
 
-  --team-text: #2f3547;
+  | "chevronDouble"
 
-  --team-raised: -8px -8px 16px #ffffff, 8px 8px 16px #c6c6c9;
+  | "linkedin"
 
-  --team-raised-strong: 10px 10px 20px #c4c4c4, -10px -10px 20px #ffffff;
+  | "mortarboard"
 
-  --team-inset: -4px -4px 8px #ffffff, 4px 4px 8px rgba(196, 196, 196, 0.8);
+  | "laptop"
 
-  --team-inset-deep: inset -8px -8px 16px #ffffff, inset 8px 8px 16px rgba(196, 196, 196, 0.8);
+  | "sparkles"
 
-  background: var(--team-bg);
+  | "chart"
 
-  color: var(--team-dark);
+  | "handshake"
 
-  font-family:
+  | "goal";
 
-    "Segoe UI",
+function Icon({ name, color = "currentColor" }: { name: IconName; color?: string }) {
 
-    -apple-system,
+  const stroke = color;
 
-    BlinkMacSystemFont,
+  switch (name) {
 
-    sans-serif;
+    case "chevronDouble":
 
-  overflow-x: hidden;
+      return (
 
-}
-
-.team-page * {
-
-  box-sizing: border-box;
-
-}
-
-.team-page a {
-
-  color: inherit;
-
-  text-decoration: none;
-
-}
-
-.team-page a:focus-visible,
-
-.team-page button:focus-visible {
-
-  outline: 2px solid var(--team-primary);
-
-  outline-offset: 2px;
-
-}
-
-@media (prefers-reduced-motion: reduce) {
-
-  .team-page * {
-
-    transition: none !important;
-
-    animation: none !important;
-
-  }
-
-}
-
-.team-breadcrumb {
-
-  max-width: 1440px;
-
-  margin: 0 auto;
-
-  padding: 20px 24px 0;
-
-}
-
-.team-breadcrumb ol {
-
-  display: flex;
-
-  align-items: center;
-
-  gap: 8px;
-
-  list-style: none;
-
-  margin: 0;
-
-  padding: 0;
-
-  font-size: 14px;
-
-  line-height: 22px;
-
-  letter-spacing: 0.02em;
-
-  color: var(--team-text);
-
-  flex-wrap: wrap;
-
-}
-
-.team-breadcrumb li[aria-current="page"] {
-
-  font-weight: 700;
-
-  color: var(--team-primary-dark);
-
-}
-
-.team-breadcrumb-sep {
-
-  display: flex;
-
-  align-items: center;
-
-}
-
-.team-hero {
-
-  max-width: 900px;
-
-  margin: 0 auto;
-
-  padding: 40px 24px 0;
-
-  text-align: center;
-
-}
-
-.team-eyebrow {
-
-  display: inline-flex;
-
-  align-items: center;
-
-  justify-content: center;
-
-  padding: 8px 24px;
-
-  border-radius: 28px;
-
-  background: var(--team-bg);
-
-  box-shadow: var(--team-inset);
-
-  color: var(--team-primary);
-
-  font-weight: 600;
-
-  font-size: 16px;
-
-  line-height: 24px;
-
-  letter-spacing: 0.03em;
-
-  text-transform: capitalize;
-
-}
-
-.team-hero-title {
-
-  margin: 12px 0 0;
-
-  font-size: 24px;
-
-  font-weight: 700;
-
-  line-height: 32px;
-
-  letter-spacing: 0.03em;
-
-  color: var(--team-dark);
-
-}
-
-.team-hero-desc {
-
-  margin: 12px 0 0;
-
-  font-size: 16px;
-
-  font-weight: 400;
-
-  line-height: 24px;
-
-  letter-spacing: 0.03em;
-
-  color: var(--team-text);
-
-}
-
-.team-hero-pills {
-
-  display: flex;
-
-  flex-wrap: wrap;
-
-  justify-content: center;
-
-  gap: 16px;
-
-  margin-top: 24px;
-
-}
-
-.team-hero-pill {
-
-  display: inline-flex;
-
-  align-items: center;
-
-  justify-content: center;
-
-  min-width: 140px;
-
-  height: 56px;
-
-  padding: 0 28px;
-
-  background: var(--team-bg);
-
-  border-width: 0 4px;
-
-  border-style: solid;
-
-  border-radius: 200px;
-
-  box-shadow: var(--team-raised);
-
-  font-weight: 700;
-
-  font-size: 16px;
-
-  line-height: 24px;
-
-  letter-spacing: 0.03em;
-
-  color: var(--team-dark);
-
-}
-
-.team-founder {
-
-  max-width: 1280px;
-
-  margin: 48px auto 0;
-
-  padding: 0 24px;
-
-  display: flex;
-
-  flex-direction: column;
-
-  gap: 32px;
-
-}
-
-.team-founder-photo {
-
-  position: relative;
-
-  width: 100%;
-
-  aspect-ratio: 608 / 603;
-
-  border-radius: 24px;
-
-  overflow: hidden;
-
-  background: #ffffff;
-
-}
-
-.team-founder-photo img {
-
-  object-fit: cover;
-
-}
-
-.team-founder-content {
-
-  display: flex;
-
-  flex-direction: column;
-
-  align-items: flex-start;
-
-  gap: 16px;
-
-}
-
-.team-eyebrow--inline {
-
-  text-transform: none;
-
-}
-
-.team-founder-name {
-
-  margin: 0;
-
-  font-size: 32px;
-
-  font-weight: 700;
-
-  line-height: 38px;
-
-  letter-spacing: 0.03em;
-
-  color: var(--team-dark);
-
-}
-
-.team-founder-role {
-
-  margin: 0;
-
-  font-size: 20px;
-
-  font-weight: 700;
-
-  line-height: 28px;
-
-  letter-spacing: 0.03em;
-
-  color: var(--team-primary);
-
-}
-
-.team-founder-tagline {
-
-  margin: 0;
-
-  font-size: 20px;
-
-  font-weight: 700;
-
-  line-height: 28px;
-
-  letter-spacing: 0.03em;
-
-  color: var(--team-text);
-
-}
-
-.team-founder-desc {
-
-  margin: 0;
-
-  font-size: 16px;
-
-  font-weight: 400;
-
-  line-height: 24px;
-
-  letter-spacing: 0.03em;
-
-  color: var(--team-text);
-
-}
-
-.team-linkedin-btn {
-
-  display: inline-flex;
-
-  align-items: center;
-
-  gap: 12px;
-
-  margin-top: 8px;
-
-  padding: 14px 24px;
-
-  background: var(--team-bg);
-
-  border-radius: 32px;
-
-  box-shadow: var(--team-raised);
-
-  font-weight: 600;
-
-  font-size: 16px;
-
-  line-height: 24px;
-
-  color: var(--team-primary);
-
-  transition:
-
-    transform 0.2s ease,
-
-    box-shadow 0.2s ease;
-
-    border: none;
-
-}
-
-.team-linkedin-btn:hover {
-
-  transform: translateY(-2px);
-
-  box-shadow:
-
-    -10px -10px 18px #ffffff,
-
-    10px 10px 18px #c6c6c9;
-
-}
-
-.team-values {
-
-  max-width: 1280px;
-
-  margin: 48px auto 0;
-
-  padding: 0 24px;
-
-  display: grid;
-
-  grid-template-columns: 1fr;
-
-  gap: 16px;
-
-}
-
-/* ==========================================================
-
-   VALUE CARD - REFERENCE NEUMORPHIC BORDER STYLE
-
-   \========================================================== */
-
-.team-value-card {
-
-    background: var(--team-bg);
-
-    border-radius: 28px;
-
-    /* remove normal border */
-
-    border: none;
-
-    /* outer raised card */
-
-    box-shadow:
-
-        10px 10px 22px rgba(190,190,194,0.75),
-
-        -10px -10px 22px rgba(255,255,255,0.95),
-
-        inset 0 0 0 14px rgba(255,255,255,0.55);
-
-    padding: 38px 30px;
-
-    min-height: 190px;
-
-    display:flex;
-
-    flex-direction:column;
-
-    justify-content:center;
-
-    align-items:center;
-
-    text-align:center;
-
-    position:relative;
-
-    overflow:hidden;
-
-}
-
-/* inner surface effect */
-
-.team-value-card::before {
-
-    content:"";
-
-    position:absolute;
-
-    inset:14px;
-
-    border-radius:18px;
-
-    background:var(--team-bg);
-
-    box-shadow:
-
-        inset 6px 6px 12px rgba(190,190,194,0.35),
-
-        inset -6px -6px 12px rgba(255,255,255,0.85);
-
-    z-index:0;
-
-}
-
-/* keep text above inner layer */
-
-.team-value-card h3,
-
-.team-value-card p {
-
-    position:relative;
-
-    z-index:1;
-
-}
-
-/* Heading */
-
-.team-value-title {
-
-    font-family:
-
-        "Segoe UI",
-
-        "Inter",
-
-        sans-serif;
-
-    font-size:24px;
-
-    line-height:32px;
-
-    font-weight:700;
-
-    text-align:center;
-
-}
-
-/* Description */
-
-.team-value-desc {
-
-    font-family:
-
-        "Segoe UI",
-
-        "Inter",
-
-        sans-serif;
-
-    font-size:20px;
-
-    line-height:28px;
-
-    text-align:center;
-
-}
-
-/* Mobile */
-
-@media(max-width:767px){
-
-    .team-value-card {
-
-        min-height:150px;
-
-        padding:30px 20px;
-
-        border-radius:24px;
-
-    }
-
-    .team-value-card::before {
-
-        inset:12px;
-
-        border-radius:16px;
-
-    }
-
-    .team-value-title {
-
-        font-size:18px;
-
-        line-height:26px;
-
-    }
-
-    .team-value-desc {
-
-        font-size:14px;
-
-        line-height:22px;
-
-    }
-
-}
-
-.team-value-title {
-
-  margin: 0;
-
-  font-size: 18px;
-
-  font-weight: 700;
-
-  line-height: 26px;
-
-  letter-spacing: 0.03em;
-
-  color: var(--team-primary);
-
-}
-
-.team-value-desc {
-
-  margin: 0;
-
-  font-size: 14px;
-
-  font-weight: 400;
-
-  line-height: 22px;
-
-  letter-spacing: 0.03em;
-
-  color: var(--team-text);
-
-}
-
-/* ==========================================================
-
-   GROUP IMAGE FRAME - REDUCED HEIGHT
-
-   \========================================================== */
-
-.team-group-photo {
-
-  max-width: 1280px;
-
-  margin: 48px auto 0;
-
-  padding: 0 24px;
-
-}
-
-.team-group-photo-frame {
-
-  position: relative;
-
-  width: 100%;
-
-  height: 420px;
-
-  border-radius: 32px;
-
-  background: var(--team-bg);
-
-  box-shadow: var(--team-inset-deep);
-
-  overflow: hidden;
-
-}
-
-.team-group-photo-inner {
-
-  position: absolute;
-
-  inset: 16px;
-
-  border-radius: 16px;
-
-  overflow: hidden;
-
-  box-shadow: var(--team-raised-strong);
-
-}
-
-.team-group-photo-inner img {
-
-  width:100%;
-
-  height:100%;
-
-  object-fit:cover;
-
-}
-
-.team-section-title {
-
-  margin: 0 auto;
-
-  max-width: 900px;
-
-  text-align: center;
-
-  font-size: 24px;
-
-  font-weight: 700;
-
-  line-height: 32px;
-
-  letter-spacing: 0.03em;
-
-  text-transform: capitalize;
-
-  color: var(--team-dark);
-
-}
-
-.team-grid-section {
-
-  max-width: 1280px;
-
-  margin: 48px auto 0;
-
-  padding: 0 24px;
-
-}
-
-.team-grid {
-
-  margin-top: 24px;
-
-  display: grid;
-
-  grid-template-columns: 1fr;
-
-  gap: 16px;
-
-}
-
-.team-card {
-
-  background: var(--team-bg);
-
-  border-radius: 16px;
-
-  box-shadow: var(--team-raised-strong);
-
-  padding: 24px;
-
-  display: flex;
-
-  flex-direction: column;
-
-  align-items: center;
-
-  text-align: center;
-
-  gap: 8px;
-
-}
-
-.team-avatar {
-
-  position: relative;
-
-  width: 110px;
-
-  height: 110px;
-
-  border-radius: 50%;
-
-  overflow: hidden;
-
-  background: var(--team-bg);
-
-  box-shadow: var(--team-inset);
-
-  margin-bottom: 8px;
-
-}
-
-.team-avatar img {
-
-  object-fit: cover;
-
-}
-
-.team-card-name {
-
-  margin: 0;
-
-  font-size: 18px;
-
-  font-weight: 700;
-
-  line-height: 26px;
-
-  letter-spacing: 0.03em;
-
-  color: var(--team-primary);
-
-}
-
-.team-card-role {
-
-  margin: 0;
-
-  font-size: 16px;
-
-  font-weight: 600;
-
-  line-height: 24px;
-
-  letter-spacing: 0.03em;
-
-  color: var(--team-dark);
-
-}
-
-.team-card-blurb {
-
-  margin: 0;
-
-  font-size: 14px;
-
-  font-weight: 400;
-
-  line-height: 22px;
-
-  letter-spacing: 0.03em;
-
-  color: var(--team-text);
-
-}
-
-.team-bring {
-
-  max-width: 1180px;
-
-  margin: 48px auto 0;
-
-  padding: 0 24px;
-
-  justify-self: center;
-
-}
-
-.team-bring-grid {
-
-  margin-top: 24px;
-
-  display: grid;
-
-  grid-template-columns: 1fr;
-
-  gap: 24px;
-
-}
-
-.team-bring-item {
-
-  display: flex;
-
-  align-items: flex-start;
-
-  gap: 16px;
-
-}
-
-.team-bring-icon {
-
-  flex: none;
-
-  width: 56px;
-
-  height: 56px;
-
-  border-radius: 50%;
-
-  display: flex;
-
-  align-items: center;
-
-  justify-content: center;
-
-  background: var(--team-bg);
-
-  box-shadow: var(--team-inset);
-
-}
-
-.team-bring-icon svg {
-
-  width: 26px;
-
-  height: 26px;
-
-}
-
-.team-bring-copy h3 {
-
-  margin: 0 0 8px;
-
-  font-size: 18px;
-
-  font-weight: 700;
-
-  line-height: 26px;
-
-  letter-spacing: 0.03em;
-
-}
-
-.team-bring-copy p {
-
-  margin: 0;
-
-  font-size: 16px;
-
-  font-weight: 400;
-
-  line-height: 24px;
-
-  letter-spacing: 0.03em;
-
-  color: var(--team-dark);
-
-}
-
-.team-how {
-
-  max-width: 900px;
-
-  margin: 48px auto 0;
-
-  padding: 0 24px 48px;
-
-  justify-self: center;
-
-}
-
-.team-how-grid {
-
-  margin-top: 50px;
-
-  display: grid;
-
-  grid-template-columns: 1fr;
-
-  gap: 60px;
-
-}
-
-.team-how-card {
-
-  background: var(--team-bg);
-
-  box-shadow: var(--team-inset);
-
-  text-align: center;
-
-  border-radius: 24px 24px 100px 100px;
-
-  padding: 40px 24px 20px;
-
-  position: relative;
-
-  width: 330px;
-
-  height: 132px;
-
-}
-
-.team-how-icon {
-
-  position: absolute;
-
-  top: -28px;
-
-  left: 50%;
-
-  transform: translateX(-50%);
-
-  width: 56px;
-
-  height: 56px;
-
-  border-radius: 50%;
-
-  display: flex;
-
-  align-items: center;
-
-  justify-content: center;
-
-  background: #dfe6e9;
-
-  box-shadow: var(--team-raised-strong);
-
-  border: 2px solid;
-
-}
-
-.team-how-icon svg {
-
-  width: 26px;
-
-  height: 26px;
-
-}
-
-.team-how-card h3 {
-
-  margin: 0 0 8px;
-
-  font-size: 18px;
-
-  font-weight: 700;
-
-  line-height: 26px;
-
-  letter-spacing: 0.03em;
-
-}
-
-.team-how-card p {
-
-  margin: 0;
-
-  font-size: 14px;
-
-  font-weight: 600;
-
-  line-height: 22px;
-
-  letter-spacing: 0.03em;
-
-  color: var(--team-dark);
-
-}
-
-@media (min-width: 768px) {
-
-  .team-hero {
-
-    max-width: 700px;
-
-    padding-top: 56px;
-
-  }
-
-  .team-hero-title {
-
-    font-size: 36px;
-
-    line-height: 44px;
-
-  }
-
-  .team-hero-desc {
-
-    font-size: 24px;
-
-    line-height: 32px;
-
-  }
-
-  .team-founder {
-
-    flex-direction: row;
-
-    align-items: center;
-
-    margin-top: 64px;
-
-  }
-
-  .team-founder-photo {
-
-    flex: 0 0 45%;
-
-  }
-
-  .team-founder-content {
-
-    flex: 1;
-
-  }
-
-  .team-founder-name {
-
-    font-size: 40px;
-
-    line-height: 46px;
-
-  }
-
-  .team-grid {
-
-    grid-template-columns: repeat(2, 1fr);
-
-  }
-
-  .team-bring-grid {
-
-    grid-template-columns: repeat(2, 1fr);
-
-    gap: 40px;
-
-  }
-
-  .team-how-grid {
-
-    grid-template-columns: repeat(2, 1fr);
-
-  }
-
-  .team-section-title {
-
-    font-size: 24px;
-
-    line-height: 44px;
-
-  }
-
-}
-
-@media (min-width: 1024px) {
-
-  .team-founder-photo {
-
-    flex: 0 0 460px;
-
-  }
-
-  .team-hero {
-
-    max-width: 900px;
-
-  }
-
-  .team-values {
-
-    grid-template-columns: repeat(3, 1fr);
-
-  }
-
-  .team-grid {
-
-    grid-template-columns: repeat(3, 1fr);
-
-  }
-
-}
-
-@media (min-width: 1280px) {
-
-  .team-hero {
-
-    max-width: 1052px;
-
-    padding-top: 64px;
-
-  }
-
-  .team-eyebrow {
-
-    font-size: 24px;
-
-    line-height: 32px;
-
-    padding: 12px 32px;
-
-  }
-
-  .team-hero-pills {
-
-    gap: 32px;
-
-    margin-top: 32px;
-
-  }
-
-  .team-hero-pill {
-
-    width: 300px;
-
-    height: 90px;
-
-  }
-
-  .team-founder-photo {
-
-    flex: 0 0 608px;
-
-  }
-
-  .team-founder-name {
-
-    font-size: 48px;
-
-    line-height: 50px;
-
-  }
-
-  .team-founder-role,
-
-  .team-founder-tagline {
-
-    font-size: 28px;
-
-    line-height: 40px;
-
-  }
-
-  .team-founder-desc {
-
-    font-size: 24px;
-
-    line-height: 32px;
-
-  }
-
-  .team-linkedin-btn {
-
-    padding: 16px 32px;
-
-    font-size: 24px;
-
-    line-height: 32px;
-
-  }
-
-  .team-values {
-
-    gap: 32px;
-
-  }
-
-  .team-value-title {
-
-    font-size: 24px;
-
-    line-height: 32px;
-
-  }
-
-  .team-value-desc {
-
-    font-size: 20px;
-
-    line-height: 28px;
-
-  }
-
-  .team-section-title {
-
-    font-size: 36px;
-
-    line-height: 70px;
-
-  }
-
-  .team-how .team-section-title {
-
-    font-size: 36px;
-
-    line-height: 74px;
-
-  }
-
-  .team-grid {
-
-    grid-template-columns: repeat(3, 1fr);
-
-    gap: 32px;
-
-  }
-
-  .team-avatar {
-
-    width: 147px;
-
-    height: 147px;
-
-  }
-
-  .team-card-name,
-
-  .team-card-blurb {
-
-    font-size: 20px;
-
-    line-height: 28px;
-
-  }
-
-  .team-card-role {
-
-    font-size: 18px;
-
-    line-height: 26px;
-
-  }
-
-  .team-bring-item h3 {
-
-    font-size: 24px;
-
-    line-height: 36px;
-
-  }
-
-  .team-bring-item p {
-
-    font-size: 20px;
-
-    line-height: 28px;
-
-  }
-
-  .team-how-card h3 {
-
-    font-size: 28px;
-
-    line-height: 42px;
-
-  }
-
-  .team-how-card p {
-
-    font-size: 20px;
-
-    line-height: 28px;
-
-  }
-
-}
-
-@media (min-width: 1440px) {
-
-  .team-breadcrumb,
-
-  .team-founder,
-
-  .team-values,
-
-  .team-group-photo,
-
-  .team-grid-section,
-
-  .team-bring,
-
-  .team-how {
-
-    padding-left: 80px;
-
-    padding-right: 80px;
-
-  }
-
-}
-
-@media (min-width: 2560px) {
-
-  .team-page {
-
-    font-size: 1.15em;
-
-  }
-
-}
-
-/* Value cards - no image layout */
-
-.team-value-title {
-
-  margin: 0;
-
-  font-family: "Segoe UI", "Inter", sans-serif;
-
-  font-size: 24px;
-
-  line-height: 32px;
-
-  font-weight: 700;
-
-  letter-spacing: 0.03em;
-
-  color: var(--team-primary);
-
-}
-
-.team-value-desc {
-
-  margin: 0;
-
-  font-family: "Segoe UI", "Inter", sans-serif;
-
-  font-size: 20px;
-
-  line-height: 28px;
-
-  font-weight: 400;
-
-  letter-spacing: 0.03em;
-
-  color: var(--team-text);
-
-}
-
-@media(max-width:767px){
-
-  .team-values{
-
-    grid-template-columns:1fr;
-
-    gap:16px;
-
-    padding:0 20px;
-
-  }
-
-  .team-value-card{
-
-    min-height:120px;
-
-    padding:20px;
-
-    border-radius:20px;
-
-  }
-
-  .team-value-title{
-
-    font-size:18px;
-
-    line-height:26px;
-
-  }
-
-  .team-value-desc{
-
-    font-size:14px;
-
-    line-height:22px;
-
-  }
-
-}
-
-/* ==========================================================
-
-   VALUE CARDS - CENTER ALIGN + REFERENCE BORDER STYLE
-
-   \========================================================== */
-
-.team-values {
-
-  display: grid;
-
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-
-  justify-content: center;
-
-  align-items: center;
-
-  gap: 28px;
-
-}
-
-.team-value-card {
-
-  background: var(--team-bg);
-
-  border-radius: 26px;
-
-  /* reference neumorphic raised border */
-
-  border: 1px solid rgba(255,255,255,0.75);
-
-  box-shadow:
-
-    8px 8px 18px rgba(198,198,201,0.65),
-
-    -8px -8px 18px rgba(255,255,255,0.95);
-
-  padding: 28px 24px;
-
-  min-height: 150px;
-
-  display:flex;
-
-  flex-direction:column;
-
-  justify-content:center;
-
-  align-items:center;
-
-  text-align:center;
-
-  gap:10px;
-
-}
-
-/* Heading center */
-
-.team-value-title {
-
-  width:100%;
-
-  margin:0;
-
-  text-align:center;
-
-  font-family:"Segoe UI","Inter",sans-serif;
-
-  font-size:24px;
-
-  line-height:1.3;
-
-  font-weight:700;
-
-}
-
-/* Description center */
-
-.team-value-desc {
-
-  width:100%;
-
-  margin:0;
-
-  text-align:center;
-
-  font-family:"Segoe UI","Inter",sans-serif;
-
-  font-size:20px;
-
-  line-height:1.4;
-
-}
-
-/* Tablet */
-
-@media(max-width:1024px){
-
-  .team-values{
-
-    grid-template-columns:repeat(2,minmax(0,1fr));
-
-    gap:24px;
-
-  }
-
-}
-
-/* Mobile */
-
-@media(max-width:767px){
-
-  .team-values{
-
-    grid-template-columns:1fr;
-
-    gap:18px;
-
-    padding-inline:20px;
-
-  }
-
-  .team-value-card{
-
-    min-height:130px;
-
-    padding:22px 18px;
-
-    border-radius:22px;
-
-  }
-
-  .team-value-title{
-
-    font-size:18px;
-
-    line-height:26px;
-
-  }
-
-  .team-value-desc{
-
-    font-size:14px;
-
-    line-height:22px;
-
-  }
-
-}
-
-/* ==========================================================
-
-   FINAL VALUE CARD - REFERENCE INNER SHADOW BORDER
-
-   Overrides previous value card styles
-
-   \========================================================== */
-
-.team-value-card {
-
-  background: var(--team-bg);
-
-  border: none;
-
-  border-radius: 28px;
-
-  position: relative;
-
-  overflow: hidden;
-
-  padding: 38px 30px;
-
-  min-height: 190px;
-
-  display: flex;
-
-  flex-direction: column;
-
-  justify-content: center;
-
-  align-items: center;
-
-  text-align: center;
-
-  box-shadow:
-
-    10px 10px 22px rgba(196,196,196,0.45),
-
-    -10px -10px 22px rgba(255,255,255,0.95);
-
-}
-
-/* Inner recessed border only */
-
-.team-value-card::before {
-
-  content: "";
-
-  position: absolute;
-
-  inset: 14px;
-
-  border-radius: 20px;
-
-  background: var(--team-bg);
-
-  box-shadow:
-
-    inset 6px 6px 14px rgba(196,196,196,0.55),
-
-    inset -6px -6px 14px rgba(255,255,255,0.95);
-
-  z-index: 0;
-
-}
-
-.team-value-card h3,
-
-.team-value-card p {
-
-  position: relative;
-
-  z-index: 1;
-
-}
-
-/* Keep typography */
-
-.team-value-title {
-
-  margin: 0 0 14px;
-
-  font-family:
-
-    "Segoe UI",
-
-    "Inter",
-
-    sans-serif;
-
-  font-size: 24px;
-
-  line-height: 32px;
-
-  font-weight: 700;
-
-  text-align: center;
-
-  color: var(--team-primary);
-
-}
-
-.team-value-desc {
-
-  margin: 0;
-
-  font-family:
-
-    "Segoe UI",
-
-    "Inter",
-
-    sans-serif;
-
-  font-size: 20px;
-
-  line-height: 28px;
-
-  font-weight: 400;
-
-  text-align: center;
-
-  color: var(--team-text);
-
-}
-
-@media(max-width:767px){
-
-  .team-value-card {
-
-    min-height:150px;
-
-    padding:28px 20px;
-
-    border-radius:24px;
-
-  }
-
-  .team-value-card::before {
-
-    inset:12px;
-
-    border-radius:18px;
-
-  }
-
-  .team-value-title {
-
-    font-size:18px;
-
-    line-height:26px;
-
-  }
-
-  .team-value-desc {
-
-    font-size:14px;
-
-    line-height:22px;
-
-  }
-
-}
-
-/* ==========================================================
-
-   FOUNDER SECTION - TABLET & MOBILE ORDER FIX
-
-   Order:
-
-   Label
-
-   Image
-
-   Name
-
-   Role
-
-   Tagline
-
-   Description
-
-   Button
-
-   \========================================================== */
-
-@media (max-width:1024px){
-
-  .team-founder{
-
-    display:flex;
-
-    flex-direction:column;
-
-    align-items:center;
-
-    gap:28px;
-
-    padding:0 24px;
-
-  }
-
-  /*
-
-     Make content children participate
-
-     in parent ordering
-
-  */
-
-  .team-founder-content{
-
-    display:contents;
-
-  }
-
-  /* 1. Label */
-
-  .team-eyebrow--inline{
-
-    order:1;
-
-    align-self:center;
-
-    margin-bottom:4px;
-
-  }
-
-  /* 2. Image */
-
-  .team-founder-photo{
-
-    order:2;
-
-    width:100%;
-
-    max-width:520px;
-
-    aspect-ratio:1 / 1;
-
-  }
-
-  /* 3. Name */
-
-  .team-founder-name{
-
-    order:3;
-
-    width:100%;
-
-    text-align:center;
-
-  }
-
-  /* 4. Role */
-
-  .team-founder-role{
-
-    order:4;
-
-    width:100%;
-
-    text-align:center;
-
-  }
-
-  /* 5. Tagline */
-
-  .team-founder-tagline{
-
-    order:5;
-
-    width:100%;
-
-    text-align:center;
-
-  }
-
-  /* 6. Description */
-
-  .team-founder-desc{
-
-    order:6;
-
-    width:100%;
-
-    text-align:center;
-
-  }
-
-  /* 7. Button */
-
-  .team-linkedin-btn{
-
-    order:7;
-
-    align-self:center;
-
-  }
-
-}
-
-/* ==========================================================
-
-   MOBILE SPECIFIC
-
-   \========================================================== */
-
-@media(max-width:767px){
-
-  .team-founder{
-
-    padding:0 20px;
-
-    gap:22px;
-
-    margin-top:32px;
-
-  }
-
-  .team-eyebrow--inline{
-
-    font-size:18px;
-
-    line-height:26px;
-
-    padding:10px 24px;
-
-  }
-
-  .team-founder-photo{
-
-    width:100%;
-
-    max-width:360px;
-
-    aspect-ratio:1 / 1;
-
-    border-radius:24px;
-
-  }
-
-  .team-founder-name{
-
-    font-size:32px;
-
-    line-height:40px;
-
-  }
-
-  .team-founder-role{
-
-    font-size:20px;
-
-    line-height:28px;
-
-  }
-
-  .team-founder-tagline{
-
-    font-size:20px;
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
 
-    line-height:28px;
+          <path d="M4 3L8 8L4 13" stroke={stroke} strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
 
-  }
-
-  .team-founder-desc{
-
-    font-size:16px;
-
-    line-height:26px;
-
-  }
-
-  .team-linkedin-btn{
-
-    font-size:18px;
-
-    padding:14px 28px;
-
-  }
-
-}
-
-/* ==========================================================
-
-   LINKEDIN BUTTON - CLEAN HOVER IN / OUT EFFECT
-
-   SINGLE VERSION ONLY
-
-   \========================================================== */
-
-.team-linkedin-btn {
-
-  display: inline-flex;
-
-  align-items: center;
-
-  justify-content: center;
-
-  gap: 12px;
-
-  margin-top: 8px;
-
-  padding: 16px 32px;
-
-  background: var(--team-bg);
-
-  border: none;
-
-  border-radius: 32px;
-
-  cursor: pointer;
-
-  font-family:
-
-    "Segoe UI",
-
-    "Inter",
-
-    sans-serif;
-
-  font-size: 24px;
-
-  line-height: 32px;
-
-  font-weight: 600;
-
-  color: var(--team-primary);
-
-  /* Normal OUT / Raised state */
-
-  box-shadow:
-
-    -8px -8px 16px #ffffff,
-
-    8px 8px 16px #c6c6c9;
-
-  transform: translateY(0);
-
-  transition:
-
-    transform .35s ease,
-
-    box-shadow .35s ease;
-
-}
-
-/* Hover IN */
-
-.team-linkedin-btn:hover {
-
-  transform: translateY(-4px);
-
-  box-shadow:
-
-    -14px -14px 24px #ffffff,
-
-    14px 14px 24px #c6c6c9;
-
-}
-
-/* Remove click movement */
-
-.team-linkedin-btn:active {
-
-  transform: translateY(0);
-
-}
-
-/* ==========================================================
-
-   TEAM CARD LINKEDIN ICON
-
-   NEUMORPHIC CIRCLE STYLE
-
-   \========================================================== */
-
-.team-card-linkedin {
-
-    width:58px;
-
-    height:58px;
-
-    display:flex;
-
-    align-items:center;
-
-    justify-content:center;
-
-    margin-top:18px;
-
-    border-radius:50%;
-
-    background:var(--team-bg);
-
-    color:var(--team-primary);
-
-    box-shadow:
-
-        -6px -6px 14px #ffffff,
-
-        6px 6px 14px #c6c6c9;
-
-    transition:
-
-        transform .35s ease,
-
-        box-shadow .35s ease;
-
-}
-
-/* LinkedIn icon */
-
-.team-card-linkedin svg {
-
-    width:30px;
-
-    height:30px;
-
-    stroke:var(--team-primary);
-
-}
-
-/* Hover IN */
-
-.team-card-linkedin:hover {
-
-    transform:translateY(-4px);
-
-    box-shadow:
-
-        -10px -10px 20px #ffffff,
-
-        10px 10px 20px #c6c6c9;
-
-}
-
-/* Hover OUT */
-
-.team-card-linkedin {
-
-    transition:
-
-        transform .35s ease,
-
-        box-shadow .35s ease;
-
-}
-
-@media(max-width:767px){
-
-    .team-card-linkedin {
-
-        width:48px;
-
-        height:48px;
-
-    }
-
-    .team-card-linkedin svg {
-
-        width:24px;
-
-        height:24px;
-
-    }
-
-}
-
-/* ==========================================================================
-
-   FOUNDER SECTION — IMAGE BACKGROUND REMOVED + IMAGE/HEADINGS ALIGNMENT FIX
-
-   Scoped only to the founder block shown in the supplied screenshot.
-
-   \========================================================================== */
-
-.team-founder {
-
-  align-items: center;
-
-}
-
-.team-founder-photo {
-
-  background: transparent !important;
-
-  border-radius: 0 !important;
-
-  overflow: visible !important;
-
-  box-shadow: none !important;
-
-}
-
-.team-founder-photo img {
-
-  width: 100% !important;
-
-  height: 100% !important;
-
-  object-fit: contain !important;
-
-  object-position: center !important;
-
-}
-
-.team-founder-content {
-
-  min-width: 0;
-
-}
-
-.team-eyebrow--inline,
-
-.team-founder-name,
-
-.team-founder-role,
-
-.team-founder-tagline,
-
-.team-founder-desc {
-
-  max-width: 100%;
-
-}
-
-.team-founder-name,
-
-.team-founder-role,
-
-.team-founder-tagline,
-
-.team-founder-desc {
-
-  overflow: visible !important;
-
-  white-space: normal !important;
-
-  word-break: normal !important;
-
-  overflow-wrap: normal !important;
-
-}
-
-/* Desktop — preserve the existing desktop design/sizing, only correct alignment */
-
-@media (min-width: 1025px) {
-
-  .team-founder {
-
-    display: grid !important;
-
-    grid-template-columns: minmax(0, 608px) minmax(0, 1fr) !important;
-
-    column-gap: 32px !important;
-
-    align-items: center !important;
-
-  }
-
-  .team-founder-photo {
-
-    width: 100% !important;
-
-    max-width: 608px !important;
-
-    aspect-ratio: 608 / 603 !important;
-
-    flex: none !important;
-
-  }
-
-  .team-founder-content {
-
-    width: 100% !important;
-
-    min-width: 0 !important;
-
-    align-items: flex-start !important;
-
-  }
-
-  .team-eyebrow--inline {
-
-    width: fit-content !important;
-
-    max-width: 100% !important;
-
-  }
-
-  .team-founder-name,
-
-  .team-founder-role,
-
-  .team-founder-tagline,
-
-  .team-founder-desc {
-
-    width: 100% !important;
-
-    text-align: left !important;
-
-  }
-
-}
-
-/* Tablet — label, image and every heading remain fully visible and centered */
-
-@media (min-width: 768px) and (max-width: 1024px) {
-
-  .team-founder {
-
-    width: 100% !important;
-
-    max-width: 760px !important;
+          <path d="M8 3L12 8L8 13" stroke={stroke} strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
 
-    margin-inline: auto !important;
+        </svg>
 
-    padding-inline: 24px !important;
+      );
 
-  }
-
-  .team-founder-photo {
+    case "linkedin":
 
-    width: min(100%, 560px) !important;
+      return (
 
-    max-width: 560px !important;
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
 
-    aspect-ratio: 608 / 603 !important;
-
-  }
+          <rect x="2" y="2" width="20" height="20" rx="4" stroke={stroke} strokeWidth="1.6" />
 
-  .team-founder-content {
+          <path d="M7 10v7" stroke={stroke} strokeWidth="1.6" strokeLinecap="round" />
 
-    width: 100% !important;
+          <circle cx="7" cy="7" r="1.1" fill={stroke} />
 
-  }
+          <path d="M11 17v-4.5c0-1.4 1-2.5 2.4-2.5s2.4 1.1 2.4 2.5V17" stroke={stroke} strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
 
-  .team-eyebrow--inline {
+          <path d="M11 10v1.2" stroke={stroke} strokeWidth="1.6" strokeLinecap="round" />
 
-    width: fit-content !important;
+        </svg>
 
-    max-width: calc(100% - 24px) !important;
+      );
 
-    text-align: center !important;
+    case "mortarboard":
 
-  }
+      return (
 
-  .team-founder-name,
+        <svg width="33" height="33" viewBox="0 0 33 33" fill="none" aria-hidden="true">
 
-  .team-founder-role,
+          <path d="M2.72686 10.835C2.72543 12.6525 13.6861 17.6162 16.2478 17.6182C18.8093 17.6202 29.7779 12.6737 29.7793 10.8563C29.7807 9.03884 18.8199 4.07514 16.2584 4.07313C13.6968 4.07112 2.72828 9.01758 2.72686 10.835Z" stroke={stroke} strokeWidth="2.03176" strokeLinecap="round" strokeLinejoin="round" />
 
-  .team-founder-tagline,
+          <path d="M8.13403 14.9062L8.46004 22.5322C8.46656 22.6849 8.48295 22.8378 8.52709 22.9842C8.6635 23.4364 8.91525 23.8474 9.2996 24.1238C12.3069 26.2853 20.1747 26.2915 23.1853 24.1347C23.5703 23.8589 23.8226 23.4483 23.9598 22.9963C24.004 22.85 24.0207 22.6971 24.0276 22.5445L24.3654 14.919" stroke={stroke} strokeWidth="2.03176" strokeLinecap="round" strokeLinejoin="round" />
 
-  .team-founder-desc {
+          <path d="M27.7463 12.8923L27.7388 22.3738M27.7388 22.3738C26.6645 24.332 26.1893 25.3812 25.7062 27.113C25.6011 27.7292 25.6839 28.0398 26.1085 28.3159C26.2809 28.4281 26.4883 28.4681 26.6939 28.4682L28.7533 28.4699C28.9723 28.47 29.1933 28.4246 29.3737 28.3004C29.7687 28.0284 29.8705 27.7298 29.764 27.1161C29.3429 25.5075 28.8058 24.4075 27.7388 22.3738Z" stroke={stroke} strokeWidth="2.03176" strokeLinecap="round" strokeLinejoin="round" />
 
-    width: 100% !important;
+        </svg>
 
-    max-width: 680px !important;
+      );
 
-    margin-inline: auto !important;
+    case "laptop":
 
-    text-align: center !important;
+      return (
 
-  }
+        <svg width="35" height="35" viewBox="0 0 35 35" fill="none" aria-hidden="true">
 
-}
+          <path d="M29.0512 23.4004L29.0601 12.0671C29.0627 8.72799 29.064 7.05843 28.0274 6.02028C26.9909 4.98214 25.3214 4.98083 21.9823 4.9782L12.0656 4.97041C8.72652 4.96779 7.05695 4.96647 6.01881 6.00298C4.98067 7.03951 4.97936 8.70906 4.97673 12.0482L4.96783 23.3815" stroke={stroke} strokeWidth="2.125" strokeLinecap="round" strokeLinejoin="round" />
 
-/* Mobile — no cropped image, no cut headings */
+          <path d="M31.1472 29.0645L2.85858 29.0422C2.31608 29.0418 1.96368 28.4873 2.20667 28.0166L4.96566 23.3772L29.049 23.3962L31.8006 28.0399C32.0429 28.511 31.6896 29.0649 31.1472 29.0645Z" stroke={stroke} strokeWidth="2.125" strokeLinecap="round" strokeLinejoin="round" />
 
-@media (max-width: 767px) {
+        </svg>
 
-  .team-founder {
+      );
 
-    width: 100% !important;
+    case "sparkles":
 
-    max-width: 100% !important;
+      return (
 
-    padding-inline: 20px !important;
+        <svg width="35" height="35" viewBox="0 0 35 35" fill="none" aria-hidden="true">
 
-  }
+          <path d="M16.9889 15.4284L19.2435 16.1819C20.047 16.4504 20.0461 17.5874 19.2422 17.8547L16.9864 18.6046C15.4064 19.1299 14.166 20.3684 13.6382 21.9476L12.8847 24.2022C12.6161 25.0056 11.4792 25.0047 11.2119 24.2008L10.462 21.9451C9.9367 20.3651 8.69819 19.1247 7.11903 18.5968L4.86447 17.8434C4.0609 17.5749 4.0618 16.4378 4.86579 16.1706L7.12153 15.4207C8.70151 14.8953 9.94197 13.6569 10.4697 12.0777L11.2232 9.82315C11.4918 9.01957 12.6287 9.02048 12.896 9.82446L13.6459 12.0802C14.1712 13.6602 15.4097 14.9006 16.9889 15.4284Z" stroke={stroke} strokeWidth="2.125" strokeLinecap="round" strokeLinejoin="round" />
 
-  .team-founder-photo {
+          <path d="M25.6394 7.08998L26.6642 7.43247C27.0294 7.55453 27.029 8.07133 26.6636 8.19282L25.6382 8.5337C24.9201 8.77247 24.3562 9.33543 24.1164 10.0532L23.7739 11.078C23.6517 11.4433 23.1349 11.4429 23.0134 11.0774L22.6725 10.0521C22.4338 9.33392 21.8708 8.77007 21.1531 8.53018L20.1282 8.18768C19.763 8.06562 19.7634 7.54882 20.1288 7.42733L21.1542 7.08645C21.8723 6.84768 22.4362 6.28472 22.676 5.56693L23.0185 4.54212C23.1407 4.17686 23.6575 4.17728 23.779 4.54272L24.1199 5.56806C24.3586 6.28623 24.9216 6.85008 25.6394 7.08998Z" stroke={stroke} strokeWidth="2.125" strokeLinecap="round" strokeLinejoin="round" />
 
-    width: 100% !important;
+          <path d="M25.6257 25.5079L26.6505 25.8504C27.0158 25.9725 27.0154 26.4893 26.6499 26.6109L25.6245 26.9518C24.9064 27.1905 24.3425 27.7535 24.1027 28.4712L23.7602 29.4961C23.6381 29.8613 23.1213 29.8609 22.9997 29.4955L22.6588 28.4701C22.4201 27.7519 21.8572 27.1881 21.1394 26.9482L20.1145 26.6057C19.7493 26.4836 19.7497 25.9668 20.1151 25.8453L21.1405 25.5044C21.8587 25.2657 22.4225 24.7027 22.6624 23.9849L23.0049 22.9601C23.127 22.5948 23.6438 22.5952 23.7653 22.9607L24.1062 23.9861C24.3449 24.7042 24.9079 25.2681 25.6257 25.5079Z" stroke={stroke} strokeWidth="2.125" strokeLinecap="round" strokeLinejoin="round" />
 
-    max-width: 380px !important;
+        </svg>
 
-    height: auto !important;
+      );
 
-    aspect-ratio: 608 / 603 !important;
+    case "chart":
 
-  }
+      return (
 
-  .team-founder-photo img {
+        <svg width="35" height="35" viewBox="0 0 35 35" fill="none" aria-hidden="true">
 
-    object-fit: contain !important;
+          <path d="M29.7521 29.7734L29.7655 12.7734" stroke={stroke} strokeWidth="2.125" strokeLinecap="round" strokeLinejoin="round" />
 
-    object-position: center !important;
+          <path d="M21.2535 29.7656L21.2601 21.2656" stroke={stroke} strokeWidth="2.125" strokeLinecap="round" strokeLinejoin="round" />
 
-  }
+          <path d="M4.26044 21.2539L12.0582 13.4684C12.638 12.8895 12.9279 12.6 13.2405 12.4454C13.8353 12.1513 14.5333 12.1519 15.1275 12.4469C15.4399 12.602 15.7294 12.8919 16.3082 13.4717C16.887 14.0515 17.1765 14.3414 17.4889 14.4965C18.0831 14.7916 18.7813 14.7921 19.3759 14.4979C19.6886 14.3433 19.9785 14.0539 20.5582 13.475L29.7738 4.27395" stroke={stroke} strokeWidth="2.125" strokeLinecap="round" strokeLinejoin="round" />
 
-  .team-founder-content {
+          <path d="M12.7523 29.7604L12.7601 19.8438" stroke={stroke} strokeWidth="2.125" strokeLinecap="round" strokeLinejoin="round" />
 
-    width: 100% !important;
+          <path d="M4.25253 29.7552L4.25476 26.9219" stroke={stroke} strokeWidth="2.125" strokeLinecap="round" strokeLinejoin="round" />
 
-    min-width: 0 !important;
+        </svg>
 
-  }
+      );
 
-  .team-eyebrow--inline {
+    case "handshake":
 
-    width: fit-content !important;
+      return (
 
-    max-width: 100% !important;
+        <svg width="47" height="47" viewBox="0 0 47 47" fill="none" aria-hidden="true">
 
-    margin-inline: auto !important;
+          <path d="M43.0545 13.2109H37.5966C36.4202 13.2109 35.8319 13.2109 35.2773 13.043C34.7227 12.875 34.2333 12.5488 33.2544 11.8962C31.7862 10.9173 30.1112 9.80071 29.279 9.54878C28.4471 9.29687 27.5647 9.29688 25.8 9.29688C23.4003 9.29688 21.8535 9.29688 20.7746 9.74378C19.6957 10.1907 18.8472 11.0392 17.1503 12.7361L15.657 14.2294C15.2745 14.6119 15.0833 14.8031 14.9653 14.9919C14.5277 15.6917 14.5762 16.5908 15.0865 17.2395C15.2242 17.4145 15.4348 17.584 15.8562 17.9231C17.4135 19.1764 19.6587 19.0513 21.0689 17.6327L23.4843 15.2029H25.4413L37.1835 27.0149C38.2643 28.1022 38.2643 29.8649 37.1835 30.9523C36.1026 32.0396 34.3503 32.0396 33.2694 30.9523L32.2909 29.9679M26.4198 31.9366L28.3769 33.9052C29.4577 34.9925 31.21 34.9925 32.2909 33.9052C33.3718 32.8181 33.3718 31.0552 32.2909 29.9679L26.4198 24.062M22.5058 28.0226L26.4198 31.9366C27.5007 33.0238 27.5007 34.7867 26.4198 35.874C25.339 36.9611 23.5867 36.9611 22.5058 35.874L19.5703 32.9208M3.91406 28.8671H4.53824C6.16088 28.8671 6.97223 28.8671 7.69963 29.1727C8.42704 29.4786 8.99479 30.0581 10.1303 31.2172L15.6562 36.8584C16.7371 37.9455 18.4894 37.9455 19.5703 36.8584C20.6511 35.771 20.6511 34.0082 19.5703 32.9208L18.5917 31.9366" stroke={stroke} strokeWidth="2.93554" strokeLinecap="round" strokeLinejoin="round" />
 
-    padding-inline: 18px !important;
+          <path d="M43.0544 28.8672H38.1619" stroke={stroke} strokeWidth="2.93554" strokeLinecap="round" />
 
-    white-space: normal !important;
+          <path d="M16.6347 13.2109H3.91406" stroke={stroke} strokeWidth="2.93554" strokeLinecap="round" />
 
-    text-align: center !important;
+        </svg>
 
-  }
+      );
 
-  .team-founder-name,
+    case "goal":
 
-  .team-founder-role,
+      return (
 
-  .team-founder-tagline,
+        <svg width="47" height="47" viewBox="0 0 47 47" fill="none" aria-hidden="true">
 
-  .team-founder-desc {
+          <path d="M21.5273 13.8984C17.0609 14.8051 13.6992 18.7539 13.6992 23.4877C13.6992 28.8921 18.0802 33.2729 23.4843 33.2729C28.2184 33.2729 32.1671 29.9113 33.0738 25.4448" stroke={stroke} strokeWidth="2.93554" strokeLinecap="round" strokeLinejoin="round" />
 
-    width: 100% !important;
+          <path d="M43.0545 23.4843C43.0545 34.2926 34.2926 43.0545 23.4843 43.0545C12.676 43.0545 3.91406 34.2926 3.91406 23.4843C3.91406 12.676 12.676 3.91406 23.4843 3.91406" stroke={stroke} strokeWidth="2.93554" strokeLinecap="round" strokeLinejoin="round" />
 
-    max-width: 100% !important;
+          <path d="M28.377 13.9228V18.5898H33.0439C34.6723 18.5898 35.4864 18.5898 36.2184 18.2866C36.9505 17.9833 37.5262 17.4077 38.6776 16.2563L39.3318 15.6021C41.1984 13.7354 42.1317 12.8021 42.0736 11.9024C42.0515 11.5599 41.9411 11.2288 41.7532 10.9414C41.26 10.1868 39.9533 10.0002 37.3399 9.62682C36.9665 7.01341 36.7798 5.70671 36.0252 5.21354C35.7379 5.02572 35.407 4.91536 35.0643 4.89319C34.1647 4.83497 33.2314 5.76833 31.3645 7.63506L30.7105 8.28919C29.5592 9.44057 28.9834 10.0162 28.6801 10.7483C28.377 11.4804 28.377 12.2945 28.377 13.9228Z" stroke={stroke} strokeWidth="2.93554" strokeLinecap="round" strokeLinejoin="round" />
 
-    margin-inline: auto !important;
+          <path d="M28.3769 18.5898L23.4844 23.4824" stroke={stroke} strokeWidth="2.93554" strokeLinecap="round" strokeLinejoin="round" />
 
-    text-align: center !important;
+        </svg>
 
-    overflow: visible !important;
+      );
 
   }
 
 }
-
-/* ==========================================================================
-
-   GROUP PHOTO — FULL IMAGE VISIBLE, NO TOP/BOTTOM CROP
-
-   Only the group-photo section is corrected.
 
-   \========================================================================== */
+const heroPills: { label: string; color: string }[] = [
 
-.team-group-photo-frame {
+  { label: "Learning", color: "#67096E" },
 
-  width: 100% !important;
+  { label: "Technology", color: "#BF1869" },
 
-  height: auto !important;
+  { label: "Innovation", color: "#C05512" },
 
-  min-height: 0 !important;
+];
 
-  aspect-ratio: 1104 / 388 !important;
+const valueCards: { title: string; desc: string }[] = [
 
-  overflow: visible !important;
+  {
 
-}
-
-.team-group-photo-inner {
+    title: "Human-First Learning",
 
-  position: absolute !important;
+    desc: "Built around learners.",
 
-  inset: 16px !important;
+  },
 
-  overflow: hidden !important;
+  {
 
-}
+    title: "Intelligent Technology",
 
-.team-group-photo-inner img {
+    desc: "Smarter through technology.",
 
-  width: 100% !important;
+  },
 
-  height: 100% !important;
+  {
 
-  object-fit: contain !important;
+    title: "Meaningful Impact",
 
-  object-position: center center !important;
+    desc: "Learning with Impact.",
 
-}
+  },
 
-/* Tablet */
+];
 
-@media (min-width: 768px) and (max-width: 1024px) {
+const teamMembers: {
 
-  .team-group-photo {
+  name: string;
 
-    padding-inline: 24px !important;
+  role: string;
 
-  }
+  blurb: string;
 
-  .team-group-photo-frame {
+  photo: string;
 
-    aspect-ratio: 1104 / 388 !important;
+  linkedin: string;
 
-  }
+}[] = [
 
-  .team-group-photo-inner {
+  {
 
-    inset: 12px !important;
+    name: "Ranjitha A M",
 
-  }
+    role: "Full-Stack Developer",
 
-}
+    blurb: "Driving projects from idea\nto execution",
 
-/* Mobile */
+    photo: "/images/team-ranjitha.jpg",
 
-@media (max-width: 767px) {
+    linkedin: "https://www.linkedin.com/in/ranjitha-mahesha-376545284?utm_source=share_via&utm_content=profile&utm_medium=member_android/",
 
-  .team-group-photo {
+  },
 
-    width: 100% !important;
+  // {
 
-    padding-inline: 20px !important;
+  //   name: "Rakesh R",
 
-  }
+  //   role: "Full-Stack Developer",
 
-  .team-group-photo-frame {
+  //   blurb: "Building powerful backend solutions",
 
-    width: 100% !important;
+  //   photo: "/images/team-rakesh.jpg",
 
-    height: auto !important;
+  //   linkedin: "https://www.linkedin.com/",
 
-    aspect-ratio: 1104 / 388 !important;
+  // },
 
-    border-radius: 22px !important;
+  {
 
-  }
+    name: "Jeethu",
 
-  .team-group-photo-inner {
+    role: "Full-Stack Developer",
 
-    inset: 8px !important;
+    blurb: "Building seamless product\nexperiences",
 
-    border-radius: 14px !important;
+    photo: "/images/team-jeethu.jpg",
 
-  }
+    linkedin: "https://www.linkedin.com/in/jeethu-p-joy-7555703b/",
 
-  .team-group-photo-inner img {
+  },
 
-    object-fit: contain !important;
+  {
 
-    object-position: center center !important;
+    name: "Veena Raju",
 
-  }
+    role: "Product Designer",
 
-}
+    blurb: "Creating intuitive digital\nexperiences",
 
-/* Requested corrections: shared badges and founder LinkedIn hover only. */
+    photo: "/images/team-veena.jpg",
 
-.team-page .team-eyebrow {
+    linkedin: "https://www.linkedin.com/in/veena-r-design/",
 
-  justify-content: center;
+  },
 
-  padding-inline: 20px;
+  {
 
-  border-radius: 28px;
+    name: "Inchana",
 
-  background: var(--team-bg);
+    role: "Full-Stack Developer",
 
-  box-shadow:
+    blurb: "Creating scalable product\nsolutions",
 
-    inset -4px -4px 4px #ffffff,
+    photo: "/images/team-inchana.jpg",
 
-    inset 4px 4px 4px rgba(196, 196, 196, 0.8);
+    linkedin: "https://www.linkedin.com/in/inchana-b-c/",
 
-  font-family: "Segoe UI", Inter, Arial, sans-serif;
+  },
 
-  font-size: 24px;
+  {
 
-  font-weight: 600;
+    name: "Pavan",
 
-  line-height: 32px;
+    role: "Full-Stack Developer",
 
-  color: var(--team-primary);
+    blurb: "Building reliable digital\nsolutions",
 
-  text-align: center;
+    photo: "/images/team-pavan.jpg",
 
-}
+    linkedin: "https://www.linkedin.com/in/pavan-kumar-tk/",
 
-@media (max-width: 768px) {
+  },
 
-  .team-page .team-eyebrow {
+  // {
 
-    font-size: 18px;
+  //   name: "Heena",
 
-    line-height: 26px;
+  //   role: "Full-Stack Developer",
 
-  }
+  //   blurb: "Creating engaging product experiences",
 
-}
+  //   photo: "/images/team-heena.jpg",
 
-.team-page .team-founder .team-linkedin-btn {
+  //   linkedin: "https://www.linkedin.com/",
 
-  color: var(--team-primary);
+  // },
 
-  cursor: pointer;
+];
 
-  box-shadow: -4px -4px 4px #ffffff, 4px 4px 4px #c6c6c9;
+const bringTogether: { title: string; desc: string; color: string; icon: IconName }[] = [
 
-  transform: none;
+  { title: "Learning", desc: "Academic expertise and instructional thinking", color: "#2D4CC8", icon: "mortarboard" },
 
-  transition: box-shadow 180ms ease;
+  { title: "Technology", desc: "Scalable digital learning infrastructure.", color: "#67096E", icon: "laptop" },
 
-}
+  { title: "Design", desc: "Simple and engaging learner experiences.", color: "#BF1869", icon: "sparkles" },
 
-.team-page .team-founder .team-linkedin-btn:hover,
+  { title: "Data", desc: "Data-driven insights for better decisions.", color: "#C05512", icon: "chart" },
 
-.team-page .team-founder .team-linkedin-btn:focus-visible,
+];
 
-.team-page .team-founder .team-linkedin-btn:active {
+const howWeWork: { title: string; desc: string; color: string; icon: IconName }[] = [
 
-  box-shadow:
+  { title: "Curious", desc: "Always learning", color: "#2D4CC8", icon: "mortarboard" },
 
-    inset -4px -4px 4px #ffffff,
+  { title: "Collaborative", desc: "Better together", color: "#BF1869", icon: "handshake" },
 
-    inset 4px 4px 4px rgba(196, 196, 196, 0.8);
+  { title: "Learner-Focused", desc: "Learners come first", color: "#67096E", icon: "mortarboard" },
 
-  transform: none;
+  { title: "Impact-Driven", desc: "Focused on results", color: "#2A7308", icon: "goal" },
 
-}
+];
 
-@media (prefers-reduced-motion: reduce) {
+export default function OurTeamPage() {
 
-  .team-page .team-founder .team-linkedin-btn {
+  return (
 
-    transition: none;
+    <>
 
-  }
+      <Header />
 
-}
+      <main id="main-content" className="team-page">
 
-/* Requested heading accent: only the final word of main headings */
+        <section className="team-hero">
 
-.team-heading-accent {
+          <span className="team-eyebrow">Our Team</span>
 
-  color: var(--team-primary);
+          <h1 className="team-hero-title">People Behind <span className="team-heading-accent">NeuroLXP
 
-}
+            {/* <sup className="team-tm">TM</sup> */}
 
-/* Keep every team-card subtext on exactly two intentional lines */
+            </span></h1>
 
-.team-card-blurb {
+          <p className="team-hero-desc">
 
-  white-space: pre-line;
+            We are a multidisciplinary team passionate about transforming how people learn, grow and succeed through
 
-  min-height: 44px;
+            intelligent learning technology.
 
-}
+          </p>
 
-@media (min-width: 1280px) {
+          <div className="team-hero-pills">
 
-  .team-card-blurb {
+            {heroPills.map((pill) => (
 
-    min-height: 56px;
+              <span key={pill.label} className="team-hero-pill" style={{ borderColor: pill.color }}>
 
-  }
+                {pill.label}
 
-}
+              </span>
 
-/* =========================================================
+            ))}
 
-   REQUESTED TEAM PAGE REFINEMENTS
+          </div>
 
-   ========================================================= */
+        </section>
 
-/* Keep "Meet The People Behind The Platform" on one line on desktop. */
+        <section className="team-founder">
 
-@media (min-width: 768px) {
+          <div className="team-founder-photo">
 
-  .team-section-title--people {
+            <Image src="/images/marketing-concept-with-vision-word-flat-lay 1.png" alt="Mr Pavan Kumar, Founder and CEO of NeuroLXP" fill sizes="(max-width: 767px) 100vw, 608px" />
 
-    max-width: none;
+          </div>
 
-    white-space: nowrap;
+          <div className="team-founder-content">
 
-  }
+            <span className="team-eyebrow team-eyebrow--inline">The Vision Behind NeuroLXP<sup className="team-tm team-tm--badge">TM</sup></span>
 
-}
+            <h2 className="team-founder-name">Mr Pavan Kumar</h2>
 
-/* Only these two section headings use the blue neumorphic badge style. */
+            <p className="team-founder-role">Founder & CEO</p>
 
-.team-section-badge {
+            <p className="team-founder-tagline">Learn today! Transform tomorrow!</p>
 
-  width: fit-content;
+            <p className="team-founder-desc">
 
-  max-width: calc(100% - 32px);
+              Beyond courses, Neuro LXP connects people, technology and data to transform learning into smarter
 
-  padding: 10px 28px;
+              experiences, continuous growth and measurable impact.
 
-  border-radius: 28px;
+            </p>
 
-  background: var(--team-bg);
+           <a
 
-  box-shadow: var(--team-inset);
+  href="https://www.linkedin.com/in/pavankumar-chandrappa-1bb84879/"
 
-  color: var(--team-primary);
+  target="_blank"
 
-  line-height: 1.3 !important;
+  rel="noopener noreferrer"
 
-  text-transform: none;
+  className="team-linkedin-btn"
 
-}
+  aria-label="Connect with Mr Pavan Kumar on LinkedIn"
 
-.team-section-badge .team-heading-accent {
+>
 
-  color: var(--team-primary);
+  Connect on Linkedin
 
-}
+</a>
 
-/* TM beside NeuroLXP. */
+          </div>
 
-.team-tm {
+        </section>
 
-  position: relative;
+        <section className="team-values" aria-label="What sets NeuroLXP apart">
 
-  top: -0.72em;
+          {valueCards.map((card) => (
 
-  margin-left: 3px;
+            <article key={card.title} className="team-value-card">
 
-  font-size: 0.32em;
+              <h3 className="team-value-title">{card.title}</h3>
 
-  font-weight: 800;
+              <p className="team-value-desc">{card.desc}</p>
 
-  line-height: 1;
+            </article>
 
-  letter-spacing: 0;
+          ))}
 
-  color: inherit;
+        </section>
 
-}
+        <section className="team-group-photo">
 
-.team-tm--badge {
+          <div className="team-group-photo-frame">
 
-  top: -0.62em;
+            <div className="team-group-photo-inner">
 
-  font-size: 0.42em;
+              <Image
 
-}
+                src="/images/team-six-office-workers-white-wall 1.png"
 
-/* Increase text only inside the three hero cards on desktop. */
+                alt="The NeuroLXP team together"
 
-@media (min-width: 768px) {
+                fill
 
-  .team-hero-pill {
+                sizes="(max-width: 767px) 100vw, 1216px"
 
-    font-size: 24px;
+              />
 
-    line-height: 32px;
+            </div>
 
-  }
+          </div>
 
-}
+        </section>
 
-/* Match the visual style of the "Our Team" inset badge only.
+        <section className="team-grid-section">
 
-   Alignment/position is intentionally untouched. */
+          <h2 className="team-section-title team-section-title--people">
 
-.team-section-badge {
+            Meet The People Behind The <span className="team-heading-accent">Platform</span>
 
-  width: fit-content;
+          </h2>
 
-  max-width: 100%;
+          <div className="team-grid">
 
-  padding: 8px 24px;
+            {teamMembers.map((member) => (
 
-  border-radius: 28px;
+              <article key={member.name} className="team-card">
 
-  background: var(--team-bg);
+                <h3 className="team-card-name">{member.name}</h3>
 
-  box-shadow: var(--team-inset);
+                <p className="team-card-role">{member.role}</p>
 
-  color: var(--team-primary);
+                <p className="team-card-blurb">{member.blurb}</p>
 
-  font-size: 16px !important;
+                <a
 
-  font-weight: 600;
+                  href={member.linkedin}
 
-  line-height: 24px !important;
+                  target="_blank"
 
-  letter-spacing: 0.03em;
+                  rel="noopener noreferrer"
 
-  text-transform: capitalize;
+                  className="team-card-linkedin"
 
-  transform: none !important;
+                  aria-label={`Connect with ${member.name} on LinkedIn`}
 
-  transition: none !important;
+                >
 
-  filter: none !important;
+                  <Icon name="linkedin" />
 
-}
+                </a>
 
-.team-section-badge:hover,
+              </article>
 
-.team-section-badge:focus,
+            ))}
 
-.team-section-badge:focus-visible,
+          </div>
 
-.team-section-badge:active {
+        </section>
 
-  background: var(--team-bg);
+        <section className="team-bring">
 
-  box-shadow: var(--team-inset);
+          <h2 className="team-section-title team-section-badge">What We Bring <span className="team-heading-accent">Together</span></h2>
 
-  color: var(--team-primary);
+          <div className="team-bring-grid">
 
-  transform: none !important;
+            {bringTogether.map((item) => (
 
-  filter: none !important;
+              <div key={item.title} className="team-bring-item">
 
-}
+                <span className="team-bring-icon">
 
-@media (min-width: 1280px) {
+                  <Icon name={item.icon} color={item.color} />
 
-  .team-section-badge {
+                </span>
 
-    padding: 12px 32px;
+                <div className="team-bring-copy">
 
-    font-size: 24px !important;
+                  <h3 style={{ color: item.color }}>{item.title}</h3>
 
-    line-height: 32px !important;
+                  <p>{item.desc}</p>
 
-  }
+                </div>
 
-}
+              </div>
 
-/* FINAL FIX: use the exact real inset shadow from the "Our Team" badge.
+            ))}
 
-   No alignment or positioning changes. */
+          </div>
 
-.team-page .team-section-badge {
+        </section>
 
-  box-shadow:
+        <section className="team-how">
+          <div className="team-expert-button-slot" data-expert-button-slot />
 
-    inset -4px -4px 4px #ffffff,
+          <h2 className="team-section-title team-section-badge">How We <span className="team-heading-accent">Work</span></h2>
 
-    inset 4px 4px 4px rgba(196, 196, 196, 0.8) !important;
+          <div className="team-how-grid">
 
-}
+            {howWeWork.map((item) => (
 
-.team-page .team-section-badge:hover,
+              <div key={item.title} className="team-how-card">
 
-.team-page .team-section-badge:focus,
+                <span className="team-how-icon" style={{ borderColor: item.color }}>
 
-.team-page .team-section-badge:focus-visible,
+                  <Icon name={item.icon} color={item.color} />
 
-.team-page .team-section-badge:active {
+                </span>
 
-  box-shadow:
+                <h3 style={{ color: item.color }}>{item.title}</h3>
 
-    inset -4px -4px 4px #ffffff,
+                <p>{item.desc}</p>
 
-    inset 4px 4px 4px rgba(196, 196, 196, 0.8) !important;
+              </div>
 
-  transform: none !important;
+            ))}
 
-  filter: none !important;
+          </div>
 
-}
+        </section>
 
+      </main>
 
+      <Footer />
 
-/* Expert button anchor only: does not alter the How We Work layout. */
-.team-page .team-how {
-  position: relative;
-}
+    </>
 
-.team-page .team-expert-button-slot {
-  position: absolute;
-  top: 0;
-  right: 24px;
-  width: 0;
-  height: 0;
-  z-index: 20;
-}
+  );
 
-@media (max-width: 767px) {
-  .team-page .team-expert-button-slot {
-    top: -48px;
-    right: 80px;
-  }
 }
