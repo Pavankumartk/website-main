@@ -5268,3 +5268,213 @@ flex-direction:column;
   border-bottom-left-radius: 8px !important;
   border-bottom-right-radius: 8px !important;
 }
+.trademark {
+  display: inline-block;
+  font-size: 10.8px !important;
+  line-height: px !important;
+  font-weight: 600;
+  margin-left: 2px;
+  position: relative;
+  top: -4px;
+  color: #2D4CC8;
+  vertical-align: baseline;
+  white-space: nowrap;
+}
+
+/* Mobile-only precision fixes. All original section positions and layout retained. */
+@media screen and (max-width: 767px) {
+  /* Breadcrumb: one aligned row without changing its section position. */
+  .mediaPresence.mediaPresence > .frameParent3 {
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+    gap: 8px !important;
+    text-align: left !important;
+  }
+  .mediaPresence.mediaPresence > .frameParent3 .resourcesWrapper,
+  .mediaPresence.mediaPresence > .frameParent3 .arrowRightDoubleParent {
+    display: inline-flex !important;
+    align-items: center !important;
+    flex-shrink: 0 !important;
+    gap: 8px !important;
+  }
+  .mediaPresence.mediaPresence > .frameParent3 .resources2 {
+    white-space: nowrap !important;
+    line-height: 24px !important;
+  }
+  .mediaPresence.mediaPresence > .frameParent3 .arrowDown01Icon {
+    flex: 0 0 16px !important;
+    width: 16px !important;
+    height: 16px !important;
+  }
+
+  /* Preserve existing card grid and card dimensions; only prevent label wrapping. */
+  .mediaPresence.mediaPresence > .frameParent17 .frameParent21 :is(
+    .higherEducation, .corporateLearning, .workforceSkills, .professionalTraining
+  ) {
+    width: max-content !important;
+    max-width: 100% !important;
+    min-height: 0 !important;
+    white-space: nowrap !important;
+    overflow-wrap: normal !important;
+    word-break: normal !important;
+    font-size: clamp(14px, 4.3vw, 18px) !important;
+    line-height: 26px !important;
+    text-align: center !important;
+  }
+  .mediaPresence.mediaPresence > .frameParent17 .frameParent19 {
+    row-gap: 12px !important;
+  }
+
+  /* Keep the existing final section and artwork in place; align its dotted SVG. */
+  .mediaPresence.mediaPresence > .image20Parent .image20 {
+    box-sizing: border-box !important;
+    overflow: hidden !important;
+  }
+  .mediaPresence.mediaPresence > .image20Parent .image20 svg {
+    display: block !important;
+    width: 100% !important;
+    height: 100% !important;
+    overflow: visible !important;
+  }
+}
+
+
+/* Targeted mobile corrections: breadcrumbs and final dotted outline only. */
+@media screen and (max-width: 767px) {
+  .mediaPresence.mediaPresence > .frameParent3 {
+    box-sizing: border-box !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 0 4px !important;
+    margin: 0 !important;
+    display: flex !important;
+    flex-flow: row nowrap !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+    gap: 6px !important;
+    text-align: left !important;
+  }
+  .mediaPresence.mediaPresence > .frameParent3 .resourcesWrapper,
+  .mediaPresence.mediaPresence > .frameParent3 .arrowRightDoubleParent {
+    display: inline-flex !important;
+    flex: 0 1 auto !important;
+    min-width: 0 !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+    gap: 6px !important;
+  }
+  .mediaPresence.mediaPresence > .frameParent3 .resources2 {
+    display: inline-block !important;
+    width: auto !important;
+    font-size: 13px !important;
+    line-height: 20px !important;
+    white-space: nowrap !important;
+  }
+  .mediaPresence.mediaPresence > .frameParent3 .arrowDown01Icon {
+    position: static !important;
+    flex: 0 0 14px !important;
+    width: 14px !important;
+    height: 14px !important;
+    margin: 0 !important;
+  }
+  /* The original SVG uses a 1232px-wide drawing. Scale its full
+     outline to the mobile card instead of cropping the right edge. */
+  .mediaPresence.mediaPresence > .image20Parent .image20 {
+    position: absolute !important;
+    inset: 10px !important;
+    width: calc(100% - 20px) !important;
+    height: calc(100% - 20px) !important;
+    border-radius: inherit !important;
+    overflow: hidden !important;
+    pointer-events: none !important;
+  }
+  .mediaPresence.mediaPresence > .image20Parent .image20 svg {
+    width: 100% !important;
+    height: 100% !important;
+    display: block !important;
+    overflow: visible !important;
+  }
+}
+@media (max-width: 767px) {
+  .frameParent19 {
+    gap: 20px;
+  }
+
+  .frameParent20 {
+    gap: 20px;
+  }
+}
+/* Focused visual corrections for the final CTA and mobile partnership cards. */
+.mediaPresence.mediaPresence > .image20Parent {
+  isolation: isolate;
+}
+.mediaPresence.mediaPresence > .image20Parent .image20 {
+  display: none !important;
+}
+.mediaPresence.mediaPresence > .image20Parent::before {
+  content: "";
+  position: absolute;
+  inset: 24px;
+  border: 2px dashed #bf1869;
+  border-radius: 180px 180px 8px 8px;
+  pointer-events: none;
+  box-sizing: border-box;
+  /* Keep the decorative outline above the card bottom, like the original artwork. */
+  -webkit-mask-image: linear-gradient(to bottom, #000 0%, #000 85%, transparent 98%);
+  mask-image: linear-gradient(to bottom, #000 0%, #000 85%, transparent 98%);
+  z-index: 0;
+}
+.mediaPresence.mediaPresence > .image20Parent .frameParent47 {
+  z-index: 1;
+}
+@media (max-width: 767px) {
+  .mediaPresence.mediaPresence > .frameParent17 .frameParent19 {
+    row-gap: 24px !important;
+  }
+  .mediaPresence.mediaPresence > .image20Parent {
+    overflow: hidden !important;
+  }
+  .mediaPresence.mediaPresence > .image20Parent::before {
+    inset: 12px;
+    border-radius: 60px 60px 8px 8px;
+    -webkit-mask-image: linear-gradient(to bottom, #000 0%, #000 82%, transparent 96%);
+    mask-image: linear-gradient(to bottom, #000 0%, #000 82%, transparent 96%);
+  }
+  .mediaPresence.mediaPresence > .image20Parent .frameParent47 {
+    position: relative !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+    padding-inline: 8px !important;
+  }
+  .mediaPresence.mediaPresence > .image20Parent .drivingTheFuture,
+  .mediaPresence.mediaPresence > .image20Parent .neurolxpEmpowersOrganization {
+    overflow-wrap: normal !important;
+    word-break: normal !important;
+    text-align: center !important;
+  }
+}
+
+
+/* Expert launcher: Shaping the Future of Learning only. */
+.mediaPresence > .frameParent5 {
+  position: relative;
+}
+.mediaPresence > .frameParent5 .shapingExpertSlot {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 64px;
+  height: 64px;
+  z-index: 15;
+}
+@media (max-width: 768px) {
+  .mediaPresence > .frameParent5 .shapingExpertSlot {
+    top: 700px;
+    right: 0;
+    width: 48px;
+    height: 48px;
+  }
+}
