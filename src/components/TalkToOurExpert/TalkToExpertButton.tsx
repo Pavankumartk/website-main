@@ -72,6 +72,7 @@ function ExpertLauncher() {
    * - Mobile Learning
    * - Interconnectivity
    * - Customer Training
+   * - Blogs
    *
    * The button remains available on all other pages.
    */
@@ -89,7 +90,9 @@ function ExpertLauncher() {
     pathname === "/interconnectivity" ||
     pathname.startsWith("/interconnectivity/") ||
     pathname === "/customer-training" ||
-    pathname.startsWith("/customer-training/");
+    pathname.startsWith("/customer-training/") ||
+    pathname === "/blogs" ||
+    pathname.startsWith("/blogs/");
 
   if (hideExpertButton) {
     return null;
