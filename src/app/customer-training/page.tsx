@@ -25,7 +25,6 @@ const CustomerTraining: NextPage = () => {
 .customerTrainingFix_page .customerTrainingFix_copy,
 .customerTrainingFix_page .customerTrainingFix_cardCopy { min-width: 0; }
 .customerTrainingFix_page .customerTrainingFix_button { max-width: 100%; white-space: normal; }
-
 @media (max-width: 767px) {
   .customerTrainingFix_page {
     box-sizing: border-box;
@@ -210,7 +209,18 @@ const CustomerTraining: NextPage = () => {
     object-fit: contain;
   }
 }
-      `}</style>
+      
+.customerTrainingFix_page .customerTrainingFix_challengesHeading {
+  width: 100%;
+  margin: 0 0 20px;
+  text-align: center;
+  font-size: 36px;
+  line-height: 1.3;
+  font-weight: 700;
+  color: #31344b;
+}
+.customerTrainingFix_page h3[class] { margin-block: 0; }
+`}</style>
       <main className={`${styles.customerTraining} customerTrainingFix_page`}>
       <nav className={`${styles.frameDiv} customerTrainingFix_breadcrumb`} aria-label="Breadcrumb">
         <div className={styles.resourcesWrapper}>
@@ -275,13 +285,14 @@ const CustomerTraining: NextPage = () => {
             </div>
           </div>
           <div className={`${styles.frameParent9} customerTrainingFix_cards`}>
+            <h2 className="customerTrainingFix_challengesHeading">Challenges</h2>
             <div className={`${styles.frameParent10} customerTrainingFix_columns`}>
               <div className={`${styles.frameParent11} customerTrainingFix_cards`}>
                 <div className={`${styles.frameParent12} customerTrainingFix_card`}>
                   <div className={`${styles.frameChild5} customerTrainingFix_cardIcon`} />
                   <div className={`${styles.frameParent13} customerTrainingFix_cardCopy`}>
                     <div className={`${styles.challenge1Parent} customerTrainingFix_copy`}>
-                      <b className={styles.challenge1}>Challenge 1</b>
+                      <h3 className={styles.challenge1}>1</h3>
                       <b className={styles.simplifyProducts}>Simplify Products</b>
                     </div>
                     <div className={styles.helpCustomersLearn}>Help customers learn products and features faster.</div>
@@ -291,7 +302,7 @@ const CustomerTraining: NextPage = () => {
                   <div className={`${styles.frameChild6} customerTrainingFix_cardIcon`} />
                   <div className={`${styles.frameParent13} customerTrainingFix_cardCopy`}>
                     <div className={`${styles.challenge1Parent} customerTrainingFix_copy`}>
-                      <b className={styles.challenge1}>Challenge 3</b>
+                      <h3 className={styles.challenge1}>3</h3>
                       <b className={styles.simplifyProducts}>
                         Drive Adoption
                         <br />
@@ -306,7 +317,7 @@ const CustomerTraining: NextPage = () => {
                   <div className={`${styles.frameChild7} customerTrainingFix_cardIcon`} />
                   <div className={`${styles.frameParent13} customerTrainingFix_cardCopy`}>
                     <div className={`${styles.challenge1Parent} customerTrainingFix_copy`}>
-                      <b className={styles.challenge1}>Challenge 2</b>
+                      <h3 className={styles.challenge1}>2</h3>
                       <b className={styles.simplifyProducts}>
                         Reduce Support
                         <br />
@@ -319,7 +330,7 @@ const CustomerTraining: NextPage = () => {
                   <div className={`${styles.frameChild8} customerTrainingFix_cardIcon`} />
                   <div className={`${styles.frameParent13} customerTrainingFix_cardCopy`}>
                     <div className={`${styles.challenge1Parent} customerTrainingFix_copy`}>
-                      <b className={styles.challenge1}>Challenge 4</b>
+                      <h3 className={styles.challenge1}>4</h3>
                       <b className={styles.simplifyProducts}>
                         Scale Globally
                         <br />
@@ -334,7 +345,7 @@ const CustomerTraining: NextPage = () => {
               <div className={`${styles.frameChild9} customerTrainingFix_cardIcon`} />
               <div className={`${styles.frameParent13} customerTrainingFix_cardCopy`}>
                 <div className={`${styles.challenge1Parent} customerTrainingFix_copy`}>
-                  <b className={styles.challenge1}>Challenge 5</b>
+                  <h3 className={styles.challenge1}>5</h3>
                   <b className={styles.simplifyProducts}>
                     Track Outcomes
                     <br />
