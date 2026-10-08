@@ -3490,3 +3490,53 @@
 	}
 }
 
+.neurolxpBadgeText {
+  position: relative;
+  display: inline-block;
+}
+
+.neurolxpBadgeTm {
+  display: inline-block;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 1;
+  color: #2d4cc8;
+  margin-left: 2px;
+  vertical-align: super;
+  transform: translateY(3px);
+}
+
+/* NeuroLXP TM: final override of the earlier high-specificity and mobile rules. */
+.helpAndSupport.helpAndSupport .frameChild13 .neurolxpBadgeTm {
+  position: relative;
+  top: -13px;
+  transform: none;
+  vertical-align: baseline;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1;
+}
+@media (max-width: 620px) {
+  .helpAndSupport.helpAndSupport .frameChild13 .neurolxpBadgeTm {
+    top: -8px;
+    font-weight: 400;
+    font-size: 8px;
+  }
+}
+
+
+/* Expert button portal — isolated from NeuroLXP content and section flow */
+.helpAndSupport.helpAndSupport > .helpAndSupportChild .expertButtonSlot {
+  position: absolute;
+  top: 0;
+  right: 70;
+  width: 0;
+  height: 0;
+  z-index: 20;
+}
+@media (max-width: 620px) {
+  .helpAndSupport.helpAndSupport > .helpAndSupportChild .expertButtonSlot {
+    top: -10px;
+    right: 60;
+  }
+}
