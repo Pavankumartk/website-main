@@ -36,15 +36,11 @@
 
 }
 
-
-
 .team-page * {
 
   box-sizing: border-box;
 
 }
-
-
 
 .team-page a {
 
@@ -53,8 +49,6 @@
   text-decoration: none;
 
 }
-
-
 
 .team-page a:focus-visible,
 
@@ -65,8 +59,6 @@
   outline-offset: 2px;
 
 }
-
-
 
 @media (prefers-reduced-motion: reduce) {
 
@@ -80,8 +72,6 @@
 
 }
 
-
-
 .team-breadcrumb {
 
   max-width: 1440px;
@@ -91,8 +81,6 @@
   padding: 20px 24px 0;
 
 }
-
-
 
 .team-breadcrumb ol {
 
@@ -120,8 +108,6 @@
 
 }
 
-
-
 .team-breadcrumb li[aria-current="page"] {
 
   font-weight: 700;
@@ -130,8 +116,6 @@
 
 }
 
-
-
 .team-breadcrumb-sep {
 
   display: flex;
@@ -139,8 +123,6 @@
   align-items: center;
 
 }
-
-
 
 .team-hero {
 
@@ -153,8 +135,6 @@
   text-align: center;
 
 }
-
-
 
 .team-eyebrow {
 
@@ -186,8 +166,6 @@
 
 }
 
-
-
 .team-hero-title {
 
   margin: 12px 0 0;
@@ -203,8 +181,6 @@
   color: var(--team-dark);
 
 }
-
-
 
 .team-hero-desc {
 
@@ -222,8 +198,6 @@
 
 }
 
-
-
 .team-hero-pills {
 
   display: flex;
@@ -237,8 +211,6 @@
   margin-top: 24px;
 
 }
-
-
 
 .team-hero-pill {
 
@@ -276,8 +248,6 @@
 
 }
 
-
-
 .team-founder {
 
   max-width: 1280px;
@@ -293,8 +263,6 @@
   gap: 32px;
 
 }
-
-
 
 .team-founder-photo {
 
@@ -312,15 +280,11 @@
 
 }
 
-
-
 .team-founder-photo img {
 
   object-fit: cover;
 
 }
-
-
 
 .team-founder-content {
 
@@ -334,15 +298,11 @@
 
 }
 
-
-
 .team-eyebrow--inline {
 
   text-transform: none;
 
 }
-
-
 
 .team-founder-name {
 
@@ -360,8 +320,6 @@
 
 }
 
-
-
 .team-founder-role {
 
   margin: 0;
@@ -377,8 +335,6 @@
   color: var(--team-primary);
 
 }
-
-
 
 .team-founder-tagline {
 
@@ -396,8 +352,6 @@
 
 }
 
-
-
 .team-founder-desc {
 
   margin: 0;
@@ -413,8 +367,6 @@
   color: var(--team-text);
 
 }
-
-
 
 .team-linkedin-btn {
 
@@ -452,8 +404,6 @@
 
 }
 
-
-
 .team-linkedin-btn:hover {
 
   transform: translateY(-2px);
@@ -465,8 +415,6 @@
     10px 10px 18px #c6c6c9;
 
 }
-
-
 
 .team-values {
 
@@ -484,189 +432,91 @@
 
 }
 
-
-
 /* ==========================================================
 
    VALUE CARD - REFERENCE NEUMORPHIC BORDER STYLE
 
    \========================================================== */
 
-
-
 .team-value-card {
-
-
 
     background: var(--team-bg);
 
-
-
     border-radius: 28px;
-
-
 
     /* remove normal border */
 
     border: none;
 
-
-
-
-
     /* outer raised card */
 
     box-shadow:
 
-
-
         10px 10px 22px rgba(190,190,194,0.75),
-
-
 
         -10px -10px 22px rgba(255,255,255,0.95),
 
-
-
         inset 0 0 0 14px rgba(255,255,255,0.55);
-
-
 
     padding: 38px 30px;
 
-
-
-
-
     min-height: 190px;
-
-
-
-
 
     display:flex;
 
-
-
     flex-direction:column;
-
-
 
     justify-content:center;
 
-
-
     align-items:center;
-
-
-
-
 
     text-align:center;
 
-
-
     position:relative;
-
-
 
     overflow:hidden;
 
-
-
 }
-
-
-
-
 
 /* inner surface effect */
 
-
-
 .team-value-card::before {
-
-
 
     content:"";
 
-
-
     position:absolute;
-
-
 
     inset:14px;
 
-
-
     border-radius:18px;
-
-
-
-
 
     background:var(--team-bg);
 
-
-
-
-
     box-shadow:
-
-
 
         inset 6px 6px 12px rgba(190,190,194,0.35),
 
-
-
         inset -6px -6px 12px rgba(255,255,255,0.85);
-
-
-
-
 
     z-index:0;
 
-
-
 }
 
-
-
-
-
 /* keep text above inner layer */
-
-
 
 .team-value-card h3,
 
 .team-value-card p {
 
-
-
     position:relative;
-
-
 
     z-index:1;
 
-
-
 }
-
-
-
-
 
 /* Heading */
 
-
-
 .team-value-title {
-
-
 
     font-family:
 
@@ -675,38 +525,20 @@
         "Inter",
 
         sans-serif;
-
-
 
     font-size:24px;
 
-
-
     line-height:32px;
-
-
 
     font-weight:700;
 
-
-
     text-align:center;
-
-
 
 }
 
-
-
-
-
 /* Description */
 
-
-
 .team-value-desc {
-
-
 
     font-family:
 
@@ -716,113 +548,53 @@
 
         sans-serif;
 
-
-
     font-size:20px;
-
-
 
     line-height:28px;
 
-
-
     text-align:center;
 
-
-
 }
-
-
-
-
-
-
 
 /* Mobile */
 
-
-
 @media(max-width:767px){
-
-
 
     .team-value-card {
 
-
-
         min-height:150px;
-
-
 
         padding:30px 20px;
 
-
-
         border-radius:24px;
 
-
-
     }
-
-
-
-
 
     .team-value-card::before {
 
-
-
         inset:12px;
-
-
 
         border-radius:16px;
 
-
-
     }
-
-
-
-
 
     .team-value-title {
 
-
-
         font-size:18px;
-
-
 
         line-height:26px;
 
-
-
     }
-
-
-
-
 
     .team-value-desc {
 
-
-
         font-size:14px;
-
-
 
         line-height:22px;
 
-
-
     }
 
-
-
 }
-
-
 
 .team-value-title {
 
@@ -840,8 +612,6 @@
 
 }
 
-
-
 .team-value-desc {
 
   margin: 0;
@@ -858,15 +628,11 @@
 
 }
 
-
-
 /* ==========================================================
 
    GROUP IMAGE FRAME - REDUCED HEIGHT
 
    \========================================================== */
-
-
 
 .team-group-photo {
 
@@ -878,97 +644,47 @@
 
 }
 
-
-
-
-
 .team-group-photo-frame {
-
-
 
   position: relative;
 
-
-
   width: 100%;
-
-
 
   height: 420px;
 
-
-
   border-radius: 32px;
-
-
 
   background: var(--team-bg);
 
-
-
   box-shadow: var(--team-inset-deep);
-
-
 
   overflow: hidden;
 
-
-
 }
-
-
-
-
 
 .team-group-photo-inner {
 
-
-
   position: absolute;
-
-
 
   inset: 16px;
 
-
-
   border-radius: 16px;
-
-
 
   overflow: hidden;
 
-
-
   box-shadow: var(--team-raised-strong);
 
-
-
 }
-
-
-
-
 
 .team-group-photo-inner img {
 
-
-
   width:100%;
-
-
 
   height:100%;
 
-
-
   object-fit:cover;
 
-
-
 }
-
-
 
 .team-section-title {
 
@@ -992,8 +708,6 @@
 
 }
 
-
-
 .team-grid-section {
 
   max-width: 1280px;
@@ -1003,8 +717,6 @@
   padding: 0 24px;
 
 }
-
-
 
 .team-grid {
 
@@ -1017,8 +729,6 @@
   gap: 16px;
 
 }
-
-
 
 .team-card {
 
@@ -1042,8 +752,6 @@
 
 }
 
-
-
 .team-avatar {
 
   position: relative;
@@ -1064,15 +772,11 @@
 
 }
 
-
-
 .team-avatar img {
 
   object-fit: cover;
 
 }
-
-
 
 .team-card-name {
 
@@ -1090,8 +794,6 @@
 
 }
 
-
-
 .team-card-role {
 
   margin: 0;
@@ -1107,8 +809,6 @@
   color: var(--team-dark);
 
 }
-
-
 
 .team-card-blurb {
 
@@ -1126,8 +826,6 @@
 
 }
 
-
-
 .team-bring {
 
   max-width: 1180px;
@@ -1139,8 +837,6 @@
   justify-self: center;
 
 }
-
-
 
 .team-bring-grid {
 
@@ -1154,8 +850,6 @@
 
 }
 
-
-
 .team-bring-item {
 
   display: flex;
@@ -1165,8 +859,6 @@
   gap: 16px;
 
 }
-
-
 
 .team-bring-icon {
 
@@ -1190,8 +882,6 @@
 
 }
 
-
-
 .team-bring-icon svg {
 
   width: 26px;
@@ -1199,8 +889,6 @@
   height: 26px;
 
 }
-
-
 
 .team-bring-copy h3 {
 
@@ -1215,8 +903,6 @@
   letter-spacing: 0.03em;
 
 }
-
-
 
 .team-bring-copy p {
 
@@ -1234,8 +920,6 @@
 
 }
 
-
-
 .team-how {
 
   max-width: 900px;
@@ -1248,8 +932,6 @@
 
 }
 
-
-
 .team-how-grid {
 
   margin-top: 50px;
@@ -1261,8 +943,6 @@
   gap: 60px;
 
 }
-
-
 
 .team-how-card {
 
@@ -1283,8 +963,6 @@
   height: 132px;
 
 }
-
-
 
 .team-how-icon {
 
@@ -1316,8 +994,6 @@
 
 }
 
-
-
 .team-how-icon svg {
 
   width: 26px;
@@ -1325,8 +1001,6 @@
   height: 26px;
 
 }
-
-
 
 .team-how-card h3 {
 
@@ -1341,8 +1015,6 @@
   letter-spacing: 0.03em;
 
 }
-
-
 
 .team-how-card p {
 
@@ -1360,8 +1032,6 @@
 
 }
 
-
-
 @media (min-width: 768px) {
 
   .team-hero {
@@ -1372,8 +1042,6 @@
 
   }
 
-
-
   .team-hero-title {
 
     font-size: 36px;
@@ -1382,8 +1050,6 @@
 
   }
 
-
-
   .team-hero-desc {
 
     font-size: 24px;
@@ -1391,8 +1057,6 @@
     line-height: 32px;
 
   }
-
-
 
   .team-founder {
 
@@ -1404,23 +1068,17 @@
 
   }
 
-
-
   .team-founder-photo {
 
     flex: 0 0 45%;
 
   }
 
-
-
   .team-founder-content {
 
     flex: 1;
 
   }
-
-
 
   .team-founder-name {
 
@@ -1430,15 +1088,11 @@
 
   }
 
-
-
   .team-grid {
 
     grid-template-columns: repeat(2, 1fr);
 
   }
-
-
 
   .team-bring-grid {
 
@@ -1448,15 +1102,11 @@
 
   }
 
-
-
   .team-how-grid {
 
     grid-template-columns: repeat(2, 1fr);
 
   }
-
-
 
   .team-section-title {
 
@@ -1468,8 +1118,6 @@
 
 }
 
-
-
 @media (min-width: 1024px) {
 
   .team-founder-photo {
@@ -1478,23 +1126,17 @@
 
   }
 
-
-
   .team-hero {
 
     max-width: 900px;
 
   }
 
-
-
   .team-values {
 
     grid-template-columns: repeat(3, 1fr);
 
   }
-
-
 
   .team-grid {
 
@@ -1503,8 +1145,6 @@
   }
 
 }
-
-
 
 @media (min-width: 1280px) {
 
@@ -1516,8 +1156,6 @@
 
   }
 
-
-
   .team-eyebrow {
 
     font-size: 24px;
@@ -1528,8 +1166,6 @@
 
   }
 
-
-
   .team-hero-pills {
 
     gap: 32px;
@@ -1537,8 +1173,6 @@
     margin-top: 32px;
 
   }
-
-
 
   .team-hero-pill {
 
@@ -1548,15 +1182,11 @@
 
   }
 
-
-
   .team-founder-photo {
 
     flex: 0 0 608px;
 
   }
-
-
 
   .team-founder-name {
 
@@ -1565,8 +1195,6 @@
     line-height: 50px;
 
   }
-
-
 
   .team-founder-role,
 
@@ -1578,8 +1206,6 @@
 
   }
 
-
-
   .team-founder-desc {
 
     font-size: 24px;
@@ -1587,8 +1213,6 @@
     line-height: 32px;
 
   }
-
-
 
   .team-linkedin-btn {
 
@@ -1600,15 +1224,11 @@
 
   }
 
-
-
   .team-values {
 
     gap: 32px;
 
   }
-
-
 
   .team-value-title {
 
@@ -1618,8 +1238,6 @@
 
   }
 
-
-
   .team-value-desc {
 
     font-size: 20px;
@@ -1627,8 +1245,6 @@
     line-height: 28px;
 
   }
-
-
 
   .team-section-title {
 
@@ -1638,8 +1254,6 @@
 
   }
 
-
-
   .team-how .team-section-title {
 
     font-size: 36px;
@@ -1647,8 +1261,6 @@
     line-height: 74px;
 
   }
-
-
 
   .team-grid {
 
@@ -1658,8 +1270,6 @@
 
   }
 
-
-
   .team-avatar {
 
     width: 147px;
@@ -1667,8 +1277,6 @@
     height: 147px;
 
   }
-
-
 
   .team-card-name,
 
@@ -1680,8 +1288,6 @@
 
   }
 
-
-
   .team-card-role {
 
     font-size: 18px;
@@ -1689,8 +1295,6 @@
     line-height: 26px;
 
   }
-
-
 
   .team-bring-item h3 {
 
@@ -1700,8 +1304,6 @@
 
   }
 
-
-
   .team-bring-item p {
 
     font-size: 20px;
@@ -1710,8 +1312,6 @@
 
   }
 
-
-
   .team-how-card h3 {
 
     font-size: 28px;
@@ -1719,8 +1319,6 @@
     line-height: 42px;
 
   }
-
-
 
   .team-how-card p {
 
@@ -1731,8 +1329,6 @@
   }
 
 }
-
-
 
 @media (min-width: 1440px) {
 
@@ -1758,8 +1354,6 @@
 
 }
 
-
-
 @media (min-width: 2560px) {
 
   .team-page {
@@ -1769,8 +1363,6 @@
   }
 
 }
-
-
 
 /* Value cards - no image layout */
 
@@ -1792,8 +1384,6 @@
 
 }
 
-
-
 .team-value-desc {
 
   margin: 0;
@@ -1812,8 +1402,6 @@
 
 }
 
-
-
 @media(max-width:767px){
 
   .team-values{
@@ -1826,8 +1414,6 @@
 
   }
 
-
-
   .team-value-card{
 
     min-height:120px;
@@ -1838,8 +1424,6 @@
 
   }
 
-
-
   .team-value-title{
 
     font-size:18px;
@@ -1847,8 +1431,6 @@
     line-height:26px;
 
   }
-
-
 
   .team-value-desc{
 
@@ -1860,17 +1442,11 @@
 
 }
 
-
-
-
-
 /* ==========================================================
 
    VALUE CARDS - CENTER ALIGN + REFERENCE BORDER STYLE
 
    \========================================================== */
-
-
 
 .team-values {
 
@@ -1886,25 +1462,15 @@
 
 }
 
-
-
 .team-value-card {
-
-
 
   background: var(--team-bg);
 
-
-
   border-radius: 26px;
-
-
 
   /* reference neumorphic raised border */
 
   border: 1px solid rgba(255,255,255,0.75);
-
-
 
   box-shadow:
 
@@ -1912,241 +1478,117 @@
 
     -8px -8px 18px rgba(255,255,255,0.95);
 
-
-
   padding: 28px 24px;
 
-
-
   min-height: 150px;
-
-
 
   display:flex;
 
   flex-direction:column;
 
-
-
   justify-content:center;
 
   align-items:center;
 
-
-
   text-align:center;
-
-
 
   gap:10px;
 
-
-
 }
-
-
-
-
 
 /* Heading center */
 
-
-
 .team-value-title {
-
-
 
   width:100%;
 
-
-
   margin:0;
-
-
 
   text-align:center;
 
-
-
   font-family:"Segoe UI","Inter",sans-serif;
-
-
 
   font-size:24px;
 
-
-
   line-height:1.3;
-
-
 
   font-weight:700;
 
-
-
 }
-
-
-
-
 
 /* Description center */
 
-
-
 .team-value-desc {
-
-
 
   width:100%;
 
-
-
   margin:0;
-
-
 
   text-align:center;
 
-
-
   font-family:"Segoe UI","Inter",sans-serif;
-
-
 
   font-size:20px;
 
-
-
   line-height:1.4;
 
-
-
 }
-
-
-
-
 
 /* Tablet */
 
-
-
 @media(max-width:1024px){
 
-
-
   .team-values{
-
-
 
     grid-template-columns:repeat(2,minmax(0,1fr));
 
-
-
     gap:24px;
-
-
 
   }
 
-
-
 }
-
-
-
-
 
 /* Mobile */
 
-
-
 @media(max-width:767px){
-
-
 
   .team-values{
 
-
-
     grid-template-columns:1fr;
-
-
 
     gap:18px;
 
-
-
     padding-inline:20px;
 
-
-
   }
-
-
-
-
 
   .team-value-card{
 
-
-
     min-height:130px;
-
-
 
     padding:22px 18px;
 
-
-
     border-radius:22px;
 
-
-
   }
-
-
-
-
 
   .team-value-title{
 
-
-
     font-size:18px;
-
-
 
     line-height:26px;
 
-
-
   }
-
-
-
-
 
   .team-value-desc{
 
-
-
     font-size:14px;
-
-
 
     line-height:22px;
 
-
-
   }
 
-
-
 }
-
-
 
 /* ==========================================================
 
@@ -2156,8 +1598,6 @@
 
    \========================================================== */
 
-
-
 .team-value-card {
 
   background: var(--team-bg);
@@ -2166,19 +1606,13 @@
 
   border-radius: 28px;
 
-
-
   position: relative;
 
   overflow: hidden;
 
-
-
   padding: 38px 30px;
 
   min-height: 190px;
-
-
 
   display: flex;
 
@@ -2188,11 +1622,7 @@
 
   align-items: center;
 
-
-
   text-align: center;
-
-
 
   box-shadow:
 
@@ -2201,10 +1631,6 @@
     -10px -10px 22px rgba(255,255,255,0.95);
 
 }
-
-
-
-
 
 /* Inner recessed border only */
 
@@ -2216,15 +1642,9 @@
 
   inset: 14px;
 
-
-
   border-radius: 20px;
 
-
-
   background: var(--team-bg);
-
-
 
   box-shadow:
 
@@ -2232,15 +1652,9 @@
 
     inset -6px -6px 14px rgba(255,255,255,0.95);
 
-
-
   z-index: 0;
 
 }
-
-
-
-
 
 .team-value-card h3,
 
@@ -2252,17 +1666,11 @@
 
 }
 
-
-
-
-
 /* Keep typography */
 
 .team-value-title {
 
   margin: 0 0 14px;
-
-
 
   font-family:
 
@@ -2271,8 +1679,6 @@
     "Inter",
 
     sans-serif;
-
-
 
   font-size: 24px;
 
@@ -2280,23 +1686,15 @@
 
   font-weight: 700;
 
-
-
   text-align: center;
 
   color: var(--team-primary);
 
 }
 
-
-
-
-
 .team-value-desc {
 
   margin: 0;
-
-
 
   font-family:
 
@@ -2306,15 +1704,11 @@
 
     sans-serif;
 
-
-
   font-size: 20px;
 
   line-height: 28px;
 
   font-weight: 400;
-
-
 
   text-align: center;
 
@@ -2322,13 +1716,7 @@
 
 }
 
-
-
-
-
 @media(max-width:767px){
-
-
 
   .team-value-card {
 
@@ -2340,8 +1728,6 @@
 
   }
 
-
-
   .team-value-card::before {
 
     inset:12px;
@@ -2350,8 +1736,6 @@
 
   }
 
-
-
   .team-value-title {
 
     font-size:18px;
@@ -2359,8 +1743,6 @@
     line-height:26px;
 
   }
-
-
 
   .team-value-desc {
 
@@ -2371,8 +1753,6 @@
   }
 
 }
-
-
 
 /* ==========================================================
 
@@ -2396,43 +1776,21 @@
 
    \========================================================== */
 
-
-
-
-
 @media (max-width:1024px){
-
-
 
   .team-founder{
 
-
-
     display:flex;
-
-
 
     flex-direction:column;
 
-
-
     align-items:center;
-
-
 
     gap:28px;
 
-
-
     padding:0 24px;
 
-
-
   }
-
-
-
-
 
   /*
 
@@ -2442,209 +1800,97 @@
 
   */
 
-
-
   .team-founder-content{
-
-
 
     display:contents;
 
-
-
   }
-
-
-
-
 
   /* 1. Label */
 
-
-
   .team-eyebrow--inline{
-
-
 
     order:1;
 
-
-
     align-self:center;
-
-
 
     margin-bottom:4px;
 
-
-
   }
-
-
-
-
 
   /* 2. Image */
 
-
-
   .team-founder-photo{
-
-
 
     order:2;
 
-
-
     width:100%;
-
-
 
     max-width:520px;
 
-
-
     aspect-ratio:1 / 1;
 
-
-
   }
-
-
-
-
 
   /* 3. Name */
 
-
-
   .team-founder-name{
-
-
 
     order:3;
 
-
-
     width:100%;
-
-
 
     text-align:center;
 
-
-
   }
-
-
-
-
 
   /* 4. Role */
 
-
-
   .team-founder-role{
-
-
 
     order:4;
 
-
-
     width:100%;
-
-
 
     text-align:center;
 
-
-
   }
-
-
-
-
 
   /* 5. Tagline */
 
-
-
   .team-founder-tagline{
-
-
 
     order:5;
 
-
-
     width:100%;
-
-
 
     text-align:center;
 
-
-
   }
-
-
-
-
 
   /* 6. Description */
 
-
-
   .team-founder-desc{
-
-
 
     order:6;
 
-
-
     width:100%;
-
-
 
     text-align:center;
 
-
-
   }
-
-
-
-
 
   /* 7. Button */
 
-
-
   .team-linkedin-btn{
-
-
 
     order:7;
 
-
-
     align-self:center;
-
-
 
   }
 
-
-
 }
-
-
-
-
-
-
 
 /* ==========================================================
 
@@ -2652,193 +1898,81 @@
 
    \========================================================== */
 
-
-
-
-
 @media(max-width:767px){
-
-
-
-
 
   .team-founder{
 
-
-
     padding:0 20px;
-
-
 
     gap:22px;
 
-
-
     margin-top:32px;
 
-
-
   }
-
-
-
-
-
-
 
   .team-eyebrow--inline{
 
-
-
     font-size:18px;
 
-
-
     line-height:26px;
-
-
 
     padding:10px 24px;
 
-
-
   }
-
-
-
-
-
-
 
   .team-founder-photo{
 
-
-
     width:100%;
-
-
 
     max-width:360px;
 
-
-
     aspect-ratio:1 / 1;
-
-
 
     border-radius:24px;
 
-
-
   }
-
-
-
-
-
-
 
   .team-founder-name{
 
-
-
     font-size:32px;
-
-
 
     line-height:40px;
 
-
-
   }
-
-
-
-
-
-
 
   .team-founder-role{
 
-
-
     font-size:20px;
-
-
 
     line-height:28px;
 
-
-
   }
-
-
-
-
-
-
 
   .team-founder-tagline{
 
-
-
     font-size:20px;
-
-
 
     line-height:28px;
 
-
-
   }
-
-
-
-
-
-
 
   .team-founder-desc{
 
-
-
     font-size:16px;
-
-
 
     line-height:26px;
 
-
-
   }
-
-
-
-
-
-
 
   .team-linkedin-btn{
 
-
-
     font-size:18px;
-
-
 
     padding:14px 28px;
 
-
-
   }
 
-
-
-
-
 }
-
-
 
 /* ==========================================================
 
@@ -2848,51 +1982,27 @@
 
    \========================================================== */
 
-
-
 .team-linkedin-btn {
-
-
 
   display: inline-flex;
 
-
-
   align-items: center;
-
-
 
   justify-content: center;
 
-
-
   gap: 12px;
-
-
 
   margin-top: 8px;
 
-
-
   padding: 16px 32px;
-
-
 
   background: var(--team-bg);
 
-
-
   border: none;
-
-
 
   border-radius: 32px;
 
-
-
   cursor: pointer;
-
-
 
   font-family:
 
@@ -2902,29 +2012,15 @@
 
     sans-serif;
 
-
-
   font-size: 24px;
-
-
 
   line-height: 32px;
 
-
-
   font-weight: 600;
-
-
 
   color: var(--team-primary);
 
-
-
-
-
   /* Normal OUT / Raised state */
-
-
 
   box-shadow:
 
@@ -2932,13 +2028,7 @@
 
     8px 8px 16px #c6c6c9;
 
-
-
-
-
   transform: translateY(0);
-
-
 
   transition:
 
@@ -2948,23 +2038,11 @@
 
 }
 
-
-
-
-
-
-
 /* Hover IN */
-
-
 
 .team-linkedin-btn:hover {
 
-
-
   transform: translateY(-4px);
-
-
 
   box-shadow:
 
@@ -2972,31 +2050,15 @@
 
     14px 14px 24px #c6c6c9;
 
-
-
 }
-
-
-
-
-
-
 
 /* Remove click movement */
 
-
-
 .team-linkedin-btn:active {
-
-
 
   transform: translateY(0);
 
-
-
 }
-
-
 
 /* ==========================================================
 
@@ -3006,17 +2068,11 @@
 
    \========================================================== */
 
-
-
 .team-card-linkedin {
-
-
 
     width:58px;
 
     height:58px;
-
-
 
     display:flex;
 
@@ -3024,23 +2080,13 @@
 
     justify-content:center;
 
-
-
     margin-top:18px;
-
-
 
     border-radius:50%;
 
-
-
     background:var(--team-bg);
 
-
-
     color:var(--team-primary);
-
-
 
     box-shadow:
 
@@ -3048,59 +2094,31 @@
 
         6px 6px 14px #c6c6c9;
 
-
-
     transition:
 
         transform .35s ease,
 
         box-shadow .35s ease;
 
-
-
 }
-
-
-
-
 
 /* LinkedIn icon */
 
-
-
 .team-card-linkedin svg {
-
-
 
     width:30px;
 
     height:30px;
 
-
-
     stroke:var(--team-primary);
-
-
 
 }
 
-
-
-
-
-
-
 /* Hover IN */
-
-
 
 .team-card-linkedin:hover {
 
-
-
     transform:translateY(-4px);
-
-
 
     box-shadow:
 
@@ -3108,23 +2126,11 @@
 
         10px 10px 20px #c6c6c9;
 
-
-
 }
-
-
-
-
-
-
 
 /* Hover OUT */
 
-
-
 .team-card-linkedin {
-
-
 
     transition:
 
@@ -3132,55 +2138,27 @@
 
         box-shadow .35s ease;
 
-
-
 }
-
-
-
-
-
-
 
 @media(max-width:767px){
 
-
-
     .team-card-linkedin {
-
-
 
         width:48px;
 
         height:48px;
 
-
-
     }
 
-
-
-
-
     .team-card-linkedin svg {
-
-
 
         width:24px;
 
         height:24px;
 
-
-
     }
 
-
-
 }
-
-
-
-
 
 /* ==========================================================================
 
@@ -3190,15 +2168,11 @@
 
    \========================================================================== */
 
-
-
 .team-founder {
 
   align-items: center;
 
 }
-
-
 
 .team-founder-photo {
 
@@ -3212,8 +2186,6 @@
 
 }
 
-
-
 .team-founder-photo img {
 
   width: 100% !important;
@@ -3226,15 +2198,11 @@
 
 }
 
-
-
 .team-founder-content {
 
   min-width: 0;
 
 }
-
-
 
 .team-eyebrow--inline,
 
@@ -3249,8 +2217,6 @@
   max-width: 100%;
 
 }
-
-
 
 .team-founder-name,
 
@@ -3270,10 +2236,6 @@
 
 }
 
-
-
-
-
 /* Desktop — preserve the existing desktop design/sizing, only correct alignment */
 
 @media (min-width: 1025px) {
@@ -3290,8 +2252,6 @@
 
   }
 
-
-
   .team-founder-photo {
 
     width: 100% !important;
@@ -3304,8 +2264,6 @@
 
   }
 
-
-
   .team-founder-content {
 
     width: 100% !important;
@@ -3316,8 +2274,6 @@
 
   }
 
-
-
   .team-eyebrow--inline {
 
     width: fit-content !important;
@@ -3325,8 +2281,6 @@
     max-width: 100% !important;
 
   }
-
-
 
   .team-founder-name,
 
@@ -3344,10 +2298,6 @@
 
 }
 
-
-
-
-
 /* Tablet — label, image and every heading remain fully visible and centered */
 
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -3364,8 +2314,6 @@
 
   }
 
-
-
   .team-founder-photo {
 
     width: min(100%, 560px) !important;
@@ -3376,15 +2324,11 @@
 
   }
 
-
-
   .team-founder-content {
 
     width: 100% !important;
 
   }
-
-
 
   .team-eyebrow--inline {
 
@@ -3395,8 +2339,6 @@
     text-align: center !important;
 
   }
-
-
 
   .team-founder-name,
 
@@ -3418,10 +2360,6 @@
 
 }
 
-
-
-
-
 /* Mobile — no cropped image, no cut headings */
 
 @media (max-width: 767px) {
@@ -3436,8 +2374,6 @@
 
   }
 
-
-
   .team-founder-photo {
 
     width: 100% !important;
@@ -3450,8 +2386,6 @@
 
   }
 
-
-
   .team-founder-photo img {
 
     object-fit: contain !important;
@@ -3460,8 +2394,6 @@
 
   }
 
-
-
   .team-founder-content {
 
     width: 100% !important;
@@ -3469,8 +2401,6 @@
     min-width: 0 !important;
 
   }
-
-
 
   .team-eyebrow--inline {
 
@@ -3487,8 +2417,6 @@
     text-align: center !important;
 
   }
-
-
 
   .team-founder-name,
 
@@ -3520,8 +2448,6 @@
 
    \========================================================================== */
 
-
-
 .team-group-photo-frame {
 
   width: 100% !important;
@@ -3536,8 +2462,6 @@
 
 }
 
-
-
 .team-group-photo-inner {
 
   position: absolute !important;
@@ -3547,8 +2471,6 @@
   overflow: hidden !important;
 
 }
-
-
 
 .team-group-photo-inner img {
 
@@ -3562,10 +2484,6 @@
 
 }
 
-
-
-
-
 /* Tablet */
 
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -3576,15 +2494,11 @@
 
   }
 
-
-
   .team-group-photo-frame {
 
     aspect-ratio: 1104 / 388 !important;
 
   }
-
-
 
   .team-group-photo-inner {
 
@@ -3593,10 +2507,6 @@
   }
 
 }
-
-
-
-
 
 /* Mobile */
 
@@ -3610,8 +2520,6 @@
 
   }
 
-
-
   .team-group-photo-frame {
 
     width: 100% !important;
@@ -3624,8 +2532,6 @@
 
   }
 
-
-
   .team-group-photo-inner {
 
     inset: 8px !important;
@@ -3633,8 +2539,6 @@
     border-radius: 14px !important;
 
   }
-
-
 
   .team-group-photo-inner img {
 
@@ -3645,10 +2549,6 @@
   }
 
 }
-
-
-
-
 
 /* Requested corrections: shared badges and founder LinkedIn hover only. */
 
@@ -3682,8 +2582,6 @@
 
 }
 
-
-
 @media (max-width: 768px) {
 
   .team-page .team-eyebrow {
@@ -3695,8 +2593,6 @@
   }
 
 }
-
-
 
 .team-page .team-founder .team-linkedin-btn {
 
@@ -3711,8 +2607,6 @@
   transition: box-shadow 180ms ease;
 
 }
-
-
 
 .team-page .team-founder .team-linkedin-btn:hover,
 
@@ -3730,8 +2624,6 @@
 
 }
 
-
-
 @media (prefers-reduced-motion: reduce) {
 
   .team-page .team-founder .team-linkedin-btn {
@@ -3742,136 +2634,253 @@
 
 }
 
-
 /* Requested heading accent: only the final word of main headings */
+
 .team-heading-accent {
+
   color: var(--team-primary);
+
 }
 
 /* Keep every team-card subtext on exactly two intentional lines */
+
 .team-card-blurb {
+
   white-space: pre-line;
+
   min-height: 44px;
+
 }
 
 @media (min-width: 1280px) {
+
   .team-card-blurb {
+
     min-height: 56px;
+
   }
+
 }
 
-
 /* =========================================================
+
    REQUESTED TEAM PAGE REFINEMENTS
+
    ========================================================= */
 
 /* Keep "Meet The People Behind The Platform" on one line on desktop. */
+
 @media (min-width: 768px) {
+
   .team-section-title--people {
+
     max-width: none;
+
     white-space: nowrap;
+
   }
+
 }
 
 /* Only these two section headings use the blue neumorphic badge style. */
+
 .team-section-badge {
+
   width: fit-content;
+
   max-width: calc(100% - 32px);
+
   padding: 10px 28px;
+
   border-radius: 28px;
+
   background: var(--team-bg);
+
   box-shadow: var(--team-inset);
+
   color: var(--team-primary);
+
   line-height: 1.3 !important;
+
   text-transform: none;
+
 }
 
 .team-section-badge .team-heading-accent {
+
   color: var(--team-primary);
+
 }
 
 /* TM beside NeuroLXP. */
+
 .team-tm {
+
   position: relative;
+
   top: -0.72em;
+
   margin-left: 3px;
+
   font-size: 0.32em;
+
   font-weight: 800;
+
   line-height: 1;
+
   letter-spacing: 0;
+
   color: inherit;
+
 }
 
 .team-tm--badge {
+
   top: -0.62em;
+
   font-size: 0.42em;
+
 }
 
 /* Increase text only inside the three hero cards on desktop. */
+
 @media (min-width: 768px) {
+
   .team-hero-pill {
+
     font-size: 24px;
+
     line-height: 32px;
+
   }
+
 }
 
-
 /* Match the visual style of the "Our Team" inset badge only.
+
    Alignment/position is intentionally untouched. */
+
 .team-section-badge {
+
   width: fit-content;
+
   max-width: 100%;
+
   padding: 8px 24px;
+
   border-radius: 28px;
+
   background: var(--team-bg);
+
   box-shadow: var(--team-inset);
+
   color: var(--team-primary);
+
   font-size: 16px !important;
+
   font-weight: 600;
+
   line-height: 24px !important;
+
   letter-spacing: 0.03em;
+
   text-transform: capitalize;
+
   transform: none !important;
+
   transition: none !important;
+
   filter: none !important;
+
 }
 
 .team-section-badge:hover,
+
 .team-section-badge:focus,
+
 .team-section-badge:focus-visible,
+
 .team-section-badge:active {
+
   background: var(--team-bg);
+
   box-shadow: var(--team-inset);
+
   color: var(--team-primary);
+
   transform: none !important;
+
   filter: none !important;
+
 }
 
 @media (min-width: 1280px) {
+
   .team-section-badge {
+
     padding: 12px 32px;
+
     font-size: 24px !important;
+
     line-height: 32px !important;
+
   }
+
 }
 
-
 /* FINAL FIX: use the exact real inset shadow from the "Our Team" badge.
+
    No alignment or positioning changes. */
+
 .team-page .team-section-badge {
+
   box-shadow:
+
     inset -4px -4px 4px #ffffff,
+
     inset 4px 4px 4px rgba(196, 196, 196, 0.8) !important;
+
 }
 
 .team-page .team-section-badge:hover,
+
 .team-page .team-section-badge:focus,
+
 .team-page .team-section-badge:focus-visible,
+
 .team-page .team-section-badge:active {
+
   box-shadow:
+
     inset -4px -4px 4px #ffffff,
+
     inset 4px 4px 4px rgba(196, 196, 196, 0.8) !important;
+
   transform: none !important;
+
   filter: none !important;
+
 }
 
+
+
+/* Expert button anchor only: does not alter the How We Work layout. */
+.team-page .team-how {
+  position: relative;
+}
+
+.team-page .team-expert-button-slot {
+  position: absolute;
+  top: 0;
+  right: 24px;
+  width: 0;
+  height: 0;
+  z-index: 20;
+}
+
+@media (max-width: 767px) {
+  .team-page .team-expert-button-slot {
+    top: -48px;
+    right: 80px;
+  }
+}
