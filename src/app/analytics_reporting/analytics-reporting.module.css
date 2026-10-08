@@ -5566,11 +5566,17 @@
 
 
 
-  .frameDiv { font-size: 12px; line-height: 18px; }
+.frameDiv,
+.frameDiv .home,
+.frameDiv .features,
+.frameDiv .arrowRightDoubleGroup .learningEcoSystem {
+  font-size: 12px;
+  line-height: 18px;
+}
 
-
-
-  .frameDiv .arrowRightDoubleGroup .learningEcoSystem { font-weight: 400; }
+.frameDiv .arrowRightDoubleGroup .learningEcoSystem {
+  font-weight: 400;
+}
 
 
 
