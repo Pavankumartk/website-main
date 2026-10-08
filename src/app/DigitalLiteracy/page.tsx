@@ -252,9 +252,17 @@ function DigitalLiteracyAdvantage() {
         </defs>
       </svg>
       <div className={styles["dl-advantage-text"]}>
-        <span className={styles["dl-hero-badge"]}>
-The NeuroLXP<sup className={styles["nlxp-footer-heading-tm"]}>TM</sup>&nbsp;Advantage        </span>
-        <h2 className={styles["dl-section-heading"]}>Equip Every Workforce for a Digital Future</h2>
+        
+<span className={styles["dl-hero-badge"]}>
+  The{" "}
+  <span style={{ whiteSpace: "nowrap" }}>
+    NeuroLXP
+    <sup className={styles["nlxp-footer-heading-tm"]}>TM</sup>
+  </span>{" "}
+  Advantage
+</span>   
+ 
+ <h2 className={styles["dl-section-heading"]}>Equip Every Workforce for a Digital Future</h2>
         <p className={styles["dl-hero-subtext"]}>From foundational skills to advanced expertise skills in one platform.</p>
       </div>
       <div className={styles["dl-advantage-grid"]}>
