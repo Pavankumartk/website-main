@@ -10,10 +10,6 @@ import Footer from "../../components/Footer/footer";
 
 import { BookDemoTrigger } from "../../components/Bookademo/Bookademo";
 
-
-
-
-
 const MobileLearning: NextPage = () => {
 
     return (
@@ -32,8 +28,6 @@ const MobileLearning: NextPage = () => {
 
                     </div>
 
-
-
                     <Image
 
                         className="breadcrumbArrow"
@@ -49,8 +43,6 @@ const MobileLearning: NextPage = () => {
                         aria-hidden="true"
 
                     />
-
-
 
                     <div className="featuresWrapper">
 
@@ -58,8 +50,6 @@ const MobileLearning: NextPage = () => {
 
                     </div>
 
-
-
                     <Image
 
                         className="breadcrumbArrow"
@@ -75,8 +65,6 @@ const MobileLearning: NextPage = () => {
                         aria-hidden="true"
 
                     />
-
-
 
                     <div className="arrowRightDoubleGroup">
 
@@ -94,8 +82,6 @@ const MobileLearning: NextPage = () => {
 
                         <div className="mobileHeroBadge">Mobile Learning</div>
 
-
-
                         <h1 id="mobile-learning-title" className="mobileHeroTitle">
 
                             <span>Learn Anytime! Anywhere!</span>
@@ -104,15 +90,11 @@ const MobileLearning: NextPage = () => {
 
                         </h1>
 
-
-
                         <p className="mobileHeroDescription">
 
                             NeuroLXP enables seamless learning across smartphones and tablets.
 
                         </p>
-
-
 
                         <div className="mobileHeroFeatures">
 
@@ -124,8 +106,6 @@ const MobileLearning: NextPage = () => {
 
                         </div>
 
-
-
                         <BookDemoTrigger className="mobileHeroButton">
 
                             Book a Demo
@@ -133,8 +113,6 @@ const MobileLearning: NextPage = () => {
                         </BookDemoTrigger>
 
                     </div>
-
-
 
                     <div className="mobileHeroVisual">
 
@@ -166,6 +144,8 @@ const MobileLearning: NextPage = () => {
 
                 <div className="routinePanel">
 
+                <div className="routineExpertAction"><BookDemoTrigger className="routineExpertButton">Talk to Our Expert</BookDemoTrigger></div>
+
                     <div className="routineHeader">
 
                         <div className="routineBadge">Flexible Learning Access</div>
@@ -175,8 +155,6 @@ const MobileLearning: NextPage = () => {
                         <p className="routineSubtitle"><span className="routineTextLine">Learn anytime, anywhere,</span>{" "}<span className="routineTextLine">at your own pace.</span></p>
 
                     </div>
-
-
 
                     <div className="routineStats">
 
@@ -217,8 +195,6 @@ const MobileLearning: NextPage = () => {
                         </div>
 
                     </div>
-
-
 
                     <div className="routineFeatures">
 
@@ -274,8 +250,6 @@ const MobileLearning: NextPage = () => {
 
                         <div className="microBadge">Microlearning</div>
 
-
-
                         <h2 id="microlearning-title" className="microTitle">
 
                             <span>Short Lessons! </span>
@@ -286,8 +260,6 @@ const MobileLearning: NextPage = () => {
 
                         </h2>
 
-
-
                         <p className="microDescription">
 
                             Break learning into quick, manageable experiences that fit busy schedules.
@@ -295,8 +267,6 @@ const MobileLearning: NextPage = () => {
                         </p>
 
                     </div>
-
-
 
                     <div className="microBenefits">
 
@@ -321,11 +291,10 @@ const MobileLearning: NextPage = () => {
                             </div>
 
                             <span className="microBenefitDesktop">Learn In Small, Focused Segments</span>
+
                             <span className="microBenefitMobile">Learn in Short Lessons</span>
 
                         </div>
-
-
 
                         <div className="microBenefit microBenefitPurple">
 
@@ -348,11 +317,10 @@ const MobileLearning: NextPage = () => {
                             </div>
 
                             <span className="microBenefitDesktop">Revise Concepts Quickly</span>
+
                             <span className="microBenefitMobile">Revise Quickly</span>
 
                         </div>
-
-
 
                         <div className="microBenefit microBenefitBlue">
 
@@ -375,11 +343,10 @@ const MobileLearning: NextPage = () => {
                             </div>
 
                             <span className="microBenefitDesktop">Build Consistent Learning Habits</span>
+
                             <span className="microBenefitMobile">Build Learning Habits</span>
 
                         </div>
-
-
 
                         <div className="microBenefit microBenefitTeal">
 
@@ -402,6 +369,7 @@ const MobileLearning: NextPage = () => {
                             </div>
 
                             <span className="microBenefitDesktop">Stay Engaged, Stress-Free</span>
+
                             <span className="microBenefitMobile">Stay Stress-Free</span>
 
                         </div>
@@ -438,8 +406,6 @@ const MobileLearning: NextPage = () => {
 
                         </g>
 
-
-
                         <g filter="url(#interactiveInnerShadow)">
 
                             <path
@@ -461,8 +427,6 @@ const MobileLearning: NextPage = () => {
                             />
 
                         </g>
-
-
 
                         <defs>
 
@@ -514,8 +478,6 @@ const MobileLearning: NextPage = () => {
 
                                 <feBlend mode="normal" in2="BackgroundImageFix" result="shadow1" />
 
-
-
                                 <feColorMatrix
 
                                     in="SourceAlpha"
@@ -548,8 +510,6 @@ const MobileLearning: NextPage = () => {
 
                             </filter>
 
-
-
                             <filter
 
                                 id="interactiveInnerShadow"
@@ -571,8 +531,6 @@ const MobileLearning: NextPage = () => {
                                 <feFlood floodOpacity="0" result="BackgroundImageFix" />
 
                                 <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
-
-
 
                                 <feColorMatrix
 
@@ -601,8 +559,6 @@ const MobileLearning: NextPage = () => {
                                 />
 
                                 <feBlend mode="normal" in2="shape" result="inner1" />
-
-
 
                                 <feColorMatrix
 
@@ -633,8 +589,6 @@ const MobileLearning: NextPage = () => {
                                 <feBlend mode="normal" in2="inner1" result="inner2" />
 
                             </filter>
-
-
 
                             <pattern
 
@@ -698,15 +652,13 @@ const MobileLearning: NextPage = () => {
 
                         </div>
 
-
-
                         <div className="interactiveCards">
 
                             <div className="interactiveCard">
 
                                 <div className="interactiveCardInner interactiveCardPink">
 
-                                    <strong>Interactive<br />Quizzes</strong>
+                                    <strong>Interactive<br className="interactiveCardDesktopBreak" />{" "}Quizzes</strong>
 
                                 </div>
 
@@ -716,7 +668,7 @@ const MobileLearning: NextPage = () => {
 
                                 <div className="interactiveCardInner interactiveCardPurple">
 
-                                    <strong>Gamified<br />Learning</strong>
+                                    <strong>Gamified<br className="interactiveCardDesktopBreak" />{" "}Learning</strong>
 
                                 </div>
 
@@ -726,7 +678,7 @@ const MobileLearning: NextPage = () => {
 
                                 <div className="interactiveCardInner interactiveCardBlue">
 
-                                    <strong>Discussion<br />Forums</strong>
+                                    <strong>Discussion<br className="interactiveCardDesktopBreak" />{" "}Forums</strong>
 
                                 </div>
 
@@ -736,7 +688,7 @@ const MobileLearning: NextPage = () => {
 
                                 <div className="interactiveCardInner interactiveCardGreen">
 
-                                    <strong>Interactive<br />Explorations</strong>
+                                    <strong>Interactive<br className="interactiveCardDesktopBreak" />{" "}Explorations</strong>
 
                                 </div>
 
@@ -774,8 +726,6 @@ const MobileLearning: NextPage = () => {
 
                         </p>
 
-
-
                         <div className="modernLearningPills">
 
                             <div className="modernLearningPill modernLearningPillBlue">
@@ -812,8 +762,6 @@ const MobileLearning: NextPage = () => {
 
                     </div>
 
-
-
                     <div className="modernLearningBottom">
 
                         <h2 className="modernBuiltTitle">Built for Modern <span className="microTitleAccent">Learning</span></h2>
@@ -825,8 +773,6 @@ const MobileLearning: NextPage = () => {
                             professional, and remote learning environments.
 
                         </p>
-
-
 
                         <div className="modernLearningCards">
 
@@ -852,8 +798,6 @@ const MobileLearning: NextPage = () => {
 
                             </div>
 
-
-
                             <div className="modernLearningCard">
 
                                 <div className="modernLearningIconShell modernLearningIconOrange">
@@ -875,8 +819,6 @@ const MobileLearning: NextPage = () => {
                                 <strong>Corporate Training</strong>
 
                             </div>
-
-
 
                             <div className="modernLearningCard">
 
@@ -900,8 +842,6 @@ const MobileLearning: NextPage = () => {
 
                             </div>
 
-
-
                             <div className="modernLearningCard">
 
                                 <div className="modernLearningIconShell modernLearningIconGreen">
@@ -923,8 +863,6 @@ const MobileLearning: NextPage = () => {
                                 <strong>Remote Learning</strong>
 
                             </div>
-
-
 
                             <div className="modernLearningCard">
 
@@ -968,9 +906,9 @@ const MobileLearning: NextPage = () => {
 
                         fill="none"
 
-                        xmlns="http\://www.w3.org/2000/svg"
+                        xmlns="http://www.w3.org/2000/svg"
 
-                        xmlnsXlink="http\://www.w3.org/1999/xlink"
+                        xmlnsXlink="http://www.w3.org/1999/xlink"
 
                         aria-hidden="true"
 
@@ -1122,21 +1060,17 @@ const MobileLearning: NextPage = () => {
 
                     </svg>
 
-
-
                     <div className="limitsContent">
 
-                        <div className="limitsBadge">NeuroLXP<sup>™</sup></div>
-
-
-
+<div className="limitsBadge">
+  NeuroLXP
+  <sup className="limitsTrademark">TM</sup>
+</div>
                         <h2 id="learning-without-limits-title" className="limitsTitle">
 
                             Learning Without <span className="microTitleAccent">Limits</span>
 
                         </h2>
-
-
 
                         <p className="limitsDescription">
 
@@ -1145,8 +1079,6 @@ const MobileLearning: NextPage = () => {
                             at your own pace.
 
                         </p>
-
-
 
                         <BookDemoTrigger className="limitsButton">
 
@@ -1167,7 +1099,5 @@ const MobileLearning: NextPage = () => {
     );
 
 };
-
-
 
 export default MobileLearning;
