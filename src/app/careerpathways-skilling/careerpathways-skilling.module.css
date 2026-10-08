@@ -6512,3 +6512,36 @@ flex-shrink:0;
   }
 }
 
+
+/* Expert launcher anchored to Target Audiences without affecting section flow. */
+.careerPathwaysSkilling .frameParent53 { position: relative; }
+.careerPathwaysSkilling .targetAudienceExpertButtonSlot {
+  position: absolute;
+  top: 30%;
+  right: 12px;
+  width: 64px;
+  height: 64px;
+  transform: translateY(-50%);
+  z-index: 30;
+}
+@media (max-width: 767px) {
+  .careerPathwaysSkilling .targetAudienceExpertButtonSlot { top: 30px; right: 8px; width: 56px; height: 56px; }
+}
+
+.aiRecommendationsTitle {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  gap: 0;
+}
+
+.aiRecommendationsTitle span {
+  display: block;
+}
+
+.frameChild79Title sup {
+  font-size: 12px !important;
+  line-height: 4px !important;
+  transform: translateY(-11px) scale(0.75) !important;
+}
