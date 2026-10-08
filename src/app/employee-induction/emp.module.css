@@ -4129,3 +4129,67 @@ button.frameChild19:focus-visible {
     white-space: normal !important;
   }
 }
+
+/* First-section card: allow normal text highlighting without changing layout. */
+.employeeInduction .frameParent2 > .image20 {
+  pointer-events: none !important;
+}
+.employeeInduction .image21Parent .frameParent3,
+.employeeInduction .image21Parent .frameParent3 * {
+  -webkit-user-select: text !important;
+  user-select: text !important;
+}
+
+
+/* Independent portal anchor: not a flex item in the Challenges heading. */
+.employeeInduction.employeeInduction .frameParent5 {
+  position: relative !important;
+}
+.employeeInduction.employeeInduction .frameParent5 > .challengesExpertButtonSlot {
+  position: absolute !important;
+  top: 0 !important;
+  right: 12px !important;
+  left: auto !important;
+  bottom: auto !important;
+  display: block !important;
+  width: 64px !important;
+  height: 64px !important;
+  min-width: 64px !important;
+  min-height: 64px !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  transform: none !important;
+  z-index: 50 !important;
+  pointer-events: auto;
+}
+@media (max-width: 767px) {
+  .employeeInduction.employeeInduction .frameParent5 > .challengesExpertButtonSlot {
+    right: 8px !important;
+    top: 0 !important;
+  }
+}
+
+
+/* Breadcrumb typography only: all three labels share the same font size. */
+.employeeInduction.employeeInduction.employeeInduction .frameDiv,
+.employeeInduction.employeeInduction.employeeInduction .frameDiv .resourcesWrapper,
+.employeeInduction.employeeInduction.employeeInduction .frameDiv .arrowRightDoubleGroup,
+.employeeInduction.employeeInduction.employeeInduction .frameDiv .useCases,
+.employeeInduction.employeeInduction.employeeInduction .frameDiv b,
+.employeeInduction.employeeInduction.employeeInduction .frameDiv span,
+.employeeInduction.employeeInduction.employeeInduction .frameDiv div {
+  font-size: 16px !important;
+  line-height: 24px !important;
+}
+@media (max-width: 480px) {
+  .employeeInduction.employeeInduction.employeeInduction .frameDiv,
+  .employeeInduction.employeeInduction.employeeInduction .frameDiv .resourcesWrapper,
+  .employeeInduction.employeeInduction.employeeInduction .frameDiv .arrowRightDoubleGroup,
+  .employeeInduction.employeeInduction.employeeInduction .frameDiv .useCases,
+  .employeeInduction.employeeInduction.employeeInduction .frameDiv b,
+  .employeeInduction.employeeInduction.employeeInduction .frameDiv span,
+  .employeeInduction.employeeInduction.employeeInduction .frameDiv div {
+    font-size: 12px !important;
+    line-height: 18px !important;
+  }
+}
