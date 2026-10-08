@@ -72,17 +72,19 @@ function ExpertLauncher() {
    * The button remains available on all other pages.
    */
   if (
-    pathname === "/university" ||
-    pathname.startsWith("/university/") ||
-    pathname === "/bfsi" ||
-    pathname.startsWith("/bfsi/") ||
-    pathname === "/learning_community" ||
-    pathname.startsWith("/learning_community/") ||
-    pathname === "/assessments" ||
-    pathname.startsWith("/assessments/")
-  ) {
-    return null;
-  }
+  pathname === "/university" ||
+  pathname.startsWith("/university/") ||
+  pathname === "/bfsi" ||
+  pathname.startsWith("/bfsi/") ||
+  pathname === "/learning_community" ||
+  pathname.startsWith("/learning_community/") ||
+  pathname === "/assessments" ||
+  pathname.startsWith("/assessments/") ||
+  pathname === "/mobile-learning" ||
+  pathname.startsWith("/mobile-learning/")
+) {
+  return null;
+}
 
   const launcherButton = (
     <button
