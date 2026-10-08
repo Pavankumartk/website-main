@@ -2,7 +2,7 @@ import type { NextPage } from "next";
 
 import Image from "next/image";
 
-import styles from "./extend.module.css";
+import styles from "./emp.module.css";
 
 import Header from "../../components/Header/header";
 
@@ -10,17 +10,15 @@ import Footer from "../../components/Footer/footer";
 
 import { BookDemoTrigger } from "../../components/Bookademo/Bookademo";
 
-const ExtendedEnterpriseLearning: NextPage = () => {
+const EmployeeInduction: NextPage = () => {
 
-  return (
-
-    <>
+    return (<>
 
       <Header />
 
-      <div className={styles.extendedEnterpriseLearning}>
+      <main className={styles.employeeInduction}>
 
-      <div className={styles.frameDiv}>
+      <nav className={styles.frameDiv} aria-label="Breadcrumb">
 
         <div className={styles.resourcesWrapper}>
 
@@ -30,7 +28,7 @@ const ExtendedEnterpriseLearning: NextPage = () => {
 
         <div className={styles.homeParent}>
 
-          <Image className={styles.arrowDown01Icon} src="/icons/arrowright.svg" width={16} height={16} sizes="100vw" alt="" />
+          <Image className={styles.arrowDown01Icon} src="/icons/arrowright.svg" width={16} height={16} sizes="100vw" alt=""/>
 
           <div className={styles.resourcesWrapper}>
 
@@ -42,245 +40,207 @@ const ExtendedEnterpriseLearning: NextPage = () => {
 
         <div className={styles.arrowRightDoubleGroup}>
 
-          <Image className={styles.arrowDown01Icon} src="/icons/arrowright.svg" width={16} height={16} sizes="100vw" alt="" />
+          <Image className={styles.arrowDown01Icon} src="/icons/arrowright.svg" width={16} height={16} sizes="100vw" alt=""/>
 
-          <b className={styles.useCases}>Extended Enterprise Learning</b>
+          <b className={styles.useCases}>Employee Induction</b>
 
         </div>
 
-      </div>
+      </nav>
 
-      <div className={styles.vectorParent}>
+      <div className={styles.frameParent2}>
 
-        <svg className={styles.groupChild} width="1440" height="475" viewBox="0 0 1440 475" fill="none" aria-hidden="true">
+        <div className={styles.image21Parent}>
 
-          <g filter="url(#extendedEnterpriseFrameShadow)">
+          <div className={styles.image21}/>
 
-            <path d="M1 304.682C1 301.92 2.15567 299.521 4.51122 298.078C46.7033 272.244 459.73 23.6761 731.577 24.0003C999.262 24.3196 1395.87 272.158 1436.59 298.06C1438.88 299.515 1440 301.879 1440 304.591V442.97C1440 447.388 1436.69 450.97 1432.27 450.97C1374 450.979 998.628 451.033 731.577 450.969C463.141 450.904 68.5273 450.959 8.71312 450.968C4.29435 450.968 1 447.386 1 442.967V304.682Z" fill="#DFE6E9" />
-
-          </g>
-
-          <defs>
-
-            <filter id="extendedEnterpriseFrameShadow" x="-23" y="0" width="1487" height="475" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
-
-              <feFlood floodOpacity="0" result="BackgroundImageFix" />
-
-              <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
-
-              <feOffset dx="8" dy="8" />
-
-              <feGaussianBlur stdDeviation="8" />
-
-              <feComposite in2="hardAlpha" operator="out" />
-
-              <feColorMatrix type="matrix" values="0 0 0 0 0.768627 0 0 0 0 0.768627 0 0 0 0 0.768627 0 0 0 1 0" />
-
-              <feBlend mode="normal" in2="BackgroundImageFix" result="effect1DropShadow" />
-
-              <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha2" />
-
-              <feOffset dx="-8" dy="-8" />
-
-              <feGaussianBlur stdDeviation="8" />
-
-              <feComposite in2="hardAlpha2" operator="out" />
-
-              <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0" />
-
-              <feBlend mode="normal" in2="effect1DropShadow" result="effect2DropShadow" />
-
-              <feBlend mode="normal" in="SourceGraphic" in2="effect2DropShadow" result="shape" />
-
-            </filter>
-
-          </defs>
-
-        </svg>
-
-        <div className={styles.frameParent2}>
+          <div className={styles.groupYoungBusinesspeopleUsi}/>
 
           <div className={styles.frameParent3}>
 
-            <div className={styles.frameIcon}>Extended Enterprise Learning</div>
+            <div className={styles.frameParent4}>
 
-            <div className={styles.extendLearningBeyondYourWoParent}>
+              <div className={styles.frameIcon}>NeuroLXP Employee Induction</div>
 
-              <b className={styles.extendLearningBeyond}>Extend Learning Beyond Your Workforce</b>
+              <b className={styles.transformOnboardingIntoContainer}>
 
-              <div className={styles.trainPartnersVendors}>Train partners, vendors, distributors, and customers on one connected platform.</div>
+                <span className={styles.transformOnboardingInto}>{`Transform Onboarding into `}</span>
+
+                <span className={styles.learning}>Learning</span>
+
+              </b>
 
             </div>
 
+            <div className={styles.neurolxpSimplifiesOnboarding}>NeuroLXP simplifies onboarding with structured learning from day one.</div>
+
           </div>
 
-          <div className={styles.frameParent4}>
+          <div className={styles.businessmenClosingDealWithWrapper}>
 
-            <div className={`${styles.frameChild2} ${styles.heroPillBlue}`}>Partner Training</div>
-
-            <div className={`${styles.frameChild2} ${styles.heroPillPink}`}>Product Knowledge</div>
-
-            <div className={`${styles.frameChild4} ${styles.heroPillGreen}`}>Certifications</div>
-
-            <div className={`${styles.frameChild4} ${styles.heroPillPurple}`}>Compliance</div>
+            <Image className={styles.businessmenClosingDealWithIcon} src="/images/businessmen.webp" width={400} height={441} sizes="100vw" alt=""/>
 
           </div>
 
         </div>
+
+        <div className={styles.image20}/>
 
       </div>
 
       <div className={styles.frameParent5}>
 
+        <div className={styles.challengesExpertButtonSlot} data-expert-button-slot />
+
         <div className={styles.frameParent6}>
 
           <div className={styles.frameWrapper}>
 
-            <div className={styles.onePlatformEveryStakeholdeWrapper}>
+            <div className={styles.structuredOnboardingForProdWrapper}>
 
-              <b className={styles.onePlatformEvery}>One Platform! Every Stakeholder!</b>
+              <b className={styles.structuredOnboardingFor}>Challenges</b>
 
             </div>
 
           </div>
 
-          <div className={styles.neurolxpConnectsYour}>NeuroLXP connects your ecosystem with consistent learning and stronger performance.</div>
+          <div className={styles.neurolxpHelpsOrganizations}><span className={styles.copyLine}>NeuroLXP makes onboarding</span>{" "}<span className={styles.copyLine}>clear, engaging and measurable.</span></div>
 
         </div>
 
         <div className={styles.frameParent7}>
 
-          <div className={styles.frameChild6}>
-
-            <div className={styles.stakeholderTimelineRail} />
-
-            <div className={`${styles.stakeholderTimelineNode} ${styles.stakeholderTimelineNode1}`}>
-
-              <div className={`${styles.stakeholderTimelineInner} ${styles.stakeholderTimelineInnerPink}`}>
-
-                <Image className={styles.stakeholderTimelineIcon} src="/icons/ideapink.svg" width={40} height={40} alt="" />
-
-              </div>
-
-            </div>
-
-            <div className={`${styles.stakeholderTimelineNode} ${styles.stakeholderTimelineNode2}`}>
-
-              <div className={`${styles.stakeholderTimelineInner} ${styles.stakeholderTimelineInnerBlue}`}>
-
-                <Image className={styles.stakeholderTimelineIcon} src="/icons/globeblue.svg" width={40} height={40} alt="" />
-
-              </div>
-
-            </div>
-
-            <div className={`${styles.stakeholderTimelineNode} ${styles.stakeholderTimelineNode3}`}>
-
-              <div className={`${styles.stakeholderTimelineInner} ${styles.stakeholderTimelineInnerPurple}`}>
-
-                <Image className={styles.stakeholderTimelineIcon} src="/icons/target-purple.svg" width={40} height={40} alt="" />
-
-              </div>
-
-            </div>
-
-            <div className={`${styles.stakeholderTimelineNode} ${styles.stakeholderTimelineNode4}`}>
-
-              <div className={`${styles.stakeholderTimelineInner} ${styles.stakeholderTimelineInnerGreen}`}>
-
-                <Image className={styles.stakeholderTimelineIcon} src="/icons/chartup-green.svg" width={40} height={40} alt="" />
-
-              </div>
-
-            </div>
-
-          </div>
-
           <div className={styles.frameParent8}>
 
-            <div className={styles.frameWrapper2}>
+            <div className={styles.frameParent9}>
 
-              <div className={styles.stakeholderCardContent}>
+              <div className={styles.frameParent10}>
 
-                <div className={`${styles.stakeholderChallenge} ${styles.stakeholderChallengePink}`}> 1</div>
+                <div className={styles.frameChild2}/>
 
-                <b className={styles.stakeholderCardTitle}>Inconsistent Knowledge</b>
+                <div className={styles.frameChild3}/>
 
-                <div className={styles.stakeholderCardDescription}>Partners may lack up-to-date product and process knowledge.</div>
+                <div className={styles.frameParent11}>
 
-              </div>
+                  <div className={styles.challenge1Parent}>
 
-              <div className={`${styles.stakeholderHelpBox} ${styles.stakeholderHelpPink}`}>
+                    <b className={styles.challenge1}>1</b>
 
-                <b className={`${styles.stakeholderHelpTitle} ${styles.stakeholderHelpTitlePink}`}>HOW NEUROLXP HELPS</b>
+                    <b className={styles.inconsistentOnboarding}>
 
-                <div className={styles.stakeholderHelpText}>Centralized training keeps partners informed and aligned.</div>
+                      Inconsistent Onboarding
 
-              </div>
+                      <br />
 
-            </div>
+                    </b>
 
-            <div className={styles.frameWrapper2}>
+                  </div>
 
-              <div className={styles.stakeholderCardContent}>
+                  <div className={styles.differentTeamsDeliver}><span className={styles.copyLine}>Teams deliver</span>{" "}<span className={styles.copyLine}>inconsistent induction</span></div>
 
-                <div className={`${styles.stakeholderChallenge} ${styles.stakeholderChallengeBlue}`}> 2</div>
-
-                <b className={styles.stakeholderCardTitle}>Global Training</b>
-
-                <div className={styles.stakeholderCardDescription}>Global partners often lack consistent training across regions.</div>
+                </div>
 
               </div>
 
-              <div className={`${styles.stakeholderHelpBox} ${styles.stakeholderHelpBlue}`}>
+              <div className={styles.frameParent12}>
 
-                <b className={`${styles.stakeholderHelpTitle} ${styles.stakeholderHelpTitleBlue}`}>HOW NEUROLXP HELPS</b>
+                <div className={styles.frameChild2}/>
 
-                <div className={styles.stakeholderHelpText}>Deliver consistent learning anytime, anywhere.</div>
+                <div className={styles.frameChild5}/>
 
-              </div>
+                <div className={styles.frameParent13}>
 
-            </div>
+                  <div className={styles.challenge1Parent}>
 
-            <div className={styles.frameWrapper2}>
+                    <b className={styles.challenge1}>2</b>
 
-              <div className={styles.stakeholderCardContent}>
+                    <b className={styles.informationOverload}>Information Overload</b>
 
-                <div className={`${styles.stakeholderChallenge} ${styles.stakeholderChallengePurple}`}> 3</div>
+                  </div>
 
-                <b className={styles.stakeholderCardTitle}>Product &amp; Brand Consistency</b>
+                  <div className={styles.newHiresReceive}><span className={styles.copyLine}>New hires receive</span>{" "}<span className={styles.copyLine}>too much information</span></div>
 
-                <div className={styles.stakeholderCardDescription}>Poor training can lead to inconsistent messaging and product usage.</div>
-
-              </div>
-
-              <div className={`${styles.stakeholderHelpBox} ${styles.stakeholderHelpPurple}`}>
-
-                <b className={`${styles.stakeholderHelpTitle} ${styles.stakeholderHelpTitleBlue}`}>HOW NEUROLXP HELPS</b>
-
-                <div className={styles.stakeholderHelpText}>Build product expertise through training and certifications.</div>
+                </div>
 
               </div>
 
             </div>
 
-            <div className={styles.frameWrapper2}>
+            <div className={styles.frameParent14}>
 
-              <div className={styles.stakeholderCardContent}>
+              <div className={styles.frameParent10}>
 
-                <div className={`${styles.stakeholderChallenge} ${styles.stakeholderChallengeGreen}`}>4</div>
+                <div className={styles.frameChild2}/>
 
-                <b className={styles.stakeholderCardTitle}>Progress Tracking</b>
+                <div className={styles.frameChild7}/>
 
-                <div className={styles.stakeholderCardDescription}>Track partner training, certifications, and compliance with ease.</div>
+                <div className={styles.frameParent13}>
+
+                  <div className={styles.challenge1Parent}>
+
+                    <b className={styles.challenge1}>3</b>
+
+                    <b className={styles.informationOverload}>Low Engagement</b>
+
+                  </div>
+
+                  <div className={styles.newHiresReceive}><span className={styles.copyLine}>Induction can feel</span>{" "}<span className={styles.copyLine}>passive and lengthy</span></div>
+
+                </div>
 
               </div>
 
-              <div className={`${styles.stakeholderHelpBox} ${styles.stakeholderHelpGreen}`}>
+              <div className={styles.frameParent17}>
 
-                <b className={`${styles.stakeholderHelpTitle} ${styles.stakeholderHelpTitleBlue}`}>HOW NEUROLXP HELPS</b>
+                <div className={styles.frameChild2}/>
 
-                <div className={styles.stakeholderHelpText}>Solution: Track completion, certifications, and compliance with analytics.</div>
+                <div className={styles.frameChild9}/>
+
+                <div className={styles.frameParent13}>
+
+                  <div className={styles.challenge1Parent}>
+
+                    <b className={styles.challenge1}>4</b>
+
+                    <b className={styles.informationOverload}>
+
+                      Progress Tracking
+
+                      <br />
+
+                    </b>
+
+                  </div>
+
+                  <div className={styles.newHiresReceive}><span className={styles.copyLine}>Onboarding progress</span>{" "}<span className={styles.copyLine}>is difficult to track</span></div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+          <div className={styles.frameWrapper2}>
+
+            <div className={styles.frameParent10}>
+
+              <div className={styles.frameChild2}/>
+
+              <div className={styles.frameChild11}/>
+
+              <div className={styles.frameParent13}>
+
+                <div className={styles.challenge1Parent}>
+
+                  <b className={styles.challenge1}>5</b>
+
+                  <b className={styles.informationOverload}>Scaling Onboarding</b>
+
+                </div>
+
+                <div className={styles.newHiresReceive}><span className={styles.copyLine}>Growing teams make</span>{" "}<span className={styles.copyLine}>onboarding harder</span></div>
 
               </div>
 
@@ -292,151 +252,147 @@ const ExtendedEnterpriseLearning: NextPage = () => {
 
       </div>
 
-      <div className={styles.frameParent13}>
+      <div className={styles.employeeInductionChild}/>
 
-          <div className={styles.benefitsExpertButtonSlot} data-expert-button-slot />
+      <div className={styles.employeeInductionInner}>
 
-        <div className={styles.frameParent14}>
+        <div className={styles.structuredOnboardingForProdWrapper}>
 
-          <div className={styles.frameChild15}>Benefits</div>
+          <b className={styles.structuredOnboardingFor}>
 
-          <div className={styles.benefitsOfExtendedEnterprisParent}>
+            Start Strong! Learn Fast! Succeed Sooner!
 
-            <b className={styles.benefitsOfExtendedContainer}>
+            <br />
 
-              <span className={styles.benefitsOfExtended}>Benefits of Extended</span>
+          </b>
 
-              <span className={styles.enterpriseLearning}> Enterprise Learning</span>
+        </div>
+
+      </div>
+
+      <div className={styles.frameParent21}>
+
+        <div className={styles.frameParent22}>
+
+          <div className={styles.frameParent23}>
+
+            <div className={styles.frameChild12}>Benefits</div>
+
+            <b className={styles.benefitsOfEmployee}>
+
+              Benefits of Employee Induction with <span className={styles.headingBrand}>NeuroLXP</span>
+
+              <br />
+
+              <br />
 
             </b>
 
-            <div className={styles.aUnifiedLearning}>
+          </div>
 
-              A unified learning environment strengthens collaboration and performance across the full enterprise network.
+          <div className={styles.organizationsCanAchieve}>
 
-              <br />
+            Organizations can achieve several advantages through digital onboarding
 
-              <br />
+            <br />
 
-            </div>
+            <br />
+
+            <br />
+
+            <br />
 
           </div>
 
         </div>
 
-        <div className={styles.frameParent15}>
+        <div className={styles.frameWrapper3}>
 
-          <div className={styles.frameParent16}>
+          <div className={styles.frameWrapper4}>
 
-            <div className={styles.frameParent17}>
+            <div className={styles.frameWrapper5}>
 
-              <div className={styles.frameChild16}>
+              <div className={styles.frameParent24}>
 
-                <div className={styles.benefitIconInner}>
+                <div className={styles.frameParent25}>
 
-                  <Image className={styles.benefitIconImage} src="/icons/check.svg" width={34} height={34} alt="" />
+                  <div className={styles.benefitIconCircle}>
 
-                </div>
+                    <div className={styles.benefitIconInner}>
 
-              </div>
+                      <Image className={styles.benefitIconImage} src="/icons/limitation.svg" width={36} height={36} alt=""/>
 
-              <div className={styles.consistentTrainingParent}>
+                    </div>
 
-                <b className={styles.consistentTraining}>Consistent Training</b>
+                  </div>
 
-                <div className={styles.standardizeLearningAcross}>Standardize learning across your ecosystem.</div>
-
-              </div>
-
-            </div>
-
-            <div className={styles.frameParent18}>
-
-              <div className={styles.frameChild16}>
-
-                <div className={styles.benefitIconInner}>
-
-                  <Image className={styles.benefitIconImage} src="/icons/security-check.svg" width={34} height={34} alt="" />
+                  <div className={styles.fasterEmployeeIntegration}>Faster Employee Integration</div>
 
                 </div>
 
-              </div>
+                <div className={styles.frameParent25}>
 
-              <div className={styles.consistentTrainingParent}>
+                  <div className={styles.benefitIconCircle}>
 
-                <b className={styles.consistentTraining}>Brand Consistency</b>
+                    <div className={styles.benefitIconInner}>
 
-                <div className={styles.deliverConsistentCustomer}>Deliver consistent customer experiences.</div>
+                      <Image className={styles.benefitIconImage} src="/icons/filepink.svg" width={36} height={36} alt=""/>
 
-              </div>
+                    </div>
 
-            </div>
+                  </div>
 
-            <div className={styles.frameParent19}>
-
-              <div className={styles.frameChild16}>
-
-                <div className={styles.benefitIconInner}>
-
-                  <Image className={styles.benefitIconImage} src="/icons/chartdarkgreen.svg" width={34} height={34} alt="" />
+                  <div className={styles.consistentValuesAnd}>Consistent Values and Policies</div>
 
                 </div>
 
-              </div>
+                <div className={styles.frameParent25}>
 
-              <div className={styles.consistentTrainingParent}>
+                  <div className={styles.benefitIconCircle}>
 
-                <b className={styles.complianceTracking}>Compliance Tracking</b>
+                    <div className={styles.benefitIconInner}>
 
-                <div className={styles.monitorCertificationsAnd}>Monitor certifications and training completion.</div>
+                      <Image className={styles.benefitIconImage} src="/icons/handshake.svg" width={36} height={36} alt=""/>
 
-              </div>
+                    </div>
 
-            </div>
+                  </div>
 
-          </div>
-
-          <div className={styles.frameParent20}>
-
-            <div className={styles.frameParent17}>
-
-              <div className={styles.frameChild16}>
-
-                <div className={styles.benefitIconInner}>
-
-                  <Image className={styles.benefitIconImage} src="/icons/bulbpurple.svg" width={34} height={34} alt="" />
+                  <div className={styles.betterOnboardingEngagement}>Better Onboarding Engagement</div>
 
                 </div>
 
-              </div>
+                <div className={styles.frameParent25}>
 
-              <div className={styles.betterProductKnowledgeParent}>
+                  <div className={styles.benefitIconCircle}>
 
-                <b className={styles.consistentTraining}>Better Product Knowledge</b>
+                    <div className={styles.benefitIconInner}>
 
-                <div className={styles.improveProductUnderstanding}>Improve product understanding and expertise.</div>
+                      <Image className={styles.benefitIconImage} src="/icons/analytics.svg" width={36} height={36} alt=""/>
 
-              </div>
+                    </div>
 
-            </div>
+                  </div>
 
-            <div className={styles.frameParent22}>
-
-              <div className={styles.frameChild16}>
-
-                <div className={styles.benefitIconInner}>
-
-                  <Image className={styles.benefitIconImage} src="/icons/globe-02.svg" width={34} height={34} alt="" />
+                  <div className={styles.easyProgressTracking}>Easy Progress Tracking</div>
 
                 </div>
 
-              </div>
+                <div className={styles.frameParent25}>
 
-              <div className={styles.consistentTrainingParent}>
+                  <div className={styles.benefitIconCircle}>
 
-                <b className={styles.globalScale}>Global Scale</b>
+                    <div className={styles.benefitIconInner}>
 
-                <div className={styles.standardizeLearningAcross}>Train external audiences worldwide.</div>
+                      <Image className={styles.benefitIconImage} src="/icons/setting-green.svg" width={36} height={36} alt=""/>
+
+                    </div>
+
+                  </div>
+
+                  <div className={styles.reducedHrWorkload}>Reduced HR Workload</div>
+
+                </div>
 
               </div>
 
@@ -448,62 +404,46 @@ const ExtendedEnterpriseLearning: NextPage = () => {
 
       </div>
 
-      <div className={styles.frameParent23}>
+      <div className={styles.frameParent30}>
 
-        <div className={styles.frameParent24}>
+        <div className={styles.frameParent31}>
 
-          <div className={styles.empowerYourExtendedEnterpriParent}>
+          <div className={styles.frameChild18}>Smarter Employee Onboarding</div>
 
-            <b className={styles.empowerYourExtended}>
+          <div className={styles.enablingSmarterEmployeeOnboParent}>
 
-              Empower Your
+            <b className={styles.enablingSmarterEmployeeContainer}>
 
-              <br />
+              <span className={styles.enablingSmarter}>{`Enabling Smarter `}</span>
 
-              Extended Enterprise
+              <span className={styles.employeeOnboarding}>Employee Onboarding</span>
 
             </b>
 
-            <div className={styles.neurolxpConnectsTrains}>
-
-              NeuroLXP connects, trains, and empowers
-
-              <br />
-
-              your entire business ecosystem.
-
-            </div>
+            <div className={styles.neurolxpMakesOnboarding}>NeuroLXP makes onboarding seamless, engaging, and efficient.</div>
 
           </div>
 
-          <BookDemoTrigger>
+        </div>
 
-            <div className={styles.frameWrapper10}>
+        <div className={styles.frameWrapper6}>
 
-              <span className={styles.frameChild21}>Book a Demo</span>
+          <BookDemoTrigger className={styles.frameChild19}>
 
-            </div>
+            Book a Demo
 
           </BookDemoTrigger>
 
         </div>
 
-        <div className={styles.empowerImageWrapper}>
-
-          <Image className={styles.departmentMeeting1Icon} src="/images/discussion.webp" width={633} height={496} sizes="(max-width: 768px) 100vw, 633px" alt="Business team reviewing reports around a table" />
-
-        </div>
-
       </div>
 
-      </div>
+      </main>
 
       <Footer />
 
-    </>
-
-  );
+    </>);
 
 };
 
-export default ExtendedEnterpriseLearning;
+export default EmployeeInduction;
