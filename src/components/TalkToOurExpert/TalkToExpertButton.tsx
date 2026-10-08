@@ -68,10 +68,12 @@ function ExpertLauncher() {
    * - BFSI
    * - Learning Community
    * - Assessments
+   * - Mobile Learning
    *
-   * The button remains available on all other pages.
+   * On Interconnectivity, the button is displayed
+   * inside the How It Works section.
    */
-  if (
+ const hideExpertButton =
   pathname === "/university" ||
   pathname.startsWith("/university/") ||
   pathname === "/bfsi" ||
@@ -81,10 +83,13 @@ function ExpertLauncher() {
   pathname === "/assessments" ||
   pathname.startsWith("/assessments/") ||
   pathname === "/mobile-learning" ||
-  pathname.startsWith("/mobile-learning/")
-) {
-  return null;
-}
+  pathname.startsWith("/mobile-learning/") ||
+  pathname === "/interconnectivity" ||
+  pathname.startsWith("/interconnectivity/");
+
+  if (hideExpertButton) {
+    return null;
+  }
 
   const launcherButton = (
     <button
