@@ -78,9 +78,10 @@ const Blogs: NextPage = () => {
                 <div className={styles.frameChild4}/>
                 <div className={styles.aiPoweredLmsParent}>
                   <b className={styles.aiPoweredLms}>AI-Powered LMS</b>
-                  <div className={styles.aiTransformingModern}>
-                    AI transforming<br />modern learning.
-                  </div>
+                 <div className={styles.aiTransformingModern}>
+  AI transforming modern <br />
+  learning.
+</div>
                 </div>
                 <Image className={styles.youngManUsingHisLaptopInfIcon} src="/images/gamifiedblog.webp" width={244} height={201} sizes="100vw" alt=""/>
               </div>
@@ -91,9 +92,10 @@ const Blogs: NextPage = () => {
                 <div className={styles.frameChild6}/>
                 <div className={styles.interactiveLearningParent}>
                   <b className={styles.aiPoweredLms}>Interactive Learning</b>
-                  <div className={styles.aiTransformingModern}>
-                    Gamified and<br />engaging experiences.
-                  </div>
+                 <div className={styles.aiTransformingModern}>
+  Gamified and engaging <br />
+  experiences.
+</div>
                 </div>
                 <Image className={styles.youngManUsingHisLaptopInfIcon} src="/images/youngmanblog.webp" width={244} height={201} sizes="100vw" alt=""/>
               </div>
@@ -131,7 +133,7 @@ const Blogs: NextPage = () => {
                 <div className={styles.digitalEducationParent}>
                   <b className={styles.aiPoweredLms}>Digital Education</b>
                   <div className={styles.aiTransformingModern}>
-                    Best practices for<br />online learning.
+                    Best practices for online <br />learning.
                   </div>
                 </div>
                 <Image className={styles.computingMan1Icon} src="/images/img5blog.webp" width={355} height={237} sizes="100vw" alt=""/>
@@ -144,7 +146,7 @@ const Blogs: NextPage = () => {
                 <div className={styles.aiPoweredLmsParent}>
                   <b className={styles.aiPoweredLms}>Learning Analytics</b>
                   <div className={styles.dataDrivenLearningInsights}>
-                    Data-driven<br />learning insights.
+                    Data-driven learning <br />insights.
                   </div>
                 </div>
               </div>
@@ -172,7 +174,7 @@ const Blogs: NextPage = () => {
             <div className={styles.frameChild16} aria-hidden="true"/>
             <div className={styles.discoverPracticalIdeasToWrapper}>
               <b className={styles.discoverPracticalIdeas}>
-                Discover practical ideas to
+                Discover practical ideas to :
               </b>
             </div>
             <div className={styles.frameParent12}>
@@ -274,10 +276,12 @@ const Blogs: NextPage = () => {
         <div className={styles.blogsInner}>
           <div className={styles.frameParent21}>
             <div className={styles.frameChild19}>
-              <div className={styles.neuroBadge}>
-                <span className={styles.neuroBadgeText}>NeuroLXP</span>
-                <span className={styles.neuroBadgeTM}>TM</span>
-              </div>
+             <div className={styles.neuroBadge}>
+  <span className={styles.neuroBadgeText}>
+    NeuroLXP
+    <sup className={styles.neuroBadgeTM}>TM</sup>
+  </span>
+</div>
             </div>
             <div className={styles.exploreTheNeurolxpBlogParent}>
               <h2 className={`${styles.exploreTheNeurolxp} ${styles.mainHeading}`}>
