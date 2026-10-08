@@ -3335,8 +3335,8 @@
   .frameDiv .featuresWrapper,
   .frameDiv .arrowRightDoubleGroup { gap: 6px; }
   .frameParent5 { flex-direction: column; gap: 16px; }
-  .heroButton,
-  .frameWrapper3 { width: min(320px, 100%); line-height: 24px; }
+  .frameParent5 .heroButton,
+  .frameParent5 .frameWrapper3 { width: min(210px, 100%); line-height: 24px; }
   .frameParent7,
   .frameParent8,
   .frameParent9,
@@ -3520,3 +3520,32 @@
   }
 }
 
+
+/* Expert launcher slot: NeuroLXP closing section only; no layout flow changes. */
+.complianceSecurityInner3.neurolxpClosingSection {
+  position: relative;
+}
+
+.neurolxpExpertButtonSlot {
+  position: absolute;
+  top: 50%;
+  right: 16px;
+  width: 64px;
+  height: 64px;
+  transform: translateY(-50%);
+  z-index: 30;
+}
+
+@media (max-width: 767px) {
+  .neurolxpExpertButtonSlot {
+    top:20px;
+    right: 8px;
+    width: 56px;
+    height: 56px;
+  }
+}
+.trademark {
+  font-size: 12px !important;
+  line-height: 4px !important;
+  transform: translateY(-11px) scale(0.75) !important;
+}
