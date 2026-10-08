@@ -356,7 +356,7 @@ const HelpAndSupport: NextPage = () => {
 
                     <div className={styles.resourceIconInner}>
 
-                      <Image src="/icons/foldernew\.svg" width={34} height={34} alt=""/>
+                      <Image src="/icons/foldernew\\.svg" width={34} height={34} alt=""/>
 
                     </div>
 
@@ -401,20 +401,22 @@ const HelpAndSupport: NextPage = () => {
         {/* FINAL SUPPORT SECTION */}
 
         <div className={styles.helpAndSupportChild}>
+          {/* Portal target: does not participate in section layout */}
+          <div className={styles.expertButtonSlot} data-expert-button-slot />
 
           <div className={styles.frameParent16}>
 
-            <div className={styles.frameChild13}>
+           <div className={styles.frameChild13}>
 
-              <span className={styles.neurolxpBadgeText}>
+  <span className={styles.neurolxpBadgeText}>
 
-                NeuroLXP
+    NeuroLXP
 
-              </span>
+    <sup className={styles.neurolxpBadgeTm}>TM</sup>
 
-              <sup className={styles.neurolxpBadgeTm}>TM</sup>
+  </span>
 
-            </div>
+</div>
 
             <div className={styles.supportForYourLearningEcosParent}>
 
