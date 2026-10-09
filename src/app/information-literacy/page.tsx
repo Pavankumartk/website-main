@@ -83,7 +83,7 @@ const JOURNEY_STAGES: JourneyStage[] = [
     id: "synthesise",
     number: 3,
     title: "Synthesise",
-    description: "Connect ideas into meaningful insights",
+    description: "Turn Ideas Into Insights",
     color: "#907507",
   },
   {
@@ -487,15 +487,16 @@ const InformationLiteracy: NextPage = () => {
                 <div className={styles.journeyCard}>
                   <span className={styles.journeyCorner} aria-hidden="true" />
                   <h3 className={styles.journeyCardTitle}>{stage.title}</h3>
-                  <p className={styles.journeyCardDescription}>
-                    {stage.id === "synthesise" ? (
-                      <>
-                        <span className={styles.synthesisFirstLine}>Connect ideas into meaningful</span>
-                        <br />
-                        insights
-                      </>
-                    ) : stage.description}
-                  </p>
+                 <p className={styles.journeyCardDescription}>
+  {stage.id === "synthesise" ? (
+    <>
+      Connect ideas into meaningful
+      <span className={styles.synthesisInsights}> insights</span>
+    </>
+  ) : (
+    stage.description
+  )}
+</p>
                 </div>
               </div>
             ))}
