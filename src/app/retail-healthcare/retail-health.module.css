@@ -2676,7 +2676,7 @@
 
 .retailAndHealthCare .expertButtonSlot {
   position: absolute;
-  top: 10%;
+  top: 0%;
   right: 16px;
   bottom: auto;
   left: auto;
@@ -2699,7 +2699,91 @@
 
 @media (max-width: 768px) {
   .retailAndHealthCare .expertButtonSlot {
-    top: -50px;
-    right: 8px;
+    top: -60px;
+    right: -10px;
   }
+}
+
+/* ==========================================
+   LABEL, HEADING & DESCRIPTION SPACING
+   Retail Excellence / Retail Benefits /
+   Healthcare Excellence / NeuroLXP
+========================================== */
+
+/* Retail Excellence – Retail section */
+.frameParent14 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 22px;
+}
+
+/* Retail Benefits */
+.frameParent16 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 22px;
+}
+
+/* Retail Excellence – Healthcare section */
+.frameParent28 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 22px;
+}
+
+/* NeuroLXP – Final section */
+.frameParent36 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 30px;
+}
+
+/* Remove extra spacing from badge itself */
+.frameParent14 > .selectableBadgeText,
+.frameParent16 > .selectableBadgeText,
+.frameParent28 > .selectableBadgeText,
+.frameParent36 > .selectableBadgeText {
+  margin-bottom: 0;
+}
+/* Last section: heading to description */
+.retailFinalVideoContent .frameParent4 {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+/* First Section – Retail & Healthcare Solutions */
+.frameParent5 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 22px;
+}
+
+/* Space between heading and description */
+.frameParent4 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 30px;
+}
+
+/* Remove extra badge spacing */
+.frameParent5 > .selectableBadgeText {
+  margin-bottom: 0;
+}
+
+.neuroLxpTM {
+  position: relative;
+  top: -7px;
+  margin-left: 2px;
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 1;
+  vertical-align: baseline;
+  color: #2D4CC8;
 }
