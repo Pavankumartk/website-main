@@ -13979,7 +13979,6 @@
   line-height:27px !important;
 }
 
-.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem .contentIntelligenceBadge,
 .contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem .headerContentExperienceBadge {
   width:fit-content !important;
   min-width:0 !important;
@@ -14803,8 +14802,8 @@
 
 @media screen and (max-width: 767px) {
   .contentIntelligenceManagem .contentCompatibilityExpertButtonSlot {
-    top: 50px !important;
-    right: 8px !important;
+    top: 120px !important;
+    right: -20px !important;
     bottom: auto !important;
     left: auto !important;
     transform: none !important;
@@ -14841,4 +14840,153 @@
   position: relative;
   top: -9px;
   margin-left: 1px;
+}
+
+/* Mobile breadcrumbs - aligned text and arrows */
+@media screen and (max-width: 767px) {
+  .contentIntelligenceManagem .frameParent4 {
+    position: absolute !important;
+    top: 46px !important;
+    left: 12px !important;
+    right: 12px !important;
+    width: calc(100% - 24px) !important;
+
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    justify-content: flex-start !important;
+    align-items: center !important;
+    gap: 5px !important;
+
+    padding: 0 !important;
+    margin: 0 !important;
+    box-sizing: border-box !important;
+    white-space: nowrap !important;
+  }
+
+  .contentIntelligenceManagem .frameParent4
+  :is(.featuresWrapper, .homeParent, .arrowRightDoubleGroup) {
+    position: static !important;
+    display: inline-flex !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+    gap: 5px !important;
+    width: auto !important;
+    min-width: 0 !important;
+    flex: 0 0 auto !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    transform: none !important;
+  }
+
+  .contentIntelligenceManagem .frameParent4 .augmentation {
+    position: static !important;
+    font-size: 12px !important;
+    line-height: 20px !important;
+    white-space: nowrap !important;
+    width: auto !important;
+    margin: 0 !important;
+    transform: none !important;
+  }
+
+  .contentIntelligenceManagem .frameParent4 .arrowDown01Icon {
+    position: static !important;
+    display: block !important;
+    width: 12px !important;
+    height: 12px !important;
+    min-width: 12px !important;
+    flex: 0 0 12px !important;
+    margin: 0 !important;
+    transform: none !important;
+  }
+}
+/* Mobile - Uniform breadcrumb font sizes */
+@media screen and (max-width: 767px) {
+  .contentIntelligenceManagem .frameParent4 .augmentation,
+  .contentIntelligenceManagem .frameParent4 .featuresWrapper .augmentation,
+  .contentIntelligenceManagem .frameParent4 .arrowRightDoubleGroup .augmentation {
+    font-family: "Segoe UI", "Inter", sans-serif !important;
+    font-size: 12px !important;
+    font-weight: 400 !important;
+    line-height: 20px !important;
+    letter-spacing: 0.02em !important;
+    white-space: nowrap !important;
+  }
+
+  .contentIntelligenceManagem .frameParent4 .arrowDown01Icon {
+    width: 12px !important;
+    height: 12px !important;
+    min-width: 12px !important;
+    flex-shrink: 0 !important;
+  }
+}
+
+/* Mobile - Content Intelligence badge: keep label on one line */
+@media screen and (max-width: 767px) {
+  .contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem .contentIntelligenceBadge {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    flex-wrap: nowrap !important;
+    white-space: nowrap !important;
+    text-wrap: nowrap !important;
+    word-break: normal !important;
+    overflow-wrap: normal !important;
+    width: max-content !important;
+    min-width: max-content !important;
+    max-width: none !important;
+    flex-shrink: 0 !important;
+    margin-inline: auto !important;
+  }
+}
+
+/* Targeted mobile fix: Content Intelligence badge only. */
+@media screen and (max-width: 767px) {
+  .contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem.contentIntelligenceManagem .frameParent22 .frameParent23 .contentIntelligenceBadge {
+    display: inline-flex !important;
+    flex: 0 0 auto !important;
+    align-items: center !important;
+    justify-content: center !important;
+    box-sizing: border-box !important;
+    width: max-content !important;
+    min-width: 0 !important;
+    max-width: calc(100vw - 32px) !important;
+    height: auto !important;
+    min-height: 42px !important;
+    padding: 8px 18px !important;
+    margin: 0 auto !important;
+    font-size: 16px !important;
+    line-height: 24px !important;
+    white-space: nowrap !important;
+    text-wrap: nowrap !important;
+    overflow-wrap: normal !important;
+    word-break: keep-all !important;
+  }
+}
+
+/* Mobile only: keep the Smart Summaries title on one line inside its card. */
+@media screen and (max-width: 767px) {
+  .contentIntelligenceManagem.contentIntelligenceManagem .frameParent22 .frameWrapper8 .image21Parent .smartSummaries {
+    position: relative !important;
+    inset: auto !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    box-sizing: border-box !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+    height: 100% !important;
+    margin: 0 !important;
+    padding: 0 4px !important;
+    font-size: 17px !important;
+    line-height: 24px !important;
+    white-space: nowrap !important;
+    text-wrap: nowrap !important;
+    overflow-wrap: normal !important;
+    word-break: keep-all !important;
+    text-align: center !important;
+  }
 }
