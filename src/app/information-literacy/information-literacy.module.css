@@ -3221,3 +3221,62 @@ body:has(.informationLiteracy) * {
     padding: 12px 14px;
   }
 }
+
+/* Desktop: insights on second line */
+.synthesisInsights {
+  display: block;
+}
+
+/* Mobile: complete sentence on one line */
+@media (max-width: 767px) {
+  .synthesisInsights {
+    display: inline;
+  }
+
+  .journeyCardDescription:has(.synthesisInsights) {
+    white-space: nowrap;
+    font-size: clamp(11px, 3vw, 14px);
+  }
+}
+.learnersThinkTm {
+  display: inline-block;
+  position: relative;
+  top: -0.8em;
+  vertical-align: baseline;
+  margin-left: 1px;
+  font-size: 10px;
+  font-weight: 600;
+  line-height: 1;
+}
+
+@media (min-width: 1024px) {
+  .frameContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+  }
+
+  .frameGroup {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 28px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .frameGroup {
+    row-gap: 40px;
+  }
+
+  .frameContainer {
+    row-gap: 40px;
+  }
+
+  .researchDiscoveryBadge,
+  .researchSmarterLearn,
+  .buildResearchSkills {
+    margin: 0;
+  }
+}
