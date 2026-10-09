@@ -242,7 +242,7 @@ export default function ELearningPage() {
 
                 <div className={styles.challengeMainContent}>
 
-                  <span className={`${styles.challengeNumber} ${styles.challengeNumberPink}`}>CHALLENGE 1</span>
+                  <span className={`${styles.challengeNumber} ${styles.challengeNumberPink}`}> 1</span>
 
                   <h3>Passive Online <span className={styles.headingLastWord}>Learning</span></h3>
 
@@ -264,7 +264,7 @@ export default function ELearningPage() {
 
                 <div className={styles.challengeMainContent}>
 
-                  <span className={`${styles.challengeNumber} ${styles.challengeNumberBlue}`}>CHALLENGE 2</span>
+                  <span className={`${styles.challengeNumber} ${styles.challengeNumberBlue}`}> 2</span>
 
                   <h3>Managing Large Learning <span className={styles.headingLastWord}>Content</span></h3>
 
@@ -276,7 +276,7 @@ export default function ELearningPage() {
 
                   <strong>HOW NEUROLXP HELPS</strong>
 
-                  <span>Centralized content management, organization, and delivery.</span>
+                  <span>Centralized content organization, management and delivery.</span>
 
                 </div>
 
@@ -286,7 +286,7 @@ export default function ELearningPage() {
 
                 <div className={styles.challengeMainContent}>
 
-                  <span className={`${styles.challengeNumber} ${styles.challengeNumberPurple}`}>CHALLENGE 3</span>
+                  <span className={`${styles.challengeNumber} ${styles.challengeNumberPurple}`}> 3</span>
 
                   <h3>Low Learner <span className={styles.headingLastWord}>Engagement</span></h3>
 
@@ -298,8 +298,7 @@ export default function ELearningPage() {
 
                   <strong>HOW NEUROLXP HELPS</strong>
 
-                  <span>Gamification, social learning, and interactive assessments boost engagement and motivation.</span>
-
+<span>Gamification, social learning, and assessments boost engagement.</span>
                 </div>
 
               </article>
@@ -308,7 +307,7 @@ export default function ELearningPage() {
 
                 <div className={styles.challengeMainContent}>
 
-                  <span className={`${styles.challengeNumber} ${styles.challengeNumberGreen}`}>CHALLENGE 4</span>
+                  <span className={`${styles.challengeNumber} ${styles.challengeNumberGreen}`}> 4</span>
 
                   <h3>Measuring Learning <span className={styles.headingLastWord}>Effectiveness</span></h3>
 
@@ -380,7 +379,7 @@ export default function ELearningPage() {
 
                       </div>
 
-                      <div className={styles.smartContentCuration}>Smart content curation.</div>
+                      {/* <div className={styles.smartContentCuration}>Smart content curation.</div> */}
 
                     </div>
 
@@ -404,7 +403,7 @@ export default function ELearningPage() {
 
                       </div>
 
-                      <div className={styles.smartContentCuration}>Learn anytime, anywhere.</div>
+                      {/* <div className={styles.smartContentCuration}>Learn anytime, anywhere.</div> */}
 
                     </div>
 
@@ -432,7 +431,7 @@ export default function ELearningPage() {
 
                       </div>
 
-                      <div className={styles.smartContentCuration}>Career-ready skills</div>
+                      {/* <div className={styles.smartContentCuration}>Career-ready skills</div> */}
 
                     </div>
 
@@ -456,7 +455,7 @@ export default function ELearningPage() {
 
                       </div>
 
-                      <div className={styles.smartContentCuration}>Scalable digital learning.</div>
+                      {/* <div className={styles.smartContentCuration}>Scalable digital learning.</div> */}
 
                     </div>
 
@@ -677,12 +676,10 @@ export default function ELearningPage() {
                 <div className={styles.frameParent38}>
 
                   <div className={styles.neuroLxpBadge}>
-
-                    <span>NeuroLXP</span>
-
-                    <sup>TM</sup>
-
-                  </div>
+  <span className={styles.neuroLxpBadgeText}>
+    NeuroLXP<sup className={styles.neuroLxpBadgeTm}>TM</sup>
+  </span>
+</div>
 
                   <h2 className={styles.futureReadyELearning} style={{ margin: 0, padding: 0, fontSize: "inherit", fontFamily: "inherit", color: "inherit", fontWeight: "bold" }}>
 
