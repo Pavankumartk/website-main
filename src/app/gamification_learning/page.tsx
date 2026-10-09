@@ -683,13 +683,7 @@ const InteractiveGamifiedLearning: NextPage = () => {
 
 
                   <span className={styles.discoverNewInsights}>
-
-
-
                     Discover new insights interactively
-
-
-
                   </span>
 
 
