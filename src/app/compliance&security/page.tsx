@@ -734,7 +734,7 @@ const ComplianceSecurity: NextPage = () => {
 
 
 
-      management and real-time visibility.
+      management and real time visibility.
 
 
 
@@ -1590,7 +1590,7 @@ const ComplianceSecurity: NextPage = () => {
 
 
 
-                                                                    <div className={styles.scenarioBasedLearning} style={{ width: "138px", maxWidth: "138px", minWidth: 0, whiteSpace: "normal", lineHeight: "28px", overflowWrap: "normal", wordBreak: "normal", flexShrink: 1 }}>Real-World Case Studies</div>
+                                                                    <div className={styles.scenarioBasedLearning} style={{ width: "138px", maxWidth: "138px", minWidth: 0, whiteSpace: "normal", lineHeight: "28px", overflowWrap: "normal", wordBreak: "normal", flexShrink: 1 }}>Real World Case Studies</div>
 
 
 
