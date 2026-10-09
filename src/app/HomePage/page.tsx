@@ -509,7 +509,7 @@ const storyMissionVisionCards: StoryMissionVisionCardData[] = [
   {
     id: 1,
     title: "Our Story",
-    description: "NeuroLXP transforms learning with an intelligent platform for future ready digital skills.",
+    description: "NeuroLXP transforms learning with an intelligent platform for future ready digital skills",
     image: "/images/interested-coworkers-with-new-project.webp",
     accentColor: "#2D4CC8",
     Icon: BookOpenIcon,
@@ -517,7 +517,7 @@ const storyMissionVisionCards: StoryMissionVisionCardData[] = [
   {
     id: 2,
     title: "Our Mission",
-    description: "Intelligent learning and skilling for measurable, future ready success across learners and organizations.",
+    description: "Intelligent learning and skilling for measurable, future ready success across learners and organizations",
     image: "/images/interested-coworkers-project.webp",
     accentColor: "#2A7308",
     Icon: GoalIcon,
@@ -525,7 +525,7 @@ const storyMissionVisionCards: StoryMissionVisionCardData[] = [
   {
     id: 3,
     title: "Our Vision",
-    description: "A digital learning ecosystem shaping lifelong learning through innovation and inclusive growth.",
+    description: "A digital learning ecosystem shaping lifelong learning through innovation and inclusive growth",
     image: "/images/coworkers-interested.webp",
     accentColor: "#67096E",
     Icon: EyeIcon,
@@ -663,11 +663,21 @@ function PlatformOverview() {
 
         <div className={styles["platform-overview-content"]}>
           <span className={styles["platform-overview-tag"]}>Platform Overview</span>
-          <h2 className={styles["platform-overview-heading"]} id="platform-overview-heading">
-            NeuroLXP
-            {/* <sup className={styles["smv-badge-tm"]}>TM</sup> */}
-            <span className={styles["platform-overview-heading-text"]}> One Platform! Many Missions! One Future</span>
-          </h2>
+         <h2
+  className={styles["platform-overview-heading"]}
+  id="platform-overview-heading"
+>
+  NeuroLXP
+  {/* <sup className={styles["smv-badge-tm"]}>TM</sup> */}
+
+  <span className={styles["platform-overview-heading-text"]}>
+    {" "}One Platform!
+    <br />
+    Many Missions!
+    <span className={styles["mobile-one-break"]}> </span>
+    One Future
+  </span>
+</h2>
           <div className={styles["platform-hex-grid"]}>
   <svg className={styles["platform-hex-defs"]} aria-hidden="true">
     <defs>
@@ -898,7 +908,7 @@ function WhyChooseNeuroLXP() {
                 NeuroLXP<sup className={styles["why-choose-tm"]}></sup> empowers learners with
               </span>
               <span className={styles["why-choose-subtext-line"]}>
-                personalized learning, future skills, and meaningful outcomes.
+                personalized learning, future skills, and meaningful outcomes
               </span>
               {/* <span className={styles["why-choose-subtext-line"]}>
                 skills, and meaningful outcomes.
@@ -922,14 +932,14 @@ const learningModuleCards = [
     image: "/images/Frame 2095586554.png",
     title: "Blended Learning",
     description:
-      "Blend online and in-person learning for flexible, engaging experiences.",
+      "Blend online and in-person learning for flexible, engaging experiences",
   },
   {
     id: 2,
     image: "/images/elevated-view-businessman-businesswoman-stacking-each-other-s-hand-project 1.png",
     title: "Career Growth",
     description:
-      "Build in-demand skills and grow your career with confidence.",
+      "Build in-demand skills and grow your career with confidence",
   },
   {
     id: 3,
@@ -937,28 +947,28 @@ const learningModuleCards = [
       "/images/young-smiling-woman-using-digital-tablet-isolated-white-1.webp",
     title: "Smart Learning Paths",
     description:
-      "Personalized learning to build future-ready skills and accelerate growth.",
+      "Personalized learning to build future-ready skills and accelerate growth",
   },
   {
     id: 4,
     image: "/images/girl-student-with-laptop-standing-by-window-corridor 1.png",  
     title: "Immersive Learning",
     description:
-      "Interactive learning that builds skills and delivers results.",
+      "Interactive learning that builds skills and delivers results",
   },
   {
     id: 5,
     image: "/images/agreement-coworkers-two-men-having-deal 1.png",  
     title: "Smart Onboarding",
     description:
-      "Accelerate onboarding with guided, engaging learning.",
+      "Accelerate onboarding with guided, engaging learning",
   },
   {
     id: 6,
     image: "/images/Standard.png",
     title: "Standards Training",
     description:
-      "Stay fully compliant with trusted, standards-based learning.",
+      "Stay fully compliant with trusted, standards-based learning",
   },
 ];
 
@@ -1440,7 +1450,7 @@ const testimonials: TestimonialData[] = [
     id: 1,
     name: "Sneha",
     role: "Software Engineer",
-    quote: "NeuroLXP made learning faster and more engaging. The personalized learning paths helped me build new skills with confidence.",
+    quote: "NeuroLXP made learning faster and more engaging. The personalized learning paths helped me build new skills with confidence",
     image: "/images/SaraThomas.jpg",
     accentColor: "#2DC8BB",
   },
@@ -1448,7 +1458,7 @@ const testimonials: TestimonialData[] = [
     id: 2,
     name: "John Thomas",
     role: "Institute Admin",
-    quote: "Managing courses and learners is now seamless. NeuroLXP has simplified administration and improved learner engagement.",
+    quote: "Managing courses and learners is now seamless. NeuroLXP has simplified administration and improved learner engagement",
     image: "/images/happy-business-man-wearing-grey-suit-standing-isolated-white-wall.webp",
     accentColor: "#67096E",
   },
@@ -1456,7 +1466,7 @@ const testimonials: TestimonialData[] = [
     id: 3,
     name: "Ramesh",
     role: "Lecturer",
-    quote: "NeuroLXP makes course delivery effortless. Interactive learning and real-time insights keep my learners engaged.",
+    quote: "NeuroLXP makes course delivery effortless. Interactive learning and real-time insights keep my learners engaged",
     image: "/images/successful-businessman.webp",
     accentColor: "#907507",
   },
@@ -1464,7 +1474,7 @@ const testimonials: TestimonialData[] = [
     id: 4,
     name: "Joanna",
     role: "Software Engineer",
-    quote: "NeuroLXP made learning faster and more engaging. The personalized learning paths helped me build new skills with confidence.",
+    quote: "NeuroLXP made learning faster and more engaging. The personalized learning paths helped me build new skills with confidence",
     image: "/images/Joanna.jpg",
     accentColor: "#BF1869",
   },
@@ -1480,7 +1490,7 @@ const testimonials: TestimonialData[] = [
     id: 6,
     name: "Shankar",
     role: "Lecturer",
-    quote: "NeuroLXP makes course delivery effortless. Interactive learning and real-time insights keep my learners engaged.",
+    quote: "NeuroLXP makes course delivery effortless. Interactive learning and real-time insights keep my learners engaged",
     image: "/images/handsome-businessman-suit-glasses-cross-arms-chest-look 1.png",
     accentColor: "#861109",
   },
@@ -1915,7 +1925,7 @@ const faqItems: FAQItemData[] = [
     number: "01",
     title: "What is NeuroLXP?",
     mobileTitleLines: ["What is", "NeuroLXP?"],
-    answer: "NeuroLXP is a next-generation Learning Experience Platform (LXP) that transforms how organizations design, deliver, and manage learning through personalized, engaging, and scalable learning experiences.",
+    answer: "NeuroLXP is a next-generation Learning Experience Platform (LXP) that transforms how organizations design, deliver, and manage learning through personalized, engaging, and scalable learning experiences",
     colorStart: "#2D4CC8",
     colorEnd: "#162562",
   },
@@ -1924,7 +1934,7 @@ const faqItems: FAQItemData[] = [
     number: "02",
     title: "Who is NeuroLXP Designed for?",
     mobileTitleLines: ["Who is NeuroLXP", "Designed for?"],
-    answer: "NeuroLXP is purpose-built for academic institutions, corporates, skilling academies, NGOs, trusts, and government skill development programs.",
+    answer: "NeuroLXP is purpose-built for academic institutions, corporates, skilling academies, NGOs, trusts, and government skill development programs",
     colorStart: "#BF1869",
     colorEnd: "#590B31",
   },
@@ -1933,7 +1943,7 @@ const faqItems: FAQItemData[] = [
     number: "03",
     title: "How Is NeuroLXP Different?",
     mobileTitleLines: ["How is NeuroLXP", "Different?"],
-    answer: "Unlike a conventional LMS that focuses on course administration, NeuroLXP delivers learner-centric experiences through personalization, skill-based learning, collaboration, and continuous development.",
+    answer: "Unlike a conventional LMS that focuses on course administration, NeuroLXP delivers learner-centric experiences through personalization, skill-based learning, collaboration, and continuous development",
     colorStart: "#861109",
     colorEnd: "#200402",
   },
@@ -1942,7 +1952,7 @@ const faqItems: FAQItemData[] = [
     number: "04",
     title: "Why is NeuroLXP Groundbreaking?",
     mobileTitleLines: ["Why is NeuroLXP", "Groundbreaking?"],
-    answer: "NeuroLXP reimagines digital learning by combining intelligent personalization, modern learning experiences, scalable architecture, and data-driven insights into a unified platform built for the future of education and workforce development.",
+    answer: "NeuroLXP reimagines digital learning by combining intelligent personalization, modern learning experiences, scalable architecture, and data-driven insights into a unified platform built for the future of education and workforce development",
     colorStart: "#162562",
     colorEnd: "#2D4CC8",
   },
@@ -1951,7 +1961,7 @@ const faqItems: FAQItemData[] = [
     number: "05",
     title: "Who Can Use NeuroLXP?",
     mobileTitleLines: ["Who Can Use", "NeuroLXP?"],
-    answer: "Yes, NeuroLXP is designed to scale effortlessly - from schools and universities to enterprises, skilling academies, NGOs, and nationwide government learning initiatives.",
+    answer: "Yes, NeuroLXP is designed to scale effortlessly - from schools and universities to enterprises, skilling academies, NGOs, and nationwide government learning initiatives",
     colorStart: "#67096E",
     colorEnd: "#C712D4",
   },
