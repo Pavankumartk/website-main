@@ -10,6 +10,8 @@ import Footer from "../../components/Footer/footer";
 
 import { BookDemoTrigger } from "../../components/Bookademo/Bookademo";
 
+
+
 const MobileLearning: NextPage = () => {
 
     return (
@@ -144,7 +146,6 @@ const MobileLearning: NextPage = () => {
 
                 <div className="routinePanel">
 
-                <div className="routineExpertAction"><BookDemoTrigger className="routineExpertButton">Talk to Our Expert</BookDemoTrigger></div>
 
                     <div className="routineHeader">
 
@@ -248,7 +249,7 @@ const MobileLearning: NextPage = () => {
 
                     <div className="microContent">
 
-                        <div className="microBadge">Microlearning</div>
+                        <div className="microBadge">Micro Learning</div>
 
                         <h2 id="microlearning-title" className="microTitle">
 
@@ -636,7 +637,7 @@ const MobileLearning: NextPage = () => {
 
                         <div className="interactiveIntro">
 
-                            <div className="interactiveBadge">Interactive Mobile Learning</div>
+                            <div className="interactiveBadge">Mobile Learning</div>
 
                             <h2 id="interactive-learning-title" className="interactiveTitle">
 
