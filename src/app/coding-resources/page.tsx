@@ -83,9 +83,9 @@ export default function CodingResources() {
                 <span className={styles.pill}>Coding Resources</span>
 
                 <h1>
-                  Everything to Learn!
-                  <br />
-                  Practice!{" "}
+                  Everything to Learn!{" "}
+                  {/* <br /> */}
+                   Practice!{" "}
                   <span className={styles.headingAccent}>Master Coding</span>
                 </h1>
 
