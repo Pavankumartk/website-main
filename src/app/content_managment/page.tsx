@@ -5507,7 +5507,7 @@ export default function ContentIntelligenceManagement() {
 
 
 <p className={styles.whyNeurolxpBadge}>
-  Why NeuroLXP<span className={styles.tmMark}>TM</span>?
+  Why NeuroLXP<span className={styles.tmMark}>TM</span>
 </p>
 
 
