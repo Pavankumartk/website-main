@@ -968,7 +968,7 @@ export default function LearningCommunitySupport() {
 
                                         <h3 className={styles.grow} style={{ display: "inline", margin: 0, padding: 0, fontWeight: "bold" }}>Grow</h3>
 
-                                        <div className={styles.buildConfidenceStrengthen}>Build confidence, strengthen skills, and learn together</div>
+                                        <div className={styles.buildConfidenceStrengthen}>Build confidence, strengthen, and learn together</div>
 
                                     </div>
 
