@@ -4869,3 +4869,21 @@ body:has(.ngo) * {
     transform: none;
   }
 }
+
+/* NGO hero - remove video play overlay */
+.image20Parent .videoPlayButton,
+.image20Parent .videoPlayIcon {
+  display: none !important;
+}
+
+/* NGO LAST SECTION - MOBILE VIDEO FRAME SPACING */
+@media screen and (max-width: 767px) {
+  .ngo .frameParent38 .frameWrapper30 {
+    margin-top: 0px !important;
+    margin-bottom: 30 !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    align-self: center !important;
+   
+  }
+}
