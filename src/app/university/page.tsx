@@ -178,8 +178,9 @@ const UniversityAndCollege: NextPage = () => {
 
                         <div className={styles.frameParent9}>
 
-                            <div className={styles.frameChild2}>Digital <span style={{ color: "#2D4CC8" }}>Learning</span></div>
-
+<div className={styles.frameChild2}>
+  Digital<span style={{ color: "#2D4CC8", marginLeft: "8px" }}>Learning</span>
+</div>
                             <div className={styles.modernLearningForUniversitiParent}>
 
                                 <h2 className={styles.modernLearningFor} style={{ margin: 0, fontSize: "inherit", fontWeight: 700 }}>Modern Learning for Universities and <span style={{ color: "#2D4CC8" }}>Colleges</span><br /></h2>
@@ -226,7 +227,7 @@ const UniversityAndCollege: NextPage = () => {
 
                                     </div>
 
-                                    <div className={styles.flexibleLearningFor}>Flexible learning for every student</div>
+                                    {/* <div className={styles.flexibleLearningFor}>Flexible learning for every student</div> */}
 
                                 </div>
 
@@ -266,7 +267,7 @@ const UniversityAndCollege: NextPage = () => {
 
                                     </div>
 
-                                    <div className={styles.flexibleLearningFor}>Interactive learning experiences</div>
+                                    {/* <div className={styles.flexibleLearningFor}>Interactive learning experiences</div> */}
 
                                 </div>
 
@@ -306,7 +307,7 @@ const UniversityAndCollege: NextPage = () => {
 
                                     </div>
 
-                                    <div className={styles.flexibleLearningFor}>Real-time performance insights</div>
+                                    {/* <div className={styles.flexibleLearningFor}>Real-time performance insights</div> */}
 
                                 </div>
 
@@ -346,7 +347,7 @@ const UniversityAndCollege: NextPage = () => {
 
                                     </div>
 
-                                    <div className={styles.flexibleLearningFor}>Student success and career readiness</div>
+                                    {/* <div className={styles.flexibleLearningFor}>Student success and career readiness</div> */}
 
                                 </div>
 
@@ -434,7 +435,7 @@ const UniversityAndCollege: NextPage = () => {
 
                                         <div className={styles.frameChild24} />
 
-                                        <div className={styles.interactiveLearningWith}>Interactive quizzes and multimedia<br />boost classroom engagement.</div>
+                                        <div className={styles.interactiveLearningWith}>Interactive quizzes and multimedia<br />boost classroom engagement</div>
 
                                     </div>
 
@@ -502,7 +503,7 @@ const UniversityAndCollege: NextPage = () => {
 
                                         <div className={styles.frameChild24} />
 
-                                        <div className={styles.centralizeCourseMaterials}>Centralize course materials<br />and assessments in one place.</div>
+                                        <div className={styles.centralizeCourseMaterials}>Centralize course materials<br />and assessments in one place</div>
 
                                     </div>
 
@@ -566,7 +567,7 @@ const UniversityAndCollege: NextPage = () => {
 
                                                 <div className={styles.frameChild24} />
 
-                                                <div className={styles.personalizedLearningPathways}>Personalized learning pathways<br />support every student's pace.</div>
+                                                <div className={styles.personalizedLearningPathways}>Personalized learning pathways<br />support every student's pace</div>
 
                                             </div>
 
@@ -638,7 +639,7 @@ const UniversityAndCollege: NextPage = () => {
 
                                         <div className={styles.frameChild24} />
 
-                                        <div className={styles.trackAttendanceCourse}>Track attendance and progress<br />with real-time insights.</div>
+                                        <div className={styles.trackAttendanceCourse}>Track attendance and progress<br />with real-time insights</div>
 
                                     </div>
 
@@ -700,7 +701,7 @@ const UniversityAndCollege: NextPage = () => {
 
                                         <div className={styles.frameChild24} />
 
-                                        <div className={styles.supportSkillDevelopment}>Build skills and certifications<br />for career-ready outcomes.</div>
+                                        <div className={styles.supportSkillDevelopment}>Build skills and certifications<br />for career-ready outcomes</div>
 
                                     </div>
 
