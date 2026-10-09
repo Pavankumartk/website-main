@@ -211,16 +211,42 @@ function DigitalLiteracySkillBanner() {
     </section>
   );
 }
-function AdvantageCard({ number, color, title, description, mirrored }: { number: string; color: string; title: string; description: string; mirrored?: boolean }) {
+function AdvantageCard({
+  number,
+  color,
+  title,
+  description,
+  mirrored,
+}: {
+  number: string;
+  color: string;
+  title: string;
+  description?: string;
+  mirrored?: boolean;
+}) {
   return (
-    <div className={`${styles["dl-adv-card"]}${mirrored ? ` ${styles["dl-adv-card-mirrored"]}` : ""}`} style={{ "--adv-color": `${color}33` } as React.CSSProperties}>
-      <span className={styles["dl-adv-card-shadow"]} style={{ background: color }} />
+    <div
+      className={`${styles["dl-adv-card"]}${mirrored ? ` ${styles["dl-adv-card-mirrored"]}` : ""}`}
+      style={{ "--adv-color": `${color}33` } as React.CSSProperties}
+    >
+      <span
+        className={styles["dl-adv-card-shadow"]}
+        style={{ background: color }}
+      />
+
       <div className={styles["dl-adv-card-front"]}>
-        <span className={styles["dl-adv-card-badge"]} style={{ background: `${color}80` }}>
+        <span
+          className={styles["dl-adv-card-badge"]}
+          style={{ background: `${color}80` }}
+        >
           {number}
         </span>
+
         <h3 className={styles["dl-adv-card-title"]}>{title}</h3>
-        <p className={styles["dl-adv-card-desc"]}>{description}</p>
+
+        {description && (
+          <p className={styles["dl-adv-card-desc"]}>{description}</p>
+        )}
       </div>
     </div>
   );
@@ -258,19 +284,19 @@ function DigitalLiteracyAdvantage() {
   <span style={{ whiteSpace: "nowrap" }}>
     NeuroLXP
     <sup className={styles["nlxp-footer-heading-tm"]}>TM</sup>
-  </span>{" "}
-  Advantage
-</span>   
+  </span>
+  {"\u00A0"}Advantage
+</span>  
  
  <h2 className={styles["dl-section-heading"]}>Equip Every Workforce for a Digital Future</h2>
         <p className={styles["dl-hero-subtext"]}>From foundational skills to advanced expertise skills in one platform.</p>
       </div>
-      <div className={styles["dl-advantage-grid"]}>
-        <AdvantageCard number="01" color="#BF1869" title="Digital Skill Training" description="Building skills from basics to future readiness" />
-        <AdvantageCard number="02" color="#0B9BA0" title="Personalized Learning" description="Learning journeys tailored to every skill level" mirrored />
-        <AdvantageCard number="03" color="#67096E" title="Progress Tracking" description="Track competency performance with insights" />
-        <AdvantageCard number="04" color="#BCCF10" title="Mobile First Access" description="Learn anytime, anywhere on any device" mirrored />
-      </div>
+     <div className={styles["dl-advantage-grid"]}>
+  <AdvantageCard number="01" color="#BF1869" title="Digital Skill Training" />
+  <AdvantageCard number="02" color="#0B9BA0" title="Personalized Learning" />
+  <AdvantageCard number="03" color="#67096E" title="Progress Tracking" />
+  <AdvantageCard number="04" color="#BCCF10" title="Mobile First Access" />
+</div>
     </section>
   );
 }
@@ -433,7 +459,19 @@ function DigitalLiteracyAnalytics() {
     </section>
   );
 }
-function StepCard({ number, color, textColor = color, title, description }: { number: string; color: string; textColor?: string; title: string; description: React.ReactNode }) {
+function StepCard({
+  number,
+  color,
+  textColor = color,
+  title,
+  description,
+}: {
+  number: string;
+  color: string;
+  textColor?: string;
+  title: string;
+  description?: React.ReactNode;
+}) {
   return (
     <div
       className={styles["dl-step-card"]}
@@ -442,12 +480,17 @@ function StepCard({ number, color, textColor = color, title, description }: { nu
           "--step-color": color,
           "--step-glow": `${color}55`,
         } as React.CSSProperties
-      }>
+      }
+    >
       <span className={styles["dl-step-card-badge"]}>
         <span style={{ color: textColor }}>{number}</span>
       </span>
+
       <h3 className={styles["dl-step-card-title"]}>{title}</h3>
-      <p className={styles["dl-step-card-desc"]}>{description}</p>
+
+      {description && (
+        <p className={styles["dl-step-card-desc"]}>{description}</p>
+      )}
     </div>
   );
 }
@@ -468,10 +511,10 @@ function DigitalLiteracyHowItWorks() {
         </p>
       </div>
       <div className={styles["dl-step-grid"]}>
-        <StepCard number="01" color="#BF1869" title="Assess" description="Identify each employee's current digital skill level" />
-        <StepCard number="02" color="#67096E" title="Assign" description="Auto-assign role based learning paths" />
-        <StepCard number="03" color="#0B9BA0" textColor="#08888E" title="Learn" description={<>Interactive, <span className={styles["dl-keep-word"]}>bite-sized</span> learning</>} />
-        <StepCard number="04" color="#907507" title="Optimize" description="Track progress Improve outcomes" />
+        <StepCard number="01" color="#BF1869" title="Assess"  />
+        <StepCard number="02" color="#67096E" title="Assign" />
+        <StepCard number="03" color="#0B9BA0" textColor="#08888E" title="Learn"  />
+        <StepCard number="04" color="#907507" title="Optimize"  />
       </div>
     </section>
   );
