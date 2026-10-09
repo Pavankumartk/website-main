@@ -829,7 +829,7 @@
 }
 .frameParent13 {
   position: absolute;
-  top: 2408px;
+  top: 2348px;
   left: 80px;
   width: 1280px;
   height: 1575px;
@@ -4631,4 +4631,11 @@ button.requestADemoWrapper::-moz-focus-inner {
   width: 100% !important;
   white-space: nowrap !important;
   text-wrap: nowrap !important;
+}
+
+/* Desktop: reduce only the empty space above the large learning-community image card. */
+@media (min-width: 768px) {
+  .learningCommunitySupport.learningCommunitySupport > .frameParent13 {
+    margin-top: -70px !important;
+  }
 }
