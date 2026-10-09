@@ -550,7 +550,7 @@ const AnalyticsReporting: NextPage = () => {
 
 
 
-              <div className={styles.neurolxpTurnsLearning}>NeuroLXP turns learning activity into meaningful insights that improve learner engagement, course quality, and learning outcomes.</div>
+              <div className={styles.neurolxpTurnsLearning}>NeuroLXP turns learning activity into meaningful insights that improve learner engagement, course quality and learning outcomes.</div>
 
 
 
@@ -846,7 +846,7 @@ const AnalyticsReporting: NextPage = () => {
 
 
 
-                    NeuroLXP’s Learning Analytics delivers real-time insights into learner engagement, progress, and performance enabling smarter, data-driven decisions.
+                    NeuroLXP’s Learning Analytics delivers real-time insights into learner engagement, progress, and performance enabling smarter, data driven decisions.
 
 
 
@@ -1174,7 +1174,7 @@ const AnalyticsReporting: NextPage = () => {
 
 
 
-              <div className={styles.getRealTimeInsights}>Get real-time insights across learners, courses, assessments, and engagement.</div>
+              <div className={styles.getRealTimeInsights}>Get real-time insights across learners, courses, assessments and engagement.</div>
 
 
 
@@ -1802,7 +1802,7 @@ const AnalyticsReporting: NextPage = () => {
 
 
 
-                <div className={styles.aiAnalyticsSpot}>AI analytics spot struggling learners early, enabling timely, targeted support.</div>
+                <div className={styles.aiAnalyticsSpot}>AI analytics spot struggling learners early, enabling timely and targeted support.</div>
 
 
 
@@ -2571,7 +2571,7 @@ const AnalyticsReporting: NextPage = () => {
 
 
 
-                    <div className={styles.goBeyondBasic}>Go beyond basic LMS reports with intelligent analytics, real-time dashboards, and actionable insights.</div>
+                    <div className={styles.goBeyondBasic}>Go beyond basic LMS reports with intelligent analytics, real time dashboards, and actionable insights.</div>
 
 
 
