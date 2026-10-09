@@ -980,7 +980,7 @@ export default function FinancialLiteracyPage() {
 </b>
 
 
-            <div className={styles.buildTheSkills}>Financial literacy help learners build responsible money habits for long term financial well-being Learn to</div>
+            <div className={styles.buildTheSkills}>Financial literacy help learners build responsible money habits for long term financial well being Learn to :</div>
 
 
 
@@ -1344,9 +1344,10 @@ export default function FinancialLiteracyPage() {
 
 
 
-<div className={styles.neuroBadgeWithTM}>
-  <SectionBadge label="NeuroLXP" className={styles.frameChild18} />
-  <sup className={styles.neuroTrademark}>TM</sup>
+<div className={`${styles.sectionBadge} ${styles.frameChild18}`}>
+  <span className={styles.neurolxpLabelText}>
+    NeuroLXP<sup>™</sup>
+  </span>
 </div>
 
 
