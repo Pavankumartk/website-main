@@ -2632,7 +2632,7 @@
   	height: 17px;
   	width: 23px;
   	position: relative;
-  	font-size: 12px;
+  	font-size: 17px;
   	letter-spacing: -0.03em;
   	line-height: 30px;
   	display: flex;
@@ -6525,7 +6525,7 @@ flex-shrink:0;
   z-index: 30;
 }
 @media (max-width: 767px) {
-  .careerPathwaysSkilling .targetAudienceExpertButtonSlot { top: 30px; right: 8px; width: 56px; height: 56px; }
+  .careerPathwaysSkilling .targetAudienceExpertButtonSlot { top: -20px; right: -10px; width: 56px; height: 56px; }
 }
 
 .aiRecommendationsTitle {
@@ -6543,5 +6543,69 @@ flex-shrink:0;
 .frameChild79Title sup {
   font-size: 12px !important;
   line-height: 4px !important;
-  transform: translateY(-11px) scale(0.75) !important;
+  transform: translateY(-7px) scale(0.75) !important;
+}
+
+
+/* Track section: keep all six labels on one line */
+.trackItemsGrid {
+  column-gap: 12px;
+}
+
+.trackItem {
+  gap: 6px;
+  min-width: 0;
+}
+
+.trackItem span {
+  font-size: clamp(10px, 1.05vw, 14px);
+  line-height: 1.4;
+  letter-spacing: 0;
+  white-space: nowrap;
+}
+
+.trackItemIcon {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+}
+
+/* Track labels: final override of older high-specificity wrapping rules. */
+.careerPathwaysSkilling.careerPathwaysSkilling.careerPathwaysSkilling .learningAnalytics .trackItemsGrid {
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  column-gap: 10px !important;
+}
+.careerPathwaysSkilling.careerPathwaysSkilling.careerPathwaysSkilling .learningAnalytics .trackItem {
+  gap: 5px !important;
+  min-width: 0 !important;
+  font-size: clamp(10px, 1.15vw, 15px) !important;
+  white-space: nowrap !important;
+}
+.careerPathwaysSkilling.careerPathwaysSkilling.careerPathwaysSkilling .learningAnalytics .trackItem > span {
+  flex: 1 1 auto !important;
+  width: auto !important;
+  min-width: 0 !important;
+  max-width: none !important;
+  min-height: 0 !important;
+  font-size: inherit !important;
+  line-height: 1.35 !important;
+  letter-spacing: 0 !important;
+  white-space: nowrap !important;
+  text-wrap: nowrap !important;
+  overflow-wrap: normal !important;
+}
+.careerPathwaysSkilling.careerPathwaysSkilling.careerPathwaysSkilling .learningAnalytics .trackItemIcon {
+  width: 18px !important;
+  height: 18px !important;
+  min-width: 18px !important;
+  min-height: 18px !important;
+  flex: 0 0 18px !important;
+}
+@media (max-width: 767px) {
+  .careerPathwaysSkilling.careerPathwaysSkilling.careerPathwaysSkilling .learningAnalytics .trackItemsGrid {
+    grid-template-columns: 1fr !important;
+  }
+  .careerPathwaysSkilling.careerPathwaysSkilling.careerPathwaysSkilling .learningAnalytics .trackItem {
+    font-size: 16px !important;
+  }
 }
