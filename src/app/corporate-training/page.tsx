@@ -25,8 +25,10 @@ const challengeCards = [
         title: "Rapid Skill Changes",
 
         description: <>Continuous workforce<br />upskilling</>,
+                dropdown: "Enables continuous upskilling to meet evolving workforce demands",
 
-        dropdown: (<>Continuous workforce<br />upskilling</>),
+
+        // dropdown: (<>Enables continuous upskilling to meet evolving workforce demands</>),
 
         icon: "/icons/target-11.svg",
 
@@ -42,7 +44,7 @@ const challengeCards = [
 
         description: <>Centralized scalable<br />learning</>,
 
-        dropdown: "Centralized scalable learning across distributed teams.",
+        dropdown: "Delivers centralized, scalable learning for teams across locations",
 
         icon: "/icons/user-group-02.svg",
 
@@ -58,7 +60,7 @@ const challengeCards = [
 
         description: <>Interactive learning<br />experiences</>,
 
-        dropdown: "Interactive learning experiences that improve engagement.",
+        dropdown: "Interactive learning experiences that improve engagement",
 
         icon: "/icons/user-minus-02.svg",
 
@@ -74,7 +76,7 @@ const challengeCards = [
 
         description: <>Actionable learning<br />insights</>,
 
-        dropdown: "Actionable learning insights and progress visibility.",
+        dropdown: "Actionable learning insights and progress visibility",
 
         icon: "/icons/chart-up.svg",
 
@@ -90,7 +92,7 @@ const challengeCards = [
 
         description: <>Goal-driven workforce<br />development</>,
 
-        dropdown: "Goal-driven workforce development aligned to business needs.",
+        dropdown: "Goal-driven workforce development aligned to business needs",
 
         icon: "/icons/book-open-text-1.svg",
 
@@ -905,8 +907,10 @@ const CorporateTraining: NextPage = () => {
                             <div className={styles.frameParent47}>
 
 <div className={styles.frameChild28}>
-  Benefits of Corporate Training With NeuroLXP
-  <sup className={styles.neuroLxpTm}>TM</sup>
+  Benefits of Corporate Training With{" "}
+  <span className={styles.neuroLxpKeepTogether}>
+    NeuroLXP<sup className={styles.neuroLxpTm}>TM</sup>
+  </span>
 </div>
                                 <div className={styles.whyOrganizationsChooseNeuroParent}>
 
