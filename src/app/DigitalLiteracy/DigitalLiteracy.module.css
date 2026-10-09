@@ -852,7 +852,7 @@
 
   font-weight: 700;
 
-  font-size: 20px;
+  font-size: 24px;
 
   line-height: 28px;
 
@@ -1628,7 +1628,7 @@
 
   margin: 0 auto;
 
-  padding: 64px 16px;
+    padding: 60px 16px 30px;
 
   display: flex;
 
@@ -4656,3 +4656,16 @@ html:has(.digital-literacy) :is(svg text, svg tspan) {
 
 }
 
+@media (min-width: 1024px) {
+  .dl-adv-card-title {
+    font-size: 26px;
+  }
+}
+/* Compact How It Works cards: preserve existing colors, badge and hover design. */
+@media (min-width: 768px) {
+  .digital-literacy .dl-step-grid > .dl-step-card {
+    height: 150px;
+    min-height: 150px;
+    padding: 66px 20px 12px;
+  }
+}
