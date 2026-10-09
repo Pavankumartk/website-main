@@ -7177,3 +7177,41 @@ body:has(.eLearning) * {
     transform: translateY(-50%);
   }
 }
+@media screen and (max-width: 768px) {
+  .addressingKeyChallenges .headingLastWord {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+}
+/* Last section - NeuroLXP TM alignment */
+.eLearning .neuroLxpBadge .neuroLxpBadgeText {
+  display: inline-block;
+  position: relative;
+  width: auto;
+  white-space: nowrap;
+}
+
+.eLearning .neuroLxpBadge .neuroLxpBadgeText .neuroLxpBadgeTm {
+  display: inline-block !important;
+  position: relative !important;
+  top: -10px !important;
+  transform: translateY(-3px) !important;
+  margin-left: 1px !important;
+  padding: 0 !important;
+  width: auto !important;
+  font-size: 10px !important;
+  line-height: 1 !important;
+  vertical-align: baseline !important;
+  white-space: nowrap;
+}
+
+/* Mobile - unchanged */
+@media screen and (max-width: 768px) {
+  .eLearning .neuroLxpBadge .neuroLxpBadgeText .neuroLxpBadgeTm {
+    top: -5px !important;
+    transform: none !important;
+    margin-left: 1px !important;
+    font-size: 9px !important;
+  }
+}
