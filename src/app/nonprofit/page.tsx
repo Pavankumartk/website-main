@@ -191,40 +191,23 @@ const NGO: NextPage = () => {
                         />
 
                         {!isTopVideoPlaying && (
-
-                            <button
-
-                                type="button"
-
-                                className={`${styles.frameItem} ${styles.videoPlayButton}`}
-
-                                onClick={toggleTopVideo}
-
-                                aria-label="Play nonprofit organizations video"
-
-                            >
-
-                                <Image
-
-                                    className={styles.videoPlayIcon}
-
-                                    src="/icons/videosymbol.svg"
-
-                                    width={106}
-
-                                    height={106}
-
-                                    sizes="106px"
-
-                                    alt=""
-
-                                    aria-hidden="true"
-
-                                />
-
-                            </button>
-
-                        )}
+  <button
+    type="button"
+    className={`${styles.frameItem} ${styles.videoPlayButton}`}
+    onClick={toggleTopVideo}
+    aria-label="Play nonprofit organizations video"
+  >
+    <Image
+      className={styles.videoPlayIcon}
+      src="/icons/videosymbol.svg"
+      width={106}
+      height={106}
+      sizes="106px"
+      alt=""
+      aria-hidden="true"
+    />
+  </button>
+)}
 
                         <div className={styles.frameDiv}>
 
@@ -344,8 +327,13 @@ const NGO: NextPage = () => {
 
                         <div className={styles.howNeurolxpSupportsNgosParent}>
 
-                            <h2 className={styles.howNeurolxpSupports} style={{ margin: 0, fontWeight: 700 }}>How NeuroLXP Supports <span className={styles.headingAccent}>NGOs</span></h2>
-
+<h2
+  className={styles.howNeurolxpSupports}
+  style={{ margin: 0, fontWeight: 700 }}
+>
+  How NeuroLXP Supports{" "}
+  <span style={{ color: "#2D4CC8" }}>NGOs</span>
+</h2>
                             <div className={styles.neurolxpHelpsNonprofits}>NeuroLXP helps nonprofits deliver scalable training, build skills, and maximize social impact.<br /><br /></div>
 
                         </div>
@@ -372,7 +360,7 @@ const NGO: NextPage = () => {
 
                                 </button>
 
-                                <div id="support-card-details-0" className={styles.supportCardDetails} role="region" aria-labelledby="support-card-title-0" aria-hidden={!openSupportCards.includes(0)}><div className={styles.supportCardPeak} aria-hidden="true" /><p>Consistent learning across teams.</p></div>
+                                <div id="support-card-details-0" className={styles.supportCardDetails} role="region" aria-labelledby="support-card-title-0" aria-hidden={!openSupportCards.includes(0)}><div className={styles.supportCardPeak} aria-hidden="true" /><p>Consistent learning across teams</p></div>
 
                             </div>
 
@@ -396,7 +384,7 @@ const NGO: NextPage = () => {
 
                                 </button>
 
-                                <div id="support-card-details-1" className={styles.supportCardDetails} role="region" aria-labelledby="support-card-title-1" aria-hidden={!openSupportCards.includes(1)}><div className={styles.supportCardPeak} aria-hidden="true" /><p>Create once, train everywhere.</p></div>
+                                <div id="support-card-details-1" className={styles.supportCardDetails} role="region" aria-labelledby="support-card-title-1" aria-hidden={!openSupportCards.includes(1)}><div className={styles.supportCardPeak} aria-hidden="true" /><p>Create once, train everywhere</p></div>
 
                             </div>
 
@@ -420,7 +408,7 @@ const NGO: NextPage = () => {
 
                                 </button>
 
-                                <div id="support-card-details-2" className={styles.supportCardDetails} role="region" aria-labelledby="support-card-title-2" aria-hidden={!openSupportCards.includes(2)}><div className={styles.supportCardPeak} aria-hidden="true" /><p>Capture & share knowledge.</p></div>
+                                <div id="support-card-details-2" className={styles.supportCardDetails} role="region" aria-labelledby="support-card-title-2" aria-hidden={!openSupportCards.includes(2)}><div className={styles.supportCardPeak} aria-hidden="true" /><p>Capture & share knowledge</p></div>
 
                             </div>
 
@@ -444,7 +432,7 @@ const NGO: NextPage = () => {
 
                                 </button>
 
-                                <div id="support-card-details-3" className={styles.supportCardDetails} role="region" aria-labelledby="support-card-title-3" aria-hidden={!openSupportCards.includes(3)}><div className={styles.supportCardPeak} aria-hidden="true" /><p>Measure Real Learning Impact.</p></div>
+                                <div id="support-card-details-3" className={styles.supportCardDetails} role="region" aria-labelledby="support-card-title-3" aria-hidden={!openSupportCards.includes(3)}><div className={styles.supportCardPeak} aria-hidden="true" /><p>Measure Real Learning Impact</p></div>
 
                             </div>
 
