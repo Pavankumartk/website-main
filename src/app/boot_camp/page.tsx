@@ -334,7 +334,7 @@ const Bootcamp: NextPage = () => {
 
 
 
-              <div className={styles.neurolabsCodingBootcamps}>NeuroLabs Coding Bootcamps build job-ready programming skills through intensive, hands-on learning, real-world coding, interactive labs, and expert mentorship.</div>
+              <div className={styles.neurolabsCodingBootcamps}>NeuroLabs Coding Bootcamps build job-ready programming skills through intensive, hands on learning, real world coding, interactive labs, and expert mentorship.</div>
 
 
 
@@ -390,7 +390,7 @@ const Bootcamp: NextPage = () => {
 
 
 
-            <div className={styles.problemSolving}>Problem solving</div>
+            {/* <div className={styles.problemSolving}>Problem solving</div> */}
 
 
 
@@ -430,7 +430,7 @@ const Bootcamp: NextPage = () => {
 
 
 
-            <div className={styles.handsOnPractice}>Hands -on Practice</div>
+            {/* <div className={styles.handsOnPractice}>Hands -on Practice</div> */}
 
 
 
@@ -470,7 +470,7 @@ const Bootcamp: NextPage = () => {
 
 
 
-            <div className={styles.technologyCareers}>Technology Careers</div>
+            {/* <div className={styles.technologyCareers}>Technology Careers</div> */}
 
 
 
@@ -528,7 +528,7 @@ const Bootcamp: NextPage = () => {
 
 
 
-            <div className={styles.buildRealProjects}>Build real projects and solve coding challenges that mirror real-world development.</div>
+            <div className={styles.buildRealProjects}>Build real projects and solve coding challenges that mirror real world development.</div>
 
 
 
@@ -1156,7 +1156,7 @@ const Bootcamp: NextPage = () => {
 
 
 
-  <span>From coding basics to</span>{" "}<span>real-world applications</span>
+  <span>From coding basics to</span>{" "}<span>real world applications</span>
 
 
 
@@ -1628,7 +1628,7 @@ const Bootcamp: NextPage = () => {
 
 
 
-            <div className={styles.accelerateYourCoding}>Accelerate your coding journey with hands-on projects, expert guidance, and industry-ready training.</div>
+            <div className={styles.accelerateYourCoding}>Accelerate your coding journey with hands on projects, expert guidance, and industry-ready training.</div>
 
 
 
