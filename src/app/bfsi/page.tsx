@@ -1,24 +1,7 @@
 "use client";
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 import { useEffect, useRef, useState } from "react";
-
-
-
-
 
 
 
@@ -606,7 +589,7 @@ export default function BfsiPage() {
 
 
 
-      desc: "Track compliance, certifications and audits.",
+      desc: "Track compliance, certifications and audits",
 
 
 
@@ -686,7 +669,7 @@ export default function BfsiPage() {
 
 
 
-      desc: "Role-based learning for modern finance.",
+      desc: "Role-based learning for modern finance",
 
 
 
@@ -782,7 +765,7 @@ export default function BfsiPage() {
 
 
 
-      desc: "Consistent training across teams.",
+      desc: "Consistent training across teams",
 
 
 
@@ -902,7 +885,7 @@ export default function BfsiPage() {
 
 
 
-      desc: "Banking, finance & insurance training.",
+      desc: "Banking, finance & insurance training",
 
 
 
@@ -990,7 +973,7 @@ export default function BfsiPage() {
 
 
 
-      desc: "Learning analytics & progress tracking.",
+      desc: "Learning analytics & progress tracking",
 
 
 
@@ -2044,7 +2027,7 @@ export default function BfsiPage() {
 
 
 
-            <p className={styles["bfsi-card-desc"]}>Stay compliant with evolving regulations.</p>
+            {/* <p className={styles["bfsi-card-desc"]}>Stay compliant with evolving regulations.</p> */}
 
 
 
@@ -2300,7 +2283,7 @@ export default function BfsiPage() {
 
 
 
-            <p className={styles["bfsi-card-desc"]}>Build role-based financial<br />skills.</p>
+            {/* <p className={styles["bfsi-card-desc"]}>Build role-based financial<br />skills.</p> */}
 
 
 
@@ -2564,7 +2547,7 @@ export default function BfsiPage() {
 
 
 
-            <p className={styles["bfsi-card-desc"]}>Track training, certifications and progress.</p>
+            {/* <p className={styles["bfsi-card-desc"]}>Track training, certifications and progress.</p> */}
 
 
 
@@ -3038,26 +3021,9 @@ export default function BfsiPage() {
 
               <span className={styles["bfsi-stat-badge-text"]}>NeuroLXP</span>
 
-
-
-
-
-
-
               <span className={styles["bfsi-stat-badge-tm"]}>TM</span>
 
-
-
-
-
-
-
             </div>
-
-
-
-
-
 
 
             <h2 className={styles["bfsi-stat-heading"]}>Future-Ready BFSI <span style={{ color: "#2D4CC8" }}>Training</span></h2>
@@ -3068,7 +3034,7 @@ export default function BfsiPage() {
 
 
 
-            <p className={styles["bfsi-stat-subtext"]}>Secure compliance. Smarter learning. Stronger BFSI teams.</p>
+            <p className={styles["bfsi-stat-subtext"]}>Secure compliance.< br/> Smarter learning. < br/>Stronger BFSI teams.</p>
 
 
 
@@ -3437,13 +3403,10 @@ export default function BfsiPage() {
         <div className={styles["bfsi-cta-badge"]}>
 
 
-
-
-
-
-
-          <span>NeuroLXP</span>
-
+<span>
+  NeuroLXP
+  <sup className={styles["bfsi-last-badge-tm"]}>TM</sup>
+</span>
 
 
 
