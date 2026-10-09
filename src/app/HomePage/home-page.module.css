@@ -5021,3 +5021,25 @@ a:focus-visible {
     flex: none !important;
   }
 }
+
+.mobile-one-break {
+  display: inline;
+}
+
+@media (max-width: 767px) {
+  .mobile-one-break {
+    display: block;
+  }
+}
+
+/* Desktop only */
+@media (min-width: 1024px) {
+  .get-in-touch-text {
+    gap: 32px;
+  }
+
+  .get-in-touch-copy {
+    margin-top: 12px;
+    margin-bottom: 12px;
+  }
+}
