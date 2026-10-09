@@ -6542,3 +6542,143 @@ body:has(.governmentStateInstitution) * {
     transform: none;
   }
 }
+
+/* Key Challenges – spacing above dropdown arrows */
+.challengeCard .frameParent13 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 28px;
+}
+
+/* Keep arrow centered with comfortable spacing */
+.challengeCard .challengeToggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 12px;
+  padding: 8px;
+  flex-shrink: 0;
+}
+
+/* Maintain arrow dimensions */
+.challengeCard .arrowDownDoubleIcon {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+}
+
+/* Fix arrow spacing in all 5 challenge cards */
+
+.challengeCard .frameParent12 {
+  position: relative;
+  height: auto;
+  min-height: 280px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.challengeCard .frameParent13 {
+  height: auto;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
+}
+
+.challengeCard .trainingAtScaleGroup {
+  height: auto;
+  min-height: 116px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.challengeCard .challengeToggle {
+  position: relative;
+  margin-top: 30px !important;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.challengeCard .arrowDownDoubleIcon {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+}
+/* KEY CHALLENGES - ARROW SPACING FIX */
+
+.governmentStateInstitution
+.challengeGrid > .challengeCard
+.challengeToggle {
+  margin-top: 20px !important;
+  gap: 14px !important;
+}
+
+/* Space between "How NeuroLXP Helps" and arrow */
+.governmentStateInstitution
+.challengeGrid > .challengeCard
+.arrowDownDoubleIcon {
+  margin: 12px auto 0 !important;
+}/* KEY CHALLENGES - MOBILE CARD HEIGHT FIX */
+@media screen and (max-width: 600px) {
+
+  .governmentStateInstitution .challengeGrid {
+    grid-auto-rows: auto !important;
+    align-items: start !important;
+    gap: 12px !important;
+  }
+
+  .governmentStateInstitution
+  .challengeGrid > .challengeCard {
+    height: auto !important;
+    min-height: 0 !important;
+    max-height: none !important;
+    padding: 10px 8px !important;
+    align-self: start !important;
+  }
+
+  .governmentStateInstitution
+  .challengeGrid > .challengeCard
+  .frameParent12 {
+    gap: 6px !important;
+  }
+
+  .governmentStateInstitution
+  .challengeGrid > .challengeCard
+  .frameParent13 {
+    gap: 6px !important;
+  }
+
+  .governmentStateInstitution
+  .challengeGrid > .challengeCard
+  .trainingAtScaleGroup {
+    gap: 4px !important;
+  }
+
+  .governmentStateInstitution
+  .challengeGrid > .challengeCard
+  .challengeToggle {
+    min-height: 36px !important;
+    margin-top: 4px !important;
+  }
+
+  .governmentStateInstitution
+  .challengeGrid > .challengeCard
+  .arrowDownDoubleIcon {
+    margin: 4px auto 0 !important;
+  }
+
+  .governmentStateInstitution
+  .challengeGrid > .challengeCard.challengeCardOpen {
+    height: auto !important;
+    min-height: 0 !important;
+    max-height: none !important;
+  }
+}
