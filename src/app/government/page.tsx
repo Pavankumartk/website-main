@@ -264,11 +264,11 @@ const GovernmentStateInstitutions: NextPage = () => {
 
                 </h2>
 
-                <p className={styles.trainAcrossDepartments} data-semantic-origin="div">
+                {/* <p className={styles.trainAcrossDepartments} data-semantic-origin="div">
 
                   Train across departments
 
-                </p>
+                </p> */}
 
               </div>
 
@@ -286,11 +286,11 @@ const GovernmentStateInstitutions: NextPage = () => {
 
                 </h2>
 
-                <p className={styles.trainAcrossDepartments} data-semantic-origin="div">
+                {/* <p className={styles.trainAcrossDepartments} data-semantic-origin="div">
 
                   One learning platform
 
-                </p>
+                </p> */}
 
               </div>
 
@@ -312,7 +312,7 @@ const GovernmentStateInstitutions: NextPage = () => {
 
                 </h2>
 
-                <p className={styles.trainAcrossDepartments} data-semantic-origin="div">
+                {/* <p className={styles.trainAcrossDepartments} data-semantic-origin="div">
 
                   Track progress
 
@@ -320,7 +320,7 @@ const GovernmentStateInstitutions: NextPage = () => {
 
                   <br />
 
-                </p>
+                </p> */}
 
               </div>
 
@@ -338,7 +338,7 @@ const GovernmentStateInstitutions: NextPage = () => {
 
                 </h2>
 
-                <p className={styles.trainAcrossDepartments} data-semantic-origin="div">
+                {/* <p className={styles.trainAcrossDepartments} data-semantic-origin="div">
 
                   Ensure compliance
 
@@ -346,7 +346,7 @@ const GovernmentStateInstitutions: NextPage = () => {
 
                   <br />
 
-                </p>
+                </p> */}
 
               </div>
 
@@ -428,7 +428,7 @@ const GovernmentStateInstitutions: NextPage = () => {
 
                       <button type="button" className={styles.challengeToggle} aria-expanded={openCards[0]} aria-controls="challenge-answer-0" onClick={() => toggleCard(0)}>
 
-                        <span className={styles.howNeurolxpHelps}>How NeuroLXP Helps</span>
+                        {/* <span className={styles.howNeurolxpHelps}>How NeuroLXP Helps</span> */}
 
                         <Image className={`${styles.arrowDownDoubleIcon} ${openCards[0] ? styles.arrowOpen : ""}`} src="/icons/arrowdown.svg" width={32} height={32} sizes="32px" alt="" aria-hidden="true" />
 
@@ -484,7 +484,7 @@ const GovernmentStateInstitutions: NextPage = () => {
 
                       <button type="button" className={styles.challengeToggle} aria-expanded={openCards[1]} aria-controls="challenge-answer-1" onClick={() => toggleCard(1)}>
 
-                        <span className={styles.howNeurolxpHelps}>How NeuroLXP Helps</span>
+                        {/* <span className={styles.howNeurolxpHelps}>How NeuroLXP Helps</span> */}
 
                         <Image className={`${styles.arrowDownDoubleIcon} ${openCards[1] ? styles.arrowOpen : ""}`} src="/icons/arrowdown.svg" width={32} height={32} sizes="32px" alt="" aria-hidden="true" />
 
@@ -540,7 +540,7 @@ const GovernmentStateInstitutions: NextPage = () => {
 
                       <button type="button" className={styles.challengeToggle} aria-expanded={openCards[2]} aria-controls="challenge-answer-2" onClick={() => toggleCard(2)}>
 
-                        <span className={styles.howNeurolxpHelps}>How NeuroLXP Helps</span>
+                        {/* <span className={styles.howNeurolxpHelps}>How NeuroLXP Helps</span> */}
 
                         <Image className={`${styles.arrowDownDoubleIcon} ${openCards[2] ? styles.arrowOpen : ""}`} src="/icons/arrowdown.svg" width={32} height={32} sizes="32px" alt="" aria-hidden="true" />
 
@@ -596,7 +596,7 @@ const GovernmentStateInstitutions: NextPage = () => {
 
                       <button type="button" className={styles.challengeToggle} aria-expanded={openCards[3]} aria-controls="challenge-answer-3" onClick={() => toggleCard(3)}>
 
-                        <span className={styles.howNeurolxpHelps}>How NeuroLXP Helps</span>
+                        {/* <span className={styles.howNeurolxpHelps}>How NeuroLXP Helps</span> */}
 
                         <Image className={`${styles.arrowDownDoubleIcon} ${openCards[3] ? styles.arrowOpen : ""}`} src="/icons/arrowdown.svg" width={32} height={32} sizes="32px" alt="" aria-hidden="true" />
 
@@ -652,7 +652,7 @@ const GovernmentStateInstitutions: NextPage = () => {
 
                       <button type="button" className={styles.challengeToggle} aria-expanded={openCards[4]} aria-controls="challenge-answer-4" onClick={() => toggleCard(4)}>
 
-                        <span className={styles.howNeurolxpHelps}>How NeuroLXP Helps</span>
+                        {/* <span className={styles.howNeurolxpHelps}>How NeuroLXP Helps</span> */}
 
                         <Image className={`${styles.arrowDownDoubleIcon} ${openCards[4] ? styles.arrowOpen : ""}`} src="/icons/arrowdown.svg" width={32} height={32} sizes="32px" alt="" aria-hidden="true" />
 
