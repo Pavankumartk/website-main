@@ -194,8 +194,6 @@ export default function CodingLabsPage() {
 
   }, []);
 
-
-
   // Nothing is selected initially:
 
   // both CTA buttons start raised with blue text.
@@ -204,7 +202,14 @@ export default function CodingLabsPage() {
 
     useState<"demo" | "started" | null>(null);
 
-  const previousVideo = () => {
+    const promoteVideo = (selected: number) => {
+    setVideoOrder((current) => {
+      if (current[0] === selected) return current;
+      return [selected, ...current.filter((index) => index !== selected)];
+    });
+  };
+
+const previousVideo = () => {
 
     setVideoOrder((current) => [current[2], current[0], current[1]]);
 
@@ -377,14 +382,19 @@ export default function CodingLabsPage() {
         </section>
 
         <section className="coding-challenges">
+
 <div className="coding-challenges__intro">
 
             <span className="coding-pill coding-pill--wide">What Learners Gain</span>
 
 <h2>
+
   Interactive Coding{" "}
+
   <span style={{ color: "#2D4CC8" }}>Challenges</span>
+
 </h2>
+
             <p>Learn by building, solving, and improving with every challenge.</p>
 
           </div>
@@ -424,12 +434,16 @@ export default function CodingLabsPage() {
         </section>
 
         <section className="coding-section coding-skills">
-<div
-          id="coding-labs-talk-to-expert-button-slot"
-          data-expert-button-slot
-          className="coding-expert-slot"
-        />
 
+<div
+
+          id="coding-labs-talk-to-expert-button-slot"
+
+          data-expert-button-slot
+
+          className="coding-expert-slot"
+
+        />
 
           <div className="coding-skill-list">
 
@@ -474,8 +488,11 @@ export default function CodingLabsPage() {
             <span className="coding-pill">Code Smarter</span>
 
             <h2>
+
   Real-World Skill{" "}
+
   <span style={{ color: "#2D4CC8" }}>Development</span>
+
 </h2>
 
             <p>
@@ -524,7 +541,7 @@ export default function CodingLabsPage() {
 
             >
 
-              <div className="coding-video-card coding-video-card--back">
+              <div className="coding-video-card coding-video-card--back" role="button" tabIndex={0} aria-label="Show this video in the first frame" onClick={() => promoteVideo(videoOrder[2])} onKeyDown={(event) => { if (event.key === "Enter" || event.key === " ") { event.preventDefault(); promoteVideo(videoOrder[2]); } }}>
 
                 <video
 
@@ -550,7 +567,7 @@ export default function CodingLabsPage() {
 
               </div>
 
-              <div className="coding-video-card coding-video-card--middle">
+              <div className="coding-video-card coding-video-card--middle" role="button" tabIndex={0} aria-label="Show this video in the first frame" onClick={() => promoteVideo(videoOrder[1])} onKeyDown={(event) => { if (event.key === "Enter" || event.key === " ") { event.preventDefault(); promoteVideo(videoOrder[1]); } }}>
 
                 <video
 
@@ -576,7 +593,7 @@ export default function CodingLabsPage() {
 
               </div>
 
-              <div className="coding-video-card coding-video-card--front">
+              <div className="coding-video-card coding-video-card--front" role="button" tabIndex={0} aria-label="Show this video in the first frame" onClick={() => promoteVideo(videoOrder[0])} onKeyDown={(event) => { if (event.key === "Enter" || event.key === " ") { event.preventDefault(); promoteVideo(videoOrder[0]); } }}>
 
                 <video
 
