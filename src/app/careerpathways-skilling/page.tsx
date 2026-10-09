@@ -8,8 +8,6 @@ import type { NextPage } from 'next';
 
 import { useCallback, useEffect, useRef, useState } from "react";
 
-
-
 import type { CSSProperties } from "react";
 
 
