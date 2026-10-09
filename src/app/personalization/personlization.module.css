@@ -9166,8 +9166,9 @@ body {
 
 @media (max-width: 767px) {
   .personalization .intelligentLearningExpertButtonSlot {
-    top: 900px;
-    right: 8px;
+    top: 215px;
+    right: 5px;
     transform: none;
   }
 }
+
