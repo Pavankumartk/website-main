@@ -23,64 +23,35 @@ type Tone = "blue" | "pink" | "purple" | "orange" | "teal" | "green" | "gold";
 const challengeCards = [
 
   {
-
-    title: "Lack of Clarity",
-
-    description: "Unclear goals hinder focused learning plans",
-
-    icon: "/icons/compass.svg",
-
-    tone: "blue" as Tone,
-
-  },
-
-  {
-
-    title: "Prioritization",
-
-    description: "Competing goals reduce focus and increase overwhelm",
-
-    icon: "/icons/target-01-1-pink-big.svg",
-
-    tone: "pink" as Tone,
-
-  },
-
-  {
-
-    title: "Progress Visibility",
-
-    description: "Limited insights make improvement difficult to track",
-
-    icon: "/icons/chart-02.svg",
-
-    tone: "purple" as Tone,
-
-  },
-
-  {
-
-    title: "Execution Gaps",
-
-    description: "Distractions and procrastination derail plans",
-
-    icon: "/icons/alert-01-1.svg",
-
-    tone: "orange" as Tone,
-
-  },
-
-  {
-
-    title: "Adaptability",
-
-    description: "Changing goals require flexible, adjustable plans",
-
-    icon: "/icons/message-multiple-02.svg",
-
-    tone: "teal" as Tone,
-
-  },
+  title: "Lack of Clarity",
+  description: "Unclear goals hinder learning",
+  icon: "/icons/compass.svg",
+  tone: "blue" as Tone,
+},
+{
+  title: "Prioritization",
+  description: "Competing goals reduce focus",
+  icon: "/icons/target-01-1-pink-big.svg",
+  tone: "pink" as Tone,
+},
+{
+  title: "Progress Visibility",
+  description: "Difficulty tracking learning progress",
+  icon: "/icons/chart-02.svg",
+  tone: "purple" as Tone,
+},
+{
+  title: "Execution Gaps",
+  description: "Distractions disrupt learning plans",
+  icon: "/icons/alert-01-1.svg",
+  tone: "orange" as Tone,
+},
+{
+  title: "Adaptability",
+  description: "Changing goals demand flexibility",
+  icon: "/icons/message-multiple-02.svg",
+  tone: "teal" as Tone,
+},
 
 ];
 
@@ -264,7 +235,7 @@ const benefitItems = [
 
 const journeyColumns = [
 
-  ["Set Goals", "Learn"],
+  ["Set Goals", "Explore Learn"],
 
   ["Track Progress", "Analyze Performance"],
 
@@ -1044,7 +1015,7 @@ const GoalSettingsAndProgressTracking: NextPage = () => {
 
             <div className={styles.heroCopy}>
 
-              <SectionPill>Goal Setting & Progress Tracking</SectionPill>
+              <SectionPill>Goals and Tracking</SectionPill>
 
               <h1 id="goal-hero-heading">Set Clear Goals! Track Progress! <span className={styles.blueText}>Achieve It!</span></h1>
 
