@@ -14990,3 +14990,13 @@
     text-align: center !important;
   }
 }
+
+/* Built for Learning at Scale: make side photo cards selectable. */
+.contentIntelligenceManagem .frameParent79 .learningSelectableCard {
+  cursor: pointer;
+}
+
+.contentIntelligenceManagem .frameParent79 .learningSelectableCard:focus-visible {
+  outline: 3px solid #2d4cc8;
+  outline-offset: 3px;
+}
