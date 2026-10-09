@@ -5732,8 +5732,8 @@
 .analyticsReporting > .frameParent46 { position: relative; }
 .analyticsReporting .betterOutcomesExpertSlot {
   position: absolute;
-  top: 50%;
-  right: 16px;
+  top: 30%;
+  right: 20px;
   width: 64px;
   height: 64px;
   transform: translateY(-50%);
@@ -5741,8 +5741,8 @@
 }
 @media (max-width: 767px) {
   .analyticsReporting .betterOutcomesExpertSlot {
-    top: 5px;
-    right: 8px;
+    top: 175px;
+    right: 6px;
     transform: none;
   }
 }
