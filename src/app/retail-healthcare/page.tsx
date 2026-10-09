@@ -398,7 +398,7 @@ const RetailAndHealthCare: NextPage = () => {
 
                 <p className={styles.retailCardDropdown} style={{ margin: 0 }}>
 
-                  Simplify new hire<br />onboarding.
+                  Simplify new hire<br />onboarding
 
                 </p>
 
@@ -430,7 +430,7 @@ const RetailAndHealthCare: NextPage = () => {
 
                 <p className={styles.retailCardDropdown} style={{ margin: 0 }}>
 
-                  Keep teams product<br />ready.
+                  Keep teams product<br />ready
 
                 </p>
 
@@ -462,7 +462,7 @@ const RetailAndHealthCare: NextPage = () => {
 
                 <p className={styles.retailCardDropdown} style={{ margin: 0 }}>
 
-                  Deliver consistent training<br />everywhere.
+                  Deliver consistent training<br />everywhere
 
                 </p>
 
@@ -912,8 +912,10 @@ const RetailAndHealthCare: NextPage = () => {
 
                 <div className={styles.frameParent36}>
 
-                  <span className={styles.selectableBadgeText}>NeuroLXP</span>
-
+<span className={styles.selectableBadgeText}>
+  NeuroLXP
+  <sup className={styles.neuroLxpTM}>TM</sup>
+</span>
                   <Image src="/images/transparent.webp" className={styles.frameChild32} width={170.7} height={50.1} sizes="100vw" alt="" />
 
                   <h2 className={styles.poweringLearningFor} style={{ margin: 0 }}>
