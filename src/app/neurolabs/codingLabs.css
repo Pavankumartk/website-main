@@ -2936,8 +2936,6 @@ a {
 
 }
 
-
-
 /* Blue emphasis in the requested headings. */
 
 .coding-heading-blue {
@@ -2957,160 +2955,293 @@ a {
 }
 
 /* =========================================================
+
    CODING LABS — SECTION EXPERT BUTTON
+
    Placed in the empty area of the Real-World Skill
+
    Development section without overlapping any content.
+
    ========================================================= */
 
 .coding-skills {
+
   position: relative;
+
 }
 
 /* Desktop: place in the empty top-right area of the text section */
+
 .coding-expert-slot {
+
   --expert-button-size: 64px;
+
   position: absolute;
+
   top: 14px;
+
   right: 8px;
+
   width: var(--expert-button-size);
+
   height: var(--expert-button-size);
+
   z-index: 12;
+
   pointer-events: none;
+
 }
 
 .coding-expert-slot > button[class*="talk-to-expert-fab"] {
+
   position: absolute !important;
+
   inset: 0 !important;
+
   top: 0 !important;
+
   right: 0 !important;
+
   bottom: auto !important;
+
   left: auto !important;
+
   margin: 0 !important;
+
   transform: none !important;
+
   translate: none !important;
+
   pointer-events: auto !important;
+
 }
 
 /* Large tablet: slightly smaller and tucked to the edge */
+
 @media (max-width: 1200px) {
+
   .coding-expert-slot {
+
     --expert-button-size: 56px;
+
     top: 12px;
+
     right: 6px;
+
   }
+
 }
 
 /* Tablet/mobile: move into safe empty gap so it does not cover text */
+
 @media (max-width: 900px) {
+
   .coding-expert-slot {
+
     --expert-button-size: 48px;
+
     top: -56px;
+
     right: 8px;
+
   }
+
 }
 
 @media (max-width: 480px) {
+
   .coding-expert-slot {
+
     --expert-button-size: 44px;
+
     top: -48px;
+
     right: 4px;
+
   }
+
 }
 
 @media (max-width: 380px) {
+
   .coding-expert-slot {
+
     --expert-button-size: 42px;
+
     top: -46px;
+
     right: 2px;
+
   }
+
 }
 
 /* Same professional pulse and hover behaviour as before */
+
 .coding-expert-slot::after {
+
   content: "";
+
   position: absolute;
+
   inset: 2px;
+
   z-index: 0;
+
   border: 2px solid rgba(45, 76, 200, 0.38);
+
   border-radius: 50%;
+
   box-sizing: border-box;
+
   pointer-events: none;
+
   opacity: 0;
+
   animation: codingExpertPulse 3s ease-out infinite;
+
 }
 
 @keyframes codingExpertPulse {
+
   0%, 15% {
+
     transform: scale(1);
+
     opacity: 0;
+
   }
 
   30% {
+
     opacity: 0.55;
+
   }
 
   75%, 100% {
+
     transform: scale(1.32);
+
     opacity: 0;
+
   }
+
 }
 
 .coding-expert-slot > button[class*="talk-to-expert-fab"] {
+
   transition: box-shadow 180ms ease, background-color 180ms ease;
+
 }
 
 .coding-expert-slot > button[class*="talk-to-expert-fab"]:hover,
+
 .coding-expert-slot > button[class*="talk-to-expert-fab"]:focus-visible {
+
   box-shadow:
+
     -5px -5px 10px #ffffff,
+
     5px 5px 10px #c6c6c9,
+
     0 0 0 3px rgba(45, 76, 200, 0.14);
+
 }
 
 .coding-expert-slot > button[class*="talk-to-expert-fab"]:hover svg,
+
 .coding-expert-slot > button[class*="talk-to-expert-fab"]:focus-visible svg {
+
   transform-origin: center;
+
   animation: codingExpertWave 600ms ease-in-out;
+
 }
 
 @keyframes codingExpertWave {
+
   0%, 100% {
+
     transform: rotate(0deg);
+
   }
 
   25% {
+
     transform: rotate(-12deg);
+
   }
 
   50% {
+
     transform: rotate(10deg);
+
   }
 
   75% {
+
     transform: rotate(-5deg);
+
   }
+
 }
 
 .coding-expert-slot > button[class*="talk-to-expert-fab"]:active {
+
   box-shadow:
+
     inset -4px -4px 8px #ffffff,
+
     inset 4px 4px 8px #c6c6c9;
+
 }
 
 .coding-expert-slot:has(> button[aria-expanded="true"])::after {
+
   animation: none;
+
   opacity: 0;
+
 }
 
 @media (prefers-reduced-motion: reduce) {
+
   .coding-expert-slot::after,
+
   .coding-expert-slot > button[class*="talk-to-expert-fab"]:hover svg,
+
   .coding-expert-slot > button[class*="talk-to-expert-fab"]:focus-visible svg {
+
     animation: none;
+
   }
 
   .coding-expert-slot > button[class*="talk-to-expert-fab"] {
+
     transition: none;
+
   }
+
 }
 
+/* Requested adjustments only */
+@media (min-width: 901px) {
+  .coding-hero__content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+  }
+  .coding-hero__content h1,
+  .coding-hero__content p {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+.coding-learning .coding-video-card {
+  cursor: pointer;
+}
+.coding-learning .coding-video-card:focus-visible {
+  outline: 3px solid var(--coding-blue);
+  outline-offset: 4px;
+}
