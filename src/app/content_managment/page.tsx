@@ -370,13 +370,13 @@ export default function ContentIntelligenceManagement() {
                     <div className={styles.frameWrapper37}>
                       <div className={styles.checkmarkCircle04Group}>
                         <Image className={styles.checkmarkCircle04Icon} src="/icons/checkmark-circle-04-green.svg" width={32} height={32} sizes="32px" alt="" aria-hidden="true" />
-                        <div className={styles.interactiveLearning}>Multimedia lessons</div>
+                        <div className={styles.interactiveLearning}>Multimedia Lessons</div>
                       </div>
                     </div>
                     <div className={styles.frameWrapper37}>
                       <div className={styles.checkmarkCircle04Container}>
                         <Image className={styles.checkmarkCircle04Icon} src="/icons/checkmark-circle-04-green.svg" width={32} height={32} sizes="32px" alt="" aria-hidden="true" />
-                        <div className={styles.interactiveLearning}>Clickable content</div>
+                        <div className={styles.interactiveLearning}>Clickable Content</div>
                       </div>
                     </div>
                   </div>
@@ -390,7 +390,7 @@ export default function ContentIntelligenceManagement() {
                     <div className={styles.frameWrapper36}>
                       <div className={styles.checkmarkCircle04Parent3}>
                         <Image className={styles.checkmarkCircle04Icon} src="/icons/checkmark-circle-04-green.svg" width={32} height={32} sizes="32px" alt="" aria-hidden="true" />
-                        <div className={styles.interactiveLearning}>Gamified activities</div>
+                        <div className={styles.interactiveLearning}>Gamified Activities</div>
                       </div>
                     </div>
                     <div className={styles.frameWrapper36}>
