@@ -8819,8 +8819,8 @@ body {
 /* Mobile only — move Built for Scale expert button upward */
 @media screen and (max-width: 767px) {
   .interactiveGamifiedLearnin .builtForScaleExpertButtonSlot {
-    top: 5px !important;
-    right: 8px !important;
+    top: 2px !important;
+    right: -15px !important;
     bottom: auto !important;
     left: auto !important;
     transform: none !important;
@@ -8979,5 +8979,119 @@ body {
   .interactiveGamifiedLearnin .frameDiv .arrowRightDoubleGroup .augmentation {
     font-size: 12px !important;
     line-height: 18px !important;
+  }
+}
+
+/* Breadcrumb - Desktop */
+@media screen and (min-width: 769px) {
+  .interactiveGamifiedLearnin .frameDiv {
+    font-size: 16px !important;
+  }
+
+  .interactiveGamifiedLearnin .frameDiv .augmentation {
+    font-size: 16px !important;
+    line-height: 24px !important;
+    letter-spacing: 0.02em;
+    white-space: nowrap;
+  }
+}
+
+/* Breadcrumb - Mobile */
+@media screen and (max-width: 768px) {
+  .interactiveGamifiedLearnin .frameDiv {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    flex-wrap: nowrap !important;
+    gap: 6px !important;
+    font-size: 12px !important;
+  }
+
+  .interactiveGamifiedLearnin .frameDiv .augmentation {
+    font-size: 12px !important;
+    line-height: 20px !important;
+    letter-spacing: 0.02em;
+    white-space: nowrap !important;
+  }
+
+  .interactiveGamifiedLearnin .frameDiv .arrowDown01Icon {
+    width: 14px !important;
+    height: 14px !important;
+    flex-shrink: 0 !important;
+  }
+}
+/* FINAL BREADCRUMB FONT FIX */
+
+/* Desktop */
+@media screen and (min-width: 769px) {
+  .interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameDiv,
+  .interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameDiv .augmentation,
+  .interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameDiv .arrowRightDoubleGroup .augmentation {
+    font-size: 14px !important;
+    line-height: 20px !important;
+  }
+}
+
+/* Mobile */
+@media screen and (max-width: 768px) {
+  .interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameDiv,
+  .interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameDiv .augmentation,
+  .interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameDiv .arrowRightDoubleGroup .augmentation {
+    font-size: 12px !important;
+    line-height: 18px !important;
+  }
+
+  .interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameDiv {
+    flex-wrap: nowrap !important;
+    align-items: center !important;
+    gap: 6px !important;
+  }
+
+  .interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin .frameDiv .augmentation {
+    white-space: nowrap !important;
+  }
+}
+
+/* Mobile: Keep all 8 card descriptions in one line */
+@media screen and (max-width: 768px) {
+  .interactiveGamifiedLearnin .frameParent20
+  .discoverNewInsightsContainer,
+  .interactiveGamifiedLearnin .frameParent20
+  .linkConceptsStepByContainer,
+  .interactiveGamifiedLearnin .frameParent20
+  .discoverNewInsights {
+    white-space: nowrap !important;
+    text-wrap: nowrap !important;
+    word-break: normal !important;
+    overflow-wrap: normal !important;
+  }
+}
+
+/* Keep all 8 activity descriptions on one line */
+@media screen and (max-width: 767px) {
+  .interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin
+  .frameParent20
+  :is(.discoverNewInsightsContainer, .linkConceptsStepByContainer, .discoverNewInsights) {
+    white-space: nowrap !important;
+    text-wrap: nowrap !important;
+    word-break: normal !important;
+    overflow-wrap: normal !important;
+  }
+
+  /* Move description text slightly left */
+  .interactiveGamifiedLearnin .frameParent20
+  :is(.discoverNewInsightsContainer, .linkConceptsStepByContainer) {
+    transform: translateX(-8px) !important;
+  }
+}
+
+/* Mobile: Move all 8 activity subtexts slightly left */
+@media screen and (max-width: 767px) {
+  .interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin.interactiveGamifiedLearnin
+  .frameParent20
+  :is(.discoverNewInsightsContainer, .linkConceptsStepByContainer) {
+    position: relative !important;
+    left: -22px !important;
+     top: 10px !important;
   }
 }
