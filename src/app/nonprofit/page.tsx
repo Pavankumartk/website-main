@@ -289,8 +289,9 @@ const NGO: NextPage = () => {
 
                                 <h2 className={styles.missionDrivenLearning} style={{ margin: 0, fontWeight: 700 }}>Mission-Driven <span className={styles.headingAccent}>Learning</span></h2>
 
-                                <div className={styles.empowerStaffVolunteers}>Empower staff, volunteers partners, and beneficiaries with scalable digital learning that builds skills, shares knowledge and drives lasting social impact.</div>
-
+<div className={styles.empowerStaffVolunteers}>
+  Empower communities through digital learning that builds skills, shares knowledge, and drives social impact.
+</div>
                             </div>
 
                         </div>
@@ -307,8 +308,9 @@ const NGO: NextPage = () => {
 
                                     <h2 className={styles.scaleYourImpact} style={{ margin: 0, fontWeight: 700 }}>Scale your <span className={styles.headingAccent}>Impact</span></h2>
 
-                                    <div className={styles.deliverStructuredTraining}>Deliver structured training capacity building, and measurable learning through one platform that empowers nonprofits to grow and achieve their mission.</div>
-
+<div className={styles.deliverStructuredTraining}>
+  Empower nonprofits with training, skill development, and measurable learning to achieve their mission.
+</div>
                                 </div>
 
                             </div>
