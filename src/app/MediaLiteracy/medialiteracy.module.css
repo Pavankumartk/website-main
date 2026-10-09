@@ -5169,3 +5169,33 @@ body:has(.mediaLiteracy) * {
     display: block;
   }
 }
+@media (min-width: 1025px) {
+  .frameWrapper2 .frameParent2 {
+    max-width: 556px;
+    gap: 0;
+    align-items: flex-start;
+  }
+
+  /* Space between label and heading */
+  .frameWrapper2 .frameItem {
+    margin-bottom: 65px;
+  }
+
+  /* Space between heading and description */
+  .frameWrapper2 .spotBiasVerifyFactsBuildWrapper {
+    margin-bottom: 65px;
+  }
+
+  .frameWrapper2 .questionHeadlinesVerify {
+    margin: 0;
+  }
+}
+
+@media (max-width: 640px) {
+  .frameParent3 .recognizeCredibleSources {
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 600;
+    white-space: normal;
+  }
+}
