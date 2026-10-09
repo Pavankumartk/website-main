@@ -56,9 +56,9 @@ const MediaLiteracy: NextPage = () => {
 
                               <span className={styles.spotBiasLine}>Spot Bias!</span>{" "}
 
-<span className={styles.spotBiasLine}>
-  Verify Facts Build <span style={{ color: "#2D4CC8" }}>Trust</span>
-</span>
+                            <span className={styles.spotBiasLine}>
+                              Verify Facts Build <span style={{ color: "#2D4CC8" }}>Trust</span>
+                            </span>
                             </b>
 
                           </div>
