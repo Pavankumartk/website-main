@@ -122,7 +122,7 @@ const stages: StageData[] = [
 
     checklist: ["Complex learning scenarios", "Real-world application projects", "Strategic problem-solving frameworks"],
 
-    note: "Learners strengthen professional confidence and advanced decision-making skills.",
+    note: "Learners strengthen professional confidence and advanced decision making skills.",
 
     mastery: 75,
 
@@ -518,17 +518,17 @@ type HowItWorksStep = {
 
 const howItWorksSteps: HowItWorksStep[] = [
 
-  { key: "assess", color: "#2D4CC8", title: "Assess", description: "Understand learner needs, knowledge, and goals.", Icon: ClipboardCheckIcon },
+  { key: "assess", color: "#2D4CC8", title: "Assess", description: "Understand learner needs, knowledge, and goals", Icon: ClipboardCheckIcon },
 
-  { key: "analyse", color: "#BF1869", title: "Analyse", description: "Use learning data to identify progress and gaps.", Icon: AnalyticsUpIcon },
+  { key: "analyse", color: "#BF1869", title: "Analyse", description: "Use learning data to identify progress and gaps", Icon: AnalyticsUpIcon },
 
-  { key: "personalize", color: "#67096E", title: "Personalize", description: "Recommend relevant content and learning activities.", Icon: UserIcon },
+  { key: "personalize", color: "#67096E", title: "Personalize", description: "Recommend relevant content and learning activities", Icon: UserIcon },
 
-  { key: "adapt", color: "#C05512", title: "Adapt", description: "Adjust the learning journey based on performance.", Icon: RefreshIcon },
+  { key: "adapt", color: "#C05512", title: "Adapt", description: "Adjust the learning journey based on performance", Icon: RefreshIcon },
 
-  { key: "track", color: "#2A7308", title: "Track", description: "Monitor progress throughout the learning journey.", Icon: ActivityIcon },
+  { key: "track", color: "#2A7308", title: "Track", description: "Monitor progress throughout the learning journey", Icon: ActivityIcon },
 
-  { key: "master", color: "#907507", title: "Master", description: "Build validated skills for real-world application.", Icon: TargetIcon },
+  { key: "master", color: "#907507", title: "Master", description: "Build validated skills for real world application", Icon: TargetIcon },
 
 ];
 
