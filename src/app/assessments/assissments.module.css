@@ -8505,3 +8505,84 @@ button.requestADemoWrapper::-moz-focus-inner {
   }
 }
 
+/* Mobile breadcrumb typography only — match the Learning page. */
+@media (max-width: 767px) {
+  .assessments.assessments.assessments > .frameDiv {
+    font-family: "Segoe UI", "Inter" !important;
+    font-size: 16px !important;
+    font-weight: 400 !important;
+    line-height: 24px !important;
+    letter-spacing: 0.02em !important;
+    gap: 8px !important;
+  }
+
+  .assessments.assessments.assessments > .frameDiv .homeParent,
+  .assessments.assessments.assessments > .frameDiv .featuresWrapper,
+  .assessments.assessments.assessments > .frameDiv .arrowRightDoubleGroup {
+    gap: 8px !important;
+  }
+
+  .assessments.assessments.assessments > .frameDiv .learningEcoSystem {
+    font-size: 16px !important;
+    line-height: 24px !important;
+  }
+
+  .assessments.assessments.assessments > .frameDiv .arrowRightDoubleGroup .learningEcoSystem,
+  .assessments.assessments.assessments > .frameDiv [aria-current="page"] {
+    font-size: 16px !important;
+    font-weight: 700 !important;
+    line-height: 24px !important;
+    color: #243fa8 !important;
+  }
+}
+
+/* Allow vertical page scrolling while swiping audience cards horizontally on mobile. */
+@media (max-width: 767px) {
+  .assessments .audienceCarouselViewport {
+    touch-action: pan-y;
+  }
+}
+
+
+/* Desktop only: slightly smaller audience carousel navigation design. */
+@media (min-width: 1200px) {
+  .assessments.assessments.assessments .audienceControls {
+    width: 304px !important;
+    height: 82px !important;
+  }
+
+  .assessments.assessments.assessments .audienceArrowButton,
+  .assessments.assessments.assessments .audienceArrowButton:hover,
+  .assessments.assessments.assessments .audienceArrowButton:focus,
+  .assessments.assessments.assessments .audienceArrowButton:focus-visible,
+  .assessments.assessments.assessments .audienceArrowButton:active {
+    width: 82px !important;
+    height: 82px !important;
+    min-width: 82px !important;
+    min-height: 82px !important;
+    flex: 0 0 82px !important;
+  }
+
+  .assessments.assessments.assessments .audienceArrowButton::before,
+  .assessments.assessments.assessments .audienceArrowButton:hover::before,
+  .assessments.assessments.assessments .audienceArrowButton:focus::before,
+  .assessments.assessments.assessments .audienceArrowButton:focus-visible::before,
+  .assessments.assessments.assessments .audienceArrowButton:active::before {
+    inset: 10px !important;
+  }
+
+  .assessments.assessments.assessments .audienceArrowButton img,
+  .assessments.assessments.assessments .audienceArrowButton:hover img,
+  .assessments.assessments.assessments .audienceArrowButton:focus img,
+  .assessments.assessments.assessments .audienceArrowButton:focus-visible img,
+  .assessments.assessments.assessments .audienceArrowButton:active img {
+    width: 34px !important;
+    height: 34px !important;
+  }
+
+  .assessments.assessments.assessments .audienceControlLine {
+    width: 140px !important;
+    height: 48px !important;
+    flex: 0 0 140px !important;
+  }
+}
