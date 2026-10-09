@@ -502,7 +502,7 @@ export default function Personalization() {
 
             <div className={styles.personalizedLearningCopy}>
 
-              <p className={styles.personalizedLearningBadge}>What is Personalized Learning?</p>
+              <p className={styles.personalizedLearningBadge}>What is Personalized Learning</p>
 
               <h2 id="personalized-learning-heading" className={styles.learningBuiltAroundContainer}>
 
@@ -626,9 +626,7 @@ export default function Personalization() {
 
               Personalization in
 
-            <br />
-
-            <span className={styles.headingLastWord}>Action</span>
+            <span className={styles.headingLastWord}> Action</span>
 
             </h2>
 
@@ -734,9 +732,9 @@ export default function Personalization() {
 
               <div className={styles.understandParent}>
 
-                <h3 className={styles.understand}>Understand</h3>
+                <h3 className={styles.understand}style={{ textAlign: "center" }}>Understand</h3>
 
-                <p className={styles.assessKnowledgeSkills}><span className={styles.copyLine}>Assess knowledge,</span><span className={styles.copyLine}>skills, and learning</span><span className={styles.copyLine}>goals</span></p>
+                {/* <p className={styles.assessKnowledgeSkills}><span className={styles.copyLine}>Assess knowledge,</span><span className={styles.copyLine}>skills, and learning</span><span className={styles.copyLine}>goals</span></p> */}
 
               </div>
 
@@ -752,9 +750,9 @@ export default function Personalization() {
 
               <div className={styles.adaptParent}>
 
-                <h3 className={styles.understand}>Adapt</h3>
+                <h3 className={styles.understand}style={{ textAlign: "center" }}>Adapt</h3>
 
-                <p className={styles.buildALearning}><span className={styles.copyLine}>Build a learning</span><span className={styles.copyLine}>path matched to</span><span className={styles.copyLine}>individual needs</span></p>
+                {/* <p className={styles.buildALearning}><span className={styles.copyLine}>Build a learning</span><span className={styles.copyLine}>path matched to</span><span className={styles.copyLine}>individual needs</span></p> */}
 
               </div>
 
@@ -770,9 +768,9 @@ export default function Personalization() {
 
               <div className={styles.optimizeParent}>
 
-                <h3 className={styles.understand}>Optimize</h3>
+                <h3 className={styles.understand}style={{ textAlign: "center" }}>Optimize</h3>
 
-                <p className={styles.useLearningData}><span className={styles.copyLine}>Use learning data to</span><span className={styles.copyLine}>continuously refine</span><span className={styles.copyLine}>the experience</span></p>
+                {/* <p className={styles.useLearningData}><span className={styles.copyLine}>Use learning data to</span><span className={styles.copyLine}>continuously refine</span><span className={styles.copyLine}>the experience</span></p> */}
 
               </div>
 
@@ -788,9 +786,9 @@ export default function Personalization() {
 
               <div className={styles.developParent}>
 
-                <h3 className={styles.develop}>Develop</h3>
+                <h3 className={styles.develop}style={{ textAlign: "center" }}>Develop</h3>
 
-                <p className={styles.closeSkillGaps}><span className={styles.copyLine}>Close skill gaps and</span><span className={styles.copyLine}>build job-ready</span><span className={styles.copyLine}>capabilities</span></p>
+                {/* <p className={styles.closeSkillGaps}><span className={styles.copyLine}>Close skill gaps and</span><span className={styles.copyLine}>build job-ready</span><span className={styles.copyLine}>capabilities</span></p> */}
 
               </div>
 
