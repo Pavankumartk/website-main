@@ -70,7 +70,7 @@ const NeuroLXP2103Rs8Cs3MsLiteracy: NextPage = () => {
 
                   </div>
 
-                  <div className={styles.poweredByThe}>Powered by the 3Rs-8Cs-3Ms framework, NeuroLXP builds future ready skills and lifelong learning.</div>
+                  <div className={styles.poweredByThe}>Powered by the 3Rs-8Cs-3Ms framework, NeuroLXP builds future ready skills and lifelong learning</div>
 
                 </div>
 
