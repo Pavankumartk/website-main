@@ -911,7 +911,7 @@ const Assessments: NextPage = () => {
 
                     <Image className={`${styles.aiCardIcon} ${styles.aiCardIconBlue}`} src="/icons/file-question-mark.svg" width={60} height={60} sizes="60px" alt="Generate exam questions" />
 
-                    <div className={styles.generateExamQuestions}><span>Generate Exam</span><span>Questions</span></div>
+                    <div className={styles.generateExamQuestions}><span>Generate Exam </span><span>Questions</span></div>
 
                   </div>
 
@@ -925,7 +925,7 @@ const Assessments: NextPage = () => {
 
                     <Image className={`${styles.aiCardIcon} ${styles.aiCardIconPink}`} src="/icons/clipboard-list copy.svg" width={60} height={60} sizes="60px" alt="Create practice quizzes" />
 
-                    <div className={styles.createPracticeQuizzes}><span>Create Practice</span><span>Quizzes</span></div>
+                    <div className={styles.createPracticeQuizzes}><span>Create Practice </span><span>Quizzes</span></div>
 
                   </div>
 
@@ -943,7 +943,7 @@ const Assessments: NextPage = () => {
 
                     <Image className={`${styles.aiCardIcon} ${styles.aiCardIconOrange}`} src="/icons/idea-01.svg" width={60} height={60} sizes="60px" alt="Recommend smart questions" />
 
-                    <div className={styles.recommendSmartQuestions}><span>Recommend Smart</span><span>Questions</span></div>
+                    <div className={styles.recommendSmartQuestions}><span>Recommend Smart </span><span>Questions</span></div>
 
                   </div>
 
@@ -957,7 +957,7 @@ const Assessments: NextPage = () => {
 
                     <Image className={`${styles.aiCardIcon} ${styles.aiCardIconPurple}`} src="/icons/target-02-heart.svg" width={60} height={60} sizes="60px" alt="Enable adaptive testing" />
 
-                    <div className={styles.enableAdaptiveTesting}><span>Enable Adaptive</span><span>Testing</span></div>
+                    <div className={styles.enableAdaptiveTesting}><span>Enable Adaptive </span><span>Testing</span></div>
 
                   </div>
 
