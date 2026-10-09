@@ -3450,3 +3450,89 @@
     transform: none !important;
   }
 }
+
+/* First section: desktop text spacing only */
+@media (min-width: 1024px) {
+  .neurolxp2103rs8cs3msLite .frameParent5 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: auto;
+    min-height: 0;
+    gap: 28px;
+  }
+
+  .neurolxp2103rs8cs3msLite .frameParent4 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: auto;
+    gap: 32px;
+  }
+
+  .neurolxp2103rs8cs3msLite .skillsThatMatter {
+    height: auto;
+    margin: 0;
+  }
+
+  .neurolxp2103rs8cs3msLite .poweredByThe {
+    height: auto;
+    margin: 0;
+  }
+}
+/* First section - desktop spacing fix */
+@media (min-width: 1024px) {
+  .neurolxp2103rs8cs3msLite .frameParent4,
+  .neurolxp2103rs8cs3msLite .frameParent5 {
+    gap: 0 !important;
+  }
+
+  /* Space between label and heading */
+  .neurolxp2103rs8cs3msLite .frameParent5 > .frameItem {
+    margin-bottom: 55px !important;
+  }
+
+  /* Space between heading and description */
+  .neurolxp2103rs8cs3msLite .frameParent5 > .skillsThatMatter {
+    height: auto !important;
+    margin-bottom: 55px !important;
+  }
+
+  .neurolxp2103rs8cs3msLite .frameParent5 {
+    height: auto !important;
+    min-height: 0 !important;
+  }
+
+  .neurolxp2103rs8cs3msLite .poweredByThe {
+    margin-top: 0 !important;
+    height: auto !important;
+  }
+}
+
+/* 8Cs list - desktop left alignment */
+@media (min-width: 1024px) {
+  .neurolxp2103rs8cs3msLite .frameParent14 {
+    align-items: flex-start !important;
+  }
+
+  .neurolxp2103rs8cs3msLite .frameParent15 {
+    justify-content: flex-start !important;
+  }
+
+  .neurolxp2103rs8cs3msLite .frameWrapper6 {
+    align-items: flex-start !important;
+    text-align: left !important;
+  }
+
+  .neurolxp2103rs8cs3msLite .frameWrapper6 .brain01Parent,
+  .neurolxp2103rs8cs3msLite .frameWrapper6 .award02Parent,
+  .neurolxp2103rs8cs3msLite .frameWrapper6 .target01Parent {
+    left: 16px !important;
+    justify-content: flex-start !important;
+    text-align: left !important;
+  }
+
+  .neurolxp2103rs8cs3msLite .frameWrapper6 .mindset {
+    text-align: left !important;
+  }
+}
