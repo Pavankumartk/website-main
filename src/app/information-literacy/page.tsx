@@ -528,10 +528,17 @@ const InformationLiteracy: NextPage = () => {
           <SkillCircle value="84%" label="Critical Thinking" color="#2D4CC8" />
           <SkillCircle value="84%" label="Ethical Usage" color="#C05512" />
         </div>
-        <div className={styles.frameParent47}>
-          <div className={styles.frameChild35} />
-          <Image className={styles.creativeExcitedBrunetteBusiIcon} src="/images/image6.webp" width={678} height={721} sizes="100vw" alt="" />
-        </div>
+       <div className={styles.frameParent47}>
+  <div className={styles.frameChild35} />
+  <Image
+    className={styles.creativeExcitedBrunetteBusiIcon}
+    src="/images/information.png"
+    width={678}
+    height={300}
+    sizes="100vw"
+    alt=""
+  />
+</div>
       </div>
       {/* <TalkToExpertButton /> */}
       </div>
