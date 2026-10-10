@@ -60,7 +60,7 @@ const EmployeeInduction: NextPage = () => {
 
             <div className={styles.frameParent4}>
 
-              <div className={styles.frameIcon}>NeuroLXP Employee Induction</div>
+              <div className={styles.frameIcon}>Employee Induction</div>
 
               <b className={styles.transformOnboardingIntoContainer}>
 
