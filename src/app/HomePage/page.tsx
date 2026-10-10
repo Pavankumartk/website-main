@@ -951,7 +951,7 @@ const learningModuleCards = [
   },
   {
     id: 4,
-    image: "/images/girl-student-with-laptop-standing-by-window-corridor 1.png",  
+    image: "/images/woman-attending-online-class 2.png", 
     title: "Immersive Learning",
     description:
       "Interactive learning that builds skills and delivers results",
