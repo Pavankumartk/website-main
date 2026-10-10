@@ -3540,3 +3540,11 @@
     right: 60;
   }
 }
+.neurolxpBadgeTm {
+  margin-left: -1px !important;
+  position: relative;
+  top: -5px;
+  font-size: 10px;
+  vertical-align: super;
+  line-height: 0;
+}
