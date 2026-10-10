@@ -5043,3 +5043,35 @@ a:focus-visible {
     margin-bottom: 12px;
   }
 }
+
+/* Immersive Learning only: reduce artwork width and height.
+   Target the rendered image by its alt text, so no TSX class change is needed.
+   This also works with Next.js <Image fill /> positioning. */
+.learning-module-image-frame img[alt="Immersive Learning"],
+.learning-module-image-frame img.immersiveLearningImage {
+  position: absolute !important;
+  inset: 0 !important;
+  width: 150% !important;
+  height: 130% !important;
+  max-width: 100% !important;
+  box-sizing: border-box !important;
+  padding: 1% !important;
+  object-fit: contain !important;
+  object-position: center center !important;
+  transform: none !important;
+  margin: 0 !important;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .learning-module-image-frame img[alt="Immersive Learning"],
+  .learning-module-image-frame img.immersiveLearningImage {
+    padding: 14% !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .learning-module-image-frame img[alt="Immersive Learning"],
+  .learning-module-image-frame img.immersiveLearningImage {
+    padding: 15% !important;
+  }
+}
