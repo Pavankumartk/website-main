@@ -5478,3 +5478,39 @@ flex-direction:column;
     height: 48px;
   }
 }
+/* FIX: All 3 hero images equal size on mobile only */
+@media (max-width: 767px) {
+
+  .mediaPresence.mediaPresence > .frameParent4 .frameWrapper2,
+  .mediaPresence.mediaPresence > .frameParent4 .frameWrapper3,
+  .mediaPresence.mediaPresence > .frameParent4 .frameWrapper4 {
+    width: min(82vw, 280px) !important;
+    max-width: 280px !important;
+    height: auto !important;
+    aspect-ratio: 1 / 1 !important;
+    min-height: 0 !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    box-sizing: border-box !important;
+  }
+
+  .mediaPresence.mediaPresence > .frameParent4 .frameIcon,
+  .mediaPresence.mediaPresence > .frameParent4 .frameChild3 {
+    position: absolute !important;
+    top: 16px !important;
+    left: 16px !important;
+    width: calc(100% - 32px) !important;
+    height: calc(100% - 32px) !important;
+    object-fit: cover !important;
+    object-position: center !important;
+  }
+}
+
+/* Last section — raise TM slightly */
+.image20Parent .trademark {
+  position: relative !important;
+  top: -7px !important;
+  vertical-align: super !important;
+  font-size: 11px !important;
+  line-height: 0 !important;
+}
