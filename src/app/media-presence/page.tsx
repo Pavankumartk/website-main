@@ -801,10 +801,6 @@ const MediaPresence: NextPage = () => {
 
  );
 
-
-
 };
-
-
 
 export default MediaPresence;
