@@ -3910,8 +3910,8 @@ a:focus-visible {
 :global(button[class*="scroll-top-button"]) {
   /* Keep only the outer footer chevron button in its existing position.
      The original Footer component continues to control the chevron/icon design. */
-  translate: 0 -50% !important;
-  z-index: 5 !important;
+  translate: none !important;
+  z-index: 2 !important;
 }
 
 @media (width < 768px) {
@@ -4126,8 +4126,8 @@ a:focus-visible {
 :global(footer) > button[aria-label*="top" i],
 :global(footer) > [role="button"][aria-label*="top" i],
 :global(footer) > button:has([class*="chevron" i]) {
-  translate: 0 -50% !important;
-  z-index: 5 !important;
+  translate: none !important;
+  z-index: 2 !important;
 }
 
 /* ==========================================================================
