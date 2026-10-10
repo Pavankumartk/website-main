@@ -1236,3 +1236,51 @@
 .nlxp-footer-link:focus-visible::after {
   width: 100%;
 }
+
+/* Slightly smaller Scroll to Top button */
+.scroll-top-button {
+  width: 52px;
+  height: 82px;
+  min-width: 52px;
+  min-height: 82px;
+}
+
+.scroll-top-button-inner {
+  width: 36px;
+  height: 60px;
+  min-width: 36px;
+  min-height: 60px;
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+  .scroll-top-button {
+    width: 42px;
+    height: 66px;
+    min-width: 42px;
+    min-height: 66px;
+  }
+
+  .scroll-top-button-inner {
+    width: 29px;
+    height: 48px;
+    min-width: 29px;
+    min-height: 48px;
+  }
+}
+
+/* Space above footer with matching background */
+.nlxp-footer {
+  margin-top: 0;
+}
+
+.nlxp-footer::before {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  width: 100%;
+  height: 40px;
+  background-color: #dfe6e9;
+  pointer-events: none;
+}
