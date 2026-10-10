@@ -6647,3 +6647,15 @@
   padding-bottom: 80px !important;
   box-sizing: border-box;
 }
+/* Desktop and tablet */
+.customerTraining {
+  padding-bottom: 80px !important;
+  box-sizing: border-box;
+}
+
+/* Mobile view */
+@media (max-width: 768px) {
+  .customerTraining {
+    padding-bottom: 100px !important;
+  }
+}
