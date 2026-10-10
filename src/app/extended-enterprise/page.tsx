@@ -455,14 +455,10 @@ const ExtendedEnterpriseLearning: NextPage = () => {
           <div className={styles.empowerYourExtendedEnterpriParent}>
 
             <b className={styles.empowerYourExtended}>
-
-              Empower Your
-
-              <br />
-
-              Extended Enterprise
-
-            </b>
+  Empower Your
+  <br />
+  Extended <span className={styles.enterpriseBlue}>Enterprise</span>
+</b>
 
             <div className={styles.neurolxpConnectsTrains}>
 
