@@ -6635,3 +6635,10 @@
     right: 8px;
   }
 }
+
+
+/* Customer Training challenge cards: enlarge numbers 1–5 only. */
+.customerTraining.customerTraining .image20Parent .challenge1 {
+  font-size: 35px !important;
+  line-height: 1.2 !important;
+}
