@@ -534,11 +534,10 @@ export default function WhitePaper() {
 
               </div>
 
-              <p className={styles["frame-four-description"]}>
-
-                Transform learning insights into actionable strategies that improve learner engagement, strengthen skill development, optimize training effectiveness, and deliver measurable learning outcomes across your organization.
-
-              </p>
+             <p className={styles["frame-four-description"]}>
+  Turn learning insights into strategies that boost engagement,
+  strengthen skills, improve training, and deliver measurable outcomes.
+</p>
 
             </div>
 
