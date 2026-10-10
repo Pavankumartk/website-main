@@ -304,7 +304,7 @@ const HelpAndSupport: NextPage = () => {
 
                   <b className={styles.gettingStartedGuides}>
 
-                    Getting Started<br className={styles.mobileResourceBreak} />Guides
+                    Getting Started <br className={styles.mobileResourceBreak} />Guides
 
                   </b>
 
@@ -324,7 +324,7 @@ const HelpAndSupport: NextPage = () => {
 
                   <b className={styles.courseCreationTutorials}>
 
-                    Course Creation<br className={styles.mobileResourceBreak} />Tutorials
+                    Course Creation <br className={styles.mobileResourceBreak} />Tutorials
 
                   </b>
 
@@ -344,7 +344,7 @@ const HelpAndSupport: NextPage = () => {
 
                   <b className={styles.assessmentReporting}>
 
-                    Assessment & Reporting<br className={styles.mobileResourceBreak} />Guides
+                    Assessment & Reporting <br className={styles.mobileResourceBreak} />Guides
 
                   </b>
 
@@ -356,7 +356,7 @@ const HelpAndSupport: NextPage = () => {
 
                     <div className={styles.resourceIconInner}>
 
-                      <Image src="/icons/foldernew\\.svg" width={34} height={34} alt=""/>
+                      <Image src="/icons/foldernew.svg" width={34} height={34} alt=""/>
 
                     </div>
 
@@ -364,7 +364,7 @@ const HelpAndSupport: NextPage = () => {
 
                   <b className={styles.contentManagementResources}>
 
-                    Content Management<br className={styles.mobileResourceBreak} />Resources
+                    Content Management <br className={styles.mobileResourceBreak} />Resources
 
                   </b>
 
@@ -384,7 +384,7 @@ const HelpAndSupport: NextPage = () => {
 
                   <b className={styles.contentManagementResources}>
 
-                    Platform Configuration<br className={styles.mobileResourceBreak} />Guides
+                    Platform Configuration <br className={styles.mobileResourceBreak} />Guides
 
                   </b>
 
