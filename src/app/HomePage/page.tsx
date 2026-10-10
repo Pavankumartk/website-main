@@ -808,7 +808,7 @@ function MeetNeuroLXP() {
           </span>
           <h2 className={styles["meet-neurolxp-heading"]} id="meet-neurolxp-heading">
             Next-Generation Neomorphism<br />
-learning Platform
+Learning Platform
           </h2>
           <p className={styles["meet-neurolxp-subtext"]}>Neomorphic platform for smarter learning</p>
         </div>
@@ -870,7 +870,7 @@ const whyChooseCards: WhyChooseCardData[] = [
   { id: 1, title: "Get Discovered", description: "Launch Your White Label\nLMS", dashColor: "#E1E4C3", iconBg: "#E1E4C3", Icon: WhyChooseDiscoverIcon },
   { id: 2, title: "Deliver Excellence", description: "Innovative Learning for\nGrowth", dashColor: "#BCC6EB", iconBg: "#BCC6EB", Icon: WhyChooseExcellenceIcon },
   { id: 3, title: "Engage Learners", description: "Smart Learning\nNotifications", dashColor: "#BEDEDC", iconBg: "#BEDEDC", Icon: WhyChooseEngageIcon },
-  { id: 4, title: "Smart Analytics", description: "Smarter Analytics. Greater\nSuccess", dashColor: "#C6B7C7", iconBg: "#C6B7C7", Icon: WhyChooseAnalyticsIcon },
+  { id: 4, title: "Smart Analytics", description: "Better Insights Drive Greater Success", dashColor: "#C6B7C7", iconBg: "#C6B7C7", Icon: WhyChooseAnalyticsIcon },
 ];
 
 function WhyChooseCard({ title, description, dashColor, iconBg, Icon }: WhyChooseCardData) {
@@ -2306,12 +2306,20 @@ export default function HomePage() {
         }
 
         /* Center the chevron on the footer edge: half above and half inside. */
-        footer[class*="nlxp-footer"] [class*="scroll-top-button"] {
-          top: 0 !important;
-          translate: none !important;
-          transform: translate(-50%, -50%) !important;
-          z-index: 2 !important;
-        }
+        footer[class*="nlxp-footer"] button[class*="scroll-top-button"] {
+  position: absolute !important;
+  top: 0 !important;
+  left: 50% !important;
+  right: auto !important;
+  bottom: auto !important;
+  margin: 0 !important;
+  translate: none !important;
+  transform: translate(-50%, -50%) !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  z-index: 2 !important;
+}
       `}</style>
 
       <Header />
