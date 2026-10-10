@@ -3823,7 +3823,7 @@ body {
 @media (max-width: 768px) {
     .whitepaper-page .expertButtonRightSlot {
         right: 8px;
-        top: 150px;
+        top: -10px;
         width: 48px;
         height: 48px;
     }
