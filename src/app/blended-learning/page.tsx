@@ -337,7 +337,7 @@ const BlendedLearning: NextPage = () => {
 
 
 
-                                <p className={styles.howItWorksChallenge}>CHALLENGE <br />1</p>
+                                <p className={styles.howItWorksChallenge}>1</p>
 
 
 
@@ -361,7 +361,7 @@ const BlendedLearning: NextPage = () => {
 
 
 
-                                    <strong>HOW NEUROLXP HELPS</strong>
+                                    {/* <strong>HOW NEUROLXP HELPS</strong> */}
 
 
 
@@ -405,7 +405,7 @@ const BlendedLearning: NextPage = () => {
 
 
 
-                                    <strong>HOW NEUROLXP HELPS</strong>
+                                    {/* <strong>HOW NEUROLXP HELPS</strong> */}
 
 
 
@@ -449,7 +449,7 @@ const BlendedLearning: NextPage = () => {
 
 
 
-                                    <strong>HOW NEUROLXP HELPS</strong>
+                                    {/* <strong>HOW NEUROLXP HELPS</strong> */}
 
 
 
@@ -493,7 +493,7 @@ const BlendedLearning: NextPage = () => {
 
 
 
-                                    <strong>HOW NEUROLXP HELPS</strong>
+                                    {/* <strong>HOW NEUROLXP HELPS</strong> */}
 
 
 
@@ -537,7 +537,7 @@ const BlendedLearning: NextPage = () => {
 
 
 
-                                    <strong>HOW NEUROLXP HELPS</strong>
+                                    {/* <strong>HOW NEUROLXP HELPS</strong> */}
 
 
 
