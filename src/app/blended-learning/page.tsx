@@ -152,8 +152,7 @@ const BlendedLearning: NextPage = () => {
 
 
 
-                            <Image className={styles.blendedHeroImage} src="/images/first.webp" width={320} height={320} alt="Teacher presenting in a classroom" priority/>
-
+                            <Image className={styles.blendedHeroImage} src="/images/front-view-man-classroom 1.png" width={320} height={320} alt="Teacher presenting in a classroom" priority/>
 
 
                             <div className={styles.blendedHeroPlus} aria-hidden="true">+</div>
