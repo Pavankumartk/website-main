@@ -6642,3 +6642,8 @@
   font-size: 35px !important;
   line-height: 1.2 !important;
 }
+
+.customerTraining {
+  padding-bottom: 80px !important;
+  box-sizing: border-box;
+}
