@@ -1965,7 +1965,7 @@ export default function BookADemo() {
 
     try {
       const response = await fetch(
-  "http://localhost:4000/book-demo",
+  `${process.env.NEXT_PUBLIC_API_URL || "http://localhost:4000"}/email/book-demo`,
   {
     method: "POST",
     headers: {
@@ -1975,8 +1975,11 @@ export default function BookADemo() {
       fullName: fullName.trim(),
       email: email.trim(),
       organizationName: organizationName.trim(),
-      countryCode,
-      phone: normalizedPhone,
+      countryCode:
+  countryCodeOptions.find(
+    (option) => option.id === countryCode
+  )?.dialCode ?? "",
+phone: normalizedPhone,
       demoDate: dateValue,
       demoTime: timeValue,
       message: message.trim(),
