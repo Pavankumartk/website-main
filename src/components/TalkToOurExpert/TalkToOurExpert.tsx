@@ -3137,7 +3137,9 @@ export default function TalkToOurExpert({
 
 
 
-      const response = await fetch("http\\://localhost:4000/talk-to-expert", {
+      const response = await fetch(
+        `${(process.env.NEXT_PUBLIC_API_URL || "http://localhost:4000").replace(/\/$/, "")}/email/talk-to-expert`,
+        {
 
 
 
