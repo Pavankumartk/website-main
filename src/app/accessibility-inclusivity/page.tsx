@@ -70,8 +70,7 @@ const AccessibilityInclusivity: NextPage = () => {
 
               <Image className="frameInner" src="/images/bg-access.png" width={1216} height={621} sizes="100vw" alt="" />
 
-              <Image className="youngAdultWatchingTvShowWIcon" src="/images/accessbility.webp" width={572} height={652} sizes="100vw" alt="" />
-
+              <Image className="youngAdultWatchingTvShowWIcon" src="/images/young-adult-watching-tv-show-with-disabled-friend 1.png" width={572} height={652} sizes="100vw" alt="" />
             </div>
 
             <div className="frameParent3">
