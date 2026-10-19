@@ -1,1522 +1,1522 @@
-"use client";
+// "use client";
 
-import type { NextPage } from "next";
+// import type { NextPage } from "next";
 
-import Image from "next/image";
+// import Image from "next/image";
 
-import { type FormEvent, useMemo, useState } from "react";
+// import { type FormEvent, useMemo, useState } from "react";
 
-import { getCountries, getCountryCallingCode, isValidPhoneNumber, type CountryCode } from "libphonenumber-js";
+// import { getCountries, getCountryCallingCode, isValidPhoneNumber, type CountryCode } from "libphonenumber-js";
 
-import styles from "./contact.module.css";
+// import styles from "./contact.module.css";
 
-const subjectOptions = ["General Inquiry", "Product Information", "Technical Support", "Account Support", "Partnership", "Billing", "Feedback", "Other"];
+// const subjectOptions = ["General Inquiry", "Product Information", "Technical Support", "Account Support", "Partnership", "Billing", "Feedback", "Other"];
 
-const ContactUs: NextPage = () => {
+// const ContactUs: NextPage = () => {
 
-  const [isSubjectOpen, setIsSubjectOpen] = useState(false);
+//   const [isSubjectOpen, setIsSubjectOpen] = useState(false);
 
-  const [selectedSubject, setSelectedSubject] = useState("");
+//   const [selectedSubject, setSelectedSubject] = useState("");
 
-  const [fullName, setFullName] = useState("");
+//   const [fullName, setFullName] = useState("");
 
-  const [nameTouched, setNameTouched] = useState(false);
+//   const [nameTouched, setNameTouched] = useState(false);
 
-  const [emailAddress, setEmailAddress] = useState("");
+//   const [emailAddress, setEmailAddress] = useState("");
 
-  const [emailTouched, setEmailTouched] = useState(false);
+//   const [emailTouched, setEmailTouched] = useState(false);
 
-  const [countryCode, setCountryCode] = useState("IN");
+//   const [countryCode, setCountryCode] = useState("IN");
 
-  const [countryTouched, setCountryTouched] = useState(false);
+//   const [countryTouched, setCountryTouched] = useState(false);
 
-  const [isCountryOpen, setIsCountryOpen] = useState(false);
+//   const [isCountryOpen, setIsCountryOpen] = useState(false);
 
-  const [countrySearch, setCountrySearch] = useState("");
+//   const [countrySearch, setCountrySearch] = useState("");
 
-  const [phoneNumber, setPhoneNumber] = useState("");
+//   const [phoneNumber, setPhoneNumber] = useState("");
 
-  const [phoneTouched, setPhoneTouched] = useState(false);
+//   const [phoneTouched, setPhoneTouched] = useState(false);
 
-  const [message, setMessage] = useState("");
+//   const [message, setMessage] = useState("");
 
-  const [messageTouched, setMessageTouched] = useState(false);
+//   const [messageTouched, setMessageTouched] = useState(false);
 
-  const [privacyAccepted, setPrivacyAccepted] = useState(false);
+//   const [privacyAccepted, setPrivacyAccepted] = useState(false);
 
-  const [isPrivacyPolicyOpen, setIsPrivacyPolicyOpen] = useState(false);
+//   const [isPrivacyPolicyOpen, setIsPrivacyPolicyOpen] = useState(false);
 
-  const [submitted, setSubmitted] = useState(false);
-  const namePattern = /^[A-Za-z]+(?:\s+[A-Za-z]+)*$/;
-  const emailPattern =
-    /^[A-Za-z0-9.!#$%&'*+/=?^_`{|}~-]+@[A-Za-z0-9](?:[A-Za-z0-9-]{0,61}[A-Za-z0-9])?(?:\.[A-Za-z0-9](?:[A-Za-z0-9-]{0,61}[A-Za-z0-9])?)+$/;
+//   const [submitted, setSubmitted] = useState(false);
+//   const namePattern = /^[A-Za-z]+(?:\s+[A-Za-z]+)*$/;
+//   const emailPattern =
+//     /^[A-Za-z0-9.!#$%&'*+/=?^_`{|}~-]+@[A-Za-z0-9](?:[A-Za-z0-9-]{0,61}[A-Za-z0-9])?(?:\.[A-Za-z0-9](?:[A-Za-z0-9-]{0,61}[A-Za-z0-9])?)+$/;
 
-  const commonEmailDomains: Record<string, string> = {
+//   const commonEmailDomains: Record<string, string> = {
 
-    gmail: "gmail.com",
+//     gmail: "gmail.com",
 
-    yahoo: "yahoo.com",
+//     yahoo: "yahoo.com",
 
-    outlook: "outlook.com",
+//     outlook: "outlook.com",
 
-    hotmail: "hotmail.com",
+//     hotmail: "hotmail.com",
 
-    icloud: "icloud.com",
+//     icloud: "icloud.com",
 
-  };
+//   };
 
-  const validateEmailAddress = (value: string) => {
+//   const validateEmailAddress = (value: string) => {
 
-    const normalized = value.trim().toLowerCase();
+//     const normalized = value.trim().toLowerCase();
 
-    if (!emailPattern.test(normalized)) {
+//     if (!emailPattern.test(normalized)) {
 
-      return {
+//       return {
 
-        valid: false,
+//         valid: false,
 
-        message: "Enter a valid email address",
+//         message: "Enter a valid email address",
 
-      };
+//       };
 
-    }
+//     }
 
-    const [, domain = ""] = normalized.split("@");
+//     const [, domain = ""] = normalized.split("@");
 
-    const provider = domain.split(".")[0] ?? "";
+//     const provider = domain.split(".")[0] ?? "";
 
-    const requiredDomain = commonEmailDomains[provider];
+//     const requiredDomain = commonEmailDomains[provider];
 
-    if (requiredDomain && domain !== requiredDomain) {
+//     if (requiredDomain && domain !== requiredDomain) {
 
-      return {
+//       return {
 
-        valid: false,
+//         valid: false,
 
-        message: `Enter the complete email address. Did you mean ${requiredDomain}?`,
+//         message: `Enter the complete email address. Did you mean ${requiredDomain}?`,
 
-      };
+//       };
 
-    }
+//     }
 
-    return {
+//     return {
 
-      valid: true,
+//       valid: true,
 
-      message: "",
+//       message: "",
 
-    };
+//     };
 
-  };
+//   };
 
-  const isNameValid = fullName.trim().length > 0 && namePattern.test(fullName.trim());
+//   const isNameValid = fullName.trim().length > 0 && namePattern.test(fullName.trim());
 
-  const emailValidation = validateEmailAddress(emailAddress);
+//   const emailValidation = validateEmailAddress(emailAddress);
 
-  const isEmailValid = emailAddress.length > 0 && emailValidation.valid;
+//   const isEmailValid = emailAddress.length > 0 && emailValidation.valid;
 
-  const isCountryValid = Boolean(countryCode);
+//   const isCountryValid = Boolean(countryCode);
 
-  const isSubjectValid = Boolean(selectedSubject);
+//   const isSubjectValid = Boolean(selectedSubject);
 
-  const hasMessageContent = message.trim().length > 0;
+//   const hasMessageContent = message.trim().length > 0;
 
-  const isMessageValid = hasMessageContent && message.length <= 250;
+//   const isMessageValid = hasMessageContent && message.length <= 250;
 
-  const isMessageAtLimit = message.length === 250;
+//   const isMessageAtLimit = message.length === 250;
 
-  const isPrivacyValid = privacyAccepted;
+//   const isPrivacyValid = privacyAccepted;
 
-  const showNameError = nameTouched && !isNameValid;
+//   const showNameError = nameTouched && !isNameValid;
 
-  const showEmailError = emailTouched && !isEmailValid;
+//   const showEmailError = emailTouched && !isEmailValid;
 
-  const showCountryError = countryTouched && !isCountryValid;
+//   const showCountryError = countryTouched && !isCountryValid;
 
-  const showMessageError = messageTouched && !isMessageValid;
+//   const showMessageError = messageTouched && !isMessageValid;
 
-  const countryOptions = useMemo(() => {
+//   const countryOptions = useMemo(() => {
 
-    const displayNames = new Intl.DisplayNames(["en"], { type: "region" });
+//     const displayNames = new Intl.DisplayNames(["en"], { type: "region" });
 
-    return getCountries()
+//     return getCountries()
 
-      .map((country) => ({
+//       .map((country) => ({
 
-        value: country,
+//         value: country,
 
-        label: `${displayNames.of(country) || country} (+${getCountryCallingCode(country)})`,
+//         label: `${displayNames.of(country) || country} (+${getCountryCallingCode(country)})`,
 
-        shortLabel: `${country} (+${getCountryCallingCode(country)})`,
+//         shortLabel: `${country} (+${getCountryCallingCode(country)})`,
 
-        countryName: displayNames.of(country) || country,
+//         countryName: displayNames.of(country) || country,
 
-        dialCode: `+${getCountryCallingCode(country)}`,
+//         dialCode: `+${getCountryCallingCode(country)}`,
 
-        flagUrl: `https://flagcdn.com/24x18/${country.toLowerCase()}.png`,
+//         flagUrl: `https://flagcdn.com/24x18/${country.toLowerCase()}.png`,
 
-      }))
+//       }))
 
-      .sort((first, second) => first.label.localeCompare(second.label));
+//       .sort((first, second) => first.label.localeCompare(second.label));
 
-  }, []);
+//   }, []);
 
-  const selectedCountry = countryOptions.find((country) => country.value === countryCode);
+//   const selectedCountry = countryOptions.find((country) => country.value === countryCode);
 
-  /*
+//   /*
 
-   * All countries are validated using their selected country's
+//    * All countries are validated using their selected country's
 
-   * numbering plan. The input is capped at 15 digits, which is
+//    * numbering plan. The input is capped at 15 digits, which is
 
-   * the international maximum used by libphonenumber-js.
+//    * the international maximum used by libphonenumber-js.
 
-   */
+//    */
 
-  /*
+//   /*
 
-   * Do not impose a 10-digit limit globally.
+//    * Do not impose a 10-digit limit globally.
 
-   * Each selected country has its own valid national number length.
+//    * Each selected country has its own valid national number length.
 
-   * libphonenumber-js performs the country-specific validation below.
+//    * libphonenumber-js performs the country-specific validation below.
 
-   */
+//    */
 
-  const phoneMaxLength = 15;
+//   const phoneMaxLength = 15;
 
-  const filteredCountryOptions = useMemo(() => {
+//   const filteredCountryOptions = useMemo(() => {
 
-    const searchValue = countrySearch.trim().toLowerCase();
+//     const searchValue = countrySearch.trim().toLowerCase();
 
-    if (!searchValue) {
+//     if (!searchValue) {
 
-      return countryOptions;
+//       return countryOptions;
 
-    }
+//     }
 
-    const normalizedSearch = searchValue
+//     const normalizedSearch = searchValue
 
-      .replace(/[()\s-]/g, "")
+//       .replace(/[()\s-]/g, "")
 
-      .replace(/^\+/, "");
+//       .replace(/^\+/, "");
 
-    /*
+//     /*
 
-     * Exact ISO code has highest priority.
+//      * Exact ISO code has highest priority.
 
-     * Example: typing "IN" returns India immediately.
+//      * Example: typing "IN" returns India immediately.
 
-     */
+//      */
 
-    const exactIsoMatch = countryOptions.filter(
+//     const exactIsoMatch = countryOptions.filter(
 
-      (country) => country.value.toLowerCase() === searchValue
+//       (country) => country.value.toLowerCase() === searchValue
 
-    );
+//     );
 
-    if (exactIsoMatch.length > 0) {
+//     if (exactIsoMatch.length > 0) {
 
-      return exactIsoMatch;
+//       return exactIsoMatch;
 
-    }
+//     }
 
-    return countryOptions.filter((country) => {
+//     return countryOptions.filter((country) => {
 
-      const isoCode = country.value.toLowerCase();
+//       const isoCode = country.value.toLowerCase();
 
-      const fullName = country.label.toLowerCase();
+//       const fullName = country.label.toLowerCase();
 
-      const shortLabel = country.shortLabel.toLowerCase();
+//       const shortLabel = country.shortLabel.toLowerCase();
 
-      const dialCode = shortLabel
+//       const dialCode = shortLabel
 
-        .replace(/[()\s-]/g, "")
+//         .replace(/[()\s-]/g, "")
 
-        .replace(/^\+/, "");
+//         .replace(/^\+/, "");
 
-      return (
+//       return (
 
-        isoCode.startsWith(searchValue) ||
+//         isoCode.startsWith(searchValue) ||
 
-        fullName.startsWith(searchValue) ||
+//         fullName.startsWith(searchValue) ||
 
-        fullName.includes(searchValue) ||
+//         fullName.includes(searchValue) ||
 
-        shortLabel.startsWith(searchValue) ||
+//         shortLabel.startsWith(searchValue) ||
 
-        dialCode.includes(normalizedSearch)
+//         dialCode.includes(normalizedSearch)
 
-      );
+//       );
 
-    });
+//     });
 
-  }, [countryOptions, countrySearch]);
+//   }, [countryOptions, countrySearch]);
 
-  const normalizedPhoneNumber = phoneNumber.replace(/\D/g, "");
+//   const normalizedPhoneNumber = phoneNumber.replace(/\D/g, "");
 
-  /*
+//   /*
 
-   * Reject obviously fake/test numbers before the country-specific
+//    * Reject obviously fake/test numbers before the country-specific
 
-   * numbering-plan validation.
+//    * numbering-plan validation.
 
-   *
+//    *
 
-   * Examples rejected for every country:
+//    * Examples rejected for every country:
 
-   * 1234567890
+//    * 1234567890
 
-   * 9876543210
+//    * 9876543210
 
-   * 1111111111
+//    * 1111111111
 
-   * 2222222222
+//    * 2222222222
 
-   * etc.
+//    * etc.
 
-   */
+//    */
 
-  const isObviouslyInvalidNumber = (number: string) => {
+//   const isObviouslyInvalidNumber = (number: string) => {
 
-    if (!number) {
+//     if (!number) {
 
-      return true;
+//       return true;
 
-    }
+//     }
 
-    // Reject repeated digits such as 1111111111.
+//     // Reject repeated digits such as 1111111111.
 
-    if (/^(\d)\1+$/.test(number)) {
+//     if (/^(\d)\1+$/.test(number)) {
 
-      return true;
+//       return true;
 
-    }
+//     }
 
-    // Reject the common ascending and descending test sequences.
+//     // Reject the common ascending and descending test sequences.
 
-    if (
+//     if (
 
-      number === "1234567890" ||
+//       number === "1234567890" ||
 
-      number === "0123456789" ||
+//       number === "0123456789" ||
 
-      number === "9876543210"
+//       number === "9876543210"
 
-    ) {
+//     ) {
 
-      return true;
+//       return true;
 
-    }
+//     }
 
-    const digits = number.split("").map(Number);
+//     const digits = number.split("").map(Number);
 
-    const isAscendingSequence =
+//     const isAscendingSequence =
 
-      digits.length > 1 &&
+//       digits.length > 1 &&
 
-      digits.every(
+//       digits.every(
 
-        (digit, index) =>
+//         (digit, index) =>
 
-          index === 0 ||
+//           index === 0 ||
 
-          digit === digits[index - 1] + 1
+//           digit === digits[index - 1] + 1
 
-      );
+//       );
 
-    const isDescendingSequence =
+//     const isDescendingSequence =
 
-      digits.length > 1 &&
+//       digits.length > 1 &&
 
-      digits.every(
+//       digits.every(
 
-        (digit, index) =>
+//         (digit, index) =>
 
-          index === 0 ||
+//           index === 0 ||
 
-          digit === digits[index - 1] - 1
+//           digit === digits[index - 1] - 1
 
-      );
+//       );
 
-    return (
+//     return (
 
-      isAscendingSequence ||
+//       isAscendingSequence ||
 
-      isDescendingSequence
+//       isDescendingSequence
 
-    );
+//     );
 
-  };
+//   };
 
-  /*
+//   /*
 
-   * Country-specific validation for EVERY country.
+//    * Country-specific validation for EVERY country.
 
-   * The selected ISO country is passed directly to
+//    * The selected ISO country is passed directly to
 
-   * libphonenumber-js, so length and numbering rules come
+//    * libphonenumber-js, so length and numbering rules come
 
-   * from the selected country's numbering plan.
+//    * from the selected country's numbering plan.
 
-   */
+//    */
 
-  /*
+//   /*
 
-   * Validate the national number against the selected country.
+//    * Validate the national number against the selected country.
 
-   * Do not apply a fixed digit length here because countries have
+//    * Do not apply a fixed digit length here because countries have
 
-   * different valid national-number lengths.
+//    * different valid national-number lengths.
 
-   */
+//    */
 
-  const isPhoneValid =
+//   const isPhoneValid =
 
-    Boolean(countryCode) &&
+//     Boolean(countryCode) &&
 
-    Boolean(normalizedPhoneNumber) &&
+//     Boolean(normalizedPhoneNumber) &&
 
-    !isObviouslyInvalidNumber(normalizedPhoneNumber) &&
+//     !isObviouslyInvalidNumber(normalizedPhoneNumber) &&
 
-    isValidPhoneNumber(
+//     isValidPhoneNumber(
 
-      normalizedPhoneNumber,
+//       normalizedPhoneNumber,
 
-      countryCode as CountryCode
+//       countryCode as CountryCode
 
-    );
+//     );
 
-  const showPhoneError = phoneTouched && Boolean(countryCode) && !isPhoneValid;
+//   const showPhoneError = phoneTouched && Boolean(countryCode) && !isPhoneValid;
 
-  const isFormValid =
+//   const isFormValid =
 
-    isNameValid &&
+//     isNameValid &&
 
-    isEmailValid &&
+//     isEmailValid &&
 
-    isCountryValid &&
+//     isCountryValid &&
 
-    isPhoneValid &&
+//     isPhoneValid &&
 
-    isSubjectValid &&
+//     isSubjectValid &&
 
-    isMessageValid &&
+//     isMessageValid &&
 
-    isPrivacyValid;
+//     isPrivacyValid;
 
-  const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
+//   const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
 
-    event.preventDefault();
+//     event.preventDefault();
 
-    setNameTouched(true);
+//     setNameTouched(true);
 
-    setEmailTouched(true);
+//     setEmailTouched(true);
 
-    setCountryTouched(true);
+//     setCountryTouched(true);
 
-    setPhoneTouched(true);
+//     setPhoneTouched(true);
 
-    setMessageTouched(true);
+//     setMessageTouched(true);
 
-    if (!isFormValid) {
+//     if (!isFormValid) {
 
-      if (!isNameValid) {
+//       if (!isNameValid) {
 
-        document.getElementById("fullName")?.focus();
+//         document.getElementById("fullName")?.focus();
 
-        return;
+//         return;
 
-      }
+//       }
 
-      if (!isEmailValid) {
+//       if (!isEmailValid) {
 
-        document.getElementById("emailAddress")?.focus();
+//         document.getElementById("emailAddress")?.focus();
 
-        return;
+//         return;
 
-      }
+//       }
 
-      if (!isCountryValid) {
+//       if (!isCountryValid) {
 
-        document.getElementById("countryCodeSelect")?.focus();
+//         document.getElementById("countryCodeSelect")?.focus();
 
-        return;
+//         return;
 
-      }
+//       }
 
-      if (!isPhoneValid) {
+//       if (!isPhoneValid) {
 
-        document.getElementById("phoneNumber")?.focus();
+//         document.getElementById("phoneNumber")?.focus();
 
-        return;
+//         return;
 
-      }
+//       }
 
-      if (!isSubjectValid) {
+//       if (!isSubjectValid) {
 
-        document.getElementById("subjectButton")?.focus();
+//         document.getElementById("subjectButton")?.focus();
 
-        return;
+//         return;
 
-      }
+//       }
 
-      if (!isMessageValid) {
+//       if (!isMessageValid) {
 
-        document.getElementById("message")?.focus();
+//         document.getElementById("message")?.focus();
 
-        return;
+//         return;
 
-      }
+//       }
 
-      return;
+//       return;
 
-    }
+//     }
 
-    try {
+//     try {
 
-const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL || "http://localhost:4000"}/email/contact-us`, {  method: "POST",
+// const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL || "http://localhost:4000"}/email/contact-us`, {  method: "POST",
 
-  headers: {
+//   headers: {
 
-    "Content-Type": "application/json",
+//     "Content-Type": "application/json",
 
-  },
+//   },
 
-  body: JSON.stringify({
+//   body: JSON.stringify({
 
-    fullName: fullName.trim(),
+//     fullName: fullName.trim(),
 
-    email: emailAddress.trim(),
+//     email: emailAddress.trim(),
 
-    countryCode,
+//     countryCode,
 
-    phone: normalizedPhoneNumber,
+//     phone: normalizedPhoneNumber,
 
-    subject: selectedSubject,
+//     subject: selectedSubject,
 
-    message: message.trim(),
+//     message: message.trim(),
 
-    consent: privacyAccepted,
+//     consent: privacyAccepted,
 
-  }),
+//   }),
 
-});
+// });
 
-console.log("Contact Us HTTP status:", response.status);
+// console.log("Contact Us HTTP status:", response.status);
 
-let responseData: unknown = null;
+// let responseData: unknown = null;
 
-try {
+// try {
 
-  responseData = await response.json();
+//   responseData = await response.json();
 
-} catch {
+// } catch {
 
-  responseData = null;
+//   responseData = null;
 
-}
+// }
 
-console.log("Contact Us response:", responseData);
+// console.log("Contact Us response:", responseData);
 
-if (!response.ok) {
+// if (!response.ok) {
 
-  let errorMessage = "Unable to send your message.";
+//   let errorMessage = "Unable to send your message.";
 
-  if (
+//   if (
 
-    responseData &&
+//     responseData &&
 
-    typeof responseData === "object" &&
+//     typeof responseData === "object" &&
 
-    "message" in responseData
+//     "message" in responseData
 
-  ) {
+//   ) {
 
-    const responseMessage = responseData.message;
+//     const responseMessage = responseData.message;
 
-    if (typeof responseMessage === "string") {
+//     if (typeof responseMessage === "string") {
 
-      errorMessage = responseMessage;
+//       errorMessage = responseMessage;
 
-    } else if (Array.isArray(responseMessage)) {
+//     } else if (Array.isArray(responseMessage)) {
 
-      errorMessage = responseMessage.join("\n");
+//       errorMessage = responseMessage.join("\n");
 
-    }
+//     }
 
-  }
+//   }
 
-  throw new Error(errorMessage);
+//   throw new Error(errorMessage);
 
-}
+// }
 
-setSubmitted(true);
+// setSubmitted(true);
 
-    } catch (error) {
+//     } catch (error) {
 
-      const errorMessage =
+//       const errorMessage =
 
-        error instanceof Error
+//         error instanceof Error
 
-          ? error.message
+//           ? error.message
 
-          : "Unable to send your message.";
+//           : "Unable to send your message.";
 
-      window.alert(errorMessage);
+//       window.alert(errorMessage);
 
-    }
+//     }
 
-  };
+//   };
 
-  const handleSubjectSelect = (subject: string) => {
+//   const handleSubjectSelect = (subject: string) => {
 
-    setSelectedSubject(subject);
+//     setSelectedSubject(subject);
 
-    setIsSubjectOpen(false);
+//     setIsSubjectOpen(false);
 
-  };
+//   };
 
-  return (
+//   return (
 
-    <main className={styles.before}>
+//     <main className={styles.before}>
 
-<div className={styles.frameParent}>
+// <div className={styles.frameParent}>
 
-        <div className={styles.contactUsParent}>
+//         <div className={styles.contactUsParent}>
 
-          <h1 className={styles.contactUs}>
+//           <h1 className={styles.contactUs}>
 
-            Contact Us
+//             Contact Us
 
-          </h1>
+//           </h1>
 
-          <div className={styles.shieldCheckParent}>
+//           <div className={styles.shieldCheckParent}>
 
-            <svg width="28" height="28" viewBox="0 0 28 28" fill="none" >
+//             <svg width="28" height="28" viewBox="0 0 28 28" fill="none" >
 
-              <path d="M24.4902 13.042V9.65513C24.4902 7.7418 24.4902 6.78512 24.0188 6.16096C23.5473 5.5368 22.4814 5.23378 20.3494 4.62774C18.8928 4.21369 17.6088 3.71486 16.5829 3.25946C15.1842 2.63857 14.4848 2.32812 13.9902 2.32812C13.4956 2.32812 12.7963 2.63857 11.3976 3.25946C10.3717 3.71486 9.0877 4.21368 7.63112 4.62774C5.49914 5.23378 4.43316 5.5368 3.9617 6.16096C3.49023 6.78512 3.49023 7.7418 3.49023 9.65513V13.042C3.49023 19.6047 9.3968 23.5422 12.3498 25.1008C13.0581 25.4746 13.4123 25.6615 13.9902 25.6615C14.5682 25.6615 14.9223 25.4746 15.6306 25.1008C18.5836 23.5422 24.4902 19.6047 24.4902 13.042Z" stroke="#2D4CC8" strokeWidth="2.5" strokeLinecap="round" />
+//               <path d="M24.4902 13.042V9.65513C24.4902 7.7418 24.4902 6.78512 24.0188 6.16096C23.5473 5.5368 22.4814 5.23378 20.3494 4.62774C18.8928 4.21369 17.6088 3.71486 16.5829 3.25946C15.1842 2.63857 14.4848 2.32812 13.9902 2.32812C13.4956 2.32812 12.7963 2.63857 11.3976 3.25946C10.3717 3.71486 9.0877 4.21368 7.63112 4.62774C5.49914 5.23378 4.43316 5.5368 3.9617 6.16096C3.49023 6.78512 3.49023 7.7418 3.49023 9.65513V13.042C3.49023 19.6047 9.3968 23.5422 12.3498 25.1008C13.0581 25.4746 13.4123 25.6615 13.9902 25.6615C14.5682 25.6615 14.9223 25.4746 15.6306 25.1008C18.5836 23.5422 24.4902 19.6047 24.4902 13.042Z" stroke="#2D4CC8" strokeWidth="2.5" strokeLinecap="round" />
 
-              <path d="M10.0156 14.8888C10.0156 14.8888 11.0365 14.8888 12.0573 16.8333C12.0573 16.8333 15.2999 11.9722 18.1823 11" stroke="#2D4CC8" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+//               <path d="M10.0156 14.8888C10.0156 14.8888 11.0365 14.8888 12.0573 16.8333C12.0573 16.8333 15.2999 11.9722 18.1823 11" stroke="#2D4CC8" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
 
-            </svg>
+//             </svg>
 
-            <h2 className={styles.weNeverShare} style={{ margin: 0, padding: 0, fontSize: "inherit", fontWeight: "bold", fontFamily: "inherit", color: "inherit" }}>
+//             <h2 className={styles.weNeverShare} style={{ margin: 0, padding: 0, fontSize: "inherit", fontWeight: "bold", fontFamily: "inherit", color: "inherit" }}>
 
-              We Never Share Your Data
+//               We Never Share Your Data
 
-            </h2>
+//             </h2>
 
-          </div>
+//           </div>
 
-        </div>
+//         </div>
 
-        <div className={styles.frameWrapper}>
+//         <div className={styles.frameWrapper}>
 
-          <form className={`${styles.frameGroup} ${submitted ? styles.successForm : ""}`} onSubmit={handleSubmit} noValidate>
+//           <form className={`${styles.frameGroup} ${submitted ? styles.successForm : ""}`} onSubmit={handleSubmit} noValidate>
 
-            {submitted ? (
+//             {submitted ? (
 
-              <div className={styles.successMessage} role="status" aria-live="polite">
+//               <div className={styles.successMessage} role="status" aria-live="polite">
 
-                <div className={styles.successMessageTitle}>Thank you for contacting us!</div>
+//                 <div className={styles.successMessageTitle}>Thank you for contacting us!</div>
 
-                <div className={styles.successMessageText}>
+//                 <div className={styles.successMessageText}>
 
-                  We’ve received your message. Our team will review it and get back to you shortly.
+//                   We’ve received your message. Our team will review it and get back to you shortly.
 
-                </div>
+//                 </div>
 
-              </div>
+//               </div>
 
-            ) : (
+//             ) : (
 
-              <>
+//               <>
 
-            <div className={styles.frameContainer}>
+//             <div className={styles.frameContainer}>
 
-              <div className={styles.frameDiv}>
+//               <div className={styles.frameDiv}>
 
-                <div className={styles.frameWrapper2}>
+//                 <div className={styles.frameWrapper2}>
 
-                  <div className={styles.frameWrapper3}>
+//                   <div className={styles.frameWrapper3}>
 
-                    <div className={styles.fullNameParent}>
+//                     <div className={styles.fullNameParent}>
 
-                      <label className={styles.fullName} htmlFor="fullName">
+//                       <label className={styles.fullName} htmlFor="fullName">
 
-                        Full Name
+//                         Full Name
 
-                      </label>
+//                       </label>
 
-                      <div className={`${styles.frameChild} ${fullName ? styles.fieldHasValue : ""} ${showNameError ? styles.fieldHasError : ""}`}>
+//                       <div className={`${styles.frameChild} ${fullName ? styles.fieldHasValue : ""} ${showNameError ? styles.fieldHasError : ""}`}>
 
-                        <div className={styles.fieldContent}>
+//                         <div className={styles.fieldContent}>
 
-                          <span className={styles.fieldIconCircle}>
+//                           <span className={styles.fieldIconCircle}>
 
-                            <Image className={styles.fieldIcon} src="/icons/user.svg" width={20} height={20} alt="" aria-hidden="true" />
+//                             <Image className={styles.fieldIcon} src="/icons/user.svg" width={20} height={20} alt="" aria-hidden="true" />
 
-                          </span>
+//                           </span>
 
-                          <input id="fullName" className={styles.contactInput} type="text" name="fullName" autoComplete="name" spellCheck={false} autoCorrect="off" autoCapitalize="words" placeholder="Enter your name" value={fullName} onChange={(event) => setFullName(event.target.value.replace(/[^A-Za-z\s]/g, "").replace(/\s{2,}/g, " ").slice(0, 80))} onBlur={() => setNameTouched(true)} aria-invalid={showNameError} aria-describedby={showNameError ? "fullNameError" : undefined} inputMode="text" required />
+//                           <input id="fullName" className={styles.contactInput} type="text" name="fullName" autoComplete="name" spellCheck={false} autoCorrect="off" autoCapitalize="words" placeholder="Enter your name" value={fullName} onChange={(event) => setFullName(event.target.value.replace(/[^A-Za-z\s]/g, "").replace(/\s{2,}/g, " ").slice(0, 80))} onBlur={() => setNameTouched(true)} aria-invalid={showNameError} aria-describedby={showNameError ? "fullNameError" : undefined} inputMode="text" required />
 
-                        </div>
+//                         </div>
 
-                      </div>
+//                       </div>
 
-                    </div>
+//                     </div>
 
-                    {showNameError && (
+//                     {showNameError && (
 
-                      <small id="fullNameError" className={styles.validationMessage} role="alert">
+//                       <small id="fullNameError" className={styles.validationMessage} role="alert">
 
-                        Enter your name
+//                         Enter your name
 
-                      </small>
+//                       </small>
 
-                    )}
+//                     )}
 
-                  </div>
+//                   </div>
 
-                </div>
+//                 </div>
 
-                <div className={`${styles.emailAddressParent} ${styles.emailFieldGroup}`}>
+//                 <div className={`${styles.emailAddressParent} ${styles.emailFieldGroup}`}>
 
-                  <label className={styles.emailAddress} htmlFor="emailAddress">
+//                   <label className={styles.emailAddress} htmlFor="emailAddress">
 
-                    Email Address
+//                     Email Address
 
-                  </label>
+//                   </label>
 
-                  <div className={`${styles.frameWrapper4} ${isEmailValid ? styles.fieldHasValue : ""} ${showEmailError ? styles.fieldHasError : ""}`}>
+//                   <div className={`${styles.frameWrapper4} ${isEmailValid ? styles.fieldHasValue : ""} ${showEmailError ? styles.fieldHasError : ""}`}>
 
-                    <div className={styles.frameWrapper5}>
+//                     <div className={styles.frameWrapper5}>
 
-                      <div className={styles.frameParent2}>
+//                       <div className={styles.frameParent2}>
 
-                        <span className={styles.fieldIconCircle}>
+//                         <span className={styles.fieldIconCircle}>
 
-                          <Image className={styles.fieldIcon} src="/icons/mail.svg" width={20} height={20} alt="" aria-hidden="true" />
+//                           <Image className={styles.fieldIcon} src="/icons/mail.svg" width={20} height={20} alt="" aria-hidden="true" />
 
-                        </span>
+//                         </span>
 
-                        <input
+//                         <input
 
-                          id="emailAddress"
+//                           id="emailAddress"
 
-                          className={styles.contactInput}
+//                           className={styles.contactInput}
 
-                          type="email"
+//                           type="email"
 
-                          name="email"
+//                           name="email"
 
-                          autoComplete="email"
+//                           autoComplete="email"
 
-                          placeholder="Enter your email address"
+//                           placeholder="Enter your email address"
 
-                          value={emailAddress}
+//                           value={emailAddress}
 
-                          onChange={(event) => {
+//                           onChange={(event) => {
 
-                            setEmailAddress(event.target.value.trim());
+//                             setEmailAddress(event.target.value.trim());
 
-                            if (emailTouched) {
+//                             if (emailTouched) {
 
-                              setEmailTouched(true);
+//                               setEmailTouched(true);
 
-                            }
+//                             }
 
-                          }}
+//                           }}
 
-                          onBlur={() => setEmailTouched(true)}
+//                           onBlur={() => setEmailTouched(true)}
 
-                          aria-invalid={showEmailError}
+//                           aria-invalid={showEmailError}
 
-                          aria-describedby={showEmailError ? "emailAddressError" : undefined}
+//                           aria-describedby={showEmailError ? "emailAddressError" : undefined}
 
-                          required
+//                           required
 
-                        />
+//                         />
 
-                      </div>
+//                       </div>
 
-                    </div>
+//                     </div>
 
-                  </div>
+//                   </div>
 
-                  {showEmailError && (
+//                   {showEmailError && (
 
-                    <small id="emailAddressError" className={styles.emailValidationMessage} role="alert">
+//                     <small id="emailAddressError" className={styles.emailValidationMessage} role="alert">
 
-                      {emailValidation.message}
+//                       {emailValidation.message}
 
-                    </small>
+//                     </small>
 
-                  )}
+//                   )}
 
-                </div>
+//                 </div>
 
-                <div className={styles.emailAddressParent}>
+//                 <div className={styles.emailAddressParent}>
 
-                  <label className={styles.emailAddress} htmlFor="phoneNumber">
+//                   <label className={styles.emailAddress} htmlFor="phoneNumber">
 
-                    Phone Number
+//                     Phone Number
 
-                  </label>
+//                   </label>
 
-                  <div className={styles.frameParent3}>
+//                   <div className={styles.frameParent3}>
 
-                    <div className={`${styles.frameInner} ${styles.countrySelectField} ${countryCode ? styles.fieldHasValue : ""}`}>
+//                     <div className={`${styles.frameInner} ${styles.countrySelectField} ${countryCode ? styles.fieldHasValue : ""}`}>
 
-                      <button
+//                       <button
 
-                        id="countryCodeSelect"
+//                         id="countryCodeSelect"
 
-                        className={`${styles.countryCodeSelect} ${showCountryError ? styles.countryCodeSelectError : ""}`}
+//                         className={`${styles.countryCodeSelect} ${showCountryError ? styles.countryCodeSelectError : ""}`}
 
-                        type="button"
+//                         type="button"
 
-                        aria-haspopup="listbox"
+//                         aria-haspopup="listbox"
 
-                        aria-expanded={isCountryOpen}
+//                         aria-expanded={isCountryOpen}
 
-                        onClick={() => {
+//                         onClick={() => {
 
-                          setIsCountryOpen((open) => {
+//                           setIsCountryOpen((open) => {
 
-                            const nextOpen = !open;
+//                             const nextOpen = !open;
 
-                            if (nextOpen) {
+//                             if (nextOpen) {
 
-                              setCountrySearch("");
+//                               setCountrySearch("");
 
-                            }
+//                             }
 
-                            return nextOpen;
+//                             return nextOpen;
 
-                          });
+//                           });
 
-                        }}>
+//                         }}>
 
-                        <output className={styles.countryCodeLabel}>
+//                         <output className={styles.countryCodeLabel}>
 
-                          {selectedCountry ? (
+//                           {selectedCountry ? (
 
-                            <span className={styles.countrySelectedValue}>
+//                             <span className={styles.countrySelectedValue}>
 
-                              <img
+//                               <img
 
-                                className={styles.countryFlag}
+//                                 className={styles.countryFlag}
 
-                                src={selectedCountry.flagUrl}
+//                                 src={selectedCountry.flagUrl}
 
-                                width={24}
+//                                 width={24}
 
-                                height={18}
+//                                 height={18}
 
-                                alt=""
+//                                 alt=""
 
-                                aria-hidden="true"
+//                                 aria-hidden="true"
 
-                              />
+//                               />
 
-                              <span>{selectedCountry.dialCode}</span>
+//                               <span>{selectedCountry.dialCode}</span>
 
-                            </span>
+//                             </span>
 
-                          ) : (
+//                           ) : (
 
-                            "Select"
+//                             "Select"
 
-                          )}
+//                           )}
 
-                        </output>
+//                         </output>
 
-                        <Image className={`${styles.countryArrowIcon} ${isCountryOpen ? styles.countryArrowOpen : ""}`} src="/icons/arrowdown.svg" width={20} height={20} alt="" aria-hidden="true" />
+//                         <Image className={`${styles.countryArrowIcon} ${isCountryOpen ? styles.countryArrowOpen : ""}`} src="/icons/arrowdown.svg" width={20} height={20} alt="" aria-hidden="true" />
 
-                      </button>
+//                       </button>
 
-                      {isCountryOpen && (
+//                       {isCountryOpen && (
 
-                        <div className={styles.countryCodeDropdown} role="listbox" aria-label="Select country code">
+//                         <div className={styles.countryCodeDropdown} role="listbox" aria-label="Select country code">
 
-                          <div className={styles.countrySearchWrapper}>
+//                           <div className={styles.countrySearchWrapper}>
 
-                            <input className={styles.countrySearchInput} type="search" value={countrySearch} onChange={(event) => setCountrySearch(event.target.value)} placeholder="Search country" aria-label="Search country" autoFocus />
+//                             <input className={styles.countrySearchInput} type="search" value={countrySearch} onChange={(event) => setCountrySearch(event.target.value)} placeholder="Search country" aria-label="Search country" autoFocus />
 
-                          </div>
+//                           </div>
 
-                          <div className={styles.countryOptionsList}>
+//                           <div className={styles.countryOptionsList}>
 
-                            {filteredCountryOptions.length > 0 ? (
+//                             {filteredCountryOptions.length > 0 ? (
 
-                              filteredCountryOptions.map((country) => (
+//                               filteredCountryOptions.map((country) => (
 
-                                <button
+//                                 <button
 
-                                  key={country.value}
+//                                   key={country.value}
 
-                                  className={`${styles.countryCodeOption} ${countryCode === country.value ? styles.countryCodeOptionSelected : ""}`}
+//                                   className={`${styles.countryCodeOption} ${countryCode === country.value ? styles.countryCodeOptionSelected : ""}`}
 
-                                  type="button"
+//                                   type="button"
 
-                                  role="option"
+//                                   role="option"
 
-                                  aria-selected={countryCode === country.value}
+//                                   aria-selected={countryCode === country.value}
 
-                                  onClick={() => {
+//                                   onClick={() => {
 
-                                    setCountryCode(country.value);
+//                                     setCountryCode(country.value);
 
-                                    setCountryTouched(true);
+//                                     setCountryTouched(true);
 
-                                    setPhoneNumber("");
+//                                     setPhoneNumber("");
 
-                                    setPhoneTouched(false);
+//                                     setPhoneTouched(false);
 
-                                    setCountrySearch("");
+//                                     setCountrySearch("");
 
-                                    setIsCountryOpen(false);
+//                                     setIsCountryOpen(false);
 
-                                  }}>
+//                                   }}>
 
-                                  <span className={styles.countryOptionMain}>
+//                                   <span className={styles.countryOptionMain}>
 
-                                    <img
+//                                     <img
 
-                                      className={styles.countryFlag}
+//                                       className={styles.countryFlag}
 
-                                      src={country.flagUrl}
+//                                       src={country.flagUrl}
 
-                                      width={24}
+//                                       width={24}
 
-                                      height={18}
+//                                       height={18}
 
-                                      alt=""
+//                                       alt=""
 
-                                      aria-hidden="true"
+//                                       aria-hidden="true"
 
-                                    />
+//                                     />
 
-                                    <span className={styles.countryOptionDialCode}>
+//                                     <span className={styles.countryOptionDialCode}>
 
-                                      {country.dialCode}
+//                                       {country.dialCode}
 
-                                    </span>
+//                                     </span>
 
-                                  </span>
+//                                   </span>
 
-                                </button>
+//                                 </button>
 
-                              ))
+//                               ))
 
-                            ) : (
+//                             ) : (
 
-                              <p className={styles.countryNoResults} style={{ margin: 0 }}>
+//                               <p className={styles.countryNoResults} style={{ margin: 0 }}>
 
-                                No country found
+//                                 No country found
 
-                              </p>
+//                               </p>
 
-                            )}
+//                             )}
 
-                          </div>
+//                           </div>
 
-                        </div>
+//                         </div>
 
-                      )}
+//                       )}
 
-                      <input type="hidden" name="countryCode" value={countryCode} />
+//                       <input type="hidden" name="countryCode" value={countryCode} />
 
-                    </div>
+//                     </div>
 
-                    <div className={`${styles.frameIcon} ${isPhoneValid ? styles.fieldHasValue : ""} ${showPhoneError ? styles.fieldHasError : ""}`}>
+//                     <div className={`${styles.frameIcon} ${isPhoneValid ? styles.fieldHasValue : ""} ${showPhoneError ? styles.fieldHasError : ""}`}>
 
-                      <span className={styles.phoneIconCircle}>
+//                       <span className={styles.phoneIconCircle}>
 
-                        <Image className={styles.phoneIcon} src="/icons/call.svg" width={20} height={20} alt="" aria-hidden="true" />
+//                         <Image className={styles.phoneIcon} src="/icons/call.svg" width={20} height={20} alt="" aria-hidden="true" />
 
-                      </span>
+//                       </span>
 
-                      <input
+//                       <input
 
-                        id="phoneNumber"
+//                         id="phoneNumber"
 
-                        className={`${styles.contactInput} ${styles.phoneNumberInput}`}
+//                         className={`${styles.contactInput} ${styles.phoneNumberInput}`}
 
-                        type="tel"
+//                         type="tel"
 
-                        name="phoneNumber"
+//                         name="phoneNumber"
 
-                        autoComplete="tel-national"
+//                         autoComplete="tel-national"
 
-                        placeholder="XXXXXXXXXX"
+//                         placeholder="XXXXXXXXXX"
 
-                        value={phoneNumber}
+//                         value={phoneNumber}
 
-                        maxLength={phoneMaxLength}
+//                         maxLength={phoneMaxLength}
 
-                        inputMode="numeric"
+//                         inputMode="numeric"
 
-                        onChange={(event) => {
+//                         onChange={(event) => {
 
-                          const nextPhoneNumber = event.target.value.replace(/[^0-9]/g, "").slice(0, phoneMaxLength);
+//                           const nextPhoneNumber = event.target.value.replace(/[^0-9]/g, "").slice(0, phoneMaxLength);
 
-                          setPhoneNumber(nextPhoneNumber);
+//                           setPhoneNumber(nextPhoneNumber);
 
-                          if (phoneTouched) {
+//                           if (phoneTouched) {
 
-                            setPhoneTouched(true);
+//                             setPhoneTouched(true);
 
-                          }
+//                           }
 
-                        }}
+//                         }}
 
-                        onBlur={() => setPhoneTouched(true)}
+//                         onBlur={() => setPhoneTouched(true)}
 
-                        aria-invalid={showPhoneError}
+//                         aria-invalid={showPhoneError}
 
-                        aria-describedby={showPhoneError ? "phoneNumberError" : undefined}
+//                         aria-describedby={showPhoneError ? "phoneNumberError" : undefined}
 
-                        required
+//                         required
 
-                      />
+//                       />
 
-                    </div>
+//                     </div>
 
-                  </div>
+//                   </div>
 
-                  {showCountryError && (
+//                   {showCountryError && (
 
-                    <small id="countryCodeError" className={styles.countryValidationMessage} role="alert">
+//                     <small id="countryCodeError" className={styles.countryValidationMessage} role="alert">
 
-                      Select a country code
+//                       Select a country code
 
-                    </small>
+//                     </small>
 
-                  )}
+//                   )}
 
-                  {showPhoneError && (
+//                   {showPhoneError && (
 
-                    <small id="phoneNumberError" className={styles.phoneValidationMessage} role="alert">
+//                     <small id="phoneNumberError" className={styles.phoneValidationMessage} role="alert">
 
-                      Enter a valid phone number for the selected country
+//                       Enter a valid phone number for the selected country
 
-                    </small>
+//                     </small>
 
-                  )}
+//                   )}
 
-                </div>
+//                 </div>
 
-                <div className={`${styles.emailAddressParent} ${styles.subjectField}`}>
+//                 <div className={`${styles.emailAddressParent} ${styles.subjectField}`}>
 
-                  <label className={styles.emailAddress} id="subjectLabel">
+//                   <label className={styles.emailAddress} id="subjectLabel">
 
-                    Subject
+//                     Subject
 
-                  </label>
+//                   </label>
 
-                  <button id="subjectButton" className={`${styles.frameParent4} ${selectedSubject ? styles.subjectHasValue : ""}`} type="button" aria-labelledby="subjectLabel selectedSubjectValue" aria-haspopup="listbox" aria-expanded={isSubjectOpen} onClick={() => setIsSubjectOpen((open) => !open)}>
+//                   <button id="subjectButton" className={`${styles.frameParent4} ${selectedSubject ? styles.subjectHasValue : ""}`} type="button" aria-labelledby="subjectLabel selectedSubjectValue" aria-haspopup="listbox" aria-expanded={isSubjectOpen} onClick={() => setIsSubjectOpen((open) => !open)}>
 
-                    <span className={styles.subjectIconCircle}>
+//                     <span className={styles.subjectIconCircle}>
 
-                      <Image className={styles.subjectIcon} src="/icons/message.svg" width={20} height={20} alt="" aria-hidden="true" />
+//                       <Image className={styles.subjectIcon} src="/icons/message.svg" width={20} height={20} alt="" aria-hidden="true" />
 
-                    </span>
+//                     </span>
 
-                    <output id="selectedSubjectValue" className={`${styles.selectedSubjectText} ${selectedSubject ? styles.hasSubjectValue : ""}`}>
+//                     <output id="selectedSubjectValue" className={`${styles.selectedSubjectText} ${selectedSubject ? styles.hasSubjectValue : ""}`}>
 
-                      {selectedSubject || "Select a subject"}
+//                       {selectedSubject || "Select a subject"}
 
-                    </output>
+//                     </output>
 
-                    <Image className={`${styles.arrowDown01Icon} ${isSubjectOpen ? styles.subjectArrowOpen : ""}`} src="/icons/arrowdown.svg" width={20} height={20} alt="" aria-hidden="true" />
+//                     <Image className={`${styles.arrowDown01Icon} ${isSubjectOpen ? styles.subjectArrowOpen : ""}`} src="/icons/arrowdown.svg" width={20} height={20} alt="" aria-hidden="true" />
 
-                  </button>
+//                   </button>
 
-                  {isSubjectOpen && (
+//                   {isSubjectOpen && (
 
-                    <div className={styles.subjectDropdown} role="listbox" aria-labelledby="subjectLabel">
+//                     <div className={styles.subjectDropdown} role="listbox" aria-labelledby="subjectLabel">
 
-                      {subjectOptions.map((subject) => {
+//                       {subjectOptions.map((subject) => {
 
-                        const isSelected = selectedSubject === subject;
+//                         const isSelected = selectedSubject === subject;
 
-                        return (
+//                         return (
 
-                          <button key={subject} className={`${styles.subjectOption} ${isSelected ? styles.subjectOptionSelected : ""}`} type="button" role="option" aria-selected={isSelected} onClick={() => handleSubjectSelect(subject)}>
+//                           <button key={subject} className={`${styles.subjectOption} ${isSelected ? styles.subjectOptionSelected : ""}`} type="button" role="option" aria-selected={isSelected} onClick={() => handleSubjectSelect(subject)}>
 
-                            <span className={styles.subjectRadio}>{isSelected && <Image className={styles.subjectRadioTick} src="/icons/bluetick.svg" width={17} height={17} alt="" aria-hidden="true" />}</span>
+//                             <span className={styles.subjectRadio}>{isSelected && <Image className={styles.subjectRadioTick} src="/icons/bluetick.svg" width={17} height={17} alt="" aria-hidden="true" />}</span>
 
-                            <output className={styles.subjectOptionText}>{subject}</output>
+//                             <output className={styles.subjectOptionText}>{subject}</output>
 
-                          </button>
+//                           </button>
 
-                        );
+//                         );
 
-                      })}
+//                       })}
 
-                    </div>
+//                     </div>
 
-                  )}
+//                   )}
 
-                  <input type="hidden" name="subject" value={selectedSubject} />
+//                   <input type="hidden" name="subject" value={selectedSubject} />
 
-                </div>
+//                 </div>
 
-                <div className={styles.frameParent5}>
+//                 <div className={styles.frameParent5}>
 
-                  <div className={styles.frameWrapper7}>
+//                   <div className={styles.frameWrapper7}>
 
-                    <div className={styles.messageWrapper}>
+//                     <div className={styles.messageWrapper}>
 
-                      <label className={styles.message} htmlFor="message">
+//                       <label className={styles.message} htmlFor="message">
 
-                        Message
+//                         Message
 
-                      </label>
+//                       </label>
 
-                      <span className={styles.messageCharacterCount} aria-live="polite">
+//                       <span className={styles.messageCharacterCount} aria-live="polite">
 
-                        {250 - message.length}/250 
+//                         {250 - message.length}/250 
 
-                      </span>
+//                       </span>
 
-                    </div>
+//                     </div>
 
-                  </div>
+//                   </div>
 
-                  <div className={`${styles.frameParent6} ${showMessageError ? styles.messageFieldError : ""}`}>
+//                   <div className={`${styles.frameParent6} ${showMessageError ? styles.messageFieldError : ""}`}>
 
-                    <div className={styles.frameWrapper8}>
+//                     <div className={styles.frameWrapper8}>
 
-                      <div className={styles.typeYourMessageHereWrapper}>
+//                       <div className={styles.typeYourMessageHereWrapper}>
 
-                        <textarea
+//                         <textarea
 
-                          id="message"
+//                           id="message"
 
-                          className={styles.typeYourMessage}
+//                           className={styles.typeYourMessage}
 
-                          name="message"
+//                           name="message"
 
-                          placeholder="Type your message here....."
+//                           placeholder="Type your message here....."
 
-                          rows={6}
+//                           rows={6}
 
-                          maxLength={250}
+//                           maxLength={250}
 
-                          value={message}
+//                           value={message}
 
-                          onChange={(event) => setMessage(event.target.value.slice(0, 250))}
+//                           onChange={(event) => setMessage(event.target.value.slice(0, 250))}
 
-                          onBlur={() => setMessageTouched(true)}
+//                           onBlur={() => setMessageTouched(true)}
 
-                          aria-invalid={showMessageError}
+//                           aria-invalid={showMessageError}
 
-                          aria-describedby={showMessageError ? "messageError" : undefined}
+//                           aria-describedby={showMessageError ? "messageError" : undefined}
 
-                          required
+//                           required
 
-                        />
+//                         />
 
-                      </div>
+//                       </div>
 
-                    </div>
+//                     </div>
 
-                  </div>
+//                   </div>
 
-                  {showMessageError && (
+//                   {showMessageError && (
 
-                    <small id="messageError" className={styles.messageValidationMessage} role="alert">
+//                     <small id="messageError" className={styles.messageValidationMessage} role="alert">
 
-                      Enter a message
+//                       Enter a message
 
-                    </small>
+//                     </small>
 
-                  )}
+//                   )}
 
-                  {isMessageAtLimit && (
+//                   {isMessageAtLimit && (
 
-                    <small className={styles.messageLimitMessage} role="status" aria-live="polite">
+//                     <small className={styles.messageLimitMessage} role="status" aria-live="polite">
 
-                      Maximum character limit reached.
+//                       Maximum character limit reached.
 
-                    </small>
+//                     </small>
 
-                  )}
+//                   )}
 
-                </div>
+//                 </div>
 
-              </div>
+//               </div>
 
-              <div className={styles.frameParent7}>
+//               <div className={styles.frameParent7}>
 
-                <span className={styles.checkboxControl}>
+//                 <span className={styles.checkboxControl}>
 
-                  <input
+//                   <input
 
-                    className={styles.frameChild2}
+//                     className={styles.frameChild2}
 
-                    type="checkbox"
+//                     type="checkbox"
 
-                    name="privacyConfirmation"
+//                     name="privacyConfirmation"
 
-                    checked={privacyAccepted}
+//                     checked={privacyAccepted}
 
-                    onChange={(event) => setPrivacyAccepted(event.target.checked)}
+//                     onChange={(event) => setPrivacyAccepted(event.target.checked)}
 
-                    aria-label="I confirm my information and agree to the Privacy Policy"
+//                     aria-label="I confirm my information and agree to the Privacy Policy"
 
-                    required
+//                     required
 
-                  />
+//                   />
 
-                  <span className={styles.checkboxVisual} aria-hidden="true">
+//                   <span className={styles.checkboxVisual} aria-hidden="true">
 
-                    <Image className={styles.checkboxTickIcon} src="/icons/tick.svg" width={17} height={17} alt="" aria-hidden="true" />
+//                     <Image className={styles.checkboxTickIcon} src="/icons/tick.svg" width={17} height={17} alt="" aria-hidden="true" />
 
-                  </span>
+//                   </span>
 
-                </span>
+//                 </span>
 
-                <p className={styles.iConfirmMyContainer} style={{ margin: 0 }}>
+//                 <p className={styles.iConfirmMyContainer} style={{ margin: 0 }}>
 
-                  <small className={styles.iConfirmMy} style={{ fontSize: "inherit" }}>
+//                   <small className={styles.iConfirmMy} style={{ fontSize: "inherit" }}>
 
-                    I confirm my information and agree to the{" "}
+//                     I confirm my information and agree to the{" "}
 
-                  </small>
+//                   </small>
 
-                  <button
+//                   <button
 
-                    type="button"
+//                     type="button"
 
-                    className={styles.privacyPolicy}
+//                     className={styles.privacyPolicy}
 
-                    onClick={() => setIsPrivacyPolicyOpen(true)}
+//                     onClick={() => setIsPrivacyPolicyOpen(true)}
 
-                  >
+//                   >
 
-                    Privacy Policy
+//                     Privacy Policy
 
-                  </button>
+//                   </button>
 
-                </p>
+//                 </p>
 
-              </div>
+//               </div>
 
-            </div>
+//             </div>
 
-            {isPrivacyPolicyOpen && (
+//             {isPrivacyPolicyOpen && (
 
-              <div
+//               <div
 
-                className={styles.privacyOverlay}
+//                 className={styles.privacyOverlay}
 
-                role="presentation"
+//                 role="presentation"
 
-                onMouseDown={(event) => {
+//                 onMouseDown={(event) => {
 
-                  if (event.target === event.currentTarget) {
+//                   if (event.target === event.currentTarget) {
 
-                    setIsPrivacyPolicyOpen(false);
+//                     setIsPrivacyPolicyOpen(false);
 
-                  }
+//                   }
 
-                }}
+//                 }}
 
-              >
+//               >
 
-                <div
+//                 <div
 
-                  className={styles.privacyDialog}
+//                   className={styles.privacyDialog}
 
-                  role="dialog"
+//                   role="dialog"
 
-                  aria-modal="true"
+//                   aria-modal="true"
 
-                  aria-labelledby="contact-privacy-title"
+//                   aria-labelledby="contact-privacy-title"
 
-                  aria-describedby="contact-privacy-description"
+//                   aria-describedby="contact-privacy-description"
 
-                >
+//                 >
 
-                  <div className={styles.privacyHeader}>
+//                   <div className={styles.privacyHeader}>
 
-                    <div className={styles.privacyHeading}>
+//                     <div className={styles.privacyHeading}>
 
-                      <h2 id="contact-privacy-title" className={styles.privacyTitle}>
+//                       <h2 id="contact-privacy-title" className={styles.privacyTitle}>
 
-                        Privacy Policy
+//                         Privacy Policy
 
-                      </h2>
+//                       </h2>
 
-                      <p id="contact-privacy-description" className={styles.privacyDescription}>
+//                       <p id="contact-privacy-description" className={styles.privacyDescription}>
 
-                        Please review the privacy information below before continuing.
+//                         Please review the privacy information below before continuing.
 
-                      </p>
+//                       </p>
 
-                    </div>
+//                     </div>
 
-                    <button
+//                     <button
 
-                      type="button"
+//                       type="button"
 
-                      className={styles.privacyClose}
+//                       className={styles.privacyClose}
 
-                      onClick={() => setIsPrivacyPolicyOpen(false)}
+//                       onClick={() => setIsPrivacyPolicyOpen(false)}
 
-                      aria-label="Close privacy policy"
+//                       aria-label="Close privacy policy"
 
-                    >
+//                     >
 
-                      <span aria-hidden="true">×</span>
+//                       <span aria-hidden="true">×</span>
 
-                    </button>
+//                     </button>
 
-                  </div>
+//                   </div>
 
-                  <div className={styles.privacyContent}>
+//                   <div className={styles.privacyContent}>
 
-                    <h3>PRIVACY POLICY ACCEPTANCE</h3>
+//                     <h3>PRIVACY POLICY ACCEPTANCE</h3>
 
-                    <p>
+//                     <p>
 
-                      By accessing or using the Platform, I hereby provide my explicit,
+//                       By accessing or using the Platform, I hereby provide my explicit,
 
-                      informed, and unconditional consent to{" "}
+//                       informed, and unconditional consent to{" "}
 
-                      <strong>PRGEEQ GLOBAL SOLUTIONS PRIVATE LIMITED</strong> for the following:
+//                       <strong>PRGEEQ GLOBAL SOLUTIONS PRIVATE LIMITED</strong> for the following:
 
-                    </p>
+//                     </p>
 
-                    <h4>1. ACKNOWLEDGMENT</h4>
+//                     <h4>1. ACKNOWLEDGMENT</h4>
 
-                    <p>
+//                     <p>
 
-                      I have carefully read, fully understood, and voluntarily agree to be
+//                       I have carefully read, fully understood, and voluntarily agree to be
 
-                      bound by the Terms and Conditions of{" "}
+//                       bound by the Terms and Conditions of{" "}
 
-                      <strong>PRGEEQ GLOBAL SOLUTIONS PRIVATE LIMITED</strong>.
+//                       <strong>PRGEEQ GLOBAL SOLUTIONS PRIVATE LIMITED</strong>.
 
-                    </p>
+//                     </p>
 
-                    <h4>2. DATA COLLECTION AND USAGE CONSENT</h4>
+//                     <h4>2. DATA COLLECTION AND USAGE CONSENT</h4>
 
-                    <p>
+//                     <p>
 
-                      I confirm that I have read and understood the Privacy Policy and agree
+//                       I confirm that I have read and understood the Privacy Policy and agree
 
-                      to its terms.
+//                       to its terms.
 
-                    </p>
+//                     </p>
 
-                    <ul>
+//                     <ul>
 
-                      <li>Identification details</li>
+//                       <li>Identification details</li>
 
-                      <li>Contact information</li>
+//                       <li>Contact information</li>
 
-                      <li>Usage data and activity logs</li>
+//                       <li>Usage data and activity logs</li>
 
-                      <li>Device and technical data</li>
+//                       <li>Device and technical data</li>
 
-                    </ul>
+//                     </ul>
 
-                    <h4>3. DATA COLLECTION AND USAGE CONSENT</h4>
+//                     <h4>3. DATA COLLECTION AND USAGE CONSENT</h4>
 
-                    <p>
+//                     <p>
 
-                      I consent to the collection and processing of my personal data,
+//                       I consent to the collection and processing of my personal data,
 
-                      including but not limited to:
+//                       including but not limited to:
 
-                    </p>
+//                     </p>
 
-                    <ul>
+//                     <ul>
 
-                      <li>Account management and authentication</li>
+//                       <li>Account management and authentication</li>
 
-                      <li>Service delivery and personalization</li>
+//                       <li>Service delivery and personalization</li>
 
-                      <li>Communication and notifications</li>
+//                       <li>Communication and notifications</li>
 
-                      <li>Legal and regulatory compliance</li>
+//                       <li>Legal and regulatory compliance</li>
 
-                      <li>Security monitoring and fraud prevention</li>
+//                       <li>Security monitoring and fraud prevention</li>
 
-                    </ul>
+//                     </ul>
 
-                    <h4>4. DATA SECURITY DISCLAIMER</h4>
+//                     <h4>4. DATA SECURITY DISCLAIMER</h4>
 
-                    <ul>
+//                     <ul>
 
-                      <li>The Company implements reasonable technical and organizational safeguards</li>
+//                       <li>The Company implements reasonable technical and organizational safeguards</li>
 
-                      <li>However, I acknowledge that no digital system is completely secure</li>
+//                       <li>However, I acknowledge that no digital system is completely secure</li>
 
-                      <li>
+//                       <li>
 
-                        The Company shall not be liable for data breaches resulting from
+//                         The Company shall not be liable for data breaches resulting from
 
-                        sophisticated cyber-attacks beyond reasonable control
+//                         sophisticated cyber-attacks beyond reasonable control
 
-                      </li>
+//                       </li>
 
-                    </ul>
+//                     </ul>
 
-                    <h4>5. PAYMENT AND FRAUD PREVENTION DISCLAIMER</h4>
+//                     <h4>5. PAYMENT AND FRAUD PREVENTION DISCLAIMER</h4>
 
-                    <ul>
+//                     <ul>
 
-                      <li>
+//                       <li>
 
-                        I understand that payment-related communications must be verified
+//                         I understand that payment-related communications must be verified
 
-                        through official Company channels
+//                         through official Company channels
 
-                      </li>
+//                       </li>
 
-                      <li>
+//                       <li>
 
-                        The Company does not accept responsibility for losses due to
+//                         The Company does not accept responsibility for losses due to
 
-                        fraudulent payment requests or impersonation
+//                         fraudulent payment requests or impersonation
 
-                      </li>
+//                       </li>
 
-                    </ul>
+//                     </ul>
 
-                    <h4>6. USER RIGHTS</h4>
+//                     <h4>6. USER RIGHTS</h4>
 
-                    <p>Subject to applicable laws, I understand I may:</p>
+//                     <p>Subject to applicable laws, I understand I may:</p>
 
-                    <ul>
+//                     <ul>
 
-                      <li>Access my data</li>
+//                       <li>Access my data</li>
 
-                      <li>Request correction or deletion</li>
+//                       <li>Request correction or deletion</li>
 
-                      <li>Withdraw consent where permissible</li>
+//                       <li>Withdraw consent where permissible</li>
 
-                    </ul>
+//                     </ul>
 
-                    <h4>7. THIRD-PARTY SERVICES</h4>
+//                     <h4>7. THIRD-PARTY SERVICES</h4>
 
-                    <p>
+//                     <p>
 
-                      I acknowledge that certain services may involve third-party providers,
+//                       I acknowledge that certain services may involve third-party providers,
 
-                      and the Company is not responsible for their independent practices.
+//                       and the Company is not responsible for their independent practices.
 
-                    </p>
+//                     </p>
 
-                    <h4>8. CONSENT VALIDITY</h4>
+//                     <h4>8. CONSENT VALIDITY</h4>
 
-                    <p>This consent:</p>
+//                     <p>This consent:</p>
 
-                    <ul>
+//                     <ul>
 
-                      <li>Is legally binding</li>
+//                       <li>Is legally binding</li>
 
-                      <li>Remains valid until withdrawn (subject to legal obligations)</li>
+//                       <li>Remains valid until withdrawn (subject to legal obligations)</li>
 
-                      <li>Applies to all Platform interactions</li>
+//                       <li>Applies to all Platform interactions</li>
 
-                    </ul>
+//                     </ul>
 
-                    <p><strong>MANDATORY CONSENT ACTIONS (IMPLEMENTATION):</strong></p>
+//                     <p><strong>MANDATORY CONSENT ACTIONS (IMPLEMENTATION):</strong></p>
 
-                    <p>I agree to the Privacy Policy</p>
+//                     <p>I agree to the Privacy Policy</p>
 
-                    <p>I consent to data processing as described</p>
+//                     <p>I consent to data processing as described</p>
 
-                    <p><strong>OPTIONAL CONSENTS:</strong></p>
+//                     <p><strong>OPTIONAL CONSENTS:</strong></p>
 
-                    <p>I agree to receive marketing communications</p>
+//                     <p>I agree to receive marketing communications</p>
 
-                    <p>I accept use of cookies and tracking technologies</p>
+//                     <p>I accept use of cookies and tracking technologies</p>
 
-                    <p><strong>COMPANY DETAILS: PRGEEQ GLOBAL SOLUTIONS PRIVATE LIMITED</strong></p>
+//                     <p><strong>COMPANY DETAILS: PRGEEQ GLOBAL SOLUTIONS PRIVATE LIMITED</strong></p>
 
-                    <p className={styles.privacyLastLine}>
+//                     <p className={styles.privacyLastLine}>
 
-                      <strong>Email: contact@prgeeq.com</strong>
+//                       <strong>Email: contact@prgeeq.com</strong>
 
-                    </p>
+//                     </p>
 
-                  </div>
+//                   </div>
 
-                  <div className={styles.privacyFooter}>
+//                   <div className={styles.privacyFooter}>
 
-                    <button
+//                     <button
 
-                      type="button"
+//                       type="button"
 
-                      className={styles.privacyAccept}
+//                       className={styles.privacyAccept}
 
-                      onClick={() => {
+//                       onClick={() => {
 
-                        setPrivacyAccepted(true);
+//                         setPrivacyAccepted(true);
 
-                        setIsPrivacyPolicyOpen(false);
+//                         setIsPrivacyPolicyOpen(false);
 
-                      }}
+//                       }}
 
-                    >
+//                     >
 
-                      Close &amp; Accept
+//                       Close &amp; Accept
 
-                    </button>
+//                     </button>
 
-                  </div>
+//                   </div>
 
-                </div>
+//                 </div>
 
-              </div>
+//               </div>
 
-            )}
+//             )}
 
-            <button
+//             <button
 
-              className={styles.frameWrapper9}
+//               className={styles.frameWrapper9}
 
-              type="submit"
+//               type="submit"
 
-              disabled={!isFormValid || !hasMessageContent || submitted}
+//               disabled={!isFormValid || !hasMessageContent || submitted}
 
-              aria-disabled={!isFormValid || !hasMessageContent || submitted}
+//               aria-disabled={!isFormValid || !hasMessageContent || submitted}
 
-            >
+//             >
 
-              <div className={styles.sendParent}>
+//               <div className={styles.sendParent}>
 
-                <Image className={styles.sendIcon} src="/icons/send.svg" width={24} height={24} alt="" aria-hidden="true" />
+//                 <Image className={styles.sendIcon} src="/icons/send.svg" width={24} height={24} alt="" aria-hidden="true" />
 
-                <strong className={styles.sendMessage}>Send Message</strong>
+//                 <strong className={styles.sendMessage}>Send Message</strong>
 
-              </div>
+//               </div>
 
-            </button>
+//             </button>
 
-              </>
+//               </>
 
-            )}
+//             )}
 
-          </form>
+//           </form>
 
-        </div>
+//         </div>
 
-      </div>
+//       </div>
 
-    </main>
+//     </main>
 
-  );
+//   );
 
-};
+// };
 
-export default ContactUs;
+// export default ContactUs;
