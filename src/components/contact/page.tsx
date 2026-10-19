@@ -1,5 +1,7 @@
 "use client";
 
+
+
 import type { NextPage } from "next";
 
 import Image from "next/image";
@@ -10,7 +12,11 @@ import { getCountries, getCountryCallingCode, isValidPhoneNumber, type CountryCo
 
 import styles from "./contact.module.css";
 
+
+
 const subjectOptions = ["General Inquiry", "Product Information", "Technical Support", "Account Support", "Partnership", "Billing", "Feedback", "Other"];
+
+
 
 const ContactUs: NextPage = () => {
 
@@ -47,9 +53,15 @@ const ContactUs: NextPage = () => {
   const [isPrivacyPolicyOpen, setIsPrivacyPolicyOpen] = useState(false);
 
   const [submitted, setSubmitted] = useState(false);
+
+
+
   const namePattern = /^[A-Za-z]+(?:\s+[A-Za-z]+)*$/;
+
   const emailPattern =
     /^[A-Za-z0-9.!#$%&'*+/=?^_`{|}~-]+@[A-Za-z0-9](?:[A-Za-z0-9-]{0,61}[A-Za-z0-9])?(?:\.[A-Za-z0-9](?:[A-Za-z0-9-]{0,61}[A-Za-z0-9])?)+$/;
+
+
 
   const commonEmailDomains: Record<string, string> = {
 
@@ -65,9 +77,13 @@ const ContactUs: NextPage = () => {
 
   };
 
+
+
   const validateEmailAddress = (value: string) => {
 
     const normalized = value.trim().toLowerCase();
+
+
 
     if (!emailPattern.test(normalized)) {
 
@@ -81,11 +97,15 @@ const ContactUs: NextPage = () => {
 
     }
 
+
+
     const [, domain = ""] = normalized.split("@");
 
     const provider = domain.split(".")[0] ?? "";
 
     const requiredDomain = commonEmailDomains[provider];
+
+
 
     if (requiredDomain && domain !== requiredDomain) {
 
@@ -99,6 +119,8 @@ const ContactUs: NextPage = () => {
 
     }
 
+
+
     return {
 
       valid: true,
@@ -108,6 +130,8 @@ const ContactUs: NextPage = () => {
     };
 
   };
+
+
 
   const isNameValid = fullName.trim().length > 0 && namePattern.test(fullName.trim());
 
@@ -127,6 +151,8 @@ const ContactUs: NextPage = () => {
 
   const isPrivacyValid = privacyAccepted;
 
+
+
   const showNameError = nameTouched && !isNameValid;
 
   const showEmailError = emailTouched && !isEmailValid;
@@ -135,9 +161,13 @@ const ContactUs: NextPage = () => {
 
   const showMessageError = messageTouched && !isMessageValid;
 
+
+
   const countryOptions = useMemo(() => {
 
     const displayNames = new Intl.DisplayNames(["en"], { type: "region" });
+
+
 
     return getCountries()
 
@@ -148,11 +178,8 @@ const ContactUs: NextPage = () => {
         label: `${displayNames.of(country) || country} (+${getCountryCallingCode(country)})`,
 
         shortLabel: `${country} (+${getCountryCallingCode(country)})`,
-
         countryName: displayNames.of(country) || country,
-
         dialCode: `+${getCountryCallingCode(country)}`,
-
         flagUrl: `https://flagcdn.com/24x18/${country.toLowerCase()}.png`,
 
       }))
@@ -161,7 +188,11 @@ const ContactUs: NextPage = () => {
 
   }, []);
 
+
+
   const selectedCountry = countryOptions.find((country) => country.value === countryCode);
+
+
 
   /*
 
@@ -185,9 +216,13 @@ const ContactUs: NextPage = () => {
 
   const phoneMaxLength = 15;
 
+
+
   const filteredCountryOptions = useMemo(() => {
 
     const searchValue = countrySearch.trim().toLowerCase();
+
+
 
     if (!searchValue) {
 
@@ -195,11 +230,15 @@ const ContactUs: NextPage = () => {
 
     }
 
+
+
     const normalizedSearch = searchValue
 
       .replace(/[()\s-]/g, "")
 
       .replace(/^\+/, "");
+
+
 
     /*
 
@@ -215,11 +254,15 @@ const ContactUs: NextPage = () => {
 
     );
 
+
+
     if (exactIsoMatch.length > 0) {
 
       return exactIsoMatch;
 
     }
+
+
 
     return countryOptions.filter((country) => {
 
@@ -234,6 +277,8 @@ const ContactUs: NextPage = () => {
         .replace(/[()\s-]/g, "")
 
         .replace(/^\+/, "");
+
+
 
       return (
 
@@ -253,7 +298,11 @@ const ContactUs: NextPage = () => {
 
   }, [countryOptions, countrySearch]);
 
+
+
   const normalizedPhoneNumber = phoneNumber.replace(/\D/g, "");
+
+
 
   /*
 
@@ -285,6 +334,8 @@ const ContactUs: NextPage = () => {
 
     }
 
+
+
     // Reject repeated digits such as 1111111111.
 
     if (/^(\d)\1+$/.test(number)) {
@@ -292,6 +343,8 @@ const ContactUs: NextPage = () => {
       return true;
 
     }
+
+
 
     // Reject the common ascending and descending test sequences.
 
@@ -309,7 +362,11 @@ const ContactUs: NextPage = () => {
 
     }
 
+
+
     const digits = number.split("").map(Number);
+
+
 
     const isAscendingSequence =
 
@@ -325,6 +382,8 @@ const ContactUs: NextPage = () => {
 
       );
 
+
+
     const isDescendingSequence =
 
       digits.length > 1 &&
@@ -339,6 +398,8 @@ const ContactUs: NextPage = () => {
 
       );
 
+
+
     return (
 
       isAscendingSequence ||
@@ -348,6 +409,8 @@ const ContactUs: NextPage = () => {
     );
 
   };
+
+
 
   /*
 
@@ -387,7 +450,11 @@ const ContactUs: NextPage = () => {
 
     );
 
+
+
   const showPhoneError = phoneTouched && Boolean(countryCode) && !isPhoneValid;
+
+
 
   const isFormValid =
 
@@ -405,9 +472,13 @@ const ContactUs: NextPage = () => {
 
     isPrivacyValid;
 
+
+
   const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
 
     event.preventDefault();
+
+
 
     setNameTouched(true);
 
@@ -419,6 +490,8 @@ const ContactUs: NextPage = () => {
 
     setMessageTouched(true);
 
+
+
     if (!isFormValid) {
 
       if (!isNameValid) {
@@ -429,6 +502,8 @@ const ContactUs: NextPage = () => {
 
       }
 
+
+
       if (!isEmailValid) {
 
         document.getElementById("emailAddress")?.focus();
@@ -436,6 +511,8 @@ const ContactUs: NextPage = () => {
         return;
 
       }
+
+
 
       if (!isCountryValid) {
 
@@ -445,6 +522,8 @@ const ContactUs: NextPage = () => {
 
       }
 
+
+
       if (!isPhoneValid) {
 
         document.getElementById("phoneNumber")?.focus();
@@ -452,6 +531,8 @@ const ContactUs: NextPage = () => {
         return;
 
       }
+
+
 
       if (!isSubjectValid) {
 
@@ -461,6 +542,8 @@ const ContactUs: NextPage = () => {
 
       }
 
+
+
       if (!isMessageValid) {
 
         document.getElementById("message")?.focus();
@@ -469,89 +552,105 @@ const ContactUs: NextPage = () => {
 
       }
 
+
+
       return;
 
     }
 
+
+
     try {
 
-const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL || "http://localhost:4000"}/email/contact-us`, {  method: "POST",
+      const response = await fetch("http://localhost:4000/contact-us", {
 
-  headers: {
+        method: "POST",
 
-    "Content-Type": "application/json",
+        headers: {
 
-  },
+          "Content-Type": "application/json",
 
-  body: JSON.stringify({
+        },
 
-    fullName: fullName.trim(),
+        body: JSON.stringify({
 
-    email: emailAddress.trim(),
+          fullName: fullName.trim(),
 
-    countryCode,
+          email: emailAddress.trim(),
 
-    phone: normalizedPhoneNumber,
+          countryCode,
 
-    subject: selectedSubject,
+          phone: normalizedPhoneNumber,
 
-    message: message.trim(),
+          subject: selectedSubject,
 
-    consent: privacyAccepted,
+          message: message.trim(),
 
-  }),
+          consent: privacyAccepted,
 
-});
+        }),
 
-console.log("Contact Us HTTP status:", response.status);
+      });
 
-let responseData: unknown = null;
 
-try {
 
-  responseData = await response.json();
+      let responseData: unknown = null;
 
-} catch {
 
-  responseData = null;
 
-}
+      try {
 
-console.log("Contact Us response:", responseData);
+        responseData = await response.json();
 
-if (!response.ok) {
+      } catch {
 
-  let errorMessage = "Unable to send your message.";
+        responseData = null;
 
-  if (
+      }
 
-    responseData &&
 
-    typeof responseData === "object" &&
 
-    "message" in responseData
+      if (!response.ok) {
 
-  ) {
+        let errorMessage = "Unable to send your message.";
 
-    const responseMessage = responseData.message;
 
-    if (typeof responseMessage === "string") {
 
-      errorMessage = responseMessage;
+        if (
 
-    } else if (Array.isArray(responseMessage)) {
+          responseData &&
 
-      errorMessage = responseMessage.join("\n");
+          typeof responseData === "object" &&
 
-    }
+          "message" in responseData
 
-  }
+        ) {
 
-  throw new Error(errorMessage);
+          const responseMessage = responseData.message;
 
-}
 
-setSubmitted(true);
+
+          if (typeof responseMessage === "string") {
+
+            errorMessage = responseMessage;
+
+          } else if (Array.isArray(responseMessage)) {
+
+            errorMessage = responseMessage.join("\n");
+
+          }
+
+        }
+
+
+
+        throw new Error(errorMessage);
+
+      }
+
+
+
+      setSubmitted(true);
 
     } catch (error) {
 
@@ -563,11 +662,15 @@ setSubmitted(true);
 
           : "Unable to send your message.";
 
+
+
       window.alert(errorMessage);
 
     }
 
   };
+
+
 
   const handleSubjectSelect = (subject: string) => {
 
@@ -576,6 +679,8 @@ setSubmitted(true);
     setIsSubjectOpen(false);
 
   };
+
+
 
   return (
 
@@ -591,6 +696,8 @@ setSubmitted(true);
 
           </h1>
 
+
+
           <div className={styles.shieldCheckParent}>
 
             <svg width="28" height="28" viewBox="0 0 28 28" fill="none" >
@@ -601,6 +708,8 @@ setSubmitted(true);
 
             </svg>
 
+
+
             <h2 className={styles.weNeverShare} style={{ margin: 0, padding: 0, fontSize: "inherit", fontWeight: "bold", fontFamily: "inherit", color: "inherit" }}>
 
               We Never Share Your Data
@@ -610,6 +719,8 @@ setSubmitted(true);
           </div>
 
         </div>
+
+
 
         <div className={styles.frameWrapper}>
 
@@ -649,6 +760,8 @@ setSubmitted(true);
 
                       </label>
 
+
+
                       <div className={`${styles.frameChild} ${fullName ? styles.fieldHasValue : ""} ${showNameError ? styles.fieldHasError : ""}`}>
 
                         <div className={styles.fieldContent}>
@@ -658,6 +771,8 @@ setSubmitted(true);
                             <Image className={styles.fieldIcon} src="/icons/user.svg" width={20} height={20} alt="" aria-hidden="true" />
 
                           </span>
+
+
 
                           <input id="fullName" className={styles.contactInput} type="text" name="fullName" autoComplete="name" spellCheck={false} autoCorrect="off" autoCapitalize="words" placeholder="Enter your name" value={fullName} onChange={(event) => setFullName(event.target.value.replace(/[^A-Za-z\s]/g, "").replace(/\s{2,}/g, " ").slice(0, 80))} onBlur={() => setNameTouched(true)} aria-invalid={showNameError} aria-describedby={showNameError ? "fullNameError" : undefined} inputMode="text" required />
 
@@ -681,6 +796,8 @@ setSubmitted(true);
 
                 </div>
 
+
+
                 <div className={`${styles.emailAddressParent} ${styles.emailFieldGroup}`}>
 
                   <label className={styles.emailAddress} htmlFor="emailAddress">
@@ -688,6 +805,8 @@ setSubmitted(true);
                     Email Address
 
                   </label>
+
+
 
                   <div className={`${styles.frameWrapper4} ${isEmailValid ? styles.fieldHasValue : ""} ${showEmailError ? styles.fieldHasError : ""}`}>
 
@@ -700,6 +819,8 @@ setSubmitted(true);
                           <Image className={styles.fieldIcon} src="/icons/mail.svg" width={20} height={20} alt="" aria-hidden="true" />
 
                         </span>
+
+
 
                         <input
 
@@ -745,6 +866,8 @@ setSubmitted(true);
 
                   </div>
 
+
+
                   {showEmailError && (
 
                     <small id="emailAddressError" className={styles.emailValidationMessage} role="alert">
@@ -757,6 +880,8 @@ setSubmitted(true);
 
                 </div>
 
+
+
                 <div className={styles.emailAddressParent}>
 
                   <label className={styles.emailAddress} htmlFor="phoneNumber">
@@ -764,6 +889,8 @@ setSubmitted(true);
                     Phone Number
 
                   </label>
+
+
 
                   <div className={styles.frameParent3}>
 
@@ -787,11 +914,15 @@ setSubmitted(true);
 
                             const nextOpen = !open;
 
+
+
                             if (nextOpen) {
 
                               setCountrySearch("");
 
                             }
+
+
 
                             return nextOpen;
 
@@ -800,42 +931,30 @@ setSubmitted(true);
                         }}>
 
                         <output className={styles.countryCodeLabel}>
-
                           {selectedCountry ? (
-
                             <span className={styles.countrySelectedValue}>
-
                               <img
-
                                 className={styles.countryFlag}
-
                                 src={selectedCountry.flagUrl}
-
                                 width={24}
-
                                 height={18}
-
                                 alt=""
-
                                 aria-hidden="true"
-
                               />
-
                               <span>{selectedCountry.dialCode}</span>
-
                             </span>
-
                           ) : (
-
                             "Select"
-
                           )}
-
                         </output>
+
+
 
                         <Image className={`${styles.countryArrowIcon} ${isCountryOpen ? styles.countryArrowOpen : ""}`} src="/icons/arrowdown.svg" width={20} height={20} alt="" aria-hidden="true" />
 
                       </button>
+
+
 
                       {isCountryOpen && (
 
@@ -846,6 +965,8 @@ setSubmitted(true);
                             <input className={styles.countrySearchInput} type="search" value={countrySearch} onChange={(event) => setCountrySearch(event.target.value)} placeholder="Search country" aria-label="Search country" autoFocus />
 
                           </div>
+
+
 
                           <div className={styles.countryOptionsList}>
 
@@ -882,31 +1003,18 @@ setSubmitted(true);
                                   }}>
 
                                   <span className={styles.countryOptionMain}>
-
                                     <img
-
                                       className={styles.countryFlag}
-
                                       src={country.flagUrl}
-
                                       width={24}
-
                                       height={18}
-
                                       alt=""
-
                                       aria-hidden="true"
-
                                     />
-
                                     <span className={styles.countryOptionDialCode}>
-
                                       {country.dialCode}
-
                                     </span>
-
                                   </span>
-
                                 </button>
 
                               ))
@@ -927,9 +1035,13 @@ setSubmitted(true);
 
                       )}
 
+
+
                       <input type="hidden" name="countryCode" value={countryCode} />
 
                     </div>
+
+
 
                     <div className={`${styles.frameIcon} ${isPhoneValid ? styles.fieldHasValue : ""} ${showPhoneError ? styles.fieldHasError : ""}`}>
 
@@ -938,6 +1050,8 @@ setSubmitted(true);
                         <Image className={styles.phoneIcon} src="/icons/call.svg" width={20} height={20} alt="" aria-hidden="true" />
 
                       </span>
+
+
 
                       <input
 
@@ -963,7 +1077,11 @@ setSubmitted(true);
 
                           const nextPhoneNumber = event.target.value.replace(/[^0-9]/g, "").slice(0, phoneMaxLength);
 
+
+
                           setPhoneNumber(nextPhoneNumber);
+
+
 
                           if (phoneTouched) {
 
@@ -987,6 +1105,8 @@ setSubmitted(true);
 
                   </div>
 
+
+
                   {showCountryError && (
 
                     <small id="countryCodeError" className={styles.countryValidationMessage} role="alert">
@@ -996,6 +1116,8 @@ setSubmitted(true);
                     </small>
 
                   )}
+
+
 
                   {showPhoneError && (
 
@@ -1009,6 +1131,8 @@ setSubmitted(true);
 
                 </div>
 
+
+
                 <div className={`${styles.emailAddressParent} ${styles.subjectField}`}>
 
                   <label className={styles.emailAddress} id="subjectLabel">
@@ -1016,6 +1140,8 @@ setSubmitted(true);
                     Subject
 
                   </label>
+
+
 
                   <button id="subjectButton" className={`${styles.frameParent4} ${selectedSubject ? styles.subjectHasValue : ""}`} type="button" aria-labelledby="subjectLabel selectedSubjectValue" aria-haspopup="listbox" aria-expanded={isSubjectOpen} onClick={() => setIsSubjectOpen((open) => !open)}>
 
@@ -1025,15 +1151,21 @@ setSubmitted(true);
 
                     </span>
 
+
+
                     <output id="selectedSubjectValue" className={`${styles.selectedSubjectText} ${selectedSubject ? styles.hasSubjectValue : ""}`}>
 
                       {selectedSubject || "Select a subject"}
 
                     </output>
 
+
+
                     <Image className={`${styles.arrowDown01Icon} ${isSubjectOpen ? styles.subjectArrowOpen : ""}`} src="/icons/arrowdown.svg" width={20} height={20} alt="" aria-hidden="true" />
 
                   </button>
+
+
 
                   {isSubjectOpen && (
 
@@ -1043,11 +1175,15 @@ setSubmitted(true);
 
                         const isSelected = selectedSubject === subject;
 
+
+
                         return (
 
                           <button key={subject} className={`${styles.subjectOption} ${isSelected ? styles.subjectOptionSelected : ""}`} type="button" role="option" aria-selected={isSelected} onClick={() => handleSubjectSelect(subject)}>
 
                             <span className={styles.subjectRadio}>{isSelected && <Image className={styles.subjectRadioTick} src="/icons/bluetick.svg" width={17} height={17} alt="" aria-hidden="true" />}</span>
+
+
 
                             <output className={styles.subjectOptionText}>{subject}</output>
 
@@ -1061,9 +1197,13 @@ setSubmitted(true);
 
                   )}
 
+
+
                   <input type="hidden" name="subject" value={selectedSubject} />
 
                 </div>
+
+
 
                 <div className={styles.frameParent5}>
 
@@ -1077,15 +1217,19 @@ setSubmitted(true);
 
                       </label>
 
+
+
                       <span className={styles.messageCharacterCount} aria-live="polite">
 
-                        {250 - message.length}/250 
+                        {250 - message.length}/250&#x20;
 
                       </span>
 
                     </div>
 
                   </div>
+
+
 
                   <div className={`${styles.frameParent6} ${showMessageError ? styles.messageFieldError : ""}`}>
 
@@ -1137,6 +1281,8 @@ setSubmitted(true);
 
                   )}
 
+
+
                   {isMessageAtLimit && (
 
                     <small className={styles.messageLimitMessage} role="status" aria-live="polite">
@@ -1150,6 +1296,8 @@ setSubmitted(true);
                 </div>
 
               </div>
+
+
 
               <div className={styles.frameParent7}>
 
@@ -1181,6 +1329,8 @@ setSubmitted(true);
 
                 </span>
 
+
+
                 <p className={styles.iConfirmMyContainer} style={{ margin: 0 }}>
 
                   <small className={styles.iConfirmMy} style={{ fontSize: "inherit" }}>
@@ -1208,6 +1358,8 @@ setSubmitted(true);
               </div>
 
             </div>
+
+
 
             {isPrivacyPolicyOpen && (
 
@@ -1261,6 +1413,8 @@ setSubmitted(true);
 
                     </div>
 
+
+
                     <button
 
                       type="button"
@@ -1279,9 +1433,13 @@ setSubmitted(true);
 
                   </div>
 
+
+
                   <div className={styles.privacyContent}>
 
                     <h3>PRIVACY POLICY ACCEPTANCE</h3>
+
+
 
                     <p>
 
@@ -1292,6 +1450,8 @@ setSubmitted(true);
                       <strong>PRGEEQ GLOBAL SOLUTIONS PRIVATE LIMITED</strong> for the following:
 
                     </p>
+
+
 
                     <h4>1. ACKNOWLEDGMENT</h4>
 
@@ -1304,6 +1464,8 @@ setSubmitted(true);
                       <strong>PRGEEQ GLOBAL SOLUTIONS PRIVATE LIMITED</strong>.
 
                     </p>
+
+
 
                     <h4>2. DATA COLLECTION AND USAGE CONSENT</h4>
 
@@ -1326,6 +1488,8 @@ setSubmitted(true);
                       <li>Device and technical data</li>
 
                     </ul>
+
+
 
                     <h4>3. DATA COLLECTION AND USAGE CONSENT</h4>
 
@@ -1351,6 +1515,8 @@ setSubmitted(true);
 
                     </ul>
 
+
+
                     <h4>4. DATA SECURITY DISCLAIMER</h4>
 
                     <ul>
@@ -1368,6 +1534,8 @@ setSubmitted(true);
                       </li>
 
                     </ul>
+
+
 
                     <h4>5. PAYMENT AND FRAUD PREVENTION DISCLAIMER</h4>
 
@@ -1391,6 +1559,8 @@ setSubmitted(true);
 
                     </ul>
 
+
+
                     <h4>6. USER RIGHTS</h4>
 
                     <p>Subject to applicable laws, I understand I may:</p>
@@ -1405,6 +1575,8 @@ setSubmitted(true);
 
                     </ul>
 
+
+
                     <h4>7. THIRD-PARTY SERVICES</h4>
 
                     <p>
@@ -1414,6 +1586,8 @@ setSubmitted(true);
                       and the Company is not responsible for their independent practices.
 
                     </p>
+
+
 
                     <h4>8. CONSENT VALIDITY</h4>
 
@@ -1429,11 +1603,15 @@ setSubmitted(true);
 
                     </ul>
 
+
+
                     <p><strong>MANDATORY CONSENT ACTIONS (IMPLEMENTATION):</strong></p>
 
                     <p>I agree to the Privacy Policy</p>
 
                     <p>I consent to data processing as described</p>
+
+
 
                     <p><strong>OPTIONAL CONSENTS:</strong></p>
 
@@ -1441,15 +1619,19 @@ setSubmitted(true);
 
                     <p>I accept use of cookies and tracking technologies</p>
 
+
+
                     <p><strong>COMPANY DETAILS: PRGEEQ GLOBAL SOLUTIONS PRIVATE LIMITED</strong></p>
 
                     <p className={styles.privacyLastLine}>
 
-                      <strong>Email: contact@prgeeq.com</strong>
+                      <strong>Email: contact\@prgeeq.com</strong>
 
                     </p>
 
                   </div>
+
+
 
                   <div className={styles.privacyFooter}>
 
@@ -1480,6 +1662,8 @@ setSubmitted(true);
               </div>
 
             )}
+
+
 
             <button
 
@@ -1518,5 +1702,7 @@ setSubmitted(true);
   );
 
 };
+
+
 
 export default ContactUs;
