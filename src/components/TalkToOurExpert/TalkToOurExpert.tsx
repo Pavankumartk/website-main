@@ -1,4 +1,4 @@
-"use client";
+// "use client";
 
 
 
@@ -6,63 +6,63 @@
 
 
 
-import {
+// import {
 
 
 
-  useState,
+//   useState,
 
 
 
-  useRef,
+//   useRef,
 
 
 
-  useEffect,
+//   useEffect,
 
 
 
-  useMemo,
+//   useMemo,
 
 
 
-  type FormEvent,
+//   type FormEvent,
 
 
 
-  type ReactNode,
+//   type ReactNode,
 
 
 
-} from "react";
+// } from "react";
 
 
 
-import { createPortal } from "react-dom";
+// import { createPortal } from "react-dom";
 
 
 
-import { allCountries } from "country-telephone-data";
+// import { allCountries } from "country-telephone-data";
 
 
 
-import {
+// import {
 
 
 
-  isValidPhoneNumber,
+//   isValidPhoneNumber,
 
 
 
-  type CountryCode,
+//   type CountryCode,
 
 
 
-} from "libphonenumber-js";
+// } from "libphonenumber-js";
 
 
 
-import styles from "./TalkToOurExpert.module.css";
+// import styles from "./TalkToOurExpert.module.css";
 
 
 
@@ -70,23 +70,23 @@ import styles from "./TalkToOurExpert.module.css";
 
 
 
-interface RawCountry {
+// interface RawCountry {
 
 
 
-  name: string;
+//   name: string;
 
 
 
-  iso2: string;
+//   iso2: string;
 
 
 
-  dialCode: string;
+//   dialCode: string;
 
 
 
-}
+// }
 
 
 
@@ -94,23 +94,23 @@ interface RawCountry {
 
 
 
-interface TalkToOurExpertProps {
+// interface TalkToOurExpertProps {
 
 
 
-  isOpen: boolean;
+//   isOpen: boolean;
 
 
 
-  onClose: () => void;
+//   onClose: () => void;
 
 
 
-  onPlayClick?: () => void;
+//   onPlayClick?: () => void;
 
 
 
-}
+// }
 
 
 
@@ -118,39 +118,39 @@ interface TalkToOurExpertProps {
 
 
 
-interface FormState {
+// interface FormState {
 
 
 
-  fullName: string;
+//   fullName: string;
 
 
 
-  email: string;
+//   email: string;
 
 
 
-  countryIso2: string;
+//   countryIso2: string;
 
 
 
-  phoneNumber: string;
+//   phoneNumber: string;
 
 
 
-  interest: string;
+//   interest: string;
 
 
 
-  query: string;
+//   query: string;
 
 
 
-  consent: boolean;
+//   consent: boolean;
 
 
 
-}
+// }
 
 
 
@@ -158,35 +158,35 @@ interface FormState {
 
 
 
-interface TouchedState {
+// interface TouchedState {
 
 
 
-  fullName: boolean;
+//   fullName: boolean;
 
 
 
-  email: boolean;
+//   email: boolean;
 
 
 
-  phoneNumber: boolean;
+//   phoneNumber: boolean;
 
 
 
-  interest: boolean;
+//   interest: boolean;
 
 
 
-  query: boolean;
+//   query: boolean;
 
 
 
-  consent: boolean;
+//   consent: boolean;
 
 
 
-}
+// }
 
 
 
@@ -194,55 +194,55 @@ interface TouchedState {
 
 
 
-const INTEREST_OPTIONS = [
+// const INTEREST_OPTIONS = [
 
 
 
-  "LXP",
+//   "LXP",
 
 
 
-  "Content Management",
+//   "Content Management",
 
 
 
-  "Course Management",
+//   "Course Management",
 
 
 
-  "Assessments @ Analytics",
+//   "Assessments @ Analytics",
 
 
 
-  "Interactive Learning",
+//   "Interactive Learning",
 
 
 
-  "Gamification",
+//   "Gamification",
 
 
 
-  "Corporate L&D",
+//   "Corporate L&D",
 
 
 
-  "Higher Education",
+//   "Higher Education",
 
 
 
-  "Geenral  Enquiry",
+//   "Geenral  Enquiry",
 
 
 
-  "Custom Requirement",
+//   "Custom Requirement",
 
 
 
-  "Other",
+//   "Other",
 
 
 
-];
+// ];
 
 
 
@@ -250,7 +250,7 @@ const INTEREST_OPTIONS = [
 
 
 
-const NAME_PATTERN = /^[A-Za-z]+(?: [A-Za-z]+)*$/;
+// const NAME_PATTERN = /^[A-Za-z]+(?: [A-Za-z]+)*$/;
 
 
 
@@ -258,8 +258,8 @@ const NAME_PATTERN = /^[A-Za-z]+(?: [A-Za-z]+)*$/;
 
 
 
-const EMAIL_PATTERN =
-  /^[A-Za-z0-9.!#$%&'*+/=?^_`{|}~-]+@[A-Za-z0-9](?:[A-Za-z0-9-]{0,61}[A-Za-z0-9])?(?:\.[A-Za-z0-9](?:[A-Za-z0-9-]{0,61}[A-Za-z0-9])?)+$/;
+// const EMAIL_PATTERN =
+//   /^[A-Za-z0-9.!#$%&'*+/=?^_`{|}~-]+@[A-Za-z0-9](?:[A-Za-z0-9-]{0,61}[A-Za-z0-9])?(?:\.[A-Za-z0-9](?:[A-Za-z0-9-]{0,61}[A-Za-z0-9])?)+$/;
 
 
 
@@ -267,31 +267,31 @@ const EMAIL_PATTERN =
 
 
 
-const COMMON_EMAIL_DOMAINS: Record<string, string> = {
+// const COMMON_EMAIL_DOMAINS: Record<string, string> = {
 
 
 
-  gmail: "gmail.com",
+//   gmail: "gmail.com",
 
 
 
-  yahoo: "yahoo.com",
+//   yahoo: "yahoo.com",
 
 
 
-  outlook: "outlook.com",
+//   outlook: "outlook.com",
 
 
 
-  hotmail: "hotmail.com",
+//   hotmail: "hotmail.com",
 
 
 
-  icloud: "icloud.com",
+//   icloud: "icloud.com",
 
 
 
-};
+// };
 
 
 
@@ -299,11 +299,11 @@ const COMMON_EMAIL_DOMAINS: Record<string, string> = {
 
 
 
-function validateEmailAddress(value: string) {
+// function validateEmailAddress(value: string) {
 
 
 
-  const normalized = value.trim().toLowerCase();
+//   const normalized = value.trim().toLowerCase();
 
 
 
@@ -311,27 +311,27 @@ function validateEmailAddress(value: string) {
 
 
 
-  if (!EMAIL_PATTERN.test(normalized)) {
+//   if (!EMAIL_PATTERN.test(normalized)) {
 
 
 
-    return {
+//     return {
 
 
 
-      valid: false,
+//       valid: false,
 
 
 
-      message: "Please enter a valid email address.",
+//       message: "Please enter a valid email address.",
 
 
 
-    };
+//     };
 
 
 
-  }
+//   }
 
 
 
@@ -339,15 +339,15 @@ function validateEmailAddress(value: string) {
 
 
 
-  const [, domain = ""] = normalized.split("@");
+//   const [, domain = ""] = normalized.split("@");
 
 
 
-  const provider = domain.split(".")[0] ?? "";
+//   const provider = domain.split(".")[0] ?? "";
 
 
 
-  const requiredDomain = COMMON_EMAIL_DOMAINS[provider];
+//   const requiredDomain = COMMON_EMAIL_DOMAINS[provider];
 
 
 
@@ -355,27 +355,27 @@ function validateEmailAddress(value: string) {
 
 
 
-  if (requiredDomain && domain !== requiredDomain) {
+//   if (requiredDomain && domain !== requiredDomain) {
 
 
 
-    return {
+//     return {
 
 
 
-      valid: false,
+//       valid: false,
 
 
 
-      message: `Please enter the complete email address. Did you mean ${requiredDomain}?`,
+//       message: `Please enter the complete email address. Did you mean ${requiredDomain}?`,
 
 
 
-    };
+//     };
 
 
 
-  }
+//   }
 
 
 
@@ -383,23 +383,23 @@ function validateEmailAddress(value: string) {
 
 
 
-  return {
+//   return {
 
 
 
-    valid: true,
+//     valid: true,
 
 
 
-    message: "",
+//     message: "",
 
 
 
-  };
+//   };
 
 
 
-}
+// }
 
 
 
@@ -407,35 +407,35 @@ function validateEmailAddress(value: string) {
 
 
 
-/*
+// /*
 
 
 
- * Phone numbers are validated against the selected country.
+//  * Phone numbers are validated against the selected country.
 
 
 
- * libphonenumber-js supplies the country-specific numbering rules,
+//  * libphonenumber-js supplies the country-specific numbering rules,
 
 
 
- * including valid lengths and prefixes. Do not apply a global
+//  * including valid lengths and prefixes. Do not apply a global
 
 
 
- * 10-digit rule because countries use different numbering plans.
+//  * 10-digit rule because countries use different numbering plans.
 
 
 
- */
+//  */
 
 
 
-const MAX_PHONE_DIGITS = 15;
+// const MAX_PHONE_DIGITS = 15;
 
 
 
-const MAX_QUERY_LENGTH = 250;
+// const MAX_QUERY_LENGTH = 250;
 
 
 
@@ -443,7 +443,7 @@ const MAX_QUERY_LENGTH = 250;
 
 
 
-const VIDEO_SRC = "/videos/TalkToOurExpert.mp4";
+// const VIDEO_SRC = "/videos/TalkToOurExpert.mp4";
 
 
 
@@ -451,33 +451,33 @@ const VIDEO_SRC = "/videos/TalkToOurExpert.mp4";
 
 
 
-const getCountryFlagUrl = (iso2: string) =>
+// const getCountryFlagUrl = (iso2: string) =>
 
-  `https://flagcdn.com/24x18/${iso2.toLowerCase()}.png`;
+//   `https://flagcdn.com/24x18/${iso2.toLowerCase()}.png`;
 
 
 
-const COUNTRIES = (
+// const COUNTRIES = (
 
 
 
-  allCountries as unknown as RawCountry[]
+//   allCountries as unknown as RawCountry[]
 
 
 
-).filter(
+// ).filter(
 
 
 
-  (country, index, list) =>
+//   (country, index, list) =>
 
 
 
-    list.findIndex((entry) => entry.iso2 === country.iso2) === index
+//     list.findIndex((entry) => entry.iso2 === country.iso2) === index
 
 
 
-);
+// );
 
 
 
@@ -489,31 +489,31 @@ const COUNTRIES = (
 
 
 
-function IconBubble({ children }: { children: ReactNode }) {
+// function IconBubble({ children }: { children: ReactNode }) {
 
 
 
-  return (
+//   return (
 
 
 
-    <span className={styles["tte-icon-bubble"]}>
+//     <span className={styles["tte-icon-bubble"]}>
 
 
 
-      {children}
+//       {children}
 
 
 
-    </span>
+//     </span>
 
 
 
-  );
+//   );
 
 
 
-}
+// }
 
 
 
@@ -521,79 +521,79 @@ function IconBubble({ children }: { children: ReactNode }) {
 
 
 
-function UserIcon() {
+// function UserIcon() {
 
 
 
-  return (
+//   return (
 
 
 
-    <svg width="21" height="26" viewBox="0 0 21 26" fill="none">
+//     <svg width="21" height="26" viewBox="0 0 21 26" fill="none">
 
 
 
-      <g filter="url(#tteUserShadow)">
+//       <g filter="url(#tteUserShadow)">
 
 
 
-        <path
+//         <path
 
 
 
-          d="M14.6338 7.09509C14.6356 4.79391 12.7715 2.92696 10.4704 2.92515C8.16919 2.92334 6.30224 4.78736 6.30044 7.08854C6.29863 9.38971 8.16265 11.2567 10.4638 11.2585C12.765 11.2603 14.632 9.39625 14.6338 7.09509Z"
+//           d="M14.6338 7.09509C14.6356 4.79391 12.7715 2.92696 10.4704 2.92515C8.16919 2.92334 6.30224 4.78736 6.30044 7.08854C6.29863 9.38971 8.16265 11.2567 10.4638 11.2585C12.765 11.2603 14.632 9.39625 14.6338 7.09509Z"
 
 
 
-          stroke="#FFFFFF"
+//           stroke="#FFFFFF"
 
 
 
-          strokeWidth="1.25"
+//           strokeWidth="1.25"
 
 
 
-          strokeLinecap="round"
+//           strokeLinecap="round"
 
 
 
-          strokeLinejoin="round"
+//           strokeLinejoin="round"
 
 
 
-        />
+//         />
 
 
 
-        <path
+//         <path
 
 
 
-          d="M16.292 17.0964C16.2945 13.8747 13.6849 11.261 10.4632 11.2585C7.24156 11.256 4.62783 13.8656 4.6253 17.0872"
+//           d="M16.292 17.0964C16.2945 13.8747 13.6849 11.261 10.4632 11.2585C7.24156 11.256 4.62783 13.8656 4.6253 17.0872"
 
 
 
-          stroke="#2D4CC8"
+//           stroke="#2D4CC8"
 
 
 
-          strokeWidth="1.25"
+//           strokeWidth="1.25"
 
 
 
-          strokeLinecap="round"
+//           strokeLinecap="round"
 
 
 
-          strokeLinejoin="round"
+//           strokeLinejoin="round"
 
 
 
-        />
+//         />
 
 
 
-      </g>
+//       </g>
 
 
 
@@ -601,175 +601,175 @@ function UserIcon() {
 
 
 
-      <defs>
+//       <defs>
 
 
 
-        <filter
+//         <filter
 
 
 
-          id="tteUserShadow"
+//           id="tteUserShadow"
 
 
 
-          x="-3.54395"
+//           x="-3.54395"
 
 
 
-          y="0"
+//           y="0"
 
 
 
-          width="28.0156"
+//           width="28.0156"
 
 
 
-          height="28.0156"
+//           height="28.0156"
 
 
 
-          filterUnits="userSpaceOnUse"
+//           filterUnits="userSpaceOnUse"
 
 
 
-          colorInterpolationFilters="sRGB"
+//           colorInterpolationFilters="sRGB"
 
 
 
-        >
+//         >
 
 
 
-          <feFlood floodOpacity="0" result="tteUserBg" />
+//           <feFlood floodOpacity="0" result="tteUserBg" />
 
 
 
-          <feColorMatrix
+//           <feColorMatrix
 
 
 
-            in="SourceAlpha"
+//             in="SourceAlpha"
 
 
 
-            type="matrix"
+//             type="matrix"
 
 
 
-            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+//             values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
 
 
 
-            result="tteUserHardAlpha"
+//             result="tteUserHardAlpha"
 
 
 
-          />
+//           />
 
 
 
-          <feOffset dy="4" />
+//           <feOffset dy="4" />
 
 
 
-          <feGaussianBlur stdDeviation="2" />
+//           <feGaussianBlur stdDeviation="2" />
 
 
 
-          <feComposite
+//           <feComposite
 
 
 
-            in2="tteUserHardAlpha"
+//             in2="tteUserHardAlpha"
 
 
 
-            operator="out"
+//             operator="out"
 
 
 
-          />
+//           />
 
 
 
-          <feColorMatrix
+//           <feColorMatrix
 
 
 
-            type="matrix"
+//             type="matrix"
 
 
 
-            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"
+//             values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"
 
 
 
-          />
+//           />
 
 
 
-          <feBlend
+//           <feBlend
 
 
 
-            mode="normal"
+//             mode="normal"
 
 
 
-            in2="tteUserBg"
+//             in2="tteUserBg"
 
 
 
-            result="tteUserShadowBlend"
+//             result="tteUserShadowBlend"
 
 
 
-          />
+//           />
 
 
 
-          <feBlend
+//           <feBlend
 
 
 
-            mode="normal"
+//             mode="normal"
 
 
 
-            in="SourceGraphic"
+//             in="SourceGraphic"
 
 
 
-            in2="tteUserShadowBlend"
+//             in2="tteUserShadowBlend"
 
 
 
-            result="shape"
+//             result="shape"
 
 
 
-          />
+//           />
 
 
 
-        </filter>
+//         </filter>
 
 
 
-      </defs>
+//       </defs>
 
 
 
-    </svg>
+//     </svg>
 
 
 
-  );
+//   );
 
 
 
-}
+// }
 
 
 
@@ -777,43 +777,43 @@ function UserIcon() {
 
 
 
-function MailIcon() {
+// function MailIcon() {
 
 
 
-  return (
+//   return (
 
 
 
-    <svg width="26" height="26" viewBox="0 0 26 26" fill="none">
+//     <svg width="26" height="26" viewBox="0 0 26 26" fill="none">
 
 
 
-      <g filter="url(#tteMailShadow)">
+//       <g filter="url(#tteMailShadow)">
 
 
 
-        <path
+//         <path
 
 
 
-          d="M4.625 5L10.3858 8.26414C12.5097 9.4675 13.407 9.4675 15.5308 8.26414L21.2917 5"
+//           d="M4.625 5L10.3858 8.26414C12.5097 9.4675 13.407 9.4675 15.5308 8.26414L21.2917 5"
 
 
 
-          stroke="#2D4CC8"
+//           stroke="#2D4CC8"
 
 
 
-          strokeWidth="1.25"
+//           strokeWidth="1.25"
 
 
 
-          strokeLinejoin="round"
+//           strokeLinejoin="round"
 
 
 
-        />
+//         />
 
 
 
@@ -821,31 +821,31 @@ function MailIcon() {
 
 
 
-        <path
+//         <path
 
 
 
-          d="M4.63814 11.231C4.69262 13.7856 4.71986 15.0629 5.66247 16.0091C6.60507 16.9553 7.91694 16.9882 10.5407 17.0541C12.1577 17.0948 13.7589 17.0948 15.376 17.0541C17.9997 16.9882 19.3116 16.9553 20.2542 16.0091C21.1968 15.0629 21.2241 13.7856 21.2785 11.231C21.2961 10.4096 21.2961 9.59305 21.2785 8.77164C21.2241 6.21702 21.1968 4.93971 20.2542 3.99352C19.3116 3.04733 17.9997 3.01437 15.376 2.94844C13.7589 2.90781 12.1577 2.90781 10.5407 2.94844C7.91694 3.01435 6.60507 3.04731 5.66246 3.99351C4.71985 4.9397 4.69262 6.21701 4.63813 8.77164C4.62062 9.59305 4.62063 10.4096 4.63814 11.231Z"
+//           d="M4.63814 11.231C4.69262 13.7856 4.71986 15.0629 5.66247 16.0091C6.60507 16.9553 7.91694 16.9882 10.5407 17.0541C12.1577 17.0948 13.7589 17.0948 15.376 17.0541C17.9997 16.9882 19.3116 16.9553 20.2542 16.0091C21.1968 15.0629 21.2241 13.7856 21.2785 11.231C21.2961 10.4096 21.2961 9.59305 21.2785 8.77164C21.2241 6.21702 21.1968 4.93971 20.2542 3.99352C19.3116 3.04733 17.9997 3.01437 15.376 2.94844C13.7589 2.90781 12.1577 2.90781 10.5407 2.94844C7.91694 3.01435 6.60507 3.04731 5.66246 3.99351C4.71985 4.9397 4.69262 6.21701 4.63813 8.77164C4.62062 9.59305 4.62063 10.4096 4.63814 11.231Z"
 
 
 
-          stroke="#2D4CC8"
+//           stroke="#2D4CC8"
 
 
 
-          strokeWidth="1.25"
+//           strokeWidth="1.25"
 
 
 
-          strokeLinejoin="round"
+//           strokeLinejoin="round"
 
 
 
-        />
+//         />
 
 
 
-      </g>
+//       </g>
 
 
 
@@ -853,175 +853,175 @@ function MailIcon() {
 
 
 
-      <defs>
+//       <defs>
 
 
 
-        <filter
+//         <filter
 
 
 
-          id="tteMailShadow"
+//           id="tteMailShadow"
 
 
 
-          x="-1.04102"
+//           x="-1.04102"
 
 
 
-          y="0"
+//           y="0"
 
 
 
-          width="28"
+//           width="28"
 
 
 
-          height="28"
+//           height="28"
 
 
 
-          filterUnits="userSpaceOnUse"
+//           filterUnits="userSpaceOnUse"
 
 
 
-          colorInterpolationFilters="sRGB"
+//           colorInterpolationFilters="sRGB"
 
 
 
-        >
+//         >
 
 
 
-          <feFlood floodOpacity="0" result="tteMailBg" />
+//           <feFlood floodOpacity="0" result="tteMailBg" />
 
 
 
-          <feColorMatrix
+//           <feColorMatrix
 
 
 
-            in="SourceAlpha"
+//             in="SourceAlpha"
 
 
 
-            type="matrix"
+//             type="matrix"
 
 
 
-            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+//             values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
 
 
 
-            result="tteMailHardAlpha"
+//             result="tteMailHardAlpha"
 
 
 
-          />
+//           />
 
 
 
-          <feOffset dy="4" />
+//           <feOffset dy="4" />
 
 
 
-          <feGaussianBlur stdDeviation="2" />
+//           <feGaussianBlur stdDeviation="2" />
 
 
 
-          <feComposite
+//           <feComposite
 
 
 
-            in2="tteMailHardAlpha"
+//             in2="tteMailHardAlpha"
 
 
 
-            operator="out"
+//             operator="out"
 
 
 
-          />
+//           />
 
 
 
-          <feColorMatrix
+//           <feColorMatrix
 
 
 
-            type="matrix"
+//             type="matrix"
 
 
 
-            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"
+//             values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"
 
 
 
-          />
+//           />
 
 
 
-          <feBlend
+//           <feBlend
 
 
 
-            mode="normal"
+//             mode="normal"
 
 
 
-            in2="tteMailBg"
+//             in2="tteMailBg"
 
 
 
-            result="tteMailShadowBlend"
+//             result="tteMailShadowBlend"
 
 
 
-          />
+//           />
 
 
 
-          <feBlend
+//           <feBlend
 
 
 
-            mode="normal"
+//             mode="normal"
 
 
 
-            in="SourceGraphic"
+//             in="SourceGraphic"
 
 
 
-            in2="tteMailShadowBlend"
+//             in2="tteMailShadowBlend"
 
 
 
-            result="shape"
+//             result="shape"
 
 
 
-          />
+//           />
 
 
 
-        </filter>
+//         </filter>
 
 
 
-      </defs>
+//       </defs>
 
 
 
-    </svg>
+//     </svg>
 
 
 
-  );
+//   );
 
 
 
-}
+// }
 
 
 
@@ -1029,51 +1029,51 @@ function MailIcon() {
 
 
 
-function PhoneIcon() {
+// function PhoneIcon() {
 
 
 
-  return (
+//   return (
 
 
 
-    <svg width="21" height="21" viewBox="0 0 21 21" fill="none">
+//     <svg width="21" height="21" viewBox="0 0 21 21" fill="none">
 
 
 
-      <path
+//       <path
 
 
 
-        d="M7.64387 4.76618L7.30891 4.01093C7.0899 3.51712 6.98039 3.2702 6.81648 3.08118C6.61106 2.84429 6.34319 2.66991 6.04344 2.57794C5.80425 2.50454 5.53414 2.50433 4.99394 2.5039C4.20369 2.50328 3.80856 2.50297 3.47675 2.65462C3.08589 2.83325 2.73273 3.22153 2.59182 3.62751C2.4722 3.97216 2.50611 4.32647 2.57392 5.03508C3.29577 12.5777 7.42744 16.7159 14.9689 17.4496C15.6774 17.5185 16.0317 17.553 16.3765 17.4339C16.7828 17.2936 17.1716 16.9411 17.3509 16.5505C17.503 16.219 17.5033 15.8238 17.5039 15.0335C17.5043 14.4934 17.5045 14.2233 17.4315 13.984C17.34 13.6841 17.1661 13.4159 16.9295 13.2101C16.7408 13.0459 16.494 12.936 16.0005 12.7162L15.2458 12.3801C14.7114 12.1421 14.4442 12.023 14.1726 11.997C13.9126 11.972 13.6505 12.0083 13.4071 12.1029C13.1528 12.2017 12.928 12.3888 12.4782 12.763C12.0305 13.1354 11.8067 13.3216 11.5333 13.4213C11.2909 13.5097 10.9706 13.5422 10.7154 13.5044C10.4275 13.4617 10.2072 13.3437 9.76648 13.1078C8.39539 12.3736 7.63954 11.6166 6.90757 10.2444C6.67231 9.80327 6.55468 9.58276 6.51248 9.29481C6.47507 9.03962 6.50811 8.71931 6.59682 8.47705C6.69688 8.20381 6.88347 7.98027 7.25663 7.53318C7.63151 7.08404 7.81896 6.85947 7.91816 6.60529C8.0131 6.36206 8.04979 6.09997 8.02527 5.84002C7.99964 5.56837 7.88105 5.30097 7.64387 4.76618Z"
+//         d="M7.64387 4.76618L7.30891 4.01093C7.0899 3.51712 6.98039 3.2702 6.81648 3.08118C6.61106 2.84429 6.34319 2.66991 6.04344 2.57794C5.80425 2.50454 5.53414 2.50433 4.99394 2.5039C4.20369 2.50328 3.80856 2.50297 3.47675 2.65462C3.08589 2.83325 2.73273 3.22153 2.59182 3.62751C2.4722 3.97216 2.50611 4.32647 2.57392 5.03508C3.29577 12.5777 7.42744 16.7159 14.9689 17.4496C15.6774 17.5185 16.0317 17.553 16.3765 17.4339C16.7828 17.2936 17.1716 16.9411 17.3509 16.5505C17.503 16.219 17.5033 15.8238 17.5039 15.0335C17.5043 14.4934 17.5045 14.2233 17.4315 13.984C17.34 13.6841 17.1661 13.4159 16.9295 13.2101C16.7408 13.0459 16.494 12.936 16.0005 12.7162L15.2458 12.3801C14.7114 12.1421 14.4442 12.023 14.1726 11.997C13.9126 11.972 13.6505 12.0083 13.4071 12.1029C13.1528 12.2017 12.928 12.3888 12.4782 12.763C12.0305 13.1354 11.8067 13.3216 11.5333 13.4213C11.2909 13.5097 10.9706 13.5422 10.7154 13.5044C10.4275 13.4617 10.2072 13.3437 9.76648 13.1078C8.39539 12.3736 7.63954 11.6166 6.90757 10.2444C6.67231 9.80327 6.55468 9.58276 6.51248 9.29481C6.47507 9.03962 6.50811 8.71931 6.59682 8.47705C6.69688 8.20381 6.88347 7.98027 7.25663 7.53318C7.63151 7.08404 7.81896 6.85947 7.91816 6.60529C8.0131 6.36206 8.04979 6.09997 8.02527 5.84002C7.99964 5.56837 7.88105 5.30097 7.64387 4.76618Z"
 
 
 
-        stroke="#2D4CC8"
+//         stroke="#2D4CC8"
 
 
 
-        strokeWidth="1.25"
+//         strokeWidth="1.25"
 
 
 
-        strokeLinecap="round"
+//         strokeLinecap="round"
 
 
 
-      />
+//       />
 
 
 
-    </svg>
+//     </svg>
 
 
 
-  );
+//   );
 
 
 
-}
+// }
 
 
 
@@ -1081,195 +1081,195 @@ function PhoneIcon() {
 
 
 
-function ClipboardIcon() {
+// function ClipboardIcon() {
 
 
 
-  return (
+//   return (
 
 
 
-    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+//     <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
 
 
 
-      <path
+//       <path
 
 
 
-        d="M10 9.16602H13.3333"
+//         d="M10 9.16602H13.3333"
 
 
 
-        stroke="#2D4CC8"
+//         stroke="#2D4CC8"
 
 
 
-        strokeWidth="1.25"
+//         strokeWidth="1.25"
 
 
 
-        strokeLinecap="round"
+//         strokeLinecap="round"
 
 
 
-        strokeLinejoin="round"
+//         strokeLinejoin="round"
 
 
 
-      />
+//       />
 
 
 
-      <path
+//       <path
 
 
 
-        d="M10 13.334H13.3333"
+//         d="M10 13.334H13.3333"
 
 
 
-        stroke="#2D4CC8"
+//         stroke="#2D4CC8"
 
 
 
-        strokeWidth="1.25"
+//         strokeWidth="1.25"
 
 
 
-        strokeLinecap="round"
+//         strokeLinecap="round"
 
 
 
-        strokeLinejoin="round"
+//         strokeLinejoin="round"
 
 
 
-      />
+//       />
 
 
 
-      <path
+//       <path
 
 
 
-        d="M6.66699 9.16602H6.67533"
+//         d="M6.66699 9.16602H6.67533"
 
 
 
-        stroke="#2D4CC8"
+//         stroke="#2D4CC8"
 
 
 
-        strokeWidth="1.25"
+//         strokeWidth="1.25"
 
 
 
-        strokeLinecap="round"
+//         strokeLinecap="round"
 
 
 
-        strokeLinejoin="round"
+//         strokeLinejoin="round"
 
 
 
-      />
+//       />
 
 
 
-      <path
+//       <path
 
 
 
-        d="M6.66699 13.334H6.67533"
+//         d="M6.66699 13.334H6.67533"
 
 
 
-        stroke="#2D4CC8"
+//         stroke="#2D4CC8"
 
 
 
-        strokeWidth="1.25"
+//         strokeWidth="1.25"
 
 
 
-        strokeLinecap="round"
+//         strokeLinecap="round"
 
 
 
-        strokeLinejoin="round"
+//         strokeLinejoin="round"
 
 
 
-      />
+//       />
 
 
 
-      <path
+//       <path
 
 
 
-        d="M12.0837 1.66602H7.91699C7.22663 1.66602 6.66699 2.22566 6.66699 2.91602C6.66699 3.60637 7.22663 4.16602 7.91699 4.16602H12.0837C12.774 4.16602 13.3337 3.60637 13.3337 2.91602C13.3337 2.22566 12.774 1.66602 12.0837 1.66602Z"
+//         d="M12.0837 1.66602H7.91699C7.22663 1.66602 6.66699 2.22566 6.66699 2.91602C6.66699 3.60637 7.22663 4.16602 7.91699 4.16602H12.0837C12.774 4.16602 13.3337 3.60637 13.3337 2.91602C13.3337 2.22566 12.774 1.66602 12.0837 1.66602Z"
 
 
 
-        stroke="#2D4CC8"
+//         stroke="#2D4CC8"
 
 
 
-        strokeWidth="1.25"
+//         strokeWidth="1.25"
 
 
 
-        strokeLinecap="round"
+//         strokeLinecap="round"
 
 
 
-        strokeLinejoin="round"
+//         strokeLinejoin="round"
 
 
 
-      />
+//       />
 
 
 
-      <path
+//       <path
 
 
 
-        d="M13.333 2.91602C14.6276 2.95502 15.3997 3.09941 15.9341 3.63382C16.6663 4.36605 16.6663 5.54455 16.6663 7.90154V13.3323C16.6663 15.6893 16.6663 16.8678 15.9341 17.6C15.2018 18.3323 14.0233 18.3323 11.6663 18.3323H8.33301C5.97599 18.3323 4.79748 18.3323 4.06525 17.6C3.33302 16.8678 3.33302 15.6893 3.33301 13.3323L3.33302 7.90159C3.33302 5.54456 3.33301 4.36605 4.06524 3.63382C4.59965 3.09941 5.37177 2.95502 6.66626 2.91602"
+//         d="M13.333 2.91602C14.6276 2.95502 15.3997 3.09941 15.9341 3.63382C16.6663 4.36605 16.6663 5.54455 16.6663 7.90154V13.3323C16.6663 15.6893 16.6663 16.8678 15.9341 17.6C15.2018 18.3323 14.0233 18.3323 11.6663 18.3323H8.33301C5.97599 18.3323 4.79748 18.3323 4.06525 17.6C3.33302 16.8678 3.33302 15.6893 3.33301 13.3323L3.33302 7.90159C3.33302 5.54456 3.33301 4.36605 4.06524 3.63382C4.59965 3.09941 5.37177 2.95502 6.66626 2.91602"
 
 
 
-        stroke="#2D4CC8"
+//         stroke="#2D4CC8"
 
 
 
-        strokeWidth="1.25"
+//         strokeWidth="1.25"
 
 
 
-        strokeLinecap="round"
+//         strokeLinecap="round"
 
 
 
-        strokeLinejoin="round"
+//         strokeLinejoin="round"
 
 
 
-      />
+//       />
 
 
 
-    </svg>
+//     </svg>
 
 
 
-  );
+//   );
 
 
 
-}
+// }
 
 
 
@@ -1277,87 +1277,87 @@ function ClipboardIcon() {
 
 
 
-function ArrowDownIcon({ open }: { open?: boolean }) {
+// function ArrowDownIcon({ open }: { open?: boolean }) {
 
 
 
-  return (
+//   return (
 
 
 
-    <svg
+//     <svg
 
 
 
-      width="12"
+//       width="12"
 
 
 
-      height="7"
+//       height="7"
 
 
 
-      viewBox="0 0 12 7"
+//       viewBox="0 0 12 7"
 
 
 
-      fill="none"
+//       fill="none"
 
 
 
-      className={`${styles["tte-chevron"]}${
+//       className={`${styles["tte-chevron"]}${
 
 
 
-        open ? ` ${styles["tte-chevron-open"]}` : ""
+//         open ? ` ${styles["tte-chevron-open"]}` : ""
 
 
 
-      }`}
+//       }`}
 
 
 
-    >
+//     >
 
 
 
-      <path
+//       <path
 
 
 
-        d="M10.625 0.625041C10.625 0.625041 6.94258 5.625 5.625 5.625C4.30733 5.625 0.625 0.625 0.625 0.625"
+//         d="M10.625 0.625041C10.625 0.625041 6.94258 5.625 5.625 5.625C4.30733 5.625 0.625 0.625 0.625 0.625"
 
 
 
-        stroke="#141B34"
+//         stroke="#141B34"
 
 
 
-        strokeWidth="1.25"
+//         strokeWidth="1.25"
 
 
 
-        strokeLinecap="round"
+//         strokeLinecap="round"
 
 
 
-        strokeLinejoin="round"
+//         strokeLinejoin="round"
 
 
 
-      />
+//       />
 
 
 
-    </svg>
+//     </svg>
 
 
 
-  );
+//   );
 
 
 
-}
+// }
 
 
 
@@ -1369,99 +1369,99 @@ function ArrowDownIcon({ open }: { open?: boolean }) {
 
 
 
-function HeadsetIcon() {
+// function HeadsetIcon() {
 
 
 
-  return (
+//   return (
 
 
 
-    <svg
+//     <svg
 
 
 
-      width="24"
+//       width="24"
 
 
 
-      height="24"
+//       height="24"
 
 
 
-      viewBox="0 0 24 24"
+//       viewBox="0 0 24 24"
 
 
 
-      fill="none"
+//       fill="none"
 
 
 
-      aria-hidden="true"
+//       aria-hidden="true"
 
 
 
-      focusable="false"
+//       focusable="false"
 
 
 
-    >
+//     >
 
 
 
-      <defs>
+//       <defs>
 
 
 
-        <linearGradient
+//         <linearGradient
 
 
 
-          id="tteHeadsetGradient"
+//           id="tteHeadsetGradient"
 
 
 
-          x1="3"
+//           x1="3"
 
 
 
-          y1="4"
+//           y1="4"
 
 
 
-          x2="21"
+//           x2="21"
 
 
 
-          y2="20"
+//           y2="20"
 
 
 
-          gradientUnits="userSpaceOnUse"
+//           gradientUnits="userSpaceOnUse"
 
 
 
-        >
+//         >
 
 
 
-          <stop offset="0%" stopColor="#2D4CC8" />
+//           <stop offset="0%" stopColor="#2D4CC8" />
 
 
 
-          <stop offset="55%" stopColor="#5A42BD" />
+//           <stop offset="55%" stopColor="#5A42BD" />
 
 
 
-          <stop offset="100%" stopColor="#B22686" />
+//           <stop offset="100%" stopColor="#B22686" />
 
 
 
-        </linearGradient>
+//         </linearGradient>
 
 
 
-      </defs>
+//       </defs>
 
 
 
@@ -1469,123 +1469,123 @@ function HeadsetIcon() {
 
 
 
-      <path
+//       <path
 
 
 
-        d="M4 13V11C4 6.582 7.582 3 12 3C16.418 3 20 6.582 20 11V13"
+//         d="M4 13V11C4 6.582 7.582 3 12 3C16.418 3 20 6.582 20 11V13"
 
 
 
-        stroke="url(#tteHeadsetGradient)"
+//         stroke="url(#tteHeadsetGradient)"
 
 
 
-        strokeWidth="1.8"
+//         strokeWidth="1.8"
 
 
 
-        strokeLinecap="round"
+//         strokeLinecap="round"
 
 
 
-        strokeLinejoin="round"
+//         strokeLinejoin="round"
 
 
 
-      />
+//       />
 
 
 
-      <path
+//       <path
 
 
 
-        d="M4 12.5H5.25C6.216 12.5 7 13.284 7 14.25V17.75C7 18.716 6.216 19.5 5.25 19.5H4.75C3.784 19.5 3 18.716 3 17.75V13.5C3 12.948 3.448 12.5 4 12.5Z"
+//         d="M4 12.5H5.25C6.216 12.5 7 13.284 7 14.25V17.75C7 18.716 6.216 19.5 5.25 19.5H4.75C3.784 19.5 3 18.716 3 17.75V13.5C3 12.948 3.448 12.5 4 12.5Z"
 
 
 
-        stroke="url(#tteHeadsetGradient)"
+//         stroke="url(#tteHeadsetGradient)"
 
 
 
-        strokeWidth="1.8"
+//         strokeWidth="1.8"
 
 
 
-        strokeLinecap="round"
+//         strokeLinecap="round"
 
 
 
-        strokeLinejoin="round"
+//         strokeLinejoin="round"
 
 
 
-      />
+//       />
 
 
 
-      <path
+//       <path
 
 
 
-        d="M20 12.5H18.75C17.784 12.5 17 13.284 17 14.25V17.75C17 18.716 17.784 19.5 18.75 19.5H19.25C20.216 19.5 21 18.716 21 17.75V13.5C21 12.948 20.552 12.5 20 12.5Z"
+//         d="M20 12.5H18.75C17.784 12.5 17 13.284 17 14.25V17.75C17 18.716 17.784 19.5 18.75 19.5H19.25C20.216 19.5 21 18.716 21 17.75V13.5C21 12.948 20.552 12.5 20 12.5Z"
 
 
 
-        stroke="url(#tteHeadsetGradient)"
+//         stroke="url(#tteHeadsetGradient)"
 
 
 
-        strokeWidth="1.8"
+//         strokeWidth="1.8"
 
 
 
-        strokeLinecap="round"
+//         strokeLinecap="round"
 
 
 
-        strokeLinejoin="round"
+//         strokeLinejoin="round"
 
 
 
-      />
+//       />
 
 
 
-      <path
+//       <path
 
 
 
-        d="M17 19.5C16.4 21 14.9 21 13.5 21"
+//         d="M17 19.5C16.4 21 14.9 21 13.5 21"
 
 
 
-        stroke="url(#tteHeadsetGradient)"
+//         stroke="url(#tteHeadsetGradient)"
 
 
 
-        strokeWidth="1.8"
+//         strokeWidth="1.8"
 
 
 
-        strokeLinecap="round"
+//         strokeLinecap="round"
 
 
 
-      />
+//       />
 
 
 
-    </svg>
+//     </svg>
 
 
 
-  );
+//   );
 
 
 
-}
+// }
 
 
 
@@ -1593,223 +1593,223 @@ function HeadsetIcon() {
 
 
 
-function BotIcon() {
+// function BotIcon() {
 
 
 
-  return (
+//   return (
 
 
 
-    <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+//     <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
 
 
 
-      <path
+//       <path
 
 
 
-        d="M15.167 8.16602H12.8337C9.55659 8.16602 7.91804 8.16602 6.741 8.95249C6.23145 9.29297 5.79395 9.73047 5.45347 10.24C4.66699 11.4171 4.66699 13.0556 4.66699 16.3327C4.66699 19.6097 4.66699 21.2483 5.45347 22.4254C5.79395 22.9348 6.23145 23.3723 6.741 23.7129C7.91804 24.4993 9.55659 24.4994 12.8337 24.4994H15.167C18.444 24.4994 20.0826 24.4993 21.2597 23.7129C21.7692 23.3723 22.2067 22.9348 22.5472 22.4254C23.3337 21.2483 23.3337 19.6097 23.3337 16.3327C23.3337 13.0556 23.3337 11.4171 22.5472 10.24C22.2067 9.73047 21.7692 9.29297 21.2597 8.95249C20.0826 8.16602 18.444 8.16602 15.167 8.16602Z"
+//         d="M15.167 8.16602H12.8337C9.55659 8.16602 7.91804 8.16602 6.741 8.95249C6.23145 9.29297 5.79395 9.73047 5.45347 10.24C4.66699 11.4171 4.66699 13.0556 4.66699 16.3327C4.66699 19.6097 4.66699 21.2483 5.45347 22.4254C5.79395 22.9348 6.23145 23.3723 6.741 23.7129C7.91804 24.4993 9.55659 24.4994 12.8337 24.4994H15.167C18.444 24.4994 20.0826 24.4993 21.2597 23.7129C21.7692 23.3723 22.2067 22.9348 22.5472 22.4254C23.3337 21.2483 23.3337 19.6097 23.3337 16.3327C23.3337 13.0556 23.3337 11.4171 22.5472 10.24C22.2067 9.73047 21.7692 9.29297 21.2597 8.95249C20.0826 8.16602 18.444 8.16602 15.167 8.16602Z"
 
 
 
-        stroke="#2D4CC8"
+//         stroke="#2D4CC8"
 
 
 
-        strokeWidth="1.75"
+//         strokeWidth="1.75"
 
 
 
-        strokeLinecap="round"
+//         strokeLinecap="round"
 
 
 
-        strokeLinejoin="round"
+//         strokeLinejoin="round"
 
 
 
-      />
+//       />
 
 
 
-      <path
+//       <path
 
 
 
-        d="M4.66634 16.334H2.33301"
+//         d="M4.66634 16.334H2.33301"
 
 
 
-        stroke="#2D4CC8"
+//         stroke="#2D4CC8"
 
 
 
-        strokeWidth="1.75"
+//         strokeWidth="1.75"
 
 
 
-        strokeLinecap="round"
+//         strokeLinecap="round"
 
 
 
-        strokeLinejoin="round"
+//         strokeLinejoin="round"
 
 
 
-      />
+//       />
 
 
 
-      <path
+//       <path
 
 
 
-        d="M11.667 19.834H16.3337"
+//         d="M11.667 19.834H16.3337"
 
 
 
-        stroke="#2D4CC8"
+//         stroke="#2D4CC8"
 
 
 
-        strokeWidth="1.75"
+//         strokeWidth="1.75"
 
 
 
-        strokeLinecap="round"
+//         strokeLinecap="round"
 
 
 
-        strokeLinejoin="round"
+//         strokeLinejoin="round"
 
 
 
-      />
+//       />
 
 
 
-      <path
+//       <path
 
 
 
-        d="M25.6663 16.334H23.333"
+//         d="M25.6663 16.334H23.333"
 
 
 
-        stroke="#2D4CC8"
+//         stroke="#2D4CC8"
 
 
 
-        strokeWidth="1.75"
+//         strokeWidth="1.75"
 
 
 
-        strokeLinecap="round"
+//         strokeLinecap="round"
 
 
 
-        strokeLinejoin="round"
+//         strokeLinejoin="round"
 
 
 
-      />
+//       />
 
 
 
-      <path
+//       <path
 
 
 
-        d="M17.5 12.834V15.1673"
+//         d="M17.5 12.834V15.1673"
 
 
 
-        stroke="#2D4CC8"
+//         stroke="#2D4CC8"
 
 
 
-        strokeWidth="1.75"
+//         strokeWidth="1.75"
 
 
 
-        strokeLinecap="round"
+//         strokeLinecap="round"
 
 
 
-        strokeLinejoin="round"
+//         strokeLinejoin="round"
 
 
 
-      />
+//       />
 
 
 
-      <path
+//       <path
 
 
 
-        d="M10.5 12.834V15.1673"
+//         d="M10.5 12.834V15.1673"
 
 
 
-        stroke="#2D4CC8"
+//         stroke="#2D4CC8"
 
 
 
-        strokeWidth="1.75"
+//         strokeWidth="1.75"
 
 
 
-        strokeLinecap="round"
+//         strokeLinecap="round"
 
 
 
-        strokeLinejoin="round"
+//         strokeLinejoin="round"
 
 
 
-      />
+//       />
 
 
 
-      <path
+//       <path
 
 
 
-        d="M13.9997 8.16667C13.9997 5.96678 13.9997 4.86683 13.3162 4.18342C12.6328 3.5 11.5329 3.5 9.33301 3.5"
+//         d="M13.9997 8.16667C13.9997 5.96678 13.9997 4.86683 13.3162 4.18342C12.6328 3.5 11.5329 3.5 9.33301 3.5"
 
 
 
-        stroke="#2D4CC8"
+//         stroke="#2D4CC8"
 
 
 
-        strokeWidth="1.75"
+//         strokeWidth="1.75"
 
 
 
-        strokeLinecap="round"
+//         strokeLinecap="round"
 
 
 
-        strokeLinejoin="round"
+//         strokeLinejoin="round"
 
 
 
-      />
+//       />
 
 
 
-    </svg>
+//     </svg>
 
 
 
-  );
+//   );
 
 
 
-}
+// }
 
 
 
@@ -1817,51 +1817,51 @@ function BotIcon() {
 
 
 
-function ResizeIcon() {
+// function ResizeIcon() {
 
 
 
-  return (
+//   return (
 
 
 
-    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+//     <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
 
 
 
-      <path
+//       <path
 
 
 
-        d="M20 4L4 20M20 11L11 20M20 18L18 20"
+//         d="M20 4L4 20M20 11L11 20M20 18L18 20"
 
 
 
-        stroke="#2F3547"
+//         stroke="#2F3547"
 
 
 
-        strokeWidth="1.5"
+//         strokeWidth="1.5"
 
 
 
-        strokeLinecap="round"
+//         strokeLinecap="round"
 
 
 
-      />
+//       />
 
 
 
-    </svg>
+//     </svg>
 
 
 
-  );
+//   );
 
 
 
-}
+// }
 
 
 
@@ -1869,87 +1869,87 @@ function ResizeIcon() {
 
 
 
-function RadioCheckedIcon() {
+// function RadioCheckedIcon() {
 
 
 
-  return (
+//   return (
 
 
 
-    <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+//     <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
 
 
 
-      <circle
+//       <circle
 
 
 
-        cx="8"
+//         cx="8"
 
 
 
-        cy="8"
+//         cy="8"
 
 
 
-        r="7.3"
+//         r="7.3"
 
 
 
-        fill="#2D4CC8"
+//         fill="#2D4CC8"
 
 
 
-        stroke="#2D4CC8"
+//         stroke="#2D4CC8"
 
 
 
-        strokeWidth="1.5"
+//         strokeWidth="1.5"
 
 
 
-      />
+//       />
 
 
 
-      <path
+//       <path
 
 
 
-        d="M5.3 8.2L7.1 10L10.7 6.2"
+//         d="M5.3 8.2L7.1 10L10.7 6.2"
 
 
 
-        stroke="#FFFFFF"
+//         stroke="#FFFFFF"
 
 
 
-        strokeWidth="1.5"
+//         strokeWidth="1.5"
 
 
 
-        strokeLinecap="round"
+//         strokeLinecap="round"
 
 
 
-        strokeLinejoin="round"
+//         strokeLinejoin="round"
 
 
 
-      />
+//       />
 
 
 
-    </svg>
+//     </svg>
 
 
 
-  );
+//   );
 
 
 
-}
+// }
 
 
 
@@ -1957,55 +1957,55 @@ function RadioCheckedIcon() {
 
 
 
-function RadioEmptyIcon() {
+// function RadioEmptyIcon() {
 
 
 
-  return (
+//   return (
 
 
 
-    <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+//     <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
 
 
 
-      <circle
+//       <circle
 
 
 
-        cx="8"
+//         cx="8"
 
 
 
-        cy="8"
+//         cy="8"
 
 
 
-        r="6.7"
+//         r="6.7"
 
 
 
-        stroke="rgba(49, 52, 75, 0.2)"
+//         stroke="rgba(49, 52, 75, 0.2)"
 
 
 
-        strokeWidth="1.5"
+//         strokeWidth="1.5"
 
 
 
-      />
+//       />
 
 
 
-    </svg>
+//     </svg>
 
 
 
-  );
+//   );
 
 
 
-}
+// }
 
 
 
@@ -2013,79 +2013,79 @@ function RadioEmptyIcon() {
 
 
 
-function CloseIcon() {
+// function CloseIcon() {
 
 
 
-  return (
+//   return (
 
 
 
-    <svg
+//     <svg
 
 
 
-      width="20"
+//       width="20"
 
 
 
-      height="20"
+//       height="20"
 
 
 
-      viewBox="0 0 24 24"
+//       viewBox="0 0 24 24"
 
 
 
-      fill="none"
+//       fill="none"
 
 
 
-      aria-hidden="true"
+//       aria-hidden="true"
 
 
 
-      focusable="false"
+//       focusable="false"
 
 
 
-    >
+//     >
 
 
 
-      <path
+//       <path
 
 
 
-        d="M6 6L18 18M18 6L6 18"
+//         d="M6 6L18 18M18 6L6 18"
 
 
 
-        stroke="#31344B"
+//         stroke="#31344B"
 
 
 
-        strokeWidth="2"
+//         strokeWidth="2"
 
 
 
-        strokeLinecap="round"
+//         strokeLinecap="round"
 
 
 
-      />
+//       />
 
 
 
-    </svg>
+//     </svg>
 
 
 
-  );
+//   );
 
 
 
-}
+// }
 
 
 
@@ -2093,35 +2093,35 @@ function CloseIcon() {
 
 
 
-export default function TalkToOurExpert({
+// export default function TalkToOurExpert({
 
 
 
-  isOpen,
+//   isOpen,
 
 
 
-  onClose,
+//   onClose,
 
 
 
-}: TalkToOurExpertProps) {
+// }: TalkToOurExpertProps) {
 
 
 
-  const dialogRef = useRef<HTMLDivElement | null>(null);
+//   const dialogRef = useRef<HTMLDivElement | null>(null);
 
 
 
-  const previousActiveElement = useRef<HTMLElement | null>(null);
+//   const previousActiveElement = useRef<HTMLElement | null>(null);
 
 
 
-  const countryDropdownRef = useRef<HTMLDivElement | null>(null);
+//   const countryDropdownRef = useRef<HTMLDivElement | null>(null);
 
 
 
-  const interestDropdownRef = useRef<HTMLDivElement | null>(null);
+//   const interestDropdownRef = useRef<HTMLDivElement | null>(null);
 
 
 
@@ -2129,39 +2129,39 @@ export default function TalkToOurExpert({
 
 
 
-  const [formData, setFormData] = useState<FormState>({
+//   const [formData, setFormData] = useState<FormState>({
 
 
 
-    fullName: "",
+//     fullName: "",
 
 
 
-    email: "",
+//     email: "",
 
 
 
-    countryIso2: "in",
+//     countryIso2: "in",
 
 
 
-    phoneNumber: "",
+//     phoneNumber: "",
 
 
 
-    interest: "LXP",
+//     interest: "LXP",
 
 
 
-    query: "",
+//     query: "",
 
 
 
-    consent: false,
+//     consent: false,
 
 
 
-  });
+//   });
 
 
 
@@ -2169,35 +2169,35 @@ export default function TalkToOurExpert({
 
 
 
-  const [touched, setTouched] = useState<TouchedState>({
+//   const [touched, setTouched] = useState<TouchedState>({
 
 
 
-    fullName: false,
+//     fullName: false,
 
 
 
-    email: false,
+//     email: false,
 
 
 
-    phoneNumber: false,
+//     phoneNumber: false,
 
 
 
-    interest: false,
+//     interest: false,
 
 
 
-    query: false,
+//     query: false,
 
 
 
-    consent: false,
+//     consent: false,
 
 
 
-  });
+//   });
 
 
 
@@ -2205,23 +2205,23 @@ export default function TalkToOurExpert({
 
 
 
-  const [countrySearch, setCountrySearch] = useState("");
+//   const [countrySearch, setCountrySearch] = useState("");
 
 
 
-  const [isCountryOpen, setIsCountryOpen] = useState(false);
+//   const [isCountryOpen, setIsCountryOpen] = useState(false);
 
 
 
-  const [isInterestOpen, setIsInterestOpen] = useState(false);
+//   const [isInterestOpen, setIsInterestOpen] = useState(false);
 
 
 
-  const [isPrivacyOpen, setIsPrivacyOpen] = useState(false);
+//   const [isPrivacyOpen, setIsPrivacyOpen] = useState(false);
 
 
 
-  const [submitted, setSubmitted] = useState(false);
+//   const [submitted, setSubmitted] = useState(false);
 
 
 
@@ -2229,47 +2229,47 @@ export default function TalkToOurExpert({
 
 
 
-  useEffect(() => {
+//   useEffect(() => {
 
 
 
-    if (!isOpen) {
+//     if (!isOpen) {
 
 
 
-      setFormData({
+//       setFormData({
 
 
 
-        fullName: "",
+//         fullName: "",
 
 
 
-        email: "",
+//         email: "",
 
 
 
-        countryIso2: "in",
+//         countryIso2: "in",
 
 
 
-        phoneNumber: "",
+//         phoneNumber: "",
 
 
 
-        interest: "LXP",
+//         interest: "LXP",
 
 
 
-        query: "",
+//         query: "",
 
 
 
-        consent: false,
+//         consent: false,
 
 
 
-      });
+//       });
 
 
 
@@ -2277,35 +2277,35 @@ export default function TalkToOurExpert({
 
 
 
-      setTouched({
+//       setTouched({
 
 
 
-        fullName: false,
+//         fullName: false,
 
 
 
-        email: false,
+//         email: false,
 
 
 
-        phoneNumber: false,
+//         phoneNumber: false,
 
 
 
-        interest: false,
+//         interest: false,
 
 
 
-        query: false,
+//         query: false,
 
 
 
-        consent: false,
+//         consent: false,
 
 
 
-      });
+//       });
 
 
 
@@ -2313,23 +2313,23 @@ export default function TalkToOurExpert({
 
 
 
-      setSubmitted(false);
+//       setSubmitted(false);
 
 
 
-      setCountrySearch("");
+//       setCountrySearch("");
 
 
 
-      setIsCountryOpen(false);
+//       setIsCountryOpen(false);
 
 
 
-      setIsInterestOpen(false);
+//       setIsInterestOpen(false);
 
 
 
-      setIsPrivacyOpen(false);
+//       setIsPrivacyOpen(false);
 
 
 
@@ -2337,11 +2337,11 @@ export default function TalkToOurExpert({
 
 
 
-      return;
+//       return;
 
 
 
-    }
+//     }
 
 
 
@@ -2349,11 +2349,11 @@ export default function TalkToOurExpert({
 
 
 
-    previousActiveElement.current =
+//     previousActiveElement.current =
 
 
 
-      document.activeElement as HTMLElement | null;
+//       document.activeElement as HTMLElement | null;
 
 
 
@@ -2361,7 +2361,7 @@ export default function TalkToOurExpert({
 
 
 
-    const previousOverflow = document.body.style.overflow;
+//     const previousOverflow = document.body.style.overflow;
 
 
 
@@ -2369,11 +2369,11 @@ export default function TalkToOurExpert({
 
 
 
-    document.body.style.overflow = "hidden";
+//     document.body.style.overflow = "hidden";
 
 
 
-    document.body.classList.add("modal-open");
+//     document.body.classList.add("modal-open");
 
 
 
@@ -2381,23 +2381,23 @@ export default function TalkToOurExpert({
 
 
 
-    const handleKeyDown = (event: KeyboardEvent) => {
+//     const handleKeyDown = (event: KeyboardEvent) => {
 
 
 
-      if (event.key === "Escape") {
+//       if (event.key === "Escape") {
 
 
 
-        onClose();
+//         onClose();
 
 
 
-      }
+//       }
 
 
 
-    };
+//     };
 
 
 
@@ -2405,7 +2405,7 @@ export default function TalkToOurExpert({
 
 
 
-    document.addEventListener("keydown", handleKeyDown);
+//     document.addEventListener("keydown", handleKeyDown);
 
 
 
@@ -2413,15 +2413,15 @@ export default function TalkToOurExpert({
 
 
 
-    requestAnimationFrame(() => {
+//     requestAnimationFrame(() => {
 
 
 
-      dialogRef.current?.focus();
+//       dialogRef.current?.focus();
 
 
 
-    });
+//     });
 
 
 
@@ -2429,31 +2429,31 @@ export default function TalkToOurExpert({
 
 
 
-    return () => {
+//     return () => {
 
 
 
-      document.removeEventListener("keydown", handleKeyDown);
+//       document.removeEventListener("keydown", handleKeyDown);
 
 
 
-      document.body.style.overflow = previousOverflow;
+//       document.body.style.overflow = previousOverflow;
 
 
 
-      document.body.classList.remove("modal-open");
+//       document.body.classList.remove("modal-open");
 
 
 
-      previousActiveElement.current?.focus();
+//       previousActiveElement.current?.focus();
 
 
 
-    };
+//     };
 
 
 
-  }, [isOpen, onClose]);
+//   }, [isOpen, onClose]);
 
 
 
@@ -2461,35 +2461,35 @@ export default function TalkToOurExpert({
 
 
 
-  useEffect(() => {
+//   useEffect(() => {
 
 
 
-    function handleClickOutside(event: MouseEvent) {
+//     function handleClickOutside(event: MouseEvent) {
 
 
 
-      if (
+//       if (
 
 
 
-        countryDropdownRef.current &&
+//         countryDropdownRef.current &&
 
 
 
-        !countryDropdownRef.current.contains(event.target as Node)
+//         !countryDropdownRef.current.contains(event.target as Node)
 
 
 
-      ) {
+//       ) {
 
 
 
-        setIsCountryOpen(false);
+//         setIsCountryOpen(false);
 
 
 
-      }
+//       }
 
 
 
@@ -2497,31 +2497,31 @@ export default function TalkToOurExpert({
 
 
 
-      if (
+//       if (
 
 
 
-        interestDropdownRef.current &&
+//         interestDropdownRef.current &&
 
 
 
-        !interestDropdownRef.current.contains(event.target as Node)
+//         !interestDropdownRef.current.contains(event.target as Node)
 
 
 
-      ) {
+//       ) {
 
 
 
-        setIsInterestOpen(false);
+//         setIsInterestOpen(false);
 
 
 
-      }
+//       }
 
 
 
-    }
+//     }
 
 
 
@@ -2529,7 +2529,7 @@ export default function TalkToOurExpert({
 
 
 
-    document.addEventListener("mousedown", handleClickOutside);
+//     document.addEventListener("mousedown", handleClickOutside);
 
 
 
@@ -2537,15 +2537,15 @@ export default function TalkToOurExpert({
 
 
 
-    return () =>
+//     return () =>
 
 
 
-      document.removeEventListener("mousedown", handleClickOutside);
+//       document.removeEventListener("mousedown", handleClickOutside);
 
 
 
-  }, []);
+//   }, []);
 
 
 
@@ -2553,31 +2553,31 @@ export default function TalkToOurExpert({
 
 
 
-  const selectedCountry = useMemo(
+//   const selectedCountry = useMemo(
 
 
 
-    () =>
+//     () =>
 
 
 
-      COUNTRIES.find(
+//       COUNTRIES.find(
 
 
 
-        (country) => country.iso2 === formData.countryIso2
+//         (country) => country.iso2 === formData.countryIso2
 
 
 
-      ) ?? COUNTRIES[0],
+//       ) ?? COUNTRIES[0],
 
 
 
-    [formData.countryIso2]
+//     [formData.countryIso2]
 
 
 
-  );
+//   );
 
 
 
@@ -2585,11 +2585,11 @@ export default function TalkToOurExpert({
 
 
 
-  const filteredCountries = useMemo(() => {
+//   const filteredCountries = useMemo(() => {
 
 
 
-    const query = countrySearch.trim().toLowerCase();
+//     const query = countrySearch.trim().toLowerCase();
 
 
 
@@ -2597,15 +2597,15 @@ export default function TalkToOurExpert({
 
 
 
-    if (!query) {
+//     if (!query) {
 
 
 
-      return COUNTRIES;
+//       return COUNTRIES;
 
 
 
-    }
+//     }
 
 
 
@@ -2613,15 +2613,15 @@ export default function TalkToOurExpert({
 
 
 
-    const normalizedQuery = query
+//     const normalizedQuery = query
 
 
 
-      .replace(/[()\s-]/g, "")
+//       .replace(/[()\s-]/g, "")
 
 
 
-      .replace(/^\+/, "");
+//       .replace(/^\+/, "");
 
 
 
@@ -2629,43 +2629,43 @@ export default function TalkToOurExpert({
 
 
 
-    /*
+//     /*
 
 
 
-     * Exact ISO-code search gets highest priority.
+//      * Exact ISO-code search gets highest priority.
 
 
 
-     * Example: typing "IN" returns India directly instead of matching
+//      * Example: typing "IN" returns India directly instead of matching
 
 
 
-     * every country name that happens to contain the letters "in".
+//      * every country name that happens to contain the letters "in".
 
 
 
-     */
+//      */
 
 
 
-    const exactIsoMatch = COUNTRIES.filter(
+//     const exactIsoMatch = COUNTRIES.filter(
 
 
 
-      (country) =>
+//       (country) =>
 
 
 
-        country.iso2.toLowerCase() ===
+//         country.iso2.toLowerCase() ===
 
 
 
-        query.replace(/[^a-z]/g, "")
+//         query.replace(/[^a-z]/g, "")
 
 
 
-    );
+//     );
 
 
 
@@ -2673,15 +2673,15 @@ export default function TalkToOurExpert({
 
 
 
-    if (exactIsoMatch.length > 0) {
+//     if (exactIsoMatch.length > 0) {
 
 
 
-      return exactIsoMatch;
+//       return exactIsoMatch;
 
 
 
-    }
+//     }
 
 
 
@@ -2689,23 +2689,23 @@ export default function TalkToOurExpert({
 
 
 
-    return COUNTRIES.filter((country) => {
+//     return COUNTRIES.filter((country) => {
 
 
 
-      const countryName = country.name.toLowerCase();
+//       const countryName = country.name.toLowerCase();
 
 
 
-      const iso2 = country.iso2.toLowerCase();
+//       const iso2 = country.iso2.toLowerCase();
 
 
 
-      const dialCode = country.dialCode.replace(/^\+/, "");
+//       const dialCode = country.dialCode.replace(/^\+/, "");
 
 
 
-      const shortLabel = `${iso2}(+${dialCode})`;
+//       const shortLabel = `${iso2}(+${dialCode})`;
 
 
 
@@ -2713,35 +2713,35 @@ export default function TalkToOurExpert({
 
 
 
-      return (
+//       return (
 
 
 
-        countryName.includes(query) ||
+//         countryName.includes(query) ||
 
 
 
-        iso2.startsWith(query) ||
+//         iso2.startsWith(query) ||
 
 
 
-        dialCode.includes(normalizedQuery) ||
+//         dialCode.includes(normalizedQuery) ||
 
 
 
-        shortLabel.includes(query.replace(/\s/g, ""))
+//         shortLabel.includes(query.replace(/\s/g, ""))
 
 
 
-      );
+//       );
 
 
 
-    });
+//     });
 
 
 
-  }, [countrySearch]);
+//   }, [countrySearch]);
 
 
 
@@ -2749,23 +2749,23 @@ export default function TalkToOurExpert({
 
 
 
-  const errors = useMemo(
+//   const errors = useMemo(
 
 
 
-    () => ({
+//     () => ({
 
 
 
-      fullName: !NAME_PATTERN.test(formData.fullName.trim())
+//       fullName: !NAME_PATTERN.test(formData.fullName.trim())
 
 
 
-        ? "Please enter a valid name using letters and spaces only."
+//         ? "Please enter a valid name using letters and spaces only."
 
 
 
-        : "",
+//         : "",
 
 
 
@@ -2773,7 +2773,7 @@ export default function TalkToOurExpert({
 
 
 
-      email: validateEmailAddress(formData.email).message,
+//       email: validateEmailAddress(formData.email).message,
 
 
 
@@ -2781,11 +2781,11 @@ export default function TalkToOurExpert({
 
 
 
-      phoneNumber: (() => {
+//       phoneNumber: (() => {
 
 
 
-        const phone = formData.phoneNumber.trim();
+//         const phone = formData.phoneNumber.trim();
 
 
 
@@ -2793,15 +2793,15 @@ export default function TalkToOurExpert({
 
 
 
-        if (!phone) {
+//         if (!phone) {
 
 
 
-          return `Please enter a valid phone number for ${selectedCountry.name} (+${selectedCountry.dialCode}).`;
+//           return `Please enter a valid phone number for ${selectedCountry.name} (+${selectedCountry.dialCode}).`;
 
 
 
-        }
+//         }
 
 
 
@@ -2809,11 +2809,11 @@ export default function TalkToOurExpert({
 
 
 
-        const countryCode =
+//         const countryCode =
 
 
 
-          formData.countryIso2.toUpperCase() as CountryCode;
+//           formData.countryIso2.toUpperCase() as CountryCode;
 
 
 
@@ -2821,35 +2821,35 @@ export default function TalkToOurExpert({
 
 
 
-        /*
+//         /*
 
 
 
-         * Validate the number against the selected country's numbering plan.
+//          * Validate the number against the selected country's numbering plan.
 
 
 
-         * This handles country-specific length, prefixes, and number ranges.
+//          * This handles country-specific length, prefixes, and number ranges.
 
 
 
-         */
+//          */
 
 
 
-        const countryNumberIsValid = isValidPhoneNumber(
+//         const countryNumberIsValid = isValidPhoneNumber(
 
 
 
-          phone,
+//           phone,
 
 
 
-          countryCode
+//           countryCode
 
 
 
-        );
+//         );
 
 
 
@@ -2857,15 +2857,15 @@ export default function TalkToOurExpert({
 
 
 
-        if (!countryNumberIsValid) {
+//         if (!countryNumberIsValid) {
 
 
 
-          return `Please enter a valid phone number for ${selectedCountry.name} (+${selectedCountry.dialCode}).`;
+//           return `Please enter a valid phone number for ${selectedCountry.name} (+${selectedCountry.dialCode}).`;
 
 
 
-        }
+//         }
 
 
 
@@ -2873,11 +2873,11 @@ export default function TalkToOurExpert({
 
 
 
-        return "";
+//         return "";
 
 
 
-      })(),
+//       })(),
 
 
 
@@ -2885,19 +2885,19 @@ export default function TalkToOurExpert({
 
 
 
-      query:
+//       query:
 
 
 
-        formData.query.trim().length === 0
+//         formData.query.trim().length === 0
 
 
 
-          ? "Please enter your query."
+//           ? "Please enter your query."
 
 
 
-          : "",
+//           : "",
 
 
 
@@ -2905,27 +2905,27 @@ export default function TalkToOurExpert({
 
 
 
-      consent: !formData.consent
+//       consent: !formData.consent
 
 
 
-        ? "Please accept the privacy policy to continue."
+//         ? "Please accept the privacy policy to continue."
 
 
 
-        : "",
+//         : "",
 
 
 
-    }),
+//     }),
 
 
 
-    [formData, selectedCountry]
+//     [formData, selectedCountry]
 
 
 
-  );
+//   );
 
 
 
@@ -2933,27 +2933,27 @@ export default function TalkToOurExpert({
 
 
 
-  const isFormValid =
+//   const isFormValid =
 
 
 
-    !errors.fullName &&
+//     !errors.fullName &&
 
 
 
-    !errors.email &&
+//     !errors.email &&
 
 
 
-    !errors.phoneNumber &&
+//     !errors.phoneNumber &&
 
 
 
-    !errors.query &&
+//     !errors.query &&
 
 
 
-    !errors.consent;
+//     !errors.consent;
 
 
 
@@ -2961,39 +2961,39 @@ export default function TalkToOurExpert({
 
 
 
-  const handleFieldChange = <K extends keyof FormState>(
+//   const handleFieldChange = <K extends keyof FormState>(
 
 
 
-    field: K,
+//     field: K,
 
 
 
-    value: FormState[K]
+//     value: FormState[K]
 
 
 
-  ) => {
+//   ) => {
 
 
 
-    setFormData((prev) => ({
+//     setFormData((prev) => ({
 
 
 
-      ...prev,
+//       ...prev,
 
 
 
-      [field]: value,
+//       [field]: value,
 
 
 
-    }));
+//     }));
 
 
 
-  };
+//   };
 
 
 
@@ -3001,27 +3001,27 @@ export default function TalkToOurExpert({
 
 
 
-  const handleBlur = (field: keyof TouchedState) => {
+//   const handleBlur = (field: keyof TouchedState) => {
 
 
 
-    setTouched((prev) => ({
+//     setTouched((prev) => ({
 
 
 
-      ...prev,
+//       ...prev,
 
 
 
-      [field]: true,
+//       [field]: true,
 
 
 
-    }));
+//     }));
 
 
 
-  };
+//   };
 
 
 
@@ -3029,19 +3029,19 @@ export default function TalkToOurExpert({
 
 
 
-  const openCountryDropdown = () => {
+//   const openCountryDropdown = () => {
 
 
 
-    setIsInterestOpen(false);
+//     setIsInterestOpen(false);
 
 
 
-    setIsCountryOpen((open) => !open);
+//     setIsCountryOpen((open) => !open);
 
 
 
-  };
+//   };
 
 
 
@@ -3049,19 +3049,19 @@ export default function TalkToOurExpert({
 
 
 
-  const openInterestDropdown = () => {
+//   const openInterestDropdown = () => {
 
 
 
-    setIsCountryOpen(false);
+//     setIsCountryOpen(false);
 
 
 
-    setIsInterestOpen((open) => !open);
+//     setIsInterestOpen((open) => !open);
 
 
 
-  };
+//   };
 
 
 
@@ -3069,11 +3069,11 @@ export default function TalkToOurExpert({
 
 
 
-  const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
+//   const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
 
 
 
-    event.preventDefault();
+//     event.preventDefault();
 
 
 
@@ -3081,35 +3081,35 @@ export default function TalkToOurExpert({
 
 
 
-    setTouched({
+//     setTouched({
 
 
 
-      fullName: true,
+//       fullName: true,
 
 
 
-      email: true,
+//       email: true,
 
 
 
-      phoneNumber: true,
+//       phoneNumber: true,
 
 
 
-      interest: true,
+//       interest: true,
 
 
 
-      query: true,
+//       query: true,
 
 
 
-      consent: true,
+//       consent: true,
 
 
 
-    });
+//     });
 
 
 
@@ -3117,15 +3117,15 @@ export default function TalkToOurExpert({
 
 
 
-    if (!isFormValid) {
+//     if (!isFormValid) {
 
 
 
-      return;
+//       return;
 
 
 
-    }
+//     }
 
 
 
@@ -3133,69 +3133,69 @@ export default function TalkToOurExpert({
 
 
 
-    try {
+//     try {
 
 
 
-      const response = await fetch(
-        `${(process.env.NEXT_PUBLIC_API_URL || "http://localhost:4000").replace(/\/$/, "")}/email/talk-to-expert`,
-        {
+//       const response = await fetch(
+//         `${(process.env.NEXT_PUBLIC_API_URL || "http://localhost:4000").replace(/\/$/, "")}/email/talk-to-expert`,
+//         {
 
 
 
-        method: "POST",
+//         method: "POST",
 
 
 
-        headers: {
+//         headers: {
 
 
 
-          "Content-Type": "application/json",
+//           "Content-Type": "application/json",
 
 
 
-        },
+//         },
 
 
 
-        body: JSON.stringify({
+//         body: JSON.stringify({
 
 
 
-          fullName: formData.fullName.trim(),
+//           fullName: formData.fullName.trim(),
 
 
 
-          email: formData.email.trim(),
+//           email: formData.email.trim(),
 
 
 
-          countryCode: formData.countryIso2.toUpperCase(),
+//           countryCode: formData.countryIso2.toUpperCase(),
 
 
 
-          phone: formData.phoneNumber.replace(/\D/g, ""),
+//           phone: formData.phoneNumber.replace(/\D/g, ""),
 
 
 
-          interest: formData.interest,
+//           interest: formData.interest,
 
 
 
-          query: formData.query.trim(),
+//           query: formData.query.trim(),
 
 
 
-          consent: formData.consent,
+//           consent: formData.consent,
 
 
 
-        }),
+//         }),
 
 
 
-      });
+//       });
 
 
 
@@ -3203,7 +3203,7 @@ export default function TalkToOurExpert({
 
 
 
-      let responseData: unknown = null;
+//       let responseData: unknown = null;
 
 
 
@@ -3211,23 +3211,23 @@ export default function TalkToOurExpert({
 
 
 
-      try {
+//       try {
 
 
 
-        responseData = await response.json();
+//         responseData = await response.json();
 
 
 
-      } catch {
+//       } catch {
 
 
 
-        responseData = null;
+//         responseData = null;
 
 
 
-      }
+//       }
 
 
 
@@ -3235,11 +3235,11 @@ export default function TalkToOurExpert({
 
 
 
-      if (!response.ok) {
+//       if (!response.ok) {
 
 
 
-        let errorMessage = "Unable to submit your query.";
+//         let errorMessage = "Unable to submit your query.";
 
 
 
@@ -3247,27 +3247,27 @@ export default function TalkToOurExpert({
 
 
 
-        if (
+//         if (
 
 
 
-          responseData &&
+//           responseData &&
 
 
 
-          typeof responseData === "object" &&
+//           typeof responseData === "object" &&
 
 
 
-          "message" in responseData
+//           "message" in responseData
 
 
 
-        ) {
+//         ) {
 
 
 
-          const message = responseData.message;
+//           const message = responseData.message;
 
 
 
@@ -3275,27 +3275,27 @@ export default function TalkToOurExpert({
 
 
 
-          if (typeof message === "string") {
+//           if (typeof message === "string") {
 
 
 
-            errorMessage = message;
+//             errorMessage = message;
 
 
 
-          } else if (Array.isArray(message)) {
+//           } else if (Array.isArray(message)) {
 
 
 
-            errorMessage = message.join("\n");
+//             errorMessage = message.join("\n");
 
 
 
-          }
+//           }
 
 
 
-        }
+//         }
 
 
 
@@ -3303,11 +3303,11 @@ export default function TalkToOurExpert({
 
 
 
-        throw new Error(errorMessage);
+//         throw new Error(errorMessage);
 
 
 
-      }
+//       }
 
 
 
@@ -3315,27 +3315,27 @@ export default function TalkToOurExpert({
 
 
 
-      setSubmitted(true);
+//       setSubmitted(true);
 
 
 
-    } catch (error) {
+//     } catch (error) {
 
 
 
-      const errorMessage =
+//       const errorMessage =
 
 
 
-        error instanceof Error
+//         error instanceof Error
 
 
 
-          ? error.message
+//           ? error.message
 
 
 
-          : "Unable to submit your query.";
+//           : "Unable to submit your query.";
 
 
 
@@ -3343,15 +3343,15 @@ export default function TalkToOurExpert({
 
 
 
-      window.alert(errorMessage);
+//       window.alert(errorMessage);
 
 
 
-    }
+//     }
 
 
 
-  };
+//   };
 
 
 
@@ -3359,15 +3359,15 @@ export default function TalkToOurExpert({
 
 
 
-  if (!isOpen) {
+//   if (!isOpen) {
 
 
 
-    return null;
+//     return null;
 
 
 
-  }
+//   }
 
 
 
@@ -3375,103 +3375,103 @@ export default function TalkToOurExpert({
 
 
 
-  const modalContent = (
+//   const modalContent = (
 
 
 
-    <div
+//     <div
 
 
 
-      className={styles["tte-overlay"]}
+//       className={styles["tte-overlay"]}
 
 
 
-      onMouseDown={(event) => {
+//       onMouseDown={(event) => {
 
 
 
-        if (event.target === event.currentTarget) {
+//         if (event.target === event.currentTarget) {
 
 
 
-          onClose();
+//           onClose();
 
 
 
-        }
+//         }
 
 
 
-      }}
+//       }}
 
 
 
-    >
+//     >
 
 
 
-      <div
+//       <div
 
 
 
-        className={styles["tte-dialog"]}
+//         className={styles["tte-dialog"]}
 
 
 
-        role="dialog"
+//         role="dialog"
 
 
 
-        aria-modal="true"
+//         aria-modal="true"
 
 
 
-        aria-labelledby="tte-title"
+//         aria-labelledby="tte-title"
 
 
 
-        ref={dialogRef}
+//         ref={dialogRef}
 
 
 
-        tabIndex={-1}
+//         tabIndex={-1}
 
 
 
-      >
+//       >
 
 
 
-        <button
+//         <button
 
 
 
-          type="button"
+//           type="button"
 
 
 
-          className={styles["tte-close"]}
+//           className={styles["tte-close"]}
 
 
 
-          onClick={onClose}
+//           onClick={onClose}
 
 
 
-          aria-label="Close talk to our expert form"
+//           aria-label="Close talk to our expert form"
 
 
 
-        >
+//         >
 
 
 
-          <CloseIcon />
+//           <CloseIcon />
 
 
 
-        </button>
+//         </button>
 
 
 
@@ -3479,67 +3479,67 @@ export default function TalkToOurExpert({
 
 
 
-        <div className={styles["tte-card"]}>
+//         <div className={styles["tte-card"]}>
 
 
 
-          <div className={styles["tte-photo-panel"]}>
+//           <div className={styles["tte-photo-panel"]}>
 
 
 
-            <div className={styles["tte-photo-frame"]}>
+//             <div className={styles["tte-photo-frame"]}>
 
 
 
-              <div className={styles["tte-photo-inner"]}>
+//               <div className={styles["tte-photo-inner"]}>
 
 
 
-                <video
+//                 <video
 
 
 
-                  src={VIDEO_SRC}
+//                   src={VIDEO_SRC}
 
 
 
-                  autoPlay
+//                   autoPlay
 
 
 
-                  muted
+//                   muted
 
 
 
-                  loop
+//                   loop
 
 
 
-                  playsInline
+//                   playsInline
 
 
 
-                  className={styles["tte-photo"]}
+//                   className={styles["tte-photo"]}
 
 
 
-                  aria-label="NeuroLXP learning expert wearing a headset, ready to help"
+//                   aria-label="NeuroLXP learning expert wearing a headset, ready to help"
 
 
 
-                />
+//                 />
 
 
 
-              </div>
+//               </div>
 
 
 
-            </div>
+//             </div>
 
 
 
-          </div>
+//           </div>
 
 
 
@@ -3547,35 +3547,35 @@ export default function TalkToOurExpert({
 
 
 
-          <div className={styles["tte-form-panel"]}>
+//           <div className={styles["tte-form-panel"]}>
 
 
 
-            <div className={styles["tte-header"]}>
+//             <div className={styles["tte-header"]}>
 
 
 
-              <span
+//               <span
 
 
 
-                className={styles["tte-header-icon"]}
+//                 className={styles["tte-header-icon"]}
 
 
 
-                aria-hidden="true"
+//                 aria-hidden="true"
 
 
 
-              >
+//               >
 
 
 
-                <HeadsetIcon />
+//                 <HeadsetIcon />
 
 
 
-              </span>
+//               </span>
 
 
 
@@ -3583,19 +3583,19 @@ export default function TalkToOurExpert({
 
 
 
-              <div className={styles["tte-header-copy"]}>
+//               <div className={styles["tte-header-copy"]}>
 
 
 
-                <h2 id="tte-title" className={styles["tte-title"]}>
+//                 <h2 id="tte-title" className={styles["tte-title"]}>
 
 
 
-                  Talk to our Expert
+//                   Talk to our Expert
 
 
 
-                </h2>
+//                 </h2>
 
 
 
@@ -3603,23 +3603,23 @@ export default function TalkToOurExpert({
 
 
 
-                <p className={styles["tte-subtitle"]}>
+//                 <p className={styles["tte-subtitle"]}>
 
 
 
-                  <span>Get personalized learning guidance</span>
+//                   <span>Get personalized learning guidance</span>
 
 
 
-                </p>
+//                 </p>
 
 
 
-              </div>
+//               </div>
 
 
 
-            </div>
+//             </div>
 
 
 
@@ -3627,27 +3627,27 @@ export default function TalkToOurExpert({
 
 
 
-            <div className={styles["tte-form-surface"]}>
+//             <div className={styles["tte-form-surface"]}>
 
 
 
-              {submitted ? (
+//               {submitted ? (
 
 
 
-                <div className={styles["tte-success"]} role="status">
+//                 <div className={styles["tte-success"]} role="status">
 
 
 
-                  <p className={styles["tte-success-title"]}>
+//                   <p className={styles["tte-success-title"]}>
 
 
 
-                    Thanks, {formData.fullName.split(" ")[0]}!
+//                     Thanks, {formData.fullName.split(" ")[0]}!
 
 
 
-                  </p>
+//                   </p>
 
 
 
@@ -3655,79 +3655,79 @@ export default function TalkToOurExpert({
 
 
 
-                  <p className={styles["tte-success-body"]}>
+//                   <p className={styles["tte-success-body"]}>
 
 
 
-                    Our expert has received your query and will reach out to
+//                     Our expert has received your query and will reach out to
 
 
 
-                    you shortly.
+//                     you shortly.
 
 
 
-                  </p>
+//                   </p>
 
 
 
-                </div>
+//                 </div>
 
 
 
-              ) : (
+//               ) : (
 
 
 
-                <form
+//                 <form
 
 
 
-                  className={styles["tte-form"]}
+//                   className={styles["tte-form"]}
 
 
 
-                  onSubmit={handleSubmit}
+//                   onSubmit={handleSubmit}
 
 
 
-                  noValidate
+//                   noValidate
 
 
 
-                >
+//                 >
 
 
 
-                  {/* FULL NAME */}
+//                   {/* FULL NAME */}
 
 
 
-                  <div className={styles["tte-field"]}>
+//                   <div className={styles["tte-field"]}>
 
 
 
-                    <label
+//                     <label
 
 
 
-                      className={styles["tte-label"]}
+//                       className={styles["tte-label"]}
 
 
 
-                      htmlFor="tte-fullName"
+//                       htmlFor="tte-fullName"
 
 
 
-                    >
+//                     >
 
 
 
-                      Full Name
+//                       Full Name
 
 
 
-                    </label>
+//                     </label>
 
 
 
@@ -3735,43 +3735,43 @@ export default function TalkToOurExpert({
 
 
 
-                    <div
+//                     <div
 
 
 
-                      className={`${styles["tte-input-shell"]}${
+//                       className={`${styles["tte-input-shell"]}${
 
 
 
-                        touched.fullName && errors.fullName
+//                         touched.fullName && errors.fullName
 
 
 
-                          ? ` ${styles["tte-input-shell-error"]}`
+//                           ? ` ${styles["tte-input-shell-error"]}`
 
 
 
-                          : ""
+//                           : ""
 
 
 
-                      }`}
+//                       }`}
 
 
 
-                    >
+//                     >
 
 
 
-                      <IconBubble>
+//                       <IconBubble>
 
 
 
-                        <UserIcon />
+//                         <UserIcon />
 
 
 
-                      </IconBubble>
+//                       </IconBubble>
 
 
 
@@ -3779,119 +3779,119 @@ export default function TalkToOurExpert({
 
 
 
-                      <input
+//                       <input
 
 
 
-                        id="tte-fullName"
+//                         id="tte-fullName"
 
 
 
-                        type="text"
+//                         type="text"
 
 
 
-                        className={styles["tte-input"]}
+//                         className={styles["tte-input"]}
 
 
 
-                        placeholder="Enter your name"
+//                         placeholder="Enter your name"
 
 
 
-                        value={formData.fullName}
+//                         value={formData.fullName}
 
 
 
-                        spellCheck={false}
+//                         spellCheck={false}
 
 
 
-                        autoCorrect="off"
+//                         autoCorrect="off"
 
 
 
-                        autoCapitalize="words"
+//                         autoCapitalize="words"
 
 
 
-                        onChange={(event) =>
+//                         onChange={(event) =>
 
 
 
-                          handleFieldChange(
+//                           handleFieldChange(
 
 
 
-                            "fullName",
+//                             "fullName",
 
 
 
-                            event.target.value.replace(
+//                             event.target.value.replace(
 
 
 
-                              /[^A-Za-z ]/g,
+//                               /[^A-Za-z ]/g,
 
 
 
-                              ""
+//                               ""
 
 
 
-                            )
+//                             )
 
 
 
-                          )
+//                           )
 
 
 
-                        }
+//                         }
 
 
 
-                        onBlur={() => handleBlur("fullName")}
+//                         onBlur={() => handleBlur("fullName")}
 
 
 
-                        aria-invalid={
+//                         aria-invalid={
 
 
 
-                          touched.fullName && Boolean(errors.fullName)
+//                           touched.fullName && Boolean(errors.fullName)
 
 
 
-                        }
+//                         }
 
 
 
-                        aria-describedby={
+//                         aria-describedby={
 
 
 
-                          touched.fullName && errors.fullName
+//                           touched.fullName && errors.fullName
 
 
 
-                            ? "tte-fullName-error"
+//                             ? "tte-fullName-error"
 
 
 
-                            : undefined
+//                             : undefined
 
 
 
-                        }
+//                         }
 
 
 
-                      />
+//                       />
 
 
 
-                    </div>
+//                     </div>
 
 
 
@@ -3899,43 +3899,43 @@ export default function TalkToOurExpert({
 
 
 
-                    {touched.fullName && errors.fullName && (
+//                     {touched.fullName && errors.fullName && (
 
 
 
-                      <span
+//                       <span
 
 
 
-                        id="tte-fullName-error"
+//                         id="tte-fullName-error"
 
 
 
-                        className={styles["tte-error"]}
+//                         className={styles["tte-error"]}
 
 
 
-                        role="alert"
+//                         role="alert"
 
 
 
-                      >
+//                       >
 
 
 
-                        {errors.fullName}
+//                         {errors.fullName}
 
 
 
-                      </span>
+//                       </span>
 
 
 
-                    )}
+//                     )}
 
 
 
-                  </div>
+//                   </div>
 
 
 
@@ -3943,35 +3943,35 @@ export default function TalkToOurExpert({
 
 
 
-                  {/* EMAIL */}
+//                   {/* EMAIL */}
 
 
 
-                  <div className={styles["tte-field"]}>
+//                   <div className={styles["tte-field"]}>
 
 
 
-                    <label
+//                     <label
 
 
 
-                      className={styles["tte-label"]}
+//                       className={styles["tte-label"]}
 
 
 
-                      htmlFor="tte-email"
+//                       htmlFor="tte-email"
 
 
 
-                    >
+//                     >
 
 
 
-                      Email Address
+//                       Email Address
 
 
 
-                    </label>
+//                     </label>
 
 
 
@@ -3979,43 +3979,43 @@ export default function TalkToOurExpert({
 
 
 
-                    <div
+//                     <div
 
 
 
-                      className={`${styles["tte-input-shell"]}${
+//                       className={`${styles["tte-input-shell"]}${
 
 
 
-                        touched.email && errors.email
+//                         touched.email && errors.email
 
 
 
-                          ? ` ${styles["tte-input-shell-error"]}`
+//                           ? ` ${styles["tte-input-shell-error"]}`
 
 
 
-                          : ""
+//                           : ""
 
 
 
-                      }`}
+//                       }`}
 
 
 
-                    >
+//                     >
 
 
 
-                      <IconBubble>
+//                       <IconBubble>
 
 
 
-                        <MailIcon />
+//                         <MailIcon />
 
 
 
-                      </IconBubble>
+//                       </IconBubble>
 
 
 
@@ -4023,95 +4023,95 @@ export default function TalkToOurExpert({
 
 
 
-                      <input
+//                       <input
 
 
 
-                        id="tte-email"
+//                         id="tte-email"
 
 
 
-                        type="email"
+//                         type="email"
 
 
 
-                        className={styles["tte-input"]}
+//                         className={styles["tte-input"]}
 
 
 
-                        placeholder="Enter your email address"
+//                         placeholder="Enter your email address"
 
 
 
-                        value={formData.email}
+//                         value={formData.email}
 
 
 
-                        onChange={(event) =>
+//                         onChange={(event) =>
 
 
 
-                          handleFieldChange(
+//                           handleFieldChange(
 
 
 
-                            "email",
+//                             "email",
 
 
 
-                            event.target.value
+//                             event.target.value
 
 
 
-                          )
+//                           )
 
 
 
-                        }
+//                         }
 
 
 
-                        onBlur={() => handleBlur("email")}
+//                         onBlur={() => handleBlur("email")}
 
 
 
-                        aria-invalid={
+//                         aria-invalid={
 
 
 
-                          touched.email && Boolean(errors.email)
+//                           touched.email && Boolean(errors.email)
 
 
 
-                        }
+//                         }
 
 
 
-                        aria-describedby={
+//                         aria-describedby={
 
 
 
-                          touched.email && errors.email
+//                           touched.email && errors.email
 
 
 
-                            ? "tte-email-error"
+//                             ? "tte-email-error"
 
 
 
-                            : undefined
+//                             : undefined
 
 
 
-                        }
+//                         }
 
 
 
-                      />
+//                       />
 
 
 
-                    </div>
+//                     </div>
 
 
 
@@ -4119,43 +4119,43 @@ export default function TalkToOurExpert({
 
 
 
-                    {touched.email && errors.email && (
+//                     {touched.email && errors.email && (
 
 
 
-                      <span
+//                       <span
 
 
 
-                        id="tte-email-error"
+//                         id="tte-email-error"
 
 
 
-                        className={styles["tte-error"]}
+//                         className={styles["tte-error"]}
 
 
 
-                        role="alert"
+//                         role="alert"
 
 
 
-                      >
+//                       >
 
 
 
-                        {errors.email}
+//                         {errors.email}
 
 
 
-                      </span>
+//                       </span>
 
 
 
-                    )}
+//                     )}
 
 
 
-                  </div>
+//                   </div>
 
 
 
@@ -4163,35 +4163,35 @@ export default function TalkToOurExpert({
 
 
 
-                  {/* PHONE */}
+//                   {/* PHONE */}
 
 
 
-                  <div className={styles["tte-field"]}>
+//                   <div className={styles["tte-field"]}>
 
 
 
-                    <label
+//                     <label
 
 
 
-                      className={styles["tte-label"]}
+//                       className={styles["tte-label"]}
 
 
 
-                      htmlFor="tte-phone"
+//                       htmlFor="tte-phone"
 
 
 
-                    >
+//                     >
 
 
 
-                      Phone Number
+//                       Phone Number
 
 
 
-                    </label>
+//                     </label>
 
 
 
@@ -4199,79 +4199,79 @@ export default function TalkToOurExpert({
 
 
 
-                    <div className={styles["tte-phone-row"]}>
+//                     <div className={styles["tte-phone-row"]}>
 
 
 
-                      <div
+//                       <div
 
 
 
-                        className={styles["tte-country-select"]}
+//                         className={styles["tte-country-select"]}
 
 
 
-                        ref={countryDropdownRef}
+//                         ref={countryDropdownRef}
 
 
 
-                      >
+//                       >
 
 
 
-                        <button
+//                         <button
 
 
 
-                          type="button"
+//                           type="button"
 
 
 
-                          className={styles["tte-country-trigger"]}
+//                           className={styles["tte-country-trigger"]}
 
 
 
-                          onClick={openCountryDropdown}
+//                           onClick={openCountryDropdown}
 
 
 
-                          aria-haspopup="listbox"
+//                           aria-haspopup="listbox"
 
 
 
-                          aria-expanded={isCountryOpen}
+//                           aria-expanded={isCountryOpen}
 
 
 
-                          aria-controls="tte-country-listbox"
+//                           aria-controls="tte-country-listbox"
 
 
 
-                        >
+//                         >
 
 
 
-                          <span className={styles["tte-country-code"]}>
+//                           <span className={styles["tte-country-code"]}>
 
-                            <img
+//                             <img
 
-                              className={styles["tte-country-flag"]}
+//                               className={styles["tte-country-flag"]}
 
-                              src={getCountryFlagUrl(selectedCountry.iso2)}
+//                               src={getCountryFlagUrl(selectedCountry.iso2)}
 
-                              width={24}
+//                               width={24}
 
-                              height={18}
+//                               height={18}
 
-                              alt=""
+//                               alt=""
 
-                              aria-hidden="true"
+//                               aria-hidden="true"
 
-                            />
+//                             />
 
-                            <span>+{selectedCountry.dialCode.replace(/^\+/, "")}</span>
+//                             <span>+{selectedCountry.dialCode.replace(/^\+/, "")}</span>
 
-                          </span>
+//                           </span>
 
 
 
@@ -4279,11 +4279,11 @@ export default function TalkToOurExpert({
 
 
 
-                          <ArrowDownIcon open={isCountryOpen} />
+//                           <ArrowDownIcon open={isCountryOpen} />
 
 
 
-                        </button>
+//                         </button>
 
 
 
@@ -4291,67 +4291,67 @@ export default function TalkToOurExpert({
 
 
 
-                        {isCountryOpen && (
+//                         {isCountryOpen && (
 
 
 
-                          <div
+//                           <div
 
 
 
-                            id="tte-country-listbox"
+//                             id="tte-country-listbox"
 
 
 
-                            className={styles["tte-country-panel"]}
+//                             className={styles["tte-country-panel"]}
 
 
 
-                            role="listbox"
+//                             role="listbox"
 
 
 
-                          >
+//                           >
 
 
 
-                            <input
+//                             <input
 
 
 
-                              type="text"
+//                               type="text"
 
 
 
-                              className={styles["tte-country-search"]}
+//                               className={styles["tte-country-search"]}
 
 
 
-                              placeholder="Search country"
+//                               placeholder="Search country"
 
 
 
-                              value={countrySearch}
+//                               value={countrySearch}
 
 
 
-                              onChange={(event) =>
+//                               onChange={(event) =>
 
 
 
-                                setCountrySearch(event.target.value)
+//                                 setCountrySearch(event.target.value)
 
 
 
-                              }
+//                               }
 
 
 
-                              autoFocus
+//                               autoFocus
 
 
 
-                            />
+//                             />
 
 
 
@@ -4359,141 +4359,141 @@ export default function TalkToOurExpert({
 
 
 
-                            <ul className={styles["tte-country-list"]}>
+//                             <ul className={styles["tte-country-list"]}>
 
 
 
-                              {filteredCountries.map((country) => (
+//                               {filteredCountries.map((country) => (
 
 
 
-                                <li key={country.iso2}>
+//                                 <li key={country.iso2}>
 
 
 
-                                  <button
+//                                   <button
 
 
 
-                                    type="button"
+//                                     type="button"
 
 
 
-                                    role="option"
+//                                     role="option"
 
 
 
-                                    aria-selected={
+//                                     aria-selected={
 
 
 
-                                      country.iso2 ===
+//                                       country.iso2 ===
 
 
 
-                                      formData.countryIso2
+//                                       formData.countryIso2
 
 
 
-                                    }
+//                                     }
 
 
 
-                                    className={`${styles["tte-country-option"]}${
+//                                     className={`${styles["tte-country-option"]}${
 
 
 
-                                      country.iso2 ===
+//                                       country.iso2 ===
 
 
 
-                                      formData.countryIso2
+//                                       formData.countryIso2
 
 
 
-                                        ? ` ${styles["tte-country-option-active"]}`
+//                                         ? ` ${styles["tte-country-option-active"]}`
 
 
 
-                                        : ""
+//                                         : ""
 
 
 
-                                    }`}
+//                                     }`}
 
 
 
-                                    onClick={() => {
+//                                     onClick={() => {
 
 
 
-                                      handleFieldChange(
+//                                       handleFieldChange(
 
 
 
-                                        "countryIso2",
+//                                         "countryIso2",
 
 
 
-                                        country.iso2
+//                                         country.iso2
 
 
 
-                                      );
+//                                       );
 
 
 
-                                      setIsCountryOpen(false);
+//                                       setIsCountryOpen(false);
 
 
 
-                                      setCountrySearch("");
+//                                       setCountrySearch("");
 
 
 
-                                    }}
+//                                     }}
 
 
 
-                                  >
+//                                   >
 
 
 
-                                    <span className={styles["tte-country-short-label"]}>
+//                                     <span className={styles["tte-country-short-label"]}>
 
-                                      <img
+//                                       <img
 
-                                        className={styles["tte-country-flag"]}
+//                                         className={styles["tte-country-flag"]}
 
-                                        src={getCountryFlagUrl(country.iso2)}
+//                                         src={getCountryFlagUrl(country.iso2)}
 
-                                        width={24}
+//                                         width={24}
 
-                                        height={18}
+//                                         height={18}
 
-                                        alt=""
+//                                         alt=""
 
-                                        aria-hidden="true"
+//                                         aria-hidden="true"
 
-                                      />
+//                                       />
 
-                                      <span>+{country.dialCode.replace(/^\+/, "")}</span>
+//                                       <span>+{country.dialCode.replace(/^\+/, "")}</span>
 
                                       
 
-                                    </span>
+//                                     </span>
 
 
 
-                                  </button>
+//                                   </button>
 
 
 
-                                </li>
+//                                 </li>
 
 
 
-                              ))}
+//                               ))}
 
 
 
@@ -4501,55 +4501,55 @@ export default function TalkToOurExpert({
 
 
 
-                              {filteredCountries.length === 0 && (
+//                               {filteredCountries.length === 0 && (
 
 
 
-                                <li
+//                                 <li
 
 
 
-                                  className={
+//                                   className={
 
 
 
-                                    styles["tte-country-empty"]
+//                                     styles["tte-country-empty"]
 
 
 
-                                  }
+//                                   }
 
 
 
-                                >
+//                                 >
 
 
 
-                                  No countries match your search.
+//                                   No countries match your search.
 
 
 
-                                </li>
+//                                 </li>
 
 
 
-                              )}
+//                               )}
 
 
 
-                            </ul>
+//                             </ul>
 
 
 
-                          </div>
+//                           </div>
 
 
 
-                        )}
+//                         )}
 
 
 
-                      </div>
+//                       </div>
 
 
 
@@ -4557,51 +4557,51 @@ export default function TalkToOurExpert({
 
 
 
-                      <div
+//                       <div
 
 
 
-                        className={`${styles["tte-input-shell"]} ${
+//                         className={`${styles["tte-input-shell"]} ${
 
 
 
-                          styles["tte-input-shell-grow"]
+//                           styles["tte-input-shell-grow"]
 
 
 
-                        }${
+//                         }${
 
 
 
-                          touched.phoneNumber && errors.phoneNumber
+//                           touched.phoneNumber && errors.phoneNumber
 
 
 
-                            ? ` ${styles["tte-input-shell-error"]}`
+//                             ? ` ${styles["tte-input-shell-error"]}`
 
 
 
-                            : ""
+//                             : ""
 
 
 
-                        }`}
+//                         }`}
 
 
 
-                      >
+//                       >
 
 
 
-                        <IconBubble>
+//                         <IconBubble>
 
 
 
-                          <PhoneIcon />
+//                           <PhoneIcon />
 
 
 
-                        </IconBubble>
+//                         </IconBubble>
 
 
 
@@ -4609,139 +4609,139 @@ export default function TalkToOurExpert({
 
 
 
-                        <input
+//                         <input
 
 
 
-                          id="tte-phone"
+//                           id="tte-phone"
 
 
 
-                          type="tel"
+//                           type="tel"
 
 
 
-                          inputMode="numeric"
+//                           inputMode="numeric"
 
 
 
-                          maxLength={MAX_PHONE_DIGITS}
+//                           maxLength={MAX_PHONE_DIGITS}
 
 
 
-                          className={styles["tte-input"]}
+//                           className={styles["tte-input"]}
 
 
 
-                          placeholder="XXXXXXXXXX"
+//                           placeholder="XXXXXXXXXX"
 
 
 
-                          value={formData.phoneNumber}
+//                           value={formData.phoneNumber}
 
 
 
-                          onChange={(event) => {
+//                           onChange={(event) => {
 
 
 
-                            handleFieldChange(
+//                             handleFieldChange(
 
 
 
-                              "phoneNumber",
+//                               "phoneNumber",
 
 
 
-                              event.target.value
+//                               event.target.value
 
 
 
-                                .replace(/[^0-9]/g, "")
+//                                 .replace(/[^0-9]/g, "")
 
 
 
-                                .slice(0, MAX_PHONE_DIGITS)
+//                                 .slice(0, MAX_PHONE_DIGITS)
 
 
 
-                            );
+//                             );
 
 
 
-                            setTouched((prev) => ({
+//                             setTouched((prev) => ({
 
 
 
-                              ...prev,
+//                               ...prev,
 
 
 
-                              phoneNumber: true,
+//                               phoneNumber: true,
 
 
 
-                            }));
+//                             }));
 
 
 
-                          }}
+//                           }}
 
 
 
-                          onBlur={() => handleBlur("phoneNumber")}
+//                           onBlur={() => handleBlur("phoneNumber")}
 
 
 
-                          aria-invalid={
+//                           aria-invalid={
 
 
 
-                            touched.phoneNumber &&
+//                             touched.phoneNumber &&
 
 
 
-                            Boolean(errors.phoneNumber)
+//                             Boolean(errors.phoneNumber)
 
 
 
-                          }
+//                           }
 
 
 
-                          aria-describedby={
+//                           aria-describedby={
 
 
 
-                            touched.phoneNumber &&
+//                             touched.phoneNumber &&
 
 
 
-                            errors.phoneNumber
+//                             errors.phoneNumber
 
 
 
-                              ? "tte-phone-error"
+//                               ? "tte-phone-error"
 
 
 
-                              : undefined
+//                               : undefined
 
 
 
-                          }
+//                           }
 
 
 
-                        />
+//                         />
 
 
 
-                      </div>
+//                       </div>
 
 
 
-                    </div>
+//                     </div>
 
 
 
@@ -4749,43 +4749,43 @@ export default function TalkToOurExpert({
 
 
 
-                    {touched.phoneNumber && errors.phoneNumber && (
+//                     {touched.phoneNumber && errors.phoneNumber && (
 
 
 
-                      <span
+//                       <span
 
 
 
-                        id="tte-phone-error"
+//                         id="tte-phone-error"
 
 
 
-                        className={styles["tte-error"]}
+//                         className={styles["tte-error"]}
 
 
 
-                        role="alert"
+//                         role="alert"
 
 
 
-                      >
+//                       >
 
 
 
-                        {errors.phoneNumber}
+//                         {errors.phoneNumber}
 
 
 
-                      </span>
+//                       </span>
 
 
 
-                    )}
+//                     )}
 
 
 
-                  </div>
+//                   </div>
 
 
 
@@ -4793,47 +4793,47 @@ export default function TalkToOurExpert({
 
 
 
-                  {/* INTEREST */}
+//                   {/* INTEREST */}
 
 
 
-                  <div
+//                   <div
 
 
 
-                    className={styles["tte-field"]}
+//                     className={styles["tte-field"]}
 
 
 
-                    ref={interestDropdownRef}
+//                     ref={interestDropdownRef}
 
 
 
-                  >
+//                   >
 
 
 
-                    <span
+//                     <span
 
 
 
-                      className={styles["tte-label"]}
+//                       className={styles["tte-label"]}
 
 
 
-                      id="tte-interest-label"
+//                       id="tte-interest-label"
 
 
 
-                    >
+//                     >
 
 
 
-                      Select your Interest
+//                       Select your Interest
 
 
 
-                    </span>
+//                     </span>
 
 
 
@@ -4841,51 +4841,51 @@ export default function TalkToOurExpert({
 
 
 
-                    <button
+//                     <button
 
 
 
-                      type="button"
+//                       type="button"
 
 
 
-                      className={`${styles["tte-input-shell"]} ${styles["tte-interest-trigger"]}`}
+//                       className={`${styles["tte-input-shell"]} ${styles["tte-interest-trigger"]}`}
 
 
 
-                      onClick={openInterestDropdown}
+//                       onClick={openInterestDropdown}
 
 
 
-                      aria-haspopup="listbox"
+//                       aria-haspopup="listbox"
 
 
 
-                      aria-expanded={isInterestOpen}
+//                       aria-expanded={isInterestOpen}
 
 
 
-                      aria-controls="tte-interest-listbox"
+//                       aria-controls="tte-interest-listbox"
 
 
 
-                      aria-labelledby="tte-interest-label"
+//                       aria-labelledby="tte-interest-label"
 
 
 
-                    >
+//                     >
 
 
 
-                      <IconBubble>
+//                       <IconBubble>
 
 
 
-                        <ClipboardIcon />
+//                         <ClipboardIcon />
 
 
 
-                      </IconBubble>
+//                       </IconBubble>
 
 
 
@@ -4893,15 +4893,15 @@ export default function TalkToOurExpert({
 
 
 
-                      <span className={styles["tte-interest-value"]}>
+//                       <span className={styles["tte-interest-value"]}>
 
 
 
-                        {formData.interest}
+//                         {formData.interest}
 
 
 
-                      </span>
+//                       </span>
 
 
 
@@ -4909,11 +4909,11 @@ export default function TalkToOurExpert({
 
 
 
-                      <ArrowDownIcon open={isInterestOpen} />
+//                       <ArrowDownIcon open={isInterestOpen} />
 
 
 
-                    </button>
+//                     </button>
 
 
 
@@ -4921,39 +4921,39 @@ export default function TalkToOurExpert({
 
 
 
-                    {isInterestOpen && (
+//                     {isInterestOpen && (
 
 
 
-                      <div
+//                       <div
 
 
 
-                        id="tte-interest-listbox"
+//                         id="tte-interest-listbox"
 
 
 
-                        className={styles["tte-interest-panel"]}
+//                         className={styles["tte-interest-panel"]}
 
 
 
-                        role="listbox"
+//                         role="listbox"
 
 
 
-                      >
+//                       >
 
 
 
-                        {INTEREST_OPTIONS.map((option) => {
+//                         {INTEREST_OPTIONS.map((option) => {
 
 
 
-                          const checked =
+//                           const checked =
 
 
 
-                            option === formData.interest;
+//                             option === formData.interest;
 
 
 
@@ -4961,59 +4961,59 @@ export default function TalkToOurExpert({
 
 
 
-                          return (
+//                           return (
 
 
 
-                            <button
+//                             <button
 
 
 
-                              type="button"
+//                               type="button"
 
 
 
-                              key={option}
+//                               key={option}
 
 
 
-                              role="option"
+//                               role="option"
 
 
 
-                              aria-selected={checked}
+//                               aria-selected={checked}
 
 
 
-                              className={
+//                               className={
 
 
 
-                                styles["tte-interest-option"]
+//                                 styles["tte-interest-option"]
 
 
 
-                              }
+//                               }
 
 
 
-                              onClick={() => {
+//                               onClick={() => {
 
 
 
-                                handleFieldChange(
+//                                 handleFieldChange(
 
 
 
-                                  "interest",
+//                                   "interest",
 
 
 
-                                  option
+//                                   option
 
 
 
-                                );
+//                                 );
 
 
 
@@ -5021,19 +5021,19 @@ export default function TalkToOurExpert({
 
 
 
-                                setTouched((prev) => ({
+//                                 setTouched((prev) => ({
 
 
 
-                                  ...prev,
+//                                   ...prev,
 
 
 
-                                  interest: true,
+//                                   interest: true,
 
 
 
-                                }));
+//                                 }));
 
 
 
@@ -5041,59 +5041,59 @@ export default function TalkToOurExpert({
 
 
 
-                                setIsInterestOpen(false);
+//                                 setIsInterestOpen(false);
 
 
 
-                              }}
+//                               }}
 
 
 
-                            >
+//                             >
 
 
 
-                              <span
+//                               <span
 
 
 
-                                className={
+//                                 className={
 
 
 
-                                  styles["tte-radio-bubble"]
+//                                   styles["tte-radio-bubble"]
 
 
 
-                                }
+//                                 }
 
 
 
-                              >
+//                               >
 
 
 
-                                {checked ? (
+//                                 {checked ? (
 
 
 
-                                  <RadioCheckedIcon />
+//                                   <RadioCheckedIcon />
 
 
 
-                                ) : (
+//                                 ) : (
 
 
 
-                                  <RadioEmptyIcon />
+//                                   <RadioEmptyIcon />
 
 
 
-                                )}
+//                                 )}
 
 
 
-                              </span>
+//                               </span>
 
 
 
@@ -5101,79 +5101,79 @@ export default function TalkToOurExpert({
 
 
 
-                              <span
+//                               <span
 
 
 
-                                className={`${
+//                                 className={`${
 
 
 
-                                  styles[
+//                                   styles[
 
 
 
-                                    "tte-interest-option-label"
+//                                     "tte-interest-option-label"
 
 
 
-                                  ]
+//                                   ]
 
 
 
-                                }${
+//                                 }${
 
 
 
-                                  checked
+//                                   checked
 
 
 
-                                    ? ` ${styles["tte-interest-option-label-active"]}`
+//                                     ? ` ${styles["tte-interest-option-label-active"]}`
 
 
 
-                                    : ""
+//                                     : ""
 
 
 
-                                }`}
+//                                 }`}
 
 
 
-                              >
+//                               >
 
 
 
-                                {option}
+//                                 {option}
 
 
 
-                              </span>
+//                               </span>
 
 
 
-                            </button>
+//                             </button>
 
 
 
-                          );
+//                           );
 
 
 
-                        })}
+//                         })}
 
 
 
-                      </div>
+//                       </div>
 
 
 
-                    )}
+//                     )}
 
 
 
-                  </div>
+//                   </div>
 
 
 
@@ -5181,39 +5181,39 @@ export default function TalkToOurExpert({
 
 
 
-                  {/* QUERY */}
+//                   {/* QUERY */}
 
 
 
-                  <div className={styles["tte-field"]}>
+//                   <div className={styles["tte-field"]}>
 
 
 
-                    <div className={styles["tte-query-header"]}>
+//                     <div className={styles["tte-query-header"]}>
 
 
 
-                      <label
+//                       <label
 
 
 
-                        className={styles["tte-label"]}
+//                         className={styles["tte-label"]}
 
 
 
-                        htmlFor="tte-query"
+//                         htmlFor="tte-query"
 
 
 
-                      >
+//                       >
 
 
 
-                        Describe your query or question in detail
+//                         Describe your query or question in detail
 
 
 
-                      </label>
+//                       </label>
 
 
 
@@ -5221,35 +5221,35 @@ export default function TalkToOurExpert({
 
 
 
-                      <span
+//                       <span
 
 
 
-                        id="tte-query-count"
+//                         id="tte-query-count"
 
 
 
-                        className={styles["tte-query-count"]}
+//                         className={styles["tte-query-count"]}
 
 
 
-                        aria-live="polite"
+//                         aria-live="polite"
 
 
 
-                      >
+//                       >
 
 
 
-                        {MAX_QUERY_LENGTH - formData.query.length}/{MAX_QUERY_LENGTH}&#x20;
+//                         {MAX_QUERY_LENGTH - formData.query.length}/{MAX_QUERY_LENGTH}&#x20;
 
 
 
-                      </span>
+//                       </span>
 
 
 
-                    </div>
+//                     </div>
 
 
 
@@ -5257,119 +5257,119 @@ export default function TalkToOurExpert({
 
 
 
-                    <div
+//                     <div
 
 
 
-                      className={`${styles["tte-textarea-shell"]}${
+//                       className={`${styles["tte-textarea-shell"]}${
 
 
 
-                        touched.query && errors.query
+//                         touched.query && errors.query
 
 
 
-                          ? ` ${styles["tte-textarea-error"]}`
+//                           ? ` ${styles["tte-textarea-error"]}`
 
 
 
-                          : ""
+//                           : ""
 
 
 
-                      }`}
+//                       }`}
 
 
 
-                    >
+//                     >
 
 
 
-                      <textarea
+//                       <textarea
 
 
 
-                        id="tte-query"
+//                         id="tte-query"
 
 
 
-                        className={styles["tte-textarea"]}
+//                         className={styles["tte-textarea"]}
 
 
 
-                        placeholder="Write your detailed query here......"
+//                         placeholder="Write your detailed query here......"
 
 
 
-                        value={formData.query}
+//                         value={formData.query}
 
 
 
-                        maxLength={MAX_QUERY_LENGTH}
+//                         maxLength={MAX_QUERY_LENGTH}
 
 
 
-                        onChange={(event) =>
+//                         onChange={(event) =>
 
 
 
-                          handleFieldChange(
+//                           handleFieldChange(
 
 
 
-                            "query",
+//                             "query",
 
 
 
-                            event.target.value
+//                             event.target.value
 
 
 
-                          )
+//                           )
 
 
 
-                        }
+//                         }
 
 
 
-                        onBlur={() => handleBlur("query")}
+//                         onBlur={() => handleBlur("query")}
 
 
 
-                        aria-invalid={
+//                         aria-invalid={
 
 
 
-                          touched.query && Boolean(errors.query)
+//                           touched.query && Boolean(errors.query)
 
 
 
-                        }
+//                         }
 
 
 
-                        aria-describedby={
+//                         aria-describedby={
 
 
 
-                          touched.query && errors.query
+//                           touched.query && errors.query
 
 
 
-                            ? "tte-query-error"
+//                             ? "tte-query-error"
 
 
 
-                            : "tte-query-count"
+//                             : "tte-query-count"
 
 
 
-                        }
+//                         }
 
 
 
-                      />
+//                       />
 
 
 
@@ -5377,31 +5377,31 @@ export default function TalkToOurExpert({
 
 
 
-                      <span
+//                       <span
 
 
 
-                        className={styles["tte-resize-icon"]}
+//                         className={styles["tte-resize-icon"]}
 
 
 
-                        aria-hidden="true"
+//                         aria-hidden="true"
 
 
 
-                      >
+//                       >
 
 
 
-                        <ResizeIcon />
+//                         <ResizeIcon />
 
 
 
-                      </span>
+//                       </span>
 
 
 
-                    </div>
+//                     </div>
 
 
 
@@ -5409,47 +5409,47 @@ export default function TalkToOurExpert({
 
 
 
-                    {touched.query && errors.query && (
+//                     {touched.query && errors.query && (
 
 
 
-                      <div className={styles["tte-query-meta"]}>
+//                       <div className={styles["tte-query-meta"]}>
 
 
 
-                        <span
+//                         <span
 
 
 
-                          id="tte-query-error"
+//                           id="tte-query-error"
 
 
 
-                          className={styles["tte-error"]}
+//                           className={styles["tte-error"]}
 
 
 
-                          role="alert"
+//                           role="alert"
 
 
 
-                        >
+//                         >
 
 
 
-                          {errors.query}
+//                           {errors.query}
 
 
 
-                        </span>
+//                         </span>
 
 
 
-                      </div>
+//                       </div>
 
 
 
-                    )}
+//                     )}
 
 
 
@@ -5457,51 +5457,51 @@ export default function TalkToOurExpert({
 
 
 
-                    {formData.query.length === MAX_QUERY_LENGTH && (
+//                     {formData.query.length === MAX_QUERY_LENGTH && (
 
 
 
-                      <div className={styles["tte-query-meta"]}>
+//                       <div className={styles["tte-query-meta"]}>
 
 
 
-                        <span
+//                         <span
 
 
 
-                          className={styles["tte-query-limit-message"]}
+//                           className={styles["tte-query-limit-message"]}
 
 
 
-                          role="status"
+//                           role="status"
 
 
 
-                          aria-live="polite"
+//                           aria-live="polite"
 
 
 
-                        >
+//                         >
 
 
 
-                          Maximum character limit reached.
+//                           Maximum character limit reached.
 
 
 
-                        </span>
+//                         </span>
 
 
 
-                      </div>
+//                       </div>
 
 
 
-                    )}
+//                     )}
 
 
 
-                  </div>
+//                   </div>
 
 
 
@@ -5509,95 +5509,95 @@ export default function TalkToOurExpert({
 
 
 
-                  {/* CONSENT */}
+//                   {/* CONSENT */}
 
 
 
-                  <div className={styles["tte-consent"]}>
+//                   <div className={styles["tte-consent"]}>
 
 
 
-                    <input
+//                     <input
 
 
 
-                      type="checkbox"
+//                       type="checkbox"
 
 
 
-                      className={styles["tte-consent-checkbox"]}
+//                       className={styles["tte-consent-checkbox"]}
 
 
 
-                      checked={formData.consent}
+//                       checked={formData.consent}
 
 
 
-                      onChange={(event) => {
+//                       onChange={(event) => {
 
 
 
-                        handleFieldChange("consent", event.target.checked);
+//                         handleFieldChange("consent", event.target.checked);
 
 
 
-                        setTouched((prev) => ({
+//                         setTouched((prev) => ({
 
 
 
-                          ...prev,
+//                           ...prev,
 
 
 
-                          consent: true,
+//                           consent: true,
 
 
 
-                        }));
+//                         }));
 
 
 
-                      }}
+//                       }}
 
 
 
-                      aria-invalid={
+//                       aria-invalid={
 
 
 
-                        touched.consent &&
+//                         touched.consent &&
 
 
 
-                        Boolean(errors.consent)
+//                         Boolean(errors.consent)
 
 
 
-                      }
+//                       }
 
 
 
-                      aria-describedby={
+//                       aria-describedby={
 
 
 
-                        touched.consent && errors.consent
+//                         touched.consent && errors.consent
 
 
 
-                          ? "tte-consent-error"
+//                           ? "tte-consent-error"
 
 
 
-                          : undefined
+//                           : undefined
 
 
 
-                      }
+//                       }
 
 
 
-                    />
+//                     />
 
 
 
@@ -5605,91 +5605,91 @@ export default function TalkToOurExpert({
 
 
 
-                    <span
+//                     <span
 
 
 
-                      className={styles["tte-consent-box"]}
+//                       className={styles["tte-consent-box"]}
 
 
 
-                      aria-hidden="true"
+//                       aria-hidden="true"
 
 
 
-                    >
+//                     >
 
 
 
-                      {formData.consent && (
+//                       {formData.consent && (
 
 
 
-                        <svg
+//                         <svg
 
 
 
-                          className={styles["tte-consent-check"]}
+//                           className={styles["tte-consent-check"]}
 
 
 
-                          width="12"
+//                           width="12"
 
 
 
-                          height="12"
+//                           height="12"
 
 
 
-                          viewBox="0 0 16 16"
+//                           viewBox="0 0 16 16"
 
 
 
-                          fill="none"
+//                           fill="none"
 
 
 
-                        >
+//                         >
 
 
 
-                          <path
+//                           <path
 
 
 
-                            d="M3.5 8.2L6.7 11.2L12.5 4.8"
+//                             d="M3.5 8.2L6.7 11.2L12.5 4.8"
 
 
 
-                            stroke="#2D4CC8"
+//                             stroke="#2D4CC8"
 
 
 
-                            strokeWidth="2"
+//                             strokeWidth="2"
 
 
 
-                            strokeLinecap="round"
+//                             strokeLinecap="round"
 
 
 
-                            strokeLinejoin="round"
+//                             strokeLinejoin="round"
 
 
 
-                          />
+//                           />
 
 
 
-                        </svg>
+//                         </svg>
 
 
 
-                      )}
+//                       )}
 
 
 
-                    </span>
+//                     </span>
 
 
 
@@ -5697,95 +5697,95 @@ export default function TalkToOurExpert({
 
 
 
-                    <span className={styles["tte-consent-text"]}>
+//                     <span className={styles["tte-consent-text"]}>
 
 
 
-                      I agree to be contacted for the platform demo
+//                       I agree to be contacted for the platform demo
 
 
 
-                      and accept the{" "}
+//                       and accept the{" "}
 
 
 
-                      <button
+//                       <button
 
 
 
-                        type="button"
+//                         type="button"
 
 
 
-                        className={styles["tte-consent-link"]}
+//                         className={styles["tte-consent-link"]}
 
 
 
-                        onClick={() => setIsPrivacyOpen(true)}
+//                         onClick={() => setIsPrivacyOpen(true)}
 
 
 
-                        style={{
+//                         style={{
 
 
 
-                          border: 0,
+//                           border: 0,
 
 
 
-                          padding: 0,
+//                           padding: 0,
 
 
 
-                          background: "transparent",
+//                           background: "transparent",
 
 
 
-                          font: "inherit",
+//                           font: "inherit",
 
 
 
-                          cursor: "pointer",
+//                           cursor: "pointer",
 
 
 
-                        }}
+//                         }}
 
 
 
-                      >
+//                       >
 
 
 
-                        Privacy Policy
+//                         Privacy Policy
 
 
 
-                      </button>{" "}
+//                       </button>{" "}
 
 
 
-                      of{" "}
+//                       of{" "}
 
 
 
-                      <strong>
+//                       <strong>
 
 
 
-                        Prgeeq Global Solutions Private Limited.
+//                         Prgeeq Global Solutions Private Limited.
 
 
 
-                      </strong>
+//                       </strong>
 
 
 
-                    </span>
+//                     </span>
 
 
 
-                  </div>
+//                   </div>
 
 
 
@@ -5793,39 +5793,39 @@ export default function TalkToOurExpert({
 
 
 
-                  {touched.consent && errors.consent && (
+//                   {touched.consent && errors.consent && (
 
 
 
-                    <span
+//                     <span
 
 
 
-                      id="tte-consent-error"
+//                       id="tte-consent-error"
 
 
 
-                      className={styles["tte-error"]}
+//                       className={styles["tte-error"]}
 
 
 
-                      role="alert"
+//                       role="alert"
 
 
 
-                    >
+//                     >
 
 
 
-                      {errors.consent}
+//                       {errors.consent}
 
 
 
-                    </span>
+//                     </span>
 
 
 
-                  )}
+//                   )}
 
 
 
@@ -5833,51 +5833,51 @@ export default function TalkToOurExpert({
 
 
 
-                  <button
+//                   <button
 
 
 
-                    type="submit"
+//                     type="submit"
 
 
 
-                    className={styles["tte-submit"]}
+//                     className={styles["tte-submit"]}
 
 
 
-                    disabled={!isFormValid}
+//                     disabled={!isFormValid}
 
 
 
-                  >
+//                   >
 
 
 
-                    Submit Query
+//                     Submit Query
 
 
 
-                  </button>
+//                   </button>
 
 
 
-                </form>
+//                 </form>
 
 
 
-              )}
+//               )}
 
 
 
-            </div>
+//             </div>
 
 
 
-          </div>
+//           </div>
 
 
 
-        </div>
+//         </div>
 
 
 
@@ -5885,71 +5885,71 @@ export default function TalkToOurExpert({
 
 
 
-        {isPrivacyOpen && (
+//         {isPrivacyOpen && (
 
 
 
-          <div
+//           <div
 
 
 
-            className={styles["tte-privacy-overlay"]}
+//             className={styles["tte-privacy-overlay"]}
 
 
 
-            role="dialog"
+//             role="dialog"
 
 
 
-            aria-modal="true"
+//             aria-modal="true"
 
 
 
-            aria-labelledby="tte-privacy-title"
+//             aria-labelledby="tte-privacy-title"
 
 
 
-            onMouseDown={(event) => event.stopPropagation()}
+//             onMouseDown={(event) => event.stopPropagation()}
 
 
 
-          >
+//           >
 
 
 
-            <div className={styles["tte-privacy-card"]}>
+//             <div className={styles["tte-privacy-card"]}>
 
 
 
-              <div className={styles["tte-privacy-header"]}>
+//               <div className={styles["tte-privacy-header"]}>
 
 
 
-                <h2
+//                 <h2
 
 
 
-                  id="tte-privacy-title"
+//                   id="tte-privacy-title"
 
 
 
-                  className={styles["tte-privacy-title"]}
+//                   className={styles["tte-privacy-title"]}
 
 
 
-                >
+//                 >
 
 
 
-                  PRIVACY POLICY ACCEPTANCE
+//                   PRIVACY POLICY ACCEPTANCE
 
 
 
-                </h2>
+//                 </h2>
 
 
 
-              </div>
+//               </div>
 
 
 
@@ -5957,31 +5957,31 @@ export default function TalkToOurExpert({
 
 
 
-              <div className={styles["tte-privacy-content"]}>
+//               <div className={styles["tte-privacy-content"]}>
 
 
 
-                <p>
+//                 <p>
 
 
 
-                  By accessing or using the Platform, I hereby provide my explicit,
+//                   By accessing or using the Platform, I hereby provide my explicit,
 
 
 
-                  informed, and unconditional consent to{" "}
+//                   informed, and unconditional consent to{" "}
 
 
 
-                  <strong>PRGEEQ GLOBAL SOLUTIONS PRIVATE LIMITED</strong> for the
+//                   <strong>PRGEEQ GLOBAL SOLUTIONS PRIVATE LIMITED</strong> for the
 
 
 
-                  following:
+//                   following:
 
 
 
-                </p>
+//                 </p>
 
 
 
@@ -5989,27 +5989,27 @@ export default function TalkToOurExpert({
 
 
 
-                <h3>1. ACKNOWLEDGMENT</h3>
+//                 <h3>1. ACKNOWLEDGMENT</h3>
 
 
 
-                <p>
+//                 <p>
 
 
 
-                  I have carefully read, fully understood, and voluntarily agree to
+//                   I have carefully read, fully understood, and voluntarily agree to
 
 
 
-                  be bound by the Terms and Conditions of{" "}
+//                   be bound by the Terms and Conditions of{" "}
 
 
 
-                  <strong>PRGEEQ GLOBAL SOLUTIONS PRIVATE LIMITED</strong>.
+//                   <strong>PRGEEQ GLOBAL SOLUTIONS PRIVATE LIMITED</strong>.
 
 
 
-                </p>
+//                 </p>
 
 
 
@@ -6017,47 +6017,47 @@ export default function TalkToOurExpert({
 
 
 
-                <h3>2. DATA COLLECTION AND USAGE CONSENT</h3>
+//                 <h3>2. DATA COLLECTION AND USAGE CONSENT</h3>
 
 
 
-                <p>
+//                 <p>
 
 
 
-                  I confirm that I have read and understood the Privacy Policy and
+//                   I confirm that I have read and understood the Privacy Policy and
 
 
 
-                  agree to its terms.
+//                   agree to its terms.
 
 
 
-                </p>
+//                 </p>
 
 
 
-                <ul>
+//                 <ul>
 
 
 
-                  <li>Identification details</li>
+//                   <li>Identification details</li>
 
 
 
-                  <li>Contact information</li>
+//                   <li>Contact information</li>
 
 
 
-                  <li>Usage data and activity logs</li>
+//                   <li>Usage data and activity logs</li>
 
 
 
-                  <li>Device and technical data</li>
+//                   <li>Device and technical data</li>
 
 
 
-                </ul>
+//                 </ul>
 
 
 
@@ -6065,51 +6065,51 @@ export default function TalkToOurExpert({
 
 
 
-                <h3>3. DATA COLLECTION AND USAGE CONSENT</h3>
+//                 <h3>3. DATA COLLECTION AND USAGE CONSENT</h3>
 
 
 
-                <p>
+//                 <p>
 
 
 
-                  I consent to the collection and processing of my personal data,
+//                   I consent to the collection and processing of my personal data,
 
 
 
-                  including but not limited to:
+//                   including but not limited to:
 
 
 
-                </p>
+//                 </p>
 
 
 
-                <ul>
+//                 <ul>
 
 
 
-                  <li>Account management and authentication</li>
+//                   <li>Account management and authentication</li>
 
 
 
-                  <li>Service delivery and personalization</li>
+//                   <li>Service delivery and personalization</li>
 
 
 
-                  <li>Communication and notifications</li>
+//                   <li>Communication and notifications</li>
 
 
 
-                  <li>Legal and regulatory compliance</li>
+//                   <li>Legal and regulatory compliance</li>
 
 
 
-                  <li>Security monitoring and fraud prevention</li>
+//                   <li>Security monitoring and fraud prevention</li>
 
 
 
-                </ul>
+//                 </ul>
 
 
 
@@ -6117,63 +6117,63 @@ export default function TalkToOurExpert({
 
 
 
-                <h3>4. DATA SECURITY DISCLAIMER</h3>
+//                 <h3>4. DATA SECURITY DISCLAIMER</h3>
 
 
 
-                <ul>
+//                 <ul>
 
 
 
-                  <li>
+//                   <li>
 
 
 
-                    The Company implements reasonable technical and organizational
+//                     The Company implements reasonable technical and organizational
 
 
 
-                    safeguards
+//                     safeguards
 
 
 
-                  </li>
+//                   </li>
 
 
 
-                  <li>
+//                   <li>
 
 
 
-                    However, I acknowledge that no digital system is completely
+//                     However, I acknowledge that no digital system is completely
 
 
 
-                    secure
+//                     secure
 
 
 
-                  </li>
+//                   </li>
 
 
 
-                  <li>
+//                   <li>
 
 
 
-                    The Company shall not be liable for data breaches resulting from
+//                     The Company shall not be liable for data breaches resulting from
 
 
 
-                    sophisticated cyber-attacks beyond reasonable control
+//                     sophisticated cyber-attacks beyond reasonable control
 
 
 
-                  </li>
+//                   </li>
 
 
 
-                </ul>
+//                 </ul>
 
 
 
@@ -6181,47 +6181,47 @@ export default function TalkToOurExpert({
 
 
 
-                <h3>5. PAYMENT AND FRAUD PREVENTION DISCLAIMER</h3>
+//                 <h3>5. PAYMENT AND FRAUD PREVENTION DISCLAIMER</h3>
 
 
 
-                <ul>
+//                 <ul>
 
 
 
-                  <li>
+//                   <li>
 
 
 
-                    I understand that payment-related communications must be verified
+//                     I understand that payment-related communications must be verified
 
 
 
-                    through official Company channels
+//                     through official Company channels
 
 
 
-                  </li>
+//                   </li>
 
 
 
-                  <li>
+//                   <li>
 
 
 
-                    The Company does not accept responsibility for losses due to
+//                     The Company does not accept responsibility for losses due to
 
 
 
-                    fraudulent payment requests or impersonation
+//                     fraudulent payment requests or impersonation
 
 
 
-                  </li>
+//                   </li>
 
 
 
-                </ul>
+//                 </ul>
 
 
 
@@ -6229,31 +6229,31 @@ export default function TalkToOurExpert({
 
 
 
-                <h3>6. USER RIGHTS</h3>
+//                 <h3>6. USER RIGHTS</h3>
 
 
 
-                <p>Subject to applicable laws, I understand I may:</p>
+//                 <p>Subject to applicable laws, I understand I may:</p>
 
 
 
-                <ul>
+//                 <ul>
 
 
 
-                  <li>Access my data</li>
+//                   <li>Access my data</li>
 
 
 
-                  <li>Request correction or deletion</li>
+//                   <li>Request correction or deletion</li>
 
 
 
-                  <li>Withdraw consent where permissible</li>
+//                   <li>Withdraw consent where permissible</li>
 
 
 
-                </ul>
+//                 </ul>
 
 
 
@@ -6261,27 +6261,27 @@ export default function TalkToOurExpert({
 
 
 
-                <h3>7. THIRD-PARTY SERVICES</h3>
+//                 <h3>7. THIRD-PARTY SERVICES</h3>
 
 
 
-                <p>
+//                 <p>
 
 
 
-                  I acknowledge that certain services may involve third-party
+//                   I acknowledge that certain services may involve third-party
 
 
 
-                  providers, and the Company is not responsible for their independent
+//                   providers, and the Company is not responsible for their independent
 
 
 
-                  practices.
+//                   practices.
 
 
 
-                </p>
+//                 </p>
 
 
 
@@ -6289,39 +6289,39 @@ export default function TalkToOurExpert({
 
 
 
-                <h3>8. CONSENT VALIDITY</h3>
+//                 <h3>8. CONSENT VALIDITY</h3>
 
 
 
-                <p>This consent:</p>
+//                 <p>This consent:</p>
 
 
 
-                <ul>
+//                 <ul>
 
 
 
-                  <li>Is legally binding</li>
+//                   <li>Is legally binding</li>
 
 
 
-                  <li>
+//                   <li>
 
 
 
-                    Remains valid until withdrawn (subject to legal obligations)
+//                     Remains valid until withdrawn (subject to legal obligations)
 
 
 
-                  </li>
+//                   </li>
 
 
 
-                  <li>Applies to all Platform interactions</li>
+//                   <li>Applies to all Platform interactions</li>
 
 
 
-                </ul>
+//                 </ul>
 
 
 
@@ -6329,23 +6329,23 @@ export default function TalkToOurExpert({
 
 
 
-                <p>
+//                 <p>
 
 
 
-                  <strong>MANDATORY CONSENT ACTIONS (IMPLEMENTATION):</strong>
+//                   <strong>MANDATORY CONSENT ACTIONS (IMPLEMENTATION):</strong>
 
 
 
-                </p>
+//                 </p>
 
 
 
-                <p>I agree to the Privacy Policy</p>
+//                 <p>I agree to the Privacy Policy</p>
 
 
 
-                <p>I consent to data processing as described</p>
+//                 <p>I consent to data processing as described</p>
 
 
 
@@ -6353,23 +6353,23 @@ export default function TalkToOurExpert({
 
 
 
-                <p>
+//                 <p>
 
 
 
-                  <strong>OPTIONAL CONSENTS:</strong>
+//                   <strong>OPTIONAL CONSENTS:</strong>
 
 
 
-                </p>
+//                 </p>
 
 
 
-                <p>I agree to receive marketing communications</p>
+//                 <p>I agree to receive marketing communications</p>
 
 
 
-                <p>I accept use of cookies and tracking technologies</p>
+//                 <p>I accept use of cookies and tracking technologies</p>
 
 
 
@@ -6377,39 +6377,39 @@ export default function TalkToOurExpert({
 
 
 
-                <p>
+//                 <p>
 
 
 
-                  <strong>
+//                   <strong>
 
 
 
-                    COMPANY DETAILS: PRGEEQ GLOBAL SOLUTIONS PRIVATE LIMITED
+//                     COMPANY DETAILS: PRGEEQ GLOBAL SOLUTIONS PRIVATE LIMITED
 
 
 
-                  </strong>
+//                   </strong>
 
 
 
-                </p>
+//                 </p>
 
 
 
-                <p>
+//                 <p>
 
 
 
-                  <strong>Email: contact\\@prgeeq.com</strong>
+//                   <strong>Email: contact\\@prgeeq.com</strong>
 
 
 
-                </p>
+//                 </p>
 
 
 
-              </div>
+//               </div>
 
 
 
@@ -6417,79 +6417,79 @@ export default function TalkToOurExpert({
 
 
 
-              <div className={styles["tte-privacy-footer"]}>
+//               <div className={styles["tte-privacy-footer"]}>
 
 
 
-                <button
+//                 <button
 
 
 
-                  type="button"
+//                   type="button"
 
 
 
-                  className={styles["tte-privacy-accept"]}
+//                   className={styles["tte-privacy-accept"]}
 
 
 
-                  onClick={() => {
+//                   onClick={() => {
 
 
 
-                    handleFieldChange("consent", true);
+//                     handleFieldChange("consent", true);
 
 
 
-                    setTouched((prev) => ({ ...prev, consent: true }));
+//                     setTouched((prev) => ({ ...prev, consent: true }));
 
 
 
-                    setIsPrivacyOpen(false);
+//                     setIsPrivacyOpen(false);
 
 
 
-                  }}
+//                   }}
 
 
 
-                >
+//                 >
 
 
 
-                  Close &amp; Accept
+//                   Close &amp; Accept
 
 
 
-                </button>
+//                 </button>
 
 
 
-              </div>
+//               </div>
 
 
 
-            </div>
+//             </div>
 
 
 
-          </div>
+//           </div>
 
 
 
-        )}
+//         )}
 
 
 
-      </div>
+//       </div>
 
 
 
-    </div>
+//     </div>
 
 
 
-  );
+//   );
 
 
 
@@ -6497,32 +6497,32 @@ export default function TalkToOurExpert({
 
 
 
-  /*
+//   /*
 
 
 
-   * IMPORTANT:
+//    * IMPORTANT:
 
 
 
-   * Render the modal directly under <body>.
+//    * Render the modal directly under <body>.
 
 
 
-   * This prevents any parent transform/position/overflow from
+//    * This prevents any parent transform/position/overflow from
 
 
 
-   * affecting the viewport-centering calculation.
+//    * affecting the viewport-centering calculation.
 
 
 
-   */
+//    */
 
 
 
-  return createPortal(modalContent, document.body);
+//   return createPortal(modalContent, document.body);
 
 
 
-}
+// }
